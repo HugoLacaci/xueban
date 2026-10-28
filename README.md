@@ -130,7 +130,21 @@ Para actualizar los datos (nueva versión de CC-CEDICT, etc.) borra `.cache/data
 
 ---
 
-## 5. Publicar gratis (para usarla desde el móvil fuera de casa)
+## 5. Repositorio y publicación
+
+**Repositorio (privado)**: <https://github.com/HugoLacaci/xueban>. Para pasárselo a alguien: en GitHub, *Settings → Collaborators → Add people* (o hacerlo público). Quien lo reciba solo necesita:
+
+```bash
+git clone https://github.com/HugoLacaci/xueban.git
+cd xueban
+npm install
+npm run data:build   # descarga y genera los datos (CC-CEDICT, HSK, Make Me a Hanzi…), ~50 MB, no van en el repo
+npm run dev
+```
+
+Las capturas del rediseño (`design/screenshots/`, 121 MB) tampoco van en el repo; el informe `design/REPORT.md` sí.
+
+### Publicar gratis (para usarla desde el móvil fuera de casa)
 
 **Vercel** (recomendado; la ruta API de vídeos necesita servidor):
 1. Sube el proyecto a GitHub (ya tiene `.gitignore`; `public/data/` y `public/audio/` están ignorados por tamaño → ejecuta `npm run data:build` en el build o súbelos con Git LFS; los vídeos curados en `public/videos/` sí se suben).
