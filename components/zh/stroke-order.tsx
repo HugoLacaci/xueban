@@ -4,12 +4,13 @@ import type HanziWriter from "hanzi-writer";
 import { Play, PenLine, RotateCcw, Eye } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { withBase } from "@/lib/base-path";
 
 type Writer = HanziWriter;
 
 /** Cargador de datos de trazos: primero local (/data/hanzi), luego CDN de hanzi-writer. */
 export function charDataLoader(char: string, onComplete: (data: never) => void, onError?: (e?: unknown) => void) {
-  fetch(`/data/hanzi/${encodeURIComponent(char)}.json`)
+  fetch(withBase(`/data/hanzi/${encodeURIComponent(char)}.json`))
     .then((r) => (r.ok ? r.json() : Promise.reject(new Error("local miss"))))
     .catch(() => fetch(`https://cdn.jsdelivr.net/npm/hanzi-writer-data@2.0/${encodeURIComponent(char)}.json`).then((r) => (r.ok ? r.json() : Promise.reject(new Error("no data")))))
     .then((json) => onComplete(json as never))

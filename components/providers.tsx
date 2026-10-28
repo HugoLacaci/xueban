@@ -9,6 +9,7 @@ import { useDictionary } from "@/lib/dictionary/service";
 import { TooltipProvider, Spinner } from "@/components/ui/primitives";
 import dynamic from "next/dynamic";
 import { Toaster } from "@/components/ui/toast";
+import { withBase } from "@/lib/base-path";
 
 // Popup de palabra y paleta de búsqueda: solo se usan tras interactuar → fuera del bundle inicial.
 const WordPopupHost = dynamic(() => import("@/components/zh/word-popup").then((m) => m.WordPopupHost), { ssr: false });
@@ -95,7 +96,7 @@ export function AppProviders({ children }: { children: React.ReactNode }) {
   // Service worker (PWA)
   useEffect(() => {
     if (process.env.NODE_ENV !== "production" || !("serviceWorker" in navigator)) return;
-    navigator.serviceWorker.register("/sw.js").catch(() => undefined);
+    navigator.serviceWorker.register(withBase("/sw.js")).catch(() => undefined);
   }, []);
 
   if (!loaded || !seeded) {

@@ -132,7 +132,9 @@ Para actualizar los datos (nueva versión de CC-CEDICT, etc.) borra `.cache/data
 
 ## 5. Repositorio y publicación
 
-**Repositorio (privado)**: <https://github.com/HugoLacaci/xueban>. Para pasárselo a alguien: en GitHub, *Settings → Collaborators → Add people* (o hacerlo público). Quien lo reciba solo necesita:
+**Web publicada (GitHub Pages)**: <https://hugolacaci.github.io/xueban/>. Se abre en cualquier móvil u ordenador sin instalar nada; cada persona guarda sus datos en su propio navegador. Se vuelve a publicar sola con cada push a `main` (workflow `.github/workflows/pages.yml`: genera los datos, exporta la app en estático bajo `/xueban` y la sube). En Pages no existe «Añadir vídeo por URL» (necesita yt-dlp en un servidor); los vídeos curados sí funcionan, y Anki solo sincroniza en el PC donde está abierto.
+
+**Repositorio (público)**: <https://github.com/HugoLacaci/xueban>. Para trabajar en el código, quien lo reciba solo necesita:
 
 ```bash
 git clone https://github.com/HugoLacaci/xueban.git
@@ -144,9 +146,9 @@ npm run dev
 
 Las capturas del rediseño (`design/screenshots/`, 121 MB) tampoco van en el repo; el informe `design/REPORT.md` sí.
 
-### Publicar gratis (para usarla desde el móvil fuera de casa)
+### Otras formas de publicarla
 
-**Vercel** (recomendado; la ruta API de vídeos necesita servidor):
+**Vercel** (si se quiere la ruta API de vídeos, que necesita servidor):
 1. Sube el proyecto a GitHub (ya tiene `.gitignore`; `public/data/` y `public/audio/` están ignorados por tamaño → ejecuta `npm run data:build` en el build o súbelos con Git LFS; los vídeos curados en `public/videos/` sí se suben).
 2. En <https://vercel.com> importa el repo. Build command: `npm run data:build && npm run build`.
 3. En Anki, añade la URL pública a `webCorsOriginList`.

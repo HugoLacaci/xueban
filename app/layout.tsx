@@ -3,6 +3,7 @@ import { Inter, Noto_Sans_SC, Noto_Serif_SC, Fraunces } from "next/font/google";
 import "./globals.css";
 import { AppProviders } from "@/components/providers";
 import { AppShell } from "@/components/layout/app-shell";
+import { withBase } from "@/lib/base-path";
 
 const inter = Inter({ variable: "--font-inter", subsets: ["latin", "latin-ext"], display: "swap" });
 const fraunces = Fraunces({ variable: "--font-fraunces", subsets: ["latin", "latin-ext"], display: "swap", axes: ["SOFT", "opsz"] });
@@ -14,9 +15,9 @@ export const metadata: Metadata = {
   title: { default: "学伴 Xuébàn", template: "%s · Xuébàn" },
   description: "Tu compañero para aprender chino mandarín: HSK 1, flashcards con FSRS, diccionario, caracteres, vídeos y lecturas. Local-first y gratuito.",
   applicationName: "Xuébàn",
-  manifest: "/manifest.webmanifest",
+  manifest: withBase("/manifest.webmanifest"),
   appleWebApp: { capable: true, statusBarStyle: "default", title: "Xuébàn" },
-  icons: { icon: "/icon.svg", apple: "/apple-icon.png" },
+  icons: { icon: withBase("/icon.svg"), apple: withBase("/apple-icon.png") },
 };
 
 export const viewport: Viewport = {

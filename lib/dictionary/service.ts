@@ -11,6 +11,7 @@ import { isHanzi, hanziOnly, hasHanzi } from "@/lib/pinyin/convert";
 import { lexiconFromSet, type Lexicon } from "@/lib/segment";
 import radicalsJson from "@/content/radicals.json";
 import type { CharInfo, DictEntry, RadicalInfo } from "./types";
+import { withBase } from "@/lib/base-path";
 
 /** Formato compacto en disco: [s, t, p, en[], hsk, hsk2, freq, pos[], cl[]] */
 export type CompactEntry = [string, string, string, string[], number?, number?, number?, string[]?, string[]?];
@@ -97,7 +98,7 @@ export const useDictionary = create<DictState>((set, get) => ({
     set({ status: "loading" });
     loadingPromise = (async () => {
       try {
-        const res = await fetch("/data/cedict-core.json");
+        const res = await fetch(withBase("/data/cedict-core.json"));
         if (!res.ok) throw new Error(`No se pudo cargar el diccionario (${res.status}). Ejecuta npm run data:build.`);
         const raw = (await res.json()) as CompactEntry[];
         const n = ingest(raw);
@@ -114,7 +115,7 @@ export const useDictionary = create<DictState>((set, get) => ({
     set({ full: "loading" });
     fullPromise = (async () => {
       try {
-        const res = await fetch("/data/cedict-full.json");
+        const res = await fetch(withBase("/data/cedict-full.json"));
         if (!res.ok) throw new Error("No se pudo cargar el diccionario completo.");
         const raw = (await res.json()) as CompactEntry[];
         const n = ingest(raw);
@@ -284,7 +285,7 @@ export async function loadCharInfo(): Promise<Map<string, CharInfo>> {
   if (charInfo) return charInfo;
   if (!charLoading) {
     charLoading = (async () => {
-      const res = await fetch("/data/hanzi.json");
+      const res = await fetch(withBase("/data/hanzi.json"));
       if (!res.ok) throw new Error("No se pudo cargar /data/hanzi.json (ejecuta npm run data:build).");
       const raw = (await res.json()) as Record<string, Omit<CharInfo, "character">>;
       charInfo = new Map(Object.entries(raw).map(([k, v]) => [k, { character: k, ...v }]));
@@ -413,7 +414,7 @@ let hskLoading: Promise<HskData> | undefined;
 export async function loadHsk(): Promise<HskData> {
   if (hskData) return hskData;
   if (!hskLoading) {
-    hskLoading = fetch("/data/hsk.json")
+    hskLoading = fetch(withBase("/data/hsk.json"))
       .then((r) => {
         if (!r.ok) throw new Error("No se pudo cargar /data/hsk.json (npm run data:build)");
         return r.json() as Promise<HskData>;

@@ -3,6 +3,7 @@
  * Frases de ejemplo: semilla HSK 1 (español) + Tatoeba cmn–spa (/data/tatoeba.json, Fase 2).
  */
 import { seedWords } from "@/lib/db/repo";
+import { withBase } from "@/lib/base-path";
 
 export interface Example {
   zh: string;
@@ -20,7 +21,7 @@ export async function loadTatoeba(): Promise<Example[]> {
   if (!loading) {
     loading = (async () => {
       try {
-        const res = await fetch("/data/tatoeba.json");
+        const res = await fetch(withBase("/data/tatoeba.json"));
         if (!res.ok) throw new Error("sin datos");
         const raw = (await res.json()) as [string, string][];
         tatoeba = raw.map(([zh, es]) => ({ zh, es, source: "tatoeba" as const }));

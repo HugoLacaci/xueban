@@ -48,7 +48,8 @@ test.describe("Xuébàn · flujos principales", () => {
     await page.getByRole("button", { name: "Continuar" }).click();
     await expect(page.getByText("Repaso de la lección")).toBeVisible();
     await page.getByRole("button", { name: /Terminar lección/ }).click({ force: true });
-    await expect(page.getByText("¡Lección completada!")).toBeVisible();
+    // guardar progreso + pantalla final con animación: en el servidor de desarrollo puede tardar más de 5 s
+    await expect(page.getByText("¡Lección completada!")).toBeVisible({ timeout: 20000 });
     await page.goto("/aprender");
     await expect(page.getByText(/1 de \d+ lecciones completadas/)).toBeVisible();
   });

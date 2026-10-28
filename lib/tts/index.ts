@@ -5,6 +5,7 @@
  * reconocimiento de voz (Chrome/Edge).
  */
 import { hashString } from "@/lib/utils";
+import { withBase } from "@/lib/base-path";
 
 export interface SpeakOptions {
   rate?: number;
@@ -18,7 +19,7 @@ let currentAudio: HTMLAudioElement | null = null;
 const missingAudio = new Set<string>();
 
 export function audioFileFor(text: string): string {
-  return `/audio/${hashString(text.trim()).toString(16)}.mp3`;
+  return withBase(`/audio/${hashString(text.trim()).toString(16)}.mp3`);
 }
 
 export function listZhVoices(): SpeechSynthesisVoice[] {

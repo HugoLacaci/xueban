@@ -1,3 +1,4 @@
+import { withBase } from "@/lib/base-path";
 /**
  * Reconocimiento de escritura a mano offline (caracteres HSK 1–4) por comparación de trazos
  * con las medianas de Make Me a Hanzi / hanzi-writer-data (public/data/medians.json).
@@ -112,7 +113,7 @@ export function recognize(userStrokes: Stroke[], medians: Record<string, number[
 let mediansCache: Record<string, number[][][]> | undefined;
 export async function loadMedians(): Promise<Record<string, number[][][]>> {
   if (mediansCache) return mediansCache;
-  const res = await fetch("/data/medians.json");
+  const res = await fetch(withBase("/data/medians.json"));
   if (!res.ok) throw new Error("No se pudieron cargar las medianas (npm run data:build)");
   mediansCache = (await res.json()) as Record<string, number[][][]>;
   return mediansCache;

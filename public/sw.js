@@ -1,6 +1,8 @@
 /* Service worker de Xuébàn: app shell + datos (diccionario, trazos, audio) para uso offline. */
-const VERSION = "xueban-v1";
-const SHELL = [`/`, `/manifest.webmanifest`, `/icon.svg`, `/icon-192.png`];
+const VERSION = "xueban-v2";
+// Ruta base: "" en local, "/xueban" en GitHub Pages (se deduce del ámbito con el que se registró el SW).
+const BASE = new URL(self.registration.scope).pathname.replace(/\/$/, "");
+const SHELL = [`${BASE}/`, `${BASE}/manifest.webmanifest`, `${BASE}/icon.svg`, `${BASE}/icon-192.png`];
 const DATA_CACHE = `${VERSION}-data`;
 const SHELL_CACHE = `${VERSION}-shell`;
 
@@ -16,7 +18,8 @@ self.addEventListener("activate", (event) => {
 });
 
 function isData(url) {
-  return url.pathname.startsWith("/data/") || url.pathname.startsWith("/audio/") || url.pathname.startsWith("/videos/") || url.pathname.startsWith("/_next/static/") || /\.(woff2?|ttf|png|svg|wasm)$/.test(url.pathname);
+  const p = url.pathname.startsWith(BASE) ? url.pathname.slice(BASE.length) : url.pathname;
+  return p.startsWith("/data/") || p.startsWith("/audio/") || p.startsWith("/videos/") || p.startsWith("/_next/static/") || /\.(woff2?|ttf|png|svg|wasm)$/.test(p);
 }
 
 self.addEventListener("fetch", (event) => {
@@ -24,7 +27,7 @@ self.addEventListener("fetch", (event) => {
   if (req.method !== "GET") return;
   const url = new URL(req.url);
   if (url.origin !== self.location.origin) return; // YouTube, Google Fonts, etc.
-  if (url.pathname.startsWith("/api/")) return;
+  if (url.pathname.startsWith(`${BASE}/api/`)) return;
 
   if (isData(url)) {
     // cache-first para datos inmutables
@@ -53,7 +56,7 @@ self.addEventListener("fetch", (event) => {
           caches.open(SHELL_CACHE).then((c) => c.put(req, copy)).catch(() => undefined);
           return res;
         })
-        .catch(async () => (await caches.match(req)) ?? (await caches.match("/")) ?? Response.error()),
+        .catch(async () => (await caches.match(req)) ?? (await caches.match(`${BASE}/`)) ?? Response.error()),
     );
   }
 });

@@ -38,7 +38,8 @@ function SectionHeading({ children }: { children: React.ReactNode }) {
 
 export function WordPage({ id }: { id: string }) {
   const router = useRouter();
-  const word = useLiveQuery(() => db.words.get(id), [id]);
+  // null (no existe) ≠ undefined (cargando): si no, una palabra inexistente deja el spinner para siempre
+  const word = useLiveQuery(() => db.words.get(id).then((w) => w ?? null), [id]);
   const cards = useLiveQuery(() => db.cards.where("wordId").equals(id).toArray(), [id]) ?? [];
   const logs = useLiveQuery(() => db.reviewLogs.where("wordId").equals(id).reverse().sortBy("review"), [id]) ?? [];
   const categories = useLiveQuery(() => db.categories.orderBy("order").toArray(), []) ?? [];
