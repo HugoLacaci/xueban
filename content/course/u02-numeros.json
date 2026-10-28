@@ -1,0 +1,210 @@
+{
+  "id": "u02",
+  "order": 3,
+  "title": "Números y edad",
+  "zh": "数字与年龄",
+  "description": "Contar del 0 al 99, dar tu número de teléfono, decir tu edad y contar cosas con clasificadores.",
+  "icon": "Hash",
+  "level": 1,
+  "category": "Números y cantidades",
+  "checkpoint": { "exercises": 15 },
+  "lessons": [
+    {
+      "id": "u02-l1",
+      "title": "Del cero al diez",
+      "zh": "零到十",
+      "goal": "Contar del 0 al 10 y preguntar «¿cuántos?» con 几.",
+      "minutes": 10,
+      "vocab": [
+        { "hanzi": "零", "pinyin": "líng", "es": "cero" },
+        { "hanzi": "一", "pinyin": "yī", "es": "uno" },
+        { "hanzi": "二", "pinyin": "èr", "es": "dos" },
+        { "hanzi": "三", "pinyin": "sān", "es": "tres" },
+        { "hanzi": "四", "pinyin": "sì", "es": "cuatro" },
+        { "hanzi": "五", "pinyin": "wǔ", "es": "cinco" },
+        { "hanzi": "六", "pinyin": "liù", "es": "seis" },
+        { "hanzi": "几", "pinyin": "jǐ", "es": "¿cuántos? (pocos); algunos" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "Los números del 0 al 6 (y 几)" },
+        {
+          "type": "explain",
+          "title": "Del 7 al 10 y los dedos chinos",
+          "markdown": "Completa la serie: **七 qī** (7), **八 bā** (8), **九 jiǔ** (9), **十 shí** (10). Practica 四 sì y 十 shí juntos: *sì* es dental (como «ts»), *shí* retroflejo (lengua curvada hacia atrás). Son el par más confundido por hispanohablantes.\n\nEn China los números del 6 al 10 se hacen **con una sola mano**: 六 (pulgar y meñique extendidos), 七 (los cinco dedos juntos en punta), 八 (pulgar e índice en L), 九 (índice en gancho), 十 (puño cerrado o índices cruzados). Te servirá en el mercado."
+        },
+        {
+          "type": "dialogue",
+          "title": "Contar con los dedos",
+          "lines": [
+            { "speaker": "老师", "zh": "这是几？", "py": "Zhè shì jǐ?", "es": "¿Cuánto es esto?" },
+            { "speaker": "雨果", "zh": "这是五。", "py": "Zhè shì wǔ.", "es": "Esto es cinco." },
+            { "speaker": "老师", "zh": "很好！那是几？", "py": "Hěn hǎo! Nà shì jǐ?", "es": "¡Muy bien! ¿Cuánto es eso?" },
+            { "speaker": "雨果", "zh": "那是……三？", "py": "Nà shì…… sān?", "es": "Eso es… ¿tres?" },
+            { "speaker": "老师", "zh": "不是三，是六。", "py": "Bú shì sān, shì liù.", "es": "No es tres, es seis." },
+            { "speaker": "雨果", "zh": "对不起！是六。", "py": "Duìbuqǐ! Shì liù.", "es": "¡Perdón! Es seis." }
+          ],
+          "notes": "La profesora enseña el número 6 con el pulgar y el meñique: Hugo lo confunde con el 3. 七, 八, 九 y 十 aparecen en los ejercicios."
+        },
+        { "type": "grammar", "id": "numbers" },
+        { "type": "exercises", "count": 10, "types": ["choose-meaning", "listen-choose", "pinyin-input", "tone-choice", "matching", "dictation", "writing"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "u02-l2",
+      "title": "Del once al cien y contar cosas",
+      "zh": "十一到一百",
+      "goal": "Formar los números hasta 100 y contar objetos con 个 y 本.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "七", "pinyin": "qī", "es": "siete" },
+        { "hanzi": "八", "pinyin": "bā", "es": "ocho" },
+        { "hanzi": "九", "pinyin": "jiǔ", "es": "nueve" },
+        { "hanzi": "十", "pinyin": "shí", "es": "diez" },
+        { "hanzi": "百", "pinyin": "bǎi", "es": "cien" },
+        { "hanzi": "两", "pinyin": "liǎng", "es": "dos (con clasificador)" },
+        { "hanzi": "个", "pinyin": "gè", "es": "clasificador general" },
+        { "hanzi": "有", "pinyin": "yǒu", "es": "tener; haber" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "Diez, cien y el clasificador 个" },
+        {
+          "type": "explain",
+          "title": "Los números se construyen como piezas de Lego",
+          "markdown": "- 11 = 十一 (diez-uno), 12 = 十二, … 19 = 十九.\n- 20 = 二十 (dos-diez), 21 = 二十一, … 99 = 九十九.\n- 100 = 一百 yìbǎi.\n\nPara contar cosas: número + **clasificador** + nombre. 个 gè vale para casi todo (personas, manzanas…). Para libros se usa **本 běn**: 三本书 (tres libros). Recuerda: «dos cosas» es **两**个, no 二个."
+        },
+        {
+          "type": "dialogue",
+          "title": "¿Cuántos libros tienes?",
+          "lines": [
+            { "speaker": "安娜", "zh": "雨果，你有几本书？", "py": "Yǔguǒ, nǐ yǒu jǐ běn shū?", "es": "Hugo, ¿cuántos libros tienes?" },
+            { "speaker": "雨果", "zh": "我有两本书。你呢？", "py": "Wǒ yǒu liǎng běn shū. Nǐ ne?", "es": "Tengo dos libros. ¿Y tú?" },
+            { "speaker": "安娜", "zh": "我有十本书。", "py": "Wǒ yǒu shí běn shū.", "es": "Yo tengo diez libros." },
+            { "speaker": "雨果", "zh": "你有苹果吗？", "py": "Nǐ yǒu píngguǒ ma?", "es": "¿Tienes manzanas?" },
+            { "speaker": "安娜", "zh": "有，我有三个苹果。", "py": "Yǒu, wǒ yǒu sān ge píngguǒ.", "es": "Sí, tengo tres manzanas." }
+          ],
+          "notes": "本 běn (clasificador de libros), 书 shū (libro) y 苹果 píngguǒ (manzana) aparecen como adelanto; los verás en los ejercicios y en la lección 5."
+        },
+        { "type": "grammar", "id": "measure-words" },
+        { "type": "exercises", "count": 10, "types": ["choose-meaning", "choose-character", "listen-choose", "pinyin-input", "order-words", "fill-blank", "dictation", "classifier", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "u02-l3",
+      "title": "¿Cuál es tu número de teléfono?",
+      "zh": "你的电话号码是多少？",
+      "goal": "Pedir y dar números de teléfono (一 se lee yāo) y preguntar «cuánto» con 多少.",
+      "minutes": 10,
+      "vocab": [
+        { "hanzi": "电话", "pinyin": "diànhuà", "es": "teléfono; llamada" },
+        { "hanzi": "手机", "pinyin": "shǒujī", "es": "teléfono móvil" },
+        { "hanzi": "号码", "pinyin": "hàomǎ", "es": "número (de teléfono, de habitación)" },
+        { "hanzi": "多少", "pinyin": "duōshao", "es": "¿cuánto?; ¿cuántos?" },
+        { "hanzi": "认识", "pinyin": "rènshi", "es": "conocer" },
+        { "hanzi": "高兴", "pinyin": "gāoxìng", "es": "contento; alegre" },
+        { "hanzi": "知道", "pinyin": "zhīdào", "es": "saber" }
+      ],
+      "steps": [
+        { "type": "vocab" },
+        {
+          "type": "explain",
+          "title": "Leer un número de teléfono",
+          "markdown": "Los números de teléfono se dicen **cifra a cifra**: 138 0025 6789 = yāo sān bā líng líng èr wǔ liù qī bā jiǔ.\n\n- **一 se lee yāo** (no yī) en teléfonos, habitaciones y matrículas, para que no se confunda con 七 qī al teléfono.\n- 零 líng se dice tal cual (no se salta).\n- Para preguntar se usa **多少** (¿cuánto?), nunca 几: 你的电话号码是多少？\n\nLos móviles chinos tienen 11 cifras y empiezan por 1."
+        },
+        {
+          "type": "dialogue",
+          "title": "Intercambiar números",
+          "lines": [
+            { "speaker": "王明", "zh": "雨果，认识你很高兴！你的手机号码是多少？", "py": "Yǔguǒ, rènshi nǐ hěn gāoxìng! Nǐ de shǒujī hàomǎ shì duōshao?", "es": "Hugo, ¡encantado de conocerte! ¿Cuál es tu número de móvil?" },
+            { "speaker": "雨果", "zh": "我的号码是一三八零零二五六七八九。", "py": "Wǒ de hàomǎ shì yāo sān bā líng líng èr wǔ liù qī bā jiǔ.", "es": "Mi número es el 138 0025 6789." },
+            { "speaker": "王明", "zh": "一三八零零二五六七八九。好，谢谢！", "py": "Yāo sān bā líng líng èr wǔ liù qī bā jiǔ. Hǎo, xièxie!", "es": "138 0025 6789. Vale, ¡gracias!" },
+            { "speaker": "雨果", "zh": "你的电话呢？", "py": "Nǐ de diànhuà ne?", "es": "¿Y tu teléfono?" },
+            { "speaker": "王明", "zh": "我的电话是一五九三三四四五六七八。", "py": "Wǒ de diànhuà shì yāo wǔ jiǔ sān sān sì sì wǔ liù qī bā.", "es": "Mi teléfono es el 159 3344 5678." },
+            { "speaker": "雨果", "zh": "知道了，谢谢！", "py": "Zhīdào le, xièxie!", "es": "¡Entendido, gracias!" }
+          ],
+          "notes": "知道了 zhīdào le = «entendido / ya lo sé». 了 le marca que ahora ya lo sabes; lo estudiarás más adelante."
+        },
+        { "type": "grammar", "id": "question-words" },
+        { "type": "exercises", "count": 10, "types": ["listen-choose", "dictation", "choose-meaning", "pinyin-input", "order-words", "tone-choice", "speaking", "matching"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "u02-l4",
+      "title": "¿Cuántos años tienes?",
+      "zh": "你多大？",
+      "goal": "Preguntar y decir la edad con 几岁 y 多大.",
+      "minutes": 10,
+      "vocab": [
+        { "hanzi": "岁", "pinyin": "suì", "es": "años (de edad)" },
+        { "hanzi": "今年", "pinyin": "jīnnián", "es": "este año" },
+        { "hanzi": "大", "pinyin": "dà", "es": "grande; mayor" },
+        { "hanzi": "小", "pinyin": "xiǎo", "es": "pequeño" },
+        { "hanzi": "多", "pinyin": "duō", "es": "mucho; muchos; cuán" },
+        { "hanzi": "孩子", "pinyin": "háizi", "es": "niño; hijo" },
+        { "hanzi": "年", "pinyin": "nián", "es": "año" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "岁 y las tres formas de preguntar la edad" },
+        {
+          "type": "dialogue",
+          "title": "En la cafetería",
+          "lines": [
+            { "speaker": "安娜", "zh": "王明，你今年多大？", "py": "Wáng Míng, nǐ jīnnián duō dà?", "es": "Wang Ming, ¿cuántos años tienes?" },
+            { "speaker": "王明", "zh": "我今年二十岁。你呢？", "py": "Wǒ jīnnián èrshí suì. Nǐ ne?", "es": "Tengo veinte años. ¿Y tú?" },
+            { "speaker": "安娜", "zh": "我十九岁。雨果，你多大？", "py": "Wǒ shíjiǔ suì. Yǔguǒ, nǐ duō dà?", "es": "Yo tengo diecinueve. Hugo, ¿cuántos años tienes?" },
+            { "speaker": "雨果", "zh": "我二十二岁。", "py": "Wǒ èrshí'èr suì.", "es": "Tengo veintidós años." },
+            { "speaker": "王明", "zh": "那个小孩子是谁？他几岁？", "py": "Nàge xiǎo háizi shì shéi? Tā jǐ suì?", "es": "¿Quién es ese niño pequeño? ¿Cuántos años tiene?" },
+            { "speaker": "雨果", "zh": "他是老师的孩子，他五岁。", "py": "Tā shì lǎoshī de háizi, tā wǔ suì.", "es": "Es el hijo de la profesora, tiene cinco años." }
+          ],
+          "notes": "多大 duō dà (lit. «cuán grande») es la pregunta normal entre jóvenes y adultos; 几岁 jǐ suì solo para niños. La edad se dice sin 是: 我二十岁."
+        },
+        { "type": "grammar", "id": "price-age" },
+        { "type": "exercises", "count": 10, "types": ["choose-meaning", "order-words", "build-sentence", "fill-blank", "listen-choose", "translate-to-es", "speaking", "tone-choice"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "u02-l5",
+      "title": "Lectura y repaso de la unidad",
+      "zh": "复习",
+      "goal": "Leer un texto con números, edades y cantidades y consolidar toda la unidad.",
+      "minutes": 10,
+      "vocab": [
+        { "hanzi": "本", "pinyin": "běn", "es": "clasificador para libros" },
+        { "hanzi": "书", "pinyin": "shū", "es": "libro" },
+        { "hanzi": "苹果", "pinyin": "píngguǒ", "es": "manzana" },
+        { "hanzi": "少", "pinyin": "shǎo", "es": "poco; pocos" },
+        { "hanzi": "第", "pinyin": "dì", "es": "prefijo ordinal (-º)" },
+        { "hanzi": "一些", "pinyin": "yìxiē", "es": "algunos; un poco" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "Libros, manzanas, ordinales" },
+        {
+          "type": "explain",
+          "title": "Ordinales con 第",
+          "markdown": "Para «primero, segundo, tercero…» basta con poner **第 dì** delante del número: 第一 (primero), 第二 (segundo), 第十 (décimo). Con nombre, lleva clasificador: 第一个朋友 (el primer amigo), 第二本书 (el segundo libro). Con 第 siempre se usa 二, nunca 两."
+        },
+        {
+          "type": "reading",
+          "title": "Hugo cuenta lo que tiene",
+          "text": "我叫雨果，我今年二十二岁。我有很多朋友。王明是我的第一个中国朋友，他二十岁。安娜也是我的朋友，她十九岁。我有两本书，王明有十本书，安娜的书很少。我有三个苹果。我的手机号码是一三八零零二五六七八九。",
+          "es": "Me llamo Hugo, tengo veintidós años. Tengo muchos amigos. Wang Ming es mi primer amigo chino, tiene veinte años. Ana también es amiga mía, tiene diecinueve. Yo tengo dos libros, Wang Ming tiene diez y Ana tiene pocos libros. Tengo tres manzanas. Mi número de móvil es el 138 0025 6789.",
+          "questions": [
+            { "q": "¿Cuántos años tiene Wang Ming?", "options": ["19", "20", "22", "No se dice"], "answer": 1, "explain": "他二十岁。" },
+            { "q": "¿Quién tiene más libros?", "options": ["Hugo", "Ana", "Wang Ming", "Todos tienen los mismos"], "answer": 2, "explain": "王明有十本书；雨果有两本，安娜的书很少。" },
+            { "q": "¿Qué significa 第一个中国朋友?", "options": ["Un amigo de China", "El primer amigo chino", "Diez amigos chinos", "El único amigo"], "answer": 1, "explain": "第一 = primero; 个 clasificador; 中国朋友 = amigo chino." }
+          ]
+        },
+        { "type": "exercises", "count": 12, "types": ["matching", "choose-meaning", "order-words", "build-sentence", "fill-blank", "dictation", "translate-to-es", "classifier", "tone-choice", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    }
+  ]
+}

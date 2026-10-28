@@ -1,0 +1,155 @@
+{
+  "id": "u13",
+  "order": 14,
+  "title": "Rutina diaria",
+  "zh": "一天的生活",
+  "description": "Contar tu día de principio a fin: a qué hora te levantas, comes, vas a clase y te acuestas.",
+  "icon": "Sun",
+  "level": 1,
+  "category": "Verbos básicos",
+  "checkpoint": { "exercises": 15 },
+  "lessons": [
+    {
+      "id": "u13-l1",
+      "title": "Por la mañana",
+      "zh": "早上",
+      "goal": "Decir a qué hora haces las cosas, poniendo la hora antes del verbo.",
+      "minutes": 11,
+      "vocab": [
+        { "hanzi": "起床", "pinyin": "qǐchuáng", "es": "levantarse (de la cama)" },
+        { "hanzi": "早上", "pinyin": "zǎoshang", "es": "primera hora de la mañana" },
+        { "hanzi": "上午", "pinyin": "shàngwǔ", "es": "mañana (antes del mediodía)" },
+        { "hanzi": "早饭", "pinyin": "zǎofàn", "es": "desayuno" },
+        { "hanzi": "吃", "pinyin": "chī", "es": "comer" },
+        { "hanzi": "上课", "pinyin": "shàngkè", "es": "ir a clase; empezar la clase" },
+        { "hanzi": "几点", "pinyin": "jǐ diǎn", "es": "¿a qué hora?; ¿qué hora?" },
+        { "hanzi": "半", "pinyin": "bàn", "es": "medio; y media" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "Sujeto + hora + verbo" },
+        {
+          "type": "dialogue",
+          "title": "¿A qué hora te levantas?",
+          "lines": [
+            { "speaker": "安娜", "zh": "雨果，你早上几点起床？", "py": "Yǔguǒ, nǐ zǎoshang jǐ diǎn qǐchuáng?", "es": "Hugo, ¿a qué hora te levantas por la mañana?" },
+            { "speaker": "雨果", "zh": "我七点起床，七点半吃早饭。", "py": "Wǒ qī diǎn qǐchuáng, qī diǎn bàn chī zǎofàn.", "es": "Me levanto a las siete y desayuno a las siete y media." },
+            { "speaker": "安娜", "zh": "你几点上课？", "py": "Nǐ jǐ diǎn shàngkè?", "es": "¿A qué hora tienes clase?" },
+            { "speaker": "雨果", "zh": "上午八点半上课。你呢？", "py": "Shàngwǔ bā diǎn bàn shàngkè. Nǐ ne?", "es": "Tengo clase a las ocho y media de la mañana. ¿Y tú?" },
+            { "speaker": "安娜", "zh": "我九点上课，所以八点起床。", "py": "Wǒ jiǔ diǎn shàngkè, suǒyǐ bā diǎn qǐchuáng.", "es": "Yo tengo clase a las nueve, así que me levanto a las ocho." }
+          ],
+          "notes": "所以 suǒyǐ = así que, por eso (es del HSK 2; aquí solo hay que entenderlo)."
+        },
+        { "type": "grammar", "id": "word-order" },
+        { "type": "exercises", "count": 10, "types": ["choose-meaning", "order-words", "fill-blank", "listen-choose", "pinyin-input", "tone-choice", "dictation", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "u13-l2",
+      "title": "Mediodía y tarde",
+      "zh": "中午和下午",
+      "goal": "Hablar de comidas y trabajo, y contar hábitos con 每天都.",
+      "minutes": 11,
+      "vocab": [
+        { "hanzi": "中午", "pinyin": "zhōngwǔ", "es": "mediodía" },
+        { "hanzi": "下午", "pinyin": "xiàwǔ", "es": "tarde" },
+        { "hanzi": "午饭", "pinyin": "wǔfàn", "es": "comida (almuerzo)" },
+        { "hanzi": "下课", "pinyin": "xiàkè", "es": "terminar la clase" },
+        { "hanzi": "工作", "pinyin": "gōngzuò", "es": "trabajar; trabajo" },
+        { "hanzi": "每天", "pinyin": "měi tiān", "es": "cada día" },
+        { "hanzi": "都", "pinyin": "dōu", "es": "todos; siempre" },
+        { "hanzi": "然后", "pinyin": "ránhòu", "es": "luego; después" }
+      ],
+      "steps": [
+        { "type": "vocab" },
+        {
+          "type": "dialogue",
+          "title": "Un día de trabajo",
+          "lines": [
+            { "speaker": "雨果", "zh": "王明，你每天都工作吗？", "py": "Wáng Míng, nǐ měi tiān dōu gōngzuò ma?", "es": "Wang Ming, ¿trabajas todos los días?" },
+            { "speaker": "王明", "zh": "是，我每天上午都工作。", "py": "Shì, wǒ měi tiān shàngwǔ dōu gōngzuò.", "es": "Sí, trabajo todas las mañanas." },
+            { "speaker": "雨果", "zh": "你中午几点吃午饭？", "py": "Nǐ zhōngwǔ jǐ diǎn chī wǔfàn?", "es": "¿A qué hora comes al mediodía?" },
+            { "speaker": "王明", "zh": "十二点吃午饭，然后休息一下。", "py": "Shí'èr diǎn chī wǔfàn, ránhòu xiūxi yíxià.", "es": "Como a las doce y luego descanso un rato." },
+            { "speaker": "雨果", "zh": "下午呢？", "py": "Xiàwǔ ne?", "es": "¿Y por la tarde?" },
+            { "speaker": "王明", "zh": "下午我去学校上课，五点下课。", "py": "Xiàwǔ wǒ qù xuéxiào shàngkè, wǔ diǎn xiàkè.", "es": "Por la tarde voy a la escuela a clase y termino a las cinco." }
+          ]
+        },
+        { "type": "grammar", "id": "mei" },
+        { "type": "grammar", "id": "dates-time" },
+        { "type": "exercises", "count": 10, "types": ["choose-meaning", "choose-character", "order-words", "build-sentence", "fill-blank", "dictation", "matching", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "u13-l3",
+      "title": "Por la noche",
+      "zh": "晚上",
+      "goal": "Describir la noche en casa y lo que alguien está haciendo ahora con 在……呢.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "晚上", "pinyin": "wǎnshang", "es": "noche" },
+        { "hanzi": "晚饭", "pinyin": "wǎnfàn", "es": "cena" },
+        { "hanzi": "回家", "pinyin": "huí jiā", "es": "volver a casa" },
+        { "hanzi": "做饭", "pinyin": "zuòfàn", "es": "cocinar" },
+        { "hanzi": "洗澡", "pinyin": "xǐzǎo", "es": "ducharse; bañarse" },
+        { "hanzi": "看书", "pinyin": "kàn shū", "es": "leer (un libro)" },
+        { "hanzi": "睡觉", "pinyin": "shuìjiào", "es": "dormir; irse a la cama" },
+        { "hanzi": "在", "pinyin": "zài", "es": "estar (haciendo); en" }
+      ],
+      "steps": [
+        { "type": "vocab" },
+        {
+          "type": "dialogue",
+          "title": "Llamada a las nueve de la noche",
+          "lines": [
+            { "speaker": "安娜", "zh": "喂，雨果，你在做什么呢？", "py": "Wéi, Yǔguǒ, nǐ zài zuò shénme ne?", "es": "Oye, Hugo, ¿qué estás haciendo?" },
+            { "speaker": "雨果", "zh": "我在做饭呢。你吃晚饭了吗？", "py": "Wǒ zài zuòfàn ne. Nǐ chī wǎnfàn le ma?", "es": "Estoy cocinando. ¿Has cenado?" },
+            { "speaker": "安娜", "zh": "吃了。我六点回家，七点吃晚饭。", "py": "Chī le. Wǒ liù diǎn huí jiā, qī diǎn chī wǎnfàn.", "es": "Sí. Volví a casa a las seis y cené a las siete." },
+            { "speaker": "雨果", "zh": "你晚上做什么？", "py": "Nǐ wǎnshang zuò shénme?", "es": "¿Qué haces por la noche?" },
+            { "speaker": "安娜", "zh": "我洗澡，看看书，十一点睡觉。", "py": "Wǒ xǐzǎo, kànkan shū, shíyī diǎn shuìjiào.", "es": "Me ducho, leo un poco y me acuesto a las once." }
+          ],
+          "notes": "喂 wéi se usa al contestar el teléfono (unidad 14). 吃了 = «ya he comido»: 了 marca la acción completada."
+        },
+        { "type": "grammar", "id": "zai" },
+        { "type": "grammar", "id": "le" },
+        { "type": "exercises", "count": 10, "types": ["choose-meaning", "order-words", "fill-blank", "listen-choose", "dictation", "pinyin-input", "similar-characters", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "u13-l4",
+      "title": "Lectura y repaso: un día entero",
+      "zh": "复习",
+      "goal": "Contar tu día completo de principio a fin, en orden, con las horas.",
+      "minutes": 10,
+      "vocab": [
+        { "hanzi": "小时", "pinyin": "xiǎoshí", "es": "hora (duración)" },
+        { "hanzi": "分钟", "pinyin": "fēnzhōng", "es": "minuto (duración)" },
+        { "hanzi": "汉语", "pinyin": "Hànyǔ", "es": "chino (idioma)" },
+        { "hanzi": "学习", "pinyin": "xuéxí", "es": "estudiar" },
+        { "hanzi": "忙", "pinyin": "máng", "es": "ocupado" },
+        { "hanzi": "累", "pinyin": "lèi", "es": "cansado" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "Duración: 一个小时, 十分钟" },
+        {
+          "type": "reading",
+          "title": "El día de Hugo",
+          "text": "我每天早上七点起床，七点半吃早饭。八点半我去学校上课，十二点下课。中午我和同学一起吃午饭，然后休息半个小时。下午我学习汉语两个小时。晚上六点我回家，七点做饭、吃晚饭。然后我洗澡，看一会儿电视，十一点睡觉。我每天都很忙，有点儿累，但是很高兴。",
+          "es": "Todos los días me levanto a las siete y desayuno a las siete y media. A las ocho y media voy a la escuela a clase y termino a las doce. Al mediodía como con mis compañeros y luego descanso media hora. Por la tarde estudio chino dos horas. A las seis de la tarde vuelvo a casa; a las siete cocino y ceno. Después me ducho, veo un rato la tele y me acuesto a las once. Estoy ocupado todos los días, un poco cansado, pero contento.",
+          "questions": [
+            { "q": "¿Cuánto tiempo estudia chino Hugo por la tarde?", "options": ["Media hora", "Una hora", "Dos horas", "Tres horas"], "answer": 2, "explain": "下午我学习汉语两个小时。" },
+            { "q": "¿A qué hora vuelve a casa?", "options": ["A las cinco", "A las seis", "A las siete", "A las once"], "answer": 1, "explain": "晚上六点我回家。" },
+            { "q": "¿Qué hace justo después de cenar?", "options": ["Se acuesta", "Estudia chino", "Se ducha", "Va a clase"], "answer": 2, "explain": "然后我洗澡，看一会儿电视。 (一会儿 yíhuìr = un rato; 但是 dànshì = pero)" }
+          ]
+        },
+        { "type": "exercises", "count": 12, "types": ["matching", "choose-meaning", "order-words", "build-sentence", "fill-blank", "dictation", "translate-to-es", "tone-choice", "writing", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    }
+  ]
+}

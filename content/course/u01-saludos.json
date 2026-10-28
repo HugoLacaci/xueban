@@ -1,0 +1,189 @@
+{
+  "id": "u01",
+  "order": 2,
+  "title": "Saludos y presentaciones",
+  "zh": "问候与介绍",
+  "description": "Saludar, despedirte, decir tu nombre y tu nacionalidad, presentar a alguien.",
+  "icon": "Hand",
+  "level": 1,
+  "category": "Saludos y expresiones",
+  "checkpoint": { "exercises": 15 },
+  "lessons": [
+    {
+      "id": "u01-l1",
+      "title": "Hola, gracias, adiós",
+      "zh": "你好！",
+      "goal": "Saludar, agradecer, disculparte y despedirte.",
+      "minutes": 10,
+      "vocab": [
+        { "hanzi": "你好", "pinyin": "nǐ hǎo", "es": "hola" },
+        { "hanzi": "您好", "pinyin": "nín hǎo", "es": "hola (formal, a mayores o profesores)" },
+        { "hanzi": "谢谢", "pinyin": "xièxie", "es": "gracias" },
+        { "hanzi": "不客气", "pinyin": "bú kèqi", "es": "de nada" },
+        { "hanzi": "对不起", "pinyin": "duìbuqǐ", "es": "lo siento; perdón" },
+        { "hanzi": "没关系", "pinyin": "méi guānxi", "es": "no pasa nada" },
+        { "hanzi": "再见", "pinyin": "zàijiàn", "es": "adiós" },
+        { "hanzi": "吗", "pinyin": "ma", "es": "partícula interrogativa (¿…?)" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "Las 7 expresiones que usarás cada día" },
+        {
+          "type": "dialogue",
+          "title": "En la puerta de la escuela",
+          "lines": [
+            { "speaker": "雨果", "zh": "老师，您好！", "py": "Lǎoshī, nín hǎo!", "es": "¡Hola, profesora!" },
+            { "speaker": "老师", "zh": "你好！你好吗？", "py": "Nǐ hǎo! Nǐ hǎo ma?", "es": "¡Hola! ¿Cómo estás?" },
+            { "speaker": "雨果", "zh": "我很好，谢谢！", "py": "Wǒ hěn hǎo, xièxie!", "es": "Muy bien, ¡gracias!" },
+            { "speaker": "老师", "zh": "不客气。再见！", "py": "Bú kèqi. Zàijiàn!", "es": "De nada. ¡Adiós!" },
+            { "speaker": "雨果", "zh": "再见！", "py": "Zàijiàn!", "es": "¡Adiós!" }
+          ],
+          "notes": "老师 lǎoshī (profesor/a) y 我很好 (estoy bien) aparecen aquí como adelanto: los estudiarás en las próximas lecciones. 您 nín es el «usted» chino."
+        },
+        { "type": "grammar", "id": "ma" },
+        { "type": "exercises", "count": 10, "types": ["choose-meaning", "listen-choose", "pinyin-input", "tone-choice", "order-words", "matching", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "u01-l2",
+      "title": "Me llamo…",
+      "zh": "我叫雨果",
+      "goal": "Decir tu nombre y preguntar el de otra persona.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "我", "pinyin": "wǒ", "es": "yo" },
+        { "hanzi": "你", "pinyin": "nǐ", "es": "tú" },
+        { "hanzi": "他", "pinyin": "tā", "es": "él" },
+        { "hanzi": "她", "pinyin": "tā", "es": "ella" },
+        { "hanzi": "叫", "pinyin": "jiào", "es": "llamarse" },
+        { "hanzi": "什么", "pinyin": "shénme", "es": "qué" },
+        { "hanzi": "名字", "pinyin": "míngzi", "es": "nombre" },
+        { "hanzi": "呢", "pinyin": "ne", "es": "¿y…? (partícula)" }
+      ],
+      "steps": [
+        { "type": "vocab" },
+        {
+          "type": "dialogue",
+          "title": "Primer día de clase",
+          "lines": [
+            { "speaker": "王明", "zh": "你好！我叫王明。你叫什么名字？", "py": "Nǐ hǎo! Wǒ jiào Wáng Míng. Nǐ jiào shénme míngzi?", "es": "¡Hola! Me llamo Wang Ming. ¿Cómo te llamas?" },
+            { "speaker": "雨果", "zh": "我叫雨果。", "py": "Wǒ jiào Yǔguǒ.", "es": "Me llamo Hugo." },
+            { "speaker": "王明", "zh": "她呢？她叫什么名字？", "py": "Tā ne? Tā jiào shénme míngzi?", "es": "¿Y ella? ¿Cómo se llama?" },
+            { "speaker": "雨果", "zh": "她叫安娜。", "py": "Tā jiào Ānnà.", "es": "Se llama Ana." }
+          ],
+          "notes": "王明 Wáng Míng y 安娜 Ānnà son nombres. En chino el apellido (王) va antes del nombre (明). 雨果 Yǔguǒ es la transcripción habitual de Hugo."
+        },
+        { "type": "grammar", "id": "question-words" },
+        { "type": "grammar", "id": "ne" },
+        { "type": "exercises", "count": 10, "types": ["choose-meaning", "choose-character", "order-words", "fill-blank", "dictation", "pinyin-input", "speaking", "matching"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "u01-l3",
+      "title": "Soy español",
+      "zh": "我是西班牙人",
+      "goal": "Decir tu nacionalidad y preguntar la de otros con 是 y 吗.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "是", "pinyin": "shì", "es": "ser" },
+        { "hanzi": "不", "pinyin": "bù", "es": "no" },
+        { "hanzi": "人", "pinyin": "rén", "es": "persona" },
+        { "hanzi": "中国", "pinyin": "Zhōngguó", "es": "China" },
+        { "hanzi": "西班牙", "pinyin": "Xībānyá", "es": "España" },
+        { "hanzi": "哪", "pinyin": "nǎ", "es": "cuál; qué" },
+        { "hanzi": "国", "pinyin": "guó", "es": "país" },
+        { "hanzi": "也", "pinyin": "yě", "es": "también" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "Nacionalidad = país + 人" },
+        {
+          "type": "dialogue",
+          "title": "¿De dónde eres?",
+          "lines": [
+            { "speaker": "王明", "zh": "雨果，你是哪国人？", "py": "Yǔguǒ, nǐ shì nǎ guó rén?", "es": "Hugo, ¿de qué país eres?" },
+            { "speaker": "雨果", "zh": "我是西班牙人。你是中国人吗？", "py": "Wǒ shì Xībānyárén. Nǐ shì Zhōngguórén ma?", "es": "Soy español. ¿Eres chino?" },
+            { "speaker": "王明", "zh": "是，我是中国人。她也是中国人吗？", "py": "Shì, wǒ shì Zhōngguórén. Tā yě shì Zhōngguórén ma?", "es": "Sí, soy chino. ¿Ella también es china?" },
+            { "speaker": "雨果", "zh": "不是，她不是中国人，她是西班牙人。", "py": "Bú shì, tā bú shì Zhōngguórén, tā shì Xībānyárén.", "es": "No, no es china, es española." }
+          ]
+        },
+        { "type": "grammar", "id": "shi" },
+        { "type": "grammar", "id": "ye-dou" },
+        { "type": "exercises", "count": 12, "types": ["choose-meaning", "order-words", "build-sentence", "fill-blank", "translate-to-es", "dictation", "tone-choice", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "u01-l4",
+      "title": "Te presento a…",
+      "zh": "这是我的朋友",
+      "goal": "Presentar a amigos, compañeros y profesores usando 这/那 y 的.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "这", "pinyin": "zhè", "es": "esto; este" },
+        { "hanzi": "那", "pinyin": "nà", "es": "eso; ese; aquel" },
+        { "hanzi": "的", "pinyin": "de", "es": "partícula de posesión (de)" },
+        { "hanzi": "朋友", "pinyin": "péngyou", "es": "amigo/a" },
+        { "hanzi": "老师", "pinyin": "lǎoshī", "es": "profesor/a" },
+        { "hanzi": "学生", "pinyin": "xuésheng", "es": "estudiante" },
+        { "hanzi": "同学", "pinyin": "tóngxué", "es": "compañero/a de clase" },
+        { "hanzi": "谁", "pinyin": "shéi", "es": "quién" }
+      ],
+      "steps": [
+        { "type": "vocab" },
+        {
+          "type": "dialogue",
+          "title": "En la cafetería de la universidad",
+          "lines": [
+            { "speaker": "雨果", "zh": "王明，这是我的朋友，她叫安娜。", "py": "Wáng Míng, zhè shì wǒ de péngyou, tā jiào Ānnà.", "es": "Wang Ming, esta es mi amiga, se llama Ana." },
+            { "speaker": "王明", "zh": "你好，安娜！你是学生吗？", "py": "Nǐ hǎo, Ānnà! Nǐ shì xuésheng ma?", "es": "¡Hola, Ana! ¿Eres estudiante?" },
+            { "speaker": "安娜", "zh": "是，我是学生。那是谁？", "py": "Shì, wǒ shì xuésheng. Nà shì shéi?", "es": "Sí, soy estudiante. ¿Quién es aquel?" },
+            { "speaker": "雨果", "zh": "那是我们的老师，李老师。", "py": "Nà shì wǒmen de lǎoshī, Lǐ lǎoshī.", "es": "Aquel es nuestro profesor, el profesor Li." },
+            { "speaker": "安娜", "zh": "李老师，您好！", "py": "Lǐ lǎoshī, nín hǎo!", "es": "¡Hola, profesor Li!" }
+          ],
+          "notes": "我们 wǒmen = nosotros (我 + 们). A un profesor se le llama por el apellido + 老师: 李老师."
+        },
+        { "type": "grammar", "id": "demonstratives" },
+        { "type": "grammar", "id": "de" },
+        { "type": "exercises", "count": 12, "types": ["choose-meaning", "choose-character", "order-words", "fill-blank", "translate-to-es", "listen-choose", "similar-characters", "speaking", "writing"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "u01-l5",
+      "title": "Lectura y repaso de la unidad",
+      "zh": "复习",
+      "goal": "Leer una presentación completa y consolidar todo el vocabulario de la unidad.",
+      "minutes": 10,
+      "vocab": [
+        { "hanzi": "我们", "pinyin": "wǒmen", "es": "nosotros" },
+        { "hanzi": "你们", "pinyin": "nǐmen", "es": "vosotros" },
+        { "hanzi": "他们", "pinyin": "tāmen", "es": "ellos" },
+        { "hanzi": "很", "pinyin": "hěn", "es": "muy" },
+        { "hanzi": "好", "pinyin": "hǎo", "es": "bueno; bien" },
+        { "hanzi": "都", "pinyin": "dōu", "es": "todos" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "Plurales con 们 y dos palabras más" },
+        {
+          "type": "reading",
+          "title": "Hugo se presenta en clase",
+          "text": "你们好！我叫雨果，我是西班牙人。我是学生。这是我的朋友安娜，她也是西班牙人。那是王明，他是中国人，他是我的同学。我们都是李老师的学生。李老师很好。谢谢！",
+          "es": "¡Hola a todos! Me llamo Hugo, soy español. Soy estudiante. Esta es mi amiga Ana, ella también es española. Aquel es Wang Ming, es chino, es mi compañero de clase. Todos somos estudiantes del profesor Li. El profesor Li es muy bueno. ¡Gracias!",
+          "questions": [
+            { "q": "¿Quién es Ana?", "options": ["La profesora de Hugo", "La amiga española de Hugo", "La compañera china de Hugo", "La madre de Hugo"], "answer": 1, "explain": "这是我的朋友安娜，她也是西班牙人。" },
+            { "q": "¿De dónde es Wang Ming?", "options": ["De España", "De China", "No se dice", "De Japón"], "answer": 1, "explain": "他是中国人。" },
+            { "q": "¿Qué significa 我们都是李老师的学生?", "options": ["Todos somos profesores de Li", "El profesor Li es nuestro estudiante", "Todos somos estudiantes del profesor Li", "Li es nuestro amigo"], "answer": 2, "explain": "都 = todos; 李老师的学生 = estudiantes del profesor Li." }
+          ]
+        },
+        { "type": "exercises", "count": 12, "types": ["matching", "choose-meaning", "order-words", "build-sentence", "fill-blank", "dictation", "translate-to-es", "tone-choice", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    }
+  ]
+}

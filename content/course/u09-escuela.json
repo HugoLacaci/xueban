@@ -1,0 +1,167 @@
+{
+  "id": "u09",
+  "order": 10,
+  "title": "Escuela y trabajo",
+  "zh": "学校与工作",
+  "description": "Hablar de tus clases de chino, de lo que sabes hacer, de la universidad y del trabajo.",
+  "icon": "GraduationCap",
+  "level": 1,
+  "category": "Escuela y trabajo",
+  "checkpoint": { "exercises": 15 },
+  "lessons": [
+    {
+      "id": "u09-l1",
+      "title": "Estudio chino",
+      "zh": "我学习汉语",
+      "goal": "Decir qué estudias, qué sabes hablar y cuándo tienes clase.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "学习", "pinyin": "xuéxí", "es": "estudiar; aprender" },
+        { "hanzi": "汉语", "pinyin": "Hànyǔ", "es": "lengua china" },
+        { "hanzi": "中文", "pinyin": "Zhōngwén", "es": "chino (idioma, escrito)" },
+        { "hanzi": "英语", "pinyin": "Yīngyǔ", "es": "inglés (idioma)" },
+        { "hanzi": "会", "pinyin": "huì", "es": "saber (hacer)" },
+        { "hanzi": "课", "pinyin": "kè", "es": "clase; lección" },
+        { "hanzi": "上课", "pinyin": "shàngkè", "es": "ir a clase; empezar la clase" },
+        { "hanzi": "下课", "pinyin": "xiàkè", "es": "terminar la clase" }
+      ],
+      "steps": [
+        { "type": "vocab" },
+        {
+          "type": "dialogue",
+          "title": "Antes de clase",
+          "lines": [
+            { "speaker": "王明", "zh": "雨果，你在学习什么？", "py": "Yǔguǒ, nǐ zài xuéxí shénme?", "es": "Hugo, ¿qué estás estudiando?" },
+            { "speaker": "雨果", "zh": "我在学习汉语。我会说一点儿汉语。", "py": "Wǒ zài xuéxí Hànyǔ. Wǒ huì shuō yìdiǎnr Hànyǔ.", "es": "Estoy estudiando chino. Sé hablar un poco de chino." },
+            { "speaker": "王明", "zh": "你的汉语很好！你会说英语吗？", "py": "Nǐ de Hànyǔ hěn hǎo! Nǐ huì shuō Yīngyǔ ma?", "es": "¡Tu chino es muy bueno! ¿Sabes hablar inglés?" },
+            { "speaker": "雨果", "zh": "会，我会说英语和西班牙语。你们几点上课？", "py": "Huì, wǒ huì shuō Yīngyǔ hé Xībānyáyǔ. Nǐmen jǐ diǎn shàngkè?", "es": "Sí, hablo inglés y español. ¿A qué hora tenéis clase?" },
+            { "speaker": "王明", "zh": "我们八点上课，十一点下课。", "py": "Wǒmen bā diǎn shàngkè, shíyī diǎn xiàkè.", "es": "Empezamos a las ocho y terminamos a las once." }
+          ],
+          "notes": "西班牙语 Xībānyáyǔ = español (idioma): país + 语. 一点儿 yìdiǎnr = un poco."
+        },
+        { "type": "grammar", "id": "modal-verbs" },
+        { "type": "exercises", "count": 10, "types": ["choose-meaning", "listen-choose", "order-words", "fill-blank", "pinyin-input", "tone-choice", "matching", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "u09-l2",
+      "title": "¿Lo has entendido?",
+      "zh": "你听懂了吗？",
+      "goal": "Decir si entiendes, hacer preguntas en clase y valorar cómo hablas con 得.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "懂", "pinyin": "dǒng", "es": "entender" },
+        { "hanzi": "听", "pinyin": "tīng", "es": "escuchar" },
+        { "hanzi": "说", "pinyin": "shuō", "es": "decir; hablar" },
+        { "hanzi": "读", "pinyin": "dú", "es": "leer (en voz alta); estudiar" },
+        { "hanzi": "写", "pinyin": "xiě", "es": "escribir" },
+        { "hanzi": "汉字", "pinyin": "Hànzì", "es": "carácter chino" },
+        { "hanzi": "问题", "pinyin": "wèntí", "es": "pregunta; problema" },
+        { "hanzi": "问", "pinyin": "wèn", "es": "preguntar" }
+      ],
+      "steps": [
+        { "type": "vocab" },
+        {
+          "type": "dialogue",
+          "title": "En clase de chino",
+          "lines": [
+            { "speaker": "老师", "zh": "雨果，你听懂了吗？", "py": "Yǔguǒ, nǐ tīngdǒng le ma?", "es": "Hugo, ¿lo has entendido?" },
+            { "speaker": "雨果", "zh": "对不起，老师，我没听懂。您能再说一次吗？", "py": "Duìbuqǐ, lǎoshī, wǒ méi tīngdǒng. Nín néng zài shuō yí cì ma?", "es": "Perdone, profesora, no lo he entendido. ¿Puede repetirlo?" },
+            { "speaker": "老师", "zh": "可以。这个汉字读“学”。", "py": "Kěyǐ. Zhège Hànzì dú “xué”.", "es": "Claro. Este carácter se lee «xué»." },
+            { "speaker": "雨果", "zh": "我有一个问题：这个字怎么写？", "py": "Wǒ yǒu yí ge wèntí: zhège zì zěnme xiě?", "es": "Tengo una pregunta: ¿cómo se escribe este carácter?" },
+            { "speaker": "老师", "zh": "你看，这样写。你写得很好！", "py": "Nǐ kàn, zhèyàng xiě. Nǐ xiě de hěn hǎo!", "es": "Mira, se escribe así. ¡Escribes muy bien!" }
+          ],
+          "notes": "再说一次 zài shuō yí cì = decirlo otra vez (次 cì = vez). 这样 zhèyàng = así."
+        },
+        { "type": "grammar", "id": "complements" },
+        { "type": "exercises", "count": 10, "types": ["choose-meaning", "choose-character", "order-words", "fill-blank", "translate-to-es", "dictation", "similar-characters", "speaking", "writing"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "u09-l3",
+      "title": "La vida en la universidad",
+      "zh": "大学生活",
+      "goal": "Describir tu rutina de estudio con 每天 y la reduplicación de verbos.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "大学", "pinyin": "dàxué", "es": "universidad" },
+        { "hanzi": "大学生", "pinyin": "dàxuéshēng", "es": "estudiante universitario" },
+        { "hanzi": "每", "pinyin": "měi", "es": "cada" },
+        { "hanzi": "书", "pinyin": "shū", "es": "libro" },
+        { "hanzi": "读书", "pinyin": "dúshū", "es": "leer; estudiar" },
+        { "hanzi": "考试", "pinyin": "kǎoshì", "es": "examen; examinarse" },
+        { "hanzi": "休息", "pinyin": "xiūxi", "es": "descansar" },
+        { "hanzi": "一起", "pinyin": "yìqǐ", "es": "juntos" }
+      ],
+      "steps": [
+        { "type": "vocab" },
+        {
+          "type": "dialogue",
+          "title": "En la biblioteca de Jiaotong",
+          "lines": [
+            { "speaker": "安娜", "zh": "雨果，你每天都来大学吗？", "py": "Yǔguǒ, nǐ měi tiān dōu lái dàxué ma?", "es": "Hugo, ¿vienes a la universidad todos los días?" },
+            { "speaker": "雨果", "zh": "对，我每天早上都在这儿读书。下个星期有汉语考试。", "py": "Duì, wǒ měi tiān zǎoshang dōu zài zhèr dúshū. Xià ge xīngqī yǒu Hànyǔ kǎoshì.", "es": "Sí, cada mañana estudio aquí. La semana que viene tengo examen de chino." },
+            { "speaker": "安娜", "zh": "我也有。我们一起学习学习吧！", "py": "Wǒ yě yǒu. Wǒmen yìqǐ xuéxí xuéxí ba!", "es": "Yo también. ¡Estudiemos juntos!" },
+            { "speaker": "雨果", "zh": "好。先休息休息，喝杯咖啡，怎么样？", "py": "Hǎo. Xiān xiūxi xiūxi, hē bēi kāfēi, zěnmeyàng?", "es": "Vale. Primero descansamos un poco y tomamos un café, ¿qué te parece?" },
+            { "speaker": "安娜", "zh": "太好了！", "py": "Tài hǎo le!", "es": "¡Genial!" }
+          ],
+          "notes": "下个星期 xià ge xīngqī = la semana que viene. 先 xiān = primero. 上海交通大学 Shànghǎi Jiāotōng Dàxué (SJTU) se abrevia 交大 Jiāodà."
+        },
+        { "type": "grammar", "id": "mei" },
+        { "type": "grammar", "id": "reduplication" },
+        { "type": "exercises", "count": 10, "types": ["choose-meaning", "listen-choose", "order-words", "build-sentence", "fill-blank", "translate-to-es", "pinyin-input", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "u09-l4",
+      "title": "Trabajo y empresa: lectura y repaso",
+      "zh": "复习",
+      "goal": "Hablar del trabajo y consolidar el vocabulario de la unidad.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "工作", "pinyin": "gōngzuò", "es": "trabajar; trabajo" },
+        { "hanzi": "公司", "pinyin": "gōngsī", "es": "empresa" },
+        { "hanzi": "上班", "pinyin": "shàngbān", "es": "ir a trabajar" },
+        { "hanzi": "下班", "pinyin": "xiàbān", "es": "salir del trabajo" },
+        { "hanzi": "忙", "pinyin": "máng", "es": "ocupado" },
+        { "hanzi": "做", "pinyin": "zuò", "es": "hacer" },
+        { "hanzi": "事", "pinyin": "shì", "es": "asunto; cosa" }
+      ],
+      "steps": [
+        { "type": "vocab" },
+        {
+          "type": "dialogue",
+          "title": "El trabajo de Wang Ming",
+          "lines": [
+            { "speaker": "雨果", "zh": "王明，你在哪儿工作？", "py": "Wáng Míng, nǐ zài nǎr gōngzuò?", "es": "Wang Ming, ¿dónde trabajas?" },
+            { "speaker": "王明", "zh": "我在一家公司工作，做电脑的工作。", "py": "Wǒ zài yì jiā gōngsī gōngzuò, zuò diànnǎo de gōngzuò.", "es": "Trabajo en una empresa, hago trabajo de informática." },
+            { "speaker": "雨果", "zh": "你几点上班？", "py": "Nǐ jǐ diǎn shàngbān?", "es": "¿A qué hora entras a trabajar?" },
+            { "speaker": "王明", "zh": "九点上班，六点下班。我每天都很忙，事很多。", "py": "Jiǔ diǎn shàngbān, liù diǎn xiàbān. Wǒ měi tiān dōu hěn máng, shì hěn duō.", "es": "Entro a las nueve y salgo a las seis. Estoy muy ocupado cada día, hay muchas cosas que hacer." }
+          ],
+          "notes": "一家公司 yì jiā gōngsī: 家 es el clasificador de empresas y tiendas. 电脑 diànnǎo = ordenador."
+        },
+        { "type": "grammar", "id": "word-order" },
+        {
+          "type": "reading",
+          "title": "Mi vida en Shanghái",
+          "text": "我是大学生，在上海的一所大学学习汉语。我每天早上八点上课，十一点下课。我的老师说得很慢，我都能听懂。下午我在图书馆读书、写汉字。我会说英语和西班牙语，现在会说一点儿汉语。下个月有考试，我有点儿忙。我的朋友王明不是学生，他在公司工作，每天九点上班。晚上我们一起吃饭，说说汉语。",
+          "es": "Soy estudiante universitario y estudio chino en una universidad de Shanghái. Cada mañana tengo clase a las ocho y termino a las once. Mi profesor habla muy despacio y lo entiendo todo. Por la tarde leo y escribo caracteres en la biblioteca. Sé hablar inglés y español, y ahora hablo un poco de chino. El mes que viene tengo examen y estoy un poco ocupado. Mi amigo Wang Ming no es estudiante: trabaja en una empresa y entra a trabajar a las nueve cada día. Por la noche cenamos juntos y hablamos un poco en chino.",
+          "questions": [
+            { "q": "¿A qué hora termina la clase de Hugo?", "options": ["A las ocho", "A las nueve", "A las once", "A las seis"], "answer": 2, "explain": "八点上课，十一点下课。" },
+            { "q": "¿Por qué Hugo entiende al profesor?", "options": ["Porque habla inglés", "Porque habla muy despacio", "Porque escribe en la pizarra", "Porque es español"], "answer": 1, "explain": "我的老师说得很慢，我都能听懂。" },
+            { "q": "¿Qué hace Wang Ming?", "options": ["Estudia chino", "Es profesor", "Trabaja en una empresa", "Trabaja en la biblioteca"], "answer": 2, "explain": "他在公司工作。" }
+          ]
+        },
+        { "type": "exercises", "count": 12, "types": ["matching", "choose-meaning", "order-words", "build-sentence", "fill-blank", "dictation", "translate-to-es", "tone-choice", "speaking", "writing"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    }
+  ]
+}

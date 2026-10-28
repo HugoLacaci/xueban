@@ -1,0 +1,198 @@
+{
+  "id": "u03",
+  "order": 4,
+  "title": "Familia",
+  "zh": "家人",
+  "description": "Hablar de tu familia: cuántos sois, quién es quién, a qué se dedican y qué mascotas tenéis.",
+  "icon": "Baby",
+  "level": 1,
+  "category": "Familia y personas",
+  "checkpoint": { "exercises": 15 },
+  "lessons": [
+    {
+      "id": "u03-l1",
+      "title": "¿Cuántos sois en casa?",
+      "zh": "你家有几口人？",
+      "goal": "Decir cuántos sois en la familia y nombrar a padres y hermanos.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "家", "pinyin": "jiā", "es": "casa; familia" },
+        { "hanzi": "爸爸", "pinyin": "bàba", "es": "papá" },
+        { "hanzi": "妈妈", "pinyin": "māma", "es": "mamá" },
+        { "hanzi": "哥哥", "pinyin": "gēge", "es": "hermano mayor" },
+        { "hanzi": "姐姐", "pinyin": "jiějie", "es": "hermana mayor" },
+        { "hanzi": "弟弟", "pinyin": "dìdi", "es": "hermano menor" },
+        { "hanzi": "妹妹", "pinyin": "mèimei", "es": "hermana menor" },
+        { "hanzi": "口", "pinyin": "kǒu", "es": "boca; clasificador para miembros de la familia" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "La familia se cuenta por bocas: 口" },
+        {
+          "type": "explain",
+          "title": "Mayor o menor: el chino siempre lo dice",
+          "markdown": "En chino no hay una palabra neutra para «hermano»: hay que decir si es **mayor** (哥哥, 姐姐) o **menor** (弟弟, 妹妹). Lo mismo pasa con tíos y abuelos (lado paterno o materno).\n\nLas palabras de familia duplican la sílaba y la segunda va en **tono neutro**: bàba, māma, gēge, jiějie, dìdi, mèimei.\n\nPara contar miembros de la familia se usa el clasificador **口 kǒu** («boca»): 我家有四口人 (*en mi casa somos cuatro*)."
+        },
+        {
+          "type": "dialogue",
+          "title": "Hugo habla de su familia",
+          "lines": [
+            { "speaker": "王明", "zh": "雨果，你家有几口人？", "py": "Yǔguǒ, nǐ jiā yǒu jǐ kǒu rén?", "es": "Hugo, ¿cuántos sois en tu familia?" },
+            { "speaker": "雨果", "zh": "我家有四口人：爸爸、妈妈、姐姐、我。", "py": "Wǒ jiā yǒu sì kǒu rén: bàba, māma, jiějie, wǒ.", "es": "En mi familia somos cuatro: papá, mamá, mi hermana mayor y yo." },
+            { "speaker": "王明", "zh": "你有弟弟吗？", "py": "Nǐ yǒu dìdi ma?", "es": "¿Tienes algún hermano menor?" },
+            { "speaker": "雨果", "zh": "我有一个姐姐，你呢？你家有几口人？", "py": "Wǒ yǒu yí ge jiějie, nǐ ne? Nǐ jiā yǒu jǐ kǒu rén?", "es": "Tengo una hermana mayor, ¿y tú? ¿Cuántos sois en tu familia?" },
+            { "speaker": "王明", "zh": "我家有三口人：爸爸、妈妈、我。", "py": "Wǒ jiā yǒu sān kǒu rén: bàba, māma, wǒ.", "es": "En mi familia somos tres: papá, mamá y yo." },
+            { "speaker": "雨果", "zh": "你姐姐多大？", "py": "Nǐ jiějie duō dà?", "es": "¿Cuántos años tiene tu hermana?" }
+          ],
+          "notes": "Fíjate en 你姐姐 y 我家: con familia y «casa» no se pone 的. Wang Ming no tiene hermanos: responde con la lista de su familia, algo muy habitual en China."
+        },
+        { "type": "grammar", "id": "you" },
+        { "type": "grammar", "id": "measure-words" },
+        { "type": "exercises", "count": 10, "types": ["choose-meaning", "listen-choose", "pinyin-input", "tone-choice", "order-words", "matching", "classifier", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "u03-l2",
+      "title": "No tengo hermanos",
+      "zh": "我没有哥哥",
+      "goal": "Negar con 没有, unir con 和 y presentar a hijos e hijas.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "没有", "pinyin": "méiyǒu", "es": "no tener; no haber" },
+        { "hanzi": "没", "pinyin": "méi", "es": "no (con 有 y en pasado)" },
+        { "hanzi": "和", "pinyin": "hé", "es": "y; con" },
+        { "hanzi": "儿子", "pinyin": "érzi", "es": "hijo" },
+        { "hanzi": "女儿", "pinyin": "nǚ'ér", "es": "hija" },
+        { "hanzi": "家人", "pinyin": "jiārén", "es": "familiares; familia" },
+        { "hanzi": "大家", "pinyin": "dàjiā", "es": "todos; todo el mundo" }
+      ],
+      "steps": [
+        { "type": "vocab" },
+        {
+          "type": "dialogue",
+          "title": "Una foto de familia",
+          "lines": [
+            { "speaker": "李老师", "zh": "雨果，这是你的家人吗？", "py": "Yǔguǒ, zhè shì nǐ de jiārén ma?", "es": "Hugo, ¿esta es tu familia?" },
+            { "speaker": "雨果", "zh": "是，这是我爸爸和我妈妈。", "py": "Shì, zhè shì wǒ bàba hé wǒ māma.", "es": "Sí, estos son mi padre y mi madre." },
+            { "speaker": "李老师", "zh": "这个孩子是谁？", "py": "Zhège háizi shì shéi?", "es": "¿Quién es este niño?" },
+            { "speaker": "雨果", "zh": "那是我姐姐的儿子，他三岁。", "py": "Nà shì wǒ jiějie de érzi, tā sān suì.", "es": "Es el hijo de mi hermana mayor, tiene tres años." },
+            { "speaker": "李老师", "zh": "你有哥哥吗？", "py": "Nǐ yǒu gēge ma?", "es": "¿Tienes hermano mayor?" },
+            { "speaker": "雨果", "zh": "没有，我没有哥哥，也没有弟弟。我有一个姐姐。", "py": "Méiyǒu, wǒ méiyǒu gēge, yě méiyǒu dìdi. Wǒ yǒu yí ge jiějie.", "es": "No, no tengo hermano mayor ni hermano menor. Tengo una hermana mayor." }
+          ],
+          "notes": "姐姐的儿子: cuando el poseedor no es un pronombre (我, 你…) sí se usa 的. 有 se niega siempre con 没, nunca con 不."
+        },
+        { "type": "grammar", "id": "bu-mei" },
+        { "type": "grammar", "id": "he" },
+        { "type": "exercises", "count": 10, "types": ["choose-meaning", "choose-character", "fill-blank", "order-words", "build-sentence", "dictation", "translate-to-es", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "u03-l3",
+      "title": "¿A qué se dedica tu padre?",
+      "zh": "你爸爸做什么工作？",
+      "goal": "Hablar de las profesiones de la familia y decir dónde trabaja alguien con 在.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "工作", "pinyin": "gōngzuò", "es": "trabajar; trabajo" },
+        { "hanzi": "做", "pinyin": "zuò", "es": "hacer" },
+        { "hanzi": "医生", "pinyin": "yīshēng", "es": "médico" },
+        { "hanzi": "公司", "pinyin": "gōngsī", "es": "empresa" },
+        { "hanzi": "学校", "pinyin": "xuéxiào", "es": "escuela" },
+        { "hanzi": "在", "pinyin": "zài", "es": "estar en; en" },
+        { "hanzi": "大学生", "pinyin": "dàxuéshēng", "es": "estudiante universitario" },
+        { "hanzi": "医院", "pinyin": "yīyuàn", "es": "hospital" }
+      ],
+      "steps": [
+        { "type": "vocab" },
+        {
+          "type": "dialogue",
+          "title": "Profesiones",
+          "lines": [
+            { "speaker": "安娜", "zh": "雨果，你爸爸做什么工作？", "py": "Yǔguǒ, nǐ bàba zuò shénme gōngzuò?", "es": "Hugo, ¿en qué trabaja tu padre?" },
+            { "speaker": "雨果", "zh": "我爸爸是医生，他在医院工作。我妈妈是老师。", "py": "Wǒ bàba shì yīshēng, tā zài yīyuàn gōngzuò. Wǒ māma shì lǎoshī.", "es": "Mi padre es médico, trabaja en un hospital. Mi madre es profesora." },
+            { "speaker": "安娜", "zh": "你妈妈在哪儿工作？", "py": "Nǐ māma zài nǎr gōngzuò?", "es": "¿Dónde trabaja tu madre?" },
+            { "speaker": "雨果", "zh": "她在学校工作。你爸爸呢？", "py": "Tā zài xuéxiào gōngzuò. Nǐ bàba ne?", "es": "Trabaja en una escuela. ¿Y tu padre?" },
+            { "speaker": "安娜", "zh": "我爸爸在公司工作。我姐姐是大学生，她不工作。", "py": "Wǒ bàba zài gōngsī gōngzuò. Wǒ jiějie shì dàxuéshēng, tā bù gōngzuò.", "es": "Mi padre trabaja en una empresa. Mi hermana mayor es universitaria, no trabaja." }
+          ],
+          "notes": "哪儿 nǎr (¿dónde?) lo verás en la unidad de lugares. Orden: persona + 在 + lugar + 工作 («en el hospital trabaja»), nunca 工作在医院."
+        },
+        { "type": "grammar", "id": "de" },
+        { "type": "grammar", "id": "zai" },
+        { "type": "exercises", "count": 10, "types": ["choose-meaning", "listen-choose", "order-words", "build-sentence", "fill-blank", "translate-to-es", "pinyin-input", "speaking", "writing"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "u03-l4",
+      "title": "Perros y gatos",
+      "zh": "我家有一只狗",
+      "goal": "Hablar de mascotas con el clasificador 只 y decir qué te gusta con 喜欢.",
+      "minutes": 10,
+      "vocab": [
+        { "hanzi": "狗", "pinyin": "gǒu", "es": "perro" },
+        { "hanzi": "猫", "pinyin": "māo", "es": "gato" },
+        { "hanzi": "只", "pinyin": "zhī", "es": "clasificador para animales" },
+        { "hanzi": "喜欢", "pinyin": "xǐhuan", "es": "gustar" },
+        { "hanzi": "它", "pinyin": "tā", "es": "ello (cosas, animales)" },
+        { "hanzi": "它们", "pinyin": "tāmen", "es": "ellos (cosas, animales)" },
+        { "hanzi": "小朋友", "pinyin": "xiǎopéngyǒu", "es": "niño (pequeño)" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "Animales con 只 y el tercer «tā»" },
+        {
+          "type": "dialogue",
+          "title": "Mascotas",
+          "lines": [
+            { "speaker": "王明", "zh": "雨果，你家有狗吗？", "py": "Yǔguǒ, nǐ jiā yǒu gǒu ma?", "es": "Hugo, ¿tenéis perro en casa?" },
+            { "speaker": "雨果", "zh": "有，我家有一只狗，它叫托比。", "py": "Yǒu, wǒ jiā yǒu yì zhī gǒu, tā jiào Tuōbǐ.", "es": "Sí, tenemos un perro, se llama Toby." },
+            { "speaker": "王明", "zh": "我家没有狗，有两只猫。", "py": "Wǒ jiā méiyǒu gǒu, yǒu liǎng zhī māo.", "es": "En mi casa no hay perro, hay dos gatos." },
+            { "speaker": "雨果", "zh": "我也喜欢猫！你喜欢狗吗？", "py": "Wǒ yě xǐhuan māo! Nǐ xǐhuan gǒu ma?", "es": "¡A mí también me gustan los gatos! ¿Te gustan los perros?" },
+            { "speaker": "王明", "zh": "喜欢，我喜欢狗，也喜欢猫。我们家的小朋友很喜欢它们。", "py": "Xǐhuan, wǒ xǐhuan gǒu, yě xǐhuan māo. Wǒmen jiā de xiǎopéngyǒu hěn xǐhuan tāmen.", "es": "Sí, me gustan los perros y también los gatos. Los niños de mi familia los adoran." }
+          ],
+          "notes": "他, 她 y 它 se pronuncian igual (tā): él, ella y «ello» (animales y cosas). 托比 Tuōbǐ es la transcripción de Toby."
+        },
+        { "type": "grammar", "id": "measure-words" },
+        { "type": "grammar", "id": "you" },
+        { "type": "exercises", "count": 10, "types": ["choose-meaning", "similar-characters", "classifier", "order-words", "fill-blank", "listen-choose", "dictation", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "u03-l5",
+      "title": "Lectura y repaso de la unidad",
+      "zh": "复习",
+      "goal": "Leer una descripción completa de una familia y consolidar la unidad.",
+      "minutes": 10,
+      "vocab": [
+        { "hanzi": "男", "pinyin": "nán", "es": "hombre; masculino" },
+        { "hanzi": "女", "pinyin": "nǚ", "es": "mujer; femenino" },
+        { "hanzi": "男朋友", "pinyin": "nán péngyou", "es": "novio" },
+        { "hanzi": "女朋友", "pinyin": "nǚ péngyou", "es": "novia" },
+        { "hanzi": "中学生", "pinyin": "zhōngxuéshēng", "es": "estudiante de secundaria" },
+        { "hanzi": "先生", "pinyin": "xiānsheng", "es": "señor; marido" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "Novios, señores y estudiantes" },
+        {
+          "type": "reading",
+          "title": "La familia de Hugo",
+          "text": "我家有五口人：爸爸、妈妈、姐姐、妹妹和我。我爸爸是医生，他在医院工作。我妈妈在学校工作，她是老师。我姐姐二十五岁，她在公司工作，她有男朋友。我妹妹十五岁，她是中学生。我家有一只狗和两只猫，我们都很喜欢它们。",
+          "es": "En mi familia somos cinco: papá, mamá, mi hermana mayor, mi hermana menor y yo. Mi padre es médico y trabaja en un hospital. Mi madre trabaja en una escuela, es profesora. Mi hermana mayor tiene veinticinco años, trabaja en una empresa y tiene novio. Mi hermana menor tiene quince años y es estudiante de secundaria. En casa tenemos un perro y dos gatos; a todos nos encantan.",
+          "questions": [
+            { "q": "¿Cuántas hermanas tiene Hugo?", "options": ["Una", "Dos", "Tres", "Ninguna"], "answer": 1, "explain": "姐姐 (mayor) y 妹妹 (menor): dos hermanas." },
+            { "q": "¿Dónde trabaja la madre de Hugo?", "options": ["En un hospital", "En una empresa", "En una escuela", "No trabaja"], "answer": 2, "explain": "我妈妈在学校工作，她是老师。" },
+            { "q": "¿Qué significa 我们都很喜欢它们?", "options": ["Ellos nos quieren mucho", "A todos nos gustan mucho (los animales)", "Nosotros tenemos muchos", "A todos nos gustan los perros"], "answer": 1, "explain": "都 = todos; 喜欢 = gustar; 它们 = ellos (los animales)." }
+          ]
+        },
+        { "type": "exercises", "count": 12, "types": ["matching", "choose-meaning", "order-words", "build-sentence", "fill-blank", "dictation", "translate-to-es", "classifier", "tone-choice", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    }
+  ]
+}

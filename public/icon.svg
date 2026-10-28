@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <defs>
+    <filter id="edge" x="-10%" y="-10%" width="120%" height="120%"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="3.84" xChannelSelector="R" yChannelSelector="G"/></filter>
+    <mask id="m"><rect width="128" height="128" fill="#fff"/><rect width="128" height="128" filter="url(#sg)" opacity="0.2"/></mask>
+    <filter id="sg"><feTurbulence type="fractalNoise" baseFrequency="1.4" numOctaves="1" seed="3"/><feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 0"/></filter>
+  </defs>
+  <rect width="128" height="128" rx="24" fill="#F5EFE3"/>
+  <g filter="url(#edge)" mask="url(#m)"><rect x="8.96" y="8.96" width="110.08" height="110.08" rx="7.7056000000000004" fill="#B83A2B"/></g>
+  <g fill="#FBF7EF" font-family="'LXGW WenKai Lite','KaiTi','STKaiti','Noto Serif SC',serif" font-weight="600" text-anchor="middle" dominant-baseline="central" font-size="39.6288">
+    <text x="64" y="41.983999999999995">学</text>
+    <text x="64" y="86.016">伴</text>
+  </g>
+</svg>

@@ -1,0 +1,165 @@
+{
+  "id": "u10",
+  "order": 11,
+  "title": "Tiempo atmosférico",
+  "zh": "天气",
+  "description": "Hablar del tiempo que hace, del calor y el frío de Shanghái, de la lluvia y de qué ponerte.",
+  "icon": "CloudSun",
+  "level": 1,
+  "category": "Tiempo atmosférico",
+  "checkpoint": { "exercises": 15 },
+  "lessons": [
+    {
+      "id": "u10-l1",
+      "title": "¿Qué tiempo hace hoy?",
+      "zh": "今天天气怎么样？",
+      "goal": "Describir el tiempo con 很 + adjetivo y preguntar con 怎么样.",
+      "minutes": 10,
+      "vocab": [
+        { "hanzi": "天气", "pinyin": "tiānqì", "es": "tiempo (clima)" },
+        { "hanzi": "热", "pinyin": "rè", "es": "calor; caliente" },
+        { "hanzi": "冷", "pinyin": "lěng", "es": "frío" },
+        { "hanzi": "怎么样", "pinyin": "zěnmeyàng", "es": "qué tal; cómo es" },
+        { "hanzi": "今天", "pinyin": "jīntiān", "es": "hoy" },
+        { "hanzi": "明天", "pinyin": "míngtiān", "es": "mañana (día)" },
+        { "hanzi": "昨天", "pinyin": "zuótiān", "es": "ayer" },
+        { "hanzi": "非常", "pinyin": "fēicháng", "es": "extremadamente; muy" }
+      ],
+      "steps": [
+        { "type": "vocab" },
+        {
+          "type": "dialogue",
+          "title": "Por WeChat, una mañana de julio",
+          "lines": [
+            { "speaker": "安娜", "zh": "雨果，今天上海天气怎么样？", "py": "Yǔguǒ, jīntiān Shànghǎi tiānqì zěnmeyàng?", "es": "Hugo, ¿qué tiempo hace hoy en Shanghái?" },
+            { "speaker": "雨果", "zh": "今天非常热，三十五度！", "py": "Jīntiān fēicháng rè, sānshíwǔ dù!", "es": "Hoy hace muchísimo calor, ¡35 grados!" },
+            { "speaker": "安娜", "zh": "昨天也很热吗？", "py": "Zuótiān yě hěn rè ma?", "es": "¿Ayer también hizo calor?" },
+            { "speaker": "雨果", "zh": "昨天不太热。明天呢？", "py": "Zuótiān bú tài rè. Míngtiān ne?", "es": "Ayer no hizo mucho calor. ¿Y mañana?" },
+            { "speaker": "安娜", "zh": "明天会很冷，二十度。", "py": "Míngtiān huì hěn lěng, èrshí dù.", "es": "Mañana hará frío, veinte grados." }
+          ],
+          "notes": "度 dù = grados. 会 + adjetivo/verbo = «va a» (futuro probable)."
+        },
+        { "type": "grammar", "id": "hen-adj" },
+        { "type": "exercises", "count": 10, "types": ["choose-meaning", "listen-choose", "order-words", "fill-blank", "pinyin-input", "tone-choice", "matching", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "u10-l2",
+      "title": "Ha empezado a llover",
+      "zh": "下雨了",
+      "goal": "Hablar de la lluvia y la nieve, y expresar cambios con 了 y predicciones con 会.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "下雨", "pinyin": "xià yǔ", "es": "llover" },
+        { "hanzi": "雨", "pinyin": "yǔ", "es": "lluvia" },
+        { "hanzi": "下雪", "pinyin": "xià xuě", "es": "nevar" },
+        { "hanzi": "雪", "pinyin": "xuě", "es": "nieve" },
+        { "hanzi": "风", "pinyin": "fēng", "es": "viento" },
+        { "hanzi": "太阳", "pinyin": "tàiyáng", "es": "sol" },
+        { "hanzi": "伞", "pinyin": "sǎn", "es": "paraguas" },
+        { "hanzi": "带", "pinyin": "dài", "es": "llevar (consigo)" }
+      ],
+      "steps": [
+        { "type": "vocab" },
+        {
+          "type": "dialogue",
+          "title": "Saliendo de clase",
+          "lines": [
+            { "speaker": "王明", "zh": "你看，下雨了！", "py": "Nǐ kàn, xià yǔ le!", "es": "¡Mira, está lloviendo!" },
+            { "speaker": "雨果", "zh": "早上没下雨，有太阳。我没带伞。", "py": "Zǎoshang méi xià yǔ, yǒu tàiyáng. Wǒ méi dài sǎn.", "es": "Por la mañana no llovía, hacía sol. No he traído paraguas." },
+            { "speaker": "王明", "zh": "没关系，我有伞。明天会下雨吗？", "py": "Méi guānxi, wǒ yǒu sǎn. Míngtiān huì xià yǔ ma?", "es": "No pasa nada, yo tengo paraguas. ¿Lloverá mañana?" },
+            { "speaker": "雨果", "zh": "明天不会下雨，但是风很大。", "py": "Míngtiān bú huì xià yǔ, dànshì fēng hěn dà.", "es": "Mañana no lloverá, pero hará mucho viento." },
+            { "speaker": "王明", "zh": "上海冬天不下雪，北京下雪。", "py": "Shànghǎi dōngtiān bú xià xuě, Běijīng xià xuě.", "es": "En Shanghái no nieva en invierno; en Pekín, sí." }
+          ],
+          "notes": "冬天 dōngtiān = invierno. 风很大 = «hace mucho viento» (literalmente: el viento es grande)."
+        },
+        { "type": "grammar", "id": "le" },
+        { "type": "grammar", "id": "bu-mei" },
+        { "type": "exercises", "count": 10, "types": ["choose-meaning", "choose-character", "order-words", "build-sentence", "fill-blank", "translate-to-es", "dictation", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "u10-l3",
+      "title": "¡Qué calor! ¿Qué me pongo?",
+      "zh": "太热了！",
+      "goal": "Exagerar con 太……了, suavizar con 不太 y hablar de la ropa según el tiempo.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "太", "pinyin": "tài", "es": "demasiado; muy" },
+        { "hanzi": "穿", "pinyin": "chuān", "es": "ponerse; llevar (ropa)" },
+        { "hanzi": "衣服", "pinyin": "yīfu", "es": "ropa" },
+        { "hanzi": "晴天", "pinyin": "qíngtiān", "es": "día despejado" },
+        { "hanzi": "阴天", "pinyin": "yīntiān", "es": "día nublado" },
+        { "hanzi": "舒服", "pinyin": "shūfu", "es": "cómodo; agradable" },
+        { "hanzi": "夏天", "pinyin": "xiàtiān", "es": "verano" },
+        { "hanzi": "冬天", "pinyin": "dōngtiān", "es": "invierno" }
+      ],
+      "steps": [
+        { "type": "vocab" },
+        {
+          "type": "dialogue",
+          "title": "Antes de salir",
+          "lines": [
+            { "speaker": "雨果", "zh": "今天太热了！我不想穿这件衣服。", "py": "Jīntiān tài rè le! Wǒ bù xiǎng chuān zhè jiàn yīfu.", "es": "¡Hoy hace demasiado calor! No quiero ponerme esta ropa." },
+            { "speaker": "安娜", "zh": "上海的夏天太热了，冬天不太冷。", "py": "Shànghǎi de xiàtiān tài rè le, dōngtiān bú tài lěng.", "es": "El verano de Shanghái es demasiado caluroso, el invierno no es muy frío." },
+            { "speaker": "雨果", "zh": "明天是晴天还是阴天？", "py": "Míngtiān shì qíngtiān háishi yīntiān?", "es": "¿Mañana estará despejado o nublado?" },
+            { "speaker": "安娜", "zh": "阴天，二十二度，很舒服。", "py": "Yīntiān, èrshí'èr dù, hěn shūfu.", "es": "Nublado, 22 grados, muy agradable." },
+            { "speaker": "雨果", "zh": "太好了！明天我们去外面走走吧。", "py": "Tài hǎo le! Míngtiān wǒmen qù wàimiàn zǒuzou ba.", "es": "¡Genial! Mañana vamos a dar una vuelta fuera." }
+          ],
+          "notes": "还是 háishi = «o» en preguntas (A 还是 B). 外面 wàimiàn = fuera."
+        },
+        { "type": "grammar", "id": "tai-le" },
+        { "type": "grammar", "id": "modal-verbs" },
+        { "type": "exercises", "count": 10, "types": ["choose-meaning", "listen-choose", "order-words", "fill-blank", "translate-to-es", "classifier", "similar-characters", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "u10-l4",
+      "title": "El tiempo en Shanghái: lectura y repaso",
+      "zh": "复习",
+      "goal": "Leer una descripción del clima y consolidar la unidad.",
+      "minutes": 10,
+      "vocab": [
+        { "hanzi": "春天", "pinyin": "chūntiān", "es": "primavera" },
+        { "hanzi": "秋天", "pinyin": "qiūtiān", "es": "otoño" },
+        { "hanzi": "喜欢", "pinyin": "xǐhuan", "es": "gustar" },
+        { "hanzi": "月", "pinyin": "yuè", "es": "mes" },
+        { "hanzi": "有时候", "pinyin": "yǒu shíhou", "es": "a veces" },
+        { "hanzi": "常常", "pinyin": "chángcháng", "es": "a menudo" }
+      ],
+      "steps": [
+        { "type": "vocab" },
+        {
+          "type": "dialogue",
+          "title": "¿Qué estación te gusta?",
+          "lines": [
+            { "speaker": "王明", "zh": "你喜欢上海的天气吗？", "py": "Nǐ xǐhuan Shànghǎi de tiānqì ma?", "es": "¿Te gusta el tiempo de Shanghái?" },
+            { "speaker": "雨果", "zh": "我喜欢秋天，十月天气很好，不冷也不热。", "py": "Wǒ xǐhuan qiūtiān, shí yuè tiānqì hěn hǎo, bù lěng yě bú rè.", "es": "Me gusta el otoño; en octubre hace buen tiempo, ni frío ni calor." },
+            { "speaker": "王明", "zh": "春天呢？", "py": "Chūntiān ne?", "es": "¿Y la primavera?" },
+            { "speaker": "雨果", "zh": "春天常常下雨，我不太喜欢。", "py": "Chūntiān chángcháng xià yǔ, wǒ bú tài xǐhuan.", "es": "En primavera llueve a menudo, no me gusta mucho." }
+          ]
+        },
+        {
+          "type": "reading",
+          "title": "El tiempo en Shanghái",
+          "text": "上海的天气怎么样？夏天太热了，七月和八月常常三十五度，有时候下雨。冬天不太冷，不下雪，但是风很大。我最喜欢秋天：十月天气非常好，不冷也不热，很舒服。春天常常下雨，出门要带伞。今天是晴天，有太阳，我穿了新衣服，和朋友去外面走走。明天会下雨，我们在家看书。",
+          "es": "¿Qué tiempo hace en Shanghái? El verano es demasiado caluroso: en julio y agosto a menudo hay 35 grados y a veces llueve. El invierno no es muy frío y no nieva, pero hace mucho viento. Lo que más me gusta es el otoño: en octubre hace un tiempo estupendo, ni frío ni calor, muy agradable. En primavera llueve a menudo y hay que llevar paraguas al salir. Hoy está despejado y hace sol; me he puesto ropa nueva y voy a dar una vuelta con amigos. Mañana lloverá y nos quedaremos en casa leyendo.",
+          "questions": [
+            { "q": "¿Cómo es el invierno en Shanghái?", "options": ["Muy frío y con nieve", "No muy frío, sin nieve, con viento", "Caluroso", "Lluvioso todos los días"], "answer": 1, "explain": "冬天不太冷，不下雪，但是风很大。" },
+            { "q": "¿Qué estación prefiere el autor?", "options": ["El verano", "La primavera", "El otoño", "El invierno"], "answer": 2, "explain": "我最喜欢秋天。" },
+            { "q": "¿Qué harán mañana?", "options": ["Salir a pasear", "Ir a la playa", "Quedarse en casa leyendo", "Comprar un paraguas"], "answer": 2, "explain": "明天会下雨，我们在家看书。" }
+          ]
+        },
+        { "type": "exercises", "count": 12, "types": ["matching", "choose-meaning", "order-words", "build-sentence", "fill-blank", "dictation", "translate-to-es", "tone-choice", "speaking", "writing"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    }
+  ]
+}

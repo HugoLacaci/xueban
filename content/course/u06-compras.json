@@ -1,0 +1,171 @@
+{
+  "id": "u06",
+  "order": 7,
+  "title": "Compras y dinero",
+  "zh": "买东西",
+  "description": "Comprar en una tienda, preguntar y regatear precios, describir lo que compras y pagar con el móvil.",
+  "icon": "ShoppingBag",
+  "level": 1,
+  "category": "Casa y objetos",
+  "checkpoint": { "exercises": 15 },
+  "lessons": [
+    {
+      "id": "u06-l1",
+      "title": "¿Cuánto cuesta?",
+      "zh": "多少钱？",
+      "goal": "Preguntar y decir precios en yuanes.",
+      "minutes": 10,
+      "vocab": [
+        { "hanzi": "商店", "pinyin": "shāngdiàn", "es": "tienda" },
+        { "hanzi": "东西", "pinyin": "dōngxi", "es": "cosa; objeto" },
+        { "hanzi": "买", "pinyin": "mǎi", "es": "comprar" },
+        { "hanzi": "卖", "pinyin": "mài", "es": "vender" },
+        { "hanzi": "钱", "pinyin": "qián", "es": "dinero" },
+        { "hanzi": "块", "pinyin": "kuài", "es": "yuan (coloquial); trozo" },
+        { "hanzi": "元", "pinyin": "yuán", "es": "yuan (formal)" },
+        { "hanzi": "多少钱", "pinyin": "duōshao qián", "es": "¿cuánto cuesta?" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "买 (comprar) y 卖 (vender): un trazo de diferencia" },
+        {
+          "type": "dialogue",
+          "title": "En la tienda de la esquina",
+          "lines": [
+            { "speaker": "雨果", "zh": "请问，这个多少钱？", "py": "Qǐngwèn, zhège duōshao qián?", "es": "Disculpe, ¿cuánto cuesta esto?" },
+            { "speaker": "老板", "zh": "这个八块。那个十五块。", "py": "Zhège bā kuài. Nàge shíwǔ kuài.", "es": "Esto, ocho yuanes. Aquello, quince." },
+            { "speaker": "雨果", "zh": "我买两个这个。", "py": "Wǒ mǎi liǎng ge zhège.", "es": "Compro dos de estos." },
+            { "speaker": "老板", "zh": "好，十六块。你要买什么东西？", "py": "Hǎo, shíliù kuài. Nǐ yào mǎi shénme dōngxi?", "es": "Vale, dieciséis yuanes. ¿Qué quiere comprar?" },
+            { "speaker": "雨果", "zh": "不要了，谢谢！", "py": "Bú yào le, xièxie!", "es": "Nada más, ¡gracias!" }
+          ],
+          "notes": "老板 lǎobǎn = dueño/jefe (así se llama al tendero). 块 kuài es la forma hablada de 元 yuán; en las etiquetas verás 元 o el símbolo ¥. 不要了 = «ya no quiero más»."
+        },
+        { "type": "grammar", "id": "price-age" },
+        { "type": "grammar", "id": "numbers" },
+        { "type": "exercises", "count": 10, "types": ["choose-meaning", "listen-choose", "similar-characters", "pinyin-input", "order-words", "fill-blank", "dictation", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "u06-l2",
+      "title": "¡Demasiado caro!",
+      "zh": "太贵了！",
+      "goal": "Valorar precios y objetos (caro, barato, grande, bonito) con 太…了 y 很.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "贵", "pinyin": "guì", "es": "caro" },
+        { "hanzi": "便宜", "pinyin": "piányi", "es": "barato" },
+        { "hanzi": "太", "pinyin": "tài", "es": "demasiado; muy" },
+        { "hanzi": "大", "pinyin": "dà", "es": "grande; mayor" },
+        { "hanzi": "小", "pinyin": "xiǎo", "es": "pequeño" },
+        { "hanzi": "新", "pinyin": "xīn", "es": "nuevo" },
+        { "hanzi": "漂亮", "pinyin": "piàoliang", "es": "bonito; guapo" },
+        { "hanzi": "件", "pinyin": "jiàn", "es": "clasif. para ropa, asuntos" }
+      ],
+      "steps": [
+        { "type": "vocab" },
+        {
+          "type": "dialogue",
+          "title": "Regateando",
+          "lines": [
+            { "speaker": "雨果", "zh": "这件衣服很漂亮。多少钱？", "py": "Zhè jiàn yīfu hěn piàoliang. Duōshao qián?", "es": "Esta prenda es muy bonita. ¿Cuánto cuesta?" },
+            { "speaker": "老板", "zh": "三百块。", "py": "Sānbǎi kuài.", "es": "Trescientos yuanes." },
+            { "speaker": "雨果", "zh": "太贵了！便宜一点儿吧。", "py": "Tài guì le! Piányi yìdiǎnr ba.", "es": "¡Demasiado caro! Un poco más barato, anda." },
+            { "speaker": "老板", "zh": "好吧，两百块。这是新的，不贵。", "py": "Hǎo ba, liǎngbǎi kuài. Zhè shì xīn de, bú guì.", "es": "Bueno, doscientos. Es nueva, no es cara." },
+            { "speaker": "雨果", "zh": "这件太大了，有小的吗？", "py": "Zhè jiàn tài dà le, yǒu xiǎo de ma?", "es": "Esta es demasiado grande, ¿hay una pequeña?" },
+            { "speaker": "老板", "zh": "有，你看这件。", "py": "Yǒu, nǐ kàn zhè jiàn.", "es": "Sí, mire esta." }
+          ],
+          "notes": "衣服 yīfu (ropa) se estudia en la lección siguiente; aquí aparece ya con su clasificador 件. 百 bǎi = cien: 三百 = 300, 两百 = 200 (con 两). Regatear es normal en mercados, no en tiendas con precio marcado."
+        },
+        { "type": "grammar", "id": "tai-le" },
+        { "type": "grammar", "id": "hen-adj" },
+        { "type": "exercises", "count": 10, "types": ["choose-meaning", "choose-character", "fill-blank", "order-words", "build-sentence", "translate-to-es", "tone-choice", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "u06-l3",
+      "title": "Ropa, móvil y ordenador",
+      "zh": "衣服、手机、电脑",
+      "goal": "Nombrar lo que compras, probarlo y elegir entre este y aquel.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "衣服", "pinyin": "yīfu", "es": "ropa" },
+        { "hanzi": "鞋", "pinyin": "xié", "es": "zapatos" },
+        { "hanzi": "手机", "pinyin": "shǒujī", "es": "teléfono móvil" },
+        { "hanzi": "电脑", "pinyin": "diànnǎo", "es": "ordenador" },
+        { "hanzi": "书", "pinyin": "shū", "es": "libro" },
+        { "hanzi": "看", "pinyin": "kàn", "es": "mirar; ver; leer" },
+        { "hanzi": "一下", "pinyin": "yíxià", "es": "un momento; un poco (tras verbo)" },
+        { "hanzi": "双", "pinyin": "shuāng", "es": "par (clasificador)" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "Cada cosa con su clasificador: 一件衣服, 一双鞋, 一本书, 一个手机" },
+        {
+          "type": "dialogue",
+          "title": "Un móvil nuevo",
+          "lines": [
+            { "speaker": "雨果", "zh": "我想买一个新手机。我看一下这个。", "py": "Wǒ xiǎng mǎi yí ge xīn shǒujī. Wǒ kàn yíxià zhège.", "es": "Quiero comprar un móvil nuevo. Déjeme ver este un momento." },
+            { "speaker": "老板", "zh": "这个很好，也不贵，两千块。", "py": "Zhège hěn hǎo, yě bú guì, liǎngqiān kuài.", "es": "Este es muy bueno, y no es caro: dos mil yuanes." },
+            { "speaker": "雨果", "zh": "那个呢？那个多少钱？", "py": "Nàge ne? Nàge duōshao qián?", "es": "¿Y aquel? ¿Cuánto cuesta aquel?" },
+            { "speaker": "老板", "zh": "那个是电脑，不是手机，五千块。", "py": "Nàge shì diànnǎo, bú shì shǒujī, wǔqiān kuài.", "es": "Aquello es un ordenador, no un móvil: cinco mil yuanes." },
+            { "speaker": "雨果", "zh": "我要这个手机。我也想看一下那双鞋。", "py": "Wǒ yào zhège shǒujī. Wǒ yě xiǎng kàn yíxià nà shuāng xié.", "es": "Me llevo este móvil. También quiero echar un vistazo a aquellos zapatos." }
+          ],
+          "notes": "千 qiān = mil: 两千 = 2000, 五千 = 5000. 看一下 = «echar un vistazo»: 一下 suaviza la petición."
+        },
+        { "type": "grammar", "id": "yixia" },
+        { "type": "grammar", "id": "measure-words" },
+        { "type": "exercises", "count": 10, "types": ["classifier", "choose-meaning", "listen-choose", "matching", "order-words", "fill-blank", "dictation", "writing", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "u06-l4",
+      "title": "Pagar con el móvil",
+      "zh": "用手机付钱",
+      "goal": "Pagar con WeChat o Alipay, pedir el total y leer una escena completa de compras.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "微信", "pinyin": "Wēixìn", "es": "WeChat" },
+        { "hanzi": "支付宝", "pinyin": "Zhīfùbǎo", "es": "Alipay" },
+        { "hanzi": "付钱", "pinyin": "fù qián", "es": "pagar" },
+        { "hanzi": "现金", "pinyin": "xiànjīn", "es": "efectivo" },
+        { "hanzi": "可以", "pinyin": "kěyǐ", "es": "poder (permiso)" },
+        { "hanzi": "毛", "pinyin": "máo", "es": "décima de yuan (coloquial)" },
+        { "hanzi": "用", "pinyin": "yòng", "es": "usar" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "En China casi nadie paga en efectivo: 微信 o 支付宝" },
+        {
+          "type": "dialogue",
+          "title": "¿Se puede pagar con WeChat?",
+          "lines": [
+            { "speaker": "雨果", "zh": "一共多少钱？", "py": "Yígòng duōshao qián?", "es": "¿Cuánto es en total?" },
+            { "speaker": "老板", "zh": "二十八块五毛。", "py": "Èrshíbā kuài wǔ máo.", "es": "Veintiocho yuanes con cincuenta." },
+            { "speaker": "雨果", "zh": "可以用微信付钱吗？", "py": "Kěyǐ yòng Wēixìn fù qián ma?", "es": "¿Se puede pagar con WeChat?" },
+            { "speaker": "老板", "zh": "可以，微信、支付宝都可以。现金也可以。", "py": "Kěyǐ, Wēixìn, Zhīfùbǎo dōu kěyǐ. Xiànjīn yě kěyǐ.", "es": "Sí, con WeChat o Alipay. También en efectivo." },
+            { "speaker": "雨果", "zh": "好，我用支付宝。", "py": "Hǎo, wǒ yòng Zhīfùbǎo.", "es": "Vale, uso Alipay." }
+          ],
+          "notes": "一共 yígòng = en total. Al pagar, escaneas el código QR de la tienda (扫码 sǎo mǎ) o muestras el tuyo. Para abrir WeChat Pay o Alipay desde el extranjero necesitas vincular una tarjeta internacional; hazlo antes de viajar."
+        },
+        { "type": "grammar", "id": "modal-verbs" },
+        {
+          "type": "reading",
+          "title": "Hugo va de compras",
+          "text": "今天我去商店买东西。我买了一件衣服和一双鞋。衣服很漂亮，一百块，不贵。鞋有点儿贵，三百块，太贵了！老板说：“这双鞋很好，是新的。”我说：“便宜一点儿吧！”老板说：“好吧，两百五十块。”我用微信付钱。我也想买一个电脑，可是电脑太贵了，我没有钱。",
+          "es": "Hoy he ido a la tienda a comprar cosas. He comprado una prenda de ropa y un par de zapatos. La ropa es muy bonita, cien yuanes, no es cara. Los zapatos son un poco caros, trescientos yuanes, ¡demasiado caros! El dueño dijo: «Estos zapatos son muy buenos, son nuevos». Yo dije: «¡Un poco más baratos, anda!». El dueño dijo: «Vale, doscientos cincuenta». He pagado con WeChat. También quería comprar un ordenador, pero los ordenadores son demasiado caros y no tengo dinero.",
+          "questions": [
+            { "q": "¿Cuánto pagó Hugo al final por los zapatos?", "options": ["100 yuanes", "300 yuanes", "250 yuanes", "200 yuanes"], "answer": 2, "explain": "老板说：“好吧，两百五十块。”" },
+            { "q": "¿Cómo pagó?", "options": ["En efectivo", "Con WeChat", "Con Alipay", "Con tarjeta"], "answer": 1, "explain": "我用微信付钱。" },
+            { "q": "¿Por qué no compró el ordenador?", "options": ["No le gustaba", "Era demasiado caro y no tenía dinero", "La tienda no vendía ordenadores", "Ya tenía uno"], "answer": 1, "explain": "电脑太贵了，我没有钱。说 shuō (decir) y 可是 kěshì (pero) aparecen en la lectura como adelanto." }
+          ]
+        },
+        { "type": "exercises", "count": 10, "types": ["matching", "choose-meaning", "fill-blank", "order-words", "build-sentence", "translate-to-es", "dictation", "classifier", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    }
+  ]
+}

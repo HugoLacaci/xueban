@@ -1,0 +1,117 @@
+{
+  "id": "u0-pron",
+  "order": 0,
+  "title": "Pronunciación",
+  "zh": "发音",
+  "description": "Pinyin, los cuatro tonos y el neutro, pares de tonos, sandhi y los sonidos que más cuestan a los hispanohablantes.",
+  "icon": "Mic",
+  "level": 0,
+  "lessons": [
+    {
+      "id": "u0p-l1",
+      "title": "Los cuatro tonos (y el neutro)",
+      "zh": "声调",
+      "goal": "Distinguir y producir los cuatro tonos con la sílaba ma.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "妈", "pinyin": "mā", "es": "mamá (1.º tono)" },
+        { "hanzi": "麻", "pinyin": "má", "es": "cáñamo; entumecido (2.º tono)" },
+        { "hanzi": "马", "pinyin": "mǎ", "es": "caballo (3.º tono)" },
+        { "hanzi": "骂", "pinyin": "mà", "es": "regañar (4.º tono)" },
+        { "hanzi": "吗", "pinyin": "ma", "es": "¿…? (tono neutro)" }
+      ],
+      "steps": [
+        {
+          "type": "explain",
+          "title": "Por qué los tonos importan desde el día 1",
+          "markdown": "El chino tiene pocas sílabas distintas (unas 400) y usa la **melodía** de cada sílaba para distinguir palabras: *mā* (mamá), *má* (cáñamo), *mǎ* (caballo), *mà* (regañar). Un tono mal dicho no es un «acento raro»: es otra palabra o ninguna.\n\nLa buena noticia: el español ya usa esas melodías, solo que para frases enteras (pregunta ↗, orden ↘). Vamos a aprender a ponerlas en una sílaba.\n\n**Cómo practicar**: escucha, imita exagerando, grábate y compara. Mueve la mano dibujando el tono en el aire: ayuda de verdad."
+        },
+        { "type": "tones" },
+        {
+          "type": "explain",
+          "title": "La frase de los tonos",
+          "markdown": "El clásico trabalenguas para practicar: **妈妈骑马，马慢，妈妈骂马。** *Māma qí mǎ, mǎ màn, māma mà mǎ.* (*Mamá monta a caballo, el caballo es lento, mamá regaña al caballo*).\n\nLéelo despacio marcando cada tono; luego cada vez más rápido."
+        },
+        { "type": "exercises", "count": 8, "types": ["tone-choice", "pinyin-input", "listen-choose"] }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "u0p-l2",
+      "title": "La tabla de pinyin: iniciales y finales",
+      "zh": "拼音表",
+      "goal": "Saber leer cualquier sílaba del pinyin y conocer sus trampas.",
+      "minutes": 15,
+      "vocab": [
+        { "hanzi": "你", "pinyin": "nǐ", "es": "tú" },
+        { "hanzi": "好", "pinyin": "hǎo", "es": "bueno; bien" },
+        { "hanzi": "我", "pinyin": "wǒ", "es": "yo" },
+        { "hanzi": "是", "pinyin": "shì", "es": "ser" },
+        { "hanzi": "中国", "pinyin": "Zhōngguó", "es": "China" },
+        { "hanzi": "人", "pinyin": "rén", "es": "persona" }
+      ],
+      "steps": [
+        {
+          "type": "explain",
+          "title": "Cómo funciona el pinyin",
+          "markdown": "Cada sílaba = **inicial** (consonante, opcional) + **final** (vocal o vocal + n/ng) + **tono**. Ejemplo: *zh + ōng = zhōng*.\n\nEl pinyin usa letras latinas, pero **no suenan como en español**. Las que más engañan:\n\n- **c** = «ts» con aire (no «k» ni «z»).\n- **q** = «ch» suave sonriendo; **x** = entre «s» y «sh» sonriendo; **j** = «ch» sin aire.\n- **zh / ch / sh / r** = con la punta de la lengua curvada hacia atrás.\n- **e** sola = una «ö» relajada (喝 hē); **-i** tras z/c/s/zh/ch/sh/r es un zumbido, no «i» (四 sì).\n- **ü** (y en ju/qu/xu/yu, escrita u) = «i» con labios de «u».\n- **-ian** suena «ien»; **-iu** «iou»; **-ui** «uei»; **-un** «uen».\n\nPulsa cada sílaba de la tabla para oírla en los cuatro tonos."
+        },
+        { "type": "pinyin-table" },
+        { "type": "exercises", "count": 8, "types": ["pinyin-input", "tone-choice", "listen-choose", "choose-meaning"] }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "u0p-l3",
+      "title": "Pares de tonos y sandhi",
+      "zh": "双音节与变调",
+      "goal": "Pronunciar las 20 combinaciones de dos tonos y aplicar los cambios de 3+3, 不 y 一.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "你好", "pinyin": "nǐ hǎo", "es": "hola" },
+        { "hanzi": "不是", "pinyin": "bú shì", "es": "no ser" },
+        { "hanzi": "不好", "pinyin": "bù hǎo", "es": "no está bien" },
+        { "hanzi": "一个", "pinyin": "yí ge", "es": "uno (+ clasificador)" },
+        { "hanzi": "一天", "pinyin": "yì tiān", "es": "un día" },
+        { "hanzi": "第一", "pinyin": "dì-yī", "es": "primero" }
+      ],
+      "steps": [
+        {
+          "type": "explain",
+          "title": "Las palabras chinas suelen tener dos sílabas",
+          "markdown": "La mayoría de las palabras modernas son bisílabas, así que lo que realmente hay que dominar son las **combinaciones de dos tonos**: 4 × 4 = 16, más 4 con tono neutro al final = **20 pares**. Si pronuncias bien los 20 pares, pronuncias bien casi todo.\n\n### Sandhi (cambios de tono)\n1. **3.º + 3.º → 2.º + 3.º**: 你好 se dice *ní hǎo* (se escribe nǐ hǎo).\n2. **不 bù** → **bú** delante de 4.º tono: 不是 bú shì, 不去 bú qù (pero 不好 bù hǎo).\n3. **一 yī** → **yí** delante de 4.º (一个 yí ge) y **yì** delante de 1.º/2.º/3.º (一天 yì tiān, 一年 yì nián, 一起 yì qǐ). Se queda **yī** aislado, en números y ordinales (第一, 十一).\n\nLa app marca el sandhi automáticamente en el pinyin de cada frase."
+        },
+        { "type": "tone-pairs" },
+        { "type": "exercises", "count": 8, "types": ["tone-pair", "tone-choice", "pinyin-input"] }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "u0p-l4",
+      "title": "Los sonidos que más cuestan a un hispanohablante",
+      "zh": "难点",
+      "goal": "Distinguir zh/z/j, q/ch/c, x/sh/s, ü, -n/-ng y r con pares mínimos.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "四", "pinyin": "sì", "es": "cuatro" },
+        { "hanzi": "十", "pinyin": "shí", "es": "diez" },
+        { "hanzi": "七", "pinyin": "qī", "es": "siete" },
+        { "hanzi": "吃", "pinyin": "chī", "es": "comer" },
+        { "hanzi": "女", "pinyin": "nǚ", "es": "mujer" },
+        { "hanzi": "热", "pinyin": "rè", "es": "calor; caliente" },
+        { "hanzi": "三", "pinyin": "sān", "es": "tres" },
+        { "hanzi": "西", "pinyin": "xī", "es": "oeste" }
+      ],
+      "steps": [
+        {
+          "type": "explain",
+          "title": "Tu boca ya sabe hacerlo (casi)",
+          "markdown": "Los errores de los hispanohablantes son muy predecibles. Esta lección los recoge todos con **pares mínimos**: dos palabras que solo se diferencian en el sonido problemático. Escucha cada par varias veces hasta oír la diferencia; luego grábate.\n\nRegla de oro: **las parejas b/p, d/t, g/k, z/c, zh/ch, j/q no se distinguen por sonoridad (como en español), sino por el aire**. Pon la mano delante de la boca."
+        },
+        { "type": "spanish-errors" },
+        { "type": "exercises", "count": 8, "types": ["listen-choose", "tone-choice", "pinyin-input", "speaking"] }
+      ],
+      "reviewed": false
+    }
+  ]
+}

@@ -1,0 +1,214 @@
+{
+  "id": "u04",
+  "order": 5,
+  "title": "Hora y fechas",
+  "zh": "时间与日期",
+  "description": "Días de la semana, la hora, las partes del día, fechas y cumpleaños, y cuándo haces cada cosa.",
+  "icon": "CalendarDays",
+  "level": 1,
+  "category": "Tiempo y fechas",
+  "checkpoint": { "exercises": 15 },
+  "lessons": [
+    {
+      "id": "u04-l1",
+      "title": "Hoy, mañana y los días de la semana",
+      "zh": "今天星期几？",
+      "goal": "Decir qué día es y cuándo tienes clase.",
+      "minutes": 10,
+      "vocab": [
+        { "hanzi": "今天", "pinyin": "jīntiān", "es": "hoy" },
+        { "hanzi": "明天", "pinyin": "míngtiān", "es": "mañana (día)" },
+        { "hanzi": "昨天", "pinyin": "zuótiān", "es": "ayer" },
+        { "hanzi": "星期", "pinyin": "xīngqī", "es": "semana" },
+        { "hanzi": "星期天", "pinyin": "xīngqītiān", "es": "domingo" },
+        { "hanzi": "上课", "pinyin": "shàngkè", "es": "ir a clase; tener clase" },
+        { "hanzi": "课", "pinyin": "kè", "es": "clase; lección" },
+        { "hanzi": "去", "pinyin": "qù", "es": "ir" }
+      ],
+      "steps": [
+        { "type": "vocab" },
+        {
+          "type": "explain",
+          "title": "Los días de la semana se numeran",
+          "markdown": "星期 + número: **星期一** (lunes), 星期二 (martes), 星期三, 星期四, 星期五, **星期六** (sábado). El domingo no es 星期七: es **星期天** o 星期日.\n\nPreguntar: 今天星期几？ (*¿Qué día es hoy?*). Responder sin 是: 今天星期三。\n\n«Hoy», «mañana» y «ayer» van **delante del verbo** o al principio de la frase: 明天我去学校。"
+        },
+        {
+          "type": "dialogue",
+          "title": "¿Qué día es hoy?",
+          "lines": [
+            { "speaker": "安娜", "zh": "雨果，今天星期几？", "py": "Yǔguǒ, jīntiān xīngqī jǐ?", "es": "Hugo, ¿qué día es hoy?" },
+            { "speaker": "雨果", "zh": "今天星期三。", "py": "Jīntiān xīngqīsān.", "es": "Hoy es miércoles." },
+            { "speaker": "安娜", "zh": "明天你去学校吗？", "py": "Míngtiān nǐ qù xuéxiào ma?", "es": "¿Mañana vas a la escuela?" },
+            { "speaker": "雨果", "zh": "去，明天我有课。", "py": "Qù, míngtiān wǒ yǒu kè.", "es": "Sí, mañana tengo clase." },
+            { "speaker": "安娜", "zh": "星期天你也上课吗？", "py": "Xīngqītiān nǐ yě shàngkè ma?", "es": "¿El domingo también tienes clase?" },
+            { "speaker": "雨果", "zh": "不上课，星期六和星期天我不去学校。", "py": "Bú shàngkè, xīngqīliù hé xīngqītiān wǒ bú qù xuéxiào.", "es": "No, los sábados y domingos no voy a la escuela." }
+          ]
+        },
+        { "type": "grammar", "id": "dates-time" },
+        { "type": "grammar", "id": "word-order" },
+        { "type": "exercises", "count": 10, "types": ["choose-meaning", "listen-choose", "pinyin-input", "order-words", "fill-blank", "matching", "dictation", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "u04-l2",
+      "title": "¿Qué hora es?",
+      "zh": "现在几点？",
+      "goal": "Decir la hora con 点, 分 y 半 y a qué hora te levantas y te acuestas.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "现在", "pinyin": "xiànzài", "es": "ahora" },
+        { "hanzi": "点", "pinyin": "diǎn", "es": "en punto (hora)" },
+        { "hanzi": "分", "pinyin": "fēn", "es": "minuto" },
+        { "hanzi": "半", "pinyin": "bàn", "es": "medio; y media" },
+        { "hanzi": "早上", "pinyin": "zǎoshang", "es": "por la mañana (temprano)" },
+        { "hanzi": "晚上", "pinyin": "wǎnshang", "es": "por la noche" },
+        { "hanzi": "起床", "pinyin": "qǐchuáng", "es": "levantarse (de la cama)" },
+        { "hanzi": "睡觉", "pinyin": "shuìjiào", "es": "dormir; irse a la cama" }
+      ],
+      "steps": [
+        { "type": "vocab" },
+        {
+          "type": "explain",
+          "title": "Leer el reloj",
+          "markdown": "- Hora + **点**: 三点 (las tres), 八点 (las ocho). «Las dos» es **两点**, no 二点.\n- Minutos + **分**: 三点十分 (3:10). Y media: **半**: 三点半 (3:30).\n- Preguntar: 现在几点？ Responder sin 是: 现在三点半。\n- Para situar una acción, la hora va **delante del verbo**: 我七点起床。"
+        },
+        {
+          "type": "dialogue",
+          "title": "Madrugadores",
+          "lines": [
+            { "speaker": "王明", "zh": "雨果，现在几点？", "py": "Yǔguǒ, xiànzài jǐ diǎn?", "es": "Hugo, ¿qué hora es?" },
+            { "speaker": "雨果", "zh": "现在八点半。", "py": "Xiànzài bā diǎn bàn.", "es": "Son las ocho y media." },
+            { "speaker": "王明", "zh": "你早上几点起床？", "py": "Nǐ zǎoshang jǐ diǎn qǐchuáng?", "es": "¿A qué hora te levantas por la mañana?" },
+            { "speaker": "雨果", "zh": "我七点起床。你呢？", "py": "Wǒ qī diǎn qǐchuáng. Nǐ ne?", "es": "Me levanto a las siete. ¿Y tú?" },
+            { "speaker": "王明", "zh": "我六点十分起床，晚上十一点睡觉。", "py": "Wǒ liù diǎn shí fēn qǐchuáng, wǎnshang shíyī diǎn shuìjiào.", "es": "Me levanto a las seis y diez y me acuesto a las once de la noche." },
+            { "speaker": "雨果", "zh": "我晚上十二点睡觉。", "py": "Wǒ wǎnshang shí'èr diǎn shuìjiào.", "es": "Yo me acuesto a las doce de la noche." }
+          ]
+        },
+        { "type": "grammar", "id": "dates-time" },
+        { "type": "grammar", "id": "numbers" },
+        { "type": "exercises", "count": 10, "types": ["listen-choose", "choose-meaning", "dictation", "order-words", "build-sentence", "fill-blank", "tone-choice", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "u04-l3",
+      "title": "Mañana, mediodía, tarde",
+      "zh": "你什么时候上课？",
+      "goal": "Situar tu día con 上午/中午/下午 y preguntar «¿cuándo?» con 什么时候.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "上午", "pinyin": "shàngwǔ", "es": "por la mañana (antes del mediodía)" },
+        { "hanzi": "中午", "pinyin": "zhōngwǔ", "es": "mediodía" },
+        { "hanzi": "下午", "pinyin": "xiàwǔ", "es": "por la tarde" },
+        { "hanzi": "吃饭", "pinyin": "chī fàn", "es": "comer" },
+        { "hanzi": "时候", "pinyin": "shíhou", "es": "momento; cuándo (什么时候)" },
+        { "hanzi": "回", "pinyin": "huí", "es": "volver" },
+        { "hanzi": "时间", "pinyin": "shíjiān", "es": "tiempo" },
+        { "hanzi": "学习", "pinyin": "xuéxí", "es": "estudiar; aprender" }
+      ],
+      "steps": [
+        { "type": "vocab" },
+        {
+          "type": "dialogue",
+          "title": "El día de Hugo",
+          "lines": [
+            { "speaker": "安娜", "zh": "雨果，你什么时候上课？", "py": "Yǔguǒ, nǐ shénme shíhou shàngkè?", "es": "Hugo, ¿cuándo tienes clase?" },
+            { "speaker": "雨果", "zh": "我上午九点上课，中午十二点吃饭。", "py": "Wǒ shàngwǔ jiǔ diǎn shàngkè, zhōngwǔ shí'èr diǎn chī fàn.", "es": "Tengo clase a las nueve de la mañana y como a las doce." },
+            { "speaker": "安娜", "zh": "下午呢？", "py": "Xiàwǔ ne?", "es": "¿Y por la tarde?" },
+            { "speaker": "雨果", "zh": "下午我在学校学习，晚上六点回家。", "py": "Xiàwǔ wǒ zài xuéxiào xuéxí, wǎnshang liù diǎn huí jiā.", "es": "Por la tarde estudio en la escuela y vuelvo a casa a las seis." },
+            { "speaker": "安娜", "zh": "你什么时候有时间？", "py": "Nǐ shénme shíhou yǒu shíjiān?", "es": "¿Cuándo tienes tiempo?" },
+            { "speaker": "雨果", "zh": "星期六下午我有时间。", "py": "Xīngqīliù xiàwǔ wǒ yǒu shíjiān.", "es": "El sábado por la tarde tengo tiempo." }
+          ],
+          "notes": "Orden de lo grande a lo pequeño: 星期六 (día) + 下午 (parte del día) + 三点 (hora). Todo ello antes del verbo."
+        },
+        { "type": "grammar", "id": "word-order" },
+        { "type": "grammar", "id": "ne" },
+        { "type": "exercises", "count": 10, "types": ["choose-meaning", "order-words", "build-sentence", "fill-blank", "translate-to-es", "listen-choose", "dictation", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "u04-l4",
+      "title": "Fechas y cumpleaños",
+      "zh": "你的生日是几月几号？",
+      "goal": "Decir fechas completas (año, mes, día) y preguntar por un cumpleaños.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "年", "pinyin": "nián", "es": "año" },
+        { "hanzi": "月", "pinyin": "yuè", "es": "mes" },
+        { "hanzi": "号", "pinyin": "hào", "es": "día del mes; número" },
+        { "hanzi": "日", "pinyin": "rì", "es": "día (escrito)" },
+        { "hanzi": "生日", "pinyin": "shēngrì", "es": "cumpleaños" },
+        { "hanzi": "今年", "pinyin": "jīnnián", "es": "este año" },
+        { "hanzi": "去年", "pinyin": "qùnián", "es": "el año pasado" },
+        { "hanzi": "明年", "pinyin": "míngnián", "es": "el año que viene" }
+      ],
+      "steps": [
+        { "type": "vocab" },
+        {
+          "type": "explain",
+          "title": "Meses numerados y años cifra a cifra",
+          "markdown": "No hay nombres de meses: **一月** (enero), 二月 (febrero) … **十二月** (diciembre). El día lleva **号 hào** al hablar (日 rì al escribir): 十月二十八号.\n\nEl año se lee cifra a cifra: 2026年 = èr líng èr liù nián.\n\nOrden: **año → mes → día → día de la semana**: 二零二六年十月二十八号星期三."
+        },
+        {
+          "type": "dialogue",
+          "title": "¿Cuándo es tu cumpleaños?",
+          "lines": [
+            { "speaker": "王明", "zh": "雨果，你的生日是几月几号？", "py": "Yǔguǒ, nǐ de shēngrì shì jǐ yuè jǐ hào?", "es": "Hugo, ¿qué día es tu cumpleaños?" },
+            { "speaker": "雨果", "zh": "我的生日是五月三号。你呢？", "py": "Wǒ de shēngrì shì wǔ yuè sān hào. Nǐ ne?", "es": "Mi cumpleaños es el 3 de mayo. ¿Y el tuyo?" },
+            { "speaker": "王明", "zh": "我的生日是十二月二十号。今天几号？", "py": "Wǒ de shēngrì shì shí'èr yuè èrshí hào. Jīntiān jǐ hào?", "es": "El mío es el 20 de diciembre. ¿Qué día es hoy?" },
+            { "speaker": "雨果", "zh": "今天十月二十八号，星期三。", "py": "Jīntiān shí yuè èrshíbā hào, xīngqīsān.", "es": "Hoy es 28 de octubre, miércoles." },
+            { "speaker": "王明", "zh": "今年是二零二六年。明年你去中国吗？", "py": "Jīnnián shì èr líng èr liù nián. Míngnián nǐ qù Zhōngguó ma?", "es": "Este año es 2026. ¿El año que viene vas a China?" },
+            { "speaker": "雨果", "zh": "去！明年我去中国学习。", "py": "Qù! Míngnián wǒ qù Zhōngguó xuéxí.", "es": "¡Sí! El año que viene voy a China a estudiar." }
+          ]
+        },
+        { "type": "grammar", "id": "dates-time" },
+        { "type": "grammar", "id": "numbers" },
+        { "type": "exercises", "count": 10, "types": ["listen-choose", "dictation", "choose-meaning", "order-words", "fill-blank", "translate-to-es", "pinyin-input", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "u04-l5",
+      "title": "Lectura y repaso de la unidad",
+      "zh": "复习",
+      "goal": "Leer la rutina semanal de Hugo y consolidar horas, días y fechas.",
+      "minutes": 10,
+      "vocab": [
+        { "hanzi": "小时", "pinyin": "xiǎoshí", "es": "hora (duración)" },
+        { "hanzi": "分钟", "pinyin": "fēnzhōng", "es": "minuto (duración)" },
+        { "hanzi": "每天", "pinyin": "měi tiān", "es": "cada día" },
+        { "hanzi": "快乐", "pinyin": "kuàilè", "es": "feliz; alegre" },
+        { "hanzi": "白天", "pinyin": "báitiān", "es": "durante el día" },
+        { "hanzi": "忙", "pinyin": "máng", "es": "ocupado" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "Duraciones, 每天 y 生日快乐" },
+        {
+          "type": "explain",
+          "title": "Hora del reloj vs. duración",
+          "markdown": "**点** y **分** dicen *a qué hora*; **小时** y **分钟** dicen *cuánto dura*: 三点 (las tres) ≠ 三个小时 (tres horas); 十分 (y diez) ≠ 十分钟 (diez minutos). 小时 lleva clasificador 个.\n\nLa duración va **detrás** del verbo: 我学习两个小时。 Y para felicitar: **生日快乐！** (*¡Feliz cumpleaños!*)."
+        },
+        {
+          "type": "reading",
+          "title": "La semana de Hugo",
+          "text": "我叫雨果，我是大学生。我每天早上七点起床，八点去学校，上午九点上课。中午十二点我和同学吃饭。下午两点我学习汉语，学习两个小时。晚上六点我回家，十一点睡觉。白天我很忙。星期六和星期天我不上课，我很高兴。今天是十月二十八号，是我朋友安娜的生日。生日快乐，安娜！",
+          "es": "Me llamo Hugo, soy estudiante universitario. Cada día me levanto a las siete, voy a la escuela a las ocho y tengo clase a las nueve de la mañana. A las doce del mediodía como con mis compañeros. A las dos de la tarde estudio chino durante dos horas. A las seis de la tarde vuelvo a casa y me acuesto a las once. Durante el día estoy muy ocupado. Los sábados y domingos no tengo clase, y estoy muy contento. Hoy es 28 de octubre, el cumpleaños de mi amiga Ana. ¡Feliz cumpleaños, Ana!",
+          "questions": [
+            { "q": "¿A qué hora empieza la clase de Hugo?", "options": ["A las siete", "A las ocho", "A las nueve", "A las doce"], "answer": 2, "explain": "上午九点上课：las ocho es cuando va a la escuela; la clase empieza a las nueve." },
+            { "q": "¿Cuánto tiempo estudia chino por la tarde?", "options": ["Dos horas", "Dos minutos", "Hasta las dos", "Doce horas"], "answer": 0, "explain": "学习两个小时 = dos horas (duración), no 两点 (las dos)." },
+            { "q": "¿Qué pasa el 28 de octubre?", "options": ["Hugo no tiene clase", "Es el cumpleaños de Hugo", "Es el cumpleaños de Ana", "Hugo va a China"], "answer": 2, "explain": "今天是十月二十八号，是我朋友安娜的生日。" }
+          ]
+        },
+        { "type": "exercises", "count": 12, "types": ["matching", "choose-meaning", "order-words", "build-sentence", "fill-blank", "dictation", "translate-to-es", "tone-choice", "listen-choose", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    }
+  ]
+}

@@ -1,0 +1,167 @@
+{
+  "id": "u11",
+  "order": 12,
+  "title": "Salud y en el médico",
+  "zh": "身体与看病",
+  "description": "Decir que no te encuentras bien, qué te duele, ir al médico y entender sus indicaciones.",
+  "icon": "HeartPulse",
+  "level": 1,
+  "category": "Salud",
+  "checkpoint": { "exercises": 15 },
+  "lessons": [
+    {
+      "id": "u11-l1",
+      "title": "No me encuentro bien",
+      "zh": "我有点儿不舒服",
+      "goal": "Decir cómo te encuentras con 有点儿 y preguntar qué le pasa a alguien.",
+      "minutes": 10,
+      "vocab": [
+        { "hanzi": "身体", "pinyin": "shēntǐ", "es": "cuerpo; salud" },
+        { "hanzi": "舒服", "pinyin": "shūfu", "es": "cómodo; encontrarse bien" },
+        { "hanzi": "有点儿", "pinyin": "yǒudiǎnr", "es": "un poco (algo negativo)" },
+        { "hanzi": "累", "pinyin": "lèi", "es": "cansado" },
+        { "hanzi": "怎么了", "pinyin": "zěnme le", "es": "¿qué pasa?; ¿qué te pasa?" },
+        { "hanzi": "头", "pinyin": "tóu", "es": "cabeza" },
+        { "hanzi": "疼", "pinyin": "téng", "es": "doler" },
+        { "hanzi": "睡觉", "pinyin": "shuìjiào", "es": "dormir" }
+      ],
+      "steps": [
+        { "type": "vocab" },
+        {
+          "type": "dialogue",
+          "title": "En clase, por la mañana",
+          "lines": [
+            { "speaker": "安娜", "zh": "雨果，你怎么了？", "py": "Yǔguǒ, nǐ zěnme le?", "es": "Hugo, ¿qué te pasa?" },
+            { "speaker": "雨果", "zh": "我有点儿不舒服，头疼。", "py": "Wǒ yǒudiǎnr bù shūfu, tóu téng.", "es": "No me encuentro muy bien, me duele la cabeza." },
+            { "speaker": "安娜", "zh": "你昨天晚上几点睡觉？", "py": "Nǐ zuótiān wǎnshang jǐ diǎn shuìjiào?", "es": "¿A qué hora te acostaste anoche?" },
+            { "speaker": "雨果", "zh": "两点。我太累了。", "py": "Liǎng diǎn. Wǒ tài lèi le.", "es": "A las dos. Estoy demasiado cansado." },
+            { "speaker": "安娜", "zh": "身体很重要，你今天早点儿睡吧。", "py": "Shēntǐ hěn zhòngyào, nǐ jīntiān zǎo diǎnr shuì ba.", "es": "La salud es importante; hoy acuéstate pronto." }
+          ],
+          "notes": "重要 zhòngyào = importante. 早点儿 zǎo diǎnr = un poco antes / más pronto."
+        },
+        { "type": "grammar", "id": "yidianr-youdianr" },
+        { "type": "exercises", "count": 10, "types": ["choose-meaning", "listen-choose", "order-words", "fill-blank", "pinyin-input", "tone-choice", "matching", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "u11-l2",
+      "title": "Estoy enfermo",
+      "zh": "我生病了",
+      "goal": "Decir que te has puesto enfermo con 了 y que no has hecho algo con 没.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "病", "pinyin": "bìng", "es": "enfermedad; enfermo" },
+        { "hanzi": "生病", "pinyin": "shēngbìng", "es": "ponerse enfermo" },
+        { "hanzi": "发烧", "pinyin": "fāshāo", "es": "tener fiebre" },
+        { "hanzi": "感冒", "pinyin": "gǎnmào", "es": "resfriado; resfriarse" },
+        { "hanzi": "休息", "pinyin": "xiūxi", "es": "descansar" },
+        { "hanzi": "吃", "pinyin": "chī", "es": "comer" },
+        { "hanzi": "没关系", "pinyin": "méi guānxi", "es": "no pasa nada" },
+        { "hanzi": "打电话", "pinyin": "dǎ diànhuà", "es": "llamar por teléfono" }
+      ],
+      "steps": [
+        { "type": "vocab" },
+        {
+          "type": "dialogue",
+          "title": "Llamada al profesor",
+          "lines": [
+            { "speaker": "雨果", "zh": "李老师，您好。我生病了，今天不能上课。", "py": "Lǐ lǎoshī, nín hǎo. Wǒ shēngbìng le, jīntiān bù néng shàngkè.", "es": "Profesor Li, buenos días. Me he puesto enfermo, hoy no puedo ir a clase." },
+            { "speaker": "老师", "zh": "怎么了？发烧吗？", "py": "Zěnme le? Fāshāo ma?", "es": "¿Qué te pasa? ¿Tienes fiebre?" },
+            { "speaker": "雨果", "zh": "有点儿发烧，我感冒了。昨天我没吃饭，也没睡好。", "py": "Yǒudiǎnr fāshāo, wǒ gǎnmào le. Zuótiān wǒ méi chī fàn, yě méi shuì hǎo.", "es": "Un poco de fiebre, me he resfriado. Ayer no comí y tampoco dormí bien." },
+            { "speaker": "老师", "zh": "没关系，你在家休息吧。明天好了再来。", "py": "Méi guānxi, nǐ zài jiā xiūxi ba. Míngtiān hǎo le zài lái.", "es": "No pasa nada, descansa en casa. Ven mañana cuando estés mejor." },
+            { "speaker": "雨果", "zh": "谢谢老师！", "py": "Xièxie lǎoshī!", "es": "¡Gracias, profesor!" }
+          ],
+          "notes": "好了 hǎo le = ya está bien / se ha curado (cambio de estado con 了). 再来 zài lái = volver a venir."
+        },
+        { "type": "grammar", "id": "le" },
+        { "type": "grammar", "id": "bu-mei" },
+        { "type": "exercises", "count": 10, "types": ["choose-meaning", "choose-character", "order-words", "build-sentence", "fill-blank", "translate-to-es", "dictation", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "u11-l3",
+      "title": "En el médico",
+      "zh": "看病",
+      "goal": "Explicar los síntomas al médico y entender qué debes hacer (要/能/请).",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "看病", "pinyin": "kànbìng", "es": "ir al médico" },
+        { "hanzi": "医生", "pinyin": "yīshēng", "es": "médico" },
+        { "hanzi": "医院", "pinyin": "yīyuàn", "es": "hospital" },
+        { "hanzi": "药", "pinyin": "yào", "es": "medicina; medicamento" },
+        { "hanzi": "吃药", "pinyin": "chī yào", "es": "tomar medicinas" },
+        { "hanzi": "要", "pinyin": "yào", "es": "tener que; querer" },
+        { "hanzi": "水", "pinyin": "shuǐ", "es": "agua" },
+        { "hanzi": "次", "pinyin": "cì", "es": "vez" }
+      ],
+      "steps": [
+        { "type": "vocab" },
+        {
+          "type": "dialogue",
+          "title": "En el hospital",
+          "lines": [
+            { "speaker": "医生", "zh": "请坐。你哪儿不舒服？", "py": "Qǐng zuò. Nǐ nǎr bù shūfu?", "es": "Siéntate. ¿Qué te duele?" },
+            { "speaker": "雨果", "zh": "我头疼，还有点儿发烧。", "py": "Wǒ tóu téng, hái yǒudiǎnr fāshāo.", "es": "Me duele la cabeza y tengo algo de fiebre." },
+            { "speaker": "医生", "zh": "你感冒了。要多喝水，多休息。", "py": "Nǐ gǎnmào le. Yào duō hē shuǐ, duō xiūxi.", "es": "Estás resfriado. Tienes que beber mucha agua y descansar mucho." },
+            { "speaker": "雨果", "zh": "我要吃药吗？", "py": "Wǒ yào chī yào ma?", "es": "¿Tengo que tomar medicinas?" },
+            { "speaker": "医生", "zh": "要。这个药一天吃三次，饭后吃。不能喝咖啡。", "py": "Yào. Zhège yào yì tiān chī sān cì, fàn hòu chī. Bù néng hē kāfēi.", "es": "Sí. Esta medicina se toma tres veces al día, después de comer. No puedes tomar café." },
+            { "speaker": "雨果", "zh": "好的，谢谢医生。", "py": "Hǎo de, xièxie yīshēng.", "es": "De acuerdo, gracias, doctor." }
+          ],
+          "notes": "哪儿不舒服 = «¿dónde te duele / qué te pasa?», la pregunta típica del médico. 多 + verbo = hacer más (多喝水). 饭后 fàn hòu = después de comer."
+        },
+        { "type": "grammar", "id": "modal-verbs" },
+        { "type": "grammar", "id": "qing" },
+        { "type": "exercises", "count": 10, "types": ["choose-meaning", "listen-choose", "order-words", "fill-blank", "translate-to-es", "pinyin-input", "similar-characters", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "u11-l4",
+      "title": "Cuidarse: lectura y repaso",
+      "zh": "复习",
+      "goal": "Leer un mensaje sobre una enfermedad y consolidar la unidad.",
+      "minutes": 10,
+      "vocab": [
+        { "hanzi": "好", "pinyin": "hǎo", "es": "bien; curado" },
+        { "hanzi": "起床", "pinyin": "qǐchuáng", "es": "levantarse" },
+        { "hanzi": "早", "pinyin": "zǎo", "es": "temprano" },
+        { "hanzi": "晚", "pinyin": "wǎn", "es": "tarde (hora)" },
+        { "hanzi": "现在", "pinyin": "xiànzài", "es": "ahora" },
+        { "hanzi": "高兴", "pinyin": "gāoxìng", "es": "contento" }
+      ],
+      "steps": [
+        { "type": "vocab" },
+        {
+          "type": "dialogue",
+          "title": "Dos días después",
+          "lines": [
+            { "speaker": "安娜", "zh": "雨果，你好了吗？", "py": "Yǔguǒ, nǐ hǎo le ma?", "es": "Hugo, ¿ya estás bien?" },
+            { "speaker": "雨果", "zh": "好了，现在不发烧了。", "py": "Hǎo le, xiànzài bù fāshāo le.", "es": "Sí, ya no tengo fiebre." },
+            { "speaker": "安娜", "zh": "太好了！你现在几点睡觉？", "py": "Tài hǎo le! Nǐ xiànzài jǐ diǎn shuìjiào?", "es": "¡Genial! ¿A qué hora te acuestas ahora?" },
+            { "speaker": "雨果", "zh": "十一点睡，七点起床。早睡早起，身体好！", "py": "Shíyī diǎn shuì, qī diǎn qǐchuáng. Zǎo shuì zǎo qǐ, shēntǐ hǎo!", "es": "Me acuesto a las once y me levanto a las siete. ¡Acostarse y levantarse temprano es bueno para la salud!" }
+          ],
+          "notes": "不……了 = «ya no…» (cambio de estado): 不发烧了."
+        },
+        {
+          "type": "reading",
+          "title": "Mensaje de WeChat a Ana",
+          "text": "安娜，你好！上个星期我生病了，头疼，发烧，很不舒服。我没去上课，也没去工作。星期三我去医院看病。医生说我感冒了，要多喝水，多休息，一天吃三次药，不能喝咖啡。我在家休息了三天。现在我好了，不发烧了，很高兴。明天我去学校上课。你身体怎么样？你要早点儿睡觉！",
+          "es": "¡Hola, Ana! La semana pasada me puse enfermo: dolor de cabeza, fiebre, me encontraba fatal. No fui a clase ni a trabajar. El miércoles fui al hospital. El médico dijo que estaba resfriado, que bebiera mucha agua, descansara mucho, tomara la medicina tres veces al día y no bebiera café. Descansé en casa tres días. Ahora ya estoy bien, ya no tengo fiebre, estoy muy contento. Mañana voy a clase. ¿Qué tal tu salud? ¡Tienes que acostarte más pronto!",
+          "questions": [
+            { "q": "¿Qué día fue Hugo al médico?", "options": ["El lunes", "El miércoles", "El sábado", "Hoy"], "answer": 1, "explain": "星期三我去医院看病。" },
+            { "q": "¿Qué le dijo el médico que NO podía hacer?", "options": ["Ir a clase", "Beber café", "Dormir", "Beber agua"], "answer": 1, "explain": "不能喝咖啡。" },
+            { "q": "¿Cómo está Hugo ahora?", "options": ["Sigue con fiebre", "Está bien y contento", "Está en el hospital", "Está cansado"], "answer": 1, "explain": "现在我好了，不发烧了，很高兴。" }
+          ]
+        },
+        { "type": "exercises", "count": 12, "types": ["matching", "choose-meaning", "order-words", "build-sentence", "fill-blank", "dictation", "translate-to-es", "tone-choice", "speaking", "writing"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    }
+  ]
+}

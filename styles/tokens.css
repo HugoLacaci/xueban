@@ -1,0 +1,97 @@
+/* ==========================================================================
+   学伴 Xuébàn — tokens de diseño «宣纸与墨» (papel y tinta)
+   Tripletas RGB para poder usar alpha: rgb(var(--ink) / 0.5)
+   ========================================================================== */
+:root {
+  /* Tema claro: 宣纸 (papel de arroz) */
+  --paper: 245 239 227; /* 宣纸 xuānzhǐ   #F5EFE3  fondo principal */
+  --paper-raised: 251 247 239; /* 月白 yuèbái    #FBF7EF  tarjetas */
+  --paper-sunk: 236 227 209; /* 缃色 xiāngsè   #ECE3D1  zonas hundidas, inputs */
+  --ink: 28 26 23; /* 墨 mò          #1C1A17  texto principal */
+  --ink-soft: 74 68 60; /* 淡墨 dànmò     #4A443C  texto secundario */
+  --ink-faint: 106 97 86; /* 枯墨 kūmò      #6A6156  texto terciario (≥ 4,5:1 también sobre 缃色) */
+  --line: 216 205 186; /* 素 sù          #D8CDBA  bordes suaves */
+  --cinnabar: 184 58 43; /* 朱砂 zhūshā    #B83A2B  acento principal: sellos, CTA */
+  --cinnabar-ink: 140 38 28; /* 胭脂 yānzhi    #8C261C  hover/pulsado del acento */
+  --celadon: 94 138 122; /* 青瓷 qīngcí    #5E8A7A  éxito, acento secundario */
+  --celadon-ink: 64 104 90; /* 青瓷 oscuro    #40685A  texto sobre papel (≥ 4,5:1) */
+  --indigo: 46 58 79; /* 黛蓝 dàilán    #2E3A4F  información, enlaces */
+  --gold: 176 132 58; /* 赭金 zhějīn    #B0843A  logros, rachas (con mesura) */
+  --gold-ink: 130 96 36; /* 赭金 oscuro    #826024  texto dorado legible */
+  --danger: 166 44 44; /* 绛 jiàng       #A62C2C  error (más apagado que el acento) */
+
+  /* Tonos del pinyin: esquema «学伴» (armonizado, distinguible) */
+  --tone-1: 186 52 40; /* 朱 bermellón #BA3428 (≥ 4,5:1 sobre 宣纸; spec #C8402F = 4,3) */
+  --tone-2: 44 112 72; /* 青 jade     #2C7048 (≥ 4,5:1; spec #3E8A5C = 3,7) */
+  --tone-3: 47 95 168; /* 靛 índigo   #2F5FA8 */
+  --tone-4: 123 63 140; /* 紫 ciruela  #7B3F8C */
+  --tone-5: 104 96 85; /* 灰 neutro   #686055 (≥ 4,5:1) */
+
+  /* Sombras cálidas (tinte marrón) */
+  --shadow-paper: 0 1px 2px rgb(60 40 20 / 0.06), 0 8px 24px -8px rgb(60 40 20 / 0.12);
+  --shadow-float: 0 2px 4px rgb(60 40 20 / 0.08), 0 16px 40px -12px rgb(60 40 20 / 0.22);
+  --shadow-sunk: inset 0 1px 2px rgb(60 40 20 / 0.08);
+
+  /* Geometría y movimiento */
+  --radius-card: 12px;
+  --radius-btn: 8px;
+  --ease-ink: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --dur-ui: 180ms;
+  --dur-celebrate: 600ms;
+  --zh-scale: 1;
+}
+
+:root.dark,
+:root[data-theme="dark"] {
+  /* Tema oscuro: 夜墨 (tinta de noche), NO negro puro */
+  --paper: 24 23 21; /* #181715 */
+  --paper-raised: 33 31 28; /* #211F1C */
+  --paper-sunk: 18 17 16; /* #121110 */
+  --ink: 236 228 214; /* #ECE4D6  «papel» como texto */
+  --ink-soft: 190 180 164; /* #BEB4A4 */
+  --ink-faint: 150 140 126; /* #968C7E (≥ 4,5:1 sobre 夜墨) */
+  --line: 58 54 49; /* #3A3631 */
+  --cinnabar: 226 106 86; /* #E26A56 aclarado: ≥ 4,5:1 como texto y bajo texto 夜墨 */
+  --cinnabar-ink: 236 120 98; /* #EC7862 */
+  --celadon: 132 178 160; /* #84B2A0 */
+  --celadon-ink: 150 196 178;
+  --indigo: 142 162 196; /* #8EA2C4 */
+  --gold: 212 170 98; /* #D4AA62 */
+  --gold-ink: 222 184 118;
+  --danger: 224 106 100; /* #E06A64 */
+
+  --tone-1: 236 112 96; /* #EC7060 */
+  --tone-2: 112 192 142; /* #70C08E */
+  --tone-3: 122 164 232; /* #7AA4E8 */
+  --tone-4: 196 140 214; /* #C48CD6 */
+  --tone-5: 170 160 148; /* #AAA094 */
+
+  --shadow-paper: 0 1px 2px rgb(0 0 0 / 0.3), 0 8px 24px -8px rgb(0 0 0 / 0.5);
+  --shadow-float: 0 2px 4px rgb(0 0 0 / 0.4), 0 16px 40px -12px rgb(0 0 0 / 0.6);
+  --shadow-sunk: inset 0 1px 2px rgb(0 0 0 / 0.4);
+}
+
+/* Esquema de tonos «Pleco clásico» (opción en Ajustes) */
+:root[data-tones="pleco"] {
+  --tone-1: 227 53 53;
+  --tone-2: 67 160 71;
+  --tone-3: 30 136 229;
+  --tone-4: 142 36 170;
+  --tone-5: 117 117 117;
+}
+:root.dark[data-tones="pleco"],
+:root[data-theme="dark"][data-tones="pleco"] {
+  --tone-1: 255 111 96;
+  --tone-2: 118 210 117;
+  --tone-3: 106 183 255;
+  --tone-4: 208 92 227;
+  --tone-5: 170 170 170;
+}
+/* Sin colores de tono */
+:root[data-tones="none"] {
+  --tone-1: var(--ink);
+  --tone-2: var(--ink);
+  --tone-3: var(--ink);
+  --tone-4: var(--ink);
+  --tone-5: var(--ink-faint);
+}

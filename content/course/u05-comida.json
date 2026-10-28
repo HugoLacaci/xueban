@@ -1,0 +1,204 @@
+{
+  "id": "u05",
+  "order": 6,
+  "title": "Comida y restaurante",
+  "zh": "吃饭",
+  "description": "Comer y beber, decir qué te gusta, pedir en un restaurante y pagar la cuenta.",
+  "icon": "Utensils",
+  "level": 1,
+  "category": "Comida y bebida",
+  "checkpoint": { "exercises": 15 },
+  "lessons": [
+    {
+      "id": "u05-l1",
+      "title": "Comer y beber",
+      "zh": "吃饭喝茶",
+      "goal": "Decir qué comes y bebes y qué te gusta.",
+      "minutes": 10,
+      "vocab": [
+        { "hanzi": "吃", "pinyin": "chī", "es": "comer" },
+        { "hanzi": "喝", "pinyin": "hē", "es": "beber" },
+        { "hanzi": "饭", "pinyin": "fàn", "es": "comida; arroz cocido" },
+        { "hanzi": "菜", "pinyin": "cài", "es": "plato; verdura; comida" },
+        { "hanzi": "水", "pinyin": "shuǐ", "es": "agua" },
+        { "hanzi": "茶", "pinyin": "chá", "es": "té" },
+        { "hanzi": "喜欢", "pinyin": "xǐhuan", "es": "gustar" },
+        { "hanzi": "好吃", "pinyin": "hǎochī", "es": "rico; sabroso" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "吃饭 (comer) y 喝茶 (beber té): dos verbos que lo abren todo" },
+        {
+          "type": "dialogue",
+          "title": "¿Te gusta la comida china?",
+          "lines": [
+            { "speaker": "王明", "zh": "雨果，你喜欢中国菜吗？", "py": "Yǔguǒ, nǐ xǐhuan Zhōngguó cài ma?", "es": "Hugo, ¿te gusta la comida china?" },
+            { "speaker": "雨果", "zh": "喜欢！中国菜很好吃。", "py": "Xǐhuan! Zhōngguó cài hěn hǎochī.", "es": "¡Me gusta! La comida china está muy rica." },
+            { "speaker": "王明", "zh": "你喝茶吗？", "py": "Nǐ hē chá ma?", "es": "¿Bebes té?" },
+            { "speaker": "雨果", "zh": "我不喝茶，我喝水。你呢？", "py": "Wǒ bù hē chá, wǒ hē shuǐ. Nǐ ne?", "es": "No bebo té, bebo agua. ¿Y tú?" },
+            { "speaker": "王明", "zh": "我很喜欢喝茶。我们吃饭吧！", "py": "Wǒ hěn xǐhuan hē chá. Wǒmen chī fàn ba!", "es": "A mí me gusta mucho beber té. ¡Vamos a comer!" }
+          ],
+          "notes": "吃饭 chī fàn significa literalmente «comer arroz», pero se usa para «comer» en general. 中国菜 = comida china (菜 también es «plato» y «verdura»)."
+        },
+        { "type": "grammar", "id": "hen-adj" },
+        { "type": "grammar", "id": "ba" },
+        { "type": "exercises", "count": 10, "types": ["choose-meaning", "listen-choose", "pinyin-input", "tone-choice", "order-words", "matching", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "u05-l2",
+      "title": "Quiero un café",
+      "zh": "我想喝咖啡",
+      "goal": "Expresar lo que quieres comer o beber con 想 y 要.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "想", "pinyin": "xiǎng", "es": "querer; pensar; echar de menos" },
+        { "hanzi": "要", "pinyin": "yào", "es": "querer; necesitar; ir a" },
+        { "hanzi": "咖啡", "pinyin": "kāfēi", "es": "café" },
+        { "hanzi": "牛奶", "pinyin": "niúnǎi", "es": "leche" },
+        { "hanzi": "苹果", "pinyin": "píngguǒ", "es": "manzana" },
+        { "hanzi": "水果", "pinyin": "shuǐguǒ", "es": "fruta" },
+        { "hanzi": "鸡蛋", "pinyin": "jīdàn", "es": "huevo (de gallina)" },
+        { "hanzi": "米饭", "pinyin": "mǐfàn", "es": "arroz (cocido)" }
+      ],
+      "steps": [
+        { "type": "vocab" },
+        {
+          "type": "dialogue",
+          "title": "Desayuno en casa de Wang Ming",
+          "lines": [
+            { "speaker": "王明", "zh": "早上好！你想喝什么？咖啡吗？", "py": "Zǎoshang hǎo! Nǐ xiǎng hē shénme? Kāfēi ma?", "es": "¡Buenos días! ¿Qué quieres beber? ¿Café?" },
+            { "speaker": "雨果", "zh": "我不想喝咖啡，我想喝牛奶。", "py": "Wǒ bù xiǎng hē kāfēi, wǒ xiǎng hē niúnǎi.", "es": "No me apetece café, quiero leche." },
+            { "speaker": "王明", "zh": "你要吃鸡蛋吗？", "py": "Nǐ yào chī jīdàn ma?", "es": "¿Quieres comer huevos?" },
+            { "speaker": "雨果", "zh": "要，谢谢。我也想吃一个苹果。", "py": "Yào, xièxie. Wǒ yě xiǎng chī yí ge píngguǒ.", "es": "Sí, gracias. También quiero comer una manzana." },
+            { "speaker": "王明", "zh": "好。我很喜欢吃水果。", "py": "Hǎo. Wǒ hěn xǐhuan chī shuǐguǒ.", "es": "Vale. A mí me gusta mucho comer fruta." }
+          ],
+          "notes": "想 + verbo = tener ganas de; 要 + nombre = quiero (pido) algo. Para decir «no quiero» en una conversación normal se usa 不想 (不要 suena a rechazo tajante)."
+        },
+        { "type": "grammar", "id": "modal-verbs" },
+        { "type": "exercises", "count": 10, "types": ["choose-meaning", "choose-character", "fill-blank", "order-words", "build-sentence", "dictation", "pinyin-input", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "u05-l3",
+      "title": "En el restaurante",
+      "zh": "在饭店",
+      "goal": "Pedir platos y bebidas al camarero con clasificadores (杯, 瓶, 碗) y 请.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "饭店", "pinyin": "fàndiàn", "es": "restaurante; hotel" },
+        { "hanzi": "服务员", "pinyin": "fúwùyuán", "es": "camarero/a" },
+        { "hanzi": "杯", "pinyin": "bēi", "es": "vaso; taza (clasificador)" },
+        { "hanzi": "瓶", "pinyin": "píng", "es": "botella (clasificador)" },
+        { "hanzi": "碗", "pinyin": "wǎn", "es": "cuenco; bol (clasificador)" },
+        { "hanzi": "面条", "pinyin": "miàntiáo", "es": "fideos; tallarines" },
+        { "hanzi": "啤酒", "pinyin": "píjiǔ", "es": "cerveza" },
+        { "hanzi": "点菜", "pinyin": "diǎn cài", "es": "pedir (platos)" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "Pedir es contar: 一杯茶, 一瓶啤酒, 一碗面条" },
+        {
+          "type": "dialogue",
+          "title": "Pedimos la comida",
+          "lines": [
+            { "speaker": "服务员", "zh": "你们好！你们点菜吗？", "py": "Nǐmen hǎo! Nǐmen diǎn cài ma?", "es": "¡Hola! ¿Van a pedir?" },
+            { "speaker": "雨果", "zh": "我要一碗面条和一杯茶。", "py": "Wǒ yào yì wǎn miàntiáo hé yì bēi chá.", "es": "Quiero un bol de fideos y una taza de té." },
+            { "speaker": "王明", "zh": "我要米饭和鸡蛋。请给我们两瓶啤酒。", "py": "Wǒ yào mǐfàn hé jīdàn. Qǐng gěi wǒmen liǎng píng píjiǔ.", "es": "Yo quiero arroz y huevos. Dos cervezas, por favor." },
+            { "speaker": "服务员", "zh": "好的。你们要水吗？", "py": "Hǎo de. Nǐmen yào shuǐ ma?", "es": "De acuerdo. ¿Quieren agua?" },
+            { "speaker": "雨果", "zh": "要，请给我一杯水。谢谢！", "py": "Yào, qǐng gěi wǒ yì bēi shuǐ. Xièxie!", "es": "Sí, un vaso de agua, por favor. ¡Gracias!" }
+          ],
+          "notes": "Para llamar al camarero se grita 服务员！ sin reparos: es lo normal en China. 好的 hǎo de = «vale, de acuerdo». Recuerda: dos + clasificador = 两 (两瓶, 两杯), no 二."
+        },
+        { "type": "grammar", "id": "measure-words" },
+        { "type": "grammar", "id": "qing" },
+        { "type": "exercises", "count": 10, "types": ["classifier", "choose-meaning", "listen-choose", "order-words", "fill-blank", "dictation", "speaking", "matching"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "u05-l4",
+      "title": "Un poco de…",
+      "zh": "一点儿",
+      "goal": "Pedir un poco de algo y comentar la comida con 一点儿 y 有点儿.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "给", "pinyin": "gěi", "es": "dar; para; a" },
+        { "hanzi": "一点儿", "pinyin": "yìdiǎnr", "es": "un poco" },
+        { "hanzi": "有点儿", "pinyin": "yǒudiǎnr", "es": "un poco (algo negativo)" },
+        { "hanzi": "多", "pinyin": "duō", "es": "mucho; muchos" },
+        { "hanzi": "少", "pinyin": "shǎo", "es": "poco; pocos" },
+        { "hanzi": "热", "pinyin": "rè", "es": "calor; caliente" },
+        { "hanzi": "冷", "pinyin": "lěng", "es": "frío" },
+        { "hanzi": "做", "pinyin": "zuò", "es": "hacer" }
+      ],
+      "steps": [
+        { "type": "vocab" },
+        {
+          "type": "dialogue",
+          "title": "La comida está un poco fría",
+          "lines": [
+            { "speaker": "雨果", "zh": "服务员，这个菜有点儿冷。", "py": "Fúwùyuán, zhège cài yǒudiǎnr lěng.", "es": "Camarero, este plato está un poco frío." },
+            { "speaker": "服务员", "zh": "对不起！我给您做一个热的。", "py": "Duìbuqǐ! Wǒ gěi nín zuò yí ge rè de.", "es": "¡Perdone! Le hago uno caliente." },
+            { "speaker": "雨果", "zh": "谢谢。请再给我一点儿水。", "py": "Xièxie. Qǐng zài gěi wǒ yìdiǎnr shuǐ.", "es": "Gracias. Y un poco más de agua, por favor." },
+            { "speaker": "服务员", "zh": "好的。您要多一点儿还是少一点儿？", "py": "Hǎo de. Nín yào duō yìdiǎnr háishi shǎo yìdiǎnr?", "es": "Claro. ¿Quiere un poco más o un poco menos?" },
+            { "speaker": "雨果", "zh": "多一点儿，谢谢！", "py": "Duō yìdiǎnr, xièxie!", "es": "Un poco más, ¡gracias!" }
+          ],
+          "notes": "再 zài aquí es «otra vez / más» (再给我 = dame más) y 还是 háishi es «o» en preguntas: dos palabras que verás en el HSK 2. 热的 = «uno caliente» (adjetivo + 的 sustituye al nombre)."
+        },
+        { "type": "grammar", "id": "gei" },
+        { "type": "grammar", "id": "yidianr-youdianr" },
+        { "type": "exercises", "count": 10, "types": ["choose-meaning", "fill-blank", "order-words", "build-sentence", "translate-to-es", "tone-choice", "dictation", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "u05-l5",
+      "title": "La cuenta, por favor",
+      "zh": "买单",
+      "goal": "Pedir la cuenta, preguntar el precio y repasar toda la unidad con una lectura.",
+      "minutes": 10,
+      "vocab": [
+        { "hanzi": "买单", "pinyin": "mǎidān", "es": "pedir la cuenta; pagar" },
+        { "hanzi": "钱", "pinyin": "qián", "es": "dinero" },
+        { "hanzi": "块", "pinyin": "kuài", "es": "yuan (coloquial); trozo" },
+        { "hanzi": "好喝", "pinyin": "hǎohē", "es": "rico (de beber)" },
+        { "hanzi": "一起", "pinyin": "yìqǐ", "es": "juntos" },
+        { "hanzi": "肉", "pinyin": "ròu", "es": "carne" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "多少钱 (¿cuánto es?) y 买单 (¡la cuenta!)" },
+        {
+          "type": "dialogue",
+          "title": "Pagamos",
+          "lines": [
+            { "speaker": "雨果", "zh": "服务员，买单！多少钱？", "py": "Fúwùyuán, mǎidān! Duōshao qián?", "es": "¡Camarero, la cuenta! ¿Cuánto es?" },
+            { "speaker": "服务员", "zh": "面条二十块，米饭五块，啤酒十块。", "py": "Miàntiáo èrshí kuài, mǐfàn wǔ kuài, píjiǔ shí kuài.", "es": "Los fideos, veinte yuanes; el arroz, cinco; la cerveza, diez." },
+            { "speaker": "王明", "zh": "我们一起吃饭，我给钱吧。", "py": "Wǒmen yìqǐ chī fàn, wǒ gěi qián ba.", "es": "Hemos comido juntos, pago yo." },
+            { "speaker": "雨果", "zh": "不，今天我给。这儿的菜很好吃，茶也很好喝！", "py": "Bù, jīntiān wǒ gěi. Zhèr de cài hěn hǎochī, chá yě hěn hǎohē!", "es": "No, hoy pago yo. ¡La comida de aquí está muy rica, y el té también está muy bueno!" }
+          ],
+          "notes": "En China se insiste por pagar la cuenta entera: ofrecerse a pagar (我给钱吧 / 我请你) es un gesto de amistad. 好喝 es «rico» para bebidas; 好吃 para comida."
+        },
+        { "type": "grammar", "id": "price-age" },
+        {
+          "type": "reading",
+          "title": "Un mensaje de Hugo a su madre",
+          "text": "妈妈，你好吗？我在中国很好。今天我和王明去饭店吃饭。我吃了一碗面条和一个鸡蛋，王明吃了米饭和肉。我们喝了两瓶啤酒，很好喝！中国菜有点儿热，我很喜欢。面条二十块钱，不贵。明天我想喝咖啡，我不想喝茶。再见！",
+          "es": "Mamá, ¿cómo estás? En China estoy muy bien. Hoy Wang Ming y yo hemos ido a un restaurante a comer. Yo he comido un bol de fideos y un huevo; Wang Ming, arroz y carne. Hemos bebido dos cervezas, ¡estaban muy buenas! La comida china es un poco picante (caliente), me gusta mucho. Los fideos costaban veinte yuanes, no es caro. Mañana quiero beber café, no me apetece té. ¡Adiós!",
+          "questions": [
+            { "q": "¿Qué ha comido Hugo?", "options": ["Arroz y carne", "Fideos y un huevo", "Fruta y leche", "Solo cerveza"], "answer": 1, "explain": "我吃了一碗面条和一个鸡蛋。" },
+            { "q": "¿Cuántas cervezas bebieron?", "options": ["Una", "Dos", "Tres", "Ninguna"], "answer": 1, "explain": "我们喝了两瓶啤酒。" },
+            { "q": "¿Qué quiere beber Hugo mañana?", "options": ["Té", "Leche", "Café", "Agua"], "answer": 2, "explain": "明天我想喝咖啡，我不想喝茶。" }
+          ]
+        },
+        { "type": "exercises", "count": 10, "types": ["matching", "choose-meaning", "order-words", "build-sentence", "fill-blank", "dictation", "translate-to-es", "classifier", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    }
+  ]
+}

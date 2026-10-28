@@ -1,0 +1,1035 @@
+[
+  {
+    "id": "shi",
+    "title": "El verbo 是 (ser)",
+    "zh": "是",
+    "pattern": "Sujeto + 是 + Nombre",
+    "level": 1,
+    "summary": "是 une dos nombres (A es B). No se usa con adjetivos.",
+    "explanation": "**是 shì** equivale a «ser» cuando identificamos o clasificamos: *yo soy estudiante*, *esto es té*. No cambia nunca de forma: no hay conjugación ni tiempo.\n\n- Negación: **不是 bú shì** (不 pasa a segundo tono delante de 是).\n- Pregunta: **…是…吗？** o la forma afirmativa-negativa **是不是**.\n\n⚠️ Con adjetivos NO se usa 是: *estoy ocupado* es 我很忙, no ~~我是忙~~. Ver «很 + adjetivo».",
+    "examples": [
+      { "zh": "我是学生。", "py": "Wǒ shì xuésheng.", "es": "Soy estudiante." },
+      { "zh": "他是我的老师。", "py": "Tā shì wǒ de lǎoshī.", "es": "Él es mi profesor." },
+      { "zh": "这是茶，那是水。", "py": "Zhè shì chá, nà shì shuǐ.", "es": "Esto es té, aquello es agua." },
+      { "zh": "我不是中国人，我是西班牙人。", "py": "Wǒ bú shì Zhōngguórén, wǒ shì Xībānyárén.", "es": "No soy chino, soy español." },
+      { "zh": "你是不是学生？", "py": "Nǐ shì bu shì xuésheng?", "es": "¿Eres estudiante?" },
+      { "zh": "今天是星期一。", "py": "Jīntiān shì xīngqīyī.", "es": "Hoy es lunes." }
+    ],
+    "mistakes": [
+      { "wrong": "我是很忙。", "right": "我很忙。", "why": "Los adjetivos (忙, 好, 大…) funcionan como verbos: no necesitan 是." },
+      { "wrong": "他是不老师。", "right": "他不是老师。", "why": "不 va delante de 是, nunca detrás." },
+      { "wrong": "我是在北京。", "right": "我在北京。", "why": "Para lugar se usa 在, no 是." }
+    ],
+    "practice": {
+      "order": [
+        { "zh": "我是西班牙人。", "es": "Soy español." },
+        { "zh": "她不是我的妈妈。", "es": "Ella no es mi madre." },
+        { "zh": "你是老师吗？", "es": "¿Eres profesor?" }
+      ],
+      "fill": [
+        { "zh": "他＿老师。", "answer": "是", "options": ["是", "在", "有", "很"], "es": "Él es profesor." },
+        { "zh": "我＿是中国人。", "answer": "不", "options": ["不", "没", "也", "都"], "es": "No soy chino." }
+      ],
+      "translate": [
+        { "zh": "这是我的书。", "es": "Este es mi libro." },
+        { "zh": "他们是学生。", "es": "Ellos son estudiantes." }
+      ]
+    },
+    "related": ["hen-adj", "bu-mei", "ma"],
+    "source": "https://resources.allsetlearning.com/chinese/grammar/Expressing_%22to_be%22_with_%22shi%22",
+    "reviewed": false
+  },
+  {
+    "id": "ma",
+    "title": "Preguntas con 吗",
+    "zh": "……吗？",
+    "pattern": "Oración afirmativa + 吗？",
+    "level": 1,
+    "summary": "Añade 吗 al final de una afirmación para convertirla en pregunta de sí/no.",
+    "explanation": "La forma más fácil de preguntar: toma la frase tal cual y añade **吗 ma** (tono neutro) al final. El orden de palabras no cambia y la entonación tampoco sube como en español.\n\nPara responder «sí», se repite el verbo: 你是学生吗？— 是。 Para «no»: 不是。\n\nNo combines 吗 con palabras interrogativas (什么, 谁…): ~~你叫什么吗？~~",
+    "examples": [
+      { "zh": "你好吗？", "py": "Nǐ hǎo ma?", "es": "¿Cómo estás? (¿Estás bien?)" },
+      { "zh": "你是学生吗？", "py": "Nǐ shì xuésheng ma?", "es": "¿Eres estudiante?" },
+      { "zh": "你喜欢中国菜吗？", "py": "Nǐ xǐhuan Zhōngguó cài ma?", "es": "¿Te gusta la comida china?" },
+      { "zh": "他在家吗？", "py": "Tā zài jiā ma?", "es": "¿Está él en casa?" },
+      { "zh": "你有哥哥吗？—没有。", "py": "Nǐ yǒu gēge ma? — Méiyǒu.", "es": "¿Tienes hermano mayor? —No." }
+    ],
+    "mistakes": [
+      { "wrong": "你叫什么名字吗？", "right": "你叫什么名字？", "why": "Con una palabra interrogativa (什么) ya no hace falta 吗." },
+      { "wrong": "吗你是学生？", "right": "你是学生吗？", "why": "吗 siempre va al final." }
+    ],
+    "practice": {
+      "order": [
+        { "zh": "你是中国人吗？", "es": "¿Eres chino?" },
+        { "zh": "他有弟弟吗？", "es": "¿Tiene él un hermano menor?" },
+        { "zh": "你今天忙吗？", "es": "¿Estás ocupado hoy?" }
+      ],
+      "fill": [
+        { "zh": "你喝茶＿？", "answer": "吗", "options": ["吗", "呢", "吧", "的"], "es": "¿Bebes té?" },
+        { "zh": "你叫什么名字＿", "answer": "？", "options": ["？", "吗？", "呢吗？", "吧？"], "es": "¿Cómo te llamas?" }
+      ]
+    },
+    "related": ["ne", "question-words", "ba"],
+    "source": "https://resources.allsetlearning.com/chinese/grammar/Yes-no_questions_with_%22ma%22",
+    "reviewed": false
+  },
+  {
+    "id": "ne",
+    "title": "La partícula 呢",
+    "zh": "……呢？",
+    "pattern": "Nombre/Pronombre + 呢？",
+    "level": 1,
+    "summary": "呢 pregunta «¿y …?» devolviendo la misma pregunta, o «¿dónde está…?».",
+    "explanation": "**呢 ne** tiene dos usos muy frecuentes:\n\n1. **Devolver la pregunta**: 我很好，你呢？ (*Yo estoy bien, ¿y tú?*). Evita repetir toda la frase.\n2. **Preguntar dónde está algo o alguien** cuando no se ve: 我的手机呢？ (*¿Y mi móvil? / ¿Dónde está mi móvil?*).\n\nTambién aparece al final de frases con 在 para marcar que la acción está en curso: 他在吃饭呢。",
+    "examples": [
+      { "zh": "我是西班牙人，你呢？", "py": "Wǒ shì Xībānyárén, nǐ ne?", "es": "Soy español, ¿y tú?" },
+      { "zh": "我很好，你呢？", "py": "Wǒ hěn hǎo, nǐ ne?", "es": "Estoy bien, ¿y tú?" },
+      { "zh": "爸爸呢？", "py": "Bàba ne?", "es": "¿Y papá? (¿Dónde está papá?)" },
+      { "zh": "我的书呢？", "py": "Wǒ de shū ne?", "es": "¿Dónde está mi libro?" },
+      { "zh": "他在看书呢。", "py": "Tā zài kàn shū ne.", "es": "Está leyendo (ahora mismo)." }
+    ],
+    "mistakes": [
+      { "wrong": "你呢是学生？", "right": "你呢？ / 你是学生吗？", "why": "呢 cierra la frase; no se mete en medio." },
+      { "wrong": "你好呢？", "right": "你好吗？", "why": "Para preguntar «¿estás bien?» se usa 吗; 呢 solo devuelve una pregunta ya hecha." }
+    ],
+    "practice": {
+      "order": [
+        { "zh": "我喜欢喝茶，你呢？", "es": "A mí me gusta beber té, ¿y a ti?" },
+        { "zh": "妈妈呢？", "es": "¿Dónde está mamá?" }
+      ],
+      "fill": [
+        { "zh": "我叫雨果，你＿？", "answer": "呢", "options": ["呢", "吗", "吧", "了"], "es": "Me llamo Hugo, ¿y tú?" },
+        { "zh": "我的钱＿？", "answer": "呢", "options": ["呢", "吗", "的", "也"], "es": "¿Dónde está mi dinero?" }
+      ]
+    },
+    "related": ["ma", "zai"],
+    "source": "https://resources.allsetlearning.com/chinese/grammar/Returning_a_question_with_%22ne%22",
+    "reviewed": false
+  },
+  {
+    "id": "ba",
+    "title": "La partícula 吧 (sugerencia y suposición)",
+    "zh": "……吧",
+    "pattern": "Oración + 吧",
+    "level": 1,
+    "summary": "吧 suaviza una propuesta («vamos…», «…¿vale?») o marca una suposición («…¿no?»).",
+    "explanation": "**吧 ba** al final de la frase:\n\n1. **Sugerencia / invitación**: 我们走吧！ (*¡Vámonos!*), 你坐吧。 (*Siéntate, anda*).\n2. **Suposición que pides confirmar**: 你是学生吧？ (*Eres estudiante, ¿no?*). A diferencia de 吗, con 吧 ya crees saber la respuesta.\n\nEs muy coloquial y hace que las órdenes suenen amables.",
+    "examples": [
+      { "zh": "我们走吧！", "py": "Wǒmen zǒu ba!", "es": "¡Vámonos!" },
+      { "zh": "你坐吧。", "py": "Nǐ zuò ba.", "es": "Siéntate." },
+      { "zh": "我们吃饭吧。", "py": "Wǒmen chī fàn ba.", "es": "Vamos a comer." },
+      { "zh": "你是老师吧？", "py": "Nǐ shì lǎoshī ba?", "es": "Eres profesor, ¿no?" },
+      { "zh": "明天见吧。", "py": "Míngtiān jiàn ba.", "es": "Nos vemos mañana, ¿vale?" }
+    ],
+    "mistakes": [
+      { "wrong": "你是谁吧？", "right": "你是谁？", "why": "No se combina con palabras interrogativas." },
+      { "wrong": "吧我们走！", "right": "我们走吧！", "why": "吧 va al final." }
+    ],
+    "practice": {
+      "order": [
+        { "zh": "我们去学校吧。", "es": "Vamos a la escuela." },
+        { "zh": "你喝茶吧。", "es": "Toma té, anda." }
+      ],
+      "fill": [
+        { "zh": "我们回家＿。", "answer": "吧", "options": ["吧", "吗", "呢", "的"], "es": "Volvamos a casa." },
+        { "zh": "他是你的朋友＿？", "answer": "吧", "options": ["吧", "呢", "了", "也"], "es": "Es tu amigo, ¿no?" }
+      ]
+    },
+    "related": ["ma", "ne"],
+    "source": "https://resources.allsetlearning.com/chinese/grammar/Suggestions_with_%22ba%22",
+    "reviewed": false
+  },
+  {
+    "id": "question-words",
+    "title": "Palabras interrogativas",
+    "zh": "什么 · 谁 · 哪 · 哪儿 · 几 · 多少 · 怎么 · 怎么样",
+    "pattern": "La palabra interrogativa ocupa el lugar de la respuesta (sin cambiar el orden)",
+    "level": 1,
+    "summary": "En chino la pregunta mantiene el orden de la afirmación: la palabra interrogativa va donde iría la respuesta.",
+    "explanation": "Regla de oro: **no muevas nada**. Si la respuesta es 我叫雨果, la pregunta es 你叫**什么**？\n\n| Palabra | Significado | Ejemplo |\n|---|---|---|\n| 什么 shénme | qué | 这是什么？ |\n| 谁 shéi | quién | 他是谁？ |\n| 哪 nǎ + clasif. | cuál | 你是哪国人？ |\n| 哪儿 nǎr | dónde | 你去哪儿？ |\n| 几 jǐ | cuántos (<10, con clasificador) | 你有几个弟弟？ |\n| 多少 duōshao | cuánto (cualquier cantidad) | 多少钱？ |\n| 怎么 zěnme | cómo (manera) | 怎么去？ |\n| 怎么样 zěnmeyàng | qué tal | 你最近怎么样？ |\n\n**几 vs 多少**: 几 espera un número pequeño y lleva clasificador (几个人); 多少 vale para cualquier cantidad y puede ir sin clasificador (多少钱).",
+    "examples": [
+      { "zh": "你叫什么名字？", "py": "Nǐ jiào shénme míngzi?", "es": "¿Cómo te llamas?" },
+      { "zh": "他是谁？", "py": "Tā shì shéi?", "es": "¿Quién es él?" },
+      { "zh": "你是哪国人？", "py": "Nǐ shì nǎ guó rén?", "es": "¿De qué país eres?" },
+      { "zh": "你在哪儿？", "py": "Nǐ zài nǎr?", "es": "¿Dónde estás?" },
+      { "zh": "现在几点？", "py": "Xiànzài jǐ diǎn?", "es": "¿Qué hora es?" },
+      { "zh": "这个多少钱？", "py": "Zhège duōshao qián?", "es": "¿Cuánto cuesta esto?" },
+      { "zh": "这个字怎么读？", "py": "Zhège zì zěnme dú?", "es": "¿Cómo se lee este carácter?" },
+      { "zh": "你爸爸妈妈怎么样？", "py": "Nǐ bàba māma zěnmeyàng?", "es": "¿Qué tal tus padres?" }
+    ],
+    "mistakes": [
+      { "wrong": "什么你叫？", "right": "你叫什么？", "why": "La interrogativa no va al principio: ocupa el sitio de la respuesta." },
+      { "wrong": "你有多少个弟弟？", "right": "你有几个弟弟？", "why": "Para números pequeños y con clasificador se prefiere 几." },
+      { "wrong": "你是谁吗？", "right": "你是谁？", "why": "No se añade 吗 a una pregunta con palabra interrogativa." }
+    ],
+    "practice": {
+      "order": [
+        { "zh": "你叫什么名字？", "es": "¿Cómo te llamas?" },
+        { "zh": "你家有几口人？", "es": "¿Cuántas personas hay en tu familia?" },
+        { "zh": "你去哪儿？", "es": "¿Adónde vas?" },
+        { "zh": "这个多少钱？", "es": "¿Cuánto cuesta esto?" }
+      ],
+      "fill": [
+        { "zh": "你是＿国人？", "answer": "哪", "options": ["哪", "什么", "谁", "几"], "es": "¿De qué país eres?" },
+        { "zh": "现在＿点？", "answer": "几", "options": ["几", "多少", "什么", "怎么"], "es": "¿Qué hora es?" },
+        { "zh": "他是＿？", "answer": "谁", "options": ["谁", "什么", "哪儿", "几"], "es": "¿Quién es él?" }
+      ]
+    },
+    "related": ["ma", "measure-words", "price-age"],
+    "source": "https://resources.allsetlearning.com/chinese/grammar/Placement_of_question_words",
+    "reviewed": false
+  },
+  {
+    "id": "de",
+    "title": "La partícula 的 (posesión y descripción)",
+    "zh": "的",
+    "pattern": "Poseedor + 的 + Cosa · Adjetivo + 的 + Nombre",
+    "level": 1,
+    "summary": "的 une un modificador con el nombre: 我的书 (mi libro), 好看的衣服 (ropa bonita).",
+    "explanation": "**的 de** (tono neutro) marca que lo anterior describe o posee lo siguiente. Funciona como «de» pero al revés: *el libro de Hugo* → 雨果**的**书.\n\n- Posesión: 我的, 你的, 老师的 (mi, tu, del profesor).\n- Descripción: 很大的学校 (una escuela muy grande).\n- Puede sustituir al nombre si se entiende: 这是我的。 (*Esto es mío*).\n\n**Se omite 的** con familia y relaciones cercanas y con pronombres: 我妈妈, 我家, 我们学校.",
+    "examples": [
+      { "zh": "这是我的书。", "py": "Zhè shì wǒ de shū.", "es": "Este es mi libro." },
+      { "zh": "她是老师的女儿。", "py": "Tā shì lǎoshī de nǚ'ér.", "es": "Ella es la hija del profesor." },
+      { "zh": "我妈妈是医生。", "py": "Wǒ māma shì yīshēng.", "es": "Mi madre es médica." },
+      { "zh": "那是谁的手机？", "py": "Nà shì shéi de shǒujī?", "es": "¿De quién es ese móvil?" },
+      { "zh": "我喜欢漂亮的衣服。", "py": "Wǒ xǐhuan piàoliang de yīfu.", "es": "Me gusta la ropa bonita." },
+      { "zh": "这杯茶是我的。", "py": "Zhè bēi chá shì wǒ de.", "es": "Esta taza de té es mía." }
+    ],
+    "mistakes": [
+      { "wrong": "书的我", "right": "我的书", "why": "El poseedor va primero, luego 的, luego la cosa." },
+      { "wrong": "我的妈妈很忙。（no es error, pero suena formal）", "right": "我妈妈很忙。", "why": "Con familia se suele omitir 的." },
+      { "wrong": "他是的老师。", "right": "他是老师。", "why": "的 solo une un modificador con un nombre; no va suelto tras 是." }
+    ],
+    "practice": {
+      "order": [
+        { "zh": "这是我朋友的车。", "es": "Este es el coche de mi amigo." },
+        { "zh": "那是谁的书？", "es": "¿De quién es ese libro?" },
+        { "zh": "我爸爸是老师。", "es": "Mi padre es profesor." }
+      ],
+      "fill": [
+        { "zh": "这是老师＿书。", "answer": "的", "options": ["的", "是", "了", "吗"], "es": "Este es el libro del profesor." },
+        { "zh": "我＿家有五口人。", "answer": "（nada）", "options": ["（nada）", "的", "是", "在"], "es": "En mi familia somos cinco." }
+      ]
+    },
+    "related": ["hen-adj", "shi"],
+    "source": "https://resources.allsetlearning.com/chinese/grammar/Expressing_possession_with_%22de%22",
+    "reviewed": false
+  },
+  {
+    "id": "bu-mei",
+    "title": "Negar con 不 y 没",
+    "zh": "不 / 没",
+    "pattern": "不 + Verbo/Adjetivo · 没(有) + Verbo (pasado) · 没有 + Nombre",
+    "level": 1,
+    "summary": "不 niega el presente, el futuro, los hábitos y los adjetivos; 没 niega lo que no ha ocurrido y 有.",
+    "explanation": "| | 不 bù | 没 méi |\n|---|---|---|\n| Presente/hábito | 我不喝咖啡 | — |\n| Futuro/voluntad | 我不去 | — |\n| Adjetivos | 不好, 不忙 | — |\n| 是, 会, 能, 想, 要 | 不是, 不会… | — |\n| Acción no realizada (pasado) | — | 我没去 |\n| Tener | — | 没有 (¡nunca 不有!) |\n\n**Tono**: 不 es 4.º tono, pero delante de otro 4.º tono se dice **bú**: 不是 bú shì, 不去 bú qù. 没 es siempre méi.",
+    "examples": [
+      { "zh": "我不喝咖啡。", "py": "Wǒ bù hē kāfēi.", "es": "No bebo café." },
+      { "zh": "今天不冷。", "py": "Jīntiān bù lěng.", "es": "Hoy no hace frío." },
+      { "zh": "他不是医生。", "py": "Tā bú shì yīshēng.", "es": "Él no es médico." },
+      { "zh": "我没有哥哥。", "py": "Wǒ méiyǒu gēge.", "es": "No tengo hermano mayor." },
+      { "zh": "昨天我没去学校。", "py": "Zuótiān wǒ méi qù xuéxiào.", "es": "Ayer no fui a la escuela." },
+      { "zh": "我没看见他。", "py": "Wǒ méi kànjiàn tā.", "es": "No lo he visto." }
+    ],
+    "mistakes": [
+      { "wrong": "我不有钱。", "right": "我没有钱。", "why": "有 se niega siempre con 没." },
+      { "wrong": "昨天我不去。", "right": "昨天我没去。", "why": "Una acción pasada que no ocurrió se niega con 没." },
+      { "wrong": "我没是学生。", "right": "我不是学生。", "why": "是 se niega con 不." }
+    ],
+    "practice": {
+      "order": [
+        { "zh": "我不喜欢喝咖啡。", "es": "No me gusta beber café." },
+        { "zh": "他没有女朋友。", "es": "No tiene novia." },
+        { "zh": "昨天我没去工作。", "es": "Ayer no fui a trabajar." }
+      ],
+      "fill": [
+        { "zh": "我＿有手机。", "answer": "没", "options": ["没", "不", "很", "也"], "es": "No tengo móvil." },
+        { "zh": "他＿是老师。", "answer": "不", "options": ["不", "没", "很", "都"], "es": "Él no es profesor." },
+        { "zh": "昨天他＿来。", "answer": "没", "options": ["没", "不", "是", "在"], "es": "Ayer no vino." }
+      ]
+    },
+    "related": ["you", "le"],
+    "source": "https://resources.allsetlearning.com/chinese/grammar/Comparing_%22bu%22_and_%22mei%22",
+    "reviewed": false
+  },
+  {
+    "id": "you",
+    "title": "有 y 没有: tener y haber",
+    "zh": "有 / 没有",
+    "pattern": "Sujeto + 有 + Objeto · Lugar + 有 + Cosa",
+    "level": 1,
+    "summary": "有 significa «tener» y también «haber/existir» cuando el sujeto es un lugar.",
+    "explanation": "**有 yǒu** sirve para dos cosas:\n\n1. **Tener**: 我有一个妹妹。\n2. **Haber (existencia)**: el sujeto es un lugar: 学校里有很多学生。 (*En la escuela hay muchos estudiantes*).\n\nSe niega **solo con 没**: 没有 (nunca ~~不有~~). Pregunta: 有…吗？ o 有没有…？\n\nRespuesta corta: 有。/ 没有。",
+    "examples": [
+      { "zh": "我有一个妹妹。", "py": "Wǒ yǒu yí ge mèimei.", "es": "Tengo una hermana menor." },
+      { "zh": "你有没有手机？", "py": "Nǐ yǒu méiyǒu shǒujī?", "es": "¿Tienes móvil?" },
+      { "zh": "我没有钱。", "py": "Wǒ méiyǒu qián.", "es": "No tengo dinero." },
+      { "zh": "家里有三口人。", "py": "Jiā li yǒu sān kǒu rén.", "es": "En casa somos tres." },
+      { "zh": "这儿有饭店吗？", "py": "Zhèr yǒu fàndiàn ma?", "es": "¿Hay un restaurante por aquí?" },
+      { "zh": "今天有汉语课。", "py": "Jīntiān yǒu Hànyǔ kè.", "es": "Hoy hay clase de chino." }
+    ],
+    "mistakes": [
+      { "wrong": "我不有时间。", "right": "我没有时间。", "why": "有 solo se niega con 没." },
+      { "wrong": "有一个饭店在这儿。", "right": "这儿有一个饭店。", "why": "Para «hay», el lugar va al principio." }
+    ],
+    "practice": {
+      "order": [
+        { "zh": "我有两个哥哥。", "es": "Tengo dos hermanos mayores." },
+        { "zh": "学校里有很多学生。", "es": "En la escuela hay muchos estudiantes." },
+        { "zh": "你有没有女朋友？", "es": "¿Tienes novia?" }
+      ],
+      "fill": [
+        { "zh": "我家＿一只猫。", "answer": "有", "options": ["有", "是", "在", "很"], "es": "En mi casa hay un gato." },
+        { "zh": "他＿有车。", "answer": "没", "options": ["没", "不", "也", "都"], "es": "Él no tiene coche." }
+      ]
+    },
+    "related": ["bu-mei", "measure-words", "zai"],
+    "source": "https://resources.allsetlearning.com/chinese/grammar/Expressing_existence_with_%22you%22",
+    "reviewed": false
+  },
+  {
+    "id": "zai",
+    "title": "在: estar en un lugar y acción en curso",
+    "zh": "在 / 正在……呢",
+    "pattern": "Sujeto + 在 + Lugar · Sujeto + 在 + Lugar + Verbo · Sujeto + (正)在 + Verbo + (呢)",
+    "level": 1,
+    "summary": "在 indica dónde está algo o dónde ocurre una acción; delante de un verbo marca «estar haciendo».",
+    "explanation": "**在 zài** tiene tres usos:\n\n1. **Verbo «estar en»**: 我在家。 (*Estoy en casa*). Negación: 不在.\n2. **Preposición «en»** delante del verbo: 我在学校学习。 (*Estudio en la escuela*). ⚠️ El lugar va ANTES del verbo, al contrario que en español.\n3. **Progresivo «estar + gerundio»**: (正)在 + verbo (+ 呢): 他在看书呢。 (*Está leyendo*).",
+    "examples": [
+      { "zh": "我在家。", "py": "Wǒ zài jiā.", "es": "Estoy en casa." },
+      { "zh": "老师不在学校。", "py": "Lǎoshī bú zài xuéxiào.", "es": "El profesor no está en la escuela." },
+      { "zh": "我在北京学习汉语。", "py": "Wǒ zài Běijīng xuéxí Hànyǔ.", "es": "Estudio chino en Pekín." },
+      { "zh": "他在吃饭呢。", "py": "Tā zài chī fàn ne.", "es": "Está comiendo." },
+      { "zh": "你在做什么？", "py": "Nǐ zài zuò shénme?", "es": "¿Qué estás haciendo?" },
+      { "zh": "我正在看电视。", "py": "Wǒ zhèngzài kàn diànshì.", "es": "Estoy viendo la tele ahora mismo." }
+    ],
+    "mistakes": [
+      { "wrong": "我学习汉语在北京。", "right": "我在北京学习汉语。", "why": "El complemento de lugar con 在 va antes del verbo." },
+      { "wrong": "我是在家。", "right": "我在家。", "why": "No se usa 是 con lugares." },
+      { "wrong": "他没在吃饭。（coloquial, pero mejor）", "right": "他没（在）吃饭。/ 他不在家。", "why": "«Estar en» se niega con 不在; «no estar haciendo» con 没(在)." }
+    ],
+    "practice": {
+      "order": [
+        { "zh": "我在家看书。", "es": "Leo en casa." },
+        { "zh": "他在学校工作。", "es": "Él trabaja en la escuela." },
+        { "zh": "妈妈在做饭呢。", "es": "Mamá está cocinando." }
+      ],
+      "fill": [
+        { "zh": "我＿北京工作。", "answer": "在", "options": ["在", "是", "有", "去"], "es": "Trabajo en Pekín." },
+        { "zh": "他＿睡觉呢。", "answer": "在", "options": ["在", "是", "了", "会"], "es": "Está durmiendo." }
+      ]
+    },
+    "related": ["word-order", "ne", "you"],
+    "source": "https://resources.allsetlearning.com/chinese/grammar/Expressing_location_with_%22zai%22",
+    "reviewed": false
+  },
+  {
+    "id": "le",
+    "title": "La partícula 了 (acción completada y cambio)",
+    "zh": "了",
+    "pattern": "Verbo + 了 + Objeto · Oración + 了",
+    "level": 1,
+    "summary": "了 tras el verbo indica acción completada; al final de la frase indica que algo ha cambiado.",
+    "explanation": "**了 le** no es «pasado»: marca que una acción **se ha completado** o que **la situación ha cambiado**.\n\n1. **Verbo + 了**: la acción se realizó. 我吃了三个苹果。 (*Me comí tres manzanas*).\n2. **Frase + 了**: cambio de estado o situación nueva. 下雨了。 (*Ha empezado a llover*), 我二十岁了。 (*Ya tengo 20 años*).\n\n**Negación**: 没 + verbo, SIN 了: 我没吃。 (*No he comido*).\n\nCon 太…了 y 别…了 también aparece (ver «太…了»).",
+    "examples": [
+      { "zh": "我买了一本书。", "py": "Wǒ mǎi le yì běn shū.", "es": "Compré un libro." },
+      { "zh": "他去北京了。", "py": "Tā qù Běijīng le.", "es": "Se ha ido a Pekín." },
+      { "zh": "我吃饭了。", "py": "Wǒ chī fàn le.", "es": "Ya he comido." },
+      { "zh": "下雨了。", "py": "Xià yǔ le.", "es": "Está lloviendo (ha empezado a llover)." },
+      { "zh": "现在几点了？", "py": "Xiànzài jǐ diǎn le?", "es": "¿Qué hora es ya?" },
+      { "zh": "我没去学校。", "py": "Wǒ méi qù xuéxiào.", "es": "No fui a la escuela." }
+    ],
+    "mistakes": [
+      { "wrong": "我没吃了饭。", "right": "我没吃饭。", "why": "Con 没 no se usa 了." },
+      { "wrong": "昨天我是学生了。", "right": "昨天我很忙。/ 我以前是学生。", "why": "了 no es un marcador de pasado; los estados (是, 在, 很忙) no llevan 了 solo por ser pasados." },
+      { "wrong": "我了吃饭。", "right": "我吃了饭。/ 我吃饭了。", "why": "了 va después del verbo o al final, nunca delante." }
+    ],
+    "practice": {
+      "order": [
+        { "zh": "我买了两个苹果。", "es": "Compré dos manzanas." },
+        { "zh": "他回家了。", "es": "Se ha ido a casa." },
+        { "zh": "我们吃饭了。", "es": "Ya hemos comido." }
+      ],
+      "fill": [
+        { "zh": "昨天我看＿一本书。", "answer": "了", "options": ["了", "的", "吗", "呢"], "es": "Ayer leí un libro." },
+        { "zh": "我＿吃早饭。", "answer": "没", "options": ["没", "不", "没有了", "不了"], "es": "No he desayunado." }
+      ]
+    },
+    "related": ["bu-mei", "tai-le"],
+    "source": "https://resources.allsetlearning.com/chinese/grammar/Expressing_completion_with_%22le%22",
+    "reviewed": false
+  },
+  {
+    "id": "modal-verbs",
+    "title": "Verbos modales: 会 · 能 · 可以 · 想 · 要",
+    "zh": "会 / 能 / 可以 / 想 / 要",
+    "pattern": "Sujeto + Modal + Verbo",
+    "level": 1,
+    "summary": "Van delante del verbo principal y se niegan con 不.",
+    "explanation": "| Modal | Idea | Ejemplo |\n|---|---|---|\n| 会 huì | saber hacer (habilidad aprendida); futuro probable | 我会说汉语 |\n| 能 néng | poder (capacidad física/circunstancias) | 我今天不能去 |\n| 可以 kěyǐ | poder (permiso) | 可以进来吗？ |\n| 想 xiǎng | querer, tener ganas de | 我想喝水 |\n| 要 yào | querer (decidido), ir a; necesitar | 我要买这个 |\n\n**Negación**: 不会, 不能, 不可以, 不想. ⚠️ El negativo de 要 (querer) suele ser **不想** (不要 = «no quieras / no hagas», orden).\n\n**Pregunta**: 会不会, 能不能, 可以吗…",
+    "examples": [
+      { "zh": "我会说一点儿汉语。", "py": "Wǒ huì shuō yìdiǎnr Hànyǔ.", "es": "Sé hablar un poco de chino." },
+      { "zh": "你会不会游泳？", "py": "Nǐ huì bu huì yóuyǒng?", "es": "¿Sabes nadar?" },
+      { "zh": "我今天不能去。", "py": "Wǒ jīntiān bù néng qù.", "es": "Hoy no puedo ir." },
+      { "zh": "这儿可以坐吗？", "py": "Zhèr kěyǐ zuò ma?", "es": "¿Se puede sentar aquí?" },
+      { "zh": "我想去中国。", "py": "Wǒ xiǎng qù Zhōngguó.", "es": "Quiero ir a China." },
+      { "zh": "我要一杯咖啡。", "py": "Wǒ yào yì bēi kāfēi.", "es": "Quiero un café." },
+      { "zh": "明天会下雨。", "py": "Míngtiān huì xià yǔ.", "es": "Mañana lloverá (probablemente)." }
+    ],
+    "mistakes": [
+      { "wrong": "我不要去。（= no quiero ir, muy tajante）", "right": "我不想去。", "why": "Para «no me apetece» se usa 不想; 不要 suena a negativa fuerte u orden." },
+      { "wrong": "我能说汉语。", "right": "我会说汉语。", "why": "Una habilidad aprendida (idiomas, conducir) se expresa con 会." },
+      { "wrong": "我会想喝茶。", "right": "我想喝茶。", "why": "Un solo modal basta." }
+    ],
+    "practice": {
+      "order": [
+        { "zh": "我会说汉语。", "es": "Sé hablar chino." },
+        { "zh": "你可以帮我吗？", "es": "¿Puedes ayudarme?" },
+        { "zh": "我想喝一杯茶。", "es": "Quiero tomar una taza de té." },
+        { "zh": "他今天不能来。", "es": "Hoy no puede venir." }
+      ],
+      "fill": [
+        { "zh": "我＿说汉语。", "answer": "会", "options": ["会", "可以", "要", "是"], "es": "Sé hablar chino." },
+        { "zh": "这里＿吃东西吗？", "answer": "可以", "options": ["可以", "会", "想", "有"], "es": "¿Se puede comer aquí?" },
+        { "zh": "我＿去北京。", "answer": "想", "options": ["想", "会", "在", "是"], "es": "Quiero ir a Pekín." }
+      ]
+    },
+    "related": ["bu-mei"],
+    "source": "https://resources.allsetlearning.com/chinese/grammar/Auxiliary_verb",
+    "reviewed": false
+  },
+  {
+    "id": "numbers",
+    "title": "Números: 0–99 y 二 vs 两",
+    "zh": "数字 · 二 / 两",
+    "pattern": "十 = 10 · 二十 = 20 · 二十五 = 25 · 两 + Clasificador",
+    "level": 1,
+    "summary": "Los números se forman combinando 一…十; delante de un clasificador «dos» es 两, no 二.",
+    "explanation": "零 líng 0 · 一 yī 1 · 二 èr 2 · 三 sān 3 · 四 sì 4 · 五 wǔ 5 · 六 liù 6 · 七 qī 7 · 八 bā 8 · 九 jiǔ 9 · 十 shí 10\n\n- 11 = 十一, 12 = 十二 … 19 = 十九 (diez-uno…).\n- 20 = 二十, 30 = 三十 … 99 = 九十九 (dos-diez-nueve).\n- 100 = 一百 yìbǎi.\n\n**二 vs 两**: para contar cosas (delante de un clasificador) se usa **两 liǎng**: 两个人, 两本书, 两点 (las dos). 二 se usa al contar en serie, en 第二, 十二, 二十 y en números de teléfono.\n\n**Sandhi de 一**: yī aislado o en series; **yí** delante de 4.º tono (一个 yí ge), **yì** delante de 1.º, 2.º, 3.º (一天 yì tiān).",
+    "examples": [
+      { "zh": "我有两个姐姐。", "py": "Wǒ yǒu liǎng ge jiějie.", "es": "Tengo dos hermanas mayores." },
+      { "zh": "现在两点。", "py": "Xiànzài liǎng diǎn.", "es": "Son las dos." },
+      { "zh": "十二月二号", "py": "shí'èr yuè èr hào", "es": "2 de diciembre" },
+      { "zh": "我的电话是一三八二二五。", "py": "Wǒ de diànhuà shì yāo sān bā èr èr wǔ.", "es": "Mi teléfono es 138225. (一 se lee yāo en números)" },
+      { "zh": "这本书三十五块钱。", "py": "Zhè běn shū sānshíwǔ kuài qián.", "es": "Este libro cuesta 35 yuanes." },
+      { "zh": "我二十一岁。", "py": "Wǒ èrshíyī suì.", "es": "Tengo 21 años." }
+    ],
+    "mistakes": [
+      { "wrong": "二个人", "right": "两个人", "why": "Delante de clasificador, «dos» es 两." },
+      { "wrong": "两十", "right": "二十", "why": "En las decenas se usa 二." },
+      { "wrong": "一十五", "right": "十五", "why": "Del 11 al 19 no se dice 一 delante de 十." }
+    ],
+    "practice": {
+      "order": [
+        { "zh": "我有两个弟弟。", "es": "Tengo dos hermanos menores." },
+        { "zh": "他二十岁。", "es": "Él tiene veinte años." }
+      ],
+      "fill": [
+        { "zh": "我要＿杯咖啡。", "answer": "两", "options": ["两", "二", "几", "多少"], "es": "Quiero dos cafés." },
+        { "zh": "今天是十＿号。", "answer": "二", "options": ["二", "两", "几", "一"], "es": "Hoy es día 12." }
+      ]
+    },
+    "related": ["measure-words", "dates-time", "price-age"],
+    "source": "https://resources.allsetlearning.com/chinese/grammar/Comparing_%22er%22_and_%22liang%22",
+    "reviewed": false
+  },
+  {
+    "id": "measure-words",
+    "title": "Clasificadores (palabras de medida)",
+    "zh": "量词：个 · 本 · 块 · 件 · 口 · 杯 · 只 · 岁",
+    "pattern": "Número/这/那/几 + Clasificador + Nombre",
+    "level": 1,
+    "summary": "Entre un número (o 这/那/几) y un nombre siempre hay un clasificador. 个 es el comodín.",
+    "explanation": "En chino no se dice «tres libros» sino «tres [unidad] libros»: 三**本**书. Cada tipo de nombre tiene su clasificador; si dudas, **个 ge** vale casi siempre.\n\n| Clasificador | Para | Ejemplo |\n|---|---|---|\n| 个 ge | genérico, personas | 一个人, 三个苹果 |\n| 本 běn | libros, cuadernos | 两本书 |\n| 块 kuài | trozos; dinero (yuanes) | 五块钱 |\n| 件 jiàn | ropa de arriba, asuntos | 一件衣服 |\n| 口 kǒu | miembros de la familia | 家里有四口人 |\n| 杯 bēi | vasos, tazas | 一杯茶 |\n| 只 zhī | animales pequeños | 一只猫 |\n| 岁 suì | años de edad | 二十岁 |\n| 位 wèi | personas (respeto) | 这位老师 |\n\nTambién con demostrativos: 这个 (este), 那本书 (ese libro), 哪个 (¿cuál?), 几个 (¿cuántos?).",
+    "examples": [
+      { "zh": "我有一个弟弟。", "py": "Wǒ yǒu yí ge dìdi.", "es": "Tengo un hermano menor." },
+      { "zh": "这本书很好。", "py": "Zhè běn shū hěn hǎo.", "es": "Este libro es muy bueno." },
+      { "zh": "我家有四口人。", "py": "Wǒ jiā yǒu sì kǒu rén.", "es": "En mi familia somos cuatro." },
+      { "zh": "请给我一杯水。", "py": "Qǐng gěi wǒ yì bēi shuǐ.", "es": "Dame un vaso de agua, por favor." },
+      { "zh": "那件衣服多少钱？", "py": "Nà jiàn yīfu duōshao qián?", "es": "¿Cuánto cuesta esa prenda?" },
+      { "zh": "我们有两只猫。", "py": "Wǒmen yǒu liǎng zhī māo.", "es": "Tenemos dos gatos." }
+    ],
+    "mistakes": [
+      { "wrong": "三书", "right": "三本书", "why": "Nunca va un número directamente delante del nombre." },
+      { "wrong": "一本人", "right": "一个人", "why": "本 es para libros; las personas llevan 个 (o 位)." },
+      { "wrong": "这书是我的。", "right": "这本书是我的。", "why": "这/那 también necesitan clasificador cuando van con un nombre." }
+    ],
+    "practice": {
+      "order": [
+        { "zh": "我要买三本书。", "es": "Quiero comprar tres libros." },
+        { "zh": "这个人是我的老师。", "es": "Esta persona es mi profesor." },
+        { "zh": "我家有一只狗。", "es": "En mi casa hay un perro." }
+      ],
+      "fill": [
+        { "zh": "我有两＿书。", "answer": "本", "options": ["本", "个", "杯", "口"], "es": "Tengo dos libros." },
+        { "zh": "他家有五＿人。", "answer": "口", "options": ["口", "本", "块", "件"], "es": "En su familia son cinco." },
+        { "zh": "请给我一＿茶。", "answer": "杯", "options": ["杯", "个", "只", "岁"], "es": "Dame un té, por favor." }
+      ]
+    },
+    "related": ["numbers", "demonstratives", "you"],
+    "source": "https://resources.allsetlearning.com/chinese/grammar/Measure_word",
+    "reviewed": false
+  },
+  {
+    "id": "demonstratives",
+    "title": "Demostrativos: 这 / 那 / 哪",
+    "zh": "这 · 那 · 哪 · 这儿 · 那儿 · 哪儿",
+    "pattern": "这/那/哪 + Clasificador + Nombre · 这儿/那儿/哪儿 (lugares)",
+    "level": 1,
+    "summary": "这 = este (cerca), 那 = ese/aquel (lejos), 哪 = cuál; con 儿 pasan a ser lugares.",
+    "explanation": "- **这 zhè** (esto/este) y **那 nà** (eso/ese/aquello). Solo hay dos distancias, no tres como en español.\n- Delante de un nombre llevan clasificador: 这个人, 那本书. Coloquialmente 这个 se pronuncia zhèi ge y 那个 nèi ge.\n- **哪 nǎ** + clasificador = ¿cuál?: 哪个？\n- **这儿 / 那儿 / 哪儿** = aquí / ahí, allí / dónde (en el sur: 这里 / 那里 / 哪里).\n- Como sujeto con 是: 这是我的朋友。 (*Este es mi amigo*).",
+    "examples": [
+      { "zh": "这是我的朋友。", "py": "Zhè shì wǒ de péngyou.", "es": "Este es mi amigo." },
+      { "zh": "那个人是谁？", "py": "Nàge rén shì shéi?", "es": "¿Quién es esa persona?" },
+      { "zh": "你要哪个？", "py": "Nǐ yào nǎge?", "es": "¿Cuál quieres?" },
+      { "zh": "我在这儿。", "py": "Wǒ zài zhèr.", "es": "Estoy aquí." },
+      { "zh": "洗手间在哪儿？", "py": "Xǐshǒujiān zài nǎr?", "es": "¿Dónde está el baño?" },
+      { "zh": "那儿有一家饭店。", "py": "Nàr yǒu yì jiā fàndiàn.", "es": "Allí hay un restaurante." }
+    ],
+    "mistakes": [
+      { "wrong": "这人是我的老师。", "right": "这个人是我的老师。", "why": "Hace falta el clasificador entre 这 y el nombre." },
+      { "wrong": "我在这。（coloquial）", "right": "我在这儿。/ 我在这里。", "why": "Como lugar se usa 这儿 o 这里." }
+    ],
+    "practice": {
+      "order": [
+        { "zh": "那是我的学校。", "es": "Aquella es mi escuela." },
+        { "zh": "你住在哪儿？", "es": "¿Dónde vives?" }
+      ],
+      "fill": [
+        { "zh": "＿是什么？", "answer": "这", "options": ["这", "这儿", "哪", "哪儿"], "es": "¿Qué es esto?" },
+        { "zh": "你去＿？", "answer": "哪儿", "options": ["哪儿", "哪", "这", "那"], "es": "¿Adónde vas?" }
+      ]
+    },
+    "related": ["measure-words", "question-words", "zai"],
+    "source": "https://resources.allsetlearning.com/chinese/grammar/Demonstrative_pronoun",
+    "reviewed": false
+  },
+  {
+    "id": "dates-time",
+    "title": "Fechas y horas",
+    "zh": "年 · 月 · 日/号 · 星期 · 点 · 分",
+    "pattern": "Año + 月 + 日 · 星期 + número · número + 点 (+ número + 分)",
+    "level": 1,
+    "summary": "De lo grande a lo pequeño: año → mes → día → hora → minuto. No hay nombres de meses: se numeran.",
+    "explanation": "**Fechas**: 2026年10月28日 = èr líng èr liù nián shí yuè èrshíbā rì. El año se lee cifra a cifra. En el habla, 日 rì se sustituye por **号 hào**.\n\n**Días de la semana**: 星期一 (lunes) … 星期六 (sábado); el domingo es 星期天 / 星期日.\n\n**Horas**: 点 diǎn (hora) y 分 fēn (minuto): 三点十分 (3:10). Media: 半 bàn (三点半). Las dos: 两点. Partes del día: 早上, 上午, 中午, 下午, 晚上.\n\n**Preguntar**: 今天几号？ 今天星期几？ 现在几点？\n\n⚠️ Las expresiones de tiempo van **antes del verbo** (o al principio): 我八点上课。",
+    "examples": [
+      { "zh": "今天是十月二十八号。", "py": "Jīntiān shì shí yuè èrshíbā hào.", "es": "Hoy es 28 de octubre." },
+      { "zh": "明天星期三。", "py": "Míngtiān xīngqīsān.", "es": "Mañana es miércoles." },
+      { "zh": "现在三点半。", "py": "Xiànzài sān diǎn bàn.", "es": "Son las tres y media." },
+      { "zh": "我早上七点起床。", "py": "Wǒ zǎoshang qī diǎn qǐchuáng.", "es": "Me levanto a las siete de la mañana." },
+      { "zh": "我们晚上六点吃饭。", "py": "Wǒmen wǎnshang liù diǎn chī fàn.", "es": "Cenamos a las seis de la tarde." },
+      { "zh": "你的生日是几月几号？", "py": "Nǐ de shēngrì shì jǐ yuè jǐ hào?", "es": "¿Qué día es tu cumpleaños?" }
+    ],
+    "mistakes": [
+      { "wrong": "二十八号十月", "right": "十月二十八号", "why": "Primero el mes, luego el día (de grande a pequeño)." },
+      { "wrong": "我起床七点。", "right": "我七点起床。", "why": "La hora va delante del verbo." },
+      { "wrong": "二点", "right": "两点", "why": "«Las dos» se dice 两点." }
+    ],
+    "practice": {
+      "order": [
+        { "zh": "我八点去学校。", "es": "Voy a la escuela a las ocho." },
+        { "zh": "今天星期五。", "es": "Hoy es viernes." },
+        { "zh": "我的生日是五月三号。", "es": "Mi cumpleaños es el 3 de mayo." }
+      ],
+      "fill": [
+        { "zh": "现在几＿？", "answer": "点", "options": ["点", "分", "号", "月"], "es": "¿Qué hora es?" },
+        { "zh": "今天星期＿？", "answer": "几", "options": ["几", "多少", "什么", "哪"], "es": "¿Qué día de la semana es hoy?" }
+      ]
+    },
+    "related": ["numbers", "word-order"],
+    "source": "https://resources.allsetlearning.com/chinese/grammar/Structure_of_dates",
+    "reviewed": false
+  },
+  {
+    "id": "tai-le",
+    "title": "太……了 y 不太",
+    "zh": "太……了 / 不太",
+    "pattern": "太 + Adjetivo + 了 · 不太 + Adjetivo",
+    "level": 1,
+    "summary": "太…了 = «demasiado / muy (con énfasis)»; 不太 = «no muy».",
+    "explanation": "**太 tài … 了 le** rodea al adjetivo y expresa exageración o énfasis, positivo o negativo: 太好了！ (*¡Genial!*), 太贵了。 (*Es demasiado caro*).\n\n**不太 bú tài** + adjetivo suaviza una negación: 不太好 (*no muy bien*), 不太贵 (*no muy caro*). Es la forma educada de decir que algo no te gusta.",
+    "examples": [
+      { "zh": "太好了！", "py": "Tài hǎo le!", "es": "¡Genial!" },
+      { "zh": "这个太贵了。", "py": "Zhège tài guì le.", "es": "Esto es demasiado caro." },
+      { "zh": "今天太热了。", "py": "Jīntiān tài rè le.", "es": "Hoy hace demasiado calor." },
+      { "zh": "我不太喜欢咖啡。", "py": "Wǒ bú tài xǐhuan kāfēi.", "es": "No me gusta mucho el café." },
+      { "zh": "汉语不太难。", "py": "Hànyǔ bú tài nán.", "es": "El chino no es muy difícil." }
+    ],
+    "mistakes": [
+      { "wrong": "太好。", "right": "太好了。", "why": "太 casi siempre va acompañado de 了 al final." },
+      { "wrong": "不太了好。", "right": "不太好。", "why": "Con 不太 no se usa 了." }
+    ],
+    "practice": {
+      "order": [
+        { "zh": "这个菜太好吃了。", "es": "Este plato está buenísimo." },
+        { "zh": "我今天不太忙。", "es": "Hoy no estoy muy ocupado." }
+      ],
+      "fill": [
+        { "zh": "这件衣服太贵＿。", "answer": "了", "options": ["了", "的", "吗", "呢"], "es": "Esta prenda es demasiado cara." },
+        { "zh": "他＿太高。", "answer": "不", "options": ["不", "没", "很", "太"], "es": "Él no es muy alto." }
+      ]
+    },
+    "related": ["hen-adj", "le"],
+    "source": "https://resources.allsetlearning.com/chinese/grammar/Expressing_%22excessively%22_with_%22tai%22",
+    "reviewed": false
+  },
+  {
+    "id": "hen-adj",
+    "title": "很 + adjetivo (y otros adverbios de grado)",
+    "zh": "很 · 非常 · 真 · 不",
+    "pattern": "Sujeto + 很 + Adjetivo",
+    "level": 1,
+    "summary": "Los adjetivos funcionan como verbos: no llevan 是, y en afirmativo suelen llevar 很 (casi sin significado).",
+    "explanation": "En chino el adjetivo ya es el predicado: 我忙 = «estoy ocupado». Pero una frase afirmativa con solo el adjetivo suena incompleta o comparativa, así que se añade **很 hěn**, que aquí apenas significa «muy»: 我很忙 = *estoy ocupado*.\n\n- Negación: 不 + adjetivo: 我不忙.\n- Pregunta: 你忙吗？ / 你忙不忙？\n- Para intensificar de verdad: **非常 fēicháng** (muy, sumamente), **真 zhēn** (realmente), **太…了**.",
+    "examples": [
+      { "zh": "我很忙。", "py": "Wǒ hěn máng.", "es": "Estoy ocupado." },
+      { "zh": "汉语很难吗？", "py": "Hànyǔ hěn nán ma?", "es": "¿Es difícil el chino?" },
+      { "zh": "今天天气很好。", "py": "Jīntiān tiānqì hěn hǎo.", "es": "Hoy hace buen tiempo." },
+      { "zh": "这个菜非常好吃。", "py": "Zhège cài fēicháng hǎochī.", "es": "Este plato está buenísimo." },
+      { "zh": "他真高！", "py": "Tā zhēn gāo!", "es": "¡Qué alto es!" },
+      { "zh": "我不累。", "py": "Wǒ bú lèi.", "es": "No estoy cansado." }
+    ],
+    "mistakes": [
+      { "wrong": "我是忙。", "right": "我很忙。", "why": "Los adjetivos no llevan 是." },
+      { "wrong": "他很不高。", "right": "他不高。/ 他不太高。", "why": "Para negar se usa 不 (o 不太); 很不 es muy enfático." }
+    ],
+    "practice": {
+      "order": [
+        { "zh": "我的老师很好。", "es": "Mi profesor es muy bueno." },
+        { "zh": "今天很冷。", "es": "Hoy hace frío." },
+        { "zh": "这个苹果非常大。", "es": "Esta manzana es muy grande." }
+      ],
+      "fill": [
+        { "zh": "我＿高兴。", "answer": "很", "options": ["很", "是", "有", "在"], "es": "Estoy contento." },
+        { "zh": "汉语＿难。", "answer": "不", "options": ["不", "没", "是", "吗"], "es": "El chino no es difícil." }
+      ]
+    },
+    "related": ["shi", "tai-le", "yidianr-youdianr"],
+    "source": "https://resources.allsetlearning.com/chinese/grammar/Simple_%22noun_%2B_adjective%22_sentences",
+    "reviewed": false
+  },
+  {
+    "id": "he",
+    "title": "和: «y» entre nombres",
+    "zh": "和",
+    "pattern": "Nombre + 和 + Nombre",
+    "level": 1,
+    "summary": "和 une nombres o pronombres, no frases ni verbos.",
+    "explanation": "**和 hé** = «y», pero solo para unir **nombres**: 我和你 (*tú y yo*), 茶和咖啡. Para unir dos frases o acciones no se usa 和: se ponen seguidas o se usa 也 / 还.\n\nOrden de cortesía: 你和我 (*tú y yo*), como en español.",
+    "examples": [
+      { "zh": "我和他是朋友。", "py": "Wǒ hé tā shì péngyou.", "es": "Él y yo somos amigos." },
+      { "zh": "我喜欢茶和咖啡。", "py": "Wǒ xǐhuan chá hé kāfēi.", "es": "Me gustan el té y el café." },
+      { "zh": "爸爸和妈妈都是老师。", "py": "Bàba hé māma dōu shì lǎoshī.", "es": "Papá y mamá son profesores." },
+      { "zh": "你和谁去？", "py": "Nǐ hé shéi qù?", "es": "¿Con quién vas?" }
+    ],
+    "mistakes": [
+      { "wrong": "我吃饭和看电视。", "right": "我吃饭，也看电视。", "why": "和 no une verbos ni frases." },
+      { "wrong": "我和忙。", "right": "我很忙。", "why": "和 solo une nombres." }
+    ],
+    "practice": {
+      "order": [
+        { "zh": "我和我的朋友去北京。", "es": "Mi amigo y yo vamos a Pekín." },
+        { "zh": "我要一杯茶和一个苹果。", "es": "Quiero un té y una manzana." }
+      ],
+      "fill": [
+        { "zh": "我＿你都是学生。", "answer": "和", "options": ["和", "也", "都", "很"], "es": "Tú y yo somos estudiantes." }
+      ]
+    },
+    "related": ["ye-dou"],
+    "source": "https://resources.allsetlearning.com/chinese/grammar/Expressing_%22and%22_with_%22he%22",
+    "reviewed": false
+  },
+  {
+    "id": "ye-dou",
+    "title": "也 y 都: «también» y «todos»",
+    "zh": "也 / 都",
+    "pattern": "Sujeto + 也/都 + Verbo",
+    "level": 1,
+    "summary": "也 (también) y 都 (todos) van siempre detrás del sujeto y delante del verbo; juntos: 也都.",
+    "explanation": "**也 yě** = también. **都 dōu** = todos/ambos (se refiere a lo que va delante). Los dos son adverbios y ocupan el hueco entre sujeto y verbo: 我**也**是学生。 他们**都**是中国人。\n\n- Juntos: 也 antes de 都: 我们也都喜欢。\n- Con negación: 也不 / 都不: 我也不去。\n\n⚠️ Nunca al principio ni al final: ~~也我是学生~~, ~~我是学生也~~.",
+    "examples": [
+      { "zh": "我也是学生。", "py": "Wǒ yě shì xuésheng.", "es": "Yo también soy estudiante." },
+      { "zh": "他们都是我的朋友。", "py": "Tāmen dōu shì wǒ de péngyou.", "es": "Todos ellos son mis amigos." },
+      { "zh": "我也不喜欢。", "py": "Wǒ yě bù xǐhuan.", "es": "A mí tampoco me gusta." },
+      { "zh": "我们都很好。", "py": "Wǒmen dōu hěn hǎo.", "es": "Todos estamos bien." },
+      { "zh": "他们也都去北京。", "py": "Tāmen yě dōu qù Běijīng.", "es": "Ellos también van todos a Pekín." }
+    ],
+    "mistakes": [
+      { "wrong": "也我喜欢。", "right": "我也喜欢。", "why": "也 va detrás del sujeto." },
+      { "wrong": "都他们是学生。", "right": "他们都是学生。", "why": "都 va detrás del sujeto." },
+      { "wrong": "我们都也去。", "right": "我们也都去。", "why": "Orden fijo: 也 antes de 都." }
+    ],
+    "practice": {
+      "order": [
+        { "zh": "我也喜欢中国菜。", "es": "A mí también me gusta la comida china." },
+        { "zh": "我们都是西班牙人。", "es": "Todos somos españoles." },
+        { "zh": "他们也都是学生。", "es": "Ellos también son todos estudiantes." }
+      ],
+      "fill": [
+        { "zh": "我＿是学生。", "answer": "也", "options": ["也", "都", "和", "很"], "es": "Yo también soy estudiante." },
+        { "zh": "他们＿是老师。", "answer": "都", "options": ["都", "也", "和", "是"], "es": "Todos ellos son profesores." }
+      ]
+    },
+    "related": ["he", "word-order"],
+    "source": "https://resources.allsetlearning.com/chinese/grammar/Expressing_%22also%22_with_%22ye%22",
+    "reviewed": false
+  },
+  {
+    "id": "word-order",
+    "title": "Orden de la frase: tiempo y lugar antes del verbo",
+    "zh": "语序",
+    "pattern": "Sujeto + Tiempo + Lugar + Verbo + Objeto",
+    "level": 1,
+    "summary": "El chino es SVO como el español, pero el cuándo y el dónde van ANTES del verbo.",
+    "explanation": "Esqueleto básico: **Sujeto + Verbo + Objeto** (我吃饭). Las diferencias con el español:\n\n1. **Tiempo** antes del verbo (o al principio de todo): 我**明天**去北京。 / **明天**我去北京。\n2. **Lugar** (在 + lugar) antes del verbo: 我**在家**吃饭。\n3. Orden entre ambos: tiempo → lugar → verbo: 我明天在学校学习。\n4. Adverbios (也, 都, 很, 不) también delante del verbo.\n\nTruco: en chino primero se sitúa la escena (cuándo, dónde) y luego pasa la acción.",
+    "examples": [
+      { "zh": "我今天在家学习。", "py": "Wǒ jīntiān zài jiā xuéxí.", "es": "Hoy estudio en casa." },
+      { "zh": "明天我去学校。", "py": "Míngtiān wǒ qù xuéxiào.", "es": "Mañana voy a la escuela." },
+      { "zh": "他每天早上喝咖啡。", "py": "Tā měi tiān zǎoshang hē kāfēi.", "es": "Él toma café cada mañana." },
+      { "zh": "我们晚上在饭店吃饭。", "py": "Wǒmen wǎnshang zài fàndiàn chī fàn.", "es": "Por la noche cenamos en el restaurante." },
+      { "zh": "我在北京学习汉语。", "py": "Wǒ zài Běijīng xuéxí Hànyǔ.", "es": "Estudio chino en Pekín." }
+    ],
+    "mistakes": [
+      { "wrong": "我去学校明天。", "right": "我明天去学校。", "why": "El tiempo va antes del verbo." },
+      { "wrong": "我学习在家。", "right": "我在家学习。", "why": "El lugar con 在 va antes del verbo." },
+      { "wrong": "我在学校明天学习。", "right": "我明天在学校学习。", "why": "Tiempo antes que lugar." }
+    ],
+    "practice": {
+      "order": [
+        { "zh": "我明天在家看书。", "es": "Mañana leo en casa." },
+        { "zh": "他晚上八点睡觉。", "es": "Él se acuesta a las ocho de la tarde." },
+        { "zh": "我们星期六去商店。", "es": "El sábado vamos a la tienda." }
+      ],
+      "fill": [
+        { "zh": "我＿去北京。", "answer": "明天", "options": ["明天", "去明天", "北京", "在"], "es": "Mañana voy a Pekín." }
+      ]
+    },
+    "related": ["zai", "dates-time", "ye-dou"],
+    "source": "https://resources.allsetlearning.com/chinese/grammar/Basic_sentence_order",
+    "reviewed": false
+  },
+  {
+    "id": "lai-qu",
+    "title": "来 y 去: venir e ir",
+    "zh": "来 / 去",
+    "pattern": "来/去 + Lugar · 来/去 + Verbo (finalidad)",
+    "level": 1,
+    "summary": "来 = hacia el hablante (venir); 去 = alejándose (ir). Pueden ir seguidos de un lugar o de otro verbo.",
+    "explanation": "- **去 qù + lugar**: ir a. 我去学校。 ⚠️ Sin preposición: no se dice ~~去到~~ ni ~~去在~~.\n- **来 lái + lugar**: venir a. 他来我家。\n- **去/来 + verbo**: ir/venir a hacer algo: 我去吃饭。 (*Voy a comer*), 来看看！ (*¡Ven a ver!*).\n- Preguntas: 你去哪儿？ 你什么时候来？\n- 回 huí (volver) funciona igual: 回家, 回国.",
+    "examples": [
+      { "zh": "我去学校。", "py": "Wǒ qù xuéxiào.", "es": "Voy a la escuela." },
+      { "zh": "你来我家吧！", "py": "Nǐ lái wǒ jiā ba!", "es": "¡Ven a mi casa!" },
+      { "zh": "我们去吃饭吧。", "py": "Wǒmen qù chī fàn ba.", "es": "Vamos a comer." },
+      { "zh": "他明天来北京。", "py": "Tā míngtiān lái Běijīng.", "es": "Mañana viene a Pekín." },
+      { "zh": "你去哪儿？—我回家。", "py": "Nǐ qù nǎr? — Wǒ huí jiā.", "es": "¿Adónde vas? —Vuelvo a casa." }
+    ],
+    "mistakes": [
+      { "wrong": "我去到学校。", "right": "我去学校。", "why": "去 lleva el lugar directamente, sin 到 ni 在." },
+      { "wrong": "我去在中国。", "right": "我去中国。", "why": "Igual: sin 在." }
+    ],
+    "practice": {
+      "order": [
+        { "zh": "我明天去北京。", "es": "Mañana voy a Pekín." },
+        { "zh": "你来我家吃饭吧。", "es": "Ven a comer a mi casa." }
+      ],
+      "fill": [
+        { "zh": "我＿商店买东西。", "answer": "去", "options": ["去", "来", "在", "到"], "es": "Voy a la tienda a comprar cosas." },
+        { "zh": "你什么时候＿我家？", "answer": "来", "options": ["来", "去", "在", "回"], "es": "¿Cuándo vienes a mi casa?" }
+      ]
+    },
+    "related": ["zai", "word-order"],
+    "source": "https://resources.allsetlearning.com/chinese/grammar/Expressing_%22to_go%22_with_%22qu%22",
+    "reviewed": false
+  },
+  {
+    "id": "yidianr-youdianr",
+    "title": "一点儿 vs 有点儿",
+    "zh": "一点儿 / 有点儿",
+    "pattern": "Verbo/Adj + 一点儿 + Nombre · 有点儿 + Adjetivo (negativo)",
+    "level": 1,
+    "summary": "一点儿 = «un poco (de)» tras verbo o adjetivo; 有点儿 = «un poco / algo» delante de un adjetivo con matiz negativo.",
+    "explanation": "- **一点儿 yìdiǎnr** va **detrás** del verbo o adjetivo y suele acompañar a un nombre: 喝一点儿水 (*beber un poco de agua*), 说一点儿汉语. También en comparaciones: 便宜一点儿 (*un poco más barato*).\n- **有点儿 yǒudiǎnr** va **delante** de un adjetivo y expresa una queja o algo no deseado: 有点儿贵 (*es un poco caro*), 有点儿累 (*estoy algo cansado*).\n\nTruco: 有点儿 = «un poco… y no me gusta»; 一点儿 = cantidad pequeña.",
+    "examples": [
+      { "zh": "我会说一点儿汉语。", "py": "Wǒ huì shuō yìdiǎnr Hànyǔ.", "es": "Sé hablar un poco de chino." },
+      { "zh": "请给我一点儿水。", "py": "Qǐng gěi wǒ yìdiǎnr shuǐ.", "es": "Dame un poco de agua, por favor." },
+      { "zh": "这个有点儿贵。", "py": "Zhège yǒudiǎnr guì.", "es": "Esto es un poco caro." },
+      { "zh": "我今天有点儿累。", "py": "Wǒ jīntiān yǒudiǎnr lèi.", "es": "Hoy estoy un poco cansado." },
+      { "zh": "便宜一点儿吧！", "py": "Piányi yìdiǎnr ba!", "es": "¡Un poco más barato, anda!" }
+    ],
+    "mistakes": [
+      { "wrong": "这个一点儿贵。", "right": "这个有点儿贵。", "why": "Delante de un adjetivo (queja) se usa 有点儿." },
+      { "wrong": "我有点儿会说汉语。", "right": "我会说一点儿汉语。", "why": "Cantidad pequeña tras el verbo: 一点儿." }
+    ],
+    "practice": {
+      "order": [
+        { "zh": "我想喝一点儿茶。", "es": "Quiero beber un poco de té." },
+        { "zh": "今天有点儿冷。", "es": "Hoy hace un poco de frío." }
+      ],
+      "fill": [
+        { "zh": "这个菜＿辣。", "answer": "有点儿", "options": ["有点儿", "一点儿", "很多", "太"], "es": "Este plato pica un poco." },
+        { "zh": "我会写＿汉字。", "answer": "一点儿", "options": ["一点儿", "有点儿", "太", "都"], "es": "Sé escribir algunos caracteres." }
+      ]
+    },
+    "related": ["hen-adj", "tai-le"],
+    "source": "https://resources.allsetlearning.com/chinese/grammar/Comparing_%22yidian%22_and_%22youdian%22",
+    "reviewed": false
+  },
+  {
+    "id": "reduplication",
+    "title": "Reduplicación de verbos: 看看, 试试",
+    "zh": "动词重叠 AA / ABAB / A一A",
+    "pattern": "Verbo + Verbo · Verbo + 一 + Verbo",
+    "level": 1,
+    "summary": "Repetir el verbo suaviza la acción: «echar un vistazo», «probar un poco», de forma relajada o amable.",
+    "explanation": "Repetir un verbo monosílabo (**看看, 听听, 试试, 坐坐**) o bisílabo (**休息休息, 学习学习**) añade la idea de «un poco», «brevemente», «a ver». Es muy común en sugerencias e invitaciones.\n\n- Con 一 en medio: 看一看 = 看看.\n- Con 一下 (ver «一下») se consigue lo mismo: 看一下.\n- El segundo verbo se pronuncia en tono neutro: kànkan.",
+    "examples": [
+      { "zh": "我看看。", "py": "Wǒ kànkan.", "es": "Déjame ver." },
+      { "zh": "你试试这件衣服。", "py": "Nǐ shìshi zhè jiàn yīfu.", "es": "Pruébate esta prenda." },
+      { "zh": "我们休息休息吧。", "py": "Wǒmen xiūxi xiūxi ba.", "es": "Descansemos un rato." },
+      { "zh": "你听听这个歌。", "py": "Nǐ tīngting zhège gē.", "es": "Escucha esta canción." },
+      { "zh": "请坐坐。", "py": "Qǐng zuòzuo.", "es": "Siéntate un rato, por favor." }
+    ],
+    "mistakes": [
+      { "wrong": "我看看了那本书。", "right": "我看了看那本书。", "why": "Con 了 se intercala: 看了看." },
+      { "wrong": "休休息息", "right": "休息休息", "why": "Los bisílabos se repiten enteros (ABAB)." }
+    ],
+    "practice": {
+      "order": [
+        { "zh": "你看看这个。", "es": "Mira esto." },
+        { "zh": "我们去走走吧。", "es": "Vamos a dar un paseo." }
+      ],
+      "fill": [
+        { "zh": "你＿这个菜，很好吃。", "answer": "试试", "options": ["试试", "试了", "试吗", "试的"], "es": "Prueba este plato, está muy bueno." }
+      ]
+    },
+    "related": ["yixia", "ba"],
+    "source": "https://resources.allsetlearning.com/chinese/grammar/Reduplication_of_verbs",
+    "reviewed": false
+  },
+  {
+    "id": "yixia",
+    "title": "Verbo + 一下",
+    "zh": "……一下",
+    "pattern": "Verbo + 一下 (+ Objeto)",
+    "level": 1,
+    "summary": "一下 tras el verbo = «un momento, un poco»; suaviza peticiones.",
+    "explanation": "**一下 yíxià** detrás del verbo indica una acción breve o casual, y hace la frase más amable: 等一下 (*espera un momento*), 看一下 (*echa un vistazo*), 介绍一下 (*presentar brevemente*). Equivale a la reduplicación del verbo.",
+    "examples": [
+      { "zh": "请等一下。", "py": "Qǐng děng yíxià.", "es": "Espera un momento, por favor." },
+      { "zh": "我介绍一下，这是我的朋友。", "py": "Wǒ jièshào yíxià, zhè shì wǒ de péngyou.", "es": "Os presento: este es mi amigo." },
+      { "zh": "你看一下这个。", "py": "Nǐ kàn yíxià zhège.", "es": "Mira esto un momento." },
+      { "zh": "我休息一下。", "py": "Wǒ xiūxi yíxià.", "es": "Descanso un rato." }
+    ],
+    "mistakes": [
+      { "wrong": "一下等。", "right": "等一下。", "why": "一下 va detrás del verbo." },
+      { "wrong": "请一下坐。", "right": "请坐一下。", "why": "Verbo primero, 一下 después." }
+    ],
+    "practice": {
+      "order": [
+        { "zh": "请你等一下。", "es": "Espera un momento, por favor." },
+        { "zh": "我们休息一下吧。", "es": "Descansemos un rato." }
+      ],
+      "fill": [
+        { "zh": "请看＿这本书。", "answer": "一下", "options": ["一下", "一点儿", "有点儿", "一个"], "es": "Echa un vistazo a este libro, por favor." }
+      ]
+    },
+    "related": ["reduplication", "qing"],
+    "source": "https://resources.allsetlearning.com/chinese/grammar/Softening_verbs_with_%22yixia%22",
+    "reviewed": false
+  },
+  {
+    "id": "shi-de",
+    "title": "是……的 (destacar cuándo, dónde o cómo)",
+    "zh": "是……的",
+    "pattern": "Sujeto + 是 + [tiempo/lugar/manera] + Verbo + 的",
+    "level": 1,
+    "summary": "Para hablar de una acción pasada ya conocida y destacar un detalle (cuándo, dónde, cómo, con quién).",
+    "explanation": "Cuando ya se sabe que algo ocurrió y lo que interesa es **el detalle**, se usa **是 … 的**: 你是什么时候来的？ (*¿Cuándo viniste?*). El detalle va entre 是 y el verbo; 的 cierra la frase.\n\n- Tiempo: 我是去年来的。\n- Lugar: 他是在北京出生的。\n- Manera: 我是坐飞机来的。\n\n是 puede omitirse en afirmativo (我昨天来的), pero no en la negación: 不是…的.",
+    "examples": [
+      { "zh": "你是什么时候来中国的？", "py": "Nǐ shì shénme shíhou lái Zhōngguó de?", "es": "¿Cuándo viniste a China?" },
+      { "zh": "我是去年来的。", "py": "Wǒ shì qùnián lái de.", "es": "Vine el año pasado." },
+      { "zh": "他是在哪儿学的汉语？", "py": "Tā shì zài nǎr xué de Hànyǔ?", "es": "¿Dónde aprendió chino?" },
+      { "zh": "我是坐飞机来的。", "py": "Wǒ shì zuò fēijī lái de.", "es": "Vine en avión." },
+      { "zh": "这是我妈妈做的。", "py": "Zhè shì wǒ māma zuò de.", "es": "Esto lo hizo mi madre." }
+    ],
+    "mistakes": [
+      { "wrong": "你什么时候来中国了？", "right": "你是什么时候来中国的？", "why": "Para preguntar por el detalle de una acción pasada conocida se usa 是…的, no 了." },
+      { "wrong": "我是来的去年。", "right": "我是去年来的。", "why": "El detalle (去年) va entre 是 y el verbo." }
+    ],
+    "practice": {
+      "order": [
+        { "zh": "我是去年来的。", "es": "Vine el año pasado." },
+        { "zh": "你是怎么来的？", "es": "¿Cómo has venido?" }
+      ],
+      "fill": [
+        { "zh": "他是在北京出生＿。", "answer": "的", "options": ["的", "了", "吗", "呢"], "es": "Él nació en Pekín." }
+      ]
+    },
+    "related": ["le", "question-words"],
+    "source": "https://resources.allsetlearning.com/chinese/grammar/The_%22shi..._de%22_construction_for_indicating_purpose",
+    "reviewed": false
+  },
+  {
+    "id": "qing",
+    "title": "Peticiones con 请",
+    "zh": "请……",
+    "pattern": "请 + (Persona) + Verbo",
+    "level": 1,
+    "summary": "请 al principio convierte una orden en una petición amable: «por favor, …».",
+    "explanation": "**请 qǐng** = «por favor» (literalmente «invitar/rogar»). Va al principio, antes del verbo: 请坐 (*siéntese*), 请进 (*pase*), 请问 (*disculpe, una pregunta*).\n\nTambién es el verbo «invitar»: 我请你吃饭。 (*Te invito a comer*).\n\nSe combina con 一下 o la reduplicación para suavizar más: 请等一下.",
+    "examples": [
+      { "zh": "请坐。", "py": "Qǐng zuò.", "es": "Siéntese, por favor." },
+      { "zh": "请进！", "py": "Qǐng jìn!", "es": "¡Pase!" },
+      { "zh": "请问，洗手间在哪儿？", "py": "Qǐngwèn, xǐshǒujiān zài nǎr?", "es": "Disculpe, ¿dónde está el baño?" },
+      { "zh": "请说慢一点儿。", "py": "Qǐng shuō màn yìdiǎnr.", "es": "Hable más despacio, por favor." },
+      { "zh": "今天我请你喝咖啡。", "py": "Jīntiān wǒ qǐng nǐ hē kāfēi.", "es": "Hoy te invito a un café." }
+    ],
+    "mistakes": [
+      { "wrong": "坐请。", "right": "请坐。", "why": "请 va delante del verbo." },
+      { "wrong": "请你是老师吗？", "right": "请问，你是老师吗？", "why": "Para introducir una pregunta se usa 请问." }
+    ],
+    "practice": {
+      "order": [
+        { "zh": "请给我一杯水。", "es": "Dame un vaso de agua, por favor." },
+        { "zh": "请问，这个多少钱？", "es": "Disculpe, ¿cuánto cuesta esto?" }
+      ],
+      "fill": [
+        { "zh": "＿坐，＿喝茶。", "answer": "请", "options": ["请", "要", "会", "给"], "es": "Siéntese, tome té." }
+      ]
+    },
+    "related": ["gei", "yixia"],
+    "source": "https://resources.allsetlearning.com/chinese/grammar/Polite_requests_with_%22qing%22",
+    "reviewed": false
+  },
+  {
+    "id": "gei",
+    "title": "给: dar y «a / para alguien»",
+    "zh": "给",
+    "pattern": "A + 给 + B + Cosa · A + 给 + B + Verbo",
+    "level": 1,
+    "summary": "给 es el verbo «dar» (con dos objetos) y también la preposición «a / para» delante del verbo.",
+    "explanation": "1. **Verbo «dar»**: 给 + persona + cosa: 他给我一本书。 (*Él me da un libro*).\n2. **Preposición «a / para»** delante del verbo: 我给你打电话。 (*Te llamo*), 妈妈给我做饭。 (*Mamá me cocina*).\n\n⚠️ Como en 在, la parte con 给 va ANTES del verbo principal.",
+    "examples": [
+      { "zh": "请给我一杯茶。", "py": "Qǐng gěi wǒ yì bēi chá.", "es": "Dame un té, por favor." },
+      { "zh": "他给我一本书。", "py": "Tā gěi wǒ yì běn shū.", "es": "Él me dio un libro." },
+      { "zh": "我给你打电话。", "py": "Wǒ gěi nǐ dǎ diànhuà.", "es": "Te llamo por teléfono." },
+      { "zh": "妈妈给我做饭。", "py": "Māma gěi wǒ zuò fàn.", "es": "Mi madre me prepara la comida." },
+      { "zh": "这是给你的。", "py": "Zhè shì gěi nǐ de.", "es": "Esto es para ti." }
+    ],
+    "mistakes": [
+      { "wrong": "我打电话给你。（se oye, pero no es el orden estándar）", "right": "我给你打电话。", "why": "给 + persona va antes del verbo." },
+      { "wrong": "他给一本书我。", "right": "他给我一本书。", "why": "Primero la persona, luego la cosa." }
+    ],
+    "practice": {
+      "order": [
+        { "zh": "我给你买一个苹果。", "es": "Te compro una manzana." },
+        { "zh": "老师给我们一本书。", "es": "El profesor nos da un libro." }
+      ],
+      "fill": [
+        { "zh": "请＿我一杯水。", "answer": "给", "options": ["给", "在", "是", "有"], "es": "Dame un vaso de agua, por favor." }
+      ]
+    },
+    "related": ["qing", "word-order"],
+    "source": "https://resources.allsetlearning.com/chinese/grammar/Expressing_%22for%22_with_%22gei%22",
+    "reviewed": false
+  },
+  {
+    "id": "complements",
+    "title": "Complementos sencillos: 看见, 听懂, 做完, 说得好",
+    "zh": "补语：见 · 懂 · 完 · 得",
+    "pattern": "Verbo + 见/懂/完 · Verbo + 得 + Adjetivo",
+    "level": 1,
+    "summary": "Un segundo elemento tras el verbo indica el resultado (ver → haber visto, entender) o cómo se hace la acción (得).",
+    "explanation": "**Complementos de resultado** (se niegan con 没):\n- 看见 kànjiàn = ver (llegar a ver). 听见 = oír.\n- 听懂 tīngdǒng / 看懂 = entender (al oír / leer).\n- 做完 zuòwán / 吃完 = terminar de hacer / comer.\n\n**Complemento de grado con 得 de**: Verbo + 得 + 很/不 + adjetivo, para decir cómo se hace algo: 他说得很好。 (*Habla muy bien*). Si hay objeto, se repite el verbo: 他说汉语说得很好。",
+    "examples": [
+      { "zh": "我看见他了。", "py": "Wǒ kànjiàn tā le.", "es": "Lo vi." },
+      { "zh": "你听懂了吗？", "py": "Nǐ tīngdǒng le ma?", "es": "¿Lo has entendido?" },
+      { "zh": "我没听懂。", "py": "Wǒ méi tīngdǒng.", "es": "No lo he entendido." },
+      { "zh": "我吃完了。", "py": "Wǒ chīwán le.", "es": "He terminado de comer." },
+      { "zh": "他说得很好。", "py": "Tā shuō de hěn hǎo.", "es": "Habla muy bien." },
+      { "zh": "你汉语说得真好！", "py": "Nǐ Hànyǔ shuō de zhēn hǎo!", "es": "¡Hablas chino muy bien!" }
+    ],
+    "mistakes": [
+      { "wrong": "我不听懂。", "right": "我没听懂。/ 我听不懂。", "why": "Un resultado no logrado se niega con 没 (o con la forma 听不懂)." },
+      { "wrong": "他说很好。", "right": "他说得很好。", "why": "Para «hablar bien» hace falta 得." }
+    ],
+    "practice": {
+      "order": [
+        { "zh": "我听懂了。", "es": "Lo he entendido." },
+        { "zh": "他汉语说得很好。", "es": "Habla chino muy bien." }
+      ],
+      "fill": [
+        { "zh": "我没看＿他。", "answer": "见", "options": ["见", "懂", "完", "得"], "es": "No lo he visto." },
+        { "zh": "你写＿很好。", "answer": "得", "options": ["得", "的", "了", "见"], "es": "Escribes muy bien." }
+      ]
+    },
+    "related": ["le", "bu-mei"],
+    "source": "https://resources.allsetlearning.com/chinese/grammar/Result_complement",
+    "reviewed": false
+  },
+  {
+    "id": "mei",
+    "title": "每: cada",
+    "zh": "每……(都)",
+    "pattern": "每 + Clasificador/Tiempo + Nombre (+ 都)",
+    "level": 1,
+    "summary": "每 = cada; suele ir acompañado de 都 antes del verbo.",
+    "explanation": "**每 měi** se pone delante del clasificador o de una unidad de tiempo: 每个人 (*cada persona*), 每天 (*cada día*), 每年, 每个星期. Como se refiere a «todos los…», el verbo suele llevar **都**: 我每天都学习汉语。\n\n天 y 年 no necesitan clasificador: 每天, 每年 (pero 每个月, 每个星期).",
+    "examples": [
+      { "zh": "我每天都学习汉语。", "py": "Wǒ měi tiān dōu xuéxí Hànyǔ.", "es": "Estudio chino todos los días." },
+      { "zh": "每个人都有名字。", "py": "Měi ge rén dōu yǒu míngzi.", "es": "Cada persona tiene un nombre." },
+      { "zh": "他每个星期六都去商店。", "py": "Tā měi ge xīngqīliù dōu qù shāngdiàn.", "es": "Va a la tienda todos los sábados." },
+      { "zh": "我每天早上喝咖啡。", "py": "Wǒ měi tiān zǎoshang hē kāfēi.", "es": "Tomo café cada mañana." }
+    ],
+    "mistakes": [
+      { "wrong": "每人都来了。（coloquial）", "right": "每个人都来了。", "why": "Normalmente 每 necesita clasificador (salvo 天, 年)." },
+      { "wrong": "每个天", "right": "每天", "why": "天 va directamente tras 每." }
+    ],
+    "practice": {
+      "order": [
+        { "zh": "我每天都看书。", "es": "Leo todos los días." },
+        { "zh": "每个学生都有书。", "es": "Cada estudiante tiene un libro." }
+      ],
+      "fill": [
+        { "zh": "我每天＿去学校。", "answer": "都", "options": ["都", "也", "和", "很"], "es": "Voy a la escuela todos los días." }
+      ]
+    },
+    "related": ["ye-dou", "measure-words"],
+    "source": "https://resources.allsetlearning.com/chinese/grammar/Expressing_%22every%22_with_%22mei%22",
+    "reviewed": false
+  },
+  {
+    "id": "price-age",
+    "title": "Preguntar precios y edades",
+    "zh": "多少钱 · 几岁 · 多大",
+    "pattern": "……多少钱？ · 你几岁？ · 你多大？ · 您多大年纪？",
+    "level": 1,
+    "summary": "多少钱 para precios; 几岁 (niños), 多大 (jóvenes/adultos), 多大年纪 (mayores) para la edad.",
+    "explanation": "**Precio**: 这个多少钱？ Respuesta: 五十块（钱）。 Coloquial: 块 kuài = 元 yuán; 毛 máo = 角 jiǎo (décimas). 十块五 = 10,5 yuanes.\n\n**Edad**:\n- 你几岁？ → a niños pequeños (<10).\n- 你多大？ → a jóvenes y adultos.\n- 您多大年纪？ → a personas mayores (respetuoso).\nRespuesta: 我二十岁。 (sin verbo 是).",
+    "examples": [
+      { "zh": "这个多少钱？—十五块。", "py": "Zhège duōshao qián? — Shíwǔ kuài.", "es": "¿Cuánto cuesta esto? —Quince yuanes." },
+      { "zh": "一杯咖啡二十八块钱。", "py": "Yì bēi kāfēi èrshíbā kuài qián.", "es": "Un café cuesta 28 yuanes." },
+      { "zh": "你多大？—我二十三岁。", "py": "Nǐ duō dà? — Wǒ èrshísān suì.", "es": "¿Cuántos años tienes? —Veintitrés." },
+      { "zh": "你弟弟几岁？", "py": "Nǐ dìdi jǐ suì?", "es": "¿Cuántos años tiene tu hermano pequeño?" },
+      { "zh": "您多大年纪？", "py": "Nín duō dà niánjì?", "es": "¿Qué edad tiene usted?" }
+    ],
+    "mistakes": [
+      { "wrong": "我是二十岁。", "right": "我二十岁。", "why": "La edad se dice sin 是." },
+      { "wrong": "你几岁？（a un adulto）", "right": "你多大？", "why": "几岁 es para niños pequeños." },
+      { "wrong": "多少钱这个？", "right": "这个多少钱？", "why": "El objeto va primero." }
+    ],
+    "practice": {
+      "order": [
+        { "zh": "这本书多少钱？", "es": "¿Cuánto cuesta este libro?" },
+        { "zh": "我妹妹十二岁。", "es": "Mi hermana menor tiene doce años." }
+      ],
+      "fill": [
+        { "zh": "你＿大？", "answer": "多", "options": ["多", "几", "什么", "怎么"], "es": "¿Cuántos años tienes?" },
+        { "zh": "一杯茶＿钱？", "answer": "多少", "options": ["多少", "几", "多", "什么"], "es": "¿Cuánto cuesta un té?" }
+      ]
+    },
+    "related": ["numbers", "question-words", "measure-words"],
+    "source": "https://resources.allsetlearning.com/chinese/grammar/Asking_about_age",
+    "reviewed": false
+  }
+]

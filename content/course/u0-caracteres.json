@@ -1,0 +1,117 @@
+{
+  "id": "u0-chars",
+  "order": 1,
+  "title": "Caracteres: trazos y radicales",
+  "zh": "汉字入门",
+  "description": "Los 8 trazos básicos, las reglas del orden de trazos y los 50 radicales más útiles para leer el HSK 1 por componentes.",
+  "icon": "Brush",
+  "level": 0,
+  "lessons": [
+    {
+      "id": "u0c-l1",
+      "title": "Trazos básicos y orden de trazos",
+      "zh": "笔画与笔顺",
+      "goal": "Escribir cualquier carácter sencillo en el orden correcto.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "一", "pinyin": "yī", "es": "uno" },
+        { "hanzi": "二", "pinyin": "èr", "es": "dos" },
+        { "hanzi": "三", "pinyin": "sān", "es": "tres" },
+        { "hanzi": "十", "pinyin": "shí", "es": "diez" },
+        { "hanzi": "人", "pinyin": "rén", "es": "persona" },
+        { "hanzi": "大", "pinyin": "dà", "es": "grande" },
+        { "hanzi": "小", "pinyin": "xiǎo", "es": "pequeño" },
+        { "hanzi": "口", "pinyin": "kǒu", "es": "boca" }
+      ],
+      "steps": [
+        {
+          "type": "explain",
+          "title": "Los caracteres no se dibujan: se escriben",
+          "markdown": "Cada carácter se compone de **trazos** en un **orden fijo**. Aprender el orden no es un capricho: hace que el carácter quede proporcionado, que lo reconozcas escrito a mano y que lo recuerdes mejor (la memoria motora ayuda).\n\nTodo carácter cabe en un cuadrado imaginario (田字格). Las 8 formas básicas de trazo y las reglas de orden están en el paso siguiente. Luego practicarás con Hanzi Writer, que te corrige trazo a trazo."
+        },
+        { "type": "strokes" },
+        { "type": "exercises", "count": 6, "types": ["writing", "similar-characters", "choose-meaning"] }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "u0c-l2",
+      "title": "Radicales (1): personas, cuerpo y naturaleza",
+      "zh": "部首（一）",
+      "goal": "Reconocer 18 radicales muy frecuentes y qué significado aportan.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "女", "pinyin": "nǚ", "es": "mujer" },
+        { "hanzi": "子", "pinyin": "zǐ", "es": "hijo; niño" },
+        { "hanzi": "日", "pinyin": "rì", "es": "sol; día" },
+        { "hanzi": "月", "pinyin": "yuè", "es": "luna; mes" },
+        { "hanzi": "水", "pinyin": "shuǐ", "es": "agua" },
+        { "hanzi": "火", "pinyin": "huǒ", "es": "fuego" },
+        { "hanzi": "木", "pinyin": "mù", "es": "árbol; madera" },
+        { "hanzi": "土", "pinyin": "tǔ", "es": "tierra" }
+      ],
+      "steps": [
+        {
+          "type": "explain",
+          "title": "Un carácter = componentes con sentido",
+          "markdown": "Más del 80 % de los caracteres son **pictofonéticos**: un componente da una pista del **significado** (el radical) y otro del **sonido**. Ejemplo: 妈 mā = 女 (mujer) + 马 mǎ (sonido). 吗 ma = 口 (boca: partícula hablada) + 马.\n\nAprender los radicales convierte los caracteres de «dibujos aleatorios» en **puzles lógicos**. Hay 214, pero con unos 50 cubres la mayoría del HSK 1–3.\n\nEn esta lección: personas, cuerpo y naturaleza. Pulsa cada radical para ver sus variantes (氵 es 水, 亻 es 人) y los caracteres HSK que lo llevan."
+        },
+        { "type": "radicals", "radicals": ["人", "女", "子", "口", "心", "手", "目", "耳", "足", "日", "月", "水", "火", "木", "土", "山", "雨", "田"] },
+        { "type": "exercises", "count": 8, "types": ["component", "choose-meaning", "writing", "build-character"] }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "u0c-l3",
+      "title": "Radicales (2): acciones, objetos y gramática",
+      "zh": "部首（二）",
+      "goal": "Reconocer otros 18 radicales frecuentes: hablar, caminar, comer, metal, seda, puerta…",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "门", "pinyin": "mén", "es": "puerta" },
+        { "hanzi": "车", "pinyin": "chē", "es": "vehículo" },
+        { "hanzi": "马", "pinyin": "mǎ", "es": "caballo" },
+        { "hanzi": "鱼", "pinyin": "yú", "es": "pez" },
+        { "hanzi": "刀", "pinyin": "dāo", "es": "cuchillo" },
+        { "hanzi": "力", "pinyin": "lì", "es": "fuerza" },
+        { "hanzi": "王", "pinyin": "wáng", "es": "rey" },
+        { "hanzi": "米", "pinyin": "mǐ", "es": "arroz" }
+      ],
+      "steps": [
+        {
+          "type": "explain",
+          "title": "Radicales que casi siempre aparecen «comprimidos»",
+          "markdown": "Muchos radicales cambian de forma cuando van a la izquierda: 言 → 讠 (hablar: 说, 请, 谢), 辵 → 辶 (caminar: 这, 进, 远), 食 → 饣 (comer: 饭, 饿), 金 → 钅 (metal: 钱, 铁), 糸 → 纟 (seda/hilo: 红, 纸).\n\nReconocerlos te dice de qué va el carácter antes de saber leerlo: 钱 (dinero) lleva 钅 porque las monedas eran de metal; 饭 (comida) lleva 饣."
+        },
+        { "type": "radicals", "radicals": ["言", "辵", "食", "金", "糸", "门", "车", "马", "刀", "力", "玉", "米", "艸", "竹", "衣", "贝", "寸", "示"] },
+        { "type": "exercises", "count": 8, "types": ["component", "similar-characters", "writing", "build-character"] }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "u0c-l4",
+      "title": "Radicales (3): posición, recintos y otros útiles",
+      "zh": "部首（三）",
+      "goal": "Completar los ~50 radicales más útiles y entender su posición dentro del carácter.",
+      "minutes": 10,
+      "vocab": [
+        { "hanzi": "大", "pinyin": "dà", "es": "grande" },
+        { "hanzi": "工", "pinyin": "gōng", "es": "trabajo" },
+        { "hanzi": "白", "pinyin": "bái", "es": "blanco" },
+        { "hanzi": "生", "pinyin": "shēng", "es": "nacer; vida" },
+        { "hanzi": "立", "pinyin": "lì", "es": "estar de pie" },
+        { "hanzi": "牛", "pinyin": "niú", "es": "vaca" }
+      ],
+      "steps": [
+        {
+          "type": "explain",
+          "title": "Dónde se coloca el radical",
+          "markdown": "El radical puede ir a la **izquierda** (妈, 说), **arriba** (花, 家: 宀 techo), **abajo** (想: 心 corazón), o **rodeando** (国: 囗 recinto; 这: 辶 camino). Conocer la posición típica ayuda a descomponer un carácter desconocido y a buscarlo en el diccionario por radical.\n\nCon estos ya tienes los ~50 radicales que más aparecen en el HSK. El resto los verás al encontrártelos: la ficha de cada carácter siempre muestra su descomposición."
+        },
+        { "type": "radicals", "radicals": ["大", "宀", "广", "囗", "门", "工", "白", "生", "立", "牛", "犬", "虫", "鸟", "又", "厂", "八", "几", "十"] },
+        { "type": "exercises", "count": 8, "types": ["component", "build-character", "writing", "similar-characters"] }
+      ],
+      "reviewed": false
+    }
+  ]
+}

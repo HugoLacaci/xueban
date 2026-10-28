@@ -1,0 +1,167 @@
+{
+  "id": "u08",
+  "order": 9,
+  "title": "Transporte",
+  "zh": "交通",
+  "description": "Moverte por la ciudad: metro, autobús, taxi, DiDi, tren y avión. Preguntar cómo ir y cuánto se tarda.",
+  "icon": "TrainFront",
+  "level": 1,
+  "category": "Transporte",
+  "checkpoint": { "exercises": 15 },
+  "lessons": [
+    {
+      "id": "u08-l1",
+      "title": "¿Cómo vas? Metro, autobús y taxi",
+      "zh": "坐地铁",
+      "goal": "Decir en qué medio de transporte vas con 坐 y 开.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "坐", "pinyin": "zuò", "es": "sentarse; ir en (transporte)" },
+        { "hanzi": "地铁", "pinyin": "dìtiě", "es": "metro" },
+        { "hanzi": "公共汽车", "pinyin": "gōnggòng qìchē", "es": "autobús" },
+        { "hanzi": "出租车", "pinyin": "chūzūchē", "es": "taxi" },
+        { "hanzi": "车", "pinyin": "chē", "es": "coche; vehículo" },
+        { "hanzi": "开车", "pinyin": "kāichē", "es": "conducir" },
+        { "hanzi": "怎么", "pinyin": "zěnme", "es": "cómo" },
+        { "hanzi": "滴滴", "pinyin": "Dīdī", "es": "DiDi (app de taxis y VTC)" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "坐 + transporte = ir en…" },
+        {
+          "type": "dialogue",
+          "title": "Después de clase",
+          "lines": [
+            { "speaker": "王明", "zh": "雨果，你怎么去学校？", "py": "Yǔguǒ, nǐ zěnme qù xuéxiào?", "es": "Hugo, ¿cómo vas a la escuela?" },
+            { "speaker": "雨果", "zh": "我坐地铁去学校。你呢？", "py": "Wǒ zuò dìtiě qù xuéxiào. Nǐ ne?", "es": "Voy a la escuela en metro. ¿Y tú?" },
+            { "speaker": "王明", "zh": "我坐公共汽车。我不喜欢坐地铁，人太多了。", "py": "Wǒ zuò gōnggòng qìchē. Wǒ bù xǐhuan zuò dìtiě, rén tài duō le.", "es": "Yo voy en autobús. No me gusta ir en metro, hay demasiada gente." },
+            { "speaker": "雨果", "zh": "你会开车吗？", "py": "Nǐ huì kāichē ma?", "es": "¿Sabes conducir?" },
+            { "speaker": "王明", "zh": "我会，但是我没有车。晚上我坐出租车，或者用滴滴。", "py": "Wǒ huì, dànshì wǒ méiyǒu chē. Wǎnshang wǒ zuò chūzūchē, huòzhě yòng Dīdī.", "es": "Sí, pero no tengo coche. Por la noche cojo un taxi o uso DiDi." }
+          ],
+          "notes": "但是 dànshì (pero), 或者 huòzhě (o) y 用 yòng (usar) aparecen como adelanto. 滴滴 Dīdī es la app más usada en China para pedir taxi o coche con conductor: la necesitarás en Shanghái."
+        },
+        { "type": "grammar", "id": "word-order" },
+        { "type": "exercises", "count": 10, "types": ["choose-meaning", "listen-choose", "order-words", "fill-blank", "pinyin-input", "tone-choice", "matching", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "u08-l2",
+      "title": "Ir, venir y volver",
+      "zh": "去、来、回",
+      "goal": "Usar 去/来/回 + lugar y preguntar adónde va alguien.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "去", "pinyin": "qù", "es": "ir" },
+        { "hanzi": "来", "pinyin": "lái", "es": "venir" },
+        { "hanzi": "回", "pinyin": "huí", "es": "volver" },
+        { "hanzi": "到", "pinyin": "dào", "es": "llegar; hasta" },
+        { "hanzi": "火车站", "pinyin": "huǒchēzhàn", "es": "estación de tren" },
+        { "hanzi": "机场", "pinyin": "jīchǎng", "es": "aeropuerto" },
+        { "hanzi": "远", "pinyin": "yuǎn", "es": "lejos" },
+        { "hanzi": "近", "pinyin": "jìn", "es": "cerca" }
+      ],
+      "steps": [
+        { "type": "vocab" },
+        {
+          "type": "dialogue",
+          "title": "En la parada de taxis",
+          "lines": [
+            { "speaker": "司机", "zh": "你好，你去哪儿？", "py": "Nǐ hǎo, nǐ qù nǎr?", "es": "Hola, ¿adónde va?" },
+            { "speaker": "雨果", "zh": "我去火车站。火车站远吗？", "py": "Wǒ qù huǒchēzhàn. Huǒchēzhàn yuǎn ma?", "es": "Voy a la estación de tren. ¿Está lejos?" },
+            { "speaker": "司机", "zh": "不远，很近。二十分钟到。", "py": "Bù yuǎn, hěn jìn. Èrshí fēnzhōng dào.", "es": "No, está cerca. Llegamos en veinte minutos." },
+            { "speaker": "雨果", "zh": "好。我晚上回来，机场远不远？", "py": "Hǎo. Wǒ wǎnshang huílái, jīchǎng yuǎn bu yuǎn?", "es": "Vale. Vuelvo por la noche, ¿el aeropuerto está lejos?" },
+            { "speaker": "司机", "zh": "机场很远，要一个小时。", "py": "Jīchǎng hěn yuǎn, yào yí ge xiǎoshí.", "es": "El aeropuerto está lejos, se tarda una hora." }
+          ],
+          "notes": "司机 sījī = conductor. 回来 huílái = volver (hacia aquí). 要 + tiempo = «se necesita / se tarda»."
+        },
+        { "type": "grammar", "id": "lai-qu" },
+        { "type": "exercises", "count": 10, "types": ["choose-character", "order-words", "build-sentence", "fill-blank", "translate-to-es", "dictation", "speaking", "similar-characters"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "u08-l3",
+      "title": "Tren, avión y billetes",
+      "zh": "坐火车去北京",
+      "goal": "Comprar un billete y contar cómo hiciste un viaje con 是……的.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "火车", "pinyin": "huǒchē", "es": "tren" },
+        { "hanzi": "飞机", "pinyin": "fēijī", "es": "avión" },
+        { "hanzi": "票", "pinyin": "piào", "es": "billete; entrada" },
+        { "hanzi": "张", "pinyin": "zhāng", "es": "clasificador para billetes y cosas planas" },
+        { "hanzi": "小时", "pinyin": "xiǎoshí", "es": "hora (duración)" },
+        { "hanzi": "分钟", "pinyin": "fēnzhōng", "es": "minuto (duración)" },
+        { "hanzi": "什么时候", "pinyin": "shénme shíhou", "es": "cuándo" },
+        { "hanzi": "上海", "pinyin": "Shànghǎi", "es": "Shanghái" }
+      ],
+      "steps": [
+        { "type": "vocab" },
+        {
+          "type": "dialogue",
+          "title": "Un viaje a Pekín",
+          "lines": [
+            { "speaker": "安娜", "zh": "雨果，你是什么时候去北京的？", "py": "Yǔguǒ, nǐ shì shénme shíhou qù Běijīng de?", "es": "Hugo, ¿cuándo fuiste a Pekín?" },
+            { "speaker": "雨果", "zh": "我是上个星期去的。", "py": "Wǒ shì shàng ge xīngqī qù de.", "es": "Fui la semana pasada." },
+            { "speaker": "安娜", "zh": "你是坐飞机去的吗？", "py": "Nǐ shì zuò fēijī qù de ma?", "es": "¿Fuiste en avión?" },
+            { "speaker": "雨果", "zh": "不是，我是坐火车去的。从上海到北京要五个小时。", "py": "Bú shì, wǒ shì zuò huǒchē qù de. Cóng Shànghǎi dào Běijīng yào wǔ ge xiǎoshí.", "es": "No, fui en tren. De Shanghái a Pekín se tardan cinco horas." },
+            { "speaker": "安娜", "zh": "票贵吗？", "py": "Piào guì ma?", "es": "¿Es caro el billete?" },
+            { "speaker": "雨果", "zh": "不太贵，一张票五百五十块。", "py": "Bú tài guì, yì zhāng piào wǔbǎi wǔshí kuài.", "es": "No mucho, un billete cuesta 550 yuanes." }
+          ],
+          "notes": "上个星期 shàng ge xīngqī = la semana pasada. 从…到… cóng…dào… = de… a… (adelanto del HSK 2)."
+        },
+        { "type": "grammar", "id": "shi-de" },
+        { "type": "exercises", "count": 10, "types": ["choose-meaning", "classifier", "order-words", "build-sentence", "fill-blank", "translate-to-es", "listen-choose", "pinyin-input", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "u08-l4",
+      "title": "¿Se puede ir andando? Lectura y repaso",
+      "zh": "复习",
+      "goal": "Preguntar si se puede ir de una forma y consolidar la unidad.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "能", "pinyin": "néng", "es": "poder (capacidad / circunstancias)" },
+        { "hanzi": "可以", "pinyin": "kěyǐ", "es": "poder (permiso)" },
+        { "hanzi": "走", "pinyin": "zǒu", "es": "andar; irse" },
+        { "hanzi": "走路", "pinyin": "zǒulù", "es": "ir andando" },
+        { "hanzi": "站", "pinyin": "zhàn", "es": "parada; estación" },
+        { "hanzi": "慢", "pinyin": "màn", "es": "lento" },
+        { "hanzi": "快", "pinyin": "kuài", "es": "rápido" }
+      ],
+      "steps": [
+        { "type": "vocab" },
+        {
+          "type": "dialogue",
+          "title": "Pidiendo indicaciones",
+          "lines": [
+            { "speaker": "雨果", "zh": "请问，去大学能走路吗？", "py": "Qǐngwèn, qù dàxué néng zǒulù ma?", "es": "Disculpe, ¿se puede ir andando a la universidad?" },
+            { "speaker": "路人", "zh": "可以，但是有点儿远，要走四十分钟。", "py": "Kěyǐ, dànshì yǒudiǎnr yuǎn, yào zǒu sìshí fēnzhōng.", "es": "Sí, pero está un poco lejos, son cuarenta minutos andando." },
+            { "speaker": "雨果", "zh": "太慢了。坐地铁快吗？", "py": "Tài màn le. Zuò dìtiě kuài ma?", "es": "Demasiado lento. ¿En metro es rápido?" },
+            { "speaker": "路人", "zh": "很快，地铁站就在前面，坐两站就到了。", "py": "Hěn kuài, dìtiězhàn jiù zài qiánmiàn, zuò liǎng zhàn jiù dào le.", "es": "Muy rápido, la estación de metro está justo ahí delante; en dos paradas llegas." }
+          ],
+          "notes": "路人 lùrén = transeúnte. 就 jiù refuerza: «justo», «ya»."
+        },
+        { "type": "grammar", "id": "modal-verbs" },
+        {
+          "type": "reading",
+          "title": "Cómo voy a la universidad",
+          "text": "我住在上海。我的大学很远，我不能走路去。每天早上我坐地铁去大学，要三十分钟。我的朋友王明有车，他开车去上班。星期六我们坐火车去北京，票不贵。我不喜欢坐飞机，坐飞机太贵了。晚上回家的时候，我用滴滴，很快。",
+          "es": "Vivo en Shanghái. Mi universidad está lejos, no puedo ir andando. Cada mañana voy a la universidad en metro, se tarda treinta minutos. Mi amigo Wang Ming tiene coche y va al trabajo conduciendo. El sábado vamos a Pekín en tren, el billete no es caro. No me gusta ir en avión, es demasiado caro. Por la noche, cuando vuelvo a casa, uso DiDi; es muy rápido.",
+          "questions": [
+            { "q": "¿Cómo va Hugo a la universidad cada mañana?", "options": ["Andando", "En metro", "En coche con Wang Ming", "En taxi"], "answer": 1, "explain": "每天早上我坐地铁去大学。" },
+            { "q": "¿Cómo irán a Pekín el sábado?", "options": ["En avión", "En coche", "En tren", "En autobús"], "answer": 2, "explain": "星期六我们坐火车去北京。" },
+            { "q": "¿Por qué no le gusta ir en avión?", "options": ["Es lento", "Es demasiado caro", "Hay demasiada gente", "Tiene miedo"], "answer": 1, "explain": "坐飞机太贵了。" }
+          ]
+        },
+        { "type": "exercises", "count": 12, "types": ["matching", "choose-meaning", "order-words", "build-sentence", "fill-blank", "dictation", "translate-to-es", "tone-choice", "speaking", "writing"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    }
+  ]
+}

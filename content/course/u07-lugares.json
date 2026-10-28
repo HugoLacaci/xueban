@@ -1,0 +1,169 @@
+{
+  "id": "u07",
+  "order": 8,
+  "title": "Lugares y direcciones",
+  "zh": "地方与方向",
+  "description": "Decir dónde estás, preguntar por un lugar, entender indicaciones (delante, detrás, izquierda, derecha) y moverte por la ciudad.",
+  "icon": "MapPin",
+  "level": 1,
+  "category": "Lugares",
+  "checkpoint": { "exercises": 15 },
+  "lessons": [
+    {
+      "id": "u07-l1",
+      "title": "¿Dónde estás?",
+      "zh": "你在哪儿？",
+      "goal": "Decir y preguntar dónde está alguien con 在 y 哪儿.",
+      "minutes": 10,
+      "vocab": [
+        { "hanzi": "在", "pinyin": "zài", "es": "estar en; en; estar (haciendo)" },
+        { "hanzi": "哪儿", "pinyin": "nǎr", "es": "¿dónde?" },
+        { "hanzi": "这儿", "pinyin": "zhèr", "es": "aquí" },
+        { "hanzi": "那儿", "pinyin": "nàr", "es": "allí" },
+        { "hanzi": "学校", "pinyin": "xuéxiào", "es": "escuela" },
+        { "hanzi": "医院", "pinyin": "yīyuàn", "es": "hospital" },
+        { "hanzi": "家", "pinyin": "jiā", "es": "casa; familia" },
+        { "hanzi": "大学", "pinyin": "dàxué", "es": "universidad" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "在 + lugar: la fórmula para situar a cualquiera" },
+        {
+          "type": "dialogue",
+          "title": "Una llamada rápida",
+          "lines": [
+            { "speaker": "王明", "zh": "雨果，你在哪儿？", "py": "Yǔguǒ, nǐ zài nǎr?", "es": "Hugo, ¿dónde estás?" },
+            { "speaker": "雨果", "zh": "我在大学。你呢？你在家吗？", "py": "Wǒ zài dàxué. Nǐ ne? Nǐ zài jiā ma?", "es": "Estoy en la universidad. ¿Y tú? ¿Estás en casa?" },
+            { "speaker": "王明", "zh": "我不在家，我在医院。我妈妈在这儿。", "py": "Wǒ bú zài jiā, wǒ zài yīyuàn. Wǒ māma zài zhèr.", "es": "No estoy en casa, estoy en el hospital. Mi madre está aquí." },
+            { "speaker": "雨果", "zh": "安娜也在那儿吗？", "py": "Ānnà yě zài nàr ma?", "es": "¿Ana también está allí?" },
+            { "speaker": "王明", "zh": "不，安娜在学校。", "py": "Bù, Ānnà zài xuéxiào.", "es": "No, Ana está en la escuela." }
+          ],
+          "notes": "在 es verbo («estar en») cuando va seguido directamente de un lugar; no se añade 是. Negación: 不在."
+        },
+        { "type": "grammar", "id": "zai" },
+        { "type": "grammar", "id": "demonstratives" },
+        { "type": "exercises", "count": 10, "types": ["choose-meaning", "listen-choose", "pinyin-input", "order-words", "fill-blank", "dictation", "matching", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "u07-l2",
+      "title": "Hay un restaurante delante",
+      "zh": "前面有一个饭店",
+      "goal": "Describir qué hay en un sitio con 有 y los localizadores 前面, 后面, 旁边, 里面.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "有", "pinyin": "yǒu", "es": "tener; haber" },
+        { "hanzi": "商店", "pinyin": "shāngdiàn", "es": "tienda" },
+        { "hanzi": "饭店", "pinyin": "fàndiàn", "es": "restaurante; hotel" },
+        { "hanzi": "前面", "pinyin": "qiánmiàn", "es": "delante" },
+        { "hanzi": "后面", "pinyin": "hòumiàn", "es": "detrás" },
+        { "hanzi": "旁边", "pinyin": "pángbiān", "es": "al lado" },
+        { "hanzi": "里面", "pinyin": "lǐmiàn", "es": "dentro" },
+        { "hanzi": "洗手间", "pinyin": "xǐshǒujiān", "es": "baño; aseo" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "Lugar + localizador: 学校前面, 商店旁边, 饭店里面" },
+        {
+          "type": "dialogue",
+          "title": "¿Dónde está el baño?",
+          "lines": [
+            { "speaker": "雨果", "zh": "请问，这儿有洗手间吗？", "py": "Qǐngwèn, zhèr yǒu xǐshǒujiān ma?", "es": "Disculpe, ¿hay baño aquí?" },
+            { "speaker": "服务员", "zh": "有，洗手间在饭店里面，在那儿。", "py": "Yǒu, xǐshǒujiān zài fàndiàn lǐmiàn, zài nàr.", "es": "Sí, el baño está dentro del restaurante, allí." },
+            { "speaker": "雨果", "zh": "谢谢。饭店旁边有商店吗？", "py": "Xièxie. Fàndiàn pángbiān yǒu shāngdiàn ma?", "es": "Gracias. ¿Hay alguna tienda al lado del restaurante?" },
+            { "speaker": "服务员", "zh": "旁边没有，前面有一个，后面也有一个。", "py": "Pángbiān méiyǒu, qiánmiàn yǒu yí ge, hòumiàn yě yǒu yí ge.", "es": "Al lado no, pero delante hay una y detrás también hay otra." }
+          ],
+          "notes": "Para «hay» el lugar va primero: 前面有一个商店 (literalmente «delante hay una tienda»). Para «está» el objeto va primero: 洗手间在里面."
+        },
+        { "type": "grammar", "id": "you" },
+        { "type": "exercises", "count": 10, "types": ["choose-meaning", "choose-character", "fill-blank", "order-words", "build-sentence", "translate-to-es", "listen-choose", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "u07-l3",
+      "title": "Izquierda, derecha, lejos, cerca",
+      "zh": "左边、右边、远、近",
+      "goal": "Pedir y dar indicaciones sencillas para llegar a un sitio.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "左边", "pinyin": "zuǒbian", "es": "izquierda" },
+        { "hanzi": "右边", "pinyin": "yòubian", "es": "derecha" },
+        { "hanzi": "上面", "pinyin": "shàngmiàn", "es": "encima; arriba" },
+        { "hanzi": "下面", "pinyin": "xiàmiàn", "es": "debajo; abajo" },
+        { "hanzi": "远", "pinyin": "yuǎn", "es": "lejos" },
+        { "hanzi": "近", "pinyin": "jìn", "es": "cerca" },
+        { "hanzi": "走", "pinyin": "zǒu", "es": "andar; irse" },
+        { "hanzi": "请问", "pinyin": "qǐngwèn", "es": "disculpe, ¿puedo preguntar…?" }
+      ],
+      "steps": [
+        { "type": "vocab" },
+        {
+          "type": "dialogue",
+          "title": "Camino de la universidad",
+          "lines": [
+            { "speaker": "雨果", "zh": "请问，大学怎么走？", "py": "Qǐngwèn, dàxué zěnme zǒu?", "es": "Disculpe, ¿cómo se va a la universidad?" },
+            { "speaker": "路人", "zh": "你在这儿走，前面是医院，大学在医院的右边。", "py": "Nǐ zài zhèr zǒu, qiánmiàn shì yīyuàn, dàxué zài yīyuàn de yòubian.", "es": "Siga por aquí; delante está el hospital y la universidad está a la derecha del hospital." },
+            { "speaker": "雨果", "zh": "远吗？", "py": "Yuǎn ma?", "es": "¿Está lejos?" },
+            { "speaker": "路人", "zh": "不远，很近。十分钟。", "py": "Bù yuǎn, hěn jìn. Shí fēnzhōng.", "es": "No, está muy cerca. Diez minutos." },
+            { "speaker": "雨果", "zh": "左边是什么？", "py": "Zuǒbian shì shénme?", "es": "¿Qué hay a la izquierda?" },
+            { "speaker": "路人", "zh": "左边是一个商店，商店上面有一个饭店。", "py": "Zuǒbian shì yí ge shāngdiàn, shāngdiàn shàngmiàn yǒu yí ge fàndiàn.", "es": "A la izquierda hay una tienda, y encima de la tienda hay un restaurante." }
+          ],
+          "notes": "路人 lùrén = un transeúnte. 怎么走 zěnme zǒu = «¿cómo se va?» (literalmente «cómo andar»). 分钟 fēnzhōng = minutos (de duración). Sin 的 también vale: 医院右边."
+        },
+        { "type": "grammar", "id": "question-words" },
+        { "type": "grammar", "id": "lai-qu" },
+        { "type": "exercises", "count": 10, "types": ["choose-meaning", "listen-choose", "fill-blank", "order-words", "build-sentence", "dictation", "tone-choice", "speaking", "matching"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "u07-l4",
+      "title": "Pekín y Shanghái",
+      "zh": "北京和上海",
+      "goal": "Hablar de dónde vives y de ciudades de China; repasar la unidad con una lectura.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "北京", "pinyin": "Běijīng", "es": "Pekín" },
+        { "hanzi": "上海", "pinyin": "Shànghǎi", "es": "Shanghái" },
+        { "hanzi": "中国", "pinyin": "Zhōngguó", "es": "China" },
+        { "hanzi": "住", "pinyin": "zhù", "es": "vivir; alojarse" },
+        { "hanzi": "到", "pinyin": "dào", "es": "llegar; hasta" },
+        { "hanzi": "路", "pinyin": "lù", "es": "camino; calle" },
+        { "hanzi": "知道", "pinyin": "zhīdào", "es": "saber" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "住在 + lugar: dónde vives" },
+        {
+          "type": "dialogue",
+          "title": "¿Dónde vives?",
+          "lines": [
+            { "speaker": "安娜", "zh": "雨果，你住在哪儿？", "py": "Yǔguǒ, nǐ zhù zài nǎr?", "es": "Hugo, ¿dónde vives?" },
+            { "speaker": "雨果", "zh": "我住在上海，在大学旁边。你呢？", "py": "Wǒ zhù zài Shànghǎi, zài dàxué pángbiān. Nǐ ne?", "es": "Vivo en Shanghái, al lado de la universidad. ¿Y tú?" },
+            { "speaker": "安娜", "zh": "我住在北京。北京很大，你知道吗？", "py": "Wǒ zhù zài Běijīng. Běijīng hěn dà, nǐ zhīdào ma?", "es": "Vivo en Pekín. Pekín es muy grande, ¿lo sabías?" },
+            { "speaker": "雨果", "zh": "我知道。上海到北京远吗？", "py": "Wǒ zhīdào. Shànghǎi dào Běijīng yuǎn ma?", "es": "Lo sé. ¿Está lejos de Shanghái a Pekín?" },
+            { "speaker": "安娜", "zh": "很远。你明天来北京吧！", "py": "Hěn yuǎn. Nǐ míngtiān lái Běijīng ba!", "es": "Muy lejos. ¡Ven mañana a Pekín!" }
+          ],
+          "notes": "住在 zhù zài + lugar = vivir en. 上海到北京 = de Shanghái a Pekín (到 = hasta)."
+        },
+        { "type": "grammar", "id": "word-order" },
+        {
+          "type": "reading",
+          "title": "Mi barrio en Shanghái",
+          "text": "我住在上海，我家在大学旁边。我家前面有一个商店，商店里面的东西不贵。商店左边是一个饭店，饭店的菜很好吃。我家后面是医院，医院很大。学校在我家的右边，很近，我走路去学校，五分钟就到。北京很远，我不知道北京怎么走，明天我和安娜去北京。",
+          "es": "Vivo en Shanghái; mi casa está al lado de la universidad. Delante de mi casa hay una tienda; las cosas de la tienda no son caras. A la izquierda de la tienda hay un restaurante; su comida está muy rica. Detrás de mi casa está el hospital, que es muy grande. La escuela está a la derecha de mi casa, muy cerca: voy andando y llego en cinco minutos. Pekín está muy lejos; no sé cómo se va a Pekín. Mañana Ana y yo vamos a Pekín.",
+          "questions": [
+            { "q": "¿Qué hay delante de la casa de Hugo?", "options": ["Un hospital", "Una tienda", "La escuela", "Un restaurante"], "answer": 1, "explain": "我家前面有一个商店。" },
+            { "q": "¿Cómo va Hugo a la escuela?", "options": ["En taxi", "Andando, en cinco minutos", "No va a la escuela", "Con Ana"], "answer": 1, "explain": "我走路去学校，五分钟就到。(走路 = ir andando; 就 = ya, enseguida)" },
+            { "q": "¿Dónde está el restaurante?", "options": ["Dentro del hospital", "A la izquierda de la tienda", "Detrás de la casa", "Al lado de la escuela"], "answer": 1, "explain": "商店左边是一个饭店。" }
+          ]
+        },
+        { "type": "exercises", "count": 10, "types": ["matching", "choose-meaning", "order-words", "build-sentence", "fill-blank", "dictation", "translate-to-es", "writing", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    }
+  ]
+}

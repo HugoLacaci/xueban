@@ -1,26 +1,267 @@
 @import "tailwindcss";
+@import "../styles/tokens.css";
+@import "lxgw-wenkai-lite-webfont/lxgwwenkailite-regular.css";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@custom-variant dark (&:where(.dark, .dark *, [data-theme="dark"], [data-theme="dark"] *));
 
+/* ---------- Tailwind: colores desde los tokens (admiten /alpha vía color-mix) ---------- */
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --color-paper: rgb(var(--paper));
+  --color-paper-raised: rgb(var(--paper-raised));
+  --color-paper-sunk: rgb(var(--paper-sunk));
+  --color-ink: rgb(var(--ink));
+  --color-ink-soft: rgb(var(--ink-soft));
+  --color-ink-faint: rgb(var(--ink-faint));
+  --color-line: rgb(var(--line));
+  --color-cinnabar: rgb(var(--cinnabar));
+  --color-cinnabar-ink: rgb(var(--cinnabar-ink));
+  --color-celadon: rgb(var(--celadon));
+  --color-celadon-ink: rgb(var(--celadon-ink));
+  --color-indigo: rgb(var(--indigo));
+  --color-gold: rgb(var(--gold));
+  --color-gold-ink: rgb(var(--gold-ink));
+  --color-danger: rgb(var(--danger));
+  --color-tone-1: rgb(var(--tone-1));
+  --color-tone-2: rgb(var(--tone-2));
+  --color-tone-3: rgb(var(--tone-3));
+  --color-tone-4: rgb(var(--tone-4));
+  --color-tone-5: rgb(var(--tone-5));
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  /* alias heredados (componentes existentes) */
+  --color-paper-2: rgb(var(--paper-sunk));
+  --color-paper-3: color-mix(in oklab, rgb(var(--paper-sunk)) 70%, rgb(var(--line)));
+  --color-surface: rgb(var(--paper-raised));
+  --color-ink-2: rgb(var(--ink-soft));
+  --color-muted: rgb(var(--ink-faint));
+  --color-line-strong: color-mix(in oklab, rgb(var(--line)) 60%, rgb(var(--ink-faint)));
+  --color-lacquer: rgb(var(--cinnabar));
+  --color-lacquer-dark: rgb(var(--cinnabar-ink));
+  --color-lacquer-soft: color-mix(in oklab, rgb(var(--cinnabar)) 12%, transparent);
+  --color-jade: rgb(var(--celadon));
+  --color-jade-dark: rgb(var(--celadon-ink));
+  --color-jade-soft: color-mix(in oklab, rgb(var(--celadon)) 14%, transparent);
+  --color-ring: rgb(var(--ink));
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-fraunces), "Georgia", serif;
+  --font-zh: var(--font-noto-sans-sc), "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "Source Han Sans SC", sans-serif;
+  --font-zh-serif: var(--font-noto-serif-sc), "Songti SC", "SimSun", serif;
+  --font-kai: "LXGW WenKai Lite", "KaiTi", "STKaiti", "楷体", serif;
+  --font-display-zh: "LXGW WenKai Lite", "KaiTi", "STKaiti", "楷体", serif; /* decorativa (sellos, marca): reutiliza WenKai, sin una familia extra */
+
+  --radius-lg: var(--radius-btn);
+  --radius-xl: var(--radius-card);
+  --radius-2xl: calc(var(--radius-card) + 4px);
+
+  --shadow-paper: var(--shadow-paper);
+  --shadow-float: var(--shadow-float);
+  --ease-ink: var(--ease-ink);
+
+  --animate-pop: pop 180ms var(--ease-ink);
+  --animate-shake: shake 220ms ease-in-out;
+  --animate-fade-in: fade-in 160ms ease-out;
+  --animate-ink-in: ink-in 260ms var(--ease-ink);
+  --animate-stamp: stamp 600ms var(--ease-ink);
+  --animate-breathe: breathe 1.8s ease-in-out infinite;
+
+  @keyframes pop {
+    0% { transform: scale(0.97); opacity: 0.6; }
+    100% { transform: scale(1); opacity: 1; }
+  }
+  @keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    30% { transform: translateX(-3px); }
+    70% { transform: translateX(3px); }
+  }
+  @keyframes fade-in {
+    from { opacity: 0; transform: translateY(2px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes ink-in {
+    from { opacity: 0; filter: blur(6px); }
+    to { opacity: 1; filter: blur(0); }
+  }
+  @keyframes stamp {
+    0% { transform: scale(1.4) rotate(var(--stamp-rot, -3deg)); opacity: 0; }
+    60% { transform: scale(0.96) rotate(var(--stamp-rot, -3deg)); opacity: 1; }
+    100% { transform: scale(1) rotate(var(--stamp-rot, -3deg)); opacity: 1; }
+  }
+  @keyframes breathe {
+    0%, 100% { opacity: 0.45; }
+    50% { opacity: 0.9; }
   }
 }
 
+html { color-scheme: light; }
+html.dark, html[data-theme="dark"] { color-scheme: dark; }
+
+/* ---------- Papel: fondo + grano (feTurbulence, estático y ligero) ---------- */
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(var(--paper));
+  color: rgb(var(--ink));
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.3 0 0 0 0 0.22 0 0 0 0 0.12 0 0 0 0.045 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
 }
+.dark body, [data-theme="dark"] body {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.9 0 0 0 0 0.85 0 0 0 0 0.75 0 0 0 0.025 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* ---------- Texto chino ---------- */
+/* En @layer base para que las utilidades text-* de Tailwind ganen al tamaño escalado. */
+@layer base {
+  [lang="zh-CN"], .zh {
+    font-family: var(--font-zh);
+    font-size: calc(1em * var(--zh-scale));
+    letter-spacing: 0.02em;
+  }
+}
+.zh-serif { font-family: var(--font-zh-serif); }
+.zh-kai { font-family: var(--font-kai); }
+.zh-display { font-family: var(--font-display-zh); }
+.font-serif-es { font-family: var(--font-serif); font-variation-settings: "opsz" 48, "SOFT" 30; }
+.tabular { font-variant-numeric: tabular-nums; }
+
+.tone-1 { color: rgb(var(--tone-1)); }
+.tone-2 { color: rgb(var(--tone-2)); }
+.tone-3 { color: rgb(var(--tone-3)); }
+.tone-4 { color: rgb(var(--tone-4)); }
+.tone-5 { color: rgb(var(--tone-5)); }
+
+/* ruby: pinyin al 45–50 %, espacio siempre reservado; ocultar = opacidad (sin saltos) */
+ruby.zh-ruby { ruby-position: over; ruby-align: center; }
+ruby.zh-ruby > rt {
+  font-family: var(--font-sans);
+  font-size: max(0.47em, 10px);
+  letter-spacing: 0;
+  line-height: 1;
+  font-weight: 500;
+  user-select: none;
+  padding-bottom: 0.1em;
+  transition: opacity var(--dur-ui) var(--ease-ink);
+}
+.pinyin-hidden ruby.zh-ruby > rt { opacity: 0; }
+.pinyin-hidden .zh-pinyin-line { opacity: 0; }
+.pinyin-unknown ruby.zh-ruby:not(.zh-unknown) > rt { opacity: 0; }
+.zh-word:hover ruby.zh-ruby > rt, .zh-word:focus-visible ruby.zh-ruby > rt { opacity: 1; }
+
+.zh-word { border-radius: 4px; transition: background-color var(--dur-ui) var(--ease-ink); cursor: pointer; }
+.zh-word:hover, .zh-word:focus-visible { background: color-mix(in oklab, rgb(var(--cinnabar)) 10%, transparent); outline: none; }
+.zh-unknown > .zh-word, .zh-word.zh-unknown {
+  text-decoration: underline dotted rgb(var(--cinnabar) / 0.7);
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 0.2em;
+}
+
+/* ---------- 田字格 / 米字格 (línea discontinua bermellón tenue) ---------- */
+.tianzige {
+  background-color: rgb(var(--paper-raised));
+  background-image:
+    linear-gradient(to right, rgb(var(--cinnabar) / 0.35) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(var(--cinnabar) / 0.35) 1px, transparent 1px);
+  background-size: 50% 50%;
+  border: 1.5px solid rgb(var(--cinnabar) / 0.55);
+  position: relative;
+}
+.tianzige::before, .tianzige::after {
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+}
+.mizige::before {
+  background: linear-gradient(45deg, transparent calc(50% - 0.5px), rgb(var(--cinnabar) / 0.25) calc(50% - 0.5px), rgb(var(--cinnabar) / 0.25) calc(50% + 0.5px), transparent calc(50% + 0.5px));
+}
+.mizige::after {
+  background: linear-gradient(-45deg, transparent calc(50% - 0.5px), rgb(var(--cinnabar) / 0.25) calc(50% - 0.5px), rgb(var(--cinnabar) / 0.25) calc(50% + 0.5px), transparent calc(50% + 0.5px));
+}
+.tianzige-faint {
+  background-image:
+    linear-gradient(to right, rgb(var(--cinnabar) / 0.12) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(var(--cinnabar) / 0.12) 1px, transparent 1px);
+  background-size: 50% 50%;
+  background-position: center;
+}
+
+/* ---------- Superficies ---------- */
+.card-paper {
+  background: rgb(var(--paper-raised));
+  border: 1px solid rgb(var(--line));
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-paper);
+}
+.card-sunk {
+  background: rgb(var(--paper-sunk));
+  border: 1px solid rgb(var(--line));
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-sunk);
+}
+.card-plate { /* placa de jade: esquinas recortadas */
+  clip-path: polygon(10px 0, calc(100% - 10px) 0, 100% 10px, 100% calc(100% - 10px), calc(100% - 10px) 100%, 10px 100%, 0 calc(100% - 10px), 0 10px);
+}
+.seal {
+  display: inline-flex; align-items: center; justify-content: center;
+  background: rgb(var(--cinnabar)); color: rgb(var(--paper-raised)); font-family: var(--font-display-zh);
+  border-radius: 6px; line-height: 1;
+}
+.ink-rule { /* divisor en pincelada */
+  height: 2px; border: 0;
+  background: linear-gradient(90deg, transparent, rgb(var(--ink) / 0.35) 12%, rgb(var(--ink) / 0.55) 50%, rgb(var(--ink) / 0.3) 88%, transparent);
+  border-radius: 999px;
+  mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
+}
+.scrollbar-thin { scrollbar-width: thin; scrollbar-color: rgb(var(--line)) transparent; }
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { scrollbar-width: none; }
+
+/* foco: anillo de tinta con separación */
+:focus-visible { outline: 2px solid rgb(var(--ink)); outline-offset: 2px; border-radius: 4px; }
+.dark :focus-visible, [data-theme="dark"] :focus-visible { outline-color: rgb(var(--ink)); }
+
+/* skeleton de tinta que respira */
+.ink-skeleton {
+  background: rgb(var(--ink) / 0.08);
+  border-radius: 8px;
+  animation: breathe 1.8s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
+}
+
+@media print {
+  .no-print { display: none !important; }
+  body { background: #fff; color: #000; background-image: none; }
+}
+
+/* contorno de pincel (botón secundario) */
+.brush-outline {
+  border: 1.5px solid rgb(var(--ink) / 0.55);
+  border-radius: var(--radius-btn);
+  box-shadow: inset 0 0 0 1px rgb(var(--paper-raised) / 0.6);
+}
+.dark .brush-outline, [data-theme="dark"] .brush-outline { border-color: rgb(var(--ink) / 0.45); }
+
+/* relleno de tinta en barras de progreso: borde irregular de pincel en el extremo */
+.brush-fill { position: relative; }
+.brush-fill::after {
+  content: ""; position: absolute; right: -2px; top: -1px; bottom: -1px; width: 6px;
+  background: inherit; border-radius: 40% 60% 60% 40%; opacity: 0.8;
+}
+/* indicador de tono adicional (daltónicos): marca grande sobre la sílaba */
+.tone-marks ruby.zh-ruby > rt { font-weight: 700; }
+
+/* alias heredados con valor de color (componentes que usan var(--x) directamente) */
+:root, .dark, [data-theme="dark"] {
+  --lacquer: rgb(var(--cinnabar));
+  --lacquer-dark: rgb(var(--cinnabar-ink));
+  --lacquer-soft: color-mix(in oklab, rgb(var(--cinnabar)) 12%, transparent);
+  --jade: rgb(var(--celadon));
+  --jade-dark: rgb(var(--celadon-ink));
+  --ink-muted: rgb(var(--ink-faint));
+  --paper-2: rgb(var(--paper-sunk));
+  --paper-3: color-mix(in oklab, rgb(var(--paper-sunk)) 70%, rgb(var(--line)));
+  --surface: rgb(var(--paper-raised));
+  --line-strong: color-mix(in oklab, rgb(var(--line)) 60%, rgb(var(--ink-faint)));
+}
+
+/* Sellos de texto: latín en Inter, caracteres chinos en 楷书 decorativo (el navegador cae por glifo). */
+.font-seal { font-family: var(--font-sans), var(--font-display-zh); letter-spacing: 0.04em; font-weight: 600; }

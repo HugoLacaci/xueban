@@ -1,0 +1,190 @@
+{
+  "id": "u14",
+  "order": 15,
+  "title": "Por teléfono y en WeChat",
+  "zh": "打电话与微信",
+  "description": "Contestar al teléfono, pedir un número, quedar con alguien y escribir mensajes cortos en WeChat.",
+  "icon": "Phone",
+  "level": 1,
+  "category": "Partículas y gramática",
+  "checkpoint": { "exercises": 15 },
+  "lessons": [
+    {
+      "id": "u14-l1",
+      "title": "¿Diga? Soy Hugo",
+      "zh": "喂，我是雨果",
+      "goal": "Contestar al teléfono y decir quién eres y a quién llamas.",
+      "minutes": 10,
+      "vocab": [
+        { "hanzi": "喂", "pinyin": "wéi", "es": "¿diga? (al teléfono)" },
+        { "hanzi": "打电话", "pinyin": "dǎ diànhuà", "es": "llamar por teléfono" },
+        { "hanzi": "电话", "pinyin": "diànhuà", "es": "teléfono; llamada" },
+        { "hanzi": "手机", "pinyin": "shǒujī", "es": "teléfono móvil" },
+        { "hanzi": "给", "pinyin": "gěi", "es": "dar; a (alguien)" },
+        { "hanzi": "在", "pinyin": "zài", "es": "estar (en un lugar)" },
+        { "hanzi": "现在", "pinyin": "xiànzài", "es": "ahora" },
+        { "hanzi": "等一下", "pinyin": "děng yíxià", "es": "espera un momento" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "给 + persona + 打电话" },
+        {
+          "type": "dialogue",
+          "title": "Hugo llama a casa de Wang Ming",
+          "lines": [
+            { "speaker": "王明的妈妈", "zh": "喂，你好。", "py": "Wéi, nǐ hǎo.", "es": "¿Diga? Hola." },
+            { "speaker": "雨果", "zh": "您好，我是雨果，王明的同学。王明在吗？", "py": "Nín hǎo, wǒ shì Yǔguǒ, Wáng Míng de tóngxué. Wáng Míng zài ma?", "es": "Hola, soy Hugo, el compañero de Wang Ming. ¿Está Wang Ming?" },
+            { "speaker": "王明的妈妈", "zh": "在，你等一下。", "py": "Zài, nǐ děng yíxià.", "es": "Sí, espera un momento." },
+            { "speaker": "王明", "zh": "喂，雨果！你现在在哪儿？", "py": "Wéi, Yǔguǒ! Nǐ xiànzài zài nǎr?", "es": "¡Hola, Hugo! ¿Dónde estás ahora?" },
+            { "speaker": "雨果", "zh": "我在学校。我的手机没电了，我给你打电话。", "py": "Wǒ zài xuéxiào. Wǒ de shǒujī méi diàn le, wǒ gěi nǐ dǎ diànhuà.", "es": "Estoy en la escuela. Mi móvil se ha quedado sin batería, por eso te llamo." }
+          ],
+          "notes": "没电了 méi diàn le = «sin batería» (电 = electricidad). 在吗 al teléfono significa «¿está (ahí)?»."
+        },
+        { "type": "grammar", "id": "gei" },
+        { "type": "exercises", "count": 10, "types": ["choose-meaning", "listen-choose", "order-words", "fill-blank", "pinyin-input", "tone-choice", "matching", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "u14-l2",
+      "title": "¿Cuál es tu número?",
+      "zh": "你的电话号码是多少？",
+      "goal": "Pedir y dar un número de teléfono y añadir a alguien en WeChat.",
+      "minutes": 11,
+      "vocab": [
+        { "hanzi": "号码", "pinyin": "hàomǎ", "es": "número (de teléfono)" },
+        { "hanzi": "多少", "pinyin": "duōshao", "es": "¿cuánto?; ¿cuál? (números)" },
+        { "hanzi": "微信", "pinyin": "Wēixìn", "es": "WeChat" },
+        { "hanzi": "发", "pinyin": "fā", "es": "enviar (un mensaje)" },
+        { "hanzi": "加", "pinyin": "jiā", "es": "añadir (un contacto)" },
+        { "hanzi": "零", "pinyin": "líng", "es": "cero" },
+        { "hanzi": "知道", "pinyin": "zhīdào", "es": "saber" },
+        { "hanzi": "吧", "pinyin": "ba", "es": "partícula de sugerencia / suposición" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "Los números de teléfono se leen cifra a cifra; 一 se lee yāo" },
+        {
+          "type": "dialogue",
+          "title": "Intercambiando contactos",
+          "lines": [
+            { "speaker": "安娜", "zh": "雨果，你的电话号码是多少？", "py": "Yǔguǒ, nǐ de diànhuà hàomǎ shì duōshao?", "es": "Hugo, ¿cuál es tu número de teléfono?" },
+            { "speaker": "雨果", "zh": "一三八零五二六七九四零。", "py": "Yāo sān bā líng wǔ èr liù qī jiǔ sì líng.", "es": "138 0526 7940." },
+            { "speaker": "安娜", "zh": "你有微信吗？", "py": "Nǐ yǒu Wēixìn ma?", "es": "¿Tienes WeChat?" },
+            { "speaker": "雨果", "zh": "有。你加我吧，我的微信号码是我的手机号码。", "py": "Yǒu. Nǐ jiā wǒ ba, wǒ de Wēixìn hàomǎ shì wǒ de shǒujī hàomǎ.", "es": "Sí. Agrégame, mi número de WeChat es el de mi móvil." },
+            { "speaker": "安娜", "zh": "好，我现在给你发一个消息。", "py": "Hǎo, wǒ xiànzài gěi nǐ fā yí ge xiāoxi.", "es": "Vale, ahora te envío un mensaje." },
+            { "speaker": "雨果", "zh": "我知道了，谢谢！", "py": "Wǒ zhīdào le, xièxie!", "es": "¡Entendido, gracias!" }
+          ],
+          "notes": "消息 xiāoxi = mensaje (HSK 2). En un número de teléfono 一 se lee yāo para no confundirlo con 七 qī."
+        },
+        { "type": "grammar", "id": "ba" },
+        { "type": "grammar", "id": "question-words" },
+        { "type": "exercises", "count": 10, "types": ["choose-meaning", "choose-character", "listen-choose", "order-words", "fill-blank", "dictation", "tone-choice", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "u14-l3",
+      "title": "¿Cuándo quedamos?",
+      "zh": "我们什么时候见？",
+      "goal": "Proponer una hora y un lugar para quedar y confirmar el plan.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "什么时候", "pinyin": "shénme shíhou", "es": "cuándo" },
+        { "hanzi": "明天", "pinyin": "míngtiān", "es": "mañana (día)" },
+        { "hanzi": "见", "pinyin": "jiàn", "es": "ver; encontrarse con" },
+        { "hanzi": "明天见", "pinyin": "míngtiān jiàn", "es": "hasta mañana" },
+        { "hanzi": "对不起", "pinyin": "duìbuqǐ", "es": "lo siento; perdón" },
+        { "hanzi": "没关系", "pinyin": "méi guānxi", "es": "no pasa nada" },
+        { "hanzi": "忙", "pinyin": "máng", "es": "ocupado" },
+        { "hanzi": "呢", "pinyin": "ne", "es": "¿y…?; partícula" }
+      ],
+      "steps": [
+        { "type": "vocab" },
+        {
+          "type": "dialogue",
+          "title": "Quedar para estudiar",
+          "lines": [
+            { "speaker": "雨果", "zh": "喂，安娜，我们什么时候一起学习汉语？", "py": "Wéi, Ānnà, wǒmen shénme shíhou yìqǐ xuéxí Hànyǔ?", "es": "Hola, Ana, ¿cuándo estudiamos chino juntos?" },
+            { "speaker": "安娜", "zh": "对不起，今天我很忙。明天呢？", "py": "Duìbuqǐ, jīntiān wǒ hěn máng. Míngtiān ne?", "es": "Perdona, hoy estoy muy ocupada. ¿Y mañana?" },
+            { "speaker": "雨果", "zh": "没关系。明天下午三点，在学校见，怎么样？", "py": "Méi guānxi. Míngtiān xiàwǔ sān diǎn, zài xuéxiào jiàn, zěnmeyàng?", "es": "No pasa nada. Mañana a las tres de la tarde, en la escuela, ¿qué te parece?" },
+            { "speaker": "安娜", "zh": "好的。我们在哪儿见？", "py": "Hǎo de. Wǒmen zài nǎr jiàn?", "es": "Vale. ¿Dónde nos vemos?" },
+            { "speaker": "雨果", "zh": "在图书馆吧。明天见！", "py": "Zài túshūguǎn ba. Míngtiān jiàn!", "es": "En la biblioteca. ¡Hasta mañana!" },
+            { "speaker": "安娜", "zh": "明天见！", "py": "Míngtiān jiàn!", "es": "¡Hasta mañana!" }
+          ],
+          "notes": "图书馆 túshūguǎn = biblioteca. 好的 hǎo de = vale, de acuerdo."
+        },
+        { "type": "grammar", "id": "ne" },
+        { "type": "exercises", "count": 10, "types": ["choose-meaning", "order-words", "build-sentence", "fill-blank", "translate-to-es", "listen-choose", "pinyin-input", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "u14-l4",
+      "title": "¿Cuándo llegaste? 是……的",
+      "zh": "你是什么时候来的？",
+      "goal": "Preguntar y contar los detalles de algo que ya pasó con 是……的.",
+      "minutes": 11,
+      "vocab": [
+        { "hanzi": "去年", "pinyin": "qùnián", "es": "el año pasado" },
+        { "hanzi": "怎么", "pinyin": "zěnme", "es": "cómo" },
+        { "hanzi": "坐", "pinyin": "zuò", "es": "ir en (transporte); sentarse" },
+        { "hanzi": "飞机", "pinyin": "fēijī", "es": "avión" },
+        { "hanzi": "认识", "pinyin": "rènshi", "es": "conocer (a alguien)" },
+        { "hanzi": "上海", "pinyin": "Shànghǎi", "es": "Shanghái" },
+        { "hanzi": "的", "pinyin": "de", "es": "partícula (是……的)" }
+      ],
+      "steps": [
+        { "type": "vocab" },
+        {
+          "type": "dialogue",
+          "title": "Conociendo a un amigo de Wang Ming",
+          "lines": [
+            { "speaker": "李华", "zh": "雨果，你是什么时候来中国的？", "py": "Yǔguǒ, nǐ shì shénme shíhou lái Zhōngguó de?", "es": "Hugo, ¿cuándo viniste a China?" },
+            { "speaker": "雨果", "zh": "我是去年九月来的。", "py": "Wǒ shì qùnián jiǔ yuè lái de.", "es": "Vine en septiembre del año pasado." },
+            { "speaker": "李华", "zh": "你是怎么来的？", "py": "Nǐ shì zěnme lái de?", "es": "¿Cómo viniste?" },
+            { "speaker": "雨果", "zh": "我是坐飞机来的。你和王明是在哪儿认识的？", "py": "Wǒ shì zuò fēijī lái de. Nǐ hé Wáng Míng shì zài nǎr rènshi de?", "es": "Vine en avión. ¿Dónde os conocisteis Wang Ming y tú?" },
+            { "speaker": "李华", "zh": "我们是在上海认识的，我们是同学。", "py": "Wǒmen shì zài Shànghǎi rènshi de, wǒmen shì tóngxué.", "es": "Nos conocimos en Shanghái, somos compañeros de clase." }
+          ]
+        },
+        { "type": "grammar", "id": "shi-de" },
+        { "type": "exercises", "count": 10, "types": ["choose-meaning", "order-words", "build-sentence", "fill-blank", "translate-to-es", "dictation", "similar-characters", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "u14-l5",
+      "title": "Lectura y repaso: un chat de WeChat",
+      "zh": "复习",
+      "goal": "Leer y entender una conversación corta de WeChat y consolidar la unidad.",
+      "minutes": 10,
+      "vocab": [
+        { "hanzi": "在吗", "pinyin": "zài ma", "es": "¿estás? (en un chat)" },
+        { "hanzi": "可以", "pinyin": "kěyǐ", "es": "poder; se puede" },
+        { "hanzi": "回", "pinyin": "huí", "es": "volver; responder" },
+        { "hanzi": "晚上", "pinyin": "wǎnshang", "es": "noche" },
+        { "hanzi": "饭店", "pinyin": "fàndiàn", "es": "restaurante" },
+        { "hanzi": "太好了", "pinyin": "tài hǎo le", "es": "¡genial!" }
+      ],
+      "steps": [
+        { "type": "vocab" },
+        {
+          "type": "reading",
+          "title": "Mensajes entre Hugo y Ana",
+          "text": "雨果：安娜，在吗？\n安娜：在。什么事？\n雨果：明天晚上我和王明去饭店吃饭，你来吗？\n安娜：几点？在哪儿？\n雨果：七点，在学校的饭店。\n安娜：对不起，明天晚上我有汉语课，九点下课。\n雨果：没关系，我们八点吃吧，可以吗？\n安娜：可以！太好了，明天见！\n雨果：明天见。",
+          "es": "Hugo: Ana, ¿estás?\nAna: Sí. ¿Qué pasa?\nHugo: Mañana por la noche Wang Ming y yo vamos a cenar a un restaurante, ¿vienes?\nAna: ¿A qué hora? ¿Dónde?\nHugo: A las siete, en el restaurante de la escuela.\nAna: Lo siento, mañana por la noche tengo clase de chino, termino a las nueve.\nHugo: No pasa nada, cenamos a las ocho, ¿puede ser?\nAna: ¡Sí! Genial, ¡hasta mañana!\nHugo: Hasta mañana.",
+          "questions": [
+            { "q": "¿Qué propone Hugo al principio?", "options": ["Estudiar chino", "Cenar en un restaurante mañana a las siete", "Ir al cine", "Llamar a Wang Ming"], "answer": 1, "explain": "明天晚上我和王明去饭店吃饭…七点，在学校的饭店。" },
+            { "q": "¿Por qué Ana no puede a las siete?", "options": ["Está cansada", "Trabaja", "Tiene clase de chino hasta las nueve", "No tiene dinero"], "answer": 2, "explain": "明天晚上我有汉语课，九点下课。" },
+            { "q": "¿A qué hora quedan al final?", "options": ["A las siete", "A las ocho", "A las nueve", "No quedan"], "answer": 1, "explain": "我们八点吃吧，可以吗？—可以！ (Nota: 事 shì = asunto; 什么事 = ¿qué pasa?)" }
+          ]
+        },
+        { "type": "exercises", "count": 12, "types": ["matching", "choose-meaning", "order-words", "build-sentence", "fill-blank", "dictation", "translate-to-es", "tone-choice", "writing", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    }
+  ]
+}

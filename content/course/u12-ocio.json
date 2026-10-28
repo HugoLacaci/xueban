@@ -1,0 +1,187 @@
+{
+  "id": "u12",
+  "order": 13,
+  "title": "Ocio y gustos",
+  "zh": "爱好",
+  "description": "Decir qué te gusta hacer, hablar de películas, música y deporte, e invitar a un amigo a hacer algo juntos.",
+  "icon": "Music",
+  "level": 1,
+  "category": "Ocio",
+  "checkpoint": { "exercises": 15 },
+  "lessons": [
+    {
+      "id": "u12-l1",
+      "title": "¿Qué te gusta hacer?",
+      "zh": "你喜欢做什么？",
+      "goal": "Expresar gustos con 喜欢 + verbo y preguntar los de otra persona.",
+      "minutes": 11,
+      "vocab": [
+        { "hanzi": "喜欢", "pinyin": "xǐhuan", "es": "gustar" },
+        { "hanzi": "爱", "pinyin": "ài", "es": "amar; encantar" },
+        { "hanzi": "电影", "pinyin": "diànyǐng", "es": "película" },
+        { "hanzi": "电视", "pinyin": "diànshì", "es": "televisión" },
+        { "hanzi": "音乐", "pinyin": "yīnyuè", "es": "música" },
+        { "hanzi": "听", "pinyin": "tīng", "es": "escuchar" },
+        { "hanzi": "看", "pinyin": "kàn", "es": "mirar; ver; leer" },
+        { "hanzi": "玩", "pinyin": "wán", "es": "jugar; divertirse" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "Verbos de ocio: 看, 听, 玩" },
+        {
+          "type": "dialogue",
+          "title": "Después de clase",
+          "lines": [
+            { "speaker": "安娜", "zh": "雨果，你喜欢做什么？", "py": "Yǔguǒ, nǐ xǐhuan zuò shénme?", "es": "Hugo, ¿qué te gusta hacer?" },
+            { "speaker": "雨果", "zh": "我喜欢看电影，也喜欢听音乐。你呢？", "py": "Wǒ xǐhuan kàn diànyǐng, yě xǐhuan tīng yīnyuè. Nǐ ne?", "es": "Me gusta ver películas y también escuchar música. ¿Y tú?" },
+            { "speaker": "安娜", "zh": "我不太喜欢看电影，我爱看电视。", "py": "Wǒ bú tài xǐhuan kàn diànyǐng, wǒ ài kàn diànshì.", "es": "No me gustan mucho las películas, me encanta ver la tele." },
+            { "speaker": "雨果", "zh": "你喜欢中国音乐吗？", "py": "Nǐ xǐhuan Zhōngguó yīnyuè ma?", "es": "¿Te gusta la música china?" },
+            { "speaker": "安娜", "zh": "很喜欢！我们一起听听吧。", "py": "Hěn xǐhuan! Wǒmen yìqǐ tīngting ba.", "es": "¡Mucho! Vamos a escuchar un poco juntos." }
+          ],
+          "notes": "一起 yìqǐ (juntos) se estudia en la lección 3; aquí aparece como adelanto. 喜欢 puede ir seguido de un nombre (喜欢音乐) o de un verbo (喜欢听音乐)."
+        },
+        { "type": "grammar", "id": "modal-verbs" },
+        { "type": "exercises", "count": 10, "types": ["choose-meaning", "listen-choose", "order-words", "fill-blank", "pinyin-input", "tone-choice", "matching", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "u12-l2",
+      "title": "Deporte, canto y baile",
+      "zh": "运动、唱歌、跳舞",
+      "goal": "Hablar de deportes y actividades con 会 y 想, y proponer probar algo con verbos reduplicados.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "运动", "pinyin": "yùndòng", "es": "deporte; hacer deporte" },
+        { "hanzi": "打球", "pinyin": "dǎ qiú", "es": "jugar a la pelota (baloncesto, tenis…)" },
+        { "hanzi": "游泳", "pinyin": "yóuyǒng", "es": "nadar" },
+        { "hanzi": "唱歌", "pinyin": "chàng gē", "es": "cantar" },
+        { "hanzi": "跳舞", "pinyin": "tiào wǔ", "es": "bailar" },
+        { "hanzi": "游戏", "pinyin": "yóuxì", "es": "juego; videojuego" },
+        { "hanzi": "会", "pinyin": "huì", "es": "saber (hacer)" },
+        { "hanzi": "想", "pinyin": "xiǎng", "es": "querer; tener ganas de" }
+      ],
+      "steps": [
+        { "type": "vocab" },
+        {
+          "type": "dialogue",
+          "title": "En el polideportivo de la universidad",
+          "lines": [
+            { "speaker": "王明", "zh": "雨果，你喜欢运动吗？", "py": "Yǔguǒ, nǐ xǐhuan yùndòng ma?", "es": "Hugo, ¿te gusta el deporte?" },
+            { "speaker": "雨果", "zh": "喜欢。我会游泳，也会打球。", "py": "Xǐhuan. Wǒ huì yóuyǒng, yě huì dǎ qiú.", "es": "Sí. Sé nadar y también sé jugar a la pelota." },
+            { "speaker": "王明", "zh": "你会唱歌吗？", "py": "Nǐ huì chàng gē ma?", "es": "¿Sabes cantar?" },
+            { "speaker": "雨果", "zh": "我不会唱歌，我想学跳舞。", "py": "Wǒ bú huì chàng gē, wǒ xiǎng xué tiào wǔ.", "es": "No sé cantar, quiero aprender a bailar." },
+            { "speaker": "王明", "zh": "太好了！我们去看看吧。", "py": "Tài hǎo le! Wǒmen qù kànkan ba.", "es": "¡Genial! Vamos a echar un vistazo." }
+          ]
+        },
+        { "type": "grammar", "id": "reduplication" },
+        { "type": "exercises", "count": 10, "types": ["choose-meaning", "choose-character", "order-words", "build-sentence", "fill-blank", "dictation", "similar-characters", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "u12-l3",
+      "title": "¿Vamos juntos este fin de semana?",
+      "zh": "周末一起去吧",
+      "goal": "Invitar a alguien a hacer algo juntos con 和…一起 y 吧.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "周末", "pinyin": "zhōumò", "es": "fin de semana" },
+        { "hanzi": "星期六", "pinyin": "xīngqīliù", "es": "sábado" },
+        { "hanzi": "星期天", "pinyin": "xīngqītiān", "es": "domingo" },
+        { "hanzi": "一起", "pinyin": "yìqǐ", "es": "juntos" },
+        { "hanzi": "和", "pinyin": "hé", "es": "y; con" },
+        { "hanzi": "朋友", "pinyin": "péngyou", "es": "amigo" },
+        { "hanzi": "吧", "pinyin": "ba", "es": "partícula de sugerencia" },
+        { "hanzi": "时间", "pinyin": "shíjiān", "es": "tiempo" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "和 + persona + 一起 + verbo" },
+        {
+          "type": "dialogue",
+          "title": "Planes para el sábado",
+          "lines": [
+            { "speaker": "雨果", "zh": "安娜，周末你有时间吗？", "py": "Ānnà, zhōumò nǐ yǒu shíjiān ma?", "es": "Ana, ¿tienes tiempo este fin de semana?" },
+            { "speaker": "安娜", "zh": "星期六有时间，星期天没有。", "py": "Xīngqīliù yǒu shíjiān, xīngqītiān méiyǒu.", "es": "El sábado tengo tiempo, el domingo no." },
+            { "speaker": "雨果", "zh": "星期六我和王明去看电影，你和我们一起去吧！", "py": "Xīngqīliù wǒ hé Wáng Míng qù kàn diànyǐng, nǐ hé wǒmen yìqǐ qù ba!", "es": "El sábado Wang Ming y yo vamos al cine, ¡vente con nosotros!" },
+            { "speaker": "安娜", "zh": "好啊！我也想去。什么电影？", "py": "Hǎo a! Wǒ yě xiǎng qù. Shénme diànyǐng?", "es": "¡Vale! Yo también quiero ir. ¿Qué película?" },
+            { "speaker": "雨果", "zh": "一个中国电影，我的朋友说很好看。", "py": "Yí ge Zhōngguó diànyǐng, wǒ de péngyou shuō hěn hǎokàn.", "es": "Una película china, mi amigo dice que es muy buena." }
+          ],
+          "notes": "好啊 hǎo a: 啊 es una partícula de entusiasmo (= «¡vale!»). 好看 hǎokàn = bonito, entretenido (de ver)."
+        },
+        { "type": "grammar", "id": "he" },
+        { "type": "grammar", "id": "ba" },
+        { "type": "exercises", "count": 10, "types": ["choose-meaning", "order-words", "build-sentence", "fill-blank", "translate-to-es", "listen-choose", "tone-choice", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "u12-l4",
+      "title": "Un momento: 一下",
+      "zh": "等一下",
+      "goal": "Suavizar peticiones con 一下 y hablar de libros y lectura.",
+      "minutes": 10,
+      "vocab": [
+        { "hanzi": "一下", "pinyin": "yíxià", "es": "un momento; un poco (tras un verbo)" },
+        { "hanzi": "等", "pinyin": "děng", "es": "esperar" },
+        { "hanzi": "书", "pinyin": "shū", "es": "libro" },
+        { "hanzi": "读", "pinyin": "dú", "es": "leer (en voz alta); estudiar" },
+        { "hanzi": "休息", "pinyin": "xiūxi", "es": "descansar" },
+        { "hanzi": "有意思", "pinyin": "yǒu yìsi", "es": "interesante" },
+        { "hanzi": "累", "pinyin": "lèi", "es": "cansado" }
+      ],
+      "steps": [
+        { "type": "vocab" },
+        {
+          "type": "dialogue",
+          "title": "En la biblioteca",
+          "lines": [
+            { "speaker": "王明", "zh": "雨果，你在看什么书？", "py": "Yǔguǒ, nǐ zài kàn shénme shū?", "es": "Hugo, ¿qué libro estás leyendo?" },
+            { "speaker": "雨果", "zh": "一本中国书，很有意思。你看一下。", "py": "Yì běn Zhōngguó shū, hěn yǒu yìsi. Nǐ kàn yíxià.", "es": "Un libro chino, es muy interesante. Échale un vistazo." },
+            { "speaker": "王明", "zh": "等一下，我读读这个。", "py": "Děng yíxià, wǒ dúdu zhège.", "es": "Un momento, voy a leer esto." },
+            { "speaker": "雨果", "zh": "我有点儿累，我们休息一下吧。", "py": "Wǒ yǒudiǎnr lèi, wǒmen xiūxi yíxià ba.", "es": "Estoy un poco cansado, descansemos un rato." },
+            { "speaker": "王明", "zh": "好，我们去喝一点儿茶。", "py": "Hǎo, wǒmen qù hē yìdiǎnr chá.", "es": "Vale, vamos a tomar un poco de té." }
+          ]
+        },
+        { "type": "grammar", "id": "yixia" },
+        { "type": "exercises", "count": 10, "types": ["choose-meaning", "order-words", "fill-blank", "dictation", "pinyin-input", "writing", "matching", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "u12-l5",
+      "title": "Lectura y repaso: mi fin de semana",
+      "zh": "复习",
+      "goal": "Leer un texto sobre aficiones y consolidar el vocabulario de la unidad.",
+      "minutes": 10,
+      "vocab": [
+        { "hanzi": "高兴", "pinyin": "gāoxìng", "es": "contento; alegre" },
+        { "hanzi": "常常", "pinyin": "chángcháng", "es": "a menudo" },
+        { "hanzi": "有时候", "pinyin": "yǒu shíhou", "es": "a veces" },
+        { "hanzi": "家", "pinyin": "jiā", "es": "casa; familia" },
+        { "hanzi": "学校", "pinyin": "xuéxiào", "es": "escuela" },
+        { "hanzi": "非常", "pinyin": "fēicháng", "es": "muy; extremadamente" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "Frecuencia: 常常, 有时候" },
+        {
+          "type": "reading",
+          "title": "El fin de semana de Hugo",
+          "text": "我叫雨果，我很喜欢运动。周末我常常和朋友去打球，有时候去游泳。星期六我和王明、安娜一起看了一个中国电影，非常有意思。星期天我在家休息，听音乐，看看书。我不会唱歌，我想学跳舞。我的周末很高兴！",
+          "es": "Me llamo Hugo y me gusta mucho el deporte. Los fines de semana suelo ir a jugar a la pelota con amigos y a veces voy a nadar. El sábado vi una película china con Wang Ming y Ana, fue muy interesante. El domingo descansé en casa, escuché música y leí un poco. No sé cantar; quiero aprender a bailar. ¡Mi fin de semana ha sido muy feliz!",
+          "questions": [
+            { "q": "¿Qué hace Hugo a menudo los fines de semana?", "options": ["Cantar con amigos", "Ir a jugar a la pelota con amigos", "Estudiar en la escuela", "Ver la tele"], "answer": 1, "explain": "周末我常常和朋友去打球。" },
+            { "q": "¿Qué hizo el sábado?", "options": ["Fue a nadar", "Vio una película china con amigos", "Bailó", "Descansó en casa"], "answer": 1, "explain": "星期六我和王明、安娜一起看了一个中国电影。" },
+            { "q": "¿Qué quiere aprender Hugo?", "options": ["A cantar", "A nadar", "A bailar", "A jugar a la pelota"], "answer": 2, "explain": "我不会唱歌，我想学跳舞。" }
+          ]
+        },
+        { "type": "exercises", "count": 12, "types": ["matching", "choose-meaning", "order-words", "build-sentence", "fill-blank", "dictation", "translate-to-es", "tone-choice", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    }
+  ]
+}
