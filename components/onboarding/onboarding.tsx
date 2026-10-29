@@ -88,7 +88,8 @@ export function Onboarding() {
       anki: { ...settings.anki, enabled: ankiEnabled },
       onboardingDone: true,
     });
-    router.replace(`/${chosen[0]}`);
+    // de vuelta a la portada: desde ahí se elige con qué idioma empezar
+    router.replace("/");
   };
 
   const choice = (active: boolean) =>

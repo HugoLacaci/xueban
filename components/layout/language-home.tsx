@@ -1,11 +1,13 @@
 "use client";
 /**
- * Raíz «/»: redirige al último idioma usado; con ?elegir=1 (o desde el selector) muestra la portada
+ * Raíz «/»: la portada «Tres puertas» es siempre la entrada a la app (también con ?elegir=1, enlaces
+ * antiguos). En la primera visita es la página de elección de idioma: las tres puertas están entornadas y
+ * al abrir una se da de alta ese idioma (mini-onboarding). Muestra la portada
  * «Tres puertas»: un panel-puerta por idioma con su cultura, progreso y acceso en un clic.
  * Ver design/DIRECTION.md § Portada.
  */
 import { useEffect, useMemo, useState } from "react";
-import { useRouter, useSearchParams } from "next/navigation";
+import { useRouter } from "next/navigation";
 import NextLink from "next/link";
 import { ArrowRight, Settings as SettingsIcon } from "lucide-react";
 import { useSettings, type LangSettings } from "@/lib/settings";
@@ -39,25 +41,13 @@ export function recommendLang(active: Lang[], sum: GlobalSummary | null): Lang |
 export function LanguageHome() {
   const settings = useSettings((s) => s.settings);
   const loaded = useSettings((s) => s.loaded);
-  const router = useRouter();
-  const sp = useSearchParams();
-  const choose = sp.get("elegir") === "1";
   const [sum, setSum] = useState<GlobalSummary | null>(null);
 
   useEffect(() => {
-    if (!loaded) return;
-    if (!settings.onboardingDone) {
-      router.replace("/bienvenida");
-      return;
-    }
-    if (!choose) router.replace(`/${settings.lastLang}`);
-  }, [loaded, settings.onboardingDone, settings.lastLang, choose, router]);
+    if (loaded && settings.onboardingDone) void globalSummary(LANGS).then(setSum);
+  }, [loaded, settings.onboardingDone, settings.activeLangs]);
 
-  useEffect(() => {
-    if (loaded && choose) void globalSummary(LANGS).then(setSum);
-  }, [loaded, choose, settings.activeLangs]);
-
-  if (!loaded || !choose) return null;
+  if (!loaded) return null;
   return <Portada sum={sum} />;
 }
 
@@ -67,7 +57,8 @@ function Portada({ sum }: { sum: GlobalSummary | null }) {
   const router = useRouter();
   const [now] = useState(() => new Date());
   const phase: DayPhase = dayPhase(now);
-  const active = settings.activeLangs.filter((l) => LANGS.includes(l));
+  const first = !settings.onboardingDone;
+  const active = first ? [] : settings.activeLangs.filter((l) => LANGS.includes(l));
   const inactive = LANGS.filter((l) => !active.includes(l));
   const order = [...active, ...inactive];
   const rec = recommendLang(active, sum);
@@ -114,11 +105,13 @@ function Portada({ sum }: { sum: GlobalSummary | null }) {
             <span className="font-serif-es text-lg font-semibold tracking-tight text-ink">Xuébàn</span>
           </span>
           <span className="flex items-center gap-1 text-sm text-ink-soft">
+            {first ? null : (
             <span className="flex min-h-11 items-center gap-1.5 rounded-full px-3" title="Racha global">
               <Lantern lit={(sum?.streak ?? 0) > 0} size={22} />
               <span className="tabular">{sum ? sum.streak : "–"}</span>
               <span className="sr-only">días de racha global</span>
             </span>
+            )}
             <NextLink href={`/${settings.lastLang}/ajustes`} className="flex size-11 items-center justify-center rounded-full hover:bg-paper-sunk focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ink" aria-label="Ajustes">
               <SettingsIcon className="size-5" />
             </NextLink>
@@ -128,7 +121,7 @@ function Portada({ sum }: { sum: GlobalSummary | null }) {
         {/* saludo y resumen global */}
         <section className="mt-6 sm:mt-8" aria-labelledby="portada-titulo">
           <p className="portal-enter text-[15px] text-ink-soft" style={{ animationDelay: "40ms" }}>
-            {esGreeting(hour)}, {name}
+            {first ? "Bienvenido" : `${esGreeting(hour)}, ${name}`}
             {active.map((l) => (
               <span key={l}>
                 {" · "}
@@ -137,8 +130,14 @@ function Portada({ sum }: { sum: GlobalSummary | null }) {
             ))}
           </p>
           <h1 id="portada-titulo" className="portal-enter mt-1 font-serif-es text-[clamp(34px,4.4vw,64px)] font-semibold leading-[1.05] tracking-tight text-ink" style={{ animationDelay: "80ms" }}>
-            ¿Qué quieres estudiar hoy?
+            {first ? "¿Qué quieres aprender?" : "¿Qué quieres estudiar hoy?"}
           </h1>
+          {first ? (
+            <p className="portal-enter mt-3 max-w-2xl text-[16px] text-ink-soft" style={{ animationDelay: "120ms" }}>
+              Elige un idioma para empezar. Puedes estudiar varios: cada uno guarda su propio progreso, repasos y mazos.
+            </p>
+          ) : null}
+          {first ? null : (
           <div className="portal-enter mt-4 flex min-h-12 flex-wrap items-center gap-2" style={{ animationDelay: "120ms" }}>
             {sum ? (
               <>
@@ -179,6 +178,7 @@ function Portada({ sum }: { sum: GlobalSummary | null }) {
               </>
             )}
           </div>
+          )}
         </section>
 
         {/* las tres puertas */}
@@ -202,6 +202,7 @@ function Portada({ sum }: { sum: GlobalSummary | null }) {
                 }}
                 onHoverSound={() => playPortalPluck(l, settings.sounds)}
                 onActivate={enter}
+                invite={first}
                 className={cn(
                   "w-full",
                   st === "inactive" ? "h-[290px]" : isRec ? "h-[390px]" : "h-[340px]",
@@ -214,11 +215,13 @@ function Portada({ sum }: { sum: GlobalSummary | null }) {
           })}
         </section>
 
+        {first ? null : (
         <footer className="mt-6 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-[15px] text-ink-soft">
           <NextLink href="/me" className="inline-flex min-h-11 items-center gap-1.5 underline-offset-4 hover:text-ink hover:underline">
             Ver todos mis idiomas <ArrowRight className="size-4" aria-hidden="true" />
           </NextLink>
         </footer>
+        )}
       </div>
 
       {/* transición: la puerta se abre a pantalla completa y continúa en el panel «Hoy» */}
@@ -260,7 +263,8 @@ function SetupDialog({ lang, onClose, phase }: { lang: Lang | null; onClose: () 
 
   const start = async () => {
     await updateLang(l, { ...draft, active: true });
-    await update({ activeLangs: settings.activeLangs.includes(l) ? settings.activeLangs : [...settings.activeLangs, l], lastLang: l });
+    const activeLangs = !settings.onboardingDone ? [l] : settings.activeLangs.includes(l) ? settings.activeLangs : [...settings.activeLangs, l];
+    await update({ activeLangs, lastLang: l, onboardingDone: true });
     setDraft({});
     onClose();
     router.push(`/${l}`);

@@ -65,13 +65,15 @@ interface HeroProps {
   onOpenChange?: (open: boolean) => void;
   onActivate?: (e: React.MouseEvent<HTMLElement>, lang: Lang) => void;
   onHoverSound?: () => void;
+  /** primera visita: la puerta no activa se pinta a todo color (invitación, sin tinta gris) */
+  invite?: boolean;
   style?: React.CSSProperties;
   className?: string;
 }
 
 /** Panel-puerta grande de la portada. */
 export const LangPortalHero = forwardRef<HTMLElement, HeroProps>(function LangPortalHero(
-  { lang, state, stats, phase, open, index, href, onOpenChange, onActivate, onHoverSound, style, className },
+  { lang, state, stats, phase, open, index, href, onOpenChange, onActivate, onHoverSound, invite, style, className },
   ref,
 ) {
   const m = LANG_META[lang];
@@ -183,7 +185,7 @@ export const LangPortalHero = forwardRef<HTMLElement, HeroProps>(function LangPo
   const common = {
     ref: setRefs,
     "data-skin": lang,
-    "data-state": state,
+    "data-state": invite ? "invite" : state,
     "data-open": open ? "true" : "false",
     className: cn("portal portal-enter text-left", className),
     style: { ...style, animationDelay: `${120 + index * 80}ms` },

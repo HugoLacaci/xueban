@@ -1,6 +1,5 @@
 "use client";
 import { useEffect, useState } from "react";
-import { usePathname, useRouter } from "next/navigation";
 import { useSettings } from "@/lib/settings";
 import { backupBeforeMigration } from "@/lib/db/backup";
 import { subscribeKnowledge } from "@/lib/knowledge";
@@ -20,8 +19,6 @@ function hexToRgbTriplet(hex: string): string {
 export function AppProviders({ children }: { children: React.ReactNode }) {
   const { settings, loaded, load, cyclePinyin, update } = useSettings();
   const [seeded, setSeeded] = useState(false);
-  const router = useRouter();
-  const pathname = usePathname();
 
   // Carga inicial: ajustes + semilla + conocimiento
   useEffect(() => {
@@ -70,11 +67,6 @@ export function AppProviders({ children }: { children: React.ReactNode }) {
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
   }, [cyclePinyin, update]);
-
-  // Onboarding
-  useEffect(() => {
-    if (loaded && seeded && !settings.onboardingDone && !pathname.startsWith("/bienvenida")) router.replace("/bienvenida");
-  }, [loaded, seeded, settings.onboardingDone, pathname, router]);
 
   // Service worker (PWA)
   useEffect(() => {

@@ -7,7 +7,7 @@ async function ready(page: Page) {
   const skip = page.getByText("Saltar y usar valores por defecto");
   if (await skip.count()) {
     await skip.click();
-    await page.waitForURL((u) => /^\/(zh|ja|ko)\/?$/.test(u.pathname));
+    await page.waitForURL((u) => u.pathname === "/");
   }
 }
 
@@ -48,7 +48,7 @@ test("cambiar de idioma desde la cabecera conserva la sección", async ({ page }
   await page.waitForTimeout(1200);
   for (const name of ["中文", "日本語", "한국어"]) await page.getByRole("button", { name: new RegExp(name) }).first().click();
   await page.getByText("Saltar y usar valores por defecto").click();
-  await page.waitForURL((u) => /^\/zh\/?$/.test(u.pathname));
+  await page.waitForURL((u) => u.pathname === "/");
   await page.goto("/zh/diccionario");
   await page.getByTestId("lang-switcher").click();
   await page.getByRole("menuitem").filter({ hasText: "日本語" }).first().click();

@@ -7,8 +7,10 @@ async function ready(page: Page) {
   const skip = page.getByText("Saltar y usar valores por defecto");
   if (await skip.count()) {
     await skip.click();
-    await page.waitForURL((u) => /^\/zh\/?$/.test(u.pathname));
+    // el onboarding vuelve a la portada; desde ahí se entra en el chino
+    await page.waitForURL((u) => u.pathname === "/");
   }
+  await page.goto("/zh");
 }
 
 test.describe("Xuébàn · flujos principales", () => {

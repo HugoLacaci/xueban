@@ -74,7 +74,7 @@ export function LanguageSwitcher({ className }: { className?: string }) {
         </div>
         <DropdownMenuSeparator className="my-2 h-px bg-line" />
         <div className="flex">
-          <DropdownMenuItem onSelect={() => router.push("/?elegir=1")} className="flex-1 cursor-pointer rounded-[8px] px-2 py-2 text-sm text-ink-soft outline-none data-[highlighted]:bg-paper-sunk">
+          <DropdownMenuItem onSelect={() => router.push("/")} className="flex-1 cursor-pointer rounded-[8px] px-2 py-2 text-sm text-ink-soft outline-none data-[highlighted]:bg-paper-sunk">
             Portada de idiomas
           </DropdownMenuItem>
           <DropdownMenuItem onSelect={() => router.push("/me")} className="flex-1 cursor-pointer rounded-[8px] px-2 py-2 text-right text-sm text-ink-soft outline-none data-[highlighted]:bg-paper-sunk">
