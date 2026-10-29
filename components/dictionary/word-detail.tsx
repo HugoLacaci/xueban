@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useMemo, useState } from "react";
-import Link from "next/link";
+import Link from "@/lib/languages/link";
 import { useLiveQuery } from "dexie-react-hooks";
 import { Check, Pencil, Plus, Star, StarOff } from "lucide-react";
 import { db } from "@/lib/db";
@@ -8,18 +8,19 @@ import { lookup, useDictionary } from "@/lib/dictionary/service";
 import { examplesFor, loadTatoeba, tatoebaLoaded } from "@/lib/examples";
 import { useKnowledge } from "@/lib/knowledge";
 import { useSettings } from "@/lib/settings";
-import { wordPinyin } from "@/lib/pinyin/convert";
+import { usePack } from "@/lib/languages/provider";
+import { externalLinks, levelLabel } from "@/lib/dictionary/service";
 import { Button } from "@/components/ui/button";
 import { Badge, Card, Input, Textarea } from "@/components/ui/primitives";
 import { toast } from "@/components/ui/toast";
-import { Pinyin } from "@/components/zh/pinyin";
-import { AudioButton } from "@/components/zh/audio-button";
-import { ChineseText, Hanzi } from "@/components/zh/chinese-text";
+import { Pinyin } from "@/components/target/reading";
+import { AudioButton } from "@/components/target/audio-button";
+import { ChineseText, Hanzi } from "@/components/target/target-text";
 import { SealTag } from "@/components/ornament/seal";
-import { TianZiGe } from "@/components/ornament/tianzige";
+import { WritingGrid as TianZiGe } from "@/components/ornament/writing-grid";
 import { QuickAddDialog } from "@/components/flashcards/quick-add";
-import { CharDetail } from "./char-detail";
 import { onWordSaved } from "@/lib/anki/hooks";
+import { Mixed } from "@/components/target/mixed";
 
 const POS_ES: Record<string, string> = {
   n: "sustantivo",
@@ -57,17 +58,19 @@ function SectionLabel({ children }: { children: React.ReactNode }) {
 }
 
 export function WordDetail({ word, onNavigate }: { word: string; onNavigate?: (w: string) => void }) {
+  const pack = usePack();
+  const CharDetail = pack.ui.CharacterDetail;
   const dictStatus = useDictionary((s) => s.status);
   const full = useDictionary((s) => s.full);
   const deck = useKnowledge((s) => s.deck);
   const showTrad = useSettings((s) => s.settings.showTraditional);
   const entries = useMemo(() => lookup(word), [word, dictStatus, full, deck]); // eslint-disable-line react-hooks/exhaustive-deps
   const inDeck = deck.get(word);
-  const fav = useLiveQuery(() => db.dictFavorites.get(word), [word]);
+  const fav = useLiveQuery(() => db.favorites.get(`${pack.id}:${word}`), [word, pack.id]);
   const [adding, setAdding] = useState(false);
   const [editing, setEditing] = useState(false);
   const [tatoebaTick, setTatoebaTick] = useState(0);
-  const chars = Array.from(word);
+  const chars = pack.characters.charsOf(word);
 
   useEffect(() => {
     if (!tatoebaLoaded()) void loadTatoeba().then(() => setTatoebaTick((t) => t + 1));
@@ -75,14 +78,14 @@ export function WordDetail({ word, onNavigate }: { word: string; onNavigate?: (w
   const examples = useMemo(() => examplesFor(word, 8), [word, tatoebaTick]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const first = entries[0];
-  const pinyin = first?.p ?? wordPinyin(word);
+  const pinyin = first?.p ?? pack.reading(word);
 
   const toggleFav = async () => {
     if (fav) {
-      await db.dictFavorites.delete(word);
+      await db.favorites.delete(`${pack.id}:${word}`);
       toast.info("Quitado de favoritos");
     } else {
-      await db.dictFavorites.put({ hanzi: word, pinyin, meaning: first?.es ?? first?.en?.slice(0, 2).join("; ") ?? "", at: Date.now() });
+      await db.favorites.put({ id: `${pack.id}:${word}`, lang: pack.id, hanzi: word, pinyin, meaning: first?.es ?? first?.en?.slice(0, 2).join("; ") ?? "", at: Date.now() });
       toast.success("Añadido a favoritos");
     }
   };
@@ -95,35 +98,35 @@ export function WordDetail({ word, onNavigate }: { word: string; onNavigate?: (w
         <div className="flex flex-wrap items-start justify-between gap-3">
           <div className="min-w-0 flex-1">
             <div className="flex flex-wrap items-end gap-x-4 gap-y-2">
-              {chars.length <= 4 ? (
-                <div className="flex items-center gap-1.5" lang="zh-CN">
+              {chars.length <= 4 && chars.length === Array.from(word).length ? (
+                <div className="flex items-center gap-1.5" lang={pack.bcp47}>
                   {chars.map((c, i) => (
                     <TianZiGe key={i} faint size={chars.length > 2 ? 64 : 84}>
-                      <Hanzi text={c} size={chars.length > 2 ? "xl" : "2xl"} font="serif" className="leading-none" />
+                      <Hanzi text={c} size={chars.length > 2 ? "xl" : "2xl"} font="serif" className={`leading-none ${pack.theme.fontClasses.serif}`} />
                     </TianZiGe>
                   ))}
                 </div>
               ) : (
-                <Hanzi text={word} size="xl" font="serif" />
+                <Hanzi text={word} size="xl" className={pack.theme.fontClasses.serif} />
               )}
               <div className="pb-1">
                 <div className="flex items-center gap-2">
                   <Pinyin text={pinyin} className="block text-2xl" />
                   <AudioButton text={word} size="lg" />
                 </div>
-                {showTrad && first?.t ? (
+                {showTrad && first?.t && pack.readingAid.altScript ? (
                   <span className="text-sm text-ink-faint">
-                    繁 <span lang="zh-CN" className="zh text-ink-soft">{first.t}</span>
+                    <Mixed>{pack.readingAid.altScript.glyph}</Mixed> <span lang={pack.bcp47} className={`${pack.meta.cssClass} text-ink-soft`}><Mixed>{first.t}</Mixed></span>
                   </span>
                 ) : null}
               </div>
             </div>
             <div className="mt-3 flex flex-wrap items-center gap-1.5">
-              {first?.hsk ? <SealTag>HSK {first.hsk === 7 ? "7–9" : first.hsk}</SealTag> : null}
-              {first?.hsk2 ? <Badge variant="outline">HSK 2.0 · nivel {first.hsk2}</Badge> : null}
+              {first && levelLabel(first) ? <SealTag>{levelLabel(first)}</SealTag> : null}
+              {pack.id === "zh" && first?.hsk && first?.hsk2 ? <Badge variant="outline">HSK 2.0 · nivel {first.hsk2}</Badge> : null}
               {first?.freq ? <Badge variant="muted">frecuencia #{first.freq.toLocaleString("es")}</Badge> : null}
-              {first?.pos?.length ? <Badge variant="outline">{first.pos.map((p) => POS_ES[p] ?? p).join(", ")}</Badge> : null}
-              {inDeck ? <Badge variant="jade">en tu mazo · {inDeck.category}</Badge> : null}
+              {first?.pos?.length ? <Badge variant="outline">{first.pos.map((p) => (pack.id === "zh" ? (POS_ES[p] ?? p) : p)).join(", ")}</Badge> : null}
+              {inDeck ? <Badge variant="jade">en tu mazo · <Mixed>{inDeck.category}</Mixed></Badge> : null}
             </div>
           </div>
           <div className="flex shrink-0 items-center gap-1.5">
@@ -158,7 +161,7 @@ export function WordDetail({ word, onNavigate }: { word: string; onNavigate?: (w
               ) : null}
               {e.es ? (
                 <div className="flex items-start gap-2">
-                  <p className="font-serif-es text-[22px] leading-snug text-ink">{e.es}</p>
+                  <p className="font-serif-es text-[22px] leading-snug text-ink"><Mixed>{e.es}</Mixed></p>
                   {inDeck ? (
                     <button className="mt-1 rounded p-1 text-ink-faint hover:bg-paper-sunk hover:text-ink" onClick={() => setEditing(true)} aria-label="Editar significado">
                       <Pencil className="size-4" />
@@ -173,7 +176,7 @@ export function WordDetail({ word, onNavigate }: { word: string; onNavigate?: (w
                       <span className="w-4 shrink-0 text-right text-xs tabular-nums text-ink-faint">{j + 1}</span>
                       <span>
                         {e.es && j === 0 ? <span className="mr-1.5 rounded-[3px] border border-line px-1 text-[10px] uppercase tracking-wide text-ink-faint">en</span> : null}
-                        {d}
+                        <Mixed>{d}</Mixed>
                       </span>
                     </li>
                   ))}
@@ -181,15 +184,15 @@ export function WordDetail({ word, onNavigate }: { word: string; onNavigate?: (w
               ) : null}
               {e.cl?.length ? (
                 <p className="mt-2 flex flex-wrap items-center gap-1.5 text-sm text-ink-faint">
-                  Clasificador{e.cl.length > 1 ? "es" : ""}:
+                  {pack.counters.name}:
                   {e.cl.map((c) => (
-                    <button key={c} className="zh-serif min-h-8 rounded-[6px] border border-line bg-paper-raised px-2 text-base leading-none text-ink hover:border-ink/40 hover:bg-paper-sunk" lang="zh-CN" onClick={() => onNavigate?.(c)}>
-                      {c}
+                    <button key={c} className="min-h-8 font-medium rounded-[6px] border border-line bg-paper-raised px-2 text-base leading-none text-ink hover:border-ink/40 hover:bg-paper-sunk" lang={pack.bcp47} onClick={() => onNavigate?.(c)}>
+                      <Mixed>{c}</Mixed>
                     </button>
                   ))}
                 </p>
               ) : null}
-              {!e.es && i === 0 ? <p className="mt-1.5 text-xs text-ink-faint">Definición en inglés (CC-CEDICT). Al añadirla al mazo podrás escribir tu significado en español.</p> : null}
+              {!e.es && i === 0 ? <p className="mt-1.5 text-xs text-ink-faint">Definición en inglés ({pack.dictionary.name}). Al añadirla al mazo podrás escribir tu significado en español.</p> : null}
             </div>
           ))}
         </div>
@@ -227,9 +230,19 @@ export function WordDetail({ word, onNavigate }: { word: string; onNavigate?: (w
             ))}
           </div>
         </Card>
-      ) : (
-        <CharDetail ch={word} onNavigate={onNavigate} />
-      )}
+      ) : chars.length === 1 ? (
+        <CharDetail char={word} onNavigate={onNavigate} />
+      ) : null}
+
+      {externalLinks(word).length ? (
+        <p className="flex flex-wrap gap-3 px-1 text-xs text-ink-faint">
+          {externalLinks(word).map((l) => (
+            <a key={l.name} href={l.url} target="_blank" rel="noreferrer" className="underline-offset-2 hover:text-ink hover:underline">
+              <Mixed>{l.name}</Mixed>
+            </a>
+          ))}
+        </p>
+      ) : null}
 
 
       {adding ? <QuickAddDialog open={adding} onOpenChange={setAdding} initialHanzi={word} source="dictionary" /> : null}
@@ -239,16 +252,17 @@ export function WordDetail({ word, onNavigate }: { word: string; onNavigate?: (w
 }
 
 function CharMini({ ch, onNavigate }: { ch: string; onNavigate?: (w: string) => void }) {
+  const pack = usePack();
   const status = useDictionary((s) => s.status);
   const e = useMemo(() => lookup(ch)[0], [ch, status]); // eslint-disable-line react-hooks/exhaustive-deps
   return (
     <button onClick={() => onNavigate?.(ch)} className="flex items-center gap-3 rounded-[10px] border border-line bg-paper-raised p-2 text-left shadow-[var(--shadow-paper)] transition-colors hover:border-ink/40 hover:bg-paper-sunk">
       <TianZiGe faint size={64}>
-        <Hanzi text={ch} size="xl" font="serif" className="leading-none" />
+        <Hanzi text={ch} size="xl" className={`leading-none ${pack.theme.fontClasses.serif}`} />
       </TianZiGe>
       <span className="min-w-0">
-        <Pinyin text={e?.p ?? wordPinyin(ch)} className="block text-base" />
-        <span className="font-serif-es block truncate text-sm text-ink-soft">{e?.es ?? e?.en?.slice(0, 2).join("; ") ?? ""}</span>
+        <Pinyin text={e?.p ?? pack.reading(ch)} className="block text-base" />
+        <span className="font-serif-es block truncate text-sm text-ink-soft"><Mixed>{e?.es ?? e?.en?.slice(0, 2).join("; ") ?? ""}</Mixed></span>
       </span>
     </button>
   );

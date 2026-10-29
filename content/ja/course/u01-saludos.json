@@ -1,0 +1,227 @@
+{
+  "id": "ja-u01",
+  "order": 2,
+  "title": "Saludos y presentaciones",
+  "zh": "あいさつと自己紹介",
+  "description": "Saludar según la hora, dar las gracias, despedirte, decir tu nombre y tu nacionalidad y presentar a alguien.",
+  "icon": "Hand",
+  "level": 1,
+  "lang": "ja",
+  "category": "Saludos y expresiones",
+  "checkpoint": { "exercises": 15 },
+  "lessons": [
+    {
+      "id": "ja-u01-l1",
+      "title": "Buenos días, gracias, adiós",
+      "zh": "おはようございます！",
+      "goal": "Saludar según la hora del día, dar las gracias y despedirte con educación.",
+      "minutes": 10,
+      "vocab": [
+        { "hanzi": "おはようございます", "pinyin": "おはようございます", "es": "buenos días" },
+        { "hanzi": "こんにちは", "pinyin": "こんにちは", "es": "hola; buenas tardes" },
+        { "hanzi": "こんばんは", "pinyin": "こんばんは", "es": "buenas noches (al llegar)" },
+        { "hanzi": "ありがとうございます", "pinyin": "ありがとうございます", "es": "muchas gracias" },
+        { "hanzi": "すみません", "pinyin": "すみません", "es": "perdón; disculpe; gracias (por la molestia)" },
+        { "hanzi": "さようなら", "pinyin": "さようなら", "es": "adiós" },
+        { "hanzi": "はい", "pinyin": "はい", "es": "sí" },
+        { "hanzi": "いいえ", "pinyin": "いいえ", "es": "no" },
+        { "hanzi": "元気", "pinyin": "げんき", "es": "bien de salud; con energía" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "Las expresiones de cada día" },
+        {
+          "type": "dialogue",
+          "title": "En la academia, por la mañana",
+          "lines": [
+            { "speaker": "ウーゴ", "zh": "田中先生、おはようございます。", "py": "たなか せんせい、おはようございます。", "es": "Buenos días, profesora Tanaka." },
+            { "speaker": "田中先生", "zh": "おはようございます、ウーゴさん。元気ですか。", "py": "おはようございます、ウーゴ さん。げんき です か。", "es": "Buenos días, Hugo. ¿Qué tal estás?" },
+            { "speaker": "ウーゴ", "zh": "はい、元気です。", "py": "はい、げんき です。", "es": "Sí, estoy bien." },
+            { "speaker": "田中先生", "zh": "はい、どうぞ。", "py": "はい、どうぞ。", "es": "Toma, aquí tienes." },
+            { "speaker": "ウーゴ", "zh": "ありがとうございます。", "py": "ありがとうございます。", "es": "Muchas gracias." },
+            { "speaker": "ウーゴ", "zh": "先生、さようなら。", "py": "せんせい、さようなら。", "es": "Adiós, profesora." },
+            { "speaker": "田中先生", "zh": "さようなら。また あした。", "py": "さようなら。また あした。", "es": "Adiós. Hasta mañana." }
+          ],
+          "notes": "先生 (せんせい, profesor/a) se pone detrás del apellido: 田中先生. 〜さん va detrás del nombre de otra persona (nunca del tuyo). どうぞ = «toma; adelante; por favor (ofreciendo)». また あした = «hasta mañana». La profesora entrega una hoja entre las líneas 4 y 5; las líneas 6 y 7 son al final de la clase."
+        },
+        { "type": "grammar", "id": "desu" },
+        {
+          "type": "explain",
+          "title": "Saludos según la hora y la reverencia (お辞儀)",
+          "markdown": "| Hora | Saludo | Nota |\n|---|---|---|\n| Hasta las 10–11 | **おはようございます** | Con amigos: おはよう |\n| Mediodía y tarde | **こんにちは** | No se usa con la familia |\n| Desde que oscurece | **こんばんは** | Al llegar, no al irte |\n| Al irte a dormir | おやすみなさい | «Buenas noches» de despedida |\n\n**さようなら** es bastante solemne: suena a «adiós por un tiempo». Con compañeros se dice じゃあ、また (hasta luego) y en el trabajo, お先に失礼します (me voy antes, perdón).\n\n**すみません** es la palabra comodín: sirve para pedir perdón, para llamar a alguien («¡disculpe!») y para dar las gracias cuando alguien se ha molestado por ti.\n\n**La reverencia (お辞儀 おじぎ)**: en Japón el saludo se acompaña con una inclinación, no con besos ni abrazos.\n\n- **15°** (cabeza y hombros): saludo cotidiano, compañeros, dar las gracias rápido.\n- **30°**: profesores, clientes, presentarte por primera vez.\n- **45°**: disculpas serias o agradecimientos muy formales.\n\nEspalda recta, mirada hacia el suelo, manos a los lados (hombres) o juntas delante (mujeres, habitualmente). A un extranjero no se le exige perfección: una inclinación ligera y sincera queda muy bien. Si te ofrecen la mano, dásela sin apretar demasiado."
+        },
+        { "type": "exercises", "count": 10, "types": ["choose-meaning", "listen-choose", "pinyin-input", "matching", "order-words", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ja-u01-l2",
+      "title": "Encantado: me llamo Hugo",
+      "zh": "はじめまして",
+      "goal": "Presentarte con はじめまして, tu nombre y よろしくお願いします, usando は para el tema.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "はじめまして", "pinyin": "はじめまして", "es": "encantado/a (la primera vez)" },
+        { "hanzi": "よろしくお願いします", "pinyin": "よろしくおねがいします", "es": "encantado; cuento contigo (fórmula al presentarse)" },
+        { "hanzi": "こちらこそ", "pinyin": "こちらこそ", "es": "igualmente; el gusto es mío" },
+        { "hanzi": "私", "pinyin": "わたし", "es": "yo" },
+        { "hanzi": "あなた", "pinyin": "あなた", "es": "tú; usted (se evita)" },
+        { "hanzi": "名前", "pinyin": "なまえ", "es": "nombre" },
+        { "hanzi": "〜さん", "pinyin": "さん", "es": "sr./sra. (tras el nombre de otra persona)" },
+        { "hanzi": "先生", "pinyin": "せんせい", "es": "profesor/a; doctor/a" },
+        { "hanzi": "学生", "pinyin": "がくせい", "es": "estudiante" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "Lo que dices al conocer a alguien" },
+        {
+          "type": "dialogue",
+          "title": "El primer día de clase",
+          "lines": [
+            { "speaker": "さくら", "zh": "はじめまして。私は さくらです。", "py": "はじめまして。わたし は さくら です。", "es": "Encantada. Soy Sakura." },
+            { "speaker": "ウーゴ", "zh": "はじめまして。ウーゴです。", "py": "はじめまして。ウーゴ です。", "es": "Encantado. Soy Hugo." },
+            { "speaker": "さくら", "zh": "ウーゴさん、よろしくお願いします。", "py": "ウーゴ さん、よろしく おねがいします。", "es": "Hugo, encantada de conocerte." },
+            { "speaker": "ウーゴ", "zh": "こちらこそ、よろしくお願いします。", "py": "こちらこそ、よろしく おねがいします。", "es": "Igualmente, el gusto es mío." },
+            { "speaker": "田中先生", "zh": "みなさん、はじめまして。私は 田中です。日本語の 先生です。", "py": "みなさん、はじめまして。わたし は たなか です。にほんご の せんせい です。", "es": "Hola a todos, encantada. Soy Tanaka. Soy la profesora de japonés." },
+            { "speaker": "ウーゴ", "zh": "田中先生、よろしくお願いします。", "py": "たなか せんせい、よろしく おねがいします。", "es": "Profesora Tanaka, encantado." }
+          ],
+          "notes": "みなさん = todos ustedes. 日本語の 先生 = profesora de japonés (の lo verás en la lección 4). Fíjate: la profesora dice 私は 田中です, sin さん ni 先生: nunca se usan con uno mismo."
+        },
+        { "type": "grammar", "id": "wa-topic" },
+        {
+          "type": "explain",
+          "title": "〜さん, apellidos y el «tú» que no se usa",
+          "markdown": "- **〜さん** va detrás del nombre o apellido de **otra persona**: ウーゴさん, 田中さん. Vale para hombres y mujeres. **Nunca** con tu propio nombre: decir «ウーゴさんです» suena a que te llamas a ti mismo «don Hugo».\n- **先生** sustituye a さん para profesores, médicos o abogados: 田中先生. A tu profesora le dirás simplemente 先生.\n- Entre adultos se usa sobre todo el **apellido**: 田中さん. El nombre de pila (さくらさん) es para compañeros jóvenes o cuando la otra persona lo propone.\n- **あなた** existe, pero llamar «tú» a alguien suena distante o brusco. Lo natural es usar su nombre: ウーゴさんは 学生ですか (¿Hugo es estudiante? = ¿eres estudiante?).\n- **よろしくお願いします** no tiene traducción exacta: «te pido que me trates bien; cuento contigo». Se dice al presentarse, acompañado de una reverencia de unos 30°."
+        },
+        { "type": "exercises", "count": 10, "types": ["choose-meaning", "listen-choose", "pinyin-input", "order-words", "fill-blank", "particle", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ja-u01-l3",
+      "title": "¿Eres español?",
+      "zh": "スペイン人ですか",
+      "goal": "Decir tu nacionalidad y ocupación, preguntar con か y negar con じゃありません.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "スペイン", "pinyin": "スペイン", "es": "España" },
+        { "hanzi": "日本", "pinyin": "にほん", "es": "Japón" },
+        { "hanzi": "アメリカ", "pinyin": "アメリカ", "es": "Estados Unidos" },
+        { "hanzi": "〜人", "pinyin": "じん", "es": "persona de… (nacionalidad)" },
+        { "hanzi": "大学生", "pinyin": "だいがくせい", "es": "estudiante universitario" },
+        { "hanzi": "会社員", "pinyin": "かいしゃいん", "es": "empleado/a de empresa" },
+        { "hanzi": "そうです", "pinyin": "そうです", "es": "así es; sí" },
+        { "hanzi": "そうですか", "pinyin": "そうですか", "es": "ah, ¿sí?; ya veo" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "Nacionalidad = país + 人" },
+        {
+          "type": "dialogue",
+          "title": "¿De dónde eres?",
+          "lines": [
+            { "speaker": "けん", "zh": "ウーゴさんは アメリカ人ですか。", "py": "ウーゴ さん は アメリカじん です か。", "es": "Hugo, ¿eres estadounidense?" },
+            { "speaker": "ウーゴ", "zh": "いいえ、アメリカ人じゃありません。スペイン人です。", "py": "いいえ、アメリカじん じゃ ありません。スペインじん です。", "es": "No, no soy estadounidense. Soy español." },
+            { "speaker": "けん", "zh": "そうですか。大学生ですか。", "py": "そう です か。だいがくせい です か。", "es": "Ah, ¿sí? ¿Eres universitario?" },
+            { "speaker": "ウーゴ", "zh": "はい、そうです。けんさんは？", "py": "はい、そう です。けん さん は？", "es": "Sí, así es. ¿Y tú, Ken?" },
+            { "speaker": "けん", "zh": "私は 日本人です。会社員です。", "py": "わたし は にほんじん です。かいしゃいん です。", "es": "Yo soy japonés. Trabajo en una empresa." },
+            { "speaker": "ウーゴ", "zh": "そうですか。", "py": "そう です か。", "es": "Ya veo." }
+          ],
+          "notes": "けんさんは？ (con entonación de pregunta) = «¿y tú, Ken?»: el tema con は y nada más. そうですか dicho con entonación que baja no es una pregunta: significa «ah, ya veo»."
+        },
+        { "type": "grammar", "id": "ka-question" },
+        {
+          "type": "explain",
+          "title": "Negar: じゃありません",
+          "markdown": "La negación de です es **じゃありません** (hablado) o **ではありません** (más formal y escrito):\n\n| Afirmativa | Negativa |\n|---|---|\n| スペイン人**です**。 Soy español. | スペイン人**じゃありません**。 No soy español. |\n| 学生**です**。 Soy estudiante. | 学生**ではありません**。 No soy estudiante. |\n\nPara responder a una pregunta con か:\n\n- **はい、そうです。** Sí, así es.\n- **いいえ、ちがいます。** No, no es así. (ちがいます = «es diferente»)\n\nCuidado: un japonés rara vez suelta un «いいえ» seco; suele suavizar con いいえ、… y la información correcta, como hace Hugo en el diálogo."
+        },
+        { "type": "exercises", "count": 12, "types": ["choose-meaning", "listen-choose", "pinyin-input", "order-words", "build-sentence", "fill-blank", "translate-to-es", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ja-u01-l4",
+      "title": "Te presento a mi amiga",
+      "zh": "私の友だちです",
+      "goal": "Presentar a otras personas con こちらは, decir «de» con の y «también» con も.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "こちら", "pinyin": "こちら", "es": "esta persona; este lado (cortés)" },
+        { "hanzi": "友だち", "pinyin": "ともだち", "es": "amigo/a" },
+        { "hanzi": "〜の", "pinyin": "の", "es": "de (posesión, pertenencia)" },
+        { "hanzi": "〜も", "pinyin": "も", "es": "también" },
+        { "hanzi": "大学", "pinyin": "だいがく", "es": "universidad" },
+        { "hanzi": "日本語", "pinyin": "にほんご", "es": "idioma japonés" },
+        { "hanzi": "クラス", "pinyin": "クラス", "es": "clase; grupo" },
+        { "hanzi": "みなさん", "pinyin": "みなさん", "es": "todos (ustedes)" }
+      ],
+      "steps": [
+        { "type": "vocab" },
+        {
+          "type": "dialogue",
+          "title": "En la cafetería de la universidad",
+          "lines": [
+            { "speaker": "ウーゴ", "zh": "けんさん、こちらは さくらさんです。私の 友だちです。", "py": "けん さん、こちら は さくら さん です。わたし の ともだち です。", "es": "Ken, te presento a Sakura. Es mi amiga." },
+            { "speaker": "さくら", "zh": "はじめまして。さくらです。よろしくお願いします。", "py": "はじめまして。さくら です。よろしく おねがいします。", "es": "Encantada. Soy Sakura." },
+            { "speaker": "けん", "zh": "けんです。よろしくお願いします。さくらさんも 学生ですか。", "py": "けん です。よろしく おねがいします。さくら さん も がくせい です か。", "es": "Soy Ken, encantado. ¿Tú también eres estudiante, Sakura?" },
+            { "speaker": "さくら", "zh": "はい、私も 学生です。マドリードの 大学の 学生です。", "py": "はい、わたし も がくせい です。マドリード の だいがく の がくせい です。", "es": "Sí, yo también soy estudiante. Estudio en una universidad de Madrid." },
+            { "speaker": "けん", "zh": "そうですか。私は 田中先生の 友だちです。", "py": "そう です か。わたし は たなか せんせい の ともだち です。", "es": "Ah, ¿sí? Yo soy amigo de la profesora Tanaka." },
+            { "speaker": "ウーゴ", "zh": "田中先生は 私の 日本語の 先生です。", "py": "たなか せんせい は わたし の にほんご の せんせい です。", "es": "La profesora Tanaka es mi profesora de japonés." }
+          ],
+          "notes": "こちらは〜です es la forma cortés de presentar a alguien («esta persona es…»); señalar con el dedo se considera de mala educación, mejor con la mano abierta. マドリードの 大学の 学生: varios の seguidos, de lo general a lo concreto."
+        },
+        { "type": "grammar", "id": "no" },
+        { "type": "grammar", "id": "mo" },
+        { "type": "exercises", "count": 12, "types": ["choose-meaning", "listen-choose", "order-words", "fill-blank", "particle", "translate-to-es", "dictation", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ja-u01-l5",
+      "title": "Lectura y repaso de la unidad",
+      "zh": "ふくしゅう",
+      "goal": "Leer una presentación completa, despedirte al acabar la clase y consolidar la unidad.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "今日", "pinyin": "きょう", "es": "hoy" },
+        { "hanzi": "明日", "pinyin": "あした", "es": "mañana (el día siguiente)" },
+        { "hanzi": "じゃあ", "pinyin": "じゃあ", "es": "bueno, entonces" },
+        { "hanzi": "また", "pinyin": "また", "es": "otra vez; de nuevo" },
+        { "hanzi": "ありがとうございました", "pinyin": "ありがとうございました", "es": "muchas gracias (por lo que ya hiciste)" },
+        { "hanzi": "東京", "pinyin": "とうきょう", "es": "Tokio" },
+        { "hanzi": "〜語", "pinyin": "ご", "es": "idioma (sufijo): 日本語, スペイン語" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "Para despedirte y hablar de idiomas" },
+        {
+          "type": "dialogue",
+          "title": "Al terminar la clase",
+          "lines": [
+            { "speaker": "田中先生", "zh": "みなさん、今日は ここまでです。", "py": "みなさん、きょう は ここ まで です。", "es": "Bueno, por hoy lo dejamos aquí." },
+            { "speaker": "ウーゴ", "zh": "先生、ありがとうございました。", "py": "せんせい、ありがとうございました。", "es": "Muchas gracias, profesora." },
+            { "speaker": "さくら", "zh": "ウーゴさん、じゃあ、また 明日。", "py": "ウーゴ さん、じゃあ、また あした。", "es": "Hugo, bueno, hasta mañana." },
+            { "speaker": "ウーゴ", "zh": "はい、また 明日。", "py": "はい、また あした。", "es": "Sí, hasta mañana." },
+            { "speaker": "ウーゴ", "zh": "先生、さようなら。", "py": "せんせい、さようなら。", "es": "Adiós, profesora." },
+            { "speaker": "田中先生", "zh": "さようなら。気をつけて。", "py": "さようなら。き を つけて。", "es": "Adiós. Ten cuidado (al volver)." }
+          ],
+          "notes": "ここまで = hasta aquí. 気をつけて = «ten cuidado», despedida muy habitual. ありがとうございました (en pasado) se usa al acabar algo: una clase, una compra, un favor."
+        },
+        {
+          "type": "reading",
+          "title": "Hugo se presenta en clase",
+          "text": "みなさん、はじめまして。私は ウーゴです。スペイン人です。マドリードの 大学の 学生です。田中先生は 私の 日本語の 先生です。さくらさんは 日本人です。私の 友だちです。さくらさんも 大学生です。けんさんは 会社員です。田中先生の 友だちです。どうぞ よろしくお願いします。",
+          "es": "Hola a todos, encantado. Soy Hugo. Soy español. Soy estudiante de una universidad de Madrid. La profesora Tanaka es mi profesora de japonés. Sakura es japonesa. Es mi amiga. Sakura también es universitaria. Ken trabaja en una empresa. Es amigo de la profesora Tanaka. Encantado de conoceros.",
+          "questions": [
+            { "q": "¿Quién es Sakura?", "options": ["La profesora de Hugo", "Una amiga japonesa de Hugo", "Una empleada de empresa", "Una estudiante española"], "answer": 1, "explain": "さくらさんは 日本人です。私の 友だちです。" },
+            { "q": "¿Qué hace Ken?", "options": ["Es estudiante universitario", "Es profesor de japonés", "Trabaja en una empresa", "No se dice"], "answer": 2, "explain": "けんさんは 会社員です。" },
+            { "q": "¿Qué significa 田中先生は 私の 日本語の 先生です?", "options": ["Tanaka es mi amiga japonesa", "La profesora Tanaka es mi profesora de japonés", "Soy estudiante de Tanaka en Japón", "Tanaka es estudiante de japonés"], "answer": 1, "explain": "私の 日本語の 先生 = mi profesora de japonés; の encadena «de»." }
+          ]
+        },
+        { "type": "exercises", "count": 12, "types": ["matching", "choose-meaning", "listen-choose", "order-words", "build-sentence", "fill-blank", "dictation", "translate-to-es", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    }
+  ]
+}

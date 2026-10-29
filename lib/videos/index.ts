@@ -1,48 +1,30 @@
 "use client";
 import { db, type Video, type VideoLine } from "@/lib/db";
 import { withBase } from "@/lib/base-path";
+import { getActiveLang } from "@/lib/languages/registry";
+import type { Lang } from "@/lib/languages/types";
 
-export interface CuratedVideoMeta {
-  id: string;
-  title: string;
-  channel?: string;
-  thumbnail?: string;
-  durationSeconds?: number;
-  level: number;
-  lines: number;
-  description?: string;
-  tags: string[];
-}
+export type { CuratedVideoMeta, VideoDoc } from "./types";
+import type { CuratedVideoMeta, VideoDoc } from "./types";
 
-export interface VideoDoc {
-  id: string;
-  title: string;
-  channel?: string;
-  thumbnail?: string;
-  durationSeconds?: number;
-  level?: number;
-  description?: string;
-  tags?: string[];
-  lines: VideoLine[];
-  reviewed?: boolean;
-  auto?: boolean;
-}
-
-let indexCache: CuratedVideoMeta[] | null = null;
-export async function loadCuratedIndex(): Promise<CuratedVideoMeta[]> {
-  if (indexCache) return indexCache;
+const indexCache = new Map<string, CuratedVideoMeta[]>();
+export async function loadCuratedIndex(lang: Lang = getActiveLang()): Promise<CuratedVideoMeta[]> {
+  const cached = indexCache.get(lang);
+  if (cached) return cached;
+  let list: CuratedVideoMeta[] = [];
   try {
-    const res = await fetch(withBase("/videos/index.json"));
-    indexCache = res.ok ? ((await res.json()) as CuratedVideoMeta[]) : [];
+    const res = await fetch(withBase(`/videos/${lang}/index.json`));
+    list = res.ok ? ((await res.json()) as CuratedVideoMeta[]) : [];
   } catch {
-    indexCache = [];
+    list = [];
   }
-  return indexCache;
+  indexCache.set(lang, list);
+  return list;
 }
 
 export async function loadCuratedVideo(id: string): Promise<VideoDoc | null> {
   try {
-    const res = await fetch(withBase(`/videos/${id}.json`));
+    const res = await fetch(withBase(`/videos/${getActiveLang()}/${id}.json`));
     if (!res.ok) return null;
     return (await res.json()) as VideoDoc;
   } catch {
@@ -59,10 +41,11 @@ export async function loadVideo(id: string): Promise<VideoDoc | null> {
 
 /** Añade un vídeo por URL usando la ruta API local (yt-dlp / youtubei). */
 export async function addVideoByUrl(url: string): Promise<Video> {
-  const res = await fetch(withBase(`/api/youtube/transcript?url=${encodeURIComponent(url)}`));
+  const lang = getActiveLang();
+  const res = await fetch(withBase(`/api/youtube/transcript?url=${encodeURIComponent(url)}&lang=${lang}`));
   const data = (await res.json()) as { error?: string; id: string; title: string; channel?: string; thumbnail?: string; lines: VideoLine[] };
   if (!res.ok || data.error) throw new Error(data.error ?? "Error al obtener la transcripción");
-  const video: Video = { id: data.id, title: data.title, channel: data.channel, thumbnail: data.thumbnail, lines: data.lines, source: "user", addedAt: Date.now(), watchedSeconds: 0 };
+  const video: Video = { id: data.id, lang, title: data.title, channel: data.channel, thumbnail: data.thumbnail, lines: data.lines, source: "user", addedAt: Date.now(), watchedSeconds: 0 };
   await db.videos.put(video);
   return video;
 }

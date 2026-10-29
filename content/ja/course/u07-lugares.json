@@ -1,0 +1,238 @@
+{
+  "id": "ja-u07",
+  "order": 8,
+  "title": "Lugares y direcciones",
+  "zh": "場所と道案内",
+  "description": "Preguntar dónde está algo, decir adónde vas, entender indicaciones por la calle, describir posiciones y quedar en una estación de Tokio.",
+  "icon": "MapPin",
+  "level": 1,
+  "lang": "ja",
+  "category": "Lugares",
+  "checkpoint": { "exercises": 15 },
+  "lessons": [
+    {
+      "id": "ja-u07-l1",
+      "title": "¿Hay un banco por aquí?",
+      "zh": "銀行はどこにありますか",
+      "goal": "Preguntar si hay un lugar cerca y dónde está, con 〜に あります.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "どこ", "pinyin": "どこ", "es": "¿dónde?" },
+        { "hanzi": "ここ", "pinyin": "ここ", "es": "aquí" },
+        { "hanzi": "あそこ", "pinyin": "あそこ", "es": "allí (lejos de los dos)" },
+        { "hanzi": "銀行", "pinyin": "ぎんこう", "es": "banco" },
+        { "hanzi": "郵便局", "pinyin": "ゆうびんきょく", "es": "oficina de correos" },
+        { "hanzi": "病院", "pinyin": "びょういん", "es": "hospital" },
+        { "hanzi": "図書館", "pinyin": "としょかん", "es": "biblioteca" },
+        { "hanzi": "公園", "pinyin": "こうえん", "es": "parque" },
+        { "hanzi": "近く", "pinyin": "ちかく", "es": "cerca; los alrededores" },
+        { "hanzi": "隣", "pinyin": "となり", "es": "al lado; vecino" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "Lugares de la ciudad" },
+        {
+          "type": "dialogue",
+          "title": "Buscando un banco en Tokio",
+          "lines": [
+            { "speaker": "ウーゴ", "zh": "すみません、この 近くに 銀行が ありますか。", "py": "すみません、この ちかく に ぎんこう が あります か。", "es": "Perdone, ¿hay algún banco por aquí cerca?" },
+            { "speaker": "女の人", "zh": "銀行ですか。駅の 近くに ありますよ。", "py": "ぎんこう です か。えき の ちかく に あります よ。", "es": "¿Un banco? Hay uno cerca de la estación." },
+            { "speaker": "ウーゴ", "zh": "駅は どこですか。", "py": "えき は どこ です か。", "es": "¿Dónde está la estación?" },
+            { "speaker": "女の人", "zh": "あそこです。あの 白い 建物です。", "py": "あそこ です。あの しろい たてもの です。", "es": "Allí. Es aquel edificio blanco." },
+            { "speaker": "ウーゴ", "zh": "ありがとうございます。郵便局も ありますか。", "py": "ありがとうございます。ゆうびんきょく も あります か。", "es": "Gracias. ¿Y hay también una oficina de correos?" },
+            { "speaker": "女の人", "zh": "はい。郵便局は 銀行の 隣に あります。", "py": "はい。ゆうびんきょく は ぎんこう の となり に あります。", "es": "Sí. Correos está al lado del banco." }
+          ],
+          "notes": "建物 (たてもの) = edificio. 女の人 = una mujer (aquí, una transeúnte). Fíjate en el cambio de partícula: 近くに 銀行**が** あります (hay un banco: información nueva) / 郵便局**は** 銀行の 隣に あります (correos, que ya hemos mencionado, está al lado del banco)."
+        },
+        { "type": "grammar", "id": "ni-aru-existence" },
+        {
+          "type": "explain",
+          "title": "Orientarse en Japón",
+          "markdown": "- **Las calles casi nunca tienen nombre.** Las direcciones japonesas se basan en barrios y manzanas numeradas, así que la gente se orienta por **puntos de referencia**: la estación, un konbini, un banco, un semáforo.\n- **El 交番 (こうばん)**, la pequeña caseta de policía de cada barrio, está para ayudarte: preguntar el camino ahí es lo más normal del mundo.\n- Las estaciones grandes tienen muchas salidas con nombre: **東口** (salida este), **西口** (oeste), **北口**, **南口**. Al quedar con alguien, di siempre la salida.\n- **〜は どこですか** pregunta directamente por algo que sabes que existe (¿dónde está la estación?). **〜に 〜が ありますか** pregunta si existe algo en un lugar (¿hay un banco cerca?)."
+        },
+        { "type": "exercises", "count": 12, "types": ["choose-meaning", "listen-choose", "pinyin-input", "particle", "fill-blank", "order-words", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ja-u07-l2",
+      "title": "¿Adónde vas el sábado?",
+      "zh": "どこへ行きますか",
+      "goal": "Decir adónde vas, de dónde vienes y cuándo vuelves con へ / に y 行きます・来ます・帰ります.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "行きます", "pinyin": "いきます", "es": "ir" },
+        { "hanzi": "来ます", "pinyin": "きます", "es": "venir" },
+        { "hanzi": "帰ります", "pinyin": "かえります", "es": "volver (a casa, al país)" },
+        { "hanzi": "〜へ", "pinyin": "へ", "es": "a; hacia (dirección; se lee «e»)" },
+        { "hanzi": "家", "pinyin": "いえ", "es": "casa" },
+        { "hanzi": "京都", "pinyin": "きょうと", "es": "Kioto" },
+        { "hanzi": "一緒に", "pinyin": "いっしょに", "es": "juntos" },
+        { "hanzi": "休みます", "pinyin": "やすみます", "es": "descansar" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "Ir, venir, volver" },
+        {
+          "type": "dialogue",
+          "title": "Planes para el fin de semana",
+          "lines": [
+            { "speaker": "けん", "zh": "ウーゴさん、土曜日は どこへ 行きますか。", "py": "ウーゴ さん、どようび は どこ へ いきます か。", "es": "Hugo, ¿adónde vas el sábado?" },
+            { "speaker": "ウーゴ", "zh": "京都へ 行きます。", "py": "きょうと へ いきます。", "es": "Voy a Kioto." },
+            { "speaker": "けん", "zh": "いいですね。だれと 行きますか。", "py": "いい です ね。だれ と いきます か。", "es": "¡Qué bien! ¿Con quién vas?" },
+            { "speaker": "ウーゴ", "zh": "さくらさんと 行きます。日曜日に 東京へ 帰ります。けんさんは？", "py": "さくら さん と いきます。にちようび に とうきょう へ かえります。けん さん は？", "es": "Voy con Sakura. El domingo vuelvo a Tokio. ¿Y tú, Ken?" },
+            { "speaker": "けん", "zh": "私は どこへも 行きません。家で 休みます。", "py": "わたし は どこ へ も いきません。いえ で やすみます。", "es": "Yo no voy a ningún sitio. Descanso en casa." },
+            { "speaker": "ウーゴ", "zh": "じゃあ、来週 一緒に 公園へ 行きませんか。", "py": "じゃあ、らいしゅう いっしょ に こうえん へ いきません か。", "es": "Pues ¿por qué no vamos juntos al parque la semana que viene?" },
+            { "speaker": "けん", "zh": "いいですね。行きましょう。", "py": "いい です ね。いきましょう。", "es": "¡Buena idea! Vamos." }
+          ],
+          "notes": "だれと = con quién (と de compañía). どこへも 行きません = no voy a ninguna parte (pregunta + も + negativo = «ningún…»). Ahora Hugo está de viaje en Japón: por eso «vuelve» (帰ります) a Tokio, donde se aloja."
+        },
+        { "type": "grammar", "id": "he-ni-direction" },
+        {
+          "type": "explain",
+          "title": "行く, 来る y 帰る no son como en español",
+          "markdown": "- **来ます** (venir) es moverse **hacia donde está el hablante**. En español decimos «ya voy» cuando nos llaman; en japonés también se dice 今 行きます («ya voy»), así que aquí coincidimos.\n- **帰ります** es «volver **a tu sitio**»: a casa, a tu país, a tu hotel. Al salir del trabajo, un japonés no dice «me voy», sino 帰ります. Si vas a casa de un amigo, es 行きます; a la tuya, 帰ります.\n- **へ y に** con verbos de movimiento: ambos sirven. へ (que se lee *e*) subraya la dirección; に, el destino. 京都へ 行きます = 京都に 行きます.\n- Con 家 y うち: うちへ 帰ります (vuelvo a casa)."
+        },
+        { "type": "exercises", "count": 12, "types": ["choose-meaning", "listen-choose", "particle", "conjugation", "fill-blank", "build-sentence", "translate-to-es", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ja-u07-l3",
+      "title": "Todo recto y a la derecha",
+      "zh": "まっすぐ行ってください",
+      "goal": "Entender y dar indicaciones encadenando acciones con la forma -て.",
+      "minutes": 15,
+      "vocab": [
+        { "hanzi": "右", "pinyin": "みぎ", "es": "derecha" },
+        { "hanzi": "左", "pinyin": "ひだり", "es": "izquierda" },
+        { "hanzi": "まっすぐ", "pinyin": "まっすぐ", "es": "todo recto" },
+        { "hanzi": "曲がります", "pinyin": "まがります", "es": "girar; doblar" },
+        { "hanzi": "渡ります", "pinyin": "わたります", "es": "cruzar" },
+        { "hanzi": "道", "pinyin": "みち", "es": "calle; camino" },
+        { "hanzi": "交差点", "pinyin": "こうさてん", "es": "cruce" },
+        { "hanzi": "橋", "pinyin": "はし", "es": "puente" },
+        { "hanzi": "歩きます", "pinyin": "あるきます", "es": "andar; caminar" },
+        { "hanzi": "〜ぐらい", "pinyin": "ぐらい", "es": "aproximadamente" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "Indicaciones" },
+        {
+          "type": "dialogue",
+          "title": "En el 交番",
+          "lines": [
+            { "speaker": "ウーゴ", "zh": "すみません、図書館は どこですか。", "py": "すみません、としょかん は どこ です か。", "es": "Perdone, ¿dónde está la biblioteca?" },
+            { "speaker": "警官", "zh": "この 道を まっすぐ 行って、二つ目の 交差点を 右に 曲がって ください。", "py": "この みち を まっすぐ いって、ふたつめ の こうさてん を みぎ に まがって ください。", "es": "Siga recto por esta calle y, en el segundo cruce, gire a la derecha." },
+            { "speaker": "ウーゴ", "zh": "二つ目の 交差点を 右ですね。", "py": "ふたつめ の こうさてん を みぎ です ね。", "es": "En el segundo cruce a la derecha, ¿verdad?" },
+            { "speaker": "警官", "zh": "はい。それから、橋を 渡って ください。図書館は 橋の 前に あります。", "py": "はい。それから、はし を わたって ください。としょかん は はし の まえ に あります。", "es": "Eso es. Luego cruce el puente. La biblioteca está delante del puente." },
+            { "speaker": "ウーゴ", "zh": "遠いですか。", "py": "とおい です か。", "es": "¿Está lejos?" },
+            { "speaker": "警官", "zh": "いいえ、歩いて 五分ぐらいです。", "py": "いいえ、あるいて ごふん ぐらい です。", "es": "No, a unos cinco minutos andando." },
+            { "speaker": "ウーゴ", "zh": "わかりました。ありがとうございました。", "py": "わかりました。ありがとうございました。", "es": "Entendido. Muchas gracias." }
+          ],
+          "notes": "警官 (けいかん) = policía. 二つ目 (ふたつめ) = el segundo: 〜目 convierte el número en ordinal. 道を 行きます / 橋を 渡ります: con verbos de movimiento, を marca el espacio por el que pasas. 遠い = lejos. 歩いて = a pie, andando."
+        },
+        { "type": "grammar", "id": "te-form" },
+        {
+          "type": "explain",
+          "title": "De 〜ます a 〜て: la versión práctica",
+          "markdown": "La forma -て sirve para **encadenar acciones** (voy y giro y cruzo…) y para pedir cosas con **〜てください**. Se forma según el tipo de verbo; desde la forma -ます:\n\n| Si antes de ます hay… | Forma -て | Ejemplo |\n|---|---|---|\n| verbos tipo 食べ**ます**, 見**ます**, 起き**ます** | quita ます, pon て | 食べて, 見て, 起きて |\n| 〜**い**ます, 〜**ち**ます, 〜**り**ます | 〜って | 会って, 待って, 曲がって, 渡って |\n| 〜**み**ます, 〜**び**ます, 〜**に**ます | 〜んで | 飲んで, 遊んで |\n| 〜**き**ます | 〜いて | 書いて, 歩いて |\n| 〜**ぎ**ます | 〜いで | 泳いで |\n| 〜**し**ます | 〜して | 話して, 勉強して |\n| **行きます** (¡excepción!) | 行って | まっすぐ 行って |\n| **来ます / します** | 来て / して | |\n\nOjo: la primera fila es para los verbos *ichidan* (起きます, 見ます); algunos verbos que parecen iguales, como 帰ります o 入ります, siguen la regla de 〜ります → 帰って. La ficha de gramática lo explica con la forma de diccionario.\n\n**Frases para pedir indicaciones**: 〜は どこですか (¿dónde está…?), ここから 遠いですか (¿está lejos de aquí?), 地図を 書いてください (¿me dibuja un mapa?)."
+        },
+        { "type": "exercises", "count": 12, "types": ["choose-meaning", "listen-choose", "conjugation", "particle", "order-words", "fill-blank", "dictation", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ja-u07-l4",
+      "title": "Dentro, fuera, al lado",
+      "zh": "駅の前にいます",
+      "goal": "Describir dónde está algo o alguien con palabras de posición y dar razones con 〜から.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "中", "pinyin": "なか", "es": "dentro" },
+        { "hanzi": "外", "pinyin": "そと", "es": "fuera" },
+        { "hanzi": "前", "pinyin": "まえ", "es": "delante; antes" },
+        { "hanzi": "後ろ", "pinyin": "うしろ", "es": "detrás" },
+        { "hanzi": "上", "pinyin": "うえ", "es": "encima; arriba" },
+        { "hanzi": "下", "pinyin": "した", "es": "debajo; abajo" },
+        { "hanzi": "本屋", "pinyin": "ほんや", "es": "librería" },
+        { "hanzi": "交番", "pinyin": "こうばん", "es": "caseta de policía" },
+        { "hanzi": "多い", "pinyin": "おおい", "es": "mucho; numeroso" },
+        { "hanzi": "〜から", "pinyin": "から", "es": "porque; como…" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "Palabras de posición" },
+        {
+          "type": "dialogue",
+          "title": "Quedar en la estación de Shinjuku",
+          "lines": [
+            { "speaker": "ウーゴ", "zh": "もしもし、さくらさん。今 どこに いますか。", "py": "もしもし、さくら さん。いま どこ に います か。", "es": "¿Sí? Sakura, ¿dónde estás ahora?" },
+            { "speaker": "さくら", "zh": "駅の 前に います。ウーゴさんは？", "py": "えき の まえ に います。ウーゴ さん は？", "es": "Estoy delante de la estación. ¿Y tú?" },
+            { "speaker": "ウーゴ", "zh": "私は 駅の 中です。本屋の 隣に います。", "py": "わたし は えき の なか です。ほんや の となり に います。", "es": "Yo estoy dentro de la estación. Al lado de una librería." },
+            { "speaker": "さくら", "zh": "駅の 中は 人が 多いですから、外で 会いましょう。", "py": "えき の なか は ひと が おおい です から、そと で あいましょう。", "es": "Dentro de la estación hay mucha gente, así que veámonos fuera." },
+            { "speaker": "ウーゴ", "zh": "わかりました。どこで 会いましょうか。", "py": "わかりました。どこ で あいましょう か。", "es": "Vale. ¿Dónde quedamos?" },
+            { "speaker": "さくら", "zh": "東口の 交番の 前は どうですか。", "py": "ひがしぐち の こうばん の まえ は どう です か。", "es": "¿Qué tal delante del 交番 de la salida este?" },
+            { "speaker": "ウーゴ", "zh": "はい、すぐ 行きます。", "py": "はい、すぐ いきます。", "es": "Vale, voy enseguida." }
+          ],
+          "notes": "もしもし = ¿diga? / ¿sí? (al teléfono). 東口 (ひがしぐち) = salida este. すぐ = enseguida. Con personas se usa います (どこに いますか); con cosas, あります. La estación de Shinjuku es la más transitada del mundo: quedar «en la estación» sin decir la salida es una mala idea."
+        },
+        { "type": "grammar", "id": "kara-because" },
+        {
+          "type": "explain",
+          "title": "«Al lado de la librería» = «la librería, su lado»",
+          "markdown": "En español la posición va **antes** (al lado **de** la librería). En japonés va **después**, unida con の:\n\n**[referencia] の [posición] に あります / います**\n\n| Japonés | Español |\n|---|---|\n| 本屋の **隣**に います | estoy al lado de la librería |\n| 駅の **前**に あります | está delante de la estación |\n| 机の **上**に あります | está encima de la mesa |\n| かばんの **中**に あります | está dentro de la bolsa |\n| ホテルの **後ろ**に あります | está detrás del hotel |\n\nPiensa en ello como «la estación, su delante»: primero el sitio que conocéis los dos, luego la posición exacta.\n\n**〜から (porque)** va **al final** de la razón, justo al contrario que «porque» en español: 人が 多いです**から** = porque hay mucha gente."
+        },
+        { "type": "exercises", "count": 12, "types": ["choose-meaning", "listen-choose", "pinyin-input", "particle", "fill-blank", "build-sentence", "translate-to-es", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ja-u07-l5",
+      "title": "Lectura y repaso de la unidad",
+      "zh": "ふくしゅう",
+      "goal": "Pedir indicaciones en un hotel y leer la descripción de un barrio de Tokio.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "地図", "pinyin": "ちず", "es": "mapa; plano" },
+        { "hanzi": "遠い", "pinyin": "とおい", "es": "lejos; lejano" },
+        { "hanzi": "近い", "pinyin": "ちかい", "es": "cerca; cercano" },
+        { "hanzi": "ホテル", "pinyin": "ホテル", "es": "hotel" },
+        { "hanzi": "出ます", "pinyin": "でます", "es": "salir" },
+        { "hanzi": "バス", "pinyin": "バス", "es": "autobús" },
+        { "hanzi": "町", "pinyin": "まち", "es": "barrio; ciudad; pueblo" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "Moverse por el barrio" },
+        {
+          "type": "dialogue",
+          "title": "En la recepción del hotel",
+          "lines": [
+            { "speaker": "ウーゴ", "zh": "すみません、この 近くに コンビニは ありますか。", "py": "すみません、この ちかく に コンビニ は あります か。", "es": "Perdone, ¿hay algún konbini por aquí cerca?" },
+            { "speaker": "ホテルの人", "zh": "はい。ホテルを 出て、左に 行って ください。", "py": "はい。ホテル を でて、ひだり に いって ください。", "es": "Sí. Salga del hotel y vaya a la izquierda." },
+            { "speaker": "ウーゴ", "zh": "遠いですか。", "py": "とおい です か。", "es": "¿Está lejos?" },
+            { "speaker": "ホテルの人", "zh": "いいえ、近いですよ。歩いて 二分ぐらいです。", "py": "いいえ、ちかい です よ。あるいて にふん ぐらい です。", "es": "No, está cerca. A unos dos minutos andando." },
+            { "speaker": "ウーゴ", "zh": "この 町の 地図は ありますか。", "py": "この まち の ちず は あります か。", "es": "¿Tiene un plano del barrio?" },
+            { "speaker": "ホテルの人", "zh": "はい、どうぞ。", "py": "はい、どうぞ。", "es": "Sí, aquí tiene." },
+            { "speaker": "ウーゴ", "zh": "ありがとうございます。", "py": "ありがとうございます。", "es": "Muchas gracias." }
+          ],
+          "notes": "ホテルを 出て: con 出ます (salir), を marca el lugar del que sales. ホテルの人 = el empleado del hotel."
+        },
+        {
+          "type": "reading",
+          "title": "Mi barrio en Tokio",
+          "text": "私の ホテルは 駅から 歩いて 五分ぐらいです。ホテルの 隣に コンビニが あります。コンビニの 前に 小さい 公園が あります。駅の 東口に 交番が あります。銀行は 駅の 中に あります。郵便局は 少し 遠いですから、バスで 行きます。ホテルの 後ろに おいしい ラーメン屋が あります。毎晩 そこで 晩ご飯を 食べます。",
+          "es": "Mi hotel está a unos cinco minutos andando de la estación. Al lado del hotel hay un konbini. Delante del konbini hay un parque pequeño. En la salida este de la estación hay un 交番. El banco está dentro de la estación. Correos está un poco lejos, así que voy en autobús. Detrás del hotel hay un local de ramen muy bueno. Ceno allí todas las noches.",
+          "questions": [
+            { "q": "¿Qué hay al lado del hotel?", "options": ["Un parque", "Un konbini", "Un banco", "Un local de ramen"], "answer": 1, "explain": "ホテルの 隣に コンビニが あります。" },
+            { "q": "¿Por qué va Hugo a correos en autobús?", "options": ["Porque llueve", "Porque está un poco lejos", "Porque está dentro de la estación", "Porque va con Sakura"], "answer": 1, "explain": "郵便局は 少し 遠いですから、バスで 行きます。" },
+            { "q": "¿Dónde está el banco?", "options": ["Dentro de la estación", "Detrás del hotel", "Delante del parque", "En la salida este"], "answer": 0, "explain": "銀行は 駅の 中に あります。" }
+          ]
+        },
+        { "type": "exercises", "count": 12, "types": ["matching", "choose-meaning", "listen-choose", "particle", "conjugation", "fill-blank", "dictation", "translate-to-es", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    }
+  ]
+}

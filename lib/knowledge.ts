@@ -1,22 +1,25 @@
 "use client";
 /**
- * Estado global de "qué sabe el usuario": palabras del mazo, palabras conocidas (SRS) y
- * caracteres conocidos. Se refresca desde Dexie con liveQuery en los providers.
+ * Estado global de "qué sabe el usuario" en el idioma activo: palabras del mazo, palabras conocidas (SRS)
+ * y caracteres conocidos. Se refresca desde Dexie con liveQuery y al cambiar de idioma.
  */
 import { create } from "zustand";
 import { liveQuery } from "dexie";
 import { db, type Word } from "@/lib/db";
 import { setUserWords } from "@/lib/dictionary/service";
+import { getActiveLang, usePackStore } from "@/lib/languages/registry";
 
 interface KnowledgeState {
-  deck: Map<string, Word>; // hanzi → palabra del usuario
-  known: Set<string>; // hanzi de palabras conocidas (estado review)
+  lang: string;
+  deck: Map<string, Word>; // forma escrita → palabra del usuario
+  known: Set<string>; // palabras conocidas (estado review)
   learning: Set<string>; // en aprendizaje (new/learning con alguna repetición)
   knownChars: Set<string>;
   ready: boolean;
 }
 
 export const useKnowledge = create<KnowledgeState>(() => ({
+  lang: "zh",
   deck: new Map(),
   known: new Set(),
   learning: new Set(),
@@ -36,11 +39,18 @@ export function isInDeck(word: string): boolean {
 }
 
 let subscribed = false;
-export function subscribeKnowledge() {
-  if (subscribed || typeof window === "undefined") return;
-  subscribed = true;
-  const compute = async () => {
-    const [words, cards, chars] = await Promise.all([db.words.toArray(), db.cards.toArray(), db.characters.toArray()]);
+let computing = false;
+let pending = false;
+
+export async function computeKnowledge() {
+  if (computing) {
+    pending = true;
+    return;
+  }
+  computing = true;
+  try {
+    const lang = getActiveLang();
+    const [words, cards, chars] = await Promise.all([db.words.where("lang").equals(lang).toArray(), db.cards.where("lang").equals(lang).toArray(), db.charStates.where("lang").equals(lang).toArray()]);
     const byId = new Map(words.map((w) => [w.id, w]));
     const known = new Set<string>();
     const learning = new Set<string>();
@@ -53,16 +63,36 @@ export function subscribeKnowledge() {
     }
     const knownChars = new Set<string>();
     for (const ch of chars) if (ch.known) knownChars.add(ch.hanzi);
-    for (const w of known) if (w.length === 1) knownChars.add(w);
+    for (const w of known) if (Array.from(w).length === 1) knownChars.add(w);
     setUserWords(words);
-    useKnowledge.setState({ deck: new Map(words.map((w) => [w.hanzi, w])), known, learning, knownChars, ready: true });
-  };
-  liveQuery(() => Promise.all([db.words.count(), db.cards.count(), db.characters.count()])).subscribe({
-    next: () => void compute(),
+    useKnowledge.setState({ lang, deck: new Map(words.map((w) => [w.hanzi, w])), known, learning, knownChars, ready: true });
+  } finally {
+    computing = false;
+    if (pending) {
+      pending = false;
+      void computeKnowledge();
+    }
+  }
+}
+
+export function subscribeKnowledge() {
+  if (subscribed || typeof window === "undefined") return;
+  subscribed = true;
+  liveQuery(() => Promise.all([db.words.count(), db.cards.count(), db.charStates.count()])).subscribe({
+    next: () => void computeKnowledge(),
     error: (e) => console.error(e),
   });
-  // Cambios en el contenido de tarjetas (estado) no cambian el count: observamos también updatedAt máximo.
-  liveQuery(() => db.cards.orderBy("due").last()).subscribe({ next: () => void compute() });
-  liveQuery(() => db.words.orderBy("updatedAt").last()).subscribe({ next: () => void compute() });
-  void compute();
+  liveQuery(() => db.cards.orderBy("due").last()).subscribe({ next: () => void computeKnowledge() });
+  liveQuery(() => db.words.orderBy("updatedAt").last()).subscribe({ next: () => void computeKnowledge() });
+  liveQuery(() => db.charStates.count()).subscribe({ next: () => void computeKnowledge() });
+  // cambio de idioma activo
+  let last = getActiveLang();
+  usePackStore.subscribe((s) => {
+    if (s.active !== last && s.packs[s.active]) {
+      last = s.active;
+      useKnowledge.setState({ ready: false });
+      void computeKnowledge();
+    }
+  });
+  void computeKnowledge();
 }

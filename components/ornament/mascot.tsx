@@ -1,5 +1,7 @@
 "use client";
 import { cn } from "@/lib/utils";
+import { getActiveLang } from "@/lib/languages/registry";
+import { quoteOfDayFor } from "@/lib/languages/culture";
 
 /**
  * 小墨 Xiǎo Mò — una gotita de tinta con pincel. Mascota original, discreta: solo para estados vacíos,
@@ -56,9 +58,15 @@ const QUOTES: { zh: string; py: string; es: string }[] = [
   { zh: "有志者事竟成。", py: "Yǒu zhì zhě shì jìng chéng.", es: "Quien tiene voluntad, al final lo logra." },
 ];
 
+/** Cita del día en la lengua activa (refranes de cada cultura, ver lib/languages/culture.ts). */
 export function quoteOfDay(d = new Date()): (typeof QUOTES)[number] {
-  const day = Math.floor(d.getTime() / 86400000);
-  return QUOTES[day % QUOTES.length];
+  const lang = getActiveLang();
+  if (lang === "zh") {
+    const day = Math.floor(d.getTime() / 86400000);
+    return QUOTES[day % QUOTES.length];
+  }
+  const q = quoteOfDayFor(lang, d);
+  return { zh: q.text, py: q.reading, es: q.es };
 }
 
 export { QUOTES };

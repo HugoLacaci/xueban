@@ -1,8 +1,8 @@
 "use client";
 import { useState } from "react";
 import type { ReadingTFExercise } from "@/lib/exercises/types";
-import { AudioButton } from "@/components/zh/audio-button";
-import { ChineseText } from "@/components/zh/chinese-text";
+import { AudioButton } from "@/components/target/audio-button";
+import { ChineseText } from "@/components/target/target-text";
 import { cn } from "@/lib/utils";
 import { CheckButton, ExerciseCard, Plate, type ExerciseProps } from "./exercise-view";
 

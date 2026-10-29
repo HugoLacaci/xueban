@@ -1,10 +1,11 @@
 import { describe, expect, it } from "vitest";
 import { check } from "@/lib/exercises/check";
-import { generateSession, genChooseMeaning, genFillBlank, genOrderWords, genToneChoice, genClassifier, tilesFromSentence } from "@/lib/exercises/generators";
+import { generateSession, genChooseMeaning, genFillBlank, genOrderWords, tilesFromSentence } from "@/lib/exercises/generators";
+import { genToneChoice, genClassifier, zhAdapters } from "@/lib/languages/zh/exercises";
 import type { Pool, PoolWord } from "@/lib/exercises/types";
 import { seededRandom } from "@/lib/utils";
 import { seedWords } from "@/lib/db/repo";
-import { TONE_PAIRS, SYLLABLES } from "@/lib/course/data/pronunciation";
+import { TONE_PAIRS, SYLLABLES } from "@/lib/languages/zh/data/pronunciation";
 
 const words: PoolWord[] = seedWords()
   .slice(0, 80)

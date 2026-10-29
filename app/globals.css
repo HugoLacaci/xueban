@@ -1,5 +1,7 @@
 @import "tailwindcss";
 @import "../styles/tokens.css";
+@import "../styles/themes.css";
+@import "../styles/portal.css";
 @import "lxgw-wenkai-lite-webfont/lxgwwenkailite-regular.css";
 
 @custom-variant dark (&:where(.dark, .dark *, [data-theme="dark"], [data-theme="dark"] *));
@@ -7,6 +9,7 @@
 /* ---------- Tailwind: colores desde los tokens (admiten /alpha vía color-mix) ---------- */
 @theme inline {
   --color-paper: rgb(var(--paper));
+  --color-seal: rgb(var(--seal));
   --color-paper-raised: rgb(var(--paper-raised));
   --color-paper-sunk: rgb(var(--paper-sunk));
   --color-ink: rgb(var(--ink));
@@ -111,7 +114,7 @@ body {
 /* ---------- Texto chino ---------- */
 /* En @layer base para que las utilidades text-* de Tailwind ganen al tamaño escalado. */
 @layer base {
-  [lang="zh-CN"], .zh {
+  [lang="zh-CN"], [lang="ja-JP"], [lang="ko-KR"], .zh, .ja, .ko {
     font-family: var(--font-zh);
     font-size: calc(1em * var(--zh-scale));
     letter-spacing: 0.02em;
@@ -199,7 +202,7 @@ ruby.zh-ruby > rt {
 }
 .seal {
   display: inline-flex; align-items: center; justify-content: center;
-  background: rgb(var(--cinnabar)); color: rgb(var(--paper-raised)); font-family: var(--font-display-zh);
+  background: rgb(var(--seal)); color: rgb(var(--paper-raised)); font-family: var(--font-display-zh);
   border-radius: 6px; line-height: 1;
 }
 .ink-rule { /* divisor en pincelada */
@@ -265,3 +268,4 @@ ruby.zh-ruby > rt {
 
 /* Sellos de texto: latín en Inter, caracteres chinos en 楷书 decorativo (el navegador cae por glifo). */
 .font-seal { font-family: var(--font-sans), var(--font-display-zh); letter-spacing: 0.04em; font-weight: 600; }
+

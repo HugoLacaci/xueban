@@ -1,0 +1,216 @@
+{
+  "id": "ko-u01",
+  "order": 2,
+  "title": "Saludos y presentaciones",
+  "zh": "인사와 자기소개",
+  "description": "Saludar con educación, despedirte (¡hay dos adioses!), decir tu nombre y tu nacionalidad y presentar a alguien.",
+  "icon": "Hand",
+  "level": 1,
+  "lang": "ko",
+  "category": "Saludos y expresiones",
+  "checkpoint": { "exercises": 15 },
+  "lessons": [
+    {
+      "id": "ko-u01-l1",
+      "title": "Hola, gracias, adiós",
+      "zh": "안녕하세요!",
+      "goal": "Saludar, agradecer, disculparte y despedirte con la cortesía adecuada.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "안녕하세요", "pinyin": "annyeonghaseyo", "es": "hola; buenos días (cortés)" },
+        { "hanzi": "안녕히 가세요", "pinyin": "annyeonghi gaseyo", "es": "adiós (a quien se va)" },
+        { "hanzi": "안녕히 계세요", "pinyin": "annyeonghi gyeseyo", "es": "adiós (a quien se queda)" },
+        { "hanzi": "감사합니다", "pinyin": "gamsahamnida", "es": "gracias (formal)" },
+        { "hanzi": "고맙습니다", "pinyin": "gomapseumnida", "es": "gracias (formal, palabra nativa)" },
+        { "hanzi": "죄송합니다", "pinyin": "joesonghamnida", "es": "lo siento; perdón (formal)" },
+        { "hanzi": "괜찮아요", "pinyin": "gwaenchanayo", "es": "no pasa nada; estoy bien" },
+        { "hanzi": "네", "pinyin": "ne", "es": "sí; vale" },
+        { "hanzi": "아니요", "pinyin": "aniyo", "es": "no" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "Las expresiones que usarás cada día" },
+        {
+          "type": "dialogue",
+          "title": "En la puerta de la academia",
+          "lines": [
+            { "speaker": "우고", "zh": "선생님, 안녕하세요!", "py": "Seonsaengnim, annyeonghaseyo!", "es": "¡Hola, profesora!" },
+            { "speaker": "김 선생님", "zh": "안녕하세요, 우고 씨.", "py": "Annyeonghaseyo, Ugo ssi.", "es": "Hola, Hugo." },
+            { "speaker": "우고", "zh": "아, 죄송합니다!", "py": "A, joesonghamnida!", "es": "¡Ay, perdón! (le da un golpe a la mochila sin querer)" },
+            { "speaker": "김 선생님", "zh": "괜찮아요.", "py": "Gwaenchanayo.", "es": "No pasa nada." },
+            { "speaker": "우고", "zh": "감사합니다. 안녕히 계세요!", "py": "Gamsahamnida. Annyeonghi gyeseyo!", "es": "Gracias. ¡Adiós! (Hugo se va; ella se queda)" },
+            { "speaker": "김 선생님", "zh": "네, 안녕히 가세요.", "py": "Ne, annyeonghi gaseyo.", "es": "Sí, adiós. (le dice al que se va)" }
+          ],
+          "notes": "선생님 (seonsaengnim) = profesor/a; se usa también como tratamiento: «선생님!». 씨 (ssi) detrás del nombre es un tratamiento cortés entre adultos, parecido a «señor/señora» pero mucho más frecuente; nunca lo uses con tu propio nombre. Los dos adioses: dice 가세요 («vaya bien») quien se queda, y 계세요 («quédese bien») quien se va. Si los dos se van, ambos dicen 안녕히 가세요."
+        },
+        {
+          "type": "explain",
+          "title": "Cultura: 존댓말 y la reverencia",
+          "markdown": "En coreano **no existe una forma neutra de hablar**: cada frase lleva una terminación que marca el grado de respeto. A eso se le llama **존댓말** (*jondaenmal*, lenguaje respetuoso), frente a **반말** (*banmal*, lenguaje llano, entre amigos íntimos o hacia niños).\n\nComo extranjero y principiante, tu regla de oro es: **usa siempre -요 / -ㅂ니다** con todo el mundo que no sea tu amigo íntimo. Nadie se ofende por exceso de cortesía; sí por falta.\n\n**La reverencia (인사)**: al saludar, despedirte, agradecer o pedir perdón, inclina un poco la cabeza y los hombros. Con amigos basta un leve gesto de cabeza; con profesores o personas mayores, una inclinación más marcada (unos 30°). La mano derecha se usa para dar y recibir cosas, y con mayores se sujeta con las dos o se apoya la izquierda en el antebrazo derecho. **No se dan besos** al saludar, y apretones de manos solo si el otro la ofrece.\n\nTruco: 안녕하세요 vale para todo el día (mañana, tarde o noche). Literalmente significa «¿está usted en paz?»."
+        },
+        { "type": "grammar", "id": "speech-levels" },
+        { "type": "exercises", "count": 10, "types": ["choose-meaning", "listen-choose", "pinyin-input", "matching", "order-words", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ko-u01-l2",
+      "title": "Me llamo…",
+      "zh": "저는 우고예요",
+      "goal": "Decir tu nombre y profesión con 저는 … 이에요/예요 y preguntar el nombre de otra persona.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "저", "pinyin": "jeo", "es": "yo (cortés, humilde)" },
+        { "hanzi": "이름", "pinyin": "ireum", "es": "nombre" },
+        { "hanzi": "뭐", "pinyin": "mwo", "es": "qué" },
+        { "hanzi": "학생", "pinyin": "haksaeng", "es": "estudiante" },
+        { "hanzi": "선생님", "pinyin": "seonsaengnim", "es": "profesor/a" },
+        { "hanzi": "씨", "pinyin": "ssi", "es": "tratamiento cortés tras el nombre" },
+        { "hanzi": "만나서 반갑습니다", "pinyin": "manaseo bangapseumnida", "es": "encantado/a de conocerte" },
+        { "hanzi": "저도", "pinyin": "jeodo", "es": "yo también" }
+      ],
+      "steps": [
+        { "type": "vocab" },
+        {
+          "type": "dialogue",
+          "title": "Primer día de clase",
+          "lines": [
+            { "speaker": "지민", "zh": "안녕하세요! 이름이 뭐예요?", "py": "Annyeonghaseyo! Ireumi mwoyeyo?", "es": "¡Hola! ¿Cómo te llamas?" },
+            { "speaker": "우고", "zh": "저는 우고예요. 이름이 뭐예요?", "py": "Jeoneun Ugoyeyo. Ireumi mwoyeyo?", "es": "Me llamo Hugo. ¿Y tú cómo te llamas?" },
+            { "speaker": "지민", "zh": "저는 지민이에요. 우고 씨는 학생이에요?", "py": "Jeoneun Jiminieyo. Ugo ssineun haksaengieyo?", "es": "Yo soy Jimin. Hugo, ¿eres estudiante?" },
+            { "speaker": "우고", "zh": "네, 학생이에요. 지민 씨는요?", "py": "Ne, haksaengieyo. Jimin ssineunyo?", "es": "Sí, soy estudiante. ¿Y tú, Jimin?" },
+            { "speaker": "지민", "zh": "저도 학생이에요. 만나서 반갑습니다!", "py": "Jeodo haksaengieyo. Manaseo bangapseumnida!", "es": "Yo también soy estudiante. ¡Encantada!" },
+            { "speaker": "우고", "zh": "저도 반갑습니다!", "py": "Jeodo bangapseumnida!", "es": "¡Igualmente!" }
+          ],
+          "notes": "이름이 뭐예요? = literalmente «¿el nombre es qué?»; el 이 tras 이름 es una partícula que estudiarás en la unidad 3. Con alguien mayor se pregunta más fino: 성함이 어떻게 되세요? En coreano se usa poco el «tú»: lo normal es llamar a la persona por su nombre + 씨 (우고 씨는…?). «…는요?» = «¿y …?». 도 (también) lo verás a fondo en la lección 5."
+        },
+        { "type": "grammar", "id": "ieyo-yeyo" },
+        { "type": "grammar", "id": "eun-neun" },
+        { "type": "exercises", "count": 10, "types": ["choose-meaning", "listen-choose", "particle", "fill-blank", "order-words", "pinyin-input", "speaking", "matching"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ko-u01-l3",
+      "title": "Soy español",
+      "zh": "스페인 사람이에요",
+      "goal": "Decir y preguntar la nacionalidad, y negar con 이/가 아니에요.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "사람", "pinyin": "saram", "es": "persona" },
+        { "hanzi": "나라", "pinyin": "nara", "es": "país" },
+        { "hanzi": "어느", "pinyin": "eoneu", "es": "qué; cuál (de varios)" },
+        { "hanzi": "한국", "pinyin": "Hanguk", "es": "Corea (del Sur)" },
+        { "hanzi": "스페인", "pinyin": "Seupein", "es": "España" },
+        { "hanzi": "중국", "pinyin": "Jungguk", "es": "China" },
+        { "hanzi": "일본", "pinyin": "Ilbon", "es": "Japón" },
+        { "hanzi": "미국", "pinyin": "Miguk", "es": "Estados Unidos" },
+        { "hanzi": "아니에요", "pinyin": "anieyo", "es": "no ser; no es" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "Nacionalidad = país + 사람" },
+        {
+          "type": "dialogue",
+          "title": "¿De dónde eres?",
+          "lines": [
+            { "speaker": "민수", "zh": "우고 씨는 어느 나라 사람이에요?", "py": "Ugo ssineun eoneu nara saramieyo?", "es": "Hugo, ¿de qué país eres?" },
+            { "speaker": "우고", "zh": "스페인 사람이에요. 민수 씨는 중국 사람이에요?", "py": "Seupein saramieyo. Minsu ssineun Jungguk saramieyo?", "es": "Soy español. Minsu, ¿eres chino?" },
+            { "speaker": "민수", "zh": "아니요, 중국 사람이 아니에요. 한국 사람이에요.", "py": "Aniyo, Jungguk sarami anieyo. Hanguk saramieyo.", "es": "No, no soy chino. Soy coreano." },
+            { "speaker": "우고", "zh": "아, 그래요? 지민 씨는요?", "py": "A, geuraeyo? Jimin ssineunyo?", "es": "Ah, ¿sí? ¿Y Jimin?" },
+            { "speaker": "민수", "zh": "지민 씨도 한국 사람이에요.", "py": "Jimin ssido Hanguk saramieyo.", "es": "Jimin también es coreana." }
+          ],
+          "notes": "아, 그래요? = «ah, ¿sí?; ¿de verdad?», la reacción más común en una conversación. El coreano no distingue masculino/femenino: 한국 사람 vale para «coreano» y «coreana». Otra forma de nacionalidad: país + 인 (스페인인), más escrita; en conversación, 사람."
+        },
+        { "type": "grammar", "id": "anieyo" },
+        { "type": "exercises", "count": 12, "types": ["choose-meaning", "particle", "fill-blank", "build-sentence", "order-words", "translate-to-es", "dictation", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ko-u01-l4",
+      "title": "Te presento a…",
+      "zh": "제 친구예요",
+      "goal": "Presentar a amigos y profesores con 이/그/저 y expresar posesión con 의 y 제.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "이", "pinyin": "i", "es": "este/a (cerca de mí)" },
+        { "hanzi": "그", "pinyin": "geu", "es": "ese/a (cerca de ti; ya mencionado)" },
+        { "hanzi": "저", "pinyin": "jeo", "es": "aquel/la (lejos de los dos)" },
+        { "hanzi": "친구", "pinyin": "chingu", "es": "amigo/a" },
+        { "hanzi": "누구", "pinyin": "nugu", "es": "quién" },
+        { "hanzi": "제", "pinyin": "je", "es": "mi (cortés)" },
+        { "hanzi": "우리", "pinyin": "uri", "es": "nosotros; nuestro" },
+        { "hanzi": "분", "pinyin": "bun", "es": "persona (honorífico)" },
+        { "hanzi": "의", "pinyin": "ui", "es": "de (posesión)" }
+      ],
+      "steps": [
+        { "type": "vocab" },
+        {
+          "type": "dialogue",
+          "title": "En la cafetería de la academia",
+          "lines": [
+            { "speaker": "우고", "zh": "지민 씨, 이 사람은 제 친구예요. 마리아예요.", "py": "Jimin ssi, i sarameun je chinguyeyo. Mariayeyo.", "es": "Jimin, esta es mi amiga. Se llama María." },
+            { "speaker": "지민", "zh": "안녕하세요, 마리아 씨! 만나서 반갑습니다.", "py": "Annyeonghaseyo, Maria ssi! Manaseo bangapseumnida.", "es": "¡Hola, María! Encantada." },
+            { "speaker": "마리아", "zh": "반갑습니다. 저분은 누구예요?", "py": "Bangapseumnida. Jeobuneun nuguyeyo?", "es": "Encantada. ¿Quién es aquella señora?" },
+            { "speaker": "지민", "zh": "저분은 우리 선생님이에요. 김 선생님이에요.", "py": "Jeobuneun uri seonsaengnimieyo. Gim seonsaengnimieyo.", "es": "Es nuestra profesora. La profesora Kim." },
+            { "speaker": "마리아", "zh": "아, 우고 씨의 한국어 선생님이에요?", "py": "A, Ugo ssiui hangugeo seonsaengnimieyo?", "es": "Ah, ¿es la profesora de coreano de Hugo?" },
+            { "speaker": "우고", "zh": "네, 맞아요.", "py": "Ne, majayo.", "es": "Sí, exacto." }
+          ],
+          "notes": "저분 = 저 + 분: «aquella persona» en versión respetuosa (para alguien mayor o de más rango, mejor que 저 사람). 우리 선생님 («nuestra profesora») es más natural que «mi profesora»: el coreano usa mucho 우리 para lo que se comparte (우리 나라, 우리 엄마). 한국어 (idioma coreano) es un adelanto. 맞아요 = «correcto; eso es». Ojo: 저 = «yo» y 저 = «aquel» se escriben igual; el contexto lo aclara."
+        },
+        { "type": "grammar", "id": "demonstratives" },
+        { "type": "grammar", "id": "ui" },
+        { "type": "exercises", "count": 12, "types": ["choose-meaning", "fill-blank", "particle", "order-words", "translate-to-es", "listen-choose", "speaking", "writing"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ko-u01-l5",
+      "title": "Lectura y repaso de la unidad",
+      "zh": "복습",
+      "goal": "Usar 도 (también), leer una presentación completa y consolidar el vocabulario de la unidad.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "도", "pinyin": "do", "es": "también (partícula)" },
+        { "hanzi": "대학생", "pinyin": "daehaksaeng", "es": "estudiante universitario" },
+        { "hanzi": "회사원", "pinyin": "hoesawon", "es": "empleado/a de oficina" },
+        { "hanzi": "한국어", "pinyin": "hangugeo", "es": "idioma coreano" },
+        { "hanzi": "그래요?", "pinyin": "geuraeyo?", "es": "¿ah, sí?; ¿de verdad?" },
+        { "hanzi": "맞아요", "pinyin": "majayo", "es": "correcto; eso es" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "Profesiones y reacciones" },
+        {
+          "type": "dialogue",
+          "title": "Después de clase",
+          "lines": [
+            { "speaker": "민수", "zh": "우고 씨, 대학생이에요?", "py": "Ugo ssi, daehaksaengieyo?", "es": "Hugo, ¿eres universitario?" },
+            { "speaker": "우고", "zh": "네, 대학생이에요. 민수 씨도 대학생이에요?", "py": "Ne, daehaksaengieyo. Minsu ssido daehaksaengieyo?", "es": "Sí, soy universitario. ¿Tú también lo eres?" },
+            { "speaker": "민수", "zh": "아니요, 저는 회사원이에요.", "py": "Aniyo, jeoneun hoesawonieyo.", "es": "No, yo soy oficinista." },
+            { "speaker": "우고", "zh": "아, 그래요? 마리아 씨도 회사원이에요.", "py": "A, geuraeyo? Maria ssido hoesawonieyo.", "es": "Ah, ¿sí? María también es oficinista." },
+            { "speaker": "민수", "zh": "마리아 씨도 스페인 사람이에요?", "py": "Maria ssido Seupein saramieyo?", "es": "¿María también es española?" },
+            { "speaker": "우고", "zh": "네, 맞아요.", "py": "Ne, majayo.", "es": "Sí, eso es." }
+          ]
+        },
+        { "type": "grammar", "id": "do" },
+        {
+          "type": "reading",
+          "title": "Hugo se presenta en clase",
+          "text": "안녕하세요! 저는 우고예요. 스페인 사람이에요. 대학생이에요. 이 사람은 제 친구 마리아예요. 마리아 씨도 스페인 사람이에요. 마리아 씨는 학생이 아니에요. 회사원이에요. 저분은 김 선생님이에요. 우리 한국어 선생님이에요. 감사합니다!",
+          "es": "¡Hola! Soy Hugo. Soy español. Soy universitario. Esta es mi amiga María. María también es española. María no es estudiante: es oficinista. Aquella señora es la profesora Kim. Es nuestra profesora de coreano. ¡Gracias!",
+          "questions": [
+            { "q": "¿Quién es María?", "options": ["La profesora de Hugo", "Una amiga española de Hugo", "Una compañera coreana", "La hermana de Hugo"], "answer": 1, "explain": "이 사람은 제 친구 마리아예요. 마리아 씨도 스페인 사람이에요." },
+            { "q": "¿María es estudiante?", "options": ["Sí, universitaria", "Sí, de coreano", "No, es oficinista", "No se dice"], "answer": 2, "explain": "학생이 아니에요. 회사원이에요. = No es estudiante. Es oficinista." },
+            { "q": "¿Qué significa 우리 한국어 선생님이에요?", "options": ["Es nuestra profesora de coreano", "Somos estudiantes de coreano", "Es mi amiga coreana", "Es una profesora de Corea"], "answer": 0, "explain": "우리 = nuestro; 한국어 선생님 = profesor/a de (idioma) coreano." }
+          ]
+        },
+        { "type": "exercises", "count": 12, "types": ["matching", "choose-meaning", "particle", "order-words", "build-sentence", "fill-blank", "dictation", "translate-to-es", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    }
+  ]
+}

@@ -2,7 +2,9 @@
    学伴 Xuébàn — tokens de diseño «宣纸与墨» (papel y tinta)
    Tripletas RGB para poder usar alpha: rgb(var(--ink) / 0.5)
    ========================================================================== */
-:root {
+/* [data-skin="zh"]: misma piel dentro de otra página (portada de idiomas) */
+:root,
+[data-skin="zh"] {
   /* Tema claro: 宣纸 (papel de arroz) */
   --paper: 245 239 227; /* 宣纸 xuānzhǐ   #F5EFE3  fondo principal */
   --paper-raised: 251 247 239; /* 月白 yuèbái    #FBF7EF  tarjetas */
@@ -42,7 +44,8 @@
 }
 
 :root.dark,
-:root[data-theme="dark"] {
+:root[data-theme="dark"],
+:root[data-theme="dark"] [data-skin="zh"] {
   /* Tema oscuro: 夜墨 (tinta de noche), NO negro puro */
   --paper: 24 23 21; /* #181715 */
   --paper-raised: 33 31 28; /* #211F1C */

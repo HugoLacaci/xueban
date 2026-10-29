@@ -1,72 +1,65 @@
 "use client";
 /**
- * Análisis ("breakdown") de las líneas de un vídeo o texto: segmentación, pinyin, vocabulario
- * nuevo (por nivel HSK y según el mazo del usuario) y puntos gramaticales detectados por reglas.
+ * Análisis ("breakdown") de las líneas de un vídeo o texto en el idioma activo: tokens con lectura,
+ * lema y forma conjugada, vocabulario nuevo (por nivel y según el mazo del usuario) y puntos
+ * gramaticales detectados por reglas del paquete.
  */
-import { getLexicon, lookupFirst } from "@/lib/dictionary/service";
+import { lookupFirst, levelLabel } from "@/lib/dictionary/service";
 import type { DictEntry } from "@/lib/dictionary/types";
-import { segment } from "@/lib/segment";
-import { GRAMMAR } from "@/lib/course";
-import { isHanzi, wordPinyin } from "@/lib/pinyin/convert";
+import { getActivePack } from "@/lib/languages/registry";
+
+export interface LineToken {
+  text: string;
+  isWord: boolean;
+  entry?: DictEntry;
+  pinyin?: string; // lectura
+  lemma?: string; // forma de diccionario si difiere (食べました → 食べる)
+  pos?: string;
+  known: boolean;
+  inDeck: boolean;
+  hsk?: number; // rango de nivel para ordenar (1 = más básico)
+  level?: string; // etiqueta («HSK 1», «N5», «TOPIK 1»)
+}
 
 export interface LineAnalysis {
-  tokens: { text: string; isWord: boolean; entry?: DictEntry; pinyin?: string; known: boolean; inDeck: boolean; hsk?: number }[];
+  tokens: LineToken[];
   pinyin: string;
-  newWords: { hanzi: string; pinyin: string; meaning: string; hsk?: number }[];
+  newWords: { hanzi: string; pinyin: string; meaning: string; hsk?: number; level?: string }[];
   grammar: { id: string; title: string; zh: string }[];
   knownRatio: number;
 }
 
-/** Reglas sencillas de detección de gramática HSK 1–3 (ids de content/grammar.json). */
-const RULES: { id: string; test: (zh: string) => boolean }[] = [
-  { id: "ma", test: (s) => /吗[？?]/.test(s) },
-  { id: "ne", test: (s) => /呢[？?。]/.test(s) },
-  { id: "ba", test: (s) => /吧[。！!]/.test(s) },
-  { id: "shi", test: (s) => /(^|[^不])是(?!不是)/.test(s) && !/是……的|是.{1,8}的$/.test(s) },
-  { id: "bu-mei", test: (s) => /没(有|去|来|看|吃|说|听|买|做)|不(是|去|来|喜欢|想|要|会|能|好|太)/.test(s) },
-  { id: "you", test: (s) => /(^|[^没])有/.test(s) },
-  { id: "zai", test: (s) => /在/.test(s) },
-  { id: "le", test: (s) => /了/.test(s) },
-  { id: "modal-verbs", test: (s) => /会|能|可以|想|要/.test(s) },
-  { id: "measure-words", test: (s) => /[一二两三四五六七八九十几这那哪][个本块件口杯瓶只岁张条位辆家次些]/.test(s) },
-  { id: "de", test: (s) => /的/.test(s) },
-  { id: "question-words", test: (s) => /什么|谁|哪儿|哪里|哪|几|多少|怎么样|怎么/.test(s) },
-  { id: "tai-le", test: (s) => /太.{1,4}了|不太/.test(s) },
-  { id: "hen-adj", test: (s) => /很|非常|真/.test(s) },
-  { id: "ye-dou", test: (s) => /也|都/.test(s) },
-  { id: "he", test: (s) => /和/.test(s) },
-  { id: "lai-qu", test: (s) => /来|去|回/.test(s) },
-  { id: "yidianr-youdianr", test: (s) => /一点儿|有点儿|一点|有点/.test(s) },
-  { id: "reduplication", test: (s) => /(看看|听听|试试|坐坐|走走|玩玩|说说|想想|问问)/.test(s) },
-  { id: "yixia", test: (s) => /一下/.test(s) },
-  { id: "shi-de", test: (s) => /是.{1,10}的[。？?]/.test(s) },
-  { id: "qing", test: (s) => /请/.test(s) },
-  { id: "gei", test: (s) => /给/.test(s) },
-  { id: "complements", test: (s) => /看见|听见|听懂|看懂|做完|吃完|得很|得真/.test(s) },
-  { id: "mei", test: (s) => /每/.test(s) },
-  { id: "dates-time", test: (s) => /[一二三四五六七八九十]+(点|月|号|日|年)|星期/.test(s) },
-  { id: "price-age", test: (s) => /多少钱|几岁|多大|块钱|块/.test(s) },
-  { id: "numbers", test: (s) => /两|[一二三四五六七八九]十|百/.test(s) },
-  { id: "demonstratives", test: (s) => /这|那|哪/.test(s) },
-];
+/** Rango numérico de una entrada (1 = más básico) para ordenar vocabulario nuevo. */
+function levelRank(e?: DictEntry): number | undefined {
+  if (!e) return undefined;
+  if (e.hsk) return e.hsk;
+  const lv = e.lv ?? "";
+  const n5 = lv.match(/^N([1-5])$/);
+  if (n5) return 6 - Number(n5[1]);
+  const t = lv.match(/(\d)/);
+  return t ? Number(t[1]) : undefined;
+}
 
-const grammarMeta = new Map(GRAMMAR.map((g) => [g.id, { id: g.id, title: g.title, zh: g.zh }]));
+export function detectGrammar(text: string, max = 4): { id: string; title: string; zh: string }[] {
+  const pack = getActivePack();
+  return pack.grammar
+    .detect(text)
+    .slice(0, max)
+    .map((id) => pack.grammar.byId(id))
+    .filter((g): g is NonNullable<typeof g> => Boolean(g))
+    .map((g) => ({ id: g.id, title: g.title, zh: g.zh }));
+}
 
-export function detectGrammar(zh: string, max = 4): { id: string; title: string; zh: string }[] {
-  const out: { id: string; title: string; zh: string }[] = [];
-  for (const r of RULES) {
-    if (r.test(zh)) {
-      const m = grammarMeta.get(r.id);
-      if (m) out.push(m);
-    }
-    if (out.length >= max) break;
-  }
-  return out;
+function isKnownToken(text: string, lemma: string | undefined, known: Set<string>, knownChars: Set<string>): boolean {
+  if (known.has(text) || (lemma && known.has(lemma))) return true;
+  const chars = Array.from(text);
+  return chars.length > 1 && chars.every((c) => known.has(c) || knownChars.has(c));
 }
 
 export function analyzeLine(zh: string, known: Set<string>, deck: Set<string>, knownChars: Set<string> = new Set()): LineAnalysis {
-  const toks = segment(zh, getLexicon());
-  const tokens: LineAnalysis["tokens"] = [];
+  const pack = getActivePack();
+  const toks = pack.analyze(zh).tokens;
+  const tokens: LineToken[] = [];
   const newWords: LineAnalysis["newWords"] = [];
   const seen = new Set<string>();
   let wordCount = 0;
@@ -76,32 +69,46 @@ export function analyzeLine(zh: string, known: Set<string>, deck: Set<string>, k
       tokens.push({ text: t.text, isWord: false, known: true, inDeck: false });
       continue;
     }
-    const entry = lookupFirst(t.text);
-    const chars = Array.from(t.text);
-    const isKnown = known.has(t.text) || (chars.length > 1 && chars.every((c) => known.has(c) || knownChars.has(c)));
+    const key = t.lemma ?? t.text;
+    const entry = lookupFirst(key) ?? (t.lemma ? lookupFirst(t.text) : undefined);
+    const isKnown = isKnownToken(t.text, t.lemma, known, knownChars);
+    // las partículas y auxiliares cuentan como palabras, pero no como «nuevas» si son gramática
     wordCount++;
     if (isKnown) knownCount++;
-    tokens.push({ text: t.text, isWord: true, entry, pinyin: entry?.p ?? wordPinyin(t.text), known: isKnown, inDeck: deck.has(t.text), hsk: entry?.hsk });
-    if (!isKnown && !seen.has(t.text) && chars.every(isHanzi)) {
-      seen.add(t.text);
-      newWords.push({ hanzi: t.text, pinyin: entry?.p ?? wordPinyin(t.text), meaning: entry?.es ?? entry?.en?.slice(0, 2).join("; ") ?? "", hsk: entry?.hsk });
+    const reading = entry?.p ?? t.reading ?? pack.reading(t.text);
+    tokens.push({ text: t.text, isWord: true, entry, pinyin: t.reading ?? reading, lemma: t.lemma && t.lemma !== t.text ? t.lemma : undefined, pos: t.pos, known: isKnown, inDeck: deck.has(t.text) || deck.has(key), hsk: levelRank(entry), level: entry ? levelLabel(entry) : undefined });
+    if (!isKnown && !seen.has(key) && Array.from(t.text).every((c) => pack.isTargetChar(c))) {
+      seen.add(key);
+      newWords.push({ hanzi: key, pinyin: entry?.p ?? pack.reading(key), meaning: entry?.es ?? entry?.en?.slice(0, 2).join("; ") ?? "", hsk: levelRank(entry), level: entry ? levelLabel(entry) : undefined });
     }
   }
-  return { tokens, pinyin: tokens.map((t) => (t.isWord ? t.pinyin : t.text)).join(" ").replace(/\s+([，。！？,.!?])/g, "$1"), newWords, grammar: detectGrammar(zh), knownRatio: wordCount ? knownCount / wordCount : 1 };
+  const sep = pack.id === "zh" ? " " : " ";
+  return {
+    tokens,
+    pinyin: tokens
+      .map((t) => (t.isWord ? t.pinyin : t.text))
+      .join(sep)
+      .replace(/\s+([，。！？、,.!?])/g, "$1"),
+    newWords,
+    grammar: detectGrammar(zh),
+    knownRatio: wordCount ? knownCount / wordCount : 1,
+  };
 }
 
 export function comprehensionOfLines(lines: { zh: string }[], known: Set<string>, knownChars: Set<string> = new Set()): { ratio: number; unknown: Map<string, number> } {
-  const lex = getLexicon();
+  const pack = getActivePack();
   const unknown = new Map<string, number>();
   let total = 0;
   let k = 0;
   for (const l of lines) {
-    for (const t of segment(l.zh, lex)) {
+    for (const t of pack.analyze(l.zh).tokens) {
       if (!t.isWord) continue;
       total++;
-      const chars = Array.from(t.text);
-      if (known.has(t.text) || (chars.length > 1 && chars.every((c) => known.has(c) || knownChars.has(c)))) k++;
-      else unknown.set(t.text, (unknown.get(t.text) ?? 0) + 1);
+      if (isKnownToken(t.text, t.lemma, known, knownChars)) k++;
+      else {
+        const key = t.lemma ?? t.text;
+        unknown.set(key, (unknown.get(key) ?? 0) + 1);
+      }
     }
   }
   return { ratio: total ? k / total : 1, unknown };

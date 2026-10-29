@@ -1,5 +1,8 @@
 "use client";
 import { cn } from "@/lib/utils";
+import { getActiveLang } from "@/lib/languages/registry";
+import { numeral } from "@/lib/languages/ui-text";
+import { Torii } from "@/components/ornament/ja";
 
 /** Numerales chinos para los nodos del mapa (0–20). */
 const NUM = ["零", "一", "二", "三", "四", "五", "六", "七", "八", "九", "十"];
@@ -10,7 +13,7 @@ export function zhNumeral(n: number): string {
 }
 
 /** 亭 — pabellón a tinta (un solo trazo), para la cima del mapa y los hitos. */
-export function Pavilion({ size = 56, className, tone = "ink" }: { size?: number; className?: string; tone?: "ink" | "faint" | "cinnabar" }) {
+function ZhPavilion({ size = 56, className, tone = "ink" }: { size?: number; className?: string; tone?: "ink" | "faint" | "cinnabar" }) {
   const color = tone === "cinnabar" ? "rgb(var(--cinnabar))" : tone === "faint" ? "rgb(var(--ink-faint))" : "rgb(var(--ink))";
   return (
     <svg viewBox="0 0 64 64" width={size} height={size} className={cn("block", className)} aria-hidden="true">
@@ -35,7 +38,7 @@ export function Pavilion({ size = 56, className, tone = "ink" }: { size?: number
 }
 
 /** 牌坊 — pórtico/arco conmemorativo para los checkpoints. */
-export function Paifang({ size = 56, className, tone = "ink" }: { size?: number; className?: string; tone?: "ink" | "faint" | "cinnabar" | "gold" }) {
+function ZhPaifang({ size = 56, className, tone = "ink" }: { size?: number; className?: string; tone?: "ink" | "faint" | "cinnabar" | "gold" }) {
   const color = tone === "cinnabar" ? "rgb(var(--cinnabar))" : tone === "gold" ? "rgb(var(--gold-ink))" : tone === "faint" ? "rgb(var(--ink-faint))" : "rgb(var(--ink))";
   return (
     <svg viewBox="0 0 64 64" width={size} height={size} className={cn("block", className)} aria-hidden="true">
@@ -65,3 +68,58 @@ export function PathSegment({ from, to, done, className }: { from: number; to: n
     </svg>
   );
 }
+
+type Tone = "ink" | "faint" | "cinnabar" | "gold";
+const toneColor = (tone: Tone) => (tone === "cinnabar" ? "rgb(var(--cinnabar))" : tone === "gold" ? "rgb(var(--gold-ink))" : tone === "faint" ? "rgb(var(--ink-faint))" : "rgb(var(--ink))");
+
+/** 정자 — pabellón coreano: tejado de curva suave (팔작지붕), aleros apenas levantados, sobre basamento. */
+function KoJeongja({ size = 56, className, tone = "ink" }: { size?: number; className?: string; tone?: Tone }) {
+  const color = toneColor(tone);
+  return (
+    <svg viewBox="0 0 64 64" width={size} height={size} className={cn("block", className)} aria-hidden="true">
+      <g fill="none" stroke={color} strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M24 14 h16" />
+        <path d="M4 28 C 14 27, 20 20, 24 14 M60 28 C 50 27, 44 20, 40 14" />
+        <path d="M4 28 c -1 -1 -1.5 -3 -1 -4.5 M60 28 c 1 -1 1.5 -3 1 -4.5" />
+        <path d="M10 30 h44" strokeWidth="1.4" opacity="0.6" />
+        <path d="M14 31 v20 M26 31 v20 M38 31 v20 M50 31 v20" />
+        <path d="M14 34 h36" strokeWidth="1.2" opacity="0.7" />
+        <path d="M8 52 h48 M12 56 h40" />
+      </g>
+    </svg>
+  );
+}
+
+/** 홍살문 — puerta de flechas rojas: dos pilares, dintel con barrotes verticales. */
+function KoHongsalmun({ size = 56, className, tone = "ink" }: { size?: number; className?: string; tone?: Tone }) {
+  const color = tone === "gold" || tone === "cinnabar" ? "rgb(var(--seal))" : toneColor(tone);
+  return (
+    <svg viewBox="0 0 64 64" width={size} height={size} className={cn("block", className)} aria-hidden="true">
+      <g fill="none" stroke={color} strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M14 10 v46 M50 10 v46" />
+        <path d="M10 14 h44 M10 26 h44" />
+        <path d="M20 26 v-14 M26 26 v-16 M32 26 v-18 M38 26 v-16 M44 26 v-14" strokeWidth="1.4" />
+        <path d="M8 56 h12 M44 56 h12" strokeWidth="1.6" />
+      </g>
+    </svg>
+  );
+}
+
+/** Hito del mapa (cima): 亭 en chino, 鳥居 en japonés, 정자 en coreano. */
+export function Pavilion(props: { size?: number; className?: string; tone?: "ink" | "faint" | "cinnabar" }) {
+  const lang = getActiveLang();
+  if (lang === "ja") return <Torii size={props.size} className={cn("block", props.className, props.tone === "faint" && "opacity-50")} />;
+  if (lang === "ko") return <KoJeongja {...props} />;
+  return <ZhPavilion {...props} />;
+}
+
+/** Puerta del checkpoint: 牌坊 en chino, 鳥居 en japonés, 홍살문 en coreano. */
+export function Paifang(props: { size?: number; className?: string; tone?: Tone }) {
+  const lang = getActiveLang();
+  if (lang === "ja") return <Torii size={props.size} className={cn("block", props.className, props.tone === "faint" && "opacity-50")} />;
+  if (lang === "ko") return <KoHongsalmun {...props} />;
+  return <ZhPaifang {...props} />;
+}
+
+/** Numeral del idioma activo para los nodos del mapa (0–20). */
+export const mapNumeral = (n: number) => numeral(n);

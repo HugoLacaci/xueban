@@ -10,7 +10,13 @@ export interface DictEntry {
   freq?: number; // rango de frecuencia (menor = más frecuente)
   pos?: string[]; // categorías gramaticales
   cl?: string[]; // clasificadores (p. ej. ["个","本"])
-  src?: "cedict" | "hsk" | "seed" | "user";
+  src?: "cedict" | "hsk" | "seed" | "user" | "jmdict" | "krdict" | "wiktionary";
+  lv?: string; // etiqueta de nivel genérica (ja: N5…N1; ko: TOPIK1…; zh usa hsk/hsk2)
+  extra?: Record<string, unknown>; // ja: pitch, pos detallado; ko: hanja, pronunciación
+}
+
+export interface SearchResult extends DictEntry {
+  score: number;
 }
 
 export interface CharInfo {

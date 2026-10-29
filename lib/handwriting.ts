@@ -110,11 +110,14 @@ export function recognize(userStrokes: Stroke[], medians: Record<string, number[
   return out.sort((a, b) => a.score - b.score).slice(0, limit);
 }
 
-let mediansCache: Record<string, number[][][]> | undefined;
-export async function loadMedians(): Promise<Record<string, number[][][]>> {
-  if (mediansCache) return mediansCache;
-  const res = await fetch(withBase("/data/medians.json"));
+const mediansCache = new Map<string, Record<string, number[][][]>>();
+/** Medianas de trazos del idioma (zh: hanzi-writer-data; ja: KanjiVG), normalizadas a 0–1. */
+export async function loadMedians(lang = "zh"): Promise<Record<string, number[][][]>> {
+  const cached = mediansCache.get(lang);
+  if (cached) return cached;
+  const res = await fetch(withBase(`/data/${lang}/medians.json`));
   if (!res.ok) throw new Error("No se pudieron cargar las medianas (npm run data:build)");
-  mediansCache = (await res.json()) as Record<string, number[][][]>;
-  return mediansCache;
+  const m = (await res.json()) as Record<string, number[][][]>;
+  mediansCache.set(lang, m);
+  return m;
 }

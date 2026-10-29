@@ -1,46 +1,52 @@
 "use client";
 import { useEffect, useMemo, useState } from "react";
-import Link from "next/link";
+import Link from "@/lib/languages/link";
 import { useLiveQuery } from "dexie-react-hooks";
 import { ArrowRight } from "lucide-react";
 import { db, type Skill } from "@/lib/db";
 import { reviewForecast, todaySummary, type TodaySummary } from "@/lib/stats";
-import { getHsk, loadHsk } from "@/lib/dictionary/service";
+import { usePack } from "@/lib/languages/provider";
+import type { LevelLists } from "@/lib/languages/types";
 import { EXERCISE_LABELS, type ExerciseType } from "@/lib/exercises/types";
 import { useSettings } from "@/lib/settings";
 import { formatMinutes } from "@/lib/utils";
 import { Badge, Card, PageHeader } from "@/components/ui/primitives";
 import { InkDivider, Lantern, Seal } from "@/components/ornament";
 import { ActivityHeatmap } from "@/components/today/heatmap";
-import { ChineseText } from "@/components/zh/chinese-text";
+import { ChineseText } from "@/components/target/target-text";
 import { cn } from "@/lib/utils";
+import { targetLang } from "@/lib/languages/registry";
+import { ui, pageNative } from "@/lib/languages/ui-text";
+import { Mixed } from "@/components/target/mixed";
 
 const SKILL_LABEL: Record<Skill, string> = { listening: "Escuchar", reading: "Leer", writing: "Escribir", speaking: "Hablar", tones: "Tonos", vocabulary: "Vocabulario", grammar: "Gramática", characters: "Caracteres" };
-const SKILL_ZH: Record<Skill, string> = { listening: "听", reading: "读", writing: "写", speaking: "说", tones: "调", vocabulary: "词", grammar: "法", characters: "字" };
+const skillGlyph = (s: Skill) => { const k = ui().skills; return s === "vocabulary" ? k.vocab : (k as Record<string, string>)[s] ?? ""; };
 
 export function ProgressPage() {
   const settings = useSettings((s) => s.settings);
   const [sum, setSum] = useState<TodaySummary | null>(null);
   const [forecast, setForecast] = useState<{ date: string; count: number }[]>([]);
-  const [hskReady, setHskReady] = useState(false);
-  const attemptsRaw = useLiveQuery(() => db.exerciseAttempts.toArray(), []);
-  const wordsRaw = useLiveQuery(() => db.words.toArray(), []);
-  const cardsRaw = useLiveQuery(() => db.cards.toArray(), []);
-  const sessionsRaw = useLiveQuery(() => db.studySessions.toArray(), []);
+  const pack = usePack();
+  const lang = pack.id;
+  const [lists, setLists] = useState<LevelLists | null>(null);
+  const attemptsRaw = useLiveQuery(() => db.exerciseAttempts.where("lang").equals(lang).toArray(), [lang]);
+  const wordsRaw = useLiveQuery(() => db.words.where("lang").equals(lang).toArray(), [lang]);
+  const cardsRaw = useLiveQuery(() => db.cards.where("lang").equals(lang).toArray(), [lang]);
+  const sessionsRaw = useLiveQuery(() => db.studySessions.where("lang").equals(lang).toArray(), [lang]);
   const attempts = useMemo(() => attemptsRaw ?? [], [attemptsRaw]);
   const words = useMemo(() => wordsRaw ?? [], [wordsRaw]);
   const cards = useMemo(() => cardsRaw ?? [], [cardsRaw]);
   const sessions = useMemo(() => sessionsRaw ?? [], [sessionsRaw]);
-  const lessons = useLiveQuery(() => db.lessonProgress.where("status").equals("completed").count(), []) ?? 0;
-  const tick = useLiveQuery(() => Promise.all([db.dailyStats.count(), db.reviewLogs.count()]), []);
+  const lessons = useLiveQuery(() => db.lessonProgress.where("[lang+status]").equals([lang, "completed"]).count(), [lang]) ?? 0;
+  const tick = useLiveQuery(() => Promise.all([db.daily.count(), db.reviewLogs.count()]), []);
 
   useEffect(() => {
     void todaySummary().then(setSum);
     void reviewForecast(30).then(setForecast);
   }, [tick]);
   useEffect(() => {
-    void loadHsk().then(() => setHskReady(true));
-  }, []);
+    void pack.levelLists(settings.hskList).then(setLists);
+  }, [pack, settings.hskList]);
 
   const knownWordIds = useMemo(() => {
     const s = new Set<string>();
@@ -51,25 +57,21 @@ export function ProgressPage() {
 
   // conocidas por nivel HSK (3.0 y 2.0)
   const byLevel = useMemo(() => {
-    const h = hskReady ? getHsk() : undefined;
-    if (!h) return [];
-    const key = settings.hskList === "2.0" ? "2.0" : "3.0";
-    return Object.entries(h.words[key])
-      .map(([lv, list]) => ({ level: Number(lv), total: list.length, known: list.filter((w) => knownHanzi.has(w)).length, inDeck: list.filter((w) => words.some((x) => x.hanzi === w)).length }))
-      .filter((x) => x.level <= 4)
+    if (!lists) return [];
+    return lists.words
+      .map(({ level: lv, label, list }) => ({ level: Number(lv) || lists.words.findIndex((x) => x.level === lv) + 1, label, total: list.length, known: list.filter((w) => knownHanzi.has(w)).length, inDeck: list.filter((w) => words.some((x) => x.hanzi === w)).length }))
+      .slice(0, 4)
       .sort((a, b) => a.level - b.level);
-  }, [hskReady, settings.hskList, knownHanzi, words]);
+  }, [lists, knownHanzi, words]);
   const charsByLevel = useMemo(() => {
-    const h = hskReady ? getHsk() : undefined;
-    if (!h) return [];
+    if (!lists) return [];
     const knownChars = new Set<string>();
     for (const w of knownHanzi) for (const c of w) knownChars.add(c);
-    const key = settings.hskList === "2.0" ? "2.0" : "3.0";
-    return Object.entries(h.chars[key])
-      .map(([lv, list]) => ({ level: Number(lv), total: list.length, known: list.filter((c) => knownChars.has(c)).length }))
-      .filter((x) => x.level <= 3)
+    return lists.chars
+      .map(({ level: lv, label, list }) => ({ level: Number(lv) || lists.chars.findIndex((x) => x.level === lv) + 1, label, total: list.length, known: list.filter((c) => knownChars.has(c)).length }))
+      .slice(0, 3)
       .sort((a, b) => a.level - b.level);
-  }, [hskReady, settings.hskList, knownHanzi]);
+  }, [lists, knownHanzi]);
 
   // precisión por tipo y destreza
   const byType = useMemo(() => group(attempts, (a) => a.exerciseType), [attempts]);
@@ -108,40 +110,40 @@ export function ProgressPage() {
   const streak = sum?.streak ?? 0;
 
   const achievements: { ok: boolean; seal: string; label: string; hint: string }[] = [
-    { ok: knownWordIds.size >= 10, seal: "十", label: "10 palabras conocidas", hint: `${Math.min(10, knownWordIds.size)} / 10` },
-    { ok: knownWordIds.size >= 100, seal: "百", label: "100 palabras conocidas", hint: `${Math.min(100, knownWordIds.size)} / 100` },
-    { ok: knownWordIds.size >= 300, seal: "一级", label: "HSK 1 completo (300)", hint: `${Math.min(300, knownWordIds.size)} / 300` },
-    { ok: streak >= 7, seal: "七日", label: "7 días seguidos", hint: `${Math.min(7, streak)} / 7` },
-    { ok: streak >= 30, seal: "月", label: "30 días seguidos", hint: `${Math.min(30, streak)} / 30` },
-    { ok: lessons >= 5, seal: "五课", label: "5 lecciones", hint: `${Math.min(5, lessons)} / 5` },
-    { ok: lessons >= 30, seal: "卅课", label: "30 lecciones", hint: `${Math.min(30, lessons)} / 30` },
-    { ok: totalMinutes >= 600, seal: "十时", label: "10 horas de estudio", hint: formatMinutes(Math.min(600, totalMinutes)) },
-    { ok: attempts.length >= 500, seal: "五百", label: "500 ejercicios", hint: `${Math.min(500, attempts.length)} / 500` },
+    { ok: knownWordIds.size >= 10, seal: ui().badges.w10, label: "10 palabras conocidas", hint: `${Math.min(10, knownWordIds.size)} / 10` },
+    { ok: knownWordIds.size >= 100, seal: ui().badges.w100, label: "100 palabras conocidas", hint: `${Math.min(100, knownWordIds.size)} / 100` },
+    { ok: knownWordIds.size >= 300, seal: ui().badges.level, label: `${pack.curriculum.levelTitle} completo (300)`, hint: `${Math.min(300, knownWordIds.size)} / 300` },
+    { ok: streak >= 7, seal: ui().badges.d7, label: "7 días seguidos", hint: `${Math.min(7, streak)} / 7` },
+    { ok: streak >= 30, seal: ui().badges.d30, label: "30 días seguidos", hint: `${Math.min(30, streak)} / 30` },
+    { ok: lessons >= 5, seal: ui().badges.l5, label: "5 lecciones", hint: `${Math.min(5, lessons)} / 5` },
+    { ok: lessons >= 30, seal: ui().badges.l30, label: "30 lecciones", hint: `${Math.min(30, lessons)} / 30` },
+    { ok: totalMinutes >= 600, seal: ui().badges.h10, label: "10 horas de estudio", hint: formatMinutes(Math.min(600, totalMinutes)) },
+    { ok: attempts.length >= 500, seal: ui().badges.e500, label: "500 ejercicios", hint: `${Math.min(500, attempts.length)} / 500` },
   ];
   const earned = achievements.filter((a) => a.ok).length;
 
   return (
     <div className="space-y-6">
-      <PageHeader title="Progreso" zh="进步" subtitle="Lo que importa: palabras y caracteres conocidos, precisión por destreza, puntos débiles, tiempo de input y previsión de repasos." />
+      <PageHeader title="Progreso" zh={pageNative("progress")} subtitle="Lo que importa: palabras y caracteres conocidos, precisión por destreza, puntos débiles, tiempo de input y previsión de repasos." />
 
       {/* ---- Informe: cuatro cifras ---- */}
       <section className="card-paper grid grid-cols-2 divide-line sm:grid-cols-4 sm:divide-x" aria-label="Resumen">
-        <Stat zh="词" label="Palabras conocidas" value={knownWordIds.size} hint={`${words.length} en el mazo`} />
-        <Stat zh="字" label="Caracteres" value={sum?.charsKnown ?? 0} hint="reconocidos" />
-        <Stat zh="日" label="Racha" value={streak} unit="días" hint={`${lessons} lecciones completadas`} lanterns />
-        <Stat zh="时" label="Tiempo total" value={formatMinutes(totalMinutes)} hint={`${formatMinutes(sum?.minutesWeek ?? 0)} esta semana`} />
+        <Stat zh={ui().report.words} label="Palabras conocidas" value={knownWordIds.size} hint={`${words.length} en el mazo`} />
+        <Stat zh={ui().report.chars} label="Caracteres" value={sum?.charsKnown ?? 0} hint="reconocidos" />
+        <Stat zh={ui().report.days} label="Racha" value={streak} unit="días" hint={`${lessons} lecciones completadas`} lanterns />
+        <Stat zh={ui().report.time} label="Tiempo total" value={formatMinutes(totalMinutes)} hint={`${formatMinutes(sum?.minutesWeek ?? 0)} esta semana`} />
       </section>
 
       <div className="grid gap-4 lg:grid-cols-2">
         {/* ---- HSK: aguadas de tinta ---- */}
         <Card>
-          <ReportTitle zh="级">Vocabulario por nivel HSK {settings.hskList === "2.0" ? "2.0" : "3.0"}</ReportTitle>
+          <ReportTitle zh={ui().report.level}>Vocabulario por nivel · {lists?.title ?? pack.exam.name}</ReportTitle>
           {byLevel.length ? (
             <ul className="space-y-3.5">
               {byLevel.map((l) => (
                 <li key={l.level}>
                   <div className="flex items-baseline justify-between gap-2 text-sm">
-                    <span className="font-medium text-ink">Nivel {l.level}</span>
+                    <span className="font-medium text-ink"><Mixed>{l.label}</Mixed></span>
                     <span className="tabular text-xs text-ink-faint">
                       <strong className="font-semibold text-celadon-ink">{l.known}</strong> conocidas · {l.inDeck} en el mazo · {l.total}
                     </span>
@@ -151,7 +153,7 @@ export function ProgressPage() {
               ))}
             </ul>
           ) : (
-            <p className="text-sm text-ink-faint">Cargando listas HSK…</p>
+            <p className="text-sm text-ink-faint">Cargando listas por nivel…</p>
           )}
           <p className="mt-3 flex items-center gap-3 text-[11px] text-ink-faint">
             <span className="inline-flex items-center gap-1">
@@ -161,12 +163,12 @@ export function ProgressPage() {
               <span className="inline-block h-2 w-4 rounded-sm bg-gold/45" /> en el mazo
             </span>
           </p>
-          <InkDivider label="字" className="my-4" />
+          <InkDivider label={ui().report.chars} className="my-4" />
           <ul className="space-y-2.5">
             {charsByLevel.map((l) => (
               <li key={l.level}>
                 <div className="flex items-baseline justify-between text-sm">
-                  <span className="text-ink-soft">Caracteres · nivel {l.level}</span>
+                  <span className="text-ink-soft">Caracteres · <Mixed>{l.label}</Mixed></span>
                   <span className="tabular text-xs text-ink-faint">
                     {l.known} / {l.total}
                   </span>
@@ -179,15 +181,15 @@ export function ProgressPage() {
 
         {/* ---- Precisión por destreza ---- */}
         <Card>
-          <ReportTitle zh="能">Precisión por destreza</ReportTitle>
+          <ReportTitle zh={ui().report.skill}>Precisión por destreza</ReportTitle>
           {bySkill.length ? (
             <ul className="space-y-2.5">
               {bySkill.map((s) => {
                 const tone = s.pct >= 80 ? "good" : s.pct >= 60 ? "mid" : "low";
                 return (
                   <li key={s.key} className="flex items-center gap-3">
-                    <span lang="zh-CN" className="zh-serif w-6 text-center text-lg leading-none text-ink-soft" aria-hidden="true">
-                      {SKILL_ZH[s.key as Skill] ?? ""}
+                    <span lang={targetLang()} className="zh-serif w-6 text-center text-lg leading-none text-ink-soft" aria-hidden="true">
+                      {skillGlyph(s.key as Skill)}
                     </span>
                     <span className="min-w-0 flex-1">
                       <span className="flex items-baseline justify-between text-sm">
@@ -224,7 +226,7 @@ export function ProgressPage() {
 
         {/* ---- Puntos débiles: papelitos ---- */}
         <Card>
-          <ReportTitle zh="弱">Mis puntos débiles</ReportTitle>
+          <ReportTitle zh={ui().report.weak}>Mis puntos débiles</ReportTitle>
           {weakWords.length ? (
             <ul className="flex flex-wrap gap-2">
               {weakWords.map((w, i) => (
@@ -236,14 +238,14 @@ export function ProgressPage() {
                   >
                     <span className="absolute inset-y-1 left-0 w-[2px] rounded-r bg-cinnabar/70" aria-hidden="true" />
                     <ChineseText text={w.word?.hanzi ?? w.id} size="md" ruby={false} interactive={false} markUnknown={false} />
-                    <span className="max-w-28 truncate text-xs text-ink-faint">{w.word?.meaning}</span>
+                    <span className="max-w-28 truncate text-xs text-ink-faint"><Mixed>{w.word?.meaning}</Mixed></span>
                     <span className="tabular rounded-full bg-paper-sunk px-1.5 text-[11px] font-medium text-ink-soft">{w.fails + w.lapses}</span>
                   </Link>
                 </li>
               ))}
             </ul>
           ) : (
-            <p className="text-sm text-ink-faint">Todavía no hay fallos registrados. 没关系 — llegarán, y ahí es donde se aprende.</p>
+            <p className="text-sm text-ink-faint">Todavía no hay fallos registrados. <span lang={targetLang()}>{ui().noWorries}</span> — llegarán, y ahí es donde se aprende.</p>
           )}
           {toneConfusion.length ? (
             <div className="mt-4">
@@ -266,9 +268,9 @@ export function ProgressPage() {
 
         {/* ---- Previsión ---- */}
         <Card>
-          <ReportTitle zh="预">Previsión de repasos (30 días)</ReportTitle>
+          <ReportTitle zh={ui().report.forecast}>Previsión de repasos (30 días)</ReportTitle>
           <ForecastBars data={forecast} />
-          <InkDivider label="时" className="my-4" />
+          <InkDivider label={ui().report.time} className="my-4" />
           <ul className="grid grid-cols-1 gap-x-6 gap-y-1 text-sm sm:grid-cols-2">
             {minutesByKind.map((k) => (
               <li key={k.key} className="flex justify-between border-b border-dotted border-line py-0.5">
@@ -282,13 +284,13 @@ export function ProgressPage() {
       </div>
 
       <Card>
-        <ReportTitle zh="历">Actividad</ReportTitle>
+        <ReportTitle zh={ui().report.history}>Actividad</ReportTitle>
         <ActivityHeatmap daily={sum?.daily ?? []} weeks={26} />
       </Card>
 
       {/* ---- Álbum de sellos ---- */}
       <Card className="relative overflow-hidden">
-        <ReportTitle zh="章" action={<span className="tabular text-xs text-ink-faint">{earned} / {achievements.length}</span>}>
+        <ReportTitle zh={ui().report.badges} action={<span className="tabular text-xs text-ink-faint">{earned} / {achievements.length}</span>}>
           Álbum de sellos
         </ReportTitle>
         <ul className="grid grid-cols-3 gap-x-2 gap-y-5 sm:grid-cols-5 lg:grid-cols-9">
@@ -299,8 +301,8 @@ export function ProgressPage() {
               ) : (
                 <GhostSeal text={a.seal} title={`Pendiente: ${a.label}`} />
               )}
-              <span className={cn("text-[11px] leading-tight", a.ok ? "font-medium text-ink" : "text-ink-faint")}>{a.label}</span>
-              {!a.ok ? <span className="tabular -mt-1 text-[10px] text-ink-faint/80">{a.hint}</span> : null}
+              <span className={cn("text-[11px] leading-tight", a.ok ? "font-medium text-ink" : "text-ink-faint")}><Mixed>{a.label}</Mixed></span>
+              {!a.ok ? <span className="tabular -mt-1 text-[10px] text-ink-faint/80"><Mixed>{a.hint}</Mixed></span> : null}
             </li>
           ))}
         </ul>
@@ -331,8 +333,8 @@ function ReportTitle({ zh, children, action }: { zh: string; children: React.Rea
   return (
     <div className="mb-3 flex items-center justify-between gap-3">
       <h2 className="flex items-center gap-2 font-serif-es text-lg font-semibold tracking-tight text-ink">
-        <span lang="zh-CN" className="zh-serif text-base leading-none text-cinnabar" aria-hidden="true">
-          {zh}
+        <span lang={targetLang()} className="zh-serif text-base leading-none text-cinnabar" aria-hidden="true">
+          <Mixed>{zh}</Mixed>
         </span>
         {children}
       </h2>
@@ -345,14 +347,14 @@ function Stat({ zh, label, value, unit, hint, lanterns }: { zh: string; label: s
   const n = typeof value === "number" ? value : 0;
   return (
     <div className="flex items-start gap-3 p-4 sm:p-5">
-      <span lang="zh-CN" className="zh-serif mt-0.5 text-2xl leading-none text-ink/70" aria-hidden="true">
-        {zh}
+      <span lang={targetLang()} className="zh-serif mt-0.5 text-2xl leading-none text-ink/70" aria-hidden="true">
+        <Mixed>{zh}</Mixed>
       </span>
       <span className="min-w-0">
         <span className="block text-[11px] uppercase tracking-[0.12em] text-ink-faint">{label}</span>
         <span className="tabular block font-serif-es text-[28px] font-semibold leading-none tracking-tight text-ink">
           {value}
-          {unit ? <span className="ml-1 text-sm font-normal text-ink-faint">{unit}</span> : null}
+          {unit ? <span className="ml-1 text-sm font-normal text-ink-faint"><Mixed>{unit}</Mixed></span> : null}
         </span>
         {lanterns ? (
           <span className="mt-1.5 flex gap-0.5" aria-hidden="true">
@@ -361,7 +363,7 @@ function Stat({ zh, label, value, unit, hint, lanterns }: { zh: string; label: s
             ))}
           </span>
         ) : null}
-        {hint ? <span className="mt-1 block text-[11px] leading-snug text-ink-faint">{hint}</span> : null}
+        {hint ? <span className="mt-1 block text-[11px] leading-snug text-ink-faint"><Mixed>{hint}</Mixed></span> : null}
       </span>
     </div>
   );
@@ -382,8 +384,8 @@ function GhostSeal({ text, title }: { text: string; title: string }) {
   const chars = Array.from(text);
   return (
     <span className="inline-flex size-[60px] items-center justify-center rounded-[6px] border-[1.5px] border-dashed border-ink/25 text-ink/30" role="img" aria-label={title}>
-      <span lang="zh-CN" className={cn("zh-display leading-none", chars.length === 1 ? "text-3xl" : "text-base")}>
-        {text}
+      <span lang={targetLang()} className={cn("zh-display leading-none", chars.length === 1 ? "text-3xl" : "text-base")}>
+        <Mixed>{text}</Mixed>
       </span>
     </span>
   );

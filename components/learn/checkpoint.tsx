@@ -1,12 +1,13 @@
 "use client";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
-import Link from "next/link";
+import Link from "@/lib/languages/link";
 import { ArrowLeft } from "lucide-react";
 import { unitById } from "@/lib/course";
 import { checkpointExercises } from "@/lib/exercises/build";
 import type { Exercise } from "@/lib/exercises/types";
-import { loadCharInfo, useDictionary } from "@/lib/dictionary/service";
+import { useDictionary } from "@/lib/dictionary/service";
+import { getActivePack } from "@/lib/languages/registry";
 import { db } from "@/lib/db";
 import { nowMs } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
@@ -15,6 +16,8 @@ import { CloudBorder, Seal } from "@/components/ornament";
 import { ExerciseRunner, type SessionSummary } from "@/components/exercises/runner";
 import { SummaryCard } from "./steps";
 import { Paifang } from "./map-art";
+import { targetLang } from "@/lib/languages/registry";
+import { ui } from "@/lib/languages/ui-text";
 
 export function Checkpoint({ unitId }: { unitId: string }) {
   const router = useRouter();
@@ -27,7 +30,7 @@ export function Checkpoint({ unitId }: { unitId: string }) {
 
   useEffect(() => {
     if (dictStatus === "idle") void load();
-    void loadCharInfo().catch(() => undefined);
+    void getActivePack().characters.load().catch(() => undefined);
   }, [dictStatus, load]);
 
   useEffect(() => {
@@ -55,7 +58,7 @@ export function Checkpoint({ unitId }: { unitId: string }) {
       <div className="mx-auto max-w-2xl">
         <CloudBorder className="card-paper p-2">
           <div className="flex flex-col items-center pt-6">
-            <Seal text={pct >= 0.8 ? "通过" : "再试"} size={76} tone={pct >= 0.8 ? "cinnabar" : "ink"} stamped rotate={-5} title={pct >= 0.8 ? "Checkpoint superado" : "Vuelve a intentarlo"} />
+            <Seal text={pct >= 0.8 ? ui().passSeal : ui().retrySeal} size={76} tone={pct >= 0.8 ? "cinnabar" : "ink"} stamped rotate={-5} title={pct >= 0.8 ? "Checkpoint superado" : "Vuelve a intentarlo"} />
           </div>
           <SummaryCard
             summary={summary}
@@ -74,13 +77,13 @@ export function Checkpoint({ unitId }: { unitId: string }) {
     const words = unit.lessons.reduce((a, l) => a + l.vocab.length, 0);
     return (
       <div className="mx-auto max-w-xl">
-        <PageHeader title={`Checkpoint · ${unit.title}`} zh="检查点" subtitle="Ejercicios mezclados con todo el vocabulario y las frases de la unidad. Sin saltar. Te dirá qué repasar." />
+        <PageHeader title={`Checkpoint · ${unit.title}`} zh={ui().checkpoint} subtitle="Ejercicios mezclados con todo el vocabulario y las frases de la unidad. Sin saltar. Te dirá qué repasar." />
         <CloudBorder className="card-paper">
           <div className="flex flex-col items-center px-6 py-8 text-center">
             <Paifang size={84} tone="gold" />
             <p className="font-serif-es mt-3 text-xl font-semibold text-ink">
-              Cruza el 牌坊 de la unidad
-              <span lang="zh-CN" className="zh-kai ml-2 text-lg font-normal text-cinnabar">
+              Cruza el {ui().gate} de la unidad
+              <span lang={targetLang()} className="zh-kai ml-2 text-lg font-normal text-cinnabar">
                 {unit.zh}
               </span>
             </p>

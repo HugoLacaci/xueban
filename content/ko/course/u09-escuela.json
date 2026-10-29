@@ -1,0 +1,218 @@
+{
+  "id": "ko-u09",
+  "order": 10,
+  "title": "Escuela y trabajo",
+  "zh": "학교와 일",
+  "description": "La vida en KAIST: horario de clases, asignaturas difíciles, excusas por los deberes, hablar con respeto a un profesor y pasar al 반말 con un amigo de tu edad.",
+  "icon": "GraduationCap",
+  "level": 1,
+  "lang": "ko",
+  "category": "Escuela y trabajo",
+  "checkpoint": { "exercises": 15 },
+  "lessons": [
+    {
+      "id": "ko-u09-l1",
+      "title": "Mi horario de clases",
+      "zh": "수업이 있고…",
+      "goal": "Contar qué clases tienes y qué haces en ellas, uniendo dos acciones con -고.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "수업", "pinyin": "sueop", "es": "clase (lección)" },
+        { "hanzi": "숙제", "pinyin": "sukje", "es": "deberes, tarea" },
+        { "hanzi": "시험", "pinyin": "siheom", "es": "examen" },
+        { "hanzi": "단어", "pinyin": "daneo", "es": "palabra (vocabulario)" },
+        { "hanzi": "배우다", "pinyin": "baeuda", "es": "aprender" },
+        { "hanzi": "연습하다", "pinyin": "yeonseupada", "es": "practicar" },
+        { "hanzi": "끝나다", "pinyin": "kkeunnada", "es": "terminar(se), acabar" },
+        { "hanzi": "도서관", "pinyin": "doseogwan", "es": "biblioteca" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "La vida en clase" },
+        {
+          "type": "dialogue",
+          "title": "¿A qué hora tienes clase?",
+          "lines": [
+            { "speaker": "민수", "zh": "우고 씨, 오늘 수업이 몇 시에 있어요?", "py": "ugo ssi, oneul sueobi myeot sie isseoyo?", "es": "Hugo, ¿a qué hora tienes clase hoy?" },
+            { "speaker": "우고", "zh": "아홉 시에 한국어 수업이 있고 두 시에 컴퓨터 수업이 있어요.", "py": "ahop sie hangugeo sueobi itgo du sie keompyuteo sueobi isseoyo.", "es": "Tengo coreano a las nueve e informática a las dos." },
+            { "speaker": "민수", "zh": "한국어 수업에서는 뭐 해요?", "py": "hangugeo sueobeseoneun mwo haeyo?", "es": "¿Y qué hacéis en la clase de coreano?" },
+            { "speaker": "우고", "zh": "단어를 배우고 대화를 연습해요.", "py": "daneoreul baeugo daehwareul yeonseupaeyo.", "es": "Aprendemos vocabulario y practicamos diálogos." },
+            { "speaker": "민수", "zh": "숙제도 많아요?", "py": "sukjedo manayo?", "es": "¿También tenéis muchos deberes?" },
+            { "speaker": "우고", "zh": "네, 많아요. 그리고 다음 주에 시험이 있어요.", "py": "ne, manayo. geurigo daeum jue siheomi isseoyo.", "es": "Sí, muchos. Y la semana que viene hay examen." },
+            { "speaker": "민수", "zh": "수업이 끝나고 같이 도서관에 가요.", "py": "sueobi kkeunnago gachi doseogwane gayo.", "es": "Cuando acaben las clases, vamos juntos a la biblioteca." },
+            { "speaker": "우고", "zh": "좋아요. 다섯 시에 도서관 앞에서 만나요.", "py": "joayo. daseot sie doseogwan apeseo mannayo.", "es": "Vale. Quedamos a las cinco delante de la biblioteca." }
+          ],
+          "notes": "대화 = diálogo, conversación. 많아요 se pronuncia [마나요]: la ㅎ de 많 no suena. 끝나고 suena [끈나고]. -고 une dos frases como «y» (있고, 배우고) y, con acciones, también marca «y luego» (끝나고 = acaban y después…)."
+        },
+        { "type": "grammar", "id": "go-connector" },
+        { "type": "exercises", "count": 10, "types": ["choose-meaning", "listen-choose", "conjugation", "fill-blank", "build-sentence", "pinyin-input", "matching", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ko-u09-l2",
+      "title": "Una carrera difícil pero interesante",
+      "zh": "어렵지만 재미있어요",
+      "goal": "Hablar de tu carrera y de lo difícil o fácil que es, contrastando con -지만.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "전공", "pinyin": "jeongong", "es": "especialidad, carrera (lo que estudias)" },
+        { "hanzi": "공학", "pinyin": "gonghak", "es": "ingeniería: 컴퓨터 공학 = ingeniería informática" },
+        { "hanzi": "수학", "pinyin": "suhak", "es": "matemáticas" },
+        { "hanzi": "어렵다", "pinyin": "eoryeopda", "es": "ser difícil (어려워요)" },
+        { "hanzi": "쉽다", "pinyin": "swipda", "es": "ser fácil (쉬워요)" },
+        { "hanzi": "문법", "pinyin": "munbeop", "es": "gramática" },
+        { "hanzi": "발음", "pinyin": "bareum", "es": "pronunciación" },
+        { "hanzi": "교수님", "pinyin": "gyosunim", "es": "profesor/a (de universidad)" },
+        { "hanzi": "친절하다", "pinyin": "chinjeolhada", "es": "ser amable" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "Asignaturas y opiniones" },
+        {
+          "type": "dialogue",
+          "title": "¿Qué estudias?",
+          "lines": [
+            { "speaker": "지민", "zh": "우고 씨는 전공이 뭐예요?", "py": "ugo ssineun jeongongi mwoyeyo?", "es": "Hugo, ¿qué estudias?" },
+            { "speaker": "우고", "zh": "컴퓨터 공학이에요. 지민 씨는요?", "py": "keompyuteo gonghagieyo. jimin ssineunyo?", "es": "Ingeniería informática. ¿Y tú, Jimin?" },
+            { "speaker": "지민", "zh": "저는 수학을 공부해요. 수학은 어렵지만 재미있어요.", "py": "jeoneun suhageul gongbuhaeyo. suhageun eoryeopjiman jaemiisseoyo.", "es": "Yo estudio Matemáticas. Son difíciles, pero interesantes." },
+            { "speaker": "우고", "zh": "저는 한국어가 조금 어려워요. 문법은 쉽지만 발음이 어려워요.", "py": "jeoneun hangugeoga jogeum eoryeowoyo. munbeobeun swipjiman bareumi eoryeowoyo.", "es": "A mí el coreano se me hace un poco difícil. La gramática es fácil, pero la pronunciación es difícil." },
+            { "speaker": "지민", "zh": "박 교수님 수업은 어때요?", "py": "bak gyosunim sueobeun eottaeyo?", "es": "¿Y qué tal la clase del profesor Park?" },
+            { "speaker": "우고", "zh": "교수님은 말이 빠르지만 아주 친절해요.", "py": "gyosunimeun mari ppareujiman aju chinjeolhaeyo.", "es": "El profesor habla rápido, pero es muy amable." }
+          ],
+          "notes": "어려워요 viene de 어렵다: los adjetivos en ㅂ cambian la ㅂ por 워 (어렵다 → 어려워요, 쉽다 → 쉬워요). Lo estudiarás en la unidad 10; de momento apréndelo como palabra. Delante de -지만 no cambia nada: 어렵지만, 쉽지만. 말이 빠르다 = hablar rápido (literalmente «las palabras son rápidas»). 지민 씨는요? = ¿y tú, Jimin?. En Corea a un profesor de universidad se le llama 교수님; 선생님 se usa más en la academia o el instituto."
+        },
+        { "type": "grammar", "id": "jiman" },
+        { "type": "exercises", "count": 10, "types": ["choose-meaning", "listen-choose", "fill-blank", "conjugation", "order-words", "translate-to-es", "dictation", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ko-u09-l3",
+      "title": "No he podido hacer los deberes",
+      "zh": "숙제를 못 했어요",
+      "goal": "Decir que no haces algo (안) o que no puedes hacerlo (못) y disculparte con la profesora.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "안", "pinyin": "an", "es": "no (negación delante del verbo)" },
+        { "hanzi": "못", "pinyin": "mot", "es": "no poder (delante del verbo)" },
+        { "hanzi": "왜", "pinyin": "wae", "es": "¿por qué?" },
+        { "hanzi": "바쁘다", "pinyin": "bappeuda", "es": "estar ocupado (바빠요)" },
+        { "hanzi": "아르바이트", "pinyin": "areubaiteu", "es": "trabajo a tiempo parcial" },
+        { "hanzi": "죄송하다", "pinyin": "joesonghada", "es": "sentirlo (formal): 죄송합니다 = lo siento" },
+        { "hanzi": "꼭", "pinyin": "kkok", "es": "sin falta, seguro" },
+        { "hanzi": "점심", "pinyin": "jeomsim", "es": "comida del mediodía, almuerzo" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "Excusas y negaciones" },
+        {
+          "type": "dialogue",
+          "title": "¿Has hecho los deberes?",
+          "lines": [
+            { "speaker": "김 선생님", "zh": "우고 씨, 숙제했어요?", "py": "ugo ssi, sukjehaesseoyo?", "es": "Hugo, ¿has hecho los deberes?" },
+            { "speaker": "우고", "zh": "죄송합니다, 선생님. 숙제를 못 했어요.", "py": "joesonghamnida, seonsaengnim. sukjereul mot haesseoyo.", "es": "Lo siento, profesora. No he podido hacer los deberes." },
+            { "speaker": "김 선생님", "zh": "왜 못 했어요?", "py": "wae mot haesseoyo?", "es": "¿Por qué no has podido?" },
+            { "speaker": "우고", "zh": "어제 아르바이트가 있었어요. 너무 바빠서 시간이 없었어요.", "py": "eoje areubaiteuga isseosseoyo. neomu bappaseo sigani eopseosseoyo.", "es": "Ayer tenía el trabajo. Estaba tan ocupado que no tuve tiempo." },
+            { "speaker": "김 선생님", "zh": "알겠어요. 내일은 꼭 가져오세요.", "py": "algesseoyo. naeireun kkok gajeooseyo.", "es": "Entendido. Mañana tráelos sin falta." },
+            { "speaker": "지민", "zh": "우고 씨, 점심 안 먹어요?", "py": "ugo ssi, jeomsim an meogeoyo?", "es": "(Después de clase) Hugo, ¿no vas a comer?" },
+            { "speaker": "우고", "zh": "오늘은 안 먹어요. 도서관에서 숙제를 해요!", "py": "oneureun an meogeoyo. doseogwaneseo sukjereul haeyo!", "es": "Hoy no como. ¡Voy a hacer los deberes en la biblioteca!" }
+          ],
+          "notes": "못 했어요 se pronuncia [모태써요]. Con verbos 하다 de tipo «nombre + 하다», 안 y 못 van justo antes de 하다: 숙제를 못 했어요 / 숙제 못 했어요 (no *못 숙제했어요). 바빠서 = como estaba ocupado (-아서 de causa, unidad 8). 가져오세요 = tráigalo (가져오다 + -세요, lección 4). En coreano «lo siento» formal es 죄송합니다; con amigos basta 미안해요."
+        },
+        { "type": "grammar", "id": "an-negation" },
+        { "type": "grammar", "id": "mot-negation" },
+        { "type": "exercises", "count": 10, "types": ["choose-meaning", "listen-choose", "fill-blank", "conjugation", "order-words", "build-sentence", "pinyin-input", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ko-u09-l4",
+      "title": "En el despacho del profesor",
+      "zh": "교수님, 계세요?",
+      "goal": "Hablar con respeto de un profesor con -시- y pedir cosas con cortesía con -(으)세요.",
+      "minutes": 13,
+      "vocab": [
+        { "hanzi": "계시다", "pinyin": "gyesida", "es": "estar (honorífico de 있다): 교수님 계세요?" },
+        { "hanzi": "연구실", "pinyin": "yeongusil", "es": "despacho, laboratorio (de un profesor)" },
+        { "hanzi": "들어오다", "pinyin": "deureooda", "es": "entrar (hacia donde está quien habla)" },
+        { "hanzi": "앉다", "pinyin": "anda", "es": "sentarse (앉으세요)" },
+        { "hanzi": "가르치다", "pinyin": "gareuchida", "es": "enseñar" },
+        { "hanzi": "학기", "pinyin": "hakgi", "es": "semestre, cuatrimestre" },
+        { "hanzi": "무슨", "pinyin": "museun", "es": "qué (tipo de): 무슨 수업?" },
+        { "hanzi": "듣다", "pinyin": "deutda", "es": "escuchar; cursar (una asignatura): 수업을 들어요" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "Hablar con un profesor" },
+        {
+          "type": "dialogue",
+          "title": "¿Está el profesor Park?",
+          "lines": [
+            { "speaker": "우고", "zh": "실례합니다. 박 교수님 계세요?", "py": "sillyehamnida. bak gyosunim gyeseyo?", "es": "Perdone. ¿Está el profesor Park?" },
+            { "speaker": "조교", "zh": "네, 연구실에 계세요. 들어오세요.", "py": "ne, yeongusire gyeseyo. deureooseyo.", "es": "Sí, está en su despacho. Pase." },
+            { "speaker": "박 교수님", "zh": "아, 우고 씨. 어서 와요. 여기 앉으세요.", "py": "a, ugo ssi. eoseo wayo. yeogi anjeuseyo.", "es": "Ah, Hugo. Adelante. Siéntate aquí." },
+            { "speaker": "우고", "zh": "교수님, 다음 학기에 무슨 수업을 가르치세요?", "py": "gyosunim, daeum hakgie museun sueobeul gareuchiseyo?", "es": "Profesor, ¿qué asignatura da usted el próximo semestre?" },
+            { "speaker": "박 교수님", "zh": "데이터 수업을 가르쳐요. 우고 씨도 들어요?", "py": "deiteo sueobeul gareuchyeoyo. ugo ssido deureoyo?", "es": "Doy una asignatura de datos. ¿Tú también la vas a cursar?" },
+            { "speaker": "우고", "zh": "네, 꼭 듣고 싶어요.", "py": "ne, kkok deutgo sipeoyo.", "es": "Sí, quiero cursarla sin falta." },
+            { "speaker": "우고", "zh": "감사합니다. 안녕히 계세요.", "py": "gamsahamnida. annyeonghi gyeseyo.", "es": "Muchas gracias. Hasta luego." }
+          ],
+          "notes": "조교 = asistente del profesor (doctorando que ayuda en la asignatura). Hugo usa -시- para el profesor (계세요, 가르치세요), pero nunca para sí mismo. El profesor le habla en 해요체 normal (가르쳐요, 들어요) y usa 앉으세요 por cortesía. 들어요 viene de 듣다, verbo irregular en ㄷ (듣다 → 들어요), que verás en la unidad 10; 듣고 no cambia. 안녕히 계세요 = adiós a quien se queda (literalmente «quédese en paz»)."
+        },
+        { "type": "grammar", "id": "honorific-si" },
+        { "type": "grammar", "id": "euseyo" },
+        { "type": "exercises", "count": 10, "types": ["choose-meaning", "listen-choose", "conjugation", "fill-blank", "particle", "order-words", "dictation", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ko-u09-l5",
+      "title": "Lectura y repaso: 반말, 존댓말 y presentarse en el laboratorio",
+      "zh": "반말해요!",
+      "goal": "Reconocer los tres niveles de habla: 합니다체 (formal), 해요체 (educado) y 반말 (entre amigos).",
+      "minutes": 14,
+      "vocab": [
+        { "hanzi": "동갑", "pinyin": "donggap", "es": "de la misma edad" },
+        { "hanzi": "반말", "pinyin": "banmal", "es": "habla informal (sin 요)" },
+        { "hanzi": "존댓말", "pinyin": "jondaenmal", "es": "habla cortés" },
+        { "hanzi": "나", "pinyin": "na", "es": "yo (informal)" },
+        { "hanzi": "너", "pinyin": "neo", "es": "tú (solo con amigos o menores)" },
+        { "hanzi": "살", "pinyin": "sal", "es": "año(s) de edad: 스물세 살" },
+        { "hanzi": "일하다", "pinyin": "ilhada", "es": "trabajar" },
+        { "hanzi": "회사", "pinyin": "hoesa", "es": "empresa" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "Niveles de habla" },
+        {
+          "type": "dialogue",
+          "title": "¡Somos de la misma edad!",
+          "lines": [
+            { "speaker": "민수", "zh": "우고 씨, 몇 살이에요?", "py": "ugo ssi, myeot sarieyo?", "es": "Hugo, ¿cuántos años tienes?" },
+            { "speaker": "우고", "zh": "스물세 살이에요. 민수 씨는요?", "py": "seumulse sarieyo. minsu ssineunyo?", "es": "Veintitrés. ¿Y tú, Minsu?" },
+            { "speaker": "민수", "zh": "저도 스물세 살이에요! 우리 동갑이에요. 그럼 반말해요.", "py": "jeodo seumulse sarieyo! uri donggabieyo. geureom banmalhaeyo.", "es": "¡Yo también tengo veintitrés! Somos de la misma edad. Entonces hablemos sin formalidades." },
+            { "speaker": "우고", "zh": "좋아! 민수야, 오늘 수업 어땠어?", "py": "joa! minsuya, oneul sueop eottaesseo?", "es": "¡Vale! Minsu, ¿qué tal la clase de hoy?" },
+            { "speaker": "민수", "zh": "어려웠지만 재미있었어. 너는?", "py": "eoryeowotjiman jaemiisseosseo. neoneun?", "es": "Difícil, pero interesante. ¿Y tú?" },
+            { "speaker": "우고", "zh": "나는 숙제가 많아. 그리고 내일 시험도 있어.", "py": "naneun sukjega mana. geurigo naeil siheomdo isseo.", "es": "Yo tengo muchos deberes. Y mañana también tengo examen." },
+            { "speaker": "민수", "zh": "그럼 같이 공부해!", "py": "geureom gachi gongbuhae!", "es": "¡Pues estudiamos juntos!" }
+          ],
+          "notes": "Pasar al 반말 se propone, no se impone: lo normal es entre amigos de la misma edad (동갑) o cuando el mayor lo sugiere. En 반말 se quita el 요 (좋아요 → 좋아, 있어요 → 있어), 저 pasa a 나 y se usa 너. -야 detrás de vocal y -아 detrás de consonante se añaden al nombre para llamar a un amigo: 민수야, 지민아. Nunca uses 반말 con profesores, desconocidos o gente mayor."
+        },
+        { "type": "grammar", "id": "speech-levels" },
+        {
+          "type": "reading",
+          "title": "Presentación en el laboratorio",
+          "text": "안녕하십니까? 저는 우고입니다. 스페인 사람입니다. 지금 카이스트에서 컴퓨터 공학을 공부합니다. 오전에는 한국어 수업을 듣고 오후에는 연구실에서 일합니다. 한국어는 어렵지만 재미있습니다. 주말에는 카페에서 아르바이트를 합니다. 아직 한국어를 잘 못 합니다. 그렇지만 열심히 공부하겠습니다. 졸업 후에 한국 회사에서 일하고 싶습니다. 감사합니다.",
+          "es": "Buenos días. Me llamo Hugo. Soy español. Ahora estudio Ingeniería Informática en KAIST. Por la mañana voy a clase de coreano y por la tarde trabajo en el laboratorio. El coreano es difícil, pero interesante. Los fines de semana trabajo a tiempo parcial en una cafetería. Todavía no hablo bien coreano, pero estudiaré mucho. Después de graduarme quiero trabajar en una empresa coreana. Muchas gracias.",
+          "questions": [
+            { "q": "¿Qué hace Hugo por la tarde?", "options": ["Va a clase de coreano", "Trabaja en el laboratorio", "Trabaja en una cafetería", "Estudia en la biblioteca"], "answer": 1, "explain": "오후에는 연구실에서 일합니다." },
+            { "q": "¿Qué quiere hacer después de graduarse?", "options": ["Volver a España", "Trabajar en una empresa coreana", "Ser profesor de coreano", "Viajar por Corea"], "answer": 1, "explain": "졸업 후에 한국 회사에서 일하고 싶습니다. (졸업 = graduación; 후에 = después de)" },
+            { "q": "¿Por qué usa Hugo -ㅂ니다/습니다 en este texto?", "options": ["Habla con un amigo de su edad", "Es una presentación formal ante un grupo", "Escribe un mensaje de KakaoTalk", "Está enfadado"], "answer": 1, "explain": "El 합니다체 es el estilo de las presentaciones, reuniones y anuncios. 공부하겠습니다 = «estudiaré» (con -겠-, voluntad, muy típico al presentarse)." }
+          ]
+        },
+        { "type": "exercises", "count": 12, "types": ["matching", "choose-meaning", "conjugation", "particle", "fill-blank", "order-words", "build-sentence", "dictation", "translate-to-es", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    }
+  ]
+}

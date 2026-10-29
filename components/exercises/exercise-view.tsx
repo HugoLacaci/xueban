@@ -2,7 +2,7 @@
 import type { CheckResult, Exercise, Response } from "@/lib/exercises/types";
 import { Button, type ButtonProps } from "@/components/ui/button";
 import { Kbd } from "@/components/ui/primitives";
-import { Hanzi } from "@/components/zh/chinese-text";
+import { Hanzi } from "@/components/target/target-text";
 import { TianZiGe } from "@/components/ornament/tianzige";
 import { cn } from "@/lib/utils";
 import { MultipleChoice } from "./multiple-choice";
@@ -14,6 +14,7 @@ import { ReadingTF } from "./reading-tf";
 import { Matching } from "./matching";
 import { Writing } from "./writing";
 import { Speaking } from "./speaking";
+import { targetLang } from "@/lib/languages/registry";
 
 export interface ExerciseProps<E extends Exercise = Exercise> {
   ex: E;
@@ -83,7 +84,7 @@ export function Stage({ zh, className, children }: { zh?: string; className?: st
     <div className={cn("mb-6 flex flex-col items-center gap-3 text-center", className)}>
       {zh ? (
         grid ? (
-          <div className="flex flex-wrap items-center justify-center gap-1.5" lang="zh-CN" style={{ "--cell": cell, fontSize: "calc(var(--cell) * 0.62)" } as React.CSSProperties}>
+          <div className="flex flex-wrap items-center justify-center gap-1.5" lang={targetLang()} style={{ "--cell": cell, fontSize: "calc(var(--cell) * 0.62)" } as React.CSSProperties}>
             {chars.map((c, i) => (
               <TianZiGe key={i} faint size="var(--cell)">
                 <Hanzi text={c} font="serif" />

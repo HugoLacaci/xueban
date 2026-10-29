@@ -2,18 +2,14 @@
 import { useEffect, useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
 import { useSettings } from "@/lib/settings";
-import { ensureSeeded } from "@/lib/db";
+import { backupBeforeMigration } from "@/lib/db/backup";
 import { subscribeKnowledge } from "@/lib/knowledge";
 import { warmVoices } from "@/lib/tts";
-import { useDictionary } from "@/lib/dictionary/service";
 import { TooltipProvider, Spinner } from "@/components/ui/primitives";
-import dynamic from "next/dynamic";
 import { Toaster } from "@/components/ui/toast";
 import { withBase } from "@/lib/base-path";
+import { targetLang } from "@/lib/languages/registry";
 
-// Popup de palabra y paleta de búsqueda: solo se usan tras interactuar → fuera del bundle inicial.
-const WordPopupHost = dynamic(() => import("@/components/zh/word-popup").then((m) => m.WordPopupHost), { ssr: false });
-const CommandPalette = dynamic(() => import("@/components/layout/command-palette").then((m) => m.CommandPalette), { ssr: false });
 
 function hexToRgbTriplet(hex: string): string {
   const h = hex.replace("#", "");
@@ -30,25 +26,12 @@ export function AppProviders({ children }: { children: React.ReactNode }) {
   // Carga inicial: ajustes + semilla + conocimiento
   useEffect(() => {
     void (async () => {
+      // copia de seguridad automática antes de migrar el esquema de la BD (v2 → v4, multiidioma)
+      await backupBeforeMigration();
       await load();
-      await ensureSeeded();
       subscribeKnowledge();
       warmVoices();
       setSeeded(true);
-      // Diccionario en segundo plano: tras la primera interacción (o a los 15 s), en un hueco libre del hilo principal.
-      // Así no compite con la carga inicial; el popup de palabra lo carga bajo demanda si hace falta antes.
-      const idle = (cb: () => void) => ("requestIdleCallback" in window ? (window as Window & { requestIdleCallback: (cb: () => void) => void }).requestIdleCallback(cb) : setTimeout(cb, 500));
-      let started = false;
-      const start = () => {
-        if (started) return;
-        started = true;
-        window.removeEventListener("pointerdown", start);
-        window.removeEventListener("keydown", start);
-        idle(() => void useDictionary.getState().load());
-      };
-      window.addEventListener("pointerdown", start, { passive: true });
-      window.addEventListener("keydown", start, { passive: true });
-      setTimeout(start, 15000);
     })();
   }, [load]);
 
@@ -90,7 +73,7 @@ export function AppProviders({ children }: { children: React.ReactNode }) {
 
   // Onboarding
   useEffect(() => {
-    if (loaded && seeded && !settings.onboardingDone && pathname !== "/bienvenida") router.replace("/bienvenida");
+    if (loaded && seeded && !settings.onboardingDone && !pathname.startsWith("/bienvenida")) router.replace("/bienvenida");
   }, [loaded, seeded, settings.onboardingDone, pathname, router]);
 
   // Service worker (PWA)
@@ -102,7 +85,7 @@ export function AppProviders({ children }: { children: React.ReactNode }) {
   if (!loaded || !seeded) {
     return (
       <div className="flex min-h-screen flex-col items-center justify-center gap-3 text-muted">
-        <span className="seal size-12 text-2xl" lang="zh-CN">
+        <span className="seal size-12 text-2xl" lang={targetLang()}>
           学
         </span>
         <Spinner />
@@ -114,8 +97,6 @@ export function AppProviders({ children }: { children: React.ReactNode }) {
   return (
     <TooltipProvider>
       {children}
-      <WordPopupHost />
-      <CommandPalette />
       <Toaster />
     </TooltipProvider>
   );

@@ -2,12 +2,14 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { Timer, Volume2 } from "lucide-react";
 import type { MatchingExercise, Option } from "@/lib/exercises/types";
-import { playText } from "@/components/zh/audio-button";
-import { Pinyin } from "@/components/zh/pinyin";
+import { playText } from "@/components/target/audio-button";
+import { Pinyin } from "@/components/target/reading";
 import { playFeedback } from "@/lib/sounds";
 import { useSettings } from "@/lib/settings";
 import { cn, shuffle } from "@/lib/utils";
 import { ExerciseCard, type ExerciseProps } from "./exercise-view";
+import { targetLang } from "@/lib/languages/registry";
+import { ui, readingName } from "@/lib/languages/ui-text";
 
 interface Cell {
   id: number;
@@ -80,7 +82,7 @@ export function Matching({ ex, onSubmit, result }: ExerciseProps<MatchingExercis
         {c.kind === "audio" ? (
           <Volume2 className="size-5 text-ink-soft" aria-hidden="true" />
         ) : c.kind === "hanzi" ? (
-          <span lang="zh-CN" className="zh-serif text-[1.75rem] leading-tight">
+          <span lang={targetLang()} className="zh-serif text-[1.75rem] leading-tight">
             {c.opt.text}
           </span>
         ) : c.kind === "pinyin" ? (
@@ -106,5 +108,5 @@ export function Matching({ ex, onSubmit, result }: ExerciseProps<MatchingExercis
 }
 
 function kindLabel(k: string) {
-  return { hanzi: "汉字", pinyin: "pinyin", meaning: "significado", audio: "audio" }[k] ?? k;
+  return { hanzi: ui().wordLabel, pinyin: readingName(), meaning: "significado", audio: "audio" }[k] ?? k;
 }

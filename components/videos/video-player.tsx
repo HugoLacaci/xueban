@@ -1,21 +1,25 @@
 "use client";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import Link from "next/link";
+import Link from "@/lib/languages/link";
 import { ArrowLeft, ChevronLeft, ChevronRight, Eye, EyeOff, List, Moon, Pause, Pickaxe, Play, Repeat, Repeat1, Mic, Sun, Volume2 } from "lucide-react";
 import { db, logStudy, type VideoLine } from "@/lib/db";
 import { loadVideo, type VideoDoc } from "@/lib/videos";
 import { analyzeLine, comprehensionOfLines } from "@/lib/videos/breakdown";
 import { useKnowledge } from "@/lib/knowledge";
-import { loadHsk, useDictionary } from "@/lib/dictionary/service";
+import { useDictionary } from "@/lib/dictionary/service";
+import { getActivePack } from "@/lib/languages/registry";
 import { useSettings } from "@/lib/settings";
 import { Button } from "@/components/ui/button";
 import { Badge, PageHeader, Spinner, Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/primitives";
-import { ChineseText } from "@/components/zh/chinese-text";
-import { Pinyin } from "@/components/zh/pinyin";
+import { ChineseText } from "@/components/target/target-text";
+import { Pinyin } from "@/components/target/reading";
 import { ScreenFrame } from "@/components/ornament/borders";
 import { SealTag } from "@/components/ornament/seal";
 import { QuickAddDialog } from "@/components/flashcards/quick-add";
 import { cn } from "@/lib/utils";
+import { targetLang } from "@/lib/languages/registry";
+import { ui } from "@/lib/languages/ui-text";
+import { Mixed } from "@/components/target/mixed";
 
 declare global {
   interface Window {
@@ -68,7 +72,7 @@ export function VideoPlayerPage({ id }: { id: string }) {
   const load = useDictionary((s) => s.load);
   useEffect(() => {
     if (dictStatus === "idle") void load();
-    void loadHsk();
+    void getActivePack().levelLists();
     void loadVideo(id).then(setVideo);
   }, [id, dictStatus, load]);
   if (video === undefined) return <Spinner />;
@@ -118,7 +122,7 @@ function Player({ video }: { video: VideoDoc }) {
   const comp = useMemo(() => (dictStatus === "ready" ? comprehensionOfLines(lines, known, knownChars) : null), [lines, known, knownChars, dictStatus]);
   const analyses = useMemo(() => (dictStatus === "ready" ? lines.map((l) => analyzeLine(l.zh, known, new Set(deck.keys()), knownChars)) : []), [lines, known, deck, knownChars, dictStatus]);
   const newWords = useMemo(() => {
-    const m = new Map<string, { hanzi: string; pinyin: string; meaning: string; hsk?: number; count: number }>();
+    const m = new Map<string, { hanzi: string; pinyin: string; meaning: string; hsk?: number; level?: string; count: number }>();
     for (const a of analyses) for (const w of a.newWords) m.set(w.hanzi, { ...w, count: (m.get(w.hanzi)?.count ?? 0) + 1 });
     return Array.from(m.values()).filter((w) => !deck.has(w.hanzi)).sort((a, b) => (a.hsk ?? 99) - (b.hsk ?? 99) || b.count - a.count);
   }, [analyses, deck]);
@@ -227,14 +231,14 @@ function Player({ video }: { video: VideoDoc }) {
         <div className="flex flex-wrap items-center gap-1.5">
           {comp ? <Badge variant={comp.ratio >= 0.9 ? "jade" : comp.ratio >= 0.75 ? "gold" : "default"}>Conoces el {Math.round(comp.ratio * 100)} %</Badge> : null}
           <Badge variant="outline">{lines.length} líneas</Badge>
-          {video.level ? <SealTag>HSK {video.level}</SealTag> : null}
+          {video.level ? <SealTag>{getActivePack().exam.levels[video.level - 1]?.label ?? `Nivel ${video.level}`}</SealTag> : null}
           {video.reviewed === false ? <Badge variant="muted">transcripción sin revisar</Badge> : null}
           <Button size="sm" variant={cinema ? "ink" : "outline"} onClick={() => setCinema((c) => !c)} aria-pressed={cinema} title="Modo cine: oscurece solo el reproductor">
             {cinema ? <Sun /> : <Moon />} {cinema ? "modo papel" : "modo cine"}
           </Button>
         </div>
       </div>
-      <h1 className="font-serif-es text-2xl font-semibold leading-tight tracking-tight text-ink sm:text-[28px]">{video.title}</h1>
+      <h1 className="font-serif-es text-2xl font-semibold leading-tight tracking-tight text-ink sm:text-[28px]"><Mixed>{video.title}</Mixed></h1>
 
       <div className={cn("grid gap-4 rounded-[14px] transition-colors duration-300 lg:grid-cols-[minmax(0,3fr)_minmax(0,2fr)]", cinema && "-mx-2 bg-paper p-3 text-ink sm:-mx-3 sm:p-4")} style={cinema ? CINEMA_VARS : undefined} data-cinema={cinema || undefined}>
         <div className="min-w-0">
@@ -249,7 +253,7 @@ function Player({ video }: { video: VideoDoc }) {
             {active ? (
               <>
                 <ChineseText text={active.zh} size="xl" as="div" sourceRef={`video:${video.id}:${active.start}`} context={active.zh} />
-                {settings.showTranslation && active.es ? <p className="mt-1 text-sm text-ink-soft">{active.es}</p> : null}
+                {settings.showTranslation && active.es ? <p className="mt-1 text-sm text-ink-soft"><Mixed>{active.es}</Mixed></p> : null}
               </>
             ) : (
               <p className="py-4 text-sm text-ink-faint">Pulsa ▶ o una línea de la transcripción.</p>
@@ -333,7 +337,7 @@ function Player({ video }: { video: VideoDoc }) {
                       </button>
                       <div className="min-w-0 flex-1">
                         <ChineseText text={l.zh} size="md" as="div" sourceRef={`video:${video.id}:${l.start}`} context={l.zh} />
-                        {settings.showTranslation && l.es ? <p className="text-xs text-ink-soft">{l.es}</p> : null}
+                        {settings.showTranslation && l.es ? <p className="text-xs text-ink-soft"><Mixed>{l.es}</Mixed></p> : null}
                         {a ? (
                           <div className="mt-1 flex flex-wrap gap-1">
                             {a.newWords
@@ -341,15 +345,15 @@ function Player({ video }: { video: VideoDoc }) {
                               .slice(0, 4)
                               .map((w) => (
                                 <button key={w.hanzi} onClick={() => setMining({ word: w.hanzi, line: l })} className="inline-flex min-h-6 items-center rounded-[4px] border border-celadon/50 bg-celadon/10 px-1.5 text-[11px] text-celadon-ink transition-colors hover:bg-celadon/20" title={`${w.pinyin} · ${w.meaning}`}>
-                                  <span lang="zh-CN" className="zh">
+                                  <span lang={targetLang()} className="zh">
                                     +{w.hanzi}
                                   </span>
-                                  {w.hsk ? <span className="ml-0.5 text-[9px] opacity-70">HSK{w.hsk}</span> : null}
+                                  {w.level ? <span className="ml-0.5 text-[9px] opacity-70">{w.level}</span> : null}
                                 </button>
                               ))}
                             {a.grammar.slice(0, 2).map((g) => (
                               <Link key={g.id} href={`/aprender/gramatica/${g.id}`} className="inline-flex min-h-6 items-center rounded-[4px] border border-line px-1.5 text-[11px] text-ink-faint hover:bg-paper-sunk hover:text-ink" title={g.title}>
-                                <span lang="zh-CN" className="zh">
+                                <span lang={targetLang()} className="zh">
                                   {g.zh}
                                 </span>
                               </Link>
@@ -369,19 +373,19 @@ function Player({ video }: { video: VideoDoc }) {
           <TabsContent value="vocab">
             <div className="max-h-[60vh] overflow-y-auto rounded-[12px] border border-line bg-paper-raised p-1.5 scrollbar-thin lg:max-h-[70vh]">
               {!newWords.length ? (
-                <p className="p-3 text-sm text-ink-faint">{dictStatus === "ready" ? "¡Conoces todas las palabras de este vídeo! 太棒了" : "Cargando diccionario…"}</p>
+                <p className="p-3 text-sm text-ink-faint">{dictStatus === "ready" ? `¡Conoces todas las palabras de este vídeo! ${ui().feedback.ok}` : "Cargando diccionario…"}</p>
               ) : (
                 <ul className="divide-y divide-line/80">
                   {newWords.map((w) => (
                     <li key={w.hanzi} className="flex items-center gap-3 px-2 py-2">
-                      <span lang="zh-CN" className="zh-serif w-16 text-xl text-ink">
+                      <span lang={targetLang()} className="zh-serif w-16 text-xl text-ink">
                         {w.hanzi}
                       </span>
                       <span className="min-w-0 flex-1">
                         <Pinyin text={w.pinyin} className="block text-sm" />
                         <span className="block truncate text-xs text-ink-soft">{w.meaning || "—"}</span>
                       </span>
-                      {w.hsk ? <SealTag>HSK {w.hsk}</SealTag> : <Badge variant="muted">fuera de HSK</Badge>}
+                      {w.level ? <SealTag>{w.level}</SealTag> : <Badge variant="muted">fuera de las listas</Badge>}
                       <span className="text-xs tabular-nums text-ink-faint">×{w.count}</span>
                       <Button size="sm" variant="ghost" onClick={() => setMining({ word: w.hanzi, line: lines.find((l) => l.zh.includes(w.hanzi))! })}>
                         <Pickaxe /> añadir

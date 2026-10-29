@@ -1,11 +1,14 @@
 "use client";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+import Link from "@/lib/languages/link";
+import { useLangPathname } from "@/lib/languages/link";
+import { useLangMeta } from "@/lib/languages/provider";
+import { NAV_GLYPHS } from "@/lib/languages/glyphs";
 import { BarChart3, BookOpen, BookText, Dumbbell, GraduationCap, Layers, Library, MoreHorizontal, Settings, Sun, Brush, Video, Lightbulb, Palette } from "lucide-react";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
 import { Dialog, DialogContent } from "@/components/ui/primitives";
 import { Seal } from "@/components/ornament/seal";
+import { Mixed } from "@/components/target/mixed";
 
 export interface NavItem {
   href: string;
@@ -39,11 +42,13 @@ export function isActive(pathname: string, href: string): boolean {
 /** Icono de navegación: icono lucide con el carácter chino pequeño como sello en la esquina. */
 function NavGlyph({ item, active }: { item: NavItem; active: boolean }) {
   const Icon = item.icon;
+  const meta = useLangMeta();
+  const glyph = NAV_GLYPHS[meta.id][item.href] ?? item.zh;
   return (
     <span className="relative inline-flex size-6 items-center justify-center">
       <Icon className={cn("size-[18px] transition-colors", active ? "text-cinnabar" : "text-ink-faint group-hover:text-ink")} />
-      <span lang="zh-CN" className={cn("zh-display absolute -bottom-1 -right-1.5 text-[9px] leading-none", active ? "text-cinnabar" : "text-ink-faint/70")} aria-hidden="true">
-        {item.zh}
+      <span lang={meta.bcp47} className={cn("zh-display absolute -bottom-1 -right-1.5 text-[9px] leading-none", active ? "text-cinnabar" : "text-ink-faint/70")} aria-hidden="true">
+        {glyph}
       </span>
     </span>
   );
@@ -51,7 +56,8 @@ function NavGlyph({ item, active }: { item: NavItem; active: boolean }) {
 
 /** Barra lateral de escritorio: pergamino colgante (立轴) con el sello-logo arriba. */
 export function Sidebar() {
-  const pathname = usePathname();
+  const meta = useLangMeta();
+  const pathname = useLangPathname();
   return (
     <aside className="sticky top-0 hidden h-screen w-[15.5rem] shrink-0 flex-col md:flex">
       <div className="relative mx-3 my-3 flex flex-1 flex-col rounded-[14px] border border-line bg-paper-raised/80 shadow-paper backdrop-blur">
@@ -59,10 +65,10 @@ export function Sidebar() {
         <span className="pointer-events-none absolute inset-x-4 top-0 h-[3px] rounded-b-full bg-ink/60" aria-hidden="true" />
         <span className="pointer-events-none absolute inset-x-4 bottom-0 h-[3px] rounded-t-full bg-ink/60" aria-hidden="true" />
         <Link prefetch={false} href="/" className="flex items-center gap-3 px-5 pb-3 pt-5">
-          <Seal text="学伴" size={40} rotate={-3} />
+          <Seal text={meta.brand.native} size={40} rotate={-3} variant={meta.id === "ja" ? "round" : "square"} />
           <span className="leading-tight">
-            <span className="block font-serif-es text-[17px] font-semibold tracking-tight text-ink">Xuébàn</span>
-            <span className="block text-[11px] text-ink-faint">tu compañero de chino</span>
+            <span className="block font-serif-es text-[17px] font-semibold tracking-tight text-ink">{meta.brand.latin}</span>
+            <span className="block text-[11px] text-ink-faint">{meta.brand.tagline}</span>
           </span>
         </Link>
         <nav className="flex flex-1 flex-col gap-0.5 px-3" aria-label="Principal">
@@ -81,14 +87,14 @@ export function Sidebar() {
               >
                 {active ? <span className="absolute left-0 top-1/2 h-5 w-[3px] -translate-y-1/2 rounded-r-full bg-cinnabar" aria-hidden="true" /> : null}
                 <NavGlyph item={item} active={active} />
-                <span className="flex-1">{item.label}</span>
+                <span className="flex-1"><Mixed>{item.label}</Mixed></span>
               </Link>
             );
           })}
         </nav>
         <div className="space-y-1 px-5 py-4 text-xs text-ink-faint">
           <Link prefetch={false} href="/como-aprender" className="flex items-center gap-2 hover:text-ink">
-            <Lightbulb className="size-3.5" /> Cómo aprender con Xuébàn
+            <Lightbulb className="size-3.5" /> Cómo aprender con {meta.brand.latin}
           </Link>
           <Link prefetch={false} href="/design" className="flex items-center gap-2 hover:text-ink">
             <Palette className="size-3.5" /> Guía de estilo
@@ -101,7 +107,8 @@ export function Sidebar() {
 
 /** Barra inferior móvil: 5 iconos, el activo con punto bermellón. */
 export function BottomNav() {
-  const pathname = usePathname();
+  const meta = useLangMeta();
+  const pathname = useLangPathname();
   const [more, setMore] = useState(false);
   const moreActive = NAV_MORE.some((i) => isActive(pathname, i.href));
   return (
@@ -113,7 +120,7 @@ export function BottomNav() {
             return (
               <Link prefetch={false} key={item.href} href={item.href} className="group relative flex flex-1 flex-col items-center gap-0.5 py-2 text-[11px] font-medium text-ink-faint" aria-current={active ? "page" : undefined}>
                 <NavGlyph item={item} active={active} />
-                <span className={cn(active && "text-ink")}>{item.label}</span>
+                <span className={cn(active && "text-ink")}><Mixed>{item.label}</Mixed></span>
                 {active ? <span className="absolute bottom-1 size-1 rounded-full bg-cinnabar" aria-hidden="true" /> : null}
               </Link>
             );
@@ -138,11 +145,11 @@ export function BottomNav() {
                 className={cn("flex items-center gap-3 rounded-xl border border-line p-3 text-sm font-medium hover:bg-paper-sunk", isActive(pathname, item.href) && "border-cinnabar/40 bg-cinnabar/8")}
               >
                 <NavGlyph item={item} active={isActive(pathname, item.href)} />
-                {item.label}
+                <Mixed>{item.label}</Mixed>
               </Link>
             ))}
             <Link prefetch={false} href="/como-aprender" onClick={() => setMore(false)} className="col-span-2 flex items-center gap-3 rounded-xl border border-dashed border-line p-3 text-sm text-ink-faint">
-              <Lightbulb className="size-5" /> Cómo aprender con Xuébàn
+              <Lightbulb className="size-5" /> Cómo aprender con {meta.brand.latin}
             </Link>
           </div>
         </DialogContent>

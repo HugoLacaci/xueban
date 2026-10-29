@@ -4,14 +4,18 @@ import { useLiveQuery } from "dexie-react-hooks";
 import { Sparkles } from "lucide-react";
 import { db, upsertWord, type CardType } from "@/lib/db";
 import { lookup, useDictionary } from "@/lib/dictionary/service";
-import { wordPinyin, hanziOnly } from "@/lib/pinyin/convert";
-import { numberedToMarked } from "@/lib/pinyin/tones";
+import { readingOf as wordPinyin, targetOnly as hanziOnly, normalizeInput as numberedToMarked } from "@/lib/languages/helpers";
 import { Button } from "@/components/ui/button";
-import { Dialog, DialogContent, Input, Label, Select, Switch, Textarea } from "@/components/ui/primitives";
+import { Dialog, DialogContent, Input, Label, Select, Switch, Textarea, Option } from "@/components/ui/primitives";
 import { toast } from "@/components/ui/toast";
-import { Pinyin } from "@/components/zh/pinyin";
+import { Pinyin } from "@/components/target/reading";
 import { onWordSaved } from "@/lib/anki/hooks";
 import { findExampleFor } from "@/lib/examples";
+import { getActiveLang } from "@/lib/languages/registry";
+import { targetLang } from "@/lib/languages/registry";
+import { ui } from "@/lib/languages/ui-text";
+import { getActivePack } from "@/lib/languages/registry";
+import { Mixed } from "@/components/target/mixed";
 
 export interface QuickAddProps {
   open: boolean;
@@ -24,7 +28,7 @@ export interface QuickAddProps {
 }
 
 export function QuickAddDialog({ open, onOpenChange, initialHanzi = "", initialExample = "", sourceRef, source = "dictionary", onSaved }: QuickAddProps) {
-  const categories = useLiveQuery(() => db.categories.orderBy("order").toArray(), []) ?? [];
+  const categories = useLiveQuery(() => db.categories.where("lang").equals(getActiveLang()).sortBy("order"), []) ?? [];
   const dictStatus = useDictionary((s) => s.status);
   const load = useDictionary((s) => s.load);
   const [hanzi, setHanzi] = useState(initialHanzi);
@@ -52,7 +56,7 @@ export function QuickAddDialog({ open, onOpenChange, initialHanzi = "", initialE
 
   const save = async () => {
     const h = hanziOnly(hanzi);
-    if (!h) return toast.error("Escribe la palabra en caracteres chinos.");
+    if (!h) return toast.error(`Escribe la palabra en ${getActivePack().meta.names.adjective}.`);
     if (!meaning.trim()) return toast.error("Falta el significado.");
     setSaving(true);
     try {
@@ -69,7 +73,7 @@ export function QuickAddDialog({ open, onOpenChange, initialHanzi = "", initialE
           example: example.trim() || undefined,
           exampleTranslation: exampleTranslation.trim() || undefined,
           traditional: e?.t,
-          hsk: e?.hsk ? [`HSK3.0`] : [],
+          hsk: e?.hsk ? [`HSK3.0`] : e?.lv ? [e.lv] : [],
           level: e?.hsk,
           tags: [source === "class" ? "clase" : source],
           source,
@@ -101,8 +105,8 @@ export function QuickAddDialog({ open, onOpenChange, initialHanzi = "", initialE
         >
           <div className="grid grid-cols-[1fr_auto] gap-2">
             <div>
-              <Label htmlFor="qa-hanzi">Hanzi</Label>
-              <Input id="qa-hanzi" lang="zh-CN" className="zh zh-serif mt-1 h-12 text-2xl" value={hanzi} onChange={(e) => setHanzi(e.target.value)} autoFocus placeholder="咖啡" />
+              <Label htmlFor="qa-hanzi">{ui().wordLabel}</Label>
+              <Input id="qa-hanzi" lang={targetLang()} className="zh zh-serif mt-1 h-12 text-2xl" value={hanzi} onChange={(e) => setHanzi(e.target.value)} autoFocus placeholder={ui().examples.word} />
             </div>
             <div className="flex items-end pb-1">
               {entries[0] ? (
@@ -114,17 +118,17 @@ export function QuickAddDialog({ open, onOpenChange, initialHanzi = "", initialE
           </div>
           <div className="grid gap-2 sm:grid-cols-2">
             <div>
-              <Label htmlFor="qa-pinyin">Pinyin</Label>
-              <Input id="qa-pinyin" className="mt-1" value={pinyin} onChange={(e) => setPinyinInput(e.target.value)} placeholder="kāfēi o ka1fei1" />
+              <Label htmlFor="qa-pinyin">{getActivePack().readingAid.name}</Label>
+              <Input id="qa-pinyin" className="mt-1" value={pinyin} onChange={(e) => setPinyinInput(e.target.value)} placeholder={getActiveLang() === "zh" ? "kāfēi o ka1fei1" : getActivePack().reading(ui().examples.word)} />
               {pinyin ? <Pinyin text={numberedToMarked(pinyin)} className="mt-1 block text-sm" /> : null}
             </div>
             <div>
               <Label htmlFor="qa-cat">Categoría</Label>
               <Select id="qa-cat" value={category} onChange={(e) => setCategory(e.target.value)} className="mt-1 w-full">
                 {categories.map((c) => (
-                  <option key={c.id} value={c.name}>
+                  <Option key={c.id} value={c.name}>
                     {c.name}
-                  </option>
+                  </Option>
                 ))}
               </Select>
             </div>
@@ -137,7 +141,7 @@ export function QuickAddDialog({ open, onOpenChange, initialHanzi = "", initialE
           <div className="grid gap-2 sm:grid-cols-2">
             <div>
               <Label htmlFor="qa-ex">Frase de ejemplo</Label>
-              <Textarea id="qa-ex" lang="zh-CN" className="zh mt-1 min-h-[56px]" value={example} onChange={(e) => setExampleInput(e.target.value)} placeholder="我想喝咖啡。" />
+              <Textarea id="qa-ex" lang={targetLang()} className="zh mt-1 min-h-[56px]" value={example} onChange={(e) => setExampleInput(e.target.value)} placeholder={ui().examples.sentence} />
             </div>
             <div>
               <Label htmlFor="qa-ext">Traducción del ejemplo</Label>
@@ -146,7 +150,7 @@ export function QuickAddDialog({ open, onOpenChange, initialHanzi = "", initialE
           </div>
           <div className="flex items-center justify-between gap-3">
             <label className="flex items-center gap-2 text-sm text-ink-soft">
-              <Switch checked={production} onCheckedChange={setProduction} /> Crear tarjeta de producción (español → 汉字)
+              <Switch checked={production} onCheckedChange={setProduction} /> Crear tarjeta de producción (español → {ui().wordLabel})
             </label>
             <Button type="submit" disabled={saving}>
               Guardar

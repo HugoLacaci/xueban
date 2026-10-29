@@ -1,17 +1,18 @@
 "use client";
 import { useMemo, useRef, useState } from "react";
-import Link from "next/link";
+import { getActivePack } from "@/lib/languages/registry";
+import Link from "@/lib/languages/link";
 import { useLiveQuery } from "dexie-react-hooks";
 import { useVirtualizer } from "@tanstack/react-virtual";
 import * as Icons from "lucide-react";
 import { ArrowUpFromLine, FileDown, Play, Plus, Settings2, Upload } from "lucide-react";
 import { db, type Card, type Word } from "@/lib/db";
-import { useSettings } from "@/lib/settings";
+import { useSettings, ankiOnFor } from "@/lib/settings";
 import { useAnkiStatus } from "@/lib/anki/client";
 import { Button } from "@/components/ui/button";
 import { Input, PageHeader, Select } from "@/components/ui/primitives";
 import { toast } from "@/components/ui/toast";
-import { Pinyin } from "@/components/zh/pinyin";
+import { Pinyin } from "@/components/target/reading";
 import { Enso } from "@/components/ornament/ink-divider";
 import { SealTag } from "@/components/ornament/seal";
 import { XiaoMo } from "@/components/ornament/mascot";
@@ -20,6 +21,10 @@ import { BulkImportDialog } from "./bulk-import";
 import { CategoryDialog } from "./category-dialog";
 import { cn } from "@/lib/utils";
 import { useNow } from "@/hooks/use-now";
+import { getActiveLang } from "@/lib/languages/registry";
+import { targetLang } from "@/lib/languages/registry";
+import { ui, pageNative } from "@/lib/languages/ui-text";
+import { Mixed } from "@/components/target/mixed";
 
 type StateFilter = "all" | "new" | "learning" | "review" | "due";
 type WordState = "new" | "learning" | "review";
@@ -32,19 +37,19 @@ function cardState(cards: Card[]): WordState {
 
 /** Estado de una palabra como pequeño sello: 熟 conocida · 习 aprendiendo · 新 nueva. */
 const STATE_SEAL: Record<WordState, { zh: string; es: string; tone: "celadon" | "gold" | "ink" }> = {
-  review: { zh: "熟", es: "conocida", tone: "celadon" },
-  learning: { zh: "习", es: "aprendiendo", tone: "gold" },
-  new: { zh: "新", es: "nueva", tone: "ink" },
+  review: { get zh() { return ui().status.review; }, es: "conocida", tone: "celadon" },
+  learning: { get zh() { return ui().status.learning; }, es: "aprendiendo", tone: "gold" },
+  new: { get zh() { return ui().status.new; }, es: "nueva", tone: "ink" },
 };
 
 export function FlashcardsPage() {
   const settings = useSettings((s) => s.settings);
   const anki = useAnkiStatus();
-  const wordsLive = useLiveQuery(() => db.words.toArray(), []);
-  const cardsLive = useLiveQuery(() => db.cards.toArray(), []);
+  const wordsLive = useLiveQuery(() => db.words.where("lang").equals(getActiveLang()).toArray(), []);
+  const cardsLive = useLiveQuery(() => db.cards.where("lang").equals(getActiveLang()).toArray(), []);
   const words = useMemo(() => wordsLive ?? [], [wordsLive]);
   const cards = useMemo(() => cardsLive ?? [], [cardsLive]);
-  const categories = useLiveQuery(() => db.categories.orderBy("order").toArray(), []) ?? [];
+  const categories = useLiveQuery(() => db.categories.where("lang").equals(getActiveLang()).sortBy("order"), []) ?? [];
   const [q, setQ] = useState("");
   const [cat, setCat] = useState("");
   const [state, setState] = useState<StateFilter>("all");
@@ -117,7 +122,7 @@ export function FlashcardsPage() {
     <div className="space-y-6">
       <PageHeader
         title="Flashcards"
-        zh="卡片"
+        zh={pageNative("flashcards")}
         subtitle="Tu mazo personal: repaso espaciado con FSRS, sincronizable con Anki."
         action={
           <>
@@ -157,7 +162,7 @@ export function FlashcardsPage() {
           <Button size="sm" variant="secondary" onClick={() => void import("@/lib/anki/apkg").then((m) => m.downloadCsv(filtered))}>
             <FileDown /> CSV
           </Button>
-          {settings.anki.enabled && anki.connected ? (
+          {ankiOnFor(settings, getActiveLang()) && anki.connected ? (
             <Button
               size="sm"
               variant="secondary"
@@ -215,13 +220,16 @@ export function FlashcardsPage() {
         </Select>
         <Select value={hsk} onChange={(e) => setHsk(e.target.value)} className="h-9" aria-label="Nivel">
           <option value="">Nivel: todos</option>
-          <option value="HSK2.0">HSK 2.0</option>
-          <option value="HSK3.0">HSK 3.0</option>
+          {(getActiveLang() === "zh" ? [["HSK2.0", "HSK 2.0"], ["HSK3.0", "HSK 3.0"]] : [[getActivePack().seed.levelTag, getActivePack().curriculum.levelTitle]]).map(([v, t]) => (
+            <option key={v} value={v}>
+              {t}
+            </option>
+          ))}
           <option value="Extra">Extra (fuera de lista)</option>
         </Select>
         <Select value={source} onChange={(e) => setSource(e.target.value)} className="h-9" aria-label="Fuente">
           <option value="">Fuente: todas</option>
-          <option value="seed">HSK 1 (semilla)</option>
+          <option value="seed">{`${getActivePack().curriculum.levelTitle} (semilla)`}</option>
           <option value="class">Clase</option>
           <option value="video">Vídeo</option>
           <option value="reading">Lectura</option>
@@ -305,12 +313,12 @@ function WordList({ words, byWord }: { words: Word[]; byWord: Map<string, Card[]
               className="absolute left-0 flex w-full items-center gap-3 border-b border-line/70 px-3 transition-colors hover:bg-paper-sunk/60 focus-visible:bg-paper-sunk/60 focus-visible:outline-none sm:px-4"
               style={{ top: v.start, height: v.size }}
             >
-              <span lang="zh-CN" className="zh zh-serif w-[4.5rem] shrink-0 text-[26px] font-medium leading-none text-ink sm:w-24">
+              <span lang={targetLang()} className="zh zh-serif w-[4.5rem] shrink-0 text-[26px] font-medium leading-none text-ink sm:w-24">
                 {w.hanzi}
               </span>
               <span className="min-w-0 flex-1">
                 <Pinyin text={w.pinyin} className="block text-sm" />
-                <span className="block truncate text-sm text-ink-soft">{w.meaning}</span>
+                <span className="block truncate text-sm text-ink-soft"><Mixed>{w.meaning}</Mixed></span>
               </span>
               <span className="hidden text-xs text-ink-faint md:block">{w.category}</span>
               <span className="flex shrink-0 items-center gap-2">
@@ -320,10 +328,10 @@ function WordList({ words, byWord }: { words: Word[]; byWord: Map<string, Card[]
                     pendiente
                   </span>
                 ) : null}
-                <span className="hidden text-[11px] text-ink-faint sm:inline">{st.es}</span>
+                <span className="hidden text-[11px] text-ink-faint sm:inline"><Mixed>{st.es}</Mixed></span>
                 <SealTag tone={st.tone} className="text-[13px]">
                   <span aria-hidden="true">{st.zh}</span>
-                  <span className="sr-only sm:hidden">{st.es}</span>
+                  <span className="sr-only sm:hidden"><Mixed>{st.es}</Mixed></span>
                 </SealTag>
               </span>
             </Link>

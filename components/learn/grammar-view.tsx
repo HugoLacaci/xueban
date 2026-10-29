@@ -1,15 +1,18 @@
 "use client";
 import { useState } from "react";
-import Link from "next/link";
+import { getActivePack, getActiveLang } from "@/lib/languages/registry";
+import Link from "@/lib/languages/link";
 import { AlertTriangle, Dumbbell, ExternalLink } from "lucide-react";
 import type { GrammarPoint } from "@/lib/course/types";
 import { grammarById } from "@/lib/course";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/primitives";
-import { AudioButton } from "@/components/zh/audio-button";
-import { ChineseText } from "@/components/zh/chinese-text";
+import { AudioButton } from "@/components/target/audio-button";
+import { ChineseText } from "@/components/target/target-text";
 import { FretBorder } from "@/components/ornament";
 import { Markdown } from "./markdown";
+import { targetLang } from "@/lib/languages/registry";
+import { Mixed } from "@/components/target/mixed";
 
 export function GrammarView({ g, compact, onPractice }: { g: GrammarPoint; compact?: boolean; onPractice?: () => void }) {
   const [showAll, setShowAll] = useState(!compact);
@@ -18,14 +21,14 @@ export function GrammarView({ g, compact, onPractice }: { g: GrammarPoint; compa
     <div className="space-y-5">
       <div>
         <div className="flex flex-wrap items-center gap-x-2 gap-y-1">
-          <h2 className="font-serif-es text-2xl font-semibold tracking-tight text-ink">{g.title}</h2>
-          <span lang="zh-CN" className="zh-kai text-lg text-cinnabar">
+          <h2 className="font-serif-es text-2xl font-semibold tracking-tight text-ink"><Mixed>{g.title}</Mixed></h2>
+          <span lang={targetLang()} className="zh-kai text-lg text-cinnabar">
             {g.zh}
           </span>
-          <Badge variant="jade">HSK {g.level}</Badge>
+          <Badge variant="jade">{getActiveLang() === "zh" ? `HSK ${g.level}` : getActivePack().curriculum.levelTitle}</Badge>
           {!g.reviewed ? <Badge variant="muted">pendiente de revisar con el profesor</Badge> : null}
         </div>
-        <p className="mt-1.5 text-ink-soft">{g.summary}</p>
+        <p className="mt-1.5 text-ink-soft"><Mixed>{g.summary}</Mixed></p>
       </div>
 
       {/* fórmula entre dos grecas 回纹 */}
@@ -65,7 +68,7 @@ export function GrammarView({ g, compact, onPractice }: { g: GrammarPoint; compa
           <ul className="space-y-2.5">
             {g.mistakes.map((m, i) => (
               <li key={i} className="text-sm">
-                <span lang="zh-CN" className="zh text-danger line-through decoration-danger/60">
+                <span lang={targetLang()} className="zh text-danger line-through decoration-danger/60">
                   {m.wrong}
                 </span>{" "}
                 <span className="text-ink-faint">→</span>{" "}
@@ -96,7 +99,7 @@ export function GrammarView({ g, compact, onPractice }: { g: GrammarPoint; compa
               const rg = grammarById(r);
               return rg ? (
                 <Link key={r} href={`/aprender/gramatica/${r}`} className="rounded-[6px] border border-line bg-paper-raised px-2 py-0.5 text-xs text-ink-soft transition-colors hover:border-ink/30 hover:text-ink">
-                  {rg.title}
+                  <Mixed>{rg.title}</Mixed>
                 </Link>
               ) : null;
             })}

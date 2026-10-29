@@ -1,0 +1,176 @@
+{
+  "id": "ja-u14",
+  "order": 15,
+  "title": "Teléfono y mensajes",
+  "zh": "電話とメッセージ",
+  "description": "Llamar y contestar al teléfono, avisar por LINE de que llegas tarde, reservar mesa en un restaurante y pedir que te repitan algo.",
+  "icon": "Phone",
+  "level": 1,
+  "lang": "ja",
+  "category": "Partículas y gramática",
+  "checkpoint": { "exercises": 15 },
+  "lessons": [
+    {
+      "id": "ja-u14-l1",
+      "title": "¿Diga?",
+      "zh": "もしもし",
+      "goal": "Empezar y terminar una llamada y preguntar qué está haciendo alguien con 〜ています.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "電話", "pinyin": "でんわ", "es": "teléfono; llamada", "note": "電話をかける = llamar por teléfono." },
+        { "hanzi": "番号", "pinyin": "ばんごう", "es": "número", "note": "電話番号 = número de teléfono." },
+        { "hanzi": "かける", "pinyin": "かける", "es": "llamar (por teléfono)" },
+        { "hanzi": "もしもし", "pinyin": "もしもし", "es": "¿diga?; ¿sí? (al teléfono)" },
+        { "hanzi": "後で", "pinyin": "あとで", "es": "luego; más tarde" },
+        { "hanzi": "また", "pinyin": "また", "es": "otra vez; de nuevo", "note": "じゃあ、また = hasta luego." },
+        { "hanzi": "忙しい", "pinyin": "いそがしい", "es": "ocupado; atareado" },
+        { "hanzi": "声", "pinyin": "こえ", "es": "voz" }
+      ],
+      "steps": [
+        { "type": "vocab" },
+        {
+          "type": "dialogue",
+          "title": "Hugo llama a Ken",
+          "lines": [
+            { "speaker": "けん", "zh": "もしもし。", "py": "もしもし。", "es": "¿Diga?" },
+            { "speaker": "ウーゴ", "zh": "もしもし、けんさん？ウーゴです。今、何をしていますか。", "py": "もしもし、けん さん？ウーゴ です。いま、なに を して います か。", "es": "¿Sí? ¿Ken? Soy Hugo. ¿Qué estás haciendo ahora?" },
+            { "speaker": "けん", "zh": "今、電車に乗っています。ですから、声が小さいです。すみません。", "py": "いま、でんしゃ に のって います。ですから、こえ が ちいさい です。すみません。", "es": "Ahora voy en el tren. Por eso hablo bajito. Perdona." },
+            { "speaker": "ウーゴ", "zh": "いいえ。忙しいですか。", "py": "いいえ。いそがしい です か。", "es": "No pasa nada. ¿Estás ocupado?" },
+            { "speaker": "けん", "zh": "いいえ、大丈夫です。でも、三十分後にかけてもいいですか。", "py": "いいえ、だいじょうぶ です。でも、さんじゅっぷん ご に かけて も いい です か。", "es": "No, tranquilo. Pero ¿te puedo llamar dentro de media hora?" },
+            { "speaker": "ウーゴ", "zh": "はい。じゃあ、また後で。", "py": "はい。じゃあ、また あとで。", "es": "Sí. Pues hasta luego." }
+          ],
+          "notes": "もしもし solo se usa al teléfono. En Japón está mal visto hablar por teléfono dentro del tren: por eso Ken habla bajo y quiere colgar. ですから = por eso. 三十分後に = dentro de treinta minutos."
+        },
+        { "type": "grammar", "id": "te-iru" },
+        { "type": "exercises", "count": 10, "types": ["conjugation", "choose-meaning", "listen-choose", "pinyin-input", "order-words", "fill-blank", "matching", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ja-u14-l2",
+      "title": "Llego tarde (por LINE)",
+      "zh": "遅れますから",
+      "goal": "Avisar por mensaje de que llegas tarde y dar el motivo con 〜から.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "ごめんなさい", "pinyin": "ごめんなさい", "es": "perdón; lo siento" },
+        { "hanzi": "遅れる", "pinyin": "おくれる", "es": "llegar tarde; retrasarse" },
+        { "hanzi": "もう", "pinyin": "もう", "es": "ya" },
+        { "hanzi": "まだ", "pinyin": "まだ", "es": "todavía; aún" },
+        { "hanzi": "すぐ", "pinyin": "すぐ", "es": "enseguida; ahora mismo" },
+        { "hanzi": "ちょっと", "pinyin": "ちょっと", "es": "un poco; un momento" },
+        { "hanzi": "北", "pinyin": "きた", "es": "norte", "note": "北口 きたぐち = salida norte." },
+        { "hanzi": "南", "pinyin": "みなみ", "es": "sur", "note": "南口 みなみぐち = salida sur." }
+      ],
+      "steps": [
+        { "type": "vocab" },
+        {
+          "type": "dialogue",
+          "title": "Mensajes en LINE",
+          "lines": [
+            { "speaker": "さくら", "zh": "ウーゴさん、今どこですか。私はもう渋谷駅に着きましたよ。", "py": "ウーゴ さん、いま どこ です か。わたし は もう しぶや えき に つきました よ。", "es": "Hugo, ¿dónde estás? Yo ya he llegado a la estación de Shibuya." },
+            { "speaker": "ウーゴ", "zh": "ごめんなさい！まだ電車の中です。", "py": "ごめんなさい！まだ でんしゃ の なか です。", "es": "¡Lo siento! Todavía estoy en el tren." },
+            { "speaker": "ウーゴ", "zh": "電車が遅れていますから、十分ぐらい遅れます。", "py": "でんしゃ が おくれて います から、じゅっぷん ぐらい おくれます。", "es": "Como el tren va con retraso, llegaré unos diez minutos tarde." },
+            { "speaker": "さくら", "zh": "大丈夫ですよ。北口の前で待っています。", "py": "だいじょうぶ です よ。きたぐち の まえ で まって います。", "es": "No pasa nada. Te espero delante de la salida norte." },
+            { "speaker": "ウーゴ", "zh": "北口ですね。南口じゃありませんね。", "py": "きたぐち です ね。みなみぐち じゃ ありません ね。", "es": "La salida norte, ¿vale? No la sur." },
+            { "speaker": "さくら", "zh": "はい、北口です。急がないでくださいね。", "py": "はい、きたぐち です。いそがないで ください ね。", "es": "Sí, la norte. No corras, ¿eh?" },
+            { "speaker": "ウーゴ", "zh": "ありがとう。すぐ行きます！", "py": "ありがとう。すぐ いきます！", "es": "Gracias. ¡Voy enseguida!" }
+          ],
+          "notes": "LINE es la app de mensajería más usada en Japón (como WhatsApp en España). 電車の中 = dentro del tren. 急ぐ いそぐ = darse prisa (adelanto). Las estaciones grandes tienen varias salidas (北口, 南口, 東口, 西口): queda siempre en una salida concreta."
+        },
+        { "type": "grammar", "id": "kara-because" },
+        { "type": "exercises", "count": 10, "types": ["choose-meaning", "listen-choose", "order-words", "build-sentence", "fill-blank", "translate-to-es", "particle", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ja-u14-l3",
+      "title": "Reservar por teléfono",
+      "zh": "すみませんが…",
+      "goal": "Llamar a un restaurante y usar が para suavizar peticiones y negativas.",
+      "minutes": 13,
+      "vocab": [
+        { "hanzi": "店", "pinyin": "みせ", "es": "tienda; local; restaurante" },
+        { "hanzi": "名前", "pinyin": "なまえ", "es": "nombre" },
+        { "hanzi": "何人", "pinyin": "なんにん", "es": "cuántas personas" },
+        { "hanzi": "二人", "pinyin": "ふたり", "es": "dos personas", "note": "二人で = (nosotros) dos." },
+        { "hanzi": "開く", "pinyin": "あく", "es": "abrirse (algo se abre)" },
+        { "hanzi": "閉まる", "pinyin": "しまる", "es": "cerrarse (algo se cierra)" },
+        { "hanzi": "いっぱい", "pinyin": "いっぱい", "es": "lleno; mucho" },
+        { "hanzi": "結構", "pinyin": "けっこう", "es": "bien; suficiente; bastante", "note": "結構です = está bien / no, gracias." }
+      ],
+      "steps": [
+        { "type": "vocab" },
+        {
+          "type": "dialogue",
+          "title": "Llamada al Sakura Shokudō",
+          "lines": [
+            { "speaker": "店の人", "zh": "はい、さくら食堂です。", "py": "はい、さくら しょくどう です。", "es": "Sakura Shokudō, ¿dígame?" },
+            { "speaker": "ウーゴ", "zh": "すみませんが、今晩七時に二人で行きたいです。大丈夫ですか。", "py": "すみません が、こんばん しちじ に ふたり で いきたい です。だいじょうぶ です か。", "es": "Perdone, queríamos ir esta noche a las siete dos personas. ¿Hay sitio?" },
+            { "speaker": "店の人", "zh": "すみませんが、七時はいっぱいです。八時はどうですか。", "py": "すみません が、しちじ は いっぱい です。はちじ は どう です か。", "es": "Lo siento, pero a las siete está lleno. ¿Qué tal a las ocho?" },
+            { "speaker": "ウーゴ", "zh": "八時ですか。結構です。お店は何時に閉まりますか。", "py": "はちじ です か。けっこう です。おみせ は なんじ に しまります か。", "es": "¿A las ocho? Está bien. ¿A qué hora cierran?" },
+            { "speaker": "店の人", "zh": "十時に閉まります。お名前は？", "py": "じゅうじ に しまります。おなまえ は？", "es": "Cerramos a las diez. ¿Su nombre?" },
+            { "speaker": "ウーゴ", "zh": "ウーゴです。よろしくお願いします。", "py": "ウーゴ です。よろしく おねがい します。", "es": "Hugo. Muchas gracias." },
+            { "speaker": "店の人", "zh": "ウーゴさん、二人で八時ですね。お待ちしています。", "py": "ウーゴ さん、ふたり で はちじ です ね。おまち して います。", "es": "Hugo, dos personas a las ocho. Le esperamos." }
+          ],
+          "notes": "Al contestar en una tienda se dice はい、＋nombre del local＋です. すみませんが… = «perdone, pero…», forma suave de pedir o de decir que no. お名前, お店, お待ちしています: お hace la frase más cortés (lenguaje de dependiente). Para reservar se usa 予約する よやくする (adelanto)."
+        },
+        { "type": "grammar", "id": "ga-but" },
+        { "type": "exercises", "count": 10, "types": ["choose-meaning", "listen-choose", "particle", "fill-blank", "order-words", "translate-to-es", "classifier", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ja-u14-l4",
+      "title": "¿Puede repetirlo?: lectura y repaso",
+      "zh": "もう一度言ってください",
+      "goal": "Pedir que te repitan algo despacio, entender suposiciones con たぶん〜でしょう y repasar con un mensaje de LINE.",
+      "minutes": 15,
+      "vocab": [
+        { "hanzi": "たぶん", "pinyin": "たぶん", "es": "seguramente; quizás" },
+        { "hanzi": "授業", "pinyin": "じゅぎょう", "es": "clase (lección)" },
+        { "hanzi": "中", "pinyin": "ちゅう", "es": "durante; en medio de", "note": "授業中 = en clase; 電話中 = hablando por teléfono." },
+        { "hanzi": "ごろ", "pinyin": "ごろ", "es": "hacia; sobre (hora aproximada)", "note": "十二時ごろ = sobre las doce." },
+        { "hanzi": "もう一度", "pinyin": "もういちど", "es": "otra vez; una vez más" },
+        { "hanzi": "ゆっくり", "pinyin": "ゆっくり", "es": "despacio; con calma" },
+        { "hanzi": "言う", "pinyin": "いう", "es": "decir" }
+      ],
+      "steps": [
+        { "type": "vocab" },
+        {
+          "type": "dialogue",
+          "title": "Llamada a la escuela de japonés",
+          "lines": [
+            { "speaker": "学校の人", "zh": "はい、東京日本語学校です。", "py": "はい、とうきょう にほんご がっこう です。", "es": "Escuela de Japonés de Tokio, ¿dígame?" },
+            { "speaker": "ウーゴ", "zh": "もしもし、ウーゴです。山田先生はいますか。", "py": "もしもし、ウーゴ です。やまだ せんせい は います か。", "es": "Hola, soy Hugo. ¿Está Yamada-sensei?" },
+            { "speaker": "学校の人", "zh": "すみません、山田先生は今授業中です。", "py": "すみません、やまだ せんせい は いま じゅぎょう ちゅう です。", "es": "Lo siento, Yamada-sensei está ahora en clase." },
+            { "speaker": "ウーゴ", "zh": "授業は何時に終わりますか。", "py": "じゅぎょう は なんじ に おわります か。", "es": "¿A qué hora termina la clase?" },
+            { "speaker": "学校の人", "zh": "たぶん十二時ごろ終わるでしょう。", "py": "たぶん じゅうにじ ごろ おわる でしょう。", "es": "Seguramente terminará hacia las doce." },
+            { "speaker": "ウーゴ", "zh": "すみません、もう一度ゆっくり言ってください。", "py": "すみません、もう いちど ゆっくり いって ください。", "es": "Perdone, ¿puede repetirlo despacio?" },
+            { "speaker": "学校の人", "zh": "じゅうにじ、ごろ、です。その後で電話をかけてください。", "py": "じゅうにじ、ごろ、です。その あと で でんわ を かけて ください。", "es": "A-las-doce, más o menos. Llame después, por favor." },
+            { "speaker": "ウーゴ", "zh": "分かりました。じゃあ、十二時半にかけます。", "py": "わかりました。じゃあ、じゅうにじ はん に かけます。", "es": "Entendido. Entonces llamaré a las doce y media." }
+          ],
+          "notes": "人がいる: para preguntar si alguien está se usa いる (山田先生はいますか). たぶん〜でしょう = «seguramente…»: たぶん refuerza la suposición. もう一度ゆっくり言ってください es la frase de supervivencia más útil al teléfono."
+        },
+        { "type": "grammar", "id": "deshou" },
+        {
+          "type": "reading",
+          "title": "Un mensaje de Sakura",
+          "text": "ウーゴさん、こんにちは！\n明日の映画、楽しみですね。\n明日はたぶん雨でしょうから、傘を持って来てください。\n一時に渋谷駅の北口で会いましょう。南口じゃありませんよ。\n駅から映画館まで歩いて五分ぐらいです。\n映画の後で、一緒に晩ご飯を食べませんか。\n駅の近くのおいしい店を知っています。\nじゃあ、また明日！",
+          "es": "¡Hola, Hugo!\nQué ganas de ver la peli mañana.\nMañana seguramente lloverá, así que trae paraguas.\nQuedamos a la una en la salida norte de la estación de Shibuya. ¡No en la sur!\nDe la estación al cine hay unos cinco minutos andando.\n¿Por qué no cenamos juntos después de la película?\nConozco un restaurante rico cerca de la estación.\n¡Hasta mañana!",
+          "questions": [
+            { "q": "¿Dónde quedan Hugo y Sakura?", "options": ["En la salida sur de Shibuya", "En la salida norte de Shibuya", "Delante del cine", "En el restaurante"], "answer": 1, "explain": "一時に渋谷駅の北口で会いましょう。南口じゃありませんよ。" },
+            { "q": "¿Por qué tiene que llevar paraguas Hugo?", "options": ["Porque hará sol", "Porque el cine está lejos", "Porque seguramente lloverá", "Porque Sakura no tiene"], "answer": 2, "explain": "明日はたぶん雨でしょうから、傘を持って来てください。" },
+            { "q": "¿Qué propone Sakura para después de la película?", "options": ["Cenar juntos", "Ir a pasear", "Volver a casa", "Cantar en un karaoke"], "answer": 0, "explain": "映画の後で、一緒に晩ご飯を食べませんか。" }
+          ]
+        },
+        { "type": "exercises", "count": 12, "types": ["matching", "choose-meaning", "conjugation", "particle", "order-words", "build-sentence", "fill-blank", "dictation", "translate-to-es", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    }
+  ]
+}

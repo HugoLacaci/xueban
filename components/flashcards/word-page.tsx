@@ -1,29 +1,34 @@
 "use client";
 import { useState } from "react";
-import Link from "next/link";
+import Link from "@/lib/languages/link";
 import { useRouter } from "next/navigation";
 import { useLiveQuery } from "dexie-react-hooks";
 import { ArrowLeft, ArrowUpFromLine, Play, Save, Trash2 } from "lucide-react";
 import { db, deleteWord, newCard, type CardType, type Word } from "@/lib/db";
-import { useSettings } from "@/lib/settings";
+import { useSettings, ankiOnFor } from "@/lib/settings";
 import { useAnkiStatus } from "@/lib/anki/client";
-import { numberedToMarked } from "@/lib/pinyin/tones";
+import { normalizeInput as numberedToMarked } from "@/lib/languages/helpers";
+import { usePack } from "@/lib/languages/provider";
 import { formatInterval } from "@/lib/fsrs/scheduler";
 import { onWordSaved } from "@/lib/anki/hooks";
 import { Button } from "@/components/ui/button";
-import { Badge, Card, Input, Label, PageHeader, Select, Switch, Textarea, Spinner } from "@/components/ui/primitives";
+import { Badge, Card, Input, Label, PageHeader, Select, Switch, Textarea, Spinner, Option } from "@/components/ui/primitives";
 import { toast } from "@/components/ui/toast";
-import { Pinyin } from "@/components/zh/pinyin";
-import { AudioButton } from "@/components/zh/audio-button";
-import { ChineseText, Hanzi } from "@/components/zh/chinese-text";
+import { Pinyin } from "@/components/target/reading";
+import { AudioButton } from "@/components/target/audio-button";
+import { ChineseText, Hanzi } from "@/components/target/target-text";
 import { SealTag } from "@/components/ornament/seal";
 import { TianZiGe } from "@/components/ornament/tianzige";
-import { CharDetail } from "@/components/dictionary/char-detail";
 import { cn, formatDate, nowMs } from "@/lib/utils";
+import { getActiveLang } from "@/lib/languages/registry";
+import { targetLang } from "@/lib/languages/registry";
+import { ui } from "@/lib/languages/ui-text";
+import { getActivePack } from "@/lib/languages/registry";
+import { Mixed } from "@/components/target/mixed";
 
 const TYPES: { t: CardType; label: string; desc: string }[] = [
-  { t: "recognition", label: "Reconocimiento", desc: "汉字 → significado" },
-  { t: "production", label: "Producción", desc: "español → 汉字" },
+  { t: "recognition", label: "Reconocimiento", get desc() { return `${ui().wordLabel} → significado`; } },
+  { t: "production", label: "Producción", get desc() { return `español → ${ui().wordLabel}`; } },
   { t: "listening", label: "Escucha", desc: "audio → significado" },
   { t: "sentence", label: "Frase (cloze)", desc: "completa el hueco en el ejemplo" },
   { t: "writing", label: "Escritura", desc: "traza el carácter" },
@@ -38,11 +43,12 @@ function SectionHeading({ children }: { children: React.ReactNode }) {
 
 export function WordPage({ id }: { id: string }) {
   const router = useRouter();
+  const pack = usePack();
   // null (no existe) ≠ undefined (cargando): si no, una palabra inexistente deja el spinner para siempre
   const word = useLiveQuery(() => db.words.get(id).then((w) => w ?? null), [id]);
   const cards = useLiveQuery(() => db.cards.where("wordId").equals(id).toArray(), [id]) ?? [];
   const logs = useLiveQuery(() => db.reviewLogs.where("wordId").equals(id).reverse().sortBy("review"), [id]) ?? [];
-  const categories = useLiveQuery(() => db.categories.orderBy("order").toArray(), []) ?? [];
+  const categories = useLiveQuery(() => db.categories.where("lang").equals(getActiveLang()).sortBy("order"), []) ?? [];
   const settings = useSettings((s) => s.settings);
   const anki = useAnkiStatus();
   const [draft, setDraft] = useState<Partial<Word> | null>(null);
@@ -64,7 +70,7 @@ export function WordPage({ id }: { id: string }) {
   const dirty = draft !== null;
   const chars = Array.from(word.hanzi);
   const cell = chars.length <= 2 ? "clamp(96px, 22vw, 128px)" : chars.length === 3 ? "clamp(80px, 20vw, 108px)" : "clamp(64px, 17vw, 92px)";
-  const zhFont = settings.zhFont === "kai" ? "zh-kai" : "zh-serif";
+  const zhFont = settings.langs[getActiveLang()]?.font === "kai" ? "zh-kai" : "zh-serif";
 
   const save = async () => {
     const next: Word = { ...word, ...draft, pinyin: numberedToMarked((draft?.pinyin ?? word.pinyin).trim()), updatedAt: Date.now() };
@@ -105,7 +111,7 @@ export function WordPage({ id }: { id: string }) {
               <Play /> Repasar esta palabra
             </Link>
           </Button>
-          {settings.anki.enabled && anki.connected ? (
+          {ankiOnFor(settings, getActiveLang()) && anki.connected ? (
             <Button size="sm" variant="secondary" onClick={() => void import("@/lib/anki/sync").then((m) => m.pushWordsToAnki([word])).then((r) => toast.success("Enviado a Anki", `${r.created} creada · ${r.updated} actualizada`))}>
               <ArrowUpFromLine /> Anki
             </Button>
@@ -124,13 +130,13 @@ export function WordPage({ id }: { id: string }) {
             {chars.length <= 4 ? (
               chars.map((c, i) => (
                 <TianZiGe key={c + i} faint size={cell}>
-                  <span lang="zh-CN" className={cn("zh font-medium leading-none text-ink", zhFont)} style={{ fontSize: `calc(${cell} * 0.72)` }}>
+                  <span lang={targetLang()} className={cn("zh font-medium leading-none text-ink", zhFont)} style={{ fontSize: `calc(${cell} * 0.72)` }}>
                     {c}
                   </span>
                 </TianZiGe>
               ))
             ) : (
-              <Hanzi text={word.hanzi} size="2xl" font={settings.zhFont === "kai" ? "kai" : "serif"} />
+              <Hanzi text={word.hanzi} size="2xl" font={settings.langs[getActiveLang()]?.font === "kai" ? "kai" : "serif"} />
             )}
           </div>
           <div className="min-w-0 flex-1">
@@ -138,7 +144,7 @@ export function WordPage({ id }: { id: string }) {
               <Pinyin text={word.pinyin} className="text-2xl sm:text-3xl" />
               <AudioButton text={word.hanzi} size="lg" />
             </div>
-            <p className="font-serif-es mt-2 text-2xl text-ink sm:text-3xl">{word.meaning}</p>
+            <p className="font-serif-es mt-2 text-2xl text-ink sm:text-3xl"><Mixed>{word.meaning}</Mixed></p>
             {settings.showTraditional && word.traditional && word.traditional !== word.hanzi ? (
               <p className="mt-1 text-sm text-ink-faint">
                 繁{" "}
@@ -182,16 +188,16 @@ export function WordPage({ id }: { id: string }) {
           <div className="mt-3 grid gap-3">
             <div className="grid grid-cols-2 gap-3">
               <div>
-                <Label htmlFor="w-pinyin">Pinyin</Label>
+                <Label htmlFor="w-pinyin">{getActivePack().readingAid.name}</Label>
                 <Input id="w-pinyin" className="mt-1" value={d.pinyin} onChange={(e) => setDraft({ ...draft, pinyin: e.target.value })} />
               </div>
               <div>
                 <Label htmlFor="w-cat">Categoría</Label>
                 <Select id="w-cat" className="mt-1 w-full" value={d.category} onChange={(e) => setDraft({ ...draft, category: e.target.value })}>
                   {categories.map((c) => (
-                    <option key={c.id} value={c.name}>
+                    <Option key={c.id} value={c.name}>
                       {c.name}
-                    </option>
+                    </Option>
                   ))}
                 </Select>
               </div>
@@ -203,7 +209,7 @@ export function WordPage({ id }: { id: string }) {
             </div>
             <div>
               <Label htmlFor="w-ex">Ejemplo</Label>
-              <Textarea id="w-ex" lang="zh-CN" className="zh mt-1 min-h-14" value={d.example ?? ""} onChange={(e) => setDraft({ ...draft, example: e.target.value })} />
+              <Textarea id="w-ex" lang={targetLang()} className="zh mt-1 min-h-14" value={d.example ?? ""} onChange={(e) => setDraft({ ...draft, example: e.target.value })} />
             </div>
             <div className="grid grid-cols-2 gap-3">
               <div>
@@ -218,7 +224,7 @@ export function WordPage({ id }: { id: string }) {
             <div className="grid grid-cols-2 gap-3">
               <div>
                 <Label htmlFor="w-rad">Radical</Label>
-                <Input id="w-rad" lang="zh-CN" className="mt-1" value={d.radical ?? ""} onChange={(e) => setDraft({ ...draft, radical: e.target.value })} />
+                <Input id="w-rad" lang={targetLang()} className="mt-1" value={d.radical ?? ""} onChange={(e) => setDraft({ ...draft, radical: e.target.value })} />
               </div>
               <div>
                 <Label htmlFor="w-tags">Etiquetas (separadas por espacio)</Label>
@@ -284,7 +290,7 @@ export function WordPage({ id }: { id: string }) {
 
       <div className="grid gap-4 md:grid-cols-2">
         {Array.from(new Set(chars)).map((c, i) => (
-          <CharDetail key={c + i} ch={c} compact onNavigate={(w) => router.push(`/diccionario?q=${encodeURIComponent(w)}`)} />
+          <pack.ui.CharacterDetail key={c + i} char={c} onNavigate={(w: string) => router.push(`/diccionario?q=${encodeURIComponent(w)}`)} />
         ))}
       </div>
     </div>

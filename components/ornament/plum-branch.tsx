@@ -21,7 +21,7 @@ interface Bud {
  * 梅花 — rama de ciruelo a tinta, procedural y determinista. Florece una flor bermellón por cada
  * `perFlower` palabras dominadas (`count`). Los capullos restantes se dibujan en tinta tenue.
  */
-export function PlumBranch({ count, perFlower = 10, maxFlowers = 40, seed = 3, className, height = 150, label }: { count: number; perFlower?: number; maxFlowers?: number; seed?: number; className?: string; height?: number; label?: string }) {
+export function PlumBranch({ count, perFlower = 10, maxFlowers = 40, seed = 3, className, height = 150, label, caption = true }: { count: number; perFlower?: number; maxFlowers?: number; seed?: number; className?: string; height?: number; label?: string; caption?: boolean }) {
   const flowers = Math.min(maxFlowers, Math.floor(count / perFlower));
   const { segments, buds } = useMemo(() => {
     const rng = seededRandom(seed);
@@ -75,9 +75,11 @@ export function PlumBranch({ count, perFlower = 10, maxFlowers = 40, seed = 3, c
           );
         })}
       </svg>
+      {caption ? (
       <figcaption className="mt-1 text-xs text-ink-faint">
         {flowers} {flowers === 1 ? "flor" : "flores"} · una por cada {perFlower} palabras dominadas · {next === perFlower ? "¡acabas de florecer!" : `${next} más para la siguiente`}
       </figcaption>
+      ) : null}
     </figure>
   );
 }

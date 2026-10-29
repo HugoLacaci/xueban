@@ -1,0 +1,2246 @@
+{
+  "vocab": [
+    {
+      "id": "ja-v01",
+      "part": "問題1 漢字読み",
+      "prompt": "¿Cómo se lee la palabra entre 【】?",
+      "text": "【先週】、京都へ行きました。",
+      "options": [
+        "せんしゅ",
+        "せいしゅう",
+        "せんしゅう",
+        "せんしょう"
+      ],
+      "answer": 2,
+      "es": "La semana pasada fui a Kioto.",
+      "explain": "先週 = せんしゅう: 週 lleva vocal larga (しゅう)."
+    },
+    {
+      "id": "ja-v02",
+      "part": "問題1 漢字読み",
+      "prompt": "¿Cómo se lee la palabra entre 【】?",
+      "text": "【学校】はえきの近くです。",
+      "options": [
+        "がっこう",
+        "がこう",
+        "がっこ",
+        "かっこう"
+      ],
+      "answer": 0,
+      "es": "La escuela está cerca de la estación.",
+      "explain": "学校 = がっこう: っ pequeña y o larga al final."
+    },
+    {
+      "id": "ja-v03",
+      "part": "問題1 漢字読み",
+      "prompt": "¿Cómo se lee la palabra entre 【】?",
+      "text": "毎朝、【新聞】を読みます。",
+      "options": [
+        "しんもん",
+        "しんぶん",
+        "しんぷん",
+        "しぶん"
+      ],
+      "answer": 1,
+      "es": "Leo el periódico todas las mañanas.",
+      "explain": "新聞 = しんぶん (periódico). 聞 suena ぶん en esta palabra."
+    },
+    {
+      "id": "ja-v04",
+      "part": "問題1 漢字読み",
+      "prompt": "¿Cómo se lee la palabra entre 【】?",
+      "text": "【外国】に住みたいです。",
+      "options": [
+        "かいこく",
+        "がいごく",
+        "そとくに",
+        "がいこく"
+      ],
+      "answer": 3,
+      "es": "Quiero vivir en el extranjero.",
+      "explain": "外国 = がいこく: が sonora al principio, こ sorda después."
+    },
+    {
+      "id": "ja-v05",
+      "part": "問題1 漢字読み",
+      "prompt": "¿Cómo se lee la palabra entre 【】?",
+      "text": "【午後】三時に会いましょう。",
+      "options": [
+        "ごご",
+        "ごうご",
+        "ごごう",
+        "ごこ"
+      ],
+      "answer": 0,
+      "es": "Quedemos a las tres de la tarde.",
+      "explain": "午後 = ごご (por la tarde), sin vocales largas."
+    },
+    {
+      "id": "ja-v06",
+      "part": "問題1 漢字読み",
+      "prompt": "¿Cómo se lee la palabra entre 【】?",
+      "text": "この【店】はやすいです。",
+      "options": [
+        "いえ",
+        "まち",
+        "みせ",
+        "へや"
+      ],
+      "answer": 2,
+      "es": "Esta tienda es barata.",
+      "explain": "店 = みせ (tienda). いえ es 家, まち es 町 y へや es 部屋."
+    },
+    {
+      "id": "ja-v07",
+      "part": "問題1 漢字読み",
+      "prompt": "¿Cómo se lee la palabra entre 【】?",
+      "text": "【父】は会社員です。",
+      "options": [
+        "はは",
+        "ちち",
+        "あに",
+        "あね"
+      ],
+      "answer": 1,
+      "es": "Mi padre es oficinista.",
+      "explain": "父 = ちち (mi padre). はは es 母 (mi madre)."
+    },
+    {
+      "id": "ja-v08",
+      "part": "問題1 漢字読み",
+      "prompt": "¿Cómo se lee la palabra entre 【】?",
+      "text": "つぎのかどを【右】にまがってください。",
+      "options": [
+        "ひだり",
+        "まえ",
+        "うしろ",
+        "みぎ"
+      ],
+      "answer": 3,
+      "es": "Gire a la derecha en la próxima esquina.",
+      "explain": "右 = みぎ (derecha). 左 = ひだり (izquierda)."
+    },
+    {
+      "id": "ja-v09",
+      "part": "問題1 漢字読み",
+      "prompt": "¿Cómo se lee la palabra entre 【】?",
+      "text": "このかさは【六百円】です。",
+      "options": [
+        "ろくひゃくえん",
+        "ろっぴゃくえん",
+        "ろくびゃくえん",
+        "ろっひゃくえん"
+      ],
+      "answer": 1,
+      "es": "Este paraguas cuesta 600 yenes.",
+      "explain": "6 + 百 se contrae: ろっぴゃく. Igual que 八百 = はっぴゃく."
+    },
+    {
+      "id": "ja-v10",
+      "part": "問題1 漢字読み",
+      "prompt": "¿Cómo se lee la palabra entre 【】?",
+      "text": "きょうは【天気】がいいですね。",
+      "options": [
+        "てんき",
+        "でんき",
+        "てんぎ",
+        "てんけ"
+      ],
+      "answer": 0,
+      "es": "Hoy hace buen tiempo, ¿verdad?",
+      "explain": "天気 = てんき (tiempo atmosférico). でんき es 電気 (electricidad, luz)."
+    },
+    {
+      "id": "ja-v11",
+      "part": "問題1 漢字読み",
+      "prompt": "¿Cómo se lee la palabra entre 【】?",
+      "text": "【電車】で大学へ来ました。",
+      "options": [
+        "てんしゃ",
+        "でんじゃ",
+        "でんしゃ",
+        "でんしや"
+      ],
+      "answer": 2,
+      "es": "He venido a la universidad en tren.",
+      "explain": "電車 = でんしゃ, con しゃ pequeña (yōon)."
+    },
+    {
+      "id": "ja-v12",
+      "part": "問題1 漢字読み",
+      "prompt": "¿Cómo se lee la palabra entre 【】?",
+      "text": "そとは【雨】がふっています。",
+      "options": [
+        "ゆき",
+        "かぜ",
+        "くも",
+        "あめ"
+      ],
+      "answer": 3,
+      "es": "Fuera está lloviendo.",
+      "explain": "雨 = あめ (lluvia)."
+    },
+    {
+      "id": "ja-v13",
+      "part": "問題1 漢字読み",
+      "prompt": "¿Cómo se lee la palabra entre 【】?",
+      "text": "【来年】、日本の大学に入りたいです。",
+      "options": [
+        "きねん",
+        "らいねん",
+        "くねん",
+        "らいとし"
+      ],
+      "answer": 1,
+      "es": "El año que viene quiero entrar en una universidad japonesa.",
+      "explain": "来年 = らいねん. 来 se lee らい en 来年, 来週, 来月."
+    },
+    {
+      "id": "ja-v14",
+      "part": "問題1 漢字読み",
+      "prompt": "¿Cómo se lee la palabra entre 【】?",
+      "text": "あしたは学校が【休み】です。",
+      "options": [
+        "やすみ",
+        "よすみ",
+        "やすむ",
+        "いすみ"
+      ],
+      "answer": 0,
+      "es": "Mañana no hay clase (es fiesta en la escuela).",
+      "explain": "休み = やすみ (descanso, vacaciones). やすむ es el verbo."
+    },
+    {
+      "id": "ja-v15",
+      "part": "問題2 表記",
+      "prompt": "¿Cómo se escribe la palabra entre 【】?",
+      "text": "日よう日に【やま】へ行きます。",
+      "options": [
+        "川",
+        "出",
+        "山",
+        "正"
+      ],
+      "answer": 2,
+      "es": "El domingo voy a la montaña.",
+      "explain": "やま = 山. 川 es かわ (río)."
+    },
+    {
+      "id": "ja-v16",
+      "part": "問題2 表記",
+      "prompt": "¿Cómo se escribe la palabra entre 【】?",
+      "text": "【ちいさい】いぬがいます。",
+      "options": [
+        "小さい",
+        "少さい",
+        "水さい",
+        "小いさい"
+      ],
+      "answer": 0,
+      "es": "Hay un perro pequeño.",
+      "explain": "ちいさい = 小さい. 少 (すこし) es «poco», no «pequeño»."
+    },
+    {
+      "id": "ja-v17",
+      "part": "問題2 表記",
+      "prompt": "¿Cómo se escribe la palabra entre 【】?",
+      "text": "このとけいは【たかい】です。",
+      "options": [
+        "京い",
+        "高い",
+        "商い",
+        "亭い"
+      ],
+      "answer": 1,
+      "es": "Este reloj es caro.",
+      "explain": "たかい = 高い. Los demás kanji se le parecen pero no existen con esta lectura."
+    },
+    {
+      "id": "ja-v18",
+      "part": "問題2 表記",
+      "prompt": "¿Cómo se escribe la palabra entre 【】?",
+      "text": "【みみ】がいたいです。",
+      "options": [
+        "目",
+        "手",
+        "口",
+        "耳"
+      ],
+      "answer": 3,
+      "es": "Me duele el oído.",
+      "explain": "みみ = 耳 (oreja, oído). 目 = め, 手 = て, 口 = くち."
+    },
+    {
+      "id": "ja-v19",
+      "part": "問題2 表記",
+      "prompt": "¿Cómo se escribe la palabra entre 【】?",
+      "text": "あさは【こーひー】をのみます。",
+      "options": [
+        "ユーヒー",
+        "コーピー",
+        "コーヒー",
+        "コーヒイ"
+      ],
+      "answer": 2,
+      "es": "Por la mañana bebo café.",
+      "explain": "コーヒー: en katakana la vocal larga se marca con ー, y es ヒ (hi), no ピ (pi)."
+    },
+    {
+      "id": "ja-v20",
+      "part": "問題2 表記",
+      "prompt": "¿Cómo se escribe la palabra entre 【】?",
+      "text": "よる、【てれび】を見ます。",
+      "options": [
+        "テレビ",
+        "テレヒ",
+        "チレビ",
+        "テレピ"
+      ],
+      "answer": 0,
+      "es": "Por la noche veo la tele.",
+      "explain": "テレビ: テ (te), レ (re), ビ (bi, con dakuten)."
+    },
+    {
+      "id": "ja-v21",
+      "part": "問題2 表記",
+      "prompt": "¿Cómo se escribe la palabra entre 【】?",
+      "text": "【らいしゅう】、テストがあります。",
+      "options": [
+        "未週",
+        "来遇",
+        "来周",
+        "来週"
+      ],
+      "answer": 3,
+      "es": "La semana que viene hay examen.",
+      "explain": "らいしゅう = 来週. Cuidado con 未 (parecido a 来) y 遇 (parecido a 週)."
+    },
+    {
+      "id": "ja-v22",
+      "part": "問題2 表記",
+      "prompt": "¿Cómo se escribe la palabra entre 【】?",
+      "text": "ここに【なまえ】をかいてください。",
+      "options": [
+        "各前",
+        "名前",
+        "名後",
+        "夕前"
+      ],
+      "answer": 1,
+      "es": "Escriba aquí su nombre, por favor.",
+      "explain": "なまえ = 名前. 各 se parece a 名, pero no es lo mismo."
+    },
+    {
+      "id": "ja-v23",
+      "part": "問題2 表記",
+      "prompt": "¿Cómo se escribe la palabra entre 【】?",
+      "text": "【がっこう】は八時半からです。",
+      "options": [
+        "学校",
+        "学枚",
+        "字校",
+        "学交"
+      ],
+      "answer": 0,
+      "es": "La escuela empieza a las ocho y media.",
+      "explain": "がっこう = 学校. 字 (じ, letra) se parece a 学."
+    },
+    {
+      "id": "ja-v24",
+      "part": "問題2 表記",
+      "prompt": "¿Cómo se escribe la palabra entre 【】?",
+      "text": "あしたは会社を【やすみます】。",
+      "options": [
+        "体みます",
+        "本みます",
+        "休みます",
+        "木みます"
+      ],
+      "answer": 2,
+      "es": "Mañana no iré a la empresa (me tomo el día libre).",
+      "explain": "やすみます = 休みます: persona (亻) apoyada en un árbol (木). 体 (からだ) es «cuerpo»."
+    },
+    {
+      "id": "ja-v25",
+      "part": "問題2 表記",
+      "prompt": "¿Cómo se escribe la palabra entre 【】?",
+      "text": "えきの【にし】がわにぎんこうがあります。",
+      "options": [
+        "四",
+        "酉",
+        "百",
+        "西"
+      ],
+      "answer": 3,
+      "es": "Al oeste de la estación hay un banco.",
+      "explain": "にし = 西 (oeste). 四 (よん) y 酉 se le parecen."
+    },
+    {
+      "id": "ja-v26",
+      "part": "問題3 文脈規定",
+      "prompt": "Elige la palabra que va en el hueco.",
+      "text": "あついですから、まどを（　）ください。",
+      "options": [
+        "しめて",
+        "あけて",
+        "けして",
+        "つけて"
+      ],
+      "answer": 1,
+      "es": "Hace calor, así que abre la ventana, por favor.",
+      "explain": "Con calor se abre la ventana: あける (abrir). しめる es cerrar; けす y つける se usan con luces o aparatos."
+    },
+    {
+      "id": "ja-v27",
+      "part": "問題3 文脈規定",
+      "prompt": "Elige la palabra que va en el hueco.",
+      "text": "へやがくらいですね。でんきを（　）ましょう。",
+      "options": [
+        "つけ",
+        "けし",
+        "あけ",
+        "とり"
+      ],
+      "answer": 0,
+      "es": "La habitación está oscura. Encendamos la luz.",
+      "explain": "でんきをつける = encender la luz. でんきをけす = apagarla."
+    },
+    {
+      "id": "ja-v28",
+      "part": "問題3 文脈規定",
+      "prompt": "Elige la palabra que va en el hueco.",
+      "text": "きのうはあたまが（　）、学校を休みました。",
+      "options": [
+        "たかくて",
+        "ひろくて",
+        "いたくて",
+        "あまくて"
+      ],
+      "answer": 2,
+      "es": "Ayer me dolía la cabeza y falté a clase.",
+      "explain": "あたまがいたい = doler la cabeza. いたくて es la forma て (causa)."
+    },
+    {
+      "id": "ja-v29",
+      "part": "問題3 文脈規定",
+      "prompt": "Elige la palabra que va en el hueco.",
+      "text": "（　）をかけて、しんぶんを読みます。",
+      "options": [
+        "くつ",
+        "ぼうし",
+        "とけい",
+        "めがね"
+      ],
+      "answer": 3,
+      "es": "Me pongo las gafas y leo el periódico.",
+      "explain": "めがねをかける = ponerse las gafas. Para leer se necesitan gafas, no zapatos ni sombrero."
+    },
+    {
+      "id": "ja-v30",
+      "part": "問題3 文脈規定",
+      "prompt": "Elige la palabra que va en el hueco.",
+      "text": "雨ですから、（　）をもっていきます。",
+      "options": [
+        "かさ",
+        "はし",
+        "さら",
+        "かぎ"
+      ],
+      "answer": 0,
+      "es": "Como llueve, me llevo el paraguas.",
+      "explain": "かさ = paraguas. はし = palillos, さら = plato, かぎ = llave."
+    },
+    {
+      "id": "ja-v31",
+      "part": "問題3 文脈規定",
+      "prompt": "Elige la palabra que va en el hueco.",
+      "text": "わたしはまいばん、おふろに（　）。",
+      "options": [
+        "あびます",
+        "はいります",
+        "あらいます",
+        "およぎます"
+      ],
+      "answer": 1,
+      "es": "Todas las noches me doy un baño.",
+      "explain": "おふろにはいる = bañarse (entrar en la bañera). あびる se usa con シャワー."
+    },
+    {
+      "id": "ja-v32",
+      "part": "問題3 文脈規定",
+      "prompt": "Elige la palabra que va en el hueco.",
+      "text": "日よう日はしごとが（　）から、ひまです。",
+      "options": [
+        "いません",
+        "しません",
+        "ありません",
+        "なりません"
+      ],
+      "answer": 2,
+      "es": "El domingo no tengo trabajo, así que estoy libre.",
+      "explain": "しごとがある／ない: para cosas y eventos se usa ある, no いる."
+    },
+    {
+      "id": "ja-v33",
+      "part": "問題3 文脈規定",
+      "prompt": "Elige la palabra que va en el hueco.",
+      "text": "この花はとても（　）ですね。",
+      "options": [
+        "はやい",
+        "つよい",
+        "わかい",
+        "きれい"
+      ],
+      "answer": 3,
+      "es": "Esta flor es muy bonita, ¿verdad?",
+      "explain": "きれい (bonito) es la única que encaja con una flor y con です directamente (adjetivo な)."
+    },
+    {
+      "id": "ja-v34",
+      "part": "問題3 文脈規定",
+      "prompt": "Elige la palabra que va en el hueco.",
+      "text": "あさ、シャワーを（　）。",
+      "options": [
+        "あびます",
+        "はいります",
+        "のみます",
+        "ききます"
+      ],
+      "answer": 0,
+      "es": "Por la mañana me ducho.",
+      "explain": "シャワーをあびる = ducharse."
+    },
+    {
+      "id": "ja-v35",
+      "part": "問題3 文脈規定",
+      "prompt": "Elige la palabra que va en el hueco.",
+      "text": "先生、しつもんが（　）。",
+      "options": [
+        "います",
+        "あります",
+        "します",
+        "なります"
+      ],
+      "answer": 1,
+      "es": "Profesora, tengo una pregunta.",
+      "explain": "しつもんがある = tener una pregunta. Objetos y cosas abstractas: ある."
+    },
+    {
+      "id": "ja-v36",
+      "part": "問題3 文脈規定",
+      "prompt": "Elige la palabra que va en el hueco.",
+      "text": "かぜをひきました。これから（　）へ行きます。",
+      "options": [
+        "ぎんこう",
+        "こうえん",
+        "びょういん",
+        "ゆうびんきょく"
+      ],
+      "answer": 2,
+      "es": "Me he resfriado. Ahora voy al hospital (al médico).",
+      "explain": "Si estás resfriado, vas a la びょういん (hospital, clínica)."
+    },
+    {
+      "id": "ja-v37",
+      "part": "問題3 文脈規定",
+      "prompt": "Elige la palabra que va en el hueco.",
+      "text": "りんごはひとつ百円です。いつつで（　）円です。",
+      "options": [
+        "五十",
+        "百五",
+        "千",
+        "五百"
+      ],
+      "answer": 3,
+      "es": "Las manzanas cuestan 100 yenes cada una. Cinco son 500 yenes.",
+      "explain": "いつつ = cinco. 100 × 5 = 五百 (ごひゃく)."
+    },
+    {
+      "id": "ja-v38",
+      "part": "問題4 言い換え類義",
+      "prompt": "Elige la frase que significa casi lo mismo.",
+      "text": "このへやはせまいです。",
+      "options": [
+        "このへやはひろくないです。",
+        "このへやはおおきいです。",
+        "このへやはあかるくないです。",
+        "このへやはきれいです。"
+      ],
+      "answer": 0,
+      "es": "Esta habitación es pequeña (estrecha).",
+      "explain": "せまい (estrecho, pequeño) = ひろくない (no amplio)."
+    },
+    {
+      "id": "ja-v39",
+      "part": "問題4 言い換え類義",
+      "prompt": "Elige la frase que significa casi lo mismo.",
+      "text": "けさ、パンを食べました。",
+      "options": [
+        "きのうのあさ、パンを食べました。",
+        "きょうのよる、パンを食べました。",
+        "きょうのあさ、パンを食べました。",
+        "きのうのよる、パンを食べました。"
+      ],
+      "answer": 2,
+      "es": "Esta mañana he comido pan.",
+      "explain": "けさ = きょうのあさ (esta mañana)."
+    },
+    {
+      "id": "ja-v40",
+      "part": "問題4 言い換え類義",
+      "prompt": "Elige la frase que significa casi lo mismo.",
+      "text": "おととい、えいがを見ました。",
+      "options": [
+        "きのう、えいがを見ました。",
+        "ふつかまえに、えいがを見ました。",
+        "みっかまえに、えいがを見ました。",
+        "あさって、えいがを見ます。"
+      ],
+      "answer": 1,
+      "es": "Anteayer vi una película.",
+      "explain": "おととい (anteayer) = ふつかまえ (hace dos días)."
+    },
+    {
+      "id": "ja-v41",
+      "part": "問題4 言い換え類義",
+      "prompt": "Elige la frase que significa casi lo mismo.",
+      "text": "わたしはさかながすきではありません。",
+      "options": [
+        "わたしはさかながすきです。",
+        "わたしはさかなをよく食べます。",
+        "わたしはさかなをかいます。",
+        "わたしはさかながきらいです。"
+      ],
+      "answer": 3,
+      "es": "No me gusta el pescado.",
+      "explain": "すきではない (no me gusta) ≈ きらい (lo detesto, no me gusta)."
+    },
+    {
+      "id": "ja-v42",
+      "part": "問題4 言い換え類義",
+      "prompt": "Elige la frase que significa casi lo mismo.",
+      "text": "あにはわたしよりせがたかいです。",
+      "options": [
+        "わたしはあによりせがひくいです。",
+        "わたしはあによりせがたかいです。",
+        "あにとわたしはせがおなじです。",
+        "あにはせがひくいです。"
+      ],
+      "answer": 0,
+      "es": "Mi hermano mayor es más alto que yo.",
+      "explain": "Si mi hermano es más alto que yo, yo soy más bajo (ひくい) que él."
+    },
+    {
+      "id": "ja-v43",
+      "part": "問題4 言い換え類義",
+      "prompt": "Elige la frase que significa casi lo mismo.",
+      "text": "このえいがはつまらなかったです。",
+      "options": [
+        "このえいがはながかったです。",
+        "このえいがはおもしろくなかったです。",
+        "このえいがはおもしろかったです。",
+        "このえいがはたかかったです。"
+      ],
+      "answer": 1,
+      "es": "Esta película fue aburrida.",
+      "explain": "つまらない (aburrido) = おもしろくない (no interesante)."
+    },
+    {
+      "id": "ja-v44",
+      "part": "問題4 言い換え類義",
+      "prompt": "Elige la frase que significa casi lo mismo.",
+      "text": "このまちはにぎやかではありません。",
+      "options": [
+        "このまちはひとがおおいです。",
+        "このまちはおおきいです。",
+        "このまちはしずかです。",
+        "このまちはあたらしいです。"
+      ],
+      "answer": 2,
+      "es": "Esta ciudad no es animada.",
+      "explain": "にぎやかではない (no es animada) ≈ しずか (tranquila)."
+    },
+    {
+      "id": "ja-v45",
+      "part": "問題4 言い換え類義",
+      "prompt": "Elige la frase que significa casi lo mismo.",
+      "text": "テストはやさしかったです。",
+      "options": [
+        "テストはむずかしかったです。",
+        "テストはながかったです。",
+        "テストはおもしろくなかったです。",
+        "テストはかんたんでした。"
+      ],
+      "answer": 3,
+      "es": "El examen fue fácil.",
+      "explain": "やさしい (fácil) = かんたん (sencillo)."
+    },
+    {
+      "id": "ja-v46",
+      "part": "問題4 言い換え類義",
+      "prompt": "Elige la frase que significa casi lo mismo.",
+      "text": "たなかさんはりょうりがじょうずです。",
+      "options": [
+        "たなかさんはおいしいりょうりをつくります。",
+        "たなかさんはりょうりをたべません。",
+        "たなかさんはりょうりがきらいです。",
+        "たなかさんはりょうりをならっています。"
+      ],
+      "answer": 0,
+      "es": "Tanaka cocina muy bien.",
+      "explain": "りょうりがじょうず (se le da bien cocinar) ≈ hace comida rica."
+    }
+  ],
+  "grammar": [
+    {
+      "id": "ja-g01",
+      "part": "文法 問題1",
+      "prompt": "Elige lo que va en el hueco.",
+      "text": "わたし（　）スペイン人です。",
+      "options": [
+        "を",
+        "は",
+        "に",
+        "で"
+      ],
+      "answer": 1,
+      "es": "Soy español.",
+      "explain": "は marca el tema de la frase con です: わたしは〜です."
+    },
+    {
+      "id": "ja-g02",
+      "part": "文法 問題1",
+      "prompt": "Elige lo que va en el hueco.",
+      "text": "まいあさ、コーヒー（　）のみます。",
+      "options": [
+        "を",
+        "が",
+        "に",
+        "へ"
+      ],
+      "answer": 0,
+      "es": "Todas las mañanas bebo café.",
+      "explain": "を marca el objeto directo del verbo のむ."
+    },
+    {
+      "id": "ja-g03",
+      "part": "文法 問題1",
+      "prompt": "Elige lo que va en el hueco.",
+      "text": "まいにち七時（　）おきます。",
+      "options": [
+        "で",
+        "を",
+        "に",
+        "が"
+      ],
+      "answer": 2,
+      "es": "Me levanto todos los días a las siete.",
+      "explain": "Hora exacta + に: 七時に."
+    },
+    {
+      "id": "ja-g04",
+      "part": "文法 問題1",
+      "prompt": "Elige lo que va en el hueco.",
+      "text": "図書館（　）日本語を勉強します。",
+      "options": [
+        "に",
+        "へ",
+        "を",
+        "で"
+      ],
+      "answer": 3,
+      "es": "Estudio japonés en la biblioteca.",
+      "explain": "Lugar donde se realiza una acción: で."
+    },
+    {
+      "id": "ja-g05",
+      "part": "文法 問題1",
+      "prompt": "Elige lo que va en el hueco.",
+      "text": "電車（　）大学へ行きます。",
+      "options": [
+        "で",
+        "に",
+        "を",
+        "と"
+      ],
+      "answer": 0,
+      "es": "Voy a la universidad en tren.",
+      "explain": "Medio de transporte: で (電車で, バスで)."
+    },
+    {
+      "id": "ja-g06",
+      "part": "文法 問題1",
+      "prompt": "Elige lo que va en el hueco.",
+      "text": "きのう、友だち（　）えいがを見ました。",
+      "options": [
+        "を",
+        "と",
+        "が",
+        "に"
+      ],
+      "answer": 1,
+      "es": "Ayer vi una película con un amigo.",
+      "explain": "と = «con» (compañía)."
+    },
+    {
+      "id": "ja-g07",
+      "part": "文法 問題1",
+      "prompt": "Elige lo que va en el hueco.",
+      "text": "つくえの上に本（　）あります。",
+      "options": [
+        "を",
+        "で",
+        "が",
+        "へ"
+      ],
+      "answer": 2,
+      "es": "Encima de la mesa hay un libro.",
+      "explain": "Existencia (〜に〜があります): lo que hay se marca con が."
+    },
+    {
+      "id": "ja-g08",
+      "part": "文法 問題1",
+      "prompt": "Elige lo que va en el hueco.",
+      "text": "これはだれ（　）かばんですか。",
+      "options": [
+        "が",
+        "を",
+        "に",
+        "の"
+      ],
+      "answer": 3,
+      "es": "¿De quién es este bolso?",
+      "explain": "だれの = de quién (posesión con の)."
+    },
+    {
+      "id": "ja-g09",
+      "part": "文法 問題1",
+      "prompt": "Elige lo que va en el hueco.",
+      "text": "けんさんは学生です。わたし（　）学生です。",
+      "options": [
+        "も",
+        "が",
+        "を",
+        "や"
+      ],
+      "answer": 0,
+      "es": "Ken es estudiante. Yo también soy estudiante.",
+      "explain": "も = también; sustituye a は."
+    },
+    {
+      "id": "ja-g10",
+      "part": "文法 問題1",
+      "prompt": "Elige lo que va en el hueco.",
+      "text": "きのうはとてもさむ（　）です。コートを着ました。",
+      "options": [
+        "いでした",
+        "かった",
+        "だった",
+        "くて"
+      ],
+      "answer": 1,
+      "es": "Ayer hizo mucho frío. Me puse el abrigo.",
+      "explain": "Pasado de adjetivo い: さむい → さむかったです. ✗ さむいでした."
+    },
+    {
+      "id": "ja-g11",
+      "part": "文法 問題1",
+      "prompt": "Elige lo que va en el hueco.",
+      "text": "このへやはしずか（　）、きれいです。",
+      "options": [
+        "くて",
+        "な",
+        "で",
+        "に"
+      ],
+      "answer": 2,
+      "es": "Esta habitación es tranquila y bonita.",
+      "explain": "Para unir adjetivos な: しずかで. Los adjetivos い usan 〜くて."
+    },
+    {
+      "id": "ja-g12",
+      "part": "文法 問題1",
+      "prompt": "Elige lo que va en el hueco.",
+      "text": "らいねん、日本へ行き（　）です。",
+      "options": [
+        "たく",
+        "ましょう",
+        "て",
+        "たい"
+      ],
+      "answer": 3,
+      "es": "El año que viene quiero ir a Japón.",
+      "explain": "Raíz del verbo (forma ます sin ます) + たい = querer hacer: 行きたいです."
+    },
+    {
+      "id": "ja-g13",
+      "part": "文法 問題1",
+      "prompt": "Elige lo que va en el hueco.",
+      "text": "いっしょにひるごはんを食べ（　）か。",
+      "options": [
+        "ません",
+        "ない",
+        "たい",
+        "て"
+      ],
+      "answer": 0,
+      "es": "¿Comemos juntos?",
+      "explain": "〜ませんか = invitación cortés: 食べませんか."
+    },
+    {
+      "id": "ja-g14",
+      "part": "文法 問題1",
+      "prompt": "Elige lo que va en el hueco.",
+      "text": "すみません、ここでしゃしんをとっても（　）ですか。",
+      "options": [
+        "ある",
+        "いい",
+        "する",
+        "いる"
+      ],
+      "answer": 1,
+      "es": "Perdone, ¿puedo hacer fotos aquí?",
+      "explain": "〜てもいいですか = pedir permiso."
+    },
+    {
+      "id": "ja-g15",
+      "part": "文法 問題1",
+      "prompt": "Elige lo que va en el hueco.",
+      "text": "びょういんでたばこをすって（　）いけません。",
+      "options": [
+        "も",
+        "が",
+        "は",
+        "を"
+      ],
+      "answer": 2,
+      "es": "En el hospital no se puede fumar.",
+      "explain": "〜てはいけません = prohibición."
+    },
+    {
+      "id": "ja-g16",
+      "part": "文法 問題1",
+      "prompt": "Elige lo que va en el hueco.",
+      "text": "いま、そとは雨がふって（　）。",
+      "options": [
+        "あります",
+        "なります",
+        "します",
+        "います"
+      ],
+      "answer": 3,
+      "es": "Ahora está lloviendo fuera.",
+      "explain": "〜ています = acción en curso: ふっています."
+    },
+    {
+      "id": "ja-g17",
+      "part": "文法 問題1",
+      "prompt": "Elige lo que va en el hueco.",
+      "text": "さむいですから、ドアをしめて（　）。",
+      "options": [
+        "ください",
+        "ほしい",
+        "たい",
+        "ます"
+      ],
+      "answer": 0,
+      "es": "Hace frío, cierra la puerta, por favor.",
+      "explain": "〜てください = petición cortés."
+    },
+    {
+      "id": "ja-g18",
+      "part": "文法 問題1",
+      "prompt": "Elige lo que va en el hueco.",
+      "text": "ねる（　）に、はをみがきます。",
+      "options": [
+        "あと",
+        "まえ",
+        "なか",
+        "うえ"
+      ],
+      "answer": 1,
+      "es": "Antes de acostarme me lavo los dientes.",
+      "explain": "Forma de diccionario + まえに = antes de. (Después de sería ねたあとで.)"
+    },
+    {
+      "id": "ja-g19",
+      "part": "文法 問題1",
+      "prompt": "Elige lo que va en el hueco.",
+      "text": "ごはんを食べた（　）で、さんぽします。",
+      "options": [
+        "から",
+        "まえ",
+        "あと",
+        "まで"
+      ],
+      "answer": 2,
+      "es": "Después de comer doy un paseo.",
+      "explain": "Forma た + あとで = después de."
+    },
+    {
+      "id": "ja-g20",
+      "part": "文法 問題1",
+      "prompt": "Elige lo que va en el hueco.",
+      "text": "東京から大阪（　）新かんせんで行きます。",
+      "options": [
+        "を",
+        "が",
+        "の",
+        "まで"
+      ],
+      "answer": 3,
+      "es": "Voy de Tokio a Osaka en shinkansen.",
+      "explain": "〜から〜まで = desde… hasta…"
+    },
+    {
+      "id": "ja-g21",
+      "part": "文法 問題1",
+      "prompt": "Elige lo que va en el hueco.",
+      "text": "日本語はむずかしいです（　）、おもしろいです。",
+      "options": [
+        "が",
+        "から",
+        "と",
+        "も"
+      ],
+      "answer": 0,
+      "es": "El japonés es difícil, pero es interesante.",
+      "explain": "が al final de una oración = «pero»."
+    },
+    {
+      "id": "ja-g22",
+      "part": "文法 問題1",
+      "prompt": "Elige lo que va en el hueco.",
+      "text": "雨です（　）、かさをもっていきます。",
+      "options": [
+        "が",
+        "から",
+        "まで",
+        "より"
+      ],
+      "answer": 1,
+      "es": "Como llueve, me llevo el paraguas.",
+      "explain": "〜から = porque, como (causa)."
+    },
+    {
+      "id": "ja-g23",
+      "part": "文法 問題1",
+      "prompt": "Elige lo que va en el hueco.",
+      "text": "バスは電車（　）おそいです。",
+      "options": [
+        "まで",
+        "から",
+        "より",
+        "ほど"
+      ],
+      "answer": 2,
+      "es": "El autobús es más lento que el tren.",
+      "explain": "A は B より + adjetivo = A es más… que B. ほど necesita negación."
+    },
+    {
+      "id": "ja-g24",
+      "part": "文法 問題1",
+      "prompt": "Elige lo que va en el hueco.",
+      "text": "わたしはあたらしいくつが（　）です。",
+      "options": [
+        "たい",
+        "ほしく",
+        "ほしがる",
+        "ほしい"
+      ],
+      "answer": 3,
+      "es": "Quiero unos zapatos nuevos.",
+      "explain": "Querer una cosa: 〜がほしいです. たい va con verbos (かいたい)."
+    },
+    {
+      "id": "ja-g25",
+      "part": "文法 問題1",
+      "prompt": "Elige lo que va en el hueco.",
+      "text": "あしたはたぶん雨（　）。",
+      "options": [
+        "でしょう",
+        "ましょう",
+        "ませんか",
+        "ください"
+      ],
+      "answer": 0,
+      "es": "Mañana probablemente llueva.",
+      "explain": "たぶん〜でしょう = probablemente."
+    },
+    {
+      "id": "ja-g26",
+      "part": "文法 問題1",
+      "prompt": "Elige lo que va en el hueco.",
+      "text": "かばんの中に、ペン（　）ノートなどがあります。",
+      "options": [
+        "を",
+        "や",
+        "で",
+        "に"
+      ],
+      "answer": 1,
+      "es": "En la mochila hay bolis, cuadernos, etc.",
+      "explain": "〜や〜など = enumeración incompleta («entre otras cosas»)."
+    },
+    {
+      "id": "ja-g27",
+      "part": "文法 問題1",
+      "prompt": "Elige lo que va en el hueco.",
+      "text": "先生、しゅくだいはあした（　）いいですか。",
+      "options": [
+        "出して",
+        "出す",
+        "出しても",
+        "出した"
+      ],
+      "answer": 2,
+      "es": "Profesora, ¿puedo entregar los deberes mañana?",
+      "explain": "Pedir permiso: forma て + もいいですか → 出してもいいですか."
+    },
+    {
+      "id": "ja-g28",
+      "part": "文法 問題1",
+      "prompt": "Elige lo que va en el hueco.",
+      "text": "このりんごはあまくて（　）です。",
+      "options": [
+        "おいしく",
+        "おいしくて",
+        "おいしかっ",
+        "おいしい"
+      ],
+      "answer": 3,
+      "es": "Esta manzana es dulce y está rica.",
+      "explain": "Delante de です, el adjetivo い va en su forma básica: おいしいです."
+    },
+    {
+      "id": "ja-g29",
+      "part": "文法 問題1",
+      "prompt": "Elige lo que va en el hueco.",
+      "text": "A「学校へ何（　）来ましたか。」B「バスで来ました。」",
+      "options": [
+        "で",
+        "を",
+        "に",
+        "が"
+      ],
+      "answer": 0,
+      "es": "A: ¿Cómo has venido a la escuela? B: En autobús.",
+      "explain": "何で = ¿con qué medio? (igual que バスで)."
+    },
+    {
+      "id": "ja-g30",
+      "part": "文法 問題1",
+      "prompt": "Elige lo que va en el hueco.",
+      "text": "きのうはどこ（　）も行きませんでした。",
+      "options": [
+        "を",
+        "へ",
+        "が",
+        "の"
+      ],
+      "answer": 1,
+      "es": "Ayer no fui a ninguna parte.",
+      "explain": "どこへも + negativo = a ninguna parte."
+    },
+    {
+      "id": "ja-g31",
+      "part": "文法 問題1",
+      "prompt": "Elige lo que va en el hueco.",
+      "text": "A「このかさはだれのですか。」B「（　）です。」",
+      "options": [
+        "わたし",
+        "わたしが",
+        "わたしの",
+        "わたしに"
+      ],
+      "answer": 2,
+      "es": "A: ¿De quién es este paraguas? B: Es mío.",
+      "explain": "わたしの = mío (の sustituye al nombre: わたしのかさ)."
+    },
+    {
+      "id": "ja-g32",
+      "part": "文法 問題2 並べ替え",
+      "prompt": "Ordena las palabras. ¿Cuál va en la posición ★?",
+      "text": "わたしは　＿＿　＿＿　★　＿＿　です。",
+      "options": [
+        "から",
+        "来た",
+        "学生",
+        "スペイン"
+      ],
+      "answer": 1,
+      "es": "Soy un estudiante que viene de España.",
+      "explain": "Orden: スペイン から 来た 学生 → わたしはスペインから来た学生です。★ = 来た."
+    },
+    {
+      "id": "ja-g33",
+      "part": "文法 問題2 並べ替え",
+      "prompt": "Ordena las palabras. ¿Cuál va en la posición ★?",
+      "text": "つくえの　＿＿　＿＿　★　＿＿　あります。",
+      "options": [
+        "日本語の",
+        "が",
+        "本",
+        "上に"
+      ],
+      "answer": 2,
+      "es": "Encima de la mesa hay un libro de japonés.",
+      "explain": "Orden: 上に 日本語の 本 が → つくえの上に日本語の本があります。★ = 本."
+    },
+    {
+      "id": "ja-g34",
+      "part": "文法 問題2 並べ替え",
+      "prompt": "Ordena las palabras. ¿Cuál va en la posición ★?",
+      "text": "きのう　＿＿　＿＿　★　＿＿　見ました。",
+      "options": [
+        "えいがを",
+        "いっしょに",
+        "友だち",
+        "と"
+      ],
+      "answer": 1,
+      "es": "Ayer vi una película con un amigo.",
+      "explain": "Orden: 友だち と いっしょに えいがを → きのう友だちといっしょにえいがを見ました。★ = いっしょに."
+    },
+    {
+      "id": "ja-g35",
+      "part": "文法 問題2 並べ替え",
+      "prompt": "Ordena las palabras. ¿Cuál va en la posición ★?",
+      "text": "あの　＿＿　＿＿　★　＿＿　田中先生です。",
+      "options": [
+        "人",
+        "が",
+        "かけている",
+        "めがねを"
+      ],
+      "answer": 0,
+      "es": "La persona que lleva gafas es la profesora Tanaka.",
+      "explain": "Orden: めがねを かけている 人 が → あのめがねをかけている人が田中先生です。★ = 人."
+    },
+    {
+      "id": "ja-g36",
+      "part": "文法 問題2 並べ替え",
+      "prompt": "Ordena las palabras. ¿Cuál va en la posición ★?",
+      "text": "すみません、ここで　＿＿　＿＿　★　＿＿　か。",
+      "options": [
+        "です",
+        "とっても",
+        "しゃしんを",
+        "いい"
+      ],
+      "answer": 3,
+      "es": "Perdone, ¿puedo hacer fotos aquí?",
+      "explain": "Orden: しゃしんを とっても いい です → ここでしゃしんをとってもいいですか。★ = いい."
+    },
+    {
+      "id": "ja-g37",
+      "part": "文法 問題2 並べ替え",
+      "prompt": "Ordena las palabras. ¿Cuál va en la posición ★?",
+      "text": "ばんごはんを　＿＿　＿＿　★　＿＿　ねます。",
+      "options": [
+        "から",
+        "シャワーを",
+        "食べて",
+        "あびて"
+      ],
+      "answer": 3,
+      "es": "Ceno, me ducho y después me acuesto.",
+      "explain": "Orden: 食べて シャワーを あびて から → ばんごはんを食べて、シャワーをあびてからねます。★ = あびて."
+    },
+    {
+      "id": "ja-g38",
+      "part": "文法 問題2 並べ替え",
+      "prompt": "Ordena las palabras. ¿Cuál va en la posición ★?",
+      "text": "この　＿＿　＿＿　★　＿＿　ですね。",
+      "options": [
+        "あかるい",
+        "へや",
+        "ひろくて",
+        "は"
+      ],
+      "answer": 2,
+      "es": "Esta habitación es amplia y luminosa, ¿verdad?",
+      "explain": "Orden: へや は ひろくて あかるい → このへやはひろくてあかるいですね。★ = ひろくて."
+    },
+    {
+      "id": "ja-g39",
+      "part": "文法 問題2 並べ替え",
+      "prompt": "Ordena las palabras. ¿Cuál va en la posición ★?",
+      "text": "わたしは　＿＿　＿＿　★　＿＿　がすきです。",
+      "options": [
+        "ものを",
+        "の",
+        "あまい",
+        "食べる"
+      ],
+      "answer": 3,
+      "es": "Me gusta comer cosas dulces.",
+      "explain": "Orden: あまい ものを 食べる の → わたしはあまいものを食べるのがすきです。★ = 食べる."
+    },
+    {
+      "id": "ja-g40",
+      "part": "文法 問題2 並べ替え",
+      "prompt": "Ordena las palabras. ¿Cuál va en la posición ★?",
+      "text": "えきの　＿＿　＿＿　★　＿＿　います。",
+      "options": [
+        "で",
+        "前",
+        "けんさんが",
+        "まって"
+      ],
+      "answer": 2,
+      "es": "Ken está esperando delante de la estación.",
+      "explain": "Orden: 前 で けんさんが まって → えきの前でけんさんがまっています。えきの tiene que ir pegado a 前. ★ = けんさんが."
+    }
+  ],
+  "reading": [
+    {
+      "id": "ja-rd01",
+      "part": "読解 問題4",
+      "prompt": "Lee la nota. ¿Qué ha hecho Sakura?",
+      "text": "ウーゴさんへ\nさくらです。きょうの午後四時に来ましたが、ウーゴさんはいませんでした。かりた本をかえします。つくえの上におきました。それから、あしたのテストは九時からです。おくれないでくださいね。",
+      "options": [
+        "本をつくえの上におきました。",
+        "ウーゴさんに本をかりました。",
+        "九時にテストをしました。",
+        "ウーゴさんと会いました。"
+      ],
+      "answer": 0,
+      "es": "Para Hugo: Soy Sakura. Hoy he venido a las cuatro de la tarde, pero no estabas. Te devuelvo el libro que me prestaste. Lo he dejado encima de la mesa. Y el examen de mañana es a las nueve. No llegues tarde, ¿eh?",
+      "explain": "かりた本をかえします。つくえの上におきました: ha dejado el libro sobre la mesa. No se vieron (いませんでした)."
+    },
+    {
+      "id": "ja-rd02",
+      "part": "読解 問題4",
+      "prompt": "Lee el texto. ¿Con quién fue a la piscina esta semana?",
+      "text": "わたしは毎週土よう日にプールへ行きます。いつもはあにと行きますが、今週はあにがいそがしかったので、ひとりで行きました。プールのあとで、えきの前の店でラーメンを食べました。",
+      "options": [
+        "あにと行きました。",
+        "友だちと行きました。",
+        "ひとりで行きました。",
+        "行きませんでした。"
+      ],
+      "answer": 2,
+      "es": "Todos los sábados voy a la piscina. Normalmente voy con mi hermano mayor, pero esta semana él estaba ocupado, así que fui solo. Después de la piscina comí ramen en una tienda delante de la estación.",
+      "explain": "今週は…ひとりで行きました."
+    },
+    {
+      "id": "ja-rd03",
+      "part": "読解 問題6 情報検索",
+      "prompt": "Lee el aviso. ¿Hasta qué hora abre la biblioteca el domingo?",
+      "text": "図書館のおしらせ\n月よう日は休みです。\n火よう日〜金よう日：朝九時〜夜八時\n土よう日・日よう日：朝十時〜午後五時\n本は二週間かりることができます。\n本をかえすときは、入口のカウンターへもってきてください。図書館の中で、ものを食べないでください。",
+      "options": [
+        "午後五時",
+        "夜八時",
+        "朝十時",
+        "日よう日は休み"
+      ],
+      "answer": 0,
+      "es": "Aviso de la biblioteca. Los lunes cierra. De martes a viernes: de 9:00 a 20:00. Sábados y domingos: de 10:00 a 17:00. Los libros se pueden tomar prestados durante dos semanas. Para devolver los libros, tráiganlos al mostrador de la entrada. No coman dentro de la biblioteca.",
+      "explain": "土よう日・日よう日：朝十時〜午後五時."
+    },
+    {
+      "id": "ja-rd04",
+      "part": "読解 問題6 情報検索",
+      "prompt": "Mismo aviso. Hugo quiere ir el miércoles a las 19:30. ¿Qué pasa?",
+      "text": "図書館のおしらせ\n月よう日は休みです。\n火よう日〜金よう日：朝九時〜夜八時\n土よう日・日よう日：朝十時〜午後五時\n本は二週間かりることができます。\n本をかえすときは、入口のカウンターへもってきてください。図書館の中で、ものを食べないでください。",
+      "options": [
+        "図書館は休みです。",
+        "図書館はあいています。",
+        "図書館はもうしまっています。",
+        "まだあいていません。"
+      ],
+      "answer": 1,
+      "es": "Aviso de la biblioteca. Los lunes cierra. De martes a viernes: de 9:00 a 20:00. Sábados y domingos: de 10:00 a 17:00. Los libros se pueden tomar prestados durante dos semanas. Para devolver los libros, tráiganlos al mostrador de la entrada. No coman dentro de la biblioteca.",
+      "explain": "El miércoles abre hasta las 20:00 (夜八時), así que a las 19:30 está abierta."
+    },
+    {
+      "id": "ja-rd05",
+      "part": "読解 問題5",
+      "prompt": "Lee el mensaje de Ken. ¿Qué tiene que llevar Hugo?",
+      "text": "ウーゴさん\nあしたのパーティーは六時からです。ぼくのうちはえきからあるいて十分です。えきの前にぎんこうがあります。ぎんこうのとなりのみちをまっすぐ来てください。のみものはぼくがかいます。ウーゴさんはくだものをもってきてください。\nけん",
+      "options": [
+        "のみもの",
+        "くだもの",
+        "ケーキ",
+        "なにもいりません"
+      ],
+      "answer": 1,
+      "es": "Hugo: La fiesta de mañana es a partir de las seis. Mi casa está a diez minutos andando de la estación. Delante de la estación hay un banco. Sigue recto por la calle de al lado del banco. Las bebidas las compro yo. Tú trae fruta, por favor. Ken",
+      "explain": "ウーゴさんはくだものをもってきてください. Las bebidas las compra Ken."
+    },
+    {
+      "id": "ja-rd06",
+      "part": "読解 問題5",
+      "prompt": "Mismo mensaje. ¿Cómo se llega a casa de Ken?",
+      "text": "ウーゴさん\nあしたのパーティーは六時からです。ぼくのうちはえきからあるいて十分です。えきの前にぎんこうがあります。ぎんこうのとなりのみちをまっすぐ来てください。のみものはぼくがかいます。ウーゴさんはくだものをもってきてください。\nけん",
+      "options": [
+        "えきからバスで十分です。",
+        "ぎんこうの前でまがります。",
+        "ぎんこうのとなりのみちをまっすぐ行きます。",
+        "えきのうしろのみちを行きます。"
+      ],
+      "answer": 2,
+      "es": "Hugo: La fiesta de mañana es a partir de las seis. Mi casa está a diez minutos andando de la estación. Delante de la estación hay un banco. Sigue recto por la calle de al lado del banco. Las bebidas las compro yo. Tú trae fruta, por favor. Ken",
+      "explain": "ぎんこうのとなりのみちをまっすぐ来てください; se va andando (あるいて十分), no en autobús."
+    },
+    {
+      "id": "ja-rd07",
+      "part": "読解 問題4",
+      "prompt": "Lee el diario. ¿Por qué llegó tarde a la escuela?",
+      "text": "きのうはとてもさむかったです。朝おきたとき、まどのそとはまっしろでした。ゆきがふっていました。スペインではあまりゆきを見ませんでしたから、とてもうれしかったです。でも、電車がおくれて、学校におくれました。",
+      "options": [
+        "おそくおきたから",
+        "ゆきを見ていたから",
+        "電車がおくれたから",
+        "かぜをひいたから"
+      ],
+      "answer": 2,
+      "es": "Ayer hizo mucho frío. Cuando me levanté por la mañana, fuera de la ventana todo estaba blanco. Estaba nevando. En España no veía mucho la nieve, así que me puse muy contento. Pero el tren se retrasó y llegué tarde a la escuela.",
+      "explain": "電車がおくれて、学校におくれました: la forma て indica la causa."
+    },
+    {
+      "id": "ja-rd08",
+      "part": "読解 問題6 情報検索",
+      "prompt": "Hugo no come carne ni pescado, y quiere también un café. ¿Cuánto paga?",
+      "text": "ランチメニュー（十一時〜二時）\nAランチ　ビーフカレー　七百円\nBランチ　さかなていしょく　八百五十円\nCランチ　やさいのスパゲッティ　七百五十円\n※コーヒーはプラス百円\n※どのランチにも、サラダとスープがつきます。",
+      "options": [
+        "七百五十円",
+        "八百円",
+        "八百五十円",
+        "九百五十円"
+      ],
+      "answer": 2,
+      "es": "Menú de mediodía (de 11:00 a 14:00). Menú A: curry de ternera, 700 yenes. Menú B: menú de pescado, 850 yenes. Menú C: espaguetis de verdura, 750 yenes. * El café, 100 yenes más. * Todos los menús llevan ensalada y sopa.",
+      "explain": "Sin carne ni pescado solo vale el menú C (750) + café (100) = 850 yenes."
+    },
+    {
+      "id": "ja-rd09",
+      "part": "読解 問題4",
+      "prompt": "Lee el texto. ¿Qué no hay en la habitación?",
+      "text": "わたしのへやは二かいにあります。まどからこうえんが見えます。へやにはベッドとつくえといすがあります。テレビはありませんが、パソコンでニュースを見ます。へやはあまりひろくありませんが、あかるくて、しずかです。",
+      "options": [
+        "ベッド",
+        "つくえ",
+        "いす",
+        "テレビ"
+      ],
+      "answer": 3,
+      "es": "Mi habitación está en el segundo piso. Desde la ventana se ve el parque. En la habitación hay una cama, una mesa y una silla. No hay tele, pero veo las noticias en el ordenador. La habitación no es muy grande, pero es luminosa y tranquila.",
+      "explain": "テレビはありません."
+    },
+    {
+      "id": "ja-rd10",
+      "part": "読解 問題4",
+      "prompt": "Lee la nota de la profesora. ¿Qué hará Hugo mañana?",
+      "text": "ウーゴさん\nしゅくだい、ありがとう。よくできていました。でも、かんじが三つまちがっていました。赤いペンでかきました。あした、もう一度かいて、わたしに見せてください。\n田中",
+      "options": [
+        "あたらしいしゅくだいをします。",
+        "まちがったかんじをもう一度かいて、先生に見せます。",
+        "赤いペンをかいます。",
+        "先生にしゅくだいをかえします。"
+      ],
+      "answer": 1,
+      "es": "Hugo: Gracias por los deberes. Estaban bien hechos. Pero te has equivocado en tres kanji. Los he marcado con boli rojo. Mañana escríbelos otra vez y enséñamelos. Tanaka",
+      "explain": "あした、もう一度かいて、わたしに見せてください."
+    },
+    {
+      "id": "ja-rd11",
+      "part": "読解 問題4",
+      "prompt": "Lee el texto. ¿Qué no ha hecho Ken hoy?",
+      "text": "けんさんは毎朝六時におきて、三十分はしります。それからシャワーをあびて、朝ごはんを食べます。大学には八時につきます。でも、きょうは雨だったので、はしりませんでした。",
+      "options": [
+        "六時におきること",
+        "はしること",
+        "シャワーをあびること",
+        "朝ごはんを食べること"
+      ],
+      "answer": 1,
+      "es": "Ken se levanta todas las mañanas a las seis y corre treinta minutos. Después se ducha y desayuna. Llega a la universidad a las ocho. Pero hoy llovía, así que no ha corrido.",
+      "explain": "きょうは雨だったので、はしりませんでした."
+    },
+    {
+      "id": "ja-rd12",
+      "part": "読解 問題6 情報検索",
+      "prompt": "Lee el aviso de la estación. Mañana a las 9:00, ¿qué salidas se pueden usar?",
+      "text": "えきからのおしらせ\nあした（十日）は、朝六時から十時まで、北口がつかえません。南口か東口をつかってください。南口は北口からあるいて五分です。エレベーターは東口にあります。すみませんが、よろしくおねがいします。",
+      "options": [
+        "北口だけ",
+        "南口と東口",
+        "北口と南口",
+        "ぜんぶの出口"
+      ],
+      "answer": 1,
+      "es": "Aviso de la estación: mañana (día 10), de 6:00 a 10:00, no se puede usar la salida norte. Usen la salida sur o la este. La salida sur está a cinco minutos andando de la norte. El ascensor está en la salida este. Gracias por su comprensión.",
+      "explain": "A las nueve la salida norte está cerrada; se usan 南口 o 東口."
+    }
+  ],
+  "listening": [
+    {
+      "id": "ja-l01",
+      "part": "聴解 問題1 課題理解",
+      "prompt": "¿Qué tienen que llevar los estudiantes mañana?",
+      "lines": [
+        {
+          "s": "ナレーター",
+          "t": "教室で先生が話しています。学生はあした何をもってきますか。"
+        },
+        {
+          "s": "女",
+          "t": "みなさん、あしたはテストです。えんぴつとけしゴムをもってきてください。じしょはいりません。"
+        },
+        {
+          "s": "男",
+          "t": "先生、ノートはいりますか。"
+        },
+        {
+          "s": "女",
+          "t": "ノートもいりません。"
+        }
+      ],
+      "q": "学生はあした何をもってきますか。",
+      "options": [
+        "えんぴつとけしゴム",
+        "えんぴつとじしょ",
+        "ノートとけしゴム",
+        "じしょとノート"
+      ],
+      "answer": 0,
+      "es": "La profesora habla en clase. Mañana hay examen: traed lápiz y goma. El diccionario no hace falta. — ¿Y el cuaderno? — Tampoco.",
+      "explain": "えんぴつとけしゴムをもってきてください; じしょ y ノート no hacen falta."
+    },
+    {
+      "id": "ja-l02",
+      "part": "聴解 問題1 課題理解",
+      "prompt": "¿A qué hora quedan?",
+      "lines": [
+        {
+          "s": "ナレーター",
+          "t": "男の人と女の人が話しています。二人は何時に会いますか。"
+        },
+        {
+          "s": "男",
+          "t": "あしたのえいがは三時からですね。"
+        },
+        {
+          "s": "女",
+          "t": "ええ。じゃあ、二時半にえきで会いませんか。"
+        },
+        {
+          "s": "男",
+          "t": "うーん、ぼくは二時までしごとがありますから、二時四十五分はどうですか。"
+        },
+        {
+          "s": "女",
+          "t": "いいですよ。"
+        }
+      ],
+      "q": "二人は何時に会いますか。",
+      "options": [
+        "二時",
+        "二時半",
+        "二時四十五分",
+        "三時"
+      ],
+      "answer": 2,
+      "es": "— La película de mañana es a las tres, ¿no? — Sí. ¿Quedamos a las dos y media en la estación? — Trabajo hasta las dos, ¿qué tal a las tres menos cuarto? — Vale.",
+      "explain": "La propuesta final aceptada es 二時四十五分."
+    },
+    {
+      "id": "ja-l03",
+      "part": "聴解 問題1 課題理解",
+      "prompt": "¿Qué compra el hombre?",
+      "lines": [
+        {
+          "s": "ナレーター",
+          "t": "店で男の人と店の人が話しています。男の人は何をかいますか。"
+        },
+        {
+          "s": "男",
+          "t": "すみません、このあかいかさはいくらですか。"
+        },
+        {
+          "s": "女",
+          "t": "二千円です。そちらのくろいかさは千五百円です。"
+        },
+        {
+          "s": "男",
+          "t": "じゃあ、やすいほうをください。"
+        }
+      ],
+      "q": "男の人は何をかいますか。",
+      "options": [
+        "あかいかさ",
+        "くろいかさ",
+        "あかいかさとくろいかさ",
+        "なにもかいません"
+      ],
+      "answer": 1,
+      "es": "— ¿Cuánto cuesta este paraguas rojo? — 2.000 yenes. Ese negro cuesta 1.500. — Entonces deme el más barato.",
+      "explain": "やすいほう = el más barato = el negro (1.500 yenes)."
+    },
+    {
+      "id": "ja-l04",
+      "part": "聴解 問題1 課題理解",
+      "prompt": "¿Adónde va ahora la estudiante?",
+      "lines": [
+        {
+          "s": "ナレーター",
+          "t": "女の学生と男の学生が話しています。女の学生はこれからどこへ行きますか。"
+        },
+        {
+          "s": "女",
+          "t": "これから図書館へ行きます。"
+        },
+        {
+          "s": "男",
+          "t": "図書館はきょう休みですよ。"
+        },
+        {
+          "s": "女",
+          "t": "え、そうですか。じゃあ、きっさてんで勉強します。"
+        }
+      ],
+      "q": "女の学生はこれからどこへ行きますか。",
+      "options": [
+        "図書館",
+        "きっさてん",
+        "うち",
+        "大学"
+      ],
+      "answer": 1,
+      "es": "— Ahora voy a la biblioteca. — Hoy está cerrada. — ¿Ah, sí? Pues estudiaré en una cafetería.",
+      "explain": "La biblioteca está cerrada (休み), así que va a la cafetería."
+    },
+    {
+      "id": "ja-l05",
+      "part": "聴解 問題1 課題理解",
+      "prompt": "¿Qué hace primero el hombre?",
+      "lines": [
+        {
+          "s": "ナレーター",
+          "t": "女の人と男の人が話しています。男の人はまず何をしますか。"
+        },
+        {
+          "s": "女",
+          "t": "ウーゴさん、ばんごはんの前に、へやをそうじしてください。"
+        },
+        {
+          "s": "男",
+          "t": "はい。でも、さきにシャワーをあびてもいいですか。"
+        },
+        {
+          "s": "女",
+          "t": "いいですよ。"
+        }
+      ],
+      "q": "男の人はまず何をしますか。",
+      "options": [
+        "ばんごはんを食べます。",
+        "へやをそうじします。",
+        "シャワーをあびます。",
+        "かいものに行きます。"
+      ],
+      "answer": 2,
+      "es": "— Hugo, antes de cenar limpia la habitación, por favor. — Vale. Pero ¿puedo ducharme antes? — Sí.",
+      "explain": "さきに (primero) シャワーをあびても…—いいですよ. Primero la ducha, luego limpiar, luego cenar."
+    },
+    {
+      "id": "ja-l06",
+      "part": "聴解 問題1 課題理解",
+      "prompt": "¿Hasta qué día hay que entregar los deberes?",
+      "lines": [
+        {
+          "s": "ナレーター",
+          "t": "先生が話しています。学生はいつまでにしゅくだいを出しますか。"
+        },
+        {
+          "s": "女",
+          "t": "しゅくだいは金よう日までに出してください。木よう日はわたしは学校にいませんから、水よう日か金よう日に出してください。"
+        }
+      ],
+      "q": "学生はいつまでにしゅくだいを出しますか。",
+      "options": [
+        "水よう日",
+        "木よう日",
+        "金よう日",
+        "土よう日"
+      ],
+      "answer": 2,
+      "es": "Entregad los deberes como muy tarde el viernes. El jueves no estoy en la escuela, así que entregadlos el miércoles o el viernes.",
+      "explain": "金よう日までに = hasta el viernes como máximo."
+    },
+    {
+      "id": "ja-l07",
+      "part": "聴解 問題1 課題理解",
+      "prompt": "¿En qué andén coge el tren la mujer?",
+      "lines": [
+        {
+          "s": "ナレーター",
+          "t": "えきで女の人とえきいんが話しています。女の人は何番線の電車にのりますか。"
+        },
+        {
+          "s": "女",
+          "t": "すみません、東京えきへ行きたいんですが。"
+        },
+        {
+          "s": "男",
+          "t": "いつもは三番線ですが、きょうは三番線がつかえませんから、五番線の電車にのってください。"
+        },
+        {
+          "s": "女",
+          "t": "五番線ですね。ありがとうございます。"
+        }
+      ],
+      "q": "女の人は何番線の電車にのりますか。",
+      "options": [
+        "一番線",
+        "三番線",
+        "五番線",
+        "七番線"
+      ],
+      "answer": 2,
+      "es": "— Perdone, quiero ir a la estación de Tokio. — Normalmente es el andén 3, pero hoy no se puede usar; coja el tren del andén 5. — El 5, ¿verdad? Gracias.",
+      "explain": "Hoy el andén 3 no funciona: 五番線."
+    },
+    {
+      "id": "ja-l08",
+      "part": "聴解 問題1 課題理解",
+      "prompt": "¿Cuántas manzanas compra la mujer?",
+      "lines": [
+        {
+          "s": "ナレーター",
+          "t": "店で女の人と店の人が話しています。女の人はりんごをいくつかいますか。"
+        },
+        {
+          "s": "女",
+          "t": "りんごをいつつください。"
+        },
+        {
+          "s": "男",
+          "t": "すみません、いまはみっつだけです。"
+        },
+        {
+          "s": "女",
+          "t": "じゃあ、そのみっつと、みかんをふたつください。"
+        }
+      ],
+      "q": "女の人はりんごをいくつかいますか。",
+      "options": [
+        "ふたつ",
+        "みっつ",
+        "よっつ",
+        "いつつ"
+      ],
+      "answer": 1,
+      "es": "— Cinco manzanas, por favor. — Lo siento, ahora solo quedan tres. — Entonces esas tres y dos mandarinas.",
+      "explain": "Quería cinco, pero solo hay tres: compra みっつ. Las dos (ふたつ) son mandarinas."
+    },
+    {
+      "id": "ja-l09",
+      "part": "聴解 問題2 ポイント理解",
+      "prompt": "¿Cuál es la afición del hombre?",
+      "lines": [
+        {
+          "s": "ナレーター",
+          "t": "女の人と男の人が話しています。男の人のしゅみは何ですか。"
+        },
+        {
+          "s": "女",
+          "t": "ウーゴさんのしゅみは何ですか。サッカーですか。"
+        },
+        {
+          "s": "男",
+          "t": "サッカーは見るのはすきですが、しません。しゅみはりょうりです。"
+        }
+      ],
+      "q": "男の人のしゅみは何ですか。",
+      "options": [
+        "サッカーを見ること",
+        "サッカーをすること",
+        "りょうり",
+        "えいが"
+      ],
+      "answer": 2,
+      "es": "— Hugo, ¿cuál es tu afición? ¿El fútbol? — Me gusta verlo, pero no juego. Mi afición es cocinar.",
+      "explain": "しゅみはりょうりです. El fútbol solo le gusta verlo."
+    },
+    {
+      "id": "ja-l10",
+      "part": "聴解 問題2 ポイント理解",
+      "prompt": "¿Cuántas personas hay en la familia de la mujer?",
+      "lines": [
+        {
+          "s": "ナレーター",
+          "t": "男の人と女の人が話しています。女の人のかぞくは何人ですか。"
+        },
+        {
+          "s": "男",
+          "t": "さくらさんは何人かぞくですか。"
+        },
+        {
+          "s": "女",
+          "t": "父と母とあねとわたしです。それから、犬もいます。"
+        }
+      ],
+      "q": "女の人のかぞくは何人ですか。",
+      "options": [
+        "三人",
+        "四人",
+        "五人",
+        "六人"
+      ],
+      "answer": 1,
+      "es": "— Sakura, ¿cuántos sois en tu familia? — Mi padre, mi madre, mi hermana mayor y yo. Y también tenemos un perro.",
+      "explain": "Padre, madre, hermana y ella: 四人. El perro no cuenta como persona."
+    },
+    {
+      "id": "ja-l11",
+      "part": "聴解 問題2 ポイント理解",
+      "prompt": "¿Qué hizo ayer el hombre?",
+      "lines": [
+        {
+          "s": "ナレーター",
+          "t": "女の人と男の人が話しています。男の人はきのう何をしましたか。"
+        },
+        {
+          "s": "女",
+          "t": "きのうは何をしましたか。"
+        },
+        {
+          "s": "男",
+          "t": "あさはうちで勉強して、ひるから友だちとテニスをしました。"
+        },
+        {
+          "s": "女",
+          "t": "えいがは見ませんでしたか。"
+        },
+        {
+          "s": "男",
+          "t": "見たかったですが、じかんがありませんでした。"
+        }
+      ],
+      "q": "男の人はきのう何をしましたか。",
+      "options": [
+        "勉強とテニス",
+        "勉強とえいが",
+        "テニスとえいが",
+        "えいがだけ"
+      ],
+      "answer": 0,
+      "es": "— ¿Qué hiciste ayer? — Por la mañana estudié en casa y por la tarde jugué al tenis con un amigo. — ¿No viste la película? — Quería, pero no tuve tiempo.",
+      "explain": "勉強 y テニス. La película no la vio (じかんがありませんでした)."
+    },
+    {
+      "id": "ja-l12",
+      "part": "聴解 問題2 ポイント理解",
+      "prompt": "¿Qué día es hoy?",
+      "lines": [
+        {
+          "s": "ナレーター",
+          "t": "男の人と女の人が話しています。きょうは何日ですか。"
+        },
+        {
+          "s": "男",
+          "t": "テストはなのかですよね。"
+        },
+        {
+          "s": "女",
+          "t": "ええ、あさってですよ。"
+        }
+      ],
+      "q": "きょうは何日ですか。",
+      "options": [
+        "いつか",
+        "むいか",
+        "なのか",
+        "ここのか"
+      ],
+      "answer": 0,
+      "es": "— El examen es el día 7, ¿no? — Sí, pasado mañana.",
+      "explain": "Si el día 7 (なのか) es pasado mañana, hoy es el 5 (いつか)."
+    },
+    {
+      "id": "ja-l13",
+      "part": "聴解 問題2 ポイント理解",
+      "prompt": "¿Por qué faltó ayer a clase el hombre?",
+      "lines": [
+        {
+          "s": "ナレーター",
+          "t": "女の人と男の人が話しています。男の人はどうしてきのう学校を休みましたか。"
+        },
+        {
+          "s": "女",
+          "t": "きのう、どうして休みましたか。かぜですか。"
+        },
+        {
+          "s": "男",
+          "t": "いいえ、げんきですよ。母がスペインから来ましたから、くうこうへ行きました。"
+        }
+      ],
+      "q": "男の人はどうしてきのう学校を休みましたか。",
+      "options": [
+        "びょうきだったから",
+        "くうこうへ行ったから",
+        "あたまがいたかったから",
+        "しごとがあったから"
+      ],
+      "answer": 1,
+      "es": "— ¿Por qué faltaste ayer? ¿Estabas resfriado? — No, estoy bien. Vino mi madre de España y fui al aeropuerto.",
+      "explain": "母が…来ましたから、くうこうへ行きました. No estaba enfermo."
+    },
+    {
+      "id": "ja-l14",
+      "part": "聴解 問題2 ポイント理解",
+      "prompt": "¿Cuánto paga en total el hombre?",
+      "lines": [
+        {
+          "s": "ナレーター",
+          "t": "店で男の人と店の人が話しています。男の人はぜんぶでいくらはらいますか。"
+        },
+        {
+          "s": "男",
+          "t": "コーヒーをふたつと、ケーキをひとつください。"
+        },
+        {
+          "s": "女",
+          "t": "はい。コーヒーはひとつ三百円、ケーキは四百円です。"
+        }
+      ],
+      "q": "男の人はぜんぶでいくらはらいますか。",
+      "options": [
+        "七百円",
+        "千円",
+        "千三百円",
+        "六百円"
+      ],
+      "answer": 1,
+      "es": "— Dos cafés y un pastel, por favor. — Sí. El café cuesta 300 yenes cada uno y el pastel 400.",
+      "explain": "300 × 2 + 400 = 1.000 yenes (千円)."
+    },
+    {
+      "id": "ja-l15",
+      "part": "聴解 問題2 ポイント理解",
+      "prompt": "¿Cómo va normalmente la estudiante a la escuela?",
+      "lines": [
+        {
+          "s": "ナレーター",
+          "t": "男の学生と女の学生が話しています。女の学生はいつも何で学校へ来ますか。"
+        },
+        {
+          "s": "男",
+          "t": "山田さんは毎日バスで来ますか。"
+        },
+        {
+          "s": "女",
+          "t": "いいえ、バスはたかいですから、じてんしゃで来ます。雨の日はあるいて来ます。"
+        }
+      ],
+      "q": "女の学生はいつも何で学校へ来ますか。",
+      "options": [
+        "バス",
+        "じてんしゃ",
+        "電車",
+        "あるいて"
+      ],
+      "answer": 1,
+      "es": "— Yamada, ¿vienes todos los días en autobús? — No, el autobús es caro, así que vengo en bici. Los días de lluvia vengo andando.",
+      "explain": "Normalmente en bicicleta; solo andando cuando llueve."
+    },
+    {
+      "id": "ja-l16",
+      "part": "聴解 問題2 ポイント理解",
+      "prompt": "¿Cuál es la habitación del hombre?",
+      "lines": [
+        {
+          "s": "ナレーター",
+          "t": "女の人と男の人が話しています。男の人のへやはどれですか。"
+        },
+        {
+          "s": "女",
+          "t": "ウーゴさんのへやはどこですか。"
+        },
+        {
+          "s": "男",
+          "t": "三かいのいちばん右のへやです。まどの前に大きい木があります。"
+        }
+      ],
+      "q": "男の人のへやはどれですか。",
+      "options": [
+        "二かいのいちばん右",
+        "三かいのいちばん右",
+        "三かいのいちばん左",
+        "二かいのまん中"
+      ],
+      "answer": 1,
+      "es": "— Hugo, ¿cuál es tu habitación? — La del extremo derecho del tercer piso. Delante de la ventana hay un árbol grande.",
+      "explain": "三かいのいちばん右のへや."
+    },
+    {
+      "id": "ja-l17",
+      "part": "聴解 問題3 発話表現",
+      "prompt": "Entras en casa de un amigo. ¿Qué dices?",
+      "lines": [
+        {
+          "s": "ナレーター",
+          "t": "友だちのうちに入ります。何と言いますか。"
+        }
+      ],
+      "q": "何と言いますか。",
+      "options": [
+        "いってきます",
+        "おじゃまします",
+        "ただいま",
+        "おやすみなさい"
+      ],
+      "answer": 1,
+      "es": "Entras en casa de un amigo. ¿Qué dices?",
+      "explain": "おじゃまします se dice al entrar en casa ajena. ただいま es al volver a tu propia casa."
+    },
+    {
+      "id": "ja-l18",
+      "part": "聴解 問題3 発話表現",
+      "prompt": "Vas a empezar a comer. ¿Qué dices?",
+      "lines": [
+        {
+          "s": "ナレーター",
+          "t": "ごはんを食べる前です。何と言いますか。"
+        }
+      ],
+      "q": "何と言いますか。",
+      "options": [
+        "ごちそうさまでした",
+        "いってらっしゃい",
+        "いただきます",
+        "はじめまして"
+      ],
+      "answer": 2,
+      "es": "Es antes de comer. ¿Qué dices?",
+      "explain": "いただきます antes de comer; ごちそうさまでした al terminar."
+    },
+    {
+      "id": "ja-l19",
+      "part": "聴解 問題3 発話表現",
+      "prompt": "Sales del despacho de la profesora. ¿Qué dices?",
+      "lines": [
+        {
+          "s": "ナレーター",
+          "t": "先生のへやから出ます。何と言いますか。"
+        }
+      ],
+      "q": "何と言いますか。",
+      "options": [
+        "おかえりなさい",
+        "いらっしゃいませ",
+        "いただきます",
+        "しつれいしました"
+      ],
+      "answer": 3,
+      "es": "Sales del despacho de la profesora. ¿Qué dices?",
+      "explain": "Al salir de un despacho: しつれいしました (perdone la molestia)."
+    },
+    {
+      "id": "ja-l20",
+      "part": "聴解 問題3 発話表現",
+      "prompt": "En una tienda quieres comprar un café. ¿Qué dices?",
+      "lines": [
+        {
+          "s": "ナレーター",
+          "t": "店でコーヒーをかいたいです。何と言いますか。"
+        }
+      ],
+      "q": "何と言いますか。",
+      "options": [
+        "コーヒーをください。",
+        "コーヒーをどうぞ。",
+        "コーヒーはいかがですか。",
+        "コーヒーがありません。"
+      ],
+      "answer": 0,
+      "es": "Quieres comprar un café en una tienda. ¿Qué dices?",
+      "explain": "〜をください = deme… Las otras frases las diría el dependiente."
+    },
+    {
+      "id": "ja-l21",
+      "part": "聴解 問題3 発話表現",
+      "prompt": "Quieres que un amigo te deje un boli. ¿Qué dices?",
+      "lines": [
+        {
+          "s": "ナレーター",
+          "t": "友だちにペンをかりたいです。何と言いますか。"
+        }
+      ],
+      "q": "何と言いますか。",
+      "options": [
+        "ペンをかりてください。",
+        "ペンをかしましょうか。",
+        "ペンをもらいました。",
+        "ペンをかしてください。"
+      ],
+      "answer": 3,
+      "es": "Quieres pedir prestado un boli a un amigo. ¿Qué dices?",
+      "explain": "かす = prestar (el amigo presta): ペンをかしてください. かりる = tomar prestado (lo haces tú)."
+    },
+    {
+      "id": "ja-l22",
+      "part": "聴解 問題3 発話表現",
+      "prompt": "Por la mañana te encuentras con la profesora en la escuela. ¿Qué dices?",
+      "lines": [
+        {
+          "s": "ナレーター",
+          "t": "朝、学校で先生に会いました。何と言いますか。"
+        }
+      ],
+      "q": "何と言いますか。",
+      "options": [
+        "こんばんは",
+        "おはようございます",
+        "おやすみなさい",
+        "さようなら"
+      ],
+      "answer": 1,
+      "es": "Por la mañana te encuentras con la profesora en la escuela. ¿Qué dices?",
+      "explain": "Por la mañana y a una profesora: おはようございます (forma cortés)."
+    },
+    {
+      "id": "ja-l23",
+      "part": "聴解 問題4 即時応答",
+      "prompt": "Escucha y elige la respuesta adecuada.",
+      "lines": [
+        {
+          "s": "男",
+          "t": "おげんきですか。"
+        }
+      ],
+      "options": [
+        "はい、げんきです。",
+        "はい、どうぞ。",
+        "いいえ、けっこうです。",
+        "はい、そうしましょう。"
+      ],
+      "answer": 0,
+      "es": "¿Qué tal estás?",
+      "explain": "A おげんきですか se responde はい、げんきです (sí, estoy bien)."
+    },
+    {
+      "id": "ja-l24",
+      "part": "聴解 問題4 即時応答",
+      "prompt": "Escucha y elige la respuesta adecuada.",
+      "lines": [
+        {
+          "s": "女",
+          "t": "コーヒー、もういっぱいいかがですか。"
+        }
+      ],
+      "options": [
+        "はい、いただきました。",
+        "いいえ、けっこうです。",
+        "はい、のみません。",
+        "いいえ、どういたしまして。"
+      ],
+      "answer": 1,
+      "es": "¿Quiere otra taza de café?",
+      "explain": "いいえ、けっこうです = no, gracias (rechazo cortés)."
+    },
+    {
+      "id": "ja-l25",
+      "part": "聴解 問題4 即時応答",
+      "prompt": "Escucha y elige la respuesta adecuada.",
+      "lines": [
+        {
+          "s": "男",
+          "t": "すみません、いま何時ですか。"
+        }
+      ],
+      "options": [
+        "三時間です。",
+        "三日です。",
+        "三時十分です。",
+        "三かいです。"
+      ],
+      "answer": 2,
+      "es": "Perdone, ¿qué hora es?",
+      "explain": "Pregunta la hora: 三時十分です. 三時間 es una duración."
+    },
+    {
+      "id": "ja-l26",
+      "part": "聴解 問題4 即時応答",
+      "prompt": "Escucha y elige la respuesta adecuada.",
+      "lines": [
+        {
+          "s": "女",
+          "t": "あしたのパーティーに行きませんか。"
+        }
+      ],
+      "options": [
+        "はい、行きませんでした。",
+        "いいえ、行きました。",
+        "はい、パーティーです。",
+        "いいですね。行きましょう。"
+      ],
+      "answer": 3,
+      "es": "¿Vamos a la fiesta de mañana?",
+      "explain": "Invitación con 〜ませんか → aceptar con いいですね、〜ましょう."
+    },
+    {
+      "id": "ja-l27",
+      "part": "聴解 問題4 即時応答",
+      "prompt": "Escucha y elige la respuesta adecuada.",
+      "lines": [
+        {
+          "s": "男",
+          "t": "てつだってくれて、ありがとうございました。"
+        }
+      ],
+      "options": [
+        "いいえ、どういたしまして。",
+        "ごちそうさまでした。",
+        "はじめまして。",
+        "いってきます。"
+      ],
+      "answer": 0,
+      "es": "Gracias por ayudarme.",
+      "explain": "A un agradecimiento se responde どういたしまして (de nada)."
+    },
+    {
+      "id": "ja-l28",
+      "part": "聴解 問題4 即時応答",
+      "prompt": "Escucha y elige la respuesta adecuada.",
+      "lines": [
+        {
+          "s": "女",
+          "t": "このかばん、だれのですか。"
+        }
+      ],
+      "options": [
+        "わたしにです。",
+        "わたしのです。",
+        "わたしがです。",
+        "わたしをです。"
+      ],
+      "answer": 1,
+      "es": "¿De quién es este bolso?",
+      "explain": "だれの → わたしのです (es mío)."
+    },
+    {
+      "id": "ja-l29",
+      "part": "聴解 問題4 即時応答",
+      "prompt": "Escucha y elige la respuesta adecuada.",
+      "lines": [
+        {
+          "s": "男",
+          "t": "しゅうまつは、どこかへ行きましたか。"
+        }
+      ],
+      "options": [
+        "はい、行きます。",
+        "いいえ、どこへ行きますか。",
+        "はい、京都へ行きました。",
+        "はい、どこへも行きませんでした。"
+      ],
+      "answer": 2,
+      "es": "¿Fuiste a algún sitio el fin de semana?",
+      "explain": "Pregunta en pasado con どこか: はい、京都へ行きました. «はい» con どこへも〜ません es contradictorio."
+    }
+  ]
+}

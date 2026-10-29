@@ -1,23 +1,26 @@
 "use client";
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { Check, Mic, Square, X } from "lucide-react";
 import type { SpeakingExercise } from "@/lib/exercises/types";
-import { recognizeOnce, speechRecognitionAvailable, audioFileFor } from "@/lib/tts";
-import { analyzeAudioUrl, idealContour, normalizeContour, recordAndAnalyze, type PitchPoint } from "@/lib/pitch";
-import { tonesOf } from "@/lib/pinyin/tones";
+import { recognizeOnce, speechRecognitionAvailable } from "@/lib/tts";
+import { normalizeContour, recordAndAnalyze, type PitchPoint } from "@/lib/pitch";
+import { usePack } from "@/lib/languages/provider";
+import { PitchGraph } from "@/components/target/pitch-graph";
 import { useSettings } from "@/lib/settings";
 import { Button } from "@/components/ui/button";
-import { AudioButton, playText, useSpaceToPlay } from "@/components/zh/audio-button";
-import { ChineseText } from "@/components/zh/chinese-text";
+import { AudioButton, playText, useSpaceToPlay } from "@/components/target/audio-button";
+import { ChineseText } from "@/components/target/target-text";
 import { cn } from "@/lib/utils";
 import { ExerciseCard, Hint, type ExerciseProps } from "./exercise-view";
+import { targetLang } from "@/lib/languages/registry";
 
 export function Speaking({ ex, onSubmit, result }: ExerciseProps<SpeakingExercise>) {
   const [state, setState] = useState<"idle" | "recording" | "processing">("idle");
   const [transcript, setTranscript] = useState("");
   const [level, setLevel] = useState(0);
   const [userCurve, setUserCurve] = useState<number[]>([]);
-  const [modelCurve, setModelCurve] = useState<number[]>([]);
+  const pack = usePack();
+  const View = pack.ui.PronunciationView;
   const [error, setError] = useState<string | null>(null);
   const [recordingUrl, setRecordingUrl] = useState<string | null>(null);
   const stopRef = useRef<() => void>(() => undefined);
@@ -25,17 +28,6 @@ export function Speaking({ ex, onSubmit, result }: ExerciseProps<SpeakingExercis
   const recAvailable = typeof window !== "undefined" && speechRecognitionAvailable();
   useSpaceToPlay(ex.zh, state === "idle");
 
-  useEffect(() => {
-    let cancelled = false;
-    void (async () => {
-      const fromFile = await analyzeAudioUrl(audioFileFor(ex.zh));
-      const curve = fromFile && fromFile.some((p) => p.hz > 0) ? normalizeContour(fromFile) : normalizeContour(idealContour(tonesOf(ex.pinyin)));
-      if (!cancelled) setModelCurve(curve);
-    })();
-    return () => {
-      cancelled = true;
-    };
-  }, [ex.zh, ex.pinyin]);
 
   const start = async () => {
     setError(null);
@@ -79,7 +71,7 @@ export function Speaking({ ex, onSubmit, result }: ExerciseProps<SpeakingExercis
       </div>
 
       <div className="mx-auto w-full max-w-md">
-        <PitchGraph model={modelCurve} user={userCurve} />
+        {View ? <View text={ex.zh} reading={ex.pinyin} samples={userCurve.length ? Float32Array.from(userCurve) : undefined} /> : <PitchGraph model={[]} user={userCurve} />}
         <div className="mt-5 flex flex-col items-center gap-3">
           {/* micrófono: botón redondo de tinta; al grabar, anillo que respira (solo transform/opacity) */}
           <div className="relative flex size-24 items-center justify-center">
@@ -108,7 +100,7 @@ export function Speaking({ ex, onSubmit, result }: ExerciseProps<SpeakingExercis
           {transcript ? (
             <p className="text-sm text-ink-soft">
               Reconocido:{" "}
-              <span lang="zh-CN" className="zh-serif text-xl text-ink">
+              <span lang={targetLang()} className="zh-serif text-xl text-ink">
                 {transcript}
               </span>
             </p>
@@ -133,21 +125,3 @@ export function Speaking({ ex, onSubmit, result }: ExerciseProps<SpeakingExercis
   );
 }
 
-/** Gráfica de curva de tono en tinta: modelo (trazo discontinuo de tinta tenue) vs tú (trazo bermellón). */
-export function PitchGraph({ model, user, height = 110 }: { model: number[]; user: number[]; height?: number }) {
-  const w = 320;
-  const all = [...model, ...user];
-  const min = Math.min(-6, ...all);
-  const max = Math.max(6, ...all);
-  const path = (c: number[]) => c.map((v, i) => `${i === 0 ? "M" : "L"} ${(i / Math.max(1, c.length - 1)) * w} ${height - ((v - min) / (max - min)) * height}`).join(" ");
-  return (
-    <svg viewBox={`0 0 ${w} ${height}`} className="h-28 w-full rounded-[var(--radius-card)] border border-line bg-paper-raised shadow-[var(--shadow-paper)]" role="img" aria-label="Curva de tono: modelo frente a tu voz">
-      <line x1="0" x2={w} y1={height / 2} y2={height / 2} stroke="rgb(var(--line))" strokeDasharray="3 3" />
-      {model.length ? <path d={path(model)} fill="none" stroke="rgb(var(--ink-faint))" strokeWidth="2" strokeDasharray="6 4" strokeLinecap="round" strokeLinejoin="round" /> : null}
-      {user.length ? <path d={path(user)} fill="none" stroke="rgb(var(--cinnabar))" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" /> : null}
-      <text x="8" y="15" fontSize="10" fill="rgb(var(--ink-faint))" fontFamily="var(--font-sans)">
-        ╌╌ modelo · ── tú
-      </text>
-    </svg>
-  );
-}

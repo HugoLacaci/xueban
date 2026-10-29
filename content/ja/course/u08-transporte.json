@@ -1,0 +1,212 @@
+{
+  "id": "ja-u08",
+  "order": 9,
+  "title": "Transporte",
+  "zh": "交通",
+  "description": "Moverte por Tokio y Kioto: tren, metro, Suica, de dónde a dónde, cómo llegar y contar a dónde fuiste (y con quién).",
+  "icon": "TrainFront",
+  "level": 1,
+  "lang": "ja",
+  "category": "Transporte",
+  "checkpoint": { "exercises": 15 },
+  "lessons": [
+    {
+      "id": "ja-u08-l1",
+      "title": "Voy a la estación",
+      "zh": "駅へ行きます",
+      "goal": "Decir a dónde vas con へ / に y preguntar qué tren coger.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "駅", "pinyin": "えき", "es": "estación" },
+        { "hanzi": "電車", "pinyin": "でんしゃ", "es": "tren (eléctrico)" },
+        { "hanzi": "地下鉄", "pinyin": "ちかてつ", "es": "metro" },
+        { "hanzi": "バス", "pinyin": "バス", "es": "autobús" },
+        { "hanzi": "切符", "pinyin": "きっぷ", "es": "billete" },
+        { "hanzi": "行く", "pinyin": "いく", "es": "ir" },
+        { "hanzi": "来る", "pinyin": "くる", "es": "venir" },
+        { "hanzi": "帰る", "pinyin": "かえる", "es": "volver (a casa); regresar", "note": "Verbo godan aunque acabe en -eru: 帰ります." }
+      ],
+      "steps": [
+        { "type": "vocab" },
+        {
+          "type": "dialogue",
+          "title": "En la estación de Tokio",
+          "lines": [
+            { "speaker": "ウーゴ", "zh": "すみません、新宿へ行きたいです。どの電車ですか。", "py": "すみません、しんじゅく へ いきたい です。どの でんしゃ です か。", "es": "Perdone, quiero ir a Shinjuku. ¿Qué tren es?" },
+            { "speaker": "駅の人", "zh": "新宿ですね。あのオレンジの電車です。", "py": "しんじゅく です ね。あの オレンジ の でんしゃ です。", "es": "Shinjuku, ¿verdad? Es aquel tren naranja." },
+            { "speaker": "ウーゴ", "zh": "切符はどこで買いますか。", "py": "きっぷ は どこ で かいます か。", "es": "¿Dónde compro el billete?" },
+            { "speaker": "駅の人", "zh": "あそこで買います。Suicaもいいですよ。", "py": "あそこ で かいます。スイカ も いい です よ。", "es": "Se compra allí. La Suica también está bien, ¿eh?" },
+            { "speaker": "ウーゴ", "zh": "じゃあ、Suicaで行きます。ありがとうございます。", "py": "じゃあ、スイカ で いきます。ありがとう ございます。", "es": "Entonces voy con la Suica. Muchas gracias." },
+            { "speaker": "駅の人", "zh": "気をつけて。", "py": "き を つけて。", "es": "Vaya con cuidado." }
+          ],
+          "notes": "駅の人 = «la persona de la estación» (el empleado). Suica (スイカ) es la tarjeta recargable de transporte de Tokio: la pasas por el torniquete y también sirve para pagar en la コンビニ. オレンジ = naranja (color); la línea Chūō (中央線) que va de Tokio a Shinjuku es naranja. 気をつけて = «ten cuidado», despedida habitual (adelanto)."
+        },
+        { "type": "grammar", "id": "he-ni-direction" },
+        { "type": "exercises", "count": 10, "types": ["choose-meaning", "listen-choose", "pinyin-input", "particle", "order-words", "fill-blank", "matching", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ja-u08-l2",
+      "title": "De Tokio a Kioto",
+      "zh": "東京から京都まで",
+      "goal": "Decir el origen y el destino de un trayecto con から〜まで y cuánto se tarda.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "遠い", "pinyin": "とおい", "es": "lejano; lejos" },
+        { "hanzi": "近い", "pinyin": "ちかい", "es": "cercano; cerca" },
+        { "hanzi": "速い", "pinyin": "はやい", "es": "rápido" },
+        { "hanzi": "遅い", "pinyin": "おそい", "es": "lento; tarde" },
+        { "hanzi": "時間", "pinyin": "じかん", "es": "tiempo; horas (duración)", "note": "二時間 = dos horas (duración)." },
+        { "hanzi": "半", "pinyin": "はん", "es": "media; mitad", "note": "一時間半 = hora y media." },
+        { "hanzi": "飛行機", "pinyin": "ひこうき", "es": "avión" },
+        { "hanzi": "車", "pinyin": "くるま", "es": "coche" }
+      ],
+      "steps": [
+        { "type": "vocab" },
+        {
+          "type": "dialogue",
+          "title": "Planes para Kioto",
+          "lines": [
+            { "speaker": "さくら", "zh": "ウーゴさん、明日京都へ行きますか。", "py": "ウーゴ さん、あした きょうと へ いきます か。", "es": "Hugo, ¿mañana vas a Kioto?" },
+            { "speaker": "ウーゴ", "zh": "はい。東京から京都まで新幹線で行きます。", "py": "はい。とうきょう から きょうと まで しんかんせん で いきます。", "es": "Sí. De Tokio a Kioto voy en shinkansen." },
+            { "speaker": "さくら", "zh": "いいですね。新幹線は速いですよ。二時間ぐらいです。", "py": "いい です ね。しんかんせん は はやい です よ。にじかん ぐらい です。", "es": "¡Qué bien! El shinkansen es rápido, ¿eh? Son unas dos horas." },
+            { "speaker": "ウーゴ", "zh": "飛行機より速いですね。京都駅からホテルまでは遠いですか。", "py": "ひこうき より はやい です ね。きょうと えき から ホテル まで は とおい です か。", "es": "Más rápido que el avión, ¿no? ¿Está lejos el hotel desde la estación de Kioto?" },
+            { "speaker": "さくら", "zh": "いいえ、近いです。バスで十分ぐらいです。", "py": "いいえ、ちかい です。バス で じゅっぷん ぐらい です。", "es": "No, está cerca. Son unos diez minutos en autobús." },
+            { "speaker": "ウーゴ", "zh": "よかった。ありがとう。", "py": "よかった。ありがとう。", "es": "¡Menos mal! Gracias." }
+          ],
+          "notes": "新幹線 しんかんせん = tren bala (adelanto, muy útil). ぐらい = «más o menos, unos». ホテル = hotel. より (= más que) lo verás en la unidad del tiempo. よかった = «¡qué bien!, ¡menos mal!»."
+        },
+        { "type": "grammar", "id": "kara-made" },
+        { "type": "exercises", "count": 10, "types": ["choose-meaning", "listen-choose", "particle", "order-words", "build-sentence", "fill-blank", "pinyin-input", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ja-u08-l3",
+      "title": "Sube en Ueno y baja en Asakusa",
+      "zh": "上野で乗って、浅草で降ります",
+      "goal": "Formar la forma -te para encadenar acciones y entender indicaciones de trayecto.",
+      "minutes": 14,
+      "vocab": [
+        { "hanzi": "乗る", "pinyin": "のる", "es": "subir (a un vehículo); montar", "note": "電車に乗る: el vehículo lleva に." },
+        { "hanzi": "降りる", "pinyin": "おりる", "es": "bajar (de un vehículo)", "note": "電車を降りる: aquí se usa を." },
+        { "hanzi": "出る", "pinyin": "でる", "es": "salir" },
+        { "hanzi": "出口", "pinyin": "でぐち", "es": "salida" },
+        { "hanzi": "入口", "pinyin": "いりぐち", "es": "entrada" },
+        { "hanzi": "次", "pinyin": "つぎ", "es": "siguiente; próximo" },
+        { "hanzi": "右", "pinyin": "みぎ", "es": "derecha" },
+        { "hanzi": "左", "pinyin": "ひだり", "es": "izquierda" },
+        { "hanzi": "曲がる", "pinyin": "まがる", "es": "girar; doblar" }
+      ],
+      "steps": [
+        { "type": "vocab" },
+        {
+          "type": "dialogue",
+          "title": "¿Cómo voy a Asakusa?",
+          "lines": [
+            { "speaker": "ウーゴ", "zh": "すみません、浅草へ行きたいです。", "py": "すみません、あさくさ へ いきたい です。", "es": "Perdone, quiero ir a Asakusa." },
+            { "speaker": "女の人", "zh": "上野で地下鉄に乗って、浅草で降りてください。", "py": "うえの で ちかてつ に のって、あさくさ で おりて ください。", "es": "Coja el metro en Ueno y bájese en Asakusa." },
+            { "speaker": "ウーゴ", "zh": "上野で乗って、浅草で降りますね。", "py": "うえの で のって、あさくさ で おります ね。", "es": "Subo en Ueno y bajo en Asakusa, ¿verdad?" },
+            { "speaker": "女の人", "zh": "はい。浅草駅の一番出口を出て、右へ曲がってください。", "py": "はい。あさくさ えき の いちばん でぐち を でて、みぎ へ まがって ください。", "es": "Sí. Salga por la salida 1 de la estación de Asakusa y gire a la derecha." },
+            { "speaker": "ウーゴ", "zh": "一番出口を出て、右ですね。ありがとうございます。", "py": "いちばん でぐち を でて、みぎ です ね。ありがとう ございます。", "es": "Salgo por la salida 1 y a la derecha. Muchas gracias." },
+            { "speaker": "女の人", "zh": "どういたしまして。", "py": "どう いたしまして。", "es": "De nada." }
+          ],
+          "notes": "女の人 = una mujer (desconocida). 一番出口 = salida número 1: en Tokio las salidas del metro están numeradas (A1, 3…). 出口を出る: el lugar del que sales lleva を."
+        },
+        { "type": "grammar", "id": "te-form" },
+        { "type": "grammar", "id": "te-kudasai" },
+        { "type": "exercises", "count": 10, "types": ["conjugation", "choose-meaning", "listen-choose", "particle", "order-words", "fill-blank", "matching", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ja-u08-l4",
+      "title": "Ayer no cogí el metro",
+      "zh": "地下鉄に乗りませんでした",
+      "goal": "Hablar del pasado y negar con 〜ました / 〜ませんでした.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "昨日", "pinyin": "きのう", "es": "ayer" },
+        { "hanzi": "先週", "pinyin": "せんしゅう", "es": "la semana pasada" },
+        { "hanzi": "歩く", "pinyin": "あるく", "es": "andar; caminar" },
+        { "hanzi": "自転車", "pinyin": "じてんしゃ", "es": "bicicleta" },
+        { "hanzi": "タクシー", "pinyin": "タクシー", "es": "taxi" },
+        { "hanzi": "道", "pinyin": "みち", "es": "camino; calle" },
+        { "hanzi": "大変", "pinyin": "たいへん", "es": "duro; difícil; muy", "note": "Adjetivo na: 大変です / 大変でした." },
+        { "hanzi": "少し", "pinyin": "すこし", "es": "un poco" }
+      ],
+      "steps": [
+        { "type": "vocab" },
+        {
+          "type": "dialogue",
+          "title": "¿Qué hiciste ayer?",
+          "lines": [
+            { "speaker": "けん", "zh": "ウーゴさん、昨日はどこへ行きましたか。", "py": "ウーゴ さん、きのう は どこ へ いきました か。", "es": "Hugo, ¿adónde fuiste ayer?" },
+            { "speaker": "ウーゴ", "zh": "浅草へ行きました。", "py": "あさくさ へ いきました。", "es": "Fui a Asakusa." },
+            { "speaker": "けん", "zh": "地下鉄で行きましたか。", "py": "ちかてつ で いきました か。", "es": "¿Fuiste en metro?" },
+            { "speaker": "ウーゴ", "zh": "いいえ、地下鉄には乗りませんでした。ホテルから自転車で行きました。", "py": "いいえ、ちかてつ に は のりませんでした。ホテル から じてんしゃ で いきました。", "es": "No, no cogí el metro. Fui en bici desde el hotel." },
+            { "speaker": "けん", "zh": "へえ、自転車ですか。大変でしたね。", "py": "へえ、じてんしゃ です か。たいへん でした ね。", "es": "¡Anda, en bici! Sería duro, ¿no?" },
+            { "speaker": "ウーゴ", "zh": "少し大変でした。でも、道はきれいでしたよ。帰りはタクシーに乗りました。", "py": "すこし たいへん でした。でも、みち は きれい でした よ。かえり は タクシー に のりました。", "es": "Un poco duro, sí. Pero las calles eran bonitas. A la vuelta cogí un taxi." }
+          ],
+          "notes": "に は: は se añade a に para contrastar («el metro, no lo cogí»). 帰り かえり = la vuelta (de 帰る). でした es el pasado de です. へえ = «¡anda!, ¡vaya!»."
+        },
+        { "type": "grammar", "id": "masu-negative-past" },
+        { "type": "exercises", "count": 10, "types": ["conjugation", "choose-meaning", "listen-choose", "fill-blank", "order-words", "translate-to-es", "pinyin-input", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ja-u08-l5",
+      "title": "Con un amigo a Kioto: lectura y repaso",
+      "zh": "友達と京都へ",
+      "goal": "Decir con quién haces algo usando と y repasar el transporte con una lectura.",
+      "minutes": 15,
+      "vocab": [
+        { "hanzi": "友達", "pinyin": "ともだち", "es": "amigo" },
+        { "hanzi": "一緒に", "pinyin": "いっしょに", "es": "juntos" },
+        { "hanzi": "旅行", "pinyin": "りょこう", "es": "viaje" },
+        { "hanzi": "写真", "pinyin": "しゃしん", "es": "foto" },
+        { "hanzi": "撮る", "pinyin": "とる", "es": "sacar (una foto)" },
+        { "hanzi": "着く", "pinyin": "つく", "es": "llegar", "note": "京都に着く: el destino lleva に." },
+        { "hanzi": "早い", "pinyin": "はやい", "es": "temprano; pronto", "note": "早い (temprano) y 速い (rápido) se leen igual." },
+        { "hanzi": "朝", "pinyin": "あさ", "es": "mañana (parte del día)" }
+      ],
+      "steps": [
+        { "type": "vocab" },
+        {
+          "type": "dialogue",
+          "title": "¿Con quién vas?",
+          "lines": [
+            { "speaker": "さくら", "zh": "ウーゴさん、だれと京都へ行きますか。", "py": "ウーゴ さん、だれ と きょうと へ いきます か。", "es": "Hugo, ¿con quién vas a Kioto?" },
+            { "speaker": "ウーゴ", "zh": "友達のけんさんと一緒に行きます。さくらさんは？", "py": "ともだち の けん さん と いっしょに いきます。さくら さん は？", "es": "Voy con mi amigo Ken. ¿Y tú, Sakura?" },
+            { "speaker": "さくら", "zh": "私は家族と大阪へ行きます。", "py": "わたし は かぞく と おおさか へ いきます。", "es": "Yo voy a Osaka con mi familia." },
+            { "speaker": "ウーゴ", "zh": "私たちは朝七時の新幹線に乗ります。九時に京都に着きます。", "py": "わたしたち は あさ しちじ の しんかんせん に のります。くじ に きょうと に つきます。", "es": "Nosotros cogemos el shinkansen de las siete de la mañana. Llegamos a Kioto a las nueve." },
+            { "speaker": "さくら", "zh": "早いですね！写真をたくさん撮ってください。", "py": "はやい です ね！しゃしん を たくさん とって ください。", "es": "¡Qué pronto! Saca muchas fotos." },
+            { "speaker": "ウーゴ", "zh": "はい、撮ります！", "py": "はい、とります！", "es": "¡Sí, las sacaré!" }
+          ],
+          "notes": "家族 かぞく = familia. 大阪 おおさか = Osaka. たくさん = mucho(s). 七時 se lee しちじ (no なないじ)."
+        },
+        { "type": "grammar", "id": "to-and-with" },
+        {
+          "type": "reading",
+          "title": "Mi viaje a Kioto",
+          "text": "先週の土曜日、友達のけんさんと京都へ旅行に行きました。朝七時に東京駅で新幹線に乗って、九時に京都に着きました。京都駅からお寺までバスで行きました。お寺はとてもきれいでした。写真をたくさん撮りました。帰りはバスに乗りませんでした。駅まで歩きました。少し大変でしたが、楽しかったです。",
+          "es": "El sábado de la semana pasada fui de viaje a Kioto con mi amigo Ken. A las siete de la mañana cogimos el shinkansen en la estación de Tokio y a las nueve llegamos a Kioto. De la estación de Kioto al templo fuimos en autobús. El templo era muy bonito. Saqué muchas fotos. A la vuelta no cogimos el autobús: fuimos andando hasta la estación. Fue un poco duro, pero me lo pasé bien.",
+          "questions": [
+            { "q": "¿Cómo fueron de Tokio a Kioto?", "options": ["En avión", "En shinkansen", "En coche", "En autobús"], "answer": 1, "explain": "東京駅で新幹線に乗って… = cogieron el shinkansen en la estación de Tokio." },
+            { "q": "¿A qué hora llegaron a Kioto?", "options": ["A las siete", "A las ocho", "A las nueve", "A las diez"], "answer": 2, "explain": "九時に京都に着きました。" },
+            { "q": "¿Cómo volvieron del templo a la estación?", "options": ["En autobús", "En taxi", "En bicicleta", "Andando"], "answer": 3, "explain": "帰りはバスに乗りませんでした。駅まで歩きました。" }
+          ]
+        },
+        { "type": "exercises", "count": 12, "types": ["matching", "choose-meaning", "particle", "conjugation", "order-words", "build-sentence", "fill-blank", "dictation", "translate-to-es", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    }
+  ]
+}

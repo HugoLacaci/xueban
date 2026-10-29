@@ -1,36 +1,21 @@
-import articlesJson from "@/content/articles.json";
-import resourcesJson from "@/content/resources.json";
+/** Fachada del Study Hall del idioma activo (artículos y recursos viven en cada paquete). */
+import type { Article, Resource } from "./types";
+import { getActivePack } from "@/lib/languages/registry";
 
-export interface Article {
-  id: string;
-  title: string;
-  zh: string;
-  category: string;
-  minutes: number;
-  summary: string;
-  markdown: string;
-  sources?: { title: string; url: string }[];
+export type { Article, Resource };
+
+export function getArticles(): Article[] {
+  return getActivePack().articles;
 }
 
-export interface Resource {
-  title: string;
-  url: string;
-  kind: "youtube-channel" | "youtube-playlist" | "youtube-video" | "podcast" | "website" | "app";
-  level: string;
-  skills: string[];
-  duration?: string;
-  language: string;
-  why: string;
-  verified: boolean;
-  verifiedTitle?: string;
-  verifiedBy?: string;
+export function getResources(): Resource[] {
+  return getActivePack().resources.filter((r) => r.verified);
 }
-
-export const ARTICLES: Article[] = articlesJson as Article[];
-export const RESOURCES: Resource[] = (resourcesJson as Resource[]).filter((r) => r.verified);
 
 export function articleById(id: string): Article | undefined {
-  return ARTICLES.find((a) => a.id === id);
+  return getActivePack().articles.find((a) => a.id === id);
 }
 
-export const ARTICLE_CATEGORIES = Array.from(new Set(ARTICLES.map((a) => a.category)));
+export function articleCategories(): string[] {
+  return Array.from(new Set(getActivePack().articles.map((a) => a.category)));
+}

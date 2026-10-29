@@ -1,8 +1,21 @@
-# 学伴 Xuébàn — tu compañero para aprender chino
+# 学伴 Xuébàn — chino, japonés y coreano (中文 · 日本語 · 한국어)
 
 Aplicación web **local-first, gratuita y de código abierto** para aprender chino mandarín (simplificado) desde cero hasta el HSK 1 (y más adelante HSK 2–3), pensada para hispanohablantes que estudian en una escuela de idiomas y preparan el examen HSK. Combina curso estructurado, motor de ejercicios con corrección explicada, flashcards con FSRS sincronizadas con Anki, diccionario nivel Pleco, caracteres por componentes, lecturas graduadas, vídeos con subtítulos interactivos y un Study Hall.
 
 Todo funciona en tu navegador (los datos viven en IndexedDB) y se puede instalar como PWA. No hay cuentas ni APIs de pago.
+
+## Multiidioma: 中文 · 日本語 · 한국어
+
+Desde el 29-oct-2026 la misma app enseña **japonés (JLPT N5)** y **coreano (TOPIK I)** con paridad total con el chino: curso con Unidad 0 de escritura (kana / hangul), 14 unidades temáticas, 40 puntos de gramática, conjugación, 20+ tipos de ejercicio, flashcards FSRS + Anki, diccionario, módulo de caracteres con trazos, pronunciación, vídeos con subtítulos interactivos, lecturas graduadas, Study Hall, simulacro oficial y estadísticas. La interfaz está siempre en español.
+
+- **Rutas**: `/zh/…`, `/ja/…`, `/ko/…`. La raíz `/` abre el último idioma; `/?elegir=1` muestra el selector. El panel `/me` resume todos los idiomas. El selector de la cabecera cambia de idioma conservando la sección.
+- **Ayuda de lectura (P)**: pinyin · furigana (+ rōmaji y acento tonal opcionales) · romanización revisada (+ «pronunciación real»: 한국어 → [한구거]). El botón de escritura alternativa muestra 繁 / solo kana / hanja.
+- **Temas**: cada idioma tiene su piel (宣纸与墨 · 和紙と藍 · 한지와 오방색). Guía viva en `/design?lang=zh|ja|ko`.
+- **Datos**: `npm run data:build` genera los tres idiomas (o `-- --lang=ja`). Fuentes, versiones y licencias en `docs/SOURCES.md` y en la página **Créditos y licencias**.
+- **Coreano con español en todo el diccionario (opcional)**: pide una clave gratuita de la API de 한국어기초사전 (krdict.korean.go.kr → Open API) y guárdala en `.env.local` como `KRDICT_API_KEY=…` (nunca en el repositorio); después `npm run data:build -- --lang=ko`.
+- **Anki**: un tipo de nota por idioma. Mazos listos en `C:\CHINA\IDIOMA\Japones_N5_Hugo.apkg` y `Coreano_TOPIK1_Hugo.apkg` (se regeneran con `npm run anki:build -- --lang=ja|ko`); la sincronización por idioma se activa en **Ajustes → Anki**. Guía: `C:\CHINA\IDIOMA\GUIA_ANKI.md`.
+- **Voces en Windows**: Configuración → Hora e idioma → Voz → Agregar voces → Japonés / Coreano.
+- **Arquitectura**: núcleo + paquetes en `lib/languages/{zh,ja,ko}` (carga diferida), documentada en `docs/MULTILANG_PLAN.md`. Paridad comprobada por `tests/unit/parity.test.ts` → `docs/PARITY.md`.
 
 ---
 
@@ -120,8 +133,10 @@ Fuentes (todas OFL, servidas en local): Inter y Fraunces para el latín; Noto Sa
 | `npm run build` / `npm start` | Compilación de producción y servidor |
 | `npm run data:build` | Descarga y procesa CC-CEDICT, HSK, Make Me a Hanzi, trazos, Tatoeba → `public/data/` |
 | `npm run audio:build` | Pregenera MP3 (voz Edge) en `public/audio/` |
-| `npm run videos:fetch -- <url\|id>` | Transcribe un vídeo a `public/videos/` (también `--search "consulta"`, `--check <id>`) |
-| `npm run content:check` | Valida el contenido del curso (JSON, ids de gramática, vocabulario controlado, pinyin) |
+| `npm run videos:fetch -- --lang=zh\|ja\|ko <url\|id>` | Transcribe un vídeo a `public/videos/<lang>/` (también `--search "consulta"`, `--check <id>`) |
+| `npm run content:check -- --lang=zh\|ja\|ko\|all` | Valida el contenido de cada idioma (JSON, ids, gramática, lecturas, vocabulario controlado; en chino también el pinyin) |
+| `npm run anki:build -- --lang=ja\|ko` | Genera los mazos .apkg de japonés y coreano en `C:\CHINA\IDIOMA\` |
+| `npm run screenshots` | Recorrido Playwright en los tres idiomas (escritorio/móvil, claro/oscuro) + auditoría del atributo `lang` |
 | `npm test` | Tests unitarios (Vitest): pinyin y sandhi, segmentación, FSRS, motor de ejercicios, importación, diccionario, escritura a mano, sincronización Anki simulada |
 | `npm run test:e2e` | Tests Playwright: completar lección, añadir palabra, repasar, vídeo con subtítulos, diccionario, popup |
 | `npm run lint` / `npm run typecheck` | ESLint y TypeScript estricto |
@@ -199,5 +214,10 @@ Datos a confirmar externamente: formato y fechas del HSK 1 (2.0 → 3.0) en <htt
 - **Traducción automática de subtítulos**: opcional con tu propia clave (OpenAI/Anthropic) u Ollama local; por defecto se usan los subtítulos en español del vídeo (si existen), Tatoeba y el diccionario.
 - **Reconocimiento de voz**: Web Speech API (Chrome/Edge). En Firefox se puede grabar, comparar la curva de tono y autoevaluar.
 - **Etimologías** (Make Me a Hanzi) y definiciones CC-CEDICT están en inglés cuando no hay español.
+
+- **Japonés**: no existen listas oficiales de vocabulario del JLPT desde 2010; se usan listas comunitarias (elzup, basadas en Jonathan Waller), y la app lo indica. Los niveles de kanji siguen el sistema antiguo de 4 niveles de KANJIDIC2. 65 palabras de la semilla no tienen acento tonal en Kanjium.
+- **Coreano**: KRDict bloquea las descargas automáticas; sin clave de API el diccionario general está en inglés (Wiktionary) y el español se limita a la semilla (861 palabras). El análisis morfológico es propio (Kiwi necesitaría un modelo de 88 MB). Tatoeba tiene pocas frases coreano–español (1 098). Los trazos de jamo son propios.
+- **Vídeos**: 4 vídeos japoneses y 2 coreanos no tienen aún traducción al español (YouTube devolvió 429 al pedir la traducción automática); se completan con `npm run videos:fetch -- --lang=ja --force <id>` más adelante.
+- **Contenido nuevo** de japonés y coreano (curso, gramática, lecturas, artículos, simulacros, semillas) está marcado `reviewed:false` hasta que lo revise un profesor.
 
 Licencias de datos y librerías: página **Créditos y licencias** dentro de la app (`/creditos`).

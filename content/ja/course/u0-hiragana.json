@@ -1,0 +1,371 @@
+{
+  "id": "ja-u0-hiragana",
+  "order": 0,
+  "title": "Hiragana",
+  "zh": "ひらがな",
+  "description": "Los 46 hiragana básicos, las comillas y el círculo (dakuten), las sílabas combinadas, la っ pequeña y las vocales largas, en siete lecciones (una semana).",
+  "icon": "Languages",
+  "level": 0,
+  "lang": "ja",
+  "lessons": [
+    {
+      "id": "ja-u0-hiragana-l1",
+      "title": "Las vocales y la fila K",
+      "zh": "あいうえお・かきくけこ",
+      "goal": "Leer y escribir あいうえお y かきくけこ, y leer tus primeras palabras.",
+      "minutes": 15,
+      "vocab": [
+        { "hanzi": "あい", "pinyin": "あい", "es": "amor" },
+        { "hanzi": "いえ", "pinyin": "いえ", "es": "casa" },
+        { "hanzi": "うえ", "pinyin": "うえ", "es": "arriba; encima" },
+        { "hanzi": "あおい", "pinyin": "あおい", "es": "azul" },
+        { "hanzi": "かお", "pinyin": "かお", "es": "cara" },
+        { "hanzi": "えき", "pinyin": "えき", "es": "estación (de tren)" },
+        { "hanzi": "あき", "pinyin": "あき", "es": "otoño" },
+        { "hanzi": "きく", "pinyin": "きく", "es": "escuchar; preguntar" }
+      ],
+      "steps": [
+        {
+          "type": "explain",
+          "title": "Tres escrituras, y empezamos por la más útil",
+          "markdown": "El japonés se escribe mezclando **tres sistemas**:\n\n| Sistema | Para qué se usa | Ejemplo |\n|---|---|---|\n| **Hiragana** ひらがな | terminaciones de verbos, partículas, palabras japonesas sin kanji | です, ありがとう |\n| **Katakana** カタカナ | palabras extranjeras, nombres de fuera, onomatopeyas | コーヒー, ウーゴ |\n| **Kanji** 漢字 | la raíz con significado de las palabras | 学生 (estudiante) |\n\nCada hiragana es **una sílaba** (no una letra): か = *ka*. Hay 46 básicos, y con ellos puedes escribir *cualquier* palabra japonesa. Por eso son lo primero.\n\n**Buena noticia para un hispanohablante**: las cinco vocales japonesas son casi las del español, en el mismo orden mental *a, i, u, e, o* (sí, el orden japonés es ese). Solo la **う** es distinta: se dice con los labios relajados, sin redondearlos, como una *u* «perezosa»."
+        },
+        {
+          "type": "explain",
+          "title": "Cómo suenan y cómo recordarlos",
+          "markdown": "**Las vocales**\n\n| Kana | Suena | Truco |\n|---|---|---|\n| あ | a | Una *a* cursiva atravesada por una cruz: alguien grita «¡Aaah!» al tropezar con una cruz. |\n| い | i | Dos palitos juntos, como dos *i* sin punto: «ii». |\n| う | u | Una boca torcida con un pelo encima, soplando «uuu» sin redondear los labios. |\n| え | e | Un bailarín con sombrero que gira y te dice: «¡Eh, mírame!». |\n| お | o | Como あ, pero se le escapa una pelotita a la derecha: «¡Oh, la pelota!». |\n\n**La fila K**: *k* + vocal, como en español: **か** ka, **き** ki (como «qui»), **く** ku, **け** ke (como «que»), **こ** ko. Nunca suena como la *c* de «cine».\n\n| Kana | Suena | Truco |\n|---|---|---|\n| か | ka | Un golpe de kárate: la K que grita «¡KA!» con una gota de sudor al lado. |\n| き | ki | Una llave antigua con dos dientes: la llave del **qui**osco. |\n| く | ku | El pico abierto de un cuco: «¡**cu**-cú!». |\n| け | ke | Una botella de **ke**tchup (el palo) y la mano que la aprieta. |\n| こ | ko | Dos **co**lchonetas apiladas una sobre otra. |\n\n**Escritura**: el orden de trazos importa (de arriba abajo, de izquierda a derecha). Traza cada kana 5 veces diciendo su sonido en voz alta."
+        },
+        { "type": "module", "id": "kana-grid", "title": "Escucha las filas あ y か", "params": { "script": "hiragana", "rows": ["a", "ka"] } },
+        { "type": "module", "id": "kana-mnemonics", "title": "Repasa los trucos", "params": { "script": "hiragana", "rows": ["a", "ka"] } },
+        { "type": "module", "id": "kana-writing", "title": "Traza los diez kana", "params": { "chars": ["あ", "い", "う", "え", "お", "か", "き", "く", "け", "こ"] } },
+        {
+          "type": "module",
+          "id": "kana-reading",
+          "title": "Tus primeras palabras",
+          "params": {
+            "words": [
+              { "kana": "あい", "es": "amor" },
+              { "kana": "いえ", "es": "casa" },
+              { "kana": "うえ", "es": "arriba" },
+              { "kana": "あおい", "es": "azul" },
+              { "kana": "かお", "es": "cara" },
+              { "kana": "えき", "es": "estación" },
+              { "kana": "あき", "es": "otoño" },
+              { "kana": "きく", "es": "escuchar" },
+              { "kana": "いく", "es": "ir" },
+              { "kana": "こえ", "es": "voz" }
+            ]
+          }
+        },
+        { "type": "exercises", "count": 8, "types": ["choose-meaning", "listen-choose", "pinyin-input", "matching", "writing"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ja-u0-hiragana-l2",
+      "title": "Las filas S y T",
+      "zh": "さしすせそ・たちつてと",
+      "goal": "Leer y escribir さ〜そ y た〜と, con las tres excepciones し, ち y つ.",
+      "minutes": 15,
+      "vocab": [
+        { "hanzi": "すし", "pinyin": "すし", "es": "sushi" },
+        { "hanzi": "あさ", "pinyin": "あさ", "es": "mañana (parte del día)" },
+        { "hanzi": "かさ", "pinyin": "かさ", "es": "paraguas" },
+        { "hanzi": "した", "pinyin": "した", "es": "abajo; debajo" },
+        { "hanzi": "そと", "pinyin": "そと", "es": "fuera" },
+        { "hanzi": "くつ", "pinyin": "くつ", "es": "zapatos" },
+        { "hanzi": "いす", "pinyin": "いす", "es": "silla" },
+        { "hanzi": "ちかてつ", "pinyin": "ちかてつ", "es": "metro" },
+        { "hanzi": "たかい", "pinyin": "たかい", "es": "alto; caro" }
+      ],
+      "steps": [
+        {
+          "type": "explain",
+          "title": "Cómo suenan y cómo recordarlos",
+          "markdown": "**La fila S** es una *s* española, con una excepción: **し** se dice *shi* (la *sh* del inglés *she*, o la del «¡shhh!» de pedir silencio). Y **す** tiene una *u* tan débil que a menudo casi desaparece: です suena *des*.\n\n| Kana | Suena | Truco |\n|---|---|---|\n| さ | sa | Una **sa**eta (flecha) que se clava y se curva hacia abajo. |\n| し | shi | Un anzuelo de pescar: «¡shhh!, que se espantan los peces». |\n| す | su | Una cuchara removiendo la **su**pa: hace un remolino. |\n| せ | se | Una silla vista de lado: **se**ntarse. |\n| そ | so | Una **so**ga que baja en zigzag. |\n\n**La fila T** tiene dos excepciones: **ち** *chi* (como la *ch* de «chico») y **つ** *tsu* (una *t* y una *s* pegadas, como en «pizza» dicho a la italiana). つ es el sonido nuevo más difícil: practica «ts-ts-tsu».\n\n| Kana | Suena | Truco |\n|---|---|---|\n| た | ta | Si miras bien, ves una *t* y una *a* juntas: «ta». |\n| ち | chi | Un 5 dado la vuelta: el **chi**ste del cinco al revés. |\n| つ | tsu | Una ola de **tsu**nami. |\n| て | te | Un brazo estirado: en japonés «mano» es **te** (手). |\n| と | to | Una espina clavada en un **to**cón de madera. |\n\n**Ojo con さ y ち**: son casi espejos. さ abre hacia la izquierda abajo; ち tiene la barriga a la derecha."
+        },
+        { "type": "module", "id": "kana-grid", "title": "Escucha las filas さ y た", "params": { "script": "hiragana", "rows": ["sa", "ta"] } },
+        { "type": "module", "id": "kana-mnemonics", "title": "Repasa los trucos", "params": { "script": "hiragana", "rows": ["sa", "ta"] } },
+        { "type": "module", "id": "kana-writing", "title": "Traza los diez kana", "params": { "chars": ["さ", "し", "す", "せ", "そ", "た", "ち", "つ", "て", "と"] } },
+        {
+          "type": "module",
+          "id": "kana-reading",
+          "title": "Lee con lo que ya sabes",
+          "params": {
+            "words": [
+              { "kana": "すし", "es": "sushi" },
+              { "kana": "あさ", "es": "mañana (parte del día)" },
+              { "kana": "かさ", "es": "paraguas" },
+              { "kana": "した", "es": "abajo" },
+              { "kana": "そと", "es": "fuera" },
+              { "kana": "くつ", "es": "zapatos" },
+              { "kana": "いす", "es": "silla" },
+              { "kana": "ちかてつ", "es": "metro" },
+              { "kana": "たかい", "es": "alto; caro" },
+              { "kana": "あつい", "es": "hace calor; caliente" }
+            ]
+          }
+        },
+        { "type": "exercises", "count": 8, "types": ["choose-meaning", "listen-choose", "pinyin-input", "matching", "writing"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ja-u0-hiragana-l3",
+      "title": "Las filas N y H",
+      "zh": "なにぬねの・はひふへほ",
+      "goal": "Leer y escribir な〜の y は〜ほ, y saber que は y へ cambian de sonido como partículas.",
+      "minutes": 15,
+      "vocab": [
+        { "hanzi": "ねこ", "pinyin": "ねこ", "es": "gato" },
+        { "hanzi": "いぬ", "pinyin": "いぬ", "es": "perro" },
+        { "hanzi": "はな", "pinyin": "はな", "es": "flor; nariz" },
+        { "hanzi": "ひと", "pinyin": "ひと", "es": "persona" },
+        { "hanzi": "ふね", "pinyin": "ふね", "es": "barco" },
+        { "hanzi": "ほし", "pinyin": "ほし", "es": "estrella" },
+        { "hanzi": "なつ", "pinyin": "なつ", "es": "verano" },
+        { "hanzi": "にく", "pinyin": "にく", "es": "carne" },
+        { "hanzi": "さかな", "pinyin": "さかな", "es": "pescado; pez" }
+      ],
+      "steps": [
+        {
+          "type": "explain",
+          "title": "Cómo suenan y cómo recordarlos",
+          "markdown": "**La fila N** es una *n* española sin sorpresas.\n\n| Kana | Suena | Truco |\n|---|---|---|\n| な | na | Una cruz y un lazo: una monja (la cruz) con una **na**ranja. |\n| に | ni | Un palo y dos rayitas: «dos» en japonés se dice **ni** (二). |\n| ぬ | nu | Fideos enredados en los palillos, con un **nu**do al final. |\n| ね | ne | Un gato (**ne**ko) sentado con la cola enroscada. |\n| の | no | La señal de prohibido: un círculo tachado, «¡**no**!». |\n\n**La fila H** es una *h* aspirada, **suave**, más como la *h* del inglés *hello* que como nuestra *j* rasposa. Excepción: **ふ** *fu* se dice soplando entre los labios (sin tocar los dientes), a medio camino entre *f* y *j* suave.\n\n| Kana | Suena | Truco |\n|---|---|---|\n| は | ha | Una persona riéndose: «**ja ja**», pero suave. |\n| ひ | hi | Una boca sonriente: la risita «**ji ji**». |\n| ふ | fu | Una cara con mofletes soplando una vela: «**fu**uu». |\n| へ | he | Una cuesta: «¡**eh**, qué cuesta!». |\n| ほ | ho | Como は con un piso más: un **ho**tel de dos plantas. |\n\n**Dos trucos de la gramática**: cuando は es la partícula de tema se lee **wa** (わたし**は** = *watashi wa*), y cuando へ es la partícula de dirección se lee **e**. Lo verás en las unidades."
+        },
+        { "type": "module", "id": "kana-grid", "title": "Escucha las filas な y は", "params": { "script": "hiragana", "rows": ["na", "ha"] } },
+        { "type": "module", "id": "kana-mnemonics", "title": "Repasa los trucos", "params": { "script": "hiragana", "rows": ["na", "ha"] } },
+        { "type": "module", "id": "kana-writing", "title": "Traza los diez kana", "params": { "chars": ["な", "に", "ぬ", "ね", "の", "は", "ひ", "ふ", "へ", "ほ"] } },
+        {
+          "type": "module",
+          "id": "kana-reading",
+          "title": "Animales, comida y naturaleza",
+          "params": {
+            "words": [
+              { "kana": "ねこ", "es": "gato" },
+              { "kana": "いぬ", "es": "perro" },
+              { "kana": "はな", "es": "flor; nariz" },
+              { "kana": "ひと", "es": "persona" },
+              { "kana": "ふね", "es": "barco" },
+              { "kana": "ほし", "es": "estrella" },
+              { "kana": "なつ", "es": "verano" },
+              { "kana": "にく", "es": "carne" },
+              { "kana": "さかな", "es": "pescado" },
+              { "kana": "へた", "es": "torpe; que lo hace mal" }
+            ]
+          }
+        },
+        { "type": "exercises", "count": 8, "types": ["choose-meaning", "listen-choose", "pinyin-input", "matching", "writing"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ja-u0-hiragana-l4",
+      "title": "Las filas M e Y",
+      "zh": "まみむめも・やゆよ",
+      "goal": "Leer y escribir ま〜も y や・ゆ・よ.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "みみ", "pinyin": "みみ", "es": "oreja" },
+        { "hanzi": "め", "pinyin": "め", "es": "ojo" },
+        { "hanzi": "むし", "pinyin": "むし", "es": "insecto; bicho" },
+        { "hanzi": "やま", "pinyin": "やま", "es": "montaña" },
+        { "hanzi": "ゆき", "pinyin": "ゆき", "es": "nieve" },
+        { "hanzi": "あめ", "pinyin": "あめ", "es": "lluvia; caramelo" },
+        { "hanzi": "なまえ", "pinyin": "なまえ", "es": "nombre" },
+        { "hanzi": "よむ", "pinyin": "よむ", "es": "leer" },
+        { "hanzi": "やすみ", "pinyin": "やすみ", "es": "descanso; vacaciones; día libre" }
+      ],
+      "steps": [
+        {
+          "type": "explain",
+          "title": "Cómo suenan y cómo recordarlos",
+          "markdown": "**La fila M** es una *m* española.\n\n| Kana | Suena | Truco |\n|---|---|---|\n| ま | ma | Un **má**stil con dos velas cruzadas y un lazo abajo. |\n| み | mi | Una nota musical con rabito: do-re-**mi**. |\n| む | mu | Una vaca de perfil: «**mu**uu». |\n| め | me | Un ojo con pestaña: «ojo» en japonés es **me** (目). Es como ぬ sin el lazo final. |\n| も | mo | Un anzuelo con dos **mo**scas de cebo. |\n\n**La fila Y** solo tiene tres: *ya, yu, yo* (yi y ye no existen hoy). La *y* japonesa es suave, como la *i* de «hierba» o «ya» dicho sin fuerza, nunca como la *y* argentina.\n\n| Kana | Suena | Truco |\n|---|---|---|\n| や | ya | La cabeza de un **ya**k con un cuerno. |\n| ゆ | yu | Un pez visto de frente con una línea: el **yu**go de un buey. |\n| よ | yo | Un **yo**-yó colgando de un dedo. |\n\n**Parejas peligrosas**: ぬ/め (ぬ tiene lazo), ま/も (も no tiene la raya de arriba que cruza)."
+        },
+        { "type": "module", "id": "kana-grid", "title": "Escucha las filas ま y や", "params": { "script": "hiragana", "rows": ["ma", "ya"] } },
+        { "type": "module", "id": "kana-mnemonics", "title": "Repasa los trucos", "params": { "script": "hiragana", "rows": ["ma", "ya"] } },
+        { "type": "module", "id": "kana-writing", "title": "Traza los ocho kana", "params": { "chars": ["ま", "み", "む", "め", "も", "や", "ゆ", "よ"] } },
+        {
+          "type": "module",
+          "id": "kana-reading",
+          "title": "Cuerpo, tiempo y naturaleza",
+          "params": {
+            "words": [
+              { "kana": "みみ", "es": "oreja" },
+              { "kana": "め", "es": "ojo" },
+              { "kana": "むし", "es": "insecto" },
+              { "kana": "やま", "es": "montaña" },
+              { "kana": "ゆき", "es": "nieve" },
+              { "kana": "あめ", "es": "lluvia" },
+              { "kana": "なまえ", "es": "nombre" },
+              { "kana": "よむ", "es": "leer" },
+              { "kana": "やすみ", "es": "descanso; vacaciones" },
+              { "kana": "へや", "es": "habitación" }
+            ]
+          }
+        },
+        { "type": "exercises", "count": 8, "types": ["choose-meaning", "listen-choose", "pinyin-input", "matching", "writing"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ja-u0-hiragana-l5",
+      "title": "Las filas R y W, y la ん",
+      "zh": "らりるれろ・わを・ん",
+      "goal": "Completar los 46 hiragana básicos con ら〜ろ, わ, を y ん.",
+      "minutes": 15,
+      "vocab": [
+        { "hanzi": "さくら", "pinyin": "さくら", "es": "cerezo (en flor)" },
+        { "hanzi": "くるま", "pinyin": "くるま", "es": "coche" },
+        { "hanzi": "はる", "pinyin": "はる", "es": "primavera" },
+        { "hanzi": "ほん", "pinyin": "ほん", "es": "libro" },
+        { "hanzi": "にほん", "pinyin": "にほん", "es": "Japón" },
+        { "hanzi": "わたし", "pinyin": "わたし", "es": "yo" },
+        { "hanzi": "てんき", "pinyin": "てんき", "es": "el tiempo (que hace)" },
+        { "hanzi": "せんせい", "pinyin": "せんせい", "es": "profesor/a" },
+        { "hanzi": "みんな", "pinyin": "みんな", "es": "todos; todo el mundo" },
+        { "hanzi": "かわ", "pinyin": "かわ", "es": "río" }
+      ],
+      "steps": [
+        {
+          "type": "explain",
+          "title": "Cómo suenan y cómo recordarlos",
+          "markdown": "**La fila R**: ¡la tienes regalada! La *r* japonesa es casi nuestra *r* suave de «pe**r**o» o «ca**r**a»: un toque rápido de la lengua. **Nunca** la hagas fuerte como en «perro» o «Roma». A veces suena un poco hacia la *l*; es normal.\n\n| Kana | Suena | Truco |\n|---|---|---|\n| ら | ra | Un **ra**tón de perfil con una oreja arriba. |\n| り | ri | Dos **rí**os que bajan casi paralelos (más largos que い). |\n| る | ru | Como ろ pero con un **ru**lo (bucle) al final. |\n| れ | re | Una persona arrodillada **re**zando, con la pierna estirada. |\n| ろ | ro | Un 3 sin rizo: algo **ro**to. |\n\n**La fila W** hoy solo tiene dos:\n\n| Kana | Suena | Truco |\n|---|---|---|\n| わ | wa | Un **vá**ter de perfil (como れ y ね, pero con una curva grande). |\n| を | o | Una persona cargando un bulto: es la partícula que marca **lo que** llevas o haces (el objeto). Se pronuncia *o*, y casi solo se usa como partícula. |\n\n**La ん** es la única consonante sola: *n*. Suena según lo que venga detrás: *m* antes de m/b/p (さんぽ *sampo*), *ng* nasal al final de palabra (ほん). Cuenta como **una sílaba entera**: に・ほ・ん son tres tiempos.\n\n| Kana | Suena | Truco |\n|---|---|---|\n| ん | n | Una *n* minúscula con un rabito. |\n\nCon esta lección ya conoces los **46 hiragana** básicos."
+        },
+        { "type": "module", "id": "kana-grid", "title": "Escucha las filas ら, わ y ん", "params": { "script": "hiragana", "rows": ["ra", "wa", "n"] } },
+        { "type": "module", "id": "kana-mnemonics", "title": "Repasa los trucos", "params": { "script": "hiragana", "rows": ["ra", "wa", "n"] } },
+        { "type": "module", "id": "kana-writing", "title": "Traza los ocho kana", "params": { "chars": ["ら", "り", "る", "れ", "ろ", "わ", "を", "ん"] } },
+        {
+          "type": "module",
+          "id": "kana-reading",
+          "title": "Ya lees palabras de verdad",
+          "params": {
+            "words": [
+              { "kana": "さくら", "es": "cerezo" },
+              { "kana": "くるま", "es": "coche" },
+              { "kana": "はる", "es": "primavera" },
+              { "kana": "ほん", "es": "libro" },
+              { "kana": "にほん", "es": "Japón" },
+              { "kana": "わたし", "es": "yo" },
+              { "kana": "てんき", "es": "el tiempo (que hace)" },
+              { "kana": "せんせい", "es": "profesor/a" },
+              { "kana": "みんな", "es": "todos" },
+              { "kana": "かわ", "es": "río" }
+            ]
+          }
+        },
+        { "type": "exercises", "count": 8, "types": ["choose-meaning", "listen-choose", "pinyin-input", "matching", "writing"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ja-u0-hiragana-l6",
+      "title": "Comillas y círculo: dakuten y handakuten",
+      "zh": "がぎぐげご・ぱぴぷぺぽ",
+      "goal": "Leer las 25 sílabas con ゛ y ゜ (g, z/j, d, b, p).",
+      "minutes": 15,
+      "vocab": [
+        { "hanzi": "ごはん", "pinyin": "ごはん", "es": "arroz cocido; comida" },
+        { "hanzi": "かぞく", "pinyin": "かぞく", "es": "familia" },
+        { "hanzi": "だいがく", "pinyin": "だいがく", "es": "universidad" },
+        { "hanzi": "ともだち", "pinyin": "ともだち", "es": "amigo/a" },
+        { "hanzi": "かばん", "pinyin": "かばん", "es": "bolso; mochila; cartera" },
+        { "hanzi": "でんわ", "pinyin": "でんわ", "es": "teléfono" },
+        { "hanzi": "えんぴつ", "pinyin": "えんぴつ", "es": "lápiz" },
+        { "hanzi": "さんぽ", "pinyin": "さんぽ", "es": "paseo" },
+        { "hanzi": "ひらがな", "pinyin": "ひらがな", "es": "hiragana" }
+      ],
+      "steps": [
+        {
+          "type": "explain",
+          "title": "Dos marcas que te regalan 25 sílabas",
+          "markdown": "No hay que aprender formas nuevas: solo dos marcas.\n\n- **Dakuten ゛** (dos comillas): la consonante **vibra** en la garganta. Pon la mano en el cuello y di «sss» y luego «zzz»: eso es el dakuten.\n- **Handakuten ゜** (un circulito): solo en la fila H, que pasa a **P**. Truco: el círculo es una pelotita que hace «¡**p**op!».\n\n| Fila base | Con ゛ | Suena |\n|---|---|---|\n| か き く け こ | が ぎ ぐ げ ご | ga, gui, gu, gue, go (siempre *g* de «gato»: ぎ es *gui*, げ es *gue*) |\n| さ し す せ そ | ざ じ ず ぜ ぞ | za, **ji**, zu, ze, zo (la *z* es la *s* sonora del inglés *zoo*; じ es como *yi* fuerte, «dʒi», nunca nuestra *j*) |\n| た ち つ て と | だ ぢ づ で ど | da, ji, zu, de, do |\n| は ひ ふ へ ほ | ば び ぶ べ ぼ | ba, bi, bu, be, bo |\n| は ひ ふ へ ほ | ぱ ぴ ぷ ぺ ぽ | pa, pi, pu, pe, po |\n\n**Trampas para hispanohablantes**:\n- じ no es «ji» de «jirafa»: es casi la *y* de «yo» dicha con fuerza (*dʒi*). Lo mismo pasa con ず: *zu*, con zumbido, no la *z* española de «zapato».\n- ぢ y づ suenan igual que じ y ず y son muy raras: escribe siempre じ y ず salvo en palabras concretas (はなぢ, つづく).\n- En español *b* y *v* suenan igual y se relajan entre vocales; en japonés ば〜ぼ es una *b* clara, con los labios cerrados."
+        },
+        { "type": "module", "id": "dakuten", "title": "Dakuten y handakuten" },
+        { "type": "module", "id": "kana-grid", "title": "Escucha las filas con ゛ y ゜", "params": { "script": "hiragana", "rows": ["ga", "za", "da", "ba", "pa"] } },
+        { "type": "module", "id": "kana-mnemonics", "title": "Repasa la base de cada fila", "params": { "script": "hiragana", "rows": ["ga", "za", "da", "ba", "pa"] } },
+        { "type": "module", "id": "kana-writing", "title": "Traza las marcas", "params": { "chars": ["が", "ぎ", "ぐ", "げ", "ご", "ざ", "じ", "ず", "ぜ", "ぞ", "だ", "で", "ど", "ば", "び", "ぶ", "べ", "ぼ", "ぱ", "ぴ", "ぷ", "ぺ", "ぽ"] } },
+        {
+          "type": "module",
+          "id": "kana-reading",
+          "title": "Palabras del día a día",
+          "params": {
+            "words": [
+              { "kana": "ごはん", "es": "arroz; comida" },
+              { "kana": "かぞく", "es": "familia" },
+              { "kana": "だいがく", "es": "universidad" },
+              { "kana": "ともだち", "es": "amigo/a" },
+              { "kana": "かばん", "es": "bolso; mochila" },
+              { "kana": "でんわ", "es": "teléfono" },
+              { "kana": "えんぴつ", "es": "lápiz" },
+              { "kana": "さんぽ", "es": "paseo" },
+              { "kana": "ひらがな", "es": "hiragana" },
+              { "kana": "ぎんこう", "es": "banco" }
+            ]
+          }
+        },
+        { "type": "exercises", "count": 8, "types": ["choose-meaning", "listen-choose", "pinyin-input", "matching", "writing"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ja-u0-hiragana-l7",
+      "title": "Sílabas combinadas, la っ pequeña y las vocales largas",
+      "zh": "きゃ・きって・おばあさん",
+      "goal": "Leer きゃ/しゃ/ちゃ…, la pausa de っ y las vocales largas, y distinguir pares como おばさん/おばあさん.",
+      "minutes": 15,
+      "vocab": [
+        { "hanzi": "きって", "pinyin": "きって", "es": "sello (de correos)" },
+        { "hanzi": "ざっし", "pinyin": "ざっし", "es": "revista" },
+        { "hanzi": "がっこう", "pinyin": "がっこう", "es": "escuela; colegio" },
+        { "hanzi": "きっぷ", "pinyin": "きっぷ", "es": "billete (de tren)" },
+        { "hanzi": "しゃしん", "pinyin": "しゃしん", "es": "foto" },
+        { "hanzi": "でんしゃ", "pinyin": "でんしゃ", "es": "tren" },
+        { "hanzi": "おちゃ", "pinyin": "おちゃ", "es": "té (verde)" },
+        { "hanzi": "りょこう", "pinyin": "りょこう", "es": "viaje" },
+        { "hanzi": "とうきょう", "pinyin": "とうきょう", "es": "Tokio" },
+        { "hanzi": "おばあさん", "pinyin": "おばあさん", "es": "abuela; señora mayor" }
+      ],
+      "steps": [
+        {
+          "type": "explain",
+          "title": "Tres reglas que cambian el significado",
+          "markdown": "**1. Yōon (sílabas combinadas)**: un kana de la columna *i* (き, し, ち, に, ひ, み, り, ぎ, じ, び, ぴ) + **ゃ, ゅ, ょ pequeñas** = una sola sílaba.\n\n| | ゃ | ゅ | ょ |\n|---|---|---|---|\n| き | きゃ kya | きゅ kyu | きょ kyo |\n| し | しゃ sha | しゅ shu | しょ sho |\n| ち | ちゃ cha | ちゅ chu | ちょ cho |\n| じ | じゃ ja | じゅ ju | じょ jo |\n| り | りゃ rya | りゅ ryu | りょ ryo |\n\nFíjate en el tamaño: **きや** (*ki-ya*, dos sílabas) ≠ **きゃ** (*kya*, una).\n\n**2. La っ pequeña (sokuon)**: no suena; es una **pausa** de un tiempo antes de la consonante siguiente, como si la duplicaras. きって = *kit-te* (sello), きて = *ki-te* (ven). En español no existe: piensa en el italiano *gatto* o en cortar la respiración un instante.\n\n**3. Vocales largas**: se alargan al doble y **cambian la palabra**.\n- あ・い・う・え・お largas: ああ, いい, うう, ええ, おお.\n- Ojo: **えい** suele sonar *ee* (せんせい = *sensee*) y **おう** suena *oo* (とうきょう = *Tookyoo*, ぎんこう = *ginkoo*).\n\n| Corta | Larga |\n|---|---|\n| おばさん *obasan* (tía; señora) | おばあさん *obaasan* (abuela; señora mayor) |\n| おじさん *ojisan* (tío; señor) | おじいさん *ojiisan* (abuelo; señor mayor) |\n| びよういん *biyooin* (peluquería) | びょういん *byooin* (hospital) |\n\nEl hispanohablante tiende a acortar todo: cuenta los tiempos con los dedos (お・ば・あ・さ・ん = 5)."
+        },
+        { "type": "module", "id": "yoon", "title": "Sílabas combinadas (yōon)" },
+        { "type": "module", "id": "sokuon-long", "title": "っ y vocales largas: pares mínimos" },
+        { "type": "module", "id": "kana-grid", "title": "Escucha las combinaciones", "params": { "script": "hiragana", "rows": ["kya", "sha", "cha", "nya", "hya", "mya", "rya", "gya", "ja", "bya", "pya"] } },
+        { "type": "module", "id": "kana-mnemonics", "title": "Repasa los kana de la columna i", "params": { "script": "hiragana", "rows": ["kya", "sha", "cha", "ja", "rya"] } },
+        { "type": "module", "id": "kana-writing", "title": "Traza los kana pequeños", "params": { "chars": ["ゃ", "ゅ", "ょ", "っ", "きゃ", "しゅ", "ちょ", "じゃ", "りょ"] } },
+        {
+          "type": "module",
+          "id": "kana-reading",
+          "title": "Lee contando los tiempos",
+          "params": {
+            "words": [
+              { "kana": "きって", "es": "sello" },
+              { "kana": "ざっし", "es": "revista" },
+              { "kana": "がっこう", "es": "escuela" },
+              { "kana": "きっぷ", "es": "billete de tren" },
+              { "kana": "しゃしん", "es": "foto" },
+              { "kana": "でんしゃ", "es": "tren" },
+              { "kana": "おちゃ", "es": "té" },
+              { "kana": "りょこう", "es": "viaje" },
+              { "kana": "とうきょう", "es": "Tokio" },
+              { "kana": "おばあさん", "es": "abuela" }
+            ]
+          }
+        },
+        { "type": "exercises", "count": 8, "types": ["choose-meaning", "listen-choose", "pinyin-input", "matching", "writing"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    }
+  ]
+}

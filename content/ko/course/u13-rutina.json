@@ -1,0 +1,179 @@
+{
+  "id": "ko-u13",
+  "order": 14,
+  "title": "Rutina diaria",
+  "zh": "하루 일과",
+  "description": "Contar tu día en KAIST de la mañana a la noche: levantarte, clases, comedor, gimnasio, compra y cena, y qué haces los fines de semana.",
+  "icon": "Sun",
+  "level": 1,
+  "lang": "ko",
+  "category": "Verbos básicos",
+  "checkpoint": { "exercises": 15 },
+  "lessons": [
+    {
+      "id": "ko-u13-l1",
+      "title": "Por la mañana",
+      "zh": "아침",
+      "goal": "Contar qué haces por la mañana, en orden, uniendo acciones con -고.",
+      "minutes": 11,
+      "vocab": [
+        { "hanzi": "일어나다", "pinyin": "ireonada", "es": "levantarse; despertarse" },
+        { "hanzi": "세수하다", "pinyin": "sesuhada", "es": "lavarse la cara" },
+        { "hanzi": "샤워하다", "pinyin": "syawohada", "es": "ducharse" },
+        { "hanzi": "아침", "pinyin": "achim", "es": "mañana; desayuno" },
+        { "hanzi": "옷", "pinyin": "ot", "es": "ropa" },
+        { "hanzi": "입다", "pinyin": "ipda", "es": "ponerse, llevar (ropa)" },
+        { "hanzi": "보통", "pinyin": "botong", "es": "normalmente" },
+        { "hanzi": "기숙사", "pinyin": "gisuksa", "es": "residencia de estudiantes" },
+        { "hanzi": "나가다", "pinyin": "nagada", "es": "salir" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "Empieza el día" },
+        {
+          "type": "dialogue",
+          "title": "¿A qué hora te levantas?",
+          "lines": [
+            { "speaker": "지민", "zh": "우고 씨는 보통 몇 시에 일어나요?", "py": "ugo ssineun botong myeot sie ireonayo?", "es": "Hugo, ¿a qué hora te levantas normalmente?" },
+            { "speaker": "우고", "zh": "일곱 시에 일어나요. 그리고 샤워하고 옷을 입어요.", "py": "ilgop sie ireonayo. geurigo syawohago oseul ibeoyo.", "es": "Me levanto a las siete. Luego me ducho y me visto." },
+            { "speaker": "지민", "zh": "아침도 먹어요?", "py": "achimdo meogeoyo?", "es": "¿Y desayunas?" },
+            { "speaker": "우고", "zh": "네, 기숙사 식당에서 아침을 먹고 여덟 시 반에 나가요.", "py": "ne, gisuksa sikdangeseo achimeul meokgo yeodeol si bane nagayo.", "es": "Sí, desayuno en el comedor de la residencia y salgo a las ocho y media." },
+            { "speaker": "지민", "zh": "와, 부지런해요! 저는 보통 아홉 시에 일어나요.", "py": "wa, bujireonhaeyo! jeoneun botong ahop sie ireonayo.", "es": "¡Vaya, qué madrugador! Yo normalmente me levanto a las nueve." },
+            { "speaker": "우고", "zh": "그럼 아침은요?", "py": "geureom achimeunyo?", "es": "¿Y el desayuno?" },
+            { "speaker": "지민", "zh": "아침은 안 먹고 커피만 마셔요.", "py": "achimeun an meokgo keopiman masyeoyo.", "es": "No desayuno; solo tomo un café." }
+          ],
+          "notes": "아침 significa «mañana» y también «desayuno» (아침을 먹다 = desayunar). 부지런하다 = ser diligente, madrugador. -만 = solo (커피만 = solo café). 먹고 suena [먹꼬]; 여덟 se pronuncia [여덜]. Con -고 el orden de las acciones es el orden en que ocurren: 샤워하고 옷을 입어요 = me ducho y (luego) me visto."
+        },
+        { "type": "grammar", "id": "go-connector" },
+        { "type": "exercises", "count": 10, "types": ["choose-meaning", "listen-choose", "conjugation", "order-words", "fill-blank", "pinyin-input", "dictation", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ko-u13-l2",
+      "title": "Clases, comedor y gimnasio",
+      "zh": "아홉 시부터 열두 시까지",
+      "goal": "Decir de qué hora a qué hora haces algo con 부터…까지 y cuánto tiempo dura con 동안.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "부터", "pinyin": "buteo", "es": "desde (tiempo)" },
+        { "hanzi": "까지", "pinyin": "kkaji", "es": "hasta" },
+        { "hanzi": "점심시간", "pinyin": "jeomsimsigan", "es": "hora de comer (mediodía)" },
+        { "hanzi": "학생 식당", "pinyin": "haksaeng sikdang", "es": "comedor universitario" },
+        { "hanzi": "싸다", "pinyin": "ssada", "es": "ser barato" },
+        { "hanzi": "헬스장", "pinyin": "helseujang", "es": "gimnasio" },
+        { "hanzi": "동안", "pinyin": "dongan", "es": "durante: 한 시간 동안 = durante una hora" },
+        { "hanzi": "바쁘다", "pinyin": "bappeuda", "es": "estar ocupado" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "El horario del día" },
+        {
+          "type": "dialogue",
+          "title": "Un día lleno",
+          "lines": [
+            { "speaker": "지민", "zh": "우고 씨, 수업이 몇 시부터 몇 시까지 있어요?", "py": "ugo ssi, sueobi myeot sibuteo myeot sikkaji isseoyo?", "es": "Hugo, ¿de qué hora a qué hora tienes clase?" },
+            { "speaker": "우고", "zh": "아홉 시부터 열두 시까지 있어요.", "py": "ahop sibuteo yeoldu sikkaji isseoyo.", "es": "De nueve a doce." },
+            { "speaker": "지민", "zh": "점심은 어디에서 먹어요?", "py": "jeomsimeun eodieseo meogeoyo?", "es": "¿Dónde comes?" },
+            { "speaker": "우고", "zh": "학생 식당에서 먹어요. 싸고 맛있어요. 그런데 점심시간에는 사람이 많아요.", "py": "haksaeng sikdangeseo meogeoyo. ssago masisseoyo. geureonde jeomsimsiganeneun sarami manayo.", "es": "En el comedor universitario. Es barato y está bueno. Pero a la hora de comer hay mucha gente." },
+            { "speaker": "지민", "zh": "오후에는 뭐 해요?", "py": "ohueneun mwo haeyo?", "es": "¿Y qué haces por la tarde?" },
+            { "speaker": "우고", "zh": "두 시부터 여섯 시까지 연구실에서 일해요. 그리고 저녁에 헬스장에서 한 시간 동안 운동해요.", "py": "du sibuteo yeoseot sikkaji yeongusireseo ilhaeyo. geurigo jeonyeoge helseujangeseo han sigan dongan undonghaeyo.", "es": "De dos a seis trabajo en el laboratorio. Y por la noche hago ejercicio una hora en el gimnasio." },
+            { "speaker": "지민", "zh": "정말 바쁘네요!", "py": "jeongmal bappeuneyo!", "es": "¡Sí que estás ocupado!" }
+          ],
+          "notes": "부터 y 까지 van pegados a la hora: 아홉 시부터 열두 시까지. Para lugares se dice 에서…까지 (서울에서 부산까지). 시 = la hora del reloj (두 시 = las dos) y 시간 = horas de duración (한 시간 = una hora). -네요 expresa sorpresa al darte cuenta de algo: 바쁘네요! = ¡vaya, qué ocupado estás!. 헬스장 viene del inglés health (gimnasio de pesas)."
+        },
+        { "type": "grammar", "id": "buteo-kkaji" },
+        { "type": "exercises", "count": 10, "types": ["choose-meaning", "listen-choose", "particle", "fill-blank", "build-sentence", "matching", "dictation", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ko-u13-l3",
+      "title": "Por la noche",
+      "zh": "저녁에 뭐 해요?",
+      "goal": "Encadenar acciones que dependen una de otra con -아서/어서 (ir y comprar, volver y cocinar) y distinguirlo de -고.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "마트", "pinyin": "mateu", "es": "supermercado" },
+        { "hanzi": "장을 보다", "pinyin": "jangeul boda", "es": "hacer la compra" },
+        { "hanzi": "돌아오다", "pinyin": "doraoda", "es": "volver (aquí)" },
+        { "hanzi": "요리하다", "pinyin": "yorihada", "es": "cocinar" },
+        { "hanzi": "설거지", "pinyin": "seolgeoji", "es": "fregar los platos: 설거지를 하다" },
+        { "hanzi": "빨래", "pinyin": "ppallae", "es": "colada: 빨래를 하다 = poner la lavadora" },
+        { "hanzi": "늦게", "pinyin": "neutge", "es": "tarde" },
+        { "hanzi": "일찍", "pinyin": "iljjik", "es": "temprano, pronto" },
+        { "hanzi": "자다", "pinyin": "jada", "es": "dormir; acostarse" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "Tareas de casa" },
+        {
+          "type": "dialogue",
+          "title": "¿Cocinas tú?",
+          "lines": [
+            { "speaker": "지민", "zh": "우고 씨는 저녁에 보통 뭐 해요?", "py": "ugo ssineun jeonyeoge botong mwo haeyo?", "es": "Hugo, ¿qué haces normalmente por la noche?" },
+            { "speaker": "우고", "zh": "마트에 가서 장을 봐요. 그리고 기숙사에 돌아와서 요리해요.", "py": "mateue gaseo jangeul bwayo. geurigo gisuksae dorawaseo yorihaeyo.", "es": "Voy al súper a hacer la compra. Y luego vuelvo a la residencia y cocino." },
+            { "speaker": "지민", "zh": "직접 요리해요? 대단해요!", "py": "jikjeop yorihaeyo? daedanhaeyo!", "es": "¿Cocinas tú mismo? ¡Qué crack!" },
+            { "speaker": "우고", "zh": "네, 요리하고 설거지도 해요. 가끔 빨래도 해요.", "py": "ne, yorihago seolgeojido haeyo. gakkeum ppallaedo haeyo.", "es": "Sí, cocino y también friego. A veces pongo la lavadora." },
+            { "speaker": "지민", "zh": "몇 시에 자요?", "py": "myeot sie jayo?", "es": "¿A qué hora te acuestas?" },
+            { "speaker": "우고", "zh": "보통 열두 시에 자요. 너무 늦게 자서 아침에 피곤해요.", "py": "botong yeoldu sie jayo. neomu neutge jaseo achime pigonhaeyo.", "es": "Normalmente a las doce. Me acuesto tan tarde que por la mañana estoy cansado." },
+            { "speaker": "지민", "zh": "그럼 오늘은 일찍 자요!", "py": "geureom oneureun iljjik jayo!", "es": "¡Pues hoy acuéstate pronto!" }
+          ],
+          "notes": "마트에 가서 장을 봐요: compras en el sitio al que has ido, por eso -아서 (la segunda acción ocurre allí). Compara: 요리하고 설거지도 해요 (dos acciones independientes, -고). 자서 = como me acuesto (-아서 de causa). 직접 = uno mismo, en persona. 대단해요! = ¡qué impresionante!. 가끔 = a veces. 마트 = supermercado grande (이마트, 홈플러스…)."
+        },
+        { "type": "grammar", "id": "a-seo" },
+        { "type": "exercises", "count": 10, "types": ["choose-meaning", "listen-choose", "conjugation", "fill-blank", "order-words", "translate-to-es", "pinyin-input", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ko-u13-l4",
+      "title": "Lectura y repaso: un día de Hugo",
+      "zh": "우고의 하루",
+      "goal": "Contar tu día completo y tus fines de semana, con condiciones como «si tengo tiempo» (-(으)면).",
+      "minutes": 14,
+      "vocab": [
+        { "hanzi": "항상", "pinyin": "hangsang", "es": "siempre" },
+        { "hanzi": "가끔", "pinyin": "gakkeum", "es": "a veces" },
+        { "hanzi": "늦잠", "pinyin": "neutjam", "es": "dormir hasta tarde: 늦잠을 자다" },
+        { "hanzi": "청소하다", "pinyin": "cheongsohada", "es": "limpiar (la habitación, la casa)" },
+        { "hanzi": "방", "pinyin": "bang", "es": "habitación" },
+        { "hanzi": "카페", "pinyin": "kape", "es": "cafetería" },
+        { "hanzi": "살다", "pinyin": "salda", "es": "vivir (살아요)" },
+        { "hanzi": "생활", "pinyin": "saenghwal", "es": "vida (diaria)" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "Hábitos" },
+        {
+          "type": "dialogue",
+          "title": "¿Qué haces los fines de semana?",
+          "lines": [
+            { "speaker": "김 선생님", "zh": "우고 씨는 주말에 보통 뭐 해요?", "py": "ugo ssineun jumare botong mwo haeyo?", "es": "Hugo, ¿qué sueles hacer los fines de semana?" },
+            { "speaker": "우고", "zh": "토요일에는 항상 늦잠을 자요. 열 시쯤 일어나요.", "py": "toyoireneun hangsang neutjameul jayo. yeol sijjeum ireonayo.", "es": "Los sábados siempre duermo hasta tarde. Me levanto sobre las diez." },
+            { "speaker": "김 선생님", "zh": "그다음에는요?", "py": "geudaeumeneunyo?", "es": "¿Y después?" },
+            { "speaker": "우고", "zh": "방을 청소하고 빨래를 해요. 시간이 있으면 카페에서 공부해요.", "py": "bangeul cheongsohago ppallaereul haeyo. sigani isseumyeon kapeeseo gongbuhaeyo.", "es": "Limpio la habitación y pongo la lavadora. Si tengo tiempo, estudio en una cafetería." },
+            { "speaker": "김 선생님", "zh": "일요일에는요?", "py": "iryoireneunyo?", "es": "¿Y los domingos?" },
+            { "speaker": "우고", "zh": "날씨가 좋으면 친구들하고 등산을 가요. 비가 오면 집에서 쉬어요.", "py": "nalssiga joeumyeon chingudeulhago deungsaneul gayo. biga omyeon jibeseo swieoyo.", "es": "Si hace buen tiempo, voy a la montaña con mis amigos. Si llueve, descanso en casa." },
+            { "speaker": "김 선생님", "zh": "와, 주말에도 바빠요!", "py": "wa, jumaredo bappayo!", "es": "¡Vaya, también estás ocupado los fines de semana!" }
+          ],
+          "notes": "그다음에는요? = ¿y después de eso?. -쯤 = sobre, más o menos. 친구들 = amigos (들 = plural, opcional en coreano). Los coreanos estudian muchísimo en cafeterías: hay incluso una palabra, 카공족 (gente que estudia en el café)."
+        },
+        { "type": "grammar", "id": "myeon" },
+        {
+          "type": "reading",
+          "title": "Un día de Hugo",
+          "text": "저는 카이스트 기숙사에 살아요. 평일에는 보통 일곱 시에 일어나요. 샤워하고 기숙사 식당에서 아침을 먹어요. 아홉 시부터 열두 시까지 한국어 수업이 있어요. 점심은 학생 식당에서 친구들하고 먹어요. 오후에는 연구실에서 일해요. 여섯 시에 일이 끝나면 헬스장에 가요. 저녁에는 마트에 가서 장을 보고 요리해요. 그다음에 숙제를 하고 한국 드라마를 봐요. 보통 열두 시에 자요. 조금 피곤하지만 한국 생활이 정말 재미있어요.",
+          "es": "Vivo en la residencia de KAIST. Entre semana normalmente me levanto a las siete. Me ducho y desayuno en el comedor de la residencia. De nueve a doce tengo clase de coreano. Como con mis amigos en el comedor universitario. Por la tarde trabajo en el laboratorio. Cuando termino de trabajar, a las seis, voy al gimnasio. Por la noche voy al súper a hacer la compra y cocino. Después hago los deberes y veo una serie coreana. Normalmente me acuesto a las doce. Estoy un poco cansado, pero la vida en Corea es muy divertida.",
+          "questions": [
+            { "q": "¿Dónde desayuna Hugo?", "options": ["En su habitación", "En el comedor de la residencia", "En una cafetería", "No desayuna"], "answer": 1, "explain": "기숙사 식당에서 아침을 먹어요." },
+            { "q": "¿Qué hace cuando termina de trabajar a las seis?", "options": ["Va al gimnasio", "Vuelve a clase", "Ve una serie", "Se acuesta"], "answer": 0, "explain": "여섯 시에 일이 끝나면 헬스장에 가요. (평일 = días laborables)" },
+            { "q": "¿A qué hora se acuesta normalmente?", "options": ["A las diez", "A las once", "A las doce", "A la una"], "answer": 2, "explain": "보통 열두 시에 자요." }
+          ]
+        },
+        { "type": "exercises", "count": 12, "types": ["matching", "choose-meaning", "conjugation", "particle", "fill-blank", "order-words", "build-sentence", "dictation", "translate-to-es", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    }
+  ]
+}

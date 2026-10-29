@@ -1,0 +1,236 @@
+{
+  "id": "ja-u04",
+  "order": 5,
+  "title": "La hora y las fechas",
+  "zh": "時間と日付",
+  "description": "Decir la hora, hablar de tu rutina con verbos en 〜ます, los días de la semana, quedar con alguien y hablar del pasado y de fechas.",
+  "icon": "CalendarDays",
+  "level": 1,
+  "lang": "ja",
+  "category": "Tiempo y fechas",
+  "checkpoint": { "exercises": 15 },
+  "lessons": [
+    {
+      "id": "ja-u04-l1",
+      "title": "¿Qué hora es?",
+      "zh": "今何時ですか",
+      "goal": "Decir la hora y los horarios con 〜から〜まで.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "今", "pinyin": "いま", "es": "ahora" },
+        { "hanzi": "〜時", "pinyin": "じ", "es": "… en punto (horas)" },
+        { "hanzi": "〜分", "pinyin": "ふん", "es": "… minutos (ふん / ぷん)" },
+        { "hanzi": "半", "pinyin": "はん", "es": "y media" },
+        { "hanzi": "何時", "pinyin": "なんじ", "es": "¿qué hora?" },
+        { "hanzi": "午前", "pinyin": "ごぜん", "es": "a.m.; por la mañana" },
+        { "hanzi": "午後", "pinyin": "ごご", "es": "p.m.; por la tarde" },
+        { "hanzi": "〜から", "pinyin": "から", "es": "desde" },
+        { "hanzi": "〜まで", "pinyin": "まで", "es": "hasta" },
+        { "hanzi": "授業", "pinyin": "じゅぎょう", "es": "clase (lección)" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "La hora" },
+        {
+          "type": "dialogue",
+          "title": "¡Llegamos tarde!",
+          "lines": [
+            { "speaker": "ウーゴ", "zh": "さくらさん、今 何時ですか。", "py": "さくら さん、いま なんじ です か。", "es": "Sakura, ¿qué hora es?" },
+            { "speaker": "さくら", "zh": "九時半です。", "py": "くじ はん です。", "es": "Son las nueve y media." },
+            { "speaker": "ウーゴ", "zh": "えっ、授業は 九時からですよ！", "py": "えっ、じゅぎょう は くじ から です よ！", "es": "¿Qué? ¡La clase es a las nueve!" },
+            { "speaker": "さくら", "zh": "大丈夫ですよ。今日は 十時からです。", "py": "だいじょうぶ です よ。きょう は じゅうじ から です。", "es": "Tranquilo. Hoy empieza a las diez." },
+            { "speaker": "ウーゴ", "zh": "あ、そうですか。よかった。何時までですか。", "py": "あ、そう です か。よかった。なんじ まで です か。", "es": "Ah, ¿sí? Menos mal. ¿Hasta qué hora es?" },
+            { "speaker": "さくら", "zh": "十二時十五分までです。", "py": "じゅうにじ じゅうごふん まで です。", "es": "Hasta las doce y cuarto." }
+          ],
+          "notes": "大丈夫 (だいじょうぶ) = no pasa nada; tranquilo. よかった = ¡menos mal! (literalmente «estuvo bien»). En los horarios oficiales (trenes, tiendas) se usa a menudo el reloj de 24 horas: 14時 = las dos de la tarde."
+        },
+        { "type": "grammar", "id": "kara-made" },
+        {
+          "type": "explain",
+          "title": "Horas y minutos con sorpresas",
+          "markdown": "**Horas (〜時 じ)**: casi todas regulares, pero ojo:\n\n| 4時 | 7時 | 9時 |\n|---|---|---|\n| **よ**じ | **しち**じ | **く**じ |\n\n**Minutos (〜分)**: se alternan ふん y ぷん.\n\n| 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |\n|---|---|---|---|---|---|---|---|---|---|\n| いっぷん | にふん | さんぷん | よんぷん | ごふん | ろっぷん | ななふん | はっぷん | きゅうふん | じゅっぷん |\n\nTruco: 1, 3, 4, 6, 8, 10 → ぷん; 2, 5, 7, 9 → ふん.\n\n- **半** (はん) = y media: 三時半.\n- No hay «menos cuarto»: las 2:45 son 二時四十五分. También se oye 三時十五分前 (15 minutos antes de las 3).\n- **午前 / 午後** van **delante** de la hora: 午後三時 = las tres de la tarde."
+        },
+        { "type": "exercises", "count": 10, "types": ["choose-meaning", "listen-choose", "pinyin-input", "dictation", "fill-blank", "classifier", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ja-u04-l2",
+      "title": "Mi día a día",
+      "zh": "毎朝七時に起きます",
+      "goal": "Contar tu rutina con verbos en 〜ます / 〜ません y la hora con に.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "毎日", "pinyin": "まいにち", "es": "todos los días" },
+        { "hanzi": "毎朝", "pinyin": "まいあさ", "es": "todas las mañanas" },
+        { "hanzi": "起きます", "pinyin": "おきます", "es": "levantarse; despertarse" },
+        { "hanzi": "寝ます", "pinyin": "ねます", "es": "acostarse; dormir" },
+        { "hanzi": "勉強します", "pinyin": "べんきょうします", "es": "estudiar" },
+        { "hanzi": "働きます", "pinyin": "はたらきます", "es": "trabajar" },
+        { "hanzi": "早い", "pinyin": "はやい", "es": "temprano; pronto" },
+        { "hanzi": "夜", "pinyin": "よる", "es": "noche" },
+        { "hanzi": "〜ごろ", "pinyin": "ごろ", "es": "alrededor de (hora)" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "Verbos de la rutina" },
+        {
+          "type": "dialogue",
+          "title": "¿A qué hora te levantas?",
+          "lines": [
+            { "speaker": "けん", "zh": "ウーゴさんは 毎朝 何時に 起きますか。", "py": "ウーゴ さん は まいあさ なんじ に おきます か。", "es": "Hugo, ¿a qué hora te levantas por la mañana?" },
+            { "speaker": "ウーゴ", "zh": "七時に 起きます。けんさんは？", "py": "しちじ に おきます。けん さん は？", "es": "Me levanto a las siete. ¿Y tú, Ken?" },
+            { "speaker": "けん", "zh": "私は 六時に 起きます。会社は 八時半からです。", "py": "わたし は ろくじ に おきます。かいしゃ は はちじ はん から です。", "es": "Yo me levanto a las seis. En la empresa empiezo a las ocho y media." },
+            { "speaker": "ウーゴ", "zh": "早いですね。夜は 何時に 寝ますか。", "py": "はやい です ね。よる は なんじ に ねます か。", "es": "Qué pronto. ¿Y a qué hora te acuestas?" },
+            { "speaker": "けん", "zh": "十一時ごろ 寝ます。ウーゴさんは？", "py": "じゅういちじ ごろ ねます。ウーゴ さん は？", "es": "Hacia las once. ¿Y tú?" },
+            { "speaker": "ウーゴ", "zh": "十二時ごろです。夜、日本語を 勉強します。", "py": "じゅうにじ ごろ です。よる、にほんご を べんきょうします。", "es": "Hacia las doce. Por la noche estudio japonés." },
+            { "speaker": "けん", "zh": "えらいですね。私は 夜は 勉強しません。", "py": "えらい です ね。わたし は よる は べんきょうしません。", "es": "¡Qué aplicado! Yo por la noche no estudio." }
+          ],
+          "notes": "会社 (かいしゃ) = empresa. 日本語を 勉強します: を marca lo que se estudia (lo verás en la unidad 5). えらい = admirable, «¡muy bien!». Con 毎朝 o 毎日 no se pone に; con una hora concreta, sí: 七時に."
+        },
+        { "type": "grammar", "id": "masu" },
+        { "type": "grammar", "id": "ni-time-place" },
+        {
+          "type": "explain",
+          "title": "El verbo, siempre al final",
+          "markdown": "La frase japonesa termina **siempre** con el verbo (o con です). Lo demás va delante, marcado con partículas:\n\n**けんさんは** (tema) **毎朝** (cuándo) **六時に** (a qué hora) **起きます** (verbo).\n\nLa forma **〜ます** es la cortés que usarás con desconocidos, profesores y en tiendas. Sus formas básicas:\n\n| | Presente / futuro | Negativo |\n|---|---|---|\n| levantarse | 起き**ます** | 起き**ません** |\n| dormir | 寝**ます** | 寝**ません** |\n| estudiar | 勉強し**ます** | 勉強し**ません** |\n\nNo hay futuro aparte: **起きます** = me levanto / me levantaré. El contexto (明日, 毎朝) lo aclara.\n\nY no hay que conjugar por persona: 起きます vale para yo, tú, él, nosotros… El sujeto se deduce o se marca con は."
+        },
+        { "type": "exercises", "count": 12, "types": ["choose-meaning", "listen-choose", "pinyin-input", "conjugation", "particle", "order-words", "fill-blank", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ja-u04-l3",
+      "title": "Los días de la semana",
+      "zh": "日曜日に会いましょう",
+      "goal": "Decir los días de la semana, proponer planes con 〜ませんか y aceptar con 〜ましょう.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "月曜日", "pinyin": "げつようび", "es": "lunes" },
+        { "hanzi": "火曜日", "pinyin": "かようび", "es": "martes" },
+        { "hanzi": "水曜日", "pinyin": "すいようび", "es": "miércoles" },
+        { "hanzi": "木曜日", "pinyin": "もくようび", "es": "jueves" },
+        { "hanzi": "金曜日", "pinyin": "きんようび", "es": "viernes" },
+        { "hanzi": "土曜日", "pinyin": "どようび", "es": "sábado" },
+        { "hanzi": "日曜日", "pinyin": "にちようび", "es": "domingo" },
+        { "hanzi": "何曜日", "pinyin": "なんようび", "es": "¿qué día de la semana?" },
+        { "hanzi": "会います", "pinyin": "あいます", "es": "verse; quedar (con alguien)" },
+        { "hanzi": "映画", "pinyin": "えいが", "es": "película; cine" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "Los siete días" },
+        {
+          "type": "dialogue",
+          "title": "¿Vamos al cine?",
+          "lines": [
+            { "speaker": "さくら", "zh": "ウーゴさん、土曜日に 映画を 見ませんか。", "py": "ウーゴ さん、どようび に えいが を みません か。", "es": "Hugo, ¿por qué no vemos una peli el sábado?" },
+            { "speaker": "ウーゴ", "zh": "いいですね。でも、土曜日は 日本語の 授業です。", "py": "いい です ね。でも、どようび は にほんご の じゅぎょう です。", "es": "¡Buena idea! Pero el sábado tengo clase de japonés." },
+            { "speaker": "さくら", "zh": "そうですか。じゃあ、日曜日は どうですか。", "py": "そう です か。じゃあ、にちようび は どう です か。", "es": "Vaya. Entonces, ¿qué tal el domingo?" },
+            { "speaker": "ウーゴ", "zh": "日曜日は 大丈夫です。何時に 会いましょうか。", "py": "にちようび は だいじょうぶ です。なんじ に あいましょう か。", "es": "El domingo me va bien. ¿A qué hora quedamos?" },
+            { "speaker": "さくら", "zh": "二時は どうですか。", "py": "にじ は どう です か。", "es": "¿Qué tal a las dos?" },
+            { "speaker": "ウーゴ", "zh": "はい。じゃあ、日曜日の 二時に 会いましょう。", "py": "はい。じゃあ、にちようび の にじ に あいましょう。", "es": "Vale. Entonces quedamos el domingo a las dos." }
+          ],
+          "notes": "見ます = ver (映画を 見ます = ver una película). 〜は どうですか = ¿qué tal…? para proponer. 会いましょうか (con か) = ¿quedamos…?, pidiendo la opinión del otro."
+        },
+        { "type": "grammar", "id": "mashou-masenka" },
+        {
+          "type": "explain",
+          "title": "Los días: los planetas y los cinco elementos",
+          "markdown": "Los días de la semana japoneses siguen **el mismo sistema que el español**: el Sol, la Luna y los cinco planetas visibles, que en Asia se nombran con los cinco elementos.\n\n| Día | Kanji | Significado | Español |\n|---|---|---|---|\n| 月曜日 | 月 | luna | **lun**es (Luna) |\n| 火曜日 | 火 | fuego (Marte) | **mar**tes (Marte) |\n| 水曜日 | 水 | agua (Mercurio) | **miér**coles (Mercurio) |\n| 木曜日 | 木 | madera (Júpiter) | **jue**ves (Júpiter) |\n| 金曜日 | 金 | metal, oro (Venus) | **vier**nes (Venus) |\n| 土曜日 | 土 | tierra (Saturno) | sábado (Saturday) |\n| 日曜日 | 日 | sol | domingo (Sunday) |\n\nAsí, si sabes que el martes es de Marte, el planeta rojo, recordarás que 火曜日 es el día del fuego.\n\nLa semana en los calendarios japoneses suele empezar en **domingo**."
+        },
+        { "type": "exercises", "count": 12, "types": ["choose-meaning", "listen-choose", "pinyin-input", "matching", "conjugation", "fill-blank", "order-words", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ja-u04-l4",
+      "title": "Ayer, cumpleaños y fechas",
+      "zh": "誕生日はいつですか",
+      "goal": "Hablar del pasado con 〜ました / 〜ませんでした y decir fechas.",
+      "minutes": 15,
+      "vocab": [
+        { "hanzi": "昨日", "pinyin": "きのう", "es": "ayer" },
+        { "hanzi": "〜月", "pinyin": "がつ", "es": "mes (enero = 一月…)" },
+        { "hanzi": "〜日", "pinyin": "にち", "es": "día del mes" },
+        { "hanzi": "何月", "pinyin": "なんがつ", "es": "¿qué mes?" },
+        { "hanzi": "何日", "pinyin": "なんにち", "es": "¿qué día?" },
+        { "hanzi": "いつ", "pinyin": "いつ", "es": "¿cuándo?" },
+        { "hanzi": "誕生日", "pinyin": "たんじょうび", "es": "cumpleaños" },
+        { "hanzi": "休み", "pinyin": "やすみ", "es": "día libre; descanso; vacaciones" },
+        { "hanzi": "来週", "pinyin": "らいしゅう", "es": "la semana que viene" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "Pasado y calendario" },
+        {
+          "type": "dialogue",
+          "title": "¿Qué hiciste ayer?",
+          "lines": [
+            { "speaker": "けん", "zh": "ウーゴさん、昨日は 何を しましたか。", "py": "ウーゴ さん、きのう は なに を しました か。", "es": "Hugo, ¿qué hiciste ayer?" },
+            { "speaker": "ウーゴ", "zh": "日本語を 勉強しました。けんさんは？", "py": "にほんご を べんきょうしました。けん さん は？", "es": "Estudié japonés. ¿Y tú, Ken?" },
+            { "speaker": "けん", "zh": "昨日は 休みでした。働きませんでした。", "py": "きのう は やすみ でした。はたらきませんでした。", "es": "Ayer tuve el día libre. No trabajé." },
+            { "speaker": "ウーゴ", "zh": "いいですね。ところで、さくらさんの 誕生日は いつですか。", "py": "いい です ね。ところで、さくら さん の たんじょうび は いつ です か。", "es": "Qué bien. Por cierto, ¿cuándo es el cumpleaños de Sakura?" },
+            { "speaker": "けん", "zh": "十月二十日ですよ。来週の 月曜日です。", "py": "じゅうがつ はつか です よ。らいしゅう の げつようび です。", "es": "Es el 20 de octubre. El lunes de la semana que viene." },
+            { "speaker": "ウーゴ", "zh": "えっ、来週ですか！じゃあ、パーティーを しましょう。", "py": "えっ、らいしゅう です か！じゃあ、パーティー を しましょう。", "es": "¿Qué? ¿La semana que viene? ¡Pues hagamos una fiesta!" }
+          ],
+          "notes": "します = hacer; 何を しましたか = ¿qué hiciste? ところで = por cierto. 休みでした es el pasado de 休みです (でした = era/fue). 二十日 se lee はつか: es una de las fechas irregulares."
+        },
+        { "type": "grammar", "id": "masu-negative-past" },
+        {
+          "type": "explain",
+          "title": "Fechas: meses fáciles, días traicioneros",
+          "markdown": "**Meses**: número + 月 (がつ). Ojo con 4月 **し**がつ, 7月 **しち**がつ, 9月 **く**がつ.\n\n**Días del mes**: del 1 al 10 usan la serie japonesa antigua, y hay algunas sorpresas más:\n\n| 1 | 2 | 3 | 4 | 5 |\n|---|---|---|---|---|\n| **ついたち** | ふつか | みっか | よっか | いつか |\n| **6** | **7** | **8** | **9** | **10** |\n| むいか | なのか | ようか | ここのか | とおか |\n\nDel 11 en adelante, número + にち (じゅういちにち…), salvo **14 じゅうよっか**, **20 はつか** y **24 にじゅうよっか**.\n\n**Orden**: de lo grande a lo pequeño, al revés que en español: 2026年10月20日 = 20 de octubre de 2026.\n\n**El pasado cortés**: 〜ました (afirmativo) y 〜ませんでした (negativo); para nombres y adjetivos -な, でした: 休みでした."
+        },
+        { "type": "exercises", "count": 12, "types": ["choose-meaning", "listen-choose", "pinyin-input", "conjugation", "dictation", "fill-blank", "translate-to-es", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ja-u04-l5",
+      "title": "Lectura y repaso de la unidad",
+      "zh": "ふくしゅう",
+      "goal": "Entender un horario de examen y leer la semana de Hugo.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "テスト", "pinyin": "テスト", "es": "examen; prueba" },
+        { "hanzi": "毎週", "pinyin": "まいしゅう", "es": "todas las semanas" },
+        { "hanzi": "今週", "pinyin": "こんしゅう", "es": "esta semana" },
+        { "hanzi": "来月", "pinyin": "らいげつ", "es": "el mes que viene" },
+        { "hanzi": "時間", "pinyin": "じかん", "es": "tiempo; hora (duración)" },
+        { "hanzi": "朝", "pinyin": "あさ", "es": "mañana (parte del día)" },
+        { "hanzi": "あります", "pinyin": "あります", "es": "hay; tener (cosas, eventos)" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "Para organizar la semana" },
+        {
+          "type": "dialogue",
+          "title": "La fecha del examen",
+          "lines": [
+            { "speaker": "田中先生", "zh": "みなさん、来週の 水曜日に テストが あります。", "py": "みなさん、らいしゅう の すいようび に テスト が あります。", "es": "Atención todos: el miércoles que viene hay examen." },
+            { "speaker": "ウーゴ", "zh": "先生、テストは 何時からですか。", "py": "せんせい、テスト は なんじ から です か。", "es": "Profesora, ¿a qué hora empieza el examen?" },
+            { "speaker": "田中先生", "zh": "十時から 十一時半までです。", "py": "じゅうじ から じゅういちじ はん まで です。", "es": "De diez a once y media." },
+            { "speaker": "ウーゴ", "zh": "教室は 三番ですか。", "py": "きょうしつ は さんばん です か。", "es": "¿Es en el aula tres?" },
+            { "speaker": "田中先生", "zh": "いいえ、五番です。がんばってください。", "py": "いいえ、ごばん です。がんばって ください。", "es": "No, en la cinco. ¡Ánimo!" },
+            { "speaker": "ウーゴ", "zh": "はい、がんばります。", "py": "はい、がんばります。", "es": "Sí, me esforzaré." }
+          ],
+          "notes": "テストが あります = hay examen: あります se usa para cosas y acontecimientos (います, para seres vivos). がんばってください / がんばります: «¡ánimo!» / «me esforzaré», frases que oirás constantemente."
+        },
+        {
+          "type": "reading",
+          "title": "La semana de Hugo",
+          "text": "私は 毎週 月曜日と 水曜日と 金曜日に 日本語の 授業が あります。授業は 午後六時から 八時までです。火曜日と 木曜日は 大学で 勉強します。土曜日は 休みです。土曜日の 朝は 十時ごろ 起きます。日曜日に さくらさんと 会います。来月の 十日は 私の 誕生日です。",
+          "es": "Tengo clase de japonés todas las semanas los lunes, miércoles y viernes. La clase es de seis a ocho de la tarde. Los martes y jueves estudio en la universidad. Los sábados libro. Los sábados por la mañana me levanto hacia las diez. El domingo quedo con Sakura. El día diez del mes que viene es mi cumpleaños.",
+          "questions": [
+            { "q": "¿Qué días tiene Hugo clase de japonés?", "options": ["Martes y jueves", "Lunes, miércoles y viernes", "Sábados y domingos", "Todos los días"], "answer": 1, "explain": "月曜日と 水曜日と 金曜日に 日本語の 授業が あります。" },
+            { "q": "¿A qué hora termina la clase?", "options": ["A las seis", "A las diez", "A las ocho", "A las ocho y media"], "answer": 2, "explain": "午後六時から 八時まで。" },
+            { "q": "¿Cuándo es el cumpleaños de Hugo?", "options": ["El domingo", "El día 10 de este mes", "El día 10 del mes que viene", "El sábado que viene"], "answer": 2, "explain": "来月の 十日 (とおか) = el día diez del mes que viene." }
+          ]
+        },
+        { "type": "exercises", "count": 12, "types": ["matching", "choose-meaning", "listen-choose", "conjugation", "particle", "dictation", "fill-blank", "translate-to-es", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    }
+  ]
+}

@@ -1,5 +1,6 @@
 import type { Skill } from "@/lib/db/schema";
-import type { Tone } from "@/lib/pinyin/tones";
+/** Tono (zh) o índice de patrón de prosodia (ja: 1–4, ko: 1–3) */
+export type Tone = 1 | 2 | 3 | 4 | 5;
 
 export type ExerciseType =
   | "choose-meaning"
@@ -21,7 +22,9 @@ export type ExerciseType =
   | "speaking"
   | "component"
   | "build-character"
-  | "classifier";
+  | "classifier"
+  | "conjugation"
+  | "particle";
 
 export const EXERCISE_TYPES: ExerciseType[] = [
   "choose-meaning",
@@ -44,7 +47,12 @@ export const EXERCISE_TYPES: ExerciseType[] = [
   "component",
   "build-character",
   "classifier",
+  "conjugation",
+  "particle",
 ];
+
+/** Los 20 tipos comunes a los tres idiomas (paridad). */
+export const COMMON_EXERCISE_TYPES: ExerciseType[] = EXERCISE_TYPES.filter((t) => t !== "conjugation" && t !== "particle");
 
 export const EXERCISE_LABELS: Record<ExerciseType, string> = {
   "choose-meaning": "Elegir significado",
@@ -67,6 +75,8 @@ export const EXERCISE_LABELS: Record<ExerciseType, string> = {
   component: "Componentes",
   "build-character": "Construir carácter",
   classifier: "Clasificadores",
+  conjugation: "Conjugación",
+  particle: "Partículas",
 };
 
 export interface Option {
@@ -106,6 +116,10 @@ export interface ToneChoiceExercise extends Base {
   syllables: string[]; // pinyin sin tono por sílaba
   answer: Tone[];
   audio: string;
+  /** Opciones de prosodia propias del idioma (ja: grave/agudo por mora; ko: lisa/aspirada/tensa). Sin ellas: los 5 tonos del chino. */
+  choices?: { value: Tone; label: string; short: string }[];
+  /** Nombre de cada unidad («sílaba», «mora», «consonante inicial») */
+  unitName?: string;
 }
 
 export interface TilesExercise extends Base {
@@ -119,7 +133,7 @@ export interface TilesExercise extends Base {
 }
 
 export interface FillBlankExercise extends Base {
-  type: "fill-blank";
+  type: "fill-blank" | "particle";
   zh: string; // con ＿＿ como hueco
   answer: string;
   options?: string[]; // banco de palabras (incluye la respuesta) o escritura libre
@@ -170,6 +184,19 @@ export interface SpeakingExercise extends Base {
   mode: "shadow" | "recognize";
 }
 
+export interface ConjugationExercise extends Base {
+  type: "conjugation";
+  zh: string; // forma de diccionario
+  pinyin: string;
+  meaning: string;
+  form: string; // nombre de la forma en español
+  formNative: string; // ます形, 아요체…
+  answer: string;
+  alternatives?: string[];
+  cls?: string; // clase de la palabra (godan, ichimdan, ㅂ불규칙…)
+  hint?: string;
+}
+
 export interface BuildCharacterExercise extends Base {
   type: "build-character";
   hanzi: string;
@@ -191,7 +218,8 @@ export type Exercise =
   | MatchingExercise
   | WritingExercise
   | SpeakingExercise
-  | BuildCharacterExercise;
+  | BuildCharacterExercise
+  | ConjugationExercise;
 
 /** Respuesta del usuario según el tipo. */
 export type Response =

@@ -1,0 +1,217 @@
+{
+  "id": "ko-u07",
+  "order": 8,
+  "title": "Lugares y direcciones",
+  "zh": "장소와 길 찾기",
+  "description": "Decir adónde vas, preguntar dónde está algo, entender indicaciones por la calle y quedar con alguien en un sitio.",
+  "icon": "MapPin",
+  "level": 1,
+  "lang": "ko",
+  "category": "Lugares",
+  "checkpoint": { "exercises": 15 },
+  "lessons": [
+    {
+      "id": "ko-u07-l1",
+      "title": "¿Adónde vas?",
+      "zh": "어디 가요?",
+      "goal": "Nombrar lugares de la ciudad y decir adónde vas con 에 가다 / 오다.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "학교", "pinyin": "hakgyo", "es": "escuela; colegio" },
+        { "hanzi": "도서관", "pinyin": "doseogwan", "es": "biblioteca" },
+        { "hanzi": "은행", "pinyin": "eunhaeng", "es": "banco" },
+        { "hanzi": "병원", "pinyin": "byeongwon", "es": "hospital; clínica" },
+        { "hanzi": "카페", "pinyin": "kape", "es": "cafetería" },
+        { "hanzi": "우체국", "pinyin": "ucheguk", "es": "oficina de correos" },
+        { "hanzi": "가다", "pinyin": "gada", "es": "ir" },
+        { "hanzi": "오다", "pinyin": "oda", "es": "venir" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "Lugares de la ciudad" },
+        {
+          "type": "dialogue",
+          "title": "Por la calle un domingo",
+          "lines": [
+            { "speaker": "지민", "zh": "우고 씨, 어디 가요?", "py": "Ugo ssi, eodi gayo?", "es": "Hugo, ¿adónde vas?" },
+            { "speaker": "우고", "zh": "도서관에 가요. 지민 씨는요?", "py": "Doseogwane gayo. Jimin ssineunyo?", "es": "Voy a la biblioteca. ¿Y tú?" },
+            { "speaker": "지민", "zh": "저는 은행에 가요.", "py": "Jeoneun eunhaenge gayo.", "es": "Yo voy al banco." },
+            { "speaker": "우고", "zh": "은행이요? 오늘 일요일이에요!", "py": "Eunhaengiyo? Oneul iryoirieyo!", "es": "¿Al banco? ¡Hoy es domingo!" },
+            { "speaker": "지민", "zh": "아, 맞아요! 그럼 저도 도서관에 가요.", "py": "A, majayo! Geureom jeodo doseogwane gayo.", "es": "¡Ay, es verdad! Entonces yo también voy a la biblioteca." },
+            { "speaker": "우고", "zh": "좋아요. 같이 가요!", "py": "Joayo. Gachi gayo!", "es": "Genial. ¡Vamos juntos!" }
+          ],
+          "notes": "어디 가요? es la forma coloquial de 어디에 가요? (en el habla se cae el 에). Entre conocidos es casi un saludo, como nuestro «¿dónde vas?»: no esperan una respuesta detallada. Los bancos coreanos cierran el fin de semana; para sacar dinero hay cajeros en los 편의점."
+        },
+        { "type": "grammar", "id": "e-gada-oda" },
+        { "type": "exercises", "count": 10, "types": ["choose-meaning", "listen-choose", "particle", "fill-blank", "matching", "order-words", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ko-u07-l2",
+      "title": "¿Dónde está el baño?",
+      "zh": "화장실이 어디에 있어요?",
+      "goal": "Preguntar dónde está algo y situarlo con 앞, 뒤, 옆, 위, 아래, 안 + 에 있어요.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "화장실", "pinyin": "hwajangsil", "es": "baño; aseo" },
+        { "hanzi": "앞", "pinyin": "ap", "es": "delante" },
+        { "hanzi": "뒤", "pinyin": "dwi", "es": "detrás" },
+        { "hanzi": "옆", "pinyin": "yeop", "es": "al lado" },
+        { "hanzi": "위", "pinyin": "wi", "es": "encima; arriba" },
+        { "hanzi": "아래", "pinyin": "arae", "es": "debajo; abajo" },
+        { "hanzi": "안", "pinyin": "an", "es": "dentro" },
+        { "hanzi": "층", "pinyin": "cheung", "es": "piso; planta" },
+        { "hanzi": "저기", "pinyin": "jeogi", "es": "allí" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "Palabras de posición" },
+        {
+          "type": "dialogue",
+          "title": "En un edificio de oficinas",
+          "lines": [
+            { "speaker": "우고", "zh": "실례합니다. 화장실이 어디에 있어요?", "py": "Sillyehamnida. Hwajangsiri eodie isseoyo?", "es": "Perdone. ¿Dónde está el baño?" },
+            { "speaker": "직원", "zh": "일 층에는 없어요. 삼 층에 있어요.", "py": "Il cheungeneun eopseoyo. Sam cheunge isseoyo.", "es": "En la planta baja no hay. Está en el tercer piso." },
+            { "speaker": "우고", "zh": "삼 층이요? 엘리베이터는 어디에 있어요?", "py": "Sam cheungiyo? Ellibeiteoneun eodie isseoyo?", "es": "¿En el tercero? ¿Y el ascensor dónde está?" },
+            { "speaker": "직원", "zh": "저기 카페 옆에 있어요.", "py": "Jeogi kape yeope isseoyo.", "es": "Allí, al lado de la cafetería." },
+            { "speaker": "우고", "zh": "카페 옆이요? 감사합니다!", "py": "Kape yeopiyo? Gamsahamnida!", "es": "¿Al lado de la cafetería? ¡Gracias!" },
+            { "speaker": "직원", "zh": "화장실은 엘리베이터 앞에 있어요.", "py": "Hwajangsireun ellibeiteo ape isseoyo.", "es": "El baño está delante del ascensor." }
+          ],
+          "notes": "엘리베이터 = ascensor (préstamo del inglés). Ojo con los pisos: en Corea **1층 es la planta baja** (como en EE. UU.), así que 삼 층 es nuestro «segundo». Los pisos se cuentan con números sino-coreanos: 일 층, 이 층, 삼 층. Los sótanos: 지하 1층 (B1)."
+        },
+        {
+          "type": "explain",
+          "title": "El orden al revés: «la cafetería, al lado»",
+          "markdown": "En español decimos **«al lado de la cafetería»**; en coreano el orden se invierte: **카페 옆에** («cafetería — lado — en»). La fórmula es:\n\n> **Lugar de referencia + posición + 에 있어요**\n\n| Español | Coreano |\n|---|---|\n| delante del ascensor | 엘리베이터 **앞에** |\n| detrás de la escuela | 학교 **뒤에** |\n| al lado del banco | 은행 **옆에** |\n| encima de la mesa | 책상 **위에** |\n| debajo de la silla | 의자 **아래에** |\n| dentro de la mochila | 가방 **안에** |\n\nTruco: piensa que el coreano va «de lo grande a lo pequeño», igual que en las fechas y las direcciones postales: primero el sitio que ya conoces, luego el punto exacto. Y **에** con 있어요 marca dónde está algo (no dónde ocurre una acción: eso es 에서)."
+        },
+        { "type": "grammar", "id": "e-place-time" },
+        { "type": "exercises", "count": 12, "types": ["particle", "choose-meaning", "fill-blank", "build-sentence", "order-words", "listen-choose", "translate-to-es", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ko-u07-l3",
+      "title": "¿Cómo llego?",
+      "zh": "어떻게 가요?",
+      "goal": "Entender y dar indicaciones sencillas con (으)로 (dirección) y -(으)세요.",
+      "minutes": 15,
+      "vocab": [
+        { "hanzi": "오른쪽", "pinyin": "oreunjjok", "es": "derecha" },
+        { "hanzi": "왼쪽", "pinyin": "oenjjok", "es": "izquierda" },
+        { "hanzi": "쭉", "pinyin": "jjuk", "es": "todo recto; seguido" },
+        { "hanzi": "길", "pinyin": "gil", "es": "calle; camino" },
+        { "hanzi": "사거리", "pinyin": "sageori", "es": "cruce (de cuatro calles)" },
+        { "hanzi": "지하철역", "pinyin": "jihacheollyeok", "es": "estación de metro" },
+        { "hanzi": "멀다", "pinyin": "meolda", "es": "estar lejos" },
+        { "hanzi": "가깝다", "pinyin": "gakkapda", "es": "estar cerca" },
+        { "hanzi": "걸어서", "pinyin": "georeoseo", "es": "a pie; andando" }
+      ],
+      "steps": [
+        { "type": "vocab" },
+        {
+          "type": "dialogue",
+          "title": "Buscando el metro",
+          "lines": [
+            { "speaker": "우고", "zh": "실례합니다. 지하철역이 어디에 있어요?", "py": "Sillyehamnida. Jihacheollyeogi eodie isseoyo?", "es": "Perdone. ¿Dónde está la estación de metro?" },
+            { "speaker": "아주머니", "zh": "이 길로 쭉 가세요.", "py": "I gillo jjuk gaseyo.", "es": "Siga todo recto por esta calle." },
+            { "speaker": "우고", "zh": "쭉이요?", "py": "Jjugiyo?", "es": "¿Todo recto?" },
+            { "speaker": "아주머니", "zh": "네. 사거리에서 오른쪽으로 가세요.", "py": "Ne. Sageorieseo oreunjjogeuro gaseyo.", "es": "Sí. En el cruce, gire a la derecha." },
+            { "speaker": "우고", "zh": "오른쪽으로요? 멀어요?", "py": "Oreunjjogeuroyo? Meoreoyo?", "es": "¿A la derecha? ¿Está lejos?" },
+            { "speaker": "아주머니", "zh": "아니요, 안 멀어요. 걸어서 오 분이에요.", "py": "Aniyo, an meoreoyo. Georeoseo o bunieyo.", "es": "No, no está lejos. Son cinco minutos andando." },
+            { "speaker": "우고", "zh": "감사합니다!", "py": "Gamsahamnida!", "es": "¡Muchas gracias!" }
+          ],
+          "notes": "길로: tras ㄹ se usa 로 (no 으로): 길로, 지하철로. 멀다 → 멀어요; 가깝다 → 가까워요 (irregular en ㅂ, como 맵다). Repetir la última palabra con -요 (쭉이요? 오른쪽으로요?) es la forma natural de confirmar que has entendido. En la práctica, los coreanos usan mucho apps de mapas locales (Naver Map, KakaoMap), que funcionan mejor en Corea que Google Maps."
+        },
+        { "type": "grammar", "id": "eu-ro" },
+        { "type": "exercises", "count": 12, "types": ["particle", "listen-choose", "choose-meaning", "conjugation", "fill-blank", "order-words", "translate-to-es", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ko-u07-l4",
+      "title": "¿Vamos juntos?",
+      "zh": "같이 갈까요?",
+      "goal": "Proponer planes y quedar en un sitio con -(으)ㄹ까요?.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "공원", "pinyin": "gongwon", "es": "parque" },
+        { "hanzi": "박물관", "pinyin": "bangmulgwan", "es": "museo" },
+        { "hanzi": "영화관", "pinyin": "yeonghwagwan", "es": "cine" },
+        { "hanzi": "만나다", "pinyin": "mannada", "es": "quedar; encontrarse con" },
+        { "hanzi": "근처", "pinyin": "geuncheo", "es": "cerca; alrededores" },
+        { "hanzi": "구경하다", "pinyin": "gugyeonghada", "es": "visitar; ver; curiosear" },
+        { "hanzi": "역", "pinyin": "yeok", "es": "estación" },
+        { "hanzi": "왜", "pinyin": "wae", "es": "por qué" }
+      ],
+      "steps": [
+        { "type": "vocab" },
+        {
+          "type": "dialogue",
+          "title": "Un plan para el sábado",
+          "lines": [
+            { "speaker": "민수", "zh": "우고 씨, 토요일에 시간 있어요?", "py": "Ugo ssi, toyoire sigan isseoyo?", "es": "Hugo, ¿tienes tiempo el sábado?" },
+            { "speaker": "우고", "zh": "네, 있어요. 왜요?", "py": "Ne, isseoyo. Waeyo?", "es": "Sí. ¿Por qué?" },
+            { "speaker": "민수", "zh": "같이 경복궁에 갈까요?", "py": "Gachi Gyeongbokgunge galkkayo?", "es": "¿Vamos juntos al palacio Gyeongbokgung?" },
+            { "speaker": "우고", "zh": "좋아요! 어디에서 만날까요?", "py": "Joayo! Eodieseo mannalkkayo?", "es": "¡Vale! ¿Dónde quedamos?" },
+            { "speaker": "민수", "zh": "경복궁역 앞에서 만나요.", "py": "Gyeongbokgungyeok apeseo mannayo.", "es": "Quedamos delante de la estación de Gyeongbokgung." },
+            { "speaker": "우고", "zh": "네. 몇 시에 만날까요?", "py": "Ne. Myeot sie mannalkkayo?", "es": "Vale. ¿A qué hora quedamos?" },
+            { "speaker": "민수", "zh": "열 시 어때요? 그럼 토요일에 봐요!", "py": "Yeol si eottaeyo? Geureom toyoire bwayo!", "es": "¿Qué tal a las diez? ¡Pues nos vemos el sábado!" }
+          ],
+          "notes": "경복궁 es el palacio real principal de la dinastía Joseon, en el centro de Seúl. Si vas vestido con 한복 (traje tradicional), la entrada a los palacios es gratuita. 만나다 = quedar **con** alguien: en coreano se dice 친구를 만나요 (con 을/를), no «con». 앞에서: aquí 에서 porque es el lugar donde ocurre la acción (quedar)."
+        },
+        { "type": "grammar", "id": "eul-kkayo" },
+        { "type": "exercises", "count": 12, "types": ["conjugation", "choose-meaning", "particle", "fill-blank", "build-sentence", "listen-choose", "translate-to-es", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ko-u07-l5",
+      "title": "Lectura y repaso: visita a KAIST",
+      "zh": "복습",
+      "goal": "Describir dónde están las cosas en un campus y repasar lugares, posiciones e indicaciones.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "거기", "pinyin": "geogi", "es": "ahí (cerca de ti; ya mencionado)" },
+        { "hanzi": "정문", "pinyin": "jeongmun", "es": "puerta principal" },
+        { "hanzi": "기숙사", "pinyin": "gisuksa", "es": "residencia de estudiantes" },
+        { "hanzi": "캠퍼스", "pinyin": "kaempeoseu", "es": "campus" },
+        { "hanzi": "조용하다", "pinyin": "joyonghada", "es": "ser tranquilo; silencioso" },
+        { "hanzi": "걸리다", "pinyin": "geollida", "es": "tardar (tiempo)" },
+        { "hanzi": "정류장", "pinyin": "jeongnyujang", "es": "parada (de autobús)" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "Vida en el campus" },
+        {
+          "type": "dialogue",
+          "title": "Una llamada desde Daejeon",
+          "lines": [
+            { "speaker": "지민", "zh": "우고 씨, 지금 어디에 있어요?", "py": "Ugo ssi, jigeum eodie isseoyo?", "es": "Hugo, ¿dónde estás ahora?" },
+            { "speaker": "우고", "zh": "대전에 있어요. 카이스트 정문 앞에 있어요.", "py": "Daejeone isseoyo. Kaiseuteu jeongmun ape isseoyo.", "es": "Estoy en Daejeon. Delante de la puerta principal de KAIST." },
+            { "speaker": "지민", "zh": "와! 거기 어때요?", "py": "Wa! Geogi eottaeyo?", "es": "¡Hala! ¿Qué tal es?" },
+            { "speaker": "우고", "zh": "캠퍼스가 아주 커요. 그리고 조용해요.", "py": "Kaempeoseuga aju keoyo. Geurigo joyonghaeyo.", "es": "El campus es enorme. Y tranquilo." },
+            { "speaker": "지민", "zh": "서울에서 대전까지 멀어요?", "py": "Seoureseo Daejeonkkaji meoreoyo?", "es": "¿Está lejos Daejeon desde Seúl?" },
+            { "speaker": "우고", "zh": "아니요, KTX로 한 시간쯤 걸려요.", "py": "Aniyo, KTX-ro han siganjjeum geollyeoyo.", "es": "No, en KTX se tarda más o menos una hora." }
+          ],
+          "notes": "카이스트 = KAIST (Instituto Avanzado de Ciencia y Tecnología de Corea), una de las universidades más conocidas del país, en Daejeon. KTX es el tren de alta velocidad. 에서 … 까지 = «de … a» para lugares, igual que 부터 … 까지 para el tiempo. 쯤 = más o menos. 로: medio de transporte (KTX로, 버스로), el mismo (으)로 de las direcciones."
+        },
+        {
+          "type": "reading",
+          "title": "El mensaje de Hugo desde el campus",
+          "text": "지금 대전에 있어요. 여기는 카이스트예요. 캠퍼스가 아주 커요. 정문 앞에 버스 정류장이 있어요. 도서관은 정문 오른쪽에 있어요. 학생 식당은 도서관 뒤에 있어요. 기숙사는 학생 식당 옆에 있어요. 기숙사 근처에 편의점하고 카페가 있어요. 정말 좋아요!",
+          "es": "Ahora estoy en Daejeon. Esto es KAIST. El campus es enorme. Delante de la puerta principal hay una parada de autobús. La biblioteca está a la derecha de la puerta principal. El comedor de estudiantes está detrás de la biblioteca. La residencia está al lado del comedor. Cerca de la residencia hay un konbini y una cafetería. ¡Me encanta!",
+          "questions": [
+            { "q": "¿Dónde está la biblioteca?", "options": ["Detrás del comedor", "A la derecha de la puerta principal", "Al lado de la residencia", "A la izquierda de la puerta principal"], "answer": 1, "explain": "도서관은 정문 오른쪽에 있어요." },
+            { "q": "¿Qué hay al lado del comedor de estudiantes?", "options": ["La biblioteca", "La parada de autobús", "La residencia", "La puerta principal"], "answer": 2, "explain": "기숙사는 학생 식당 옆에 있어요 = la residencia está al lado del comedor." },
+            { "q": "¿Qué hay delante de la puerta principal?", "options": ["Un konbini", "Una parada de autobús", "Una cafetería", "La biblioteca"], "answer": 1, "explain": "정문 앞에 버스 정류장이 있어요." }
+          ]
+        },
+        { "type": "exercises", "count": 12, "types": ["matching", "particle", "choose-meaning", "fill-blank", "build-sentence", "listen-choose", "translate-to-es", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    }
+  ]
+}

@@ -1,0 +1,207 @@
+/* ==========================================================================
+   Temas por idioma (data-lang en <html>). Misma estructura y tokens que «宣纸与墨»;
+   cambia la piel. Tripletas RGB. Contraste AA comprobado (scripts/contrast-check.mjs).
+   ========================================================================== */
+
+/* ---- token común: color del sello (zh: 朱砂) ---- */
+:root,
+[data-skin="zh"] { --seal: var(--cinnabar); --seal-ink: var(--cinnabar-ink); }
+/* piel china dentro de una página de otro idioma: restaura sus familias tipográficas */
+[data-skin="zh"] {
+  --font-zh: var(--font-noto-sans-sc), "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "Source Han Sans SC", sans-serif;
+  --font-zh-serif: var(--font-noto-serif-sc), "Songti SC", "SimSun", serif;
+  --font-kai: "LXGW WenKai Lite", "KaiTi", "STKaiti", "楷体", serif;
+  --font-display-zh: "LXGW WenKai Lite", "KaiTi", "STKaiti", "楷体", serif;
+}
+
+/* ---------------------------------------------------------------- 日本語 · 和紙と藍 */
+:root[data-lang="ja"],
+[data-skin="ja"] {
+  --paper: 244 239 228; /* 生成り kinari #F4EFE4 */
+  --paper-raised: 250 247 240; /* 白練 shironeri #FAF7F0 */
+  --paper-sunk: 234 226 210; /* 砥粉 tonoko #EAE2D2 */
+  --ink: 30 28 26; /* 墨 #1E1C1A */
+  --ink-soft: 72 70 68;
+  --ink-faint: 102 98 92; /* ≥ 4,5:1 sobre 砥粉 */
+  --line: 214 206 190;
+  --cinnabar: 38 78 112; /* 藍 ai #264E70 — acento principal (CTA, activo) */
+  --cinnabar-ink: 26 58 86;
+  --seal: 200 70 47; /* 朱 shu #C8462F — hanko, torii (con mesura) */
+  --seal-ink: 168 54 31;
+  --celadon: 123 141 75; /* 抹茶 matcha #7B8D4B — éxito */
+  --celadon-ink: 84 99 44;
+  --indigo: 38 78 112;
+  --gold: 176 138 62; /* 黄土 odo */
+  --gold-ink: 128 98 38;
+  --danger: 168 48 40;
+  --shu: 200 70 47;
+  --sakura: 232 184 181; /* 桜 #E8B8B5 — solo detalles estacionales */
+  /* acento tonal: 1 = bajo (藍), 2 = alto (朱); 3–5 neutros */
+  --tone-1: 47 92 138;
+  --tone-2: 176 58 38;
+  --tone-3: 84 99 44;
+  --tone-4: 102 98 92;
+  --tone-5: 102 98 92;
+  --shadow-paper: 0 1px 2px rgb(20 30 50 / 0.06), 0 8px 24px -8px rgb(20 30 50 / 0.12);
+  --shadow-float: 0 2px 4px rgb(20 30 50 / 0.08), 0 16px 40px -12px rgb(20 30 50 / 0.22);
+  --shadow-sunk: inset 0 1px 2px rgb(20 30 50 / 0.08);
+  --font-zh: "Noto Sans JP Variable", "Yu Gothic UI", "Yu Gothic", "Meiryo", "Hiragino Sans", sans-serif;
+  --font-zh-serif: "Noto Serif JP Variable", "Yu Mincho", "Hiragino Mincho ProN", serif;
+  --font-kai: "Klee One", "UD Digi Kyokasho N-R", "Yu Gothic", serif; /* letra de libro de texto */
+  --font-display-zh: "Zen Old Mincho", "Noto Serif JP Variable", "Yu Mincho", serif;
+}
+:root.dark[data-lang="ja"],
+:root[data-theme="dark"][data-lang="ja"],
+:root[data-theme="dark"] [data-skin="ja"] {
+  --paper: 20 28 38; /* noche índigo, no negro */
+  --paper-raised: 28 38 51;
+  --paper-sunk: 15 21 29;
+  --ink: 233 228 218;
+  --ink-soft: 188 195 204;
+  --ink-faint: 146 156 168;
+  --line: 44 56 70;
+  --cinnabar: 141 180 217; /* 藍 aclarado */
+  --cinnabar-ink: 166 198 228;
+  --seal: 224 122 98;
+  --seal-ink: 232 140 116;
+  --celadon: 169 186 122;
+  --celadon-ink: 182 199 135;
+  --indigo: 141 180 217;
+  --gold: 214 178 108;
+  --gold-ink: 224 190 122;
+  --danger: 226 112 100;
+  --shu: 224 122 98;
+  --sakura: 214 160 158;
+  --tone-1: 128 176 222;
+  --tone-2: 236 132 110;
+  --tone-3: 176 196 120;
+  --tone-4: 146 156 168;
+  --tone-5: 146 156 168;
+  --shadow-paper: 0 1px 2px rgb(0 0 0 / 0.3), 0 8px 24px -8px rgb(0 0 0 / 0.5);
+  --shadow-float: 0 2px 4px rgb(0 0 0 / 0.4), 0 16px 40px -12px rgb(0 0 0 / 0.6);
+  --shadow-sunk: inset 0 1px 2px rgb(0 0 0 / 0.4);
+}
+
+/* ---------------------------------------------------------------- 한국어 · 한지와 오방색 */
+:root[data-lang="ko"],
+[data-skin="ko"] {
+  --paper: 246 241 231; /* 한지 #F6F1E7 */
+  --paper-raised: 251 248 241;
+  --paper-sunk: 236 229 214;
+  --ink: 29 27 25; /* 먹 #1D1B19 */
+  --ink-soft: 70 68 65;
+  --ink-faint: 100 96 90;
+  --line: 216 208 192;
+  --cinnabar: 47 111 115; /* 청 #2F6F73 — acento principal */
+  --cinnabar-ink: 34 86 90;
+  --seal: 181 64 46; /* 적 #B5402E — 도장 */
+  --seal-ink: 150 50 34;
+  --celadon: 141 179 165; /* 청자 #8DB3A5 — éxito (fondo) */
+  --celadon-ink: 62 108 92; /* texto de éxito ≥ 4,5:1 */
+  --indigo: 47 111 115;
+  --gold: 201 160 68; /* 황 #C9A044 */
+  --gold-ink: 128 96 24;
+  --danger: 166 50 40;
+  --obang-blue: 47 111 115;
+  --obang-red: 181 64 46;
+  --obang-yellow: 201 160 68;
+  /* reglas fonológicas: 1 연음, 2 경음화, 3 비음화, 4 격음화, 5 neutro */
+  --tone-1: 34 104 110;
+  --tone-2: 166 50 40;
+  --tone-3: 128 96 24;
+  --tone-4: 104 72 140;
+  --tone-5: 100 96 90;
+  --shadow-paper: 0 1px 2px rgb(40 36 30 / 0.06), 0 8px 24px -8px rgb(40 36 30 / 0.12);
+  --shadow-float: 0 2px 4px rgb(40 36 30 / 0.08), 0 16px 40px -12px rgb(40 36 30 / 0.22);
+  --shadow-sunk: inset 0 1px 2px rgb(40 36 30 / 0.08);
+  --font-zh: "Noto Sans KR Variable", "Malgun Gothic", "Apple SD Gothic Neo", sans-serif;
+  --font-zh-serif: "Noto Serif KR Variable", "Gowun Batang", "Batang", serif;
+  --font-kai: "Gowun Dodum", "Noto Sans KR Variable", sans-serif; /* acento «manuscrito» */
+  --font-display-zh: "Gowun Batang", "Noto Serif KR Variable", serif;
+}
+:root.dark[data-lang="ko"],
+:root[data-theme="dark"][data-lang="ko"],
+:root[data-theme="dark"] [data-skin="ko"] {
+  --paper: 22 23 24; /* noche de tinta */
+  --paper-raised: 31 33 34;
+  --paper-sunk: 16 17 18;
+  --ink: 236 231 222;
+  --ink-soft: 190 186 178;
+  --ink-faint: 150 146 138;
+  --line: 54 56 58;
+  --cinnabar: 111 179 181; /* 청 aclarado */
+  --cinnabar-ink: 132 196 198;
+  --seal: 222 112 92;
+  --seal-ink: 232 132 112;
+  --celadon: 141 179 165;
+  --celadon-ink: 158 198 182;
+  --indigo: 111 179 181;
+  --gold: 214 178 96;
+  --gold-ink: 224 190 112;
+  --danger: 224 106 100;
+  --tone-1: 112 190 194;
+  --tone-2: 236 124 108;
+  --tone-3: 222 186 104;
+  --tone-4: 186 152 222;
+  --tone-5: 150 146 138;
+  --shadow-paper: 0 1px 2px rgb(0 0 0 / 0.3), 0 8px 24px -8px rgb(0 0 0 / 0.5);
+  --shadow-float: 0 2px 4px rgb(0 0 0 / 0.4), 0 16px 40px -12px rgb(0 0 0 / 0.6);
+  --shadow-sunk: inset 0 1px 2px rgb(0 0 0 / 0.4);
+}
+
+/* sin colores de prosodia (opción de Ajustes) */
+:root[data-tones="none"][data-lang] { --tone-1: var(--ink); --tone-2: var(--ink); --tone-3: var(--ink); --tone-4: var(--ink); --tone-5: var(--ink-faint); }
+
+/* ---- grano de papel por idioma (washi con fibras; hanji con fibras más largas) ---- */
+[data-lang="ja"] body {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75 0.25' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.15 0 0 0 0 0.2 0 0 0 0 0.3 0 0 0 0.04 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+[data-lang="ko"] body {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='260' height='260'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9 0.12' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.3 0 0 0 0 0.25 0 0 0 0 0.15 0 0 0 0.045 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+.dark[data-lang] body, [data-theme="dark"][data-lang] body { background-image: none; }
+
+/* ---- cuadrículas de escritura ---- */
+/* 練習帳: cuadro con guías en cruz discontinuas (japonés) */
+.renshucho {
+  background-color: rgb(var(--paper-raised));
+  background-image:
+    linear-gradient(to right, transparent calc(50% - 0.5px), rgb(var(--cinnabar) / 0.3) calc(50% - 0.5px), rgb(var(--cinnabar) / 0.3) calc(50% + 0.5px), transparent calc(50% + 0.5px)),
+    linear-gradient(to bottom, transparent calc(50% - 0.5px), rgb(var(--cinnabar) / 0.3) calc(50% - 0.5px), rgb(var(--cinnabar) / 0.3) calc(50% + 0.5px), transparent calc(50% + 0.5px));
+  border: 1.5px solid rgb(var(--cinnabar) / 0.5);
+  position: relative;
+}
+.renshucho-faint {
+  background-image:
+    linear-gradient(to right, transparent calc(50% - 0.5px), rgb(var(--cinnabar) / 0.12) calc(50% - 0.5px), rgb(var(--cinnabar) / 0.12) calc(50% + 0.5px), transparent calc(50% + 0.5px)),
+    linear-gradient(to bottom, transparent calc(50% - 0.5px), rgb(var(--cinnabar) / 0.12) calc(50% - 0.5px), rgb(var(--cinnabar) / 0.12) calc(50% + 0.5px), transparent calc(50% + 0.5px));
+}
+/* bloque silábico hangul: cuadro con la división inicial / vocal / final muy tenue */
+.hangul-grid {
+  background-color: rgb(var(--paper-raised));
+  background-image:
+    linear-gradient(to bottom, transparent calc(62% - 0.5px), rgb(var(--cinnabar) / 0.25) calc(62% - 0.5px), rgb(var(--cinnabar) / 0.25) calc(62% + 0.5px), transparent calc(62% + 0.5px)),
+    linear-gradient(to right, transparent calc(55% - 0.5px), rgb(var(--cinnabar) / 0.2) calc(55% - 0.5px), rgb(var(--cinnabar) / 0.2) calc(55% + 0.5px), transparent calc(55% + 0.5px));
+  border: 1.5px solid rgb(var(--cinnabar) / 0.5);
+  position: relative;
+}
+.hangul-grid-faint {
+  background-image: linear-gradient(to bottom, transparent calc(62% - 0.5px), rgb(var(--cinnabar) / 0.1) calc(62% - 0.5px), rgb(var(--cinnabar) / 0.1) calc(62% + 0.5px), transparent calc(62% + 0.5px));
+}
+
+/* ---- transición al cambiar de idioma: fundido de papel y tinta ---- */
+html.lang-switch body { animation: lang-switch 650ms var(--ease-ink); }
+@keyframes lang-switch {
+  0% { filter: blur(4px) saturate(0.6); opacity: 0.6; }
+  100% { filter: none; opacity: 1; }
+}
+
+/* ---- animación de trazos (StrokeWriter) ---- */
+.stroke-anim { stroke-dasharray: 100; stroke-dashoffset: 100; animation-name: stroke-draw; animation-fill-mode: forwards; animation-timing-function: var(--ease-ink); }
+@keyframes stroke-draw { to { stroke-dashoffset: 0; } }
+
+/* ---- acento tonal: barra alta/baja sobre las moras ---- */
+.pitch-mora { display: inline-block; padding: 0 1px; border-top: 2px solid transparent; }
+.pitch-mora.pitch-h { border-top-color: rgb(var(--tone-2)); }
+.pitch-mora.pitch-drop { border-right: 2px solid rgb(var(--tone-2)); }
+.pitch-mora.pitch-l { border-bottom: 2px solid rgb(var(--tone-1) / 0.6); }

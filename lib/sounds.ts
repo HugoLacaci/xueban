@@ -120,3 +120,17 @@ export function playFeedback(kind: "ok" | "fail" | "tick" | "achievement" | "sta
       break;
   }
 }
+
+/**
+ * Pulsación muy suave al enfocar una puerta de la portada: una nota distinta por idioma
+ * (guzheng · koto · gayageum, aproximados con la misma cuerda pinzada en escalas pentatónicas).
+ */
+export function playPortalPluck(lang: "zh" | "ja" | "ko", enabled = true) {
+  if (!enabled) return;
+  const c = getCtx();
+  if (!c || c.state !== "running") return; // sin gesto previo del usuario, en silencio
+  const t = c.currentTime + 0.01;
+  const notes = { zh: [392, 588], ja: [440, 659.3], ko: [349.2, 523.3] }[lang];
+  pluck(c, t, notes[0], 0.035, 1.2);
+  pluck(c, t + 0.07, notes[1], 0.02, 0.9);
+}

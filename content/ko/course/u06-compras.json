@@ -1,0 +1,216 @@
+{
+  "id": "ko-u06",
+  "order": 7,
+  "title": "Compras y dinero",
+  "zh": "쇼핑과 돈",
+  "description": "Preguntar precios en wones, pedir que te enseñen algo, hablar de ropa y colores, contar lo que compraste y pagar en el 편의점.",
+  "icon": "ShoppingBag",
+  "level": 1,
+  "lang": "ko",
+  "category": "Casa y objetos",
+  "checkpoint": { "exercises": 15 },
+  "lessons": [
+    {
+      "id": "ko-u06-l1",
+      "title": "¿Cuánto cuesta?",
+      "zh": "얼마예요?",
+      "goal": "Preguntar precios, entender cantidades en wones y pedir algo con -아/어 주세요.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "이거", "pinyin": "igeo", "es": "esto" },
+        { "hanzi": "그거", "pinyin": "geugeo", "es": "eso" },
+        { "hanzi": "저거", "pinyin": "jeogeo", "es": "aquello" },
+        { "hanzi": "얼마", "pinyin": "eolma", "es": "cuánto (precio)" },
+        { "hanzi": "원", "pinyin": "won", "es": "won (moneda coreana)" },
+        { "hanzi": "사다", "pinyin": "sada", "es": "comprar" },
+        { "hanzi": "비싸다", "pinyin": "bissada", "es": "ser caro" },
+        { "hanzi": "싸다", "pinyin": "ssada", "es": "ser barato" },
+        { "hanzi": "보여 주다", "pinyin": "boyeo juda", "es": "enseñar; mostrar" }
+      ],
+      "steps": [
+        { "type": "vocab" },
+        {
+          "type": "dialogue",
+          "title": "En una tienda de Myeongdong",
+          "lines": [
+            { "speaker": "점원", "zh": "어서 오세요!", "py": "Eoseo oseyo!", "es": "¡Bienvenido!" },
+            { "speaker": "우고", "zh": "저 티셔츠 좀 보여 주세요.", "py": "Jeo tisyeocheu jom boyeo juseyo.", "es": "¿Me enseña aquella camiseta, por favor?" },
+            { "speaker": "점원", "zh": "이거요? 여기 있어요.", "py": "Igeoyo? Yeogi isseoyo.", "es": "¿Esta? Aquí tiene." },
+            { "speaker": "우고", "zh": "이거 얼마예요?", "py": "Igeo eolmayeyo?", "es": "¿Cuánto cuesta?" },
+            { "speaker": "점원", "zh": "이만 원이에요.", "py": "Iman wonieyo.", "es": "20 000 wones." },
+            { "speaker": "우고", "zh": "아, 비싸요… 좀 깎아 주세요!", "py": "A, bissayo… Jom kkakka juseyo!", "es": "Uf, es cara… ¡Hágame un descuento!" },
+            { "speaker": "점원", "zh": "그럼 만팔천 원이에요.", "py": "Geureom manpalcheon wonieyo.", "es": "Bueno, pues 18 000." }
+          ],
+          "notes": "티셔츠 = camiseta. 이거 / 그거 / 저거 son la versión hablada de 이것 / 그것 / 저것. 깎다 = rebajar (el precio): regatear funciona en mercados y puestos callejeros, **no** en grandes almacenes ni cadenas. Los precios en wones son altos en cifras: 1000 wones son bastante menos de 1 € (el cambio varía). Piensa en **만** (10 000) como un billete «grande»: 이만 원 = dos billetes de 10 000."
+        },
+        { "type": "grammar", "id": "a-juseyo" },
+        {
+          "type": "explain",
+          "title": "Precios: piensa en bloques de 만",
+          "markdown": "El español agrupa de tres en tres cifras (20.000); el coreano, **de cuatro en cuatro**, con **만** (10 000) como unidad:\n\n| Cifra | Coreano | Lógica |\n|---|---|---|\n| 1500 | 천오백 | 1000 + 500 |\n| 4500 | 사천오백 | 4 × 1000 + 500 |\n| 10 000 | 만 | (no «십천») |\n| 18 000 | 만팔천 | 10 000 + 8000 |\n| 20 000 | 이만 | 2 × 10 000 |\n| 35 000 | 삼만오천 | 3 × 10 000 + 5000 |\n| 100 000 | 십만 | 10 × 10 000 |\n\nBilletes coreanos: 1000, 5000, 10 000 y 50 000 wones; monedas de 10, 50, 100 y 500."
+        },
+        { "type": "exercises", "count": 12, "types": ["listen-choose", "dictation", "choose-meaning", "conjugation", "fill-blank", "order-words", "speaking", "matching"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ko-u06-l2",
+      "title": "Ropa y colores",
+      "zh": "옷과 색깔",
+      "goal": "Hablar de ropa y colores y matizar opiniones con -지만.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "색", "pinyin": "saek", "es": "color" },
+        { "hanzi": "빨간색", "pinyin": "ppalgansaek", "es": "rojo" },
+        { "hanzi": "파란색", "pinyin": "paransaek", "es": "azul" },
+        { "hanzi": "검은색", "pinyin": "geomeunsaek", "es": "negro" },
+        { "hanzi": "하얀색", "pinyin": "hayansaek", "es": "blanco" },
+        { "hanzi": "바지", "pinyin": "baji", "es": "pantalón" },
+        { "hanzi": "치마", "pinyin": "chima", "es": "falda" },
+        { "hanzi": "티셔츠", "pinyin": "tisyeocheu", "es": "camiseta" },
+        { "hanzi": "입다", "pinyin": "ipda", "es": "ponerse; llevar (ropa)" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "Colores = adjetivo + 색" },
+        {
+          "type": "dialogue",
+          "title": "De compras con Jimin",
+          "lines": [
+            { "speaker": "점원", "zh": "이 치마 어때요?", "py": "I chima eottaeyo?", "es": "¿Qué tal esta falda?" },
+            { "speaker": "지민", "zh": "예쁘지만 좀 짧아요.", "py": "Yeppeujiman jom jjalbayo.", "es": "Es bonita, pero un poco corta." },
+            { "speaker": "우고", "zh": "지민 씨, 이 바지는요? 파란색이 예뻐요.", "py": "Jimin ssi, i bajineunyo? Paransaegi yeppeoyo.", "es": "Jimin, ¿y este pantalón? El azul es bonito." },
+            { "speaker": "지민", "zh": "색은 좋지만 좀 커요. 에스 사이즈 있어요?", "py": "Saegeun jochiman jom keoyo. Eseu saijeu isseoyo?", "es": "El color me gusta, pero es un poco grande. ¿Tiene la talla S?" },
+            { "speaker": "점원", "zh": "네, 여기 있어요. 입어 보세요.", "py": "Ne, yeogi isseoyo. Ibeo boseyo.", "es": "Sí, aquí tiene. Pruébeselo." },
+            { "speaker": "지민", "zh": "딱 좋아요! 이거 주세요.", "py": "Ttak joayo! Igeo juseyo.", "es": "¡Me queda perfecto! Me lo llevo." }
+          ],
+          "notes": "짧다 → 짧아요 = ser corto (adelanto). 사이즈 = talla. -아/어 보세요 = «pruebe a…» (입어 보세요 = pruébeselo). 딱 좋아요 = «justo bien; perfecto». Ojo: **입다** es para ropa del cuerpo; para zapatos se usa 신다 y para gorros 쓰다."
+        },
+        { "type": "grammar", "id": "jiman" },
+        { "type": "exercises", "count": 12, "types": ["choose-meaning", "matching", "conjugation", "fill-blank", "build-sentence", "listen-choose", "translate-to-es", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ko-u06-l3",
+      "title": "¿Qué compraste?",
+      "zh": "뭐 샀어요?",
+      "goal": "Contar compras pasadas con el pasado -았/었어요.",
+      "minutes": 15,
+      "vocab": [
+        { "hanzi": "시장", "pinyin": "sijang", "es": "mercado" },
+        { "hanzi": "백화점", "pinyin": "baekhwajeom", "es": "grandes almacenes" },
+        { "hanzi": "가방", "pinyin": "gabang", "es": "bolso; mochila" },
+        { "hanzi": "신발", "pinyin": "sinbal", "es": "zapatos; calzado" },
+        { "hanzi": "선물", "pinyin": "seonmul", "es": "regalo" },
+        { "hanzi": "돈", "pinyin": "don", "es": "dinero" },
+        { "hanzi": "많이", "pinyin": "mani", "es": "mucho" },
+        { "hanzi": "다", "pinyin": "da", "es": "todo" }
+      ],
+      "steps": [
+        { "type": "vocab" },
+        {
+          "type": "dialogue",
+          "title": "El lunes en clase",
+          "lines": [
+            { "speaker": "민수", "zh": "우고 씨, 어제 뭐 했어요?", "py": "Ugo ssi, eoje mwo haesseoyo?", "es": "Hugo, ¿qué hiciste ayer?" },
+            { "speaker": "우고", "zh": "동대문 시장에 갔어요.", "py": "Dongdaemun sijange gasseoyo.", "es": "Fui al mercado de Dongdaemun." },
+            { "speaker": "민수", "zh": "뭐 샀어요?", "py": "Mwo sasseoyo?", "es": "¿Qué compraste?" },
+            { "speaker": "우고", "zh": "가방하고 신발을 샀어요. 여동생 선물도 샀어요.", "py": "Gabanghago sinbareul sasseoyo. Yeodongsaeng seonmuldo sasseoyo.", "es": "Compré una mochila y unos zapatos. También un regalo para mi hermana." },
+            { "speaker": "민수", "zh": "와, 돈 많이 썼어요?", "py": "Wa, don mani sseosseoyo?", "es": "¡Vaya! ¿Gastaste mucho?" },
+            { "speaker": "우고", "zh": "아니요, 시장은 싸요! 다 해서 오만 원이었어요.", "py": "Aniyo, sijangeun ssayo! Da haeseo oman wonieosseoyo.", "es": "¡No, el mercado es barato! En total fueron 50 000 wones." }
+          ],
+          "notes": "동대문 (Dongdaemun) es una zona de Seúl famosa por sus mercados de ropa abiertos hasta la madrugada. 시장에 갔어요 = «fui al mercado» (에 + 가다: unidad 7). 돈을 쓰다 = gastar dinero (쓰다 → 썼어요). 다 해서 = «en total». 이었어요 / 였어요 es el pasado de 이에요 / 예요."
+        },
+        { "type": "grammar", "id": "past-ass-eoss" },
+        { "type": "exercises", "count": 12, "types": ["conjugation", "choose-meaning", "fill-blank", "particle", "order-words", "listen-choose", "translate-to-es", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ko-u06-l4",
+      "title": "Pagar en el 편의점",
+      "zh": "계산하기",
+      "goal": "Pagar con tarjeta o en efectivo, responder a las preguntas de la caja y unir dos cualidades con -고.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "계산하다", "pinyin": "gyesanhada", "es": "pagar; cobrar (la cuenta)" },
+        { "hanzi": "카드", "pinyin": "kadeu", "es": "tarjeta" },
+        { "hanzi": "현금", "pinyin": "hyeongeum", "es": "efectivo" },
+        { "hanzi": "봉투", "pinyin": "bongtu", "es": "bolsa (de la compra); sobre" },
+        { "hanzi": "영수증", "pinyin": "yeongsujeung", "es": "recibo; tique" },
+        { "hanzi": "필요하다", "pinyin": "piryohada", "es": "necesitar; ser necesario" },
+        { "hanzi": "편하다", "pinyin": "pyeonhada", "es": "ser cómodo; práctico" },
+        { "hanzi": "돼요", "pinyin": "dwaeyo", "es": "se puede; vale (de 되다)" }
+      ],
+      "steps": [
+        { "type": "vocab" },
+        {
+          "type": "dialogue",
+          "title": "En la caja del konbini",
+          "lines": [
+            { "speaker": "점원", "zh": "어서 오세요.", "py": "Eoseo oseyo.", "es": "Bienvenido." },
+            { "speaker": "우고", "zh": "이거하고 이거 계산해 주세요.", "py": "Igeohago igeo gyesanhae juseyo.", "es": "Cóbreme esto y esto, por favor." },
+            { "speaker": "점원", "zh": "칠천오백 원이에요. 봉투 필요하세요?", "py": "Chilcheonobaek wonieyo. Bongtu piryohaseyo?", "es": "Son 7500 wones. ¿Necesita bolsa?" },
+            { "speaker": "우고", "zh": "아니요, 괜찮아요. 카드 돼요?", "py": "Aniyo, gwaenchanayo. Kadeu dwaeyo?", "es": "No, gracias. ¿Se puede pagar con tarjeta?" },
+            { "speaker": "점원", "zh": "네, 돼요. 감사합니다.", "py": "Ne, dwaeyo. Gamsahamnida.", "es": "Sí, claro. Gracias." },
+            { "speaker": "우고", "zh": "지민 씨, 한국 편의점은 싸고 편해요!", "py": "Jimin ssi, Hanguk pyeonuijeomeun ssago pyeonhaeyo!", "es": "¡Jimin, los konbinis coreanos son baratos y prácticos!" },
+            { "speaker": "지민", "zh": "네, 그리고 스물네 시간 열어요.", "py": "Ne, geurigo seumulne sigan yeoreoyo.", "es": "Sí, y abren las veinticuatro horas." }
+          ],
+          "notes": "괜찮아요 sirve también para **rechazar** amablemente («no, gracias»). Las bolsas de plástico en las tiendas se cobran aparte, por eso te lo preguntan. Otra pregunta frecuente: 영수증 드릴까요? («¿le doy el tique?»); responde 네 o 아니요, 괜찮아요. 열다 → 열어요 = abrir. En Corea se paga con tarjeta casi todo, incluso un chicle."
+        },
+        { "type": "grammar", "id": "go-connector" },
+        { "type": "exercises", "count": 12, "types": ["choose-meaning", "listen-choose", "conjugation", "build-sentence", "fill-blank", "order-words", "translate-to-es", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ko-u06-l5",
+      "title": "Lectura y repaso: un sábado de compras",
+      "zh": "복습",
+      "goal": "Comprar con contadores (개, 병) y leer un relato corto de compras en pasado.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "개", "pinyin": "gae", "es": "unidad; cosa (contador)" },
+        { "hanzi": "병", "pinyin": "byeong", "es": "botella (contador)" },
+        { "hanzi": "사과", "pinyin": "sagwa", "es": "manzana" },
+        { "hanzi": "가게", "pinyin": "gage", "es": "tienda" },
+        { "hanzi": "쇼핑", "pinyin": "syoping", "es": "compras; shopping" },
+        { "hanzi": "또", "pinyin": "tto", "es": "otra vez; de nuevo" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "Contar lo que compras" },
+        {
+          "type": "dialogue",
+          "title": "En un puesto del mercado",
+          "lines": [
+            { "speaker": "우고", "zh": "사과 얼마예요?", "py": "Sagwa eolmayeyo?", "es": "¿A cuánto están las manzanas?" },
+            { "speaker": "아주머니", "zh": "한 개에 천 원이에요.", "py": "Han gaee cheon wonieyo.", "es": "A mil wones la unidad." },
+            { "speaker": "우고", "zh": "다섯 개 주세요. 그리고 물 두 병 주세요.", "py": "Daseot gae juseyo. Geurigo mul du byeong juseyo.", "es": "Póngame cinco. Y dos botellas de agua." },
+            { "speaker": "아주머니", "zh": "다 해서 칠천 원이에요.", "py": "Da haeseo chilcheon wonieyo.", "es": "En total, 7000 wones." },
+            { "speaker": "우고", "zh": "여기 있어요.", "py": "Yeogi isseoyo.", "es": "Aquí tiene." },
+            { "speaker": "아주머니", "zh": "감사합니다. 또 오세요!", "py": "Gamsahamnida. Tto oseyo!", "es": "Gracias. ¡Vuelva pronto!" }
+          ],
+          "notes": "아주머니 = señora de mediana edad (como 아저씨 para hombres): así se llama a las vendedoras del mercado. **Cosa + número nativo + contador**: 사과 다섯 개, 물 두 병. 한 개에 천 원 = «mil wones por unidad»."
+        },
+        {
+          "type": "reading",
+          "title": "De compras por Myeongdong",
+          "text": "토요일에 지민 씨하고 명동에 갔어요. 명동에는 가게가 아주 많아요. 저는 파란색 티셔츠를 샀어요. 티셔츠는 예쁘지만 좀 비쌌어요. 삼만 원이었어요. 지민 씨는 치마하고 가방을 샀어요. 그리고 편의점에서 물 두 병을 샀어요. 쇼핑은 정말 재미있었어요!",
+          "es": "El sábado fui a Myeongdong con Jimin. En Myeongdong hay muchísimas tiendas. Yo me compré una camiseta azul. La camiseta es bonita, pero fue un poco cara: 30 000 wones. Jimin se compró una falda y un bolso. Y en el konbini compramos dos botellas de agua. ¡Ir de compras fue muy divertido!",
+          "questions": [
+            { "q": "¿Qué se compró Hugo?", "options": ["Una falda", "Una camiseta azul", "Un bolso", "Unos zapatos"], "answer": 1, "explain": "저는 파란색 티셔츠를 샀어요." },
+            { "q": "¿Cuánto le costó?", "options": ["3000 wones", "13 000 wones", "30 000 wones", "300 000 wones"], "answer": 2, "explain": "삼만 원 = 3 × 10 000 = 30 000 wones." },
+            { "q": "¿Qué compraron en el konbini?", "options": ["Dos botellas de agua", "Dos cafés", "Cinco manzanas", "Ramyeon"], "answer": 0, "explain": "편의점에서 물 두 병을 샀어요." }
+          ]
+        },
+        { "type": "exercises", "count": 12, "types": ["classifier", "listen-choose", "dictation", "conjugation", "particle", "matching", "translate-to-es", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    }
+  ]
+}

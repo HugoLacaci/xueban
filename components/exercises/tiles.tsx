@@ -7,13 +7,15 @@ import { CSS } from "@dnd-kit/utilities";
 import type { BuildCharacterExercise, TilesExercise } from "@/lib/exercises/types";
 import { useSettings } from "@/lib/settings";
 import { Button } from "@/components/ui/button";
-import { Pinyin } from "@/components/zh/pinyin";
-import { AudioButton, useSpaceToPlay } from "@/components/zh/audio-button";
-import { ChineseText } from "@/components/zh/chinese-text";
-import { StrokeOrder } from "@/components/zh/stroke-order";
+import { Pinyin } from "@/components/target/reading";
+import { AudioButton, useSpaceToPlay } from "@/components/target/audio-button";
+import { ChineseText } from "@/components/target/target-text";
+import { StrokeOrder } from "@/components/target/stroke-order";
 import { lookupFirst } from "@/lib/dictionary/service";
 import { cn, shuffle } from "@/lib/utils";
 import { CheckButton, DropZone, ExerciseCard, Hint, Plate, type ExerciseProps } from "./exercise-view";
+import { targetLang } from "@/lib/languages/registry";
+import { Mixed } from "@/components/target/mixed";
 
 interface Tile {
   id: number;
@@ -28,7 +30,7 @@ const slipBase =
 
 function Slip({ text, state, className, ...props }: React.ComponentPropsWithRef<"button"> & { text: string; state?: "idle" | "bank" | "correct" | "wrong" | "ghost" }) {
   return (
-    <button type="button" lang="zh-CN" className={cn(slipBase, state === "bank" && "bg-paper-sunk/70 enabled:hover:bg-paper-raised", state === "idle" && "border-line enabled:hover:border-ink/40", state === "bank" && "border-line", state === "correct" && "border-celadon bg-celadon/14 shadow-none", state === "wrong" && "border-danger bg-danger/10 shadow-none", state === "ghost" && "opacity-0", className)} {...props}>
+    <button type="button" lang={targetLang()} className={cn(slipBase, state === "bank" && "bg-paper-sunk/70 enabled:hover:bg-paper-raised", state === "idle" && "border-line enabled:hover:border-ink/40", state === "bank" && "border-line", state === "correct" && "border-celadon bg-celadon/14 shadow-none", state === "wrong" && "border-danger bg-danger/10 shadow-none", state === "ghost" && "opacity-0", className)} {...props}>
       {text}
     </button>
   );
@@ -137,7 +139,7 @@ export function Tiles({ ex, onSubmit, result }: ExerciseProps<TilesExercise>) {
 
   return (
     <ExerciseCard prompt={ex.prompt}>
-      <p className="mb-5 text-center font-serif-es text-2xl text-ink">{ex.es}</p>
+      <p className="mb-5 text-center font-serif-es text-2xl text-ink"><Mixed>{ex.es}</Mixed></p>
       <DndContext
         sensors={sensors}
         collisionDetection={collision}
@@ -209,17 +211,17 @@ export function BuildCharacter({ ex, onSubmit, result }: ExerciseProps<BuildChar
         {result ? (
           <StrokeOrder char={ex.hanzi} size={128} controls={false} />
         ) : (
-          <span lang="zh-CN" className="zh-serif flex size-32 items-center justify-center rounded-lg text-7xl text-ink/20" aria-hidden="true">
+          <span lang={targetLang()} className="zh-serif flex size-32 items-center justify-center rounded-lg text-7xl text-ink/20" aria-hidden="true">
             ？
           </span>
         )}
         <Pinyin text={ex.pinyin} className="text-xl" />
-        <p className="font-serif-es text-lg text-ink-soft">{ex.meaning}</p>
+        <p className="font-serif-es text-lg text-ink-soft"><Mixed>{ex.meaning}</Mixed></p>
       </div>
       <DropZone state={result ? (result.correct ? "correct" : "wrong") : "idle"} className="mb-4 justify-center" aria-label="Componentes elegidos">
         {picked.length ? (
           picked.map((c) => (
-            <span key={c} lang="zh-CN" className={cn(slipBase, "text-3xl", result ? (ex.components.includes(c) ? "border-celadon bg-celadon/14" : "border-danger bg-danger/10") : "border-line")}>
+            <span key={c} lang={targetLang()} className={cn(slipBase, "text-3xl", result ? (ex.components.includes(c) ? "border-celadon bg-celadon/14" : "border-danger bg-danger/10") : "border-line")}>
               {c}
             </span>
           ))
@@ -243,7 +245,7 @@ export function BuildCharacter({ ex, onSubmit, result }: ExerciseProps<BuildChar
                 on ? "border-ink bg-paper-sunk" : "border-line enabled:hover:-translate-y-px enabled:hover:border-ink/40",
               )}
             >
-              <span lang="zh-CN" className="zh-serif text-3xl">
+              <span lang={targetLang()} className="zh-serif text-3xl">
                 {c}
               </span>
               <span className="max-w-24 truncate text-[11px] text-ink-faint">{info?.es ?? info?.en?.[0] ?? ""}</span>

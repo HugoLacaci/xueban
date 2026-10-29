@@ -2,11 +2,13 @@
 import { useEffect, useState } from "react";
 import type { MultipleChoiceExercise } from "@/lib/exercises/types";
 import { useSettings } from "@/lib/settings";
-import { Pinyin } from "@/components/zh/pinyin";
-import { AudioButton, useSpaceToPlay } from "@/components/zh/audio-button";
-import { ChineseText } from "@/components/zh/chinese-text";
+import { Pinyin } from "@/components/target/reading";
+import { AudioButton, useSpaceToPlay } from "@/components/target/audio-button";
+import { ChineseText } from "@/components/target/target-text";
 import { cn } from "@/lib/utils";
 import { ExerciseCard, OptionTile, Plate, Stage, optionState, type ExerciseProps } from "./exercise-view";
+import { targetLang } from "@/lib/languages/registry";
+import { Mixed } from "@/components/target/mixed";
 
 export function MultipleChoice({ ex, onSubmit, result }: ExerciseProps<MultipleChoiceExercise>) {
   const [chosen, setChosen] = useState<number | null>(null);
@@ -53,7 +55,7 @@ export function MultipleChoice({ ex, onSubmit, result }: ExerciseProps<MultipleC
       <Stage zh={ex.display.zh}>
         {audioText ? <AudioButton text={audioText} size="lg" variant="solid" autoPlay /> : null}
         {ex.display.zh && ex.display.pinyin && (pinyinMode === "show" || result) ? <Pinyin text={ex.display.pinyin} className="block text-xl" /> : null}
-        {ex.display.es ? <p className="font-serif-es text-2xl text-ink">{ex.display.es}</p> : null}
+        {ex.display.es ? <p className="font-serif-es text-2xl text-ink"><Mixed>{ex.display.es}</Mixed></p> : null}
         {ex.display.pinyin && !ex.display.zh ? <Pinyin text={ex.display.pinyin} className="text-2xl" /> : null}
       </Stage>
 
@@ -63,7 +65,7 @@ export function MultipleChoice({ ex, onSubmit, result }: ExerciseProps<MultipleC
             <OptionTile index={i + 1} state={optionState(i, chosen, ex.answer, Boolean(result))} onClick={() => pick(i)} disabled={Boolean(result)} className={cn(o.zh && "min-h-[4.25rem]", o.zh && result && "pr-10")}>
               <span className="min-w-0 flex-1">
                 {o.zh ? (
-                  <span lang="zh-CN" className="zh-serif block text-[1.75rem] leading-tight sm:text-3xl">
+                  <span lang={targetLang()} className="zh-serif block text-[1.75rem] leading-tight sm:text-3xl">
                     {o.text}
                   </span>
                 ) : o.pinyin ? (

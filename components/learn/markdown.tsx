@@ -1,8 +1,8 @@
 "use client";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
-import { ChineseText } from "@/components/zh/chinese-text";
-import { hasHanzi } from "@/lib/pinyin/convert";
+import { ChineseText } from "@/components/target/target-text";
+import { hasTarget as hasHanzi } from "@/lib/languages/helpers";
 
 /** Markdown en español con texto chino interactivo (popup + pinyin) dentro de los párrafos. */
 export function Markdown({ children, className }: { children: string; className?: string }) {

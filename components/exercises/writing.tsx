@@ -1,11 +1,12 @@
 "use client";
 import { useRef, useState } from "react";
 import type { WritingExercise } from "@/lib/exercises/types";
-import { Pinyin } from "@/components/zh/pinyin";
-import { AudioButton } from "@/components/zh/audio-button";
-import { StrokeOrder } from "@/components/zh/stroke-order";
+import { Pinyin } from "@/components/target/reading";
+import { AudioButton } from "@/components/target/audio-button";
+import { StrokeOrder } from "@/components/target/stroke-order";
 import { cn } from "@/lib/utils";
 import { ExerciseCard, Hint, type ExerciseProps } from "./exercise-view";
+import { Mixed } from "@/components/target/mixed";
 
 export function Writing({ ex, onSubmit, result }: ExerciseProps<WritingExercise>) {
   const chars = Array.from(ex.hanzi);
@@ -19,7 +20,7 @@ export function Writing({ ex, onSubmit, result }: ExerciseProps<WritingExercise>
           <Pinyin text={ex.pinyin} className="text-3xl" />
           <AudioButton text={ex.hanzi} size="sm" />
         </div>
-        <p className="font-serif-es text-lg text-ink-soft">{ex.meaning}</p>
+        <p className="font-serif-es text-lg text-ink-soft"><Mixed>{ex.meaning}</Mixed></p>
         {chars.length > 1 ? <p className="text-xs text-ink-faint">{chars.length} caracteres · escribe cada uno en su cuadrícula</p> : null}
       </div>
       {/* 田字格 grande; el carácter ya escrito queda marcado con un punto de tinta */}

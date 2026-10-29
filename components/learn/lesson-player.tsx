@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useMemo, useState } from "react";
-import Link from "next/link";
+import Link from "@/lib/languages/link";
 import { useRouter } from "next/navigation";
 import { ArrowLeft, ArrowRight, Check, ChevronLeft, X } from "lucide-react";
 import { lessonById, nextLesson, stepLabel } from "@/lib/course";
@@ -12,7 +12,9 @@ import { Badge, PageHeader, Progress } from "@/components/ui/primitives";
 import { InkDivider, PetalRain, Seal } from "@/components/ornament";
 import { cn } from "@/lib/utils";
 import { ExplainStep, VocabStep, DialogueStep, GrammarStep, ExercisesStep, ReadingStep, ReviewStep } from "./steps";
-import { PinyinTableStep, TonesStep, TonePairsStep, StrokesStep, RadicalsStep, SpanishErrorsStep } from "./special-steps";
+import { targetLang, getActivePack } from "@/lib/languages/registry";
+import { ui } from "@/lib/languages/ui-text";
+import { Mixed } from "@/components/target/mixed";
 
 /** Cuenta de 0 a `target` con rAF (~700 ms). Sin movimiento → valor final directo. */
 function useCountUp(target: number, duration = 700): number {
@@ -63,19 +65,19 @@ function LessonDone({ title, zh, score, words, onNext, nextTitle }: { title: str
         <style>{`@keyframes ink-spread { 0% { transform: translate(-50%,-50%) scale(0.2); opacity: .35; } 100% { transform: translate(-50%,-50%) scale(30); opacity: 0; } }`}</style>
 
         <div className="relative mx-auto flex h-24 items-center justify-center">
-          {stage >= 1 ? <Seal text="完成" size={92} stamped rotate={-4} title="Lección completada" /> : <span className="size-[92px]" />}
+          {stage >= 1 ? <Seal text={ui().doneSeal} size={92} stamped rotate={-4} title="Lección completada" /> : <span className="size-[92px]" />}
         </div>
         <h1 className="font-serif-es mt-4 text-[26px] font-semibold leading-tight text-ink">¡Lección completada!</h1>
         <p className="mt-1 text-ink-soft">
           {title}
           {zh ? (
-            <span lang="zh-CN" className="zh-kai ml-2 text-cinnabar">
+            <span lang={targetLang()} className="zh-kai ml-2 text-cinnabar">
               {zh}
             </span>
           ) : null}
         </p>
 
-        <InkDivider label="成绩" className="my-5" />
+        <InkDivider label={ui().score} className="my-5" />
 
         <div className={cn("grid grid-cols-2 gap-3 transition-opacity duration-500", stage < 2 && "opacity-0")} aria-live="polite">
           <div className="card-sunk p-3">
@@ -173,7 +175,7 @@ export function LessonPlayer({ lessonId }: { lessonId: string }) {
             </Link>
           </Button>
           <Link href="/aprender" className="flex min-w-0 items-center gap-1 text-ink-faint hover:text-ink">
-            <ChevronLeft className="size-4 shrink-0" /> <span className="truncate">{unit.title}</span>
+            <ChevronLeft className="size-4 shrink-0" /> <span className="truncate"><Mixed>{unit.title}</Mixed></span>
           </Link>
           <span className="ml-auto shrink-0 text-xs text-ink-faint tabular">
             {lesson.minutes} min · paso {step + 1} / {steps.length}
@@ -185,7 +187,7 @@ export function LessonPlayer({ lessonId }: { lessonId: string }) {
       <h1 className="font-serif-es text-[26px] font-semibold leading-tight tracking-tight text-ink sm:text-3xl">
         {lesson.title}
         {lesson.zh ? (
-          <span lang="zh-CN" className="zh-kai ml-2 text-xl font-normal text-cinnabar">
+          <span lang={targetLang()} className="zh-kai ml-2 text-xl font-normal text-cinnabar">
             {lesson.zh}
           </span>
         ) : null}
@@ -214,7 +216,7 @@ export function LessonPlayer({ lessonId }: { lessonId: string }) {
                 )}
               >
                 {i < step ? <Check className="size-3" /> : <span className="tabular">{i + 1}</span>}
-                {stepLabel(s)}
+                <Mixed>{stepLabel(s)}</Mixed>
               </button>
             </li>
           ))}
@@ -248,12 +250,7 @@ export function LessonPlayer({ lessonId }: { lessonId: string }) {
           />
         ) : null}
         {cur.type === "review" ? <ReviewStep lesson={lesson} scores={scores} /> : null}
-        {cur.type === "pinyin-table" ? <PinyinTableStep /> : null}
-        {cur.type === "tones" ? <TonesStep /> : null}
-        {cur.type === "tone-pairs" ? <TonePairsStep /> : null}
-        {cur.type === "strokes" ? <StrokesStep /> : null}
-        {cur.type === "radicals" ? <RadicalsStep radicals={cur.radicals} /> : null}
-        {cur.type === "spanish-errors" ? <SpanishErrorsStep /> : null}
+        <SpecialStep step={cur} onFinish={() => goNext()} />
       </div>
 
       {cur.type !== "exercises" && cur.type !== "reading" ? (
@@ -276,4 +273,14 @@ export function LessonPlayer({ lessonId }: { lessonId: string }) {
       ) : null}
     </div>
   );
+}
+
+/** Pasos propios del idioma (Unidad 0, kana, hangul, acento…): los aporta el paquete activo. */
+function SpecialStep({ step, onFinish }: { step: import("@/lib/course/types").LessonStep; onFinish: () => void }) {
+  const modules = getActivePack().ui.modules;
+  const id = step.type === "module" ? step.id : step.type;
+  const Mod = modules[id];
+  if (!Mod) return null;
+  const params = step.type === "radicals" ? { radicals: step.radicals } : step.type === "module" ? step.params : undefined;
+  return <Mod params={params} onFinish={() => onFinish()} />;
 }

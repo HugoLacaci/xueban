@@ -3,18 +3,23 @@ import { useState } from "react";
 import { useLiveQuery } from "dexie-react-hooks";
 import { Plus, Save, Trash2 } from "lucide-react";
 import { db, uuid, type Note } from "@/lib/db";
-import { hanziOnly, hasHanzi } from "@/lib/pinyin/convert";
+import { targetWordsIn } from "@/lib/languages/helpers";
+import { getActiveLang } from "@/lib/languages/registry";
 import { Button } from "@/components/ui/button";
 import { Card, Input, Textarea } from "@/components/ui/primitives";
 import { toast } from "@/components/ui/toast";
 import { Markdown } from "@/components/learn/markdown";
-import { ChineseText } from "@/components/zh/chinese-text";
+import { ChineseText } from "@/components/target/target-text";
 import { formatDate } from "@/lib/utils";
 import { cn } from "@/lib/utils";
+import { targetLang } from "@/lib/languages/registry";
+import { ui } from "@/lib/languages/ui-text";
+import { getActivePack } from "@/lib/languages/registry";
+import { Mixed } from "@/components/target/mixed";
 
 /** Notas de estudio en Markdown; las palabras chinas de la nota quedan vinculadas (popup + enlace al mazo). */
 export function NotesPanel() {
-  const notes = useLiveQuery(() => db.notes.where("kind").equals("note").reverse().sortBy("updatedAt"), []) ?? [];
+  const notes = useLiveQuery(() => db.notes.where("[lang+kind]").equals([getActiveLang(), "note"]).reverse().sortBy("updatedAt"), []) ?? [];
   const [sel, setSel] = useState<string | null>(null);
   const [title, setTitle] = useState("");
   const [md, setMd] = useState("");
@@ -33,7 +38,7 @@ export function NotesPanel() {
 
   const create = async () => {
     const id = uuid();
-    const n: Note = { id, title: "Nueva nota", markdown: "", wordIds: [], kind: "note", createdAt: Date.now(), updatedAt: Date.now() };
+    const n: Note = { id, lang: getActiveLang(), title: "Nueva nota", markdown: "", wordIds: [], kind: "note", createdAt: Date.now(), updatedAt: Date.now() };
     await db.notes.put(n);
     setSel(id);
     setTitle(n.title);
@@ -42,7 +47,7 @@ export function NotesPanel() {
   };
   const save = async () => {
     if (!current) return;
-    const words = await db.words.toArray();
+    const words = await db.words.where("lang").equals(getActiveLang()).toArray();
     const linked = words.filter((w) => md.includes(w.hanzi)).map((w) => w.id);
     await db.notes.update(current.id, { title: title.trim() || "Sin título", markdown: md, wordIds: linked, updatedAt: Date.now() });
     toast.success("Nota guardada", linked.length ? `${linked.length} palabras del mazo vinculadas` : undefined);
@@ -52,7 +57,7 @@ export function NotesPanel() {
     await db.notes.delete(current.id);
     setSel(null);
   };
-  const zhWords = Array.from(new Set((md.match(/[一-鿿]{1,4}/g) ?? []).filter(hasHanzi).map(hanziOnly))).slice(0, 30);
+  const zhWords = targetWordsIn(md, 30);
 
   return (
     <div className="grid gap-3 md:grid-cols-[15rem_1fr]">
@@ -69,17 +74,17 @@ export function NotesPanel() {
                 className={cn("relative w-full rounded-[8px] px-2.5 py-1.5 text-left text-sm transition-colors duration-[var(--dur-ui)] hover:bg-paper-sunk", sel === n.id && "bg-paper-sunk")}
               >
                 {sel === n.id ? <span className="absolute inset-y-1.5 left-0 w-[3px] rounded-r bg-cinnabar" aria-hidden="true" /> : null}
-                <span className="block truncate font-medium text-ink">{n.title}</span>
+                <span className="block truncate font-medium text-ink"><Mixed>{n.title}</Mixed></span>
                 <span className="block text-[11px] text-ink-faint">{formatDate(n.updatedAt)}</span>
               </button>
             </li>
           ))}
           {!notes.length ? (
             <li className="px-2 py-3 text-xs leading-relaxed text-ink-faint">
-              <span lang="zh-CN" className="zh-kai block text-base text-ink">
-                好记性不如烂笔头。
+              <span lang={targetLang()} className="zh-kai block text-base text-ink">
+                {ui().notesQuote.text}
               </span>
-              <span className="block">Una buena memoria no vale lo que un lápiz gastado. Escribe en Markdown: **negrita**, listas, tablas. Las palabras chinas se vinculan a tu mazo.</span>
+              <span className="block">{ui().notesQuote.es} Escribe en Markdown: **negrita**, listas, tablas. Las palabras en {getActivePack().meta.names.adjective} se vinculan a tu mazo.</span>
             </li>
           ) : null}
         </ul>
@@ -104,11 +109,11 @@ export function NotesPanel() {
                 <Markdown>{md || "*Nota vacía*"}</Markdown>
               </div>
             ) : (
-              <Textarea value={md} onChange={(e) => setMd(e.target.value)} className="min-h-64 font-mono text-sm leading-relaxed" placeholder={"## Clase del martes\n- 请问 qǐngwèn: para preguntar con educación\n- Deberes: p. 23 ej. 2"} />
+              <Textarea value={md} onChange={(e) => setMd(e.target.value)} className="min-h-64 font-mono text-sm leading-relaxed" placeholder={`## Clase del martes\n- ${ui().examples.question} ${getActivePack().reading(ui().examples.question)}: para llamar la atención con educación\n- Deberes: p. 23 ej. 2`} />
             )}
             {zhWords.length ? (
               <div className="flex flex-wrap items-center gap-1.5 border-t border-line pt-3">
-                <span className="text-xs text-ink-faint">Chino en esta nota:</span>
+                <span className="text-xs text-ink-faint">Palabras en esta nota:</span>
                 {zhWords.map((w) => (
                   <ChineseText key={w} text={w} size="sm" ruby={false} />
                 ))}

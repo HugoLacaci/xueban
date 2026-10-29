@@ -3,6 +3,9 @@ import { create } from "zustand";
 import { CircleAlert, Info, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { BrushCheck } from "@/components/ornament/ink-divider";
+import { targetLang } from "@/lib/languages/registry";
+import { ui } from "@/lib/languages/ui-text";
+import { Mixed } from "@/components/target/mixed";
 
 export interface ToastItem {
   id: number;
@@ -44,14 +47,14 @@ export const toast = {
 
 /** Sello pequeño que acompaña cada aviso: 好 (éxito), 误 (error), 注 (información). */
 function ToastSeal({ kind }: { kind: ToastItem["kind"] }) {
-  const glyph = kind === "success" ? "好" : kind === "error" ? "误" : "注";
+  const glyph = kind === "success" ? ui().toast.success : kind === "error" ? ui().toast.error : ui().toast.info;
   const color = kind === "success" ? "rgb(var(--celadon))" : kind === "error" ? "rgb(var(--danger))" : "rgb(var(--ink-soft))";
   return (
     <span
       aria-hidden="true"
       className="zh-display flex size-8 shrink-0 -rotate-6 items-center justify-center rounded-[5px] border-[1.5px] text-base leading-none"
       style={{ color, borderColor: color }}
-      lang="zh-CN"
+      lang={targetLang()}
     >
       {glyph}
     </span>
@@ -87,9 +90,9 @@ export function Toaster() {
           <div className="min-w-0 flex-1">
             <p className="flex items-center gap-1.5 text-sm font-medium text-ink">
               {t.kind === "success" ? <BrushCheck size={16} /> : t.kind === "error" ? <CircleAlert className="size-4 text-danger" aria-hidden="true" /> : <Info className="size-4 text-ink-faint" aria-hidden="true" />}
-              <span className="min-w-0">{t.title}</span>
+              <span className="min-w-0"><Mixed>{t.title}</Mixed></span>
             </p>
-            {t.description ? <p className="mt-0.5 text-xs text-ink-faint">{t.description}</p> : null}
+            {t.description ? <p className="mt-0.5 text-xs text-ink-faint"><Mixed>{t.description}</Mixed></p> : null}
             {t.action ? (
               <button
                 className="mt-1.5 text-xs font-medium text-indigo underline-offset-2 hover:underline"
@@ -98,7 +101,7 @@ export function Toaster() {
                   dismiss(t.id);
                 }}
               >
-                {t.action.label}
+                <Mixed>{t.action.label}</Mixed>
               </button>
             ) : null}
           </div>

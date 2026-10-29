@@ -1,13 +1,13 @@
 "use client";
 /**
- * Sincronización bidireccional web ⇄ Anki vía AnkiConnect.
- * Clave compartida: campo WebID. Conflictos: último modificado gana.
+ * Sincronización bidireccional web ⇄ Anki vía AnkiConnect, por idioma (un tipo de nota por idioma,
+ * definido en pack.anki). Clave compartida: campo WebID. Conflictos: último modificado gana.
  */
-import { db, type Card, type Word, newCard, slugify, bumpDaily, seedCategoryNames } from "@/lib/db";
+import { db, type Card, type Word, newCard, slugify, bumpDaily } from "@/lib/db";
 import { useSettings } from "@/lib/settings";
+import { getActivePack } from "@/lib/languages/registry";
+import type { AnkiModelSpec, Lang } from "@/lib/languages/types";
 import { createInvoker, type AnkiInvoker } from "./client";
-import { CSS, DECK_HSK1, DECK_MINE, DECK_ROOT, FIELDS, MODEL_NAME, TEMPLATES, type NoteFields } from "./model";
-import { uuid } from "@/lib/db/repo";
 
 export interface AnkiNoteInfo {
   noteId: number;
@@ -36,88 +36,41 @@ function invoker(): AnkiInvoker {
   return createInvoker(useSettings.getState().settings.anki.url);
 }
 
-function deckFor(word: Word): string {
-  const names = seedCategoryNames();
-  const idx = names.indexOf(word.category);
-  if (word.source === "seed" && idx >= 0) return `${DECK_HSK1}::${String(idx + 1).padStart(2, "0")} ${word.category}`;
-  return DECK_MINE;
+/** Spec y nombres de categoría de la semilla del paquete activo. */
+export function activeSpec(): { spec: AnkiModelSpec; lang: Lang; categoryNames: string[] } {
+  const pack = getActivePack();
+  const names: string[] = [];
+  for (const w of pack.seed.words) if (!names.includes(w.category)) names.push(w.category);
+  return { spec: pack.anki, lang: pack.id, categoryNames: names };
 }
 
-export function wordToFields(w: Word): NoteFields {
-  return {
-    Hanzi: w.hanzi,
-    Pinyin: w.pinyin,
-    Significado: w.meaning,
-    Categoria: w.category,
-    Ejemplo: w.example ?? "",
-    EjemploPinyin: w.examplePinyin ?? "",
-    EjemploTraduccion: w.exampleTranslation ?? "",
-    Tradicional: w.traditional && w.traditional !== w.hanzi ? w.traditional : "",
-    Radical: w.radical ?? "",
-    Audio: w.audio ? `[sound:${w.audio.split("/").pop()}]` : "",
-    Imagen: w.image ?? "",
-    Notas: w.notes ?? "",
-    HSK: w.hsk.filter((h) => h !== "Extra").join(" "),
-    WebID: w.id,
-    CrearProduccion: w.createProduction ? "y" : "",
-  };
+export function deckFor(word: Word, ctx = activeSpec()): string {
+  return ctx.spec.deckFor(word, ctx.categoryNames);
 }
 
-export function tagsFor(w: Word): string[] {
-  const tags = new Set<string>(w.tags);
-  if (w.level === 1 || w.hsk.length) tags.add("HSK1");
-  for (const h of w.hsk) if (h !== "Extra") tags.add(h);
-  tags.add(`cat::${w.category.replace(/\s+/g, "_")}`);
-  if (w.source === "class") tags.add("clase");
-  return Array.from(tags);
+export function wordToFields(w: Word, spec = activeSpec().spec): Record<string, string> {
+  return spec.toFields(w);
 }
 
-export function fieldsToWord(fields: Record<string, { value: string }>, tags: string[], noteId: number, mod: number | undefined, existing?: Word): Word {
-  const f = (k: string) => (fields[k]?.value ?? "").replace(/<[^>]+>/g, "").trim();
-  const now = Date.now();
-  const hsk = f("HSK").split(/\s+/).filter(Boolean);
-  const audio = f("Audio").match(/\[sound:([^\]]+)\]/)?.[1];
-  const level = tags.includes("HSK1") || hsk.length ? 1 : existing?.level;
-  return {
-    id: existing?.id ?? (f("WebID") || (f("Hanzi") ? `mine-${f("Hanzi")}` : uuid())),
-    hanzi: f("Hanzi"),
-    traditional: f("Tradicional") || existing?.traditional,
-    pinyin: f("Pinyin"),
-    meaning: f("Significado"),
-    meaningEn: existing?.meaningEn,
-    category: f("Categoria") || existing?.category || "Clase",
-    example: f("Ejemplo") || undefined,
-    examplePinyin: f("EjemploPinyin") || undefined,
-    exampleTranslation: f("EjemploTraduccion") || undefined,
-    radical: f("Radical") || undefined,
-    hsk: hsk.length ? hsk : (existing?.hsk ?? []),
-    level,
-    frequency: existing?.frequency,
-    tags: Array.from(new Set([...tags.filter((t) => !t.startsWith("cat::")), ...(existing?.tags ?? [])])),
-    notes: f("Notas") || undefined,
-    audio: audio ? `/audio/${audio}` : existing?.audio,
-    image: f("Imagen") || undefined,
-    source: existing?.source ?? "anki",
-    sourceRef: existing?.sourceRef,
-    createProduction: f("CrearProduccion").toLowerCase() === "y",
-    createdAt: existing?.createdAt ?? now,
-    updatedAt: now,
-    ankiNoteId: noteId,
-    ankiMod: mod,
-  };
+export function tagsFor(w: Word, spec = activeSpec().spec): string[] {
+  return spec.tags(w);
+}
+
+export function fieldsToWord(fields: Record<string, { value: string }>, tags: string[], noteId: number, mod: number | undefined, existing?: Word, spec = activeSpec().spec): Word {
+  return spec.fromFields(fields, tags, noteId, mod, existing);
 }
 
 /* ------------------------ Modelo y mazos ------------------------ */
 
-export async function ensureModel(invoke: AnkiInvoker = invoker()): Promise<void> {
+export async function ensureModel(invoke: AnkiInvoker = invoker(), spec = activeSpec().spec): Promise<void> {
   const models = await invoke<string[]>("modelNames");
-  if (models.includes(MODEL_NAME)) return;
+  if (models.includes(spec.modelName)) return;
   await invoke("createModel", {
-    modelName: MODEL_NAME,
-    inOrderFields: [...FIELDS],
-    css: CSS,
+    modelName: spec.modelName,
+    inOrderFields: [...spec.fields],
+    css: spec.css,
     isCloze: false,
-    cardTemplates: TEMPLATES,
+    cardTemplates: spec.templates,
   });
 }
 
@@ -133,17 +86,17 @@ export interface PushResult {
   errors: string[];
 }
 
-export async function pushWordsToAnki(words: Word[], invoke: AnkiInvoker = invoker()): Promise<PushResult> {
+export async function pushWordsToAnki(words: Word[], invoke: AnkiInvoker = invoker(), ctx = activeSpec()): Promise<PushResult> {
+  const { spec } = ctx;
   const result: PushResult = { created: 0, updated: 0, errors: [] };
   if (!words.length) return result;
-  await ensureModel(invoke);
-  const decks = new Set(words.map(deckFor));
+  await ensureModel(invoke, spec);
+  const decks = new Set(words.map((w) => deckFor(w, ctx)));
   for (const d of decks) await ensureDeck(d, invoke);
 
-  // Buscar existentes por WebID
   const existingIds = new Map<string, number>();
   const query = words.map((w) => `WebID:${escapeQuery(w.id)}`).join(" or ");
-  const found = await invoke<number[]>("findNotes", { query: `"note:${MODEL_NAME}" (${query})` });
+  const found = await invoke<number[]>("findNotes", { query: `"note:${spec.modelName}" (${query})` });
   if (found.length) {
     const infos = await invoke<AnkiNoteInfo[]>("notesInfo", { notes: found });
     for (const n of infos) existingIds.set(n.fields.WebID?.value ?? "", n.noteId);
@@ -154,8 +107,8 @@ export async function pushWordsToAnki(words: Word[], invoke: AnkiInvoker = invok
     const noteId = existingIds.get(w.id) ?? w.ankiNoteId;
     if (noteId) {
       try {
-        await invoke("updateNoteFields", { note: { id: noteId, fields: wordToFields(w) } });
-        await invoke("addTags", { notes: [noteId], tags: tagsFor(w).join(" ") });
+        await invoke("updateNoteFields", { note: { id: noteId, fields: spec.toFields(w) } });
+        await invoke("addTags", { notes: [noteId], tags: spec.tags(w).join(" ") });
         await db.words.update(w.id, { ankiNoteId: noteId });
         result.updated++;
       } catch (e) {
@@ -165,10 +118,10 @@ export async function pushWordsToAnki(words: Word[], invoke: AnkiInvoker = invok
   }
   if (toAdd.length) {
     const notes = toAdd.map((w) => ({
-      deckName: deckFor(w),
-      modelName: MODEL_NAME,
-      fields: wordToFields(w),
-      tags: tagsFor(w),
+      deckName: deckFor(w, ctx),
+      modelName: spec.modelName,
+      fields: spec.toFields(w),
+      tags: spec.tags(w),
       options: { allowDuplicate: false, duplicateScope: "deck" },
     }));
     const ids = await invoke<(number | null)[]>("addNotes", { notes });
@@ -177,21 +130,19 @@ export async function pushWordsToAnki(words: Word[], invoke: AnkiInvoker = invok
       if (id) {
         await db.words.update(toAdd[i].id, { ankiNoteId: id });
         result.created++;
-        // audio
         const w = toAdd[i];
         if (w.audio) await storeAudio(w.audio, invoke).catch(() => undefined);
       } else {
-        // probablemente duplicado por Hanzi: intenta localizar por Hanzi y actualizar
-        const dup = await invoke<number[]>("findNotes", { query: `"note:${MODEL_NAME}" Hanzi:${escapeQuery(toAdd[i].hanzi)}` });
+        const dup = await invoke<number[]>("findNotes", { query: `"note:${spec.modelName}" ${spec.keyField}:${escapeQuery(toAdd[i].hanzi)}` });
         if (dup.length) {
-          await invoke("updateNoteFields", { note: { id: dup[0], fields: wordToFields(toAdd[i]) } });
+          await invoke("updateNoteFields", { note: { id: dup[0], fields: spec.toFields(toAdd[i]) } });
           await db.words.update(toAdd[i].id, { ankiNoteId: dup[0] });
           result.updated++;
         } else result.errors.push(`${toAdd[i].hanzi}: Anki no aceptó la nota`);
       }
     }
   }
-  await db.syncState.put({ key: "anki:lastPush", value: Date.now(), updatedAt: Date.now() });
+  await db.syncState.put({ key: `anki:lastPush:${ctx.lang}`, value: Date.now(), updatedAt: Date.now() });
   return result;
 }
 
@@ -217,33 +168,39 @@ export interface SyncPlan {
   missingWebId: AnkiNoteInfo[];
 }
 
-export async function planSync(invoke: AnkiInvoker = invoker()): Promise<SyncPlan> {
-  const ids = await invoke<number[]>("findNotes", { query: `"note:${MODEL_NAME}"` });
+/** Clave de syncState compatible con la instalación anterior (chino sin sufijo). */
+export function syncKey(base: string, lang: Lang): string {
+  return lang === "zh" ? base : `${base}:${lang}`;
+}
+
+export async function planSync(invoke: AnkiInvoker = invoker(), ctx = activeSpec()): Promise<SyncPlan> {
+  const { spec, lang } = ctx;
+  const ids = await invoke<number[]>("findNotes", { query: `"note:${spec.modelName}"` });
   const notes = ids.length ? await invoke<AnkiNoteInfo[]>("notesInfo", { notes: ids }) : [];
-  const webWords = await db.words.toArray();
+  const webWords = await db.words.where("lang").equals(lang).toArray();
   const byId = new Map(webWords.map((w) => [w.id, w]));
   const byHanzi = new Map(webWords.map((w) => [w.hanzi, w]));
   const seenWeb = new Set<string>();
   const plan: SyncPlan = { newInAnki: [], newInWeb: [], conflicts: [], unchanged: 0, missingWebId: [] };
-  const lastSync = ((await db.syncState.get("anki:lastSync"))?.value as number | undefined) ?? 0;
+  const lastSync = ((await db.syncState.get(syncKey("anki:lastSync", lang)))?.value as number | undefined) ?? 0;
 
   for (const n of notes) {
     let webId = (n.fields.WebID?.value ?? "").trim();
-    const hanzi = (n.fields.Hanzi?.value ?? "").replace(/<[^>]+>/g, "").trim();
+    const hanzi = (n.fields[spec.keyField]?.value ?? "").replace(/<[^>]+>/g, "").trim();
     if (!hanzi) continue;
     if (!webId) {
       plan.missingWebId.push(n);
       const w = byHanzi.get(hanzi);
-      webId = w?.id ?? `mine-${hanzi}`;
+      webId = w?.id ?? `${spec.minePrefix}${hanzi}`;
     }
     const existing = byId.get(webId) ?? byHanzi.get(hanzi);
     const ankiMod = (n.mod ?? 0) * 1000;
     if (!existing) {
-      plan.newInAnki.push({ note: n, word: fieldsToWord(n.fields, n.tags, n.noteId, n.mod) });
+      plan.newInAnki.push({ note: n, word: spec.fromFields(n.fields, n.tags, n.noteId, n.mod) });
       continue;
     }
     seenWeb.add(existing.id);
-    const ankiWord = fieldsToWord(n.fields, n.tags, n.noteId, n.mod, existing);
+    const ankiWord = spec.fromFields(n.fields, n.tags, n.noteId, n.mod, existing);
     const differs = contentDiffers(existing, ankiWord);
     if (!differs) {
       plan.unchanged++;
@@ -274,60 +231,59 @@ export interface ApplyOptions {
   conflictResolution: "auto" | "web" | "anki";
 }
 
-export async function applySync(plan: SyncPlan, opts: ApplyOptions, invoke: AnkiInvoker = invoker()): Promise<{ imported: number; pushed: number; resolved: number }> {
+export async function applySync(plan: SyncPlan, opts: ApplyOptions, invoke: AnkiInvoker = invoker(), ctx = activeSpec()): Promise<{ imported: number; pushed: number; resolved: number }> {
+  const { spec, lang } = ctx;
   let imported = 0;
   let pushed = 0;
   let resolved = 0;
   const now = Date.now();
-  // Notas sin WebID → escribir de vuelta
   for (const n of plan.missingWebId) {
-    const hanzi = (n.fields.Hanzi?.value ?? "").replace(/<[^>]+>/g, "").trim();
-    const w = await db.words.where("hanzi").equals(hanzi).first();
-    const id = w?.id ?? `mine-${hanzi}`;
+    const hanzi = (n.fields[spec.keyField]?.value ?? "").replace(/<[^>]+>/g, "").trim();
+    const w = await db.words.where("[lang+hanzi]").equals([lang, hanzi]).first();
+    const id = w?.id ?? `${spec.minePrefix}${hanzi}`;
     await invoke("updateNoteFields", { note: { id: n.noteId, fields: { WebID: id } } }).catch(() => undefined);
   }
   if (opts.importNewFromAnki) {
-    const words = plan.newInAnki.map(({ word }) => ({ ...word, source: "anki" as const }));
+    const words = plan.newInAnki.map(({ word }) => ({ ...word, lang, source: "anki" as const }));
     const cards: Card[] = [];
-    for (const w of words) for (const t of ["recognition", "production", "listening"] as const) cards.push(newCard(w.id, t, now));
+    for (const w of words) for (const t of ["recognition", "production", "listening"] as const) cards.push(newCard(w.id, t, now, lang));
     await db.transaction("rw", db.words, db.cards, db.categories, async () => {
       await db.words.bulkPut(words);
       await db.cards.bulkPut(cards.filter(Boolean));
       for (const w of words) {
-        const catId = slugify(w.category);
-        if (!(await db.categories.get(catId))) await db.categories.put({ id: catId, name: w.category, color: "#7a7064", icon: "Tag", order: 50, builtin: false });
+        const catId = lang === "zh" ? slugify(w.category) : `${lang}:${slugify(w.category)}`;
+        if (!(await db.categories.get(catId))) await db.categories.put({ id: catId, lang, name: w.category, color: "#7a7064", icon: "Tag", order: 50, builtin: false });
       }
     });
     imported = words.length;
-    if (imported) await bumpDaily({ newWords: imported });
+    if (imported) await bumpDaily({ newWords: imported }, lang);
   }
   for (const c of plan.conflicts) {
     const winner = opts.conflictResolution === "auto" ? c.winner : opts.conflictResolution;
     if (winner === "anki") {
-      await db.words.put({ ...c.anki, updatedAt: now });
+      await db.words.put({ ...c.anki, lang, updatedAt: now });
     } else {
-      await invoke("updateNoteFields", { note: { id: c.note.noteId, fields: wordToFields(c.web) } });
+      await invoke("updateNoteFields", { note: { id: c.note.noteId, fields: spec.toFields(c.web) } });
       await db.words.update(c.web.id, { ankiNoteId: c.note.noteId, ankiMod: c.note.mod });
     }
     resolved++;
   }
   if (opts.pushNewToAnki && plan.newInWeb.length) {
-    const r = await pushWordsToAnki(plan.newInWeb, invoke);
+    const r = await pushWordsToAnki(plan.newInWeb, invoke, ctx);
     pushed = r.created + r.updated;
   }
-  await db.syncState.put({ key: "anki:lastSync", value: now, updatedAt: now });
+  await db.syncState.put({ key: syncKey("anki:lastSync", lang), value: now, updatedAt: now });
   return { imported, pushed, resolved };
 }
 
 /* ------------------------ Estado de aprendizaje ------------------------ */
 
-const ORD_TO_TYPE: Record<number, Card["type"]> = { 0: "recognition", 1: "production", 2: "listening" };
-
 /** Lee el estado de las tarjetas en Anki y lo vuelca en las tarjetas locales (ankiState/ankiInterval). */
-export async function pullCardStates(invoke: AnkiInvoker = invoker()): Promise<number> {
-  const noteIds = await invoke<number[]>("findNotes", { query: `"note:${MODEL_NAME}"` });
+export async function pullCardStates(invoke: AnkiInvoker = invoker(), ctx = activeSpec()): Promise<number> {
+  const { spec, lang } = ctx;
+  const noteIds = await invoke<number[]>("findNotes", { query: `"note:${spec.modelName}"` });
   if (!noteIds.length) return 0;
-  const cardIds = await invoke<number[]>("findCards", { query: `"note:${MODEL_NAME}"` });
+  const cardIds = await invoke<number[]>("findCards", { query: `"note:${spec.modelName}"` });
   const infos = await invoke<AnkiCardInfo[]>("cardsInfo", { cards: cardIds });
   const notes = await invoke<AnkiNoteInfo[]>("notesInfo", { notes: noteIds });
   const noteToWebId = new Map<number, string>();
@@ -341,7 +297,7 @@ export async function pullCardStates(invoke: AnkiInvoker = invoker()): Promise<n
     for (const c of infos) {
       const webId = noteToWebId.get(c.note);
       if (!webId) continue;
-      const type = ORD_TO_TYPE[c.ord];
+      const type = spec.ordToType[c.ord];
       if (!type) continue;
       const cardId = `${webId}:${type}`;
       const local = await db.cards.get(cardId);
@@ -349,17 +305,15 @@ export async function pullCardStates(invoke: AnkiInvoker = invoker()): Promise<n
       if (local) {
         await db.cards.update(cardId, { ankiState: state, ankiInterval: c.interval, ankiDue: c.due, updatedAt: now });
       } else if (await db.words.get(webId)) {
-        await db.cards.put({ ...newCard(webId, type, now), ankiState: state, ankiInterval: c.interval, ankiDue: c.due });
+        await db.cards.put({ ...newCard(webId, type, now, lang), ankiState: state, ankiInterval: c.interval, ankiDue: c.due });
       } else continue;
       updated++;
     }
   });
-  await db.syncState.put({ key: "anki:lastPull", value: now, updatedAt: now });
+  await db.syncState.put({ key: syncKey("anki:lastPull", lang), value: now, updatedAt: now });
   return updated;
 }
 
 export async function ankiWebSync(invoke: AnkiInvoker = invoker()): Promise<void> {
   await invoke("sync");
 }
-
-export { DECK_ROOT };

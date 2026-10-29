@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { TodayDashboard } from "@/components/today/dashboard";
+import { LanguageHome } from "@/components/layout/language-home";
 
-export const metadata: Metadata = { title: "Hoy" };
+export const metadata: Metadata = { title: "Elige idioma" };
 
-export default function HomePage() {
-  return <TodayDashboard />;
+export default function RootPage() {
+  return <LanguageHome />;
 }

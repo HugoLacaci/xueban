@@ -1,0 +1,211 @@
+{
+  "id": "ko-u03",
+  "order": 4,
+  "title": "La familia",
+  "zh": "가족",
+  "description": "Hablar de tu familia: quién hay, cuántos sois, cómo son y a qué se dedican. Primeras conjugaciones en -아요/어요.",
+  "icon": "Baby",
+  "level": 1,
+  "lang": "ko",
+  "category": "Familia y personas",
+  "checkpoint": { "exercises": 15 },
+  "lessons": [
+    {
+      "id": "ko-u03-l1",
+      "title": "Mi familia",
+      "zh": "우리 가족",
+      "goal": "Nombrar a los miembros de la familia y decir quién hay con 이/가 있어요 / 없어요.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "가족", "pinyin": "gajok", "es": "familia" },
+        { "hanzi": "아버지", "pinyin": "abeoji", "es": "padre" },
+        { "hanzi": "어머니", "pinyin": "eomeoni", "es": "madre" },
+        { "hanzi": "부모님", "pinyin": "bumonim", "es": "padres" },
+        { "hanzi": "동생", "pinyin": "dongsaeng", "es": "hermano/a menor" },
+        { "hanzi": "할아버지", "pinyin": "harabeoji", "es": "abuelo" },
+        { "hanzi": "할머니", "pinyin": "halmeoni", "es": "abuela" },
+        { "hanzi": "있어요", "pinyin": "isseoyo", "es": "hay; tengo; está" },
+        { "hanzi": "없어요", "pinyin": "eopseoyo", "es": "no hay; no tengo" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "Las personas de casa" },
+        {
+          "type": "dialogue",
+          "title": "Una foto en el móvil",
+          "lines": [
+            { "speaker": "지민", "zh": "우고 씨, 이 사진은 뭐예요?", "py": "Ugo ssi, i sajineun mwoyeyo?", "es": "Hugo, ¿qué foto es esta?" },
+            { "speaker": "우고", "zh": "우리 가족 사진이에요.", "py": "Uri gajok sajinieyo.", "es": "Es una foto de mi familia." },
+            { "speaker": "지민", "zh": "와! 이분은 누구예요?", "py": "Wa! Ibuneun nuguyeyo?", "es": "¡Hala! ¿Quién es esta señora?" },
+            { "speaker": "우고", "zh": "우리 어머니예요. 이분은 우리 아버지예요.", "py": "Uri eomeoniyeyo. Ibuneun uri abeojiyeyo.", "es": "Es mi madre. Y este es mi padre." },
+            { "speaker": "지민", "zh": "동생이 있어요?", "py": "Dongsaengi isseoyo?", "es": "¿Tienes hermanos pequeños?" },
+            { "speaker": "우고", "zh": "네, 동생이 있어요. 형은 없어요.", "py": "Ne, dongsaengi isseoyo. Hyeongeun eopseoyo.", "es": "Sí, tengo una hermana pequeña. Hermano mayor no tengo." }
+          ],
+          "notes": "사진 = foto (adelanto). Para la propia familia se dice 우리 어머니 («nuestra madre»), no «제 어머니»: la familia se siente compartida. 있어요 significa a la vez «hay», «tengo» y «está»: 동생이 있어요 = «tengo un hermano menor» (literalmente «existe un hermano menor»). 동생 no dice si es chico o chica; si hace falta: 남동생 / 여동생 (lección 2)."
+        },
+        { "type": "grammar", "id": "i-ga" },
+        { "type": "exercises", "count": 10, "types": ["choose-meaning", "listen-choose", "particle", "fill-blank", "matching", "pinyin-input", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ko-u03-l2",
+      "title": "¿Cuántos sois en casa?",
+      "zh": "가족이 몇 명이에요?",
+      "goal": "Decir cuántos sois y hablar de hermanos, distinguiendo cuándo usar 은/는 y cuándo 이/가.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "형제", "pinyin": "hyeongje", "es": "hermanos (en general)" },
+        { "hanzi": "남동생", "pinyin": "namdongsaeng", "es": "hermano menor" },
+        { "hanzi": "여동생", "pinyin": "yeodongsaeng", "es": "hermana menor" },
+        { "hanzi": "아들", "pinyin": "adeul", "es": "hijo" },
+        { "hanzi": "딸", "pinyin": "ttal", "es": "hija" },
+        { "hanzi": "외동", "pinyin": "oedong", "es": "hijo/a único/a" },
+        { "hanzi": "모두", "pinyin": "modu", "es": "todos; en total" },
+        { "hanzi": "그리고", "pinyin": "geurigo", "es": "y; además (entre frases)" }
+      ],
+      "steps": [
+        { "type": "vocab" },
+        {
+          "type": "dialogue",
+          "title": "Familias grandes y pequeñas",
+          "lines": [
+            { "speaker": "민수", "zh": "우고 씨 가족은 몇 명이에요?", "py": "Ugo ssi gajogeun myeot myeongieyo?", "es": "Hugo, ¿cuántos sois en tu familia?" },
+            { "speaker": "우고", "zh": "다섯 명이에요. 아버지, 어머니, 할머니, 여동생, 그리고 저예요.", "py": "Daseot myeongieyo. Abeoji, eomeoni, halmeoni, yeodongsaeng, geurigo jeoyeyo.", "es": "Somos cinco. Mi padre, mi madre, mi abuela, mi hermana pequeña y yo." },
+            { "speaker": "민수", "zh": "여동생은 몇 살이에요?", "py": "Yeodongsaengeun myeot sarieyo?", "es": "¿Cuántos años tiene tu hermana?" },
+            { "speaker": "우고", "zh": "열일곱 살이에요. 민수 씨는 형제가 있어요?", "py": "Yeollilgop sarieyo. Minsu ssineun hyeongjega isseoyo?", "es": "Diecisiete. Minsu, ¿tú tienes hermanos?" },
+            { "speaker": "민수", "zh": "아니요, 형제가 없어요. 저는 외동이에요.", "py": "Aniyo, hyeongjega eopseoyo. Jeoneun oedongieyo.", "es": "No, no tengo hermanos. Soy hijo único." },
+            { "speaker": "우고", "zh": "아, 그래요?", "py": "A, geuraeyo?", "es": "Ah, ¿sí?" }
+          ],
+          "notes": "열일곱 (17) se pronuncia [열릴곱]: la ㄹ final se encadena y se añade un sonido de unión, por eso la romanización es *yeollilgop*. Familia de cinco con abuela en casa es muy común también en Corea, aunque hoy predominan las familias pequeñas: Corea tiene una de las tasas de natalidad más bajas del mundo y muchos jóvenes son 외동."
+        },
+        { "type": "grammar", "id": "eun-neun-vs-i-ga" },
+        { "type": "exercises", "count": 12, "types": ["particle", "choose-meaning", "classifier", "fill-blank", "order-words", "dictation", "translate-to-es", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ko-u03-l3",
+      "title": "¿Cómo es tu familia?",
+      "zh": "어때요?",
+      "goal": "Describir a personas con adjetivos conjugados en -아요/어요.",
+      "minutes": 15,
+      "vocab": [
+        { "hanzi": "키", "pinyin": "ki", "es": "estatura" },
+        { "hanzi": "크다", "pinyin": "keuda", "es": "ser grande; ser alto (키가 크다)" },
+        { "hanzi": "작다", "pinyin": "jakda", "es": "ser pequeño; ser bajo (키가 작다)" },
+        { "hanzi": "예쁘다", "pinyin": "yeppeuda", "es": "ser guapa; ser bonito" },
+        { "hanzi": "멋있다", "pinyin": "meositda", "es": "ser guapo; tener estilo; molar" },
+        { "hanzi": "친절하다", "pinyin": "chinjeolhada", "es": "ser amable" },
+        { "hanzi": "재미있다", "pinyin": "jaemiitda", "es": "ser divertido; ser interesante" },
+        { "hanzi": "좋다", "pinyin": "jota", "es": "ser bueno; estar bien" },
+        { "hanzi": "아주", "pinyin": "aju", "es": "muy" },
+        { "hanzi": "어때요?", "pinyin": "eottaeyo?", "es": "¿qué tal es?; ¿cómo es?" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "En coreano los adjetivos se conjugan" },
+        {
+          "type": "dialogue",
+          "title": "Describiendo la foto",
+          "lines": [
+            { "speaker": "지민", "zh": "우고 씨 여동생은 어때요?", "py": "Ugo ssi yeodongsaengeun eottaeyo?", "es": "¿Cómo es tu hermana, Hugo?" },
+            { "speaker": "우고", "zh": "아주 예뻐요. 그리고 재미있어요.", "py": "Aju yeppeoyo. Geurigo jaemiisseoyo.", "es": "Es muy guapa. Y divertida." },
+            { "speaker": "지민", "zh": "아버지는 키가 커요?", "py": "Abeojineun kiga keoyo?", "es": "¿Tu padre es alto?" },
+            { "speaker": "우고", "zh": "네, 키가 커요. 어머니는 키가 작아요.", "py": "Ne, kiga keoyo. Eomeonineun kiga jagayo.", "es": "Sí, es alto. Mi madre es bajita." },
+            { "speaker": "지민", "zh": "할머니는요?", "py": "Halmeonineunyo?", "es": "¿Y tu abuela?" },
+            { "speaker": "우고", "zh": "할머니는 아주 친절해요. 우리 가족은 모두 좋아요!", "py": "Halmeonineun aju chinjeolhaeyo. Uri gajogeun modu joayo!", "es": "Mi abuela es muy amable. ¡En mi familia todos son buena gente!" }
+          ],
+          "notes": "Los adjetivos coreanos funcionan como **verbos**: 크다 (ser alto) → 커요, sin «ser» aparte. «Alto» se dice 키가 커요, literalmente «la estatura es grande». 예쁘다 → 예뻐요 y 크다 → 커요 pierden la ㅡ (irregular de 으, lo verás más adelante). 하다 → 해요 siempre: 친절하다 → 친절해요."
+        },
+        { "type": "grammar", "id": "ayo-eoyo" },
+        { "type": "exercises", "count": 12, "types": ["conjugation", "choose-meaning", "fill-blank", "build-sentence", "listen-choose", "translate-to-es", "pinyin-input", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ko-u03-l4",
+      "title": "¿A qué se dedican?",
+      "zh": "무슨 일을 하세요?",
+      "goal": "Decir la profesión de tus familiares y unir personas con 하고 / 와·과.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "의사", "pinyin": "uisa", "es": "médico/a" },
+        { "hanzi": "간호사", "pinyin": "ganhosa", "es": "enfermero/a" },
+        { "hanzi": "요리사", "pinyin": "yorisa", "es": "cocinero/a" },
+        { "hanzi": "고등학생", "pinyin": "godeunghaksaeng", "es": "estudiante de bachillerato" },
+        { "hanzi": "일", "pinyin": "il", "es": "trabajo; tarea" },
+        { "hanzi": "무슨", "pinyin": "museun", "es": "qué (tipo de)" },
+        { "hanzi": "하고", "pinyin": "hago", "es": "y; con (entre nombres)" },
+        { "hanzi": "일하다", "pinyin": "ilhada", "es": "trabajar" }
+      ],
+      "steps": [
+        { "type": "vocab" },
+        {
+          "type": "dialogue",
+          "title": "Profesiones de la familia",
+          "lines": [
+            { "speaker": "민수", "zh": "우고 씨 아버지는 무슨 일을 하세요?", "py": "Ugo ssi abeojineun museun ireul haseyo?", "es": "Hugo, ¿a qué se dedica tu padre?" },
+            { "speaker": "우고", "zh": "아버지는 의사예요. 어머니는 요리사예요.", "py": "Abeojineun uisayeyo. Eomeonineun yorisayeyo.", "es": "Mi padre es médico. Mi madre es cocinera." },
+            { "speaker": "민수", "zh": "와, 멋있어요! 여동생은요?", "py": "Wa, meosisseoyo! Yeodongsaengeunyo?", "es": "¡Qué guay! ¿Y tu hermana?" },
+            { "speaker": "우고", "zh": "여동생은 고등학생이에요.", "py": "Yeodongsaengeun godeunghaksaengieyo.", "es": "Mi hermana estudia bachillerato." },
+            { "speaker": "민수", "zh": "우리 아버지하고 어머니는 회사원이에요.", "py": "Uri abeojihago eomeonineun hoesawonieyo.", "es": "Mi padre y mi madre son oficinistas." },
+            { "speaker": "우고", "zh": "아, 민수 씨도 회사원이에요. 가족이 모두 회사원이에요!", "py": "A, Minsu ssido hoesawonieyo. Gajogi modu hoesawonieyo!", "es": "Ah, y tú también eres oficinista. ¡Toda la familia es oficinista!" }
+          ],
+          "notes": "무슨 일을 하세요? = «¿a qué se dedica?». El -세요 es honorífico: se usa porque se habla del padre de otra persona (lo estudiarás más adelante). Para preguntar a alguien de tu edad: 무슨 일 해요? Al hablar de padres ajenos, mejor 아버님 / 어머님; aquí se simplifica."
+        },
+        { "type": "grammar", "id": "wa-gwa-hago" },
+        { "type": "exercises", "count": 12, "types": ["particle", "choose-meaning", "fill-blank", "order-words", "build-sentence", "dictation", "translate-to-es", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ko-u03-l5",
+      "title": "Lectura y repaso: mi familia",
+      "zh": "복습",
+      "goal": "Leer la presentación de una familia y consolidar el vocabulario de la unidad.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "사진", "pinyin": "sajin", "es": "foto" },
+        { "hanzi": "집", "pinyin": "jip", "es": "casa" },
+        { "hanzi": "살다", "pinyin": "salda", "es": "vivir" },
+        { "hanzi": "같이", "pinyin": "gachi", "es": "juntos" },
+        { "hanzi": "강아지", "pinyin": "gangaji", "es": "perrito; cachorro" },
+        { "hanzi": "어디", "pinyin": "eodi", "es": "dónde" },
+        { "hanzi": "여기", "pinyin": "yeogi", "es": "aquí" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "Casa, foto y mascota" },
+        {
+          "type": "dialogue",
+          "title": "¿Dónde vive tu familia?",
+          "lines": [
+            { "speaker": "지민", "zh": "우고 씨 가족은 어디에 살아요?", "py": "Ugo ssi gajogeun eodie sarayo?", "es": "Hugo, ¿dónde vive tu familia?" },
+            { "speaker": "우고", "zh": "마드리드에 살아요.", "py": "Madeurideue sarayo.", "es": "Vive en Madrid." },
+            { "speaker": "지민", "zh": "할머니도 같이 살아요?", "py": "Halmeonido gachi sarayo?", "es": "¿Tu abuela también vive con vosotros?" },
+            { "speaker": "우고", "zh": "네, 같이 살아요. 강아지도 있어요!", "py": "Ne, gachi sarayo. Gangajido isseoyo!", "es": "Sí, vivimos juntos. ¡Y también tenemos un perrito!" },
+            { "speaker": "지민", "zh": "와, 강아지 사진이 있어요?", "py": "Wa, gangaji sajini isseoyo?", "es": "¡Anda! ¿Tienes una foto del perrito?" },
+            { "speaker": "우고", "zh": "네, 여기 있어요. 이름은 코코예요.", "py": "Ne, yeogi isseoyo. Ireumeun Kokoyeyo.", "es": "Sí, aquí está. Se llama Coco." }
+          ],
+          "notes": "살다 → 살아요 (vivir). 어디에 = ¿dónde? (en qué lugar): la partícula 에 de lugar la verás en la unidad 4. 여기 있어요 = «aquí está», frase muy útil al dar algo a alguien."
+        },
+        {
+          "type": "reading",
+          "title": "La familia de Hugo",
+          "text": "우리 가족은 다섯 명이에요. 아버지, 어머니, 할머니, 여동생하고 저예요. 우리는 마드리드에 살아요. 아버지는 의사예요. 키가 아주 커요. 어머니는 요리사예요. 아주 친절해요. 여동생은 열일곱 살이에요. 고등학생이에요. 그리고 강아지도 있어요. 이름은 코코예요. 우리 가족은 모두 재미있어요!",
+          "es": "En mi familia somos cinco: mi padre, mi madre, mi abuela, mi hermana pequeña y yo. Vivimos en Madrid. Mi padre es médico. Es muy alto. Mi madre es cocinera. Es muy amable. Mi hermana tiene diecisiete años. Estudia bachillerato. Y también tenemos un perrito. Se llama Coco. ¡En mi familia todos son divertidos!",
+          "questions": [
+            { "q": "¿Cuántas personas hay en la familia de Hugo?", "options": ["Tres", "Cuatro", "Cinco", "Seis"], "answer": 2, "explain": "다섯 명 = cinco personas (el perrito no cuenta como 명)." },
+            { "q": "¿Cómo es la madre de Hugo?", "options": ["Alta", "Muy amable", "Divertida y alta", "Médica"], "answer": 1, "explain": "어머니는 요리사예요. 아주 친절해요. = Es cocinera. Es muy amable." },
+            { "q": "¿Quién es Coco?", "options": ["La hermana de Hugo", "La abuela", "El perrito", "Una amiga"], "answer": 2, "explain": "강아지도 있어요. 이름은 코코예요." }
+          ]
+        },
+        { "type": "exercises", "count": 12, "types": ["matching", "choose-meaning", "particle", "conjugation", "order-words", "fill-blank", "translate-to-es", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    }
+  ]
+}

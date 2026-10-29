@@ -7,7 +7,7 @@ async function ready(page: Page) {
   const skip = page.getByText("Saltar y usar valores por defecto");
   if (await skip.count()) {
     await skip.click();
-    await page.waitForURL("/");
+    await page.waitForURL((u) => /^\/zh\/?$/.test(u.pathname));
   }
 }
 
@@ -20,7 +20,7 @@ test.describe("Xuébàn · flujos principales", () => {
 
   test("completar una lección: vocabulario → diálogo → gramática → ejercicios → repaso", async ({ page }) => {
     await ready(page);
-    await page.goto("/aprender/leccion/u01-l1");
+    await page.goto("/zh/aprender/leccion/u01-l1");
     await expect(page.getByRole("heading", { name: /Hola, gracias, adiós/ })).toBeVisible();
     await expect(page.getByRole("heading", { name: "Las 7 expresiones que usarás cada día" })).toBeVisible();
     await page.getByRole("button", { name: "En la puerta de la escuela" }).click();
@@ -50,15 +50,15 @@ test.describe("Xuébàn · flujos principales", () => {
     await page.getByRole("button", { name: /Terminar lección/ }).click({ force: true });
     // guardar progreso + pantalla final con animación: en el servidor de desarrollo puede tardar más de 5 s
     await expect(page.getByText("¡Lección completada!")).toBeVisible({ timeout: 20000 });
-    await page.goto("/aprender");
+    await page.goto("/zh/aprender");
     await expect(page.getByText(/1 de \d+ lecciones completadas/)).toBeVisible();
   });
 
   test("añadir una palabra y verla en flashcards", async ({ page }) => {
     await ready(page);
-    await page.goto("/flashcards");
+    await page.goto("/zh/flashcards");
     await page.getByRole("button", { name: /Añadir palabra/ }).click();
-    await page.getByLabel("Hanzi").fill("啤酒");
+    await page.getByLabel("汉字", { exact: true }).fill("啤酒");
     await page.getByLabel("Significado (español)").fill("cerveza");
     await page.getByRole("button", { name: "Guardar" }).click();
     await expect(page.getByText(/啤酒 añadida a flashcards/)).toBeVisible();
@@ -71,7 +71,7 @@ test.describe("Xuébàn · flujos principales", () => {
 
   test("repasar flashcards con atajos de teclado", async ({ page }) => {
     await ready(page);
-    await page.goto("/flashcards/repasar");
+    await page.goto("/zh/flashcards/repasar");
     await expect(page.getByText(/1 \/ \d+/)).toBeVisible({ timeout: 15000 });
     await page.keyboard.press("Enter");
     await expect(page.getByText("Otra vez")).toBeVisible();
@@ -81,9 +81,9 @@ test.describe("Xuébàn · flujos principales", () => {
 
   test("ver un vídeo curado con subtítulos interactivos", async ({ page }) => {
     await ready(page);
-    await page.goto("/videos");
+    await page.goto("/zh/videos");
     await expect(page.getByText("Vídeos curados para principiantes")).toBeVisible();
-    await page.locator("a[href^='/videos/']").first().click();
+    await page.locator("a[href*='/zh/videos/']").first().click();
     await expect(page.getByRole("tab", { name: /Transcripción/ })).toBeVisible();
     await expect(page.locator(".zh-word").first()).toBeVisible({ timeout: 15000 });
     await page.getByRole("tab", { name: /Vocabulario nuevo/ }).click();
@@ -92,7 +92,7 @@ test.describe("Xuébàn · flujos principales", () => {
 
   test("diccionario: buscar por pinyin y abrir la ficha", async ({ page }) => {
     await ready(page);
-    await page.goto("/diccionario?q=xuesheng");
+    await page.goto("/zh/diccionario?q=xuesheng");
     await expect(page.locator("li", { hasText: "学生" }).first()).toBeVisible({ timeout: 20000 });
     await page.locator("li", { hasText: "学生" }).first().getByRole("button").click();
     await expect(page.getByText("estudiante").first()).toBeVisible();
@@ -101,7 +101,7 @@ test.describe("Xuébàn · flujos principales", () => {
 
   test("popup de diccionario al pulsar una palabra y atajo P de pinyin", async ({ page }) => {
     await ready(page);
-    await page.goto("/lectura/r01");
+    await page.goto("/zh/lectura/r01");
     await page.locator(".zh-word").first().click();
     await expect(page.getByRole("dialog", { name: /Diccionario/ })).toBeVisible();
     await page.keyboard.press("Escape");

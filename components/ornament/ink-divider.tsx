@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useId, useState } from "react";
+import { targetLang } from "@/lib/languages/registry";
 import { cn } from "@/lib/utils";
 
 /** Pincelada fina como divisor; opcionalmente con un carácter o texto en el centro. */
@@ -7,7 +8,7 @@ export function InkDivider({ className, label, animate }: { className?: string; 
   return (
     <div className={cn("my-4 flex items-center gap-3", className)} role="separator">
       <Brush animate={animate} />
-      {label ? <span className="shrink-0 font-[family-name:var(--font-display-zh)] text-sm text-ink-faint">{label}</span> : null}
+      {label ? <span lang={targetLang()} className="shrink-0 font-[family-name:var(--font-display-zh)] text-sm text-ink-faint">{label}</span> : null}
       {label ? <Brush animate={animate} flip /> : null}
     </div>
   );

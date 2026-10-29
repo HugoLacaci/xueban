@@ -1,8 +1,11 @@
-import readingsJson from "@/content/readings/readings.json";
+/** Fachada de lecturas graduadas del idioma activo (contenido en cada paquete). */
 import type { GradedReading } from "./types";
+import { getActivePack } from "@/lib/languages/registry";
 
-export const READINGS: GradedReading[] = readingsJson as GradedReading[];
+export function getReadings(): GradedReading[] {
+  return getActivePack().readings;
+}
 
 export function readingById(id: string): GradedReading | undefined {
-  return READINGS.find((r) => r.id === id);
+  return getActivePack().readings.find((r) => r.id === id);
 }

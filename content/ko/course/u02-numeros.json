@@ -1,0 +1,226 @@
+{
+  "id": "ko-u02",
+  "order": 3,
+  "title": "Números y edad",
+  "zh": "숫자와 나이",
+  "description": "Los dos sistemas de números del coreano (sino-coreano y nativo), el teléfono, contar personas y decir la edad sin meter la pata con los tratamientos.",
+  "icon": "Hash",
+  "level": 1,
+  "lang": "ko",
+  "category": "Números y cantidades",
+  "checkpoint": { "exercises": 15 },
+  "lessons": [
+    {
+      "id": "ko-u02-l1",
+      "title": "Del 1 al 10 (sino-coreanos)",
+      "zh": "일, 이, 삼",
+      "goal": "Contar del 1 al 99 con los números sino-coreanos.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "일", "pinyin": "il", "es": "uno" },
+        { "hanzi": "이", "pinyin": "i", "es": "dos" },
+        { "hanzi": "삼", "pinyin": "sam", "es": "tres" },
+        { "hanzi": "사", "pinyin": "sa", "es": "cuatro" },
+        { "hanzi": "오", "pinyin": "o", "es": "cinco" },
+        { "hanzi": "육", "pinyin": "yuk", "es": "seis" },
+        { "hanzi": "칠", "pinyin": "chil", "es": "siete" },
+        { "hanzi": "팔", "pinyin": "pal", "es": "ocho" },
+        { "hanzi": "구", "pinyin": "gu", "es": "nueve" },
+        { "hanzi": "십", "pinyin": "sip", "es": "diez" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "Los números que vienen del chino" },
+        {
+          "type": "dialogue",
+          "title": "En la parada del autobús",
+          "lines": [
+            { "speaker": "우고", "zh": "실례합니다. 이 버스는 칠 번이에요?", "py": "Sillyehamnida. I beoseuneun chil beonieyo?", "es": "Perdone. ¿Este autobús es el 7?" },
+            { "speaker": "아저씨", "zh": "아니요, 칠 번이 아니에요. 일 번이에요.", "py": "Aniyo, chil beoni anieyo. Il beonieyo.", "es": "No, no es el 7. Es el 1." },
+            { "speaker": "우고", "zh": "아, 일 번이에요? 그럼 칠 번은요?", "py": "A, il beonieyo? Geureom chil beoneunyo?", "es": "Ah, ¿es el 1? ¿Y entonces el 7?" },
+            { "speaker": "아저씨", "zh": "칠 번은 저 버스예요.", "py": "Chil beoneun jeo beoseuyeyo.", "es": "El 7 es aquel autobús." },
+            { "speaker": "우고", "zh": "감사합니다!", "py": "Gamsahamnida!", "es": "¡Gracias!" }
+          ],
+          "notes": "실례합니다 = «perdone; disculpe» para llamar la atención de un desconocido. 버스 = autobús; 번 = número (de línea, de turno, de teléfono). 그럼 = entonces. 아저씨 = señor de mediana edad. Fíjate en que 일 (*il*) y 칠 (*chil*) se confunden fácilmente al oído: escucha la *ch* aspirada."
+        },
+        { "type": "grammar", "id": "numbers-sino" },
+        {
+          "type": "explain",
+          "title": "Del 11 al 99: como un Lego",
+          "markdown": "Los sino-coreanos se montan igual que en chino, sin excepciones:\n\n- **11** = 십일 (10 + 1) · **15** = 십오 · **19** = 십구\n- **20** = 이십 (2 × 10) · **35** = 삼십오 (3 × 10 + 5) · **99** = 구십구\n\nNo se dice «일십» para el 10: basta 십. Ojo con la pronunciación: 십육 (16) suena [심뉵] *simnyuk*, y 육 tras consonante puede sonar [뉵]. No te agobies: se aprende con el oído.\n\n¿Para qué sirven? Teléfonos, precios, números de autobús, de aula y de piso, fechas, minutos y meses. Las horas y la edad usan los **nativos** (lección 3)."
+        },
+        { "type": "exercises", "count": 10, "types": ["choose-meaning", "listen-choose", "pinyin-input", "dictation", "matching", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ko-u02-l2",
+      "title": "¿Cuál es tu número de teléfono?",
+      "zh": "전화번호가 뭐예요?",
+      "goal": "Dar y pedir un número de teléfono y usar las palabras interrogativas 뭐, 몇 y 어떻게.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "공", "pinyin": "gong", "es": "cero (en teléfonos y códigos)" },
+        { "hanzi": "전화번호", "pinyin": "jeonhwabeonho", "es": "número de teléfono" },
+        { "hanzi": "휴대폰", "pinyin": "hyudaepon", "es": "teléfono móvil" },
+        { "hanzi": "번호", "pinyin": "beonho", "es": "número (identificador)" },
+        { "hanzi": "몇", "pinyin": "myeot", "es": "cuántos; qué número" },
+        { "hanzi": "어떻게", "pinyin": "eotteoke", "es": "cómo" },
+        { "hanzi": "다시", "pinyin": "dasi", "es": "otra vez; de nuevo" }
+      ],
+      "steps": [
+        { "type": "vocab" },
+        {
+          "type": "dialogue",
+          "title": "Intercambiando números",
+          "lines": [
+            { "speaker": "지민", "zh": "우고 씨, 휴대폰 번호가 뭐예요?", "py": "Ugo ssi, hyudaepon beonhoga mwoyeyo?", "es": "Hugo, ¿cuál es tu número de móvil?" },
+            { "speaker": "우고", "zh": "공일공, 이삼사오, 육칠팔구예요.", "py": "Gong-il-gong, i-sam-sa-o, yuk-chil-pal-gu-yeyo.", "es": "010-2345-6789." },
+            { "speaker": "지민", "zh": "죄송해요. 다시 한번 말해 주세요.", "py": "Joesonghaeyo. Dasi hanbeon malhae juseyo.", "es": "Perdona. Dímelo otra vez, por favor." },
+            { "speaker": "우고", "zh": "공일공, 이삼사오, 육칠팔구예요.", "py": "Gong-il-gong, i-sam-sa-o, yuk-chil-pal-gu-yeyo.", "es": "010-2345-6789." },
+            { "speaker": "지민", "zh": "네, 감사합니다. 제 번호는 공일공, 오오육일, 삼삼팔칠이에요.", "py": "Ne, gamsahamnida. Je beonhoneun gong-il-gong, o-o-yuk-il, sam-sam-pal-chil-ieyo.", "es": "Vale, gracias. Mi número es 010-5561-3387." },
+            { "speaker": "우고", "zh": "삼삼팔칠, 맞아요?", "py": "Sam-sam-pal-chil, majayo?", "es": "3387, ¿verdad?" }
+          ],
+          "notes": "Los móviles coreanos empiezan por 010. Los números de teléfono se leen **cifra a cifra** con sino-coreanos y el 0 se dice 공. El guion se lee a menudo como [에] (공일공에 이삼사오…) o se hace una pausa. 다시 한번 말해 주세요 («repítalo, por favor») te salvará muchas veces: la estructura -아/어 주세요 llega en la unidad 6. 죄송해요 es la versión -요 de 죄송합니다. Fíjate: …육칠팔구**예요** (acaba en vocal) pero …삼삼팔칠**이에요** (acaba en consonante)."
+        },
+        { "type": "grammar", "id": "question-words" },
+        { "type": "exercises", "count": 10, "types": ["dictation", "listen-choose", "pinyin-input", "fill-blank", "choose-meaning", "order-words", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ko-u02-l3",
+      "title": "Uno, dos, tres (nativos)",
+      "zh": "하나, 둘, 셋",
+      "goal": "Contar del 1 al 10 con los números nativos coreanos.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "하나", "pinyin": "hana", "es": "uno" },
+        { "hanzi": "둘", "pinyin": "dul", "es": "dos" },
+        { "hanzi": "셋", "pinyin": "set", "es": "tres" },
+        { "hanzi": "넷", "pinyin": "net", "es": "cuatro" },
+        { "hanzi": "다섯", "pinyin": "daseot", "es": "cinco" },
+        { "hanzi": "여섯", "pinyin": "yeoseot", "es": "seis" },
+        { "hanzi": "일곱", "pinyin": "ilgop", "es": "siete" },
+        { "hanzi": "여덟", "pinyin": "yeodeol", "es": "ocho" },
+        { "hanzi": "아홉", "pinyin": "ahop", "es": "nueve" },
+        { "hanzi": "열", "pinyin": "yeol", "es": "diez" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "Los números «de casa»" },
+        {
+          "type": "dialogue",
+          "title": "En la puerta del restaurante",
+          "lines": [
+            { "speaker": "직원", "zh": "어서 오세요! 몇 분이세요?", "py": "Eoseo oseyo! Myeot buniseyo?", "es": "¡Bienvenidos! ¿Cuántos son?" },
+            { "speaker": "우고", "zh": "세 명이에요.", "py": "Se myeongieyo.", "es": "Somos tres." },
+            { "speaker": "직원", "zh": "세 분이요? 이쪽으로 오세요.", "py": "Se buniyo? Ijjogeuro oseyo.", "es": "¿Tres? Vengan por aquí." },
+            { "speaker": "우고", "zh": "아, 죄송해요. 네 명이에요!", "py": "A, joesonghaeyo. Ne myeongieyo!", "es": "Ay, perdone. ¡Somos cuatro!" },
+            { "speaker": "직원", "zh": "네, 네 분이요. 괜찮아요.", "py": "Ne, ne buniyo. Gwaenchanayo.", "es": "Vale, cuatro. No hay problema." }
+          ],
+          "notes": "어서 오세요 = «bienvenido/a», lo oirás al entrar en cualquier tienda. 몇 분이세요? es la forma respetuosa de «¿cuántas personas?» (분 = persona, honorífico); tú respondes con 명 (persona, neutro): nunca uses 분 para ti mismo. Delante de un contador, 하나, 둘, 셋, 넷 se acortan a **한, 두, 세, 네**: 세 명 (no «셋 명»). ¡Cuidado!: 네 명 (cuatro personas) contiene el mismo 네 que «sí»."
+        },
+        { "type": "grammar", "id": "numbers-native" },
+        {
+          "type": "explain",
+          "title": "¿Cuándo uso cada sistema?",
+          "markdown": "| Nativos (하나, 둘…) | Sino-coreanos (일, 이…) |\n|---|---|\n| contar cosas y personas (세 명, 두 개) | teléfonos, números de línea, aulas (칠 번, 삼백일 호) |\n| la **hora** (세 시) | los **minutos** (삼십 분) |\n| la **edad** (스물세 살) | precios (오천 원), fechas (삼 월), años |\n\nLos nativos solo llegan hasta el 99 (열 = 10, 스물 = 20, 서른 = 30…); a partir de 100 se usan siempre los sino-coreanos. Truco: si **cuentas unidades** (personas, cosas, horas, años de edad), nativos; si **pones un número de etiqueta** o **mides** (precio, minuto, mes), sino-coreanos."
+        },
+        { "type": "exercises", "count": 10, "types": ["choose-meaning", "listen-choose", "pinyin-input", "matching", "classifier", "dictation", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ko-u02-l4",
+      "title": "¿Cuántos años tienes?",
+      "zh": "몇 살이에요?",
+      "goal": "Decir la edad con 살 y entender por qué en Corea la edad decide cómo te llamas con los demás.",
+      "minutes": 15,
+      "vocab": [
+        { "hanzi": "나이", "pinyin": "nai", "es": "edad" },
+        { "hanzi": "살", "pinyin": "sal", "es": "años (de edad; contador)" },
+        { "hanzi": "스물", "pinyin": "seumul", "es": "veinte (nativo)" },
+        { "hanzi": "서른", "pinyin": "seoreun", "es": "treinta (nativo)" },
+        { "hanzi": "명", "pinyin": "myeong", "es": "persona (contador)" },
+        { "hanzi": "형", "pinyin": "hyeong", "es": "hermano mayor (dicho por un chico)" },
+        { "hanzi": "누나", "pinyin": "nuna", "es": "hermana mayor (dicho por un chico)" },
+        { "hanzi": "오빠", "pinyin": "oppa", "es": "hermano mayor (dicho por una chica)" },
+        { "hanzi": "언니", "pinyin": "eonni", "es": "hermana mayor (dicho por una chica)" }
+      ],
+      "steps": [
+        { "type": "vocab" },
+        {
+          "type": "dialogue",
+          "title": "Una pregunta muy coreana",
+          "lines": [
+            { "speaker": "민수", "zh": "우고 씨, 몇 살이에요?", "py": "Ugo ssi, myeot sarieyo?", "es": "Hugo, ¿cuántos años tienes?" },
+            { "speaker": "우고", "zh": "스물세 살이에요. 민수 씨는요?", "py": "Seumulse sarieyo. Minsu ssineunyo?", "es": "Tengo veintitrés. ¿Y tú, Minsu?" },
+            { "speaker": "민수", "zh": "저는 스물다섯 살이에요.", "py": "Jeoneun seumuldaseot sarieyo.", "es": "Yo tengo veinticinco." },
+            { "speaker": "우고", "zh": "아, 그럼 민수 씨는 형이에요!", "py": "A, geureom Minsu ssineun hyeongieyo!", "es": "¡Ah, entonces eres mi «hermano mayor»!" },
+            { "speaker": "민수", "zh": "하하, 맞아요. 지민 씨는 스물한 살이에요.", "py": "Haha, majayo. Jimin ssineun seumulhan sarieyo.", "es": "Jaja, eso es. Jimin tiene veintiuno." },
+            { "speaker": "우고", "zh": "그럼 지민 씨한테 저는 오빠예요!", "py": "Geureom Jimin ssihante jeoneun oppayeyo!", "es": "¡Entonces para Jimin yo soy «oppa»!" }
+          ],
+          "notes": "스물세 = 스물 + 셋 acortado (igual que 한, 두, 세, 네 delante de un contador): 스물한 (21), 스물두 (22), 스물세 (23). 한테 = «para; a» (una persona): adelanto. 몇 살이에요? es normal entre jóvenes; a una persona mayor se le pregunta 나이가 어떻게 되세요? o, más respetuoso aún, 연세가 어떻게 되세요?"
+        },
+        {
+          "type": "explain",
+          "title": "Cultura: la edad y los títulos 언니 / 오빠 / 형 / 누나",
+          "markdown": "En Corea la **edad relativa** decide cómo os habláis: quién usa 존댓말, quién puede pasar a 반말 y cómo os llamáis. Por eso preguntar la edad (o el año de nacimiento) al conocerse **no es de mala educación**: es casi necesario.\n\nEntre amigos y conocidos de confianza, el **menor** llama al mayor con un título familiar, aunque no sean parientes:\n\n| Quien habla | A un chico mayor | A una chica mayor |\n|---|---|---|\n| chico | **형** *hyeong* | **누나** *nuna* |\n| chica | **오빠** *oppa* | **언니** *eonni* |\n\nAl mayor no se le llama por el nombre a secas: 민수 형, 지민 언니. Al menor sí, sin título (y entre amigos, sin 씨). Los de la **misma edad** son **친구** y pueden tutearse en 반말 si hay confianza.\n\nOtros dos detalles:\n\n- **La edad oficial**: desde junio de 2023 Corea usa por ley la edad internacional (만 나이) en documentos oficiales. Pero en la vida diaria aún oirás la «edad coreana» tradicional (se nace con 1 año y se suma uno cada 1 de enero) o el **año de nacimiento** («저는 03년생이에요», nací en el 2003), que es lo que muchos usan para saber quién es mayor.\n- Con alguien **mucho** mayor, o con tu profesor, nada de 형/언니: usa su cargo (선생님) o 씨 en ámbitos de trabajo."
+        },
+        { "type": "grammar", "id": "counters" },
+        { "type": "exercises", "count": 12, "types": ["classifier", "choose-meaning", "listen-choose", "fill-blank", "order-words", "translate-to-es", "pinyin-input", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ko-u02-l5",
+      "title": "Lectura y repaso: la ficha de inscripción",
+      "zh": "복습",
+      "goal": "Leer números grandes (백, 천, 만), rellenar tus datos y repasar los dos sistemas numéricos.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "백", "pinyin": "baek", "es": "cien" },
+        { "hanzi": "천", "pinyin": "cheon", "es": "mil" },
+        { "hanzi": "만", "pinyin": "man", "es": "diez mil" },
+        { "hanzi": "학원", "pinyin": "hagwon", "es": "academia" },
+        { "hanzi": "반", "pinyin": "ban", "es": "clase; grupo" },
+        { "hanzi": "교실", "pinyin": "gyosil", "es": "aula" },
+        { "hanzi": "호", "pinyin": "ho", "es": "número (de sala, habitación)" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "Números grandes y la academia" },
+        {
+          "type": "dialogue",
+          "title": "En la secretaría de la academia",
+          "lines": [
+            { "speaker": "직원", "zh": "이름이 뭐예요?", "py": "Ireumi mwoyeyo?", "es": "¿Cómo se llama?" },
+            { "speaker": "우고", "zh": "우고예요.", "py": "Ugoyeyo.", "es": "Hugo." },
+            { "speaker": "직원", "zh": "나이가 어떻게 되세요?", "py": "Naiga eotteoke doeseyo?", "es": "¿Qué edad tiene?" },
+            { "speaker": "우고", "zh": "스물세 살이에요.", "py": "Seumulse sarieyo.", "es": "Veintitrés años." },
+            { "speaker": "직원", "zh": "전화번호는요?", "py": "Jeonhwabeonhoneunyo?", "es": "¿Y el teléfono?" },
+            { "speaker": "우고", "zh": "공일공, 사칠삼일, 팔오육구예요.", "py": "Gong-il-gong, sa-chil-sam-il, pal-o-yuk-gu-yeyo.", "es": "010-4731-8569." },
+            { "speaker": "직원", "zh": "네, 우고 씨는 일 반이에요. 교실은 삼백일 호예요.", "py": "Ne, Ugo ssineun il banieyo. Gyosireun sambaegil hoyeyo.", "es": "Muy bien, usted está en el grupo 1. El aula es la 301." }
+          ],
+          "notes": "백, 천, 만 funcionan como 십: 삼백일 = 3 × 100 + 1 = 301; 오천 = 5000. Ojo: **만** (10 000) es una unidad propia; 20 000 es 이만, no «이십천». Para 100, 1000 y 10 000 no se dice 일: basta 백, 천, 만."
+        },
+        {
+          "type": "reading",
+          "title": "La ficha de Hugo",
+          "text": "제 이름은 우고예요. 스페인 사람이에요. 스물세 살이에요. 제 전화번호는 공일공, 사칠삼일, 팔오육구예요. 저는 학원 일 반 학생이에요. 우리 교실은 삼백일 호예요. 우리 반 학생은 열 명이에요. 김 선생님은 우리 선생님이에요.",
+          "es": "Me llamo Hugo. Soy español. Tengo veintitrés años. Mi número de teléfono es 010-4731-8569. Soy estudiante del grupo 1 de la academia. Nuestra aula es la 301. En nuestro grupo hay diez estudiantes. La profesora Kim es nuestra profesora.",
+          "questions": [
+            { "q": "¿Cuántos años tiene Hugo?", "options": ["21", "23", "25", "32"], "answer": 1, "explain": "스물세 살 = 20 + 3 = 23 años (números nativos)." },
+            { "q": "¿En qué aula estudia Hugo?", "options": ["La 103", "La 310", "La 301", "La 31"], "answer": 2, "explain": "삼백일 호 = 3 × 100 + 1 = 301 (sino-coreanos)." },
+            { "q": "¿Cuántos estudiantes hay en su grupo?", "options": ["Uno", "Tres", "Diez", "Cien"], "answer": 2, "explain": "열 명 = diez personas: 열 es el 10 nativo." }
+          ]
+        },
+        { "type": "exercises", "count": 12, "types": ["dictation", "listen-choose", "classifier", "matching", "choose-meaning", "fill-blank", "translate-to-es", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    }
+  ]
+}

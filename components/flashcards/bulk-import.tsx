@@ -4,22 +4,27 @@ import { useLiveQuery } from "dexie-react-hooks";
 import { db, upsertWord } from "@/lib/db";
 import { parseImport, type ImportRow } from "@/lib/import";
 import { lookup, useDictionary } from "@/lib/dictionary/service";
-import { wordPinyin } from "@/lib/pinyin/convert";
+import { readingOf as wordPinyin } from "@/lib/languages/helpers";
 import { findExampleFor } from "@/lib/examples";
 import { onWordSaved } from "@/lib/anki/hooks";
 import { Button } from "@/components/ui/button";
-import { Dialog, DialogContent, Label, Select, Textarea } from "@/components/ui/primitives";
+import { Dialog, DialogContent, Label, Select, Textarea, Option } from "@/components/ui/primitives";
 import { toast } from "@/components/ui/toast";
-import { Pinyin } from "@/components/zh/pinyin";
+import { Pinyin } from "@/components/target/reading";
 import { cn } from "@/lib/utils";
+import { getActiveLang } from "@/lib/languages/registry";
+import { targetLang } from "@/lib/languages/registry";
+import { ui } from "@/lib/languages/ui-text";
+import { getActivePack } from "@/lib/languages/registry";
+import { Mixed } from "@/components/target/mixed";
 
 export function BulkImportDialog({ open, onOpenChange }: { open: boolean; onOpenChange: (o: boolean) => void }) {
   const [text, setText] = useState("");
   const [category, setCategory] = useState("Clase");
   const [step, setStep] = useState<"paste" | "preview">("paste");
   const [busy, setBusy] = useState(false);
-  const categories = useLiveQuery(() => db.categories.orderBy("order").toArray(), []) ?? [];
-  const existingLive = useLiveQuery(() => db.words.toArray(), []);
+  const categories = useLiveQuery(() => db.categories.where("lang").equals(getActiveLang()).sortBy("order"), []) ?? [];
+  const existingLive = useLiveQuery(() => db.words.where("lang").equals(getActiveLang()).toArray(), []);
   const existing = useMemo(() => existingLive ?? [], [existingLive]);
   const dict = useDictionary();
   useEffect(() => {
@@ -85,15 +90,15 @@ export function BulkImportDialog({ open, onOpenChange }: { open: boolean; onOpen
       <DialogContent title="Importar lista de palabras" description="Pega una palabra por línea, o CSV (hanzi, pinyin, significado, categoría, ejemplo, traducción). Lo que falte se autocompleta con el diccionario." side="bottom" className="sm:max-w-2xl">
         {step === "paste" ? (
           <div className="space-y-3">
-            <Textarea lang="zh-CN" className="zh min-h-40 text-base" value={text} onChange={(e) => setText(e.target.value)} placeholder={"咖啡\n茶,chá,té\n啤酒 | píjiǔ | cerveza | Comida y bebida"} />
+            <Textarea lang={targetLang()} className="zh min-h-40 text-base" value={text} onChange={(e) => setText(e.target.value)} placeholder={(() => { const x = ui().examples; const r = getActivePack().reading; return `${x.word}\n${x.word2},${r(x.word2)},té\n${x.word3} | ${r(x.word3)} | bebida | Comida y bebida`; })()} />
             <div className="flex flex-wrap items-end justify-between gap-2">
               <div>
                 <Label htmlFor="bi-cat">Categoría por defecto</Label>
                 <Select id="bi-cat" className="mt-1" value={category} onChange={(e) => setCategory(e.target.value)}>
                   {categories.map((c) => (
-                    <option key={c.id} value={c.name}>
+                    <Option key={c.id} value={c.name}>
                       {c.name}
-                    </option>
+                    </Option>
                   ))}
                 </Select>
               </div>
@@ -108,8 +113,8 @@ export function BulkImportDialog({ open, onOpenChange }: { open: boolean; onOpen
               <table className="w-full text-sm">
                 <thead className="sticky top-0 bg-paper-sunk text-left text-xs text-ink-faint">
                   <tr>
-                    <th className="p-2">Hanzi</th>
-                    <th className="p-2">Pinyin</th>
+                    <th className="p-2">{ui().wordLabel}</th>
+                    <th className="p-2">{getActivePack().readingAid.name}</th>
                     <th className="p-2">Significado</th>
                     <th className="p-2">Estado</th>
                   </tr>
@@ -118,7 +123,7 @@ export function BulkImportDialog({ open, onOpenChange }: { open: boolean; onOpen
                   {rows.map((r, i) => (
                     <tr key={i} className={cn("border-t border-line", r.error && "bg-danger/8")}>
                       <td className="p-2">
-                        <span lang="zh-CN" className="zh zh-serif text-lg">
+                        <span lang={targetLang()} className="zh zh-serif text-lg">
                           {r.hanzi || "—"}
                         </span>
                       </td>

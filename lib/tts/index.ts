@@ -1,54 +1,74 @@
 "use client";
 /**
- * Texto a voz: audios pregenerados (public/audio/<hash>.mp3, vía msedge-tts) con
- * respaldo en Web Speech API (zh-CN). También expone grabación de micrófono y
+ * Texto a voz por idioma: audios pregenerados (public/audio/<hash>.mp3, vía msedge-tts) con
+ * respaldo en Web Speech API (zh-CN / ja-JP / ko-KR). También expone grabación de micrófono y
  * reconocimiento de voz (Chrome/Edge).
  */
 import { hashString } from "@/lib/utils";
 import { withBase } from "@/lib/base-path";
+import { getActivePackOrNull, getActiveLang, LANG_META } from "@/lib/languages/registry";
+import { useSettings } from "@/lib/settings";
+import type { Bcp47, Lang } from "@/lib/languages/types";
 
 export interface SpeakOptions {
   rate?: number;
   voiceURI?: string;
   preferGenerated?: boolean;
   onEnd?: () => void;
+  lang?: Lang;
 }
 
 let cachedVoices: SpeechSynthesisVoice[] = [];
 let currentAudio: HTMLAudioElement | null = null;
 const missingAudio = new Set<string>();
 
-export function audioFileFor(text: string): string {
-  return withBase(`/audio/${hashString(text.trim()).toString(16)}.mp3`);
+/** Ruta del audio pregenerado: el chino conserva el hash sin prefijo (compatibilidad con los MP3 existentes). */
+export function audioFileFor(text: string, lang: Lang = getActiveLang()): string {
+  const h = hashString(text.trim()).toString(16);
+  return withBase(lang === "zh" ? `/audio/${h}.mp3` : `/audio/${lang}/${h}.mp3`);
 }
 
-export function listZhVoices(): SpeechSynthesisVoice[] {
+const VOICE_PATTERNS: Record<Lang, { lang: RegExp; name: RegExp }> = {
+  zh: { lang: /^zh([-_](CN|Hans|SG|TW|HK))?$/i, name: /chinese|中文|普通话|mandarin/i },
+  ja: { lang: /^ja([-_]JP)?$/i, name: /japanese|日本語/i },
+  ko: { lang: /^ko([-_]KR)?$/i, name: /korean|한국어/i },
+};
+
+export function listVoices(lang: Lang = getActiveLang()): SpeechSynthesisVoice[] {
   if (typeof window === "undefined" || !("speechSynthesis" in window)) return [];
   const all = window.speechSynthesis.getVoices();
   if (all.length) cachedVoices = all;
-  return cachedVoices.filter((v) => /^zh([-_](CN|Hans|SG|TW|HK))?$/i.test(v.lang) || /chinese|中文|普通话|mandarin/i.test(v.name));
+  const p = VOICE_PATTERNS[lang];
+  return cachedVoices.filter((v) => p.lang.test(v.lang) || p.name.test(v.name));
 }
 
-/** Elige la mejor voz zh-CN disponible (prioriza voces naturales/online de Edge, luego Xiaoxiao/Huihui/Yunxi). */
-export function bestZhVoice(voiceURI?: string): SpeechSynthesisVoice | undefined {
-  const voices = listZhVoices();
+/** @deprecated usa listVoices(lang) */
+export const listZhVoices = () => listVoices("zh");
+
+/** Elige la mejor voz disponible para el idioma (prioriza voces naturales/online de Edge y las preferidas del paquete). */
+export function bestVoice(lang: Lang = getActiveLang(), voiceURI?: string): SpeechSynthesisVoice | undefined {
+  const voices = listVoices(lang);
   if (!voices.length) return undefined;
   if (voiceURI) {
     const v = voices.find((x) => x.voiceURI === voiceURI);
     if (v) return v;
   }
+  const prefs = getActivePackOrNull()?.id === lang ? (getActivePackOrNull()?.tts.voicePrefs ?? []) : [];
   const score = (v: SpeechSynthesisVoice) => {
     let s = 0;
-    if (/zh[-_]CN/i.test(v.lang)) s += 10;
+    if (new RegExp(`^${lang}[-_]`, "i").test(v.lang)) s += 10;
     if (/natural|online/i.test(v.name)) s += 8;
-    if (/xiaoxiao|yunxi|yunyang|xiaoyi/i.test(v.name)) s += 6;
-    if (/huihui|kangkang|yaoyao/i.test(v.name)) s += 4;
+    prefs.forEach((re, i) => {
+      if (re.test(v.name)) s += 6 - i;
+    });
     if (/google/i.test(v.name)) s += 3;
     if (!v.localService) s += 1;
     return s;
   };
   return voices.slice().sort((a, b) => score(b) - score(a))[0];
 }
+
+export const bestZhVoice = (voiceURI?: string) => bestVoice("zh", voiceURI);
 
 export function stopSpeaking() {
   if (currentAudio) {
@@ -58,13 +78,15 @@ export function stopSpeaking() {
   if (typeof window !== "undefined" && "speechSynthesis" in window) window.speechSynthesis.cancel();
 }
 
-function speakWeb(text: string, opts: SpeakOptions): Promise<void> {
+function speakWeb(text: string, opts: SpeakOptions, lang: Lang): Promise<void> {
   return new Promise((resolve) => {
     if (typeof window === "undefined" || !("speechSynthesis" in window)) return resolve();
     const u = new SpeechSynthesisUtterance(text);
-    u.lang = "zh-CN";
+    u.lang = LANG_META[lang].bcp47;
     u.rate = opts.rate ?? 0.9;
-    const v = bestZhVoice(opts.voiceURI);
+    // la voz elegida en Ajustes es por idioma; la global (heredada) solo vale para el chino
+    const perLang = useSettings.getState().settings.langs?.[lang]?.voiceURI;
+    const v = bestVoice(lang, perLang || (lang === "zh" ? opts.voiceURI : undefined));
     if (v) u.voice = v;
     u.onend = () => {
       opts.onEnd?.();
@@ -76,13 +98,14 @@ function speakWeb(text: string, opts: SpeakOptions): Promise<void> {
   });
 }
 
-/** Reproduce un texto chino. Devuelve una promesa que se resuelve al terminar. */
+/** Reproduce un texto en la lengua meta. Devuelve una promesa que se resuelve al terminar. */
 export async function speak(text: string, opts: SpeakOptions = {}): Promise<void> {
   const clean = text.trim();
   if (!clean) return;
+  const lang = opts.lang ?? getActiveLang();
   stopSpeaking();
   const prefer = opts.preferGenerated ?? true;
-  const file = audioFileFor(clean);
+  const file = audioFileFor(clean, lang);
   if (prefer && !missingAudio.has(file)) {
     const ok = await new Promise<boolean>((resolve) => {
       const a = new Audio(file);
@@ -98,14 +121,14 @@ export async function speak(text: string, opts: SpeakOptions = {}): Promise<void
     if (ok) return;
     missingAudio.add(file);
   }
-  await speakWeb(clean, opts);
+  await speakWeb(clean, opts, lang);
 }
 
 /** Pre-carga voces (Chrome las carga de forma asíncrona). */
 export function warmVoices() {
   if (typeof window === "undefined" || !("speechSynthesis" in window)) return;
-  listZhVoices();
-  window.speechSynthesis.onvoiceschanged = () => listZhVoices();
+  listVoices();
+  window.speechSynthesis.onvoiceschanged = () => listVoices();
 }
 
 /* -------------------- Reconocimiento de voz -------------------- */
@@ -130,14 +153,14 @@ export function speechRecognitionAvailable(): boolean {
   return Boolean(w.SpeechRecognition || w.webkitSpeechRecognition);
 }
 
-/** Escucha una frase en chino y devuelve el texto reconocido (o lanza error). */
-export function recognizeOnce(opts: { timeoutMs?: number; onInterim?: (t: string) => void } = {}): Promise<{ text: string; confidence: number }> {
+/** Escucha una frase en la lengua meta y devuelve el texto reconocido (o lanza error). */
+export function recognizeOnce(opts: { timeoutMs?: number; onInterim?: (t: string) => void; locale?: Bcp47 } = {}): Promise<{ text: string; confidence: number }> {
   return new Promise((resolve, reject) => {
     const w = window as unknown as { SpeechRecognition?: SpeechRecognitionCtor; webkitSpeechRecognition?: SpeechRecognitionCtor };
     const Ctor = w.SpeechRecognition || w.webkitSpeechRecognition;
     if (!Ctor) return reject(new Error("Reconocimiento de voz no disponible en este navegador (usa Chrome o Edge)."));
     const rec = new Ctor();
-    rec.lang = "zh-CN";
+    rec.lang = opts.locale ?? getActivePackOrNull()?.asr.locale ?? LANG_META[getActiveLang()].bcp47;
     rec.interimResults = Boolean(opts.onInterim);
     rec.maxAlternatives = 3;
     rec.continuous = false;

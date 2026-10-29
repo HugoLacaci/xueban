@@ -9,16 +9,29 @@ import * as ProgressPrimitive from "@radix-ui/react-progress";
 import * as SliderPrimitive from "@radix-ui/react-slider";
 import { X } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { targetLang } from "@/lib/languages/registry";
+import { Mixed, hasTargetScript, langOfRun } from "@/components/target/mixed";
 
 /* ---------------- Card ---------------- */
 export function Card({ className, ...props }: React.HTMLAttributes<HTMLDivElement>) {
   return <div className={cn("card-paper min-w-0 p-4 sm:p-5", className)} {...props} />;
 }
+/** Texto plano → <Mixed> (envuelve con lang los tramos en la lengua meta); el resto se deja igual. */
+const mx = (n: React.ReactNode) => (typeof n === "string" ? <Mixed>{n}</Mixed> : Array.isArray(n) ? React.Children.map(n, (c) => (typeof c === "string" ? <Mixed>{c}</Mixed> : c)) : n);
+
 export function CardTitle({ className, ...props }: React.HTMLAttributes<HTMLHeadingElement>) {
-  return <h3 className={cn("text-base font-semibold tracking-tight text-ink", className)} {...props} />;
+  return (
+    <h3 className={cn("text-base font-semibold tracking-tight text-ink", className)} {...props}>
+      {mx(props.children)}
+    </h3>
+  );
 }
 export function CardDescription({ className, ...props }: React.HTMLAttributes<HTMLParagraphElement>) {
-  return <p className={cn("text-sm text-ink-faint", className)} {...props} />;
+  return (
+    <p className={cn("text-sm text-ink-faint", className)} {...props}>
+      {mx(props.children)}
+    </p>
+  );
 }
 
 /* ---------------- Badge ---------------- */
@@ -37,7 +50,11 @@ export function Badge({
     muted: "bg-transparent text-ink-faint border-transparent",
     seal: "bg-transparent border-cinnabar text-cinnabar font-seal rounded-[4px] border-[1.5px]",
   }[variant];
-  return <span className={cn("inline-flex items-center gap-1 rounded-full border px-2 py-0.5 text-[11px] font-medium leading-4", styles, className)} {...props} />;
+  return (
+    <span className={cn("inline-flex items-center gap-1 rounded-full border px-2 py-0.5 text-[11px] font-medium leading-4", styles, className)} {...props}>
+      {mx(props.children)}
+    </span>
+  );
 }
 
 /* ---------------- Input / Textarea ---------------- */
@@ -51,7 +68,20 @@ export const Textarea = React.forwardRef<HTMLTextAreaElement, React.TextareaHTML
 Textarea.displayName = "Textarea";
 
 export function Label({ className, ...props }: React.LabelHTMLAttributes<HTMLLabelElement>) {
-  return <label className={cn("text-sm font-medium text-ink-soft", className)} {...props} />;
+  return (
+    <label className={cn("text-sm font-medium text-ink-soft", className)} {...props}>
+      {mx(props.children)}
+    </label>
+  );
+}
+
+/** <option> con lang cuando su texto incluye la lengua meta. */
+export function Option({ children, ...props }: React.OptionHTMLAttributes<HTMLOptionElement> & { children: string }) {
+  return (
+    <option {...props} lang={hasTargetScript(children) ? langOfRun(children) : undefined}>
+      {children}
+    </option>
+  );
 }
 
 export function Select({ className, children, ...props }: React.SelectHTMLAttributes<HTMLSelectElement>) {
@@ -109,7 +139,9 @@ export const TabsTrigger = React.forwardRef<React.ComponentRef<typeof TabsPrimit
     ref={ref}
     className={cn("inline-flex items-center justify-center whitespace-nowrap rounded-[8px] px-3 py-1.5 text-sm font-medium transition-all disabled:opacity-50 data-[state=active]:bg-paper-raised data-[state=active]:text-ink data-[state=active]:shadow-paper", className)}
     {...props}
-  />
+  >
+    {mx(props.children)}
+  </TabsPrimitive.Trigger>
 ));
 TabsTrigger.displayName = "TabsTrigger";
 export const TabsContent = React.forwardRef<React.ComponentRef<typeof TabsPrimitive.Content>, React.ComponentPropsWithoutRef<typeof TabsPrimitive.Content>>(({ className, ...props }, ref) => <TabsPrimitive.Content ref={ref} className={cn("mt-3 focus-visible:outline-none", className)} {...props} />);
@@ -198,14 +230,14 @@ export function EmptyState({ icon, title, description, action, className, zh }: 
       <p className="font-serif-es text-lg font-medium text-ink">{title}</p>
       {zh ? (
         <p className="text-sm">
-          <span lang="zh-CN" className="zh-kai text-base text-ink">
+          <span lang={targetLang()} className="zh-kai text-base text-ink">
             {zh.zh}
           </span>
-          {zh.py ? <span className="ml-2 text-xs text-ink-faint">{zh.py}</span> : null}
-          <span className="block text-xs text-ink-faint">{zh.es}</span>
+          {zh.py ? <span className="ml-2 text-xs text-ink-faint"><Mixed>{zh.py}</Mixed></span> : null}
+          <span className="block text-xs text-ink-faint"><Mixed>{zh.es}</Mixed></span>
         </p>
       ) : null}
-      {description ? <p className="max-w-sm text-sm text-ink-faint">{description}</p> : null}
+      {description ? <p className="max-w-sm text-sm text-ink-faint">{mx(description)}</p> : null}
       {action ? <div className="mt-2">{action}</div> : null}
     </div>
   );
@@ -214,7 +246,7 @@ export function EmptyState({ icon, title, description, action, className, zh }: 
 export function SectionTitle({ children, className, action }: { children: React.ReactNode; className?: string; action?: React.ReactNode }) {
   return (
     <div className={cn("mb-3 flex items-end justify-between gap-3", className)}>
-      <h2 className="font-serif-es text-lg font-semibold tracking-tight text-ink">{children}</h2>
+      <h2 className="font-serif-es text-lg font-semibold tracking-tight text-ink">{mx(children)}</h2>
       {action}
     </div>
   );
@@ -226,12 +258,12 @@ export function PageHeader({ title, subtitle, action, zh }: { title: React.React
     <header className="relative mb-5 flex flex-wrap items-end justify-between gap-3">
       <div className="min-w-0">
         {zh ? (
-          <span className="zh-display mb-1 block text-sm text-cinnabar" lang="zh-CN">
+          <span className="zh-display mb-1 block text-sm text-cinnabar" lang={targetLang()}>
             {zh}
           </span>
         ) : null}
-        <h1 className="font-serif-es text-[28px] font-semibold leading-tight tracking-tight text-ink sm:text-[34px]">{title}</h1>
-        {subtitle ? <p className="mt-1.5 max-w-2xl text-sm text-ink-faint">{subtitle}</p> : null}
+        <h1 className="font-serif-es text-[28px] font-semibold leading-tight tracking-tight text-ink sm:text-[34px]">{mx(title)}</h1>
+        {subtitle ? <p className="mt-1.5 max-w-2xl text-sm text-ink-faint">{mx(subtitle)}</p> : null}
       </div>
       {action ? <div className="flex shrink-0 items-center gap-2">{action}</div> : null}
     </header>

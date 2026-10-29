@@ -1,0 +1,176 @@
+{
+  "id": "ja-u12",
+  "order": 13,
+  "title": "Ocio",
+  "zh": "趣味",
+  "description": "Hablar de lo que te gusta (música, cine, deporte), invitar y quedar con amigos, contar lo que estás aprendiendo y hacer planes para las vacaciones.",
+  "icon": "Music",
+  "level": 1,
+  "lang": "ja",
+  "category": "Ocio",
+  "checkpoint": { "exercises": 15 },
+  "lessons": [
+    {
+      "id": "ja-u12-l1",
+      "title": "Cine, música, etc.",
+      "zh": "映画や音楽が好きです",
+      "goal": "Enumerar ejemplos con や〜など y hablar de lo que te gusta hacer en tu tiempo libre.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "音楽", "pinyin": "おんがく", "es": "música" },
+        { "hanzi": "映画", "pinyin": "えいが", "es": "película; cine" },
+        { "hanzi": "歌", "pinyin": "うた", "es": "canción" },
+        { "hanzi": "歌う", "pinyin": "うたう", "es": "cantar" },
+        { "hanzi": "絵", "pinyin": "え", "es": "dibujo; cuadro" },
+        { "hanzi": "スポーツ", "pinyin": "スポーツ", "es": "deporte" },
+        { "hanzi": "泳ぐ", "pinyin": "およぐ", "es": "nadar" },
+        { "hanzi": "海", "pinyin": "うみ", "es": "mar; playa" },
+        { "hanzi": "好き", "pinyin": "すき", "es": "que gusta", "note": "Adjetivo na: 〜が好きです = me gusta…" }
+      ],
+      "steps": [
+        { "type": "vocab" },
+        {
+          "type": "dialogue",
+          "title": "¿Qué haces los días libres?",
+          "lines": [
+            { "speaker": "けん", "zh": "ウーゴさんは休みの日に何をしますか。", "py": "ウーゴ さん は やすみ の ひ に なに を します か。", "es": "Hugo, ¿qué haces los días libres?" },
+            { "speaker": "ウーゴ", "zh": "映画や音楽が好きですから、よく映画を見ます。", "py": "えいが や おんがく が すき です から、よく えいが を みます。", "es": "Me gustan el cine, la música y esas cosas, así que veo pelis a menudo." },
+            { "speaker": "けん", "zh": "どんな映画を見ますか。", "py": "どんな えいが を みます か。", "es": "¿Qué tipo de películas ves?" },
+            { "speaker": "ウーゴ", "zh": "日本のアニメやスペインの映画などを見ます。けんさんは？", "py": "にほん の アニメ や スペイン の えいが など を みます。けん さん は？", "es": "Veo anime japonés, cine español, etc. ¿Y tú, Ken?" },
+            { "speaker": "けん", "zh": "私はスポーツが好きです。夏は海でよく泳ぎます。", "py": "わたし は スポーツ が すき です。なつ は うみ で よく およぎます。", "es": "A mí me gusta el deporte. En verano nado mucho en el mar." },
+            { "speaker": "ウーゴ", "zh": "いいですね。私も日本の海で泳ぎたいです。", "py": "いい です ね。わたし も にほん の うみ で およぎたい です。", "es": "¡Qué bien! Yo también quiero nadar en el mar en Japón." }
+          ],
+          "notes": "休みの日 = día libre. よく = a menudo (y también «bien»). どんな = qué tipo de. アニメ = anime. や da ejemplos de una lista abierta; と enumera la lista completa."
+        },
+        { "type": "grammar", "id": "ya-nado" },
+        { "type": "exercises", "count": 10, "types": ["choose-meaning", "listen-choose", "particle", "pinyin-input", "order-words", "fill-blank", "matching", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ja-u12-l2",
+      "title": "¿Por qué no vamos al cine?",
+      "zh": "映画を見に行きませんか",
+      "goal": "Invitar con 〜ませんか, proponer con 〜ましょう y quedar a una hora y en un sitio.",
+      "minutes": 13,
+      "vocab": [
+        { "hanzi": "暇", "pinyin": "ひま", "es": "libre (de tiempo); desocupado", "note": "Adjetivo na: 暇ですか = ¿estás libre?" },
+        { "hanzi": "今度", "pinyin": "こんど", "es": "esta vez; la próxima vez", "note": "今度の土曜日 = este sábado (que viene)." },
+        { "hanzi": "土曜日", "pinyin": "どようび", "es": "sábado" },
+        { "hanzi": "会う", "pinyin": "あう", "es": "verse; quedar", "note": "友達に会う: la persona lleva に." },
+        { "hanzi": "待つ", "pinyin": "まつ", "es": "esperar" },
+        { "hanzi": "映画館", "pinyin": "えいがかん", "es": "cine (sala)" },
+        { "hanzi": "遊ぶ", "pinyin": "あそぶ", "es": "divertirse; salir (con amigos); jugar" },
+        { "hanzi": "楽しい", "pinyin": "たのしい", "es": "divertido; agradable" }
+      ],
+      "steps": [
+        { "type": "vocab" },
+        {
+          "type": "dialogue",
+          "title": "Sakura invita a Hugo",
+          "lines": [
+            { "speaker": "さくら", "zh": "ウーゴさん、今度の土曜日、暇ですか。", "py": "ウーゴ さん、こんど の どようび、ひま です か。", "es": "Hugo, ¿estás libre este sábado?" },
+            { "speaker": "ウーゴ", "zh": "はい、暇です。", "py": "はい、ひま です。", "es": "Sí, estoy libre." },
+            { "speaker": "さくら", "zh": "一緒に映画を見に行きませんか。", "py": "いっしょに えいが を み に いきません か。", "es": "¿Por qué no vamos juntos a ver una película?" },
+            { "speaker": "ウーゴ", "zh": "いいですね。行きましょう。どこで会いましょうか。", "py": "いい です ね。いきましょう。どこ で あいましょう か。", "es": "¡Buena idea! Vamos. ¿Dónde quedamos?" },
+            { "speaker": "さくら", "zh": "一時に渋谷駅の前で会いましょう。映画館は駅から近いです。", "py": "いちじ に しぶや えき の まえ で あいましょう。えいがかん は えき から ちかい です。", "es": "Quedemos a la una delante de la estación de Shibuya. El cine está cerca de la estación." },
+            { "speaker": "ウーゴ", "zh": "分かりました。映画の後で、渋谷で遊びませんか。", "py": "わかりました。えいが の あと で、しぶや で あそびません か。", "es": "Vale. ¿Y si después de la película damos una vuelta por Shibuya?" },
+            { "speaker": "さくら", "zh": "楽しいですね！じゃあ、土曜日に。駅で待っています。", "py": "たのしい です ね！じゃあ、どようび に。えき で まって います。", "es": "¡Qué divertido! Pues el sábado. Te espero en la estación." }
+          ],
+          "notes": "見に行く = ir a ver (raíz del verbo + に + 行く: ir a hacer algo). 〜ましょうか = ¿…? (proponer y preguntar a la vez). 遊ぶ entre adultos = salir, pasarlo bien. 待っています = estaré esperando (la forma 〜ています, en la próxima lección)."
+        },
+        { "type": "grammar", "id": "mashou-masenka" },
+        { "type": "exercises", "count": 10, "types": ["conjugation", "choose-meaning", "listen-choose", "order-words", "build-sentence", "fill-blank", "translate-to-es", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ja-u12-l3",
+      "title": "Estoy aprendiendo guitarra",
+      "zh": "ギターを習っています",
+      "goal": "Decir lo que estás haciendo ahora o haces habitualmente con 〜ています.",
+      "minutes": 13,
+      "vocab": [
+        { "hanzi": "聞く", "pinyin": "きく", "es": "escuchar; preguntar" },
+        { "hanzi": "ピアノ", "pinyin": "ピアノ", "es": "piano" },
+        { "hanzi": "ギター", "pinyin": "ギター", "es": "guitarra" },
+        { "hanzi": "弾く", "pinyin": "ひく", "es": "tocar (un instrumento de cuerda o teclado)" },
+        { "hanzi": "今", "pinyin": "いま", "es": "ahora" },
+        { "hanzi": "毎週", "pinyin": "まいしゅう", "es": "todas las semanas" },
+        { "hanzi": "上手", "pinyin": "じょうず", "es": "hábil; que hace bien algo", "note": "Adjetivo na: ギターが上手です." },
+        { "hanzi": "下手", "pinyin": "へた", "es": "torpe; que hace mal algo" }
+      ],
+      "steps": [
+        { "type": "vocab" },
+        {
+          "type": "dialogue",
+          "title": "En una cafetería",
+          "lines": [
+            { "speaker": "ウーゴ", "zh": "さくらさん、何を聞いていますか。", "py": "さくら さん、なに を きいて います か。", "es": "Sakura, ¿qué estás escuchando?" },
+            { "speaker": "さくら", "zh": "日本の歌を聞いています。ウーゴさんも聞きますか。", "py": "にほん の うた を きいて います。ウーゴ さん も ききます か。", "es": "Estoy escuchando canciones japonesas. ¿Quieres escuchar tú también?" },
+            { "speaker": "ウーゴ", "zh": "はい。…いい歌ですね。さくらさんはピアノを弾きますか。", "py": "はい。…いい うた です ね。さくら さん は ピアノ を ひきます か。", "es": "Sí… Qué canción tan bonita. Sakura, ¿tocas el piano?" },
+            { "speaker": "さくら", "zh": "はい。毎週土曜日にピアノを習っています。ウーゴさんは？", "py": "はい。まいしゅう どようび に ピアノ を ならって います。ウーゴ さん は？", "es": "Sí. Voy a clases de piano todos los sábados. ¿Y tú, Hugo?" },
+            { "speaker": "ウーゴ", "zh": "私はギターを弾きます。今、この歌を練習しています。", "py": "わたし は ギター を ひきます。いま、この うた を れんしゅう して います。", "es": "Yo toco la guitarra. Ahora estoy practicando esta canción." },
+            { "speaker": "さくら", "zh": "すごい！ギターが上手ですね。", "py": "すごい！ギター が じょうず です ね。", "es": "¡Qué pasada! Se te da bien la guitarra, ¿eh?" },
+            { "speaker": "ウーゴ", "zh": "いいえ、まだ下手です。", "py": "いいえ、まだ へた です。", "es": "Qué va, todavía toco fatal." }
+          ],
+          "notes": "〜ています: acción en curso (聞いています = estoy escuchando) o costumbre (毎週習っています = voy a clases cada semana). すごい = ¡increíble! Es de buena educación negar un cumplido: いいえ、まだまだです."
+        },
+        { "type": "grammar", "id": "te-iru" },
+        { "type": "exercises", "count": 10, "types": ["conjugation", "choose-meaning", "listen-choose", "fill-blank", "order-words", "matching", "pinyin-input", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ja-u12-l4",
+      "title": "Planes para el verano: lectura y repaso",
+      "zh": "夏休み",
+      "goal": "Comparar gustos con より y repasar el ocio con una lectura.",
+      "minutes": 15,
+      "vocab": [
+        { "hanzi": "夏休み", "pinyin": "なつやすみ", "es": "vacaciones de verano" },
+        { "hanzi": "山", "pinyin": "やま", "es": "montaña" },
+        { "hanzi": "登る", "pinyin": "のぼる", "es": "subir; escalar", "note": "山に登る = subir a una montaña." },
+        { "hanzi": "料理", "pinyin": "りょうり", "es": "cocina; plato", "note": "料理する = cocinar." },
+        { "hanzi": "作る", "pinyin": "つくる", "es": "hacer; preparar; fabricar" },
+        { "hanzi": "嫌い", "pinyin": "きらい", "es": "que no gusta; odiado", "note": "Adjetivo na, contrario de 好き." },
+        { "hanzi": "大好き", "pinyin": "だいすき", "es": "que encanta" },
+        { "hanzi": "上", "pinyin": "うえ", "es": "arriba; encima", "note": "山の上 = en lo alto de la montaña." }
+      ],
+      "steps": [
+        { "type": "vocab" },
+        {
+          "type": "dialogue",
+          "title": "¿Montaña o playa?",
+          "lines": [
+            { "speaker": "けん", "zh": "ウーゴさんは山と海と、どちらが好きですか。", "py": "ウーゴ さん は やま と うみ と、どちら が すき です か。", "es": "Hugo, ¿qué te gusta más, la montaña o la playa?" },
+            { "speaker": "ウーゴ", "zh": "海の方が好きです。泳ぐのが大好きですから。", "py": "うみ の ほう が すき です。およぐ の が だいすき です から。", "es": "Me gusta más la playa. Porque me encanta nadar." },
+            { "speaker": "けん", "zh": "私は海より山の方が好きです。夏休みに富士山に登ります。", "py": "わたし は うみ より やま の ほう が すき です。なつやすみ に ふじさん に のぼります。", "es": "A mí me gusta más la montaña que la playa. En las vacaciones de verano subiré al monte Fuji." },
+            { "speaker": "ウーゴ", "zh": "すごいですね！私も登りたいです。", "py": "すごい です ね！わたし も のぼりたい です。", "es": "¡Qué pasada! Yo también quiero subir." },
+            { "speaker": "けん", "zh": "じゃあ、一緒に登りましょう。山でご飯を作りますよ。料理は好きですか。", "py": "じゃあ、いっしょに のぼりましょう。やま で ごはん を つくります よ。りょうり は すき です か。", "es": "Pues subamos juntos. En la montaña cocinamos nosotros, ¿eh? ¿Te gusta cocinar?" },
+            { "speaker": "ウーゴ", "zh": "はい、嫌いじゃありません。スペインのパエリアを作りましょう！", "py": "はい、きらい じゃ ありません。スペイン の パエリア を つくりましょう！", "es": "Sí, no me disgusta. ¡Hagamos una paella española!" }
+          ],
+          "notes": "富士山 ふじさん = el monte Fuji (la temporada para subir es julio-septiembre). 泳ぐのが好き = me gusta nadar: の convierte el verbo en nombre (adelanto). 嫌いじゃありません = no me disgusta (forma modesta de decir que te gusta)."
+        },
+        { "type": "grammar", "id": "yori-comparison" },
+        {
+          "type": "reading",
+          "title": "Mi tiempo libre en Tokio",
+          "text": "私は音楽や映画が好きです。休みの日はよく映画館へ行きます。日本のアニメが大好きです。今、毎週ギターを習っています。日本の歌を練習していますが、まだ下手です。友達のさくらさんはピアノが上手です。今度、一緒に歌いましょうと言いました。夏休みには、けんさんと富士山に登ります。山の上でスペインの料理を作ります。",
+          "es": "Me gustan la música, el cine y esas cosas. Los días libres voy a menudo al cine. Me encanta el anime japonés. Ahora voy a clases de guitarra todas las semanas. Estoy practicando canciones japonesas, pero todavía toco mal. Mi amiga Sakura toca muy bien el piano. Hemos dicho que la próxima vez cantaremos juntos. En las vacaciones de verano subiré al monte Fuji con Ken. En lo alto de la montaña cocinaré comida española.",
+          "questions": [
+            { "q": "¿Qué está aprendiendo Hugo ahora?", "options": ["Piano", "Guitarra", "Natación", "Cocina"], "answer": 1, "explain": "今、毎週ギターを習っています。" },
+            { "q": "¿Quién toca bien el piano?", "options": ["Hugo", "Ken", "Sakura", "Tanaka-sensei"], "answer": 2, "explain": "友達のさくらさんはピアノが上手です。" },
+            { "q": "¿Qué hará Hugo en las vacaciones de verano?", "options": ["Ir a la playa con Sakura", "Volver a España", "Subir al monte Fuji con Ken", "Ver películas en casa"], "answer": 2, "explain": "夏休みには、けんさんと富士山に登ります。" }
+          ]
+        },
+        { "type": "exercises", "count": 12, "types": ["matching", "choose-meaning", "conjugation", "particle", "order-words", "build-sentence", "fill-blank", "dictation", "translate-to-es", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    }
+  ]
+}

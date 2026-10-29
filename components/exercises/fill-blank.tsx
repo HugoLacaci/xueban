@@ -3,9 +3,11 @@ import { useEffect, useState } from "react";
 import type { FillBlankExercise } from "@/lib/exercises/types";
 import { useSettings } from "@/lib/settings";
 import { Input } from "@/components/ui/primitives";
-import { AudioButton } from "@/components/zh/audio-button";
-import { ChineseText } from "@/components/zh/chinese-text";
+import { AudioButton } from "@/components/target/audio-button";
+import { ChineseText } from "@/components/target/target-text";
 import { CheckButton, ExerciseCard, OptionTile, type ExerciseProps } from "./exercise-view";
+import { targetLang } from "@/lib/languages/registry";
+import { Mixed } from "@/components/target/mixed";
 
 export function FillBlank({ ex, onSubmit, result }: ExerciseProps<FillBlankExercise>) {
   const [chosen, setChosen] = useState<number | null>(null);
@@ -35,7 +37,7 @@ export function FillBlank({ ex, onSubmit, result }: ExerciseProps<FillBlankExerc
           {result ? <AudioButton text={ex.zh.replace(/＿+/, ex.answer)} className="mt-1" /> : null}
           <ChineseText text={filled} size="xl" highlight={result ? [ex.answer] : undefined} pinyinLine={result && pinyinMode !== "hide" ? ex.pinyin : undefined} as="div" interactive={Boolean(result)} />
         </div>
-        <p className="mt-2 font-serif-es text-lg text-ink-soft">{ex.es}</p>
+        <p className="mt-2 font-serif-es text-lg text-ink-soft"><Mixed>{ex.es}</Mixed></p>
       </div>
       {ex.options ? (
         <div className="grid grid-cols-2 gap-2.5 sm:grid-cols-4" role="group" aria-label="Opciones">
@@ -54,7 +56,7 @@ export function FillBlank({ ex, onSubmit, result }: ExerciseProps<FillBlankExerc
                 }}
                 disabled={Boolean(result)}
               >
-                <span lang="zh-CN" className="zh-serif text-3xl leading-none">
+                <span lang={targetLang()} className="zh-serif text-3xl leading-none">
                   {o}
                 </span>
               </OptionTile>
@@ -69,7 +71,7 @@ export function FillBlank({ ex, onSubmit, result }: ExerciseProps<FillBlankExerc
             if (text.trim() && !result) onSubmit({ kind: "text", text });
           }}
         >
-          <Input lang="zh-CN" value={text} onChange={(e) => setText(e.target.value)} className="zh-serif h-14 text-center text-2xl" autoFocus disabled={Boolean(result)} aria-label="Carácter que falta" />
+          <Input lang={targetLang()} value={text} onChange={(e) => setText(e.target.value)} className="zh-serif h-14 text-center text-2xl" autoFocus disabled={Boolean(result)} aria-label="Carácter que falta" />
           {!result ? <CheckButton type="submit" disabled={!text.trim()} /> : null}
         </form>
       )}

@@ -1,5 +1,5 @@
 "use client";
-import Link from "next/link";
+import Link from "@/lib/languages/link";
 import { useEffect, useState } from "react";
 import { useLiveQuery } from "dexie-react-hooks";
 import { BookOpen, ChevronRight, GraduationCap, Layers, NotebookPen, Plus, Search, Video } from "lucide-react";
@@ -10,34 +10,27 @@ import { daysBetween, formatMinutes } from "@/lib/utils";
 import { useNow } from "@/hooks/use-now";
 import { Button } from "@/components/ui/button";
 import { Card, Progress } from "@/components/ui/primitives";
-import { Hanzi } from "@/components/zh/chinese-text";
+import { Hanzi } from "@/components/target/target-text";
 import { QuickAddDialog } from "@/components/flashcards/quick-add";
 import { ActivityHeatmap } from "@/components/today/heatmap";
-import { CharOfDay } from "@/components/today/char-of-day";
+import { usePack } from "@/lib/languages/provider";
+import { CULTURE, greetingFor, quoteOfDayFor } from "@/lib/languages/culture";
 import { todayPlan, type PlanStep } from "@/lib/plan";
-import { ShanShui, dayPhase, Enso, Seal, PlumBranch, Lantern, quoteOfDay } from "@/components/ornament";
+import { dayPhase, Enso, Seal, Lantern } from "@/components/ornament";
 import { cn } from "@/lib/utils";
+import { targetLang } from "@/lib/languages/registry";
+import { Mixed } from "@/components/target/mixed";
 
-const GREETINGS: { zh: string; es: string; from: number }[] = [
-  { zh: "早上好", es: "Buenos días", from: 5 },
-  { zh: "下午好", es: "Buenas tardes", from: 13 },
-  { zh: "晚上好", es: "Buenas noches", from: 19 },
-];
-const WEEKDAYS_ZH = ["星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"];
-const ZH_NUM = ["零", "一", "二", "三", "四", "五", "六", "七", "八", "九", "十"];
-function zhNumber(n: number): string {
-  if (n <= 10) return ZH_NUM[n];
-  if (n < 20) return `十${ZH_NUM[n - 10]}`;
-  const tens = Math.floor(n / 10);
-  const rest = n % 10;
-  return `${ZH_NUM[tens]}十${rest ? ZH_NUM[rest] : ""}`;
-}
 
 export function TodayDashboard() {
   const settings = useSettings((s) => s.settings);
+  const pack = usePack();
+  const langSet = settings.langs[pack.id];
+  const ItemOfDay = pack.ui.ItemOfDay;
+  const examLabel = pack.exam.levels.find((l) => l.id === pack.exam.firstLevel)?.label ?? pack.exam.name;
   const [sum, setSum] = useState<TodaySummary | null>(null);
   const [adding, setAdding] = useState(false);
-  const tick = useLiveQuery(() => Promise.all([db.cards.count(), db.dailyStats.count(), db.words.count(), db.reviewLogs.count()]), []);
+  const tick = useLiveQuery(() => Promise.all([db.cards.count(), db.daily.count(), db.words.count(), db.reviewLogs.count()]), []);
   useEffect(() => {
     void todaySummary().then(setSum);
   }, [tick]);
@@ -45,17 +38,20 @@ export function TodayDashboard() {
   const now = useNow();
   const date = new Date(now);
   const h = date.getHours();
-  const greet = GREETINGS.filter((g) => h >= g.from).pop() ?? GREETINGS[2];
+  const culture = CULTURE[pack.id];
+  const greet = greetingFor(pack.id, h);
+  const { Landscape, Branch, DailyShape } = pack.theme.ornaments;
   const phase = dayPhase(date);
   const dayIndex = Math.floor(now / 86400000);
-  const goal = settings.dailyGoalMinutes;
+  const goal = langSet?.dailyGoalMinutes ?? settings.dailyGoalMinutes;
   const minutes = sum?.minutesToday ?? 0;
   const pct = goal ? Math.min(1, minutes / goal) : 0;
-  const examDays = settings.examDate ? daysBetween(date, new Date(settings.examDate + "T00:00:00")) : null;
-  const plan = sum ? todayPlan(sum, settings) : [];
-  const quote = quoteOfDay(date);
+  const examDate = langSet?.examDate ?? "";
+  const examDays = examDate ? daysBetween(date, new Date(examDate + "T00:00:00")) : null;
+  const plan = sum ? todayPlan(sum, settings, { levelTitle: pack.curriculum.levelTitle, practiceTopics: pack.id === "zh" ? "tonos, caracteres, frases y escucha" : pack.id === "ja" ? "kana y kanji, partículas, conjugación y escucha" : "hangul, partículas, conjugación y escucha", goalMinutes: langSet?.dailyGoalMinutes }) : [];
+  const quote = quoteOfDayFor(pack.id, date);
   const name = settings.name || "Hugo";
-  const zhName = /^\s*hugo\s*$/i.test(name) || !settings.name ? "雨果" : name;
+  const zhName = /^\s*hugo\s*$/i.test(name) || !settings.name ? culture.userName : name;
   const dateEs = date.toLocaleDateString("es-ES", { weekday: "long", day: "numeric", month: "long" });
 
   return (
@@ -63,30 +59,40 @@ export function TodayDashboard() {
       {/* Cabecera 山水 */}
       <section className="relative -mx-4 -mt-5 overflow-hidden sm:-mx-6 sm:rounded-b-[var(--radius-card)]" aria-label="Saludo">
         <div className="absolute inset-0" aria-hidden="true">
-          <ShanShui phase={phase} seed={11 + (dayIndex % 7)} height={320} layers={4} />
+          <Landscape phase={phase} seed={11 + (dayIndex % 7)} height={320} layers={4} />
           <div className="absolute inset-x-0 bottom-0 top-[8%] bg-gradient-to-b from-transparent via-paper/85 to-paper" />
         </div>
         <div className="relative flex flex-col gap-5 px-4 pb-4 pt-24 sm:flex-row sm:items-end sm:justify-between sm:px-8 sm:pb-5 sm:pt-28">
           <div className="min-w-0">
             <p className="mb-2 text-[11px] uppercase tracking-[0.18em] text-ink-soft">
-              <span lang="zh-CN" className="zh normal-case tracking-normal">
-                {zhNumber(date.getMonth() + 1)}月{zhNumber(date.getDate())}日 · {WEEKDAYS_ZH[date.getDay()]}
+              <span lang={targetLang()} className="zh normal-case tracking-normal">
+                {culture.date(date)}
               </span>
               <span className="mx-2 hidden opacity-50 sm:inline">·</span>
-              <span className="hidden sm:inline">{dateEs}</span>
+              <span className="hidden sm:inline"><Mixed>{dateEs}</Mixed></span>
             </p>
             <h1 className="text-4xl leading-none sm:text-5xl">
-              <Hanzi text={`${greet.zh}，${zhName}`} size="2xl" font="serif" className="font-normal tracking-normal" />
+              <Hanzi text={`${greet.text}${pack.id === "zh" ? "，" : pack.id === "ja" ? "、" : ", "}${zhName}`} size="2xl" font="serif" className="font-normal tracking-normal" />
             </h1>
             <p className="mt-3 max-w-md text-sm text-ink-soft">
               {greet.es}. {sum ? (sum.dueCards ? `Tienes ${sum.dueCards} repasos pendientes.` : "No hay repasos pendientes ahora mismo.") : "Preparando tu día…"}
             </p>
           </div>
           <div className="flex items-center gap-4 sm:gap-5">
-            <Enso size={108} progress={pct} label={`Objetivo diario: ${formatMinutes(minutes)} de ${formatMinutes(goal)}`} stroke={pct >= 1 ? "rgb(var(--celadon-ink))" : "rgb(var(--ink))"}>
-              <span className="block font-serif-es text-3xl leading-none text-ink tabular">{Math.round(minutes)}</span>
-              <span className="mt-1 block text-[10px] uppercase tracking-wider text-ink-faint">de {goal} min</span>
-            </Enso>
+            {pack.id === "ko" ? (
+              <div className="relative">
+                <DailyShape progress={pct} size={108} label={`Objetivo diario: ${formatMinutes(minutes)} de ${formatMinutes(goal)}`} />
+                <span className="absolute inset-x-0 top-[42%] text-center">
+                  <span className="block font-serif-es text-3xl leading-none text-ink tabular">{Math.round(minutes)}</span>
+                  <span className="mt-1 block text-[10px] uppercase tracking-wider text-ink-faint">de {goal} min</span>
+                </span>
+              </div>
+            ) : (
+              <Enso size={108} progress={pct} label={`Objetivo diario: ${formatMinutes(minutes)} de ${formatMinutes(goal)}`} stroke={pct >= 1 ? "rgb(var(--celadon-ink))" : "rgb(var(--ink))"}>
+                <span className="block font-serif-es text-3xl leading-none text-ink tabular">{Math.round(minutes)}</span>
+                <span className="mt-1 block text-[10px] uppercase tracking-wider text-ink-faint">de {goal} min</span>
+              </Enso>
+            )}
             <Button onClick={() => setAdding(true)} variant="outline" className="bg-paper-raised/80">
               <Plus /> Vocabulario de clase
             </Button>
@@ -96,10 +102,10 @@ export function TodayDashboard() {
 
       {/* Cifras */}
       <section className="grid grid-cols-2 gap-x-6 gap-y-4 sm:grid-cols-4" aria-label="Resumen">
-        <Stat zh="周" label="Esta semana" value={formatMinutes(sum?.minutesWeek ?? 0)} />
-        <Stat zh="词" label="Palabras conocidas" value={`${sum?.wordsKnown ?? 0}`} hint={`${sum?.wordsLearning ?? 0} aprendiendo · ${sum?.wordsTotal ?? 0} en el mazo`} />
-        <Stat zh="字" label="Caracteres" value={`${sum?.charsKnown ?? 0}`} hint="reconocidos" />
-        <Stat zh="卡" label="Repasos hoy" value={`${sum?.dueCards ?? 0}`} hint="tarjetas pendientes" />
+        <Stat zh={culture.stats.week} label="Esta semana" value={formatMinutes(sum?.minutesWeek ?? 0)} />
+        <Stat zh={culture.stats.words} label="Palabras conocidas" value={`${sum?.wordsKnown ?? 0}`} hint={`${sum?.wordsLearning ?? 0} aprendiendo · ${sum?.wordsTotal ?? 0} en el mazo`} />
+        <Stat zh={culture.stats.chars} label={pack.id === "ko" ? "Jamo y hanja" : pack.id === "ja" ? "Kanji" : "Caracteres"} value={`${sum?.charsKnown ?? 0}`} hint="reconocidos" />
+        <Stat zh={culture.stats.reviews} label="Repasos hoy" value={`${sum?.dueCards ?? 0}`} hint="tarjetas pendientes" />
       </section>
 
       {/* Tareas + examen/racha */}
@@ -107,8 +113,8 @@ export function TodayDashboard() {
         <Card className="p-0">
           <header className="flex items-baseline justify-between border-b border-line/70 px-4 py-3 sm:px-5">
             <h2 className="font-serif-es text-lg text-ink">
-              <span lang="zh-CN" className="zh-kai mr-2 text-ink-soft">
-                今日任务
+              <span lang={targetLang()} className="zh-kai mr-2 text-ink-soft">
+                {({ zh: "今日任务", ja: "今日のタスク", ko: "오늘의 할 일" } as Record<string, string>)[pack.id]}
               </span>
               Tareas de hoy
             </h2>
@@ -140,7 +146,7 @@ export function TodayDashboard() {
           <Card className="flex flex-col justify-between">
             <div className="flex items-start justify-between gap-3">
               <div>
-                <h2 className="font-serif-es text-lg text-ink">Examen HSK 1</h2>
+                <h2 className="font-serif-es text-lg text-ink">Examen <Mixed>{examLabel}</Mixed></h2>
                 {examDays === null ? (
                   <p className="mt-1 text-sm text-ink-soft">
                     Pon la fecha de tu examen en{" "}
@@ -155,9 +161,9 @@ export function TodayDashboard() {
                   </p>
                 )}
               </div>
-              {examDays !== null ? <Seal text="考" size={44} tone="ink" title="Examen" /> : null}
+              {examDays !== null ? <Seal text={culture.examSeal} size={44} tone="ink" title="Examen" /> : null}
             </div>
-            <Readiness known={sum?.wordsKnown ?? 0} />
+            <Readiness known={sum?.wordsKnown ?? 0} target={pack.exam.levels.find((l) => l.id === pack.exam.firstLevel)?.words ?? (pack.seed.words.length || 300)} label={examLabel} />
           </Card>
         </div>
       </section>
@@ -167,35 +173,35 @@ export function TodayDashboard() {
         <Card>
           <div className="flex items-baseline justify-between">
             <h2 className="font-serif-es text-lg text-ink">
-              <span lang="zh-CN" className="zh-kai mr-2 text-ink-soft">
-                梅花
+              <span lang={targetLang()} className="zh-kai mr-2 text-ink-soft">
+                <Mixed>{culture.branch.native}</Mixed>
               </span>
-              Tu ciruelo
+              <Mixed>{culture.branch.es}</Mixed>
             </h2>
             <span className="text-xs text-ink-faint tabular">{sum?.wordsKnown ?? 0} palabras dominadas</span>
           </div>
-          <PlumBranch count={sum?.wordsKnown ?? 0} perFlower={10} className="mt-2" height={170} />
+          <Branch progress={Math.min(1, (sum?.wordsKnown ?? 0) / 400)} className="mt-2" label={`${culture.branch.es}: ${sum?.wordsKnown ?? 0} palabras dominadas`} />
         </Card>
         <Card>
           <h2 className="mb-3 font-serif-es text-lg text-ink">
-            <span lang="zh-CN" className="zh-kai mr-2 text-ink-soft">
-              每日一字
+            <span lang={targetLang()} className="zh-kai mr-2 text-ink-soft">
+              <Mixed>{culture.itemOfDay.native}</Mixed>
             </span>
-            Carácter del día
+            <Mixed>{culture.itemOfDay.es}</Mixed>
           </h2>
-          <CharOfDay dayIndex={dayIndex} />
+          {ItemOfDay ? <ItemOfDay dayIndex={dayIndex} /> : null}
         </Card>
       </section>
 
       {/* Accesos rápidos */}
       <section aria-label="Accesos rápidos">
         <div className="grid grid-cols-3 gap-2 sm:grid-cols-6">
-          <QuickLink href="/aprender" icon={<GraduationCap />} label="Lección" zh="学" />
-          <QuickLink href="/flashcards/repasar" icon={<Layers />} label="Repasar" zh="卡" />
-          <QuickLink href="/lectura" icon={<BookOpen />} label="Leer" zh="读" />
-          <QuickLink href="/videos" icon={<Video />} label="Vídeo" zh="视" />
-          <QuickLink href="/study-hall/cuaderno" icon={<NotebookPen />} label="Cuaderno" zh="斋" />
-          <QuickLink href="/diccionario" icon={<Search />} label="Diccionario" zh="典" />
+          <QuickLink href="/aprender" icon={<GraduationCap />} label="Lección" zh={culture.quick.lesson} />
+          <QuickLink href="/flashcards/repasar" icon={<Layers />} label="Repasar" zh={culture.quick.review} />
+          <QuickLink href="/lectura" icon={<BookOpen />} label="Leer" zh={culture.quick.read} />
+          <QuickLink href="/videos" icon={<Video />} label="Vídeo" zh={culture.quick.video} />
+          <QuickLink href="/study-hall/cuaderno" icon={<NotebookPen />} label="Cuaderno" zh={culture.quick.notebook} />
+          <QuickLink href="/diccionario" icon={<Search />} label="Diccionario" zh={culture.quick.dict} />
         </div>
       </section>
 
@@ -212,11 +218,11 @@ export function TodayDashboard() {
 
       {/* Cita del día */}
       <footer className="pb-2 text-center">
-        <p lang="zh-CN" className="zh-kai text-xl text-ink">
-          {quote.zh}
+        <p lang={targetLang()} className="zh-kai text-xl text-ink">
+          <Mixed>{quote.text}</Mixed>
         </p>
         <p className="mt-1 text-xs text-ink-faint">
-          {quote.py} · {quote.es}
+          <Mixed>{quote.reading}</Mixed> · <Mixed>{quote.es}</Mixed>
         </p>
       </footer>
 
@@ -245,8 +251,8 @@ function PlanRow({ step, index, done }: { step: PlanStep; index: number; done: b
           )}
         </span>
         <span className="min-w-0 flex-1">
-          <span className={cn("block text-sm font-medium text-ink", done && "line-through decoration-ink/40")}>{step.title}</span>
-          <span className="block truncate text-xs text-ink-faint">{step.subtitle}</span>
+          <span className={cn("block text-sm font-medium text-ink", done && "line-through decoration-ink/40")}><Mixed>{step.title}</Mixed></span>
+          <span className="block truncate text-xs text-ink-faint"><Mixed>{step.subtitle}</Mixed></span>
         </span>
         <span className="shrink-0 text-xs text-ink-faint tabular">{step.minutes} min</span>
         <ChevronRight className="size-4 shrink-0 text-ink-faint transition-transform group-hover:translate-x-0.5" />
@@ -258,13 +264,13 @@ function PlanRow({ step, index, done }: { step: PlanStep; index: number; done: b
 function Stat({ zh, label, value, hint }: { zh: string; label: string; value: string; hint?: string }) {
   return (
     <div className="flex min-w-0 items-start gap-3">
-      <span lang="zh-CN" className="zh-kai mt-0.5 text-xl leading-none text-ink-faint" aria-hidden="true">
-        {zh}
+      <span lang={targetLang()} className="zh-kai mt-0.5 text-xl leading-none text-ink-faint" aria-hidden="true">
+        <Mixed>{zh}</Mixed>
       </span>
       <span className="min-w-0">
         <span className="block text-xs text-ink-faint">{label}</span>
         <span className="block font-serif-es text-2xl leading-tight text-ink tabular">{value}</span>
-        {hint ? <span className="block truncate text-[11px] text-ink-faint">{hint}</span> : null}
+        {hint ? <span className="block truncate text-[11px] text-ink-faint"><Mixed>{hint}</Mixed></span> : null}
       </span>
     </div>
   );
@@ -275,8 +281,8 @@ function QuickLink({ href, icon, label, zh }: { href: string; icon: React.ReactN
     <Link href={href} className="flex flex-col items-center gap-1 rounded-[10px] border border-line/80 bg-paper-raised/60 px-2 py-3 text-xs text-ink-soft transition-colors hover:border-ink/30 hover:bg-paper-raised hover:text-ink [&_svg]:size-4 [&_svg]:text-ink-faint">
       <span className="relative">
         {icon}
-        <span lang="zh-CN" className="zh-kai absolute -right-3 -top-2 text-[10px] text-ink-faint" aria-hidden="true">
-          {zh}
+        <span lang={targetLang()} className="zh-kai absolute -right-3 -top-2 text-[10px] text-ink-faint" aria-hidden="true">
+          <Mixed>{zh}</Mixed>
         </span>
       </span>
       {label}
@@ -302,7 +308,7 @@ function WeekLanterns({ daily, date }: { daily: TodaySummary["daily"]; date: Dat
         <li key={d.key} className={cn("flex flex-col items-center", d.future && "opacity-40")}>
           <Lantern lit={d.lit} size={22} title={`${d.label}: ${d.lit ? "estudiado" : "sin estudiar"}`} />
           <span className="text-[9px] text-ink-faint" aria-hidden="true">
-            {d.label}
+            <Mixed>{d.label}</Mixed>
           </span>
         </li>
       ))}
@@ -310,9 +316,9 @@ function WeekLanterns({ daily, date }: { daily: TodaySummary["daily"]; date: Dat
   );
 }
 
-function Readiness({ known }: { known: number }) {
-  // HSK 3.0 nivel 1 = 300 palabras; aproximación: % de palabras conocidas × factor de práctica
-  const pct = Math.min(100, Math.round((known / 300) * 100));
+function Readiness({ known, target, label }: { known: number; target: number; label: string }) {
+  // aproximación: % de palabras conocidas del vocabulario semilla del primer nivel
+  const pct = Math.min(100, Math.round((known / target) * 100));
   return (
     <div className="mt-3">
       <div className="flex items-center justify-between text-xs text-ink-faint">
@@ -320,7 +326,7 @@ function Readiness({ known }: { known: number }) {
         <span className="tabular">{pct}%</span>
       </div>
       <Progress value={pct} className="mt-1" color="rgb(var(--celadon))" />
-      <p className="mt-1 text-[11px] text-ink-faint">Según palabras conocidas (300 del HSK 3.0 nivel 1). Mejora con simulacros.</p>
+      <p className="mt-1 text-[11px] text-ink-faint">Según palabras conocidas ({target} del vocabulario de <Mixed>{label}</Mixed>). Mejora con simulacros.</p>
     </div>
   );
 }

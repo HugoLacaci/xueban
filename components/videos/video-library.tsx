@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useMemo, useState } from "react";
-import Link from "next/link";
+import { Mixed } from "@/components/target/mixed";
+import Link from "@/lib/languages/link";
 import { useLiveQuery } from "dexie-react-hooks";
 import { Clock, Link2, Plus, Trash2, Video as VideoIcon } from "lucide-react";
 import { db } from "@/lib/db";
@@ -12,7 +13,9 @@ import { Button } from "@/components/ui/button";
 import { Badge, Card, Input, PageHeader, SectionTitle, Spinner } from "@/components/ui/primitives";
 import { SealTag } from "@/components/ornament/seal";
 import { toast } from "@/components/ui/toast";
+import { getActiveLang } from "@/lib/languages/registry";
 import { cn } from "@/lib/utils";
+import { pageNative } from "@/lib/languages/ui-text";
 
 export function VideoLibrary() {
   const [curated, setCurated] = useState<CuratedVideoMeta[] | null>(null);
@@ -23,7 +26,7 @@ export function VideoLibrary() {
   const load = useDictionary((s) => s.load);
   const known = useKnowledge((s) => s.known);
   const knownChars = useKnowledge((s) => s.knownChars);
-  const mine = useLiveQuery(() => db.videos.where("source").equals("user").reverse().sortBy("addedAt"), []) ?? [];
+  const mine = useLiveQuery(() => db.videos.where("[lang+source]").equals([getActiveLang(), "user"]).reverse().sortBy("addedAt"), []) ?? [];
 
   useEffect(() => {
     if (dictStatus === "idle") void load();
@@ -71,7 +74,7 @@ export function VideoLibrary() {
 
   return (
     <div className="space-y-6">
-      <PageHeader title="Vídeos" zh="视频" subtitle="Subtítulos interactivos con pinyin y traducción, repetición por línea, pausa automática, velocidad y minado de frases. Pega cualquier URL de YouTube con subtítulos en chino." />
+      <PageHeader title="Vídeos" zh={pageNative("videos")} subtitle="Subtítulos interactivos con lectura y traducción, repetición por línea, pausa automática, velocidad y minado de frases. Pega cualquier URL de YouTube con subtítulos en chino." />
       <Card>
         <form
           className="flex flex-wrap items-center gap-2"
@@ -150,11 +153,21 @@ function VideoCard({ id, title, channel, thumbnail, duration, level, lines, desc
           </div>
         </div>
         <div className="flex flex-1 flex-col p-3.5">
-          <p className="line-clamp-2 font-medium leading-snug text-ink">{title}</p>
-          {channel ? <p className="mt-0.5 text-xs text-ink-faint">{channel}</p> : null}
-          {description ? <p className="mt-1.5 line-clamp-2 text-xs text-ink-soft">{description}</p> : null}
+          <p className="line-clamp-2 font-medium leading-snug text-ink">
+            <Mixed>{title}</Mixed>
+          </p>
+          {channel ? (
+            <p className="mt-0.5 text-xs text-ink-faint">
+              <Mixed>{channel}</Mixed>
+            </p>
+          ) : null}
+          {description ? (
+            <p className="mt-1.5 line-clamp-2 text-xs text-ink-soft">
+              <Mixed>{description}</Mixed>
+            </p>
+          ) : null}
           <div className="mt-auto flex flex-wrap items-center gap-1.5 pt-3">
-            {level ? <SealTag>HSK {level}</SealTag> : null}
+            {level ? <SealTag>{`Nivel ${level}`}</SealTag> : null}
             <Badge variant="outline">{lines} líneas</Badge>
             {ratio !== undefined ? <Badge variant={ratioVariant(ratio)}>{Math.round(ratio * 100)} % conocido</Badge> : null}
             {tags?.slice(0, 2).map((t) => (

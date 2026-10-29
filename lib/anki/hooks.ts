@@ -4,12 +4,11 @@
  * si está conectado y el usuario lo tiene activado. La implementación completa vive en sync.ts.
  */
 import type { Word } from "@/lib/db";
-import { useSettings } from "@/lib/settings";
+import { ankiOnFor, useSettings } from "@/lib/settings";
 import { useAnkiStatus } from "./client";
 
 export async function onWordSaved(word: Word): Promise<void> {
-  const { anki } = useSettings.getState().settings;
-  if (!anki.enabled) return;
+  if (!ankiOnFor(useSettings.getState().settings, word.lang)) return;
   if (!useAnkiStatus.getState().connected) return;
   try {
     const { pushWordsToAnki } = await import("./sync");

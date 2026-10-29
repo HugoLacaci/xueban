@@ -1,0 +1,212 @@
+{
+  "id": "ja-u09",
+  "order": 10,
+  "title": "Escuela y trabajo",
+  "zh": "学校と仕事",
+  "description": "La clase de japonés por dentro: formas del diccionario, pedir permiso, normas del examen, consejos del profesor y experiencias de estudio y trabajo.",
+  "icon": "GraduationCap",
+  "level": 1,
+  "lang": "ja",
+  "category": "Escuela y trabajo",
+  "checkpoint": { "exercises": 15 },
+  "lessons": [
+    {
+      "id": "ja-u09-l1",
+      "title": "La forma de diccionario",
+      "zh": "辞書形",
+      "goal": "Pasar verbos de la forma -masu a la forma de diccionario y saber en qué grupo está cada uno.",
+      "minutes": 14,
+      "vocab": [
+        { "hanzi": "勉強", "pinyin": "べんきょう", "es": "estudio", "note": "勉強する = estudiar." },
+        { "hanzi": "教える", "pinyin": "おしえる", "es": "enseñar; decir (información)" },
+        { "hanzi": "習う", "pinyin": "ならう", "es": "aprender (con alguien); tomar clases" },
+        { "hanzi": "覚える", "pinyin": "おぼえる", "es": "memorizar; acordarse" },
+        { "hanzi": "言葉", "pinyin": "ことば", "es": "palabra; lengua" },
+        { "hanzi": "漢字", "pinyin": "かんじ", "es": "kanji; carácter chino" },
+        { "hanzi": "読む", "pinyin": "よむ", "es": "leer" },
+        { "hanzi": "書く", "pinyin": "かく", "es": "escribir" },
+        { "hanzi": "辞書", "pinyin": "じしょ", "es": "diccionario" }
+      ],
+      "steps": [
+        { "type": "vocab" },
+        {
+          "type": "dialogue",
+          "title": "En clase con Tanaka-sensei",
+          "lines": [
+            { "speaker": "田中先生", "zh": "みなさん、今日は辞書形を勉強します。", "py": "みなさん、きょう は じしょけい を べんきょう します。", "es": "Chicos, hoy estudiamos la forma de diccionario." },
+            { "speaker": "田中先生", "zh": "ウーゴさん、「書きます」の辞書形は何ですか。", "py": "ウーゴ さん、「かきます」 の じしょけい は なん です か。", "es": "Hugo, ¿cuál es la forma de diccionario de «kakimasu»?" },
+            { "speaker": "ウーゴ", "zh": "「書く」です。", "py": "「かく」 です。", "es": "Es «kaku»." },
+            { "speaker": "田中先生", "zh": "いいですね。じゃあ、「食べます」は？", "py": "いい です ね。じゃあ、「たべます」 は？", "es": "Muy bien. ¿Y «tabemasu»?" },
+            { "speaker": "ウーゴ", "zh": "「食べる」です。先生、「来ます」は？", "py": "「たべる」 です。せんせい、「きます」 は？", "es": "Es «taberu». Profesora, ¿y «kimasu»?" },
+            { "speaker": "田中先生", "zh": "「来る」です。少し難しいですね。辞書にはこの形があります。毎日覚えてください。", "py": "「くる」 です。すこし むずかしい です ね。じしょ に は この かたち が あります。まいにち おぼえて ください。", "es": "Es «kuru». Es un poco difícil, ¿verdad? En el diccionario aparece esta forma. Memorizadlas cada día." }
+          ],
+          "notes": "辞書形 じしょけい = forma de diccionario (辞書 + 形 かたち «forma»). みなさん = todos (al dirigirse a un grupo). 来る y する son los dos verbos irregulares: 来ます→来る, します→する."
+        },
+        { "type": "grammar", "id": "dictionary-form" },
+        { "type": "exercises", "count": 10, "types": ["conjugation", "choose-meaning", "listen-choose", "pinyin-input", "choose-character", "matching", "fill-blank", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ja-u09-l2",
+      "title": "¿Puedo abrir la ventana?",
+      "zh": "窓を開けてもいいですか",
+      "goal": "Pedir y dar permiso con 〜てもいいですか.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "教室", "pinyin": "きょうしつ", "es": "aula" },
+        { "hanzi": "質問", "pinyin": "しつもん", "es": "pregunta", "note": "質問する = hacer una pregunta." },
+        { "hanzi": "宿題", "pinyin": "しゅくだい", "es": "deberes" },
+        { "hanzi": "使う", "pinyin": "つかう", "es": "usar" },
+        { "hanzi": "ノート", "pinyin": "ノート", "es": "cuaderno" },
+        { "hanzi": "窓", "pinyin": "まど", "es": "ventana" },
+        { "hanzi": "開ける", "pinyin": "あける", "es": "abrir" },
+        { "hanzi": "閉める", "pinyin": "しめる", "es": "cerrar" }
+      ],
+      "steps": [
+        { "type": "vocab" },
+        {
+          "type": "dialogue",
+          "title": "Preguntas en el aula",
+          "lines": [
+            { "speaker": "ウーゴ", "zh": "先生、質問してもいいですか。", "py": "せんせい、しつもん して も いい です か。", "es": "Profesora, ¿puedo hacer una pregunta?" },
+            { "speaker": "田中先生", "zh": "はい、どうぞ。", "py": "はい、どうぞ。", "es": "Sí, adelante." },
+            { "speaker": "ウーゴ", "zh": "宿題で辞書を使ってもいいですか。", "py": "しゅくだい で じしょ を つかって も いい です か。", "es": "¿Puedo usar el diccionario para los deberes?" },
+            { "speaker": "田中先生", "zh": "ええ、使ってもいいですよ。", "py": "ええ、つかって も いい です よ。", "es": "Sí, puedes usarlo." },
+            { "speaker": "ウーゴ", "zh": "それから、教室は暑いですね。窓を開けてもいいですか。", "py": "それから、きょうしつ は あつい です ね。まど を あけて も いい です か。", "es": "Y otra cosa: hace calor en el aula, ¿verdad? ¿Puedo abrir la ventana?" },
+            { "speaker": "田中先生", "zh": "いいですよ。でも、帰る時は閉めてくださいね。", "py": "いい です よ。でも、かえる とき は しめて ください ね。", "es": "Claro. Pero ciérrala cuando te vayas, ¿vale?" }
+          ],
+          "notes": "それから = además, y luego. 帰る時 かえる とき = cuando te vas (a casa): 時 «momento, cuando» va detrás de la forma de diccionario (adelanto)."
+        },
+        { "type": "grammar", "id": "te-mo-ii" },
+        { "type": "exercises", "count": 10, "types": ["conjugation", "choose-meaning", "listen-choose", "order-words", "fill-blank", "build-sentence", "pinyin-input", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ja-u09-l3",
+      "title": "Normas del examen",
+      "zh": "話してはいけません",
+      "goal": "Entender y expresar prohibiciones con 〜てはいけません.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "テスト", "pinyin": "テスト", "es": "examen; prueba" },
+        { "hanzi": "始まる", "pinyin": "はじまる", "es": "empezar (algo empieza)" },
+        { "hanzi": "終わる", "pinyin": "おわる", "es": "terminar (algo termina)" },
+        { "hanzi": "話す", "pinyin": "はなす", "es": "hablar" },
+        { "hanzi": "見る", "pinyin": "みる", "es": "ver; mirar" },
+        { "hanzi": "消す", "pinyin": "けす", "es": "apagar; borrar" },
+        { "hanzi": "静か", "pinyin": "しずか", "es": "tranquilo; silencioso", "note": "Adjetivo na: 静かにしてください = haced silencio." },
+        { "hanzi": "隣", "pinyin": "となり", "es": "al lado; vecino" }
+      ],
+      "steps": [
+        { "type": "vocab" },
+        {
+          "type": "dialogue",
+          "title": "Antes del examen",
+          "lines": [
+            { "speaker": "田中先生", "zh": "これからテストが始まります。隣の人と話してはいけません。", "py": "これから テスト が はじまります。となり の ひと と はなして は いけません。", "es": "Ahora empieza el examen. No se puede hablar con el de al lado." },
+            { "speaker": "ウーゴ", "zh": "先生、スマホを見てもいいですか。", "py": "せんせい、スマホ を みて も いい です か。", "es": "Profesora, ¿puedo mirar el móvil?" },
+            { "speaker": "田中先生", "zh": "いいえ、見てはいけません。スマホを消してください。", "py": "いいえ、みて は いけません。スマホ を けして ください。", "es": "No, no puedes mirarlo. Apaga el móvil." },
+            { "speaker": "ウーゴ", "zh": "はい。辞書も使ってはいけませんか。", "py": "はい。じしょ も つかって は いけません か。", "es": "Vale. ¿Tampoco se puede usar el diccionario?" },
+            { "speaker": "田中先生", "zh": "はい、だめです。テストは十時半に終わります。", "py": "はい、だめ です。テスト は じゅうじ はん に おわります。", "es": "No, no se puede. El examen termina a las diez y media." },
+            { "speaker": "田中先生", "zh": "では、静かにしてください。始めてください。", "py": "では、しずか に して ください。はじめて ください。", "es": "Bueno, silencio, por favor. Podéis empezar." }
+          ],
+          "notes": "スマホ = smartphone, móvil (adelanto). これから = a partir de ahora. だめ = «no vale, no se puede». Ojo: a la pregunta negativa «¿no se puede…?», はい significa «sí, es como dices: no se puede». 始まる (algo empieza) / 始める (empezar algo): はじめてください = empezad."
+        },
+        { "type": "grammar", "id": "te-wa-ikenai" },
+        { "type": "exercises", "count": 10, "types": ["conjugation", "choose-meaning", "listen-choose", "fill-blank", "order-words", "translate-to-es", "particle", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ja-u09-l4",
+      "title": "No olvides los deberes",
+      "zh": "忘れないでください",
+      "goal": "Formar la forma -nai y pedir que alguien no haga algo con 〜ないでください.",
+      "minutes": 13,
+      "vocab": [
+        { "hanzi": "忘れる", "pinyin": "わすれる", "es": "olvidar" },
+        { "hanzi": "分かる", "pinyin": "わかる", "es": "entender; saber" },
+        { "hanzi": "休む", "pinyin": "やすむ", "es": "descansar; faltar (a clase)" },
+        { "hanzi": "難しい", "pinyin": "むずかしい", "es": "difícil" },
+        { "hanzi": "易しい", "pinyin": "やさしい", "es": "fácil" },
+        { "hanzi": "練習", "pinyin": "れんしゅう", "es": "práctica", "note": "練習する = practicar." },
+        { "hanzi": "毎日", "pinyin": "まいにち", "es": "todos los días" },
+        { "hanzi": "大丈夫", "pinyin": "だいじょうぶ", "es": "bien; no pasa nada" }
+      ],
+      "steps": [
+        { "type": "vocab" },
+        {
+          "type": "dialogue",
+          "title": "Después del examen",
+          "lines": [
+            { "speaker": "田中先生", "zh": "ウーゴさん、テストはどうでしたか。", "py": "ウーゴ さん、テスト は どう でした か。", "es": "Hugo, ¿qué tal el examen?" },
+            { "speaker": "ウーゴ", "zh": "少し難しかったです。漢字が分かりませんでした。", "py": "すこし むずかしかった です。かんじ が わかりませんでした。", "es": "Un poco difícil. No entendí los kanji." },
+            { "speaker": "田中先生", "zh": "大丈夫ですよ。毎日練習してください。", "py": "だいじょうぶ です よ。まいにち れんしゅう して ください。", "es": "No pasa nada. Practica todos los días." },
+            { "speaker": "田中先生", "zh": "それから、明日は宿題を忘れないでください。", "py": "それから、あした は しゅくだい を わすれないで ください。", "es": "Y mañana no olvides los deberes." },
+            { "speaker": "ウーゴ", "zh": "はい、忘れません。", "py": "はい、わすれません。", "es": "Sí, no los olvidaré." },
+            { "speaker": "田中先生", "zh": "金曜日は休みです。学校に来ないでくださいね。", "py": "きんようび は やすみ です。がっこう に こないで ください ね。", "es": "El viernes es fiesta. No vengáis a la escuela, ¿eh?" },
+            { "speaker": "ウーゴ", "zh": "分かりました。", "py": "わかりました。", "es": "Entendido." }
+          ],
+          "notes": "難しかった = fue difícil (pasado de adjetivo -i; lo verás a fondo en la unidad del tiempo). 休み やすみ = descanso, día libre (de 休む). 分かりました = entendido. 来る → 来ない こない."
+        },
+        { "type": "grammar", "id": "nai-form" },
+        { "type": "exercises", "count": 10, "types": ["conjugation", "choose-meaning", "listen-choose", "fill-blank", "order-words", "dictation", "matching", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ja-u09-l5",
+      "title": "Estudiar y trabajar: lectura y repaso",
+      "zh": "働いたことがありますか",
+      "goal": "Formar la forma -ta (pasado informal) y hablar de experiencias de estudio y trabajo.",
+      "minutes": 15,
+      "vocab": [
+        { "hanzi": "学校", "pinyin": "がっこう", "es": "escuela" },
+        { "hanzi": "大学", "pinyin": "だいがく", "es": "universidad" },
+        { "hanzi": "留学生", "pinyin": "りゅうがくせい", "es": "estudiante extranjero (de intercambio)" },
+        { "hanzi": "学生", "pinyin": "がくせい", "es": "estudiante" },
+        { "hanzi": "仕事", "pinyin": "しごと", "es": "trabajo" },
+        { "hanzi": "働く", "pinyin": "はたらく", "es": "trabajar" },
+        { "hanzi": "会社", "pinyin": "かいしゃ", "es": "empresa" },
+        { "hanzi": "来年", "pinyin": "らいねん", "es": "el año que viene" }
+      ],
+      "steps": [
+        { "type": "vocab" },
+        {
+          "type": "dialogue",
+          "title": "¿Has trabajado alguna vez?",
+          "lines": [
+            { "speaker": "けん", "zh": "ウーゴさんは仕事をしたことがありますか。", "py": "ウーゴ さん は しごと を した こと が あります か。", "es": "Hugo, ¿has trabajado alguna vez?" },
+            { "speaker": "ウーゴ", "zh": "はい。スペインのレストランで働いたことがあります。", "py": "はい。スペイン の レストラン で はたらいた こと が あります。", "es": "Sí. He trabajado en un restaurante en España." },
+            { "speaker": "けん", "zh": "そうですか。私は大学の時、会社で働きました。", "py": "そう です か。わたし は だいがく の とき、かいしゃ で はたらきました。", "es": "Ah, ¿sí? Yo, cuando estaba en la universidad, trabajé en una empresa." },
+            { "speaker": "ウーゴ", "zh": "私は来年、日本の大学で勉強したいです。留学生になりたいです。", "py": "わたし は らいねん、にほん の だいがく で べんきょう したい です。りゅうがくせい に なりたい です。", "es": "Yo el año que viene quiero estudiar en una universidad japonesa. Quiero ser estudiante de intercambio." },
+            { "speaker": "けん", "zh": "いいですね。日本へ来たことがありますか。", "py": "いい です ね。にほん へ きた こと が あります か。", "es": "¡Qué bien! ¿Habías venido a Japón antes?" },
+            { "speaker": "ウーゴ", "zh": "いいえ、今回が初めてです。", "py": "いいえ、こんかい が はじめて です。", "es": "No, esta es la primera vez." }
+          ],
+          "notes": "〜たことがあります = «he hecho alguna vez…»: forma -ta + ことがあります. 大学の時 = cuando estaba en la universidad. 〜になりたい = querer llegar a ser. 今回 こんかい = esta vez; 初めて はじめて = por primera vez (adelanto)."
+        },
+        { "type": "grammar", "id": "ta-form" },
+        {
+          "type": "reading",
+          "title": "Mi clase de japonés",
+          "text": "私はスペインの大学生です。マドリードの学校で日本語を習っています。先生は田中先生です。田中先生はとても優しいです。クラスは月曜日と水曜日です。漢字は難しいですが、毎日練習します。先週、初めてテストがありました。少し難しかったです。来年、東京の大学へ留学に行きたいです。日本の会社で働きたいです。",
+          "es": "Soy universitario español. Estudio japonés en una escuela de Madrid. Mi profesora es Tanaka-sensei. Tanaka-sensei es muy amable. Las clases son los lunes y los miércoles. Los kanji son difíciles, pero practico todos los días. La semana pasada tuve el primer examen. Fue un poco difícil. El año que viene quiero ir a estudiar a una universidad de Tokio. Quiero trabajar en una empresa japonesa.",
+          "questions": [
+            { "q": "¿Qué días tiene clase Hugo?", "options": ["Lunes y martes", "Lunes y miércoles", "Martes y jueves", "Miércoles y viernes"], "answer": 1, "explain": "クラスは月曜日と水曜日です。" },
+            { "q": "¿Qué le parece difícil a Hugo?", "options": ["Los kanji", "La gramática", "Hablar", "Escuchar"], "answer": 0, "explain": "漢字は難しいですが、毎日練習します。" },
+            { "q": "¿Qué quiere hacer el año que viene?", "options": ["Trabajar en España", "Ser profesor", "Estudiar en una universidad de Tokio", "Viajar a Kioto"], "answer": 2, "explain": "来年、東京の大学へ留学に行きたいです。" }
+          ]
+        },
+        { "type": "exercises", "count": 12, "types": ["conjugation", "matching", "choose-meaning", "order-words", "build-sentence", "fill-blank", "dictation", "translate-to-es", "writing", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    }
+  ]
+}

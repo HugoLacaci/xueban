@@ -25,11 +25,11 @@ jobs:
         with:
           node-version: 22
           cache: npm
-      - name: Caché de datos abiertos (CC-CEDICT, Tatoeba, Make Me a Hanzi…)
+      - name: Caché de datos abiertos (CC-CEDICT, JMdict, KanjiVG, Wiktionary, Tatoeba…)
         uses: actions/cache@v4
         with:
           path: .cache/data
-          key: open-data-${{ hashFiles('scripts/build-data.ts') }}
+          key: open-data-${{ hashFiles('scripts/build-data.ts', 'scripts/data/**') }}
       - run: npm ci
       - name: Generar datos (public/data)
         run: npm run data:build
@@ -40,6 +40,7 @@ jobs:
         run: |
           rm -rf app/api
           npm run build
+          node scripts/fix-export-prefetch.mjs out
           ls out | head
       - uses: actions/upload-pages-artifact@v3
         with:

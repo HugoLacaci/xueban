@@ -1,0 +1,176 @@
+{
+  "id": "ko-u12",
+  "order": 13,
+  "title": "Ocio y aficiones",
+  "zh": "취미와 여가",
+  "description": "Hablar de lo que sabes hacer, proponer planes (cine, tenis, el río Han), contar qué estás haciendo ahora y qué quieres hacer el fin de semana.",
+  "icon": "Music",
+  "level": 1,
+  "lang": "ko",
+  "category": "Ocio",
+  "checkpoint": { "exercises": 15 },
+  "lessons": [
+    {
+      "id": "ko-u12-l1",
+      "title": "¿Sabes jugar al tenis?",
+      "zh": "테니스 칠 수 있어요?",
+      "goal": "Hablar de aficiones y decir lo que sabes o puedes hacer con -(으)ㄹ 수 있다.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "취미", "pinyin": "chwimi", "es": "afición, hobby" },
+        { "hanzi": "수영하다", "pinyin": "suyeonghada", "es": "nadar (수영 = natación)" },
+        { "hanzi": "테니스", "pinyin": "teniseu", "es": "tenis" },
+        { "hanzi": "치다", "pinyin": "chida", "es": "jugar (tenis, ping-pong); tocar (piano, guitarra)" },
+        { "hanzi": "잘", "pinyin": "jal", "es": "bien: 잘 쳐요 = juega bien" },
+        { "hanzi": "빌려주다", "pinyin": "billyeojuda", "es": "prestar (a alguien)" },
+        { "hanzi": "토요일", "pinyin": "toyoil", "es": "sábado" },
+        { "hanzi": "같이", "pinyin": "gachi", "es": "juntos" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "Aficiones" },
+        {
+          "type": "dialogue",
+          "title": "¿Cuál es tu afición?",
+          "lines": [
+            { "speaker": "민수", "zh": "우고 씨는 취미가 뭐예요?", "py": "ugo ssineun chwimiga mwoyeyo?", "es": "Hugo, ¿cuál es tu afición?" },
+            { "speaker": "우고", "zh": "제 취미는 수영이에요. 민수 씨는 수영할 수 있어요?", "py": "je chwimineun suyeongieyo. minsu ssineun suyeonghal su isseoyo?", "es": "Mi afición es la natación. Minsu, ¿tú sabes nadar?" },
+            { "speaker": "민수", "zh": "아니요, 저는 수영을 못 해요. 그렇지만 테니스는 잘 칠 수 있어요.", "py": "aniyo, jeoneun suyeongeul mot haeyo. geureochiman teniseuneun jal chil su isseoyo.", "es": "No, yo no sé nadar. Pero al tenis sí juego bien." },
+            { "speaker": "우고", "zh": "와! 저도 테니스를 배우고 싶어요.", "py": "wa! jeodo teniseureul baeugo sipeoyo.", "es": "¡Anda! Yo también quiero aprender a jugar al tenis." },
+            { "speaker": "민수", "zh": "그럼 토요일에 같이 쳐요. 학교 테니스장은 무료예요.", "py": "geureom toyoire gachi chyeoyo. hakgyo teniseujangeun muryoyeyo.", "es": "Pues jugamos juntos el sábado. Las pistas de la universidad son gratis." },
+            { "speaker": "우고", "zh": "좋아요. 그런데 저는 라켓이 없어요.", "py": "joayo. geureonde jeoneun rakesi eopseoyo.", "es": "Vale. Pero yo no tengo raqueta." },
+            { "speaker": "민수", "zh": "괜찮아요. 제 라켓을 빌려줄 수 있어요.", "py": "gwaenchanayo. je rakeseul billyeojul su isseoyo.", "es": "No pasa nada. Te puedo prestar mi raqueta." }
+          ],
+          "notes": "En coreano no hay un verbo distinto para «saber» hacer algo y «poder» hacerlo: los dos son -(으)ㄹ 수 있다 (수영할 수 있어요 = sé nadar / puedo nadar). Para decir que no sabes, lo más natural es 못 해요 (수영을 못 해요) o -(으)ㄹ 수 없어요. 그렇지만 [그러치만] = pero (más escrito que 그런데). 테니스장 = pista de tenis; 무료 = gratis; 라켓 = raqueta. 테니스를 치다 y 피아노를 치다 usan el mismo verbo 치다 (golpear)."
+        },
+        { "type": "grammar", "id": "eul-su-itda" },
+        { "type": "exercises", "count": 10, "types": ["choose-meaning", "listen-choose", "conjugation", "fill-blank", "order-words", "pinyin-input", "matching", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ko-u12-l2",
+      "title": "¿Vamos al cine?",
+      "zh": "영화 볼까요?",
+      "goal": "Proponer un plan y decidir juntos la hora y el lugar con -(으)ㄹ까요?",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "영화", "pinyin": "yeonghwa", "es": "película" },
+        { "hanzi": "영화관", "pinyin": "yeonghwagwan", "es": "cine (la sala)" },
+        { "hanzi": "시간", "pinyin": "sigan", "es": "tiempo; hora(s): 시간 있어요? = ¿tienes tiempo?" },
+        { "hanzi": "만나다", "pinyin": "mannada", "es": "quedar, encontrarse con" },
+        { "hanzi": "약속", "pinyin": "yaksok", "es": "cita, plan; promesa" },
+        { "hanzi": "예매하다", "pinyin": "yemaehada", "es": "comprar entradas por adelantado, reservar" },
+        { "hanzi": "일요일", "pinyin": "iryoil", "es": "domingo" },
+        { "hanzi": "팝콘", "pinyin": "papkon", "es": "palomitas" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "Hacer planes" },
+        {
+          "type": "dialogue",
+          "title": "¿Tienes tiempo este fin de semana?",
+          "lines": [
+            { "speaker": "지민", "zh": "우고 씨, 이번 주말에 시간 있어요?", "py": "ugo ssi, ibeon jumare sigan isseoyo?", "es": "Hugo, ¿tienes tiempo este fin de semana?" },
+            { "speaker": "우고", "zh": "토요일에는 민수 씨하고 약속이 있어요. 일요일은 괜찮아요.", "py": "toyoireneun minsu ssihago yaksogi isseoyo. iryoireun gwaenchanayo.", "es": "El sábado he quedado con Minsu. El domingo me va bien." },
+            { "speaker": "지민", "zh": "그럼 일요일에 같이 영화 볼까요?", "py": "geureom iryoire gachi yeonghwa bolkkayo?", "es": "Entonces, ¿vemos una película juntos el domingo?" },
+            { "speaker": "우고", "zh": "좋아요! 무슨 영화를 볼까요?", "py": "joayo! museun yeonghwareul bolkkayo?", "es": "¡Genial! ¿Qué película vemos?" },
+            { "speaker": "지민", "zh": "한국 영화 어때요? 영어 자막이 있어요.", "py": "hanguk yeonghwa eottaeyo? yeongeo jamagi isseoyo.", "es": "¿Qué tal una película coreana? Tiene subtítulos en inglés." },
+            { "speaker": "우고", "zh": "좋아요. 몇 시에 만날까요?", "py": "joayo. myeot sie mannalkkayo?", "es": "Vale. ¿A qué hora quedamos?" },
+            { "speaker": "지민", "zh": "두 시에 영화관 앞에서 만나요. 표는 제가 오늘 예매해요.", "py": "du sie yeonghwagwan apeseo mannayo. pyoneun jega oneul yemaehaeyo.", "es": "Quedamos a las dos delante del cine. Yo compro hoy las entradas por internet." },
+            { "speaker": "우고", "zh": "고마워요. 그럼 팝콘은 제가 사요!", "py": "gomawoyo. geureom papkoneun jega sayo!", "es": "Gracias. ¡Entonces las palomitas las pago yo!" }
+          ],
+          "notes": "이번 주말 = este fin de semana (이번 = esta vez). 약속이 있어요 = tengo un plan / he quedado (no es una «promesa» solemne). 자막 = subtítulos. 제가 = 저 + 가 (yo, como sujeto). -(으)ㄹ까요? propone algo o pide opinión: «¿vemos…?», «¿a qué hora quedamos?». En Corea casi todo el mundo compra las entradas del cine en la app antes de ir (예매)."
+        },
+        { "type": "grammar", "id": "eul-kkayo" },
+        { "type": "exercises", "count": 10, "types": ["choose-meaning", "listen-choose", "conjugation", "fill-blank", "particle", "build-sentence", "dictation", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ko-u12-l3",
+      "title": "¿Qué estás haciendo?",
+      "zh": "뭐 하고 있어?",
+      "goal": "Decir qué estás haciendo en este momento o últimamente con -고 있다.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "드라마", "pinyin": "deurama", "es": "serie (de televisión), K-drama" },
+        { "hanzi": "요즘", "pinyin": "yojeum", "es": "últimamente, estos días" },
+        { "hanzi": "배우", "pinyin": "baeu", "es": "actor, actriz" },
+        { "hanzi": "빨리", "pinyin": "ppalli", "es": "rápido, deprisa" },
+        { "hanzi": "책", "pinyin": "chaek", "es": "libro" },
+        { "hanzi": "읽다", "pinyin": "ikda", "es": "leer (읽어요)" },
+        { "hanzi": "웹툰", "pinyin": "weptun", "es": "webtoon (cómic digital coreano)" },
+        { "hanzi": "게임", "pinyin": "geim", "es": "videojuego, juego" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "En el tiempo libre" },
+        {
+          "type": "dialogue",
+          "title": "Estudiar con series",
+          "lines": [
+            { "speaker": "민수", "zh": "우고야, 뭐 하고 있어?", "py": "ugoya, mwo hago isseo?", "es": "Hugo, ¿qué estás haciendo?" },
+            { "speaker": "우고", "zh": "한국 드라마를 보고 있어. 한국어 공부도 하고 있어.", "py": "hanguk deuramareul bogo isseo. hangugeo gongbudo hago isseo.", "es": "Estoy viendo una serie coreana. Y así también estudio coreano." },
+            { "speaker": "민수", "zh": "무슨 드라마야?", "py": "museun deuramaya?", "es": "¿Qué serie es?" },
+            { "speaker": "우고", "zh": "병원 드라마야. 그런데 배우들이 말을 너무 빨리 해.", "py": "byeongwon deuramaya. geureonde baeudeuri mareul neomu ppalli hae.", "es": "Una serie de médicos. Pero los actores hablan demasiado rápido." },
+            { "speaker": "민수", "zh": "나는 요즘 웹툰을 읽고 있어. 웹툰도 한국어 공부에 좋아.", "py": "naneun yojeum weptuneul ilgo isseo. weptundo hangugeo gongbue joa.", "es": "Yo últimamente estoy leyendo webtoons. Los webtoons también van bien para estudiar coreano." },
+            { "speaker": "우고", "zh": "정말? 그럼 재미있는 웹툰 좀 알려 줘.", "py": "jeongmal? geureom jaemiinneun weptun jom allyeo jwo.", "es": "¿En serio? Pues recomiéndame algún webtoon divertido." }
+          ],
+          "notes": "Minsu y Hugo se hablan en 반말 desde la unidad 9: 있어, 해, 좋아 son 있어요, 해요, 좋아요 sin 요. 드라마야 = 드라마예요 en 반말. 우고야: nombre + 야 para llamar a un amigo. 읽고 se pronuncia [일꼬]. 재미있는 [재미인는] = divertido (forma delante de nombre; la verás más adelante). 알려 줘 = 알려 주세요 en 반말 (알리다 = informar). -고 있다 también sirve para acciones que duran una temporada: 요즘 웹툰을 읽고 있어 = estos días estoy leyendo webtoons."
+        },
+        { "type": "grammar", "id": "go-itda" },
+        { "type": "exercises", "count": 10, "types": ["choose-meaning", "listen-choose", "conjugation", "fill-blank", "order-words", "translate-to-es", "pinyin-input", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ko-u12-l4",
+      "title": "Lectura y repaso: un fin de semana en Seúl",
+      "zh": "주말에 뭐 하고 싶어요?",
+      "goal": "Contar lo que quieres hacer el fin de semana y repasar -고 싶다, -(으)ㄹ 수 있다 y el pasado.",
+      "minutes": 14,
+      "vocab": [
+        { "hanzi": "박물관", "pinyin": "bangmulgwan", "es": "museo" },
+        { "hanzi": "구경하다", "pinyin": "gugyeonghada", "es": "visitar, ver (turismo)" },
+        { "hanzi": "한강", "pinyin": "hangang", "es": "el río Han (Seúl)" },
+        { "hanzi": "공원", "pinyin": "gongwon", "es": "parque" },
+        { "hanzi": "자전거", "pinyin": "jajeongeo", "es": "bicicleta: 자전거를 타다 = montar en bici" },
+        { "hanzi": "경치", "pinyin": "gyeongchi", "es": "paisaje, vistas" },
+        { "hanzi": "산책", "pinyin": "sanchaek", "es": "paseo: 산책하다 = pasear" },
+        { "hanzi": "저녁", "pinyin": "jeonyeok", "es": "tarde-noche; cena" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "Planes en Seúl" },
+        {
+          "type": "dialogue",
+          "title": "¿Qué quieres hacer este fin de semana?",
+          "lines": [
+            { "speaker": "김 선생님", "zh": "우고 씨, 이번 주말에 뭐 하고 싶어요?", "py": "ugo ssi, ibeon jumare mwo hago sipeoyo?", "es": "Hugo, ¿qué quieres hacer este fin de semana?" },
+            { "speaker": "우고", "zh": "서울에 가고 싶어요. 박물관을 구경하고 싶어요.", "py": "seoure gago sipeoyo. bangmulgwaneul gugyeonghago sipeoyo.", "es": "Quiero ir a Seúl. Quiero visitar algún museo." },
+            { "speaker": "김 선생님", "zh": "국립중앙박물관 어때요? 무료예요.", "py": "gungnipjungangbangmulgwan eottaeyo? muryoyeyo.", "es": "¿Qué tal el Museo Nacional de Corea? Es gratis." },
+            { "speaker": "우고", "zh": "좋아요! 그리고 한강에서 자전거를 타고 싶어요.", "py": "joayo! geurigo hangangeseo jajeongeoreul tago sipeoyo.", "es": "¡Muy bien! Y también quiero montar en bici junto al río Han." },
+            { "speaker": "김 선생님", "zh": "한강 공원은 경치가 정말 좋아요. 저녁에 산책도 할 수 있어요.", "py": "hangang gongwoneun gyeongchiga jeongmal joayo. jeonyeoge sanchaekdo hal su isseoyo.", "es": "Los parques del río Han tienen unas vistas preciosas. Por la noche también puedes dar un paseo." },
+            { "speaker": "우고", "zh": "와, 빨리 주말이 오면 좋겠어요!", "py": "wa, ppalli jumari omyeon jokesseoyo!", "es": "¡Ay, ojalá llegue pronto el fin de semana!" }
+          ],
+          "notes": "국립중앙박물관 [궁닙중앙방물관] = Museo Nacional de Corea; la colección permanente es gratuita. En los parques del 한강 se alquilan bicis y se pasea de noche junto al río. -(으)면 좋겠어요 = ojalá… (literalmente «estaría bien si…»); apréndelo como expresión."
+        },
+        { "type": "grammar", "id": "go-sipda" },
+        {
+          "type": "reading",
+          "title": "Mi fin de semana",
+          "text": "토요일 아침에 민수 씨하고 학교에서 테니스를 쳤어요. 저는 테니스를 잘 못 쳐요. 그렇지만 민수 씨가 가르쳐 줬어요. 오후에는 기숙사에서 한국 드라마를 봤어요. 일요일에는 지민 씨하고 영화관에 갔어요. 한국 영화를 영어 자막으로 봤어요. 영화는 조금 무서웠지만 재미있었어요. 다음 주말에는 서울에 갈 거예요. 한강에서 자전거를 타고 싶어요.",
+          "es": "El sábado por la mañana jugué al tenis con Minsu en la universidad. Yo no juego bien al tenis, pero Minsu me enseñó. Por la tarde vi una serie coreana en la residencia. El domingo fui al cine con Jimin. Vimos una película coreana con subtítulos en inglés. La película daba un poco de miedo, pero fue divertida. El próximo fin de semana iré a Seúl. Quiero montar en bici junto al río Han.",
+          "questions": [
+            { "q": "¿Qué hizo Hugo el sábado por la mañana?", "options": ["Vio una serie", "Jugó al tenis", "Fue al cine", "Montó en bici"], "answer": 1, "explain": "토요일 아침에 민수 씨하고 학교에서 테니스를 쳤어요." },
+            { "q": "¿Cómo era la película?", "options": ["Aburrida", "Daba un poco de miedo, pero fue divertida", "Muy triste", "No tenía subtítulos"], "answer": 1, "explain": "영화는 조금 무서웠지만 재미있었어요. (무섭다 = dar miedo, irregular en ㅂ)" },
+            { "q": "¿Qué quiere hacer el próximo fin de semana?", "options": ["Ir a Busan", "Jugar al tenis otra vez", "Montar en bici junto al río Han", "Ir al museo con Jimin"], "answer": 2, "explain": "한강에서 자전거를 타고 싶어요. (가르쳐 줬어요 = me enseñó)" }
+          ]
+        },
+        { "type": "exercises", "count": 12, "types": ["matching", "choose-meaning", "conjugation", "particle", "fill-blank", "order-words", "build-sentence", "dictation", "translate-to-es", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    }
+  ]
+}

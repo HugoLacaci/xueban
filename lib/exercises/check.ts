@@ -1,11 +1,21 @@
 /** Corrección de ejercicios con explicación. Lógica pura (sin React, sin BD) → testeable. */
-import { pinyinDiff, pinyinEquals, numberedToMarked, tonesOf } from "@/lib/pinyin/tones";
 import { levenshtein, normalizeEs, normalizeZh } from "@/lib/utils";
+import type { ExerciseAdapters } from "@/lib/languages/types";
+import { getActivePackOrNull } from "@/lib/languages/registry";
 import type { CheckResult, Exercise, Response } from "./types";
 
 const TONE_NAMES = ["", "1.º (alto)", "2.º (ascendente)", "3.º (bajo)", "4.º (descendente)", "neutro"];
 
-export function check(ex: Exercise, r: Response): CheckResult {
+/** Comparadores por defecto (chino) cuando no se pasa el paquete; los paquetes aportan los suyos. */
+const DEFAULT_ADAPTERS: Pick<ExerciseAdapters, "readingEquals" | "readingDiff" | "normalizeText" | "normalizeInput" | "explainPartial"> = {
+  readingEquals: (u, e) => u.trim().toLowerCase() === e.trim().toLowerCase(),
+  readingDiff: (u, e) => [{ unit: e, got: u, ok: u.trim().toLowerCase() === e.trim().toLowerCase(), partial: false }],
+  normalizeText: normalizeZh,
+  normalizeInput: (s) => s,
+};
+
+export function check(ex: Exercise, r: Response, ad: Pick<ExerciseAdapters, "readingEquals" | "readingDiff" | "normalizeText" | "normalizeInput" | "explainPartial"> = getActivePackOrNull()?.exerciseAdapters ?? DEFAULT_ADAPTERS): CheckResult {
+  const norm = ad.normalizeText;
   switch (ex.type) {
     case "choose-meaning":
     case "choose-character":
@@ -26,27 +36,28 @@ export function check(ex: Exercise, r: Response): CheckResult {
       };
     }
     case "pinyin-input": {
-      if (r.kind !== "text") return bad(ex, "Escribe el pinyin.");
-      const user = numberedToMarked(r.text.trim());
-      const ok = pinyinEquals(user, ex.answer);
-      const diff = pinyinDiff(user, ex.answer);
-      const toneOnly = !ok && diff.length && diff.every((d) => d.ok || d.toneOnly) && pinyinEquals(user, ex.answer, { requireTones: false });
+      if (r.kind !== "text") return bad(ex, "Escribe la lectura.");
+      const user = ad.normalizeInput(r.text.trim());
+      const ok = ad.readingEquals(user, ex.answer);
+      const diff = ad.readingDiff(user, ex.answer);
+      const partialOnly = !ok && diff.length > 0 && diff.every((d) => d.ok || d.partial) && ad.readingEquals(user, ex.answer, { lenient: true });
       const wrong = diff.filter((d) => !d.ok);
       const explanation = ok
         ? "¡Correcto!"
-        : toneOnly
-          ? `Sílabas correctas, pero falla el tono en: ${wrong.map((d) => `${d.got || "—"} → ${d.syllable} (${TONE_NAMES[tonesOf(d.syllable)[0]]})`).join(", ")}.`
-          : `El pinyin correcto es «${ex.answer}». ${wrong.map((d) => `${d.got || "—"} → ${d.syllable}`).join(", ")}.`;
-      return { correct: ok, partial: Boolean(toneOnly), expected: ex.answer, explanation, detail: diff };
+        : partialOnly
+          ? ("explainPartial" in ad && ad.explainPartial ? ad.explainPartial(wrong) : `Casi: ${wrong.map((d) => `${d.got || "—"} → ${d.unit}`).join(", ")}.`)
+          : `La lectura correcta es «${ex.answer}». ${wrong.map((d) => `${d.got || "—"} → ${d.unit}`).join(", ")}.`;
+      return { correct: ok, partial: Boolean(partialOnly), expected: ex.answer, explanation, detail: diff };
     }
     case "tone-choice": {
       if (r.kind !== "tones") return bad(ex, "Elige el tono de cada sílaba.");
+      const name = (t: number) => ex.choices?.find((c) => c.value === t)?.label ?? TONE_NAMES[t];
       const ok = r.tones.length === ex.answer.length && r.tones.every((t, i) => t === ex.answer[i]);
       const wrong = ex.answer.map((t, i) => ({ i, want: t, got: r.tones[i] })).filter((x) => x.got !== x.want);
       return {
         correct: ok,
-        expected: ex.answer.map((t, i) => `${ex.syllables[i]}: ${TONE_NAMES[t]}`).join(" · "),
-        explanation: ok ? "¡Buen oído!" : `Tono incorrecto en ${wrong.map((w) => `«${ex.syllables[w.i]}» (es ${TONE_NAMES[w.want]}, elegiste ${w.got ? TONE_NAMES[w.got] : "—"})`).join(" y ")}. ${ex.explain ?? ""}`.trim(),
+        expected: ex.answer.map((t, i) => `${ex.syllables[i]}: ${name(t)}`).join(" · "),
+        explanation: ok ? "¡Buen oído!" : `Fallo en ${wrong.map((w) => `«${ex.syllables[w.i]}» (es ${name(w.want)}, elegiste ${w.got ? name(w.got) : "—"})`).join(" y ")}. ${ex.explain ?? ""}`.trim(),
       };
     }
     case "order-words":
@@ -54,7 +65,7 @@ export function check(ex: Exercise, r: Response): CheckResult {
       if (r.kind !== "tiles") return bad(ex, "Ordena las fichas.");
       const got = r.tiles.join("");
       const valid = [ex.answer, ...(ex.alternatives ?? [])].map((a) => a.join(""));
-      const ok = valid.some((v) => normalizeZh(v) === normalizeZh(got));
+      const ok = valid.some((v) => norm(v) === norm(got));
       if (ok) return { correct: true, expected: ex.zh, explanation: ex.explain ?? "¡Correcto!" };
       let firstDiff = -1;
       for (let i = 0; i < Math.max(r.tiles.length, ex.answer.length); i++) {
@@ -71,11 +82,25 @@ export function check(ex: Exercise, r: Response): CheckResult {
       if (!extra.length && !missing.length && firstDiff >= 0) why += `El orden falla a partir de la ficha ${firstDiff + 1}: debería ir «${ex.answer[firstDiff]}». `;
       return { correct: false, expected: ex.zh, explanation: `${why}${ex.explain ?? ""}`.trim(), detail: { firstDiff, extra, missing } };
     }
-    case "fill-blank": {
+    case "fill-blank":
+    case "particle": {
       if (r.kind !== "text" && r.kind !== "choice") return bad(ex, "Completa el hueco.");
       const text = r.kind === "text" ? r.text : (ex.options?.[r.index] ?? "");
-      const ok = normalizeZh(text) === normalizeZh(ex.answer);
-      return { correct: ok, expected: ex.answer, explanation: ok ? (ex.explain ?? "¡Correcto!") : `La palabra correcta es «${ex.answer}». ${ex.explain ?? ""}`.trim() };
+      const ok = norm(text) === norm(ex.answer);
+      return { correct: ok, expected: ex.answer, explanation: ok ? (ex.explain ?? "¡Correcto!") : `La respuesta correcta es «${ex.answer}». ${ex.explain ?? ""}`.trim() };
+    }
+    case "conjugation": {
+      if (r.kind !== "text") return bad(ex, "Escribe la forma conjugada.");
+      const user = norm(ad.normalizeInput(r.text));
+      const valid = [ex.answer, ...(ex.alternatives ?? [])];
+      const ok = valid.some((v) => norm(v) === user);
+      const d = levenshtein(user, norm(ex.answer));
+      return {
+        correct: ok,
+        partial: !ok && d <= 1,
+        expected: ex.answer,
+        explanation: ok ? (ex.explain ?? "¡Correcto!") : `${ex.zh} en ${ex.form} (${ex.formNative}) es «${ex.answer}». ${ex.explain ?? ""}`.trim(),
+      };
     }
     case "translate-to-es": {
       if (r.kind === "self") return { correct: r.correct, expected: ex.answers[0], explanation: r.correct ? "Marcado como correcto." : `Una traducción válida: «${ex.answers[0]}».` };
@@ -93,8 +118,8 @@ export function check(ex: Exercise, r: Response): CheckResult {
     }
     case "dictation": {
       if (r.kind !== "text") return bad(ex, "Escribe lo que oyes.");
-      const user = normalizeZh(r.text);
-      const want = normalizeZh(ex.zh);
+      const user = norm(ad.normalizeInput(r.text));
+      const want = norm(ex.zh);
       const ok = user === want;
       const d = levenshtein(user, want);
       const partial = !ok && d <= Math.max(1, Math.floor(want.length / 4));
@@ -133,8 +158,8 @@ export function check(ex: Exercise, r: Response): CheckResult {
       if (r.kind === "self") return { correct: r.correct, expected: ex.zh, explanation: r.correct ? "Autoevaluado como correcto." : "Autoevaluado: a repetir." };
       if (r.kind !== "speaking") return bad(ex, "Graba tu voz.");
       if (!r.transcript) return { correct: false, expected: ex.zh, explanation: "No se reconoció nada. Prueba de nuevo o autoevalúate.", skip: true };
-      const want = normalizeZh(ex.zh);
-      const got = normalizeZh(r.transcript);
+      const want = norm(ex.zh);
+      const got = norm(r.transcript);
       const wantChars = Array.from(want);
       const missed = wantChars.filter((c) => !got.includes(c));
       const ratio = 1 - missed.length / Math.max(1, wantChars.length);

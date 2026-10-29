@@ -1,30 +1,42 @@
 /**
- * Generadores de ejercicios a partir de un pool (palabras, frases, gramática).
+ * Generadores de ejercicios a partir de un pool (palabras, frases, gramática), independientes del idioma.
+ * Los tipos que dependen de la lengua (lectura, prosodia, caracteres, clasificadores, escritura,
+ * conjugación, partículas) se delegan en `ctx.adapters` (pack.exerciseAdapters).
  * Deterministas si se pasa un rng con semilla. Devuelven null si no hay material suficiente.
  */
-import { normalizePinyin, stripTones, syllablesOf, tonesOf } from "@/lib/pinyin/tones";
-import { hanziOnly, isHanzi } from "@/lib/pinyin/convert";
-import { SIMILAR_CHARS, TONE_PAIRS } from "@/lib/course/data/pronunciation";
 import { shuffle, pick } from "@/lib/utils";
+import type { ExerciseAdapters } from "@/lib/languages/types";
+import { getActivePackOrNull } from "@/lib/languages/registry";
 import type { Exercise, ExerciseType, MultipleChoiceExercise, Pool, PoolSentence, PoolWord, TilesExercise } from "./types";
 
 type RNG = () => number;
 let counter = 0;
-const uid = (t: string) => `${t}-${(counter++).toString(36)}-${Math.floor(Math.random() * 1e6).toString(36)}`;
+export const uid = (t: string) => `${t}-${(counter++).toString(36)}-${Math.floor(Math.random() * 1e6).toString(36)}`;
+
+/** Normaliza una lectura para comparar (quita diacríticos, espacios y separadores). */
+export function readingKey(s: string): string {
+  return s
+    .normalize("NFD")
+    .replace(/[̀-ͯ]/g, "")
+    .toLowerCase()
+    .replace(/[\s'’\-·]/g, "");
+}
 
 function others(pool: Pool, w: PoolWord): PoolWord[] {
   return (pool.allWords ?? pool.words).filter((x) => x.hanzi !== w.hanzi && x.meaning !== w.meaning);
 }
 
-/** Distractores inteligentes: misma categoría > carácter compartido > mismo pinyin inicial > aleatorio. */
-function distractors(pool: Pool, w: PoolWord, n: number, rng: RNG): PoolWord[] {
+/** Distractores inteligentes: misma categoría > carácter compartido > mismo inicio de lectura > aleatorio. */
+export function distractors(pool: Pool, w: PoolWord, n: number, rng: RNG): PoolWord[] {
   const rest = others(pool, w);
+  const wk = readingKey(w.pinyin);
   const scored = rest.map((x) => {
     let s = rng() * 0.5;
+    const xk = readingKey(x.pinyin);
     if (x.category && x.category === w.category) s += 2;
     if (Array.from(x.hanzi).some((c) => w.hanzi.includes(c))) s += 2.5;
-    if (normalizePinyin(x.pinyin).slice(0, 2) === normalizePinyin(w.pinyin).slice(0, 2)) s += 1.5;
-    if (stripTones(x.pinyin) === stripTones(w.pinyin)) s += 3;
+    if (xk.slice(0, 2) === wk.slice(0, 2)) s += 1.5;
+    if (xk === wk) s += 3;
     if (x.hanzi.length === w.hanzi.length) s += 0.5;
     return { x, s };
   });
@@ -36,7 +48,7 @@ function distractors(pool: Pool, w: PoolWord, n: number, rng: RNG): PoolWord[] {
   return out.filter((x) => (seen.has(x.meaning) ? false : (seen.add(x.meaning), true))).slice(0, n);
 }
 
-function withAnswer<T>(correct: T, wrong: T[], rng: RNG): { options: T[]; answer: number } {
+export function withAnswer<T>(correct: T, wrong: T[], rng: RNG): { options: T[]; answer: number } {
   const options = shuffle([correct, ...wrong], rng);
   return { options, answer: options.indexOf(correct) };
 }
@@ -77,74 +89,7 @@ export function genChooseCharacter(pool: Pool, w: PoolWord, rng: RNG, fromAudio 
   };
 }
 
-export function genSimilarCharacters(pool: Pool, w: PoolWord, rng: RNG): MultipleChoiceExercise | null {
-  const ch = Array.from(w.hanzi).find((c) => SIMILAR_CHARS.some((set) => set.includes(c)));
-  if (!ch) return null;
-  const set = SIMILAR_CHARS.find((s) => s.includes(ch))!;
-  const wrong = set.filter((c) => c !== ch);
-  const all = pool.allWords ?? pool.words;
-  const meaningOf = (c: string) => all.find((x) => x.hanzi === c)?.meaning;
-  const { options, answer } = withAnswer(ch, pick(wrong, 3, rng), rng);
-  return {
-    id: uid("sc"),
-    type: "similar-characters",
-    skill: "characters",
-    itemId: ch,
-    itemKind: "character",
-    prompt: w.hanzi.length > 1 ? `¿Qué carácter aparece en «${w.meaning}» (${w.pinyin})?` : `¿Cuál es «${w.meaning}» (${w.pinyin})?`,
-    display: { es: w.meaning, pinyin: w.pinyin },
-    options: options.map((c) => ({ text: c, zh: true, sub: meaningOf(c) })),
-    answer,
-    explain: `Caracteres parecidos: ${set.join(" · ")}. Fíjate en los trazos que los distinguen.`,
-  };
-}
-
-export function genPinyinInput(w: PoolWord): Exercise {
-  return { id: uid("py"), type: "pinyin-input", skill: "tones", itemId: w.id, itemKind: "word", prompt: "Escribe el pinyin con tonos (puedes usar números: ni3 hao3)", zh: w.hanzi, answer: w.pinyin, meaning: w.meaning };
-}
-
-export function genToneChoice(w: PoolWord): Exercise | null {
-  const syl = syllablesOf(w.pinyin);
-  if (!syl.length || syl.length > 3) return null;
-  return {
-    id: uid("tc"),
-    type: "tone-choice",
-    skill: "tones",
-    itemId: w.id,
-    itemKind: "tone",
-    prompt: "Escucha y elige el tono de cada sílaba",
-    zh: w.hanzi,
-    syllables: syl.map((s) => stripTones(s)),
-    answer: tonesOf(w.pinyin),
-    audio: w.hanzi,
-    explain: `${w.hanzi} se pronuncia ${w.pinyin} (${w.meaning}).`,
-  };
-}
-
-export function genTonePair(rng: RNG): MultipleChoiceExercise {
-  const target = TONE_PAIRS[Math.floor(rng() * TONE_PAIRS.length)];
-  const wrong = pick(
-    TONE_PAIRS.filter((p) => p.pattern !== target.pattern),
-    3,
-    rng,
-  );
-  const { options, answer } = withAnswer(target, wrong, rng);
-  const fmt = (p: string) => p.split("").map((t) => (t === "0" ? "neutro" : `${t}.º`)).join(" + ");
-  return {
-    id: uid("tp"),
-    type: "tone-pair",
-    skill: "tones",
-    itemId: `pair-${target.pattern}`,
-    itemKind: "tone",
-    prompt: "Escucha la palabra: ¿qué combinación de tonos oyes?",
-    display: { audio: target.word },
-    options: options.map((o) => ({ text: fmt(o.pattern), sub: o.label })),
-    answer,
-    explain: `${target.word} ${target.pinyin} = ${fmt(target.pattern)}.`,
-  };
-}
-
-const PUNCT_RE = /[，。！？、：；,.!?:;“”"]/g;
+const PUNCT_RE = /[，。！？、：；,.!?:;“”"「」『』…～]/g;
 
 /** Separa una frase en fichas (palabras) usando un segmentador opcional. */
 export function tilesFromSentence(zh: string, segmenter?: (s: string) => string[]): string[] {
@@ -155,7 +100,7 @@ export function tilesFromSentence(zh: string, segmenter?: (s: string) => string[
 
 export function genOrderWords(s: PoolSentence, rng: RNG, segmenter?: (s: string) => string[], extraTiles: string[] = []): TilesExercise | null {
   const answer = tilesFromSentence(s.zh, segmenter);
-  if (answer.length < 3 || answer.length > 12) return null;
+  if (answer.length < 3 || answer.length > 14) return null;
   const tiles = shuffle([...answer, ...extraTiles], rng);
   if (tiles.join("") === answer.join("") && tiles.length > 2) [tiles[0], tiles[1]] = [tiles[1], tiles[0]];
   return {
@@ -164,7 +109,7 @@ export function genOrderWords(s: PoolSentence, rng: RNG, segmenter?: (s: string)
     skill: "grammar",
     itemId: s.grammarId ?? s.zh,
     itemKind: s.grammarId ? "grammar" : "sentence",
-    prompt: extraTiles.length ? "Construye la frase en chino" : "Ordena las fichas para formar la frase",
+    prompt: extraTiles.length ? "Construye la frase" : "Ordena las fichas para formar la frase",
     tiles,
     answer,
     alternatives: s.alternatives?.map((a) => tilesFromSentence(a, segmenter)),
@@ -178,7 +123,7 @@ export function genBuildSentence(pool: Pool, s: PoolSentence, rng: RNG, segmente
   const answer = tilesFromSentence(s.zh, segmenter);
   const all = pool.allWords ?? pool.words;
   const extras = pick(
-    all.filter((w) => !answer.includes(w.hanzi) && w.hanzi.length <= 2).map((w) => w.hanzi),
+    all.filter((w) => !answer.includes(w.hanzi) && Array.from(w.hanzi).length <= 3).map((w) => w.hanzi),
     Math.min(3, Math.max(1, Math.floor(answer.length / 2))),
     rng,
   );
@@ -186,9 +131,9 @@ export function genBuildSentence(pool: Pool, s: PoolSentence, rng: RNG, segmente
 }
 
 export function genFillBlank(pool: Pool, s: PoolSentence, rng: RNG, segmenter?: (s: string) => string[], target?: string): Exercise | null {
-  const words = tilesFromSentence(s.zh, segmenter).filter((t) => isHanzi(t[0]));
+  const words = tilesFromSentence(s.zh, segmenter);
   const all = pool.allWords ?? pool.words;
-  const candidates = target && s.zh.includes(target) ? [target] : words.filter((w) => w.length <= 3 && all.some((x) => x.hanzi === w));
+  const candidates = target && s.zh.includes(target) ? [target] : words.filter((w) => Array.from(w).length <= 4 && all.some((x) => x.hanzi === w));
   if (!candidates.length) return null;
   const answer = candidates[Math.floor(rng() * candidates.length)];
   const w = all.find((x) => x.hanzi === answer);
@@ -214,10 +159,30 @@ export function genTranslate(s: PoolSentence): Exercise {
   return { id: uid("tr"), type: "translate-to-es", skill: "reading", itemId: s.zh, itemKind: "sentence", prompt: "Traduce al español", zh: s.zh, pinyin: s.py, answers: [s.es, ...(s.alternatives ?? [])] };
 }
 
+/**
+ * Verdadero o falso sobre un texto corto: se juntan 3 frases del pool y cada afirmación es su traducción
+ * (verdadera) o la traducción de otra frase que no está en el texto (falsa).
+ */
+export function genReadingTF(pool: Pool, rng: RNG): Exercise | null {
+  const withEs = pool.sentences.filter((x) => x.es && x.zh);
+  if (withEs.length < 5) return null;
+  const picked = shuffle(withEs, rng).slice(0, 3);
+  const others = withEs.filter((x) => !picked.includes(x) && !picked.some((p) => p.es === x.es));
+  if (!others.length) return null;
+  const statements = picked.map((p, i) => {
+    const truth = i === 0 ? true : i === 1 ? false : rng() < 0.5;
+    if (truth) return { s: p.es, truth: true };
+    const o = others[Math.floor(rng() * others.length)];
+    return { s: o.es, truth: false, why: `el texto dice «${p.es}»` };
+  });
+  const order = shuffle(statements, rng);
+  return { id: uid("tf"), type: "reading-tf", skill: "reading", itemId: picked[0].zh, itemKind: "sentence", prompt: "Lee y marca verdadero o falso", text: picked.map((p) => p.zh).join("\n"), es: picked.map((p) => p.es).join(" "), statements: order };
+}
+
 export function genDictation(s: PoolSentence | PoolWord): Exercise {
   const isSentence = "zh" in s;
   const zh = isSentence ? s.zh : s.hanzi;
-  return { id: uid("di"), type: "dictation", skill: "listening", itemId: isSentence ? zh : s.id, itemKind: isSentence ? "sentence" : "word", prompt: "Escucha y escribe en caracteres (usa tu teclado pinyin)", zh, es: isSentence ? s.es : s.meaning, pinyin: isSentence ? s.py : s.pinyin };
+  return { id: uid("di"), type: "dictation", skill: "listening", itemId: isSentence ? zh : s.id, itemKind: isSentence ? "sentence" : "word", prompt: "Escucha y escribe lo que oyes", zh, es: isSentence ? s.es : s.meaning, pinyin: isSentence ? s.py : s.pinyin };
 }
 
 export type MatchKind = "hanzi" | "pinyin" | "meaning" | "audio";
@@ -239,107 +204,15 @@ export function genMatching(pool: Pool, rng: RNG, n = 5, kinds: [MatchKind, Matc
   };
 }
 
-export function genWriting(w: PoolWord): Exercise | null {
-  const h = hanziOnly(w.hanzi);
-  if (!h || h.length > 2) return null;
-  return { id: uid("wr"), type: "writing", skill: "writing", itemId: w.id, itemKind: "word", prompt: "Escribe el carácter trazo a trazo", hanzi: h, pinyin: w.pinyin, meaning: w.meaning };
-}
-
 export function genSpeaking(s: PoolSentence | PoolWord, mode: "shadow" | "recognize" = "recognize"): Exercise {
   const isSentence = "zh" in s;
   const zh = isSentence ? s.zh : s.hanzi;
   return { id: uid("sp"), type: "speaking", skill: "speaking", itemId: isSentence ? zh : s.id, itemKind: isSentence ? "sentence" : "word", prompt: mode === "shadow" ? "Escucha y repite (shadowing)" : "Di la frase en voz alta", zh, pinyin: (isSentence ? s.py : s.pinyin) ?? "", es: isSentence ? s.es : s.meaning, mode };
 }
 
-export function genComponent(w: PoolWord, radicalMeaning: (r: string) => string | undefined, allRadicals: string[], rng: RNG): MultipleChoiceExercise | null {
-  if (!w.radical) return null;
-  const wrong = pick(
-    allRadicals.filter((r) => r !== w.radical),
-    3,
-    rng,
-  );
-  if (wrong.length < 3) return null;
-  const { options, answer } = withAnswer(w.radical, wrong, rng);
-  const ch = Array.from(w.hanzi)[0];
-  return {
-    id: uid("co"),
-    type: "component",
-    skill: "characters",
-    itemId: ch,
-    itemKind: "radical",
-    prompt: `¿Cuál es el radical de ${w.hanzi.length > 1 ? `«${w.hanzi}» (primer carácter)` : w.hanzi}?`,
-    display: { zh: w.hanzi, pinyin: w.pinyin },
-    options: options.map((r) => ({ text: r, zh: true, sub: radicalMeaning(r) })),
-    answer,
-    explain: `El radical de ${ch} es ${w.radical}${radicalMeaning(w.radical) ? ` («${radicalMeaning(w.radical)}»)` : ""}: suele indicar el campo de significado.`,
-  };
-}
-
-export function genBuildCharacter(w: PoolWord, components: (ch: string) => string[], allComponents: string[], rng: RNG): Exercise | null {
-  const ch = Array.from(w.hanzi)[0];
-  const comps = components(ch).filter((c) => c !== ch);
-  if (comps.length < 2 || comps.length > 4) return null;
-  const distractorsList = pick(
-    allComponents.filter((c) => !comps.includes(c) && c !== ch),
-    3,
-    rng,
-  );
-  return { id: uid("bc"), type: "build-character", skill: "characters", itemId: ch, itemKind: "character", prompt: `Selecciona los componentes que forman ${ch} (${w.pinyin}, «${w.meaning}»)`, hanzi: ch, pinyin: w.pinyin, meaning: w.meaning, components: comps, distractors: distractorsList };
-}
-
-export const CLASSIFIER_HINTS: Record<string, string> = {
-  个: "genérico (personas y cosas)",
-  本: "libros, cuadernos",
-  块: "trozos, dinero (yuanes)",
-  件: "ropa (de arriba), asuntos",
-  口: "miembros de la familia",
-  杯: "vasos, tazas",
-  瓶: "botellas",
-  只: "animales pequeños, uno de un par",
-  岁: "años de edad",
-  张: "cosas planas (mesas, papel, fotos)",
-  条: "cosas alargadas (pantalones, peces, calles)",
-  位: "personas (respetuoso)",
-  辆: "vehículos",
-  家: "tiendas, empresas",
-  次: "veces",
-  些: "algunos",
-  元: "yuanes",
-  点: "horas",
-  把: "cosas con mango",
-  双: "pares",
-  碗: "cuencos",
-};
-
-export function genClassifier(w: PoolWord, rng: RNG): MultipleChoiceExercise | null {
-  const correct = w.cl?.[0];
-  if (!correct) return null;
-  const wrong = pick(
-    Object.keys(CLASSIFIER_HINTS).filter((c) => !w.cl?.includes(c)),
-    3,
-    rng,
-  );
-  const { options, answer } = withAnswer(correct, wrong, rng);
-  return {
-    id: uid("cl"),
-    type: "classifier",
-    skill: "grammar",
-    itemId: w.id,
-    itemKind: "word",
-    prompt: `¿Qué clasificador va con «${w.hanzi}» (${w.meaning})?`,
-    display: { zh: `一＿${w.hanzi}` },
-    options: options.map((c) => ({ text: c, zh: true, sub: CLASSIFIER_HINTS[c] })),
-    answer,
-    explain: `一${correct}${w.hanzi}: ${correct} se usa con ${CLASSIFIER_HINTS[correct] ?? "esta clase de nombres"}.${(w.cl?.length ?? 0) > 1 ? ` También valen: ${w.cl!.slice(1).join(", ")}.` : ""}`,
-  };
-}
-
 export interface GenContext {
+  adapters?: ExerciseAdapters;
   segmenter?: (s: string) => string[];
-  radicalMeaning?: (r: string) => string | undefined;
-  allRadicals?: string[];
-  components?: (ch: string) => string[];
-  allComponents?: string[];
   speechAvailable?: boolean;
 }
 
@@ -348,7 +221,9 @@ export function generateSession(pool: Pool, n: number, types: ExerciseType[], rn
   const out: Exercise[] = [];
   const words = shuffle(pool.words, rng);
   const sentences = shuffle(pool.sentences, rng);
-  const usable = types.filter((t) => (t === "speaking" ? ctx.speechAvailable !== false : true));
+  const ad = ctx.adapters ?? getActivePackOrNull()?.exerciseAdapters;
+  const segmenter = ctx.segmenter ?? (ad ? (s: string) => ad.tiles(s) : undefined);
+  const usable = types.filter((t) => (t === "speaking" ? ctx.speechAvailable !== false : true)).filter((t) => !ad || ad.types.includes(t) || !LANG_TYPES.has(t));
   if (!usable.length || (!words.length && !sentences.length)) return out;
   let wi = 0;
   let si = 0;
@@ -378,35 +253,35 @@ export function generateSession(pool: Pool, n: number, types: ExerciseType[], rn
       }
       case "similar-characters": {
         const w = nextWord();
-        ex = w ? genSimilarCharacters(pool, w, rng) : null;
+        ex = w && ad ? ad.similar(pool, w, rng) : null;
         break;
       }
       case "pinyin-input": {
         const w = nextWord();
-        ex = w ? genPinyinInput(w) : null;
+        ex = w && ad ? ad.readingInput(w) : null;
         break;
       }
       case "tone-choice": {
         const w = nextWord();
-        ex = w ? genToneChoice(w) : null;
+        ex = w && ad ? ad.prosodyChoice(pool, w, rng) : null;
         break;
       }
       case "tone-pair":
-        ex = genTonePair(rng);
+        ex = ad ? ad.prosodyPair(pool, rng) : null;
         break;
       case "order-words": {
         const s = nextSentence();
-        ex = s ? genOrderWords(s, rng, ctx.segmenter) : null;
+        ex = s ? genOrderWords(s, rng, segmenter) : null;
         break;
       }
       case "build-sentence": {
         const s = nextSentence();
-        ex = s ? genBuildSentence(pool, s, rng, ctx.segmenter) : null;
+        ex = s ? genBuildSentence(pool, s, rng, segmenter) : null;
         break;
       }
       case "fill-blank": {
         const s = nextSentence();
-        ex = s ? genFillBlank(pool, s, rng, ctx.segmenter) : null;
+        ex = s ? genFillBlank(pool, s, rng, segmenter) : null;
         break;
       }
       case "translate-to-es": {
@@ -425,7 +300,7 @@ export function generateSession(pool: Pool, n: number, types: ExerciseType[], rn
         break;
       case "writing": {
         const w = nextWord();
-        ex = w ? genWriting(w) : null;
+        ex = w && ad ? ad.writing(w) : null;
         break;
       }
       case "speaking": {
@@ -436,22 +311,32 @@ export function generateSession(pool: Pool, n: number, types: ExerciseType[], rn
       }
       case "component": {
         const w = nextWord();
-        ex = w && ctx.radicalMeaning && ctx.allRadicals ? genComponent(w, ctx.radicalMeaning, ctx.allRadicals, rng) : null;
+        ex = w && ad ? ad.component(pool, w, rng) : null;
         break;
       }
       case "build-character": {
         const w = nextWord();
-        ex = w && ctx.components && ctx.allComponents ? genBuildCharacter(w, ctx.components, ctx.allComponents, rng) : null;
+        ex = w && ad ? ad.buildCharacter(pool, w, rng) : null;
         break;
       }
       case "classifier": {
         const w = nextWord();
-        ex = w ? genClassifier(w, rng) : null;
+        ex = w && ad ? ad.classifier(pool, w, rng) : null;
         break;
       }
-      case "comprehension":
+      case "conjugation":
+        ex = ad?.conjugation ? ad.conjugation(pool, rng) : null;
+        break;
+      case "particle": {
+        const s = nextSentence();
+        ex = s && ad?.particle ? ad.particle(pool, s, rng) : null;
+        break;
+      }
       case "reading-tf":
-        ex = null; // vienen del contenido de las lecciones
+        ex = genReadingTF(pool, rng);
+        break;
+      case "comprehension":
+        ex = null; // vienen de las preguntas de las lecturas y diálogos
         break;
     }
     if (ex) {
@@ -461,3 +346,6 @@ export function generateSession(pool: Pool, n: number, types: ExerciseType[], rn
   }
   return out;
 }
+
+/** Tipos cuya generación depende del paquete de idioma. */
+export const LANG_TYPES = new Set<ExerciseType>(["pinyin-input", "tone-choice", "tone-pair", "similar-characters", "writing", "component", "build-character", "classifier", "conjugation", "particle"]);

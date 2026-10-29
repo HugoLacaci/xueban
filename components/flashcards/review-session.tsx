@@ -1,24 +1,28 @@
 "use client";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import Link from "next/link";
+import Link from "@/lib/languages/link";
 import { useSearchParams } from "next/navigation";
 import { useLiveQuery } from "dexie-react-hooks";
 import { motion, AnimatePresence, useReducedMotion } from "motion/react";
 import { Check, Eye, RotateCcw, Undo2, Volume2, X } from "lucide-react";
 import { db, logStudy, type Card, type CardType, type Word } from "@/lib/db";
 import { buildQueue, interleave, previewRatings, Rating, reviewCard, undoReview, type Grade } from "@/lib/fsrs/scheduler";
-import { useSettings } from "@/lib/settings";
+import { useSettings, ankiOnFor } from "@/lib/settings";
 import { normalizeZh } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Badge, Input, Kbd, Progress, Spinner } from "@/components/ui/primitives";
-import { Pinyin } from "@/components/zh/pinyin";
-import { AudioButton, playText, useSpaceToPlay } from "@/components/zh/audio-button";
-import { ChineseText, Hanzi } from "@/components/zh/chinese-text";
-import { StrokeOrder } from "@/components/zh/stroke-order";
+import { Pinyin } from "@/components/target/reading";
+import { AudioButton, playText, useSpaceToPlay } from "@/components/target/audio-button";
+import { ChineseText, Hanzi } from "@/components/target/target-text";
+import { StrokeOrder } from "@/components/target/stroke-order";
 import { Seal, SealTag } from "@/components/ornament/seal";
 import { TianZiGe } from "@/components/ornament/tianzige";
 import { playFeedback } from "@/lib/sounds";
 import { cn } from "@/lib/utils";
+import { getActiveLang } from "@/lib/languages/registry";
+import { targetLang } from "@/lib/languages/registry";
+import { ui } from "@/lib/languages/ui-text";
+import { Mixed } from "@/components/target/mixed";
 
 const TYPE_LABEL: Record<CardType, string> = {
   recognition: "Reconocimiento",
@@ -26,6 +30,7 @@ const TYPE_LABEL: Record<CardType, string> = {
   listening: "Escucha",
   sentence: "Frase",
   writing: "Escritura",
+  reading: "Lectura (kanji → kana)",
 };
 
 const SWIPE_THRESHOLD = 80;
@@ -52,7 +57,7 @@ export function ReviewSession() {
   const startedAt = useRef(0);
   const cardShownAt = useRef(0);
   const counts = useRef({ again: 0, good: 0 });
-  const words = useLiveQuery(() => db.words.toArray(), []);
+  const words = useLiveQuery(() => db.words.where("lang").equals(getActiveLang()).toArray(), []);
   const wordMap = useMemo(() => new Map((words ?? []).map((w) => [w.id, w])), [words]);
 
   const categories = params.get("cat")?.split(",").filter(Boolean);
@@ -65,11 +70,11 @@ export function ReviewSession() {
     startedAt.current = Date.now();
     cardShownAt.current = Date.now();
     void buildQueue({
-      newPerDay: onlyNew ? Math.max(settings.newWordsPerDay, 5) : settings.newWordsPerDay,
+      newPerDay: onlyNew ? Math.max((settings.langs[getActiveLang()]?.newWordsPerDay ?? settings.newWordsPerDay), 5) : (settings.langs[getActiveLang()]?.newWordsPerDay ?? settings.newWordsPerDay),
       categories,
       types,
       wordIds,
-      ankiIsSource: settings.anki.enabled && settings.anki.srsSource === "anki",
+      ankiIsSource: ankiOnFor(settings, getActiveLang()) && settings.anki.srsSource === "anki",
       limit,
       includeNew: true,
     }).then(({ due, fresh }) => {
@@ -209,7 +214,7 @@ export function ReviewSession() {
       <div className="mx-auto max-w-md pt-6 text-center">
         <div className="card-paper relative overflow-hidden px-6 py-10">
           <span className="absolute inset-x-8 top-0 h-[2px] rounded-b bg-cinnabar/85" aria-hidden="true" />
-          <Seal text={total ? "完" : "闲"} size={72} stamped={!reduced} rotate={-6} className="mx-auto" title={total ? "Sesión terminada" : "Nada que repasar"} />
+          <Seal text={total ? ui().sessionDone : ui().sessionIdle} size={72} stamped={!reduced} rotate={-6} className="mx-auto" title={total ? "Sesión terminada" : "Nada que repasar"} />
           <h1 className="font-serif-es mt-4 text-[28px] font-semibold leading-tight text-ink">{total ? "Sesión terminada" : "Nada que repasar"}</h1>
           {total ? (
             <>
@@ -266,7 +271,7 @@ export function ReviewSession() {
         >
           <span className="flex items-center gap-1.5">
             <Kbd className="hidden sm:inline-flex">{i + 1}</Kbd>
-            {p.label}
+            <Mixed>{p.label}</Mixed>
           </span>
           <span className="tabular text-[11px] font-normal text-ink-faint">{p.interval}</span>
         </button>
@@ -289,7 +294,7 @@ export function ReviewSession() {
           <span>{TYPE_LABEL[card.type]}</span>
           {card.state === 0 ? (
             <SealTag tone="celadon" className="ml-1">
-              新
+              {ui().rate.fresh}
             </SealTag>
           ) : null}
         </span>
@@ -323,10 +328,10 @@ export function ReviewSession() {
           <span className="absolute inset-x-6 top-0 h-[2px] rounded-b bg-cinnabar/80" aria-hidden="true" />
           {/* pistas del deslizamiento */}
           <span aria-hidden="true" className="zh-display pointer-events-none absolute left-4 top-4 rounded-md border-2 border-danger px-2 py-0.5 text-xl text-danger" style={{ opacity: swipe.dx < 0 ? swipeHint : 0, transform: "rotate(-8deg)" }}>
-            再
+            {ui().rate.again}
           </span>
           <span aria-hidden="true" className="zh-display pointer-events-none absolute right-4 top-4 rounded-md border-2 border-celadon px-2 py-0.5 text-xl text-celadon-ink" style={{ opacity: swipe.dx > 0 ? swipeHint : 0, transform: "rotate(8deg)" }}>
-            好
+            {ui().rate.good}
           </span>
           <AnimatePresence mode="wait" initial={false}>
             <motion.div key={card.id + idx} initial={reduced ? false : { opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={reduced ? undefined : { opacity: 0, y: -10 }} transition={{ duration: 0.18, ease: [0.2, 0.8, 0.2, 1] }}>
@@ -352,7 +357,7 @@ export function ReviewSession() {
 
 /** Carácter protagonista en 宋体 sobre 田字格 tenue: 96–160 px en escritorio, 72–112 px en móvil. */
 function HeroHanzi({ text, className }: { text: string; className?: string }) {
-  const zhFont = useSettings((s) => s.settings.zhFont);
+  const zhFont = useSettings((s) => s.settings.langs[getActiveLang()]?.font);
   const chars = Array.from(text);
   const n = chars.length;
   const font = zhFont === "kai" ? "kai" : "serif";
@@ -364,7 +369,7 @@ function HeroHanzi({ text, className }: { text: string; className?: string }) {
     <div className={cn("flex flex-wrap items-center justify-center gap-1.5 sm:gap-2", className)}>
       {chars.map((c, i) => (
         <TianZiGe key={i} faint size={cell}>
-          <span lang="zh-CN" className={cn("zh font-medium leading-none", font === "serif" ? "zh-serif" : "zh-kai")} style={{ fontSize: `calc(${cell} * 0.72)` }}>
+          <span lang={targetLang()} className={cn("zh font-medium leading-none", font === "serif" ? "zh-serif" : "zh-kai")} style={{ fontSize: `calc(${cell} * 0.72)` }}>
             {c}
           </span>
         </TianZiGe>
@@ -385,18 +390,18 @@ function CardFace({ card, word, revealed, onReveal, onAutoRate }: { card: Card; 
   const back = (
     <motion.div className="mt-5 space-y-3 border-t border-line/70 pt-4" initial={reduced ? false : { opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.22, ease: [0.2, 0.8, 0.2, 1] }}>
       <div className="flex flex-wrap items-center justify-center gap-3">
-        {card.type !== "recognition" ? <Hanzi text={word.hanzi} size="2xl" font={settings.zhFont === "kai" ? "kai" : "serif"} /> : null}
+        {card.type !== "recognition" ? <Hanzi text={word.hanzi} size="2xl" font={settings.langs[getActiveLang()]?.font === "kai" ? "kai" : "serif"} /> : null}
         <div className="text-center">
           <Pinyin text={word.pinyin} className="block text-2xl" />
           {settings.showTraditional && word.traditional ? (
             <span className="text-sm text-ink-faint">
-              繁 <span lang="zh-CN">{word.traditional}</span>
+              繁 <span lang={targetLang()}>{word.traditional}</span>
             </span>
           ) : null}
         </div>
         <AudioButton text={word.hanzi} size="lg" autoPlay={card.type !== "listening"} />
       </div>
-      <p className="font-serif-es text-center text-2xl text-ink">{word.meaning}</p>
+      <p className="font-serif-es text-center text-2xl text-ink"><Mixed>{word.meaning}</Mixed></p>
       {word.example ? (
         <div className="rounded-[10px] border-l-[3px] border-cinnabar/70 bg-paper-sunk/60 px-3 py-2">
           <div className="flex items-start gap-2">
@@ -447,12 +452,12 @@ function CardFace({ card, word, revealed, onReveal, onAutoRate }: { card: Card; 
     return face(
       "¿Cómo se dice en chino?",
       <>
-        <p className="font-serif-es text-center text-3xl text-ink sm:text-4xl">{word.meaning}</p>
+        <p className="font-serif-es text-center text-3xl text-ink sm:text-4xl"><Mixed>{word.meaning}</Mixed></p>
         <p className="mt-1 text-center text-sm text-ink-faint">{word.category}</p>
         {!revealed ? (
           <div className="mx-auto mt-5 max-w-xs">
             <Input
-              lang="zh-CN"
+              lang={targetLang()}
               className="zh h-12 text-center text-xl"
               placeholder="escríbelo (opcional) y Enter"
               value={typed}
@@ -468,7 +473,7 @@ function CardFace({ card, word, revealed, onReveal, onAutoRate }: { card: Card; 
           <p className={cn("mt-3 text-center text-sm font-medium", ok ? "text-celadon-ink" : "text-danger")}>
             {ok ? <Check className="mr-1 inline size-4" /> : <X className="mr-1 inline size-4" />}
             Escribiste:{" "}
-            <span lang="zh-CN" className="zh text-lg">
+            <span lang={targetLang()} className="zh text-lg">
               {typed}
             </span>
           </p>
@@ -511,7 +516,7 @@ function CardFace({ card, word, revealed, onReveal, onAutoRate }: { card: Card; 
     <>
       <div className="text-center">
         <Pinyin text={word.pinyin} className="text-xl" />
-        <p className="font-serif-es text-lg text-ink">{word.meaning}</p>
+        <p className="font-serif-es text-lg text-ink"><Mixed>{word.meaning}</Mixed></p>
       </div>
       <div className="mt-3 flex flex-wrap justify-center gap-3">
         {Array.from(word.hanzi).map((c, i) => (

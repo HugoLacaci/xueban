@@ -1,0 +1,4640 @@
+[
+ {
+  "id": "desu",
+  "title": "Ser con です (A es B)",
+  "zh": "「〜は〜です」",
+  "pattern": "Tema は + Nombre + です",
+  "level": 1,
+  "summary": "です cierra la frase y equivale a «ser/estar» con nombres: «A es B», en registro educado.",
+  "explanation": "**です** se coloca al **final** de la frase, después del nombre: わたし は がくせい です = «yo (en cuanto a mí) soy estudiante». En japonés el verbo siempre va al final, así que el orden es **A は B です**, no «A es B».\n\nです no cambia según la persona: *soy, eres, es, somos, son* se dicen todos igual. Tampoco hay artículos ni plural: がくせい puede ser «estudiante» o «estudiantes».\n\n| Forma | Japonés | Español |\n|---|---|---|\n| Presente afirmativo | 学生です | soy/es estudiante |\n| Presente negativo | 学生じゃありません (escrito: ではありません) | no soy estudiante |\n| Pasado afirmativo | 学生でした | era/fui estudiante |\n| Pasado negativo | 学生じゃありませんでした | no era estudiante |\n\nAdemás, es muy habitual **omitir el sujeto** cuando se entiende: スペイン人です。 = «Soy español» (no hace falta decir わたし は). En español también omitimos el «yo», así que esto te resultará natural.\n\n⚠️ です es la forma educada (la que usarás con desconocidos, profesores y dependientes). Entre amigos se usa だ o nada, pero de momento quédate con です.",
+  "examples": [
+   {
+    "zh": "わたしは学生です。",
+    "py": "わたし は がくせい です。",
+    "es": "Soy estudiante."
+   },
+   {
+    "zh": "ウーゴさんはスペイン人です。",
+    "py": "ウーゴ さん は スペイン じん です。",
+    "es": "Hugo es español."
+   },
+   {
+    "zh": "田中先生は日本人です。",
+    "py": "たなか せんせい は にほんじん です。",
+    "es": "La profesora Tanaka es japonesa."
+   },
+   {
+    "zh": "わたしは先生じゃありません。",
+    "py": "わたし は せんせい じゃ ありません。",
+    "es": "No soy profesor."
+   },
+   {
+    "zh": "きのうは日曜日でした。",
+    "py": "きのう は にちようび でした。",
+    "es": "Ayer fue domingo."
+   },
+   {
+    "zh": "これは本です。",
+    "py": "これ は ほん です。",
+    "es": "Esto es un libro."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "わたしはです学生。",
+    "right": "わたしは学生です。",
+    "why": "です va siempre al final de la frase, detrás del nombre, no en medio como «es» en español."
+   },
+   {
+    "wrong": "わたしは学生ですない。",
+    "right": "わたしは学生じゃありません。",
+    "why": "La negación de です es じゃありません (o ではありません); no se añade ない detrás de です."
+   },
+   {
+    "wrong": "わたしはウーゴさんです。",
+    "right": "わたしはウーゴです。",
+    "why": "さん es un tratamiento de respeto para los demás; nunca se usa con el propio nombre."
+   },
+   {
+    "wrong": "わたしは東京です。(para decir «estoy en Tokio»)",
+    "right": "わたしは東京にいます。",
+    "why": "です identifica (A = B); para la ubicación de una persona se usa に + います."
+   }
+  ],
+  "practice": {
+   "order": [
+    {
+     "zh": "わたしはスペイン人です。",
+     "py": "わたし は スペイン じん です。",
+     "es": "Soy español."
+    },
+    {
+     "zh": "さくらさんは学生です。",
+     "py": "さくら さん は がくせい です。",
+     "es": "Sakura es estudiante."
+    },
+    {
+     "zh": "けんさんは先生じゃありません。",
+     "py": "けん さん は せんせい じゃ ありません。",
+     "es": "Ken no es profesor."
+    }
+   ],
+   "fill": [
+    {
+     "zh": "わたしは学生＿。",
+     "answer": "です",
+     "options": [
+      "です",
+      "ます",
+      "は",
+      "か"
+     ],
+     "es": "Soy estudiante."
+    },
+    {
+     "zh": "けんさんは先生じゃ＿。",
+     "answer": "ありません",
+     "options": [
+      "ありません",
+      "ないです",
+      "でした",
+      "です"
+     ],
+     "es": "Ken no es profesor."
+    },
+    {
+     "zh": "きのうは休み＿。",
+     "answer": "でした",
+     "options": [
+      "でした",
+      "です",
+      "ました",
+      "じゃ"
+     ],
+     "es": "Ayer fue fiesta."
+    }
+   ],
+   "translate": [
+    {
+     "zh": "田中先生は日本人です。",
+     "py": "たなか せんせい は にほんじん です。",
+     "es": "La profesora Tanaka es japonesa."
+    },
+    {
+     "zh": "わたしは日本人じゃありません。",
+     "py": "わたし は にほんじん じゃ ありません。",
+     "es": "No soy japonés."
+    }
+   ]
+  },
+  "related": [
+   "wa-topic",
+   "ka-question",
+   "no"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "wa-topic",
+  "title": "La partícula は: el tema",
+  "zh": "「は」（主題）",
+  "pattern": "Tema は + comentario",
+  "level": 1,
+  "summary": "は marca el tema de la frase: «en cuanto a X…». Se escribe は pero se pronuncia «wa».",
+  "explanation": "**は no es el sujeto, es el tema**: la idea es «en cuanto a…, hablando de…». わたし は がくせい です es literalmente «en cuanto a mí, (soy) estudiante».\n\n- Se escribe con el kana は (ha), pero como partícula **se pronuncia «wa»**.\n- Va **detrás** de la palabra que marca, nunca delante (las partículas japonesas son *posposiciones*: lo contrario que las preposiciones españolas).\n- El tema no tiene por qué ser el sujeto: きょう は やすみ です = «hoy (en cuanto a hoy) es fiesta»; 日本語 は むずかしい です = «el japonés es difícil».\n\nUna vez que el tema está claro, se suele **omitir** en las frases siguientes: わたし は ウーゴ です。スペイン人 です。\n\nTambién sirve para **contrastar**: コーヒー は のみます が、おちゃ は のみません = «café sí bebo, pero té no».\n\n| Escritura | Lectura como partícula | Función |\n|---|---|---|\n| は | wa | tema / contraste |\n| へ | e | dirección |\n| を | o | complemento directo |",
+  "examples": [
+   {
+    "zh": "わたしはウーゴです。",
+    "py": "わたし は ウーゴ です。",
+    "es": "Soy Hugo."
+   },
+   {
+    "zh": "きょうは月曜日です。",
+    "py": "きょう は げつようび です。",
+    "es": "Hoy es lunes."
+   },
+   {
+    "zh": "日本語はおもしろいです。",
+    "py": "にほんご は おもしろい です。",
+    "es": "El japonés es interesante."
+   },
+   {
+    "zh": "東京は大きいです。",
+    "py": "とうきょう は おおきい です。",
+    "es": "Tokio es grande."
+   },
+   {
+    "zh": "コーヒーは飲みますが、お茶は飲みません。",
+    "py": "コーヒー は のみます が、おちゃ は のみません。",
+    "es": "Café sí bebo, pero té no."
+   },
+   {
+    "zh": "さくらさんは学生です。",
+    "py": "さくら さん は がくせい です。",
+    "es": "Sakura es estudiante."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "Leer わたしは como «watashi ha».",
+    "right": "わたしは = «watashi wa».",
+    "why": "Como partícula, は se pronuncia «wa». Solo dentro de palabras (はな, はい) suena «ha»."
+   },
+   {
+    "wrong": "はわたし学生です。",
+    "right": "わたしは学生です。",
+    "why": "Las partículas van detrás de la palabra, no delante como las preposiciones en español."
+   },
+   {
+    "wrong": "わたしは、わたしはスペイン人です。わたしは学生です。",
+    "right": "わたしはウーゴです。スペイン人です。学生です。",
+    "why": "Repetir el tema en cada frase suena muy forzado; en japonés se omite cuando ya se sabe, igual que el «yo» en español."
+   }
+  ],
+  "practice": {
+   "order": [
+    {
+     "zh": "きょうは火曜日です。",
+     "py": "きょう は かようび です。",
+     "es": "Hoy es martes."
+    },
+    {
+     "zh": "日本語はむずかしいです。",
+     "py": "にほんご は むずかしい です。",
+     "es": "El japonés es difícil."
+    }
+   ],
+   "fill": [
+    {
+     "zh": "わたし＿ウーゴです。",
+     "answer": "は",
+     "options": [
+      "は",
+      "を",
+      "へ",
+      "の"
+     ],
+     "es": "Soy Hugo."
+    },
+    {
+     "zh": "きょう＿休みです。",
+     "answer": "は",
+     "options": [
+      "は",
+      "を",
+      "で",
+      "へ"
+     ],
+     "es": "Hoy es fiesta."
+    }
+   ],
+   "translate": [
+    {
+     "zh": "東京は大きいです。",
+     "py": "とうきょう は おおきい です。",
+     "es": "Tokio es grande."
+    },
+    {
+     "zh": "けんさんは学生です。",
+     "py": "けん さん は がくせい です。",
+     "es": "Ken es estudiante."
+    }
+   ]
+  },
+  "related": [
+   "desu",
+   "wa-ga",
+   "mo"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "wa-ga",
+  "title": "は frente a が",
+  "zh": "「は」と「が」",
+  "pattern": "Tema は + … / Sujeto nuevo が + verbo",
+  "level": 1,
+  "summary": "は presenta el tema conocido; が señala el sujeto como información nueva o importante.",
+  "explanation": "Es la gran duda de todo estudiante. Una regla práctica para N5:\n\n| は | が |\n|---|---|\n| tema ya conocido, «en cuanto a…» | sujeto como **información nueva** |\n| lo importante viene **después** | lo importante es **la palabra marcada** |\n| contraste («X sí, Y no») | respuesta a «¿quién? / ¿qué?» |\n\n**1. Palabras interrogativas como sujeto llevan が, nunca は**: だれ が きましたか — けん さん が きました. En español lo marcaríamos con la entonación: «¿Quién vino? —Vino **Ken**».\n\n**2. Expresiones fijas con が**: すき (gustar), きらい, じょうず, へた, わかる (entender), ほしい, ある/いる (haber): わたし は ねこ が すき です = «a mí me gustan los gatos». Fíjate: igual que en español «me gusta**n los gatos**», el objeto del gusto se marca como sujeto gramatical (が).\n\n**3. Descripción de algo que acabas de ver**: あ、バス が きました！ = «¡Mira, viene el autobús!».\n\n**4. Estructura «A は B が adjetivo»**: ぞう は はな が ながい です = «el elefante tiene la trompa larga» (en cuanto al elefante, la trompa es larga).",
+  "examples": [
+   {
+    "zh": "だれが来ましたか。—けんさんが来ました。",
+    "py": "だれ が きました か。— けん さん が きました。",
+    "es": "¿Quién ha venido? —Ha venido Ken."
+   },
+   {
+    "zh": "わたしはねこが好きです。",
+    "py": "わたし は ねこ が すき です。",
+    "es": "Me gustan los gatos."
+   },
+   {
+    "zh": "ウーゴさんは日本語がわかります。",
+    "py": "ウーゴ さん は にほんご が わかります。",
+    "es": "Hugo entiende japonés."
+   },
+   {
+    "zh": "あ、バスが来ました。",
+    "py": "あ、バス が きました。",
+    "es": "¡Ah, viene el autobús!"
+   },
+   {
+    "zh": "さくらさんは目が大きいです。",
+    "py": "さくら さん は め が おおきい です。",
+    "es": "Sakura tiene los ojos grandes."
+   },
+   {
+    "zh": "どれがあなたのかばんですか。",
+    "py": "どれ が あなた の かばん です か。",
+    "es": "¿Cuál es tu bolso?"
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "だれは来ましたか。",
+    "right": "だれが来ましたか。",
+    "why": "Una palabra interrogativa (だれ, なに, どれ) como sujeto nunca lleva は: siempre が."
+   },
+   {
+    "wrong": "わたしはねこを好きです。",
+    "right": "わたしはねこが好きです。",
+    "why": "好き es un adjetivo, no un verbo transitivo: lo que gusta se marca con が (como «me gustan los gatos»)."
+   },
+   {
+    "wrong": "日本語をわかります。",
+    "right": "日本語がわかります。",
+    "why": "わかる («ser comprensible») marca lo que se entiende con が, no con を."
+   },
+   {
+    "wrong": "ねこが好きです (respondiendo a «¿qué animal te gusta?» con は: ねこは好きです).",
+    "right": "ねこが好きです。",
+    "why": "Con は sonaría a contraste («los gatos sí, otros no»); la respuesta neutra a «¿qué?» es が."
+   }
+  ],
+  "practice": {
+   "order": [
+    {
+     "zh": "わたしはすしが好きです。",
+     "py": "わたし は すし が すき です。",
+     "es": "Me gusta el sushi."
+    },
+    {
+     "zh": "だれが先生ですか。",
+     "py": "だれ が せんせい です か。",
+     "es": "¿Quién es el profesor?"
+    }
+   ],
+   "fill": [
+    {
+     "zh": "だれ＿来ましたか。",
+     "answer": "が",
+     "options": [
+      "が",
+      "は",
+      "を",
+      "も"
+     ],
+     "es": "¿Quién ha venido?"
+    },
+    {
+     "zh": "わたしはコーヒー＿好きです。",
+     "answer": "が",
+     "options": [
+      "が",
+      "を",
+      "に",
+      "で"
+     ],
+     "es": "Me gusta el café."
+    }
+   ],
+   "translate": [
+    {
+     "zh": "けんさんは英語がわかります。",
+     "py": "けん さん は えいご が わかります。",
+     "es": "Ken entiende inglés."
+    },
+    {
+     "zh": "わたしは犬が好きです。",
+     "py": "わたし は いぬ が すき です。",
+     "es": "Me gustan los perros."
+    }
+   ]
+  },
+  "related": [
+   "wa-topic",
+   "aru-iru",
+   "hoshii"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "wo",
+  "title": "La partícula を: complemento directo",
+  "zh": "「を」",
+  "pattern": "Objeto を + verbo",
+  "level": 1,
+  "summary": "を marca lo que recibe la acción del verbo (qué comes, qué bebes, qué ves). Se pronuncia «o».",
+  "explanation": "**を** se coloca detrás del **complemento directo**, es decir, la cosa sobre la que recae la acción: パン を たべます = «como pan». Se escribe を pero suena simplemente **«o»**.\n\nOrden básico japonés: **(Sujeto は) + Objeto を + Verbo**. El verbo va al final, al revés que en español («como pan» → «pan を como»).\n\n| Español | Japonés |\n|---|---|\n| bebo café | コーヒー を のみます |\n| veo la tele | テレビ を みます |\n| leo un libro | ほん を よみます |\n| estudio japonés | にほんご を べんきょう します |\n\nを también marca el **espacio por el que uno se mueve**: こうえん を あるきます = «paseo por el parque», みち を わたります = «cruzo la calle».\n\n⚠️ Algunos verbos que en español son transitivos no usan を en japonés: わかる y すき usan が; あう (quedar con alguien) usa に: ともだち に あいます.",
+  "examples": [
+   {
+    "zh": "毎朝パンを食べます。",
+    "py": "まいあさ パン を たべます。",
+    "es": "Todas las mañanas como pan."
+   },
+   {
+    "zh": "コーヒーを飲みます。",
+    "py": "コーヒー を のみます。",
+    "es": "Bebo café."
+   },
+   {
+    "zh": "ウーゴさんは日本語を勉強します。",
+    "py": "ウーゴ さん は にほんご を べんきょう します。",
+    "es": "Hugo estudia japonés."
+   },
+   {
+    "zh": "夜、テレビを見ます。",
+    "py": "よる、テレビ を みます。",
+    "es": "Por la noche veo la tele."
+   },
+   {
+    "zh": "本を読みました。",
+    "py": "ほん を よみました。",
+    "es": "Leí un libro."
+   },
+   {
+    "zh": "公園を歩きます。",
+    "py": "こうえん を あるきます。",
+    "es": "Paseo por el parque."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "食べますパンを。",
+    "right": "パンを食べます。",
+    "why": "El verbo va siempre al final; el objeto con を va delante."
+   },
+   {
+    "wrong": "友だちを会います。",
+    "right": "友だちに会います。",
+    "why": "会う (quedar con, ver a alguien) marca a la persona con に, no con を."
+   },
+   {
+    "wrong": "日本語をわかります。",
+    "right": "日本語がわかります。",
+    "why": "わかる no es transitivo en japonés: lo que se entiende lleva が."
+   }
+  ],
+  "practice": {
+   "order": [
+    {
+     "zh": "わたしは水を飲みます。",
+     "py": "わたし は みず を のみます。",
+     "es": "Bebo agua."
+    },
+    {
+     "zh": "さくらさんは本を読みます。",
+     "py": "さくら さん は ほん を よみます。",
+     "es": "Sakura lee un libro."
+    }
+   ],
+   "fill": [
+    {
+     "zh": "テレビ＿見ます。",
+     "answer": "を",
+     "options": [
+      "を",
+      "に",
+      "が",
+      "へ"
+     ],
+     "es": "Veo la tele."
+    },
+    {
+     "zh": "毎日日本語＿勉強します。",
+     "answer": "を",
+     "options": [
+      "を",
+      "は",
+      "で",
+      "と"
+     ],
+     "es": "Estudio japonés todos los días."
+    }
+   ],
+   "translate": [
+    {
+     "zh": "わたしはお茶を飲みます。",
+     "py": "わたし は おちゃ を のみます。",
+     "es": "Bebo té."
+    },
+    {
+     "zh": "けんさんはすしを食べます。",
+     "py": "けん さん は すし を たべます。",
+     "es": "Ken come sushi."
+    }
+   ]
+  },
+  "related": [
+   "masu",
+   "wa-ga",
+   "de-place-means"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ni-time-place",
+  "title": "La partícula に: hora y destino",
+  "zh": "「に」（時間・場所）",
+  "pattern": "Hora に + verbo / Lugar に + 行きます・あります",
+  "level": 1,
+  "summary": "に marca un momento concreto (a las 7, el lunes), el destino de un movimiento y el lugar donde algo está.",
+  "explanation": "**に** es como un «punto» en el tiempo o en el espacio. Usos N5:\n\n**1. Momento concreto** («a las…», «el…»): 7時 に おきます = «me levanto a las 7»; 月曜日 に = «el lunes».\n\n⚠️ Las palabras de tiempo **relativas** (きょう, あした, きのう, まいにち, いま, あさ, こんしゅう) **no** llevan に: あした いきます, no ~~あした に~~. Truco: si en español dirías «a las / el / en + fecha», lleva に; si es «hoy, mañana, cada día», no.\n\n| Con に | Sin に |\n|---|---|\n| 3時に (a las 3) | きょう (hoy) |\n| 日曜日に (el domingo) | あした (mañana) |\n| 5月に (en mayo) | まいにち (cada día) |\n| 2026年に (en 2026) | らいしゅう (la semana que viene) |\n\n**2. Destino**: 日本 に いきます = «voy a Japón» (parecido a へ).\n\n**3. Lugar de existencia** con ある/いる: へや に ねこ が います = «hay un gato en la habitación».\n\n**4. Persona a quien se da/dice algo**: ともだち に でんわ します = «llamo a un amigo».",
+  "examples": [
+   {
+    "zh": "毎朝7時に起きます。",
+    "py": "まいあさ しちじ に おきます。",
+    "es": "Todas las mañanas me levanto a las siete."
+   },
+   {
+    "zh": "日曜日に京都へ行きます。",
+    "py": "にちようび に きょうと へ いきます。",
+    "es": "El domingo voy a Kioto."
+   },
+   {
+    "zh": "来年、日本に行きます。",
+    "py": "らいねん、にほん に いきます。",
+    "es": "El año que viene voy a Japón."
+   },
+   {
+    "zh": "へやにねこがいます。",
+    "py": "へや に ねこ が います。",
+    "es": "Hay un gato en la habitación."
+   },
+   {
+    "zh": "友だちに電話をします。",
+    "py": "ともだち に でんわ を します。",
+    "es": "Llamo por teléfono a un amigo."
+   },
+   {
+    "zh": "11時にねます。",
+    "py": "じゅういちじ に ねます。",
+    "es": "Me acuesto a las once."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "あしたに行きます。",
+    "right": "あした行きます。",
+    "why": "Las palabras de tiempo relativas (あした, きょう, まいにち) no llevan に."
+   },
+   {
+    "wrong": "7時で起きます。",
+    "right": "7時に起きます。",
+    "why": "La hora concreta se marca con に; で es para el lugar donde ocurre una acción o el medio."
+   },
+   {
+    "wrong": "レストランに食べます。",
+    "right": "レストランで食べます。",
+    "why": "に es para destino y existencia; el lugar donde se realiza una acción va con で."
+   }
+  ],
+  "practice": {
+   "order": [
+    {
+     "zh": "わたしは6時に起きます。",
+     "py": "わたし は ろくじ に おきます。",
+     "es": "Me levanto a las seis."
+    },
+    {
+     "zh": "土曜日に東京へ行きます。",
+     "py": "どようび に とうきょう へ いきます。",
+     "es": "El sábado voy a Tokio."
+    }
+   ],
+   "fill": [
+    {
+     "zh": "8時＿学校へ行きます。",
+     "answer": "に",
+     "options": [
+      "に",
+      "で",
+      "を",
+      "が"
+     ],
+     "es": "Voy a la escuela a las ocho."
+    },
+    {
+     "zh": "つくえの上＿本があります。",
+     "answer": "に",
+     "options": [
+      "に",
+      "で",
+      "を",
+      "へ"
+     ],
+     "es": "Hay un libro encima de la mesa."
+    }
+   ],
+   "translate": [
+    {
+     "zh": "金曜日に友だちに会います。",
+     "py": "きんようび に ともだち に あいます。",
+     "es": "El viernes quedo con un amigo."
+    },
+    {
+     "zh": "10時にねます。",
+     "py": "じゅうじ に ねます。",
+     "es": "Me acuesto a las diez."
+    }
+   ]
+  },
+  "related": [
+   "he-ni-direction",
+   "de-place-means",
+   "numbers-time",
+   "ni-aru-existence"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "de-place-means",
+  "title": "La partícula で: lugar de la acción y medio",
+  "zh": "「で」（場所・手段）",
+  "pattern": "Lugar で + verbo de acción / Medio で + verbo",
+  "level": 1,
+  "summary": "で marca dónde se hace algo («en la cafetería») y con qué se hace («en tren», «con palillos», «en japonés»).",
+  "explanation": "**で** tiene dos usos básicos:\n\n**1. Lugar donde ocurre una acción**: としょかん で べんきょう します = «estudio en la biblioteca». Piensa en *escenario*: algo **pasa** allí.\n\n**2. Medio o instrumento** («en», «con», «por»): でんしゃ で いきます = «voy en tren»; はし で たべます = «como con palillos»; にほんご で はなします = «hablo en japonés».\n\nEl español usa «en» tanto para *estar en casa* como para *comer en casa*, pero el japonés distingue:\n\n| Español | Japonés | Por qué |\n|---|---|---|\n| estoy **en** casa | うち **に** います | existencia → に |\n| como **en** casa | うち **で** たべます | acción → で |\n| voy **a** Kioto | きょうと **に/へ** いきます | destino |\n| voy **en** autobús | バス **で** いきます | medio → で |\n\n⚠️ «A pie» es あるいて (forma て de あるく), no ~~あし で~~.",
+  "examples": [
+   {
+    "zh": "図書館で勉強します。",
+    "py": "としょかん で べんきょう します。",
+    "es": "Estudio en la biblioteca."
+   },
+   {
+    "zh": "電車で学校へ行きます。",
+    "py": "でんしゃ で がっこう へ いきます。",
+    "es": "Voy a la escuela en tren."
+   },
+   {
+    "zh": "はしでごはんを食べます。",
+    "py": "はし で ごはん を たべます。",
+    "es": "Como arroz con palillos."
+   },
+   {
+    "zh": "日本語で話しましょう。",
+    "py": "にほんご で はなしましょう。",
+    "es": "Hablemos en japonés."
+   },
+   {
+    "zh": "きっさてんでコーヒーを飲みました。",
+    "py": "きっさてん で コーヒー を のみました。",
+    "es": "Tomé un café en una cafetería."
+   },
+   {
+    "zh": "コンビニでパンを買います。",
+    "py": "コンビニ で パン を かいます。",
+    "es": "Compro pan en el konbini."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "うちに勉強します。",
+    "right": "うちで勉強します。",
+    "why": "Estudiar es una acción: el lugar donde ocurre va con で, no con に."
+   },
+   {
+    "wrong": "うちでいます。",
+    "right": "うちにいます。",
+    "why": "Con いる/ある (estar, haber) el lugar va con に."
+   },
+   {
+    "wrong": "足で学校へ行きます。",
+    "right": "歩いて学校へ行きます。",
+    "why": "«A pie» se dice con la forma て de 歩く: 歩いて."
+   }
+  ],
+  "practice": {
+   "order": [
+    {
+     "zh": "わたしはバスで行きます。",
+     "py": "わたし は バス で いきます。",
+     "es": "Voy en autobús."
+    },
+    {
+     "zh": "レストランで晩ごはんを食べます。",
+     "py": "レストラン で ばんごはん を たべます。",
+     "es": "Ceno en un restaurante."
+    }
+   ],
+   "fill": [
+    {
+     "zh": "図書館＿本を読みます。",
+     "answer": "で",
+     "options": [
+      "で",
+      "に",
+      "を",
+      "へ"
+     ],
+     "es": "Leo libros en la biblioteca."
+    },
+    {
+     "zh": "タクシー＿ホテルへ帰ります。",
+     "answer": "で",
+     "options": [
+      "で",
+      "に",
+      "を",
+      "と"
+     ],
+     "es": "Vuelvo al hotel en taxi."
+    }
+   ],
+   "translate": [
+    {
+     "zh": "日本語で話します。",
+     "py": "にほんご で はなします。",
+     "es": "Hablo en japonés."
+    },
+    {
+     "zh": "学校で友だちに会います。",
+     "py": "がっこう で ともだち に あいます。",
+     "es": "Veo a mis amigos en la escuela."
+    }
+   ]
+  },
+  "related": [
+   "ni-time-place",
+   "he-ni-direction",
+   "wo"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "he-ni-direction",
+  "title": "Dirección con へ y に",
+  "zh": "「へ」と「に」（方向）",
+  "pattern": "Lugar へ／に + 行きます・来ます・帰ります",
+  "level": 1,
+  "summary": "へ (se pronuncia «e») indica hacia dónde se va; に indica el destino. Con verbos de movimiento son casi intercambiables.",
+  "explanation": "Con los tres verbos de movimiento básicos **いきます** (ir), **きます** (venir) y **かえります** (volver a casa/al país) el destino se marca con **へ** o **に**:\n\n- にほん **へ** いきます = «voy hacia Japón» (pone el acento en la dirección).\n- にほん **に** いきます = «voy a Japón» (pone el acento en el punto de llegada).\n\nEn la práctica, a nivel N5 **puedes usar los dos**. Recuerda: como partícula, へ **se pronuncia «e»**, no «he».\n\n| Verbo | Significado | Ejemplo |\n|---|---|---|\n| 行きます | ir | がっこう へ いきます |\n| 来ます | venir | にほん へ きました |\n| 帰ります | volver (a casa) | うち へ かえります |\n\n⚠️ かえります es «volver a **tu** sitio» (casa, país). Para «volver» en general no es lo mismo que el español «regresar a cualquier lugar».\n\nPara indicar la finalidad (ir **a** comer) se usa **raíz del verbo + に**: たべ に いきます = «voy a comer».",
+  "examples": [
+   {
+    "zh": "あした京都へ行きます。",
+    "py": "あした きょうと へ いきます。",
+    "es": "Mañana voy a Kioto."
+   },
+   {
+    "zh": "ウーゴさんは去年日本に来ました。",
+    "py": "ウーゴ さん は きょねん にほん に きました。",
+    "es": "Hugo vino a Japón el año pasado."
+   },
+   {
+    "zh": "6時にうちへ帰ります。",
+    "py": "ろくじ に うち へ かえります。",
+    "es": "Vuelvo a casa a las seis."
+   },
+   {
+    "zh": "どこへ行きますか。",
+    "py": "どこ へ いきます か。",
+    "es": "¿Adónde vas?"
+   },
+   {
+    "zh": "駅へ行きました。",
+    "py": "えき へ いきました。",
+    "es": "Fui a la estación."
+   },
+   {
+    "zh": "レストランへ晩ごはんを食べに行きます。",
+    "py": "レストラン へ ばんごはん を たべ に いきます。",
+    "es": "Voy al restaurante a cenar."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "Leer へ como «he» en がっこうへ.",
+    "right": "がっこうへ = «gakkō e».",
+    "why": "Como partícula, へ se pronuncia «e»."
+   },
+   {
+    "wrong": "日本で行きます。",
+    "right": "日本へ（に）行きます。",
+    "why": "で es el lugar donde ocurre algo o el medio; el destino se marca con へ o に."
+   },
+   {
+    "wrong": "どこを行きますか。",
+    "right": "どこへ行きますか。",
+    "why": "El destino no lleva を; を con verbos de movimiento indica el espacio que se recorre."
+   }
+  ],
+  "practice": {
+   "order": [
+    {
+     "zh": "わたしは東京へ行きます。",
+     "py": "わたし は とうきょう へ いきます。",
+     "es": "Voy a Tokio."
+    },
+    {
+     "zh": "けんさんはうちへ帰りました。",
+     "py": "けん さん は うち へ かえりました。",
+     "es": "Ken volvió a casa."
+    }
+   ],
+   "fill": [
+    {
+     "zh": "あした大学＿行きます。",
+     "answer": "へ",
+     "options": [
+      "へ",
+      "で",
+      "を",
+      "が"
+     ],
+     "es": "Mañana voy a la universidad."
+    },
+    {
+     "zh": "どこ＿行きますか。",
+     "answer": "へ",
+     "options": [
+      "へ",
+      "で",
+      "を",
+      "は"
+     ],
+     "es": "¿Adónde vas?"
+    }
+   ],
+   "translate": [
+    {
+     "zh": "日曜日にスペインへ帰ります。",
+     "py": "にちようび に スペイン へ かえります。",
+     "es": "El domingo vuelvo a España."
+    },
+    {
+     "zh": "さくらさんは駅へ行きました。",
+     "py": "さくら さん は えき へ いきました。",
+     "es": "Sakura fue a la estación."
+    }
+   ]
+  },
+  "related": [
+   "ni-time-place",
+   "de-place-means",
+   "to-and-with"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "to-and-with",
+  "title": "La partícula と: «y» y «con»",
+  "zh": "「と」",
+  "pattern": "Nombre と Nombre / Persona と + verbo",
+  "level": 1,
+  "summary": "と une nombres («A y B», lista completa) y también significa «con» alguien.",
+  "explanation": "**と** tiene dos usos muy frecuentes:\n\n**1. «y» entre nombres**: パン と たまご = «pan y huevos». Es una lista **completa** (solo eso). Si quieres decir «pan, huevos, etc.», usa や (ver «や〜など»).\n\n⚠️ と **solo une nombres**. No sirve para unir frases ni adjetivos como el «y» español: *«es grande y bonito»* no se dice con と (se usa la forma て: おおきくて きれい).\n\n**2. «con» (compañía)**: ともだち と いきます = «voy con un amigo». Se puede reforzar con いっしょに: ともだち と いっしょに = «junto con un amigo».\n\n| Español | Japonés |\n|---|---|\n| té y café | おちゃ と コーヒー |\n| Ken y Sakura | けん さん と さくら さん |\n| con mi madre | はは と |\n| hablo con el profe | せんせい と はなします |\n\nComo en español, el «con» de instrumento (con palillos) **no** es と, sino で.",
+  "examples": [
+   {
+    "zh": "パンとたまごを食べます。",
+    "py": "パン と たまご を たべます。",
+    "es": "Como pan y huevos."
+   },
+   {
+    "zh": "けんさんとさくらさんは学生です。",
+    "py": "けん さん と さくら さん は がくせい です。",
+    "es": "Ken y Sakura son estudiantes."
+   },
+   {
+    "zh": "友だちと映画を見ました。",
+    "py": "ともだち と えいが を みました。",
+    "es": "Vi una película con un amigo."
+   },
+   {
+    "zh": "母といっしょに京都へ行きます。",
+    "py": "はは と いっしょ に きょうと へ いきます。",
+    "es": "Voy a Kioto con mi madre."
+   },
+   {
+    "zh": "田中先生と話しました。",
+    "py": "たなか せんせい と はなしました。",
+    "es": "Hablé con la profesora Tanaka."
+   },
+   {
+    "zh": "コーヒーとケーキをください。",
+    "py": "コーヒー と ケーキ を ください。",
+    "es": "Un café y un pastel, por favor."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "大きいと きれいです。",
+    "right": "大きくてきれいです。",
+    "why": "と solo une nombres; para unir adjetivos se usa la forma て (大きくて)."
+   },
+   {
+    "wrong": "はしとごはんを食べます。(con palillos)",
+    "right": "はしでごはんを食べます。",
+    "why": "El instrumento va con で; と es compañía o lista, así que significaría «como palillos y arroz»."
+   },
+   {
+    "wrong": "起きます、と朝ごはんを食べます。",
+    "right": "起きて、朝ごはんを食べます。",
+    "why": "と no une frases como el «y» español; se encadenan acciones con la forma て."
+   }
+  ],
+  "practice": {
+   "order": [
+    {
+     "zh": "わたしは友だちと行きます。",
+     "py": "わたし は ともだち と いきます。",
+     "es": "Voy con un amigo."
+    },
+    {
+     "zh": "水とお茶を買いました。",
+     "py": "みず と おちゃ を かいました。",
+     "es": "Compré agua y té."
+    }
+   ],
+   "fill": [
+    {
+     "zh": "パン＿コーヒーをください。",
+     "answer": "と",
+     "options": [
+      "と",
+      "を",
+      "で",
+      "も"
+     ],
+     "es": "Pan y café, por favor."
+    },
+    {
+     "zh": "けんさん＿いっしょに行きます。",
+     "answer": "と",
+     "options": [
+      "と",
+      "で",
+      "を",
+      "が"
+     ],
+     "es": "Voy junto con Ken."
+    }
+   ],
+   "translate": [
+    {
+     "zh": "父と母は日本人です。",
+     "py": "ちち と はは は にほんじん です。",
+     "es": "Mi padre y mi madre son japoneses."
+    },
+    {
+     "zh": "さくらさんと話しました。",
+     "py": "さくら さん と はなしました。",
+     "es": "Hablé con Sakura."
+    }
+   ]
+  },
+  "related": [
+   "ya-nado",
+   "mo",
+   "te-form"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "mo",
+  "title": "La partícula も: «también / tampoco»",
+  "zh": "「も」",
+  "pattern": "Nombre も + … (sustituye a は, が, を)",
+  "level": 1,
+  "summary": "も significa «también» (y «tampoco» con negación). Ocupa el lugar de は, が o を.",
+  "explanation": "**も** se pone detrás de la palabra a la que afecta «también»: わたし **も** がくせい です = «yo también soy estudiante».\n\n- **Sustituye** a は, が y を (no se dicen juntas): ~~わたしはも~~ → わたし も; ~~コーヒーをも~~ → コーヒー も.\n- Con **otras partículas** (に, で, へ, と) se añade detrás: きょうと **にも** いきました = «también fui a Kioto».\n- Con verbo negativo equivale a **«tampoco»**: わたし も のみません = «yo tampoco bebo».\n- Con palabra interrogativa + negación = «nada / nadie»: なに も たべません = «no como nada»; だれ も いません = «no hay nadie».\n\n| Normal | Con も |\n|---|---|\n| わたしは学生です | わたしも学生です (yo también) |\n| お茶を飲みます | お茶も飲みます (también té) |\n| 京都に行きます | 京都にも行きます (también a Kioto) |\n| なにを食べますか | なにも食べません (no como nada) |",
+  "examples": [
+   {
+    "zh": "わたしも学生です。",
+    "py": "わたし も がくせい です。",
+    "es": "Yo también soy estudiante."
+   },
+   {
+    "zh": "けんさんもスペイン語を勉強します。",
+    "py": "けん さん も スペインご を べんきょう します。",
+    "es": "Ken también estudia español."
+   },
+   {
+    "zh": "コーヒーもお茶も好きです。",
+    "py": "コーヒー も おちゃ も すき です。",
+    "es": "Me gusta tanto el café como el té."
+   },
+   {
+    "zh": "わたしもお酒を飲みません。",
+    "py": "わたし も おさけ を のみません。",
+    "es": "Yo tampoco bebo alcohol."
+   },
+   {
+    "zh": "京都にも行きました。",
+    "py": "きょうと に も いきました。",
+    "es": "También fui a Kioto."
+   },
+   {
+    "zh": "けさ、なにも食べませんでした。",
+    "py": "けさ、なに も たべません でした。",
+    "es": "Esta mañana no he comido nada."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "わたしはも学生です。",
+    "right": "わたしも学生です。",
+    "why": "も sustituye a は; no se combinan."
+   },
+   {
+    "wrong": "パンをも食べます。",
+    "right": "パンも食べます。",
+    "why": "も sustituye también a を."
+   },
+   {
+    "wrong": "なにも食べます。(«no como nada»)",
+    "right": "なにも食べません。",
+    "why": "なにも / だれも con significado «nada / nadie» exigen el verbo en negativo, como la doble negación del español."
+   }
+  ],
+  "practice": {
+   "order": [
+    {
+     "zh": "さくらさんも日本人です。",
+     "py": "さくら さん も にほんじん です。",
+     "es": "Sakura también es japonesa."
+    },
+    {
+     "zh": "わたしもすしが好きです。",
+     "py": "わたし も すし が すき です。",
+     "es": "A mí también me gusta el sushi."
+    }
+   ],
+   "fill": [
+    {
+     "zh": "けんさんは学生です。わたし＿学生です。",
+     "answer": "も",
+     "options": [
+      "も",
+      "は",
+      "を",
+      "と"
+     ],
+     "es": "Ken es estudiante. Yo también soy estudiante."
+    },
+    {
+     "zh": "へやにだれ＿いません。",
+     "answer": "も",
+     "options": [
+      "も",
+      "が",
+      "は",
+      "を"
+     ],
+     "es": "No hay nadie en la habitación."
+    }
+   ],
+   "translate": [
+    {
+     "zh": "わたしも日本へ行きます。",
+     "py": "わたし も にほん へ いきます。",
+     "es": "Yo también voy a Japón."
+    },
+    {
+     "zh": "なにも買いませんでした。",
+     "py": "なに も かいません でした。",
+     "es": "No compré nada."
+    }
+   ]
+  },
+  "related": [
+   "wa-topic",
+   "to-and-with",
+   "question-words"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "no",
+  "title": "La partícula の: posesión y «de»",
+  "zh": "「の」",
+  "pattern": "Nombre A の Nombre B (= B de A)",
+  "level": 1,
+  "summary": "の une dos nombres: A の B = «el B de A». Sirve para posesión, origen, tipo… y el orden es al revés que en español.",
+  "explanation": "**の** une dos nombres y el **orden es inverso** al español: **わたし の ほん** = «el libro **de** mí» = «mi libro». Lo que va antes de の describe a lo que va después.\n\n| Japonés | Literal | Español |\n|---|---|---|\n| わたしの本 | yo-de libro | mi libro |\n| 先生のかばん | profe-de bolso | el bolso del profesor |\n| 日本の車 | Japón-de coche | un coche japonés |\n| 日本語の先生 | japonés-de profe | profesor de japonés |\n| 東京大学の学生 | Univ. Tokio-de estudiante | estudiante de la Univ. de Tokio |\n\nLos posesivos se forman siempre así: わたし の (mi), あなた の (tu), かれ の (su, de él).\n\nCuando el nombre se sobrentiende, の puede quedarse solo como «el de…»: この かさ は わたし の です = «este paraguas es mío».\n\n⚠️ No pongas の entre un adjetivo い y el nombre: おおきい いえ, no ~~おおきいの いえ~~.",
+  "examples": [
+   {
+    "zh": "これはわたしの本です。",
+    "py": "これ は わたし の ほん です。",
+    "es": "Este es mi libro."
+   },
+   {
+    "zh": "田中先生は日本語の先生です。",
+    "py": "たなか せんせい は にほんご の せんせい です。",
+    "es": "La profesora Tanaka es profesora de japonés."
+   },
+   {
+    "zh": "けんさんのお母さんは医者です。",
+    "py": "けん さん の おかあさん は いしゃ です。",
+    "es": "La madre de Ken es médica."
+   },
+   {
+    "zh": "そのかさはさくらさんのです。",
+    "py": "その かさ は さくら さん の です。",
+    "es": "Ese paraguas es de Sakura."
+   },
+   {
+    "zh": "日本の車は高いですか。",
+    "py": "にほん の くるま は たかい です か。",
+    "es": "¿Los coches japoneses son caros?"
+   },
+   {
+    "zh": "大学の友だちと話しました。",
+    "py": "だいがく の ともだち と はなしました。",
+    "es": "Hablé con un amigo de la universidad."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "本のわたし (para «mi libro»)",
+    "right": "わたしの本",
+    "why": "El orden es inverso al español: el poseedor va primero, luego の y la cosa."
+   },
+   {
+    "wrong": "大きいのいえ",
+    "right": "大きいいえ",
+    "why": "Los adjetivos い se unen directamente al nombre, sin の."
+   },
+   {
+    "wrong": "わたし本です。",
+    "right": "わたしの本です。",
+    "why": "No hay posesivos sueltos como «mi»: siempre わたし + の."
+   }
+  ],
+  "practice": {
+   "order": [
+    {
+     "zh": "これはけんさんのかばんです。",
+     "py": "これ は けん さん の かばん です。",
+     "es": "Este es el bolso de Ken."
+    },
+    {
+     "zh": "わたしの母は先生です。",
+     "py": "わたし の はは は せんせい です。",
+     "es": "Mi madre es profesora."
+    }
+   ],
+   "fill": [
+    {
+     "zh": "これはわたし＿かさです。",
+     "answer": "の",
+     "options": [
+      "の",
+      "は",
+      "を",
+      "と"
+     ],
+     "es": "Este es mi paraguas."
+    },
+    {
+     "zh": "田中先生は日本語＿先生です。",
+     "answer": "の",
+     "options": [
+      "の",
+      "が",
+      "で",
+      "に"
+     ],
+     "es": "La profesora Tanaka es profesora de japonés."
+    }
+   ],
+   "translate": [
+    {
+     "zh": "それはさくらさんの車です。",
+     "py": "それ は さくら さん の くるま です。",
+     "es": "Ese es el coche de Sakura."
+    },
+    {
+     "zh": "あの人はわたしの友だちです。",
+     "py": "あの ひと は わたし の ともだち です。",
+     "es": "Aquella persona es mi amigo."
+    }
+   ]
+  },
+  "related": [
+   "desu",
+   "kosoado",
+   "i-adjectives"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ka-question",
+  "title": "Preguntas con か",
+  "zh": "「〜か」（疑問）",
+  "pattern": "Frase afirmativa + か。",
+  "level": 1,
+  "summary": "Añade か al final de una frase educada para convertirla en pregunta. El orden de las palabras no cambia.",
+  "explanation": "Hacer una pregunta de sí/no en japonés es muy fácil: toma la frase y añade **か** al final. No se invierte el orden ni se cambia nada más.\n\n- がくせい です → がくせい です **か** = «¿eres estudiante?»\n- たべます → たべます **か** = «¿comes?»\n\nTradicionalmente se escribe con punto 「。」, no con 「？」, aunque en textos informales verás el signo de interrogación. La entonación sube un poco al final, como en español.\n\n**Responder**:\n\n| Pregunta | Sí | No |\n|---|---|---|\n| 学生ですか | はい、学生です | いいえ、学生じゃありません |\n| 食べますか | はい、食べます | いいえ、食べません |\n\n⚠️ En japonés はい/いいえ confirman o niegan **lo que dice la pregunta**. Ante una pregunta negativa (コーヒー を のみません か «¿no bebes café?»), はい significa «correcto, no bebo», al revés que nuestro «sí».\n\n**か entre dos opciones** = «o»: コーヒー か おちゃ = «café o té».",
+  "examples": [
+   {
+    "zh": "ウーゴさんは学生ですか。",
+    "py": "ウーゴ さん は がくせい です か。",
+    "es": "¿Hugo es estudiante?"
+   },
+   {
+    "zh": "はい、学生です。",
+    "py": "はい、がくせい です。",
+    "es": "Sí, es estudiante."
+   },
+   {
+    "zh": "すしを食べますか。",
+    "py": "すし を たべます か。",
+    "es": "¿Comes sushi?"
+   },
+   {
+    "zh": "いいえ、食べません。",
+    "py": "いいえ、たべません。",
+    "es": "No, no como."
+   },
+   {
+    "zh": "あしたは休みですか。",
+    "py": "あした は やすみ です か。",
+    "es": "¿Mañana es fiesta?"
+   },
+   {
+    "zh": "コーヒーかお茶を飲みますか。",
+    "py": "コーヒー か おちゃ を のみます か。",
+    "es": "¿Tomas café o té?"
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "か学生ですか。",
+    "right": "学生ですか。",
+    "why": "No hay «¿» inicial: か va solo al final."
+   },
+   {
+    "wrong": "ですか学生。",
+    "right": "学生ですか。",
+    "why": "No se invierte el orden como en otras lenguas: la frase se queda igual y se añade か."
+   },
+   {
+    "wrong": "¿No bebes café? —はい、飲みます (queriendo decir «sí, bebo»).",
+    "right": "いいえ、飲みます。",
+    "why": "はい confirma la pregunta negativa («correcto, no bebo»); para contradecirla se usa いいえ."
+   }
+  ],
+  "practice": {
+   "order": [
+    {
+     "zh": "さくらさんは日本人ですか。",
+     "py": "さくら さん は にほんじん です か。",
+     "es": "¿Sakura es japonesa?"
+    },
+    {
+     "zh": "あした学校へ行きますか。",
+     "py": "あした がっこう へ いきます か。",
+     "es": "¿Mañana vas a la escuela?"
+    }
+   ],
+   "fill": [
+    {
+     "zh": "けんさんは先生です＿。",
+     "answer": "か",
+     "options": [
+      "か",
+      "は",
+      "も",
+      "の"
+     ],
+     "es": "¿Ken es profesor?"
+    },
+    {
+     "zh": "お茶を飲みますか。—＿、飲みません。",
+     "answer": "いいえ",
+     "options": [
+      "いいえ",
+      "はい",
+      "ええ",
+      "どうぞ"
+     ],
+     "es": "¿Bebes té? —No, no bebo."
+    }
+   ],
+   "translate": [
+    {
+     "zh": "あなたはスペイン人ですか。",
+     "py": "あなた は スペイン じん です か。",
+     "es": "¿Eres español?"
+    },
+    {
+     "zh": "はい、そうです。",
+     "py": "はい、そう です。",
+     "es": "Sí, así es."
+    }
+   ]
+  },
+  "related": [
+   "desu",
+   "question-words",
+   "masu"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "question-words",
+  "title": "Palabras interrogativas",
+  "zh": "「疑問詞」",
+  "pattern": "… + palabra interrogativa + … か。",
+  "level": 1,
+  "summary": "なに, だれ, どこ, いつ, いくら, どう… ocupan el lugar de la respuesta en la frase, que termina en か.",
+  "explanation": "En español la palabra interrogativa va al principio («¿**Qué** comes?»). En japonés se queda **en el mismo sitio donde iría la respuesta**, y la frase termina en か:\n\n- すし を たべます → **なに** を たべます か = «¿qué comes?»\n- きょうと へ いきます → **どこ** へ いきます か = «¿adónde vas?»\n\n| Japonés | Español | Ejemplo |\n|---|---|---|\n| なん / なに | qué | これは何ですか |\n| だれ (どなた, formal) | quién | あの人はだれですか |\n| どこ | dónde | トイレはどこですか |\n| いつ | cuándo | いつ行きますか |\n| いくら | cuánto (precio) | これはいくらですか |\n| いくつ | cuántos / qué edad | いくつですか |\n| どう | cómo | 日本はどうですか |\n| どうして / なぜ | por qué | どうして来ませんでしたか |\n| どれ / どの | cuál | どれがいいですか |\n| 何時 (なんじ) | qué hora | いま何時ですか |\n\n**なに o なん**: delante de です, de contadores y de sonidos d/t/n se dice **なん** (なん です か, なんじ, なんにん); delante de を o が, **なに** (なに を).\n\n⚠️ El sujeto interrogativo lleva **が**, nunca は: だれ が きました か.",
+  "examples": [
+   {
+    "zh": "これは何ですか。",
+    "py": "これ は なん です か。",
+    "es": "¿Qué es esto?"
+   },
+   {
+    "zh": "トイレはどこですか。",
+    "py": "トイレ は どこ です か。",
+    "es": "¿Dónde está el baño?"
+   },
+   {
+    "zh": "このかばんはいくらですか。",
+    "py": "この かばん は いくら です か。",
+    "es": "¿Cuánto cuesta este bolso?"
+   },
+   {
+    "zh": "いつ日本へ行きますか。",
+    "py": "いつ にほん へ いきます か。",
+    "es": "¿Cuándo vas a Japón?"
+   },
+   {
+    "zh": "あの人はだれですか。",
+    "py": "あの ひと は だれ です か。",
+    "es": "¿Quién es aquella persona?"
+   },
+   {
+    "zh": "東京はどうでしたか。",
+    "py": "とうきょう は どう でした か。",
+    "es": "¿Qué tal fue Tokio?"
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "何はこれですか。",
+    "right": "これは何ですか。",
+    "why": "La palabra interrogativa va donde iría la respuesta, no al principio de la frase."
+   },
+   {
+    "wrong": "だれは来ましたか。",
+    "right": "だれが来ましたか。",
+    "why": "El sujeto interrogativo siempre lleva が."
+   },
+   {
+    "wrong": "なにですか。",
+    "right": "なんですか。",
+    "why": "Delante de です se usa la forma なん."
+   }
+  ],
+  "practice": {
+   "order": [
+    {
+     "zh": "えきはどこですか。",
+     "py": "えき は どこ です か。",
+     "es": "¿Dónde está la estación?"
+    },
+    {
+     "zh": "あした何をしますか。",
+     "py": "あした なに を します か。",
+     "es": "¿Qué haces mañana?"
+    }
+   ],
+   "fill": [
+    {
+     "zh": "このりんごは＿ですか。—200円です。",
+     "answer": "いくら",
+     "options": [
+      "いくら",
+      "いつ",
+      "だれ",
+      "どこ"
+     ],
+     "es": "¿Cuánto cuestan estas manzanas? —200 yenes."
+    },
+    {
+     "zh": "＿日本へ来ましたか。—きょねんです。",
+     "answer": "いつ",
+     "options": [
+      "いつ",
+      "どこ",
+      "なに",
+      "だれ"
+     ],
+     "es": "¿Cuándo viniste a Japón? —El año pasado."
+    }
+   ],
+   "translate": [
+    {
+     "zh": "いま何時ですか。",
+     "py": "いま なんじ です か。",
+     "es": "¿Qué hora es ahora?"
+    },
+    {
+     "zh": "だれと行きますか。",
+     "py": "だれ と いきます か。",
+     "es": "¿Con quién vas?"
+    }
+   ]
+  },
+  "related": [
+   "ka-question",
+   "kosoado",
+   "wa-ga"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "kosoado",
+  "title": "Demostrativos こ・そ・あ・ど",
+  "zh": "「こそあど」",
+  "pattern": "これ／それ／あれ／どれ・この／その／あの／どの + Nombre",
+  "level": 1,
+  "summary": "Sistema de demostrativos: こ (cerca de mí), そ (cerca de ti), あ (lejos de los dos), ど (pregunta).",
+  "explanation": "El japonés tiene un sistema muy regular, parecido al español «esto / eso / aquello»:\n\n| | こ (cerca de quien habla) | そ (cerca de quien escucha) | あ (lejos de ambos) | ど (pregunta) |\n|---|---|---|---|---|\n| cosa (pronombre) | これ esto | それ eso | あれ aquello | どれ ¿cuál? |\n| + nombre | この本 este libro | その本 ese libro | あの本 aquel libro | どの本 ¿qué libro? |\n| lugar | ここ aquí | そこ ahí | あそこ allí | どこ ¿dónde? |\n| educado (dirección) | こちら | そちら | あちら | どちら |\n\n**Clave**: これ/それ/あれ van **solos** (これ は ほん です); この/その/あの **siempre llevan un nombre detrás** (この ほん は たかい です). Es como «este» vs «este libro» en español, pero el japonés usa palabras distintas.\n\nそ no es «distancia media» exactamente, sino «cerca de ti / tu terreno». Si los dos estáis juntos, lo que está algo lejos es そ y lo muy lejano あ.\n\nこちら se usa al presentar a alguien: こちら は たなか せんせい です = «le presento a la profesora Tanaka».",
+  "examples": [
+   {
+    "zh": "これはわたしのかさです。",
+    "py": "これ は わたし の かさ です。",
+    "es": "Esto es mi paraguas."
+   },
+   {
+    "zh": "それは何ですか。",
+    "py": "それ は なん です か。",
+    "es": "¿Qué es eso?"
+   },
+   {
+    "zh": "あのレストランはおいしいです。",
+    "py": "あの レストラン は おいしい です。",
+    "es": "Aquel restaurante está bueno."
+   },
+   {
+    "zh": "この本はいくらですか。",
+    "py": "この ほん は いくら です か。",
+    "es": "¿Cuánto cuesta este libro?"
+   },
+   {
+    "zh": "トイレはあそこです。",
+    "py": "トイレ は あそこ です。",
+    "es": "El baño está allí."
+   },
+   {
+    "zh": "どのかばんがさくらさんのですか。",
+    "py": "どの かばん が さくら さん の です か。",
+    "es": "¿Qué bolso es el de Sakura?"
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "これ本は高いです。",
+    "right": "この本は高いです。",
+    "why": "Delante de un nombre se usa この/その/あの; これ va solo."
+   },
+   {
+    "wrong": "このは何ですか。",
+    "right": "これは何ですか。",
+    "why": "この necesita un nombre detrás; para «esto» sin nombre se usa これ."
+   },
+   {
+    "wrong": "どれ本ですか。",
+    "right": "どの本ですか。",
+    "why": "Con nombre detrás, «qué/cuál» es どの."
+   }
+  ],
+  "practice": {
+   "order": [
+    {
+     "zh": "このかばんは高いです。",
+     "py": "この かばん は たかい です。",
+     "es": "Este bolso es caro."
+    },
+    {
+     "zh": "あの人は先生です。",
+     "py": "あの ひと は せんせい です。",
+     "es": "Aquella persona es profesora."
+    }
+   ],
+   "fill": [
+    {
+     "zh": "＿本はわたしのです。",
+     "answer": "この",
+     "options": [
+      "この",
+      "これ",
+      "ここ",
+      "こちら"
+     ],
+     "es": "Este libro es mío."
+    },
+    {
+     "zh": "えきは＿ですか。",
+     "answer": "どこ",
+     "options": [
+      "どこ",
+      "どれ",
+      "どの",
+      "だれ"
+     ],
+     "es": "¿Dónde está la estación?"
+    }
+   ],
+   "translate": [
+    {
+     "zh": "それはけんさんのペンです。",
+     "py": "それ は けん さん の ペン です。",
+     "es": "Eso es el bolígrafo de Ken."
+    },
+    {
+     "zh": "ここは図書館です。",
+     "py": "ここ は としょかん です。",
+     "es": "Esto (aquí) es la biblioteca."
+    }
+   ]
+  },
+  "related": [
+   "question-words",
+   "no",
+   "desu"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "masu",
+  "title": "La forma ます (verbos educados)",
+  "zh": "「ます形」",
+  "pattern": "Raíz del verbo + ます",
+  "level": 1,
+  "summary": "ます es la terminación educada de los verbos en presente/futuro. Cada grupo de verbos forma su raíz de manera distinta.",
+  "explanation": "Los verbos japoneses **no cambian según la persona** (como です): たべます = como, comes, come, comemos… Tampoco hay futuro: たべます sirve para «como» y «comeré».\n\nHay tres grupos de verbos (a partir del diccionario):\n\n| Grupo | Cómo reconocerlo | Regla | Ejemplos |\n|---|---|---|---|\n| る-verbos (ichidan) | acaban en -iru / -eru | quita る + ます | たべる → たべます, みる → みます |\n| う-verbos (godan) | el resto | cambia la -u final a -i + ます | のむ → のみます, かう → かいます, いく → いきます, はなす → はなします, まつ → まちます |\n| Irregulares | solo dos | de memoria | する → します, くる → きます |\n\nCambio de las う-verbos por terminación:\n\n| -う | -く | -ぐ | -す | -つ | -ぬ | -ぶ | -む | -る |\n|---|---|---|---|---|---|---|---|---|\n| -います | -きます | -ぎます | -します | -ちます | -にます | -びます | -みます | -ります |\n\n⚠️ Algunos verbos acaban en -iru/-eru pero son **う-verbos**: かえる → かえります, はいる → はいります, しる, はしる, きる (cortar). Apréndelos como excepción.\n\nAdemás, muchos nombres se convierten en verbo con **する**: べんきょう します (estudiar), かいもの します (ir de compras).",
+  "examples": [
+   {
+    "zh": "毎日日本語を勉強します。",
+    "py": "まいにち にほんご を べんきょう します。",
+    "es": "Estudio japonés todos los días."
+   },
+   {
+    "zh": "朝ごはんを食べます。",
+    "py": "あさごはん を たべます。",
+    "es": "Desayuno."
+   },
+   {
+    "zh": "あした京都へ行きます。",
+    "py": "あした きょうと へ いきます。",
+    "es": "Mañana iré a Kioto."
+   },
+   {
+    "zh": "よく音楽を聞きます。",
+    "py": "よく おんがく を ききます。",
+    "es": "A menudo escucho música."
+   },
+   {
+    "zh": "けんさんはバスを待ちます。",
+    "py": "けん さん は バス を まちます。",
+    "es": "Ken espera el autobús."
+   },
+   {
+    "zh": "7時にうちへ帰ります。",
+    "py": "しちじ に うち へ かえります。",
+    "es": "Vuelvo a casa a las siete."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "帰ます",
+    "right": "帰ります",
+    "why": "帰る parece un る-verbo pero es un う-verbo: る → り + ます."
+   },
+   {
+    "wrong": "飲むます",
+    "right": "飲みます",
+    "why": "No se añade ます al diccionario: la -u cambia a -i (む → み)."
+   },
+   {
+    "wrong": "来ります / するます",
+    "right": "来ます / します",
+    "why": "来る y する son irregulares: きます y します."
+   },
+   {
+    "wrong": "わたしは食べます、あなたは食べるます",
+    "right": "わたしは食べます。あなたも食べます。",
+    "why": "El verbo no cambia según la persona: siempre 食べます."
+   }
+  ],
+  "practice": {
+   "order": [
+    {
+     "zh": "わたしは毎朝コーヒーを飲みます。",
+     "py": "わたし は まいあさ コーヒー を のみます。",
+     "es": "Tomo café todas las mañanas."
+    },
+    {
+     "zh": "けんさんは本を読みます。",
+     "py": "けん さん は ほん を よみます。",
+     "es": "Ken lee un libro."
+    }
+   ],
+   "fill": [
+    {
+     "zh": "毎日日本語を勉強＿。",
+     "answer": "します",
+     "options": [
+      "します",
+      "きます",
+      "です",
+      "あります"
+     ],
+     "es": "Estudio japonés todos los días."
+    },
+    {
+     "zh": "6時にうちへ＿。",
+     "answer": "帰ります",
+     "options": [
+      "帰ります",
+      "帰ます",
+      "帰るます",
+      "帰えます"
+     ],
+     "es": "Vuelvo a casa a las seis."
+    }
+   ],
+   "translate": [
+    {
+     "zh": "テレビを見ます。",
+     "py": "テレビ を みます。",
+     "es": "Veo la tele."
+    },
+    {
+     "zh": "あした友だちが来ます。",
+     "py": "あした ともだち が きます。",
+     "es": "Mañana viene un amigo."
+    }
+   ]
+  },
+  "related": [
+   "masu-negative-past",
+   "dictionary-form",
+   "wo"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "masu-negative-past",
+  "title": "ません, ました, ませんでした",
+  "zh": "「ません・ました・ませんでした」",
+  "pattern": "Raíz + ません / ました / ませんでした",
+  "level": 1,
+  "summary": "La forma ます tiene cuatro variantes: afirmativo, negativo, pasado y pasado negativo.",
+  "explanation": "Una vez que sabes formar la raíz (たべ-, のみ-, いき-, し-, き-), solo cambia la terminación. ¡Es totalmente regular!\n\n| | Presente / futuro | Pasado |\n|---|---|---|\n| Afirmativo | 食べ**ます** (como) | 食べ**ました** (comí / he comido) |\n| Negativo | 食べ**ません** (no como) | 食べ**ませんでした** (no comí) |\n\nTabla con varios verbos:\n\n| Diccionario | ます | ません | ました | ませんでした |\n|---|---|---|---|---|\n| 食べる | 食べます | 食べません | 食べました | 食べませんでした |\n| 飲む | 飲みます | 飲みません | 飲みました | 飲みませんでした |\n| 行く | 行きます | 行きません | 行きました | 行きませんでした |\n| する | します | しません | しました | しませんでした |\n| 来る | 来ます | 来ません | 来ました | 来ませんでした |\n\nEl japonés **solo tiene dos tiempos**: no-pasado y pasado. ました cubre nuestro indefinido («comí»), el perfecto («he comido») y a veces el imperfecto. Las palabras de tiempo (きのう, せんしゅう) aclaran el momento.\n\nTruco de sonido: ません suena «masen», ました «mashta» (la i casi desaparece).",
+  "examples": [
+   {
+    "zh": "きのう、映画を見ました。",
+    "py": "きのう、えいが を みました。",
+    "es": "Ayer vi una película."
+   },
+   {
+    "zh": "わたしはお酒を飲みません。",
+    "py": "わたし は おさけ を のみません。",
+    "es": "No bebo alcohol."
+   },
+   {
+    "zh": "けさ、朝ごはんを食べませんでした。",
+    "py": "けさ、あさごはん を たべません でした。",
+    "es": "Esta mañana no he desayunado."
+   },
+   {
+    "zh": "先週、東京へ行きました。",
+    "py": "せんしゅう、とうきょう へ いきました。",
+    "es": "La semana pasada fui a Tokio."
+   },
+   {
+    "zh": "日曜日は勉強しません。",
+    "py": "にちようび は べんきょう しません。",
+    "es": "Los domingos no estudio."
+   },
+   {
+    "zh": "さくらさんはパーティーに来ませんでした。",
+    "py": "さくら さん は パーティー に きません でした。",
+    "es": "Sakura no vino a la fiesta."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "食べましたません",
+    "right": "食べませんでした",
+    "why": "El pasado negativo es ません + でした, en ese orden."
+   },
+   {
+    "wrong": "きのう映画を見ます。",
+    "right": "きのう映画を見ました。",
+    "why": "Con きのう (ayer) hay que usar el pasado ました."
+   },
+   {
+    "wrong": "行かないです (en un contexto formal, por defecto)",
+    "right": "行きません",
+    "why": "行かないです existe y es correcto, pero ません es la forma educada estándar que se espera en N5."
+   }
+  ],
+  "practice": {
+   "order": [
+    {
+     "zh": "きのう、すしを食べました。",
+     "py": "きのう、すし を たべました。",
+     "es": "Ayer comí sushi."
+    },
+    {
+     "zh": "わたしはテレビを見ません。",
+     "py": "わたし は テレビ を みません。",
+     "es": "No veo la tele."
+    }
+   ],
+   "fill": [
+    {
+     "zh": "きのう、学校へ行き＿。",
+     "answer": "ました",
+     "options": [
+      "ました",
+      "ます",
+      "ません",
+      "でした"
+     ],
+     "es": "Ayer fui a la escuela."
+    },
+    {
+     "zh": "けさ、コーヒーを飲み＿。",
+     "answer": "ませんでした",
+     "options": [
+      "ませんでした",
+      "ましたません",
+      "ないでした",
+      "ません"
+     ],
+     "es": "Esta mañana no tomé café."
+    }
+   ],
+   "translate": [
+    {
+     "zh": "先週、友だちに会いました。",
+     "py": "せんしゅう、ともだち に あいました。",
+     "es": "La semana pasada quedé con un amigo."
+    },
+    {
+     "zh": "あしたは来ません。",
+     "py": "あした は きません。",
+     "es": "Mañana no vengo."
+    }
+   ]
+  },
+  "related": [
+   "masu",
+   "ta-form",
+   "nai-form"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "dictionary-form",
+  "title": "La forma de diccionario",
+  "zh": "「辞書形」",
+  "pattern": "Verbo en -u (食べる, 飲む, 行く, する, 来る)",
+  "level": 1,
+  "summary": "Es la forma básica del verbo (la que aparece en el diccionario) y su presente informal. Sirve para saber a qué grupo pertenece.",
+  "explanation": "La forma de diccionario es como nuestro infinitivo a efectos de **buscar** palabras, pero en realidad es el **presente informal**: たべる = «como» (entre amigos). Todas acaban en sonido **-u**.\n\n**Cómo pasar de ます a diccionario**:\n\n| Grupo | ます | Diccionario |\n|---|---|---|\n| る-verbo | たべます | たべ**る** |\n| る-verbo | みます | み**る** |\n| う-verbo | のみます | の**む** |\n| う-verbo | かいます | か**う** |\n| う-verbo | かえります | かえ**る** |\n| irregular | します | する |\n| irregular | きます | くる |\n\n**¿る-verbo o う-verbo?**\n1. Si no acaba en る → seguro う-verbo (のむ, いく, はなす).\n2. Si acaba en **-aru, -uru, -oru** → う-verbo (ある, つくる, とる).\n3. Si acaba en **-iru / -eru** → casi siempre る-verbo (みる, たべる, おきる, ねる), **excepto** かえる, はいる, しる, はしる, きる (cortar), いる (necesitar).\n\nSe usa con estructuras como 〜まえに («antes de»), 〜ことが できます y en el habla informal.",
+  "examples": [
+   {
+    "zh": "ねる前に本を読みます。",
+    "py": "ねる まえ に ほん を よみます。",
+    "es": "Antes de dormir leo un libro."
+   },
+   {
+    "zh": "あした、何する？",
+    "py": "あした、なに する？",
+    "es": "¿Qué haces mañana? (informal)"
+   },
+   {
+    "zh": "毎日、日本語を勉強する。",
+    "py": "まいにち、にほんご を べんきょう する。",
+    "es": "Estudio japonés cada día. (informal)"
+   },
+   {
+    "zh": "わたしはピアノをひくことができます。",
+    "py": "わたし は ピアノ を ひく こと が できます。",
+    "es": "Sé tocar el piano."
+   },
+   {
+    "zh": "けんさんもパーティーに来る？",
+    "py": "けん さん も パーティー に くる？",
+    "es": "¿Ken también viene a la fiesta? (informal)"
+   },
+   {
+    "zh": "ごはんを食べる前に手をあらいます。",
+    "py": "ごはん を たべる まえ に て を あらいます。",
+    "es": "Me lavo las manos antes de comer."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "飲みますのまえに",
+    "right": "飲む前に",
+    "why": "Delante de まえに y otras estructuras se usa la forma de diccionario, no la de ます."
+   },
+   {
+    "wrong": "帰る → 帰ます (tratarlo como る-verbo)",
+    "right": "帰る → 帰ります",
+    "why": "帰る es una excepción: acaba en -eru pero es う-verbo."
+   },
+   {
+    "wrong": "します → しる",
+    "right": "します → する",
+    "why": "する y くる son irregulares: memorízalos."
+   }
+  ],
+  "practice": {
+   "order": [
+    {
+     "zh": "ねる前に歯をみがきます。",
+     "py": "ねる まえ に は を みがきます。",
+     "es": "Me lavo los dientes antes de dormir."
+    },
+    {
+     "zh": "あした、映画を見る？",
+     "py": "あした、えいが を みる？",
+     "es": "¿Vemos una peli mañana? (informal)"
+    }
+   ],
+   "fill": [
+    {
+     "zh": "「飲みます」の辞書形は＿です。",
+     "answer": "飲む",
+     "options": [
+      "飲む",
+      "飲みる",
+      "飲る",
+      "飲う"
+     ],
+     "es": "La forma de diccionario de 飲みます es 飲む."
+    },
+    {
+     "zh": "＿前に、シャワーをあびます。",
+     "answer": "ねる",
+     "options": [
+      "ねる",
+      "ねます",
+      "ねて",
+      "ねた"
+     ],
+     "es": "Antes de acostarme me ducho."
+    }
+   ],
+   "translate": [
+    {
+     "zh": "あした、学校に行く。",
+     "py": "あした、がっこう に いく。",
+     "es": "Mañana voy a clase. (informal)"
+    },
+    {
+     "zh": "日本語を話すことができます。",
+     "py": "にほんご を はなす こと が できます。",
+     "es": "Sé hablar japonés."
+    }
+   ]
+  },
+  "related": [
+   "masu",
+   "nai-form",
+   "mae-ni-ato-de"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "nai-form",
+  "title": "La forma ない (negativo informal)",
+  "zh": "「ない形」",
+  "pattern": "Verbo (forma ない): 食べない, 飲まない, しない, 来ない",
+  "level": 1,
+  "summary": "ない es el negativo informal del verbo («no como»). Se usa entre amigos y en estructuras como 〜ないでください.",
+  "explanation": "La forma ない es el negativo de la forma de diccionario: たべる «como» → たべない «no como».\n\n| Grupo | Regla | Ejemplos |\n|---|---|---|\n| る-verbo | quita る + ない | たべる → たべない, みる → みない |\n| う-verbo | -u → **-a** + ない | のむ → のまない, いく → いかない, はなす → はなさない, まつ → またない, かえる → かえらない |\n| う-verbo en **-う** | う → **わ** + ない | かう → かわない, あう → あわない |\n| Irregulares | | する → しない, くる → こない |\n| ある | ¡excepción! | ある → **ない** (no ~~あらない~~) |\n\n⚠️ Ojo con los verbos en -う: no es ~~かあない~~ sino **かわない**.\n\n**Pasado negativo informal**: ない → なかった (たべなかった = no comí).\n\nUsos N5:\n- Habla informal: きょう は いかない = «hoy no voy».\n- **〜ないでください** = «por favor, no…»: ここ で たばこ を すわないで ください.\n- Forma educada alternativa: たべない です = たべません.",
+  "examples": [
+   {
+    "zh": "きょうは学校へ行かない。",
+    "py": "きょう は がっこう へ いかない。",
+    "es": "Hoy no voy a clase. (informal)"
+   },
+   {
+    "zh": "わたしはお酒を飲まない。",
+    "py": "わたし は おさけ を のまない。",
+    "es": "No bebo alcohol. (informal)"
+   },
+   {
+    "zh": "ここで写真をとらないでください。",
+    "py": "ここ で しゃしん を とらないで ください。",
+    "es": "Por favor, no hagas fotos aquí."
+   },
+   {
+    "zh": "けんさんはまだ来ない。",
+    "py": "けん さん は まだ こない。",
+    "es": "Ken todavía no viene."
+   },
+   {
+    "zh": "あまりテレビを見ない。",
+    "py": "あまり テレビ を みない。",
+    "es": "No veo mucho la tele. (informal)"
+   },
+   {
+    "zh": "きのうは何も食べなかった。",
+    "py": "きのう は なに も たべなかった。",
+    "es": "Ayer no comí nada. (informal)"
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "買あない",
+    "right": "買わない",
+    "why": "Los verbos en -う cambian う por わ, no por あ."
+   },
+   {
+    "wrong": "あらない",
+    "right": "ない",
+    "why": "El negativo de ある es simplemente ない."
+   },
+   {
+    "wrong": "くない (de 来る)",
+    "right": "こない",
+    "why": "来る es irregular: su forma ない es こない."
+   },
+   {
+    "wrong": "帰ない",
+    "right": "帰らない",
+    "why": "帰る es う-verbo: る → ら + ない."
+   }
+  ],
+  "practice": {
+   "order": [
+    {
+     "zh": "わたしは肉を食べない。",
+     "py": "わたし は にく を たべない。",
+     "es": "No como carne. (informal)"
+    },
+    {
+     "zh": "ここで写真をとらないでください。",
+     "py": "ここ で しゃしん を とらないで ください。",
+     "es": "No haga fotos aquí, por favor."
+    }
+   ],
+   "fill": [
+    {
+     "zh": "きょうはどこへも行か＿。",
+     "answer": "ない",
+     "options": [
+      "ない",
+      "ます",
+      "なく",
+      "ません"
+     ],
+     "es": "Hoy no voy a ninguna parte."
+    },
+    {
+     "zh": "けんさんはパーティーに＿。",
+     "answer": "こない",
+     "options": [
+      "こない",
+      "きない",
+      "くない",
+      "くらない"
+     ],
+     "es": "Ken no viene a la fiesta."
+    }
+   ],
+   "translate": [
+    {
+     "zh": "コーヒーは飲まない。",
+     "py": "コーヒー は のまない。",
+     "es": "Café no bebo. (informal)"
+    },
+    {
+     "zh": "ここでたばこをすわないでください。",
+     "py": "ここ で たばこ を すわないで ください。",
+     "es": "Por favor, no fume aquí."
+    }
+   ]
+  },
+  "related": [
+   "dictionary-form",
+   "masu-negative-past",
+   "te-kudasai"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ta-form",
+  "title": "La forma た (pasado informal)",
+  "zh": "「た形」",
+  "pattern": "Forma て → cambia て/で por た/だ",
+  "level": 1,
+  "summary": "た es el pasado informal (食べた = comí). Se forma igual que la forma て, cambiando て→た y で→だ.",
+  "explanation": "Si ya sabes la forma て, la forma た es inmediata: **て → た, で → だ**.\n\n| Diccionario | て | た | Significado |\n|---|---|---|---|\n| 食べる | 食べて | 食べた | comí |\n| 見る | 見て | 見た | vi |\n| 会う | 会って | 会った | quedé con |\n| 待つ | 待って | 待った | esperé |\n| 帰る | 帰って | 帰った | volví |\n| 飲む | 飲んで | 飲んだ | bebí |\n| 遊ぶ | 遊んで | 遊んだ | jugué |\n| 書く | 書いて | 書いた | escribí |\n| 泳ぐ | 泳いで | 泳いだ | nadé |\n| 話す | 話して | 話した | hablé |\n| 行く | **行って** | **行った** | fui (excepción) |\n| する / 来る | して / 来て | した / 来た | hice / vine |\n\nUsos N5:\n- Pasado entre amigos: きのう なに した？ = «¿qué hiciste ayer?».\n- **〜たことがあります** = «haber hecho alguna vez»: すし を たべた こと が あります.\n- **〜たあとで** = «después de…» (ver «まえに / あとで»).",
+  "examples": [
+   {
+    "zh": "きのう、映画を見た。",
+    "py": "きのう、えいが を みた。",
+    "es": "Ayer vi una peli. (informal)"
+   },
+   {
+    "zh": "週末、何をした？",
+    "py": "しゅうまつ、なに を した？",
+    "es": "¿Qué hiciste el fin de semana? (informal)"
+   },
+   {
+    "zh": "京都へ行った。",
+    "py": "きょうと へ いった。",
+    "es": "Fui a Kioto. (informal)"
+   },
+   {
+    "zh": "すしを食べたことがあります。",
+    "py": "すし を たべた こと が あります。",
+    "es": "He comido sushi alguna vez."
+   },
+   {
+    "zh": "友だちと日本語で話した。",
+    "py": "ともだち と にほんご で はなした。",
+    "es": "Hablé en japonés con un amigo. (informal)"
+   },
+   {
+    "zh": "けさ、コーヒーを飲んだ。",
+    "py": "けさ、コーヒー を のんだ。",
+    "es": "Esta mañana tomé café. (informal)"
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "行いた",
+    "right": "行った",
+    "why": "行く es la gran excepción: 行って / 行った."
+   },
+   {
+    "wrong": "飲みた",
+    "right": "飲んだ",
+    "why": "Los verbos en む, ぶ, ぬ hacen んだ."
+   },
+   {
+    "wrong": "帰た",
+    "right": "帰った",
+    "why": "帰る es う-verbo: る → った."
+   }
+  ],
+  "practice": {
+   "order": [
+    {
+     "zh": "きのう、本を読んだ。",
+     "py": "きのう、ほん を よんだ。",
+     "es": "Ayer leí un libro. (informal)"
+    },
+    {
+     "zh": "日本へ行ったことがあります。",
+     "py": "にほん へ いった こと が あります。",
+     "es": "He estado en Japón."
+    }
+   ],
+   "fill": [
+    {
+     "zh": "きのう、友だちに＿。",
+     "answer": "会った",
+     "options": [
+      "会った",
+      "会いた",
+      "会んだ",
+      "会た"
+     ],
+     "es": "Ayer quedé con un amigo."
+    },
+    {
+     "zh": "先週、東京へ＿。",
+     "answer": "行った",
+     "options": [
+      "行った",
+      "行いた",
+      "行きた",
+      "行んだ"
+     ],
+     "es": "La semana pasada fui a Tokio."
+    }
+   ],
+   "translate": [
+    {
+     "zh": "けさ、パンを食べた。",
+     "py": "けさ、パン を たべた。",
+     "es": "Esta mañana comí pan. (informal)"
+    },
+    {
+     "zh": "ひらがなを書いた。",
+     "py": "ひらがな を かいた。",
+     "es": "Escribí hiragana. (informal)"
+    }
+   ]
+  },
+  "related": [
+   "te-form",
+   "masu-negative-past",
+   "mae-ni-ato-de"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "te-form",
+  "title": "La forma て",
+  "zh": "「て形」",
+  "pattern": "Verbo (forma て): 食べて, 飲んで, 行って, して, 来て",
+  "level": 1,
+  "summary": "La forma て une acciones («y», «y luego») y es la base de 〜てください, 〜ています, 〜てもいい…",
+  "explanation": "La forma て es la más importante de N5: sin ella no hay peticiones, gerundio ni permisos. Se forma así:\n\n| Grupo / terminación | Regla | Ejemplo |\n|---|---|---|\n| る-verbo | る → て | 食べる → 食べて, 見る → 見て |\n| -う, -つ, -る (う-verbo) | → って | 会う → 会って, 待つ → 待って, 帰る → 帰って |\n| -む, -ぶ, -ぬ | → んで | 飲む → 飲んで, 遊ぶ → 遊んで, 死ぬ → 死んで |\n| -く | → いて | 書く → 書いて, 聞く → 聞いて |\n| -ぐ | → いで | 泳ぐ → 泳いで |\n| -す | → して | 話す → 話して |\n| **行く** | ¡excepción! | 行く → **行って** |\n| する / 来る | irregulares | して / 来て |\n\nTruco: muchos estudiantes la memorizan con una canción al ritmo de «Clementine» (う つ る → って, む ぶ ぬ → んで, く → いて, ぐ → いで, す → して).\n\n**Uso básico: encadenar acciones** en orden («y», «y luego»). El tiempo lo marca **solo el último verbo**:\n\nあさ おきて、シャワー を あびて、がっこう へ いきます = «Me levanto, me ducho y voy a clase».\n\nCon adjetivos también hay forma て: おおきい → おおきくて, きれい → きれいで (ver adjetivos).",
+  "examples": [
+   {
+    "zh": "朝起きて、シャワーをあびます。",
+    "py": "あさ おきて、シャワー を あびます。",
+    "es": "Por la mañana me levanto y me ducho."
+   },
+   {
+    "zh": "うちへ帰って、晩ごはんを食べました。",
+    "py": "うち へ かえって、ばんごはん を たべました。",
+    "es": "Volví a casa y cené."
+   },
+   {
+    "zh": "京都へ行って、お寺を見ました。",
+    "py": "きょうと へ いって、おてら を みました。",
+    "es": "Fui a Kioto y vi templos."
+   },
+   {
+    "zh": "コーヒーを飲んで、新聞を読みます。",
+    "py": "コーヒー を のんで、しんぶん を よみます。",
+    "es": "Me tomo un café y leo el periódico."
+   },
+   {
+    "zh": "友だちに会って、話しました。",
+    "py": "ともだち に あって、はなしました。",
+    "es": "Quedé con un amigo y hablamos."
+   },
+   {
+    "zh": "手紙を書いて、出しました。",
+    "py": "てがみ を かいて、だしました。",
+    "es": "Escribí una carta y la envié."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "行いて",
+    "right": "行って",
+    "why": "行く es la única excepción de los verbos en -く: hace 行って."
+   },
+   {
+    "wrong": "帰て",
+    "right": "帰って",
+    "why": "帰る es う-verbo (-る → って), aunque parezca る-verbo."
+   },
+   {
+    "wrong": "飲みて / 飲って",
+    "right": "飲んで",
+    "why": "Los verbos en -む hacen -んで."
+   },
+   {
+    "wrong": "起きました、朝ごはんを食べました。",
+    "right": "起きて、朝ごはんを食べました。",
+    "why": "Para unir acciones se usa la forma て; el pasado solo va en el último verbo."
+   }
+  ],
+  "practice": {
+   "order": [
+    {
+     "zh": "朝ごはんを食べて、学校へ行きます。",
+     "py": "あさごはん を たべて、がっこう へ いきます。",
+     "es": "Desayuno y voy a clase."
+    },
+    {
+     "zh": "うちへ帰って、ねました。",
+     "py": "うち へ かえって、ねました。",
+     "es": "Volví a casa y me acosté."
+    }
+   ],
+   "fill": [
+    {
+     "zh": "駅へ＿、電車に乗ります。",
+     "answer": "行って",
+     "options": [
+      "行って",
+      "行いて",
+      "行きて",
+      "行んで"
+     ],
+     "es": "Voy a la estación y cojo el tren."
+    },
+    {
+     "zh": "コーヒーを＿、勉強します。",
+     "answer": "飲んで",
+     "options": [
+      "飲んで",
+      "飲みて",
+      "飲って",
+      "飲いで"
+     ],
+     "es": "Me tomo un café y estudio."
+    }
+   ],
+   "translate": [
+    {
+     "zh": "本を読んで、ねます。",
+     "py": "ほん を よんで、ねます。",
+     "es": "Leo un libro y me duermo."
+    },
+    {
+     "zh": "友だちと話して、帰りました。",
+     "py": "ともだち と はなして、かえりました。",
+     "es": "Hablé con mis amigos y volví a casa."
+    }
+   ]
+  },
+  "related": [
+   "te-kudasai",
+   "te-iru",
+   "ta-form",
+   "te-mo-ii"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "te-kudasai",
+  "title": "Pedir algo con 〜てください",
+  "zh": "「〜てください」",
+  "pattern": "Verbo (forma て) + ください",
+  "level": 1,
+  "summary": "Forma て + ください = «por favor, haz…». Es la petición educada básica.",
+  "explanation": "**〜てください** equivale a «(por favor) + imperativo» en español: まって ください = «espere, por favor».\n\n| Verbo | Forma て | Petición |\n|---|---|---|\n| 待つ | 待って | 待ってください (espere) |\n| 見る | 見て | 見てください (mire) |\n| 書く | 書いて | 書いてください (escriba) |\n| 言う | 言って | もう一度言ってください (repita) |\n| 来る | 来て | 来てください (venga) |\n\nPara pedir que **no** se haga algo: **ない形 + でください**: ここ で たばこ を すわないで ください = «no fume aquí, por favor».\n\nPara pedir **cosas** (no acciones) se usa **Nombre を ください**: みず を ください = «agua, por favor».\n\n⚠️ Aunque es educada, 〜てください sigue siendo una instrucción (la usa el profesor, el médico, los carteles). Para pedir un favor a un superior se suaviza con 〜て くださいませんか (más adelante).\n\nFrases que oirás en clase: ゆっくり はなして ください (hable despacio), もう いちど いって ください (repita), ほん を みて ください (miren el libro).",
+  "examples": [
+   {
+    "zh": "ちょっと待ってください。",
+    "py": "ちょっと まって ください。",
+    "es": "Espere un momento, por favor."
+   },
+   {
+    "zh": "ゆっくり話してください。",
+    "py": "ゆっくり はなして ください。",
+    "es": "Hable despacio, por favor."
+   },
+   {
+    "zh": "もう一度言ってください。",
+    "py": "もう いちど いって ください。",
+    "es": "Repítalo, por favor."
+   },
+   {
+    "zh": "ここに名前を書いてください。",
+    "py": "ここ に なまえ を かいて ください。",
+    "es": "Escriba aquí su nombre, por favor."
+   },
+   {
+    "zh": "あした、9時に来てください。",
+    "py": "あした、くじ に きて ください。",
+    "es": "Venga mañana a las nueve, por favor."
+   },
+   {
+    "zh": "ここで写真をとらないでください。",
+    "py": "ここ で しゃしん を とらないで ください。",
+    "es": "No haga fotos aquí, por favor."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "待ちますください",
+    "right": "待ってください",
+    "why": "ください va detrás de la forma て, no de la forma ます."
+   },
+   {
+    "wrong": "水をのんでください (para pedir agua en un bar)",
+    "right": "水をください",
+    "why": "Para pedir un objeto basta con Nombre を ください; のんでください significa «bébase el agua»."
+   },
+   {
+    "wrong": "写真をとってないでください",
+    "right": "写真をとらないでください",
+    "why": "La petición negativa se forma con la forma ない + でください."
+   }
+  ],
+  "practice": {
+   "order": [
+    {
+     "zh": "ここで待ってください。",
+     "py": "ここ で まって ください。",
+     "es": "Espere aquí, por favor."
+    },
+    {
+     "zh": "日本語で話してください。",
+     "py": "にほんご で はなして ください。",
+     "es": "Hable en japonés, por favor."
+    }
+   ],
+   "fill": [
+    {
+     "zh": "ちょっと＿ください。",
+     "answer": "待って",
+     "options": [
+      "待って",
+      "待ち",
+      "待つ",
+      "待た"
+     ],
+     "es": "Espere un momento, por favor."
+    },
+    {
+     "zh": "ここでたばこをすわ＿ください。",
+     "answer": "ないで",
+     "options": [
+      "ないで",
+      "なくて",
+      "て",
+      "ません"
+     ],
+     "es": "No fume aquí, por favor."
+    }
+   ],
+   "translate": [
+    {
+     "zh": "この本を読んでください。",
+     "py": "この ほん を よんで ください。",
+     "es": "Lea este libro, por favor."
+    },
+    {
+     "zh": "コーヒーをください。",
+     "py": "コーヒー を ください。",
+     "es": "Un café, por favor."
+    }
+   ]
+  },
+  "related": [
+   "te-form",
+   "nai-form",
+   "te-wa-ikenai"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "te-iru",
+  "title": "Acción en curso y estado: 〜ています",
+  "zh": "「〜ています」",
+  "pattern": "Verbo (forma て) + います",
+  "level": 1,
+  "summary": "〜ています expresa una acción en curso («estoy comiendo»), un hábito o un estado resultante («estoy casado», «vivo en…»).",
+  "explanation": "**Forma て + います** tiene tres usos principales:\n\n**1. Acción en progreso** (= «estar + gerundio»): いま ごはん を たべて います = «ahora estoy comiendo».\n\n**2. Hábito o actividad continuada**: まいにち にほんご を べんきょう して います = «estudio japonés (estos días, cada día)»; だいがく で はたらいて います = «trabajo en la universidad».\n\n**3. Estado resultante** de un cambio (no de una acción en curso). Aquí el español usa otros tiempos:\n\n| Japonés | Literal | Español natural |\n|---|---|---|\n| けっこん しています | estar habiéndose casado | estoy casado |\n| しっています | estar habiendo conocido | lo sé / lo conozco |\n| すんでいます | estar residiendo | vivo (en) |\n| もっています | estar habiendo cogido | tengo (llevo) |\n| ふとっています | estar engordado | estoy gordo |\n\n⚠️ «No lo sé» es **しりません**, no ~~しっていません~~.\n\nConjugación: igual que cualquier verbo ます: たべて います / たべて いません / たべて いました / たべて いませんでした. En la conversación, la い desaparece a menudo: たべてます.",
+  "examples": [
+   {
+    "zh": "いま、テレビを見ています。",
+    "py": "いま、テレビ を みて います。",
+    "es": "Ahora estoy viendo la tele."
+   },
+   {
+    "zh": "ウーゴさんはスペインに住んでいます。",
+    "py": "ウーゴ さん は スペイン に すんで います。",
+    "es": "Hugo vive en España."
+   },
+   {
+    "zh": "さくらさんは図書館で勉強しています。",
+    "py": "さくら さん は としょかん で べんきょう して います。",
+    "es": "Sakura está estudiando en la biblioteca."
+   },
+   {
+    "zh": "田中先生を知っていますか。",
+    "py": "たなか せんせい を しって います か。",
+    "es": "¿Conoces a la profesora Tanaka?"
+   },
+   {
+    "zh": "外は雨がふっています。",
+    "py": "そと は あめ が ふって います。",
+    "es": "Fuera está lloviendo."
+   },
+   {
+    "zh": "兄は銀行ではたらいています。",
+    "py": "あに は ぎんこう で はたらいて います。",
+    "es": "Mi hermano mayor trabaja en un banco."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "知っていません。",
+    "right": "知りません。",
+    "why": "La negación de 知っています es la forma simple 知りません."
+   },
+   {
+    "wrong": "スペインに住みます。(«vivo en España»)",
+    "right": "スペインに住んでいます。",
+    "why": "Para el lugar donde vives se usa el estado 〜ています."
+   },
+   {
+    "wrong": "いま食べます。(«estoy comiendo»)",
+    "right": "いま食べています。",
+    "why": "食べます es presente/futuro general; la acción en curso necesita 〜ています."
+   }
+  ],
+  "practice": {
+   "order": [
+    {
+     "zh": "けんさんは音楽を聞いています。",
+     "py": "けん さん は おんがく を きいて います。",
+     "es": "Ken está escuchando música."
+    },
+    {
+     "zh": "わたしは東京に住んでいます。",
+     "py": "わたし は とうきょう に すんで います。",
+     "es": "Vivo en Tokio."
+    }
+   ],
+   "fill": [
+    {
+     "zh": "いま、雨がふって＿。",
+     "answer": "います",
+     "options": [
+      "います",
+      "あります",
+      "です",
+      "ます"
+     ],
+     "es": "Ahora está lloviendo."
+    },
+    {
+     "zh": "田中先生の電話番号を知って＿か。",
+     "answer": "います",
+     "options": [
+      "います",
+      "あります",
+      "ります",
+      "でした"
+     ],
+     "es": "¿Sabes el número de teléfono de la profesora Tanaka?"
+    }
+   ],
+   "translate": [
+    {
+     "zh": "さくらさんはいま、本を読んでいます。",
+     "py": "さくら さん は いま、ほん を よんで います。",
+     "es": "Sakura está leyendo un libro ahora."
+    },
+    {
+     "zh": "姉はけっこんしています。",
+     "py": "あね は けっこん して います。",
+     "es": "Mi hermana mayor está casada."
+    }
+   ]
+  },
+  "related": [
+   "te-form",
+   "aru-iru",
+   "masu"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "te-mo-ii",
+  "title": "Pedir y dar permiso: 〜てもいいです",
+  "zh": "「〜てもいいです」",
+  "pattern": "Verbo (forma て) + も いいです（か）",
+  "level": 1,
+  "summary": "〜てもいいですか = «¿puedo…?» (pedir permiso). 〜てもいいです = «puedes…» (dar permiso).",
+  "explanation": "Literalmente: «aunque hagas X, está bien». Es la manera estándar de pedir permiso:\n\n- まど を あけて も いい です か = «¿Puedo abrir la ventana?»\n- はい、あけて も いい です = «Sí, puedes abrirla».\n\n**Respuestas típicas**:\n\n| Respuesta | Matiz |\n|---|---|\n| はい、どうぞ。 | Sí, adelante (la más natural) |\n| はい、いいですよ。 | Sí, claro |\n| すみません、ちょっと…。 | Lo siento, es que… (negativa suave) |\n| いいえ、〜てはいけません。 | No, no se puede (prohibición tajante) |\n\nLos japoneses evitan el «no» directo: lo habitual es すみません、ちょっと… y dejar la frase en el aire.\n\nPara «**no hace falta** hacer» se usa 〜なくても いい です (ない形 sin い + くても): あした こなくても いい です = «mañana no hace falta que vengas».\n\nEn español, «¿puedo…?» sirve tanto para permiso como para capacidad («¿puedo nadar 1 km?»). En japonés 〜てもいい es **solo permiso**.",
+  "examples": [
+   {
+    "zh": "写真をとってもいいですか。",
+    "py": "しゃしん を とって も いい です か。",
+    "es": "¿Puedo hacer una foto?"
+   },
+   {
+    "zh": "はい、どうぞ。",
+    "py": "はい、どうぞ。",
+    "es": "Sí, adelante."
+   },
+   {
+    "zh": "まどをあけてもいいですか。",
+    "py": "まど を あけて も いい です か。",
+    "es": "¿Puedo abrir la ventana?"
+   },
+   {
+    "zh": "このペンを使ってもいいですよ。",
+    "py": "この ペン を つかって も いい です よ。",
+    "es": "Puedes usar este bolígrafo."
+   },
+   {
+    "zh": "トイレに行ってもいいですか。",
+    "py": "トイレ に いって も いい です か。",
+    "es": "¿Puedo ir al baño?"
+   },
+   {
+    "zh": "あしたは来なくてもいいです。",
+    "py": "あした は こなくて も いい です。",
+    "es": "Mañana no hace falta que vengas."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "写真をとりますもいいですか。",
+    "right": "写真をとってもいいですか。",
+    "why": "も いい se une a la forma て, no a la forma ます."
+   },
+   {
+    "wrong": "泳いでもいいですか。(«¿sé nadar?»)",
+    "right": "泳ぐことができますか。",
+    "why": "〜てもいい es solo permiso; la capacidad se expresa con ことが できます."
+   },
+   {
+    "wrong": "いいえ、だめです。(respuesta normal a un compañero)",
+    "right": "すみません、ちょっと…。",
+    "why": "Negar de forma tan directa suena brusco; lo natural es una negativa suave."
+   }
+  ],
+  "practice": {
+   "order": [
+    {
+     "zh": "ここにすわってもいいですか。",
+     "py": "ここ に すわって も いい です か。",
+     "es": "¿Puedo sentarme aquí?"
+    },
+    {
+     "zh": "この本を読んでもいいです。",
+     "py": "この ほん を よんで も いい です。",
+     "es": "Puedes leer este libro."
+    }
+   ],
+   "fill": [
+    {
+     "zh": "テレビを見て＿いいですか。",
+     "answer": "も",
+     "options": [
+      "も",
+      "は",
+      "が",
+      "を"
+     ],
+     "es": "¿Puedo ver la tele?"
+    },
+    {
+     "zh": "ここで写真を＿もいいですか。",
+     "answer": "とって",
+     "options": [
+      "とって",
+      "とり",
+      "とる",
+      "とった"
+     ],
+     "es": "¿Puedo hacer fotos aquí?"
+    }
+   ],
+   "translate": [
+    {
+     "zh": "水を飲んでもいいですか。",
+     "py": "みず を のんで も いい です か。",
+     "es": "¿Puedo beber agua?"
+    },
+    {
+     "zh": "はい、いいですよ。",
+     "py": "はい、いい です よ。",
+     "es": "Sí, claro."
+    }
+   ]
+  },
+  "related": [
+   "te-wa-ikenai",
+   "te-form",
+   "te-kudasai"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "te-wa-ikenai",
+  "title": "Prohibición: 〜てはいけません",
+  "zh": "「〜てはいけません」",
+  "pattern": "Verbo (forma て) + は いけません",
+  "level": 1,
+  "summary": "〜てはいけません = «no se puede / está prohibido…». Es el contrario de 〜てもいいです.",
+  "explanation": "Literalmente: «si haces X, no va». Expresa una **prohibición** clara, normalmente por reglas o normas:\n\n- ここ で たばこ を すって は いけません = «aquí no se puede fumar».\n\nLa は de esta estructura se pronuncia **«wa»** (es la partícula).\n\n| Permiso | Prohibición |\n|---|---|\n| 入ってもいいです (puedes entrar) | 入ってはいけません (no se puede entrar) |\n| 写真をとってもいいです | 写真をとってはいけません |\n| 食べてもいいです | 食べてはいけません |\n\n**Matiz**: es bastante fuerte; suena a cartel, a profesor o a padre. Entre iguales se suaviza con 〜ないで ください («por favor, no…»). En la conversación oirás la forma contraída **〜ちゃ だめ** (たべちゃ だめ = ¡no comas!).\n\nComo respuesta negativa a 〜てもいいですか: いいえ、〜ては いけません (tajante, típico de normas: museos, exámenes, templos).",
+  "examples": [
+   {
+    "zh": "ここでたばこをすってはいけません。",
+    "py": "ここ で たばこ を すって は いけません。",
+    "es": "Aquí no se puede fumar."
+   },
+   {
+    "zh": "美術館で写真をとってはいけません。",
+    "py": "びじゅつかん で しゃしん を とって は いけません。",
+    "es": "En el museo no se pueden hacer fotos."
+   },
+   {
+    "zh": "テストのとき、辞書を見てはいけません。",
+    "py": "テスト の とき、じしょ を みて は いけません。",
+    "es": "Durante el examen no se puede mirar el diccionario."
+   },
+   {
+    "zh": "電車の中で電話をしてはいけません。",
+    "py": "でんしゃ の なか で でんわ を して は いけません。",
+    "es": "En el tren no se debe hablar por teléfono."
+   },
+   {
+    "zh": "この部屋に入ってはいけません。",
+    "py": "この へや に はいって は いけません。",
+    "es": "No se puede entrar en esta habitación."
+   },
+   {
+    "zh": "お酒を飲んで、車を運転してはいけません。",
+    "py": "おさけ を のんで、くるま を うんてん して は いけません。",
+    "es": "No se puede conducir después de beber."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "すってがいけません",
+    "right": "すってはいけません",
+    "why": "La estructura fija es て + は + いけません."
+   },
+   {
+    "wrong": "すいますはいけません",
+    "right": "すってはいけません",
+    "why": "Se usa la forma て, no la forma ます."
+   },
+   {
+    "wrong": "Decir 〜てはいけません a un amigo para pedirle un favor.",
+    "right": "〜ないでください。",
+    "why": "てはいけません suena a norma o reprimenda; para pedir algo se usa ないでください."
+   }
+  ],
+  "practice": {
+   "order": [
+    {
+     "zh": "ここで泳いではいけません。",
+     "py": "ここ で およいで は いけません。",
+     "es": "Aquí no se puede nadar."
+    },
+    {
+     "zh": "図書館で話してはいけません。",
+     "py": "としょかん で はなして は いけません。",
+     "es": "En la biblioteca no se puede hablar."
+    }
+   ],
+   "fill": [
+    {
+     "zh": "ここに車をとめて＿いけません。",
+     "answer": "は",
+     "options": [
+      "は",
+      "も",
+      "が",
+      "を"
+     ],
+     "es": "Aquí no se puede aparcar."
+    },
+    {
+     "zh": "テストのとき、話しては＿。",
+     "answer": "いけません",
+     "options": [
+      "いけません",
+      "いいです",
+      "いきません",
+      "ありません"
+     ],
+     "es": "Durante el examen no se puede hablar."
+    }
+   ],
+   "translate": [
+    {
+     "zh": "ここで写真をとってはいけません。",
+     "py": "ここ で しゃしん を とって は いけません。",
+     "es": "Aquí no se pueden hacer fotos."
+    },
+    {
+     "zh": "この水を飲んではいけません。",
+     "py": "この みず を のんで は いけません。",
+     "es": "No se puede beber esta agua."
+    }
+   ]
+  },
+  "related": [
+   "te-mo-ii",
+   "te-kudasai",
+   "nai-form"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "i-adjectives",
+  "title": "Adjetivos い",
+  "zh": "「い形容詞」",
+  "pattern": "Adjetivo い + です / Adjetivo い + Nombre",
+  "level": 1,
+  "summary": "Los adjetivos い acaban en い y se conjugan como verbos: たかい → たかくない → たかかった.",
+  "explanation": "Los adjetivos い (たかい caro/alto, やすい barato, おおきい grande, ちいさい pequeño, おいしい rico, あつい calor…) acaban en **-い** y, a diferencia del español, **se conjugan** (tienen negativo y pasado).\n\n**Delante de un nombre**: directamente, sin nada: たかい かばん = «un bolso caro». Ojo: el adjetivo va **delante** del nombre, al revés que en español.\n\n**Al final de la frase**: + です: この かばん は たかい です.\n\n| | Afirmativo | Negativo |\n|---|---|---|\n| Presente | たかいです | たか**くない**です / たかくありません |\n| Pasado | たか**かった**です | たか**くなかった**です |\n\n**Forma て** (para unir adjetivos, «y»): い → くて: やすくて おいしい = «barato y rico».\n\n⚠️ **いい** (bueno) es irregular: se conjuga a partir de よい: よくない (no es bueno), よかった (estuvo bien). Nunca ~~いくない~~.\n\n⚠️ きれい y きらい acaban en い pero son **adjetivos な** (ver siguiente punto).",
+  "examples": [
+   {
+    "zh": "このラーメンはおいしいです。",
+    "py": "この ラーメン は おいしい です。",
+    "es": "Este ramen está rico."
+   },
+   {
+    "zh": "東京は大きい町です。",
+    "py": "とうきょう は おおきい まち です。",
+    "es": "Tokio es una ciudad grande."
+   },
+   {
+    "zh": "きょうはあまり寒くないです。",
+    "py": "きょう は あまり さむくない です。",
+    "es": "Hoy no hace mucho frío."
+   },
+   {
+    "zh": "日本語はむずかしいですが、おもしろいです。",
+    "py": "にほんご は むずかしい です が、おもしろい です。",
+    "es": "El japonés es difícil, pero interesante."
+   },
+   {
+    "zh": "このへやは広くて、明るいです。",
+    "py": "この へや は ひろくて、あかるい です。",
+    "es": "Esta habitación es amplia y luminosa."
+   },
+   {
+    "zh": "その映画はよくないです。",
+    "py": "その えいが は よくない です。",
+    "es": "Esa película no es buena."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "高いじゃありません",
+    "right": "高くないです",
+    "why": "Los adjetivos い se niegan cambiando い por くない; じゃありません es para nombres y adjetivos な."
+   },
+   {
+    "wrong": "いくないです",
+    "right": "よくないです",
+    "why": "いい se conjuga desde よい: よくない, よかった."
+   },
+   {
+    "wrong": "かばん高い",
+    "right": "高いかばん",
+    "why": "El adjetivo va delante del nombre, al revés que en español."
+   },
+   {
+    "wrong": "大きいのいえ",
+    "right": "大きいいえ",
+    "why": "El adjetivo い se une directamente al nombre, sin の ni な."
+   }
+  ],
+  "practice": {
+   "order": [
+    {
+     "zh": "このケーキはおいしいです。",
+     "py": "この ケーキ は おいしい です。",
+     "es": "Este pastel está rico."
+    },
+    {
+     "zh": "あれは高い車です。",
+     "py": "あれ は たかい くるま です。",
+     "es": "Aquello es un coche caro."
+    }
+   ],
+   "fill": [
+    {
+     "zh": "このかばんは高＿ないです。",
+     "answer": "く",
+     "options": [
+      "く",
+      "い",
+      "じゃ",
+      "な"
+     ],
+     "es": "Este bolso no es caro."
+    },
+    {
+     "zh": "このレストランは＿くて、おいしいです。",
+     "answer": "安",
+     "options": [
+      "安",
+      "安い",
+      "安な",
+      "安く"
+     ],
+     "es": "Este restaurante es barato y bueno."
+    }
+   ],
+   "translate": [
+    {
+     "zh": "きょうは暑いです。",
+     "py": "きょう は あつい です。",
+     "es": "Hoy hace calor."
+    },
+    {
+     "zh": "日本語はむずかしくないです。",
+     "py": "にほんご は むずかしくない です。",
+     "es": "El japonés no es difícil."
+    }
+   ]
+  },
+  "related": [
+   "na-adjectives",
+   "adjective-past-negative",
+   "yori-comparison"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "na-adjectives",
+  "title": "Adjetivos な",
+  "zh": "「な形容詞」",
+  "pattern": "Adjetivo な + です / Adjetivo + な + Nombre",
+  "level": 1,
+  "summary": "Los adjetivos な (しずか, きれい, げんき…) funcionan como nombres: llevan な delante de un nombre y se niegan con じゃありません.",
+  "explanation": "Los adjetivos な (しずか tranquilo, きれい bonito/limpio, げんき con energía, ゆうめい famoso, しんせつ amable, べんり práctico, すき, きらい, じょうず, へた, ひま…) se comportan **como nombres**:\n\n**Delante de un nombre**: + **な**: しずか**な** まち = «una ciudad tranquila».\n\n**Al final de la frase**: + です (sin な): この まち は しずか です.\n\n| | Adjetivo な | Adjetivo い (comparar) |\n|---|---|---|\n| + nombre | きれい**な**へや | ひろい へや |\n| presente | きれいです | ひろいです |\n| negativo | きれい**じゃありません** | ひろ**くない**です |\n| pasado | きれい**でした** | ひろ**かった**です |\n| pasado neg. | きれいじゃありませんでした | ひろくなかったです |\n| forma て | きれい**で** | ひろ**くて** |\n\n⚠️ **Trampas**: きれい, きらい, ゆうめい, とくい acaban en «い» pero son adjetivos **な**: ~~きれくない~~ → きれいじゃ ありません.\n\nすき (gustar) y きらい son adjetivos な que marcan el objeto con が: さかな が きらい です.",
+  "examples": [
+   {
+    "zh": "京都はきれいな町です。",
+    "py": "きょうと は きれい な まち です。",
+    "es": "Kioto es una ciudad bonita."
+   },
+   {
+    "zh": "このへやはしずかです。",
+    "py": "この へや は しずか です。",
+    "es": "Esta habitación es tranquila."
+   },
+   {
+    "zh": "田中先生はとてもしんせつです。",
+    "py": "たなか せんせい は とても しんせつ です。",
+    "es": "La profesora Tanaka es muy amable."
+   },
+   {
+    "zh": "あの公園はきれいじゃありません。",
+    "py": "あの こうえん は きれい じゃ ありません。",
+    "es": "Aquel parque no está limpio."
+   },
+   {
+    "zh": "わたしは魚が好きじゃありません。",
+    "py": "わたし は さかな が すき じゃ ありません。",
+    "es": "No me gusta el pescado."
+   },
+   {
+    "zh": "コンビニはべんりで、安いです。",
+    "py": "コンビニ は べんり で、やすい です。",
+    "es": "Los konbini son prácticos y baratos."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "きれくないです",
+    "right": "きれいじゃありません",
+    "why": "きれい es adjetivo な aunque acabe en い: se niega con じゃありません."
+   },
+   {
+    "wrong": "しずか町",
+    "right": "しずかな町",
+    "why": "Delante de un nombre, el adjetivo な necesita な."
+   },
+   {
+    "wrong": "この町はしずかなです。",
+    "right": "この町はしずかです。",
+    "why": "Al final de la frase no se usa な: solo です."
+   }
+  ],
+  "practice": {
+   "order": [
+    {
+     "zh": "さくらさんはげんきな人です。",
+     "py": "さくら さん は げんき な ひと です。",
+     "es": "Sakura es una persona llena de energía."
+    },
+    {
+     "zh": "この町はしずかじゃありません。",
+     "py": "この まち は しずか じゃ ありません。",
+     "es": "Esta ciudad no es tranquila."
+    }
+   ],
+   "fill": [
+    {
+     "zh": "東京はにぎやか＿町です。",
+     "answer": "な",
+     "options": [
+      "な",
+      "の",
+      "い",
+      "で"
+     ],
+     "es": "Tokio es una ciudad animada."
+    },
+    {
+     "zh": "このへやはきれい＿。",
+     "answer": "じゃありません",
+     "options": [
+      "じゃありません",
+      "くないです",
+      "なです",
+      "くありません"
+     ],
+     "es": "Esta habitación no está limpia."
+    }
+   ],
+   "translate": [
+    {
+     "zh": "けんさんはしんせつな人です。",
+     "py": "けん さん は しんせつ な ひと です。",
+     "es": "Ken es una persona amable."
+    },
+    {
+     "zh": "わたしは日本語が好きです。",
+     "py": "わたし は にほんご が すき です。",
+     "es": "Me gusta el japonés."
+    }
+   ]
+  },
+  "related": [
+   "i-adjectives",
+   "adjective-past-negative",
+   "wa-ga"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "adjective-past-negative",
+  "title": "Adjetivos en pasado y negativo",
+  "zh": "「形容詞の過去・否定」",
+  "pattern": "い: 〜くない／〜かった／〜くなかった · な: 〜じゃありません／〜でした／〜じゃありませんでした",
+  "level": 1,
+  "summary": "Los adjetivos い se conjugan cambiando la い final; los adjetivos な se conjugan como です.",
+  "explanation": "En español el tiempo lo lleva el verbo «ser/estar» (*era caro*). En japonés, con los adjetivos い, el tiempo **lo lleva el propio adjetivo** y です queda igual.\n\n**Adjetivos い** (たかい):\n\n| | Afirmativo | Negativo |\n|---|---|---|\n| Presente | たかいです | たかくないです |\n| Pasado | たか**かった**です | たかく**なかった**です |\n\n**Adjetivos な** (しずか) — igual que un nombre + です:\n\n| | Afirmativo | Negativo |\n|---|---|---|\n| Presente | しずかです | しずかじゃありません |\n| Pasado | しずか**でした** | しずかじゃありませんでした |\n\n**Irregular いい**: よかったです (estuvo bien), よくなかったです.\n\n⚠️ El error más común: ~~たかいでした~~. Con adjetivos い **nunca** se usa でした; el pasado se marca en el adjetivo: たかかったです.\n\nPregunta típica tras un viaje: りょこう は どう でした か — たのしかった です！ = «¿Qué tal el viaje? —¡Fue divertido!».",
+  "examples": [
+   {
+    "zh": "旅行はたのしかったです。",
+    "py": "りょこう は たのしかった です。",
+    "es": "El viaje fue divertido."
+   },
+   {
+    "zh": "きのうはとても寒かったです。",
+    "py": "きのう は とても さむかった です。",
+    "es": "Ayer hizo mucho frío."
+   },
+   {
+    "zh": "テストはむずかしくなかったです。",
+    "py": "テスト は むずかしくなかった です。",
+    "es": "El examen no fue difícil."
+   },
+   {
+    "zh": "その店はしずかでした。",
+    "py": "その みせ は しずか でした。",
+    "es": "Esa tienda era tranquila."
+   },
+   {
+    "zh": "ホテルはきれいじゃありませんでした。",
+    "py": "ホテル は きれい じゃ ありません でした。",
+    "es": "El hotel no estaba limpio."
+   },
+   {
+    "zh": "天気がよかったです。",
+    "py": "てんき が よかった です。",
+    "es": "Hizo buen tiempo."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "高いでした",
+    "right": "高かったです",
+    "why": "Con adjetivos い el pasado va en el adjetivo (かった); でした es para nombres y adjetivos な."
+   },
+   {
+    "wrong": "いかったです",
+    "right": "よかったです",
+    "why": "El pasado de いい se forma a partir de よい."
+   },
+   {
+    "wrong": "しずかかったです",
+    "right": "しずかでした",
+    "why": "しずか es adjetivo な: su pasado es でした."
+   }
+  ],
+  "practice": {
+   "order": [
+    {
+     "zh": "パーティーはたのしかったです。",
+     "py": "パーティー は たのしかった です。",
+     "es": "La fiesta fue divertida."
+    },
+    {
+     "zh": "その町はにぎやかでした。",
+     "py": "その まち は にぎやか でした。",
+     "es": "Esa ciudad era animada."
+    }
+   ],
+   "fill": [
+    {
+     "zh": "きのうは暑＿です。",
+     "answer": "かった",
+     "options": [
+      "かった",
+      "いでした",
+      "でした",
+      "くない"
+     ],
+     "es": "Ayer hizo calor."
+    },
+    {
+     "zh": "旅行はどうでしたか。—とても＿です。",
+     "answer": "よかった",
+     "options": [
+      "よかった",
+      "いかった",
+      "いいでした",
+      "よいでした"
+     ],
+     "es": "¿Qué tal el viaje? —Muy bien."
+    }
+   ],
+   "translate": [
+    {
+     "zh": "その映画はおもしろくなかったです。",
+     "py": "その えいが は おもしろくなかった です。",
+     "es": "Esa película no fue interesante."
+    },
+    {
+     "zh": "公園はしずかでした。",
+     "py": "こうえん は しずか でした。",
+     "es": "El parque estaba tranquilo."
+    }
+   ]
+  },
+  "related": [
+   "i-adjectives",
+   "na-adjectives",
+   "masu-negative-past"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "tai",
+  "title": "Querer hacer algo: 〜たいです",
+  "zh": "「〜たい」",
+  "pattern": "Raíz del verbo (forma ます sin ます) + たいです",
+  "level": 1,
+  "summary": "Raíz + たい = «quiero + verbo». Se conjuga como un adjetivo い: たくない, たかった.",
+  "explanation": "Para decir que **quieres hacer** algo, quita ます y añade **たい**: たべます → たべ**たい** です = «quiero comer».\n\n| ます | たい | Significado |\n|---|---|---|\n| 行きます | 行きたいです | quiero ir |\n| 食べます | 食べたいです | quiero comer |\n| 見ます | 見たいです | quiero ver |\n| します | したいです | quiero hacer |\n| 来ます | 来たいです | quiero venir |\n\nたい funciona como un **adjetivo い**:\n\n| | Afirmativo | Negativo |\n|---|---|---|\n| Presente | 行きたいです | 行きたくないです |\n| Pasado | 行きたかったです | 行きたくなかったです |\n\nEl objeto puede llevar を o が: すし **を/が** たべたい です.\n\n⚠️ **Querer una cosa** (un nombre) no es たい sino **ほしい**: くるま が ほしい です = «quiero un coche».\n\n⚠️ たい expresa **tu** deseo (o pregunta por el de tu interlocutor). Para el deseo de un tercero se usa 〜たがって います (más adelante); decir けん さん は たべたい です suena raro, como si leyeras su mente.\n\nPreguntar a un superior なにを たべたい です か puede sonar demasiado directo; para invitar es mejor 〜ませんか.",
+  "examples": [
+   {
+    "zh": "日本へ行きたいです。",
+    "py": "にほん へ いきたい です。",
+    "es": "Quiero ir a Japón."
+   },
+   {
+    "zh": "すしが食べたいです。",
+    "py": "すし が たべたい です。",
+    "es": "Quiero comer sushi."
+   },
+   {
+    "zh": "きょうは何もしたくないです。",
+    "py": "きょう は なに も したくない です。",
+    "es": "Hoy no quiero hacer nada."
+   },
+   {
+    "zh": "大学で日本語を勉強したいです。",
+    "py": "だいがく で にほんご を べんきょう したい です。",
+    "es": "Quiero estudiar japonés en la universidad."
+   },
+   {
+    "zh": "子どものとき、先生になりたかったです。",
+    "py": "こども の とき、せんせい に なりたかった です。",
+    "es": "De pequeño quería ser profesor."
+   },
+   {
+    "zh": "何が飲みたいですか。",
+    "py": "なに が のみたい です か。",
+    "es": "¿Qué quieres beber?"
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "行きますたいです",
+    "right": "行きたいです",
+    "why": "たい se une a la raíz, quitando ます."
+   },
+   {
+    "wrong": "車がたいです / 車を食べたい (para «quiero un coche»)",
+    "right": "車がほしいです",
+    "why": "Para querer un objeto se usa ほしい; たい solo va con verbos."
+   },
+   {
+    "wrong": "行きたいじゃありません",
+    "right": "行きたくないです",
+    "why": "たい se conjuga como un adjetivo い: たくない."
+   }
+  ],
+  "practice": {
+   "order": [
+    {
+     "zh": "わたしは京都へ行きたいです。",
+     "py": "わたし は きょうと へ いきたい です。",
+     "es": "Quiero ir a Kioto."
+    },
+    {
+     "zh": "あたらしいくつが買いたいです。",
+     "py": "あたらしい くつ が かいたい です。",
+     "es": "Quiero comprar zapatos nuevos."
+    }
+   ],
+   "fill": [
+    {
+     "zh": "ラーメンが食べ＿です。",
+     "answer": "たい",
+     "options": [
+      "たい",
+      "ます",
+      "て",
+      "ない"
+     ],
+     "es": "Quiero comer ramen."
+    },
+    {
+     "zh": "きょうは勉強し＿ないです。",
+     "answer": "たく",
+     "options": [
+      "たく",
+      "たい",
+      "たか",
+      "たかった"
+     ],
+     "es": "Hoy no quiero estudiar."
+    }
+   ],
+   "translate": [
+    {
+     "zh": "日本で働きたいです。",
+     "py": "にほん で はたらきたい です。",
+     "es": "Quiero trabajar en Japón."
+    },
+    {
+     "zh": "映画が見たいです。",
+     "py": "えいが が みたい です。",
+     "es": "Quiero ver una película."
+    }
+   ]
+  },
+  "related": [
+   "hoshii",
+   "masu",
+   "mashou-masenka"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "mashou-masenka",
+  "title": "Invitar y proponer: 〜ませんか・〜ましょう",
+  "zh": "「〜ませんか・〜ましょう」",
+  "pattern": "Raíz + ませんか (¿por qué no…?) / Raíz + ましょう (…emos)",
+  "level": 1,
+  "summary": "〜ませんか invita con cortesía («¿quieres…?»); 〜ましょう propone o acepta («¡vamos a…!»).",
+  "explanation": "**〜ませんか** — invitación educada, literalmente «¿no haces…?»: いっしょに えいが を みません か = «¿Vemos una peli juntos?». Es la forma más amable de invitar porque deja libertad para decir que no.\n\n**〜ましょう** — «hagamos…, vamos a…» (como nuestro «¡vamos!» o el imperativo de *nosotros*: «comamos»). Se usa para proponer algo que ya se da por aceptado o para **responder sí** a una invitación.\n\n**〜ましょうか** — «¿…mos?» / «¿te ayudo a…?»: ofrecerse o pedir opinión: てつだいましょう か = «¿Te ayudo?»; なんじ に あいましょう か = «¿A qué hora quedamos?».\n\n| Forma | Función | Ejemplo |\n|---|---|---|\n| 〜ませんか | invitar | 飲みに行きませんか |\n| 〜ましょう | proponer / aceptar | ええ、行きましょう |\n| 〜ましょうか | ofrecerse / decidir juntos | 窓を開けましょうか |\n\n**Diálogo típico**:\n- A: 日曜日 に こうえん へ いきません か。\n- B: いい です ね。いきましょう！ (aceptar)\n- B: すみません、日曜日 は ちょっと…。 (rechazar con suavidad)",
+  "examples": [
+   {
+    "zh": "いっしょに昼ごはんを食べませんか。",
+    "py": "いっしょ に ひるごはん を たべません か。",
+    "es": "¿Comemos juntos?"
+   },
+   {
+    "zh": "ええ、食べましょう。",
+    "py": "ええ、たべましょう。",
+    "es": "Sí, comamos."
+   },
+   {
+    "zh": "ちょっと休みましょう。",
+    "py": "ちょっと やすみましょう。",
+    "es": "Descansemos un poco."
+   },
+   {
+    "zh": "何時に会いましょうか。",
+    "py": "なんじ に あいましょう か。",
+    "es": "¿A qué hora quedamos?"
+   },
+   {
+    "zh": "にもつを持ちましょうか。",
+    "py": "にもつ を もちましょう か。",
+    "es": "¿Te llevo el equipaje?"
+   },
+   {
+    "zh": "週末、海へ行きませんか。",
+    "py": "しゅうまつ、うみ へ いきません か。",
+    "es": "¿Vamos a la playa el fin de semana?"
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "映画を見たいですか。(para invitar a la profesora)",
+    "right": "映画を見ませんか。",
+    "why": "Preguntar directamente por el deseo de otro suena brusco; para invitar se usa 〜ませんか."
+   },
+   {
+    "wrong": "Interpretar 行きませんか como «¿no vas?».",
+    "right": "行きませんか = «¿vamos? / ¿te apetece ir?».",
+    "why": "Aunque tiene forma negativa, es una invitación amable, no una pregunta negativa."
+   },
+   {
+    "wrong": "いいえ、行きません。(rechazar una invitación)",
+    "right": "すみません、ちょっと…。",
+    "why": "Rechazar con un «no» seco es descortés; se usa una negativa suave."
+   }
+  ],
+  "practice": {
+   "order": [
+    {
+     "zh": "いっしょにコーヒーを飲みませんか。",
+     "py": "いっしょ に コーヒー を のみません か。",
+     "es": "¿Tomamos un café juntos?"
+    },
+    {
+     "zh": "駅で会いましょう。",
+     "py": "えき で あいましょう。",
+     "es": "Quedemos en la estación."
+    }
+   ],
+   "fill": [
+    {
+     "zh": "あした、映画を見＿か。—いいですね。",
+     "answer": "ません",
+     "options": [
+      "ません",
+      "ます",
+      "ましょう",
+      "ました"
+     ],
+     "es": "¿Vemos una peli mañana? —¡Buena idea!"
+    },
+    {
+     "zh": "ええ、行き＿。",
+     "answer": "ましょう",
+     "options": [
+      "ましょう",
+      "ませんか",
+      "たい",
+      "ません"
+     ],
+     "es": "Sí, vamos."
+    }
+   ],
+   "translate": [
+    {
+     "zh": "週末、京都へ行きませんか。",
+     "py": "しゅうまつ、きょうと へ いきません か。",
+     "es": "¿Vamos a Kioto el fin de semana?"
+    },
+    {
+     "zh": "まどを開けましょうか。",
+     "py": "まど を あけましょう か。",
+     "es": "¿Abro la ventana?"
+    }
+   ]
+  },
+  "related": [
+   "masu",
+   "tai",
+   "te-kudasai"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "aru-iru",
+  "title": "Haber/estar: あります y います",
+  "zh": "「あります・います」",
+  "pattern": "Cosa が あります / Ser vivo が います",
+  "level": 1,
+  "summary": "あります se usa para cosas y plantas; います para personas y animales. Ambos significan «hay / estar / tener».",
+  "explanation": "El español distingue «hay» y «estar», pero no si el sujeto está vivo. El japonés sí:\n\n| Verbo | Para | Ejemplo |\n|---|---|---|\n| **あります** (ある) | cosas, plantas, lugares, eventos | ほん が あります (hay un libro) |\n| **います** (いる) | personas y animales (lo que se mueve solo) | ねこ が います (hay un gato) |\n\nAmbos se usan también para **tener**:\n- じかん が あります = «tengo tiempo».\n- あに が います = «tengo un hermano mayor».\n\nY para eventos: あした テスト が あります = «mañana hay examen».\n\n**Conjugación**:\n\n| | あります | います |\n|---|---|---|\n| Negativo | ありません | いません |\n| Pasado | ありました | いました |\n| Informal negativo | ない | いない |\n\n⚠️ ある es un う-verbo (あります) e いる un る-verbo (います). Su forma ない: ある → **ない** (irregular), いる → いない.\n\n⚠️ No confundas いる (estar, ser vivo) con いく (ir) ni con いう (decir).",
+  "examples": [
+   {
+    "zh": "つくえの上に本があります。",
+    "py": "つくえ の うえ に ほん が あります。",
+    "es": "Hay un libro sobre la mesa."
+   },
+   {
+    "zh": "公園に子どもがいます。",
+    "py": "こうえん に こども が います。",
+    "es": "Hay niños en el parque."
+   },
+   {
+    "zh": "わたしは兄が二人います。",
+    "py": "わたし は あに が ふたり います。",
+    "es": "Tengo dos hermanos mayores."
+   },
+   {
+    "zh": "あした、日本語のテストがあります。",
+    "py": "あした、にほんご の テスト が あります。",
+    "es": "Mañana hay examen de japonés."
+   },
+   {
+    "zh": "きょうは時間がありません。",
+    "py": "きょう は じかん が ありません。",
+    "es": "Hoy no tengo tiempo."
+   },
+   {
+    "zh": "へやにねこがいますか。",
+    "py": "へや に ねこ が います か。",
+    "es": "¿Hay un gato en la habitación?"
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "犬があります。",
+    "right": "犬がいます。",
+    "why": "Los animales y personas usan います."
+   },
+   {
+    "wrong": "木がいます。",
+    "right": "木があります。",
+    "why": "Las plantas no se mueven solas: あります."
+   },
+   {
+    "wrong": "時間をあります。",
+    "right": "時間があります。",
+    "why": "Lo que hay o se tiene se marca con が, no con を."
+   },
+   {
+    "wrong": "あらない",
+    "right": "ない",
+    "why": "El negativo informal de ある es ない."
+   }
+  ],
+  "practice": {
+   "order": [
+    {
+     "zh": "へやにテレビがあります。",
+     "py": "へや に テレビ が あります。",
+     "es": "Hay una tele en la habitación."
+    },
+    {
+     "zh": "教室に先生がいます。",
+     "py": "きょうしつ に せんせい が います。",
+     "es": "El profesor está en el aula."
+    }
+   ],
+   "fill": [
+    {
+     "zh": "あそこに犬が＿。",
+     "answer": "います",
+     "options": [
+      "います",
+      "あります",
+      "です",
+      "ます"
+     ],
+     "es": "Allí hay un perro."
+    },
+    {
+     "zh": "かばんの中にさいふが＿。",
+     "answer": "あります",
+     "options": [
+      "あります",
+      "います",
+      "です",
+      "いきます"
+     ],
+     "es": "En el bolso hay una cartera."
+    }
+   ],
+   "translate": [
+    {
+     "zh": "わたしは姉がいます。",
+     "py": "わたし は あね が います。",
+     "es": "Tengo una hermana mayor."
+    },
+    {
+     "zh": "この近くにコンビニがありますか。",
+     "py": "この ちかく に コンビニ が あります か。",
+     "es": "¿Hay un konbini por aquí cerca?"
+    }
+   ]
+  },
+  "related": [
+   "ni-aru-existence",
+   "wa-ga",
+   "counters"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ni-aru-existence",
+  "title": "Ubicar cosas: 〜に〜があります / 〜は〜にあります",
+  "zh": "「〜に〜があります・〜は〜にあります」",
+  "pattern": "Lugar に Cosa が あります / Cosa は Lugar に あります",
+  "level": 1,
+  "summary": "Dos órdenes para dos preguntas: «¿qué hay en X?» (X に Y が あります) y «¿dónde está Y?» (Y は X に あります).",
+  "explanation": "Hay dos estructuras según qué sea información nueva:\n\n**1. «En X hay Y»** — presentas algo nuevo:\n**Lugar に Cosa が あります／います**\nつくえ の うえ に ほん が あります = «sobre la mesa hay un libro».\n\n**2. «Y está en X»** — Y ya es conocido (tema), y lo nuevo es el lugar:\n**Cosa は Lugar に あります／います**\nほん は つくえ の うえ に あります = «el libro está sobre la mesa».\n\nEs la misma diferencia que en español entre «hay **un** libro» y «**el** libro está».\n\n**Posiciones** (siempre Nombre の + posición):\n\n| Japonés | Español |\n|---|---|\n| 上 (うえ) | encima |\n| 下 (した) | debajo |\n| 中 (なか) | dentro |\n| 前 (まえ) | delante |\n| うしろ | detrás |\n| となり | al lado (contiguo) |\n| 近く (ちかく) | cerca |\n| 右 / 左 | derecha / izquierda |\n\nえき の まえ = «delante de la estación» (literalmente «la parte delantera de la estación»). El orden vuelve a ser inverso al español.\n\nAtajo coloquial: トイレ は どこ です か = トイレ は どこ に あります か.",
+  "examples": [
+   {
+    "zh": "駅の前に銀行があります。",
+    "py": "えき の まえ に ぎんこう が あります。",
+    "es": "Delante de la estación hay un banco."
+   },
+   {
+    "zh": "銀行は駅の前にあります。",
+    "py": "ぎんこう は えき の まえ に あります。",
+    "es": "El banco está delante de la estación."
+   },
+   {
+    "zh": "ねこはつくえの下にいます。",
+    "py": "ねこ は つくえ の した に います。",
+    "es": "El gato está debajo de la mesa."
+   },
+   {
+    "zh": "かばんの中に何がありますか。",
+    "py": "かばん の なか に なに が あります か。",
+    "es": "¿Qué hay dentro del bolso?"
+   },
+   {
+    "zh": "コンビニは郵便局のとなりにあります。",
+    "py": "コンビニ は ゆうびんきょく の となり に あります。",
+    "es": "El konbini está al lado de correos."
+   },
+   {
+    "zh": "けんさんはどこにいますか。",
+    "py": "けん さん は どこ に います か。",
+    "es": "¿Dónde está Ken?"
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "上のつくえに本があります。(«sobre la mesa»)",
+    "right": "つくえの上に本があります。",
+    "why": "El orden es Nombre の posición: つくえの上 («la parte de arriba de la mesa»)."
+   },
+   {
+    "wrong": "銀行は駅の前であります。",
+    "right": "銀行は駅の前にあります。",
+    "why": "Con あります/います el lugar va con に, no con で."
+   },
+   {
+    "wrong": "どこに銀行はありますか。",
+    "right": "銀行はどこにありますか。",
+    "why": "Si preguntas por el lugar de algo conocido, el objeto es el tema (は) y va primero."
+   }
+  ],
+  "practice": {
+   "order": [
+    {
+     "zh": "つくえの上にペンがあります。",
+     "py": "つくえ の うえ に ペン が あります。",
+     "es": "Hay un bolígrafo sobre la mesa."
+    },
+    {
+     "zh": "さくらさんは教室にいます。",
+     "py": "さくら さん は きょうしつ に います。",
+     "es": "Sakura está en el aula."
+    }
+   ],
+   "fill": [
+    {
+     "zh": "駅の前＿ホテルがあります。",
+     "answer": "に",
+     "options": [
+      "に",
+      "で",
+      "を",
+      "は"
+     ],
+     "es": "Delante de la estación hay un hotel."
+    },
+    {
+     "zh": "犬はいすの＿にいます。",
+     "answer": "下",
+     "options": [
+      "下",
+      "中",
+      "上の",
+      "下の"
+     ],
+     "es": "El perro está debajo de la silla."
+    }
+   ],
+   "translate": [
+    {
+     "zh": "トイレはどこにありますか。",
+     "py": "トイレ は どこ に あります か。",
+     "es": "¿Dónde está el baño?"
+    },
+    {
+     "zh": "れいぞうこの中にビールがあります。",
+     "py": "れいぞうこ の なか に ビール が あります。",
+     "es": "Hay cerveza en la nevera."
+    }
+   ]
+  },
+  "related": [
+   "aru-iru",
+   "ni-time-place",
+   "kosoado"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "counters",
+  "title": "Contadores (つ, 人, 枚, 本, 匹…)",
+  "zh": "「助数詞」",
+  "pattern": "Nombre を／が + número-contador + verbo",
+  "level": 1,
+  "summary": "Para contar cosas hay que añadir un contador al número según la forma del objeto. El número suele ir detrás del nombre + partícula.",
+  "explanation": "Como en chino, en japonés no se dice «tres manzanas» directamente: se usa un **contador** según el tipo de objeto. Además, la posición más natural es **Nombre + partícula + cantidad + verbo**: りんご を みっつ ください = «tres manzanas, por favor».\n\n| Contador | Para | 1 | 2 | 3 | ¿Cuántos? |\n|---|---|---|---|---|---|\n| 〜つ (japonés) | cosas en general (hasta 10) | ひとつ | ふたつ | みっつ | いくつ |\n| 〜人 (にん) | personas | **ひとり** | **ふたり** | さんにん | なんにん |\n| 〜枚 (まい) | cosas planas (papel, billetes, camisas) | いちまい | にまい | さんまい | なんまい |\n| 〜本 (ほん) | cosas largas (botellas, bolis) | **いっぽん** | にほん | **さんぼん** | なんぼん |\n| 〜匹 (ひき) | animales pequeños | **いっぴき** | にひき | **さんびき** | なんびき |\n| 〜台 (だい) | máquinas, vehículos | いちだい | にだい | さんだい | なんだい |\n| 〜冊 (さつ) | libros, cuadernos | **いっさつ** | にさつ | さんさつ | なんさつ |\n| 〜歳 (さい) | edad | **いっさい** | にさい | さんさい | なんさい |\n\nLa serie japonesa 〜つ: ひとつ, ふたつ, みっつ, よっつ, いつつ, むっつ, ななつ, やっつ, ここのつ, とお.\n\n⚠️ Ojo a los **cambios de sonido** (en negrita): 1, 3, 6, 8 y 10 suelen alterar el contador (いっぽん, さんぼん, ろっぽん, はっぽん, じゅっぽん). 20 años es **はたち**.\n\nSi no sabes el contador, 〜つ te salva para casi cualquier objeto (no para personas).",
+  "examples": [
+   {
+    "zh": "りんごを三つください。",
+    "py": "りんご を みっつ ください。",
+    "es": "Tres manzanas, por favor."
+   },
+   {
+    "zh": "家族は四人です。",
+    "py": "かぞく は よにん です。",
+    "es": "Somos cuatro en la familia."
+   },
+   {
+    "zh": "切手を二枚買いました。",
+    "py": "きって を にまい かいました。",
+    "es": "Compré dos sellos."
+   },
+   {
+    "zh": "ビールを一本飲みました。",
+    "py": "ビール を いっぽん のみました。",
+    "es": "Me bebí una cerveza (una botella)."
+   },
+   {
+    "zh": "うちに犬が二匹います。",
+    "py": "うち に いぬ が にひき います。",
+    "es": "En casa tenemos dos perros."
+   },
+   {
+    "zh": "学生は何人いますか。",
+    "py": "がくせい は なんにん います か。",
+    "es": "¿Cuántos estudiantes hay?"
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "三りんごをください。",
+    "right": "りんごを三つください。",
+    "why": "El número necesita contador y suele ir detrás del nombre + partícula."
+   },
+   {
+    "wrong": "一人 = いちにん, 二人 = ににん",
+    "right": "ひとり, ふたり",
+    "why": "1 y 2 personas son irregulares: ひとり, ふたり; desde 3 es regular (さんにん)."
+   },
+   {
+    "wrong": "いちほん, さんほん",
+    "right": "いっぽん, さんぼん",
+    "why": "本, 匹, 杯 cambian de sonido con 1, 3, 6, 8 y 10."
+   },
+   {
+    "wrong": "学生が三つ来ました。",
+    "right": "学生が三人来ました。",
+    "why": "〜つ no sirve para personas: se usa 〜人."
+   }
+  ],
+  "practice": {
+   "order": [
+    {
+     "zh": "コーヒーを二つください。",
+     "py": "コーヒー を ふたつ ください。",
+     "es": "Dos cafés, por favor."
+    },
+    {
+     "zh": "教室に学生が五人います。",
+     "py": "きょうしつ に がくせい が ごにん います。",
+     "es": "En el aula hay cinco estudiantes."
+    }
+   ],
+   "fill": [
+    {
+     "zh": "わたしは兄が＿います。",
+     "answer": "二人",
+     "options": [
+      "二人",
+      "二つ",
+      "二枚",
+      "二本"
+     ],
+     "es": "Tengo dos hermanos mayores."
+    },
+    {
+     "zh": "シャツを三＿買いました。",
+     "answer": "枚",
+     "options": [
+      "枚",
+      "本",
+      "匹",
+      "人"
+     ],
+     "es": "Compré tres camisas."
+    }
+   ],
+   "translate": [
+    {
+     "zh": "えんぴつを一本かしてください。",
+     "py": "えんぴつ を いっぽん かして ください。",
+     "es": "Préstame un lápiz, por favor."
+    },
+    {
+     "zh": "ねこが三匹います。",
+     "py": "ねこ が さんびき います。",
+     "es": "Hay tres gatos."
+    }
+   ]
+  },
+  "related": [
+   "numbers-time",
+   "aru-iru",
+   "question-words"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "numbers-time",
+  "title": "Números, horas y fechas",
+  "zh": "「数字・時間・日付」",
+  "pattern": "Número + 時 (じ) + 分 (ふん/ぷん) / 月 (がつ) + 日 (にち/か)",
+  "level": 1,
+  "summary": "Los números japoneses son regulares, pero las horas y las fechas tienen lecturas especiales que hay que memorizar.",
+  "explanation": "**Números**: いち, に, さん, よん/し, ご, ろく, なな/しち, はち, きゅう/く, じゅう. A partir de ahí se combinan como en chino: 11 = じゅういち, 20 = にじゅう, 100 = ひゃく, 1000 = せん, 10.000 = **いちまん** (el japonés agrupa de 4 en 4: 10.000 es una unidad propia, まん).\n\nCambios de sonido: 300 さんびゃく, 600 ろっぴゃく, 800 はっぴゃく, 3000 さんぜん, 8000 はっせん.\n\n**Horas** (〜時 じ): 4時 = **よじ**, 7時 = **しちじ**, 9時 = **くじ**. Media = 〜はん: 3時はん.\n\n**Minutos** (〜分): 1 いっぷん, 2 にふん, 3 さんぷん, 4 よんぷん, 5 ごふん, 6 ろっぷん, 7 ななふん, 8 はっぷん, 9 きゅうふん, 10 じゅっぷん.\n\n**Meses** (〜月 がつ): número + がつ: いちがつ (enero)… 4月 = **しがつ**, 7月 = **しちがつ**, 9月 = **くがつ**.\n\n**Días del mes** (los diez primeros son especiales):\n\n| 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |\n|---|---|---|---|---|---|---|---|---|---|\n| ついたち | ふつか | みっか | よっか | いつか | むいか | なのか | ようか | ここのか | とおか |\n\nDespués: número + にち (11 じゅういちにち), salvo 14 じゅうよっか, 20 **はつか** y 24 にじゅうよっか.\n\n**Orden de la fecha**: de lo grande a lo pequeño: 2026年 10月 29日 (año, mes, día), al revés que en España.\n\n**Días de la semana**: げつようび (lunes), かようび, すいようび, もくようび, きんようび, どようび, にちようび.",
+  "examples": [
+   {
+    "zh": "いま、何時ですか。—3時半です。",
+    "py": "いま、なんじ です か。— さんじ はん です。",
+    "es": "¿Qué hora es? —Las tres y media."
+   },
+   {
+    "zh": "毎朝7時に起きます。",
+    "py": "まいあさ しちじ に おきます。",
+    "es": "Me levanto a las siete todas las mañanas."
+   },
+   {
+    "zh": "たんじょう日は4月8日です。",
+    "py": "たんじょうび は しがつ ようか です。",
+    "es": "Mi cumpleaños es el 8 de abril."
+   },
+   {
+    "zh": "このかばんは3,800円です。",
+    "py": "この かばん は さんぜん はっぴゃく えん です。",
+    "es": "Este bolso cuesta 3.800 yenes."
+   },
+   {
+    "zh": "電車は9時10分に来ます。",
+    "py": "でんしゃ は くじ じゅっぷん に きます。",
+    "es": "El tren llega a las nueve y diez."
+   },
+   {
+    "zh": "きょうは何曜日ですか。—水曜日です。",
+    "py": "きょう は なんようび です か。— すいようび です。",
+    "es": "¿Qué día es hoy? —Miércoles."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "4時 = よんじ",
+    "right": "よじ",
+    "why": "Las 4 en punto se dicen よじ; también 7時 しちじ y 9時 くじ."
+   },
+   {
+    "wrong": "1日 (día del mes) = いちにち",
+    "right": "ついたち",
+    "why": "Los días 1–10 del mes tienen lecturas especiales; いちにち significa «un día (de duración)»."
+   },
+   {
+    "wrong": "10.000 = じゅうせん",
+    "right": "いちまん",
+    "why": "El japonés agrupa por 万 (10.000): 10.000 = いちまん, 100.000 = じゅうまん."
+   },
+   {
+    "wrong": "29日10月2026年",
+    "right": "2026年10月29日",
+    "why": "Las fechas van de lo grande a lo pequeño: año, mes, día."
+   }
+  ],
+  "practice": {
+   "order": [
+    {
+     "zh": "授業は9時に始まります。",
+     "py": "じゅぎょう は くじ に はじまります。",
+     "es": "La clase empieza a las nueve."
+    },
+    {
+     "zh": "きょうは5月5日です。",
+     "py": "きょう は ごがつ いつか です。",
+     "es": "Hoy es 5 de mayo."
+    }
+   ],
+   "fill": [
+    {
+     "zh": "4時は「＿」と読みます。",
+     "answer": "よじ",
+     "options": [
+      "よじ",
+      "よんじ",
+      "しじ",
+      "よっじ"
+     ],
+     "es": "4時 se lee «yoji»."
+    },
+    {
+     "zh": "1日（いちがつ＿）はお正月です。",
+     "answer": "ついたち",
+     "options": [
+      "ついたち",
+      "いちにち",
+      "いちび",
+      "ひとつ"
+     ],
+     "es": "El 1 de enero es Año Nuevo."
+    }
+   ],
+   "translate": [
+    {
+     "zh": "いま、10時5分です。",
+     "py": "いま、じゅうじ ごふん です。",
+     "es": "Ahora son las diez y cinco."
+    },
+    {
+     "zh": "たんじょう日は何月何日ですか。",
+     "py": "たんじょうび は なんがつ なんにち です か。",
+     "es": "¿Qué día es tu cumpleaños?"
+    }
+   ]
+  },
+  "related": [
+   "counters",
+   "ni-time-place",
+   "kara-made"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "kara-made",
+  "title": "Desde… hasta: 〜から〜まで",
+  "zh": "「〜から〜まで」",
+  "pattern": "A から B まで",
+  "level": 1,
+  "summary": "から = «desde / a partir de», まで = «hasta». Sirven para tiempo y espacio.",
+  "explanation": "Funcionan exactamente como «de… a…» / «desde… hasta…» en español, pero van **detrás** de la palabra:\n\n- 9時 **から** 5時 **まで** = «de 9 a 5».\n- とうきょう **から** きょうと **まで** = «de Tokio a Kioto».\n\nSe pueden usar por separado:\n- 月曜日 から = «a partir del lunes».\n- 6時 まで はたらきます = «trabajo hasta las 6».\n- スペイン から きました = «he venido de España».\n\n| Uso | Ejemplo | Español |\n|---|---|---|\n| horario | 9時から5時まで | de 9 a 5 |\n| trayecto | 駅から学校まで | de la estación a la escuela |\n| origen | スペインから来ました | vengo de España |\n| límite | 何時までですか | ¿hasta qué hora es? |\n\nSe puede añadir です directamente: ぎんこう は 3時 まで です = «el banco (abre) hasta las tres».\n\n**まで vs までに**: まで = acción continua hasta ese punto (3時まで まちます, espero hasta las tres); までに = **plazo**, «antes de» (3時までに きて ください, ven antes de las tres).\n\n⚠️ No confundas esta から con から «porque» (va detrás de una frase, no de un nombre).",
+  "examples": [
+   {
+    "zh": "授業は9時から12時までです。",
+    "py": "じゅぎょう は くじ から じゅうにじ まで です。",
+    "es": "La clase es de nueve a doce."
+   },
+   {
+    "zh": "東京から京都まで新幹線で行きます。",
+    "py": "とうきょう から きょうと まで しんかんせん で いきます。",
+    "es": "Voy de Tokio a Kioto en shinkansen."
+   },
+   {
+    "zh": "ウーゴさんはスペインから来ました。",
+    "py": "ウーゴ さん は スペイン から きました。",
+    "es": "Hugo viene de España."
+   },
+   {
+    "zh": "うちから駅まで歩いて10分です。",
+    "py": "うち から えき まで あるいて じゅっぷん です。",
+    "es": "De casa a la estación hay diez minutos a pie."
+   },
+   {
+    "zh": "銀行は何時までですか。",
+    "py": "ぎんこう は なんじ まで です か。",
+    "es": "¿Hasta qué hora abre el banco?"
+   },
+   {
+    "zh": "あしたから夏休みです。",
+    "py": "あした から なつやすみ です。",
+    "es": "A partir de mañana son las vacaciones de verano."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "から9時まで5時",
+    "right": "9時から5時まで",
+    "why": "から y まで son posposiciones: van detrás de la palabra, no delante como «de» y «a»."
+   },
+   {
+    "wrong": "スペインで来ました。",
+    "right": "スペインから来ました。",
+    "why": "El origen se marca con から; で es lugar de una acción o medio."
+   },
+   {
+    "wrong": "3時まで宿題を出してください。(plazo)",
+    "right": "3時までに宿題を出してください。",
+    "why": "Para un plazo («antes de») se usa までに."
+   }
+  ],
+  "practice": {
+   "order": [
+    {
+     "zh": "テストは月曜日から金曜日までです。",
+     "py": "テスト は げつようび から きんようび まで です。",
+     "es": "Los exámenes son de lunes a viernes."
+    },
+    {
+     "zh": "家から学校までバスで行きます。",
+     "py": "いえ から がっこう まで バス で いきます。",
+     "es": "Voy de casa a la escuela en autobús."
+    }
+   ],
+   "fill": [
+    {
+     "zh": "9時＿5時まで働きます。",
+     "answer": "から",
+     "options": [
+      "から",
+      "まで",
+      "に",
+      "で"
+     ],
+     "es": "Trabajo de nueve a cinco."
+    },
+    {
+     "zh": "東京から大阪＿新幹線で行きます。",
+     "answer": "まで",
+     "options": [
+      "まで",
+      "から",
+      "を",
+      "が"
+     ],
+     "es": "Voy de Tokio a Osaka en shinkansen."
+    }
+   ],
+   "translate": [
+    {
+     "zh": "わたしはスペインから来ました。",
+     "py": "わたし は スペイン から きました。",
+     "es": "Vengo de España."
+    },
+    {
+     "zh": "図書館は8時までです。",
+     "py": "としょかん は はちじ まで です。",
+     "es": "La biblioteca abre hasta las ocho."
+    }
+   ]
+  },
+  "related": [
+   "numbers-time",
+   "ni-time-place",
+   "kara-because"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ga-but",
+  "title": "Pero: 〜が y でも",
+  "zh": "「〜が（逆接）・でも」",
+  "pattern": "Frase 1 + が、Frase 2 / Frase 1。でも、Frase 2",
+  "level": 1,
+  "summary": "が al final de una frase significa «pero» y la une con la siguiente. でも hace lo mismo al principio de la segunda frase.",
+  "explanation": "**が (conjunción)** se coloca al final de la primera frase, detrás de です/ます, y la une con la segunda: にほんご は むずかしい です **が**、おもしろい です = «el japonés es difícil, pero interesante».\n\n**でも** va al **principio** de una nueva frase: にほんご は むずかしい です。**でも**、おもしろい です。 Equivale a «Pero…» empezando oración. Es más coloquial.\n\n| Estructura | Posición | Registro |\n|---|---|---|\n| 〜ですが、〜 | final de la frase 1 | neutro / escrito |\n| 〜です。でも、〜 | inicio de la frase 2 | coloquial |\n| 〜けど、〜 | final de la frase 1 | coloquial (informal) |\n\n**が suavizador**: a menudo が no expresa contraste sino que introduce un tema, como nuestro «oiga, es que…»: すみません が、えき は どこ です か = «perdone, ¿dónde está la estación?»; もしもし、ウーゴ です が… = «¿diga? Soy Hugo…».\n\n⚠️ No la confundas con la partícula が de sujeto: la が «pero» va **tras un verbo, adjetivo o です**, no tras un nombre.",
+  "examples": [
+   {
+    "zh": "日本語はむずかしいですが、おもしろいです。",
+    "py": "にほんご は むずかしい です が、おもしろい です。",
+    "es": "El japonés es difícil, pero interesante."
+   },
+   {
+    "zh": "このレストランは高いですが、おいしいです。",
+    "py": "この レストラン は たかい です が、おいしい です。",
+    "es": "Este restaurante es caro, pero está bueno."
+   },
+   {
+    "zh": "コーヒーは飲みますが、お茶は飲みません。",
+    "py": "コーヒー は のみます が、おちゃ は のみません。",
+    "es": "Bebo café, pero no té."
+   },
+   {
+    "zh": "きのうは雨でした。でも、楽しかったです。",
+    "py": "きのう は あめ でした。でも、たのしかった です。",
+    "es": "Ayer llovió. Pero fue divertido."
+   },
+   {
+    "zh": "すみませんが、駅はどこですか。",
+    "py": "すみません が、えき は どこ です か。",
+    "es": "Perdone, ¿dónde está la estación?"
+   },
+   {
+    "zh": "行きたいですが、時間がありません。",
+    "py": "いきたい です が、じかん が ありません。",
+    "es": "Quiero ir, pero no tengo tiempo."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "日本語はむずかしいです、が おもしろいです。",
+    "right": "日本語はむずかしいですが、おもしろいです。",
+    "why": "が se pega a la primera frase; la coma va detrás de が."
+   },
+   {
+    "wrong": "日本語はむずかしいです。が、おもしろいです。(como «Pero…»)",
+    "right": "日本語はむずかしいです。でも、おもしろいです。",
+    "why": "Al principio de una frase nueva se usa でも, no が."
+   },
+   {
+    "wrong": "高いが、おいしいです。(mezcla de registros)",
+    "right": "高いですが、おいしいです。",
+    "why": "En registro educado, la primera frase también lleva です/ます antes de が."
+   }
+  ],
+  "practice": {
+   "order": [
+    {
+     "zh": "この部屋はせまいですが、きれいです。",
+     "py": "この へや は せまい です が、きれい です。",
+     "es": "Esta habitación es pequeña, pero está limpia."
+    },
+    {
+     "zh": "肉は食べますが、魚は食べません。",
+     "py": "にく は たべます が、さかな は たべません。",
+     "es": "Como carne, pero no pescado."
+    }
+   ],
+   "fill": [
+    {
+     "zh": "このかばんは安いです＿、いいです。",
+     "answer": "が",
+     "options": [
+      "が",
+      "から",
+      "と",
+      "も"
+     ],
+     "es": "Este bolso es barato, pero es bueno."
+    },
+    {
+     "zh": "きのうは寒かったです。＿、楽しかったです。",
+     "answer": "でも",
+     "options": [
+      "でも",
+      "が",
+      "から",
+      "それから"
+     ],
+     "es": "Ayer hizo frío. Pero fue divertido."
+    }
+   ],
+   "translate": [
+    {
+     "zh": "日本へ行きたいですが、お金がありません。",
+     "py": "にほん へ いきたい です が、おかね が ありません。",
+     "es": "Quiero ir a Japón, pero no tengo dinero."
+    },
+    {
+     "zh": "すみませんが、トイレはどこですか。",
+     "py": "すみません が、トイレ は どこ です か。",
+     "es": "Perdone, ¿dónde está el baño?"
+    }
+   ]
+  },
+  "related": [
+   "kara-because",
+   "wa-topic",
+   "i-adjectives"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "kara-because",
+  "title": "Porque: 〜から",
+  "zh": "「〜から（理由）」",
+  "pattern": "Causa + から、Resultado / Resultado。Causa + からです",
+  "level": 1,
+  "summary": "から detrás de una frase significa «porque / como»: la causa va primero y el resultado después.",
+  "explanation": "En español decimos «no voy **porque** estoy cansado» (resultado + causa). En japonés el orden natural es al revés: **causa + から、resultado**:\n\nつかれました **から**、いきません = «como estoy cansado, no voy».\n\n- から va detrás de **verbos, adjetivos o です**: あつい です から / あめ です から / じかん が ありません から.\n- Para responder a **どうして** («¿por qué?») se pone la causa + **から です**: どうして きません でした か — あたま が いたかった から です.\n\n| Pregunta | Respuesta |\n|---|---|\n| どうして食べませんか | おなかがいっぱいですから |\n| どうして日本語を勉強しますか | 日本で働きたいですから |\n\nTruco: piensa en から como «**a partir de** esto (la causa) → esto otro (el resultado)», igual que から «desde».\n\n⚠️ Con nombres y adjetivos な hay que poner です (o だ en informal): ~~あめ から~~ (= «desde la lluvia») → あめ です から / あめ だ から.\n\nMás adelante verás ので, más suave y formal; から es la forma básica de N5.",
+  "examples": [
+   {
+    "zh": "暑いですから、まどを開けます。",
+    "py": "あつい です から、まど を あけます。",
+    "es": "Como hace calor, abro la ventana."
+   },
+   {
+    "zh": "時間がありませんから、タクシーで行きましょう。",
+    "py": "じかん が ありません から、タクシー で いきましょう。",
+    "es": "Como no hay tiempo, vamos en taxi."
+   },
+   {
+    "zh": "どうして来ませんでしたか。—頭がいたかったからです。",
+    "py": "どうして きません でした か。— あたま が いたかった から です。",
+    "es": "¿Por qué no viniste? —Porque me dolía la cabeza."
+   },
+   {
+    "zh": "あしたはテストですから、きょうは勉強します。",
+    "py": "あした は テスト です から、きょう は べんきょう します。",
+    "es": "Como mañana hay examen, hoy estudio."
+   },
+   {
+    "zh": "日本で働きたいですから、日本語を勉強しています。",
+    "py": "にほん で はたらきたい です から、にほんご を べんきょう して います。",
+    "es": "Estudio japonés porque quiero trabajar en Japón."
+   },
+   {
+    "zh": "雨ですから、出かけません。",
+    "py": "あめ です から、でかけません。",
+    "es": "Como llueve, no salgo."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "行きません、から疲れました。",
+    "right": "疲れましたから、行きません。",
+    "why": "から va detrás de la causa, y la causa va primero."
+   },
+   {
+    "wrong": "雨から、行きません。",
+    "right": "雨ですから、行きません。",
+    "why": "Detrás de un nombre hace falta です (o だ): si no, から se entiende como «desde»."
+   },
+   {
+    "wrong": "どうして…？—から、頭がいたいです。",
+    "right": "頭がいたいからです。",
+    "why": "Para responder a どうして se dice causa + からです."
+   }
+  ],
+  "practice": {
+   "order": [
+    {
+     "zh": "寒いですから、うちにいます。",
+     "py": "さむい です から、うち に います。",
+     "es": "Como hace frío, me quedo en casa."
+    },
+    {
+     "zh": "おなかがすきましたから、食べましょう。",
+     "py": "おなか が すきました から、たべましょう。",
+     "es": "Como tengo hambre, comamos."
+    }
+   ],
+   "fill": [
+    {
+     "zh": "時間がありません＿、急ぎましょう。",
+     "answer": "から",
+     "options": [
+      "から",
+      "が",
+      "まで",
+      "と"
+     ],
+     "es": "Como no hay tiempo, démonos prisa."
+    },
+    {
+     "zh": "どうして食べませんか。—おなかがいっぱいです＿。",
+     "answer": "から",
+     "options": [
+      "から",
+      "が",
+      "まで",
+      "ので、"
+     ],
+     "es": "¿Por qué no comes? —Porque estoy lleno."
+    }
+   ],
+   "translate": [
+    {
+     "zh": "あしたは休みですから、映画を見ます。",
+     "py": "あした は やすみ です から、えいが を みます。",
+     "es": "Como mañana es fiesta, voy a ver una peli."
+    },
+    {
+     "zh": "高いですから、買いません。",
+     "py": "たかい です から、かいません。",
+     "es": "Como es caro, no lo compro."
+    }
+   ]
+  },
+  "related": [
+   "ga-but",
+   "kara-made",
+   "question-words"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "yori-comparison",
+  "title": "Comparaciones: より・のほうが・いちばん",
+  "zh": "「〜より〜のほうが・いちばん」",
+  "pattern": "A は B より + adjetivo / A と B と どちらが…か — A のほうが… / 〜の中で A が いちばん…",
+  "level": 1,
+  "summary": "Los adjetivos japoneses no cambian para comparar: «más que» se expresa con より y el superlativo con いちばん.",
+  "explanation": "En japonés no existe «más» delante del adjetivo. Se marca **con qué se compara**:\n\n**1. A es más… que B**: **A は B より + adjetivo**\nとうきょう は マドリード より おおきい です = «Tokio es más grande que Madrid» (literalmente «Tokio, comparado con Madrid, es grande»).\n\n**2. Preguntar entre dos**: **A と B と どちら が + adjetivo + ですか**\nいぬ と ねこ と どちら が すき です か = «¿Qué te gusta más, los perros o los gatos?»\nRespuesta: **A の ほう が + adjetivo**: ねこ の ほう が すき です = «me gustan más los gatos».\n\n**3. Superlativo**: **(grupo の 中 で) A が いちばん + adjetivo**\nスポーツ の なか で サッカー が いちばん すき です = «de los deportes, lo que más me gusta es el fútbol». いちばん significa «número uno».\n\n| Español | Japonés |\n|---|---|\n| más caro que B | Bより高い |\n| A es más caro | Aのほうが高い |\n| el más caro | いちばん高い |\n| ¿cuál de los dos? | どちら |\n| ¿cuál de todos? (cosas / personas / lugar) | 何 / だれ / どこ が いちばん |\n\nPuedes combinar: A の ほう が B より たかい です.",
+  "examples": [
+   {
+    "zh": "東京はマドリードより大きいです。",
+    "py": "とうきょう は マドリード より おおきい です。",
+    "es": "Tokio es más grande que Madrid."
+   },
+   {
+    "zh": "犬とねこと、どちらが好きですか。",
+    "py": "いぬ と ねこ と、どちら が すき です か。",
+    "es": "¿Qué te gusta más, los perros o los gatos?"
+   },
+   {
+    "zh": "ねこのほうが好きです。",
+    "py": "ねこ の ほう が すき です。",
+    "es": "Me gustan más los gatos."
+   },
+   {
+    "zh": "電車はバスより速いです。",
+    "py": "でんしゃ は バス より はやい です。",
+    "es": "El tren es más rápido que el autobús."
+   },
+   {
+    "zh": "日本料理の中で、すしがいちばん好きです。",
+    "py": "にほん りょうり の なか で、すし が いちばん すき です。",
+    "es": "De la comida japonesa, lo que más me gusta es el sushi."
+   },
+   {
+    "zh": "クラスでだれがいちばん背が高いですか。",
+    "py": "クラス で だれ が いちばん せ が たかい です か。",
+    "es": "¿Quién es el más alto de la clase?"
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "東京はもっと大きいですよりマドリード。",
+    "right": "東京はマドリードより大きいです。",
+    "why": "より va detrás del término de comparación; el adjetivo no lleva «más»."
+   },
+   {
+    "wrong": "マドリードより東京は大きいじゃありません。",
+    "right": "マドリードは東京ほど大きくないです。",
+    "why": "Para «no tan… como» se usa ほど + negativo, no より."
+   },
+   {
+    "wrong": "ねこがほうが好きです。",
+    "right": "ねこのほうが好きです。",
+    "why": "La estructura es Nombre の ほう が."
+   },
+   {
+    "wrong": "いちばんの好きはすしです。",
+    "right": "すしがいちばん好きです。",
+    "why": "いちばん funciona como adverbio delante del adjetivo, no como nombre."
+   }
+  ],
+  "practice": {
+   "order": [
+    {
+     "zh": "コーヒーはお茶より高いです。",
+     "py": "コーヒー は おちゃ より たかい です。",
+     "es": "El café es más caro que el té."
+    },
+    {
+     "zh": "夏のほうが好きです。",
+     "py": "なつ の ほう が すき です。",
+     "es": "Me gusta más el verano."
+    }
+   ],
+   "fill": [
+    {
+     "zh": "バスは電車＿安いです。",
+     "answer": "より",
+     "options": [
+      "より",
+      "ほう",
+      "から",
+      "まで"
+     ],
+     "es": "El autobús es más barato que el tren."
+    },
+    {
+     "zh": "一年で、いつが＿暑いですか。",
+     "answer": "いちばん",
+     "options": [
+      "いちばん",
+      "より",
+      "ほう",
+      "もっと"
+     ],
+     "es": "¿Cuándo hace más calor del año?"
+    }
+   ],
+   "translate": [
+    {
+     "zh": "京都と大阪と、どちらが好きですか。",
+     "py": "きょうと と おおさか と、どちら が すき です か。",
+     "es": "¿Qué te gusta más, Kioto u Osaka?"
+    },
+    {
+     "zh": "家族の中で、父がいちばん背が高いです。",
+     "py": "かぞく の なか で、ちち が いちばん せ が たかい です。",
+     "es": "En mi familia, mi padre es el más alto."
+    }
+   ]
+  },
+  "related": [
+   "i-adjectives",
+   "na-adjectives",
+   "wa-ga"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "mae-ni-ato-de",
+  "title": "Antes y después: 〜まえに・〜あとで",
+  "zh": "「〜まえに・〜あとで」",
+  "pattern": "Diccionario + まえに / た形 + あとで / Nombre + の まえに・の あとで",
+  "level": 1,
+  "summary": "まえに = «antes de», あとで = «después de». El verbo va en forma de diccionario delante de まえに y en forma た delante de あとで.",
+  "explanation": "La lógica es sencilla: **antes** de hacer algo, todavía no lo has hecho (presente, forma de diccionario); **después** de hacerlo, ya está hecho (pasado, forma た).\n\n| | Con verbo | Con nombre |\n|---|---|---|\n| antes de | **ねる** まえに (antes de dormir) | しょくじ **の** まえに (antes de la comida) |\n| después de | **たべた** あとで (después de comer) | じゅぎょう **の** あとで (después de clase) |\n\nCon tiempo: 3年 まえに = «hace tres años» (sin の).\n\n⚠️ El tiempo de la frase lo marca **solo el verbo final**: aunque hables del pasado, delante de まえに va el diccionario: きのう ねる まえに ほん を よみました = «ayer, antes de dormir, leí un libro» (no ~~ねた まえに~~).\n\nComparación con español: «antes de **comer**» (infinitivo) = たべる まえに; «después de **comer**» (infinitivo) = たべた あとで. El español usa infinitivo en ambos casos, el japonés no.\n\nTambién existe 〜て から («después de…», con más idea de secuencia): ごはん を たべて から、でかけます.",
+  "examples": [
+   {
+    "zh": "ねる前に、歯をみがきます。",
+    "py": "ねる まえ に、は を みがきます。",
+    "es": "Antes de dormir me lavo los dientes."
+   },
+   {
+    "zh": "ごはんを食べた後で、コーヒーを飲みます。",
+    "py": "ごはん を たべた あと で、コーヒー を のみます。",
+    "es": "Después de comer tomo café."
+   },
+   {
+    "zh": "授業の前に、図書館へ行きます。",
+    "py": "じゅぎょう の まえ に、としょかん へ いきます。",
+    "es": "Antes de clase voy a la biblioteca."
+   },
+   {
+    "zh": "仕事の後で、友だちに会いました。",
+    "py": "しごと の あと で、ともだち に あいました。",
+    "es": "Después del trabajo quedé con un amigo."
+   },
+   {
+    "zh": "日本へ行く前に、ひらがなを勉強しました。",
+    "py": "にほん へ いく まえ に、ひらがな を べんきょう しました。",
+    "es": "Antes de ir a Japón estudié hiragana."
+   },
+   {
+    "zh": "3年前に、スペインに来ました。",
+    "py": "さんねん まえ に、スペイン に きました。",
+    "es": "Vine a España hace tres años."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "ねます前に",
+    "right": "ねる前に",
+    "why": "Delante de まえに el verbo va en forma de diccionario, no en ます."
+   },
+   {
+    "wrong": "食べる後で",
+    "right": "食べた後で",
+    "why": "Delante de あとで el verbo va en forma た (la acción ya ha terminado)."
+   },
+   {
+    "wrong": "授業前に (en estilo estándar) / 授業あとで",
+    "right": "授業の前に / 授業の後で",
+    "why": "Con nombres se necesita の."
+   },
+   {
+    "wrong": "きのう、ねた前に本を読みました。",
+    "right": "きのう、ねる前に本を読みました。",
+    "why": "まえに exige forma de diccionario aunque la frase sea pasada."
+   }
+  ],
+  "practice": {
+   "order": [
+    {
+     "zh": "食べる前に、手をあらいます。",
+     "py": "たべる まえ に、て を あらいます。",
+     "es": "Antes de comer me lavo las manos."
+    },
+    {
+     "zh": "授業の後で、テニスをします。",
+     "py": "じゅぎょう の あと で、テニス を します。",
+     "es": "Después de clase juego al tenis."
+    }
+   ],
+   "fill": [
+    {
+     "zh": "ねる＿に、シャワーをあびます。",
+     "answer": "前",
+     "options": [
+      "前",
+      "後",
+      "後で",
+      "から"
+     ],
+     "es": "Antes de acostarme me ducho."
+    },
+    {
+     "zh": "宿題をした＿で、テレビを見ます。",
+     "answer": "後",
+     "options": [
+      "後",
+      "前",
+      "まで",
+      "から"
+     ],
+     "es": "Después de hacer los deberes veo la tele."
+    }
+   ],
+   "translate": [
+    {
+     "zh": "朝ごはんの前に、さんぽします。",
+     "py": "あさごはん の まえ に、さんぽ します。",
+     "es": "Antes del desayuno doy un paseo."
+    },
+    {
+     "zh": "映画を見た後で、ばんごはんを食べました。",
+     "py": "えいが を みた あと で、ばんごはん を たべました。",
+     "es": "Después de ver la peli cenamos."
+    }
+   ]
+  },
+  "related": [
+   "dictionary-form",
+   "ta-form",
+   "te-form"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "deshou",
+  "title": "Probabilidad y confirmación: 〜でしょう",
+  "zh": "「〜でしょう」",
+  "pattern": "Verbo/adjetivo (informal) / Nombre + でしょう",
+  "level": 1,
+  "summary": "でしょう expresa probabilidad («probablemente…, seguramente…») y, con entonación ascendente, busca confirmación («¿verdad?»).",
+  "explanation": "**1. Probabilidad** (como el futuro de probabilidad español: «estará en casa», o «probablemente»). Muy frecuente en el **parte del tiempo**:\nあした は あめ でしょう = «mañana probablemente lloverá».\n\nSe pone detrás de la **forma informal**:\n\n| Tipo | Ejemplo |\n|---|---|\n| nombre | あめでしょう (será lluvia) |\n| adjetivo な | しずかでしょう |\n| adjetivo い | さむいでしょう |\n| verbo | ふるでしょう, こないでしょう, 来たでしょう |\n\nSe suele reforzar con **たぶん** (quizás, probablemente): けん さん は たぶん こない でしょう = «seguramente Ken no viene».\n\n**2. Confirmación** («¿verdad?, ¿a que sí?») con entonación ascendente: この ケーキ、おいしい でしょう？ = «¿A que está rico este pastel?». En informal se acorta a でしょ / だろう.\n\n**3. でしょうか** = pregunta suave y educada (más cortés que ですか): すみません、えき は どこ でしょう か = «Disculpe, ¿dónde estará la estación?».\n\n⚠️ No uses でしょう para cosas que sabes con certeza: queda raro y evasivo.",
+  "examples": [
+   {
+    "zh": "あしたは雨でしょう。",
+    "py": "あした は あめ でしょう。",
+    "es": "Mañana probablemente lloverá."
+   },
+   {
+    "zh": "東京はあしたも暑いでしょう。",
+    "py": "とうきょう は あした も あつい でしょう。",
+    "es": "En Tokio mañana también hará calor."
+   },
+   {
+    "zh": "けんさんはたぶん来ないでしょう。",
+    "py": "けん さん は たぶん こない でしょう。",
+    "es": "Seguramente Ken no vendrá."
+   },
+   {
+    "zh": "このケーキ、おいしいでしょう？",
+    "py": "この ケーキ、おいしい でしょう？",
+    "es": "Este pastel está rico, ¿a que sí?"
+   },
+   {
+    "zh": "さくらさんはもう家に帰ったでしょう。",
+    "py": "さくら さん は もう いえ に かえった でしょう。",
+    "es": "Sakura ya habrá vuelto a casa."
+   },
+   {
+    "zh": "すみません、駅はどこでしょうか。",
+    "py": "すみません、えき は どこ でしょう か。",
+    "es": "Disculpe, ¿dónde está la estación?"
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "雨がふりますでしょう",
+    "right": "雨がふるでしょう",
+    "why": "でしょう va detrás de la forma informal (diccionario), no de la forma ます."
+   },
+   {
+    "wrong": "しずかなでしょう",
+    "right": "しずかでしょう",
+    "why": "Los adjetivos な y los nombres van directamente con でしょう, sin な ni だ."
+   },
+   {
+    "wrong": "わたしは学生でしょう。",
+    "right": "わたしは学生です。",
+    "why": "でしょう indica suposición; no se usa para hechos que conoces seguro."
+   }
+  ],
+  "practice": {
+   "order": [
+    {
+     "zh": "あしたは晴れるでしょう。",
+     "py": "あした は はれる でしょう。",
+     "es": "Mañana probablemente hará sol."
+    },
+    {
+     "zh": "けんさんはたぶん図書館にいるでしょう。",
+     "py": "けん さん は たぶん としょかん に いる でしょう。",
+     "es": "Ken probablemente esté en la biblioteca."
+    }
+   ],
+   "fill": [
+    {
+     "zh": "あしたは寒い＿。",
+     "answer": "でしょう",
+     "options": [
+      "でしょう",
+      "ましょう",
+      "ません",
+      "でした"
+     ],
+     "es": "Mañana probablemente hará frío."
+    },
+    {
+     "zh": "あしたは雪が＿でしょう。",
+     "answer": "ふる",
+     "options": [
+      "ふる",
+      "ふります",
+      "ふって",
+      "ふり"
+     ],
+     "es": "Mañana probablemente nevará."
+    }
+   ],
+   "translate": [
+    {
+     "zh": "この本はたぶん高いでしょう。",
+     "py": "この ほん は たぶん たかい でしょう。",
+     "es": "Este libro será caro, probablemente."
+    },
+    {
+     "zh": "あしたは雨がふるでしょう。",
+     "py": "あした は あめ が ふる でしょう。",
+     "es": "Mañana probablemente lloverá."
+    }
+   ]
+  },
+  "related": [
+   "desu",
+   "dictionary-form",
+   "i-adjectives"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "hoshii",
+  "title": "Querer algo: 〜がほしいです",
+  "zh": "「〜がほしい」",
+  "pattern": "Objeto が + ほしいです",
+  "level": 1,
+  "summary": "ほしい = «querer (una cosa)». Es un adjetivo い y el objeto se marca con が.",
+  "explanation": "Para querer un **objeto** (un nombre), se usa el adjetivo **ほしい**:\n\nあたらしい くつ **が** ほしい です = «quiero unos zapatos nuevos».\n\n| Lo que quieres | Estructura | Ejemplo |\n|---|---|---|\n| una cosa (nombre) | Nombre が ほしいです | 車がほしいです |\n| hacer algo (verbo) | Raíz + たいです | 車を買いたいです |\n\nComo es un adjetivo い, se conjuga como tal:\n\n| | Afirmativo | Negativo |\n|---|---|---|\n| Presente | ほしいです | ほしくないです |\n| Pasado | ほしかったです | ほしくなかったです |\n\nEl objeto deseado lleva **が** (como すき): en español «me apetece **un café**» también tiene el objeto como sujeto gramatical.\n\nPregunta: なに が ほしい です か = «¿qué quieres?» (por ejemplo, como regalo).\n\n⚠️ Igual que たい, ほしい expresa tu propio deseo. Para ofrecer algo a un superior no se pregunta 〜が ほしいですか (suena muy directo), sino 〜は いかがですか («¿le apetece…?»).",
+  "examples": [
+   {
+    "zh": "あたらしいパソコンがほしいです。",
+    "py": "あたらしい パソコン が ほしい です。",
+    "es": "Quiero un ordenador nuevo."
+   },
+   {
+    "zh": "たんじょう日に何がほしいですか。",
+    "py": "たんじょうび に なに が ほしい です か。",
+    "es": "¿Qué quieres por tu cumpleaños?"
+   },
+   {
+    "zh": "いまは何もほしくないです。",
+    "py": "いま は なに も ほしくない です。",
+    "es": "Ahora no quiero nada."
+   },
+   {
+    "zh": "子どものとき、犬がほしかったです。",
+    "py": "こども の とき、いぬ が ほしかった です。",
+    "es": "De pequeño quería un perro."
+   },
+   {
+    "zh": "もっと時間がほしいです。",
+    "py": "もっと じかん が ほしい です。",
+    "es": "Quiero tener más tiempo."
+   },
+   {
+    "zh": "日本の友だちがほしいです。",
+    "py": "にほん の ともだち が ほしい です。",
+    "es": "Quiero tener amigos japoneses."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "車をほしいです。",
+    "right": "車がほしいです。",
+    "why": "ほしい es un adjetivo: el objeto se marca con が."
+   },
+   {
+    "wrong": "日本へ行くがほしいです。",
+    "right": "日本へ行きたいです。",
+    "why": "Con verbos se usa たい; ほしい solo va con nombres."
+   },
+   {
+    "wrong": "ほしいじゃありません",
+    "right": "ほしくないです",
+    "why": "ほしい es adjetivo い: negativo くない."
+   },
+   {
+    "wrong": "先生、コーヒーがほしいですか。",
+    "right": "先生、コーヒーはいかがですか。",
+    "why": "Preguntar el deseo a un superior es demasiado directo; se ofrece con いかがですか."
+   }
+  ],
+  "practice": {
+   "order": [
+    {
+     "zh": "わたしはあたらしいかばんがほしいです。",
+     "py": "わたし は あたらしい かばん が ほしい です。",
+     "es": "Quiero un bolso nuevo."
+    },
+    {
+     "zh": "何がほしいですか。",
+     "py": "なに が ほしい です か。",
+     "es": "¿Qué quieres?"
+    }
+   ],
+   "fill": [
+    {
+     "zh": "カメラ＿ほしいです。",
+     "answer": "が",
+     "options": [
+      "が",
+      "を",
+      "に",
+      "で"
+     ],
+     "es": "Quiero una cámara."
+    },
+    {
+     "zh": "いまは何もほし＿ないです。",
+     "answer": "く",
+     "options": [
+      "く",
+      "い",
+      "じゃ",
+      "かった"
+     ],
+     "es": "Ahora no quiero nada."
+    }
+   ],
+   "translate": [
+    {
+     "zh": "大きいへやがほしいです。",
+     "py": "おおきい へや が ほしい です。",
+     "es": "Quiero una habitación grande."
+    },
+    {
+     "zh": "ねこがほしかったです。",
+     "py": "ねこ が ほしかった です。",
+     "es": "Quería un gato."
+    }
+   ]
+  },
+  "related": [
+   "tai",
+   "wa-ga",
+   "i-adjectives"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ya-nado",
+  "title": "Listas incompletas: 〜や〜など",
+  "zh": "「〜や〜など」",
+  "pattern": "Nombre や Nombre（など）",
+  "level": 1,
+  "summary": "や une nombres como ejemplos de una lista abierta: «A, B y cosas así». など refuerza «etcétera».",
+  "explanation": "**と** da una lista **completa** («A y B, solo eso»). **や** da una lista **de ejemplos** («A, B y otras cosas»):\n\n- かばん の なか に ほん **と** ペン が あります = «en el bolso hay un libro y un bolígrafo» (y nada más).\n- かばん の なか に ほん **や** ペン が あります = «en el bolso hay un libro, un bolígrafo, etc.».\n\n**など** al final del último elemento refuerza el «etcétera» y es muy habitual: ほん や ペン **など** が あります.\n\n| Partícula | Lista | Español |\n|---|---|---|\n| AとB | cerrada | A y B |\n| AやB | abierta | A, B… |\n| AやBなど | abierta, explícita | A, B, etc. |\n\nComo と, や **solo une nombres**, nunca verbos ni adjetivos.\n\nLa partícula que corresponda (を, が, に…) va al final, detrás del último nombre (o de など): すし や てんぷら など **を** たべました.\n\nUso típico: hablar de aficiones, de lo que hay en una tienda, de lo que hiciste el fin de semana: しゅうまつ は そうじ や せんたく など を しました.",
+  "examples": [
+   {
+    "zh": "かばんの中に本やペンがあります。",
+    "py": "かばん の なか に ほん や ペン が あります。",
+    "es": "En el bolso hay libros, bolígrafos y cosas así."
+   },
+   {
+    "zh": "すしやてんぷらなどを食べました。",
+    "py": "すし や てんぷら など を たべました。",
+    "es": "Comí sushi, tempura, etc."
+   },
+   {
+    "zh": "京都や奈良などへ行きたいです。",
+    "py": "きょうと や なら など へ いきたい です。",
+    "es": "Quiero ir a Kioto, Nara y sitios así."
+   },
+   {
+    "zh": "コンビニでパンや飲み物を買います。",
+    "py": "コンビニ で パン や のみもの を かいます。",
+    "es": "En el konbini compro pan, bebidas y cosas así."
+   },
+   {
+    "zh": "週末はそうじやせんたくなどをしました。",
+    "py": "しゅうまつ は そうじ や せんたく など を しました。",
+    "es": "El fin de semana limpié, hice la colada, etc."
+   },
+   {
+    "zh": "サッカーやテニスが好きです。",
+    "py": "サッカー や テニス が すき です。",
+    "es": "Me gustan el fútbol, el tenis y deportes así."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "食べたや飲みました。",
+    "right": "食べたり飲んだりしました。",
+    "why": "や solo une nombres; para listas de acciones se usa 〜たり〜たりします (nivel siguiente)."
+   },
+   {
+    "wrong": "すしをやてんぷらを食べました。",
+    "right": "すしやてんぷらを食べました。",
+    "why": "La partícula (を) va solo al final de la lista, no en cada elemento."
+   },
+   {
+    "wrong": "わたしの家族は父や母です。(familia de dos personas)",
+    "right": "わたしの家族は父と母です。",
+    "why": "Si la lista es completa se usa と; や implica que hay más."
+   }
+  ],
+  "practice": {
+   "order": [
+    {
+     "zh": "つくえの上に本やノートがあります。",
+     "py": "つくえ の うえ に ほん や ノート が あります。",
+     "es": "Sobre la mesa hay libros, cuadernos y cosas así."
+    },
+    {
+     "zh": "りんごやバナナなどを買いました。",
+     "py": "りんご や バナナ など を かいました。",
+     "es": "Compré manzanas, plátanos, etc."
+    }
+   ],
+   "fill": [
+    {
+     "zh": "すし＿ラーメンなどが好きです。",
+     "answer": "や",
+     "options": [
+      "や",
+      "を",
+      "の",
+      "で"
+     ],
+     "es": "Me gustan el sushi, el ramen y cosas así."
+    },
+    {
+     "zh": "京都や大阪＿へ行きました。",
+     "answer": "など",
+     "options": [
+      "など",
+      "まで",
+      "より",
+      "だけ"
+     ],
+     "es": "Fui a Kioto, Osaka, etc."
+    }
+   ],
+   "translate": [
+    {
+     "zh": "へやにテレビやベッドがあります。",
+     "py": "へや に テレビ や ベッド が あります。",
+     "es": "En la habitación hay una tele, una cama y más cosas."
+    },
+    {
+     "zh": "コーヒーやお茶などを飲みます。",
+     "py": "コーヒー や おちゃ など を のみます。",
+     "es": "Bebo café, té y cosas así."
+    }
+   ]
+  },
+  "related": [
+   "to-and-with",
+   "mo",
+   "wo"
+  ],
+  "reviewed": false
+ }
+]

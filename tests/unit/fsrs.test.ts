@@ -56,7 +56,7 @@ describe("FSRS", () => {
     const stored = await db.cards.get(card.id);
     expect(stored?.reps).toBe(1);
     expect(await db.reviewLogs.count()).toBe(1);
-    const stat = await db.dailyStats.toArray();
+    const stat = await db.daily.toArray();
     expect(stat[0].reviews).toBe(1);
     const q2 = await buildQueue({ newPerDay: 3 });
     // la palabra ya introducida cuenta para el cupo: quedan 2 palabras nuevas

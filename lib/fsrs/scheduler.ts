@@ -3,6 +3,7 @@
  * programa repasos, registra logs y construye la cola de sesión (pendientes + nuevas del día).
  */
 import { createEmptyCard, fsrs, generatorParameters, Rating, State, type Card as FCard, type Grade, type RecordLogItem } from "ts-fsrs";
+import { getActiveLang } from "@/lib/languages/registry";
 import { db, type Card, type CardType, type ReviewLog, bumpDaily, todayKey } from "@/lib/db";
 
 export type { Grade };
@@ -94,6 +95,7 @@ export function schedule(card: Card, rating: Grade, opts: SchedulerOptions, now 
   const item = rec[rating];
   const next = fromFsrs(card, item.card, now);
   const log: Omit<ReviewLog, "id"> = {
+    lang: card.lang,
     cardId: card.id,
     wordId: card.wordId,
     rating,
@@ -113,10 +115,10 @@ export function schedule(card: Card, rating: Grade, opts: SchedulerOptions, now 
 export async function reviewCard(card: Card, rating: Grade, opts: SchedulerOptions, durationMs?: number): Promise<Card> {
   const now = Date.now();
   const { card: next, log } = schedule(card, rating, opts, now);
-  await db.transaction("rw", db.cards, db.reviewLogs, db.dailyStats, async () => {
+  await db.transaction("rw", db.cards, db.reviewLogs, db.daily, async () => {
     await db.cards.put(next);
     await db.reviewLogs.add({ ...log, durationMs });
-    await bumpDaily({ reviews: 1, correct: rating >= Rating.Good ? 1 : 0, exercises: 0 });
+    await bumpDaily({ reviews: 1, correct: rating >= Rating.Good ? 1 : 0, exercises: 0 }, card.lang);
   });
   return next;
 }
@@ -145,11 +147,11 @@ export interface QueueOptions {
 
 /** Construye la cola de repaso: pendientes (ordenadas por due) + nuevas (hasta el cupo diario restante). */
 export async function buildQueue(opts: QueueOptions, now = Date.now()): Promise<{ due: Card[]; fresh: Card[]; newToday: number }> {
-  const all = await db.cards.toArray();
+  const all = await db.cards.where("lang").equals(getActiveLang()).toArray();
   const wordFilter = opts.wordIds ? new Set(opts.wordIds) : undefined;
   let words: Map<string, { category: string }> | undefined;
   if (opts.categories?.length) {
-    const ws = await db.words.toArray();
+    const ws = await db.words.where("lang").equals(getActiveLang()).toArray();
     words = new Map(ws.map((w) => [w.id, { category: w.category }]));
   }
   const ok = (c: Card) => {
@@ -161,12 +163,12 @@ export async function buildQueue(opts: QueueOptions, now = Date.now()): Promise<
     return true;
   };
   const due = all.filter((c) => ok(c) && c.state !== 0 && c.due <= now).sort((a, b) => a.due - b.due);
-  const today = await db.dailyStats.get(todayKey());
+  const today = await db.daily.get(`${getActiveLang()}:${todayKey()}`);
   const newToday = today?.newWords ?? 0;
   // nuevas introducidas hoy = tarjetas con first review hoy; aproximamos con reviewLogs de hoy en estado New
   const startOfDay = new Date();
   startOfDay.setHours(0, 0, 0, 0);
-  const logsToday = await db.reviewLogs.where("review").above(startOfDay.getTime()).toArray();
+  const logsToday = await db.reviewLogs.where("[lang+review]").between([getActiveLang(), startOfDay.getTime()], [getActiveLang(), Infinity]).toArray();
   const newWordsToday = new Set(logsToday.filter((l) => l.state === 0).map((l) => l.wordId)).size;
   const remainingNew = Math.max(0, opts.newPerDay - newWordsToday);
   let fresh: Card[] = [];

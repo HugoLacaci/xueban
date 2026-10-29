@@ -1,0 +1,238 @@
+{
+  "id": "ja-u03",
+  "order": 4,
+  "title": "La familia",
+  "zh": "家族",
+  "description": "Hablar de tu familia y preguntar por la de otros (con las palabras de respeto), decir quién hay en casa y describir a las personas.",
+  "icon": "Baby",
+  "level": 1,
+  "lang": "ja",
+  "category": "Familia y personas",
+  "checkpoint": { "exercises": 15 },
+  "lessons": [
+    {
+      "id": "ja-u03-l1",
+      "title": "Mis hermanos",
+      "zh": "兄弟がいますか",
+      "goal": "Decir qué hermanos tienes con います / いません y contar personas.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "家族", "pinyin": "かぞく", "es": "familia" },
+        { "hanzi": "父", "pinyin": "ちち", "es": "(mi) padre" },
+        { "hanzi": "母", "pinyin": "はは", "es": "(mi) madre" },
+        { "hanzi": "兄", "pinyin": "あに", "es": "(mi) hermano mayor" },
+        { "hanzi": "姉", "pinyin": "あね", "es": "(mi) hermana mayor" },
+        { "hanzi": "弟", "pinyin": "おとうと", "es": "(mi) hermano menor" },
+        { "hanzi": "妹", "pinyin": "いもうと", "es": "(mi) hermana menor" },
+        { "hanzi": "兄弟", "pinyin": "きょうだい", "es": "hermanos" },
+        { "hanzi": "います", "pinyin": "います", "es": "hay; estar; tener (personas y animales)" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "Tu familia, en palabras humildes" },
+        {
+          "type": "dialogue",
+          "title": "¿Tienes hermanos?",
+          "lines": [
+            { "speaker": "けん", "zh": "ウーゴさんは 兄弟が いますか。", "py": "ウーゴ さん は きょうだい が います か。", "es": "Hugo, ¿tienes hermanos?" },
+            { "speaker": "ウーゴ", "zh": "はい、姉が 一人 います。弟も 一人 います。", "py": "はい、あね が ひとり います。おとうと も ひとり います。", "es": "Sí, tengo una hermana mayor. También tengo un hermano menor." },
+            { "speaker": "けん", "zh": "三人兄弟ですね。", "py": "さんにん きょうだい です ね。", "es": "Así que sois tres hermanos." },
+            { "speaker": "ウーゴ", "zh": "はい。姉は 二十六歳です。弟は 十八歳です。", "py": "はい。あね は にじゅうろくさい です。おとうと は じゅうはっさい です。", "es": "Sí. Mi hermana tiene veintiséis y mi hermano, dieciocho." },
+            { "speaker": "けん", "zh": "いいですね。私は 兄弟が いません。", "py": "いい です ね。わたし は きょうだい が いません。", "es": "Qué bien. Yo no tengo hermanos." },
+            { "speaker": "ウーゴ", "zh": "そうですか。一人っ子ですか。", "py": "そう です か。ひとりっこ です か。", "es": "Ah, ¿sí? ¿Eres hijo único?" },
+            { "speaker": "けん", "zh": "はい、そうです。", "py": "はい、そう です。", "es": "Sí, así es." }
+          ],
+          "notes": "一人 (ひとり) = una persona; un hermano. 一人っ子 (ひとりっこ) = hijo/a único/a. 三人兄弟 = familia de tres hermanos. La partícula が marca aquí lo que «hay» o «se tiene»: 姉が います."
+        },
+        { "type": "grammar", "id": "aru-iru" },
+        {
+          "type": "explain",
+          "title": "Hermano mayor o menor, y contar personas",
+          "markdown": "El japonés no tiene una palabra neutra para «hermano»: siempre dice si es **mayor o menor**.\n\n| | Mayor | Menor |\n|---|---|---|\n| Chico | 兄 あに | 弟 おとうと |\n| Chica | 姉 あね | 妹 いもうと |\n\n兄弟 (きょうだい) = «hermanos» en general (también si hay chicas).\n\n**Contar personas** con 〜人: las dos primeras son especiales.\n\n| 1 | 2 | 3 | 4 | 5 | ¿cuántos? |\n|---|---|---|---|---|---|\n| 一人 **ひとり** | 二人 **ふたり** | 三人 さんにん | 四人 **よにん** | 五人 ごにん | 何人 なんにん |\n\nComo con ひとつ/ふたつ, el número va después de la persona y sin partícula: 姉が **一人** います."
+        },
+        { "type": "exercises", "count": 10, "types": ["choose-meaning", "listen-choose", "pinyin-input", "matching", "fill-blank", "particle", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ja-u03-l2",
+      "title": "La familia de los demás",
+      "zh": "お父さんとお母さん",
+      "goal": "Usar las palabras de respeto (お父さん…) para la familia de otros y enumerar con と.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "お父さん", "pinyin": "おとうさん", "es": "padre (de otro); papá" },
+        { "hanzi": "お母さん", "pinyin": "おかあさん", "es": "madre (de otro); mamá" },
+        { "hanzi": "お兄さん", "pinyin": "おにいさん", "es": "hermano mayor (de otro)" },
+        { "hanzi": "お姉さん", "pinyin": "おねえさん", "es": "hermana mayor (de otro)" },
+        { "hanzi": "弟さん", "pinyin": "おとうとさん", "es": "hermano menor (de otro)" },
+        { "hanzi": "妹さん", "pinyin": "いもうとさん", "es": "hermana menor (de otro)" },
+        { "hanzi": "〜と", "pinyin": "と", "es": "y (entre nombres); con" },
+        { "hanzi": "何人", "pinyin": "なんにん", "es": "¿cuántas personas?" },
+        { "hanzi": "仕事", "pinyin": "しごと", "es": "trabajo" },
+        { "hanzi": "医者", "pinyin": "いしゃ", "es": "médico/a" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "La familia del otro, en palabras de respeto" },
+        {
+          "type": "dialogue",
+          "title": "La profesora pregunta por la familia",
+          "lines": [
+            { "speaker": "田中先生", "zh": "ウーゴさんは 何人家族ですか。", "py": "ウーゴ さん は なんにん かぞく です か。", "es": "Hugo, ¿cuántos sois en tu familia?" },
+            { "speaker": "ウーゴ", "zh": "五人家族です。父と 母と 姉と 弟と 私です。", "py": "ごにん かぞく です。ちち と はは と あね と おとうと と わたし です。", "es": "Somos cinco: mi padre, mi madre, mi hermana, mi hermano y yo." },
+            { "speaker": "田中先生", "zh": "お父さんの お仕事は 何ですか。", "py": "おとうさん の おしごと は なん です か。", "es": "¿En qué trabaja tu padre?" },
+            { "speaker": "ウーゴ", "zh": "父は 会社員です。母は 先生です。", "py": "ちち は かいしゃいん です。はは は せんせい です。", "es": "Mi padre es empleado de empresa. Mi madre es profesora." },
+            { "speaker": "田中先生", "zh": "そうですか。お姉さんは？", "py": "そう です か。おねえさん は？", "es": "Ya veo. ¿Y tu hermana?" },
+            { "speaker": "ウーゴ", "zh": "姉は 医者です。", "py": "あね は いしゃ です。", "es": "Mi hermana es médica." },
+            { "speaker": "田中先生", "zh": "すごいですね。", "py": "すごい です ね。", "es": "¡Qué bien!" }
+          ],
+          "notes": "何人家族ですか = ¿cuántos sois en la familia? (literalmente «¿familia de cuántas personas?»). お仕事: お de cortesía, porque es el trabajo de otro. すごい = increíble, genial. Fíjate: la profesora dice お父さん, お姉さん; Hugo responde 父, 姉."
+        },
+        { "type": "grammar", "id": "to-and-with" },
+        {
+          "type": "explain",
+          "title": "Dos juegos de palabras: «mi» familia y «tu» familia",
+          "markdown": "En japonés, la familia propia se nombra con palabras **humildes** cuando hablas con otros, y la familia de los demás con palabras **de respeto**:\n\n| | Mi familia (humilde) | La familia de otro (respeto) |\n|---|---|---|\n| padre | 父 ちち | お父さん おとうさん |\n| madre | 母 はは | お母さん おかあさん |\n| hermano mayor | 兄 あに | お兄さん おにいさん |\n| hermana mayor | 姉 あね | お姉さん おねえさん |\n| hermano menor | 弟 おとうと | 弟さん おとうとさん |\n| hermana menor | 妹 いもうと | 妹さん いもうとさん |\n| familia | 家族 かぞく | ご家族 ごかぞく |\n\n**Excepción**: cuando hablas **directamente** con tu madre o tu padre, los llamas お母さん / お父さん (como «mamá», «papá»). Y a los hermanos mayores también se les llama お兄さん / お姉さん dentro de casa.\n\nEl error típico de un hispanohablante es decir «私の お母さんは 先生です»: suena a que presumes de tu propia madre. Con otros, siempre **母は 先生です**."
+        },
+        { "type": "exercises", "count": 12, "types": ["choose-meaning", "listen-choose", "pinyin-input", "matching", "fill-blank", "particle", "order-words", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ja-u03-l3",
+      "title": "¿Cómo es tu hermano?",
+      "zh": "背が高いです",
+      "goal": "Describir a personas con adjetivos -い (afirmativos y negativos) y con la estructura AはBが〜.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "背", "pinyin": "せ", "es": "estatura; espalda" },
+        { "hanzi": "高い", "pinyin": "たかい", "es": "alto; caro" },
+        { "hanzi": "低い", "pinyin": "ひくい", "es": "bajo" },
+        { "hanzi": "大きい", "pinyin": "おおきい", "es": "grande" },
+        { "hanzi": "小さい", "pinyin": "ちいさい", "es": "pequeño" },
+        { "hanzi": "おもしろい", "pinyin": "おもしろい", "es": "divertido; interesante" },
+        { "hanzi": "やさしい", "pinyin": "やさしい", "es": "amable; cariñoso; fácil" },
+        { "hanzi": "長い", "pinyin": "ながい", "es": "largo" },
+        { "hanzi": "目", "pinyin": "め", "es": "ojo" },
+        { "hanzi": "どんな", "pinyin": "どんな", "es": "¿qué tipo de…?; ¿cómo es…?" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "Adjetivos para describir a alguien" },
+        {
+          "type": "dialogue",
+          "title": "¿Cómo son tus hermanos?",
+          "lines": [
+            { "speaker": "さくら", "zh": "ウーゴさんの 弟さんは どんな 人ですか。", "py": "ウーゴ さん の おとうとさん は どんな ひと です か。", "es": "Hugo, ¿cómo es tu hermano pequeño?" },
+            { "speaker": "ウーゴ", "zh": "弟は 背が 高いです。とても おもしろいです。", "py": "おとうと は せ が たかい です。とても おもしろい です。", "es": "Mi hermano es alto. Es muy divertido." },
+            { "speaker": "さくら", "zh": "そうですか。お姉さんは？", "py": "そう です か。おねえさん は？", "es": "Ah, ¿sí? ¿Y tu hermana?" },
+            { "speaker": "ウーゴ", "zh": "姉は 背が 高くないです。でも、とても やさしいです。", "py": "あね は せ が たかくない です。でも、とても やさしい です。", "es": "Mi hermana no es alta. Pero es muy cariñosa." },
+            { "speaker": "さくら", "zh": "いいですね。私の 兄は 目が 大きいです。", "py": "いい です ね。わたし の あに は め が おおきい です。", "es": "Qué bien. Mi hermano mayor tiene los ojos grandes." },
+            { "speaker": "ウーゴ", "zh": "さくらさんも 目が 大きいですね。", "py": "さくら さん も め が おおきい です ね。", "es": "Tú también tienes los ojos grandes, Sakura." }
+          ],
+          "notes": "とても = muy. でも = pero (al principio de la frase). 高くないです es la negativa de 高いです: lo explica el punto de gramática."
+        },
+        { "type": "grammar", "id": "i-adjectives" },
+        { "type": "grammar", "id": "wa-ga" },
+        {
+          "type": "explain",
+          "title": "«Es alto» = «la estatura es alta»",
+          "markdown": "Para describir partes del cuerpo o rasgos, el japonés usa **A は B が adjetivo**: «en cuanto a A, B es…».\n\n| Japonés | Literal | Español natural |\n|---|---|---|\n| 弟は **背が** 高いです | mi hermano: la estatura es alta | mi hermano es alto |\n| 兄は **目が** 大きいです | mi hermano: los ojos son grandes | mi hermano tiene los ojos grandes |\n| 姉は **髪が** 長いです | mi hermana: el pelo es largo | mi hermana tiene el pelo largo |\n\nNo hace falta el verbo «tener»: en japonés no se dice «tiene ojos grandes», sino que «los ojos son grandes».\n\nOjo con **背が 低い** (bajo de estatura): 低い es «bajo», no 小さい. 小さい se usa para cosas o niños pequeños."
+        },
+        { "type": "exercises", "count": 12, "types": ["choose-meaning", "listen-choose", "pinyin-input", "fill-blank", "conjugation", "particle", "translate-to-es", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ja-u03-l4",
+      "title": "Una madre muy activa",
+      "zh": "元気な人です",
+      "goal": "Describir el carácter de las personas (y de tus mascotas) con adjetivos -な.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "元気", "pinyin": "げんき", "es": "activo; lleno de energía; sano" },
+        { "hanzi": "きれい", "pinyin": "きれい", "es": "bonito; guapo; limpio" },
+        { "hanzi": "静か", "pinyin": "しずか", "es": "tranquilo; callado; silencioso" },
+        { "hanzi": "にぎやか", "pinyin": "にぎやか", "es": "animado; bullicioso" },
+        { "hanzi": "好き", "pinyin": "すき", "es": "que gusta; favorito" },
+        { "hanzi": "料理", "pinyin": "りょうり", "es": "cocina; comida; plato" },
+        { "hanzi": "あまり", "pinyin": "あまり", "es": "no mucho (con negativo)" },
+        { "hanzi": "犬", "pinyin": "いぬ", "es": "perro" },
+        { "hanzi": "猫", "pinyin": "ねこ", "es": "gato" },
+        { "hanzi": "うち", "pinyin": "うち", "es": "casa; mi casa; mi familia" }
+      ],
+      "steps": [
+        { "type": "vocab" },
+        {
+          "type": "dialogue",
+          "title": "Padres, perros y gatos",
+          "lines": [
+            { "speaker": "けん", "zh": "ウーゴさんの お母さんは どんな 人ですか。", "py": "ウーゴ さん の おかあさん は どんな ひと です か。", "es": "Hugo, ¿cómo es tu madre?" },
+            { "speaker": "ウーゴ", "zh": "母は とても 元気な 人です。料理が 好きです。", "py": "はは は とても げんき な ひと です。りょうり が すき です。", "es": "Mi madre es una persona muy activa. Le gusta cocinar." },
+            { "speaker": "けん", "zh": "いいですね。お父さんは？", "py": "いい です ね。おとうさん は？", "es": "Qué bien. ¿Y tu padre?" },
+            { "speaker": "ウーゴ", "zh": "父は あまり にぎやかじゃありません。静かな 人です。", "py": "ちち は あまり にぎやか じゃ ありません。しずか な ひと です。", "es": "Mi padre no es muy hablador. Es una persona tranquila." },
+            { "speaker": "けん", "zh": "うちの 犬は とても にぎやかですよ。", "py": "うち の いぬ は とても にぎやか です よ。", "es": "Mi perro sí que es escandaloso." },
+            { "speaker": "ウーゴ", "zh": "うちには 猫が います。きれいな 猫です。", "py": "うち に は ねこ が います。きれい な ねこ です。", "es": "En mi casa tenemos un gato. Es un gato precioso." }
+          ],
+          "notes": "うちの 犬 = mi perro / el perro de mi casa: うち se usa mucho para hablar de lo de tu familia. うちには = en mi casa (に de lugar: lo verás en la unidad 7). 料理が 好きです = le gusta cocinar: 好き funciona con が."
+        },
+        { "type": "grammar", "id": "na-adjectives" },
+        {
+          "type": "explain",
+          "title": "-い y -な: dos tipos de adjetivos",
+          "markdown": "Los adjetivos japoneses son de **dos familias**, y se comportan distinto:\n\n| | Adjetivo -い | Adjetivo -な |\n|---|---|---|\n| Ejemplo | 高い, 大きい | 元気, 静か, きれい |\n| Ante un nombre | 高い 人 | 元気**な** 人 |\n| Con です | 高いです | 元気です |\n| Negativo | 高**くない**です | 元気**じゃありません** |\n\n**Trampa clásica**: **きれい** y **きらい** (odiar) terminan en い pero son adjetivos **-な**: きれいな 人, きれいじゃありません (nunca ✗きれくない).\n\n**好き** (gustar) también es -な, y lo que gusta va con **が**: 猫**が** 好きです (me gustan los gatos). Fíjate: en español la cosa es el sujeto («me gustan los gatos») y en japonés también se marca con が, no con を."
+        },
+        { "type": "exercises", "count": 12, "types": ["choose-meaning", "listen-choose", "fill-blank", "conjugation", "particle", "order-words", "translate-to-es", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ja-u03-l5",
+      "title": "Lectura y repaso de la unidad",
+      "zh": "ふくしゅう",
+      "goal": "Hablar de una foto de familia y leer la descripción de la familia de Hugo.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "写真", "pinyin": "しゃしん", "es": "foto" },
+        { "hanzi": "この", "pinyin": "この", "es": "este/a (+ nombre)" },
+        { "hanzi": "その", "pinyin": "その", "es": "ese/a (+ nombre)" },
+        { "hanzi": "あの", "pinyin": "あの", "es": "aquel/la (+ nombre)" },
+        { "hanzi": "人", "pinyin": "ひと", "es": "persona" },
+        { "hanzi": "男の子", "pinyin": "おとこのこ", "es": "niño; chico" },
+        { "hanzi": "女の子", "pinyin": "おんなのこ", "es": "niña; chica" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "Para hablar de fotos" },
+        {
+          "type": "dialogue",
+          "title": "La foto del móvil",
+          "lines": [
+            { "speaker": "さくら", "zh": "これは ウーゴさんの 家族の 写真ですか。", "py": "これ は ウーゴ さん の かぞく の しゃしん です か。", "es": "¿Esta es una foto de tu familia, Hugo?" },
+            { "speaker": "ウーゴ", "zh": "はい、そうです。この 人は 父です。", "py": "はい、そう です。この ひと は ちち です。", "es": "Sí. Este es mi padre." },
+            { "speaker": "さくら", "zh": "その 女の人は お姉さんですか。", "py": "その おんな の ひと は おねえさん です か。", "es": "¿Esa mujer es tu hermana?" },
+            { "speaker": "ウーゴ", "zh": "いいえ、母です。姉は この 人です。", "py": "いいえ、はは です。あね は この ひと です。", "es": "No, es mi madre. Mi hermana es esta." },
+            { "speaker": "さくら", "zh": "お母さん、若いですね！この 小さい 男の子は？", "py": "おかあさん、わかい です ね！この ちいさい おとこのこ は？", "es": "¡Qué joven es tu madre! ¿Y este niño pequeño?" },
+            { "speaker": "ウーゴ", "zh": "姉の 子どもです。五歳です。", "py": "あね の こども です。ごさい です。", "es": "Es el hijo de mi hermana. Tiene cinco años." }
+          ],
+          "notes": "この / その / あの van siempre delante de un nombre (この 人), mientras que これ / それ / あれ van solos. 女の人 = mujer (adulta). 姉の 子ども = el hijo de mi hermana, mi sobrino."
+        },
+        {
+          "type": "reading",
+          "title": "La familia de Hugo",
+          "text": "私の 家族は 五人です。父と 母と 姉と 弟と 私です。父は 会社員です。静かな 人です。母は 先生です。とても 元気です。料理が 好きです。姉は 医者です。姉は 背が 低いです。でも、とても やさしいです。姉には 子どもが 一人 います。五歳の 男の子です。弟は 十八歳です。背が 高いです。うちには 猫も います。",
+          "es": "Mi familia somos cinco: mi padre, mi madre, mi hermana mayor, mi hermano menor y yo. Mi padre es empleado de empresa. Es una persona tranquila. Mi madre es profesora. Tiene mucha energía. Le gusta cocinar. Mi hermana es médica. Es bajita. Pero es muy cariñosa. Mi hermana tiene un hijo. Es un niño de cinco años. Mi hermano tiene dieciocho años. Es alto. En casa también tenemos un gato.",
+          "questions": [
+            { "q": "¿En qué trabaja la madre de Hugo?", "options": ["Es médica", "Es profesora", "Es empleada de empresa", "No trabaja"], "answer": 1, "explain": "母は 先生です。" },
+            { "q": "¿Cómo es la hermana de Hugo?", "options": ["Alta y tranquila", "Baja y cariñosa", "Joven y bulliciosa", "Alta y divertida"], "answer": 1, "explain": "姉は 背が 低いです。でも、とても やさしいです。" },
+            { "q": "¿Qué significa うちには 猫も います?", "options": ["En casa también hay un gato", "En casa no hay gatos", "Me gustan los gatos", "Mi gato es muy tranquilo"], "answer": 0, "explain": "うち = casa; 猫も います = también hay un gato." }
+          ]
+        },
+        { "type": "exercises", "count": 12, "types": ["matching", "choose-meaning", "listen-choose", "fill-blank", "particle", "build-sentence", "translate-to-es", "dictation", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    }
+  ]
+}

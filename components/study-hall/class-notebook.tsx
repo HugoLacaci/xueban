@@ -1,12 +1,13 @@
 "use client";
 import { useEffect, useMemo, useState } from "react";
-import Link from "next/link";
+import Link from "@/lib/languages/link";
 import { useLiveQuery } from "dexie-react-hooks";
 import { ArrowLeft, Check, Layers, Plus, Save, Trash2 } from "lucide-react";
 import { db, upsertWord, uuid, type Note } from "@/lib/db";
 import { parseImport } from "@/lib/import";
 import { lookup, useDictionary } from "@/lib/dictionary/service";
-import { wordPinyin } from "@/lib/pinyin/convert";
+import { readingOf as wordPinyin } from "@/lib/languages/helpers";
+import { getActiveLang } from "@/lib/languages/registry";
 import { findExampleFor } from "@/lib/examples";
 import { useKnowledge } from "@/lib/knowledge";
 import { onWordSaved } from "@/lib/anki/hooks";
@@ -15,13 +16,23 @@ import { Badge, Card, Input, Label, PageHeader, Textarea } from "@/components/ui
 import { toast } from "@/components/ui/toast";
 import { InkDivider } from "@/components/ornament";
 import { Markdown } from "@/components/learn/markdown";
-import { Pinyin } from "@/components/zh/pinyin";
+import { Pinyin } from "@/components/target/reading";
 import { formatDate, todayKey } from "@/lib/utils-date";
 import { cn } from "@/lib/utils";
+import { targetLang } from "@/lib/languages/registry";
+import { ui, pageNative } from "@/lib/languages/ui-text";
+import { getActivePack } from "@/lib/languages/registry";
+import { Mixed } from "@/components/target/mixed";
 
 /** Cuaderno de clase: una página por clase (fecha, vocabulario, gramática, deberes). El vocabulario pasa a flashcards con un clic. */
+const NOTEBOOK_PLACEHOLDER: Record<string, string> = {
+  zh: "地铁\n出租车,chūzūchē,taxi\n我坐地铁去学校。| wǒ zuò dìtiě qù xuéxiào | Voy a la escuela en metro",
+  ja: "電車\nタクシー,takushii,taxi\n電車で学校に行きます。| densha de gakkō ni ikimasu | Voy a la escuela en tren",
+  ko: "지하철\n택시,taeksi,taxi\n지하철로 학교에 가요. | jihacheollo hakgyoe gayo | Voy a la escuela en metro",
+};
+
 export function ClassNotebook() {
-  const classes = useLiveQuery(() => db.notes.where("kind").equals("class").reverse().sortBy("classDate"), []) ?? [];
+  const classes = useLiveQuery(() => db.notes.where("[lang+kind]").equals([getActiveLang(), "class"]).reverse().sortBy("classDate"), []) ?? [];
   const deck = useKnowledge((s) => s.deck);
   const dictStatus = useDictionary((s) => s.status);
   const load = useDictionary((s) => s.load);
@@ -55,7 +66,7 @@ export function ClassNotebook() {
 
   const create = async () => {
     const id = uuid();
-    const n: Note = { id, title: `Clase ${formatDate(new Date(), { day: "numeric", month: "long" })}`, markdown: "", wordIds: [], kind: "class", classDate: todayKey(), createdAt: Date.now(), updatedAt: Date.now() };
+    const n: Note = { id, lang: getActiveLang(), title: `Clase ${formatDate(new Date(), { day: "numeric", month: "long" })}`, markdown: "", wordIds: [], kind: "class", classDate: todayKey(), createdAt: Date.now(), updatedAt: Date.now() };
     await db.notes.put(n);
     setSel(id);
   };
@@ -97,8 +108,8 @@ export function ClassNotebook() {
       </Link>
       <PageHeader
         title="Cuaderno de clase"
-        zh="课堂笔记"
-        subtitle="Una página por clase de la escuela. Escribe el vocabulario (una palabra por línea: 咖啡 o 咖啡,kāfēi,café) y pásalo a flashcards y Anki con un clic."
+        zh={pageNative("notebook")}
+        subtitle={`Una página por clase de la escuela. Escribe el vocabulario (una palabra por línea: ${ui().examples.word} o ${ui().examples.word},${getActivePack().reading(ui().examples.word)},café) y pásalo a flashcards y Anki con un clic.`}
         action={
           <Button onClick={() => void create()}>
             <Plus /> Nueva clase
@@ -116,7 +127,7 @@ export function ClassNotebook() {
                   className={cn("relative w-full rounded-[8px] px-2.5 py-1.5 text-left text-sm transition-colors duration-[var(--dur-ui)] hover:bg-paper-sunk", sel === c.id && "bg-paper-sunk")}
                 >
                   {sel === c.id ? <span className="absolute inset-y-1.5 left-0 w-[3px] rounded-r bg-cinnabar" aria-hidden="true" /> : null}
-                  <span className="block truncate font-medium text-ink">{c.title}</span>
+                  <span className="block truncate font-medium text-ink"><Mixed>{c.title}</Mixed></span>
                   <span className="tabular block text-[11px] text-ink-faint">
                     {c.classDate} · {c.wordIds.length} palabras
                   </span>
@@ -125,8 +136,8 @@ export function ClassNotebook() {
             ))}
             {!classes.length ? (
               <li className="px-2 py-3 text-xs leading-relaxed text-ink-faint">
-                <span lang="zh-CN" className="zh-kai block text-base text-ink">
-                  温故而知新。
+                <span lang={targetLang()} className="zh-kai block text-base text-ink">
+                  {ui().notebookQuote.text}
                 </span>
                 Pulsa «Nueva clase» después de cada clase. 2 minutos de apuntes = vocabulario en tu repaso de mañana.
               </li>
@@ -149,7 +160,7 @@ export function ClassNotebook() {
                 <Input id="cn-date" type="date" value={date} onChange={(e) => setDate(e.target.value)} className="tabular" />
               </div>
             </div>
-            <InkDivider label="生词" className="my-1" />
+            <InkDivider label={ui().notebook.vocab} className="my-1" />
             <div>
               <div className="mb-1.5 flex flex-wrap items-center justify-between gap-2">
                 <Label htmlFor="cn-vocab">Vocabulario de la clase</Label>
@@ -157,7 +168,7 @@ export function ClassNotebook() {
                   <Layers /> Añadir {pending} a flashcards
                 </Button>
               </div>
-              <Textarea id="cn-vocab" lang="zh-CN" className="zh min-h-32 text-base leading-relaxed" value={vocab} onChange={(e) => setVocab(e.target.value)} placeholder={"地铁\n出租车,chūzūchē,taxi\n我坐地铁去学校。| wǒ zuò dìtiě qù xuéxiào | Voy a la escuela en metro"} />
+              <Textarea id="cn-vocab" lang={targetLang()} className="zh min-h-32 text-base leading-relaxed" value={vocab} onChange={(e) => setVocab(e.target.value)} placeholder={NOTEBOOK_PLACEHOLDER[getActiveLang()]} />
               {rows.length ? (
                 <ul className="mt-2 flex flex-wrap gap-1.5">
                   {rows.map((r) => {
@@ -165,7 +176,7 @@ export function ClassNotebook() {
                     const inDeck = deck.has(r.hanzi);
                     return (
                       <li key={r.line} className={cn("flex items-center gap-1.5 rounded-[8px] border px-2 py-1 text-sm", inDeck ? "border-celadon/40 bg-celadon/8" : "border-line bg-paper-raised")}>
-                        <span lang="zh-CN" className="zh-serif text-base text-ink">
+                        <span lang={targetLang()} className="zh-serif text-base text-ink">
                           {r.hanzi}
                         </span>
                         <Pinyin text={r.pinyin ?? e?.p ?? ""} className="text-xs" />
@@ -177,13 +188,13 @@ export function ClassNotebook() {
                 </ul>
               ) : null}
             </div>
-            <InkDivider label="语法 · 作业" className="my-1" />
+            <InkDivider label={ui().notebook.grammarHw} className="my-1" />
             <div className="grid gap-3 sm:grid-cols-2">
               <div>
                 <Label htmlFor="cn-gram" className="mb-1.5 block">
                   Gramática vista (Markdown)
                 </Label>
-                <Textarea id="cn-gram" className="min-h-24" value={grammar} onChange={(e) => setGrammar(e.target.value)} placeholder="- 是…的 para preguntar cuándo/dónde" />
+                <Textarea id="cn-gram" className="min-h-24" value={grammar} onChange={(e) => setGrammar(e.target.value)} placeholder={`- ${ui().examples.grammar} …`} />
               </div>
               <div>
                 <Label htmlFor="cn-hw" className="mb-1.5 block">

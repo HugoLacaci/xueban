@@ -4,27 +4,33 @@ import { Moon, Sun, Plus, Search, Check } from "lucide-react";
 import { useSettings } from "@/lib/settings";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
-import { Badge, Card, Input, Kbd, Label, Progress, Select, Skeleton, Slider, Spinner, Switch, Tabs, TabsContent, TabsList, TabsTrigger, Textarea, EmptyState, SectionTitle, PageHeader, Tooltip, TooltipProvider } from "@/components/ui/primitives";
+import { Badge, Card, Input, Kbd, Label, Progress, Select, Skeleton, Slider, Spinner, Switch, Tabs, TabsContent, TabsList, TabsTrigger, Textarea, EmptyState, SectionTitle, PageHeader, Tooltip, TooltipProvider, Option } from "@/components/ui/primitives";
 import { toast } from "@/components/ui/toast";
 import { Seal, SealTag, Lattice, MoonGate, InkDivider, Enso, BrushCheck, FretBorder, CloudBorder, ScreenFrame, ShanShui, PlumBranch, XiaoMo, TianZiGe, Lantern } from "@/components/ornament";
-import { HanziCard } from "@/components/zh/hanzi-card";
-import { Pinyin } from "@/components/zh/pinyin";
-import { Hanzi } from "@/components/zh/chinese-text";
+import { HanziCard } from "@/components/target/word-card";
+import { Pinyin } from "@/components/target/reading";
+import { Hanzi } from "@/components/target/target-text";
+import { LANG_META, LANGS } from "@/lib/languages/registry";
+import { usePack } from "@/lib/languages/provider";
+import { STYLE_DATA } from "./style-data";
+import { LangPortalCompact, LangPortalHero } from "@/components/layout/lang-portal";
+import NextLink from "next/link";
+import { Mixed } from "@/components/target/mixed";
 
-const COLORS: { token: string; zh: string; name: string; use: string; text?: string }[] = [
-  { token: "paper", zh: "宣纸", name: "xuānzhǐ", use: "fondo principal" },
-  { token: "paper-raised", zh: "月白", name: "yuèbái", use: "tarjetas" },
-  { token: "paper-sunk", zh: "缃色", name: "xiāngsè", use: "zonas hundidas, inputs" },
-  { token: "line", zh: "素", name: "sù", use: "bordes 1 px" },
-  { token: "ink", zh: "墨", name: "mò", use: "texto principal", text: "paper" },
-  { token: "ink-soft", zh: "淡墨", name: "dànmò", use: "texto secundario", text: "paper" },
-  { token: "ink-faint", zh: "枯墨", name: "kūmò", use: "texto terciario (≥ 4,5:1)", text: "paper" },
-  { token: "cinnabar", zh: "朱砂", name: "zhūshā", use: "CTA, sellos, marca (≤ 5 %)", text: "paper-raised" },
-  { token: "cinnabar-ink", zh: "胭脂", name: "yānzhi", use: "hover del bermellón", text: "paper-raised" },
-  { token: "celadon", zh: "青瓷", name: "qīngcí", use: "éxito, conocido", text: "paper-raised" },
-  { token: "indigo", zh: "黛蓝", name: "dàilán", use: "enlaces, info", text: "paper-raised" },
-  { token: "gold", zh: "赭金", name: "zhějīn", use: "aviso, logros", text: "ink" },
-  { token: "danger", zh: "绛", name: "jiàng", use: "error (≠ acento)", text: "paper-raised" },
+const COLOR_TOKENS: { token: string; use: string; text?: string }[] = [
+  { token: "paper", use: "fondo principal" },
+  { token: "paper-raised", use: "tarjetas" },
+  { token: "paper-sunk", use: "zonas hundidas, inputs" },
+  { token: "line", use: "bordes 1 px" },
+  { token: "ink", use: "texto principal", text: "paper" },
+  { token: "ink-soft", use: "texto secundario", text: "paper" },
+  { token: "ink-faint", use: "texto terciario (≥ 4,5:1)", text: "paper" },
+  { token: "cinnabar", use: "CTA, sellos, marca (≤ 5 %)", text: "paper-raised" },
+  { token: "cinnabar-ink", use: "hover del bermellón", text: "paper-raised" },
+  { token: "celadon", use: "éxito, conocido", text: "paper-raised" },
+  { token: "indigo", use: "enlaces, info", text: "paper-raised" },
+  { token: "gold", use: "aviso, logros", text: "ink" },
+  { token: "danger", use: "error (≠ acento)", text: "paper-raised" },
 ];
 
 const TYPE_SCALE = [12, 14, 16, 20, 25, 31, 39, 49, 61, 76];
@@ -35,21 +41,70 @@ export function StyleGuide() {
   const [sw, setSw] = useState(true);
   const [tab, setTab] = useState("a");
   const [stamped, setStamped] = useState(0);
+  const [portalOpen, setPortalOpen] = useState<"zh" | "ja" | "ko">("zh");
+  const pack = usePack();
+  const D = STYLE_DATA[pack.id];
+  const COLORS = COLOR_TOKENS.map((c) => ({ ...c, zh: D.colors[c.token]?.native ?? "", name: D.colors[c.token]?.name ?? "" }));
+  const { Landscape, Branch, DailyShape, Pattern } = pack.theme.ornaments;
   const toggleTheme = () => void update({ theme: theme === "dark" ? "light" : "dark" });
 
   return (
     <TooltipProvider>
       <div className="space-y-12 pb-20">
         <PageHeader
-          zh="设计"
+          zh={pack.theme.name}
           title="Guía de estilo viva"
-          subtitle="宣纸与墨 · papel y tinta. Tokens, tipografía, componentes y ornamentos tal como se renderizan en la app. Cambia el tema para revisar ambos modos."
+          subtitle={`${D.tagline}. Tokens, tipografía, componentes y ornamentos tal como se renderizan en la app. Cambia el tema para revisar ambos modos y el idioma para ver cada piel.`}
           action={
             <Button variant="outline" onClick={toggleTheme}>
               {theme === "dark" ? <Sun /> : <Moon />} Tema {theme === "dark" ? "claro" : "oscuro"}
             </Button>
           }
         />
+
+        <nav className="-mt-6 flex flex-wrap gap-1.5" aria-label="Idioma de la guía">
+          {LANGS.map((l) => (
+            <NextLink key={l} href={`/design?lang=${l}`} className={cn("rounded-full border px-3 py-1 text-sm", l === pack.id ? "border-ink bg-ink text-paper" : "border-line text-ink-soft")}>
+              <span lang={LANG_META[l].bcp47}><Mixed>{LANG_META[l].names.native}</Mixed></span> · <Mixed>{LANG_META[l].names.es}</Mixed>
+            </NextLink>
+          ))}
+        </nav>
+
+        {/* ---------- Piel del idioma ---------- */}
+        <section id="skin">
+          <SectionTitle>0 · Piel del idioma: <Mixed>{pack.theme.nameEs}</Mixed></SectionTitle>
+          <p className="mb-4 max-w-2xl text-sm text-ink-faint"><Mixed>{pack.theme.description}</Mixed></p>
+          <div className="grid gap-4 md:grid-cols-2">
+            <Card className="space-y-3">
+              <Landscape height={130} phase="day" className="rounded-[10px]" />
+              <div className="flex flex-wrap items-end gap-4">
+                <Branch progress={0.7} className="h-28 w-44" label="70 %" />
+                <DailyShape progress={0.6} size={96} label="60 %" />
+                <Seal text={D.seals.brand} size={64} />
+                <Seal text={D.seals.user} size={56} rotate={-4} />
+              </div>
+            </Card>
+            <Card className="relative space-y-3 overflow-hidden">
+              {Pattern ? (
+                <div className="text-ink">
+                  <Pattern opacity={0.08} />
+                </div>
+              ) : null}
+              <div className="relative">
+                <p className="text-xs uppercase tracking-wide text-ink-faint">Motivos</p>
+                <p lang={pack.bcp47} className="mt-1 text-lg text-ink">
+                  {pack.theme.motifs.join(" · ")}
+                </p>
+                <p className="mt-3 text-xs uppercase tracking-wide text-ink-faint">Prohibido</p>
+                <ul className="mt-1 list-disc pl-5 text-sm text-ink-soft">
+                  {pack.theme.prohibited.map((p) => (
+                    <li key={p}><Mixed>{p}</Mixed></li>
+                  ))}
+                </ul>
+              </div>
+            </Card>
+          </div>
+        </section>
 
         {/* ---------- Colores ---------- */}
         <section id="color">
@@ -59,37 +114,43 @@ export function StyleGuide() {
             {COLORS.map((c) => (
               <div key={c.token} className="overflow-hidden rounded-[var(--radius-card)] border border-line bg-paper-raised">
                 <div className="flex h-20 items-end justify-between p-2" style={{ background: `rgb(var(--${c.token}))`, color: c.text ? `rgb(var(--${c.text}))` : "rgb(var(--ink))" }}>
-                  <span className="zh-kai text-2xl" lang="zh-CN">
-                    {c.zh}
+                  <span className="zh-kai text-2xl" lang={pack.bcp47}>
+                    <Mixed>{c.zh}</Mixed>
                   </span>
-                  <span className="text-[11px]">{c.name}</span>
+                  <span className="text-[11px]"><Mixed>{c.name}</Mixed></span>
                 </div>
                 <div className="p-2 text-xs">
                   <p className="font-mono text-ink">--{c.token}</p>
-                  <p className="text-ink-faint">{c.use}</p>
+                  <p className="text-ink-faint"><Mixed>{c.use}</Mixed></p>
                 </div>
               </div>
             ))}
           </div>
-          <h3 className="mb-2 mt-6 text-sm font-medium text-ink">Tonos (esquema 学伴)</h3>
+          <h3 className="mb-2 mt-6 text-sm font-medium text-ink"><Mixed>{pack.prosody.name}</Mixed> (paleta de prosodia)</h3>
           <div className="flex flex-wrap gap-2">
             {[
-              ["1", "mā", "朱 alto plano"],
-              ["2", "má", "青 ascendente"],
-              ["3", "mǎ", "靛 bajo"],
-              ["4", "mà", "紫 descendente"],
-              ["5", "ma", "灰 neutro"],
+              ...(pack.id === "zh"
+                ? [
+                    ["1", "mā", "alto plano"],
+                    ["2", "má", "ascendente"],
+                    ["3", "mǎ", "bajo"],
+                    ["4", "mà", "descendente"],
+                    ["5", "ma", "neutro"],
+                  ]
+                : (pack.prosody.legend ?? []).map((x, i) => [String(i + 1), "●", x.label])),
             ].map(([n, py, label]) => (
               <div key={n} className="flex items-center gap-2 rounded-[8px] border border-line bg-paper-raised px-3 py-2">
                 <span className="size-4 rounded-full" style={{ background: `rgb(var(--tone-${n}))` }} />
                 <span className="text-lg font-medium" style={{ color: `rgb(var(--tone-${n}))` }}>
-                  {py}
+                  <Mixed>{py}</Mixed>
                 </span>
-                <span className="text-xs text-ink-faint">{label}</span>
+                <span className="text-xs text-ink-faint">
+                  <Mixed>{label}</Mixed>
+                </span>
               </div>
             ))}
             <div className="flex items-center gap-2 rounded-[8px] border border-line bg-paper-raised px-3 py-2">
-              <Pinyin text="nǐ hǎo, xué bàn" className="text-lg" />
+              <Hanzi text={D.card1.example} size="lg" />
             </div>
           </div>
         </section>
@@ -104,46 +165,27 @@ export function StyleGuide() {
                 <div key={px} className="flex items-baseline gap-3 overflow-hidden">
                   <span className="w-8 shrink-0 text-right font-mono text-[10px] text-ink-faint">{px}</span>
                   <span className={cn("truncate leading-tight text-ink", px >= 25 && "font-serif-es")} style={{ fontSize: px }}>
-                    Aprender chino con calma
+                    {`Aprender ${pack.meta.names.adjective} con calma`}
                   </span>
                 </div>
               ))}
               <p className="tabular text-sm text-ink-soft">Números tabulares: 1 234 · 0,90 · 12:45</p>
             </Card>
             <Card className="space-y-4">
-              <p className="text-xs uppercase tracking-wide text-ink-faint">Familias chinas (lang=zh-CN)</p>
-              {[
-                ["zh", "Noto Sans SC · interfaz", "你好，我叫雨果。"],
-                ["zh-serif", "Noto Serif SC · protagonista", "学而时习之，不亦说乎"],
-                ["zh-kai", "LXGW WenKai · estudio / caligrafía", "千里之行，始于足下"],
-                ["zh-display", "LXGW WenKai · sellos y marca (solo decorativo)", "学伴"],
-              ].map(([cls, label, sample]) => (
+              <p className="text-xs uppercase tracking-wide text-ink-faint">{`Familias de ${pack.meta.names.adjective} (lang=${pack.bcp47})`}</p>
+              {D.families.map(([cls, label, sample]) => (
                 <div key={cls}>
-                  <p className="text-[11px] text-ink-faint">{label}</p>
-                  <p className={cn(cls, "text-2xl leading-relaxed text-ink")} lang="zh-CN">
-                    {sample}
+                  <p className="text-[11px] text-ink-faint">
+                    <Mixed>{label}</Mixed>
+                  </p>
+                  <p className={cn(cls, "text-2xl leading-relaxed text-ink")} lang={pack.bcp47}>
+                    <Mixed>{sample}</Mixed>
                   </p>
                 </div>
               ))}
               <div>
-                <p className="text-[11px] text-ink-faint">Ruby pinyin · 45–50 % · sin salto al ocultarlo</p>
-                <p className="text-2xl" lang="zh-CN">
-                  <ruby className="zh">
-                    我<rt style={{ color: "rgb(var(--tone-3))" }}>wǒ</rt>
-                  </ruby>
-                  <ruby className="zh">
-                    爱<rt style={{ color: "rgb(var(--tone-4))" }}>ài</rt>
-                  </ruby>
-                  <ruby className="zh">
-                    学<rt style={{ color: "rgb(var(--tone-2))" }}>xué</rt>
-                  </ruby>
-                  <ruby className="zh">
-                    中<rt style={{ color: "rgb(var(--tone-1))" }}>zhōng</rt>
-                  </ruby>
-                  <ruby className="zh">
-                    文<rt style={{ color: "rgb(var(--tone-2))" }}>wén</rt>
-                  </ruby>
-                </p>
+                <p className="text-[11px] text-ink-faint">Ruby {pack.readingAid.name.toLowerCase()} · 45–50 % · sin salto al ocultarlo</p>
+                <Hanzi text={D.card1.example} size="xl" />
               </div>
             </Card>
           </div>
@@ -187,7 +229,7 @@ export function StyleGuide() {
               <Button variant="outline" onClick={() => toast.error("Sin conexión con Anki", "Abre Anki y comprueba AnkiConnect.")}>
                 Toast error
               </Button>
-              <Button variant="outline" onClick={() => toast.info("Pinyin oculto", "Pulsa P para mostrarlo.")}>
+              <Button variant="outline" onClick={() => toast.info(`${pack.readingAid.name} oculto`, "Pulsa P para mostrarlo.")}>
                 Toast info
               </Button>
               <Tooltip label="Tooltip de papel">
@@ -207,17 +249,17 @@ export function StyleGuide() {
             <div className="space-y-3">
               <div>
                 <Label htmlFor="sg-in">Campo</Label>
-                <Input id="sg-in" placeholder="Escribe hanzi, pinyin o español…" />
+                <Input id="sg-in" placeholder={`Escribe en ${pack.meta.names.adjective}, ${pack.readingAid.name.toLowerCase()} o español…`} />
               </div>
               <div>
                 <Label htmlFor="sg-in2">Con error</Label>
-                <Input id="sg-in2" defaultValue="nǐ hào" aria-invalid className="border-danger focus-visible:border-danger" />
-                <p className="mt-1 flex items-center gap-1 text-xs text-danger">⚠ Tono incorrecto: hǎo es tercer tono.</p>
+                <Input id="sg-in2" defaultValue={pack.id === "zh" ? "nǐ hào" : D.tiles[0].slice(0, -1)} aria-invalid className="border-danger focus-visible:border-danger" />
+                <p className="mt-1 flex items-center gap-1 text-xs text-danger">⚠ <Mixed>{pack.id === "zh" ? "Tono incorrecto: hǎo es tercer tono." : `Casi: falta el final («${D.tiles[0]}»).`}</Mixed></p>
               </div>
               <div>
                 <Label htmlFor="sg-sel">Selector</Label>
                 <Select id="sg-sel" defaultValue="b">
-                  <option value="a">学伴 (armonizado)</option>
+                  <Option value="a">学伴 (armonizado)</Option>
                   <option value="b">Pleco clásico</option>
                   <option value="c">Sin colores</option>
                 </Select>
@@ -243,13 +285,13 @@ export function StyleGuide() {
               </div>
               <Tabs value={tab} onValueChange={setTab}>
                 <TabsList>
-                  <TabsTrigger value="a">Hanzi</TabsTrigger>
-                  <TabsTrigger value="b">Pinyin</TabsTrigger>
+                  <TabsTrigger value="a"><Mixed>{pack.meta.names.native}</Mixed></TabsTrigger>
+                  <TabsTrigger value="b"><Mixed>{pack.readingAid.name}</Mixed></TabsTrigger>
                   <TabsTrigger value="c">Español</TabsTrigger>
                 </TabsList>
-                <TabsContent value="a">Pestaña {tab}</TabsContent>
-                <TabsContent value="b">Pestaña {tab}</TabsContent>
-                <TabsContent value="c">Pestaña {tab}</TabsContent>
+                <TabsContent value="a">Pestaña <Mixed>{tab}</Mixed></TabsContent>
+                <TabsContent value="b">Pestaña <Mixed>{tab}</Mixed></TabsContent>
+                <TabsContent value="c">Pestaña <Mixed>{tab}</Mixed></TabsContent>
               </Tabs>
               <div className="flex flex-wrap gap-1.5">
                 <Badge>Normal</Badge>
@@ -258,9 +300,9 @@ export function StyleGuide() {
                 <Badge variant="lacquer">Nueva</Badge>
                 <Badge variant="gold">Difícil</Badge>
                 <Badge variant="indigo">Info</Badge>
-                <Badge variant="seal">HSK 1</Badge>
-                <SealTag>印</SealTag>
-                <SealTag tone="ink">墨</SealTag>
+                <Badge variant="seal"><Mixed>{pack.curriculum.levelTitle}</Mixed></Badge>
+                <SealTag><Mixed>{D.seals.ok}</Mixed></SealTag>
+                <SealTag tone="ink"><Mixed>{D.colors.ink.native}</Mixed></SealTag>
               </div>
               <div className="space-y-2">
                 <Skeleton className="h-4 w-3/4" />
@@ -285,10 +327,10 @@ export function StyleGuide() {
             ].map(([state, cls], i) => (
               <button key={state} className={cn("flex min-h-14 items-center gap-3 rounded-[10px] border px-4 py-3 text-left transition-colors", cls)}>
                 <Kbd>{i + 1}</Kbd>
-                <span className="zh-serif text-2xl" lang="zh-CN">
-                  {["你好", "谢谢", "再见", "对不起"][i]}
+                <span className="zh-serif text-2xl" lang={pack.bcp47}>
+                  <Mixed>{D.tiles[i]}</Mixed>
                 </span>
-                <span className="ml-auto text-xs text-ink-faint">{state}</span>
+                <span className="ml-auto text-xs text-ink-faint"><Mixed>{state}</Mixed></span>
                 {state === "correcta" ? <BrushCheck size={22} animate={false} /> : null}
               </button>
             ))}
@@ -297,10 +339,10 @@ export function StyleGuide() {
 
         {/* ---------- Tarjetas ---------- */}
         <section id="cards">
-          <SectionTitle>6 · HanziCard y superficies</SectionTitle>
+          <SectionTitle>6 · Tarjeta de palabra y superficies</SectionTitle>
           <div className="grid gap-4 md:grid-cols-3">
-            <HanziCard hanzi="学" pinyin="xué" meaning="estudiar, aprender" example="我学中文。" examplePinyin="Wǒ xué Zhōngwén." exampleTranslation="Estudio chino." hsk="HSK 1" flippable footer="Pulsa para girar" />
-            <HanziCard hanzi="朋友" pinyin="péng you" meaning="amigo/a" hsk="HSK 1" size="md" flippable />
+            <HanziCard hanzi={D.card1.word} pinyin={D.card1.reading} meaning={D.card1.meaning} example={D.card1.example} examplePinyin={D.card1.exampleReading} exampleTranslation={D.card1.exampleTranslation} hsk={pack.curriculum.levelTitle} flippable footer="Pulsa para girar" />
+            <HanziCard hanzi={D.card2.word} pinyin={D.card2.reading} meaning={D.card2.meaning} hsk={pack.curriculum.levelTitle} size="md" flippable />
             <div className="space-y-3">
               <div className="card-paper p-4 text-sm">
                 <p className="font-serif-es text-base text-ink">card-paper</p>
@@ -323,20 +365,20 @@ export function StyleGuide() {
           <SectionTitle>7 · Ornamentos</SectionTitle>
           <div className="grid gap-4 md:grid-cols-2">
             <Card className="space-y-4">
-              <p className="text-xs uppercase tracking-wide text-ink-faint">印章 Sellos</p>
+              <p className="text-xs uppercase tracking-wide text-ink-faint">Sellos</p>
               <div className="flex flex-wrap items-end gap-4">
-                <Seal text="学伴" size={72} />
-                <Seal text="雨果" size={64} variant="round" rotate={-4} />
-                <Seal text="完成" size={56} variant="oval" tone="ink" />
-                <Seal text="HSK1" size={56} tone="gold" />
-                <Seal text="好" size={48} tone="celadon" variant="round" />
+                <Seal text={D.seals.brand} size={72} />
+                <Seal text={D.seals.user} size={64} variant="round" rotate={-4} />
+                <Seal text={D.seals.done} size={56} variant="oval" tone="ink" />
+                <Seal text={D.seals.level} size={56} tone="gold" />
+                <Seal text={D.seals.ok} size={48} tone="celadon" variant="round" />
                 <Button size="sm" variant="outline" onClick={() => setStamped((n) => n + 1)}>
                   Estampar
                 </Button>
-                {stamped ? <Seal key={stamped} text="好" size={64} stamped rotate={-6} /> : null}
+                {stamped ? <Seal key={stamped} text={D.seals.ok} size={64} stamped rotate={-6} /> : null}
               </div>
-              <p className="text-xs uppercase tracking-wide text-ink-faint">Divisores, ensō, lámpara, 田字格</p>
-              <InkDivider label="第一课" />
+              <p className="text-xs uppercase tracking-wide text-ink-faint">Divisores, ensō, lámpara y cuadrícula de escritura</p>
+              <InkDivider label={D.divider} />
               <div className="flex flex-wrap items-center gap-6">
                 <Enso size={96} progress={0.66} label="66 %">
                   <span className="tabular text-lg font-medium text-ink">10′</span>
@@ -347,23 +389,28 @@ export function StyleGuide() {
                   ))}
                 </div>
                 <TianZiGe size={96}>
-                  <Hanzi text="永" size="2xl" font="serif" />
+                  <Hanzi text={D.grid} size="2xl" font="serif" />
                 </TianZiGe>
                 <TianZiGe size={96} variant="mi">
-                  <Hanzi text="永" size="2xl" font="kai" />
+                  <Hanzi text={D.grid} size="2xl" font="kai" />
                 </TianZiGe>
                 <TianZiGe size={96} faint>
-                  <Hanzi text="永" size="2xl" font="serif" />
+                  <Hanzi text={D.grid} size="2xl" font="serif" />
                 </TianZiGe>
               </div>
             </Card>
+            {pack.id === "zh" ? (
             <Card className="space-y-4">
-              <p className="text-xs uppercase tracking-wide text-ink-faint">山水, bordes y mascota</p>
+              <p className="text-xs uppercase tracking-wide text-ink-faint">
+                  <Mixed>山水, bordes y mascota</Mixed>
+                </p>
               <ShanShui height={120} phase="dusk" className="rounded-[10px]" />
               <FretBorder />
-              <CloudBorder className="p-4 text-center text-sm text-ink-soft">云纹 · marco de nubes para informes y logros</CloudBorder>
+              <CloudBorder className="p-4 text-center text-sm text-ink-soft">
+                <Mixed>云纹 · marco de nubes para informes y logros</Mixed>
+              </CloudBorder>
               <ScreenFrame>
-                <div className="flex h-20 items-center justify-center bg-paper-sunk text-sm text-ink-faint">屏风 · marco del reproductor</div>
+                <div className="flex h-20 items-center justify-center bg-paper-sunk text-sm text-ink-faint"><Mixed>屏风 · marco del reproductor</Mixed></div>
               </ScreenFrame>
               <div className="flex flex-wrap items-center gap-4">
                 <MoonGate size={96}>
@@ -375,6 +422,52 @@ export function StyleGuide() {
                 <PlumBranch count={120} height={90} className="h-24 w-40" />
               </div>
             </Card>
+            ) : (
+              <Card className="space-y-4">
+                <p className="text-xs uppercase tracking-wide text-ink-faint">Mascota</p>
+                <div className="flex flex-wrap items-center gap-4">
+                  <XiaoMo size={64} />
+                  <XiaoMo size={64} mood="think" />
+                  <XiaoMo size={64} mood="cheer" />
+                </div>
+                <p className="text-sm text-ink-faint">Los ornamentos propios de esta piel están en la sección 0. Las grecas, nubes y biombo chinos no se usan aquí.</p>
+              </Card>
+            )}
+          </div>
+        </section>
+
+        {/* ---------- Portada ---------- */}
+        <section id="portada">
+          <SectionTitle>9 · Portada «Tres puertas»</SectionTitle>
+          <p className="mb-4 max-w-2xl text-sm text-ink-faint">Cada puerta lleva la piel completa de su idioma (data-skin). Estados: recomendada y abierta, activa, entornada (no activa). Pasa el ratón o tabula para abrirlas. Debajo, la miniatura compact de la cabecera, el onboarding y /me.</p>
+          <div className="flex h-[480px] gap-4">
+            {(
+              [
+                ["zh", "recommended"],
+                ["ja", "active"],
+                ["ko", "inactive"],
+              ] as const
+            ).map(([l, st], i) => (
+              <LangPortalHero
+                key={l}
+                lang={l}
+                index={i}
+                state={st}
+                phase="day"
+                open={portalOpen === l}
+                stats={st === "inactive" ? undefined : { due: 12 - i * 5, wordsKnown: 160 - i * 70, wordsTotal: 700, minutesWeek: 90, streak: 9 - i * 4 }}
+                onOpenChange={(o) => setPortalOpen(o ? l : "zh")}
+                onActivate={(e) => e.preventDefault()}
+                href="#portada"
+                className="h-full min-w-0 basis-0"
+                style={{ flexGrow: portalOpen === l ? 1.6 : st === "inactive" ? 0.7 : 1 }}
+              />
+            ))}
+          </div>
+          <div className="mt-4 grid gap-2 sm:grid-cols-3">
+            <LangPortalCompact lang="zh" phase="day" stats={{ due: 12, wordsKnown: 160, wordsTotal: 300, minutesWeek: 90, streak: 9 }} current />
+            <LangPortalCompact lang="ja" phase="night" stats={{ due: 7, wordsKnown: 90, wordsTotal: 700, minutesWeek: 40, streak: 5 }} selected />
+            <LangPortalCompact lang="ko" phase="dusk" state="inactive" />
           </div>
         </section>
 
@@ -384,7 +477,7 @@ export function StyleGuide() {
           <EmptyState
             icon={<Check />}
             title="Nada pendiente por hoy"
-            zh={{ zh: "千里之行，始于足下", py: "qiān lǐ zhī xíng, shǐ yú zú xià", es: "Un viaje de mil li empieza con un paso." }}
+            zh={{ zh: D.empty.text, py: D.empty.reading, es: D.empty.es }}
             description="Las citas acompañan los vacíos y las cargas; nunca decoran las zonas de respuesta."
             action={<Button>Empezar lección</Button>}
           />

@@ -1,13 +1,14 @@
 "use client";
 import { useEffect, useMemo, useState } from "react";
-import Link from "next/link";
+import Link from "@/lib/languages/link";
 import { useLiveQuery } from "dexie-react-hooks";
 import { BookOpen, FileText, Plus, Search } from "lucide-react";
 import { db, uuid } from "@/lib/db";
-import { READINGS } from "@/lib/readings";
+import { getReadings } from "@/lib/readings";
+import { getActivePack } from "@/lib/languages/registry";
 import type { GradedReading } from "@/lib/readings/types";
 import { useKnowledge } from "@/lib/knowledge";
-import { loadHsk, useDictionary } from "@/lib/dictionary/service";
+import { useDictionary } from "@/lib/dictionary/service";
 import { comprehensionOfLines } from "@/lib/videos/breakdown";
 import { Button } from "@/components/ui/button";
 import { Badge, Dialog, DialogContent, Input, Label, PageHeader, SectionTitle, Textarea } from "@/components/ui/primitives";
@@ -15,6 +16,10 @@ import { SealTag } from "@/components/ornament/seal";
 import { BrushCheck } from "@/components/ornament/ink-divider";
 import { toast } from "@/components/ui/toast";
 import { cn } from "@/lib/utils";
+import { getActiveLang } from "@/lib/languages/registry";
+import { targetLang } from "@/lib/languages/registry";
+import { pageNative } from "@/lib/languages/ui-text";
+import { Mixed } from "@/components/target/mixed";
 
 const KIND_LABEL: Record<GradedReading["kind"], string> = {
   dialogue: "diálogo",
@@ -45,34 +50,35 @@ function InkGauge({ ratio }: { ratio: number }) {
 }
 
 export function ReadingList() {
+  const READINGS_ = getReadings();
   const dictStatus = useDictionary((s) => s.status);
   const load = useDictionary((s) => s.load);
   const known = useKnowledge((s) => s.known);
   const knownChars = useKnowledge((s) => s.knownChars);
-  const user = useLiveQuery(() => db.readings.where("source").equals("user").reverse().sortBy("addedAt"), []) ?? [];
-  const progress = useLiveQuery(() => db.readings.where("source").equals("builtin").toArray(), []) ?? [];
+  const user = useLiveQuery(() => db.readings.where("[lang+source]").equals([getActiveLang(), "user"]).reverse().sortBy("addedAt"), []) ?? [];
+  const progress = useLiveQuery(() => db.readings.where("[lang+source]").equals([getActiveLang(), "builtin"]).toArray(), []) ?? [];
   const [q, setQ] = useState("");
   const [level, setLevel] = useState<0 | 1 | 2 | 3>(0);
   const [importing, setImporting] = useState(false);
   useEffect(() => {
     if (dictStatus === "idle") void load();
-    void loadHsk();
+    void getActivePack().levelLists();
   }, [dictStatus, load]);
   const progressMap = useMemo(() => new Map(progress.map((p) => [p.id, p])), [progress]);
   const stats = useMemo(() => {
     const m = new Map<string, number>();
     if (dictStatus !== "ready") return m;
-    for (const r of READINGS) m.set(r.id, comprehensionOfLines(r.text.split("\n").map((zh) => ({ zh })), known, knownChars).ratio);
+    for (const r of READINGS_) m.set(r.id, comprehensionOfLines(r.text.split("\n").map((zh) => ({ zh })), known, knownChars).ratio);
     return m;
   }, [dictStatus, known, knownChars]);
-  const list = READINGS.filter((r) => (!level || r.level === level) && (!q || `${r.title} ${r.zh} ${r.tags.join(" ")}`.toLowerCase().includes(q.toLowerCase())));
+  const list = READINGS_.filter((r) => (!level || r.level === level) && (!q || `${r.title} ${r.zh} ${r.tags.join(" ")}`.toLowerCase().includes(q.toLowerCase())));
 
   return (
     <div className="space-y-5">
       <PageHeader
         title="Lectura graduada"
-        zh="阅读"
-        subtitle={`${READINGS.length} textos cortos con vocabulario HSK 1 controlado: diálogos, mensajes, menús, carteles y relatos de la vida de Hugo en Shanghái. Cada uno muestra el % de palabras que ya conoces.`}
+        zh={pageNative("reading")}
+        subtitle={`${READINGS_.length} textos cortos con vocabulario ${getActivePack().curriculum.levelTitle} controlado: diálogos, mensajes, menús, carteles y relatos de la vida de Hugo. Cada uno muestra el % de palabras que ya conoces.`}
         action={
           <Button variant="ink" onClick={() => setImporting(true)}>
             <Plus /> Importar mi texto
@@ -101,9 +107,9 @@ export function ReadingList() {
               <li key={r.id}>
                 <Link href={`/lectura/${encodeURIComponent(r.id)}`} className="card-paper flex h-full flex-col gap-1.5 p-3.5 transition-colors hover:bg-paper-sunk/60">
                   <span className="flex items-center gap-2 font-medium text-ink">
-                    <FileText className="size-4 text-ink-faint" /> {r.title}
+                    <FileText className="size-4 text-ink-faint" /> <Mixed>{r.title}</Mixed>
                   </span>
-                  <span lang="zh-CN" className="zh line-clamp-2 text-sm text-ink-soft">
+                  <span lang={targetLang()} className="zh line-clamp-2 text-sm text-ink-soft">
                     {r.text}
                   </span>
                 </Link>
@@ -123,10 +129,10 @@ export function ReadingList() {
               <Link href={`/lectura/${r.id}`} className="card-paper group relative flex h-full flex-col gap-2 overflow-hidden p-3.5 pl-4 transition-[background-color,transform] duration-[var(--dur-ui)] ease-[var(--ease-ink)] hover:bg-paper-sunk/60 motion-safe:hover:-translate-y-px">
                 <span className={cn("absolute inset-y-0 left-0 w-[3px]", p?.completed ? "bg-celadon/80" : "bg-ink/15 group-hover:bg-ink/35")} aria-hidden="true" />
                 <div className="flex items-start justify-between gap-2">
-                  <span className="font-serif-es text-[17px] font-medium leading-snug text-ink">{r.title}</span>
+                  <span className="font-serif-es text-[17px] font-medium leading-snug text-ink"><Mixed>{r.title}</Mixed></span>
                   {p?.completed ? <BrushCheck size={22} animate={false} className="shrink-0 text-celadon-ink" /> : <SealTag tone="ink" className="shrink-0 opacity-70">{r.level}</SealTag>}
                 </div>
-                <span lang="zh-CN" className="zh-kai text-base text-cinnabar">
+                <span lang={targetLang()} className="zh-kai text-base text-cinnabar">
                   {r.zh}
                 </span>
                 <div className="mt-auto flex flex-wrap items-center gap-x-2 gap-y-1 pt-1">
@@ -152,7 +158,7 @@ export function ImportTextDialog({ open, onOpenChange }: { open: boolean; onOpen
   const save = async () => {
     if (!text.trim()) return toast.error("Pega un texto en chino.");
     const id = `user-${uuid()}`;
-    await db.readings.put({ id, title: title.trim() || text.trim().slice(0, 12), text: text.trim(), translation: translation.trim() || undefined, source: "user", addedAt: Date.now() });
+    await db.readings.put({ id, lang: getActiveLang(), title: title.trim() || text.trim().slice(0, 12), text: text.trim(), translation: translation.trim() || undefined, source: "user", addedAt: Date.now() });
     toast.success("Texto guardado");
     onOpenChange(false);
     setText("");
@@ -169,7 +175,7 @@ export function ImportTextDialog({ open, onOpenChange }: { open: boolean; onOpen
           </div>
           <div>
             <Label htmlFor="it-text">Texto en chino</Label>
-            <Textarea id="it-text" lang="zh-CN" className="zh min-h-40 text-base" value={text} onChange={(e) => setText(e.target.value)} />
+            <Textarea id="it-text" lang={targetLang()} className="zh min-h-40 text-base" value={text} onChange={(e) => setText(e.target.value)} />
           </div>
           <div>
             <Label htmlFor="it-es">Traducción (opcional)</Label>

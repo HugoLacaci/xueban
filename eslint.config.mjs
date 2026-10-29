@@ -12,6 +12,9 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // temporales locales (perfiles de navegador, scripts sueltos) y artefactos de diseño
+    ".cache/**",
+    "design/**",
   ]),
 ]);
 

@@ -1,0 +1,272 @@
+{
+  "id": "ko-u0-pronunciacion",
+  "order": 1,
+  "title": "Pronunciación real",
+  "zh": "발음",
+  "description": "La consonante final (받침), el encadenamiento de sílabas y las reglas que cambian cómo suena lo escrito, más los errores típicos de un hispanohablante.",
+  "icon": "Mic",
+  "level": 0,
+  "lang": "ko",
+  "lessons": [
+    {
+      "id": "ko-u0-pronunciacion-l1",
+      "title": "받침: la consonante de abajo",
+      "zh": "받침",
+      "goal": "Leer sílabas con consonante final y saber que solo existen 7 sonidos finales.",
+      "minutes": 15,
+      "vocab": [
+        { "hanzi": "밥", "pinyin": "bap", "es": "arroz cocido; comida" },
+        { "hanzi": "책", "pinyin": "chaek", "es": "libro" },
+        { "hanzi": "물", "pinyin": "mul", "es": "agua" },
+        { "hanzi": "산", "pinyin": "san", "es": "montaña" },
+        { "hanzi": "강", "pinyin": "gang", "es": "río" },
+        { "hanzi": "집", "pinyin": "jip", "es": "casa" },
+        { "hanzi": "옷", "pinyin": "ot", "es": "ropa" },
+        { "hanzi": "꽃", "pinyin": "kkot", "es": "flor" },
+        { "hanzi": "밖", "pinyin": "bak", "es": "fuera" },
+        { "hanzi": "앞", "pinyin": "ap", "es": "delante" }
+      ],
+      "steps": [
+        {
+          "type": "explain",
+          "title": "El tercer piso del bloque",
+          "markdown": "Una sílaba coreana puede llevar una consonante **debajo**: el **받침** (*batchim*, «lo que sostiene»). Se lee al final:\n\n- 바 + ㅂ = **밥** *bap* · 사 + ㄴ = **산** *san* · 가 + ㅇ = **강** *gang*\n\nAquí ㅇ **sí suena**: *ng*, como en *ri**ng***. Es la otra cara del cero que viste en la unidad anterior.\n\nLo importante: aunque debajo pueden escribirse casi todas las consonantes, **solo hay 7 sonidos finales**. Todas las demás se «aplastan» en una de estas:\n\n| Sonido | Se escribe con | Ejemplos |\n|---|---|---|\n| **[k]** | ㄱ ㅋ ㄲ | 책 *chaek*, 밖 *bak*, 부엌 *bueok* |\n| **[n]** | ㄴ | 산 *san* |\n| **[t]** | ㄷ ㅌ ㅅ ㅆ ㅈ ㅊ ㅎ | 옷 *ot*, 꽃 *kkot*, 낮 *nat* |\n| **[l]** | ㄹ | 물 *mul* |\n| **[m]** | ㅁ | 밤 *bam* |\n| **[p]** | ㅂ ㅍ | 밥 *bap*, 앞 *ap* |\n| **[ng]** | ㅇ | 강 *gang* |\n\nMnemotecnia: **«k-n-t-l-m-p-ng»**. Si una final te despista, pregúntate «¿a cuál de las siete se parece?»: casi siempre acertarás por el punto de la boca donde se cierra."
+        },
+        { "type": "module", "id": "batchim", "title": "Los 7 sonidos finales" },
+        {
+          "type": "explain",
+          "title": "Finales «mudas»: sin explotar",
+          "markdown": "Las finales [k], [t], [p] **no se sueltan**: la boca se cierra en la posición y el aire se queda dentro. 밥 no es «ba-pu» ni «bap» con soplido: es *ba* + labios cerrados. Piensa en cómo dices «¡ap!» cuando te cortas de golpe al hablar.\n\nPara un hispanohablante es fácil confundir 옷 *ot* (ropa) con 오 *o*: la [t] final apenas se oye, pero **se nota en el corte seco** de la vocal.\n\n**Batchim dobles**: algunas palabras llevan dos consonantes abajo (닭 *dak*, pollo; 읽다 *ikda*, leer; 앉다 *anda*, sentarse). Solo suena **una** de las dos; las aprenderás palabra por palabra."
+        },
+        {
+          "type": "module",
+          "id": "hangul-reading",
+          "title": "Lee con consonante final",
+          "params": {
+            "words": [
+              { "hangul": "밥", "es": "arroz; comida" },
+              { "hangul": "책", "es": "libro" },
+              { "hangul": "물", "es": "agua" },
+              { "hangul": "산", "es": "montaña" },
+              { "hangul": "강", "es": "río" },
+              { "hangul": "집", "es": "casa" },
+              { "hangul": "옷", "es": "ropa" },
+              { "hangul": "꽃", "es": "flor" },
+              { "hangul": "밖", "es": "fuera" },
+              { "hangul": "앞", "es": "delante" }
+            ]
+          }
+        },
+        { "type": "exercises", "count": 8, "types": ["choose-meaning", "listen-choose", "pinyin-input", "matching", "writing"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ko-u0-pronunciacion-l2",
+      "title": "연음: las sílabas se encadenan",
+      "zh": "연음",
+      "goal": "Pronunciar la consonante final como inicial de la sílaba siguiente cuando esta empieza por ㅇ.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "한국어", "pinyin": "hangugeo", "es": "idioma coreano" },
+        { "hanzi": "음악", "pinyin": "eumak", "es": "música" },
+        { "hanzi": "단어", "pinyin": "daneo", "es": "palabra (vocabulario)" },
+        { "hanzi": "발음", "pinyin": "bareum", "es": "pronunciación" },
+        { "hanzi": "옷이", "pinyin": "osi", "es": "la ropa (+ partícula de sujeto)" },
+        { "hanzi": "꽃이", "pinyin": "kkochi", "es": "la flor (+ partícula de sujeto)" },
+        { "hanzi": "먹어요", "pinyin": "meogeoyo", "es": "como; comes (comer)" },
+        { "hanzi": "있어요", "pinyin": "isseoyo", "es": "hay; tengo" }
+      ],
+      "steps": [
+        {
+          "type": "explain",
+          "title": "Como en español: «los otros» suena «lo-so-tros»",
+          "markdown": "Ya haces esto sin darte cuenta: en *los otros* nadie dice «los · otros», sino «lo-so-tros». En coreano pasa lo mismo, y de forma **sistemática**:\n\n> Si una sílaba acaba en consonante y la siguiente empieza por **ㅇ muda**, la consonante **salta** a ocupar ese hueco.\n\n- 한국어 → [한구거] *hangugeo*\n- 음악 → [으막] *eumak*\n- 발음 → [바름] *bareum* (¡la ㄹ pasa a ser una *r* suave!)\n- 먹어요 → [머거요] *meogeoyo*\n\nY aquí está la gracia: al saltar, la consonante **recupera su sonido original**, el que el batchim había aplastado:\n\n- 옷 se dice [ot], pero 옷이 → [오시] *osi*\n- 꽃 se dice [kkot], pero 꽃이 → [꼬치] *kkochi*\n- 있다 lleva ㅆ: 있어요 → [이써요] *isseoyo*\n\nPor eso el coreano escrito no cambia cuando añades partículas o terminaciones: la ortografía guarda la consonante «de verdad», y el encadenamiento la saca a la luz."
+        },
+        {
+          "type": "module",
+          "id": "phonology-rules",
+          "title": "Encadenamiento (연음)",
+          "params": {
+            "rules": ["yeoneum"],
+            "examples": [
+              { "written": "한국어", "spoken": "한구거", "es": "idioma coreano" },
+              { "written": "음악", "spoken": "으막", "es": "música" },
+              { "written": "단어", "spoken": "다너", "es": "palabra" },
+              { "written": "발음", "spoken": "바름", "es": "pronunciación" },
+              { "written": "옷이", "spoken": "오시", "es": "la ropa (sujeto)" },
+              { "written": "꽃이", "spoken": "꼬치", "es": "la flor (sujeto)" },
+              { "written": "먹어요", "spoken": "머거요", "es": "como" },
+              { "written": "있어요", "spoken": "이써요", "es": "hay; tengo" }
+            ]
+          }
+        },
+        {
+          "type": "explain",
+          "title": "Dos excepciones que debes conocer",
+          "markdown": "- **ㅇ final no salta**: 고양이 (gato) es [고양이] *goyangi*, con *ng* + *i*. La ㅇ de abajo es *ng* y se queda en su sitio.\n- **ㅎ final desaparece** antes de vocal: 좋아요 → [조아요] *joayo*. Lo verás en la lección siguiente.\n\nLa romanización revisada sigue la **pronunciación**: por eso escribe *hangugeo* y no *hangukeo*. Te ayuda a leer, pero apréndete la palabra en hangul."
+        },
+        {
+          "type": "module",
+          "id": "hangul-reading",
+          "title": "Lee encadenando",
+          "params": {
+            "words": [
+              { "hangul": "한국어", "es": "idioma coreano" },
+              { "hangul": "음악", "es": "música" },
+              { "hangul": "단어", "es": "palabra" },
+              { "hangul": "발음", "es": "pronunciación" },
+              { "hangul": "옷이", "es": "la ropa (sujeto)" },
+              { "hangul": "꽃이", "es": "la flor (sujeto)" },
+              { "hangul": "먹어요", "es": "como" },
+              { "hangul": "있어요", "es": "hay; tengo" }
+            ]
+          }
+        },
+        { "type": "exercises", "count": 8, "types": ["listen-choose", "pinyin-input", "choose-meaning", "matching", "dictation"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ko-u0-pronunciacion-l3",
+      "title": "Las otras reglas: tensión, nasales y la ㅎ",
+      "zh": "발음 규칙",
+      "goal": "Reconocer 경음화, 비음화, 격음화 y la ㅎ débil en palabras de uso diario.",
+      "minutes": 15,
+      "vocab": [
+        { "hanzi": "학교", "pinyin": "hakgyo", "es": "escuela" },
+        { "hanzi": "식당", "pinyin": "sikdang", "es": "restaurante; comedor" },
+        { "hanzi": "감사합니다", "pinyin": "gamsahamnida", "es": "gracias (formal)" },
+        { "hanzi": "한국말", "pinyin": "hangungmal", "es": "idioma coreano (hablado)" },
+        { "hanzi": "작년", "pinyin": "jangnyeon", "es": "el año pasado" },
+        { "hanzi": "축하", "pinyin": "chukha", "es": "felicitación" },
+        { "hanzi": "좋다", "pinyin": "jota", "es": "ser bueno; gustar" },
+        { "hanzi": "좋아요", "pinyin": "joayo", "es": "está bien; me gusta" },
+        { "hanzi": "전화", "pinyin": "jeonhwa", "es": "teléfono; llamada" },
+        { "hanzi": "은행", "pinyin": "eunhaeng", "es": "banco (dinero)" }
+      ],
+      "steps": [
+        {
+          "type": "explain",
+          "title": "Por qué lo escrito no siempre suena igual",
+          "markdown": "El hangul escribe la **forma de las palabras**, no siempre su sonido exacto. Cuando dos consonantes chocan entre sílabas, la boca toma atajos. No tienes que memorizar tablas: basta con reconocer **cuatro reglas** y practicar las palabras frecuentes.\n\n**1. 경음화 (tensión)**: tras una final [k], [t] o [p], la consonante lisa siguiente se vuelve **tensa**.\n\n- 학교 → [학꾜] · 식당 → [식땅] · 입구 (entrada) → [입꾸]\n\nEs lógico: la boca ya está cerrada y apretada, y la siguiente sale con esa tensión. (La romanización no lo marca: *hakgyo*, *sikdang*.)\n\n**2. 비음화 (nasalización)**: una final [k], [t], [p] delante de **ㄴ** o **ㅁ** se vuelve nasal: [k]→[ng], [t]→[n], [p]→[m].\n\n- 감사합니다 → [감사함니다] *gamsahamnida*\n- 한국말 → [한궁말] *hangungmal* · 작년 → [장년] *jangnyeon*\n\nEsta la oirás cada día: todas las terminaciones **-ㅂ니다** suenan **-mnida**.\n\n**3. 격음화 (aspiración)**: ㅎ + ㄱ/ㄷ/ㅂ/ㅈ (en cualquier orden) se fusionan en la **aspirada**: ㅋ ㅌ ㅍ ㅊ.\n\n- 축하 → [추카] *chukha* · 좋다 → [조타] *jota* · 입학 (ingreso escolar) → [이팍] *iphak*\n\n**4. ㅎ débil**: entre vocales o tras ㄴ ㄹ ㅁ ㅇ, la ㅎ casi **desaparece**.\n\n- 좋아요 → [조아요] *joayo* · 전화 → [저놔] · 은행 → [으냉] · 결혼 (boda) → [겨론]\n\nEn habla cuidada, la ㅎ de 전화 o 은행 aún se intuye; en habla rápida, se pierde."
+        },
+        {
+          "type": "module",
+          "id": "phonology-rules",
+          "title": "Cuatro reglas en acción",
+          "params": {
+            "rules": ["gyeongeumhwa", "bieumhwa", "gyeogeumhwa", "h-weakening"],
+            "examples": [
+              { "written": "학교", "spoken": "학꾜", "rule": "gyeongeumhwa", "es": "escuela" },
+              { "written": "식당", "spoken": "식땅", "rule": "gyeongeumhwa", "es": "restaurante" },
+              { "written": "감사합니다", "spoken": "감사함니다", "rule": "bieumhwa", "es": "gracias" },
+              { "written": "한국말", "spoken": "한궁말", "rule": "bieumhwa", "es": "idioma coreano" },
+              { "written": "작년", "spoken": "장년", "rule": "bieumhwa", "es": "el año pasado" },
+              { "written": "축하", "spoken": "추카", "rule": "gyeogeumhwa", "es": "felicitación" },
+              { "written": "좋다", "spoken": "조타", "rule": "gyeogeumhwa", "es": "ser bueno" },
+              { "written": "좋아요", "spoken": "조아요", "rule": "h-weakening", "es": "me gusta" },
+              { "written": "전화", "spoken": "저놔", "rule": "h-weakening", "es": "teléfono" },
+              { "written": "은행", "spoken": "으냉", "rule": "h-weakening", "es": "banco" }
+            ]
+          }
+        },
+        {
+          "type": "explain",
+          "title": "Bonus: ㄴ + ㄹ = ㄹㄹ",
+          "markdown": "Cuando ㄴ y ㄹ se tocan, ganan las dos ㄹ y suena una *l* larga: 설날 (Año Nuevo lunar) → [설랄] *seollal*; 신라 (el antiguo reino de Silla) → [실라] *silla*. Es menos frecuente, pero aparece en nombres de lugares y fiestas."
+        },
+        {
+          "type": "module",
+          "id": "hangul-reading",
+          "title": "Lee como un coreano",
+          "params": {
+            "words": [
+              { "hangul": "학교", "es": "escuela" },
+              { "hangul": "식당", "es": "restaurante" },
+              { "hangul": "감사합니다", "es": "gracias" },
+              { "hangul": "한국말", "es": "idioma coreano" },
+              { "hangul": "작년", "es": "el año pasado" },
+              { "hangul": "축하", "es": "felicitación" },
+              { "hangul": "좋아요", "es": "me gusta; vale" },
+              { "hangul": "전화", "es": "teléfono" },
+              { "hangul": "은행", "es": "banco" }
+            ]
+          }
+        },
+        { "type": "exercises", "count": 8, "types": ["listen-choose", "pinyin-input", "choose-meaning", "matching", "dictation"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ko-u0-pronunciacion-l4",
+      "title": "Errores típicos de hispanohablantes",
+      "zh": "스페인어 화자의 실수",
+      "goal": "Corregir las cuatro trampas más comunes: ㅓ/ㅗ, ㅐ/ㅔ, lisa/aspirada/tensa y la ㄹ.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "거리", "pinyin": "geori", "es": "calle; distancia" },
+        { "hanzi": "고리", "pinyin": "gori", "es": "anilla; aro" },
+        { "hanzi": "서울", "pinyin": "Seoul", "es": "Seúl" },
+        { "hanzi": "달", "pinyin": "dal", "es": "luna; mes" },
+        { "hanzi": "딸", "pinyin": "ttal", "es": "hija" },
+        { "hanzi": "불", "pinyin": "bul", "es": "fuego; luz" },
+        { "hanzi": "풀", "pinyin": "pul", "es": "hierba; pegamento" },
+        { "hanzi": "라면", "pinyin": "ramyeon", "es": "fideos instantáneos" },
+        { "hanzi": "빨리", "pinyin": "ppalli", "es": "rápido; deprisa" }
+      ],
+      "steps": [
+        {
+          "type": "explain",
+          "title": "Las cuatro trampas",
+          "markdown": "**1. ㅓ no es nuestra «o»**. Si dices 거리 (calle) con *o* española, el coreano oye 고리 (anilla). Para ㅓ: abre la boca como para *a*, baja la mandíbula, **labios relajados** y di *o*. Para ㅗ: labios **redondos y adelantados**, como un beso. Practica: 서울 *Seoul* (¡no «Sóul»!), 어머니, 저.\n\n**2. ㅐ y ㅔ**: buena noticia, en el habla actual suenan casi igual (*e*). La trampa está en **escribir**: 개 (perro) ≠ 게 (cangrejo), 내 (mi) ≠ 네 (sí; tu). Apréndelas con la palabra completa.\n\n**3. Lisa / aspirada / tensa**. El español solo tiene dos casillas (*p/b*); el coreano tiene tres y ninguna es exactamente la nuestra. Nuestro error típico es decir la lisa con vibración (como una *b* española) o confundir tensa y lisa. Recuerda:\n\n- **aspirada** = soplo (풀 *pul*)\n- **tensa** = aprieta, sin aire, tono algo más agudo (뿔 *ppul*, 딸 *ttal*)\n- **lisa** = relajada, un poco de aire (불 *bul*, 달 *dal*)\n\n**4. La ㄹ tiene dos caras**:\n\n- Al **principio** o **entre vocales** = *r* simple, suave, de *pero*: 라면, 머리. **Nunca** la *rr* fuerte de *perro*.\n- Al **final** de sílaba = *l*: 달, 물. Con la lengua pegada arriba, sin soltarla.\n- **ㄹㄹ** = *l* larga: 빨리 *ppalli* (no «pari»).\n\nBonus: no metas una *e* de apoyo. Los hispanohablantes tendemos a decir «e-Seúl» o «Seúle»: el coreano permite acabar sílabas en consonante sin vocal extra."
+        },
+        {
+          "type": "module",
+          "id": "spanish-errors",
+          "title": "Pares mínimos para tu oído",
+          "params": {
+            "pairs": [
+              { "a": "거리", "b": "고리", "contrast": "ㅓ / ㅗ", "es": ["calle", "anilla"] },
+              { "a": "어", "b": "오", "contrast": "ㅓ / ㅗ", "es": ["eo", "o"] },
+              { "a": "개", "b": "게", "contrast": "ㅐ / ㅔ", "es": ["perro", "cangrejo"] },
+              { "a": "달", "b": "탈", "c": "딸", "contrast": "lisa / aspirada / tensa", "es": ["luna", "máscara", "hija"] },
+              { "a": "불", "b": "풀", "c": "뿔", "contrast": "lisa / aspirada / tensa", "es": ["fuego", "hierba", "cuerno"] },
+              { "a": "라면", "b": "물", "contrast": "ㄹ inicial / ㄹ final", "es": ["fideos instantáneos", "agua"] },
+              { "a": "그", "b": "구", "contrast": "ㅡ / ㅜ", "es": ["ese; él", "nueve"] }
+            ]
+          }
+        },
+        {
+          "type": "module",
+          "id": "hangul-reading",
+          "title": "Lee sin caer en las trampas",
+          "params": {
+            "words": [
+              { "hangul": "거리", "es": "calle" },
+              { "hangul": "고리", "es": "anilla" },
+              { "hangul": "서울", "es": "Seúl" },
+              { "hangul": "달", "es": "luna; mes" },
+              { "hangul": "딸", "es": "hija" },
+              { "hangul": "불", "es": "fuego; luz" },
+              { "hangul": "풀", "es": "hierba" },
+              { "hangul": "라면", "es": "fideos instantáneos" },
+              { "hangul": "빨리", "es": "rápido" }
+            ]
+          }
+        },
+        {
+          "type": "explain",
+          "title": "Cómo seguir mejorando",
+          "markdown": "- **Grábate** leyendo los pares mínimos y compáralos con el audio. Al principio no oirás la diferencia; en dos semanas, sí.\n- **Shadowing**: repite frases cortas a la vez que el audio, imitando también la melodía.\n- No te obsesiones: los coreanos te entenderán aunque tu ㅓ no sea perfecta, porque el **contexto** ayuda muchísimo. Pero cuida desde el principio las **tres series** de consonantes: ahí sí cambian las palabras."
+        },
+        { "type": "exercises", "count": 8, "types": ["listen-choose", "similar-characters", "pinyin-input", "choose-meaning", "matching"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    }
+  ]
+}

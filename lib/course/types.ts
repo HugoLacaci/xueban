@@ -2,16 +2,16 @@
 import type { ExerciseType } from "@/lib/exercises/types";
 
 export interface Sentence {
-  zh: string;
-  py?: string; // pinyin de la frase (opcional; si falta se calcula)
+  zh: string; // texto en la lengua meta
+  py?: string; // lectura de la frase (pinyin / kana / romanización; opcional)
   es: string;
   speaker?: string; // A / B / nombre
   note?: string;
 }
 
 export interface LessonVocab {
-  hanzi: string;
-  pinyin: string;
+  hanzi: string; // forma escrita
+  pinyin: string; // lectura
   es: string;
   note?: string;
 }
@@ -36,7 +36,8 @@ export type LessonStep =
   | { type: "tone-pairs" }
   | { type: "strokes" }
   | { type: "radicals"; radicals: string[] }
-  | { type: "spanish-errors" };
+  | { type: "spanish-errors" }
+  | { type: "module"; id: string; title?: string; params?: Record<string, unknown> }; // paso propio del paquete (kana, hangul, acento…)
 
 export interface Lesson {
   id: string;
@@ -57,6 +58,7 @@ export interface Unit {
   description: string;
   icon: string;
   level: 0 | 1 | 2 | 3;
+  lang?: string;
   category?: string; // categoría de la semilla asociada
   lessons: Lesson[];
   checkpoint?: { exercises: number };

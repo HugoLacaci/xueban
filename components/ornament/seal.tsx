@@ -1,6 +1,9 @@
 "use client";
 import { useId } from "react";
+import { Mixed } from "@/components/target/mixed";
 import { cn } from "@/lib/utils";
+import { targetLang } from "@/lib/languages/registry";
+import { usePackOptional } from "@/lib/languages/provider";
 
 export interface SealProps {
   text: string; // 1–4 caracteres
@@ -14,7 +17,7 @@ export interface SealProps {
 }
 
 const TONE: Record<NonNullable<SealProps["tone"]>, string> = {
-  cinnabar: "rgb(var(--cinnabar))",
+  cinnabar: "rgb(var(--seal))",
   ink: "rgb(var(--ink))",
   gold: "rgb(var(--gold))",
   celadon: "rgb(var(--celadon))",
@@ -24,8 +27,10 @@ const TONE: Record<NonNullable<SealProps["tone"]>, string> = {
  * 印章 — sello bermellón con borde irregular (filtro de desplazamiento) y grano.
  * El texto se dispone en columna de arriba abajo cuando hay 2 caracteres y en 2×2 cuando hay 4.
  */
-export function Seal({ text, variant = "square", size = 64, className, tone = "cinnabar", stamped, rotate = 0, title }: SealProps) {
+export function Seal({ text, variant: variantProp, size = 64, className, tone = "cinnabar", stamped, rotate = 0, title }: SealProps) {
   const id = useId().replace(/:/g, "");
+  const pack = usePackOptional();
+  const variant = variantProp ?? pack?.theme.seal.shape ?? "square";
   const chars = Array.from(text).slice(0, 4);
   const color = TONE[tone];
   const n = chars.length;
@@ -58,7 +63,7 @@ export function Seal({ text, variant = "square", size = 64, className, tone = "c
         <g filter={`url(#seal-${id})`} mask={`url(#grain-${id})`} fill={color}>
           {shape}
         </g>
-        <g fill="rgb(var(--paper-raised))" fontFamily="var(--font-display-zh)" fontWeight="600" textAnchor="middle" dominantBaseline="central" lang="zh-CN">
+        <g fill="rgb(var(--paper-raised))" fontFamily="var(--font-display-zh)" fontWeight="600" textAnchor="middle" dominantBaseline="central" lang={targetLang()}>
           {chars.map((c, i) => (
             <text key={i} x={layout[i].x} y={layout[i].y} fontSize={fontSize}>
               {c}
@@ -74,7 +79,7 @@ export function Seal({ text, variant = "square", size = 64, className, tone = "c
 export function SealTag({ children, className, tone = "cinnabar" }: { children: React.ReactNode; className?: string; tone?: SealProps["tone"] }) {
   return (
     <span className={cn("inline-flex items-center rounded-[4px] border-[1.5px] px-1.5 py-0.5 font-seal text-[11px] leading-none", className)} style={{ borderColor: TONE[tone!], color: TONE[tone!] }}>
-      {children}
+      {typeof children === "string" ? <Mixed>{children}</Mixed> : children}
     </span>
   );
 }

@@ -14,6 +14,8 @@ import { BrushCheck } from "@/components/ornament/ink-divider";
 import { InkRipple } from "@/components/ornament/celebration";
 import { cn } from "@/lib/utils";
 import { ExerciseView } from "./exercise-view";
+import { targetLang } from "@/lib/languages/registry";
+import { ui } from "@/lib/languages/ui-text";
 
 export interface RunnerResult {
   exercise: Exercise;
@@ -256,8 +258,8 @@ export function ExerciseRunner({
                     <p className={cn("flex flex-wrap items-baseline gap-x-2 font-semibold", tone === "ok" && "text-celadon-ink", tone === "fail" && "text-danger", tone === "partial" && "text-gold-ink", tone === "skip" && "text-ink-soft")}>
                       <span>{tone === "skip" ? "Sin evaluar" : tone === "ok" ? "¡Correcto!" : tone === "partial" ? "Casi" : "Incorrecto"}</span>
                       {tone !== "skip" ? (
-                        <span lang="zh-CN" className="zh text-sm font-normal opacity-80">
-                          {tone === "ok" ? "太棒了" : tone === "partial" ? "差不多" : "没关系，再试一次"}
+                        <span lang={targetLang()} className="zh text-sm font-normal opacity-80">
+                          {tone === "ok" ? ui().feedback.ok : tone === "partial" ? ui().feedback.partial : ui().feedback.wrong}
                         </span>
                       ) : null}
                     </p>
@@ -265,7 +267,7 @@ export function ExerciseRunner({
                     {!result.correct && result.expected && !result.skip ? (
                       <p className="mt-1.5 text-sm">
                         <span className="text-ink-faint">Respuesta: </span>
-                        <span lang="zh-CN" className="zh-serif text-lg font-medium text-ink">
+                        <span lang={targetLang()} className="zh-serif text-lg font-medium text-ink">
                           {result.expected}
                         </span>
                       </p>

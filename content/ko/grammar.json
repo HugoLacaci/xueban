@@ -1,0 +1,5333 @@
+[
+ {
+  "id": "ieyo-yeyo",
+  "title": "Ser: 이에요 / 예요",
+  "zh": "이에요/예요",
+  "pattern": "Nombre + 이에요 (tras consonante) / 예요 (tras vocal)",
+  "level": 1,
+  "summary": "이에요/예요 equivale a «ser» para identificar (A es B) y va pegado al nombre; la forma depende de si el nombre acaba en consonante o en vocal.",
+  "explanation": "**이에요 / 예요** es la cópula «ser» del estilo cortés cotidiano (해요체). Sirve para decir qué o quién es algo: *soy estudiante*, *esto es café*. A diferencia del español, no va en medio de la frase como palabra independiente: se **pega al final del nombre**, sin espacio.\n\n### La elección depende del *batchim*\nEl *batchim* es la consonante final de una sílaba (la de abajo). Si el nombre termina en consonante, se usa **이에요**; si termina en vocal, **예요**.\n\n| Último sonido | Forma | Ejemplo |\n|---|---|---|\n| consonante (학생, 사람, 물) | **이에요** | 학생**이에요**, 사람**이에요**, 물**이에요** |\n| vocal (우고, 커피, 의사) | **예요** | 우고**예요**, 커피**예요**, 의사**예요** |\n\nAl pronunciar, la consonante final se encadena con 이: 학생이에요 suena *hak-saeng-i-e-yo*, 물이에요 suena *mu-ri-e-yo*.\n\n### Pregunta y registro\n- La pregunta es igual, con entonación ascendente: 학생이에요? *¿Eres estudiante?*\n- No hay persona gramatical: 학생이에요 vale para *soy / eres / es / somos / son*. El sujeto se deduce del contexto, como en español cuando omitimos *yo* o *tú*.\n- En estilo formal (presentaciones, noticias) se usa **입니다** para todos los casos: 학생입니다, 우고입니다.\n- 저 + 예요 → **저예요** (*soy yo*).\n\n⚠️ Solo sirve con **nombres**. Los adjetivos coreanos ya son verbos: *estoy ocupado* es 바빠요, no ~~바빠이에요~~. La negación (*no ser*) no es 안이에요, sino **아니에요** (ver «이/가 아니에요»).",
+  "examples": [
+   {
+    "zh": "저는 학생이에요.",
+    "py": "jeoneun haksaengieyo.",
+    "es": "Soy estudiante."
+   },
+   {
+    "zh": "저는 우고예요.",
+    "py": "jeoneun ugoyeyo.",
+    "es": "Soy Hugo."
+   },
+   {
+    "zh": "이것은 커피예요.",
+    "py": "igeoseun keopiyeyo.",
+    "es": "Esto es café."
+   },
+   {
+    "zh": "김 선생님은 한국 사람이에요.",
+    "py": "gim seonsaengnimeun hanguk saramieyo.",
+    "es": "La profesora Kim es coreana."
+   },
+   {
+    "zh": "여기는 학교예요.",
+    "py": "yeogineun hakgyoyeyo.",
+    "es": "Esto (aquí) es la escuela."
+   },
+   {
+    "zh": "지민 씨는 의사예요?",
+    "py": "jimin ssineun uisayeyo?",
+    "es": "¿Jimin es médica?"
+   },
+   {
+    "zh": "저는 스페인 사람이에요.",
+    "py": "jeoneun seupein saramieyo.",
+    "es": "Soy español."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "저는 학생예요.",
+    "right": "저는 학생이에요.",
+    "why": "학생 acaba en consonante (ㅇ), así que necesita 이에요. 예요 solo va tras vocal."
+   },
+   {
+    "wrong": "저는 의사이에요.",
+    "right": "저는 의사예요.",
+    "why": "의사 acaba en vocal: la forma estándar es 예요."
+   },
+   {
+    "wrong": "저는 바빠이에요.",
+    "right": "저는 바빠요.",
+    "why": "이에요/예요 solo se une a nombres. Los adjetivos coreanos se conjugan como verbos (바쁘다 → 바빠요)."
+   },
+   {
+    "wrong": "저는 학생 이에요.",
+    "right": "저는 학생이에요.",
+    "why": "La cópula se escribe pegada al nombre, sin espacio."
+   }
+  ],
+  "practice": {
+   "order": [
+    {
+     "zh": "저는 스페인 사람이에요.",
+     "py": "jeoneun seupein saramieyo.",
+     "es": "Soy español."
+    },
+    {
+     "zh": "이것은 물이에요.",
+     "py": "igeoseun murieyo.",
+     "es": "Esto es agua."
+    },
+    {
+     "zh": "민수 씨는 제 친구예요.",
+     "py": "minsu ssineun je chinguyeyo.",
+     "es": "Minsu es mi amigo."
+    }
+   ],
+   "fill": [
+    {
+     "zh": "저는 대학생＿.",
+     "answer": "이에요",
+     "options": [
+      "이에요",
+      "예요",
+      "은",
+      "가"
+     ],
+     "es": "Soy universitario."
+    },
+    {
+     "zh": "이 사람은 제 친구＿.",
+     "answer": "예요",
+     "options": [
+      "예요",
+      "이에요",
+      "를",
+      "는"
+     ],
+     "es": "Esta persona es mi amigo."
+    },
+    {
+     "zh": "여기는 서울＿.",
+     "answer": "이에요",
+     "options": [
+      "이에요",
+      "예요",
+      "에",
+      "도"
+     ],
+     "es": "Esto es Seúl."
+    }
+   ],
+   "translate": [
+    {
+     "zh": "저는 학생이에요.",
+     "py": "jeoneun haksaengieyo.",
+     "es": "Soy estudiante."
+    },
+    {
+     "zh": "이것은 제 가방이에요.",
+     "py": "igeoseun je gabangieyo.",
+     "es": "Esta es mi mochila."
+    }
+   ]
+  },
+  "related": [
+   "anieyo",
+   "eun-neun",
+   "seumnida",
+   "demonstratives"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "anieyo",
+  "title": "No ser: 이/가 아니에요",
+  "zh": "이/가 아니에요",
+  "pattern": "Nombre + 이 (consonante) / 가 (vocal) + 아니에요",
+  "level": 1,
+  "summary": "Para negar «A es B» se dice «A는 B이/가 아니에요»: el nombre lleva la partícula 이/가 y después va 아니에요.",
+  "explanation": "La negación de 이에요/예요 no se forma con 안 (como los verbos), sino con un verbo propio: **아니다** → **아니에요** (*no ser*). El nombre negado lleva la partícula **이/가**:\n\n| Último sonido del nombre | Partícula | Ejemplo |\n|---|---|---|\n| consonante | **이** | 학생**이** 아니에요 (*no soy estudiante*) |\n| vocal | **가** | 의사**가** 아니에요 (*no soy médico*) |\n\nCompara las dos formas:\n- 저는 학생**이에요**. — *Soy estudiante.*\n- 저는 학생**이 아니에요**. — *No soy estudiante.*\n\nFíjate en que aquí 아니에요 va **separado** del nombre (es otra palabra), mientras que 이에요 iba pegado.\n\n### Formal y respuestas\n- Estilo formal: **아닙니다** (학생이 아닙니다).\n- **아니요** es la respuesta *no* a una pregunta de sí/no: 학생이에요? — 아니요, 학생이 아니에요. Su opuesto es **네** (*sí*).\n- 아니에요 sola también se usa como respuesta amable a un agradecimiento o disculpa: 감사합니다! — 아니에요. (*¡No hay de qué!*)\n\nEn la lengua hablada a veces se cae la partícula (학생 아니에요), pero al principio conviene ponerla siempre.",
+  "examples": [
+   {
+    "zh": "저는 한국 사람이 아니에요.",
+    "py": "jeoneun hanguk sarami anieyo.",
+    "es": "No soy coreano."
+   },
+   {
+    "zh": "이것은 커피가 아니에요. 차예요.",
+    "py": "igeoseun keopiga anieyo. chayeyo.",
+    "es": "Esto no es café. Es té."
+   },
+   {
+    "zh": "우고 씨는 선생님이 아니에요.",
+    "py": "ugo ssineun seonsaengnimi anieyo.",
+    "es": "Hugo no es profesor."
+   },
+   {
+    "zh": "여기는 은행이 아니에요.",
+    "py": "yeogineun eunhaengi anieyo.",
+    "es": "Esto no es el banco."
+   },
+   {
+    "zh": "학생이에요? — 아니요, 회사원이에요.",
+    "py": "haksaengieyo? — aniyo, hoesawonieyo.",
+    "es": "¿Eres estudiante? —No, soy oficinista."
+   },
+   {
+    "zh": "저건 제 가방이 아니에요.",
+    "py": "jeogeon je gabangi anieyo.",
+    "es": "Aquello no es mi mochila."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "저는 학생이 안이에요.",
+    "right": "저는 학생이 아니에요.",
+    "why": "Con nombres no se usa 안. «No ser» es el verbo 아니다 → 아니에요."
+   },
+   {
+    "wrong": "이것은 물가 아니에요.",
+    "right": "이것은 물이 아니에요.",
+    "why": "물 acaba en consonante (ㄹ): la partícula es 이, no 가."
+   },
+   {
+    "wrong": "저는 학생이 아니예요.",
+    "right": "저는 학생이 아니에요.",
+    "why": "La ortografía correcta es 아니에요 (el verbo 아니다 + 에요), aunque se oiga parecido a 예요."
+   },
+   {
+    "wrong": "학생이에요? — 아니에요, 의사예요.",
+    "right": "학생이에요? — 아니요, 의사예요.",
+    "why": "Para responder «no» al principio de la frase se usa 아니요; 아니에요 es «no es…» o «de nada»."
+   }
+  ],
+  "practice": {
+   "order": [
+    {
+     "zh": "저는 중국 사람이 아니에요.",
+     "py": "jeoneun jungguk sarami anieyo.",
+     "es": "No soy chino."
+    },
+    {
+     "zh": "이건 제 우산이 아니에요.",
+     "py": "igeon je usani anieyo.",
+     "es": "Este no es mi paraguas."
+    }
+   ],
+   "fill": [
+    {
+     "zh": "저는 선생님＿ 아니에요.",
+     "answer": "이",
+     "options": [
+      "이",
+      "가",
+      "은",
+      "를"
+     ],
+     "es": "No soy profesor."
+    },
+    {
+     "zh": "이것은 우유＿ 아니에요.",
+     "answer": "가",
+     "options": [
+      "가",
+      "이",
+      "는",
+      "도"
+     ],
+     "es": "Esto no es leche."
+    },
+    {
+     "zh": "민수 씨는 의사가 ＿.",
+     "answer": "아니에요",
+     "options": [
+      "아니에요",
+      "안이에요",
+      "아니요",
+      "없어요"
+     ],
+     "es": "Minsu no es médico."
+    }
+   ],
+   "translate": [
+    {
+     "zh": "저는 한국 사람이 아니에요.",
+     "py": "jeoneun hanguk sarami anieyo.",
+     "es": "No soy coreano."
+    },
+    {
+     "zh": "여기는 학교가 아니에요.",
+     "py": "yeogineun hakgyoga anieyo.",
+     "es": "Esto no es la escuela."
+    }
+   ]
+  },
+  "related": [
+   "ieyo-yeyo",
+   "i-ga",
+   "an-negation"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "eun-neun",
+  "title": "La partícula de tema 은/는",
+  "zh": "은/는",
+  "pattern": "Nombre + 은 (consonante) / 는 (vocal)",
+  "level": 1,
+  "summary": "은/는 marca el tema de la frase: «en cuanto a X…». Se usa al presentarse, al hablar de algo ya conocido y para contrastar.",
+  "explanation": "En coreano, las funciones de las palabras se marcan con **partículas** pegadas detrás del nombre (como si en español dijéramos *yo-tema estudiante-soy*). **은/는** marca el **tema**: aquello de lo que vamos a hablar. Equivale más o menos a *en cuanto a…*, *pues yo…*.\n\n| Último sonido | Partícula | Ejemplos |\n|---|---|---|\n| consonante | **은** | 선생님**은**, 오늘**은**, 이것**은** |\n| vocal | **는** | 저**는**, 우고 씨**는**, 커피**는** |\n\n### Usos principales\n1. **Presentarse o hablar del tema**: 저**는** 우고예요. *(Yo) soy Hugo.*\n2. **Contraste**: 커피**는** 좋아해요. 차**는** 안 좋아해요. *El café sí me gusta; el té, no.* Se parece al español «el café, sí; el té, no».\n3. **Marcos de tiempo o lugar** que encuadran la frase: 오늘**은** 바빠요. *Hoy (por lo menos) estoy ocupado.* Se puede combinar con otras partículas: 주말**에는**, 한국**에서는**.\n\n### Contracciones habituales\n- 저는 → **전**, 이것은 → **이건**, 그것은 → **그건**, 저것은 → **저건**.\n\n### No repitas el tema\nComo en español, cuando el tema ya está claro se omite. Decir *저는… 저는… 저는…* en cada frase suena tan raro como repetir *yo* todo el rato.\n\nLa diferencia con 이/가 (sujeto) se explica en «은/는 frente a 이/가».",
+  "examples": [
+   {
+    "zh": "저는 우고예요.",
+    "py": "jeoneun ugoyeyo.",
+    "es": "Soy Hugo."
+   },
+   {
+    "zh": "선생님은 한국 사람이에요.",
+    "py": "seonsaengnimeun hanguk saramieyo.",
+    "es": "La profesora es coreana."
+   },
+   {
+    "zh": "오늘은 날씨가 좋아요.",
+    "py": "oneureun nalssiga joayo.",
+    "es": "Hoy hace buen tiempo."
+   },
+   {
+    "zh": "저는 커피를 좋아해요. 민수 씨는 차를 좋아해요.",
+    "py": "jeoneun keopireul joahaeyo. minsu ssineun chareul joahaeyo.",
+    "es": "A mí me gusta el café. A Minsu le gusta el té."
+   },
+   {
+    "zh": "한국어는 재미있어요.",
+    "py": "hangugeoneun jaemiisseoyo.",
+    "es": "El coreano es divertido."
+   },
+   {
+    "zh": "주말에는 집에서 쉬어요.",
+    "py": "jumareneun jibeseo swieoyo.",
+    "es": "Los fines de semana descanso en casa."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "선생님는 한국 사람이에요.",
+    "right": "선생님은 한국 사람이에요.",
+    "why": "선생님 acaba en consonante (ㅁ): le corresponde 은."
+   },
+   {
+    "wrong": "저은 학생이에요.",
+    "right": "저는 학생이에요.",
+    "why": "저 acaba en vocal: le corresponde 는."
+   },
+   {
+    "wrong": "저는 우고예요. 저는 스페인 사람이에요. 저는 학생이에요.",
+    "right": "저는 우고예요. 스페인 사람이에요. 학생이에요.",
+    "why": "Una vez fijado el tema, se omite. Repetir 저는 en cada frase suena forzado, igual que repetir «yo» en español."
+   },
+   {
+    "wrong": "우고 씨 는 학생이에요.",
+    "right": "우고 씨는 학생이에요.",
+    "why": "Las partículas se escriben pegadas a la palabra anterior."
+   }
+  ],
+  "practice": {
+   "order": [
+    {
+     "zh": "저는 한국어를 공부해요.",
+     "py": "jeoneun hangugeoreul gongbuhaeyo.",
+     "es": "Estudio coreano."
+    },
+    {
+     "zh": "오늘은 시간이 없어요.",
+     "py": "oneureun sigani eopseoyo.",
+     "es": "Hoy no tengo tiempo."
+    }
+   ],
+   "fill": [
+    {
+     "zh": "선생님＿ 한국 사람이에요.",
+     "answer": "은",
+     "options": [
+      "은",
+      "는",
+      "이",
+      "을"
+     ],
+     "es": "La profesora es coreana."
+    },
+    {
+     "zh": "우고 씨＿ 스페인 사람이에요.",
+     "answer": "는",
+     "options": [
+      "는",
+      "은",
+      "를",
+      "에"
+     ],
+     "es": "Hugo es español."
+    },
+    {
+     "zh": "사과는 좋아해요. 바나나＿ 안 좋아해요.",
+     "answer": "는",
+     "options": [
+      "는",
+      "가",
+      "를",
+      "도"
+     ],
+     "es": "Las manzanas me gustan; los plátanos, no."
+    }
+   ],
+   "translate": [
+    {
+     "zh": "저는 대학생이에요.",
+     "py": "jeoneun daehaksaengieyo.",
+     "es": "Soy universitario."
+    },
+    {
+     "zh": "오늘은 바빠요.",
+     "py": "oneureun bappayo.",
+     "es": "Hoy estoy ocupado."
+    }
+   ]
+  },
+  "related": [
+   "i-ga",
+   "eun-neun-vs-i-ga",
+   "ieyo-yeyo"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "i-ga",
+  "title": "La partícula de sujeto 이/가",
+  "zh": "이/가",
+  "pattern": "Nombre + 이 (consonante) / 가 (vocal) + verbo/adjetivo",
+  "level": 1,
+  "summary": "이/가 marca el sujeto gramatical: quién hace algo o qué cosa existe, falta o tiene una cualidad.",
+  "explanation": "**이/가** señala el **sujeto**, la persona o cosa que realiza la acción o de la que se dice algo.\n\n| Último sonido | Partícula | Ejemplos |\n|---|---|---|\n| consonante | **이** | 가방**이**, 시간**이**, 선생님**이** |\n| vocal | **가** | 친구**가**, 날씨**가**, 머리**가** |\n\n### Formas especiales (¡memorízalas!)\n| Palabra | + 이/가 |\n|---|---|\n| 저 (yo, cortés) | **제가** |\n| 나 (yo, informal) | **내가** |\n| 너 (tú, informal) | **네가** (en la lengua hablada, 니가) |\n| 누구 (quién) | **누가** |\n\n### Cuándo aparece sobre todo\n- Con **있어요 / 없어요** (*hay, tener / no hay, no tener*): 시간**이** 없어요 = *no tengo tiempo* (literalmente *el tiempo no existe*).\n- Con adjetivos que describen algo: 날씨**가** 좋아요, 머리**가** 아파요 (*me duele la cabeza*: la cabeza es el sujeto, como en el español «me duele **la cabeza**»).\n- Con **누가** (*quién*) y en su respuesta: 누가 와요? — 친구**가** 와요.\n- Cuando una información es **nueva** para el oyente.\n\nOjo: muchas construcciones que en español tienen otro sujeto, en coreano usan 이/가 para la cosa: *tengo un hermano* → 동생**이** 있어요.",
+  "examples": [
+   {
+    "zh": "가방이 있어요.",
+    "py": "gabangi isseoyo.",
+    "es": "Hay una mochila. / Tengo una mochila."
+   },
+   {
+    "zh": "오늘은 시간이 없어요.",
+    "py": "oneureun sigani eopseoyo.",
+    "es": "Hoy no tengo tiempo."
+   },
+   {
+    "zh": "제가 우고예요.",
+    "py": "jega ugoyeyo.",
+    "es": "Hugo soy yo."
+   },
+   {
+    "zh": "누가 와요?",
+    "py": "nuga wayo?",
+    "es": "¿Quién viene?"
+   },
+   {
+    "zh": "날씨가 좋아요.",
+    "py": "nalssiga joayo.",
+    "es": "Hace buen tiempo."
+   },
+   {
+    "zh": "머리가 아파요.",
+    "py": "meoriga apayo.",
+    "es": "Me duele la cabeza."
+   },
+   {
+    "zh": "친구가 한국에 와요.",
+    "py": "chinguga hanguge wayo.",
+    "es": "Un amigo viene a Corea."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "저가 할게요.",
+    "right": "제가 할게요.",
+    "why": "저 + 가 se convierte en 제가. Lo mismo con 나 → 내가."
+   },
+   {
+    "wrong": "누구가 와요?",
+    "right": "누가 와요?",
+    "why": "누구 + 가 se contrae obligatoriamente en 누가."
+   },
+   {
+    "wrong": "학생가 있어요.",
+    "right": "학생이 있어요.",
+    "why": "학생 acaba en consonante (ㅇ): la partícula es 이."
+   },
+   {
+    "wrong": "저는 시간을 없어요.",
+    "right": "저는 시간이 없어요.",
+    "why": "Con 있다/없다 la cosa que se tiene es sujeto (이/가), no complemento directo (을/를), aunque en español digamos «tener tiempo»."
+   }
+  ],
+  "practice": {
+   "order": [
+    {
+     "zh": "동생이 있어요.",
+     "py": "dongsaengi isseoyo.",
+     "es": "Tengo un hermano menor."
+    },
+    {
+     "zh": "날씨가 정말 좋아요.",
+     "py": "nalssiga jeongmal joayo.",
+     "es": "Hace muy buen tiempo."
+    }
+   ],
+   "fill": [
+    {
+     "zh": "오늘은 시간＿ 없어요.",
+     "answer": "이",
+     "options": [
+      "이",
+      "가",
+      "을",
+      "는"
+     ],
+     "es": "Hoy no tengo tiempo."
+    },
+    {
+     "zh": "친구＿ 와요.",
+     "answer": "가",
+     "options": [
+      "가",
+      "이",
+      "를",
+      "은"
+     ],
+     "es": "Viene un amigo."
+    },
+    {
+     "zh": "＿ 우고예요.",
+     "answer": "제가",
+     "options": [
+      "제가",
+      "저가",
+      "저를",
+      "제는"
+     ],
+     "es": "Hugo soy yo."
+    }
+   ],
+   "translate": [
+    {
+     "zh": "머리가 아파요.",
+     "py": "meoriga apayo.",
+     "es": "Me duele la cabeza."
+    },
+    {
+     "zh": "누가 와요?",
+     "py": "nuga wayo?",
+     "es": "¿Quién viene?"
+    }
+   ]
+  },
+  "related": [
+   "eun-neun",
+   "eun-neun-vs-i-ga",
+   "anieyo"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "eun-neun-vs-i-ga",
+  "title": "은/는 frente a 이/가",
+  "zh": "은/는 vs 이/가",
+  "pattern": "Tema(은/는) + … Sujeto(이/가) + predicado",
+  "level": 1,
+  "summary": "은/는 presenta el tema conocido o contrasta; 이/가 señala información nueva, responde a «quién/qué» y marca el sujeto de lo que se describe.",
+  "explanation": "Es una de las dudas más famosas del coreano, y en español no tenemos partículas equivalentes. La idea básica:\n\n| | **은/는** (tema) | **이/가** (sujeto) |\n|---|---|---|\n| Información | ya conocida, el marco | nueva, lo importante |\n| Pregunta típica | *¿y X qué?* | *¿quién? ¿qué?* |\n| Matiz | contraste (*X, en cambio…*) | identificación (*es X quien…*) |\n| Ejemplo | 저**는** 우고예요. *Yo soy Hugo.* | 제**가** 우고예요. *Hugo soy yo.* |\n\nUn truco: en español, la información nueva suele ir al final o con énfasis. *—¿Quién es Hugo? —Hugo soy **yo**.* Ese «yo» enfático es 제가.\n\n### Reglas prácticas\n1. **Palabras interrogativas** (누가, 뭐가, 어디가) llevan 이/가, nunca 은/는: 누**가** 왔어요? Y la respuesta también: 민수 씨**가** 왔어요.\n2. Al **presentarte o hablar de algo general**, usa 은/는: 서울**은** 커요.\n3. Para **contrastar**, 은/는: 고기**는** 먹어요. 생선**은** 안 먹어요.\n4. **Estructura doble «A은/는 B이/가 …»**: el tema es A y lo que se describe es B. 저**는** 머리**가** 아파요 (*a mí me duele la cabeza*); 서울**은** 사람**이** 많아요 (*en Seúl hay mucha gente*). Es parecido a «A mí, la cabeza me duele».\n5. Con **있어요/없어요** y adjetivos de descripción, la cosa descrita suele llevar 이/가.\n\nNo te agobies: al principio, usa 은/는 para el tema de la frase y 이/가 en los casos 1, 4 y 5. Con la práctica se vuelve intuitivo.",
+  "examples": [
+   {
+    "zh": "누가 우고 씨예요? — 제가 우고예요.",
+    "py": "nuga ugo ssiyeyo? — jega ugoyeyo.",
+    "es": "¿Quién es Hugo? —Hugo soy yo."
+   },
+   {
+    "zh": "저는 우고예요. 스페인 사람이에요.",
+    "py": "jeoneun ugoyeyo. seupein saramieyo.",
+    "es": "Soy Hugo. Soy español."
+   },
+   {
+    "zh": "사과는 좋아해요. 바나나는 안 좋아해요.",
+    "py": "sagwaneun joahaeyo. bananaeun an joahaeyo.",
+    "es": "Las manzanas me gustan; los plátanos, no."
+   },
+   {
+    "zh": "저는 머리가 아파요.",
+    "py": "jeoneun meoriga apayo.",
+    "es": "A mí me duele la cabeza."
+   },
+   {
+    "zh": "서울은 사람이 많아요.",
+    "py": "seoureun sarami manayo.",
+    "es": "En Seúl hay mucha gente."
+   },
+   {
+    "zh": "화장실이 어디예요? — 화장실은 저기예요.",
+    "py": "hwajangsiri eodiyeyo? — hwajangsireun jeogiyeyo.",
+    "es": "¿Dónde está el baño? —El baño está allí."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "누구는 왔어요?",
+    "right": "누가 왔어요?",
+    "why": "Las palabras interrogativas como 누구 nunca van con 은/는: 누구 + 가 = 누가."
+   },
+   {
+    "wrong": "누가 우고 씨예요? — 저는 우고예요.",
+    "right": "누가 우고 씨예요? — 제가 우고예요.",
+    "why": "La respuesta a «¿quién?» es información nueva y lleva 이/가."
+   },
+   {
+    "wrong": "저는 머리는 아파요.",
+    "right": "저는 머리가 아파요.",
+    "why": "En «A은/는 B이/가», el tema es la persona y lo que duele es el sujeto con 이/가. Con 머리는 parecería que contrastas con otra parte del cuerpo."
+   }
+  ],
+  "practice": {
+   "order": [
+    {
+     "zh": "저는 동생이 있어요.",
+     "py": "jeoneun dongsaengi isseoyo.",
+     "es": "Yo tengo un hermano menor."
+    },
+    {
+     "zh": "한국은 음식이 맛있어요.",
+     "py": "hangugeun eumsigi masisseoyo.",
+     "es": "En Corea la comida está rica."
+    }
+   ],
+   "fill": [
+    {
+     "zh": "＿ 왔어요?",
+     "answer": "누가",
+     "options": [
+      "누가",
+      "누구는",
+      "누구가",
+      "누구를"
+     ],
+     "es": "¿Quién ha venido?"
+    },
+    {
+     "zh": "저는 시간＿ 없어요.",
+     "answer": "이",
+     "options": [
+      "이",
+      "은",
+      "가",
+      "는"
+     ],
+     "es": "Yo no tengo tiempo."
+    },
+    {
+     "zh": "고기는 먹어요. 생선＿ 안 먹어요.",
+     "answer": "은",
+     "options": [
+      "은",
+      "이",
+      "는",
+      "을"
+     ],
+     "es": "La carne sí la como; el pescado, no."
+    }
+   ],
+   "translate": [
+    {
+     "zh": "제가 우고예요.",
+     "py": "jega ugoyeyo.",
+     "es": "Hugo soy yo."
+    },
+    {
+     "zh": "서울은 사람이 많아요.",
+     "py": "seoureun sarami manayo.",
+     "es": "En Seúl hay mucha gente."
+    }
+   ]
+  },
+  "related": [
+   "eun-neun",
+   "i-ga",
+   "question-words"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "eul-reul",
+  "title": "La partícula de objeto 을/를",
+  "zh": "을/를",
+  "pattern": "Nombre + 을 (consonante) / 를 (vocal) + verbo",
+  "level": 1,
+  "summary": "을/를 marca el complemento directo: lo que se come, se bebe, se estudia, se ve… El verbo siempre va al final.",
+  "explanation": "El coreano pone el **verbo al final** (orden Sujeto–Objeto–Verbo): *yo pan como*. Por eso necesita marcar qué palabra es el objeto: lo hace con **을/를**.\n\n| Último sonido | Partícula | Ejemplos |\n|---|---|---|\n| consonante | **을** | 밥**을**, 책**을**, 물**을** |\n| vocal | **를** | 커피**를**, 친구**를**, 영화**를** |\n\nGracias a las partículas, el orden puede variar un poco sin perder el sentido, pero lo normal es: 저는 밥을 먹어요.\n\n### Diferencias con el español\n- **Ver / encontrarse con alguien**: en español decimos *quedar **con** un amigo* o *ver **a** un amigo*; en coreano es objeto directo: 친구**를** 만나요.\n- **Gustar**: *me gusta el café* se dice con el verbo 좋아하다 y objeto: 커피**를** 좋아해요. (Con el adjetivo 좋다 se usaría 이/가: 커피**가** 좋아요.)\n- **무엇을** (*qué*) se contrae a menudo en **뭘**, y en el habla muchas veces se omite la partícula: 뭐 해요?\n\n### Contracciones del habla\n- 나를 → 날, 저를 → 절, 무엇을 → 뭘.",
+  "examples": [
+   {
+    "zh": "저는 밥을 먹어요.",
+    "py": "jeoneun babeul meogeoyo.",
+    "es": "Como (arroz / comida)."
+   },
+   {
+    "zh": "아침에 커피를 마셔요.",
+    "py": "achime keopireul masyeoyo.",
+    "es": "Por la mañana tomo café."
+   },
+   {
+    "zh": "한국어를 공부해요.",
+    "py": "hangugeoreul gongbuhaeyo.",
+    "es": "Estudio coreano."
+   },
+   {
+    "zh": "우고 씨는 책을 읽어요.",
+    "py": "ugo ssineun chaegeul ilgeoyo.",
+    "es": "Hugo lee un libro."
+   },
+   {
+    "zh": "주말에 친구를 만나요.",
+    "py": "jumare chingureul mannayo.",
+    "es": "El fin de semana quedo con un amigo."
+   },
+   {
+    "zh": "무엇을 해요?",
+    "py": "mueoseul haeyo?",
+    "es": "¿Qué haces?"
+   },
+   {
+    "zh": "같이 영화를 봐요.",
+    "py": "gachi yeonghwareul bwayo.",
+    "es": "Vemos una película juntos."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "친구에게 만나요.",
+    "right": "친구를 만나요.",
+    "why": "만나다 (quedar con, ver a) lleva objeto directo con 을/를, aunque en español usemos «con» o «a»."
+   },
+   {
+    "wrong": "저는 커피가 좋아해요.",
+    "right": "저는 커피를 좋아해요.",
+    "why": "좋아하다 es un verbo transitivo y lleva 을/를. 이/가 va con el adjetivo 좋다: 커피가 좋아요."
+   },
+   {
+    "wrong": "물를 마셔요.",
+    "right": "물을 마셔요.",
+    "why": "물 acaba en consonante (ㄹ): la partícula es 을."
+   },
+   {
+    "wrong": "저는 먹어요 밥을.",
+    "right": "저는 밥을 먹어요.",
+    "why": "En coreano el verbo va siempre al final de la frase."
+   }
+  ],
+  "practice": {
+   "order": [
+    {
+     "zh": "저는 한국 음식을 좋아해요.",
+     "py": "jeoneun hanguk eumsigeul joahaeyo.",
+     "es": "Me gusta la comida coreana."
+    },
+    {
+     "zh": "지민 씨는 음악을 들어요.",
+     "py": "jimin ssineun eumageul deureoyo.",
+     "es": "Jimin escucha música."
+    }
+   ],
+   "fill": [
+    {
+     "zh": "저는 책＿ 읽어요.",
+     "answer": "을",
+     "options": [
+      "을",
+      "를",
+      "이",
+      "은"
+     ],
+     "es": "Leo un libro."
+    },
+    {
+     "zh": "우유＿ 마셔요.",
+     "answer": "를",
+     "options": [
+      "를",
+      "을",
+      "가",
+      "에"
+     ],
+     "es": "Bebo leche."
+    },
+    {
+     "zh": "내일 친구＿ 만나요.",
+     "answer": "를",
+     "options": [
+      "를",
+      "에게",
+      "에",
+      "가"
+     ],
+     "es": "Mañana quedo con un amigo."
+    }
+   ],
+   "translate": [
+    {
+     "zh": "저는 한국어를 공부해요.",
+     "py": "jeoneun hangugeoreul gongbuhaeyo.",
+     "es": "Estudio coreano."
+    },
+    {
+     "zh": "물을 마셔요.",
+     "py": "mureul masyeoyo.",
+     "es": "Bebo agua."
+    }
+   ]
+  },
+  "related": [
+   "i-ga",
+   "ayo-eoyo",
+   "eun-neun"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "e-place-time",
+  "title": "에: lugar donde se está y momento",
+  "zh": "에",
+  "pattern": "Lugar + 에 + 있어요/없어요 · Tiempo + 에 + verbo",
+  "level": 1,
+  "summary": "에 indica dónde está o existe algo (con 있다/없다) y en qué momento ocurre algo (a las tres, el sábado…).",
+  "explanation": "**에** es una partícula muy versátil. No cambia según el batchim: siempre es 에.\n\n### 1. Lugar de existencia\nCon **있다 / 없다** (*estar, haber / no estar, no haber*) se usa 에, como el español *en*:\n- 집**에** 있어요. *Estoy en casa.*\n- 가방 안**에** 책이 있어요. *Dentro de la mochila hay un libro.*\n\nLas posiciones se forman con **nombre + posición + 에**: 책상 **위에** (*encima de la mesa*), 가방 **안에** (*dentro*), 학교 **앞에** (*delante*), 집 **뒤에** (*detrás*), 은행 **옆에** (*al lado*). Fíjate: el orden es el contrario al español (*mesa encima-en*).\n\n### 2. Tiempo\nPara horas, días, meses y partes del día: 세 시**에**, 토요일**에**, 아침**에**, 주말**에**, 3월**에**.\n\n⚠️ Algunas palabras de tiempo **no** llevan 에: **오늘** (hoy), **내일** (mañana), **어제** (ayer), **지금** (ahora), **언제** (cuándo). Igual que en español no decimos *en hoy*.\n\n### 3. Destino\nCon verbos de movimiento (*ir, venir*) también se usa 에: ver «에 가다/오다».\n\n### 에 frente a 에서\n**에** = donde algo **está**. **에서** = donde algo **se hace** (ver «에서»). 집**에** 있어요 (*estoy en casa*) / 집**에서** 쉬어요 (*descanso en casa*).",
+  "examples": [
+   {
+    "zh": "우고 씨는 지금 집에 있어요.",
+    "py": "ugo ssineun jigeum jibe isseoyo.",
+    "es": "Hugo está ahora en casa."
+   },
+   {
+    "zh": "세 시에 만나요.",
+    "py": "se sie mannayo.",
+    "es": "Quedamos a las tres."
+   },
+   {
+    "zh": "토요일에 영화를 봐요.",
+    "py": "toyoire yeonghwareul bwayo.",
+    "es": "El sábado veo una película."
+   },
+   {
+    "zh": "가방 안에 책이 있어요.",
+    "py": "gabang ane chaegi isseoyo.",
+    "es": "Dentro de la mochila hay un libro."
+   },
+   {
+    "zh": "아침에 커피를 마셔요.",
+    "py": "achime keopireul masyeoyo.",
+    "es": "Por la mañana tomo café."
+   },
+   {
+    "zh": "화장실이 어디에 있어요?",
+    "py": "hwajangsiri eodie isseoyo?",
+    "es": "¿Dónde está el baño?"
+   },
+   {
+    "zh": "은행은 학교 앞에 있어요.",
+    "py": "eunhaengeun hakgyo ape isseoyo.",
+    "es": "El banco está delante de la escuela."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "내일에 만나요.",
+    "right": "내일 만나요.",
+    "why": "오늘, 내일, 어제, 지금 no llevan 에."
+   },
+   {
+    "wrong": "저는 집에서 있어요.",
+    "right": "저는 집에 있어요.",
+    "why": "Con 있다/없다 (estar, haber) el lugar lleva 에, no 에서."
+   },
+   {
+    "wrong": "앞에 학교 있어요.",
+    "right": "학교 앞에 있어요.",
+    "why": "En coreano va primero el lugar de referencia y luego la posición: «escuela delante-en»."
+   }
+  ],
+  "practice": {
+   "order": [
+    {
+     "zh": "책상 위에 컴퓨터가 있어요.",
+     "py": "chaeksang wie keompyuteoga isseoyo.",
+     "es": "Encima de la mesa hay un ordenador."
+    },
+    {
+     "zh": "일요일에 집에 있어요.",
+     "py": "iryoire jibe isseoyo.",
+     "es": "El domingo estoy en casa."
+    }
+   ],
+   "fill": [
+    {
+     "zh": "다섯 시＿ 만나요.",
+     "answer": "에",
+     "options": [
+      "에",
+      "에서",
+      "을",
+      "가"
+     ],
+     "es": "Quedamos a las cinco."
+    },
+    {
+     "zh": "선생님은 교실＿ 있어요.",
+     "answer": "에",
+     "options": [
+      "에",
+      "에서",
+      "를",
+      "도"
+     ],
+     "es": "La profesora está en el aula."
+    },
+    {
+     "zh": "＿ 친구를 만나요.",
+     "answer": "내일",
+     "options": [
+      "내일",
+      "내일에",
+      "내일에서",
+      "내일을"
+     ],
+     "es": "Mañana quedo con un amigo."
+    }
+   ],
+   "translate": [
+    {
+     "zh": "저는 지금 학교에 있어요.",
+     "py": "jeoneun jigeum hakgyoe isseoyo.",
+     "es": "Ahora estoy en la escuela."
+    },
+    {
+     "zh": "토요일에 친구를 만나요.",
+     "py": "toyoire chingureul mannayo.",
+     "es": "El sábado quedo con un amigo."
+    }
+   ]
+  },
+  "related": [
+   "eseo",
+   "e-gada-oda",
+   "numbers-native"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "eseo",
+  "title": "에서: lugar donde se hace algo y procedencia",
+  "zh": "에서",
+  "pattern": "Lugar + 에서 + verbo de acción · Lugar + 에서 오다 (venir de)",
+  "level": 1,
+  "summary": "에서 marca el lugar donde ocurre una acción (estudiar en la biblioteca) y también el punto de partida (venir de España).",
+  "explanation": "**에서** tampoco cambia con el batchim. Tiene dos usos principales:\n\n### 1. Lugar donde se realiza una acción\nCuando el verbo es una **acción** (estudiar, comer, trabajar, comprar…), el lugar va con 에서:\n- 도서관**에서** 공부해요. *Estudio en la biblioteca.*\n- 편의점**에서** 물을 사요. *Compro agua en la tienda 24 horas.*\n\n### 2. Origen, «desde»\nCon verbos de movimiento indica de dónde se viene: 스페인**에서** 왔어요. *Vengo de España.* En este uso equivale al español *de / desde*.\n\n### El contraste clave: 에 / 에서\n| | 에 | 에서 |\n|---|---|---|\n| Tipo de verbo | estar, haber, ir, venir | acciones |\n| Ejemplo | 집**에** 있어요 (*estoy en casa*) | 집**에서** 자요 (*duermo en casa*) |\n| Ejemplo | 서울**에** 가요 (*voy a Seúl*) | 서울**에서** 와요 (*vengo de Seúl*) |\n\nEn español usamos *en* para todo, así que hay que fijarse en el verbo: ¿solo **estás**, o **haces** algo allí?\n\n### Formas cortas\nTras **여기, 거기, 저기, 어디** se suele acortar a **서**: 여기서, 어디서. 어디**서** 왔어요? *¿De dónde eres?*",
+  "examples": [
+   {
+    "zh": "저는 도서관에서 공부해요.",
+    "py": "jeoneun doseogwaneseo gongbuhaeyo.",
+    "es": "Estudio en la biblioteca."
+   },
+   {
+    "zh": "카페에서 커피를 마셔요.",
+    "py": "kapeeseo keopireul masyeoyo.",
+    "es": "Tomo café en la cafetería."
+   },
+   {
+    "zh": "저는 스페인에서 왔어요.",
+    "py": "jeoneun seupeineseo wasseoyo.",
+    "es": "Vengo de España. / Soy de España."
+   },
+   {
+    "zh": "민수 씨는 어디에서 일해요?",
+    "py": "minsu ssineun eodieseo ilhaeyo?",
+    "es": "¿Dónde trabaja Minsu?"
+   },
+   {
+    "zh": "편의점에서 물을 사요.",
+    "py": "pyeonuijeomeseo mureul sayo.",
+    "es": "Compro agua en la tienda 24 horas."
+   },
+   {
+    "zh": "학교 식당에서 점심을 먹어요.",
+    "py": "hakgyo sikdangeseo jeomsimeul meogeoyo.",
+    "es": "Como en el comedor de la universidad."
+   },
+   {
+    "zh": "주말에는 집에서 쉬어요.",
+    "py": "jumareneun jibeseo swieoyo.",
+    "es": "Los fines de semana descanso en casa."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "도서관에 공부해요.",
+    "right": "도서관에서 공부해요.",
+    "why": "공부하다 es una acción: el lugar donde se realiza lleva 에서."
+   },
+   {
+    "wrong": "저는 집에서 있어요.",
+    "right": "저는 집에 있어요.",
+    "why": "있다 indica solo dónde se está, no una acción: lleva 에."
+   },
+   {
+    "wrong": "저는 스페인에 왔어요.",
+    "right": "저는 스페인에서 왔어요.",
+    "why": "Para la procedencia («vengo de») se usa 에서. 스페인에 왔어요 significaría «he venido a España»."
+   }
+  ],
+  "practice": {
+   "order": [
+    {
+     "zh": "저는 카페에서 친구를 만나요.",
+     "py": "jeoneun kapeeseo chingureul mannayo.",
+     "es": "Quedo con un amigo en la cafetería."
+    },
+    {
+     "zh": "어디에서 왔어요?",
+     "py": "eodieseo wasseoyo?",
+     "es": "¿De dónde eres?"
+    }
+   ],
+   "fill": [
+    {
+     "zh": "도서관＿ 책을 읽어요.",
+     "answer": "에서",
+     "options": [
+      "에서",
+      "에",
+      "을",
+      "는"
+     ],
+     "es": "Leo un libro en la biblioteca."
+    },
+    {
+     "zh": "저는 마드리드＿ 왔어요.",
+     "answer": "에서",
+     "options": [
+      "에서",
+      "에",
+      "로",
+      "를"
+     ],
+     "es": "Vengo de Madrid."
+    },
+    {
+     "zh": "지금 집＿ 있어요.",
+     "answer": "에",
+     "options": [
+      "에",
+      "에서",
+      "이",
+      "을"
+     ],
+     "es": "Ahora estoy en casa."
+    }
+   ],
+   "translate": [
+    {
+     "zh": "학교에서 한국어를 공부해요.",
+     "py": "hakgyoeseo hangugeoreul gongbuhaeyo.",
+     "es": "Estudio coreano en la escuela."
+    },
+    {
+     "zh": "저는 스페인에서 왔어요.",
+     "py": "jeoneun seupeineseo wasseoyo.",
+     "es": "Soy de España."
+    }
+   ]
+  },
+  "related": [
+   "e-place-time",
+   "e-gada-oda",
+   "buteo-kkaji"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "e-gada-oda",
+  "title": "Ir y venir: 에 가다 / 에 오다",
+  "zh": "에 가다/오다",
+  "pattern": "Destino + 에 + 가요 / 와요",
+  "level": 1,
+  "summary": "Con verbos de movimiento, 에 marca el destino: 학교에 가요 «voy a la escuela», 한국에 와요 «viene a Corea».",
+  "explanation": "El destino de un movimiento se marca con **에**, equivalente al español *a*:\n- 학교**에** 가요. *Voy a la escuela.*\n- 친구가 우리 집**에** 와요. *Un amigo viene a mi casa.*\n\n### Los verbos\n| Infinitivo | Presente cortés | Pasado |\n|---|---|---|\n| 가다 (ir) | **가요** | 갔어요 |\n| 오다 (venir) | **와요** (오 + 아요) | 왔어요 |\n| 다니다 (ir con regularidad) | 다녀요 | 다녔어요 |\n| 돌아가다 (volver) | 돌아가요 | 돌아갔어요 |\n\n**다니다** se usa para lo que haces habitualmente: 학교**에** 다녀요 = *voy a la escuela / estudio allí*.\n\n### Personas como destino\nSi el destino es una **persona**, no se usa 에 sino **에게** (escrito) o **한테** (hablado): 친구**한테** 가요.\n\n### Resumen de las tres partículas de lugar\n| Partícula | Sentido | Ejemplo |\n|---|---|---|\n| 에 | a (destino) | 서울**에** 가요 |\n| 에서 | desde (origen) | 서울**에서** 와요 |\n| (으)로 | hacia (dirección) | 서울**로** 가요 |\n\nEn la conversación es muy frecuente omitir 에 con 어디: 어디 가요? *¿Adónde vas?*",
+  "examples": [
+   {
+    "zh": "저는 학교에 가요.",
+    "py": "jeoneun hakgyoe gayo.",
+    "es": "Voy a la escuela."
+   },
+   {
+    "zh": "우고 씨, 어디에 가요? — 은행에 가요.",
+    "py": "ugo ssi, eodie gayo? — eunhaenge gayo.",
+    "es": "Hugo, ¿adónde vas? —Voy al banco."
+   },
+   {
+    "zh": "내일 서울에 가요.",
+    "py": "naeil seoure gayo.",
+    "es": "Mañana voy a Seúl."
+   },
+   {
+    "zh": "친구가 우리 집에 와요.",
+    "py": "chinguga uri jibe wayo.",
+    "es": "Un amigo viene a mi casa."
+   },
+   {
+    "zh": "한국에 언제 와요?",
+    "py": "hanguge eonje wayo?",
+    "es": "¿Cuándo vienes a Corea?"
+   },
+   {
+    "zh": "주말에 부산에 가요.",
+    "py": "jumare busane gayo.",
+    "es": "El fin de semana voy a Busan."
+   },
+   {
+    "zh": "수업 후에 집에 돌아가요.",
+    "py": "sueop hue jibe doragayo.",
+    "es": "Después de clase vuelvo a casa."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "학교에서 가요.",
+    "right": "학교에 가요.",
+    "why": "에서 con 가다 significa «desde». El destino («a») es 에."
+   },
+   {
+    "wrong": "친구에 가요.",
+    "right": "친구한테 가요.",
+    "why": "Cuando el destino es una persona se usa 한테/에게, no 에."
+   },
+   {
+    "wrong": "저는 가요 학교에.",
+    "right": "저는 학교에 가요.",
+    "why": "El verbo siempre cierra la frase."
+   },
+   {
+    "wrong": "어제 서울에 가요.",
+    "right": "어제 서울에 갔어요.",
+    "why": "Con «ayer» hace falta el pasado (갔어요), ver «pasado 았/었»."
+   }
+  ],
+  "practice": {
+   "order": [
+    {
+     "zh": "저는 내일 부산에 가요.",
+     "py": "jeoneun naeil busane gayo.",
+     "es": "Mañana voy a Busan."
+    },
+    {
+     "zh": "선생님이 교실에 와요.",
+     "py": "seonsaengnimi gyosire wayo.",
+     "es": "La profesora viene al aula."
+    }
+   ],
+   "fill": [
+    {
+     "zh": "저는 회사＿ 가요.",
+     "answer": "에",
+     "options": [
+      "에",
+      "에서",
+      "를",
+      "가"
+     ],
+     "es": "Voy a la empresa."
+    },
+    {
+     "zh": "민수 씨가 한국에서 ＿.",
+     "answer": "와요",
+     "options": [
+      "와요",
+      "가요",
+      "있어요",
+      "봐요"
+     ],
+     "es": "Minsu viene de Corea."
+    },
+    {
+     "zh": "주말에 어디＿ 가요?",
+     "answer": "에",
+     "options": [
+      "에",
+      "에서",
+      "을",
+      "는"
+     ],
+     "es": "¿Adónde vas el fin de semana?"
+    }
+   ],
+   "translate": [
+    {
+     "zh": "저는 학교에 가요.",
+     "py": "jeoneun hakgyoe gayo.",
+     "es": "Voy a la escuela."
+    },
+    {
+     "zh": "친구가 집에 와요.",
+     "py": "chinguga jibe wayo.",
+     "es": "Un amigo viene a casa."
+    }
+   ]
+  },
+  "related": [
+   "e-place-time",
+   "eseo",
+   "eu-ro",
+   "ayo-eoyo"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ui",
+  "title": "Posesión con 의",
+  "zh": "의",
+  "pattern": "Poseedor + 의 + cosa poseída",
+  "level": 1,
+  "summary": "의 equivale a «de» posesivo, pero el orden es al revés: 우고 씨의 가방 = «la mochila de Hugo». Con pronombres se contrae: 저의 → 제.",
+  "explanation": "**의** expresa posesión o pertenencia, como el español *de*. La gran diferencia es el **orden**: en coreano el poseedor va **delante**, como en inglés *Hugo's bag*.\n\n- 우고 씨**의** 가방 → *la mochila de Hugo* (literalmente *Hugo-de mochila*)\n- 선생님**의** 전화번호 → *el teléfono de la profesora*\n\n### Pronunciación\nComo partícula, 의 se pronuncia casi siempre **[에]**: 우고 씨의 suena *ugo ssie*. (Al principio de palabra, como en 의사, se pronuncia *ui*.)\n\n### Contracciones con pronombres\n| Pronombre | + 의 | Uso |\n|---|---|---|\n| 저 (yo, cortés) | **제** | 제 이름, 제 친구 |\n| 나 (yo, informal) | **내** | 내 친구 |\n| 너 (tú, informal) | **네** | 네 책 |\n\nLo normal es usar siempre la forma contraída: **제 이름은 우고예요** (*me llamo Hugo*, lit. *mi nombre es Hugo*).\n\n### Omisión de 의\nEn el habla, 의 se omite muy a menudo cuando la relación es evidente: 학교 친구 (*amigo del colegio*), 한국 음식 (*comida coreana*), 우고 씨 가방.\n\n### 우리 = «nuestro» para la familia y la casa\nPara hablar de tu familia, tu casa o tu país, los coreanos dicen **우리** (*nuestro*) en lugar de *mi*: **우리 엄마** (*mi madre*), **우리 집** (*mi casa*). Decir 제 엄마 suena raro.",
+  "examples": [
+   {
+    "zh": "이것은 제 책이에요.",
+    "py": "igeoseun je chaegieyo.",
+    "es": "Este es mi libro."
+   },
+   {
+    "zh": "우고 씨의 가방이에요.",
+    "py": "ugo ssiui gabangieyo.",
+    "es": "Es la mochila de Hugo."
+   },
+   {
+    "zh": "선생님의 전화번호를 알아요?",
+    "py": "seonsaengnimui jeonhwabeonhoreul arayo?",
+    "es": "¿Sabes el número de teléfono de la profesora?"
+   },
+   {
+    "zh": "우리 엄마는 의사예요.",
+    "py": "uri eommaneun uisayeyo.",
+    "es": "Mi madre es médica."
+   },
+   {
+    "zh": "제 친구는 한국 사람이에요.",
+    "py": "je chinguneun hanguk saramieyo.",
+    "es": "Mi amigo es coreano."
+   },
+   {
+    "zh": "지민 씨의 동생은 고등학생이에요.",
+    "py": "jimin ssiui dongsaengeun godeunghaksaengieyo.",
+    "es": "El hermano menor de Jimin es estudiante de bachillerato."
+   },
+   {
+    "zh": "이건 누구 우산이에요?",
+    "py": "igeon nugu usanieyo?",
+    "es": "¿De quién es este paraguas?"
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "가방의 우고 씨",
+    "right": "우고 씨의 가방",
+    "why": "El poseedor va delante: «Hugo-de mochila», justo al revés que en español."
+   },
+   {
+    "wrong": "저의 이름은 우고예요.",
+    "right": "제 이름은 우고예요.",
+    "why": "저의 no es incorrecto, pero lo natural es la contracción 제."
+   },
+   {
+    "wrong": "제 엄마는 선생님이에요.",
+    "right": "우리 엄마는 선생님이에요.",
+    "why": "Para la familia y la casa se dice 우리 («nuestro»), aunque en español digamos «mi»."
+   }
+  ],
+  "practice": {
+   "order": [
+    {
+     "zh": "제 이름은 우고예요.",
+     "py": "je ireumeun ugoyeyo.",
+     "es": "Me llamo Hugo."
+    },
+    {
+     "zh": "이것은 민수 씨의 우산이에요.",
+     "py": "igeoseun minsu ssiui usanieyo.",
+     "es": "Este es el paraguas de Minsu."
+    }
+   ],
+   "fill": [
+    {
+     "zh": "＿ 이름은 우고예요.",
+     "answer": "제",
+     "options": [
+      "제",
+      "저",
+      "저는",
+      "제가"
+     ],
+     "es": "Me llamo Hugo."
+    },
+    {
+     "zh": "이건 선생님＿ 가방이에요.",
+     "answer": "의",
+     "options": [
+      "의",
+      "이",
+      "을",
+      "에"
+     ],
+     "es": "Esta es la bolsa de la profesora."
+    },
+    {
+     "zh": "＿ 집은 서울에 있어요.",
+     "answer": "우리",
+     "options": [
+      "우리",
+      "저",
+      "제가",
+      "저는"
+     ],
+     "es": "Mi casa está en Seúl."
+    }
+   ],
+   "translate": [
+    {
+     "zh": "이것은 제 가방이에요.",
+     "py": "igeoseun je gabangieyo.",
+     "es": "Esta es mi mochila."
+    },
+    {
+     "zh": "우리 아버지는 회사원이에요.",
+     "py": "uri abeojineun hoesawonieyo.",
+     "es": "Mi padre es oficinista."
+    }
+   ]
+  },
+  "related": [
+   "ieyo-yeyo",
+   "demonstratives",
+   "eun-neun"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "do",
+  "title": "También: la partícula 도",
+  "zh": "도",
+  "pattern": "Nombre + 도 (sustituye a 은/는, 이/가, 을/를)",
+  "level": 1,
+  "summary": "도 significa «también» (y con negación, «tampoco»). Se pega al nombre y sustituye a las partículas de tema, sujeto u objeto.",
+  "explanation": "**도** equivale a *también*. Es igual tras consonante y tras vocal. Se coloca **pegado al nombre** al que afecta, no junto al verbo como en español.\n\n- 저**도** 학생이에요. *Yo también soy estudiante.*\n- 커피**도** 마셔요. *También tomo café.*\n\n### 도 sustituye a otras partículas\n은/는, 이/가 y 을/를 **desaparecen** cuando se añade 도:\n| Sin 도 | Con 도 |\n|---|---|\n| 저**는** 학생이에요 | 저**도** 학생이에요 |\n| 시간**이** 없어요 | 시간**도** 없어요 |\n| 빵**을** 먹어요 | 빵**도** 먹어요 |\n\nEn cambio, 에, 에서, 한테… se **mantienen** y 도 va detrás: 주말**에도**, 학교**에서도**.\n\n### «Tampoco»\nCon un verbo negativo, 도 equivale a *tampoco*: 저**도** 안 가요. *Yo tampoco voy.* El coreano no tiene palabra distinta para *tampoco*.\n\n### Respuesta corta\n**저도요.** = *Yo también.* (cortés). Muy útil en conversación.",
+  "examples": [
+   {
+    "zh": "저도 학생이에요.",
+    "py": "jeodo haksaengieyo.",
+    "es": "Yo también soy estudiante."
+   },
+   {
+    "zh": "빵을 먹어요. 우유도 마셔요.",
+    "py": "ppangeul meogeoyo. uyudo masyeoyo.",
+    "es": "Como pan. También bebo leche."
+   },
+   {
+    "zh": "저는 한국어를 좋아해요. — 저도요!",
+    "py": "jeoneun hangugeoreul joahaeyo. — jeodoyo!",
+    "es": "Me gusta el coreano. —¡A mí también!"
+   },
+   {
+    "zh": "주말에도 일해요.",
+    "py": "jumaredo ilhaeyo.",
+    "es": "Trabajo también los fines de semana."
+   },
+   {
+    "zh": "민수 씨도 안 와요.",
+    "py": "minsu ssido an wayo.",
+    "es": "Minsu tampoco viene."
+   },
+   {
+    "zh": "오늘은 시간도 없고 돈도 없어요.",
+    "py": "oneureun sigando eopgo dondo eopseoyo.",
+    "es": "Hoy no tengo ni tiempo ni dinero."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "저는도 학생이에요.",
+    "right": "저도 학생이에요.",
+    "why": "도 sustituye a 은/는; no se acumulan."
+   },
+   {
+    "wrong": "저는 커피를 마셔요도.",
+    "right": "저는 커피도 마셔요.",
+    "why": "도 va pegado al nombre al que se refiere, no al final del verbo."
+   },
+   {
+    "wrong": "저는 학교도에 가요.",
+    "right": "저는 학교에도 가요.",
+    "why": "Con 에 y 에서, 도 va detrás: 에도, 에서도."
+   },
+   {
+    "wrong": "저는 커피를 마셔요. 저도 차를 마셔요. (queriendo decir «también tomo té»)",
+    "right": "저는 커피를 마셔요. 차도 마셔요.",
+    "why": "도 afecta a la palabra a la que se pega: 저도 = «yo también»; 차도 = «también té»."
+   }
+  ],
+  "practice": {
+   "order": [
+    {
+     "zh": "제 친구도 한국어를 공부해요.",
+     "py": "je chingudo hangugeoreul gongbuhaeyo.",
+     "es": "Mi amigo también estudia coreano."
+    },
+    {
+     "zh": "저도 커피를 안 마셔요.",
+     "py": "jeodo keopireul an masyeoyo.",
+     "es": "Yo tampoco tomo café."
+    }
+   ],
+   "fill": [
+    {
+     "zh": "저＿ 스페인 사람이에요.",
+     "answer": "도",
+     "options": [
+      "도",
+      "는도",
+      "가",
+      "의"
+     ],
+     "es": "Yo también soy español."
+    },
+    {
+     "zh": "주말에＿ 공부해요.",
+     "answer": "도",
+     "options": [
+      "도",
+      "는",
+      "를",
+      "이"
+     ],
+     "es": "Estudio también los fines de semana."
+    },
+    {
+     "zh": "사과를 사요. 바나나＿ 사요.",
+     "answer": "도",
+     "options": [
+      "도",
+      "를도",
+      "가",
+      "와"
+     ],
+     "es": "Compro manzanas. También compro plátanos."
+    }
+   ],
+   "translate": [
+    {
+     "zh": "저도요.",
+     "py": "jeodoyo.",
+     "es": "Yo también."
+    },
+    {
+     "zh": "지민 씨도 학생이에요.",
+     "py": "jimin ssido haksaengieyo.",
+     "es": "Jimin también es estudiante."
+    }
+   ]
+  },
+  "related": [
+   "eun-neun",
+   "i-ga",
+   "eul-reul",
+   "an-negation"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "wa-gwa-hago",
+  "title": "«Y» y «con»: 와/과, 하고, (이)랑",
+  "zh": "와/과 · 하고 · (이)랑",
+  "pattern": "Nombre A + 와/과 · 하고 · (이)랑 + Nombre B",
+  "level": 1,
+  "summary": "Para unir nombres («A y B») o decir «con alguien» se usa 와/과 (escrito), 하고 (cotidiano) o (이)랑 (coloquial).",
+  "explanation": "En coreano, la *y* que une **nombres** es una partícula que se pega al primero. Hay tres variantes según el registro:\n\n| Forma | Tras consonante | Tras vocal | Registro |\n|---|---|---|---|\n| 와/과 | **과** (책**과**) | **와** (커피**와**) | escrito, formal |\n| 하고 | **하고** | **하고** | oral cotidiano, siempre igual |\n| (이)랑 | **이랑** (책**이랑**) | **랑** (커피**랑**) | coloquial, entre amigos |\n\n⚠️ Ojo con 와/과: va **al revés** de lo que podría parecer. **과** tras consonante, **와** tras vocal.\n\n### Dos usos\n1. **A y B**: 빵**하고** 우유를 사요. *Compro pan y leche.* La partícula del final de la lista (을/를, 이/가…) va solo en el último nombre.\n2. **Con alguien**: 친구**하고** 영화를 봐요. *Veo una película con un amigo.* Para insistir en «juntos» se añade **같이** o **함께**: 친구하고 **같이**.\n\n### Solo une nombres\nPara unir verbos o frases (*como **y** bebo*) se usa otra cosa: la terminación **-고** (ver «-고: y»). No digas ~~먹어요하고 마셔요~~.",
+  "examples": [
+   {
+    "zh": "빵하고 우유를 사요.",
+    "py": "ppanghago uyureul sayo.",
+    "es": "Compro pan y leche."
+   },
+   {
+    "zh": "저는 친구하고 같이 영화를 봐요.",
+    "py": "jeoneun chinguhago gachi yeonghwareul bwayo.",
+    "es": "Veo una película con un amigo."
+   },
+   {
+    "zh": "사과와 배를 샀어요.",
+    "py": "sagwawa baereul sasseoyo.",
+    "es": "Compré manzanas y peras."
+   },
+   {
+    "zh": "선생님과 학생들이 교실에 있어요.",
+    "py": "seonsaengnimgwa haksaengdeuri gyosire isseoyo.",
+    "es": "La profesora y los alumnos están en el aula."
+   },
+   {
+    "zh": "지민이랑 밥 먹었어요.",
+    "py": "jiminirang bap meogeosseoyo.",
+    "es": "He comido con Jimin."
+   },
+   {
+    "zh": "주말에 가족하고 부산에 가요.",
+    "py": "jumare gajokago busane gayo.",
+    "es": "El fin de semana voy a Busan con mi familia."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "책와 공책",
+    "right": "책과 공책",
+    "why": "책 acaba en consonante: se usa 과. 와 va tras vocal (커피와)."
+   },
+   {
+    "wrong": "밥을 먹어요하고 물을 마셔요.",
+    "right": "밥을 먹고 물을 마셔요.",
+    "why": "하고 y 와/과 solo unen nombres. Para unir verbos se usa -고."
+   },
+   {
+    "wrong": "빵을하고 우유를 사요.",
+    "right": "빵하고 우유를 사요.",
+    "why": "La partícula de objeto solo va en el último elemento de la lista."
+   }
+  ],
+  "practice": {
+   "order": [
+    {
+     "zh": "저는 커피하고 케이크를 주문해요.",
+     "py": "jeoneun keopihago keikeureul jumunhaeyo.",
+     "es": "Pido café y tarta."
+    },
+    {
+     "zh": "친구하고 같이 공부해요.",
+     "py": "chinguhago gachi gongbuhaeyo.",
+     "es": "Estudio con un amigo."
+    }
+   ],
+   "fill": [
+    {
+     "zh": "선생님＿ 학생",
+     "answer": "과",
+     "options": [
+      "과",
+      "와",
+      "랑",
+      "도"
+     ],
+     "es": "la profesora y el alumno"
+    },
+    {
+     "zh": "우유＿ 빵을 사요.",
+     "answer": "와",
+     "options": [
+      "와",
+      "과",
+      "이랑",
+      "을"
+     ],
+     "es": "Compro leche y pan."
+    },
+    {
+     "zh": "동생＿ 같이 놀아요.",
+     "answer": "하고",
+     "options": [
+      "하고",
+      "와서",
+      "고",
+      "도"
+     ],
+     "es": "Juego con mi hermano pequeño."
+    }
+   ],
+   "translate": [
+    {
+     "zh": "물하고 주스를 마셔요.",
+     "py": "mulhago juseureul masyeoyo.",
+     "es": "Bebo agua y zumo."
+    },
+    {
+     "zh": "친구하고 같이 밥을 먹어요.",
+     "py": "chinguhago gachi babeul meogeoyo.",
+     "es": "Como con un amigo."
+    }
+   ]
+  },
+  "related": [
+   "go-connector",
+   "eul-reul",
+   "do"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ayo-eoyo",
+  "title": "Presente cortés -아요/어요",
+  "zh": "-아요/어요",
+  "pattern": "Raíz + 아요 (si la última vocal es ㅏ/ㅗ) / 어요 (otras) · 하다 → 해요",
+  "level": 1,
+  "summary": "La conjugación básica del coreano cotidiano: quita 다 al infinitivo y añade 아요 u 어요 según la última vocal de la raíz; los verbos en 하다 hacen 해요.",
+  "explanation": "Todos los verbos y adjetivos coreanos acaban en **다** en el diccionario (가다, 먹다, 좋다). Quitando 다 queda la **raíz** (가-, 먹-, 좋-). El presente del estilo cortés y cotidiano (**해요체**) se forma así:\n\n### Regla 1: mira la última vocal de la raíz\n| Última vocal | Terminación | Ejemplos |\n|---|---|---|\n| **ㅏ** u **ㅗ** | **-아요** | 앉다 → 앉**아요**, 살다 → 살**아요**, 좋다 → 좋**아요**, 받다 → 받**아요** |\n| cualquier otra | **-어요** | 먹다 → 먹**어요**, 읽다 → 읽**어요**, 있다 → 있**어요**, 쉬다 → 쉬**어요** |\n| **하다** | **해요** | 공부하다 → 공부**해요**, 좋아하다 → 좋아**해요** |\n\n### Regla 2: si la raíz acaba en vocal, se contrae\n| Infinitivo | Paso intermedio | Forma real |\n|---|---|---|\n| 가다 (ir) | 가 + 아요 | **가요** (ㅏ+ㅏ se funden) |\n| 서다 (estar de pie) | 서 + 어요 | **서요** |\n| 보내다 (enviar) | 보내 + 어요 | **보내요** |\n| 오다 (venir) | 오 + 아요 | **와요** (ㅗ+ㅏ = ㅘ) |\n| 보다 (ver) | 보 + 아요 | **봐요** |\n| 주다 (dar) | 주 + 어요 | **줘요** (ㅜ+ㅓ = ㅝ) |\n| 배우다 (aprender) | 배우 + 어요 | **배워요** |\n| 마시다 (beber) | 마시 + 어요 | **마셔요** (ㅣ+ㅓ = ㅕ) |\n| 기다리다 (esperar) | 기다리 + 어요 | **기다려요** |\n| 되다 (hacerse) | 되 + 어요 | **돼요** (ㅚ+ㅓ = ㅙ) |\n\n### Una forma, muchos usos\n- Vale para **todas las personas**: 가요 = *voy, vas, va, vamos, van*.\n- Vale para **afirmar, preguntar** (entonación ascendente: 가요?), **proponer** (같이 가요! *¡vamos!*) y **pedir** (빨리 와요 *ven rápido*).\n- Es el registro adecuado con desconocidos, profesores y compañeros. Ver «niveles de habla».\n\nAlgunos verbos son **irregulares** (듣다 → 들어요, 덥다 → 더워요, 바쁘다 → 바빠요…): ver «irregulares».",
+  "examples": [
+   {
+    "zh": "저는 서울에 살아요.",
+    "py": "jeoneun seoure sarayo.",
+    "es": "Vivo en Seúl."
+   },
+   {
+    "zh": "아침을 먹어요.",
+    "py": "achimeul meogeoyo.",
+    "es": "Desayuno."
+   },
+   {
+    "zh": "매일 한국어를 공부해요.",
+    "py": "maeil hangugeoreul gongbuhaeyo.",
+    "es": "Estudio coreano todos los días."
+   },
+   {
+    "zh": "친구가 와요.",
+    "py": "chinguga wayo.",
+    "es": "Viene un amigo."
+   },
+   {
+    "zh": "물을 마셔요.",
+    "py": "mureul masyeoyo.",
+    "es": "Bebo agua."
+   },
+   {
+    "zh": "지금 뭐 해요?",
+    "py": "jigeum mwo haeyo?",
+    "es": "¿Qué haces ahora?"
+   },
+   {
+    "zh": "여기에서 버스를 기다려요.",
+    "py": "yeogieseo beoseureul gidaryeoyo.",
+    "es": "Espero el autobús aquí."
+   },
+   {
+    "zh": "같이 가요!",
+    "py": "gachi gayo!",
+    "es": "¡Vamos juntos!"
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "먹아요",
+    "right": "먹어요",
+    "why": "La última vocal de 먹- es ㅓ, no ㅏ/ㅗ: corresponde -어요."
+   },
+   {
+    "wrong": "가아요",
+    "right": "가요",
+    "why": "Cuando la raíz acaba en ㅏ, la 아 de la terminación se funde: 가 + 아요 = 가요."
+   },
+   {
+    "wrong": "공부하요",
+    "right": "공부해요",
+    "why": "Todos los verbos en 하다 hacen 해요."
+   },
+   {
+    "wrong": "마시어요 (en el habla)",
+    "right": "마셔요",
+    "why": "ㅣ + 어 se contrae en ㅕ. La forma sin contraer suena artificial."
+   }
+  ],
+  "practice": {
+   "order": [
+    {
+     "zh": "저는 학교에서 한국어를 배워요.",
+     "py": "jeoneun hakgyoeseo hangugeoreul baewoyo.",
+     "es": "Aprendo coreano en la escuela."
+    },
+    {
+     "zh": "주말에 영화를 봐요.",
+     "py": "jumare yeonghwareul bwayo.",
+     "es": "El fin de semana veo películas."
+    }
+   ],
+   "fill": [
+    {
+     "zh": "저는 책을 읽＿.",
+     "answer": "어요",
+     "options": [
+      "어요",
+      "아요",
+      "해요",
+      "여요"
+     ],
+     "es": "Leo un libro."
+    },
+    {
+     "zh": "날씨가 좋＿.",
+     "answer": "아요",
+     "options": [
+      "아요",
+      "어요",
+      "해요",
+      "와요"
+     ],
+     "es": "Hace buen tiempo."
+    },
+    {
+     "zh": "커피를 ＿.",
+     "answer": "마셔요",
+     "options": [
+      "마셔요",
+      "마시아요",
+      "마사요",
+      "마시해요"
+     ],
+     "es": "Tomo café."
+    },
+    {
+     "zh": "도서관에서 공부＿.",
+     "answer": "해요",
+     "options": [
+      "해요",
+      "하요",
+      "하어요",
+      "아요"
+     ],
+     "es": "Estudio en la biblioteca."
+    }
+   ],
+   "translate": [
+    {
+     "zh": "저는 서울에 살아요.",
+     "py": "jeoneun seoure sarayo.",
+     "es": "Vivo en Seúl."
+    },
+    {
+     "zh": "친구를 기다려요.",
+     "py": "chingureul gidaryeoyo.",
+     "es": "Espero a un amigo."
+    }
+   ]
+  },
+  "related": [
+   "seumnida",
+   "past-ass-eoss",
+   "irregulars",
+   "speech-levels"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "seumnida",
+  "title": "Estilo formal -ㅂ니다/습니다",
+  "zh": "-ㅂ니다/습니다",
+  "pattern": "Raíz acabada en vocal + ㅂ니다 · Raíz acabada en consonante + 습니다 · Pregunta: -ㅂ니까/습니까?",
+  "level": 1,
+  "summary": "El estilo formal (합니다체) se usa en presentaciones, noticias, el ejército y atención al cliente: vocal + ㅂ니다, consonante + 습니다.",
+  "explanation": "Además del estilo cortés cotidiano (-아요/어요), el coreano tiene un **estilo formal** llamado **합니다체**. Lo oirás en anuncios del metro, en las noticias, en tiendas y al presentarte ante un grupo. Es como pasar del *usted* amable al lenguaje de un discurso oficial.\n\n### Formación\n| Raíz | Afirmación | Pregunta | Ejemplos |\n|---|---|---|---|\n| acaba en **vocal** | **-ㅂ니다** | **-ㅂ니까?** | 가다 → **갑니다** / **갑니까?**; 공부하다 → **공부합니다** |\n| acaba en **consonante** | **-습니다** | **-습니까?** | 먹다 → **먹습니다** / **먹습니까?**; 있다 → **있습니다** |\n| acaba en **ㄹ** | se cae la ㄹ + ㅂ니다 | -ㅂ니까? | 살다 → **삽니다**; 알다 → **압니다** |\n| nombre + 이다 | **입니다** | **입니까?** | 학생**입니다**, 우고**입니다** |\n\nLa ㅂ de -ㅂ니다 se pronuncia **[m]** delante de ㄴ: 갑니다 suena *gam-ni-da*, 감사합니다 *gam-sa-ham-ni-da*.\n\n### Frases fijas que ya conoces\n- 감사합니다 (*gracias*), 죄송합니다 (*lo siento*), 처음 뵙겠습니다 (*encantado, la primera vez*), 반갑습니다 (*encantado*).\n\n### Comparación de estilos\n| Infinitivo | Cortés (해요체) | Formal (합니다체) |\n|---|---|---|\n| 가다 | 가요 | 갑니다 |\n| 먹다 | 먹어요 | 먹습니다 |\n| 하다 | 해요 | 합니다 |\n| 이다 | 이에요/예요 | 입니다 |\n| 아니다 | 아니에요 | 아닙니다 |\n\nEn una conversación normal con un profesor o un compañero, usa 해요체; reserva 합니다체 para presentaciones y situaciones oficiales.",
+  "examples": [
+   {
+    "zh": "안녕하십니까? 저는 우고입니다.",
+    "py": "annyeonghasimnikka? jeoneun ugoimnida.",
+    "es": "Buenos días. Me llamo Hugo."
+   },
+   {
+    "zh": "처음 뵙겠습니다. 만나서 반갑습니다.",
+    "py": "cheoeum boepgetseumnida. mannaseo bangapseumnida.",
+    "es": "Encantado de conocerle."
+   },
+   {
+    "zh": "저는 스페인에서 왔습니다.",
+    "py": "jeoneun seupeineseo watseumnida.",
+    "es": "Vengo de España."
+   },
+   {
+    "zh": "지금 서울에 삽니다.",
+    "py": "jigeum seoure samnida.",
+    "es": "Ahora vivo en Seúl."
+   },
+   {
+    "zh": "학생입니까?",
+    "py": "haksaengimnikka?",
+    "es": "¿Es usted estudiante?"
+   },
+   {
+    "zh": "이번 역은 서울역입니다.",
+    "py": "ibeon yeogeun seoullyeogimnida.",
+    "es": "La próxima estación es Estación de Seúl."
+   },
+   {
+    "zh": "감사합니다.",
+    "py": "gamsahamnida.",
+    "es": "Gracias."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "먹ㅂ니다",
+    "right": "먹습니다",
+    "why": "먹- acaba en consonante: se usa 습니다."
+   },
+   {
+    "wrong": "가습니다",
+    "right": "갑니다",
+    "why": "가- acaba en vocal: se añade ㅂ como batchim (갑) + 니다."
+   },
+   {
+    "wrong": "살습니다",
+    "right": "삽니다",
+    "why": "En las raíces en ㄹ, la ㄹ desaparece ante ㅂ: 살다 → 삽니다."
+   },
+   {
+    "wrong": "저는 학생입니다요.",
+    "right": "저는 학생입니다.",
+    "why": "No se mezclan los estilos: 입니다 ya es una forma completa."
+   }
+  ],
+  "practice": {
+   "order": [
+    {
+     "zh": "저는 스페인 사람입니다.",
+     "py": "jeoneun seupein saramimnida.",
+     "es": "Soy español."
+    },
+    {
+     "zh": "한국어를 공부합니다.",
+     "py": "hangugeoreul gongbuhamnida.",
+     "es": "Estudio coreano."
+    }
+   ],
+   "fill": [
+    {
+     "zh": "저는 우고＿.",
+     "answer": "입니다",
+     "options": [
+      "입니다",
+      "습니다",
+      "합니다",
+      "ㅂ니다"
+     ],
+     "es": "Soy Hugo."
+    },
+    {
+     "zh": "밥을 먹＿.",
+     "answer": "습니다",
+     "options": [
+      "습니다",
+      "ㅂ니다",
+      "입니다",
+      "니다"
+     ],
+     "es": "Como."
+    },
+    {
+     "zh": "내일 부산에 ＿.",
+     "answer": "갑니다",
+     "options": [
+      "갑니다",
+      "가습니다",
+      "가니다",
+      "감니다"
+     ],
+     "es": "Mañana voy a Busan."
+    }
+   ],
+   "translate": [
+    {
+     "zh": "감사합니다.",
+     "py": "gamsahamnida.",
+     "es": "Gracias."
+    },
+    {
+     "zh": "저는 대학생입니다.",
+     "py": "jeoneun daehaksaengimnida.",
+     "es": "Soy universitario."
+    }
+   ]
+  },
+  "related": [
+   "ayo-eoyo",
+   "speech-levels",
+   "ieyo-yeyo",
+   "honorific-si"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "past-ass-eoss",
+  "title": "Pasado -았/었어요",
+  "zh": "-았/었어요",
+  "pattern": "Raíz + 았어요 (ㅏ/ㅗ) / 었어요 (otras) · 하다 → 했어요",
+  "level": 1,
+  "summary": "El pasado sigue la misma regla de vocales que el presente: ㅏ/ㅗ → 았, otras → 었, 하다 → 했. Luego se añade 어요 (o 습니다).",
+  "explanation": "Si dominas -아요/어요, el pasado es fácil: en vez de 아요/어요 se pone **았/었** y luego la terminación **어요**.\n\n| Última vocal | Pasado | Ejemplos |\n|---|---|---|\n| **ㅏ / ㅗ** | **-았어요** | 앉다 → 앉**았어요**, 좋다 → 좋**았어요**, 살다 → 살**았어요** |\n| otras | **-었어요** | 먹다 → 먹**었어요**, 읽다 → 읽**었어요**, 있다 → 있**었어요** |\n| **하다** | **했어요** | 공부하다 → 공부**했어요** |\n\n### Contracciones (como en presente)\n| Infinitivo | Presente | Pasado |\n|---|---|---|\n| 가다 | 가요 | **갔어요** |\n| 오다 | 와요 | **왔어요** |\n| 보다 | 봐요 | **봤어요** |\n| 마시다 | 마셔요 | **마셨어요** |\n| 배우다 | 배워요 | **배웠어요** |\n| 되다 | 돼요 | **됐어요** |\n\nTruco: toma la forma de presente, quita 요 y añade **ㅆ어요**: 가요 → 가 + ㅆ어요 = 갔어요.\n\n### Con nombres (이다)\n- tras consonante: 학생**이었어요** (*era estudiante*)\n- tras vocal: 의사**였어요** (*era médico*)\n- 아니다 → **아니었어요**\n\n### Un solo pasado\nEl coreano no distingue entre *comí*, *he comido* y *comía* como el español: **먹었어요** cubre los tres. (Para «estaba haciendo» se usa -고 있었어요.)\n\nFormal: **-았/었습니다** (갔습니다, 먹었습니다, 했습니다).",
+  "examples": [
+   {
+    "zh": "어제 친구를 만났어요.",
+    "py": "eoje chingureul mannasseoyo.",
+    "es": "Ayer quedé con un amigo."
+   },
+   {
+    "zh": "아침에 빵을 먹었어요.",
+    "py": "achime ppangeul meogeosseoyo.",
+    "es": "Por la mañana comí pan."
+   },
+   {
+    "zh": "지난주에 부산에 갔어요.",
+    "py": "jinanjue busane gasseoyo.",
+    "es": "La semana pasada fui a Busan."
+   },
+   {
+    "zh": "어제 한국어를 공부했어요.",
+    "py": "eoje hangugeoreul gongbuhaesseoyo.",
+    "es": "Ayer estudié coreano."
+   },
+   {
+    "zh": "그 영화 봤어요?",
+    "py": "geu yeonghwa bwasseoyo?",
+    "es": "¿Has visto esa película?"
+   },
+   {
+    "zh": "작년에는 학생이었어요.",
+    "py": "jangnyeoneneun haksaengieosseoyo.",
+    "es": "El año pasado era estudiante."
+   },
+   {
+    "zh": "날씨가 정말 좋았어요.",
+    "py": "nalssiga jeongmal joasseoyo.",
+    "es": "Hizo muy buen tiempo."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "먹았어요",
+    "right": "먹었어요",
+    "why": "La vocal de 먹- es ㅓ: el pasado es 었."
+   },
+   {
+    "wrong": "가았어요",
+    "right": "갔어요",
+    "why": "가 + 았 se contrae en 갔."
+   },
+   {
+    "wrong": "공부했요",
+    "right": "공부했어요",
+    "why": "Después de 았/었/했 siempre va 어요."
+   },
+   {
+    "wrong": "의사이었어요 (habla normal)",
+    "right": "의사였어요",
+    "why": "Tras vocal, 이었 se contrae en 였."
+   }
+  ],
+  "practice": {
+   "order": [
+    {
+     "zh": "어제 도서관에서 책을 읽었어요.",
+     "py": "eoje doseogwaneseo chaegeul ilgeosseoyo.",
+     "es": "Ayer leí un libro en la biblioteca."
+    },
+    {
+     "zh": "주말에 친구하고 영화를 봤어요.",
+     "py": "jumare chinguhago yeonghwareul bwasseoyo.",
+     "es": "El fin de semana vi una película con un amigo."
+    }
+   ],
+   "fill": [
+    {
+     "zh": "어제 김밥을 먹＿.",
+     "answer": "었어요",
+     "options": [
+      "었어요",
+      "았어요",
+      "했어요",
+      "어요"
+     ],
+     "es": "Ayer comí kimbap."
+    },
+    {
+     "zh": "작년에 한국에 ＿.",
+     "answer": "왔어요",
+     "options": [
+      "왔어요",
+      "와요",
+      "오았어요",
+      "올 거예요"
+     ],
+     "es": "El año pasado vine a Corea."
+    },
+    {
+     "zh": "어제 숙제를 ＿.",
+     "answer": "했어요",
+     "options": [
+      "했어요",
+      "하았어요",
+      "해요",
+      "했요"
+     ],
+     "es": "Ayer hice los deberes."
+    }
+   ],
+   "translate": [
+    {
+     "zh": "어제 친구를 만났어요.",
+     "py": "eoje chingureul mannasseoyo.",
+     "es": "Ayer quedé con un amigo."
+    },
+    {
+     "zh": "커피를 마셨어요.",
+     "py": "keopireul masyeosseoyo.",
+     "es": "Tomé café."
+    }
+   ]
+  },
+  "related": [
+   "ayo-eoyo",
+   "future-eul-geoyeyo",
+   "irregulars"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "future-eul-geoyeyo",
+  "title": "Futuro e intención -(으)ㄹ 거예요",
+  "zh": "-(으)ㄹ 거예요",
+  "pattern": "Raíz acabada en vocal o ㄹ + ㄹ 거예요 · Raíz acabada en consonante + 을 거예요",
+  "level": 1,
+  "summary": "-(으)ㄹ 거예요 expresa planes («voy a…») y suposiciones sobre el futuro («lloverá»).",
+  "explanation": "**-(으)ㄹ 거예요** es la forma más común de hablar del futuro en conversación. Equivale al español *voy a + infinitivo* o al futuro simple.\n\n### Formación según el batchim\n| Raíz | Forma | Ejemplos |\n|---|---|---|\n| acaba en **vocal** | **-ㄹ 거예요** | 가다 → **갈 거예요**, 보다 → **볼 거예요**, 하다 → **할 거예요** |\n| acaba en **ㄹ** | **-ㄹ 거예요** (no se añade nada) | 살다 → **살 거예요**, 만들다 → **만들 거예요** |\n| acaba en **consonante** | **-을 거예요** | 먹다 → **먹을 거예요**, 읽다 → **읽을 거예요** |\n\nLa 으 es una vocal de apoyo que aparece solo tras consonante (excepto ㄹ). Verás esta alternancia **(으)** en muchas terminaciones: -(으)세요, -(으)니까, -(으)면, (으)로…\n\n### Dos usos\n1. **Plan o intención** (con *yo/nosotros* o en preguntas a *tú*): 내일 친구를 만**날 거예요**. *Mañana voy a quedar con un amigo.*\n2. **Suposición** (con terceras personas o cosas): 내일 비가 **올 거예요**. *Mañana lloverá (seguramente).*\n\n### Detalles\n- 거예요 viene de 것 (*cosa*) + 이에요; en el habla suena *kkeoyo*: 갈 거예요 [갈 꺼예요].\n- Formal: **-(으)ㄹ 겁니다** (갈 겁니다).\n- Pasado no hace falta: el futuro se marca con esta forma o con palabras de tiempo (내일, 다음 주…). El presente -아요 también puede indicar un futuro cercano y seguro: 내일 가요.\n- Irregulares: 듣다 → **들을 거예요**, 덥다 → **더울 거예요** (ver «irregulares»).",
+  "examples": [
+   {
+    "zh": "내일 친구를 만날 거예요.",
+    "py": "naeil chingureul mannal geoyeyo.",
+    "es": "Mañana voy a quedar con un amigo."
+   },
+   {
+    "zh": "주말에 뭐 할 거예요?",
+    "py": "jumare mwo hal geoyeyo?",
+    "es": "¿Qué vas a hacer el fin de semana?"
+   },
+   {
+    "zh": "저녁에 비빔밥을 먹을 거예요.",
+    "py": "jeonyeoge bibimbabeul meogeul geoyeyo.",
+    "es": "Esta noche voy a cenar bibimbap."
+   },
+   {
+    "zh": "내년에 한국에서 살 거예요.",
+    "py": "naenyeone hangugeseo sal geoyeyo.",
+    "es": "El año que viene voy a vivir en Corea."
+   },
+   {
+    "zh": "내일은 비가 올 거예요.",
+    "py": "naeireun biga ol geoyeyo.",
+    "es": "Mañana lloverá."
+   },
+   {
+    "zh": "다음 달에 대전에 갈 거예요.",
+    "py": "daeum dare daejeone gal geoyeyo.",
+    "es": "El mes que viene iré a Daejeon."
+   },
+   {
+    "zh": "지민 씨도 올 거예요.",
+    "py": "jimin ssido ol geoyeyo.",
+    "es": "Jimin también vendrá (seguramente)."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "먹ㄹ 거예요",
+    "right": "먹을 거예요",
+    "why": "먹- acaba en consonante: necesita la vocal de apoyo 으 → 먹을."
+   },
+   {
+    "wrong": "살을 거예요",
+    "right": "살 거예요",
+    "why": "Las raíces en ㄹ no toman 으: 살다 → 살 거예요."
+   },
+   {
+    "wrong": "갈거예요 / 갈 거에요",
+    "right": "갈 거예요",
+    "why": "Se escribe separado (갈 거예요) y con 예요, porque 거 acaba en vocal."
+   },
+   {
+    "wrong": "내일 영화를 보 거예요.",
+    "right": "내일 영화를 볼 거예요.",
+    "why": "Tras vocal hay que añadir ㄹ como batchim: 보 → 볼."
+   }
+  ],
+  "practice": {
+   "order": [
+    {
+     "zh": "다음 주에 서울에 갈 거예요.",
+     "py": "daeum jue seoure gal geoyeyo.",
+     "es": "La semana que viene voy a ir a Seúl."
+    },
+    {
+     "zh": "저녁에 친구하고 밥을 먹을 거예요.",
+     "py": "jeonyeoge chinguhago babeul meogeul geoyeyo.",
+     "es": "Esta noche voy a cenar con un amigo."
+    }
+   ],
+   "fill": [
+    {
+     "zh": "내일 책을 읽＿ 거예요.",
+     "answer": "을",
+     "options": [
+      "을",
+      "ㄹ",
+      "를",
+      "는"
+     ],
+     "es": "Mañana voy a leer un libro."
+    },
+    {
+     "zh": "주말에 영화를 ＿ 거예요.",
+     "answer": "볼",
+     "options": [
+      "볼",
+      "보을",
+      "봐",
+      "보는"
+     ],
+     "es": "El fin de semana voy a ver una película."
+    },
+    {
+     "zh": "내년에 부산에서 ＿ 거예요.",
+     "answer": "살",
+     "options": [
+      "살",
+      "살을",
+      "사을",
+      "살아"
+     ],
+     "es": "El año que viene voy a vivir en Busan."
+    }
+   ],
+   "translate": [
+    {
+     "zh": "내일 공부할 거예요.",
+     "py": "naeil gongbuhal geoyeyo.",
+     "es": "Mañana voy a estudiar."
+    },
+    {
+     "zh": "주말에 뭐 할 거예요?",
+     "py": "jumare mwo hal geoyeyo?",
+     "es": "¿Qué vas a hacer el fin de semana?"
+    }
+   ]
+  },
+  "related": [
+   "past-ass-eoss",
+   "ayo-eoyo",
+   "eul-kkayo",
+   "eul-su-itda"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "an-negation",
+  "title": "Negación con 안",
+  "zh": "안 + verbo",
+  "pattern": "안 + verbo/adjetivo · Nombre + 안 하다 (verbos en 하다)",
+  "level": 1,
+  "summary": "안 delante del verbo o adjetivo lo niega («no»). En los verbos «nombre + 하다», 안 va entre el nombre y 하다: 공부 안 해요.",
+  "explanation": "La forma más rápida de negar en coreano es poner **안** justo **delante del verbo o adjetivo**, igual que el español *no*:\n- 가요 → **안** 가요 (*no voy*)\n- 먹어요 → **안** 먹어요 (*no como*)\n- 비싸요 → **안** 비싸요 (*no es caro*)\n\n### Verbos del tipo «nombre + 하다»\nEn verbos como 공부하다, 운동하다, 일하다, 요리하다, 안 se mete **entre el nombre y 하다**:\n| Afirmativo | Negativo |\n|---|---|\n| 공부해요 | 공부 **안** 해요 |\n| 운동해요 | 운동 **안** 해요 |\n| 일해요 | 일 **안** 해요 |\n\n¡Pero! Los **adjetivos** en 하다 y 좋아하다 llevan 안 delante de todo: **안** 피곤해요, **안** 좋아해요.\n\n### Casos especiales\n- *No haber / no tener*: no es ~~안 있어요~~, sino **없어요**.\n- *No saber*: no es ~~안 알아요~~, sino **몰라요**.\n- *No ser* (con nombres): **아니에요**.\n- Con el pasado y el futuro funciona igual: **안** 갔어요, **안** 갈 거예요.\n\n### 안 frente a 못\n**안** = *no* porque no quiero o simplemente no es así. **못** = *no puedo* (ver «못»). La otra negación, más escrita, es **-지 않다** (ver «-지 않다»).",
+  "examples": [
+   {
+    "zh": "저는 고기를 안 먹어요.",
+    "py": "jeoneun gogireul an meogeoyo.",
+    "es": "No como carne."
+   },
+   {
+    "zh": "오늘은 학교에 안 가요.",
+    "py": "oneureun hakgyoe an gayo.",
+    "es": "Hoy no voy a la escuela."
+   },
+   {
+    "zh": "이 가방은 안 비싸요.",
+    "py": "i gabangeun an bissayo.",
+    "es": "Esta mochila no es cara."
+   },
+   {
+    "zh": "주말에는 공부 안 해요.",
+    "py": "jumareneun gongbu an haeyo.",
+    "es": "Los fines de semana no estudio."
+   },
+   {
+    "zh": "어제 커피를 안 마셨어요.",
+    "py": "eoje keopireul an masyeosseoyo.",
+    "es": "Ayer no tomé café."
+   },
+   {
+    "zh": "민수 씨는 매운 음식을 안 좋아해요.",
+    "py": "minsu ssineun maeun eumsigeul an joahaeyo.",
+    "es": "A Minsu no le gusta la comida picante."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "안 공부해요.",
+    "right": "공부 안 해요.",
+    "why": "En los verbos «nombre + 하다», 안 va entre el nombre y 하다."
+   },
+   {
+    "wrong": "돈이 안 있어요.",
+    "right": "돈이 없어요.",
+    "why": "La negación de 있다 es el verbo 없다."
+   },
+   {
+    "wrong": "저는 안 학생이에요.",
+    "right": "저는 학생이 아니에요.",
+    "why": "Con nombres no se usa 안: «no ser» es 아니에요."
+   },
+   {
+    "wrong": "저는 먹어요 안.",
+    "right": "저는 안 먹어요.",
+    "why": "안 va justo delante del verbo, no detrás."
+   }
+  ],
+  "practice": {
+   "order": [
+    {
+     "zh": "오늘은 운동 안 해요.",
+     "py": "oneureun undong an haeyo.",
+     "es": "Hoy no hago ejercicio."
+    },
+    {
+     "zh": "저는 술을 안 마셔요.",
+     "py": "jeoneun sureul an masyeoyo.",
+     "es": "No bebo alcohol."
+    }
+   ],
+   "fill": [
+    {
+     "zh": "저는 아침을 ＿ 먹어요.",
+     "answer": "안",
+     "options": [
+      "안",
+      "아니",
+      "없",
+      "도"
+     ],
+     "es": "No desayuno."
+    },
+    {
+     "zh": "주말에는 일 ＿ 해요.",
+     "answer": "안",
+     "options": [
+      "안",
+      "못하",
+      "없",
+      "아니"
+     ],
+     "es": "Los fines de semana no trabajo."
+    },
+    {
+     "zh": "오늘은 시간이 ＿.",
+     "answer": "없어요",
+     "options": [
+      "없어요",
+      "안 있어요",
+      "아니에요",
+      "안 해요"
+     ],
+     "es": "Hoy no tengo tiempo."
+    }
+   ],
+   "translate": [
+    {
+     "zh": "저는 고기를 안 먹어요.",
+     "py": "jeoneun gogireul an meogeoyo.",
+     "es": "No como carne."
+    },
+    {
+     "zh": "오늘은 안 바빠요.",
+     "py": "oneureun an bappayo.",
+     "es": "Hoy no estoy ocupado."
+    }
+   ]
+  },
+  "related": [
+   "mot-negation",
+   "ji-anta",
+   "anieyo"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "mot-negation",
+  "title": "No poder: 못",
+  "zh": "못 + verbo",
+  "pattern": "못 + verbo · Nombre + 못 하다 · Verbo + -지 못하다",
+  "level": 1,
+  "summary": "못 niega la posibilidad: «no puedo / no sé hacer algo» por incapacidad o porque las circunstancias lo impiden.",
+  "explanation": "**못** se coloca igual que 안 (delante del verbo), pero el sentido cambia:\n| 안 | 못 |\n|---|---|\n| no lo hago (decisión, hecho) | no puedo hacerlo (incapacidad, impedimento) |\n| 안 가요 = *no voy* | 못 가요 = *no puedo ir* |\n| 수영 안 해요 = *no nado* | 수영 못 해요 = *no sé nadar* |\n\nUsar 못 suena más amable cuando rechazas una invitación: *no puedo ir* en vez de *no voy*.\n\n### Posición\n- Delante del verbo: **못** 가요, **못** 먹어요.\n- En «nombre + 하다», entre los dos: 운전 **못** 해요, 요리 **못** 해요.\n- Solo con **verbos de acción**, no con adjetivos (no se dice ~~못 비싸요~~).\n\n### Pronunciación (¡importante!)\n못 cambia de sonido según lo que sigue:\n- ante ㄱ, ㄷ, ㅂ, ㅅ, ㅈ: *mot* tensa la siguiente: 못 가요 [몯까요] *mot kkayo*.\n- ante ㅁ, ㄴ: se nasaliza: 못 먹어요 [몬머거요] *mon meogeoyo*.\n- ante ㅎ: se aspira: 못 해요 [모태요] *motaeyo*.\n\n### Forma larga\n**-지 못하다** es la versión más formal o escrita: 가**지 못해요** = 못 가요.\n\n### 잘 못 / 잘하다\n*Hablar bien / mal* se dice con **잘하다 / 잘 못하다**: 한국어를 잘 **못해요** (*no hablo bien coreano*). Muy útil para disculparse.",
+  "examples": [
+   {
+    "zh": "오늘은 바빠서 못 가요.",
+    "py": "oneureun bappaseo mot gayo.",
+    "es": "Hoy estoy ocupado, así que no puedo ir."
+   },
+   {
+    "zh": "저는 매운 음식을 못 먹어요.",
+    "py": "jeoneun maeun eumsigeul mon meogeoyo.",
+    "es": "No puedo comer comida picante."
+   },
+   {
+    "zh": "저는 운전을 못 해요.",
+    "py": "jeoneun unjeoneul motaeyo.",
+    "es": "No sé conducir."
+   },
+   {
+    "zh": "어제 잠을 못 잤어요.",
+    "py": "eoje jameul mot jasseoyo.",
+    "es": "Ayer no pude dormir."
+   },
+   {
+    "zh": "한국어를 잘 못해요.",
+    "py": "hangugeoreul jal motaeyo.",
+    "es": "No hablo bien coreano."
+   },
+   {
+    "zh": "시간이 없어서 숙제를 하지 못했어요.",
+    "py": "sigani eopseoseo sukjereul haji motaesseoyo.",
+    "es": "No tenía tiempo, así que no pude hacer los deberes."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "못 운전해요.",
+    "right": "운전 못 해요.",
+    "why": "En «nombre + 하다», 못 va entre el nombre y 하다."
+   },
+   {
+    "wrong": "이 옷은 못 비싸요.",
+    "right": "이 옷은 안 비싸요.",
+    "why": "못 solo funciona con verbos de acción, no con adjetivos."
+   },
+   {
+    "wrong": "(rechazar una invitación) 내일은 안 가요.",
+    "right": "내일은 못 가요.",
+    "why": "안 suena a que no quieres ir. Para rechazar con cortesía, di que no puedes: 못."
+   }
+  ],
+  "practice": {
+   "order": [
+    {
+     "zh": "저는 수영을 못 해요.",
+     "py": "jeoneun suyeongeul motaeyo.",
+     "es": "No sé nadar."
+    },
+    {
+     "zh": "내일은 일이 있어서 못 가요.",
+     "py": "naeireun iri isseoseo mot gayo.",
+     "es": "Mañana tengo trabajo, así que no puedo ir."
+    }
+   ],
+   "fill": [
+    {
+     "zh": "머리가 아파서 학교에 ＿ 갔어요.",
+     "answer": "못",
+     "options": [
+      "못",
+      "안",
+      "없",
+      "아니"
+     ],
+     "es": "Me dolía la cabeza y no pude ir a clase."
+    },
+    {
+     "zh": "저는 요리 ＿ 해요.",
+     "answer": "못",
+     "options": [
+      "못",
+      "못한",
+      "없",
+      "잘"
+     ],
+     "es": "No sé cocinar."
+    },
+    {
+     "zh": "숙제를 하지 ＿.",
+     "answer": "못했어요",
+     "options": [
+      "못했어요",
+      "못 했요",
+      "안었어요",
+      "없었어요"
+     ],
+     "es": "No pude hacer los deberes."
+    }
+   ],
+   "translate": [
+    {
+     "zh": "오늘은 못 가요.",
+     "py": "oneureun mot gayo.",
+     "es": "Hoy no puedo ir."
+    },
+    {
+     "zh": "한국어를 잘 못해요.",
+     "py": "hangugeoreul jal motaeyo.",
+     "es": "No hablo bien coreano."
+    }
+   ]
+  },
+  "related": [
+   "an-negation",
+   "ji-anta",
+   "eul-su-itda"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ji-anta",
+  "title": "Negación larga -지 않다",
+  "zh": "-지 않다",
+  "pattern": "Raíz + 지 않아요 (= 안 + verbo) · Raíz + 지 못해요 (= 못 + verbo)",
+  "level": 1,
+  "summary": "-지 않아요 significa lo mismo que 안 + verbo, pero suena algo más formal y se usa mucho al escribir y con adjetivos largos.",
+  "explanation": "La **negación larga** se forma añadiendo **-지 않다** a la raíz, sin importar el batchim:\n\n| Infinitivo | Negación corta | Negación larga |\n|---|---|---|\n| 가다 | 안 가요 | 가**지 않아요** |\n| 먹다 | 안 먹어요 | 먹**지 않아요** |\n| 비싸다 | 안 비싸요 | 비싸**지 않아요** |\n| 공부하다 | 공부 안 해요 | 공부하**지 않아요** |\n\n않다 se conjuga como un verbo normal: **않아요** (presente), **않았어요** (pasado), **않을 거예요** (futuro), **않습니다** (formal).\n\n### ¿Cuándo usar cada una?\n- **안**: conversación, frases cortas.\n- **-지 않다**: textos escritos, estilo formal (합니다체), y con verbos o adjetivos largos, donde 안 suena raro. En el examen TOPIK aparece mucho.\n- Con 하다 la forma larga evita el problema de dónde poner 안: 공부하지 않아요.\n\n### Pronunciación\n좋지 않아요 se pronuncia [조치 아나요] *jochi anayo* (ㅎ + ㅈ = ㅊ). 않아요 suena *anayo* (la ㅎ es muda).\n\n### La versión de «no poder»: -지 못하다\nIgual que 안 tiene su forma larga, 못 tiene **-지 못하다**: 가지 못해요 = 못 가요.\n\n### No confundas\n- **-지 마세요** = *no + imperativo* (*no lo hagas*): 가지 마세요 (*no vayas*). Es otra estructura.",
+  "examples": [
+   {
+    "zh": "저는 담배를 피우지 않아요.",
+    "py": "jeoneun dambaereul piuji anayo.",
+    "es": "No fumo."
+   },
+   {
+    "zh": "오늘은 날씨가 춥지 않아요.",
+    "py": "oneureun nalssiga chupji anayo.",
+    "es": "Hoy no hace frío."
+   },
+   {
+    "zh": "이 식당은 비싸지 않아요.",
+    "py": "i sikdangeun bissaji anayo.",
+    "es": "Este restaurante no es caro."
+   },
+   {
+    "zh": "어제는 운동하지 않았어요.",
+    "py": "eojeneun undonghaji anasseoyo.",
+    "es": "Ayer no hice ejercicio."
+   },
+   {
+    "zh": "저는 고기를 먹지 않습니다.",
+    "py": "jeoneun gogireul meokji anseumnida.",
+    "es": "No como carne. (formal)"
+   },
+   {
+    "zh": "그 영화는 재미있지 않았어요.",
+    "py": "geu yeonghwaneun jaemiitji anasseoyo.",
+    "es": "Esa película no fue divertida."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "먹지 안아요.",
+    "right": "먹지 않아요.",
+    "why": "El verbo es 않다 (con ㄶ). 안 es solo el adverbio de la negación corta."
+   },
+   {
+    "wrong": "안 가지 않아요.",
+    "right": "가지 않아요. (o 안 가요)",
+    "why": "Son dos maneras de negar; si se combinan, se anulan (doble negación = afirmación)."
+   },
+   {
+    "wrong": "갔지 않아요.",
+    "right": "가지 않았어요.",
+    "why": "El tiempo pasado se marca en 않다, no en el verbo principal."
+   }
+  ],
+  "practice": {
+   "order": [
+    {
+     "zh": "오늘은 바쁘지 않아요.",
+     "py": "oneureun bappeuji anayo.",
+     "es": "Hoy no estoy ocupado."
+    },
+    {
+     "zh": "저는 커피를 마시지 않아요.",
+     "py": "jeoneun keopireul masiji anayo.",
+     "es": "No tomo café."
+    }
+   ],
+   "fill": [
+    {
+     "zh": "이 가방은 비싸지 ＿.",
+     "answer": "않아요",
+     "options": [
+      "않아요",
+      "안아요",
+      "안 해요",
+      "못요"
+     ],
+     "es": "Esta mochila no es cara."
+    },
+    {
+     "zh": "어제는 학교에 가지 ＿.",
+     "answer": "않았어요",
+     "options": [
+      "않았어요",
+      "않아요",
+      "안었어요",
+      "갔어요"
+     ],
+     "es": "Ayer no fui a la escuela."
+    },
+    {
+     "zh": "주말에는 일하＿ 않아요.",
+     "answer": "지",
+     "options": [
+      "지",
+      "고",
+      "서",
+      "면"
+     ],
+     "es": "Los fines de semana no trabajo."
+    }
+   ],
+   "translate": [
+    {
+     "zh": "날씨가 덥지 않아요.",
+     "py": "nalssiga deopji anayo.",
+     "es": "No hace calor."
+    },
+    {
+     "zh": "저는 텔레비전을 보지 않아요.",
+     "py": "jeoneun tellebijeoneul boji anayo.",
+     "es": "No veo la televisión."
+    }
+   ]
+  },
+  "related": [
+   "an-negation",
+   "mot-negation",
+   "seumnida"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "go-sipda",
+  "title": "Querer hacer algo: -고 싶다",
+  "zh": "-고 싶다",
+  "pattern": "Raíz del verbo + 고 싶어요 · (otra persona) + 고 싶어해요",
+  "level": 1,
+  "summary": "-고 싶어요 expresa deseo («quiero + infinitivo»). Para deseos de otra persona se usa -고 싶어해요.",
+  "explanation": "Para decir *quiero hacer algo*, se añade **-고 싶다** a la raíz del verbo, sin cambios por el batchim:\n\n| Infinitivo | Quiero… |\n|---|---|\n| 가다 | 가**고 싶어요** (*quiero ir*) |\n| 먹다 | 먹**고 싶어요** (*quiero comer*) |\n| 보다 | 보**고 싶어요** (*quiero ver*) |\n| 공부하다 | 공부하**고 싶어요** |\n\n싶다 se conjuga como adjetivo: **싶어요**, **싶었어요** (*quería*), **싶습니다** (formal), **싶지 않아요** (*no quiero*).\n\n### Solo con verbos\n-고 싶다 se pega a **verbos**, no a nombres. *Quiero un café* no es ~~커피 싶어요~~; se dice con un verbo: 커피를 **마시고 싶어요** (*quiero tomar café*), o 커피를 **주세요** (*deme un café*).\n\n### ¿Quién quiere?\n- Primera persona y preguntas a «tú»: **-고 싶어요**. 뭐 먹**고 싶어요**? (*¿qué quieres comer?*)\n- Tercera persona: el coreano no afirma directamente los sentimientos ajenos, así que usa **-고 싶어해요**: 민수 씨는 한국에 가**고 싶어해요**.\n\n### Partícula\nEl objeto puede llevar 을/를 o, para enfatizar el deseo, 이/가: 김치찌개**가** 먹고 싶어요.\n\n### Expresión útil\n**보고 싶어요** también significa *te echo de menos*: 엄마가 보고 싶어요.",
+  "examples": [
+   {
+    "zh": "한국에 가고 싶어요.",
+    "py": "hanguge gago sipeoyo.",
+    "es": "Quiero ir a Corea."
+   },
+   {
+    "zh": "뭐 먹고 싶어요? — 비빔밥을 먹고 싶어요.",
+    "py": "mwo meokgo sipeoyo? — bibimbabeul meokgo sipeoyo.",
+    "es": "¿Qué quieres comer? —Quiero comer bibimbap."
+   },
+   {
+    "zh": "커피를 마시고 싶어요.",
+    "py": "keopireul masigo sipeoyo.",
+    "es": "Quiero tomar un café."
+   },
+   {
+    "zh": "저는 한국 대학교에서 공부하고 싶어요.",
+    "py": "jeoneun hanguk daehakgyoeseo gongbuhago sipeoyo.",
+    "es": "Quiero estudiar en una universidad coreana."
+   },
+   {
+    "zh": "가족이 보고 싶어요.",
+    "py": "gajogi bogo sipeoyo.",
+    "es": "Echo de menos a mi familia."
+   },
+   {
+    "zh": "오늘은 아무것도 하고 싶지 않아요.",
+    "py": "oneureun amugeotdo hago sipji anayo.",
+    "es": "Hoy no quiero hacer nada."
+   },
+   {
+    "zh": "지민 씨는 스페인에 가고 싶어해요.",
+    "py": "jimin ssineun seupeine gago sipeohaeyo.",
+    "es": "Jimin quiere ir a España."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "커피 싶어요.",
+    "right": "커피를 마시고 싶어요.",
+    "why": "-고 싶다 solo se une a verbos. Hace falta un verbo como 마시다."
+   },
+   {
+    "wrong": "민수 씨는 집에 가고 싶어요.",
+    "right": "민수 씨는 집에 가고 싶어해요.",
+    "why": "Para los deseos de otra persona (tercera persona) se usa -고 싶어해요."
+   },
+   {
+    "wrong": "가고 싶어요 한국에.",
+    "right": "한국에 가고 싶어요.",
+    "why": "El destino y el objeto van antes del verbo; la frase acaba con 싶어요."
+   },
+   {
+    "wrong": "먹었고 싶어요.",
+    "right": "먹고 싶었어요.",
+    "why": "El pasado («quería») se marca en 싶다, no en el verbo principal."
+   }
+  ],
+  "practice": {
+   "order": [
+    {
+     "zh": "저는 부산에 가고 싶어요.",
+     "py": "jeoneun busane gago sipeoyo.",
+     "es": "Quiero ir a Busan."
+    },
+    {
+     "zh": "한국 친구를 만나고 싶어요.",
+     "py": "hanguk chingureul mannago sipeoyo.",
+     "es": "Quiero conocer amigos coreanos."
+    }
+   ],
+   "fill": [
+    {
+     "zh": "불고기를 먹＿ 싶어요.",
+     "answer": "고",
+     "options": [
+      "고",
+      "어",
+      "지",
+      "서"
+     ],
+     "es": "Quiero comer bulgogi."
+    },
+    {
+     "zh": "주말에 영화를 보고 ＿.",
+     "answer": "싶어요",
+     "options": [
+      "싶어요",
+      "싶요",
+      "싶다요",
+      "있어요"
+     ],
+     "es": "El fin de semana quiero ver una película."
+    },
+    {
+     "zh": "동생은 한국어를 배우고 ＿.",
+     "answer": "싶어해요",
+     "options": [
+      "싶어해요",
+      "싶어요",
+      "싶었요",
+      "싶해요"
+     ],
+     "es": "Mi hermano pequeño quiere aprender coreano."
+    }
+   ],
+   "translate": [
+    {
+     "zh": "물을 마시고 싶어요.",
+     "py": "mureul masigo sipeoyo.",
+     "es": "Quiero beber agua."
+    },
+    {
+     "zh": "한국에서 살고 싶어요.",
+     "py": "hangugeseo salgo sipeoyo.",
+     "es": "Quiero vivir en Corea."
+    }
+   ]
+  },
+  "related": [
+   "a-juseyo",
+   "go-connector",
+   "ji-anta"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "go-connector",
+  "title": "Unir frases con -고 («y»)",
+  "zh": "-고",
+  "pattern": "Verbo/adjetivo (raíz) + 고 + segunda frase",
+  "level": 1,
+  "summary": "-고 une dos acciones o dos cualidades: «como y bebo», «es barato y rico», o «primero esto y luego aquello».",
+  "explanation": "Para unir **verbos, adjetivos o frases enteras** con *y*, el coreano no usa una palabra suelta, sino la terminación **-고** pegada a la raíz del primer verbo. No cambia con el batchim.\n\n| Infinitivo | + 고 | Ejemplo |\n|---|---|---|\n| 먹다 | 먹**고** | 밥을 먹**고** 커피를 마셔요. |\n| 싸다 | 싸**고** | 싸**고** 맛있어요. |\n| 공부하다 | 공부하**고** | 공부하**고** 자요. |\n| 이다 (nombre) | **이고** / 고 | 학생**이고**, 의사**고** |\n\n### Dos usos\n1. **Enumerar** (*y además*): 이 식당은 싸**고** 맛있어요. *Este restaurante es barato y está rico.*\n2. **Secuencia** (*y luego*): 숙제를 하**고** 잤어요. *Hice los deberes y (luego) me acosté.*\n\n### El tiempo va al final\nNormalmente solo el **último verbo** lleva el tiempo: 어제 밥을 먹**고** 영화를 **봤어요** (*ayer comí y vi una película*), no ~~먹었고~~ (aunque esa forma existe para enumerar hechos pasados independientes).\n\n### Otras formas de «y»\n| Qué une | Forma |\n|---|---|\n| nombres | 하고, 와/과, (이)랑 |\n| frases (al principio de la segunda) | **그리고** (*y, además*) |\n| verbos/frases (pegado) | **-고** |\n\nCuando la segunda acción ocurre **en el lugar** al que te moviste o depende de la primera (*ir a… y allí…*), se usa **-아서/어서**: 학교에 **가서** 공부해요 (ver «-아서/어서»).",
+  "examples": [
+   {
+    "zh": "밥을 먹고 커피를 마셔요.",
+    "py": "babeul meokgo keopireul masyeoyo.",
+    "es": "Como y (luego) tomo café."
+   },
+   {
+    "zh": "이 식당은 싸고 맛있어요.",
+    "py": "i sikdangeun ssago masisseoyo.",
+    "es": "Este restaurante es barato y está rico."
+   },
+   {
+    "zh": "저는 학생이고 민수 씨는 회사원이에요.",
+    "py": "jeoneun haksaengigo minsu ssineun hoesawonieyo.",
+    "es": "Yo soy estudiante y Minsu es oficinista."
+   },
+   {
+    "zh": "어제 숙제를 하고 잤어요.",
+    "py": "eoje sukjereul hago jasseoyo.",
+    "es": "Ayer hice los deberes y me acosté."
+   },
+   {
+    "zh": "아침에 샤워하고 학교에 가요.",
+    "py": "achime syawohago hakgyoe gayo.",
+    "es": "Por la mañana me ducho y voy a la escuela."
+   },
+   {
+    "zh": "지민 씨는 예쁘고 친절해요.",
+    "py": "jimin ssineun yeppeugo chinjeolhaeyo.",
+    "es": "Jimin es guapa y amable."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "밥을 먹어요하고 커피를 마셔요.",
+    "right": "밥을 먹고 커피를 마셔요.",
+    "why": "하고 une nombres; para verbos se usa -고 pegado a la raíz."
+   },
+   {
+    "wrong": "싸요고 맛있어요.",
+    "right": "싸고 맛있어요.",
+    "why": "-고 se pega a la raíz (싸-), no a la forma conjugada (싸요)."
+   },
+   {
+    "wrong": "학교에 가고 공부해요. (queriendo decir «voy a la escuela y allí estudio»)",
+    "right": "학교에 가서 공부해요.",
+    "why": "Si la segunda acción ocurre en el lugar al que fuiste, se usa -아서/어서."
+   }
+  ],
+  "practice": {
+   "order": [
+    {
+     "zh": "저는 운동하고 샤워해요.",
+     "py": "jeoneun undonghago syawohaeyo.",
+     "es": "Hago ejercicio y me ducho."
+    },
+    {
+     "zh": "이 카페는 조용하고 좋아요.",
+     "py": "i kapeneun joyonghago joayo.",
+     "es": "Esta cafetería es tranquila y está bien."
+    }
+   ],
+   "fill": [
+    {
+     "zh": "저녁을 먹＿ 텔레비전을 봐요.",
+     "answer": "고",
+     "options": [
+      "고",
+      "어서",
+      "지만",
+      "하고"
+     ],
+     "es": "Ceno y veo la tele."
+    },
+    {
+     "zh": "한국 음식은 맵＿ 맛있어요.",
+     "answer": "고",
+     "options": [
+      "고",
+      "어요",
+      "아서",
+      "이고"
+     ],
+     "es": "La comida coreana es picante y está rica."
+    },
+    {
+     "zh": "저는 스페인 사람＿ 친구는 한국 사람이에요.",
+     "answer": "이고",
+     "options": [
+      "이고",
+      "고",
+      "하고",
+      "이랑"
+     ],
+     "es": "Yo soy español y mi amigo es coreano."
+    }
+   ],
+   "translate": [
+    {
+     "zh": "숙제를 하고 잤어요.",
+     "py": "sukjereul hago jasseoyo.",
+     "es": "Hice los deberes y me acosté."
+    },
+    {
+     "zh": "이 옷은 싸고 예뻐요.",
+     "py": "i oseun ssago yeppeoyo.",
+     "es": "Esta ropa es barata y bonita."
+    }
+   ]
+  },
+  "related": [
+   "wa-gwa-hago",
+   "a-seo",
+   "jiman"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "jiman",
+  "title": "«Pero»: -지만",
+  "zh": "-지만",
+  "pattern": "Verbo/adjetivo (raíz) + 지만 + frase contraria",
+  "level": 1,
+  "summary": "-지만 une dos frases que se oponen: «es difícil pero divertido». Al principio de frase se usa 하지만 o 그렇지만.",
+  "explanation": "**-지만** es el *pero* del coreano. Se pega a la raíz del primer verbo o adjetivo y no cambia con el batchim.\n\n| Infinitivo | + 지만 |\n|---|---|\n| 어렵다 | 어렵**지만** |\n| 비싸다 | 비싸**지만** |\n| 좋아하다 | 좋아하**지만** |\n| 이다 (nombre) | 학생**이지만**, 의사**지만** |\n\n### El tiempo sí se marca\nA diferencia de -고, con -지만 el primer verbo **sí lleva el pasado** si hace falta: 어제는 바빴**지만** 오늘은 괜찮아요. *Ayer estaba ocupado, pero hoy estoy bien.*\n\n### Al principio de la frase\nSi quieres empezar una frase nueva con *pero*, usa **하지만** o **그렇지만**:\n- 한국어는 어려워요. **하지만** 재미있어요.\n\n### Fórmula de cortesía\n**죄송하지만…** / **실례지만…** = *perdone, pero… / disculpe…* Se usa para introducir una petición o pregunta a un desconocido: 실례지만, 화장실이 어디에 있어요?",
+  "examples": [
+   {
+    "zh": "한국어는 어렵지만 재미있어요.",
+    "py": "hangugeoneun eoryeopjiman jaemiisseoyo.",
+    "es": "El coreano es difícil, pero divertido."
+   },
+   {
+    "zh": "이 식당은 비싸지만 맛있어요.",
+    "py": "i sikdangeun bissajiman masisseoyo.",
+    "es": "Este restaurante es caro, pero está rico."
+   },
+   {
+    "zh": "저는 학생이지만 일도 해요.",
+    "py": "jeoneun haksaengijiman ildo haeyo.",
+    "es": "Soy estudiante, pero también trabajo."
+   },
+   {
+    "zh": "어제는 바빴지만 오늘은 괜찮아요.",
+    "py": "eojeneun bappatjiman oneureun gwaenchanayo.",
+    "es": "Ayer estaba ocupado, pero hoy estoy bien."
+   },
+   {
+    "zh": "김치는 좋아하지만 매운 음식은 잘 못 먹어요.",
+    "py": "gimchineun joahajiman maeun eumsigeun jal mon meogeoyo.",
+    "es": "Me gusta el kimchi, pero no aguanto bien la comida picante."
+   },
+   {
+    "zh": "실례지만, 지하철역이 어디에 있어요?",
+    "py": "sillyejiman, jihacheollyeogi eodie isseoyo?",
+    "es": "Disculpe, ¿dónde está la estación de metro?"
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "어려워요지만 재미있어요.",
+    "right": "어렵지만 재미있어요.",
+    "why": "-지만 se une a la raíz (어렵-), no a la forma conjugada."
+   },
+   {
+    "wrong": "한국어는 어려워요. 지만 재미있어요.",
+    "right": "한국어는 어려워요. 하지만 재미있어요.",
+    "why": "Al principio de frase se usa la palabra independiente 하지만 o 그렇지만."
+   },
+   {
+    "wrong": "어제는 바쁘지만 오늘은 괜찮아요.",
+    "right": "어제는 바빴지만 오늘은 괜찮아요.",
+    "why": "Con -지만 el primer verbo lleva su propio tiempo: si es pasado, 바빴지만."
+   }
+  ],
+  "practice": {
+   "order": [
+    {
+     "zh": "날씨는 춥지만 기분이 좋아요.",
+     "py": "nalssineun chupjiman gibuni joayo.",
+     "es": "Hace frío, pero estoy de buen humor."
+    },
+    {
+     "zh": "이 옷은 예쁘지만 비싸요.",
+     "py": "i oseun yeppeujiman bissayo.",
+     "es": "Esta ropa es bonita, pero cara."
+    }
+   ],
+   "fill": [
+    {
+     "zh": "피곤하＿ 공부해요.",
+     "answer": "지만",
+     "options": [
+      "지만",
+      "고",
+      "아서",
+      "니까"
+     ],
+     "es": "Estoy cansado, pero estudio."
+    },
+    {
+     "zh": "한국어를 배웠＿ 잘 못해요.",
+     "answer": "지만",
+     "options": [
+      "지만",
+      "고",
+      "어서",
+      "이지만"
+     ],
+     "es": "Aprendí coreano, pero no lo hablo bien."
+    },
+    {
+     "zh": "저는 커피를 좋아해요. ＿ 차는 안 좋아해요.",
+     "answer": "하지만",
+     "options": [
+      "하지만",
+      "지만",
+      "그리고",
+      "그래서"
+     ],
+     "es": "Me gusta el café. Pero el té no me gusta."
+    }
+   ],
+   "translate": [
+    {
+     "zh": "작지만 좋아요.",
+     "py": "jakjiman joayo.",
+     "es": "Es pequeño, pero está bien."
+    },
+    {
+     "zh": "한국어는 어렵지만 재미있어요.",
+     "py": "hangugeoneun eoryeopjiman jaemiisseoyo.",
+     "es": "El coreano es difícil, pero divertido."
+    }
+   ]
+  },
+  "related": [
+   "go-connector",
+   "a-seo",
+   "euni-kka"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "euseyo",
+  "title": "Pedir con cortesía: -(으)세요",
+  "zh": "-(으)세요",
+  "pattern": "Raíz acabada en vocal o ㄹ (sin ㄹ) + 세요 · Raíz acabada en consonante + 으세요 · No hagas: -지 마세요",
+  "level": 1,
+  "summary": "-(으)세요 es el imperativo cortés («siéntese», «espere, por favor») y también el presente honorífico. Para prohibir: -지 마세요.",
+  "explanation": "**-(으)세요** sirve para pedir o indicar a alguien que haga algo con respeto, como el español *siéntese*, *pase*, *espere*. Es lo que oirás en tiendas, en el metro y en clase.\n\n### Formación\n| Raíz | Forma | Ejemplos |\n|---|---|---|\n| acaba en **vocal** | **-세요** | 가다 → 가**세요**, 오다 → 오**세요**, 기다리다 → 기다리**세요** |\n| acaba en **consonante** | **-으세요** | 앉다 → 앉**으세요**, 읽다 → 읽**으세요**, 입다 → 입**으세요** |\n| acaba en **ㄹ** | se cae la ㄹ + 세요 | 살다 → 사**세요**, 만들다 → 만드**세요**, 열다 → 여**세요** |\n\n### Verbos especiales (honoríficos)\n| Normal | Honorífico | Ejemplo |\n|---|---|---|\n| 먹다 / 마시다 | **드시다** | 많이 **드세요** (*¡que aproveche!, coma mucho*) |\n| 자다 | **주무시다** | 안녕히 **주무세요** (*buenas noches*) |\n| 있다 (estar) | **계시다** | 안녕히 **계세요** (*adiós*, al que se queda) |\n\n**안녕히 가세요** (*adiós*, a quien se va) y **안녕히 계세요** (*adiós*, a quien se queda) son el ejemplo más famoso.\n\n### Prohibir: -지 마세요\nPara *no + imperativo* se usa **-지 마세요** (de 말다, *dejar de*): 사진을 찍**지 마세요** (*no haga fotos*), 걱정하**지 마세요** (*no se preocupe*).\n\n### Dos valores\n-(으)세요 es también el **presente honorífico** (ver «honorífico -시-»): 선생님이 책을 읽으**세요** puede ser *la profesora lee un libro* (con respeto). El contexto decide. Para pedir algo con todavía más suavidad, usa **-아/어 주세요** (*hágame el favor de…*).",
+  "examples": [
+   {
+    "zh": "여기에 앉으세요.",
+    "py": "yeogie anjeuseyo.",
+    "es": "Siéntese aquí."
+   },
+   {
+    "zh": "잠깐만 기다리세요.",
+    "py": "jamkkanman gidariseyo.",
+    "es": "Espere un momento."
+   },
+   {
+    "zh": "안녕히 가세요.",
+    "py": "annyeonghi gaseyo.",
+    "es": "Adiós (a quien se va)."
+   },
+   {
+    "zh": "많이 드세요.",
+    "py": "mani deuseyo.",
+    "es": "¡Que aproveche! / Coma mucho."
+   },
+   {
+    "zh": "여기에 이름을 쓰세요.",
+    "py": "yeogie ireumeul sseuseyo.",
+    "es": "Escriba su nombre aquí."
+   },
+   {
+    "zh": "창문을 여세요.",
+    "py": "changmuneul yeoseyo.",
+    "es": "Abra la ventana."
+   },
+   {
+    "zh": "박물관에서 사진을 찍지 마세요.",
+    "py": "bangmulgwaneseo sajineul jjikji maseyo.",
+    "es": "No haga fotos en el museo."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "앉세요.",
+    "right": "앉으세요.",
+    "why": "앉- acaba en consonante: necesita la vocal de apoyo 으."
+   },
+   {
+    "wrong": "창문을 열으세요.",
+    "right": "창문을 여세요.",
+    "why": "En las raíces en ㄹ, la ㄹ desaparece delante de ㅅ: 열다 → 여세요."
+   },
+   {
+    "wrong": "선생님, 많이 먹으세요.",
+    "right": "선생님, 많이 드세요.",
+    "why": "Con 먹다/마시다 la forma respetuosa es el verbo especial 드시다 → 드세요."
+   },
+   {
+    "wrong": "안 가세요. (queriendo decir «no vaya»)",
+    "right": "가지 마세요.",
+    "why": "La prohibición se forma con -지 마세요. 안 가세요 es una pregunta/afirmación honorífica: «¿no va (usted)?»."
+   }
+  ],
+  "practice": {
+   "order": [
+    {
+     "zh": "이쪽으로 오세요.",
+     "py": "ijjogeuro oseyo.",
+     "es": "Venga por aquí."
+    },
+    {
+     "zh": "교실에서 음식을 먹지 마세요.",
+     "py": "gyosireseo eumsigeul meokji maseyo.",
+     "es": "No coman en el aula."
+    }
+   ],
+   "fill": [
+    {
+     "zh": "이 책을 읽＿.",
+     "answer": "으세요",
+     "options": [
+      "으세요",
+      "세요",
+      "어세요",
+      "지 마세요"
+     ],
+     "es": "Lea este libro."
+    },
+    {
+     "zh": "잠깐만 기다리＿.",
+     "answer": "세요",
+     "options": [
+      "세요",
+      "으세요",
+      "어요세요",
+      "시요"
+     ],
+     "es": "Espere un momento."
+    },
+    {
+     "zh": "걱정하＿ 마세요.",
+     "answer": "지",
+     "options": [
+      "지",
+      "고",
+      "세요",
+      "서"
+     ],
+     "es": "No se preocupe."
+    }
+   ],
+   "translate": [
+    {
+     "zh": "안녕히 계세요.",
+     "py": "annyeonghi gyeseyo.",
+     "es": "Adiós (a quien se queda)."
+    },
+    {
+     "zh": "여기에 앉으세요.",
+     "py": "yeogie anjeuseyo.",
+     "es": "Siéntese aquí."
+    }
+   ]
+  },
+  "related": [
+   "a-juseyo",
+   "honorific-si",
+   "eu-ro",
+   "speech-levels"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "a-juseyo",
+  "title": "Pedir cosas y favores: 주세요 / -아/어 주세요",
+  "zh": "주세요 · -아/어 주세요",
+  "pattern": "Nombre + (좀) 주세요 · Verbo + 아/어 주세요",
+  "level": 1,
+  "summary": "«Nombre + 주세요» = «deme…, por favor». «Verbo-아/어 주세요» = «hágame el favor de…». Es la forma más útil para pedir.",
+  "explanation": "**주다** significa *dar*. Con -(으)세요 da **주세요**, literalmente *deme*. Tiene dos usos muy prácticos:\n\n### 1. Pedir una cosa: Nombre + 주세요\n- 물 **주세요**. *Agua, por favor.*\n- 이거 **주세요**. *Deme esto.*\n- 아메리카노 두 잔 **주세요**. *Dos americanos, por favor.*\n\nAñadir **좀** (*un poco*) suaviza la petición: 물 **좀** 주세요.\n\n### 2. Pedir un favor: Verbo + 아/어 주세요\nEl verbo se conjuga como en -아요/어요 (sin 요) y se añade 주세요:\n| Infinitivo | Forma -아/어 | Petición |\n|---|---|---|\n| 닫다 (cerrar) | 닫아 | 문을 닫**아 주세요** |\n| 찍다 (hacer foto) | 찍어 | 사진을 찍**어 주세요** |\n| 말하다 (hablar) | 말해 | 천천히 말**해 주세요** |\n| 기다리다 (esperar) | 기다려 | 잠깐만 기다**려 주세요** |\n| 돕다 (ayudar, irreg. ㅂ) | 도와 | **도와주세요** |\n\n### -(으)세요 frente a -아/어 주세요\n- 기다리**세요**: *espere* (instrucción, aunque cortés).\n- 기다려 **주세요**: *¿me hace el favor de esperar?* (el que habla se beneficia).\n\nEn clase, con la profesora Kim, te salvará: **다시 한번 말해 주세요** (*¿puede repetirlo, por favor?*), **천천히 말해 주세요** (*más despacio, por favor*).\n\nVersión más respetuosa: **-아/어 주시겠어요?** (*¿sería tan amable de…?*).",
+  "examples": [
+   {
+    "zh": "물 좀 주세요.",
+    "py": "mul jom juseyo.",
+    "es": "Un poco de agua, por favor."
+   },
+   {
+    "zh": "아메리카노 두 잔 주세요.",
+    "py": "amerikano du jan juseyo.",
+    "es": "Dos americanos, por favor."
+   },
+   {
+    "zh": "천천히 말해 주세요.",
+    "py": "cheoncheonhi malhae juseyo.",
+    "es": "Hable despacio, por favor."
+   },
+   {
+    "zh": "다시 한번 말해 주세요.",
+    "py": "dasi hanbeon malhae juseyo.",
+    "es": "Repítalo otra vez, por favor."
+   },
+   {
+    "zh": "사진 좀 찍어 주세요.",
+    "py": "sajin jom jjigeo juseyo.",
+    "es": "¿Me hace una foto, por favor?"
+   },
+   {
+    "zh": "문을 닫아 주세요.",
+    "py": "muneul dada juseyo.",
+    "es": "Cierre la puerta, por favor."
+   },
+   {
+    "zh": "도와주세요!",
+    "py": "dowajuseyo!",
+    "es": "¡Ayuda! / ¡Ayúdeme, por favor!"
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "사진을 찍다 주세요.",
+    "right": "사진을 찍어 주세요.",
+    "why": "Antes de 주세요 el verbo va en la forma -아/어 (como el presente sin 요), no en infinitivo."
+   },
+   {
+    "wrong": "말하어 주세요.",
+    "right": "말해 주세요.",
+    "why": "Los verbos en 하다 pasan a 해: 말해 주세요."
+   },
+   {
+    "wrong": "주세요 물.",
+    "right": "물 주세요.",
+    "why": "Lo que se pide va delante: el verbo 주세요 cierra la frase. Para suavizar, añade 좀: 물 좀 주세요."
+   }
+  ],
+  "practice": {
+   "order": [
+    {
+     "zh": "김밥 하나 주세요.",
+     "py": "gimbap hana juseyo.",
+     "es": "Un kimbap, por favor."
+    },
+    {
+     "zh": "여기에 이름을 써 주세요.",
+     "py": "yeogie ireumeul sseo juseyo.",
+     "es": "Escriba aquí su nombre, por favor."
+    }
+   ],
+   "fill": [
+    {
+     "zh": "천천히 말＿ 주세요.",
+     "answer": "해",
+     "options": [
+      "해",
+      "하",
+      "하여요",
+      "해요"
+     ],
+     "es": "Hable despacio, por favor."
+    },
+    {
+     "zh": "창문을 열＿ 주세요.",
+     "answer": "어",
+     "options": [
+      "어",
+      "아",
+      "으",
+      "고"
+     ],
+     "es": "Abra la ventana, por favor."
+    },
+    {
+     "zh": "잠깐만 ＿ 주세요.",
+     "answer": "기다려",
+     "options": [
+      "기다려",
+      "기다리",
+      "기다리어요",
+      "기다려요"
+     ],
+     "es": "Espere un momento, por favor."
+    }
+   ],
+   "translate": [
+    {
+     "zh": "이거 주세요.",
+     "py": "igeo juseyo.",
+     "es": "Deme esto, por favor."
+    },
+    {
+     "zh": "다시 한번 말해 주세요.",
+     "py": "dasi hanbeon malhae juseyo.",
+     "es": "Repítalo, por favor."
+    }
+   ]
+  },
+  "related": [
+   "euseyo",
+   "ayo-eoyo",
+   "counters"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "eul-su-itda",
+  "title": "Poder: -(으)ㄹ 수 있다 / 없다",
+  "zh": "-(으)ㄹ 수 있다/없다",
+  "pattern": "Raíz en vocal o ㄹ + ㄹ 수 있어요/없어요 · Raíz en consonante + 을 수 있어요/없어요",
+  "level": 1,
+  "summary": "-(으)ㄹ 수 있어요 = «puedo / sé hacer»; -(으)ㄹ 수 없어요 = «no puedo». Sirve para capacidad y posibilidad.",
+  "explanation": "Literalmente significa *existe / no existe la manera de hacer…*: **수** es *manera, posibilidad*, y **있다/없다**, *haber / no haber*.\n\n### Formación (igual que el futuro -(으)ㄹ 거예요)\n| Raíz | Forma | Ejemplos |\n|---|---|---|\n| vocal | **-ㄹ 수 있어요** | 가다 → **갈 수 있어요**, 하다 → **할 수 있어요** |\n| ㄹ | **-ㄹ 수 있어요** | 만들다 → **만들 수 있어요**, 열다 → **열 수 있어요** |\n| consonante | **-을 수 있어요** | 먹다 → **먹을 수 있어요**, 읽다 → **읽을 수 있어요** |\n\nIrregulares: 걷다 → **걸을 수 있어요**, 돕다 → **도울 수 있어요** (ver «irregulares»).\n\n### Usos\n- **Capacidad**: 한국어를 **할 수 있어요**. *Sé (puedo) hablar coreano.*\n- **Posibilidad/permiso**: 여기에서 사진을 **찍을 수 없어요**. *Aquí no se pueden hacer fotos.*\n- **Preguntas y peticiones**: 내일 **올 수 있어요?** *¿Puedes venir mañana?*\n\n### Comparación con 못\n**-(으)ㄹ 수 없어요** y **못** significan casi lo mismo (*no poder*). 못 es más corto y coloquial; -(으)ㄹ 수 없어요 suena más claro y algo más formal.\n\nPronunciación: tras ㄹ, 수 suena tenso: 갈 수 [갈 쑤].",
+  "examples": [
+   {
+    "zh": "저는 한국어를 조금 할 수 있어요.",
+    "py": "jeoneun hangugeoreul jogeum hal su isseoyo.",
+    "es": "Sé hablar un poco de coreano."
+   },
+   {
+    "zh": "김치를 먹을 수 있어요?",
+    "py": "gimchireul meogeul su isseoyo?",
+    "es": "¿Puedes comer kimchi?"
+   },
+   {
+    "zh": "내일 학교에 올 수 있어요?",
+    "py": "naeil hakgyoe ol su isseoyo?",
+    "es": "¿Puedes venir mañana a la escuela?"
+   },
+   {
+    "zh": "여기에서 사진을 찍을 수 없어요.",
+    "py": "yeogieseo sajineul jjigeul su eopseoyo.",
+    "es": "Aquí no se pueden hacer fotos."
+   },
+   {
+    "zh": "저는 운전할 수 없어요.",
+    "py": "jeoneun unjeonhal su eopseoyo.",
+    "es": "No sé conducir."
+   },
+   {
+    "zh": "지민 씨는 케이크를 만들 수 있어요.",
+    "py": "jimin ssineun keikeureul mandeul su isseoyo.",
+    "es": "Jimin sabe hacer tartas."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "먹ㄹ 수 있어요.",
+    "right": "먹을 수 있어요.",
+    "why": "Tras consonante hace falta 을: 먹을 수 있어요."
+   },
+   {
+    "wrong": "만들을 수 있어요.",
+    "right": "만들 수 있어요.",
+    "why": "Las raíces en ㄹ no toman 으."
+   },
+   {
+    "wrong": "할 수 안 있어요.",
+    "right": "할 수 없어요.",
+    "why": "La negación de 있다 es 없다, no 안 있다."
+   },
+   {
+    "wrong": "저는 수영할 있어요.",
+    "right": "저는 수영할 수 있어요.",
+    "why": "No se puede omitir 수: es la palabra que significa «posibilidad»."
+   }
+  ],
+  "practice": {
+   "order": [
+    {
+     "zh": "저는 피아노를 칠 수 있어요.",
+     "py": "jeoneun pianoreul chil su isseoyo.",
+     "es": "Sé tocar el piano."
+    },
+    {
+     "zh": "오늘은 만날 수 없어요.",
+     "py": "oneureun mannal su eopseoyo.",
+     "es": "Hoy no podemos vernos."
+    }
+   ],
+   "fill": [
+    {
+     "zh": "한국 신문을 읽＿ 수 있어요.",
+     "answer": "을",
+     "options": [
+      "을",
+      "ㄹ",
+      "는",
+      "를"
+     ],
+     "es": "Puedo leer el periódico coreano."
+    },
+    {
+     "zh": "내일 ＿ 수 있어요?",
+     "answer": "올",
+     "options": [
+      "올",
+      "오을",
+      "와",
+      "오는"
+     ],
+     "es": "¿Puedes venir mañana?"
+    },
+    {
+     "zh": "여기에서 담배를 피울 수 ＿.",
+     "answer": "없어요",
+     "options": [
+      "없어요",
+      "안 있어요",
+      "못 해요",
+      "아니에요"
+     ],
+     "es": "Aquí no se puede fumar."
+    }
+   ],
+   "translate": [
+    {
+     "zh": "한국어를 할 수 있어요.",
+     "py": "hangugeoreul hal su isseoyo.",
+     "es": "Sé hablar coreano."
+    },
+    {
+     "zh": "오늘은 갈 수 없어요.",
+     "py": "oneureun gal su eopseoyo.",
+     "es": "Hoy no puedo ir."
+    }
+   ]
+  },
+  "related": [
+   "mot-negation",
+   "future-eul-geoyeyo",
+   "irregulars"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "go-itda",
+  "title": "Estar haciendo: -고 있다",
+  "zh": "-고 있다",
+  "pattern": "Raíz del verbo + 고 있어요 · Pasado: -고 있었어요 · Honorífico: -고 계세요",
+  "level": 1,
+  "summary": "-고 있어요 equivale a «estar + gerundio»: acción en curso ahora o en esta temporada.",
+  "explanation": "**-고 있다** expresa una acción **en progreso**, como el español *estar + gerundio*. Se añade a la raíz sin cambios por el batchim.\n\n| Infinitivo | Progresivo |\n|---|---|\n| 먹다 | 먹**고 있어요** (*está comiendo*) |\n| 기다리다 | 기다리**고 있어요** (*está esperando*) |\n| 공부하다 | 공부하**고 있어요** (*está estudiando*) |\n\n### Usos\n1. **Ahora mismo**: 지금 밥을 먹**고 있어요**. *Ahora estoy comiendo.*\n2. **Esta temporada**, como en español: 요즘 한국어를 배우**고 있어요**. *Últimamente estoy aprendiendo coreano.*\n3. **Pasado progresivo**: -고 **있었어요** = *estaba haciendo*: 전화했을 때 자고 있었어요.\n\n### Con respeto\nSi el sujeto merece respeto (la profesora, tus padres), 있다 pasa a **계시다**: 선생님은 지금 수업하**고 계세요**.\n\n### ¿Cuándo NO hace falta?\nEn coreano el presente simple ya puede expresar una acción en curso: 지금 뭐 해요? (*¿qué haces / estás haciendo?*). -고 있다 subraya que está ocurriendo. No uses -고 있다 con adjetivos (~~바쁘고 있어요~~).\n\n### Ojo con ropa y estados\nCon verbos de ponerse ropa (입다, 쓰다…) -고 있다 indica el **estado** de llevar algo puesto: 지민 씨는 안경을 쓰**고 있어요** (*Jimin lleva gafas*).",
+  "examples": [
+   {
+    "zh": "지금 뭐 하고 있어요?",
+    "py": "jigeum mwo hago isseoyo?",
+    "es": "¿Qué estás haciendo ahora?"
+   },
+   {
+    "zh": "밥을 먹고 있어요.",
+    "py": "babeul meokgo isseoyo.",
+    "es": "Estoy comiendo."
+   },
+   {
+    "zh": "밖에 비가 오고 있어요.",
+    "py": "bakke biga ogo isseoyo.",
+    "es": "Fuera está lloviendo."
+   },
+   {
+    "zh": "역 앞에서 친구를 기다리고 있어요.",
+    "py": "yeok apeseo chingureul gidarigo isseoyo.",
+    "es": "Estoy esperando a un amigo delante de la estación."
+   },
+   {
+    "zh": "요즘 한국어를 배우고 있어요.",
+    "py": "yojeum hangugeoreul baeugo isseoyo.",
+    "es": "Últimamente estoy aprendiendo coreano."
+   },
+   {
+    "zh": "어제 저녁에 공부하고 있었어요.",
+    "py": "eoje jeonyeoge gongbuhago isseosseoyo.",
+    "es": "Ayer por la tarde-noche estaba estudiando."
+   },
+   {
+    "zh": "선생님은 지금 전화하고 계세요.",
+    "py": "seonsaengnimeun jigeum jeonhwahago gyeseyo.",
+    "es": "La profesora está hablando por teléfono ahora."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "먹어 있어요.",
+    "right": "먹고 있어요.",
+    "why": "El progresivo se forma con -고 있다, no con -아/어 있다 (que indica un estado resultante, nivel superior)."
+   },
+   {
+    "wrong": "저는 바쁘고 있어요.",
+    "right": "저는 바빠요.",
+    "why": "-고 있다 solo va con verbos de acción, no con adjetivos."
+   },
+   {
+    "wrong": "선생님이 책을 읽고 있어요. (con mucho respeto)",
+    "right": "선생님이 책을 읽고 계세요.",
+    "why": "Con un sujeto al que se debe respeto, 있다 se convierte en 계시다."
+   }
+  ],
+  "practice": {
+   "order": [
+    {
+     "zh": "동생은 지금 자고 있어요.",
+     "py": "dongsaengeun jigeum jago isseoyo.",
+     "es": "Mi hermano pequeño está durmiendo ahora."
+    },
+    {
+     "zh": "저는 음악을 듣고 있어요.",
+     "py": "jeoneun eumageul deutgo isseoyo.",
+     "es": "Estoy escuchando música."
+    }
+   ],
+   "fill": [
+    {
+     "zh": "지금 숙제를 하＿ 있어요.",
+     "answer": "고",
+     "options": [
+      "고",
+      "어",
+      "지",
+      "서"
+     ],
+     "es": "Ahora estoy haciendo los deberes."
+    },
+    {
+     "zh": "그때 저는 텔레비전을 보고 ＿.",
+     "answer": "있었어요",
+     "options": [
+      "있었어요",
+      "있어요",
+      "봤어요",
+      "있을 거예요"
+     ],
+     "es": "En ese momento yo estaba viendo la tele."
+    },
+    {
+     "zh": "어머니는 요리하고 ＿.",
+     "answer": "계세요",
+     "options": [
+      "계세요",
+      "있으세요",
+      "있어요요",
+      "하세요"
+     ],
+     "es": "Mi madre está cocinando."
+    }
+   ],
+   "translate": [
+    {
+     "zh": "비가 오고 있어요.",
+     "py": "biga ogo isseoyo.",
+     "es": "Está lloviendo."
+    },
+    {
+     "zh": "친구를 기다리고 있어요.",
+     "py": "chingureul gidarigo isseoyo.",
+     "es": "Estoy esperando a un amigo."
+    }
+   ]
+  },
+  "related": [
+   "ayo-eoyo",
+   "honorific-si",
+   "past-ass-eoss"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "a-seo",
+  "title": "Causa y secuencia: -아서/어서",
+  "zh": "-아서/어서",
+  "pattern": "Raíz + 아서 (ㅏ/ㅗ) / 어서 (otras) · 하다 → 해서 · Nombre + (이)라서",
+  "level": 1,
+  "summary": "-아서/어서 expresa la causa («como…, por eso…») y también una secuencia muy ligada («ir a un sitio y allí…»).",
+  "explanation": "**-아서/어서** sigue la misma regla de vocales que -아요/어요: quita 요 al presente y añade **서**.\n\n| Infinitivo | Presente | + 서 |\n|---|---|---|\n| 바쁘다 | 바빠요 | **바빠서** |\n| 아프다 | 아파요 | **아파서** |\n| 없다 | 없어요 | **없어서** |\n| 가다 | 가요 | **가서** |\n| 만나다 | 만나요 | **만나서** |\n| 피곤하다 | 피곤해요 | **피곤해서** |\n| nombre | — | 학생**이라서** / 의사**라서** (o 학생이어서) |\n\n### Uso 1: causa (*como…, porque…*)\n머리가 아**파서** 병원에 갔어요. *Como me dolía la cabeza, fui al médico.*\n\nDos reglas importantes:\n- **Nunca** lleva pasado: aunque la causa sea pasada, se dice 아파서, no ~~아팠어서~~. El tiempo lo marca el verbo final.\n- **No** se puede usar con una orden o propuesta al final (~~비가 와서 우산을 가져가세요~~). Para eso se usa **-(으)니까** (ver «-(으)니까»).\n\nTambién aparece en disculpas y saludos fijos: 늦**어서** 죄송합니다 (*perdón por llegar tarde*), 만나**서** 반가워요 (*encantado de conocerte*).\n\n### Uso 2: secuencia ligada (*y entonces, y allí*)\nCuando la segunda acción depende de la primera (ocurre en el lugar al que fuiste, o con lo que conseguiste):\n- 학교에 **가서** 공부해요. *Voy a la escuela y (allí) estudio.*\n- 친구를 **만나서** 커피를 마셨어요. *Quedé con un amigo y (con él) tomé café.*\n\nCompara con -고: 밥을 먹**고** 학교에 가요 (dos acciones independientes, una detrás de otra).",
+  "examples": [
+   {
+    "zh": "머리가 아파서 병원에 갔어요.",
+    "py": "meoriga apaseo byeongwone gasseoyo.",
+    "es": "Me dolía la cabeza, así que fui al médico."
+   },
+   {
+    "zh": "시간이 없어서 못 가요.",
+    "py": "sigani eopseoseo mot gayo.",
+    "es": "No tengo tiempo, así que no puedo ir."
+   },
+   {
+    "zh": "만나서 반가워요.",
+    "py": "mannaseo bangawoyo.",
+    "es": "Encantado de conocerte."
+   },
+   {
+    "zh": "늦어서 죄송합니다.",
+    "py": "neujeoseo joesonghamnida.",
+    "es": "Perdone por llegar tarde."
+   },
+   {
+    "zh": "도서관에 가서 책을 빌렸어요.",
+    "py": "doseogwane gaseo chaegeul billyeosseoyo.",
+    "es": "Fui a la biblioteca y saqué un libro."
+   },
+   {
+    "zh": "친구를 만나서 같이 점심을 먹었어요.",
+    "py": "chingureul mannaseo gachi jeomsimeul meogeosseoyo.",
+    "es": "Quedé con un amigo y comimos juntos."
+   },
+   {
+    "zh": "오늘은 일요일이라서 학교에 안 가요.",
+    "py": "oneureun iryoiriraseo hakgyoe an gayo.",
+    "es": "Hoy es domingo, así que no voy a la escuela."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "어제 아팠어서 학교에 못 갔어요.",
+    "right": "어제 아파서 학교에 못 갔어요.",
+    "why": "-아서/어서 nunca lleva marca de pasado; el tiempo va en el verbo final."
+   },
+   {
+    "wrong": "비가 와서 우산을 가져가세요.",
+    "right": "비가 오니까 우산을 가져가세요.",
+    "why": "Con una orden o propuesta al final no se usa -아서; se usa -(으)니까."
+   },
+   {
+    "wrong": "학교에 가고 공부해요. (estudiar allí)",
+    "right": "학교에 가서 공부해요.",
+    "why": "Si la segunda acción ocurre en el lugar al que fuiste, se une con -아서/어서."
+   },
+   {
+    "wrong": "피곤하서 자요.",
+    "right": "피곤해서 자요.",
+    "why": "하다 se convierte en 해: 해서."
+   }
+  ],
+  "practice": {
+   "order": [
+    {
+     "zh": "배가 고파서 밥을 먹었어요.",
+     "py": "baega gopaseo babeul meogeosseoyo.",
+     "es": "Tenía hambre, así que comí."
+    },
+    {
+     "zh": "편의점에 가서 물을 샀어요.",
+     "py": "pyeonuijeome gaseo mureul sasseoyo.",
+     "es": "Fui a la tienda 24 horas y compré agua."
+    }
+   ],
+   "fill": [
+    {
+     "zh": "피곤＿ 일찍 잤어요.",
+     "answer": "해서",
+     "options": [
+      "해서",
+      "하서",
+      "했어서",
+      "하니까서"
+     ],
+     "es": "Estaba cansado, así que me acosté pronto."
+    },
+    {
+     "zh": "늦＿ 죄송합니다.",
+     "answer": "어서",
+     "options": [
+      "어서",
+      "아서",
+      "고",
+      "지만"
+     ],
+     "es": "Perdone por llegar tarde."
+    },
+    {
+     "zh": "친구를 만나＿ 영화를 봤어요.",
+     "answer": "서",
+     "options": [
+      "서",
+      "아서",
+      "고서요",
+      "니까"
+     ],
+     "es": "Quedé con un amigo y vimos una película."
+    }
+   ],
+   "translate": [
+    {
+     "zh": "만나서 반가워요.",
+     "py": "mannaseo bangawoyo.",
+     "es": "Encantado de conocerte."
+    },
+    {
+     "zh": "바빠서 못 가요.",
+     "py": "bappaseo mot gayo.",
+     "es": "Estoy ocupado, así que no puedo ir."
+    }
+   ]
+  },
+  "related": [
+   "euni-kka",
+   "go-connector",
+   "ayo-eoyo",
+   "jiman"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "euni-kka",
+  "title": "Porque (y entonces haz…): -(으)니까",
+  "zh": "-(으)니까",
+  "pattern": "Raíz en vocal + 니까 · Raíz en consonante + 으니까 · Raíz en ㄹ (sin ㄹ) + 니까",
+  "level": 1,
+  "summary": "-(으)니까 da una razón, sobre todo cuando la frase final es una petición, orden o propuesta: «como llueve, coge el paraguas».",
+  "explanation": "**-(으)니까** también significa *como / porque*, pero se usa sobre todo cuando la razón justifica una **petición, orden o propuesta**, o cuando la causa es una opinión del hablante.\n\n### Formación\n| Raíz | Forma | Ejemplos |\n|---|---|---|\n| vocal | **-니까** | 오다 → 오**니까**, 바쁘다 → 바쁘**니까** |\n| consonante | **-으니까** | 없다 → 없**으니까**, 많다 → 많**으니까** |\n| ㄹ | se cae la ㄹ + 니까 | 멀다 → 머**니까**, 살다 → 사**니까** |\n| nombre | **(이)니까** | 학생**이니까**, 주말**이니까** |\n\nCon -(으)니까 **sí** se puede marcar el pasado: 비가 **왔으니까** (*como ha llovido*).\n\nIrregulares: 춥다 → **추우니까**, 듣다 → **들으니까**.\n\n### -아서/어서 frente a -(으)니까\n| | -아서/어서 | -(으)니까 |\n|---|---|---|\n| Final con orden / propuesta (-세요, -ㄹ까요, -아요 «vamos») | ✗ | ✓ |\n| Pasado en la causa | ✗ | ✓ |\n| Saludos fijos (반가워요, 죄송합니다) | ✓ | ✗ |\n| Matiz | causa natural, objetiva | razón que el hablante da para justificar |\n\n- 비가 오**니까** 우산을 가져가세요. *Como llueve, llévate el paraguas.* ✓\n- 만나**서** 반가워요. ✓ (no ~~만나니까 반가워요~~ como saludo)\n\n### Otro uso: descubrimiento\nCon un verbo en pasado al final, *-(으)니까* puede significar *al hacer X, descubrí que…*: 집에 가**니까** 아무도 없었어요. *Cuando llegué a casa, no había nadie.*",
+  "examples": [
+   {
+    "zh": "비가 오니까 우산을 가져가세요.",
+    "py": "biga onikka usaneul gajyeogaseyo.",
+    "es": "Como llueve, llévate el paraguas."
+   },
+   {
+    "zh": "시간이 없으니까 빨리 가요.",
+    "py": "sigani eopseunikka ppalli gayo.",
+    "es": "No tenemos tiempo, así que vamos rápido."
+   },
+   {
+    "zh": "오늘은 바쁘니까 내일 만나요.",
+    "py": "oneureun bappeunikka naeil mannayo.",
+    "es": "Hoy estoy ocupado, así que quedamos mañana."
+   },
+   {
+    "zh": "날씨가 추우니까 따뜻하게 입으세요.",
+    "py": "nalssiga chuunikka ttatteuthage ibeuseyo.",
+    "es": "Hace frío, así que abrígate."
+   },
+   {
+    "zh": "학교가 머니까 버스를 탈까요?",
+    "py": "hakgyoga meonikka beoseureul talkkayo?",
+    "es": "La escuela está lejos; ¿cogemos el autobús?"
+   },
+   {
+    "zh": "주말이니까 같이 영화 봐요.",
+    "py": "jumarinikka gachi yeonghwa bwayo.",
+    "es": "Es fin de semana: vamos a ver una película juntos."
+   },
+   {
+    "zh": "집에 가니까 아무도 없었어요.",
+    "py": "jibe ganikka amudo eopseosseoyo.",
+    "es": "Cuando llegué a casa, no había nadie."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "비가 와서 우산을 가져가세요.",
+    "right": "비가 오니까 우산을 가져가세요.",
+    "why": "Ante una orden o petición final se usa -(으)니까, no -아서/어서."
+   },
+   {
+    "wrong": "학교가 멀으니까 버스를 타요.",
+    "right": "학교가 머니까 버스를 타요.",
+    "why": "En las raíces en ㄹ, la ㄹ cae delante de ㄴ y no se añade 으."
+   },
+   {
+    "wrong": "만나니까 반가워요.",
+    "right": "만나서 반가워요.",
+    "why": "La fórmula de saludo usa -아서/어서."
+   },
+   {
+    "wrong": "없니까 / 많니까",
+    "right": "없으니까 / 많으니까",
+    "why": "Tras consonante (salvo ㄹ) hace falta la vocal de apoyo 으."
+   }
+  ],
+  "practice": {
+   "order": [
+    {
+     "zh": "피곤하니까 좀 쉬세요.",
+     "py": "pigonhanikka jom swiseyo.",
+     "es": "Estás cansado, así que descansa un poco."
+    },
+    {
+     "zh": "늦었으니까 택시를 탈까요?",
+     "py": "neujeosseunikka taeksireul talkkayo?",
+     "es": "Es tarde; ¿cogemos un taxi?"
+    }
+   ],
+   "fill": [
+    {
+     "zh": "사람이 많＿ 다른 식당에 가요.",
+     "answer": "으니까",
+     "options": [
+      "으니까",
+      "니까",
+      "아서",
+      "지만"
+     ],
+     "es": "Hay mucha gente, así que vamos a otro restaurante."
+    },
+    {
+     "zh": "오늘은 춥＿ 집에 있을까요?",
+     "answer": "으니까",
+     "options": [
+      "으니까",
+      "니까",
+      "어서",
+      "고"
+     ],
+     "es": "Hoy hace frío; ¿nos quedamos en casa?"
+    },
+    {
+     "zh": "내일 시험이＿ 공부하세요.",
+     "answer": "니까",
+     "options": [
+      "니까",
+      "으니까",
+      "라서요",
+      "어서"
+     ],
+     "es": "Mañana hay examen, así que estudia."
+    }
+   ],
+   "translate": [
+    {
+     "zh": "시간이 없으니까 빨리 가요.",
+     "py": "sigani eopseunikka ppalli gayo.",
+     "es": "No hay tiempo, así que vamos rápido."
+    },
+    {
+     "zh": "비가 오니까 우산을 가져가세요.",
+     "py": "biga onikka usaneul gajyeogaseyo.",
+     "es": "Como llueve, llévate el paraguas."
+    }
+   ]
+  },
+  "related": [
+   "a-seo",
+   "euseyo",
+   "eul-kkayo",
+   "irregulars"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "eul-kkayo",
+  "title": "¿…-mos? Propuestas con -(으)ㄹ까요?",
+  "zh": "-(으)ㄹ까요?",
+  "pattern": "Raíz en vocal o ㄹ + ㄹ까요? · Raíz en consonante + 을까요?",
+  "level": 1,
+  "summary": "-(으)ㄹ까요? propone algo («¿vamos?», «¿quedamos a las tres?»), pide opinión («¿abro la ventana?») o expresa duda («¿lloverá?»).",
+  "explanation": "### Formación\n| Raíz | Forma | Ejemplos |\n|---|---|---|\n| vocal | **-ㄹ까요?** | 가다 → **갈까요?**, 마시다 → **마실까요?** |\n| ㄹ | **-ㄹ까요?** (sin añadir nada) | 열다 → **열까요?**, 만들다 → **만들까요?** |\n| consonante | **-을까요?** | 먹다 → **먹을까요?**, 앉다 → **앉을까요?** |\n\nIrregulares: 걷다 → **걸을까요?**, 듣다 → **들을까요?**, 돕다 → **도울까요?**\n\n### Tres usos\n1. **Proponer** (*¿vamos…?, ¿qué tal si…?*) — sujeto *nosotros*: 같이 커피 **마실까요?** *¿Tomamos un café juntos?*\n2. **Ofrecerse / pedir opinión** (*¿quieres que…?*) — sujeto *yo*: 창문을 **열까요?** *¿Abro la ventana?*\n3. **Duda o suposición** (*¿será que…?*) — tercera persona: 내일 비가 **올까요?** *¿Lloverá mañana?*\n\n### Cómo responder\n| Para aceptar | Para rechazar |\n|---|---|\n| 네, 좋아요. / 네, 같이 가요. | 미안해요. 오늘은 시간이 없어요. |\n| 네, 열어 주세요. (*sí, ábrela*) | 아니요, 괜찮아요. (*no, gracias*) |\n\n### Otras formas de proponer\n- **-아요/어요** con tono decidido: 같이 가요! (*¡vamos!*)\n- **-(으)ㅂ시다**: 갑시다 (*vamos*), más formal y algo seco; no lo uses con superiores.",
+  "examples": [
+   {
+    "zh": "같이 갈까요?",
+    "py": "gachi galkkayo?",
+    "es": "¿Vamos juntos?"
+   },
+   {
+    "zh": "커피 한잔 마실까요?",
+    "py": "keopi hanjan masilkkayo?",
+    "es": "¿Nos tomamos un café?"
+   },
+   {
+    "zh": "점심에 뭐 먹을까요?",
+    "py": "jeomsime mwo meogeulkkayo?",
+    "es": "¿Qué comemos a mediodía?"
+   },
+   {
+    "zh": "몇 시에 만날까요? — 세 시에 만나요.",
+    "py": "myeot sie mannalkkayo? — se sie mannayo.",
+    "es": "¿A qué hora quedamos? —Quedamos a las tres."
+   },
+   {
+    "zh": "창문을 열까요?",
+    "py": "changmuneul yeolkkayo?",
+    "es": "¿Abro la ventana?"
+   },
+   {
+    "zh": "내일 비가 올까요?",
+    "py": "naeil biga olkkayo?",
+    "es": "¿Lloverá mañana?"
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "먹ㄹ까요?",
+    "right": "먹을까요?",
+    "why": "Tras consonante se usa -을까요."
+   },
+   {
+    "wrong": "창문을 열을까요?",
+    "right": "창문을 열까요?",
+    "why": "Las raíces en ㄹ no toman 으."
+   },
+   {
+    "wrong": "같이 갈까요? — 네, 갈까요.",
+    "right": "같이 갈까요? — 네, 좋아요. 같이 가요.",
+    "why": "La respuesta afirmativa no repite -ㄹ까요; se acepta con 좋아요 o con -아요."
+   }
+  ],
+  "practice": {
+   "order": [
+    {
+     "zh": "주말에 같이 영화 볼까요?",
+     "py": "jumare gachi yeonghwa bolkkayo?",
+     "es": "¿Vemos una película juntos el fin de semana?"
+    },
+    {
+     "zh": "어디에서 만날까요?",
+     "py": "eodieseo mannalkkayo?",
+     "es": "¿Dónde quedamos?"
+    }
+   ],
+   "fill": [
+    {
+     "zh": "같이 저녁을 먹＿?",
+     "answer": "을까요",
+     "options": [
+      "을까요",
+      "ㄹ까요",
+      "어요까",
+      "을 거예요"
+     ],
+     "es": "¿Cenamos juntos?"
+    },
+    {
+     "zh": "택시를 ＿?",
+     "answer": "탈까요",
+     "options": [
+      "탈까요",
+      "타을까요",
+      "타까요",
+      "탔까요"
+     ],
+     "es": "¿Cogemos un taxi?"
+    },
+    {
+     "zh": "같이 갈까요? — 네, ＿.",
+     "answer": "좋아요",
+     "options": [
+      "좋아요",
+      "갈까요",
+      "좋을까요",
+      "아니에요"
+     ],
+     "es": "¿Vamos juntos? —Sí, vale."
+    }
+   ],
+   "translate": [
+    {
+     "zh": "같이 커피 마실까요?",
+     "py": "gachi keopi masilkkayo?",
+     "es": "¿Tomamos un café juntos?"
+    },
+    {
+     "zh": "몇 시에 만날까요?",
+     "py": "myeot sie mannalkkayo?",
+     "es": "¿A qué hora quedamos?"
+    }
+   ]
+  },
+  "related": [
+   "future-eul-geoyeyo",
+   "euni-kka",
+   "go-sipda"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "eu-ro",
+  "title": "Medio y dirección: (으)로",
+  "zh": "(으)로",
+  "pattern": "Nombre en vocal o ㄹ + 로 · Nombre en consonante + 으로",
+  "level": 1,
+  "summary": "(으)로 indica el medio o instrumento (en autobús, con palillos, en coreano), la dirección (hacia la derecha) y la elección (esto, por favor).",
+  "explanation": "### Formación (¡ojo a la excepción de ㄹ!)\n| Último sonido | Forma | Ejemplos |\n|---|---|---|\n| vocal | **로** | 버스**로**, 택시**로**, 학교**로** |\n| **ㄹ** (excepción) | **로** | 지하철**로**, 연필**로**, 서울**로** |\n| otra consonante | **으로** | 젓가락**으로**, 볼펜**으로**, 오른쪽**으로**, 손**으로** |\n\nLa regla especial: aunque ㄹ es consonante, se usa **로**, no ~~으로~~: 지하철**로** (no ~~지하철으로~~).\n\n### Usos\n1. **Medio de transporte**: 버스**로** 가요 (*voy en autobús*), 비행기**로** 와요. En español decimos *en*; en coreano es (으)로.\n2. **Instrumento o lengua**: 젓가락**으로** 먹어요 (*como con palillos*), 한국어**로** 말해요 (*hablo en coreano*).\n3. **Dirección** (*hacia*): 오른쪽**으로** 가세요 (*vaya a la derecha*), 이쪽**으로** 오세요.\n4. **Elección** al pedir: 이**걸로** 주세요 (*me quedo con esto*), 아이스**로** 주세요.\n\n### 에 frente a (으)로\n- 서울**에** 가요: destino concreto (*a Seúl*).\n- 서울**로** 가요: dirección (*hacia Seúl, rumbo a Seúl*). Muchas veces son intercambiables, pero con izquierda/derecha y 이쪽/저쪽 se prefiere (으)로.\n\nPregunta útil: 학교에 **뭐로** 가요? / **어떻게** 가요? *¿Cómo vas a la escuela?*",
+  "examples": [
+   {
+    "zh": "저는 지하철로 학교에 가요.",
+    "py": "jeoneun jihacheollo hakgyoe gayo.",
+    "es": "Voy a la escuela en metro."
+   },
+   {
+    "zh": "버스로 대전에 가요.",
+    "py": "beoseuro daejeone gayo.",
+    "es": "Voy a Daejeon en autobús."
+   },
+   {
+    "zh": "젓가락으로 먹어요.",
+    "py": "jeotgaraguro meogeoyo.",
+    "es": "Como con palillos."
+   },
+   {
+    "zh": "한국어로 말해 주세요.",
+    "py": "hangugeoro malhae juseyo.",
+    "es": "Hábleme en coreano, por favor."
+   },
+   {
+    "zh": "오른쪽으로 가세요.",
+    "py": "oreunjjoguro gaseyo.",
+    "es": "Vaya a la derecha."
+   },
+   {
+    "zh": "이걸로 주세요.",
+    "py": "igeollo juseyo.",
+    "es": "Me quedo con esto, por favor."
+   },
+   {
+    "zh": "볼펜으로 이름을 쓰세요.",
+    "py": "bolpeneuro ireumeul sseuseyo.",
+    "es": "Escriba su nombre con bolígrafo."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "지하철으로 가요.",
+    "right": "지하철로 가요.",
+    "why": "Tras ㄹ se usa 로, no 으로 (excepción importante)."
+   },
+   {
+    "wrong": "버스에서 학교에 가요. (en autobús)",
+    "right": "버스로 학교에 가요.",
+    "why": "El medio de transporte lleva (으)로. 버스에서 sería «dentro del autobús» o «desde el autobús»."
+   },
+   {
+    "wrong": "젓가락로 먹어요.",
+    "right": "젓가락으로 먹어요.",
+    "why": "젓가락 acaba en ㄱ (consonante distinta de ㄹ): necesita 으로."
+   },
+   {
+    "wrong": "스페인어에 말해요.",
+    "right": "스페인어로 말해요.",
+    "why": "«En español» (idioma) se dice con (으)로."
+   }
+  ],
+  "practice": {
+   "order": [
+    {
+     "zh": "저는 자전거로 학교에 가요.",
+     "py": "jeoneun jajeongeoro hakgyoe gayo.",
+     "es": "Voy a la escuela en bicicleta."
+    },
+    {
+     "zh": "왼쪽으로 가세요.",
+     "py": "oenjjoguro gaseyo.",
+     "es": "Vaya a la izquierda."
+    }
+   ],
+   "fill": [
+    {
+     "zh": "택시＿ 가요.",
+     "answer": "로",
+     "options": [
+      "로",
+      "으로",
+      "에서",
+      "를"
+     ],
+     "es": "Voy en taxi."
+    },
+    {
+     "zh": "지하철＿ 왔어요.",
+     "answer": "로",
+     "options": [
+      "로",
+      "으로",
+      "에",
+      "이"
+     ],
+     "es": "He venido en metro."
+    },
+    {
+     "zh": "손＿ 먹어요.",
+     "answer": "으로",
+     "options": [
+      "으로",
+      "로",
+      "에",
+      "을"
+     ],
+     "es": "Como con las manos."
+    }
+   ],
+   "translate": [
+    {
+     "zh": "버스로 가요.",
+     "py": "beoseuro gayo.",
+     "es": "Voy en autobús."
+    },
+    {
+     "zh": "한국어로 말해요.",
+     "py": "hangugeoro malhaeyo.",
+     "es": "Hablo en coreano."
+    }
+   ]
+  },
+  "related": [
+   "e-gada-oda",
+   "eseo",
+   "a-juseyo"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "buteo-kkaji",
+  "title": "Desde… hasta…: 부터 / 까지 / 에서",
+  "zh": "부터 · 까지 · 에서~까지",
+  "pattern": "Tiempo + 부터 … Tiempo + 까지 · Lugar + 에서 … Lugar + 까지",
+  "level": 1,
+  "summary": "부터…까지 marca un intervalo de tiempo («de 9 a 6»); para distancias se dice 에서…까지 («de Seúl a Busan»).",
+  "explanation": "Estas partículas no cambian con el batchim y se pegan al nombre.\n\n| Partícula | Significado | Se usa con |\n|---|---|---|\n| **부터** | desde, a partir de | tiempo (y orden: *empezando por*) |\n| **까지** | hasta | tiempo y lugar |\n| **에서** | desde, de | lugar (punto de partida) |\n\n### Tiempo: 부터 … 까지\n- 아홉 시**부터** 여섯 시**까지** 일해요. *Trabajo de nueve a seis.*\n- 월요일**부터** 금요일**까지** 수업이 있어요. *Tengo clase de lunes a viernes.*\n- Pueden ir solos: 내일**부터** 방학이에요 (*a partir de mañana son vacaciones*), 언제**까지** 한국에 있어요? (*¿hasta cuándo estás en Corea?*)\n\n### Lugar: 에서 … 까지\n- 서울**에서** 부산**까지** 기차로 세 시간 걸려요. *De Seúl a Busan se tardan tres horas en tren.*\n- 집**에서** 학교**까지** 멀어요? *¿Está lejos tu casa de la escuela?*\n\nEn la lengua hablada a veces se oye 부터 también con lugares, pero lo estándar para el punto de partida en el espacio es 에서.\n\n### El verbo 걸리다\nPara la duración de un trayecto se usa **걸리다** (*tardar*): 10분 걸려요 (*se tarda diez minutos*). Pregunta típica: 얼마나 걸려요? (*¿cuánto se tarda?*)\n\n### Orden contrario al español\nComo siempre, la partícula va **detrás**: *desde las nueve* = 아홉 시**부터** (lit. *nueve horas-desde*).",
+  "examples": [
+   {
+    "zh": "아홉 시부터 여섯 시까지 일해요.",
+    "py": "ahop sibuteo yeoseot sikkaji ilhaeyo.",
+    "es": "Trabajo de nueve a seis."
+   },
+   {
+    "zh": "월요일부터 금요일까지 수업이 있어요.",
+    "py": "woryoilbuteo geumyoilkkaji sueobi isseoyo.",
+    "es": "Tengo clase de lunes a viernes."
+   },
+   {
+    "zh": "서울에서 부산까지 기차로 세 시간 걸려요.",
+    "py": "seoureseo busankkaji gicharo se sigan geollyeoyo.",
+    "es": "De Seúl a Busan se tardan tres horas en tren."
+   },
+   {
+    "zh": "집에서 학교까지 멀어요?",
+    "py": "jibeseo hakgyokkaji meoreoyo?",
+    "es": "¿Está lejos tu casa de la escuela?"
+   },
+   {
+    "zh": "내일부터 방학이에요.",
+    "py": "naeilbuteo banghagieyo.",
+    "es": "A partir de mañana son vacaciones."
+   },
+   {
+    "zh": "언제까지 한국에 있어요?",
+    "py": "eonjekkaji hanguge isseoyo?",
+    "es": "¿Hasta cuándo estás en Corea?"
+   },
+   {
+    "zh": "여기에서 역까지 걸어서 10분 걸려요.",
+    "py": "yeogieseo yeokkkaji georeoseo sip bun geollyeoyo.",
+    "es": "De aquí a la estación se tarda diez minutos andando."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "부터 아홉 시 까지 여섯 시",
+    "right": "아홉 시부터 여섯 시까지",
+    "why": "Las partículas van detrás del nombre y pegadas a él."
+   },
+   {
+    "wrong": "서울부터 부산까지 가요. (escrito/estándar)",
+    "right": "서울에서 부산까지 가요.",
+    "why": "Para el punto de partida en el espacio, lo estándar es 에서; 부터 es para el tiempo."
+   },
+   {
+    "wrong": "학교에 까지 걸어요.",
+    "right": "학교까지 걸어요.",
+    "why": "까지 sustituye a 에; no se acumulan."
+   }
+  ],
+  "practice": {
+   "order": [
+    {
+     "zh": "수업은 열 시부터 열두 시까지예요.",
+     "py": "sueobeun yeol sibuteo yeoldu sikkajiyeyo.",
+     "es": "La clase es de diez a doce."
+    },
+    {
+     "zh": "집에서 회사까지 한 시간 걸려요.",
+     "py": "jibeseo hoesakkaji han sigan geollyeoyo.",
+     "es": "De casa a la empresa se tarda una hora."
+    }
+   ],
+   "fill": [
+    {
+     "zh": "한 시＿ 두 시까지 점심시간이에요.",
+     "answer": "부터",
+     "options": [
+      "부터",
+      "까지",
+      "에서",
+      "에"
+     ],
+     "es": "De una a dos es la hora de comer."
+    },
+    {
+     "zh": "서울＿ 대전까지 기차로 가요.",
+     "answer": "에서",
+     "options": [
+      "에서",
+      "부터",
+      "까지",
+      "에"
+     ],
+     "es": "Voy de Seúl a Daejeon en tren."
+    },
+    {
+     "zh": "몇 시＿ 공부해요?",
+     "answer": "까지",
+     "options": [
+      "까지",
+      "에서",
+      "를",
+      "이"
+     ],
+     "es": "¿Hasta qué hora estudias?"
+    }
+   ],
+   "translate": [
+    {
+     "zh": "월요일부터 금요일까지 일해요.",
+     "py": "woryoilbuteo geumyoilkkaji ilhaeyo.",
+     "es": "Trabajo de lunes a viernes."
+    },
+    {
+     "zh": "여기에서 거기까지 멀어요?",
+     "py": "yeogieseo geogikkaji meoreoyo?",
+     "es": "¿Está lejos de aquí a allí?"
+    }
+   ]
+  },
+  "related": [
+   "eseo",
+   "e-place-time",
+   "numbers-native",
+   "numbers-sino"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "numbers-native",
+  "title": "Números nativos coreanos (하나, 둘, 셋…)",
+  "zh": "하나, 둘, 셋…",
+  "pattern": "Nombre + número nativo + contador (사과 세 개, 두 시, 스무 살)",
+  "level": 1,
+  "summary": "Los números nativos (del 1 al 99) se usan para contar cosas y personas, para las horas y para la edad. Delante de un contador, 1-4 y 20 se acortan.",
+  "explanation": "El coreano tiene **dos sistemas de números**: el nativo (de origen coreano) y el sinocoreano (de origen chino). El nativo solo llega hasta 99.\n\n### Del 1 al 10\n| | Forma suelta | Delante de contador |\n|---|---|---|\n| 1 | 하나 | **한** (한 개) |\n| 2 | 둘 | **두** (두 명) |\n| 3 | 셋 | **세** (세 시) |\n| 4 | 넷 | **네** (네 잔) |\n| 5 | 다섯 | 다섯 |\n| 6 | 여섯 | 여섯 |\n| 7 | 일곱 | 일곱 |\n| 8 | 여덟 | 여덟 |\n| 9 | 아홉 | 아홉 |\n| 10 | 열 | 열 |\n\n### Decenas\n20 **스물** (delante de contador: **스무**: 스무 살), 30 **서른**, 40 **마흔**, 50 **쉰**, 60 예순, 70 일흔, 80 여든, 90 아흔.\nSe combinan como en español: 11 = 열하나 (열한 개), 23 = 스물셋 (스물세 살), 35 = 서른다섯.\n\n### ¿Para qué se usan?\n| Uso | Ejemplo |\n|---|---|\n| **Horas** (시) | 세 시 (*las tres*), 열두 시 |\n| **Edad** (살) | 스물세 살 (*23 años*) |\n| **Contar cosas** (개, 명, 잔, 병, 권, 마리…) | 사과 다섯 개, 친구 두 명 |\n| **Duración en horas** (시간) | 두 시간 (*dos horas*) |\n\n⚠️ En la hora, **las horas** son nativas pero **los minutos** son sinocoreanos: 세 시 삼십 분 (*las 3:30*) = 세 시 반.\n\nEl orden es **nombre + número + contador**: *tres manzanas* = 사과 세 개 (lit. *manzana tres unidades*).",
+  "examples": [
+   {
+    "zh": "사과 세 개 주세요.",
+    "py": "sagwa se gae juseyo.",
+    "es": "Tres manzanas, por favor."
+   },
+   {
+    "zh": "지금 몇 시예요? — 두 시예요.",
+    "py": "jigeum myeot siyeyo? — du siyeyo.",
+    "es": "¿Qué hora es? —Son las dos."
+   },
+   {
+    "zh": "저는 스물세 살이에요.",
+    "py": "jeoneun seumulse sarieyo.",
+    "es": "Tengo veintitrés años."
+   },
+   {
+    "zh": "한국 친구가 다섯 명 있어요.",
+    "py": "hanguk chinguga daseot myeong isseoyo.",
+    "es": "Tengo cinco amigos coreanos."
+   },
+   {
+    "zh": "맥주 두 병 주세요.",
+    "py": "maekju du byeong juseyo.",
+    "es": "Dos botellas de cerveza, por favor."
+   },
+   {
+    "zh": "매일 한 시간 공부해요.",
+    "py": "maeil han sigan gongbuhaeyo.",
+    "es": "Estudio una hora cada día."
+   },
+   {
+    "zh": "동생은 스무 살이에요.",
+    "py": "dongsaengeun seumu sarieyo.",
+    "es": "Mi hermano pequeño tiene veinte años."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "사과 셋 개",
+    "right": "사과 세 개",
+    "why": "Delante de un contador, 하나/둘/셋/넷 se acortan: 한, 두, 세, 네."
+   },
+   {
+    "wrong": "삼 시예요.",
+    "right": "세 시예요.",
+    "why": "Las horas se dicen con números nativos (세 시); los minutos, con sinocoreanos (삼십 분)."
+   },
+   {
+    "wrong": "스물 살",
+    "right": "스무 살",
+    "why": "20 delante de contador es 스무. (21 sí es 스물한 살.)"
+   },
+   {
+    "wrong": "세 사과",
+    "right": "사과 세 개",
+    "why": "El orden natural es nombre + número + contador."
+   }
+  ],
+  "practice": {
+   "order": [
+    {
+     "zh": "커피 두 잔 주세요.",
+     "py": "keopi du jan juseyo.",
+     "es": "Dos cafés, por favor."
+    },
+    {
+     "zh": "학생이 열 명 있어요.",
+     "py": "haksaengi yeol myeong isseoyo.",
+     "es": "Hay diez estudiantes."
+    }
+   ],
+   "fill": [
+    {
+     "zh": "지금 ＿ 시예요.",
+     "answer": "네",
+     "options": [
+      "네",
+      "넷",
+      "사",
+      "넉"
+     ],
+     "es": "Son las cuatro."
+    },
+    {
+     "zh": "저는 ＿ 살이에요.",
+     "answer": "스물두",
+     "options": [
+      "스물두",
+      "스무둘",
+      "이십둘",
+      "스물둘"
+     ],
+     "es": "Tengo veintidós años."
+    },
+    {
+     "zh": "빵 ＿ 개 주세요.",
+     "answer": "한",
+     "options": [
+      "한",
+      "하나",
+      "일",
+      "한나"
+     ],
+     "es": "Un pan, por favor."
+    }
+   ],
+   "translate": [
+    {
+     "zh": "사과 다섯 개 주세요.",
+     "py": "sagwa daseot gae juseyo.",
+     "es": "Cinco manzanas, por favor."
+    },
+    {
+     "zh": "지금 세 시예요.",
+     "py": "jigeum se siyeyo.",
+     "es": "Son las tres."
+    }
+   ]
+  },
+  "related": [
+   "numbers-sino",
+   "counters",
+   "question-words"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "numbers-sino",
+  "title": "Números sinocoreanos (일, 이, 삼…)",
+  "zh": "일, 이, 삼…",
+  "pattern": "Número sinocoreano + unidad (원, 분, 년, 월, 일, 층, 번)",
+  "level": 1,
+  "summary": "Los números sinocoreanos sirven para dinero, minutos, fechas, teléfonos, pisos y números de autobús. Se cuentan por 만 (10 000).",
+  "explanation": "### Del 0 al 10\n| 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |\n|---|---|---|---|---|---|---|---|---|---|---|\n| 영/공 | 일 | 이 | 삼 | 사 | 오 | 육 | 칠 | 팔 | 구 | 십 |\n\n### Cifras mayores\n- 100 **백**, 1000 **천**, 10 000 **만**, 100 000 **십만**, 1 000 000 **백만**.\n- Se construyen multiplicando y sumando: 25 = 이십오, 365 = 삼백육십오, 2026 = 이천이십육.\n- Para 10, 100, 1000 y 10 000 **no se dice 일** delante: 십, 백, 천, **만** (no ~~일만~~).\n\n### ¡Cuidado con el 만!\nEl coreano agrupa de **cuatro en cuatro** cifras, no de tres como el español. 15 000 wones = **만 오천 원** (*diez mil + cinco mil*); 50 000 = **오만 원**; 100 000 = **십만 원**.\n\n### Usos\n| Uso | Ejemplo |\n|---|---|\n| Dinero (원) | 삼천 원 (*3000 wones*) |\n| Minutos (분) | 십 분, 삼십 분 |\n| Fechas (년, 월, 일) | 이천이십육 년 시월 구 일 |\n| Teléfono (0 = **공**) | 공일공… |\n| Pisos (층), autobuses y números (번) | 삼 층, 백일 번 버스 |\n| Meses | 일월, 이월… ⚠️ **유월** (junio) y **시월** (octubre) |\n\nPronunciación: 십육 (16) suena [심뉵] *simnyuk*; 육 tras otro número a menudo suena *nyuk*.",
+  "examples": [
+   {
+    "zh": "이거 얼마예요? — 만 오천 원이에요.",
+    "py": "igeo eolmayeyo? — man ocheon wonieyo.",
+    "es": "¿Cuánto cuesta esto? —Quince mil wones."
+   },
+   {
+    "zh": "지금 세 시 삼십 분이에요.",
+    "py": "jigeum se si samsip bunieyo.",
+    "es": "Son las tres y media."
+   },
+   {
+    "zh": "오늘은 시월 구 일이에요.",
+    "py": "oneureun siwol gu irieyo.",
+    "es": "Hoy es 9 de octubre."
+   },
+   {
+    "zh": "제 생일은 유월 이십 일이에요.",
+    "py": "je saengireun yuwol isip irieyo.",
+    "es": "Mi cumpleaños es el 20 de junio."
+   },
+   {
+    "zh": "교실은 삼 층에 있어요.",
+    "py": "gyosireun sam cheunge isseoyo.",
+    "es": "El aula está en el tercer piso."
+   },
+   {
+    "zh": "백일 번 버스를 타세요.",
+    "py": "baegil beon beoseureul taseyo.",
+    "es": "Coja el autobús 101."
+   },
+   {
+    "zh": "전화번호가 몇 번이에요?",
+    "py": "jeonhwabeonhoga myeot beonieyo?",
+    "es": "¿Cuál es tu número de teléfono?"
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "십오천 원 (15 000)",
+    "right": "만 오천 원",
+    "why": "El coreano agrupa por 만 (10 000): 15 000 es «diez mil cinco mil»."
+   },
+   {
+    "wrong": "일만 원",
+    "right": "만 원",
+    "why": "Delante de 십, 백, 천 y 만 no se dice 일."
+   },
+   {
+    "wrong": "육월, 십월",
+    "right": "유월, 시월",
+    "why": "Junio y octubre pierden la consonante final: 유월, 시월."
+   },
+   {
+    "wrong": "세 분 (3 minutos)",
+    "right": "삼 분",
+    "why": "Los minutos se cuentan con números sinocoreanos. 세 분 significaría «tres personas» (honorífico)."
+   }
+  ],
+  "practice": {
+   "order": [
+    {
+     "zh": "이 책은 만 이천 원이에요.",
+     "py": "i chaegeun man icheon wonieyo.",
+     "es": "Este libro cuesta doce mil wones."
+    },
+    {
+     "zh": "수업은 열 시 십오 분에 시작해요.",
+     "py": "sueobeun yeol si sibo bune sijakaeyo.",
+     "es": "La clase empieza a las diez y cuarto."
+    }
+   ],
+   "fill": [
+    {
+     "zh": "커피는 사천 ＿이에요.",
+     "answer": "원",
+     "options": [
+      "원",
+      "개",
+      "명",
+      "살"
+     ],
+     "es": "El café cuesta cuatro mil wones."
+    },
+    {
+     "zh": "오늘은 ＿ 일 일이에요.",
+     "answer": "시월",
+     "options": [
+      "시월",
+      "십월",
+      "열월",
+      "열 달"
+     ],
+     "es": "Hoy es 1 de octubre."
+    },
+    {
+     "zh": "＿ 원 (20 000)",
+     "answer": "이만",
+     "options": [
+      "이만",
+      "이십천",
+      "두만",
+      "스무천"
+     ],
+     "es": "veinte mil wones"
+    }
+   ],
+   "translate": [
+    {
+     "zh": "이거 얼마예요?",
+     "py": "igeo eolmayeyo?",
+     "es": "¿Cuánto cuesta esto?"
+    },
+    {
+     "zh": "삼천 원이에요.",
+     "py": "samcheon wonieyo.",
+     "es": "Son tres mil wones."
+    }
+   ]
+  },
+  "related": [
+   "numbers-native",
+   "counters",
+   "question-words"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "counters",
+  "title": "Contadores: 개, 명, 잔, 병, 권, 장…",
+  "zh": "개 · 명 · 잔 · 병 · 권 · 장 · 마리 · 번",
+  "pattern": "Nombre + número + contador (커피 두 잔) · ¿Cuántos?: 몇 + contador",
+  "level": 1,
+  "summary": "Para contar en coreano hace falta una palabra-contador según el tipo de cosa (como «dos tazas de», «tres hojas de»). La pregunta es 몇 + contador.",
+  "explanation": "En español a veces usamos palabras de medida (*dos **tazas** de café*, *una **hoja** de papel*). En coreano esto es **obligatorio** para casi todo lo que se cuenta.\n\n### Contadores con números nativos\n| Contador | Para | Ejemplo |\n|---|---|---|\n| **개** | cosas en general | 사과 세 개 |\n| **명** / **분** (honorífico) | personas | 학생 열 명, 손님 두 분 |\n| **잔** | vasos, tazas | 커피 두 잔 |\n| **병** | botellas | 물 한 병 |\n| **권** | libros, cuadernos | 책 세 권 |\n| **장** | hojas, billetes, entradas, fotos | 표 두 장 |\n| **마리** | animales | 고양이 한 마리 |\n| **대** | coches, máquinas | 차 한 대 |\n| **살** | años de edad | 스물세 살 |\n| **시 / 시간** | hora / horas | 세 시, 두 시간 |\n| **번** | veces | 두 번 |\n\n### Contadores con números sinocoreanos\n| Contador | Para | Ejemplo |\n|---|---|---|\n| **원** | wones | 오천 원 |\n| **분** | minutos | 십 분 |\n| **층** | pisos | 삼 층 |\n| **인분** | raciones | 불고기 이 인분 |\n| **번** | número (de autobús, línea) | 이 호선, 백 번 버스 |\n\nFíjate en **번**: con nativos = *veces* (두 번 *dos veces*); con sinocoreanos = *número* (이 번 *el número dos*).\n\n### Preguntar cuántos\n**몇** + contador: 몇 개? 몇 명? 몇 살? 몇 시? En un restaurante te preguntarán **몇 분이세요?** (*¿cuántas personas son?*) y responderás **두 명이에요**.\n\n### Orden\nNombre + (partícula) + número + contador: 책**을** 세 권 샀어요 / 책 세 권을 샀어요.",
+  "examples": [
+   {
+    "zh": "사과 다섯 개 주세요.",
+    "py": "sagwa daseot gae juseyo.",
+    "es": "Cinco manzanas, por favor."
+   },
+   {
+    "zh": "몇 분이세요? — 두 명이에요.",
+    "py": "myeot buniseyo? — du myeongieyo.",
+    "es": "¿Cuántos son? —Somos dos."
+   },
+   {
+    "zh": "아메리카노 한 잔하고 물 한 병 주세요.",
+    "py": "amerikano han janhago mul han byeong juseyo.",
+    "es": "Un americano y una botella de agua, por favor."
+   },
+   {
+    "zh": "어제 책을 세 권 샀어요.",
+    "py": "eoje chaegeul se gwon sasseoyo.",
+    "es": "Ayer compré tres libros."
+   },
+   {
+    "zh": "부산 가는 표 두 장 주세요.",
+    "py": "busan ganeun pyo du jang juseyo.",
+    "es": "Dos billetes para Busan, por favor."
+   },
+   {
+    "zh": "집에 고양이 한 마리가 있어요.",
+    "py": "jibe goyangi han mariga isseoyo.",
+    "es": "En casa tengo un gato."
+   },
+   {
+    "zh": "불고기 이 인분 주세요.",
+    "py": "bulgogi i inbun juseyo.",
+    "es": "Dos raciones de bulgogi, por favor."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "두 커피 주세요.",
+    "right": "커피 두 잔 주세요.",
+    "why": "El número va detrás del nombre y necesita contador (잔 para tazas)."
+   },
+   {
+    "wrong": "학생 세 개",
+    "right": "학생 세 명",
+    "why": "개 es para cosas; las personas se cuentan con 명 (o 분, con respeto)."
+   },
+   {
+    "wrong": "고양이 둘 마리",
+    "right": "고양이 두 마리",
+    "why": "Delante de contador, 둘 pasa a 두."
+   },
+   {
+    "wrong": "책을 삼 권 샀어요.",
+    "right": "책을 세 권 샀어요.",
+    "why": "권 se usa con números nativos."
+   }
+  ],
+  "practice": {
+   "order": [
+    {
+     "zh": "우유 두 병 주세요.",
+     "py": "uyu du byeong juseyo.",
+     "es": "Dos botellas de leche, por favor."
+    },
+    {
+     "zh": "교실에 학생이 몇 명 있어요?",
+     "py": "gyosire haksaengi myeot myeong isseoyo?",
+     "es": "¿Cuántos estudiantes hay en el aula?"
+    }
+   ],
+   "fill": [
+    {
+     "zh": "커피 세 ＿ 주세요.",
+     "answer": "잔",
+     "options": [
+      "잔",
+      "개",
+      "명",
+      "권"
+     ],
+     "es": "Tres cafés, por favor."
+    },
+    {
+     "zh": "영화표 두 ＿ 주세요.",
+     "answer": "장",
+     "options": [
+      "장",
+      "권",
+      "마리",
+      "병"
+     ],
+     "es": "Dos entradas de cine, por favor."
+    },
+    {
+     "zh": "친구가 네 ＿ 와요.",
+     "answer": "명",
+     "options": [
+      "명",
+      "개",
+      "잔",
+      "대"
+     ],
+     "es": "Vienen cuatro amigos."
+    }
+   ],
+   "translate": [
+    {
+     "zh": "물 한 병 주세요.",
+     "py": "mul han byeong juseyo.",
+     "es": "Una botella de agua, por favor."
+    },
+    {
+     "zh": "몇 개 있어요?",
+     "py": "myeot gae isseoyo?",
+     "es": "¿Cuántos hay?"
+    }
+   ]
+  },
+  "related": [
+   "numbers-native",
+   "numbers-sino",
+   "a-juseyo"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "demonstratives",
+  "title": "Este, ese, aquel: 이 / 그 / 저",
+  "zh": "이 · 그 · 저",
+  "pattern": "이/그/저 + nombre · 이것/그것/저것 · 여기/거기/저기",
+  "level": 1,
+  "summary": "이 = este (cerca de mí), 그 = ese (cerca de ti o ya mencionado), 저 = aquel (lejos de ambos). Se combinan con 것 (cosa), 곳/여기 (lugar) y 쪽 (dirección).",
+  "explanation": "El sistema coreano se parece mucho al español *este / ese / aquel*:\n\n| | 이 (cerca de mí) | 그 (cerca de ti / mencionado) | 저 (lejos de los dos) |\n|---|---|---|---|\n| + nombre | 이 책 (*este libro*) | 그 책 (*ese libro*) | 저 책 (*aquel libro*) |\n| cosa | 이것 / **이거** | 그것 / **그거** | 저것 / **저거** |\n| lugar | **여기** (*aquí*) | **거기** (*ahí*) | **저기** (*allí*) |\n| dirección / cortés | 이쪽 | 그쪽 | 저쪽 |\n| persona | 이 사람 / 이분 | 그 사람 / 그분 | 저 사람 / 저분 |\n\n### Contracciones del habla (muy frecuentes)\n| | + 은 (tema) | + 이 (sujeto) | + 을 (objeto) |\n|---|---|---|---|\n| 이것 | 이건 | **이게** | 이걸 |\n| 그것 | 그건 | 그게 | 그걸 |\n| 저것 | 저건 | 저게 | 저걸 |\n\nAsí, **이게 뭐예요?** (*¿qué es esto?*) es la pregunta más útil del principio.\n\n### 그 = lo ya mencionado\nAdemás del espacio, **그** se usa para algo que ya ha salido en la conversación pero no está a la vista: *ese libro (del que hablamos)* = 그 책. Por eso 그때 = *entonces*, 그래서 = *por eso*.\n\n### 이, 그, 저 no van solos\nDelante de un nombre son adjetivos: **이 책**. Para decir *esto* sin nombre se necesita 것/거: ~~이 얼마예요?~~ → **이거** 얼마예요?\n\n⚠️ No confundas **저** (*aquel*) con **저** (*yo*, cortés). El contexto lo aclara: 저 사람 = *aquella persona*; 저는 = *yo*.",
+  "examples": [
+   {
+    "zh": "이거 얼마예요?",
+    "py": "igeo eolmayeyo?",
+    "es": "¿Cuánto cuesta esto?"
+   },
+   {
+    "zh": "이게 뭐예요?",
+    "py": "ige mwoyeyo?",
+    "es": "¿Qué es esto?"
+   },
+   {
+    "zh": "저 사람은 누구예요?",
+    "py": "jeo sarameun nuguyeyo?",
+    "es": "¿Quién es aquella persona?"
+   },
+   {
+    "zh": "그 책 재미있어요?",
+    "py": "geu chaek jaemiisseoyo?",
+    "es": "¿Es interesante ese libro?"
+   },
+   {
+    "zh": "여기가 어디예요?",
+    "py": "yeogiga eodiyeyo?",
+    "es": "¿Dónde estamos? (¿Qué sitio es este?)"
+   },
+   {
+    "zh": "화장실은 저기에 있어요.",
+    "py": "hwajangsireun jeogie isseoyo.",
+    "es": "El baño está allí."
+   },
+   {
+    "zh": "이쪽으로 오세요.",
+    "py": "ijjogeuro oseyo.",
+    "es": "Venga por aquí."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "이 얼마예요?",
+    "right": "이거 얼마예요?",
+    "why": "이 solo funciona delante de un nombre. Para «esto» se necesita 이것/이거."
+   },
+   {
+    "wrong": "책 이",
+    "right": "이 책",
+    "why": "El demostrativo va delante del nombre, como en español."
+   },
+   {
+    "wrong": "(señalando algo que tiene tu interlocutor) 저거 뭐예요?",
+    "right": "그거 뭐예요?",
+    "why": "Lo que está cerca del oyente se señala con 그, no con 저."
+   }
+  ],
+  "practice": {
+   "order": [
+    {
+     "zh": "이 가방은 제 거예요.",
+     "py": "i gabangeun je geoyeyo.",
+     "es": "Esta mochila es mía."
+    },
+    {
+     "zh": "저기가 우리 학교예요.",
+     "py": "jeogiga uri hakgyoyeyo.",
+     "es": "Aquello de allí es mi escuela."
+    }
+   ],
+   "fill": [
+    {
+     "zh": "＿ 뭐예요? (algo en mi mano)",
+     "answer": "이게",
+     "options": [
+      "이게",
+      "이",
+      "저기",
+      "그쪽"
+     ],
+     "es": "¿Qué es esto?"
+    },
+    {
+     "zh": "＿ 사람은 누구예요? (lejos de los dos)",
+     "answer": "저",
+     "options": [
+      "저",
+      "저것",
+      "저기",
+      "여기"
+     ],
+     "es": "¿Quién es aquella persona?"
+    },
+    {
+     "zh": "화장실은 ＿에 있어요. (aquí)",
+     "answer": "여기",
+     "options": [
+      "여기",
+      "이것",
+      "이",
+      "이분"
+     ],
+     "es": "El baño está aquí."
+    }
+   ],
+   "translate": [
+    {
+     "zh": "이게 뭐예요?",
+     "py": "ige mwoyeyo?",
+     "es": "¿Qué es esto?"
+    },
+    {
+     "zh": "저 책은 얼마예요?",
+     "py": "jeo chaegeun eolmayeyo?",
+     "es": "¿Cuánto cuesta aquel libro?"
+    }
+   ]
+  },
+  "related": [
+   "question-words",
+   "ieyo-yeyo",
+   "ui"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "question-words",
+  "title": "Palabras interrogativas",
+  "zh": "누구 · 뭐 · 어디 · 언제 · 왜 · 어떻게 · 얼마 · 몇",
+  "pattern": "La palabra interrogativa va en el lugar de la respuesta; el verbo sigue al final",
+  "level": 1,
+  "summary": "누구 (quién), 뭐/무엇 (qué), 어디 (dónde), 언제 (cuándo), 왜 (por qué), 어떻게 (cómo), 얼마 (cuánto cuesta), 몇 (cuántos), 무슨/어느/어떤 (qué/cuál).",
+  "explanation": "En coreano, la palabra interrogativa **no se mueve al principio** como en español: se queda donde iría la respuesta.\n- 우고 씨는 **학교**에 가요. → 우고 씨는 **어디**에 가요?\n\n### Lista básica\n| Palabra | Significado | Ejemplo |\n|---|---|---|\n| **누구** (sujeto: **누가**) | quién | 누구예요? 누가 왔어요? |\n| **뭐 / 무엇** (sujeto: **뭐가**, objeto: **뭘**) | qué | 뭐 해요? 이름이 뭐예요? |\n| **어디** | dónde / adónde | 어디에 살아요? 어디 가요? |\n| **언제** | cuándo (sin 에) | 언제 와요? |\n| **왜** | por qué | 왜 한국어를 공부해요? |\n| **어떻게** | cómo | 어떻게 가요? |\n| **얼마** | cuánto (precio) | 얼마예요? |\n| **얼마나** | cuánto (tiempo, cantidad) | 얼마나 걸려요? |\n| **몇** + contador | cuántos / qué (número) | 몇 시? 몇 살? 몇 명? |\n\n### «Qué / cuál» delante de un nombre\n| Palabra | Uso | Ejemplo |\n|---|---|---|\n| **무슨** | qué tipo de | 무슨 음식을 좋아해요? |\n| **어느** | cuál (entre varias opciones) | 어느 나라 사람이에요? |\n| **어떤** | qué clase de, cómo es | 어떤 사람이에요? |\n\n### Partículas\nRecuerda que las interrogativas sujeto llevan **이/가**, nunca 은/는: **누가**, **뭐가**, **어디가**.\n\n### Entonación\nCon palabra interrogativa, la frase sube al final igual que en español: 어디 가요? ↗",
+  "examples": [
+   {
+    "zh": "이름이 뭐예요?",
+    "py": "ireumi mwoyeyo?",
+    "es": "¿Cómo te llamas?"
+   },
+   {
+    "zh": "어디에 살아요?",
+    "py": "eodie sarayo?",
+    "es": "¿Dónde vives?"
+   },
+   {
+    "zh": "언제 한국에 와요?",
+    "py": "eonje hanguge wayo?",
+    "es": "¿Cuándo vienes a Corea?"
+   },
+   {
+    "zh": "왜 한국어를 공부해요?",
+    "py": "wae hangugeoreul gongbuhaeyo?",
+    "es": "¿Por qué estudias coreano?"
+   },
+   {
+    "zh": "몇 살이에요?",
+    "py": "myeot sarieyo?",
+    "es": "¿Cuántos años tienes?"
+   },
+   {
+    "zh": "어느 나라 사람이에요? — 스페인 사람이에요.",
+    "py": "eoneu nara saramieyo? — seupein saramieyo.",
+    "es": "¿De qué país eres? —Soy español."
+   },
+   {
+    "zh": "학교에 어떻게 가요?",
+    "py": "hakgyoe eotteoke gayo?",
+    "es": "¿Cómo vas a la escuela?"
+   },
+   {
+    "zh": "무슨 음식을 좋아해요?",
+    "py": "museun eumsigeul joahaeyo?",
+    "es": "¿Qué comida te gusta?"
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "어디 우고 씨는 가요?",
+    "right": "우고 씨는 어디에 가요?",
+    "why": "La interrogativa no se adelanta: va donde iría la respuesta."
+   },
+   {
+    "wrong": "언제에 와요?",
+    "right": "언제 와요?",
+    "why": "언제 no lleva 에, como 오늘 o 내일."
+   },
+   {
+    "wrong": "몇 개예요? (para el precio)",
+    "right": "얼마예요?",
+    "why": "얼마 pregunta el precio; 몇 + contador pregunta un número de cosas."
+   },
+   {
+    "wrong": "누구가 왔어요?",
+    "right": "누가 왔어요?",
+    "why": "누구 + 가 se contrae en 누가."
+   }
+  ],
+  "practice": {
+   "order": [
+    {
+     "zh": "주말에 뭐 해요?",
+     "py": "jumare mwo haeyo?",
+     "es": "¿Qué haces el fin de semana?"
+    },
+    {
+     "zh": "생일이 언제예요?",
+     "py": "saengiri eonjeyeyo?",
+     "es": "¿Cuándo es tu cumpleaños?"
+    }
+   ],
+   "fill": [
+    {
+     "zh": "화장실이 ＿에 있어요?",
+     "answer": "어디",
+     "options": [
+      "어디",
+      "언제",
+      "누구",
+      "왜"
+     ],
+     "es": "¿Dónde está el baño?"
+    },
+    {
+     "zh": "이 가방은 ＿예요?",
+     "answer": "얼마",
+     "options": [
+      "얼마",
+      "몇",
+      "얼마나",
+      "어떻게"
+     ],
+     "es": "¿Cuánto cuesta esta mochila?"
+    },
+    {
+     "zh": "＿ 나라 사람이에요?",
+     "answer": "어느",
+     "options": [
+      "어느",
+      "어디",
+      "무엇",
+      "누구"
+     ],
+     "es": "¿De qué país eres?"
+    }
+   ],
+   "translate": [
+    {
+     "zh": "이름이 뭐예요?",
+     "py": "ireumi mwoyeyo?",
+     "es": "¿Cómo te llamas?"
+    },
+    {
+     "zh": "어디에 가요?",
+     "py": "eodie gayo?",
+     "es": "¿Adónde vas?"
+    }
+   ]
+  },
+  "related": [
+   "eun-neun-vs-i-ga",
+   "demonstratives",
+   "counters"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "honorific-si",
+  "title": "El honorífico -(으)시-",
+  "zh": "-(으)시-",
+  "pattern": "Raíz + (으)시 + terminación: 가세요, 가셨어요, 가십니다 · Sujeto + 께서",
+  "level": 1,
+  "summary": "-(으)시- se añade al verbo para mostrar respeto hacia la persona que realiza la acción (profesores, mayores, clientes). Nunca se usa para uno mismo.",
+  "explanation": "El coreano distingue entre **a quién hablas** (niveles de habla) y **de quién hablas**. **-(으)시-** muestra respeto hacia el **sujeto** de la frase: la profesora Kim, tus padres, un cliente… Se parece un poco a usar *usted*, pero está dentro del verbo.\n\n### Formación\n| Raíz | Infijo | Presente | Pasado | Formal |\n|---|---|---|---|---|\n| vocal: 가다 | -시- | 가**세요** | 가**셨어요** | 가**십니다** |\n| consonante: 읽다 | -으시- | 읽**으세요** | 읽**으셨어요** | 읽**으십니다** |\n| ㄹ: 살다 | ㄹ cae + -시- | 사**세요** | 사**셨어요** | 사**십니다** |\n| 하다 | -시- | 하**세요** | 하**셨어요** | 하**십니다** |\n\n(En presente, 시 + 어요 se contrae en **세요**; en pasado, 시 + 었 = **셨**.)\n\n### Verbos honoríficos especiales\n| Normal | Honorífico |\n|---|---|\n| 먹다 / 마시다 (comer/beber) | **드시다** (드세요) |\n| 자다 (dormir) | **주무시다** (주무세요) |\n| 있다 (estar) | **계시다** (계세요) |\n| 있다 (tener) | **있으시다** |\n| 말하다 (decir) | **말씀하시다** |\n\n### Nombres y partículas honoríficas\n- 이/가 → **께서**, 은/는 → **께서는**, 에게 → **께**: 선생님**께서** 오셨어요.\n- 이름 → **성함**, 나이 → **연세**, 집 → **댁**, 사람 → **분**.\n\n### Reglas de oro\n1. **Nunca** para ti mismo: ~~저는 학생이세요~~ → 저는 학생이에요.\n2. Úsalo al hablar **de** o **con** personas mayores o de más estatus: 선생님, 주말에 뭐 하**셨어요**?\n3. Al preguntar a un desconocido sobre él mismo, también: 어디에 사**세요**? (*¿dónde vive usted?*)",
+  "examples": [
+   {
+    "zh": "김 선생님은 지금 교실에 계세요.",
+    "py": "gim seonsaengnimeun jigeum gyosire gyeseyo.",
+    "es": "La profesora Kim está ahora en el aula."
+   },
+   {
+    "zh": "선생님, 주말에 뭐 하셨어요?",
+    "py": "seonsaengnim, jumare mwo hasyeosseoyo?",
+    "es": "Profesora, ¿qué hizo el fin de semana?"
+   },
+   {
+    "zh": "아버지는 서울에 사세요.",
+    "py": "abeojineun seoure saseyo.",
+    "es": "Mi padre vive en Seúl."
+   },
+   {
+    "zh": "할머니께서 주무세요.",
+    "py": "halmeonikkeseo jumuseyo.",
+    "es": "La abuela está durmiendo."
+   },
+   {
+    "zh": "어머니는 매일 신문을 읽으세요.",
+    "py": "eomeonineun maeil sinmuneul ilgeuseyo.",
+    "es": "Mi madre lee el periódico todos los días."
+   },
+   {
+    "zh": "성함이 어떻게 되세요?",
+    "py": "seonghami eotteoke doeseyo?",
+    "es": "¿Cómo se llama usted?"
+   },
+   {
+    "zh": "선생님께서 내일 부산에 가십니다.",
+    "py": "seonsaengnimkkeseo naeil busane gasimnida.",
+    "es": "La profesora va mañana a Busan."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "저는 스페인에서 오셨어요.",
+    "right": "저는 스페인에서 왔어요.",
+    "why": "El honorífico nunca se aplica a uno mismo."
+   },
+   {
+    "wrong": "할머니가 자세요.",
+    "right": "할머니께서 주무세요.",
+    "why": "자다 tiene un verbo honorífico propio: 주무시다. (께서 también eleva el respeto.)"
+   },
+   {
+    "wrong": "선생님은 지금 사무실에 있으세요.",
+    "right": "선생님은 지금 사무실에 계세요.",
+    "why": "Para «estar» (presencia de una persona) el honorífico es 계시다; 있으시다 es para «tener»."
+   },
+   {
+    "wrong": "아버지가 살으세요.",
+    "right": "아버지가 사세요.",
+    "why": "En las raíces en ㄹ, la ㄹ cae ante ㅅ y no se añade 으."
+   }
+  ],
+  "practice": {
+   "order": [
+    {
+     "zh": "선생님께서 책을 읽으세요.",
+     "py": "seonsaengnimkkeseo chaegeul ilgeuseyo.",
+     "es": "La profesora lee un libro."
+    },
+    {
+     "zh": "할아버지는 집에 계세요.",
+     "py": "harabeojineun jibe gyeseyo.",
+     "es": "El abuelo está en casa."
+    }
+   ],
+   "fill": [
+    {
+     "zh": "선생님, 점심 ＿?",
+     "answer": "드셨어요",
+     "options": [
+      "드셨어요",
+      "먹으셨어요요",
+      "먹었어요",
+      "드세요요"
+     ],
+     "es": "Profesora, ¿ha comido ya?"
+    },
+    {
+     "zh": "할머니께서 방에서 ＿.",
+     "answer": "주무세요",
+     "options": [
+      "주무세요",
+      "자세요",
+      "자요",
+      "주무셨요"
+     ],
+     "es": "La abuela duerme en su habitación."
+    },
+    {
+     "zh": "어머니는 회사에 다니＿.",
+     "answer": "세요",
+     "options": [
+      "세요",
+      "으세요",
+      "셔요요",
+      "어요"
+     ],
+     "es": "Mi madre trabaja en una empresa."
+    }
+   ],
+   "translate": [
+    {
+     "zh": "선생님은 어디에 사세요?",
+     "py": "seonsaengnimeun eodie saseyo?",
+     "es": "¿Dónde vive usted, profesora?"
+    },
+    {
+     "zh": "아버지는 회사원이세요.",
+     "py": "abeojineun hoesawoniseyo.",
+     "es": "Mi padre es oficinista."
+    }
+   ]
+  },
+  "related": [
+   "speech-levels",
+   "euseyo",
+   "seumnida",
+   "go-itda"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "speech-levels",
+  "title": "Niveles de habla: 합니다체, 해요체 y 반말",
+  "zh": "합니다체 · 해요체 · 반말",
+  "pattern": "Formal -ㅂ니다/습니다 · Cortés -아요/어요 · Informal -아/어 (반말)",
+  "level": 1,
+  "summary": "Cada frase coreana termina en un nivel de habla según a quién te diriges: formal (합니다체), cortés (해요체) o informal (반말). Para empezar, usa siempre 해요체.",
+  "explanation": "En español elegimos entre *tú* y *usted*. En coreano, el respeto hacia el **oyente** se marca en la **terminación del verbo**. Para TOPIK I hay que conocer tres niveles:\n\n| Nivel | Cuándo | 가다 | 먹다 | 하다 | 이다 (학생) |\n|---|---|---|---|---|---|\n| **합니다체** (formal) | discursos, presentaciones, noticias, metro, atención al cliente, ejército | 갑니다 | 먹습니다 | 합니다 | 학생입니다 |\n| **해요체** (cortés) | la mayoría de conversaciones: desconocidos, profesores, compañeros | 가요 | 먹어요 | 해요 | 학생이에요 |\n| **반말** (informal) | amigos íntimos de tu edad, personas más jóvenes, niños | 가 | 먹어 | 해 | 학생이야 |\n\n### Cómo se forma el 반말\nEs **해요체 sin 요**: 가요 → **가**, 먹어요 → **먹어**, 했어요 → **했어**, 갈 거예요 → **갈 거야**.\nExcepción: la cópula: 이에요/예요 → **이야 / 야** (학생이야, 의사야); 아니에요 → **아니야**.\nPara proponer: **-자** (같이 가자 = *vamos juntos*).\n\n### Pronombres según el nivel\n| Cortés / formal | Informal |\n|---|---|\n| 저 (yo), 제가, 제 | 나, 내가, 내 |\n| 저희 (nosotros) | 우리 |\n| 네 (sí) / 아니요 (no) | 응 / 아니 |\n\n### Cortesía e honorífico son cosas distintas\nEl nivel de habla depende de **a quién hablas**; el honorífico **-(으)시-** depende de **de quién hablas**. Se pueden combinar: a un amigo puedes decirle en 반말 que *la profesora ha venido*: 선생님 오**셨어**.\n\n### Consejo práctico\nNo uses 반말 hasta que el otro te lo proponga (**말 놓으세요** / **편하게 말해** = *háblame de tú*). Usar 반말 sin permiso puede ser muy ofensivo. En la duda, **해요체**.",
+  "examples": [
+   {
+    "zh": "저는 우고입니다. / 저는 우고예요. / 나는 우고야.",
+    "py": "jeoneun ugoimnida. / jeoneun ugoyeyo. / naneun ugoya.",
+    "es": "Soy Hugo. (formal / cortés / informal)"
+   },
+   {
+    "zh": "감사합니다. / 고마워요. / 고마워.",
+    "py": "gamsahamnida. / gomawoyo. / gomawo.",
+    "es": "Gracias. (formal / cortés / informal)"
+   },
+   {
+    "zh": "민수야, 어디 가?",
+    "py": "minsuya, eodi ga?",
+    "es": "Minsu, ¿adónde vas? (informal)"
+   },
+   {
+    "zh": "밥 먹었어?",
+    "py": "bap meogeosseo?",
+    "es": "¿Has comido? (informal)"
+   },
+   {
+    "zh": "지민아, 같이 가자!",
+    "py": "jimina, gachi gaja!",
+    "es": "¡Jimin, vamos juntos! (informal)"
+   },
+   {
+    "zh": "선생님, 질문이 있어요.",
+    "py": "seonsaengnim, jilmuni isseoyo.",
+    "es": "Profesora, tengo una pregunta. (cortés)"
+   },
+   {
+    "zh": "이번 역은 강남역입니다.",
+    "py": "ibeon yeogeun gangnamyeogimnida.",
+    "es": "La próxima estación es Gangnam. (formal)"
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "(a la profesora) 선생님, 이거 뭐야?",
+    "right": "선생님, 이게 뭐예요?",
+    "why": "Con un profesor nunca se usa 반말; lo mínimo es 해요체."
+   },
+   {
+    "wrong": "나는 학생이에요.",
+    "right": "저는 학생이에요. (o, entre amigos: 나는 학생이야.)",
+    "why": "No mezcles niveles: 나 es informal y choca con la terminación cortés -에요."
+   },
+   {
+    "wrong": "학생이어. (반말)",
+    "right": "학생이야.",
+    "why": "La cópula en 반말 es 이야/야, no simplemente quitar 요."
+   },
+   {
+    "wrong": "(a un amigo) 같이 가요자!",
+    "right": "같이 가자!",
+    "why": "La propuesta informal es -자, que sustituye a toda la terminación."
+   }
+  ],
+  "practice": {
+   "order": [
+    {
+     "zh": "저는 스페인에서 왔습니다.",
+     "py": "jeoneun seupeineseo watseumnida.",
+     "es": "Vengo de España. (formal)"
+    },
+    {
+     "zh": "우리 내일 만나자.",
+     "py": "uri naeil mannaja.",
+     "es": "Quedamos mañana. (informal)"
+    }
+   ],
+   "fill": [
+    {
+     "zh": "(a un amigo) 나는 대학생＿.",
+     "answer": "이야",
+     "options": [
+      "이야",
+      "이에요",
+      "입니다",
+      "야"
+     ],
+     "es": "Soy universitario. (informal)"
+    },
+    {
+     "zh": "(formal) 처음 뵙겠습니다. 저는 우고＿.",
+     "answer": "입니다",
+     "options": [
+      "입니다",
+      "야",
+      "예요요",
+      "이야"
+     ],
+     "es": "Encantado. Soy Hugo. (formal)"
+    },
+    {
+     "zh": "(a un amigo) 지금 뭐 ＿?",
+     "answer": "해",
+     "options": [
+      "해",
+      "해요",
+      "합니다",
+      "하세요"
+     ],
+     "es": "¿Qué haces ahora? (informal)"
+    }
+   ],
+   "translate": [
+    {
+     "zh": "고마워요.",
+     "py": "gomawoyo.",
+     "es": "Gracias. (cortés)"
+    },
+    {
+     "zh": "밥 먹었어?",
+     "py": "bap meogeosseo?",
+     "es": "¿Has comido? (informal)"
+    }
+   ]
+  },
+  "related": [
+   "ayo-eoyo",
+   "seumnida",
+   "honorific-si",
+   "ieyo-yeyo"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "irregulars",
+  "title": "Verbos irregulares: ㅂ, ㄷ, ㅅ, 르, ㅎ, 으 y ㄹ",
+  "zh": "불규칙 동사 (ㅂ·ㄷ·ㅅ·르·ㅎ·으·ㄹ)",
+  "pattern": "La raíz cambia delante de vocal (-아요/어요, -(으)세요, -(으)니까…)",
+  "level": 1,
+  "summary": "Algunos verbos cambian la última consonante o vocal de la raíz cuando la terminación empieza por vocal: 덥다 → 더워요, 듣다 → 들어요, 모르다 → 몰라요, 바쁘다 → 바빠요.",
+  "explanation": "Como en español (*tener → tengo*), el coreano tiene verbos irregulares, pero son muy **sistemáticos**: el cambio depende de la última letra de la raíz y solo ocurre ante terminaciones que empiezan por **vocal** (-아요/어요, -았/었-, -(으)세요, -(으)니까, -(으)면, -(으)ㄹ 거예요…). Ante consonante (-고, -지만, -습니다) la raíz no cambia.\n\n### Tabla general\n| Tipo | Cambio | Ejemplos (→ -아요/어요) | Regulares parecidos |\n|---|---|---|---|\n| **ㅂ** | ㅂ → 우 (워) | 덥다 → **더워요**, 춥다 → **추워요**, 맵다 → **매워요**, 어렵다 → **어려워요**, 쉽다 → **쉬워요**, 고맙다 → **고마워요**; ⚠️ 돕다 → **도와요** | 입다 → 입어요, 좁다 → 좁아요 |\n| **ㄷ** | ㄷ → ㄹ | 듣다 → **들어요**, 걷다 → **걸어요**, 묻다 (preguntar) → **물어요** | 받다 → 받아요, 닫다 → 닫아요 |\n| **ㅅ** | ㅅ desaparece (sin contracción) | 낫다 → **나아요**, 짓다 → **지어요** | 씻다 → 씻어요, 웃다 → 웃어요 |\n| **르** | 르 → ㄹ라 / ㄹ러 | 모르다 → **몰라요**, 빠르다 → **빨라요**, 다르다 → **달라요**, 부르다 → **불러요** | — |\n| **ㅎ** (adjetivos) | ㅎ desaparece, vocal → ㅐ | 그렇다 → **그래요**, 어떻다 → **어때요**, 빨갛다 → **빨개요**, 하얗다 → **하얘요** | 좋다 → 좋아요, 놓다 → 놓아요 |\n| **으** | 으 desaparece | 바쁘다 → **바빠요**, 아프다 → **아파요**, 예쁘다 → **예뻐요**, 크다 → **커요**, 쓰다 → **써요** | — |\n| **ㄹ** | ㄹ cae ante ㄴ, ㅂ, ㅅ | 살다 → 사**세요**, **삽니다**, 사**니까**; 알다 → 아**세요**, **압니다**; 만들다 → 만드**세요** | — |\n\n### Cómo decide el verbo -으\nEn los verbos en **으**, al desaparecer 으 se mira la vocal **anterior**: 바쁘다 (바 = ㅏ) → 바**빠**요; 예쁘다 (예 = ㅖ) → 예**뻐**요. Si solo hay una sílaba (크다, 쓰다), se usa 어: 커요, 써요.\n\n### Con otras terminaciones\n| Infinitivo | -아요/어요 | Pasado | -(으)세요 / -(으)니까 | -고 |\n|---|---|---|---|---|\n| 춥다 | 추워요 | 추웠어요 | 추우니까 | 춥고 |\n| 듣다 | 들어요 | 들었어요 | 들으세요 | 듣고 |\n| 낫다 | 나아요 | 나았어요 | 나으세요 | 낫고 |\n| 모르다 | 몰라요 | 몰랐어요 | 모르세요 | 모르고 |\n| 어떻다 | 어때요 | 어땠어요 | 어떠니까 | 어떻고 |\n| 바쁘다 | 바빠요 | 바빴어요 | 바쁘니까 | 바쁘고 |\n| 살다 | 살아요 | 살았어요 | 사세요 / 사니까 | 살고 |\n\nTruco: aprende cada verbo nuevo con su forma -아요/어요 (듣다 – 들어요), igual que en español aprendemos *tener – tengo*.",
+  "examples": [
+   {
+    "zh": "오늘은 날씨가 추워요.",
+    "py": "oneureun nalssiga chuwoyo.",
+    "es": "Hoy hace frío."
+   },
+   {
+    "zh": "한국 음식은 좀 매워요.",
+    "py": "hanguk eumsigeun jom maewoyo.",
+    "es": "La comida coreana es algo picante."
+   },
+   {
+    "zh": "저는 매일 음악을 들어요.",
+    "py": "jeoneun maeil eumageul deureoyo.",
+    "es": "Escucho música todos los días."
+   },
+   {
+    "zh": "감기가 다 나았어요.",
+    "py": "gamgiga da naasseoyo.",
+    "es": "Ya me he curado del resfriado."
+   },
+   {
+    "zh": "저는 그 사람을 몰라요.",
+    "py": "jeoneun geu sarameul mollayo.",
+    "es": "No conozco a esa persona."
+   },
+   {
+    "zh": "이 옷 어때요?",
+    "py": "i ot eottaeyo?",
+    "es": "¿Qué tal esta ropa?"
+   },
+   {
+    "zh": "요즘 너무 바빠요.",
+    "py": "yojeum neomu bappayo.",
+    "es": "Últimamente estoy muy ocupado."
+   },
+   {
+    "zh": "어디에 사세요?",
+    "py": "eodie saseyo?",
+    "es": "¿Dónde vive usted?"
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "오늘은 덥어요.",
+    "right": "오늘은 더워요.",
+    "why": "덥다 es irregular en ㅂ: ㅂ + 어요 → 워요."
+   },
+   {
+    "wrong": "음악을 듣어요.",
+    "right": "음악을 들어요.",
+    "why": "듣다 es irregular en ㄷ: ante vocal, ㄷ → ㄹ."
+   },
+   {
+    "wrong": "저는 몰르요 / 모르어요.",
+    "right": "저는 몰라요.",
+    "why": "Los verbos en 르 duplican la ㄹ: 모르다 → 몰라요."
+   },
+   {
+    "wrong": "저는 바쁘어요.",
+    "right": "저는 바빠요.",
+    "why": "En los verbos en 으, la 으 desaparece y se mira la vocal anterior (ㅏ → 아요)."
+   },
+   {
+    "wrong": "어디에 살으세요?",
+    "right": "어디에 사세요?",
+    "why": "En los verbos en ㄹ, la ㄹ cae delante de ㅅ."
+   }
+  ],
+  "practice": {
+   "order": [
+    {
+     "zh": "한국어는 어렵지만 재미있어요.",
+     "py": "hangugeoneun eoryeopjiman jaemiisseoyo.",
+     "es": "El coreano es difícil, pero divertido."
+    },
+    {
+     "zh": "공원에서 걸어요.",
+     "py": "gongwoneseo georeoyo.",
+     "es": "Camino por el parque."
+    }
+   ],
+   "fill": [
+    {
+     "zh": "날씨가 ＿. (덥다)",
+     "answer": "더워요",
+     "options": [
+      "더워요",
+      "덥어요",
+      "더와요",
+      "덥아요"
+     ],
+     "es": "Hace calor."
+    },
+    {
+     "zh": "선생님 이름을 ＿. (모르다)",
+     "answer": "몰라요",
+     "options": [
+      "몰라요",
+      "모르어요",
+      "모라요",
+      "몰르어요"
+     ],
+     "es": "No sé el nombre de la profesora."
+    },
+    {
+     "zh": "머리가 ＿. (아프다)",
+     "answer": "아파요",
+     "options": [
+      "아파요",
+      "아프어요",
+      "아퍼요",
+      "아프요"
+     ],
+     "es": "Me duele la cabeza."
+    },
+    {
+     "zh": "라디오를 ＿. (듣다)",
+     "answer": "들어요",
+     "options": [
+      "들어요",
+      "듣어요",
+      "드어요",
+      "들아요"
+     ],
+     "es": "Escucho la radio."
+    }
+   ],
+   "translate": [
+    {
+     "zh": "오늘은 추워요.",
+     "py": "oneureun chuwoyo.",
+     "es": "Hoy hace frío."
+    },
+    {
+     "zh": "이 가방 어때요?",
+     "py": "i gabang eottaeyo?",
+     "es": "¿Qué tal esta mochila?"
+    }
+   ]
+  },
+  "related": [
+   "ayo-eoyo",
+   "past-ass-eoss",
+   "euseyo",
+   "euni-kka"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "myeon",
+  "title": "Condicional -(으)면 («si…»)",
+  "zh": "-(으)면",
+  "pattern": "Raíz en vocal o ㄹ + 면 · Raíz en consonante + 으면 · Nombre + (이)면",
+  "level": 1,
+  "summary": "-(으)면 equivale a «si» o «cuando» condicional: «si tengo tiempo, voy», «cuando llegue a Corea, quiero comer…».",
+  "explanation": "En español *si* va al principio de la frase; en coreano, la condición se marca al **final de la primera parte**, con **-(으)면** pegado al verbo.\n\n### Formación\n| Raíz | Forma | Ejemplos |\n|---|---|---|\n| vocal | **-면** | 가다 → 가**면**, 오다 → 오**면**, 피곤하다 → 피곤하**면** |\n| **ㄹ** | **-면** (la ㄹ se mantiene) | 멀다 → 멀**면**, 살다 → 살**면** |\n| otra consonante | **-으면** | 있다 → 있**으면**, 먹다 → 먹**으면**, 좋다 → 좋**으면** |\n| nombre | **(이)면** | 학생**이면**, 주말**이면** |\n\nIrregulares: 춥다 → **추우면**, 듣다 → **들으면**, 모르다 → **모르면** (르 solo cambia ante 아/어).\n\n### Usos\n1. **Condición**: 시간이 있**으면** 같이 가요. *Si tienes tiempo, vamos juntos.*\n2. **Cuando (en el futuro / siempre que)**: 한국에 가**면** 김치찌개를 먹고 싶어요. *Cuando vaya a Corea, quiero comer kimchi-jjigae.* 봄이 되**면** 꽃이 피어요.\n\n### Diferencias con el español\n- En español, *cuando* + futuro exige subjuntivo (*cuando vaya*); en coreano basta con -(으)면, sin cambios.\n- El tiempo y el estilo se marcan solo en el verbo final.\n- Si la condición es imposible o pasada (*si hubiera…*), se usan otras formas de nivel superior.\n\n### Expresiones útiles\n- 모르**면** 물어보세요. *Si no lo sabes, pregunta.*\n- 괜찮**으면**… *Si te parece bien…*",
+  "examples": [
+   {
+    "zh": "시간이 있으면 같이 가요.",
+    "py": "sigani isseumyeon gachi gayo.",
+    "es": "Si tienes tiempo, vamos juntos."
+   },
+   {
+    "zh": "내일 비가 오면 집에 있을 거예요.",
+    "py": "naeil biga omyeon jibe isseul geoyeyo.",
+    "es": "Si mañana llueve, me quedaré en casa."
+   },
+   {
+    "zh": "한국에 가면 김치찌개를 먹고 싶어요.",
+    "py": "hanguge gamyeon gimchijjigaereul meokgo sipeoyo.",
+    "es": "Cuando vaya a Corea, quiero comer kimchi-jjigae."
+   },
+   {
+    "zh": "모르면 선생님께 물어보세요.",
+    "py": "moreumyeon seonsaengnimkke mureoboseyo.",
+    "es": "Si no lo sabes, pregúntale a la profesora."
+   },
+   {
+    "zh": "피곤하면 좀 쉬세요.",
+    "py": "pigonhamyeon jom swiseyo.",
+    "es": "Si estás cansado, descansa un poco."
+   },
+   {
+    "zh": "학교가 멀면 지하철로 가세요.",
+    "py": "hakgyoga meolmyeon jihacheollo gaseyo.",
+    "es": "Si la escuela está lejos, ve en metro."
+   },
+   {
+    "zh": "날씨가 추우면 따뜻한 차를 마셔요.",
+    "py": "nalssiga chuumyeon ttatteutan chareul masyeoyo.",
+    "es": "Cuando hace frío, tomo té caliente."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "만약 시간이 있어요 같이 가요.",
+    "right": "(만약) 시간이 있으면 같이 가요.",
+    "why": "El «si» real es la terminación -(으)면. 만약 es opcional y solo refuerza."
+   },
+   {
+    "wrong": "멀으면",
+    "right": "멀면",
+    "why": "Las raíces en ㄹ no toman 으: 멀다 → 멀면."
+   },
+   {
+    "wrong": "있면",
+    "right": "있으면",
+    "why": "Tras consonante (salvo ㄹ) hace falta 으: 있으면."
+   },
+   {
+    "wrong": "한국에 갈 거면 김치를 먹을 거예요. (cuando vaya)",
+    "right": "한국에 가면 김치를 먹을 거예요.",
+    "why": "No se pone futuro en la condición: el tiempo se marca solo en el verbo final, aunque en español usemos subjuntivo."
+   }
+  ],
+  "practice": {
+   "order": [
+    {
+     "zh": "배가 고프면 이거 드세요.",
+     "py": "baega gopeumyeon igeo deuseyo.",
+     "es": "Si tienes hambre, come esto."
+    },
+    {
+     "zh": "주말에 날씨가 좋으면 부산에 갈 거예요.",
+     "py": "jumare nalssiga joeumyeon busane gal geoyeyo.",
+     "es": "Si hace buen tiempo el fin de semana, iré a Busan."
+    }
+   ],
+   "fill": [
+    {
+     "zh": "돈이 있＿ 차를 사고 싶어요.",
+     "answer": "으면",
+     "options": [
+      "으면",
+      "면",
+      "어서",
+      "지만"
+     ],
+     "es": "Si tuviera dinero, querría comprar un coche."
+    },
+    {
+     "zh": "비가 오＿ 우산을 쓰세요.",
+     "answer": "면",
+     "options": [
+      "면",
+      "으면",
+      "아서",
+      "고"
+     ],
+     "es": "Si llueve, usa el paraguas."
+    },
+    {
+     "zh": "학생＿ 할인돼요.",
+     "answer": "이면",
+     "options": [
+      "이면",
+      "면",
+      "으면",
+      "이라서요"
+     ],
+     "es": "Si eres estudiante, tienes descuento."
+    }
+   ],
+   "translate": [
+    {
+     "zh": "시간이 있으면 전화하세요.",
+     "py": "sigani isseumyeon jeonhwahaseyo.",
+     "es": "Si tienes tiempo, llámame."
+    },
+    {
+     "zh": "피곤하면 쉬세요.",
+     "py": "pigonhamyeon swiseyo.",
+     "es": "Si estás cansado, descansa."
+    }
+   ]
+  },
+  "related": [
+   "euni-kka",
+   "a-seo",
+   "future-eul-geoyeyo",
+   "irregulars"
+  ],
+  "reviewed": false
+ }
+]

@@ -1,10 +1,11 @@
 "use client";
 import { useEffect, useState } from "react";
 import * as Icons from "lucide-react";
-import { db, slugify } from "@/lib/db";
+import { db, categoryId } from "@/lib/db";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, Input, Label } from "@/components/ui/primitives";
 import { toast } from "@/components/ui/toast";
+import { getActiveLang } from "@/lib/languages/registry";
 import { cn } from "@/lib/utils";
 
 const ICONS = ["Tag", "NotebookPen", "Utensils", "Coffee", "Bus", "TrainFront", "Plane", "Home", "Hospital", "ShoppingBag", "Phone", "MessageCircle", "GraduationCap", "Briefcase", "Users", "Heart", "Music", "Gamepad2", "MapPin", "CalendarDays", "CloudSun", "Hash", "Sparkles", "Zap", "Star", "Book", "Smartphone", "Wallet", "Bed", "Dog"];
@@ -35,14 +36,14 @@ export function CategoryDialog({ open, onOpenChange, editId }: { open: boolean; 
     if (editId) {
       await db.transaction("rw", db.categories, db.words, async () => {
         await db.categories.update(editId, { name: n, color, icon });
-        if (originalName && originalName !== n) await db.words.where("category").equals(originalName).modify({ category: n, updatedAt: Date.now() });
+        if (originalName && originalName !== n) await db.words.where("[lang+category]").equals([getActiveLang(), originalName]).modify({ category: n, updatedAt: Date.now() });
       });
       toast.success("Categoría actualizada");
     } else {
-      const id = slugify(n);
+      const id = categoryId(getActiveLang(), n);
       if (await db.categories.get(id)) return toast.error("Ya existe una categoría con ese nombre.");
-      const max = (await db.categories.orderBy("order").last())?.order ?? 0;
-      await db.categories.put({ id, name: n, color, icon, order: max + 1, builtin: false });
+      const max = (await db.categories.where("lang").equals(getActiveLang()).sortBy("order").then((a) => a[a.length - 1]))?.order ?? 0;
+      await db.categories.put({ id, lang: getActiveLang(), name: n, color, icon, order: max + 1, builtin: false });
       toast.success("Categoría creada");
     }
     onOpenChange(false);
@@ -50,10 +51,10 @@ export function CategoryDialog({ open, onOpenChange, editId }: { open: boolean; 
 
   const remove = async () => {
     if (!editId) return;
-    const count = await db.words.where("category").equals(originalName).count();
+    const count = await db.words.where("[lang+category]").equals([getActiveLang(), originalName]).count();
     if (!window.confirm(`¿Eliminar la categoría «${originalName}»? ${count ? `Sus ${count} palabras pasarán a «Clase».` : ""}`)) return;
     await db.transaction("rw", db.categories, db.words, async () => {
-      await db.words.where("category").equals(originalName).modify({ category: "Clase", updatedAt: Date.now() });
+      await db.words.where("[lang+category]").equals([getActiveLang(), originalName]).modify({ category: "Clase", updatedAt: Date.now() });
       await db.categories.delete(editId);
     });
     onOpenChange(false);

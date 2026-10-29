@@ -1,0 +1,175 @@
+{
+  "id": "ja-u11",
+  "order": 12,
+  "title": "Salud",
+  "zh": "健康",
+  "description": "Decir qué te duele, ir al médico, entender cuándo tomar las medicinas en la farmacia y preguntar qué puedes y qué no puedes hacer.",
+  "icon": "HeartPulse",
+  "level": 1,
+  "lang": "ja",
+  "category": "Salud",
+  "checkpoint": { "exercises": 15 },
+  "lessons": [
+    {
+      "id": "ja-u11-l1",
+      "title": "Me duele la cabeza",
+      "zh": "頭が痛いです",
+      "goal": "Decir qué te duele con la estructura 〜は〜が痛い (tema は + sujeto が).",
+      "minutes": 13,
+      "vocab": [
+        { "hanzi": "体", "pinyin": "からだ", "es": "cuerpo" },
+        { "hanzi": "頭", "pinyin": "あたま", "es": "cabeza" },
+        { "hanzi": "目", "pinyin": "め", "es": "ojo" },
+        { "hanzi": "耳", "pinyin": "みみ", "es": "oreja; oído" },
+        { "hanzi": "口", "pinyin": "くち", "es": "boca" },
+        { "hanzi": "お腹", "pinyin": "おなか", "es": "barriga; estómago" },
+        { "hanzi": "歯", "pinyin": "は", "es": "diente" },
+        { "hanzi": "足", "pinyin": "あし", "es": "pie; pierna" },
+        { "hanzi": "痛い", "pinyin": "いたい", "es": "doloroso; que duele", "note": "頭が痛い = me duele la cabeza." }
+      ],
+      "steps": [
+        { "type": "vocab" },
+        {
+          "type": "dialogue",
+          "title": "¿Qué te pasa?",
+          "lines": [
+            { "speaker": "さくら", "zh": "ウーゴさん、元気がないですね。どうしましたか。", "py": "ウーゴ さん、げんき が ない です ね。どう しました か。", "es": "Hugo, te veo sin fuerzas. ¿Qué te pasa?" },
+            { "speaker": "ウーゴ", "zh": "頭が痛いです。それに、お腹も少し痛いです。", "py": "あたま が いたい です。それに、おなか も すこし いたい です。", "es": "Me duele la cabeza. Y además me duele un poco la barriga." },
+            { "speaker": "さくら", "zh": "大丈夫ですか。足はどうですか。たくさん歩きましたね。", "py": "だいじょうぶ です か。あし は どう です か。たくさん あるきました ね。", "es": "¿Estás bien? ¿Y los pies? Has andado mucho." },
+            { "speaker": "ウーゴ", "zh": "足は痛くないです。でも、目も少し痛いです。", "py": "あし は いたく ない です。でも、め も すこし いたい です。", "es": "Los pies no me duelen. Pero también me duelen un poco los ojos." },
+            { "speaker": "さくら", "zh": "駅の前に病院があります。一緒に行きましょう。", "py": "えき の まえ に びょういん が あります。いっしょに いきましょう。", "es": "Delante de la estación hay un hospital. Vamos juntos." },
+            { "speaker": "ウーゴ", "zh": "ありがとう。さくらさんは本当に優しいですね。", "py": "ありがとう。さくら さん は ほんとうに やさしい です ね。", "es": "Gracias. Sakura, eres muy amable de verdad." }
+          ],
+          "notes": "どうしましたか = ¿qué te pasa? (pregunta típica del médico). 元気がない = estar sin ánimo / sin fuerzas. それに = además. 足は痛くない: は marca el contraste («los pies, no»). 病院 びょういん = hospital, clínica (lo verás en la próxima lección)."
+        },
+        { "type": "grammar", "id": "wa-ga" },
+        { "type": "exercises", "count": 10, "types": ["choose-meaning", "listen-choose", "particle", "pinyin-input", "matching", "fill-blank", "choose-character", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ja-u11-l2",
+      "title": "En el médico",
+      "zh": "熱がありますから",
+      "goal": "Explicar el motivo de algo con 〜から «porque».",
+      "minutes": 13,
+      "vocab": [
+        { "hanzi": "病院", "pinyin": "びょういん", "es": "hospital; clínica" },
+        { "hanzi": "医者", "pinyin": "いしゃ", "es": "médico" },
+        { "hanzi": "病気", "pinyin": "びょうき", "es": "enfermedad; enfermo" },
+        { "hanzi": "風邪", "pinyin": "かぜ", "es": "resfriado", "note": "Se lee igual que 風 (viento): 風邪をひく = resfriarse." },
+        { "hanzi": "熱", "pinyin": "ねつ", "es": "fiebre", "note": "熱がある = tener fiebre." },
+        { "hanzi": "薬", "pinyin": "くすり", "es": "medicina; medicamento" },
+        { "hanzi": "元気", "pinyin": "げんき", "es": "sano; animado" },
+        { "hanzi": "重い", "pinyin": "おもい", "es": "pesado; grave" }
+      ],
+      "steps": [
+        { "type": "vocab" },
+        {
+          "type": "dialogue",
+          "title": "En la consulta",
+          "lines": [
+            { "speaker": "医者", "zh": "どうしましたか。", "py": "どう しました か。", "es": "¿Qué le pasa?" },
+            { "speaker": "ウーゴ", "zh": "昨日から熱がありますから、来ました。のども痛いです。", "py": "きのう から ねつ が あります から、きました。のど も いたい です。", "es": "He venido porque tengo fiebre desde ayer. También me duele la garganta." },
+            { "speaker": "医者", "zh": "口を開けてください。…ああ、風邪ですね。", "py": "くち を あけて ください。…ああ、かぜ です ね。", "es": "Abra la boca, por favor… Ah, es un resfriado." },
+            { "speaker": "ウーゴ", "zh": "重い病気ですか。", "py": "おもい びょうき です か。", "es": "¿Es una enfermedad grave?" },
+            { "speaker": "医者", "zh": "いいえ、大丈夫ですよ。薬を出しますから、三日ぐらい家で休んでください。", "py": "いいえ、だいじょうぶ です よ。くすり を だします から、みっか ぐらい いえ で やすんで ください。", "es": "No, tranquilo. Le doy una medicina, así que descanse en casa unos tres días." },
+            { "speaker": "ウーゴ", "zh": "でも、明日はテストがありますから、学校へ行きたいです。", "py": "でも、あした は テスト が あります から、がっこう へ いきたい です。", "es": "Pero mañana tengo un examen, así que quiero ir a clase." },
+            { "speaker": "医者", "zh": "だめですよ。熱がありますから、休んでください。", "py": "だめ です よ。ねつ が あります から、やすんで ください。", "es": "Nada de eso. Tiene fiebre, así que descanse." }
+          ],
+          "notes": "のど = garganta. 薬を出す = recetar / dar una medicina (出す «sacar»). 三日 みっか = tres días. Ojo: から detrás de una frase = «porque»; detrás de un tiempo o lugar (昨日から) = «desde»."
+        },
+        { "type": "grammar", "id": "kara-because" },
+        { "type": "exercises", "count": 10, "types": ["choose-meaning", "listen-choose", "order-words", "build-sentence", "fill-blank", "translate-to-es", "particle", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ja-u11-l3",
+      "title": "Después de comer",
+      "zh": "ご飯を食べた後で飲んでください",
+      "goal": "Decir el orden de dos acciones con 〜前に y 〜た後で.",
+      "minutes": 13,
+      "vocab": [
+        { "hanzi": "飲む", "pinyin": "のむ", "es": "beber; tomar (medicina)", "note": "薬を飲む = tomar una medicina." },
+        { "hanzi": "寝る", "pinyin": "ねる", "es": "dormir; acostarse" },
+        { "hanzi": "ご飯", "pinyin": "ごはん", "es": "comida; arroz" },
+        { "hanzi": "前", "pinyin": "まえ", "es": "antes; delante" },
+        { "hanzi": "後", "pinyin": "あと", "es": "después" },
+        { "hanzi": "回", "pinyin": "かい", "es": "vez (contador)", "note": "一日三回 = tres veces al día." },
+        { "hanzi": "水", "pinyin": "みず", "es": "agua" },
+        { "hanzi": "白い", "pinyin": "しろい", "es": "blanco" }
+      ],
+      "steps": [
+        { "type": "vocab" },
+        {
+          "type": "dialogue",
+          "title": "En la farmacia",
+          "lines": [
+            { "speaker": "薬屋の人", "zh": "ウーゴさん、これがお薬です。", "py": "ウーゴ さん、これ が おくすり です。", "es": "Hugo, aquí tiene sus medicinas." },
+            { "speaker": "薬屋の人", "zh": "この薬は一日三回、ご飯を食べた後で飲んでください。", "py": "この くすり は いちにち さんかい、ごはん を たべた あと で のんで ください。", "es": "Esta medicina, tómela tres veces al día, después de comer." },
+            { "speaker": "ウーゴ", "zh": "ご飯の前に飲んではいけませんか。", "py": "ごはん の まえ に のんで は いけません か。", "es": "¿No se puede tomar antes de comer?" },
+            { "speaker": "薬屋の人", "zh": "はい。ご飯の後で、水と一緒に飲んでください。", "py": "はい。ごはん の あと で、みず と いっしょに のんで ください。", "es": "No. Tómela después de comer, con agua." },
+            { "speaker": "薬屋の人", "zh": "それから、この白い薬は寝る前に一つ飲んでください。", "py": "それから、この しろい くすり は ねる まえ に ひとつ のんで ください。", "es": "Y esta medicina blanca, tome una antes de dormir." },
+            { "speaker": "ウーゴ", "zh": "分かりました。ご飯の後と、寝る前ですね。", "py": "わかりました。ごはん の あと と、ねる まえ です ね。", "es": "Entendido. Después de comer y antes de dormir." }
+          ],
+          "notes": "薬屋 くすりや = farmacia (en la calle verás 薬局 やっきょく o ドラッグストア). お薬: お de cortesía. 前に va detrás de la forma de diccionario o de nombre + の (寝る前に, ご飯の前に); 後で, detrás de la forma -ta o de nombre + の (食べた後で, ご飯の後で)."
+        },
+        { "type": "grammar", "id": "mae-ni-ato-de" },
+        { "type": "exercises", "count": 10, "types": ["conjugation", "choose-meaning", "listen-choose", "fill-blank", "order-words", "particle", "matching", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ja-u11-l4",
+      "title": "¿Puedo bañarme?: lectura y repaso",
+      "zh": "お風呂に入ってもいいですか",
+      "goal": "Preguntar al médico qué puedes hacer y qué no, y repasar la unidad con una lectura.",
+      "minutes": 15,
+      "vocab": [
+        { "hanzi": "お風呂", "pinyin": "おふろ", "es": "baño (bañera)", "note": "お風呂に入る = bañarse." },
+        { "hanzi": "入る", "pinyin": "はいる", "es": "entrar; meterse", "note": "Godan aunque acabe en -iru: 入ります." },
+        { "hanzi": "お酒", "pinyin": "おさけ", "es": "alcohol; sake" },
+        { "hanzi": "たばこ", "pinyin": "たばこ", "es": "tabaco" },
+        { "hanzi": "吸う", "pinyin": "すう", "es": "fumar; aspirar" },
+        { "hanzi": "疲れる", "pinyin": "つかれる", "es": "cansarse", "note": "疲れました = estoy cansado." },
+        { "hanzi": "今晩", "pinyin": "こんばん", "es": "esta noche" },
+        { "hanzi": "早く", "pinyin": "はやく", "es": "pronto; temprano (adverbio)" }
+      ],
+      "steps": [
+        { "type": "vocab" },
+        {
+          "type": "dialogue",
+          "title": "Segunda visita",
+          "lines": [
+            { "speaker": "医者", "zh": "ウーゴさん、今日はどうですか。", "py": "ウーゴ さん、きょう は どう です か。", "es": "Hugo, ¿cómo está hoy?" },
+            { "speaker": "ウーゴ", "zh": "熱はもうありません。でも、まだ少し疲れています。", "py": "ねつ は もう ありません。でも、まだ すこし つかれて います。", "es": "Ya no tengo fiebre. Pero todavía estoy un poco cansado." },
+            { "speaker": "ウーゴ", "zh": "先生、今晩お風呂に入ってもいいですか。", "py": "せんせい、こんばん おふろ に はいって も いい です か。", "es": "Doctor, ¿puedo bañarme esta noche?" },
+            { "speaker": "医者", "zh": "はい、入ってもいいですよ。でも、お酒を飲んではいけません。", "py": "はい、はいって も いい です よ。でも、おさけ を のんで は いけません。", "es": "Sí, puede bañarse. Pero no puede beber alcohol." },
+            { "speaker": "ウーゴ", "zh": "たばこは吸いませんから、大丈夫です。", "py": "たばこ は すいません から、だいじょうぶ です。", "es": "No fumo, así que no hay problema." },
+            { "speaker": "医者", "zh": "よかった。今晩は早く寝てくださいね。", "py": "よかった。こんばん は はやく ねて ください ね。", "es": "Bien. Esta noche acuéstese pronto, ¿eh?" }
+          ],
+          "notes": "En Japón también se llama 先生 al médico. もう＋negativo = ya no; まだ = todavía. 疲れています = estoy cansado (estado; la forma 〜ています la verás en la unidad de la rutina)."
+        },
+        { "type": "grammar", "id": "te-mo-ii" },
+        {
+          "type": "reading",
+          "title": "Me puse enfermo en Tokio",
+          "text": "先週の月曜日、朝から頭が痛かったです。熱もありました。友達のさくらさんと駅の前の病院へ行きました。医者は「風邪ですね。三日ぐらい休んでください」と言いました。薬屋で薬を買いました。薬はご飯を食べた後で飲みます。白い薬は寝る前に飲みます。三日休みましたから、今はもう元気です。",
+          "es": "El lunes de la semana pasada me dolía la cabeza desde por la mañana. También tenía fiebre. Fui con mi amiga Sakura al hospital que hay delante de la estación. El médico dijo: «Es un resfriado. Descanse unos tres días». Compré las medicinas en la farmacia. Las medicinas me las tomo después de comer. La medicina blanca, antes de dormir. Como descansé tres días, ahora ya estoy bien.",
+          "questions": [
+            { "q": "¿Qué le pasaba a Hugo el lunes?", "options": ["Le dolían los pies", "Le dolía la cabeza y tenía fiebre", "Le dolían los dientes", "Le dolía la barriga"], "answer": 1, "explain": "朝から頭が痛かったです。熱もありました。" },
+            { "q": "¿Cuándo toma la medicina blanca?", "options": ["Antes de comer", "Después de comer", "Antes de dormir", "Por la mañana"], "answer": 2, "explain": "白い薬は寝る前に飲みます。" },
+            { "q": "¿Por qué está bien ahora?", "options": ["Porque descansó tres días", "Porque fue a Kioto", "Porque no fuma", "Porque bebió mucha agua"], "answer": 0, "explain": "三日休みましたから、今はもう元気です。" }
+          ]
+        },
+        { "type": "exercises", "count": 12, "types": ["matching", "choose-meaning", "conjugation", "particle", "order-words", "build-sentence", "fill-blank", "dictation", "translate-to-es", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    }
+  ]
+}

@@ -2,27 +2,30 @@
 import { useState } from "react";
 import { Check, Eye, X } from "lucide-react";
 import type { DictationExercise, FreeTextExercise, PinyinInputExercise } from "@/lib/exercises/types";
-import { numberedToMarked } from "@/lib/pinyin/tones";
+import { usePack } from "@/lib/languages/provider";
 import { useSettings } from "@/lib/settings";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/primitives";
-import { Pinyin } from "@/components/zh/pinyin";
-import { AudioButton, playText, useSpaceToPlay } from "@/components/zh/audio-button";
-import { ChineseText } from "@/components/zh/chinese-text";
+import { Reading as Pinyin } from "@/components/target/reading";
+import { AudioButton, playText, useSpaceToPlay } from "@/components/target/audio-button";
+import { ChineseText } from "@/components/target/target-text";
 import { cn } from "@/lib/utils";
 import { CheckButton, ExerciseCard, Hint, Plate, Stage, type ExerciseProps } from "./exercise-view";
+import { targetLang } from "@/lib/languages/registry";
+import { Mixed } from "@/components/target/mixed";
 
 const bigInput = "h-14 rounded-[12px] text-center text-2xl placeholder:text-base placeholder:text-ink-faint/80";
 
 export function PinyinInput({ ex, onSubmit, result }: ExerciseProps<PinyinInputExercise>) {
   const [text, setText] = useState("");
   useSpaceToPlay(ex.zh, !result);
-  const preview = numberedToMarked(text);
+  const pack = usePack();
+  const ReadingInput = pack.ui.ReadingInput;
   return (
     <ExerciseCard prompt={ex.prompt}>
       <Stage zh={ex.zh}>
         {result ? <AudioButton text={ex.zh} /> : null}
-        {ex.meaning ? <p className="font-serif-es text-lg text-ink-soft">{ex.meaning}</p> : null}
+        {ex.meaning ? <p className="font-serif-es text-lg text-ink-soft"><Mixed>{ex.meaning}</Mixed></p> : null}
       </Stage>
       <form
         className="mx-auto w-full max-w-sm"
@@ -31,18 +34,17 @@ export function PinyinInput({ ex, onSubmit, result }: ExerciseProps<PinyinInputE
           if (!result && text.trim()) onSubmit({ kind: "text", text });
         }}
       >
-        <Input value={text} onChange={(e) => setText(e.target.value)} placeholder="ni3 hao3 → nǐ hǎo" className={bigInput} autoFocus disabled={Boolean(result)} autoComplete="off" autoCapitalize="off" spellCheck={false} aria-label="Pinyin" />
-        <div className="mt-1.5 h-6 text-center" aria-live="polite">
-          {preview && preview !== text ? <Pinyin text={preview} className="text-base" /> : null}
-        </div>
+        <ReadingInput value={text} onChange={setText} autoFocus disabled={Boolean(result)} mode="reading" aria-label={pack.readingAid.name} />
         {!result ? <CheckButton type="submit" disabled={!text.trim()} /> : null}
       </form>
-      <Hint>Tonos con números (1–4, 5 = neutro) o con tildes · ü = v</Hint>
+      {pack.readingAid.inputHint ? <Hint>{pack.readingAid.inputHint.reading}</Hint> : null}
     </ExerciseCard>
   );
 }
 
 export function Dictation({ ex, onSubmit, result }: ExerciseProps<DictationExercise>) {
+  const pack = usePack();
+  const ReadingInput = pack.ui.ReadingInput;
   const [text, setText] = useState("");
   const [showPinyin, setShowPinyin] = useState(false);
   useSpaceToPlay(ex.zh, !result);
@@ -56,7 +58,7 @@ export function Dictation({ ex, onSubmit, result }: ExerciseProps<DictationExerc
           </Button>
           {ex.pinyin && !result ? (
             <Button size="sm" variant="ghost" onClick={() => setShowPinyin((s) => !s)} aria-pressed={showPinyin}>
-              <Eye /> pista (pinyin)
+              <Eye /> pista ({pack.readingAid.name.toLowerCase()})
             </Button>
           ) : null}
         </div>
@@ -71,7 +73,7 @@ export function Dictation({ ex, onSubmit, result }: ExerciseProps<DictationExerc
           if (!result && text.trim()) onSubmit({ kind: "text", text });
         }}
       >
-        <Input lang="zh-CN" value={text} onChange={(e) => setText(e.target.value)} placeholder="Escribe con el teclado pinyin de tu sistema" className={cn("zh-serif", bigInput)} autoFocus disabled={Boolean(result)} aria-label="Lo que has oído" />
+        <ReadingInput value={text} onChange={setText} autoFocus disabled={Boolean(result)} mode="text" aria-label="Lo que has oído" />
         {!result ? <CheckButton type="submit" disabled={!text.trim()} /> : null}
       </form>
       {result ? (
@@ -80,7 +82,7 @@ export function Dictation({ ex, onSubmit, result }: ExerciseProps<DictationExerc
           <DiffChars want={ex.zh} got={text} />
         </Plate>
       ) : (
-        <Hint>Sin teclado chino: Windows → Configuración → Hora e idioma → Idioma → Agregar → Chino (simplificado) → Microsoft Pinyin.</Hint>
+        pack.readingAid.inputHint ? <Hint>{pack.readingAid.inputHint.text}</Hint> : null
       )}
     </ExerciseCard>
   );
@@ -94,7 +96,7 @@ function DiffChars({ want, got }: { want: string; got: string }) {
     <p className="mt-2 text-sm">
       <span className="text-ink-faint">Tu respuesta: </span>
       {g.map((c, i) => (
-        <span key={i} lang="zh-CN" className={cn("zh-serif text-xl", w[i] === c ? "text-celadon-ink" : "text-danger line-through decoration-danger/60")}>
+        <span key={i} lang={targetLang()} className={cn("zh-serif text-xl", w[i] === c ? "text-celadon-ink" : "text-danger line-through decoration-danger/60")}>
           {c}
         </span>
       ))}

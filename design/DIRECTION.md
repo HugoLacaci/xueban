@@ -27,3 +27,14 @@
 - Nada de fotos ni ilustraciones de terceros; solo SVG propio en estilo tinta monocroma con un toque bermellón.
 - Error ≠ acento: `绛` apagado, siempre con icono y texto.
 - Máximo 2 familias latinas (Inter, Fraunces) y 3 chinas (Noto Sans SC y Noto Serif SC como fuentes variables, WenKai para caligrafía, sellos y marca). Se descartó Ma Shan Zheng: sumaba 89 KB de CSS bloqueante para un uso solo decorativo.
+
+## Portada — «Tres puertas» (三扉 · 三つの扉 · 세 개의 문)
+
+- La elección de idioma ocupa todo el viewport: tres grandes paneles-puerta verticales, cada uno con la piel completa de su idioma (`data-skin`): paisaje propio, patrón, tipografía, sello y rama que florece.
+- Profundidad por capas: paisaje (fondo) → patrón con máscara → glifo gigante 中 / あ / 한 → placa de papel translúcida con la información. Sombras cálidas, marco interior ornamental, viñeteado.
+- Acordeón horizontal: el panel enfocado (hover o teclado) crece ~1,6× y revela métricas y CTA; el recomendado empieza abierto. Parallax por capas e inclinación ≤ 3° solo con puntero fino y sin `prefers-reduced-motion`.
+- Idiomas no activos = puertas entornadas: más estrechas, paisaje en tinta monocroma que se colorea al enfocarlas, glifo en contorno y un beneficio concreto («3 min para leer tu primer hiragana»). Nunca opacidad ni bordes discontinuos.
+- Encima, una franja global: saludo por hora en español + idiomas activos, racha, minutos de hoy, repasos y la recomendación del día.
+- Clic: el panel se abre a pantalla completa con su paisaje y continúa en la cabecera del panel «Hoy» del idioma (mismo paisaje, semilla y fase del día).
+- Móvil: paneles apilados a ancho completo (el recomendado más alto), glifo a un lado e información al otro, CTA siempre visible en zona del pulgar. Se descarta el carrusel: oculta idiomas y obliga a deslizar para comparar.
+- La misma pieza en tamaño `compact` (≈ 88 px) sirve para el selector de la cabecera, el onboarding y `/me`.

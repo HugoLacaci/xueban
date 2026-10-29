@@ -1,16 +1,20 @@
 "use client";
-import Link from "next/link";
+import Link from "@/lib/languages/link";
 import { useEffect, useMemo, useRef, useSyncExternalStore } from "react";
 import { useLiveQuery } from "dexie-react-hooks";
 import { BookOpen, Check, ChevronRight, Lock, Play, Sparkles } from "lucide-react";
 import { db } from "@/lib/db";
-import { UNITS } from "@/lib/course";
+import { usePack } from "@/lib/languages/provider";
 import { nextRecommended, unitStats } from "@/lib/course/progress";
 import { Button } from "@/components/ui/button";
 import { Badge, PageHeader } from "@/components/ui/primitives";
 import { Enso, Seal, ShanShui, dayPhase, type DayPhase } from "@/components/ornament";
 import { cn } from "@/lib/utils";
-import { Paifang, PathSegment, Pavilion, zhNumeral } from "./map-art";
+import { Paifang, PathSegment, Pavilion, mapNumeral as zhNumeral } from "./map-art";
+import { getActiveLang } from "@/lib/languages/registry";
+import { targetLang } from "@/lib/languages/registry";
+import { ui as uiText, pageNative, culture, numeral as numeralOf } from "@/lib/languages/ui-text";
+import { Mixed } from "@/components/target/mixed";
 
 const noop = () => () => undefined;
 const serverPhase = (): DayPhase => "day";
@@ -20,10 +24,13 @@ const xDesk = (i: number) => (i % 2 === 0 ? 30 : 70);
 const xMob = (_i: number) => 50; // eslint-disable-line @typescript-eslint/no-unused-vars
 
 export function UnitMap() {
-  const rows = useLiveQuery(() => db.lessonProgress.toArray(), []);
+  const pack = usePack();
+  const units = pack.curriculum.units;
+  const levelTitle = pack.curriculum.levelTitle;
+  const rows = useLiveQuery(() => db.lessonProgress.where("lang").equals(getActiveLang()).toArray(), []);
   const progress = useMemo(() => new Map((rows ?? []).map((r) => [r.lessonId, r])), [rows]);
   const next = useMemo(() => nextRecommended(progress), [progress]);
-  const totalLessons = UNITS.reduce((a, u) => a + u.lessons.length, 0);
+  const totalLessons = units.reduce((a, u) => a + u.lessons.length, 0);
   const doneLessons = Array.from(progress.values()).filter((p) => p.status === "completed").length;
   const phase = useSyncExternalStore(noop, dayPhase, serverPhase);
   const bgRef = useRef<HTMLDivElement>(null);
@@ -53,8 +60,8 @@ export function UnitMap() {
     <div className="space-y-2">
       <PageHeader
         title="Aprender"
-        zh="学习"
-        subtitle={`Curso HSK 1 por temas: ${UNITS.length} unidades · ${totalLessons} lecciones cortas (10–15 min). Cada lección: vocabulario → diálogo → gramática → ejercicios → repaso.`}
+        zh={pageNative("learn")}
+        subtitle={`Curso ${levelTitle} por temas: ${units.length} unidades · ${totalLessons} lecciones cortas (10–15 min). Cada lección: vocabulario → diálogo → gramática → ejercicios → repaso.`}
         action={
           <>
             <Button variant="secondary" asChild>
@@ -72,6 +79,17 @@ export function UnitMap() {
           </>
         }
       />
+      {pack.ui.extraPages?.length ? (
+        <div className="flex flex-wrap gap-2 pb-2">
+          {pack.ui.extraPages.map((p) => (
+            <Link key={p.href} href={`/aprender/modulo/${p.href}`} className="card-paper flex items-center gap-2 px-3 py-2 text-sm hover:border-ink/40">
+              <span lang={pack.bcp47} className={`${pack.meta.cssClass} text-cinnabar`}><Mixed>{p.native}</Mixed></span>
+              <span className="text-ink"><Mixed>{p.title}</Mixed></span>
+              <span className="hidden text-xs text-ink-faint sm:inline">· <Mixed>{p.description}</Mixed></span>
+            </Link>
+          ))}
+        </div>
+      ) : null}
 
       <div className="relative">
         {/* 山水: paisaje de fondo con parallax */}
@@ -92,28 +110,28 @@ export function UnitMap() {
               {next ? "" : " · ¡curso terminado!"}
             </p>
             <p className="mt-1 text-xs text-ink-faint">
-              <span lang="zh-CN" className="zh-kai text-sm text-ink-soft">
-                千里之行，始于足下
+              <span lang={targetLang()} className="zh-kai text-sm text-ink-soft">
+                <Mixed>{culture().onboarding.proverbs[0]}</Mixed>
               </span>
               <span className="ml-2">Un viaje de mil li empieza con un paso.</span>
             </p>
           </div>
           <div className="hidden flex-col items-center sm:flex" aria-hidden="true">
             <Pavilion size={64} tone={next ? "ink" : "cinnabar"} />
-            <span className="text-[10px] uppercase tracking-wider text-ink-faint">HSK 1</span>
+            <span className="text-[10px] uppercase tracking-wider text-ink-faint"><Mixed>{levelTitle}</Mixed></span>
           </div>
         </section>
 
         {/* Camino de montaña: nodos (sellos) + tramos */}
         <ol className="relative" aria-label="Unidades del curso">
-          {UNITS.map((u, ui) => {
+          {units.map((u, ui) => {
             const st = unitStats(u.id, progress);
             const completed = st.total > 0 && st.done === st.total;
             const isNextUnit = next?.unitId === u.id;
-            const prevDone = ui === 0 || unitStats(UNITS[ui - 1].id, progress).done === UNITS[ui - 1].lessons.length;
+            const prevDone = ui === 0 || unitStats(units[ui - 1].id, progress).done === units[ui - 1].lessons.length;
             const locked = !prevDone && st.done === 0 && !isNextUnit;
-            const numeral = u.level === 0 ? Array.from(u.zh)[0] ?? "零" : zhNumeral(u.order - 1);
-            const isLast = ui === UNITS.length - 1;
+            const numeral = u.level === 0 ? Array.from(u.zh)[0] ?? numeralOf(0) : zhNumeral(u.order - 1);
+            const isLast = ui === units.length - 1;
             return (
               <li key={u.id} className="relative flex gap-2 pb-6 sm:gap-4">
                 {/* carril */}
@@ -129,21 +147,21 @@ export function UnitMap() {
                 </div>
 
                 {/* ficha de la unidad */}
-                <article className={cn("card-paper min-w-0 flex-1 overflow-hidden p-0", isNextUnit && "border-cinnabar/50 shadow-[var(--shadow-float)]", locked && "opacity-80")}>
+                <article className={cn("card-paper min-w-0 flex-1 overflow-hidden p-0", isNextUnit && "border-cinnabar/50 shadow-[var(--shadow-float)]", locked && "border-dashed shadow-none")}>
                   <header className="flex items-start gap-3 p-4 pb-3">
                     <div className="min-w-0 flex-1">
                       <div className="flex flex-wrap items-center gap-x-2 gap-y-1">
                         <h2 className="font-serif-es text-lg font-semibold leading-tight text-ink">
                           <span className="text-ink-faint">{u.level === 0 ? "Unidad 0 · " : `Unidad ${u.order - 1} · `}</span>
-                          {u.title}
+                          <Mixed>{u.title}</Mixed>
                         </h2>
-                        <span lang="zh-CN" className="zh-kai text-base text-cinnabar">
-                          {u.zh}
+                        <span lang={targetLang()} className="zh-kai text-base text-cinnabar">
+                          <Mixed>{u.zh}</Mixed>
                         </span>
                       </div>
-                      <p className="mt-1 text-sm text-ink-faint">{u.description}</p>
+                      <p className="mt-1 text-sm text-ink-faint"><Mixed>{u.description}</Mixed></p>
                       <div className="mt-2 flex flex-wrap items-center gap-1.5">
-                        {u.level === 0 ? <Badge variant="gold">base</Badge> : <Badge variant="jade">HSK 1</Badge>}
+                        {u.level === 0 ? <Badge variant="gold">base</Badge> : <Badge variant="jade"><Mixed>{levelTitle}</Mixed></Badge>}
                         {completed ? (
                           <Badge variant="lacquer">
                             <Check className="size-3" /> completada
@@ -182,8 +200,8 @@ export function UnitMap() {
                               {done ? <Check className="size-3.5" /> : li + 1}
                             </span>
                             <span className="min-w-0 flex-1">
-                              <span className="block font-medium text-ink">{l.title}</span>
-                              <span className="block truncate text-xs text-ink-faint">{l.goal}</span>
+                              <span className="block font-medium text-ink"><Mixed>{l.title}</Mixed></span>
+                              <span className="block truncate text-xs text-ink-faint"><Mixed>{l.goal}</Mixed></span>
                             </span>
                             {p?.score !== undefined ? <span className="hidden text-xs text-ink-faint tabular sm:inline">{Math.round(p.score * 100)} %</span> : null}
                             <span className="text-xs text-ink-faint tabular">{l.minutes} min</span>
@@ -198,7 +216,7 @@ export function UnitMap() {
                           <Paifang size={28} tone="gold" className="-my-1 shrink-0" />
                           <span className="min-w-0 flex-1">
                             <span className="block font-medium text-ink">Checkpoint de la unidad</span>
-                            <span className="block text-xs text-ink-faint">Pasa por el 牌坊: ejercicios mezclados de toda la unidad.</span>
+                            <span className="block text-xs text-ink-faint">Pasa por el <span lang={targetLang()}>{uiText().gate}</span>: ejercicios mezclados de toda la unidad.</span>
                           </span>
                           <span className="text-xs text-ink-faint tabular">{u.checkpoint.exercises} ej.</span>
                           <ChevronRight className="size-4 text-ink-faint transition-transform group-hover:translate-x-0.5" />
@@ -215,7 +233,7 @@ export function UnitMap() {
             <div className="flex w-12 shrink-0 justify-center sm:w-16 md:w-28">
               <Pavilion size={56} tone={next ? "faint" : "cinnabar"} />
             </div>
-            <p className="self-center text-sm text-ink-faint">{next ? "Meta: HSK 1 completo." : "Has llegado a la cima. 恭喜！"}</p>
+            <p className="self-center text-sm text-ink-faint">{next ? `Meta: ${levelTitle} completo.` : `Has llegado a la cima. ${uiText().congrats}`}</p>
           </li>
         </ol>
       </div>

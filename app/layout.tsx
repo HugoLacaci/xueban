@@ -2,7 +2,6 @@ import type { Metadata, Viewport } from "next";
 import { Inter, Noto_Sans_SC, Noto_Serif_SC, Fraunces } from "next/font/google";
 import "./globals.css";
 import { AppProviders } from "@/components/providers";
-import { AppShell } from "@/components/layout/app-shell";
 import { withBase } from "@/lib/base-path";
 
 const inter = Inter({ variable: "--font-inter", subsets: ["latin", "latin-ext"], display: "swap" });
@@ -35,7 +34,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     <html lang="es" className={`${inter.variable} ${fraunces.variable} ${notoSans.variable} ${notoSerif.variable} h-full antialiased`} suppressHydrationWarning>
       <body className="min-h-full">
         <AppProviders>
-          <AppShell>{children}</AppShell>
+          {children}
         </AppProviders>
       </body>
     </html>

@@ -9,6 +9,8 @@ import { Card, Select } from "@/components/ui/primitives";
 import { toast } from "@/components/ui/toast";
 import { FilterChip } from "./filter-chip";
 import { cn } from "@/lib/utils";
+import { targetLang } from "@/lib/languages/registry";
+import { ui } from "@/lib/languages/ui-text";
 
 const PRESETS = [
   { work: 25, rest: 5 },
@@ -161,8 +163,8 @@ export function Pomodoro() {
         <div className="flex items-center gap-5">
           <Incense pct={pct} mode={mode} running={running} />
           <div className="text-center">
-            <span className="zh-display block text-sm text-ink-faint" lang="zh-CN">
-              一炷香
+            <span className="zh-display block text-sm text-ink-faint" lang={targetLang()}>
+              {ui().incense}
             </span>
             <span className="tabular block font-serif-es text-5xl font-semibold leading-none text-ink" role="timer" aria-live="off">
               {fmt(left)}

@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useMemo, useState } from "react";
-import Link from "next/link";
+import Link from "@/lib/languages/link";
 import { useLiveQuery } from "dexie-react-hooks";
 import { Check, Eye, EyeOff, Play, Plus, Repeat, Volume2 } from "lucide-react";
 import { db, upsertWord } from "@/lib/db";
@@ -9,7 +9,8 @@ import { grammarById } from "@/lib/course";
 import { lessonExercises, readingQuestionsToExercises } from "@/lib/exercises/build";
 import type { Exercise } from "@/lib/exercises/types";
 import { useKnowledge } from "@/lib/knowledge";
-import { useDictionary, loadCharInfo, lookupFirst } from "@/lib/dictionary/service";
+import { useDictionary, lookupFirst, levelLabel } from "@/lib/dictionary/service";
+import { getActivePack } from "@/lib/languages/registry";
 import { useSettings } from "@/lib/settings";
 import { comprehension } from "@/lib/segment";
 import { getLexicon } from "@/lib/dictionary/service";
@@ -17,17 +18,20 @@ import { onWordSaved } from "@/lib/anki/hooks";
 import { Button } from "@/components/ui/button";
 import { Badge, Card, Spinner } from "@/components/ui/primitives";
 import { toast } from "@/components/ui/toast";
-import { Pinyin } from "@/components/zh/pinyin";
-import { AudioButton, playText } from "@/components/zh/audio-button";
-import { ChineseText, Hanzi } from "@/components/zh/chinese-text";
-import { StrokeOrder } from "@/components/zh/stroke-order";
-import { HanziCard } from "@/components/zh/hanzi-card";
+import { Pinyin } from "@/components/target/reading";
+import { AudioButton, playText } from "@/components/target/audio-button";
+import { ChineseText, Hanzi } from "@/components/target/target-text";
+import { StrokeOrder } from "@/components/target/stroke-order";
+import { HanziCard } from "@/components/target/word-card";
 import { ExerciseRunner, type SessionSummary } from "@/components/exercises/runner";
 import { InkDivider, SealTag } from "@/components/ornament";
 import { Markdown } from "./markdown";
 import { GrammarView } from "./grammar-view";
-import { zhNumeral } from "./map-art";
+import { mapNumeral as zhNumeral } from "./map-art";
 import { cn } from "@/lib/utils";
+import { targetLang } from "@/lib/languages/registry";
+import { ui, listenFocus, readingName } from "@/lib/languages/ui-text";
+import { Mixed } from "@/components/target/mixed";
 
 type Step<T extends LessonStep["type"]> = Extract<LessonStep, { type: T }>;
 
@@ -44,7 +48,7 @@ export function StepTitle({ children, aside, className }: { children: React.Reac
 export function ExplainStep({ step }: { step: Step<"explain"> }) {
   return (
     <Card className="sm:p-6">
-      <h2 className="font-serif-es mb-3 text-xl font-semibold tracking-tight text-ink">{step.title}</h2>
+      <h2 className="font-serif-es mb-3 text-xl font-semibold tracking-tight text-ink"><Mixed>{step.title}</Mixed></h2>
       <Markdown>{step.markdown}</Markdown>
     </Card>
   );
@@ -63,7 +67,7 @@ export function VocabStep({ lesson, step }: { lesson: Lesson; step: Step<"vocab"
     let n = 0;
     for (const v of missing) {
       const e = lookupFirst(v.hanzi);
-      const w = await upsertWord({ hanzi: v.hanzi, pinyin: v.pinyin, meaning: v.es, category: "Clase", source: "manual", tags: ["curso", lesson.id], hsk: e?.hsk ? ["HSK3.0"] : [], level: e?.hsk, meaningEn: e?.en?.join("; "), traditional: e?.t });
+      const w = await upsertWord({ hanzi: v.hanzi, pinyin: v.pinyin, meaning: v.es, category: "Clase", source: "manual", tags: ["curso", lesson.id], hsk: e?.hsk ? ["HSK3.0"] : e?.lv ? [e.lv] : [], level: e?.hsk, meaningEn: e?.en?.join("; "), traditional: e?.t });
       void onWordSaved(w);
       n++;
     }
@@ -96,7 +100,7 @@ export function VocabStep({ lesson, step }: { lesson: Lesson; step: Step<"vocab"
       >
         {step.title ?? "Vocabulario"}
       </StepTitle>
-      <p className="text-sm text-ink-faint">Escucha cada palabra, repítela en voz alta y fíjate en el tono. Gira la tarjeta para ver el significado y un ejemplo.</p>
+      <p className="text-sm text-ink-faint">{`Escucha cada palabra, repítela en voz alta y ${listenFocus()}.`} Gira la tarjeta para ver el significado y un ejemplo.</p>
       <ul className="grid gap-3 sm:grid-cols-2">
         {words.map((v) => {
           const e = lookupFirst(v.hanzi);
@@ -107,7 +111,7 @@ export function VocabStep({ lesson, step }: { lesson: Lesson; step: Step<"vocab"
                 hanzi={v.hanzi}
                 pinyin={v.pinyin}
                 meaning={v.es}
-                hsk={e?.hsk ? `HSK ${e.hsk}` : undefined}
+                hsk={e ? levelLabel(e) : undefined}
                 variant="word"
                 size="md"
                 grid={Array.from(v.hanzi).length <= 3}
@@ -178,7 +182,7 @@ export function DialogueStep({ step }: { step: Step<"dialogue"> }) {
           </>
         }
       >
-        {step.title}
+        <Mixed>{step.title}</Mixed>
       </StepTitle>
       <ol className="space-y-2">
         {step.lines.map((l, i) => {
@@ -192,11 +196,11 @@ export function DialogueStep({ step }: { step: Step<"dialogue"> }) {
                 <div className="min-w-0 flex-1">
                   {l.speaker ? (
                     <SealTag tone={right ? "celadon" : "ink"} className="mb-1">
-                      <span lang="zh-CN">{l.speaker}</span>
+                      <span lang={targetLang()}>{l.speaker}</span>
                     </SealTag>
                   ) : null}
                   <ChineseText text={l.zh} size="lg" pinyinLine={l.py} translation={hideEs ? undefined : l.es} as="div" />
-                  {l.note ? <p className="mt-1 text-xs text-ink-faint">{l.note}</p> : null}
+                  {l.note ? <p className="mt-1 text-xs text-ink-faint"><Mixed>{l.note}</Mixed></p> : null}
                 </div>
               </div>
             </li>
@@ -209,7 +213,7 @@ export function DialogueStep({ step }: { step: Step<"dialogue"> }) {
           {step.notes}
         </p>
       ) : null}
-      <p className="text-xs text-ink-faint">Primero escucha sin leer; luego lee con pinyin; por último, repite cada frase (shadowing) hasta que te salga fluida.</p>
+      <p className="text-xs text-ink-faint">Primero escucha sin leer; luego lee con {readingName()}; por último, repite cada frase (shadowing) hasta que te salga fluida.</p>
     </div>
   );
 }
@@ -233,7 +237,7 @@ export function ExercisesStep({ lesson, step, seed, onFinish }: { lesson: Lesson
 
   useEffect(() => {
     if (dictStatus === "idle") void load();
-    void loadCharInfo().catch(() => undefined);
+    void getActivePack().characters.load().catch(() => undefined);
   }, [dictStatus, load]);
 
   useEffect(() => {
@@ -284,12 +288,12 @@ export function SummaryCard({ summary, onContinue, title = "Ejercicios terminado
       </p>
       {wrong.length ? (
         <div className="mx-auto mt-4 max-w-md text-left">
-          <InkDivider label="复习" className="my-3" />
+          <InkDivider label={ui().review} className="my-3" />
           <p className="mb-1 text-xs font-medium uppercase tracking-wide text-ink-faint">Para repasar</p>
           <ul className="space-y-1 text-sm">
             {wrong.slice(0, 6).map((r, i) => (
               <li key={i} className="card-sunk flex items-center gap-2 px-2.5 py-1.5">
-                <span lang="zh-CN" className="zh-serif text-lg text-ink">
+                <span lang={targetLang()} className="zh-serif text-lg text-ink">
                   {r.result.expected}
                 </span>
                 <span className="truncate text-xs text-ink-faint">{r.exercise.prompt}</span>
@@ -323,7 +327,7 @@ export function ReadingStep({ lesson, step, onFinish }: { lesson: Lesson; step: 
   if (phase === "questions") return <ExerciseRunner exercises={exercises} context={lesson.id} onFinish={setSummary} allowSkip={false} />;
   return (
     <div className="space-y-3">
-      <StepTitle aside={<Badge variant={comp.ratio >= 0.95 ? "jade" : comp.ratio >= 0.85 ? "gold" : "lacquer"}>Conoces el {Math.round(comp.ratio * 100)} % de este texto</Badge>}>{step.title}</StepTitle>
+      <StepTitle aside={<Badge variant={comp.ratio >= 0.95 ? "jade" : comp.ratio >= 0.85 ? "gold" : "lacquer"}>Conoces el {Math.round(comp.ratio * 100)} % de este texto</Badge>}><Mixed>{step.title}</Mixed></StepTitle>
       {/* modo libro: columna de lectura */}
       <article className="card-paper mx-auto max-w-[38rem] px-5 py-6 sm:px-8 sm:py-8">
         <div className="mb-3 flex items-center justify-between">
@@ -335,14 +339,14 @@ export function ReadingStep({ lesson, step, onFinish }: { lesson: Lesson; step: 
             <div key={i} className="flex items-start gap-3">
               {paragraphs.length > 1 ? (
                 <SealTag tone="cinnabar" className="mt-2 shrink-0">
-                  <span lang="zh-CN">{zhNumeral(i + 1)}</span>
+                  <span lang={targetLang()}>{zhNumeral(i + 1)}</span>
                 </SealTag>
               ) : null}
               <ChineseText text={p} size="xl" as="div" className="min-w-0 flex-1 leading-[2]" />
             </div>
           ))}
         </div>
-        {showEs || showTranslation ? <p className="mt-5 border-t border-line pt-4 font-serif-es text-base leading-relaxed text-ink-soft">{step.es}</p> : null}
+        {showEs || showTranslation ? <p className="mt-5 border-t border-line pt-4 font-serif-es text-base leading-relaxed text-ink-soft"><Mixed>{step.es}</Mixed></p> : null}
       </article>
       <div className="mx-auto flex max-w-[38rem] flex-wrap items-center justify-between gap-2">
         <Button size="sm" variant="ghost" onClick={() => setShowEs((s) => !s)}>
@@ -352,7 +356,7 @@ export function ReadingStep({ lesson, step, onFinish }: { lesson: Lesson; step: 
           Responder a las preguntas ({step.questions.length})
         </Button>
       </div>
-      <p className="mx-auto max-w-[38rem] text-xs text-ink-faint">Lee primero sin pinyin (tecla P) e intenta entender el sentido general. Las palabras subrayadas no están en tu mazo: púlsalas para añadirlas.</p>
+      <p className="mx-auto max-w-[38rem] text-xs text-ink-faint">Lee primero sin {readingName()} (tecla P) e intenta entender el sentido general. Las palabras subrayadas no están en tu mazo: púlsalas para añadirlas.</p>
     </div>
   );
 }
@@ -370,7 +374,7 @@ export function ReviewStep({ lesson, scores }: { lesson: Lesson; scores: Record<
     <div className="space-y-4">
       <Card className="sm:p-6">
         <h2 className="font-serif-es text-xl font-semibold text-ink">Repaso de la lección</h2>
-        <p className="mt-1 text-sm text-ink-faint">{lesson.goal}</p>
+        <p className="mt-1 text-sm text-ink-faint"><Mixed>{lesson.goal}</Mixed></p>
         <div className="mt-4 grid grid-cols-3 gap-2 text-center">
           <div className="card-sunk p-3">
             <p className="font-serif-es text-2xl font-semibold text-ink tabular">{lesson.vocab.length}</p>
@@ -391,19 +395,19 @@ export function ReviewStep({ lesson, scores }: { lesson: Lesson; scores: Record<
           </div>
         </div>
 
-        <InkDivider label="词汇" />
+        <InkDivider label={ui().vocab} />
         <div className="flex flex-wrap gap-2">
           {lesson.vocab.map((v) => (
             <span key={v.hanzi} className="inline-flex items-center gap-2 rounded-[8px] border border-line bg-paper px-2 py-1">
               <Hanzi text={v.hanzi} size="md" font="serif" />
               <Pinyin text={v.pinyin} className="text-xs" />
-              <span className="text-xs text-ink-faint">{v.es}</span>
+              <span className="text-xs text-ink-faint"><Mixed>{v.es}</Mixed></span>
             </span>
           ))}
         </div>
         {grammar.length ? (
           <>
-            <InkDivider label="语法" />
+            <InkDivider label={ui().grammar} />
             <ul className="space-y-1.5 text-sm">
               {grammar.map((g) => (
                 <li key={g!.id} className="flex flex-wrap items-baseline gap-x-2">

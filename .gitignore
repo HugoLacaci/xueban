@@ -7,6 +7,10 @@ out
 public/data/*.json
 public/data/*.gz
 public/data/hanzi/
+# datos generados por npm run data:build (por idioma; la CI los regenera)
+public/data/zh/
+public/data/ja/
+public/data/ko/
 public/audio/*.mp3
 .cache/
 test-results/

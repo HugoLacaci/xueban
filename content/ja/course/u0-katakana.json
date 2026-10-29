@@ -1,0 +1,272 @@
+{
+  "id": "ja-u0-katakana",
+  "order": 1,
+  "title": "Katakana, primeros kanji y acento",
+  "zh": "カタカナ・漢字・アクセント",
+  "description": "Los katakana con palabras extranjeras, la raya larga ー y combinaciones como ティ o ファ, tus primeros kanji y el acento tonal del japonés.",
+  "icon": "Languages",
+  "level": 0,
+  "lang": "ja",
+  "lessons": [
+    {
+      "id": "ja-u0-katakana-l1",
+      "title": "Katakana: filas A, K y S",
+      "zh": "アイウエオ・カキクケコ・サシスセソ",
+      "goal": "Reconocer los 15 primeros katakana y leer préstamos sencillos.",
+      "minutes": 15,
+      "vocab": [
+        { "hanzi": "アイス", "pinyin": "アイス", "es": "helado" },
+        { "hanzi": "ココア", "pinyin": "ココア", "es": "chocolate caliente; cacao" },
+        { "hanzi": "スイス", "pinyin": "スイス", "es": "Suiza" },
+        { "hanzi": "カカオ", "pinyin": "カカオ", "es": "cacao" },
+        { "hanzi": "オアシス", "pinyin": "オアシス", "es": "oasis" },
+        { "hanzi": "キス", "pinyin": "キス", "es": "beso" }
+      ],
+      "steps": [
+        {
+          "type": "explain",
+          "title": "Los mismos sonidos, otra letra",
+          "markdown": "El katakana tiene **exactamente los mismos sonidos** que el hiragana, solo cambia la forma: más recta y angulosa. Se usa para:\n\n- **Palabras extranjeras**: コーヒー (café), パン (pan, del portugués), テレビ (tele).\n- **Nombres extranjeros**: tu nombre será **ウーゴ** (*Ūgo*), y España, **スペイン**.\n- Onomatopeyas, nombres científicos y para resaltar palabras (como nuestra cursiva).\n\nComo ya sabes el sonido, solo tienes que asociar forma nueva → sonido viejo. Varios son casi iguales al hiragana: か/カ, き/キ, へ/ヘ, り/リ.\n\n| Kana | Suena | Truco |\n|---|---|---|\n| ア | a | Una bandera en un mástil inclinado: «¡**A**quí!». |\n| イ | i | Una persona inclinada que se va: «me voy, **i**r». |\n| ウ | u | う con un tejado cuadrado. |\n| エ | e | Una viga en forma de I: **e**structura de **e**dificio. |\n| オ | o | Alguien con los brazos abiertos y una pierna arriba: «¡**o**lé!». |\n| カ | ka | か sin la gota de sudor. |\n| キ | ki | き sin el gancho de abajo. |\n| ク | ku | El pico de **cu**co, más anguloso que く. |\n| ケ | ke | Una K inclinada: **ke**. |\n| コ | ko | La mitad de un **co**fre cuadrado. |\n| サ | sa | Una **sa**lchicha pinchada con dos palillos. |\n| シ | shi | Dos gotas que caen **de lado** (a la izquierda) y un trazo que sube: lluvia de lado, «shhh». |\n| ス | su | Una persona que corre con las piernas abiertas: ¡**su**be! |\n| セ | se | せ más cuadrada. |\n| ソ | so | Una gota y un trazo largo que **cae de arriba** hacia abajo. |\n\n**Atención**: シ y ソ se confunden con ツ y ン. Lo verás en la próxima lección; de momento, fíjate en la dirección del último trazo."
+        },
+        { "type": "module", "id": "kana-grid", "title": "Escucha las filas ア, カ y サ", "params": { "script": "katakana", "rows": ["a", "ka", "sa"] } },
+        { "type": "module", "id": "kana-mnemonics", "title": "Repasa los trucos", "params": { "script": "katakana", "rows": ["a", "ka", "sa"] } },
+        { "type": "module", "id": "kana-writing", "title": "Traza los quince katakana", "params": { "chars": ["ア", "イ", "ウ", "エ", "オ", "カ", "キ", "ク", "ケ", "コ", "サ", "シ", "ス", "セ", "ソ"] } },
+        {
+          "type": "module",
+          "id": "kana-reading",
+          "title": "Tus primeros préstamos",
+          "params": {
+            "words": [
+              { "kana": "アイス", "es": "helado" },
+              { "kana": "ココア", "es": "chocolate caliente" },
+              { "kana": "スイス", "es": "Suiza" },
+              { "kana": "カカオ", "es": "cacao" },
+              { "kana": "オアシス", "es": "oasis" },
+              { "kana": "キス", "es": "beso" }
+            ]
+          }
+        },
+        { "type": "exercises", "count": 8, "types": ["choose-meaning", "listen-choose", "pinyin-input", "matching", "writing"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ja-u0-katakana-l2",
+      "title": "Katakana: filas T, N y H",
+      "zh": "タチツテト・ナニヌネノ・ハヒフヘホ",
+      "goal": "Reconocer タ〜ホ y no confundir más シ/ツ y ソ/ン.",
+      "minutes": 15,
+      "vocab": [
+        { "hanzi": "テニス", "pinyin": "テニス", "es": "tenis" },
+        { "hanzi": "ナイフ", "pinyin": "ナイフ", "es": "cuchillo" },
+        { "hanzi": "ネクタイ", "pinyin": "ネクタイ", "es": "corbata" },
+        { "hanzi": "テキスト", "pinyin": "テキスト", "es": "libro de texto" },
+        { "hanzi": "タコス", "pinyin": "タコス", "es": "tacos (mexicanos)" },
+        { "hanzi": "ソフト", "pinyin": "ソフト", "es": "suave; programa (software)" },
+        { "hanzi": "スイカ", "pinyin": "スイカ", "es": "sandía; tarjeta Suica (transporte)" }
+      ],
+      "steps": [
+        {
+          "type": "explain",
+          "title": "Cómo recordarlos (y el famoso シツソン)",
+          "markdown": "| Kana | Suena | Truco |\n|---|---|---|\n| タ | ta | ク con una raya dentro: una **ta**za con su asa. |\n| チ | chi | Un **chi**co con sombrero de ala ancha. |\n| ツ | tsu | Dos gotas **arriba** y una ola que cae: **tsu**nami. |\n| テ | te | Un poste de **te**léfono con dos travesaños. |\n| ト | to | Un palo con una rama: un **to**pe para la puerta. |\n| ナ | na | Una cruz inclinada: el cuchillo que corta la **na**ranja. |\n| ニ | ni | Dos rayas: «dos» es **ni**, como に sin el palo. |\n| ヌ | nu | ス con un rasguño: un **nu**do. |\n| ネ | ne | ね hecha con palitos: un poste con brazos. |\n| ノ | no | Un solo barrido de la mano: «**no**». |\n| ハ | ha | Dos trazos que se abren, como una boca riéndose: «**ja**». |\n| ヒ | hi | Una cuchara: risita «**ji ji**». |\n| フ | fu | Media ウ: un soplo de viento en una esquina, «**fu**». |\n| ヘ | he | Igual que へ: una cuesta. |\n| ホ | ho | Un árbol con dos frutas: el jardín del **ho**tel. |\n\n**El cuarteto infernal シ ツ ソ ン**\n\n| | Gotas | Último trazo |\n|---|---|---|\n| シ shi | en **vertical**, a la izquierda | sube desde abajo |\n| ツ tsu | en **horizontal**, arriba | cae de arriba hacia abajo |\n| ン n | una gota arriba a la izquierda | sube desde abajo |\n| ソ so | una gota arriba a la izquierda | cae de arriba hacia abajo |\n\nRegla rápida: **シ y ン se escriben como una sonrisa que sube**; **ツ y ソ, como lluvia que cae**."
+        },
+        { "type": "module", "id": "kana-grid", "title": "Escucha las filas タ, ナ y ハ", "params": { "script": "katakana", "rows": ["ta", "na", "ha"] } },
+        { "type": "module", "id": "kana-mnemonics", "title": "Repasa los trucos", "params": { "script": "katakana", "rows": ["ta", "na", "ha"] } },
+        { "type": "module", "id": "kana-writing", "title": "Traza los quince katakana", "params": { "chars": ["タ", "チ", "ツ", "テ", "ト", "ナ", "ニ", "ヌ", "ネ", "ノ", "ハ", "ヒ", "フ", "ヘ", "ホ"] } },
+        {
+          "type": "module",
+          "id": "kana-reading",
+          "title": "Deporte, ropa y comida",
+          "params": {
+            "words": [
+              { "kana": "テニス", "es": "tenis" },
+              { "kana": "ナイフ", "es": "cuchillo" },
+              { "kana": "ネクタイ", "es": "corbata" },
+              { "kana": "テキスト", "es": "libro de texto" },
+              { "kana": "タコス", "es": "tacos" },
+              { "kana": "ソフト", "es": "suave; software" },
+              { "kana": "スイカ", "es": "sandía" }
+            ]
+          }
+        },
+        { "type": "exercises", "count": 8, "types": ["choose-meaning", "listen-choose", "pinyin-input", "matching", "writing", "similar-characters"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ja-u0-katakana-l3",
+      "title": "Katakana: filas M, Y, R, W, ン y las comillas",
+      "zh": "マ〜ン・ガ〜ポ",
+      "goal": "Completar el katakana básico con sus versiones ゛ y ゜ y leer préstamos comunes.",
+      "minutes": 15,
+      "vocab": [
+        { "hanzi": "パン", "pinyin": "パン", "es": "pan" },
+        { "hanzi": "カメラ", "pinyin": "カメラ", "es": "cámara (de fotos)" },
+        { "hanzi": "テレビ", "pinyin": "テレビ", "es": "televisión" },
+        { "hanzi": "ホテル", "pinyin": "ホテル", "es": "hotel" },
+        { "hanzi": "ワイン", "pinyin": "ワイン", "es": "vino" },
+        { "hanzi": "トマト", "pinyin": "トマト", "es": "tomate" },
+        { "hanzi": "ミルク", "pinyin": "ミルク", "es": "leche" },
+        { "hanzi": "スペイン", "pinyin": "スペイン", "es": "España" },
+        { "hanzi": "アメリカ", "pinyin": "アメリカ", "es": "Estados Unidos; América" },
+        { "hanzi": "メロン", "pinyin": "メロン", "es": "melón" }
+      ],
+      "steps": [
+        {
+          "type": "explain",
+          "title": "Las últimas filas",
+          "markdown": "| Kana | Suena | Truco |\n|---|---|---|\n| マ | ma | Una **ma**má pato con el pico hacia abajo. |\n| ミ | mi | Tres rayitas: tres notas, do-re-**mi**. |\n| ム | mu | Un **mu**slo doblado con la rodilla. |\n| メ | me | Una X: «**me** he equivocado», tacho la respuesta. |\n| モ | mo | も con una raya más arriba. |\n| ヤ | ya | や sin el punto. |\n| ユ | yu | Una U tumbada con una base: el **yu**go. |\n| ヨ | yo | Una E al revés: «**yo**» en el espejo. |\n| ラ | ra | フ con un sombrero: una **ra**ya y una esquina. |\n| リ | ri | Igual que り. |\n| ル | ru | Dos piernas, la derecha con una **ru**edita. |\n| レ | re | Un visto bueno ✓ torcido: **re**visado. |\n| ロ | ro | Una boca cuadrada (el kanji 口 «boca»), pero se lee **ro**. |\n| ワ | wa | ウ sin el sombrero: la taza del **vá**ter de lado. |\n| ヲ | o | Casi no se usa; solo como partícula en textos especiales. |\n| ン | n | Una gota y un trazo que **sube** (no lo confundas con ソ). |\n\n**Dakuten y handakuten** funcionan igual que en hiragana: ガ ギ グ ゲ ゴ, ザ ジ ズ ゼ ゾ, ダ デ ド, バ ビ ブ ベ ボ, パ ピ プ ペ ポ.\n\n**¿Cómo se adaptan las palabras?** El japonés no permite consonantes sueltas (salvo ン), así que añade vocales: *milk* → ミルク (mi-ru-ku), *hotel* → ホテル (ho-te-ru). La *l* pasa a *r*, y la *v* suele pasar a *b*: *television* → テレビ."
+        },
+        { "type": "module", "id": "kana-grid", "title": "Escucha las filas マ〜ン", "params": { "script": "katakana", "rows": ["ma", "ya", "ra", "wa", "n"] } },
+        { "type": "module", "id": "dakuten", "title": "゛ y ゜ en katakana" },
+        { "type": "module", "id": "kana-grid", "title": "Escucha las filas con ゛ y ゜", "params": { "script": "katakana", "rows": ["ga", "za", "da", "ba", "pa"] } },
+        { "type": "module", "id": "kana-mnemonics", "title": "Repasa los trucos", "params": { "script": "katakana", "rows": ["ma", "ya", "ra", "wa", "n"] } },
+        { "type": "module", "id": "kana-writing", "title": "Traza los katakana nuevos", "params": { "chars": ["マ", "ミ", "ム", "メ", "モ", "ヤ", "ユ", "ヨ", "ラ", "リ", "ル", "レ", "ロ", "ワ", "ヲ", "ン", "ガ", "ギ", "グ", "ゲ", "ゴ", "ザ", "ジ", "ズ", "ゼ", "ゾ", "ダ", "デ", "ド", "バ", "ビ", "ブ", "ベ", "ボ", "パ", "ピ", "プ", "ペ", "ポ"] } },
+        {
+          "type": "module",
+          "id": "kana-reading",
+          "title": "Palabras que ya conoces",
+          "params": {
+            "words": [
+              { "kana": "パン", "es": "pan" },
+              { "kana": "カメラ", "es": "cámara" },
+              { "kana": "テレビ", "es": "televisión" },
+              { "kana": "ホテル", "es": "hotel" },
+              { "kana": "ワイン", "es": "vino" },
+              { "kana": "トマト", "es": "tomate" },
+              { "kana": "ミルク", "es": "leche" },
+              { "kana": "スペイン", "es": "España" },
+              { "kana": "アメリカ", "es": "Estados Unidos" },
+              { "kana": "メロン", "es": "melón" }
+            ]
+          }
+        },
+        { "type": "exercises", "count": 8, "types": ["choose-meaning", "listen-choose", "pinyin-input", "matching", "writing"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ja-u0-katakana-l4",
+      "title": "La raya larga ー, la ッ y las combinaciones nuevas",
+      "zh": "コーヒー・サッカー・パーティー",
+      "goal": "Leer vocales largas con ー, la pausa ッ y combinaciones como シャ, ティ o ファ; escribir tu nombre.",
+      "minutes": 15,
+      "vocab": [
+        { "hanzi": "コーヒー", "pinyin": "コーヒー", "es": "café" },
+        { "hanzi": "ケーキ", "pinyin": "ケーキ", "es": "pastel; tarta" },
+        { "hanzi": "ノート", "pinyin": "ノート", "es": "cuaderno" },
+        { "hanzi": "ベッド", "pinyin": "ベッド", "es": "cama" },
+        { "hanzi": "シャツ", "pinyin": "シャツ", "es": "camisa; camiseta" },
+        { "hanzi": "ジュース", "pinyin": "ジュース", "es": "zumo; refresco" },
+        { "hanzi": "パーティー", "pinyin": "パーティー", "es": "fiesta" },
+        { "hanzi": "カフェ", "pinyin": "カフェ", "es": "cafetería" },
+        { "hanzi": "フォーク", "pinyin": "フォーク", "es": "tenedor" },
+        { "hanzi": "サッカー", "pinyin": "サッカー", "es": "fútbol" }
+      ],
+      "steps": [
+        {
+          "type": "explain",
+          "title": "Tres herramientas del katakana",
+          "markdown": "**1. La raya larga ー (chōonpu)**: en katakana las vocales largas no se escriben con otra vocal, sino con una raya que **alarga** el sonido anterior un tiempo: コーヒー = *ko-o-hi-i* (4 tiempos). En texto vertical la raya también se pone vertical.\n\n**2. La ッ pequeña**: igual que っ, una pausa antes de la consonante: ベッド *bed-do*, サッカー *sak-kaa*.\n\n**3. Combinaciones**: además de キャ, シュ, チョ… (como en hiragana), el katakana usa **vocales pequeñas** ァ ィ ゥ ェ ォ para sonidos extranjeros:\n\n| Combinación | Suena | Ejemplo |\n|---|---|---|\n| ティ / ディ | ti / di | パーティー (fiesta) |\n| ファ フィ フェ フォ | fa fi fe fo | カフェ, フォーク |\n| ウィ ウェ ウォ | wi we wo | ウェブ (web) |\n| チェ シェ ジェ | che she je | チェック (comprobar) |\n| ヴ | vu (se dice *bu*) | ヴァイオリン |\n\n**Tu nombre en japonés**: *Hugo* (la *h* española es muda) → **ウーゴ** *Ūgo*. Otros: Madrid → マドリード, Barcelona → バルセロナ, Valencia → バレンシア. Los nombres extranjeros siempre van en katakana."
+        },
+        { "type": "module", "id": "sokuon-long", "title": "ー y ッ: cuenta los tiempos" },
+        { "type": "module", "id": "yoon", "title": "Combinaciones en katakana" },
+        { "type": "module", "id": "kana-writing", "title": "Traza los signos pequeños", "params": { "chars": ["ー", "ッ", "ャ", "ュ", "ョ", "ァ", "ィ", "ゥ", "ェ", "ォ"] } },
+        {
+          "type": "module",
+          "id": "kana-reading",
+          "title": "En la cafetería y en la tienda",
+          "params": {
+            "words": [
+              { "kana": "コーヒー", "es": "café" },
+              { "kana": "ケーキ", "es": "pastel" },
+              { "kana": "ノート", "es": "cuaderno" },
+              { "kana": "ベッド", "es": "cama" },
+              { "kana": "シャツ", "es": "camisa" },
+              { "kana": "ジュース", "es": "zumo" },
+              { "kana": "パーティー", "es": "fiesta" },
+              { "kana": "カフェ", "es": "cafetería" },
+              { "kana": "フォーク", "es": "tenedor" },
+              { "kana": "ウーゴ", "es": "Hugo" }
+            ]
+          }
+        },
+        { "type": "exercises", "count": 8, "types": ["choose-meaning", "listen-choose", "pinyin-input", "matching", "writing"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ja-u0-katakana-l5",
+      "title": "Primeros kanji",
+      "zh": "はじめての漢字",
+      "goal": "Entender qué es un kanji, por qué tiene varias lecturas y reconocer los diez primeros.",
+      "minutes": 15,
+      "vocab": [
+        { "hanzi": "人", "pinyin": "ひと", "es": "persona" },
+        { "hanzi": "山", "pinyin": "やま", "es": "montaña" },
+        { "hanzi": "川", "pinyin": "かわ", "es": "río" },
+        { "hanzi": "日", "pinyin": "ひ", "es": "sol; día" },
+        { "hanzi": "月", "pinyin": "つき", "es": "luna; mes" },
+        { "hanzi": "木", "pinyin": "き", "es": "árbol" },
+        { "hanzi": "水", "pinyin": "みず", "es": "agua" },
+        { "hanzi": "本", "pinyin": "ほん", "es": "libro" },
+        { "hanzi": "日本", "pinyin": "にほん", "es": "Japón" },
+        { "hanzi": "日本人", "pinyin": "にほんじん", "es": "japonés/japonesa (persona)" }
+      ],
+      "steps": [
+        {
+          "type": "explain",
+          "title": "Kanji: dibujos con significado",
+          "markdown": "Los **kanji** (漢字, «caracteres de los Han») llegaron desde China hace unos 1500 años. Cada uno tiene un **significado**, y muchos empezaron siendo dibujos:\n\n| Kanji | Dibujo de… | Significado |\n|---|---|---|\n| 山 | tres picos | montaña |\n| 川 | agua que corre | río |\n| 木 | tronco con ramas y raíces | árbol |\n| 日 | el sol (antes un círculo con un punto) | sol; día |\n| 人 | una persona caminando | persona |\n\n**¿Para qué sirven si ya tengo kana?** El japonés no separa palabras con espacios y tiene muchísimos homófonos (はし = palillos, puente, borde). Los kanji marcan dónde empieza cada palabra y qué significa: 橋 (puente) vs 箸 (palillos).\n\n**Una frase típica mezcla todo**: 私**は**ウーゴ**です**。 → kanji (raíz: 私 «yo»), hiragana (gramática: は, です) y katakana (nombre extranjero).\n\nPara el JLPT N5 necesitarás unos **100 kanji**. No hace falta saberlos antes de seguir: los aprenderás poco a poco dentro de las palabras."
+        },
+        {
+          "type": "explain",
+          "title": "Varias lecturas: on'yomi y kun'yomi",
+          "markdown": "Aquí está la mayor diferencia con el chino: **un kanji suele tener varias lecturas**.\n\n- **Kun'yomi** (lectura japonesa): la palabra japonesa nativa. Suele usarse cuando el kanji va solo. 山 = **やま**, 人 = **ひと**, 日 = **ひ**.\n- **On'yomi** (lectura «china»): una adaptación del chino antiguo. Suele usarse en palabras compuestas. 山 = **さん** (富士山 *Fujisan*), 人 = **じん** (日本人 *nihonjin*), 日 = **に/にち** (日本 *nihon*).\n\nNo memorices listas de lecturas sueltas: **aprende palabras** (日本, 日本人, 山) y las lecturas vendrán solas.\n\n**Okurigana**: la parte en hiragana que sigue al kanji en verbos y adjetivos: 大**きい** (grande), 食**べる** (comer). El kanji lleva el significado; el hiragana, la gramática.\n\n**Furigana**: los kana pequeños que a veces se ponen encima de un kanji para indicar su lectura. En esta app, la lectura en kana siempre está disponible."
+        },
+        { "type": "module", "id": "kanji-intro", "title": "Tus diez primeros kanji" },
+        { "type": "exercises", "count": 8, "types": ["choose-meaning", "choose-character", "pinyin-input", "matching", "writing"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ja-u0-katakana-l6",
+      "title": "El acento tonal",
+      "zh": "アクセント",
+      "goal": "Entender el acento de altura del japonés, distinguir pares como あめ (lluvia) / あめ (caramelo) y evitar los errores típicos de un hispanohablante.",
+      "minutes": 15,
+      "vocab": [
+        { "hanzi": "雨", "pinyin": "あめ", "es": "lluvia (alto-bajo: Á-me)" },
+        { "hanzi": "飴", "pinyin": "あめ", "es": "caramelo (bajo-alto: a-MÉ)" },
+        { "hanzi": "箸", "pinyin": "はし", "es": "palillos (alto-bajo: HÁ-shi)" },
+        { "hanzi": "橋", "pinyin": "はし", "es": "puente (bajo-alto y baja después)" },
+        { "hanzi": "花", "pinyin": "はな", "es": "flor (bajo-alto y baja después)" },
+        { "hanzi": "鼻", "pinyin": "はな", "es": "nariz (bajo-alto y se queda alto)" },
+        { "hanzi": "今", "pinyin": "いま", "es": "ahora (alto-bajo)" }
+      ],
+      "steps": [
+        {
+          "type": "explain",
+          "title": "Altura, no fuerza",
+          "markdown": "En español el acento es de **intensidad**: la sílaba tónica se dice más fuerte y más larga (*CA-sa*). En japonés el acento es de **altura** (*pitch*): cada mora se dice **alta** o **baja**, sin más fuerza ni más duración.\n\nReglas del japonés estándar (Tokio):\n\n1. La primera mora y la segunda **siempre son distintas**: si una es alta, la otra es baja.\n2. Dentro de una palabra, el tono **solo baja una vez** como mucho. Ese punto de bajada es «el acento».\n\n| Tipo | Patrón | Ejemplo |\n|---|---|---|\n| Atamadaka (cabeza alta) | ALTO-bajo-bajo | 雨 **あ**め (lluvia), 今 **い**ま |\n| Heiban (llano) | bajo-ALTO-ALTO, y la partícula sigue alta | 飴 あ**め** (caramelo), 鼻 は**な** |\n| Odaka (cola alta) | bajo-ALTO, y la partícula **baja** | 花 は**な**が↘ (flor), 橋 は**し** |\n| Nakadaka (medio alto) | bajo-ALTO-bajo | お**かし** (dulces): お-**か**-し |\n\n**¿Cuánto importa?** Mucho menos que los tonos del chino: casi siempre el contexto aclara, y hay variación regional (Osaka lo hace distinto). Pero una melodía correcta hace que suenes natural y te entiendan a la primera. Objetivo realista: **no poner acento de intensidad español** y aprender la melodía de las palabras más frecuentes al escucharlas."
+        },
+        { "type": "module", "id": "pitch-accent", "title": "Escucha y compara los patrones" },
+        {
+          "type": "explain",
+          "title": "Lo que delata a un hispanohablante",
+          "markdown": "Los errores más frecuentes (y fáciles de evitar):\n\n- **Acortar las vocales largas**: おばあさん (abuela) → おばさん (tía). Cuenta los tiempos.\n- **Ignorar la っ**: きって (sello) → きて (ven). Haz la pausa.\n- **Pronunciar la う redondeada y fuerte**: la う japonesa es relajada, y en です o します casi desaparece (*des*, *shimas*).\n- **La ん a la española**: antes de vocal o al final de palabra no es una *n* clara: es nasal y dura un tiempo entero.\n- **La r fuerte**: nunca «rr». Siempre como en «pero».\n- **La じ como j española**: じ es *dʒi* (parecida a «yi» con fuerza), no «ji» de «jamón».\n- **Golpear la penúltima sílaba**: decir *ka-RA-te* o *to-YO-ta* con fuerza. En japonés no hay golpe: solo altura.\n\nEl módulo siguiente recoge estos puntos con audio para que los compares."
+        },
+        { "type": "module", "id": "spanish-errors", "title": "Errores típicos de hispanohablantes" },
+        { "type": "exercises", "count": 8, "types": ["tone-choice", "tone-pair", "listen-choose", "choose-meaning", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    }
+  ]
+}

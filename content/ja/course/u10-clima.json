@@ -1,0 +1,174 @@
+{
+  "id": "ja-u10",
+  "order": 11,
+  "title": "El tiempo",
+  "zh": "天気",
+  "description": "Hablar del tiempo en Tokio y Kioto: previsiones con でしょう, cómo hizo ayer, comparar estaciones y matizar con が «pero».",
+  "icon": "CloudSun",
+  "level": 1,
+  "lang": "ja",
+  "category": "Tiempo atmosférico",
+  "checkpoint": { "exercises": 15 },
+  "lessons": [
+    {
+      "id": "ja-u10-l1",
+      "title": "Mañana lloverá",
+      "zh": "明日は雨でしょう",
+      "goal": "Entender y dar previsiones del tiempo con でしょう.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "天気", "pinyin": "てんき", "es": "tiempo (atmosférico)", "note": "いい天気 = buen tiempo." },
+        { "hanzi": "雨", "pinyin": "あめ", "es": "lluvia" },
+        { "hanzi": "雪", "pinyin": "ゆき", "es": "nieve" },
+        { "hanzi": "降る", "pinyin": "ふる", "es": "caer (lluvia, nieve)", "note": "雨が降る = llover." },
+        { "hanzi": "晴れる", "pinyin": "はれる", "es": "despejarse; hacer sol" },
+        { "hanzi": "傘", "pinyin": "かさ", "es": "paraguas" },
+        { "hanzi": "午後", "pinyin": "ごご", "es": "tarde (p. m.)" },
+        { "hanzi": "持つ", "pinyin": "もつ", "es": "tener; llevar (en la mano)", "note": "持って行く = llevarse (algo)." }
+      ],
+      "steps": [
+        { "type": "vocab" },
+        {
+          "type": "dialogue",
+          "title": "¿Qué tiempo hará en Kioto?",
+          "lines": [
+            { "speaker": "ウーゴ", "zh": "さくらさん、明日の天気はどうですか。", "py": "さくら さん、あした の てんき は どう です か。", "es": "Sakura, ¿qué tiempo hará mañana?" },
+            { "speaker": "さくら", "zh": "ちょっと待ってください。…明日は朝から雨でしょう。", "py": "ちょっと まって ください。…あした は あさ から あめ でしょう。", "es": "Espera un momento… Mañana lloverá desde por la mañana." },
+            { "speaker": "ウーゴ", "zh": "えっ、雨ですか。明日は京都のお寺へ行きます。", "py": "えっ、あめ です か。あした は きょうと の おてら へ いきます。", "es": "¿Qué? ¿Lluvia? Mañana voy a los templos de Kioto." },
+            { "speaker": "さくら", "zh": "午後は晴れるでしょう。でも、傘を持って行ってください。", "py": "ごご は はれる でしょう。でも、かさ を もって いって ください。", "es": "Por la tarde seguramente saldrá el sol. Pero llévate el paraguas." },
+            { "speaker": "ウーゴ", "zh": "傘がありません。", "py": "かさ が ありません。", "es": "No tengo paraguas." },
+            { "speaker": "さくら", "zh": "コンビニで買ってください。五百円ぐらいでしょう。", "py": "コンビニ で かって ください。ごひゃく えん ぐらい でしょう。", "es": "Cómpralo en la konbini. Costará unos quinientos yenes." }
+          ],
+          "notes": "でしょう va detrás de nombres (雨でしょう) y de la forma de diccionario (晴れるでしょう). お寺 おてら = templo budista. En Japón, en cuanto empieza a llover, las コンビニ venden paraguas de plástico transparentes baratos."
+        },
+        { "type": "grammar", "id": "deshou" },
+        { "type": "exercises", "count": 10, "types": ["choose-meaning", "listen-choose", "pinyin-input", "fill-blank", "order-words", "matching", "particle", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ja-u10-l2",
+      "title": "Ayer hizo mucho frío",
+      "zh": "寒かったです",
+      "goal": "Poner los adjetivos en pasado y en negativo: 寒かった・寒くない・寒くなかった.",
+      "minutes": 14,
+      "vocab": [
+        { "hanzi": "暑い", "pinyin": "あつい", "es": "caluroso (tiempo)" },
+        { "hanzi": "寒い", "pinyin": "さむい", "es": "frío (tiempo)" },
+        { "hanzi": "暖かい", "pinyin": "あたたかい", "es": "templado; cálido" },
+        { "hanzi": "涼しい", "pinyin": "すずしい", "es": "fresco (agradable)" },
+        { "hanzi": "風", "pinyin": "かぜ", "es": "viento" },
+        { "hanzi": "強い", "pinyin": "つよい", "es": "fuerte" },
+        { "hanzi": "弱い", "pinyin": "よわい", "es": "débil" },
+        { "hanzi": "夜", "pinyin": "よる", "es": "noche" }
+      ],
+      "steps": [
+        { "type": "vocab" },
+        {
+          "type": "dialogue",
+          "title": "De vuelta de Kioto",
+          "lines": [
+            { "speaker": "田中先生", "zh": "ウーゴさん、京都の天気はどうでしたか。", "py": "ウーゴ さん、きょうと の てんき は どう でした か。", "es": "Hugo, ¿qué tiempo hizo en Kioto?" },
+            { "speaker": "ウーゴ", "zh": "一日目はとても寒かったです。風も強かったです。", "py": "いちにちめ は とても さむかった です。かぜ も つよかった です。", "es": "El primer día hizo mucho frío. Y el viento también era fuerte." },
+            { "speaker": "田中先生", "zh": "そうですか。雪は降りましたか。", "py": "そう です か。ゆき は ふりました か。", "es": "¿Ah, sí? ¿Nevó?" },
+            { "speaker": "ウーゴ", "zh": "いいえ、降りませんでした。二日目は寒くなかったです。暖かかったです。", "py": "いいえ、ふりませんでした。ふつかめ は さむく なかった です。あたたかかった です。", "es": "No, no nevó. El segundo día no hizo frío. Hizo bueno." },
+            { "speaker": "田中先生", "zh": "よかったですね。", "py": "よかった です ね。", "es": "¡Qué bien!" },
+            { "speaker": "ウーゴ", "zh": "はい。でも、夜は少し寒かったです。", "py": "はい。でも、よる は すこし さむかった です。", "es": "Sí. Pero por la noche hizo un poco de frío." }
+          ],
+          "notes": "一日目 いちにちめ / 二日目 ふつかめ = el primer / segundo día (〜目 = ordinal). Ojo: いい → よかった (pasado), よくない (negativo): いい es irregular."
+        },
+        { "type": "grammar", "id": "adjective-past-negative" },
+        { "type": "exercises", "count": 10, "types": ["conjugation", "choose-meaning", "listen-choose", "fill-blank", "order-words", "translate-to-es", "matching", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ja-u10-l3",
+      "title": "Más frío que Madrid",
+      "zh": "東京よりマドリードの方が寒いです",
+      "goal": "Comparar dos cosas con より y 〜の方が, y decir cuál es la que más con 一番.",
+      "minutes": 13,
+      "vocab": [
+        { "hanzi": "春", "pinyin": "はる", "es": "primavera" },
+        { "hanzi": "夏", "pinyin": "なつ", "es": "verano" },
+        { "hanzi": "秋", "pinyin": "あき", "es": "otoño" },
+        { "hanzi": "冬", "pinyin": "ふゆ", "es": "invierno" },
+        { "hanzi": "一番", "pinyin": "いちばん", "es": "el más; número uno" },
+        { "hanzi": "どちら", "pinyin": "どちら", "es": "cuál (de dos); dónde (formal)" },
+        { "hanzi": "方", "pinyin": "ほう", "es": "lado; (en comparaciones) el/la que", "note": "AのほうがB = A es más B (AよりBのほうが…)." },
+        { "hanzi": "多い", "pinyin": "おおい", "es": "mucho; abundante" }
+      ],
+      "steps": [
+        { "type": "vocab" },
+        {
+          "type": "dialogue",
+          "title": "España y Japón",
+          "lines": [
+            { "speaker": "けん", "zh": "スペインと日本と、どちらが暑いですか。", "py": "スペイン と にほん と、どちら が あつい です か。", "es": "¿Dónde hace más calor, en España o en Japón?" },
+            { "speaker": "ウーゴ", "zh": "夏はマドリードの方が暑いです。でも、東京は雨が多いです。", "py": "なつ は マドリード の ほう が あつい です。でも、とうきょう は あめ が おおい です。", "es": "En verano hace más calor en Madrid. Pero en Tokio llueve mucho." },
+            { "speaker": "けん", "zh": "冬はどうですか。", "py": "ふゆ は どう です か。", "es": "¿Y en invierno?" },
+            { "speaker": "ウーゴ", "zh": "冬は東京よりマドリードの方が寒いです。", "py": "ふゆ は とうきょう より マドリード の ほう が さむい です。", "es": "En invierno hace más frío en Madrid que en Tokio." },
+            { "speaker": "けん", "zh": "へえ。ウーゴさんはいつが一番好きですか。", "py": "へえ。ウーゴ さん は いつ が いちばん すき です か。", "es": "¡Anda! Hugo, ¿qué época te gusta más?" },
+            { "speaker": "ウーゴ", "zh": "春が一番好きです。日本の桜を見たいです。", "py": "はる が いちばん すき です。にほん の さくら を みたい です。", "es": "La que más, la primavera. Quiero ver los cerezos en flor de Japón." },
+            { "speaker": "けん", "zh": "私は秋が好きです。京都の秋は春よりきれいですよ。", "py": "わたし は あき が すき です。きょうと の あき は はる より きれい です よ。", "es": "A mí me gusta el otoño. En Kioto, el otoño es más bonito que la primavera, ¿sabes?" }
+          ],
+          "notes": "AとBと、どちらが〜ですか = ¿cuál es más…, A o B? 桜 さくら = cerezo en flor (como el nombre de Sakura). Para cuatro estaciones se puede decir también どの季節 (きせつ, «estación»; adelanto)."
+        },
+        { "type": "grammar", "id": "yori-comparison" },
+        { "type": "exercises", "count": 10, "types": ["choose-meaning", "listen-choose", "particle", "order-words", "build-sentence", "fill-blank", "pinyin-input", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ja-u10-l4",
+      "title": "Nublado pero templado: lectura y repaso",
+      "zh": "曇りですが、暖かいです",
+      "goal": "Unir dos frases que contrastan con が («pero») y repasar el tiempo con una previsión.",
+      "minutes": 15,
+      "vocab": [
+        { "hanzi": "曇り", "pinyin": "くもり", "es": "nublado" },
+        { "hanzi": "空", "pinyin": "そら", "es": "cielo" },
+        { "hanzi": "青い", "pinyin": "あおい", "es": "azul" },
+        { "hanzi": "明るい", "pinyin": "あかるい", "es": "luminoso; claro" },
+        { "hanzi": "暗い", "pinyin": "くらい", "es": "oscuro" },
+        { "hanzi": "外", "pinyin": "そと", "es": "fuera; exterior" },
+        { "hanzi": "散歩", "pinyin": "さんぽ", "es": "paseo", "note": "散歩する = pasear." },
+        { "hanzi": "出かける", "pinyin": "でかける", "es": "salir (de casa)" }
+      ],
+      "steps": [
+        { "type": "vocab" },
+        {
+          "type": "dialogue",
+          "title": "¿Salimos a pasear?",
+          "lines": [
+            { "speaker": "さくら", "zh": "今日は曇りですが、暖かいですね。", "py": "きょう は くもり です が、あたたかい です ね。", "es": "Hoy está nublado, pero hace bueno, ¿eh?" },
+            { "speaker": "ウーゴ", "zh": "そうですね。空は暗いですが、雨は降らないでしょう。", "py": "そう です ね。そら は くらい です が、あめ は ふらない でしょう。", "es": "Sí. El cielo está oscuro, pero seguramente no lloverá." },
+            { "speaker": "さくら", "zh": "じゃあ、散歩に出かけましょう。", "py": "じゃあ、さんぽ に でかけましょう。", "es": "Entonces, salgamos a dar un paseo." },
+            { "speaker": "ウーゴ", "zh": "いいですね。すみませんが、ちょっと待ってください。傘を持って行きます。", "py": "いい です ね。すみません が、ちょっと まって ください。かさ を もって いきます。", "es": "Vale. Perdona, pero espera un momento. Me llevo el paraguas." },
+            { "speaker": "さくら", "zh": "あ、外を見てください。空が青くなりましたよ。", "py": "あ、そと を みて ください。そら が あおく なりました よ。", "es": "¡Ah, mira fuera! El cielo se ha puesto azul." },
+            { "speaker": "ウーゴ", "zh": "本当ですね。じゃあ、傘はいりませんね。", "py": "ほんとう です ね。じゃあ、かさ は いりません ね。", "es": "¡Es verdad! Entonces no hace falta el paraguas." }
+          ],
+          "notes": "すみませんが = «perdona, pero…»: が suaviza una petición. 〜ましょう = vamos a… (lo verás en la unidad de ocio). 青い → 青くなる = ponerse azul. いる (要る, godan) = necesitar: いりません = no hace falta."
+        },
+        { "type": "grammar", "id": "ga-but" },
+        {
+          "type": "reading",
+          "title": "El tiempo de esta semana en Tokio",
+          "text": "今日の東京は朝から曇りですが、雨は降らないでしょう。午後は晴れて、暖かくなるでしょう。明日は今日より寒いでしょう。風も強いでしょう。夜は雪が降るでしょう。出かける時は、傘を持って行ってください。土曜日と日曜日は晴れて、いい天気でしょう。散歩にいいですね。",
+          "es": "Hoy en Tokio está nublado desde por la mañana, pero seguramente no lloverá. Por la tarde saldrá el sol y hará bueno. Mañana hará más frío que hoy. El viento también será fuerte. Por la noche seguramente nevará. Cuando salgáis, llevad paraguas. El sábado y el domingo estará despejado y hará buen tiempo. Ideal para pasear.",
+          "questions": [
+            { "q": "¿Lloverá hoy?", "options": ["Sí, toda la mañana", "Seguramente no", "Sí, por la tarde", "Nevará"], "answer": 1, "explain": "雨は降らないでしょう = seguramente no lloverá." },
+            { "q": "¿Cómo será mañana comparado con hoy?", "options": ["Más caluroso", "Igual", "Más frío", "Más soleado"], "answer": 2, "explain": "明日は今日より寒いでしょう。" },
+            { "q": "¿Qué tiempo hará el fin de semana?", "options": ["Lluvia", "Nieve", "Viento fuerte", "Buen tiempo"], "answer": 3, "explain": "土曜日と日曜日は晴れて、いい天気でしょう。" }
+          ]
+        },
+        { "type": "exercises", "count": 12, "types": ["matching", "choose-meaning", "conjugation", "particle", "order-words", "build-sentence", "fill-blank", "dictation", "translate-to-es", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    }
+  ]
+}

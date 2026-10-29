@@ -1,8 +1,11 @@
-import { isHanzi } from "@/lib/pinyin/convert";
-
+/**
+ * Segmentación por máxima coincidencia con un léxico (diccionario + palabras del usuario),
+ * independiente de la escritura: `isScript` decide qué caracteres forman «tramos» segmentables
+ * (hanzi en chino, hangul en coreano; el japonés usa su analizador morfológico).
+ */
 export interface Token {
   text: string;
-  isWord: boolean; // true si contiene hanzi
+  isWord: boolean; // true si contiene caracteres de la escritura meta
   start: number; // índice (en code points) dentro del texto
 }
 
@@ -17,29 +20,29 @@ export function lexiconFromSet(set: Set<string>): Lexicon {
   return { has: (w) => set.has(w), maxLen: Math.min(maxLen, 8) };
 }
 
+const HANZI_RE = /[一-鿿㐀-䶿]/;
+export const isHanziChar = (ch: string) => HANZI_RE.test(ch);
+
 /**
- * Segmentación por máxima coincidencia hacia delante con un léxico (diccionario + palabras del usuario),
- * con corrección "backward" para resolver ambigüedades típicas. Si no hay léxico, usa Intl.Segmenter.
+ * Máxima coincidencia hacia delante con corrección "backward". Si no hay léxico, usa Intl.Segmenter.
  */
-export function segment(text: string, lexicon?: Lexicon): Token[] {
+export function segment(text: string, lexicon?: Lexicon, isScript: (ch: string) => boolean = isHanziChar, locale = "zh"): Token[] {
   const chars = Array.from(text);
   const tokens: Token[] = [];
   let i = 0;
   while (i < chars.length) {
     const ch = chars[i];
-    if (!isHanzi(ch)) {
-      // agrupa no-hanzi consecutivos (puntuación, latín, números)
+    if (!isScript(ch)) {
       let j = i + 1;
-      while (j < chars.length && !isHanzi(chars[j])) j++;
+      while (j < chars.length && !isScript(chars[j])) j++;
       tokens.push({ text: chars.slice(i, j).join(""), isWord: false, start: i });
       i = j;
       continue;
     }
-    // tramo de hanzi consecutivos
     let j = i;
-    while (j < chars.length && isHanzi(chars[j])) j++;
+    while (j < chars.length && isScript(chars[j])) j++;
     const run = chars.slice(i, j);
-    const words = lexicon ? maxMatch(run, lexicon) : intlSegment(run.join(""));
+    const words = lexicon ? maxMatch(run, lexicon) : intlSegment(run.join(""), locale);
     let pos = i;
     for (const w of words) {
       tokens.push({ text: w, isWord: true, start: pos });
@@ -50,10 +53,9 @@ export function segment(text: string, lexicon?: Lexicon): Token[] {
   return tokens;
 }
 
-function maxMatch(chars: string[], lex: Lexicon): string[] {
+export function maxMatch(chars: string[], lex: Lexicon): string[] {
   const fwd = forward(chars, lex);
   const bwd = backward(chars, lex);
-  // Heurística clásica: menos tokens; empate → menos tokens de un carácter.
   if (bwd.length < fwd.length) return bwd;
   if (bwd.length === fwd.length) {
     const single = (a: string[]) => a.filter((w) => w.length === 1).length;
@@ -100,24 +102,24 @@ function backward(chars: string[], lex: Lexicon): string[] {
   return out;
 }
 
-function intlSegment(text: string): string[] {
+export function intlSegment(text: string, locale = "zh"): string[] {
   if (typeof Intl !== "undefined" && "Segmenter" in Intl) {
-    const seg = new Intl.Segmenter("zh", { granularity: "word" });
+    const seg = new Intl.Segmenter(locale, { granularity: "word" });
     return Array.from(seg.segment(text)).map((s) => s.segment);
   }
   return Array.from(text);
 }
 
-/** Palabras (solo hanzi) de un texto. */
-export function wordsOf(text: string, lexicon?: Lexicon): string[] {
-  return segment(text, lexicon)
+/** Palabras (solo escritura meta) de un texto. */
+export function wordsOf(text: string, lexicon?: Lexicon, isScript?: (ch: string) => boolean): string[] {
+  return segment(text, lexicon, isScript)
     .filter((t) => t.isWord)
     .map((t) => t.text);
 }
 
 /** % de palabras conocidas de un texto (por tokens, no por tipos). */
-export function comprehension(text: string, known: Set<string>, lexicon?: Lexicon): { ratio: number; total: number; unknown: string[] } {
-  const words = wordsOf(text, lexicon);
+export function comprehension(text: string, known: Set<string>, lexicon?: Lexicon, isScript?: (ch: string) => boolean): { ratio: number; total: number; unknown: string[] } {
+  const words = wordsOf(text, lexicon, isScript);
   if (!words.length) return { ratio: 1, total: 0, unknown: [] };
   const unknown: string[] = [];
   let k = 0;

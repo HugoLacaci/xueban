@@ -1,0 +1,237 @@
+{
+  "id": "ja-u06",
+  "order": 7,
+  "title": "Compras y dinero",
+  "zh": "買い物とお金",
+  "description": "Preguntar precios y entender cifras grandes en yenes, comparar colores y productos, pedir que te enseñen algo, probarte ropa y pagar en un konbini.",
+  "icon": "ShoppingBag",
+  "level": 1,
+  "lang": "ja",
+  "category": "Casa y objetos",
+  "checkpoint": { "exercises": 15 },
+  "lessons": [
+    {
+      "id": "ja-u06-l1",
+      "title": "¿Cuánto cuesta?",
+      "zh": "これはいくらですか",
+      "goal": "Preguntar precios, entender cientos, miles y decenas de miles de yenes y decir lo que quieres con ほしい.",
+      "minutes": 15,
+      "vocab": [
+        { "hanzi": "いくら", "pinyin": "いくら", "es": "¿cuánto (cuesta)?" },
+        { "hanzi": "万", "pinyin": "まん", "es": "diez mil" },
+        { "hanzi": "安い", "pinyin": "やすい", "es": "barato" },
+        { "hanzi": "新しい", "pinyin": "あたらしい", "es": "nuevo" },
+        { "hanzi": "古い", "pinyin": "ふるい", "es": "viejo (cosas)" },
+        { "hanzi": "ほしい", "pinyin": "ほしい", "es": "querer (tener algo)" },
+        { "hanzi": "財布", "pinyin": "さいふ", "es": "cartera; monedero" },
+        { "hanzi": "時計", "pinyin": "とけい", "es": "reloj" },
+        { "hanzi": "買います", "pinyin": "かいます", "es": "comprar" },
+        { "hanzi": "もう少し", "pinyin": "もうすこし", "es": "un poco más" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "Comprar y precios" },
+        {
+          "type": "dialogue",
+          "title": "Una cartera nueva",
+          "lines": [
+            { "speaker": "ウーゴ", "zh": "新しい 財布が ほしいです。", "py": "あたらしい さいふ が ほしい です。", "es": "Quiero una cartera nueva." },
+            { "speaker": "さくら", "zh": "この 財布は どうですか。", "py": "この さいふ は どう です か。", "es": "¿Qué tal esta?" },
+            { "speaker": "ウーゴ", "zh": "いいですね。すみません、これは いくらですか。", "py": "いい です ね。すみません、これ は いくら です か。", "es": "Está bien. Perdone, ¿cuánto cuesta esta?" },
+            { "speaker": "店員", "zh": "三千八百円です。", "py": "さんぜん はっぴゃく えん です。", "es": "3800 yenes." },
+            { "speaker": "ウーゴ", "zh": "うーん、もう少し 安いのは ありますか。", "py": "うーん、もう すこし やすい の は あります か。", "es": "Mmm, ¿tiene alguna un poco más barata?" },
+            { "speaker": "店員", "zh": "こちらは 千五百円です。", "py": "こちら は せん ごひゃく えん です。", "es": "Esta cuesta 1500 yenes." },
+            { "speaker": "ウーゴ", "zh": "じゃあ、これを ください。", "py": "じゃあ、これ を ください。", "es": "Pues me llevo esta." }
+          ],
+          "notes": "安いの = una barata («la barata»): の sustituye al nombre para no repetir 財布. ありますか = ¿tiene?, ¿hay? (para cosas). これを ください = me llevo esto."
+        },
+        { "type": "grammar", "id": "hoshii" },
+        {
+          "type": "explain",
+          "title": "Cifras grandes: el truco del 万",
+          "markdown": "**Cientos y miles** tienen algunos cambios de sonido:\n\n| | 100 | 300 | 600 | 800 | 1000 | 3000 | 8000 |\n|---|---|---|---|---|---|---|---|\n| Lectura | ひゃく | さん**びゃく** | **ろっぴゃく** | **はっぴゃく** | せん | さん**ぜん** | **はっせん** |\n\n**El 万 (まん) = 10.000** es la clave. El japonés agrupa las cifras de cuatro en cuatro, no de tres en tres como el español:\n\n| Cifra | Japonés | Lectura |\n|---|---|---|\n| 10.000 | 一万 | いちまん |\n| 25.000 | 二万五千 | にまん ごせん |\n| 100.000 | 十万 | じゅうまん |\n| 1.000.000 | 百万 | ひゃくまん |\n\nPara pasar de yenes a euros, una aproximación rápida es dividir entre 150–170 (el cambio varía). Y fíjate en las etiquetas: en Japón los precios suelen indicar si llevan el impuesto incluido (**税込** ぜいこみ) o no (**税抜** ぜいぬき). El impuesto al consumo es del 10 % (8 % para alimentos)."
+        },
+        { "type": "exercises", "count": 12, "types": ["choose-meaning", "listen-choose", "pinyin-input", "dictation", "fill-blank", "particle", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ja-u06-l2",
+      "title": "¿Roja o azul?",
+      "zh": "どちらがいいですか",
+      "goal": "Nombrar colores y comparar dos cosas con 〜より y 〜のほうが.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "赤い", "pinyin": "あかい", "es": "rojo" },
+        { "hanzi": "青い", "pinyin": "あおい", "es": "azul" },
+        { "hanzi": "白い", "pinyin": "しろい", "es": "blanco" },
+        { "hanzi": "黒い", "pinyin": "くろい", "es": "negro" },
+        { "hanzi": "黄色い", "pinyin": "きいろい", "es": "amarillo" },
+        { "hanzi": "色", "pinyin": "いろ", "es": "color" },
+        { "hanzi": "シャツ", "pinyin": "シャツ", "es": "camisa; camiseta" },
+        { "hanzi": "どちら", "pinyin": "どちら", "es": "¿cuál (de los dos)?" },
+        { "hanzi": "〜より", "pinyin": "より", "es": "que (en comparaciones)" },
+        { "hanzi": "〜のほうが", "pinyin": "のほうが", "es": "más… (el lado de…)" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "Colores y comparaciones" },
+        {
+          "type": "dialogue",
+          "title": "Dos camisas",
+          "lines": [
+            { "speaker": "さくら", "zh": "ウーゴさん、赤い シャツと 青い シャツと、どちらが いいですか。", "py": "ウーゴ さん、あかい シャツ と あおい シャツ と、どちら が いい です か。", "es": "Hugo, ¿cuál te gusta más, la camisa roja o la azul?" },
+            { "speaker": "ウーゴ", "zh": "青い シャツの ほうが いいです。", "py": "あおい シャツ の ほう が いい です。", "es": "Me gusta más la azul." },
+            { "speaker": "さくら", "zh": "でも、赤い シャツは 青い シャツより 安いですよ。", "py": "でも、あかい シャツ は あおい シャツ より やすい です よ。", "es": "Pero la roja es más barata que la azul." },
+            { "speaker": "ウーゴ", "zh": "そうですか。いくらですか。", "py": "そう です か。いくら です か。", "es": "¿Ah, sí? ¿Cuánto cuestan?" },
+            { "speaker": "さくら", "zh": "赤いのは 二千円です。青いのは 三千円です。", "py": "あかい の は にせん えん です。あおい の は さんぜん えん です。", "es": "La roja, 2000 yenes. La azul, 3000." },
+            { "speaker": "ウーゴ", "zh": "うーん。でも、私は 赤より 青が 好きです。青いのを 買います。", "py": "うーん。でも、わたし は あか より あお が すき です。あおい の を かいます。", "es": "Mmm. Pero a mí me gusta más el azul que el rojo. Me compro la azul." }
+          ],
+          "notes": "赤いの / 青いの = la roja / la azul (の sustituye a シャツ). 赤 y 青 sin い son los nombres de los colores: «el rojo», «el azul»."
+        },
+        { "type": "grammar", "id": "yori-comparison" },
+        {
+          "type": "explain",
+          "title": "Los colores japoneses (y el semáforo azul)",
+          "markdown": "Los colores básicos son **adjetivos -い**, y quitando la い tienes el nombre del color:\n\n| Adjetivo | Nombre | Color |\n|---|---|---|\n| 赤い あかい | 赤 あか | rojo |\n| 青い あおい | 青 あお | azul |\n| 白い しろい | 白 しろ | blanco |\n| 黒い くろい | 黒 くろ | negro |\n| 黄色い きいろい | 黄色 きいろ | amarillo |\n| — | 緑 みどり | verde (solo nombre: 緑の シャツ) |\n| — | 茶色 ちゃいろ | marrón (茶色の, o 茶色い) |\n\n**Curiosidad**: 青 cubría antes también el verde. Por eso el semáforo verde se llama **青信号** («semáforo azul»), las verduras frescas son 青い y en Japón el verde de los semáforos tiene un tono azulado.\n\n**Comparar**: A は B **より** 安いです (A es más barato que B). Para preguntar entre dos cosas, **A と B と どちらが…?**, y se responde **A の ほうが…** (el lado de A es más…)."
+        },
+        { "type": "exercises", "count": 12, "types": ["choose-meaning", "listen-choose", "pinyin-input", "matching", "particle", "order-words", "translate-to-es", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ja-u06-l3",
+      "title": "¿Me los enseña?",
+      "zh": "見せてください",
+      "goal": "Pedir cosas en una tienda con 〜てください (見せて, 待って…).",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "見せます", "pinyin": "みせます", "es": "enseñar; mostrar" },
+        { "hanzi": "待ちます", "pinyin": "まちます", "es": "esperar" },
+        { "hanzi": "〜てください", "pinyin": "てください", "es": "por favor, haga…" },
+        { "hanzi": "靴", "pinyin": "くつ", "es": "zapatos" },
+        { "hanzi": "セーター", "pinyin": "セーター", "es": "jersey" },
+        { "hanzi": "ちょっと", "pinyin": "ちょっと", "es": "un poco; un momento" },
+        { "hanzi": "いかが", "pinyin": "いかが", "es": "¿qué tal? (cortés)" },
+        { "hanzi": "ちょうど", "pinyin": "ちょうど", "es": "justo; exactamente" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "Pedir en una tienda" },
+        {
+          "type": "dialogue",
+          "title": "En la zapatería",
+          "lines": [
+            { "speaker": "ウーゴ", "zh": "すみません、その 靴を 見せてください。", "py": "すみません、その くつ を みせて ください。", "es": "Perdone, ¿me enseña esos zapatos?" },
+            { "speaker": "店員", "zh": "はい、どうぞ。いかがですか。", "py": "はい、どうぞ。いかが です か。", "es": "Sí, aquí tiene. ¿Qué tal le quedan?" },
+            { "speaker": "ウーゴ", "zh": "ちょっと 小さいです。もう少し 大きいのは ありますか。", "py": "ちょっと ちいさい です。もう すこし おおきい の は あります か。", "es": "Me quedan un poco pequeños. ¿Tiene unos un poco más grandes?" },
+            { "speaker": "店員", "zh": "はい。少々 お待ちください。", "py": "はい。しょうしょう おまち ください。", "es": "Sí. Espere un momento, por favor." },
+            { "speaker": "店員", "zh": "お待たせしました。こちらは いかがですか。", "py": "おまたせしました。こちら は いかが です か。", "es": "Perdone la espera. ¿Qué tal estos?" },
+            { "speaker": "ウーゴ", "zh": "ちょうど いいです。これを ください。", "py": "ちょうど いい です。これ を ください。", "es": "Me quedan perfectos. Me los llevo." }
+          ],
+          "notes": "少々 お待ちください = espere un momento (forma muy cortés del personal; tú dirías ちょっと 待ってください). お待たせしました = siento haberle hecho esperar. いかがですか = どうですか en versión cortés."
+        },
+        { "type": "grammar", "id": "te-kudasai" },
+        {
+          "type": "explain",
+          "title": "Las frases con 〜てください que más usarás",
+          "markdown": "〜てください se forma con la **forma -て** del verbo, que aprenderás a construir en la unidad 7. De momento, memoriza estas como frases hechas:\n\n| Frase | Significado | Dónde |\n|---|---|---|\n| 見せてください | enséñemelo, por favor | tiendas |\n| ちょっと 待ってください | espere un momento | en cualquier sitio |\n| もう一度 言ってください | repítalo, por favor | ¡en clase y en la calle! |\n| ゆっくり 話してください | hable despacio, por favor | cuando no entiendes |\n| ここに 書いてください | escríbalo aquí, por favor | precios, direcciones |\n\n**Truco de supervivencia**: si no entiendes un precio, saca el móvil o un papel y di ここに 書いてください."
+        },
+        { "type": "exercises", "count": 12, "types": ["choose-meaning", "listen-choose", "pinyin-input", "conjugation", "fill-blank", "order-words", "translate-to-es", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ja-u06-l4",
+      "title": "¿Me lo puedo probar?",
+      "zh": "はいてもいいですか",
+      "goal": "Pedir permiso con 〜てもいいですか y usar el verbo correcto para cada prenda.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "服", "pinyin": "ふく", "es": "ropa" },
+        { "hanzi": "着ます", "pinyin": "きます", "es": "ponerse; llevar (de cintura para arriba)" },
+        { "hanzi": "はきます", "pinyin": "はきます", "es": "ponerse; llevar (pantalones, faldas, zapatos)" },
+        { "hanzi": "かぶります", "pinyin": "かぶります", "es": "ponerse (en la cabeza)" },
+        { "hanzi": "ズボン", "pinyin": "ズボン", "es": "pantalones" },
+        { "hanzi": "スカート", "pinyin": "スカート", "es": "falda" },
+        { "hanzi": "帽子", "pinyin": "ぼうし", "es": "gorro; sombrero" },
+        { "hanzi": "短い", "pinyin": "みじかい", "es": "corto" },
+        { "hanzi": "〜てもいいですか", "pinyin": "てもいいですか", "es": "¿puedo…?" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "Ropa y verbos para ponérsela" },
+        {
+          "type": "dialogue",
+          "title": "En el probador",
+          "lines": [
+            { "speaker": "ウーゴ", "zh": "すみません、この ズボンを はいても いいですか。", "py": "すみません、この ズボン を はいて も いい です か。", "es": "Perdone, ¿me puedo probar estos pantalones?" },
+            { "speaker": "店員", "zh": "はい、どうぞ。あちらです。", "py": "はい、どうぞ。あちら です。", "es": "Sí, claro. El probador está allí." },
+            { "speaker": "さくら", "zh": "どうですか。", "py": "どう です か。", "es": "¿Qué tal?" },
+            { "speaker": "ウーゴ", "zh": "ちょっと 長いです。", "py": "ちょっと ながい です。", "es": "Me quedan un poco largos." },
+            { "speaker": "店員", "zh": "こちらは いかがですか。少し 短いです。", "py": "こちら は いかが です か。すこし みじかい です。", "es": "¿Qué tal estos? Son un poco más cortos." },
+            { "speaker": "ウーゴ", "zh": "ちょうど いいです。カードで 払っても いいですか。", "py": "ちょうど いい です。カード で はらって も いい です か。", "es": "Perfectos. ¿Puedo pagar con tarjeta?" },
+            { "speaker": "店員", "zh": "はい、大丈夫です。", "py": "はい、だいじょうぶ です。", "es": "Sí, sin problema." }
+          ],
+          "notes": "あちら = allí (cortés). 払います (はらいます) = pagar. En los probadores japoneses hay que **quitarse los zapatos** antes de entrar."
+        },
+        { "type": "grammar", "id": "te-mo-ii" },
+        {
+          "type": "explain",
+          "title": "Un verbo para cada parte del cuerpo",
+          "markdown": "En español «ponerse» y «llevar» sirven para todo. En japonés el verbo depende de **dónde** va la prenda:\n\n| Verbo | Para | Ejemplos |\n|---|---|---|\n| **着ます** きます | torso (de cintura para arriba, o el cuerpo entero) | シャツ, セーター, コート |\n| **はきます** | de cintura para abajo y pies | ズボン, スカート, 靴, 靴下 |\n| **かぶります** | cabeza | 帽子 |\n| **かけます** | gafas | 眼鏡 (めがね) |\n| **します** | complementos | ネクタイ, 時計 |\n\nError típico: ✗ズボンを 着ます. Lo correcto es ズボンを **はきます**.\n\nOjo: 着ます (きます, ponerse) y 来ます (きます, venir) suenan igual en la forma -ます; el kanji y el contexto los distinguen."
+        },
+        { "type": "exercises", "count": 12, "types": ["choose-meaning", "listen-choose", "conjugation", "particle", "fill-blank", "matching", "translate-to-es", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ja-u06-l5",
+      "title": "Lectura y repaso de la unidad",
+      "zh": "ふくしゅう",
+      "goal": "Pagar en un konbini, unir ideas opuestas con 〜が y leer un día de compras.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "デパート", "pinyin": "デパート", "es": "grandes almacenes" },
+        { "hanzi": "コンビニ", "pinyin": "コンビニ", "es": "tienda de conveniencia (konbini)" },
+        { "hanzi": "買い物", "pinyin": "かいもの", "es": "compras" },
+        { "hanzi": "お金", "pinyin": "おかね", "es": "dinero" },
+        { "hanzi": "カード", "pinyin": "カード", "es": "tarjeta" },
+        { "hanzi": "〜が", "pinyin": "が", "es": "pero (entre dos frases)" },
+        { "hanzi": "使います", "pinyin": "つかいます", "es": "usar; gastar" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "Ir de compras" },
+        {
+          "type": "dialogue",
+          "title": "En el konbini",
+          "lines": [
+            { "speaker": "店員", "zh": "いらっしゃいませ。", "py": "いらっしゃいませ。", "es": "¡Bienvenido!" },
+            { "speaker": "ウーゴ", "zh": "これ、お願いします。", "py": "これ、おねがいします。", "es": "Esto, por favor." },
+            { "speaker": "店員", "zh": "袋は いりますか。", "py": "ふくろ は いります か。", "es": "¿Necesita bolsa?" },
+            { "speaker": "ウーゴ", "zh": "いいえ、いりません。", "py": "いいえ、いりません。", "es": "No, no hace falta." },
+            { "speaker": "店員", "zh": "六百五十円です。", "py": "ろっぴゃく ごじゅう えん です。", "es": "Son 650 yenes." },
+            { "speaker": "ウーゴ", "zh": "カードで いいですか。", "py": "カード で いい です か。", "es": "¿Vale con tarjeta?" },
+            { "speaker": "店員", "zh": "はい。ありがとうございました。", "py": "はい。ありがとうございました。", "es": "Sí. ¡Muchas gracias!" }
+          ],
+          "notes": "袋 (ふくろ) = bolsa: desde 2020 las bolsas de plástico se cobran. いります = necesitar (いりません = no lo necesito). En la caja se deja el dinero o la tarjeta en la bandejita, no en la mano del dependiente."
+        },
+        { "type": "grammar", "id": "ga-but" },
+        {
+          "type": "reading",
+          "title": "Un sábado de compras",
+          "text": "土曜日に さくらさんと デパートで 買い物を しました。私は 新しい 財布が ほしかったです。いい 財布は 三千八百円でしたが、少し 高かったです。千五百円の 財布を 買いました。それから、青い シャツも 買いました。赤い シャツより 高かったですが、私は 青が 好きです。さくらさんは 靴を 買いました。私は 全部で 四千五百円 使いました。もう お金が あまり ありません！",
+          "es": "El sábado fui de compras con Sakura a unos grandes almacenes. Yo quería una cartera nueva. Una buena costaba 3800 yenes, pero era un poco cara. Me compré una de 1500 yenes. Después, también me compré una camisa azul. Era más cara que la roja, pero a mí me gusta el azul. Sakura se compró unos zapatos. En total me gasté 4500 yenes. ¡Ya no me queda mucho dinero!",
+          "questions": [
+            { "q": "¿Cuánto costó la cartera que compró Hugo?", "options": ["3800 yenes", "1500 yenes", "4500 yenes", "2000 yenes"], "answer": 1, "explain": "千五百円の 財布を 買いました。" },
+            { "q": "¿De qué color es la camisa que compró?", "options": ["Roja", "Blanca", "Azul", "Negra"], "answer": 2, "explain": "青い シャツも 買いました。" },
+            { "q": "¿Qué compró Sakura?", "options": ["Una cartera", "Unos zapatos", "Una camisa", "Nada"], "answer": 1, "explain": "さくらさんは 靴を 買いました。" }
+          ]
+        },
+        { "type": "exercises", "count": 12, "types": ["matching", "choose-meaning", "listen-choose", "dictation", "particle", "conjugation", "fill-blank", "translate-to-es", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    }
+  ]
+}

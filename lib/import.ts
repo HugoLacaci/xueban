@@ -7,8 +7,14 @@
  *   咖啡\tkāfēi\tcafé
  * Cabecera opcional (hanzi,pinyin,significado,categoria,ejemplo,traduccion).
  */
-import { hanziOnly, hasHanzi } from "@/lib/pinyin/convert";
-import { numberedToMarked } from "@/lib/pinyin/tones";
+import { hasTarget as hasHanzi, normalizeInput as numberedToMarked } from "@/lib/languages/helpers";
+import { getActivePackOrNull } from "@/lib/languages/registry";
+
+function hanziOnly(s: string): string {
+  const p = getActivePackOrNull();
+  // la forma escrita puede llevar kana o hangul: se quitan solo espacios y puntuación
+  return p ? Array.from(s.trim()).filter((c) => p.isTargetChar(c)).join("") : s.trim();
+}
 
 export interface ImportRow {
   hanzi: string;

@@ -1,0 +1,300 @@
+{
+  "id": "ko-u0-hangul",
+  "order": 0,
+  "title": "Hangul: el alfabeto coreano",
+  "zh": "한글",
+  "description": "Vocales, consonantes y cómo se montan los bloques silábicos. En cinco lecciones podrás leer cualquier palabra coreana (aunque aún no la entiendas).",
+  "icon": "Languages",
+  "level": 0,
+  "lang": "ko",
+  "lessons": [
+    {
+      "id": "ko-u0-hangul-l1",
+      "title": "Las vocales básicas",
+      "zh": "모음",
+      "goal": "Reconocer y pronunciar las 8 vocales básicas: ㅏ ㅓ ㅗ ㅜ ㅡ ㅣ ㅐ ㅔ.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "아이", "pinyin": "ai", "es": "niño; niña" },
+        { "hanzi": "오이", "pinyin": "oi", "es": "pepino" },
+        { "hanzi": "이", "pinyin": "i", "es": "dos (número); diente" },
+        { "hanzi": "오", "pinyin": "o", "es": "cinco (número)" },
+        { "hanzi": "애", "pinyin": "ae", "es": "crío; niño (coloquial)" },
+        { "hanzi": "에이", "pinyin": "ei", "es": "la letra A (inglés)" },
+        { "hanzi": "아우", "pinyin": "au", "es": "hermano menor (literario)" }
+      ],
+      "steps": [
+        {
+          "type": "explain",
+          "title": "Un alfabeto diseñado a propósito",
+          "markdown": "El hangul no evolucionó por accidente: lo **diseñó** el rey Sejong y sus sabios en el siglo XV (se publicó en 1446) para que cualquiera pudiera aprender a leer en pocos días. Y funciona: es un **alfabeto** como el nuestro (cada letra = un sonido), pero las letras se agrupan en **bloques** del tamaño de una sílaba: 한 + 글 = 한글.\n\nLas vocales se construyen con solo tres piezas filosóficas:\n\n- **ㆍ** (un punto, hoy una rayita corta) = el **cielo**\n- **ㅡ** (línea horizontal) = la **tierra**\n- **ㅣ** (línea vertical) = la **persona**\n\nCombinando la rayita corta con ㅡ o ㅣ salen las demás vocales. Por eso basta con fijarse **hacia dónde apunta la rayita**."
+        },
+        { "type": "module", "id": "hangul-vowels", "title": "Las 8 vocales básicas", "params": { "set": "basic" } },
+        {
+          "type": "explain",
+          "title": "Trucos para no confundirlas",
+          "markdown": "| Vocal | Suena | Truco |\n|---|---|---|\n| **ㅏ** | *a* | La rayita sale hacia la derecha: «¡**a**hí, a la derecha!». Boca bien abierta. |\n| **ㅓ** | *eo* | La rayita mira hacia dentro, hacia la persona: una **o muy abierta**, con la boca como para decir *a* pero sin redondear los labios (como la *o* de *cock* en inglés británico). |\n| **ㅗ** | *o* | La rayita está encima de la tierra, como el sol al salir: «**o**h, amanece». Labios redondos. |\n| **ㅜ** | *u* | La rayita cuelga bajo la tierra, como una raíz: «**u**, hacia el s**u**elo». Labios muy redondos y adelantados. |\n| **ㅡ** | *eu* | Una línea plana = labios planos. Di *u* pero **sin redondear** nada, con los dientes casi juntos, como un gruñido «mmm-ü» neutro. |\n| **ㅣ** | *i* | Una persona de pie, recta y delgada como la **i**. |\n| **ㅐ** | *ae* | ㅏ + ㅣ. Una *e* un poco más abierta. |\n| **ㅔ** | *e* | ㅓ + ㅣ. Una *e* española. |\n\n**Aviso honesto**: en el coreano actual de Seúl, ㅐ y ㅔ suenan **prácticamente igual** (una *e*). Los coreanos también dudan al escribirlas; tú apréndete la ortografía de cada palabra.\n\nLas dos que más cuestan a un hispanohablante son **ㅓ** (no es nuestra *o*) y **ㅡ** (no existe en español). Exagéralas al principio."
+        },
+        {
+          "type": "explain",
+          "title": "¿Y ese círculo ㅇ?",
+          "markdown": "Una vocal **nunca se escribe sola** en coreano: necesita una consonante delante. Cuando la sílaba empieza por vocal se pone **ㅇ**, que al principio de la sílaba es **muda** (no suena). Así que:\n\n- 아 = *a*, 어 = *eo*, 오 = *o*, 우 = *u*, 으 = *eu*, 이 = *i*, 애 = *ae*, 에 = *e*.\n\nPiensa en ㅇ como un **cero**: ocupa el sitio de la consonante pero vale nada. En la lección 3 verás que al final de la sílaba sí suena (*ng*)."
+        },
+        {
+          "type": "module",
+          "id": "hangul-reading",
+          "title": "Tus primeras palabras",
+          "params": {
+            "words": [
+              { "hangul": "아이", "es": "niño; niña" },
+              { "hangul": "오이", "es": "pepino" },
+              { "hangul": "이", "es": "dos; diente" },
+              { "hangul": "오", "es": "cinco" },
+              { "hangul": "애", "es": "crío (coloquial)" },
+              { "hangul": "에이", "es": "la letra A" },
+              { "hangul": "아우", "es": "hermano menor (literario)" }
+            ]
+          }
+        },
+        { "type": "exercises", "count": 8, "types": ["choose-meaning", "listen-choose", "pinyin-input", "matching", "writing"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ko-u0-hangul-l2",
+      "title": "Las consonantes básicas",
+      "zh": "자음",
+      "goal": "Reconocer y pronunciar las 10 consonantes básicas: ㄱ ㄴ ㄷ ㄹ ㅁ ㅂ ㅅ ㅇ ㅈ ㅎ.",
+      "minutes": 15,
+      "vocab": [
+        { "hanzi": "나무", "pinyin": "namu", "es": "árbol" },
+        { "hanzi": "나비", "pinyin": "nabi", "es": "mariposa" },
+        { "hanzi": "바다", "pinyin": "bada", "es": "mar" },
+        { "hanzi": "모자", "pinyin": "moja", "es": "gorro; sombrero" },
+        { "hanzi": "가수", "pinyin": "gasu", "es": "cantante" },
+        { "hanzi": "하나", "pinyin": "hana", "es": "uno (número nativo)" },
+        { "hanzi": "고기", "pinyin": "gogi", "es": "carne" },
+        { "hanzi": "머리", "pinyin": "meori", "es": "cabeza; pelo" },
+        { "hanzi": "어머니", "pinyin": "eomeoni", "es": "madre" },
+        { "hanzi": "아버지", "pinyin": "abeoji", "es": "padre" }
+      ],
+      "steps": [
+        {
+          "type": "explain",
+          "title": "Las consonantes dibujan tu boca",
+          "markdown": "Las cinco consonantes «madre» del hangul son **dibujos de los órganos** que las pronuncian. Esto no es un truco inventado: está explicado en el documento original de 1446 (*Hunminjeongeum Haerye*).\n\n| Letra | Dibujo | Pruébalo |\n|---|---|---|\n| **ㄱ** | la **raíz de la lengua** subiendo y tocando el fondo del paladar (vista de perfil, mirando a la izquierda) | di *ga* y nota cómo se levanta la parte de atrás de la lengua |\n| **ㄴ** | la **punta de la lengua** pegada detrás de los dientes de arriba | di *na*: la punta sube justo ahí |\n| **ㅁ** | la **boca** cerrada (un cuadrado = labios juntos) | di *ma*: los labios se cierran |\n| **ㅅ** | un **diente** (o dos dientes que se juntan) | di *sa*: el aire silba entre los dientes |\n| **ㅇ** | la **garganta** abierta, redonda | muda al empezar sílaba; *ng* al final |\n\nLas demás se forman **añadiendo trazos** a esas cinco:\n\n- ㄴ + un techo → **ㄷ** (*d/t*): la lengua sigue en el mismo sitio, pero ahora «golpea».\n- ㄷ con un zigzag → **ㄹ** (*r/l*): la lengua aletea como una cinta.\n- ㅁ con dos «orejas» → **ㅂ** (*b/p*): parece un **b**alde o **b**ote.\n- ㅅ con un tejadillo → **ㅈ** (*j/ch*).\n- ㅇ con sombrero → **ㅎ** (*h*): un **h**ombre con sombrero."
+        },
+        { "type": "module", "id": "hangul-consonants", "title": "Las 10 consonantes básicas", "params": { "set": "basic" } },
+        {
+          "type": "explain",
+          "title": "Cómo suenan de verdad",
+          "markdown": "- **ㄱ ㄷ ㅂ** al principio de palabra suenan **entre** *k/g*, *t/d*, *p/b*: más suaves que nuestra *k, t, p* pero sin la vibración de *g, d, b*. Entre vocales ya son *g, d, b* claras: 고기 *gogi*, 바다 *bada*. Por eso la romanización escribe *g, d, b*.\n- **ㅈ** = como una *ch* suave, casi *y* argentina suave: 모자 *moja* (¡no es la *j* española!).\n- **ㅅ** = *s*. Delante de **ㅣ** suena *sh*: 시 *si* ≈ «shi».\n- **ㄹ** entre vocales = la *r* simple de *pero* (nunca la *rr* de *perro*): 머리 *meori*. A principio de palabra, igual de suave. Al final de sílaba = *l*.\n- **ㅎ** = una *h* inglesa: aire suave desde la garganta, más débil que nuestra *j*.\n- **ㅇ** = muda al principio de la sílaba.\n\nLa romanización revisada (la oficial de Corea) es solo una ayuda: no leas *j* como en *jamón* ni *eo* como dos vocales."
+        },
+        {
+          "type": "module",
+          "id": "hangul-reading",
+          "title": "Lee estas palabras",
+          "params": {
+            "words": [
+              { "hangul": "나무", "es": "árbol" },
+              { "hangul": "나비", "es": "mariposa" },
+              { "hangul": "바다", "es": "mar" },
+              { "hangul": "모자", "es": "gorro" },
+              { "hangul": "가수", "es": "cantante" },
+              { "hangul": "하나", "es": "uno" },
+              { "hangul": "고기", "es": "carne" },
+              { "hangul": "머리", "es": "cabeza; pelo" },
+              { "hangul": "어머니", "es": "madre" },
+              { "hangul": "아버지", "es": "padre" }
+            ]
+          }
+        },
+        { "type": "exercises", "count": 8, "types": ["choose-meaning", "listen-choose", "pinyin-input", "matching", "writing"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ko-u0-hangul-l3",
+      "title": "Montar bloques silábicos",
+      "zh": "글자 만들기",
+      "goal": "Combinar consonante + vocal en un bloque, distinguir vocales verticales y horizontales y usar la ㅇ muda.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "아기", "pinyin": "agi", "es": "bebé" },
+        { "hanzi": "우리", "pinyin": "uri", "es": "nosotros; nuestro" },
+        { "hanzi": "오리", "pinyin": "ori", "es": "pato" },
+        { "hanzi": "노래", "pinyin": "norae", "es": "canción" },
+        { "hanzi": "개", "pinyin": "gae", "es": "perro" },
+        { "hanzi": "게", "pinyin": "ge", "es": "cangrejo" },
+        { "hanzi": "네", "pinyin": "ne", "es": "sí" },
+        { "hanzi": "누구", "pinyin": "nugu", "es": "quién" },
+        { "hanzi": "어디", "pinyin": "eodi", "es": "dónde" },
+        { "hanzi": "두부", "pinyin": "dubu", "es": "tofu" }
+      ],
+      "steps": [
+        {
+          "type": "explain",
+          "title": "Una sílaba = un cuadrado",
+          "markdown": "Cada bloque coreano es **una sílaba** y siempre empieza por consonante (aunque sea la ㅇ muda). El bloque se monta según la **forma de la vocal**:\n\n**1. Vocal vertical** (ㅏ ㅓ ㅣ ㅐ ㅔ) → la consonante va **a la izquierda**:\n\n- ㄴ + ㅏ = **나** · ㄱ + ㅐ = **개** · ㄹ + ㅣ = **리**\n\n**2. Vocal horizontal** (ㅗ ㅜ ㅡ) → la consonante va **encima**:\n\n- ㄴ + ㅗ = **노** · ㄷ + ㅜ = **두** · ㄱ + ㅡ = **그**\n\nTruco: las vocales **altas y delgadas** dejan sitio a su izquierda; las **planas** dejan sitio arriba, como un tejado sobre un suelo.\n\n**3. Sin consonante** → ㅇ muda en su sitio: 아, 우, 오, 이.\n\nSe lee **de izquierda a derecha y de arriba abajo**, igual que escribes tú. Más adelante verás que aún cabe una consonante más **debajo** (받침): 한 = ㅎ + ㅏ + ㄴ."
+        },
+        { "type": "module", "id": "syllable-blocks", "title": "Monta tus propios bloques" },
+        {
+          "type": "explain",
+          "title": "El orden de los trazos",
+          "markdown": "Al escribir a mano: **de arriba abajo y de izquierda a derecha**, y primero la consonante. La ㅇ se dibuja en el sentido contrario a las agujas del reloj empezando arriba.\n\nFíjate en que la consonante **cambia un poco de forma** según el sitio: en 가 la ㄱ tiene la «pata» inclinada; en 고 es más ancha y recta. Es la misma letra; solo se adapta al cuadrado.\n\nPrueba: 개 (*gae*, perro) y 게 (*ge*, cangrejo) se distinguen **solo** por la rayita de la vocal. Al oído suenan casi igual: el contexto decide."
+        },
+        {
+          "type": "module",
+          "id": "hangul-reading",
+          "title": "Lee bloque a bloque",
+          "params": {
+            "words": [
+              { "hangul": "아기", "es": "bebé" },
+              { "hangul": "우리", "es": "nosotros" },
+              { "hangul": "오리", "es": "pato" },
+              { "hangul": "노래", "es": "canción" },
+              { "hangul": "개", "es": "perro" },
+              { "hangul": "게", "es": "cangrejo" },
+              { "hangul": "네", "es": "sí" },
+              { "hangul": "누구", "es": "quién" },
+              { "hangul": "어디", "es": "dónde" },
+              { "hangul": "두부", "es": "tofu" }
+            ]
+          }
+        },
+        { "type": "exercises", "count": 8, "types": ["choose-meaning", "listen-choose", "pinyin-input", "matching", "writing"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ko-u0-hangul-l4",
+      "title": "Consonantes aspiradas y tensas",
+      "zh": "거센소리와 된소리",
+      "goal": "Distinguir las tres series lisa / aspirada / tensa (ㄱ ㅋ ㄲ, ㄷ ㅌ ㄸ, ㅂ ㅍ ㅃ, ㅈ ㅊ ㅉ, ㅅ ㅆ).",
+      "minutes": 15,
+      "vocab": [
+        { "hanzi": "코", "pinyin": "ko", "es": "nariz" },
+        { "hanzi": "커피", "pinyin": "keopi", "es": "café" },
+        { "hanzi": "토마토", "pinyin": "tomato", "es": "tomate" },
+        { "hanzi": "포도", "pinyin": "podo", "es": "uva" },
+        { "hanzi": "차", "pinyin": "cha", "es": "té; coche" },
+        { "hanzi": "아빠", "pinyin": "appa", "es": "papá" },
+        { "hanzi": "오빠", "pinyin": "oppa", "es": "hermano mayor (dicho por una chica)" },
+        { "hanzi": "토끼", "pinyin": "tokki", "es": "conejo" },
+        { "hanzi": "아저씨", "pinyin": "ajeossi", "es": "señor (hombre de mediana edad)" },
+        { "hanzi": "찌개", "pinyin": "jjigae", "es": "guiso coreano" }
+      ],
+      "steps": [
+        {
+          "type": "explain",
+          "title": "Tres versiones de cada consonante",
+          "markdown": "En español distinguimos *p/b*, *t/d*, *k/g* por la **vibración** de la garganta. En coreano eso da igual: lo que importa es **cuánto aire** sale y **cuánta tensión** hay. Cada consonante oclusiva tiene **tres** versiones:\n\n| Lisa | Aspirada | Tensa |\n|---|---|---|\n| ㄱ *g/k* | ㅋ *k* | ㄲ *kk* |\n| ㄷ *d/t* | ㅌ *t* | ㄸ *tt* |\n| ㅂ *b/p* | ㅍ *p* | ㅃ *pp* |\n| ㅈ *j* | ㅊ *ch* | ㅉ *jj* |\n| ㅅ *s* | — | ㅆ *ss* |\n\n**Cómo se ven**: la aspirada es la lisa **con un trazo extra** (más aire = más tinta): ㄱ→ㅋ, ㄷ→ㅌ, ㅈ→ㅊ; ㅍ es una ㅂ tumbada. La tensa es la lisa **duplicada** (doble fuerza): ㄲ ㄸ ㅃ ㅉ ㅆ.\n\n**Cómo se dicen**:\n\n- **Aspirada**: un buen **soplo** de aire tras la consonante, como al apagar una vela. Pon la mano delante de la boca: tienes que notar el aire. 커피 *keopi*.\n- **Tensa**: **cero aire**, garganta y lengua apretadas, como si te contuvieras antes de explotar. Se parece mucho a nuestra *p, t, k* de *papá, tío, casa* (que no llevan aire). 아빠 *appa*.\n- **Lisa**: en medio: un poquito de aire, relajada.\n\nTruco del folio: cuelga una hoja delante de la boca. Con la aspirada se mueve mucho; con la lisa, un poco; con la tensa, nada."
+        },
+        { "type": "module", "id": "hangul-consonants", "title": "Consonantes aspiradas", "params": { "set": "aspirated" } },
+        { "type": "module", "id": "hangul-consonants", "title": "Consonantes tensas", "params": { "set": "tense" } },
+        {
+          "type": "module",
+          "id": "consonant-triplets",
+          "title": "Tríos para entrenar el oído",
+          "params": {
+            "triplets": [
+              { "plain": "달", "aspirated": "탈", "tense": "딸", "es": ["luna", "máscara", "hija"] },
+              { "plain": "불", "aspirated": "풀", "tense": "뿔", "es": ["fuego", "hierba; pegamento", "cuerno"] },
+              { "plain": "자다", "aspirated": "차다", "tense": "짜다", "es": ["dormir", "dar una patada; estar frío", "estar salado"] },
+              { "plain": "가다", "aspirated": "카드", "tense": "까다", "es": ["ir", "tarjeta", "pelar"] }
+            ]
+          }
+        },
+        {
+          "type": "explain",
+          "title": "Sobre la ㄹ final de 달, 탈, 딸",
+          "markdown": "En los tríos aparece una ㄹ **debajo** del bloque (달 = ㄷ + ㅏ + ㄹ). Al final de sílaba, ㄹ suena **l**: *dal, tal, ttal*. Lo verás a fondo en la unidad de pronunciación; de momento fíjate solo en la **primera consonante**.\n\nY una curiosidad cultural: **오빠** (*oppa*) lo usa una chica para su hermano mayor… o para un chico algo mayor con el que tiene confianza. Un chico diría **형** (*hyeong*)."
+        },
+        {
+          "type": "module",
+          "id": "hangul-reading",
+          "title": "Lee con aire y con tensión",
+          "params": {
+            "words": [
+              { "hangul": "코", "es": "nariz" },
+              { "hangul": "커피", "es": "café" },
+              { "hangul": "토마토", "es": "tomate" },
+              { "hangul": "포도", "es": "uva" },
+              { "hangul": "차", "es": "té; coche" },
+              { "hangul": "아빠", "es": "papá" },
+              { "hangul": "오빠", "es": "hermano mayor (de una chica)" },
+              { "hangul": "토끼", "es": "conejo" },
+              { "hangul": "아저씨", "es": "señor" },
+              { "hangul": "찌개", "es": "guiso coreano" }
+            ]
+          }
+        },
+        { "type": "exercises", "count": 8, "types": ["choose-meaning", "listen-choose", "pinyin-input", "matching", "writing"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ko-u0-hangul-l5",
+      "title": "Vocales compuestas",
+      "zh": "이중 모음",
+      "goal": "Leer las vocales con «y» (ㅑ ㅕ ㅛ ㅠ ㅒ ㅖ) y con «w» (ㅘ ㅝ ㅙ ㅞ ㅚ ㅟ), además de ㅢ.",
+      "minutes": 15,
+      "vocab": [
+        { "hanzi": "우유", "pinyin": "uyu", "es": "leche" },
+        { "hanzi": "여자", "pinyin": "yeoja", "es": "mujer; chica" },
+        { "hanzi": "요리", "pinyin": "yori", "es": "cocina; plato (cocinado)" },
+        { "hanzi": "야구", "pinyin": "yagu", "es": "béisbol" },
+        { "hanzi": "시계", "pinyin": "sigye", "es": "reloj" },
+        { "hanzi": "사과", "pinyin": "sagwa", "es": "manzana; disculpa" },
+        { "hanzi": "뭐", "pinyin": "mwo", "es": "qué (coloquial)" },
+        { "hanzi": "돼지", "pinyin": "dwaeji", "es": "cerdo" },
+        { "hanzi": "회사", "pinyin": "hoesa", "es": "empresa" },
+        { "hanzi": "의사", "pinyin": "uisa", "es": "médico" }
+      ],
+      "steps": [
+        {
+          "type": "explain",
+          "title": "Una rayita más = una «y» delante",
+          "markdown": "La regla es preciosa de simple: **duplica la rayita** y la vocal gana una *y* delante.\n\n| Básica | + rayita | Suena |\n|---|---|---|\n| ㅏ *a* | **ㅑ** | *ya* |\n| ㅓ *eo* | **ㅕ** | *yeo* |\n| ㅗ *o* | **ㅛ** | *yo* |\n| ㅜ *u* | **ㅠ** | *yu* |\n| ㅐ *ae* | **ㅒ** | *yae* (rara) |\n| ㅔ *e* | **ㅖ** | *ye* |\n\nEjemplos: 우유 *uyu* (leche), 여자 *yeoja* (mujer), 요리 *yori* (cocina). Ojo con **ㅖ**: tras consonante suele sonar simplemente *e*: 시계 se escribe *sigye* pero en el habla suena casi «sige»."
+        },
+        {
+          "type": "explain",
+          "title": "ㅗ o ㅜ delante = una «w»",
+          "markdown": "Si juntas una vocal horizontal (ㅗ o ㅜ) con una vertical, la primera se convierte en una **w** rápida:\n\n| Combinación | Resultado | Suena | Ejemplo |\n|---|---|---|---|\n| ㅗ + ㅏ | **ㅘ** | *wa* (como *gua*po) | 사과 *sagwa* |\n| ㅜ + ㅓ | **ㅝ** | *wo* | 뭐 *mwo* |\n| ㅗ + ㅐ | **ㅙ** | *wae* | 돼지 *dwaeji* |\n| ㅜ + ㅔ | **ㅞ** | *we* | 웨이터 *weiteo* |\n| ㅗ + ㅣ | **ㅚ** | *oe*, hoy ≈ *we* | 회사 *hoesa* |\n| ㅜ + ㅣ | **ㅟ** | *wi* (como *güi* en pin*güi*no) | 위 *wi* |\n\nTruco: **ㅗ va con ㅏ/ㅐ** (las dos rayitas «miran hacia fuera») y **ㅜ va con ㅓ/ㅔ** (las dos «miran hacia dentro»). Nunca verás ㅗ+ㅓ.\n\n**ㅙ, ㅞ y ㅚ suenan hoy casi igual** (*we*). Otra vez: memoriza la ortografía.\n\n**ㅢ** (ㅡ + ㅣ) es la más especial: *eui*, es decir, ㅡ deslizándose a ㅣ. En la práctica: a principio de palabra *ui* (의사 *uisa*), tras consonante *i* (희망 ≈ *himang*), y como partícula «de» suena *e* (우리의 ≈ *urie*)."
+        },
+        { "type": "module", "id": "hangul-vowels", "title": "Las vocales compuestas", "params": { "set": "compound" } },
+        {
+          "type": "module",
+          "id": "hangul-reading",
+          "title": "Ya lees todo el hangul",
+          "params": {
+            "words": [
+              { "hangul": "우유", "es": "leche" },
+              { "hangul": "여자", "es": "mujer; chica" },
+              { "hangul": "요리", "es": "cocina" },
+              { "hangul": "야구", "es": "béisbol" },
+              { "hangul": "시계", "es": "reloj" },
+              { "hangul": "사과", "es": "manzana" },
+              { "hangul": "뭐", "es": "qué" },
+              { "hangul": "돼지", "es": "cerdo" },
+              { "hangul": "회사", "es": "empresa" },
+              { "hangul": "의사", "es": "médico" }
+            ]
+          }
+        },
+        {
+          "type": "explain",
+          "title": "Lo que ya sabes",
+          "markdown": "Con estas cinco lecciones conoces **las 40 letras** del hangul: 14 consonantes básicas (10 + las 4 aspiradas ㅋ ㅌ ㅍ ㅊ), 5 tensas y 21 vocales. Ya puedes leer en voz alta un cartel en Seúl, aunque no lo entiendas.\n\nLo siguiente es la **unidad de pronunciación**: la consonante final de bloque (받침) y las reglas que hacen que 한국어 se pronuncie «hangugeo». Es lo que separa leer letra a letra de sonar natural."
+        },
+        { "type": "exercises", "count": 8, "types": ["choose-meaning", "listen-choose", "pinyin-input", "matching", "writing"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    }
+  ]
+}

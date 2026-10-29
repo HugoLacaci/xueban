@@ -1,12 +1,13 @@
 "use client";
 import { useEffect, useMemo, useState } from "react";
-import Link from "next/link";
+import Link from "@/lib/languages/link";
 import { useLiveQuery } from "dexie-react-hooks";
 import { ArrowLeft, Check, Eye, EyeOff, ListChecks, Moon, Plus, Sun, Trash2 } from "lucide-react";
 import { db } from "@/lib/db";
 import { readingById } from "@/lib/readings";
 import { useKnowledge } from "@/lib/knowledge";
-import { loadHsk, useDictionary } from "@/lib/dictionary/service";
+import { useDictionary } from "@/lib/dictionary/service";
+import { getActivePack } from "@/lib/languages/registry";
 import { comprehensionOfLines } from "@/lib/videos/breakdown";
 import { readingQuestionsToExercises } from "@/lib/exercises/build";
 import { useSettings } from "@/lib/settings";
@@ -14,13 +15,16 @@ import { Button } from "@/components/ui/button";
 import { Badge, Card, PageHeader } from "@/components/ui/primitives";
 import { SealTag } from "@/components/ornament/seal";
 import { toast } from "@/components/ui/toast";
-import { AudioButton } from "@/components/zh/audio-button";
-import { ChineseText } from "@/components/zh/chinese-text";
-import { Pinyin } from "@/components/zh/pinyin";
+import { AudioButton } from "@/components/target/audio-button";
+import { ChineseText } from "@/components/target/target-text";
+import { Pinyin } from "@/components/target/reading";
 import { ExerciseRunner, type SessionSummary } from "@/components/exercises/runner";
 import { SummaryCard } from "@/components/learn/steps";
 import { QuickAddDialog } from "@/components/flashcards/quick-add";
 import { cn } from "@/lib/utils";
+import { getActiveLang } from "@/lib/languages/registry";
+import { targetLang } from "@/lib/languages/registry";
+import { Mixed } from "@/components/target/mixed";
 
 /** «Modo noche» local del libro: tokens de noche solo en la página de lectura, sin tocar el tema global. */
 const NIGHT_VARS: React.CSSProperties = {
@@ -51,7 +55,7 @@ export function Reader({ id }: { id: string }) {
   const [adding, setAdding] = useState<string | null>(null);
   useEffect(() => {
     if (dictStatus === "idle") void load();
-    void loadHsk();
+    void getActivePack().levelLists();
   }, [dictStatus, load]);
 
   const text = builtin?.text ?? user?.text ?? "";
@@ -64,7 +68,7 @@ export function Reader({ id }: { id: string }) {
   const exercises = useMemo(() => (builtin ? readingQuestionsToExercises(builtin.text, builtin.es, builtin.questions, builtin.id) : []), [builtin]);
 
   useEffect(() => {
-    if (builtin) void db.readings.put({ id: builtin.id, title: builtin.title, text: builtin.text, translation: builtin.es, source: "builtin", level: builtin.level, addedAt: Date.now(), lastRead: Date.now(), completed: false }).catch(() => undefined);
+    if (builtin) void db.readings.put({ id: builtin.id, lang: getActiveLang(), title: builtin.title, text: builtin.text, translation: builtin.es, source: "builtin", level: builtin.level, addedAt: Date.now(), lastRead: Date.now(), completed: false }).catch(() => undefined);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [id]);
 
@@ -127,7 +131,7 @@ export function Reader({ id }: { id: string }) {
         <h1 className="font-serif-es text-[26px] font-semibold leading-tight tracking-tight text-ink sm:text-[30px]">
           {title}
           {builtin ? (
-            <span lang="zh-CN" className="zh-kai ml-3 text-xl font-normal text-cinnabar">
+            <span lang={targetLang()} className="zh-kai ml-3 text-xl font-normal text-cinnabar">
               {builtin.zh}
             </span>
           ) : null}
@@ -179,13 +183,13 @@ export function Reader({ id }: { id: string }) {
 
       {builtin?.gloss?.length ? (
         <Card>
-          <h3 className="mb-2 text-[11px] font-medium uppercase tracking-[0.12em] text-ink-faint">Palabras fuera del HSK 1 en este texto</h3>
+          <h3 className="mb-2 text-[11px] font-medium uppercase tracking-[0.12em] text-ink-faint">Palabras fuera del nivel {getActivePack().curriculum.levelTitle} en este texto</h3>
           <ul className="flex flex-wrap gap-2">
             {builtin.gloss.map((g) => (
               <li key={g.hanzi} className="flex min-h-10 items-center gap-2 rounded-[8px] border border-line bg-paper-raised px-2.5 py-1 text-sm shadow-[var(--shadow-paper)]">
                 <ChineseText text={g.hanzi} size="md" ruby={false} markUnknown={false} />
                 <Pinyin text={g.pinyin} className="text-xs" />
-                <span className="text-ink-faint">{g.es}</span>
+                <span className="text-ink-faint"><Mixed>{g.es}</Mixed></span>
                 {!deck.has(g.hanzi) ? (
                   <button onClick={() => setAdding(g.hanzi)} className="rounded p-1 text-celadon-ink hover:bg-celadon/14" aria-label={`Añadir ${g.hanzi}`}>
                     <Plus className="size-4" />
@@ -204,7 +208,7 @@ export function Reader({ id }: { id: string }) {
           <h3 className="mb-2 text-[11px] font-medium uppercase tracking-[0.12em] text-ink-faint">Palabras que no conoces todavía (pulsa para añadir)</h3>
           <div className="flex flex-wrap gap-1.5">
             {unknownWords.map((w) => (
-              <button key={w} onClick={() => setAdding(w)} lang="zh-CN" className="zh-serif min-h-10 rounded-[8px] border border-line bg-paper-raised px-2.5 text-lg leading-none text-ink shadow-[var(--shadow-paper)] transition-colors hover:border-ink/40 hover:bg-paper-sunk">
+              <button key={w} onClick={() => setAdding(w)} lang={targetLang()} className="zh-serif min-h-10 rounded-[8px] border border-line bg-paper-raised px-2.5 text-lg leading-none text-ink shadow-[var(--shadow-paper)] transition-colors hover:border-ink/40 hover:bg-paper-sunk">
                 {w}
               </button>
             ))}

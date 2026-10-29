@@ -1,0 +1,179 @@
+{
+  "id": "ko-u14",
+  "order": 15,
+  "title": "Por teléfono y en KakaoTalk",
+  "zh": "전화와 카톡",
+  "description": "Llamar a una oficina con lenguaje formal, escribir por KakaoTalk, atender al repartidor y quedar por teléfono con un amigo en 반말.",
+  "icon": "Phone",
+  "level": 1,
+  "lang": "ko",
+  "category": "Partículas y gramática",
+  "checkpoint": { "exercises": 15 },
+  "lessons": [
+    {
+      "id": "ko-u14-l1",
+      "title": "¿Diga? Llamar a una oficina",
+      "zh": "여보세요?",
+      "goal": "Llamar a una oficina, preguntar por alguien con respeto y dar tu número de teléfono.",
+      "minutes": 13,
+      "vocab": [
+        { "hanzi": "여보세요", "pinyin": "yeoboseyo", "es": "¿diga?, ¿sí? (al teléfono)" },
+        { "hanzi": "전화", "pinyin": "jeonhwa", "es": "teléfono; llamada" },
+        { "hanzi": "전화하다", "pinyin": "jeonhwahada", "es": "llamar por teléfono" },
+        { "hanzi": "전화번호", "pinyin": "jeonhwabeonho", "es": "número de teléfono" },
+        { "hanzi": "회의", "pinyin": "hoeui", "es": "reunión" },
+        { "hanzi": "언제", "pinyin": "eonje", "es": "cuándo" },
+        { "hanzi": "돌아오다", "pinyin": "doraoda", "es": "volver" },
+        { "hanzi": "공", "pinyin": "gong", "es": "cero (al decir números de teléfono)" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "Al teléfono" },
+        {
+          "type": "dialogue",
+          "title": "Llamada a la oficina de estudiantes internacionales",
+          "lines": [
+            { "speaker": "직원", "zh": "여보세요. 카이스트 국제학생팀입니다.", "py": "yeoboseyo. kaiseuteu gukjehaksaengtimimnida.", "es": "¿Diga? Oficina de Estudiantes Internacionales de KAIST." },
+            { "speaker": "우고", "zh": "안녕하세요. 저는 우고입니다. 이수진 선생님 계세요?", "py": "annyeonghaseyo. jeoneun ugoimnida. isujin seonsaengnim gyeseyo?", "es": "Hola. Soy Hugo. ¿Está la señora Lee Sujin?" },
+            { "speaker": "직원", "zh": "지금 안 계십니다. 회의에 가셨습니다.", "py": "jigeum an gyesimnida. hoeuie gasyeotseumnida.", "es": "Ahora no está. Ha ido a una reunión." },
+            { "speaker": "우고", "zh": "그럼 언제 돌아오세요?", "py": "geureom eonje doraoseyo?", "es": "¿Y cuándo vuelve?" },
+            { "speaker": "직원", "zh": "세 시쯤 돌아오십니다. 전화번호가 어떻게 되세요?", "py": "se sijjeum doraosimnida. jeonhwabeonhoga eotteoke doeseyo?", "es": "Volverá hacia las tres. ¿Me dice su número de teléfono?" },
+            { "speaker": "우고", "zh": "공일공, 일이삼사, 오육칠팔이에요.", "py": "gongilgong, irisamsa, oyukchilparieyo.", "es": "Es el 010-1234-5678." },
+            { "speaker": "직원", "zh": "네, 알겠습니다. 선생님께 전해 드리겠습니다.", "py": "ne, algetseumnida. seonsaengnimkke jeonhae deurigetseumnida.", "es": "De acuerdo. Se lo transmitiré." },
+            { "speaker": "우고", "zh": "감사합니다. 안녕히 계세요.", "py": "gamsahamnida. annyeonghi gyeseyo.", "es": "Muchas gracias. Adiós." }
+          ],
+          "notes": "En la oficina el empleado habla en 합니다체 y con -시- porque se refiere a una superior: 안 계십니다, 가셨습니다 (fue, honorífico), 돌아오십니다. 전화번호가 어떻게 되세요? es la fórmula educada para pedir un dato (nombre, número…). Los números de teléfono se dicen cifra a cifra con números sino-coreanos y 0 = 공: 010 = 공일공. -께 = a (honorífico de 에게). 전해 드리겠습니다 = se lo transmitiré (fórmula de servicio). Hugo puede contestar en 해요체 y con 계세요: es educado y suficiente."
+        },
+        { "type": "grammar", "id": "honorific-si" },
+        { "type": "exercises", "count": 10, "types": ["choose-meaning", "listen-choose", "conjugation", "fill-blank", "pinyin-input", "dictation", "matching", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ko-u14-l2",
+      "title": "Llego tarde: mensajes de KakaoTalk",
+      "zh": "카톡",
+      "goal": "Escribir mensajes cortos: avisar de que llegas tarde y ofrecerte a hacer algo con -(으)ㄹ까요?",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "카톡", "pinyin": "katok", "es": "KakaoTalk; mensaje de KakaoTalk" },
+        { "hanzi": "메시지", "pinyin": "mesiji", "es": "mensaje" },
+        { "hanzi": "보내다", "pinyin": "bonaeda", "es": "enviar, mandar" },
+        { "hanzi": "늦다", "pinyin": "neutda", "es": "llegar tarde; ser tarde (늦어요)" },
+        { "hanzi": "미안하다", "pinyin": "mianhada", "es": "sentirlo: 미안해요 = perdona" },
+        { "hanzi": "먼저", "pinyin": "meonjeo", "es": "primero, antes (que otro)" },
+        { "hanzi": "들어가다", "pinyin": "deureogada", "es": "entrar (hacia dentro)" },
+        { "hanzi": "금방", "pinyin": "geumbang", "es": "enseguida, en un momento" },
+        { "hanzi": "시작하다", "pinyin": "sijakada", "es": "empezar" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "Mensajes rápidos" },
+        {
+          "type": "dialogue",
+          "title": "Chat: la película empieza a las dos",
+          "lines": [
+            { "speaker": "지민", "zh": "우고 씨, 어디예요? 영화가 두 시에 시작해요!", "py": "ugo ssi, eodiyeyo? yeonghwaga du sie sijakaeyo!", "es": "Hugo, ¿dónde estás? ¡La película empieza a las dos!" },
+            { "speaker": "우고", "zh": "미안해요! 버스가 늦게 와서 조금 늦어요.", "py": "mianhaeyo! beoseuga neutge waseo jogeum neujeoyo.", "es": "¡Perdona! El autobús ha tardado en venir y llego un poco tarde." },
+            { "speaker": "지민", "zh": "그럼 제가 먼저 들어갈까요?", "py": "geureom jega meonjeo deureogalkkayo?", "es": "Entonces, ¿entro yo primero?" },
+            { "speaker": "우고", "zh": "네, 먼저 들어가세요. 금방 도착할 거예요.", "py": "ne, meonjeo deureogaseyo. geumbang dochakal geoyeyo.", "es": "Sí, entra tú primero. Llego enseguida." },
+            { "speaker": "지민", "zh": "알겠어요. 우고 씨 표는 카톡으로 보낼까요?", "py": "algesseoyo. ugo ssi pyoneun katogeuro bonaelkkayo?", "es": "Vale. ¿Te mando tu entrada por KakaoTalk?" },
+            { "speaker": "우고", "zh": "네, 보내 주세요. 고마워요!", "py": "ne, bonae juseyo. gomawoyo!", "es": "Sí, mándamela, por favor. ¡Gracias!" },
+            { "speaker": "지민", "zh": "보냈어요. 빨리 와요!", "py": "bonaesseoyo. ppalli wayo!", "es": "Enviada. ¡Ven rápido!" }
+          ],
+          "notes": "Es la continuación del plan de cine de la unidad 12. 카톡 es la abreviatura de 카카오톡, la app de mensajería que usa casi todo el mundo en Corea; 카톡으로 보내다 = mandar por KakaoTalk. En los chats verás ㅋㅋ (risa, como «jaja») y ㅠㅠ (lágrimas). 시작해요 se pronuncia [시자캐요]. 늦게 와서 = como vino tarde (-아서 de causa)."
+        },
+        { "type": "grammar", "id": "eul-kkayo" },
+        { "type": "exercises", "count": 10, "types": ["choose-meaning", "listen-choose", "conjugation", "fill-blank", "build-sentence", "order-words", "translate-to-es", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ko-u14-l3",
+      "title": "Llama el repartidor",
+      "zh": "택배입니다",
+      "goal": "Atender una llamada del repartidor y dar una razón con -(으)니까 para pedir algo.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "택배", "pinyin": "taekbae", "es": "paquete; mensajería" },
+        { "hanzi": "핸드폰", "pinyin": "haendeupon", "es": "móvil" },
+        { "hanzi": "문", "pinyin": "mun", "es": "puerta" },
+        { "hanzi": "놓다", "pinyin": "nota", "es": "dejar, poner (놓아요)" },
+        { "hanzi": "경비실", "pinyin": "gyeongbisil", "es": "conserjería, garita del vigilante" },
+        { "hanzi": "맡기다", "pinyin": "matgida", "es": "dejar a cargo de alguien" },
+        { "hanzi": "문자", "pinyin": "munja", "es": "SMS, mensaje de texto" },
+        { "hanzi": "그런데요", "pinyin": "geureondeyo", "es": "sí, soy yo (al teléfono)" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "Paquetes y avisos" },
+        {
+          "type": "dialogue",
+          "title": "¿Dónde le dejo el paquete?",
+          "lines": [
+            { "speaker": "기사님", "zh": "여보세요, 우고 씨 핸드폰이에요?", "py": "yeoboseyo, ugo ssi haendeuponieyo?", "es": "¿Diga? ¿Es el móvil de Hugo?" },
+            { "speaker": "우고", "zh": "네, 그런데요.", "py": "ne, geureondeyo.", "es": "Sí, soy yo." },
+            { "speaker": "기사님", "zh": "택배입니다. 지금 기숙사에 계세요?", "py": "taekbaeimnida. jigeum gisuksae gyeseyo?", "es": "Le llamo por un paquete. ¿Está ahora en la residencia?" },
+            { "speaker": "우고", "zh": "아니요, 지금 학교에 있어요. 다섯 시에 돌아가요.", "py": "aniyo, jigeum hakgyoe isseoyo. daseot sie doragayo.", "es": "No, ahora estoy en la universidad. Vuelvo a las cinco." },
+            { "speaker": "기사님", "zh": "그럼 문 앞에 놓을까요?", "py": "geureom mun ape noeulkkayo?", "es": "Entonces, ¿se lo dejo delante de la puerta?" },
+            { "speaker": "우고", "zh": "비가 오니까 경비실에 맡겨 주세요.", "py": "biga onikka gyeongbisire matgyeo juseyo.", "es": "Como está lloviendo, déjelo en conserjería, por favor." },
+            { "speaker": "기사님", "zh": "네, 알겠습니다. 경비실에 맡기고 문자 드릴게요.", "py": "ne, algetseumnida. gyeongbisire matgigo munja deurilgeyo.", "es": "De acuerdo. Lo dejo en conserjería y le mando un mensaje." },
+            { "speaker": "우고", "zh": "감사합니다!", "py": "gamsahamnida!", "es": "¡Muchas gracias!" }
+          ],
+          "notes": "네, 그런데요 = «sí, soy yo» al responder a «¿es el móvil de…?». 놓을까요 suena [노을까요]: la ㅎ no se pronuncia delante de vocal. 문자 드릴게요 = le mando un mensaje (드리다 = dar, con respeto; -ㄹ게요 = promesa: «ya lo hago yo»). En Corea casi todo llega por 택배 y es habitual que el repartidor llame o mande un 문자 con una foto del paquete."
+        },
+        { "type": "grammar", "id": "euni-kka" },
+        { "type": "exercises", "count": 10, "types": ["choose-meaning", "listen-choose", "particle", "fill-blank", "conjugation", "dictation", "pinyin-input", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ko-u14-l4",
+      "title": "Lectura y repaso: llamada a un amigo y el chat de clase",
+      "zh": "도착하면 전화해!",
+      "goal": "Quedar por teléfono con un amigo en 반말 usando -(으)면 y leer un chat de grupo de la clase.",
+      "minutes": 14,
+      "vocab": [
+        { "hanzi": "통화하다", "pinyin": "tonghwahada", "es": "hablar por teléfono" },
+        { "hanzi": "응", "pinyin": "eung", "es": "sí (반말)" },
+        { "hanzi": "배터리", "pinyin": "baeteori", "es": "batería" },
+        { "hanzi": "거의", "pinyin": "geoui", "es": "casi: 거의 없어 = casi no queda" },
+        { "hanzi": "충전하다", "pinyin": "chungjeonhada", "es": "cargar (batería); recargar (T-money)" },
+        { "hanzi": "연락하다", "pinyin": "yeollakada", "es": "contactar, avisar" },
+        { "hanzi": "내가", "pinyin": "naega", "es": "yo (sujeto, 반말; 나 + 가)" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "Llamadas entre amigos" },
+        {
+          "type": "dialogue",
+          "title": "Cuando llegues, llámame",
+          "lines": [
+            { "speaker": "민수", "zh": "여보세요? 우고야, 지금 통화할 수 있어?", "py": "yeoboseyo? ugoya, jigeum tonghwahal su isseo?", "es": "¿Sí? Hugo, ¿puedes hablar ahora?" },
+            { "speaker": "우고", "zh": "응, 괜찮아. 그런데 배터리가 거의 없어.", "py": "eung, gwaenchana. geureonde baeteoriga geoui eopseo.", "es": "Sí, dime. Pero casi no me queda batería." },
+            { "speaker": "민수", "zh": "그럼 빨리 말할게. 내일 몇 시에 부산에 도착해?", "py": "geureom ppalli malhalge. naeil myeot sie busane dochakae?", "es": "Pues te lo digo rápido. ¿A qué hora llegas mañana a Busan?" },
+            { "speaker": "우고", "zh": "열한 시 반에 도착해.", "py": "yeolhan si bane dochakae.", "es": "Llego a las once y media." },
+            { "speaker": "민수", "zh": "부산역에 도착하면 전화해. 내가 역으로 갈게.", "py": "busannyeoge dochakamyeon jeonhwahae. naega yeogeuro galge.", "es": "Cuando llegues a la estación de Busan, llámame. Iré yo a la estación." },
+            { "speaker": "우고", "zh": "고마워! 지금 충전하고 저녁에 다시 연락할게.", "py": "gomawo! jigeum chungjeonhago jeonyeoge dasi yeollakalge.", "es": "¡Gracias! Ahora cargo el móvil y te vuelvo a escribir esta noche." },
+            { "speaker": "민수", "zh": "그래, 내일 봐!", "py": "geurae, naeil bwa!", "es": "Vale, ¡hasta mañana!" }
+          ],
+          "notes": "Minsu está pasando unos días en Busan, su ciudad natal, y Hugo va a visitarlo. Hablan en 반말: 응 = 네, 고마워 = 고마워요, 그래 = vale. -ㄹ게 (-ㄹ게요 con 요) es una promesa o un «ya lo hago yo»: 말할게, 갈게, 연락할게. 내일 봐! = ¡hasta mañana! (literalmente «nos vemos mañana»). 충전하다 también se usa para recargar la T-money."
+        },
+        { "type": "grammar", "id": "myeon" },
+        {
+          "type": "reading",
+          "title": "El chat de la clase de coreano",
+          "text": "김 선생님: 여러분, 내일 수업은 아홉 시가 아니에요. 열 시에 시작해요. 그리고 교실이 바뀌었어요. 3층 302호예요.\n지민: 네, 알겠습니다!\n우고: 선생님, 죄송합니다. 저는 내일 부산에 가니까 수업에 못 가요.\n김 선생님: 괜찮아요. 숙제는 카톡으로 보내 주세요.\n우고: 네, 오늘 밤에 보낼게요. 감사합니다!\n지민: 우고 씨, 부산에서 맛있는 거 많이 먹어요!",
+          "es": "Profesora Kim: Chicos, mañana la clase no es a las nueve. Empieza a las diez. Y además ha cambiado el aula: es la 302, en la tercera planta.\nJimin: ¡Entendido!\nHugo: Profesora, lo siento. Mañana voy a Busan, así que no puedo ir a clase.\nProfesora Kim: No pasa nada. Mándame los deberes por KakaoTalk.\nHugo: Sí, los mando esta noche. ¡Gracias!\nJimin: Hugo, ¡come muchas cosas ricas en Busan!",
+          "questions": [
+            { "q": "¿A qué hora empieza mañana la clase?", "options": ["A las nueve", "A las diez", "A las tres", "A las dos"], "answer": 1, "explain": "내일 수업은 아홉 시가 아니에요. 열 시에 시작해요. (바뀌었어요 = ha cambiado; 여러분 = todos, chicos)" },
+            { "q": "¿Por qué no puede ir Hugo a clase?", "options": ["Está enfermo", "Tiene trabajo", "Se va a Busan", "Tiene un examen"], "answer": 2, "explain": "저는 내일 부산에 가니까 수업에 못 가요." },
+            { "q": "¿Cómo va a entregar Hugo los deberes?", "options": ["Por KakaoTalk esta noche", "En mano la semana que viene", "Por correo electrónico mañana", "No los va a entregar"], "answer": 0, "explain": "숙제는 카톡으로 보내 주세요. — 네, 오늘 밤에 보낼게요. (맛있는 거 = cosas ricas)" }
+          ]
+        },
+        { "type": "exercises", "count": 12, "types": ["matching", "choose-meaning", "conjugation", "particle", "fill-blank", "order-words", "build-sentence", "dictation", "translate-to-es", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    }
+  ]
+}

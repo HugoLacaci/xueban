@@ -1,0 +1,235 @@
+{
+  "id": "ja-u05",
+  "order": 6,
+  "title": "Comida y restaurante",
+  "zh": "食べ物とレストラン",
+  "description": "Hablar de lo que comes y bebes, decir qué te apetece, opinar sobre la comida y pedir y pagar en un restaurante.",
+  "icon": "Utensils",
+  "level": 1,
+  "lang": "ja",
+  "category": "Comida y bebida",
+  "checkpoint": { "exercises": 15 },
+  "lessons": [
+    {
+      "id": "ja-u05-l1",
+      "title": "¿Qué desayunas?",
+      "zh": "何を食べますか",
+      "goal": "Decir qué comes y bebes marcando el objeto con を.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "食べます", "pinyin": "たべます", "es": "comer" },
+        { "hanzi": "飲みます", "pinyin": "のみます", "es": "beber" },
+        { "hanzi": "朝ご飯", "pinyin": "あさごはん", "es": "desayuno" },
+        { "hanzi": "ご飯", "pinyin": "ごはん", "es": "arroz cocido; comida" },
+        { "hanzi": "パン", "pinyin": "パン", "es": "pan" },
+        { "hanzi": "肉", "pinyin": "にく", "es": "carne" },
+        { "hanzi": "魚", "pinyin": "さかな", "es": "pescado; pez" },
+        { "hanzi": "野菜", "pinyin": "やさい", "es": "verdura" },
+        { "hanzi": "水", "pinyin": "みず", "es": "agua" },
+        { "hanzi": "お茶", "pinyin": "おちゃ", "es": "té (verde)" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "Comer y beber" },
+        {
+          "type": "dialogue",
+          "title": "Desayuno español, desayuno japonés",
+          "lines": [
+            { "speaker": "さくら", "zh": "ウーゴさんは 朝ご飯に 何を 食べますか。", "py": "ウーゴ さん は あさごはん に なに を たべます か。", "es": "Hugo, ¿qué desayunas?" },
+            { "speaker": "ウーゴ", "zh": "パンを 食べます。それから、コーヒーを 飲みます。", "py": "パン を たべます。それから、コーヒー を のみます。", "es": "Como pan. Y luego me tomo un café." },
+            { "speaker": "さくら", "zh": "そうですか。私は ご飯と 魚を 食べます。", "py": "そう です か。わたし は ごはん と さかな を たべます。", "es": "Ah, ¿sí? Yo como arroz y pescado." },
+            { "speaker": "ウーゴ", "zh": "毎朝 魚を 食べますか。すごいですね。", "py": "まいあさ さかな を たべます か。すごい です ね。", "es": "¿Comes pescado todas las mañanas? ¡Qué fuerte!" },
+            { "speaker": "さくら", "zh": "はい。みそしるも 飲みます。", "py": "はい。みそしる も のみます。", "es": "Sí. Y también tomo sopa de miso." },
+            { "speaker": "ウーゴ", "zh": "私は 魚は あまり 食べません。肉が 好きです。", "py": "わたし は さかな は あまり たべません。にく が すき です。", "es": "Yo pescado no como mucho. Me gusta la carne." }
+          ],
+          "notes": "それから = y luego, además. みそしる (味噌汁) = sopa de miso: la sopa se «bebe» (飲みます) en japonés. 朝ご飯に = para desayunar. 魚は あまり 食べません: は sustituye a を para contrastar («pescado, lo que es pescado, no mucho»)."
+        },
+        { "type": "grammar", "id": "wo" },
+        {
+          "type": "explain",
+          "title": "いただきます y ごちそうさま",
+          "markdown": "**ご飯** significa a la vez «arroz cocido» y «comida», porque el arroz era la base de todas las comidas:\n\n| 朝ご飯 あさごはん | 昼ご飯 ひるごはん | 晩ご飯 ばんごはん |\n|---|---|---|\n| desayuno | comida (mediodía) | cena |\n\nDos frases obligatorias en la mesa:\n\n- **いただきます** antes de comer, con las manos juntas: «lo recibo (con gratitud)». Se dice aunque comas solo.\n- **ごちそうさまでした** al terminar: «ha sido un festín». También se le dice al cocinero o al dueño del restaurante al salir.\n\nY dos costumbres: **no se clavan los palillos de pie en el arroz** ni se pasa comida de palillo a palillo (recuerda a los funerales), y sorber la sopa o los fideos **no es de mala educación**."
+        },
+        { "type": "exercises", "count": 10, "types": ["choose-meaning", "listen-choose", "pinyin-input", "particle", "order-words", "fill-blank", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ja-u05-l2",
+      "title": "Me apetece ramen",
+      "zh": "ラーメンが食べたいです",
+      "goal": "Decir lo que te apetece hacer con 〜たいです y rechazar con suavidad.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "昼ご飯", "pinyin": "ひるごはん", "es": "comida (del mediodía)" },
+        { "hanzi": "ラーメン", "pinyin": "ラーメン", "es": "ramen (fideos en caldo)" },
+        { "hanzi": "すし", "pinyin": "すし", "es": "sushi" },
+        { "hanzi": "カレー", "pinyin": "カレー", "es": "curry (japonés)" },
+        { "hanzi": "辛い", "pinyin": "からい", "es": "picante" },
+        { "hanzi": "物", "pinyin": "もの", "es": "cosa" },
+        { "hanzi": "店", "pinyin": "みせ", "es": "tienda; restaurante; local" },
+        { "hanzi": "行きます", "pinyin": "いきます", "es": "ir" },
+        { "hanzi": "〜たいです", "pinyin": "たいです", "es": "quiero… (hacer algo)" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "Platos populares y apetencias" },
+        {
+          "type": "dialogue",
+          "title": "¿Qué comemos hoy?",
+          "lines": [
+            { "speaker": "けん", "zh": "ウーゴさん、昼ご飯は 何が 食べたいですか。", "py": "ウーゴ さん、ひるごはん は なに が たべたい です か。", "es": "Hugo, ¿qué te apetece comer hoy?" },
+            { "speaker": "ウーゴ", "zh": "ラーメンが 食べたいです。", "py": "ラーメン が たべたい です。", "es": "Me apetece un ramen." },
+            { "speaker": "けん", "zh": "いいですね。辛い ラーメンは どうですか。", "py": "いい です ね。からい ラーメン は どう です か。", "es": "¡Buena idea! ¿Qué tal un ramen picante?" },
+            { "speaker": "ウーゴ", "zh": "辛い 物は ちょっと…。", "py": "からい もの は ちょっと…。", "es": "Lo picante… no mucho, la verdad." },
+            { "speaker": "けん", "zh": "じゃあ、駅の 前の 店に 行きましょう。おいしいですよ。", "py": "じゃあ、えき の まえ の みせ に いきましょう。おいしい です よ。", "es": "Entonces vamos al local de delante de la estación. Está muy bueno." },
+            { "speaker": "ウーゴ", "zh": "はい、行きましょう。おなかが すきました。", "py": "はい、いきましょう。おなか が すきました。", "es": "Sí, vamos. Tengo hambre." }
+          ],
+          "notes": "駅の 前 = delante de la estación. 店に 行きましょう: に marca adónde se va (unidad 7). おなかが すきました = tengo hambre (literalmente «la tripa se ha vaciado»). おいしい = rico, bueno."
+        },
+        { "type": "grammar", "id": "tai" },
+        {
+          "type": "explain",
+          "title": "El arte de decir «no» sin decirlo: ちょっと…",
+          "markdown": "En japonés un «no» directo suena brusco. Para rechazar algo se usa **ちょっと…** («un poco…») y se deja la frase **sin terminar**, con una sonrisa o un gesto de duda. El otro entiende perfectamente que es un no.\n\n- 辛い 物は ちょっと… → No me va mucho lo picante.\n- 明日は ちょっと… → Mañana me viene mal.\n\nEs la respuesta más habitual a una invitación que no quieres o no puedes aceptar. Si un japonés te contesta así, no insistas.\n\n**Sobre 〜たいです**: expresa tus propios deseos. Para preguntar a alguien de más rango («¿qué desea comer, profesora?») suena demasiado directo; con amigos y compañeros es perfecto."
+        },
+        { "type": "exercises", "count": 12, "types": ["choose-meaning", "listen-choose", "pinyin-input", "conjugation", "particle", "fill-blank", "translate-to-es", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ja-u05-l3",
+      "title": "¡Estaba buenísimo!",
+      "zh": "おいしかったです",
+      "goal": "Opinar sobre la comida en pasado y en negativo con los adjetivos -い y -な.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "おいしい", "pinyin": "おいしい", "es": "rico; sabroso" },
+        { "hanzi": "まずい", "pinyin": "まずい", "es": "malo (de sabor)" },
+        { "hanzi": "甘い", "pinyin": "あまい", "es": "dulce" },
+        { "hanzi": "熱い", "pinyin": "あつい", "es": "caliente (al tacto)" },
+        { "hanzi": "冷たい", "pinyin": "つめたい", "es": "frío (al tacto)" },
+        { "hanzi": "少し", "pinyin": "すこし", "es": "un poco" },
+        { "hanzi": "たくさん", "pinyin": "たくさん", "es": "mucho; muchos" },
+        { "hanzi": "ケーキ", "pinyin": "ケーキ", "es": "pastel; tarta" },
+        { "hanzi": "卵", "pinyin": "たまご", "es": "huevo" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "Sabores y temperaturas" },
+        {
+          "type": "dialogue",
+          "title": "La cena de ayer",
+          "lines": [
+            { "speaker": "さくら", "zh": "昨日の すし、おいしかったですね。", "py": "きのう の すし、おいしかった です ね。", "es": "El sushi de ayer estaba buenísimo, ¿verdad?" },
+            { "speaker": "ウーゴ", "zh": "はい、とても おいしかったです。でも、少し 高かったです。", "py": "はい、とても おいしかった です。でも、すこし たかかった です。", "es": "Sí, buenísimo. Pero fue un poco caro." },
+            { "speaker": "さくら", "zh": "そうですね。ケーキは どうでしたか。", "py": "そう です ね。ケーキ は どう でした か。", "es": "Es verdad. ¿Y qué tal el pastel?" },
+            { "speaker": "ウーゴ", "zh": "あまり 甘くなかったです。私は 好きでした。", "py": "あまり あまくなかった です。わたし は すき でした。", "es": "No era muy dulce. A mí me gustó." },
+            { "speaker": "さくら", "zh": "お茶も おいしかったですね。", "py": "おちゃ も おいしかった です ね。", "es": "El té también estaba bueno." },
+            { "speaker": "ウーゴ", "zh": "はい。でも、とても 熱かったです！", "py": "はい。でも、とても あつかった です！", "es": "Sí. ¡Pero quemaba muchísimo!" }
+          ],
+          "notes": "どうでしたか = ¿qué tal estuvo? (pasado de どうですか). そうですね = es verdad, estoy de acuerdo. 好きでした: pasado de un adjetivo -な (でした)."
+        },
+        { "type": "grammar", "id": "adjective-past-negative" },
+        {
+          "type": "explain",
+          "title": "Las cuatro formas de un adjetivo",
+          "markdown": "| | Adjetivo -い (おいしい) | Adjetivo -な (好き) |\n|---|---|---|\n| Presente | おいしいです | 好きです |\n| Negativo | おいし**くない**です | 好き**じゃありません** |\n| Pasado | おいし**かった**です | 好き**でした** |\n| Pasado negativo | おいし**くなかった**です | 好き**じゃありませんでした** |\n\n**La gran excepción**: いい (bueno) se conjuga a partir de よい → **よかった**です, **よくない**です. ✗いかった no existe.\n\n**Error típico**: ✗おいしいでした. Con los adjetivos -い el pasado va en el propio adjetivo (おいしかった) y です no cambia.\n\n**熱い / 暑い / 冷たい / 寒い**: el japonés distingue el calor y el frío **de las cosas** (熱い, 冷たい) del **ambiente** (暑い, 寒い). Una sopa es 熱い; un día de agosto en Tokio, 暑い."
+        },
+        { "type": "exercises", "count": 12, "types": ["choose-meaning", "listen-choose", "conjugation", "fill-blank", "order-words", "translate-to-es", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ja-u05-l4",
+      "title": "Pedir en un restaurante",
+      "zh": "ラーメンを一つください",
+      "goal": "Pedir en un restaurante con 〜を ください y decir dónde y con qué comes usando で.",
+      "minutes": 15,
+      "vocab": [
+        { "hanzi": "レストラン", "pinyin": "レストラン", "es": "restaurante" },
+        { "hanzi": "メニュー", "pinyin": "メニュー", "es": "carta; menú" },
+        { "hanzi": "ください", "pinyin": "ください", "es": "por favor, deme…" },
+        { "hanzi": "いらっしゃいませ", "pinyin": "いらっしゃいませ", "es": "¡bienvenido! (en tiendas y restaurantes)" },
+        { "hanzi": "箸", "pinyin": "はし", "es": "palillos" },
+        { "hanzi": "スプーン", "pinyin": "スプーン", "es": "cuchara" },
+        { "hanzi": "使います", "pinyin": "つかいます", "es": "usar" },
+        { "hanzi": "飲み物", "pinyin": "のみもの", "es": "bebida" },
+        { "hanzi": "〜で", "pinyin": "で", "es": "en (lugar de una acción); con (instrumento)" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "En el restaurante" },
+        {
+          "type": "dialogue",
+          "title": "Una mesa para dos",
+          "lines": [
+            { "speaker": "店員", "zh": "いらっしゃいませ。何名様ですか。", "py": "いらっしゃいませ。なんめいさま です か。", "es": "¡Bienvenidos! ¿Cuántos son?" },
+            { "speaker": "ウーゴ", "zh": "二人です。", "py": "ふたり です。", "es": "Dos." },
+            { "speaker": "店員", "zh": "こちらへ どうぞ。メニューです。", "py": "こちら へ どうぞ。メニュー です。", "es": "Por aquí, por favor. Aquí tienen la carta." },
+            { "speaker": "ウーゴ", "zh": "すみません、ラーメンを 一つ ください。", "py": "すみません、ラーメン を ひとつ ください。", "es": "Perdone, un ramen, por favor." },
+            { "speaker": "さくら", "zh": "私は カレーを ください。それから、お茶を 二つ。", "py": "わたし は カレー を ください。それから、おちゃ を ふたつ。", "es": "Para mí, un curry. Y dos tés." },
+            { "speaker": "店員", "zh": "はい。フォークを 使いますか。", "py": "はい。フォーク を つかいます か。", "es": "Muy bien. ¿Va a usar tenedor?" },
+            { "speaker": "ウーゴ", "zh": "いいえ、大丈夫です。箸で 食べます。", "py": "いいえ、だいじょうぶ です。はし で たべます。", "es": "No, no hace falta. Como con palillos." }
+          ],
+          "notes": "何名様 (なんめいさま) = ¿cuántas personas? (forma muy cortés de los camareros; tú responde con 一人 / 二人). こちらへ どうぞ = por aquí, por favor. すみません sirve para llamar al camarero: en Japón se le llama en voz alta o con el timbre de la mesa, y no se deja propina."
+        },
+        { "type": "grammar", "id": "de-place-means" },
+        {
+          "type": "explain",
+          "title": "Pedir en Japón, paso a paso",
+          "markdown": "1. Al entrar oirás **いらっしゃいませ**. No hace falta responder: basta una pequeña inclinación.\n2. Te preguntarán cuántos sois: responde con los dedos y **一人 / 二人 / 三人です**.\n3. Muchos restaurantes sirven **agua o té gratis** sin pedirlo (お水, お茶).\n4. Para pedir: **[plato] を [número] ください**. Más cortés: **[plato] を お願いします**.\n5. En los locales de ramen y comida rápida a menudo se compra un **ticket en una máquina** (券売機) a la entrada y se entrega en la barra.\n6. Para pagar, normalmente te levantas y pagas **en la caja de la entrada**, no en la mesa.\n7. **No se deja propina**: se considera innecesaria e incluso puede incomodar.\n\n**La partícula で** en este diálogo: **箸で** 食べます (con palillos: instrumento) y レストラン**で** 食べます (en el restaurante: lugar donde ocurre la acción)."
+        },
+        { "type": "exercises", "count": 12, "types": ["choose-meaning", "listen-choose", "particle", "classifier", "fill-blank", "build-sentence", "translate-to-es", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ja-u05-l5",
+      "title": "Lectura y repaso de la unidad",
+      "zh": "ふくしゅう",
+      "goal": "Pagar en un restaurante, enumerar con や〜など y leer el relato de una cena.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "晩ご飯", "pinyin": "ばんごはん", "es": "cena" },
+        { "hanzi": "お願いします", "pinyin": "おねがいします", "es": "por favor (al pedir algo)" },
+        { "hanzi": "〜円", "pinyin": "えん", "es": "yenes" },
+        { "hanzi": "〜や", "pinyin": "や", "es": "y (enumeración incompleta)" },
+        { "hanzi": "〜など", "pinyin": "など", "es": "etcétera; cosas como…" },
+        { "hanzi": "果物", "pinyin": "くだもの", "es": "fruta" },
+        { "hanzi": "ごちそうさまでした", "pinyin": "ごちそうさまでした", "es": "gracias por la comida (al terminar)" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "Para pagar y enumerar" },
+        {
+          "type": "dialogue",
+          "title": "La cuenta, por favor",
+          "lines": [
+            { "speaker": "ウーゴ", "zh": "すみません、お会計を お願いします。", "py": "すみません、おかいけい を おねがいします。", "es": "Perdone, la cuenta, por favor." },
+            { "speaker": "店員", "zh": "はい。全部で 二千四百円です。", "py": "はい。ぜんぶ で にせん よんひゃく えん です。", "es": "Sí. Son 2400 yenes en total." },
+            { "speaker": "ウーゴ", "zh": "カードで いいですか。", "py": "カード で いい です か。", "es": "¿Puedo pagar con tarjeta?" },
+            { "speaker": "店員", "zh": "はい、大丈夫です。", "py": "はい、だいじょうぶ です。", "es": "Sí, sin problema." },
+            { "speaker": "ウーゴ", "zh": "ごちそうさまでした。", "py": "ごちそうさまでした。", "es": "Gracias, estaba todo muy rico." },
+            { "speaker": "店員", "zh": "ありがとうございました。", "py": "ありがとうございました。", "es": "¡Muchas gracias!" }
+          ],
+          "notes": "お会計 (おかいけい) = la cuenta. 全部で = en total. カードで いいですか = ¿vale con tarjeta? (で de medio). 二千四百 = 2000 + 400: los números grandes los verás en la unidad 6."
+        },
+        { "type": "grammar", "id": "ya-nado" },
+        {
+          "type": "reading",
+          "title": "Una cena cerca de la estación",
+          "text": "日曜日に さくらさんと 駅の 近くの レストランで 晩ご飯を 食べました。私は ラーメンを 食べました。とても おいしかったです。さくらさんは すしを 食べました。それから、二人で ケーキや 果物などを 食べました。ケーキは あまり 甘くなかったです。全部で 四千円でした。少し 高かったです。でも、楽しかったです。",
+          "es": "El domingo cené con Sakura en un restaurante cerca de la estación. Yo comí ramen. Estaba buenísimo. Sakura comió sushi. Después, los dos comimos pastel, fruta y otras cosas. El pastel no era muy dulce. En total fueron 4000 yenes. Fue un poco caro. Pero lo pasamos bien.",
+          "questions": [
+            { "q": "¿Dónde cenaron Hugo y Sakura?", "options": ["En casa de Sakura", "En un restaurante cerca de la estación", "En la universidad", "En un konbini"], "answer": 1, "explain": "駅の 近くの レストランで 晩ご飯を 食べました。" },
+            { "q": "¿Qué comió Hugo?", "options": ["Sushi", "Curry", "Ramen", "Solo pastel"], "answer": 2, "explain": "私は ラーメンを 食べました。" },
+            { "q": "¿Cómo era el pastel?", "options": ["Muy dulce", "No muy dulce", "Picante", "Estaba frío"], "answer": 1, "explain": "あまり 甘くなかったです = no era muy dulce." }
+          ]
+        },
+        { "type": "exercises", "count": 12, "types": ["matching", "choose-meaning", "listen-choose", "particle", "conjugation", "fill-blank", "dictation", "translate-to-es", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    }
+  ]
+}

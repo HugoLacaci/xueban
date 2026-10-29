@@ -1,0 +1,213 @@
+{
+  "id": "ko-u05",
+  "order": 6,
+  "title": "Comida y restaurante",
+  "zh": "음식과 식당",
+  "description": "Decir qué te apetece, pedir en un restaurante coreano, hablar de sabores, entender los 반찬 y pedir en una cafetería.",
+  "icon": "Utensils",
+  "level": 1,
+  "lang": "ko",
+  "category": "Comida y bebida",
+  "checkpoint": { "exercises": 15 },
+  "lessons": [
+    {
+      "id": "ko-u05-l1",
+      "title": "¿Qué te apetece comer?",
+      "zh": "뭐 먹고 싶어요?",
+      "goal": "Nombrar platos coreanos básicos y decir lo que quieres comer o beber con -고 싶어요.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "밥", "pinyin": "bap", "es": "arroz cocido; comida" },
+        { "hanzi": "김치", "pinyin": "gimchi", "es": "kimchi" },
+        { "hanzi": "비빔밥", "pinyin": "bibimbap", "es": "bibimbap (arroz mezclado con verduras)" },
+        { "hanzi": "불고기", "pinyin": "bulgogi", "es": "bulgogi (ternera marinada a la parrilla)" },
+        { "hanzi": "라면", "pinyin": "ramyeon", "es": "fideos instantáneos" },
+        { "hanzi": "물", "pinyin": "mul", "es": "agua" },
+        { "hanzi": "마시다", "pinyin": "masida", "es": "beber" },
+        { "hanzi": "배고프다", "pinyin": "baegopeuda", "es": "tener hambre" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "La comida que vas a ver en todas partes" },
+        {
+          "type": "dialogue",
+          "title": "¿Comemos?",
+          "lines": [
+            { "speaker": "민수", "zh": "우고 씨, 배고파요?", "py": "Ugo ssi, baegopayo?", "es": "Hugo, ¿tienes hambre?" },
+            { "speaker": "우고", "zh": "네, 아주 배고파요!", "py": "Ne, aju baegopayo!", "es": "¡Sí, muchísima!" },
+            { "speaker": "민수", "zh": "뭐 먹고 싶어요?", "py": "Mwo meokgo sipeoyo?", "es": "¿Qué te apetece comer?" },
+            { "speaker": "우고", "zh": "비빔밥을 먹고 싶어요. 민수 씨는요?", "py": "Bibimbabeul meokgo sipeoyo. Minsu ssineunyo?", "es": "Me apetece bibimbap. ¿Y a ti?" },
+            { "speaker": "민수", "zh": "저는 불고기를 먹고 싶어요.", "py": "Jeoneun bulgogireul meokgo sipeoyo.", "es": "A mí me apetece bulgogi." },
+            { "speaker": "우고", "zh": "좋아요. 같이 가요!", "py": "Joayo. Gachi gayo!", "es": "Vale. ¡Vamos juntos!" }
+          ],
+          "notes": "배고프다 → 배고파요 (pierde la ㅡ, como 예쁘다 → 예뻐요). 같이 가요! = «¡vamos juntos!»: en coreano coloquial el mismo -아요 sirve para afirmar, preguntar y proponer; lo distingue la entonación. 밥 significa «arroz» pero también «comida» en general: 밥 먹었어요? («¿has comido?») es casi un saludo."
+        },
+        { "type": "grammar", "id": "go-sipda" },
+        { "type": "exercises", "count": 10, "types": ["choose-meaning", "listen-choose", "conjugation", "particle", "fill-blank", "order-words", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ko-u05-l2",
+      "title": "En el restaurante",
+      "zh": "주문하기",
+      "goal": "Entender las frases del camarero en -(으)세요 y pedir platos con 주세요.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "메뉴판", "pinyin": "menyupan", "es": "carta; menú" },
+        { "hanzi": "여기요", "pinyin": "yeogiyo", "es": "¡oiga!; ¡perdone! (para llamar)" },
+        { "hanzi": "좀", "pinyin": "jom", "es": "un poco; por favor (suaviza)" },
+        { "hanzi": "주세요", "pinyin": "juseyo", "es": "deme; póngame" },
+        { "hanzi": "앉다", "pinyin": "anda", "es": "sentarse" },
+        { "hanzi": "기다리다", "pinyin": "gidarida", "es": "esperar" },
+        { "hanzi": "천천히", "pinyin": "cheoncheonhi", "es": "despacio; con calma" },
+        { "hanzi": "맛있게 드세요", "pinyin": "masitge deuseyo", "es": "que aproveche" }
+      ],
+      "steps": [
+        { "type": "vocab" },
+        {
+          "type": "dialogue",
+          "title": "Pidiendo en un restaurante de Seúl",
+          "lines": [
+            { "speaker": "직원", "zh": "어서 오세요. 여기 앉으세요.", "py": "Eoseo oseyo. Yeogi anjeuseyo.", "es": "Bienvenidos. Siéntense aquí." },
+            { "speaker": "우고", "zh": "감사합니다. 메뉴판 좀 주세요.", "py": "Gamsahamnida. Menyupan jom juseyo.", "es": "Gracias. ¿Nos trae la carta, por favor?" },
+            { "speaker": "직원", "zh": "여기 있어요. 천천히 보세요.", "py": "Yeogi isseoyo. Cheoncheonhi boseyo.", "es": "Aquí tiene. Mírenla con calma." },
+            { "speaker": "우고", "zh": "여기요! 비빔밥 하나하고 불고기 하나 주세요.", "py": "Yeogiyo! Bibimbap hanahago bulgogi hana juseyo.", "es": "¡Perdone! Un bibimbap y un bulgogi, por favor." },
+            { "speaker": "직원", "zh": "네, 잠깐만 기다리세요.", "py": "Ne, jamkkanman gidariseyo.", "es": "Muy bien, esperen un momento." },
+            { "speaker": "직원", "zh": "여기 있어요. 맛있게 드세요!", "py": "Yeogi isseoyo. Masitge deuseyo!", "es": "Aquí tienen. ¡Que aproveche!" }
+          ],
+          "notes": "Para pedir: **plato + número nativo + 주세요** (비빔밥 하나 주세요). En Corea **se llama al camarero** en voz alta con 여기요! o 저기요!: no es de mala educación, y en muchos restaurantes hay un timbre en la mesa. 드세요 es la forma respetuosa de «coma» (de 드시다, honorífico de 먹다). 잠깐만 = un momentito."
+        },
+        { "type": "grammar", "id": "euseyo" },
+        { "type": "exercises", "count": 12, "types": ["choose-meaning", "listen-choose", "conjugation", "fill-blank", "order-words", "classifier", "translate-to-es", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ko-u05-l3",
+      "title": "¿Está rico?",
+      "zh": "맛있어요!",
+      "goal": "Hablar de sabores y decir dónde comes con 에서.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "맛있다", "pinyin": "masitda", "es": "estar rico; ser sabroso" },
+        { "hanzi": "맛없다", "pinyin": "madeopda", "es": "no estar rico" },
+        { "hanzi": "맵다", "pinyin": "maepda", "es": "ser picante (→ 매워요)" },
+        { "hanzi": "짜다", "pinyin": "jjada", "es": "ser salado" },
+        { "hanzi": "달다", "pinyin": "dalda", "es": "ser dulce" },
+        { "hanzi": "식당", "pinyin": "sikdang", "es": "restaurante; comedor" },
+        { "hanzi": "편의점", "pinyin": "pyeonuijeom", "es": "tienda 24 horas (konbini)" },
+        { "hanzi": "자주", "pinyin": "jaju", "es": "a menudo" },
+        { "hanzi": "조금", "pinyin": "jogeum", "es": "un poco" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "Sabores" },
+        {
+          "type": "dialogue",
+          "title": "¿Dónde comes normalmente?",
+          "lines": [
+            { "speaker": "지민", "zh": "우고 씨, 보통 어디에서 점심을 먹어요?", "py": "Ugo ssi, botong eodieseo jeomsimeul meogeoyo?", "es": "Hugo, ¿dónde comes normalmente a mediodía?" },
+            { "speaker": "우고", "zh": "학교 식당에서 먹어요. 아주 맛있어요.", "py": "Hakgyo sikdangeseo meogeoyo. Aju masisseoyo.", "es": "En el comedor de la escuela. Está muy rico." },
+            { "speaker": "지민", "zh": "김치찌개도 먹어요?", "py": "Gimchijjigaedo meogeoyo?", "es": "¿También comes kimchi-jjigae?" },
+            { "speaker": "우고", "zh": "네, 그런데 조금 매워요!", "py": "Ne, geureonde jogeum maewoyo!", "es": "Sí, ¡pero pica un poco!" },
+            { "speaker": "지민", "zh": "하하. 저는 편의점에서 라면을 자주 먹어요.", "py": "Haha. Jeoneun pyeonuijeomeseo ramyeoneul jaju meogeoyo.", "es": "Jaja. Yo como a menudo ramyeon en el konbini." },
+            { "speaker": "우고", "zh": "편의점 라면도 맛있어요!", "py": "Pyeonuijeom ramyeondo masisseoyo!", "es": "¡El ramyeon del konbini también está rico!" }
+          ],
+          "notes": "그런데 = «pero; por cierto» (adelanto). 김치찌개 = guiso de kimchi. 맵다 → 매워요 es un verbo irregular en ㅂ: la ㅂ se convierte en 우 (también 덥다 → 더워요, «hace calor»). 달다 → 달아요. Los 편의점 coreanos tienen mesas y agua caliente para preparar el ramyeon allí mismo: comer en el konbini es muy normal entre estudiantes."
+        },
+        { "type": "grammar", "id": "eseo" },
+        { "type": "exercises", "count": 12, "types": ["particle", "conjugation", "choose-meaning", "fill-blank", "build-sentence", "listen-choose", "translate-to-es", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ko-u05-l4",
+      "title": "반찬 y modales en la mesa",
+      "zh": "반찬",
+      "goal": "Pedir más 반찬, decir lo que no puedes comer con 못 y conocer los modales de la mesa coreana.",
+      "minutes": 15,
+      "vocab": [
+        { "hanzi": "반찬", "pinyin": "banchan", "es": "guarniciones; platitos compartidos" },
+        { "hanzi": "더", "pinyin": "deo", "es": "más" },
+        { "hanzi": "못", "pinyin": "mot", "es": "no poder (delante del verbo)" },
+        { "hanzi": "잘", "pinyin": "jal", "es": "bien" },
+        { "hanzi": "너무", "pinyin": "neomu", "es": "demasiado; muy" },
+        { "hanzi": "아직", "pinyin": "ajik", "es": "todavía; aún" },
+        { "hanzi": "숟가락", "pinyin": "sutgarak", "es": "cuchara" },
+        { "hanzi": "젓가락", "pinyin": "jeotgarak", "es": "palillos" }
+      ],
+      "steps": [
+        { "type": "vocab" },
+        {
+          "type": "dialogue",
+          "title": "Demasiado picante",
+          "lines": [
+            { "speaker": "우고", "zh": "저기요, 반찬 좀 더 주세요.", "py": "Jeogiyo, banchan jom deo juseyo.", "es": "Perdone, ¿nos pone un poco más de banchan?" },
+            { "speaker": "직원", "zh": "네, 여기 있어요.", "py": "Ne, yeogi isseoyo.", "es": "Claro, aquí tiene." },
+            { "speaker": "지민", "zh": "우고 씨, 이 김치 안 먹어요?", "py": "Ugo ssi, i gimchi an meogeoyo?", "es": "Hugo, ¿no te comes este kimchi?" },
+            { "speaker": "우고", "zh": "너무 매워요. 저는 김치를 잘 못 먹어요.", "py": "Neomu maewoyo. Jeoneun gimchireul jal mot meogeoyo.", "es": "Pica demasiado. No soy capaz de comer mucho kimchi." },
+            { "speaker": "지민", "zh": "괜찮아요. 젓가락은 잘 써요?", "py": "Gwaenchanayo. Jeotgarageun jal sseoyo?", "es": "No pasa nada. ¿Y los palillos, los manejas bien?" },
+            { "speaker": "우고", "zh": "아니요, 아직 잘 못 써요. 숟가락 주세요!", "py": "Aniyo, ajik jal mot sseoyo. Sutgarak juseyo!", "es": "No, todavía no. ¡Dame una cuchara!" }
+          ],
+          "notes": "쓰다 → 써요 = usar (adelanto). **안 먹어요** = no como (porque no quiero); **못 먹어요** = no puedo comer. 잘 못 + verbo = «no se me da bien». Los palillos coreanos son **de metal y planos**: más difíciles que los chinos o japoneses. No te preocupes, el arroz se come con cuchara."
+        },
+        {
+          "type": "explain",
+          "title": "Cultura: los 반찬 y los modales en la mesa",
+          "markdown": "En cualquier restaurante coreano, junto al plato principal llegan varios platitos pequeños: los **반찬** (*banchan*): kimchi, brotes de soja (콩나물), espinacas aliñadas (시금치), tortilla, anchoas… Tres cosas que sorprenden:\n\n- Son **gratis** y se **rellenan** también gratis: pide 반찬 좀 더 주세요 sin miedo (en algunos sitios hay autoservicio: 셀프).\n- Son **para compartir**: se colocan en el centro y cada uno coge con sus palillos.\n- No se piden: vienen solos y cambian según el restaurante y la temporada.\n\n**Modales que conviene conocer**:\n\n- Antes de comer se dice **잘 먹겠습니다** («voy a comer bien», gracias por la comida); al terminar, **잘 먹었습니다**. Si alguien te invita, es casi obligatorio.\n- Espera a que la persona **mayor** empiece a comer.\n- El **arroz y la sopa** se comen con **cuchara**; los palillos, para los 반찬. A diferencia de Japón o China, **no se levanta el cuenco** del arroz de la mesa.\n- **No claves los palillos de pie en el arroz**: recuerda a las ofrendas a los difuntos.\n- Si un mayor te sirve una bebida, sujeta el vaso con **las dos manos**; al beber alcohol delante de un mayor, gira un poco la cara.\n- La cuenta suele pagarse en la **caja (계산대)** al salir, no en la mesa. Y no se deja propina."
+        },
+        { "type": "grammar", "id": "mot-negation" },
+        { "type": "exercises", "count": 12, "types": ["choose-meaning", "fill-blank", "conjugation", "build-sentence", "order-words", "listen-choose", "translate-to-es", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ko-u05-l5",
+      "title": "Lectura y repaso: en la cafetería",
+      "zh": "복습",
+      "goal": "Pedir una bebida en una cafetería y leer un texto sobre hábitos de comida.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "음식", "pinyin": "eumsik", "es": "comida (platos)" },
+        { "hanzi": "좋아하다", "pinyin": "joahada", "es": "gustar (algo a alguien)" },
+        { "hanzi": "커피", "pinyin": "keopi", "es": "café" },
+        { "hanzi": "주스", "pinyin": "juseu", "es": "zumo" },
+        { "hanzi": "잔", "pinyin": "jan", "es": "taza; vaso (contador)" },
+        { "hanzi": "잘 먹겠습니다", "pinyin": "jal meokgetseumnida", "es": "¡a comer! (gracias antes de comer)" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "Bebidas y una fórmula de cortesía" },
+        {
+          "type": "dialogue",
+          "title": "Un americano con hielo",
+          "lines": [
+            { "speaker": "직원", "zh": "어서 오세요. 뭐 드릴까요?", "py": "Eoseo oseyo. Mwo deurilkkayo?", "es": "Bienvenido. ¿Qué le pongo?" },
+            { "speaker": "우고", "zh": "아이스 아메리카노 한 잔 주세요.", "py": "Aiseu amerikano han jan juseyo.", "es": "Un americano con hielo, por favor." },
+            { "speaker": "직원", "zh": "여기서 드세요?", "py": "Yeogiseo deuseyo?", "es": "¿Para tomar aquí?" },
+            { "speaker": "우고", "zh": "네, 여기서 마셔요.", "py": "Ne, yeogiseo masyeoyo.", "es": "Sí, lo tomo aquí." },
+            { "speaker": "직원", "zh": "사천오백 원이에요.", "py": "Sacheonobaek wonieyo.", "es": "Son 4500 wones." },
+            { "speaker": "우고", "zh": "여기 있어요.", "py": "Yeogi isseoyo.", "es": "Aquí tiene." }
+          ],
+          "notes": "뭐 드릴까요? = «¿qué le pongo?» (literalmente «¿qué le doy?»): no hace falta producirlo, solo entenderlo. 여기서 = 여기에서 abreviado. Si es para llevar: 테이크아웃이요 o 가져갈게요. El 아아 (아이스 아메리카노) es la bebida estrella en Corea, incluso en invierno."
+        },
+        {
+          "type": "reading",
+          "title": "Hugo y la comida coreana",
+          "text": "저는 한국 음식을 아주 좋아해요. 보통 학교 식당에서 점심을 먹어요. 비빔밥이 정말 맛있어요. 그런데 김치찌개는 너무 매워요. 한국 식당에서는 반찬이 많아요. 그리고 반찬은 돈을 안 내요. 저녁에는 친구하고 편의점에서 라면을 먹어요. 커피는 하루에 두 잔 마셔요.",
+          "es": "Me gusta mucho la comida coreana. Normalmente como en el comedor de la escuela. El bibimbap está buenísimo. Pero el kimchi-jjigae pica demasiado. En los restaurantes coreanos hay muchos banchan. Y los banchan no se pagan. Por la noche como ramyeon en el konbini con amigos. Café, tomo dos tazas al día.",
+          "questions": [
+            { "q": "¿Dónde come Hugo a mediodía normalmente?", "options": ["En casa", "En el comedor de la escuela", "En el konbini", "En una cafetería"], "answer": 1, "explain": "보통 학교 식당에서 점심을 먹어요." },
+            { "q": "¿Qué opina del kimchi-jjigae?", "options": ["Que está salado", "Que es dulce", "Que pica demasiado", "Que no está rico"], "answer": 2, "explain": "김치찌개는 너무 매워요 = el kimchi-jjigae pica demasiado." },
+            { "q": "¿Cuántos cafés toma al día?", "options": ["Uno", "Dos", "Tres", "Ninguno"], "answer": 1, "explain": "하루에 두 잔 = dos tazas al día (잔, contador de tazas, con número nativo)." }
+          ]
+        },
+        { "type": "exercises", "count": 12, "types": ["matching", "choose-meaning", "classifier", "particle", "conjugation", "fill-blank", "translate-to-es", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    }
+  ]
+}

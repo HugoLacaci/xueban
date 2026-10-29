@@ -1,0 +1,226 @@
+{
+  "id": "ko-u04",
+  "order": 5,
+  "title": "La hora y las fechas",
+  "zh": "시간과 날짜",
+  "description": "Decir la hora (¡con los dos sistemas numéricos a la vez!), los días de la semana, las fechas y tu rutina diaria.",
+  "icon": "CalendarDays",
+  "level": 1,
+  "lang": "ko",
+  "category": "Tiempo y fechas",
+  "checkpoint": { "exercises": 15 },
+  "lessons": [
+    {
+      "id": "ko-u04-l1",
+      "title": "¿Qué hora es?",
+      "zh": "지금 몇 시예요?",
+      "goal": "Decir la hora y situar algo en el tiempo con la partícula 에.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "시", "pinyin": "si", "es": "hora (en punto: 세 시)" },
+        { "hanzi": "분", "pinyin": "bun", "es": "minuto" },
+        { "hanzi": "반", "pinyin": "ban", "es": "media (y media)" },
+        { "hanzi": "지금", "pinyin": "jigeum", "es": "ahora" },
+        { "hanzi": "오전", "pinyin": "ojeon", "es": "por la mañana (a. m.)" },
+        { "hanzi": "오후", "pinyin": "ohu", "es": "por la tarde (p. m.)" },
+        { "hanzi": "수업", "pinyin": "sueop", "es": "clase (lección)" },
+        { "hanzi": "시간", "pinyin": "sigan", "es": "tiempo; hora (duración)" }
+      ],
+      "steps": [
+        { "type": "vocab" },
+        {
+          "type": "dialogue",
+          "title": "Antes de clase",
+          "lines": [
+            { "speaker": "우고", "zh": "지민 씨, 지금 몇 시예요?", "py": "Jimin ssi, jigeum myeot siyeyo?", "es": "Jimin, ¿qué hora es?" },
+            { "speaker": "지민", "zh": "두 시 반이에요.", "py": "Du si banieyo.", "es": "Son las dos y media." },
+            { "speaker": "우고", "zh": "아! 수업이 몇 시에 있어요?", "py": "A! Sueobi myeot sie isseoyo?", "es": "¡Ah! ¿A qué hora es la clase?" },
+            { "speaker": "지민", "zh": "세 시에 있어요.", "py": "Se sie isseoyo.", "es": "A las tres." },
+            { "speaker": "우고", "zh": "그럼 시간이 있어요. 커피 어때요?", "py": "Geureom sigani isseoyo. Keopi eottaeyo?", "es": "Entonces tenemos tiempo. ¿Qué tal un café?" },
+            { "speaker": "지민", "zh": "좋아요!", "py": "Joayo!", "es": "¡Vale!" }
+          ],
+          "notes": "N + 어때요? = «¿qué tal…?», perfecto para proponer planes. 시간이 있어요 = «tengo tiempo» (literalmente «hay tiempo»)."
+        },
+        {
+          "type": "explain",
+          "title": "La hora: nativos + sino-coreanos",
+          "markdown": "La hora coreana mezcla los dos sistemas que aprendiste en la unidad 2:\n\n- **Horas → nativos** (acortados): 한 시, 두 시, 세 시, 네 시, 다섯 시… 열한 시, 열두 시.\n- **Minutos → sino-coreanos**: 오 분, 십 분, 삼십 분 (o **반**, «media»).\n\n| Hora | Coreano |\n|---|---|\n| 1:00 | 한 시 |\n| 3:15 | 세 시 십오 분 |\n| 4:30 | 네 시 삼십 분 = 네 시 반 |\n| 10:45 | 열 시 사십오 분 |\n\nPara a. m./p. m. se pone delante **오전** / **오후**: 오후 세 시 = las 3 de la tarde. También se usan 아침 (mañana), 저녁 (tarde-noche) y 밤 (noche): 저녁 일곱 시. En horarios oficiales (trenes, vuelos) verás el formato de 24 horas: 14시 = 십사 시."
+        },
+        { "type": "grammar", "id": "e-place-time" },
+        { "type": "exercises", "count": 10, "types": ["listen-choose", "choose-meaning", "classifier", "particle", "fill-blank", "dictation", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ko-u04-l2",
+      "title": "Los días de la semana",
+      "zh": "무슨 요일이에요?",
+      "goal": "Decir los días de la semana y qué haces cada día con la partícula de objeto 을/를.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "월요일", "pinyin": "woryoil", "es": "lunes" },
+        { "hanzi": "화요일", "pinyin": "hwayoil", "es": "martes" },
+        { "hanzi": "수요일", "pinyin": "suyoil", "es": "miércoles" },
+        { "hanzi": "목요일", "pinyin": "mogyoil", "es": "jueves" },
+        { "hanzi": "금요일", "pinyin": "geumyoil", "es": "viernes" },
+        { "hanzi": "토요일", "pinyin": "toyoil", "es": "sábado" },
+        { "hanzi": "일요일", "pinyin": "iryoil", "es": "domingo" },
+        { "hanzi": "주말", "pinyin": "jumal", "es": "fin de semana" },
+        { "hanzi": "오늘", "pinyin": "oneul", "es": "hoy" },
+        { "hanzi": "공부하다", "pinyin": "gongbuhada", "es": "estudiar" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "Luna, fuego, agua, árbol, oro, tierra, sol" },
+        {
+          "type": "explain",
+          "title": "Un truco para los días",
+          "markdown": "Cada día = un elemento + **요일**. Son los mismos astros que en español (¡lunes = luna!):\n\n| Día | Elemento | Pista en español |\n|---|---|---|\n| **월**요일 | 月 luna | **lun**es |\n| **화**요일 | 火 fuego | **mar**tes = Marte, el planeta rojo |\n| **수**요일 | 水 agua | **miér**coles = Mercurio |\n| **목**요일 | 木 árbol | **jue**ves = Júpiter |\n| **금**요일 | 金 oro, metal | **vier**nes = Venus |\n| **토**요일 | 土 tierra | sábado = Saturno (*Saturday*) |\n| **일**요일 | 日 sol | domingo = *Sunday* |\n\nMemoriza la secuencia **월화수목금토일** como una sola palabra: los coreanos la recitan así."
+        },
+        {
+          "type": "dialogue",
+          "title": "Planes para el fin de semana",
+          "lines": [
+            { "speaker": "민수", "zh": "우고 씨, 오늘 무슨 요일이에요?", "py": "Ugo ssi, oneul museun yoirieyo?", "es": "Hugo, ¿qué día es hoy?" },
+            { "speaker": "우고", "zh": "금요일이에요.", "py": "Geumyoirieyo.", "es": "Viernes." },
+            { "speaker": "민수", "zh": "주말에 뭐 해요?", "py": "Jumare mwo haeyo?", "es": "¿Qué haces el fin de semana?" },
+            { "speaker": "우고", "zh": "토요일에 한국어를 공부해요. 민수 씨는요?", "py": "Toyoire hangugeoreul gongbuhaeyo. Minsu ssineunyo?", "es": "El sábado estudio coreano. ¿Y tú?" },
+            { "speaker": "민수", "zh": "저는 일요일에 영화를 봐요.", "py": "Jeoneun iryoire yeonghwareul bwayo.", "es": "Yo el domingo voy a ver una película." },
+            { "speaker": "우고", "zh": "와, 좋아요!", "py": "Wa, joayo!", "es": "¡Qué bien!" }
+          ],
+          "notes": "무슨 요일 = «qué día de la semana». 뭐 해요? = «¿qué haces?» (하다 → 해요). 영화 = película; 보다 → 봐요 (ver): adelanto. En coreano el presente sirve también para planes cercanos, igual que en español («el domingo veo una peli»)."
+        },
+        { "type": "grammar", "id": "eul-reul" },
+        { "type": "exercises", "count": 12, "types": ["particle", "choose-meaning", "matching", "fill-blank", "order-words", "listen-choose", "conjugation", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ko-u04-l3",
+      "title": "Fechas y cumpleaños",
+      "zh": "생일이 언제예요?",
+      "goal": "Decir fechas (mes y día) y expresar intervalos con 부터 … 까지.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "월", "pinyin": "wol", "es": "mes (tras número: 삼 월 = marzo)" },
+        { "hanzi": "일", "pinyin": "il", "es": "día (tras número: 오 일 = día 5)" },
+        { "hanzi": "생일", "pinyin": "saengil", "es": "cumpleaños" },
+        { "hanzi": "언제", "pinyin": "eonje", "es": "cuándo" },
+        { "hanzi": "며칠", "pinyin": "myeochil", "es": "qué día (del mes)" },
+        { "hanzi": "유월", "pinyin": "yuwol", "es": "junio" },
+        { "hanzi": "시월", "pinyin": "siwol", "es": "octubre" },
+        { "hanzi": "방학", "pinyin": "banghak", "es": "vacaciones escolares" },
+        { "hanzi": "부터", "pinyin": "buteo", "es": "desde" },
+        { "hanzi": "까지", "pinyin": "kkaji", "es": "hasta" }
+      ],
+      "steps": [
+        { "type": "vocab" },
+        {
+          "type": "explain",
+          "title": "Los meses: número + 월",
+          "markdown": "Los meses no tienen nombre propio: son **número sino-coreano + 월**. Enero = 일월, febrero = 이월… diciembre = 십이월. ¡Ya te los sabes!\n\nDos excepciones de pronunciación (y escritura): **6 → 유월** (no «육월») y **10 → 시월** (no «십월»).\n\nLas fechas van de lo grande a lo pequeño: **año → mes → día**. 2026년 10월 29일 = «29 de octubre de 2026». Pregunta: **몇 월 며칠이에요?** = «¿qué día es (mes y día)?»."
+        },
+        {
+          "type": "dialogue",
+          "title": "¿Cuándo es tu cumpleaños?",
+          "lines": [
+            { "speaker": "지민", "zh": "우고 씨, 생일이 언제예요?", "py": "Ugo ssi, saengiri eonjeyeyo?", "es": "Hugo, ¿cuándo es tu cumpleaños?" },
+            { "speaker": "우고", "zh": "시월 이십구 일이에요. 지민 씨는요?", "py": "Siwol isipgu irieyo. Jimin ssineunyo?", "es": "El 29 de octubre. ¿Y el tuyo?" },
+            { "speaker": "지민", "zh": "제 생일은 유월 십일 일이에요.", "py": "Je saengireun yuwol sibil irieyo.", "es": "Mi cumpleaños es el 11 de junio." },
+            { "speaker": "우고", "zh": "아, 그래요? 한국 대학교 방학은 언제예요?", "py": "A, geuraeyo? Hanguk daehakgyo banghageun eonjeyeyo?", "es": "Ah, ¿sí? ¿Cuándo son las vacaciones en las universidades coreanas?" },
+            { "speaker": "지민", "zh": "여름 방학은 유월 말부터 팔월까지예요.", "py": "Yeoreum banghageun yuwol malbuteo parwolkkajiyeyo.", "es": "Las de verano son desde finales de junio hasta agosto." },
+            { "speaker": "우고", "zh": "와, 두 달이에요!", "py": "Wa, du darieyo!", "es": "¡Hala, dos meses!" }
+          ],
+          "notes": "여름 = verano; 말 = final (de un periodo): adelantos. El curso universitario coreano empieza en **marzo** y tiene dos semestres; las vacaciones largas son en verano y en invierno. 두 달 = dos meses (contando meses con 달 y números nativos)."
+        },
+        { "type": "grammar", "id": "buteo-kkaji" },
+        { "type": "exercises", "count": 12, "types": ["listen-choose", "choose-meaning", "particle", "fill-blank", "dictation", "translate-to-es", "pinyin-input", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ko-u04-l4",
+      "title": "Mi día a día",
+      "zh": "하루 일과",
+      "goal": "Contar tu rutina con horas y verbos en -아요/어요 y negar con 안.",
+      "minutes": 15,
+      "vocab": [
+        { "hanzi": "아침", "pinyin": "achim", "es": "mañana; desayuno" },
+        { "hanzi": "점심", "pinyin": "jeomsim", "es": "mediodía; comida" },
+        { "hanzi": "저녁", "pinyin": "jeonyeok", "es": "tarde-noche; cena" },
+        { "hanzi": "보통", "pinyin": "botong", "es": "normalmente" },
+        { "hanzi": "매일", "pinyin": "maeil", "es": "todos los días" },
+        { "hanzi": "일어나다", "pinyin": "ireonada", "es": "levantarse; despertarse" },
+        { "hanzi": "자다", "pinyin": "jada", "es": "dormir" },
+        { "hanzi": "먹다", "pinyin": "meokda", "es": "comer" },
+        { "hanzi": "안", "pinyin": "an", "es": "no (delante del verbo)" }
+      ],
+      "steps": [
+        { "type": "vocab" },
+        {
+          "type": "dialogue",
+          "title": "La profesora pregunta por tu rutina",
+          "lines": [
+            { "speaker": "김 선생님", "zh": "우고 씨는 보통 몇 시에 일어나요?", "py": "Ugo ssineun botong myeot sie ireonayo?", "es": "Hugo, ¿a qué hora te levantas normalmente?" },
+            { "speaker": "우고", "zh": "일곱 시에 일어나요.", "py": "Ilgop sie ireonayo.", "es": "Me levanto a las siete." },
+            { "speaker": "김 선생님", "zh": "아침을 먹어요?", "py": "Achimeul meogeoyo?", "es": "¿Desayunas?" },
+            { "speaker": "우고", "zh": "아니요, 아침은 안 먹어요. 커피만 마셔요.", "py": "Aniyo, achimeun an meogeoyo. Keopiman masyeoyo.", "es": "No, no desayuno. Solo tomo café." },
+            { "speaker": "김 선생님", "zh": "주말에도 일곱 시에 일어나요?", "py": "Jumaredo ilgop sie ireonayo?", "es": "¿Los fines de semana también te levantas a las siete?" },
+            { "speaker": "우고", "zh": "아니요! 주말에는 열 시까지 자요.", "py": "Aniyo! Jumareneun yeol sikkaji jayo.", "es": "¡No! Los fines de semana duermo hasta las diez." }
+          ],
+          "notes": "아침, 점심, 저녁 significan a la vez el momento del día y la comida: 아침을 먹어요 = «desayuno» (literalmente «como la mañana»). 만 = «solo» (adelanto); 마시다 → 마셔요 (beber) lo verás en la unidad 5. 주말에**도** / 주말에**는**: las partículas se pueden apilar tras 에."
+        },
+        { "type": "grammar", "id": "an-negation" },
+        { "type": "exercises", "count": 12, "types": ["conjugation", "choose-meaning", "fill-blank", "build-sentence", "order-words", "listen-choose", "translate-to-es", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ko-u04-l5",
+      "title": "Lectura y repaso: la semana de Hugo",
+      "zh": "복습",
+      "goal": "Quedar con alguien a una hora concreta y leer un horario semanal.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "내일", "pinyin": "naeil", "es": "mañana (el día siguiente)" },
+        { "hanzi": "어제", "pinyin": "eoje", "es": "ayer" },
+        { "hanzi": "다음 주", "pinyin": "daeum ju", "es": "la semana que viene" },
+        { "hanzi": "이번 주", "pinyin": "ibeon ju", "es": "esta semana" },
+        { "hanzi": "시험", "pinyin": "siheom", "es": "examen" },
+        { "hanzi": "약속", "pinyin": "yaksok", "es": "cita; compromiso; plan" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "Ayer, hoy y mañana" },
+        {
+          "type": "dialogue",
+          "title": "Quedando para un café",
+          "lines": [
+            { "speaker": "지민", "zh": "우고 씨, 내일 시간 있어요?", "py": "Ugo ssi, naeil sigan isseoyo?", "es": "Hugo, ¿tienes tiempo mañana?" },
+            { "speaker": "우고", "zh": "내일요? 오전에는 수업이 있어요. 오후에는 시간이 있어요.", "py": "Naeiryo? Ojeoneneun sueobi isseoyo. Ohueneun sigani isseoyo.", "es": "¿Mañana? Por la mañana tengo clase. Por la tarde estoy libre." },
+            { "speaker": "지민", "zh": "그럼 오후 세 시에 커피 어때요?", "py": "Geureom ohu se sie keopi eottaeyo?", "es": "Entonces, ¿qué tal un café a las tres de la tarde?" },
+            { "speaker": "우고", "zh": "좋아요! 세 시부터 다섯 시까지 괜찮아요.", "py": "Joayo! Se sibuteo daseot sikkaji gwaenchanayo.", "es": "¡Vale! De tres a cinco me va bien." },
+            { "speaker": "지민", "zh": "네, 내일 봐요!", "py": "Ne, naeil bwayo!", "es": "¡Genial, hasta mañana!" }
+          ],
+          "notes": "내일 봐요 = «hasta mañana» (literalmente «nos vemos mañana»); también 다음 주에 봐요 (hasta la semana que viene). 내일요? con -요 suaviza una pregunta de una palabra."
+        },
+        {
+          "type": "reading",
+          "title": "La semana de Hugo",
+          "text": "저는 보통 일곱 시에 일어나요. 월요일부터 금요일까지 한국어 수업이 있어요. 수업은 오전 아홉 시 반부터 열두 시까지예요. 토요일에는 수업이 없어요. 토요일에는 친구하고 영화를 봐요. 일요일에는 열 시까지 자요. 그리고 오후에 한국어를 공부해요. 다음 주 수요일에 시험이 있어요!",
+          "es": "Normalmente me levanto a las siete. De lunes a viernes tengo clase de coreano. La clase es de nueve y media a doce de la mañana. Los sábados no tengo clase. Los sábados veo películas con amigos. Los domingos duermo hasta las diez. Y por la tarde estudio coreano. ¡El miércoles de la semana que viene tengo examen!",
+          "questions": [
+            { "q": "¿A qué hora empieza la clase de Hugo?", "options": ["A las 7:00", "A las 9:30", "A las 10:00", "A las 12:00"], "answer": 1, "explain": "오전 아홉 시 반부터 = desde las nueve y media de la mañana." },
+            { "q": "¿Qué hace Hugo los sábados?", "options": ["Estudia en la academia", "Duerme hasta las diez", "Ve películas con amigos", "Hace un examen"], "answer": 2, "explain": "토요일에는 친구하고 영화를 봐요." },
+            { "q": "¿Cuándo es el examen?", "options": ["Este miércoles", "El próximo miércoles", "El próximo lunes", "Mañana"], "answer": 1, "explain": "다음 주 수요일 = el miércoles de la semana que viene." }
+          ]
+        },
+        { "type": "exercises", "count": 12, "types": ["matching", "listen-choose", "particle", "conjugation", "fill-blank", "order-words", "translate-to-es", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    }
+  ]
+}

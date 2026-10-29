@@ -7,8 +7,11 @@ import { Search } from "lucide-react";
 import { search, useDictionary } from "@/lib/dictionary/service";
 import { useKnowledge } from "@/lib/knowledge";
 import { NAV_MAIN, NAV_MORE } from "./nav";
-import { Pinyin } from "@/components/zh/pinyin";
+import { Pinyin } from "@/components/target/reading";
 import { Badge, Spinner } from "@/components/ui/primitives";
+import { targetLang } from "@/lib/languages/registry";
+import { ui, readingName } from "@/lib/languages/ui-text";
+import { Mixed } from "@/components/target/mixed";
 
 interface PaletteState {
   open: boolean;
@@ -59,7 +62,7 @@ export function CommandPalette() {
     >
       <div className="flex items-center gap-2 border-b border-line px-4">
         <Search className="size-4 text-muted" />
-        <Command.Input value={q} onValueChange={setQ} placeholder="Busca palabras (汉字, pinyin, español), caracteres o secciones…" className="h-12 flex-1 bg-transparent text-sm outline-none placeholder:text-muted" />
+        <Command.Input value={q} onValueChange={setQ} placeholder={`Busca palabras (${ui().wordLabel}, ${readingName()}, español), caracteres o secciones…`} className="h-12 flex-1 bg-transparent text-sm outline-none placeholder:text-muted" />
         {dictStatus === "loading" ? <Spinner className="size-4" /> : null}
       </div>
       <Command.List className="max-h-[60vh] overflow-y-auto p-2 scrollbar-thin">
@@ -75,7 +78,7 @@ export function CommandPalette() {
                 onSelect={() => go(`/diccionario?q=${encodeURIComponent(r.s)}`)}
                 className="flex cursor-pointer items-center gap-3 rounded-lg px-3 py-2 text-sm data-[selected=true]:bg-paper-2"
               >
-                <span lang="zh-CN" className="zh text-xl">
+                <span lang={targetLang()} className="zh text-xl">
                   {r.s}
                 </span>
                 <Pinyin text={r.p} className="text-sm" />
@@ -92,8 +95,8 @@ export function CommandPalette() {
             .map((n) => (
               <Command.Item key={n.href} value={`nav-${n.href}`} onSelect={() => go(n.href)} className="flex cursor-pointer items-center gap-3 rounded-lg px-3 py-2 text-sm data-[selected=true]:bg-paper-2">
                 <n.icon className="size-4 text-muted" />
-                {n.label}
-                <span className="zh text-xs text-muted" lang="zh-CN">
+                <Mixed>{n.label}</Mixed>
+                <span className="zh text-xs text-muted" lang={targetLang()}>
                   {n.zh}
                 </span>
               </Command.Item>

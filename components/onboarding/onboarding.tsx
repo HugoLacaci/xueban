@@ -1,54 +1,94 @@
 "use client";
+/**
+ * Onboarding multi-idioma: «¿Qué quieres aprender?» (selección múltiple), y para cada idioma elegido
+ * nivel, objetivo, minutos diarios y fecha de examen; después el objetivo total y Anki.
+ */
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { motion, AnimatePresence } from "motion/react";
 import { ArrowLeft, ArrowRight, Check, PlugZap } from "lucide-react";
-import { useSettings, type Settings } from "@/lib/settings";
+import { useSettings, type LangSettings, type Settings } from "@/lib/settings";
 import { useAnkiStatus } from "@/lib/anki/client";
+import { LANG_META, LANGS } from "@/lib/languages/registry";
+import type { Lang } from "@/lib/languages/types";
+import { usePack } from "@/lib/languages/provider";
+import { CULTURE } from "@/lib/languages/culture";
 import { Button } from "@/components/ui/button";
 import { Input, Label, Slider, Spinner } from "@/components/ui/primitives";
 import { toast } from "@/components/ui/toast";
-import { ChineseText, Hanzi } from "@/components/zh/chinese-text";
-import { Seal, ShanShui, Lattice, XiaoMo, InkDivider } from "@/components/ornament";
+import { Seal, XiaoMo, InkDivider } from "@/components/ornament";
 import { cn } from "@/lib/utils";
+import { LangPortalCompact } from "@/components/layout/lang-portal";
+import { dayPhase } from "@/components/ornament/shan-shui";
 
-const STEPS = [
-  { es: "Nivel", zh: "水平" },
-  { es: "Objetivo", zh: "目标" },
-  { es: "Examen", zh: "考试" },
-  { es: "Anki", zh: "同步" },
-] as const;
-
+const STEPS = ["Idiomas", "Nivel y objetivo", "Tiempo", "Anki"] as const;
 const MOODS = ["happy", "think", "happy", "cheer"] as const;
+
+import { LEVELS, EXAM_INFO, GOAL_HINT } from "@/lib/onboarding-data";
+
+type Draft = Record<Lang, Pick<LangSettings, "level" | "goal" | "examDate" | "dailyGoalMinutes">>;
 
 export function Onboarding() {
   const { settings, update } = useSettings();
+  const pack = usePack();
   const router = useRouter();
   const anki = useAnkiStatus();
   const [step, setStep] = useState(0);
   const [checked, setChecked] = useState(false);
-  const [draft, setDraft] = useState({
-    name: settings.name,
-    level: settings.level,
-    dailyGoalMinutes: settings.dailyGoalMinutes,
-    examDate: settings.examDate,
-    hskList: settings.hskList,
-    ankiEnabled: settings.anki.enabled,
+  const [name, setName] = useState(settings.name);
+  const [langs, setLangs] = useState<Lang[]>(settings.onboardingDone ? settings.activeLangs : []);
+  const [tab, setTab] = useState<Lang>(settings.activeLangs[0] ?? "zh");
+  const [hskList, setHskList] = useState(settings.hskList);
+  const [ankiEnabled, setAnkiEnabled] = useState(settings.anki.enabled);
+  const [draft, setDraft] = useState<Draft>(() => {
+    const d = {} as Draft;
+    for (const l of LANGS) {
+      const s = settings.langs[l];
+      d[l] = { level: s.level, goal: s.goal, examDate: s.examDate, dailyGoalMinutes: s.dailyGoalMinutes };
+    }
+    return d;
   });
   const last = step === STEPS.length - 1;
-  const sealText = !draft.name.trim() || /^hugo$/i.test(draft.name.trim()) ? "雨果" : "学友";
+  const first = langs[0] ?? "zh";
+  const sealText = !name.trim() || /^hugo$/i.test(name.trim()) ? LANG_META[first].sealUser : LANG_META[first].emblem;
+  const total = langs.reduce((n, l) => n + draft[l].dailyGoalMinutes, 0);
+  const culture = CULTURE[pack.id];
+  const { Landscape } = pack.theme.ornaments;
+  const phase = dayPhase();
 
-  const finish = async () => {
+  const toggleLang = (l: Lang) => {
+    setLangs((cur) => {
+      const next = cur.includes(l) ? cur.filter((x) => x !== l) : [...cur, l];
+      if (next.length && !next.includes(tab)) setTab(next[0]);
+      if (!cur.length) setTab(l);
+      return next;
+    });
+  };
+  const setLangDraft = (l: Lang, patch: Partial<Draft[Lang]>) => setDraft((d) => ({ ...d, [l]: { ...d[l], ...patch } }));
+
+  const finish = async (skip = false) => {
+    const chosen: Lang[] = langs.length ? langs : ["zh"];
+    const nextLangs = { ...settings.langs };
+    for (const l of LANGS) {
+      const on = chosen.includes(l);
+      nextLangs[l] = { ...nextLangs[l], active: on, ...(on && !skip ? draft[l] : {}) };
+    }
+    const zh = nextLangs.zh;
+    const zhLevel = (["zero", "beginner", "hsk1", "hsk2"].includes(zh.level) ? zh.level : "beginner") as Settings["level"];
     await update({
-      name: draft.name || "Hugo",
-      level: draft.level,
-      dailyGoalMinutes: draft.dailyGoalMinutes,
-      examDate: draft.examDate,
-      hskList: draft.hskList,
-      anki: { ...settings.anki, enabled: draft.ankiEnabled },
+      name: name || "Hugo",
+      activeLangs: chosen,
+      lastLang: chosen[0],
+      langs: nextLangs,
+      // campos heredados del chino, en sintonía con langs.zh
+      level: zhLevel,
+      examDate: zh.examDate,
+      hskList,
+      dailyGoalMinutes: skip ? settings.dailyGoalMinutes : Math.max(10, chosen.reduce((n, l) => n + nextLangs[l].dailyGoalMinutes, 0)),
+      anki: { ...settings.anki, enabled: ankiEnabled },
       onboardingDone: true,
     });
-    router.replace("/");
+    router.replace(`/${chosen[0]}`);
   };
 
   const choice = (active: boolean) =>
@@ -57,27 +97,25 @@ export function Onboarding() {
       active ? "border-ink bg-paper-sunk/70" : "border-line hover:border-ink/40 hover:bg-paper-sunk/40",
     );
 
+  const canNext = step !== 0 || langs.length > 0;
+
   return (
     <div className="mx-auto flex min-h-screen w-full max-w-5xl flex-col px-4 py-6 sm:px-6 sm:py-10 md:flex-row md:items-stretch md:gap-8">
-      {/* Ilustración que se pinta sola */}
+      {/* Ilustración que se destapa paso a paso */}
       <aside className="relative mb-5 overflow-hidden rounded-[var(--radius-card)] border border-line bg-paper-raised md:mb-0 md:w-5/12 md:shrink-0" aria-hidden="true">
         <div className="relative h-52 md:h-full md:min-h-[560px]">
-          {/* el paisaje completo, destapado por un «papel» que sube un cuarto por paso (solo transform) */}
           <div className="absolute inset-x-0 bottom-0 h-[115%] w-full">
-            <ShanShui phase="day" seed={23} layers={4} height={9999} className="!h-full" />
+            <Landscape phase="day" seed={23} layers={4} height={9999} className="!h-full" />
           </div>
           <div
             className="absolute inset-x-0 top-0 h-full bg-paper-raised transition-transform duration-700 ease-[var(--ease-ink)] after:absolute after:inset-x-0 after:top-full after:h-28 after:bg-gradient-to-b after:from-paper-raised after:to-transparent after:content-[''] motion-reduce:transition-none"
             style={{ transform: `translateY(-${(step + 1) * 25}%)` }}
           />
-          <Lattice className="text-ink" opacity={0.05} variant="ice" size={40} />
           <div className="absolute inset-x-0 top-0 flex items-center justify-between p-4 md:p-6">
-            <div className="flex items-center gap-3">
-              <Seal text="学伴" size={44} title="Xuébàn" />
-              <div className="leading-tight">
-                <p className="font-serif-es text-lg text-ink">Xuébàn</p>
-                <p className="hidden text-[11px] text-ink-faint md:block">tu compañero de chino</p>
-              </div>
+            <div className="flex items-center gap-2">
+              {LANGS.map((l) => (
+                <Seal key={l} text={LANG_META[l].emblem} size={34} tone={langs.includes(l) ? "cinnabar" : "ink"} className={cn("transition-opacity", langs.includes(l) ? "opacity-100" : "opacity-30")} title={LANG_META[l].names.es} />
+              ))}
             </div>
             <span className="rounded-full bg-paper/70 px-2 py-0.5 text-[11px] text-ink-faint tabular">
               {step + 1} / {STEPS.length}
@@ -86,18 +124,20 @@ export function Onboarding() {
           <div className="absolute inset-x-0 bottom-0 flex items-end justify-between p-4 md:p-6">
             <div className="hidden md:block">
               <AnimatePresence mode="wait">
-                {last ? (
-                  <motion.div key="welcome" initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3, delay: 0.3 }}>
-                    <p className="text-3xl leading-none">
-                      <Hanzi text="欢迎来到学伴" size="xl" font="serif" className="font-normal" />
+                <motion.div key={`q${step}${first}`} initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} transition={{ duration: 0.25 }}>
+                  {last ? (
+                    <>
+                      <p lang={LANG_META[first].bcp47} className={cn(LANG_META[first].cssClass, "zh-serif text-3xl leading-none text-ink")}>
+                        {CULTURE[first].onboarding.welcome}
+                      </p>
+                      <p className="mt-2 text-xs text-ink-soft">{CULTURE[first].onboarding.welcomeReading}</p>
+                    </>
+                  ) : (
+                    <p lang={pack.bcp47} className="zh-kai max-w-[14rem] text-lg text-ink-soft">
+                      {culture.onboarding.proverbs[step % culture.onboarding.proverbs.length]}
                     </p>
-                    <p className="mt-2 text-xs text-ink-soft">Huānyíng lái dào Xuébàn · Bienvenido a Xuébàn</p>
-                  </motion.div>
-                ) : (
-                  <motion.p key={`q${step}`} lang="zh-CN" className="zh-kai max-w-[14rem] text-lg text-ink-soft" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.25 }}>
-                    {["千里之行，始于足下。", "不积跬步，无以至千里。", "有志者事竟成。"][step]}
-                  </motion.p>
-                )}
+                  )}
+                </motion.div>
               </AnimatePresence>
             </div>
             <div className="flex items-end gap-3">
@@ -110,21 +150,19 @@ export function Onboarding() {
 
       {/* Formulario */}
       <div className="flex min-w-0 flex-1 flex-col justify-center">
-        <h1 className="font-serif-es text-2xl text-ink sm:text-3xl">Bienvenido a Xuébàn</h1>
-        <ChineseText text="学伴：你的中文学习伙伴" size="sm" interactive={false} markUnknown={false} className="mt-1 text-ink-faint" />
+        <h1 className="font-serif-es text-2xl text-ink sm:text-3xl">¿Qué quieres aprender?</h1>
+        <p className="mt-1 text-sm text-ink-faint">Chino, japonés y coreano con el mismo método. Cada idioma guarda su propio progreso, repasos y mazos de Anki.</p>
 
         <ol className="mt-5 flex items-center gap-2" aria-label="Pasos">
           {STEPS.map((s, i) => (
-            <li key={s.es} className="flex flex-1 items-center gap-2">
+            <li key={s} className="flex flex-1 items-center gap-2">
               <span
                 className={cn("flex size-7 shrink-0 items-center justify-center rounded-full border text-[11px] font-medium transition-colors", i < step ? "border-ink bg-ink text-paper" : i === step ? "border-cinnabar bg-cinnabar text-paper-raised" : "border-line text-ink-faint")}
                 aria-current={i === step ? "step" : undefined}
               >
                 {i < step ? <Check className="size-3.5" /> : i + 1}
               </span>
-              <span className={cn("hidden text-xs sm:block", i === step ? "text-ink" : "text-ink-faint")}>
-                {s.es} <span lang="zh-CN" className="zh ml-0.5 opacity-70">{s.zh}</span>
-              </span>
+              <span className={cn("hidden text-xs sm:block", i === step ? "text-ink" : "text-ink-faint")}>{s}</span>
               {i < STEPS.length - 1 ? <span className={cn("h-px flex-1", i < step ? "bg-ink/50" : "bg-line")} /> : null}
             </li>
           ))}
@@ -137,67 +175,120 @@ export function Onboarding() {
                 <div className="space-y-4">
                   <div>
                     <Label htmlFor="ob-name">¿Cómo te llamas?</Label>
-                    <Input id="ob-name" className="mt-1" value={draft.name} onChange={(e) => setDraft({ ...draft, name: e.target.value })} placeholder="Hugo" />
+                    <Input id="ob-name" className="mt-1" value={name} onChange={(e) => setName(e.target.value)} placeholder="Hugo" />
                   </div>
                   <div>
-                    <Label>Tu nivel actual</Label>
+                    <Label>Elige uno o varios idiomas</Label>
                     <div className="mt-2 grid gap-2">
-                      {(
-                        [
-                          ["zero", "Empiezo de cero", "Todavía no sé pinyin ni tonos."],
-                          ["beginner", "Principiante", "Sé saludar y algunas palabras; preparo el HSK 1."],
-                          ["hsk1", "Ya tengo HSK 1", "Quiero ir a por el HSK 2."],
-                          ["hsk2", "HSK 2 o más", "Quiero consolidar y llegar al HSK 3."],
-                        ] as [Settings["level"], string, string][]
-                      ).map(([v, t, d]) => (
-                        <button key={v} type="button" onClick={() => setDraft({ ...draft, level: v })} className={choice(draft.level === v)} aria-pressed={draft.level === v}>
-                          <span className="block font-medium text-ink">{t}</span>
-                          <span className="block text-xs text-ink-faint">{d}</span>
-                        </button>
-                      ))}
+                      {LANGS.map((l) => {
+                        const m = LANG_META[l];
+                        const on = langs.includes(l);
+                        const order = on ? (langs.indexOf(l) === 0 ? "principal" : `${langs.indexOf(l) + 1}.º`) : "";
+                        return (
+                          <button
+                            key={l}
+                            type="button"
+                            onClick={() => toggleLang(l)}
+                            aria-pressed={on}
+                            className={cn("relative block w-full rounded-[16px] text-left outline-none transition-shadow focus-visible:ring-2 focus-visible:ring-ink focus-visible:ring-offset-2 focus-visible:ring-offset-paper-raised", on ? "ring-2 ring-ink/70" : "hover:ring-1 hover:ring-ink/30")}
+                          >
+                            <LangPortalCompact lang={l} phase={phase} state={on ? "active" : "inactive"} selected={on} />
+                            {on ? <span className="absolute bottom-1.5 right-14 rounded-full bg-ink px-2 py-0.5 text-[11px] font-medium text-paper">{order}</span> : null}
+                          </button>
+                        );
+                      })}
                     </div>
+                    <p className="mt-2 text-xs text-ink-faint">El primero que marques será el principal (el que se abre al entrar). Puedes añadir o quitar idiomas cuando quieras desde el selector de la cabecera.</p>
                   </div>
                 </div>
               ) : step === 1 ? (
-                <div className="space-y-5">
-                  <div>
-                    <Label>
-                      Objetivo diario: <span className="font-serif-es text-lg text-ink tabular">{draft.dailyGoalMinutes}</span> minutos
-                    </Label>
-                    <Slider className="mt-3" min={10} max={120} step={5} value={[draft.dailyGoalMinutes]} onValueChange={([v]) => setDraft({ ...draft, dailyGoalMinutes: v })} aria-label="Objetivo diario en minutos" />
-                    <p className="mt-2 text-xs text-ink-faint">30 minutos diarios bien repartidos (repaso + lección + input) rinden más que 3 horas el domingo. Puedes cambiarlo en Ajustes.</p>
-                  </div>
-                  <div>
-                    <Label>Lista HSK</Label>
-                    <div className="mt-2 grid gap-2 sm:grid-cols-3">
-                      {(
-                        [
-                          ["both", "Ambas", "Recomendado"],
-                          ["3.0", "HSK 3.0", "300 palabras"],
-                          ["2.0", "HSK 2.0", "150 palabras"],
-                        ] as [Settings["hskList"], string, string][]
-                      ).map(([v, t, d]) => (
-                        <button key={v} type="button" onClick={() => setDraft({ ...draft, hskList: v })} className={choice(draft.hskList === v)} aria-pressed={draft.hskList === v}>
-                          <span className="block font-medium text-ink">{t}</span>
-                          <span className="block text-xs text-ink-faint">{d}</span>
+                <div className="space-y-4">
+                  {langs.length > 1 ? (
+                    <div className="flex gap-1" role="tablist" aria-label="Idioma">
+                      {langs.map((l) => (
+                        <button key={l} type="button" role="tab" aria-selected={tab === l} onClick={() => setTab(l)} className={cn("rounded-full border px-3 py-1 text-sm", tab === l ? "border-ink bg-ink text-paper" : "border-line text-ink-soft")}>
+                          <span lang={LANG_META[l].bcp47}>{LANG_META[l].names.native}</span> · {LANG_META[l].names.es}
                         </button>
                       ))}
                     </div>
-                  </div>
+                  ) : null}
+                  {(() => {
+                    const l = langs.includes(tab) ? tab : first;
+                    const d = draft[l];
+                    return (
+                      <div className="space-y-4" key={l}>
+                        <div>
+                          <Label>Tu nivel de {LANG_META[l].names.adjective}</Label>
+                          <div className="mt-2 grid gap-2 sm:grid-cols-2">
+                            {LEVELS[l].map(([v, t, desc]) => (
+                              <button key={v} type="button" onClick={() => setLangDraft(l, { level: v })} className={choice(d.level === v)} aria-pressed={d.level === v}>
+                                <span className="block font-medium text-ink">{t}</span>
+                                <span className="block text-xs text-ink-faint">{desc}</span>
+                              </button>
+                            ))}
+                          </div>
+                        </div>
+                        <div>
+                          <Label htmlFor={`ob-goal-${l}`}>Tu objetivo (opcional)</Label>
+                          <Input id={`ob-goal-${l}`} className="mt-1" value={d.goal} onChange={(e) => setLangDraft(l, { goal: e.target.value })} placeholder={`p. ej. ${GOAL_HINT[l]}`} />
+                        </div>
+                        <div>
+                          <Label htmlFor={`ob-exam-${l}`}>{EXAM_INFO[l].label}</Label>
+                          <Input id={`ob-exam-${l}`} type="date" className="mt-1" value={d.examDate} onChange={(e) => setLangDraft(l, { examDate: e.target.value })} />
+                          <p className="mt-1 text-xs text-ink-faint">{EXAM_INFO[l].note}</p>
+                        </div>
+                        {l === "zh" ? (
+                          <div>
+                            <Label>Lista HSK</Label>
+                            <div className="mt-2 grid gap-2 sm:grid-cols-3">
+                              {(
+                                [
+                                  ["both", "Ambas", "Recomendado"],
+                                  ["3.0", "HSK 3.0", "300 palabras"],
+                                  ["2.0", "HSK 2.0", "150 palabras"],
+                                ] as [Settings["hskList"], string, string][]
+                              ).map(([v, t, desc]) => (
+                                <button key={v} type="button" onClick={() => setHskList(v)} className={choice(hskList === v)} aria-pressed={hskList === v}>
+                                  <span className="block font-medium text-ink">{t}</span>
+                                  <span className="block text-xs text-ink-faint">{desc}</span>
+                                </button>
+                              ))}
+                            </div>
+                          </div>
+                        ) : null}
+                      </div>
+                    );
+                  })()}
                 </div>
               ) : step === 2 ? (
-                <div className="space-y-3">
-                  <Label htmlFor="ob-exam">Fecha del examen HSK 1 (opcional)</Label>
-                  <Input id="ob-exam" type="date" value={draft.examDate} onChange={(e) => setDraft({ ...draft, examDate: e.target.value })} />
+                <div className="space-y-5">
+                  {langs.map((l) => (
+                    <div key={l}>
+                      <Label>
+                        <span lang={LANG_META[l].bcp47}>{LANG_META[l].names.native}</span> · {LANG_META[l].names.es}: <span className="font-serif-es text-lg text-ink tabular">{draft[l].dailyGoalMinutes}</span> min al día
+                      </Label>
+                      <Slider className="mt-3" min={5} max={120} step={5} value={[draft[l].dailyGoalMinutes]} onValueChange={([v]) => setLangDraft(l, { dailyGoalMinutes: v })} aria-label={`Minutos diarios de ${LANG_META[l].names.adjective}`} />
+                    </div>
+                  ))}
+                  <p className="text-sm text-ink">
+                    Total: <span className="font-serif-es text-lg tabular">{total}</span> minutos al día
+                  </p>
                   <p className="text-xs text-ink-faint">
-                    En 2026 la última convocatoria del HSK 2.0 es el 7 de noviembre y la primera oficial del HSK 3.0 está anunciada para el 13 de diciembre. Comprueba las fechas de tu centro en chinesetest.cn.
+                    30 minutos diarios bien repartidos (repaso + lección + input) rinden más que 3 horas el domingo. Si empiezas varios idiomas a la vez, da prioridad a uno y mantén los demás con el repaso diario. Puedes cambiarlo en Ajustes.
                   </p>
                 </div>
               ) : (
                 <div className="space-y-3">
                   <p className="text-sm text-ink">
-                    Si usas <strong>Anki</strong> en este PC, Xuébàn puede crear y actualizar tus notas automáticamente (mazo <span lang="zh-CN">中文 Chino</span>, tipo de nota <span lang="zh-CN">中文 · Vocabulario (Hugo)</span>).
+                    Si usas <strong>Anki</strong> en este PC, la web puede crear y actualizar tus notas automáticamente. Cada idioma tiene su mazo y su tipo de nota:
                   </p>
+                  <ul className="space-y-1 text-sm text-ink-soft">
+                    {langs.map((l) => (
+                      <li key={l}>
+                        <span lang={LANG_META[l].bcp47}>{settings.langs[l].anki.deckPrefix}</span>
+                      </li>
+                    ))}
+                  </ul>
                   <div className="flex flex-wrap items-center gap-2">
                     <Button
                       variant="secondary"
@@ -236,16 +327,16 @@ export function Onboarding() {
                     </div>
                   ) : null}
                   <label className="flex items-center gap-2 text-sm text-ink">
-                    <input type="checkbox" checked={draft.ankiEnabled} onChange={(e) => setDraft({ ...draft, ankiEnabled: e.target.checked })} className="size-4 accent-[rgb(var(--cinnabar))]" />
-                    Activar integración con Anki (puedes cambiarlo en Ajustes)
+                    <input type="checkbox" checked={ankiEnabled} onChange={(e) => setAnkiEnabled(e.target.checked)} className="size-4 accent-[rgb(var(--cinnabar))]" />
+                    Activar integración con Anki (puedes elegir qué idiomas sincronizar en Ajustes)
                   </label>
                   <p className="text-xs text-ink-faint">Sin Anki también funciona todo: la web tiene su propio repaso espaciado (FSRS) y puede exportar .apkg.</p>
                   <InkDivider className="my-3" />
                   <p className="text-sm text-ink-soft md:hidden">
-                    <span lang="zh-CN" className="zh-serif text-xl text-ink">
-                      欢迎来到学伴
+                    <span lang={LANG_META[first].bcp47} className={cn(LANG_META[first].cssClass, "zh-serif text-xl text-ink")}>
+                      {CULTURE[first].onboarding.welcome}
                     </span>
-                    <span className="block text-xs text-ink-faint">Huānyíng lái dào Xuébàn · Bienvenido a Xuébàn</span>
+                    <span className="block text-xs text-ink-faint">{CULTURE[first].onboarding.welcomeReading}</span>
                   </p>
                 </div>
               )}
@@ -258,7 +349,7 @@ export function Onboarding() {
             <ArrowLeft /> Atrás
           </Button>
           {!last ? (
-            <Button variant="ink" onClick={() => setStep((s) => s + 1)}>
+            <Button variant="ink" onClick={() => setStep((s) => s + 1)} disabled={!canNext}>
               Siguiente <ArrowRight />
             </Button>
           ) : (
@@ -267,7 +358,8 @@ export function Onboarding() {
             </Button>
           )}
         </div>
-        <button type="button" onClick={() => void finish()} className="mt-3 self-center rounded px-2 py-1 text-xs text-ink-faint hover:text-ink focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ink">
+        {step === 0 && !langs.length ? <p className="mt-2 text-center text-xs text-ink-faint">Marca al menos un idioma para continuar.</p> : null}
+        <button type="button" onClick={() => void finish(true)} className="mt-3 self-center rounded px-2 py-1 text-xs text-ink-faint hover:text-ink focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ink">
           Saltar y usar valores por defecto
         </button>
       </div>

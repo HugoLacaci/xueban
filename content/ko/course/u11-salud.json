@@ -1,0 +1,180 @@
+{
+  "id": "ko-u11",
+  "order": 12,
+  "title": "Salud",
+  "zh": "건강",
+  "description": "Decir qué te duele, comprar medicinas en el 약국, ir al médico en Corea y contar que ya te has curado.",
+  "icon": "HeartPulse",
+  "level": 1,
+  "lang": "ko",
+  "category": "Salud",
+  "checkpoint": { "exercises": 15 },
+  "lessons": [
+    {
+      "id": "ko-u11-l1",
+      "title": "Me duele la cabeza",
+      "zh": "머리가 아파요",
+      "goal": "Decir qué te duele y explicar la causa con -아서/어서.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "아프다", "pinyin": "apeuda", "es": "doler; estar enfermo (아파요)" },
+        { "hanzi": "머리", "pinyin": "meori", "es": "cabeza; pelo" },
+        { "hanzi": "목", "pinyin": "mok", "es": "garganta; cuello" },
+        { "hanzi": "배", "pinyin": "bae", "es": "barriga, estómago" },
+        { "hanzi": "열", "pinyin": "yeol", "es": "fiebre: 열이 나요 = tengo fiebre" },
+        { "hanzi": "나다", "pinyin": "nada", "es": "salir, producirse (fiebre, tos…)" },
+        { "hanzi": "감기", "pinyin": "gamgi", "es": "resfriado: 감기에 걸리다 = resfriarse" },
+        { "hanzi": "기침", "pinyin": "gichim", "es": "tos: 기침을 해요 = toso" },
+        { "hanzi": "병원", "pinyin": "byeongwon", "es": "hospital, clínica, consulta médica" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "El cuerpo y los síntomas" },
+        {
+          "type": "dialogue",
+          "title": "Tienes mala cara",
+          "lines": [
+            { "speaker": "김 선생님", "zh": "우고 씨, 얼굴이 안 좋아요. 어디 아파요?", "py": "ugo ssi, eolguri an joayo. eodi apayo?", "es": "Hugo, tienes mala cara. ¿Te duele algo?" },
+            { "speaker": "우고", "zh": "네, 머리가 아프고 목도 아파요.", "py": "ne, meoriga apeugo mokdo apayo.", "es": "Sí, me duele la cabeza y también la garganta." },
+            { "speaker": "김 선생님", "zh": "열도 나요?", "py": "yeoldo nayo?", "es": "¿Tienes fiebre también?" },
+            { "speaker": "우고", "zh": "네, 조금 나요. 어제 비를 맞아서 감기에 걸렸어요.", "py": "ne, jogeum nayo. eoje bireul majaseo gamgie geollyeosseoyo.", "es": "Sí, un poco. Ayer me mojé con la lluvia y me he resfriado." },
+            { "speaker": "김 선생님", "zh": "기침도 해요?", "py": "gichimdo haeyo?", "es": "¿Y toses?" },
+            { "speaker": "우고", "zh": "네, 기침을 많이 해서 밤에 잠을 못 잤어요.", "py": "ne, gichimeul mani haeseo bame jameul mot jasseoyo.", "es": "Sí, toso tanto que por la noche no he podido dormir." },
+            { "speaker": "김 선생님", "zh": "그럼 오늘은 집에 가세요. 병원에도 꼭 가세요.", "py": "geureom oneureun jibe gaseyo. byeongwonedo kkok gaseyo.", "es": "Entonces hoy vete a casa. Y ve al médico sin falta." }
+          ],
+          "notes": "얼굴이 안 좋아요 = «tienes mala cara» (얼굴 = cara). 어디 아파요? = ¿dónde te duele? / ¿estás malo?. 비를 맞다 = mojarse con la lluvia. 잠을 자다 = dormir. 아파요 viene de 아프다: la ㅡ desaparece delante de -아요 (아프 + 아요 → 아파요). Lo que duele va con 이/가: 머리가 아파요. En coreano 감기에 걸리다 usa el mismo 걸리다 que «tardar», pero aquí significa «coger, pillar (una enfermedad)»."
+        },
+        { "type": "grammar", "id": "a-seo" },
+        { "type": "exercises", "count": 10, "types": ["choose-meaning", "listen-choose", "particle", "fill-blank", "conjugation", "matching", "pinyin-input", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ko-u11-l2",
+      "title": "En la farmacia",
+      "zh": "약국에서",
+      "goal": "Explicar tus síntomas en el 약국 y entender las instrucciones con -(으)세요 y 드세요.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "약국", "pinyin": "yakguk", "es": "farmacia" },
+        { "hanzi": "약", "pinyin": "yak", "es": "medicina: 약을 먹다 = tomar una medicina" },
+        { "hanzi": "감기약", "pinyin": "gamgiyak", "es": "medicina para el resfriado" },
+        { "hanzi": "드시다", "pinyin": "deusida", "es": "comer, beber, tomar (honorífico): 드세요" },
+        { "hanzi": "하루", "pinyin": "haru", "es": "un día: 하루에 세 번 = tres veces al día" },
+        { "hanzi": "번", "pinyin": "beon", "es": "vez, veces" },
+        { "hanzi": "식사", "pinyin": "siksa", "es": "comida (cada comida del día)" },
+        { "hanzi": "후", "pinyin": "hu", "es": "después: 식사 후에 = después de comer" },
+        { "hanzi": "푹", "pinyin": "puk", "es": "bien, a fondo (descansar, dormir)" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "En el 약국" },
+        {
+          "type": "dialogue",
+          "title": "Una medicina para el resfriado",
+          "lines": [
+            { "speaker": "약사", "zh": "어서 오세요. 어디가 아프세요?", "py": "eoseo oseyo. eodiga apeuseyo?", "es": "Buenas. ¿Qué le pasa?" },
+            { "speaker": "우고", "zh": "감기에 걸렸어요. 목이 아프고 기침을 해요.", "py": "gamgie geollyeosseoyo. mogi apeugo gichimeul haeyo.", "es": "Me he resfriado. Me duele la garganta y toso." },
+            { "speaker": "약사", "zh": "열도 있으세요?", "py": "yeoldo isseuseyo?", "es": "¿Tiene fiebre también?" },
+            { "speaker": "우고", "zh": "아니요, 열은 없어요.", "py": "aniyo, yeoreun eopseoyo.", "es": "No, fiebre no tengo." },
+            { "speaker": "약사", "zh": "이 감기약을 드세요. 하루에 세 번, 식사 후에 드세요.", "py": "i gamgiyageul deuseyo. harue se beon, siksa hue deuseyo.", "es": "Tómese esta medicina para el resfriado. Tres veces al día, después de las comidas." },
+            { "speaker": "우고", "zh": "얼마예요?", "py": "eolmayeyo?", "es": "¿Cuánto es?" },
+            { "speaker": "약사", "zh": "오천 원입니다. 물을 많이 드시고 푹 쉬세요.", "py": "ocheon wonimnida. mureul mani deusigo puk swiseyo.", "es": "Son 5000 wones. Beba mucha agua y descanse bien." },
+            { "speaker": "우고", "zh": "감사합니다.", "py": "gamsahamnida.", "es": "Gracias." }
+          ],
+          "notes": "약사 = farmacéutico/a. 아프세요, 있으세요, 드세요, 쉬세요: el farmacéutico habla a Hugo con -(으)세요, tanto para preguntar con respeto como para dar instrucciones amables. 드시다 sustituye a 먹다 y a 마시다 cuando hablas con respeto (no se dice *먹으세요 a un cliente, aunque se entiende). Fíjate en el contraste 열은 없어요: 은 marca «fiebre, en concreto, no». En Corea los antibióticos necesitan receta (처방전) del médico; para un resfriado normal basta el 약국."
+        },
+        { "type": "grammar", "id": "euseyo" },
+        { "type": "exercises", "count": 10, "types": ["choose-meaning", "listen-choose", "conjugation", "fill-blank", "order-words", "dictation", "translate-to-es", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ko-u11-l3",
+      "title": "En la consulta del médico",
+      "zh": "병원에서",
+      "goal": "Explicar desde cuándo tienes síntomas y entender condiciones con -(으)면.",
+      "minutes": 13,
+      "vocab": [
+        { "hanzi": "의사", "pinyin": "uisa", "es": "médico/a" },
+        { "hanzi": "간호사", "pinyin": "ganhosa", "es": "enfermero/a" },
+        { "hanzi": "처음", "pinyin": "cheoeum", "es": "primera vez; al principio" },
+        { "hanzi": "보험", "pinyin": "boheom", "es": "seguro (médico)" },
+        { "hanzi": "계속", "pinyin": "gyesok", "es": "seguir, continuamente" },
+        { "hanzi": "다시", "pinyin": "dasi", "es": "otra vez, de nuevo" },
+        { "hanzi": "괜찮다", "pinyin": "gwaenchanta", "es": "estar bien, no pasar nada" },
+        { "hanzi": "어떻게", "pinyin": "eotteoke", "es": "cómo; qué (hacer)" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "En la clínica" },
+        {
+          "type": "dialogue",
+          "title": "¿Qué le trae por aquí?",
+          "lines": [
+            { "speaker": "간호사", "zh": "처음 오셨어요?", "py": "cheoeum osyeosseoyo?", "es": "¿Es la primera vez que viene?" },
+            { "speaker": "우고", "zh": "네, 처음이에요. 여기 외국인등록증이에요.", "py": "ne, cheoeumieyo. yeogi oegugindeungnokjeungieyo.", "es": "Sí, es la primera vez. Aquí tiene mi tarjeta de residencia." },
+            { "speaker": "의사", "zh": "어떻게 오셨어요?", "py": "eotteoke osyeosseoyo?", "es": "¿Qué le trae por aquí?" },
+            { "speaker": "우고", "zh": "삼 일 전부터 열이 나고 기침을 해요.", "py": "sam il jeonbuteo yeori nago gichimeul haeyo.", "es": "Desde hace tres días tengo fiebre y toso." },
+            { "speaker": "의사", "zh": "목감기예요. 약을 먹으면 괜찮을 거예요.", "py": "mokgamgiyeyo. yageul meogeumyeon gwaenchaneul geoyeyo.", "es": "Es un resfriado de garganta. Si toma la medicina, se pondrá bien." },
+            { "speaker": "우고", "zh": "열이 계속 나면 어떻게 해요?", "py": "yeori gyesok namyeon eotteoke haeyo?", "es": "¿Y si me sigue subiendo la fiebre?" },
+            { "speaker": "의사", "zh": "열이 계속 나면 다시 오세요. 그리고 오늘은 푹 쉬세요.", "py": "yeori gyesok namyeon dasi oseyo. geurigo oneureun puk swiseyo.", "es": "Si la fiebre continúa, vuelva. Y hoy descanse bien." }
+          ],
+          "notes": "오셨어요 = vino usted (오다 + 시 + pasado); 어떻게 오셨어요? es la fórmula fija de recepciones y consultas: «¿qué le trae por aquí?». 외국인등록증 = tarjeta de residencia de extranjero: con ella la clínica comprueba tu seguro médico nacional (건강보험, 보험 = seguro). 전부터 = desde hace. 목감기 = resfriado de garganta. 괜찮을 거예요 = estará bien (futuro de la unidad 10)."
+        },
+        { "type": "grammar", "id": "myeon" },
+        { "type": "exercises", "count": 10, "types": ["choose-meaning", "listen-choose", "conjugation", "fill-blank", "build-sentence", "pinyin-input", "matching", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ko-u11-l4",
+      "title": "Lectura y repaso: ya estoy curado",
+      "zh": "다 나았어요",
+      "goal": "Contar que te has curado y repasar los verbos irregulares de la salud (아프다, 낫다).",
+      "minutes": 14,
+      "vocab": [
+        { "hanzi": "낫다", "pinyin": "natda", "es": "curarse (나았어요)" },
+        { "hanzi": "다", "pinyin": "da", "es": "todo, del todo" },
+        { "hanzi": "건강", "pinyin": "geongang", "es": "salud" },
+        { "hanzi": "운동하다", "pinyin": "undonghada", "es": "hacer ejercicio, hacer deporte" },
+        { "hanzi": "담배", "pinyin": "dambae", "es": "tabaco, cigarrillo" },
+        { "hanzi": "피우다", "pinyin": "piuda", "es": "fumar: 담배를 피워요" },
+        { "hanzi": "잠", "pinyin": "jam", "es": "sueño (el acto de dormir): 잠을 자다" },
+        { "hanzi": "우유", "pinyin": "uyu", "es": "leche" }
+      ],
+      "steps": [
+        { "type": "vocab", "title": "Hábitos sanos" },
+        {
+          "type": "dialogue",
+          "title": "¿Ya te has curado?",
+          "lines": [
+            { "speaker": "지민", "zh": "우고 씨, 감기는 다 나았어요?", "py": "ugo ssi, gamgineun da naasseoyo?", "es": "Hugo, ¿ya se te ha pasado el resfriado?" },
+            { "speaker": "우고", "zh": "네, 다 나았어요. 약을 먹고 푹 쉬었어요.", "py": "ne, da naasseoyo. yageul meokgo puk swieosseoyo.", "es": "Sí, ya estoy bien del todo. Tomé la medicina y descansé mucho." },
+            { "speaker": "지민", "zh": "다행이에요! 건강이 제일 중요해요.", "py": "dahaengieyo! geongangi jeil jungyohaeyo.", "es": "¡Menos mal! La salud es lo más importante." },
+            { "speaker": "우고", "zh": "그래서 이제 매일 운동할 거예요.", "py": "geuraeseo ije maeil undonghal geoyeyo.", "es": "Por eso a partir de ahora voy a hacer ejercicio todos los días." },
+            { "speaker": "지민", "zh": "좋아요. 우고 씨는 담배를 피워요?", "py": "joayo. ugo ssineun dambaereul piwoyo?", "es": "Muy bien. ¿Tú fumas?" },
+            { "speaker": "우고", "zh": "아니요, 안 피워요. 그런데 요즘 잠을 잘 못 자요.", "py": "aniyo, an piwoyo. geureonde yojeum jameul jal mot jayo.", "es": "No, no fumo. Pero últimamente no duermo bien." },
+            { "speaker": "지민", "zh": "밤에 커피를 마시면 잠을 못 자요. 따뜻한 우유를 마셔요!", "py": "bame keopireul masimyeon jameul mot jayo. ttatteutan uyureul masyeoyo!", "es": "Si tomas café por la noche, no puedes dormir. ¡Tómate una leche caliente!" }
+          ],
+          "notes": "나았어요 viene de 낫다, irregular en ㅅ: la ㅅ desaparece delante de vocal (낫 + 았어요 → 나았어요), pero no delante de consonante (낫고). 다행이에요 = ¡menos mal!. 제일 = el más; 중요하다 = ser importante. 이제 = a partir de ahora. 피워요 viene de 피우다 (우 + 어 → 워). 잘 못 자요 (separado) = no duermo bien; 잘못 (junto) significa «error». 따뜻한 우유 = leche caliente (따뜻하다 delante de un nombre; lo verás más adelante)."
+        },
+        { "type": "grammar", "id": "irregulars" },
+        {
+          "type": "reading",
+          "title": "La semana en que me puse malo",
+          "text": "지난주 월요일에 비가 많이 왔어요. 그런데 저는 우산이 없어서 비를 맞았어요. 화요일에 머리가 아프고 열이 났어요. 그래서 학교에 못 갔어요. 수요일에 병원에 갔어요. 의사 선생님은 아주 친절했어요. 저는 약을 하루에 세 번 먹었어요. 그리고 물을 많이 마시고 푹 잤어요. 금요일에 다 나았어요. 이제 비가 오면 꼭 우산을 가져가요.",
+          "es": "El lunes pasado llovió mucho. Yo no tenía paraguas y me mojé. El martes me dolía la cabeza y tenía fiebre, así que no pude ir a clase. El miércoles fui al médico. El médico fue muy amable. Tomé la medicina tres veces al día, y además bebí mucha agua y dormí mucho. El viernes ya estaba curado del todo. Ahora, si llueve, siempre me llevo el paraguas.",
+          "questions": [
+            { "q": "¿Por qué se puso malo Hugo?", "options": ["Comió algo en mal estado", "Se mojó con la lluvia porque no tenía paraguas", "Hizo demasiado ejercicio", "No durmió en toda la semana"], "answer": 1, "explain": "우산이 없어서 비를 맞았어요. (-어서 = porque)" },
+            { "q": "¿Qué día fue al médico?", "options": ["El lunes", "El martes", "El miércoles", "El viernes"], "answer": 2, "explain": "수요일에 병원에 갔어요." },
+            { "q": "¿Cuántas veces al día tomaba la medicina?", "options": ["Una", "Dos", "Tres", "Cuatro"], "answer": 2, "explain": "약을 하루에 세 번 먹었어요." }
+          ]
+        },
+        { "type": "exercises", "count": 12, "types": ["matching", "choose-meaning", "conjugation", "particle", "fill-blank", "order-words", "build-sentence", "dictation", "translate-to-es", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    }
+  ]
+}

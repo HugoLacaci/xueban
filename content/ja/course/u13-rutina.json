@@ -1,0 +1,175 @@
+{
+  "id": "ja-u13",
+  "order": 14,
+  "title": "Rutina diaria",
+  "zh": "毎日の生活",
+  "description": "Contar tu día de la mañana a la noche: encadenar acciones con la forma -te, el orden con 前に / 後で, horarios con から〜まで y dónde vives con 〜ています.",
+  "icon": "Sunrise",
+  "level": 1,
+  "lang": "ja",
+  "category": "Verbos básicos",
+  "checkpoint": { "exercises": 15 },
+  "lessons": [
+    {
+      "id": "ja-u13-l1",
+      "title": "Me levanto y me ducho",
+      "zh": "起きて、シャワーを浴びます",
+      "goal": "Encadenar las acciones de la mañana con la forma -te: 起きて、顔を洗って….",
+      "minutes": 13,
+      "vocab": [
+        { "hanzi": "起きる", "pinyin": "おきる", "es": "levantarse; despertarse" },
+        { "hanzi": "顔", "pinyin": "かお", "es": "cara" },
+        { "hanzi": "洗う", "pinyin": "あらう", "es": "lavar" },
+        { "hanzi": "磨く", "pinyin": "みがく", "es": "cepillar; pulir", "note": "歯を磨く = lavarse los dientes." },
+        { "hanzi": "シャワー", "pinyin": "シャワー", "es": "ducha" },
+        { "hanzi": "浴びる", "pinyin": "あびる", "es": "darse (una ducha)", "note": "シャワーを浴びる = ducharse." },
+        { "hanzi": "服", "pinyin": "ふく", "es": "ropa" },
+        { "hanzi": "着る", "pinyin": "きる", "es": "ponerse (ropa de cintura para arriba); vestirse" },
+        { "hanzi": "朝ご飯", "pinyin": "あさごはん", "es": "desayuno" }
+      ],
+      "steps": [
+        { "type": "vocab" },
+        {
+          "type": "dialogue",
+          "title": "Las mañanas de Hugo",
+          "lines": [
+            { "speaker": "田中先生", "zh": "ウーゴさん、毎朝何時に起きますか。", "py": "ウーゴ さん、まいあさ なんじ に おきます か。", "es": "Hugo, ¿a qué hora te levantas cada mañana?" },
+            { "speaker": "ウーゴ", "zh": "七時に起きます。起きて、すぐシャワーを浴びます。", "py": "しちじ に おきます。おきて、すぐ シャワー を あびます。", "es": "Me levanto a las siete. Me levanto y enseguida me ducho." },
+            { "speaker": "田中先生", "zh": "それから？", "py": "それから？", "es": "¿Y luego?" },
+            { "speaker": "ウーゴ", "zh": "顔を洗って、歯を磨いて、服を着ます。", "py": "かお を あらって、は を みがいて、ふく を きます。", "es": "Me lavo la cara, me lavo los dientes y me visto." },
+            { "speaker": "田中先生", "zh": "朝ご飯は食べますか。", "py": "あさごはん は たべます か。", "es": "¿Desayunas?" },
+            { "speaker": "ウーゴ", "zh": "はい。パンを食べて、コーヒーを飲んで、八時に家を出ます。", "py": "はい。パン を たべて、コーヒー を のんで、はちじ に いえ を でます。", "es": "Sí. Como pan, me tomo un café y a las ocho salgo de casa." }
+          ],
+          "notes": "すぐ = enseguida. La forma -te une acciones en orden y el tiempo (presente o pasado) lo marca solo el último verbo: 起きて、浴びます / 起きて、浴びました. 家を出る: el lugar del que sales lleva を."
+        },
+        { "type": "grammar", "id": "te-form" },
+        { "type": "exercises", "count": 10, "types": ["conjugation", "choose-meaning", "listen-choose", "order-words", "fill-blank", "matching", "pinyin-input", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ja-u13-l2",
+      "title": "Después de clase",
+      "zh": "授業の後で",
+      "goal": "Ordenar las tareas de la tarde y la noche con 〜前に y 〜後で.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "昼ご飯", "pinyin": "ひるごはん", "es": "comida (del mediodía)" },
+        { "hanzi": "晩ご飯", "pinyin": "ばんごはん", "es": "cena" },
+        { "hanzi": "夕方", "pinyin": "ゆうがた", "es": "atardecer; última hora de la tarde" },
+        { "hanzi": "図書館", "pinyin": "としょかん", "es": "biblioteca" },
+        { "hanzi": "買い物", "pinyin": "かいもの", "es": "compras", "note": "買い物をする = ir de compras." },
+        { "hanzi": "掃除", "pinyin": "そうじ", "es": "limpieza", "note": "掃除する = limpiar." },
+        { "hanzi": "洗濯", "pinyin": "せんたく", "es": "colada", "note": "洗濯する = lavar la ropa." },
+        { "hanzi": "部屋", "pinyin": "へや", "es": "habitación" }
+      ],
+      "steps": [
+        { "type": "vocab" },
+        {
+          "type": "dialogue",
+          "title": "¿Qué haces por la tarde?",
+          "lines": [
+            { "speaker": "けん", "zh": "ウーゴさん、授業の後で何をしますか。", "py": "ウーゴ さん、じゅぎょう の あと で なに を します か。", "es": "Hugo, ¿qué haces después de clase?" },
+            { "speaker": "ウーゴ", "zh": "昼ご飯を食べた後で、図書館で宿題をします。", "py": "ひるごはん を たべた あと で、としょかん で しゅくだい を します。", "es": "Después de comer, hago los deberes en la biblioteca." },
+            { "speaker": "けん", "zh": "夕方は？", "py": "ゆうがた は？", "es": "¿Y a última hora de la tarde?" },
+            { "speaker": "ウーゴ", "zh": "スーパーで買い物をします。晩ご飯の前に部屋を掃除します。", "py": "スーパー で かいもの を します。ばんごはん の まえ に へや を そうじ します。", "es": "Hago la compra en el súper. Antes de cenar limpio la habitación." },
+            { "speaker": "けん", "zh": "えらいですね。洗濯はいつしますか。", "py": "えらい です ね。せんたく は いつ します か。", "es": "¡Qué responsable! ¿Y cuándo pones la lavadora?" },
+            { "speaker": "ウーゴ", "zh": "週末にします。寝る前に、日本語のアニメを見ます。", "py": "しゅうまつ に します。ねる まえ に、にほんご の アニメ を みます。", "es": "Los fines de semana. Antes de dormir veo anime en japonés." }
+          ],
+          "notes": "授業 じゅぎょう = clase (lección). スーパー = supermercado. えらい = «¡qué bien haces!», elogio a alguien aplicado. 週末 しゅうまつ = fin de semana."
+        },
+        { "type": "grammar", "id": "mae-ni-ato-de" },
+        { "type": "exercises", "count": 10, "types": ["conjugation", "choose-meaning", "listen-choose", "order-words", "build-sentence", "fill-blank", "particle", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ja-u13-l3",
+      "title": "De nueve a cinco",
+      "zh": "九時から五時まで",
+      "goal": "Describir horarios y frecuencia: から〜まで, いつも, たいてい, 時々.",
+      "minutes": 12,
+      "vocab": [
+        { "hanzi": "毎朝", "pinyin": "まいあさ", "es": "todas las mañanas" },
+        { "hanzi": "毎晩", "pinyin": "まいばん", "es": "todas las noches" },
+        { "hanzi": "いつも", "pinyin": "いつも", "es": "siempre" },
+        { "hanzi": "たいてい", "pinyin": "たいてい", "es": "normalmente; casi siempre" },
+        { "hanzi": "時々", "pinyin": "ときどき", "es": "a veces" },
+        { "hanzi": "午前", "pinyin": "ごぜん", "es": "mañana (a. m.)" },
+        { "hanzi": "遅く", "pinyin": "おそく", "es": "tarde (adverbio)", "note": "De 遅い: 遅く寝る = acostarse tarde." },
+        { "hanzi": "眠い", "pinyin": "ねむい", "es": "que tiene sueño", "note": "眠いです = tengo sueño." }
+      ],
+      "steps": [
+        { "type": "vocab" },
+        {
+          "type": "dialogue",
+          "title": "El horario de Sakura",
+          "lines": [
+            { "speaker": "ウーゴ", "zh": "さくらさんは何時から何時まで働きますか。", "py": "さくら さん は なんじ から なんじ まで はたらきます か。", "es": "Sakura, ¿de qué hora a qué hora trabajas?" },
+            { "speaker": "さくら", "zh": "月曜日から金曜日まで、午前九時から午後五時まで働きます。", "py": "げつようび から きんようび まで、ごぜん くじ から ごご ごじ まで はたらきます。", "es": "De lunes a viernes, de nueve de la mañana a cinco de la tarde." },
+            { "speaker": "ウーゴ", "zh": "大変ですね。毎朝何時に起きますか。", "py": "たいへん です ね。まいあさ なんじ に おきます か。", "es": "¡Qué duro! ¿A qué hora te levantas cada mañana?" },
+            { "speaker": "さくら", "zh": "たいてい六時に起きます。でも、週末は時々十時まで寝ます。", "py": "たいてい ろくじ に おきます。でも、しゅうまつ は ときどき じゅうじ まで ねます。", "es": "Normalmente me levanto a las seis. Pero los fines de semana a veces duermo hasta las diez." },
+            { "speaker": "ウーゴ", "zh": "私は毎晩遅く寝ますから、朝はいつも眠いです。", "py": "わたし は まいばん おそく ねます から、あさ は いつも ねむい です。", "es": "Yo me acuesto tarde todas las noches, así que por la mañana siempre tengo sueño." },
+            { "speaker": "さくら", "zh": "だめですよ。今晩は早く寝てください！", "py": "だめ です よ。こんばん は はやく ねて ください！", "es": "¡Eso no puede ser! ¡Esta noche acuéstate pronto!" }
+          ],
+          "notes": "Los adverbios de frecuencia (いつも, たいてい, 時々) suelen ir antes del verbo o al principio. 遅い / 早い → 遅く / 早く: el adjetivo -i se convierte en adverbio cambiando い por く."
+        },
+        { "type": "grammar", "id": "kara-made" },
+        { "type": "exercises", "count": 10, "types": ["choose-meaning", "listen-choose", "particle", "fill-blank", "order-words", "translate-to-es", "dictation", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ja-u13-l4",
+      "title": "Vivo cerca de la universidad: lectura y repaso",
+      "zh": "大学の近くに住んでいます",
+      "goal": "Usar 〜ています para estados (住んでいます, 知っています) y repasar la rutina con una lectura.",
+      "minutes": 15,
+      "vocab": [
+        { "hanzi": "住む", "pinyin": "すむ", "es": "vivir (residir)", "note": "東京に住んでいます = vivo en Tokio (siempre con 〜ています)." },
+        { "hanzi": "知る", "pinyin": "しる", "es": "conocer; saber", "note": "知っています = lo sé / lo conozco; pero «no lo sé» = 知りません." },
+        { "hanzi": "近く", "pinyin": "ちかく", "es": "cerca; alrededores" },
+        { "hanzi": "アパート", "pinyin": "アパート", "es": "piso; apartamento" },
+        { "hanzi": "一人", "pinyin": "ひとり", "es": "una persona; solo", "note": "一人で = solo, por mi cuenta." },
+        { "hanzi": "食堂", "pinyin": "しょくどう", "es": "comedor; restaurante sencillo" },
+        { "hanzi": "安い", "pinyin": "やすい", "es": "barato" },
+        { "hanzi": "おいしい", "pinyin": "おいしい", "es": "rico; delicioso" }
+      ],
+      "steps": [
+        { "type": "vocab" },
+        {
+          "type": "dialogue",
+          "title": "¿Dónde vives?",
+          "lines": [
+            { "speaker": "田中先生", "zh": "ウーゴさんは今どこに住んでいますか。", "py": "ウーゴ さん は いま どこ に すんで います か。", "es": "Hugo, ¿dónde vives ahora?" },
+            { "speaker": "ウーゴ", "zh": "大学の近くのアパートに一人で住んでいます。", "py": "だいがく の ちかく の アパート に ひとり で すんで います。", "es": "Vivo solo en un piso cerca de la universidad." },
+            { "speaker": "田中先生", "zh": "毎日料理をしていますか。", "py": "まいにち りょうり を して います か。", "es": "¿Cocinas todos los días?" },
+            { "speaker": "ウーゴ", "zh": "いいえ、たいてい大学の食堂で食べています。", "py": "いいえ、たいてい だいがく の しょくどう で たべて います。", "es": "No, normalmente como en el comedor de la universidad." },
+            { "speaker": "田中先生", "zh": "駅の前の「さくら食堂」を知っていますか。", "py": "えき の まえ の 「さくら しょくどう」 を しって います か。", "es": "¿Conoces el «Sakura Shokudō», delante de la estación?" },
+            { "speaker": "ウーゴ", "zh": "いいえ、知りません。", "py": "いいえ、しりません。", "es": "No, no lo conozco." },
+            { "speaker": "田中先生", "zh": "安いですよ。それに、とてもおいしいです。", "py": "やすい です よ。それに、とても おいしい です。", "es": "Es barato. Y además está buenísimo." }
+          ],
+          "notes": "住んでいます y 知っています expresan un estado que dura. Error típico: «知っていません» no se usa; la negación es 知りません. 食堂 しょくどう: en Japón son restaurantes de menú sencillo y barato (定食 ていしょく = menú del día)."
+        },
+        { "type": "grammar", "id": "te-iru" },
+        {
+          "type": "reading",
+          "title": "Un día de Hugo en Tokio",
+          "text": "私は大学の近くのアパートに住んでいます。毎朝七時に起きます。起きて、シャワーを浴びて、朝ご飯を食べます。八時に家を出て、九時から十二時まで日本語の授業があります。昼ご飯は大学の食堂で食べます。安いですから、いつも食堂で食べています。昼ご飯を食べた後で、図書館で宿題をします。夕方、スーパーで買い物をします。寝る前に、日本語のアニメを見ます。毎晩遅く寝ますから、朝は眠いです。",
+          "es": "Vivo en un piso cerca de la universidad. Cada mañana me levanto a las siete. Me levanto, me ducho y desayuno. Salgo de casa a las ocho y de nueve a doce tengo clase de japonés. Como en el comedor de la universidad. Como es barato, siempre como en el comedor. Después de comer hago los deberes en la biblioteca. A última hora de la tarde hago la compra en el súper. Antes de dormir veo anime en japonés. Como me acuesto tarde todas las noches, por la mañana tengo sueño.",
+          "questions": [
+            { "q": "¿Cuándo tiene Hugo clase de japonés?", "options": ["De ocho a doce", "De nueve a doce", "De nueve a cinco", "Por la tarde"], "answer": 1, "explain": "九時から十二時まで日本語の授業があります。" },
+            { "q": "¿Por qué come siempre en el comedor?", "options": ["Porque está cerca de casa", "Porque no sabe cocinar", "Porque es barato", "Porque come con Ken"], "answer": 2, "explain": "安いですから、いつも食堂で食べています。" },
+            { "q": "¿Qué hace después de comer?", "options": ["Los deberes en la biblioteca", "La compra", "Ver anime", "Dormir la siesta"], "answer": 0, "explain": "昼ご飯を食べた後で、図書館で宿題をします。" }
+          ]
+        },
+        { "type": "exercises", "count": 12, "types": ["matching", "choose-meaning", "conjugation", "particle", "order-words", "build-sentence", "fill-blank", "dictation", "translate-to-es", "speaking"] },
+        { "type": "review" }
+      ],
+      "reviewed": false
+    }
+  ]
+}

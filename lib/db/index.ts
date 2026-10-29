@@ -7,6 +7,9 @@ import type {
   DictFavorite,
   DictHistoryRow,
   ExerciseAttempt,
+  LegacyCharacterState,
+  LegacyDailyStat,
+  LegacyDictFavorite,
   LessonProgress,
   Note,
   Reading,
@@ -23,7 +26,8 @@ export class XuebanDB extends Dexie {
   cards!: EntityTable<Card, "id">;
   reviewLogs!: EntityTable<ReviewLog, "id">;
   categories!: EntityTable<Category, "id">;
-  characters!: EntityTable<CharacterState, "hanzi">;
+  /** v3: estado de caracteres por idioma (id `${lang}:${char}`); sustituye a `characters` */
+  charStates!: EntityTable<CharacterState, "id">;
   lessonProgress!: EntityTable<LessonProgress, "lessonId">;
   exerciseAttempts!: EntityTable<ExerciseAttempt, "id">;
   videos!: EntityTable<Video, "id">;
@@ -33,8 +37,10 @@ export class XuebanDB extends Dexie {
   settings!: EntityTable<SettingRow, "key">;
   syncState!: EntityTable<SyncStateRow, "key">;
   dictHistory!: EntityTable<DictHistoryRow, "id">;
-  dictFavorites!: EntityTable<DictFavorite, "hanzi">;
-  dailyStats!: EntityTable<DailyStat, "date">;
+  /** v3: favoritos por idioma (id `${lang}:${hanzi}`); sustituye a `dictFavorites` */
+  favorites!: EntityTable<DictFavorite, "id">;
+  /** v3: estadísticas diarias por idioma (id `${lang}:${date}`); sustituye a `dailyStats` */
+  daily!: EntityTable<DailyStat, "id">;
 
   constructor(name = "xueban") {
     super(name);
@@ -70,10 +76,51 @@ export class XuebanDB extends Dexie {
       dictFavorites: "hanzi, at",
       dailyStats: "date",
     });
+    // v3: multiidioma. `lang` en todas las tablas con índices compuestos; tablas nuevas para las claves que colisionaban.
+    this.version(3)
+      .stores({
+        words: "id, lang, hanzi, category, source, updatedAt, *hsk, *tags, ankiNoteId, [lang+hanzi], [lang+category], [lang+source], [lang+updatedAt]",
+        cards: "id, lang, wordId, type, due, state, [type+due], [wordId+type], [lang+due], [lang+state], [lang+type]",
+        reviewLogs: "++id, lang, cardId, wordId, review, [lang+review]",
+        categories: "id, lang, order, [lang+order]",
+        charStates: "id, lang, hanzi, [lang+hanzi]",
+        lessonProgress: "lessonId, lang, unitId, status, [lang+status], [lang+unitId]",
+        exerciseAttempts: "++id, lang, exerciseType, itemId, skill, at, context, [lang+at], [lang+skill], [lang+itemId]",
+        videos: "id, lang, source, addedAt, [lang+source], [lang+addedAt]",
+        readings: "id, lang, source, addedAt, [lang+source], [lang+addedAt]",
+        notes: "id, lang, kind, classDate, updatedAt, [lang+kind], [lang+updatedAt]",
+        studySessions: "++id, lang, start, kind, [lang+start]",
+        dictHistory: "++id, lang, hanzi, at, [lang+at]",
+        favorites: "id, lang, hanzi, at, [lang+at]",
+        daily: "id, lang, date, [lang+date]",
+        // tablas antiguas: siguen declaradas en v3 para poder leerlas en la migración
+        characters: "hanzi",
+        dictFavorites: "hanzi, at",
+        dailyStats: "date",
+      })
+      .upgrade(async (tx) => {
+        const lang = "zh" as const;
+        const stamp = <T extends object>(rows: T[]) => rows.map((r) => ({ ...r, lang }));
+        for (const name of ["words", "cards", "reviewLogs", "categories", "lessonProgress", "exerciseAttempts", "videos", "readings", "notes", "studySessions", "dictHistory"]) {
+          await tx.table(name).toCollection().modify((row: { lang?: string }) => {
+            if (!row.lang) row.lang = lang;
+          });
+        }
+        void stamp;
+        const chars = (await tx.table("characters").toArray()) as LegacyCharacterState[];
+        if (chars.length) await tx.table("charStates").bulkPut(chars.map((c) => ({ ...c, id: `${lang}:${c.hanzi}`, lang })));
+        const favs = (await tx.table("dictFavorites").toArray()) as LegacyDictFavorite[];
+        if (favs.length) await tx.table("favorites").bulkPut(favs.map((f) => ({ ...f, id: `${lang}:${f.hanzi}`, lang })));
+        const stats = (await tx.table("dailyStats").toArray()) as LegacyDailyStat[];
+        if (stats.length) await tx.table("daily").bulkPut(stats.map((d) => ({ ...d, id: `${lang}:${d.date}`, lang })));
+      });
+    // v4: se eliminan las tablas antiguas ya migradas.
+    this.version(4).stores({ characters: null, dictFavorites: null, dailyStats: null });
   }
 }
 
 export const db = new XuebanDB();
 
 export * from "./schema";
+export * from "./ids";
 export * from "./repo";

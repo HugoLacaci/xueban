@@ -1,10 +1,11 @@
 "use client";
 import { useState } from "react";
-import Link from "next/link";
+import Link from "@/lib/languages/link";
 import { useLiveQuery } from "dexie-react-hooks";
 import { BookOpen, ExternalLink, Headphones, Library, NotebookPen, Timer, Tv, Globe, ListMusic, Smartphone } from "lucide-react";
 import { db } from "@/lib/db";
-import { ARTICLES, ARTICLE_CATEGORIES, RESOURCES, type Resource } from "@/lib/study-hall";
+import { getArticles, articleCategories, getResources, type Resource } from "@/lib/study-hall";
+import { getActivePack } from "@/lib/languages/registry";
 import { Badge, Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/primitives";
 import { Button } from "@/components/ui/button";
 import { Lattice, MoonGate } from "@/components/ornament";
@@ -12,6 +13,10 @@ import { FilterChip } from "./filter-chip";
 import { Pomodoro } from "./pomodoro";
 import { NotesPanel } from "./notes";
 import { cn } from "@/lib/utils";
+import { getActiveLang } from "@/lib/languages/registry";
+import { targetLang } from "@/lib/languages/registry";
+import { pageNative } from "@/lib/languages/ui-text";
+import { Mixed } from "@/components/target/mixed";
 
 const KIND_ICON: Record<Resource["kind"], React.ReactNode> = {
   "youtube-channel": <Tv className="size-4" />,
@@ -67,11 +72,11 @@ function StudyHallHeader({ classes }: { classes: number }) {
           <Bamboo className="translate-y-2 scale-[1.15]" />
         </MoonGate>
         <div className="min-w-0 flex-1 text-center sm:text-left">
-          <span className="zh-display block text-sm text-cinnabar" lang="zh-CN">
-            书斋
+          <span className="zh-display block text-sm text-cinnabar" lang={targetLang()}>
+            {pageNative("studyHall")}
           </span>
           <h1 className="font-serif-es text-[28px] font-semibold leading-tight tracking-tight text-ink sm:text-[34px]">Study Hall</h1>
-          <p className="mx-auto mt-1.5 max-w-xl text-sm text-ink-faint sm:mx-0">Artículos breves sobre cómo aprender chino, recursos verificados por nivel, temporizador de incienso, notas y tu cuaderno de clase.</p>
+          <p className="mx-auto mt-1.5 max-w-xl text-sm text-ink-faint sm:mx-0">Artículos breves sobre cómo aprender {getActivePack().meta.names.adjective}, recursos verificados por nivel, temporizador de incienso, notas y tu cuaderno de clase.</p>
           <div className="mt-4 flex flex-wrap justify-center gap-2 sm:justify-start">
             <Button asChild variant="ink">
               <Link href="/study-hall/cuaderno">
@@ -91,9 +96,9 @@ function StudyHallHeader({ classes }: { classes: number }) {
 export function StudyHallHub({ tab = "articulos" }: { tab?: string }) {
   const [cat, setCat] = useState("");
   const [level, setLevel] = useState("");
-  const classes = useLiveQuery(() => db.notes.where("kind").equals("class").count(), []) ?? 0;
-  const articles = ARTICLES.filter((a) => !cat || a.category === cat);
-  const resources = RESOURCES.filter((r) => !level || r.level === level || r.level.includes(level));
+  const classes = useLiveQuery(() => db.notes.where("[lang+kind]").equals([getActiveLang(), "class"]).count(), []) ?? 0;
+  const articles = getArticles().filter((a) => !cat || a.category === cat);
+  const resources = getResources().filter((r) => !level || r.level === level || r.level.includes(level));
   return (
     <div className="space-y-5">
       <StudyHallHeader classes={classes} />
@@ -118,7 +123,7 @@ export function StudyHallHub({ tab = "articulos" }: { tab?: string }) {
             <FilterChip active={!cat} onClick={() => setCat("")}>
               todos
             </FilterChip>
-            {ARTICLE_CATEGORIES.map((c) => (
+            {articleCategories().map((c) => (
               <FilterChip key={c} active={cat === c} onClick={() => setCat(c)}>
                 {c}
               </FilterChip>
@@ -129,13 +134,13 @@ export function StudyHallHub({ tab = "articulos" }: { tab?: string }) {
               <li key={a.id}>
                 <Link href={`/study-hall/articulo/${a.id}`} className="card-paper group relative flex h-full flex-col gap-1.5 p-5 transition-[transform,box-shadow] duration-[var(--dur-ui)] ease-[var(--ease-ink)] hover:-translate-y-0.5 hover:shadow-[var(--shadow-float)]">
                   <span className="flex items-start justify-between gap-2">
-                    <span lang="zh-CN" className="zh-kai text-base leading-tight text-cinnabar">
+                    <span lang={targetLang()} className="zh-kai text-base leading-tight text-cinnabar">
                       {a.zh}
                     </span>
                     <span className="tabular shrink-0 font-serif-es text-xs text-ink-faint">{String(i + 1).padStart(2, "0")}</span>
                   </span>
-                  <span className="font-serif-es text-lg font-semibold leading-snug tracking-tight text-ink group-hover:underline group-hover:decoration-ink/30 group-hover:underline-offset-4">{a.title}</span>
-                  <span className="text-sm leading-relaxed text-ink-soft">{a.summary}</span>
+                  <span className="font-serif-es text-lg font-semibold leading-snug tracking-tight text-ink group-hover:underline group-hover:decoration-ink/30 group-hover:underline-offset-4"><Mixed>{a.title}</Mixed></span>
+                  <span className="text-sm leading-relaxed text-ink-soft"><Mixed>{a.summary}</Mixed></span>
                   <span className="mt-auto flex items-center gap-2 pt-3">
                     <Badge variant="outline">{a.category}</Badge>
                     <span className="tabular text-xs text-ink-faint">{a.minutes} min</span>
@@ -151,7 +156,7 @@ export function StudyHallHub({ tab = "articulos" }: { tab?: string }) {
           <div className="mb-4 flex flex-wrap gap-1.5" role="group" aria-label="Filtrar por nivel">
             {["", "0", "1", "2", "3"].map((l) => (
               <FilterChip key={l} active={level === l} onClick={() => setLevel(l)}>
-                {l === "" ? "todos" : l === "0" ? "Desde cero" : `HSK ${l}`}
+                {l === "" ? "todos" : l === "0" ? "Desde cero" : `${getActivePack().exam.levels[Number(l) - 1]?.label ?? `nivel ${l}`}`}
               </FilterChip>
             ))}
           </div>
@@ -162,7 +167,7 @@ export function StudyHallHub({ tab = "articulos" }: { tab?: string }) {
                   <span className="mt-0.5 flex size-8 shrink-0 items-center justify-center rounded-[8px] bg-paper-sunk text-ink-soft">{KIND_ICON[r.kind]}</span>
                   <span className="min-w-0 flex-1">
                     <span className="flex items-center gap-1 font-medium text-ink">
-                      {r.title} <ExternalLink className="size-3 text-ink-faint" />
+                      <Mixed>{r.title}</Mixed> <ExternalLink className="size-3 text-ink-faint" />
                     </span>
                     <span className="block text-sm text-ink-soft">{r.why}</span>
                     <span className="mt-1.5 flex flex-wrap gap-1">

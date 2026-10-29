@@ -3,7 +3,7 @@
  * Análisis de tono (F0) con pitchy + Web Audio: graba el micrófono y devuelve la curva de tono
  * normalizada; también estima la curva del modelo a partir de un MP3 (si existe) o de los tonos.
  */
-import type { Tone } from "@/lib/pinyin/tones";
+import type { Tone } from "@/lib/exercises/types";
 
 export interface PitchPoint {
   t: number; // segundos

@@ -10,6 +10,8 @@ import { Button } from "@/components/ui/button";
 import { Badge, Dialog, DialogContent, Input, Label, Select, Switch } from "@/components/ui/primitives";
 import { toast } from "@/components/ui/toast";
 import { formatDate } from "@/lib/utils";
+import { getActiveLang } from "@/lib/languages/registry";
+import { targetLang } from "@/lib/languages/registry";
 
 export function AnkiPanel() {
   const { settings, update } = useSettings();
@@ -94,7 +96,7 @@ export function AnkiPanel() {
         >
           <RefreshCw /> Sincronizar palabras…
         </Button>
-        <Button variant="secondary" disabled={!anki.connected || busy !== null} onClick={() => run("Enviar todo a Anki", async () => { const r = await pushWordsToAnki(await db.words.toArray()); return `${r.created} creadas · ${r.updated} actualizadas${r.errors.length ? ` · ${r.errors.length} errores` : ""}`; })}>
+        <Button variant="secondary" disabled={!anki.connected || busy !== null} onClick={() => run("Enviar todo a Anki", async () => { const r = await pushWordsToAnki(await db.words.where("lang").equals(getActiveLang()).toArray()); return `${r.created} creadas · ${r.updated} actualizadas${r.errors.length ? ` · ${r.errors.length} errores` : ""}`; })}>
           <ArrowUpFromLine /> Web → Anki (todo)
         </Button>
         <Button variant="secondary" disabled={!anki.connected || busy !== null} onClick={() => run("Leer estado de aprendizaje", async () => `${await pullCardStates()} tarjetas actualizadas desde Anki`)}>
@@ -103,10 +105,10 @@ export function AnkiPanel() {
         <Button variant="secondary" disabled={!anki.connected || busy !== null} onClick={() => run("Sincronizar con AnkiWeb", async () => { await ankiWebSync(); return "Anki ha sincronizado con AnkiWeb"; })}>
           <CloudUpload /> Sincronizar con AnkiWeb
         </Button>
-        <Button variant="outline" disabled={busy !== null} onClick={() => run("Exportar .apkg", async () => { const { downloadApkg } = await import("@/lib/anki/apkg"); await downloadApkg(await db.words.toArray()); return "Paquete .apkg descargado (impórtalo en Anki si no usas AnkiConnect)"; })}>
+        <Button variant="outline" disabled={busy !== null} onClick={() => run("Exportar .apkg", async () => { const { downloadApkg } = await import("@/lib/anki/apkg"); await downloadApkg(await db.words.where("lang").equals(getActiveLang()).toArray()); return "Paquete .apkg descargado (impórtalo en Anki si no usas AnkiConnect)"; })}>
           <FileDown /> Exportar .apkg
         </Button>
-        <Button variant="outline" disabled={busy !== null} onClick={() => run("Exportar CSV", async () => { const { downloadCsv } = await import("@/lib/anki/apkg"); await downloadCsv(await db.words.toArray()); return "CSV descargado"; })}>
+        <Button variant="outline" disabled={busy !== null} onClick={() => run("Exportar CSV", async () => { const { downloadCsv } = await import("@/lib/anki/apkg"); await downloadCsv(await db.words.where("lang").equals(getActiveLang()).toArray()); return "CSV descargado"; })}>
           <FileDown /> Exportar CSV
         </Button>
       </div>
@@ -140,7 +142,7 @@ export function AnkiPanel() {
                   <ul className="mt-2 max-h-40 space-y-1 overflow-y-auto rounded-[8px] border border-line p-2 text-xs scrollbar-thin">
                     {plan.conflicts.slice(0, 50).map((c) => (
                       <li key={c.web.id}>
-                        <span lang="zh-CN" className="zh text-sm">
+                        <span lang={targetLang()} className="zh text-sm">
                           {c.web.hanzi}
                         </span>{" "}
                         · web: «{c.web.meaning}» · Anki: «{c.anki.meaning}» → <Badge variant="outline">{resolution === "auto" ? c.winner : resolution}</Badge>
