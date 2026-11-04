@@ -1,0 +1,136 @@
+[
+  {
+    "id": "zh-classifiers-table",
+    "type": "free",
+    "title": "Clasificadores: tabla con sustantivos típicos y errores",
+    "level": 1,
+    "tags": ["clasificadores", "gramática", "errores", "u02"],
+    "grammarIds": ["measure-words", "numbers", "demonstratives", "price-age"],
+    "unitId": "u02",
+    "markdown": "## La regla\n\nEntre un número (o 这 / 那 / 哪 / 几 / 每) y un nombre **siempre** hay un clasificador: 三**本**书, 这**个**人, 哪**杯**茶. Nunca va un número pegado al nombre. Si dudas, 个 vale casi siempre; pero cada familia de cosas tiene el suyo, y usarlo bien es lo que suena a chino de verdad.\n\n```xb-formula\n{\"name\":\"Número + clasificador + nombre\",\"parts\":[{\"text\":\"núm. / 这 / 那 / 哪 / 几\",\"role\":\"number\"},{\"text\":\"clasif.\",\"role\":\"measure\"},{\"text\":\"Nombre\",\"role\":\"object\"}]}\n```\n\n## Tabla de clasificadores HSK 1 (y algunos de supervivencia)\n\n| Clasif. | Pinyin | Icono | Sustantivos típicos | Ejemplo | Error común |\n|---|---|---|---|---|---|\n| 个 | ge | 📦 | personas, cosas sin clasificador propio, abstractos: 人, 学生, 苹果, 问题, 星期 | 我有一个中国朋友。 Wǒ yǒu yí ge Zhōngguó péngyou. Tengo un amigo chino. | Pronunciarlo gè con tono: es átono (yí ge). Y olvidarlo: ~~三人~~ → 三个人. |\n| 本 | běn | 📖 | libros, cuadernos, revistas, diccionarios: 书, 词典, 本子 | 我买了两本汉语书。 Wǒ mǎi le liǎng běn Hànyǔ shū. Compré dos libros de chino. | ~~两个书~~: los libros van con 本. |\n| 块 | kuài | 💴 | trozos y dinero: 钱, 蛋糕, 肉, 手表 (coloquial) | 这个多少钱？—十五块。 Zhège duōshao qián? — Shíwǔ kuài. ¿Cuánto es? —Quince yuanes. | ~~十五个钱~~. En la boca, 块; en la etiqueta, 元. |\n| 件 | jiàn | 👕 | ropa de arriba y asuntos: 衣服, 衬衫, 事 | 她买了一件衣服。 Tā mǎi le yí jiàn yīfu. Compró una prenda. | Usar 件 para pantalones: 一**条**裤子. |\n| 口 | kǒu | 👨‍👩‍👧 | miembros de la familia (solo con 人 y 家) | 我家有四口人。 Wǒ jiā yǒu sì kǒu rén. En mi familia somos cuatro. | Usar 口 fuera de la familia: 班里有二十**个**人. |\n| 杯 | bēi | ☕ | vasos y tazas: 水, 茶, 咖啡, 牛奶 | 请给我一杯热水。 Qǐng gěi wǒ yì bēi rè shuǐ. Dame un vaso de agua caliente. | Decir 一个水: los líquidos se cuentan por recipiente. |\n| 瓶 | píng | 🍾 | botellas: 水, 啤酒, 可乐 | 我要两瓶水。 Wǒ yào liǎng píng shuǐ. Quiero dos botellas de agua. | Confundir 杯 (vaso) y 瓶 (botella) al pedir. |\n| 只 | zhī | 🐱 | animales pequeños y uno de un par: 猫, 狗, 鸟, 手, 眼睛 | 我们有两只猫。 Wǒmen yǒu liǎng zhī māo. Tenemos dos gatos. | ~~一个猫~~. Y confundir con 只 zhǐ «solo». |\n| 岁 | suì | 🎂 | años de edad (no lleva nombre detrás) | 我二十三岁。 Wǒ èrshísān suì. Tengo 23 años. | ~~我有二十三岁~~ → sin 有 ni 是: 我二十三岁. |\n| 张 | zhāng | 📄 | cosas planas: 纸, 桌子, 床, 照片, 票 | 请给我一张纸。 Qǐng gěi wǒ yì zhāng zhǐ. Dame una hoja, por favor. | ~~一个桌子~~: mesa y cama van con 张 (superficie plana). |\n| 条 | tiáo | 🐟 | cosas largas y flexibles: 裤子, 鱼, 路, 河, 狗 (también) | 这条路很长。 Zhè tiáo lù hěn cháng. Esta calle es muy larga. | ~~一件裤子~~ → 一条裤子 (los pantalones son «largos»). |\n| 位 | wèi | 🎩 | personas, con respeto: 老师, 先生, 客人 | 这位是李老师。 Zhè wèi shì Lǐ lǎoshī. Este es el profesor Li. | Usarlo con uno mismo (~~我是一位学生~~) o con 人: ~~一位人~~. |\n| 辆 | liàng | 🚗 | vehículos con ruedas: 车, 自行车, 出租车 | 他有一辆车。 Tā yǒu yí liàng chē. Tiene un coche. | ~~一个车~~. Los aviones y barcos no: 一架飞机. |\n| 家 | jiā | 🏪 | tiendas, restaurantes, empresas: 商店, 饭店, 公司, 医院 | 这儿有一家饭店。 Zhèr yǒu yì jiā fàndiàn. Aquí hay un restaurante. | Confundir 家 clasificador con 家 «casa»: 一家饭店 no es «una casa». |\n| 次 | cì | 🔁 | veces (de una acción) | 我去过北京两次。 Wǒ qù guo Běijīng liǎng cì. He ido a Pekín dos veces. | Ponerlo antes del verbo: ~~我两次去过~~ → 去过两次. |\n| 些 | xiē | 🧺 | «algunos», solo con 一 / 这 / 那: 一些水, 这些人 | 这些苹果多少钱？ Zhèxiē píngguǒ duōshao qián? ¿Cuánto cuestan estas manzanas? | ~~三些~~: 些 no va con números, solo con 一/这/那/哪. |\n| 元 | yuán | 💰 | yuanes, en escrito y precios oficiales | 这本书三十五元。 Zhè běn shū sānshíwǔ yuán. Este libro cuesta 35 yuanes. | Decir 元 hablando en el mercado: ahí se dice 块. |\n| 点 | diǎn | 🕒 | horas del reloj (y «un poco»: 一点儿) | 现在三点。 Xiànzài sān diǎn. Son las tres. | ~~二点~~ → 两点. Y confundir 点 (hora) con 分 (minuto). |\n| 把 | bǎ | 🔑 | cosas con mango o que se agarran: 椅子, 伞, 钥匙, 刀 | 这把椅子是我的。 Zhè bǎ yǐzi shì wǒ de. Esta silla es mía. | ~~一个椅子~~: la silla «se agarra», va con 把 (la mesa, con 张). |\n| 双 | shuāng | 👟 | pares: 鞋, 筷子, 手, 眼睛 | 我买了一双鞋。 Wǒ mǎi le yì shuāng xié. Compré un par de zapatos. | ~~两个鞋~~ (si quieres decir «un par»). 一只鞋 = un solo zapato. |\n| 碗 | wǎn | 🍜 | cuencos: 米饭, 面条, 汤 | 我要一碗米饭。 Wǒ yào yì wǎn mǐfàn. Quiero un cuenco de arroz. | Pedir 一个米饭: el arroz se cuenta por cuencos. |\n| 斤 | jīn | ⚖️ | peso en el mercado (medio kilo): 苹果, 肉, 米 | 苹果多少钱一斤？ Píngguǒ duōshao qián yì jīn? ¿A cuánto está el medio kilo de manzanas? | Pensar que 一斤 es un kilo: es 500 g (公斤 = kilo). |\n| 支 | zhī | 🖊️ | cosas finas y largas: 笔, 烟 | 请给我一支笔。 Qǐng gěi wǒ yì zhī bǐ. Dame un boli, por favor. | Confundir con 只 zhī (animales): mismo sonido, distinto carácter. |\n| 节 | jié | 📚 | clases (sesiones): 课 | 我今天有两节课。 Wǒ jīntiān yǒu liǎng jié kè. Hoy tengo dos clases. | ~~两个课~~ → 两节课 (o 两门课 para asignaturas). |\n\n## Avisos\n\n> ⚠️ **Ojo**: delante de un clasificador «dos» es **两**, no 二: 两个人, 两本书, 两点. 二 solo en 十二, 二十, 第二 y teléfonos.\n\n> ⚠️ **Ojo**: **一** cambia de tono delante del clasificador: yí delante de 4.º tono (一个 yí ge, 一件 yí jiàn, 一辆 yí liàng), yì delante de los demás (一本 yì běn, 一杯 yì bēi, 一张 yì zhāng, 一条 yì tiáo).\n\n> ⚠️ **Ojo**: en una respuesta, el clasificador puede quedarse solo sin el nombre: 你有几本书？—三本。 / 你要哪个？—这个。\n\n> ❌ **Error típico**: 个 para todo. Se entiende, pero 一个书, 一个猫, 一个车 suenan a extranjero. Aprende el clasificador junto con la palabra, como el género en español.\n\n> ❌ **Error típico**: olvidar el clasificador con 这/那/哪: ~~这书~~ → 这本书; ~~哪人~~ → 哪个人.\n\n> ❌ **Error típico**: 岁 con 有 o 是: ~~我有二十岁~~ / ~~我是二十岁~~ → 我二十岁.\n\n> 💡 **Truco**: 口 solo para la familia (有几口人), 个 para cualquier otro grupo (有几个人). Y 位 cuando quieres ser respetuoso con otros, nunca contigo mismo.\n\n> 🧠 **Mnemotecnia**: 本 es un árbol (木) con una raya en la raíz: el papel sale del árbol → libros. 张 lleva 弓 (arco) y 长 (largo): algo que se estira plano → papel, mesa, cama. 条 tiene 木 abajo: una rama larga → pantalones, peces, calles.\n\n> 🏮 **¿Sabías que…?**: en el mercado todo se pesa en 斤 (500 g). 一斤苹果 son medio kilo de manzanas; para un kilo di 一公斤 o 两斤.\n\n## Ejercicios\n\n```xb-exercise\n{\"kind\":\"choice\",\"data\":{\"prompt\":\"¿Cuál es correcta para «Tengo dos gatos»?\",\"options\":\"我有二个猫。 · 我有两只猫。 · 我有两个猫。 · 我有两条猫。\",\"answer\":\"1\",\"explain\":\"Dos delante de clasificador = 两; los animales pequeños van con 只.\"}}\n```\n\n```xb-exercise\n{\"kind\":\"fill\",\"data\":{\"zh\":\"请给我一＿茶。\",\"answer\":\"杯\",\"options\":\"杯 · 瓶 · 个 · 碗\",\"es\":\"Dame una taza de té, por favor.\",\"explain\":\"El té se cuenta por tazas → 杯; 瓶 sería una botella y 碗 un cuenco.\"}}\n```\n\n```xb-exercise\n{\"kind\":\"fill\",\"data\":{\"zh\":\"我家有五＿人。\",\"answer\":\"口\",\"options\":\"口 · 个 · 位 · 只\",\"es\":\"En mi familia somos cinco.\",\"explain\":\"Miembros de la familia: 口.\"}}\n```\n\n```xb-exercise\n{\"kind\":\"choice\",\"data\":{\"prompt\":\"¿Qué clasificador va con 裤子 (pantalones)?\",\"options\":\"件 · 条 · 双 · 张\",\"answer\":\"1\",\"explain\":\"Los pantalones son «largos» → 条. 件 es para ropa de arriba; 双 para pares (zapatos).\"}}\n```\n\n```xb-cue\n{\"q\":\"¿Qué tres cosas de la casa van con 张?\",\"a\":\"桌子, 床, 纸/照片 (superficies planas).\"}\n```",
+    "cues": [
+      { "id": "c1", "q": "¿Cuándo es obligatorio el clasificador?", "a": "Siempre entre número / 这 / 那 / 哪 / 几 y un nombre." },
+      { "id": "c2", "q": "¿Cómo se dice «dos» delante de un clasificador?", "a": "两: 两个, 两本, 两点." },
+      { "id": "c3", "q": "¿Qué clasificador llevan 书, 猫, 车, 桌子 y 裤子?", "a": "本, 只, 辆, 张, 条." },
+      { "id": "c4", "q": "¿Diferencia entre 口, 个 y 位 con personas?", "a": "口 familia; 个 general; 位 respeto (nunca para uno mismo)." },
+      { "id": "c5", "q": "¿Cómo se lee 一 delante de 个 y delante de 本?", "a": "yí ge (ante 4.º tono) / yì běn." }
+    ],
+    "summary": "Tabla de 24 clasificadores con sustantivos típicos, ejemplo y error común; 个 es el comodín, 两 delante de clasificador, 一 cambia de tono.",
+    "reviewed": false
+  },
+  {
+    "id": "zh-classifiers-map",
+    "type": "topic",
+    "title": "Mapa mental: clasificadores por familia",
+    "level": 1,
+    "tags": ["clasificadores", "gramática", "u02"],
+    "grammarIds": ["measure-words", "numbers"],
+    "unitId": "u02",
+    "fields": {
+      "topic": "Clasificadores 量词 agrupados por familia",
+      "nodes": [
+        {
+          "text": "人 personas",
+          "kind": "group",
+          "es": "Personas",
+          "children": [
+            { "text": "个 ge", "kind": "word", "es": "general: 一个人, 三个学生, 两个朋友" },
+            { "text": "口 kǒu", "kind": "word", "es": "solo familia: 我家有四口人" },
+            { "text": "位 wèi", "kind": "word", "es": "respeto, para otros: 这位老师, 两位客人" },
+            { "text": "你家有几口人？—三口人。", "kind": "phrase", "es": "¿Cuántos sois en tu familia? —Tres." }
+          ]
+        },
+        {
+          "text": "动物 animales",
+          "kind": "group",
+          "es": "Animales",
+          "children": [
+            { "text": "只 zhī", "kind": "word", "es": "animales pequeños: 一只猫, 两只鸟, 一只狗" },
+            { "text": "条 tiáo", "kind": "word", "es": "animales alargados: 一条鱼, 一条狗 (también)" },
+            { "text": "我们家有一只猫和一条鱼。", "kind": "phrase", "es": "En casa tenemos un gato y un pez." }
+          ]
+        },
+        {
+          "text": "平的东西 objetos planos",
+          "kind": "group",
+          "es": "Objetos planos",
+          "children": [
+            { "text": "张 zhāng", "kind": "word", "es": "superficies: 一张纸, 一张桌子, 一张床, 一张照片, 一张票" },
+            { "text": "本 běn", "kind": "word", "es": "libros y cuadernos: 一本书, 一本词典" },
+            { "text": "件 jiàn", "kind": "word", "es": "ropa de arriba y asuntos: 一件衣服, 一件事" },
+            { "text": "请给我一张纸和一本书。", "kind": "phrase", "es": "Dame una hoja y un libro, por favor." }
+          ]
+        },
+        {
+          "text": "长的东西 objetos alargados",
+          "kind": "group",
+          "es": "Objetos alargados o con mango",
+          "children": [
+            { "text": "条 tiáo", "kind": "word", "es": "largo y flexible: 一条裤子, 一条路, 一条河" },
+            { "text": "支 zhī", "kind": "word", "es": "fino y rígido: 一支笔" },
+            { "text": "把 bǎ", "kind": "word", "es": "con mango o que se agarra: 一把椅子, 一把伞, 一把钥匙" },
+            { "text": "双 shuāng", "kind": "word", "es": "pares: 一双鞋, 一双筷子" },
+            { "text": "这条裤子和这双鞋都很好看。", "kind": "phrase", "es": "Estos pantalones y estos zapatos son muy bonitos." }
+          ]
+        },
+        {
+          "text": "容器 recipientes",
+          "kind": "group",
+          "es": "Recipientes (para líquidos y comida)",
+          "children": [
+            { "text": "杯 bēi", "kind": "word", "es": "vaso / taza: 一杯茶, 一杯咖啡, 一杯水" },
+            { "text": "瓶 píng", "kind": "word", "es": "botella: 一瓶水, 一瓶啤酒" },
+            { "text": "碗 wǎn", "kind": "word", "es": "cuenco: 一碗米饭, 一碗面条, 一碗汤" },
+            { "text": "斤 jīn", "kind": "word", "es": "peso de mercado (500 g): 一斤苹果, 两斤肉" },
+            { "text": "我要一碗面条和一瓶水。", "kind": "phrase", "es": "Quiero un cuenco de fideos y una botella de agua." }
+          ]
+        },
+        {
+          "text": "车 vehículos y lugares",
+          "kind": "group",
+          "es": "Vehículos y establecimientos",
+          "children": [
+            { "text": "辆 liàng", "kind": "word", "es": "con ruedas: 一辆车, 一辆自行车, 一辆出租车" },
+            { "text": "家 jiā", "kind": "word", "es": "tiendas, restaurantes, empresas: 一家商店, 一家饭店, 一家公司" },
+            { "text": "学校前面有一家饭店。", "kind": "phrase", "es": "Delante de la escuela hay un restaurante." }
+          ]
+        },
+        {
+          "text": "钱和时间 dinero y tiempo",
+          "kind": "group",
+          "es": "Dinero, tiempo y veces",
+          "children": [
+            { "text": "块 kuài / 元 yuán", "kind": "word", "es": "yuanes: hablado 块, escrito 元: 十块钱, 10元" },
+            { "text": "岁 suì", "kind": "word", "es": "años de edad: 我二十三岁" },
+            { "text": "点 diǎn", "kind": "word", "es": "horas: 三点, 两点半" },
+            { "text": "次 cì", "kind": "word", "es": "veces: 去过两次, 第一次" },
+            { "text": "节 jié", "kind": "word", "es": "clases: 两节课" },
+            { "text": "些 xiē", "kind": "word", "es": "algunos (solo con 一/这/那/哪): 一些水, 这些人" },
+            { "text": "这个三十块，我买两次了。", "kind": "phrase", "es": "Esto cuesta 30 yuanes; ya lo he comprado dos veces." }
+          ]
+        },
+        {
+          "text": "结构 estructuras",
+          "kind": "group",
+          "es": "Estructuras que llevan clasificador",
+          "children": [
+            { "text": "número + clasif. + nombre", "kind": "structure", "es": "三本书, 两个人" },
+            { "text": "这 / 那 / 哪 + clasif. + nombre", "kind": "structure", "es": "这本书, 那个人, 哪杯茶" },
+            { "text": "几 + clasif. + nombre？", "kind": "structure", "es": "几个人？ 几本书？ 几口人？" },
+            { "text": "每 + clasif. + nombre", "kind": "structure", "es": "每个人, 每本书, 每天 (天 no lleva clasificador)" },
+            { "text": "两 + clasif. (nunca 二)", "kind": "structure", "es": "两个, 两本, 两点" }
+          ]
+        }
+      ]
+    },
+    "markdown": "## Cómo lo recuerdo\n\nAgrupo los clasificadores por «forma» o «familia», no por orden alfabético: si veo algo plano pienso 张, si es largo 条, si está en un recipiente pienso en el recipiente. Y si no encaja en ninguna familia, 个.\n\n> 💡 **Truco**: aprende cada palabra nueva con su clasificador delante, como una unidad: no «书», sino «一本书»; no «猫», sino «一只猫».\n\n> ⚠️ **Ojo**: algunas palabras no llevan clasificador porque ya lo son: 天 (día), 年 (año), 岁 (edad): 三天, 两年, 二十岁 (nunca ~~三个天~~).\n\n> ❌ **Error típico**: 桌子 con 把 y 椅子 con 张. Es al revés: la mesa es una superficie (张), la silla se agarra (把).\n\n```xb-example\n{\"zh\":\"我家有四口人、一只狗和两辆车。\",\"py\":\"Wǒ jiā yǒu sì kǒu rén, yì zhī gǒu hé liǎng liàng chē.\",\"es\":\"En mi familia somos cuatro, con un perro y dos coches.\"}\n```\n\n```xb-exercise\n{\"kind\":\"choice\",\"data\":{\"prompt\":\"¿Qué familia de clasificadores usarías para 桌子 (mesa)?\",\"options\":\"objetos planos (张) · con mango (把) · recipientes (碗) · alargados (条)\",\"answer\":\"0\",\"explain\":\"La mesa es una superficie plana → 张. La silla, que se agarra, va con 把.\"}}\n```",
+    "cues": [
+      { "id": "c1", "q": "¿Qué clasificadores forman la familia «personas»?", "a": "个 (general), 口 (familia), 位 (respeto)." },
+      { "id": "c2", "q": "¿Qué clasificador usan las cosas planas y cuál las alargadas?", "a": "张 (纸, 桌子, 床) y 条 (裤子, 鱼, 路)." },
+      { "id": "c3", "q": "¿Qué tres recipientes cuentan líquidos y comida?", "a": "杯 (taza), 瓶 (botella), 碗 (cuenco)." },
+      { "id": "c4", "q": "¿Qué palabras no llevan clasificador?", "a": "天, 年, 岁: ya son clasificadores (三天, 两年)." }
+    ],
+    "summary": "Mapa de clasificadores por familia: personas (个口位), animales (只条), planos (张本件), alargados (条支把双), recipientes (杯瓶碗斤), vehículos/tiendas (辆家), dinero/tiempo (块元岁点次节些).",
+    "reviewed": false
+  }
+]

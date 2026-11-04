@@ -1,0 +1,262 @@
+{
+  "unitId": "u06",
+  "scenarios": [
+    {
+      "id": "u06-market-fruit",
+      "title": "Comprar fruta en el mercado",
+      "zh": "在市场买苹果",
+      "level": 1,
+      "setting": "Mercado cerca de 交通大学. Hugo quiere comprar manzanas en un puesto de fruta. Tú (la app) eres el vendedor.",
+      "role": "vendedor",
+      "roleZh": "老板",
+      "voice": "m",
+      "goals": ["Preguntar el precio", "Decir cuántas quieres", "Regatear", "Pagar"],
+      "vocab": ["买", "卖", "多少钱", "块", "贵", "便宜", "太", "大", "小", "新", "看", "一下", "微信", "支付宝", "现金", "用", "可以"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "你好！要什么？苹果很好吃，看一下！", "py": "Nǐ hǎo! Yào shénme? Píngguǒ hěn hǎochī, kàn yíxià!", "es": "¡Hola! ¿Qué quieres? Las manzanas están buenísimas, ¡echa un vistazo!" },
+          "user": [
+            { "zh": "苹果多少钱？", "py": "Píngguǒ duōshao qián?", "es": "¿Cuánto cuestan las manzanas?", "keywords": ["多少钱", "多少"], "next": "n2", "goal": 0 },
+            { "zh": "我看一下。", "py": "Wǒ kàn yíxià.", "es": "Voy a mirar.", "keywords": ["看一下", "看"], "next": "n1b" }
+          ],
+          "hint": "Pregunta el precio con 多少钱 o pide mirar con 我看一下."
+        },
+        "n1b": {
+          "npc": { "zh": "好，你看，很新，也很便宜。", "py": "Hǎo, nǐ kàn, hěn xīn, yě hěn piányi.", "es": "Vale, mira: muy frescas y muy baratas." },
+          "user": [
+            { "zh": "多少钱？", "py": "Duōshao qián?", "es": "¿Cuánto cuestan?", "keywords": ["多少钱", "多少"], "next": "n2", "goal": 0 },
+            { "zh": "有点儿小，有大的吗？", "py": "Yǒudiǎnr xiǎo, yǒu dà de ma?", "es": "Son un poco pequeñas, ¿hay grandes?", "keywords": ["大的", "小"], "next": "n2" }
+          ],
+          "hint": "Pregunta el precio o pide otras más grandes (有大的吗)."
+        },
+        "n2": {
+          "npc": { "zh": "大的十块，小的六块。你要几个？", "py": "Dà de shí kuài, xiǎo de liù kuài. Nǐ yào jǐ ge?", "es": "Las grandes a diez yuanes, las pequeñas a seis. ¿Cuántas quieres?" },
+          "user": [
+            { "zh": "我要三个大的。", "py": "Wǒ yào sān ge dà de.", "es": "Quiero tres grandes.", "keywords": ["三个", "大的"], "next": "n4", "goal": 1 },
+            { "zh": "我要五个小的。", "py": "Wǒ yào wǔ ge xiǎo de.", "es": "Quiero cinco pequeñas.", "keywords": ["五个", "小的"], "next": "n4", "goal": 1 },
+            { "zh": "太贵了！便宜一点儿吧。", "py": "Tài guì le! Piányi yìdiǎnr ba.", "es": "¡Demasiado caro! Un poco más barato, anda.", "keywords": ["太贵", "便宜"], "next": "n3", "goal": 2 }
+          ],
+          "hint": "Di cuántas quieres (我要 + número + 个) o regatea con 太贵了！便宜一点儿吧."
+        },
+        "n3": {
+          "npc": { "zh": "好吧，大的八块。", "py": "Hǎo ba, dà de bā kuài.", "es": "Vale, las grandes a ocho." },
+          "user": [
+            { "zh": "好，我要三个大的。", "py": "Hǎo, wǒ yào sān ge dà de.", "es": "Vale, quiero tres grandes.", "keywords": ["三个", "大的"], "next": "n4", "goal": 1 },
+            { "zh": "六块，好吗？", "py": "Liù kuài, hǎo ma?", "es": "¿A seis?", "keywords": ["六块", "好吗"], "next": "n3b" }
+          ],
+          "hint": "Acepta y di cuántas quieres, o sigue regateando con un precio + 好吗."
+        },
+        "n3b": {
+          "npc": { "zh": "六块不可以，七块。", "py": "Liù kuài bù kěyǐ, qī kuài.", "es": "A seis no puede ser; a siete." },
+          "user": [
+            { "zh": "好，七块。我要四个。", "py": "Hǎo, qī kuài. Wǒ yào sì ge.", "es": "Vale, a siete. Quiero cuatro.", "keywords": ["四个", "七块"], "next": "n4", "goal": 1 },
+            { "zh": "不买了，再见。", "py": "Bù mǎi le, zàijiàn.", "es": "Pues no compro, adiós.", "keywords": ["不买", "再见"], "next": "end2" }
+          ],
+          "hint": "Cierra el trato (好，七块) o vete sin comprar (不买了)."
+        },
+        "n4": {
+          "npc": { "zh": "好的。你用微信付钱吗？", "py": "Hǎo de. Nǐ yòng Wēixìn fù qián ma?", "es": "Vale. ¿Pagas con WeChat?" },
+          "user": [
+            { "zh": "好，我用微信。", "py": "Hǎo, wǒ yòng Wēixìn.", "es": "Vale, uso WeChat.", "keywords": ["微信", "用微信"], "next": "end1", "goal": 3 },
+            { "zh": "我用现金。", "py": "Wǒ yòng xiànjīn.", "es": "Pago en efectivo.", "keywords": ["现金", "用现金"], "next": "end1", "goal": 3 },
+            { "zh": "我用支付宝，可以吗？", "py": "Wǒ yòng Zhīfùbǎo, kěyǐ ma?", "es": "Uso Alipay, ¿se puede?", "keywords": ["支付宝", "可以吗"], "next": "end1", "goal": 3 }
+          ],
+          "hint": "用 + medio de pago: 微信, 支付宝 o 现金."
+        },
+        "end1": {
+          "npc": { "zh": "好，谢谢！再见！", "py": "Hǎo, xièxie! Zàijiàn!", "es": "Vale, ¡gracias! ¡Adiós!" },
+          "end": true,
+          "feedback": "Has preguntado el precio, has dicho cuántas querías y has pagado. Regatear en el mercado es normal: 太贵了，便宜一点儿吧."
+        },
+        "end2": {
+          "npc": { "zh": "好吧，再见。", "py": "Hǎo ba, zàijiàn.", "es": "Vale, adiós." },
+          "end": true,
+          "feedback": "Te has ido sin comprar. Regatear está bien, pero si te interesa el precio ciérralo: 好，七块。我要四个."
+        }
+      }
+    },
+    {
+      "id": "u06-clothes-shop",
+      "title": "Comprar ropa en una tienda",
+      "zh": "买衣服",
+      "level": 1,
+      "setting": "Tienda de ropa en una calle comercial de Shanghái. Hugo busca una prenda. Tú (la app) eres la dependienta.",
+      "role": "dependienta",
+      "roleZh": "老板",
+      "voice": "f",
+      "goals": ["Decir qué quieres comprar", "Preguntar el precio", "Pedir otra talla", "Decidir si compras"],
+      "vocab": ["商店", "衣服", "鞋", "件", "双", "漂亮", "新", "贵", "便宜", "太", "大", "小", "买", "多少钱", "看一下", "微信", "现金"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "你好！你想买什么？", "py": "Nǐ hǎo! Nǐ xiǎng mǎi shénme?", "es": "¡Hola! ¿Qué quieres comprar?" },
+          "user": [
+            { "zh": "我想买一件衣服。", "py": "Wǒ xiǎng mǎi yí jiàn yīfu.", "es": "Quiero comprar una prenda.", "keywords": ["衣服", "一件"], "next": "n2", "goal": 0 },
+            { "zh": "我想买一双鞋。", "py": "Wǒ xiǎng mǎi yì shuāng xié.", "es": "Quiero comprar unos zapatos.", "keywords": ["鞋", "一双"], "next": "n2b", "goal": 0 },
+            { "zh": "我看一下。", "py": "Wǒ kàn yíxià.", "es": "Solo estoy mirando.", "keywords": ["看一下", "看看"], "next": "n1b" }
+          ],
+          "hint": "我想买 + clasificador + cosa: 一件衣服, 一双鞋. O 我看一下 si solo miras."
+        },
+        "n1b": {
+          "npc": { "zh": "好，这件衣服很漂亮，是新的。", "py": "Hǎo, zhè jiàn yīfu hěn piàoliang, shì xīn de.", "es": "Vale, esta prenda es muy bonita, es nueva." },
+          "user": [
+            { "zh": "这件多少钱？", "py": "Zhè jiàn duōshao qián?", "es": "¿Cuánto cuesta esta?", "keywords": ["多少钱", "多少"], "next": "n3", "goal": 1 },
+            { "zh": "我不喜欢，我想买鞋。", "py": "Wǒ bù xǐhuan, wǒ xiǎng mǎi xié.", "es": "No me gusta, quiero comprar zapatos.", "keywords": ["鞋", "不喜欢"], "next": "n2b", "goal": 0 }
+          ],
+          "hint": "Pregunta el precio (这件多少钱) o di qué buscas en realidad."
+        },
+        "n2": {
+          "npc": { "zh": "你看这件，很漂亮！", "py": "Nǐ kàn zhè jiàn, hěn piàoliang!", "es": "Mira esta, ¡es muy bonita!" },
+          "user": [
+            { "zh": "很漂亮。多少钱？", "py": "Hěn piàoliang. Duōshao qián?", "es": "Muy bonita. ¿Cuánto cuesta?", "keywords": ["多少钱", "多少"], "next": "n3", "goal": 1 },
+            { "zh": "太大了，有小的吗？", "py": "Tài dà le, yǒu xiǎo de ma?", "es": "Es demasiado grande, ¿hay una pequeña?", "keywords": ["小的", "太大"], "next": "n4", "goal": 2 }
+          ],
+          "hint": "Pregunta el precio o pide otra talla: 太大了，有小的吗？"
+        },
+        "n2b": {
+          "npc": { "zh": "这双鞋很新，你看一下。", "py": "Zhè shuāng xié hěn xīn, nǐ kàn yíxià.", "es": "Estos zapatos son nuevos, míralos." },
+          "user": [
+            { "zh": "多少钱？", "py": "Duōshao qián?", "es": "¿Cuánto cuestan?", "keywords": ["多少钱", "多少"], "next": "n3", "goal": 1 },
+            { "zh": "有点儿小，有大的吗？", "py": "Yǒudiǎnr xiǎo, yǒu dà de ma?", "es": "Me quedan un poco pequeños, ¿hay más grandes?", "keywords": ["大的", "有点儿小"], "next": "n4", "goal": 2 }
+          ],
+          "hint": "Pregunta el precio o pide otra talla: 有大的吗？"
+        },
+        "n3": {
+          "npc": { "zh": "二百五十块。", "py": "Èrbǎi wǔshí kuài.", "es": "Doscientos cincuenta yuanes." },
+          "user": [
+            { "zh": "太贵了！便宜一点儿。", "py": "Tài guì le! Piányi yìdiǎnr.", "es": "¡Demasiado caro! Un poco más barato.", "keywords": ["太贵", "便宜"], "next": "n3b" },
+            { "zh": "好，我买。", "py": "Hǎo, wǒ mǎi.", "es": "Vale, me lo llevo.", "keywords": ["我买", "我要"], "next": "n5", "goal": 3 },
+            { "zh": "有小的吗？", "py": "Yǒu xiǎo de ma?", "es": "¿Hay una talla más pequeña?", "keywords": ["小的", "大的"], "next": "n4", "goal": 2 }
+          ],
+          "hint": "Regatea (太贵了), compra (我买) o pide otra talla (有小的吗)."
+        },
+        "n3b": {
+          "npc": { "zh": "二百块，不贵！", "py": "Èrbǎi kuài, bú guì!", "es": "Doscientos, ¡no es caro!" },
+          "user": [
+            { "zh": "好，我买。", "py": "Hǎo, wǒ mǎi.", "es": "Vale, me lo llevo.", "keywords": ["我买", "我要"], "next": "n5", "goal": 3 },
+            { "zh": "太贵了，我不买。", "py": "Tài guì le, wǒ bù mǎi.", "es": "Demasiado caro, no lo compro.", "keywords": ["不买", "太贵"], "next": "end2", "goal": 3 }
+          ],
+          "hint": "Decide: 我买 (lo compro) o 我不买 (no lo compro)."
+        },
+        "n4": {
+          "npc": { "zh": "有。你看一下这个。", "py": "Yǒu. Nǐ kàn yíxià zhège.", "es": "Sí. Mira este." },
+          "user": [
+            { "zh": "好，这个很好。多少钱？", "py": "Hǎo, zhège hěn hǎo. Duōshao qián?", "es": "Vale, este está bien. ¿Cuánto cuesta?", "keywords": ["多少钱", "多少"], "next": "n3", "goal": 1 },
+            { "zh": "好，我买这个。", "py": "Hǎo, wǒ mǎi zhège.", "es": "Vale, compro este.", "keywords": ["我买", "我要"], "next": "n5", "goal": 3 }
+          ],
+          "hint": "这个 = este. Pregunta el precio o cómpralo directamente."
+        },
+        "n5": {
+          "npc": { "zh": "好！可以用微信付钱。", "py": "Hǎo! Kěyǐ yòng Wēixìn fù qián.", "es": "¡Bien! Puedes pagar con WeChat." },
+          "user": [
+            { "zh": "好，我用微信。", "py": "Hǎo, wǒ yòng Wēixìn.", "es": "Vale, uso WeChat.", "keywords": ["微信", "用微信"], "next": "end1" },
+            { "zh": "我用现金，给你。", "py": "Wǒ yòng xiànjīn, gěi nǐ.", "es": "Pago en efectivo, toma.", "keywords": ["现金", "给你"], "next": "end1" }
+          ],
+          "hint": "可以 = se puede. Elige cómo pagas: 用微信 / 用现金."
+        },
+        "end1": {
+          "npc": { "zh": "谢谢！再见！", "py": "Xièxie! Zàijiàn!", "es": "¡Gracias! ¡Adiós!" },
+          "end": true,
+          "feedback": "Has dicho qué querías, preguntado el precio y decidido la compra. Fíjate en los clasificadores: 件 para ropa, 双 para zapatos."
+        },
+        "end2": {
+          "npc": { "zh": "好吧，再见。", "py": "Hǎo ba, zàijiàn.", "es": "Vale, adiós." },
+          "end": true,
+          "feedback": "Has decidido no comprar: también es una decisión válida. 太…了 expresa exceso (太贵了 = demasiado caro)."
+        }
+      }
+    },
+    {
+      "id": "u06-phone-shop",
+      "title": "Comprar un móvil y pagar",
+      "zh": "买手机",
+      "level": 1,
+      "setting": "Tienda de electrónica en Shanghái. Hugo compara dos móviles y pregunta cómo pagar. Tú (la app) eres el vendedor.",
+      "role": "vendedor",
+      "roleZh": "老板",
+      "voice": "m",
+      "goals": ["Decir que quieres un móvil", "Preguntar el precio del otro", "Elegir uno (这个 / 那个)", "Preguntar cómo pagar"],
+      "vocab": ["手机", "电脑", "新", "贵", "便宜", "太", "这个", "那个", "多少钱", "百", "块", "看一下", "付钱", "用", "可以", "微信", "支付宝", "现金"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "你好！你要买什么？", "py": "Nǐ hǎo! Nǐ yào mǎi shénme?", "es": "¡Hola! ¿Qué quieres comprar?" },
+          "user": [
+            { "zh": "我想买一个新手机。", "py": "Wǒ xiǎng mǎi yí ge xīn shǒujī.", "es": "Quiero comprar un móvil nuevo.", "keywords": ["手机", "新手机"], "next": "n2", "goal": 0 },
+            { "zh": "我想买电脑。", "py": "Wǒ xiǎng mǎi diànnǎo.", "es": "Quiero comprar un ordenador.", "keywords": ["电脑", "买电脑"], "next": "n1b" }
+          ],
+          "hint": "我想买 + cosa. Móvil es 手机; ordenador, 电脑."
+        },
+        "n1b": {
+          "npc": { "zh": "电脑很贵。手机便宜，你看一下手机吧。", "py": "Diànnǎo hěn guì. Shǒujī piányi, nǐ kàn yíxià shǒujī ba.", "es": "Los ordenadores son caros. Los móviles son baratos, mira los móviles." },
+          "user": [
+            { "zh": "好，我看一下手机。", "py": "Hǎo, wǒ kàn yíxià shǒujī.", "es": "Vale, miro los móviles.", "keywords": ["看一下", "看"], "next": "n2", "goal": 0 },
+            { "zh": "太贵了。我买手机。", "py": "Tài guì le. Wǒ mǎi shǒujī.", "es": "Demasiado caro. Compro un móvil.", "keywords": ["太贵", "我买"], "next": "n2", "goal": 0 }
+          ],
+          "hint": "Cambia de idea: 我看一下手机 / 我买手机."
+        },
+        "n2": {
+          "npc": { "zh": "这个手机很好，八百块。", "py": "Zhège shǒujī hěn hǎo, bābǎi kuài.", "es": "Este móvil es muy bueno, ochocientos yuanes." },
+          "user": [
+            { "zh": "那个呢？那个多少钱？", "py": "Nàge ne? Nàge duōshao qián?", "es": "¿Y aquel? ¿Cuánto cuesta aquel?", "keywords": ["那个", "多少钱"], "next": "n3", "goal": 1 },
+            { "zh": "八百块？太贵了！", "py": "Bābǎi kuài? Tài guì le!", "es": "¿Ochocientos? ¡Demasiado caro!", "keywords": ["太贵", "贵"], "next": "n2b" }
+          ],
+          "hint": "Pregunta por el otro con 那个呢？那个多少钱？ o protesta por el precio."
+        },
+        "n2b": {
+          "npc": { "zh": "不贵！这个是新的。那个便宜，五百块。", "py": "Bú guì! Zhège shì xīn de. Nàge piányi, wǔbǎi kuài.", "es": "¡No es caro! Este es nuevo. Aquel es más barato, quinientos." },
+          "user": [
+            { "zh": "我要便宜的那个。", "py": "Wǒ yào piányi de nàge.", "es": "Quiero el barato, aquel.", "keywords": ["那个", "便宜"], "next": "n4", "goal": 2 },
+            { "zh": "好，我要这个新的。", "py": "Hǎo, wǒ yào zhège xīn de.", "es": "Vale, quiero este nuevo.", "keywords": ["这个", "新的"], "next": "n4", "goal": 2 }
+          ],
+          "hint": "Elige con 我要这个 (este) o 我要那个 (aquel)."
+        },
+        "n3": {
+          "npc": { "zh": "那个五百块，小一点儿。", "py": "Nàge wǔbǎi kuài, xiǎo yìdiǎnr.", "es": "Aquel cuesta quinientos, es un poco más pequeño." },
+          "user": [
+            { "zh": "我要这个。", "py": "Wǒ yào zhège.", "es": "Quiero este.", "keywords": ["这个", "要这个"], "next": "n4", "goal": 2 },
+            { "zh": "我要那个，便宜。", "py": "Wǒ yào nàge, piányi.", "es": "Quiero aquel, es barato.", "keywords": ["那个", "便宜"], "next": "n4", "goal": 2 },
+            { "zh": "我看一下。", "py": "Wǒ kàn yíxià.", "es": "Déjame verlo.", "keywords": ["看一下", "看看"], "next": "n3b" }
+          ],
+          "hint": "Elige (我要这个 / 那个) o pide verlo (我看一下)."
+        },
+        "n3b": {
+          "npc": { "zh": "好，你看。这个也很漂亮。", "py": "Hǎo, nǐ kàn. Zhège yě hěn piàoliang.", "es": "Vale, mira. Este también es muy bonito." },
+          "user": [
+            { "zh": "好，我要这个！", "py": "Hǎo, wǒ yào zhège!", "es": "¡Vale, quiero este!", "keywords": ["这个", "要这个"], "next": "n4", "goal": 2 },
+            { "zh": "我要那个。", "py": "Wǒ yào nàge.", "es": "Quiero aquel.", "keywords": ["那个", "要那个"], "next": "n4", "goal": 2 }
+          ],
+          "hint": "Decide: 这个 o 那个."
+        },
+        "n4": {
+          "npc": { "zh": "好的！你用什么付钱？", "py": "Hǎo de! Nǐ yòng shénme fù qián?", "es": "¡Vale! ¿Con qué pagas?" },
+          "user": [
+            { "zh": "可以用支付宝吗？", "py": "Kěyǐ yòng Zhīfùbǎo ma?", "es": "¿Se puede pagar con Alipay?", "keywords": ["支付宝", "用支付宝"], "next": "n5", "goal": 3 },
+            { "zh": "可以用现金吗？", "py": "Kěyǐ yòng xiànjīn ma?", "es": "¿Se puede pagar en efectivo?", "keywords": ["现金", "用现金"], "next": "n5", "goal": 3 },
+            { "zh": "我用微信，可以吗？", "py": "Wǒ yòng Wēixìn, kěyǐ ma?", "es": "Pago con WeChat, ¿se puede?", "keywords": ["微信", "用微信"], "next": "n5", "goal": 3 }
+          ],
+          "hint": "Pregunta si se puede pagar así: 可以用…吗？"
+        },
+        "n5": {
+          "npc": { "zh": "可以，微信、支付宝、现金都可以。", "py": "Kěyǐ, Wēixìn, Zhīfùbǎo, xiànjīn dōu kěyǐ.", "es": "Sí: WeChat, Alipay y efectivo, todo vale." },
+          "user": [
+            { "zh": "好，给你。谢谢！", "py": "Hǎo, gěi nǐ. Xièxie!", "es": "Vale, toma. ¡Gracias!", "keywords": ["给你", "谢谢"], "next": "end1" },
+            { "zh": "……对不起，我没有钱，明天买！", "py": "… Duìbuqǐ, wǒ méiyǒu qián, míngtiān mǎi!", "es": "… Perdón, no tengo dinero, ¡lo compro mañana!", "keywords": ["没有钱", "明天"], "next": "end2" }
+          ],
+          "hint": "都可以 = todo vale. Paga (给你) o aplázalo."
+        },
+        "end1": {
+          "npc": { "zh": "谢谢！再见！", "py": "Xièxie! Zàijiàn!", "es": "¡Gracias! ¡Adiós!" },
+          "end": true,
+          "feedback": "Has comparado dos móviles con 这个 / 那个, has preguntado el precio y has pagado. 可以用…吗 sirve para cualquier medio de pago."
+        },
+        "end2": {
+          "npc": { "zh": "哈哈，好，明天！", "py": "Hāhā, hǎo, míngtiān!", "es": "Ja, ja, vale, ¡mañana!" },
+          "end": true,
+          "feedback": "Lo has elegido y has preguntado cómo pagar, pero te has quedado sin dinero. Mañana: 我用微信付钱."
+        }
+      }
+    }
+  ]
+}

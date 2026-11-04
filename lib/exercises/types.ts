@@ -24,7 +24,28 @@ export type ExerciseType =
   | "build-character"
   | "classifier"
   | "conjugation"
-  | "particle";
+  | "particle"
+  // tipos de los bancos (chino): escucha, diálogo, situación, error, transformación, traducción, huecos, velocidad, tonos, oral
+  | "listen-answer"
+  | "listen-tf"
+  | "dictation-pinyin"
+  | "dialogue-complete"
+  | "dialogue-order"
+  | "dialogue-who"
+  | "situation"
+  | "find-error"
+  | "transform"
+  | "build-question"
+  | "translate-free"
+  | "cloze"
+  | "radical-meaning"
+  | "speed-pinyin-hanzi"
+  | "speed-match"
+  | "tone-sandhi"
+  | "speak-answer";
+
+/** Tipos añadidos con los bancos de ejercicios (no exigidos por la paridad ja/ko). */
+export const BANK_EXERCISE_TYPES: ExerciseType[] = ["listen-answer", "listen-tf", "dictation-pinyin", "dialogue-complete", "dialogue-order", "dialogue-who", "situation", "find-error", "transform", "build-question", "translate-free", "cloze", "radical-meaning", "speed-pinyin-hanzi", "speed-match", "tone-sandhi", "speak-answer"];
 
 export const EXERCISE_TYPES: ExerciseType[] = [
   "choose-meaning",
@@ -49,10 +70,27 @@ export const EXERCISE_TYPES: ExerciseType[] = [
   "classifier",
   "conjugation",
   "particle",
+  "listen-answer",
+  "listen-tf",
+  "dictation-pinyin",
+  "dialogue-complete",
+  "dialogue-order",
+  "dialogue-who",
+  "situation",
+  "find-error",
+  "transform",
+  "build-question",
+  "translate-free",
+  "cloze",
+  "radical-meaning",
+  "speed-pinyin-hanzi",
+  "speed-match",
+  "tone-sandhi",
+  "speak-answer",
 ];
 
 /** Los 20 tipos comunes a los tres idiomas (paridad). */
-export const COMMON_EXERCISE_TYPES: ExerciseType[] = EXERCISE_TYPES.filter((t) => t !== "conjugation" && t !== "particle");
+export const COMMON_EXERCISE_TYPES: ExerciseType[] = EXERCISE_TYPES.filter((t) => t !== "conjugation" && t !== "particle" && !BANK_EXERCISE_TYPES.includes(t));
 
 export const EXERCISE_LABELS: Record<ExerciseType, string> = {
   "choose-meaning": "Elegir significado",
@@ -77,6 +115,23 @@ export const EXERCISE_LABELS: Record<ExerciseType, string> = {
   classifier: "Clasificadores",
   conjugation: "Conjugación",
   particle: "Partículas",
+  "listen-answer": "Escucha y responde",
+  "listen-tf": "Escucha: verdadero o falso",
+  "dictation-pinyin": "Dictado en pinyin",
+  "dialogue-complete": "Completar el diálogo",
+  "dialogue-order": "Ordenar el diálogo",
+  "dialogue-who": "¿Quién dice qué?",
+  situation: "¿Qué dices cuando…?",
+  "find-error": "Encuentra el error",
+  transform: "Transformar la frase",
+  "build-question": "Construir la pregunta",
+  "translate-free": "Traducir libre",
+  cloze: "Texto con huecos",
+  "radical-meaning": "Significado del radical",
+  "speed-pinyin-hanzi": "Velocidad: pinyin → hanzi",
+  "speed-match": "Emparejar contrarreloj",
+  "tone-sandhi": "Sandhi de tonos",
+  "speak-answer": "Responder oralmente",
 };
 
 export interface Option {
@@ -97,11 +152,14 @@ interface Base {
 }
 
 export interface MultipleChoiceExercise extends Base {
-  type: "choose-meaning" | "choose-character" | "similar-characters" | "listen-choose" | "component" | "classifier" | "tone-pair" | "comprehension";
-  display: { zh?: string; es?: string; audio?: string; pinyin?: string; dialogue?: { speaker?: string; zh: string; es: string }[] };
+  type: "choose-meaning" | "choose-character" | "similar-characters" | "listen-choose" | "component" | "classifier" | "tone-pair" | "comprehension" | "listen-answer" | "dialogue-complete" | "dialogue-who" | "situation" | "radical-meaning" | "tone-sandhi";
+  display: { zh?: string; es?: string; audio?: string; pinyin?: string; dialogue?: { speaker?: string; zh: string; es: string; missing?: boolean; py?: string }[]; voice?: Voice };
   options: Option[];
   answer: number;
 }
+
+/** Voz para el audio pregenerado: mujer / hombre / niño (zh-CN-Xiaoxiao / Yunxi / Xiaoyou). */
+export type Voice = "f" | "m" | "child";
 
 export interface PinyinInputExercise extends Base {
   type: "pinyin-input";
@@ -123,7 +181,7 @@ export interface ToneChoiceExercise extends Base {
 }
 
 export interface TilesExercise extends Base {
-  type: "order-words" | "build-sentence";
+  type: "order-words" | "build-sentence" | "dialogue-order";
   tiles: string[]; // barajadas (incluye distractores si los hay)
   answer: string[]; // orden correcto (solo fichas correctas)
   alternatives?: string[][]; // otros órdenes válidos
@@ -149,17 +207,23 @@ export interface FreeTextExercise extends Base {
 }
 
 export interface DictationExercise extends Base {
-  type: "dictation";
-  zh: string;
+  type: "dictation" | "dictation-pinyin" | "transform" | "build-question";
+  zh: string; // respuesta esperada (hanzi)
   es?: string;
   pinyin?: string;
+  /** transform / build-question: lo que se muestra (frase de partida o respuesta dada) */
+  source?: { zh: string; py?: string; es?: string };
+  alternatives?: string[];
+  voice?: Voice;
 }
 
 export interface ReadingTFExercise extends Base {
-  type: "reading-tf";
+  type: "reading-tf" | "listen-tf";
   text: string;
   es?: string;
+  pinyin?: string;
   statements: { s: string; truth: boolean; why?: string }[];
+  voice?: Voice;
 }
 
 export interface MatchingExercise extends Base {
@@ -177,11 +241,44 @@ export interface WritingExercise extends Base {
 }
 
 export interface SpeakingExercise extends Base {
-  type: "speaking";
-  zh: string;
+  type: "speaking" | "speak-answer";
+  zh: string; // frase modelo (speak-answer: respuesta modelo)
   pinyin: string;
   es: string;
-  mode: "shadow" | "recognize";
+  mode: "shadow" | "recognize" | "read" | "answer";
+  /** speak-answer: la pregunta que se oye y las palabras clave esperadas */
+  question?: { zh: string; py?: string; es?: string };
+  keywords?: string[];
+}
+
+export interface FindErrorExercise extends Base {
+  type: "find-error";
+  tokens: string[]; // frase con error, segmentada
+  wrongIndex: number;
+  correct: string;
+  es?: string;
+}
+
+export interface ClozeExercise extends Base {
+  type: "cloze";
+  text: string; // con ＿＿ por hueco
+  blanks: { answer: string; options: string[] }[];
+  es?: string;
+}
+
+export interface FreeTranslateExercise extends Base {
+  type: "translate-free";
+  es: string;
+  answers: string[]; // referencias (puede ser vacío)
+  pinyin?: string;
+  hint?: string;
+  grammarIds?: string[];
+}
+
+export interface SpeedExercise extends Base {
+  type: "speed-pinyin-hanzi" | "speed-match";
+  pairs: { left: string; right: string; leftPinyin?: string }[]; // izquierda: pinyin / zh · derecha: zh / es
+  seconds: number;
 }
 
 export interface ConjugationExercise extends Base {
@@ -207,6 +304,10 @@ export interface BuildCharacterExercise extends Base {
 }
 
 export type Exercise =
+  | FindErrorExercise
+  | ClozeExercise
+  | FreeTranslateExercise
+  | SpeedExercise
   | MultipleChoiceExercise
   | PinyinInputExercise
   | ToneChoiceExercise
@@ -231,7 +332,10 @@ export type Response =
   | { kind: "matching"; mistakes: number; completed: boolean }
   | { kind: "writing"; mistakes: number }
   | { kind: "speaking"; transcript: string; selfRating?: 1 | 2 | 3 }
-  | { kind: "self"; correct: boolean; text?: string };
+  | { kind: "self"; correct: boolean; text?: string }
+  | { kind: "findError"; index: number; correction: string }
+  | { kind: "cloze"; answers: string[] }
+  | { kind: "speed"; correct: number; total: number; seconds: number; finished: boolean };
 
 export interface CheckResult {
   correct: boolean;

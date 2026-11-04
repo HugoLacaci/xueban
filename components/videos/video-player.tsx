@@ -19,6 +19,7 @@ import { QuickAddDialog } from "@/components/flashcards/quick-add";
 import { cn } from "@/lib/utils";
 import { targetLang } from "@/lib/languages/registry";
 import { ui } from "@/lib/languages/ui-text";
+import { NoteHereButton } from "@/components/notes/note-here-button";
 import { Mixed } from "@/components/target/mixed";
 
 declare global {
@@ -309,6 +310,9 @@ function Player({ video }: { video: VideoDoc }) {
         </div>
 
         <Tabs defaultValue="lines" className="min-w-0">
+          <div className="mb-1 flex justify-end">
+            <NoteHereButton text={() => (cur >= 0 ? lines[cur].zh : video.title)} source={{ kind: "video", ref: video.id }} label="apunte de esta línea" />
+          </div>
           <TabsList className="w-full">
             <TabsTrigger value="lines" className="flex-1">
               <List className="mr-1 size-4" /> Transcripción

@@ -1,0 +1,253 @@
+{
+  "unitId": "u08",
+  "scenarios": [
+    {
+      "id": "u08-metro",
+      "title": "En la estación de metro",
+      "zh": "在地铁站",
+      "level": 1,
+      "setting": "Hugo está en la estación de metro de 人民广场 (Plaza del Pueblo) y quiere llegar a la Universidad Jiaotong. Tú (la app) eres la empleada de la estación.",
+      "role": "empleada del metro",
+      "roleZh": "地铁站工作人员",
+      "voice": "f",
+      "goals": ["Preguntar cómo ir a la Universidad Jiaotong", "Preguntar cuántas paradas son o cuánto se tarda", "Preguntar el precio del billete", "Despedirte dando las gracias"],
+      "vocab": ["地铁", "怎么", "到", "站", "分钟", "票", "多少钱", "远"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "你好，请问有什么事？", "py": "Nǐ hǎo, qǐngwèn yǒu shénme shì?", "es": "Hola, ¿en qué puedo ayudarle?" },
+          "user": [
+            { "zh": "请问，去交通大学怎么走？", "py": "Qǐngwèn, qù Jiāotōng Dàxué zěnme zǒu?", "es": "Disculpe, ¿cómo se va a la Universidad Jiaotong?", "keywords": ["怎么走", "怎么去"], "next": "n2", "goal": 0 },
+            { "zh": "请问，坐地铁能到交通大学吗？", "py": "Qǐngwèn, zuò dìtiě néng dào Jiāotōng Dàxué ma?", "es": "Disculpe, ¿se puede llegar en metro a la Universidad Jiaotong?", "keywords": ["能到", "地铁"], "next": "n2b", "goal": 0 },
+            { "zh": "请问，交通大学远吗？", "py": "Qǐngwèn, Jiāotōng Dàxué yuǎn ma?", "es": "Disculpe, ¿está lejos la Universidad Jiaotong?", "keywords": ["远吗", "远不远"], "next": "n3" }
+          ],
+          "hint": "Empieza con 请问 y pregunta cómo ir (怎么走 / 怎么去), si se puede ir en metro (坐地铁能到…吗) o si está lejos (远吗)."
+        },
+        "n2": {
+          "npc": { "zh": "坐一号线，到徐家汇站下车。交通大学就在地铁站旁边。", "py": "Zuò yī hào xiàn, dào Xújiāhuì zhàn xiàchē. Jiāotōng Dàxué jiù zài dìtiězhàn pángbiān.", "es": "Coja la línea 1 y bájese en la estación de Xujiahui. La Universidad Jiaotong está justo al lado de la estación." },
+          "user": [
+            { "zh": "要坐几站？", "py": "Yào zuò jǐ zhàn?", "es": "¿Cuántas paradas son?", "keywords": ["几站"], "next": "n4", "goal": 1 },
+            { "zh": "要多少分钟？", "py": "Yào duōshao fēnzhōng?", "es": "¿Cuántos minutos se tarda?", "keywords": ["分钟", "多长时间"], "next": "n4", "goal": 1 },
+            { "zh": "地铁票多少钱？", "py": "Dìtiě piào duōshao qián?", "es": "¿Cuánto cuesta el billete de metro?", "keywords": ["多少钱", "票"], "next": "n5", "goal": 2 }
+          ],
+          "hint": "Pregunta cuántas paradas (几站), cuántos minutos (多少分钟) o el precio del billete (票多少钱)."
+        },
+        "n2b": {
+          "npc": { "zh": "能。坐一号线，到徐家汇站。很快，很近。", "py": "Néng. Zuò yī hào xiàn, dào Xújiāhuì zhàn. Hěn kuài, hěn jìn.", "es": "Sí. Coja la línea 1 hasta la estación de Xujiahui. Es rápido, está cerca." },
+          "user": [
+            { "zh": "好。要坐几站？", "py": "Hǎo. Yào zuò jǐ zhàn?", "es": "Vale. ¿Cuántas paradas son?", "keywords": ["几站"], "next": "n4", "goal": 1 },
+            { "zh": "票多少钱？", "py": "Piào duōshao qián?", "es": "¿Cuánto cuesta el billete?", "keywords": ["多少钱", "票"], "next": "n5", "goal": 2 }
+          ],
+          "hint": "Sigue preguntando: las paradas (几站) o el precio (多少钱)."
+        },
+        "n3": {
+          "npc": { "zh": "不太远。坐地铁二十分钟就到了。", "py": "Bú tài yuǎn. Zuò dìtiě èrshí fēnzhōng jiù dào le.", "es": "No muy lejos. En metro se llega en veinte minutos." },
+          "user": [
+            { "zh": "那怎么走？坐几号线？", "py": "Nà zěnme zǒu? Zuò jǐ hào xiàn?", "es": "Entonces, ¿cómo voy? ¿Qué línea cojo?", "keywords": ["怎么走", "几号线"], "next": "n2", "goal": 0 },
+            { "zh": "票多少钱？", "py": "Piào duōshao qián?", "es": "¿Cuánto cuesta el billete?", "keywords": ["多少钱", "票"], "next": "n5", "goal": 2 }
+          ],
+          "hint": "Ya sabes que no está lejos: pregunta cómo ir (怎么走, 几号线 = qué línea) o el precio."
+        },
+        "n4": {
+          "npc": { "zh": "坐五站，二十分钟就到了。", "py": "Zuò wǔ zhàn, èrshí fēnzhōng jiù dào le.", "es": "Cinco paradas; en veinte minutos llega." },
+          "user": [
+            { "zh": "票多少钱？", "py": "Piào duōshao qián?", "es": "¿Cuánto cuesta el billete?", "keywords": ["多少钱", "票"], "next": "n5", "goal": 2 },
+            { "zh": "好的，我知道了，谢谢！", "py": "Hǎo de, wǒ zhīdào le, xièxie!", "es": "Vale, entendido, ¡gracias!", "keywords": ["知道", "谢谢"], "next": "n6", "goal": 3 }
+          ],
+          "hint": "Pregunta el precio (多少钱) o termina dando las gracias (谢谢)."
+        },
+        "n5": {
+          "npc": { "zh": "四块钱。可以用支付宝或者微信。", "py": "Sì kuài qián. Kěyǐ yòng Zhīfùbǎo huòzhě Wēixìn.", "es": "Cuatro yuanes. Puede pagar con Alipay o con WeChat." },
+          "user": [
+            { "zh": "好的，谢谢你，再见！", "py": "Hǎo de, xièxie nǐ, zàijiàn!", "es": "Vale, gracias, ¡adiós!", "keywords": ["谢谢", "再见"], "next": "n6", "goal": 3 },
+            { "zh": "要坐几站？", "py": "Yào zuò jǐ zhàn?", "es": "¿Cuántas paradas son?", "keywords": ["几站"], "next": "n4", "goal": 1 }
+          ],
+          "hint": "Si ya lo tienes claro, despídete con 谢谢 y 再见; si no, pregunta las paradas (几站)."
+        },
+        "n6": {
+          "npc": { "zh": "不客气，再见！", "py": "Bú kèqi, zàijiàn!", "es": "De nada, ¡adiós!" },
+          "end": true,
+          "feedback": "Has preguntado cómo llegar a 交大 en metro, cuánto se tarda y el precio, y te has despedido con educación. Recuerda: 坐 + línea/transporte, 到 + estación, y 就 para «ya, justo»."
+        }
+      }
+    },
+    {
+      "id": "u08-taxi-airport",
+      "title": "Taxi al aeropuerto",
+      "zh": "坐出租车去机场",
+      "level": 1,
+      "setting": "Hugo sale del campus con su maleta: vuela a Pekín esta tarde. Para un taxi en la puerta de la universidad. Tú (la app) eres el taxista.",
+      "role": "taxista",
+      "roleZh": "司机",
+      "voice": "m",
+      "goals": ["Decir que vas al aeropuerto", "Preguntar cuánto se tarda o cuánto cuesta", "Decir a qué hora es tu vuelo", "Pagar al llegar"],
+      "vocab": ["出租车", "机场", "远", "小时", "快", "飞机", "到", "多少钱"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "你好，去哪儿？", "py": "Nǐ hǎo, qù nǎr?", "es": "Hola, ¿adónde va?" },
+          "user": [
+            { "zh": "师傅你好，我去机场。", "py": "Shīfu nǐ hǎo, wǒ qù jīchǎng.", "es": "Hola, voy al aeropuerto.", "keywords": ["机场"], "next": "n2", "goal": 0 },
+            { "zh": "你好，我去火车站。", "py": "Nǐ hǎo, wǒ qù huǒchēzhàn.", "es": "Hola, voy a la estación de tren.", "keywords": ["火车站"], "next": "n2b" }
+          ],
+          "hint": "Di tu destino con 我去 + lugar. Ojo: vuelas, así que es 机场, no 火车站. A los taxistas se les llama 师傅 shīfu."
+        },
+        "n2": {
+          "npc": { "zh": "好。机场很远，现在车很多。", "py": "Hǎo. Jīchǎng hěn yuǎn, xiànzài chē hěn duō.", "es": "Vale. El aeropuerto está lejos y ahora hay mucho tráfico." },
+          "user": [
+            { "zh": "要几个小时？", "py": "Yào jǐ ge xiǎoshí?", "es": "¿Cuántas horas se tarda?", "keywords": ["几个小时", "多少分钟"], "next": "n3", "goal": 1 },
+            { "zh": "到机场多少钱？", "py": "Dào jīchǎng duōshao qián?", "es": "¿Cuánto cuesta hasta el aeropuerto?", "keywords": ["多少钱"], "next": "n3b", "goal": 1 }
+          ],
+          "hint": "Pregunta cuánto se tarda (要几个小时 / 多少分钟) o cuánto cuesta (多少钱)."
+        },
+        "n2b": {
+          "npc": { "zh": "好，火车站不远，二十分钟到。", "py": "Hǎo, huǒchēzhàn bù yuǎn, èrshí fēnzhōng dào.", "es": "Vale, la estación no está lejos, en veinte minutos llegamos." },
+          "user": [
+            { "zh": "对不起，不是火车站，是机场！", "py": "Duìbuqǐ, bú shì huǒchēzhàn, shì jīchǎng!", "es": "Perdón, ¡no es la estación de tren, es el aeropuerto!", "keywords": ["不是", "机场"], "next": "n2", "goal": 0 },
+            { "zh": "好的。", "py": "Hǎo de.", "es": "Vale.", "keywords": ["好的", "好"], "next": "n7" }
+          ],
+          "hint": "Te has equivocado de destino. Corrígelo con 不是……，是…… (no es…, es…)."
+        },
+        "n3": {
+          "npc": { "zh": "要一个小时。你几点的飞机？", "py": "Yào yí ge xiǎoshí. Nǐ jǐ diǎn de fēijī?", "es": "Una hora. ¿A qué hora es su vuelo?" },
+          "user": [
+            { "zh": "三点的飞机。能不能快一点儿？", "py": "Sān diǎn de fēijī. Néng bu néng kuài yìdiǎnr?", "es": "El vuelo de las tres. ¿Puede ir un poco más rápido?", "keywords": ["三点", "快一点"], "next": "n4", "goal": 2 },
+            { "zh": "晚上七点的，不忙。", "py": "Wǎnshang qī diǎn de, bù máng.", "es": "El de las siete de la tarde, no hay prisa.", "keywords": ["七点", "不忙"], "next": "n5", "goal": 2 }
+          ],
+          "hint": "Di la hora de tu vuelo: X点的飞机. Si vas justo, pide que vaya más rápido: 能不能快一点儿？"
+        },
+        "n3b": {
+          "npc": { "zh": "两百块。要一个小时。你几点的飞机？", "py": "Liǎng bǎi kuài. Yào yí ge xiǎoshí. Nǐ jǐ diǎn de fēijī?", "es": "Doscientos yuanes. Se tarda una hora. ¿A qué hora es su vuelo?" },
+          "user": [
+            { "zh": "三点的飞机。能不能快一点儿？", "py": "Sān diǎn de fēijī. Néng bu néng kuài yìdiǎnr?", "es": "El vuelo de las tres. ¿Puede ir un poco más rápido?", "keywords": ["三点", "快一点"], "next": "n4", "goal": 2 },
+            { "zh": "晚上七点的，不忙。", "py": "Wǎnshang qī diǎn de, bù máng.", "es": "El de las siete de la tarde, no hay prisa.", "keywords": ["七点", "不忙"], "next": "n5", "goal": 2 }
+          ],
+          "hint": "Responde con la hora del vuelo: X点的飞机. 不忙 aquí significa «no hay prisa»."
+        },
+        "n4": {
+          "npc": { "zh": "好，我开快一点儿，两点就到。", "py": "Hǎo, wǒ kāi kuài yìdiǎnr, liǎng diǎn jiù dào.", "es": "Vale, conduzco un poco más rápido; a las dos llegamos." },
+          "user": [
+            { "zh": "太好了，谢谢师傅。", "py": "Tài hǎo le, xièxie shīfu.", "es": "Genial, gracias.", "keywords": ["谢谢", "太好了"], "next": "n6" },
+            { "zh": "好。我在车上看看书。", "py": "Hǎo. Wǒ zài chē shang kànkan shū.", "es": "Vale. Leo un poco en el coche.", "keywords": ["看书", "看看"], "next": "n6" }
+          ],
+          "hint": "Agradece (谢谢师傅) o di qué haces durante el viaje (看看书)."
+        },
+        "n5": {
+          "npc": { "zh": "那不忙，一个小时到。", "py": "Nà bù máng, yí ge xiǎoshí dào.", "es": "Entonces sin prisa, llegamos en una hora." },
+          "user": [
+            { "zh": "好的。", "py": "Hǎo de.", "es": "Vale.", "keywords": ["好的", "好"], "next": "n6" },
+            { "zh": "我有点儿累，在车上休息一下。", "py": "Wǒ yǒudiǎnr lèi, zài chē shang xiūxi yíxià.", "es": "Estoy un poco cansado, descanso un rato en el coche.", "keywords": ["休息", "累"], "next": "n6" }
+          ],
+          "hint": "Acepta (好的) o di que descansas un rato (休息一下)."
+        },
+        "n6": {
+          "npc": { "zh": "机场到了。一共两百块。", "py": "Jīchǎng dào le. Yígòng liǎng bǎi kuài.", "es": "Hemos llegado al aeropuerto. Son doscientos yuanes en total." },
+          "user": [
+            { "zh": "好，我用微信付。", "py": "Hǎo, wǒ yòng Wēixìn fù.", "es": "Vale, pago con WeChat.", "keywords": ["微信", "支付宝"], "next": "n8", "goal": 3 },
+            { "zh": "用现金可以吗？", "py": "Yòng xiànjīn kěyǐ ma?", "es": "¿Puedo pagar en efectivo?", "keywords": ["现金"], "next": "n8", "goal": 3 }
+          ],
+          "hint": "Paga: 用微信/支付宝付 o pregunta si acepta efectivo (现金). 一共 = en total."
+        },
+        "n7": {
+          "npc": { "zh": "火车站到了，五十块。", "py": "Huǒchēzhàn dào le, wǔshí kuài.", "es": "Hemos llegado a la estación de tren, cincuenta yuanes." },
+          "end": true,
+          "feedback": "Has acabado en la estación de tren… ¡pero tu avión sale del aeropuerto! Cuando el taxista repita un destino equivocado, corrígelo: 不是火车站，是机场。"
+        },
+        "n8": {
+          "npc": { "zh": "可以。谢谢，再见，一路平安！", "py": "Kěyǐ. Xièxie, zàijiàn, yílù píng'ān!", "es": "Claro. Gracias, adiós, ¡buen viaje!" },
+          "end": true,
+          "feedback": "Misión cumplida: destino claro, preguntaste tiempo o precio, dijiste la hora del vuelo y pagaste. 一路平安 yílù píng'ān es «buen viaje»."
+        }
+      }
+    },
+    {
+      "id": "u08-train-ticket",
+      "title": "Comprar un billete de tren",
+      "zh": "买火车票",
+      "level": 1,
+      "setting": "Hugo está en la taquilla de la estación de tren de Shanghái (上海火车站). Quiere ir a Pekín el sábado por la mañana. Tú (la app) eres la taquillera.",
+      "role": "taquillera",
+      "roleZh": "售票员",
+      "voice": "f",
+      "goals": ["Pedir un billete a Pekín y decir cuándo viajas", "Preguntar cuántas horas dura el viaje", "Preguntar el precio", "Pagar"],
+      "vocab": ["火车", "票", "张", "小时", "什么时候", "快", "慢", "北京"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "你好，你要去哪儿？", "py": "Nǐ hǎo, nǐ yào qù nǎr?", "es": "Hola, ¿adónde quiere ir?" },
+          "user": [
+            { "zh": "我要一张去北京的票。", "py": "Wǒ yào yì zhāng qù Běijīng de piào.", "es": "Quiero un billete a Pekín.", "keywords": ["一张", "北京的票"], "next": "n2", "goal": 0 },
+            { "zh": "请问，到北京的火车要几个小时？", "py": "Qǐngwèn, dào Běijīng de huǒchē yào jǐ ge xiǎoshí?", "es": "Disculpe, ¿cuántas horas tarda el tren a Pekín?", "keywords": ["几个小时", "多长时间"], "next": "n3", "goal": 1 }
+          ],
+          "hint": "Pide el billete con 我要一张去……的票, o pregunta primero cuánto dura el viaje (要几个小时)."
+        },
+        "n2": {
+          "npc": { "zh": "好的。什么时候去？", "py": "Hǎo de. Shénme shíhou qù?", "es": "Vale. ¿Cuándo viaja?" },
+          "user": [
+            { "zh": "星期六早上。", "py": "Xīngqīliù zǎoshang.", "es": "El sábado por la mañana.", "keywords": ["星期六"], "next": "n4" },
+            { "zh": "这个周末，早上去。", "py": "Zhège zhōumò, zǎoshang qù.", "es": "Este fin de semana, por la mañana.", "keywords": ["周末"], "next": "n4" }
+          ],
+          "hint": "Di el día y la parte del día: 星期六早上 o 这个周末."
+        },
+        "n3": {
+          "npc": { "zh": "快车五个小时，慢车要十二个小时。", "py": "Kuàichē wǔ ge xiǎoshí, mànchē yào shí'èr ge xiǎoshí.", "es": "El tren rápido, cinco horas; el lento, doce." },
+          "user": [
+            { "zh": "我要快车，星期六早上，一张。", "py": "Wǒ yào kuàichē, xīngqīliù zǎoshang, yì zhāng.", "es": "Quiero el rápido, el sábado por la mañana, un billete.", "keywords": ["快车", "星期六"], "next": "n4", "goal": 0 },
+            { "zh": "太慢了，我坐飞机吧。谢谢，再见。", "py": "Tài màn le, wǒ zuò fēijī ba. Xièxie, zàijiàn.", "es": "Demasiado lento, iré en avión. Gracias, adiós.", "keywords": ["飞机", "太慢"], "next": "n9" }
+          ],
+          "hint": "快车 = tren rápido, 慢车 = tren lento. Elige el rápido y di cuándo viajas, o déjalo y vete en avión."
+        },
+        "n4": {
+          "npc": { "zh": "星期六早上有八点的火车，下午一点到北京。可以吗？", "py": "Xīngqīliù zǎoshang yǒu bā diǎn de huǒchē, xiàwǔ yī diǎn dào Běijīng. Kěyǐ ma?", "es": "El sábado por la mañana hay un tren a las ocho que llega a Pekín a la una de la tarde. ¿Le va bien?" },
+          "user": [
+            { "zh": "可以。多少钱？", "py": "Kěyǐ. Duōshao qián?", "es": "Sí. ¿Cuánto cuesta?", "keywords": ["多少钱"], "next": "n5", "goal": 2 },
+            { "zh": "可以。要几个小时？", "py": "Kěyǐ. Yào jǐ ge xiǎoshí?", "es": "Sí. ¿Cuántas horas son?", "keywords": ["几个小时"], "next": "n6", "goal": 1 }
+          ],
+          "hint": "Acepta con 可以 y pregunta el precio (多少钱) o la duración (要几个小时)."
+        },
+        "n5": {
+          "npc": { "zh": "五百五十块。", "py": "Wǔbǎi wǔshí kuài.", "es": "Quinientos cincuenta yuanes." },
+          "user": [
+            { "zh": "好，我用支付宝。", "py": "Hǎo, wǒ yòng Zhīfùbǎo.", "es": "Vale, pago con Alipay.", "keywords": ["支付宝", "微信"], "next": "n7", "goal": 3 },
+            { "zh": "有点儿贵。有便宜一点儿的吗？", "py": "Yǒudiǎnr guì. Yǒu piányi yìdiǎnr de ma?", "es": "Es un poco caro. ¿Hay alguno más barato?", "keywords": ["便宜", "贵"], "next": "n6b" }
+          ],
+          "hint": "Paga (我用支付宝/微信) o pide algo más barato (有便宜一点儿的吗)."
+        },
+        "n6": {
+          "npc": { "zh": "五个小时。", "py": "Wǔ ge xiǎoshí.", "es": "Cinco horas." },
+          "user": [
+            { "zh": "很快！多少钱？", "py": "Hěn kuài! Duōshao qián?", "es": "¡Qué rápido! ¿Cuánto cuesta?", "keywords": ["多少钱"], "next": "n5", "goal": 2 },
+            { "zh": "好，我买这张。", "py": "Hǎo, wǒ mǎi zhè zhāng.", "es": "Vale, compro este.", "keywords": ["我买", "这张"], "next": "n5" }
+          ],
+          "hint": "Pregunta el precio (多少钱) o confirma que lo compras (我买这张)."
+        },
+        "n6b": {
+          "npc": { "zh": "慢车便宜，三百块，但是要十二个小时。", "py": "Mànchē piányi, sānbǎi kuài, dànshì yào shí'èr ge xiǎoshí.", "es": "El tren lento es más barato, trescientos yuanes, pero tarda doce horas." },
+          "user": [
+            { "zh": "那我要快车，微信付。", "py": "Nà wǒ yào kuàichē, Wēixìn fù.", "es": "Entonces quiero el rápido, pago con WeChat.", "keywords": ["快车", "微信"], "next": "n7", "goal": 3 },
+            { "zh": "我要慢车，用现金。", "py": "Wǒ yào mànchē, yòng xiànjīn.", "es": "Quiero el lento, pago en efectivo.", "keywords": ["慢车", "现金"], "next": "n7", "goal": 3 }
+          ],
+          "hint": "Decide: 快车 (rápido, caro) o 慢车 (lento, barato), y di cómo pagas."
+        },
+        "n7": {
+          "npc": { "zh": "好了，这是你的票。请早一点儿到火车站。", "py": "Hǎo le, zhè shì nǐ de piào. Qǐng zǎo yìdiǎnr dào huǒchēzhàn.", "es": "Listo, aquí tiene su billete. Llegue a la estación con un poco de antelación." },
+          "user": [
+            { "zh": "谢谢，再见！", "py": "Xièxie, zàijiàn!", "es": "¡Gracias, adiós!", "keywords": ["谢谢", "再见"], "next": "n8" },
+            { "zh": "好的，我知道了。", "py": "Hǎo de, wǒ zhīdào le.", "es": "Vale, entendido.", "keywords": ["知道", "好的"], "next": "n8" }
+          ],
+          "hint": "Despídete (谢谢，再见) o confirma que lo has entendido (我知道了)."
+        },
+        "n8": {
+          "npc": { "zh": "不客气，再见！", "py": "Bú kèqi, zàijiàn!", "es": "De nada, ¡adiós!" },
+          "end": true,
+          "feedback": "Ya tienes tu billete: dijiste destino y día, preguntaste duración y precio, y pagaste. Recuerda el clasificador 张 para billetes."
+        },
+        "n9": {
+          "npc": { "zh": "好的，再见。", "py": "Hǎo de, zàijiàn.", "es": "Vale, adiós." },
+          "end": true,
+          "feedback": "Te has ido sin comprar el billete. No pasa nada, pero la próxima vez intenta pedirlo: 我要一张去北京的票，星期六早上。"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,3415 @@
+{
+  "id": "u05",
+  "unitId": "u05",
+  "title": "Comida y restaurante",
+  "items": [
+    {
+      "id": "u05-001",
+      "type": "choose-meaning",
+      "skill": "vocabulary",
+      "level": 1,
+      "zh": "好吃",
+      "py": "hǎochī",
+      "options": [
+        "rico (de beber)",
+        "rico (de comer)",
+        "comer bien",
+        "tener hambre"
+      ],
+      "answer": 1,
+      "explain": "好 (bueno) + 吃 (comer) = «bueno de comer», es decir, rico. Para bebidas se cambia el verbo: 好喝 hǎohē."
+    },
+    {
+      "id": "u05-002",
+      "type": "choose-meaning",
+      "skill": "vocabulary",
+      "level": 1,
+      "zh": "服务员",
+      "py": "fúwùyuán",
+      "options": [
+        "cocinero",
+        "cliente",
+        "camarero/a",
+        "restaurante"
+      ],
+      "answer": 2,
+      "explain": "服务 es «servicio» y 员 «miembro, empleado»: la persona que sirve, el camarero. En China se le llama en voz alta: 服务员！"
+    },
+    {
+      "id": "u05-003",
+      "type": "choose-meaning",
+      "skill": "vocabulary",
+      "level": 2,
+      "zh": "买单",
+      "py": "mǎidān",
+      "options": [
+        "pedir platos",
+        "pedir la cuenta",
+        "llamar al camarero",
+        "comer juntos"
+      ],
+      "answer": 1,
+      "explain": "买单 es lo que dices al terminar: «la cuenta, por favor». 点菜 es pedir los platos al principio."
+    },
+    {
+      "id": "u05-004",
+      "type": "choose-meaning",
+      "skill": "vocabulary",
+      "level": 1,
+      "zh": "一起",
+      "py": "yìqǐ",
+      "options": [
+        "un poco",
+        "juntos",
+        "una vez",
+        "también"
+      ],
+      "answer": 1,
+      "explain": "一起 significa «juntos» y va delante del verbo: 一起吃饭 (comer juntos). No lo confundas con 一点儿 (un poco), que también empieza por 一."
+    },
+    {
+      "id": "u05-005",
+      "type": "choose-meaning",
+      "skill": "vocabulary",
+      "level": 2,
+      "zh": "有点儿",
+      "py": "yǒudiǎnr",
+      "options": [
+        "un poco (de algo que no gusta)",
+        "un poco más",
+        "tener algo",
+        "mucho"
+      ],
+      "answer": 0,
+      "explain": "有点儿 va delante de un adjetivo y expresa una queja suave: 有点儿冷 (está un poco frío). 一点儿, en cambio, va con nombres (一点儿水) o detrás de adjetivos."
+    },
+    {
+      "id": "u05-006",
+      "type": "choose-character",
+      "skill": "characters",
+      "level": 1,
+      "es": "beber",
+      "options": [
+        "吃",
+        "喝",
+        "喜欢",
+        "做"
+      ],
+      "answer": 1,
+      "explain": "喝 hē es «beber». Tanto 吃 (comer) como 喝 llevan el radical 口 (boca) a la izquierda; distínguelos por la parte derecha: 乞 en 吃 y 曷 en 喝."
+    },
+    {
+      "id": "u05-007",
+      "type": "choose-character",
+      "skill": "characters",
+      "level": 1,
+      "es": "fideos",
+      "options": [
+        "米饭",
+        "面条",
+        "鸡蛋",
+        "水果"
+      ],
+      "answer": 1,
+      "explain": "面条 miàntiáo son los fideos (面 = harina, 条 = tira). 米饭 es arroz cocido, 鸡蛋 huevo y 水果 fruta."
+    },
+    {
+      "id": "u05-008",
+      "type": "choose-character",
+      "skill": "characters",
+      "level": 1,
+      "es": "botella (clasificador)",
+      "options": [
+        "杯",
+        "瓶",
+        "碗",
+        "块"
+      ],
+      "answer": 1,
+      "explain": "瓶 píng es «botella»: 一瓶啤酒. 杯 es vaso o taza (一杯茶), 碗 es cuenco (一碗面条) y 块 se usa para el dinero."
+    },
+    {
+      "id": "u05-009",
+      "type": "choose-character",
+      "skill": "characters",
+      "level": 1,
+      "es": "dinero",
+      "options": [
+        "钱",
+        "块",
+        "菜",
+        "肉"
+      ],
+      "answer": 0,
+      "explain": "钱 qián es «dinero» y lleva el radical 钅 (metal). 块 es la unidad coloquial (yuan), que suele ir delante de 钱: 十块钱."
+    },
+    {
+      "id": "u05-010",
+      "type": "listen-choose",
+      "skill": "listening",
+      "level": 1,
+      "zh": "我想喝茶。",
+      "py": "Wǒ xiǎng hē chá.",
+      "options": [
+        "我想喝水。",
+        "我想喝茶。",
+        "我想吃菜。",
+        "我不想喝茶。"
+      ],
+      "answer": 1,
+      "voice": "f",
+      "explain": "Se oye hē (beber) y chá (té, 2.º tono), no shuǐ (agua, 3.º tono). Y no hay ningún bù delante de xiǎng."
+    },
+    {
+      "id": "u05-011",
+      "type": "listen-choose",
+      "skill": "listening",
+      "level": 1,
+      "zh": "我要一碗米饭。",
+      "py": "Wǒ yào yì wǎn mǐfàn.",
+      "options": [
+        "我要一碗面条。",
+        "我要一杯米饭。",
+        "我要一碗米饭。",
+        "我要两碗米饭。"
+      ],
+      "answer": 2,
+      "voice": "m",
+      "explain": "yì wǎn (un cuenco) y mǐfàn (arroz). wǎn (3.º tono) frente a bēi (1.º tono), y yì (uno) frente a liǎng (dos)."
+    },
+    {
+      "id": "u05-012",
+      "type": "listen-choose",
+      "skill": "listening",
+      "level": 2,
+      "zh": "请给我两瓶啤酒。",
+      "py": "Qǐng gěi wǒ liǎng píng píjiǔ.",
+      "options": [
+        "请给我一瓶啤酒。",
+        "请给我两杯啤酒。",
+        "请给我两瓶啤酒。",
+        "请给我两瓶水。"
+      ],
+      "answer": 2,
+      "voice": "f",
+      "explain": "liǎng píng (dos botellas) + píjiǔ (cerveza). píng (botella, 2.º tono) y bēi (vaso, 1.º tono) se distinguen por la inicial y el tono."
+    },
+    {
+      "id": "u05-013",
+      "type": "listen-choose",
+      "skill": "listening",
+      "level": 2,
+      "zh": "这个菜太好吃了！",
+      "py": "Zhège cài tài hǎochī le!",
+      "options": [
+        "这个菜不好吃。",
+        "这个菜太好吃了！",
+        "这个茶太好喝了！",
+        "这个菜有点儿热。"
+      ],
+      "answer": 1,
+      "voice": "m",
+      "new": [
+        "太"
+      ],
+      "explain": "tài … le enmarca el adjetivo: «buenísimo». cài (plato, 4.º tono) no es chá (té, 2.º tono), y hǎochī (rico de comer) termina en -chī, no en -hē."
+    },
+    {
+      "id": "u05-014",
+      "type": "listen-choose",
+      "skill": "listening",
+      "level": 2,
+      "zh": "中国菜有点儿热。",
+      "py": "Zhōngguó cài yǒudiǎnr rè.",
+      "options": [
+        "中国菜有点儿冷。",
+        "中国菜很好吃。",
+        "中国菜有点儿热。",
+        "中国菜一点儿也不热。"
+      ],
+      "answer": 2,
+      "voice": "f",
+      "explain": "yǒudiǎnr («un poco», con matiz de queja) seguido de rè (caliente, 4.º tono), no lěng (frío, 3.º tono). La r- inicial es la clave."
+    },
+    {
+      "id": "u05-015",
+      "type": "listen-choose",
+      "skill": "listening",
+      "level": 2,
+      "zh": "我不喜欢喝咖啡。",
+      "py": "Wǒ bù xǐhuan hē kāfēi.",
+      "options": [
+        "我很喜欢喝咖啡。",
+        "我不喜欢喝咖啡。",
+        "我不喜欢喝牛奶。",
+        "我不想喝咖啡。"
+      ],
+      "answer": 1,
+      "voice": "m",
+      "explain": "Hay un bù delante de xǐhuan (gustar) y al final kāfēi (café, dos primeros tonos). niúnǎi (leche) sonaría 2-3, y xiǎng (querer) es otra palabra."
+    },
+    {
+      "id": "u05-016",
+      "type": "listen-choose",
+      "skill": "listening",
+      "level": 1,
+      "zh": "面条多少钱？",
+      "py": "Miàntiáo duōshao qián?",
+      "options": [
+        "米饭多少钱？",
+        "面条多少钱？",
+        "面条好吃吗？",
+        "面条二十块。"
+      ],
+      "answer": 1,
+      "voice": "f",
+      "explain": "miàntiáo (fideos) + duōshao qián (¿cuánto cuesta?). Es una pregunta por el precio, no por el sabor (hǎochī ma) ni una respuesta con kuài."
+    },
+    {
+      "id": "u05-017",
+      "type": "listen-choose",
+      "skill": "listening",
+      "level": 1,
+      "zh": "一杯牛奶",
+      "py": "yì bēi niúnǎi",
+      "options": [
+        "一杯牛奶",
+        "一瓶牛奶",
+        "一杯咖啡",
+        "一碗牛奶"
+      ],
+      "answer": 0,
+      "voice": "m",
+      "explain": "bēi (vaso) y niúnǎi (leche, 2.º + 3.º tono). Con kāfēi oirías dos primeros tonos; con píng, una inicial p- aspirada."
+    },
+    {
+      "id": "u05-018",
+      "type": "listen-choose",
+      "skill": "listening",
+      "level": 2,
+      "zh": "他吃了三个鸡蛋。",
+      "py": "Tā chī le sān ge jīdàn.",
+      "options": [
+        "他吃了三个苹果。",
+        "他吃了四个鸡蛋。",
+        "他吃了三个鸡蛋。",
+        "他要三个鸡蛋。"
+      ],
+      "answer": 2,
+      "voice": "f",
+      "explain": "chī le (ha comido, con 了 de acción completada), sān ge (tres, no sì) y jīdàn (huevo, 1.º + 4.º tono). píngguǒ sonaría 2-3."
+    },
+    {
+      "id": "u05-019",
+      "type": "listen-choose",
+      "skill": "listening",
+      "level": 1,
+      "zh": "你要什么？",
+      "py": "Nǐ yào shénme?",
+      "options": [
+        "你要什么？",
+        "你想喝什么？",
+        "你要水吗？",
+        "你是谁？"
+      ],
+      "answer": 0,
+      "voice": "m",
+      "explain": "yào (querer, 4.º tono) + shénme (qué). No se oye hē (beber) ni la partícula ma al final: es la pregunta abierta «¿Qué quieres?»."
+    },
+    {
+      "id": "u05-020",
+      "type": "listen-choose",
+      "skill": "listening",
+      "level": 2,
+      "zh": "我们一起吃饭吧！",
+      "py": "Wǒmen yìqǐ chī fàn ba!",
+      "options": [
+        "我们一起吃饭吗？",
+        "我们一起喝茶吧！",
+        "我们一起吃饭吧！",
+        "我们不吃饭。"
+      ],
+      "answer": 2,
+      "voice": "f",
+      "explain": "yìqǐ (juntos) + chī fàn (comer) + ba (propuesta). La partícula final ba (sugerencia) y ma (pregunta) suenan parecidas: ba empieza con b- sin aspiración."
+    },
+    {
+      "id": "u05-021",
+      "type": "listen-choose",
+      "skill": "listening",
+      "level": 2,
+      "zh": "我妈妈做的菜很好吃。",
+      "py": "Wǒ māma zuò de cài hěn hǎochī.",
+      "options": [
+        "我妈妈做的菜很好吃。",
+        "我妈妈做的菜不好吃。",
+        "我妈妈不做菜。",
+        "我妈妈喜欢吃菜。"
+      ],
+      "answer": 0,
+      "voice": "m",
+      "explain": "zuò de cài (los platos que hace) + hěn hǎochī. Si oyeras bù hǎochī sería negativo; aquí hay hěn, afirmativo."
+    },
+    {
+      "id": "u05-022",
+      "type": "listen-answer",
+      "skill": "listening",
+      "level": 1,
+      "question": "你想喝什么？",
+      "questionPy": "Nǐ xiǎng hē shénme?",
+      "questionEs": "¿Qué quieres beber?",
+      "options": [
+        "我想喝一杯茶。",
+        "我想吃面条。",
+        "我不喝。"
+      ],
+      "answer": 0,
+      "answerEs": "Quiero tomar una taza de té.",
+      "grammarIds": [
+        "modal-verbs",
+        "question-words"
+      ],
+      "explain": "La pregunta lleva 喝 (beber), así que la respuesta sustituye 什么 por una bebida: 一杯茶. 面条 se come, no se bebe."
+    },
+    {
+      "id": "u05-023",
+      "type": "listen-answer",
+      "skill": "listening",
+      "level": 1,
+      "question": "你喜欢中国菜吗？",
+      "questionPy": "Nǐ xǐhuan Zhōngguó cài ma?",
+      "questionEs": "¿Te gusta la comida china?",
+      "options": [
+        "我是中国人。",
+        "喜欢，很好吃。",
+        "我要米饭。"
+      ],
+      "answer": 1,
+      "answerEs": "Me gusta, está muy rica.",
+      "grammarIds": [
+        "ma",
+        "hen-adj"
+      ],
+      "explain": "A una pregunta con 吗 se contesta repitiendo el verbo: 喜欢 o 不喜欢. Solo la segunda opción lo hace y añade el motivo (很好吃)."
+    },
+    {
+      "id": "u05-024",
+      "type": "listen-answer",
+      "skill": "listening",
+      "level": 2,
+      "question": "你要几瓶啤酒？",
+      "questionPy": "Nǐ yào jǐ píng píjiǔ?",
+      "questionEs": "¿Cuántas cervezas quieres?",
+      "options": [
+        "我要两瓶。",
+        "我要一杯茶。",
+        "啤酒十块。"
+      ],
+      "answer": 0,
+      "answerEs": "Quiero dos botellas.",
+      "grammarIds": [
+        "measure-words",
+        "numbers"
+      ],
+      "explain": "几瓶 pide un número con el clasificador 瓶: 两瓶 (con 两, no 二). Puede omitirse 啤酒 porque ya se sabe de qué se habla."
+    },
+    {
+      "id": "u05-025",
+      "type": "listen-answer",
+      "skill": "listening",
+      "level": 1,
+      "question": "多少钱？",
+      "questionPy": "Duōshao qián?",
+      "questionEs": "¿Cuánto es?",
+      "options": [
+        "三个苹果。",
+        "二十五块。",
+        "我没有钱。"
+      ],
+      "answer": 1,
+      "answerEs": "Veinticinco yuanes.",
+      "grammarIds": [
+        "price-age",
+        "question-words"
+      ],
+      "explain": "多少钱 pregunta el precio, así que la respuesta es un número + 块 (yuanes). 我没有钱 habla de tu dinero, no del precio."
+    },
+    {
+      "id": "u05-026",
+      "type": "listen-answer",
+      "skill": "listening",
+      "level": 2,
+      "question": "你们点菜吗？",
+      "questionPy": "Nǐmen diǎn cài ma?",
+      "questionEs": "¿Van a pedir?",
+      "options": [
+        "点。我要一碗面条和一杯水。",
+        "我们是三个人。",
+        "我不喜欢菜。"
+      ],
+      "answer": 0,
+      "answerEs": "Sí. Quiero un bol de fideos y un vaso de agua.",
+      "grammarIds": [
+        "ma",
+        "measure-words",
+        "he"
+      ],
+      "explain": "点菜 es «pedir platos»; se responde repitiendo 点 y diciendo qué quieres con 我要 + cantidad + clasificador + plato."
+    },
+    {
+      "id": "u05-027",
+      "type": "listen-answer",
+      "skill": "listening",
+      "level": 2,
+      "question": "这个菜好吃吗？",
+      "questionPy": "Zhège cài hǎochī ma?",
+      "questionEs": "¿Está rico este plato?",
+      "options": [
+        "这个菜二十块。",
+        "好吃，我很喜欢。",
+        "我要这个菜。"
+      ],
+      "answer": 1,
+      "answerEs": "Está rico, me gusta mucho.",
+      "grammarIds": [
+        "ma",
+        "hen-adj"
+      ],
+      "explain": "好吃吗 pregunta por el sabor; se responde con el adjetivo: 好吃 o 不好吃. El precio (二十块) contesta a 多少钱."
+    },
+    {
+      "id": "u05-028",
+      "type": "listen-answer",
+      "skill": "listening",
+      "level": 1,
+      "question": "你要米饭吗？",
+      "questionPy": "Nǐ yào mǐfàn ma?",
+      "questionEs": "¿Quieres arroz?",
+      "options": [
+        "我想喝咖啡。",
+        "不要，我要面条。",
+        "米饭五块。"
+      ],
+      "answer": 1,
+      "answerEs": "No, quiero fideos.",
+      "grammarIds": [
+        "ma",
+        "modal-verbs"
+      ],
+      "explain": "要…吗 se contesta con 要 o 不要. Aquí se rechaza el arroz (不要) y se pide otra cosa con el mismo verbo: 我要面条."
+    },
+    {
+      "id": "u05-029",
+      "type": "listen-answer",
+      "skill": "listening",
+      "level": 1,
+      "question": "你喝咖啡吗？",
+      "questionPy": "Nǐ hē kāfēi ma?",
+      "questionEs": "¿Bebes café?",
+      "options": [
+        "不喝，我喝茶。",
+        "我吃鸡蛋。",
+        "咖啡很好吃。"
+      ],
+      "answer": 0,
+      "answerEs": "No, bebo té.",
+      "grammarIds": [
+        "ma",
+        "bu-mei"
+      ],
+      "explain": "Se niega repitiendo el verbo: 不喝. 咖啡很好吃 es un error doble: no responde y usa 好吃 (de comer) para una bebida, que sería 好喝."
+    },
+    {
+      "id": "u05-030",
+      "type": "listen-answer",
+      "skill": "listening",
+      "level": 2,
+      "question": "今天谁给钱？",
+      "questionPy": "Jīntiān shéi gěi qián?",
+      "questionEs": "¿Quién paga hoy?",
+      "options": [
+        "今天我给。",
+        "今天二十块。",
+        "我们一起吃饭。"
+      ],
+      "answer": 0,
+      "answerEs": "Hoy pago yo.",
+      "grammarIds": [
+        "gei",
+        "question-words"
+      ],
+      "explain": "谁 pregunta por la persona: la respuesta pone 我 en su lugar y repite el verbo 给. Decir el precio o que coméis juntos no dice quién paga."
+    },
+    {
+      "id": "u05-031",
+      "type": "listen-answer",
+      "skill": "listening",
+      "level": 2,
+      "question": "你想吃什么？",
+      "questionPy": "Nǐ xiǎng chī shénme?",
+      "questionEs": "¿Qué quieres comer?",
+      "options": [
+        "我想喝一杯咖啡。",
+        "我想吃肉和米饭。",
+        "我不想吃，谢谢。",
+        "我喜欢喝茶。"
+      ],
+      "answer": 1,
+      "answerEs": "Quiero comer carne y arroz.",
+      "grammarIds": [
+        "modal-verbs",
+        "question-words",
+        "he"
+      ],
+      "explain": "吃什么 se responde con comida (肉和米饭), no con bebida. 我不想吃 sería una respuesta posible, pero no contesta al «qué» que se pregunta."
+    },
+    {
+      "id": "u05-032",
+      "type": "dictation-pinyin",
+      "skill": "listening",
+      "level": 1,
+      "zh": "喜欢",
+      "py": "xǐhuan",
+      "es": "gustar",
+      "voice": "f",
+      "explain": "xǐ (3.º tono) + huan (neutro, sin tilde). La h- china es más áspera que la española, como una «j» suave."
+    },
+    {
+      "id": "u05-033",
+      "type": "dictation-pinyin",
+      "skill": "listening",
+      "level": 1,
+      "zh": "咖啡",
+      "py": "kāfēi",
+      "es": "café",
+      "voice": "m",
+      "explain": "Dos primeros tonos: kā fēi, altos y planos. Es un préstamo del sonido «café», con las dos sílabas escritas con el radical 口."
+    },
+    {
+      "id": "u05-034",
+      "type": "dictation-pinyin",
+      "skill": "listening",
+      "level": 1,
+      "zh": "牛奶",
+      "py": "niúnǎi",
+      "es": "leche",
+      "voice": "f",
+      "explain": "niú (2.º tono, la final -iu se escribe sin la o) + nǎi (3.º tono). 牛 es «vaca» y 奶 «leche»: leche de vaca."
+    },
+    {
+      "id": "u05-035",
+      "type": "dictation-pinyin",
+      "skill": "listening",
+      "level": 2,
+      "zh": "我要一杯茶。",
+      "py": "Wǒ yào yì bēi chá.",
+      "es": "Quiero una taza de té.",
+      "voice": "m",
+      "explain": "一 se pronuncia yì (4.º tono) delante de bēi (1.º tono). yào (4.º) cae, bēi se mantiene alto y chá sube (2.º)."
+    },
+    {
+      "id": "u05-036",
+      "type": "dictation-pinyin",
+      "skill": "listening",
+      "level": 2,
+      "zh": "中国菜很好吃。",
+      "py": "Zhōngguó cài hěn hǎochī.",
+      "es": "La comida china está muy rica.",
+      "voice": "f",
+      "explain": "cài (4.º tono) con c- que suena «ts» aspirada. hěn hǎo son dos terceros tonos (se oye hén hǎo) y chī termina con la «i» zumbante."
+    },
+    {
+      "id": "u05-037",
+      "type": "dictation-pinyin",
+      "skill": "listening",
+      "level": 2,
+      "zh": "服务员，买单！",
+      "py": "Fúwùyuán, mǎidān!",
+      "es": "¡Camarero, la cuenta!",
+      "voice": "m",
+      "explain": "fú (2.º) + wù (4.º) + yuán (2.º): la ü de yuán se escribe con u tras y. mǎidān: 3.º + 1.º tono."
+    },
+    {
+      "id": "u05-038",
+      "type": "dictation-pinyin",
+      "skill": "listening",
+      "level": 2,
+      "zh": "我不想喝啤酒。",
+      "py": "Wǒ bù xiǎng hē píjiǔ.",
+      "es": "No quiero beber cerveza.",
+      "voice": "f",
+      "explain": "不 conserva su 4.º tono (bù) porque 想 es 3.º tono. píjiǔ: 2.º + 3.º; la j- de jiǔ no es la «j» española sino una «ch» suave sin aspiración."
+    },
+    {
+      "id": "u05-039",
+      "type": "dictation-pinyin",
+      "skill": "listening",
+      "level": 2,
+      "zh": "请给我一点儿水。",
+      "py": "Qǐng gěi wǒ yìdiǎnr shuǐ.",
+      "es": "Dame un poco de agua, por favor.",
+      "voice": "m",
+      "explain": "qǐng gěi wǒ son tres terceros tonos seguidos. 一点儿 se escribe yìdiǎnr: la r final es el sufijo 儿, que se pronuncia curvando la lengua."
+    },
+    {
+      "id": "u05-040",
+      "type": "dictation-hanzi",
+      "skill": "listening",
+      "level": 1,
+      "zh": "水果",
+      "py": "shuǐguǒ",
+      "es": "fruta",
+      "voice": "f",
+      "explain": "水 (agua) + 果 (fruto): «fruto con agua», la fruta. 果 es el mismo carácter de 苹果 (manzana)."
+    },
+    {
+      "id": "u05-041",
+      "type": "dictation-hanzi",
+      "skill": "listening",
+      "level": 1,
+      "zh": "吃饭",
+      "py": "chī fàn",
+      "es": "comer",
+      "voice": "m",
+      "explain": "吃 lleva 口 (boca) y 饭 lleva 饣 (comida), el radical de todo lo comestible. Aunque 饭 sea «arroz», 吃饭 significa comer en general."
+    },
+    {
+      "id": "u05-042",
+      "type": "dictation-hanzi",
+      "skill": "listening",
+      "level": 1,
+      "zh": "我喝水。",
+      "py": "Wǒ hē shuǐ.",
+      "es": "Bebo agua.",
+      "voice": "f",
+      "explain": "喝 con el radical 口 (la boca bebe) y 水, uno de los pictogramas básicos: una corriente de agua. Tres caracteres, sin partículas."
+    },
+    {
+      "id": "u05-043",
+      "type": "dictation-hanzi",
+      "skill": "listening",
+      "level": 2,
+      "zh": "我要两碗面条。",
+      "py": "Wǒ yào liǎng wǎn miàntiáo.",
+      "es": "Quiero dos boles de fideos.",
+      "voice": "m",
+      "explain": "«Dos» delante de clasificador se escribe 两, no 二. 碗 lleva el radical 石 (piedra), porque los cuencos antiguos eran de cerámica."
+    },
+    {
+      "id": "u05-044",
+      "type": "dictation-hanzi",
+      "skill": "listening",
+      "level": 2,
+      "zh": "这个菜有点儿冷。",
+      "py": "Zhège cài yǒudiǎnr lěng.",
+      "es": "Este plato está un poco frío.",
+      "voice": "f",
+      "explain": "有点儿 va delante del adjetivo 冷, que lleva el radical 冫 (hielo), lo contrario de 热. 这个菜: demostrativo + clasificador + nombre."
+    },
+    {
+      "id": "u05-045",
+      "type": "dictation-hanzi",
+      "skill": "listening",
+      "level": 2,
+      "zh": "苹果多少钱？",
+      "py": "Píngguǒ duōshao qián?",
+      "es": "¿Cuánto cuestan las manzanas?",
+      "voice": "m",
+      "explain": "苹 lleva el radical 艹 (hierba, planta). 多少钱 es la pregunta de precio: la cosa primero y después «cuánto dinero»."
+    },
+    {
+      "id": "u05-046",
+      "type": "dictation-hanzi",
+      "skill": "listening",
+      "level": 2,
+      "zh": "我们一起去饭店。",
+      "py": "Wǒmen yìqǐ qù fàndiàn.",
+      "es": "Vamos juntos al restaurante.",
+      "voice": "f",
+      "explain": "一起 va delante del verbo 去. 饭店 = 饭 (comida) + 店 (tienda, establecimiento): un sitio donde se come."
+    },
+    {
+      "id": "u05-047",
+      "type": "listen-tf",
+      "skill": "listening",
+      "level": 1,
+      "zh": "王明：安娜，你喝咖啡吗？\n安娜：不喝，我喝茶。我也很喜欢喝牛奶。",
+      "py": "Wáng Míng: Ānnà, nǐ hē kāfēi ma?\nĀnnà: Bù hē, wǒ hē chá. Wǒ yě hěn xǐhuan hē niúnǎi.",
+      "voice": "f",
+      "statements": [
+        {
+          "s": "Ana bebe café.",
+          "truth": false,
+          "why": "Responde 不喝: no bebe café."
+        },
+        {
+          "s": "A Ana le gusta la leche.",
+          "truth": true,
+          "why": "我也很喜欢喝牛奶."
+        },
+        {
+          "s": "Ana bebe té.",
+          "truth": true,
+          "why": "我喝茶."
+        }
+      ],
+      "grammarIds": [
+        "ma",
+        "bu-mei",
+        "ye-dou"
+      ],
+      "explain": "Primero una negación (不喝) y luego dos afirmaciones unidas por 也 («también»). Presta atención a qué bebida va con cada verbo."
+    },
+    {
+      "id": "u05-048",
+      "type": "listen-tf",
+      "skill": "listening",
+      "level": 2,
+      "zh": "雨果：服务员，我要一碗米饭和一杯水。\n服务员：好的。您要肉吗？\n雨果：不要，谢谢。我想吃一点儿菜。",
+      "py": "Yǔguǒ: Fúwùyuán, wǒ yào yì wǎn mǐfàn hé yì bēi shuǐ.\nFúwùyuán: Hǎo de. Nín yào ròu ma?\nYǔguǒ: Bú yào, xièxie. Wǒ xiǎng chī yìdiǎnr cài.",
+      "voice": "m",
+      "new": [
+        "好的"
+      ],
+      "statements": [
+        {
+          "s": "Hugo pide fideos.",
+          "truth": false,
+          "why": "Pide 一碗米饭 (arroz), no 面条."
+        },
+        {
+          "s": "Hugo no quiere carne.",
+          "truth": true,
+          "why": "不要，谢谢: rechaza la carne."
+        },
+        {
+          "s": "Hugo quiere un poco de verdura.",
+          "truth": true,
+          "why": "我想吃一点儿菜."
+        }
+      ],
+      "grammarIds": [
+        "measure-words",
+        "modal-verbs",
+        "yidianr-youdianr"
+      ],
+      "explain": "Cada cosa que se pide lleva su clasificador: 碗 para el arroz, 杯 para el agua. 一点儿菜 es «un poco de verdura»: 一点儿 delante de un nombre."
+    },
+    {
+      "id": "u05-049",
+      "type": "listen-tf",
+      "skill": "listening",
+      "level": 2,
+      "zh": "安娜：这个茶有点儿冷。\n服务员：对不起！我给您一杯热的。\n安娜：谢谢。这个菜很好吃，我们还要一个。",
+      "py": "Ānnà: Zhège chá yǒudiǎnr lěng.\nFúwùyuán: Duìbuqǐ! Wǒ gěi nín yì bēi rè de.\nĀnnà: Xièxie. Zhège cài hěn hǎochī, wǒmen hái yào yí ge.",
+      "voice": "f",
+      "new": [
+        "还"
+      ],
+      "statements": [
+        {
+          "s": "El té está demasiado caliente.",
+          "truth": false,
+          "why": "有点儿冷: está un poco frío."
+        },
+        {
+          "s": "El camarero le trae un té caliente.",
+          "truth": true,
+          "why": "我给您一杯热的."
+        },
+        {
+          "s": "Ana pide otro plato igual.",
+          "truth": true,
+          "why": "我们还要一个: quieren uno más."
+        }
+      ],
+      "grammarIds": [
+        "yidianr-youdianr",
+        "gei",
+        "de"
+      ],
+      "explain": "有点儿 + adjetivo expresa la queja; 热的 («uno caliente») sustituye al nombre gracias a 的. 还要 significa «querer además / otro más»."
+    },
+    {
+      "id": "u05-050",
+      "type": "listen-tf",
+      "skill": "listening",
+      "level": 2,
+      "zh": "王明：服务员，买单！\n服务员：面条十五块，啤酒十块，一共二十五块。\n雨果：我给钱吧。\n王明：不，今天我给。",
+      "py": "Wáng Míng: Fúwùyuán, mǎidān!\nFúwùyuán: Miàntiáo shíwǔ kuài, píjiǔ shí kuài, yígòng èrshíwǔ kuài.\nYǔguǒ: Wǒ gěi qián ba.\nWáng Míng: Bù, jīntiān wǒ gěi.",
+      "voice": "m",
+      "new": [
+        "一共"
+      ],
+      "statements": [
+        {
+          "s": "La cuenta son 25 yuanes.",
+          "truth": true,
+          "why": "一共二十五块: 15 + 10 = 25."
+        },
+        {
+          "s": "La cerveza cuesta quince yuanes.",
+          "truth": false,
+          "why": "面条十五块，啤酒十块: la cerveza son diez."
+        },
+        {
+          "s": "Al final paga Hugo.",
+          "truth": false,
+          "why": "Wang Ming insiste: 今天我给."
+        }
+      ],
+      "grammarIds": [
+        "price-age",
+        "gei",
+        "ba"
+      ],
+      "explain": "Los precios se dicen nombre + número + 块. 一共 es «en total». Fíjate en la insistencia por pagar: 我给钱吧 → 不，今天我给."
+    },
+    {
+      "id": "u05-051",
+      "type": "listen-tf",
+      "skill": "listening",
+      "level": 2,
+      "zh": "我叫王明。我早上喝一杯牛奶，吃两个鸡蛋。中午我和同学在学校吃饭。晚上我妈妈做菜，她做的菜很好吃。",
+      "py": "Wǒ jiào Wáng Míng. Wǒ zǎoshang hē yì bēi niúnǎi, chī liǎng ge jīdàn. Zhōngwǔ wǒ hé tóngxué zài xuéxiào chī fàn. Wǎnshang wǒ māma zuò cài, tā zuò de cài hěn hǎochī.",
+      "voice": "f",
+      "statements": [
+        {
+          "s": "Wang Ming desayuna café.",
+          "truth": false,
+          "why": "早上喝一杯牛奶: bebe leche."
+        },
+        {
+          "s": "Come dos huevos por la mañana.",
+          "truth": true,
+          "why": "吃两个鸡蛋."
+        },
+        {
+          "s": "Por la noche cocina su madre.",
+          "truth": true,
+          "why": "晚上我妈妈做菜."
+        }
+      ],
+      "grammarIds": [
+        "measure-words",
+        "zai",
+        "de"
+      ],
+      "explain": "Cantidades con clasificador: 一杯牛奶, 两个鸡蛋. 做菜 es «cocinar» y 她做的菜 «los platos que ella hace» (的 une la descripción con el nombre)."
+    },
+    {
+      "id": "u05-052",
+      "type": "listen-tf",
+      "skill": "listening",
+      "level": 3,
+      "zh": "雨果：王明，你想喝什么？咖啡还是茶？\n王明：我不想喝咖啡，咖啡有点儿苦。我要一杯茶，多一点儿水。\n雨果：好。我要一瓶啤酒。",
+      "py": "Yǔguǒ: Wáng Míng, nǐ xiǎng hē shénme? Kāfēi háishi chá?\nWáng Míng: Wǒ bù xiǎng hē kāfēi, kāfēi yǒudiǎnr kǔ. Wǒ yào yì bēi chá, duō yìdiǎnr shuǐ.\nYǔguǒ: Hǎo. Wǒ yào yì píng píjiǔ.",
+      "voice": "m",
+      "new": [
+        "还是",
+        "苦"
+      ],
+      "statements": [
+        {
+          "s": "Wang Ming quiere café.",
+          "truth": false,
+          "why": "我不想喝咖啡: no le apetece café."
+        },
+        {
+          "s": "Wang Ming quiere el té con un poco más de agua.",
+          "truth": true,
+          "why": "多一点儿水."
+        },
+        {
+          "s": "Hugo pide una botella de cerveza.",
+          "truth": true,
+          "why": "我要一瓶啤酒."
+        }
+      ],
+      "grammarIds": [
+        "modal-verbs",
+        "yidianr-youdianr",
+        "measure-words"
+      ],
+      "explain": "还是 ofrece dos opciones (¿café o té?). Compara 有点儿苦 (queja: un poco amargo) con 多一点儿 (petición: un poco más)."
+    },
+    {
+      "id": "u05-053",
+      "type": "speak-repeat",
+      "skill": "speaking",
+      "level": 1,
+      "zh": "你喜欢中国菜吗？",
+      "py": "Nǐ xǐhuan Zhōngguó cài ma?",
+      "es": "¿Te gusta la comida china?",
+      "explain": "nǐ xǐ son dos terceros tonos: el primero sube (ní xǐ) y huan queda neutro. Termina con cài (4.º tono) y la partícula ma sin subir la entonación."
+    },
+    {
+      "id": "u05-054",
+      "type": "speak-repeat",
+      "skill": "speaking",
+      "level": 1,
+      "zh": "我想喝一杯咖啡。",
+      "py": "Wǒ xiǎng hē yì bēi kāfēi.",
+      "es": "Quiero tomar un café.",
+      "explain": "wǒ xiǎng: otro par 3+3 (wó xiǎng). Después todo es alto y plano: hē, bēi, kā, fēi son 1.º tono; solo yì cae (4.º tono delante de bēi)."
+    },
+    {
+      "id": "u05-055",
+      "type": "speak-repeat",
+      "skill": "speaking",
+      "level": 1,
+      "zh": "服务员，点菜！",
+      "py": "Fúwùyuán, diǎn cài!",
+      "es": "¡Camarero, queremos pedir!",
+      "explain": "Hay que decirlo con voz clara y sin vergüenza: es lo normal en China. fú sube, wù cae, yuán vuelve a subir; luego diǎn (3.º) y cài (4.º)."
+    },
+    {
+      "id": "u05-056",
+      "type": "speak-repeat",
+      "skill": "speaking",
+      "level": 2,
+      "zh": "请给我一碗面条。",
+      "py": "Qǐng gěi wǒ yì wǎn miàntiáo.",
+      "es": "Un bol de fideos, por favor.",
+      "explain": "qǐng gěi wǒ son tres terceros tonos: en el habla se oye qíng géi wǒ. miàntiáo: 4.º + 2.º tono, con la final -iao bien abierta."
+    },
+    {
+      "id": "u05-057",
+      "type": "speak-repeat",
+      "skill": "speaking",
+      "level": 2,
+      "zh": "我要两瓶啤酒。",
+      "py": "Wǒ yào liǎng píng píjiǔ.",
+      "es": "Quiero dos cervezas.",
+      "explain": "Dos sílabas con p- aspirada seguidas: píng, pí. Deja salir aire en cada p-. liǎng (3.º) + píng (2.º) + pí (2.º) + jiǔ (3.º)."
+    },
+    {
+      "id": "u05-058",
+      "type": "speak-repeat",
+      "skill": "speaking",
+      "level": 1,
+      "zh": "中国菜很好吃。",
+      "py": "Zhōngguó cài hěn hǎochī.",
+      "es": "La comida china está muy rica.",
+      "explain": "cài: la c- se pronuncia «ts» con aire. hěn hǎo se dice hén hǎo (3+3) y chī cierra con la «i» zumbante, sin sonar «chi» a la española."
+    },
+    {
+      "id": "u05-059",
+      "type": "speak-repeat",
+      "skill": "speaking",
+      "level": 2,
+      "zh": "这个菜有点儿冷。",
+      "py": "Zhège cài yǒudiǎnr lěng.",
+      "es": "Este plato está un poco frío.",
+      "explain": "yǒudiǎnr: 3+3 (yóu diǎnr) con la r final curvando la lengua, sin vocal extra. lěng es 3.º tono y termina en -ng nasal."
+    },
+    {
+      "id": "u05-060",
+      "type": "speak-repeat",
+      "skill": "speaking",
+      "level": 2,
+      "zh": "请再给我一点儿水。",
+      "py": "Qǐng zài gěi wǒ yìdiǎnr shuǐ.",
+      "es": "Dame un poco más de agua, por favor.",
+      "new": [
+        "再"
+      ],
+      "explain": "再 (zài, 4.º tono) delante de 给 significa «más, otra vez». yìdiǎnr: 一 pasa a yì porque 点 es 3.º tono. shuǐ: 3.º tono final, baja y sube."
+    },
+    {
+      "id": "u05-061",
+      "type": "speak-repeat",
+      "skill": "speaking",
+      "level": 1,
+      "zh": "服务员，买单！多少钱？",
+      "py": "Fúwùyuán, mǎidān! Duōshao qián?",
+      "es": "¡Camarero, la cuenta! ¿Cuánto es?",
+      "explain": "mǎidān: 3.º + 1.º tono. duōshao lleva la segunda sílaba neutra (duō-shao) y qián sube (2.º tono). No subas la entonación al final de la pregunta."
+    },
+    {
+      "id": "u05-062",
+      "type": "speak-repeat",
+      "skill": "speaking",
+      "level": 2,
+      "zh": "面条二十块，啤酒十块。",
+      "py": "Miàntiáo èrshí kuài, píjiǔ shí kuài.",
+      "es": "Los fideos, veinte yuanes; la cerveza, diez.",
+      "explain": "Dos precios con la misma estructura: cosa + número + 块. èrshí (4.º + 2.º) y shí (2.º) se distinguen por el èr inicial; kuài es 4.º tono."
+    },
+    {
+      "id": "u05-063",
+      "type": "speak-repeat",
+      "skill": "speaking",
+      "level": 2,
+      "zh": "我们一起吃饭吧！",
+      "py": "Wǒmen yìqǐ chī fàn ba!",
+      "es": "¡Vamos a comer juntos!",
+      "explain": "yìqǐ: 一 cae (4.º tono) porque 起 es 3.º tono. ba final es neutra y breve, suena como una invitación amable, no como una pregunta."
+    },
+    {
+      "id": "u05-064",
+      "type": "speak-repeat",
+      "skill": "speaking",
+      "level": 2,
+      "zh": "我不想喝茶，我想喝水。",
+      "py": "Wǒ bù xiǎng hē chá, wǒ xiǎng hē shuǐ.",
+      "es": "No quiero té, quiero agua.",
+      "explain": "bù conserva el 4.º tono delante de xiǎng (3.º). Contrasta los finales: chá sube (2.º tono) y shuǐ baja y sube (3.º tono)."
+    },
+    {
+      "id": "u05-065",
+      "type": "speak-read",
+      "skill": "speaking",
+      "level": 1,
+      "text": "我喜欢吃中国菜。我喜欢喝茶，不喜欢喝咖啡。中国菜很好吃，茶很好喝。",
+      "py": "Wǒ xǐhuan chī Zhōngguó cài. Wǒ xǐhuan hē chá, bù xǐhuan hē kāfēi. Zhōngguó cài hěn hǎochī, chá hěn hǎohē.",
+      "es": "Me gusta comer comida china. Me gusta beber té, no me gusta beber café. La comida china está muy rica y el té está muy bueno.",
+      "explain": "喜欢 + verbo + objeto (喜欢吃, 喜欢喝). Al final, 好吃 para la comida y 好喝 para la bebida: pronuncia chī y hē como dos palabras distintas."
+    },
+    {
+      "id": "u05-066",
+      "type": "speak-read",
+      "skill": "speaking",
+      "level": 2,
+      "text": "服务员，你好！我要一碗面条、一个鸡蛋和一杯茶。我的朋友要米饭和肉。请给我们两瓶水。",
+      "py": "Fúwùyuán, nǐ hǎo! Wǒ yào yì wǎn miàntiáo, yí ge jīdàn hé yì bēi chá. Wǒ de péngyou yào mǐfàn hé ròu. Qǐng gěi wǒmen liǎng píng shuǐ.",
+      "es": "¡Hola, camarero! Quiero un bol de fideos, un huevo y una taza de té. Mi amigo quiere arroz y carne. Dos botellas de agua, por favor.",
+      "explain": "Cada cosa pedida lleva su clasificador: 碗, 个, 杯, 瓶. Fíjate en los tres tonos de 一: yì wǎn, yí ge, yì bēi. 两 (no 二) delante de 瓶."
+    },
+    {
+      "id": "u05-067",
+      "type": "speak-read",
+      "skill": "speaking",
+      "level": 2,
+      "text": "早上我想喝牛奶，不想喝咖啡。我也想吃两个鸡蛋和一个苹果。我很喜欢吃水果。",
+      "py": "Zǎoshang wǒ xiǎng hē niúnǎi, bù xiǎng hē kāfēi. Wǒ yě xiǎng chī liǎng ge jīdàn hé yí ge píngguǒ. Wǒ hěn xǐhuan chī shuǐguǒ.",
+      "es": "Por la mañana quiero beber leche, no quiero café. También quiero comer dos huevos y una manzana. Me gusta mucho comer fruta.",
+      "explain": "想 + verbo expresa lo que te apetece; su negación es 不想. 也 va entre 我 y 想. 很喜欢 es la forma natural de «gustar mucho»."
+    },
+    {
+      "id": "u05-068",
+      "type": "speak-read",
+      "skill": "speaking",
+      "level": 2,
+      "text": "服务员，这个菜有点儿冷，这个茶有点儿热。请给我一杯冷的。对不起，我们还要一碗米饭。",
+      "py": "Fúwùyuán, zhège cài yǒudiǎnr lěng, zhège chá yǒudiǎnr rè. Qǐng gěi wǒ yì bēi lěng de. Duìbuqǐ, wǒmen hái yào yì wǎn mǐfàn.",
+      "es": "Camarero, este plato está un poco frío y este té está un poco caliente. Deme uno frío, por favor. Perdone, queremos también un bol de arroz.",
+      "new": [
+        "还"
+      ],
+      "explain": "有点儿 + adjetivo para quejarse con suavidad; 冷的 («uno frío») con 的 sustituye al nombre. 还要 = «además queremos». Marca bien lěng (3.º) frente a rè (4.º)."
+    },
+    {
+      "id": "u05-069",
+      "type": "speak-read",
+      "skill": "speaking",
+      "level": 3,
+      "text": "今天我和安娜一起去饭店吃饭。我吃了面条，她吃了米饭和肉。我们喝了两杯茶。面条十五块，米饭五块，茶六块，不贵。今天我给钱。",
+      "py": "Jīntiān wǒ hé Ānnà yìqǐ qù fàndiàn chī fàn. Wǒ chī le miàntiáo, tā chī le mǐfàn hé ròu. Wǒmen hē le liǎng bēi chá. Miàntiáo shíwǔ kuài, mǐfàn wǔ kuài, chá liù kuài, bú guì. Jīntiān wǒ gěi qián.",
+      "es": "Hoy Ana y yo hemos ido juntos a comer a un restaurante. Yo he comido fideos; ella, arroz y carne. Hemos bebido dos tés. Los fideos, quince yuanes; el arroz, cinco; el té, seis: no es caro. Hoy pago yo.",
+      "new": [
+        "贵"
+      ],
+      "explain": "了 detrás de 吃 y 喝 marca acciones ya completadas. Los precios se enumeran con 块 y se cierran con 不贵 (bú guì, 不 en 2.º tono). 给钱 = pagar."
+    },
+    {
+      "id": "u05-070",
+      "type": "speak-read",
+      "skill": "speaking",
+      "level": 3,
+      "text": "王明的妈妈做的菜太好吃了！我吃了很多。她问我：你要不要喝茶？我说：要，谢谢，多一点儿。",
+      "py": "Wáng Míng de māma zuò de cài tài hǎochī le! Wǒ chī le hěn duō. Tā wèn wǒ: nǐ yào bu yào hē chá? Wǒ shuō: yào, xièxie, duō yìdiǎnr.",
+      "es": "¡Los platos que hace la madre de Wang Ming están buenísimos! He comido mucho. Ella me preguntó: ¿quieres té? Yo dije: sí, gracias, un poco más.",
+      "new": [
+        "太",
+        "问",
+        "说"
+      ],
+      "explain": "太…了 enmarca el adjetivo para exagerar. 要不要 es la pregunta afirmativa-negativa con 要 (bu neutro en medio), y 多一点儿 pide «un poco más»."
+    },
+    {
+      "id": "u05-071",
+      "type": "speak-answer",
+      "skill": "speaking",
+      "level": 1,
+      "question": "你喜欢中国菜吗？",
+      "questionPy": "Nǐ xǐhuan Zhōngguó cài ma?",
+      "questionEs": "¿Te gusta la comida china?",
+      "sample": "喜欢，中国菜很好吃。",
+      "samplePy": "Xǐhuan, Zhōngguó cài hěn hǎochī.",
+      "sampleEs": "Me gusta, la comida china está muy rica.",
+      "keywords": [
+        "喜欢"
+      ],
+      "grammarIds": [
+        "ma",
+        "hen-adj"
+      ],
+      "explain": "Responde repitiendo el verbo: 喜欢 o 不喜欢. Si añades una opinión, el adjetivo va con 很 y sin 是: 很好吃."
+    },
+    {
+      "id": "u05-072",
+      "type": "speak-answer",
+      "skill": "speaking",
+      "level": 1,
+      "question": "你想喝什么？",
+      "questionPy": "Nǐ xiǎng hē shénme?",
+      "questionEs": "¿Qué quieres beber?",
+      "sample": "我想喝一杯茶。",
+      "samplePy": "Wǒ xiǎng hē yì bēi chá.",
+      "sampleEs": "Quiero tomar una taza de té.",
+      "keywords": [
+        "想",
+        "喝"
+      ],
+      "grammarIds": [
+        "modal-verbs",
+        "measure-words"
+      ],
+      "explain": "Repite 想喝 y pon la bebida donde estaba 什么. Si dices la cantidad, no olvides el clasificador: 一杯茶, 一瓶啤酒."
+    },
+    {
+      "id": "u05-073",
+      "type": "speak-answer",
+      "skill": "speaking",
+      "level": 2,
+      "question": "你要什么？",
+      "questionPy": "Nǐ yào shénme?",
+      "questionEs": "¿Qué quiere? (el camarero)",
+      "sample": "我要一碗面条和一杯水。",
+      "samplePy": "Wǒ yào yì wǎn miàntiáo hé yì bēi shuǐ.",
+      "sampleEs": "Quiero un bol de fideos y un vaso de agua.",
+      "keywords": [
+        "我要"
+      ],
+      "grammarIds": [
+        "modal-verbs",
+        "measure-words",
+        "he"
+      ],
+      "explain": "Para pedir se usa 要 + cantidad + clasificador + plato, y 和 para unir dos cosas. 想 también vale, pero 要 es más directo y es lo que espera el camarero."
+    },
+    {
+      "id": "u05-074",
+      "type": "speak-answer",
+      "skill": "speaking",
+      "level": 2,
+      "question": "你喝咖啡还是喝茶？",
+      "questionPy": "Nǐ hē kāfēi háishi hē chá?",
+      "questionEs": "¿Bebes café o té?",
+      "sample": "我喝茶，我不喜欢咖啡。",
+      "samplePy": "Wǒ hē chá, wǒ bù xǐhuan kāfēi.",
+      "sampleEs": "Bebo té, no me gusta el café.",
+      "keywords": [
+        "喝"
+      ],
+      "new": [
+        "还是"
+      ],
+      "grammarIds": [
+        "bu-mei"
+      ],
+      "explain": "Una pregunta con 还是 («o») se contesta eligiendo una opción y repitiendo el verbo: 我喝茶. No se responde con 是 ni con 喜欢 a secas."
+    },
+    {
+      "id": "u05-075",
+      "type": "speak-answer",
+      "skill": "speaking",
+      "level": 2,
+      "question": "这个菜怎么样？好吃吗？",
+      "questionPy": "Zhège cài zěnmeyàng? Hǎochī ma?",
+      "questionEs": "¿Qué tal este plato? ¿Está rico?",
+      "sample": "很好吃，我很喜欢。",
+      "samplePy": "Hěn hǎochī, wǒ hěn xǐhuan.",
+      "sampleEs": "Está muy rico, me gusta mucho.",
+      "keywords": [
+        "好吃"
+      ],
+      "new": [
+        "怎么样"
+      ],
+      "grammarIds": [
+        "hen-adj",
+        "ma"
+      ],
+      "explain": "Se opina con el adjetivo: 很好吃 / 不好吃 / 有点儿冷. Si es una bebida, cambia a 好喝. 怎么样 («qué tal») pide justamente esa valoración."
+    },
+    {
+      "id": "u05-076",
+      "type": "speak-answer",
+      "skill": "speaking",
+      "level": 2,
+      "question": "你要几瓶啤酒？",
+      "questionPy": "Nǐ yào jǐ píng píjiǔ?",
+      "questionEs": "¿Cuántas cervezas quieres?",
+      "sample": "我要两瓶啤酒。",
+      "samplePy": "Wǒ yào liǎng píng píjiǔ.",
+      "sampleEs": "Quiero dos cervezas.",
+      "keywords": [
+        "瓶"
+      ],
+      "grammarIds": [
+        "measure-words",
+        "numbers"
+      ],
+      "explain": "Sustituye 几 por el número y conserva el clasificador 瓶. Para «dos» di 两瓶; 二瓶 es el error más frecuente de los hispanohablantes."
+    },
+    {
+      "id": "u05-077",
+      "type": "speak-answer",
+      "skill": "speaking",
+      "level": 2,
+      "question": "面条多少钱？",
+      "questionPy": "Miàntiáo duōshao qián?",
+      "questionEs": "¿Cuánto cuestan los fideos?",
+      "sample": "面条十八块。",
+      "samplePy": "Miàntiáo shíbā kuài.",
+      "sampleEs": "Los fideos, dieciocho yuanes.",
+      "keywords": [
+        "块"
+      ],
+      "grammarIds": [
+        "price-age"
+      ],
+      "explain": "El precio se dice cosa + número + 块 (+ 钱 opcional), sin verbo. No hace falta 是: 面条十八块 es una frase completa."
+    },
+    {
+      "id": "u05-078",
+      "type": "speak-answer",
+      "skill": "speaking",
+      "level": 2,
+      "question": "你早上吃什么？喝什么？",
+      "questionPy": "Nǐ zǎoshang chī shénme? Hē shénme?",
+      "questionEs": "¿Qué comes y qué bebes por la mañana?",
+      "sample": "我早上吃鸡蛋，喝一杯牛奶。",
+      "samplePy": "Wǒ zǎoshang chī jīdàn, hē yì bēi niúnǎi.",
+      "sampleEs": "Por la mañana como huevos y bebo un vaso de leche.",
+      "keywords": [
+        "吃",
+        "喝"
+      ],
+      "grammarIds": [
+        "word-order",
+        "question-words"
+      ],
+      "explain": "Dos preguntas, dos verbos: 吃 con comida y 喝 con bebida. 早上 va delante de los verbos, y el sujeto 我 no se repite en la segunda parte."
+    },
+    {
+      "id": "u05-079",
+      "type": "speak-answer",
+      "skill": "speaking",
+      "level": 2,
+      "question": "今天谁给钱？",
+      "questionPy": "Jīntiān shéi gěi qián?",
+      "questionEs": "¿Quién paga hoy?",
+      "sample": "今天我给钱，我们是朋友。",
+      "samplePy": "Jīntiān wǒ gěi qián, wǒmen shì péngyou.",
+      "sampleEs": "Hoy pago yo, somos amigos.",
+      "keywords": [
+        "我给"
+      ],
+      "grammarIds": [
+        "gei",
+        "question-words"
+      ],
+      "explain": "谁 se sustituye por la persona (我, 你, 王明) y se repite 给钱. Ofrecerse a pagar es un gesto de amistad habitual en China; también puedes decir 我请你."
+    },
+    {
+      "id": "u05-080",
+      "type": "dialogue-complete",
+      "skill": "reading",
+      "level": 1,
+      "lines": [
+        {
+          "speaker": "服务员",
+          "zh": "你好！你要什么？",
+          "py": "Nǐ hǎo! Nǐ yào shénme?",
+          "es": "¡Hola! ¿Qué quiere?"
+        },
+        {
+          "speaker": "安娜",
+          "zh": "我要一碗米饭和一杯茶。",
+          "py": "Wǒ yào yì wǎn mǐfàn hé yì bēi chá.",
+          "es": "Quiero un bol de arroz y una taza de té."
+        },
+        {
+          "speaker": "服务员",
+          "zh": "好的。你要肉吗？",
+          "py": "Hǎo de. Nǐ yào ròu ma?",
+          "es": "De acuerdo. ¿Quiere carne?"
+        },
+        {
+          "speaker": "安娜",
+          "zh": "不要，谢谢。",
+          "py": "Bú yào, xièxie.",
+          "es": "No, gracias."
+        }
+      ],
+      "missing": 1,
+      "options": [
+        "我要一碗米饭和一杯茶。",
+        "我是西班牙人。",
+        "我喜欢喝茶。"
+      ],
+      "answer": 0,
+      "new": [
+        "好的"
+      ],
+      "grammarIds": [
+        "modal-verbs",
+        "measure-words"
+      ],
+      "explain": "El camarero pregunta 你要什么, así que la respuesta tiene que empezar por 我要 + lo que se pide. Decir tu nacionalidad o que te gusta el té no es un pedido."
+    },
+    {
+      "id": "u05-081",
+      "type": "dialogue-complete",
+      "skill": "reading",
+      "level": 2,
+      "lines": [
+        {
+          "speaker": "王明",
+          "zh": "雨果，你想喝什么？",
+          "py": "Yǔguǒ, nǐ xiǎng hē shénme?",
+          "es": "Hugo, ¿qué quieres beber?"
+        },
+        {
+          "speaker": "雨果",
+          "zh": "我想喝啤酒。你呢？",
+          "py": "Wǒ xiǎng hē píjiǔ. Nǐ ne?",
+          "es": "Quiero cerveza. ¿Y tú?"
+        },
+        {
+          "speaker": "王明",
+          "zh": "我不想喝啤酒，我想喝茶。",
+          "py": "Wǒ bù xiǎng hē píjiǔ, wǒ xiǎng hē chá.",
+          "es": "Yo no quiero cerveza, quiero té."
+        },
+        {
+          "speaker": "雨果",
+          "zh": "服务员！一瓶啤酒和一杯茶。",
+          "py": "Fúwùyuán! Yì píng píjiǔ hé yì bēi chá.",
+          "es": "¡Camarero! Una cerveza y un té."
+        }
+      ],
+      "missing": 2,
+      "options": [
+        "我不想喝啤酒，我想喝茶。",
+        "我也想喝啤酒。",
+        "我不喜欢喝茶。"
+      ],
+      "answer": 0,
+      "grammarIds": [
+        "modal-verbs",
+        "ne",
+        "bu-mei"
+      ],
+      "explain": "Hugo pide al final una cerveza y un té: Wang Ming tiene que haber pedido té, no cerveza. 我也想喝啤酒 daría dos cervezas."
+    },
+    {
+      "id": "u05-082",
+      "type": "dialogue-complete",
+      "skill": "reading",
+      "level": 2,
+      "lines": [
+        {
+          "speaker": "雨果",
+          "zh": "服务员，这个菜有点儿冷。",
+          "py": "Fúwùyuán, zhège cài yǒudiǎnr lěng.",
+          "es": "Camarero, este plato está un poco frío."
+        },
+        {
+          "speaker": "服务员",
+          "zh": "对不起，我给您做一个热的。",
+          "py": "Duìbuqǐ, wǒ gěi nín zuò yí ge rè de.",
+          "es": "Perdone, le hago uno caliente."
+        },
+        {
+          "speaker": "雨果",
+          "zh": "谢谢。请再给我一杯水。",
+          "py": "Xièxie. Qǐng zài gěi wǒ yì bēi shuǐ.",
+          "es": "Gracias. Y otro vaso de agua, por favor."
+        },
+        {
+          "speaker": "服务员",
+          "zh": "好的，没问题。",
+          "py": "Hǎo de, méi wèntí.",
+          "es": "Claro, sin problema."
+        }
+      ],
+      "missing": 0,
+      "options": [
+        "服务员，这个菜有点儿冷。",
+        "服务员，买单！",
+        "服务员，这个菜很好吃！"
+      ],
+      "answer": 0,
+      "new": [
+        "再",
+        "没问题",
+        "好的"
+      ],
+      "grammarIds": [
+        "yidianr-youdianr",
+        "gei",
+        "qing"
+      ],
+      "explain": "El camarero se disculpa y ofrece «uno caliente» (热的): la queja anterior tenía que ser que el plato está frío. Con 买单 o un elogio no habría disculpa."
+    },
+    {
+      "id": "u05-083",
+      "type": "dialogue-complete",
+      "skill": "reading",
+      "level": 2,
+      "lines": [
+        {
+          "speaker": "安娜",
+          "zh": "服务员，买单！",
+          "py": "Fúwùyuán, mǎidān!",
+          "es": "¡Camarero, la cuenta!"
+        },
+        {
+          "speaker": "服务员",
+          "zh": "一共四十块。",
+          "py": "Yígòng sìshí kuài.",
+          "es": "En total, cuarenta yuanes."
+        },
+        {
+          "speaker": "王明",
+          "zh": "安娜，我给钱吧。",
+          "py": "Ānnà, wǒ gěi qián ba.",
+          "es": "Ana, pago yo."
+        },
+        {
+          "speaker": "安娜",
+          "zh": "不，今天是我的生日，我给！",
+          "py": "Bù, jīntiān shì wǒ de shēngrì, wǒ gěi!",
+          "es": "No, hoy es mi cumpleaños, ¡pago yo!"
+        }
+      ],
+      "missing": 1,
+      "options": [
+        "一共四十块。",
+        "你们要什么？",
+        "这个菜很好吃。"
+      ],
+      "answer": 0,
+      "new": [
+        "一共"
+      ],
+      "grammarIds": [
+        "price-age",
+        "gei",
+        "ba"
+      ],
+      "explain": "Tras 买单 el camarero dice el importe: 一共 + número + 块. Preguntar qué quieren sería al principio de la comida, no al pedir la cuenta."
+    },
+    {
+      "id": "u05-084",
+      "type": "dialogue-order",
+      "skill": "reading",
+      "level": 1,
+      "lines": [
+        {
+          "speaker": "服务员",
+          "zh": "你们好！你们要什么？",
+          "py": "Nǐmen hǎo! Nǐmen yào shénme?",
+          "es": "¡Hola! ¿Qué quieren?"
+        },
+        {
+          "speaker": "雨果",
+          "zh": "我要一碗面条。",
+          "py": "Wǒ yào yì wǎn miàntiáo.",
+          "es": "Quiero un bol de fideos."
+        },
+        {
+          "speaker": "服务员",
+          "zh": "你们喝什么？",
+          "py": "Nǐmen hē shénme?",
+          "es": "¿Qué van a beber?"
+        },
+        {
+          "speaker": "雨果",
+          "zh": "两杯茶，谢谢。",
+          "py": "Liǎng bēi chá, xièxie.",
+          "es": "Dos tés, gracias."
+        }
+      ],
+      "grammarIds": [
+        "measure-words",
+        "question-words"
+      ],
+      "explain": "El camarero saluda y pregunta por la comida; luego pregunta por la bebida. Cada respuesta encaja con la pregunta anterior: primero 面条 (comida), después 茶 (bebida)."
+    },
+    {
+      "id": "u05-085",
+      "type": "dialogue-order",
+      "skill": "reading",
+      "level": 2,
+      "lines": [
+        {
+          "speaker": "王明",
+          "zh": "雨果，你喜欢吃水果吗？",
+          "py": "Yǔguǒ, nǐ xǐhuan chī shuǐguǒ ma?",
+          "es": "Hugo, ¿te gusta comer fruta?"
+        },
+        {
+          "speaker": "雨果",
+          "zh": "喜欢。我很喜欢吃苹果。",
+          "py": "Xǐhuan. Wǒ hěn xǐhuan chī píngguǒ.",
+          "es": "Sí. Me gusta mucho comer manzanas."
+        },
+        {
+          "speaker": "王明",
+          "zh": "我家有很多苹果，你要几个？",
+          "py": "Wǒ jiā yǒu hěn duō píngguǒ, nǐ yào jǐ ge?",
+          "es": "En mi casa hay muchas manzanas, ¿cuántas quieres?"
+        },
+        {
+          "speaker": "雨果",
+          "zh": "我要两个，谢谢你！",
+          "py": "Wǒ yào liǎng ge, xièxie nǐ!",
+          "es": "Quiero dos, ¡gracias!"
+        }
+      ],
+      "grammarIds": [
+        "ma",
+        "you",
+        "measure-words"
+      ],
+      "explain": "La pregunta general (fruta) lleva a la respuesta concreta (manzanas); solo entonces tiene sentido ofrecer manzanas y preguntar cuántas. 两个 con 两 cierra el diálogo."
+    },
+    {
+      "id": "u05-086",
+      "type": "dialogue-order",
+      "skill": "reading",
+      "level": 2,
+      "lines": [
+        {
+          "speaker": "安娜",
+          "zh": "服务员，多少钱？",
+          "py": "Fúwùyuán, duōshao qián?",
+          "es": "Camarero, ¿cuánto es?"
+        },
+        {
+          "speaker": "服务员",
+          "zh": "米饭五块，肉二十块，一共二十五块。",
+          "py": "Mǐfàn wǔ kuài, ròu èrshí kuài, yígòng èrshíwǔ kuài.",
+          "es": "El arroz, cinco yuanes; la carne, veinte; en total, veinticinco."
+        },
+        {
+          "speaker": "安娜",
+          "zh": "不贵。给您钱。",
+          "py": "Bú guì. Gěi nín qián.",
+          "es": "No es caro. Aquí tiene."
+        },
+        {
+          "speaker": "服务员",
+          "zh": "谢谢，再见！",
+          "py": "Xièxie, zàijiàn!",
+          "es": "¡Gracias, adiós!"
+        }
+      ],
+      "new": [
+        "一共",
+        "贵"
+      ],
+      "grammarIds": [
+        "price-age",
+        "gei"
+      ],
+      "explain": "Pregunta de precio → desglose con 块 → comentario y pago (给您钱) → despedida. 再见 solo puede ir al final; 多少钱 solo al principio."
+    },
+    {
+      "id": "u05-087",
+      "type": "dialogue-who",
+      "skill": "reading",
+      "level": 2,
+      "lines": [
+        {
+          "speaker": "服务员",
+          "zh": "你们点菜吗？",
+          "py": "Nǐmen diǎn cài ma?",
+          "es": "¿Van a pedir?"
+        },
+        {
+          "speaker": "安娜",
+          "zh": "点。我要一碗面条，不要肉。",
+          "py": "Diǎn. Wǒ yào yì wǎn miàntiáo, bú yào ròu.",
+          "es": "Sí. Quiero un bol de fideos, sin carne."
+        },
+        {
+          "speaker": "雨果",
+          "zh": "我要米饭和肉，我很喜欢吃肉。",
+          "py": "Wǒ yào mǐfàn hé ròu, wǒ hěn xǐhuan chī ròu.",
+          "es": "Yo quiero arroz y carne, me gusta mucho la carne."
+        },
+        {
+          "speaker": "服务员",
+          "zh": "好的。你们喝什么？",
+          "py": "Hǎo de. Nǐmen hē shénme?",
+          "es": "Vale. ¿Qué van a beber?"
+        }
+      ],
+      "ask": 2,
+      "options": [
+        "服务员",
+        "安娜",
+        "雨果"
+      ],
+      "answer": 2,
+      "new": [
+        "好的"
+      ],
+      "explain": "Ana ha dicho 不要肉 (sin carne); la línea 我很喜欢吃肉 la dice la otra persona que pide, Hugo. El camarero no pide comida, la sirve."
+    },
+    {
+      "id": "u05-088",
+      "type": "dialogue-who",
+      "skill": "reading",
+      "level": 2,
+      "lines": [
+        {
+          "speaker": "王明",
+          "zh": "这儿的菜很好吃，茶也很好喝。",
+          "py": "Zhèr de cài hěn hǎochī, chá yě hěn hǎohē.",
+          "es": "La comida de aquí está muy rica y el té también está muy bueno."
+        },
+        {
+          "speaker": "安娜",
+          "zh": "是，我很喜欢。服务员，买单！",
+          "py": "Shì, wǒ hěn xǐhuan. Fúwùyuán, mǎidān!",
+          "es": "Sí, me gusta mucho. ¡Camarero, la cuenta!"
+        },
+        {
+          "speaker": "服务员",
+          "zh": "一共三十块。",
+          "py": "Yígòng sānshí kuài.",
+          "es": "En total, treinta yuanes."
+        },
+        {
+          "speaker": "王明",
+          "zh": "我给钱吧，安娜。",
+          "py": "Wǒ gěi qián ba, Ānnà.",
+          "es": "Pago yo, Ana."
+        }
+      ],
+      "ask": 2,
+      "options": [
+        "王明",
+        "安娜",
+        "服务员"
+      ],
+      "answer": 2,
+      "new": [
+        "这儿",
+        "一共"
+      ],
+      "explain": "Quien dice el importe total (一共三十块) tras oír 买单 es el camarero. Wang Ming y Ana son los clientes: opinan sobre la comida y discuten quién paga."
+    },
+    {
+      "id": "u05-089",
+      "type": "dialogue-who",
+      "skill": "reading",
+      "level": 2,
+      "lines": [
+        {
+          "speaker": "雨果",
+          "zh": "早上好！你想喝什么？",
+          "py": "Zǎoshang hǎo! Nǐ xiǎng hē shénme?",
+          "es": "¡Buenos días! ¿Qué quieres beber?"
+        },
+        {
+          "speaker": "安娜",
+          "zh": "我想喝一杯咖啡，多一点儿牛奶。",
+          "py": "Wǒ xiǎng hē yì bēi kāfēi, duō yìdiǎnr niúnǎi.",
+          "es": "Quiero un café, con un poco más de leche."
+        },
+        {
+          "speaker": "雨果",
+          "zh": "好。你吃鸡蛋吗？",
+          "py": "Hǎo. Nǐ chī jīdàn ma?",
+          "es": "Vale. ¿Comes huevos?"
+        },
+        {
+          "speaker": "安娜",
+          "zh": "不吃，我吃一个苹果。",
+          "py": "Bù chī, wǒ chī yí ge píngguǒ.",
+          "es": "No, como una manzana."
+        }
+      ],
+      "ask": 1,
+      "options": [
+        "雨果",
+        "安娜",
+        "王明"
+      ],
+      "answer": 1,
+      "explain": "La línea pide un café con más leche: responde a 你想喝什么, así que la dice quien es invitado, Ana. Hugo es quien ofrece y pregunta; Wang Ming no habla."
+    },
+    {
+      "id": "u05-090",
+      "type": "situation",
+      "skill": "vocabulary",
+      "level": 1,
+      "situation": "Has terminado de comer en el restaurante y quieres pagar.",
+      "options": [
+        "服务员，点菜！",
+        "服务员，买单！",
+        "服务员，多少钱一瓶？",
+        "我不要了。"
+      ],
+      "answer": 1,
+      "py": "Fúwùyuán, mǎidān!",
+      "explain": "La cuenta se pide con 买单. 点菜 es pedir los platos al principio, y 多少钱 pregunta un precio concreto, no la cuenta."
+    },
+    {
+      "id": "u05-091",
+      "type": "situation",
+      "skill": "vocabulary",
+      "level": 1,
+      "situation": "Quieres pedir al camarero un vaso de agua de forma educada.",
+      "options": [
+        "我喝水。",
+        "请给我一杯水。",
+        "水很好喝。",
+        "你要水吗？"
+      ],
+      "answer": 1,
+      "py": "Qǐng gěi wǒ yì bēi shuǐ.",
+      "grammarIds": [
+        "qing",
+        "gei",
+        "measure-words"
+      ],
+      "explain": "请 + 给我 + cantidad + clasificador + cosa es la fórmula de petición cortés. 我喝水 solo describe lo que haces, y 你要水吗 lo preguntaría el camarero."
+    },
+    {
+      "id": "u05-092",
+      "type": "situation",
+      "skill": "vocabulary",
+      "level": 2,
+      "situation": "Te sirven la sopa de fideos y está casi fría. Quieres quejarte con suavidad.",
+      "options": [
+        "这个面条太好吃了！",
+        "这个面条有点儿冷。",
+        "我要一点儿面条。",
+        "面条多少钱？"
+      ],
+      "answer": 1,
+      "py": "Zhège miàntiáo yǒudiǎnr lěng.",
+      "grammarIds": [
+        "yidianr-youdianr"
+      ],
+      "explain": "Para una queja suave se usa 有点儿 + adjetivo negativo: 有点儿冷. 一点儿面条 sería pedir «un poco de fideos», que no es lo que quieres decir.",
+      "new": [
+        "太"
+      ]
+    },
+    {
+      "id": "u05-093",
+      "type": "situation",
+      "skill": "vocabulary",
+      "level": 2,
+      "situation": "Tu amigo chino insiste en pagar, pero hoy quieres invitar tú.",
+      "options": [
+        "你给钱吧。",
+        "今天我给钱。",
+        "我没有钱。",
+        "多少钱？"
+      ],
+      "answer": 1,
+      "py": "Jīntiān wǒ gěi qián.",
+      "grammarIds": [
+        "gei"
+      ],
+      "explain": "«Pago yo» es 我给钱 (literalmente «yo doy el dinero»). 你给钱吧 le pediría a él que pague, justo lo contrario."
+    },
+    {
+      "id": "u05-094",
+      "type": "find-error",
+      "skill": "grammar",
+      "level": 1,
+      "zh": "我要二杯咖啡。",
+      "tokens": [
+        "我",
+        "要",
+        "二",
+        "杯",
+        "咖啡"
+      ],
+      "wrongIndex": 2,
+      "correct": "我要两杯咖啡。",
+      "es": "Quiero dos cafés.",
+      "grammarIds": [
+        "numbers",
+        "measure-words"
+      ],
+      "explain": "Delante de un clasificador (杯, 瓶, 碗, 个) «dos» es 两. 二 solo sirve para contar en serie y en números compuestos como 十二 o 二十."
+    },
+    {
+      "id": "u05-095",
+      "type": "find-error",
+      "skill": "grammar",
+      "level": 1,
+      "zh": "请给我一个茶。",
+      "tokens": [
+        "请",
+        "给",
+        "我",
+        "一",
+        "个",
+        "茶"
+      ],
+      "wrongIndex": 4,
+      "correct": "请给我一杯茶。",
+      "es": "Deme un té, por favor.",
+      "grammarIds": [
+        "measure-words"
+      ],
+      "explain": "El té se sirve en taza o vaso, así que el clasificador es 杯. 个 es el comodín, pero con bebidas y boles hay que usar 杯, 瓶 o 碗."
+    },
+    {
+      "id": "u05-096",
+      "type": "find-error",
+      "skill": "grammar",
+      "level": 2,
+      "zh": "我想一杯水。",
+      "tokens": [
+        "我",
+        "想",
+        "一杯",
+        "水"
+      ],
+      "wrongIndex": 1,
+      "correct": "我要一杯水。",
+      "es": "Quiero un vaso de agua.",
+      "grammarIds": [
+        "modal-verbs"
+      ],
+      "explain": "想 va seguido de un verbo (想喝水); si lo que sigue es directamente un nombre, el verbo es 要: 我要一杯水. También valdría 我想喝一杯水."
+    },
+    {
+      "id": "u05-097",
+      "type": "find-error",
+      "skill": "grammar",
+      "level": 2,
+      "zh": "这个菜太好吃的。",
+      "tokens": [
+        "这个",
+        "菜",
+        "太",
+        "好吃",
+        "的"
+      ],
+      "wrongIndex": 4,
+      "correct": "这个菜太好吃了。",
+      "es": "¡Este plato está buenísimo!",
+      "new": [
+        "太"
+      ],
+      "grammarIds": [
+        "tai-le"
+      ],
+      "explain": "太 casi siempre va acompañado de 了 al final: 太…了. 的 no tiene nada que hacer ahí; es la partícula de posesión o descripción."
+    },
+    {
+      "id": "u05-098",
+      "type": "find-error",
+      "skill": "grammar",
+      "level": 2,
+      "zh": "请给我有点儿水。",
+      "tokens": [
+        "请",
+        "给",
+        "我",
+        "有点儿",
+        "水"
+      ],
+      "wrongIndex": 3,
+      "correct": "请给我一点儿水。",
+      "es": "Deme un poco de agua, por favor.",
+      "grammarIds": [
+        "yidianr-youdianr"
+      ],
+      "explain": "«Un poco de» + nombre es 一点儿 (一点儿水). 有点儿 solo va delante de adjetivos y expresa algo que no gusta (有点儿冷)."
+    },
+    {
+      "id": "u05-099",
+      "type": "find-error",
+      "skill": "grammar",
+      "level": 2,
+      "zh": "这个菜一点儿冷。",
+      "tokens": [
+        "这个",
+        "菜",
+        "一点儿",
+        "冷"
+      ],
+      "wrongIndex": 2,
+      "correct": "这个菜有点儿冷。",
+      "es": "Este plato está un poco frío.",
+      "grammarIds": [
+        "yidianr-youdianr"
+      ],
+      "explain": "Delante de un adjetivo con sentido de queja se usa 有点儿. 一点儿 nunca va delante de un adjetivo; puede ir detrás (多一点儿) o con un nombre."
+    },
+    {
+      "id": "u05-100",
+      "type": "find-error",
+      "skill": "grammar",
+      "level": 2,
+      "zh": "我喜欢很中国菜。",
+      "tokens": [
+        "我",
+        "喜欢",
+        "很",
+        "中国菜"
+      ],
+      "wrongIndex": 2,
+      "correct": "我很喜欢中国菜。",
+      "es": "Me gusta mucho la comida china.",
+      "grammarIds": [
+        "hen-adj",
+        "word-order"
+      ],
+      "explain": "很 es un adverbio y va delante del verbo o adjetivo al que modifica: 很喜欢. Entre el verbo y su objeto no se mete nada."
+    },
+    {
+      "id": "u05-101",
+      "type": "find-error",
+      "skill": "grammar",
+      "level": 2,
+      "zh": "我没吃了面条。",
+      "tokens": [
+        "我",
+        "没",
+        "吃",
+        "了",
+        "面条"
+      ],
+      "wrongIndex": 3,
+      "correct": "我没吃面条。",
+      "es": "No he comido fideos.",
+      "grammarIds": [
+        "le",
+        "bu-mei"
+      ],
+      "explain": "Con 没 la acción no se ha completado, así que no puede llevar 了: 没吃面条. 了 y 没 son incompatibles en la misma frase."
+    },
+    {
+      "id": "u05-102",
+      "type": "find-error",
+      "skill": "grammar",
+      "level": 2,
+      "zh": "服务员，请给我一碗啤酒。",
+      "tokens": [
+        "服务员",
+        "请",
+        "给",
+        "我",
+        "一",
+        "碗",
+        "啤酒"
+      ],
+      "wrongIndex": 5,
+      "correct": "服务员，请给我一瓶啤酒。",
+      "es": "Camarero, una cerveza, por favor.",
+      "grammarIds": [
+        "measure-words"
+      ],
+      "explain": "La cerveza viene en botella: 瓶. 碗 (cuenco) se usa para arroz, fideos o sopa, y 杯 para vasos y tazas."
+    },
+    {
+      "id": "u05-103",
+      "type": "transform",
+      "skill": "grammar",
+      "level": 1,
+      "zh": "我喜欢喝牛奶。",
+      "py": "Wǒ xǐhuan hē niúnǎi.",
+      "es": "Me gusta beber leche.",
+      "target": "negative-bu",
+      "answer": "我不喜欢喝牛奶。",
+      "grammarIds": [
+        "bu-mei"
+      ],
+      "explain": "Un gusto o hábito se niega con 不 delante del verbo principal: 不喜欢. 没 solo valdría para una acción pasada que no ocurrió."
+    },
+    {
+      "id": "u05-104",
+      "type": "transform",
+      "skill": "grammar",
+      "level": 1,
+      "zh": "你要米饭。",
+      "py": "Nǐ yào mǐfàn.",
+      "es": "Quieres arroz.",
+      "target": "question-ma",
+      "answer": "你要米饭吗？",
+      "grammarIds": [
+        "ma",
+        "modal-verbs"
+      ],
+      "explain": "Basta añadir 吗 al final sin cambiar nada: es la pregunta típica del camarero. La respuesta sería 要 o 不要."
+    },
+    {
+      "id": "u05-105",
+      "type": "transform",
+      "skill": "grammar",
+      "level": 2,
+      "zh": "他想吃苹果。",
+      "py": "Tā xiǎng chī píngguǒ.",
+      "es": "Él quiere comer manzana.",
+      "target": "question-a-not-a",
+      "answer": "他想不想吃苹果？",
+      "grammarIds": [
+        "modal-verbs"
+      ],
+      "explain": "En la pregunta afirmativa-negativa se repite el verbo modal, no el principal: 想不想吃. Se pronuncia xiǎng bu xiǎng, con 不 neutro."
+    },
+    {
+      "id": "u05-106",
+      "type": "transform",
+      "skill": "grammar",
+      "level": 2,
+      "zh": "我要两瓶啤酒。",
+      "py": "Wǒ yào liǎng píng píjiǔ.",
+      "es": "Quiero dos cervezas.",
+      "target": "question-word",
+      "answer": "你要几瓶啤酒？",
+      "grammarIds": [
+        "question-words",
+        "measure-words"
+      ],
+      "explain": "几 sustituye al número (两) y el clasificador 瓶 se conserva: 几瓶. Como ahora se pregunta a la persona, 我 pasa a 你."
+    },
+    {
+      "id": "u05-107",
+      "type": "transform",
+      "skill": "grammar",
+      "level": 2,
+      "zh": "我吃面条。",
+      "py": "Wǒ chī miàntiáo.",
+      "es": "Como fideos.",
+      "target": "past-le",
+      "answer": "我吃面条了。",
+      "alternatives": [
+        "我吃了面条。"
+      ],
+      "grammarIds": [
+        "le"
+      ],
+      "explain": "了 marca la acción completada: «ya he comido fideos». Puede ir al final de la frase o justo tras el verbo (吃了面条); ambas son correctas."
+    },
+    {
+      "id": "u05-108",
+      "type": "transform",
+      "skill": "grammar",
+      "level": 2,
+      "zh": "他吃了鸡蛋。",
+      "py": "Tā chī le jīdàn.",
+      "es": "Él ha comido huevo.",
+      "target": "negative-mei",
+      "answer": "他没吃鸡蛋。",
+      "alternatives": [
+        "他没有吃鸡蛋。"
+      ],
+      "grammarIds": [
+        "bu-mei",
+        "le"
+      ],
+      "explain": "Para negar una acción completada se usa 没 y desaparece el 了: 没吃. Decir 没吃了 o 不吃了 cambia el sentido o es incorrecto."
+    },
+    {
+      "id": "u05-109",
+      "type": "transform",
+      "skill": "grammar",
+      "level": 2,
+      "zh": "面条二十块。",
+      "py": "Miàntiáo èrshí kuài.",
+      "es": "Los fideos cuestan veinte yuanes.",
+      "target": "question-word",
+      "answer": "面条多少钱？",
+      "grammarIds": [
+        "question-words",
+        "price-age"
+      ],
+      "explain": "El precio se pregunta con 多少钱, que ocupa el lugar de 二十块. Con 几 no vale: los precios son cantidades abiertas."
+    },
+    {
+      "id": "u05-110",
+      "type": "transform",
+      "skill": "grammar",
+      "level": 2,
+      "zh": "中国菜很好吃。",
+      "py": "Zhōngguó cài hěn hǎochī.",
+      "es": "La comida china está muy rica.",
+      "target": "question-ma",
+      "answer": "中国菜好吃吗？",
+      "alternatives": [
+        "中国菜很好吃吗？"
+      ],
+      "grammarIds": [
+        "ma",
+        "hen-adj"
+      ],
+      "explain": "Al preguntar con un adjetivo se suele quitar 很, que en la afirmación es solo un relleno: 好吃吗. Mantener 很 no es un error, pero suena a «¿está MUY rico?»."
+    },
+    {
+      "id": "u05-111",
+      "type": "build-question",
+      "skill": "grammar",
+      "level": 1,
+      "answer": "我要一杯咖啡。",
+      "answerEs": "Quiero un café.",
+      "question": "你要什么？",
+      "questionPy": "Nǐ yào shénme?",
+      "alternatives": [
+        "你要喝什么？",
+        "你想喝什么？"
+      ],
+      "grammarIds": [
+        "question-words",
+        "modal-verbs"
+      ],
+      "explain": "La respuesta dice qué se quiere con 要, así que la pregunta pone 什么 en el lugar de 一杯咖啡: 你要什么. Con 喝 también vale, porque el café se bebe."
+    },
+    {
+      "id": "u05-112",
+      "type": "build-question",
+      "skill": "grammar",
+      "level": 1,
+      "answer": "面条十五块。",
+      "answerEs": "Los fideos cuestan quince yuanes.",
+      "question": "面条多少钱？",
+      "questionPy": "Miàntiáo duōshao qián?",
+      "grammarIds": [
+        "question-words",
+        "price-age"
+      ],
+      "explain": "Un precio responde a 多少钱. Los fideos se mantienen como tema al principio y 多少钱 ocupa el lugar de 十五块."
+    },
+    {
+      "id": "u05-113",
+      "type": "build-question",
+      "skill": "grammar",
+      "level": 2,
+      "answer": "喜欢，我很喜欢中国菜。",
+      "answerEs": "Sí, me gusta mucho la comida china.",
+      "question": "你喜欢中国菜吗？",
+      "questionPy": "Nǐ xǐhuan Zhōngguó cài ma?",
+      "alternatives": [
+        "你喜不喜欢中国菜？"
+      ],
+      "grammarIds": [
+        "ma"
+      ],
+      "explain": "Una respuesta que empieza repitiendo el verbo (喜欢) contesta a una pregunta de sí/no: con 吗 o con 喜不喜欢."
+    },
+    {
+      "id": "u05-114",
+      "type": "build-question",
+      "skill": "grammar",
+      "level": 2,
+      "answer": "我想吃米饭和肉。",
+      "answerEs": "Quiero comer arroz y carne.",
+      "question": "你想吃什么？",
+      "questionPy": "Nǐ xiǎng chī shénme?",
+      "grammarIds": [
+        "question-words",
+        "modal-verbs"
+      ],
+      "explain": "想吃 se conserva y 什么 sustituye a la comida (米饭和肉). 我 pasa a 你 y nada más se mueve."
+    },
+    {
+      "id": "u05-115",
+      "type": "translate-bank",
+      "skill": "writing",
+      "level": 1,
+      "es": "No me gusta beber café.",
+      "zh": "我不喜欢喝咖啡。",
+      "py": "Wǒ bù xǐhuan hē kāfēi.",
+      "tiles": [
+        "我",
+        "不",
+        "喜欢",
+        "喝",
+        "咖啡",
+        "没",
+        "吃"
+      ],
+      "grammarIds": [
+        "bu-mei"
+      ],
+      "explain": "不 va delante de 喜欢, y «beber café» es 喝咖啡 (no 吃). 没 queda como distractor: no se usa para negar gustos."
+    },
+    {
+      "id": "u05-116",
+      "type": "translate-bank",
+      "skill": "writing",
+      "level": 2,
+      "es": "Quiero un bol de fideos y dos cervezas.",
+      "zh": "我要一碗面条和两瓶啤酒。",
+      "py": "Wǒ yào yì wǎn miàntiáo hé liǎng píng píjiǔ.",
+      "tiles": [
+        "我",
+        "要",
+        "一",
+        "碗",
+        "面条",
+        "和",
+        "两",
+        "瓶",
+        "啤酒",
+        "二",
+        "杯"
+      ],
+      "grammarIds": [
+        "measure-words",
+        "numbers",
+        "he"
+      ],
+      "explain": "Cada cosa con su clasificador: 碗 para los fideos y 瓶 para la cerveza. «Dos» delante de clasificador es 两; 二 y 杯 son distractores."
+    },
+    {
+      "id": "u05-117",
+      "type": "translate-bank",
+      "skill": "writing",
+      "level": 2,
+      "es": "Este plato está un poco frío.",
+      "zh": "这个菜有点儿冷。",
+      "py": "Zhège cài yǒudiǎnr lěng.",
+      "tiles": [
+        "这",
+        "个",
+        "菜",
+        "有点儿",
+        "冷",
+        "一点儿",
+        "热"
+      ],
+      "grammarIds": [
+        "yidianr-youdianr",
+        "demonstratives"
+      ],
+      "explain": "这 + 个 + 菜 (demostrativo con clasificador) y luego 有点儿 + adjetivo para la queja. 一点儿 no puede ir delante de 冷."
+    },
+    {
+      "id": "u05-118",
+      "type": "translate-bank",
+      "skill": "writing",
+      "level": 2,
+      "es": "Camarero, ¿cuánto es?",
+      "zh": "服务员，多少钱？",
+      "py": "Fúwùyuán, duōshao qián?",
+      "tiles": [
+        "服务员",
+        "多少",
+        "钱",
+        "几",
+        "块",
+        "吗"
+      ],
+      "grammarIds": [
+        "price-age",
+        "question-words"
+      ],
+      "explain": "El precio se pregunta con 多少钱, sin verbo y sin 吗. 几 no sirve para precios y 块 solo aparece en la respuesta."
+    },
+    {
+      "id": "u05-119",
+      "type": "translate-free",
+      "skill": "writing",
+      "level": 1,
+      "es": "Quiero un poco de agua.",
+      "answers": [
+        "我要一点儿水。",
+        "我想喝一点儿水。",
+        "我要一点水。"
+      ],
+      "py": "Wǒ yào yìdiǎnr shuǐ.",
+      "hint": "«Un poco de» + nombre: 一点儿.",
+      "grammarIds": [
+        "yidianr-youdianr",
+        "modal-verbs"
+      ],
+      "explain": "一点儿 va delante del nombre (一点儿水). Puedes usar 要 + nombre o 想 + verbo + nombre; lo que no vale es 有点儿, que es para adjetivos."
+    },
+    {
+      "id": "u05-120",
+      "type": "translate-free",
+      "skill": "writing",
+      "level": 2,
+      "es": "Este té está un poco frío.",
+      "answers": [
+        "这杯茶有点儿冷。",
+        "这个茶有点儿冷。"
+      ],
+      "py": "Zhè bēi chá yǒudiǎnr lěng.",
+      "grammarIds": [
+        "yidianr-youdianr",
+        "measure-words"
+      ],
+      "explain": "Lo más preciso es 这杯茶 (esta taza de té), aunque 这个茶 también se entiende. La queja va con 有点儿 delante de 冷."
+    },
+    {
+      "id": "u05-121",
+      "type": "translate-free",
+      "skill": "writing",
+      "level": 2,
+      "es": "Hoy pago yo.",
+      "answers": [
+        "今天我给钱。",
+        "今天我买单。",
+        "今天我给。"
+      ],
+      "py": "Jīntiān wǒ gěi qián.",
+      "grammarIds": [
+        "gei",
+        "word-order"
+      ],
+      "explain": "«Pagar» se dice 给钱 (dar el dinero) o 买单 (pedir/pagar la cuenta). 今天 va al principio o tras 我, nunca al final."
+    },
+    {
+      "id": "u05-122",
+      "type": "translate-free",
+      "skill": "writing",
+      "level": 2,
+      "es": "Camarero, dos cervezas, por favor.",
+      "answers": [
+        "服务员，请给我两瓶啤酒。",
+        "服务员，我要两瓶啤酒。",
+        "服务员，请给我们两瓶啤酒。"
+      ],
+      "py": "Fúwùyuán, qǐng gěi wǒ liǎng píng píjiǔ.",
+      "hint": "«Por favor» se expresa con 请 al principio de la petición.",
+      "grammarIds": [
+        "qing",
+        "gei",
+        "measure-words"
+      ],
+      "explain": "La petición cortés es 请给我 + cantidad + clasificador + cosa, o simplemente 我要…. Recuerda 两瓶, no 二瓶 ni 两杯 (la cerveza va en botella)."
+    },
+    {
+      "id": "u05-123",
+      "type": "translate-free",
+      "skill": "writing",
+      "level": 2,
+      "es": "No me gusta mucho el café.",
+      "answers": [
+        "我不太喜欢咖啡。",
+        "我不太喜欢喝咖啡。"
+      ],
+      "py": "Wǒ bú tài xǐhuan kāfēi.",
+      "hint": "«No mucho» = 不太.",
+      "new": [
+        "太"
+      ],
+      "grammarIds": [
+        "tai-le",
+        "bu-mei"
+      ],
+      "explain": "不太 + verbo/adjetivo suaviza la negación: 不太喜欢 («no me gusta mucho»). Con o sin 喝 delante de 咖啡, ambas son naturales."
+    },
+    {
+      "id": "u05-124",
+      "type": "cloze",
+      "skill": "grammar",
+      "level": 2,
+      "text": "服务员，我要一＿＿面条和一＿＿茶。我的朋友要两＿＿啤酒。",
+      "blanks": [
+        {
+          "answer": "碗",
+          "options": [
+            "碗",
+            "杯",
+            "瓶"
+          ]
+        },
+        {
+          "answer": "杯",
+          "options": [
+            "杯",
+            "碗",
+            "个"
+          ]
+        },
+        {
+          "answer": "瓶",
+          "options": [
+            "瓶",
+            "杯",
+            "碗"
+          ]
+        }
+      ],
+      "es": "Camarero, quiero un bol de fideos y una taza de té. Mi amigo quiere dos cervezas.",
+      "grammarIds": [
+        "measure-words"
+      ],
+      "explain": "El clasificador depende del recipiente: 碗 (cuenco) para fideos, 杯 (taza/vaso) para té y 瓶 (botella) para cerveza."
+    },
+    {
+      "id": "u05-125",
+      "type": "cloze",
+      "skill": "grammar",
+      "level": 2,
+      "text": "你＿＿喝什么？我＿＿一杯咖啡。这个咖啡＿＿热，请给我一＿＿水。",
+      "blanks": [
+        {
+          "answer": "想",
+          "options": [
+            "想",
+            "要",
+            "是"
+          ]
+        },
+        {
+          "answer": "要",
+          "options": [
+            "要",
+            "想",
+            "有"
+          ]
+        },
+        {
+          "answer": "有点儿",
+          "options": [
+            "有点儿",
+            "一点儿",
+            "很多"
+          ]
+        },
+        {
+          "answer": "点儿",
+          "options": [
+            "点儿",
+            "个",
+            "些"
+          ]
+        }
+      ],
+      "es": "¿Qué quieres beber? Quiero un café. Este café está un poco caliente; dame un poco de agua, por favor.",
+      "grammarIds": [
+        "modal-verbs",
+        "yidianr-youdianr"
+      ],
+      "explain": "想 va con un verbo (想喝); 要 va directamente con un nombre (要一杯咖啡). La queja lleva 有点儿 + adjetivo, y «un poco de agua» es 一点儿水."
+    },
+    {
+      "id": "u05-126",
+      "type": "cloze",
+      "skill": "grammar",
+      "level": 2,
+      "text": "今天我和王明一起去饭店。我吃＿＿一碗米饭，他＿＿吃米饭，他吃了肉。面条二十＿＿，不贵。",
+      "blanks": [
+        {
+          "answer": "了",
+          "options": [
+            "了",
+            "的",
+            "吗"
+          ]
+        },
+        {
+          "answer": "没",
+          "options": [
+            "没",
+            "不",
+            "也"
+          ]
+        },
+        {
+          "answer": "块",
+          "options": [
+            "块",
+            "个",
+            "钱"
+          ]
+        }
+      ],
+      "es": "Hoy Wang Ming y yo hemos ido juntos al restaurante. Yo he comido un bol de arroz; él no ha comido arroz, ha comido carne. Los fideos, veinte yuanes, no es caro.",
+      "new": [
+        "贵"
+      ],
+      "grammarIds": [
+        "le",
+        "bu-mei",
+        "price-age"
+      ],
+      "explain": "Acción completada: 吃了. Su negación es 没吃 (sin 了). Los precios se dan con número + 块; 钱 podría ir después (二十块钱), pero no en el hueco."
+    },
+    {
+      "id": "u05-127",
+      "type": "reading",
+      "skill": "reading",
+      "level": 2,
+      "text": "我叫安娜。我很喜欢中国菜，我喜欢吃面条和米饭，不喜欢吃肉。我早上喝咖啡，不喝茶。我的朋友王明很喜欢喝茶，他每天喝三杯。",
+      "es": "Me llamo Ana. Me gusta mucho la comida china: me gusta comer fideos y arroz, no me gusta la carne. Por la mañana bebo café, no té. A mi amigo Wang Ming le gusta mucho el té: bebe tres tazas cada día.",
+      "questions": [
+        {
+          "q": "¿Qué no le gusta comer a Ana?",
+          "options": [
+            "Los fideos",
+            "La carne",
+            "El arroz"
+          ],
+          "answer": 1,
+          "explain": "不喜欢吃肉: no le gusta la carne."
+        },
+        {
+          "q": "¿Qué bebe Ana por la mañana?",
+          "options": [
+            "Té",
+            "Café",
+            "Leche"
+          ],
+          "answer": 1,
+          "explain": "我早上喝咖啡，不喝茶."
+        },
+        {
+          "q": "¿Cuánto té bebe Wang Ming al día?",
+          "options": [
+            "Tres tazas",
+            "Tres botellas",
+            "No bebe té"
+          ],
+          "answer": 0,
+          "explain": "他每天喝三杯: tres tazas (杯)."
+        }
+      ],
+      "grammarIds": [
+        "bu-mei",
+        "measure-words",
+        "hen-adj"
+      ],
+      "explain": "喜欢 + verbo + objeto se repite con distintas comidas, y 不 niega los gustos. Al final, 三杯 sin nombre: el clasificador basta porque ya se sabe que es té."
+    },
+    {
+      "id": "u05-128",
+      "type": "reading",
+      "skill": "reading",
+      "level": 2,
+      "text": "服务员：你们好！你们要什么？\n雨果：我要一碗面条，不要肉。\n王明：我要米饭和鸡蛋。请给我们两瓶啤酒。\n服务员：好的。你们要水果吗？\n雨果：要，一个苹果。多少钱？\n服务员：面条十五块，米饭五块，鸡蛋三块，啤酒十块，苹果两块。",
+      "es": "Camarero: ¡Hola! ¿Qué quieren?\nHugo: Quiero un bol de fideos, sin carne.\nWang Ming: Yo quiero arroz y huevos. Dos cervezas, por favor.\nCamarero: Vale. ¿Quieren fruta?\nHugo: Sí, una manzana. ¿Cuánto es?\nCamarero: Los fideos, 15; el arroz, 5; los huevos, 3; la cerveza, 10; la manzana, 2.",
+      "questions": [
+        {
+          "q": "¿Qué pide Hugo?",
+          "options": [
+            "Fideos con carne",
+            "Fideos sin carne y una manzana",
+            "Arroz y huevos"
+          ],
+          "answer": 1,
+          "explain": "一碗面条，不要肉 y después 一个苹果."
+        },
+        {
+          "q": "¿Cuántas cervezas piden?",
+          "options": [
+            "Una",
+            "Dos",
+            "Diez"
+          ],
+          "answer": 1,
+          "explain": "两瓶啤酒: dos botellas. 十块 es el precio."
+        },
+        {
+          "q": "¿Cuánto cuesta la manzana?",
+          "options": [
+            "Dos yuanes",
+            "Tres yuanes",
+            "Cinco yuanes"
+          ],
+          "answer": 0,
+          "explain": "苹果两块: con 两 porque va delante del clasificador 块."
+        }
+      ],
+      "new": [
+        "好的"
+      ],
+      "grammarIds": [
+        "measure-words",
+        "qing",
+        "price-age"
+      ],
+      "explain": "Un pedido completo: 我要 + clasificador + plato, 请给我们 para la bebida y 多少钱 para el precio. Fíjate en 两块 (precio) frente a 十块: 两 también se usa con 块."
+    },
+    {
+      "id": "u05-129",
+      "type": "reading",
+      "skill": "reading",
+      "level": 3,
+      "text": "昨天是我的生日，我和朋友一起去饭店吃饭。我们吃了很多菜，很好吃，有点儿热。我们喝了四瓶啤酒和两杯茶。安娜不喝啤酒，她喝了一杯牛奶。一共一百二十块，我的朋友给钱，我很高兴。",
+      "es": "Ayer fue mi cumpleaños y fui con mis amigos a comer a un restaurante. Comimos muchos platos, muy ricos, un poco picantes. Bebimos cuatro cervezas y dos tés. Ana no bebe cerveza; ella bebió un vaso de leche. En total, 120 yuanes; pagaron mis amigos y me puse muy contento.",
+      "questions": [
+        {
+          "q": "¿Por qué fueron al restaurante?",
+          "options": [
+            "Por el cumpleaños del narrador",
+            "Por el cumpleaños de Ana",
+            "Porque tenían clase"
+          ],
+          "answer": 0,
+          "explain": "昨天是我的生日."
+        },
+        {
+          "q": "¿Qué bebió Ana?",
+          "options": [
+            "Cerveza",
+            "Té",
+            "Leche"
+          ],
+          "answer": 2,
+          "explain": "她喝了一杯牛奶; 不喝啤酒 dice que no bebe cerveza."
+        },
+        {
+          "q": "¿Quién pagó?",
+          "options": [
+            "El narrador",
+            "Sus amigos",
+            "Ana sola"
+          ],
+          "answer": 1,
+          "explain": "我的朋友给钱: pagaron los amigos, por eso el narrador está contento."
+        }
+      ],
+      "new": [
+        "一共"
+      ],
+      "grammarIds": [
+        "le",
+        "measure-words",
+        "gei",
+        "yidianr-youdianr"
+      ],
+      "explain": "了 marca lo que ya ocurrió (吃了, 喝了), mientras que 不喝啤酒 describe un hábito y por eso lleva 不. 一共 introduce el total de la cuenta."
+    },
+    {
+      "id": "u05-130",
+      "type": "fill-blank",
+      "skill": "grammar",
+      "level": 1,
+      "zh": "我要一＿茶。",
+      "answer": "杯",
+      "options": [
+        "杯",
+        "个",
+        "瓶",
+        "碗"
+      ],
+      "es": "Quiero una taza de té.",
+      "py": "Wǒ yào yì bēi chá.",
+      "grammarIds": [
+        "measure-words"
+      ],
+      "explain": "El té se pide por tazas o vasos: 杯. 瓶 sería una botella (más propio de cerveza o agua) y 碗 un cuenco."
+    },
+    {
+      "id": "u05-131",
+      "type": "fill-blank",
+      "skill": "grammar",
+      "level": 1,
+      "zh": "请给我＿瓶水。",
+      "answer": "两",
+      "options": [
+        "两",
+        "二",
+        "几",
+        "多少"
+      ],
+      "es": "Deme dos botellas de agua, por favor.",
+      "py": "Qǐng gěi wǒ liǎng píng shuǐ.",
+      "grammarIds": [
+        "numbers",
+        "measure-words"
+      ],
+      "explain": "Delante de clasificador (瓶) «dos» es 两. 几瓶 sería una pregunta y 多少 no se combina así con clasificadores."
+    },
+    {
+      "id": "u05-132",
+      "type": "fill-blank",
+      "skill": "grammar",
+      "level": 2,
+      "zh": "我＿喝一杯咖啡。",
+      "answer": "想",
+      "options": [
+        "想",
+        "是",
+        "有",
+        "很"
+      ],
+      "es": "Quiero tomar un café.",
+      "py": "Wǒ xiǎng hē yì bēi kāfēi.",
+      "grammarIds": [
+        "modal-verbs"
+      ],
+      "explain": "Delante de un verbo (喝) el modal es 想 (tener ganas de). 是, 有 y 很 no pueden preceder a otro verbo de esta forma."
+    },
+    {
+      "id": "u05-133",
+      "type": "fill-blank",
+      "skill": "grammar",
+      "level": 2,
+      "zh": "这个菜＿热，我不想吃。",
+      "answer": "有点儿",
+      "options": [
+        "有点儿",
+        "一点儿",
+        "很多",
+        "太"
+      ],
+      "es": "Este plato está un poco picante, no quiero comerlo.",
+      "py": "Zhège cài yǒudiǎnr rè, wǒ bù xiǎng chī.",
+      "grammarIds": [
+        "yidianr-youdianr"
+      ],
+      "explain": "La frase expresa una pega (por eso no quiere comerlo): 有点儿 + adjetivo. 太 necesitaría 了 al final y 一点儿 no va delante de adjetivos.",
+      "new": [
+        "太"
+      ]
+    },
+    {
+      "id": "u05-134",
+      "type": "fill-blank",
+      "skill": "grammar",
+      "level": 2,
+      "zh": "茶很＿，我很喜欢。",
+      "answer": "好喝",
+      "options": [
+        "好喝",
+        "好吃",
+        "好",
+        "喝"
+      ],
+      "es": "El té está muy bueno, me gusta mucho.",
+      "py": "Chá hěn hǎohē, wǒ hěn xǐhuan.",
+      "grammarIds": [
+        "hen-adj"
+      ],
+      "explain": "Para una bebida se dice 好喝 («bueno de beber»); 好吃 es para comida. 很好 a secas es «muy bueno» en general, pero aquí se valora el sabor."
+    },
+    {
+      "id": "u05-135",
+      "type": "fill-blank",
+      "skill": "grammar",
+      "level": 2,
+      "zh": "我们一起吃饭＿！",
+      "answer": "吧",
+      "options": [
+        "吧",
+        "吗",
+        "呢",
+        "了"
+      ],
+      "es": "¡Vamos a comer juntos!",
+      "py": "Wǒmen yìqǐ chī fàn ba!",
+      "grammarIds": [
+        "ba"
+      ],
+      "explain": "吧 al final convierte la frase en una propuesta («vamos a…»). Con 吗 sería una pregunta de sí/no y con 了 indicaría que ya habéis comido."
+    },
+    {
+      "id": "u05-136",
+      "type": "order-words",
+      "skill": "grammar",
+      "level": 1,
+      "zh": "我想喝一杯茶。",
+      "py": "Wǒ xiǎng hē yì bēi chá.",
+      "es": "Quiero tomar una taza de té.",
+      "grammarIds": [
+        "modal-verbs",
+        "measure-words"
+      ],
+      "explain": "Sujeto + 想 + verbo + cantidad + clasificador + nombre. 想 va siempre delante del verbo 喝, y 一杯 delante de 茶."
+    },
+    {
+      "id": "u05-137",
+      "type": "order-words",
+      "skill": "grammar",
+      "level": 1,
+      "zh": "请给我一碗米饭。",
+      "py": "Qǐng gěi wǒ yì wǎn mǐfàn.",
+      "es": "Deme un bol de arroz, por favor.",
+      "grammarIds": [
+        "qing",
+        "gei",
+        "measure-words"
+      ],
+      "explain": "请 abre la petición; 给 lleva primero a quién (我) y después qué (一碗米饭): «dar a mí un bol de arroz»."
+    },
+    {
+      "id": "u05-138",
+      "type": "order-words",
+      "skill": "grammar",
+      "level": 2,
+      "zh": "你喜欢中国菜吗？",
+      "py": "Nǐ xǐhuan Zhōngguó cài ma?",
+      "es": "¿Te gusta la comida china?",
+      "grammarIds": [
+        "ma"
+      ],
+      "explain": "En chino «gustar» tiene sujeto normal: 你喜欢 + lo que gusta. Nada de «a ti te gusta»; y 吗 cierra la pregunta."
+    },
+    {
+      "id": "u05-139",
+      "type": "order-words",
+      "skill": "grammar",
+      "level": 2,
+      "zh": "这个菜有点儿冷。",
+      "py": "Zhège cài yǒudiǎnr lěng.",
+      "es": "Este plato está un poco frío.",
+      "grammarIds": [
+        "yidianr-youdianr",
+        "demonstratives"
+      ],
+      "explain": "这个菜 es el tema; después 有点儿 y por último el adjetivo. No hay 是 ni 很: 有点儿 ya acompaña al adjetivo."
+    },
+    {
+      "id": "u05-140",
+      "type": "order-words",
+      "skill": "grammar",
+      "level": 2,
+      "zh": "我们一起去饭店吃饭吧。",
+      "py": "Wǒmen yìqǐ qù fàndiàn chī fàn ba.",
+      "es": "Vamos juntos al restaurante a comer.",
+      "grammarIds": [
+        "ba",
+        "lai-qu"
+      ],
+      "explain": "一起 va delante del primer verbo; 去饭店 (ir al restaurante) precede a 吃饭 (comer), el propósito; 吧 cierra la propuesta."
+    },
+    {
+      "id": "u05-141",
+      "type": "build-character",
+      "skill": "characters",
+      "level": 1,
+      "hanzi": "吃",
+      "py": "chī",
+      "meaning": "comer",
+      "components": [
+        "口",
+        "乞"
+      ],
+      "distractors": [
+        "饣",
+        "日",
+        "木"
+      ],
+      "explain": "吃 = 口 (boca, el significado) + 乞 (qǐ, que da una pista del sonido). Como 喝 (beber), lleva la boca a la izquierda."
+    },
+    {
+      "id": "u05-142",
+      "type": "build-character",
+      "skill": "characters",
+      "level": 2,
+      "hanzi": "想",
+      "py": "xiǎng",
+      "meaning": "querer; pensar",
+      "components": [
+        "相",
+        "心"
+      ],
+      "distractors": [
+        "口",
+        "女",
+        "门"
+      ],
+      "explain": "想 = 相 (xiāng, el sonido) arriba + 心 (corazón) abajo: querer o pensar algo sale del corazón. Muchos verbos de sentimiento llevan 心."
+    },
+    {
+      "id": "u05-143",
+      "type": "build-character",
+      "skill": "characters",
+      "level": 1,
+      "hanzi": "饭",
+      "py": "fàn",
+      "meaning": "comida; arroz cocido",
+      "components": [
+        "饣",
+        "反"
+      ],
+      "distractors": [
+        "口",
+        "米",
+        "水"
+      ],
+      "explain": "饭 = 饣 (el radical de comida) + 反 (fǎn, el sonido). El radical 饣 aparece en 饭店 (restaurante) y en casi todo lo que se come."
+    },
+    {
+      "id": "u05-144",
+      "type": "radical-meaning",
+      "skill": "characters",
+      "level": 1,
+      "radical": "饣",
+      "options": [
+        "comida",
+        "agua",
+        "fuego",
+        "metal"
+      ],
+      "answer": 0,
+      "examples": [
+        "饭",
+        "饭店",
+        "饿"
+      ],
+      "explain": "饣 es la forma comprimida de 食 (comer, alimento). Lo llevan 饭 (comida), 饭店 (restaurante) y 饿 (tener hambre).",
+      "new": [
+        "饿"
+      ]
+    },
+    {
+      "id": "u05-145",
+      "type": "radical-meaning",
+      "skill": "characters",
+      "level": 1,
+      "radical": "艹",
+      "options": [
+        "árbol",
+        "hierba; planta",
+        "boca",
+        "mujer"
+      ],
+      "answer": 1,
+      "examples": [
+        "茶",
+        "菜",
+        "苹果"
+      ],
+      "explain": "艹 (hierba) corona los caracteres de plantas y vegetales: 茶 (té), 菜 (verdura, plato) y 苹 (de 苹果, manzana)."
+    },
+    {
+      "id": "u05-146",
+      "type": "radical-meaning",
+      "skill": "characters",
+      "level": 1,
+      "radical": "氵",
+      "options": [
+        "fuego",
+        "hielo",
+        "agua",
+        "tierra"
+      ],
+      "answer": 2,
+      "examples": [
+        "酒",
+        "没",
+        "汉语"
+      ],
+      "explain": "氵 son «tres gotas de agua», la forma comprimida de 水. Aparece en 酒 (alcohol, como en 啤酒), en 没 y en 汉 (de 汉语, chino). 冫 con dos gotas es «hielo», como en 冷.",
+      "new": [
+        "汉语"
+      ]
+    },
+    {
+      "id": "u05-147",
+      "type": "speed-pinyin-hanzi",
+      "skill": "vocabulary",
+      "level": 1,
+      "pairs": [
+        {
+          "py": "chī",
+          "zh": "吃"
+        },
+        {
+          "py": "hē",
+          "zh": "喝"
+        },
+        {
+          "py": "chá",
+          "zh": "茶"
+        },
+        {
+          "py": "shuǐ",
+          "zh": "水"
+        },
+        {
+          "py": "kāfēi",
+          "zh": "咖啡"
+        },
+        {
+          "py": "niúnǎi",
+          "zh": "牛奶"
+        },
+        {
+          "py": "píjiǔ",
+          "zh": "啤酒"
+        },
+        {
+          "py": "mǐfàn",
+          "zh": "米饭"
+        }
+      ],
+      "explain": "Los dos verbos de la unidad (吃, 喝) y seis cosas para comer o beber. Fíjate en los tonos de las bebidas: chá sube, shuǐ baja y sube, kāfēi es todo alto."
+    },
+    {
+      "id": "u05-148",
+      "type": "speed-pinyin-hanzi",
+      "skill": "vocabulary",
+      "level": 2,
+      "pairs": [
+        {
+          "py": "miàntiáo",
+          "zh": "面条"
+        },
+        {
+          "py": "jīdàn",
+          "zh": "鸡蛋"
+        },
+        {
+          "py": "píngguǒ",
+          "zh": "苹果"
+        },
+        {
+          "py": "shuǐguǒ",
+          "zh": "水果"
+        },
+        {
+          "py": "fúwùyuán",
+          "zh": "服务员"
+        },
+        {
+          "py": "fàndiàn",
+          "zh": "饭店"
+        },
+        {
+          "py": "mǎidān",
+          "zh": "买单"
+        },
+        {
+          "py": "xǐhuan",
+          "zh": "喜欢"
+        }
+      ],
+      "explain": "苹果 y 水果 comparten 果 (fruto) y el pinyin -guǒ. 饭店 y 服务员 empiezan ambas por f-: distínguelas por el tono (fàn cae, fú sube)."
+    },
+    {
+      "id": "u05-149",
+      "type": "speed-match",
+      "skill": "vocabulary",
+      "level": 1,
+      "pairs": [
+        {
+          "zh": "茶",
+          "es": "té"
+        },
+        {
+          "zh": "水",
+          "es": "agua"
+        },
+        {
+          "zh": "咖啡",
+          "es": "café"
+        },
+        {
+          "zh": "牛奶",
+          "es": "leche"
+        },
+        {
+          "zh": "啤酒",
+          "es": "cerveza"
+        },
+        {
+          "zh": "米饭",
+          "es": "arroz"
+        },
+        {
+          "zh": "面条",
+          "es": "fideos"
+        }
+      ],
+      "explain": "Las bebidas se piden con 杯 (茶, 水, 咖啡, 牛奶) o 瓶 (啤酒, 水); la comida en bol, con 碗 (米饭, 面条)."
+    },
+    {
+      "id": "u05-150",
+      "type": "speed-match",
+      "skill": "vocabulary",
+      "level": 1,
+      "pairs": [
+        {
+          "zh": "杯",
+          "es": "vaso; taza"
+        },
+        {
+          "zh": "瓶",
+          "es": "botella"
+        },
+        {
+          "zh": "碗",
+          "es": "cuenco; bol"
+        },
+        {
+          "zh": "块",
+          "es": "yuan (dinero)"
+        },
+        {
+          "zh": "热",
+          "es": "caliente"
+        },
+        {
+          "zh": "冷",
+          "es": "frío"
+        },
+        {
+          "zh": "多",
+          "es": "mucho"
+        },
+        {
+          "zh": "少",
+          "es": "poco"
+        }
+      ],
+      "explain": "Tres clasificadores de recipientes, la unidad de dinero y dos parejas de adjetivos opuestos (热/冷, 多/少) que se usan con 一点儿 y 有点儿."
+    },
+    {
+      "id": "u05-151",
+      "type": "tone-pair",
+      "skill": "tones",
+      "level": 1,
+      "zh": "咖啡",
+      "py": "kāfēi",
+      "pattern": "11",
+      "options": [
+        "11",
+        "14",
+        "21",
+        "41"
+      ],
+      "explain": "Dos primeros tonos: kā y fēi se mantienen altos y planos, como una nota sostenida. Es el patrón más fácil de los préstamos."
+    },
+    {
+      "id": "u05-152",
+      "type": "tone-pair",
+      "skill": "tones",
+      "level": 1,
+      "zh": "喜欢",
+      "py": "xǐhuan",
+      "pattern": "30",
+      "options": [
+        "30",
+        "33",
+        "31",
+        "20"
+      ],
+      "explain": "xǐ es 3.º tono y huan es neutro (0): corto y sin tilde. Como en 晚上 o 早上, el neutro se apoya en la sílaba anterior."
+    },
+    {
+      "id": "u05-153",
+      "type": "tone-pair",
+      "skill": "tones",
+      "level": 2,
+      "zh": "面条",
+      "py": "miàntiáo",
+      "pattern": "42",
+      "options": [
+        "42",
+        "44",
+        "41",
+        "24"
+      ],
+      "explain": "miàn cae (4.º tono) y tiáo sube (2.º tono): 4-2, una caída seguida de una subida. Compáralo con 饭店 (fàndiàn), que es 4-4: las dos sílabas caen."
+    },
+    {
+      "id": "u05-154",
+      "type": "tone-pair",
+      "skill": "tones",
+      "level": 2,
+      "zh": "啤酒",
+      "py": "píjiǔ",
+      "pattern": "23",
+      "options": [
+        "23",
+        "22",
+        "33",
+        "21"
+      ],
+      "explain": "pí sube (2.º tono) y jiǔ baja y vuelve a subir (3.º tono): 2-3. Compáralo con 牛奶 (niúnǎi), que tiene el mismo patrón."
+    },
+    {
+      "id": "u05-155",
+      "type": "tone-sandhi",
+      "skill": "tones",
+      "level": 1,
+      "zh": "一杯",
+      "lexical": "yī bēi",
+      "spoken": "yì bēi",
+      "rule": "yi",
+      "explain": "Delante de un 1.º tono (bēi), 一 se pronuncia yì (4.º tono). Lo mismo pasa con 一瓶 (yì píng) y 一碗 (yì wǎn); solo delante de 4.º tono se dice yí (一个)."
+    },
+    {
+      "id": "u05-156",
+      "type": "tone-sandhi",
+      "skill": "tones",
+      "level": 1,
+      "zh": "不要",
+      "lexical": "bù yào",
+      "spoken": "bú yào",
+      "rule": "bu",
+      "explain": "要 es 4.º tono, así que 不 cambia a 2.º: bú yào. En 不想 (bù xiǎng) y 不喝 (bù hē) no cambia, porque 想 y 喝 no son 4.º tono."
+    },
+    {
+      "id": "u05-157",
+      "type": "tone-sandhi",
+      "skill": "tones",
+      "level": 2,
+      "zh": "很冷",
+      "lexical": "hěn lěng",
+      "spoken": "hén lěng",
+      "rule": "33",
+      "explain": "Dos terceros tonos seguidos: el primero pasa a 2.º tono (hén lěng). En 很热 (hěn rè) no cambia, porque 热 es 4.º tono."
+    },
+    {
+      "id": "u05-158",
+      "type": "pinyin-input",
+      "skill": "vocabulary",
+      "level": 1,
+      "zh": "喜欢",
+      "py": "xǐhuan",
+      "meaning": "gustar",
+      "explain": "xǐ (3.º tono) + huan (neutro). La segunda sílaba se escribe sin tilde; la x- inicial es la misma de 谢谢 y 学生."
+    },
+    {
+      "id": "u05-159",
+      "type": "pinyin-input",
+      "skill": "vocabulary",
+      "level": 1,
+      "zh": "啤酒",
+      "py": "píjiǔ",
+      "meaning": "cerveza",
+      "explain": "pí (2.º tono) + jiǔ (3.º tono). La final -iu se escribe sin la o, aunque se oiga algo parecido a «iou»."
+    },
+    {
+      "id": "u05-160",
+      "type": "pinyin-input",
+      "skill": "vocabulary",
+      "level": 2,
+      "zh": "服务员",
+      "py": "fúwùyuán",
+      "meaning": "camarero/a",
+      "explain": "fú (2.º) + wù (4.º) + yuán (2.º). En yuán la u representa la ü, porque va tras y; la tilde se coloca sobre la a."
+    },
+    {
+      "id": "u05-161",
+      "type": "pinyin-input",
+      "skill": "vocabulary",
+      "level": 1,
+      "zh": "咖啡",
+      "py": "kāfēi",
+      "meaning": "café",
+      "explain": "kā (1.º tono) + fēi (1.º tono). La k- es aspirada y la final -ei suena como «ei» en «rey». Dos tildes planas."
+    },
+    {
+      "id": "u05-162",
+      "type": "matching",
+      "skill": "vocabulary",
+      "level": 1,
+      "pairs": [
+        {
+          "zh": "吃",
+          "py": "chī",
+          "es": "comer"
+        },
+        {
+          "zh": "喝",
+          "py": "hē",
+          "es": "beber"
+        },
+        {
+          "zh": "喜欢",
+          "py": "xǐhuan",
+          "es": "gustar"
+        },
+        {
+          "zh": "想",
+          "py": "xiǎng",
+          "es": "querer; tener ganas"
+        },
+        {
+          "zh": "要",
+          "py": "yào",
+          "es": "querer; pedir"
+        },
+        {
+          "zh": "给",
+          "py": "gěi",
+          "es": "dar"
+        }
+      ],
+      "grammarIds": [
+        "modal-verbs",
+        "gei"
+      ],
+      "explain": "Los verbos de la unidad. 想 y 要 se parecen, pero 想 va con otro verbo (想喝) y 要 puede ir directo con un nombre (要一杯茶)."
+    },
+    {
+      "id": "u05-163",
+      "type": "matching",
+      "skill": "vocabulary",
+      "level": 1,
+      "pairs": [
+        {
+          "zh": "饭店",
+          "py": "fàndiàn",
+          "es": "restaurante"
+        },
+        {
+          "zh": "服务员",
+          "py": "fúwùyuán",
+          "es": "camarero/a"
+        },
+        {
+          "zh": "点菜",
+          "py": "diǎn cài",
+          "es": "pedir platos"
+        },
+        {
+          "zh": "买单",
+          "py": "mǎidān",
+          "es": "pedir la cuenta"
+        },
+        {
+          "zh": "钱",
+          "py": "qián",
+          "es": "dinero"
+        }
+      ],
+      "explain": "El vocabulario del restaurante en orden de uso: llegar al 饭店, llamar al 服务员, 点菜, y al final 买单 y pagar con 钱."
+    },
+    {
+      "id": "u05-164",
+      "type": "matching",
+      "skill": "vocabulary",
+      "level": 2,
+      "pairs": [
+        {
+          "zh": "好吃",
+          "py": "hǎochī",
+          "es": "rico (comida)"
+        },
+        {
+          "zh": "好喝",
+          "py": "hǎohē",
+          "es": "rico (bebida)"
+        },
+        {
+          "zh": "一点儿",
+          "py": "yìdiǎnr",
+          "es": "un poco (de algo)"
+        },
+        {
+          "zh": "有点儿",
+          "py": "yǒudiǎnr",
+          "es": "un poco (queja)"
+        },
+        {
+          "zh": "一起",
+          "py": "yìqǐ",
+          "es": "juntos"
+        }
+      ],
+      "grammarIds": [
+        "yidianr-youdianr"
+      ],
+      "explain": "Dos parejas fáciles de confundir: 好吃/好喝 cambian según se coma o se beba, y 一点儿/有点儿 según acompañen a un nombre o a un adjetivo negativo."
+    }
+  ]
+}

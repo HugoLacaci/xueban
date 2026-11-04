@@ -2,7 +2,40 @@
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { ChineseText } from "@/components/target/target-text";
-import { hasTarget as hasHanzi } from "@/lib/languages/helpers";
+import { getActivePack, targetLang } from "@/lib/languages/registry";
+
+type HNode = { type: string; value?: string; tagName?: string; properties?: Record<string, unknown>; children?: HNode[] };
+
+/** Plugin rehype: envuelve cada tramo de texto en la lengua meta en <span lang="…"> (lectores de pantalla, fuente, popup). */
+function rehypeTargetLang() {
+  const pack = getActivePack();
+  const lang = targetLang();
+  // la puntuación de ancho completo se queda dentro del tramo
+  const isT = (c: string) => pack.isTargetChar(c) || /[　-〿！-～]/.test(c);
+  const split = (s: string): HNode[] => {
+    const out: HNode[] = [];
+    let buf = "";
+    let inT = false;
+    const flush = () => {
+      if (!buf) return;
+      out.push(inT ? { type: "element", tagName: "span", properties: { lang, dataTarget: "1" }, children: [{ type: "text", value: buf }] } : { type: "text", value: buf });
+      buf = "";
+    };
+    for (const c of Array.from(s)) {
+      const t = isT(c);
+      if (t !== inT && buf) flush();
+      inT = t;
+      buf += c;
+    }
+    flush();
+    return out;
+  };
+  const walk = (n: HNode) => {
+    if (!n.children || n.tagName === "code" || n.tagName === "pre") return;
+    n.children = n.children.flatMap((c) => (c.type === "text" && c.value && pack.hasTargetText(c.value) ? split(c.value) : (walk(c), [c])));
+  };
+  return (tree: HNode) => walk(tree);
+}
 
 /** Markdown en español con texto chino interactivo (popup + pinyin) dentro de los párrafos. */
 export function Markdown({ children, className }: { children: string; className?: string }) {
@@ -10,6 +43,7 @@ export function Markdown({ children, className }: { children: string; className?
     <div className={`prose-xb max-w-[68ch] text-[15px] leading-relaxed text-ink-soft ${className ?? ""}`}>
       <ReactMarkdown
         remarkPlugins={[remarkGfm]}
+        rehypePlugins={[rehypeTargetLang]}
         components={{
           h1: (p) => <h2 className="font-serif-es mb-2 mt-5 text-xl font-semibold text-ink" {...p} />,
           h2: (p) => <h3 className="font-serif-es mb-1.5 mt-5 text-lg font-semibold text-ink" {...p} />,
@@ -31,10 +65,11 @@ export function Markdown({ children, className }: { children: string; className?
           th: (p) => <th className="border-b border-line bg-paper-sunk px-2.5 py-1.5 text-left font-medium text-ink" {...p} />,
           td: (p) => <td className="border-b border-line/70 px-2.5 py-1.5 align-top" {...p} />,
           blockquote: (p) => <blockquote className="my-3 border-l-[3px] border-cinnabar/60 bg-paper-sunk/50 py-1.5 pl-3 pr-2 text-ink-soft" {...p} />,
-          text: ({ children }) => {
-            const t = String(children);
-            if (!hasHanzi(t)) return <>{t}</>;
-            return <ChineseText text={t} size="sm" ruby={false} markUnknown={false} />;
+          span: ({ node, ...p }) => {
+            void node;
+            const props = p as Record<string, unknown> & { children?: React.ReactNode };
+            if (props["data-target"] === "1") return <ChineseText text={String(props.children ?? "")} size="sm" ruby={false} markUnknown={false} />;
+            return <span {...p} />;
           },
         }}
       >

@@ -31,6 +31,18 @@ const ROUTES = (l) => [
   ["lectura", `/${l}/lectura`],
   ["lectura-texto", `/${l}/lectura/${SAMPLE[l].reading}`],
   ["videos", `/${l}/videos`],
+  ["apuntes", `/${l}/apuntes`],
+  ["escuchar-leer", `/${l}/escuchar-leer`],
+  ...(l === "zh"
+    ? [
+        ["apuntes-guia", `/${l}/apuntes/guia`],
+        ["apuntes-profesor", `/${l}/apuntes/profesor`],
+        ["apuntes-cuaderno", `/${l}/apuntes/cuaderno`],
+        ["apuntes-errores", `/${l}/apuntes/errores`],
+        ["tutor", `/${l}/tutor`],
+        ["origen-articulo", `/${l}/study-hall/articulo/origen-seis-categorias`],
+      ]
+    : []),
   ["study-hall", `/${l}/study-hall`],
   ["progreso", `/${l}/progreso`],
   ["ajustes", `/${l}/ajustes`],

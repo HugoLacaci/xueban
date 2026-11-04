@@ -14,6 +14,7 @@ import { ReadingTF } from "./reading-tf";
 import { Matching } from "./matching";
 import { Writing } from "./writing";
 import { Speaking } from "./speaking";
+import { FindError, Cloze, FreeTranslate, Speed, DictationPinyin, TransformInput } from "./extra";
 import { targetLang } from "@/lib/languages/registry";
 
 export interface ExerciseProps<E extends Exercise = Exercise> {
@@ -32,7 +33,33 @@ export function ExerciseView({ ex, onSubmit, result }: ExerciseProps) {
     case "classifier":
     case "tone-pair":
     case "comprehension":
+    case "listen-answer":
+    case "dialogue-complete":
+    case "dialogue-who":
+    case "situation":
+    case "radical-meaning":
+    case "tone-sandhi":
       return <MultipleChoice ex={ex} onSubmit={onSubmit} result={result} />;
+    case "dictation-pinyin":
+      return <DictationPinyin ex={ex} onSubmit={onSubmit} result={result} />;
+    case "transform":
+    case "build-question":
+      return <TransformInput ex={ex} onSubmit={onSubmit} result={result} />;
+    case "listen-tf":
+      return <ReadingTF ex={ex} onSubmit={onSubmit} result={result} />;
+    case "dialogue-order":
+      return <Tiles ex={ex} onSubmit={onSubmit} result={result} />;
+    case "speak-answer":
+      return <Speaking ex={ex} onSubmit={onSubmit} result={result} />;
+    case "find-error":
+      return <FindError ex={ex} onSubmit={onSubmit} result={result} />;
+    case "cloze":
+      return <Cloze ex={ex} onSubmit={onSubmit} result={result} />;
+    case "translate-free":
+      return <FreeTranslate ex={ex} onSubmit={onSubmit} result={result} />;
+    case "speed-pinyin-hanzi":
+    case "speed-match":
+      return <Speed ex={ex} onSubmit={onSubmit} result={result} />;
     case "pinyin-input":
       return <PinyinInput ex={ex} onSubmit={onSubmit} result={result} />;
     case "dictation":

@@ -1,0 +1,117 @@
+/* ==========================================================================
+   Apuntes 笔记: editor de bloques, avisos, fórmulas, panel de corrección, impresión en papel
+   ========================================================================== */
+
+/* ---------- Editor (ProseMirror) ---------- */
+.xb-editor {
+  min-height: 10rem;
+  font-size: 15px;
+  line-height: 1.7;
+  color: rgb(var(--ink-soft));
+}
+.xb-editor:focus { outline: none; }
+.xb-editor > * + * { margin-top: 0.5rem; }
+.xb-editor p { margin: 0; }
+.xb-editor h2 { font-family: var(--font-serif); font-size: 1.35rem; font-weight: 600; color: rgb(var(--ink)); margin-top: 1.1rem; }
+.xb-editor h3 { font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: rgb(var(--ink-faint)); margin-top: 1rem; }
+.xb-editor ul { list-style: disc; padding-left: 1.3rem; }
+.xb-editor ol { list-style: decimal; padding-left: 1.3rem; }
+.xb-editor li > p { margin: 0; }
+.xb-editor li::marker { color: rgb(var(--ink-faint)); }
+.xb-editor ul[data-type="taskList"] { list-style: none; padding-left: 0; }
+.xb-editor ul[data-type="taskList"] li { display: flex; gap: 0.5rem; align-items: flex-start; }
+.xb-editor ul[data-type="taskList"] li > label { flex: 0 0 auto; margin-top: 0.3rem; }
+.xb-editor ul[data-type="taskList"] li > label input { accent-color: rgb(var(--celadon)); width: 1rem; height: 1rem; }
+.xb-editor ul[data-type="taskList"] li[data-checked="true"] > div { text-decoration: line-through; color: rgb(var(--ink-faint)); }
+.xb-editor blockquote { border-left: 3px solid rgb(var(--cinnabar) / 0.6); background: rgb(var(--paper-sunk) / 0.5); padding: 0.4rem 0.75rem; border-radius: 0 8px 8px 0; }
+.xb-editor strong { color: rgb(var(--ink)); font-weight: 600; }
+.xb-editor code { background: rgb(var(--paper-sunk)); border-radius: 4px; padding: 0 0.3rem; font-size: 0.9em; }
+.xb-editor pre { background: rgb(var(--paper-sunk)); border-radius: 8px; padding: 0.6rem 0.8rem; overflow-x: auto; font-size: 0.85em; }
+.xb-editor hr { border: 0; height: 2px; background: linear-gradient(90deg, transparent, rgb(var(--ink) / 0.4), transparent); margin: 1rem 0; }
+.xb-editor a { color: rgb(var(--indigo)); text-decoration: underline; text-underline-offset: 3px; }
+.xb-editor s { color: rgb(var(--danger) / 0.8); }
+.xb-editor p.is-editor-empty:first-child::before, .xb-editor p.is-empty::before {
+  content: attr(data-placeholder);
+  color: rgb(var(--ink-faint) / 0.7);
+  float: left; height: 0; pointer-events: none;
+}
+/* tablas */
+.xb-editor table { border-collapse: collapse; width: 100%; margin: 0.5rem 0; table-layout: fixed; font-size: 0.92em; }
+.xb-editor th, .xb-editor td { border: 1px solid rgb(var(--line)); padding: 0.35rem 0.6rem; vertical-align: top; min-width: 4rem; position: relative; }
+.xb-editor th { background: rgb(var(--paper-sunk)); font-weight: 600; color: rgb(var(--ink)); text-align: left; }
+.xb-editor td > p, .xb-editor th > p { margin: 0; }
+.xb-editor .selectedCell::after { content: ""; position: absolute; inset: 0; background: rgb(var(--cinnabar) / 0.08); pointer-events: none; }
+.xb-editor .tableWrapper { overflow-x: auto; border-radius: 8px; }
+/* texto chino dentro del editor */
+.xb-editor [lang^="zh"], .xb-editor .zh { font-family: var(--font-zh-sans); }
+/* selección de bloques atómicos */
+.xb-editor .ProseMirror-selectednode > .xb-block, .xb-editor .xb-block[data-selected] { outline: none; }
+.xb-editor .ProseMirror-gapcursor::after { border-top: 1px solid rgb(var(--ink)); }
+.xb-editor img { max-width: 100%; }
+.xb-editor-wrap .xb-block [contenteditable="false"] { user-select: text; }
+
+/* ---------- Avisos (callouts) ---------- */
+.callout { --c: var(--indigo); border-color: rgb(var(--c) / 0.35); background: rgb(var(--c) / 0.06); }
+.callout-tip { --c: var(--gold); }
+.callout-warn { --c: var(--cinnabar); }
+.callout-teacher { --c: var(--indigo); }
+.callout-error { --c: var(--danger); }
+.callout-mnemonic { --c: var(--celadon); }
+.callout-culture { --c: var(--gold); }
+.callout .callout-icon { background: rgb(var(--c) / 0.14); color: rgb(var(--c)); }
+.callout .callout-label { color: rgb(var(--c)); }
+.callout .callout-body p { margin: 0; }
+.callout .callout-body p + p { margin-top: 0.25rem; }
+.callout .callout-body p.is-empty::before { content: "Escribe el aviso…"; color: rgb(var(--ink-faint) / 0.7); float: left; height: 0; pointer-events: none; }
+.callout-label select option { background: rgb(var(--paper-raised)); color: rgb(var(--ink)); text-transform: none; }
+
+/* ---------- Fórmulas: fichas por función ---------- */
+.formula-chip { --c: var(--ink-faint); border-color: rgb(var(--c) / 0.45); background: rgb(var(--c) / 0.1); color: rgb(var(--ink)); }
+.role-subject { --c: var(--tone-3); }
+.role-time { --c: var(--gold); }
+.role-place { --c: var(--tone-2); }
+.role-verb { --c: var(--cinnabar); }
+.role-object { --c: var(--tone-4); }
+.role-particle { --c: var(--indigo); }
+.role-adverb { --c: var(--celadon-ink); }
+.role-adjective { --c: var(--tone-1); }
+.role-measure { --c: var(--gold-ink); }
+.role-number { --c: var(--gold-ink); }
+.role-question { --c: var(--cinnabar-ink); }
+.role-other { --c: var(--ink-faint); }
+
+/* ---------- Panel de corrección: colores por tipo de error ---------- */
+.corr-tok { border-radius: 4px; padding: 0 0.15em; }
+.corr-ok { color: rgb(var(--ink)); }
+.corr-missing { color: rgb(var(--danger)); border: 1px dashed rgb(var(--danger) / 0.7); }
+.corr-extra { color: rgb(var(--ink-faint)); text-decoration: line-through; text-decoration-color: rgb(var(--danger)); background: rgb(var(--danger) / 0.08); }
+.corr-moved { background: rgb(var(--gold) / 0.2); color: rgb(var(--gold-ink)); }
+.corr-sub { background: rgb(var(--tone-4) / 0.15); color: rgb(var(--tone-4)); }
+.corr-tone { background: rgb(var(--tone-3) / 0.15); color: rgb(var(--tone-3)); text-decoration: underline wavy rgb(var(--tone-3)); }
+.corr-word { background: rgb(var(--celadon) / 0.15); color: rgb(var(--celadon-ink)); }
+.corr-grammar { text-decoration: underline wavy rgb(var(--cinnabar)); }
+
+/* ---------- Modo Cornell ---------- */
+.cornell-cue { border-right: 2px solid rgb(var(--cinnabar) / 0.4); }
+.cornell-hidden { filter: blur(6px); user-select: none; transition: filter 180ms var(--ease-ink); }
+.cornell-hidden:hover, .cornell-hidden:focus-visible { filter: blur(3px); }
+
+/* ---------- Menús flotantes del editor ---------- */
+.xb-menu { font-family: var(--font-sans); }
+
+/* ---------- Grafo ---------- */
+.graph-node:hover { cursor: pointer; }
+
+/* ---------- Impresión: papel y 田字格 ---------- */
+@media print {
+  .xb-no-print, nav, aside, header.xb-topbar, .xb-toolbar { display: none !important; }
+  body { background: #fff !important; color: #111 !important; }
+  .xb-print { max-width: none; padding: 0; }
+  .xb-print .card-paper { box-shadow: none; border-color: #ccc; break-inside: avoid; }
+  .xb-print .xb-block { break-inside: avoid; }
+  .xb-print ruby rt { opacity: 1 !important; }
+  .xb-print .print-tianzige { display: grid; grid-template-columns: repeat(10, 1.6cm); gap: 0; }
+  .xb-print .print-tianzige span { width: 1.6cm; height: 1.6cm; border: 1px solid #c33; display: flex; align-items: center; justify-content: center; font-size: 1.1cm; color: #ddd;
+    background-image: linear-gradient(to right, rgba(200,50,50,0.25) 1px, transparent 1px), linear-gradient(to bottom, rgba(200,50,50,0.25) 1px, transparent 1px); background-size: 50% 50%; }
+  @page { margin: 1.5cm; }
+}

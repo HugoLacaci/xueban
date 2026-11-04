@@ -173,18 +173,214 @@ export interface Reading {
   score?: number;
 }
 
+/* ---- Apuntes (v5) ---- */
+
+/** Plantillas de apunte. `free` = texto libre (notas heredadas); `class` = cuaderno de clase heredado. */
+export type NoteType =
+  | "free"
+  | "word"
+  | "character"
+  | "grammar"
+  | "particle"
+  | "question"
+  | "contrast"
+  | "phrase"
+  | "dialogue"
+  | "error"
+  | "class"
+  | "topic"
+  | "culture"
+  | "pronunciation"
+  | "lesson";
+
+export type NoteStatus = "inbox" | "active" | "archived";
+
+export interface NoteCue {
+  id: string;
+  q: string; // pregunta clave (columna Cornell)
+  a: string; // respuesta (se tapa al repasar)
+}
+
+export interface NoteSource {
+  kind: "dictionary" | "exercise" | "video" | "reading" | "tutor" | "class" | "capture" | "lesson" | "grammar" | "correction" | "manual";
+  ref?: string; // id de la palabra, vídeo, lectura, ejercicio…
+  context?: string; // frase o texto de donde vino
+  href?: string; // ruta interna para volver
+}
+
 export interface Note {
+  id: string;
+  lang: Lang;
+  title: string;
+  /** Plantilla del apunte (v5). */
+  type: NoteType;
+  status: NoteStatus;
+  /** Documento TipTap (JSON de ProseMirror) con los bloques libres. */
+  doc?: unknown;
+  /** Campos estructurados de la plantilla (ver lib/notes/templates.ts). */
+  fields: Record<string, unknown>;
+  /** Markdown: heredado de las notas antiguas y copia de exportación (se regenera al guardar). */
+  markdown: string;
+  /** Preguntas clave (método Cornell) con su respuesta. */
+  cues: NoteCue[];
+  /** Resumen de una línea (pie Cornell). */
+  summary?: string;
+  tags: string[];
+  wordIds: string[];
+  /** Ids de apuntes enlazados con [[…]] (los backlinks se calculan). */
+  links: string[];
+  grammarIds: string[];
+  unitId?: string;
+  level?: number; // nivel HSK (1–3)
+  pinned: boolean;
+  /** Apunte del profesor (compendio incluido en la app). Se puede duplicar y anotar. */
+  builtin?: boolean;
+  reviewed?: boolean;
+  source?: NoteSource;
+  /** Heredado (v≤4): "note" | "class". Se mantiene para las consultas antiguas y las copias de seguridad. */
+  kind: "note" | "class";
+  classDate?: string; // YYYY-MM-DD (apuntes de clase)
+  homework?: string;
+  grammar?: string;
+  createdAt: number;
+  updatedAt: number;
+  lastReviewed?: number;
+}
+
+/** Forma antigua de una nota (v≤4), solo para la migración y los tests. */
+export interface LegacyNote {
   id: string;
   lang: Lang;
   title: string;
   markdown: string;
   wordIds: string[];
   kind: "note" | "class";
-  classDate?: string; // YYYY-MM-DD
+  classDate?: string;
   homework?: string;
   grammar?: string;
   createdAt: number;
   updatedAt: number;
+}
+
+/** Tarjeta SRS generada desde un apunte (pregunta Cornell, frase, hueco o error del 错题本). Tabla `noteCards`. */
+export interface NoteCard {
+  id: string; // `${noteId}:${kind}:${n}`
+  lang: Lang;
+  noteId: string;
+  kind: "cue" | "cloze" | "phrase" | "error" | "word";
+  front: string;
+  back: string;
+  hint?: string;
+  due: number;
+  stability: number;
+  difficulty: number;
+  elapsed_days: number;
+  scheduled_days: number;
+  learning_steps: number;
+  reps: number;
+  lapses: number;
+  state: CardState;
+  last_review?: number;
+  suspended: boolean;
+  createdAt: number;
+  updatedAt: number;
+}
+
+/** Conjunto de ejercicios del cuaderno 练习本 (por clase, fecha o tema). */
+export interface ExerciseSet {
+  id: string;
+  lang: Lang;
+  title: string;
+  date?: string; // YYYY-MM-DD
+  topic?: string;
+  unitId?: string;
+  tags: string[];
+  createdAt: number;
+  updatedAt: number;
+}
+
+/** Ítem del cuaderno: frase en español que hay que traducir al chino, con soluciones opcionales. */
+export interface ExerciseItem {
+  id: string;
+  lang: Lang;
+  setId: string;
+  order: number;
+  es: string;
+  answers: string[]; // respuestas de referencia (puede estar vacío)
+  hint?: string;
+  tags: string[];
+  grammarIds: string[];
+  unitId?: string;
+  // SRS (ts-fsrs)
+  due: number;
+  stability: number;
+  difficulty: number;
+  elapsed_days: number;
+  scheduled_days: number;
+  learning_steps: number;
+  reps: number;
+  lapses: number;
+  state: CardState;
+  last_review?: number;
+  attempts: number;
+  correct: number;
+  lastScore?: number;
+  /** Respuesta del alumno escrita en la lista del conjunto (se guarda mientras escribe; se corrige cuando quiera). */
+  myAnswer?: string;
+  lastAt?: number;
+  createdAt: number;
+  updatedAt: number;
+}
+
+export type AnswerMode = "hanzi" | "pinyin" | "handwriting" | "speech";
+
+export interface ItemAttempt {
+  id?: number;
+  lang: Lang;
+  itemId: string;
+  setId: string;
+  mode: AnswerMode;
+  answer: string;
+  score: number; // 0–100
+  verdict: "correct" | "improvable" | "wrong" | "partial";
+  report?: unknown; // CorrectionReport (lib/correction)
+  at: number;
+}
+
+export interface ChatMessage {
+  role: "user" | "assistant" | "system" | "tool";
+  content: string;
+  at: number;
+  /** Acciones propuestas por el tutor pendientes de confirmación */
+  actions?: { id: string; tool: string; args: Record<string, unknown>; done?: boolean }[];
+  meta?: Record<string, unknown>;
+}
+
+/** Conversación con el tutor (tabla `chats`). */
+export interface Chat {
+  id: string;
+  lang: Lang;
+  mode: "scenario" | "free" | "corrector" | "explainer" | "generator" | "planner" | "voice" | "roleplay";
+  title: string;
+  scenarioId?: string;
+  messages: ChatMessage[];
+  goals?: { text: string; done: boolean }[];
+  newWords?: string[];
+  createdAt: number;
+  updatedAt: number;
+  savedNoteId?: string;
+}
+
+/** Fotos y audios de los apuntes (Blob en IndexedDB). Tabla `assets`. */
+export interface Asset {
+  id: string;
+  lang: Lang;
+  noteId?: string;
+  kind: "image" | "audio" | "drawing";
+  mime: string;
+  blob: Blob;
+  name?: string;
+  createdAt: number;
 }
 
 export interface StudySession {

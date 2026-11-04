@@ -6,16 +6,16 @@
 import type { Lang } from "./types";
 
 export const NAV_GLYPHS: Record<Lang, Record<string, string>> = {
-  zh: { "/": "今", "/aprender": "学", "/practicar": "练", "/flashcards": "卡", "/diccionario": "典", "/caracteres": "字", "/lectura": "读", "/videos": "视", "/study-hall": "斋", "/progreso": "进", "/ajustes": "设" },
-  ja: { "/": "今", "/aprender": "学", "/practicar": "練", "/flashcards": "札", "/diccionario": "辞", "/caracteres": "字", "/lectura": "読", "/videos": "映", "/study-hall": "斎", "/progreso": "進", "/ajustes": "設" },
-  ko: { "/": "오", "/aprender": "배", "/practicar": "연", "/flashcards": "카", "/diccionario": "사", "/caracteres": "글", "/lectura": "읽", "/videos": "영", "/study-hall": "서", "/progreso": "진", "/ajustes": "설" },
+  zh: { "/": "今", "/aprender": "学", "/practicar": "练", "/apuntes": "笔", "/tutor": "师", "/flashcards": "卡", "/diccionario": "典", "/caracteres": "字", "/escuchar-leer": "听", "/lectura": "读", "/videos": "视", "/study-hall": "斋", "/progreso": "进", "/ajustes": "设" },
+  ja: { "/": "今", "/aprender": "学", "/practicar": "練", "/apuntes": "記", "/tutor": "師", "/flashcards": "札", "/diccionario": "辞", "/caracteres": "字", "/escuchar-leer": "聴", "/lectura": "読", "/videos": "映", "/study-hall": "斎", "/progreso": "進", "/ajustes": "設" },
+  ko: { "/": "오", "/aprender": "배", "/practicar": "연", "/apuntes": "노", "/tutor": "선", "/flashcards": "카", "/diccionario": "사", "/caracteres": "글", "/escuchar-leer": "듣", "/lectura": "읽", "/videos": "영", "/study-hall": "서", "/progreso": "진", "/ajustes": "설" },
 };
 
 /** Títulos nativos de las secciones (PageHeader zh=…). */
 export const PAGE_NATIVE: Record<Lang, Record<string, string>> = {
-  zh: { today: "今天", learn: "学习", practice: "练习", flashcards: "卡片", dictionary: "词典", characters: "汉字", reading: "阅读", videos: "视频", studyHall: "书斋", progress: "进步", settings: "设置", grammar: "语法", notebook: "课堂笔记", notes: "笔记", credits: "致谢", design: "设计", howto: "学习方法", me: "我的语言", exam: "模拟考试", review: "复习" },
-  ja: { today: "今日", learn: "学習", practice: "練習", flashcards: "単語カード", dictionary: "辞書", characters: "文字", reading: "読み物", videos: "動画", studyHall: "書斎", progress: "進歩", settings: "設定", grammar: "文法", notebook: "授業ノート", notes: "ノート", credits: "謝辞", design: "デザイン", howto: "学び方", me: "私の言語", exam: "模擬試験", review: "復習" },
-  ko: { today: "오늘", learn: "배우기", practice: "연습", flashcards: "단어 카드", dictionary: "사전", characters: "한글", reading: "읽기", videos: "영상", studyHall: "서재", progress: "진도", settings: "설정", grammar: "문법", notebook: "수업 노트", notes: "노트", credits: "감사의 말", design: "디자인", howto: "공부법", me: "나의 언어", exam: "모의고사", review: "복습" },
+  zh: { today: "今天", learn: "学习", practice: "练习", flashcards: "卡片", dictionary: "词典", characters: "汉字", reading: "阅读", videos: "视频", listenRead: "听读", studyHall: "书斋", progress: "进步", settings: "设置", grammar: "语法", notebook: "课堂笔记", notes: "笔记", inbox: "收集箱", errors: "错题本", workbook: "练习本", tutor: "老师", credits: "致谢", design: "设计", howto: "学习方法", me: "我的语言", exam: "模拟考试", review: "复习" },
+  ja: { today: "今日", learn: "学習", practice: "練習", flashcards: "単語カード", dictionary: "辞書", characters: "文字", reading: "読み物", videos: "動画", listenRead: "聴く・読む", studyHall: "書斎", progress: "進歩", settings: "設定", grammar: "文法", notebook: "授業ノート", notes: "ノート", inbox: "受信箱", errors: "間違いノート", workbook: "練習帳", tutor: "先生", credits: "謝辞", design: "デザイン", howto: "学び方", me: "私の言語", exam: "模擬試験", review: "復習" },
+  ko: { today: "오늘", learn: "배우기", practice: "연습", flashcards: "단어 카드", dictionary: "사전", characters: "한글", reading: "읽기", videos: "영상", listenRead: "듣기·읽기", studyHall: "서재", progress: "진도", settings: "설정", grammar: "문법", notebook: "수업 노트", notes: "노트", inbox: "수집함", errors: "오답 노트", workbook: "연습장", tutor: "선생님", credits: "감사의 말", design: "디자인", howto: "공부법", me: "나의 언어", exam: "모의고사", review: "복습" },
 };
 
 /** Textos y sellos decorativos de la interfaz común (divisores, sellos, ánimos, ejemplos). */

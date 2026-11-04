@@ -1,0 +1,257 @@
+{
+  "unitId": "u07",
+  "scenarios": [
+    {
+      "id": "u07-ask-way",
+      "title": "Preguntar el camino a la universidad",
+      "zh": "请问，交通大学在哪儿？",
+      "level": 1,
+      "setting": "Hugo se ha perdido en una calle de Shanghái y para a un transeúnte. Tú (la app) eres el transeúnte.",
+      "role": "transeúnte",
+      "roleZh": "路人",
+      "voice": "m",
+      "goals": ["Preguntar dónde está la universidad", "Preguntar si está lejos", "Confirmar izquierda o derecha", "Dar las gracias"],
+      "vocab": ["请问", "在", "哪儿", "这儿", "那儿", "大学", "医院", "商店", "前面", "后面", "左边", "右边", "远", "近", "走", "分钟"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "你好，你要去哪儿？", "py": "Nǐ hǎo, nǐ yào qù nǎr?", "es": "Hola, ¿adónde quieres ir?" },
+          "user": [
+            { "zh": "请问，交通大学在哪儿？", "py": "Qǐngwèn, Jiāotōng Dàxué zài nǎr?", "es": "Disculpe, ¿dónde está la Universidad Jiaotong?", "keywords": ["在哪儿", "大学在哪"], "next": "n2", "goal": 0 },
+            { "zh": "请问，这儿是交通大学吗？", "py": "Qǐngwèn, zhèr shì Jiāotōng Dàxué ma?", "es": "Disculpe, ¿esto es la Universidad Jiaotong?", "keywords": ["这儿是", "是交通大学吗"], "next": "n2b", "goal": 0 }
+          ],
+          "hint": "Empieza con 请问 (disculpe) y pregunta el lugar con …在哪儿."
+        },
+        "n2": {
+          "npc": { "zh": "交通大学不在这儿，在前面。走十分钟。", "py": "Jiāotōng Dàxué bú zài zhèr, zài qiánmiàn. Zǒu shí fēnzhōng.", "es": "La universidad no está aquí, está más adelante. Diez minutos andando." },
+          "user": [
+            { "zh": "远吗？", "py": "Yuǎn ma?", "es": "¿Está lejos?", "keywords": ["远吗", "远"], "next": "n3", "goal": 1 },
+            { "zh": "前面？在左边吗？", "py": "Qiánmiàn? Zài zuǒbian ma?", "es": "¿Adelante? ¿A la izquierda?", "keywords": ["左边", "右边"], "next": "n3b" }
+          ],
+          "hint": "Pregunta la distancia con 远吗 o confirma la dirección con 在左边吗."
+        },
+        "n2b": {
+          "npc": { "zh": "不是，这儿是医院。大学在医院的后面。", "py": "Bú shì, zhèr shì yīyuàn. Dàxué zài yīyuàn de hòumiàn.", "es": "No, esto es el hospital. La universidad está detrás del hospital." },
+          "user": [
+            { "zh": "远吗？", "py": "Yuǎn ma?", "es": "¿Está lejos?", "keywords": ["远吗", "远"], "next": "n3", "goal": 1 },
+            { "zh": "在后面？我知道了，谢谢！", "py": "Zài hòumiàn? Wǒ zhīdào le, xièxie!", "es": "¿Detrás? Entendido, ¡gracias!", "keywords": ["知道", "后面"], "next": "n4" }
+          ],
+          "hint": "医院的后面 = detrás del hospital. Pregunta si está lejos (远吗)."
+        },
+        "n3": {
+          "npc": { "zh": "不远，很近。你在这儿走，前面有一个商店，大学在商店的左边。", "py": "Bù yuǎn, hěn jìn. Nǐ zài zhèr zǒu, qiánmiàn yǒu yí ge shāngdiàn, dàxué zài shāngdiàn de zuǒbian.", "es": "No está lejos, está cerca. Sigue por aquí, delante hay una tienda y la universidad está a la izquierda de la tienda." },
+          "user": [
+            { "zh": "是商店的左边吗？", "py": "Shì shāngdiàn de zuǒbian ma?", "es": "¿A la izquierda de la tienda?", "keywords": ["左边", "左"], "next": "n4", "goal": 2 },
+            { "zh": "右边吗？", "py": "Yòubian ma?", "es": "¿A la derecha?", "keywords": ["右边", "右"], "next": "n3c" }
+          ],
+          "hint": "Repite la indicación para confirmarla: 商店的左边 (a la izquierda de la tienda)."
+        },
+        "n3b": {
+          "npc": { "zh": "不是左边，是前面。前面有一个商店，大学在商店的左边。", "py": "Bú shì zuǒbian, shì qiánmiàn. Qiánmiàn yǒu yí ge shāngdiàn, dàxué zài shāngdiàn de zuǒbian.", "es": "No, a la izquierda no, adelante. Delante hay una tienda y la universidad está a la izquierda de la tienda." },
+          "user": [
+            { "zh": "商店的左边，我知道了。", "py": "Shāngdiàn de zuǒbian, wǒ zhīdào le.", "es": "A la izquierda de la tienda, entendido.", "keywords": ["左边", "知道"], "next": "n4", "goal": 2 },
+            { "zh": "远吗？", "py": "Yuǎn ma?", "es": "¿Está lejos?", "keywords": ["远吗", "远"], "next": "n3", "goal": 1 }
+          ],
+          "hint": "Confirma la indicación (商店的左边) o pregunta si está lejos."
+        },
+        "n3c": {
+          "npc": { "zh": "不是右边，是左边！", "py": "Bú shì yòubian, shì zuǒbian!", "es": "¡Derecha no, izquierda!" },
+          "user": [
+            { "zh": "好，左边。谢谢！", "py": "Hǎo, zuǒbian. Xièxie!", "es": "Vale, izquierda. ¡Gracias!", "keywords": ["左边", "左"], "next": "n4", "goal": 2 },
+            { "zh": "对不起，我知道了。", "py": "Duìbuqǐ, wǒ zhīdào le.", "es": "Perdón, ya lo entiendo.", "keywords": ["对不起", "知道"], "next": "n4" }
+          ],
+          "hint": "左边 = izquierda, 右边 = derecha. Confirma la correcta."
+        },
+        "n4": {
+          "npc": { "zh": "是。你看，那儿是商店。", "py": "Shì. Nǐ kàn, nàr shì shāngdiàn.", "es": "Eso es. Mira, allí está la tienda." },
+          "user": [
+            { "zh": "谢谢你！", "py": "Xièxie nǐ!", "es": "¡Gracias!", "keywords": ["谢谢", "谢谢你"], "next": "end1", "goal": 3 },
+            { "zh": "好，再见。", "py": "Hǎo, zàijiàn.", "es": "Vale, adiós.", "keywords": ["再见", "拜拜"], "next": "end2" }
+          ],
+          "hint": "Ya sabes el camino: da las gracias con 谢谢你."
+        },
+        "end1": {
+          "npc": { "zh": "不客气，再见！", "py": "Bú kèqi, zàijiàn!", "es": "De nada, ¡adiós!" },
+          "end": true,
+          "feedback": "Has preguntado el camino con 请问…在哪儿, has entendido 前面 / 左边 / 后面 y has dado las gracias. Perfecto."
+        },
+        "end2": {
+          "npc": { "zh": "再见。", "py": "Zàijiàn.", "es": "Adiós." },
+          "end": true,
+          "feedback": "Has entendido las indicaciones, pero te has ido sin dar las gracias. Un 谢谢你 nunca sobra."
+        }
+      }
+    },
+    {
+      "id": "u07-taxi",
+      "title": "Coger un taxi",
+      "zh": "坐出租车",
+      "level": 1,
+      "setting": "Hugo sube a un taxi en el centro de Shanghái para volver a 交通大学. Tú (la app) eres el taxista.",
+      "role": "taxista",
+      "roleZh": "师傅",
+      "voice": "m",
+      "goals": ["Decir adónde vas", "Preguntar si está lejos o cuánto se tarda", "Preguntar cuánto cuesta", "Indicar dónde parar"],
+      "vocab": ["出租车", "师傅", "去", "哪儿", "大学", "医院", "远", "近", "分钟", "多少钱", "块", "到", "前面", "旁边", "这儿", "走"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "你好，去哪儿？", "py": "Nǐ hǎo, qù nǎr?", "es": "Hola, ¿adónde va?" },
+          "user": [
+            { "zh": "师傅，你好。我去交通大学。", "py": "Shīfu, nǐ hǎo. Wǒ qù Jiāotōng Dàxué.", "es": "Hola. Voy a la Universidad Jiaotong.", "keywords": ["交通大学", "大学"], "next": "n2", "goal": 0 },
+            { "zh": "去医院，我朋友在那儿。", "py": "Qù yīyuàn, wǒ péngyou zài nàr.", "es": "Al hospital, mi amigo está allí.", "keywords": ["医院", "去医院"], "next": "n2", "goal": 0 }
+          ],
+          "hint": "师傅 es como se llama al taxista. Di el destino con 我去 + lugar."
+        },
+        "n2": {
+          "npc": { "zh": "好，走吧！", "py": "Hǎo, zǒu ba!", "es": "Vale, ¡vamos!" },
+          "user": [
+            { "zh": "远吗？", "py": "Yuǎn ma?", "es": "¿Está lejos?", "keywords": ["远吗", "远"], "next": "n3", "goal": 1 },
+            { "zh": "多少钱？", "py": "Duōshao qián?", "es": "¿Cuánto cuesta?", "keywords": ["多少钱", "多少"], "next": "n3b", "goal": 2 },
+            { "zh": "几分钟到？", "py": "Jǐ fēnzhōng dào?", "es": "¿En cuántos minutos llegamos?", "keywords": ["几分钟", "分钟"], "next": "n3", "goal": 1 }
+          ],
+          "hint": "Pregunta la distancia (远吗), el tiempo (几分钟到) o el precio (多少钱)."
+        },
+        "n3": {
+          "npc": { "zh": "不远，二十分钟。", "py": "Bù yuǎn, èrshí fēnzhōng.", "es": "No está lejos, veinte minutos." },
+          "user": [
+            { "zh": "多少钱？", "py": "Duōshao qián?", "es": "¿Cuánto cuesta?", "keywords": ["多少钱", "多少"], "next": "n4", "goal": 2 },
+            { "zh": "好，谢谢。", "py": "Hǎo, xièxie.", "es": "Vale, gracias.", "keywords": ["谢谢", "好的"], "next": "n4b" }
+          ],
+          "hint": "Ahora pregunta el precio: 多少钱？"
+        },
+        "n3b": {
+          "npc": { "zh": "三十块。", "py": "Sānshí kuài.", "es": "Treinta yuanes." },
+          "user": [
+            { "zh": "远吗？几分钟？", "py": "Yuǎn ma? Jǐ fēnzhōng?", "es": "¿Está lejos? ¿Cuántos minutos?", "keywords": ["远吗", "几分钟"], "next": "n3", "goal": 1 },
+            { "zh": "好，走吧！", "py": "Hǎo, zǒu ba!", "es": "Vale, ¡vamos!", "keywords": ["走", "走吧"], "next": "n4b" }
+          ],
+          "hint": "Pregunta cuánto se tarda (几分钟) o acepta (好，走吧)."
+        },
+        "n4": {
+          "npc": { "zh": "三十块。", "py": "Sānshí kuài.", "es": "Treinta yuanes." },
+          "user": [
+            { "zh": "好，走吧！", "py": "Hǎo, zǒu ba!", "es": "Vale, ¡vamos!", "keywords": ["走", "走吧"], "next": "n4b" },
+            { "zh": "太贵了，我不去了！", "py": "Tài guì le, wǒ bú qù le!", "es": "¡Demasiado caro, no voy!", "keywords": ["太贵", "不去"], "next": "end2" }
+          ],
+          "hint": "Acepta con 好，走吧 o bájate (太贵了)."
+        },
+        "n4b": {
+          "npc": { "zh": "你是哪国人？", "py": "Nǐ shì nǎ guó rén?", "es": "¿De qué país es usted?" },
+          "user": [
+            { "zh": "我是西班牙人，在交通大学学习。", "py": "Wǒ shì Xībānyá rén, zài Jiāotōng Dàxué xuéxí.", "es": "Soy español, estudio en la Universidad Jiaotong.", "keywords": ["西班牙", "西班牙人"], "next": "n5" },
+            { "zh": "我是学生，我住在上海。", "py": "Wǒ shì xuésheng, wǒ zhù zài Shànghǎi.", "es": "Soy estudiante, vivo en Shanghái.", "keywords": ["学生", "住在"], "next": "n5" }
+          ],
+          "hint": "Charla de taxi: di tu nacionalidad o dónde vives (住在…)."
+        },
+        "n5": {
+          "npc": { "zh": "到了！这儿吗？", "py": "Dào le! Zhèr ma?", "es": "¡Ya estamos! ¿Aquí?" },
+          "user": [
+            { "zh": "在前面，商店的旁边。", "py": "Zài qiánmiàn, shāngdiàn de pángbiān.", "es": "Más adelante, al lado de la tienda.", "keywords": ["前面", "旁边"], "next": "n6", "goal": 3 },
+            { "zh": "在这儿，谢谢！", "py": "Zài zhèr, xièxie!", "es": "Aquí, ¡gracias!", "keywords": ["这儿", "谢谢"], "next": "n6", "goal": 3 }
+          ],
+          "hint": "Indica dónde parar: 在这儿 (aquí) o 在前面 (más adelante)."
+        },
+        "n6": {
+          "npc": { "zh": "好。三十块。", "py": "Hǎo. Sānshí kuài.", "es": "Vale. Treinta yuanes." },
+          "user": [
+            { "zh": "可以用微信吗？", "py": "Kěyǐ yòng Wēixìn ma?", "es": "¿Se puede pagar con WeChat?", "keywords": ["微信", "支付宝"], "next": "end1" },
+            { "zh": "给你现金。", "py": "Gěi nǐ xiànjīn.", "es": "Aquí tiene, en efectivo.", "keywords": ["现金", "给你"], "next": "end1" }
+          ],
+          "hint": "Paga con 微信 / 支付宝 o en 现金."
+        },
+        "end1": {
+          "npc": { "zh": "好，谢谢，再见！", "py": "Hǎo, xièxie, zàijiàn!", "es": "Vale, gracias, ¡adiós!" },
+          "end": true,
+          "feedback": "Has dicho el destino, preguntado distancia y precio y has indicado dónde parar. 到了 = hemos llegado."
+        },
+        "end2": {
+          "npc": { "zh": "好吧，再见。", "py": "Hǎo ba, zàijiàn.", "es": "Vale, adiós." },
+          "end": true,
+          "feedback": "Te has bajado del taxi. Treinta yuanes por veinte minutos en Shanghái es normal: la próxima vez di 好，走吧."
+        }
+      }
+    },
+    {
+      "id": "u07-metro",
+      "title": "Encontrar el metro",
+      "zh": "地铁站在哪儿？",
+      "level": 1,
+      "setting": "Puerta de 交通大学. Hugo quiere ir en metro a 南京路 y pregunta a una transeúnte. Tú (la app) eres la transeúnte.",
+      "role": "transeúnte",
+      "roleZh": "路人",
+      "voice": "f",
+      "goals": ["Preguntar dónde está la estación de metro", "Decir adónde vas", "Preguntar cuántas paradas o si está lejos", "Dar las gracias"],
+      "vocab": ["地铁", "站", "请问", "在哪儿", "前面", "近", "远", "去", "路", "北京", "上海", "分钟", "知道", "学习", "工作"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "你好，你要去哪儿？", "py": "Nǐ hǎo, nǐ yào qù nǎr?", "es": "Hola, ¿adónde quieres ir?" },
+          "user": [
+            { "zh": "请问，地铁站在哪儿？", "py": "Qǐngwèn, dìtiězhàn zài nǎr?", "es": "Disculpe, ¿dónde está la estación de metro?", "keywords": ["地铁站", "在哪儿"], "next": "n2", "goal": 0 },
+            { "zh": "请问，这儿有地铁吗？", "py": "Qǐngwèn, zhèr yǒu dìtiě ma?", "es": "Disculpe, ¿hay metro por aquí?", "keywords": ["有地铁", "地铁吗"], "next": "n2", "goal": 0 }
+          ],
+          "hint": "地铁站 = estación de metro. Pregunta con …在哪儿 o 这儿有…吗."
+        },
+        "n2": {
+          "npc": { "zh": "地铁站在大学的前面，很近。你去哪儿？", "py": "Dìtiězhàn zài dàxué de qiánmiàn, hěn jìn. Nǐ qù nǎr?", "es": "La estación está delante de la universidad, muy cerca. ¿Adónde vas?" },
+          "user": [
+            { "zh": "我去南京路。", "py": "Wǒ qù Nánjīng Lù.", "es": "Voy a la calle Nanjing.", "keywords": ["南京路", "南京"], "next": "n3", "goal": 1 },
+            { "zh": "我去北京！", "py": "Wǒ qù Běijīng!", "es": "¡Voy a Pekín!", "keywords": ["北京", "去北京"], "next": "n3b" }
+          ],
+          "hint": "Di tu destino con 我去 + lugar. 南京路 es la calle comercial de Shanghái; 北京 es otra ciudad."
+        },
+        "n3b": {
+          "npc": { "zh": "北京？哈哈，地铁不去北京，北京很远！", "py": "Běijīng? Hāhā, dìtiě bú qù Běijīng, Běijīng hěn yuǎn!", "es": "¿Pekín? Ja, ja, el metro no va a Pekín, ¡Pekín está muy lejos!" },
+          "user": [
+            { "zh": "对不起，我去南京路。", "py": "Duìbuqǐ, wǒ qù Nánjīng Lù.", "es": "Perdón, voy a la calle Nanjing.", "keywords": ["南京路", "南京"], "next": "n3", "goal": 1 },
+            { "zh": "哈哈，我知道。谢谢，再见！", "py": "Hāhā, wǒ zhīdào. Xièxie, zàijiàn!", "es": "Ja, ja, ya lo sé. Gracias, ¡adiós!", "keywords": ["再见", "知道"], "next": "end2" }
+          ],
+          "hint": "Corrige el destino: 我去南京路 (calle Nanjing)."
+        },
+        "n3": {
+          "npc": { "zh": "南京路？好，地铁去南京路。", "py": "Nánjīng Lù? Hǎo, dìtiě qù Nánjīng Lù.", "es": "¿La calle Nanjing? Bien, el metro va allí." },
+          "user": [
+            { "zh": "远吗？", "py": "Yuǎn ma?", "es": "¿Está lejos?", "keywords": ["远吗", "远"], "next": "n4", "goal": 2 },
+            { "zh": "几站？", "py": "Jǐ zhàn?", "es": "¿Cuántas paradas?", "keywords": ["几站", "站"], "next": "n4b", "goal": 2 }
+          ],
+          "hint": "Pregunta la distancia (远吗) o las paradas (几站)."
+        },
+        "n4": {
+          "npc": { "zh": "不远，二十分钟，三站。", "py": "Bù yuǎn, èrshí fēnzhōng, sān zhàn.", "es": "No está lejos: veinte minutos, tres paradas." },
+          "user": [
+            { "zh": "好，谢谢你！", "py": "Hǎo, xièxie nǐ!", "es": "Vale, ¡gracias!", "keywords": ["谢谢", "谢谢你"], "next": "n5", "goal": 3 },
+            { "zh": "好，再见！", "py": "Hǎo, zàijiàn!", "es": "Vale, ¡adiós!", "keywords": ["再见", "拜拜"], "next": "end2" }
+          ],
+          "hint": "Da las gracias: 谢谢你."
+        },
+        "n4b": {
+          "npc": { "zh": "三站，二十分钟。", "py": "Sān zhàn, èrshí fēnzhōng.", "es": "Tres paradas, veinte minutos." },
+          "user": [
+            { "zh": "谢谢你！", "py": "Xièxie nǐ!", "es": "¡Gracias!", "keywords": ["谢谢", "谢谢你"], "next": "n5", "goal": 3 },
+            { "zh": "好，知道了。再见！", "py": "Hǎo, zhīdào le. Zàijiàn!", "es": "Vale, entendido. ¡Adiós!", "keywords": ["再见", "知道"], "next": "end2" }
+          ],
+          "hint": "站 = parada. Da las gracias antes de irte."
+        },
+        "n5": {
+          "npc": { "zh": "不客气。你是学生吗？", "py": "Bú kèqi. Nǐ shì xuésheng ma?", "es": "De nada. ¿Eres estudiante?" },
+          "user": [
+            { "zh": "是，我在交通大学学习。", "py": "Shì, wǒ zài Jiāotōng Dàxué xuéxí.", "es": "Sí, estudio en la Universidad Jiaotong.", "keywords": ["学习", "交通大学"], "next": "end1" },
+            { "zh": "不是，我在上海工作。", "py": "Bú shì, wǒ zài Shànghǎi gōngzuò.", "es": "No, trabajo en Shanghái.", "keywords": ["工作", "不是"], "next": "end1" }
+          ],
+          "hint": "在 + lugar + verbo: 在交通大学学习, 在上海工作."
+        },
+        "end1": {
+          "npc": { "zh": "好！再见！", "py": "Hǎo! Zàijiàn!", "es": "¡Bien! ¡Adiós!" },
+          "end": true,
+          "feedback": "Has encontrado el metro, dicho tu destino, preguntado cuánto se tarda y dado las gracias. 几站 = ¿cuántas paradas?"
+        },
+        "end2": {
+          "npc": { "zh": "再见。", "py": "Zàijiàn.", "es": "Adiós." },
+          "end": true,
+          "feedback": "Sabes dónde está el metro, pero te has despedido sin dar las gracias (o sin decir bien tu destino). Recuerda 谢谢你 y 我去南京路."
+        }
+      }
+    }
+  ]
+}

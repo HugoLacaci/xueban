@@ -24,7 +24,13 @@ export function check(ex: Exercise, r: Response, ad: Pick<ExerciseAdapters, "rea
     case "component":
     case "classifier":
     case "tone-pair":
-    case "comprehension": {
+    case "comprehension":
+    case "listen-answer":
+    case "dialogue-complete":
+    case "dialogue-who":
+    case "situation":
+    case "radical-meaning":
+    case "tone-sandhi": {
       if (r.kind !== "choice") return bad(ex, "Elige una opción.");
       const ok = r.index === ex.answer;
       const chosen = ex.options[r.index];
@@ -61,7 +67,8 @@ export function check(ex: Exercise, r: Response, ad: Pick<ExerciseAdapters, "rea
       };
     }
     case "order-words":
-    case "build-sentence": {
+    case "build-sentence":
+    case "dialogue-order": {
       if (r.kind !== "tiles") return bad(ex, "Ordena las fichas.");
       const got = r.tiles.join("");
       const valid = [ex.answer, ...(ex.alternatives ?? [])].map((a) => a.join(""));
@@ -116,6 +123,25 @@ export function check(ex: Exercise, r: Response, ad: Pick<ExerciseAdapters, "rea
         explanation: ok ? "¡Bien! (se aceptan pequeñas variaciones)" : partial ? `Casi. Una traducción natural: «${best.a}». Si crees que la tuya también vale, márcala como correcta.` : `Una traducción válida: «${ex.answers[0]}».`,
       };
     }
+    case "dictation-pinyin": {
+      if (r.kind !== "text") return bad(ex, "Escribe el pinyin.");
+      const want = ex.pinyin ?? "";
+      const user = ad.normalizeInput(r.text.trim());
+      const ok = ad.readingEquals(user, want);
+      const diff = ad.readingDiff(user, want);
+      const wrong = diff.filter((d) => !d.ok);
+      const partialOnly = !ok && diff.length > 0 && diff.every((d) => d.ok || d.partial) && ad.readingEquals(user, want, { lenient: true });
+      return { correct: ok, partial: Boolean(partialOnly), expected: `${want} (${ex.zh})`, explanation: ok ? "¡Buen oído!" : partialOnly ? (ad.explainPartial ? ad.explainPartial(wrong) : "Sílabas bien, tonos no.") : `Era «${want}» (${ex.zh}). ${wrong.map((d) => `${d.got || "—"} → ${d.unit}`).join(", ")}. ${ex.explain ?? ""}`.trim(), detail: diff };
+    }
+    case "transform":
+    case "build-question": {
+      if (r.kind !== "text") return bad(ex, "Escribe la frase.");
+      const user = norm(ad.normalizeInput(r.text));
+      const valid = [ex.zh, ...(ex.alternatives ?? [])].map(norm);
+      const ok = valid.some((v) => v === user);
+      const d = Math.min(...valid.map((v) => levenshtein(user, v)));
+      return { correct: ok, partial: !ok && d <= 1, expected: ex.zh, explanation: ok ? (ex.explain ?? "¡Correcto!") : `La forma esperada es «${ex.zh}»${ex.alternatives?.length ? ` (o ${ex.alternatives.join(" / ")})` : ""}. ${ex.explain ?? ""}`.trim() };
+    }
     case "dictation": {
       if (r.kind !== "text") return bad(ex, "Escribe lo que oyes.");
       const user = norm(ad.normalizeInput(r.text));
@@ -132,7 +158,8 @@ export function check(ex: Exercise, r: Response, ad: Pick<ExerciseAdapters, "rea
         detail: { wrongChars },
       };
     }
-    case "reading-tf": {
+    case "reading-tf":
+    case "listen-tf": {
       if (r.kind !== "tf") return bad(ex, "Marca verdadero o falso.");
       const results = ex.statements.map((s, i) => ({ s: s.s, ok: r.values[i] === s.truth, truth: s.truth, why: s.why }));
       const correct = results.every((x) => x.ok);
@@ -154,10 +181,18 @@ export function check(ex: Exercise, r: Response, ad: Pick<ExerciseAdapters, "rea
       const ok = r.mistakes <= 2;
       return { correct: ok, partial: !ok && r.mistakes <= 5, expected: ex.hanzi, explanation: r.mistakes === 0 ? "¡Trazos perfectos!" : ok ? `Bien, con ${r.mistakes} trazo(s) corregido(s).` : `Repásalo: ${r.mistakes} fallos de trazo. Fíjate en el orden (de arriba abajo, de izquierda a derecha).` };
     }
-    case "speaking": {
+    case "speaking":
+    case "speak-answer": {
       if (r.kind === "self") return { correct: r.correct, expected: ex.zh, explanation: r.correct ? "Autoevaluado como correcto." : "Autoevaluado: a repetir." };
       if (r.kind !== "speaking") return bad(ex, "Graba tu voz.");
       if (!r.transcript) return { correct: false, expected: ex.zh, explanation: "No se reconoció nada. Prueba de nuevo o autoevalúate.", skip: true };
+      if (ex.type === "speak-answer") {
+        const got = norm(r.transcript);
+        const kws = ex.keywords ?? [];
+        const hit = kws.filter((k) => got.includes(norm(k)));
+        const ok = kws.length ? hit.length >= Math.ceil(kws.length / 2) : got.length >= 2;
+        return { correct: ok, partial: !ok && hit.length > 0, expected: ex.zh, explanation: ok ? `Se ha reconocido «${r.transcript}». Respuesta válida (modelo: ${ex.zh}).` : `Se ha reconocido «${r.transcript}». Faltan palabras clave: ${kws.filter((k) => !hit.includes(k)).join(" · ") || "—"}. Modelo: ${ex.zh}.`, detail: { hit, keywords: kws } };
+      }
       const want = norm(ex.zh);
       const got = norm(r.transcript);
       const wantChars = Array.from(want);
@@ -176,6 +211,31 @@ export function check(ex: Exercise, r: Response, ad: Pick<ExerciseAdapters, "rea
       if (r.kind !== "tiles") return bad(ex, "Selecciona los componentes.");
       const ok = r.tiles.length === ex.components.length && r.tiles.every((t) => ex.components.includes(t));
       return { correct: ok, expected: ex.components.join(" + "), explanation: ok ? `${ex.hanzi} = ${ex.components.join(" + ")}` : `${ex.hanzi} se compone de ${ex.components.join(" + ")}. ${ex.explain ?? ""}`.trim() };
+    }
+    case "find-error": {
+      if (r.kind !== "findError") return bad(ex, "Marca la palabra incorrecta.");
+      const found = r.index === ex.wrongIndex;
+      const fixed = norm(ad.normalizeInput(r.correction)) === norm(ex.correct);
+      const ok = found && fixed;
+      return { correct: ok, partial: !ok && (found || fixed), expected: ex.correct, explanation: ok ? (ex.explain ?? "¡Correcto!") : `${found ? "Has encontrado el error" : `El error estaba en «${ex.tokens[ex.wrongIndex]}»`}${fixed ? "." : `, pero la frase correcta es «${ex.correct}».`} ${ex.explain ?? ""}`.trim(), detail: { found, fixed } };
+    }
+    case "cloze": {
+      if (r.kind !== "cloze") return bad(ex, "Completa los huecos.");
+      const results = ex.blanks.map((b, i) => norm(r.answers[i] ?? "") === norm(b.answer));
+      const okCount = results.filter(Boolean).length;
+      const ok = okCount === ex.blanks.length;
+      return { correct: ok, partial: !ok && okCount > 0, expected: ex.blanks.map((b) => b.answer).join(" · "), explanation: ok ? (ex.explain ?? "¡Todo correcto!") : `${okCount} de ${ex.blanks.length} huecos bien. Respuestas: ${ex.blanks.map((b, i) => (results[i] ? b.answer : `«${b.answer}»`)).join(" · ")}. ${ex.explain ?? ""}`.trim(), detail: results };
+    }
+    case "translate-free": {
+      if (r.kind !== "self") return bad(ex, "Escribe tu traducción.");
+      return { correct: r.correct, partial: !r.correct && Boolean(r.text), expected: ex.answers[0] ?? "", explanation: r.correct ? "¡Correcta!" : ex.answers[0] ? `Una forma correcta: «${ex.answers[0]}».` : "Corrección por reglas." };
+    }
+    case "speed-pinyin-hanzi":
+    case "speed-match": {
+      if (r.kind !== "speed") return bad(ex, "Empareja contrarreloj.");
+      const ratio = r.total ? r.correct / r.total : 0;
+      const ok = r.finished && ratio >= 0.85;
+      return { correct: ok, partial: !ok && ratio >= 0.5, expected: `${r.total} parejas`, explanation: r.finished ? `${r.correct} de ${r.total} en ${r.seconds} s.` : `Se acabó el tiempo: ${r.correct} de ${r.total}.` };
     }
   }
 }

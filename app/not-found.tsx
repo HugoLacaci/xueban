@@ -7,6 +7,7 @@ import { XiaoMo } from "@/components/ornament/mascot";
 import { WordPage } from "@/components/flashcards/word-page";
 import { Reader } from "@/components/reading/reader";
 import { VideoPlayerPage } from "@/components/videos/video-player";
+import { NoteEditorPage } from "@/components/notes/note-page";
 import { BASE_PATH } from "@/lib/base-path";
 import { LanguageProvider } from "@/lib/languages/provider";
 import { AppShell } from "@/components/layout/app-shell";
@@ -21,7 +22,7 @@ const usePath = () =>
     () => null, // en el prerender no hay URL real
   );
 
-function resolve(pathname: string): { kind: "word" | "reading" | "video"; id: string; lang: Lang } | null {
+function resolve(pathname: string): { kind: "word" | "reading" | "video" | "note"; id: string; lang: Lang } | null {
   let p = pathname;
   if (BASE_PATH && p.startsWith(BASE_PATH)) p = p.slice(BASE_PATH.length);
   p = p.replace(/\/+$/, "");
@@ -43,7 +44,7 @@ export default function NotFound() {
   if (fb)
     return (
       <LanguageProvider lang={fb.lang}>
-        <AppShell>{fb.kind === "word" ? <WordPage id={fb.id} /> : fb.kind === "reading" ? <Reader id={fb.id} /> : <VideoPlayerPage id={fb.id} />}</AppShell>
+        <AppShell>{fb.kind === "word" ? <WordPage id={fb.id} /> : fb.kind === "reading" ? <Reader id={fb.id} /> : fb.kind === "note" ? <NoteEditorPage id={fb.id} /> : <VideoPlayerPage id={fb.id} />}</AppShell>
       </LanguageProvider>
     );
 

@@ -7,6 +7,7 @@ import { buildCurriculum } from "@/lib/languages/core/curriculum";
 import grammarJson from "@/content/zh/grammar.json";
 import readingsJson from "@/content/zh/readings/readings.json";
 import articlesJson from "@/content/zh/articles.json";
+import articlesOrigenJson from "@/content/zh/articles-origen.json";
 import resourcesJson from "@/content/zh/resources.json";
 import seedJson from "@/content/zh/seed/hsk1_vocab.json";
 import u0Pron from "@/content/zh/course/u0-pronunciacion.json";
@@ -29,7 +30,7 @@ import u14 from "@/content/zh/course/u14-telefono.json";
 export const UNITS: Unit[] = ([u0Pron, u0Chars, u01, u02, u03, u04, u05, u06, u07, u08, u09, u10, u11, u12, u13, u14] as Unit[]).sort((a, b) => a.order - b.order);
 export const GRAMMAR: GrammarPoint[] = grammarJson as GrammarPoint[];
 export const READINGS: GradedReading[] = readingsJson as GradedReading[];
-export const ARTICLES: Article[] = articlesJson as Article[];
+export const ARTICLES: Article[] = [...(articlesJson as Article[]), ...(articlesOrigenJson as Article[])];
 export const RESOURCES: Resource[] = (resourcesJson as Resource[]).filter((r) => r.verified);
 
 export const SEED: SeedData = {

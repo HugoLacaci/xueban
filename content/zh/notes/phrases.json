@@ -1,0 +1,1044 @@
+[
+  {
+    "id": "zh-phrase-class-how-to-say",
+    "type": "phrase",
+    "title": "老师，……用中文怎么说？",
+    "level": 1,
+    "tags": ["clase", "frases", "u09"],
+    "unitId": "u09",
+    "grammarIds": ["question-words"],
+    "fields": {
+      "zh": "老师，……用中文怎么说？",
+      "pinyin": "Lǎoshī, …… yòng Zhōngwén zěnme shuō?",
+      "literal": "Profesor, … usando chino cómo decir?",
+      "natural": "Profesor, ¿cómo se dice … en chino?",
+      "situation": "en clase, cuando no sabes una palabra; también con cualquier chino que te ayude",
+      "register": "neutral",
+      "variants": [
+        { "zh": "«Gracias» 用中文怎么说？", "py": "«Gracias» yòng Zhōngwén zěnme shuō?", "es": "¿Cómo se dice «gracias» en chino?" },
+        { "zh": "这个用中文怎么说？", "py": "Zhège yòng Zhōngwén zěnme shuō?", "es": "¿Cómo se dice esto en chino? (señalando)" },
+        { "zh": "……用英语怎么说？", "py": "…… yòng Yīngyǔ zěnme shuō?", "es": "¿Cómo se dice … en inglés?" }
+      ]
+    },
+    "markdown": "## Cómo lo recuerdo\n\n用 + idioma + 怎么说 = «usando [idioma], ¿cómo se dice?». El hueco lo rellenas con la palabra en español o señalando algo.\n\n> 💡 **Truco**: es la frase que más te va a enseñar: cada vez que la uses, apúntate la respuesta en un apunte de tipo «palabra».\n\n```xb-example\n{\"zh\":\"老师，«cuchara» 用中文怎么说？——勺子。\",\"py\":\"Lǎoshī, «cuchara» yòng Zhōngwén zěnme shuō? —Sháozi.\",\"es\":\"Profesor, ¿cómo se dice «cuchara» en chino? —Sháozi.\"}\n```",
+    "cues": [
+      { "id": "c1", "q": "¿Cómo pregunto «cómo se dice X en chino»?", "a": "X 用中文怎么说？" },
+      { "id": "c2", "q": "¿Qué significa 用 aquí?", "a": "«Usando», «en» (un idioma)." },
+      { "id": "c3", "q": "¿Y «en inglés»?", "a": "用英语怎么说？" }
+    ],
+    "summary": "X 用中文怎么说？ = ¿cómo se dice X en chino?",
+    "reviewed": false
+  },
+  {
+    "id": "zh-phrase-class-repeat",
+    "type": "phrase",
+    "title": "请再说一遍",
+    "level": 1,
+    "tags": ["clase", "frases", "u09"],
+    "unitId": "u09",
+    "grammarIds": ["qing"],
+    "fields": {
+      "zh": "请再说一遍。",
+      "pinyin": "Qǐng zài shuō yí biàn.",
+      "literal": "Por favor otra vez decir una vez.",
+      "natural": "¿Puede repetirlo, por favor?",
+      "situation": "cuando no has entendido lo que ha dicho el profesor o alguien en la calle",
+      "register": "neutral",
+      "variants": [
+        { "zh": "再说一遍，好吗？", "py": "Zài shuō yí biàn, hǎo ma?", "es": "¿Lo repites, vale? (más coloquial)" },
+        { "zh": "老师，可以再说一遍吗？", "py": "Lǎoshī, kěyǐ zài shuō yí biàn ma?", "es": "Profesor, ¿puede repetirlo?" },
+        { "zh": "请再写一遍。", "py": "Qǐng zài xiě yí biàn.", "es": "Escríbalo otra vez, por favor." }
+      ]
+    },
+    "markdown": "## Cómo lo recuerdo\n\n再 = otra vez, 一遍 = una vez (de principio a fin). 请 + 再 + verbo + 一遍 sirve para cualquier acción: 再说, 再写, 再读.\n\n> ⚠️ **Ojo**: 一遍 yí biàn (tono 2 por el sandhi de 一 ante 4.º tono).\n\n```xb-example\n{\"zh\":\"对不起，我没听懂。请再说一遍。\",\"py\":\"Duìbuqǐ, wǒ méi tīngdǒng. Qǐng zài shuō yí biàn.\",\"es\":\"Perdón, no lo he entendido. ¿Puede repetirlo?\"}\n```",
+    "cues": [
+      { "id": "c1", "q": "¿Cómo pido que repitan?", "a": "请再说一遍。" },
+      { "id": "c2", "q": "¿Qué significa 一遍?", "a": "«Una vez» (de principio a fin)." },
+      { "id": "c3", "q": "¿Y que lo escriban otra vez?", "a": "请再写一遍。" }
+    ],
+    "summary": "请再说一遍 = repítalo, por favor; 再 + verbo + 一遍 vale para cualquier acción.",
+    "reviewed": false
+  },
+  {
+    "id": "zh-phrase-class-dont-understand",
+    "type": "phrase",
+    "title": "我不懂 / 我没听懂",
+    "level": 1,
+    "tags": ["clase", "frases", "u09"],
+    "unitId": "u09",
+    "grammarIds": ["bu-mei", "complements"],
+    "fields": {
+      "zh": "我没听懂。",
+      "pinyin": "Wǒ méi tīngdǒng.",
+      "literal": "Yo no escuchar-entender.",
+      "natural": "No lo he entendido (al oírlo).",
+      "situation": "cuando alguien te ha dicho algo y no lo has pillado",
+      "register": "neutral",
+      "variants": [
+        { "zh": "我不懂。", "py": "Wǒ bù dǒng.", "es": "No lo entiendo (en general, el concepto)." },
+        { "zh": "我听不懂。", "py": "Wǒ tīng bu dǒng.", "es": "No entiendo (no soy capaz de entender lo que se dice)." },
+        { "zh": "我看不懂。", "py": "Wǒ kàn bu dǒng.", "es": "No entiendo lo que leo." }
+      ]
+    },
+    "markdown": "## Cómo lo recuerdo\n\nTres matices:\n\n| Frase | Cuándo |\n|---|---|\n| 我不懂 | no entiendo la idea / la regla |\n| 我没听懂 | esta vez no lo he entendido al oírlo (pide repetir) |\n| 我听不懂 | no soy capaz de entender (hablan muy rápido, no sé bastante chino) |\n\n> 💡 **Truco**: 听懂 = escuchar + entender; 看懂 = leer + entender. 没 niega lo que no pasó esta vez; 不 en medio (听不懂) niega la capacidad.\n\n```xb-example\n{\"zh\":\"老师，这个我不懂。\",\"py\":\"Lǎoshī, zhège wǒ bù dǒng.\",\"es\":\"Profesor, esto no lo entiendo.\"}\n```",
+    "cues": [
+      { "id": "c1", "q": "¿Diferencia entre 我没听懂 y 我听不懂?", "a": "没听懂 = esta vez no lo pillé; 听不懂 = no soy capaz de entenderlo." },
+      { "id": "c2", "q": "¿Cómo digo «no entiendo lo que leo»?", "a": "我看不懂。" },
+      { "id": "c3", "q": "¿Qué significa 懂?", "a": "Entender." }
+    ],
+    "summary": "我不懂 (no entiendo la idea), 我没听懂 (no lo he pillado esta vez), 我听不懂 (no puedo entenderlo).",
+    "reviewed": false
+  },
+  {
+    "id": "zh-phrase-class-how-to-write",
+    "type": "phrase",
+    "title": "这个字怎么写？",
+    "level": 1,
+    "tags": ["clase", "frases", "u09"],
+    "unitId": "u09",
+    "grammarIds": ["question-words"],
+    "fields": {
+      "zh": "这个字怎么写？",
+      "pinyin": "Zhège zì zěnme xiě?",
+      "literal": "Este carácter cómo escribir?",
+      "natural": "¿Cómo se escribe este carácter?",
+      "situation": "cuando oyes una palabra y quieres verla escrita, o no recuerdas los trazos",
+      "register": "neutral",
+      "variants": [
+        { "zh": "«Shanghái» 怎么写？", "py": "«Shanghái» zěnme xiě?", "es": "¿Cómo se escribe «Shanghái»?" },
+        { "zh": "请写一下。", "py": "Qǐng xiě yíxià.", "es": "Escríbalo, por favor." },
+        { "zh": "你的名字怎么写？", "py": "Nǐ de míngzi zěnme xiě?", "es": "¿Cómo se escribe tu nombre?" }
+      ]
+    },
+    "markdown": "## Cómo lo recuerdo\n\n怎么 + verbo = «¿cómo se + verbo?». 怎么写 (escribir), 怎么读 (leer), 怎么说 (decir), 怎么走 (ir, para direcciones).\n\n```xb-example\n{\"zh\":\"老师，«谢谢» 的 «谢» 怎么写？\",\"py\":\"Lǎoshī, «xièxie» de «xiè» zěnme xiě?\",\"es\":\"Profesor, ¿cómo se escribe el «xiè» de «xièxie»?\"}\n```",
+    "cues": [
+      { "id": "c1", "q": "¿Cómo pregunto cómo se escribe un carácter?", "a": "这个字怎么写？" },
+      { "id": "c2", "q": "¿Qué significa 怎么?", "a": "«Cómo» (delante de un verbo)." },
+      { "id": "c3", "q": "¿Cómo pido que me lo escriban?", "a": "请写一下。" }
+    ],
+    "summary": "这个字怎么写？ = ¿cómo se escribe este carácter?; 怎么 + verbo = ¿cómo se…?",
+    "reviewed": false
+  },
+  {
+    "id": "zh-phrase-class-how-to-read",
+    "type": "phrase",
+    "title": "这个字怎么读？",
+    "level": 1,
+    "tags": ["clase", "frases", "u09"],
+    "unitId": "u09",
+    "grammarIds": ["question-words"],
+    "fields": {
+      "zh": "这个字怎么读？",
+      "pinyin": "Zhège zì zěnme dú?",
+      "literal": "Este carácter cómo leer?",
+      "natural": "¿Cómo se lee (se pronuncia) este carácter?",
+      "situation": "cuando ves un carácter y no sabes su pronunciación",
+      "register": "neutral",
+      "variants": [
+        { "zh": "这个字怎么念？", "py": "Zhège zì zěnme niàn?", "es": "¿Cómo se lee este carácter? (念 = leer en voz alta, muy usado)" },
+        { "zh": "这个词怎么读？", "py": "Zhège cí zěnme dú?", "es": "¿Cómo se lee esta palabra?" },
+        { "zh": "是第几声？", "py": "Shì dì jǐ shēng?", "es": "¿Qué tono es?" }
+      ]
+    },
+    "markdown": "## Cómo lo recuerdo\n\n读 dú = leer. Junto con 怎么写, forman la pareja: 怎么写 (¿qué trazos?) / 怎么读 (¿qué sonido?).\n\n> 💡 **Truco**: para preguntar el tono: 第几声？ (¿qué tono número?). Respuesta: 第一声, 第二声…\n\n```xb-example\n{\"zh\":\"这个字怎么读？——读 «xué»，第二声。\",\"py\":\"Zhège zì zěnme dú? —Dú «xué», dì-èr shēng.\",\"es\":\"¿Cómo se lee este carácter? —Se lee «xué», segundo tono.\"}\n```",
+    "cues": [
+      { "id": "c1", "q": "¿Cómo pregunto la pronunciación de un carácter?", "a": "这个字怎么读？ (o 怎么念)." },
+      { "id": "c2", "q": "¿Cómo pregunto el tono?", "a": "第几声？" },
+      { "id": "c3", "q": "¿Qué diferencia hay entre 字 y 词?", "a": "字 = carácter; 词 = palabra (de uno o más caracteres)." }
+    ],
+    "summary": "这个字怎么读？ = ¿cómo se pronuncia este carácter?; 第几声？ = ¿qué tono?",
+    "reviewed": false
+  },
+  {
+    "id": "zh-phrase-class-slower",
+    "type": "phrase",
+    "title": "请说慢一点儿",
+    "level": 1,
+    "tags": ["clase", "frases", "supervivencia", "u09"],
+    "unitId": "u09",
+    "grammarIds": ["qing", "yidianr-youdianr"],
+    "fields": {
+      "zh": "请说慢一点儿。",
+      "pinyin": "Qǐng shuō màn yìdiǎnr.",
+      "literal": "Por favor hablar lento un-poco.",
+      "natural": "Hable un poco más despacio, por favor.",
+      "situation": "en clase, en el taxi, en la tienda: siempre que te hablen demasiado rápido",
+      "register": "neutral",
+      "variants": [
+        { "zh": "慢一点儿，好吗？", "py": "Màn yìdiǎnr, hǎo ma?", "es": "Más despacio, ¿vale?" },
+        { "zh": "请说慢一点儿，我是外国人。", "py": "Qǐng shuō màn yìdiǎnr, wǒ shì wàiguó rén.", "es": "Hable más despacio, por favor, soy extranjero." },
+        { "zh": "请大声一点儿。", "py": "Qǐng dàshēng yìdiǎnr.", "es": "Un poco más alto, por favor." }
+      ]
+    },
+    "markdown": "## Cómo lo recuerdo\n\nAdjetivo + 一点儿 = «un poco más + adjetivo»: 慢一点儿 (más despacio), 便宜一点儿 (más barato), 大声一点儿 (más alto).\n\n> ❌ **Error típico**: ✗请说有点儿慢. Para pedir «un poco más…» siempre 一点儿 detrás. Ver [[zh-contrast-yidianr-youdianr]].\n\n```xb-example\n{\"zh\":\"对不起，我听不懂。请说慢一点儿。\",\"py\":\"Duìbuqǐ, wǒ tīng bu dǒng. Qǐng shuō màn yìdiǎnr.\",\"es\":\"Perdón, no le entiendo. Hable más despacio, por favor.\"}\n```",
+    "cues": [
+      { "id": "c1", "q": "¿Cómo pido que hablen más despacio?", "a": "请说慢一点儿。" },
+      { "id": "c2", "q": "¿Dónde va 一点儿?", "a": "Detrás del adjetivo: 慢一点儿." },
+      { "id": "c3", "q": "¿Y «más alto»?", "a": "请大声一点儿。" }
+    ],
+    "summary": "请说慢一点儿 = más despacio, por favor; adjetivo + 一点儿 = un poco más….",
+    "reviewed": false
+  },
+  {
+    "id": "zh-phrase-class-what-means",
+    "type": "phrase",
+    "title": "什么意思？",
+    "level": 1,
+    "tags": ["clase", "frases", "u09"],
+    "unitId": "u09",
+    "grammarIds": ["question-words"],
+    "fields": {
+      "zh": "这是什么意思？",
+      "pinyin": "Zhè shì shénme yìsi?",
+      "literal": "Esto es qué significado?",
+      "natural": "¿Qué significa esto?",
+      "situation": "cuando ves o escuchas una palabra que no conoces",
+      "register": "neutral",
+      "variants": [
+        { "zh": "什么意思？", "py": "Shénme yìsi?", "es": "¿Qué significa? (corto, coloquial)" },
+        { "zh": "«马上» 是什么意思？", "py": "«Mǎshàng» shì shénme yìsi?", "es": "¿Qué significa «mǎshàng»?" },
+        { "zh": "我的意思是……", "py": "Wǒ de yìsi shì……", "es": "Lo que quiero decir es…" }
+      ]
+    },
+    "markdown": "## Cómo lo recuerdo\n\n意思 yìsi = significado. X 是什么意思？ = «¿X qué significado es?». Si te hacen un gesto raro y no lo pillas: 什么意思？\n\n> 🏮 **¿Sabías que…?**: 不好意思 bù hǎoyìsi (literalmente «no buen significado») es «perdona, qué vergüenza»: lo oirás mil veces, más que 对不起.\n\n```xb-example\n{\"zh\":\"老师，«没关系» 是什么意思？——是 «no pasa nada»。\",\"py\":\"Lǎoshī, «méi guānxi» shì shénme yìsi? —Shì «no pasa nada».\",\"es\":\"Profesor, ¿qué significa «méi guānxi»? —Es «no pasa nada».\"}\n```",
+    "cues": [
+      { "id": "c1", "q": "¿Cómo pregunto qué significa algo?", "a": "X 是什么意思？" },
+      { "id": "c2", "q": "¿Qué significa 意思?", "a": "Significado." },
+      { "id": "c3", "q": "¿Y 不好意思?", "a": "«Perdona, qué corte»: disculpa suave muy frecuente." }
+    ],
+    "summary": "X 是什么意思？ = ¿qué significa X?; 不好意思 = perdona (disculpa suave).",
+    "reviewed": false
+  },
+  {
+    "id": "zh-phrase-class-late",
+    "type": "phrase",
+    "title": "对不起，我迟到了",
+    "level": 1,
+    "tags": ["clase", "frases", "u09"],
+    "unitId": "u09",
+    "grammarIds": ["le"],
+    "fields": {
+      "zh": "对不起，我迟到了。",
+      "pinyin": "Duìbuqǐ, wǒ chídào le.",
+      "literal": "Perdón, yo llegar-tarde (了).",
+      "natural": "Perdón, llego tarde.",
+      "situation": "al entrar en clase o a una cita después de la hora",
+      "register": "neutral",
+      "variants": [
+        { "zh": "不好意思，我来晚了。", "py": "Bù hǎoyìsi, wǒ lái wǎn le.", "es": "Perdona, he llegado tarde. (más coloquial)" },
+        { "zh": "对不起，老师，路上堵车。", "py": "Duìbuqǐ, lǎoshī, lùshang dǔchē.", "es": "Perdón, profesor, había atasco. (堵车 es vocabulario de más nivel, pero en Shanghái lo oirás a diario)" },
+        { "zh": "没关系。", "py": "Méi guānxi.", "es": "No pasa nada. (lo que te responderán)" }
+      ]
+    },
+    "markdown": "## Cómo lo recuerdo\n\n迟到 = llegar tarde; 了 porque ya ha pasado (y es un cambio de situación). La respuesta normal es 没关系 (no pasa nada).\n\n> 💡 **Truco**: 对不起 es para faltas de verdad (llegar tarde, pisar a alguien). Para cosas pequeñas (pedir paso, interrumpir) los chinos usan 不好意思.\n\n```xb-example\n{\"zh\":\"对不起，我迟到了。——没关系，请坐。\",\"py\":\"Duìbuqǐ, wǒ chídào le. —Méi guānxi, qǐng zuò.\",\"es\":\"Perdón, llego tarde. —No pasa nada, siéntate.\"}\n```",
+    "cues": [
+      { "id": "c1", "q": "¿Cómo me disculpo por llegar tarde?", "a": "对不起，我迟到了。" },
+      { "id": "c2", "q": "¿Qué me responderán?", "a": "没关系 (no pasa nada)." },
+      { "id": "c3", "q": "¿对不起 o 不好意思?", "a": "对不起 para faltas de verdad; 不好意思 para molestias pequeñas." }
+    ],
+    "summary": "对不起，我迟到了 = perdón, llego tarde; respuesta: 没关系.",
+    "reviewed": false
+  },
+  {
+    "id": "zh-phrase-class-question",
+    "type": "phrase",
+    "title": "我有一个问题",
+    "level": 1,
+    "tags": ["clase", "frases", "u09"],
+    "unitId": "u09",
+    "grammarIds": ["you", "measure-words"],
+    "fields": {
+      "zh": "老师，我有一个问题。",
+      "pinyin": "Lǎoshī, wǒ yǒu yí ge wèntí.",
+      "literal": "Profesor, yo tener un (clasificador) pregunta.",
+      "natural": "Profesor, tengo una pregunta.",
+      "situation": "antes de preguntar algo en clase; también en una oficina o tienda",
+      "register": "neutral",
+      "variants": [
+        { "zh": "我可以问一个问题吗？", "py": "Wǒ kěyǐ wèn yí ge wèntí ma?", "es": "¿Puedo hacer una pregunta?" },
+        { "zh": "我想问一下……", "py": "Wǒ xiǎng wèn yíxià……", "es": "Quería preguntar… (suaviza con 一下)" },
+        { "zh": "没有问题。", "py": "Méiyǒu wèntí.", "es": "No hay problema / no tengo preguntas." }
+      ]
+    },
+    "markdown": "## Cómo lo recuerdo\n\n问题 wèntí = pregunta y también problema. 一个问题 lleva clasificador 个 (yí ge por el sandhi). 问 wèn = preguntar (lleva 口, boca, y 门, puerta: preguntar es abrir una puerta con la boca).\n\n> ⚠️ **Ojo**: «preguntar una pregunta» en chino es natural: 问一个问题. No suena redundante.\n\n```xb-example\n{\"zh\":\"老师，我有一个问题：«了» 是什么意思？\",\"py\":\"Lǎoshī, wǒ yǒu yí ge wèntí: «le» shì shénme yìsi?\",\"es\":\"Profesor, tengo una pregunta: ¿qué significa «le»?\"}\n```",
+    "cues": [
+      { "id": "c1", "q": "¿Cómo aviso de que tengo una pregunta?", "a": "我有一个问题。" },
+      { "id": "c2", "q": "¿Qué dos cosas significa 问题?", "a": "Pregunta y problema." },
+      { "id": "c3", "q": "¿Cómo digo «no hay problema»?", "a": "没有问题 / 没问题。" }
+    ],
+    "summary": "我有一个问题 = tengo una pregunta; 问题 = pregunta/problema; 没问题 = sin problema.",
+    "reviewed": false
+  },
+  {
+    "id": "zh-phrase-class-english",
+    "type": "phrase",
+    "title": "可以用英语说吗？",
+    "level": 1,
+    "tags": ["clase", "frases", "u09"],
+    "unitId": "u09",
+    "grammarIds": ["modal-verbs"],
+    "fields": {
+      "zh": "老师，可以用英语说吗？",
+      "pinyin": "Lǎoshī, kěyǐ yòng Yīngyǔ shuō ma?",
+      "literal": "Profesor, poder usar inglés decir (吗)?",
+      "natural": "Profesor, ¿puedo decirlo en inglés?",
+      "situation": "cuando no sabes decir algo en chino y necesitas salir del paso",
+      "register": "neutral",
+      "variants": [
+        { "zh": "我可以用西班牙语说吗？", "py": "Wǒ kěyǐ yòng Xībānyáyǔ shuō ma?", "es": "¿Puedo decirlo en español?" },
+        { "zh": "你会说英语吗？", "py": "Nǐ huì shuō Yīngyǔ ma?", "es": "¿Sabes hablar inglés? (en la calle)" },
+        { "zh": "请用中文说。", "py": "Qǐng yòng Zhōngwén shuō.", "es": "Dilo en chino, por favor. (lo que te dirá el profesor)" }
+      ]
+    },
+    "markdown": "## Cómo lo recuerdo\n\n可以……吗 pide permiso; 用 + idioma + 说 = decir en [idioma]. Nota los nombres: 英语 inglés, 西班牙语 español, 中文 / 汉语 chino.\n\n> 👩‍🏫 **Lo dijo el profe**: úsala poco. Es mejor 用中文怎么说？ y aprender la palabra.\n\n```xb-example\n{\"zh\":\"这个我不会说，可以用英语说吗？\",\"py\":\"Zhège wǒ bú huì shuō, kěyǐ yòng Yīngyǔ shuō ma?\",\"es\":\"Esto no sé decirlo, ¿puedo decirlo en inglés?\"}\n```",
+    "cues": [
+      { "id": "c1", "q": "¿Cómo pido permiso para hablar en inglés?", "a": "可以用英语说吗？" },
+      { "id": "c2", "q": "¿Cómo se dice «español» (idioma)?", "a": "西班牙语 Xībānyáyǔ." },
+      { "id": "c3", "q": "¿Qué modal uso para pedir permiso?", "a": "可以." }
+    ],
+    "summary": "可以用英语说吗？ = ¿puedo decirlo en inglés?; 用 + idioma + 说.",
+    "reviewed": false
+  },
+  {
+    "id": "zh-phrase-class-homework",
+    "type": "phrase",
+    "title": "作业是什么？",
+    "level": 1,
+    "tags": ["clase", "frases", "u09"],
+    "unitId": "u09",
+    "grammarIds": ["question-words", "shi"],
+    "fields": {
+      "zh": "老师，今天的作业是什么？",
+      "pinyin": "Lǎoshī, jīntiān de zuòyè shì shénme?",
+      "literal": "Profesor, hoy de deberes ser qué?",
+      "natural": "Profesor, ¿cuáles son los deberes de hoy?",
+      "situation": "al final de la clase",
+      "register": "neutral",
+      "variants": [
+        { "zh": "有作业吗？", "py": "Yǒu zuòyè ma?", "es": "¿Hay deberes?" },
+        { "zh": "作业什么时候交？", "py": "Zuòyè shénme shíhou jiāo?", "es": "¿Cuándo se entregan los deberes? (交 = entregar, adelanto)" },
+        { "zh": "我忘了做作业。", "py": "Wǒ wàng le zuò zuòyè.", "es": "Se me ha olvidado hacer los deberes. (忘 es HSK 2, pero la vas a necesitar)" }
+      ]
+    },
+    "markdown": "## Cómo lo recuerdo\n\n作业 zuòyè = deberes; 做作业 = hacer los deberes (做 zuò hacer + 作业: suena «zuò zuòyè»). 是什么 al final, donde iría la respuesta.\n\n```xb-example\n{\"zh\":\"今天的作业是什么？——写第三课的汉字。\",\"py\":\"Jīntiān de zuòyè shì shénme? —Xiě dì-sān kè de Hànzì.\",\"es\":\"¿Cuáles son los deberes de hoy? —Escribir los caracteres de la lección 3.\"}\n```",
+    "cues": [
+      { "id": "c1", "q": "¿Cómo pregunto los deberes?", "a": "今天的作业是什么？" },
+      { "id": "c2", "q": "¿Cómo se dice «hacer los deberes»?", "a": "做作业 zuò zuòyè." },
+      { "id": "c3", "q": "¿«¿Hay deberes?»?", "a": "有作业吗？" }
+    ],
+    "summary": "作业是什么？ = ¿cuáles son los deberes?; 做作业 = hacer los deberes.",
+    "reviewed": false
+  },
+  {
+    "id": "zh-phrase-class-finished",
+    "type": "phrase",
+    "title": "我做完了",
+    "level": 1,
+    "tags": ["clase", "frases", "u09"],
+    "unitId": "u09",
+    "grammarIds": ["complements", "le"],
+    "fields": {
+      "zh": "老师，我做完了。",
+      "pinyin": "Lǎoshī, wǒ zuò wán le.",
+      "literal": "Profesor, yo hacer-terminar (了).",
+      "natural": "Profesor, he terminado.",
+      "situation": "cuando acabas un ejercicio o un examen en clase",
+      "register": "neutral",
+      "variants": [
+        { "zh": "我还没做完。", "py": "Wǒ hái méi zuò wán.", "es": "Todavía no he terminado." },
+        { "zh": "我写完了。", "py": "Wǒ xiě wán le.", "es": "He terminado de escribir." },
+        { "zh": "你做完了吗？", "py": "Nǐ zuò wán le ma?", "es": "¿Has terminado? (lo que te preguntará el profesor)" }
+      ]
+    },
+    "markdown": "## Cómo lo recuerdo\n\nVerbo + 完 = acabar de hacer algo: 做完, 吃完, 写完, 看完. Con 了 cuando ya está hecho; con 没 (y sin 了) cuando no: 还没做完.\n\n> ❌ **Error típico**: ✗我没做完了. Con 没 se quita el 了.\n\n```xb-example\n{\"zh\":\"你做完了吗？——做完了。/ 还没有。\",\"py\":\"Nǐ zuò wán le ma? —Zuò wán le. / Hái méiyǒu.\",\"es\":\"¿Has terminado? —Sí, he terminado. / Todavía no.\"}\n```",
+    "cues": [
+      { "id": "c1", "q": "¿Cómo digo «he terminado»?", "a": "我做完了。" },
+      { "id": "c2", "q": "¿Y «todavía no he terminado»?", "a": "我还没做完。 (sin 了)." },
+      { "id": "c3", "q": "¿Qué añade 完 al verbo?", "a": "Que la acción se acabó: 吃完, 写完." }
+    ],
+    "summary": "我做完了 = he terminado; verbo + 完 (+ 了); negación 还没 + verbo + 完.",
+    "reviewed": false
+  },
+  {
+    "id": "zh-phrase-class-goodbye",
+    "type": "phrase",
+    "title": "谢谢老师，再见",
+    "level": 1,
+    "tags": ["clase", "frases", "u01", "u09"],
+    "unitId": "u09",
+    "fields": {
+      "zh": "谢谢老师，再见！",
+      "pinyin": "Xièxie lǎoshī, zàijiàn!",
+      "literal": "Gracias profesor, otra-vez ver!",
+      "natural": "Gracias, profesor. ¡Hasta luego!",
+      "situation": "al terminar la clase",
+      "register": "neutral",
+      "variants": [
+        { "zh": "老师再见！", "py": "Lǎoshī zàijiàn!", "es": "¡Adiós, profesor!" },
+        { "zh": "明天见！", "py": "Míngtiān jiàn!", "es": "¡Hasta mañana!" },
+        { "zh": "老师，辛苦了！", "py": "Lǎoshī, xīnkǔ le!", "es": "¡Gracias por su esfuerzo, profesor! (muy chino; 辛苦 es HSK 3, pero se dice siempre)" }
+      ]
+    },
+    "markdown": "## Cómo lo recuerdo\n\n再见 = «otra vez ver»: hasta la vista. Cambia 再 por un momento: 明天见 (hasta mañana), 下午见 (hasta la tarde), 星期一见 (hasta el lunes).\n\n> 🏮 **¿Sabías que…?**: en China se dice 老师 también para dirigirse al profesor (nunca por el nombre de pila): 老师好 al entrar, 老师再见 al salir.\n\n```xb-example\n{\"zh\":\"谢谢老师，明天见！——明天见。\",\"py\":\"Xièxie lǎoshī, míngtiān jiàn! —Míngtiān jiàn.\",\"es\":\"Gracias, profesor, ¡hasta mañana! —Hasta mañana.\"}\n```",
+    "cues": [
+      { "id": "c1", "q": "¿Cómo me despido del profesor?", "a": "谢谢老师，再见！" },
+      { "id": "c2", "q": "¿Cómo digo «hasta mañana»?", "a": "明天见。" },
+      { "id": "c3", "q": "¿Qué significa literalmente 再见?", "a": "«Otra vez ver»." }
+    ],
+    "summary": "谢谢老师，再见 = gracias profesor, adiós; X + 见 = hasta X (明天见).",
+    "reviewed": false
+  },
+  {
+    "id": "zh-phrase-surv-hello-excuse",
+    "type": "phrase",
+    "title": "你好 / 请问",
+    "level": 1,
+    "tags": ["supervivencia", "frases", "u01"],
+    "unitId": "u01",
+    "fields": {
+      "zh": "你好，请问……",
+      "pinyin": "Nǐ hǎo, qǐngwèn……",
+      "literal": "Tú bien, por-favor-preguntar…",
+      "natural": "Hola, perdone, ¿…? (para abordar a alguien)",
+      "situation": "para empezar cualquier conversación con un desconocido: preguntar una dirección, un precio, pedir ayuda",
+      "register": "neutral",
+      "variants": [
+        { "zh": "您好。", "py": "Nín hǎo.", "es": "Buenos días / hola (respetuoso, con 您)." },
+        { "zh": "请问，地铁站在哪儿？", "py": "Qǐngwèn, dìtiě zhàn zài nǎr?", "es": "Perdone, ¿dónde está el metro?" },
+        { "zh": "不好意思，打扰一下。", "py": "Bù hǎoyìsi, dǎrǎo yíxià.", "es": "Perdona que te moleste. (打扰 es de más nivel; útil para interrumpir)" }
+      ]
+    },
+    "markdown": "## Cómo lo recuerdo\n\n请问 = «permítame preguntar». Abre cualquier pregunta a un desconocido y suaviza mucho. 你好 + 请问 + pregunta es la fórmula de supervivencia número uno.\n\n> 💡 **Truco**: a mayores, taxistas y personal de oficina, 您好 (nín hǎo) queda mejor.\n\n```xb-example\n{\"zh\":\"你好，请问，交通大学怎么走？\",\"py\":\"Nǐ hǎo, qǐngwèn, Jiāotōng Dàxué zěnme zǒu?\",\"es\":\"Hola, perdone, ¿cómo se va a la Universidad Jiaotong?\"}\n```",
+    "cues": [
+      { "id": "c1", "q": "¿Cómo abordo a un desconocido para preguntar?", "a": "你好，请问……" },
+      { "id": "c2", "q": "¿Qué significa 请问?", "a": "«Permítame preguntar» (perdone)." },
+      { "id": "c3", "q": "¿Cuándo uso 您好?", "a": "Con mayores o en trato formal." }
+    ],
+    "summary": "你好，请问…… = hola, perdone, ¿…?: la fórmula para preguntar a cualquiera.",
+    "reviewed": false
+  },
+  {
+    "id": "zh-phrase-surv-intro",
+    "type": "phrase",
+    "title": "我是西班牙人，我叫雨果",
+    "level": 1,
+    "tags": ["supervivencia", "frases", "u01"],
+    "unitId": "u01",
+    "grammarIds": ["shi"],
+    "fields": {
+      "zh": "我是西班牙人，我叫雨果。",
+      "pinyin": "Wǒ shì Xībānyá rén, wǒ jiào Yǔguǒ.",
+      "literal": "Yo ser España persona, yo llamarse Yǔguǒ.",
+      "natural": "Soy español, me llamo Hugo.",
+      "situation": "al presentarte a cualquiera: compañeros, profesores, el casero",
+      "register": "neutral",
+      "variants": [
+        { "zh": "我来自西班牙马德里。", "py": "Wǒ láizì Xībānyá Mǎdélǐ.", "es": "Vengo de Madrid, España." },
+        { "zh": "我是交通大学的学生。", "py": "Wǒ shì Jiāotōng Dàxué de xuésheng.", "es": "Soy estudiante de la Universidad Jiaotong." },
+        { "zh": "很高兴认识你。", "py": "Hěn gāoxìng rènshi nǐ.", "es": "Encantado de conocerte." }
+      ]
+    },
+    "markdown": "## Cómo lo recuerdo\n\nPaís + 人 = nacionalidad: 西班牙人, 中国人. 叫 = llamarse (sin 是: ✗我是叫雨果).\n\n> ⚠️ **Ojo**: 雨果 Yǔguǒ es el nombre chino de Victor Hugo; a los chinos les sonará a literatura. Si tu profesor te pone otro nombre chino, cámbialo aquí.\n\n```xb-example\n{\"zh\":\"你好！我是西班牙人，我叫雨果。你叫什么名字？\",\"py\":\"Nǐ hǎo! Wǒ shì Xībānyá rén, wǒ jiào Yǔguǒ. Nǐ jiào shénme míngzi?\",\"es\":\"¡Hola! Soy español, me llamo Hugo. ¿Cómo te llamas?\"}\n```",
+    "cues": [
+      { "id": "c1", "q": "¿Cómo digo mi nacionalidad?", "a": "我是西班牙人。" },
+      { "id": "c2", "q": "¿Se dice 我是叫雨果?", "a": "No: 我叫雨果 (叫 ya es el verbo)." },
+      { "id": "c3", "q": "¿Cómo pregunto el nombre?", "a": "你叫什么名字？" }
+    ],
+    "summary": "我是西班牙人，我叫雨果 = soy español, me llamo Hugo; país + 人; 叫 sin 是.",
+    "reviewed": false
+  },
+  {
+    "id": "zh-phrase-surv-little-chinese",
+    "type": "phrase",
+    "title": "我不会说中文，我会说一点儿",
+    "level": 1,
+    "tags": ["supervivencia", "frases", "u01"],
+    "unitId": "u01",
+    "grammarIds": ["modal-verbs", "yidianr-youdianr"],
+    "fields": {
+      "zh": "我会说一点儿中文。",
+      "pinyin": "Wǒ huì shuō yìdiǎnr Zhōngwén.",
+      "literal": "Yo saber hablar un-poco chino.",
+      "natural": "Hablo un poco de chino.",
+      "situation": "cuando alguien te habla rápido o te pregunta si hablas chino",
+      "register": "neutral",
+      "variants": [
+        { "zh": "我不会说中文。", "py": "Wǒ bú huì shuō Zhōngwén.", "es": "No hablo chino." },
+        { "zh": "我的中文不太好。", "py": "Wǒ de Zhōngwén bú tài hǎo.", "es": "Mi chino no es muy bueno." },
+        { "zh": "我在学中文。", "py": "Wǒ zài xué Zhōngwén.", "es": "Estoy aprendiendo chino." }
+      ]
+    },
+    "markdown": "## Cómo lo recuerdo\n\n会 = saber (habilidad); 一点儿 detrás del verbo y delante del nombre: 说一点儿中文.\n\n> 💡 **Truco**: decir 我会说一点儿 en lugar de 我不会 abre puertas: la gente te hablará despacio en vez de pasar al inglés o rendirse.\n\n> 🏮 **¿Sabías que…?**: si dices esta frase bien, te contestarán 你的中文很好！ (¡hablas muy bien!). La respuesta modesta china es 哪里哪里 o 还不太好 (todavía no muy bien).\n\n```xb-example\n{\"zh\":\"你会说中文吗？——我会说一点儿，请说慢一点儿。\",\"py\":\"Nǐ huì shuō Zhōngwén ma? —Wǒ huì shuō yìdiǎnr, qǐng shuō màn yìdiǎnr.\",\"es\":\"¿Hablas chino? —Hablo un poco; hable despacio, por favor.\"}\n```",
+    "cues": [
+      { "id": "c1", "q": "¿Cómo digo «hablo un poco de chino»?", "a": "我会说一点儿中文。" },
+      { "id": "c2", "q": "¿Dónde va 一点儿?", "a": "Entre el verbo y el nombre: 说一点儿中文." },
+      { "id": "c3", "q": "¿Cómo respondo con modestia a un cumplido?", "a": "哪里哪里 / 还不太好。" }
+    ],
+    "summary": "我会说一点儿中文 = hablo un poco de chino; 我不会说中文 = no hablo chino.",
+    "reviewed": false
+  },
+  {
+    "id": "zh-phrase-surv-where-is",
+    "type": "phrase",
+    "title": "请问，……在哪儿？",
+    "level": 1,
+    "tags": ["supervivencia", "frases", "lugar", "u07"],
+    "unitId": "u07",
+    "grammarIds": ["zai", "question-words"],
+    "fields": {
+      "zh": "请问，……在哪儿？",
+      "pinyin": "Qǐngwèn, …… zài nǎr?",
+      "literal": "Por-favor-preguntar, … estar dónde?",
+      "natural": "Perdone, ¿dónde está …?",
+      "situation": "para encontrar cualquier sitio: el metro, el aula, la farmacia, la salida",
+      "register": "neutral",
+      "variants": [
+        { "zh": "请问，地铁站在哪儿？", "py": "Qǐngwèn, dìtiě zhàn zài nǎr?", "es": "Perdone, ¿dónde está la estación de metro?" },
+        { "zh": "请问，这儿有没有药店？", "py": "Qǐngwèn, zhèr yǒu méiyǒu yàodiàn?", "es": "Perdone, ¿hay alguna farmacia por aquí? (药店 es de más nivel)" },
+        { "zh": "……怎么走？", "py": "…… zěnme zǒu?", "es": "¿Cómo se va a …?" }
+      ]
+    },
+    "markdown": "## Cómo lo recuerdo\n\nCosa conocida + 在哪儿 = ¿dónde está? Para preguntar si existe algo cerca: 这儿有……吗？ Ver [[zh-contrast-you-zai-shi]].\n\n> 💡 **Truco**: las respuestas que oirás: 在那儿 (allí), 前面 (delante), 左边 / 右边 (izquierda / derecha), 一直走 (todo recto). Apúntalas.\n\n```xb-example\n{\"zh\":\"请问，教室在哪儿？——在二楼。\",\"py\":\"Qǐngwèn, jiàoshì zài nǎr? —Zài èr lóu.\",\"es\":\"Perdone, ¿dónde está el aula? —En la segunda planta.\"}\n```",
+    "cues": [
+      { "id": "c1", "q": "¿Cómo pregunto dónde está algo?", "a": "请问，X 在哪儿？" },
+      { "id": "c2", "q": "¿Y si quiero saber si hay algo cerca?", "a": "这儿有……吗？ / 有没有……？" },
+      { "id": "c3", "q": "¿Qué significa 怎么走?", "a": "¿Cómo se va (a pie)?" }
+    ],
+    "summary": "X 在哪儿？ = ¿dónde está X?; 这儿有 X 吗？ = ¿hay X por aquí?",
+    "reviewed": false
+  },
+  {
+    "id": "zh-phrase-surv-how-much",
+    "type": "phrase",
+    "title": "多少钱？太贵了",
+    "level": 1,
+    "tags": ["supervivencia", "frases", "compras", "u06"],
+    "unitId": "u06",
+    "grammarIds": ["price-age", "tai-le"],
+    "fields": {
+      "zh": "这个多少钱？太贵了！",
+      "pinyin": "Zhège duōshao qián? Tài guì le!",
+      "literal": "Esto cuánto dinero? Demasiado caro (了)!",
+      "natural": "¿Cuánto cuesta esto? ¡Es carísimo!",
+      "situation": "en mercados y tiendas pequeñas; en supermercados y cadenas no se regatea",
+      "register": "colloquial",
+      "variants": [
+        { "zh": "便宜一点儿，好吗？", "py": "Piányi yìdiǎnr, hǎo ma?", "es": "¿Me lo deja más barato?" },
+        { "zh": "一共多少钱？", "py": "Yígòng duōshao qián?", "es": "¿Cuánto es en total?" },
+        { "zh": "太贵了，我不要了。", "py": "Tài guì le, wǒ bú yào le.", "es": "Demasiado caro, lo dejo." }
+      ]
+    },
+    "markdown": "## Cómo lo recuerdo\n\n多少钱 es fijo (nunca 几钱). 太……了 = demasiado / qué…: 太贵了, 太好了, 太多了.\n\n> ⚠️ **Ojo**: 太贵了 sirve para regatear en un mercado, no en una tienda con precios marcados. En Shanghái casi todo tiene precio fijo; para la ropa de mercadillo, sí.\n\n```xb-example\n{\"zh\":\"这个多少钱？——五十块。——太贵了！三十，好吗？\",\"py\":\"Zhège duōshao qián? —Wǔshí kuài. —Tài guì le! Sānshí, hǎo ma?\",\"es\":\"¿Cuánto cuesta esto? —Cincuenta. —¡Muy caro! Treinta, ¿vale?\"}\n```",
+    "cues": [
+      { "id": "c1", "q": "¿Cómo pregunto el precio?", "a": "多少钱？" },
+      { "id": "c2", "q": "¿Cómo digo «demasiado caro»?", "a": "太贵了！" },
+      { "id": "c3", "q": "¿Cómo pido rebaja?", "a": "便宜一点儿，好吗？" }
+    ],
+    "summary": "多少钱？ = ¿cuánto cuesta?; 太贵了 = demasiado caro; 便宜一点儿 = más barato.",
+    "reviewed": false
+  },
+  {
+    "id": "zh-phrase-surv-i-want-this",
+    "type": "phrase",
+    "title": "我要这个",
+    "level": 1,
+    "tags": ["supervivencia", "frases", "comida", "compras", "u05"],
+    "unitId": "u05",
+    "grammarIds": ["modal-verbs", "demonstratives"],
+    "fields": {
+      "zh": "我要这个。",
+      "pinyin": "Wǒ yào zhège.",
+      "literal": "Yo querer este.",
+      "natural": "Quiero este / me pone esto.",
+      "situation": "en restaurantes y puestos de comida señalando la carta o la foto; en tiendas",
+      "register": "neutral",
+      "variants": [
+        { "zh": "我要一个这个，两个那个。", "py": "Wǒ yào yí ge zhège, liǎng ge nàge.", "es": "Quiero uno de estos y dos de aquellos." },
+        { "zh": "我要一碗米饭。", "py": "Wǒ yào yì wǎn mǐfàn.", "es": "Quiero un bol de arroz. (碗 = bol, clasificador de arroz y sopa)" },
+        { "zh": "就这些。", "py": "Jiù zhèxiē.", "es": "Eso es todo. (adelanto: cierra el pedido)" }
+      ]
+    },
+    "markdown": "## Cómo lo recuerdo\n\n要 + cosa = pedir. Con 这个 / 那个 y el dedo puedes comer en cualquier sitio de China sin saber el nombre de los platos.\n\n> 💡 **Truco**: muchos restaurantes tienen fotos o se pide por QR desde el móvil; aun así te preguntarán 要什么？ o 还要别的吗？ (¿algo más?). Responde 不要了，谢谢.\n\n```xb-example\n{\"zh\":\"你要什么？——我要这个，不要辣。\",\"py\":\"Nǐ yào shénme? —Wǒ yào zhège, bú yào là.\",\"es\":\"¿Qué quiere? —Quiero esto, sin picante.\"}\n```",
+    "cues": [
+      { "id": "c1", "q": "¿Cómo pido señalando?", "a": "我要这个。" },
+      { "id": "c2", "q": "¿Cómo digo «dos de aquellos»?", "a": "两个那个。" },
+      { "id": "c3", "q": "¿Cómo respondo a «¿algo más?»?", "a": "不要了，谢谢。" }
+    ],
+    "summary": "我要这个 = quiero esto (pedir señalando); 要 + cantidad + 这个/那个.",
+    "reviewed": false
+  },
+  {
+    "id": "zh-phrase-surv-not-spicy",
+    "type": "phrase",
+    "title": "不要辣",
+    "level": 1,
+    "tags": ["supervivencia", "frases", "comida", "u05"],
+    "unitId": "u05",
+    "grammarIds": ["bu-mei"],
+    "fields": {
+      "zh": "不要辣。",
+      "pinyin": "Bú yào là.",
+      "literal": "No querer picante.",
+      "natural": "Sin picante, por favor.",
+      "situation": "al pedir comida; en Shanghái la cocina local es dulce, pero hay mucho restaurante de Sichuan y Hunan",
+      "register": "colloquial",
+      "variants": [
+        { "zh": "我不吃辣。", "py": "Wǒ bù chī là.", "es": "No como picante." },
+        { "zh": "一点儿辣，可以。", "py": "Yìdiǎnr là, kěyǐ.", "es": "Un poco de picante, vale." },
+        { "zh": "这个辣不辣？", "py": "Zhège là bu là?", "es": "¿Esto pica?" }
+      ]
+    },
+    "markdown": "## Cómo lo recuerdo\n\n辣 là = picante. 不要 + cosa = «sin …» al pedir: 不要辣, 不要香菜 (sin cilantro), 不要冰 (sin hielo).\n\n> ⚠️ **Ojo**: 不要 bú yào (sandhi: 不 en 2.º tono ante 4.º).\n\n> 🏮 **¿Sabías que…?**: en muchos sitios te preguntarán 要不要辣？ o 微辣、中辣、特辣？ (poco, medio, muy picante). 微辣 wēi là es la opción segura.\n\n```xb-example\n{\"zh\":\"要不要辣？——不要辣，谢谢。\",\"py\":\"Yào bu yào là? —Bú yào là, xièxie.\",\"es\":\"¿Con picante? —Sin picante, gracias.\"}\n```",
+    "cues": [
+      { "id": "c1", "q": "¿Cómo pido sin picante?", "a": "不要辣。" },
+      { "id": "c2", "q": "¿Cómo pregunto si algo pica?", "a": "这个辣不辣？" },
+      { "id": "c3", "q": "¿Qué significa 微辣?", "a": "Poco picante: la opción segura." }
+    ],
+    "summary": "不要辣 = sin picante; 不要 + ingrediente = sin …; 辣不辣？ = ¿pica?",
+    "reviewed": false
+  },
+  {
+    "id": "zh-phrase-surv-bill",
+    "type": "phrase",
+    "title": "买单 / 结账",
+    "level": 1,
+    "tags": ["supervivencia", "frases", "comida", "u05"],
+    "unitId": "u05",
+    "fields": {
+      "zh": "服务员，买单！",
+      "pinyin": "Fúwùyuán, mǎidān!",
+      "literal": "Camarero, comprar-cuenta!",
+      "natural": "¡Camarero, la cuenta!",
+      "situation": "al terminar de comer en un restaurante",
+      "register": "colloquial",
+      "variants": [
+        { "zh": "结账。", "py": "Jiézhàng.", "es": "La cuenta (un poco más formal; en el norte se oye más)." },
+        { "zh": "可以用微信吗？", "py": "Kěyǐ yòng Wēixìn ma?", "es": "¿Puedo pagar con WeChat?" },
+        { "zh": "我请你。", "py": "Wǒ qǐng nǐ.", "es": "Te invito." }
+      ]
+    },
+    "markdown": "## Cómo lo recuerdo\n\n买单 mǎidān viene del cantonés y se usa en todo el sur (Shanghái incluido); 结账 jiézhàng es la forma estándar. Las dos se entienden en todas partes.\n\n> 🏮 **¿Sabías que…?**: en China no se deja propina. Y en muchos restaurantes se paga en la caja o por el QR de la mesa, no al camarero. Para llamar al camarero: 服务员！ en voz alta es normal, no es de mala educación.\n\n```xb-example\n{\"zh\":\"服务员，买单！——一共八十六块。\",\"py\":\"Fúwùyuán, mǎidān! —Yígòng bāshíliù kuài.\",\"es\":\"¡Camarero, la cuenta! —En total, 86 yuanes.\"}\n```",
+    "cues": [
+      { "id": "c1", "q": "¿Cómo pido la cuenta?", "a": "买单！ o 结账。" },
+      { "id": "c2", "q": "¿Cómo llamo al camarero?", "a": "服务员！" },
+      { "id": "c3", "q": "¿Se deja propina en China?", "a": "No." }
+    ],
+    "summary": "买单 / 结账 = la cuenta; 服务员 = camarero; sin propina.",
+    "reviewed": false
+  },
+  {
+    "id": "zh-phrase-surv-go-to-jiaotong",
+    "type": "phrase",
+    "title": "我要去交通大学",
+    "level": 1,
+    "tags": ["supervivencia", "frases", "transporte", "u08"],
+    "unitId": "u08",
+    "grammarIds": ["modal-verbs", "lai-qu"],
+    "fields": {
+      "zh": "师傅，我要去交通大学。",
+      "pinyin": "Shīfu, wǒ yào qù Jiāotōng Dàxué.",
+      "literal": "Maestro, yo querer ir Jiaotong Universidad.",
+      "natural": "Por favor, a la Universidad Jiaotong.",
+      "situation": "al subir a un taxi o 滴滴; también para preguntar qué metro o autobús coger",
+      "register": "neutral",
+      "variants": [
+        { "zh": "去交通大学，徐汇校区。", "py": "Qù Jiāotōng Dàxué, Xúhuì xiàoqū.", "es": "A la Universidad Jiaotong, campus de Xuhui. (校区 = campus; Jiaotong tiene varios, confirma el tuyo)" },
+        { "zh": "请问，去交通大学坐几号线？", "py": "Qǐngwèn, qù Jiāotōng Dàxué zuò jǐ hào xiàn?", "es": "Perdone, ¿qué línea de metro va a Jiaotong?" },
+        { "zh": "到了吗？", "py": "Dào le ma?", "es": "¿Hemos llegado?" }
+      ]
+    },
+    "markdown": "## Cómo lo recuerdo\n\n要去 + lugar = «quiero ir a / voy a». 师傅 shīfu es como se llama al taxista (y a cualquier conductor o técnico): respetuoso y normal.\n\n> ⚠️ **Ojo**: la Universidad Jiaotong de Shanghái (上海交通大学) tiene varios campus: 徐汇 Xúhuì (centro) y 闵行 Mǐnháng (afueras) entre otros. Lleva la dirección escrita en chino en el móvil y enséñala: 请看这个 (mire esto).\n\n```xb-example\n{\"zh\":\"师傅，我要去上海交通大学，徐汇校区。——好的。\",\"py\":\"Shīfu, wǒ yào qù Shànghǎi Jiāotōng Dàxué, Xúhuì xiàoqū. —Hǎo de.\",\"es\":\"A la Universidad Jiaotong de Shanghái, campus de Xuhui. —Vale.\"}\n```",
+    "cues": [
+      { "id": "c1", "q": "¿Cómo le digo al taxista adónde voy?", "a": "师傅，我要去……" },
+      { "id": "c2", "q": "¿Qué es 师傅?", "a": "La forma de dirigirse al taxista o conductor." },
+      { "id": "c3", "q": "¿Qué debo llevar preparado?", "a": "La dirección escrita en chino, con el campus (校区)." }
+    ],
+    "summary": "师傅，我要去交通大学 = al taxista: a la Universidad Jiaotong; lleva la dirección y el campus escritos.",
+    "reviewed": false
+  },
+  {
+    "id": "zh-phrase-surv-stop-here",
+    "type": "phrase",
+    "title": "师傅，请停一下",
+    "level": 1,
+    "tags": ["supervivencia", "frases", "transporte", "u08"],
+    "unitId": "u08",
+    "grammarIds": ["yixia", "qing"],
+    "fields": {
+      "zh": "师傅，请停一下。",
+      "pinyin": "Shīfu, qǐng tíng yíxià.",
+      "literal": "Maestro, por favor parar un-momento.",
+      "natural": "Pare aquí un momento, por favor.",
+      "situation": "en el taxi, cuando llegas o quieres bajarte antes",
+      "register": "neutral",
+      "variants": [
+        { "zh": "就在这儿停。", "py": "Jiù zài zhèr tíng.", "es": "Pare justo aquí." },
+        { "zh": "前面停。", "py": "Qiánmiàn tíng.", "es": "Pare más adelante." },
+        { "zh": "到了，谢谢师傅。", "py": "Dào le, xièxie shīfu.", "es": "Ya hemos llegado, gracias." }
+      ]
+    },
+    "markdown": "## Cómo lo recuerdo\n\n停 tíng = parar. Verbo + 一下 suaviza cualquier petición: 停一下, 等一下 (espere un momento), 看一下 (eche un vistazo).\n\n> 💡 **Truco**: en el autobús no hace falta hablar: pulsa el botón o baja por la puerta de atrás. En el metro, las paradas se anuncian también en inglés.\n\n```xb-example\n{\"zh\":\"师傅，就在这儿停一下，谢谢。\",\"py\":\"Shīfu, jiù zài zhèr tíng yíxià, xièxie.\",\"es\":\"Pare aquí mismo, por favor, gracias.\"}\n```",
+    "cues": [
+      { "id": "c1", "q": "¿Cómo pido al taxista que pare?", "a": "师傅，请停一下。" },
+      { "id": "c2", "q": "¿Qué hace 一下 detrás del verbo?", "a": "Suaviza: «un momento», «un poquito»." },
+      { "id": "c3", "q": "¿Cómo digo «espere un momento»?", "a": "等一下。" }
+    ],
+    "summary": "师傅，请停一下 = pare un momento, por favor; verbo + 一下 suaviza la petición.",
+    "reviewed": false
+  },
+  {
+    "id": "zh-phrase-surv-help-me",
+    "type": "phrase",
+    "title": "帮我一下",
+    "level": 1,
+    "tags": ["supervivencia", "frases", "u11"],
+    "unitId": "u11",
+    "grammarIds": ["yixia", "modal-verbs"],
+    "fields": {
+      "zh": "你可以帮我一下吗？",
+      "pinyin": "Nǐ kěyǐ bāng wǒ yíxià ma?",
+      "literal": "Tú poder ayudar yo un-momento (吗)?",
+      "natural": "¿Me puedes ayudar un momento?",
+      "situation": "con la maleta, con una máquina, con el móvil, con un formulario",
+      "register": "neutral",
+      "variants": [
+        { "zh": "请帮我一下。", "py": "Qǐng bāng wǒ yíxià.", "es": "Ayúdeme, por favor." },
+        { "zh": "请帮我看一下。", "py": "Qǐng bāng wǒ kàn yíxià.", "es": "Mírelo por mí, por favor (échele un vistazo)." },
+        { "zh": "谢谢你的帮助。", "py": "Xièxie nǐ de bāngzhù.", "es": "Gracias por tu ayuda." }
+      ]
+    },
+    "markdown": "## Cómo lo recuerdo\n\n帮 bāng = ayudar. 帮我 + verbo = «hazme el favor de + verbo»: 帮我看一下, 帮我写一下, 帮我拿一下 (cógeme esto).\n\n> 💡 **Truco**: añade 一下 y 吗 y cualquier petición suena educada aunque te falten palabras: 帮我一下，好吗？\n\n```xb-example\n{\"zh\":\"不好意思，你可以帮我一下吗？我的手机不能用。\",\"py\":\"Bù hǎoyìsi, nǐ kěyǐ bāng wǒ yíxià ma? Wǒ de shǒujī bù néng yòng.\",\"es\":\"Perdona, ¿me puedes ayudar un momento? Mi móvil no funciona.\"}\n```",
+    "cues": [
+      { "id": "c1", "q": "¿Cómo pido ayuda?", "a": "你可以帮我一下吗？" },
+      { "id": "c2", "q": "¿Cómo digo «mírelo por mí»?", "a": "请帮我看一下。" },
+      { "id": "c3", "q": "¿Cómo doy las gracias por la ayuda?", "a": "谢谢你的帮助。" }
+    ],
+    "summary": "帮我一下 = ayúdame un momento; 帮我 + verbo = hazme el favor de….",
+    "reviewed": false
+  },
+  {
+    "id": "zh-phrase-surv-sick",
+    "type": "phrase",
+    "title": "我不舒服 / 我要去医院",
+    "level": 1,
+    "tags": ["supervivencia", "frases", "salud", "u11"],
+    "unitId": "u11",
+    "grammarIds": ["yidianr-youdianr", "modal-verbs"],
+    "fields": {
+      "zh": "我不舒服，我要去医院。",
+      "pinyin": "Wǒ bù shūfu, wǒ yào qù yīyuàn.",
+      "literal": "Yo no cómodo, yo querer ir hospital.",
+      "natural": "No me encuentro bien, necesito ir al hospital.",
+      "situation": "emergencia o malestar: al casero, a un compañero, al taxista",
+      "register": "neutral",
+      "variants": [
+        { "zh": "我有点儿不舒服。", "py": "Wǒ yǒudiǎnr bù shūfu.", "es": "No me encuentro muy bien (leve)." },
+        { "zh": "我头疼 / 我肚子疼。", "py": "Wǒ tóu téng / wǒ dùzi téng.", "es": "Me duele la cabeza / la tripa. (疼 = doler)" },
+        { "zh": "请叫医生。", "py": "Qǐng jiào yīshēng.", "es": "Llame a un médico, por favor." }
+      ]
+    },
+    "markdown": "## Cómo lo recuerdo\n\n舒服 shūfu = cómodo, a gusto; 不舒服 = encontrarse mal (de cualquier cosa). 医院 yīyuàn = hospital; 医生 yīshēng = médico.\n\n> ⚠️ **Ojo**: en China no hay «médico de cabecera»: para cualquier cosa se va al hospital (医院). La universidad suele tener un 校医院 (hospital del campus). Guarda el número de emergencias: 120 (ambulancia), 110 (policía).\n\n```xb-example\n{\"zh\":\"老师，我今天不舒服，不能上课。\",\"py\":\"Lǎoshī, wǒ jīntiān bù shūfu, bù néng shàngkè.\",\"es\":\"Profesor, hoy no me encuentro bien, no puedo ir a clase.\"}\n```",
+    "cues": [
+      { "id": "c1", "q": "¿Cómo digo que me encuentro mal?", "a": "我不舒服。 (leve: 我有点儿不舒服)." },
+      { "id": "c2", "q": "¿Cómo digo que me duele algo?", "a": "我 + parte del cuerpo + 疼: 我头疼." },
+      { "id": "c3", "q": "¿Número de ambulancia en China?", "a": "120." }
+    ],
+    "summary": "我不舒服 = me encuentro mal; 我要去医院 = tengo que ir al hospital; X 疼 = me duele X.",
+    "reviewed": false
+  },
+  {
+    "id": "zh-phrase-surv-wifi",
+    "type": "phrase",
+    "title": "有没有 Wi-Fi？",
+    "level": 1,
+    "tags": ["supervivencia", "frases", "u14"],
+    "unitId": "u14",
+    "grammarIds": ["you"],
+    "fields": {
+      "zh": "请问，这儿有没有 Wi-Fi？",
+      "pinyin": "Qǐngwèn, zhèr yǒu méiyǒu Wi-Fi?",
+      "literal": "Por-favor-preguntar, aquí tener no-tener Wi-Fi?",
+      "natural": "Perdone, ¿hay wifi aquí?",
+      "situation": "en cafeterías, en la residencia, en el aeropuerto",
+      "register": "neutral",
+      "variants": [
+        { "zh": "Wi-Fi 密码是多少？", "py": "Wi-Fi mìmǎ shì duōshao?", "es": "¿Cuál es la contraseña del wifi? (密码 = contraseña, imprescindible)" },
+        { "zh": "这儿有 Wi-Fi 吗？", "py": "Zhèr yǒu Wi-Fi ma?", "es": "¿Hay wifi aquí?" },
+        { "zh": "没有网。", "py": "Méiyǒu wǎng.", "es": "No hay red / no tengo conexión." }
+      ]
+    },
+    "markdown": "## Cómo lo recuerdo\n\n有没有 = 有……吗: pregunta afirmativo-negativa, muy natural. Lugar + 有 + cosa = hay. Wi-Fi se dice en inglés (o 无线网 wúxiàn wǎng, poco usado al hablar).\n\n> 🏮 **¿Sabías que…?**: la contraseña se pregunta con 多少 como un número: 密码是多少？ Muchas cafeterías la tienen en el recibo o en la pared.\n\n```xb-example\n{\"zh\":\"这儿有没有 Wi-Fi？——有。密码是幺二三四五六七八。\",\"py\":\"Zhèr yǒu méiyǒu Wi-Fi? —Yǒu. Mìmǎ shì yāo èr sān sì wǔ liù qī bā.\",\"es\":\"¿Hay wifi aquí? —Sí. La contraseña es 12345678.\"}\n```",
+    "cues": [
+      { "id": "c1", "q": "¿Cómo pregunto si hay wifi?", "a": "这儿有没有 Wi-Fi？" },
+      { "id": "c2", "q": "¿Y la contraseña?", "a": "Wi-Fi 密码是多少？" },
+      { "id": "c3", "q": "¿Qué es 有没有?", "a": "Pregunta afirmativo-negativa = 有……吗." }
+    ],
+    "summary": "有没有 Wi-Fi？ = ¿hay wifi?; 密码是多少？ = ¿cuál es la contraseña?",
+    "reviewed": false
+  },
+  {
+    "id": "zh-phrase-surv-wechat-pay",
+    "type": "phrase",
+    "title": "可以用微信支付吗？",
+    "level": 1,
+    "tags": ["supervivencia", "frases", "compras", "u06"],
+    "unitId": "u06",
+    "grammarIds": ["modal-verbs"],
+    "fields": {
+      "zh": "可以用微信支付吗？",
+      "pinyin": "Kěyǐ yòng Wēixìn zhīfù ma?",
+      "literal": "Poder usar WeChat pagar (吗)?",
+      "natural": "¿Puedo pagar con WeChat?",
+      "situation": "en cualquier tienda, taxi o puesto: en China casi todo se paga con el móvil",
+      "register": "neutral",
+      "variants": [
+        { "zh": "可以用支付宝吗？", "py": "Kěyǐ yòng Zhīfùbǎo ma?", "es": "¿Puedo pagar con Alipay?" },
+        { "zh": "我扫你，还是你扫我？", "py": "Wǒ sǎo nǐ, háishi nǐ sǎo wǒ?", "es": "¿Escaneo yo o escaneas tú? (扫 = escanear; 还是 = o)" },
+        { "zh": "可以用现金吗？", "py": "Kěyǐ yòng xiànjīn ma?", "es": "¿Puedo pagar en efectivo? (现金 = efectivo)" }
+      ]
+    },
+    "markdown": "## Cómo lo recuerdo\n\n用 + medio + 支付 = pagar con. 微信 Wēixìn = WeChat; 支付宝 Zhīfùbǎo = Alipay. Las dos aceptan tarjetas extranjeras desde 2023: actívalas antes de volar.\n\n> ⚠️ **Ojo**: en muchos sitios pequeños **no aceptan efectivo** ni tarjeta: solo QR. Sin WeChat Pay o Alipay configurado el primer día lo vas a pasar mal.\n\n```xb-example\n{\"zh\":\"可以用微信支付吗？——可以，扫这个。\",\"py\":\"Kěyǐ yòng Wēixìn zhīfù ma? —Kěyǐ, sǎo zhège.\",\"es\":\"¿Puedo pagar con WeChat? —Sí, escanea este (código).\"}\n```",
+    "cues": [
+      { "id": "c1", "q": "¿Cómo pregunto si puedo pagar con WeChat?", "a": "可以用微信支付吗？" },
+      { "id": "c2", "q": "¿Cómo se llama Alipay en chino?", "a": "支付宝 Zhīfùbǎo." },
+      { "id": "c3", "q": "¿Qué significa 扫?", "a": "Escanear (el código QR)." }
+    ],
+    "summary": "可以用微信支付吗？ = ¿puedo pagar con WeChat?; 用 + medio + 支付; 扫 = escanear.",
+    "reviewed": false
+  },
+  {
+    "id": "zh-phrase-surv-write-it",
+    "type": "phrase",
+    "title": "我听不懂，请写一下",
+    "level": 1,
+    "tags": ["supervivencia", "frases", "u14"],
+    "unitId": "u14",
+    "grammarIds": ["complements", "yixia"],
+    "fields": {
+      "zh": "我听不懂，请写一下。",
+      "pinyin": "Wǒ tīng bu dǒng, qǐng xiě yíxià.",
+      "literal": "Yo escuchar-no-entender, por favor escribir un-momento.",
+      "natural": "No le entiendo, ¿me lo escribe?",
+      "situation": "cuando leer te resulta más fácil que entender de oído (direcciones, precios, nombres); también para traducirlo con el móvil",
+      "register": "neutral",
+      "variants": [
+        { "zh": "请写在这儿。", "py": "Qǐng xiě zài zhèr.", "es": "Escríbalo aquí, por favor (dándole el móvil o un papel)." },
+        { "zh": "可以打字吗？", "py": "Kěyǐ dǎzì ma?", "es": "¿Puede escribirlo en el móvil? (打字 = teclear)" },
+        { "zh": "请说英语，可以吗？", "py": "Qǐng shuō Yīngyǔ, kěyǐ ma?", "es": "¿Podría hablar en inglés?" }
+      ]
+    },
+    "markdown": "## Cómo lo recuerdo\n\n听不懂 (no soy capaz de entender al oír) + 写一下 (escríbalo). Si te lo escriben, lo puedes pasar por el traductor del móvil.\n\n> 💡 **Truco**: enseña el móvil con la app de traducción abierta mientras lo dices; en China todo el mundo está acostumbrado a hablar por traductor.\n\n```xb-example\n{\"zh\":\"对不起，我听不懂。请写一下，好吗？\",\"py\":\"Duìbuqǐ, wǒ tīng bu dǒng. Qǐng xiě yíxià, hǎo ma?\",\"es\":\"Perdone, no le entiendo. ¿Me lo escribe, por favor?\"}\n```",
+    "cues": [
+      { "id": "c1", "q": "¿Cómo pido que me lo escriban?", "a": "请写一下。" },
+      { "id": "c2", "q": "¿Qué significa 听不懂?", "a": "No puedo entender (al oír)." },
+      { "id": "c3", "q": "¿Cómo pido que lo tecleen en el móvil?", "a": "可以打字吗？" }
+    ],
+    "summary": "我听不懂，请写一下 = no le entiendo, escríbamelo; 写一下 / 打字.",
+    "reviewed": false
+  },
+  {
+    "id": "zh-phrase-surv-toilet",
+    "type": "phrase",
+    "title": "洗手间在哪儿？",
+    "level": 1,
+    "tags": ["supervivencia", "frases", "lugar", "u07"],
+    "unitId": "u07",
+    "grammarIds": ["zai", "question-words"],
+    "fields": {
+      "zh": "请问，洗手间在哪儿？",
+      "pinyin": "Qǐngwèn, xǐshǒujiān zài nǎr?",
+      "literal": "Por-favor-preguntar, lavar-manos-habitación estar dónde?",
+      "natural": "Perdone, ¿dónde está el baño?",
+      "situation": "en restaurantes, centros comerciales, la universidad",
+      "register": "neutral",
+      "variants": [
+        { "zh": "厕所在哪儿？", "py": "Cèsuǒ zài nǎr?", "es": "¿Dónde está el servicio? (厕所 es más directo; 洗手间 más fino)" },
+        { "zh": "卫生间在哪里？", "py": "Wèishēngjiān zài nǎli?", "es": "¿Dónde está el aseo? (卫生间 lo verás en carteles)" },
+        { "zh": "我想去洗手间。", "py": "Wǒ xiǎng qù xǐshǒujiān.", "es": "Quiero ir al baño. (en clase, para pedir permiso)" }
+      ]
+    },
+    "markdown": "## Cómo lo recuerdo\n\n洗手间 = «cuarto de lavarse las manos». Tres palabras para lo mismo: 洗手间 (educado), 卫生间 (carteles), 厕所 (directo). En los carteles: 男 hombres, 女 mujeres.\n\n> 🏮 **¿Sabías que…?**: lleva siempre pañuelos de papel: muchos baños públicos no tienen papel. Y los del metro y los centros comerciales suelen estar limpios y ser gratuitos.\n\n```xb-example\n{\"zh\":\"请问，洗手间在哪儿？——在那儿，左边。\",\"py\":\"Qǐngwèn, xǐshǒujiān zài nǎr? —Zài nàr, zuǒbian.\",\"es\":\"Perdone, ¿dónde está el baño? —Allí, a la izquierda.\"}\n```",
+    "cues": [
+      { "id": "c1", "q": "¿Cómo pregunto por el baño?", "a": "洗手间在哪儿？" },
+      { "id": "c2", "q": "¿Qué pone en los carteles?", "a": "卫生间 / 男 (hombres) / 女 (mujeres)." },
+      { "id": "c3", "q": "¿Cómo pido permiso en clase para ir?", "a": "老师，我想去洗手间。" }
+    ],
+    "summary": "洗手间在哪儿？ = ¿dónde está el baño? (también 卫生间, 厕所); 男 / 女 en las puertas.",
+    "reviewed": false
+  },
+  {
+    "id": "zh-phrase-surv-how-to-say-this",
+    "type": "phrase",
+    "title": "这个用中文怎么说？",
+    "level": 1,
+    "tags": ["supervivencia", "frases", "u01"],
+    "unitId": "u01",
+    "grammarIds": ["question-words"],
+    "fields": {
+      "zh": "这个用中文怎么说？",
+      "pinyin": "Zhège yòng Zhōngwén zěnme shuō?",
+      "literal": "Esto usando chino cómo decir?",
+      "natural": "¿Cómo se dice esto en chino?",
+      "situation": "en la calle, señalando algo: comida, objetos, carteles; es la versión «sin profesor» de la frase de clase",
+      "register": "neutral",
+      "variants": [
+        { "zh": "这个叫什么？", "py": "Zhège jiào shénme?", "es": "¿Cómo se llama esto?" },
+        { "zh": "这是什么？", "py": "Zhè shì shénme?", "es": "¿Qué es esto?" },
+        { "zh": "这个字怎么读？", "py": "Zhège zì zěnme dú?", "es": "¿Cómo se lee este carácter? (en un cartel o un menú)" }
+      ]
+    },
+    "markdown": "## Cómo lo recuerdo\n\nLa misma estructura que en clase (用中文怎么说), pero con 这个 y el dedo: funciona con vendedores, compañeros y camareros. 这个叫什么 (¿cómo se llama?) es aún más corto.\n\n> 💡 **Truco**: cada día, tres cosas. Pregunta, repite la respuesta y apúntala en la app: es la forma más rápida de ganar vocabulario real.\n\n```xb-example\n{\"zh\":\"这个用中文怎么说？——这个叫包子。\",\"py\":\"Zhège yòng Zhōngwén zěnme shuō? —Zhège jiào bāozi.\",\"es\":\"¿Cómo se dice esto en chino? —Esto se llama bāozi (bollo relleno al vapor).\"}\n```",
+    "cues": [
+      { "id": "c1", "q": "¿Cómo pregunto el nombre de algo que señalo?", "a": "这个用中文怎么说？ / 这个叫什么？" },
+      { "id": "c2", "q": "¿Y «qué es esto»?", "a": "这是什么？" },
+      { "id": "c3", "q": "¿Qué hago con la respuesta?", "a": "Repetirla y apuntarla en un apunte de tipo «palabra»." }
+    ],
+    "summary": "这个用中文怎么说？ = ¿cómo se dice esto en chino?; 这个叫什么？ = ¿cómo se llama esto?",
+    "reviewed": false
+  },
+  {
+    "id": "zh-dialogue-class-first-day",
+    "type": "dialogue",
+    "title": "Diálogo: primer día de clase",
+    "level": 1,
+    "tags": ["clase", "diálogo", "u09"],
+    "unitId": "u09",
+    "grammarIds": ["shi", "ne", "modal-verbs", "question-words"],
+    "fields": {
+      "topic": "Primer día de clase de chino en la universidad",
+      "lines": [
+        { "speaker": "老师", "zh": "大家好！我是李老师。你叫什么名字？", "py": "Dàjiā hǎo! Wǒ shì Lǐ lǎoshī. Nǐ jiào shénme míngzi?", "es": "¡Hola a todos! Soy la profesora Li. ¿Cómo te llamas?" },
+        { "speaker": "雨果", "zh": "老师好！我叫雨果，我是西班牙人。", "py": "Lǎoshī hǎo! Wǒ jiào Yǔguǒ, wǒ shì Xībānyá rén.", "es": "¡Hola, profesora! Me llamo Hugo, soy español." },
+        { "speaker": "老师", "zh": "很高兴认识你。你会说中文吗？", "py": "Hěn gāoxìng rènshi nǐ. Nǐ huì shuō Zhōngwén ma?", "es": "Encantada de conocerte. ¿Hablas chino?" },
+        { "speaker": "雨果", "zh": "我会说一点儿。老师，请说慢一点儿。", "py": "Wǒ huì shuō yìdiǎnr. Lǎoshī, qǐng shuō màn yìdiǎnr.", "es": "Hablo un poco. Profesora, hable despacio, por favor." },
+        { "speaker": "老师", "zh": "好。这是书，这是作业。你有问题吗？", "py": "Hǎo. Zhè shì shū, zhè shì zuòyè. Nǐ yǒu wèntí ma?", "es": "Vale. Esto es el libro y esto son los deberes. ¿Tienes alguna pregunta?" },
+        { "speaker": "雨果", "zh": "有。«作业» 是什么意思？", "py": "Yǒu. «Zuòyè» shì shénme yìsi?", "es": "Sí. ¿Qué significa «zuòyè»?" },
+        { "speaker": "老师", "zh": "作业是 «deberes»。明天交，好吗？", "py": "Zuòyè shì «deberes». Míngtiān jiāo, hǎo ma?", "es": "«Zuòyè» son los deberes. Se entregan mañana, ¿vale?" },
+        { "speaker": "雨果", "zh": "好的，谢谢老师。明天见！", "py": "Hǎo de, xièxie lǎoshī. Míngtiān jiàn!", "es": "Vale, gracias, profesora. ¡Hasta mañana!" }
+      ],
+      "vocab": ["大家", "老师", "名字", "西班牙人", "认识", "会", "一点儿", "慢", "书", "作业", "问题", "意思", "明天", "见"],
+      "grammar": ["叫 + nombre (sin 是)", "会 + verbo: saber hacer", "请 + verbo + 一点儿", "X 是什么意思？", "明天见: X + 见"]
+    },
+    "markdown": "## Cómo lo recuerdo\n\nCasi todas las frases de clase en ocho líneas: presentarse, pedir que hablen despacio, preguntar un significado y despedirse. Léelo en voz alta con las dos voces y luego cambia los datos: tu nombre chino, tu nacionalidad, otra palabra que no entiendas.\n\n> 👩‍🏫 **Lo dijo el profe**: 老师好 es el saludo de clase; 大家好 es lo que dirá el profesor. Responder 你好 al profesor es correcto pero suena menos a alumno.\n\n> 💡 **Truco**: 交 jiāo (entregar) no es HSK 1, pero lo oirás el primer día. Si no lo entiendes: 什么意思？\n\n```xb-exercise\n{\"kind\":\"translate\",\"data\":{\"es\":\"Hablo un poco. Profesora, hable despacio, por favor.\",\"zh\":\"我会说一点儿。老师，请说慢一点儿。\"}}\n```\n\n```xb-exercise\n{\"kind\":\"order\",\"data\":{\"zh\":\"我叫雨果，我是西班牙人。\",\"es\":\"Me llamo Hugo, soy español.\"}}\n```",
+    "cues": [
+      { "id": "c1", "q": "¿Cómo saludo al entrar en clase?", "a": "老师好！" },
+      { "id": "c2", "q": "¿Qué dirías si el profesor va rápido?", "a": "老师，请说慢一点儿。" },
+      { "id": "c3", "q": "¿Cómo pregunto el significado de una palabra?", "a": "X 是什么意思？" },
+      { "id": "c4", "q": "¿Cómo me despido hasta el día siguiente?", "a": "谢谢老师，明天见！" }
+    ],
+    "summary": "Primer día: 老师好 → 我叫雨果，我是西班牙人 → 我会说一点儿 → 请说慢一点儿 → 什么意思？ → 明天见.",
+    "reviewed": false
+  },
+  {
+    "id": "zh-dialogue-arrival-taxi",
+    "type": "dialogue",
+    "title": "Diálogo: del aeropuerto a la universidad en taxi",
+    "level": 1,
+    "tags": ["supervivencia", "diálogo", "transporte", "u08"],
+    "unitId": "u08",
+    "grammarIds": ["modal-verbs", "lai-qu", "price-age", "le"],
+    "fields": {
+      "topic": "Llegada a Shanghái: taxi o 滴滴 del aeropuerto de Pudong a la Universidad Jiaotong",
+      "lines": [
+        { "speaker": "雨果", "zh": "师傅，您好。我要去上海交通大学。", "py": "Shīfu, nín hǎo. Wǒ yào qù Shànghǎi Jiāotōng Dàxué.", "es": "Hola. A la Universidad Jiaotong de Shanghái, por favor." },
+        { "speaker": "司机", "zh": "交通大学？哪个校区？", "py": "Jiāotōng Dàxué? Nǎge xiàoqū?", "es": "¿Jiaotong? ¿Qué campus?" },
+        { "speaker": "雨果", "zh": "对不起，我听不懂。请看这个。", "py": "Duìbuqǐ, wǒ tīng bu dǒng. Qǐng kàn zhège.", "es": "Perdone, no le entiendo. Mire esto (le enseña la dirección en el móvil)." },
+        { "speaker": "司机", "zh": "好，徐汇校区。你是哪国人？", "py": "Hǎo, Xúhuì xiàoqū. Nǐ shì nǎ guó rén?", "es": "Vale, campus de Xuhui. ¿De qué país eres?" },
+        { "speaker": "雨果", "zh": "我是西班牙人，我是学生。我会说一点儿中文。", "py": "Wǒ shì Xībānyá rén, wǒ shì xuésheng. Wǒ huì shuō yìdiǎnr Zhōngwén.", "es": "Soy español, soy estudiante. Hablo un poco de chino." },
+        { "speaker": "司机", "zh": "你的中文很好！到了。", "py": "Nǐ de Zhōngwén hěn hǎo! Dào le.", "es": "¡Hablas muy bien! Hemos llegado." },
+        { "speaker": "雨果", "zh": "谢谢。多少钱？可以用微信吗？", "py": "Xièxie. Duōshao qián? Kěyǐ yòng Wēixìn ma?", "es": "Gracias. ¿Cuánto es? ¿Puedo pagar con WeChat?" },
+        { "speaker": "司机", "zh": "一百八十块。可以，扫这儿。", "py": "Yì bǎi bāshí kuài. Kěyǐ, sǎo zhèr.", "es": "Ciento ochenta yuanes. Sí, escanea aquí." }
+      ],
+      "vocab": ["师傅", "您", "去", "大学", "哪个", "听不懂", "看", "哪国人", "学生", "一点儿", "到了", "多少钱", "微信", "块"],
+      "grammar": ["要去 + lugar", "哪个 + nombre: ¿cuál?", "听不懂: no poder entender", "哪国人: nacionalidad", "可以用……吗: permiso", "número + 块"]
+    },
+    "markdown": "## Cómo lo recuerdo\n\nEl trayecto real: destino, no entender la pregunta (y salir del paso enseñando la dirección), la charla de siempre (¿de dónde eres?), el pago. Con estas ocho líneas se llega.\n\n> ⚠️ **Ojo**: 司机 sījī es «conductor» (la palabra), pero para hablarle se usa 师傅 shīfu. 校区 xiàoqū (campus) y 扫 sǎo (escanear) no son HSK 1: apréndelas igual, las oirás el primer día.\n\n> 🏮 **¿Sabías que…?**: del aeropuerto de Pudong (浦东机场) al campus de Xuhui hay unos 50 km; en taxi son más o menos 170–200 yuanes, y el 滴滴 Dīdī (la app de taxis) se puede pedir con la interfaz en inglés. También puedes coger el metro: línea 2 y transbordo.\n\n```xb-exercise\n{\"kind\":\"translate\",\"data\":{\"es\":\"¿Cuánto es? ¿Puedo pagar con WeChat?\",\"zh\":\"多少钱？可以用微信吗？ · 多少钱？可以用微信支付吗？\"}}\n```\n\n```xb-exercise\n{\"kind\":\"choice\",\"data\":{\"prompt\":\"El taxista te pregunta 哪个校区？ y no entiendes. ¿Qué dices?\",\"options\":\"我不是校区。 · 对不起，我听不懂。请看这个。 · 我要校区。\",\"answer\":\"1\",\"explain\":\"Disculpa + 听不懂 + enseñar la dirección escrita.\"}}\n```",
+    "cues": [
+      { "id": "c1", "q": "¿Qué le digo al taxista al subir?", "a": "师傅，您好。我要去上海交通大学。" },
+      { "id": "c2", "q": "¿Qué hago si no entiendo su pregunta?", "a": "对不起，我听不懂。请看这个。 (enseñar la dirección)" },
+      { "id": "c3", "q": "¿Cómo pregunto el precio y el pago?", "a": "多少钱？可以用微信吗？" },
+      { "id": "c4", "q": "¿Qué significa 到了?", "a": "Hemos llegado." }
+    ],
+    "summary": "Taxi: 师傅，我要去交通大学 → 哪个校区？ → 我听不懂，请看这个 → 你是哪国人？ → 多少钱？可以用微信吗？ → 扫这儿.",
+    "reviewed": false
+  },
+  {
+    "id": "zh-topic-my-script",
+    "type": "topic",
+    "title": "Mi guion personal: lo que digo de mí en chino",
+    "level": 1,
+    "tags": ["supervivencia", "clase", "presentación", "u01", "u03"],
+    "unitId": "u01",
+    "grammarIds": ["shi", "zai", "you", "hen-adj", "modal-verbs"],
+    "fields": {
+      "topic": "Mi guion personal (HSK 1)",
+      "nodes": [
+        {
+          "text": "Presentarme",
+          "kind": "group",
+          "es": "nombre, nacionalidad, edad, ciudad",
+          "children": [
+            { "text": "你好！我叫雨果。", "kind": "phrase", "es": "¡Hola! Me llamo Hugo." },
+            { "text": "我是西班牙人，我家在马德里。", "kind": "phrase", "es": "Soy español; mi casa está en Madrid." },
+            { "text": "我今年二十二岁。", "kind": "phrase", "es": "Tengo veintidós años. (cambia el número)" },
+            { "text": "很高兴认识你。", "kind": "phrase", "es": "Encantado de conocerte." }
+          ]
+        },
+        {
+          "text": "Mis estudios",
+          "kind": "group",
+          "es": "qué estudio, dónde, el chino",
+          "children": [
+            { "text": "我是学生。", "kind": "phrase", "es": "Soy estudiante." },
+            { "text": "我在交通大学学习。", "kind": "phrase", "es": "Estudio en la Universidad Jiaotong." },
+            { "text": "我学习中文，我会说一点儿。", "kind": "phrase", "es": "Estudio chino; hablo un poco." },
+            { "text": "中文很难，但是很有意思。", "kind": "phrase", "es": "El chino es difícil, pero muy interesante. (但是 = pero)" }
+          ]
+        },
+        {
+          "text": "El máster en China",
+          "kind": "group",
+          "es": "por qué estoy aquí, cuánto tiempo, qué me gusta",
+          "children": [
+            { "text": "我今年来中国。", "kind": "phrase", "es": "Este año he venido a China." },
+            { "text": "我在上海住一年。", "kind": "phrase", "es": "Vivo un año en Shanghái." },
+            { "text": "这是我第一次来中国。", "kind": "phrase", "es": "Es la primera vez que vengo a China." },
+            { "text": "我很喜欢上海。", "kind": "phrase", "es": "Me gusta mucho Shanghái." }
+          ]
+        },
+        {
+          "text": "Mi familia",
+          "kind": "group",
+          "es": "cuántos somos, quiénes, dónde están",
+          "children": [
+            { "text": "我家有四口人：爸爸、妈妈、姐姐和我。", "kind": "phrase", "es": "En mi familia somos cuatro: mi padre, mi madre, mi hermana mayor y yo. (adapta: 哥哥, 弟弟, 妹妹)" },
+            { "text": "我爸爸妈妈在西班牙。", "kind": "phrase", "es": "Mis padres están en España." },
+            { "text": "我有一个姐姐，她是老师。", "kind": "phrase", "es": "Tengo una hermana mayor; es profesora. (cambia la profesión)" },
+            { "text": "我很想我的家人。", "kind": "phrase", "es": "Echo mucho de menos a mi familia." }
+          ]
+        },
+        {
+          "text": "Mis gustos",
+          "kind": "group",
+          "es": "comida, aficiones, lo que no me gusta",
+          "children": [
+            { "text": "我喜欢吃中国菜，不喜欢吃辣。", "kind": "phrase", "es": "Me gusta la comida china; no me gusta el picante." },
+            { "text": "我喜欢看电影和听音乐。", "kind": "phrase", "es": "Me gusta ver películas y escuchar música." },
+            { "text": "周末我喜欢和朋友去喝咖啡。", "kind": "phrase", "es": "Los fines de semana me gusta ir a tomar café con amigos." },
+            { "text": "我也喜欢学习中文！", "kind": "phrase", "es": "¡También me gusta estudiar chino!" }
+          ]
+        }
+      ]
+    },
+    "markdown": "## Cómo lo recuerdo\n\nEste es **mi guion**: las frases que voy a decir de mí mismo una y otra vez (en clase, con compañeros, con el casero, en el taxi). Si las tengo automatizadas, cualquier conversación empieza bien.\n\n> 👩‍🏫 **Lo dijo el profe**: estas frases son una plantilla de HSK 1. Hugo tiene que **adaptarlas** (edad real, hermanos, ciudad, gustos) y comprobarlas con su profesor. No digas nada que no sea verdad: luego te preguntan y te pillan.\n\n> 💡 **Truco**: guarda **una versión por nivel**. Duplica este apunte como «Mi guion HSK 2» cuando aprendas 因为……所以, 已经, 以后… y amplía cada rama con una frase más. En un año tendrás la versión HSK 1, HSK 2 y HSK 3 y verás cómo ha crecido.\n\n> ⚠️ **Ojo**: 但是 (pero), 第一次 (primera vez) y 家人 (familia) están en el límite de HSK 1–2; si el profesor prefiere otra forma, cámbiala.\n\n## Cómo practicarlo\n\n1. Lee cada rama en voz alta tres veces.\n2. Tapa el español y di la rama entera sin mirar.\n3. Grábate (botón de audio) y escúchate: ¿se oyen los tonos de 我 (3.º), 是 (4.º), 人 (2.º)?\n4. Pide al profesor que te haga las preguntas (你叫什么名字？你家有几口人？你喜欢吃什么？) y responde con el guion.\n\n```xb-example\n{\"zh\":\"你好！我叫雨果，我是西班牙人。我在交通大学学习中文。我家有四口人。我喜欢吃中国菜。很高兴认识你！\",\"py\":\"Nǐ hǎo! Wǒ jiào Yǔguǒ, wǒ shì Xībānyá rén. Wǒ zài Jiāotōng Dàxué xuéxí Zhōngwén. Wǒ jiā yǒu sì kǒu rén. Wǒ xǐhuan chī Zhōngguó cài. Hěn gāoxìng rènshi nǐ!\",\"es\":\"¡Hola! Me llamo Hugo y soy español. Estudio chino en la Universidad Jiaotong. En mi familia somos cuatro. Me gusta la comida china. ¡Encantado de conocerte!\",\"note\":\"La versión de 30 segundos: una frase de cada rama.\"}\n```\n\n```xb-exercise\n{\"kind\":\"translate\",\"data\":{\"es\":\"Estudio en la Universidad Jiaotong.\",\"zh\":\"我在交通大学学习。\"}}\n```\n\n```xb-exercise\n{\"kind\":\"translate\",\"data\":{\"es\":\"En mi familia somos cuatro.\",\"zh\":\"我家有四口人。\"}}\n```\n\n```xb-exercise\n{\"kind\":\"order\",\"data\":{\"zh\":\"我喜欢吃中国菜，不喜欢吃辣。\",\"es\":\"Me gusta la comida china; no me gusta el picante.\"}}\n```",
+    "cues": [
+      { "id": "c1", "q": "¿Cuáles son las cinco ramas de mi guion?", "a": "Presentarme, mis estudios, el máster en China, mi familia, mis gustos." },
+      { "id": "c2", "q": "¿Cómo digo dónde estudio?", "a": "我在交通大学学习。 (在 + lugar antes del verbo)." },
+      { "id": "c3", "q": "¿Cómo digo cuántos somos en casa?", "a": "我家有四口人。 (口 para miembros de la familia)." },
+      { "id": "c4", "q": "¿Qué hago cuando suba de nivel?", "a": "Duplicar el apunte como «Mi guion HSK 2» y ampliar cada rama." },
+      { "id": "c5", "q": "¿Cómo digo que es mi primera vez en China?", "a": "这是我第一次来中国。" }
+    ],
+    "summary": "Mi guion en cinco ramas (presentarme, estudios, máster, familia, gustos) con 3–4 frases HSK 1 cada una; adaptar los datos y guardar una versión por nivel.",
+    "reviewed": false
+  }
+]

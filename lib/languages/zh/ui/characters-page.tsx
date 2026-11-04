@@ -2,7 +2,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "@/lib/languages/link";
 import { useLiveQuery } from "dexie-react-hooks";
-import { Brush, Grid3x3, PenLine, Printer, Shuffle, X } from "lucide-react";
+import { Brush, Grid3x3, History, Lightbulb, PenLine, Printer, Shuffle, X } from "lucide-react";
 import { db } from "@/lib/db";
 import { getCharInfo, getHsk, loadCharInfo, loadHsk, lookup, RADICALS, radicalVariants, useDictionary, charsByRadical } from "../dictionary";
 import { useKnowledge } from "@/lib/knowledge";
@@ -18,6 +18,8 @@ import { BrushCheck } from "@/components/ornament/ink-divider";
 import { CalligraphySheet } from "./calligraphy-sheet";
 import { cn, shuffle } from "@/lib/utils";
 import { Mixed } from "@/components/target/mixed";
+import { OriginTab } from "@/components/characters/origin-tab";
+import { MemorizeTab } from "@/components/characters/memorize";
 
 /** Chip de selección (tinta cuando está activo). */
 const chip = (on: boolean) => cn("min-h-9 rounded-[8px] border px-3 text-sm transition-colors", on ? "border-ink/60 bg-ink text-paper" : "border-line bg-paper-raised text-ink-soft hover:border-ink/30 hover:text-ink");
@@ -99,6 +101,12 @@ export function CharactersPage() {
           </TabsTrigger>
           <TabsTrigger value="sheet">
             <Printer className="mr-1 size-4" /> Hoja de caligrafía
+          </TabsTrigger>
+          <TabsTrigger value="origin">
+            <History className="mr-1 size-4" /> Origen y evolución
+          </TabsTrigger>
+          <TabsTrigger value="memorize">
+            <Lightbulb className="mr-1 size-4" /> Memorizar
           </TabsTrigger>
         </TabsList>
 
@@ -193,6 +201,14 @@ export function CharactersPage() {
 
         <TabsContent value="sheet">
           <CalligraphySheet chars={sheetChars} setChars={setSheetChars} suggestions={levelChars.slice(0, 40)} />
+        </TabsContent>
+
+        <TabsContent value="origin">
+          <OriginTab onOpen={setOpen} />
+        </TabsContent>
+
+        <TabsContent value="memorize">
+          <MemorizeTab />
         </TabsContent>
       </Tabs>
 

@@ -16,6 +16,13 @@ export interface TodaySummary {
   streak: number;
   reviewsToday: number;
   daily: DailyStat[];
+  /** Apuntes: capturas en la bandeja, apuntes que necesitan repaso y tarjetas Cornell/errores pendientes */
+  inbox: number;
+  notesToReview: number;
+  noteCardsDue: number;
+  /** Cuaderno de ejercicios: ítems pendientes (SRS) y total */
+  workbookDue: number;
+  workbookTotal: number;
 }
 
 function streakOf(byDate: Map<string, { minutes: number; reviews: number; exercises: number; newWords: number }>): number {
@@ -49,12 +56,18 @@ function mergeDaily(rows: DailyStat[]): Map<string, { minutes: number; reviews: 
 
 export async function todaySummary(lang: Lang = getActiveLang()): Promise<TodaySummary> {
   const now = Date.now();
-  const [cards, words, chars, daily] = await Promise.all([
+  const [cards, words, chars, daily, inbox, notes, noteCardsDue, workbookDue, workbookTotal] = await Promise.all([
     db.cards.where("lang").equals(lang).toArray(),
     db.words.where("lang").equals(lang).count(),
     db.charStates.where("lang").equals(lang).filter((c) => c.known).count(),
     db.daily.where("lang").equals(lang).toArray(),
+    db.notes.where("[lang+status]").equals([lang, "inbox"]).count(),
+    db.notes.where("[lang+status]").equals([lang, "active"]).toArray(),
+    db.noteCards.where("[lang+due]").below([lang, now]).filter((c) => !c.suspended).count(),
+    db.exerciseItems.where("[lang+due]").below([lang, now]).count(),
+    db.exerciseItems.where("lang").equals(lang).count(),
   ]);
+  const notesToReview = notes.filter((n) => !n.builtin && now - (n.lastReviewed ?? n.createdAt) > 7 * 86400000).length;
   let due = 0;
   let newAvail = 0;
   const known = new Set<string>();
@@ -93,6 +106,11 @@ export async function todaySummary(lang: Lang = getActiveLang()): Promise<TodayS
     streak,
     reviewsToday: byDate.get(today)?.reviews ?? 0,
     daily: daily.sort((a, b) => a.date.localeCompare(b.date)),
+    inbox,
+    notesToReview,
+    noteCardsDue,
+    workbookDue,
+    workbookTotal,
   };
 }
 

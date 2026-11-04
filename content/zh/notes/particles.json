@@ -1,0 +1,512 @@
+[
+  {
+    "id": "zh-particle-ma",
+    "type": "particle",
+    "title": "吗: la partícula de la pregunta sí/no",
+    "level": 1,
+    "tags": ["partículas", "preguntas", "u01"],
+    "grammarIds": ["ma"],
+    "unitId": "u01",
+    "fields": {
+      "particle": "吗",
+      "pinyin": "ma",
+      "functions": [
+        "Convierte cualquier afirmación en una pregunta de sí/no sin cambiar el orden: 你是学生 → 你是学生吗？",
+        "Marca que el hablante no sabe la respuesta (pregunta neutra, sin suposición previa).",
+        "En fórmulas de cortesía: 你好吗？ (¿estás bien?), 可以吗？ (¿se puede?), 好吗？ (¿vale?)."
+      ],
+      "position": "Siempre la última palabra de la frase, justo antes del ？. Nunca en medio ni al principio.",
+      "nuance": "Tono neutro y educado: no presupone nada. Es la forma más segura de preguntar. No añade emoción; para sorpresa o suposición se usan otras partículas (吧, 啊) o la entonación. Se pronuncia átona y corta, sin subir la voz.",
+      "examples": [
+        { "zh": "你是中国人吗？", "py": "Nǐ shì Zhōngguórén ma?", "es": "¿Eres chino?" },
+        { "zh": "你喜欢喝茶吗？", "py": "Nǐ xǐhuan hē chá ma?", "es": "¿Te gusta beber té?" },
+        { "zh": "李老师今天来吗？", "py": "Lǐ lǎoshī jīntiān lái ma?", "es": "¿Viene hoy el profesor Li?" },
+        { "zh": "这儿有饭店吗？", "py": "Zhèr yǒu fàndiàn ma?", "es": "¿Hay un restaurante por aquí?" },
+        { "zh": "你会写汉字吗？", "py": "Nǐ huì xiě Hànzì ma?", "es": "¿Sabes escribir caracteres?" },
+        { "zh": "我可以坐这儿吗？", "py": "Wǒ kěyǐ zuò zhèr ma?", "es": "¿Puedo sentarme aquí?" }
+      ],
+      "without": "Sin 吗 la frase vuelve a ser una afirmación: 你是学生。 = «Eres estudiante.» Solo con entonación ascendente seguiría siendo pregunta, pero coloquial y de sorpresa (你是学生？ = «¿Que eres estudiante?»). En escrito, sin 吗 ni ？ no hay pregunta.",
+      "contrasts": [
+        "吗 vs 呢 → [[zh-particle-ne]]: 吗 pregunta desde cero con frase completa; 呢 devuelve una pregunta tras un nombre solo.",
+        "吗 vs 吧 → [[zh-particle-ba]]: 吗 = no sé; 吧 = creo que sí.",
+        "吗 vs A不A → [[zh-question-a-not-a]]: equivalentes; con A不A no se usa 吗.",
+        "吗 nunca con 什么/谁/哪儿/几… → [[zh-question-summary]]."
+      ]
+    },
+    "markdown": "## Cómo lo recuerdo\n\n吗 es un botón al final de la frase que la convierte en pregunta. Boca (口) + caballo (马): el caballo relincha al final y pregunta.\n\n```xb-example\n{\"zh\":\"你忙吗？—不忙。你呢？—我也不忙。\",\"py\":\"Nǐ máng ma? — Bù máng. Nǐ ne? — Wǒ yě bù máng.\",\"es\":\"¿Estás ocupado? —No. ¿Y tú? —Yo tampoco.\",\"note\":\"吗 abre, 呢 devuelve.\"}\n```\n\n> ⚠️ **Ojo**: 吗 es tono neutro (ma), no má ni mǎ: no lo confundas con 妈 (madre) ni con 马 (caballo). El contexto y el carácter (con 口) lo aclaran.\n\n> ❌ **Error típico**: ~~你叫什么名字吗？~~ → 你叫什么名字？ Una frase, una marca de pregunta.\n\n> 💡 **Truco**: para responder, busca el verbo que va delante de 吗 y repítelo: …是…吗？→ 是。/ 不是。\n\n```xb-exercise\n{\"kind\":\"fill\",\"data\":{\"zh\":\"你今天有课＿？\",\"answer\":\"吗\",\"options\":\"吗 · 呢 · 吧 · 啊\",\"es\":\"¿Tienes clase hoy?\",\"explain\":\"Pregunta de sí/no con frase completa y sin suposición: 吗.\"}}\n```",
+    "cues": [
+      { "id": "c1", "q": "¿Para qué sirve 吗?", "a": "Convierte una afirmación en pregunta de sí/no sin cambiar el orden." },
+      { "id": "c2", "q": "¿Dónde va 吗 en la frase?", "a": "Siempre al final, antes del ？." },
+      { "id": "c3", "q": "¿Qué cambia si quito 吗?", "a": "La frase pasa a ser una afirmación (o una pregunta coloquial de sorpresa solo con entonación)." },
+      { "id": "c4", "q": "¿Qué tono emocional tiene 吗?", "a": "Neutro: no supone ni sorprende." }
+    ],
+    "summary": "吗 al final convierte una afirmación en pregunta neutra de sí/no; sin ella, la frase es una afirmación.",
+    "reviewed": false
+  },
+  {
+    "id": "zh-particle-ne",
+    "type": "particle",
+    "title": "呢: devolver la pregunta, «¿dónde está?» y acción en curso",
+    "level": 1,
+    "tags": ["partículas", "preguntas", "u01"],
+    "grammarIds": ["ne", "zai"],
+    "unitId": "u01",
+    "fields": {
+      "particle": "呢",
+      "pinyin": "ne",
+      "functions": [
+        "Devolver una pregunta sin repetirla: 我很好，你呢？ (¿y tú?).",
+        "Preguntar dónde está algo o alguien que falta: 我的手机呢？ (¿y mi móvil?).",
+        "Suavizar una pregunta con interrogativo: 你为什么不来呢？ (suena menos brusco).",
+        "Al final de una afirmación con (正)在, marcar que la acción sigue en curso: 他在吃饭呢。 (está comiendo ahora mismo)."
+      ],
+      "position": "Al final de la frase. En los usos 1 y 2 va tras un nombre o pronombre solo (你呢, 妈妈呢); en el uso 3 tras una pregunta completa; en el uso 4 tras una frase afirmativa con 在.",
+      "nuance": "Tono suave, cercano y un poco curioso: «¿y…?». Hace la pregunta más amable y conversacional. En 在……呢 añade un matiz de «justo ahora», como si señalaras la escena. Nunca es brusca ni formal.",
+      "examples": [
+        { "zh": "我是西班牙人，你呢？", "py": "Wǒ shì Xībānyárén, nǐ ne?", "es": "Soy español, ¿y tú?" },
+        { "zh": "安娜呢？她怎么没来？", "py": "Ānnà ne? Tā zěnme méi lái?", "es": "¿Y Ana? ¿Cómo es que no ha venido?" },
+        { "zh": "我的书呢？—在桌子上。", "py": "Wǒ de shū ne? — Zài zhuōzi shang.", "es": "¿Dónde está mi libro? —En la mesa." },
+        { "zh": "你想吃什么呢？", "py": "Nǐ xiǎng chī shénme ne?", "es": "¿Y qué te apetece comer?" },
+        { "zh": "王明在看书呢。", "py": "Wáng Míng zài kàn shū ne.", "es": "Wang Ming está leyendo (ahora mismo)." },
+        { "zh": "外面下雨呢，别出去。", "py": "Wàimiàn xià yǔ ne, bié chūqù.", "es": "Está lloviendo fuera, no salgas." }
+      ],
+      "without": "En 你呢？ si quitas 呢 solo queda 你？, que no es una pregunta natural: tendrías que decir la frase entera (你是哪国人？). En 我的书呢？ sin 呢 habría que decir 我的书在哪儿？. En 他在吃饭呢, sin 呢 la frase sigue siendo correcta (他在吃饭), solo pierde el matiz de «ahora mismo, míralo».",
+      "contrasts": [
+        "呢 vs 吗 → [[zh-particle-ma]]: 呢 no puede hacer una pregunta de sí/no desde cero: ~~你好呢？~~",
+        "呢 vs 吧 → [[zh-particle-ba]]: 呢 pregunta con curiosidad; 吧 supone o sugiere.",
+        "X呢？ vs X在哪儿？ → [[zh-question-nar]]: X呢 implica que X debería estar aquí.",
+        "在……呢 (en curso) vs 了 (completado) → [[zh-particle-le-2]]: 他在吃饭呢 (está comiendo) / 他吃饭了 (ya ha comido)."
+      ]
+    },
+    "markdown": "## Cómo lo recuerdo\n\n呢 es la partícula «¿y…?»: señala a alguien o algo y pregunta por ello sin repetir toda la frase. Boca (口) + 尼: una boca que devuelve la pelota.\n\n```xb-example\n{\"zh\":\"我喜欢上海，你呢？—我也喜欢。\",\"py\":\"Wǒ xǐhuan Shànghǎi, nǐ ne? — Wǒ yě xǐhuan.\",\"es\":\"A mí me gusta Shanghái, ¿y a ti? —A mí también.\"}\n```\n\n```xb-example\n{\"zh\":\"妈妈呢？—她在做饭呢。\",\"py\":\"Māma ne? — Tā zài zuò fàn ne.\",\"es\":\"¿Y mamá? —Está cocinando.\",\"note\":\"Dos 呢 distintos: el primero pregunta dónde está, el segundo marca acción en curso.\"}\n```\n\n> ❌ **Error típico**: usar 呢 como 吗: ~~你是学生呢？~~ → 你是学生吗？ 呢 solo devuelve o suaviza, no pregunta sí/no.\n\n> 💡 **Truco**: 呢 tras una pregunta con interrogativo (为什么…呢) es como añadir «a ver» en español: 你为什么不去呢？ = «¿y por qué no vas, a ver?».\n\n> 👩‍🏫 **Lo dijo el profe**: la combinación 正在……呢 es la forma más clara de decir «estar + gerundio» en HSK 1.\n\n```xb-exercise\n{\"kind\":\"choice\",\"data\":{\"prompt\":\"¿En cuál de estas frases 呢 NO es pregunta?\",\"options\":\"你呢？ · 我的手机呢？ · 他在睡觉呢。 · 你想去哪儿呢？\",\"answer\":\"2\",\"explain\":\"在……呢 marca acción en curso; es una afirmación.\"}}\n```",
+    "cues": [
+      { "id": "c1", "q": "¿Cuáles son los cuatro usos de 呢?", "a": "Devolver pregunta, ¿dónde está X?, suavizar una pregunta con interrogativo, acción en curso con 在." },
+      { "id": "c2", "q": "¿Dónde va 呢?", "a": "Siempre al final de la frase." },
+      { "id": "c3", "q": "¿Puedo decir 你好呢？", "a": "No: 呢 no hace preguntas de sí/no." },
+      { "id": "c4", "q": "¿Qué pasa si quito 呢 en 他在吃饭呢?", "a": "Sigue siendo correcta; solo pierde el matiz de «ahora mismo»." }
+    ],
+    "summary": "呢 devuelve una pregunta (你呢), pregunta dónde está algo (书呢) o marca acción en curso (在…呢); tono suave y cercano.",
+    "reviewed": false
+  },
+  {
+    "id": "zh-particle-ba",
+    "type": "particle",
+    "title": "吧: sugerencia suave y suposición",
+    "level": 1,
+    "tags": ["partículas", "preguntas", "u05"],
+    "grammarIds": ["ba"],
+    "unitId": "u05",
+    "fields": {
+      "particle": "吧",
+      "pinyin": "ba",
+      "functions": [
+        "Sugerencia o invitación («vamos a…», «anda, …»): 我们走吧。 你坐吧。",
+        "Suavizar una orden o una petición para que no suene a mandato: 你说吧。 (habla, venga).",
+        "Suposición que pides confirmar («…, ¿no?»): 你是学生吧？",
+        "Aceptar sin mucho entusiasmo («bueno, vale»): 好吧。 行吧。"
+      ],
+      "position": "Siempre al final de la frase. En la sugerencia la frase suele empezar por 我们 o ser un imperativo; en la suposición es una afirmación normal con 吧 y ？.",
+      "nuance": "Suaviza todo lo que toca: una orden se convierte en invitación, una afirmación en suposición amable. El tono es relajado e informal. Con entonación descendente (吧。) empuja suavemente a hacer algo; con entonación ascendente (吧？) pide confirmación. 好吧 a secas puede sonar resignado («bueno, está bien»).",
+      "examples": [
+        { "zh": "我们去吃饭吧！", "py": "Wǒmen qù chī fàn ba!", "es": "¡Vamos a comer!" },
+        { "zh": "你喝杯茶吧。", "py": "Nǐ hē bēi chá ba.", "es": "Toma un té, anda." },
+        { "zh": "你是雨果吧？", "py": "Nǐ shì Yǔguǒ ba?", "es": "Eres Hugo, ¿no?" },
+        { "zh": "今天很累吧？早点儿睡吧。", "py": "Jīntiān hěn lèi ba? Zǎo diǎnr shuì ba.", "es": "Hoy estás cansado, ¿no? Acuéstate pronto." },
+        { "zh": "好吧，我们明天再说。", "py": "Hǎo ba, wǒmen míngtiān zài shuō.", "es": "Bueno, vale, lo hablamos mañana." },
+        { "zh": "你先说吧。", "py": "Nǐ xiān shuō ba.", "es": "Habla tú primero." }
+      ],
+      "without": "Sin 吧 una sugerencia se convierte en orden o en simple afirmación: 我们走。 = «Nos vamos.» (seco), 你坐。 = «Siéntate.» (orden). Sin 吧 la suposición 你是学生吧？ pasa a ser 你是学生。 (afirmas sin dudar) o necesita 吗 (preguntas sin idea previa).",
+      "contrasts": [
+        "吧 vs 吗 → [[zh-particle-ma]]: 你是学生吗？ (no sé) / 你是学生吧？ (creo que sí).",
+        "吧 vs 呢 → [[zh-particle-ne]]: 呢 devuelve o señala; 吧 empuja o supone.",
+        "吧 vs 啊 → [[zh-particle-a]]: 走吧 (vamos, anda) / 走啊 (¡venga, vamos!, con más energía o impaciencia).",
+        "吧。 (sugerencia) vs 吧？ (suposición) → [[zh-question-ba]]: lo decide la entonación."
+      ]
+    },
+    "markdown": "## Cómo lo recuerdo\n\n吧 es un cojín: lo pongo al final para que la frase aterrice suave. Orden → invitación; afirmación → suposición. Boca (口) + 巴: como «¡ba!», un empujoncito.\n\n```xb-example\n{\"zh\":\"太晚了，我们回家吧。—好吧。\",\"py\":\"Tài wǎn le, wǒmen huí jiā ba. — Hǎo ba.\",\"es\":\"Es muy tarde, volvamos a casa. —Bueno, vale.\",\"note\":\"好吧 acepta con poca gana; 好啊 aceptaría con ganas.\"}\n```\n\n```xb-example\n{\"zh\":\"你是李老师的学生吧？—对，我是。\",\"py\":\"Nǐ shì Lǐ lǎoshī de xuésheng ba? — Duì, wǒ shì.\",\"es\":\"Eres alumno del profesor Li, ¿no? —Sí.\"}\n```\n\n> ⚠️ **Ojo**: 吧 no se combina con palabras interrogativas (~~你是谁吧？~~) ni con 吗 (~~走吗吧~~).\n\n> ❌ **Error típico**: 请坐吧 está bien, pero 请 + 吧 juntos es muy suave; en un contexto formal basta 请坐.\n\n> 💡 **Truco**: si en español dirías «anda», «venga» o «¿no?», en chino probablemente va 吧.\n\n```xb-exercise\n{\"kind\":\"choice\",\"data\":{\"prompt\":\"Quieres proponer a tu amigo ir al cine sin sonar a orden. ¿Qué dices?\",\"options\":\"我们去看电影。 · 我们去看电影吧。 · 我们去看电影吗？ · 我们去看电影呢？\",\"answer\":\"1\",\"explain\":\"吧 convierte la frase en una sugerencia amable.\"}}\n```",
+    "cues": [
+      { "id": "c1", "q": "¿Cuáles son las dos funciones principales de 吧?", "a": "Sugerencia suave (走吧) y suposición (你是学生吧？)." },
+      { "id": "c2", "q": "¿Dónde va 吧?", "a": "Al final de la frase." },
+      { "id": "c3", "q": "¿Qué pasa si quito 吧 de 你坐吧?", "a": "你坐 suena a orden seca." },
+      { "id": "c4", "q": "¿Qué matiz tiene 好吧?", "a": "Aceptar con poca gana: «bueno, vale»." }
+    ],
+    "summary": "吧 suaviza: hace de una orden una sugerencia (走吧) y de una afirmación una suposición (你是学生吧？); sin ella la frase suena seca o tajante.",
+    "reviewed": false
+  },
+  {
+    "id": "zh-particle-le-1",
+    "type": "particle",
+    "title": "了 (1): cambio de situación al final de la frase",
+    "level": 1,
+    "tags": ["partículas", "gramática", "u04"],
+    "grammarIds": ["le", "tai-le"],
+    "unitId": "u04",
+    "fields": {
+      "particle": "了",
+      "pinyin": "le",
+      "functions": [
+        "Marcar que la situación ha cambiado o que hay algo nuevo: 下雨了 (ha empezado a llover), 我二十岁了 (ya tengo 20).",
+        "Con adjetivos, indicar que un estado ha empezado: 天冷了 (ya hace frío), 我饿了 (tengo hambre, me ha entrado).",
+        "Con 太……了, dar énfasis: 太好了 (¡genial!), 太贵了 (demasiado caro).",
+        "Con 不……了 / 别……了, indicar que algo deja de ser o se interrumpe: 我不去了 (ya no voy), 别说了 (deja de hablar).",
+        "Con 快……了 / 要……了, avisar de que algo está a punto de pasar: 快到了 (ya casi llegamos)."
+      ],
+      "position": "Al final de la frase (por eso se le llama «了 final» o 了₂). Puede ir tras un verbo, un adjetivo, un número o un nombre: 下雨了 · 冷了 · 二十岁了 · 春天了.",
+      "nuance": "Señala «ahora es distinto de antes»: hay un antes y un después. Emocionalmente es una pequeña exclamación: sorpresa, aviso, alivio o énfasis. 太…了 lo convierte en pura intensidad. NO es un marcador de pasado.",
+      "examples": [
+        { "zh": "下雨了！", "py": "Xià yǔ le!", "es": "¡Está lloviendo! (ha empezado)" },
+        { "zh": "我饿了，我们吃饭吧。", "py": "Wǒ è le, wǒmen chī fàn ba.", "es": "Tengo hambre (me ha entrado), vamos a comer." },
+        { "zh": "现在几点了？—十二点了。", "py": "Xiànzài jǐ diǎn le? — Shí'èr diǎn le.", "es": "¿Qué hora es ya? —Ya son las doce." },
+        { "zh": "我今年二十三岁了。", "py": "Wǒ jīnnián èrshísān suì le.", "es": "Este año ya tengo 23." },
+        { "zh": "太好了！", "py": "Tài hǎo le!", "es": "¡Genial!" },
+        { "zh": "我不想去了。", "py": "Wǒ bù xiǎng qù le.", "es": "Ya no quiero ir." },
+        { "zh": "他会说汉语了。", "py": "Tā huì shuō Hànyǔ le.", "es": "Ya sabe hablar chino (antes no)." }
+      ],
+      "without": "Sin 了 la frase describe un estado sin compararlo con antes: 下雨 = «llueve» (hábito o descripción); 我饿 suena incompleto; 我二十三岁 = «tengo 23» (dato), frente a 我二十三岁了 = «ya tengo 23» (he cumplido). 太好 sin 了 queda cojo: 太 casi siempre pide 了.",
+      "contrasts": [
+        "了 final (cambio) vs 了 tras verbo (acción completada) → [[zh-particle-le-2]]: 他吃饭了 puede ser las dos cosas: «ya ha comido» (cambio: antes no, ahora sí).",
+        "了 vs 过 → [[zh-particle-guo]]: 了 = ha pasado/ha cambiado; 过 = alguna vez en la vida.",
+        "不……了 (ya no) vs 没……(了) : 我不去了 = ya no voy (decisión); 我没去 = no fui (hecho). Con 没 no va 了.",
+        "了 vs 呢 → [[zh-particle-ne]]: 他吃饭了 (ya ha comido) / 他在吃饭呢 (está comiendo)."
+      ]
+    },
+    "markdown": "## Cómo lo recuerdo\n\nEste 了 es una flecha de «antes → ahora». Si algo era de una manera y ahora es de otra, le pongo 了 al final. No es pasado: 我饿了 es presente («tengo hambre»), pero marca que antes no la tenía.\n\n```xb-formula\n{\"name\":\"Cambio de situación\",\"parts\":[{\"text\":\"Situación nueva\",\"role\":\"other\"},{\"text\":\"了\",\"role\":\"particle\"}]}\n```\n\n```xb-example\n{\"zh\":\"天气冷了，你多穿点儿衣服吧。\",\"py\":\"Tiānqì lěng le, nǐ duō chuān diǎnr yīfu ba.\",\"es\":\"Ya hace frío, abrígate más.\"}\n```\n\n```xb-example\n{\"zh\":\"我以前不喜欢中国菜，现在喜欢了。\",\"py\":\"Wǒ yǐqián bù xǐhuan Zhōngguó cài, xiànzài xǐhuan le.\",\"es\":\"Antes no me gustaba la comida china; ahora sí.\",\"note\":\"El 了 marca el cambio de opinión.\"}\n```\n\n> ❌ **Error típico**: usar 了 como pasado del verbo «ser/estar»: ~~昨天我是学生了~~. Los estados que no cambian no llevan 了.\n\n> ❌ **Error típico**: ~~太好~~ → 太好了. ~~我没吃饭了~~ → 我没吃饭 (con 没 no hay 了).\n\n> 🧠 **Mnemotecnia**: 了 parece un «子» sin brazos: un niño que ha crecido y ya es otro. Cambio.\n\n```xb-exercise\n{\"kind\":\"fill\",\"data\":{\"zh\":\"下雨＿，我们不去公园了。\",\"answer\":\"了\",\"options\":\"了 · 的 · 吧 · 呢\",\"es\":\"Ha empezado a llover; ya no vamos al parque.\",\"explain\":\"Situación nueva (empieza a llover) → 了 final.\"}}\n```",
+    "cues": [
+      { "id": "c1", "q": "¿Qué marca el 了 al final de la frase?", "a": "Que la situación ha cambiado o hay algo nuevo (antes → ahora)." },
+      { "id": "c2", "q": "¿Es 了 un marcador de pasado?", "a": "No: 我饿了 es presente; marca el cambio." },
+      { "id": "c3", "q": "¿Qué pasa si quito 了 de 我二十岁了?", "a": "Queda un dato sin el matiz de «ya»: 我二十岁 = tengo 20." },
+      { "id": "c4", "q": "¿Qué significa 不……了?", "a": "«Ya no»: 我不去了 = ya no voy." },
+      { "id": "c5", "q": "¿Puede ir 了 con 没?", "a": "No: 我没吃饭 (sin 了)." }
+    ],
+    "summary": "了 al final marca cambio de situación («ya», «ha empezado a»): 下雨了, 我饿了, 太好了, 不去了. No es pasado y no va con 没.",
+    "reviewed": false
+  },
+  {
+    "id": "zh-particle-le-2",
+    "type": "particle",
+    "title": "了 (2): acción completada detrás del verbo",
+    "level": 1,
+    "tags": ["partículas", "gramática", "u05"],
+    "grammarIds": ["le", "bu-mei"],
+    "unitId": "u05",
+    "fields": {
+      "particle": "了",
+      "pinyin": "le",
+      "functions": [
+        "Marcar que una acción concreta se ha completado: 我买了一本书 (compré un libro).",
+        "Con un objeto numerado o concreto, cerrar la acción: 他喝了两杯咖啡, 我看了那个电影.",
+        "En secuencias, indicar que una acción termina antes de la siguiente: 我吃了饭就去 (en cuanto coma, voy).",
+        "Preguntar si algo se ha hecho: 你吃饭了吗？ / 你吃了没有？"
+      ],
+      "position": "Justo detrás del verbo y delante del objeto: V + 了 + O (买了一本书). Si el objeto es simple y la frase termina ahí, el 了 suele pasar al final: 我吃饭了 (y entonces se mezcla con el 了 de cambio).",
+      "nuance": "Es neutro, sin emoción: solo dice «hecho, completado». No equivale a nuestro pretérito: puede referirse al futuro (明天我吃了饭就去 = mañana, en cuanto haya comido, voy). Lo importante no es cuándo, sino que la acción está cerrada.",
+      "examples": [
+        { "zh": "我昨天买了一本汉语书。", "py": "Wǒ zuótiān mǎi le yì běn Hànyǔ shū.", "es": "Ayer compré un libro de chino." },
+        { "zh": "他喝了两杯咖啡。", "py": "Tā hē le liǎng bēi kāfēi.", "es": "Se ha tomado dos cafés." },
+        { "zh": "你吃饭了吗？—吃了。", "py": "Nǐ chī fàn le ma? — Chī le.", "es": "¿Has comido? —Sí." },
+        { "zh": "我看了那个电影，很好看。", "py": "Wǒ kàn le nàge diànyǐng, hěn hǎokàn.", "es": "He visto esa película; es muy buena." },
+        { "zh": "我吃了饭就去学校。", "py": "Wǒ chī le fàn jiù qù xuéxiào.", "es": "En cuanto coma, voy a la escuela." },
+        { "zh": "昨天我没买书。", "py": "Zuótiān wǒ méi mǎi shū.", "es": "Ayer no compré el libro. (negación: 没, sin 了)" }
+      ],
+      "without": "Sin 了 la acción queda abierta o habitual: 我买一本书 = «compro un libro» (plan, hábito o futuro); 我吃饭 = «como» (en general). Con un tiempo pasado y sin 了 (昨天我买一本书) la frase suena incompleta a un oído chino.",
+      "contrasts": [
+        "了 tras el verbo (completado) vs 了 final (cambio) → [[zh-particle-le-1]]: 我买了书 (compré, hecho) / 我买书了 (ya he comprado el libro: situación nueva).",
+        "了 vs 没: la negación de V了 es 没 + V sin 了 → [[zh-particle-le-1]].",
+        "了 vs 过 → [[zh-particle-guo]]: 我去了北京 (fui a Pekín, esa vez) / 我去过北京 (he estado en Pekín alguna vez).",
+        "Verbos de estado (是, 在, 有, 喜欢, 想) no llevan 了 tras el verbo: ~~我是了学生~~."
+      ]
+    },
+    "markdown": "## Cómo lo recuerdo\n\nEste 了 es un «tick» ✓ detrás del verbo: acción hecha. Y como es un tick de «hecho», no de «ayer», también puede ir en frases de futuro (吃了饭就去).\n\n```xb-formula\n{\"name\":\"Acción completada\",\"parts\":[{\"text\":\"Sujeto\",\"role\":\"subject\"},{\"text\":\"V\",\"role\":\"verb\"},{\"text\":\"了\",\"role\":\"particle\"},{\"text\":\"núm. + clasif. + O\",\"role\":\"object\"}]}\n```\n\n```xb-example\n{\"zh\":\"安娜买了三个苹果，吃了一个。\",\"py\":\"Ānnà mǎi le sān ge píngguǒ, chī le yí ge.\",\"es\":\"Ana compró tres manzanas y se comió una.\"}\n```\n\n```xb-example\n{\"zh\":\"你做了作业吗？—还没做。\",\"py\":\"Nǐ zuò le zuòyè ma? — Hái méi zuò.\",\"es\":\"¿Has hecho los deberes? —Todavía no.\",\"note\":\"Negación con 没, y desaparece el 了.\"}\n```\n\n> ❌ **Error típico**: ~~我没吃了饭~~ → 我没吃饭. Con 没, fuera el 了.\n\n> ❌ **Error típico**: 了 con estados: ~~昨天我很忙了~~ → 昨天我很忙. Los adjetivos y 是/在/有 no llevan 了 por ser pasado.\n\n> 👩‍🏫 **Lo dijo el profe**: V + 了 + objeto «pelado» (我买了书。) suena a frase sin terminar; añade un número (买了一本书) o pasa 了 al final (我买书了).\n\n```xb-exercise\n{\"kind\":\"choice\",\"data\":{\"prompt\":\"¿Cuál es la negación correcta de 我买了一本书?\",\"options\":\"我不买了一本书。 · 我没买书。 · 我没买了书。 · 我不买书了。\",\"answer\":\"1\",\"explain\":\"Acción no realizada: 没 + verbo, sin 了. (不买了 significaría «ya no compro»).\"}}\n```",
+    "cues": [
+      { "id": "c1", "q": "¿Dónde va el 了 de acción completada?", "a": "Justo detrás del verbo: 买了一本书." },
+      { "id": "c2", "q": "¿Cómo se niega 我吃了饭?", "a": "我没吃饭 (sin 了)." },
+      { "id": "c3", "q": "¿Puede ir este 了 en el futuro?", "a": "Sí: 我吃了饭就去 (en cuanto coma, voy)." },
+      { "id": "c4", "q": "¿Qué verbos no llevan 了 tras ellos?", "a": "Estados: 是, 在, 有, 喜欢, adjetivos." },
+      { "id": "c5", "q": "¿Qué pasa si quito 了 de 昨天我买了一本书?", "a": "La frase queda incompleta: la acción no se presenta como cerrada." }
+    ],
+    "summary": "V + 了 marca una acción completada (买了一本书); se niega con 没 sin 了 y no es un pasado: puede ir en futuro (吃了饭就去).",
+    "reviewed": false
+  },
+  {
+    "id": "zh-particle-de",
+    "type": "particle",
+    "title": "的: posesión, descripción y «el mío»",
+    "level": 1,
+    "tags": ["partículas", "gramática", "u03"],
+    "grammarIds": ["de", "shi-de"],
+    "unitId": "u03",
+    "fields": {
+      "particle": "的",
+      "pinyin": "de",
+      "functions": [
+        "Posesión: poseedor + 的 + cosa: 我的书 (mi libro), 老师的车 (el coche del profesor).",
+        "Descripción: adjetivo/frase + 的 + nombre: 很大的学校, 我买的书 (el libro que compré).",
+        "Sustituir al nombre cuando se sobreentiende: 这是我的。 (esto es mío), 红的 (el rojo).",
+        "En 是……的, destacar cuándo, dónde o cómo pasó algo: 我是去年来的。 (adelanto)."
+      ],
+      "position": "Entre el modificador y el nombre: [quien posee / lo que describe] + 的 + [nombre]. Nunca al principio. Si el nombre se omite, 的 queda al final: 是我的。",
+      "nuance": "Sin color emocional: es puro pegamento gramatical. Lo que sí transmite es distancia: con familia y grupo cercano se omite (我妈妈, 我们学校); ponerlo (我的妈妈) suena algo más formal o enfático.",
+      "examples": [
+        { "zh": "这是我的手机。", "py": "Zhè shì wǒ de shǒujī.", "es": "Este es mi móvil." },
+        { "zh": "那是李老师的车。", "py": "Nà shì Lǐ lǎoshī de chē.", "es": "Ese es el coche del profesor Li." },
+        { "zh": "我喜欢好看的衣服。", "py": "Wǒ xǐhuan hǎokàn de yīfu.", "es": "Me gusta la ropa bonita." },
+        { "zh": "这杯茶是谁的？—是安娜的。", "py": "Zhè bēi chá shì shéi de? — Shì Ānnà de.", "es": "¿De quién es este té? —De Ana." },
+        { "zh": "我妈妈是医生。", "py": "Wǒ māma shì yīshēng.", "es": "Mi madre es médica. (sin 的: familia)" },
+        { "zh": "我买的苹果很好吃。", "py": "Wǒ mǎi de píngguǒ hěn hǎochī.", "es": "Las manzanas que compré están muy buenas." }
+      ],
+      "without": "Sin 的, dos nombres seguidos pueden formar un compuesto o un error: 我书 no existe (hay que decir 我的书); 中国朋友 (amigo chino) sí es correcto porque 中国 funciona como adjetivo fijo. Con familia es al revés: 我妈妈 es lo natural, 我的妈妈 enfático. Un adjetivo de una sílaba se pega sin 的: 好人, 大学.",
+      "contrasts": [
+        "的 vs 地 → [[zh-particle-de-adverbial]]: 的 modifica nombres; 地 modifica verbos (adverbio).",
+        "的 vs 得 → [[zh-particle-de-complement]]: 得 va detrás del verbo y abre un complemento (说得很好).",
+        "的 vs orden español: «el libro de Hugo» → 雨果的书 (poseedor primero).",
+        "是……的 → [[zh-particle-de]] uso 4: destacar circunstancias de algo ya ocurrido (nivel 2)."
+      ]
+    },
+    "markdown": "## Cómo lo recuerdo\n\n的 es un clip: sujeta el modificador al nombre, y siempre en este orden: [dueño/descripción] 的 [cosa]. Es el «de» español dado la vuelta: «el libro de Hugo» = 雨果**的**书.\n\n```xb-formula\n{\"name\":\"Posesión y descripción\",\"parts\":[{\"text\":\"Poseedor / Adj.\",\"role\":\"other\"},{\"text\":\"的\",\"role\":\"particle\"},{\"text\":\"Nombre\",\"role\":\"object\"}]}\n```\n\n```xb-example\n{\"zh\":\"这不是我的书，是王明的。\",\"py\":\"Zhè bú shì wǒ de shū, shì Wáng Míng de.\",\"es\":\"Este no es mi libro, es el de Wang Ming.\",\"note\":\"En la segunda parte 的 sustituye al nombre.\"}\n```\n\n```xb-example\n{\"zh\":\"我们学校有很多外国的学生。\",\"py\":\"Wǒmen xuéxiào yǒu hěn duō wàiguó de xuésheng.\",\"es\":\"En nuestra escuela hay muchos estudiantes extranjeros.\",\"note\":\"我们学校 sin 的 (grupo propio); 外国的学生 también puede decirse 外国学生.\"}\n```\n\n> ❌ **Error típico**: ~~书的我~~ → 我的书. El dueño siempre delante.\n\n> ❌ **Error típico**: 的 suelto tras 是: ~~他是的老师~~ → 他是老师.\n\n> 💡 **Truco**: 的 es el carácter más frecuente del chino. Si una frase tiene un nombre con «dueño» o descripción y no has puesto 的, revísala.\n\n> 👩‍🏫 **Lo dijo el profe**: con 很 + adjetivo de dos sílabas, 的 es obligatorio (很漂亮的衣服); con adjetivo de una sílaba sin 很, se omite (好朋友).\n\n```xb-exercise\n{\"kind\":\"fill\",\"data\":{\"zh\":\"这是李老师＿书。\",\"answer\":\"的\",\"options\":\"的 · 地 · 得 · 了\",\"es\":\"Este es el libro del profesor Li.\",\"explain\":\"Posesión: poseedor + 的 + cosa.\"}}\n```",
+    "cues": [
+      { "id": "c1", "q": "¿Qué une 的 y en qué orden?", "a": "Modificador + 的 + nombre: 我的书, 好看的衣服." },
+      { "id": "c2", "q": "¿Cuándo se omite 的?", "a": "Con familia y grupo propio (我妈妈, 我们学校) y adjetivos de una sílaba (好人)." },
+      { "id": "c3", "q": "¿Qué significa 是我的 sin nombre detrás?", "a": "«Es mío»: 的 sustituye al nombre." },
+      { "id": "c4", "q": "¿Qué pasa si quito 的 de 我的书?", "a": "我书 no existe; 的 es obligatoria con pronombre + cosa." }
+    ],
+    "summary": "的 une modificador y nombre (我的书, 好看的衣服) y puede sustituir al nombre (是我的); se omite con familia (我妈妈).",
+    "reviewed": false
+  },
+  {
+    "id": "zh-particle-a",
+    "type": "particle",
+    "title": "啊: emoción, énfasis y confirmación cálida",
+    "level": 1,
+    "tags": ["partículas", "pronunciación", "u01"],
+    "grammarIds": ["ba", "hen-adj"],
+    "unitId": "u01",
+    "fields": {
+      "particle": "啊",
+      "pinyin": "a",
+      "functions": [
+        "Exclamación o admiración: 这个菜真好吃啊！ (¡qué bueno está!).",
+        "Confirmar con calidez: 是啊 / 对啊 / 好啊 (sí, claro; vale, con ganas).",
+        "Suavizar una pregunta con interrogativo o una orden: 你去哪儿啊？ 快来啊！",
+        "Llamar la atención o dirigirse a alguien: 雨果啊，你来一下。"
+      ],
+      "position": "Al final de la frase (o tras un nombre al llamar a alguien). Su pronunciación se adapta a la sílaba anterior: tras -i/-ü suena «ya» (是呀), tras -u/-ao suena «wa» (好哇); por eso a veces se escribe 呀 o 哇.",
+      "nuance": "Es la partícula de la emoción y la cercanía: añade calor, sorpresa o entusiasmo. 好啊 es un «sí» con ganas (frente a 好吧, resignado, y 好的, neutro). En preguntas suaviza y hace de «a ver…». Con 啊 nunca suenas frío; en contexto formal, mejor evitarla.",
+      "examples": [
+        { "zh": "今天天气真好啊！", "py": "Jīntiān tiānqì zhēn hǎo a!", "es": "¡Qué buen día hace hoy!" },
+        { "zh": "我们去吃饭吧。—好啊！", "py": "Wǒmen qù chī fàn ba. — Hǎo a!", "es": "Vamos a comer. —¡Vale, genial!" },
+        { "zh": "你是西班牙人？—是啊。", "py": "Nǐ shì Xībānyárén? — Shì a.", "es": "¿Eres español? —Pues sí." },
+        { "zh": "你去哪儿啊？", "py": "Nǐ qù nǎr a?", "es": "¿Y adónde vas? (suave, curioso)" },
+        { "zh": "快来啊，老师来了！", "py": "Kuài lái a, lǎoshī lái le!", "es": "¡Ven rápido, que viene el profesor!" },
+        { "zh": "安娜啊，这是你的书吗？", "py": "Ānnà a, zhè shì nǐ de shū ma?", "es": "Oye, Ana, ¿este libro es tuyo?" }
+      ],
+      "without": "La frase sigue siendo gramatical, pero pierde la emoción: 今天天气真好 (constatación) frente a 今天天气真好啊 (admiración). 好 a secas responde; 好啊 responde con entusiasmo. 你去哪儿？ es neutra; 你去哪儿啊？ es cercana y curiosa.",
+      "contrasts": [
+        "啊 vs 吧 → [[zh-particle-ba]]: 走吧 (vamos, anda) / 走啊 (¡venga ya, vamos!): 啊 tiene más energía.",
+        "好啊 vs 好吧 vs 好的: entusiasmo / resignación / neutro → [[zh-particle-tone-table]].",
+        "啊 vs 吗 → [[zh-particle-ma]]: 啊 nunca convierte una afirmación en pregunta de sí/no.",
+        "啊 (final) vs 啊 (interjección inicial): 啊，我忘了！ (¡ah, se me olvidó!) es otra cosa: va al principio y con tono."
+      ]
+    },
+    "markdown": "## Cómo lo recuerdo\n\n啊 es el signo de admiración hecho sílaba: le pone calor a lo que digo. Si en español añadiría «¡…!» o un «pues sí», en chino va 啊.\n\n```xb-example\n{\"zh\":\"这是你做的菜？真好吃啊！\",\"py\":\"Zhè shì nǐ zuò de cài? Zhēn hǎochī a!\",\"es\":\"¿Esto lo has hecho tú? ¡Está buenísimo!\"}\n```\n\n```xb-example\n{\"zh\":\"明天一起去北京，好吗？—好啊，几点走？\",\"py\":\"Míngtiān yìqǐ qù Běijīng, hǎo ma? — Hǎo a, jǐ diǎn zǒu?\",\"es\":\"¿Vamos mañana juntos a Pekín? —¡Claro! ¿A qué hora salimos?\"}\n```\n\n> ⚠️ **Ojo**: 啊 cambia de sonido según la sílaba anterior: 是啊 suena «shì ya», 好啊 «hǎo wa», 看啊 «kàn na». No es error tuyo: es fonética.\n\n> ⚠️ **Ojo**: 啊 al principio (啊？ = ¿eh?, 啊！ = ¡ah!) es una interjección con tono propio; la partícula final siempre es átona.\n\n> 💡 **Truco**: al responder, elige la partícula según tu ánimo: 好啊 (con ganas) · 好的 (ok) · 好吧 (bueno, vale).\n\n```xb-exercise\n{\"kind\":\"choice\",\"data\":{\"prompt\":\"Te proponen ir a tu restaurante favorito y te encanta la idea. ¿Qué respondes?\",\"options\":\"好吧。 · 好啊！ · 好吗？ · 好呢。\",\"answer\":\"1\",\"explain\":\"好啊 acepta con entusiasmo; 好吧 suena resignado; 好吗 pregunta; 好呢 no se dice.\"}}\n```",
+    "cues": [
+      { "id": "c1", "q": "¿Qué aporta 啊 a una frase?", "a": "Emoción: admiración, entusiasmo, calidez o suavidad." },
+      { "id": "c2", "q": "¿Diferencia entre 好啊, 好的 y 好吧?", "a": "Con ganas / neutro / resignado." },
+      { "id": "c3", "q": "¿Por qué 是啊 suena «shì ya»?", "a": "啊 adapta su sonido a la sílaba anterior (a veces se escribe 呀 / 哇)." },
+      { "id": "c4", "q": "¿Qué pasa si quito 啊 de 真好吃啊?", "a": "Sigue siendo correcta pero sin la admiración." }
+    ],
+    "summary": "啊 al final añade emoción y calidez (真好啊, 好啊, 是啊) y suaviza preguntas y órdenes; su sonido cambia según la sílaba anterior.",
+    "reviewed": false
+  },
+  {
+    "id": "zh-particle-guo",
+    "type": "particle",
+    "title": "过: experiencia («alguna vez») — adelanto HSK 2",
+    "level": 2,
+    "tags": ["partículas", "gramática", "adelanto"],
+    "grammarIds": ["le", "bu-mei"],
+    "fields": {
+      "particle": "过",
+      "pinyin": "guo",
+      "functions": [
+        "Marcar experiencia vivida alguna vez: 我去过北京 (he estado en Pekín).",
+        "Preguntar por experiencias: 你吃过饺子吗？ / 你吃过没有？",
+        "Negar una experiencia con 没(有)……过: 我没吃过 (nunca lo he comido).",
+        "Con 次 contar las veces: 我去过两次 (he ido dos veces)."
+      ],
+      "position": "Justo detrás del verbo: V + 过 (+ O). La negación 没 va delante del verbo y 过 se mantiene: 没去过. Adverbios de compañía: 以前 (antes), 从来没 (nunca) + V过.",
+      "nuance": "Pone el foco en «tener la experiencia», no en cuándo pasó. Equivale al «he … alguna vez» del español. Sin emoción en sí, pero muy usado para presumir o preguntar con interés: 你去过长城吗？ Es ADELANTO: 过 como partícula es HSK 2; en HSK 1 solo verás 过 en palabras como 过去.",
+      "examples": [
+        { "zh": "我去过北京。", "py": "Wǒ qù guo Běijīng.", "es": "He estado en Pekín." },
+        { "zh": "你吃过中国菜吗？—吃过。", "py": "Nǐ chī guo Zhōngguó cài ma? — Chī guo.", "es": "¿Has comido comida china alguna vez? —Sí." },
+        { "zh": "我没看过这个电影。", "py": "Wǒ méi kàn guo zhège diànyǐng.", "es": "No he visto esta película." },
+        { "zh": "安娜学过一年汉语。", "py": "Ānnà xué guo yì nián Hànyǔ.", "es": "Ana estudió chino durante un año (en el pasado)." },
+        { "zh": "我去过上海两次。", "py": "Wǒ qù guo Shànghǎi liǎng cì.", "es": "He ido a Shanghái dos veces." },
+        { "zh": "你以前见过李老师吗？", "py": "Nǐ yǐqián jiàn guo Lǐ lǎoshī ma?", "es": "¿Habías visto antes al profesor Li?" }
+      ],
+      "without": "Sin 过 la frase pasa a ser presente, hábito o futuro: 我去北京 = «voy a Pekín»; 我吃中国菜 = «como comida china». Con 了 en lugar de 过 cambia el sentido: 我去了北京 = «fui a Pekín (esa vez concreta)», no «he estado alguna vez».",
+      "contrasts": [
+        "过 vs 了 → [[zh-particle-le-2]]: 去了北京 (fui, acción concreta) / 去过北京 (he estado, experiencia).",
+        "没……过 vs 没……了: con 过 la negación conserva 过 (没去过); con 了 desaparece (没去).",
+        "过 vs 着 → [[zh-particle-zhe]]: 过 = alguna vez; 着 = estado que dura.",
+        "过 partícula (átona) vs 过 verbo (guò, 4.º tono: pasar, cruzar): 过马路 (cruzar la calle)."
+      ]
+    },
+    "markdown": "## Cómo lo recuerdo\n\n过 es el sello del pasaporte: «he estado». No me importa cuándo, solo que lo tengo en la colección de experiencias.\n\n> ⚠️ **Ojo**: ADELANTO de HSK 2. En HSK 1 no te lo pedirán, pero lo oirás desde el primer día: 你去过……吗？\n\n```xb-formula\n{\"name\":\"Experiencia\",\"parts\":[{\"text\":\"Sujeto\",\"role\":\"subject\"},{\"text\":\"(没)\",\"role\":\"adverb\"},{\"text\":\"V\",\"role\":\"verb\"},{\"text\":\"过\",\"role\":\"particle\"},{\"text\":\"O\",\"role\":\"object\"}]}\n```\n\n```xb-example\n{\"zh\":\"你去过中国吗？—去过，我在上海住过一年。\",\"py\":\"Nǐ qù guo Zhōngguó ma? — Qù guo, wǒ zài Shànghǎi zhù guo yì nián.\",\"es\":\"¿Has estado en China? —Sí, viví un año en Shanghái.\"}\n```\n\n```xb-example\n{\"zh\":\"我从来没吃过这个菜。\",\"py\":\"Wǒ cónglái méi chī guo zhège cài.\",\"es\":\"Nunca he comido este plato.\"}\n```\n\n> ❌ **Error típico**: ~~我不去过北京~~ → 我**没**去过北京. Las experiencias se niegan con 没.\n\n> ❌ **Error típico**: ~~我去过北京了~~ (mezclar 过 y 了 sin motivo). Elige: 去过 (experiencia) o 去了 (acción).\n\n```xb-exercise\n{\"kind\":\"choice\",\"data\":{\"prompt\":\"¿Cómo se dice «Nunca he estado en Pekín»?\",\"options\":\"我不去北京。 · 我没去过北京。 · 我没去北京了。 · 我不去过北京。\",\"answer\":\"1\",\"explain\":\"Experiencia negada: 没 + V + 过.\"}}\n```",
+    "cues": [
+      { "id": "c1", "q": "¿Qué marca V + 过?", "a": "Experiencia: «he … alguna vez»." },
+      { "id": "c2", "q": "¿Cómo se niega 我去过北京?", "a": "我没去过北京 (没 delante, 过 se queda)." },
+      { "id": "c3", "q": "¿Diferencia entre 去了北京 y 去过北京?", "a": "Fui (acción concreta) / he estado (experiencia)." },
+      { "id": "c4", "q": "¿Es 过 de HSK 1?", "a": "No, es adelanto de HSK 2." }
+    ],
+    "summary": "V + 过 = experiencia «alguna vez» (去过北京); se niega con 没…过 y se distingue de 了 (acción concreta). Adelanto HSK 2.",
+    "reviewed": false
+  },
+  {
+    "id": "zh-particle-zhe",
+    "type": "particle",
+    "title": "着: estado que dura — adelanto HSK 2",
+    "level": 2,
+    "tags": ["partículas", "gramática", "adelanto"],
+    "grammarIds": ["zai"],
+    "fields": {
+      "particle": "着",
+      "pinyin": "zhe",
+      "functions": [
+        "Marcar un estado que se mantiene tras una acción: 门开着 (la puerta está abierta), 他坐着 (está sentado).",
+        "Describir cómo se hace algo con dos verbos a la vez (V1着 V2): 他笑着说 (dice sonriendo), 我站着吃饭 (como de pie).",
+        "Con lugares, decir qué hay colocado: 桌子上放着一本书 (sobre la mesa hay un libro).",
+        "En órdenes, pedir mantener algo: 拿着！ (¡sujétalo!), 听着 (escucha)."
+      ],
+      "position": "Justo detrás del verbo: V + 着 (+ O). En V1着 + V2, el verbo con 着 va primero y describe la postura o manera. Negación: 没(有) + V着.",
+      "nuance": "Es una foto fija: nada se mueve, el estado permanece. Comparado con 在 + V (acción en curso), 着 describe más que narra. Tono neutro, descriptivo, muy frecuente en narración y en descripciones de lugares. Es ADELANTO: en HSK 1 solo verás 着 en 睡着 (zháo, dormirse), que es otra cosa.",
+      "examples": [
+        { "zh": "门开着，窗户关着。", "py": "Mén kāi zhe, chuānghu guān zhe.", "es": "La puerta está abierta y la ventana cerrada." },
+        { "zh": "他笑着说：«没问题。»", "py": "Tā xiào zhe shuō: «Méi wèntí.»", "es": "Dijo sonriendo: «No hay problema»." },
+        { "zh": "李老师站着上课。", "py": "Lǐ lǎoshī zhàn zhe shàng kè.", "es": "El profesor Li da clase de pie." },
+        { "zh": "桌子上放着一杯茶。", "py": "Zhuōzi shang fàng zhe yì bēi chá.", "es": "Sobre la mesa hay una taza de té." },
+        { "zh": "你拿着我的书吧。", "py": "Nǐ ná zhe wǒ de shū ba.", "es": "Sujeta mi libro, anda." },
+        { "zh": "他没穿着外套。", "py": "Tā méi chuān zhe wàitào.", "es": "No lleva puesto el abrigo." }
+      ],
+      "without": "Sin 着 el verbo pasa a ser una acción, no un estado: 门开 = «la puerta se abre / abrir la puerta» frente a 门开着 = «la puerta está abierta». 他笑说 no es correcto; sin 着 habría que separar las acciones (他笑了，然后说……).",
+      "contrasts": [
+        "着 vs 在 + V → [[zh-particle-ne]]: 他在穿衣服 (se está vistiendo: acción) / 他穿着红衣服 (lleva ropa roja: estado).",
+        "着 vs 了 → [[zh-particle-le-2]]: 门开了 (la puerta se ha abierto: cambio) / 门开着 (está abierta: estado).",
+        "着 vs 过 → [[zh-particle-guo]]: estado que dura / experiencia pasada.",
+        "着 zhe (átono) vs 着 zháo (睡着 = dormirse) vs 着 zhuó: el mismo carácter, tres lecturas."
+      ]
+    },
+    "markdown": "## Cómo lo recuerdo\n\n着 es el «estar + participio» del español: abierto, sentado, puesto. Una foto, no un vídeo. Para el vídeo (acción en curso) uso 在.\n\n> ⚠️ **Ojo**: ADELANTO de HSK 2. En HSK 1 te basta con 在 + verbo para «estar haciendo».\n\n```xb-formula\n{\"name\":\"Estado que dura\",\"parts\":[{\"text\":\"Sujeto / Lugar\",\"role\":\"subject\"},{\"text\":\"V\",\"role\":\"verb\"},{\"text\":\"着\",\"role\":\"particle\"},{\"text\":\"(O)\",\"role\":\"object\"}]}\n```\n\n```xb-example\n{\"zh\":\"安娜穿着一件红衣服。\",\"py\":\"Ānnà chuān zhe yí jiàn hóng yīfu.\",\"es\":\"Ana lleva puesto un vestido rojo.\"}\n```\n\n```xb-example\n{\"zh\":\"雨果听着音乐学习。\",\"py\":\"Yǔguǒ tīng zhe yīnyuè xuéxí.\",\"es\":\"Hugo estudia escuchando música.\",\"note\":\"V1着 V2: la manera (escuchar) acompaña a la acción principal (estudiar).\"}\n```\n\n> ❌ **Error típico**: usar 着 para acciones en curso: ~~我吃着饭呢~~ es posible, pero lo natural en HSK 1 es 我在吃饭呢.\n\n> ❌ **Error típico**: 着 con verbos que no describen postura o estado: ~~我喜欢着你~~ → 我喜欢你.\n\n```xb-exercise\n{\"kind\":\"fill\",\"data\":{\"zh\":\"门开＿，请进。\",\"answer\":\"着\",\"options\":\"着 · 了 · 过 · 的\",\"es\":\"La puerta está abierta, pasa.\",\"explain\":\"Estado que se mantiene: V + 着.\"}}\n```",
+    "cues": [
+      { "id": "c1", "q": "¿Qué marca V + 着?", "a": "Un estado que dura: 门开着 = está abierta." },
+      { "id": "c2", "q": "¿Diferencia entre 门开了 y 门开着?", "a": "Se ha abierto (cambio) / está abierta (estado)." },
+      { "id": "c3", "q": "¿Qué significa V1着 V2?", "a": "Hacer V2 mientras se mantiene V1: 笑着说 = decir sonriendo." },
+      { "id": "c4", "q": "¿Es 着 de HSK 1?", "a": "No, adelanto de HSK 2; en HSK 1 usa 在 + verbo." }
+    ],
+    "summary": "V + 着 describe un estado que dura (门开着, 穿着红衣服) o la manera de hacer algo (笑着说). Es una foto; 在 + V es el vídeo. Adelanto HSK 2.",
+    "reviewed": false
+  },
+  {
+    "id": "zh-particle-de-adverbial",
+    "type": "particle",
+    "title": "地 (de): convertir un adjetivo en adverbio — adelanto HSK 2",
+    "level": 2,
+    "tags": ["partículas", "gramática", "adelanto"],
+    "grammarIds": ["de", "hen-adj"],
+    "fields": {
+      "particle": "地",
+      "pinyin": "de",
+      "functions": [
+        "Unir un adjetivo (o frase) a un verbo para decir CÓMO se hace: 慢慢地说 (hablar despacio), 高兴地笑 (reír contento).",
+        "Formar adverbios de manera a partir de adjetivos de dos sílabas o reduplicados: 认真地学习, 慢慢地走.",
+        "Suavizar instrucciones: 你慢慢地说 (háblame despacio)."
+      ],
+      "position": "Entre el adjetivo (manera) y el verbo: Adj + 地 + V. Siempre DELANTE del verbo, a diferencia de 得 que va detrás. Con adjetivos de una sílaba sin reduplicar no se usa (快走 y no ~~快地走~~).",
+      "nuance": "Sin matiz emocional: es el «-mente» español. Lo que transmite es la actitud o manera con que se hace algo, antes de contar la acción. Muy frecuente en escrito y narración; en el habla rápida a veces se omite con reduplicados (慢慢说). Es ADELANTO: 地 como partícula aparece en HSK 2-3; en HSK 1 地 solo lo verás en 地方 (dìfang, lugar), con lectura dì.",
+      "examples": [
+        { "zh": "请你慢慢地说。", "py": "Qǐng nǐ mànmàn de shuō.", "es": "Habla despacio, por favor." },
+        { "zh": "雨果认真地学习汉语。", "py": "Yǔguǒ rènzhēn de xuéxí Hànyǔ.", "es": "Hugo estudia chino con seriedad." },
+        { "zh": "安娜高兴地说：«太好了！»", "py": "Ānnà gāoxìng de shuō: «Tài hǎo le!»", "es": "Ana dijo contenta: «¡Genial!»." },
+        { "zh": "他们慢慢地走回家。", "py": "Tāmen mànmàn de zǒu huí jiā.", "es": "Vuelven a casa caminando despacio." },
+        { "zh": "李老师很好地回答了我的问题。", "py": "Lǐ lǎoshī hěn hǎo de huídá le wǒ de wèntí.", "es": "El profesor Li respondió muy bien a mi pregunta." }
+      ],
+      "without": "Sin 地, adjetivo + verbo puede sonar a dos cosas pegadas o a un compuesto distinto: 高兴说 no es natural (se necesita 高兴地说). Con reduplicados coloquiales a veces se tolera: 慢慢说 se oye en la calle, pero en escrito va 地.",
+      "contrasts": [
+        "地 vs 的 → [[zh-particle-de]]: 的 + nombre (高兴的人, persona contenta); 地 + verbo (高兴地说, decir contento).",
+        "地 vs 得 → [[zh-particle-de-complement]]: 地 va ANTES del verbo y anuncia la manera; 得 va DESPUÉS y valora el resultado: 慢慢地说 / 说得很慢.",
+        "Los tres «de» (的·地·得) suenan igual; el carácter se elige por lo que viene después: nombre → 的, verbo → 地; o por lo que viene antes: verbo → 得.",
+        "地 dì (地方, 地图) vs 地 de (partícula): mismo carácter, distinta lectura."
+      ]
+    },
+    "markdown": "## Cómo lo recuerdo\n\n地 es el «-mente»: 慢慢地 = lentamente. Regla rápida de los tres «de»: **的** → le sigue un nombre; **地** → le sigue un verbo; **得** → le precede un verbo.\n\n> ⚠️ **Ojo**: ADELANTO de HSK 2-3. En HSK 1 no te lo preguntarán; está aquí para que no te confunda cuando lo veas.\n\n```xb-formula\n{\"name\":\"Manera + 地 + verbo\",\"parts\":[{\"text\":\"Sujeto\",\"role\":\"subject\"},{\"text\":\"Adj. (manera)\",\"role\":\"adjective\"},{\"text\":\"地\",\"role\":\"particle\"},{\"text\":\"V\",\"role\":\"verb\"},{\"text\":\"O\",\"role\":\"object\"}]}\n```\n\n```xb-example\n{\"zh\":\"老师，请慢慢地说，我听不懂。\",\"py\":\"Lǎoshī, qǐng mànmàn de shuō, wǒ tīng bu dǒng.\",\"es\":\"Profesor, hable despacio, por favor; no lo entiendo.\",\"note\":\"Frase de supervivencia del primer mes.\"}\n```\n\n```xb-example\n{\"zh\":\"王明高兴地回家了。\",\"py\":\"Wáng Míng gāoxìng de huí jiā le.\",\"es\":\"Wang Ming volvió a casa contento.\"}\n```\n\n> ❌ **Error típico**: ~~他慢慢的说~~ → 他慢慢**地**说. Delante de un verbo, 地.\n\n> ❌ **Error típico**: ~~他快地跑~~ → 他跑得很快 o 他快跑. Los adjetivos de una sílaba no llevan 地 si no se reduplican (快快地 sí).\n\n> 🧠 **Mnemotecnia**: 地 lleva 土 (tierra): el adverbio es el suelo sobre el que ocurre el verbo; va antes, debajo.\n\n```xb-exercise\n{\"kind\":\"choice\",\"data\":{\"prompt\":\"¿Qué «de» va en 他认真＿学习汉语?\",\"options\":\"的 · 地 · 得\",\"answer\":\"1\",\"explain\":\"Le sigue un verbo (学习) y describe la manera → 地.\"}}\n```",
+    "cues": [
+      { "id": "c1", "q": "¿Qué hace 地?", "a": "Convierte un adjetivo en adverbio de manera: 慢慢地说 = hablar despacio." },
+      { "id": "c2", "q": "¿Dónde va 地?", "a": "Entre el adjetivo y el verbo, delante del verbo." },
+      { "id": "c3", "q": "¿Cómo distingo 的 / 地 / 得?", "a": "的 + nombre; 地 + verbo; verbo + 得." },
+      { "id": "c4", "q": "¿Es 地 de HSK 1?", "a": "No, adelanto; en HSK 1 solo 地方 (dì)." }
+    ],
+    "summary": "Adj + 地 + verbo = adverbio de manera (慢慢地说). 地 va delante del verbo; 的 delante de nombre; 得 detrás del verbo. Adelanto HSK 2.",
+    "reviewed": false
+  },
+  {
+    "id": "zh-particle-de-complement",
+    "type": "particle",
+    "title": "得 (de): cómo de bien se hace algo — adelanto HSK 2",
+    "level": 2,
+    "tags": ["partículas", "gramática", "adelanto"],
+    "grammarIds": ["complements", "hen-adj"],
+    "fields": {
+      "particle": "得",
+      "pinyin": "de",
+      "functions": [
+        "Abrir un complemento de grado o resultado tras el verbo: 他说得很好 (habla muy bien).",
+        "Valorar una acción ya realizada o habitual: 你写得很漂亮 (escribes muy bonito), 我昨天睡得不好 (ayer dormí mal).",
+        "Preguntar por la calidad: 他说得怎么样？ / 他说得好不好？",
+        "Con objeto, repetir el verbo: 他说汉语说得很好 (habla chino muy bien)."
+      ],
+      "position": "Inmediatamente detrás del verbo: V + 得 + (很) Adj. Si el verbo tiene objeto, se repite el verbo: V + O + V + 得 + Adj (说汉语说得很好) o se adelanta el objeto (汉语说得很好). La negación va DESPUÉS de 得: 说得不好 (nunca ~~不说得好~~).",
+      "nuance": "Es una evaluación: no dice qué se hace, sino cómo de bien o cómo de mal. Suele cerrar un comentario, un cumplido o una crítica suave. 你说得很好 es el piropo que más oirás. Es ADELANTO: 得 como partícula es HSK 2; en HSK 1 verás 得 solo en 觉得 (juéde, pensar/sentir). Como verbo auxiliar se lee děi (tener que) y como verbo dé (obtener).",
+      "examples": [
+        { "zh": "你汉语说得很好！", "py": "Nǐ Hànyǔ shuō de hěn hǎo!", "es": "¡Hablas chino muy bien!" },
+        { "zh": "他写汉字写得很漂亮。", "py": "Tā xiě Hànzì xiě de hěn piàoliang.", "es": "Escribe caracteres muy bonitos." },
+        { "zh": "我昨天睡得不好。", "py": "Wǒ zuótiān shuì de bù hǎo.", "es": "Ayer dormí mal." },
+        { "zh": "安娜跑得很快。", "py": "Ānnà pǎo de hěn kuài.", "es": "Ana corre muy rápido." },
+        { "zh": "你做的菜做得怎么样？—做得不错。", "py": "Nǐ zuò de cài zuò de zěnmeyàng? — Zuò de búcuò.", "es": "¿Qué tal te sale la comida? —No me sale mal." },
+        { "zh": "李老师说得太快了，我听不懂。", "py": "Lǐ lǎoshī shuō de tài kuài le, wǒ tīng bu dǒng.", "es": "El profesor Li habla demasiado rápido; no lo entiendo." }
+      ],
+      "without": "Sin 得 el adjetivo no puede colgarse del verbo: ~~他说很好~~ es incorrecto. Tendrías que convertirlo en dos frases (他说汉语，说得很好 → 他的汉语很好) o cambiar la estructura. 得 es lo que permite «verbo + valoración» en una sola frase.",
+      "contrasts": [
+        "得 vs 地 → [[zh-particle-de-adverbial]]: 慢慢地说 (anuncia la manera, antes del verbo) / 说得很慢 (valora el resultado, después del verbo).",
+        "得 vs 的 → [[zh-particle-de]]: 得 nunca va seguido de un nombre; 的 nunca va detrás de un verbo con adjetivo.",
+        "说得不好 (negación tras 得) vs 不说 (no hablar): la negación del complemento va después de 得.",
+        "得 de (partícula) vs 得 děi (tener que: 我得走了) vs 得 dé (obtener): tres lecturas."
+      ]
+    },
+    "markdown": "## Cómo lo recuerdo\n\n得 es el «puente» que une un verbo con su nota: 说 得 很好 = «hablar → muy bien». Primero la acción, después la valoración. Lo contrario de 地, que anuncia la manera antes de la acción.\n\n> ⚠️ **Ojo**: ADELANTO de HSK 2. En HSK 1 solo necesitas reconocer 觉得 (juéde). Pero 你说得很好 te lo dirán en la primera semana.\n\n```xb-formula\n{\"name\":\"Complemento de grado\",\"parts\":[{\"text\":\"Sujeto\",\"role\":\"subject\"},{\"text\":\"(O)\",\"role\":\"object\"},{\"text\":\"V\",\"role\":\"verb\"},{\"text\":\"得\",\"role\":\"particle\"},{\"text\":\"很 / 不\",\"role\":\"adverb\"},{\"text\":\"Adj.\",\"role\":\"adjective\"}]}\n```\n\n```xb-example\n{\"zh\":\"你汉字写得真好！—哪里哪里，写得不好。\",\"py\":\"Nǐ Hànzì xiě de zhēn hǎo! — Nǎli nǎli, xiě de bù hǎo.\",\"es\":\"¡Qué bien escribes los caracteres! —Qué va, los escribo mal.\",\"note\":\"Respuesta modesta típica.\"}\n```\n\n```xb-example\n{\"zh\":\"他唱歌唱得怎么样？—唱得很好听。\",\"py\":\"Tā chàng gē chàng de zěnmeyàng? — Chàng de hěn hǎotīng.\",\"es\":\"¿Qué tal canta? —Canta muy bien.\",\"note\":\"Con objeto (歌) se repite el verbo antes de 得.\"}\n```\n\n> ❌ **Error típico**: ~~他说汉语得很好~~ → 他说汉语**说**得很好 / 他汉语说得很好. 得 va pegado al verbo, no al objeto.\n\n> ❌ **Error típico**: ~~他不说得好~~ → 他说得**不**好. La negación va detrás de 得.\n\n> 🧠 **Mnemotecnia**: 得 lleva 彳 (paso): primero das el paso (verbo) y luego miras cómo ha salido (valoración).\n\n```xb-exercise\n{\"kind\":\"order\",\"data\":{\"zh\":\"你汉语说得很好。\",\"es\":\"Hablas chino muy bien.\"}}\n```",
+    "cues": [
+      { "id": "c1", "q": "¿Qué hace 得 detrás del verbo?", "a": "Abre una valoración: 说得很好 = habla muy bien." },
+      { "id": "c2", "q": "¿Dónde va la negación con 得?", "a": "Después de 得: 说得不好." },
+      { "id": "c3", "q": "¿Qué pasa con el objeto en 说汉语 + 得?", "a": "Se repite el verbo (说汉语说得很好) o se adelanta el objeto (汉语说得很好)." },
+      { "id": "c4", "q": "¿Qué 得 ves en HSK 1?", "a": "Solo 觉得 (juéde); el complemento con 得 es HSK 2." }
+    ],
+    "summary": "V + 得 + Adj valora cómo se hace algo (说得很好); con objeto se repite el verbo y la negación va tras 得 (说得不好). Adelanto HSK 2.",
+    "reviewed": false
+  },
+  {
+    "id": "zh-particle-tone-table",
+    "type": "free",
+    "title": "Tono emocional de las partículas finales",
+    "level": 1,
+    "tags": ["partículas", "resumen", "u01"],
+    "grammarIds": ["ma", "ne", "ba", "le"],
+    "markdown": "## Las partículas finales son la «cara» de la frase\n\nEn español ponemos el tono con la voz y los signos (¿…? ¡…!). En chino la voz ya está ocupada con los tonos, así que la emoción se pone con una sílaba átona al final. Misma frase, distinta partícula, distinta cara:\n\n| Partícula | Tono / emoción | Ejemplo | Pinyin | Español |\n|---|---|---|---|---|\n| 吗 | neutra, pregunta sin idea previa | 你去吗？ | Nǐ qù ma? | ¿Vas? |\n| 吗 | cortesía fija | 可以吗？ | Kěyǐ ma? | ¿Se puede? |\n| 呢 | curiosa, cercana: «¿y…?» | 我去，你呢？ | Wǒ qù, nǐ ne? | Yo voy, ¿y tú? |\n| 呢 | suaviza una pregunta con interrogativo | 你为什么不去呢？ | Nǐ wèishénme bú qù ne? | ¿Y por qué no vas, a ver? |\n| 呢 | «ahora mismo» (acción en curso) | 他在吃饭呢。 | Tā zài chī fàn ne. | Está comiendo. |\n| 吧 | sugerencia suave, invitación | 我们去吧。 | Wǒmen qù ba. | Vamos, anda. |\n| 吧 | suposición: «…, ¿no?» | 你去吧？ | Nǐ qù ba? | Vas, ¿no? |\n| 吧 | aceptar con poca gana | 好吧。 | Hǎo ba. | Bueno, vale. |\n| 啊 | admiración, entusiasmo | 真好吃啊！ | Zhēn hǎochī a! | ¡Qué bueno está! |\n| 啊 | confirmar con calidez | 是啊。/ 好啊！ | Shì a. / Hǎo a! | Pues sí. / ¡Claro! |\n| 啊 | impaciencia o ánimo en una orden | 快去啊！ | Kuài qù a! | ¡Venga, ve ya! |\n| 了 | cambio: «ya», «ha empezado» | 下雨了。 | Xià yǔ le. | Ya llueve. |\n| 了 | aviso o alivio | 我饿了！/ 到了！ | Wǒ è le! / Dào le! | ¡Tengo hambre! / ¡Hemos llegado! |\n| 了 | énfasis con 太 | 太好了！ | Tài hǎo le! | ¡Genial! |\n| 了 | «ya no» (不……了) | 我不去了。 | Wǒ bú qù le. | Ya no voy. |\n\n## La misma respuesta con tres caras\n\n```xb-example\n{\"zh\":\"我们去吃饭吧。—好啊！/ 好的。/ 好吧。\",\"py\":\"Wǒmen qù chī fàn ba. — Hǎo a! / Hǎo de. / Hǎo ba.\",\"es\":\"Vamos a comer. —¡Claro! (con ganas) / Vale. (neutro) / Bueno… (resignado)\"}\n```\n\n```xb-example\n{\"zh\":\"你是学生吗？/ 你是学生吧？/ 你是学生？\",\"py\":\"Nǐ shì xuésheng ma? / Nǐ shì xuésheng ba? / Nǐ shì xuésheng?\",\"es\":\"¿Eres estudiante? (no sé) / Eres estudiante, ¿no? (lo supongo) / ¿Que eres estudiante? (sorpresa)\"}\n```\n\n## Avisos\n\n> ⚠️ **Ojo**: todas son **átonas** (tono neutro) y cortas. Si las alargas o les pones tono, cambian de palabra: 吗 ma ≠ 妈 mā; 吧 ba ≠ 八 bā; 了 le ≠ 乐 lè.\n\n> ⚠️ **Ojo**: **una sola partícula de pregunta** por frase: nunca 吗 + 吧, ni 吗 + 呢. Sí es posible 了 + 吗 (你吃饭了吗？) y 了 + 吧 (你吃饭了吧？): 了 no es de pregunta.\n\n> ⚠️ **Ojo**: 啊 cambia de sonido según la sílaba anterior (是啊 → «shì ya», 好啊 → «hǎo wa»); a veces se escribe 呀 / 哇. No es una partícula distinta.\n\n> ❌ **Error típico**: traducir «¿no?» siempre como 吗. «Eres español, ¿no?» es 你是西班牙人**吧**？ (o 对不对). 吗 no supone nada.\n\n> ❌ **Error típico**: 好吧 para aceptar con entusiasmo. Suena a «bueno, si no hay más remedio». Para decir «¡sí, genial!» usa 好啊.\n\n> 💡 **Truco**: para elegir partícula pregúntate: ¿sé la respuesta? no → 吗; creo que sí → 吧; quiero devolver la pregunta → 呢; quiero poner emoción → 啊; algo ha cambiado → 了.\n\n> 🏮 **¿Sabías que…?**: en los mensajes de chat los chinos usan 啊, 呢 y 吧 constantemente; un mensaje sin partícula final puede sonar seco o enfadado.\n\n```xb-cue\n{\"q\":\"¿Qué partícula transmite entusiasmo al aceptar?\",\"a\":\"啊: 好啊！ (好吧 es resignado, 好的 neutro).\"}\n```\n\n```xb-exercise\n{\"kind\":\"choice\",\"data\":{\"prompt\":\"Quieres decir «Hace frío, ¿no?» (lo supones). ¿Cuál es correcta?\",\"options\":\"冷吗？ · 冷吧？ · 冷呢？ · 冷啊？\",\"answer\":\"1\",\"explain\":\"Suposición que pides confirmar: 吧. 冷吗 pregunta sin suponer; 冷呢 y 冷啊 no funcionan así.\"}}\n```\n\n```xb-exercise\n{\"kind\":\"choice\",\"data\":{\"prompt\":\"¿Cuál de estas combinaciones es imposible?\",\"options\":\"你吃饭了吗？ · 你吃饭了吧？ · 你吃饭吗吧？ · 你吃饭了？\",\"answer\":\"2\",\"explain\":\"吗 y 吧 son las dos partículas de pregunta: no se combinan. 了 + 吗 o 了 + 吧 sí es posible.\"}}\n```",
+    "cues": [
+      { "id": "c1", "q": "¿Qué partícula uso si no sé la respuesta y cuál si la supongo?", "a": "吗 (no sé) / 吧 (supongo)." },
+      { "id": "c2", "q": "¿Qué diferencia de tono hay entre 好啊, 好的 y 好吧?", "a": "Entusiasmo / neutro / resignación." },
+      { "id": "c3", "q": "¿Qué dos partículas nunca van juntas?", "a": "吗 y 吧 (ni 吗 y 呢): una sola partícula de pregunta." },
+      { "id": "c4", "q": "¿Cómo se pronuncian las partículas finales?", "a": "Átonas y cortas: tono neutro." },
+      { "id": "c5", "q": "¿Qué partícula marca que algo ha cambiado?", "a": "了 al final: 下雨了, 我饿了." }
+    ],
+    "summary": "Tabla con el tono emocional de 吗 呢 吧 啊 了: 吗 neutra, 呢 curiosa, 吧 suave/suposición, 啊 emoción, 了 cambio; nunca dos partículas de pregunta juntas.",
+    "reviewed": false
+  }
+]

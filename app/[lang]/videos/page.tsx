@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { VideoLibrary } from "@/components/videos/video-library";
+import { Redirect } from "@/components/layout/redirect";
 
 export const metadata: Metadata = { title: "Vídeos" };
 
 export default function Page() {
-  return <VideoLibrary />;
+  return <Redirect to="/escuchar-leer?tab=videos" />;
 }

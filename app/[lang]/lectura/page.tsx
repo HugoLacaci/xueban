@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { ReadingList } from "@/components/reading/reading-list";
+import { Redirect } from "@/components/layout/redirect";
 
 export const metadata: Metadata = { title: "Lectura graduada" };
 
 export default function Page() {
-  return <ReadingList />;
+  return <Redirect to="/escuchar-leer?tab=lectura" />;
 }

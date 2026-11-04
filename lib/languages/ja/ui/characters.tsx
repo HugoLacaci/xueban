@@ -308,7 +308,7 @@ export function KanjiOfDay({ dayIndex }: { dayIndex: number }) {
             <span lang="ja-JP" className="ja">
               {word.s}
             </span>{" "}
-            ({word.p}) · {word.es ?? word.en[0]}
+            (<span lang="ja-JP">{word.p}</span>) · {word.es ?? word.en[0]}
           </p>
         ) : null}
         <Link href={`/diccionario?q=${encodeURIComponent(ch)}`} className="text-indigo underline-offset-2 hover:underline">

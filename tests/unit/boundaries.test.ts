@@ -40,11 +40,16 @@ function targetPack(fromFile: string, spec: string): string | null {
 function ownerPack(file: string): string | null {
   const r = rel(file);
   const m = r.match(/^lib\/languages\/(zh|ja|ko)\//) ?? r.match(/^scripts\/data\/(zh|ja|ko)\./);
-  return m ? m[1] : null;
+  if (m) return m[1];
+  // Funcionalidades que de momento solo existen en chino (ja/ko «pendiente» en PARITY.md):
+  // motor de corrección por reglas, origen y memorización de los hanzi. Pertenecen al paquete zh.
+  if (ZH_FEATURES.some((d) => r.startsWith(d))) return "zh";
+  return null;
 }
 
 // registry.ts: carga diferida de los paquetes; static-content.ts: contenido estático para generateStaticParams
 // (solo en el servidor); build-anki.ts: generador de mazos .apkg en Node.
+const ZH_FEATURES = ["lib/correction/", "lib/hanzi/", "components/characters/"];
 const ALLOWED = new Set(["lib/languages/registry.ts", "lib/languages/static-content.ts", "scripts/build-anki.ts"]);
 
 describe("fronteras de los paquetes de idioma", () => {

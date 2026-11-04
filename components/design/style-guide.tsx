@@ -16,6 +16,8 @@ import { STYLE_DATA } from "./style-data";
 import { LangPortalCompact, LangPortalHero } from "@/components/layout/lang-portal";
 import NextLink from "next/link";
 import { Mixed } from "@/components/target/mixed";
+import dynamic from "next/dynamic";
+const ZhFeaturesSection = dynamic(() => import("@/components/characters/design-showcase").then((m) => m.ZhFeaturesSection), { ssr: false });
 
 const COLOR_TOKENS: { token: string; use: string; text?: string }[] = [
   { token: "paper", use: "fondo principal" },
@@ -483,6 +485,8 @@ export function StyleGuide() {
           />
           <p className="mt-3 text-xs text-ink-faint">Anillo de foco: 2 px de tinta con separación (pulsa Tab). Movimiento reducido: solo fundidos.</p>
         </section>
+
+        {pack.id === "zh" ? <ZhFeaturesSection /> : null}
       </div>
     </TooltipProvider>
   );

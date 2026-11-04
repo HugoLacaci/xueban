@@ -7,6 +7,8 @@ import dynamic from "next/dynamic";
 // Popup de palabra y paleta de búsqueda: solo se usan tras interactuar → fuera del bundle inicial.
 const WordPopupHost = dynamic(() => import("@/components/target/word-popup").then((m) => m.WordPopupHost), { ssr: false });
 const CommandPalette = dynamic(() => import("@/components/layout/command-palette").then((m) => m.CommandPalette), { ssr: false });
+const QuickCaptureHost = dynamic(() => import("@/components/notes/quick-capture").then((m) => m.QuickCaptureHost), { ssr: false });
+const NewNoteDialogHost = dynamic(() => import("@/components/notes/new-note-dialog").then((m) => m.NewNoteDialogHost), { ssr: false });
 
 const FULLSCREEN = ["/bienvenida"];
 
@@ -18,6 +20,8 @@ export function AppShell({ children }: { children: React.ReactNode }) {
     <>
       <WordPopupHost />
       <CommandPalette />
+      <QuickCaptureHost />
+      <NewNoteDialogHost />
     </>
   );
   return (

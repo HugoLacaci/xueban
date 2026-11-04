@@ -2,6 +2,7 @@
 @import "../styles/tokens.css";
 @import "../styles/themes.css";
 @import "../styles/portal.css";
+@import "../styles/notes.css";
 @import "lxgw-wenkai-lite-webfont/lxgwwenkailite-regular.css";
 
 @custom-variant dark (&:where(.dark, .dark *, [data-theme="dark"], [data-theme="dark"] *));
@@ -269,3 +270,14 @@ ruby.zh-ruby > rt {
 /* Sellos de texto: latín en Inter, caracteres chinos en 楷书 decorativo (el navegador cae por glifo). */
 .font-seal { font-family: var(--font-sans), var(--font-display-zh); letter-spacing: 0.04em; font-weight: 600; }
 
+
+/* El desplazamiento a un elemento (enfoque con teclado, anclas, scrollIntoView) no lo deja bajo la cabecera fija
+   ni bajo la barra inferior del móvil. */
+html {
+  scroll-padding-top: 4.5rem;
+}
+@media (max-width: 767px) {
+  html {
+    scroll-padding-bottom: 5.5rem;
+  }
+}

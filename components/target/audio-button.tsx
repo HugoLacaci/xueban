@@ -13,7 +13,9 @@ export function AudioButton({
   autoPlay,
   label = "Escuchar",
   variant = "ghost",
+  voice,
 }: {
+  voice?: "f" | "m" | "child";
   text: string;
   className?: string;
   size?: "sm" | "md" | "lg";
@@ -32,7 +34,7 @@ export function AudioButton({
       return;
     }
     setPlaying(true);
-    await speak(text, { rate: rate ?? tts.rate, voiceURI: tts.voiceURI, preferGenerated: tts.preferGenerated });
+    await speak(text, { rate: rate ?? tts.rate, voiceURI: tts.voiceURI, preferGenerated: tts.preferGenerated, voice });
     setPlaying(false);
   };
 

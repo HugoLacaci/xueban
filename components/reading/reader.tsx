@@ -16,6 +16,7 @@ import { Badge, Card, PageHeader } from "@/components/ui/primitives";
 import { SealTag } from "@/components/ornament/seal";
 import { toast } from "@/components/ui/toast";
 import { AudioButton } from "@/components/target/audio-button";
+import { NoteHereButton } from "@/components/notes/note-here-button";
 import { ChineseText } from "@/components/target/target-text";
 import { Pinyin } from "@/components/target/reading";
 import { ExerciseRunner, type SessionSummary } from "@/components/exercises/runner";
@@ -153,6 +154,7 @@ export function Reader({ id }: { id: string }) {
         <span className="absolute inset-x-8 top-0 h-[2px] rounded-b bg-cinnabar/80" aria-hidden="true" />
         <div className="mb-5 flex flex-wrap items-center justify-end gap-1.5 border-b border-line/70 pb-3">
           <AudioButton text={text.replace(/\n/g, "。")} label="Escuchar todo" />
+          <NoteHereButton text={title} source={{ kind: "reading", ref: id }} />
           <Button size="sm" variant="ghost" onClick={() => setShowEs((s) => !s)} aria-pressed={translated}>
             {translated ? <EyeOff /> : <Eye />} traducción
           </Button>

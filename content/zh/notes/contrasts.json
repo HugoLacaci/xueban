@@ -1,0 +1,704 @@
+[
+  {
+    "id": "zh-contrast-bu-mei",
+    "type": "contrast",
+    "title": "不 vs 没: cómo negar",
+    "level": 1,
+    "tags": ["contrastes", "negación", "u04"],
+    "grammarIds": ["bu-mei", "you", "le"],
+    "fields": {
+      "a": "不",
+      "b": "没",
+      "rule": "不 niega lo habitual, lo futuro, lo que quieres y los adjetivos; 没 niega lo que no ha pasado y el verbo 有.",
+      "table": {
+        "columns": ["", "不", "没"],
+        "rows": [
+          ["Niega", "presente habitual, futuro, voluntad, adjetivos y 是", "acciones pasadas o no realizadas, y 有"],
+          ["Va con", "是, 想, 要, 会, 喜欢, adjetivos (不好)", "有 (没有) y verbos de acción ya ocurrida"],
+          ["Con 了", "nunca juntos: 不……了 significa «ya no»", "没 sustituye a 了: 我没吃饭 (nunca ✗我没吃饭了)"],
+          ["Tono", "bù; bú delante de 4.º tono (不是 bú shì)", "méi, siempre"],
+          ["Ejemplo", "我不喝咖啡。 (no bebo café: costumbre)", "我没喝咖啡。 (no bebí / no he bebido café)"]
+        ]
+      },
+      "ok": [
+        { "zh": "我不是老师。", "py": "Wǒ bú shì lǎoshī.", "es": "No soy profesor." },
+        { "zh": "我没有钱。", "py": "Wǒ méiyǒu qián.", "es": "No tengo dinero." },
+        { "zh": "他今天不来。", "py": "Tā jīntiān bù lái.", "es": "Hoy no viene." },
+        { "zh": "昨天我没去学校。", "py": "Zuótiān wǒ méi qù xuéxiào.", "es": "Ayer no fui a la escuela." },
+        { "zh": "这个菜不好吃。", "py": "Zhège cài bù hǎochī.", "es": "Este plato no está bueno." }
+      ],
+      "bad": [
+        { "wrong": "我没是学生。", "right": "我不是学生。", "why": "是 se niega siempre con 不, nunca con 没." },
+        { "wrong": "我昨天不去学校。", "right": "我昨天没去学校。", "why": "Es pasado: algo que no ocurrió se niega con 没." },
+        { "wrong": "我没吃饭了。", "right": "我没吃饭。", "why": "没 ya dice que la acción no se completó; 了 sobra." },
+        { "wrong": "我不有哥哥。", "right": "我没有哥哥。", "why": "有 solo admite 没: 没有." }
+      ],
+      "minitest": [
+        { "zh": "我＿有哥哥。", "answer": "没", "es": "No tengo hermanos mayores." },
+        { "zh": "他＿是中国人。", "answer": "不", "es": "Él no es chino." },
+        { "zh": "昨天我＿看电视。", "answer": "没", "es": "Ayer no vi la tele." },
+        { "zh": "我＿喜欢喝茶。", "answer": "不", "es": "No me gusta beber té." },
+        { "zh": "明天我＿去北京。", "answer": "不", "es": "Mañana no voy a Pekín." },
+        { "zh": "你吃饭了吗？——我＿吃。", "answer": "没", "es": "¿Has comido? —No he comido." }
+      ]
+    },
+    "markdown": "## Cómo lo recuerdo\n\nPregúntate: **¿estoy hablando de algo que (no) pasó?** Si sí → 没. Si hablo de costumbres, planes, deseos o describo con un adjetivo → 不. Y 有 va siempre con 没, pase lo que pase.\n\n> 🧠 **Mnemotecnia**: 没 tiene «agua» (氵) a la izquierda: lo que se ha ido por el río ya pasó. 不 es la negación «de siempre».\n\n> ⚠️ **Ojo**: en español decimos «no comí» y «no como» con el mismo «no». En chino son dos palabras distintas, y el chino no tiene tiempos verbales: la elección 不/没 es la que marca si hablas del pasado.\n\n> ❌ **Error típico**: combinar 没 con 了 (✗我没去了). Cuando niegas con 没, quita el 了. Con 不 sí existe 不……了, pero significa «ya no» (我不去了 = ya no voy).\n\n> 👩‍🏫 **Lo dijo el profe**: 不 cambia de tono delante de un 4.º tono: 不是 bú shì, 不去 bú qù, 不要 bú yào. Delante de los demás tonos se queda en bù.\n\n```xb-example\n{\"zh\":\"我不吃肉，昨天也没吃。\",\"py\":\"Wǒ bù chī ròu, zuótiān yě méi chī.\",\"es\":\"No como carne, y ayer tampoco comí.\",\"note\":\"不 = costumbre; 没 = ayer no ocurrió.\"}\n```\n\n```xb-exercise\n{\"kind\":\"choice\",\"data\":{\"prompt\":\"«Ayer no fui a clase.» ¿Cuál es correcta?\",\"options\":\"昨天我没去上课。 · 昨天我不去上课。 · 昨天我没去上课了。\",\"answer\":\"0\",\"explain\":\"Es pasado y no ocurrió: 没, y sin 了.\"}}\n```\n\n```xb-exercise\n{\"kind\":\"choice\",\"data\":{\"prompt\":\"«No tengo coche.» ¿Cuál es correcta?\",\"options\":\"我不有车。 · 我没有车。\",\"answer\":\"1\",\"explain\":\"有 solo se niega con 没.\"}}\n```",
+    "cues": [
+      { "id": "c1", "q": "¿Con qué niego 有?", "a": "Siempre con 没: 没有." },
+      { "id": "c2", "q": "«Ayer no fui»: ¿不 o 没?", "a": "没: 昨天我没去。 Es algo que no ocurrió." },
+      { "id": "c3", "q": "¿Puedo decir 我没吃饭了?", "a": "No. 没 ya niega lo completado; quita el 了: 我没吃饭." },
+      { "id": "c4", "q": "¿Qué significa 我不去了?", "a": "«Ya no voy» (cambio de plan): 不……了 = ya no." },
+      { "id": "c5", "q": "¿Cuándo se lee 不 como bú?", "a": "Delante de un 4.º tono: 不是 bú shì, 不去 bú qù." }
+    ],
+    "summary": "不 = no (costumbre, futuro, deseo, adjetivos, 是); 没 = no pasó / no tengo (有), y nunca con 了.",
+    "reviewed": false
+  },
+  {
+    "id": "zh-contrast-er-liang",
+    "type": "contrast",
+    "title": "二 vs 两: los dos «dos»",
+    "level": 1,
+    "tags": ["contrastes", "números", "u02"],
+    "grammarIds": ["numbers", "measure-words"],
+    "fields": {
+      "a": "二",
+      "b": "两",
+      "rule": "Si cuentas o lees un número, 二; si dices «dos de algo» delante de un clasificador (两个, 两点), 两.",
+      "table": {
+        "columns": ["", "二", "两"],
+        "rows": [
+          ["Uso", "contar, leer cifras, ordinales, decenas, teléfono", "cantidad delante de clasificador"],
+          ["Ejemplo", "一、二、三 / 十二 / 二十 / 第二", "两个人 / 两点 / 两块钱"],
+          ["Con 十", "siempre 二: 十二, 二十, 二十二", "nunca: ✗两十"],
+          ["Con 百 / 千 / 万", "二百 también se oye", "两百 / 两千 / 两万 (lo más habitual)"],
+          ["Fechas y horas", "二月 (febrero), 二号 (día 2): son nombres", "两点 (las dos), 两个小时 (dos horas)"]
+        ]
+      },
+      "ok": [
+        { "zh": "我有两个姐姐。", "py": "Wǒ yǒu liǎng ge jiějie.", "es": "Tengo dos hermanas mayores." },
+        { "zh": "现在两点。", "py": "Xiànzài liǎng diǎn.", "es": "Son las dos." },
+        { "zh": "这个两块钱。", "py": "Zhège liǎng kuài qián.", "es": "Esto cuesta dos yuanes." },
+        { "zh": "今天二月二号。", "py": "Jīntiān èr yuè èr hào.", "es": "Hoy es 2 de febrero." },
+        { "zh": "他二十二岁。", "py": "Tā èrshí'èr suì.", "es": "Tiene veintidós años." }
+      ],
+      "bad": [
+        { "wrong": "我有二个弟弟。", "right": "我有两个弟弟。", "why": "Delante de clasificador (个) el «dos» es 两." },
+        { "wrong": "现在二点。", "right": "现在两点。", "why": "点 funciona como clasificador de horas: 两点." },
+        { "wrong": "两十块钱。", "right": "二十块钱。", "why": "Las decenas se forman con 二: 二十." },
+        { "wrong": "第两个。", "right": "第二个。", "why": "Los ordinales usan 二: 第二 (segundo)." }
+      ],
+      "minitest": [
+        { "zh": "我家有＿口人。", "answer": "两", "es": "En mi familia somos dos." },
+        { "zh": "今天十＿号。", "answer": "二", "es": "Hoy es día 12." },
+        { "zh": "现在＿点半。", "answer": "两", "es": "Son las dos y media." },
+        { "zh": "我要＿个苹果。", "answer": "两", "es": "Quiero dos manzanas." },
+        { "zh": "他＿十岁。", "answer": "二", "es": "Tiene veinte años." },
+        { "zh": "我买＿本书。", "answer": "两", "es": "Compro dos libros." }
+      ]
+    },
+    "markdown": "## Cómo lo recuerdo\n\n二 es el **número** (lo que lees en una cifra); 两 es la **cantidad** (lo que cuentas con un clasificador). Si después del «dos» viene 个, 口, 本, 点, 块, 杯… es 两.\n\n> 🧠 **Mnemotecnia**: 两 parece una caja con **dos personas dentro** (人人): «dos de algo». 二 son dos rayas: solo el número.\n\n> ⚠️ **Ojo**: en el teléfono y en los años se lee dígito a dígito y siempre es 二: 2024年 → 二零二四年.\n\n> ❌ **Error típico**: 现在二点 ✗. Las dos en punto son 两点. En cambio, el minuto 2 sí es 二: 两点零二分.\n\n```xb-example\n{\"zh\":\"两个人，二十块。\",\"py\":\"Liǎng ge rén, èrshí kuài.\",\"es\":\"Dos personas, veinte yuanes.\",\"note\":\"两 delante de 个; 二 para formar la decena.\"}\n```\n\n```xb-exercise\n{\"kind\":\"choice\",\"data\":{\"prompt\":\"«Dos tazas de té», ¿cómo se dice?\",\"options\":\"二杯茶 · 两杯茶\",\"answer\":\"1\",\"explain\":\"杯 es clasificador → 两杯茶.\"}}\n```\n\n```xb-exercise\n{\"kind\":\"choice\",\"data\":{\"prompt\":\"«Son las 12:02», ¿cómo se dice?\",\"options\":\"十二点零两分 · 十二点零二分 · 十两点零二分\",\"answer\":\"1\",\"explain\":\"十二 (doce) y el minuto 02 se leen con 二.\"}}\n```",
+    "cues": [
+      { "id": "c1", "q": "¿Cuándo uso 两?", "a": "Delante de un clasificador: 两个人, 两点, 两块." },
+      { "id": "c2", "q": "¿«Doce» es 十二 o 十两?", "a": "十二. Con 十 siempre 二." },
+      { "id": "c3", "q": "¿«Las dos» en punto?", "a": "两点 (nunca 二点)." },
+      { "id": "c4", "q": "¿Doscientos?", "a": "两百 es lo más habitual; 二百 también se entiende." },
+      { "id": "c5", "q": "¿Segundo (ordinal)?", "a": "第二, con 二." }
+    ],
+    "summary": "二 para contar y leer cifras (十二, 二十, 第二); 两 para «dos de algo» delante de clasificador (两个, 两点, 两块).",
+    "reviewed": false
+  },
+  {
+    "id": "zh-contrast-hui-neng-keyi",
+    "type": "contrast",
+    "title": "会 vs 能 vs 可以: tres formas de «poder»",
+    "level": 1,
+    "tags": ["contrastes", "modales", "u09"],
+    "grammarIds": ["modal-verbs"],
+    "fields": {
+      "a": "会",
+      "b": "能",
+      "rule": "会 = sé hacerlo (lo aprendí); 能 = puedo (tengo la capacidad o las circunstancias lo permiten); 可以 = me dejan (permiso).",
+      "table": {
+        "columns": ["", "会", "能", "可以"],
+        "rows": [
+          ["Significa", "saber hacer (habilidad aprendida)", "poder (capacidad física, circunstancias)", "poder (permiso, está permitido)"],
+          ["Pregunta típica", "你会说中文吗？", "你明天能来吗？", "我可以进来吗？"],
+          ["Negación", "不会 (no sé)", "不能 (no puedo)", "不可以 / 不能 (para negar permiso se prefiere 不能)"],
+          ["Respuesta corta", "会。/ 不会。", "能。/ 不能。", "可以。/ 不可以。"],
+          ["Ejemplo", "我会做饭。", "我今天很忙，不能去。", "这儿可以坐吗？"]
+        ]
+      },
+      "ok": [
+        { "zh": "我会说一点儿中文。", "py": "Wǒ huì shuō yìdiǎnr Zhōngwén.", "es": "Sé hablar un poco de chino." },
+        { "zh": "他今天很忙，不能来。", "py": "Tā jīntiān hěn máng, bù néng lái.", "es": "Hoy está muy ocupado, no puede venir." },
+        { "zh": "老师，我可以用英语说吗？", "py": "Lǎoshī, wǒ kěyǐ yòng Yīngyǔ shuō ma?", "es": "Profesor, ¿puedo decirlo en inglés?" },
+        { "zh": "我不会写这个字。", "py": "Wǒ bú huì xiě zhège zì.", "es": "No sé escribir este carácter." },
+        { "zh": "这儿不能喝水。", "py": "Zhèr bù néng hē shuǐ.", "es": "Aquí no se puede beber agua." }
+      ],
+      "bad": [
+        { "wrong": "我能说中文。（lo he aprendido）", "right": "我会说中文。", "why": "Hablar una lengua es una habilidad aprendida: 会." },
+        { "wrong": "我可以做饭。（sé cocinar）", "right": "我会做饭。", "why": "可以 es permiso; «sé cocinar» es 会." },
+        { "wrong": "我不会去，我太忙了。", "right": "我不能去，我太忙了。", "why": "No es que no sepa ir: las circunstancias no lo permiten → 能." },
+        { "wrong": "我会进来吗？", "right": "我可以进来吗？", "why": "Pides permiso: 可以." }
+      ],
+      "minitest": [
+        { "zh": "你＿说英语吗？", "answer": "会", "options": ["会", "能", "可以"], "es": "¿Sabes hablar inglés?" },
+        { "zh": "我今天有事，不＿去。", "answer": "能", "options": ["会", "能", "可以"], "es": "Hoy tengo cosas que hacer, no puedo ir." },
+        { "zh": "我＿坐这儿吗？", "answer": "可以", "options": ["会", "能", "可以"], "es": "¿Puedo sentarme aquí?" },
+        { "zh": "他＿写很多汉字。", "answer": "会", "options": ["会", "能", "可以"], "es": "Sabe escribir muchos caracteres." },
+        { "zh": "现在太晚了，不＿打电话。", "answer": "能", "options": ["会", "能", "可以"], "es": "Ya es muy tarde, no se puede llamar." },
+        { "zh": "这里＿吃东西吗？", "answer": "可以", "options": ["会", "能", "可以"], "es": "¿Aquí se puede comer?" }
+      ]
+    },
+    "markdown": "## Cómo lo recuerdo\n\nTres preguntas en español:\n\n- **¿Lo he aprendido?** → 会 (saber: idiomas, cocinar, conducir, nadar, escribir caracteres).\n- **¿Puedo en este momento?** → 能 (tengo tiempo, fuerza, salud; la situación lo permite).\n- **¿Me dejan?** → 可以 (reglas, permiso de alguien).\n\n> 💡 **Truco**: 会 se parece mucho al «saber» español: «sé nadar», «sé chino». Si en español puedes decir «sé», en chino es 会.\n\n> ⚠️ **Ojo**: en una respuesta corta se repite el modal, no se dice «sí»: ——你会游泳吗？——会。/ 不会。\n\n> 👩‍🏫 **Lo dijo el profe**: 能 y 可以 se intercambian en muchas frases cotidianas (你能帮我一下吗？= 你可以帮我一下吗？). Pero para **negar un permiso** se usa más 不能: 这儿不能抽烟 (aquí no se puede fumar).\n\n> 🏮 **¿Sabías que…?**: 会 también significa «es probable que» con el futuro (adelanto HSK 2): 明天会下雨 (mañana lloverá).\n\n```xb-example\n{\"zh\":\"我会开车，但是今天不能开，我喝了酒。\",\"py\":\"Wǒ huì kāichē, dànshì jīntiān bù néng kāi, wǒ hēle jiǔ.\",\"es\":\"Sé conducir, pero hoy no puedo: he bebido.\",\"note\":\"会 = habilidad; 能 = las circunstancias de hoy.\"}\n```\n\n```xb-exercise\n{\"kind\":\"choice\",\"data\":{\"prompt\":\"«¿Puedo ir al baño?» (en clase)\",\"options\":\"我会去洗手间吗？ · 我可以去洗手间吗？ · 我能会去洗手间吗？\",\"answer\":\"1\",\"explain\":\"Pides permiso → 可以.\"}}\n```\n\n```xb-exercise\n{\"kind\":\"choice\",\"data\":{\"prompt\":\"«Mi madre sabe cocinar comida china.»\",\"options\":\"我妈妈能做中国菜。 · 我妈妈会做中国菜。\",\"answer\":\"1\",\"explain\":\"Habilidad aprendida → 会.\"}}\n```",
+    "cues": [
+      { "id": "c1", "q": "«Sé hablar chino»: ¿qué modal?", "a": "会: 我会说中文。 Habilidad aprendida." },
+      { "id": "c2", "q": "«Hoy no puedo ir, estoy ocupado»: ¿会, 能 o 可以?", "a": "能: 我今天不能去。 Las circunstancias no lo permiten." },
+      { "id": "c3", "q": "¿Cómo pido permiso?", "a": "可以……吗？: 我可以进来吗？" },
+      { "id": "c4", "q": "¿Cómo respondo «sí» a 你会说中文吗？", "a": "Repitiendo el modal: 会。 (o 不会。)." },
+      { "id": "c5", "q": "¿Cómo niego un permiso: «aquí no se puede fumar»?", "a": "这儿不能抽烟。 (不能 más que 不可以)." }
+    ],
+    "summary": "会 = sé (aprendido), 能 = puedo (capacidad/circunstancias), 可以 = me dejan (permiso); se responde repitiendo el modal.",
+    "reviewed": false
+  },
+  {
+    "id": "zh-contrast-xiang-yao",
+    "type": "contrast",
+    "title": "想 vs 要: «me gustaría» y «quiero»",
+    "level": 1,
+    "tags": ["contrastes", "modales", "u05"],
+    "grammarIds": ["modal-verbs"],
+    "fields": {
+      "a": "想",
+      "b": "要",
+      "rule": "想 = me apetece / me gustaría (deseo suave, pensar en); 要 = quiero y lo voy a hacer, o lo pido (decidido).",
+      "table": {
+        "columns": ["", "想", "要"],
+        "rows": [
+          ["Fuerza", "suave: «me gustaría», «me apetece»", "firme: «quiero», «voy a», «necesito»"],
+          ["Va con", "verbo (想去, 想吃); con nombre = echar de menos / pensar en (想你, 想家)", "verbo (要去) o nombre al pedir (我要这个)"],
+          ["Negación", "不想 (no me apetece)", "不要 (¡no!, no quieras); «no hace falta» es 不用"],
+          ["Al pedir en un restaurante", "我想要一杯茶。 (más educado)", "我要一杯茶。 (normal, directo)"],
+          ["Ejemplo", "我想去中国。 (me gustaría ir)", "我要去中国。 (voy a ir / quiero ir, decidido)"]
+        ]
+      },
+      "ok": [
+        { "zh": "我想喝茶。", "py": "Wǒ xiǎng hē chá.", "es": "Me apetece tomar té." },
+        { "zh": "服务员，我要这个。", "py": "Fúwùyuán, wǒ yào zhège.", "es": "Camarero, quiero esto." },
+        { "zh": "你想去哪儿？", "py": "Nǐ xiǎng qù nǎr?", "es": "¿Adónde te gustaría ir?" },
+        { "zh": "我不想做作业。", "py": "Wǒ bù xiǎng zuò zuòyè.", "es": "No me apetece hacer los deberes." },
+        { "zh": "明天我要去上海。", "py": "Míngtiān wǒ yào qù Shànghǎi.", "es": "Mañana voy a ir a Shanghái." }
+      ],
+      "bad": [
+        { "wrong": "妈妈，我要你。", "right": "妈妈，我想你。", "why": "«Te echo de menos» es 想 + persona; 要 + persona suena a «te quiero para mí»." },
+        { "wrong": "服务员，我想这个。", "right": "服务员，我要这个。 / 我想要这个。", "why": "想 + nombre no es «quiero»: para pedir algo usa 要 o 想要." },
+        { "wrong": "我不要吃饭，我不饿。", "right": "我不想吃饭，我不饿。", "why": "不要 suena tajante (¡no quiero!) o a prohibición; «no me apetece» es 不想." },
+        { "wrong": "你要什么？——我想一杯水。", "right": "我要一杯水。", "why": "Pedir una cosa concreta: 要 + nombre." }
+      ],
+      "minitest": [
+        { "zh": "我＿喝一杯咖啡，可以吗？", "answer": "想", "es": "Me gustaría tomar un café, ¿se puede?" },
+        { "zh": "服务员，我＿这个。", "answer": "要", "es": "Camarero, quiero esto." },
+        { "zh": "周末我＿去看电影。", "answer": "想", "es": "El fin de semana me gustaría ir al cine." },
+        { "zh": "妈妈，我＿你。", "answer": "想", "es": "Mamá, te echo de menos." },
+        { "zh": "你＿什么？——我＿一杯水。", "answer": "要", "es": "¿Qué quieres? —Quiero un vaso de agua." },
+        { "zh": "我＿家了。", "answer": "想", "es": "Echo de menos mi casa." }
+      ]
+    },
+    "markdown": "## Cómo lo recuerdo\n\n想 lleva 心 (corazón) debajo: es lo que **siente** el corazón, un deseo o un pensamiento. 要 es lo que **vas a hacer** o lo que **pides** en una tienda.\n\n> 💡 **Truco**: para pedir en un restaurante sin sonar brusco, 我想要……: junta las dos.\n\n> ⚠️ **Ojo**: 不要 delante de un verbo es una prohibición: 不要说话 = «no habléis». Si solo quieres decir «no me apetece», 不想.\n\n> ❌ **Error típico**: traducir «te quiero» por 我要你. «Te quiero» es 我爱你; «te echo de menos» es 我想你.\n\n> 👩‍🏫 **Lo dijo el profe**: 要 + verbo también vale para el futuro inmediato: 我要走了 = «me voy ya».\n\n```xb-example\n{\"zh\":\"我想去北京，但是我要先学习。\",\"py\":\"Wǒ xiǎng qù Běijīng, dànshì wǒ yào xiān xuéxí.\",\"es\":\"Me gustaría ir a Pekín, pero primero tengo que estudiar.\",\"note\":\"想 = deseo; 要 = lo que haré (necesidad).\"}\n```\n\n```xb-exercise\n{\"kind\":\"choice\",\"data\":{\"prompt\":\"«Echo de menos a mis padres.»\",\"options\":\"我要我爸爸妈妈。 · 我想我爸爸妈妈。\",\"answer\":\"1\",\"explain\":\"想 + persona = echar de menos.\"}}\n```\n\n```xb-exercise\n{\"kind\":\"choice\",\"data\":{\"prompt\":\"En la tienda: «Quiero dos de estos.»\",\"options\":\"我想两个这个。 · 我要两个这个。\",\"answer\":\"1\",\"explain\":\"Pedir una cosa: 要 + cantidad + nombre.\"}}\n```",
+    "cues": [
+      { "id": "c1", "q": "«Me apetece tomar té»: ¿想 o 要?", "a": "想: 我想喝茶。" },
+      { "id": "c2", "q": "¿Cómo pido algo en una tienda?", "a": "我要 + cosa (o 我想要 + cosa, más suave)." },
+      { "id": "c3", "q": "¿Qué significa 我想你?", "a": "«Te echo de menos» (想 + persona)." },
+      { "id": "c4", "q": "¿Qué matiz tiene 不要 + verbo?", "a": "Prohibición: 不要说话 = no habléis. «No me apetece» es 不想." },
+      { "id": "c5", "q": "¿Qué quiere decir 我要走了?", "a": "«Me voy ya»: 要 marca futuro inmediato." }
+    ],
+    "summary": "想 = me gustaría / pienso en / echo de menos; 要 = quiero (decidido), pido, voy a. 不想 = no me apetece; 不要 = ¡no!",
+    "reviewed": false
+  },
+  {
+    "id": "zh-contrast-zai",
+    "type": "contrast",
+    "title": "在: verbo «estar», preposición «en» y «estar haciendo»",
+    "level": 1,
+    "tags": ["contrastes", "lugar", "u07"],
+    "grammarIds": ["zai", "word-order"],
+    "fields": {
+      "a": "在 (verbo: estar en)",
+      "b": "在 + lugar + verbo (preposición: en)",
+      "rule": "Si 在 es el único verbo, es «estar»; si tras el lugar viene otro verbo, es «en»; si 在 va pegado a un verbo, es «estar haciendo».",
+      "table": {
+        "columns": ["", "在 verbo", "在 preposición", "在 progresivo"],
+        "rows": [
+          ["Estructura", "S + 在 + lugar", "S + 在 + lugar + V + O", "S + 在 + V + O (+ 呢)"],
+          ["Significa", "estar en (un sitio)", "hacer algo EN un sitio", "estar haciendo algo"],
+          ["Negación", "不在: 我不在家。", "不在 + lugar + V: 我不在家吃饭。", "没在 / 没 + V: 我没在看电视。"],
+          ["Pregunta", "你在哪儿？", "你在哪儿吃饭？", "你在做什么？"],
+          ["Ejemplo", "我在家。", "我在家吃饭。", "我在吃饭。"]
+        ]
+      },
+      "ok": [
+        { "zh": "老师在学校。", "py": "Lǎoshī zài xuéxiào.", "es": "El profesor está en la escuela." },
+        { "zh": "我在图书馆看书。", "py": "Wǒ zài túshūguǎn kàn shū.", "es": "Leo en la biblioteca." },
+        { "zh": "他在睡觉呢。", "py": "Tā zài shuìjiào ne.", "es": "Está durmiendo." },
+        { "zh": "你在哪儿工作？", "py": "Nǐ zài nǎr gōngzuò?", "es": "¿Dónde trabajas?" },
+        { "zh": "我现在不在北京。", "py": "Wǒ xiànzài bú zài Běijīng.", "es": "Ahora no estoy en Pekín." }
+      ],
+      "bad": [
+        { "wrong": "我吃饭在家。", "right": "我在家吃饭。", "why": "在 + lugar va ANTES del verbo, al revés que en español." },
+        { "wrong": "我是在家。", "right": "我在家。", "why": "在 ya es el verbo «estar»; no se añade 是." },
+        { "wrong": "我在家在吃饭。", "right": "我在家吃饭。", "why": "Un solo 在 basta; el lugar antes del verbo ya indica dónde." },
+        { "wrong": "他在学校在。", "right": "他在学校。", "why": "在 va delante del lugar, no detrás." }
+      ],
+      "minitest": [
+        { "zh": "我在家。→ 在 = ＿", "answer": "estar", "options": ["estar", "en", "estar haciendo"], "es": "Estoy en casa." },
+        { "zh": "我在家看书。→ 在 = ＿", "answer": "en", "options": ["estar", "en", "estar haciendo"], "es": "Leo en casa." },
+        { "zh": "他在看书呢。→ 在 = ＿", "answer": "estar haciendo", "options": ["estar", "en", "estar haciendo"], "es": "Está leyendo." },
+        { "zh": "你在哪儿？→ 在 = ＿", "answer": "estar", "options": ["estar", "en", "estar haciendo"], "es": "¿Dónde estás?" },
+        { "zh": "你在哪儿学习？→ 在 = ＿", "answer": "en", "options": ["estar", "en", "estar haciendo"], "es": "¿Dónde estudias?" },
+        { "zh": "妈妈在做饭。→ 在 = ＿", "answer": "estar haciendo", "options": ["estar", "en", "estar haciendo"], "es": "Mamá está cocinando." }
+      ]
+    },
+    "markdown": "## Cómo lo recuerdo\n\nMira **qué viene después de 在**:\n\n| Después de 在 viene… | 在 es… | Ejemplo |\n|---|---|---|\n| un lugar y se acaba la frase | el verbo «estar» | 我在学校。 |\n| un lugar y luego otro verbo | la preposición «en» | 我在学校学习。 |\n| directamente un verbo | «estar + gerundio» | 我在学习。 |\n\n> 💡 **Truco**: en español «estudio en la escuela» pone el lugar al final. En chino el lugar va **antes del verbo**: 我在学校学习. Primero dónde, luego qué.\n\n> ⚠️ **Ojo**: 在 + lugar nunca va después del objeto: ✗我学习中文在学校.\n\n> ❌ **Error típico**: añadir 是 por imitar «estoy»: ✗我是在家. 在 ya es «estar».\n\n> 👩‍🏫 **Lo dijo el profe**: el progresivo se puede reforzar con 正在 o con 呢 al final: 我正在吃饭呢. Y su negación lleva 没: 我没在吃饭.\n\n```xb-example\n{\"zh\":\"雨果在交通大学学习，现在他在上课。\",\"py\":\"Yǔguǒ zài Jiāotōng Dàxué xuéxí, xiànzài tā zài shàngkè.\",\"es\":\"Hugo estudia en la Universidad Jiaotong; ahora está en clase.\",\"note\":\"Primer 在 = en (lugar + verbo); segundo 在 = estar haciendo.\"}\n```\n\n```xb-exercise\n{\"kind\":\"choice\",\"data\":{\"prompt\":\"«Como en casa.» ¿Cuál es correcta?\",\"options\":\"我吃饭在家。 · 我在家吃饭。 · 我是在家吃饭。\",\"answer\":\"1\",\"explain\":\"在 + lugar antes del verbo, sin 是.\"}}\n```\n\n```xb-exercise\n{\"kind\":\"choice\",\"data\":{\"prompt\":\"¿Qué significa 他在打电话?\",\"options\":\"Él está en el teléfono (lugar). · Él está llamando por teléfono. · Él es un teléfono.\",\"answer\":\"1\",\"explain\":\"在 + verbo = estar haciendo.\"}}\n```",
+    "cues": [
+      { "id": "c1", "q": "¿Dónde va 在 + lugar respecto al verbo?", "a": "Antes del verbo: 我在家吃饭 (nunca 我吃饭在家)." },
+      { "id": "c2", "q": "¿Qué significa 我在吃饭?", "a": "«Estoy comiendo»: 在 + verbo = progresivo." },
+      { "id": "c3", "q": "¿Se dice 我是在家?", "a": "No: 在 ya es «estar». 我在家." },
+      { "id": "c4", "q": "¿Cómo niego «no estoy en casa» y «no estoy comiendo»?", "a": "我不在家 / 我没在吃饭." },
+      { "id": "c5", "q": "¿Cómo pregunto «¿dónde trabajas?»?", "a": "你在哪儿工作？ (在 + 哪儿 + verbo)." }
+    ],
+    "summary": "在 + lugar (sin más verbo) = estar; 在 + lugar + verbo = en; 在 + verbo = estar haciendo. El lugar siempre antes del verbo.",
+    "reviewed": false
+  },
+  {
+    "id": "zh-contrast-you-zai-shi",
+    "type": "contrast",
+    "title": "有 vs 在 vs 是: «hay», «está en» y «es» (existencia y lugar)",
+    "level": 1,
+    "tags": ["contrastes", "lugar", "existencia", "u07"],
+    "grammarIds": ["you", "zai", "shi"],
+    "fields": {
+      "a": "有",
+      "b": "在",
+      "rule": "Lugar + 有 + cosa = «hay»; cosa + 在 + lugar = «está en»; lugar + 是 + cosa = «lo que hay ahí es…».",
+      "table": {
+        "columns": ["", "有", "在", "是"],
+        "rows": [
+          ["Orden", "LUGAR + 有 + cosa (nueva)", "COSA (conocida) + 在 + lugar", "LUGAR + 是 + cosa (identifica)"],
+          ["Español", "hay", "está en", "es / lo que hay es"],
+          ["La cosa es…", "indefinida: 一个人, 很多书", "definida: 我的书, 老师, 洗手间", "lo que ocupa ese sitio"],
+          ["Negación", "没有", "不在", "不是"],
+          ["Ejemplo", "学校里有很多学生。", "学生在学校里。", "学校前面是商店。"]
+        ]
+      },
+      "ok": [
+        { "zh": "我家有三口人。", "py": "Wǒ jiā yǒu sān kǒu rén.", "es": "En mi familia somos tres (hay tres personas)." },
+        { "zh": "我的手机在桌子上。", "py": "Wǒ de shǒujī zài zhuōzi shang.", "es": "Mi móvil está en la mesa." },
+        { "zh": "这儿有没有医院？", "py": "Zhèr yǒu méiyǒu yīyuàn?", "es": "¿Hay hospital por aquí?" },
+        { "zh": "李老师不在教室。", "py": "Lǐ lǎoshī bú zài jiàoshì.", "es": "La profesora Li no está en el aula." },
+        { "zh": "我家后面是学校。", "py": "Wǒ jiā hòumiàn shì xuéxiào.", "es": "Detrás de mi casa está la escuela (lo que hay es la escuela)." }
+      ],
+      "bad": [
+        { "wrong": "这儿是一个商店。（hay una tienda）", "right": "这儿有一个商店。", "why": "«Hay» algo indefinido = 有. 是 identificaría el lugar entero." },
+        { "wrong": "有我的书在桌子上。", "right": "我的书在桌子上。", "why": "La cosa conocida (我的书) va de sujeto, con 在." },
+        { "wrong": "桌子上在一本书。", "right": "桌子上有一本书。", "why": "Lugar + 有 + cosa indefinida: hay un libro." },
+        { "wrong": "我的妈妈有家。（está en casa）", "right": "我的妈妈在家。", "why": "«Estar en» es 在; 有 sería «tener casa»." }
+      ],
+      "minitest": [
+        { "zh": "我家＿四口人。", "answer": "有", "options": ["有", "在", "是"], "es": "En mi familia somos cuatro." },
+        { "zh": "你的书＿哪儿？", "answer": "在", "options": ["有", "在", "是"], "es": "¿Dónde está tu libro?" },
+        { "zh": "学校里＿一个图书馆。", "answer": "有", "options": ["有", "在", "是"], "es": "En la escuela hay una biblioteca." },
+        { "zh": "李老师＿家吗？", "answer": "在", "options": ["有", "在", "是"], "es": "¿Está en casa la profesora Li?" },
+        { "zh": "我的狗＿椅子下面。", "answer": "在", "options": ["有", "在", "是"], "es": "Mi perro está debajo de la silla." },
+        { "zh": "医院旁边＿一个商店。", "answer": "有", "options": ["有", "在", "是"], "es": "Al lado del hospital hay una tienda." }
+      ]
+    },
+    "markdown": "## Cómo lo recuerdo\n\nFíjate en **qué va primero**:\n\n| Empieza por… | Verbo | Ejemplo | Español |\n|---|---|---|---|\n| el lugar | 有 | 桌子上有一本书。 | En la mesa hay un libro. |\n| la cosa (conocida) | 在 | 书在桌子上。 | El libro está en la mesa. |\n| el lugar, y la cosa lo identifica | 是 | 桌子上是我的书。 | Lo de la mesa es mi libro. |\n\nEn español también: «hay UN libro» (indefinido) pero «EL libro está» (definido). El chino no tiene artículos, así que el orden hace ese trabajo.\n\n> 💡 **Truco**: si en español empiezas con «hay», empieza en chino por el lugar y usa 有. Si empiezas con «el/mi …», usa 在.\n\n> ⚠️ **Ojo**: con 在 el lugar suele llevar 上 / 里 / 下面 / 旁边 detrás del nombre: 桌子上, 房间里, 椅子下面. Una mesa sola no es un lugar; «encima de la mesa» sí.\n\n> ❌ **Error típico**: 这儿是 Wi-Fi ✗. «¿Hay wifi?» = 这儿有 Wi-Fi 吗？\n\n```xb-example\n{\"zh\":\"我们学校里有一个很大的图书馆，图书馆在教室后面。\",\"py\":\"Wǒmen xuéxiào li yǒu yí ge hěn dà de túshūguǎn, túshūguǎn zài jiàoshì hòumiàn.\",\"es\":\"En nuestra escuela hay una biblioteca muy grande; la biblioteca está detrás de las aulas.\",\"note\":\"Primero 有 (presenta la biblioteca); luego 在 (ya es conocida).\"}\n```\n\n```xb-exercise\n{\"kind\":\"choice\",\"data\":{\"prompt\":\"«¿Dónde está el baño?»\",\"options\":\"洗手间有哪儿？ · 洗手间在哪儿？ · 哪儿有洗手间？\",\"answer\":\"1\",\"explain\":\"Cosa conocida + 在 + lugar. (哪儿有洗手间 también existe, pero significa «¿dónde hay un baño?»)\"}}\n```\n\n```xb-exercise\n{\"kind\":\"choice\",\"data\":{\"prompt\":\"«Aquí hay muchos chinos.»\",\"options\":\"这儿在很多中国人。 · 这儿是很多中国人。 · 这儿有很多中国人。\",\"answer\":\"2\",\"explain\":\"Lugar + 有 + cosa indefinida = hay.\"}}\n```",
+    "cues": [
+      { "id": "c1", "q": "«Hay un libro en la mesa»: ¿orden y verbo?", "a": "桌子上有一本书: lugar + 有 + cosa." },
+      { "id": "c2", "q": "«Mi libro está en la mesa»: ¿orden y verbo?", "a": "我的书在桌子上: cosa + 在 + lugar." },
+      { "id": "c3", "q": "¿Cuándo uso 是 para un lugar?", "a": "Cuando identifico lo que ocupa el sitio: 学校前面是商店." },
+      { "id": "c4", "q": "¿Cómo niego 有 y 在?", "a": "没有 / 不在." },
+      { "id": "c5", "q": "¿Qué le falta a 书在桌子?", "a": "La parte del lugar: 桌子上 (encima de la mesa)." }
+    ],
+    "summary": "Lugar + 有 + cosa = hay (indefinido); cosa + 在 + lugar = está en (definido); lugar + 是 + cosa = identifica lo que hay.",
+    "reviewed": false
+  },
+  {
+    "id": "zh-contrast-ji-duoshao",
+    "type": "contrast",
+    "title": "几 vs 多少: dos «cuántos»",
+    "level": 1,
+    "tags": ["contrastes", "números", "preguntas", "u02"],
+    "grammarIds": ["question-words", "numbers", "price-age"],
+    "fields": {
+      "a": "几",
+      "b": "多少",
+      "rule": "几 para cantidades pequeñas (menos de 10) y siempre con clasificador; 多少 para cualquier cantidad y puede ir sin clasificador.",
+      "table": {
+        "columns": ["", "几", "多少"],
+        "rows": [
+          ["Cantidad esperada", "pequeña (1–9)", "cualquiera, también grande"],
+          ["Clasificador", "obligatorio: 几个, 几口, 几本", "opcional: 多少（个）人, 多少钱"],
+          ["Preguntas fijas", "几点, 几岁 (niños), 几号, 几月, 星期几", "多少钱, 多大 (edad), 多少人, 号码是多少"],
+          ["Ejemplo", "你家有几口人？", "你们学校有多少学生？"],
+          ["Respuesta", "三口。", "三千个。"]
+        ]
+      },
+      "ok": [
+        { "zh": "现在几点？", "py": "Xiànzài jǐ diǎn?", "es": "¿Qué hora es?" },
+        { "zh": "这个多少钱？", "py": "Zhège duōshao qián?", "es": "¿Cuánto cuesta esto?" },
+        { "zh": "你有几个孩子？", "py": "Nǐ yǒu jǐ ge háizi?", "es": "¿Cuántos hijos tienes?" },
+        { "zh": "你的电话号码是多少？", "py": "Nǐ de diànhuà hàomǎ shì duōshao?", "es": "¿Cuál es tu número de teléfono?" },
+        { "zh": "今天几号？", "py": "Jīntiān jǐ hào?", "es": "¿Qué día es hoy?" }
+      ],
+      "bad": [
+        { "wrong": "这个几钱？", "right": "这个多少钱？", "why": "El precio puede ser cualquier cantidad y 钱 no lleva clasificador: 多少钱." },
+        { "wrong": "你们班有几学生？", "right": "你们班有几个学生？", "why": "几 exige clasificador: 几个." },
+        { "wrong": "你几岁？（a un adulto）", "right": "你多大？", "why": "几岁 se pregunta a niños; a adultos, 多大." },
+        { "wrong": "上海有几人？", "right": "上海有多少人？", "why": "Cantidad grande → 多少." }
+      ],
+      "minitest": [
+        { "zh": "你有＿个弟弟？", "answer": "几", "es": "¿Cuántos hermanos pequeños tienes?" },
+        { "zh": "这本书＿钱？", "answer": "多少", "es": "¿Cuánto cuesta este libro?" },
+        { "zh": "今天星期＿？", "answer": "几", "es": "¿Qué día de la semana es hoy?" },
+        { "zh": "你的手机号码是＿？", "answer": "多少", "es": "¿Cuál es tu número de móvil?" },
+        { "zh": "中国有＿人？", "answer": "多少", "es": "¿Cuántos habitantes tiene China?" },
+        { "zh": "现在＿点？", "answer": "几", "es": "¿Qué hora es?" }
+      ]
+    },
+    "markdown": "## Cómo lo recuerdo\n\n几 es **pequeño y pegajoso**: espera un número de una cifra y necesita un clasificador pegado (几个, 几口, 几点). 多少 es **grande y libre**: vale para cualquier cantidad y puede ir solo (多少钱, 多少人).\n\n> 🧠 **Mnemotecnia**: 几 se parece a 九 (nueve): con 几 esperas de 1 a 9.\n\n> ⚠️ **Ojo**: la respuesta ocupa el hueco de la pregunta: 你家有几口人？→ 我家有四口人。 (cambias 几 por el número y dejas todo lo demás igual).\n\n> 👩‍🏫 **Lo dijo el profe**: hay preguntas hechas que no se cambian: 几点 (hora), 几号 (día), 几月 (mes), 星期几 (día de la semana) siempre con 几; 多少钱 (precio) y 号码是多少 (número) siempre con 多少.\n\n```xb-example\n{\"zh\":\"你们班有多少学生？——二十个。你有几个中国朋友？——两个。\",\"py\":\"Nǐmen bān yǒu duōshao xuésheng? —Èrshí ge. Nǐ yǒu jǐ ge Zhōngguó péngyou? —Liǎng ge.\",\"es\":\"¿Cuántos alumnos hay en vuestra clase? —Veinte. ¿Cuántos amigos chinos tienes? —Dos.\",\"note\":\"多少 para la clase (muchos); 几个 para los amigos (pocos).\"}\n```\n\n```xb-exercise\n{\"kind\":\"choice\",\"data\":{\"prompt\":\"«¿Cuántos años tiene tu hijo?» (es pequeño)\",\"options\":\"你儿子几岁？ · 你儿子多少岁？\",\"answer\":\"0\",\"explain\":\"Niños: 几岁. (多少岁 se entiende, pero es menos natural.)\"}}\n```\n\n```xb-exercise\n{\"kind\":\"choice\",\"data\":{\"prompt\":\"«¿Cuánto cuesta?»\",\"options\":\"几钱？ · 多少钱？ · 几个钱？\",\"answer\":\"1\",\"explain\":\"Precio = 多少钱, fijo.\"}}\n```",
+    "cues": [
+      { "id": "c1", "q": "¿Qué cantidad espera 几?", "a": "Pequeña, de 1 a 9, y con clasificador: 几个." },
+      { "id": "c2", "q": "¿Cómo pregunto el precio?", "a": "多少钱？ (nunca 几钱)." },
+      { "id": "c3", "q": "¿Cómo pregunto la hora y el día?", "a": "几点？ / 今天几号？ / 星期几？" },
+      { "id": "c4", "q": "¿Cómo pregunto la edad a un adulto y a un niño?", "a": "Adulto: 你多大？; niño: 你几岁？" },
+      { "id": "c5", "q": "¿Cómo pido un número de teléfono?", "a": "你的电话号码是多少？" }
+    ],
+    "summary": "几 = pocos (1–9) y con clasificador (几个, 几点, 几号, 星期几); 多少 = cualquier cantidad, sin clasificador (多少钱, 多少人).",
+    "reviewed": false
+  },
+  {
+    "id": "zh-contrast-zhe-na-na",
+    "type": "contrast",
+    "title": "这 / 那 / 哪 y 这儿 / 这里: esto, eso, ¿cuál?, aquí",
+    "level": 1,
+    "tags": ["contrastes", "demostrativos", "lugar", "u07"],
+    "grammarIds": ["demonstratives", "question-words"],
+    "fields": {
+      "a": "这",
+      "b": "那",
+      "rule": "这 = cerca de mí, 那 = lejos, 哪 = ¿cuál? (siempre pregunta); con 儿 o 里 pasan a lugares: aquí / allí / ¿dónde?",
+      "table": {
+        "columns": ["", "这", "那", "哪"],
+        "rows": [
+          ["Significa", "este, esto", "ese, aquel, eso", "¿cuál?"],
+          ["Lugar", "这儿 / 这里 = aquí", "那儿 / 那里 = allí", "哪儿 / 哪里 = ¿dónde?"],
+          ["Con clasificador", "这个, 这本, 这三个", "那个, 那本, 那两个", "哪个, 哪本"],
+          ["Lectura", "zhè (这个 zhège, coloquial zhèige)", "nà (那个 nàge, coloquial nèige)", "nǎ (哪个 nǎge, coloquial něige)"],
+          ["Ejemplo", "这是我的书。", "那是你的老师吗？", "哪个是你的？"]
+        ]
+      },
+      "ok": [
+        { "zh": "这是我的朋友安娜。", "py": "Zhè shì wǒ de péngyou Ānnà.", "es": "Esta es mi amiga Ana." },
+        { "zh": "那个人是我们的老师。", "py": "Nàge rén shì wǒmen de lǎoshī.", "es": "Aquella persona es nuestro profesor." },
+        { "zh": "你是哪国人？", "py": "Nǐ shì nǎ guó rén?", "es": "¿De qué país eres?" },
+        { "zh": "洗手间在哪儿？", "py": "Xǐshǒujiān zài nǎr?", "es": "¿Dónde está el baño?" },
+        { "zh": "我住在这里。", "py": "Wǒ zhù zài zhèli.", "es": "Vivo aquí." }
+      ],
+      "bad": [
+        { "wrong": "这儿是我的书。（esto es mi libro）", "right": "这是我的书。", "why": "这儿 es «aquí» (lugar); «esto» es 这." },
+        { "wrong": "那儿人是谁？", "right": "那个人是谁？", "why": "Para señalar una cosa o persona: 那 + clasificador." },
+        { "wrong": "你在那？（¿dónde estás?）", "right": "你在哪儿？", "why": "那 (nà) = allí; 哪 (nǎ) = ¿dónde?/¿cuál? Se parecen, pero 哪 lleva 口." },
+        { "wrong": "我喜欢这。", "right": "我喜欢这个。", "why": "Como objeto, 这/那 necesitan clasificador: 这个, 那个." }
+      ],
+      "minitest": [
+        { "zh": "＿是我的手机。（cerca）", "answer": "这", "options": ["这", "那", "哪"], "es": "Este es mi móvil." },
+        { "zh": "＿是他的车。（lejos）", "answer": "那", "options": ["这", "那", "哪"], "es": "Aquel es su coche." },
+        { "zh": "你的家在＿儿？", "answer": "哪", "options": ["这", "那", "哪"], "es": "¿Dónde está tu casa?" },
+        { "zh": "＿个是你的？", "answer": "哪", "options": ["这", "那", "哪"], "es": "¿Cuál es el tuyo?" },
+        { "zh": "我在＿里工作。（aquí）", "answer": "这", "options": ["这", "那", "哪"], "es": "Trabajo aquí." },
+        { "zh": "老师在＿儿。（allí）", "answer": "那", "options": ["这", "那", "哪"], "es": "El profesor está allí." }
+      ]
+    },
+    "markdown": "## Cómo lo recuerdo\n\n- 这 **zhè** → **este** (cerca). 那 **nà** → ese / aquel (lejos). El chino solo tiene dos distancias, no tres como el español.\n- 哪 **nǎ** → **¿cuál?** Es 那 con una boca (口) que pregunta. Siempre lleva tono 3 y siempre es pregunta.\n- Añade 儿 (norte) o 里 (sur, también Shanghái) y tienes el **lugar**: 这儿/这里 aquí, 那儿/那里 allí, 哪儿/哪里 dónde.\n\n> 💡 **Truco**: 这 sin clasificador solo sirve de sujeto con 是 (这是……). Para todo lo demás, 这个 / 那个.\n\n> ⚠️ **Ojo**: 那 (nà, 4.º tono) y 哪 (nǎ, 3.er tono) se confunden al oído y al escribir. Si preguntas, es 哪.\n\n> 🏮 **¿Sabías que…?**: en Pekín dicen 这儿 (zhèr) y en Shanghái 这里 (zhèli). Significan lo mismo; en el HSK aparecen las dos.\n\n```xb-example\n{\"zh\":\"这是我的书，那是你的。你的手机在哪儿？\",\"py\":\"Zhè shì wǒ de shū, nà shì nǐ de. Nǐ de shǒujī zài nǎr?\",\"es\":\"Este es mi libro; aquel es el tuyo. ¿Dónde está tu móvil?\",\"note\":\"这 / 那 señalan; 哪儿 pregunta por el lugar.\"}\n```\n\n```xb-exercise\n{\"kind\":\"choice\",\"data\":{\"prompt\":\"«¿Cuál es tu profesor?»\",\"options\":\"那个是你的老师？ · 哪个是你的老师？ · 哪儿是你的老师？\",\"answer\":\"1\",\"explain\":\"哪 + clasificador = ¿cuál?\"}}\n```\n\n```xb-exercise\n{\"kind\":\"choice\",\"data\":{\"prompt\":\"«Me gusta este.»\",\"options\":\"我喜欢这。 · 我喜欢这个。\",\"answer\":\"1\",\"explain\":\"Como objeto necesita clasificador: 这个.\"}}\n```",
+    "cues": [
+      { "id": "c1", "q": "¿Cuántas distancias tienen los demostrativos chinos?", "a": "Dos: 这 (cerca) y 那 (lejos). «Ese» y «aquel» son los dos 那." },
+      { "id": "c2", "q": "¿Qué diferencia hay entre 那 y 哪?", "a": "那 nà = eso/allí; 哪 nǎ = ¿cuál?/¿dónde? (lleva 口 y pregunta)." },
+      { "id": "c3", "q": "¿Cómo digo «aquí» y «dónde»?", "a": "这儿 / 这里 y 哪儿 / 哪里." },
+      { "id": "c4", "q": "¿Puedo decir 我喜欢这?", "a": "No: como objeto necesita clasificador, 我喜欢这个." },
+      { "id": "c5", "q": "¿这儿 o 这里 en Shanghái?", "a": "Las dos valen; en el sur es más común 这里." }
+    ],
+    "summary": "这 = este (cerca), 那 = ese/aquel (lejos), 哪 = ¿cuál? (pregunta); + 儿/里 → aquí / allí / dónde. Como objeto, con clasificador (这个).",
+    "reviewed": false
+  },
+  {
+    "id": "zh-contrast-he-ye-dou",
+    "type": "contrast",
+    "title": "和 vs 也 vs 都: «y», «también», «todos»",
+    "level": 1,
+    "tags": ["contrastes", "adverbios", "u03"],
+    "grammarIds": ["he", "ye-dou"],
+    "fields": {
+      "a": "和",
+      "b": "也",
+      "rule": "和 une dos nombres (nunca dos frases); 也 y 都 son adverbios y van siempre después del sujeto y antes del verbo: 也 = también, 都 = todos / ambos.",
+      "table": {
+        "columns": ["", "和", "也", "都"],
+        "rows": [
+          ["Clase", "conjunción: nombre 和 nombre", "adverbio", "adverbio"],
+          ["Une", "cosas o personas: 我和你, 茶和咖啡", "frases con otra anterior: 他去，我也去。", "resume un sujeto plural: 我们都去。"],
+          ["Posición", "entre los dos nombres", "sujeto + 也 + verbo", "sujeto plural + 都 + verbo"],
+          ["Negación", "—", "也不 / 也没 (tampoco)", "都不 (ninguno) / 不都 (no todos)"],
+          ["Juntos", "我和他都是学生。", "也 va antes de 都: 我们也都去。", "nunca al final: ✗我们去都"]
+        ]
+      },
+      "ok": [
+        { "zh": "我和安娜是朋友。", "py": "Wǒ hé Ānnà shì péngyou.", "es": "Ana y yo somos amigos." },
+        { "zh": "我也是西班牙人。", "py": "Wǒ yě shì Xībānyá rén.", "es": "Yo también soy español." },
+        { "zh": "我们都喜欢中国菜。", "py": "Wǒmen dōu xǐhuan Zhōngguó cài.", "es": "A todos nos gusta la comida china." },
+        { "zh": "他和我都不喝咖啡。", "py": "Tā hé wǒ dōu bù hē kāfēi.", "es": "Ni él ni yo bebemos café." },
+        { "zh": "雨果也会说英语。", "py": "Yǔguǒ yě huì shuō Yīngyǔ.", "es": "Hugo también sabe hablar inglés." }
+      ],
+      "bad": [
+        { "wrong": "我去北京和我去上海。", "right": "我去北京，也去上海。", "why": "和 no une frases ni verbos; para «y también» entre acciones usa 也." },
+        { "wrong": "也我是学生。", "right": "我也是学生。", "why": "也 va después del sujeto, nunca al principio como «también» en español." },
+        { "wrong": "都我们是学生。", "right": "我们都是学生。", "why": "都 va después del sujeto y antes del verbo." },
+        { "wrong": "我是也学生。", "right": "我也是学生。", "why": "El adverbio va antes del verbo, no detrás." }
+      ],
+      "minitest": [
+        { "zh": "我＿你都是学生。", "answer": "和", "options": ["和", "也", "都"], "es": "Tú y yo somos estudiantes." },
+        { "zh": "他是老师，我＿是老师。", "answer": "也", "options": ["和", "也", "都"], "es": "Él es profesor; yo también soy profesor." },
+        { "zh": "我们＿喜欢喝茶。", "answer": "都", "options": ["和", "也", "都"], "es": "A todos nos gusta el té." },
+        { "zh": "爸爸＿妈妈在家。", "answer": "和", "options": ["和", "也", "都"], "es": "Papá y mamá están en casa." },
+        { "zh": "安娜不去，我＿不去。", "answer": "也", "options": ["和", "也", "都"], "es": "Ana no va; yo tampoco voy." },
+        { "zh": "他们＿是中国人吗？", "answer": "都", "options": ["和", "也", "都"], "es": "¿Son todos chinos?" }
+      ]
+    },
+    "markdown": "## Cómo lo recuerdo\n\n- 和 es una **«y» de cosas**: 爸爸和妈妈, 茶和咖啡. En cuanto hay dos verbos, 和 desaparece: «como y bebo» se dice 我吃饭，也喝茶 o simplemente 我吃饭喝茶.\n- 也 y 都 son **adverbios**, y los adverbios chinos viven en un sitio fijo: **entre el sujeto y el verbo**. «También yo» no existe: siempre 我也.\n- 都 mira **hacia atrás**: resume todo lo que va delante de él (我们都, 他和我都, 这些都).\n\n> 🧠 **Mnemotecnia**: 也 y 都 son «pegatinas del verbo»: se pegan justo delante de él y no se mueven.\n\n> ⚠️ **Ojo**: 都 no es «todos» como sujeto. «Todos van» no es ✗都去, sino 他们都去 / 大家都去.\n\n> ❌ **Error típico**: el «tampoco» español se construye con 也 + negación: 我也不喜欢 (a mí tampoco me gusta), 我也没去 (yo tampoco fui).\n\n> 👩‍🏫 **Lo dijo el profe**: 都不 y 不都 no significan lo mismo: 我们都不是学生 (ninguno es estudiante) / 我们不都是学生 (no todos somos estudiantes).\n\n```xb-example\n{\"zh\":\"我和安娜都是学生，我们也都学习中文。\",\"py\":\"Wǒ hé Ānnà dōu shì xuésheng, wǒmen yě dōu xuéxí Zhōngwén.\",\"es\":\"Ana y yo somos los dos estudiantes, y además los dos estudiamos chino.\",\"note\":\"和 une nombres; 也 antes de 都; los dos antes del verbo.\"}\n```\n\n```xb-exercise\n{\"kind\":\"choice\",\"data\":{\"prompt\":\"«A mí tampoco me gusta el café.»\",\"options\":\"我也不喜欢咖啡。 · 也我不喜欢咖啡。 · 我不也喜欢咖啡。\",\"answer\":\"0\",\"explain\":\"Sujeto + 也 + 不 + verbo.\"}}\n```\n\n```xb-exercise\n{\"kind\":\"choice\",\"data\":{\"prompt\":\"«Estudio chino y trabajo.»\",\"options\":\"我学习中文和工作。 · 我学习中文，也工作。\",\"answer\":\"1\",\"explain\":\"和 no une verbos; 也 enlaza la segunda acción.\"}}\n```",
+    "cues": [
+      { "id": "c1", "q": "¿Puede 和 unir dos frases?", "a": "No: solo nombres. Entre acciones se usa 也 o se ponen seguidas." },
+      { "id": "c2", "q": "¿Dónde van 也 y 都?", "a": "Después del sujeto y antes del verbo: 我也是, 我们都是." },
+      { "id": "c3", "q": "¿Cómo se dice «tampoco»?", "a": "也 + negación: 我也不 / 我也没." },
+      { "id": "c4", "q": "¿Qué orden llevan 也 y 都 juntos?", "a": "也 antes de 都: 我们也都去." },
+      { "id": "c5", "q": "¿Diferencia entre 都不 y 不都?", "a": "都不 = ninguno; 不都 = no todos." }
+    ],
+    "summary": "和 une nombres (no frases); 也 (también) y 都 (todos) son adverbios entre el sujeto y el verbo; «tampoco» = 也不 / 也没.",
+    "reviewed": false
+  },
+  {
+    "id": "zh-contrast-de-de-de",
+    "type": "contrast",
+    "title": "的 / 地 / 得: las tres «de» (adelanto HSK 2)",
+    "level": 2,
+    "tags": ["contrastes", "partículas", "adelanto"],
+    "grammarIds": ["de", "complements"],
+    "fields": {
+      "a": "的",
+      "b": "得",
+      "rule": "的 va delante de un nombre, 地 delante de un verbo, 得 detrás de un verbo; las tres se leen «de» sin tono.",
+      "table": {
+        "columns": ["", "的", "地", "得"],
+        "rows": [
+          ["Posición", "X + 的 + NOMBRE", "ADJETIVO + 地 + VERBO", "VERBO + 得 + ADJETIVO"],
+          ["Función", "posesión o descripción del nombre", "cómo se hace la acción (español: -mente)", "cómo sale la acción (resultado, grado)"],
+          ["Español", "de, mi, tu, «que…»", "«-mente», «con…»", "«lo hace bien / mal / rápido»"],
+          ["Ejemplo", "我的书 / 红色的车", "他高兴地说。", "他说得很好。"],
+          ["Nivel HSK", "1", "2–3", "2"]
+        ]
+      },
+      "ok": [
+        { "zh": "这是我的老师。", "py": "Zhè shì wǒ de lǎoshī.", "es": "Este es mi profesor." },
+        { "zh": "她中文说得很好。", "py": "Tā Zhōngwén shuō de hěn hǎo.", "es": "Habla chino muy bien." },
+        { "zh": "他慢慢地走。", "py": "Tā mànmàn de zǒu.", "es": "Camina despacio (lentamente)." },
+        { "zh": "我妈妈做的菜很好吃。", "py": "Wǒ māma zuò de cài hěn hǎochī.", "es": "La comida que hace mi madre está muy buena." },
+        { "zh": "你写得很快。", "py": "Nǐ xiě de hěn kuài.", "es": "Escribes muy rápido." }
+      ],
+      "bad": [
+        { "wrong": "他说中文很好得。", "right": "他中文说得很好。 / 他说中文说得很好。", "why": "得 va pegado detrás del verbo, y si hay objeto se repite el verbo o se adelanta el objeto." },
+        { "wrong": "我得书。", "right": "我的书。", "why": "Delante de un nombre, la «de» es 的." },
+        { "wrong": "他很高兴的说。", "right": "他很高兴地说。", "why": "Delante de un verbo, para decir cómo se hace, es 地." },
+        { "wrong": "你说的很好。", "right": "你说得很好。", "why": "Detrás del verbo y antes de «qué tal» salió: 得." }
+      ],
+      "minitest": [
+        { "zh": "这是我＿手机。", "answer": "的", "options": ["的", "地", "得"], "es": "Este es mi móvil." },
+        { "zh": "你写＿很好。", "answer": "得", "options": ["的", "地", "得"], "es": "Escribes muy bien." },
+        { "zh": "他慢慢＿说。", "answer": "地", "options": ["的", "地", "得"], "es": "Habla despacio." },
+        { "zh": "老师＿车是红色的。", "answer": "的", "options": ["的", "地", "得"], "es": "El coche del profesor es rojo." },
+        { "zh": "雨果说＿不太好。", "answer": "得", "options": ["的", "地", "得"], "es": "Hugo (lo) dice no muy bien." },
+        { "zh": "这是她做＿菜。", "answer": "的", "options": ["的", "地", "得"], "es": "Esta es la comida que ha hecho ella." }
+      ]
+    },
+    "markdown": "## Cómo lo recuerdo\n\n**Adelanto HSK 2**: en HSK 1 solo necesitas 的. Pero como las tres suenan igual, conviene verlas juntas desde el principio.\n\n| Si lo que sigue es… | la «de» es… | piensa en… |\n|---|---|---|\n| un **nombre** (书, 车, 菜) | 的 | «de» / «mi» / «que…» |\n| un **verbo** (说, 走) | 地 | «-mente» |\n| nada, porque la «de» va **detrás del verbo** y luego un adjetivo | 得 | «lo hace + bien/mal» |\n\n> 🧠 **Mnemotecnia**: 的 tiene 白 (blanco): describe cosas. 地 tiene 土 (tierra): es el terreno sobre el que se hace la acción (va antes). 得 tiene 彳 (paso): va «un paso» detrás del verbo.\n\n> ⚠️ **Ojo**: con objeto, el 得 no cabe detrás del objeto. Dos salidas: repetir el verbo (他说中文说得很好) o adelantar el objeto (他中文说得很好).\n\n> 👩‍🏫 **Lo dijo el profe**: en mensajes informales muchos chinos escriben 的 por las tres; en el examen, no.\n\n```xb-example\n{\"zh\":\"我的老师汉字写得很好看。\",\"py\":\"Wǒ de lǎoshī Hànzì xiě de hěn hǎokàn.\",\"es\":\"Mi profesor escribe los caracteres muy bonitos.\",\"note\":\"的 + nombre (老师); 写得 + cómo salió.\"}\n```\n\n```xb-exercise\n{\"kind\":\"choice\",\"data\":{\"prompt\":\"«Habla chino muy bien.»\",\"options\":\"他说中文得很好。 · 他中文说得很好。 · 他中文说的很好。\",\"answer\":\"1\",\"explain\":\"得 pegado al verbo; el objeto se adelanta.\"}}\n```\n\n```xb-exercise\n{\"kind\":\"choice\",\"data\":{\"prompt\":\"¿Qué «de» va en 这是我妈妈＿书?\",\"options\":\"的 · 地 · 得\",\"answer\":\"0\",\"explain\":\"Sigue un nombre (书): 的.\"}}\n```",
+    "cues": [
+      { "id": "c1", "q": "¿Qué 的 va delante de un nombre?", "a": "的: 我的书, 红色的车." },
+      { "id": "c2", "q": "¿Qué «de» va detrás de un verbo para decir qué tal salió?", "a": "得: 说得很好." },
+      { "id": "c3", "q": "¿Qué «de» convierte un adjetivo en «-mente»?", "a": "地: 慢慢地走." },
+      { "id": "c4", "q": "«Habla chino muy bien» con objeto: ¿cómo?", "a": "他中文说得很好 o 他说中文说得很好." },
+      { "id": "c5", "q": "¿Cuál necesito en HSK 1?", "a": "Solo 的; 得 y 地 son HSK 2–3." }
+    ],
+    "summary": "的 antes de nombre (posesión/descripción), 地 antes de verbo (-mente), 得 detrás de verbo (qué tal salió). Solo 的 es HSK 1.",
+    "reviewed": false
+  },
+  {
+    "id": "zh-contrast-ser-estar",
+    "type": "contrast",
+    "title": "Ser / estar vs 是 / 在 / 很",
+    "level": 1,
+    "tags": ["contrastes", "errores", "ser-estar", "u01"],
+    "grammarIds": ["shi", "zai", "hen-adj"],
+    "fields": {
+      "a": "是",
+      "b": "在",
+      "rule": "是 une dos nombres (A es B); 在 sitúa (estar en un lugar); con un adjetivo no hay verbo: 很 + adjetivo.",
+      "table": {
+        "columns": ["", "是", "在", "很 + adjetivo"],
+        "rows": [
+          ["Español", "ser (identidad, profesión, nacionalidad)", "estar (en un lugar)", "ser / estar + adjetivo (alto, cansado, caro)"],
+          ["Estructura", "nombre + 是 + nombre", "nombre + 在 + lugar", "nombre + 很 + adjetivo"],
+          ["Ejemplo", "我是学生。", "我在学校。", "我很忙。"],
+          ["Error típico", "✗我是很忙 (是 + adjetivo)", "✗我在忙 (eso es «estoy ocupándome», progresivo)", "✗我忙 (sin 很 suena a comparación: «yo sí, otros no»)"],
+          ["Negación", "不是", "不在", "不 + adjetivo (不忙), sin 很"]
+        ]
+      },
+      "ok": [
+        { "zh": "我是西班牙人。", "py": "Wǒ shì Xībānyá rén.", "es": "Soy español." },
+        { "zh": "我的家在马德里。", "py": "Wǒ de jiā zài Mǎdélǐ.", "es": "Mi casa está en Madrid." },
+        { "zh": "今天很冷。", "py": "Jīntiān hěn lěng.", "es": "Hoy hace frío (hoy está frío)." },
+        { "zh": "他不是老师，他是学生。", "py": "Tā bú shì lǎoshī, tā shì xuésheng.", "es": "No es profesor, es estudiante." },
+        { "zh": "我很累，我不饿。", "py": "Wǒ hěn lèi, wǒ bú è.", "es": "Estoy muy cansado; no tengo hambre." }
+      ],
+      "bad": [
+        { "wrong": "我是很高兴。", "right": "我很高兴。", "why": "Adjetivo: no lleva 是; 很 ocupa el lugar del verbo." },
+        { "wrong": "我是在家。", "right": "我在家。", "why": "«Estar en» es 在, sin 是." },
+        { "wrong": "这个是很贵。", "right": "这个很贵。", "why": "贵 es adjetivo: 很 + adjetivo, sin 是." },
+        { "wrong": "我累。", "right": "我很累。", "why": "Sin 很, el adjetivo suena a contraste («yo estoy cansado, tú no»). En afirmativa, pon 很." }
+      ],
+      "minitest": [
+        { "zh": "我＿雨果。", "answer": "是", "options": ["是", "在", "很"], "es": "Soy Hugo." },
+        { "zh": "我＿上海。", "answer": "在", "options": ["是", "在", "很"], "es": "Estoy en Shanghái." },
+        { "zh": "今天＿热。", "answer": "很", "options": ["是", "在", "很"], "es": "Hoy hace calor." },
+        { "zh": "他＿我的朋友。", "answer": "是", "options": ["是", "在", "很"], "es": "Es mi amigo." },
+        { "zh": "我妈妈＿家。", "answer": "在", "options": ["是", "在", "很"], "es": "Mi madre está en casa." },
+        { "zh": "中国菜＿好吃。", "answer": "很", "options": ["是", "在", "很"], "es": "La comida china está muy buena." }
+      ]
+    },
+    "markdown": "## Cómo lo recuerdo\n\nOlvida «ser» y «estar» y pregúntate **qué viene después**:\n\n| Después del sujeto viene… | Chino | Ejemplo |\n|---|---|---|\n| un nombre (quién o qué es) | 是 | 我是学生。 |\n| un lugar (dónde está) | 在 | 我在学校。 |\n| un adjetivo (cómo es o cómo está) | 很 + adjetivo | 我很忙。 |\n\nEn chino los adjetivos **ya son verbos**: 忙 significa «estar ocupado», no «ocupado». Por eso ✗我是忙 es como decir «yo soy estoy ocupado».\n\n> 💡 **Truco**: 很 en estas frases casi no significa «muy». Es un relleno que pide el adjetivo. Para decir «muy» de verdad, usa 非常 o 太……了.\n\n> ⚠️ **Ojo**: en negativa y en pregunta el 很 se cae: 我不忙 / 你忙吗？ (y no ✗我不很忙 para «no estoy ocupado»).\n\n> ❌ **Error típico**: «estoy bien» → ✗我是好. Correcto: 我很好.\n\n> ❌ **Error típico**: «la comida está buena» → ✗菜是好吃. Correcto: 菜很好吃.\n\n```xb-example\n{\"zh\":\"我是西班牙人，现在在上海，我很高兴。\",\"py\":\"Wǒ shì Xībānyá rén, xiànzài zài Shànghǎi, wǒ hěn gāoxìng.\",\"es\":\"Soy español, ahora estoy en Shanghái y estoy muy contento.\",\"note\":\"是 + nombre, 在 + lugar, 很 + adjetivo: los tres casos en una frase.\"}\n```\n\n```xb-exercise\n{\"kind\":\"choice\",\"data\":{\"prompt\":\"«Estoy muy contento.»\",\"options\":\"我是很高兴。 · 我很高兴。 · 我在很高兴。\",\"answer\":\"1\",\"explain\":\"Adjetivo → 很 + adjetivo, sin 是.\"}}\n```\n\n```xb-exercise\n{\"kind\":\"choice\",\"data\":{\"prompt\":\"«Mi profesor está en la escuela.»\",\"options\":\"我的老师是学校。 · 我的老师在学校。 · 我的老师很学校。\",\"answer\":\"1\",\"explain\":\"Lugar → 在.\"}}\n```",
+    "cues": [
+      { "id": "c1", "q": "¿Qué va delante de un adjetivo en una afirmación?", "a": "很 (y nunca 是): 我很忙." },
+      { "id": "c2", "q": "«Estoy en casa»: ¿是 o 在?", "a": "在: 我在家." },
+      { "id": "c3", "q": "¿Por qué 我忙 suena raro?", "a": "Sin 很 suena a comparación: «yo sí estoy ocupado (otros no)»." },
+      { "id": "c4", "q": "¿Qué pasa con 很 en la negación?", "a": "Se quita: 我不忙." },
+      { "id": "c5", "q": "¿Cómo digo «muy» de verdad?", "a": "非常 + adj o 太 + adj + 了." }
+    ],
+    "summary": "是 + nombre (ser), 在 + lugar (estar en), 很 + adjetivo (ser/estar + adj): los adjetivos chinos no llevan 是.",
+    "reviewed": false
+  },
+  {
+    "id": "zh-contrast-yidianr-youdianr",
+    "type": "contrast",
+    "title": "一点儿 vs 有点儿: dos «un poco»",
+    "level": 1,
+    "tags": ["contrastes", "adverbios", "u06"],
+    "grammarIds": ["yidianr-youdianr", "hen-adj"],
+    "fields": {
+      "a": "一点儿",
+      "b": "有点儿",
+      "rule": "一点儿 va detrás del verbo o del adjetivo («un poco de», «un poco más»); 有点儿 va delante del adjetivo y es una queja («un poco demasiado»).",
+      "table": {
+        "columns": ["", "一点儿", "有点儿"],
+        "rows": [
+          ["Posición", "VERBO + 一点儿 (+ nombre) / ADJETIVO + 一点儿", "有点儿 + ADJETIVO"],
+          ["Matiz", "neutro o positivo: «un poco», «un poco más»", "negativo: algo que no te gusta"],
+          ["Ejemplo", "我会说一点儿中文。/ 请说慢一点儿。", "这个有点儿贵。/ 我有点儿累。"],
+          ["Con nombre", "一点儿水, 一点儿钱", "nunca: ✗有点儿钱"],
+          ["Negación", "—", "no se niega (✗不有点儿); se usa con adjetivos negativos: 有点儿不舒服"]
+        ]
+      },
+      "ok": [
+        { "zh": "我会说一点儿中文。", "py": "Wǒ huì shuō yìdiǎnr Zhōngwén.", "es": "Sé hablar un poco de chino." },
+        { "zh": "请便宜一点儿。", "py": "Qǐng piányi yìdiǎnr.", "es": "Un poco más barato, por favor." },
+        { "zh": "今天有点儿冷。", "py": "Jīntiān yǒudiǎnr lěng.", "es": "Hoy hace un poco de frío (demasiado para mi gusto)." },
+        { "zh": "我有点儿不舒服。", "py": "Wǒ yǒudiǎnr bù shūfu.", "es": "No me encuentro muy bien." },
+        { "zh": "你要一点儿茶吗？", "py": "Nǐ yào yìdiǎnr chá ma?", "es": "¿Quieres un poco de té?" }
+      ],
+      "bad": [
+        { "wrong": "我一点儿累。", "right": "我有点儿累。", "why": "Delante del adjetivo, y es una queja: 有点儿." },
+        { "wrong": "这个有点儿便宜。（como elogio）", "right": "这个很便宜。 / 便宜一点儿。", "why": "有点儿 solo sirve para lo que molesta; «barato» no se queja." },
+        { "wrong": "请说有点儿慢。", "right": "请说慢一点儿。", "why": "«Un poco más + adjetivo» es ADJ + 一点儿." },
+        { "wrong": "我说有点儿中文。", "right": "我说一点儿中文。", "why": "Con un nombre (中文) solo cabe 一点儿." }
+      ],
+      "minitest": [
+        { "zh": "我会写＿汉字。", "answer": "一点儿", "es": "Sé escribir algunos caracteres." },
+        { "zh": "这个菜＿辣。", "answer": "有点儿", "es": "Este plato pica un poco (demasiado)." },
+        { "zh": "请说慢＿。", "answer": "一点儿", "es": "Hable un poco más despacio, por favor." },
+        { "zh": "我今天＿忙。", "answer": "有点儿", "es": "Hoy estoy un poco liado." },
+        { "zh": "我想喝＿水。", "answer": "一点儿", "es": "Quiero beber un poco de agua." },
+        { "zh": "他＿不高兴。", "answer": "有点儿", "es": "Está un poco disgustado." }
+      ]
+    },
+    "markdown": "## Cómo lo recuerdo\n\n- 有点儿 empieza con 有 («tener»): **tengo un poco de… problema**. Va delante del adjetivo y siempre suena a queja: 有点儿贵, 有点儿冷, 有点儿累.\n- 一点儿 empieza con 一 («uno»): **una pizca de algo**. Va detrás: 一点儿水 (un poco de agua), 慢一点儿 (un poco más despacio).\n\n> 💡 **Truco**: si en español dirías «un poco demasiado…», es 有点儿. Si dirías «un poco de…» o «un poco más…», es 一点儿.\n\n> ⚠️ **Ojo**: 一点儿 nunca va delante de un adjetivo en afirmativa: ✗一点儿贵. En negativa sí existe 一点儿也不 (ni un poco): 我一点儿也不累.\n\n> 🏮 **¿Sabías que…?**: el 儿 final es pronunciación del norte; en Shanghái oirás 一点 y 有点 sin 儿. Es lo mismo.\n\n```xb-example\n{\"zh\":\"这个有点儿贵，可以便宜一点儿吗？\",\"py\":\"Zhège yǒudiǎnr guì, kěyǐ piányi yìdiǎnr ma?\",\"es\":\"Esto es un poco caro, ¿puede ser un poco más barato?\",\"note\":\"Queja con 有点儿; petición con ADJ + 一点儿. Frase de oro para regatear.\"}\n```\n\n```xb-exercise\n{\"kind\":\"choice\",\"data\":{\"prompt\":\"«Estoy un poco cansado.»\",\"options\":\"我一点儿累。 · 我有点儿累。 · 我累一点儿。\",\"answer\":\"1\",\"explain\":\"Queja + adjetivo → 有点儿 delante.\"}}\n```\n\n```xb-exercise\n{\"kind\":\"choice\",\"data\":{\"prompt\":\"«Quiero un poco de arroz.»\",\"options\":\"我要有点儿米饭。 · 我要一点儿米饭。\",\"answer\":\"1\",\"explain\":\"Con nombre solo 一点儿.\"}}\n```",
+    "cues": [
+      { "id": "c1", "q": "¿Dónde va 有点儿 y qué matiz tiene?", "a": "Delante del adjetivo, con matiz de queja: 有点儿贵." },
+      { "id": "c2", "q": "¿Cómo digo «un poco más despacio»?", "a": "慢一点儿 (adjetivo + 一点儿)." },
+      { "id": "c3", "q": "¿Cuál va con nombres?", "a": "一点儿: 一点儿水, 一点儿中文." },
+      { "id": "c4", "q": "¿Puedo decir 这个一点儿贵?", "a": "No: delante de adjetivo en afirmativa, 有点儿贵." },
+      { "id": "c5", "q": "¿Qué significa 一点儿也不?", "a": "«Ni un poco»: 我一点儿也不累." }
+    ],
+    "summary": "一点儿 detrás (un poco de / un poco más: 一点儿水, 慢一点儿); 有点儿 delante del adjetivo y en tono de queja (有点儿贵).",
+    "reviewed": false
+  },
+  {
+    "id": "zh-contrast-ma-ne-ba",
+    "type": "contrast",
+    "title": "吗 vs 呢 vs 吧: partículas de final de frase",
+    "level": 1,
+    "tags": ["contrastes", "partículas", "preguntas", "u01"],
+    "grammarIds": ["ma", "ne", "ba"],
+    "fields": {
+      "a": "吗",
+      "b": "呢",
+      "rule": "吗 convierte una frase en pregunta de sí/no; 呢 devuelve la pregunta («¿y tú?») o pregunta dónde está algo; 吧 suaviza: sugerencia («vamos») o suposición («¿verdad?»).",
+      "table": {
+        "columns": ["", "吗", "呢", "吧"],
+        "rows": [
+          ["Función", "pregunta sí/no", "«¿y…?» (pregunta abreviada) / «¿dónde está…?»", "sugerencia (venga, vamos) / suposición (¿no?, ¿verdad?)"],
+          ["Estructura", "frase + 吗？", "nombre o pronombre + 呢？", "frase + 吧。 / 吧？"],
+          ["Nunca con", "palabra interrogativa: ✗你是谁吗？", "una frase completa sin contexto previo", "—"],
+          ["Respuesta", "repite el verbo: 是。/ 不是。", "la frase completa", "好。/ 好吧。/ 对。"],
+          ["Ejemplo", "你是学生吗？", "我是学生，你呢？", "我们走吧！ / 你是雨果吧？"]
+        ]
+      },
+      "ok": [
+        { "zh": "你喜欢中国菜吗？", "py": "Nǐ xǐhuan Zhōngguó cài ma?", "es": "¿Te gusta la comida china?" },
+        { "zh": "我喜欢喝茶，你呢？", "py": "Wǒ xǐhuan hē chá, nǐ ne?", "es": "A mí me gusta el té, ¿y a ti?" },
+        { "zh": "我的书呢？", "py": "Wǒ de shū ne?", "es": "¿Y mi libro? (¿dónde está?)" },
+        { "zh": "我们去吃饭吧。", "py": "Wǒmen qù chī fàn ba.", "es": "Vamos a comer, ¿va?" },
+        { "zh": "你是西班牙人吧？", "py": "Nǐ shì Xībānyá rén ba?", "es": "Eres español, ¿no?" }
+      ],
+      "bad": [
+        { "wrong": "你叫什么名字吗？", "right": "你叫什么名字？", "why": "Ya hay una palabra interrogativa (什么); 吗 sobra." },
+        { "wrong": "我们走呢。", "right": "我们走吧。", "why": "Para proponer algo, 吧." },
+        { "wrong": "你呢是学生？", "right": "你是学生吗？", "why": "呢 va solo tras el nombre y al final; una pregunta completa de sí/no lleva 吗." },
+        { "wrong": "你好吧？（saludo）", "right": "你好吗？", "why": "«¿Cómo estás?» es pregunta real: 吗. 你好吧 suena a «estás bien, ¿no?»." }
+      ],
+      "minitest": [
+        { "zh": "你是中国人＿？", "answer": "吗", "options": ["吗", "呢", "吧"], "es": "¿Eres chino?" },
+        { "zh": "我很好，你＿？", "answer": "呢", "options": ["吗", "呢", "吧"], "es": "Estoy bien, ¿y tú?" },
+        { "zh": "我们去喝咖啡＿。", "answer": "吧", "options": ["吗", "呢", "吧"], "es": "Vamos a tomar un café." },
+        { "zh": "你会说英语＿？", "answer": "吗", "options": ["吗", "呢", "吧"], "es": "¿Sabes hablar inglés?" },
+        { "zh": "我的手机＿？", "answer": "呢", "options": ["吗", "呢", "吧"], "es": "¿Y mi móvil? (¿dónde está?)" },
+        { "zh": "太晚了，我们走＿。", "answer": "吧", "options": ["吗", "呢", "吧"], "es": "Es muy tarde, vámonos." }
+      ]
+    },
+    "markdown": "## Cómo lo recuerdo\n\n- 吗 = el **signo de interrogación** hablado. Frase normal + 吗 = pregunta de sí/no. Nunca cambies el orden de las palabras.\n- 呢 = **«¿y…?»**. Solo necesita el nombre: 你呢？ ¿y tú? 我的书呢？ ¿y mi libro (dónde está)?\n- 吧 = el **suavizante**. Convierte una orden en propuesta (走吧) y una afirmación en «¿verdad?» (你是老师吧？).\n\n> 💡 **Truco**: si la frase ya lleva 什么, 谁, 哪儿, 几, 多少… **no** lleva 吗. Las palabras interrogativas ya hacen la pregunta.\n\n> ⚠️ **Ojo**: las tres son **tono neutro** (ma, ne, ba) y se pegan a la frase sin pausa.\n\n> ❌ **Error típico**: subir la entonación como en español al preguntar con 吗. La pregunta la hace 吗; la última sílaba con tono mantiene su tono.\n\n> 👩‍🏫 **Lo dijo el profe**: a 你是学生吗？ se responde 是 / 不是, no «sí/no». A 我们走吧 se responde 好 (vale).\n\n```xb-example\n{\"zh\":\"你是学生吗？——是，我是学生。你呢？——我也是。那我们一起学习吧！\",\"py\":\"Nǐ shì xuésheng ma? —Shì, wǒ shì xuésheng. Nǐ ne? —Wǒ yě shì. Nà wǒmen yìqǐ xuéxí ba!\",\"es\":\"¿Eres estudiante? —Sí, soy estudiante. ¿Y tú? —Yo también. ¡Pues estudiemos juntos!\",\"note\":\"吗 pregunta, 呢 devuelve la pregunta, 吧 propone.\"}\n```\n\n```xb-exercise\n{\"kind\":\"choice\",\"data\":{\"prompt\":\"«¿Dónde vives?»\",\"options\":\"你住在哪儿吗？ · 你住在哪儿？ · 你住在哪儿呢吗？\",\"answer\":\"1\",\"explain\":\"哪儿 ya pregunta; 吗 sobra.\"}}\n```\n\n```xb-exercise\n{\"kind\":\"choice\",\"data\":{\"prompt\":\"Quieres proponer «vamos a casa».\",\"options\":\"我们回家吗？ · 我们回家呢？ · 我们回家吧。\",\"answer\":\"2\",\"explain\":\"Propuesta → 吧.\"}}\n```",
+    "cues": [
+      { "id": "c1", "q": "¿Cómo convierto 你是学生 en pregunta?", "a": "Añadiendo 吗 al final, sin cambiar el orden: 你是学生吗？" },
+      { "id": "c2", "q": "¿Cuándo no se usa 吗?", "a": "Cuando ya hay palabra interrogativa (什么, 哪儿, 几…)." },
+      { "id": "c3", "q": "¿Qué significa 你呢？ y 我的书呢？", "a": "«¿Y tú?» y «¿y mi libro? (¿dónde está?)»." },
+      { "id": "c4", "q": "¿Qué dos cosas hace 吧?", "a": "Propone (走吧) y supone (你是老师吧？ = eres profesor, ¿no?)." },
+      { "id": "c5", "q": "¿Se sube la entonación con 吗?", "a": "No: la pregunta la hace 吗; se mantienen los tonos." }
+    ],
+    "summary": "吗 = pregunta sí/no (sin palabra interrogativa); 呢 = ¿y…? / ¿dónde está…?; 吧 = sugerencia o «¿verdad?». Todas neutras y al final.",
+    "reviewed": false
+  }
+]

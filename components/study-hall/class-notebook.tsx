@@ -3,7 +3,8 @@ import { useEffect, useMemo, useState } from "react";
 import Link from "@/lib/languages/link";
 import { useLiveQuery } from "dexie-react-hooks";
 import { ArrowLeft, Check, Layers, Plus, Save, Trash2 } from "lucide-react";
-import { db, upsertWord, uuid, type Note } from "@/lib/db";
+import { db, upsertWord } from "@/lib/db";
+import { createNote } from "@/lib/notes/repo";
 import { parseImport } from "@/lib/import";
 import { lookup, useDictionary } from "@/lib/dictionary/service";
 import { readingOf as wordPinyin } from "@/lib/languages/helpers";
@@ -65,14 +66,12 @@ export function ClassNotebook() {
   const rows = useMemo(() => parseImport(vocab).filter((r) => !r.error), [vocab, dictStatus]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const create = async () => {
-    const id = uuid();
-    const n: Note = { id, lang: getActiveLang(), title: `Clase ${formatDate(new Date(), { day: "numeric", month: "long" })}`, markdown: "", wordIds: [], kind: "class", classDate: todayKey(), createdAt: Date.now(), updatedAt: Date.now() };
-    await db.notes.put(n);
-    setSel(id);
+    const n = await createNote({ type: "class", title: `Clase ${formatDate(new Date(), { day: "numeric", month: "long" })}`, fields: { date: todayKey() }, classDate: todayKey(), source: { kind: "class" } });
+    setSel(n.id);
   };
   const save = async () => {
     if (!current) return;
-    await db.notes.update(current.id, { title: title.trim() || "Clase", classDate: date, markdown: vocab, grammar, homework, updatedAt: Date.now() });
+    await db.notes.update(current.id, { title: title.trim() || "Clase", classDate: date, markdown: vocab, grammar, homework, fields: { ...current.fields, date, vocabText: vocab, grammar, homework }, updatedAt: Date.now() });
     toast.success("Clase guardada");
   };
   const addAll = async () => {
@@ -89,7 +88,7 @@ export function ClassNotebook() {
       ids.push(w.id);
       n++;
     }
-    await db.notes.update(current.id, { wordIds: Array.from(new Set([...current.wordIds, ...ids])), markdown: vocab, updatedAt: Date.now() });
+    await db.notes.update(current.id, { wordIds: Array.from(new Set([...current.wordIds, ...ids])), markdown: vocab, fields: { ...current.fields, vocabText: vocab }, updatedAt: Date.now() });
     setBusy(false);
     toast.success(`${n} palabras añadidas a flashcards${n ? " (y a Anki si está conectado)" : ""}`);
   };
@@ -103,8 +102,8 @@ export function ClassNotebook() {
 
   return (
     <div className="space-y-4">
-      <Link href="/study-hall" className="inline-flex items-center gap-1 text-sm text-ink-faint hover:text-ink">
-        <ArrowLeft className="size-4" /> Study Hall
+      <Link href="/apuntes" className="inline-flex items-center gap-1 text-sm text-ink-faint hover:text-ink">
+        <ArrowLeft className="size-4" /> Apuntes
       </Link>
       <PageHeader
         title="Cuaderno de clase"

@@ -11,7 +11,6 @@ import { Button } from "@/components/ui/button";
 import { Lattice, MoonGate } from "@/components/ornament";
 import { FilterChip } from "./filter-chip";
 import { Pomodoro } from "./pomodoro";
-import { NotesPanel } from "./notes";
 import { cn } from "@/lib/utils";
 import { getActiveLang } from "@/lib/languages/registry";
 import { targetLang } from "@/lib/languages/registry";
@@ -76,11 +75,11 @@ function StudyHallHeader({ classes }: { classes: number }) {
             {pageNative("studyHall")}
           </span>
           <h1 className="font-serif-es text-[28px] font-semibold leading-tight tracking-tight text-ink sm:text-[34px]">Study Hall</h1>
-          <p className="mx-auto mt-1.5 max-w-xl text-sm text-ink-faint sm:mx-0">Artículos breves sobre cómo aprender {getActivePack().meta.names.adjective}, recursos verificados por nivel, temporizador de incienso, notas y tu cuaderno de clase.</p>
+          <p className="mx-auto mt-1.5 max-w-xl text-sm text-ink-faint sm:mx-0">Artículos breves sobre cómo aprender {getActivePack().meta.names.adjective}, recursos verificados por nivel y temporizador de incienso. Los apuntes y el cuaderno de clase viven ahora en la sección Apuntes.</p>
           <div className="mt-4 flex flex-wrap justify-center gap-2 sm:justify-start">
             <Button asChild variant="ink">
-              <Link href="/study-hall/cuaderno">
-                <NotebookPen /> Cuaderno de clase{classes ? ` (${classes})` : ""}
+              <Link href="/apuntes">
+                <NotebookPen /> Apuntes{classes ? ` (${classes} clases)` : ""}
               </Link>
             </Button>
             <Button asChild variant="outline">
@@ -112,9 +111,6 @@ export function StudyHallHub({ tab = "articulos" }: { tab?: string }) {
           </TabsTrigger>
           <TabsTrigger value="pomodoro">
             <Timer className="mr-1 size-4" /> Pomodoro
-          </TabsTrigger>
-          <TabsTrigger value="notas">
-            <NotebookPen className="mr-1 size-4" /> Notas
           </TabsTrigger>
         </TabsList>
 
@@ -191,9 +187,6 @@ export function StudyHallHub({ tab = "articulos" }: { tab?: string }) {
           <Pomodoro />
         </TabsContent>
 
-        <TabsContent value="notas">
-          <NotesPanel />
-        </TabsContent>
       </Tabs>
       <p className="text-sm text-ink-faint">
         ¿Nuevo en la app? Lee{" "}

@@ -1,0 +1,272 @@
+{
+  "unitId": "u05",
+  "scenarios": [
+    {
+      "id": "u05-restaurant-order",
+      "title": "Pedir en un restaurante",
+      "zh": "在饭店点菜",
+      "level": 1,
+      "setting": "Hugo entra en un restaurante pequeño al lado de 交通大学. Tú (la app) eres la camarera.",
+      "role": "camarera",
+      "roleZh": "服务员",
+      "voice": "f",
+      "goals": ["Pedir un plato", "Pedir una bebida", "Preguntar el precio", "Pagar"],
+      "vocab": ["饭店", "服务员", "点菜", "面条", "米饭", "鸡蛋", "肉", "碗", "杯", "瓶", "茶", "啤酒", "冷", "热", "好吃", "多少钱", "买单", "块"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "你好！几个人？", "py": "Nǐ hǎo! Jǐ ge rén?", "es": "¡Hola! ¿Cuántas personas?" },
+          "user": [
+            { "zh": "一个人。", "py": "Yí ge rén.", "es": "Una persona.", "keywords": ["一个人", "一个"], "next": "n2" },
+            { "zh": "两个人。", "py": "Liǎng ge rén.", "es": "Dos personas.", "keywords": ["两个人", "两个"], "next": "n2" }
+          ],
+          "hint": "几个人 = ¿cuántas personas? Responde con número + 个人."
+        },
+        "n2": {
+          "npc": { "zh": "好。你点菜吗？", "py": "Hǎo. Nǐ diǎn cài ma?", "es": "Vale. ¿Vas a pedir?" },
+          "user": [
+            { "zh": "点。我要一碗面条。", "py": "Diǎn. Wǒ yào yì wǎn miàntiáo.", "es": "Sí. Quiero un bol de fideos.", "keywords": ["面条", "一碗"], "next": "n3", "goal": 0 },
+            { "zh": "我要米饭和鸡蛋。", "py": "Wǒ yào mǐfàn hé jīdàn.", "es": "Quiero arroz y huevo.", "keywords": ["米饭", "鸡蛋"], "next": "n3", "goal": 0 },
+            { "zh": "有什么菜？", "py": "Yǒu shénme cài?", "es": "¿Qué platos hay?", "keywords": ["什么菜", "什么"], "next": "n2b" }
+          ],
+          "hint": "Pide con 我要 + clasificador + plato (一碗面条). O pregunta qué hay con 有什么菜."
+        },
+        "n2b": {
+          "npc": { "zh": "有面条、米饭、鸡蛋，也有肉。", "py": "Yǒu miàntiáo, mǐfàn, jīdàn, yě yǒu ròu.", "es": "Hay fideos, arroz, huevo y también carne." },
+          "user": [
+            { "zh": "我要一碗面条和肉。", "py": "Wǒ yào yì wǎn miàntiáo hé ròu.", "es": "Quiero un bol de fideos y carne.", "keywords": ["面条", "肉"], "next": "n3", "goal": 0 },
+            { "zh": "我要米饭和鸡蛋。", "py": "Wǒ yào mǐfàn hé jīdàn.", "es": "Quiero arroz y huevo.", "keywords": ["米饭", "鸡蛋"], "next": "n3", "goal": 0 }
+          ],
+          "hint": "Elige y pide con 我要… 和 une dos platos."
+        },
+        "n3": {
+          "npc": { "zh": "好。你喝什么？", "py": "Hǎo. Nǐ hē shénme?", "es": "Vale. ¿Qué vas a beber?" },
+          "user": [
+            { "zh": "一杯茶。", "py": "Yì bēi chá.", "es": "Un té.", "keywords": ["茶", "一杯茶"], "next": "n4", "goal": 1 },
+            { "zh": "一瓶啤酒。", "py": "Yì píng píjiǔ.", "es": "Una botella de cerveza.", "keywords": ["啤酒", "一瓶"], "next": "n4", "goal": 1 },
+            { "zh": "我不喝，谢谢。", "py": "Wǒ bù hē, xièxie.", "es": "No bebo nada, gracias.", "keywords": ["不喝", "不要"], "next": "n4" }
+          ],
+          "hint": "Bebidas con clasificador: 一杯茶 (vaso), 一瓶啤酒 (botella)."
+        },
+        "n4": {
+          "npc": { "zh": "好的。……这是你的菜，请吃。", "py": "Hǎo de. … Zhè shì nǐ de cài, qǐng chī.", "es": "Vale. … Aquí tienes tu comida, que aproveche." },
+          "user": [
+            { "zh": "谢谢！……这个菜有点儿冷。", "py": "Xièxie! … Zhège cài yǒudiǎnr lěng.", "es": "¡Gracias! … Este plato está un poco frío.", "keywords": ["冷", "有点儿冷"], "next": "n5b" },
+            { "zh": "谢谢！很好吃！", "py": "Xièxie! Hěn hǎochī!", "es": "¡Gracias! ¡Está muy rico!", "keywords": ["好吃", "很好吃"], "next": "n5" },
+            { "zh": "请给我一点儿水。", "py": "Qǐng gěi wǒ yìdiǎnr shuǐ.", "es": "Por favor, dame un poco de agua.", "keywords": ["水", "给我"], "next": "n5" }
+          ],
+          "hint": "有点儿 + adjetivo para quejarte (有点儿冷); 很好吃 para elogiar; 请给我… para pedir algo."
+        },
+        "n5b": {
+          "npc": { "zh": "对不起！我给你做一个热的。", "py": "Duìbuqǐ! Wǒ gěi nǐ zuò yí ge rè de.", "es": "¡Perdón! Te hago uno caliente." },
+          "user": [
+            { "zh": "谢谢。", "py": "Xièxie.", "es": "Gracias.", "keywords": ["谢谢", "好的"], "next": "n5" },
+            { "zh": "没关系，我吃。", "py": "Méi guānxi, wǒ chī.", "es": "No pasa nada, me lo como.", "keywords": ["没关系", "我吃"], "next": "n5" }
+          ],
+          "hint": "Acepta el cambio (谢谢) o quítale importancia (没关系)."
+        },
+        "n5": {
+          "npc": { "zh": "好的。你吃好了吗？", "py": "Hǎo de. Nǐ chī hǎo le ma?", "es": "Vale. ¿Has terminado?" },
+          "user": [
+            { "zh": "吃好了。多少钱？", "py": "Chī hǎo le. Duōshao qián?", "es": "Sí. ¿Cuánto es?", "keywords": ["多少钱", "多少"], "next": "n6", "goal": 2 },
+            { "zh": "吃好了。服务员，买单！", "py": "Chī hǎo le. Fúwùyuán, mǎidān!", "es": "Sí. ¡Camarera, la cuenta!", "keywords": ["买单", "结账"], "next": "n6" }
+          ],
+          "hint": "Pregunta el precio con 多少钱 o pide la cuenta con 买单."
+        },
+        "n6": {
+          "npc": { "zh": "菜十八块，茶五块，二十三块。", "py": "Cài shíbā kuài, chá wǔ kuài, èrshísān kuài.", "es": "La comida dieciocho yuanes, el té cinco: veintitrés yuanes." },
+          "user": [
+            { "zh": "好，给你钱。", "py": "Hǎo, gěi nǐ qián.", "es": "Vale, aquí tienes el dinero.", "keywords": ["给你", "给你钱"], "next": "end1", "goal": 3 },
+            { "zh": "我的朋友给钱！", "py": "Wǒ de péngyou gěi qián!", "es": "¡Paga mi amigo!", "keywords": ["朋友", "我的朋友"], "next": "end2" }
+          ],
+          "hint": "块 es el yuan coloquial. Paga con 给你钱."
+        },
+        "end1": {
+          "npc": { "zh": "谢谢！再见！", "py": "Xièxie! Zàijiàn!", "es": "¡Gracias! ¡Adiós!" },
+          "end": true,
+          "feedback": "Has pedido comida y bebida con clasificadores (碗, 杯, 瓶), has preguntado el precio y has pagado. Misión cumplida."
+        },
+        "end2": {
+          "npc": { "zh": "好……你的朋友呢？", "py": "Hǎo… nǐ de péngyou ne?", "es": "Vale… ¿y tu amigo?" },
+          "end": true,
+          "feedback": "Has pedido bien, pero no has pagado: la camarera sigue esperando a tu amigo. Para pagar: 给你钱 o 我买单."
+        }
+      }
+    },
+    {
+      "id": "u05-cafe",
+      "title": "En la cafetería del campus",
+      "zh": "我想喝一杯咖啡",
+      "level": 1,
+      "setting": "Cafetería de 交通大学 por la mañana. Hugo pide algo antes de clase. Tú (la app) eres el camarero.",
+      "role": "camarero",
+      "roleZh": "服务员",
+      "voice": "m",
+      "goals": ["Pedir un café o un té", "Decir cómo lo quieres", "Pedir algo de comer", "Pagar"],
+      "vocab": ["想", "要", "喝", "咖啡", "茶", "牛奶", "热", "冷", "鸡蛋", "水果", "苹果", "一点儿", "多少钱", "块", "好喝"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "你好！你想喝什么？", "py": "Nǐ hǎo! Nǐ xiǎng hē shénme?", "es": "¡Hola! ¿Qué quieres beber?" },
+          "user": [
+            { "zh": "我想喝一杯咖啡。", "py": "Wǒ xiǎng hē yì bēi kāfēi.", "es": "Quiero un café.", "keywords": ["咖啡", "一杯咖啡"], "next": "n2", "goal": 0 },
+            { "zh": "我要一杯茶。", "py": "Wǒ yào yì bēi chá.", "es": "Quiero un té.", "keywords": ["茶", "一杯茶"], "next": "n2b", "goal": 0 },
+            { "zh": "有什么？", "py": "Yǒu shénme?", "es": "¿Qué hay?", "keywords": ["有什么", "什么"], "next": "n1b" }
+          ],
+          "hint": "想 = querer (deseo), 要 = querer (pedir). Pide con 我想喝 / 我要 + 一杯 + bebida."
+        },
+        "n1b": {
+          "npc": { "zh": "有咖啡、茶，也有牛奶。", "py": "Yǒu kāfēi, chá, yě yǒu niúnǎi.", "es": "Hay café, té y también leche." },
+          "user": [
+            { "zh": "一杯咖啡。", "py": "Yì bēi kāfēi.", "es": "Un café.", "keywords": ["咖啡", "一杯咖啡"], "next": "n2", "goal": 0 },
+            { "zh": "一杯茶。", "py": "Yì bēi chá.", "es": "Un té.", "keywords": ["茶", "一杯茶"], "next": "n2b", "goal": 0 }
+          ],
+          "hint": "Elige: 一杯咖啡 o 一杯茶."
+        },
+        "n2": {
+          "npc": { "zh": "咖啡要牛奶吗？", "py": "Kāfēi yào niúnǎi ma?", "es": "¿El café con leche?" },
+          "user": [
+            { "zh": "要，多一点儿牛奶。", "py": "Yào, duō yìdiǎnr niúnǎi.", "es": "Sí, con bastante leche.", "keywords": ["牛奶", "多一点儿"], "next": "n3", "goal": 1 },
+            { "zh": "不要，谢谢。", "py": "Bú yào, xièxie.", "es": "No, gracias.", "keywords": ["不要", "不用"], "next": "n3", "goal": 1 }
+          ],
+          "hint": "要 / 不要 para aceptar o rechazar. 多一点儿 = un poco más."
+        },
+        "n2b": {
+          "npc": { "zh": "茶，热的吗？", "py": "Chá, rè de ma?", "es": "El té, ¿caliente?" },
+          "user": [
+            { "zh": "热的，谢谢。", "py": "Rè de, xièxie.", "es": "Caliente, gracias.", "keywords": ["热", "热的"], "next": "n3", "goal": 1 },
+            { "zh": "不，我要冷的。", "py": "Bù, wǒ yào lěng de.", "es": "No, lo quiero frío.", "keywords": ["冷", "冷的"], "next": "n3", "goal": 1 }
+          ],
+          "hint": "热的 = caliente, 冷的 = frío (的 convierte el adjetivo en «el caliente / el frío»)."
+        },
+        "n3": {
+          "npc": { "zh": "好。你想吃什么吗？", "py": "Hǎo. Nǐ xiǎng chī shénme ma?", "es": "Vale. ¿Quieres comer algo?" },
+          "user": [
+            { "zh": "我想吃一个鸡蛋。", "py": "Wǒ xiǎng chī yí ge jīdàn.", "es": "Quiero un huevo.", "keywords": ["鸡蛋", "一个鸡蛋"], "next": "n4", "goal": 2 },
+            { "zh": "有水果吗？", "py": "Yǒu shuǐguǒ ma?", "es": "¿Hay fruta?", "keywords": ["水果", "水果吗"], "next": "n3b" },
+            { "zh": "不吃，谢谢。", "py": "Bù chī, xièxie.", "es": "No como nada, gracias.", "keywords": ["不吃", "不要"], "next": "n4" }
+          ],
+          "hint": "Pide algo de comer (我想吃…), pregunta si hay fruta o rechaza con 不吃."
+        },
+        "n3b": {
+          "npc": { "zh": "有苹果。", "py": "Yǒu píngguǒ.", "es": "Hay manzanas." },
+          "user": [
+            { "zh": "好，一个苹果。", "py": "Hǎo, yí ge píngguǒ.", "es": "Vale, una manzana.", "keywords": ["苹果", "一个苹果"], "next": "n4", "goal": 2 },
+            { "zh": "不要了，谢谢。", "py": "Bú yào le, xièxie.", "es": "Entonces nada, gracias.", "keywords": ["不要", "不吃"], "next": "n4" }
+          ],
+          "hint": "Pide la manzana (一个苹果) o rechaza con 不要了."
+        },
+        "n4": {
+          "npc": { "zh": "好。这是你的。", "py": "Hǎo. Zhè shì nǐ de.", "es": "Vale. Aquí tienes." },
+          "user": [
+            { "zh": "谢谢！多少钱？", "py": "Xièxie! Duōshao qián?", "es": "¡Gracias! ¿Cuánto es?", "keywords": ["多少钱", "多少"], "next": "n5" },
+            { "zh": "谢谢，很好喝！", "py": "Xièxie, hěn hǎohē!", "es": "Gracias, ¡está muy bueno!", "keywords": ["好喝", "很好喝"], "next": "n5" }
+          ],
+          "hint": "Pregunta el precio (多少钱) o elogia la bebida (好喝, no 好吃)."
+        },
+        "n5": {
+          "npc": { "zh": "谢谢！二十块。", "py": "Xièxie! Èrshí kuài.", "es": "¡Gracias! Veinte yuanes." },
+          "user": [
+            { "zh": "给你二十块。", "py": "Gěi nǐ èrshí kuài.", "es": "Aquí tienes veinte yuanes.", "keywords": ["给你", "二十块"], "next": "end1", "goal": 3 },
+            { "zh": "我没有钱……", "py": "Wǒ méiyǒu qián…", "es": "No tengo dinero…", "keywords": ["没有钱", "没有"], "next": "end2" }
+          ],
+          "hint": "Paga con 给你 + cantidad + 块."
+        },
+        "end1": {
+          "npc": { "zh": "谢谢，再见！", "py": "Xièxie, zàijiàn!", "es": "¡Gracias, adiós!" },
+          "end": true,
+          "feedback": "Café o té pedido a tu gusto, algo de comer y pagado. Recuerda: 好喝 para bebidas y 好吃 para comida."
+        },
+        "end2": {
+          "npc": { "zh": "没有钱？……没关系，明天给我。", "py": "Méiyǒu qián? … Méi guānxi, míngtiān gěi wǒ.", "es": "¿Sin dinero? … No pasa nada, me lo das mañana." },
+          "end": true,
+          "feedback": "Has pedido bien, pero te has quedado sin pagar. Mañana toca volver con dinero: 给你二十块."
+        }
+      }
+    },
+    {
+      "id": "u05-dinner-friend",
+      "title": "Cenar con Wang Ming",
+      "zh": "我们一起吃饭",
+      "level": 1,
+      "setting": "Hugo y Wang Ming cenan juntos en un restaurante cerca de 交通大学. Pedís, coméis y decidís quién paga. Tú (la app) eres 王明.",
+      "role": "amigo",
+      "roleZh": "王明",
+      "voice": "m",
+      "goals": ["Decir qué te gusta comer", "Decir qué quieres pedir", "Comentar la comida", "Decidir quién paga"],
+      "vocab": ["喜欢", "好吃", "菜", "肉", "鸡蛋", "面条", "米饭", "茶", "碗", "点菜", "冷", "热", "买单", "给", "钱", "一起"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "雨果，你喜欢吃中国菜吗？", "py": "Yǔguǒ, nǐ xǐhuan chī Zhōngguó cài ma?", "es": "Hugo, ¿te gusta la comida china?" },
+          "user": [
+            { "zh": "喜欢！中国菜很好吃。", "py": "Xǐhuan! Zhōngguó cài hěn hǎochī.", "es": "¡Sí! La comida china está muy rica.", "keywords": ["好吃", "很好吃"], "next": "n2", "goal": 0 },
+            { "zh": "我喜欢吃肉，不喜欢吃鸡蛋。", "py": "Wǒ xǐhuan chī ròu, bù xǐhuan chī jīdàn.", "es": "Me gusta la carne, no me gusta el huevo.", "keywords": ["肉", "鸡蛋"], "next": "n2", "goal": 0 }
+          ],
+          "hint": "Di qué te gusta con 喜欢吃… y comenta con 很好吃."
+        },
+        "n2": {
+          "npc": { "zh": "好，我们点菜。你要什么？", "py": "Hǎo, wǒmen diǎn cài. Nǐ yào shénme?", "es": "Vale, pedimos. ¿Qué quieres?" },
+          "user": [
+            { "zh": "我要一碗面条和一杯茶。", "py": "Wǒ yào yì wǎn miàntiáo hé yì bēi chá.", "es": "Quiero un bol de fideos y un té.", "keywords": ["面条", "茶"], "next": "n3", "goal": 1 },
+            { "zh": "我要米饭和肉。", "py": "Wǒ yào mǐfàn hé ròu.", "es": "Quiero arroz y carne.", "keywords": ["米饭", "肉"], "next": "n3", "goal": 1 },
+            { "zh": "你点吧。你喜欢什么？", "py": "Nǐ diǎn ba. Nǐ xǐhuan shénme?", "es": "Pide tú. ¿Qué te gusta?", "keywords": ["你喜欢", "你点"], "next": "n2b" }
+          ],
+          "hint": "Pide con 我要… o deja que pida él: 你点吧."
+        },
+        "n2b": {
+          "npc": { "zh": "我喜欢吃鸡蛋和面条。我们要两碗面条，好吗？", "py": "Wǒ xǐhuan chī jīdàn hé miàntiáo. Wǒmen yào liǎng wǎn miàntiáo, hǎo ma?", "es": "Me gustan el huevo y los fideos. Pedimos dos boles de fideos, ¿vale?" },
+          "user": [
+            { "zh": "好，两碗面条。", "py": "Hǎo, liǎng wǎn miàntiáo.", "es": "Vale, dos boles de fideos.", "keywords": ["两碗", "两碗面条"], "next": "n3", "goal": 1 },
+            { "zh": "我不想吃面条，我要米饭。", "py": "Wǒ bù xiǎng chī miàntiáo, wǒ yào mǐfàn.", "es": "No me apetecen fideos, quiero arroz.", "keywords": ["米饭", "不想"], "next": "n3", "goal": 1 }
+          ],
+          "hint": "Acepta (两碗面条) o di lo que prefieres con 不想吃… 我要…"
+        },
+        "n3": {
+          "npc": { "zh": "服务员！……雨果，这是菜。好吃吗？", "py": "Fúwùyuán! … Yǔguǒ, zhè shì cài. Hǎochī ma?", "es": "¡Camarero! … Hugo, aquí está la comida. ¿Está rica?" },
+          "user": [
+            { "zh": "很好吃！", "py": "Hěn hǎochī!", "es": "¡Muy rica!", "keywords": ["很好吃", "好吃"], "next": "n4", "goal": 2 },
+            { "zh": "有点儿冷。", "py": "Yǒudiǎnr lěng.", "es": "Está un poco fría.", "keywords": ["冷", "有点儿冷"], "next": "n3b", "goal": 2 },
+            { "zh": "我要喝一点儿水。", "py": "Wǒ yào hē yìdiǎnr shuǐ.", "es": "Quiero beber un poco de agua.", "keywords": ["水", "喝"], "next": "n4" }
+          ],
+          "hint": "Comenta la comida: 很好吃 (elogio) o 有点儿冷 (queja suave)."
+        },
+        "n3b": {
+          "npc": { "zh": "冷？我给你我的，我的很热。", "py": "Lěng? Wǒ gěi nǐ wǒ de, wǒ de hěn rè.", "es": "¿Fría? Te doy la mía, la mía está muy caliente." },
+          "user": [
+            { "zh": "谢谢！你很好。", "py": "Xièxie! Nǐ hěn hǎo.", "es": "¡Gracias! Eres muy majo.", "keywords": ["谢谢", "很好"], "next": "n4" },
+            { "zh": "没关系，我吃。", "py": "Méi guānxi, wǒ chī.", "es": "No pasa nada, me la como.", "keywords": ["没关系", "我吃"], "next": "n4" }
+          ],
+          "hint": "给 = dar. Acepta con 谢谢 o rechaza con 没关系."
+        },
+        "n4": {
+          "npc": { "zh": "我吃好了。我们买单吧！", "py": "Wǒ chī hǎo le. Wǒmen mǎidān ba!", "es": "He terminado. ¡Pidamos la cuenta!" },
+          "user": [
+            { "zh": "今天我给钱！", "py": "Jīntiān wǒ gěi qián!", "es": "¡Hoy pago yo!", "keywords": ["我给", "我给钱"], "next": "n5", "goal": 3 },
+            { "zh": "你给钱吧，我没有钱。", "py": "Nǐ gěi qián ba, wǒ méiyǒu qián.", "es": "Paga tú, yo no tengo dinero.", "keywords": ["你给", "没有钱"], "next": "n5b", "goal": 3 },
+            { "zh": "多少钱？", "py": "Duōshao qián?", "es": "¿Cuánto es?", "keywords": ["多少钱", "多少"], "next": "n4b" }
+          ],
+          "hint": "吧 suaviza una propuesta. Decide quién paga: 我给钱 / 你给钱吧."
+        },
+        "n4b": {
+          "npc": { "zh": "面条二十块，米饭十块，茶五块。", "py": "Miàntiáo èrshí kuài, mǐfàn shí kuài, chá wǔ kuài.", "es": "Los fideos veinte, el arroz diez y el té cinco." },
+          "user": [
+            { "zh": "我给。", "py": "Wǒ gěi.", "es": "Pago yo.", "keywords": ["我给", "我给钱"], "next": "n5", "goal": 3 },
+            { "zh": "我们一起给。", "py": "Wǒmen yìqǐ gěi.", "es": "Pagamos a medias.", "keywords": ["一起", "一起给"], "next": "n5", "goal": 3 }
+          ],
+          "hint": "一起 = juntos. Paga tú (我给) o a medias (我们一起给)."
+        },
+        "n5": {
+          "npc": { "zh": "谢谢，雨果！你是好朋友！", "py": "Xièxie, Yǔguǒ! Nǐ shì hǎo péngyou!", "es": "¡Gracias, Hugo! ¡Eres un buen amigo!" },
+          "end": true,
+          "feedback": "Has hablado de gustos (喜欢), has pedido (我要), has comentado la comida y has pagado. En China es normal que uno invite y el otro invite la próxima vez."
+        },
+        "n5b": {
+          "npc": { "zh": "好吧，我给。明天你给我钱！", "py": "Hǎo ba, wǒ gěi. Míngtiān nǐ gěi wǒ qián!", "es": "Vale, pago yo. ¡Mañana me das el dinero!" },
+          "end": true,
+          "feedback": "Wang Ming ha pagado esta vez. Has usado 给 (dar / pagar) y 没有钱. La próxima cena te toca a ti: 今天我给钱."
+        }
+      }
+    }
+  ]
+}

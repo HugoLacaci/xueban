@@ -1,0 +1,255 @@
+{
+  "unitId": "u09",
+  "scenarios": [
+    {
+      "id": "u09-office",
+      "title": "En la secretaría",
+      "zh": "在办公室",
+      "level": 1,
+      "setting": "Primera semana en Jiaotong. Hugo entra en la secretaría del programa de chino para preguntar por las clases y el examen. Tú (la app) eres la secretaria.",
+      "role": "secretaria",
+      "roleZh": "办公室的老师",
+      "voice": "f",
+      "goals": ["Decir quién eres", "Preguntar a qué hora empiezan las clases", "Preguntar dónde es la clase", "Preguntar cuándo es el examen"],
+      "vocab": ["学习", "汉语", "课", "上课", "下课", "考试", "大学", "每"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "你好，请进。有什么事？", "py": "Nǐ hǎo, qǐng jìn. Yǒu shénme shì?", "es": "Hola, pasa. ¿Qué necesitas?" },
+          "user": [
+            { "zh": "您好，我是新学生，我叫雨果。我想问问汉语课的事。", "py": "Nín hǎo, wǒ shì xīn xuésheng, wǒ jiào Yǔguǒ. Wǒ xiǎng wènwen Hànyǔ kè de shì.", "es": "Buenos días, soy nuevo, me llamo Hugo. Quería preguntar sobre la clase de chino.", "keywords": ["新学生", "雨果"], "next": "n2", "goal": 0 },
+            { "zh": "您好，请问这儿是汉语课的办公室吗？", "py": "Nín hǎo, qǐngwèn zhèr shì Hànyǔ kè de bàngōngshì ma?", "es": "Buenos días, ¿es esta la secretaría de las clases de chino?", "keywords": ["办公室", "是不是"], "next": "n1b" }
+          ],
+          "hint": "Preséntate (我是新学生，我叫雨果) o comprueba que es la oficina correcta (这儿是……的办公室吗)."
+        },
+        "n1b": {
+          "npc": { "zh": "是的。你是谁？", "py": "Shì de. Nǐ shì shéi?", "es": "Sí. ¿Quién eres?" },
+          "user": [
+            { "zh": "我是雨果，西班牙学生。我学习汉语。", "py": "Wǒ shì Yǔguǒ, Xībānyá xuésheng. Wǒ xuéxí Hànyǔ.", "es": "Soy Hugo, estudiante español. Estudio chino.", "keywords": ["雨果", "西班牙"], "next": "n2", "goal": 0 },
+            { "zh": "我是李老师的学生。", "py": "Wǒ shì Lǐ lǎoshī de xuésheng.", "es": "Soy alumno de la profesora Li.", "keywords": ["李老师", "学生"], "next": "n2", "goal": 0 }
+          ],
+          "hint": "Di quién eres: 我是 + nombre / nacionalidad / 李老师的学生."
+        },
+        "n2": {
+          "npc": { "zh": "欢迎！你想问什么？", "py": "Huānyíng! Nǐ xiǎng wèn shénme?", "es": "¡Bienvenido! ¿Qué quieres preguntar?" },
+          "user": [
+            { "zh": "我们几点上课？", "py": "Wǒmen jǐ diǎn shàngkè?", "es": "¿A qué hora tenemos clase?", "keywords": ["几点", "上课"], "next": "n3", "goal": 1 },
+            { "zh": "在哪儿上课？", "py": "Zài nǎr shàngkè?", "es": "¿Dónde es la clase?", "keywords": ["哪儿", "哪里"], "next": "n4", "goal": 2 }
+          ],
+          "hint": "Pregunta la hora (几点上课) o el lugar (在哪儿上课)."
+        },
+        "n3": {
+          "npc": { "zh": "每天早上八点上课，十一点下课。星期六、星期天没有课。", "py": "Měi tiān zǎoshang bā diǎn shàngkè, shíyī diǎn xiàkè. Xīngqīliù, xīngqītiān méiyǒu kè.", "es": "Cada día la clase empieza a las ocho y termina a las once. Sábados y domingos no hay clase." },
+          "user": [
+            { "zh": "好的。在哪儿上课？", "py": "Hǎo de. Zài nǎr shàngkè?", "es": "Vale. ¿Dónde es la clase?", "keywords": ["哪儿"], "next": "n4", "goal": 2 },
+            { "zh": "考试是什么时候？", "py": "Kǎoshì shì shénme shíhou?", "es": "¿Cuándo es el examen?", "keywords": ["考试", "什么时候"], "next": "n5", "goal": 3 }
+          ],
+          "hint": "Ahora pregunta dónde (在哪儿上课) o cuándo es el examen (考试是什么时候)."
+        },
+        "n4": {
+          "npc": { "zh": "在二楼，二零五。李老师的课。", "py": "Zài èr lóu, èr líng wǔ. Lǐ lǎoshī de kè.", "es": "En la segunda planta, aula 205. Es la clase de la profesora Li." },
+          "user": [
+            { "zh": "二零五，我知道了。考试是什么时候？", "py": "Èr líng wǔ, wǒ zhīdào le. Kǎoshì shì shénme shíhou?", "es": "205, entendido. ¿Cuándo es el examen?", "keywords": ["考试"], "next": "n5", "goal": 3 },
+            { "zh": "谢谢。我们几点上课？", "py": "Xièxie. Wǒmen jǐ diǎn shàngkè?", "es": "Gracias. ¿A qué hora tenemos clase?", "keywords": ["几点"], "next": "n3", "goal": 1 }
+          ],
+          "hint": "楼 lóu = planta. Repite el aula para confirmar y pregunta por el examen, o por la hora si aún no la sabes."
+        },
+        "n5": {
+          "npc": { "zh": "考试是下个星期五，早上九点。要早一点儿来。", "py": "Kǎoshì shì xià ge xīngqīwǔ, zǎoshang jiǔ diǎn. Yào zǎo yìdiǎnr lái.", "es": "El examen es el viernes que viene, a las nueve de la mañana. Hay que venir un poco antes." },
+          "user": [
+            { "zh": "好，我知道了。谢谢老师！", "py": "Hǎo, wǒ zhīdào le. Xièxie lǎoshī!", "es": "Vale, entendido. ¡Gracias!", "keywords": ["知道", "谢谢"], "next": "n6" },
+            { "zh": "老师，星期五我有点儿忙，能不能不考？", "py": "Lǎoshī, xīngqīwǔ wǒ yǒudiǎnr máng, néng bu néng bù kǎo?", "es": "Es que el viernes estoy un poco ocupado, ¿puedo no hacer el examen?", "keywords": ["不考", "忙"], "next": "n5b" }
+          ],
+          "hint": "Confirma (我知道了) y da las gracias, o intenta librarte del examen con 能不能……?"
+        },
+        "n5b": {
+          "npc": { "zh": "不可以。每个学生都要考试。", "py": "Bù kěyǐ. Měi ge xuésheng dōu yào kǎoshì.", "es": "No. Todos los estudiantes tienen que hacer el examen." },
+          "user": [
+            { "zh": "好吧，我知道了。谢谢，再见。", "py": "Hǎo ba, wǒ zhīdào le. Xièxie, zàijiàn.", "es": "Está bien, entendido. Gracias, adiós.", "keywords": ["好吧", "知道"], "next": "n6" },
+            { "zh": "好的，老师。星期五见！", "py": "Hǎo de, lǎoshī. Xīngqīwǔ jiàn!", "es": "De acuerdo. ¡Hasta el viernes!", "keywords": ["星期五见", "好的"], "next": "n6" }
+          ],
+          "hint": "No hay escapatoria: acepta con 好吧 / 好的 y despídete."
+        },
+        "n6": {
+          "npc": { "zh": "不客气。好好学习，再见！", "py": "Bú kèqi. Hǎohāo xuéxí, zàijiàn!", "es": "De nada. ¡Estudia mucho, adiós!" },
+          "end": true,
+          "feedback": "Te has presentado y has conseguido la información clave: horario, aula y fecha del examen. 每 + clasificador + 都 (每个学生都要考试) es la estructura de «todos / cada uno»."
+        }
+      }
+    },
+    {
+      "id": "u09-library",
+      "title": "En la biblioteca",
+      "zh": "在图书馆",
+      "level": 1,
+      "setting": "Hugo busca un libro para estudiar chino en la biblioteca de Jiaotong y quiere llevárselo a casa. Tú (la app) eres el bibliotecario del mostrador.",
+      "role": "bibliotecario",
+      "roleZh": "图书馆工作人员",
+      "voice": "m",
+      "goals": ["Decir qué libro buscas", "Preguntar dónde están los libros de chino", "Preguntar si puedes llevarte el libro a casa", "Preguntar el horario de la biblioteca"],
+      "vocab": ["书", "读书", "汉语", "学习", "大学", "一起", "休息"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "你好，同学。有什么事？", "py": "Nǐ hǎo, tóngxué. Yǒu shénme shì?", "es": "Hola, compañero. ¿Qué necesitas?" },
+          "user": [
+            { "zh": "请问，汉语书在哪儿？", "py": "Qǐngwèn, Hànyǔ shū zài nǎr?", "es": "Disculpe, ¿dónde están los libros de chino?", "keywords": ["汉语书", "在哪儿"], "next": "n2", "goal": 1 },
+            { "zh": "我想看一本学汉语的书，是李老师说的。", "py": "Wǒ xiǎng kàn yì běn xué Hànyǔ de shū, shì Lǐ lǎoshī shuō de.", "es": "Quiero leer un libro para aprender chino, uno que recomendó la profesora Li.", "keywords": ["李老师", "一本"], "next": "n2b", "goal": 0 },
+            { "zh": "请问，图书馆几点关门？", "py": "Qǐngwèn, túshūguǎn jǐ diǎn guānmén?", "es": "Disculpe, ¿a qué hora cierra la biblioteca?", "keywords": ["几点", "关门"], "next": "n5", "goal": 3 }
+          ],
+          "hint": "Pregunta dónde están los libros (汉语书在哪儿), di qué libro buscas, o pregunta el horario (几点关门 = a qué hora cierra)."
+        },
+        "n2": {
+          "npc": { "zh": "汉语书在二楼，电脑的旁边。", "py": "Hànyǔ shū zài èr lóu, diànnǎo de pángbiān.", "es": "Los libros de chino están en la segunda planta, al lado de los ordenadores." },
+          "user": [
+            { "zh": "我要一本学汉语的书，有好的吗？", "py": "Wǒ yào yì běn xué Hànyǔ de shū, yǒu hǎo de ma?", "es": "Quiero un libro para aprender chino, ¿hay alguno bueno?", "keywords": ["学汉语", "有好的"], "next": "n3", "goal": 0 },
+            { "zh": "二楼。请问，书可以带回家吗？", "py": "Èr lóu. Qǐngwèn, shū kěyǐ dài huí jiā ma?", "es": "Segunda planta. ¿Se pueden llevar los libros a casa?", "keywords": ["带回家", "回家"], "next": "n4", "goal": 2 }
+          ],
+          "hint": "Di qué libro quieres (一本学汉语的书) o pregunta si te lo puedes llevar (可以带回家吗)."
+        },
+        "n2b": {
+          "npc": { "zh": "李老师说的书？在二楼，很多学生都看这本书。", "py": "Lǐ lǎoshī shuō de shū? Zài èr lóu, hěn duō xuésheng dōu kàn zhè běn shū.", "es": "¿El libro que recomendó la profesora Li? Está en la segunda planta; muchos estudiantes lo leen." },
+          "user": [
+            { "zh": "我可以带回家看吗？", "py": "Wǒ kěyǐ dài huí jiā kàn ma?", "es": "¿Puedo llevármelo a casa para leerlo?", "keywords": ["带回家", "回家"], "next": "n4", "goal": 2 },
+            { "zh": "好。我能在这儿看吗？", "py": "Hǎo. Wǒ néng zài zhèr kàn ma?", "es": "Vale. ¿Puedo leerlo aquí?", "keywords": ["在这儿", "这儿看"], "next": "n4b" }
+          ],
+          "hint": "Pregunta si puedes llevártelo (带回家) o leerlo allí (在这儿看)."
+        },
+        "n3": {
+          "npc": { "zh": "有，这本很好，学生都喜欢。", "py": "Yǒu, zhè běn hěn hǎo, xuésheng dōu xǐhuan.", "es": "Sí, este es muy bueno, a los estudiantes les gusta mucho." },
+          "user": [
+            { "zh": "太好了。我可以带回家看吗？", "py": "Tài hǎo le. Wǒ kěyǐ dài huí jiā kàn ma?", "es": "Genial. ¿Puedo llevármelo a casa?", "keywords": ["带回家", "回家"], "next": "n4", "goal": 2 },
+            { "zh": "好。我能在这儿看吗？", "py": "Hǎo. Wǒ néng zài zhèr kàn ma?", "es": "Vale. ¿Puedo leerlo aquí?", "keywords": ["在这儿", "这儿看"], "next": "n4b" }
+          ],
+          "hint": "Pide permiso con 可以 / 能……吗: llevártelo a casa o leerlo allí."
+        },
+        "n4": {
+          "npc": { "zh": "可以。你是交大的学生吧？学生卡给我看一下。", "py": "Kěyǐ. Nǐ shì Jiāodà de xuésheng ba? Xuéshēngkǎ gěi wǒ kàn yíxià.", "es": "Sí. Eres estudiante de Jiaotong, ¿no? Enséñame el carné de estudiante." },
+          "user": [
+            { "zh": "是，这是我的学生卡。", "py": "Shì, zhè shì wǒ de xuéshēngkǎ.", "es": "Sí, este es mi carné.", "keywords": ["学生卡", "这是"], "next": "n6" },
+            { "zh": "对不起，我没带学生卡。", "py": "Duìbuqǐ, wǒ méi dài xuéshēngkǎ.", "es": "Lo siento, no he traído el carné.", "keywords": ["没带", "没有"], "next": "n7" }
+          ],
+          "hint": "学生卡 = carné de estudiante. Enséñalo (这是我的学生卡) o reconoce que no lo llevas (我没带)."
+        },
+        "n4b": {
+          "npc": { "zh": "可以，请坐。", "py": "Kěyǐ, qǐng zuò.", "es": "Claro, siéntate." },
+          "user": [
+            { "zh": "谢谢。图书馆几点关门？", "py": "Xièxie. Túshūguǎn jǐ diǎn guānmén?", "es": "Gracias. ¿A qué hora cierra la biblioteca?", "keywords": ["几点", "关门"], "next": "n5", "goal": 3 },
+            { "zh": "谢谢，我知道了。", "py": "Xièxie, wǒ zhīdào le.", "es": "Gracias, entendido.", "keywords": ["知道"], "next": "n8" }
+          ],
+          "hint": "Pregunta el horario (几点关门) o da las gracias y termina."
+        },
+        "n5": {
+          "npc": { "zh": "早上八点开，晚上十点关门。", "py": "Zǎoshang bā diǎn kāi, wǎnshang shí diǎn guānmén.", "es": "Abre a las ocho de la mañana y cierra a las diez de la noche." },
+          "user": [
+            { "zh": "谢谢。请问，汉语书在哪儿？", "py": "Xièxie. Qǐngwèn, Hànyǔ shū zài nǎr?", "es": "Gracias. ¿Dónde están los libros de chino?", "keywords": ["哪儿", "汉语书"], "next": "n2", "goal": 1 },
+            { "zh": "好的，谢谢，再见。", "py": "Hǎo de, xièxie, zàijiàn.", "es": "Vale, gracias, adiós.", "keywords": ["谢谢", "再见"], "next": "n8" }
+          ],
+          "hint": "Si aún no has buscado el libro, pregunta dónde está (在哪儿); si no, despídete."
+        },
+        "n6": {
+          "npc": { "zh": "好了，你可以看两个星期。", "py": "Hǎo le, nǐ kěyǐ kàn liǎng ge xīngqī.", "es": "Listo, puedes tenerlo dos semanas." },
+          "user": [
+            { "zh": "好的。图书馆几点关门？", "py": "Hǎo de. Túshūguǎn jǐ diǎn guānmén?", "es": "Vale. ¿A qué hora cierra la biblioteca?", "keywords": ["几点", "关门"], "next": "n5", "goal": 3 },
+            { "zh": "两个星期，我知道了。谢谢，再见！", "py": "Liǎng ge xīngqī, wǒ zhīdào le. Xièxie, zàijiàn!", "es": "Dos semanas, entendido. ¡Gracias, adiós!", "keywords": ["知道", "再见"], "next": "n8" }
+          ],
+          "hint": "Pregunta el horario o repite el plazo (两个星期) para confirmar y despídete."
+        },
+        "n7": {
+          "npc": { "zh": "没有学生卡不能带回家。你明天带卡再来吧。", "py": "Méiyǒu xuéshēngkǎ bù néng dài huí jiā. Nǐ míngtiān dài kǎ zài lái ba.", "es": "Sin carné no se puede sacar. Vuelve mañana con el carné." },
+          "end": true,
+          "feedback": "Sin 学生卡 no hay préstamo. Has preguntado bien, pero no te llevas el libro: en China el carné de estudiante lo necesitas para casi todo en el campus."
+        },
+        "n8": {
+          "npc": { "zh": "不客气，再见！", "py": "Bú kèqi, zàijiàn!", "es": "De nada, ¡adiós!" },
+          "end": true,
+          "feedback": "Has encontrado el libro, has pedido permiso con 可以……吗 y conoces el horario. 关门 guānmén = cerrar; 开 kāi = abrir."
+        }
+      }
+    },
+    {
+      "id": "u09-class-teacher",
+      "title": "Hablar con la profesora en clase",
+      "zh": "在课上和老师说话",
+      "level": 1,
+      "setting": "Clase de chino de las ocho. La profesora Li te pregunta directamente. Tú (la app) eres 李老师.",
+      "role": "profesora Li",
+      "roleZh": "李老师",
+      "voice": "f",
+      "goals": ["Decir que no has entendido y pedir que lo repita", "Preguntar cómo se lee o se escribe un carácter", "Responder a una pregunta de la profesora", "Pedir permiso o hacer una pregunta en clase"],
+      "vocab": ["懂", "听", "说", "读", "写", "汉字", "问题", "问"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "雨果，你听懂了吗？", "py": "Yǔguǒ, nǐ tīngdǒng le ma?", "es": "Hugo, ¿lo has entendido?" },
+          "user": [
+            { "zh": "听懂了，老师。", "py": "Tīngdǒng le, lǎoshī.", "es": "Sí, profesora.", "keywords": ["听懂了", "懂了"], "next": "n2" },
+            { "zh": "对不起，老师，我没听懂。您能再说一次吗？", "py": "Duìbuqǐ, lǎoshī, wǒ méi tīngdǒng. Nín néng zài shuō yí cì ma?", "es": "Perdone, profesora, no lo he entendido. ¿Puede repetirlo?", "keywords": ["没听懂", "再说"], "next": "n3", "goal": 0 }
+          ],
+          "hint": "Responde con 听懂了 (lo entendí) o 没听懂 (no lo entendí) y pide que lo repita: 再说一次."
+        },
+        "n2": {
+          "npc": { "zh": "很好。那你说说，这个字怎么读？", "py": "Hěn hǎo. Nà nǐ shuōshuo, zhège zì zěnme dú?", "es": "Muy bien. Entonces dime, ¿cómo se lee este carácter? (señala 谢)" },
+          "user": [
+            { "zh": "这个字读 xiè，是“谢谢”的“谢”。", "py": "Zhège zì dú xiè, shì “xièxie” de “xiè”.", "es": "Este carácter se lee xiè, el de «xièxie».", "keywords": ["谢", "xie"], "next": "n4", "goal": 2 },
+            { "zh": "对不起，老师，我不知道。这个字怎么读？", "py": "Duìbuqǐ, lǎoshī, wǒ bù zhīdào. Zhège zì zěnme dú?", "es": "Perdone, no lo sé. ¿Cómo se lee este carácter?", "keywords": ["不知道", "怎么读"], "next": "n3b", "goal": 1 }
+          ],
+          "hint": "El carácter es 谢. Responde con 这个字读…… o reconoce que no lo sabes y pregunta 怎么读."
+        },
+        "n3": {
+          "npc": { "zh": "可以。我再说一次：这个字读 xiè，“谢谢”的“谢”。现在懂了吗？", "py": "Kěyǐ. Wǒ zài shuō yí cì: zhège zì dú xiè, “xièxie” de “xiè”. Xiànzài dǒng le ma?", "es": "Claro. Lo repito: este carácter se lee xiè, el de «xièxie». ¿Ahora lo entiendes?" },
+          "user": [
+            { "zh": "懂了，谢谢老师。", "py": "Dǒng le, xièxie lǎoshī.", "es": "Ya lo entiendo, gracias.", "keywords": ["懂了", "谢谢"], "next": "n4" },
+            { "zh": "老师，这个字怎么写？", "py": "Lǎoshī, zhège zì zěnme xiě?", "es": "Profesora, ¿cómo se escribe este carácter?", "keywords": ["怎么写"], "next": "n5", "goal": 1 }
+          ],
+          "hint": "Confirma que lo has entendido (懂了) o pregunta cómo se escribe (怎么写)."
+        },
+        "n3b": {
+          "npc": { "zh": "这个字读 xiè，“谢谢”的“谢”。", "py": "Zhège zì dú xiè, “xièxie” de “xiè”.", "es": "Este carácter se lee xiè, el de «xièxie»." },
+          "user": [
+            { "zh": "我知道了。老师，这个字怎么写？", "py": "Wǒ zhīdào le. Lǎoshī, zhège zì zěnme xiě?", "es": "Entendido. ¿Y cómo se escribe?", "keywords": ["怎么写"], "next": "n5", "goal": 1 },
+            { "zh": "谢谢老师，我懂了。", "py": "Xièxie lǎoshī, wǒ dǒng le.", "es": "Gracias, ya lo entiendo.", "keywords": ["懂了"], "next": "n4" }
+          ],
+          "hint": "Aprovecha para preguntar cómo se escribe (怎么写) o confirma que lo has entendido."
+        },
+        "n4": {
+          "npc": { "zh": "很好！你的汉语说得很好。现在我们写汉字。", "py": "Hěn hǎo! Nǐ de Hànyǔ shuō de hěn hǎo. Xiànzài wǒmen xiě Hànzì.", "es": "¡Muy bien! Hablas muy bien chino. Ahora vamos a escribir caracteres." },
+          "user": [
+            { "zh": "老师，我有一个问题。", "py": "Lǎoshī, wǒ yǒu yí ge wèntí.", "es": "Profesora, tengo una pregunta.", "keywords": ["问题"], "next": "n6", "goal": 3 },
+            { "zh": "老师，我可以去洗手间吗？", "py": "Lǎoshī, wǒ kěyǐ qù xǐshǒujiān ma?", "es": "Profesora, ¿puedo ir al baño?", "keywords": ["洗手间"], "next": "n7", "goal": 3 }
+          ],
+          "hint": "Anuncia una pregunta (我有一个问题) o pide permiso con 我可以……吗."
+        },
+        "n5": {
+          "npc": { "zh": "你看，这样写。你写一下。", "py": "Nǐ kàn, zhèyàng xiě. Nǐ xiě yíxià.", "es": "Mira, se escribe así. Escríbelo tú." },
+          "user": [
+            { "zh": "老师，我写得对吗？", "py": "Lǎoshī, wǒ xiě de duì ma?", "es": "Profesora, ¿lo he escrito bien?", "keywords": ["对吗", "对不对"], "next": "n8" },
+            { "zh": "老师，我写得不好。", "py": "Lǎoshī, wǒ xiě de bù hǎo.", "es": "Profesora, lo escribo mal.", "keywords": ["不好", "太难"], "next": "n8" }
+          ],
+          "hint": "Valora cómo lo has escrito con 写得 + adjetivo, o pregunta si está bien (对吗)."
+        },
+        "n6": {
+          "npc": { "zh": "什么问题？你问吧。", "py": "Shénme wèntí? Nǐ wèn ba.", "es": "¿Qué pregunta? Dime." },
+          "user": [
+            { "zh": "老师，我们明天几点上课？", "py": "Lǎoshī, wǒmen míngtiān jǐ diǎn shàngkè?", "es": "Profesora, ¿a qué hora es la clase de mañana?", "keywords": ["几点", "上课"], "next": "n8" },
+            { "zh": "老师，考试是什么时候？", "py": "Lǎoshī, kǎoshì shì shénme shíhou?", "es": "Profesora, ¿cuándo es el examen?", "keywords": ["考试"], "next": "n8" }
+          ],
+          "hint": "Haz tu pregunta: sobre la hora de la clase (几点上课) o el examen (考试)."
+        },
+        "n7": {
+          "npc": { "zh": "可以，快去快回。", "py": "Kěyǐ, kuài qù kuài huí.", "es": "Sí, pero vuelve rápido." },
+          "user": [
+            { "zh": "谢谢老师。", "py": "Xièxie lǎoshī.", "es": "Gracias, profesora.", "keywords": ["谢谢"], "next": "n8" },
+            { "zh": "好的。", "py": "Hǎo de.", "es": "Vale.", "keywords": ["好的"], "next": "n8" }
+          ],
+          "hint": "快去快回 = «ve y vuelve rápido». Responde con 谢谢老师 o 好的."
+        },
+        "n8": {
+          "npc": { "zh": "好，今天的课就到这儿。下课！大家再见。", "py": "Hǎo, jīntiān de kè jiù dào zhèr. Xiàkè! Dàjiā zàijiàn.", "es": "Bien, la clase de hoy termina aquí. ¡Se acabó! Adiós a todos." },
+          "end": true,
+          "feedback": "Has participado en clase: pediste que repitiera, preguntaste por un carácter y te dirigiste a la profesora con 老师 + petición. 再说一次 y 怎么写/怎么读 son tus frases de supervivencia en clase."
+        }
+      }
+    }
+  ]
+}

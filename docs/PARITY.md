@@ -37,3 +37,8 @@ Estado: ✅ todas las capacidades obligatorias en los tres idiomas.
 | Páginas propias (caracteres, ficha, módulos de la unidad 0) | ✅ | ✅ | ✅ |
 | Semilla ≥ 300 palabras en las 21 categorías | ✅ | ✅ | ✅ |
 | Créditos y licencias de los datos | ✅ | ✅ | ✅ |
+| Bancos de ejercicios por unidad y punto gramatical | ✅ | ⏳ pendiente | ⏳ pendiente |
+| Apuntes del profesor (compendios) | ✅ | ⏳ pendiente | ⏳ pendiente |
+| Motor de corrección por reglas (linter) | ✅ | ⏳ pendiente | ⏳ pendiente |
+| Role-plays por turnos y tutor | ✅ | ⏳ pendiente | ⏳ pendiente |
+| Origen de los caracteres y memorización | ✅ | ⏳ pendiente | ⏳ pendiente |

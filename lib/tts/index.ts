@@ -10,8 +10,18 @@ import { getActivePackOrNull, getActiveLang, LANG_META } from "@/lib/languages/r
 import { useSettings } from "@/lib/settings";
 import type { Bcp47, Lang } from "@/lib/languages/types";
 
+export type Voice = "f" | "m" | "child";
+/** Voces neuronales de Edge por idioma y tipo de voz (el chino por defecto es Xiaoxiao: archivos sin sufijo). */
+export const EDGE_VOICES: Record<Lang, Record<Voice, string>> = {
+  zh: { f: "zh-CN-XiaoxiaoNeural", m: "zh-CN-YunxiNeural", child: "zh-CN-XiaoyouNeural" },
+  ja: { f: "ja-JP-NanamiNeural", m: "ja-JP-KeitaNeural", child: "ja-JP-NanamiNeural" },
+  ko: { f: "ko-KR-SunHiNeural", m: "ko-KR-InJoonNeural", child: "ko-KR-SunHiNeural" },
+};
+
 export interface SpeakOptions {
   rate?: number;
+  /** Voz pregenerada (mujer por defecto; hombre / niño si existe el archivo) */
+  voice?: Voice;
   voiceURI?: string;
   preferGenerated?: boolean;
   onEnd?: () => void;
@@ -23,9 +33,25 @@ let currentAudio: HTMLAudioElement | null = null;
 const missingAudio = new Set<string>();
 
 /** Ruta del audio pregenerado: el chino conserva el hash sin prefijo (compatibilidad con los MP3 existentes). */
-export function audioFileFor(text: string, lang: Lang = getActiveLang()): string {
+export function audioFileFor(text: string, lang: Lang = getActiveLang(), voice: Voice = "f"): string {
   const h = hashString(text.trim()).toString(16);
-  return withBase(lang === "zh" ? `/audio/${h}.mp3` : `/audio/${lang}/${h}.mp3`);
+  const suffix = voice === "f" ? "" : `-${voice}`;
+  return withBase(lang === "zh" ? `/audio/${h}${suffix}.mp3` : `/audio/${lang}/${h}${suffix}.mp3`);
+}
+
+/** Reproduce un archivo de audio; false si no existe o falla. */
+function playFile(file: string, rate: number, onEnd?: () => void): Promise<boolean> {
+  return new Promise<boolean>((resolve) => {
+    const a = new Audio(file);
+    a.playbackRate = Math.min(2, Math.max(0.5, rate / 0.9));
+    a.onended = () => {
+      onEnd?.();
+      resolve(true);
+    };
+    a.onerror = () => resolve(false);
+    currentAudio = a;
+    a.play().catch(() => resolve(false));
+  });
 }
 
 const VOICE_PATTERNS: Record<Lang, { lang: RegExp; name: RegExp }> = {
@@ -105,21 +131,14 @@ export async function speak(text: string, opts: SpeakOptions = {}): Promise<void
   const lang = opts.lang ?? getActiveLang();
   stopSpeaking();
   const prefer = opts.preferGenerated ?? true;
-  const file = audioFileFor(clean, lang);
-  if (prefer && !missingAudio.has(file)) {
-    const ok = await new Promise<boolean>((resolve) => {
-      const a = new Audio(file);
-      a.playbackRate = Math.min(2, Math.max(0.5, (opts.rate ?? 0.9) / 0.9));
-      a.onended = () => {
-        opts.onEnd?.();
-        resolve(true);
-      };
-      a.onerror = () => resolve(false);
-      currentAudio = a;
-      a.play().catch(() => resolve(false));
-    });
-    if (ok) return;
-    missingAudio.add(file);
+  const voice = opts.voice ?? "f";
+  const candidates = voice === "f" ? [audioFileFor(clean, lang, "f")] : [audioFileFor(clean, lang, voice), audioFileFor(clean, lang, "f")];
+  if (prefer) {
+    for (const file of candidates) {
+      if (missingAudio.has(file)) continue;
+      if (await playFile(file, opts.rate ?? 0.9, opts.onEnd)) return;
+      missingAudio.add(file);
+    }
   }
   await speakWeb(clean, opts, lang);
 }

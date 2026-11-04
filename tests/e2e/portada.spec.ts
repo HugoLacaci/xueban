@@ -6,7 +6,7 @@ test("primera visita: la raíz muestra la elección de idioma y dar de alta uno 
   await expect(page.getByRole("heading", { name: "¿Qué quieres aprender?" })).toBeVisible();
   await expect(page).toHaveURL((u) => u.pathname === "/");
   await expect(page.locator(".portal")).toHaveCount(3);
-  for (const l of ["zh", "ja", "ko"]) await expect(page.locator(`.portal[data-skin='${l}']`)).toHaveAttribute("data-state", "inactive");
+  for (const l of ["zh", "ja", "ko"]) await expect(page.locator(`.portal[data-skin='${l}']`)).toHaveAttribute("data-state", /^(inactive|invite)$/); // «invite»: la puerta sugerida en la primera visita
 
   // abrir la puerta japonesa → mini-onboarding → entra en japonés
   await page.locator(".portal[data-skin='ja']").click();

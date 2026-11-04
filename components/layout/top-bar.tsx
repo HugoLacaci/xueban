@@ -1,7 +1,8 @@
 "use client";
 import { useEffect } from "react";
 import Link from "@/lib/languages/link";
-import { Languages, Moon, Search, Sun, Monitor, Plug, PlugZap } from "lucide-react";
+import { Languages, Moon, Search, Sun, Monitor, Plug, PlugZap, NotebookPen } from "lucide-react";
+import { openQuickCapture } from "@/components/notes/quick-capture";
 import { useSettings } from "@/lib/settings";
 import { useAnkiStatus } from "@/lib/anki/client";
 import { Kbd, Tooltip } from "@/components/ui/primitives";
@@ -58,6 +59,12 @@ export function TopBar() {
       </button>
 
       <div className="flex items-center gap-1">
+        <Tooltip label="Captura rápida a la bandeja de apuntes (N)">
+          <button onClick={() => openQuickCapture()} className="flex h-9 shrink-0 items-center gap-1.5 rounded-[8px] border border-line px-2 text-sm text-ink-soft transition-colors hover:bg-paper-sunk hover:text-ink sm:px-2.5" aria-label="Nuevo apunte rápido (atajo N)">
+          <NotebookPen className="size-[18px]" />
+          <span className="hidden lg:inline">+ apunte</span>
+        </button>
+        </Tooltip>
         <LanguageSwitcher />
         {/* Interruptor de pinyin: estado siempre legible */}
         <Tooltip label={`${PINYIN_LABEL[pm]} · pulsa para cambiar (P)`}>

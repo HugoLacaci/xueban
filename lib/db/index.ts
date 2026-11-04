@@ -1,6 +1,14 @@
 import Dexie, { type EntityTable } from "dexie";
+import { legacyNoteToV5 } from "./migrate-notes";
 import type {
+  Asset,
   Card,
+  Chat,
+  ExerciseItem,
+  ExerciseSet,
+  ItemAttempt,
+  LegacyNote,
+  NoteCard,
   Category,
   CharacterState,
   DailyStat,
@@ -41,6 +49,16 @@ export class XuebanDB extends Dexie {
   favorites!: EntityTable<DictFavorite, "id">;
   /** v3: estadísticas diarias por idioma (id `${lang}:${date}`); sustituye a `dailyStats` */
   daily!: EntityTable<DailyStat, "id">;
+  /** v5: tarjetas SRS generadas desde los apuntes (Cornell, frases, errores) */
+  noteCards!: EntityTable<NoteCard, "id">;
+  /** v5: cuaderno de ejercicios 练习本 */
+  exerciseSets!: EntityTable<ExerciseSet, "id">;
+  exerciseItems!: EntityTable<ExerciseItem, "id">;
+  itemAttempts!: EntityTable<ItemAttempt, "id">;
+  /** v5: conversaciones con el tutor */
+  chats!: EntityTable<Chat, "id">;
+  /** v5: fotos, audios y dibujos de los apuntes */
+  assets!: EntityTable<Asset, "id">;
 
   constructor(name = "xueban") {
     super(name);
@@ -116,6 +134,26 @@ export class XuebanDB extends Dexie {
       });
     // v4: se eliminan las tablas antiguas ya migradas.
     this.version(4).stores({ characters: null, dictFavorites: null, dailyStats: null });
+    // v5: apuntes estructurados (plantillas, bloques, Cornell, enlaces) + cuaderno de ejercicios + tutor + assets.
+    this.version(5)
+      .stores({
+        notes: "id, lang, kind, type, status, classDate, updatedAt, unitId, pinned, builtin, *tags, *links, *grammarIds, *wordIds, [lang+kind], [lang+type], [lang+status], [lang+updatedAt], [lang+unitId]",
+        noteCards: "id, lang, noteId, kind, due, state, [lang+due], [lang+kind], [lang+noteId], [lang+state]",
+        exerciseSets: "id, lang, date, unitId, updatedAt, *tags, [lang+updatedAt]",
+        exerciseItems: "id, lang, setId, due, state, unitId, *tags, *grammarIds, [lang+due], [lang+setId], [setId+order]",
+        itemAttempts: "++id, lang, itemId, setId, at, [lang+at], [itemId+at]",
+        chats: "id, lang, mode, updatedAt, [lang+updatedAt], [lang+mode]",
+        assets: "id, lang, noteId, kind",
+      })
+      .upgrade(async (tx) => {
+        await tx
+          .table("notes")
+          .toCollection()
+          .modify((row: LegacyNote & Partial<Note>) => {
+            if (row.type && row.fields) return; // ya migrada
+            Object.assign(row, legacyNoteToV5(row));
+          });
+      });
   }
 }
 

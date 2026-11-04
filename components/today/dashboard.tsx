@@ -200,7 +200,7 @@ export function TodayDashboard() {
           <QuickLink href="/flashcards/repasar" icon={<Layers />} label="Repasar" zh={culture.quick.review} />
           <QuickLink href="/lectura" icon={<BookOpen />} label="Leer" zh={culture.quick.read} />
           <QuickLink href="/videos" icon={<Video />} label="Vídeo" zh={culture.quick.video} />
-          <QuickLink href="/study-hall/cuaderno" icon={<NotebookPen />} label="Cuaderno" zh={culture.quick.notebook} />
+          <QuickLink href="/apuntes" icon={<NotebookPen />} label="Apuntes" zh={culture.quick.notebook} />
           <QuickLink href="/diccionario" icon={<Search />} label="Diccionario" zh={culture.quick.dict} />
         </div>
       </section>

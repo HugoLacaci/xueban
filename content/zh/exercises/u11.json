@@ -1,0 +1,3425 @@
+{
+  "id": "u11",
+  "unitId": "u11",
+  "title": "Salud y en el médico",
+  "items": [
+    {
+      "id": "u11-001",
+      "type": "choose-meaning",
+      "skill": "vocabulary",
+      "level": 1,
+      "zh": "发烧",
+      "py": "fāshāo",
+      "options": [
+        "toser",
+        "tener fiebre",
+        "estar cansado",
+        "resfriarse"
+      ],
+      "answer": 1,
+      "explain": "发 fā es «emitir» y 烧 shāo «arder, quemar» (lleva el radical del fuego 火): «emitir calor», es decir, tener fiebre. 感冒 es el resfriado."
+    },
+    {
+      "id": "u11-002",
+      "type": "choose-meaning",
+      "skill": "vocabulary",
+      "level": 1,
+      "zh": "休息",
+      "py": "xiūxi",
+      "options": [
+        "descansar",
+        "trabajar",
+        "dormir",
+        "levantarse"
+      ],
+      "answer": 0,
+      "explain": "休 xiū es una persona (亻) apoyada en un árbol (木): descansar. 睡觉 es dormir, que es otra cosa; el médico recomienda 多休息."
+    },
+    {
+      "id": "u11-003",
+      "type": "choose-meaning",
+      "skill": "vocabulary",
+      "level": 1,
+      "zh": "疼",
+      "py": "téng",
+      "options": [
+        "cansado",
+        "enfermo",
+        "doler",
+        "contento"
+      ],
+      "answer": 2,
+      "explain": "疼 téng es «doler»; lleva el radical de la enfermedad 疒 (una cama inclinada). Se usa tras la parte del cuerpo: 头疼 (me duele la cabeza)."
+    },
+    {
+      "id": "u11-004",
+      "type": "choose-meaning",
+      "skill": "vocabulary",
+      "level": 1,
+      "zh": "有点儿",
+      "py": "yǒudiǎnr",
+      "options": [
+        "un poco (algo negativo)",
+        "mucho",
+        "demasiado",
+        "nada"
+      ],
+      "answer": 0,
+      "explain": "有点儿 va delante de un adjetivo con matiz de queja: 有点儿累, 有点儿不舒服. No se usa con cosas positivas (no se dice 有点儿高兴)."
+    },
+    {
+      "id": "u11-005",
+      "type": "choose-meaning",
+      "skill": "vocabulary",
+      "level": 1,
+      "zh": "看病",
+      "py": "kànbìng",
+      "options": [
+        "ver la televisión",
+        "ir al médico",
+        "leer un libro",
+        "mirar la enfermedad"
+      ],
+      "answer": 1,
+      "explain": "看 (ver) + 病 (enfermedad) = «ir al médico», tanto para el paciente que va como para el médico que atiende. 看医生 también se dice."
+    },
+    {
+      "id": "u11-006",
+      "type": "choose-meaning",
+      "skill": "vocabulary",
+      "level": 2,
+      "zh": "次",
+      "py": "cì",
+      "options": [
+        "vez",
+        "día",
+        "hora",
+        "vaso"
+      ],
+      "answer": 0,
+      "explain": "次 cì es el clasificador de las veces: 三次 (tres veces), 一天吃两次 (dos veces al día). 天 es día y 点 hora."
+    },
+    {
+      "id": "u11-007",
+      "type": "choose-character",
+      "skill": "characters",
+      "level": 1,
+      "es": "cabeza",
+      "options": [
+        "头",
+        "身",
+        "水",
+        "药"
+      ],
+      "answer": 0,
+      "explain": "头 tóu es «cabeza»; es la forma simplificada de 頭. 身 es «cuerpo», 水 «agua» y 药 «medicina»."
+    },
+    {
+      "id": "u11-008",
+      "type": "choose-character",
+      "skill": "characters",
+      "level": 1,
+      "es": "medicina",
+      "options": [
+        "要",
+        "药",
+        "累",
+        "病"
+      ],
+      "answer": 1,
+      "explain": "药 yào lleva el radical de la hierba 艹 arriba: antiguamente las medicinas eran hierbas. Cuidado con 要 yào (tener que), que suena igual pero no lleva 艹."
+    },
+    {
+      "id": "u11-009",
+      "type": "choose-character",
+      "skill": "characters",
+      "level": 1,
+      "es": "médico",
+      "options": [
+        "医院",
+        "学生",
+        "医生",
+        "老师"
+      ],
+      "answer": 2,
+      "explain": "医生 yīshēng es la persona (生, como en 学生) que cura (医). 医院 es el hospital, el lugar, con 院 (recinto)."
+    },
+    {
+      "id": "u11-010",
+      "type": "choose-character",
+      "skill": "characters",
+      "level": 1,
+      "es": "cansado",
+      "options": [
+        "冷",
+        "累",
+        "热",
+        "疼"
+      ],
+      "answer": 1,
+      "explain": "累 lèi es «cansado»: un campo 田 sobre hilo 糸. 疼 es «doler», y 冷 y 热 son el frío y el calor."
+    },
+    {
+      "id": "u11-011",
+      "type": "choose-character",
+      "skill": "characters",
+      "level": 2,
+      "es": "resfriarse",
+      "options": [
+        "发烧",
+        "生病",
+        "感冒",
+        "休息"
+      ],
+      "answer": 2,
+      "explain": "感冒 gǎnmào es el resfriado, con 感 (sentir). 发烧 es tener fiebre, 生病 ponerse enfermo en general y 休息 descansar."
+    },
+    {
+      "id": "u11-012",
+      "type": "listen-choose",
+      "skill": "listening",
+      "level": 1,
+      "zh": "头疼",
+      "py": "tóu téng",
+      "options": [
+        "头疼",
+        "发烧",
+        "很累",
+        "感冒"
+      ],
+      "answer": 0,
+      "voice": "f",
+      "explain": "Has oído tóu (cabeza, 2.º tono) seguido de téng (doler, 2.º tono): dos sílabas que suben. fāshāo empezaría con f- y sería alto y plano."
+    },
+    {
+      "id": "u11-013",
+      "type": "listen-choose",
+      "skill": "listening",
+      "level": 1,
+      "zh": "吃药",
+      "py": "chī yào",
+      "options": [
+        "吃饭",
+        "吃药",
+        "喝水",
+        "要药"
+      ],
+      "answer": 1,
+      "voice": "m",
+      "explain": "chī (comer, 1.º tono) + yào (medicina, 4.º tono). 吃饭 terminaría en fàn, y 喝水 empezaría por hē."
+    },
+    {
+      "id": "u11-014",
+      "type": "listen-choose",
+      "skill": "listening",
+      "level": 1,
+      "zh": "我有点儿不舒服。",
+      "py": "Wǒ yǒudiǎnr bù shūfu.",
+      "options": [
+        "我有点儿不舒服。",
+        "我很舒服。",
+        "我有点儿累。",
+        "我不太舒服。"
+      ],
+      "answer": 0,
+      "voice": "f",
+      "explain": "Tras wǒ se oye yǒudiǎnr (un poco) y luego bù shūfu. 有点儿 y 不太 significan casi lo mismo, pero suenan distinto: yǒudiǎnr frente a bú tài."
+    },
+    {
+      "id": "u11-015",
+      "type": "listen-choose",
+      "skill": "listening",
+      "level": 1,
+      "zh": "你怎么了？",
+      "py": "Nǐ zěnme le?",
+      "options": [
+        "你怎么样？",
+        "你怎么了？",
+        "你怎么去？",
+        "你好了吗？"
+      ],
+      "answer": 1,
+      "voice": "m",
+      "explain": "zěnme + le (neutro) es «¿qué te pasa?». zěnmeyàng («qué tal») termina en yàng, con 4.º tono, un sonido muy distinto de le."
+    },
+    {
+      "id": "u11-016",
+      "type": "listen-choose",
+      "skill": "listening",
+      "level": 2,
+      "zh": "我生病了。",
+      "py": "Wǒ shēngbìng le.",
+      "options": [
+        "我生病了。",
+        "我感冒了。",
+        "我没生病。",
+        "他生病了。"
+      ],
+      "answer": 0,
+      "voice": "f",
+      "explain": "shēngbìng (1-4) frente a gǎnmào (3-4): la primera sílaba es muy distinta. No hay méi delante del verbo y el sujeto es wǒ."
+    },
+    {
+      "id": "u11-017",
+      "type": "listen-choose",
+      "skill": "listening",
+      "level": 2,
+      "zh": "昨天我没吃饭。",
+      "py": "Zuótiān wǒ méi chī fàn.",
+      "options": [
+        "昨天我没吃药。",
+        "昨天我没吃饭。",
+        "昨天我不吃饭。",
+        "今天我没吃饭。"
+      ],
+      "answer": 1,
+      "voice": "m",
+      "explain": "zuótiān (ayer) + méi (negación de pasado, 2.º tono) + chī fàn (comer). yào (medicina) sonaría con 4.º tono; bù sería otra negación."
+    },
+    {
+      "id": "u11-018",
+      "type": "listen-choose",
+      "skill": "listening",
+      "level": 2,
+      "zh": "你要多喝水。",
+      "py": "Nǐ yào duō hē shuǐ.",
+      "options": [
+        "你要多休息。",
+        "你要多喝水。",
+        "你要吃药。",
+        "你不能喝咖啡。"
+      ],
+      "answer": 1,
+      "voice": "f",
+      "explain": "yào (tener que) + duō (más) + hē shuǐ (beber agua). xiūxi (descansar) empezaría por x-, y kāfēi (café) es muy reconocible."
+    },
+    {
+      "id": "u11-019",
+      "type": "listen-choose",
+      "skill": "listening",
+      "level": 2,
+      "zh": "一天吃三次。",
+      "py": "Yì tiān chī sān cì.",
+      "options": [
+        "一天吃三次。",
+        "一天吃两次。",
+        "三天吃一次。",
+        "一天吃四次。"
+      ],
+      "answer": 0,
+      "voice": "m",
+      "explain": "yì tiān (un día) y luego sān cì (tres veces). sān (1.º tono) frente a sì (cuatro, 4.º tono) y liǎng (dos): escucha bien el número que va delante de cì."
+    },
+    {
+      "id": "u11-020",
+      "type": "listen-choose",
+      "skill": "listening",
+      "level": 1,
+      "zh": "我太累了。",
+      "py": "Wǒ tài lèi le.",
+      "options": [
+        "我太累了。",
+        "我不累。",
+        "我太热了。",
+        "我有点儿累。"
+      ],
+      "answer": 0,
+      "voice": "f",
+      "explain": "tài … le exagera: «demasiado cansado». lèi (4.º tono, con l-) frente a rè (calor): la consonante inicial las distingue."
+    },
+    {
+      "id": "u11-021",
+      "type": "listen-choose",
+      "skill": "listening",
+      "level": 2,
+      "zh": "我现在不发烧了。",
+      "py": "Wǒ xiànzài bù fāshāo le.",
+      "options": [
+        "我现在发烧了。",
+        "我现在不发烧了。",
+        "我昨天发烧了。",
+        "我现在有点儿发烧。"
+      ],
+      "answer": 1,
+      "voice": "m",
+      "explain": "xiànzài (ahora) + bù + fāshāo + le: «ya no tengo fiebre». El bù delante y el le final marcan el cambio de situación."
+    },
+    {
+      "id": "u11-022",
+      "type": "listen-choose",
+      "skill": "listening",
+      "level": 2,
+      "zh": "他去医院看病了。",
+      "py": "Tā qù yīyuàn kànbìng le.",
+      "options": [
+        "他去医院看病了。",
+        "他去学校上课了。",
+        "他在医院工作。",
+        "她去医院看朋友了。"
+      ],
+      "answer": 0,
+      "voice": "f",
+      "explain": "qù yīyuàn (ir al hospital) + kànbìng (al médico) + le. 看朋友 (ver a un amigo) terminaría en péngyou; 工作 y 上课 suenan muy distintos."
+    },
+    {
+      "id": "u11-023",
+      "type": "listen-choose",
+      "skill": "listening",
+      "level": 2,
+      "zh": "你几点睡觉？",
+      "py": "Nǐ jǐ diǎn shuìjiào?",
+      "options": [
+        "你几点起床？",
+        "你几点睡觉？",
+        "你几点上课？",
+        "你几点吃饭？"
+      ],
+      "answer": 1,
+      "voice": "m",
+      "explain": "Las cuatro empiezan igual (nǐ jǐ diǎn); la diferencia está al final: shuìjiào (dormir), con sh- retrofleja y 4-4, frente a qǐchuáng (levantarse)."
+    },
+    {
+      "id": "u11-024",
+      "type": "listen-answer",
+      "skill": "listening",
+      "level": 1,
+      "question": "你怎么了？",
+      "questionPy": "Nǐ zěnme le?",
+      "questionEs": "¿Qué te pasa?",
+      "options": [
+        "我很好，谢谢。",
+        "我有点儿不舒服，头疼。",
+        "我是学生。"
+      ],
+      "answer": 1,
+      "answerEs": "No me encuentro bien, me duele la cabeza.",
+      "grammarIds": [
+        "yidianr-youdianr",
+        "question-words"
+      ],
+      "explain": "怎么了 se pregunta cuando algo va mal, así que la respuesta explica el problema. 我很好 responde a 你好吗, no a 怎么了."
+    },
+    {
+      "id": "u11-025",
+      "type": "listen-answer",
+      "skill": "listening",
+      "level": 1,
+      "question": "你发烧吗？",
+      "questionPy": "Nǐ fāshāo ma?",
+      "questionEs": "¿Tienes fiebre?",
+      "options": [
+        "有点儿发烧。",
+        "我很高兴。",
+        "我喜欢喝水。"
+      ],
+      "answer": 0,
+      "answerEs": "Un poco de fiebre.",
+      "grammarIds": [
+        "ma",
+        "yidianr-youdianr"
+      ],
+      "explain": "Pregunta con 吗: se contesta con el verbo (发烧 / 不发烧), y 有点儿 matiza que es poca. Las otras opciones no hablan de la fiebre."
+    },
+    {
+      "id": "u11-026",
+      "type": "listen-answer",
+      "skill": "listening",
+      "level": 2,
+      "question": "你哪儿不舒服？",
+      "questionPy": "Nǐ nǎr bù shūfu?",
+      "questionEs": "¿Qué le duele? (¿dónde no se encuentra bien?)",
+      "options": [
+        "我在医院。",
+        "我头疼，还有点儿发烧。",
+        "我不喜欢医院。"
+      ],
+      "answer": 1,
+      "answerEs": "Me duele la cabeza y tengo algo de fiebre.",
+      "grammarIds": [
+        "question-words"
+      ],
+      "explain": "哪儿不舒服 es la pregunta del médico: aquí 哪儿 no es un lugar sino «qué parte». La respuesta enumera los síntomas. 我在医院 contesta a 你在哪儿."
+    },
+    {
+      "id": "u11-027",
+      "type": "listen-answer",
+      "skill": "listening",
+      "level": 2,
+      "question": "我要吃药吗？",
+      "questionPy": "Wǒ yào chī yào ma?",
+      "questionEs": "¿Tengo que tomar medicinas?",
+      "options": [
+        "要，一天吃两次。",
+        "我没有药。",
+        "你吃饭了吗？"
+      ],
+      "answer": 0,
+      "answerEs": "Sí, dos veces al día.",
+      "grammarIds": [
+        "modal-verbs",
+        "ma"
+      ],
+      "explain": "A 要……吗 se contesta repitiendo 要 (o 不要). Luego el médico añade la pauta: 一天吃两次."
+    },
+    {
+      "id": "u11-028",
+      "type": "listen-answer",
+      "skill": "listening",
+      "level": 1,
+      "question": "你昨天晚上几点睡觉？",
+      "questionPy": "Nǐ zuótiān wǎnshang jǐ diǎn shuìjiào?",
+      "questionEs": "¿A qué hora te acostaste anoche?",
+      "options": [
+        "一点。我太累了。",
+        "我七点起床。",
+        "我昨天没上课。"
+      ],
+      "answer": 0,
+      "answerEs": "A la una. Estoy demasiado cansado.",
+      "grammarIds": [
+        "dates-time",
+        "question-words"
+      ],
+      "explain": "几点 pide una hora, y la pregunta es sobre 睡觉 (acostarse), no sobre 起床 (levantarse). La tercera opción habla de otra cosa."
+    },
+    {
+      "id": "u11-029",
+      "type": "listen-answer",
+      "skill": "listening",
+      "level": 2,
+      "question": "你好了吗？",
+      "questionPy": "Nǐ hǎo le ma?",
+      "questionEs": "¿Ya estás bien?",
+      "options": [
+        "好了，不发烧了。",
+        "你好！",
+        "我是好学生。"
+      ],
+      "answer": 0,
+      "answerEs": "Sí, ya no tengo fiebre.",
+      "grammarIds": [
+        "le",
+        "ma"
+      ],
+      "explain": "好了 significa «curado» (cambio de estado con 了). Se responde 好了 o 还没好. 你好 es un saludo y no tiene nada que ver."
+    },
+    {
+      "id": "u11-030",
+      "type": "listen-answer",
+      "skill": "listening",
+      "level": 2,
+      "question": "你昨天为什么没来上课？",
+      "questionPy": "Nǐ zuótiān wèishénme méi lái shàngkè?",
+      "questionEs": "¿Por qué no viniste ayer a clase?",
+      "options": [
+        "我生病了，去医院了。",
+        "我喜欢上课。",
+        "明天我去学校。"
+      ],
+      "answer": 0,
+      "answerEs": "Me puse enfermo y fui al hospital.",
+      "new": [
+        "为什么"
+      ],
+      "grammarIds": [
+        "question-words",
+        "le"
+      ],
+      "explain": "为什么 wèishénme (por qué) pide una razón: la única opción que explica la ausencia es la enfermedad. Hablar de mañana no justifica ayer."
+    },
+    {
+      "id": "u11-031",
+      "type": "listen-answer",
+      "skill": "listening",
+      "level": 1,
+      "question": "我能喝咖啡吗？",
+      "questionPy": "Wǒ néng hē kāfēi ma?",
+      "questionEs": "¿Puedo tomar café?",
+      "options": [
+        "不能，你要多喝水。",
+        "能，咖啡很贵。",
+        "我不喝咖啡。"
+      ],
+      "answer": 0,
+      "answerEs": "No, tienes que beber mucha agua.",
+      "grammarIds": [
+        "modal-verbs"
+      ],
+      "explain": "A 能……吗 se responde 能 o 不能. El médico lo prohíbe y da la alternativa (多喝水). «Sí, el café es caro» no tiene lógica."
+    },
+    {
+      "id": "u11-032",
+      "type": "listen-answer",
+      "skill": "listening",
+      "level": 2,
+      "question": "你现在几点起床？",
+      "questionPy": "Nǐ xiànzài jǐ diǎn qǐchuáng?",
+      "questionEs": "¿A qué hora te levantas ahora?",
+      "options": [
+        "七点，早睡早起。",
+        "我十二点睡觉。",
+        "我不想起床。"
+      ],
+      "answer": 0,
+      "answerEs": "A las siete; me acuesto pronto y me levanto pronto.",
+      "grammarIds": [
+        "dates-time"
+      ],
+      "explain": "Pregunta por la hora de 起床: la respuesta da una hora y un hábito. Decir cuándo te acuestas contesta a otra pregunta."
+    },
+    {
+      "id": "u11-033",
+      "type": "listen-answer",
+      "skill": "listening",
+      "level": 2,
+      "question": "你身体怎么样？",
+      "questionPy": "Nǐ shēntǐ zěnmeyàng?",
+      "questionEs": "¿Qué tal estás de salud?",
+      "options": [
+        "很好，我现在不累了。",
+        "我的身体很高。",
+        "身体很重要。"
+      ],
+      "answer": 0,
+      "answerEs": "Bien, ya no estoy cansado.",
+      "grammarIds": [
+        "hen-adj",
+        "le"
+      ],
+      "explain": "身体怎么样 pregunta por el estado de salud: se responde con 很好 / 不太好 y, si quieres, un cambio con 了 (不累了)."
+    },
+    {
+      "id": "u11-034",
+      "type": "dictation-pinyin",
+      "skill": "listening",
+      "level": 1,
+      "zh": "身体",
+      "py": "shēntǐ",
+      "es": "cuerpo; salud",
+      "voice": "f",
+      "explain": "shēn (1.º) + tǐ (3.º). La sh- es retrofleja (lengua curvada) y la -n final no es -ng: no la confundas con shēng de 生病."
+    },
+    {
+      "id": "u11-035",
+      "type": "dictation-pinyin",
+      "skill": "listening",
+      "level": 1,
+      "zh": "头疼",
+      "py": "tóu téng",
+      "es": "dolor de cabeza",
+      "voice": "m",
+      "explain": "Dos segundos tonos seguidos: tóu téng, las dos suben. La t- es aspirada, con un golpe de aire."
+    },
+    {
+      "id": "u11-036",
+      "type": "dictation-pinyin",
+      "skill": "listening",
+      "level": 1,
+      "zh": "感冒",
+      "py": "gǎnmào",
+      "es": "resfriado",
+      "voice": "f",
+      "explain": "gǎn (3.º) + mào (4.º). La g- china no es sonora como la española, sino una «k» sin aspiración."
+    },
+    {
+      "id": "u11-037",
+      "type": "dictation-pinyin",
+      "skill": "listening",
+      "level": 1,
+      "zh": "医院",
+      "py": "yīyuàn",
+      "es": "hospital",
+      "voice": "m",
+      "explain": "yī (1.º) + yuàn (4.º). La ü de yuàn se escribe u tras y-, y la sílaba termina en -an con la boca abierta."
+    },
+    {
+      "id": "u11-038",
+      "type": "dictation-pinyin",
+      "skill": "listening",
+      "level": 2,
+      "zh": "我有点儿累。",
+      "py": "Wǒ yǒudiǎnr lèi.",
+      "es": "Estoy un poco cansado.",
+      "voice": "f",
+      "explain": "wǒ yǒu son dos terceros tonos (se dice wó yǒu). diǎnr lleva la -r final del norte, que se escribe pegada: diǎnr. lèi es 4.º tono."
+    },
+    {
+      "id": "u11-039",
+      "type": "dictation-pinyin",
+      "skill": "listening",
+      "level": 2,
+      "zh": "你要多休息。",
+      "py": "Nǐ yào duō xiūxi.",
+      "es": "Tienes que descansar más.",
+      "voice": "m",
+      "explain": "yào (4.º) + duō (1.º) + xiūxi (1.º + neutro). La x- de xiū es suave, con la lengua plana; xi final va sin tilde."
+    },
+    {
+      "id": "u11-040",
+      "type": "dictation-pinyin",
+      "skill": "listening",
+      "level": 2,
+      "zh": "他生病了。",
+      "py": "Tā shēngbìng le.",
+      "es": "Él se ha puesto enfermo.",
+      "voice": "f",
+      "explain": "shēng (1.º, con -ng) + bìng (4.º, con -ng) + le neutro. Las dos sílabas terminan en nasal: no escribas shen ni bin."
+    },
+    {
+      "id": "u11-041",
+      "type": "dictation-pinyin",
+      "skill": "listening",
+      "level": 2,
+      "zh": "一天吃三次药。",
+      "py": "Yì tiān chī sān cì yào.",
+      "es": "Tres veces al día se toma la medicina.",
+      "voice": "m",
+      "explain": "一 pasa a 4.º tono (yì) ante tiān. cì lleva la «i» zumbada de las sílabas con c-, z-, s-: no suena como la i española."
+    },
+    {
+      "id": "u11-042",
+      "type": "dictation-hanzi",
+      "skill": "listening",
+      "level": 1,
+      "zh": "药",
+      "py": "yào",
+      "es": "medicina",
+      "voice": "f",
+      "explain": "药 lleva 艹 (hierba) arriba y 约 debajo. No lo confundas con 要 (tener que), que suena exactamente igual pero no lleva el radical de la hierba."
+    },
+    {
+      "id": "u11-043",
+      "type": "dictation-hanzi",
+      "skill": "listening",
+      "level": 1,
+      "zh": "医生",
+      "py": "yīshēng",
+      "es": "médico",
+      "voice": "m",
+      "explain": "医 tiene una caja (匚) con una flecha dentro (矢), y 生 es el mismo de 学生: «el que cura»."
+    },
+    {
+      "id": "u11-044",
+      "type": "dictation-hanzi",
+      "skill": "listening",
+      "level": 1,
+      "zh": "我头疼。",
+      "py": "Wǒ tóu téng.",
+      "es": "Me duele la cabeza.",
+      "voice": "f",
+      "explain": "La parte del cuerpo va delante del verbo: 头疼. 疼 lleva el radical de la enfermedad 疒, el mismo de 病."
+    },
+    {
+      "id": "u11-045",
+      "type": "dictation-hanzi",
+      "skill": "listening",
+      "level": 2,
+      "zh": "我感冒了。",
+      "py": "Wǒ gǎnmào le.",
+      "es": "Me he resfriado.",
+      "voice": "m",
+      "explain": "感 lleva 心 (corazón) debajo, como «sentir». 冒 es 日 encima de 目. El 了 final marca el cambio: antes no estaba resfriado."
+    },
+    {
+      "id": "u11-046",
+      "type": "dictation-hanzi",
+      "skill": "listening",
+      "level": 2,
+      "zh": "你要多喝水。",
+      "py": "Nǐ yào duō hē shuǐ.",
+      "es": "Tienes que beber mucha agua.",
+      "voice": "f",
+      "explain": "要 (sin 艹: es «tener que», no la medicina) + 多 + 喝 (con 口, se bebe con la boca) + 水."
+    },
+    {
+      "id": "u11-047",
+      "type": "dictation-hanzi",
+      "skill": "listening",
+      "level": 2,
+      "zh": "昨天我没去上课。",
+      "py": "Zuótiān wǒ méi qù shàngkè.",
+      "es": "Ayer no fui a clase.",
+      "voice": "m",
+      "explain": "Acción pasada no realizada: 没 (no 不) y sin 了. 昨天 va delante del sujeto o del verbo, nunca al final."
+    },
+    {
+      "id": "u11-048",
+      "type": "dictation-hanzi",
+      "skill": "listening",
+      "level": 2,
+      "zh": "他现在好了。",
+      "py": "Tā xiànzài hǎo le.",
+      "es": "Él ya está bien.",
+      "voice": "f",
+      "explain": "好了 = «ya está curado». 现在 (ahora) va entre el sujeto y el predicado; el 了 final marca que la situación ha cambiado."
+    },
+    {
+      "id": "u11-049",
+      "type": "listen-tf",
+      "skill": "listening",
+      "level": 1,
+      "zh": "王明：安娜，你怎么了？\n安娜：我有点儿累，昨天晚上一点睡觉。",
+      "py": "Wáng Míng: Ānnà, nǐ zěnme le?\nĀnnà: Wǒ yǒudiǎnr lèi, zuótiān wǎnshang yì diǎn shuìjiào.",
+      "voice": "f",
+      "statements": [
+        {
+          "s": "Ana está enferma.",
+          "truth": false,
+          "why": "Dice 有点儿累: solo está un poco cansada."
+        },
+        {
+          "s": "Ana se acostó a la una.",
+          "truth": true,
+          "why": "昨天晚上一点睡觉."
+        }
+      ],
+      "explain": "怎么了 pregunta qué pasa; Ana responde con 有点儿 + adjetivo y da la causa. 一点 aquí es la hora (la una), no «un poco»."
+    },
+    {
+      "id": "u11-050",
+      "type": "listen-tf",
+      "skill": "listening",
+      "level": 2,
+      "zh": "雨果：李老师，我感冒了，发烧，今天不能上课。\n李老师：没关系，你在家休息吧。",
+      "py": "Yǔguǒ: Lǐ lǎoshī, wǒ gǎnmào le, fāshāo, jīntiān bù néng shàngkè.\nLǐ lǎoshī: Méi guānxi, nǐ zài jiā xiūxi ba.",
+      "voice": "m",
+      "statements": [
+        {
+          "s": "Hugo tiene fiebre.",
+          "truth": true,
+          "why": "发烧."
+        },
+        {
+          "s": "Hugo irá a clase hoy.",
+          "truth": false,
+          "why": "今天不能上课: no puede ir."
+        },
+        {
+          "s": "El profesor le dice que vaya al hospital.",
+          "truth": false,
+          "why": "Le dice 你在家休息吧: que descanse en casa."
+        }
+      ],
+      "explain": "不能 + verbo = «no poder» por las circunstancias. 没关系 quita importancia y 吧 suaviza el consejo del profesor."
+    },
+    {
+      "id": "u11-051",
+      "type": "listen-tf",
+      "skill": "listening",
+      "level": 2,
+      "zh": "医生：你哪儿不舒服？\n安娜：我肚子疼，昨天没吃饭。\n医生：你要多喝水，这个药一天吃两次。",
+      "py": "Yīshēng: Nǐ nǎr bù shūfu?\nĀnnà: Wǒ dùzi téng, zuótiān méi chī fàn.\nYīshēng: Nǐ yào duō hē shuǐ, zhège yào yì tiān chī liǎng cì.",
+      "voice": "f",
+      "new": [
+        "肚子"
+      ],
+      "statements": [
+        {
+          "s": "A Ana le duele la cabeza.",
+          "truth": false,
+          "why": "Dice 肚子疼: le duele la barriga."
+        },
+        {
+          "s": "Ana no comió ayer.",
+          "truth": true,
+          "why": "昨天没吃饭."
+        },
+        {
+          "s": "La medicina se toma tres veces al día.",
+          "truth": false,
+          "why": "一天吃两次: dos veces."
+        }
+      ],
+      "explain": "肚子 dùzi es la barriga. Escucha el número delante de 次: liǎng (dos), no sān (tres)."
+    },
+    {
+      "id": "u11-052",
+      "type": "listen-tf",
+      "skill": "listening",
+      "level": 2,
+      "zh": "我上个星期生病了，头疼，发烧。我没去学校，在家休息了三天。现在我好了。",
+      "py": "Wǒ shàng ge xīngqī shēngbìng le, tóu téng, fāshāo. Wǒ méi qù xuéxiào, zài jiā xiūxi le sān tiān. Xiànzài wǒ hǎo le.",
+      "voice": "m",
+      "new": [
+        "上个星期"
+      ],
+      "statements": [
+        {
+          "s": "El hablante se puso enfermo la semana pasada.",
+          "truth": true,
+          "why": "上个星期生病了."
+        },
+        {
+          "s": "Fue a la escuela aunque estaba enfermo.",
+          "truth": false,
+          "why": "我没去学校."
+        },
+        {
+          "s": "Descansó tres días en casa.",
+          "truth": true,
+          "why": "在家休息了三天."
+        },
+        {
+          "s": "Todavía está enfermo.",
+          "truth": false,
+          "why": "现在我好了: ya está bien."
+        }
+      ],
+      "explain": "上个星期 = la semana pasada. Fíjate en los dos usos de 了: 生病了 (cambio) y 休息了三天 (acción completada con duración)."
+    },
+    {
+      "id": "u11-053",
+      "type": "listen-tf",
+      "skill": "listening",
+      "level": 1,
+      "zh": "安娜：雨果，你好了吗？\n雨果：好了，不发烧了，但是还有点儿累。",
+      "py": "Ānnà: Yǔguǒ, nǐ hǎo le ma?\nYǔguǒ: Hǎo le, bù fāshāo le, dànshì hái yǒudiǎnr lèi.",
+      "voice": "f",
+      "new": [
+        "但是",
+        "还"
+      ],
+      "statements": [
+        {
+          "s": "Hugo ya no tiene fiebre.",
+          "truth": true,
+          "why": "不发烧了."
+        },
+        {
+          "s": "Hugo ya no está nada cansado.",
+          "truth": false,
+          "why": "还有点儿累: todavía está un poco cansado."
+        }
+      ],
+      "explain": "不……了 = «ya no»; 还 hái = «todavía». Las dos partículas juntas describen una recuperación a medias."
+    },
+    {
+      "id": "u11-054",
+      "type": "listen-tf",
+      "skill": "listening",
+      "level": 2,
+      "zh": "王明：你现在几点睡觉，几点起床？\n雨果：十一点睡，七点起床。\n王明：很好！早睡早起，身体好。",
+      "py": "Wáng Míng: Nǐ xiànzài jǐ diǎn shuìjiào, jǐ diǎn qǐchuáng?\nYǔguǒ: Shíyī diǎn shuì, qī diǎn qǐchuáng.\nWáng Míng: Hěn hǎo! Zǎo shuì zǎo qǐ, shēntǐ hǎo.",
+      "voice": "m",
+      "statements": [
+        {
+          "s": "Hugo se acuesta a las once.",
+          "truth": true,
+          "why": "十一点睡."
+        },
+        {
+          "s": "Hugo se levanta a las nueve.",
+          "truth": false,
+          "why": "七点起床: a las siete."
+        },
+        {
+          "s": "Wang Ming cree que ese horario es bueno para la salud.",
+          "truth": true,
+          "why": "早睡早起，身体好."
+        }
+      ],
+      "explain": "睡 y 起 son las formas cortas de 睡觉 y 起床. 早睡早起 es un dicho: «acostarse y levantarse temprano»."
+    },
+    {
+      "id": "u11-055",
+      "type": "speak-repeat",
+      "skill": "speaking",
+      "level": 1,
+      "zh": "你怎么了？",
+      "py": "Nǐ zěnme le?",
+      "es": "¿Qué te pasa?",
+      "explain": "nǐ y zěn son dos terceros tonos: el primero sube (ní zěn). me y le son neutros, cortos y sin énfasis. No subas la voz al final."
+    },
+    {
+      "id": "u11-056",
+      "type": "speak-repeat",
+      "skill": "speaking",
+      "level": 1,
+      "zh": "我有点儿不舒服。",
+      "py": "Wǒ yǒudiǎnr bù shūfu.",
+      "es": "No me encuentro muy bien.",
+      "explain": "wǒ yǒu diǎn son tres terceros tonos seguidos: se dicen wó yóu diǎnr. La -r final de diǎnr se hace curvando la lengua, como una «r» inglesa."
+    },
+    {
+      "id": "u11-057",
+      "type": "speak-repeat",
+      "skill": "speaking",
+      "level": 1,
+      "zh": "我头疼。",
+      "py": "Wǒ tóu téng.",
+      "es": "Me duele la cabeza.",
+      "explain": "Tras wǒ, dos segundos tonos que suben: tóu téng. La t- es aspirada: suelta aire al pronunciarla."
+    },
+    {
+      "id": "u11-058",
+      "type": "speak-repeat",
+      "skill": "speaking",
+      "level": 1,
+      "zh": "我太累了。",
+      "py": "Wǒ tài lèi le.",
+      "es": "Estoy demasiado cansado.",
+      "explain": "tài y lèi son dos cuartos tonos seguidos: ambos caen con fuerza. El le final es neutro y apenas se oye."
+    },
+    {
+      "id": "u11-059",
+      "type": "speak-repeat",
+      "skill": "speaking",
+      "level": 1,
+      "zh": "我感冒了。",
+      "py": "Wǒ gǎnmào le.",
+      "es": "Me he resfriado.",
+      "explain": "gǎn baja (3.º) y mào cae (4.º). La g- es como una «k» suave, sin aspiración."
+    },
+    {
+      "id": "u11-060",
+      "type": "speak-repeat",
+      "skill": "speaking",
+      "level": 1,
+      "zh": "我有点儿发烧。",
+      "py": "Wǒ yǒudiǎnr fāshāo.",
+      "es": "Tengo un poco de fiebre.",
+      "explain": "fāshāo son dos primeros tonos: mantén la voz alta y plana. La sh- se hace con la lengua curvada hacia atrás."
+    },
+    {
+      "id": "u11-061",
+      "type": "speak-repeat",
+      "skill": "speaking",
+      "level": 2,
+      "zh": "你哪儿不舒服？",
+      "py": "Nǐ nǎr bù shūfu?",
+      "es": "¿Qué le duele?",
+      "explain": "nǐ nǎr: dos terceros tonos, el primero sube. nǎr lleva la -r final: la lengua se curva al terminar la sílaba. bù no cambia porque shū es 1.º tono."
+    },
+    {
+      "id": "u11-062",
+      "type": "speak-repeat",
+      "skill": "speaking",
+      "level": 2,
+      "zh": "你要多喝水，多休息。",
+      "py": "Nǐ yào duō hē shuǐ, duō xiūxi.",
+      "es": "Tienes que beber mucha agua y descansar mucho.",
+      "explain": "La estructura se repite dos veces: duō + verbo. hē es 1.º tono con una h- fuerte, como la «j» española suave."
+    },
+    {
+      "id": "u11-063",
+      "type": "speak-repeat",
+      "skill": "speaking",
+      "level": 2,
+      "zh": "这个药一天吃三次。",
+      "py": "Zhège yào yì tiān chī sān cì.",
+      "es": "Esta medicina se toma tres veces al día.",
+      "explain": "一 se pronuncia yì (4.º) delante de tiān. cì termina con la «i» zumbada: no digas «tsi» con i española."
+    },
+    {
+      "id": "u11-064",
+      "type": "speak-repeat",
+      "skill": "speaking",
+      "level": 2,
+      "zh": "我现在不发烧了。",
+      "py": "Wǒ xiànzài bù fāshāo le.",
+      "es": "Ya no tengo fiebre.",
+      "explain": "xiànzài: dos cuartos tonos con las iniciales x- (suave) y z- («ds»). bù se queda en 4.º porque fā es 1.º tono."
+    },
+    {
+      "id": "u11-065",
+      "type": "speak-repeat",
+      "skill": "speaking",
+      "level": 1,
+      "zh": "你早点儿睡吧。",
+      "py": "Nǐ zǎo diǎnr shuì ba.",
+      "es": "Acuéstate pronto.",
+      "new": [
+        "早点儿"
+      ],
+      "explain": "zǎo diǎnr: dos terceros tonos (zǎo se dice záo). shuì cae (4.º) y ba es neutro: el consejo suena suave gracias a 吧."
+    },
+    {
+      "id": "u11-066",
+      "type": "speak-repeat",
+      "skill": "speaking",
+      "level": 2,
+      "zh": "早睡早起，身体好。",
+      "py": "Zǎo shuì zǎo qǐ, shēntǐ hǎo.",
+      "es": "Acostarse y levantarse pronto es bueno para la salud.",
+      "explain": "Un dicho con ritmo: 4 + 3 sílabas. zǎo qǐ son dos terceros tonos (záo qǐ), y shēntǐ hǎo también termina con 3.º + 3.º (shēn tí hǎo)."
+    },
+    {
+      "id": "u11-067",
+      "type": "speak-read",
+      "skill": "speaking",
+      "level": 1,
+      "text": "我今天有点儿不舒服，头疼，有点儿发烧。我不想吃饭。",
+      "py": "Wǒ jīntiān yǒudiǎnr bù shūfu, tóu téng, yǒudiǎnr fāshāo. Wǒ bù xiǎng chī fàn.",
+      "es": "Hoy no me encuentro bien: me duele la cabeza y tengo algo de fiebre. No quiero comer.",
+      "explain": "有点儿 se repite delante de cada síntoma negativo. 不想 + verbo = no tener ganas de. Haz pausas en las comas para separar los síntomas."
+    },
+    {
+      "id": "u11-068",
+      "type": "speak-read",
+      "skill": "speaking",
+      "level": 2,
+      "text": "李老师，您好。我生病了，今天不能去上课。明天好了我再去。",
+      "py": "Lǐ lǎoshī, nín hǎo. Wǒ shēngbìng le, jīntiān bù néng qù shàngkè. Míngtiān hǎo le wǒ zài qù.",
+      "es": "Profesor Li, buenos días. Me he puesto enfermo y hoy no puedo ir a clase. Mañana, cuando esté bien, iré.",
+      "new": [
+        "再"
+      ],
+      "explain": "Es el mensaje típico para avisar de una ausencia. 不能 = no poder por circunstancias; 好了……再 = «cuando esté bien, entonces…»."
+    },
+    {
+      "id": "u11-069",
+      "type": "speak-read",
+      "skill": "speaking",
+      "level": 2,
+      "text": "医生说我感冒了。我要多喝水，多休息，一天吃两次药。我不能喝咖啡。",
+      "py": "Yīshēng shuō wǒ gǎnmào le. Wǒ yào duō hē shuǐ, duō xiūxi, yì tiān chī liǎng cì yào. Wǒ bù néng hē kāfēi.",
+      "es": "El médico dice que estoy resfriado. Tengo que beber mucha agua, descansar mucho y tomar la medicina dos veces al día. No puedo tomar café.",
+      "explain": "医生说 introduce las indicaciones. Fíjate en 两次 (dos veces): con clasificador se usa 两, no 二."
+    },
+    {
+      "id": "u11-070",
+      "type": "speak-read",
+      "skill": "speaking",
+      "level": 2,
+      "text": "安娜昨天没来上课。她肚子疼，去医院看病了。现在她在家休息。",
+      "py": "Ānnà zuótiān méi lái shàngkè. Tā dùzi téng, qù yīyuàn kànbìng le. Xiànzài tā zài jiā xiūxi.",
+      "es": "Ana no vino ayer a clase. Le dolía la barriga y fue al hospital. Ahora está descansando en casa.",
+      "new": [
+        "肚子"
+      ],
+      "explain": "Habla de otra persona: 没来 (no vino), 去……看病了 (fue al médico). 肚子 dùzi es la barriga: la parte del cuerpo va delante de 疼."
+    },
+    {
+      "id": "u11-071",
+      "type": "speak-read",
+      "skill": "speaking",
+      "level": 1,
+      "text": "我好了！现在不发烧了，也不累了。我很高兴。",
+      "py": "Wǒ hǎo le! Xiànzài bù fāshāo le, yě bú lèi le. Wǒ hěn gāoxìng.",
+      "es": "¡Ya estoy bien! Ya no tengo fiebre ni estoy cansado. Estoy muy contento.",
+      "explain": "Tres 了 de cambio seguidos: 好了, 不发烧了, 不累了. Observa que 不 cambia a bú solo ante lèi (4.º tono), no ante fā."
+    },
+    {
+      "id": "u11-072",
+      "type": "speak-read",
+      "skill": "speaking",
+      "level": 3,
+      "text": "我以前晚上两点睡觉，早上很累，常常头疼。现在我十一点睡，七点起床，身体好多了。",
+      "py": "Wǒ yǐqián wǎnshang liǎng diǎn shuìjiào, zǎoshang hěn lèi, chángcháng tóu téng. Xiànzài wǒ shíyī diǎn shuì, qī diǎn qǐchuáng, shēntǐ hǎo duō le.",
+      "es": "Antes me acostaba a las dos de la madrugada, por la mañana estaba muy cansado y a menudo me dolía la cabeza. Ahora me acuesto a las once, me levanto a las siete y estoy mucho mejor.",
+      "new": [
+        "以前",
+        "好多了"
+      ],
+      "explain": "以前 yǐqián = «antes» y 现在 = «ahora» contrastan dos rutinas. 好多了 = «mucho mejor». Dos horas: 两点 (las dos) y 十一点 (las once)."
+    },
+    {
+      "id": "u11-073",
+      "type": "speak-answer",
+      "skill": "speaking",
+      "level": 1,
+      "question": "你怎么了？",
+      "questionPy": "Nǐ zěnme le?",
+      "questionEs": "¿Qué te pasa?",
+      "sample": "我有点儿不舒服，头疼。",
+      "samplePy": "Wǒ yǒudiǎnr bù shūfu, tóu téng.",
+      "sampleEs": "No me encuentro bien, me duele la cabeza.",
+      "keywords": [
+        "不舒服"
+      ],
+      "grammarIds": [
+        "yidianr-youdianr"
+      ],
+      "explain": "Responde con 有点儿 + problema (不舒服, 累, 发烧) y, si quieres, la parte que duele + 疼."
+    },
+    {
+      "id": "u11-074",
+      "type": "speak-answer",
+      "skill": "speaking",
+      "level": 1,
+      "question": "你哪儿不舒服？",
+      "questionPy": "Nǐ nǎr bù shūfu?",
+      "questionEs": "¿Qué le duele?",
+      "sample": "我头疼，还有点儿发烧。",
+      "samplePy": "Wǒ tóu téng, hái yǒudiǎnr fāshāo.",
+      "sampleEs": "Me duele la cabeza y tengo algo de fiebre.",
+      "keywords": [
+        "疼"
+      ],
+      "new": [
+        "还"
+      ],
+      "grammarIds": [
+        "question-words",
+        "yidianr-youdianr"
+      ],
+      "explain": "Al médico se le dicen los síntomas: parte del cuerpo + 疼, y 还 (además) para añadir otro. No hace falta 我的 delante de 头."
+    },
+    {
+      "id": "u11-075",
+      "type": "speak-answer",
+      "skill": "speaking",
+      "level": 2,
+      "question": "你发烧吗？",
+      "questionPy": "Nǐ fāshāo ma?",
+      "questionEs": "¿Tienes fiebre?",
+      "sample": "不发烧，但是很累。",
+      "samplePy": "Bù fāshāo, dànshì hěn lèi.",
+      "sampleEs": "No tengo fiebre, pero estoy muy cansado.",
+      "keywords": [
+        "发烧"
+      ],
+      "new": [
+        "但是"
+      ],
+      "grammarIds": [
+        "ma",
+        "bu-mei"
+      ],
+      "explain": "Repite el verbo para contestar: 发烧 o 不发烧 (con 不, porque es un estado presente). Añade otro síntoma con 但是 o con 也."
+    },
+    {
+      "id": "u11-076",
+      "type": "speak-answer",
+      "skill": "speaking",
+      "level": 2,
+      "question": "你昨天晚上几点睡觉？",
+      "questionPy": "Nǐ zuótiān wǎnshang jǐ diǎn shuìjiào?",
+      "questionEs": "¿A qué hora te acostaste anoche?",
+      "sample": "我十二点睡觉，太晚了。",
+      "samplePy": "Wǒ shí'èr diǎn shuìjiào, tài wǎn le.",
+      "sampleEs": "Me acosté a las doce, demasiado tarde.",
+      "keywords": [
+        "点",
+        "睡觉"
+      ],
+      "grammarIds": [
+        "dates-time",
+        "tai-le"
+      ],
+      "explain": "La hora va delante del verbo: 我 + hora + 睡觉. 太晚了 (demasiado tarde) o 很早 valoran la hora."
+    },
+    {
+      "id": "u11-077",
+      "type": "speak-answer",
+      "skill": "speaking",
+      "level": 2,
+      "question": "我要吃药吗？",
+      "questionPy": "Wǒ yào chī yào ma?",
+      "questionEs": "¿Tengo que tomar medicinas?",
+      "sample": "要，这个药一天吃三次。",
+      "samplePy": "Yào, zhège yào yì tiān chī sān cì.",
+      "sampleEs": "Sí, esta medicina se toma tres veces al día.",
+      "keywords": [
+        "要",
+        "次"
+      ],
+      "grammarIds": [
+        "modal-verbs",
+        "measure-words"
+      ],
+      "explain": "Ahora eres el médico: contesta 要 o 不要 y da la pauta con 一天 + 吃 + número + 次."
+    },
+    {
+      "id": "u11-078",
+      "type": "speak-answer",
+      "skill": "speaking",
+      "level": 2,
+      "question": "你好了吗？",
+      "questionPy": "Nǐ hǎo le ma?",
+      "questionEs": "¿Ya estás bien?",
+      "sample": "好了，现在不发烧了。",
+      "samplePy": "Hǎo le, xiànzài bù fāshāo le.",
+      "sampleEs": "Sí, ya no tengo fiebre.",
+      "keywords": [
+        "好了"
+      ],
+      "grammarIds": [
+        "le"
+      ],
+      "explain": "好了 = curado. Si aún no, 还没好 (todavía no). Puedes añadir qué síntoma ha desaparecido con 不……了."
+    },
+    {
+      "id": "u11-079",
+      "type": "speak-answer",
+      "skill": "speaking",
+      "level": 2,
+      "question": "你今天为什么没来上课？",
+      "questionPy": "Nǐ jīntiān wèishénme méi lái shàngkè?",
+      "questionEs": "¿Por qué no has venido hoy a clase?",
+      "sample": "我生病了，去医院看病了。",
+      "samplePy": "Wǒ shēngbìng le, qù yīyuàn kànbìng le.",
+      "sampleEs": "Me puse enfermo y fui al médico.",
+      "keywords": [
+        "生病"
+      ],
+      "new": [
+        "为什么"
+      ],
+      "grammarIds": [
+        "le",
+        "question-words"
+      ],
+      "explain": "Explica la causa con 生病了 / 感冒了 y lo que hiciste con 去 + lugar + 看病了. Ambos 了 marcan algo ya ocurrido."
+    },
+    {
+      "id": "u11-080",
+      "type": "speak-answer",
+      "skill": "speaking",
+      "level": 1,
+      "question": "你现在几点起床？",
+      "questionPy": "Nǐ xiànzài jǐ diǎn qǐchuáng?",
+      "questionEs": "¿A qué hora te levantas ahora?",
+      "sample": "我七点起床，很早。",
+      "samplePy": "Wǒ qī diǎn qǐchuáng, hěn zǎo.",
+      "sampleEs": "Me levanto a las siete, muy temprano.",
+      "keywords": [
+        "点",
+        "起床"
+      ],
+      "grammarIds": [
+        "dates-time",
+        "hen-adj"
+      ],
+      "explain": "Hora + 起床, y valora con 很早 o 很晚. Recuerda que en chino la hora va antes del verbo."
+    },
+    {
+      "id": "u11-081",
+      "type": "speak-answer",
+      "skill": "speaking",
+      "level": 2,
+      "question": "你朋友生病了，你说什么？",
+      "questionPy": "Nǐ péngyou shēngbìng le, nǐ shuō shénme?",
+      "questionEs": "Tu amigo está enfermo, ¿qué le dices?",
+      "sample": "你多休息，早点儿睡吧。",
+      "samplePy": "Nǐ duō xiūxi, zǎo diǎnr shuì ba.",
+      "sampleEs": "Descansa mucho y acuéstate pronto.",
+      "keywords": [
+        "休息"
+      ],
+      "new": [
+        "早点儿"
+      ],
+      "grammarIds": [
+        "ba",
+        "qing"
+      ],
+      "explain": "Para dar consejos: 多 + verbo (多休息, 多喝水) y 吧 al final para suavizar. 早点儿 = «un poco antes»."
+    },
+    {
+      "id": "u11-082",
+      "type": "speak-answer",
+      "skill": "speaking",
+      "level": 3,
+      "question": "你身体怎么样？你每天几点睡觉？",
+      "questionPy": "Nǐ shēntǐ zěnmeyàng? Nǐ měi tiān jǐ diǎn shuìjiào?",
+      "questionEs": "¿Qué tal tu salud? ¿A qué hora te acuestas cada día?",
+      "sample": "我身体很好。我每天十一点睡觉，七点起床。",
+      "samplePy": "Wǒ shēntǐ hěn hǎo. Wǒ měi tiān shíyī diǎn shuìjiào, qī diǎn qǐchuáng.",
+      "sampleEs": "Estoy bien de salud. Cada día me acuesto a las once y me levanto a las siete.",
+      "keywords": [
+        "身体",
+        "睡觉"
+      ],
+      "grammarIds": [
+        "hen-adj",
+        "dates-time",
+        "mei"
+      ],
+      "explain": "Dos preguntas, dos respuestas: 身体很好 / 不太好, y la rutina con 每天 + hora + verbo. 每天 va delante de la hora."
+    },
+    {
+      "id": "u11-083",
+      "type": "dialogue-complete",
+      "skill": "reading",
+      "level": 1,
+      "lines": [
+        {
+          "speaker": "王明",
+          "zh": "雨果，你怎么了？",
+          "py": "Yǔguǒ, nǐ zěnme le?",
+          "es": "Hugo, ¿qué te pasa?"
+        },
+        {
+          "speaker": "雨果",
+          "zh": "我有点儿累，昨天睡得很晚。",
+          "py": "Wǒ yǒudiǎnr lèi, zuótiān shuì de hěn wǎn.",
+          "es": "Estoy un poco cansado, ayer me acosté muy tarde."
+        },
+        {
+          "speaker": "王明",
+          "zh": "你今天早点儿睡吧。",
+          "py": "Nǐ jīntiān zǎo diǎnr shuì ba.",
+          "es": "Hoy acuéstate pronto."
+        }
+      ],
+      "missing": 1,
+      "options": [
+        "我有点儿累，昨天睡得很晚。",
+        "我很高兴，昨天睡得很早。",
+        "我不累，我很好。"
+      ],
+      "answer": 0,
+      "new": [
+        "早点儿",
+        "睡得很晚"
+      ],
+      "grammarIds": [
+        "yidianr-youdianr",
+        "complements"
+      ],
+      "explain": "Wang Ming aconseja acostarse pronto, así que Hugo tuvo que decir que está cansado por dormir tarde. 睡得很晚 = «se acostó muy tarde» (complemento con 得)."
+    },
+    {
+      "id": "u11-084",
+      "type": "dialogue-complete",
+      "skill": "reading",
+      "level": 2,
+      "lines": [
+        {
+          "speaker": "医生",
+          "zh": "你哪儿不舒服？",
+          "py": "Nǐ nǎr bù shūfu?",
+          "es": "¿Qué le duele?"
+        },
+        {
+          "speaker": "安娜",
+          "zh": "我肚子疼，昨天没吃饭。",
+          "py": "Wǒ dùzi téng, zuótiān méi chī fàn.",
+          "es": "Me duele la barriga, ayer no comí."
+        },
+        {
+          "speaker": "医生",
+          "zh": "你要多喝水，吃这个药。",
+          "py": "Nǐ yào duō hē shuǐ, chī zhège yào.",
+          "es": "Tiene que beber mucha agua y tomar esta medicina."
+        }
+      ],
+      "missing": 1,
+      "options": [
+        "我肚子疼，昨天没吃饭。",
+        "我很好，谢谢医生。",
+        "我不想去医院。"
+      ],
+      "answer": 0,
+      "new": [
+        "肚子"
+      ],
+      "grammarIds": [
+        "question-words",
+        "bu-mei"
+      ],
+      "explain": "El médico pregunta por los síntomas, así que la línea que falta los describe. Si Ana dijera 我很好, el médico no recetaría nada."
+    },
+    {
+      "id": "u11-085",
+      "type": "dialogue-complete",
+      "skill": "reading",
+      "level": 2,
+      "lines": [
+        {
+          "speaker": "雨果",
+          "zh": "李老师，我感冒了，今天不能上课。",
+          "py": "Lǐ lǎoshī, wǒ gǎnmào le, jīntiān bù néng shàngkè.",
+          "es": "Profesor Li, me he resfriado, hoy no puedo ir a clase."
+        },
+        {
+          "speaker": "李老师",
+          "zh": "没关系，你在家休息吧。",
+          "py": "Méi guānxi, nǐ zài jiā xiūxi ba.",
+          "es": "No pasa nada, descansa en casa."
+        },
+        {
+          "speaker": "雨果",
+          "zh": "谢谢老师，明天好了我再去。",
+          "py": "Xièxie lǎoshī, míngtiān hǎo le wǒ zài qù.",
+          "es": "Gracias, profesor; mañana, cuando esté bien, iré."
+        }
+      ],
+      "missing": 1,
+      "options": [
+        "没关系，你在家休息吧。",
+        "不客气，你去上课吧。",
+        "对不起，我也感冒了。"
+      ],
+      "answer": 0,
+      "new": [
+        "再"
+      ],
+      "grammarIds": [
+        "ba"
+      ],
+      "explain": "Ante una disculpa o un problema se responde 没关系; 不客气 es para «gracias». Y si Hugo no puede ir, decirle 你去上课吧 no tiene sentido."
+    },
+    {
+      "id": "u11-086",
+      "type": "dialogue-complete",
+      "skill": "reading",
+      "level": 2,
+      "lines": [
+        {
+          "speaker": "安娜",
+          "zh": "你好了吗？",
+          "py": "Nǐ hǎo le ma?",
+          "es": "¿Ya estás bien?"
+        },
+        {
+          "speaker": "王明",
+          "zh": "还没好，还有点儿发烧。",
+          "py": "Hái méi hǎo, hái yǒudiǎnr fāshāo.",
+          "es": "Todavía no, aún tengo algo de fiebre."
+        },
+        {
+          "speaker": "安娜",
+          "zh": "那你多休息，别去上课了。",
+          "py": "Nà nǐ duō xiūxi, bié qù shàngkè le.",
+          "es": "Pues descansa mucho y no vayas a clase."
+        }
+      ],
+      "missing": 1,
+      "options": [
+        "还没好，还有点儿发烧。",
+        "好了，我不发烧了。",
+        "我没有生病。"
+      ],
+      "answer": 0,
+      "new": [
+        "还",
+        "别"
+      ],
+      "grammarIds": [
+        "le",
+        "bu-mei"
+      ],
+      "explain": "Ana le dice que descanse y no vaya a clase, así que Wang Ming aún no está bien: 还没好. 别 bié = «no» (prohibición suave)."
+    },
+    {
+      "id": "u11-087",
+      "type": "dialogue-order",
+      "skill": "reading",
+      "level": 1,
+      "lines": [
+        {
+          "speaker": "安娜",
+          "zh": "雨果，你怎么了？",
+          "py": "Yǔguǒ, nǐ zěnme le?",
+          "es": "Hugo, ¿qué te pasa?"
+        },
+        {
+          "speaker": "雨果",
+          "zh": "我头疼，有点儿发烧。",
+          "py": "Wǒ tóu téng, yǒudiǎnr fāshāo.",
+          "es": "Me duele la cabeza y tengo algo de fiebre."
+        },
+        {
+          "speaker": "安娜",
+          "zh": "你去医院看病吧。",
+          "py": "Nǐ qù yīyuàn kànbìng ba.",
+          "es": "Ve al médico."
+        },
+        {
+          "speaker": "雨果",
+          "zh": "好，我现在去。",
+          "py": "Hǎo, wǒ xiànzài qù.",
+          "es": "Vale, voy ahora."
+        }
+      ],
+      "grammarIds": [
+        "question-words",
+        "ba"
+      ],
+      "explain": "Pregunta por el problema → síntomas → consejo con 吧 → aceptación. El consejo solo tiene sentido después de conocer los síntomas."
+    },
+    {
+      "id": "u11-088",
+      "type": "dialogue-order",
+      "skill": "reading",
+      "level": 2,
+      "lines": [
+        {
+          "speaker": "医生",
+          "zh": "请坐。你怎么了？",
+          "py": "Qǐng zuò. Nǐ zěnme le?",
+          "es": "Siéntese. ¿Qué le pasa?"
+        },
+        {
+          "speaker": "王明",
+          "zh": "我感冒了，发烧。",
+          "py": "Wǒ gǎnmào le, fāshāo.",
+          "es": "Estoy resfriado, tengo fiebre."
+        },
+        {
+          "speaker": "医生",
+          "zh": "这个药一天吃两次，要多休息。",
+          "py": "Zhège yào yì tiān chī liǎng cì, yào duō xiūxi.",
+          "es": "Esta medicina, dos veces al día, y descanse mucho."
+        },
+        {
+          "speaker": "王明",
+          "zh": "好的，谢谢医生。",
+          "py": "Hǎo de, xièxie yīshēng.",
+          "es": "De acuerdo, gracias, doctor."
+        }
+      ],
+      "grammarIds": [
+        "qing",
+        "modal-verbs"
+      ],
+      "explain": "La consulta sigue un orden fijo: el médico invita a sentarse y pregunta, el paciente describe, el médico receta y el paciente agradece."
+    },
+    {
+      "id": "u11-089",
+      "type": "dialogue-order",
+      "skill": "reading",
+      "level": 2,
+      "lines": [
+        {
+          "speaker": "李老师",
+          "zh": "安娜，你昨天为什么没来？",
+          "py": "Ānnà, nǐ zuótiān wèishénme méi lái?",
+          "es": "Ana, ¿por qué no viniste ayer?"
+        },
+        {
+          "speaker": "安娜",
+          "zh": "对不起，老师，我生病了。",
+          "py": "Duìbuqǐ, lǎoshī, wǒ shēngbìng le.",
+          "es": "Lo siento, profesor, me puse enferma."
+        },
+        {
+          "speaker": "李老师",
+          "zh": "现在好了吗？",
+          "py": "Xiànzài hǎo le ma?",
+          "es": "¿Ya estás bien?"
+        },
+        {
+          "speaker": "安娜",
+          "zh": "好了，谢谢您。",
+          "py": "Hǎo le, xièxie nín.",
+          "es": "Sí, gracias."
+        }
+      ],
+      "new": [
+        "为什么"
+      ],
+      "grammarIds": [
+        "bu-mei",
+        "le",
+        "ma"
+      ],
+      "explain": "Primero la pregunta por la ausencia (没来), luego la disculpa con la causa, después el interés por su estado (好了吗) y la respuesta."
+    },
+    {
+      "id": "u11-090",
+      "type": "dialogue-who",
+      "skill": "reading",
+      "level": 2,
+      "lines": [
+        {
+          "speaker": "雨果",
+          "zh": "医生，我头疼，还有点儿发烧。",
+          "py": "Yīshēng, wǒ tóu téng, hái yǒudiǎnr fāshāo.",
+          "es": "Doctor, me duele la cabeza y tengo algo de fiebre."
+        },
+        {
+          "speaker": "医生",
+          "zh": "你感冒了。要多喝水，不能喝咖啡。",
+          "py": "Nǐ gǎnmào le. Yào duō hē shuǐ, bù néng hē kāfēi.",
+          "es": "Está resfriado. Beba mucha agua y nada de café."
+        },
+        {
+          "speaker": "雨果",
+          "zh": "我要吃药吗？",
+          "py": "Wǒ yào chī yào ma?",
+          "es": "¿Tengo que tomar medicinas?"
+        }
+      ],
+      "ask": 1,
+      "options": [
+        "雨果",
+        "医生",
+        "安娜"
+      ],
+      "answer": 1,
+      "new": [
+        "还"
+      ],
+      "explain": "Las indicaciones (要多喝水, 不能喝咖啡) las da el médico. Hugo es quien describe los síntomas y pregunta por la medicina."
+    },
+    {
+      "id": "u11-091",
+      "type": "dialogue-who",
+      "skill": "reading",
+      "level": 2,
+      "lines": [
+        {
+          "speaker": "安娜",
+          "zh": "王明，你身体怎么样？",
+          "py": "Wáng Míng, nǐ shēntǐ zěnmeyàng?",
+          "es": "Wang Ming, ¿qué tal estás?"
+        },
+        {
+          "speaker": "王明",
+          "zh": "好多了，不发烧了。",
+          "py": "Hǎo duō le, bù fāshāo le.",
+          "es": "Mucho mejor, ya no tengo fiebre."
+        },
+        {
+          "speaker": "安娜",
+          "zh": "太好了！你今天早点儿睡吧。",
+          "py": "Tài hǎo le! Nǐ jīntiān zǎo diǎnr shuì ba.",
+          "es": "¡Qué bien! Hoy acuéstate pronto."
+        }
+      ],
+      "ask": 2,
+      "options": [
+        "王明",
+        "安娜",
+        "李老师"
+      ],
+      "answer": 1,
+      "new": [
+        "好多了",
+        "早点儿"
+      ],
+      "explain": "Ana es quien se interesa por la salud de Wang Ming y quien le aconseja al final con 吧. Wang Ming solo responde cómo está."
+    },
+    {
+      "id": "u11-092",
+      "type": "dialogue-who",
+      "skill": "reading",
+      "level": 2,
+      "lines": [
+        {
+          "speaker": "雨果",
+          "zh": "喂，李老师，我是雨果。我生病了，今天不能上课。",
+          "py": "Wéi, Lǐ lǎoshī, wǒ shì Yǔguǒ. Wǒ shēngbìng le, jīntiān bù néng shàngkè.",
+          "es": "¿Diga? Profesor Li, soy Hugo. Estoy enfermo, hoy no puedo ir a clase."
+        },
+        {
+          "speaker": "李老师",
+          "zh": "没关系。你去看病了吗？",
+          "py": "Méi guānxi. Nǐ qù kànbìng le ma?",
+          "es": "No pasa nada. ¿Has ido al médico?"
+        },
+        {
+          "speaker": "雨果",
+          "zh": "去了，医生说我要多休息。",
+          "py": "Qù le, yīshēng shuō wǒ yào duō xiūxi.",
+          "es": "Sí, el médico dice que tengo que descansar mucho."
+        }
+      ],
+      "ask": 1,
+      "options": [
+        "雨果",
+        "李老师",
+        "医生"
+      ],
+      "answer": 1,
+      "new": [
+        "喂"
+      ],
+      "explain": "Quien pregunta 你去看病了吗 es el profesor Li, que recibe la llamada. El médico no habla en el diálogo: solo se cita lo que dijo (医生说)."
+    },
+    {
+      "id": "u11-093",
+      "type": "situation",
+      "skill": "vocabulary",
+      "level": 1,
+      "situation": "Ves a un amigo con mala cara y quieres saber qué le pasa.",
+      "options": [
+        "你怎么了？",
+        "你怎么样？",
+        "你叫什么？",
+        "你去哪儿？"
+      ],
+      "answer": 0,
+      "py": "Nǐ zěnme le?",
+      "grammarIds": [
+        "question-words"
+      ],
+      "explain": "怎么了 se usa cuando algo parece ir mal. 怎么样 es un «qué tal» general y no implica preocupación."
+    },
+    {
+      "id": "u11-094",
+      "type": "situation",
+      "skill": "vocabulary",
+      "level": 1,
+      "situation": "Estás en el médico y te pregunta qué te pasa. Te duele la cabeza.",
+      "options": [
+        "我头疼。",
+        "我头很好。",
+        "我喜欢头。",
+        "我的头很大。"
+      ],
+      "answer": 0,
+      "py": "Wǒ tóu téng.",
+      "explain": "Parte del cuerpo + 疼: 头疼. Las otras frases describen la cabeza, pero no dicen que duela."
+    },
+    {
+      "id": "u11-095",
+      "type": "situation",
+      "skill": "vocabulary",
+      "level": 2,
+      "situation": "Llamas a tu profesor para avisar de que estás enfermo y no puedes ir a clase.",
+      "options": [
+        "老师，我生病了，今天不能上课。",
+        "老师，我很高兴，今天不上课。",
+        "老师，我今天不想上课。",
+        "老师，您生病了吗？"
+      ],
+      "answer": 0,
+      "py": "Lǎoshī, wǒ shēngbìng le, jīntiān bù néng shàngkè.",
+      "grammarIds": [
+        "le",
+        "modal-verbs"
+      ],
+      "explain": "Se da la causa (生病了) y la consecuencia con 不能 (no poder). 不想上课 («no me apetece») sonaría muy mal como excusa."
+    },
+    {
+      "id": "u11-096",
+      "type": "situation",
+      "skill": "vocabulary",
+      "level": 2,
+      "situation": "Eres el médico y quieres saber cuál es el problema del paciente.",
+      "options": [
+        "你哪儿不舒服？",
+        "你在哪儿？",
+        "你舒服吗？",
+        "你是医生吗？"
+      ],
+      "answer": 0,
+      "py": "Nǐ nǎr bù shūfu?",
+      "grammarIds": [
+        "question-words"
+      ],
+      "explain": "哪儿不舒服 es la fórmula del médico: «¿qué le duele?». 你在哪儿 pregunta dónde estás, no qué te pasa."
+    },
+    {
+      "id": "u11-097",
+      "type": "situation",
+      "skill": "vocabulary",
+      "level": 2,
+      "situation": "Tu compañera ya se ha curado y quieres alegrarte y aconsejarle que se cuide.",
+      "options": [
+        "太好了！你要多休息。",
+        "太冷了！你要多穿衣服。",
+        "没关系，你去医院吧。",
+        "对不起，你生病了。"
+      ],
+      "answer": 0,
+      "py": "Tài hǎo le! Nǐ yào duō xiūxi.",
+      "grammarIds": [
+        "tai-le",
+        "modal-verbs"
+      ],
+      "explain": "太好了 expresa alegría y 要多休息 es el consejo. Mandarla al hospital o pedir perdón no encaja con alguien que ya está bien."
+    },
+    {
+      "id": "u11-098",
+      "type": "find-error",
+      "skill": "grammar",
+      "level": 1,
+      "zh": "我是很累。",
+      "tokens": [
+        "我",
+        "是",
+        "很",
+        "累"
+      ],
+      "wrongIndex": 1,
+      "correct": "我很累。",
+      "es": "Estoy muy cansado.",
+      "grammarIds": [
+        "hen-adj",
+        "shi"
+      ],
+      "explain": "«Estoy cansado» no lleva verbo en chino: el adjetivo va directamente con 很. 是 solo une nombres (我是学生)."
+    },
+    {
+      "id": "u11-099",
+      "type": "find-error",
+      "skill": "grammar",
+      "level": 2,
+      "zh": "我一点儿不舒服。",
+      "tokens": [
+        "我",
+        "一点儿",
+        "不",
+        "舒服"
+      ],
+      "wrongIndex": 1,
+      "correct": "我有点儿不舒服。",
+      "es": "No me encuentro muy bien.",
+      "grammarIds": [
+        "yidianr-youdianr"
+      ],
+      "explain": "Delante de un adjetivo o estado negativo va 有点儿, no 一点儿. 一点儿 va detrás de adjetivos o con nombres (喝一点儿水)."
+    },
+    {
+      "id": "u11-100",
+      "type": "find-error",
+      "skill": "grammar",
+      "level": 2,
+      "zh": "我好了，有点儿高兴。",
+      "tokens": [
+        "我",
+        "好了",
+        "，",
+        "有点儿",
+        "高兴"
+      ],
+      "wrongIndex": 3,
+      "correct": "我好了，很高兴。",
+      "es": "Ya estoy bien, estoy muy contento.",
+      "grammarIds": [
+        "yidianr-youdianr",
+        "hen-adj"
+      ],
+      "explain": "有点儿 solo se usa con cosas negativas o molestas (累, 疼, 不舒服). Con un adjetivo positivo como 高兴 se usa 很."
+    },
+    {
+      "id": "u11-101",
+      "type": "find-error",
+      "skill": "grammar",
+      "level": 2,
+      "zh": "昨天我不吃饭。",
+      "tokens": [
+        "昨天",
+        "我",
+        "不",
+        "吃饭"
+      ],
+      "wrongIndex": 2,
+      "correct": "昨天我没吃饭。",
+      "es": "Ayer no comí.",
+      "grammarIds": [
+        "bu-mei"
+      ],
+      "explain": "Una acción pasada que no ocurrió se niega con 没. 不吃饭 significaría «no como» (hábito o negativa)."
+    },
+    {
+      "id": "u11-102",
+      "type": "find-error",
+      "skill": "grammar",
+      "level": 2,
+      "zh": "我没生病了。",
+      "tokens": [
+        "我",
+        "没",
+        "生病",
+        "了"
+      ],
+      "wrongIndex": 3,
+      "correct": "我没生病。",
+      "es": "No me he puesto enfermo.",
+      "grammarIds": [
+        "bu-mei",
+        "le"
+      ],
+      "explain": "没 y 了 no van juntos: 没 ya niega que la acción o el cambio haya ocurrido. «Ya no estoy enfermo» sería 我不病了 o 我好了."
+    },
+    {
+      "id": "u11-103",
+      "type": "find-error",
+      "skill": "grammar",
+      "level": 2,
+      "zh": "我要去在医院看病。",
+      "tokens": [
+        "我",
+        "要",
+        "去",
+        "在",
+        "医院",
+        "看病"
+      ],
+      "wrongIndex": 3,
+      "correct": "我要去医院看病。",
+      "es": "Tengo que ir al hospital.",
+      "grammarIds": [
+        "lai-qu",
+        "zai"
+      ],
+      "explain": "去 ya significa «ir a»: el lugar va justo detrás, sin 在 ni ninguna preposición. 去在 es un calco del «ir a / estar en» español."
+    },
+    {
+      "id": "u11-104",
+      "type": "find-error",
+      "skill": "grammar",
+      "level": 2,
+      "zh": "我想吃药不。",
+      "tokens": [
+        "我",
+        "想",
+        "吃药",
+        "不"
+      ],
+      "wrongIndex": 3,
+      "correct": "我不想吃药。",
+      "es": "No quiero tomar medicinas.",
+      "grammarIds": [
+        "modal-verbs",
+        "bu-mei"
+      ],
+      "explain": "不 va delante del verbo modal: 不想 + verbo. Nunca se coloca al final de la frase."
+    },
+    {
+      "id": "u11-105",
+      "type": "find-error",
+      "skill": "grammar",
+      "level": 2,
+      "zh": "你怎么了吗？",
+      "tokens": [
+        "你",
+        "怎么了",
+        "吗"
+      ],
+      "wrongIndex": 2,
+      "correct": "你怎么了？",
+      "es": "¿Qué te pasa?",
+      "grammarIds": [
+        "ma",
+        "question-words"
+      ],
+      "explain": "怎么了 ya es una pregunta (lleva la interrogativa 怎么), así que no admite 吗. Las dos marcas interrogativas nunca van juntas."
+    },
+    {
+      "id": "u11-106",
+      "type": "find-error",
+      "skill": "grammar",
+      "level": 2,
+      "zh": "我没有累。",
+      "tokens": [
+        "我",
+        "没有",
+        "累"
+      ],
+      "wrongIndex": 1,
+      "correct": "我不累。",
+      "es": "No estoy cansado.",
+      "grammarIds": [
+        "bu-mei"
+      ],
+      "explain": "Los adjetivos se niegan con 不 (不累, 不冷). 没有 niega acciones pasadas o la posesión (没有药), pero no estados."
+    },
+    {
+      "id": "u11-107",
+      "type": "find-error",
+      "skill": "grammar",
+      "level": 1,
+      "zh": "我头疼很。",
+      "tokens": [
+        "我",
+        "头",
+        "疼",
+        "很"
+      ],
+      "wrongIndex": 3,
+      "correct": "我头很疼。",
+      "es": "Me duele mucho la cabeza.",
+      "grammarIds": [
+        "hen-adj",
+        "word-order"
+      ],
+      "explain": "很 va delante de lo que intensifica: 头很疼. Al final de la frase, como el «mucho» español, es un error de orden."
+    },
+    {
+      "id": "u11-108",
+      "type": "transform",
+      "skill": "grammar",
+      "level": 1,
+      "zh": "我很累。",
+      "py": "Wǒ hěn lèi.",
+      "es": "Estoy cansado.",
+      "target": "negative-bu",
+      "answer": "我不累。",
+      "grammarIds": [
+        "hen-adj",
+        "bu-mei"
+      ],
+      "explain": "Al negar un adjetivo, 很 desaparece y 不 va delante: 不累. Nunca 没累."
+    },
+    {
+      "id": "u11-109",
+      "type": "transform",
+      "skill": "grammar",
+      "level": 2,
+      "zh": "昨天我吃药了。",
+      "py": "Zuótiān wǒ chī yào le.",
+      "es": "Ayer tomé la medicina.",
+      "target": "negative-mei",
+      "answer": "昨天我没吃药。",
+      "alternatives": [
+        "昨天我没有吃药。"
+      ],
+      "grammarIds": [
+        "bu-mei",
+        "le"
+      ],
+      "explain": "Acción pasada → 没 (o 没有) delante del verbo y se elimina el 了."
+    },
+    {
+      "id": "u11-110",
+      "type": "transform",
+      "skill": "grammar",
+      "level": 1,
+      "zh": "他生病了。",
+      "py": "Tā shēngbìng le.",
+      "es": "Él se ha puesto enfermo.",
+      "target": "question-ma",
+      "answer": "他生病了吗？",
+      "grammarIds": [
+        "ma",
+        "le"
+      ],
+      "explain": "Para preguntar basta añadir 吗 al final, sin cambiar nada más. El 了 se mantiene."
+    },
+    {
+      "id": "u11-111",
+      "type": "transform",
+      "skill": "grammar",
+      "level": 2,
+      "zh": "你发烧。",
+      "py": "Nǐ fāshāo.",
+      "es": "Tienes fiebre.",
+      "target": "question-a-not-a",
+      "answer": "你发不发烧？",
+      "alternatives": [
+        "你发烧不发烧？"
+      ],
+      "grammarIds": [
+        "bu-mei"
+      ],
+      "explain": "En un verbo de dos sílabas la forma A不A suele repetir solo la primera: 发不发烧. Repetirlo entero (发烧不发烧) también se acepta."
+    },
+    {
+      "id": "u11-112",
+      "type": "transform",
+      "skill": "grammar",
+      "level": 2,
+      "zh": "我头疼。",
+      "py": "Wǒ tóu téng.",
+      "es": "Me duele la cabeza.",
+      "target": "question-word",
+      "answer": "你哪儿不舒服？",
+      "alternatives": [
+        "你哪儿疼？",
+        "你怎么了？"
+      ],
+      "grammarIds": [
+        "question-words"
+      ],
+      "explain": "La pregunta del médico es 哪儿不舒服 o 哪儿疼: 哪儿 ocupa el lugar de la parte del cuerpo. 怎么了 también provoca esa respuesta."
+    },
+    {
+      "id": "u11-113",
+      "type": "transform",
+      "skill": "grammar",
+      "level": 2,
+      "zh": "我不发烧。",
+      "py": "Wǒ bù fāshāo.",
+      "es": "No tengo fiebre.",
+      "target": "past-le",
+      "answer": "我不发烧了。",
+      "grammarIds": [
+        "le"
+      ],
+      "explain": "Añadir 了 a una negación con 不 crea «ya no…»: 不发烧了 = ya no tengo fiebre. Es el 了 de cambio de estado."
+    },
+    {
+      "id": "u11-114",
+      "type": "transform",
+      "skill": "grammar",
+      "level": 2,
+      "zh": "他去医院看病。",
+      "py": "Tā qù yīyuàn kànbìng.",
+      "es": "Él va al hospital.",
+      "target": "question-word",
+      "answer": "他去哪儿看病？",
+      "alternatives": [
+        "他去哪儿？",
+        "他去医院做什么？"
+      ],
+      "grammarIds": [
+        "question-words"
+      ],
+      "explain": "Sustituye el lugar por 哪儿 en su misma posición: 去哪儿看病. También se puede preguntar por la actividad con 做什么."
+    },
+    {
+      "id": "u11-115",
+      "type": "build-question",
+      "skill": "grammar",
+      "level": 1,
+      "answer": "我有点儿不舒服，头疼。",
+      "answerEs": "No me encuentro bien, me duele la cabeza.",
+      "question": "你怎么了？",
+      "questionPy": "Nǐ zěnme le?",
+      "alternatives": [
+        "你哪儿不舒服？"
+      ],
+      "grammarIds": [
+        "question-words"
+      ],
+      "explain": "Una respuesta con síntomas contesta a 怎么了 (qué te pasa) o a la pregunta del médico 哪儿不舒服."
+    },
+    {
+      "id": "u11-116",
+      "type": "build-question",
+      "skill": "grammar",
+      "level": 2,
+      "answer": "我十一点睡觉。",
+      "answerEs": "Me acuesto a las once.",
+      "question": "你几点睡觉？",
+      "questionPy": "Nǐ jǐ diǎn shuìjiào?",
+      "alternatives": [
+        "你晚上几点睡觉？"
+      ],
+      "grammarIds": [
+        "dates-time",
+        "question-words"
+      ],
+      "explain": "La respuesta da una hora, así que la pregunta pone 几点 en el lugar de 十一点, justo delante del verbo."
+    },
+    {
+      "id": "u11-117",
+      "type": "build-question",
+      "skill": "grammar",
+      "level": 2,
+      "answer": "这个药一天吃三次。",
+      "answerEs": "Esta medicina se toma tres veces al día.",
+      "question": "这个药一天吃几次？",
+      "questionPy": "Zhège yào yì tiān chī jǐ cì?",
+      "grammarIds": [
+        "question-words",
+        "measure-words"
+      ],
+      "explain": "三次 es un número pequeño con clasificador: se pregunta con 几次 en la misma posición. 多少 también valdría, pero 几 es lo habitual con 次."
+    },
+    {
+      "id": "u11-118",
+      "type": "build-question",
+      "skill": "grammar",
+      "level": 2,
+      "answer": "好了，我不发烧了。",
+      "answerEs": "Ya estoy bien, ya no tengo fiebre.",
+      "question": "你好了吗？",
+      "questionPy": "Nǐ hǎo le ma?",
+      "alternatives": [
+        "你还发烧吗？",
+        "你身体怎么样？"
+      ],
+      "new": [
+        "还"
+      ],
+      "grammarIds": [
+        "le",
+        "ma"
+      ],
+      "explain": "好了 responde a 好了吗 (¿ya estás bien?). También encaja 还发烧吗 (¿sigues con fiebre?) o la pregunta general 身体怎么样."
+    },
+    {
+      "id": "u11-119",
+      "type": "translate-bank",
+      "skill": "writing",
+      "level": 1,
+      "es": "Estoy un poco cansado.",
+      "zh": "我有点儿累。",
+      "py": "Wǒ yǒudiǎnr lèi.",
+      "tiles": [
+        "我",
+        "有点儿",
+        "累",
+        "一点儿",
+        "很",
+        "是"
+      ],
+      "grammarIds": [
+        "yidianr-youdianr"
+      ],
+      "explain": "有点儿 delante del adjetivo negativo. 一点儿 no puede ir ahí, y 是 nunca acompaña a un adjetivo."
+    },
+    {
+      "id": "u11-120",
+      "type": "translate-bank",
+      "skill": "writing",
+      "level": 2,
+      "es": "Ayer no fui a clase.",
+      "zh": "昨天我没去上课。",
+      "py": "Zuótiān wǒ méi qù shàngkè.",
+      "tiles": [
+        "昨天",
+        "我",
+        "没",
+        "去",
+        "上课",
+        "不",
+        "了"
+      ],
+      "alternatives": [
+        "我昨天没去上课。"
+      ],
+      "grammarIds": [
+        "bu-mei",
+        "word-order"
+      ],
+      "explain": "Pasado negativo → 没 sin 了. 昨天 puede ir delante o detrás de 我, pero siempre antes del verbo."
+    },
+    {
+      "id": "u11-121",
+      "type": "translate-bank",
+      "skill": "writing",
+      "level": 2,
+      "es": "Tienes que beber mucha agua y descansar mucho.",
+      "zh": "你要多喝水，多休息。",
+      "py": "Nǐ yào duō hē shuǐ, duō xiūxi.",
+      "tiles": [
+        "你",
+        "要",
+        "多",
+        "喝",
+        "水",
+        "多",
+        "休息",
+        "很",
+        "吃"
+      ],
+      "grammarIds": [
+        "modal-verbs"
+      ],
+      "explain": "要 (tener que) + 多 + verbo, dos veces. 多 va delante del verbo; 很 no sirve para «mucho» con verbos de acción."
+    },
+    {
+      "id": "u11-122",
+      "type": "translate-bank",
+      "skill": "writing",
+      "level": 2,
+      "es": "Ya no tengo fiebre.",
+      "zh": "我不发烧了。",
+      "py": "Wǒ bù fāshāo le.",
+      "tiles": [
+        "我",
+        "不",
+        "发烧",
+        "了",
+        "没",
+        "现在"
+      ],
+      "alternatives": [
+        "我现在不发烧了。"
+      ],
+      "grammarIds": [
+        "le",
+        "bu-mei"
+      ],
+      "explain": "«Ya no» = 不……了: 不 delante del verbo y 了 al final marcando el cambio. 没 aquí sobra."
+    },
+    {
+      "id": "u11-123",
+      "type": "translate-bank",
+      "skill": "writing",
+      "level": 2,
+      "es": "Él fue al hospital a ver al médico.",
+      "zh": "他去医院看病了。",
+      "py": "Tā qù yīyuàn kànbìng le.",
+      "tiles": [
+        "他",
+        "去",
+        "医院",
+        "看病",
+        "了",
+        "在",
+        "医生"
+      ],
+      "grammarIds": [
+        "lai-qu",
+        "le"
+      ],
+      "explain": "去 + lugar + actividad: 去医院看病. Sin 在 (去 ya lleva el «a») y con 了 final porque ya ocurrió. 医生 no hace falta: 看病 ya incluye al médico."
+    },
+    {
+      "id": "u11-124",
+      "type": "translate-free",
+      "skill": "writing",
+      "level": 1,
+      "es": "No me encuentro bien.",
+      "answers": [
+        "我不舒服。",
+        "我有点儿不舒服。",
+        "我不太舒服。"
+      ],
+      "py": "Wǒ bù shūfu.",
+      "hint": "舒服 se niega con 不.",
+      "grammarIds": [
+        "bu-mei",
+        "yidianr-youdianr"
+      ],
+      "explain": "不舒服 es la base; 有点儿 o 不太 suavizan. Nunca 没舒服: los estados se niegan con 不."
+    },
+    {
+      "id": "u11-125",
+      "type": "translate-free",
+      "skill": "writing",
+      "level": 2,
+      "es": "Me he resfriado, tengo un poco de fiebre.",
+      "answers": [
+        "我感冒了，有点儿发烧。",
+        "我感冒了，我有点儿发烧。"
+      ],
+      "py": "Wǒ gǎnmào le, yǒudiǎnr fāshāo.",
+      "hint": "El cambio se marca con 了; «un poco» (malo) es 有点儿.",
+      "grammarIds": [
+        "le",
+        "yidianr-youdianr"
+      ],
+      "explain": "感冒了 (me he resfriado: cambio de estado) y 有点儿发烧. El sujeto de la segunda parte puede omitirse."
+    },
+    {
+      "id": "u11-126",
+      "type": "translate-free",
+      "skill": "writing",
+      "level": 2,
+      "es": "¿Tengo que tomar medicinas?",
+      "answers": [
+        "我要吃药吗？",
+        "我要不要吃药？"
+      ],
+      "py": "Wǒ yào chī yào ma?",
+      "grammarIds": [
+        "modal-verbs",
+        "ma"
+      ],
+      "explain": "要 + verbo + 吗, o la forma A不A: 要不要. Recuerda que la medicina «se come»: 吃药, no 喝药."
+    },
+    {
+      "id": "u11-127",
+      "type": "translate-free",
+      "skill": "writing",
+      "level": 2,
+      "es": "Ayer no comí ni dormí bien.",
+      "answers": [
+        "昨天我没吃饭，也没睡好。",
+        "我昨天没吃饭，也没睡好。"
+      ],
+      "py": "Zuótiān wǒ méi chī fàn, yě méi shuì hǎo.",
+      "hint": "«ni» = 也没.",
+      "grammarIds": [
+        "bu-mei",
+        "ye-dou",
+        "complements"
+      ],
+      "explain": "Dos acciones pasadas negadas con 没, unidas por 也. 睡好 = dormir bien (complemento de resultado). 昨天 va delante o detrás de 我."
+    },
+    {
+      "id": "u11-128",
+      "type": "translate-free",
+      "skill": "writing",
+      "level": 2,
+      "es": "Esta medicina se toma dos veces al día, después de comer.",
+      "answers": [
+        "这个药一天吃两次，饭后吃。",
+        "这个药饭后吃，一天吃两次。"
+      ],
+      "py": "Zhège yào yì tiān chī liǎng cì, fàn hòu chī.",
+      "hint": "«dos veces» = 两次 (no 二次); «después de comer» = 饭后.",
+      "new": [
+        "饭后"
+      ],
+      "grammarIds": [
+        "numbers",
+        "measure-words"
+      ],
+      "explain": "Con clasificador se usa 两: 两次. 一天 va delante del verbo para decir «al día». 饭后 = después de la comida."
+    },
+    {
+      "id": "u11-129",
+      "type": "cloze",
+      "skill": "grammar",
+      "level": 2,
+      "text": "我今天＿＿不舒服，头疼。昨天晚上我＿＿睡好。我＿＿去医院看病。",
+      "blanks": [
+        {
+          "answer": "有点儿",
+          "options": [
+            "有点儿",
+            "一点儿",
+            "很"
+          ]
+        },
+        {
+          "answer": "没",
+          "options": [
+            "没",
+            "不",
+            "也"
+          ]
+        },
+        {
+          "answer": "要",
+          "options": [
+            "要",
+            "是",
+            "会"
+          ]
+        }
+      ],
+      "es": "Hoy no me encuentro bien, me duele la cabeza. Anoche no dormí bien. Tengo que ir al médico.",
+      "grammarIds": [
+        "yidianr-youdianr",
+        "bu-mei",
+        "modal-verbs"
+      ],
+      "explain": "Estado negativo → 有点儿; acción pasada no realizada → 没; obligación → 要 (tener que)."
+    },
+    {
+      "id": "u11-130",
+      "type": "cloze",
+      "skill": "grammar",
+      "level": 2,
+      "text": "医生：你＿＿不舒服？\n安娜：我肚子疼。\n医生：你要多喝水，一天吃两＿＿药。＿＿能喝咖啡。",
+      "blanks": [
+        {
+          "answer": "哪儿",
+          "options": [
+            "哪儿",
+            "什么",
+            "怎么"
+          ]
+        },
+        {
+          "answer": "次",
+          "options": [
+            "次",
+            "个",
+            "天"
+          ]
+        },
+        {
+          "answer": "不",
+          "options": [
+            "不",
+            "没",
+            "别"
+          ]
+        }
+      ],
+      "es": "Médico: ¿Qué le duele?\nAna: Me duele la barriga.\nMédico: Beba mucha agua y tome la medicina dos veces al día. No puede tomar café.",
+      "new": [
+        "肚子"
+      ],
+      "grammarIds": [
+        "question-words",
+        "measure-words",
+        "modal-verbs"
+      ],
+      "explain": "La pregunta del médico es 哪儿不舒服; las veces se cuentan con 次; y 能 se niega con 不: 不能."
+    },
+    {
+      "id": "u11-131",
+      "type": "cloze",
+      "skill": "grammar",
+      "level": 2,
+      "text": "我上个星期生病＿＿，没去上课。我在家休息了三天。现在我好了，不发烧＿＿，＿＿高兴。",
+      "blanks": [
+        {
+          "answer": "了",
+          "options": [
+            "了",
+            "吗",
+            "的"
+          ]
+        },
+        {
+          "answer": "了",
+          "options": [
+            "了",
+            "吗",
+            "呢"
+          ]
+        },
+        {
+          "answer": "很",
+          "options": [
+            "很",
+            "有点儿",
+            "太"
+          ]
+        }
+      ],
+      "es": "La semana pasada me puse enfermo y no fui a clase. Descansé tres días en casa. Ahora ya estoy bien, ya no tengo fiebre, estoy muy contento.",
+      "new": [
+        "上个星期"
+      ],
+      "grammarIds": [
+        "le",
+        "hen-adj",
+        "yidianr-youdianr"
+      ],
+      "explain": "生病了 y 不发烧了 llevan el 了 de cambio. Con un adjetivo positivo como 高兴 se usa 很, no 有点儿 (que es para quejas)."
+    },
+    {
+      "id": "u11-132",
+      "type": "reading",
+      "skill": "reading",
+      "level": 2,
+      "text": "王明今天没来上课。早上他打电话给李老师，说他感冒了，发烧，头疼。李老师说：「没关系，你在家休息吧。」中午王明去医院看病，医生说他要多喝水，一天吃三次药，不能喝咖啡。",
+      "es": "Wang Ming no ha venido hoy a clase. Por la mañana ha llamado al profesor Li y le ha dicho que está resfriado, con fiebre y dolor de cabeza. El profesor Li le ha dicho: «No pasa nada, descansa en casa». A mediodía Wang Ming ha ido al hospital; el médico le ha dicho que beba mucha agua, tome la medicina tres veces al día y no beba café.",
+      "questions": [
+        {
+          "q": "¿Por qué no ha ido Wang Ming a clase?",
+          "options": [
+            "Está de viaje",
+            "Está resfriado",
+            "Tiene examen"
+          ],
+          "answer": 1,
+          "explain": "他感冒了，发烧，头疼."
+        },
+        {
+          "q": "¿Qué ha hecho a mediodía?",
+          "options": [
+            "Dormir",
+            "Ir al médico",
+            "Tomar café"
+          ],
+          "answer": 1,
+          "explain": "中午王明去医院看病."
+        },
+        {
+          "q": "¿Cuántas veces al día debe tomar la medicina?",
+          "options": [
+            "Una",
+            "Dos",
+            "Tres"
+          ],
+          "answer": 2,
+          "explain": "一天吃三次药."
+        }
+      ],
+      "explain": "El texto cuenta el día en orden: 早上 (llamada), 中午 (médico). 说 introduce lo que dice cada persona. 打电话给 + persona = llamar a alguien."
+    },
+    {
+      "id": "u11-133",
+      "type": "reading",
+      "skill": "reading",
+      "level": 2,
+      "text": "雨果：安娜，你怎么了？你看起来很累。\n安娜：我没生病，但是我太累了。这个星期我每天晚上一点睡觉，早上七点起床。\n雨果：太晚了！你要早点儿睡。身体很重要。\n安娜：你说得对。今天我十点睡觉。",
+      "es": "Hugo: Ana, ¿qué te pasa? Pareces muy cansada.\nAna: No estoy enferma, pero estoy agotada. Esta semana me acuesto cada noche a la una y me levanto a las siete.\nHugo: ¡Demasiado tarde! Tienes que acostarte antes. La salud es importante.\nAna: Tienes razón. Hoy me acuesto a las diez.",
+      "new": [
+        "看起来",
+        "但是",
+        "早点儿",
+        "重要",
+        "说得对"
+      ],
+      "questions": [
+        {
+          "q": "¿Ana está enferma?",
+          "options": [
+            "Sí, tiene fiebre",
+            "No, solo está cansada",
+            "No se sabe"
+          ],
+          "answer": 1,
+          "explain": "我没生病，但是我太累了."
+        },
+        {
+          "q": "¿A qué hora se ha estado acostando Ana?",
+          "options": [
+            "A las diez",
+            "A la una",
+            "A las siete"
+          ],
+          "answer": 1,
+          "explain": "每天晚上一点睡觉; a las siete se levanta."
+        },
+        {
+          "q": "¿Qué decide hacer Ana?",
+          "options": [
+            "Ir al médico",
+            "Acostarse a las diez",
+            "Levantarse más tarde"
+          ],
+          "answer": 1,
+          "explain": "今天我十点睡觉."
+        }
+      ],
+      "explain": "没生病 (no se ha puesto enferma) frente a 太累了 (demasiado cansada). 每天晚上 + hora + verbo describe la rutina; 早点儿睡 es el consejo."
+    },
+    {
+      "id": "u11-134",
+      "type": "reading",
+      "skill": "reading",
+      "level": 3,
+      "text": "在中国，看病很方便。你不舒服，可以去医院，也可以去药店买药。医院里医生很多，但是人也很多，有时候要等一个小时。我上个月感冒了，去医院看病。医生说我要多休息，吃三天药。三天后我好了。",
+      "es": "En China es fácil ir al médico. Si no te encuentras bien, puedes ir al hospital o ir a la farmacia a comprar medicinas. En el hospital hay muchos médicos, pero también mucha gente; a veces hay que esperar una hora. El mes pasado me resfrié y fui al hospital. El médico me dijo que descansara mucho y tomara medicinas tres días. A los tres días ya estaba bien.",
+      "new": [
+        "方便",
+        "药店",
+        "等",
+        "上个月",
+        "后"
+      ],
+      "questions": [
+        {
+          "q": "¿Adónde se puede ir si no te encuentras bien, según el texto?",
+          "options": [
+            "Solo al hospital",
+            "Al hospital o a la farmacia",
+            "A casa del médico"
+          ],
+          "answer": 1,
+          "explain": "可以去医院，也可以去药店买药."
+        },
+        {
+          "q": "¿Cuál es el inconveniente de los hospitales?",
+          "options": [
+            "Hay pocos médicos",
+            "Son caros",
+            "Hay mucha gente y hay que esperar"
+          ],
+          "answer": 2,
+          "explain": "人也很多，有时候要等一个小时."
+        },
+        {
+          "q": "¿Cuántos días tomó medicinas el autor?",
+          "options": [
+            "Uno",
+            "Tres",
+            "Siete"
+          ],
+          "answer": 1,
+          "explain": "吃三天药."
+        }
+      ],
+      "explain": "药店 yàodiàn = farmacia (药 + 店 tienda). 可以……也可以…… ofrece dos opciones. 三天后 = tres días después."
+    },
+    {
+      "id": "u11-135",
+      "type": "fill-blank",
+      "skill": "grammar",
+      "level": 1,
+      "zh": "我＿累，想睡觉。",
+      "answer": "有点儿",
+      "options": [
+        "有点儿",
+        "一点儿",
+        "是",
+        "没"
+      ],
+      "es": "Estoy un poco cansado, quiero dormir.",
+      "py": "Wǒ yǒudiǎnr lèi, xiǎng shuìjiào.",
+      "grammarIds": [
+        "yidianr-youdianr"
+      ],
+      "explain": "Delante de un adjetivo con matiz de queja va 有点儿. 一点儿 solo va detrás del adjetivo o con nombres."
+    },
+    {
+      "id": "u11-136",
+      "type": "fill-blank",
+      "skill": "grammar",
+      "level": 2,
+      "zh": "昨天我＿吃药，今天头还疼。",
+      "answer": "没",
+      "options": [
+        "没",
+        "不",
+        "别",
+        "很"
+      ],
+      "es": "Ayer no tomé la medicina, hoy aún me duele la cabeza.",
+      "py": "Zuótiān wǒ méi chī yào, jīntiān tóu hái téng.",
+      "new": [
+        "还"
+      ],
+      "grammarIds": [
+        "bu-mei"
+      ],
+      "explain": "Acción de ayer que no se hizo → 没. 不 sería «no quiero tomarla», y 别 una prohibición."
+    },
+    {
+      "id": "u11-137",
+      "type": "fill-blank",
+      "skill": "grammar",
+      "level": 1,
+      "zh": "你＿多喝水，多休息。",
+      "answer": "要",
+      "options": [
+        "要",
+        "药",
+        "想",
+        "会"
+      ],
+      "es": "Tienes que beber mucha agua y descansar mucho.",
+      "py": "Nǐ yào duō hē shuǐ, duō xiūxi.",
+      "grammarIds": [
+        "modal-verbs"
+      ],
+      "explain": "要 = tener que (obligación o consejo). 药 suena igual pero es «medicina»; 想 sería «quiero» y 会 «sabré / va a»."
+    },
+    {
+      "id": "u11-138",
+      "type": "fill-blank",
+      "skill": "grammar",
+      "level": 2,
+      "zh": "这个药一天吃两＿。",
+      "answer": "次",
+      "options": [
+        "次",
+        "个",
+        "天",
+        "点"
+      ],
+      "es": "Esta medicina se toma dos veces al día.",
+      "py": "Zhège yào yì tiān chī liǎng cì.",
+      "grammarIds": [
+        "measure-words",
+        "numbers"
+      ],
+      "explain": "Las veces se cuentan con 次. 两 (y no 二) confirma que detrás viene un clasificador."
+    },
+    {
+      "id": "u11-139",
+      "type": "fill-blank",
+      "skill": "grammar",
+      "level": 2,
+      "zh": "我现在好了，不发烧＿。",
+      "answer": "了",
+      "options": [
+        "了",
+        "吗",
+        "呢",
+        "的"
+      ],
+      "es": "Ya estoy bien, ya no tengo fiebre.",
+      "py": "Wǒ xiànzài hǎo le, bù fāshāo le.",
+      "grammarIds": [
+        "le"
+      ],
+      "explain": "不……了 = «ya no»: el 了 final marca el cambio respecto a antes. Sin 了 sería simplemente «no tengo fiebre»."
+    },
+    {
+      "id": "u11-140",
+      "type": "fill-blank",
+      "skill": "grammar",
+      "level": 2,
+      "zh": "我生病了，今天＿能上课。",
+      "answer": "不",
+      "options": [
+        "不",
+        "没",
+        "别",
+        "太"
+      ],
+      "es": "Me he puesto enfermo, hoy no puedo ir a clase.",
+      "py": "Wǒ shēngbìng le, jīntiān bù néng shàngkè.",
+      "grammarIds": [
+        "modal-verbs",
+        "bu-mei"
+      ],
+      "explain": "Los verbos modales (能, 想, 要, 会) se niegan siempre con 不, nunca con 没, aunque hablemos del pasado."
+    },
+    {
+      "id": "u11-141",
+      "type": "order-words",
+      "skill": "grammar",
+      "level": 1,
+      "zh": "我有点儿不舒服。",
+      "py": "Wǒ yǒudiǎnr bù shūfu.",
+      "es": "No me encuentro muy bien.",
+      "grammarIds": [
+        "yidianr-youdianr"
+      ],
+      "explain": "Sujeto + 有点儿 + 不 + adjetivo. 有点儿 siempre va delante de lo que suaviza."
+    },
+    {
+      "id": "u11-142",
+      "type": "order-words",
+      "skill": "grammar",
+      "level": 2,
+      "zh": "你昨天晚上几点睡觉？",
+      "py": "Nǐ zuótiān wǎnshang jǐ diǎn shuìjiào?",
+      "es": "¿A qué hora te acostaste anoche?",
+      "alternatives": [
+        "昨天晚上你几点睡觉？"
+      ],
+      "grammarIds": [
+        "dates-time",
+        "word-order"
+      ],
+      "explain": "Del tiempo grande al pequeño: 昨天 → 晚上 → 几点, y luego el verbo. El sujeto puede ir antes o después del tiempo."
+    },
+    {
+      "id": "u11-143",
+      "type": "order-words",
+      "skill": "grammar",
+      "level": 2,
+      "zh": "医生说我要多休息。",
+      "py": "Yīshēng shuō wǒ yào duō xiūxi.",
+      "es": "El médico dice que tengo que descansar mucho.",
+      "grammarIds": [
+        "modal-verbs"
+      ],
+      "explain": "医生说 + frase completa. Dentro de la frase, 要 va delante de 多, y 多 delante del verbo."
+    },
+    {
+      "id": "u11-144",
+      "type": "order-words",
+      "skill": "grammar",
+      "level": 2,
+      "zh": "他昨天没去医院看病。",
+      "py": "Tā zuótiān méi qù yīyuàn kànbìng.",
+      "es": "Ayer él no fue al médico.",
+      "alternatives": [
+        "昨天他没去医院看病。"
+      ],
+      "grammarIds": [
+        "bu-mei",
+        "lai-qu"
+      ],
+      "explain": "没 va pegado al verbo 去; el lugar (医院) sigue al verbo y la actividad (看病) cierra la frase."
+    },
+    {
+      "id": "u11-145",
+      "type": "order-words",
+      "skill": "grammar",
+      "level": 2,
+      "zh": "这个药一天吃三次。",
+      "py": "Zhège yào yì tiān chī sān cì.",
+      "es": "Esta medicina se toma tres veces al día.",
+      "grammarIds": [
+        "measure-words",
+        "word-order"
+      ],
+      "explain": "El tema (这个药) va primero, luego la frecuencia 一天 y el verbo con las veces: 吃三次. 三次 va después del verbo."
+    },
+    {
+      "id": "u11-146",
+      "type": "build-character",
+      "skill": "characters",
+      "level": 1,
+      "hanzi": "病",
+      "py": "bìng",
+      "meaning": "enfermedad",
+      "components": [
+        "疒",
+        "丙"
+      ],
+      "distractors": [
+        "广",
+        "疼",
+        "火"
+      ],
+      "explain": "病 = 疒 (radical de la enfermedad: una persona tumbada en una cama) + 丙 (que da el sonido bǐng → bìng). 疼 lleva el mismo radical."
+    },
+    {
+      "id": "u11-147",
+      "type": "build-character",
+      "skill": "characters",
+      "level": 1,
+      "hanzi": "药",
+      "py": "yào",
+      "meaning": "medicina",
+      "components": [
+        "艹",
+        "约"
+      ],
+      "distractors": [
+        "要",
+        "木",
+        "口"
+      ],
+      "explain": "药 = 艹 (hierba) + 约 (sonido yuē → yào). Las medicinas tradicionales eran hierbas. 要 suena igual pero es otro carácter sin 艹."
+    },
+    {
+      "id": "u11-148",
+      "type": "build-character",
+      "skill": "characters",
+      "level": 2,
+      "hanzi": "休",
+      "py": "xiū",
+      "meaning": "descansar",
+      "components": [
+        "亻",
+        "木"
+      ],
+      "distractors": [
+        "人",
+        "本",
+        "体"
+      ],
+      "explain": "休 = 亻 (persona) + 木 (árbol): alguien apoyado en un árbol descansando. Es el primer carácter de 休息."
+    },
+    {
+      "id": "u11-149",
+      "type": "radical-meaning",
+      "skill": "characters",
+      "level": 1,
+      "radical": "疒",
+      "options": [
+        "casa",
+        "enfermedad",
+        "cama",
+        "hierba"
+      ],
+      "answer": 1,
+      "examples": [
+        "病",
+        "疼"
+      ],
+      "explain": "疒 representa una persona tumbada en una cama inclinada: es el radical de las enfermedades y dolores. Aparece en 病 (enfermedad) y 疼 (doler)."
+    },
+    {
+      "id": "u11-150",
+      "type": "radical-meaning",
+      "skill": "characters",
+      "level": 1,
+      "radical": "艹",
+      "options": [
+        "árbol",
+        "agua",
+        "hierba",
+        "fuego"
+      ],
+      "answer": 2,
+      "examples": [
+        "药",
+        "茶",
+        "菜"
+      ],
+      "explain": "艹 son dos brotes de hierba. Está en 药 (medicina, que eran hierbas), 茶 (té) y 菜 (verdura)."
+    },
+    {
+      "id": "u11-151",
+      "type": "radical-meaning",
+      "skill": "characters",
+      "level": 2,
+      "radical": "火",
+      "options": [
+        "agua",
+        "fuego",
+        "sol",
+        "tierra"
+      ],
+      "answer": 1,
+      "examples": [
+        "烧",
+        "热"
+      ],
+      "explain": "火 (fuego) aparece en 烧 (arder, en 发烧 «tener fiebre») y, en su forma de cuatro puntos 灬, debajo de 热 (calor)."
+    },
+    {
+      "id": "u11-152",
+      "type": "speed-pinyin-hanzi",
+      "skill": "vocabulary",
+      "level": 1,
+      "pairs": [
+        {
+          "py": "shēntǐ",
+          "zh": "身体"
+        },
+        {
+          "py": "tóu",
+          "zh": "头"
+        },
+        {
+          "py": "téng",
+          "zh": "疼"
+        },
+        {
+          "py": "lèi",
+          "zh": "累"
+        },
+        {
+          "py": "fāshāo",
+          "zh": "发烧"
+        },
+        {
+          "py": "gǎnmào",
+          "zh": "感冒"
+        },
+        {
+          "py": "yào",
+          "zh": "药"
+        },
+        {
+          "py": "shuǐ",
+          "zh": "水"
+        }
+      ],
+      "explain": "Cuerpo y síntomas. tóu y téng comparten tono (2.º) y consonante; fíjate en la vocal. yào es la medicina (con 艹)."
+    },
+    {
+      "id": "u11-153",
+      "type": "speed-pinyin-hanzi",
+      "skill": "vocabulary",
+      "level": 2,
+      "pairs": [
+        {
+          "py": "yīshēng",
+          "zh": "医生"
+        },
+        {
+          "py": "yīyuàn",
+          "zh": "医院"
+        },
+        {
+          "py": "kànbìng",
+          "zh": "看病"
+        },
+        {
+          "py": "xiūxi",
+          "zh": "休息"
+        },
+        {
+          "py": "shuìjiào",
+          "zh": "睡觉"
+        },
+        {
+          "py": "qǐchuáng",
+          "zh": "起床"
+        },
+        {
+          "py": "shūfu",
+          "zh": "舒服"
+        },
+        {
+          "py": "xiànzài",
+          "zh": "现在"
+        }
+      ],
+      "explain": "医生 y 医院 empiezan igual (yī): el médico termina en shēng y el hospital en yuàn. shuìjiào y qǐchuáng son la pareja acostarse / levantarse."
+    },
+    {
+      "id": "u11-154",
+      "type": "speed-match",
+      "skill": "vocabulary",
+      "level": 1,
+      "pairs": [
+        {
+          "zh": "头疼",
+          "es": "dolor de cabeza"
+        },
+        {
+          "zh": "发烧",
+          "es": "tener fiebre"
+        },
+        {
+          "zh": "感冒",
+          "es": "resfriado"
+        },
+        {
+          "zh": "累",
+          "es": "cansado"
+        },
+        {
+          "zh": "不舒服",
+          "es": "encontrarse mal"
+        },
+        {
+          "zh": "生病",
+          "es": "ponerse enfermo"
+        },
+        {
+          "zh": "好了",
+          "es": "curado"
+        }
+      ],
+      "explain": "Los síntomas y estados de la unidad. 好了 es el final feliz: con 了 marca que ya se ha producido el cambio."
+    },
+    {
+      "id": "u11-155",
+      "type": "speed-match",
+      "skill": "vocabulary",
+      "level": 2,
+      "pairs": [
+        {
+          "zh": "医生",
+          "es": "médico"
+        },
+        {
+          "zh": "医院",
+          "es": "hospital"
+        },
+        {
+          "zh": "药",
+          "es": "medicina"
+        },
+        {
+          "zh": "休息",
+          "es": "descansar"
+        },
+        {
+          "zh": "睡觉",
+          "es": "dormir"
+        },
+        {
+          "zh": "起床",
+          "es": "levantarse"
+        },
+        {
+          "zh": "次",
+          "es": "vez"
+        },
+        {
+          "zh": "打电话",
+          "es": "llamar por teléfono"
+        }
+      ],
+      "explain": "Personas, lugares y acciones de la unidad. 医 aparece tanto en el médico como en el hospital."
+    },
+    {
+      "id": "u11-156",
+      "type": "tone-pair",
+      "skill": "tones",
+      "level": 1,
+      "zh": "头疼",
+      "py": "tóu téng",
+      "pattern": "22",
+      "options": [
+        "22",
+        "24",
+        "42",
+        "12"
+      ],
+      "explain": "Dos segundos tonos seguidos: las dos sílabas suben, como dos preguntas cortas en español. Compara con 发烧 (1-1), todo plano."
+    },
+    {
+      "id": "u11-157",
+      "type": "tone-pair",
+      "skill": "tones",
+      "level": 1,
+      "zh": "发烧",
+      "py": "fāshāo",
+      "pattern": "11",
+      "options": [
+        "11",
+        "14",
+        "41",
+        "12"
+      ],
+      "explain": "Dos primeros tonos: alto y plano de principio a fin. 身体 (1-3) empieza igual pero la segunda sílaba baja."
+    },
+    {
+      "id": "u11-158",
+      "type": "tone-pair",
+      "skill": "tones",
+      "level": 1,
+      "zh": "感冒",
+      "py": "gǎnmào",
+      "pattern": "34",
+      "options": [
+        "34",
+        "33",
+        "44",
+        "24"
+      ],
+      "explain": "gǎn baja (3.º) y mào cae (4.º): patrón 3-4, el mismo de 有点儿 yǒudiǎnr. No lo confundas con 起床 qǐchuáng, que es 3-2."
+    },
+    {
+      "id": "u11-159",
+      "type": "tone-pair",
+      "skill": "tones",
+      "level": 2,
+      "zh": "医院",
+      "py": "yīyuàn",
+      "pattern": "14",
+      "options": [
+        "14",
+        "11",
+        "12",
+        "41"
+      ],
+      "explain": "yī alto y plano, yuàn cae: patrón 1-4, igual que 天气. 医生 (médico) es 1-1: la diferencia entre médico y hospital está en el tono de la segunda sílaba."
+    },
+    {
+      "id": "u11-160",
+      "type": "tone-sandhi",
+      "skill": "tones",
+      "level": 1,
+      "zh": "不累",
+      "lexical": "bù lèi",
+      "spoken": "bú lèi",
+      "rule": "bu",
+      "explain": "不 pasa a 2.º tono (bú) porque lèi es 4.º tono. Lo mismo ocurre en 不是, 不要 y 不去."
+    },
+    {
+      "id": "u11-161",
+      "type": "tone-sandhi",
+      "skill": "tones",
+      "level": 1,
+      "zh": "不舒服",
+      "lexical": "bù shūfu",
+      "spoken": "bù shūfu",
+      "rule": "bu",
+      "explain": "Aquí 不 no cambia: shū es 1.º tono, y la regla solo se aplica ante un 4.º tono. Se dice bù shūfu."
+    },
+    {
+      "id": "u11-162",
+      "type": "tone-sandhi",
+      "skill": "tones",
+      "level": 1,
+      "zh": "有点儿",
+      "lexical": "yǒudiǎnr",
+      "spoken": "yóudiǎnr",
+      "rule": "33",
+      "explain": "yǒu y diǎn son dos terceros tonos seguidos: el primero se pronuncia como 2.º (yóu diǎnr). Se escribe con los tonos originales."
+    },
+    {
+      "id": "u11-163",
+      "type": "tone-sandhi",
+      "skill": "tones",
+      "level": 2,
+      "zh": "一次",
+      "lexical": "yī cì",
+      "spoken": "yí cì",
+      "rule": "yi",
+      "explain": "一 pasa a 2.º tono (yí) delante de un 4.º tono como cì. Delante de 天 (1.º tono) sería yì tiān, 4.º tono."
+    },
+    {
+      "id": "u11-164",
+      "type": "pinyin-input",
+      "skill": "vocabulary",
+      "level": 1,
+      "zh": "疼",
+      "py": "téng",
+      "meaning": "doler",
+      "explain": "téng, 2.º tono. La t- es aspirada y la final -eng es nasal, con la «e» muy cerrada, casi como «tang» dicho con la boca entreabierta."
+    },
+    {
+      "id": "u11-165",
+      "type": "pinyin-input",
+      "skill": "vocabulary",
+      "level": 1,
+      "zh": "休息",
+      "py": "xiūxi",
+      "meaning": "descansar",
+      "explain": "xiū (1.º) + xi (neutro, sin tilde). Dos veces la x-, que se pronuncia con la lengua plana detrás de los dientes."
+    },
+    {
+      "id": "u11-166",
+      "type": "pinyin-input",
+      "skill": "vocabulary",
+      "level": 1,
+      "zh": "医院",
+      "py": "yīyuàn",
+      "meaning": "hospital",
+      "explain": "yī (1.º) + yuàn (4.º). La ü de yuàn se escribe u tras y-: nunca escribas yüàn."
+    },
+    {
+      "id": "u11-167",
+      "type": "pinyin-input",
+      "skill": "vocabulary",
+      "level": 2,
+      "zh": "睡觉",
+      "py": "shuìjiào",
+      "meaning": "dormir",
+      "explain": "shuì (4.º) + jiào (4.º). Dos cuartos tonos; la sh- es retrofleja y la j- es como una «ch» suave sin aspiración."
+    },
+    {
+      "id": "u11-168",
+      "type": "matching",
+      "skill": "vocabulary",
+      "level": 1,
+      "pairs": [
+        {
+          "zh": "头",
+          "py": "tóu",
+          "es": "cabeza"
+        },
+        {
+          "zh": "疼",
+          "py": "téng",
+          "es": "doler"
+        },
+        {
+          "zh": "累",
+          "py": "lèi",
+          "es": "cansado"
+        },
+        {
+          "zh": "发烧",
+          "py": "fāshāo",
+          "es": "tener fiebre"
+        },
+        {
+          "zh": "感冒",
+          "py": "gǎnmào",
+          "es": "resfriado"
+        }
+      ],
+      "explain": "Los síntomas básicos. 头 + 疼 forma «dolor de cabeza»: parte del cuerpo + verbo doler."
+    },
+    {
+      "id": "u11-169",
+      "type": "matching",
+      "skill": "vocabulary",
+      "level": 1,
+      "pairs": [
+        {
+          "zh": "医生",
+          "py": "yīshēng",
+          "es": "médico"
+        },
+        {
+          "zh": "医院",
+          "py": "yīyuàn",
+          "es": "hospital"
+        },
+        {
+          "zh": "看病",
+          "py": "kànbìng",
+          "es": "ir al médico"
+        },
+        {
+          "zh": "药",
+          "py": "yào",
+          "es": "medicina"
+        },
+        {
+          "zh": "水",
+          "py": "shuǐ",
+          "es": "agua"
+        }
+      ],
+      "explain": "El vocabulario de la consulta. 看病 es el verbo de «ir al médico», y la medicina se toma con 吃 (吃药)."
+    },
+    {
+      "id": "u11-170",
+      "type": "matching",
+      "skill": "vocabulary",
+      "level": 2,
+      "pairs": [
+        {
+          "zh": "休息",
+          "py": "xiūxi",
+          "es": "descansar"
+        },
+        {
+          "zh": "睡觉",
+          "py": "shuìjiào",
+          "es": "dormir"
+        },
+        {
+          "zh": "起床",
+          "py": "qǐchuáng",
+          "es": "levantarse"
+        },
+        {
+          "zh": "早",
+          "py": "zǎo",
+          "es": "temprano"
+        },
+        {
+          "zh": "晚",
+          "py": "wǎn",
+          "es": "tarde (hora)"
+        },
+        {
+          "zh": "次",
+          "py": "cì",
+          "es": "vez"
+        }
+      ],
+      "explain": "Rutina y hábitos sanos: 早睡早起 (acostarse y levantarse temprano). 次 cuenta las veces que se toma la medicina."
+    }
+  ]
+}

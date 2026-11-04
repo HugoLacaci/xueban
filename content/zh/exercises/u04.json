@@ -1,0 +1,3315 @@
+{
+  "id": "u04",
+  "unitId": "u04",
+  "title": "Hora y fechas",
+  "items": [
+    {
+      "id": "u04-001",
+      "type": "choose-meaning",
+      "skill": "vocabulary",
+      "level": 1,
+      "zh": "明天",
+      "py": "míngtiān",
+      "options": [
+        "hoy",
+        "mañana (el día siguiente)",
+        "ayer",
+        "este año"
+      ],
+      "answer": 1,
+      "explain": "明 míng («brillante, siguiente») + 天 tiān («día») = el día siguiente, «mañana». El mismo 明 aparece en 明年 (el año que viene); no lo confundas con 早上 (por la mañana)."
+    },
+    {
+      "id": "u04-002",
+      "type": "choose-meaning",
+      "skill": "vocabulary",
+      "level": 1,
+      "zh": "星期天",
+      "py": "xīngqītiān",
+      "options": [
+        "sábado",
+        "lunes",
+        "domingo",
+        "semana"
+      ],
+      "answer": 2,
+      "explain": "Los días se numeran (星期一 lunes … 星期六 sábado), pero el domingo no es 星期七: se dice 星期天 (o 星期日 por escrito). 星期 a secas es «semana»."
+    },
+    {
+      "id": "u04-003",
+      "type": "choose-meaning",
+      "skill": "vocabulary",
+      "level": 1,
+      "zh": "起床",
+      "py": "qǐchuáng",
+      "options": [
+        "irse a la cama",
+        "levantarse",
+        "comer",
+        "ir a clase"
+      ],
+      "answer": 1,
+      "explain": "起 qǐ es «levantarse» y 床 chuáng «cama»: salir de la cama. Su contrario es 睡觉 shuìjiào, «irse a dormir»."
+    },
+    {
+      "id": "u04-004",
+      "type": "choose-meaning",
+      "skill": "vocabulary",
+      "level": 2,
+      "zh": "小时",
+      "py": "xiǎoshí",
+      "options": [
+        "hora (las tres en punto)",
+        "hora (de duración)",
+        "minuto",
+        "momento"
+      ],
+      "answer": 1,
+      "explain": "小时 mide cuánto dura algo (两个小时 = dos horas) y lleva clasificador 个. La hora del reloj se dice con 点: 两点 son «las dos»."
+    },
+    {
+      "id": "u04-005",
+      "type": "choose-meaning",
+      "skill": "vocabulary",
+      "level": 1,
+      "zh": "去年",
+      "py": "qùnián",
+      "options": [
+        "este año",
+        "el año que viene",
+        "el año pasado",
+        "cada año"
+      ],
+      "answer": 2,
+      "explain": "去 qù significa «ir, irse»: el año que «se ha ido» es el año pasado. Compara con 今年 (este año) y 明年 (el año que viene)."
+    },
+    {
+      "id": "u04-006",
+      "type": "choose-character",
+      "skill": "characters",
+      "level": 1,
+      "es": "ahora",
+      "options": [
+        "现在",
+        "今天",
+        "时候",
+        "时间"
+      ],
+      "answer": 0,
+      "explain": "现在 xiànzài es «ahora» y abre la pregunta 现在几点？. 今天 es «hoy», 时候 «momento» (什么时候 = cuándo) y 时间 «tiempo» en general."
+    },
+    {
+      "id": "u04-007",
+      "type": "choose-character",
+      "skill": "characters",
+      "level": 1,
+      "es": "minuto (de la hora del reloj)",
+      "options": [
+        "点",
+        "分",
+        "半",
+        "号"
+      ],
+      "answer": 1,
+      "explain": "分 fēn son los minutos del reloj: 三点十分 (3:10). 点 es la hora, 半 «y media» y 号 el día del mes."
+    },
+    {
+      "id": "u04-008",
+      "type": "choose-character",
+      "skill": "characters",
+      "level": 1,
+      "es": "dormir; irse a la cama",
+      "options": [
+        "起床",
+        "上课",
+        "睡觉",
+        "吃饭"
+      ],
+      "answer": 2,
+      "explain": "睡觉 shuìjiào es «dormir». Fíjate en que 睡 lleva el radical 目 (ojo) a la izquierda: dormir es cerrar los ojos. 起床 es justo lo contrario, «levantarse»."
+    },
+    {
+      "id": "u04-009",
+      "type": "choose-character",
+      "skill": "characters",
+      "level": 1,
+      "es": "cumpleaños",
+      "options": [
+        "生日",
+        "今年",
+        "星期",
+        "白天"
+      ],
+      "answer": 0,
+      "explain": "生日 shēngrì = 生 (nacer) + 日 (día): el día del nacimiento. 白天 también lleva 天 pero significa «durante el día»."
+    },
+    {
+      "id": "u04-010",
+      "type": "listen-choose",
+      "skill": "listening",
+      "level": 1,
+      "zh": "今天星期五。",
+      "py": "Jīntiān xīngqīwǔ.",
+      "options": [
+        "今天星期四。",
+        "今天星期五。",
+        "明天星期五。",
+        "今天几号？"
+      ],
+      "answer": 1,
+      "voice": "f",
+      "explain": "Lo decisivo es el número tras xīngqī: wǔ (cinco), no sì (cuatro). Y la frase empieza por jīntiān (hoy), no míngtiān (mañana)."
+    },
+    {
+      "id": "u04-011",
+      "type": "listen-choose",
+      "skill": "listening",
+      "level": 1,
+      "zh": "现在两点半。",
+      "py": "Xiànzài liǎng diǎn bàn.",
+      "options": [
+        "现在两点。",
+        "现在十二点半。",
+        "现在两点半。",
+        "现在三点半。"
+      ],
+      "answer": 2,
+      "voice": "m",
+      "explain": "Se oye liǎng diǎn (las dos, con 两 y no 二) y después bàn (y media). Sin el bàn final serían las dos en punto."
+    },
+    {
+      "id": "u04-012",
+      "type": "listen-choose",
+      "skill": "listening",
+      "level": 1,
+      "zh": "我七点起床。",
+      "py": "Wǒ qī diǎn qǐchuáng.",
+      "options": [
+        "我七点睡觉。",
+        "我七点起床。",
+        "我九点起床。",
+        "我七点上课。"
+      ],
+      "answer": 1,
+      "voice": "f",
+      "explain": "qī diǎn (las siete) y luego el verbo qǐchuáng (levantarse). Compara qī (7, 1.º tono) con jiǔ (9, 3.º tono) y qǐchuáng con shuìjiào (dormir)."
+    },
+    {
+      "id": "u04-013",
+      "type": "listen-choose",
+      "skill": "listening",
+      "level": 2,
+      "zh": "你的生日是几月几号？",
+      "py": "Nǐ de shēngrì shì jǐ yuè jǐ hào?",
+      "options": [
+        "今天几月几号？",
+        "你的生日是星期几？",
+        "你的生日是几月几号？",
+        "你今年多大？"
+      ],
+      "answer": 2,
+      "voice": "m",
+      "explain": "Se oye nǐ de shēngrì (tu cumpleaños) y al final jǐ yuè jǐ hào (qué mes, qué día). Con xīngqī jǐ preguntaría el día de la semana, no la fecha."
+    },
+    {
+      "id": "u04-014",
+      "type": "listen-choose",
+      "skill": "listening",
+      "level": 2,
+      "zh": "明年我去中国。",
+      "py": "Míngnián wǒ qù Zhōngguó.",
+      "options": [
+        "今年我去中国。",
+        "明年我去中国。",
+        "去年我去中国。",
+        "明年我不去中国。"
+      ],
+      "answer": 1,
+      "voice": "f",
+      "explain": "míngnián (el año que viene, 2.º tono) frente a jīnnián (este año, 1.º tono) y qùnián (el pasado, 4.º tono). No hay ningún bú delante de qù."
+    },
+    {
+      "id": "u04-015",
+      "type": "listen-choose",
+      "skill": "listening",
+      "level": 2,
+      "zh": "下午三点我有课。",
+      "py": "Xiàwǔ sān diǎn wǒ yǒu kè.",
+      "options": [
+        "上午三点我有课。",
+        "下午三点我有课。",
+        "下午三点我没有课。",
+        "下午四点我有课。"
+      ],
+      "answer": 1,
+      "voice": "m",
+      "explain": "xiàwǔ (tarde, 4.º tono) y no shàngwǔ (mañana, 4.º + 3.º). Después sān diǎn (las tres, no sì diǎn) y yǒu kè sin méi delante: tiene clase."
+    },
+    {
+      "id": "u04-016",
+      "type": "listen-choose",
+      "skill": "listening",
+      "level": 2,
+      "zh": "十月十号",
+      "py": "shí yuè shí hào",
+      "options": [
+        "十月四号",
+        "十月十号",
+        "四月十号",
+        "十月十四号"
+      ],
+      "answer": 1,
+      "voice": "f",
+      "explain": "shí (diez, 2.º tono) aparece dos veces: mes diez y día diez. sì (cuatro, 4.º tono) se distingue por la inicial s- sin curvar la lengua y por el tono descendente."
+    },
+    {
+      "id": "u04-017",
+      "type": "listen-choose",
+      "skill": "listening",
+      "level": 2,
+      "zh": "他晚上十一点睡觉。",
+      "py": "Tā wǎnshang shíyī diǎn shuìjiào.",
+      "options": [
+        "他晚上十点睡觉。",
+        "他早上十一点起床。",
+        "他晚上十一点睡觉。",
+        "他晚上十一点吃饭。"
+      ],
+      "answer": 2,
+      "voice": "m",
+      "explain": "wǎnshang (noche) + shíyī diǎn (las once: shí + yī) + shuìjiào. Si solo oyes shí diǎn son las diez; si el verbo acaba en -chuáng es levantarse."
+    },
+    {
+      "id": "u04-018",
+      "type": "listen-choose",
+      "skill": "listening",
+      "level": 2,
+      "zh": "我每天学习两个小时。",
+      "py": "Wǒ měi tiān xuéxí liǎng ge xiǎoshí.",
+      "options": [
+        "我每天两点学习。",
+        "我每天学习两个小时。",
+        "我每天学习十个小时。",
+        "我每天学习两分钟。"
+      ],
+      "answer": 1,
+      "voice": "f",
+      "explain": "liǎng ge xiǎoshí (dos horas de duración) va detrás del verbo; liǎng diǎn (las dos) iría delante. Y xiǎoshí (hora) no es fēnzhōng (minuto)."
+    },
+    {
+      "id": "u04-019",
+      "type": "listen-choose",
+      "skill": "listening",
+      "level": 2,
+      "zh": "星期六你有时间吗？",
+      "py": "Xīngqīliù nǐ yǒu shíjiān ma?",
+      "options": [
+        "星期六你有课吗？",
+        "星期天你有时间吗？",
+        "星期六你忙吗？",
+        "星期六你有时间吗？"
+      ],
+      "answer": 3,
+      "voice": "m",
+      "explain": "xīngqīliù (sábado, con liù) y al final yǒu shíjiān ma (¿tienes tiempo?). shíjiān (tiempo) y kè (clase) suenan muy distintos; máng (ocupado) sería otra pregunta."
+    },
+    {
+      "id": "u04-020",
+      "type": "listen-choose",
+      "skill": "listening",
+      "level": 2,
+      "zh": "今天不是我的生日，明天是。",
+      "py": "Jīntiān bú shì wǒ de shēngrì, míngtiān shì.",
+      "options": [
+        "今天是我的生日。",
+        "明天不是我的生日。",
+        "今天不是我的生日，明天是。",
+        "昨天是我的生日。"
+      ],
+      "answer": 2,
+      "voice": "f",
+      "explain": "Hay un bú shì tras jīntiān: hoy NO es el cumpleaños. Luego míngtiān shì: mañana sí. La frase corrige una suposición, por eso tiene dos partes."
+    },
+    {
+      "id": "u04-021",
+      "type": "listen-choose",
+      "skill": "listening",
+      "level": 2,
+      "zh": "现在六点十五分。",
+      "py": "Xiànzài liù diǎn shíwǔ fēn.",
+      "options": [
+        "现在六点半。",
+        "现在六点五分。",
+        "现在七点十五分。",
+        "现在六点十五分。"
+      ],
+      "answer": 3,
+      "voice": "m",
+      "explain": "liù diǎn (las seis) + shíwǔ fēn (quince minutos). Si solo oyeras wǔ fēn serían las seis y cinco; qī diǎn serían las siete."
+    },
+    {
+      "id": "u04-022",
+      "type": "listen-answer",
+      "skill": "listening",
+      "level": 1,
+      "question": "今天星期几？",
+      "questionPy": "Jīntiān xīngqī jǐ?",
+      "questionEs": "¿Qué día de la semana es hoy?",
+      "options": [
+        "今天星期二。",
+        "今天十号。",
+        "现在两点。"
+      ],
+      "answer": 0,
+      "answerEs": "Hoy es martes.",
+      "grammarIds": [
+        "dates-time",
+        "question-words"
+      ],
+      "explain": "星期几 pregunta por el día de la semana, así que la respuesta sustituye 几 por un número: 星期二. 十号 contestaría a 几号 (fecha) y 两点 a 几点 (hora)."
+    },
+    {
+      "id": "u04-023",
+      "type": "listen-answer",
+      "skill": "listening",
+      "level": 1,
+      "question": "现在几点？",
+      "questionPy": "Xiànzài jǐ diǎn?",
+      "questionEs": "¿Qué hora es?",
+      "options": [
+        "今天星期三。",
+        "现在十点二十分。",
+        "我十点上课。"
+      ],
+      "answer": 1,
+      "answerEs": "Son las diez y veinte.",
+      "grammarIds": [
+        "dates-time"
+      ],
+      "explain": "A 几点 se responde con una hora: 现在 + número + 点 (+ minutos + 分). 我十点上课 contiene una hora, pero dice a qué hora tienes clase, no qué hora es."
+    },
+    {
+      "id": "u04-024",
+      "type": "listen-answer",
+      "skill": "listening",
+      "level": 2,
+      "question": "你早上几点起床？",
+      "questionPy": "Nǐ zǎoshang jǐ diǎn qǐchuáng?",
+      "questionEs": "¿A qué hora te levantas por la mañana?",
+      "options": [
+        "我六点半起床。",
+        "我晚上十一点睡觉。",
+        "我早上有课。"
+      ],
+      "answer": 0,
+      "answerEs": "Me levanto a las seis y media.",
+      "grammarIds": [
+        "dates-time",
+        "word-order"
+      ],
+      "explain": "La respuesta repite el verbo de la pregunta (起床) y pone la hora delante de él: 我六点半起床. Hablar de 睡觉 o de la clase no responde a cuándo te levantas."
+    },
+    {
+      "id": "u04-025",
+      "type": "listen-answer",
+      "skill": "listening",
+      "level": 2,
+      "question": "你的生日是几月几号？",
+      "questionPy": "Nǐ de shēngrì shì jǐ yuè jǐ hào?",
+      "questionEs": "¿Qué día es tu cumpleaños?",
+      "options": [
+        "我今年二十岁。",
+        "我的生日是八月十五号。",
+        "今天是八月十五号。"
+      ],
+      "answer": 1,
+      "answerEs": "Mi cumpleaños es el 15 de agosto.",
+      "grammarIds": [
+        "dates-time"
+      ],
+      "explain": "几月几号 pide mes y día: 八月十五号. La tercera opción da una fecha, pero habla de hoy (今天), no del cumpleaños; la edad (二十岁) responde a 多大."
+    },
+    {
+      "id": "u04-026",
+      "type": "listen-answer",
+      "skill": "listening",
+      "level": 2,
+      "question": "明天你去学校吗？",
+      "questionPy": "Míngtiān nǐ qù xuéxiào ma?",
+      "questionEs": "¿Mañana vas a la escuela?",
+      "options": [
+        "明天星期六，我不去。",
+        "我在学校学习。",
+        "明天我有时间。"
+      ],
+      "answer": 0,
+      "answerEs": "Mañana es sábado, no voy.",
+      "grammarIds": [
+        "ma",
+        "bu-mei"
+      ],
+      "explain": "Una pregunta con 吗 se contesta repitiendo el verbo: 去 o 不去. Solo la primera opción lo hace (我不去) y además da el motivo: es sábado."
+    },
+    {
+      "id": "u04-027",
+      "type": "listen-answer",
+      "skill": "listening",
+      "level": 2,
+      "question": "你什么时候有时间？",
+      "questionPy": "Nǐ shénme shíhou yǒu shíjiān?",
+      "questionEs": "¿Cuándo tienes tiempo?",
+      "options": [
+        "我每天很忙。",
+        "星期天下午我有时间。",
+        "现在三点。"
+      ],
+      "answer": 1,
+      "answerEs": "El domingo por la tarde tengo tiempo.",
+      "grammarIds": [
+        "question-words",
+        "word-order"
+      ],
+      "explain": "什么时候 («cuándo») se sustituye por un momento concreto: 星期天下午, de lo grande (día) a lo pequeño (parte del día), y todo delante del verbo 有."
+    },
+    {
+      "id": "u04-028",
+      "type": "listen-answer",
+      "skill": "listening",
+      "level": 1,
+      "question": "今天几号？",
+      "questionPy": "Jīntiān jǐ hào?",
+      "questionEs": "¿Qué día (del mes) es hoy?",
+      "options": [
+        "今天星期五。",
+        "今天二十三号。",
+        "今年是二零二六年。"
+      ],
+      "answer": 1,
+      "answerEs": "Hoy es día 23.",
+      "grammarIds": [
+        "dates-time"
+      ],
+      "explain": "几号 pregunta el día del mes, así que la respuesta lleva 号: 二十三号. 星期五 responde a 星期几 y el año a 哪年 (o 几几年)."
+    },
+    {
+      "id": "u04-029",
+      "type": "listen-answer",
+      "skill": "listening",
+      "level": 2,
+      "question": "你每天学习几个小时？",
+      "questionPy": "Nǐ měi tiān xuéxí jǐ ge xiǎoshí?",
+      "questionEs": "¿Cuántas horas estudias cada día?",
+      "options": [
+        "我两点学习。",
+        "我学习三个小时。",
+        "我在学校学习。"
+      ],
+      "answer": 1,
+      "answerEs": "Estudio tres horas.",
+      "grammarIds": [
+        "dates-time",
+        "measure-words"
+      ],
+      "explain": "几个小时 pide una duración, que va detrás del verbo: 学习三个小时. 两点 es una hora del reloj (y va delante del verbo) y 在学校 dice dónde, no cuánto."
+    },
+    {
+      "id": "u04-030",
+      "type": "listen-answer",
+      "skill": "listening",
+      "level": 2,
+      "question": "明年你去中国吗？",
+      "questionPy": "Míngnián nǐ qù Zhōngguó ma?",
+      "questionEs": "¿El año que viene vas a China?",
+      "options": [
+        "去，我明年去中国学习。",
+        "去年我去中国。",
+        "今天我去学校。"
+      ],
+      "answer": 0,
+      "answerEs": "Sí, el año que viene voy a China a estudiar.",
+      "grammarIds": [
+        "ma",
+        "lai-qu"
+      ],
+      "explain": "El «sí» se expresa repitiendo el verbo 去. 去年我去中国 cambia el tiempo (el año pasado) y no contesta a lo que se pregunta sobre el año que viene."
+    },
+    {
+      "id": "u04-031",
+      "type": "listen-answer",
+      "skill": "listening",
+      "level": 2,
+      "question": "你晚上几点睡觉？",
+      "questionPy": "Nǐ wǎnshang jǐ diǎn shuìjiào?",
+      "questionEs": "¿A qué hora te acuestas por la noche?",
+      "options": [
+        "我早上七点起床。",
+        "我晚上十二点睡觉。",
+        "我晚上有课。"
+      ],
+      "answer": 1,
+      "answerEs": "Me acuesto a las doce de la noche.",
+      "grammarIds": [
+        "dates-time",
+        "word-order"
+      ],
+      "explain": "La pregunta lleva 睡觉, y la respuesta tiene que mantener ese verbo con una hora delante: 十二点睡觉. 起床 es el verbo contrario, un error fácil al escuchar deprisa."
+    },
+    {
+      "id": "u04-032",
+      "type": "dictation-pinyin",
+      "skill": "listening",
+      "level": 1,
+      "zh": "星期",
+      "py": "xīngqī",
+      "es": "semana",
+      "voice": "f",
+      "explain": "Dos primeros tonos seguidos: xīng qī, ambos altos y planos. La q- de qī es una «ch» aspirada y suave; no la escribas con ch-."
+    },
+    {
+      "id": "u04-033",
+      "type": "dictation-pinyin",
+      "skill": "listening",
+      "level": 1,
+      "zh": "现在",
+      "py": "xiànzài",
+      "es": "ahora",
+      "voice": "m",
+      "explain": "Dos cuartos tonos: xiàn zài. La inicial x- se escribe con x aunque suene como una «s» muy suave, y la z- de zài es como «ds»."
+    },
+    {
+      "id": "u04-034",
+      "type": "dictation-pinyin",
+      "skill": "listening",
+      "level": 1,
+      "zh": "睡觉",
+      "py": "shuìjiào",
+      "es": "dormir; irse a la cama",
+      "voice": "f",
+      "explain": "shuì (4.º tono, con sh- retrofleja y la final -ui) + jiào (4.º tono). Las dos sílabas caen; no confundas jiào (dormir) con jiǎo (3.º tono) de otras palabras."
+    },
+    {
+      "id": "u04-035",
+      "type": "dictation-pinyin",
+      "skill": "listening",
+      "level": 2,
+      "zh": "今天星期一。",
+      "py": "Jīntiān xīngqīyī.",
+      "es": "Hoy es lunes.",
+      "voice": "m",
+      "explain": "Cinco sílabas y todas en 1.º tono: jīn tiān xīng qī yī. Es una frase ideal para practicar el tono alto y plano sin que baje."
+    },
+    {
+      "id": "u04-036",
+      "type": "dictation-pinyin",
+      "skill": "listening",
+      "level": 2,
+      "zh": "现在三点半。",
+      "py": "Xiànzài sān diǎn bàn.",
+      "es": "Son las tres y media.",
+      "voice": "f",
+      "explain": "sān (1.º tono) + diǎn (3.º) + bàn (4.º). Recuerda que la hora no lleva 是: 现在 va seguido directamente de la hora."
+    },
+    {
+      "id": "u04-037",
+      "type": "dictation-pinyin",
+      "skill": "listening",
+      "level": 2,
+      "zh": "生日快乐！",
+      "py": "Shēngrì kuàilè!",
+      "es": "¡Feliz cumpleaños!",
+      "voice": "m",
+      "explain": "shēng (1.º) + rì (4.º) + kuài (4.º) + lè (4.º). La sílaba rì es difícil: la r- china es como una «j» francesa suave con la lengua curvada."
+    },
+    {
+      "id": "u04-038",
+      "type": "dictation-pinyin",
+      "skill": "listening",
+      "level": 2,
+      "zh": "我每天很忙。",
+      "py": "Wǒ měi tiān hěn máng.",
+      "es": "Estoy muy ocupado cada día.",
+      "voice": "f",
+      "explain": "měi (3.º) + tiān (1.º) + hěn (3.º) + máng (2.º). 每天 («cada día») va delante del verbo o adjetivo, como cualquier expresión de tiempo."
+    },
+    {
+      "id": "u04-039",
+      "type": "dictation-pinyin",
+      "skill": "listening",
+      "level": 2,
+      "zh": "明年我去中国。",
+      "py": "Míngnián wǒ qù Zhōngguó.",
+      "es": "El año que viene voy a China.",
+      "voice": "m",
+      "explain": "míng y nián son dos segundos tonos (los dos suben); qù es 4.º tono con la ü de «qu» (los labios redondeados). El tiempo 明年 encabeza la frase."
+    },
+    {
+      "id": "u04-040",
+      "type": "dictation-hanzi",
+      "skill": "listening",
+      "level": 1,
+      "zh": "明天",
+      "py": "míngtiān",
+      "es": "mañana (el día siguiente)",
+      "voice": "f",
+      "explain": "明 se compone de 日 (sol) + 月 (luna): lo «brillante», y por extensión «el siguiente». 天 es «día, cielo», el mismo de 今天 y 昨天."
+    },
+    {
+      "id": "u04-041",
+      "type": "dictation-hanzi",
+      "skill": "listening",
+      "level": 1,
+      "zh": "上课",
+      "py": "shàngkè",
+      "es": "ir a clase; tener clase",
+      "voice": "m",
+      "explain": "上 (subir, empezar) + 课 (clase, con el radical 讠 de «hablar»). El mismo 上 aparece en 上午 (por la mañana) y 晚上 (por la noche)."
+    },
+    {
+      "id": "u04-042",
+      "type": "dictation-hanzi",
+      "skill": "listening",
+      "level": 2,
+      "zh": "我八点起床。",
+      "py": "Wǒ bā diǎn qǐchuáng.",
+      "es": "Me levanto a las ocho.",
+      "voice": "f",
+      "explain": "La hora (八点) se escribe entre el sujeto y el verbo. 床 (cama) lleva 广 arriba y 木 (madera) debajo: un mueble de madera bajo un techo."
+    },
+    {
+      "id": "u04-043",
+      "type": "dictation-hanzi",
+      "skill": "listening",
+      "level": 1,
+      "zh": "今天几号？",
+      "py": "Jīntiān jǐ hào?",
+      "es": "¿Qué día (del mes) es hoy?",
+      "voice": "m",
+      "explain": "几 (cuántos) sustituye al número del día y 号 (con el radical 口) es el «número» del día del mes. Ni 是 ni 吗: la frase es así de corta."
+    },
+    {
+      "id": "u04-044",
+      "type": "dictation-hanzi",
+      "skill": "listening",
+      "level": 2,
+      "zh": "下午我有课。",
+      "py": "Xiàwǔ wǒ yǒu kè.",
+      "es": "Por la tarde tengo clase.",
+      "voice": "f",
+      "explain": "下午 = 下 (abajo, después) + 午 (mediodía): «después del mediodía». 上午 es lo contrario. 有课 significa «tener clase»."
+    },
+    {
+      "id": "u04-045",
+      "type": "dictation-hanzi",
+      "skill": "listening",
+      "level": 2,
+      "zh": "我的生日是六月一号。",
+      "py": "Wǒ de shēngrì shì liù yuè yī hào.",
+      "es": "Mi cumpleaños es el 1 de junio.",
+      "voice": "m",
+      "explain": "Con 是 porque la frase identifica una fecha. Primero el mes (六月) y luego el día (一号): de lo grande a lo pequeño, al revés que «1 de junio»."
+    },
+    {
+      "id": "u04-046",
+      "type": "dictation-hanzi",
+      "skill": "listening",
+      "level": 2,
+      "zh": "晚上十点我睡觉。",
+      "py": "Wǎnshang shí diǎn wǒ shuìjiào.",
+      "es": "A las diez de la noche me acuesto.",
+      "voice": "f",
+      "explain": "晚 lleva el radical 日 (sol) porque se refiere al final del día. La expresión de tiempo 晚上十点 puede ir al principio, antes del sujeto 我."
+    },
+    {
+      "id": "u04-047",
+      "type": "listen-tf",
+      "skill": "listening",
+      "level": 1,
+      "zh": "王明：安娜，今天星期几？\n安娜：今天星期四。明天星期五，我有课。",
+      "py": "Wáng Míng: Ānnà, jīntiān xīngqī jǐ?\nĀnnà: Jīntiān xīngqīsì. Míngtiān xīngqīwǔ, wǒ yǒu kè.",
+      "voice": "f",
+      "statements": [
+        {
+          "s": "Hoy es jueves.",
+          "truth": true,
+          "why": "Ana dice 今天星期四."
+        },
+        {
+          "s": "Ana tiene clase hoy.",
+          "truth": false,
+          "why": "Dice 明天…我有课: la clase es mañana, viernes."
+        },
+        {
+          "s": "Mañana es sábado.",
+          "truth": false,
+          "why": "明天星期五: mañana es viernes."
+        }
+      ],
+      "grammarIds": [
+        "dates-time"
+      ],
+      "explain": "Distingue 今天 (hoy) de 明天 (mañana): cada uno va con un día distinto. La clase (有课) se asocia a 明天, no a 今天."
+    },
+    {
+      "id": "u04-048",
+      "type": "listen-tf",
+      "skill": "listening",
+      "level": 1,
+      "zh": "雨果：现在几点？\n王明：现在九点十分。\n雨果：我九点半上课！",
+      "py": "Yǔguǒ: Xiànzài jǐ diǎn?\nWáng Míng: Xiànzài jiǔ diǎn shí fēn.\nYǔguǒ: Wǒ jiǔ diǎn bàn shàngkè!",
+      "voice": "m",
+      "statements": [
+        {
+          "s": "Son las nueve y media.",
+          "truth": false,
+          "why": "Son las nueve y diez (九点十分); las nueve y media es la hora de la clase."
+        },
+        {
+          "s": "Hugo tiene clase a las nueve y media.",
+          "truth": true,
+          "why": "我九点半上课."
+        },
+        {
+          "s": "A Hugo le quedan veinte minutos para la clase.",
+          "truth": true,
+          "why": "De las 9:10 a las 9:30 van veinte minutos."
+        }
+      ],
+      "grammarIds": [
+        "dates-time"
+      ],
+      "explain": "Hay dos horas en el diálogo: la actual (九点十分) y la de la clase (九点半). 十分 es «y diez» y 半 «y media»."
+    },
+    {
+      "id": "u04-049",
+      "type": "listen-tf",
+      "skill": "listening",
+      "level": 2,
+      "zh": "我叫安娜。我每天早上六点半起床，上午八点上课。中午十二点我和雨果吃饭。晚上十一点我睡觉。",
+      "py": "Wǒ jiào Ānnà. Wǒ měi tiān zǎoshang liù diǎn bàn qǐchuáng, shàngwǔ bā diǎn shàngkè. Zhōngwǔ shí'èr diǎn wǒ hé Yǔguǒ chī fàn. Wǎnshang shíyī diǎn wǒ shuìjiào.",
+      "voice": "f",
+      "statements": [
+        {
+          "s": "Ana se levanta a las seis y media.",
+          "truth": true,
+          "why": "早上六点半起床."
+        },
+        {
+          "s": "Ana come sola a mediodía.",
+          "truth": false,
+          "why": "中午十二点我和雨果吃饭: come con Hugo."
+        },
+        {
+          "s": "Ana se acuesta a las doce.",
+          "truth": false,
+          "why": "晚上十一点我睡觉: a las once."
+        }
+      ],
+      "grammarIds": [
+        "dates-time",
+        "word-order",
+        "he"
+      ],
+      "explain": "Escucha el orden fijo: parte del día + hora + verbo. 和雨果 («con Hugo») va delante del verbo 吃饭 y cambia por completo la segunda afirmación."
+    },
+    {
+      "id": "u04-050",
+      "type": "listen-tf",
+      "skill": "listening",
+      "level": 2,
+      "zh": "李老师：雨果，你的生日是几月几号？\n雨果：三月九号。李老师，您呢？\n李老师：我的生日是十二月二十五号。",
+      "py": "Lǐ lǎoshī: Yǔguǒ, nǐ de shēngrì shì jǐ yuè jǐ hào?\nYǔguǒ: Sān yuè jiǔ hào. Lǐ lǎoshī, nín ne?\nLǐ lǎoshī: Wǒ de shēngrì shì shí'èr yuè èrshíwǔ hào.",
+      "voice": "m",
+      "statements": [
+        {
+          "s": "El cumpleaños de Hugo es el 9 de marzo.",
+          "truth": true,
+          "why": "三月九号 = mes 3, día 9."
+        },
+        {
+          "s": "El cumpleaños del profesor Li es en noviembre.",
+          "truth": false,
+          "why": "十二月 es diciembre (mes 12), no noviembre (十一月)."
+        },
+        {
+          "s": "Hugo devuelve la pregunta al profesor.",
+          "truth": true,
+          "why": "Usa 您呢 (¿y usted?) para preguntarle lo mismo."
+        }
+      ],
+      "grammarIds": [
+        "dates-time",
+        "ne"
+      ],
+      "explain": "Los meses son números: 三月 es marzo y 十二月 diciembre. Fíjate en que Hugo usa 您呢, con 您 formal, porque habla con su profesor."
+    },
+    {
+      "id": "u04-051",
+      "type": "listen-tf",
+      "skill": "listening",
+      "level": 2,
+      "zh": "安娜：王明，星期六你有时间吗？\n王明：星期六上午我有课，下午有时间。\n安娜：好，星期六下午两点我们去学校学习吧。",
+      "py": "Ānnà: Wáng Míng, xīngqīliù nǐ yǒu shíjiān ma?\nWáng Míng: Xīngqīliù shàngwǔ wǒ yǒu kè, xiàwǔ yǒu shíjiān.\nĀnnà: Hǎo, xīngqīliù xiàwǔ liǎng diǎn wǒmen qù xuéxiào xuéxí ba.",
+      "voice": "f",
+      "statements": [
+        {
+          "s": "Wang Ming no tiene clase el sábado.",
+          "truth": false,
+          "why": "星期六上午我有课: tiene clase el sábado por la mañana."
+        },
+        {
+          "s": "Quedan el sábado a las dos de la tarde.",
+          "truth": true,
+          "why": "星期六下午两点我们去学校学习吧."
+        },
+        {
+          "s": "Van a estudiar en casa de Ana.",
+          "truth": false,
+          "why": "Dicen 去学校: van a la escuela."
+        }
+      ],
+      "grammarIds": [
+        "dates-time",
+        "word-order",
+        "ba"
+      ],
+      "explain": "Wang Ming divide el sábado en 上午 (ocupado) y 下午 (libre). La cita se dice de lo grande a lo pequeño: 星期六 + 下午 + 两点, y 吧 al final la convierte en propuesta.",
+      "new": [
+        "吧"
+      ]
+    },
+    {
+      "id": "u04-052",
+      "type": "listen-tf",
+      "skill": "listening",
+      "level": 2,
+      "zh": "今年是二零二六年。去年我在西班牙学习，今年我在中国学习。明年我回西班牙。",
+      "py": "Jīnnián shì èr líng èr liù nián. Qùnián wǒ zài Xībānyá xuéxí, jīnnián wǒ zài Zhōngguó xuéxí. Míngnián wǒ huí Xībānyá.",
+      "voice": "m",
+      "statements": [
+        {
+          "s": "Este año es 2026.",
+          "truth": true,
+          "why": "今年是二零二六年, leído cifra a cifra."
+        },
+        {
+          "s": "El año pasado estudiaba en China.",
+          "truth": false,
+          "why": "去年我在西班牙学习: el año pasado estaba en España."
+        },
+        {
+          "s": "El año que viene vuelve a España.",
+          "truth": true,
+          "why": "明年我回西班牙."
+        }
+      ],
+      "grammarIds": [
+        "dates-time",
+        "zai"
+      ],
+      "explain": "Tres años en tres frases: 去年 (pasado), 今年 (este) y 明年 (que viene). El lugar con 在 va delante del verbo 学习, no detrás como en español."
+    },
+    {
+      "id": "u04-053",
+      "type": "speak-repeat",
+      "skill": "speaking",
+      "level": 1,
+      "zh": "今天星期几？",
+      "py": "Jīntiān xīngqī jǐ?",
+      "es": "¿Qué día es hoy?",
+      "explain": "Cuatro primeros tonos seguidos (jīn tiān xīng qī) y un 3.º tono final (jǐ). Mantén la voz alta y plana hasta el final y deja caer solo la última sílaba."
+    },
+    {
+      "id": "u04-054",
+      "type": "speak-repeat",
+      "skill": "speaking",
+      "level": 1,
+      "zh": "现在八点二十分。",
+      "py": "Xiànzài bā diǎn èrshí fēn.",
+      "es": "Son las ocho y veinte.",
+      "explain": "xiànzài son dos cuartos tonos que caen; bā es alto y plano. En èrshí fēn el èr es 4.º tono y shí sube: no los digas en el mismo tono."
+    },
+    {
+      "id": "u04-055",
+      "type": "speak-repeat",
+      "skill": "speaking",
+      "level": 1,
+      "zh": "我每天六点半起床。",
+      "py": "Wǒ měi tiān liù diǎn bàn qǐchuáng.",
+      "es": "Cada día me levanto a las seis y media.",
+      "explain": "wǒ měi son dos terceros tonos: el primero se pronuncia como 2.º (wó měi). El verbo 起床 va al final, después de toda la información de tiempo."
+    },
+    {
+      "id": "u04-056",
+      "type": "speak-repeat",
+      "skill": "speaking",
+      "level": 1,
+      "zh": "明天我没有课。",
+      "py": "Míngtiān wǒ méiyǒu kè.",
+      "es": "Mañana no tengo clase.",
+      "explain": "míng y méi son dos segundos tonos ascendentes; kè cae con fuerza (4.º tono). 有 se niega siempre con 没, nunca con 不."
+    },
+    {
+      "id": "u04-057",
+      "type": "speak-repeat",
+      "skill": "speaking",
+      "level": 2,
+      "zh": "你的生日是几月几号？",
+      "py": "Nǐ de shēngrì shì jǐ yuè jǐ hào?",
+      "es": "¿Qué día es tu cumpleaños?",
+      "explain": "Hay dos 几 (3.º tono) seguidos de yuè y hào (4.º tono): jǐ yuè, jǐ hào. Pronuncia el 3.º tono bajo y corto antes de cada caída."
+    },
+    {
+      "id": "u04-058",
+      "type": "speak-repeat",
+      "skill": "speaking",
+      "level": 1,
+      "zh": "星期天我不上课。",
+      "py": "Xīngqītiān wǒ bú shàngkè.",
+      "es": "El domingo no tengo clase.",
+      "explain": "不 pasa a 2.º tono (bú) porque 上 es 4.º tono. Las tres primeras sílabas son 1.º tono: mantenlas altas y sin romper."
+    },
+    {
+      "id": "u04-059",
+      "type": "speak-repeat",
+      "skill": "speaking",
+      "level": 2,
+      "zh": "下午两点我有课。",
+      "py": "Xiàwǔ liǎng diǎn wǒ yǒu kè.",
+      "es": "A las dos de la tarde tengo clase.",
+      "explain": "liǎng diǎn wǒ yǒu son cuatro terceros tonos seguidos: en el habla real se oyen como liáng diǎn wó yǒu, alternando. Practica esa ondulación."
+    },
+    {
+      "id": "u04-060",
+      "type": "speak-repeat",
+      "skill": "speaking",
+      "level": 1,
+      "zh": "晚上十一点我睡觉。",
+      "py": "Wǎnshang shíyī diǎn wǒ shuìjiào.",
+      "es": "A las once de la noche me acuesto.",
+      "explain": "wǎnshang lleva la segunda sílaba neutra, muy corta. shíyī diǎn: 2.º + 1.º + 3.º. Termina con shuìjiào, dos cuartos tonos que caen seguidos."
+    },
+    {
+      "id": "u04-061",
+      "type": "speak-repeat",
+      "skill": "speaking",
+      "level": 2,
+      "zh": "今年是二零二六年。",
+      "py": "Jīnnián shì èr líng èr liù nián.",
+      "es": "Este año es 2026.",
+      "explain": "El año se lee cifra a cifra: èr líng èr liù. Cada cifra tiene su tono (4-2-4-4): no las aplanes como en español."
+    },
+    {
+      "id": "u04-062",
+      "type": "speak-repeat",
+      "skill": "speaking",
+      "level": 1,
+      "zh": "生日快乐！",
+      "py": "Shēngrì kuàilè!",
+      "es": "¡Feliz cumpleaños!",
+      "explain": "Un 1.º tono y tres cuartos tonos: shēng se mantiene alto y rì, kuài, lè caen uno tras otro. Es la felicitación fija, sin añadir 很."
+    },
+    {
+      "id": "u04-063",
+      "type": "speak-repeat",
+      "skill": "speaking",
+      "level": 2,
+      "zh": "你什么时候回家？",
+      "py": "Nǐ shénme shíhou huí jiā?",
+      "es": "¿Cuándo vuelves a casa?",
+      "explain": "shénme y shíhou llevan la segunda sílaba en tono neutro: shén-me, shí-hou. huí sube (2.º tono) y jiā se mantiene alta (1.º tono)."
+    },
+    {
+      "id": "u04-064",
+      "type": "speak-repeat",
+      "skill": "speaking",
+      "level": 2,
+      "zh": "我每天学习两个小时。",
+      "py": "Wǒ měi tiān xuéxí liǎng ge xiǎoshí.",
+      "es": "Estudio dos horas cada día.",
+      "explain": "La duración (两个小时) va detrás del verbo, por eso la frase termina en xiǎoshí. ge es neutro y pasa casi desapercibido entre liǎng y xiǎo."
+    },
+    {
+      "id": "u04-065",
+      "type": "speak-read",
+      "skill": "speaking",
+      "level": 1,
+      "text": "今天星期二。明天星期三，我有课。星期六和星期天我没有课。",
+      "py": "Jīntiān xīngqī'èr. Míngtiān xīngqīsān, wǒ yǒu kè. Xīngqīliù hé xīngqītiān wǒ méiyǒu kè.",
+      "es": "Hoy es martes. Mañana es miércoles y tengo clase. El sábado y el domingo no tengo clase.",
+      "explain": "Los días se dicen sin 是 (今天星期二). Haz una pausa tras cada día de la semana y marca bien los números: èr, sān, liù."
+    },
+    {
+      "id": "u04-066",
+      "type": "speak-read",
+      "skill": "speaking",
+      "level": 2,
+      "text": "我早上七点起床，八点去学校。中午十二点吃饭。晚上十点半睡觉。",
+      "py": "Wǒ zǎoshang qī diǎn qǐchuáng, bā diǎn qù xuéxiào. Zhōngwǔ shí'èr diǎn chī fàn. Wǎnshang shí diǎn bàn shuìjiào.",
+      "es": "Me levanto a las siete de la mañana y voy a la escuela a las ocho. Como a las doce del mediodía. Me acuesto a las diez y media de la noche.",
+      "explain": "Cada frase sigue el patrón parte del día + hora + verbo. En shí'èr el apóstrofo separa dos sílabas (shí + èr): no las juntes en «shier»."
+    },
+    {
+      "id": "u04-067",
+      "type": "speak-read",
+      "skill": "speaking",
+      "level": 2,
+      "text": "我的生日是四月十号。我妈妈的生日是十一月二号。今天是四月十号，我很高兴！",
+      "py": "Wǒ de shēngrì shì sì yuè shí hào. Wǒ māma de shēngrì shì shíyī yuè èr hào. Jīntiān shì sì yuè shí hào, wǒ hěn gāoxìng!",
+      "es": "Mi cumpleaños es el 10 de abril. El de mi madre es el 2 de noviembre. Hoy es 10 de abril, ¡estoy muy contento!",
+      "explain": "Las fechas llevan 是 cuando identifican un día (我的生日是…). Distingue sì (4, 4.º tono) de shí (10, 2.º tono) para no cambiar de mes o de día."
+    },
+    {
+      "id": "u04-068",
+      "type": "speak-read",
+      "skill": "speaking",
+      "level": 2,
+      "text": "安娜，你什么时候有时间？星期五下午我没有课。我们下午三点去学校学习吧。",
+      "py": "Ānnà, nǐ shénme shíhou yǒu shíjiān? Xīngqīwǔ xiàwǔ wǒ méiyǒu kè. Wǒmen xiàwǔ sān diǎn qù xuéxiào xuéxí ba.",
+      "es": "Ana, ¿cuándo tienes tiempo? El viernes por la tarde no tengo clase. Vamos a la escuela a estudiar a las tres de la tarde.",
+      "explain": "Pregunta con 什么时候 (sin 吗), propuesta con 吧 al final. Fíjate en wǔ xiàwǔ: tres sílabas con -ǔ seguidas; pronuncia cada tono por separado.",
+      "new": [
+        "吧"
+      ]
+    },
+    {
+      "id": "u04-069",
+      "type": "speak-read",
+      "skill": "speaking",
+      "level": 3,
+      "text": "今年是二零二六年。去年我二十岁，今年我二十一岁。明年我去中国学习，我很高兴。",
+      "py": "Jīnnián shì èr líng èr liù nián. Qùnián wǒ èrshí suì, jīnnián wǒ èrshíyī suì. Míngnián wǒ qù Zhōngguó xuéxí, wǒ hěn gāoxìng.",
+      "es": "Este año es 2026. El año pasado tenía veinte años, este año tengo veintiuno. El año que viene voy a China a estudiar y estoy muy contento.",
+      "explain": "Tres referencias de año (去年, 今年, 明年), todas al principio de su frase. Lee el año cifra a cifra, pero la edad como número normal: èrshíyī."
+    },
+    {
+      "id": "u04-070",
+      "type": "speak-read",
+      "skill": "speaking",
+      "level": 3,
+      "text": "白天我很忙：上午上课，下午在学校学习两个小时，晚上六点回家。星期天我不忙。",
+      "py": "Báitiān wǒ hěn máng: shàngwǔ shàngkè, xiàwǔ zài xuéxiào xuéxí liǎng ge xiǎoshí, wǎnshang liù diǎn huí jiā. Xīngqītiān wǒ bù máng.",
+      "es": "Durante el día estoy muy ocupado: por la mañana tengo clase, por la tarde estudio dos horas en la escuela y a las seis vuelvo a casa. El domingo no estoy ocupado.",
+      "explain": "Compara la hora 六点 (delante del verbo) con la duración 两个小时 (detrás del verbo). Al final, 不忙: 不 mantiene su 4.º tono porque 忙 es 2.º tono."
+    },
+    {
+      "id": "u04-071",
+      "type": "speak-answer",
+      "skill": "speaking",
+      "level": 1,
+      "question": "今天星期几？",
+      "questionPy": "Jīntiān xīngqī jǐ?",
+      "questionEs": "¿Qué día de la semana es hoy?",
+      "sample": "今天星期四。",
+      "samplePy": "Jīntiān xīngqīsì.",
+      "sampleEs": "Hoy es jueves.",
+      "keywords": [
+        "今天",
+        "星期"
+      ],
+      "grammarIds": [
+        "dates-time"
+      ],
+      "explain": "Responde 今天星期 + número (o 星期天). No hace falta 是: en chino el día de la semana funciona directamente como predicado."
+    },
+    {
+      "id": "u04-072",
+      "type": "speak-answer",
+      "skill": "speaking",
+      "level": 1,
+      "question": "现在几点？",
+      "questionPy": "Xiànzài jǐ diǎn?",
+      "questionEs": "¿Qué hora es?",
+      "sample": "现在十点半。",
+      "samplePy": "Xiànzài shí diǎn bàn.",
+      "sampleEs": "Son las diez y media.",
+      "keywords": [
+        "现在",
+        "点"
+      ],
+      "grammarIds": [
+        "dates-time"
+      ],
+      "explain": "现在 + hora + 点 (+ 半 o minutos + 分). Si son las dos, di 两点, nunca 二点."
+    },
+    {
+      "id": "u04-073",
+      "type": "speak-answer",
+      "skill": "speaking",
+      "level": 2,
+      "question": "你早上几点起床？",
+      "questionPy": "Nǐ zǎoshang jǐ diǎn qǐchuáng?",
+      "questionEs": "¿A qué hora te levantas por la mañana?",
+      "sample": "我早上七点起床。",
+      "samplePy": "Wǒ zǎoshang qī diǎn qǐchuáng.",
+      "sampleEs": "Me levanto a las siete de la mañana.",
+      "keywords": [
+        "点",
+        "起床"
+      ],
+      "grammarIds": [
+        "dates-time",
+        "word-order"
+      ],
+      "explain": "Pon la hora en el lugar de 几点 y deja el verbo al final: 我 + 早上 + hora + 起床. Decir 我起床七点 es calcar el orden del español."
+    },
+    {
+      "id": "u04-074",
+      "type": "speak-answer",
+      "skill": "speaking",
+      "level": 2,
+      "question": "你的生日是几月几号？",
+      "questionPy": "Nǐ de shēngrì shì jǐ yuè jǐ hào?",
+      "questionEs": "¿Qué día es tu cumpleaños?",
+      "sample": "我的生日是九月二十号。",
+      "samplePy": "Wǒ de shēngrì shì jiǔ yuè èrshí hào.",
+      "sampleEs": "Mi cumpleaños es el 20 de septiembre.",
+      "keywords": [
+        "生日",
+        "月",
+        "号"
+      ],
+      "grammarIds": [
+        "dates-time"
+      ],
+      "explain": "Sustituye los dos 几 por los números: primero el mes (月) y luego el día (号). Al hablar se usa 号; 日 queda para la escritura."
+    },
+    {
+      "id": "u04-075",
+      "type": "speak-answer",
+      "skill": "speaking",
+      "level": 2,
+      "question": "你什么时候上课？",
+      "questionPy": "Nǐ shénme shíhou shàngkè?",
+      "questionEs": "¿Cuándo tienes clase?",
+      "sample": "我星期一上午九点上课。",
+      "samplePy": "Wǒ xīngqīyī shàngwǔ jiǔ diǎn shàngkè.",
+      "sampleEs": "Tengo clase el lunes a las nueve de la mañana.",
+      "keywords": [
+        "上课"
+      ],
+      "grammarIds": [
+        "question-words",
+        "word-order"
+      ],
+      "explain": "什么时候 admite cualquier respuesta de tiempo: un día, una parte del día, una hora o los tres juntos, siempre de lo grande a lo pequeño y delante de 上课."
+    },
+    {
+      "id": "u04-076",
+      "type": "speak-answer",
+      "skill": "speaking",
+      "level": 2,
+      "question": "星期六你去学校吗？",
+      "questionPy": "Xīngqīliù nǐ qù xuéxiào ma?",
+      "questionEs": "¿El sábado vas a la escuela?",
+      "sample": "不去，星期六我没有课。",
+      "samplePy": "Bú qù, xīngqīliù wǒ méiyǒu kè.",
+      "sampleEs": "No, el sábado no tengo clase.",
+      "keywords": [
+        "去",
+        "星期六"
+      ],
+      "grammarIds": [
+        "ma",
+        "bu-mei"
+      ],
+      "explain": "Contesta repitiendo el verbo: 去 o 不去. Si añades el motivo, recuerda que «no tengo clase» es 没有课 (有 se niega con 没)."
+    },
+    {
+      "id": "u04-077",
+      "type": "speak-answer",
+      "skill": "speaking",
+      "level": 2,
+      "question": "你每天学习几个小时？",
+      "questionPy": "Nǐ měi tiān xuéxí jǐ ge xiǎoshí?",
+      "questionEs": "¿Cuántas horas estudias cada día?",
+      "sample": "我每天学习三个小时。",
+      "samplePy": "Wǒ měi tiān xuéxí sān ge xiǎoshí.",
+      "sampleEs": "Estudio tres horas cada día.",
+      "keywords": [
+        "学习",
+        "小时"
+      ],
+      "grammarIds": [
+        "dates-time",
+        "measure-words"
+      ],
+      "explain": "La duración va DETRÁS del verbo: 学习 + número + 个小时. No la pongas delante como si fuera una hora del reloj."
+    },
+    {
+      "id": "u04-078",
+      "type": "speak-answer",
+      "skill": "speaking",
+      "level": 2,
+      "question": "明年你去中国吗？",
+      "questionPy": "Míngnián nǐ qù Zhōngguó ma?",
+      "questionEs": "¿El año que viene vas a China?",
+      "sample": "去，明年我去中国学习。",
+      "samplePy": "Qù, míngnián wǒ qù Zhōngguó xuéxí.",
+      "sampleEs": "Sí, el año que viene voy a China a estudiar.",
+      "keywords": [
+        "去",
+        "明年"
+      ],
+      "grammarIds": [
+        "ma",
+        "lai-qu"
+      ],
+      "explain": "El «sí» es 去 y el «no» 不去. 去中国学习 encadena dos verbos: ir a China (para) estudiar; el propósito va detrás del lugar."
+    },
+    {
+      "id": "u04-079",
+      "type": "speak-answer",
+      "skill": "speaking",
+      "level": 1,
+      "question": "今天几号？",
+      "questionPy": "Jīntiān jǐ hào?",
+      "questionEs": "¿Qué día del mes es hoy?",
+      "sample": "今天十五号。",
+      "samplePy": "Jīntiān shíwǔ hào.",
+      "sampleEs": "Hoy es día 15.",
+      "keywords": [
+        "今天",
+        "号"
+      ],
+      "grammarIds": [
+        "dates-time"
+      ],
+      "explain": "几号 pide solo el día del mes: 今天 + número + 号. Si quieres, añade el mes delante (十月十五号), pero el orden mes → día no cambia."
+    },
+    {
+      "id": "u04-080",
+      "type": "dialogue-complete",
+      "skill": "reading",
+      "level": 1,
+      "lines": [
+        {
+          "speaker": "安娜",
+          "zh": "王明，现在几点？",
+          "py": "Wáng Míng, xiànzài jǐ diǎn?",
+          "es": "Wang Ming, ¿qué hora es?"
+        },
+        {
+          "speaker": "王明",
+          "zh": "现在七点二十分。",
+          "py": "Xiànzài qī diǎn èrshí fēn.",
+          "es": "Son las siete y veinte."
+        },
+        {
+          "speaker": "安娜",
+          "zh": "我八点上课，我去学校了！",
+          "py": "Wǒ bā diǎn shàngkè, wǒ qù xuéxiào le!",
+          "es": "Tengo clase a las ocho, ¡me voy a la escuela!"
+        }
+      ],
+      "missing": 1,
+      "options": [
+        "现在七点二十分。",
+        "今天星期二。",
+        "我七点起床。"
+      ],
+      "answer": 0,
+      "grammarIds": [
+        "dates-time",
+        "question-words"
+      ],
+      "explain": "La pregunta es 几点, así que falta una hora: 七点二十分. Además Ana reacciona con prisa porque son las 7:20 y tiene clase a las ocho."
+    },
+    {
+      "id": "u04-081",
+      "type": "dialogue-complete",
+      "skill": "reading",
+      "level": 2,
+      "lines": [
+        {
+          "speaker": "雨果",
+          "zh": "李老师，明天我们有课吗？",
+          "py": "Lǐ lǎoshī, míngtiān wǒmen yǒu kè ma?",
+          "es": "Profesor Li, ¿mañana tenemos clase?"
+        },
+        {
+          "speaker": "李老师",
+          "zh": "明天星期六，没有课。",
+          "py": "Míngtiān xīngqīliù, méiyǒu kè.",
+          "es": "Mañana es sábado, no hay clase."
+        },
+        {
+          "speaker": "雨果",
+          "zh": "星期一几点上课？",
+          "py": "Xīngqīyī jǐ diǎn shàngkè?",
+          "es": "¿A qué hora es la clase del lunes?"
+        },
+        {
+          "speaker": "李老师",
+          "zh": "上午十点。",
+          "py": "Shàngwǔ shí diǎn.",
+          "es": "A las diez de la mañana."
+        }
+      ],
+      "missing": 1,
+      "options": [
+        "明天星期六，没有课。",
+        "明天我去中国。",
+        "现在十点。"
+      ],
+      "answer": 0,
+      "grammarIds": [
+        "ma",
+        "you",
+        "dates-time"
+      ],
+      "explain": "A 有课吗 se contesta con 有 o 没有. Solo la primera opción responde a la pregunta y explica por qué Hugo pasa a preguntar por el lunes: el sábado no hay clase."
+    },
+    {
+      "id": "u04-082",
+      "type": "dialogue-complete",
+      "skill": "reading",
+      "level": 2,
+      "lines": [
+        {
+          "speaker": "王明",
+          "zh": "安娜，你的生日是几月几号？",
+          "py": "Ānnà, nǐ de shēngrì shì jǐ yuè jǐ hào?",
+          "es": "Ana, ¿qué día es tu cumpleaños?"
+        },
+        {
+          "speaker": "安娜",
+          "zh": "我的生日是七月八号。你呢？",
+          "py": "Wǒ de shēngrì shì qī yuè bā hào. Nǐ ne?",
+          "es": "Mi cumpleaños es el 8 de julio. ¿Y el tuyo?"
+        },
+        {
+          "speaker": "王明",
+          "zh": "我的生日是明天！",
+          "py": "Wǒ de shēngrì shì míngtiān!",
+          "es": "¡Mi cumpleaños es mañana!"
+        },
+        {
+          "speaker": "安娜",
+          "zh": "生日快乐，王明！",
+          "py": "Shēngrì kuàilè, Wáng Míng!",
+          "es": "¡Feliz cumpleaños, Wang Ming!"
+        }
+      ],
+      "missing": 2,
+      "options": [
+        "我的生日是明天！",
+        "今天星期几？",
+        "我今年二十岁。"
+      ],
+      "answer": 0,
+      "grammarIds": [
+        "ne",
+        "dates-time"
+      ],
+      "explain": "你呢 devuelve la pregunta del cumpleaños, así que Wang Ming tiene que decir cuándo es el suyo. Y la felicitación 生日快乐 de Ana solo tiene sentido si es inminente."
+    },
+    {
+      "id": "u04-083",
+      "type": "dialogue-complete",
+      "skill": "reading",
+      "level": 2,
+      "lines": [
+        {
+          "speaker": "雨果",
+          "zh": "你每天几点睡觉？",
+          "py": "Nǐ měi tiān jǐ diǎn shuìjiào?",
+          "es": "¿A qué hora te acuestas cada día?"
+        },
+        {
+          "speaker": "王明",
+          "zh": "我晚上十二点睡觉，早上六点起床。",
+          "py": "Wǒ wǎnshang shí'èr diǎn shuìjiào, zǎoshang liù diǎn qǐchuáng.",
+          "es": "Me acuesto a las doce y me levanto a las seis."
+        },
+        {
+          "speaker": "雨果",
+          "zh": "你每天睡六个小时？太少了！",
+          "py": "Nǐ měi tiān shuì liù ge xiǎoshí? Tài shǎo le!",
+          "es": "¿Duermes seis horas cada día? ¡Es muy poco!"
+        }
+      ],
+      "missing": 1,
+      "options": [
+        "我晚上十二点睡觉，早上六点起床。",
+        "我晚上有课。",
+        "我不睡觉。"
+      ],
+      "answer": 0,
+      "new": [
+        "太"
+      ],
+      "grammarIds": [
+        "dates-time",
+        "tai-le"
+      ],
+      "explain": "Hugo calcula seis horas de sueño (六个小时), así que la respuesta tiene que dar las dos horas: de las 12 a las 6. Fíjate en 睡 solo, sin 觉, delante de la duración."
+    },
+    {
+      "id": "u04-084",
+      "type": "dialogue-order",
+      "skill": "reading",
+      "level": 1,
+      "lines": [
+        {
+          "speaker": "雨果",
+          "zh": "安娜，今天几号？",
+          "py": "Ānnà, jīntiān jǐ hào?",
+          "es": "Ana, ¿qué día es hoy?"
+        },
+        {
+          "speaker": "安娜",
+          "zh": "今天十二号，星期五。",
+          "py": "Jīntiān shí'èr hào, xīngqīwǔ.",
+          "es": "Hoy es día 12, viernes."
+        },
+        {
+          "speaker": "雨果",
+          "zh": "明天是我妹妹的生日！",
+          "py": "Míngtiān shì wǒ mèimei de shēngrì!",
+          "es": "¡Mañana es el cumpleaños de mi hermana pequeña!"
+        },
+        {
+          "speaker": "安娜",
+          "zh": "是吗？她今年几岁？",
+          "py": "Shì ma? Tā jīnnián jǐ suì?",
+          "es": "¿Ah, sí? ¿Cuántos años cumple?"
+        }
+      ],
+      "grammarIds": [
+        "dates-time",
+        "question-words"
+      ],
+      "explain": "Primero se pregunta la fecha, luego se contesta (día + día de la semana), después Hugo relaciona esa fecha con el cumpleaños y Ana reacciona preguntando la edad."
+    },
+    {
+      "id": "u04-085",
+      "type": "dialogue-order",
+      "skill": "reading",
+      "level": 2,
+      "lines": [
+        {
+          "speaker": "王明",
+          "zh": "雨果，你什么时候有时间？",
+          "py": "Yǔguǒ, nǐ shénme shíhou yǒu shíjiān?",
+          "es": "Hugo, ¿cuándo tienes tiempo?"
+        },
+        {
+          "speaker": "雨果",
+          "zh": "星期三下午我没有课。",
+          "py": "Xīngqīsān xiàwǔ wǒ méiyǒu kè.",
+          "es": "El miércoles por la tarde no tengo clase."
+        },
+        {
+          "speaker": "王明",
+          "zh": "好，星期三下午四点我们去学习吧。",
+          "py": "Hǎo, xīngqīsān xiàwǔ sì diǎn wǒmen qù xuéxí ba.",
+          "es": "Vale, el miércoles a las cuatro de la tarde vamos a estudiar."
+        },
+        {
+          "speaker": "雨果",
+          "zh": "好的，星期三见！",
+          "py": "Hǎo de, xīngqīsān jiàn!",
+          "es": "De acuerdo, ¡hasta el miércoles!"
+        }
+      ],
+      "new": [
+        "好的",
+        "见",
+        "吧"
+      ],
+      "grammarIds": [
+        "question-words",
+        "ba",
+        "word-order"
+      ],
+      "explain": "La pregunta 什么时候 abre; la respuesta da un hueco libre; Wang Ming concreta la hora con 吧 (propuesta) y la despedida 星期三见 («nos vemos el miércoles») solo puede cerrar."
+    },
+    {
+      "id": "u04-086",
+      "type": "dialogue-order",
+      "skill": "reading",
+      "level": 2,
+      "lines": [
+        {
+          "speaker": "李老师",
+          "zh": "你们每天几点上课？",
+          "py": "Nǐmen měi tiān jǐ diǎn shàngkè?",
+          "es": "¿A qué hora tenéis clase cada día?"
+        },
+        {
+          "speaker": "安娜",
+          "zh": "我们上午八点半上课。",
+          "py": "Wǒmen shàngwǔ bā diǎn bàn shàngkè.",
+          "es": "Tenemos clase a las ocho y media de la mañana."
+        },
+        {
+          "speaker": "李老师",
+          "zh": "中午你们几点吃饭？",
+          "py": "Zhōngwǔ nǐmen jǐ diǎn chī fàn?",
+          "es": "¿A qué hora coméis a mediodía?"
+        },
+        {
+          "speaker": "安娜",
+          "zh": "十二点半。下午两点我们回家。",
+          "py": "Shí'èr diǎn bàn. Xiàwǔ liǎng diǎn wǒmen huí jiā.",
+          "es": "A las doce y media. A las dos de la tarde volvemos a casa."
+        },
+        {
+          "speaker": "李老师",
+          "zh": "你们不忙。",
+          "py": "Nǐmen bù máng.",
+          "es": "No estáis muy ocupados."
+        }
+      ],
+      "grammarIds": [
+        "dates-time",
+        "word-order"
+      ],
+      "explain": "Las preguntas siguen el orden del día (clase por la mañana → comida a mediodía), y cada respuesta encaja con la pregunta anterior. El comentario final resume todo lo oído."
+    },
+    {
+      "id": "u04-087",
+      "type": "dialogue-who",
+      "skill": "reading",
+      "level": 2,
+      "lines": [
+        {
+          "speaker": "雨果",
+          "zh": "李老师，您好！明天几点上课？",
+          "py": "Lǐ lǎoshī, nín hǎo! Míngtiān jǐ diǎn shàngkè?",
+          "es": "¡Hola, profesor Li! ¿A qué hora es la clase de mañana?"
+        },
+        {
+          "speaker": "李老师",
+          "zh": "明天上午九点。你们不要晚！",
+          "py": "Míngtiān shàngwǔ jiǔ diǎn. Nǐmen bú yào wǎn!",
+          "es": "Mañana a las nueve de la mañana. ¡No lleguéis tarde!"
+        },
+        {
+          "speaker": "安娜",
+          "zh": "我每天七点起床，我不晚。",
+          "py": "Wǒ měi tiān qī diǎn qǐchuáng, wǒ bù wǎn.",
+          "es": "Yo me levanto a las siete cada día, no llego tarde."
+        },
+        {
+          "speaker": "雨果",
+          "zh": "我八点半起床……",
+          "py": "Wǒ bā diǎn bàn qǐchuáng……",
+          "es": "Yo me levanto a las ocho y media…"
+        }
+      ],
+      "ask": 1,
+      "options": [
+        "雨果",
+        "李老师",
+        "安娜"
+      ],
+      "answer": 1,
+      "new": [
+        "晚",
+        "要"
+      ],
+      "explain": "La línea fija la hora de la clase y da una orden con 你们 (vosotros): solo el profesor habla así a los alumnos. Hugo y Ana hablan de sí mismos con 我."
+    },
+    {
+      "id": "u04-088",
+      "type": "dialogue-who",
+      "skill": "reading",
+      "level": 2,
+      "lines": [
+        {
+          "speaker": "王明",
+          "zh": "安娜，你的生日是几月几号？",
+          "py": "Ānnà, nǐ de shēngrì shì jǐ yuè jǐ hào?",
+          "es": "Ana, ¿qué día es tu cumpleaños?"
+        },
+        {
+          "speaker": "安娜",
+          "zh": "二月十四号。雨果的生日是五月，我的朋友王明的生日是十二月。",
+          "py": "Èr yuè shísì hào. Yǔguǒ de shēngrì shì wǔ yuè, wǒ de péngyou Wáng Míng de shēngrì shì shí'èr yuè.",
+          "es": "El 14 de febrero. El cumpleaños de Hugo es en mayo y el de mi amigo Wang Ming, en diciembre."
+        },
+        {
+          "speaker": "王明",
+          "zh": "对，我的生日是十二月二十号。",
+          "py": "Duì, wǒ de shēngrì shì shí'èr yuè èrshí hào.",
+          "es": "Sí, mi cumpleaños es el 20 de diciembre."
+        },
+        {
+          "speaker": "雨果",
+          "zh": "我的生日是五月三号！",
+          "py": "Wǒ de shēngrì shì wǔ yuè sān hào!",
+          "es": "¡Mi cumpleaños es el 3 de mayo!"
+        }
+      ],
+      "ask": 3,
+      "options": [
+        "王明",
+        "安娜",
+        "雨果"
+      ],
+      "answer": 2,
+      "new": [
+        "对"
+      ],
+      "explain": "Ana ha dicho que el cumpleaños de Hugo es en mayo (五月); la línea 我的生日是五月三号 completa ese dato con 我 («mi»), así que la dice Hugo. El de Wang Ming es en diciembre."
+    },
+    {
+      "id": "u04-089",
+      "type": "dialogue-who",
+      "skill": "reading",
+      "level": 2,
+      "lines": [
+        {
+          "speaker": "安娜",
+          "zh": "现在几点？我们什么时候吃饭？",
+          "py": "Xiànzài jǐ diǎn? Wǒmen shénme shíhou chī fàn?",
+          "es": "¿Qué hora es? ¿Cuándo comemos?"
+        },
+        {
+          "speaker": "雨果",
+          "zh": "现在十一点半，十二点吃饭吧。",
+          "py": "Xiànzài shíyī diǎn bàn, shí'èr diǎn chī fàn ba.",
+          "es": "Son las once y media; comamos a las doce."
+        },
+        {
+          "speaker": "王明",
+          "zh": "我十二点有课，我下午一点吃饭。",
+          "py": "Wǒ shí'èr diǎn yǒu kè, wǒ xiàwǔ yī diǎn chī fàn.",
+          "es": "Yo tengo clase a las doce; como a la una de la tarde."
+        },
+        {
+          "speaker": "安娜",
+          "zh": "好，我们下午一点吃饭。",
+          "py": "Hǎo, wǒmen xiàwǔ yī diǎn chī fàn.",
+          "es": "Vale, comemos a la una de la tarde."
+        }
+      ],
+      "ask": 2,
+      "options": [
+        "安娜",
+        "雨果",
+        "王明"
+      ],
+      "answer": 2,
+      "explain": "Quien tiene clase a las doce no es quien propone comer a las doce (Hugo) ni quien pregunta (Ana): es la tercera persona, Wang Ming, y por eso la cita final se mueve a la una.",
+      "new": [
+        "吧"
+      ]
+    },
+    {
+      "id": "u04-090",
+      "type": "situation",
+      "skill": "vocabulary",
+      "level": 1,
+      "situation": "No llevas reloj y quieres saber la hora.",
+      "options": [
+        "现在几点？",
+        "今天几号？",
+        "今天星期几？",
+        "你什么时候有时间？"
+      ],
+      "answer": 0,
+      "py": "Xiànzài jǐ diǎn?",
+      "grammarIds": [
+        "dates-time",
+        "question-words"
+      ],
+      "explain": "La hora se pregunta con 几点 («cuántas horas = qué hora»). 几号 pide la fecha y 星期几 el día de la semana."
+    },
+    {
+      "id": "u04-091",
+      "type": "situation",
+      "skill": "vocabulary",
+      "level": 1,
+      "situation": "Es el cumpleaños de tu compañera Ana y quieres felicitarla.",
+      "options": [
+        "你的生日是几月几号？",
+        "生日快乐！",
+        "今天是你的生日吗？",
+        "你今年多大？"
+      ],
+      "answer": 1,
+      "py": "Shēngrì kuàilè!",
+      "explain": "La fórmula fija es 生日快乐 («cumpleaños feliz»). Las otras opciones preguntan por el cumpleaños o la edad, pero no felicitan."
+    },
+    {
+      "id": "u04-092",
+      "type": "situation",
+      "skill": "vocabulary",
+      "level": 2,
+      "situation": "Quieres quedar con Wang Ming y necesitas saber cuándo está libre.",
+      "options": [
+        "你是哪国人？",
+        "现在几点？",
+        "你什么时候有时间？",
+        "你每天几点起床？"
+      ],
+      "answer": 2,
+      "py": "Nǐ shénme shíhou yǒu shíjiān?",
+      "grammarIds": [
+        "question-words"
+      ],
+      "explain": "«¿Cuándo tienes tiempo?» es 什么时候 + 有时间. Preguntar la hora actual o a qué hora se levanta no te dice cuándo está libre."
+    },
+    {
+      "id": "u04-093",
+      "type": "situation",
+      "skill": "vocabulary",
+      "level": 2,
+      "situation": "Tu amigo te propone estudiar el domingo, pero ese día no puedes porque no vas a la escuela.",
+      "options": [
+        "星期天我上课。",
+        "星期天我不去学校。",
+        "星期六我有课。",
+        "明天我去学校。"
+      ],
+      "answer": 1,
+      "py": "Xīngqītiān wǒ bú qù xuéxiào.",
+      "grammarIds": [
+        "dates-time",
+        "bu-mei"
+      ],
+      "explain": "Hay que negar con 不 (acción habitual o futura) y mantener el día al principio: 星期天我不去学校. Las otras frases hablan de otros días o dicen que sí tienes clase."
+    },
+    {
+      "id": "u04-094",
+      "type": "find-error",
+      "skill": "grammar",
+      "level": 2,
+      "zh": "我起床七点半。",
+      "tokens": [
+        "我",
+        "起床",
+        "七点半"
+      ],
+      "wrongIndex": 2,
+      "correct": "我七点半起床。",
+      "es": "Me levanto a las siete y media.",
+      "grammarIds": [
+        "word-order",
+        "dates-time"
+      ],
+      "explain": "En chino la hora va DELANTE del verbo: 我七点起床. Ponerla al final copia el orden del español «me levanto a las siete»."
+    },
+    {
+      "id": "u04-095",
+      "type": "find-error",
+      "skill": "grammar",
+      "level": 1,
+      "zh": "现在二点半。",
+      "tokens": [
+        "现在",
+        "二",
+        "点",
+        "半"
+      ],
+      "wrongIndex": 1,
+      "correct": "现在两点半。",
+      "es": "Son las dos y media.",
+      "grammarIds": [
+        "numbers",
+        "dates-time"
+      ],
+      "explain": "Delante de 点 (como delante de cualquier clasificador) «dos» es 两, no 二. 二 solo se usa al contar en serie, en 十二, 二十 y similares."
+    },
+    {
+      "id": "u04-096",
+      "type": "find-error",
+      "skill": "grammar",
+      "level": 2,
+      "zh": "今天星期几吗？",
+      "tokens": [
+        "今天",
+        "星期",
+        "几",
+        "吗"
+      ],
+      "wrongIndex": 3,
+      "correct": "今天星期几？",
+      "es": "¿Qué día es hoy?",
+      "grammarIds": [
+        "ma",
+        "question-words"
+      ],
+      "explain": "几 ya convierte la frase en pregunta; 吗 solo se añade a frases afirmativas. Una palabra interrogativa y 吗 nunca van juntas."
+    },
+    {
+      "id": "u04-097",
+      "type": "find-error",
+      "skill": "grammar",
+      "level": 2,
+      "zh": "我的生日是三号五月。",
+      "tokens": [
+        "我的",
+        "生日",
+        "是",
+        "三号",
+        "五月"
+      ],
+      "wrongIndex": 3,
+      "correct": "我的生日是五月三号。",
+      "es": "Mi cumpleaños es el 3 de mayo.",
+      "grammarIds": [
+        "dates-time"
+      ],
+      "explain": "Las fechas van de lo grande a lo pequeño: mes y luego día (五月三号). «3 de mayo» en español invierte ese orden, de ahí el error."
+    },
+    {
+      "id": "u04-098",
+      "type": "find-error",
+      "skill": "grammar",
+      "level": 2,
+      "zh": "你几点起床早上？",
+      "tokens": [
+        "你",
+        "几点",
+        "起床",
+        "早上"
+      ],
+      "wrongIndex": 3,
+      "correct": "你早上几点起床？",
+      "es": "¿A qué hora te levantas por la mañana?",
+      "grammarIds": [
+        "word-order",
+        "dates-time"
+      ],
+      "explain": "早上 es una expresión de tiempo y va delante del verbo, además antes de la hora concreta (早上几点): de lo grande a lo pequeño. Nunca al final de la frase."
+    },
+    {
+      "id": "u04-099",
+      "type": "find-error",
+      "skill": "grammar",
+      "level": 2,
+      "zh": "今天多少号？",
+      "tokens": [
+        "今天",
+        "多少",
+        "号"
+      ],
+      "wrongIndex": 1,
+      "correct": "今天几号？",
+      "es": "¿Qué día es hoy?",
+      "grammarIds": [
+        "question-words",
+        "dates-time"
+      ],
+      "explain": "Para fechas, horas y días de la semana se usa 几 (几号, 几点, 星期几), nunca 多少, que es para cantidades abiertas como 多少钱."
+    },
+    {
+      "id": "u04-100",
+      "type": "find-error",
+      "skill": "grammar",
+      "level": 1,
+      "zh": "今天星期七。",
+      "tokens": [
+        "今天",
+        "星期",
+        "七"
+      ],
+      "wrongIndex": 2,
+      "correct": "今天星期天。",
+      "es": "Hoy es domingo.",
+      "grammarIds": [
+        "dates-time"
+      ],
+      "explain": "Los días se numeran del uno (lunes) al seis (sábado), pero el domingo rompe la serie: 星期天 o 星期日. 星期七 no existe."
+    },
+    {
+      "id": "u04-101",
+      "type": "find-error",
+      "skill": "grammar",
+      "level": 2,
+      "zh": "我两个小时学习。",
+      "tokens": [
+        "我",
+        "两个小时",
+        "学习"
+      ],
+      "wrongIndex": 1,
+      "correct": "我学习两个小时。",
+      "es": "Estudio dos horas.",
+      "grammarIds": [
+        "word-order",
+        "dates-time"
+      ],
+      "explain": "La duración (两个小时) va DETRÁS del verbo, al contrario que la hora del reloj (两点), que va delante. Es la diferencia clave entre 点 y 小时."
+    },
+    {
+      "id": "u04-102",
+      "type": "transform",
+      "skill": "grammar",
+      "level": 1,
+      "zh": "我明天去学校。",
+      "py": "Wǒ míngtiān qù xuéxiào.",
+      "es": "Mañana voy a la escuela.",
+      "target": "negative-bu",
+      "answer": "我明天不去学校。",
+      "alternatives": [
+        "明天我不去学校。"
+      ],
+      "grammarIds": [
+        "bu-mei",
+        "word-order"
+      ],
+      "explain": "Una acción futura se niega con 不 delante del verbo: 不去. 明天 puede quedarse tras el sujeto o pasar al principio, pero la negación va siempre pegada al verbo."
+    },
+    {
+      "id": "u04-103",
+      "type": "transform",
+      "skill": "grammar",
+      "level": 1,
+      "zh": "今天星期四。",
+      "py": "Jīntiān xīngqīsì.",
+      "es": "Hoy es jueves.",
+      "target": "question-ma",
+      "answer": "今天星期四吗？",
+      "grammarIds": [
+        "ma",
+        "dates-time"
+      ],
+      "explain": "Basta añadir 吗 al final. Como el día de la semana no lleva 是, tampoco lo lleva la pregunta: 今天星期三吗？"
+    },
+    {
+      "id": "u04-104",
+      "type": "transform",
+      "skill": "grammar",
+      "level": 2,
+      "zh": "你星期六上课。",
+      "py": "Nǐ xīngqīliù shàngkè.",
+      "es": "El sábado tienes clase.",
+      "target": "question-a-not-a",
+      "answer": "你星期六上不上课？",
+      "grammarIds": [
+        "dates-time"
+      ],
+      "explain": "La forma afirmativa-negativa repite el verbo: 上不上课. Con verbos de dos sílabas como 上课 se repite solo la primera (上不上) y el objeto 课 va al final."
+    },
+    {
+      "id": "u04-105",
+      "type": "transform",
+      "skill": "grammar",
+      "level": 2,
+      "zh": "他七点起床。",
+      "py": "Tā qī diǎn qǐchuáng.",
+      "es": "Él se levanta a las siete.",
+      "target": "question-word",
+      "answer": "他几点起床？",
+      "grammarIds": [
+        "question-words",
+        "dates-time"
+      ],
+      "explain": "几 ocupa el lugar del número (七) y 点 se mantiene: 几点. El orden no cambia, la interrogativa va justo donde iba la respuesta."
+    },
+    {
+      "id": "u04-106",
+      "type": "transform",
+      "skill": "grammar",
+      "level": 2,
+      "zh": "我的生日是十月二号。",
+      "py": "Wǒ de shēngrì shì shí yuè èr hào.",
+      "es": "Mi cumpleaños es el 2 de octubre.",
+      "target": "question-word",
+      "answer": "你的生日是几月几号？",
+      "alternatives": [
+        "你的生日是几号？"
+      ],
+      "grammarIds": [
+        "question-words",
+        "dates-time"
+      ],
+      "explain": "Cada número se sustituye por 几: 十 → 几 y 二 → 几, manteniendo 月 y 号. Y al preguntarle a la persona, 我的 pasa a 你的."
+    },
+    {
+      "id": "u04-107",
+      "type": "transform",
+      "skill": "grammar",
+      "level": 2,
+      "zh": "昨天我去学校了。",
+      "py": "Zuótiān wǒ qù xuéxiào le.",
+      "es": "Ayer fui a la escuela.",
+      "target": "negative-mei",
+      "answer": "昨天我没去学校。",
+      "alternatives": [
+        "昨天我没有去学校。"
+      ],
+      "grammarIds": [
+        "bu-mei",
+        "le"
+      ],
+      "explain": "Una acción pasada que no ocurrió se niega con 没 y se quita el 了: 没去, nunca 不去了 ni 没去了."
+    },
+    {
+      "id": "u04-108",
+      "type": "transform",
+      "skill": "grammar",
+      "level": 2,
+      "zh": "我中午吃饭。",
+      "py": "Wǒ zhōngwǔ chī fàn.",
+      "es": "Como a mediodía.",
+      "target": "past-le",
+      "answer": "我中午吃饭了。",
+      "alternatives": [
+        "中午我吃饭了。",
+        "我中午吃了饭。"
+      ],
+      "grammarIds": [
+        "le"
+      ],
+      "explain": "了 al final de la frase indica que la acción ya se ha completado: «ya he comido a mediodía». También puede ir justo tras el verbo (吃了饭)."
+    },
+    {
+      "id": "u04-109",
+      "type": "transform",
+      "skill": "grammar",
+      "level": 2,
+      "zh": "他星期六下午有时间。",
+      "py": "Tā xīngqīliù xiàwǔ yǒu shíjiān.",
+      "es": "Él tiene tiempo el sábado por la tarde.",
+      "target": "question-word",
+      "answer": "他什么时候有时间？",
+      "grammarIds": [
+        "question-words",
+        "word-order"
+      ],
+      "explain": "Toda la expresión de tiempo (星期六下午) se sustituye por 什么时候, en la misma posición: entre el sujeto y el verbo 有."
+    },
+    {
+      "id": "u04-110",
+      "type": "build-question",
+      "skill": "grammar",
+      "level": 1,
+      "answer": "现在四点半。",
+      "answerEs": "Son las cuatro y media.",
+      "question": "现在几点？",
+      "questionPy": "Xiànzài jǐ diǎn?",
+      "grammarIds": [
+        "question-words",
+        "dates-time"
+      ],
+      "explain": "La respuesta es una hora del reloj, así que la pregunta es 几点, con 几 en el lugar del número (四)."
+    },
+    {
+      "id": "u04-111",
+      "type": "build-question",
+      "skill": "grammar",
+      "level": 1,
+      "answer": "今天星期日。",
+      "answerEs": "Hoy es domingo.",
+      "question": "今天星期几？",
+      "questionPy": "Jīntiān xīngqī jǐ?",
+      "grammarIds": [
+        "question-words",
+        "dates-time"
+      ],
+      "explain": "星期日 es un día de la semana; la pregunta correspondiente sustituye ese día por 几: 星期几. Ni 是 ni 吗."
+    },
+    {
+      "id": "u04-112",
+      "type": "build-question",
+      "skill": "grammar",
+      "level": 2,
+      "answer": "我晚上十一点睡觉。",
+      "answerEs": "Me acuesto a las once de la noche.",
+      "question": "你晚上几点睡觉？",
+      "questionPy": "Nǐ wǎnshang jǐ diǎn shuìjiào?",
+      "alternatives": [
+        "你几点睡觉？"
+      ],
+      "grammarIds": [
+        "question-words",
+        "word-order"
+      ],
+      "explain": "Se mantiene todo igual, se cambia 我 por 你 y 十一 por 几. El verbo 睡觉 sigue al final, detrás de la hora."
+    },
+    {
+      "id": "u04-113",
+      "type": "build-question",
+      "skill": "grammar",
+      "level": 2,
+      "answer": "不去，星期天我不去学校。",
+      "answerEs": "No, el domingo no voy a la escuela.",
+      "question": "星期天你去学校吗？",
+      "questionPy": "Xīngqītiān nǐ qù xuéxiào ma?",
+      "alternatives": [
+        "星期天你去不去学校？"
+      ],
+      "grammarIds": [
+        "ma"
+      ],
+      "explain": "Una respuesta que empieza por 不去 contesta a una pregunta de sí/no sobre el verbo 去: con 吗 al final o con 去不去."
+    },
+    {
+      "id": "u04-114",
+      "type": "translate-bank",
+      "skill": "writing",
+      "level": 1,
+      "es": "Mañana tengo clase.",
+      "zh": "明天我有课。",
+      "py": "Míngtiān wǒ yǒu kè.",
+      "tiles": [
+        "明天",
+        "我",
+        "有",
+        "课",
+        "今天",
+        "是"
+      ],
+      "alternatives": [
+        "我明天有课。"
+      ],
+      "grammarIds": [
+        "word-order",
+        "you"
+      ],
+      "explain": "明天 va al principio o tras el sujeto, nunca al final. «Tener clase» es 有课, sin 是: 是 queda como distractor."
+    },
+    {
+      "id": "u04-115",
+      "type": "translate-bank",
+      "skill": "writing",
+      "level": 2,
+      "es": "Me levanto a las seis y media de la mañana.",
+      "zh": "我早上六点半起床。",
+      "py": "Wǒ zǎoshang liù diǎn bàn qǐchuáng.",
+      "tiles": [
+        "我",
+        "早上",
+        "六点",
+        "半",
+        "起床",
+        "晚上",
+        "睡觉"
+      ],
+      "grammarIds": [
+        "dates-time",
+        "word-order"
+      ],
+      "explain": "Orden: sujeto + parte del día + hora + verbo. 半 va detrás de 点. 晚上 y 睡觉 son los distractores: hablarían de acostarse por la noche."
+    },
+    {
+      "id": "u04-116",
+      "type": "translate-bank",
+      "skill": "writing",
+      "level": 2,
+      "es": "Mi cumpleaños es el 20 de marzo.",
+      "zh": "我的生日是三月二十号。",
+      "py": "Wǒ de shēngrì shì sān yuè èrshí hào.",
+      "tiles": [
+        "我的",
+        "生日",
+        "是",
+        "三月",
+        "二十",
+        "号",
+        "三十",
+        "年"
+      ],
+      "grammarIds": [
+        "dates-time",
+        "numbers"
+      ],
+      "explain": "Mes antes que día: 三月二十号. Aquí sí se usa 是 porque identificamos una fecha. 三十 (treinta) y 年 (año) sobran."
+    },
+    {
+      "id": "u04-117",
+      "type": "translate-bank",
+      "skill": "writing",
+      "level": 2,
+      "es": "¿Cuándo vuelves a casa?",
+      "zh": "你什么时候回家？",
+      "py": "Nǐ shénme shíhou huí jiā?",
+      "tiles": [
+        "你",
+        "什么",
+        "时候",
+        "回",
+        "家",
+        "吗",
+        "去"
+      ],
+      "grammarIds": [
+        "question-words",
+        "word-order"
+      ],
+      "explain": "什么时候 va entre el sujeto y el verbo, como cualquier expresión de tiempo. No añadas 吗: ya hay palabra interrogativa."
+    },
+    {
+      "id": "u04-118",
+      "type": "translate-free",
+      "skill": "writing",
+      "level": 1,
+      "es": "Hoy es viernes.",
+      "answers": [
+        "今天星期五。",
+        "今天是星期五。"
+      ],
+      "py": "Jīntiān xīngqīwǔ.",
+      "grammarIds": [
+        "dates-time"
+      ],
+      "explain": "Lo más natural es sin 是 (今天星期五), aunque 今天是星期五 también es correcto. Lo que no vale es traducir «es» por 很."
+    },
+    {
+      "id": "u04-119",
+      "type": "translate-free",
+      "skill": "writing",
+      "level": 2,
+      "es": "Me acuesto a las once de la noche.",
+      "answers": [
+        "我晚上十一点睡觉。",
+        "晚上十一点我睡觉。"
+      ],
+      "py": "Wǒ wǎnshang shíyī diǎn shuìjiào.",
+      "hint": "La hora va delante del verbo.",
+      "grammarIds": [
+        "dates-time",
+        "word-order"
+      ],
+      "explain": "晚上十一点 puede ir después de 我 o al principio de la frase, pero siempre delante de 睡觉. 十一点 son las once, con 十 + 一."
+    },
+    {
+      "id": "u04-120",
+      "type": "translate-free",
+      "skill": "writing",
+      "level": 2,
+      "es": "¿A qué hora tienes clase mañana?",
+      "answers": [
+        "明天你几点上课？",
+        "你明天几点上课？"
+      ],
+      "py": "Míngtiān nǐ jǐ diǎn shàngkè?",
+      "grammarIds": [
+        "question-words",
+        "word-order"
+      ],
+      "explain": "Dos expresiones de tiempo, de la grande a la pequeña: 明天 (día) antes que 几点 (hora). 明天 admite ir delante o detrás del sujeto."
+    },
+    {
+      "id": "u04-121",
+      "type": "translate-free",
+      "skill": "writing",
+      "level": 2,
+      "es": "El año que viene voy a China.",
+      "answers": [
+        "明年我去中国。",
+        "我明年去中国。"
+      ],
+      "py": "Míngnián wǒ qù Zhōngguó.",
+      "grammarIds": [
+        "word-order",
+        "lai-qu"
+      ],
+      "explain": "«El año que viene» es 明年 (el 明 de 明天). No hace falta ningún futuro: el tiempo lo marca 明年 y el verbo 去 no cambia."
+    },
+    {
+      "id": "u04-122",
+      "type": "translate-free",
+      "skill": "writing",
+      "level": 2,
+      "es": "Cada día estudio dos horas.",
+      "answers": [
+        "我每天学习两个小时。",
+        "每天我学习两个小时。"
+      ],
+      "py": "Wǒ měi tiān xuéxí liǎng ge xiǎoshí.",
+      "hint": "«Dos horas» de duración: 两个小时, detrás del verbo.",
+      "grammarIds": [
+        "dates-time",
+        "measure-words",
+        "numbers"
+      ],
+      "explain": "每天 va delante del verbo (al principio o tras 我); la duración 两个小时 va detrás. Y «dos» + clasificador es 两, no 二."
+    },
+    {
+      "id": "u04-123",
+      "type": "cloze",
+      "skill": "grammar",
+      "level": 2,
+      "text": "今天星期＿＿？今天星期三。现在＿＿点？现在两＿＿半。",
+      "blanks": [
+        {
+          "answer": "几",
+          "options": [
+            "几",
+            "多少",
+            "什么"
+          ]
+        },
+        {
+          "answer": "几",
+          "options": [
+            "几",
+            "多少",
+            "谁"
+          ]
+        },
+        {
+          "answer": "点",
+          "options": [
+            "点",
+            "分",
+            "号"
+          ]
+        }
+      ],
+      "es": "¿Qué día es hoy? Hoy es miércoles. ¿Qué hora es? Son las dos y media.",
+      "grammarIds": [
+        "question-words",
+        "dates-time"
+      ],
+      "explain": "Día de la semana y hora se preguntan con 几 (números pequeños), no con 多少. En 两点半, 点 marca la hora y 半 la media."
+    },
+    {
+      "id": "u04-124",
+      "type": "cloze",
+      "skill": "grammar",
+      "level": 2,
+      "text": "我每天早上七点＿＿。上午九点我＿＿课。晚上十一点我＿＿。",
+      "blanks": [
+        {
+          "answer": "起床",
+          "options": [
+            "起床",
+            "睡觉",
+            "回家"
+          ]
+        },
+        {
+          "answer": "上",
+          "options": [
+            "上",
+            "去",
+            "有"
+          ]
+        },
+        {
+          "answer": "睡觉",
+          "options": [
+            "睡觉",
+            "起床",
+            "吃饭"
+          ]
+        }
+      ],
+      "es": "Cada día me levanto a las siete de la mañana. A las nueve de la mañana tengo clase. A las once de la noche me acuesto.",
+      "grammarIds": [
+        "dates-time",
+        "word-order"
+      ],
+      "explain": "La hora y la parte del día determinan el verbo: por la mañana temprano 起床, a las nueve 上课 (上 + 课), y a las once de la noche 睡觉."
+    },
+    {
+      "id": "u04-125",
+      "type": "cloze",
+      "skill": "grammar",
+      "level": 2,
+      "text": "今年是二零二六＿＿。我的生日是八＿＿十六＿＿。＿＿年我二十岁。",
+      "blanks": [
+        {
+          "answer": "年",
+          "options": [
+            "年",
+            "月",
+            "天"
+          ]
+        },
+        {
+          "answer": "月",
+          "options": [
+            "月",
+            "号",
+            "点"
+          ]
+        },
+        {
+          "answer": "号",
+          "options": [
+            "号",
+            "分",
+            "年"
+          ]
+        },
+        {
+          "answer": "明",
+          "options": [
+            "明",
+            "去",
+            "每"
+          ]
+        }
+      ],
+      "es": "Este año es 2026. Mi cumpleaños es el 16 de agosto. El año que viene tengo veinte años.",
+      "grammarIds": [
+        "dates-time",
+        "numbers"
+      ],
+      "explain": "Año (年) → mes (月) → día (号), siempre de lo grande a lo pequeño. El último hueco pide un año futuro (tendré veinte): 明年, no 去年."
+    },
+    {
+      "id": "u04-126",
+      "type": "reading",
+      "skill": "reading",
+      "level": 2,
+      "text": "我叫王明。我每天六点起床，六点半吃饭，七点去学校。上午我有三个小时的课。中午我和同学吃饭。下午四点我回家，晚上十点半睡觉。",
+      "es": "Me llamo Wang Ming. Cada día me levanto a las seis, desayuno a las seis y media y voy a la escuela a las siete. Por la mañana tengo tres horas de clase. A mediodía como con mis compañeros. A las cuatro de la tarde vuelvo a casa y a las diez y media de la noche me acuesto.",
+      "questions": [
+        {
+          "q": "¿A qué hora va Wang Ming a la escuela?",
+          "options": [
+            "A las seis",
+            "A las seis y media",
+            "A las siete"
+          ],
+          "answer": 2,
+          "explain": "七点去学校: a las siete. Las otras horas son levantarse y comer."
+        },
+        {
+          "q": "¿Cuántas horas de clase tiene por la mañana?",
+          "options": [
+            "Tres",
+            "A las tres",
+            "Treinta"
+          ],
+          "answer": 0,
+          "explain": "三个小时的课 = tres horas de clase (duración), no 三点 (las tres)."
+        },
+        {
+          "q": "¿Con quién come a mediodía?",
+          "options": [
+            "Solo",
+            "Con sus compañeros",
+            "Con su familia"
+          ],
+          "answer": 1,
+          "explain": "我和同学吃饭: come con los compañeros de clase."
+        }
+      ],
+      "grammarIds": [
+        "dates-time",
+        "word-order",
+        "he"
+      ],
+      "explain": "Cada frase sigue el esquema tiempo + verbo. La única duración del texto es 三个小时 (horas de clase); el resto son horas del reloj con 点."
+    },
+    {
+      "id": "u04-127",
+      "type": "reading",
+      "skill": "reading",
+      "level": 2,
+      "text": "安娜：雨果，星期六是我的生日，你有时间吗？\n雨果：星期六几号？\n安娜：十一月八号。\n雨果：对不起，星期六上午我有课，下午我有时间。\n安娜：好，星期六下午三点你来我家吧。\n雨果：好的，星期六见！",
+      "es": "Ana: Hugo, el sábado es mi cumpleaños, ¿tienes tiempo?\nHugo: ¿Qué día es el sábado?\nAna: El 8 de noviembre.\nHugo: Lo siento, el sábado por la mañana tengo clase; por la tarde tengo tiempo.\nAna: Vale, ven a mi casa el sábado a las tres de la tarde.\nHugo: De acuerdo, ¡hasta el sábado!",
+      "questions": [
+        {
+          "q": "¿Cuándo es el cumpleaños de Ana?",
+          "options": [
+            "El 8 de noviembre, sábado",
+            "El 11 de agosto",
+            "El domingo"
+          ],
+          "answer": 0,
+          "explain": "星期六是我的生日 y 十一月八号: sábado 8 de noviembre."
+        },
+        {
+          "q": "¿Por qué Hugo dice 对不起?",
+          "options": [
+            "Porque no quiere ir",
+            "Porque por la mañana tiene clase",
+            "Porque no sabe la fecha"
+          ],
+          "answer": 1,
+          "explain": "星期六上午我有课: se disculpa porque no puede por la mañana."
+        },
+        {
+          "q": "¿A qué hora quedan?",
+          "options": [
+            "A las tres de la tarde",
+            "A las tres de la mañana",
+            "A las ocho"
+          ],
+          "answer": 0,
+          "explain": "星期六下午三点你来我家吧."
+        }
+      ],
+      "new": [
+        "来",
+        "好的",
+        "见",
+        "吧"
+      ],
+      "grammarIds": [
+        "dates-time",
+        "ba",
+        "lai-qu"
+      ],
+      "explain": "Hugo separa 上午 (ocupado) y 下午 (libre), y Ana fija la cita de lo grande a lo pequeño: 星期六 + 下午 + 三点. 来 («venir») es lo contrario de 去."
+    },
+    {
+      "id": "u04-128",
+      "type": "reading",
+      "skill": "reading",
+      "level": 3,
+      "text": "今天是二零二六年十二月三十一号，星期四。今年我在中国学习，我很忙，白天上课，晚上学习。明年一月一号我不上课，我和朋友去王明家吃饭。明年我二十二岁。",
+      "es": "Hoy es jueves 31 de diciembre de 2026. Este año estudio en China; estoy muy ocupado: de día tengo clase y por la noche estudio. El 1 de enero del año que viene no tengo clase; voy con unos amigos a comer a casa de Wang Ming. El año que viene cumplo veintidós.",
+      "questions": [
+        {
+          "q": "¿Qué día de la semana es hoy?",
+          "options": [
+            "Miércoles",
+            "Jueves",
+            "Viernes"
+          ],
+          "answer": 1,
+          "explain": "星期四 = jueves (día cuatro)."
+        },
+        {
+          "q": "¿Qué hace el 1 de enero?",
+          "options": [
+            "Tiene clase",
+            "Va a comer a casa de Wang Ming",
+            "Vuelve a España"
+          ],
+          "answer": 1,
+          "explain": "我不上课，我和朋友去王明家吃饭."
+        },
+        {
+          "q": "¿Cuántos años tiene el hablante ahora?",
+          "options": [
+            "Veintidós",
+            "Veintiuno",
+            "No se puede saber"
+          ],
+          "answer": 1,
+          "explain": "明年我二十二岁: si el año que viene cumple 22, ahora tiene 21."
+        }
+      ],
+      "grammarIds": [
+        "dates-time",
+        "zai",
+        "he"
+      ],
+      "explain": "Fecha completa: año + mes + día + día de la semana. 今年 y 明年 organizan el texto, y la edad del año que viene te obliga a restar uno para saber la actual."
+    },
+    {
+      "id": "u04-129",
+      "type": "fill-blank",
+      "skill": "grammar",
+      "level": 1,
+      "zh": "现在＿点？",
+      "answer": "几",
+      "options": [
+        "几",
+        "多少",
+        "什么",
+        "哪"
+      ],
+      "es": "¿Qué hora es?",
+      "py": "Xiànzài jǐ diǎn?",
+      "grammarIds": [
+        "question-words",
+        "dates-time"
+      ],
+      "explain": "La hora se pregunta con 几 porque es un número pequeño (de 1 a 12) seguido del «clasificador» 点. 多少 se reserva para cantidades grandes o desconocidas."
+    },
+    {
+      "id": "u04-130",
+      "type": "fill-blank",
+      "skill": "grammar",
+      "level": 1,
+      "zh": "现在＿点二十分。",
+      "answer": "两",
+      "options": [
+        "两",
+        "二",
+        "半",
+        "几"
+      ],
+      "es": "Son las dos y veinte.",
+      "py": "Xiànzài liǎng diǎn èrshí fēn.",
+      "grammarIds": [
+        "numbers",
+        "dates-time"
+      ],
+      "explain": "«Las dos» es 两点: 两 va delante de clasificadores y de 点. 二 aparece en 二十分 (veinte), pero no delante de 点."
+    },
+    {
+      "id": "u04-131",
+      "type": "fill-blank",
+      "skill": "grammar",
+      "level": 1,
+      "zh": "今天三月二十八＿。",
+      "answer": "号",
+      "options": [
+        "号",
+        "月",
+        "年",
+        "点"
+      ],
+      "es": "Hoy es 28 de marzo.",
+      "py": "Jīntiān sān yuè èrshíbā hào.",
+      "grammarIds": [
+        "dates-time"
+      ],
+      "explain": "Tras el número del día va 号 (al hablar) o 日 (al escribir). 月 ya está puesto tras 十, y 年 iría con el año."
+    },
+    {
+      "id": "u04-132",
+      "type": "fill-blank",
+      "skill": "grammar",
+      "level": 2,
+      "zh": "我＿两个小时。",
+      "answer": "学习",
+      "options": [
+        "学习",
+        "两点",
+        "起床",
+        "明天"
+      ],
+      "es": "Estudio dos horas.",
+      "py": "Wǒ xuéxí liǎng ge xiǎoshí.",
+      "grammarIds": [
+        "word-order",
+        "dates-time"
+      ],
+      "explain": "Delante de una duración va el verbo (学习两个小时). 起床 no admite duración de dos horas y 两点 o 明天 son tiempos que irían delante del verbo, no en su lugar."
+    },
+    {
+      "id": "u04-133",
+      "type": "fill-blank",
+      "skill": "grammar",
+      "level": 2,
+      "zh": "你＿时候回家？",
+      "answer": "什么",
+      "options": [
+        "什么",
+        "几",
+        "哪",
+        "谁"
+      ],
+      "es": "¿Cuándo vuelves a casa?",
+      "py": "Nǐ shénme shíhou huí jiā?",
+      "grammarIds": [
+        "question-words"
+      ],
+      "explain": "«Cuándo» es 什么时候 (literalmente «qué momento»). 几 se combina con 点, 号 o 个, pero no con 时候."
+    },
+    {
+      "id": "u04-134",
+      "type": "fill-blank",
+      "skill": "grammar",
+      "level": 2,
+      "zh": "昨天我＿去学校。",
+      "answer": "没",
+      "options": [
+        "没",
+        "不",
+        "也",
+        "很"
+      ],
+      "es": "Ayer no fui a la escuela.",
+      "py": "Zuótiān wǒ méi qù xuéxiào.",
+      "grammarIds": [
+        "bu-mei"
+      ],
+      "explain": "昨天 sitúa la acción en el pasado: lo que no ocurrió se niega con 没. 不去 valdría para hoy, mañana o un hábito."
+    },
+    {
+      "id": "u04-135",
+      "type": "order-words",
+      "skill": "grammar",
+      "level": 1,
+      "zh": "我八点上课。",
+      "py": "Wǒ bā diǎn shàngkè.",
+      "es": "Tengo clase a las ocho.",
+      "grammarIds": [
+        "word-order",
+        "dates-time"
+      ],
+      "explain": "Sujeto + hora + verbo. La hora nunca va detrás de 上课, aunque en español digamos «tengo clase a las ocho»."
+    },
+    {
+      "id": "u04-136",
+      "type": "order-words",
+      "skill": "grammar",
+      "level": 1,
+      "zh": "今天星期几？",
+      "py": "Jīntiān xīngqī jǐ?",
+      "es": "¿Qué día es hoy?",
+      "grammarIds": [
+        "question-words",
+        "dates-time"
+      ],
+      "explain": "几 va al final, en el lugar del número que ocuparía la respuesta (星期三). 今天 encabeza la frase como sujeto."
+    },
+    {
+      "id": "u04-137",
+      "type": "order-words",
+      "skill": "grammar",
+      "level": 2,
+      "zh": "星期六下午我有时间。",
+      "py": "Xīngqīliù xiàwǔ wǒ yǒu shíjiān.",
+      "es": "El sábado por la tarde tengo tiempo.",
+      "alternatives": [
+        "我星期六下午有时间。"
+      ],
+      "grammarIds": [
+        "word-order",
+        "dates-time"
+      ],
+      "explain": "De lo grande a lo pequeño: 星期六 antes que 下午. El bloque de tiempo entero va al principio o tras el sujeto, pero nunca separado."
+    },
+    {
+      "id": "u04-138",
+      "type": "order-words",
+      "skill": "grammar",
+      "level": 2,
+      "zh": "我的生日是十二月五号。",
+      "py": "Wǒ de shēngrì shì shí'èr yuè wǔ hào.",
+      "es": "Mi cumpleaños es el 5 de diciembre.",
+      "grammarIds": [
+        "dates-time",
+        "de"
+      ],
+      "explain": "我的生日 (poseedor + 的 + cosa) + 是 + fecha con mes antes que día: 十二月五号."
+    },
+    {
+      "id": "u04-139",
+      "type": "order-words",
+      "skill": "grammar",
+      "level": 2,
+      "zh": "他晚上十点半睡觉。",
+      "py": "Tā wǎnshang shí diǎn bàn shuìjiào.",
+      "es": "Él se acuesta a las diez y media de la noche.",
+      "alternatives": [
+        "晚上十点半他睡觉。"
+      ],
+      "grammarIds": [
+        "word-order",
+        "dates-time"
+      ],
+      "explain": "Parte del día (晚上) → hora (十点) → media (半) → verbo (睡觉). 半 va pegado detrás de 点, como «y media» tras la hora."
+    },
+    {
+      "id": "u04-140",
+      "type": "build-character",
+      "skill": "characters",
+      "level": 1,
+      "hanzi": "明",
+      "py": "míng",
+      "meaning": "brillante; siguiente (明天, 明年)",
+      "components": [
+        "日",
+        "月"
+      ],
+      "distractors": [
+        "口",
+        "人",
+        "女"
+      ],
+      "explain": "明 = 日 (sol) + 月 (luna): con el sol y la luna juntos hay mucha luz, «brillante». De ahí pasa a significar «el siguiente» en 明天 y 明年."
+    },
+    {
+      "id": "u04-141",
+      "type": "build-character",
+      "skill": "characters",
+      "level": 1,
+      "hanzi": "星",
+      "py": "xīng",
+      "meaning": "estrella (星期 = semana)",
+      "components": [
+        "日",
+        "生"
+      ],
+      "distractors": [
+        "月",
+        "木",
+        "门"
+      ],
+      "explain": "星 = 日 (sol) arriba + 生 (shēng, que aporta el sonido) abajo. Las estrellas son «soles» pequeños; 星期 es la semana, un «ciclo de estrellas»."
+    },
+    {
+      "id": "u04-142",
+      "type": "build-character",
+      "skill": "characters",
+      "level": 1,
+      "hanzi": "早",
+      "py": "zǎo",
+      "meaning": "temprano; mañana (早上)",
+      "components": [
+        "日",
+        "十"
+      ],
+      "distractors": [
+        "月",
+        "子",
+        "口"
+      ],
+      "explain": "早 = 日 (sol) sobre 十: el sol que asoma sobre el horizonte al amanecer, es decir, «temprano». Aparece en 早上 (por la mañana temprano)."
+    },
+    {
+      "id": "u04-143",
+      "type": "radical-meaning",
+      "skill": "characters",
+      "level": 1,
+      "radical": "日",
+      "options": [
+        "luna",
+        "sol; día",
+        "agua",
+        "boca"
+      ],
+      "answer": 1,
+      "examples": [
+        "明",
+        "星",
+        "早",
+        "晚",
+        "时"
+      ],
+      "explain": "日 es «sol» y, por extensión, «día». Lo llevan muchas palabras de tiempo de esta unidad: 早 (temprano), 晚 (tarde, noche), 时 (hora, momento), 星 (estrella)."
+    },
+    {
+      "id": "u04-144",
+      "type": "radical-meaning",
+      "skill": "characters",
+      "level": 1,
+      "radical": "月",
+      "options": [
+        "sol",
+        "estrella",
+        "luna; mes",
+        "año"
+      ],
+      "answer": 2,
+      "examples": [
+        "月",
+        "明",
+        "期"
+      ],
+      "explain": "月 es «luna» y también «mes», porque el mes tradicional era un ciclo lunar. En 明 se combina con 日 y en 期 (de 星期) va a la derecha."
+    },
+    {
+      "id": "u04-145",
+      "type": "radical-meaning",
+      "skill": "characters",
+      "level": 1,
+      "radical": "讠",
+      "options": [
+        "habla; palabra",
+        "persona",
+        "mano",
+        "corazón"
+      ],
+      "answer": 0,
+      "examples": [
+        "课",
+        "谢",
+        "谁",
+        "认识"
+      ],
+      "explain": "讠 es la forma comprimida de 言 (palabra, habla). 课 (clase, lección) lo lleva porque una clase se da hablando; también aparece en 谢谢 y 谁."
+    },
+    {
+      "id": "u04-146",
+      "type": "speed-pinyin-hanzi",
+      "skill": "vocabulary",
+      "level": 1,
+      "pairs": [
+        {
+          "py": "jīntiān",
+          "zh": "今天"
+        },
+        {
+          "py": "míngtiān",
+          "zh": "明天"
+        },
+        {
+          "py": "zuótiān",
+          "zh": "昨天"
+        },
+        {
+          "py": "xīngqī",
+          "zh": "星期"
+        },
+        {
+          "py": "xiànzài",
+          "zh": "现在"
+        },
+        {
+          "py": "qǐchuáng",
+          "zh": "起床"
+        },
+        {
+          "py": "shuìjiào",
+          "zh": "睡觉"
+        },
+        {
+          "py": "shàngkè",
+          "zh": "上课"
+        }
+      ],
+      "explain": "Los tres «días» comparten 天 y se distinguen por el primer carácter: 今 (hoy), 明 (mañana), 昨 (ayer). Fíjate en los tonos: jīntiān es 1-1, míngtiān 2-1 y zuótiān 2-1."
+    },
+    {
+      "id": "u04-147",
+      "type": "speed-pinyin-hanzi",
+      "skill": "vocabulary",
+      "level": 2,
+      "pairs": [
+        {
+          "py": "shàngwǔ",
+          "zh": "上午"
+        },
+        {
+          "py": "zhōngwǔ",
+          "zh": "中午"
+        },
+        {
+          "py": "xiàwǔ",
+          "zh": "下午"
+        },
+        {
+          "py": "wǎnshang",
+          "zh": "晚上"
+        },
+        {
+          "py": "shēngrì",
+          "zh": "生日"
+        },
+        {
+          "py": "xiǎoshí",
+          "zh": "小时"
+        },
+        {
+          "py": "měi tiān",
+          "zh": "每天"
+        },
+        {
+          "py": "kuàilè",
+          "zh": "快乐"
+        }
+      ],
+      "explain": "上午, 中午 y 下午 comparten 午 (mediodía) y cambian solo el primer carácter: arriba (antes), centro, abajo (después). 晚上 usa 上 al final, como 早上."
+    },
+    {
+      "id": "u04-148",
+      "type": "speed-match",
+      "skill": "vocabulary",
+      "level": 1,
+      "pairs": [
+        {
+          "zh": "今天",
+          "es": "hoy"
+        },
+        {
+          "zh": "明天",
+          "es": "mañana"
+        },
+        {
+          "zh": "昨天",
+          "es": "ayer"
+        },
+        {
+          "zh": "今年",
+          "es": "este año"
+        },
+        {
+          "zh": "明年",
+          "es": "el año que viene"
+        },
+        {
+          "zh": "去年",
+          "es": "el año pasado"
+        },
+        {
+          "zh": "每天",
+          "es": "cada día"
+        }
+      ],
+      "explain": "Días y años forman dos series paralelas: 今/明 + 天 o 年. La excepción es «el año pasado», que no usa 昨 sino 去 (去年, «el año que se fue»)."
+    },
+    {
+      "id": "u04-149",
+      "type": "speed-match",
+      "skill": "vocabulary",
+      "level": 1,
+      "pairs": [
+        {
+          "zh": "早上",
+          "es": "por la mañana (temprano)"
+        },
+        {
+          "zh": "上午",
+          "es": "por la mañana (antes del mediodía)"
+        },
+        {
+          "zh": "中午",
+          "es": "mediodía"
+        },
+        {
+          "zh": "下午",
+          "es": "por la tarde"
+        },
+        {
+          "zh": "晚上",
+          "es": "por la noche"
+        },
+        {
+          "zh": "白天",
+          "es": "durante el día"
+        }
+      ],
+      "explain": "Las partes del día en orden: 早上 → 上午 → 中午 → 下午 → 晚上. 白天 («día blanco») es lo contrario de la noche en conjunto."
+    },
+    {
+      "id": "u04-150",
+      "type": "tone-pair",
+      "skill": "tones",
+      "level": 1,
+      "zh": "明天",
+      "py": "míngtiān",
+      "pattern": "21",
+      "options": [
+        "21",
+        "11",
+        "41",
+        "31"
+      ],
+      "explain": "míng sube (2.º tono) y tiān se queda alto y plano (1.º): patrón 2-1. Compáralo con 今天 (jīntiān), que es 1-1."
+    },
+    {
+      "id": "u04-151",
+      "type": "tone-pair",
+      "skill": "tones",
+      "level": 1,
+      "zh": "现在",
+      "py": "xiànzài",
+      "pattern": "44",
+      "options": [
+        "44",
+        "41",
+        "24",
+        "43"
+      ],
+      "explain": "Dos cuartos tonos: xiàn y zài caen con decisión una tras otra. Un error típico es suavizar la segunda caída."
+    },
+    {
+      "id": "u04-152",
+      "type": "tone-pair",
+      "skill": "tones",
+      "level": 2,
+      "zh": "起床",
+      "py": "qǐchuáng",
+      "pattern": "32",
+      "options": [
+        "32",
+        "33",
+        "22",
+        "34"
+      ],
+      "explain": "qǐ es 3.º tono (bajo, solo la parte descendente) y chuáng sube (2.º tono): 3-2. Este patrón parece una «v» alargada."
+    },
+    {
+      "id": "u04-153",
+      "type": "tone-pair",
+      "skill": "tones",
+      "level": 2,
+      "zh": "晚上",
+      "py": "wǎnshang",
+      "pattern": "30",
+      "options": [
+        "30",
+        "34",
+        "33",
+        "20"
+      ],
+      "explain": "wǎn es 3.º tono y shang es neutro (0): corto, ligero y sin tilde. Lo mismo ocurre en 早上 (zǎoshang)."
+    },
+    {
+      "id": "u04-154",
+      "type": "tone-sandhi",
+      "skill": "tones",
+      "level": 1,
+      "zh": "不去",
+      "lexical": "bù qù",
+      "spoken": "bú qù",
+      "rule": "bu",
+      "explain": "去 es 4.º tono, así que 不 pasa a 2.º: bú qù. Es la misma regla que en 不是 y 不客气."
+    },
+    {
+      "id": "u04-155",
+      "type": "tone-sandhi",
+      "skill": "tones",
+      "level": 1,
+      "zh": "几点",
+      "lexical": "jǐ diǎn",
+      "spoken": "jí diǎn",
+      "rule": "33",
+      "explain": "jǐ y diǎn son dos terceros tonos seguidos: el primero se pronuncia como 2.º (jí diǎn). En 几号 (jǐ hào) no cambia porque 号 es 4.º tono."
+    },
+    {
+      "id": "u04-156",
+      "type": "tone-sandhi",
+      "skill": "tones",
+      "level": 2,
+      "zh": "一个小时",
+      "lexical": "yī ge xiǎoshí",
+      "spoken": "yí ge xiǎoshí",
+      "rule": "yi",
+      "explain": "一 es 1.º tono aislado, pero delante de un 4.º tono (个 gè, aunque suene neutro) se pronuncia yí. Delante de 1.º, 2.º o 3.º tono sería yì (一天 yì tiān)."
+    },
+    {
+      "id": "u04-157",
+      "type": "pinyin-input",
+      "skill": "vocabulary",
+      "level": 1,
+      "zh": "昨天",
+      "py": "zuótiān",
+      "meaning": "ayer",
+      "explain": "zuó (2.º tono) + tiān (1.º tono). La z- de zuó se escribe así aunque suene como «ds»; no la confundas con zh-."
+    },
+    {
+      "id": "u04-158",
+      "type": "pinyin-input",
+      "skill": "vocabulary",
+      "level": 1,
+      "zh": "起床",
+      "py": "qǐchuáng",
+      "meaning": "levantarse",
+      "explain": "qǐ (3.º tono) + chuáng (2.º tono). Dos iniciales distintas: q- (lengua plana, aspirada) y ch- (lengua curvada, aspirada). La final -uang lleva tres letras."
+    },
+    {
+      "id": "u04-159",
+      "type": "pinyin-input",
+      "skill": "vocabulary",
+      "level": 1,
+      "zh": "中午",
+      "py": "zhōngwǔ",
+      "meaning": "mediodía",
+      "explain": "zhōng (1.º tono, el mismo de 中国) + wǔ (3.º tono, el mismo que «cinco»). La -ng final se escribe con g aunque no se pronuncie una «g» española."
+    },
+    {
+      "id": "u04-160",
+      "type": "pinyin-input",
+      "skill": "vocabulary",
+      "level": 2,
+      "zh": "生日",
+      "py": "shēngrì",
+      "meaning": "cumpleaños",
+      "explain": "shēng (1.º tono) + rì (4.º tono). La sílaba rì se escribe con i aunque suene como un zumbido; es la misma «i» especial de shī y zhī."
+    },
+    {
+      "id": "u04-161",
+      "type": "matching",
+      "skill": "vocabulary",
+      "level": 1,
+      "pairs": [
+        {
+          "zh": "点",
+          "py": "diǎn",
+          "es": "hora (en punto)"
+        },
+        {
+          "zh": "分",
+          "py": "fēn",
+          "es": "minuto"
+        },
+        {
+          "zh": "半",
+          "py": "bàn",
+          "es": "y media"
+        },
+        {
+          "zh": "小时",
+          "py": "xiǎoshí",
+          "es": "hora (duración)"
+        },
+        {
+          "zh": "分钟",
+          "py": "fēnzhōng",
+          "es": "minuto (duración)"
+        }
+      ],
+      "grammarIds": [
+        "dates-time"
+      ],
+      "explain": "Dos series: 点/分 para leer el reloj y 小时/分钟 para medir cuánto dura algo. 半 vale para ambas (两点半, 半个小时)."
+    },
+    {
+      "id": "u04-162",
+      "type": "matching",
+      "skill": "vocabulary",
+      "level": 1,
+      "pairs": [
+        {
+          "zh": "年",
+          "py": "nián",
+          "es": "año"
+        },
+        {
+          "zh": "月",
+          "py": "yuè",
+          "es": "mes"
+        },
+        {
+          "zh": "号",
+          "py": "hào",
+          "es": "día del mes"
+        },
+        {
+          "zh": "星期",
+          "py": "xīngqī",
+          "es": "semana"
+        },
+        {
+          "zh": "生日",
+          "py": "shēngrì",
+          "es": "cumpleaños"
+        }
+      ],
+      "grammarIds": [
+        "dates-time"
+      ],
+      "explain": "Las unidades de la fecha, de mayor a menor: 年 → 月 → 号. 星期 + número da el día de la semana, y 生日 es la fecha que más se pregunta."
+    },
+    {
+      "id": "u04-163",
+      "type": "matching",
+      "skill": "vocabulary",
+      "level": 2,
+      "pairs": [
+        {
+          "zh": "起床",
+          "py": "qǐchuáng",
+          "es": "levantarse"
+        },
+        {
+          "zh": "上课",
+          "py": "shàngkè",
+          "es": "ir a clase"
+        },
+        {
+          "zh": "吃饭",
+          "py": "chī fàn",
+          "es": "comer"
+        },
+        {
+          "zh": "回家",
+          "py": "huí jiā",
+          "es": "volver a casa"
+        },
+        {
+          "zh": "睡觉",
+          "py": "shuìjiào",
+          "es": "dormir"
+        },
+        {
+          "zh": "学习",
+          "py": "xuéxí",
+          "es": "estudiar"
+        }
+      ],
+      "explain": "Las acciones de un día, en el orden en que suelen ocurrir: levantarse, ir a clase, comer, estudiar, volver a casa y dormir. Todas son verbo + objeto o verbo de dos sílabas."
+    }
+  ]
+}

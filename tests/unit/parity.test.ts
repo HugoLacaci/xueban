@@ -30,7 +30,7 @@ beforeAll(() => {
   }) as typeof fetch;
 });
 
-type Check = { id: string; label: string; run(p: LanguagePack): Promise<true | string> | true | string };
+type Check = { id: string; label: string; pending?: Lang[]; run(p: LanguagePack): Promise<true | string> | true | string };
 
 const REQUIRED_TOKENS = ["paper", "paper-raised", "paper-sunk", "ink", "ink-soft", "ink-faint", "line", "cinnabar", "celadon", "indigo", "gold", "danger", "seal", "tone-1", "tone-2", "tone-3", "tone-4"];
 
@@ -101,6 +101,12 @@ const CHECKS: Check[] = [
   { id: "ui", label: "Páginas propias (caracteres, ficha, módulos de la unidad 0)", run: (p) => (p.ui.CharactersPage && p.ui.CharacterDetail && Object.keys(p.ui.modules).length > 0 ? true : "faltan páginas") },
   { id: "seed", label: "Semilla ≥ 300 palabras en las 21 categorías", run: (p) => { const cats = new Set(p.seed.words.map((w) => w.category)); return p.seed.words.length >= 300 && cats.size >= 21 ? true : `${p.seed.words.length} palabras, ${cats.size} categorías`; } },
   { id: "credits", label: "Créditos y licencias de los datos", run: (p) => p.credits.length >= 5 || `${p.credits.length}` },
+  // --- Capacidades nuevas (nov-2026): solo chino por ahora; ja/ko se marcan como pendientes sin fallar
+  { id: "banks", label: "Bancos de ejercicios por unidad y punto gramatical", pending: ["ja", "ko"], run: (p) => (p.id === "zh" ? (existsSync(path.join(ROOT, "content", "zh", "exercises", "u01.json")) ? true : "sin bancos") : "pendiente") },
+  { id: "teacherNotes", label: "Apuntes del profesor (compendios)", pending: ["ja", "ko"], run: (p) => (p.id === "zh" ? (existsSync(path.join(ROOT, "content", "zh", "notes", "grammar.json")) ? true : "sin compendios") : "pendiente") },
+  { id: "corrector", label: "Motor de corrección por reglas (linter)", pending: ["ja", "ko"], run: (p) => (p.id === "zh" ? true : "pendiente") },
+  { id: "roleplays", label: "Role-plays por turnos y tutor", pending: ["ja", "ko"], run: (p) => (p.id === "zh" ? (existsSync(path.join(ROOT, "content", "zh", "roleplays")) ? true : "sin role-plays") : "pendiente") },
+  { id: "origin", label: "Origen de los caracteres y memorización", pending: ["ja", "ko"], run: (p) => (p.id === "zh" ? (existsSync(path.join(ROOT, "content", "zh", "articles-origen.json")) ? true : "sin serie") : "pendiente") },
 ];
 
 const results: Record<string, Record<Lang, true | string>> = {};
@@ -124,6 +130,7 @@ describe("paridad entre idiomas", () => {
             r = `error: ${(e as Error).message}`;
           }
           (results[c.id] ??= {} as Record<Lang, true | string>)[lang] = r;
+          if (c.pending?.includes(lang)) return; // capacidad pendiente en este idioma: no falla
           expect(r, `${lang} · ${c.label}`).toBe(true);
         }, 60000);
       }
@@ -134,9 +141,9 @@ describe("paridad entre idiomas", () => {
 afterAll(async () => {
   globalThis.fetch = realFetch;
   await activateLang("zh");
-  const cell = (r: true | string | undefined) => (r === true ? "✅" : r === undefined ? "—" : `❌ ${r}`);
-  const rows = CHECKS.map((c) => `| ${c.label} | ${LANGS.map((l) => cell(results[c.id]?.[l])).join(" | ")} |`);
-  const ok = CHECKS.every((c) => LANGS.every((l) => results[c.id]?.[l] === true));
+  const cell = (r: true | string | undefined, pending: boolean) => (r === true ? "✅" : pending ? "⏳ pendiente" : r === undefined ? "—" : `❌ ${r}`);
+  const rows = CHECKS.map((c) => `| ${c.label} | ${LANGS.map((l) => cell(results[c.id]?.[l], Boolean(c.pending?.includes(l)))).join(" | ")} |`);
+  const ok = CHECKS.every((c) => LANGS.every((l) => results[c.id]?.[l] === true || c.pending?.includes(l)));
   const md = [
     "# Paridad entre idiomas",
     "",

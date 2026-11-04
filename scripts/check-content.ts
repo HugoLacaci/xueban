@@ -158,6 +158,16 @@ async function checkLang(lang: Lang): Promise<Issue[]> {
 async function main() {
 const all: Issue[] = [];
 for (const l of LANGS) all.push(...(await checkLang(l)));
+if (LANGS.includes("zh")) {
+  const { checkBanks } = await import("./data/zh.banks");
+  const r = checkBanks(ROOT, { strictAudio: process.argv.includes("--strict-audio") });
+  console.log(`[zh] bancos de ejercicios: ${r.summary}`);
+  all.push(...r.issues);
+  const { checkNotes } = await import("./data/zh.notes");
+  const n = checkNotes(ROOT);
+  console.log(`[zh] apuntes del profesor: ${n.summary}`);
+  all.push(...n.issues);
+}
 const errors = all.filter((i) => i.level === "error");
 const warns = all.filter((i) => i.level === "warn");
 const verbose = process.argv.includes("--verbose");

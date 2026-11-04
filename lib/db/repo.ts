@@ -3,10 +3,11 @@
  * Multiidioma: cada operación trabaja sobre el idioma activo (o el que se pase).
  */
 import { db } from "./index";
-import type { Card, CardType, Category, DailyStat, ExerciseAttempt, Lang, StudySession, Word } from "./schema";
+import type { Card, CardType, Category, DailyStat, ExerciseAttempt, Lang, LegacyNote, StudySession, Word } from "./schema";
 import { createEmptyCard } from "ts-fsrs";
 import { categoryId, todayKey } from "./ids";
 import { seedToWord } from "./seed-word";
+import { legacyNoteToV5 } from "./migrate-notes";
 import { getActiveLang, getActivePack, getPack, loadPack } from "@/lib/languages/registry";
 import type { LanguagePack, SeedWord } from "@/lib/languages/types";
 
@@ -231,7 +232,7 @@ export async function deckWordSet(lang: Lang = getActiveLang()): Promise<Map<str
 
 /* ------------------------- Copia de seguridad ------------------------- */
 
-const LANG_TABLES = ["words", "cards", "reviewLogs", "categories", "charStates", "lessonProgress", "exerciseAttempts", "videos", "readings", "notes", "studySessions", "dictHistory", "favorites", "daily"];
+const LANG_TABLES = ["words", "cards", "reviewLogs", "categories", "charStates", "lessonProgress", "exerciseAttempts", "videos", "readings", "notes", "studySessions", "dictHistory", "favorites", "daily", "noteCards", "exerciseSets", "exerciseItems", "itemAttempts", "chats", "assets"];
 
 export async function exportBackup(lang?: Lang): Promise<string> {
   const tables = db.tables.map((t) => t.name);
@@ -263,12 +264,14 @@ export async function importBackup(json: string, mode: "replace" | "merge" = "me
 
 /** Convierte una copia v1/v2 (solo chino) al esquema v3. */
 function upgradeBackup(data: Record<string, unknown[]>, version: number): Record<string, unknown[]> {
-  if (version >= 3) return data;
+  if (version >= 5) return data;
+  if (version >= 3) return { ...data, ...(data.notes ? { notes: (data.notes as LegacyNote[]).map((n) => ("type" in n && "fields" in n ? n : { ...n, ...legacyNoteToV5(n) })) } : {}) };
   const out: Record<string, unknown[]> = {};
   for (const [name, rows] of Object.entries(data)) {
     if (name === "characters") out.charStates = (rows as { hanzi: string }[]).map((r) => ({ ...r, id: `zh:${r.hanzi}`, lang: "zh" }));
     else if (name === "dictFavorites") out.favorites = (rows as { hanzi: string }[]).map((r) => ({ ...r, id: `zh:${r.hanzi}`, lang: "zh" }));
     else if (name === "dailyStats") out.daily = (rows as { date: string }[]).map((r) => ({ ...r, id: `zh:${r.date}`, lang: "zh" }));
+    else if (name === "notes") out.notes = (rows as LegacyNote[]).map((r) => legacyNoteToV5({ ...r, lang: r.lang ?? "zh" }));
     else if (LANG_TABLES.includes(name)) out[name] = (rows as object[]).map((r) => ({ lang: "zh", ...r }));
     else out[name] = rows;
   }

@@ -1,0 +1,276 @@
+{
+  "unitId": "u10",
+  "scenarios": [
+    {
+      "id": "u10-weather-plan",
+      "title": "¿Salimos? Hablando del tiempo",
+      "zh": "今天天气怎么样？",
+      "level": 1,
+      "setting": "Sábado por la mañana. Wang Ming le escribe a Hugo para salir a dar una vuelta. Tú (la app) eres 王明.",
+      "role": "Wang Ming",
+      "roleZh": "王明",
+      "voice": "m",
+      "goals": ["Decir qué tiempo hace hoy", "Preguntar qué tiempo hará mañana", "Decidir si hace falta paraguas", "Proponer o aceptar un plan"],
+      "vocab": ["天气", "热", "冷", "怎么样", "下雨", "伞", "带", "晴天"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "雨果，今天天气怎么样？我们去外面走走吧？", "py": "Yǔguǒ, jīntiān tiānqì zěnmeyàng? Wǒmen qù wàimiàn zǒuzou ba?", "es": "Hugo, ¿qué tiempo hace hoy? ¿Salimos a dar una vuelta?" },
+          "user": [
+            { "zh": "今天是晴天，有太阳，很舒服。", "py": "Jīntiān shì qíngtiān, yǒu tàiyáng, hěn shūfu.", "es": "Hoy está despejado, hace sol, muy agradable.", "keywords": ["晴天", "太阳"], "next": "n2", "goal": 0 },
+            { "zh": "今天阴天，有点儿冷。", "py": "Jīntiān yīntiān, yǒudiǎnr lěng.", "es": "Hoy está nublado y hace un poco de frío.", "keywords": ["阴天", "冷"], "next": "n3", "goal": 0 },
+            { "zh": "今天下雨了，雨很大。", "py": "Jīntiān xià yǔ le, yǔ hěn dà.", "es": "Hoy ha empezado a llover, llueve mucho.", "keywords": ["下雨", "雨很大"], "next": "n4", "goal": 0 }
+          ],
+          "hint": "Describe el tiempo de hoy: 晴天 (despejado), 阴天 (nublado), 下雨了 (ha empezado a llover), 很冷 / 很热."
+        },
+        "n2": {
+          "npc": { "zh": "太好了！我们去外面走走，怎么样？", "py": "Tài hǎo le! Wǒmen qù wàimiàn zǒuzou ba, zěnmeyàng?", "es": "¡Genial! Salimos a dar una vuelta, ¿qué te parece?" },
+          "user": [
+            { "zh": "好啊，我们去吧！", "py": "Hǎo a, wǒmen qù ba!", "es": "¡Vale, vamos!", "keywords": ["好啊", "去吧"], "next": "n5", "goal": 3 },
+            { "zh": "今天太热了，我不想走路。明天天气怎么样？", "py": "Jīntiān tài rè le, wǒ bù xiǎng zǒulù. Míngtiān tiānqì zěnmeyàng?", "es": "Hoy hace demasiado calor, no quiero andar. ¿Qué tiempo hará mañana?", "keywords": ["明天", "太热"], "next": "n6", "goal": 1 }
+          ],
+          "hint": "Acepta con 好啊 / 去吧, o pospón: 太热了 y pregunta por mañana (明天天气怎么样)."
+        },
+        "n3": {
+          "npc": { "zh": "那你多穿一点儿衣服。我们去喝咖啡吧。", "py": "Nà nǐ duō chuān yìdiǎnr yīfu. Wǒmen qù hē kāfēi ba.", "es": "Pues abrígate un poco más. Vamos a tomar un café." },
+          "user": [
+            { "zh": "好，喝咖啡。要带伞吗？", "py": "Hǎo, hē kāfēi. Yào dài sǎn ma?", "es": "Vale, un café. ¿Hay que llevar paraguas?", "keywords": ["带伞", "伞"], "next": "n7", "goal": 2 },
+            { "zh": "明天天气怎么样？明天去吧。", "py": "Míngtiān tiānqì zěnmeyàng? Míngtiān qù ba.", "es": "¿Qué tiempo hará mañana? Mejor vamos mañana.", "keywords": ["明天"], "next": "n6", "goal": 1 }
+          ],
+          "hint": "Pregunta si llevar paraguas (要带伞吗) o propón dejarlo para mañana."
+        },
+        "n4": {
+          "npc": { "zh": "下雨了？那我们明天去吧。", "py": "Xià yǔ le? Nà wǒmen míngtiān qù ba.", "es": "¿Llueve? Entonces vamos mañana." },
+          "user": [
+            { "zh": "好。明天会下雨吗？", "py": "Hǎo. Míngtiān huì xià yǔ ma?", "es": "Vale. ¿Lloverá mañana?", "keywords": ["明天", "会下雨"], "next": "n6", "goal": 1 },
+            { "zh": "没关系，我有伞，我们走吧。", "py": "Méi guānxi, wǒ yǒu sǎn, wǒmen zǒu ba.", "es": "No pasa nada, tengo paraguas, vamos.", "keywords": ["有伞", "走吧"], "next": "n5", "goal": 2 }
+          ],
+          "hint": "会 + verbo = «va a»: pregunta 明天会下雨吗. O di que tienes paraguas (我有伞) y vais igual."
+        },
+        "n5": {
+          "npc": { "zh": "好，我现在去你家，十分钟到。", "py": "Hǎo, wǒ xiànzài qù nǐ jiā, shí fēnzhōng dào.", "es": "Vale, voy ahora a tu casa, llego en diez minutos." },
+          "user": [
+            { "zh": "好，我等你。", "py": "Hǎo, wǒ děng nǐ.", "es": "Vale, te espero.", "keywords": ["等你"], "next": "n9" },
+            { "zh": "我们在地铁站见吧。", "py": "Wǒmen zài dìtiězhàn jiàn ba.", "es": "Mejor nos vemos en la estación de metro.", "keywords": ["地铁站", "见"], "next": "n9" }
+          ],
+          "hint": "Di que le esperas (我等你) o propón otro punto de encuentro (在……见吧)."
+        },
+        "n6": {
+          "npc": { "zh": "明天不下雨，是晴天，二十二度，很舒服。", "py": "Míngtiān bú xià yǔ, shì qíngtiān, èrshí'èr dù, hěn shūfu.", "es": "Mañana no llueve, estará despejado, 22 grados, muy agradable." },
+          "user": [
+            { "zh": "太好了，那明天我们一起去外面走走吧。", "py": "Tài hǎo le, nà míngtiān wǒmen yìqǐ qù wàimiàn zǒuzou ba.", "es": "Genial, pues mañana salimos juntos a dar una vuelta.", "keywords": ["走走", "一起"], "next": "n8", "goal": 3 },
+            { "zh": "明天我要带伞吗？", "py": "Míngtiān wǒ yào dài sǎn ma?", "es": "¿Tengo que llevar paraguas mañana?", "keywords": ["带伞", "伞"], "next": "n7", "goal": 2 }
+          ],
+          "hint": "Propón el plan con 吧 (我们一起……吧) o pregunta por el paraguas (要带伞吗)."
+        },
+        "n7": {
+          "npc": { "zh": "不下雨，不带伞也可以。", "py": "Bú xià yǔ, bú dài sǎn yě kěyǐ.", "es": "No llueve, no hace falta paraguas." },
+          "user": [
+            { "zh": "好，那我不带伞。我们几点去？", "py": "Hǎo, nà wǒ bú dài sǎn. Wǒmen jǐ diǎn qù?", "es": "Vale, pues no lo llevo. ¿A qué hora vamos?", "keywords": ["不带", "几点"], "next": "n8", "goal": 3 },
+            { "zh": "好的，我知道了。", "py": "Hǎo de, wǒ zhīdào le.", "es": "Vale, entendido.", "keywords": ["知道", "好的"], "next": "n8" }
+          ],
+          "hint": "Confirma (我不带伞) y pregunta la hora (几点去) para cerrar el plan."
+        },
+        "n8": {
+          "npc": { "zh": "好，十点我去你家。", "py": "Hǎo, shí diǎn wǒ qù nǐ jiā.", "es": "Vale, a las diez paso por tu casa." },
+          "user": [
+            { "zh": "好，十点见！", "py": "Hǎo, shí diǎn jiàn!", "es": "Vale, ¡hasta las diez!", "keywords": ["十点见", "好"], "next": "n9" },
+            { "zh": "十点太早了，十一点吧。", "py": "Shí diǎn tài zǎo le, shíyī diǎn ba.", "es": "Las diez es muy pronto, mejor a las once.", "keywords": ["十一点", "太早"], "next": "n9" }
+          ],
+          "hint": "Acepta la hora (十点见) o propón otra con 吧 (十一点吧)."
+        },
+        "n9": {
+          "npc": { "zh": "好，再见！", "py": "Hǎo, zàijiàn!", "es": "Vale, ¡hasta luego!" },
+          "end": true,
+          "feedback": "Has hablado del tiempo de hoy y de mañana, decidido lo del paraguas y cerrado un plan. Fíjate: 下雨了 (cambio: empezó a llover), 会下雨 (predicción), 不带伞也可以 (tampoco pasa nada sin paraguas)."
+        }
+      }
+    },
+    {
+      "id": "u10-what-to-wear",
+      "title": "¿Qué me pongo mañana?",
+      "zh": "明天穿什么？",
+      "level": 1,
+      "setting": "Hugo mira el pronóstico en el móvil: mañana cambia el tiempo (o se va a Pekín). Le pregunta a Ana qué ponerse. Tú (la app) eres 安娜.",
+      "role": "Ana",
+      "roleZh": "安娜",
+      "voice": "f",
+      "goals": ["Preguntar qué tiempo hará mañana", "Preguntar qué ropa ponerte", "Decir qué ropa tienes", "Preguntar si hace falta paraguas"],
+      "vocab": ["穿", "衣服", "冷", "热", "下雪", "风", "冬天", "夏天", "伞"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "雨果，你在看什么？", "py": "Yǔguǒ, nǐ zài kàn shénme?", "es": "Hugo, ¿qué miras?" },
+          "user": [
+            { "zh": "我在看明天的天气。安娜，明天天气怎么样？", "py": "Wǒ zài kàn míngtiān de tiānqì. Ānnà, míngtiān tiānqì zěnmeyàng?", "es": "Miro el tiempo de mañana. Ana, ¿qué tiempo hará mañana?", "keywords": ["天气怎么样", "明天天气"], "next": "n2", "goal": 0 },
+            { "zh": "我明天去北京。北京冷不冷？", "py": "Wǒ míngtiān qù Běijīng. Běijīng lěng bu lěng?", "es": "Mañana voy a Pekín. ¿Hace frío en Pekín?", "keywords": ["北京", "冷不冷"], "next": "n3", "goal": 0 }
+          ],
+          "hint": "Pregunta por el tiempo de mañana (明天天气怎么样) o por el de Pekín con la forma 冷不冷."
+        },
+        "n2": {
+          "npc": { "zh": "明天上海很冷，十度，风很大。", "py": "Míngtiān Shànghǎi hěn lěng, shí dù, fēng hěn dà.", "es": "Mañana en Shanghái hará frío, diez grados y mucho viento." },
+          "user": [
+            { "zh": "十度！太冷了。我穿什么衣服好？", "py": "Shí dù! Tài lěng le. Wǒ chuān shénme yīfu hǎo?", "es": "¡Diez grados! Qué frío. ¿Qué ropa me pongo?", "keywords": ["穿什么", "衣服"], "next": "n4", "goal": 1 },
+            { "zh": "会下雨吗？要带伞吗？", "py": "Huì xià yǔ ma? Yào dài sǎn ma?", "es": "¿Lloverá? ¿Llevo paraguas?", "keywords": ["下雨", "带伞"], "next": "n5", "goal": 3 }
+          ],
+          "hint": "Pregunta qué ponerte (我穿什么衣服好) o si lloverá y hace falta paraguas."
+        },
+        "n3": {
+          "npc": { "zh": "北京现在下雪！零下五度。", "py": "Běijīng xiànzài xià xuě! Líng xià wǔ dù.", "es": "¡En Pekín está nevando! Cinco grados bajo cero." },
+          "user": [
+            { "zh": "下雪？我没有很多冬天的衣服。我穿什么？", "py": "Xià xuě? Wǒ méiyǒu hěn duō dōngtiān de yīfu. Wǒ chuān shénme?", "es": "¿Nieva? No tengo mucha ropa de invierno. ¿Qué me pongo?", "keywords": ["穿什么", "衣服"], "next": "n4b", "goal": 1 },
+            { "zh": "北京要带伞吗？", "py": "Běijīng yào dài sǎn ma?", "es": "¿Hace falta paraguas en Pekín?", "keywords": ["带伞", "伞"], "next": "n5", "goal": 3 }
+          ],
+          "hint": "零下 = bajo cero. Pregunta qué ponerte (穿什么) o si llevar paraguas."
+        },
+        "n4": {
+          "npc": { "zh": "你要多穿衣服。你有冬天的衣服吗？", "py": "Nǐ yào duō chuān yīfu. Nǐ yǒu dōngtiān de yīfu ma?", "es": "Tienes que abrigarte más. ¿Tienes ropa de invierno?" },
+          "user": [
+            { "zh": "有，我有一件新衣服，很舒服。", "py": "Yǒu, wǒ yǒu yí jiàn xīn yīfu, hěn shūfu.", "es": "Sí, tengo una prenda nueva, muy cómoda.", "keywords": ["新衣服", "一件"], "next": "n6", "goal": 2 },
+            { "zh": "没有，我的衣服都是夏天的。", "py": "Méiyǒu, wǒ de yīfu dōu shì xiàtiān de.", "es": "No, toda mi ropa es de verano.", "keywords": ["没有", "夏天"], "next": "n7", "goal": 2 }
+          ],
+          "hint": "Di qué ropa tienes: 我有一件…… (件 = clasificador de ropa) o 我的衣服都是夏天的."
+        },
+        "n4b": {
+          "npc": { "zh": "下雪的时候要穿很多衣服。你有冬天的衣服吗？", "py": "Xià xuě de shíhou yào chuān hěn duō yīfu. Nǐ yǒu dōngtiān de yīfu ma?", "es": "Cuando nieva hay que ponerse mucha ropa. ¿Tienes ropa de invierno?" },
+          "user": [
+            { "zh": "有，我有一件新衣服，很舒服。", "py": "Yǒu, wǒ yǒu yí jiàn xīn yīfu, hěn shūfu.", "es": "Sí, tengo una prenda nueva, muy cómoda.", "keywords": ["新衣服", "一件"], "next": "n6", "goal": 2 },
+            { "zh": "没有，我的衣服都是夏天的。", "py": "Méiyǒu, wǒ de yīfu dōu shì xiàtiān de.", "es": "No, toda mi ropa es de verano.", "keywords": ["没有", "夏天"], "next": "n7", "goal": 2 }
+          ],
+          "hint": "……的时候 = cuando… Responde si tienes ropa de invierno: 有 / 没有."
+        },
+        "n5": {
+          "npc": { "zh": "不下雨，不用带伞。但是很冷，你要多穿衣服。", "py": "Bú xià yǔ, bú yòng dài sǎn. Dànshì hěn lěng, nǐ yào duō chuān yīfu.", "es": "No llueve, no hace falta paraguas. Pero hace frío, tienes que abrigarte." },
+          "user": [
+            { "zh": "好。我穿什么衣服？", "py": "Hǎo. Wǒ chuān shénme yīfu?", "es": "Vale. ¿Qué ropa me pongo?", "keywords": ["穿什么"], "next": "n4", "goal": 1 },
+            { "zh": "好的，我知道了，谢谢。", "py": "Hǎo de, wǒ zhīdào le, xièxie.", "es": "Vale, entendido, gracias.", "keywords": ["知道", "谢谢"], "next": "n8" }
+          ],
+          "hint": "不用 = no hace falta. Pregunta ahora qué ponerte (穿什么衣服) o da las gracias."
+        },
+        "n5b": {
+          "npc": { "zh": "不用，不下雨。", "py": "Bú yòng, bú xià yǔ.", "es": "No hace falta, no llueve." },
+          "user": [
+            { "zh": "好的，谢谢你，安娜！", "py": "Hǎo de, xièxie nǐ, Ānnà!", "es": "Vale, ¡gracias, Ana!", "keywords": ["谢谢"], "next": "n8" },
+            { "zh": "太好了。", "py": "Tài hǎo le.", "es": "Genial.", "keywords": ["太好了"], "next": "n8" }
+          ],
+          "hint": "Ya lo tienes todo: da las gracias o alégrate (太好了)."
+        },
+        "n6": {
+          "npc": { "zh": "好，那你明天穿那件。", "py": "Hǎo, nà nǐ míngtiān chuān nà jiàn.", "es": "Vale, pues mañana ponte esa." },
+          "user": [
+            { "zh": "要带伞吗？", "py": "Yào dài sǎn ma?", "es": "¿Hace falta paraguas?", "keywords": ["带伞", "伞"], "next": "n5b", "goal": 3 },
+            { "zh": "好的，谢谢你！", "py": "Hǎo de, xièxie nǐ!", "es": "Vale, ¡gracias!", "keywords": ["谢谢"], "next": "n8" }
+          ],
+          "hint": "Pregunta por el paraguas (要带伞吗) o termina dando las gracias."
+        },
+        "n7": {
+          "npc": { "zh": "那你去买一件吧。学校旁边的商店有，不贵。", "py": "Nà nǐ qù mǎi yí jiàn ba. Xuéxiào pángbiān de shāngdiàn yǒu, bú guì.", "es": "Pues ve a comprarte una. En la tienda de al lado de la universidad hay, y no es cara." },
+          "user": [
+            { "zh": "好，我现在去买。谢谢！", "py": "Hǎo, wǒ xiànzài qù mǎi. Xièxie!", "es": "Vale, voy a comprarla ahora. ¡Gracias!", "keywords": ["去买", "谢谢"], "next": "n8" },
+            { "zh": "好。明天要带伞吗？", "py": "Hǎo. Míngtiān yào dài sǎn ma?", "es": "Vale. ¿Mañana hace falta paraguas?", "keywords": ["带伞"], "next": "n5b", "goal": 3 }
+          ],
+          "hint": "Acepta ir a comprar (我去买) o pregunta aún por el paraguas."
+        },
+        "n8": {
+          "npc": { "zh": "不客气。明天多穿衣服，再见！", "py": "Bú kèqi. Míngtiān duō chuān yīfu, zàijiàn!", "es": "De nada. ¡Mañana abrígate, hasta luego!" },
+          "end": true,
+          "feedback": "Has preguntado el tiempo, qué ponerte y lo del paraguas. 多穿衣服 = ponte más ropa (多 + verbo = hacer más); 件 es el clasificador de la ropa."
+        }
+      }
+    },
+    {
+      "id": "u10-buy-umbrella",
+      "title": "Llueve: comprar un paraguas",
+      "zh": "下雨了，买伞",
+      "level": 1,
+      "setting": "Al salir de clase empieza a llover a cántaros y Hugo no lleva paraguas. Entra en la tienda de la puerta de Jiaotong. Tú (la app) eres la dependienta.",
+      "role": "dependienta",
+      "roleZh": "店员",
+      "voice": "f",
+      "goals": ["Decir que llueve y no tienes paraguas", "Pedir un paraguas y preguntar el precio", "Elegir entre el grande y el pequeño", "Pagar"],
+      "vocab": ["下雨", "雨", "伞", "带", "太", "风", "大", "小", "便宜"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "欢迎！外面下雨了吧？", "py": "Huānyíng! Wàimiàn xià yǔ le ba?", "es": "¡Bienvenido! Fuera ha empezado a llover, ¿no?" },
+          "user": [
+            { "zh": "对，下雨了，雨很大。我没带伞。", "py": "Duì, xià yǔ le, yǔ hěn dà. Wǒ méi dài sǎn.", "es": "Sí, llueve, y mucho. No he traído paraguas.", "keywords": ["没带", "下雨"], "next": "n2", "goal": 0 },
+            { "zh": "是的。你们有伞吗？", "py": "Shì de. Nǐmen yǒu sǎn ma?", "es": "Sí. ¿Tenéis paraguas?", "keywords": ["有伞", "伞吗"], "next": "n2b", "goal": 0 }
+          ],
+          "hint": "Confirma que llueve (下雨了) y di que no has traído paraguas (我没带伞) o pregunta si tienen (有伞吗)."
+        },
+        "n2": {
+          "npc": { "zh": "没关系，我们有伞。你看，有大的，也有小的。", "py": "Méi guānxi, wǒmen yǒu sǎn. Nǐ kàn, yǒu dà de, yě yǒu xiǎo de.", "es": "No pasa nada, tenemos paraguas. Mira, hay grandes y pequeños." },
+          "user": [
+            { "zh": "大的多少钱？", "py": "Dà de duōshao qián?", "es": "¿Cuánto cuesta el grande?", "keywords": ["大的"], "next": "n3", "goal": 1 },
+            { "zh": "小的多少钱？", "py": "Xiǎo de duōshao qián?", "es": "¿Cuánto cuesta el pequeño?", "keywords": ["小的"], "next": "n3b", "goal": 1 }
+          ],
+          "hint": "大的 / 小的 = el grande / el pequeño. Pregunta el precio de uno: ……多少钱？"
+        },
+        "n2b": {
+          "npc": { "zh": "有，在这儿。你要大的还是小的？", "py": "Yǒu, zài zhèr. Nǐ yào dà de háishi xiǎo de?", "es": "Sí, aquí. ¿Quieres el grande o el pequeño?" },
+          "user": [
+            { "zh": "我要大的。多少钱？", "py": "Wǒ yào dà de. Duōshao qián?", "es": "El grande. ¿Cuánto cuesta?", "keywords": ["大的"], "next": "n3", "goal": 1 },
+            { "zh": "小的吧。多少钱？", "py": "Xiǎo de ba. Duōshao qián?", "es": "El pequeño. ¿Cuánto cuesta?", "keywords": ["小的"], "next": "n3b", "goal": 1 }
+          ],
+          "hint": "还是 = «o» en preguntas. Responde con 我要大的 / 小的吧 y pregunta el precio."
+        },
+        "n3": {
+          "npc": { "zh": "大的五十块，很好，风大的时候也可以用。", "py": "Dà de wǔshí kuài, hěn hǎo, fēng dà de shíhou yě kěyǐ yòng.", "es": "El grande cuesta cincuenta yuanes; es muy bueno, sirve incluso con mucho viento." },
+          "user": [
+            { "zh": "有点儿贵。小的呢？", "py": "Yǒudiǎnr guì. Xiǎo de ne?", "es": "Es un poco caro. ¿Y el pequeño?", "keywords": ["小的", "贵"], "next": "n3b" },
+            { "zh": "好，我要大的。", "py": "Hǎo, wǒ yào dà de.", "es": "Vale, me llevo el grande.", "keywords": ["要大的"], "next": "n4", "goal": 2 }
+          ],
+          "hint": "Decide: cómpralo (我要大的) o pregunta por el otro con 呢 (小的呢)."
+        },
+        "n3b": {
+          "npc": { "zh": "小的二十块，很便宜，但是有点儿小。", "py": "Xiǎo de èrshí kuài, hěn piányi, dànshì yǒudiǎnr xiǎo.", "es": "El pequeño cuesta veinte yuanes, es muy barato, pero es un poco pequeño." },
+          "user": [
+            { "zh": "好，我要小的。", "py": "Hǎo, wǒ yào xiǎo de.", "es": "Vale, me llevo el pequeño.", "keywords": ["要小的"], "next": "n4", "goal": 2 },
+            { "zh": "大的呢？多少钱？", "py": "Dà de ne? Duōshao qián?", "es": "¿Y el grande? ¿Cuánto cuesta?", "keywords": ["大的"], "next": "n3" },
+            { "zh": "那我要两个小的！", "py": "Nà wǒ yào liǎng ge xiǎo de!", "es": "¡Pues me llevo dos pequeños!", "keywords": ["两个"], "next": "n4", "goal": 2 }
+          ],
+          "hint": "Elige: 我要小的, pregunta por el grande (大的呢), o llévate dos (两个)."
+        },
+        "n4": {
+          "npc": { "zh": "好的。你怎么付钱？微信还是支付宝？", "py": "Hǎo de. Nǐ zěnme fù qián? Wēixìn háishi Zhīfùbǎo?", "es": "Vale. ¿Cómo pagas? ¿WeChat o Alipay?" },
+          "user": [
+            { "zh": "微信。", "py": "Wēixìn.", "es": "WeChat.", "keywords": ["微信"], "next": "n5", "goal": 3 },
+            { "zh": "支付宝。", "py": "Zhīfùbǎo.", "es": "Alipay.", "keywords": ["支付宝"], "next": "n5", "goal": 3 },
+            { "zh": "我用现金，可以吗？", "py": "Wǒ yòng xiànjīn, kěyǐ ma?", "es": "Pago en efectivo, ¿puede ser?", "keywords": ["现金"], "next": "n4b" }
+          ],
+          "hint": "Di cómo pagas: 微信, 支付宝 o pregunta si aceptan efectivo (现金)."
+        },
+        "n4b": {
+          "npc": { "zh": "可以，现金也可以。", "py": "Kěyǐ, xiànjīn yě kěyǐ.", "es": "Sí, en efectivo también." },
+          "user": [
+            { "zh": "给你。", "py": "Gěi nǐ.", "es": "Tenga.", "keywords": ["给你"], "next": "n5", "goal": 3 },
+            { "zh": "谢谢。", "py": "Xièxie.", "es": "Gracias.", "keywords": ["谢谢"], "next": "n5", "goal": 3 }
+          ],
+          "hint": "Entrega el dinero: 给你 (aquí tiene)."
+        },
+        "n5": {
+          "npc": { "zh": "好了，给你伞。外面雨很大，慢走！", "py": "Hǎo le, gěi nǐ sǎn. Wàimiàn yǔ hěn dà, màn zǒu!", "es": "Listo, aquí tiene el paraguas. Fuera llueve mucho, ¡vaya con cuidado!" },
+          "user": [
+            { "zh": "谢谢，再见！", "py": "Xièxie, zàijiàn!", "es": "¡Gracias, adiós!", "keywords": ["谢谢", "再见"], "next": "n7" },
+            { "zh": "明天会下雨吗？", "py": "Míngtiān huì xià yǔ ma?", "es": "¿Lloverá mañana?", "keywords": ["明天"], "next": "n6" }
+          ],
+          "hint": "慢走 es una despedida de cortesía («vaya con cuidado»). Despídete o pregunta por mañana."
+        },
+        "n6": {
+          "npc": { "zh": "明天是晴天，不下雨。", "py": "Míngtiān shì qíngtiān, bú xià yǔ.", "es": "Mañana estará despejado, no lloverá." },
+          "user": [
+            { "zh": "太好了，谢谢。", "py": "Tài hǎo le, xièxie.", "es": "Genial, gracias.", "keywords": ["太好了"], "next": "n7" },
+            { "zh": "好的，再见。", "py": "Hǎo de, zàijiàn.", "es": "Vale, adiós.", "keywords": ["再见", "好的"], "next": "n7" }
+          ],
+          "hint": "Termina la conversación: 太好了 / 再见."
+        },
+        "n7": {
+          "npc": { "zh": "再见，欢迎再来！", "py": "Zàijiàn, huānyíng zài lái!", "es": "Adiós, ¡vuelva cuando quiera!" },
+          "end": true,
+          "feedback": "Ya no te mojas: dijiste que no tenías paraguas, preguntaste precios, elegiste y pagaste. 大的 / 小的 (el grande / el pequeño) y A 还是 B son muy útiles en cualquier tienda."
+        }
+      }
+    }
+  ]
+}

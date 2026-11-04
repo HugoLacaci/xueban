@@ -22,7 +22,7 @@ const BASE = [
   { icon: <PenLine />, zh: "写", title: "Escribe a mano (un poco)", text: "Trazar el carácter con el orden correcto refuerza la memoria y te enseña a leer letra manuscrita. No hace falta escribirlo todo: los 100 más frecuentes bastan al principio.", link: "/caracteres", linkLabel: "Practicar escritura" },
   { icon: <Timer />, zh: "短", title: "Sesiones cortas, un objetivo", text: "Cada lección dura 10–15 minutos y tiene un único objetivo. Feedback inmediato y explicado: no solo ✔/✘, sino por qué.", link: "/aprender", linkLabel: "Curso" },
   { icon: <Target />, zh: "恒", title: "Motivación sana", text: "Racha y objetivo diario, sin castigos ni trucos. Mira las métricas que importan: palabras conocidas, minutos de input, % de comprensión, predicción HSK.", link: "/progreso", linkLabel: "Progreso" },
-  { icon: <School />, zh: "校", title: "Complementa la escuela", text: "Tras cada clase, 2 minutos en el cuaderno: vocabulario → flashcards y Anki con un clic. Lo que ve tu profesor aparece en tus ejercicios al día siguiente.", link: "/study-hall/cuaderno", linkLabel: "Cuaderno de clase" },
+  { icon: <School />, zh: "校", title: "Complementa la escuela", text: "Tras cada clase, 2 minutos en el cuaderno: vocabulario → flashcards y Anki con un clic. Lo que ve tu profesor aparece en tus ejercicios al día siguiente.", link: "/apuntes/clases", linkLabel: "Apuntes de clase" },
 ];
 
 export function HowToLearn() {

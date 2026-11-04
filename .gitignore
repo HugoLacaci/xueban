@@ -8,7 +8,9 @@ public/data/*.json
 public/data/*.gz
 public/data/hanzi/
 # datos generados por npm run data:build (por idioma; la CI los regenera)
-public/data/zh/
+public/data/zh/*
+# formas antiguas de Wikimedia Commons (npm run glyphs:fetch): pocas y pequeñas, se versionan para Pages
+!public/data/zh/glyphs/
 public/data/ja/
 public/data/ko/
 public/audio/*.mp3

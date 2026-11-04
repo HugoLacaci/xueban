@@ -1,7 +1,8 @@
 "use client";
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { Link } from "@/lib/languages/link";
-import { BookOpen, Check, Plus, X } from "lucide-react";
+import { BookOpen, Check, NotebookPen, Plus, X } from "lucide-react";
+import { openNewNote, prefillFromWord } from "@/components/notes/new-note-dialog";
 import { usePopup } from "@/lib/popup-store";
 import { lookup, useDictionary, levelLabel } from "@/lib/dictionary/service";
 import { useKnowledge } from "@/lib/knowledge";
@@ -151,6 +152,9 @@ export function WordPopupHost() {
             <Link href={`/diccionario?q=${encodeURIComponent(word)}`} onClick={close}>
               <BookOpen /> Ficha
             </Link>
+          </Button>
+          <Button size="sm" variant="ghost" onClick={() => { close(); openNewNote(prefillFromWord(word, entries[0]?.p ?? fallbackReading, entries[0]?.es ?? entries[0]?.en?.slice(0, 2).join("; "), context)); }} aria-label="Crear un apunte con esta palabra">
+            <NotebookPen /> apunte
           </Button>
         </div>
         {chars.length > 1 ? (

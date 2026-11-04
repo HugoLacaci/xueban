@@ -1,0 +1,276 @@
+{
+  "unitId": "u14",
+  "scenarios": [
+    {
+      "id": "u14-call-message",
+      "title": "Llamar a casa de Wang Ming y dejar recado",
+      "zh": "打电话找王明",
+      "level": 1,
+      "setting": "El móvil de Wang Ming no contesta, así que Hugo llama al fijo de su casa. Responde su madre. Tú (la app) eres 王明的妈妈.",
+      "role": "madre de Wang Ming",
+      "roleZh": "王明的妈妈",
+      "voice": "f",
+      "goals": ["Saludar y decir quién eres", "Preguntar si está Wang Ming", "Dejar un recado", "Dar tu número de teléfono"],
+      "vocab": ["喂", "打电话", "电话", "在", "给", "等一下", "号码", "多少"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "喂，你好？", "py": "Wéi, nǐ hǎo?", "es": "¿Diga?" },
+          "user": [
+            { "zh": "您好，我是雨果，王明的朋友。", "py": "Nín hǎo, wǒ shì Yǔguǒ, Wáng Míng de péngyou.", "es": "Buenas, soy Hugo, el amigo de Wang Ming.", "keywords": ["雨果", "朋友"], "next": "n2", "goal": 0 },
+            { "zh": "喂，王明在吗？", "py": "Wéi, Wáng Míng zài ma?", "es": "Hola, ¿está Wang Ming?", "keywords": ["在吗"], "next": "n1b", "goal": 1 }
+          ],
+          "hint": "Al teléfono, primero di quién eres: 我是雨果，王明的朋友. Usa 您 con la madre."
+        },
+        "n1b": {
+          "npc": { "zh": "你是谁？", "py": "Nǐ shì shéi?", "es": "¿Quién eres?" },
+          "user": [
+            { "zh": "对不起，我是雨果，王明的同学。", "py": "Duìbuqǐ, wǒ shì Yǔguǒ, Wáng Míng de tóngxué.", "es": "Perdone, soy Hugo, el compañero de Wang Ming.", "keywords": ["雨果", "同学"], "next": "n3", "goal": 0 },
+            { "zh": "我是他的朋友。", "py": "Wǒ shì tā de péngyou.", "es": "Soy un amigo suyo.", "keywords": ["朋友"], "next": "n3" }
+          ],
+          "hint": "Se te olvidó presentarte: 对不起，我是……"
+        },
+        "n2": {
+          "npc": { "zh": "啊，雨果！你好。有什么事？", "py": "À, Yǔguǒ! Nǐ hǎo. Yǒu shénme shì?", "es": "¡Ah, Hugo! Hola. ¿Qué pasa?" },
+          "user": [
+            { "zh": "请问，王明在家吗？", "py": "Qǐngwèn, Wáng Míng zài jiā ma?", "es": "¿Está Wang Ming en casa?", "keywords": ["在家", "在吗"], "next": "n3", "goal": 1 },
+            { "zh": "我想和王明说话。", "py": "Wǒ xiǎng hé Wáng Míng shuōhuà.", "es": "Quería hablar con Wang Ming.", "keywords": ["说话", "找他"], "next": "n3", "goal": 1 }
+          ],
+          "hint": "Pregunta por él: 王明在吗？ / 在家吗？"
+        },
+        "n3": {
+          "npc": { "zh": "他不在，他去公司了，晚上七点回来。", "py": "Tā bú zài, tā qù gōngsī le, wǎnshang qī diǎn huílái.", "es": "No está, se ha ido a la empresa; vuelve a las siete de la tarde." },
+          "user": [
+            { "zh": "那请他晚上给我打电话，可以吗？", "py": "Nà qǐng tā wǎnshang gěi wǒ dǎ diànhuà, kěyǐ ma?", "es": "Entonces, ¿puede decirle que me llame esta noche?", "keywords": ["打电话", "给我"], "next": "n4", "goal": 2 },
+            { "zh": "没关系，我再打。", "py": "Méi guānxi, wǒ zài dǎ.", "es": "No pasa nada, vuelvo a llamar.", "keywords": ["再打", "再给"], "next": "n5" },
+            { "zh": "好的，我给他发微信吧。谢谢您。", "py": "Hǎo de, wǒ gěi tā fā Wēixìn ba. Xièxie nín.", "es": "Vale, le mando un WeChat. Gracias.", "keywords": ["微信"], "next": "n8" }
+          ],
+          "hint": "Deja recado: 请他给我打电话 (que me llame). O di que volverás a llamar (我再打)."
+        },
+        "n4": {
+          "npc": { "zh": "可以。你的电话号码是多少？", "py": "Kěyǐ. Nǐ de diànhuà hàomǎ shì duōshao?", "es": "Claro. ¿Cuál es tu número de teléfono?" },
+          "user": [
+            { "zh": "一三八零五二六七九四零。", "py": "Yāo sān bā líng wǔ èr liù qī jiǔ sì líng.", "es": "138 0526 7940.", "keywords": ["一三八", "138"], "next": "n7", "goal": 3 },
+            { "zh": "他知道我的号码。", "py": "Tā zhīdào wǒ de hàomǎ.", "es": "Él ya tiene mi número.", "keywords": ["知道"], "next": "n7b" }
+          ],
+          "hint": "Dicta el número cifra a cifra; 一 se lee yāo. O di que él ya lo sabe."
+        },
+        "n5": {
+          "npc": { "zh": "好，他七点回家。", "py": "Hǎo, tā qī diǎn huí jiā.", "es": "Vale, vuelve a casa a las siete." },
+          "user": [
+            { "zh": "好，谢谢您，再见。", "py": "Hǎo, xièxie nín, zàijiàn.", "es": "Vale, gracias, adiós.", "keywords": ["谢谢", "再见"], "next": "n8" },
+            { "zh": "我也可以给他发微信。", "py": "Wǒ yě kěyǐ gěi tā fā Wēixìn.", "es": "También puedo mandarle un WeChat.", "keywords": ["微信"], "next": "n8" }
+          ],
+          "hint": "Despídete con 谢谢您，再见."
+        },
+        "n7": {
+          "npc": { "zh": "一三八零五二六七九四一，对吗？", "py": "Yāo sān bā líng wǔ èr liù qī jiǔ sì yāo, duì ma?", "es": "138 0526 7941, ¿verdad?" },
+          "user": [
+            { "zh": "不对，是九四零，不是九四一。", "py": "Bú duì, shì jiǔ sì líng, bú shì jiǔ sì yāo.", "es": "No, es 940, no 941.", "keywords": ["不对", "九四零"], "next": "n7b" },
+            { "zh": "对，谢谢您。", "py": "Duì, xièxie nín.", "es": "Sí, gracias.", "keywords": ["谢谢", "没错"], "next": "n9" }
+          ],
+          "hint": "¡Escucha bien! Ha dicho 九四一. Corrige con 不对，是……，不是……"
+        },
+        "n7b": {
+          "npc": { "zh": "好，我知道了。他晚上给你打。", "py": "Hǎo, wǒ zhīdào le. Tā wǎnshang gěi nǐ dǎ.", "es": "Vale, entendido. Te llama esta noche." },
+          "user": [
+            { "zh": "谢谢您，再见！", "py": "Xièxie nín, zàijiàn!", "es": "¡Gracias, adiós!", "keywords": ["谢谢", "再见"], "next": "n8" },
+            { "zh": "好的。", "py": "Hǎo de.", "es": "Vale.", "keywords": ["好的"], "next": "n8" }
+          ],
+          "hint": "Ya está el recado. Despídete."
+        },
+        "n8": {
+          "npc": { "zh": "不客气，再见！", "py": "Bú kèqi, zàijiàn!", "es": "De nada, ¡adiós!" },
+          "end": true,
+          "feedback": "Llamada resuelta: te presentaste, preguntaste por Wang Ming y dejaste recado. 请他给我打电话 es la fórmula para «que me llame»; recuerda que 一 se lee yāo en los números de teléfono."
+        },
+        "n9": {
+          "npc": { "zh": "好，九四一。再见！", "py": "Hǎo, jiǔ sì yāo. Zàijiàn!", "es": "Vale, 941. ¡Adiós!" },
+          "end": true,
+          "feedback": "La madre ha apuntado un número equivocado (九四一 en vez de 九四零) y le has dicho que sí. Al dictar un número, escucha la repetición y corrige con 不对，是……"
+        }
+      }
+    },
+    {
+      "id": "u14-confirm-appointment",
+      "title": "Confirmar la cita con Ana",
+      "zh": "确认明天的约会",
+      "level": 1,
+      "setting": "Hugo llama a Ana para confirmar que mañana estudian juntos: a qué hora y dónde. Tú (la app) eres 安娜.",
+      "role": "Ana",
+      "roleZh": "安娜",
+      "voice": "f",
+      "goals": ["Decir por qué llamas", "Confirmar la hora", "Confirmar el lugar", "Despedirte con «hasta mañana»"],
+      "vocab": ["什么时候", "明天", "见", "明天见", "对不起", "没关系", "忙", "呢"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "喂？", "py": "Wéi?", "es": "¿Diga?" },
+          "user": [
+            { "zh": "喂，安娜，我是雨果。我们明天一起学习，对吗？", "py": "Wéi, Ānnà, wǒ shì Yǔguǒ. Wǒmen míngtiān yìqǐ xuéxí, duì ma?", "es": "Hola, Ana, soy Hugo. Mañana estudiamos juntos, ¿verdad?", "keywords": ["明天", "对吗"], "next": "n2", "goal": 0 },
+            { "zh": "喂，安娜，你现在忙吗？", "py": "Wéi, Ānnà, nǐ xiànzài máng ma?", "es": "Hola, Ana, ¿estás ocupada ahora?", "keywords": ["忙吗"], "next": "n1b" }
+          ],
+          "hint": "Di quién eres y por qué llamas: 我们明天……，对吗？ O pregunta si puede hablar (你现在忙吗)."
+        },
+        "n1b": {
+          "npc": { "zh": "不忙，怎么了？", "py": "Bù máng, zěnme le?", "es": "No, ¿qué pasa?" },
+          "user": [
+            { "zh": "我想问问明天的事：我们明天见，对吗？", "py": "Wǒ xiǎng wènwen míngtiān de shì: wǒmen míngtiān jiàn, duì ma?", "es": "Quería preguntarte por lo de mañana: nos vemos, ¿verdad?", "keywords": ["明天"], "next": "n2", "goal": 0 },
+            { "zh": "我想问问，我们几点见？", "py": "Wǒ xiǎng wènwen, wǒmen jǐ diǎn jiàn?", "es": "Quería preguntarte a qué hora nos vemos.", "keywords": ["几点"], "next": "n2", "goal": 0 }
+          ],
+          "hint": "Explica el motivo: 我想问问明天的事 / 我们几点见."
+        },
+        "n2": {
+          "npc": { "zh": "对！明天下午。但是几点？", "py": "Duì! Míngtiān xiàwǔ. Dànshì jǐ diǎn?", "es": "¡Sí! Mañana por la tarde. Pero ¿a qué hora?" },
+          "user": [
+            { "zh": "三点，可以吗？", "py": "Sān diǎn, kěyǐ ma?", "es": "A las tres, ¿puede ser?", "keywords": ["三点"], "next": "n3", "goal": 1 },
+            { "zh": "两点半，不太晚。", "py": "Liǎng diǎn bàn, bú tài wǎn.", "es": "A las dos y media, que no es muy tarde.", "keywords": ["两点半"], "next": "n3b", "goal": 1 }
+          ],
+          "hint": "Propón una hora: X点，可以吗？"
+        },
+        "n3": {
+          "npc": { "zh": "三点……对不起，三点我有课，四点下课。四点可以吗？", "py": "Sān diǎn… duìbuqǐ, sān diǎn wǒ yǒu kè, sì diǎn xiàkè. Sì diǎn kěyǐ ma?", "es": "A las tres… lo siento, a las tres tengo clase, salgo a las cuatro. ¿A las cuatro?" },
+          "user": [
+            { "zh": "好，四点见。我们在哪儿见？", "py": "Hǎo, sì diǎn jiàn. Wǒmen zài nǎr jiàn?", "es": "Vale, a las cuatro. ¿Dónde nos vemos?", "keywords": ["好", "哪儿"], "next": "n4" },
+            { "zh": "四点太晚了，三点半可以吗？", "py": "Sì diǎn tài wǎn le, sān diǎn bàn kěyǐ ma?", "es": "Las cuatro es muy tarde, ¿a las tres y media?", "keywords": ["三点半", "太晚"], "next": "n4c" }
+          ],
+          "hint": "Acepta (好，四点见) o propón otra hora (三点半可以吗)."
+        },
+        "n3b": {
+          "npc": { "zh": "两点半好。我们在哪儿见？", "py": "Liǎng diǎn bàn hǎo. Wǒmen zài nǎr jiàn?", "es": "A las dos y media, bien. ¿Dónde nos vemos?" },
+          "user": [
+            { "zh": "在图书馆，二楼。", "py": "Zài túshūguǎn, èr lóu.", "es": "En la biblioteca, segunda planta.", "keywords": ["图书馆"], "next": "n6", "goal": 2 },
+            { "zh": "在学校的咖啡店吧。", "py": "Zài xuéxiào de kāfēidiàn ba.", "es": "En la cafetería de la universidad.", "keywords": ["咖啡店", "咖啡"], "next": "n6", "goal": 2 }
+          ],
+          "hint": "Di el lugar: 在 + lugar (图书馆, 咖啡店)."
+        },
+        "n4": {
+          "npc": { "zh": "好。那我们在哪儿见？", "py": "Hǎo. Nà wǒmen zài nǎr jiàn?", "es": "Vale. Entonces, ¿dónde nos vemos?" },
+          "user": [
+            { "zh": "在图书馆，二楼。", "py": "Zài túshūguǎn, èr lóu.", "es": "En la biblioteca, segunda planta.", "keywords": ["图书馆"], "next": "n6", "goal": 2 },
+            { "zh": "在学校的咖啡店吧。", "py": "Zài xuéxiào de kāfēidiàn ba.", "es": "En la cafetería de la universidad.", "keywords": ["咖啡店", "咖啡"], "next": "n6", "goal": 2 }
+          ],
+          "hint": "Di el lugar: 在 + lugar (图书馆, 咖啡店)."
+        },
+        "n4c": {
+          "npc": { "zh": "三点半我还在上课。四点吧！", "py": "Sān diǎn bàn wǒ hái zài shàngkè. Sì diǎn ba!", "es": "A las tres y media todavía estoy en clase. ¡A las cuatro!" },
+          "user": [
+            { "zh": "好吧，四点。我们在图书馆见。", "py": "Hǎo ba, sì diǎn. Wǒmen zài túshūguǎn jiàn.", "es": "Está bien, a las cuatro. Nos vemos en la biblioteca.", "keywords": ["好吧", "图书馆"], "next": "n6", "goal": 2 },
+            { "zh": "那明天我不去了，星期四吧。", "py": "Nà míngtiān wǒ bú qù le, xīngqīsì ba.", "es": "Entonces mañana no voy; mejor el jueves.", "keywords": ["星期四", "不去"], "next": "n9" }
+          ],
+          "hint": "Cede (好吧，四点) y di el lugar, o aplaza al jueves."
+        },
+        "n6": {
+          "npc": { "zh": "好的。你带书，我们一起写汉字。", "py": "Hǎo de. Nǐ dài shū, wǒmen yìqǐ xiě Hànzì.", "es": "Vale. Trae el libro y escribimos caracteres juntos." },
+          "user": [
+            { "zh": "好。那明天见！", "py": "Hǎo. Nà míngtiān jiàn!", "es": "Vale. ¡Hasta mañana!", "keywords": ["明天见"], "next": "n7", "goal": 3 },
+            { "zh": "好的，我也带电脑。明天下午见！", "py": "Hǎo de, wǒ yě dài diànnǎo. Míngtiān xiàwǔ jiàn!", "es": "Vale, también llevo el ordenador. ¡Hasta mañana por la tarde!", "keywords": ["电脑", "下午见"], "next": "n7", "goal": 3 }
+          ],
+          "hint": "Despídete con 明天见."
+        },
+        "n7": {
+          "npc": { "zh": "明天见！", "py": "Míngtiān jiàn!", "es": "¡Hasta mañana!" },
+          "end": true,
+          "feedback": "Cita confirmada: motivo de la llamada, hora y lugar. ……，对吗？ sirve para confirmar cualquier cosa, y 在哪儿见 para fijar el sitio."
+        },
+        "n9": {
+          "npc": { "zh": "好，星期四再说吧。再见。", "py": "Hǎo, xīngqīsì zài shuō ba. Zàijiàn.", "es": "Vale, ya hablamos el jueves. Adiós." },
+          "end": true,
+          "feedback": "Has aplazado la cita sin cerrar hora ni lugar. Cuando no te cuadra la hora, intenta ceder un poco (好吧，四点) para dejar la cita confirmada."
+        }
+      }
+    },
+    {
+      "id": "u14-call-teacher",
+      "title": "Llamar a la profesora: llego tarde",
+      "zh": "给李老师打电话",
+      "level": 1,
+      "setting": "Son las 8:10 y Hugo sigue en la estación de metro: la línea 1 tiene un problema. Llama a la profesora Li. Tú (la app) eres 李老师.",
+      "role": "profesora Li",
+      "roleZh": "李老师",
+      "voice": "f",
+      "goals": ["Saludar y decir quién eres", "Explicar por qué no estás en clase", "Decir a qué hora llegarás", "Disculparte y despedirte"],
+      "vocab": ["喂", "打电话", "现在", "在", "等一下", "对不起", "没关系", "地铁", "分钟"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "喂，你好，我是李老师。", "py": "Wéi, nǐ hǎo, wǒ shì Lǐ lǎoshī.", "es": "¿Diga? Hola, soy la profesora Li." },
+          "user": [
+            { "zh": "老师您好，我是雨果。", "py": "Lǎoshī nín hǎo, wǒ shì Yǔguǒ.", "es": "Buenos días, profesora, soy Hugo.", "keywords": ["雨果"], "next": "n2", "goal": 0 },
+            { "zh": "喂，老师，是我！", "py": "Wéi, lǎoshī, shì wǒ!", "es": "¡Hola, profesora, soy yo!", "keywords": ["是我"], "next": "n1b" }
+          ],
+          "hint": "Saluda con 您 y di quién eres: 老师您好，我是雨果."
+        },
+        "n1b": {
+          "npc": { "zh": "你是谁？", "py": "Nǐ shì shéi?", "es": "¿Quién eres?" },
+          "user": [
+            { "zh": "对不起，老师，我是雨果，您的学生。", "py": "Duìbuqǐ, lǎoshī, wǒ shì Yǔguǒ, nín de xuésheng.", "es": "Perdone, profesora, soy Hugo, su alumno.", "keywords": ["雨果", "学生"], "next": "n2", "goal": 0 },
+            { "zh": "我是西班牙的学生。", "py": "Wǒ shì Xībānyá de xuésheng.", "es": "Soy el estudiante español.", "keywords": ["西班牙"], "next": "n2", "goal": 0 }
+          ],
+          "hint": "«Soy yo» no basta por teléfono: di tu nombre (我是雨果)."
+        },
+        "n2": {
+          "npc": { "zh": "雨果，你好。现在八点十分了，你在哪儿？", "py": "Yǔguǒ, nǐ hǎo. Xiànzài bā diǎn shí fēn le, nǐ zài nǎr?", "es": "Hola, Hugo. Son las ocho y diez, ¿dónde estás?" },
+          "user": [
+            { "zh": "老师，对不起，我在地铁站。地铁有问题，我会晚一点儿到。", "py": "Lǎoshī, duìbuqǐ, wǒ zài dìtiězhàn. Dìtiě yǒu wèntí, wǒ huì wǎn yìdiǎnr dào.", "es": "Profesora, lo siento, estoy en la estación de metro. El metro tiene un problema, llegaré un poco tarde.", "keywords": ["地铁", "问题"], "next": "n3", "goal": 1 },
+            { "zh": "老师，对不起，我生病了，今天不能上课。", "py": "Lǎoshī, duìbuqǐ, wǒ shēngbìng le, jīntiān bù néng shàngkè.", "es": "Profesora, lo siento, estoy enfermo, hoy no puedo ir a clase.", "keywords": ["生病", "不能上课"], "next": "n4", "goal": 1 }
+          ],
+          "hint": "Discúlpate y explica: 我在地铁站，地铁有问题 / 我生病了，不能上课."
+        },
+        "n3": {
+          "npc": { "zh": "没关系。你几点能到？", "py": "Méi guānxi. Nǐ jǐ diǎn néng dào?", "es": "No pasa nada. ¿A qué hora puedes llegar?" },
+          "user": [
+            { "zh": "二十分钟，八点半到。", "py": "Èrshí fēnzhōng, bā diǎn bàn dào.", "es": "En veinte minutos, a las ocho y media.", "keywords": ["二十分钟", "八点半"], "next": "n5", "goal": 2 },
+            { "zh": "我不知道。我坐出租车去，快一点儿。", "py": "Wǒ bù zhīdào. Wǒ zuò chūzūchē qù, kuài yìdiǎnr.", "es": "No lo sé. Cojo un taxi, será más rápido.", "keywords": ["出租车", "不知道"], "next": "n5b", "goal": 2 }
+          ],
+          "hint": "Di cuándo llegas: duración (二十分钟) o hora (八点半到)."
+        },
+        "n4": {
+          "npc": { "zh": "怎么了？发烧吗？", "py": "Zěnme le? Fāshāo ma?", "es": "¿Qué te pasa? ¿Tienes fiebre?" },
+          "user": [
+            { "zh": "有点儿发烧，头疼。", "py": "Yǒudiǎnr fāshāo, tóu téng.", "es": "Un poco de fiebre y dolor de cabeza.", "keywords": ["有点儿", "头疼"], "next": "n6" },
+            { "zh": "不发烧，但是很不舒服。", "py": "Bù fāshāo, dànshì hěn bù shūfu.", "es": "No tengo fiebre, pero me encuentro muy mal.", "keywords": ["不舒服"], "next": "n6" }
+          ],
+          "hint": "Describe los síntomas (unidad 11): 有点儿发烧, 头疼, 不舒服."
+        },
+        "n5": {
+          "npc": { "zh": "好，八点半。你来的时候，请坐后面。", "py": "Hǎo, bā diǎn bàn. Nǐ lái de shíhou, qǐng zuò hòumiàn.", "es": "Vale, a las ocho y media. Cuando llegues, siéntate atrás." },
+          "user": [
+            { "zh": "好的，老师。对不起，再见。", "py": "Hǎo de, lǎoshī. Duìbuqǐ, zàijiàn.", "es": "De acuerdo, profesora. Lo siento, adiós.", "keywords": ["对不起", "再见"], "next": "n7", "goal": 3 },
+            { "zh": "好，我知道了。", "py": "Hǎo, wǒ zhīdào le.", "es": "Vale, entendido.", "keywords": ["知道"], "next": "n7" }
+          ],
+          "hint": "Vuelve a disculparte y despídete: 对不起，再见."
+        },
+        "n5b": {
+          "npc": { "zh": "好，你来吧，我们等你。", "py": "Hǎo, nǐ lái ba, wǒmen děng nǐ.", "es": "Vale, ven, te esperamos." },
+          "user": [
+            { "zh": "谢谢老师，对不起！", "py": "Xièxie lǎoshī, duìbuqǐ!", "es": "¡Gracias, profesora, y perdón!", "keywords": ["对不起", "谢谢"], "next": "n7", "goal": 3 },
+            { "zh": "好的，老师。", "py": "Hǎo de, lǎoshī.", "es": "De acuerdo, profesora.", "keywords": ["好的"], "next": "n7" }
+          ],
+          "hint": "Agradece y discúlpate: 谢谢老师，对不起."
+        },
+        "n6": {
+          "npc": { "zh": "那你在家休息吧，明天好了再来。", "py": "Nà nǐ zài jiā xiūxi ba, míngtiān hǎo le zài lái.", "es": "Pues descansa en casa; ven mañana cuando estés bien." },
+          "user": [
+            { "zh": "谢谢老师，对不起。", "py": "Xièxie lǎoshī, duìbuqǐ.", "es": "Gracias, profesora, lo siento.", "keywords": ["谢谢", "对不起"], "next": "n7", "goal": 3 },
+            { "zh": "好的，老师。明天的课几点？", "py": "Hǎo de, lǎoshī. Míngtiān de kè jǐ diǎn?", "es": "De acuerdo. ¿A qué hora es la clase de mañana?", "keywords": ["几点"], "next": "n6b" }
+          ],
+          "hint": "Agradece y discúlpate, o pregunta por la clase de mañana (几点)."
+        },
+        "n6b": {
+          "npc": { "zh": "还是八点。你早点儿睡。", "py": "Háishi bā diǎn. Nǐ zǎo diǎnr shuì.", "es": "A las ocho, como siempre. Acuéstate pronto." },
+          "user": [
+            { "zh": "好的，谢谢老师，再见。", "py": "Hǎo de, xièxie lǎoshī, zàijiàn.", "es": "Vale, gracias, profesora, adiós.", "keywords": ["谢谢", "再见"], "next": "n7", "goal": 3 },
+            { "zh": "我知道了。", "py": "Wǒ zhīdào le.", "es": "Entendido.", "keywords": ["知道"], "next": "n7" }
+          ],
+          "hint": "还是 aquí = «sigue siendo». Despídete."
+        },
+        "n7": {
+          "npc": { "zh": "没关系，再见。", "py": "Méi guānxi, zàijiàn.", "es": "No pasa nada, adiós." },
+          "end": true,
+          "feedback": "Has avisado a la profesora como corresponde: identificarte, explicar el motivo, decir cuándo llegas y disculparte. 我会晚一点儿到 = llegaré un poco tarde; 没关系 es la respuesta que esperas oír."
+        }
+      }
+    }
+  ]
+}

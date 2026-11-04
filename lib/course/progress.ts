@@ -15,6 +15,8 @@ export async function markStarted(unitId: string, lessonId: string): Promise<voi
 }
 
 export async function markCompleted(unitId: string, lessonId: string, score?: number): Promise<void> {
+  // ficha de la lección (apunte resumen automático, ampliable)
+  void import("@/lib/notes/lesson-note").then((m) => m.ensureLessonNote(lessonId)).catch(() => undefined);
   const cur = await db.lessonProgress.get(lessonId);
   await db.lessonProgress.put({
     lessonId,

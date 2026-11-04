@@ -99,17 +99,20 @@ Sin Anki también funciona todo: la web tiene su propio repaso espaciado (FSRS-6
 |---|---|
 | **Hoy** | Plan del día (repasos → lección → práctica → input), racha, minutos, palabras y caracteres conocidos, mapa de calor, cuenta atrás al HSK, acceso rápido «Vocabulario de clase». |
 | **Aprender** | Unidad 0 (pronunciación: tonos, tabla de pinyin con audio, pares de tonos, sandhi, errores de hispanohablantes; caracteres: trazos, reglas, ~50 radicales) + 14 unidades HSK 1 por temas (71 lecciones de 10–12 min: vocabulario → diálogo → gramática → ejercicios → repaso; lectura y checkpoint por unidad). 30 puntos de gramática en español con fórmula, ejemplos, errores comunes y ejercicios. |
-| **Practicar** | Motor de 20 tipos de ejercicio con corrección explicada: aleatorio intercalado, mis errores, por tema, por punto gramatical, por destreza; **simulacro HSK 1** con el formato oficial del nuevo HSK (40 preguntas, 40 min) e informe por parte. |
+| **Apuntes 笔记** | Cuaderno digital con editor por bloques (texto chino con pinyin, fórmula con roles de color, ejemplo «minable», tabla de comparación, avisos, ejercicio incrustado, ficha de palabra/carácter, `[[enlaces]]` con retroenlaces, #etiquetas, dibujo, imagen, audio, preguntas Cornell). Escribe pinyin con números y Tab lo convierte en hanzi. 15 plantillas, bandeja de entrada (tecla **N** o «+ apunte» desde cualquier pantalla, dictado y foto con OCR), búsqueda, vistas, grafo de enlaces. **Apuntes del profesor**: 144 compendios (gramática, preguntas, partículas, clasificadores, contrastes, números, errores típicos, frases). **Cuaderno de ejercicios 练习本**: pega las frases de clase y practícalas con corrección por capas. **错题本**: cada error con su regla y repaso SRS. Repaso Cornell con FSRS, exportación a Anki (CSV) y PDF con 田字格. Guía «Cómo tomar apuntes» con tour. |
+| **Tutor 老师** | Funciona sin IA: 42 role-plays ramificados escritos a mano (3 por unidad, con voz y objetivos) y el corrector por reglas. Con IA opcional (Ollama local o claves gratuitas de Gemini/Groq/OpenRouter, o Claude/OpenAI): escenarios con misión, chat libre, corrector, explicador que cita tus apuntes y la gramática de la app, generador de ejercicios validados, planificador y modo voz. El pinyin siempre lo calcula la app, nunca el modelo. |
+| **Practicar** | Motor de 20 tipos de ejercicio con corrección explicada: aleatorio intercalado, mis errores, por tema, por punto gramatical, por destreza; **simulacro HSK 1** con el formato oficial del nuevo HSK (40 preguntas, 40 min) e informe por parte. **Bancos de ejercicios**: 45 bancos y 3 486 ítems (≥ 150 por unidad, ≥ 25 por punto gramatical, 31 tipos: dictado, transformación, encontrar el error, cloze, traducción libre, velocidad…), con audio pregenerado en tres voces y sesiones adaptativas por nivel. **Speaking**: shadowing con comparación de tono sílaba a sílaba, lectura en voz alta y respuestas orales (Whisper local opcional). |
 | **Flashcards** | Mazo con las 302 palabras HSK 1, categorías con color e icono, filtros, añadir en < 10 s (autocompleta pinyin, significado y ejemplo), importación masiva, 5 tipos de tarjeta (reconocimiento, producción, escucha, frase cloze, escritura), FSRS con 4 botones y atajos, ficha por palabra con historial. |
 | **Diccionario** | CC-CEDICT + HSK + tus palabras. Búsqueda por hanzi, pinyin (con/sin tonos, números), español/inglés, **radical + trazos** y **escritura a mano** (reconocedor offline de caracteres HSK 1–4). Ficha de palabra y de carácter (trazos animados, descomposición, componente semántico/fonético, etimología, mnemotecnia editable, palabras y caracteres relacionados). |
-| **Caracteres** | 214 radicales (por frecuencia/trazos), caracteres HSK por nivel con progreso, práctica de escritura con 田字格 y hoja de caligrafía imprimible (PDF desde el navegador). |
+| **Caracteres** | 214 radicales (por frecuencia/trazos), caracteres HSK por nivel con progreso, práctica de escritura con 田字格 y hoja de caligrafía imprimible (PDF desde el navegador). **Origen y evolución**: serie de 6 artículos, línea del tiempo, 100 pictogramas animados con dibujos propios y formas antiguas reales de Wikimedia Commons. **Memorizar**: 267 palabras clave de componentes (editables), mnemotecnia sugerida + tu historia y dibujo guardados como apunte, método de la «película» para pinyin y tono, comparador de caracteres parecidos con minitest, tonos con color, gesto y palabra ancla, escritura con repetición espaciada. La ficha de cada carácter muestra su tira de evolución, cómo se formó y sus familias. |
+| **Escuchar y leer 听读** | Reúne Lectura y Vídeos en pestañas (las rutas antiguas redirigen). |
 | **Lectura** | 33 textos graduados (diálogos, WeChat, menús, carteles, horarios, relatos de Hugo en Shanghái) con audio, pinyin conmutable, % de palabras conocidas, glosario y preguntas. Importa cualquier texto propio. |
 | **Vídeos** | 16 vídeos curados + cualquier URL de YouTube: subtítulos interactivos (ruby de pinyin, traducción), repetir línea, bucle, auto-pausa, shadowing, velocidad, bucle A-B, vocabulario nuevo detectado, puntos de gramática detectados, minar frases a flashcards. |
 | **Study Hall** | 14 artículos (tonos, pinyin, radicales, clasificadores, 了/过/着, cómo preparar el HSK, estudiar con la escuela, cultura: saludos, comida, números, WeChat Pay/Alipay, vida universitaria), 37 recursos verificados, Pomodoro con ruido ambiente, notas Markdown vinculadas a palabras, **cuaderno de clase** (vocabulario → flashcards y Anki con un clic). |
 | **Progreso** | Conocido por nivel HSK (palabras y caracteres), precisión por destreza y tipo, puntos débiles (palabras y tonos), tiempo por actividad, previsión de repasos a 30 días, logros. |
 | **Ajustes** | Lista HSK (2.0/3.0/ambas), fecha de examen, objetivo diario, retención FSRS, pinyin por defecto, tipografía (Noto Sans/Serif, Kai), tamaño, tema, colores de tono, voz TTS, Anki, proveedor LLM opcional (traducción de subtítulos), copia de seguridad JSON, reiniciar. |
 
-Atajos globales: **P** pinyin (ver / solo desconocidas / ocultar) · **T** traducción · **Ctrl+K** búsqueda · en ejercicios **1–4** opciones, **Enter** comprobar/continuar, **Espacio** audio.
+Atajos globales: **N** captura rápida de un apunte · **P** pinyin (ver / solo desconocidas / ocultar) · **T** traducción · **Ctrl+K** búsqueda · en ejercicios **1–4** opciones, **Enter** comprobar/continuar, **Espacio** audio.
 
 ### Diseño «宣纸与墨» (papel y tinta)
 
@@ -132,13 +135,14 @@ Fuentes (todas OFL, servidas en local): Inter y Fraunces para el latín; Noto Sa
 | `npm run dev` | Servidor de desarrollo en <http://localhost:3000> |
 | `npm run build` / `npm start` | Compilación de producción y servidor |
 | `npm run data:build` | Descarga y procesa CC-CEDICT, HSK, Make Me a Hanzi, trazos, Tatoeba → `public/data/` |
-| `npm run audio:build` | Pregenera MP3 (voz Edge) en `public/audio/` |
+| `npm run audio:build -- --banks --notes --course --words --readings` | Pregenera MP3 (voces Edge: mujer, hombre y niña) en `public/audio/`; si falla la red, vuelve a ejecutarlo y solo genera lo que falta |
+| `npm run glyphs:fetch [-- --force --chars=人水]` | Descarga de Wikimedia Commons las formas antiguas (甲骨文, 金文, 篆…) con licencia libre verificada → `public/data/zh/glyphs/` |
 | `npm run videos:fetch -- --lang=zh\|ja\|ko <url\|id>` | Transcribe un vídeo a `public/videos/<lang>/` (también `--search "consulta"`, `--check <id>`) |
 | `npm run content:check -- --lang=zh\|ja\|ko\|all` | Valida el contenido de cada idioma (JSON, ids, gramática, lecturas, vocabulario controlado; en chino también el pinyin) |
 | `npm run anki:build -- --lang=ja\|ko` | Genera los mazos .apkg de japonés y coreano en `C:\CHINA\IDIOMA\` |
 | `npm run screenshots` | Recorrido Playwright en los tres idiomas (escritorio/móvil, claro/oscuro) + auditoría del atributo `lang` |
-| `npm test` | Tests unitarios (Vitest): pinyin y sandhi, segmentación, FSRS, motor de ejercicios, importación, diccionario, escritura a mano, sincronización Anki simulada |
-| `npm run test:e2e` | Tests Playwright: completar lección, añadir palabra, repasar, vídeo con subtítulos, diccionario, popup |
+| `npm test` | Tests unitarios (Vitest): motor de corrección (normalización, alineación, 18 reglas), migración de apuntes v5, shadowing, tutor con respuestas simuladas (JSON y zod), reconocimiento de cada opción de los role-plays, paridad de idiomas, pinyin y sandhi, segmentación, FSRS, motor de ejercicios, importación, diccionario, escritura a mano, sincronización Anki simulada |
+| `npm run test:e2e` | Tests Playwright: completar lección, añadir palabra, repasar, vídeo con subtítulos, diccionario, popup, captura rápida → bandeja, cuaderno de ejercicios con corrección, apuntes del profesor, tutor sin IA. Con `PW_BASE=http://localhost:3100` usa un servidor ya arrancado (`npx next start -p 3100`) |
 | `npm run lint` / `npm run typecheck` | ESLint y TypeScript estricto |
 
 Para actualizar los datos (nueva versión de CC-CEDICT, etc.) borra `.cache/data/` y vuelve a ejecutar `npm run data:build`.
@@ -203,7 +207,39 @@ Todo el contenido generado está marcado con `reviewed: false` en los JSON:
 - `public/videos/*.json`: transcripciones tomadas de los subtítulos de YouTube (pueden tener erratas).
 - Pinyin: la semilla usa sandhi escrito (bú kèqi, yí ge); la app marca el sandhi automáticamente en el resto.
 
+Contenido nuevo de chino, también con `reviewed: false`:
+
+- `content/zh/notes/*.json`: 144 apuntes del profesor.
+- `content/zh/exercises/*.json`: 45 bancos de ejercicios (3 486 ítems).
+- `content/zh/roleplays/*.json`: 42 role-plays.
+- `content/zh/articles-origen.json`, `pictograms.json`, `components-keywords.json`: serie sobre el origen, 100 pictogramas y 267 palabras clave. Las historias dicen cuándo una etimología es dudosa.
+
+Dudas concretas para el profesor:
+
+- 因为…所以: ¿se presenta ya en HSK 1 o se deja para HSK 2?
+- 几岁 frente a 多大: a partir de qué edad se usa cada uno.
+- «不在家» en registro coloquial frente a «没在家».
+- 斤, 支 y 节 se usan en los bancos pero no tienen pista de clasificador.
+- Convención para agrupar el pinyin por palabras (wǒmen frente a wǒ men).
+- En la unidad 0, la opción de escucha «知 zhī».
+- El ítem g-price-age-004 acepta «(nada)» como respuesta.
+- En «encontrar el error», algunos tokens incluyen la coma «，».
+
 Datos a confirmar externamente: formato y fechas del HSK 1 (2.0 → 3.0) en <https://www.chinesetest.cn>.
+
+---
+
+## 7 bis. Activar el tutor IA (opcional y gratis)
+
+El tutor está en **Ajustes → Tutor IA**. Pulsa «Probar conexión» después de elegir el proveedor.
+
+1. **Ollama (local, gratis, sin clave)**: instala Ollama y ejecuta `ollama pull qwen3.5:9b` (necesita unos 12–16 GB de memoria de gráfica; en equipos modestos, `qwen3.5:4b`). Para que la web publicada pueda llamarlo, arráncalo con la variable `OLLAMA_ORIGINS=*`. La app detecta los modelos instalados.
+2. **Gemini (gratis con clave)**: crea una clave en Google AI Studio y pégala en Ajustes.
+3. **Groq u OpenRouter (gratis con clave)**: igual que Gemini; en OpenRouter elige un modelo marcado «free».
+4. **Claude u OpenAI (de pago)**: pega tu clave si ya tienes una.
+5. **Servidor propio compatible con OpenAI**: LM Studio, llama.cpp o vLLM, con su URL.
+
+Sin tutor, la sección sigue ofreciendo los role-plays escritos a mano y el corrector por reglas.
 
 ---
 
@@ -213,6 +249,11 @@ Datos a confirmar externamente: formato y fechas del HSK 1 (2.0 → 3.0) en <htt
 - **Vídeos sin subtítulos**: no se transcriben. Alternativa gratuita: instalar Python + `faster-whisper` y generar un `.vtt` manualmente; la app puede leer subtítulos si los subes como vídeo propio (pendiente de integrar en la interfaz).
 - **Traducción automática de subtítulos**: opcional con tu propia clave (OpenAI/Anthropic) u Ollama local; por defecto se usan los subtítulos en español del vídeo (si existen), Tatoeba y el diccionario.
 - **Reconocimiento de voz**: Web Speech API (Chrome/Edge). En Firefox se puede grabar, comparar la curva de tono y autoevaluar.
+- **Formas antiguas de los caracteres**: solo 30 caracteres tienen SVG en Wikimedia Commons con el nombre estándar y licencia libre (todas de dominio público). El resto muestra el pictograma propio y la descomposición. Alternativa gratuita: añadir más nombres de archivo de Commons en `scripts/fetch-glyph-evolution.ts`. No se copia nada de Outlier, YellowBridge ni chineseetymology.org.
+- **Corrección**: las reglas cubren HSK 1–2. Sin solución del profesor y sin tutor, el veredicto es «parcial» y no se inventa una respuesta.
+- **Speaking**: la comparación de tono usa el micrófono y un análisis de la curva en el navegador. Orienta, pero no sustituye a un profesor. Whisper local descarga entre 40 y 80 MB la primera vez.
+- **Tutor IA**: en GitHub Pages no hay servidor, así que la app llama al proveedor directamente desde el navegador. Ollama necesita `OLLAMA_ORIGINS`. Las claves se guardan solo en este navegador.
+- **Japonés y coreano**: apuntes y cuaderno funcionan. Bancos, compendios, corrección por reglas, role-plays y origen de los caracteres quedan «pendiente» en `docs/PARITY.md`.
 - **Etimologías** (Make Me a Hanzi) y definiciones CC-CEDICT están en inglés cuando no hay español.
 
 - **Japonés**: no existen listas oficiales de vocabulario del JLPT desde 2010; se usan listas comunitarias (elzup, basadas en Jonathan Waller), y la app lo indica. Los niveles de kanji siguen el sistema antiguo de 4 niveles de KANJIDIC2. 65 palabras de la semilla no tienen acento tonal en Kanjium.

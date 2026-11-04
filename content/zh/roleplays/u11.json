@@ -1,0 +1,280 @@
+{
+  "unitId": "u11",
+  "scenarios": [
+    {
+      "id": "u11-doctor",
+      "title": "En el médico",
+      "zh": "看病",
+      "level": 1,
+      "setting": "Hugo lleva dos días encontrándose mal y va al hospital del campus de Jiaotong. Tú (la app) eres el médico.",
+      "role": "médico",
+      "roleZh": "医生",
+      "voice": "m",
+      "goals": ["Decir qué te pasa", "Contar desde cuándo o qué hiciste ayer", "Preguntar si tienes que tomar medicinas", "Preguntar qué no puedes hacer o cuándo volver a clase"],
+      "vocab": ["头", "疼", "发烧", "感冒", "医生", "药", "吃药", "休息", "次"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "请坐。你哪儿不舒服？", "py": "Qǐng zuò. Nǐ nǎr bù shūfu?", "es": "Siéntate. ¿Qué te duele?" },
+          "user": [
+            { "zh": "医生，我头疼，有点儿发烧。", "py": "Yīshēng, wǒ tóu téng, yǒudiǎnr fāshāo.", "es": "Doctor, me duele la cabeza y tengo algo de fiebre.", "keywords": ["头疼", "发烧"], "next": "n2", "goal": 0 },
+            { "zh": "我很累，不想吃饭，也睡不好。", "py": "Wǒ hěn lèi, bù xiǎng chī fàn, yě shuì bu hǎo.", "es": "Estoy muy cansado, no tengo ganas de comer y duermo mal.", "keywords": ["累", "不想吃"], "next": "n3", "goal": 0 }
+          ],
+          "hint": "哪儿不舒服 = «¿qué te pasa / qué te duele?». Describe síntomas: 头疼, 发烧, 很累, 睡不好."
+        },
+        "n2": {
+          "npc": { "zh": "我看看。三十八度，发烧了。你昨天也发烧吗？", "py": "Wǒ kànkan. Sānshíbā dù, fāshāo le. Nǐ zuótiān yě fāshāo ma?", "es": "Déjame ver. Treinta y ocho grados, tienes fiebre. ¿Ayer también la tenías?" },
+          "user": [
+            { "zh": "对，昨天晚上发烧了。我昨天没吃饭。", "py": "Duì, zuótiān wǎnshang fāshāo le. Wǒ zuótiān méi chī fàn.", "es": "Sí, anoche me subió la fiebre. Ayer no comí.", "keywords": ["昨天", "没吃饭"], "next": "n4", "goal": 1 },
+            { "zh": "不是，今天早上起床的时候头疼。", "py": "Bú shì, jīntiān zǎoshang qǐchuáng de shíhou tóu téng.", "es": "No, ha sido esta mañana al levantarme cuando me dolía la cabeza.", "keywords": ["今天", "起床"], "next": "n4", "goal": 1 }
+          ],
+          "hint": "Cuenta desde cuándo: 昨天晚上……了 o 今天早上……的时候. Recuerda 没 para lo que no hiciste (没吃饭)."
+        },
+        "n3": {
+          "npc": { "zh": "你昨天晚上几点睡觉？", "py": "Nǐ zuótiān wǎnshang jǐ diǎn shuìjiào?", "es": "¿A qué hora te acostaste anoche?" },
+          "user": [
+            { "zh": "两点。我每天都很忙。", "py": "Liǎng diǎn. Wǒ měi tiān dōu hěn máng.", "es": "A las dos. Estoy muy ocupado todos los días.", "keywords": ["两点", "忙"], "next": "n5", "goal": 1 },
+            { "zh": "十一点，但是没睡好。", "py": "Shíyī diǎn, dànshì méi shuì hǎo.", "es": "A las once, pero no dormí bien.", "keywords": ["十一点", "没睡好"], "next": "n5", "goal": 1 }
+          ],
+          "hint": "Di la hora (两点 / 十一点) y añade algo: 很忙, 没睡好."
+        },
+        "n4": {
+          "npc": { "zh": "你感冒了，不是大病。要多喝水，多休息。", "py": "Nǐ gǎnmào le, bú shì dà bìng. Yào duō hē shuǐ, duō xiūxi.", "es": "Estás resfriado, no es nada grave. Tienes que beber mucha agua y descansar mucho." },
+          "user": [
+            { "zh": "我要吃药吗？", "py": "Wǒ yào chī yào ma?", "es": "¿Tengo que tomar medicinas?", "keywords": ["吃药", "药"], "next": "n6", "goal": 2 },
+            { "zh": "我明天能上课吗？", "py": "Wǒ míngtiān néng shàngkè ma?", "es": "¿Puedo ir a clase mañana?", "keywords": ["上课"], "next": "n7", "goal": 3 }
+          ],
+          "hint": "要……吗 = ¿tengo que…? Pregunta por las medicinas (要吃药吗) o si puedes ir a clase (能上课吗)."
+        },
+        "n5": {
+          "npc": { "zh": "你太累了，没有生病。要早一点儿睡觉，一天睡七个小时。", "py": "Nǐ tài lèi le, méiyǒu shēngbìng. Yào zǎo yìdiǎnr shuìjiào, yì tiān shuì qī ge xiǎoshí.", "es": "Estás demasiado cansado, no estás enfermo. Tienes que acostarte antes y dormir siete horas al día." },
+          "user": [
+            { "zh": "我要吃药吗？", "py": "Wǒ yào chī yào ma?", "es": "¿Tengo que tomar medicinas?", "keywords": ["吃药", "药"], "next": "n6b", "goal": 2 },
+            { "zh": "我能喝咖啡吗？", "py": "Wǒ néng hē kāfēi ma?", "es": "¿Puedo tomar café?", "keywords": ["咖啡"], "next": "n7b", "goal": 3 }
+          ],
+          "hint": "Pregunta por medicinas (要吃药吗) o si puedes hacer algo (能喝咖啡吗)."
+        },
+        "n6": {
+          "npc": { "zh": "要。这个药一天吃两次，早上和晚上，饭后吃。", "py": "Yào. Zhège yào yì tiān chī liǎng cì, zǎoshang hé wǎnshang, fàn hòu chī.", "es": "Sí. Esta medicina se toma dos veces al día, mañana y noche, después de comer." },
+          "user": [
+            { "zh": "一天两次，我知道了。我能喝咖啡吗？", "py": "Yì tiān liǎng cì, wǒ zhīdào le. Wǒ néng hē kāfēi ma?", "es": "Dos veces al día, entendido. ¿Puedo tomar café?", "keywords": ["咖啡"], "next": "n7", "goal": 3 },
+            { "zh": "好的。我明天能上课吗？", "py": "Hǎo de. Wǒ míngtiān néng shàngkè ma?", "es": "Vale. ¿Puedo ir a clase mañana?", "keywords": ["上课"], "next": "n7", "goal": 3 }
+          ],
+          "hint": "Repite la pauta para confirmar (一天两次) y pregunta qué puedes hacer: 能……吗."
+        },
+        "n6b": {
+          "npc": { "zh": "不要吃药，休息就好了。", "py": "Bú yào chī yào, xiūxi jiù hǎo le.", "es": "No tomes medicinas; con descansar bastará." },
+          "user": [
+            { "zh": "好。那我明天能上课吗？", "py": "Hǎo. Nà wǒ míngtiān néng shàngkè ma?", "es": "Vale. ¿Entonces puedo ir a clase mañana?", "keywords": ["上课"], "next": "n7", "goal": 3 },
+            { "zh": "好的，谢谢医生，再见。", "py": "Hǎo de, xièxie yīshēng, zàijiàn.", "es": "Vale, gracias, doctor, adiós.", "keywords": ["谢谢", "再见"], "next": "n8" }
+          ],
+          "hint": "Pregunta si puedes ir a clase o da las gracias y despídete."
+        },
+        "n7": {
+          "npc": { "zh": "这两天不能喝咖啡，也不能喝啤酒。今天和明天在家休息，星期三好了再来上课。", "py": "Zhè liǎng tiān bù néng hē kāfēi, yě bù néng hē píjiǔ. Jīntiān hé míngtiān zài jiā xiūxi, xīngqīsān hǎo le zài lái shàngkè.", "es": "Estos dos días nada de café ni de cerveza. Hoy y mañana descansa en casa; el miércoles, si estás bien, vuelve a clase." },
+          "user": [
+            { "zh": "好的，谢谢医生。", "py": "Hǎo de, xièxie yīshēng.", "es": "De acuerdo, gracias, doctor.", "keywords": ["谢谢"], "next": "n8" },
+            { "zh": "我知道了。再见。", "py": "Wǒ zhīdào le. Zàijiàn.", "es": "Entendido. Adiós.", "keywords": ["知道", "再见"], "next": "n8" }
+          ],
+          "hint": "好了再来 = «cuando estés bien, vuelve». Acepta y despídete."
+        },
+        "n7b": {
+          "npc": { "zh": "不能喝咖啡。晚上不要看手机，十一点睡觉。", "py": "Bù néng hē kāfēi. Wǎnshang bú yào kàn shǒujī, shíyī diǎn shuìjiào.", "es": "Nada de café. Por la noche no mires el móvil y acuéstate a las once." },
+          "user": [
+            { "zh": "好的，谢谢医生。", "py": "Hǎo de, xièxie yīshēng.", "es": "De acuerdo, gracias, doctor.", "keywords": ["谢谢"], "next": "n8" },
+            { "zh": "我知道了。再见。", "py": "Wǒ zhīdào le. Zàijiàn.", "es": "Entendido. Adiós.", "keywords": ["知道", "再见"], "next": "n8" }
+          ],
+          "hint": "不要 + verbo = no hagas… Acepta el consejo y despídete."
+        },
+        "n8": {
+          "npc": { "zh": "好，再见。多喝水！", "py": "Hǎo, zàijiàn. Duō hē shuǐ!", "es": "Bien, adiós. ¡Bebe mucha agua!" },
+          "end": true,
+          "feedback": "Consulta completa: síntomas, desde cuándo, medicinas y lo que no puedes hacer. Fíjate en 一天……次 (veces al día), 饭后 (después de comer) y 不能 (no puedes)."
+        }
+      }
+    },
+    {
+      "id": "u11-pharmacy",
+      "title": "En la farmacia",
+      "zh": "在药店",
+      "level": 1,
+      "setting": "Hugo entra en la farmacia (药店) que hay junto al metro de Xujiahui con un resfriado. Tú (la app) eres la farmacéutica.",
+      "role": "farmacéutica",
+      "roleZh": "药店的人",
+      "voice": "f",
+      "goals": ["Decir qué te pasa y pedir una medicina", "Preguntar cuántas veces al día se toma", "Preguntar el precio", "Pagar y despedirte"],
+      "vocab": ["药", "吃药", "感冒", "发烧", "次", "水", "要", "多少钱"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "你好，你要买什么？", "py": "Nǐ hǎo, nǐ yào mǎi shénme?", "es": "Hola, ¿qué desea?" },
+          "user": [
+            { "zh": "我感冒了，头疼。有感冒药吗？", "py": "Wǒ gǎnmào le, tóu téng. Yǒu gǎnmào yào ma?", "es": "Estoy resfriado y me duele la cabeza. ¿Tiene algo para el resfriado?", "keywords": ["感冒", "头疼"], "next": "n2", "goal": 0 },
+            { "zh": "我有点儿发烧，想买药。", "py": "Wǒ yǒudiǎnr fāshāo, xiǎng mǎi yào.", "es": "Tengo un poco de fiebre y quiero comprar una medicina.", "keywords": ["发烧"], "next": "n2b", "goal": 0 },
+            { "zh": "医生说我要吃这个药。", "py": "Yīshēng shuō wǒ yào chī zhège yào.", "es": "El médico dice que tengo que tomar esta medicina.", "keywords": ["医生", "这个药"], "next": "n3", "goal": 0 }
+          ],
+          "hint": "Explica qué te pasa (我感冒了 / 有点儿发烧) y pide la medicina (有……药吗), o enseña la receta del médico."
+        },
+        "n2": {
+          "npc": { "zh": "有。这个药很好，很多人买。", "py": "Yǒu. Zhège yào hěn hǎo, hěn duō rén mǎi.", "es": "Sí. Esta medicina es muy buena, la compra mucha gente." },
+          "user": [
+            { "zh": "一天吃几次？", "py": "Yì tiān chī jǐ cì?", "es": "¿Cuántas veces al día se toma?", "keywords": ["几次"], "next": "n3", "goal": 1 },
+            { "zh": "多少钱？", "py": "Duōshao qián?", "es": "¿Cuánto cuesta?", "keywords": ["多少钱"], "next": "n4", "goal": 2 }
+          ],
+          "hint": "Pregunta la pauta (一天吃几次) o el precio (多少钱)."
+        },
+        "n2b": {
+          "npc": { "zh": "发烧吗？你去医院看病了吗？", "py": "Fāshāo ma? Nǐ qù yīyuàn kànbìng le ma?", "es": "¿Fiebre? ¿Has ido al médico?" },
+          "user": [
+            { "zh": "没去，我有一点儿发烧。", "py": "Méi qù, wǒ yǒu yìdiǎnr fāshāo.", "es": "No he ido, solo tengo un poco de fiebre.", "keywords": ["没去", "没有"], "next": "n2c" },
+            { "zh": "去了，医生说是感冒。", "py": "Qù le, yīshēng shuō shì gǎnmào.", "es": "Sí, el médico dice que es un resfriado.", "keywords": ["去了", "医生"], "next": "n2", "goal": 0 }
+          ],
+          "hint": "Responde con 去了 (sí fui) o 没去 (no fui)."
+        },
+        "n2c": {
+          "npc": { "zh": "那你先吃这个药。发烧太高要去医院。", "py": "Nà nǐ xiān chī zhège yào. Fāshāo tài gāo yào qù yīyuàn.", "es": "Pues toma primero esta medicina. Si la fiebre sube mucho, hay que ir al hospital." },
+          "user": [
+            { "zh": "好的。一天吃几次？", "py": "Hǎo de. Yì tiān chī jǐ cì?", "es": "Vale. ¿Cuántas veces al día?", "keywords": ["几次"], "next": "n3", "goal": 1 },
+            { "zh": "好。多少钱？", "py": "Hǎo. Duōshao qián?", "es": "Vale. ¿Cuánto cuesta?", "keywords": ["多少钱"], "next": "n4", "goal": 2 }
+          ],
+          "hint": "先 = primero. Pregunta la pauta (几次) o el precio."
+        },
+        "n3": {
+          "npc": { "zh": "一天三次，一次两个，饭后吃。要多喝水。", "py": "Yì tiān sān cì, yí cì liǎng ge, fàn hòu chī. Yào duō hē shuǐ.", "es": "Tres veces al día, dos cada vez, después de comer. Y bebe mucha agua." },
+          "user": [
+            { "zh": "好的。多少钱？", "py": "Hǎo de. Duōshao qián?", "es": "Vale. ¿Cuánto cuesta?", "keywords": ["多少钱"], "next": "n4", "goal": 2 },
+            { "zh": "我知道了。我还要一瓶水。", "py": "Wǒ zhīdào le. Wǒ hái yào yì píng shuǐ.", "es": "Entendido. También quiero una botella de agua.", "keywords": ["一瓶水", "水"], "next": "n4b" }
+          ],
+          "hint": "Pregunta el precio o añade algo más con 还要 (一瓶水)."
+        },
+        "n4": {
+          "npc": { "zh": "二十五块。", "py": "Èrshíwǔ kuài.", "es": "Veinticinco yuanes." },
+          "user": [
+            { "zh": "好，我用微信。", "py": "Hǎo, wǒ yòng Wēixìn.", "es": "Vale, pago con WeChat.", "keywords": ["微信", "支付宝"], "next": "n5", "goal": 3 },
+            { "zh": "有便宜一点儿的吗？", "py": "Yǒu piányi yìdiǎnr de ma?", "es": "¿Hay alguna más barata?", "keywords": ["便宜"], "next": "n4c" }
+          ],
+          "hint": "Paga (我用微信/支付宝) o pide algo más barato (便宜一点儿的)."
+        },
+        "n4b": {
+          "npc": { "zh": "好，水三块。药和水一共二十八块。", "py": "Hǎo, shuǐ sān kuài. Yào hé shuǐ yígòng èrshíbā kuài.", "es": "Vale, el agua son tres yuanes. Medicina y agua, veintiocho en total." },
+          "user": [
+            { "zh": "好，我用支付宝。", "py": "Hǎo, wǒ yòng Zhīfùbǎo.", "es": "Vale, pago con Alipay.", "keywords": ["支付宝", "微信"], "next": "n5", "goal": 3 },
+            { "zh": "给你现金。", "py": "Gěi nǐ xiànjīn.", "es": "Tenga, en efectivo.", "keywords": ["现金"], "next": "n5", "goal": 3 }
+          ],
+          "hint": "一共 = en total. Paga con 支付宝/微信 o 现金."
+        },
+        "n4c": {
+          "npc": { "zh": "有，这个十五块，但是没有那个好。", "py": "Yǒu, zhège shíwǔ kuài, dànshì méiyǒu nàge hǎo.", "es": "Sí, esta cuesta quince, pero no es tan buena como la otra." },
+          "user": [
+            { "zh": "那我要便宜的，支付宝。", "py": "Nà wǒ yào piányi de, Zhīfùbǎo.", "es": "Pues la barata, con Alipay.", "keywords": ["便宜的", "支付宝"], "next": "n5", "goal": 3 },
+            { "zh": "我要那个好的，微信付。", "py": "Wǒ yào nàge hǎo de, Wēixìn fù.", "es": "Quiero la buena, pago con WeChat.", "keywords": ["那个", "微信"], "next": "n5", "goal": 3 }
+          ],
+          "hint": "Elige una (便宜的 / 那个好的) y di cómo pagas."
+        },
+        "n5": {
+          "npc": { "zh": "好了，给你药。一天三次，多休息！", "py": "Hǎo le, gěi nǐ yào. Yì tiān sān cì, duō xiūxi!", "es": "Listo, aquí tiene la medicina. Tres veces al día, ¡y descanse!" },
+          "user": [
+            { "zh": "谢谢，再见。", "py": "Xièxie, zàijiàn.", "es": "Gracias, adiós.", "keywords": ["谢谢", "再见"], "next": "n6" },
+            { "zh": "好的，我知道了。", "py": "Hǎo de, wǒ zhīdào le.", "es": "Vale, entendido.", "keywords": ["知道"], "next": "n6" }
+          ],
+          "hint": "Despídete (谢谢，再见) o confirma (我知道了)."
+        },
+        "n6": {
+          "npc": { "zh": "再见，身体好！", "py": "Zàijiàn, shēntǐ hǎo!", "es": "Adiós, ¡que te mejores!" },
+          "end": true,
+          "feedback": "Has comprado la medicina adecuada, sabes cuántas veces tomarla y has pagado. 一天三次，一次两个: la estructura «cantidad por vez» aparece en todas las cajas de medicinas."
+        }
+      }
+    },
+    {
+      "id": "u11-ask-help",
+      "title": "Pedir ayuda: no me encuentro bien",
+      "zh": "我不舒服，请你帮我",
+      "level": 1,
+      "setting": "En la biblioteca, Hugo empieza a encontrarse mal de repente. Ana está a su lado. Tú (la app) eres 安娜.",
+      "role": "Ana",
+      "roleZh": "安娜",
+      "voice": "f",
+      "goals": ["Decir que no te encuentras bien", "Pedir ayuda (acompañarte o traerte algo)", "Pedir que avise a la profesora", "Dar las gracias"],
+      "vocab": ["身体", "舒服", "有点儿", "累", "怎么了", "头", "疼", "打电话", "医院"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "雨果，你怎么了？", "py": "Yǔguǒ, nǐ zěnme le?", "es": "Hugo, ¿qué te pasa?" },
+          "user": [
+            { "zh": "我有点儿不舒服，头很疼。", "py": "Wǒ yǒudiǎnr bù shūfu, tóu hěn téng.", "es": "No me encuentro bien, me duele mucho la cabeza.", "keywords": ["不舒服", "头疼", "头很疼"], "next": "n2", "goal": 0 },
+            { "zh": "我发烧了，很累。", "py": "Wǒ fāshāo le, hěn lèi.", "es": "Tengo fiebre y estoy muy cansado.", "keywords": ["发烧", "累"], "next": "n2", "goal": 0 },
+            { "zh": "没事，我很好。", "py": "Méi shì, wǒ hěn hǎo.", "es": "Nada, estoy bien.", "keywords": ["没事", "很好"], "next": "n1b" }
+          ],
+          "hint": "怎么了 = ¿qué te pasa? Di cómo estás: 有点儿不舒服, 头疼, 发烧了, 很累."
+        },
+        "n1b": {
+          "npc": { "zh": "真的吗？你喝点儿水吧。", "py": "Zhēn de ma? Nǐ hē diǎnr shuǐ ba.", "es": "¿De verdad? Bebe un poco de agua." },
+          "user": [
+            { "zh": "不……我有点儿不舒服。", "py": "Bù… wǒ yǒudiǎnr bù shūfu.", "es": "No… la verdad es que no me encuentro bien.", "keywords": ["不舒服"], "next": "n2", "goal": 0 },
+            { "zh": "好，谢谢。", "py": "Hǎo, xièxie.", "es": "Vale, gracias.", "keywords": ["谢谢"], "next": "n9" }
+          ],
+          "hint": "Ana no se lo cree. Si estás mal, dilo: 我有点儿不舒服."
+        },
+        "n2": {
+          "npc": { "zh": "你要去医院吗？学校的医院很近。", "py": "Nǐ yào qù yīyuàn ma? Xuéxiào de yīyuàn hěn jìn.", "es": "¿Quieres ir al hospital? El del campus está muy cerca." },
+          "user": [
+            { "zh": "要。你能和我一起去吗？", "py": "Yào. Nǐ néng hé wǒ yìqǐ qù ma?", "es": "Sí. ¿Puedes venir conmigo?", "keywords": ["一起去", "和我"], "next": "n3", "goal": 1 },
+            { "zh": "我不想去医院，想回家休息。你能给我买一瓶水吗？", "py": "Wǒ bù xiǎng qù yīyuàn, xiǎng huí jiā xiūxi. Nǐ néng gěi wǒ mǎi yì píng shuǐ ma?", "es": "No quiero ir al hospital, quiero irme a casa a descansar. ¿Puedes comprarme una botella de agua?", "keywords": ["买", "水"], "next": "n4", "goal": 1 }
+          ],
+          "hint": "Pide ayuda con 你能……吗: 和我一起去 (acompañarme) o 给我买…… (comprarme algo)."
+        },
+        "n3": {
+          "npc": { "zh": "好，我和你一起去。我们坐出租车吧？", "py": "Hǎo, wǒ hé nǐ yìqǐ qù. Wǒmen zuò chūzūchē ba?", "es": "Claro, voy contigo. ¿Cogemos un taxi?" },
+          "user": [
+            { "zh": "很近，走路去吧。", "py": "Hěn jìn, zǒulù qù ba.", "es": "Está cerca, vamos andando.", "keywords": ["走路"], "next": "n5" },
+            { "zh": "好，坐出租车，我太累了。", "py": "Hǎo, zuò chūzūchē, wǒ tài lèi le.", "es": "Sí, en taxi, estoy demasiado cansado.", "keywords": ["出租车", "太累"], "next": "n5" }
+          ],
+          "hint": "Decide cómo ir: 走路去 o 坐出租车."
+        },
+        "n4": {
+          "npc": { "zh": "好，我去买水。你在这儿坐一下。", "py": "Hǎo, wǒ qù mǎi shuǐ. Nǐ zài zhèr zuò yíxià.", "es": "Vale, voy a por agua. Siéntate aquí un momento." },
+          "user": [
+            { "zh": "谢谢。你能给李老师打电话吗？今天下午的课我不能去。", "py": "Xièxie. Nǐ néng gěi Lǐ lǎoshī dǎ diànhuà ma? Jīntiān xiàwǔ de kè wǒ bù néng qù.", "es": "Gracias. ¿Puedes llamar a la profesora Li? No puedo ir a la clase de esta tarde.", "keywords": ["打电话", "李老师"], "next": "n6", "goal": 2 },
+            { "zh": "谢谢你。我休息一下就好了。", "py": "Xièxie nǐ. Wǒ xiūxi yíxià jiù hǎo le.", "es": "Gracias. Con descansar un poco se me pasará.", "keywords": ["休息"], "next": "n8", "goal": 3 }
+          ],
+          "hint": "Pide que avise a la profesora: 你能给李老师打电话吗 (给 + persona + 打电话)."
+        },
+        "n5": {
+          "npc": { "zh": "好。下午你有李老师的课吧？", "py": "Hǎo. Xiàwǔ nǐ yǒu Lǐ lǎoshī de kè ba?", "es": "Vale. Esta tarde tienes clase con la profesora Li, ¿no?" },
+          "user": [
+            { "zh": "对。你能给李老师打电话吗？", "py": "Duì. Nǐ néng gěi Lǐ lǎoshī dǎ diànhuà ma?", "es": "Sí. ¿Puedes llamar a la profesora Li?", "keywords": ["打电话", "老师"], "next": "n6", "goal": 2 },
+            { "zh": "对。我给老师发微信吧。", "py": "Duì. Wǒ gěi lǎoshī fā Wēixìn ba.", "es": "Sí. Le mando un WeChat a la profesora.", "keywords": ["发微信", "微信"], "next": "n6b", "goal": 2 }
+          ],
+          "hint": "Que alguien avise a la profesora: 给李老师打电话 o 给老师发微信."
+        },
+        "n6": {
+          "npc": { "zh": "可以，我现在给老师打电话。", "py": "Kěyǐ, wǒ xiànzài gěi lǎoshī dǎ diànhuà.", "es": "Claro, ahora mismo llamo a la profesora." },
+          "user": [
+            { "zh": "谢谢你，安娜。你太好了！", "py": "Xièxie nǐ, Ānnà. Nǐ tài hǎo le!", "es": "Gracias, Ana. ¡Eres estupenda!", "keywords": ["谢谢", "太好了"], "next": "n8", "goal": 3 },
+            { "zh": "安娜，你是我的好朋友。", "py": "Ānnà, nǐ shì wǒ de hǎo péngyou.", "es": "Ana, eres una buena amiga.", "keywords": ["好朋友"], "next": "n8", "goal": 3 }
+          ],
+          "hint": "Da las gracias: 谢谢你, 你太好了."
+        },
+        "n6b": {
+          "npc": { "zh": "好，你发吧。我们现在走。", "py": "Hǎo, nǐ fā ba. Wǒmen xiànzài zǒu.", "es": "Vale, mándaselo. Vamos ya." },
+          "user": [
+            { "zh": "谢谢你，安娜。", "py": "Xièxie nǐ, Ānnà.", "es": "Gracias, Ana.", "keywords": ["谢谢"], "next": "n8", "goal": 3 },
+            { "zh": "好，我们走吧。", "py": "Hǎo, wǒmen zǒu ba.", "es": "Vale, vamos.", "keywords": ["走吧"], "next": "n8" }
+          ],
+          "hint": "Agradece la ayuda (谢谢你) o pon en marcha el plan (我们走吧)."
+        },
+        "n8": {
+          "npc": { "zh": "不客气，我们是朋友！你要多休息。", "py": "Bú kèqi, wǒmen shì péngyou! Nǐ yào duō xiūxi.", "es": "De nada, ¡somos amigos! Tienes que descansar." },
+          "end": true,
+          "feedback": "Has sabido decir que estabas mal y pedir ayuda con 你能……吗. La fórmula 给 + persona + 打电话 / 发微信 te sirve para cualquier aviso."
+        },
+        "n9": {
+          "npc": { "zh": "好吧。有事给我打电话。", "py": "Hǎo ba. Yǒu shì gěi wǒ dǎ diànhuà.", "es": "Está bien. Si pasa algo, llámame." },
+          "end": true,
+          "feedback": "Dijiste que estabas bien y Ana se ha ido. Si no te encuentras bien, dilo y pide ayuda: 我有点儿不舒服，你能……吗？"
+        }
+      }
+    }
+  ]
+}

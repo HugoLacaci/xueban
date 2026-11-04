@@ -1,0 +1,703 @@
+[
+  {
+    "id": "zh-question-ma",
+    "type": "question",
+    "title": "Preguntas de sí/no con 吗",
+    "level": 1,
+    "tags": ["preguntas", "partículas", "u01"],
+    "grammarIds": ["ma", "shi", "you"],
+    "unitId": "u01",
+    "fields": {
+      "structure": "Oración afirmativa + 吗？ (el orden no cambia: 你是学生 → 你是学生吗？)",
+      "when": "Para preguntar algo de sí/no cuando no sabes la respuesta ni la supones. Es la pregunta más neutra y la más frecuente en HSK 1. La entonación NO sube como en español: 吗 ya hace todo el trabajo.",
+      "answer": "En chino no existe un «sí» ni un «no» universales: se RESPONDE REPITIENDO EL VERBO (o el adjetivo) de la pregunta. 是…吗？→ 是。/ 不是。 · 有…吗？→ 有。/ 没有。 · 去…吗？→ 去。/ 不去。 · 忙吗？→ 忙。/ 不忙。 · 喜欢…吗？→ 喜欢。/ 不喜欢。 · 会…吗？→ 会。/ 不会。 Luego puedes añadir la frase completa: 是，我是学生。 Para «sí» informal también vale 对 o 是的, pero lo seguro es el verbo.",
+      "qa": [
+        { "q": "你是学生吗？", "qpy": "Nǐ shì xuésheng ma?", "qes": "¿Eres estudiante?", "a": "是，我是交通大学的学生。", "apy": "Shì, wǒ shì Jiāotōng Dàxué de xuésheng.", "aes": "Sí, soy estudiante de la Universidad Jiaotong." },
+        { "q": "你有哥哥吗？", "qpy": "Nǐ yǒu gēge ma?", "qes": "¿Tienes hermano mayor?", "a": "没有，我有一个妹妹。", "apy": "Méiyǒu, wǒ yǒu yí ge mèimei.", "aes": "No, tengo una hermana menor." },
+        { "q": "你今天忙吗？", "qpy": "Nǐ jīntiān máng ma?", "qes": "¿Estás ocupado hoy?", "a": "不忙，我今天没有课。", "apy": "Bù máng, wǒ jīntiān méiyǒu kè.", "aes": "No, hoy no tengo clase." },
+        { "q": "李老师在学校吗？", "qpy": "Lǐ lǎoshī zài xuéxiào ma?", "qes": "¿Está el profesor Li en la escuela?", "a": "在，他在上课。", "apy": "Zài, tā zài shàng kè.", "aes": "Sí, está dando clase." },
+        { "q": "你喜欢中国菜吗？", "qpy": "Nǐ xǐhuan Zhōngguó cài ma?", "qes": "¿Te gusta la comida china?", "a": "喜欢，我很喜欢。", "apy": "Xǐhuan, wǒ hěn xǐhuan.", "aes": "Sí, me gusta mucho." },
+        { "q": "你会说汉语吗？", "qpy": "Nǐ huì shuō Hànyǔ ma?", "qes": "¿Sabes hablar chino?", "a": "会一点儿。", "apy": "Huì yìdiǎnr.", "aes": "Un poco." }
+      ],
+      "contrasts": [
+        "吗 vs A不A → [[zh-question-a-not-a]]: misma pregunta, pero A不A es más directa y no admite 很/也/都 delante del verbo.",
+        "吗 vs 吧 → [[zh-question-ba]]: con 吗 no sabes nada; con 吧 ya supones la respuesta.",
+        "吗 vs 呢 → [[zh-question-ne]]: 呢 solo devuelve una pregunta ya hecha («¿y tú?»); nunca pregunta desde cero.",
+        "吗 vs palabras interrogativas → [[zh-question-shenme]]: si ya hay 什么/谁/哪儿… NO se añade 吗."
+      ]
+    },
+    "markdown": "## Cómo lo recuerdo\n\n吗 es un «interruptor»: cojo la afirmación tal cual y le enchufo 吗 al final. No muevo nada, no subo la voz.\n\n```xb-formula\n{\"name\":\"Pregunta con 吗\",\"parts\":[{\"text\":\"Sujeto\",\"role\":\"subject\"},{\"text\":\"V\",\"role\":\"verb\"},{\"text\":\"O\",\"role\":\"object\"},{\"text\":\"吗\",\"role\":\"particle\"},{\"text\":\"？\",\"role\":\"other\"}]}\n```\n\n## Cómo se responde (lo importante)\n\nEl chino responde con el **verbo de la pregunta**, no con «sí/no». Mira el verbo, repítelo (sí) o niégalo con 不/没 (no).\n\n```xb-example\n{\"zh\":\"你是西班牙人吗？—是。\",\"py\":\"Nǐ shì Xībānyárén ma? — Shì.\",\"es\":\"¿Eres español? —Sí (lit. «soy»).\"}\n```\n\n```xb-example\n{\"zh\":\"你有时间吗？—没有。\",\"py\":\"Nǐ yǒu shíjiān ma? — Méiyǒu.\",\"es\":\"¿Tienes tiempo? —No (lit. «no tengo»).\",\"note\":\"有 se niega siempre con 没, nunca con 不.\"}\n```\n\n> ❌ **Error típico**: responder 是 a todo. 你忙吗？—~~是~~ → **忙** / **不忙**. 是 solo responde a preguntas con 是.\n\n> ⚠️ **Ojo**: 吗 nunca se combina con una palabra interrogativa: ~~你叫什么名字吗？~~ → 你叫什么名字？\n\n> 💡 **Truco**: 你好吗？ no es un saludo, es una pregunta de verdad («¿estás bien?»); se responde 我很好。\n\n```xb-exercise\n{\"kind\":\"choice\",\"data\":{\"prompt\":\"你有弟弟吗？ ¿Cuál es la respuesta correcta para «no»?\",\"options\":\"不是 · 没有 · 不有 · 不\",\"answer\":\"1\",\"explain\":\"La pregunta lleva 有, así que se responde con 有 / 没有. 不有 no existe.\"}}\n```",
+    "cues": [
+      { "id": "c1", "q": "¿Dónde va 吗 y qué pasa con el orden de la frase?", "a": "Al final; el orden es idéntico al de la afirmación." },
+      { "id": "c2", "q": "¿Cómo se responde «sí» a 你是学生吗？ y a 你有哥哥吗？", "a": "是。 y 有。: se repite el verbo de la pregunta." },
+      { "id": "c3", "q": "¿Cómo se responde «no» a 你忙吗？", "a": "不忙。 (nunca 不是)." },
+      { "id": "c4", "q": "¿Puedo decir 你叫什么吗？", "a": "No: con palabra interrogativa no se añade 吗." }
+    ],
+    "summary": "Afirmación + 吗 = pregunta de sí/no; se responde repitiendo el verbo (是/不是, 有/没有, 忙/不忙).",
+    "reviewed": false
+  },
+  {
+    "id": "zh-question-ne",
+    "type": "question",
+    "title": "呢: «¿y tú?» y «¿dónde está X?»",
+    "level": 1,
+    "tags": ["preguntas", "partículas", "u01"],
+    "grammarIds": ["ne", "zai"],
+    "unitId": "u01",
+    "fields": {
+      "structure": "Nombre / pronombre + 呢？ (sin verbo). Uso 1: …，你呢？ · Uso 2: 我的手机呢？",
+      "when": "Uso 1 (devolver la pregunta): alguien te ha preguntado algo o tú acabas de decir algo de ti, y quieres preguntar lo mismo sin repetir la frase: 我很好，你呢？. Uso 2 (¿dónde está?): echas en falta algo o a alguien que debería estar ahí: 安娜呢？ = ¿y Ana? / ¿dónde está Ana?",
+      "answer": "Uso 1: se responde a la pregunta ORIGINAL que se devuelve, con la misma estructura: 我很好，你呢？→ 我也很好。 · 我是西班牙人，你呢？→ 我是中国人。 Uso 2: se responde con 在 + lugar (o 不知道 / 不在): 我的书呢？→ 在桌子上。 · 王明呢？→ 他在家。/ 他不在。",
+      "qa": [
+        { "q": "我很好，你呢？", "qpy": "Wǒ hěn hǎo, nǐ ne?", "qes": "Yo estoy bien, ¿y tú?", "a": "我也很好。", "apy": "Wǒ yě hěn hǎo.", "aes": "Yo también estoy bien." },
+        { "q": "我是西班牙人，你呢？", "qpy": "Wǒ shì Xībānyárén, nǐ ne?", "qes": "Soy español, ¿y tú?", "a": "我是中国人。", "apy": "Wǒ shì Zhōngguórén.", "aes": "Soy chino." },
+        { "q": "我喜欢喝茶，安娜呢？", "qpy": "Wǒ xǐhuan hē chá, Ānnà ne?", "qes": "A mí me gusta el té, ¿y a Ana?", "a": "她喜欢喝咖啡。", "apy": "Tā xǐhuan hē kāfēi.", "aes": "A ella le gusta el café." },
+        { "q": "我的手机呢？", "qpy": "Wǒ de shǒujī ne?", "qes": "¿Y mi móvil? (¿Dónde está mi móvil?)", "a": "在桌子上。", "apy": "Zài zhuōzi shang.", "aes": "Está en la mesa." },
+        { "q": "王明呢？", "qpy": "Wáng Míng ne?", "qes": "¿Y Wang Ming? (¿Dónde está?)", "a": "他不在，他去学校了。", "apy": "Tā bú zài, tā qù xuéxiào le.", "aes": "No está, se ha ido a la escuela." }
+      ],
+      "contrasts": [
+        "呢 vs 吗 → [[zh-question-ma]]: 吗 pregunta desde cero con frase completa; 呢 va tras un nombre solo y devuelve una pregunta ya hecha.",
+        "X呢？ vs X在哪儿？ → [[zh-question-nar]]: significan casi lo mismo, pero X呢 implica «debería estar aquí y no lo veo».",
+        "呢 al final de 在…呢 (他在吃饭呢) no es pregunta: marca acción en curso → [[zh-particle-ne]]."
+      ]
+    },
+    "markdown": "## Cómo lo recuerdo\n\n呢 es un «eco»: no hace una pregunta nueva, rebota la que ya está en el aire. Por eso va detrás de un nombre pelado: 你呢？ 安娜呢？ 我的书呢？\n\n```xb-formula\n{\"name\":\"Devolver la pregunta\",\"parts\":[{\"text\":\"Frase sobre mí\",\"role\":\"other\"},{\"text\":\"，\",\"role\":\"other\"},{\"text\":\"Nombre\",\"role\":\"subject\"},{\"text\":\"呢\",\"role\":\"particle\"},{\"text\":\"？\",\"role\":\"other\"}]}\n```\n\n```xb-example\n{\"zh\":\"我叫雨果，你呢？—我叫安娜。\",\"py\":\"Wǒ jiào Yǔguǒ, nǐ ne? — Wǒ jiào Ānnà.\",\"es\":\"Me llamo Hugo, ¿y tú? —Me llamo Ana.\"}\n```\n\n```xb-example\n{\"zh\":\"妈妈呢？—她在做饭。\",\"py\":\"Māma ne? — Tā zài zuò fàn.\",\"es\":\"¿Y mamá? —Está cocinando.\",\"note\":\"Pregunta dónde está porque no la ve.\"}\n```\n\n> ❌ **Error típico**: usar 呢 para saludar: ~~你好呢？~~ → 你好吗？ 呢 solo devuelve algo ya dicho.\n\n> 💡 **Truco**: para responder a 你呢？ copia la estructura de la frase anterior y añade 也 si coincides: 我**也**是学生。\n\n```xb-exercise\n{\"kind\":\"fill\",\"data\":{\"zh\":\"我是学生，你＿？\",\"answer\":\"呢\",\"options\":\"呢 · 吗 · 吧 · 的\",\"es\":\"Soy estudiante, ¿y tú?\",\"explain\":\"Tras un pronombre solo, para devolver la pregunta, se usa 呢.\"}}\n```",
+    "cues": [
+      { "id": "c1", "q": "¿Cuáles son los dos usos de 呢 en una pregunta?", "a": "Devolver la pregunta (你呢？) y preguntar dónde está algo que falta (我的书呢？)." },
+      { "id": "c2", "q": "¿Cómo se responde a 我很好，你呢？", "a": "Con la estructura original: 我也很好。" },
+      { "id": "c3", "q": "¿Cómo se responde a 安娜呢？", "a": "Con 在 + lugar: 她在家。 (o 不知道 / 她不在)." },
+      { "id": "c4", "q": "¿Es correcto 你好呢？", "a": "No; para preguntar cómo está alguien: 你好吗？" }
+    ],
+    "summary": "Nombre + 呢 devuelve una pregunta («¿y tú?») o pregunta dónde está algo; se responde con la frase original o con 在 + lugar.",
+    "reviewed": false
+  },
+  {
+    "id": "zh-question-a-not-a",
+    "type": "question",
+    "title": "Pregunta afirmativa-negativa A不A (是不是, 去不去, 有没有, 好不好)",
+    "level": 1,
+    "tags": ["preguntas", "gramática", "u01"],
+    "grammarIds": ["ma", "bu-mei", "you", "hen-adj"],
+    "unitId": "u01",
+    "fields": {
+      "structure": "Sujeto + V不V + (Objeto)？ · Sujeto + 有没有 + Objeto？ · Sujeto + Adj不Adj？ Verbos de dos sílabas: 喜不喜欢 (se repite solo la primera sílaba). Modales: 会不会, 能不能, 可以不可以.",
+      "when": "Pregunta de sí/no equivalente a …吗？, pero algo más directa, como si ofrecieras las dos opciones: «¿vas o no vas?». Muy habitual en el habla. NO lleva 吗 y no admite adverbios delante del verbo (ni 很, ni 也, ni 都).",
+      "answer": "Se elige una de las dos mitades: la afirmativa o la negativa. 是不是？→ 是。/ 不是。 · 去不去？→ 去。/ 不去。 · 有没有？→ 有。/ 没有。 · 好不好？→ 好。/ 不好。 · 喜不喜欢？→ 喜欢。/ 不喜欢。 · 会不会？→ 会。/ 不会。 Es la forma de pregunta que mejor enseña la regla general: la respuesta ya está dentro de la pregunta.",
+      "qa": [
+        { "q": "你是不是中国人？", "qpy": "Nǐ shì bu shì Zhōngguórén?", "qes": "¿Eres chino (o no)?", "a": "不是，我是西班牙人。", "apy": "Bú shì, wǒ shì Xībānyárén.", "aes": "No, soy español." },
+        { "q": "你明天去不去北京？", "qpy": "Nǐ míngtiān qù bu qù Běijīng?", "qes": "¿Vas mañana a Pekín?", "a": "去，我坐火车去。", "apy": "Qù, wǒ zuò huǒchē qù.", "aes": "Sí, voy en tren." },
+        { "q": "你有没有手机？", "qpy": "Nǐ yǒu méiyǒu shǒujī?", "qes": "¿Tienes móvil?", "a": "有，这是我的手机。", "apy": "Yǒu, zhè shì wǒ de shǒujī.", "aes": "Sí, este es mi móvil." },
+        { "q": "这个菜好不好吃？", "qpy": "Zhège cài hǎo bu hǎochī?", "qes": "¿Está bueno este plato?", "a": "很好吃！", "apy": "Hěn hǎochī!", "aes": "¡Está muy bueno!" },
+        { "q": "你喜不喜欢上海？", "qpy": "Nǐ xǐ bu xǐhuan Shànghǎi?", "qes": "¿Te gusta Shanghái?", "a": "喜欢，上海很大。", "apy": "Xǐhuan, Shànghǎi hěn dà.", "aes": "Sí, Shanghái es muy grande." },
+        { "q": "你会不会说汉语？", "qpy": "Nǐ huì bu huì shuō Hànyǔ?", "qes": "¿Sabes hablar chino?", "a": "会一点儿。", "apy": "Huì yìdiǎnr.", "aes": "Un poco." }
+      ],
+      "contrasts": [
+        "A不A vs 吗 → [[zh-question-ma]]: mismo significado; con 吗 puedes usar 很/也/都 (你也去吗？), con A不A no (~~你也去不去？~~).",
+        "有没有 vs 不有: 有 se niega con 没, así que la forma es 有没有, nunca ~~有不有~~.",
+        "A不A vs 还是 → [[zh-question-haishi]]: A不A ofrece «sí o no»; 还是 ofrece dos cosas distintas (茶还是咖啡).",
+        "是不是 al final de la frase (你是学生，是不是？) pide confirmación → [[zh-question-duibudui]]."
+      ]
+    },
+    "markdown": "## Cómo lo recuerdo\n\nEs como preguntar en español «¿vas o no vas?», pero sin «o»: 去不去. El que pregunta pone las dos opciones encima de la mesa y tú coges una.\n\n```xb-formula\n{\"name\":\"A不A\",\"parts\":[{\"text\":\"Sujeto\",\"role\":\"subject\"},{\"text\":\"V\",\"role\":\"verb\"},{\"text\":\"不\",\"role\":\"adverb\"},{\"text\":\"V\",\"role\":\"verb\"},{\"text\":\"O\",\"role\":\"object\"},{\"text\":\"？\",\"role\":\"other\"}]}\n```\n\n```xb-example\n{\"zh\":\"你忙不忙？—不忙。\",\"py\":\"Nǐ máng bu máng? — Bù máng.\",\"es\":\"¿Estás ocupado? —No.\",\"note\":\"Con adjetivos también funciona: Adj不Adj. Fíjate en que no se pone 很.\"}\n```\n\n```xb-example\n{\"zh\":\"你喝不喝咖啡？—喝。\",\"py\":\"Nǐ hē bu hē kāfēi? — Hē.\",\"es\":\"¿Tomas café? —Sí.\"}\n```\n\n> ⚠️ **Ojo**: en A不A el 不 se pronuncia en tono neutro (shì bu shì, qù bu qù); solo la primera copia del verbo lleva su tono completo.\n\n> ❌ **Error típico**: añadir 吗: ~~你是不是学生吗？~~ → 你是不是学生？ o 你是学生吗？ Una sola marca de pregunta por frase.\n\n> ❌ **Error típico**: ~~你很忙不忙？~~ → 你忙不忙？ Nada de 很 delante de A不A.\n\n> 👩‍🏫 **Lo dijo el profe**: con verbos de dos sílabas la forma corta 喜不喜欢 es la natural; 喜欢不喜欢 también se oye, pero suena más pesada.\n\n```xb-exercise\n{\"kind\":\"fill\",\"data\":{\"zh\":\"你＿没有姐姐？\",\"answer\":\"有\",\"options\":\"有 · 不 · 是 · 在\",\"es\":\"¿Tienes hermana mayor?\",\"explain\":\"La forma A不A de 有 es 有没有 (有 se niega con 没).\"}}\n```",
+    "cues": [
+      { "id": "c1", "q": "¿Cómo se forma la pregunta A不A con 有?", "a": "有没有 (nunca 有不有)." },
+      { "id": "c2", "q": "¿Cómo se responde a 你去不去？", "a": "去。 o 不去。: se elige una de las dos mitades." },
+      { "id": "c3", "q": "¿Puedo poner 吗 al final de 你是不是学生？", "a": "No: A不A ya es pregunta." },
+      { "id": "c4", "q": "¿Cómo se hace A不A con 喜欢?", "a": "喜不喜欢 (se repite solo la primera sílaba)." },
+      { "id": "c5", "q": "¿Qué adverbios no pueden ir delante de A不A?", "a": "很, 也, 都: con ellos usa 吗." }
+    ],
+    "summary": "V不V / 有没有 / Adj不Adj es una pregunta de sí/no sin 吗; se responde eligiendo una de las dos mitades (是/不是, 有/没有).",
+    "reviewed": false
+  },
+  {
+    "id": "zh-question-haishi",
+    "type": "question",
+    "title": "Elegir entre dos opciones con 还是",
+    "level": 1,
+    "tags": ["preguntas", "gramática", "u05"],
+    "grammarIds": ["question-words", "shi"],
+    "unitId": "u05",
+    "fields": {
+      "structure": "Sujeto + V + A + 还是 + (V) + B？ · Con 是: 你是A还是B？ (no se repite el 是 delante de 还是). Nunca lleva 吗.",
+      "when": "Cuando ofreces dos (o más) alternativas y quieres que el otro elija una: ¿té o café? ¿hoy o mañana? ¿tú o él? Es una pregunta cerrada, pero no de sí/no.",
+      "answer": "Se responde ELIGIENDO una opción y repitiendo el verbo: 你喝茶还是喝咖啡？→ 我喝茶。 · 你是中国人还是日本人？→ 我是中国人。 Nunca se contesta 是/不是 ni 对. Si valen las dos: 都可以 / 都行 (las dos valen). Si ninguna: 都不… (我都不喝).",
+      "qa": [
+        { "q": "你喝茶还是喝咖啡？", "qpy": "Nǐ hē chá háishi hē kāfēi?", "qes": "¿Tomas té o café?", "a": "我喝茶。", "apy": "Wǒ hē chá.", "aes": "Tomo té." },
+        { "q": "你是中国人还是日本人？", "qpy": "Nǐ shì Zhōngguórén háishi Rìběnrén?", "qes": "¿Eres chino o japonés?", "a": "我是中国人。", "apy": "Wǒ shì Zhōngguórén.", "aes": "Soy chino." },
+        { "q": "我们今天去还是明天去？", "qpy": "Wǒmen jīntiān qù háishi míngtiān qù?", "qes": "¿Vamos hoy o mañana?", "a": "明天去吧，今天我很忙。", "apy": "Míngtiān qù ba, jīntiān wǒ hěn máng.", "aes": "Vamos mañana, hoy estoy muy ocupado." },
+        { "q": "这是你的书还是安娜的书？", "qpy": "Zhè shì nǐ de shū háishi Ānnà de shū?", "qes": "¿Este libro es tuyo o de Ana?", "a": "是安娜的。", "apy": "Shì Ānnà de.", "aes": "Es de Ana." },
+        { "q": "你想吃米饭还是面条？", "qpy": "Nǐ xiǎng chī mǐfàn háishi miàntiáo?", "qes": "¿Quieres arroz o fideos?", "a": "都可以。", "apy": "Dōu kěyǐ.", "aes": "Cualquiera de los dos." }
+      ],
+      "contrasts": [
+        "还是 vs 吗 → [[zh-question-ma]]: 吗 pregunta sí/no; 还是 pide elegir. ~~你喝茶还是咖啡吗？~~ es doble pregunta: quita el 吗.",
+        "还是 vs A不A → [[zh-question-a-not-a]]: 去不去 = «¿vas o no?»; 今天去还是明天去 = «¿hoy o mañana?».",
+        "还是 (pregunta) vs 或者 huòzhě (afirmación, HSK 2): «o» en una frase que no pregunta se dice 或者: 我喝茶或者咖啡都行。"
+      ]
+    },
+    "markdown": "## Cómo lo recuerdo\n\n还是 es el «o» de las preguntas. Dibujo una balanza: A 还是 B, y el otro tiene que poner peso en un lado.\n\n```xb-formula\n{\"name\":\"Elección con 还是\",\"parts\":[{\"text\":\"Sujeto\",\"role\":\"subject\"},{\"text\":\"V\",\"role\":\"verb\"},{\"text\":\"A\",\"role\":\"object\"},{\"text\":\"还是\",\"role\":\"question\"},{\"text\":\"(V)\",\"role\":\"verb\"},{\"text\":\"B\",\"role\":\"object\"},{\"text\":\"？\",\"role\":\"other\"}]}\n```\n\n```xb-example\n{\"zh\":\"你坐地铁还是坐公共汽车？—我坐地铁。\",\"py\":\"Nǐ zuò dìtiě háishi zuò gōnggòng qìchē? — Wǒ zuò dìtiě.\",\"es\":\"¿Vas en metro o en autobús? —En metro.\",\"note\":\"Se puede repetir el verbo en las dos partes o solo en la primera.\"}\n```\n\n```xb-example\n{\"zh\":\"他是老师还是学生？—他是老师。\",\"py\":\"Tā shì lǎoshī háishi xuésheng? — Tā shì lǎoshī.\",\"es\":\"¿Es profesor o estudiante? —Es profesor.\",\"note\":\"Con 是 no se repite: no se dice 还是是.\"}\n```\n\n> ❌ **Error típico**: responder 是 a una pregunta con 还是. 你喝茶还是咖啡？—~~是~~ → **我喝茶**.\n\n> ⚠️ **Ojo**: 还是 solo para preguntar. Para decir «té o café, me da igual» se usa 或者 (HSK 2) o directamente 都可以.\n\n```xb-exercise\n{\"kind\":\"choice\",\"data\":{\"prompt\":\"你是西班牙人还是中国人？ ¿Qué respuesta es correcta?\",\"options\":\"是。 · 不是。 · 我是西班牙人。 · 对。\",\"answer\":\"2\",\"explain\":\"Con 还是 hay que elegir una opción y repetir el verbo; 是/不是/对 no sirven.\"}}\n```",
+    "cues": [
+      { "id": "c1", "q": "¿Qué significa 还是 y en qué tipo de frase se usa?", "a": "«O» entre dos opciones, solo en preguntas." },
+      { "id": "c2", "q": "¿Cómo se responde a 你喝茶还是喝咖啡？", "a": "Eligiendo y repitiendo el verbo: 我喝茶。 (nunca 是/不是)." },
+      { "id": "c3", "q": "¿Lleva 吗 una pregunta con 还是?", "a": "No, nunca." },
+      { "id": "c4", "q": "¿Cómo digo «me valen las dos»?", "a": "都可以。/ 都行。" }
+    ],
+    "summary": "A 还是 B？ ofrece dos opciones; se responde eligiendo una y repitiendo el verbo, nunca con 是/不是.",
+    "reviewed": false
+  },
+  {
+    "id": "zh-question-shenme",
+    "type": "question",
+    "title": "什么: qué / qué + nombre",
+    "level": 1,
+    "tags": ["preguntas", "interrogativos", "u01"],
+    "grammarIds": ["question-words"],
+    "unitId": "u01",
+    "fields": {
+      "structure": "什么 ocupa el lugar exacto de la respuesta, sin mover nada: 这是什么？ · 你叫什么名字？ · 你喜欢什么？ · 什么 + nombre = «qué…»: 什么名字, 什么菜, 什么时候, 什么东西.",
+      "when": "Para preguntar por cosas, actividades, nombres, idiomas, comida… todo lo que no sea una persona (谁), un lugar (哪儿) o una elección entre un grupo (哪 + clasificador). Sin 吗 al final.",
+      "answer": "Se sustituye 什么 por la respuesta manteniendo la misma frase: 你叫什么名字？→ 我叫雨果。 · 这是什么？→ 这是茶。 · 你想吃什么？→ 我想吃米饭。 · 你学什么？→ 我学汉语。 Si no sabes: 我不知道。",
+      "qa": [
+        { "q": "你叫什么名字？", "qpy": "Nǐ jiào shénme míngzi?", "qes": "¿Cómo te llamas?", "a": "我叫雨果。", "apy": "Wǒ jiào Yǔguǒ.", "aes": "Me llamo Hugo." },
+        { "q": "这是什么？", "qpy": "Zhè shì shénme?", "qes": "¿Qué es esto?", "a": "这是中国茶。", "apy": "Zhè shì Zhōngguó chá.", "aes": "Es té chino." },
+        { "q": "你想吃什么？", "qpy": "Nǐ xiǎng chī shénme?", "qes": "¿Qué quieres comer?", "a": "我想吃饺子。", "apy": "Wǒ xiǎng chī jiǎozi.", "aes": "Quiero comer jiaozi." },
+        { "q": "你在做什么？", "qpy": "Nǐ zài zuò shénme?", "qes": "¿Qué estás haciendo?", "a": "我在看书。", "apy": "Wǒ zài kàn shū.", "aes": "Estoy leyendo." },
+        { "q": "你喜欢什么菜？", "qpy": "Nǐ xǐhuan shénme cài?", "qes": "¿Qué comida te gusta?", "a": "我喜欢中国菜。", "apy": "Wǒ xǐhuan Zhōngguó cài.", "aes": "Me gusta la comida china." },
+        { "q": "你学什么？", "qpy": "Nǐ xué shénme?", "qes": "¿Qué estudias?", "a": "我在交通大学学汉语。", "apy": "Wǒ zài Jiāotōng Dàxué xué Hànyǔ.", "aes": "Estudio chino en la Universidad Jiaotong." }
+      ],
+      "contrasts": [
+        "什么 vs 哪 + clasificador → [[zh-question-na]]: 什么 pregunta en abierto («¿qué?»); 哪个 pide elegir entre cosas conocidas («¿cuál?»).",
+        "什么 vs 谁 → [[zh-question-shei]]: 什么 para cosas, 谁 para personas.",
+        "什么时候 → [[zh-question-shenme-shihou]] (cuándo) y 为什么 → [[zh-question-weishenme]] (por qué) son palabras fijas, no «什么 + algo» libre.",
+        "什么 vs 怎么 → [[zh-question-zenme]]: 什么 = qué (cosa); 怎么 = cómo (manera). 怎么说 ≠ 说什么."
+      ]
+    },
+    "markdown": "## Cómo lo recuerdo\n\nRegla de oro de todas las interrogativas chinas: **no muevas nada**. Cojo la respuesta (我叫雨果) y pongo 什么 donde está el dato (你叫什么？). Es un juego de «rellena el hueco» al revés.\n\n```xb-formula\n{\"name\":\"什么 en el hueco de la respuesta\",\"parts\":[{\"text\":\"Sujeto\",\"role\":\"subject\"},{\"text\":\"V\",\"role\":\"verb\"},{\"text\":\"什么\",\"role\":\"question\"},{\"text\":\"(Nombre)\",\"role\":\"object\"},{\"text\":\"？\",\"role\":\"other\"}]}\n```\n\n```xb-example\n{\"zh\":\"你喝什么？—我喝水。\",\"py\":\"Nǐ hē shénme? — Wǒ hē shuǐ.\",\"es\":\"¿Qué bebes? —Bebo agua.\",\"note\":\"Pregunta y respuesta tienen la misma forma; solo cambia 什么 por 水.\"}\n```\n\n```xb-example\n{\"zh\":\"你是什么人？（poco natural）→ 你是哪国人？\",\"py\":\"Nǐ shì nǎ guó rén?\",\"es\":\"¿De qué país eres?\",\"note\":\"Para la nacionalidad se usa 哪国人, no 什么人.\"}\n```\n\n> ❌ **Error típico**: poner 什么 al principio como en español: ~~什么你叫？~~ → 你叫什么？\n\n> ❌ **Error típico**: añadir 吗: ~~你吃什么吗？~~ → 你吃什么？\n\n> 💡 **Truco**: 什么 + nombre forma muchas preguntas útiles: 什么名字 (qué nombre), 什么时候 (cuándo), 什么地方 (qué lugar), 什么东西 (qué cosa).\n\n```xb-exercise\n{\"kind\":\"order\",\"data\":{\"zh\":\"你爸爸做什么工作？\",\"es\":\"¿En qué trabaja tu padre?\"}}\n```",
+    "cues": [
+      { "id": "c1", "q": "¿Dónde se coloca 什么 en la pregunta?", "a": "En el lugar exacto donde irá la respuesta; nada se mueve." },
+      { "id": "c2", "q": "¿Cómo se responde a 你叫什么名字？", "a": "我叫 + nombre: misma frase sustituyendo 什么名字." },
+      { "id": "c3", "q": "¿Se añade 吗 a una pregunta con 什么?", "a": "No, nunca." },
+      { "id": "c4", "q": "¿Qué se usa para «¿de qué país eres?»?", "a": "你是哪国人？ (哪, no 什么)." }
+    ],
+    "summary": "什么 = «qué»; va donde iría la respuesta y se contesta con la misma frase sustituyendo 什么 por el dato.",
+    "reviewed": false
+  },
+  {
+    "id": "zh-question-shei",
+    "type": "question",
+    "title": "谁: quién / 谁的: de quién",
+    "level": 1,
+    "tags": ["preguntas", "interrogativos", "u03"],
+    "grammarIds": ["question-words", "de"],
+    "unitId": "u03",
+    "fields": {
+      "structure": "谁 en el lugar de la persona: 他是谁？ (objeto) · 谁是李老师？ (sujeto) · 你和谁去？ (tras preposición) · 谁的 + nombre = «¿de quién?»: 这是谁的书？",
+      "when": "Para preguntar por una persona: identidad, quién hace algo, con quién, de quién es algo. Se pronuncia shéi en el habla normal (también shuí, más formal/lectura).",
+      "answer": "Se sustituye 谁 por la persona: 他是谁？→ 他是我的老师。 · 谁是王明？→ 他是。/ 我是。 · 你和谁去？→ 我和安娜去。 · 这是谁的？→ 是我的。/ 是李老师的。 Si no lo sabes: 我不认识他。/ 不知道。",
+      "qa": [
+        { "q": "他是谁？", "qpy": "Tā shì shéi?", "qes": "¿Quién es él?", "a": "他是我的老师，李老师。", "apy": "Tā shì wǒ de lǎoshī, Lǐ lǎoshī.", "aes": "Es mi profesor, el profesor Li." },
+        { "q": "谁是王明？", "qpy": "Shéi shì Wáng Míng?", "qes": "¿Quién es Wang Ming?", "a": "我是。", "apy": "Wǒ shì.", "aes": "Soy yo." },
+        { "q": "这是谁的手机？", "qpy": "Zhè shì shéi de shǒujī?", "qes": "¿De quién es este móvil?", "a": "是安娜的。", "apy": "Shì Ānnà de.", "aes": "Es de Ana." },
+        { "q": "你和谁去北京？", "qpy": "Nǐ hé shéi qù Běijīng?", "qes": "¿Con quién vas a Pekín?", "a": "我和我朋友去。", "apy": "Wǒ hé wǒ péngyou qù.", "aes": "Voy con mi amigo." },
+        { "q": "谁会说西班牙语？", "qpy": "Shéi huì shuō Xībānyáyǔ?", "qes": "¿Quién sabe hablar español?", "a": "雨果会。", "apy": "Yǔguǒ huì.", "aes": "Hugo sabe." }
+      ],
+      "contrasts": [
+        "谁 vs 什么 → [[zh-question-shenme]]: 谁 = personas; 什么 = cosas. ~~他是什么？~~ para una persona suena a «¿qué cosa es?».",
+        "谁的 vs 哪个 → [[zh-question-na]]: 谁的书 = «¿el libro de quién?»; 哪本书 = «¿cuál de los libros?».",
+        "谁 como sujeto va al principio (谁是…), como objeto al final (…是谁): la posición la decide la respuesta, no la pregunta."
+      ]
+    },
+    "markdown": "## Cómo lo recuerdo\n\n谁 es la ficha «persona». La coloco donde iría el nombre de esa persona en la respuesta: si la respuesta es 他是李老师, la pregunta es 他是**谁**？\n\n```xb-formula\n{\"name\":\"谁 como objeto\",\"parts\":[{\"text\":\"Sujeto\",\"role\":\"subject\"},{\"text\":\"是\",\"role\":\"verb\"},{\"text\":\"谁\",\"role\":\"question\"},{\"text\":\"？\",\"role\":\"other\"}]}\n```\n\n```xb-formula\n{\"name\":\"谁的 + nombre\",\"parts\":[{\"text\":\"这/那\",\"role\":\"subject\"},{\"text\":\"是\",\"role\":\"verb\"},{\"text\":\"谁的\",\"role\":\"question\"},{\"text\":\"Nombre\",\"role\":\"object\"},{\"text\":\"？\",\"role\":\"other\"}]}\n```\n\n```xb-example\n{\"zh\":\"那个人是谁？—那是王明的爸爸。\",\"py\":\"Nàge rén shì shéi? — Nà shì Wáng Míng de bàba.\",\"es\":\"¿Quién es esa persona? —Es el padre de Wang Ming.\"}\n```\n\n```xb-example\n{\"zh\":\"谁的书在桌子上？—我的。\",\"py\":\"Shéi de shū zài zhuōzi shang? — Wǒ de.\",\"es\":\"¿De quién es el libro que está en la mesa? —Mío.\",\"note\":\"谁的 puede ir al principio si es el sujeto.\"}\n```\n\n> ⚠️ **Ojo**: 谁 nunca lleva 吗 detrás: ~~他是谁吗？~~ → 他是谁？\n\n> 💡 **Truco**: para responder a 谁是…？ basta con el sujeto + verbo: 我是。 (Soy yo). No hace falta repetir el nombre.\n\n```xb-exercise\n{\"kind\":\"fill\",\"data\":{\"zh\":\"这是＿的杯子？\",\"answer\":\"谁\",\"options\":\"谁 · 什么 · 哪 · 几\",\"es\":\"¿De quién es esta taza?\",\"explain\":\"«De quién» = 谁的 + nombre.\"}}\n```",
+    "cues": [
+      { "id": "c1", "q": "¿Cómo se pronuncia 谁 en el habla cotidiana?", "a": "shéi (shuí es más formal)." },
+      { "id": "c2", "q": "¿Cómo se pregunta «¿de quién es este libro?»?", "a": "这是谁的书？" },
+      { "id": "c3", "q": "¿Cómo se responde a 谁是雨果？ si eres tú?", "a": "我是。" },
+      { "id": "c4", "q": "¿谁 va al principio o al final?", "a": "Donde iría la persona en la respuesta: sujeto al principio, objeto al final." }
+    ],
+    "summary": "谁 (shéi) = quién, 谁的 = de quién; va donde iría la persona en la respuesta y se contesta con el nombre o 我是 / 是我的.",
+    "reviewed": false
+  },
+  {
+    "id": "zh-question-na",
+    "type": "question",
+    "title": "哪 + clasificador: cuál / 哪国人: de qué país",
+    "level": 1,
+    "tags": ["preguntas", "interrogativos", "clasificadores", "u01"],
+    "grammarIds": ["question-words", "demonstratives", "measure-words"],
+    "unitId": "u01",
+    "fields": {
+      "structure": "哪 + clasificador (+ nombre)？: 哪个 (cuál), 哪本书 (qué libro), 哪位 (qué persona, cortés), 哪国人 (de qué país; 国 hace de clasificador). 哪 nunca va solo delante de un nombre: ~~哪书~~.",
+      "when": "Para elegir entre elementos de un grupo conocido: «¿cuál de estos?», «¿qué libro (de los que hay)?». Para nacionalidad siempre 哪国人. Pronunciación coloquial: něi ge.",
+      "answer": "Se responde con 这/那 + el mismo clasificador (+ nombre) o con el elemento concreto: 你要哪个？→ 我要这个。/ 那个。 · 你是哪国人？→ 我是西班牙人。 · 哪本书是你的？→ 这本是我的。 · 哪位是李老师？→ 那位是。",
+      "qa": [
+        { "q": "你是哪国人？", "qpy": "Nǐ shì nǎ guó rén?", "qes": "¿De qué país eres?", "a": "我是西班牙人。", "apy": "Wǒ shì Xībānyárén.", "aes": "Soy español." },
+        { "q": "你要哪个？", "qpy": "Nǐ yào nǎge?", "qes": "¿Cuál quieres?", "a": "我要这个。", "apy": "Wǒ yào zhège.", "aes": "Quiero este." },
+        { "q": "哪本书是你的？", "qpy": "Nǎ běn shū shì nǐ de?", "qes": "¿Cuál de los libros es el tuyo?", "a": "那本是我的。", "apy": "Nà běn shì wǒ de.", "aes": "Ese es el mío." },
+        { "q": "哪位是李老师？", "qpy": "Nǎ wèi shì Lǐ lǎoshī?", "qes": "¿Quién (cuál de ellos) es el profesor Li?", "a": "那位是。", "apy": "Nà wèi shì.", "aes": "Es aquel." },
+        { "q": "你喜欢哪个菜？", "qpy": "Nǐ xǐhuan nǎge cài?", "qes": "¿Qué plato te gusta?", "a": "我喜欢这个，很好吃。", "apy": "Wǒ xǐhuan zhège, hěn hǎochī.", "aes": "Me gusta este, está muy bueno." }
+      ],
+      "contrasts": [
+        "哪个 vs 什么 → [[zh-question-shenme]]: 哪个 elige entre opciones a la vista; 什么 pregunta en abierto.",
+        "哪 (cuál) vs 哪儿 (dónde) → [[zh-question-nar]]: el 儿 lo cambia todo; 哪 sin clasificador no es «dónde».",
+        "哪 / 这 / 那: los tres llevan clasificador delante del nombre (哪个·这个·那个) → [[zh-classifiers-table]]."
+      ]
+    },
+    "markdown": "## Cómo lo recuerdo\n\n哪 es el tercero de la familia 这 / 那 / 哪 (este / ese / ¿cuál?). Los tres funcionan igual: siempre con clasificador. Si sé decir 这个 y 那个, sé decir 哪个.\n\n```xb-formula\n{\"name\":\"哪 + clasificador + nombre\",\"parts\":[{\"text\":\"哪\",\"role\":\"question\"},{\"text\":\"clasif.\",\"role\":\"measure\"},{\"text\":\"Nombre\",\"role\":\"object\"}]}\n```\n\n```xb-example\n{\"zh\":\"你坐哪辆车？—我坐那辆。\",\"py\":\"Nǐ zuò nǎ liàng chē? — Wǒ zuò nà liàng.\",\"es\":\"¿En qué coche vas? —En aquel.\",\"note\":\"La respuesta copia el clasificador: 哪辆 → 那辆.\"}\n```\n\n```xb-example\n{\"zh\":\"安娜是哪国人？—她是中国人。\",\"py\":\"Ānnà shì nǎ guó rén? — Tā shì Zhōngguórén.\",\"es\":\"¿De qué país es Ana? —Es china.\"}\n```\n\n> ❌ **Error típico**: ~~你是什么国人？~~ → 你是**哪**国人？ La nacionalidad se pregunta con 哪.\n\n> ❌ **Error típico**: ~~哪书是你的？~~ → 哪**本**书是你的？ Siempre clasificador.\n\n> 🏮 **¿Sabías que…?**: 哪 se pronuncia nǎ, pero delante de clasificador casi todo el mundo dice něi ge, igual que 这个 zhèi ge y 那个 nèi ge.\n\n```xb-exercise\n{\"kind\":\"fill\",\"data\":{\"zh\":\"你是＿国人？\",\"answer\":\"哪\",\"options\":\"哪 · 什么 · 哪儿 · 谁\",\"es\":\"¿De qué país eres?\",\"explain\":\"Nacionalidad: 哪国人, nunca 什么国人.\"}}\n```",
+    "cues": [
+      { "id": "c1", "q": "¿Qué necesita 哪 siempre detrás?", "a": "Un clasificador: 哪个, 哪本, 哪位, 哪国." },
+      { "id": "c2", "q": "¿Cómo se pregunta la nacionalidad?", "a": "你是哪国人？" },
+      { "id": "c3", "q": "¿Cómo se responde a 你要哪个？", "a": "我要这个。/ 那个。 (这/那 + mismo clasificador)." },
+      { "id": "c4", "q": "¿Qué diferencia hay entre 哪 y 哪儿?", "a": "哪 + clasificador = cuál; 哪儿 = dónde." }
+    ],
+    "summary": "哪 + clasificador = «cuál» (哪个, 哪本, 哪国人); se responde con 这/那 + el mismo clasificador o con el elemento elegido.",
+    "reviewed": false
+  },
+  {
+    "id": "zh-question-nar",
+    "type": "question",
+    "title": "哪儿 / 哪里: dónde, adónde, de dónde",
+    "level": 1,
+    "tags": ["preguntas", "interrogativos", "lugar", "u07"],
+    "grammarIds": ["question-words", "demonstratives", "zai", "lai-qu"],
+    "unitId": "u07",
+    "fields": {
+      "structure": "在哪儿 (¿dónde está?): X在哪儿？ · 去哪儿 (¿adónde?): 你去哪儿？ · 在哪儿 + V (¿dónde haces…?): 你在哪儿工作？ · 哪儿人 (¿de dónde?): 你是哪儿人？ En el sur y en Taiwán: 哪里 nǎlǐ (mismo uso).",
+      "when": "Para preguntar por un lugar: dónde está algo, adónde va alguien, dónde se hace algo, de dónde es alguien. Sigue la regla de «ocupa el sitio de la respuesta»: 哪儿 va justo donde iría el lugar.",
+      "answer": "Se sustituye 哪儿 por el lugar, con la misma estructura: 你在哪儿？→ 我在家。 · 洗手间在哪儿？→ 在那儿。/ 在二楼。 · 你去哪儿？→ 我去学校。 · 你在哪儿工作？→ 我在上海工作。 · 你是哪儿人？→ 我是马德里人。 Si no sabes: 不知道。 Señalando: 在这儿。/ 在那儿。",
+      "qa": [
+        { "q": "洗手间在哪儿？", "qpy": "Xǐshǒujiān zài nǎr?", "qes": "¿Dónde está el baño?", "a": "在那儿。", "apy": "Zài nàr.", "aes": "Allí." },
+        { "q": "你去哪儿？", "qpy": "Nǐ qù nǎr?", "qes": "¿Adónde vas?", "a": "我去交通大学。", "apy": "Wǒ qù Jiāotōng Dàxué.", "aes": "Voy a la Universidad Jiaotong." },
+        { "q": "你在哪儿工作？", "qpy": "Nǐ zài nǎr gōngzuò?", "qes": "¿Dónde trabajas?", "a": "我在上海工作。", "apy": "Wǒ zài Shànghǎi gōngzuò.", "aes": "Trabajo en Shanghái." },
+        { "q": "你是哪儿人？", "qpy": "Nǐ shì nǎr rén?", "qes": "¿De dónde eres?", "a": "我是马德里人。", "apy": "Wǒ shì Mǎdélǐ rén.", "aes": "Soy de Madrid." },
+        { "q": "王明在哪里？", "qpy": "Wáng Míng zài nǎlǐ?", "qes": "¿Dónde está Wang Ming?", "a": "他在教室。", "apy": "Tā zài jiàoshì.", "aes": "Está en el aula." }
+      ],
+      "contrasts": [
+        "哪儿 vs 哪 → [[zh-question-na]]: 哪儿 = dónde; 哪 + clasificador = cuál.",
+        "X在哪儿？ vs X呢？ → [[zh-question-ne]]: X呢 se usa cuando X falta y debería estar; 在哪儿 es la pregunta general.",
+        "哪儿人 vs 哪国人: 哪儿人 pregunta por la ciudad o región (我是马德里人); 哪国人 por el país.",
+        "在哪儿 + V: el lugar va ANTES del verbo, también en la pregunta (gramática «在: estar en un lugar»)."
+      ]
+    },
+    "markdown": "## Cómo lo recuerdo\n\nLa familia de lugares: 这儿 (aquí) / 那儿 (ahí, allí) / 哪儿 (¿dónde?). Donde pondría 这儿 en la respuesta, pongo 哪儿 en la pregunta.\n\n```xb-formula\n{\"name\":\"¿Dónde está X?\",\"parts\":[{\"text\":\"X\",\"role\":\"subject\"},{\"text\":\"在\",\"role\":\"verb\"},{\"text\":\"哪儿\",\"role\":\"question\"},{\"text\":\"？\",\"role\":\"other\"}]}\n```\n\n```xb-formula\n{\"name\":\"¿Dónde haces X?\",\"parts\":[{\"text\":\"Sujeto\",\"role\":\"subject\"},{\"text\":\"在\",\"role\":\"other\"},{\"text\":\"哪儿\",\"role\":\"question\"},{\"text\":\"V\",\"role\":\"verb\"},{\"text\":\"O\",\"role\":\"object\"},{\"text\":\"？\",\"role\":\"other\"}]}\n```\n\n```xb-example\n{\"zh\":\"你住在哪儿？—我住在学校。\",\"py\":\"Nǐ zhù zài nǎr? — Wǒ zhù zài xuéxiào.\",\"es\":\"¿Dónde vives? —Vivo en la escuela (residencia).\",\"note\":\"Con 住 el 在 puede ir detrás del verbo: 住在.\"}\n```\n\n```xb-example\n{\"zh\":\"我们在哪儿吃饭？—在家吃吧。\",\"py\":\"Wǒmen zài nǎr chī fàn? — Zài jiā chī ba.\",\"es\":\"¿Dónde comemos? —Comamos en casa.\"}\n```\n\n> ❌ **Error típico**: orden español: ~~你工作在哪儿？~~ → 你在哪儿工作？ (lugar antes del verbo).\n\n> ⚠️ **Ojo**: 哪儿 y 哪里 son lo mismo; en Pekín oirás 哪儿 con el 儿 muy marcado, en Shanghái y el sur, 哪里.\n\n> 🏮 **¿Sabías que…?**: 哪里哪里 nǎli nǎli es una respuesta modesta a un cumplido («¡qué va!»), no una pregunta.\n\n```xb-exercise\n{\"kind\":\"order\",\"data\":{\"zh\":\"你在哪儿学习汉语？\",\"es\":\"¿Dónde estudias chino?\"}}\n```",
+    "cues": [
+      { "id": "c1", "q": "¿Cómo se pregunta «¿dónde está el baño?»?", "a": "洗手间在哪儿？" },
+      { "id": "c2", "q": "¿Cómo se responde a 你去哪儿？", "a": "我去 + lugar: 我去学校。" },
+      { "id": "c3", "q": "¿Dónde va 在哪儿 cuando hay otro verbo?", "a": "Antes del verbo: 你在哪儿工作？" },
+      { "id": "c4", "q": "¿Qué diferencia hay entre 哪儿 y 哪里?", "a": "Ninguna de significado; 哪儿 norte, 哪里 sur." }
+    ],
+    "summary": "哪儿/哪里 = dónde; va donde iría el lugar (在哪儿, 去哪儿, 在哪儿 + V) y se responde con la misma frase y el lugar concreto.",
+    "reviewed": false
+  },
+  {
+    "id": "zh-question-ji",
+    "type": "question",
+    "title": "几 + clasificador: cuántos (pocos), qué hora, qué día",
+    "level": 1,
+    "tags": ["preguntas", "interrogativos", "números", "clasificadores", "u02"],
+    "grammarIds": ["question-words", "measure-words", "dates-time", "numbers"],
+    "unitId": "u02",
+    "fields": {
+      "structure": "几 + clasificador + (nombre)？ SIEMPRE con clasificador: 几个人, 几口人, 几本书, 几岁, 几点, 几号, 几月, 星期几. Se espera una respuesta menor de 10 (o un número de un sistema cerrado: horas, días, meses).",
+      "when": "Para cantidades pequeñas (familia, hermanos, libros, objetos a la vista), para la edad de niños (几岁) y para todo el calendario y el reloj: 几点 (qué hora), 几号 (qué día), 几月 (qué mes), 星期几 (qué día de la semana).",
+      "answer": "Se sustituye 几 por el número y se mantiene el clasificador: 你家有几口人？→ 我家有四口人。 · 现在几点？→ 现在三点半。 · 今天几号？→ 今天十五号。 · 今天星期几？→ 今天星期三。 · 你有几个弟弟？→ 我有一个弟弟。/ 我没有弟弟。 Con «dos» delante del clasificador: 两 (两个, 两点), no 二.",
+      "qa": [
+        { "q": "你家有几口人？", "qpy": "Nǐ jiā yǒu jǐ kǒu rén?", "qes": "¿Cuántas personas sois en tu familia?", "a": "我家有四口人：爸爸、妈妈、妹妹和我。", "apy": "Wǒ jiā yǒu sì kǒu rén: bàba, māma, mèimei hé wǒ.", "aes": "Somos cuatro: papá, mamá, mi hermana menor y yo." },
+        { "q": "现在几点？", "qpy": "Xiànzài jǐ diǎn?", "qes": "¿Qué hora es?", "a": "现在两点半。", "apy": "Xiànzài liǎng diǎn bàn.", "aes": "Son las dos y media." },
+        { "q": "今天几号？", "qpy": "Jīntiān jǐ hào?", "qes": "¿Qué día es hoy?", "a": "今天十月二十八号。", "apy": "Jīntiān shí yuè èrshíbā hào.", "aes": "Hoy es 28 de octubre." },
+        { "q": "明天星期几？", "qpy": "Míngtiān xīngqī jǐ?", "qes": "¿Qué día de la semana es mañana?", "a": "明天星期五。", "apy": "Míngtiān xīngqīwǔ.", "aes": "Mañana es viernes." },
+        { "q": "你有几本汉语书？", "qpy": "Nǐ yǒu jǐ běn Hànyǔ shū?", "qes": "¿Cuántos libros de chino tienes?", "a": "我有两本。", "apy": "Wǒ yǒu liǎng běn.", "aes": "Tengo dos." },
+        { "q": "你女儿几岁？", "qpy": "Nǐ nǚ'ér jǐ suì?", "qes": "¿Cuántos años tiene tu hija?", "a": "她五岁。", "apy": "Tā wǔ suì.", "aes": "Tiene cinco años." }
+      ],
+      "contrasts": [
+        "几 vs 多少 → [[zh-question-ji-vs-duoshao]]: 几 = pocos y con clasificador; 多少 = cualquier cantidad, clasificador opcional.",
+        "几岁 vs 多大 → [[zh-question-duoshao]]: 几岁 para niños; a un adulto se le pregunta 你多大？ (o 多大年纪, cortés).",
+        "星期几 (día de la semana) vs 几号 (día del mes): 星期几→星期三; 几号→十五号.",
+        "几 no es solo pregunta: 几个 = «unos cuantos» en afirmaciones (我有几个朋友) → adelanto HSK 2."
+      ]
+    },
+    "markdown": "## Cómo lo recuerdo\n\n几 es un número que todavía no sé, pero pequeño: cabe en los dedos de las manos. Y como cualquier número, va pegado a su clasificador: 几**个**, 几**口**, 几**点**.\n\n```xb-formula\n{\"name\":\"几 + clasificador + nombre\",\"parts\":[{\"text\":\"几\",\"role\":\"question\"},{\"text\":\"clasif.\",\"role\":\"measure\"},{\"text\":\"Nombre\",\"role\":\"object\"}]}\n```\n\n```xb-example\n{\"zh\":\"你有几个孩子？—我有一个儿子。\",\"py\":\"Nǐ yǒu jǐ ge háizi? — Wǒ yǒu yí ge érzi.\",\"es\":\"¿Cuántos hijos tienes? —Tengo un hijo.\",\"note\":\"一 se lee yí delante de 个 (4.º tono).\"}\n```\n\n```xb-example\n{\"zh\":\"你的生日是几月几号？—五月三号。\",\"py\":\"Nǐ de shēngrì shì jǐ yuè jǐ hào? — Wǔ yuè sān hào.\",\"es\":\"¿Qué día es tu cumpleaños? —El 3 de mayo.\",\"note\":\"Mes y día con 几; en la respuesta, primero el mes.\"}\n```\n\n> ❌ **Error típico**: ~~你有几弟弟？~~ → 你有几**个**弟弟？ El clasificador no se puede saltar.\n\n> ❌ **Error típico**: ~~现在二点。~~ → 现在**两**点。 Delante de clasificador, «dos» es 两.\n\n> 💡 **Truco**: todo el reloj y el calendario va con 几: 几点·几分·几号·几月·星期几. 多少 aquí suena raro.\n\n```xb-exercise\n{\"kind\":\"fill\",\"data\":{\"zh\":\"今天星期＿？\",\"answer\":\"几\",\"options\":\"几 · 多少 · 什么 · 哪\",\"es\":\"¿Qué día de la semana es hoy?\",\"explain\":\"Días de la semana, horas y fechas se preguntan con 几.\"}}\n```",
+    "cues": [
+      { "id": "c1", "q": "¿Qué va siempre detrás de 几?", "a": "Un clasificador: 几个, 几口, 几点…" },
+      { "id": "c2", "q": "¿Cómo se responde a 你家有几口人？", "a": "我家有 + número + 口人: 我家有四口人。" },
+      { "id": "c3", "q": "¿Cómo se pregunta la hora, el día del mes y el día de la semana?", "a": "几点？ 几号？ 星期几？" },
+      { "id": "c4", "q": "¿Cómo se dice «dos» delante de 点 o 个?", "a": "两: 两点, 两个." },
+      { "id": "c5", "q": "¿Cuándo prefiero 多少 a 几?", "a": "Cuando la cantidad puede ser grande o desconocida (dinero, habitantes)." }
+    ],
+    "summary": "几 + clasificador pregunta cantidades pequeñas y todo el calendario/reloj; se responde con número + el mismo clasificador.",
+    "reviewed": false
+  },
+  {
+    "id": "zh-question-duoshao",
+    "type": "question",
+    "title": "多少: cuánto (cualquier cantidad) · 多少钱 · 多大",
+    "level": 1,
+    "tags": ["preguntas", "interrogativos", "números", "compras", "u06"],
+    "grammarIds": ["question-words", "price-age", "numbers"],
+    "unitId": "u06",
+    "fields": {
+      "structure": "多少 (+ clasificador) + nombre？ El clasificador es opcional: 多少钱, 多少人, 多少（个）学生. Precios: X多少钱？ · Teléfono: 你的电话号码是多少？ · Edad de adultos: 你多大？ (多 + adjetivo).",
+      "when": "Para preguntar cantidades que pueden ser grandes o que no sabes estimar: dinero, habitantes, estudiantes de una universidad, un número de teléfono. También con 多 + adjetivo para medidas: 多大 (qué edad / qué tamaño), 多长 (qué largo), 多远 (qué distancia; HSK 2).",
+      "answer": "Se contesta con el número (y la unidad si la hay): 这个多少钱？→ 十五块（钱）。/ 三十五块五。 · 你们学校有多少学生？→ 有两万个学生。 · 你的电话号码是多少？→ 一三八……（一 se lee yāo）. · 你多大？→ 我二十三岁。 Para regatear: 太贵了，便宜一点儿吧。",
+      "qa": [
+        { "q": "这个多少钱？", "qpy": "Zhège duōshao qián?", "qes": "¿Cuánto cuesta esto?", "a": "十五块。", "apy": "Shíwǔ kuài.", "aes": "Quince yuanes." },
+        { "q": "一杯咖啡多少钱？", "qpy": "Yì bēi kāfēi duōshao qián?", "qes": "¿Cuánto cuesta un café?", "a": "二十八块五。", "apy": "Èrshíbā kuài wǔ.", "aes": "28,5 yuanes." },
+        { "q": "你们班有多少学生？", "qpy": "Nǐmen bān yǒu duōshao xuésheng?", "qes": "¿Cuántos estudiantes hay en vuestra clase?", "a": "有二十五个学生。", "apy": "Yǒu èrshíwǔ ge xuésheng.", "aes": "Hay 25 estudiantes." },
+        { "q": "你的电话号码是多少？", "qpy": "Nǐ de diànhuà hàomǎ shì duōshao?", "qes": "¿Cuál es tu número de teléfono?", "a": "一三八〇〇二二五六七九。", "apy": "Yāo sān bā líng líng èr èr wǔ liù qī jiǔ.", "aes": "13800225679." },
+        { "q": "你多大？", "qpy": "Nǐ duō dà?", "qes": "¿Cuántos años tienes?", "a": "我二十三岁。", "apy": "Wǒ èrshísān suì.", "aes": "Tengo 23 años." }
+      ],
+      "contrasts": [
+        "多少 vs 几 → [[zh-question-ji-vs-duoshao]]: 多少 para cualquier cantidad y sin necesidad de clasificador; 几 para pocos y con clasificador.",
+        "多少钱 vs 几块钱: 几块钱 solo si esperas menos de 10 yuanes; en una tienda, 多少钱 es lo normal.",
+        "多大 (adulto) vs 几岁 (niño) vs 多大年纪 (mayor, cortés) → [[zh-question-ji]].",
+        "电话号码是多少 (no 是什么): un número de teléfono se pregunta con 多少."
+      ]
+    },
+    "markdown": "## Cómo lo recuerdo\n\n多少 = «mucho-poco»: literalmente pregunta «¿mucho o poco?», o sea, cualquier cantidad. Por eso vale para dinero, gente y teléfonos, donde no tengo ni idea del tamaño del número.\n\n```xb-formula\n{\"name\":\"¿Cuánto cuesta?\",\"parts\":[{\"text\":\"Cosa\",\"role\":\"subject\"},{\"text\":\"多少\",\"role\":\"question\"},{\"text\":\"钱\",\"role\":\"object\"},{\"text\":\"？\",\"role\":\"other\"}]}\n```\n\n```xb-example\n{\"zh\":\"这件衣服多少钱？—一百二十块。太贵了！\",\"py\":\"Zhè jiàn yīfu duōshao qián? — Yìbǎi èrshí kuài. Tài guì le!\",\"es\":\"¿Cuánto cuesta esta prenda? —120 yuanes. ¡Demasiado caro!\"}\n```\n\n```xb-example\n{\"zh\":\"上海有多少人？—有两千多万人。\",\"py\":\"Shànghǎi yǒu duōshao rén? — Yǒu liǎngqiān duō wàn rén.\",\"es\":\"¿Cuántos habitantes tiene Shanghái? —Más de 20 millones.\",\"note\":\"Con 多少 no hace falta clasificador: 多少人.\"}\n```\n\n> ⚠️ **Ojo**: en el número de teléfono, 一 se lee **yāo** para no confundirlo con 七 qī.\n\n> ❌ **Error típico**: ~~你的电话是什么？~~ → 你的电话号码是**多少**？ Los números se preguntan con 多少.\n\n> 👩‍🏫 **Lo dijo el profe**: 块 kuài es la forma hablada de 元 yuán; en la etiqueta verás 元, en la boca del vendedor oirás 块.\n\n```xb-exercise\n{\"kind\":\"translate\",\"data\":{\"es\":\"¿Cuánto cuesta este libro?\",\"zh\":\"这本书多少钱？ · 这本书多少钱\"}}\n```",
+    "cues": [
+      { "id": "c1", "q": "¿Necesita 多少 clasificador?", "a": "No; es opcional (多少人, 多少钱)." },
+      { "id": "c2", "q": "¿Cómo se pregunta el precio y cómo se responde?", "a": "多少钱？ → número + 块: 十五块。" },
+      { "id": "c3", "q": "¿Cómo se pide un número de teléfono?", "a": "你的电话号码是多少？" },
+      { "id": "c4", "q": "¿Cómo se pregunta la edad a un adulto?", "a": "你多大？ → 我二十三岁。" }
+    ],
+    "summary": "多少 pregunta cualquier cantidad sin clasificador obligatorio (多少钱, 多少人, 电话是多少); se responde con el número y su unidad.",
+    "reviewed": false
+  },
+  {
+    "id": "zh-question-zenme",
+    "type": "question",
+    "title": "怎么 + verbo: cómo (de qué manera) · 怎么了",
+    "level": 1,
+    "tags": ["preguntas", "interrogativos", "u08"],
+    "grammarIds": ["question-words", "word-order"],
+    "unitId": "u08",
+    "fields": {
+      "structure": "Sujeto + 怎么 + V (+ O)？ Siempre DELANTE del verbo: 怎么去, 怎么说, 怎么写, 怎么读, 怎么做. Expresión fija: 怎么了？ (¿qué pasa? / ¿qué te pasa?).",
+      "when": "Para preguntar la manera de hacer algo: cómo ir a un sitio, cómo se dice o se escribe una palabra, cómo se prepara un plato. 怎么了 pregunta por un problema o un cambio inesperado.",
+      "answer": "Se explica la manera con un verbo o un medio, en el mismo hueco donde estaba 怎么: 怎么去？→ 坐地铁去。/ 走路去。 · «…»用汉语怎么说？→ 用汉语说«…»。/ 汉语叫«…»。 · 这个字怎么写？→ 这样写：…（y lo escribes）. · 怎么了？→ 没什么。/ 我有点儿不舒服。/ 我的手机不见了。",
+      "qa": [
+        { "q": "去火车站怎么走？", "qpy": "Qù huǒchēzhàn zěnme zǒu?", "qes": "¿Cómo se va a la estación de tren?", "a": "坐地铁，两站就到。", "apy": "Zuò dìtiě, liǎng zhàn jiù dào.", "aes": "En metro, son dos paradas." },
+        { "q": "«Gracias» 用汉语怎么说？", "qpy": "«Gracias» yòng Hànyǔ zěnme shuō?", "qes": "¿Cómo se dice «gracias» en chino?", "a": "汉语说«谢谢»。", "apy": "Hànyǔ shuō «xièxie».", "aes": "En chino se dice «xièxie»." },
+        { "q": "这个字怎么读？", "qpy": "Zhège zì zěnme dú?", "qes": "¿Cómo se lee este carácter?", "a": "读 «chá»，是茶的茶。", "apy": "Dú «chá», shì chá de chá.", "aes": "Se lee «chá», el 茶 de té." },
+        { "q": "你怎么来学校？", "qpy": "Nǐ zěnme lái xuéxiào?", "qes": "¿Cómo vienes a la escuela?", "a": "我坐公共汽车来。", "apy": "Wǒ zuò gōnggòng qìchē lái.", "aes": "Vengo en autobús." },
+        { "q": "你怎么了？", "qpy": "Nǐ zěnme le?", "qes": "¿Qué te pasa?", "a": "我有点儿累。", "apy": "Wǒ yǒudiǎnr lèi.", "aes": "Estoy un poco cansado." }
+      ],
+      "contrasts": [
+        "怎么 vs 怎么样 → [[zh-question-zenmeyang]]: 怎么 + verbo = cómo se hace; 怎么样 al final = qué tal / cómo es.",
+        "怎么 vs 什么 → [[zh-question-shenme]]: 怎么说 = cómo se dice; 说什么 = qué dices.",
+        "怎么 + V también puede ser «¿cómo es que…?» (sorpresa/reproche): 你怎么不来？ = ¿cómo es que no vienes? → nivel 2.",
+        "怎么了 vs 怎么样: 怎么了 = ¿qué pasa? (problema); 怎么样 = ¿qué tal? (valoración)."
+      ]
+    },
+    "markdown": "## Cómo lo recuerdo\n\n怎么 es un adverbio y por eso vive delante del verbo, como 也 y 都. Si quiero preguntar «cómo + verbo», pego 怎么 al verbo: 怎么去, 怎么说.\n\n```xb-formula\n{\"name\":\"怎么 + verbo\",\"parts\":[{\"text\":\"Sujeto\",\"role\":\"subject\"},{\"text\":\"怎么\",\"role\":\"question\"},{\"text\":\"V\",\"role\":\"verb\"},{\"text\":\"O\",\"role\":\"object\"},{\"text\":\"？\",\"role\":\"other\"}]}\n```\n\n```xb-example\n{\"zh\":\"这个菜怎么做？—先洗菜，然后……\",\"py\":\"Zhège cài zěnme zuò? — Xiān xǐ cài, ránhòu…\",\"es\":\"¿Cómo se hace este plato? —Primero se lava la verdura, luego…\",\"note\":\"先…然后… es HSK 2; basta con entenderlo.\"}\n```\n\n```xb-example\n{\"zh\":\"你的名字怎么写？—雨是下雨的雨，果是水果的果。\",\"py\":\"Nǐ de míngzi zěnme xiě? — Yǔ shì xià yǔ de yǔ, guǒ shì shuǐguǒ de guǒ.\",\"es\":\"¿Cómo se escribe tu nombre? —雨 de «llover», 果 de «fruta».\",\"note\":\"Así explican los chinos los caracteres de un nombre.\"}\n```\n\n> ❌ **Error típico**: poner 怎么 detrás del verbo como en español («¿vas cómo?»): ~~你去怎么？~~ → 你怎么去？\n\n> 💡 **Truco**: la frase más útil de tu primer mes: ……用汉语怎么说？ (¿cómo se dice … en chino?).\n\n```xb-exercise\n{\"kind\":\"order\",\"data\":{\"zh\":\"你怎么去北京？\",\"es\":\"¿Cómo vas a Pekín?\"}}\n```",
+    "cues": [
+      { "id": "c1", "q": "¿Dónde va 怎么 respecto al verbo?", "a": "Siempre delante: 怎么去, 怎么说." },
+      { "id": "c2", "q": "¿Cómo se pregunta «¿cómo se dice X en chino?»?", "a": "X用汉语怎么说？" },
+      { "id": "c3", "q": "¿Cómo se responde a 怎么去？", "a": "Con el medio: 坐地铁去。/ 走路去。" },
+      { "id": "c4", "q": "¿Qué significa 怎么了？", "a": "¿Qué pasa? / ¿Qué te pasa?" }
+    ],
+    "summary": "怎么 + verbo pregunta la manera (怎么去, 怎么说); se responde describiendo cómo (坐地铁去). 怎么了 = ¿qué pasa?",
+    "reviewed": false
+  },
+  {
+    "id": "zh-question-zenmeyang",
+    "type": "question",
+    "title": "……怎么样？: qué tal, cómo es, ¿qué te parece?",
+    "level": 1,
+    "tags": ["preguntas", "interrogativos", "u05"],
+    "grammarIds": ["question-words", "hen-adj"],
+    "unitId": "u05",
+    "fields": {
+      "structure": "Nombre + 怎么样？ (valoración: ¿cómo es / qué tal?) · Propuesta + 怎么样？ (¿qué te parece si…?). Va al FINAL, hace de predicado.",
+      "when": "1) Preguntar la opinión o el estado de algo o alguien: 这个菜怎么样？ 你最近怎么样？ 2) Proponer un plan y pedir opinión: 我们去吃饭，怎么样？ 3) Pedir una opinión general: 你觉得怎么样？",
+      "answer": "A una valoración se responde con un adjetivo (con 很/不错/太…了/不太): 很好。/ 不错。/ 很好吃。/ 不太好。/ 还可以。 A una propuesta se responde aceptando o rechazando: 好啊！/ 好的。/ 行。/ 可以。 — 不行，我没有时间。/ 我们明天去吧。 Nunca se responde 是/不是.",
+      "qa": [
+        { "q": "你最近怎么样？", "qpy": "Nǐ zuìjìn zěnmeyàng?", "qes": "¿Qué tal últimamente?", "a": "很好，就是有点儿忙。", "apy": "Hěn hǎo, jiùshì yǒudiǎnr máng.", "aes": "Bien, solo que un poco ocupado." },
+        { "q": "这个菜怎么样？", "qpy": "Zhège cài zěnmeyàng?", "qes": "¿Qué tal está este plato?", "a": "很好吃！", "apy": "Hěn hǎochī!", "aes": "¡Está muy bueno!" },
+        { "q": "我们明天去北京，怎么样？", "qpy": "Wǒmen míngtiān qù Běijīng, zěnmeyàng?", "qes": "¿Qué te parece si vamos mañana a Pekín?", "a": "好啊！几点去？", "apy": "Hǎo a! Jǐ diǎn qù?", "aes": "¡Vale! ¿A qué hora vamos?" },
+        { "q": "李老师怎么样？", "qpy": "Lǐ lǎoshī zěnmeyàng?", "qes": "¿Qué tal es el profesor Li?", "a": "他很好，也很认真。", "apy": "Tā hěn hǎo, yě hěn rènzhēn.", "aes": "Es muy bueno y muy serio." },
+        { "q": "上海的天气怎么样？", "qpy": "Shànghǎi de tiānqì zěnmeyàng?", "qes": "¿Qué tal el tiempo en Shanghái?", "a": "不太好，今天下雨。", "apy": "Bú tài hǎo, jīntiān xià yǔ.", "aes": "No muy bueno, hoy llueve." }
+      ],
+      "contrasts": [
+        "怎么样 vs 怎么 → [[zh-question-zenme]]: 怎么样 va al final y pide valoración; 怎么 va delante del verbo y pide la manera.",
+        "怎么样 vs 好吗 → [[zh-question-tag]]: para una propuesta son intercambiables (我们走，怎么样？/ 好吗？).",
+        "怎么样 vs 你好吗: 你好吗 pregunta si estás bien; 你怎么样 / 你最近怎么样 es más natural entre conocidos.",
+        "怎么样 también se usa en afirmaciones negativas: 不怎么样 = «no es gran cosa» (HSK 2)."
+      ]
+    },
+    "markdown": "## Cómo lo recuerdo\n\n怎么样 es un adjetivo-comodín interrogativo: ocupa el sitio del adjetivo. Donde la respuesta dirá 很好, la pregunta dice 怎么样. Por eso va al final, nunca delante del verbo.\n\n```xb-formula\n{\"name\":\"Valoración con 怎么样\",\"parts\":[{\"text\":\"Nombre\",\"role\":\"subject\"},{\"text\":\"怎么样\",\"role\":\"question\"},{\"text\":\"？\",\"role\":\"other\"}]}\n```\n\n```xb-example\n{\"zh\":\"汉语课怎么样？—很有意思，但是有点儿难。\",\"py\":\"Hànyǔ kè zěnmeyàng? — Hěn yǒu yìsi, dànshì yǒudiǎnr nán.\",\"es\":\"¿Qué tal la clase de chino? —Muy interesante, pero un poco difícil.\"}\n```\n\n```xb-example\n{\"zh\":\"我们去喝咖啡，怎么样？—行，走吧！\",\"py\":\"Wǒmen qù hē kāfēi, zěnmeyàng? — Xíng, zǒu ba!\",\"es\":\"¿Vamos a tomar un café? —Vale, ¡vamos!\"}\n```\n\n> ❌ **Error típico**: ~~怎么样这个菜？~~ → 这个菜怎么样？ Al final.\n\n> ❌ **Error típico**: responder 是 o 好 a secas a 这个菜怎么样？: mejor **很好吃** / **不错** / **还可以**.\n\n> 💡 **Truco**: respuestas comodín para cualquier 怎么样: 很好 (bien) · 不错 (no está mal) · 还可以 (pasable) · 不太好 (no muy bien).\n\n```xb-exercise\n{\"kind\":\"choice\",\"data\":{\"prompt\":\"¿Cuál es la respuesta natural a 你最近怎么样？\",\"options\":\"是。 · 很好。 · 怎么样。 · 对。\",\"answer\":\"1\",\"explain\":\"怎么样 pide una valoración: se responde con un adjetivo (很好, 不错…).\"}}\n```",
+    "cues": [
+      { "id": "c1", "q": "¿Dónde va 怎么样 en la frase?", "a": "Al final, como predicado: 这个菜怎么样？" },
+      { "id": "c2", "q": "¿Cómo se responde a 这个菜怎么样？", "a": "Con adjetivo: 很好吃。/ 不错。/ 不太好。" },
+      { "id": "c3", "q": "¿Cómo se acepta una propuesta con 怎么样?", "a": "好啊 / 好的 / 行 / 可以." },
+      { "id": "c4", "q": "¿Diferencia entre 怎么 y 怎么样?", "a": "怎么 + verbo = manera; 怎么样 final = valoración." }
+    ],
+    "summary": "X怎么样？ pregunta qué tal es X o qué te parece un plan; se responde con un adjetivo (很好/不错) o aceptando (好啊/行).",
+    "reviewed": false
+  },
+  {
+    "id": "zh-question-weishenme",
+    "type": "question",
+    "title": "为什么: por qué (y responder con 因为)",
+    "level": 1,
+    "tags": ["preguntas", "interrogativos", "u04"],
+    "grammarIds": ["question-words", "bu-mei"],
+    "unitId": "u04",
+    "fields": {
+      "structure": "Sujeto + 为什么 + V (+ O)？ Delante del verbo (como 怎么): 你为什么学汉语？ También puede ir al principio: 为什么你不来？ Solo: 为什么？ (¿por qué?).",
+      "when": "Para preguntar el motivo de algo. Muy habitual con negación: 你为什么不来？ 你为什么没吃饭？ Ojo con el tono: 为什么 directo puede sonar a reproche; suaviza con 啊 o con 呢 al final: 为什么呢？",
+      "answer": "Se responde con 因为 yīnwèi (porque) + motivo, a menudo con 所以 (por eso) delante de la consecuencia: 你为什么学汉语？→ 因为我喜欢中国。/ 因为我想在中国工作。 Si no hay motivo claro: 没有为什么 (coloquial: «porque sí») o 不知道. 因为/所以 son palabras de HSK 2, pero las necesitas desde el primer día.",
+      "qa": [
+        { "q": "你为什么学汉语？", "qpy": "Nǐ wèishénme xué Hànyǔ?", "qes": "¿Por qué estudias chino?", "a": "因为我在中国读硕士。", "apy": "Yīnwèi wǒ zài Zhōngguó dú shuòshì.", "aes": "Porque hago un máster en China." },
+        { "q": "你昨天为什么没来上课？", "qpy": "Nǐ zuótiān wèishénme méi lái shàng kè?", "qes": "¿Por qué no viniste ayer a clase?", "a": "因为我病了。", "apy": "Yīnwèi wǒ bìng le.", "aes": "Porque me puse enfermo." },
+        { "q": "你为什么不喝咖啡？", "qpy": "Nǐ wèishénme bù hē kāfēi?", "qes": "¿Por qué no tomas café?", "a": "因为晚上我不能睡觉。", "apy": "Yīnwèi wǎnshang wǒ bù néng shuìjiào.", "aes": "Porque luego no puedo dormir por la noche." },
+        { "q": "安娜为什么不高兴？", "qpy": "Ānnà wèishénme bù gāoxìng?", "qes": "¿Por qué está Ana disgustada?", "a": "因为她的手机不见了。", "apy": "Yīnwèi tā de shǒujī bú jiàn le.", "aes": "Porque ha perdido el móvil." },
+        { "q": "为什么？", "qpy": "Wèishénme?", "qes": "¿Por qué?", "a": "没有为什么，我就是不想去。", "apy": "Méiyǒu wèishénme, wǒ jiùshì bù xiǎng qù.", "aes": "Porque sí, simplemente no quiero ir." }
+      ],
+      "contrasts": [
+        "为什么 vs 什么 → [[zh-question-shenme]]: 为什么 es una palabra fija («por-qué»), no se separa.",
+        "为什么 vs 怎么 → [[zh-question-zenme]]: 怎么 pregunta la manera; 怎么 + negación (你怎么不来？) suena a sorpresa «¿cómo es que…?», 为什么 pide el motivo real.",
+        "Responder: 因为……(所以……); en español «porque» basta, en chino 所以 aparece mucho más (HSK 2)."
+      ]
+    },
+    "markdown": "## Cómo lo recuerdo\n\n为什么 = 为 (por) + 什么 (qué) = «por qué». Como 怎么, se coloca delante del verbo: 你为什么**学**汉语？\n\n```xb-formula\n{\"name\":\"为什么 + verbo\",\"parts\":[{\"text\":\"Sujeto\",\"role\":\"subject\"},{\"text\":\"为什么\",\"role\":\"question\"},{\"text\":\"(不/没)\",\"role\":\"adverb\"},{\"text\":\"V\",\"role\":\"verb\"},{\"text\":\"O\",\"role\":\"object\"},{\"text\":\"？\",\"role\":\"other\"}]}\n```\n\n```xb-example\n{\"zh\":\"你为什么喜欢上海？—因为上海很大，也很有意思。\",\"py\":\"Nǐ wèishénme xǐhuan Shànghǎi? — Yīnwèi Shànghǎi hěn dà, yě hěn yǒu yìsi.\",\"es\":\"¿Por qué te gusta Shanghái? —Porque es muy grande y muy interesante.\"}\n```\n\n```xb-example\n{\"zh\":\"王明为什么没来？—因为他太忙了，所以没来。\",\"py\":\"Wáng Míng wèishénme méi lái? — Yīnwèi tā tài máng le, suǒyǐ méi lái.\",\"es\":\"¿Por qué no ha venido Wang Ming? —Como estaba muy ocupado, no ha venido.\",\"note\":\"因为…所以… suena redundante en español, natural en chino.\"}\n```\n\n> ⚠️ **Ojo**: 为什么 a secas y en tono alto suena a reproche. Entre amigos añade 呢 o 啊: 你为什么不来呢？\n\n> ⚠️ **Ojo**: 因为 y 所以 son HSK 2; en el examen de HSK 1 verás 为什么 en las preguntas, pero las respuestas serán sencillas.\n\n> ❌ **Error típico**: ~~你学汉语为什么？~~ → 你为什么学汉语？ Delante del verbo.\n\n```xb-exercise\n{\"kind\":\"fill\",\"data\":{\"zh\":\"你＿不吃早饭？—因为我没有时间。\",\"answer\":\"为什么\",\"options\":\"为什么 · 怎么样 · 什么 · 哪儿\",\"es\":\"¿Por qué no desayunas? —Porque no tengo tiempo.\",\"explain\":\"La respuesta con 因为 pide una pregunta con 为什么.\"}}\n```",
+    "cues": [
+      { "id": "c1", "q": "¿Dónde se coloca 为什么?", "a": "Delante del verbo (o al principio de la frase)." },
+      { "id": "c2", "q": "¿Con qué palabra se responde a 为什么?", "a": "因为 + motivo (opcionalmente 所以 + consecuencia)." },
+      { "id": "c3", "q": "¿Cómo suavizo un 为什么 que suena a reproche?", "a": "Añadiendo 呢 o 啊: 为什么呢？" },
+      { "id": "c4", "q": "¿Cómo digo «porque sí»?", "a": "没有为什么。" }
+    ],
+    "summary": "为什么 (por qué) va delante del verbo; se responde con 因为 + motivo (…所以…). Suavízalo con 呢/啊.",
+    "reviewed": false
+  },
+  {
+    "id": "zh-question-shenme-shihou",
+    "type": "question",
+    "title": "什么时候: cuándo (frente a 几点 / 几号)",
+    "level": 1,
+    "tags": ["preguntas", "interrogativos", "tiempo", "u04"],
+    "grammarIds": ["question-words", "dates-time", "word-order"],
+    "unitId": "u04",
+    "fields": {
+      "structure": "Sujeto + 什么时候 + V (+ O)？ El tiempo va DELANTE del verbo, como en la respuesta: 你什么时候去北京？ → 我明天去北京。",
+      "when": "Para preguntar «cuándo» en general, sin exigir hora ni fecha exactas: cuándo vienes, cuándo empiezan las clases, cuándo es tu cumpleaños. Si quieres la hora exacta usa 几点; para el día del mes, 几号; para el día de la semana, 星期几; para el año, 哪年.",
+      "answer": "Se pone la expresión de tiempo en el hueco de 什么时候, es decir, delante del verbo: 你什么时候来？→ 我明天来。/ 我下午三点来。/ 我星期五来。 · 你什么时候回西班牙？→ 我七月回西班牙。 Se puede contestar solo con el tiempo: 明天。 / 下个星期。(HSK 2) Si no se sabe: 还不知道。",
+      "qa": [
+        { "q": "你什么时候来上海？", "qpy": "Nǐ shénme shíhou lái Shànghǎi?", "qes": "¿Cuándo vienes a Shanghái?", "a": "我九月来。", "apy": "Wǒ jiǔ yuè lái.", "aes": "Vengo en septiembre." },
+        { "q": "我们什么时候吃饭？", "qpy": "Wǒmen shénme shíhou chī fàn?", "qes": "¿Cuándo comemos?", "a": "十二点吃吧。", "apy": "Shí'èr diǎn chī ba.", "aes": "Comamos a las doce." },
+        { "q": "你的生日是什么时候？", "qpy": "Nǐ de shēngrì shì shénme shíhou?", "qes": "¿Cuándo es tu cumpleaños?", "a": "五月三号。", "apy": "Wǔ yuè sān hào.", "aes": "El 3 de mayo." },
+        { "q": "李老师什么时候有时间？", "qpy": "Lǐ lǎoshī shénme shíhou yǒu shíjiān?", "qes": "¿Cuándo tiene tiempo el profesor Li?", "a": "他星期三下午有时间。", "apy": "Tā xīngqīsān xiàwǔ yǒu shíjiān.", "aes": "Tiene tiempo el miércoles por la tarde." },
+        { "q": "你什么时候回家？", "qpy": "Nǐ shénme shíhou huí jiā?", "qes": "¿Cuándo vuelves a casa?", "a": "今天晚上。", "apy": "Jīntiān wǎnshang.", "aes": "Esta noche." }
+      ],
+      "contrasts": [
+        "什么时候 vs 几点 → [[zh-question-ji]]: 什么时候 = cuándo (abierto); 几点 = a qué hora (exacta).",
+        "什么时候 vs 几号 / 星期几: fecha concreta → 几号; día de la semana → 星期几.",
+        "Orden: tiempo delante del verbo tanto en la pregunta como en la respuesta → [[zh-question-nar]] (mismo principio con el lugar)."
+      ]
+    },
+    "markdown": "## Cómo lo recuerdo\n\n什么时候 = «qué momento». Es la ficha «tiempo» y vive donde viven los tiempos en chino: entre el sujeto y el verbo. Si la respuesta es 我明天去, la pregunta es 你**什么时候**去？\n\n```xb-formula\n{\"name\":\"什么时候 + verbo\",\"parts\":[{\"text\":\"Sujeto\",\"role\":\"subject\"},{\"text\":\"什么时候\",\"role\":\"question\"},{\"text\":\"V\",\"role\":\"verb\"},{\"text\":\"O\",\"role\":\"object\"},{\"text\":\"？\",\"role\":\"other\"}]}\n```\n\n```xb-example\n{\"zh\":\"汉语课什么时候开始？—八点开始。\",\"py\":\"Hànyǔ kè shénme shíhou kāishǐ? — Bā diǎn kāishǐ.\",\"es\":\"¿Cuándo empieza la clase de chino? —A las ocho.\",\"note\":\"开始 es HSK 2; basta con entenderlo.\"}\n```\n\n```xb-example\n{\"zh\":\"你什么时候学汉语？—我每天晚上学。\",\"py\":\"Nǐ shénme shíhou xué Hànyǔ? — Wǒ měi tiān wǎnshang xué.\",\"es\":\"¿Cuándo estudias chino? —Todas las noches.\"}\n```\n\n> ❌ **Error típico**: orden español: ~~你去北京什么时候？~~ → 你什么时候去北京？\n\n> 💡 **Truco**: si la respuesta que esperas es una hora del reloj, pregunta 几点; si es un día del calendario, 几号; para todo lo demás, 什么时候.\n\n```xb-exercise\n{\"kind\":\"order\",\"data\":{\"zh\":\"你什么时候回西班牙？\",\"es\":\"¿Cuándo vuelves a España?\"}}\n```",
+    "cues": [
+      { "id": "c1", "q": "¿Dónde va 什么时候 en la frase?", "a": "Entre el sujeto y el verbo, como cualquier expresión de tiempo." },
+      { "id": "c2", "q": "¿Cómo se responde a 你什么时候来？", "a": "Tiempo delante del verbo: 我明天来。 (o solo 明天。)" },
+      { "id": "c3", "q": "¿Cuándo uso 几点 en lugar de 什么时候?", "a": "Cuando quiero la hora exacta." },
+      { "id": "c4", "q": "¿Cómo pregunto cuándo es el cumpleaños de alguien?", "a": "你的生日是什么时候？ (o 几月几号)." }
+    ],
+    "summary": "什么时候 = cuándo (abierto); va delante del verbo y se responde con la expresión de tiempo en ese mismo hueco. Hora exacta: 几点.",
+    "reviewed": false
+  },
+  {
+    "id": "zh-question-ji-vs-duoshao",
+    "type": "question",
+    "title": "几 vs 多少: dos maneras de preguntar «cuántos»",
+    "level": 1,
+    "tags": ["preguntas", "contrastes", "números", "clasificadores", "u02"],
+    "grammarIds": ["question-words", "measure-words", "price-age"],
+    "unitId": "u02",
+    "fields": {
+      "structure": "几 + clasificador + nombre (esperas menos de 10; clasificador OBLIGATORIO) · 多少 (+ clasificador) + nombre (cualquier cantidad; clasificador OPCIONAL)",
+      "when": "Regla de un segundo: si la respuesta cabe en los dedos de las manos o es un número de un sistema cerrado (hora, fecha, día de la semana), 几. Si puede ser grande o no tienes ni idea (dinero, población, teléfono), 多少. Casos fijos con 几: 几点, 几号, 几月, 星期几, 几口人, 几岁 (niños). Casos fijos con 多少: 多少钱, 电话号码是多少, 多少人 (grupos grandes).",
+      "answer": "En los dos casos se responde con el número; con 几 se repite el clasificador (几个→三个, 几口→四口, 几点→两点); con 多少 se pone el número y la unidad o el nombre si hace falta (多少钱→五十块; 多少学生→三百个学生; 电话号码→一三八……).",
+      "qa": [
+        { "q": "你有几个中国朋友？", "qpy": "Nǐ yǒu jǐ ge Zhōngguó péngyou?", "qes": "¿Cuántos amigos chinos tienes?", "a": "我有三个。", "apy": "Wǒ yǒu sān ge.", "aes": "Tengo tres." },
+        { "q": "交通大学有多少学生？", "qpy": "Jiāotōng Dàxué yǒu duōshao xuésheng?", "qes": "¿Cuántos estudiantes tiene la Universidad Jiaotong?", "a": "有四万多个学生。", "apy": "Yǒu sì wàn duō ge xuésheng.", "aes": "Más de 40 000." },
+        { "q": "现在几点？", "qpy": "Xiànzài jǐ diǎn?", "qes": "¿Qué hora es?", "a": "十点二十。", "apy": "Shí diǎn èrshí.", "aes": "Las diez y veinte." },
+        { "q": "这些苹果多少钱？", "qpy": "Zhèxiē píngguǒ duōshao qián?", "qes": "¿Cuánto cuestan estas manzanas?", "a": "十二块。", "apy": "Shí'èr kuài.", "aes": "Doce yuanes." },
+        { "q": "你家有几口人？", "qpy": "Nǐ jiā yǒu jǐ kǒu rén?", "qes": "¿Cuántos sois en tu familia?", "a": "五口人。", "apy": "Wǔ kǒu rén.", "aes": "Cinco." }
+      ],
+      "contrasts": [
+        "几 → [[zh-question-ji]] · 多少 → [[zh-question-duoshao]]",
+        "几块钱 vs 多少钱: 几块 solo si seguro que es menos de 10 yuanes (un bollo); en una tienda di 多少钱.",
+        "几个人 vs 多少人: 几个人 para «¿cuántos venís a cenar?»; 多少人 para «¿cuántos habitantes?».",
+        "几岁 vs 多大: niños → 几岁; adultos → 多大; mayores → 多大年纪 → [[zh-question-duoshao]]."
+      ]
+    },
+    "markdown": "## Cómo lo recuerdo\n\n几 es «cuántos» con las manos (≤ 10) y va **siempre** con clasificador; 多少 es «cuánto» a lo grande y el clasificador le da igual.\n\n| | 几 jǐ | 多少 duōshao |\n|---|---|---|\n| Cantidad esperada | pequeña (< 10) o sistema cerrado | cualquiera |\n| Clasificador | obligatorio: 几个, 几本 | opcional: 多少（个）人 |\n| Ejemplos fijos | 几点·几号·星期几·几口人·几岁 | 多少钱·电话号码是多少·多少人 |\n| Respuesta | número + mismo clasificador | número (+ unidad) |\n\n```xb-example\n{\"zh\":\"你有几本书？—我有五本。\",\"py\":\"Nǐ yǒu jǐ běn shū? — Wǒ yǒu wǔ běn.\",\"es\":\"¿Cuántos libros tienes? —Tengo cinco.\"}\n```\n\n```xb-example\n{\"zh\":\"北京有多少人？—有两千多万。\",\"py\":\"Běijīng yǒu duōshao rén? — Yǒu liǎngqiān duō wàn.\",\"es\":\"¿Cuánta gente hay en Pekín? —Más de 20 millones.\"}\n```\n\n> ❌ **Error típico**: ~~你有多少个弟弟？~~ no es incorrecto, pero suena a que esperas una docena; di 你有**几**个弟弟？\n\n> ❌ **Error típico**: ~~现在多少点？~~ → 现在**几**点？ El reloj siempre con 几.\n\n> 🧠 **Mnemotecnia**: 几 tiene pocos trazos (2) → pocas cosas; 多少 empieza por 多 (mucho) → puede ser mucho.\n\n```xb-exercise\n{\"kind\":\"choice\",\"data\":{\"prompt\":\"¿Cuál es la pregunta natural para saber el precio de un abrigo?\",\"options\":\"这件衣服几块钱？ · 这件衣服多少钱？ · 这件衣服几钱？ · 这件衣服多少块？\",\"answer\":\"1\",\"explain\":\"Precio en tienda: 多少钱. 几块钱 solo para cosas de menos de 10 yuanes.\"}}\n```\n\n```xb-exercise\n{\"kind\":\"fill\",\"data\":{\"zh\":\"你家有＿口人？\",\"answer\":\"几\",\"options\":\"几 · 多少 · 多 · 什么\",\"es\":\"¿Cuántos sois en tu familia?\",\"explain\":\"Familia: número pequeño + clasificador 口 → 几口人.\"}}\n```",
+    "cues": [
+      { "id": "c1", "q": "¿Cuál de los dos exige clasificador?", "a": "几 (几个, 几本); con 多少 es opcional." },
+      { "id": "c2", "q": "¿Con cuál pregunto el precio?", "a": "多少钱." },
+      { "id": "c3", "q": "¿Con cuál pregunto la hora y la fecha?", "a": "几: 几点, 几号, 星期几." },
+      { "id": "c4", "q": "¿Cómo se responde a 几口人 y a 多少钱?", "a": "四口人 (número + mismo clasificador) · 五十块 (número + unidad)." }
+    ],
+    "summary": "几 = pocos y con clasificador (几个, 几点); 多少 = cualquier cantidad, clasificador opcional (多少钱, 多少人). Ambos se responden con el número.",
+    "reviewed": false
+  },
+  {
+    "id": "zh-question-ba",
+    "type": "question",
+    "title": "……吧？: suposición que pides confirmar («eres español, ¿no?»)",
+    "level": 1,
+    "tags": ["preguntas", "partículas", "u01"],
+    "grammarIds": ["ba", "ma"],
+    "unitId": "u01",
+    "fields": {
+      "structure": "Oración afirmativa (o negativa) + 吧？ con entonación de pregunta: 你是西班牙人吧？ 你不喝咖啡吧？",
+      "when": "Cuando ya crees saber la respuesta y solo pides confirmación: «eres español, ¿no?», «ya has comido, ¿verdad?». A diferencia de 吗, con 吧 muestras que tienes una idea previa. Si 吧 va con entonación descendente no es pregunta sino sugerencia (我们走吧 → [[zh-particle-ba]]).",
+      "answer": "Si aciertan: 对。/ 是的。/ 是啊。/ 嗯 (y se puede repetir el verbo: 是，我是西班牙人). Si no aciertan: 不是/不/没有 + corrección: 不是，我是意大利人。 · 你吃饭了吧？→ 吃了。/ 还没呢。 Es decir, la misma lógica que 吗 (repetir el verbo), pero 对 es muy habitual porque confirmas una idea del otro.",
+      "qa": [
+        { "q": "你是西班牙人吧？", "qpy": "Nǐ shì Xībānyárén ba?", "qes": "Eres español, ¿no?", "a": "对，我是马德里人。", "apy": "Duì, wǒ shì Mǎdélǐ rén.", "aes": "Sí, soy de Madrid." },
+        { "q": "你是雨果的朋友吧？", "qpy": "Nǐ shì Yǔguǒ de péngyou ba?", "qes": "Eres amigo de Hugo, ¿verdad?", "a": "不是，我是他的老师。", "apy": "Bú shì, wǒ shì tā de lǎoshī.", "aes": "No, soy su profesor." },
+        { "q": "你吃饭了吧？", "qpy": "Nǐ chī fàn le ba?", "qes": "Ya has comido, ¿no?", "a": "还没呢，我很饿。", "apy": "Hái méi ne, wǒ hěn è.", "aes": "Todavía no, tengo mucha hambre." },
+        { "q": "今天很冷吧？", "qpy": "Jīntiān hěn lěng ba?", "qes": "Hoy hace frío, ¿no?", "a": "是啊，太冷了。", "apy": "Shì a, tài lěng le.", "aes": "Sí, hace muchísimo frío." },
+        { "q": "你不喝咖啡吧？", "qpy": "Nǐ bù hē kāfēi ba?", "qes": "No tomas café, ¿verdad?", "a": "喝，我每天都喝。", "apy": "Hē, wǒ měi tiān dōu hē.", "aes": "Sí tomo, todos los días." }
+      ],
+      "contrasts": [
+        "吧？ vs 吗？ → [[zh-question-ma]]: 吗 = no sé nada; 吧 = creo que sí y pido confirmación.",
+        "吧？ (suposición) vs 吧。 (sugerencia) → [[zh-particle-ba]]: lo decide la entonación y el contexto: 你是学生吧？ / 我们走吧。",
+        "吧？ vs 对不对 / 是吗 → [[zh-question-duibudui]]: todos piden confirmación; 吧 es el más suave y el más corto.",
+        "Nunca con palabras interrogativas: ~~你是谁吧？~~"
+      ]
+    },
+    "markdown": "## Cómo lo recuerdo\n\n吧 al final con tono de pregunta es el «¿no?» español: «eres español, ¿no?». Digo lo que creo y dejo que el otro confirme.\n\n```xb-formula\n{\"name\":\"Suposición con 吧\",\"parts\":[{\"text\":\"Sujeto\",\"role\":\"subject\"},{\"text\":\"V\",\"role\":\"verb\"},{\"text\":\"O\",\"role\":\"object\"},{\"text\":\"吧\",\"role\":\"particle\"},{\"text\":\"？\",\"role\":\"other\"}]}\n```\n\n```xb-example\n{\"zh\":\"你是李老师吧？—是的，你是雨果吧？\",\"py\":\"Nǐ shì Lǐ lǎoshī ba? — Shì de, nǐ shì Yǔguǒ ba?\",\"es\":\"Usted es el profesor Li, ¿no? —Sí, y tú eres Hugo, ¿verdad?\"}\n```\n\n```xb-example\n{\"zh\":\"这个很贵吧？—不贵，很便宜。\",\"py\":\"Zhège hěn guì ba? — Bú guì, hěn piányi.\",\"es\":\"Esto es caro, ¿no? —No, es muy barato.\"}\n```\n\n> 💡 **Truco**: 吧 es perfecto para romper el hielo sin arriesgarte: 你是新来的学生吧？ (Eres nuevo, ¿no?).\n\n> ⚠️ **Ojo**: 吧 nunca se combina con 吗: ~~你是学生吗吧？~~. Una sola partícula.\n\n> 👩‍🏫 **Lo dijo el profe**: con 吧 la respuesta corta más natural es 对 o 是的; con 吗 lo más natural es repetir el verbo.\n\n```xb-exercise\n{\"kind\":\"choice\",\"data\":{\"prompt\":\"Ves a alguien con un libro de chino y supones que es estudiante. ¿Qué dices?\",\"options\":\"你是学生吗？ · 你是学生吧？ · 你是不是学生？ · 你是学生呢？\",\"answer\":\"1\",\"explain\":\"Tienes una suposición y pides confirmarla: 吧. (吗 y 是不是 valdrían, pero no transmiten tu idea previa; 呢 es incorrecto.)\"}}\n```",
+    "cues": [
+      { "id": "c1", "q": "¿Qué diferencia hay entre 你是学生吗？ y 你是学生吧？", "a": "Con 吗 no sé; con 吧 supongo que sí y pido confirmación." },
+      { "id": "c2", "q": "¿Cómo se confirma una suposición con 吧?", "a": "对。/ 是的。/ 是啊。 (o repitiendo el verbo)." },
+      { "id": "c3", "q": "¿Cómo se corrige? ", "a": "不是/不/没有 + la verdad: 不是，我是他的老师。" },
+      { "id": "c4", "q": "¿Cómo sé si 吧 es pregunta o sugerencia?", "a": "Por la entonación y el contexto: 你是学生吧？ (↗) vs 我们走吧。 (↘)." }
+    ],
+    "summary": "Frase + 吧？ = «…, ¿no?»: supones y pides confirmación; se responde 对/是的 o se corrige con 不是 + la verdad.",
+    "reviewed": false
+  },
+  {
+    "id": "zh-question-tag",
+    "type": "question",
+    "title": "Propuesta + 好吗 / 可以吗 / 行吗 / 怎么样: «¿vale?»",
+    "level": 1,
+    "tags": ["preguntas", "supervivencia", "u05"],
+    "grammarIds": ["ma", "modal-verbs"],
+    "unitId": "u05",
+    "fields": {
+      "structure": "Propuesta o petición + ，好吗？ / 可以吗？ / 行吗？ / 怎么样？ Ejemplos: 我们六点见，好吗？ · 我用一下你的手机，可以吗？ · 明天再说，行吗？ · 我们去吃饭，怎么样？",
+      "when": "Para proponer algo o pedir permiso de forma suave: primero dices el plan y luego añades la coletilla. 好吗 = ¿vale? (acuerdo) · 可以吗 = ¿puedo? / ¿se puede? (permiso) · 行吗 = ¿va bien? (coloquial, norte) · 怎么样 = ¿qué te parece? (opinión).",
+      "answer": "Aceptar: 好。/ 好的。/ 好啊！/ 可以。/ 行。/ 没问题。 Rechazar (siempre suavizando): 不行，…(motivo) / 对不起，我今天没有时间。/ 明天可以吗？ (contrapropuesta). Nunca se responde 是/不是. A 可以吗 se responde 可以/不可以 (o 不行); a 行吗, 行/不行; a 好吗, 好/不好 (这个不好 suena brusco: mejor da una alternativa).",
+      "qa": [
+        { "q": "我们六点在学校门口见，好吗？", "qpy": "Wǒmen liù diǎn zài xuéxiào ménkǒu jiàn, hǎo ma?", "qes": "Nos vemos a las seis en la puerta de la escuela, ¿vale?", "a": "好的，六点见。", "apy": "Hǎo de, liù diǎn jiàn.", "aes": "Vale, hasta las seis." },
+        { "q": "我用一下你的手机，可以吗？", "qpy": "Wǒ yòng yíxià nǐ de shǒujī, kěyǐ ma?", "qes": "¿Puedo usar un momento tu móvil?", "a": "可以，给你。", "apy": "Kěyǐ, gěi nǐ.", "aes": "Claro, toma." },
+        { "q": "明天再做，行吗？", "qpy": "Míngtiān zài zuò, xíng ma?", "qes": "Lo hacemos mañana, ¿va bien?", "a": "不行，今天得做。", "apy": "Bù xíng, jīntiān děi zuò.", "aes": "No, hay que hacerlo hoy." },
+        { "q": "我们去喝咖啡，怎么样？", "qpy": "Wǒmen qù hē kāfēi, zěnmeyàng?", "qes": "¿Vamos a tomar un café?", "a": "好啊！", "apy": "Hǎo a!", "aes": "¡Vale!" },
+        { "q": "老师，我今天早一点儿走，可以吗？", "qpy": "Lǎoshī, wǒ jīntiān zǎo yìdiǎnr zǒu, kěyǐ ma?", "qes": "Profesor, ¿puedo irme hoy un poco antes?", "a": "可以，没问题。", "apy": "Kěyǐ, méi wèntí.", "aes": "Sí, no hay problema." }
+      ],
+      "contrasts": [
+        "好吗 vs 吧 → [[zh-question-ba]]: 我们走吧 (sugerencia directa) vs 我们走，好吗？ (pregunto de verdad si te parece bien).",
+        "可以吗 vs 好吗: 可以吗 pide permiso (depende del otro); 好吗 busca acuerdo (plan común).",
+        "怎么样 → [[zh-question-zenmeyang]]: como coletilla de propuesta es equivalente a 好吗, pero también pide opinión sobre algo.",
+        "能……吗 / 可以……吗 dentro de la frase (你能帮我吗？) frente a coletilla (你帮我，可以吗？): mismo sentido, la coletilla suena más coloquial."
+      ]
+    },
+    "markdown": "## Cómo lo recuerdo\n\nPrimero suelto el plan, luego pregunto «¿vale?». Es el mismo mecanismo que en español («quedamos a las seis, ¿vale?»), así que solo tengo que elegir la coletilla.\n\n| Coletilla | Tipo | Se responde |\n|---|---|---|\n| 好吗？ | acuerdo (¿vale?) | 好 / 好的 / 好啊 · 不好吧… (mejor alternativa) |\n| 可以吗？ | permiso (¿puedo?) | 可以 / 没问题 · 不可以 / 不行 |\n| 行吗？ | ¿va bien? (coloquial) | 行 · 不行 |\n| 怎么样？ | ¿qué te parece? | 好啊 / 行 · 不太好，我们… |\n\n```xb-example\n{\"zh\":\"我们周末去北京，好吗？—好啊！我们坐火车去吧。\",\"py\":\"Wǒmen zhōumò qù Běijīng, hǎo ma? — Hǎo a! Wǒmen zuò huǒchē qù ba.\",\"es\":\"¿Vamos a Pekín el fin de semana? —¡Vale! Vayamos en tren.\"}\n```\n\n```xb-example\n{\"zh\":\"我坐这儿，可以吗？—对不起，这儿有人。\",\"py\":\"Wǒ zuò zhèr, kěyǐ ma? — Duìbuqǐ, zhèr yǒu rén.\",\"es\":\"¿Puedo sentarme aquí? —Lo siento, está ocupado.\",\"note\":\"Rechazar sin decir 不: se da el motivo.\"}\n```\n\n> 💡 **Truco**: la coletilla va detrás de una coma y de la frase completa; no la metas en medio: ~~我们好吗六点见？~~\n\n> 🏮 **¿Sabías que…?**: decir 不 a secas es raro en chino; para rechazar se suele dar un motivo (我今天没有时间) o proponer otra cosa (明天可以吗？).\n\n```xb-exercise\n{\"kind\":\"fill\",\"data\":{\"zh\":\"我们明天去，＿吗？—好的。\",\"answer\":\"好\",\"options\":\"好 · 是 · 有 · 什么\",\"es\":\"Vamos mañana, ¿vale? —Vale.\",\"explain\":\"La respuesta 好的 pide la coletilla 好吗.\"}}\n```",
+    "cues": [
+      { "id": "c1", "q": "¿Qué coletilla uso para pedir permiso?", "a": "……，可以吗？ → se responde 可以 / 不行." },
+      { "id": "c2", "q": "¿Qué coletilla uso para un plan común?", "a": "……，好吗？ (o 怎么样？) → 好的 / 好啊." },
+      { "id": "c3", "q": "¿Cómo se rechaza con educación?", "a": "Con motivo o alternativa: 对不起，我今天没有时间。/ 明天可以吗？" },
+      { "id": "c4", "q": "¿Dónde va la coletilla?", "a": "Al final, después de la frase completa y una coma." }
+    ],
+    "summary": "Plan + 好吗/可以吗/行吗/怎么样 pide acuerdo o permiso; se responde 好的/可以/行/没问题, y para decir que no se da un motivo.",
+    "reviewed": false
+  },
+  {
+    "id": "zh-question-duibudui",
+    "type": "question",
+    "title": "Coletillas de confirmación: 对不对 / 对吗 / 是吗 / 是不是",
+    "level": 1,
+    "tags": ["preguntas", "supervivencia", "u03"],
+    "grammarIds": ["shi", "ma"],
+    "unitId": "u03",
+    "fields": {
+      "structure": "Afirmación + ，对不对？ / 对吗？ / 是不是？ / 是吗？ Ejemplos: 你是西班牙人，对不对？ · 明天是星期六，对吗？ · 他不来了，是吗？ También como reacción independiente: 是吗？ (¿Ah, sí?).",
+      "when": "Para comprobar que has entendido bien o que un dato es correcto: «¿verdad?», «¿no es así?». 对不对 / 对吗 piden comprobar un dato; 是不是 pide confirmar una idea; 是吗？ suelto es una reacción de sorpresa o interés («¿ah, sí?»), no una pregunta real.",
+      "answer": "对 → 对。/ 对，对。/ 不对，… · 是 → 是。/ 是的。/ 不是，… · A un 是吗？ de reacción no se responde con lógica sino siguiendo la conversación: 是啊，…(y amplías). Si la afirmación era negativa (他不来了，是吗？), 对 confirma la negación: 对，他不来了。 (¡al contrario que en español, donde «sí» crearía confusión!).",
+      "qa": [
+        { "q": "你是西班牙人，对不对？", "qpy": "Nǐ shì Xībānyárén, duì bu duì?", "qes": "Eres español, ¿verdad?", "a": "对，我是西班牙人。", "apy": "Duì, wǒ shì Xībānyárén.", "aes": "Sí, soy español." },
+        { "q": "明天是星期六，对吗？", "qpy": "Míngtiān shì xīngqīliù, duì ma?", "qes": "Mañana es sábado, ¿no?", "a": "不对，明天是星期五。", "apy": "Bú duì, míngtiān shì xīngqīwǔ.", "aes": "No, mañana es viernes." },
+        { "q": "这是你的书，是不是？", "qpy": "Zhè shì nǐ de shū, shì bu shì?", "qes": "Este libro es tuyo, ¿no es así?", "a": "是的，谢谢！", "apy": "Shì de, xièxie!", "aes": "Sí, ¡gracias!" },
+        { "q": "王明不来了，是吗？", "qpy": "Wáng Míng bù lái le, shì ma?", "qes": "Wang Ming ya no viene, ¿es así?", "a": "对，他今天很忙。", "apy": "Duì, tā jīntiān hěn máng.", "aes": "Así es, hoy está muy ocupado." },
+        { "q": "我明天去北京。—是吗？太好了！", "qpy": "Wǒ míngtiān qù Běijīng. — Shì ma? Tài hǎo le!", "qes": "Mañana voy a Pekín. —¿Ah, sí? ¡Qué bien!", "a": "是啊，我跟安娜一起去。", "apy": "Shì a, wǒ gēn Ānnà yìqǐ qù.", "aes": "Sí, voy con Ana." }
+      ],
+      "contrasts": [
+        "对不对 vs 吧 → [[zh-question-ba]]: los dos piden confirmación; 吧 es más suave e integrado; 对不对 es más explícito, como «¿verdad?».",
+        "是吗？ (reacción) vs 是吗？ (coletilla): suelto = «¿ah, sí?»; tras una afirmación = «¿es así?».",
+        "对 vs 是: 对 confirma que un DATO es correcto; 是 confirma una identidad o idea (是的). En la práctica 对 vale casi siempre como «correcto».",
+        "是不是 al principio (是不是你的书？) o en medio (你是不是学生？) → [[zh-question-a-not-a]]."
+      ]
+    },
+    "markdown": "## Cómo lo recuerdo\n\n对 es «correcto»: 对不对 = «¿correcto o no?». Es la coletilla del que quiere comprobar un dato, como un profesor que repasa. 是吗 suelto, en cambio, es solo un «¿ah, sí?» para mostrar interés.\n\n```xb-example\n{\"zh\":\"你家有四口人，对不对？—对。\",\"py\":\"Nǐ jiā yǒu sì kǒu rén, duì bu duì? — Duì.\",\"es\":\"En tu familia sois cuatro, ¿verdad? —Correcto.\"}\n```\n\n```xb-example\n{\"zh\":\"你不喜欢咖啡，对吗？—对，我喜欢茶。\",\"py\":\"Nǐ bù xǐhuan kāfēi, duì ma? — Duì, wǒ xǐhuan chá.\",\"es\":\"No te gusta el café, ¿no? —Así es, me gusta el té.\",\"note\":\"对 confirma la frase negativa: «correcto, no me gusta».\"}\n```\n\n> ⚠️ **Ojo**: con una afirmación negativa, 对 = «así es, no…». En español «sí» aquí sería ambiguo; en chino no: 对 siempre significa «lo que has dicho es correcto».\n\n> 💡 **Truco**: para mostrar interés mientras alguien habla, un 是吗？ con entonación suave funciona como «¿ah, sí?» y anima a seguir.\n\n> ❌ **Error típico**: responder 是 a 对不对: lo esperable es **对** / **不对**. (是 se entiende, pero 对 es lo natural).\n\n```xb-exercise\n{\"kind\":\"choice\",\"data\":{\"prompt\":\"你是学生，对不对？ — ¿Respuesta natural para confirmar?\",\"options\":\"对。 · 有。 · 好。 · 行。\",\"answer\":\"0\",\"explain\":\"对不对 se responde 对 (correcto) o 不对.\"}}\n```",
+    "cues": [
+      { "id": "c1", "q": "¿Cómo se responde a 对不对 / 对吗?", "a": "对。 o 不对，+ corrección." },
+      { "id": "c2", "q": "¿Qué significa 是吗？ dicho suelto en una conversación?", "a": "«¿Ah, sí?»: reacción de interés, no pregunta real." },
+      { "id": "c3", "q": "你不去，对吗？—对。 ¿Va o no va?", "a": "No va: 对 confirma lo dicho, incluida la negación." },
+      { "id": "c4", "q": "¿Cuál es la diferencia de tono entre 吧 y 对不对?", "a": "吧 es más suave e integrado; 对不对 comprueba un dato de forma explícita." }
+    ],
+    "summary": "Afirmación + 对不对/对吗/是吗 pide confirmar un dato; se responde 对/不对 (o 是的/不是). 对 confirma también frases negativas.",
+    "reviewed": false
+  },
+  {
+    "id": "zh-question-intonation",
+    "type": "question",
+    "title": "Pregunta solo con entonación (sin partícula)",
+    "level": 1,
+    "tags": ["preguntas", "pronunciación", "u01"],
+    "grammarIds": ["ma"],
+    "unitId": "u01",
+    "fields": {
+      "structure": "Afirmación + entonación ascendente + ？: 你是学生？ 你不去？ 他是你哥哥？ En escrito, solo el signo ？ marca la pregunta.",
+      "when": "Coloquial. Sirve para: 1) repetir con sorpresa lo que acaban de decir (pregunta eco): 你不去？ (¿que no vas?); 2) confirmar algo que acabas de deducir: 你是新来的学生？; 3) ofrecer algo rápido: 喝茶？ (¿té?). No es la forma estándar de preguntar: en clase y en el examen usa 吗 o A不A.",
+      "answer": "Igual que con 吗: se repite el verbo o se niega: 你是学生？→ 是。/ 不是。 · 你不去？→ 不去，我很累。/ 去啊，谁说我不去？ · 喝茶？→ 好，谢谢。/ 不用了。 Como suele llevar sorpresa, la respuesta a menudo explica el motivo.",
+      "qa": [
+        { "q": "你不去？", "qpy": "Nǐ bú qù?", "qes": "¿Que no vas?", "a": "不去，我今天太累了。", "apy": "Bú qù, wǒ jīntiān tài lèi le.", "aes": "No voy, hoy estoy demasiado cansado." },
+        { "q": "你是新来的学生？", "qpy": "Nǐ shì xīn lái de xuésheng?", "qes": "¿Eres el estudiante nuevo?", "a": "是，我叫雨果。", "apy": "Shì, wǒ jiào Yǔguǒ.", "aes": "Sí, me llamo Hugo." },
+        { "q": "他是你哥哥？", "qpy": "Tā shì nǐ gēge?", "qes": "¿Es tu hermano mayor?", "a": "不是，他是我朋友。", "apy": "Bú shì, tā shì wǒ péngyou.", "aes": "No, es mi amigo." },
+        { "q": "喝茶？", "qpy": "Hē chá?", "qes": "¿Té?", "a": "好，谢谢。", "apy": "Hǎo, xièxie.", "aes": "Sí, gracias." },
+        { "q": "你会说汉语？", "qpy": "Nǐ huì shuō Hànyǔ?", "qes": "¿Sabes hablar chino? (sorpresa)", "a": "会一点儿。", "apy": "Huì yìdiǎnr.", "aes": "Un poco." }
+      ],
+      "contrasts": [
+        "Entonación vs 吗 → [[zh-question-ma]]: mismo contenido; 吗 es neutro y estándar, la entonación sola añade sorpresa o informalidad.",
+        "Entonación vs 吧 → [[zh-question-ba]]: 你是学生？ (sorpresa/deducción) vs 你是学生吧？ (suposición tranquila).",
+        "Pregunta eco (你不去？) vs 为什么不去？ → [[zh-question-weishenme]]: el eco solo expresa sorpresa; 为什么 pide el motivo."
+      ]
+    },
+    "markdown": "## Cómo lo recuerdo\n\nEs la única pregunta china que se parece a la española: subo la voz al final y listo. Pero cuidado: en chino los tonos ya suben y bajan, así que el «subidón» se nota menos; por eso lo normal es usar 吗.\n\n```xb-example\n{\"zh\":\"我明天不来。—你不来？为什么？\",\"py\":\"Wǒ míngtiān bù lái. — Nǐ bù lái? Wèishénme?\",\"es\":\"Mañana no vengo. —¿Que no vienes? ¿Por qué?\",\"note\":\"Pregunta eco: repites lo que has oído con sorpresa.\"}\n```\n\n```xb-example\n{\"zh\":\"你是老师？—不是，我也是学生。\",\"py\":\"Nǐ shì lǎoshī? — Bú shì, wǒ yě shì xuésheng.\",\"es\":\"¿Eres profesor? —No, yo también soy estudiante.\"}\n```\n\n> ⚠️ **Ojo**: en un texto escrito, una pregunta sin partícula solo se reconoce por el ？. Si escribes para el HSK, pon 吗: es más claro y nunca es incorrecto.\n\n> ⚠️ **Ojo**: no subas la entonación cuando SÍ hay 吗 o palabra interrogativa: en chino la pregunta ya está marcada y subir la voz deforma los tonos (你好吗 no se dice «nǐ hǎo MA?»).\n\n> 👩‍🏫 **Lo dijo el profe**: la oirás muchísimo en la calle (喝水？ 走？), pero en clase di la frase completa con 吗.\n\n```xb-exercise\n{\"kind\":\"choice\",\"data\":{\"prompt\":\"Tu amigo dice 我不喝咖啡。 y te sorprende. ¿Cuál es la pregunta eco natural?\",\"options\":\"你不喝咖啡？ · 你不喝咖啡吗吧？ · 你喝不喝咖啡？ · 咖啡呢？\",\"answer\":\"0\",\"explain\":\"La pregunta eco repite la frase con entonación ascendente, sin partícula.\"}}\n```",
+    "cues": [
+      { "id": "c1", "q": "¿Cuándo se usa una pregunta solo con entonación?", "a": "Coloquial: sorpresa (eco), deducción rápida u ofrecimiento breve." },
+      { "id": "c2", "q": "¿Cómo se responde?", "a": "Como a 吗: repitiendo o negando el verbo, a menudo con explicación." },
+      { "id": "c3", "q": "¿Qué forma conviene en el examen y en clase?", "a": "吗 o A不A: la entonación sola es informal." },
+      { "id": "c4", "q": "¿Debo subir la voz al final cuando uso 吗?", "a": "No: 吗 ya marca la pregunta y subir deforma los tonos." }
+    ],
+    "summary": "Afirmación con entonación ascendente = pregunta coloquial (sorpresa, eco, ofrecimiento); se responde repitiendo el verbo. En clase, mejor 吗.",
+    "reviewed": false
+  },
+  {
+    "id": "zh-question-summary",
+    "type": "free",
+    "title": "Tabla resumen: cómo preguntar y cómo responder",
+    "level": 1,
+    "tags": ["preguntas", "resumen", "u01"],
+    "grammarIds": ["ma", "ne", "ba", "question-words"],
+    "markdown": "## Todas las formas de preguntar en HSK 1\n\nLa regla que lo une todo: **la pregunta tiene el mismo orden que la respuesta**. O añades una partícula al final (吗, 呢, 吧…) o pones la palabra interrogativa justo donde irá el dato. Y se responde **repitiendo el verbo**, no con «sí/no».\n\n| Forma | Estructura | Cuándo | Cómo se responde | Ejemplo |\n|---|---|---|---|---|\n| 吗 | Afirmación + 吗？ | sí/no, sin idea previa | repite el verbo: 是/不是 · 有/没有 · 忙/不忙 | 你是学生吗？—是。 |\n| A不A | V不V / 有没有 / Adj不Adj | sí/no, más directo; sin 很/也/都 | eliges una mitad: 去/不去 | 你去不去？—去。 |\n| 呢 | Nombre + 呢？ | ¿y tú? · ¿dónde está X? | con la frase original · 在 + lugar | 我很好，你呢？—我也很好。 |\n| 吧？ | Afirmación + 吧？ | supones y pides confirmación | 对/是的 · 不是，+ corrección | 你是西班牙人吧？—对。 |\n| 对不对 / 对吗 / 是吗 | Afirmación + 对不对？ | comprobar un dato | 对/不对 (对 confirma también negativas) | 明天星期六，对吗？—不对。 |\n| 好吗 / 可以吗 / 行吗 / 怎么样 | Plan + 好吗？ | proponer, pedir permiso | 好的/可以/行/没问题 · motivo o alternativa | 我们六点见，好吗？—好的。 |\n| 还是 | A 还是 B？ | elegir entre dos | eliges una y repites el verbo (nunca 是) | 你喝茶还是咖啡？—我喝茶。 |\n| 什么 | V + 什么 (+ N) | qué | sustituyes 什么 por el dato | 你叫什么？—我叫雨果。 |\n| 谁 / 谁的 | 是谁 · 谁 + V · 谁的 + N | quién / de quién | nombre · 我是 · 是我的 | 他是谁？—他是我老师。 |\n| 哪 + clasif. | 哪个 · 哪本 · 哪国人 | cuál (entre opciones) | 这/那 + mismo clasificador | 你要哪个？—这个。 |\n| 哪儿 / 哪里 | 在哪儿 · 去哪儿 · 在哪儿 + V | dónde / adónde | 在 + lugar · 去 + lugar | 你去哪儿？—我去学校。 |\n| 几 | 几 + clasif. + N | cuántos (< 10), hora, fecha | número + mismo clasificador | 几点？—两点。 |\n| 多少 | 多少 (+ clasif.) + N | cuánto (cualquiera), precio, teléfono | número + unidad | 多少钱？—十块。 |\n| 怎么 | 怎么 + V | cómo (manera) | describes la manera | 怎么去？—坐地铁去。 |\n| 怎么样 | N + 怎么样？ | qué tal / qué te parece | adjetivo: 很好/不错 · 好啊/行 | 这个菜怎么样？—很好吃。 |\n| 为什么 | 为什么 + V | por qué | 因为 + motivo | 为什么学汉语？—因为我喜欢中国。 |\n| 什么时候 | 什么时候 + V | cuándo (abierto) | tiempo delante del verbo | 你什么时候来？—我明天来。 |\n| Entonación | Afirmación + ？ (↗) | eco, sorpresa, coloquial | como 吗 | 你不去？—不去。 |\n\n## Las cinco reglas que evitan el 90 % de los errores\n\n> ⚠️ **Ojo**: **una sola marca de pregunta** por frase: nunca 吗 con palabra interrogativa (~~你叫什么吗？~~), ni 吗 con A不A, ni 吗 con 还是.\n\n> ⚠️ **Ojo**: **no muevas nada**: la palabra interrogativa ocupa el sitio del dato (你去哪儿 / 我去学校), nunca va al principio como en español.\n\n> ⚠️ **Ojo**: **se responde con el verbo**: 是/不是, 有/没有, 去/不去, 会/不会. 对 solo para confirmar datos (吧, 对不对). 好 solo para aceptar planes.\n\n> ⚠️ **Ojo**: **几 lleva clasificador y es para pocos**; 多少 vale para todo y no necesita clasificador. Reloj y calendario siempre con 几.\n\n> ⚠️ **Ojo**: **no subas la entonación** cuando ya hay 吗 o palabra interrogativa: la pregunta ya está marcada y subir la voz te destroza los tonos.\n\n## Mini-diálogo que usa casi todo\n\n```xb-example\n{\"zh\":\"你是新来的学生吧？—对，我叫雨果。你呢？—我叫王明。你是哪国人？—我是西班牙人。你为什么来中国？—因为我在交通大学读硕士。你住在哪儿？—我住在学校。你有没有中国朋友？—有几个。我们一起吃饭，怎么样？—好啊！几点？—六点，行吗？—行！\",\"py\":\"Nǐ shì xīn lái de xuésheng ba? — Duì, wǒ jiào Yǔguǒ. Nǐ ne? — Wǒ jiào Wáng Míng. Nǐ shì nǎ guó rén? — Wǒ shì Xībānyárén. Nǐ wèishénme lái Zhōngguó? — Yīnwèi wǒ zài Jiāotōng Dàxué dú shuòshì. Nǐ zhù zài nǎr? — Wǒ zhù zài xuéxiào. Nǐ yǒu méiyǒu Zhōngguó péngyou? — Yǒu jǐ ge. Wǒmen yìqǐ chī fàn, zěnmeyàng? — Hǎo a! Jǐ diǎn? — Liù diǎn, xíng ma? — Xíng!\",\"es\":\"Eres el estudiante nuevo, ¿no? —Sí, me llamo Hugo. ¿Y tú? —Wang Ming. ¿De qué país eres? —Soy español. ¿Por qué has venido a China? —Porque hago un máster en la Jiaotong. ¿Dónde vives? —En la residencia. ¿Tienes amigos chinos? —Unos cuantos. ¿Comemos juntos? —¡Vale! ¿A qué hora? —A las seis, ¿va bien? —¡Va!\"}\n```\n\n```xb-cue\n{\"q\":\"¿Cuántas marcas de pregunta puede llevar una frase?\",\"a\":\"Una sola.\"}\n```\n\n```xb-exercise\n{\"kind\":\"choice\",\"data\":{\"prompt\":\"¿Cuál de estas preguntas es INCORRECTA?\",\"options\":\"你去哪儿？ · 你是不是老师？ · 你喝茶还是咖啡吗？ · 你家有几口人？\",\"answer\":\"2\",\"explain\":\"还是 ya es pregunta: sobra el 吗.\"}}\n```\n\n```xb-exercise\n{\"kind\":\"choice\",\"data\":{\"prompt\":\"你有没有哥哥？ ¿Respuesta correcta para «no»?\",\"options\":\"不是。 · 没有。 · 不对。 · 不好。\",\"answer\":\"1\",\"explain\":\"有没有 se responde 有 / 没有.\"}}\n```",
+    "cues": [
+      { "id": "c1", "q": "¿Qué regla une todas las preguntas chinas?", "a": "Mismo orden que la respuesta; la interrogativa ocupa el hueco del dato." },
+      { "id": "c2", "q": "¿Cuál es la respuesta universal a una pregunta de sí/no?", "a": "Repetir el verbo (是/不是, 有/没有, 去/不去)." },
+      { "id": "c3", "q": "¿Qué tres formas piden confirmación?", "a": "吧？, 对不对/对吗, 是吗/是不是." },
+      { "id": "c4", "q": "¿Cuándo se responde con 对 y cuándo con 好?", "a": "对 confirma un dato (吧, 对不对); 好 acepta un plan (好吗, 怎么样)." },
+      { "id": "c5", "q": "¿Qué nunca se combina con 吗?", "a": "Palabras interrogativas, A不A y 还是." }
+    ],
+    "summary": "Una tabla con las 18 formas de preguntar de HSK 1, su estructura, cuándo se usan y, sobre todo, cómo se responde a cada una.",
+    "reviewed": false
+  }
+]

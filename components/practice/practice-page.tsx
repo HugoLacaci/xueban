@@ -1,26 +1,34 @@
 "use client";
+/**
+ * Practicar 练: todos los ejercicios en un sitio. Modos: lección adaptativa (tipo Duolingo), por unidad, por tipo,
+ * por punto gramatical, mis errores, listening, speaking, por destreza, por tema del mazo, cuaderno de ejercicios y
+ * simulacro. Con bancos (chino) se usan sesiones adaptativas; sin bancos (ja/ko) los generadores del motor.
+ */
 import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "@/lib/languages/link";
 import { useSearchParams } from "next/navigation";
 import { useLiveQuery } from "dexie-react-hooks";
-import { AlertTriangle, BookOpen, Dumbbell, Hand, Shuffle, Timer } from "lucide-react";
+import { AlertTriangle, BookOpen, Dumbbell, Hand, Headphones, Layers, Mic, NotebookPen, Shuffle, Sparkles, Timer, Zap } from "lucide-react";
 import { db } from "@/lib/db";
 import { grammarById } from "@/lib/course";
 import { usePack } from "@/lib/languages/provider";
 import { practiceExercises, SKILL_TYPES, type PracticeOptions } from "@/lib/exercises/build";
-import { EXERCISE_LABELS, EXERCISE_TYPES, type Exercise, type ExerciseType } from "@/lib/exercises/types";
+import { bankSession, BANK_TYPE_GROUPS, currentLevel, UNIT_BANKS } from "@/lib/exercises/session";
+import { loadBank } from "@/lib/exercises/bank";
+import { EXERCISE_LABELS, EXERCISE_TYPES, BANK_EXERCISE_TYPES, type Exercise, type ExerciseType } from "@/lib/exercises/types";
 import { useDictionary } from "@/lib/dictionary/service";
+import { speechRecognitionAvailable } from "@/lib/tts";
 import { Button } from "@/components/ui/button";
 import { Badge, Card, PageHeader, Select, Spinner, Option } from "@/components/ui/primitives";
 import { ExerciseRunner, type SessionSummary } from "@/components/exercises/runner";
 import { SummaryCard } from "@/components/learn/steps";
-import { cn } from "@/lib/utils";
+import { cn, shuffle } from "@/lib/utils";
 import { getActiveLang } from "@/lib/languages/registry";
 import { targetLang } from "@/lib/languages/registry";
 import { ui, pageNative, culture } from "@/lib/languages/ui-text";
 import { Mixed } from "@/components/target/mixed";
 
-type Mode = PracticeOptions["mode"];
+type Mode = PracticeOptions["mode"] | "lesson" | "unit" | "type" | "listening" | "speaking" | "note";
 
 const SKILL_TEXT: Record<string, Record<string, { label: string; desc: string }>> = {
   zh: {
@@ -61,32 +69,79 @@ const skillsFor = () => {
 export function PracticePage() {
   const pack = usePack();
   const params = useSearchParams();
+  const hasBanks = pack.id === "zh";
   const dictStatus = useDictionary((s) => s.status);
   const load = useDictionary((s) => s.load);
   const categories = useLiveQuery(() => db.categories.where("lang").equals(getActiveLang()).sortBy("order"), []) ?? [];
   const wordCount = useLiveQuery(() => db.words.where("lang").equals(getActiveLang()).count(), []) ?? 0;
   const mistakes = useLiveQuery(() => db.exerciseAttempts.where("lang").equals(getActiveLang()).filter((a) => !a.correct).count(), []) ?? 0;
-  const [mode, setMode] = useState<Mode>((params.get("grammar") ? "grammar" : (params.get("mode") as Mode)) || "random");
+  const workbook = useLiveQuery(() => db.exerciseItems.where("lang").equals(getActiveLang()).count(), []) ?? 0;
+  const initialMode = (params.get("grammar") ? "grammar" : params.get("unit") ? "unit" : (params.get("mode") as Mode)) || (hasBanks ? "lesson" : "random");
+  const [mode, setMode] = useState<Mode>(initialMode);
   const [category, setCategory] = useState(params.get("cat") ?? "");
   const [grammarId, setGrammarId] = useState(params.get("grammar") ?? pack.grammar.points[0]?.id ?? "");
+  const [unitId, setUnitId] = useState(params.get("unit") ?? pack.curriculum.units.find((u) => u.level !== 0)?.id ?? "");
+  const [group, setGroup] = useState(BANK_TYPE_GROUPS[0].id);
   const [skill, setSkill] = useState(params.get("skill") ?? "listening");
-  const [count, setCount] = useState(Number(params.get("n") ?? 12));
+  const [count, setCount] = useState(Number(params.get("n") ?? (hasBanks ? 15 : 12)));
   const [types, setTypes] = useState<ExerciseType[]>([]);
   const [exercises, setExercises] = useState<Exercise[] | null>(null);
   const [loading, setLoading] = useState(false);
   const [summary, setSummary] = useState<SessionSummary | null>(null);
-  const autoStart = useRef(Boolean(params.get("grammar") || params.get("mode")));
+  const [level, setLevel] = useState(1);
+  const [bankInfo, setBankInfo] = useState<{ unit: string; items: number } | null>(null);
+  const [reviewRound, setReviewRound] = useState(false);
+  const autoStart = useRef(Boolean(params.get("grammar") || params.get("mode") || params.get("unit")));
+  const noteId = params.get("note");
 
   useEffect(() => {
     if (dictStatus === "idle") void load();
     void pack.characters.load().catch(() => undefined);
-  }, [dictStatus, load]);
+    if (hasBanks) void currentLevel().then(setLevel);
+  }, [dictStatus, load, hasBanks, pack]);
+
+  useEffect(() => {
+    if (!hasBanks || !unitId) return;
+    void loadBank(unitId.startsWith("u0-") ? "u0" : unitId).then((b) => setBankInfo(b ? { unit: unitId, items: b.items.length } : null));
+  }, [unitId, hasBanks]);
 
   const start = async () => {
     setLoading(true);
-    const ex = await practiceExercises({ mode, category, grammarId, skill, count, types: types.length ? types : undefined });
-    setExercises(ex);
-    setLoading(false);
+    setReviewRound(false);
+    try {
+      let ex: Exercise[] = [];
+      const speech = speechRecognitionAvailable();
+      if (mode === "note" && noteId) {
+        const note = await db.notes.get(noteId);
+        if (note) {
+          const { noteExercises } = await import("@/lib/notes/exercises");
+          ex = noteExercises(note, { max: count, seed: Date.now() % 1000, tiles: (s) => pack.exerciseAdapters.tiles(s) });
+        }
+      } else if (hasBanks && mode === "lesson") {
+        ex = await bankSession({ count, speechAvailable: speech });
+      } else if (hasBanks && mode === "unit") {
+        ex = await bankSession({ units: [unitId], count, speechAvailable: speech });
+      } else if (hasBanks && mode === "type") {
+        const g = BANK_TYPE_GROUPS.find((x) => x.id === group);
+        ex = await bankSession({ bankTypes: g?.types, count, speechAvailable: speech, maxLevel: 3 });
+      } else if (hasBanks && mode === "listening") {
+        ex = await bankSession({ bankTypes: BANK_TYPE_GROUPS.find((x) => x.id === "listening")!.types, count, maxLevel: 3 });
+      } else if (hasBanks && mode === "speaking") {
+        ex = await bankSession({ bankTypes: BANK_TYPE_GROUPS.find((x) => x.id === "speaking")!.types, count, maxLevel: 3, speechAvailable: true });
+      } else if (hasBanks && mode === "grammar") {
+        ex = await bankSession({ grammarIds: [grammarId], count, maxLevel: 3, speechAvailable: speech });
+        if (!ex.length) ex = await practiceExercises({ mode: "grammar", grammarId, count });
+      } else if (hasBanks && mode === "mistakes") {
+        ex = await bankSession({ count, mistakesOnly: true, maxLevel: 3, speechAvailable: speech });
+        if (!ex.length) ex = await practiceExercises({ mode: "mistakes", count });
+      } else {
+        const m = (["random", "mistakes", "topic", "grammar", "skill", "words"].includes(mode) ? mode : "random") as PracticeOptions["mode"];
+        ex = await practiceExercises({ mode: m, category, grammarId, skill, count, types: types.length ? types : undefined });
+      }
+      setExercises(ex);
+    } finally {
+      setLoading(false);
+    }
   };
 
   useEffect(() => {
@@ -97,20 +152,27 @@ export function PracticePage() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [dictStatus]);
 
-  const typeOptions = useMemo(() => EXERCISE_TYPES.filter((t) => t !== "comprehension" && t !== "reading-tf"), []);
+  const typeOptions = useMemo(() => EXERCISE_TYPES.filter((t) => t !== "comprehension" && t !== "reading-tf" && !BANK_EXERCISE_TYPES.includes(t)), []);
+  const units = pack.curriculum.units;
 
   if (summary) {
+    const failed = summary.results.filter((r) => !r.result.correct && !r.result.skip).map((r) => r.exercise);
     return (
       <div className="mx-auto max-w-2xl">
         <SummaryCard
           summary={summary}
-          title="Práctica terminada"
+          title={reviewRound ? "Repaso de fallos terminado" : "Práctica terminada"}
           onContinue={() => {
             setSummary(null);
             setExercises(null);
           }}
         />
-        <div className="mt-3 flex justify-center gap-2">
+        <div className="mt-3 flex flex-wrap justify-center gap-2">
+          {failed.length && !reviewRound ? (
+            <Button variant="default" onClick={() => { setSummary(null); setReviewRound(true); setExercises(shuffle(failed).map((e) => ({ ...e, id: `${e.id}-r` }))); }}>
+              <Sparkles /> Repasar los {failed.length} fallos
+            </Button>
+          ) : null}
           <Button variant="secondary" onClick={() => { setSummary(null); void start(); }}>
             <Shuffle /> Otra ronda igual
           </Button>
@@ -130,7 +192,7 @@ export function PracticePage() {
             <p lang={targetLang()} className="zh-kai text-lg text-ink">
               <Mixed>{culture().onboarding.proverbs[0]}</Mixed>
             </p>
-            <p className="mt-1 text-sm text-ink-faint">No hay material suficiente para este modo todavía (añade palabras al mazo o completa alguna lección).</p>
+            <p className="mt-1 text-sm text-ink-faint">No hay material suficiente para este modo todavía (añade palabras al mazo, completa alguna lección o haz una ronda para registrar errores).</p>
             <Button className="mt-3" variant="secondary" onClick={() => setExercises(null)}>
               Volver
             </Button>
@@ -138,7 +200,7 @@ export function PracticePage() {
         </div>
       );
     }
-    return <ExerciseRunner exercises={exercises} context="practice" onFinish={setSummary} title={modeLabel(mode, { category, grammarId, skill })} />;
+    return <ExerciseRunner exercises={exercises} context={mode === "note" ? `note:${noteId}` : "practice"} onFinish={setSummary} title={reviewRound ? "Repaso de fallos" : modeLabel(mode, { category, grammarId, skill, unitId, group, units: units.map((u) => [u.id, u.title] as [string, string]) })} />;
   }
 
   const canStart = !(loading || dictStatus === "loading" || (mode === "topic" && !category));
@@ -148,36 +210,84 @@ export function PracticePage() {
       <PageHeader
         title="Practicar"
         zh={pageNative("practice")}
-        subtitle="Ejercicios intercalados con corrección explicada. Todo fallo entra en «Mis puntos débiles» y en el repaso."
+        subtitle={hasBanks ? "Sesiones de 12–20 ejercicios mezclados con dificultad adaptativa: lo que fallas vuelve más, y al final repasas los fallos. Sin vidas que castiguen." : "Ejercicios intercalados con corrección explicada. Todo fallo entra en «Mis puntos débiles» y en el repaso."}
         action={
-          <Button variant="outline" asChild>
-            <Link href="/practicar/simulacro">
-              <Timer /> Simulacro <Mixed>{pack.exam.levels.find((l) => l.id === pack.exam.firstLevel)?.label ?? pack.exam.name}</Mixed>
-            </Link>
-          </Button>
+          <>
+            {hasBanks ? (
+              <Button variant="outline" asChild>
+                <Link href="/apuntes/cuaderno">
+                  <NotebookPen /> Cuaderno{workbook ? ` (${workbook})` : ""}
+                </Link>
+              </Button>
+            ) : null}
+            <Button variant="outline" asChild>
+              <Link href="/practicar/simulacro">
+                <Timer /> Simulacro <Mixed>{pack.exam.levels.find((l) => l.id === pack.exam.firstLevel)?.label ?? pack.exam.name}</Mixed>
+              </Link>
+            </Button>
+          </>
         }
       />
+      {hasBanks ? (
+        <p className="mb-3 text-xs text-ink-faint">
+          Nivel adaptativo actual: <Badge variant="jade">nivel {level}</Badge> {level < 3 ? "— una racha de 10 aciertos sube de nivel." : "— máximo."}
+        </p>
+      ) : null}
       <div role="radiogroup" aria-label="Modo de práctica" className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-        <ModeCard active={mode === "random"} onClick={() => setMode("random")} zh={ui().modes.random} icon={<Shuffle />} title="Aleatorio intercalado" desc="Mezcla de todo lo que estás estudiando. Recomendado a diario." />
+        {hasBanks ? (
+          <ModeCard active={mode === "lesson"} onClick={() => setMode("lesson")} zh="课" icon={<Zap />} title="Lección adaptativa" desc="15 ejercicios de todos los tipos, de tus unidades, con lo que más fallas." />
+        ) : null}
+        <ModeCard active={mode === "random"} onClick={() => setMode("random")} zh={ui().modes.random} icon={<Shuffle />} title="Aleatorio del mazo" desc="Mezcla de lo que estás estudiando en flashcards." />
         <ModeCard active={mode === "mistakes"} onClick={() => setMode("mistakes")} zh={ui().modes.mistakes} icon={<AlertTriangle />} title="Mis errores" desc={`Repite lo que has fallado (${mistakes} fallos registrados).`} disabled={!mistakes} />
-        <ModeCard active={mode === "topic"} onClick={() => setMode("topic")} zh={ui().modes.topic} icon={<Hand />} title="Por tema" desc="Una categoría de tu mazo.">
+        {hasBanks ? (
+          <ModeCard active={mode === "unit"} onClick={() => setMode("unit")} zh="单" icon={<BookOpen />} title="Por unidad" desc="Los ejercicios de una unidad del curso.">
+            {mode === "unit" ? (
+              <>
+                <Select value={unitId} onChange={(e) => setUnitId(e.target.value)} className="mt-3 w-full" onClick={(e) => e.stopPropagation()} aria-label="Unidad">
+                  {units.map((u) => (
+                    <Option key={u.id} value={u.id}>
+                      {u.title}
+                    </Option>
+                  ))}
+                </Select>
+                {bankInfo?.unit === unitId ? <p className="mt-1 text-xs opacity-75">{bankInfo.items} ejercicios en el banco</p> : <p className="mt-1 text-xs opacity-75">sin banco todavía: se usan los generadores</p>}
+              </>
+            ) : null}
+          </ModeCard>
+        ) : null}
+        {hasBanks ? (
+          <ModeCard active={mode === "type"} onClick={() => setMode("type")} zh="型" icon={<Layers />} title="Por tipo" desc="Diálogos, encuentra el error, transformar, traducir, velocidad…">
+            {mode === "type" ? (
+              <Select value={group} onChange={(e) => setGroup(e.target.value)} className="mt-3 w-full" onClick={(e) => e.stopPropagation()} aria-label="Tipo">
+                {BANK_TYPE_GROUPS.map((g) => (
+                  <option key={g.id} value={g.id}>
+                    {g.label}: {g.types.map((t) => EXERCISE_LABELS[t as ExerciseType] ?? t).slice(0, 3).join(", ")}…
+                  </option>
+                ))}
+              </Select>
+            ) : null}
+          </ModeCard>
+        ) : null}
+        <ModeCard active={mode === "grammar"} onClick={() => setMode("grammar")} zh={ui().modes.grammar} icon={<BookOpen />} title="Por punto gramatical" desc={hasBanks ? "≥ 25 ejercicios por estructura: huecos, errores, transformar, traducir…" : "Ordenar frases, huecos y traducción de un punto."}>
+          {mode === "grammar" ? (
+            <Select value={grammarId} onChange={(e) => setGrammarId(e.target.value)} className="mt-3 w-full" onClick={(e) => e.stopPropagation()} aria-label="Punto gramatical">
+              {pack.grammar.points.map((g) => (
+                <Option key={g.id} value={g.id}>
+                  {`${g.zh} · ${g.title}`}
+                </Option>
+              ))}
+            </Select>
+          ) : null}
+        </ModeCard>
+        {hasBanks ? <ModeCard active={mode === "listening"} onClick={() => setMode("listening")} zh="听" icon={<Headphones />} title="Listening" desc="Escucha y elige, escucha y responde, dictados, verdadero/falso, tonos. Voces y velocidades distintas." /> : null}
+        {hasBanks ? <ModeCard active={mode === "speaking"} onClick={() => setMode("speaking")} zh="说" icon={<Mic />} title="Speaking" desc="Repite conmigo, lee en voz alta, responde oralmente." /> : null}
+        <ModeCard active={mode === "topic"} onClick={() => setMode("topic")} zh={ui().modes.topic} icon={<Hand />} title="Por tema del mazo" desc="Una categoría de tus flashcards.">
           {mode === "topic" ? (
             <Select value={category} onChange={(e) => setCategory(e.target.value)} className="mt-3 w-full" onClick={(e) => e.stopPropagation()} aria-label="Categoría">
               <option value="">Elige categoría…</option>
               {categories.map((c) => (
                 <Option key={c.id} value={c.name}>
                   {c.name}
-                </Option>
-              ))}
-            </Select>
-          ) : null}
-        </ModeCard>
-        <ModeCard active={mode === "grammar"} onClick={() => setMode("grammar")} zh={ui().modes.grammar} icon={<BookOpen />} title="Por punto gramatical" desc="Ordenar frases, huecos y traducción de un punto.">
-          {mode === "grammar" ? (
-            <Select value={grammarId} onChange={(e) => setGrammarId(e.target.value)} className="mt-3 w-full" onClick={(e) => e.stopPropagation()} aria-label="Punto gramatical">
-              {pack.grammar.points.map((g) => (
-                <Option key={g.id} value={g.id}>
-                  {`${g.zh} · ${g.title}`}
                 </Option>
               ))}
             </Select>
@@ -214,7 +324,7 @@ export function PracticePage() {
         <div className="flex flex-wrap items-center gap-x-5 gap-y-3">
           <div className="flex items-center gap-1.5 text-sm" role="radiogroup" aria-label="Número de ejercicios">
             <span className="mr-1 text-ink-faint">Ejercicios</span>
-            {[8, 12, 20, 30].map((n) => (
+            {[8, 12, 15, 20, 30].map((n) => (
               <button
                 key={n}
                 type="button"
@@ -227,27 +337,29 @@ export function PracticePage() {
               </button>
             ))}
           </div>
-          <details className="text-sm">
-            <summary className="cursor-pointer text-ink-faint hover:text-ink">Tipos de ejercicio (opcional)</summary>
-            <div className="mt-2 flex flex-wrap gap-1">
-              {typeOptions.map((t) => (
-                <button
-                  key={t}
-                  type="button"
-                  aria-pressed={types.includes(t)}
-                  onClick={() => setTypes((ts) => (ts.includes(t) ? ts.filter((x) => x !== t) : [...ts, t]))}
-                  className={cn("rounded-full border px-2.5 py-0.5 text-xs transition-colors", types.includes(t) ? "border-celadon bg-celadon/12 text-celadon-ink" : "border-line text-ink-faint hover:text-ink")}
-                >
-                  <Mixed>{EXERCISE_LABELS[t]}</Mixed>
-                </button>
-              ))}
-              {types.length ? (
-                <button type="button" onClick={() => setTypes([])} className="text-xs text-indigo underline underline-offset-2">
-                  todos
-                </button>
-              ) : null}
-            </div>
-          </details>
+          {!hasBanks || ["random", "topic", "skill"].includes(mode) ? (
+            <details className="text-sm">
+              <summary className="cursor-pointer text-ink-faint hover:text-ink">Tipos de ejercicio (opcional)</summary>
+              <div className="mt-2 flex flex-wrap gap-1">
+                {typeOptions.map((t) => (
+                  <button
+                    key={t}
+                    type="button"
+                    aria-pressed={types.includes(t)}
+                    onClick={() => setTypes((ts) => (ts.includes(t) ? ts.filter((x) => x !== t) : [...ts, t]))}
+                    className={cn("rounded-full border px-2.5 py-0.5 text-xs transition-colors", types.includes(t) ? "border-celadon bg-celadon/12 text-celadon-ink" : "border-line text-ink-faint hover:text-ink")}
+                  >
+                    <Mixed>{EXERCISE_LABELS[t]}</Mixed>
+                  </button>
+                ))}
+                {types.length ? (
+                  <button type="button" onClick={() => setTypes([])} className="text-xs text-indigo underline underline-offset-2">
+                    todos
+                  </button>
+                ) : null}
+              </div>
+            </details>
+          ) : null}
           <div className="ml-auto hidden items-center gap-2 sm:flex">
             <Badge variant="outline" className="tabular">
               {wordCount} palabras en el mazo
@@ -306,19 +418,33 @@ function ModeCard({ active, onClick, icon, zh, title, desc, disabled, children, 
   );
 }
 
-function modeLabel(mode: Mode, o: { category: string; grammarId: string; skill: string }): string {
+function modeLabel(mode: Mode, o: { category: string; grammarId: string; skill: string; unitId: string; group: string; units: [string, string][] }): string {
   switch (mode) {
+    case "lesson":
+      return "Lección adaptativa";
     case "random":
       return "Práctica intercalada";
     case "mistakes":
       return "Mis errores";
     case "topic":
       return o.category;
+    case "unit":
+      return o.units.find(([id]) => id === o.unitId)?.[1] ?? "Unidad";
+    case "type":
+      return BANK_TYPE_GROUPS.find((g) => g.id === o.group)?.label ?? "Tipo";
+    case "listening":
+      return "Listening";
+    case "speaking":
+      return "Speaking";
     case "grammar":
       return grammarById(o.grammarId)?.title ?? "Gramática";
     case "skill":
       return skillsFor().find((s) => s.id === o.skill)?.label ?? "Destreza";
+    case "note":
+      return "Práctica del apunte";
     default:
       return "Práctica";
   }
 }
+
+export { UNIT_BANKS };

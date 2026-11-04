@@ -56,11 +56,33 @@ export interface Settings {
   tts: { voiceURI: string; rate: number; preferGenerated: boolean };
   anki: { enabled: boolean; url: string; srsSource: "anki" | "web"; autoSync: boolean; deckPrefix: string; langs: Record<Lang, boolean> };
   llm: { provider: "none" | "openai" | "anthropic" | "ollama" | "custom"; apiKey: string; baseUrl: string; model: string };
+  /** Tutor IA 老师 (opcional). La clave se guarda solo en este navegador. */
+  tutor: TutorSettings;
+  /** Modelo del alumno editable (resumen que ve el tutor) */
+  tutorMemory: { notes: string; goals: string; disabled: boolean };
+  /** Whisper local (transformers.js) para reconocimiento de voz sin nube */
+  whisper: { enabled: boolean; model: string };
   fsrs: { retention: number; maxInterval: number };
   sounds: boolean;
   onboardingDone: boolean;
+  /** Apuntes: tour de la guía visto */
+  notesTourDone: boolean;
   level: "zero" | "beginner" | "hsk1" | "hsk2";
 }
+
+export type TutorProvider = "none" | "ollama" | "gemini" | "groq" | "openrouter" | "anthropic" | "openai" | "custom";
+export interface TutorSettings {
+  provider: TutorProvider;
+  apiKey: string;
+  baseUrl: string;
+  model: string;
+  /** Usar el tutor como capa 4 del corrector */
+  correct: boolean;
+  /** Modo voz: leer las respuestas del tutor en voz alta */
+  speak: boolean;
+  temperature: number;
+}
+export const DEFAULT_TUTOR: TutorSettings = { provider: "none", apiKey: "", baseUrl: "", model: "", correct: true, speak: true, temperature: 0.4 };
 
 export const DEFAULT_TONE_COLORS: ToneColors = {
   1: "#d23c2f",
@@ -98,9 +120,13 @@ export const DEFAULT_SETTINGS: Settings = {
   tts: { voiceURI: "", rate: 0.9, preferGenerated: true },
   anki: { enabled: true, url: "http://127.0.0.1:8765", srsSource: "web", autoSync: false, deckPrefix: "中文 Chino", langs: { zh: true, ja: true, ko: true } },
   llm: { provider: "none", apiKey: "", baseUrl: "", model: "" },
+  tutor: DEFAULT_TUTOR,
+  tutorMemory: { notes: "", goals: "", disabled: false },
+  whisper: { enabled: false, model: "Xenova/whisper-tiny" },
   fsrs: { retention: 0.9, maxInterval: 365 },
   sounds: true,
   onboardingDone: false,
+  notesTourDone: false,
   level: "beginner",
 };
 

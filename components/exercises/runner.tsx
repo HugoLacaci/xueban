@@ -15,6 +15,7 @@ import { InkRipple } from "@/components/ornament/celebration";
 import { cn } from "@/lib/utils";
 import { ExerciseView } from "./exercise-view";
 import { targetLang } from "@/lib/languages/registry";
+import { NoteHereButton } from "@/components/notes/note-here-button";
 import { ui } from "@/lib/languages/ui-text";
 
 export interface RunnerResult {
@@ -274,7 +275,8 @@ export function ExerciseRunner({
                     ) : null}
                   </div>
                 </div>
-                <div className="mt-3 flex justify-end">
+                <div className="mt-3 flex flex-wrap items-center justify-end gap-2">
+                  <NoteHereButton text={() => [ex.prompt, result.expected ? "Respuesta: " + result.expected : "", result.explanation ?? ""].filter(Boolean).join(" · ")} source={{ kind: "exercise", ref: ex.itemId ?? ex.type }} className="mr-auto" />
                   <Button ref={continueRef} onClick={next} variant={tone === "ok" ? "jade" : "ink"} size="lg" className="w-full sm:w-auto">
                     {last ? "Terminar" : "Continuar"} <ArrowRight />
                     <Kbd className="ml-1 border-paper/30 bg-paper/15 text-paper">Enter</Kbd>
@@ -309,6 +311,12 @@ function responseText(r: Response): string {
     case "speaking":
       return r.transcript;
     case "self":
-      return r.correct ? "auto:ok" : "auto:fail";
+      return r.text ?? (r.correct ? "auto:ok" : "auto:fail");
+    case "findError":
+      return `#${r.index} ${r.correction}`;
+    case "cloze":
+      return r.answers.join(" | ");
+    case "speed":
+      return `${r.correct}/${r.total} en ${r.seconds}s`;
   }
 }

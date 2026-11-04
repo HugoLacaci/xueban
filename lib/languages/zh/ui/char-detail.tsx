@@ -16,6 +16,7 @@ import { WritingGrid } from "@/components/ornament/writing-grid";
 import { SealTag } from "@/components/ornament/seal";
 import { cn } from "@/lib/utils";
 import { Mixed } from "@/components/target/mixed";
+import { CharacterFamilies, EvolutionStrip, FormationDiagram, PictogramMorph } from "@/components/characters/origin";
 
 const ETYM_ES: Record<string, string> = {
   pictographic: "pictograma (dibuja el objeto)",
@@ -159,6 +160,24 @@ export function CharDetail({ ch, onNavigate, compact }: { ch: string; onNavigate
           ) : (
             <p className="mt-3 text-xs text-ink-faint">Sin datos de descomposición para este carácter.</p>
           )}
+          {!compact ? (
+            <details className="mt-4 rounded-[10px] border border-line px-3 py-2" open>
+              <summary className="cursor-pointer text-[11px] font-semibold uppercase tracking-[0.12em] text-ink-faint">Origen y evolución</summary>
+              <div className="mt-2 space-y-4">
+                <div className="flex flex-wrap items-start gap-4">
+                  <PictogramMorph ch={ch} size={120} />
+                  <div className="min-w-0 flex-1">
+                    <EvolutionStrip ch={ch} compact onNavigate={onNavigate} />
+                  </div>
+                </div>
+                <div>
+                  <p className="mb-1 text-[11px] font-semibold uppercase tracking-[0.12em] text-ink-faint">Cómo se formó</p>
+                  <FormationDiagram ch={ch} onNavigate={onNavigate} />
+                </div>
+                <CharacterFamilies ch={ch} onNavigate={onNavigate} />
+              </div>
+            </details>
+          ) : null}
           <div className="mt-4 flex flex-wrap gap-2">
             <Button size="sm" variant={state?.known ? "jade" : "outline"} onClick={() => void toggleKnown("known")}>
               {state?.known ? "Lo reconozco ✓" : "Marcar como reconocido"}
