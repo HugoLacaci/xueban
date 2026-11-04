@@ -166,7 +166,7 @@ export function TutorPanel() {
           ))}
         </ul>
       ) : null}
-      {t.provider === "ollama" ? <p className="text-xs text-ink-faint">Recomendado: qwen3.5:9b (≈ 12–16 GB de memoria de gráfica). En equipos modestos, qwen3.5:4b o qwen2.5:3b. Para usar el tutor desde la web publicada (sin servidor local) arranca Ollama con OLLAMA_ORIGINS=*.</p> : null}
+      {t.provider === "ollama" ? <p className="text-xs text-ink-faint">Recomendado: qwen3.5:9b (6,6 GB; va bien con 8 GB de memoria de gráfica). En equipos modestos, qwen3.5:4b o qwen2.5:3b. Para usar el tutor desde la web publicada (sin servidor local) arranca Ollama con OLLAMA_ORIGINS=*.</p> : null}
 
       {t.provider !== "none" ? (
         <div className="grid gap-3 sm:grid-cols-2">

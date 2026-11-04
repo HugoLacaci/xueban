@@ -75,6 +75,19 @@ export async function searchKnowledge(query: string, k = 4): Promise<{ id: strin
 
 /* ------------------------------------------------------------------ análisis de la respuesta */
 
+const TONE = "āáǎàēéěèīíǐìōóǒòūúǔùǖǘǚǜ";
+const PY_WORD = `[a-zA-Zü']*[${TONE}][a-zA-Zü'${TONE}]*`;
+const MODEL_PINYIN = new RegExp(`([\\u3400-\\u9fff][，。！？、]?)[ \\t]*[（(]?[ \\t]*((?:${PY_WORD}[ \\t]?)+)[ \\t]*[)）]?`, "g");
+
+/**
+ * El pinyin lo calcula siempre la app (pinyin-pro), nunca el modelo: si el modelo escribe pinyin con tonos justo
+ * después de un texto en chino («学生 xuésheng», «你好 (nǐ hǎo)»), se quita. El pinyin suelto en una explicación
+ * en español (sin hanzi delante) se respeta.
+ */
+export function stripModelPinyin(text: string): string {
+  return text.replace(MODEL_PINYIN, "$1").replace(/[ \t]+([，。！？])/g, "$1");
+}
+
 export function parseTurn(raw: string, toolCalls: { id: string; name: string; args: Record<string, unknown> }[] = []): TurnResult {
   let text = stripThinking(raw);
   const goalsHit: number[] = [];
@@ -83,6 +96,10 @@ export function parseTurn(raw: string, toolCalls: { id: string; name: string; ar
   text = text.replace(/<goal[^>]*>/g, "").replace(/<done\s*\/?>/g, "").replace(/<\/?goal>/g, "").trim();
   const newWords = Array.from(text.matchAll(/\[\[([^\]]+)\]\]/g)).map((m) => m[1]);
   text = text.replace(/\[\[([^\]]+)\]\]/g, "$1");
+  // algunos modelos marcan la palabra nueva con un solo corchete: [学生]
+  for (const m of text.matchAll(/\[([㐀-鿿]+)\]/g)) if (!newWords.includes(m[1])) newWords.push(m[1]);
+  text = text.replace(/\[([㐀-鿿]+)\]/g, "$1");
+  text = stripModelPinyin(text);
   const citations = Array.from(text.matchAll(/\[([^\]]{3,80})\]/g)).map((m) => m[1]).filter((c) => !/^\d+$/.test(c));
   const actions = toolCalls.map((c) => ({ id: c.id || uuid(), tool: c.name, args: c.args }));
   return { text, goalsHit, done, newWords, actions, citations };

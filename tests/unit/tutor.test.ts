@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { readdirSync, readFileSync } from "node:fs";
 import path from "node:path";
-import { parseTurn } from "@/lib/tutor/chat";
+import { parseTurn, stripModelPinyin } from "@/lib/tutor/chat";
 import { TutorCorrectionSchema } from "@/lib/tutor/corrector";
 import { extractJson } from "@/lib/tutor/providers";
 import { matchOption, type RoleplayFile } from "@/lib/tutor/roleplays";
@@ -14,6 +14,14 @@ describe("tutor · respuestas simuladas del modelo", () => {
     expect(r.newWords).toEqual(["名字"]);
     expect(r.text).not.toMatch(/<goal|<done|think/);
     expect(r.text).toContain("名字");
+  });
+  it("quita el pinyin que escribe el modelo y acepta palabras nuevas con un solo corchete", () => {
+    const r = parseTurn("你是来自西班牙的[学生]吗？学生 是 xuésheng。你好 (nǐ hǎo)！Esto está bien.");
+    expect(r.newWords).toContain("学生");
+    expect(r.text).not.toMatch(/xuésheng|nǐ hǎo|\[/);
+    expect(r.text).toContain("你是来自西班牙的学生吗？");
+    expect(r.text).toContain("Esto está bien.");
+    expect(stripModelPinyin("El tono de mā es alto.")).toBe("El tono de mā es alto.");
   });
   it("extractJson tolera bloque ```json y texto alrededor", () => {
     expect(extractJson('Claro:\n```json\n{"verdict":"wrong","score":40}\n```')).toEqual({ verdict: "wrong", score: 40 });

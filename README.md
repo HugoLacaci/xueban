@@ -233,7 +233,7 @@ Datos a confirmar externamente: formato y fechas del HSK 1 (2.0 → 3.0) en <htt
 
 El tutor está en **Ajustes → Tutor IA**. Pulsa «Probar conexión» después de elegir el proveedor.
 
-1. **Ollama (local, gratis, sin clave)**: instala Ollama y ejecuta `ollama pull qwen3.5:9b` (necesita unos 12–16 GB de memoria de gráfica; en equipos modestos, `qwen3.5:4b`). Para que la web publicada pueda llamarlo, arráncalo con la variable `OLLAMA_ORIGINS=*`. La app detecta los modelos instalados.
+1. **Ollama (local, gratis, sin clave)**: instala Ollama y ejecuta `ollama pull qwen3.5:9b` (6,6 GB; va bien con una gráfica de 8 GB; en equipos modestos, `qwen3.5:4b`). Para que la web publicada pueda llamarlo, arráncalo con la variable `OLLAMA_ORIGINS=*`. La app detecta los modelos instalados.
 2. **Gemini (gratis con clave)**: crea una clave en Google AI Studio y pégala en Ajustes.
 3. **Groq u OpenRouter (gratis con clave)**: igual que Gemini; en OpenRouter elige un modelo marcado «free».
 4. **Claude u OpenAI (de pago)**: pega tu clave si ya tienes una.

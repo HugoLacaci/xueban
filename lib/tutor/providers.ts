@@ -41,7 +41,7 @@ export interface ProviderInfo {
 }
 
 export const PROVIDERS: ProviderInfo[] = [
-  { id: "ollama", name: "Ollama (local)", baseUrl: "http://localhost:11434/v1", defaultModel: "qwen3.5:9b", needsKey: false, docs: "https://ollama.com/download", pros: "Gratis, privado y sin límites. Recomendado para chino: qwen3.5:9b (necesita ~12–16 GB de memoria de gráfica); en equipos modestos, qwen3.5:4b o qwen2.5:3b con menos calidad.", cons: "Necesita un PC potente. Para llamar desde la web publicada hay que arrancar Ollama con OLLAMA_ORIGINS=* (en local, el proxy /api/tutor lo evita).", limitsUrl: "https://github.com/ollama/ollama/blob/main/docs/faq.md", kind: "openai" },
+  { id: "ollama", name: "Ollama (local)", baseUrl: "http://localhost:11434/v1", defaultModel: "qwen3.5:9b", needsKey: false, docs: "https://ollama.com/download", pros: "Gratis, privado y sin límites. Recomendado para chino: qwen3.5:9b (6,6 GB; va bien con 8 GB de memoria de gráfica); en equipos modestos, qwen3.5:4b o qwen2.5:3b con menos calidad.", cons: "Necesita un PC potente. Para llamar desde la web publicada hay que arrancar Ollama con OLLAMA_ORIGINS=* (en local, el proxy /api/tutor lo evita).", limitsUrl: "https://github.com/ollama/ollama/blob/main/docs/faq.md", kind: "openai" },
   { id: "gemini", name: "Google Gemini (nivel gratuito)", baseUrl: "https://generativelanguage.googleapis.com/v1beta/openai", defaultModel: "gemini-2.5-flash", needsKey: true, docs: "https://aistudio.google.com/apikey", pros: "Nube gratis con clave de Google AI Studio.", cons: "Límites de uso por minuto y por día; en el nivel gratuito Google puede usar los datos para mejorar sus productos (comprueba las condiciones vigentes).", limitsUrl: "https://ai.google.dev/gemini-api/docs/rate-limits", kind: "openai" },
   { id: "groq", name: "Groq (modelos gratuitos)", baseUrl: "https://api.groq.com/openai/v1", defaultModel: "llama-3.3-70b-versatile", needsKey: true, docs: "https://console.groq.com/keys", pros: "Nube gratis y muy rápida.", cons: "Límites de peticiones y tokens por día; los modelos abiertos saben menos chino que Qwen.", limitsUrl: "https://console.groq.com/docs/rate-limits", kind: "openai" },
   { id: "openrouter", name: "OpenRouter (modelos :free)", baseUrl: "https://openrouter.ai/api/v1", defaultModel: "qwen/qwen3-235b-a22b:free", needsKey: true, docs: "https://openrouter.ai/keys", pros: "Acceso a muchos modelos; los que terminan en :free no cuestan.", cons: "Límites diarios en los modelos gratuitos y disponibilidad variable.", limitsUrl: "https://openrouter.ai/docs/api-reference/limits", kind: "openai" },
@@ -115,6 +115,9 @@ export async function chat(t: TutorSettings, messages: ChatTurn[], opts: ChatOpt
     temperature: opts.temperature ?? t.temperature ?? 0.4,
     max_tokens: opts.maxTokens ?? 1200,
   };
+  // Qwen 3/3.5 «piensan» por defecto: en Ollama gastan todos los tokens razonando y devuelven el contenido vacío
+  // (y tardan ~90 s). Para un tutor conversacional se desactiva el razonamiento.
+  if (t.provider === "ollama") body.reasoning_effort = "none";
   if (opts.json) body.response_format = { type: "json_object" };
   if (opts.tools?.length) body.tools = opts.tools.map((f) => ({ type: "function", function: { name: f.name, description: f.description, parameters: f.parameters } }));
   const data = (await post(`${url}/chat/completions`, body, key ? { authorization: `Bearer ${key}` } : {}, opts.signal)) as { choices?: { message?: { content?: string | null; tool_calls?: { id: string; function: { name: string; arguments: string } }[] } }[] };
