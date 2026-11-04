@@ -13,6 +13,7 @@ import { recognizeOnce, speechRecognitionAvailable } from "@/lib/tts";
 import { HandwritingPad } from "@/components/target/handwriting-pad";
 import type { Candidate } from "@/lib/handwriting";
 import { hanziCandidates, PINYIN_NUMBERED, PINYIN_RUN } from "@/components/notes/editor/slash-menu";
+import { onChangeWithTones } from "@/lib/correction/live-tones";
 import { Reading } from "@/components/target/reading";
 import { Button } from "@/components/ui/button";
 import { Input, Kbd } from "@/components/ui/primitives";
@@ -124,6 +125,9 @@ export function AnswerInput({ mode, value, onChange, onSubmit, disabled, autoFoc
             ref={ref}
             value={value}
             onChange={(e) => {
+              // en modo pinyin el número se convierte en tilde al escribirlo (xi3hua4n → xǐhuàn);
+              // en modo hanzi se mantiene para poder elegir caracteres con Tab
+              if (isPinyin) return onChangeWithTones(e, onChange);
               onChange(e.target.value);
               refreshCands(e.target.value);
             }}

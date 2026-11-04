@@ -6,9 +6,11 @@
  */
 import type { Lexicon } from "@/lib/segment";
 import { wordPinyin } from "@/lib/languages/zh/pinyin/convert";
-import { alignHanzi, bestReference, bestReferencePinyin } from "./align";
+import { alignHanzi, bestReference, bestReferencePinyin, pinyinReferenceSyllables } from "./align";
+import { pinyinToHanzi } from "./pinyin-hanzi";
+import { numberedToMarked } from "@/lib/languages/zh/pinyin/tones";
 import { lint } from "./linter";
-import { loadT2S, normalizeAnswer, canonicalize, stripAll } from "./normalize";
+import { loadT2S, normalizeAnswer, canonicalize, detectKind, parsePinyin, stripAll, toSimplified } from "./normalize";
 import type { Alternative, CorrectionError, CorrectionInput, CorrectionReport } from "./types";
 
 export * from "./types";
@@ -28,10 +30,17 @@ export function sentencePinyin(zh: string): string {
   return p ? p.charAt(0).toUpperCase() + p.slice(1) : "";
 }
 
-const PENALTY: Record<string, number> = { missing: 15, extra: 10, order: 12, char: 10, word: 12, tone: 6, pinyin: 10, grammar: 15 };
+const PENALTY: Record<string, number> = { missing: 15, extra: 10, order: 18, char: 12, word: 15, tone: 6, pinyin: 10, grammar: 15 };
 function scoreFrom(similarity: number, errors: CorrectionError[]): number {
   let s = 100;
-  for (const e of errors) s -= e.severity === "warn" ? 4 : (PENALTY[e.type] ?? 10);
+  let order = false;
+  for (const e of errors) {
+    if (e.type === "order" && e.severity === "error") {
+      if (order) continue;
+      order = true;
+    }
+    s -= e.severity === "info" ? 0 : e.severity === "warn" ? 4 : (PENALTY[e.type] ?? 10);
+  }
   if (similarity < 0.34) s = Math.min(s, 30);
   return Math.max(0, Math.min(100, s));
 }
@@ -41,7 +50,7 @@ function alternativesFrom(refs: string[], chosen: string): Alternative[] {
   return refs
     .filter((r) => canonicalize(stripAll(r)) !== canonicalize(stripAll(chosen)))
     .slice(0, 5)
-    .map((zh) => ({ zh, py: sentencePinyin(zh), register: /您|请|可以/.test(zh) ? "formal" : /吧|啊|呗|一下/.test(zh) ? "colloquial" : "neutral" }));
+    .map((zh) => (detectKind(zh) === "pinyin" ? { zh: numberedToMarked(zh), py: "", register: "neutral" as const } : { zh, py: sentencePinyin(zh), register: /您|请|可以/.test(zh) ? "formal" : /吧|啊|呗|一下/.test(zh) ? "colloquial" : "neutral" }));
 }
 
 /** Práctica extra: 3 frases nuevas con la misma estructura (del banco interno por regla, si existe). */
@@ -126,7 +135,8 @@ function hanziFromPinyinAlignment(ref: string): string {
 
 export async function correct(input: CorrectionInput, opts: CorrectOptions = {}): Promise<CorrectionReport> {
   await loadT2S();
-  const refs = (input.references ?? []).map((r) => r.trim()).filter(Boolean);
+  // las soluciones en caracteres tradicionales se comparan en simplificado (喜歡 = 喜欢)
+  const refs = (input.references ?? []).map((r) => r.trim()).filter(Boolean).map((r) => (detectKind(r) === "pinyin" ? r : toSimplified(r)));
   const norm = normalizeAnswer(input.answer);
   const mode = input.mode ?? (norm.kind === "pinyin" ? "pinyin" : "hanzi");
   const base: CorrectionReport = {
@@ -143,24 +153,59 @@ export async function correct(input: CorrectionInput, opts: CorrectOptions = {})
   if (norm.kind === "empty") return { ...base, verdict: "wrong", errors: [{ type: "missing", explanation: "No has escrito nada.", severity: "error", source: "align" }] };
 
   let hanzi = norm.hanzi ?? "";
+  // referencias del profesor escritas en pinyin (con números o tildes)
+  const pinyinRefs = refs.filter((r) => detectKind(r) === "pinyin");
+  const hanziRefs = refs.filter((r) => detectKind(r) !== "pinyin");
+  /** Muestra una referencia en pinyin con tildes (nunca con números) y su versión probable en hanzi para el audio. */
+  let chosenRef: string | undefined;
+  const hanziCache = new Map<string, string | null>();
+  const refHanzi = (ref: string) => {
+    if (!hanziCache.has(ref)) hanziCache.set(ref, pinyinToHanzi(pinyinReferenceSyllables(ref)));
+    return hanziCache.get(ref) ?? null;
+  };
+  const setPinyinCorrected = (ref: string) => {
+    chosenRef = ref;
+    base.corrected = numberedToMarked(ref.replace(/v/g, "ü"));
+    base.correctedPy = undefined;
+    base.correctedHanzi = refHanzi(ref) ?? undefined;
+  };
   // ---- capa 2: alineación
   if (refs.length) {
     base.layers.align = true;
-    if (norm.kind === "pinyin" && norm.syllables) {
-      const a = bestReferencePinyin(norm.syllables, refs, opts.lexicon);
+    // respuesta en hanzi y solución solo en pinyin: se compara por sílabas a partir del pinyin de la respuesta
+    if (norm.kind !== "pinyin" && !hanziRefs.length && pinyinRefs.length) {
+      const py = parsePinyin(sentencePinyin(hanzi));
+      const syl = py.syllables.map((s) => ({ ...s, tone: s.tone || 5 }));
+      const a = bestReferencePinyin(syl, pinyinRefs, opts.lexicon, refHanzi);
       if (a) {
         base.alignment = a.tokens;
         base.errors.push(...a.errors);
-        base.corrected = a.reference;
-        base.correctedPy = sentencePinyin(a.reference);
+        setPinyinCorrected(a.reference);
+        base.answerPy = sentencePinyin(hanzi);
+        base.score = scoreFrom(a.similarity, base.errors);
+      }
+    } else if (norm.kind === "pinyin" && norm.syllables) {
+      // en una respuesta con tonos, la sílaba sin tono es tono neutro (de, ma, le…)
+      const syl = norm.hasTones ? norm.syllables.map((s) => ({ ...s, tone: s.tone || 5 })) : norm.syllables;
+      const a = bestReferencePinyin(syl, refs, opts.lexicon, refHanzi);
+      if (a) {
+        const refPinyin = detectKind(a.reference) === "pinyin";
+        base.alignment = a.tokens;
+        base.errors.push(...a.errors);
+        if (refPinyin) setPinyinCorrected(a.reference);
+        else {
+          base.corrected = a.reference;
+          base.correctedPy = sentencePinyin(a.reference);
+        }
         base.answerPy = norm.text;
-        hanzi = a.similarity >= 0.6 ? hanziFromPinyinAlignment(a.reference) : "";
+        // con referencia en pinyin no hay hanzi fiables sobre los que pasar el linter
+        hanzi = !refPinyin && a.similarity >= 0.6 ? hanziFromPinyinAlignment(a.reference) : "";
         base.answer = hanzi || norm.text;
         if (!norm.hasTones) base.errors.push({ type: "tone", explanation: "Has escrito el pinyin sin tonos: se corrige solo la sílaba. Añade números (ni3) o tildes para practicar los tonos.", severity: "warn", source: "align" });
         base.score = scoreFrom(a.similarity, base.errors);
       }
     } else {
-      const a = bestReference(hanzi, refs, opts.lexicon);
+      const a = bestReference(hanzi, hanziRefs.length ? hanziRefs : refs, opts.lexicon);
       if (a) {
         base.alignment = a.tokens;
         base.errors.push(...a.errors);
@@ -170,9 +215,18 @@ export async function correct(input: CorrectionInput, opts: CorrectOptions = {})
         base.score = scoreFrom(a.similarity, base.errors);
       }
     }
-    base.alternatives = alternativesFrom(refs, base.corrected ?? refs[0]);
+    base.alternatives = alternativesFrom(refs, chosenRef ?? base.corrected ?? refs[0]);
   } else if (norm.kind !== "pinyin") {
     base.answerPy = sentencePinyin(hanzi);
+  } else if (norm.syllables) {
+    const syl = norm.hasTones ? norm.syllables.map((s) => ({ base: s.base, tone: s.tone || 5 })) : norm.syllables.map((s) => ({ base: s.base, tone: 0 }));
+    const probable = pinyinToHanzi(syl);
+    base.answerPy = norm.text;
+    if (probable) {
+      hanzi = probable;
+      base.answer = probable;
+      base.errors.push({ type: "word", explanation: `Sin solución del profesor: interpreto tu pinyin como «${probable}» para revisar la gramática. Si querías otros caracteres, escríbelos en hanzi.`, severity: "info", source: "align" });
+    }
   }
 
   // ---- capa 3: linter (sobre hanzi; si la respuesta fue en pinyin, sobre los hanzi propuestos si los hay)
@@ -183,6 +237,7 @@ export async function correct(input: CorrectionInput, opts: CorrectOptions = {})
       // no duplicar: si la alineación ya marcó la zona (p. ej. orden) se añade como explicación de regla
       base.errors.push({ ...i });
     }
+    if (refs.length) base.score = Math.max(0, base.score - issues.filter((i) => i.severity === "error").length * 10);
     if (!refs.length) {
       const fix = issues.find((i) => i.fix)?.fix;
       if (fix) {
@@ -229,9 +284,12 @@ export async function correct(input: CorrectionInput, opts: CorrectOptions = {})
   const hard = base.errors.filter((e) => e.severity === "error");
   const warns = base.errors.filter((e) => e.severity === "warn");
   if (refs.length) {
-    base.verdict = hard.length === 0 ? (warns.length ? "improvable" : "correct") : base.score >= 60 ? "improvable" : "wrong";
-    if (hard.length && base.score >= 60 && hard.every((e) => e.type === "tone" || e.type === "word")) base.verdict = "improvable";
-    if (hard.some((e) => e.type === "missing" || e.type === "extra" || e.type === "order" || e.type === "char" || e.type === "grammar" || e.type === "pinyin")) base.verdict = base.score >= 75 ? "improvable" : "wrong";
+    const grammar = hard.some((e) => e.source === "linter" || e.type === "grammar" || e.type === "order");
+    const onlyTones = hard.length > 0 && hard.every((e) => e.type === "tone");
+    if (!hard.length) base.verdict = warns.length ? "improvable" : "correct";
+    else if (grammar) base.verdict = "wrong";
+    else if (onlyTones) base.verdict = hard.length <= 2 ? "improvable" : "wrong";
+    else base.verdict = base.score >= 85 && hard.length === 1 ? "improvable" : "wrong";
   } else if (base.layers.tutor && base.verdict !== "partial") {
     /* el tutor decidió */
   } else if (hanzi) {

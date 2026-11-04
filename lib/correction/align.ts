@@ -10,7 +10,7 @@ import type { Lexicon } from "@/lib/segment";
 import { wordPinyin } from "@/lib/languages/zh/pinyin/convert";
 import { normalizePinyin, syllablesOf, toneOf } from "@/lib/languages/zh/pinyin/tones";
 import type { AlignedToken, CorrectionError, SpanRef } from "./types";
-import { canonicalize, type PinyinSyllable, words } from "./normalize";
+import { canonicalize, detectKind, parsePinyin, type PinyinSyllable, words } from "./normalize";
 
 export interface AlignResult {
   tokens: AlignedToken[];
@@ -136,13 +136,35 @@ export function alignHanzi(user: string, reference: string, lexicon?: Lexicon): 
 }
 
 /** Alinea una respuesta en pinyin (sílabas) con la referencia (hanzi → pinyin) y detecta errores de tono/sílaba. */
-export function alignPinyin(userSyl: PinyinSyllable[], reference: string, lexicon?: Lexicon): AlignResult {
-  const rw = words(canonicalize(reference), lexicon);
+/**
+ * Sílabas de una referencia escrita en pinyin (números o tildes). Si la frase lleva tonos, las sílabas sin tono
+ * son tono neutro (5); si no lleva ninguno, el tono es desconocido (0) y no se corrige.
+ */
+export function pinyinReferenceSyllables(reference: string): { base: string; tone: number; marked: string; word: string; wi: number }[] {
+  const p = parsePinyin(reference);
+  return p.syllables.map((s, wi) => ({ base: s.base, tone: s.tone || (p.hasTones ? 5 : 0), marked: s.marked, word: s.marked, wi }));
+}
+
+/**
+ * @param refHanzi si la referencia está en pinyin, su versión probable en hanzi (para conocer el tono léxico de cada
+ *   sílaba: 欢 es huān, así que «huàn» es un error aunque el profesor escribiera «huan» en tono neutro).
+ */
+export function alignPinyin(userSyl: PinyinSyllable[], reference: string, lexicon?: Lexicon, refHanzi?: string | null): AlignResult {
+  const refIsPinyin = detectKind(reference) === "pinyin";
+  const rw = refIsPinyin ? [] : words(canonicalize(reference), lexicon);
   // sílabas de referencia con su palabra
-  const refSyl: { base: string; tone: number; marked: string; word: string; wi: number }[] = [];
+  const refSyl: { base: string; tone: number; marked: string; word: string; wi: number; ch?: string }[] = [];
+  if (refIsPinyin) {
+    const chars = refHanzi ? Array.from(refHanzi) : [];
+    const syl = pinyinReferenceSyllables(reference);
+    refSyl.push(...syl.map((s, k) => ({ ...s, ch: chars.length === syl.length ? chars[k] : undefined })));
+  }
   rw.forEach((w, wi) => {
-    for (const s of syllablesOf(wordPinyin(w))) refSyl.push({ base: normalizePinyin(s), tone: toneOf(s), marked: s, word: w, wi });
+    const chars = Array.from(w);
+    const syl = syllablesOf(wordPinyin(w));
+    syl.forEach((s, k) => refSyl.push({ base: normalizePinyin(s), tone: toneOf(s), marked: s, word: w, wi, ch: chars.length === syl.length ? chars[k] : undefined }));
   });
+  if (refIsPinyin) rw.push(...refSyl.map((s) => s.marked));
   const u = userSyl.map((s) => s.base);
   const r = refSyl.map((s) => s.base);
   const path = needlemanWunsch(u, r, (a, b) => (a === b ? 0 : similarSyllable(a, b) ? 0.5 : 1));
@@ -154,9 +176,21 @@ export function alignPinyin(userSyl: PinyinSyllable[], reference: string, lexico
       const us = userSyl[p.i];
       const rs = refSyl[p.j];
       if (us.base === rs.base) {
-        if (us.tone && us.tone !== rs.tone) {
+        const neutral = (us.tone === 5) !== (rs.tone === 5);
+        // tono léxico del carácter (欢 → huān): con tono neutro solo se acepta el tono original de verdad
+        const lexical = rs.ch ? toneOf(wordPinyin(rs.ch)) : 0;
+        const wrongLexical = neutral && us.tone !== 5 && lexical >= 1 && lexical <= 4 && us.tone !== lexical;
+        if (us.tone && rs.tone && us.tone !== rs.tone && neutral && !wrongLexical) {
+          // tono neutro frente a tono léxico (xǐhuan / xǐhuān, yīfu / yīfú): aviso, no error
+          tokens.push({ user: us.marked, ref: rs.marked, status: "ok" });
+          ok++;
+          errors.push({ type: "tone", span: span(p.i, us.raw), expected: rs.marked, explanation: `«${us.marked}» / «${rs.marked}»: en el habla esta sílaba suele ir en tono neutro y muchos libros la escriben con su tono original. No cuenta como error.`, severity: "info", source: "align" });
+        } else if (us.tone && rs.tone && us.tone !== rs.tone) {
           tokens.push({ user: us.marked, ref: rs.marked, status: "tone", userPy: us.marked, refPy: rs.marked });
-          errors.push({ type: "tone", span: span(p.i, us.raw), expected: rs.marked, explanation: `«${us.marked}» → «${rs.marked}»: ${rs.word} lleva ${toneName(rs.tone)}.`, severity: "error", source: "align" });
+          const why = wrongLexical
+            ? `«${us.marked}» → «${rs.marked}»: ${rs.ch} se pronuncia con ${toneName(lexical)} (y aquí suele ir en tono neutro), no con ${toneName(us.tone)}.`
+            : `«${us.marked}» → «${rs.marked}»: ${refIsPinyin ? "lleva" : `${rs.word} lleva`} ${toneName(rs.tone)}.`;
+          errors.push({ type: "tone", span: span(p.i, us.raw), expected: rs.marked, explanation: why, severity: "error", source: "align" });
         } else {
           tokens.push({ user: us.marked, ref: rs.marked, status: "ok" });
           ok++;
@@ -211,10 +245,10 @@ export function bestReference(user: string, refs: string[], lexicon?: Lexicon): 
   return best;
 }
 
-export function bestReferencePinyin(syl: PinyinSyllable[], refs: string[], lexicon?: Lexicon): AlignResult | null {
+export function bestReferencePinyin(syl: PinyinSyllable[], refs: string[], lexicon?: Lexicon, hanziFor?: (ref: string) => string | null): AlignResult | null {
   let best: AlignResult | null = null;
   for (const r of refs) {
-    const a = alignPinyin(syl, r, lexicon);
+    const a = alignPinyin(syl, r, lexicon, hanziFor && detectKind(r) === "pinyin" ? hanziFor(r) : null);
     if (!best || a.similarity > best.similarity || (a.similarity === best.similarity && a.errors.length < best.errors.length)) best = a;
   }
   return best;

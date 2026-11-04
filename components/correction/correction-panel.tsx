@@ -18,6 +18,8 @@ import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { Mixed } from "@/components/target/mixed";
 
+const HAN = /[㐀-鿿]/;
+
 const TYPE_LABEL: Record<string, string> = { missing: "falta", extra: "sobra", order: "orden", char: "carácter", tone: "tono", pinyin: "sílaba", word: "palabra / registro", grammar: "regla" };
 const TYPE_CLS: Record<AlignedToken["status"], string> = { ok: "corr-ok", missing: "corr-missing", extra: "corr-extra", sub: "corr-sub", moved: "corr-moved", tone: "corr-tone" };
 
@@ -28,12 +30,14 @@ function Verdict({ r }: { r: CorrectionReport }) {
     wrong: { icon: "❌", label: "Incorrecta", cls: "border-danger/40 bg-danger/8 text-danger" },
     partial: { icon: "◐", label: "Corrección parcial", cls: "border-line bg-paper-sunk/60 text-ink-soft" },
   }[r.verdict];
+  // «mejorable» con un error de verdad (falta 吗, sobra 了, un tono) no es «correcta»: es «casi»
+  const label = r.verdict === "improvable" && r.errors.some((e) => e.severity === "error") ? "Casi: revisa el error marcado" : map.label;
   return (
     <div className={cn("flex flex-wrap items-center gap-3 rounded-[10px] border px-3 py-2", map.cls)} role="status" aria-live="polite">
       <span className="text-lg" aria-hidden="true">
         {map.icon}
       </span>
-      <span className="font-semibold">{map.label}</span>
+      <span className="font-semibold">{label}</span>
       {r.verdict !== "partial" ? <span className="tabular ml-auto font-serif-es text-2xl">{r.score}<span className="text-sm opacity-70">/100</span></span> : null}
       {r.verdict === "partial" ? <span className="ml-auto text-xs">añade la solución de tu profesor o activa el tutor para una corrección completa</span> : null}
     </div>
@@ -78,6 +82,9 @@ function AlignedSentence({ tokens, errors }: { tokens: AlignedToken[]; errors: C
 export function CorrectionPanel({ report, es, onPractice, className }: { report: CorrectionReport; es?: string; onPractice?: (x: { es: string; zh: string }) => void; className?: string }) {
   const pack = usePack();
   const [showAlt, setShowAlt] = useState(true);
+  // si la solución vino en pinyin, la voz lee la versión en hanzi (nunca el pinyin, y menos con números)
+  const correctedIsPinyin = Boolean(report.corrected && !HAN.test(report.corrected));
+  const audioText = correctedIsPinyin ? (report.correctedHanzi ?? null) : (report.corrected ?? null);
   const errors = report.errors.filter((e) => !(e.type === "tone" && e.severity === "warn" && report.mode !== "pinyin"));
   return (
     <section className={cn("space-y-4", className)} aria-label="Corrección">
@@ -111,11 +118,29 @@ export function CorrectionPanel({ report, es, onPractice, className }: { report:
         <div className="card-paper p-3">
           <p className="mb-1 text-[11px] font-semibold uppercase tracking-[0.12em] text-ink-faint">{report.verdict === "correct" ? "Frase" : "Frase correcta"}</p>
           <div className="flex items-start gap-2">
-            <div className="flex shrink-0 flex-col gap-1">
-              <AudioButton text={report.corrected} size="sm" label="Escuchar" />
-              <AudioButton text={report.corrected} size="sm" rate={0.65} label="Escuchar despacio" className="text-ink-faint" />
-            </div>
-            <TargetText text={report.corrected} size="lg" pinyinLine={report.correctedPy} translation={es} as="div" className="min-w-0 flex-1" />
+            {audioText ? (
+              <div className="flex shrink-0 flex-col gap-1">
+                <AudioButton text={audioText} size="sm" label="Escuchar" />
+                <AudioButton text={audioText} size="sm" rate={0.65} label="Escuchar despacio" className="text-ink-faint" />
+              </div>
+            ) : null}
+            {correctedIsPinyin ? (
+              <div className="min-w-0 flex-1">
+                {/* la solución del profesor estaba en pinyin: se muestra con tildes y, si se puede, en caracteres */}
+                <p lang="zh-Latn-pinyin" className="text-xl text-ink">
+                  <Reading text={report.corrected} className="text-xl" />
+                </p>
+                {report.correctedHanzi ? (
+                  <div className="mt-1">
+                    <TargetText text={report.correctedHanzi} size="lg" as="div" />
+                    <p className="text-[11px] text-ink-faint">en caracteres (probable, deducido del pinyin)</p>
+                  </div>
+                ) : null}
+                {es ? <p className="mt-1 text-sm text-ink-soft"><Mixed>{es}</Mixed></p> : null}
+              </div>
+            ) : (
+              <TargetText text={report.corrected} size="lg" pinyinLine={report.correctedPy} translation={es} as="div" className="min-w-0 flex-1" />
+            )}
           </div>
         </div>
       ) : null}
@@ -130,7 +155,7 @@ export function CorrectionPanel({ report, es, onPractice, className }: { report:
             <ul className="mt-2 space-y-2">
               {report.alternatives.map((a, i) => (
                 <li key={i} className="flex items-start gap-2">
-                  <AudioButton text={a.zh} size="sm" className="mt-0.5" />
+                  {HAN.test(a.zh) ? <AudioButton text={a.zh} size="sm" className="mt-0.5" /> : <span className="w-8 shrink-0" />}
                   <div className="min-w-0 flex-1">
                     <TargetText text={a.zh} size="md" pinyinLine={a.py} as="div" />
                     <p className="text-xs text-ink-faint">
@@ -155,7 +180,7 @@ export function CorrectionPanel({ report, es, onPractice, className }: { report:
               const g = e.ruleId ? pack.grammar.byId(e.ruleId) : undefined;
               return (
                 <li key={i} className="flex gap-2 text-sm">
-                  <Badge variant={e.severity === "warn" ? "muted" : "lacquer"} className="mt-0.5 shrink-0">
+                  <Badge variant={e.severity === "error" ? "lacquer" : "muted"} className="mt-0.5 shrink-0">
                     {TYPE_LABEL[e.type] ?? e.type}
                   </Badge>
                   <div className="min-w-0">

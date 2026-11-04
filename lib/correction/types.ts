@@ -31,7 +31,7 @@ export interface CorrectionError {
   ruleId?: string; // id de la regla del linter / apunte de gramática
   noteId?: string; // apunte de gramática enlazado
   tip?: string; // truco para no repetirlo
-  severity: "error" | "warn";
+  severity: "error" | "warn" | "info";
   source: "align" | "linter" | "tutor";
 }
 
@@ -61,6 +61,8 @@ export interface CorrectionReport {
   /** Frase correcta elegida (la referencia más cercana) o la corrección propuesta */
   corrected?: string;
   correctedPy?: string;
+  /** Si la solución del profesor estaba en pinyin: su versión probable en hanzi (para el audio). */
+  correctedHanzi?: string;
   alignment: AlignedToken[];
   errors: CorrectionError[];
   alternatives: Alternative[];

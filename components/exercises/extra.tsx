@@ -8,7 +8,7 @@ import { Timer } from "lucide-react";
 import type { ClozeExercise, DictationExercise, FindErrorExercise, FreeTranslateExercise, SpeedExercise } from "@/lib/exercises/types";
 import { usePack } from "@/lib/languages/provider";
 import { useSettings } from "@/lib/settings";
-import { getLexicon } from "@/lib/dictionary/service";
+import { getLexicon, useDictionary } from "@/lib/dictionary/service";
 import type { CorrectionReport } from "@/lib/correction/types";
 import { Button } from "@/components/ui/button";
 import { Kbd } from "@/components/ui/primitives";
@@ -178,6 +178,8 @@ export function FreeTranslate({ ex, onSubmit, result }: ExerciseProps<FreeTransl
     if (!text.trim() || busy) return;
     setBusy(true);
     try {
+      // el diccionario hace falta para pasar a hanzi una solución en pinyin (audio) y para segmentar
+      if (useDictionary.getState().status !== "ready") await useDictionary.getState().load().catch(() => undefined);
       const { correct } = await import("@/lib/correction");
       const tutor = tutorOn ? (await import("@/lib/tutor/corrector")).tutorCorrector : undefined;
       const r = await correct({ es: ex.es, answer: text, references: ex.answers, hint: ex.hint, grammarIds: ex.grammarIds, useTutor: Boolean(tutorOn) }, { lexicon: getLexicon(), tutor });

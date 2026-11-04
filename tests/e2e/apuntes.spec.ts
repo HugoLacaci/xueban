@@ -17,6 +17,8 @@ test.describe("Xuébàn · apuntes", () => {
   test("captura rápida con la tecla N → bandeja de entrada", async ({ page, isMobile }) => {
     test.skip(isMobile, "atajo de teclado: solo escritorio");
     await ready(page);
+    // el atajo se registra al hidratar la página (en el servidor de desarrollo tarda un poco más)
+    await page.waitForLoadState("networkidle");
     await page.keyboard.press("n");
     const box = page.getByLabel("Texto de la captura");
     await expect(box).toBeVisible();

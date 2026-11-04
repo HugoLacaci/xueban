@@ -113,18 +113,21 @@ export const RULES: LintRule[] = [
     noteId: "zh-contrast-bu-mei",
     explanation: "不 niega el presente, el futuro y los hábitos; 没 (没有) niega lo que no ha pasado: con 了, 过 y con 有 siempre 没.",
     tip: "Si hay 了/过/有 → 没. Si es «no quiero / no voy / no me gusta» → 不.",
-    ok: ["我没去", "我不去", "我没有钱", "他没来过中国", "我不喜欢", "我不是学生", "我没吃饭"],
-    bad: ["我不有钱", "他不去过中国", "我不吃饭了", "我不看了电影", "我不有时间"],
+    ok: ["我没去", "我不去", "我没有钱", "他没来过中国", "我不喜欢", "我不是学生", "我没吃饭", "我昨天不舒服", "他昨天不忙", "我昨天没去", "明天我不去"],
+    bad: ["我不有钱", "他不去过中国", "我不吃饭了", "我不看了电影", "我不有时间", "我昨天不去", "他上个星期不来学校"],
     test: (s) => {
       const a = s.match(/不有/);
       if (a) return a[0];
+      // momento pasado + 不 + verbo de acción (no estados ni verbos de querer/poder, que sí van con 不)
+      const past = s.match(/(昨天|前天|上个?(星期|周|月)|去年|刚才)[^，。]{0,4}不(?!是|喜欢|想|要|会|能|可以|舒服|忙|好|高兴|在|知道|认识|太|错|累|冷|热|大|小|多|少|贵)([一-鿿])/);
+      if (past) return `不${past[3]}`;
       const b = s.match(/不[^，。]{1,4}过/);
       if (b) return b[0];
       const c = s.match(/不[^，。]{1,3}了/);
       if (c && !/不要|不用|不能|不会|不想|太.*了|不错/.test(c[0])) return c[0];
       return null;
     },
-    fix: (s) => s.replace(/不有/g, "没有").replace(/不([^，。]{1,4})过/g, "没$1过"),
+    fix: (s) => s.replace(/不有/g, "没有").replace(/不([^，。]{1,4})过/g, "没$1过").replace(/(昨天|前天|上个?(?:星期|周|月)|去年|刚才)([^，。]{0,4})不/, "$1$2没"),
   },
   {
     id: "er-liang",

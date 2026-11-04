@@ -14,7 +14,8 @@ import { db, type AnswerMode, type ExerciseItem, type ExerciseSet, type ItemAtte
 import { usePack } from "@/lib/languages/provider";
 import { useSettings } from "@/lib/settings";
 import { addItems, createSet, deleteItem, deleteSet, parseWorkbookText, recordAttempt, updateItem, workbookQueue } from "@/lib/notes/workbook";
-import { getLexicon } from "@/lib/dictionary/service";
+import { getLexicon, useDictionary } from "@/lib/dictionary/service";
+import { liveTonesText, onChangeWithTones } from "@/lib/correction/live-tones";
 import type { CorrectionReport } from "@/lib/correction/types";
 import { Button } from "@/components/ui/button";
 import { Badge, Card, Dialog, DialogContent, EmptyState, Input, Label, PageHeader, Progress, Select, Textarea } from "@/components/ui/primitives";
@@ -347,13 +348,13 @@ function ItemAnswer({ item, setTitle }: { item: ExerciseItem; setTitle?: string 
   const pack = usePack();
   const tutorOn = useSettings((s) => Boolean(s.settings.tutor?.provider && s.settings.tutor.provider !== "none" && s.settings.tutor.correct));
   const joined = item.answers.join(" · ");
-  const [answer, setAnswer] = useState(item.myAnswer ?? "");
-  const [teacher, setTeacher] = useState(joined);
+  const [answer, setAnswer] = useState(liveTonesText(item.myAnswer ?? ""));
+  const [teacher, setTeacher] = useState(liveTonesText(joined));
   const [seenJoined, setSeenJoined] = useState(joined);
   if (seenJoined !== joined) {
     // la solución se editó desde el editor de la frase
     setSeenJoined(joined);
-    setTeacher(joined);
+    setTeacher(liveTonesText(joined));
   }
   const [report, setReport] = useState<CorrectionReport | null>(null);
   const [match, setMatch] = useState<{ kind: "same" | "equivalent" | "different"; teacher: string } | null>(null);
@@ -373,6 +374,8 @@ function ItemAnswer({ item, setTitle }: { item: ExerciseItem; setTitle?: string 
     try {
       saveDraft();
       const refs = saveTeacher();
+      // el diccionario hace falta para pasar a hanzi una solución en pinyin (audio) y para segmentar
+      if (useDictionary.getState().status !== "ready") await useDictionary.getState().load().catch(() => undefined);
       const { correct, normalizeAnswer } = await import("@/lib/correction");
       const tutor = tutorOn ? (await import("@/lib/tutor/corrector")).tutorCorrector : undefined;
       const mode: AnswerMode = normalizeAnswer(answer).kind === "pinyin" ? "pinyin" : "hanzi";
@@ -398,7 +401,7 @@ function ItemAnswer({ item, setTitle }: { item: ExerciseItem; setTitle?: string 
           <span className="mb-1 block font-medium text-ink-soft">Mi respuesta</span>
           <Input
             value={answer}
-            onChange={(e) => setAnswer(e.target.value)}
+            onChange={(e) => onChangeWithTones(e, setAnswer)}
             onBlur={saveDraft}
             onKeyDown={(e) => {
               if (e.key === "Enter") void run();
@@ -411,7 +414,7 @@ function ItemAnswer({ item, setTitle }: { item: ExerciseItem; setTitle?: string 
         </label>
         <label className="block text-xs">
           <span className="mb-1 block font-medium text-ink-soft">Corrección del profesor (opcional)</span>
-          <Input value={teacher} onChange={(e) => setTeacher(e.target.value)} onBlur={() => void saveTeacher()} lang={pack.bcp47} className={cn("text-lg", pack.meta.cssClass)} placeholder="la frase que te dio el profesor · otra válida" aria-label={`Corrección del profesor: ${item.es}`} />
+          <Input value={teacher} onChange={(e) => onChangeWithTones(e, setTeacher)} onBlur={() => void saveTeacher()} lang={pack.bcp47} className={cn("text-lg", pack.meta.cssClass)} placeholder="la frase que te dio el profesor · otra válida" aria-label={`Corrección del profesor: ${item.es}`} />
         </label>
       </div>
       <div className="flex flex-wrap items-center justify-end gap-2">
@@ -433,7 +436,7 @@ function ItemAnswer({ item, setTitle }: { item: ExerciseItem; setTitle?: string 
           {match.kind === "same" ? "✓ Coincide con la corrección del profesor." : match.kind === "equivalent" ? "Es correcta, pero no es la frase exacta del profesor:" : "No coincide con la corrección del profesor:"}
           {match.kind !== "same" ? (
             <span lang={pack.bcp47} className={cn("ml-2 text-base text-ink", pack.meta.cssClass)}>
-              {match.teacher}
+              {liveTonesText(match.teacher)}
             </span>
           ) : null}
         </p>
@@ -450,7 +453,7 @@ function ItemEditor({ item, onDone }: { item: ExerciseItem; onDone: () => void }
   return (
     <div className="space-y-1.5">
       <Input value={es} onChange={(e) => setEs(e.target.value)} aria-label="Frase en español" />
-      <Input value={answers} onChange={(e) => setAnswers(e.target.value)} lang="zh-CN" className="zh" placeholder="soluciones separadas por ·" aria-label="Soluciones" />
+      <Input value={answers} onChange={(e) => onChangeWithTones(e, setAnswers)} lang="zh-CN" className="zh" placeholder="soluciones separadas por ·" aria-label="Soluciones" />
       <Input value={hint} onChange={(e) => setHint(e.target.value)} placeholder="pista" aria-label="Pista" />
       <div className="flex justify-end gap-1">
         <Button size="sm" variant="ghost" onClick={onDone}>
@@ -503,6 +506,8 @@ function PracticeSession({ items, title, onExit }: { items: ExerciseItem[]; titl
     if (!item || !answer.trim()) return;
     setBusy(true);
     try {
+      // el diccionario hace falta para pasar a hanzi una solución en pinyin (audio) y para segmentar
+      if (useDictionary.getState().status !== "ready") await useDictionary.getState().load().catch(() => undefined);
       const { correct } = await import("@/lib/correction");
       const tutor = tutorOn ? (await import("@/lib/tutor/corrector")).tutorCorrector : undefined;
       const target = extra ?? { es: item.es, zh: "" };

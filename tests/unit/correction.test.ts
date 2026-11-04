@@ -140,3 +140,53 @@ describe("corrección completa", () => {
     expect(r.errors.some((e) => e.ruleId === "shi-adjective")).toBe(true);
   });
 });
+
+describe("soluciones del profesor en pinyin", () => {
+  const es = "Me gusta tu ropa.";
+  it("la misma frase en pinyin con números es correcta (caso real: tono escrito en mitad de la sílaba)", async () => {
+    const r = await correct({ es, answer: "wo3 xi3 hua4n ni3 de yi1fu2", references: ["wo3 xi3 hua4n ni3 de yi1fu2"] });
+    expect(r.verdict).toBe("correct");
+    expect(r.score).toBe(100);
+  });
+  it("la frase correcta se muestra con tildes, nunca con números", async () => {
+    const r = await correct({ es, answer: "wo3 xi3 huan1 ni3 de yi1fu", references: ["wo3 xi3huan ni3 de yi1fu"] });
+    expect(r.corrected).toBe("wǒ xǐhuan nǐ de yīfu");
+    expect(r.corrected).not.toMatch(/\d/);
+  });
+  it("tono neutro frente a tono léxico (xǐhuān / xǐhuan) es aviso, no error", async () => {
+    const r = await correct({ es, answer: "wo3 xi3huan1 ni3 de yi1fu", references: ["wo3 xi3huan ni3 de yi1fu"] });
+    expect(r.verdict).toBe("correct");
+    expect(r.errors.filter((e) => e.severity === "error")).toEqual([]);
+    expect(r.errors.some((e) => e.type === "tone" && e.severity === "info")).toBe(true);
+  });
+  it("un tono equivocado sí es error", async () => {
+    const r = await correct({ es, answer: "wo2 xi3huan ni3 de yi1fu", references: ["wo3 xi3huan ni3 de yi1fu"] });
+    expect(r.errors.some((e) => e.type === "tone" && e.severity === "error")).toBe(true);
+  });
+  it("tildes frente a números y espacios distintos dan igual", async () => {
+    const r = await correct({ es, answer: "wǒ xǐhuan nǐ de yīfu", references: ["wo3 xi3 huan ni3 de yi1 fu"] });
+    expect(r.verdict).toBe("correct");
+  });
+  it("respuesta en hanzi con solución solo en pinyin se compara por sílabas", async () => {
+    const ok = await correct({ es, answer: "我喜欢你的衣服", references: ["wo3 xi3huan ni3 de yi1fu"] });
+    expect(ok.verdict).toBe("correct");
+    const bad = await correct({ es, answer: "我喜欢衣服你的", references: ["wo3 xi3huan ni3 de yi1fu"] });
+    expect(bad.verdict).not.toBe("correct");
+  });
+  it("con solución en hanzi, la sílaba sin tono en una respuesta con tonos cuenta como neutra", async () => {
+    const r = await correct({ es, answer: "wo3 xi3huan ni3 de yi1fu", references: ["我喜欢你的衣服。"] });
+    expect(r.verdict).toBe("correct");
+  });
+});
+
+describe("tono neutro y tono léxico", () => {
+  const es = "Me gusta tu ropa.";
+  it("huān (tono original de 欢) con solución en tono neutro es solo una nota", async () => {
+    const r = await correct({ es, answer: "wo3 xi3huan1 ni3 de yi1fu2", references: ["我喜欢你的衣服。"] });
+    expect(r.verdict).toBe("correct");
+  });
+  it("huàn no es ni el tono neutro ni el original (huān): es error", async () => {
+    const r = await correct({ es, answer: "wo3 xi3hua4n ni3 de yi1fu", references: ["我喜欢你的衣服。"] });
+    expect(r.errors.some((e) => e.type === "tone" && e.severity === "error" && /欢/.test(e.explanation))).toBe(true);
+  });
+});
