@@ -24,6 +24,7 @@ import type { Exercise } from "@/lib/exercises/types";
 import { Button } from "@/components/ui/button";
 import { Badge, Card, EmptyState, Input, PageHeader, Textarea, Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/primitives";
 import { toast } from "@/components/ui/toast";
+import { ActivateInBrowser, WebLLMStatus } from "./web-model";
 import { TargetText } from "@/components/target/target-text";
 import { AudioButton } from "@/components/target/audio-button";
 import { AnswerInput } from "@/components/correction/answer-input";
@@ -83,6 +84,7 @@ export function TutorPage() {
           </Button>
         }
       />
+      <WebLLMStatus />
       {!configured ? <ActivationGuide /> : null}
       <Tabs value={tab} onValueChange={setTab}>
         <TabsList className="h-auto flex-wrap">
@@ -131,7 +133,10 @@ export function TutorPage() {
 function ActivationGuide() {
   return (
     <Card className="border-gold/40 bg-gold/8">
-      <p className="mb-2 font-medium text-ink">Activar el tutor (gratis) en 3 pasos</p>
+      <p className="mb-1 font-medium text-ink">Lo más fácil: el tutor dentro de este navegador</p>
+      <p className="mb-2 text-sm text-ink-soft">Gratis, sin instalar nada y sin cuentas. Descarga una vez un modelo Qwen3 (unos 2,3 GB) que se ejecuta en la tarjeta gráfica de este ordenador; nada sale de tu PC.</p>
+      <ActivateInBrowser />
+      <p className="mb-2 mt-4 font-medium text-ink">O con más calidad, en 3 pasos</p>
       <ol className="grid gap-2 text-sm text-ink-soft sm:grid-cols-3">
         <li className="rounded-[8px] bg-paper-raised/70 p-3">
           <span className="font-serif-es text-xl text-cinnabar">1</span> Elige: <strong>Ollama</strong> en tu PC (privado, sin límites; recomendado qwen3.5:9b, va bien con 8 GB de gráfica) o una clave gratuita de <strong>Gemini</strong>, <strong>Groq</strong> u <strong>OpenRouter</strong>.

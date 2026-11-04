@@ -37,10 +37,11 @@ export interface ProviderInfo {
   pros: string;
   cons: string;
   limitsUrl: string;
-  kind: "openai" | "anthropic";
+  kind: "openai" | "anthropic" | "webllm";
 }
 
 export const PROVIDERS: ProviderInfo[] = [
+  { id: "webgpu", name: "En este navegador (sin instalar nada)", baseUrl: "", defaultModel: "Qwen3-4B-q4f16_1-MLC", needsKey: false, docs: "https://webllm.mlc.ai/", pros: "Gratis, privado y sin claves: el modelo (Qwen3, unos 2 GB) se descarga una vez y funciona en cualquier ordenador con Chrome o Edge y una gráfica decente.", cons: "Menos calidad que Ollama con qwen3.5:9b; la primera vez tarda unos minutos en descargar; no funciona en la mayoría de móviles.", limitsUrl: "https://github.com/mlc-ai/web-llm", kind: "webllm" },
   { id: "ollama", name: "Ollama (local)", baseUrl: "http://localhost:11434/v1", defaultModel: "qwen3.5:9b", needsKey: false, docs: "https://ollama.com/download", pros: "Gratis, privado y sin límites. Recomendado para chino: qwen3.5:9b (6,6 GB; va bien con 8 GB de memoria de gráfica); en equipos modestos, qwen3.5:4b o qwen2.5:3b con menos calidad.", cons: "Necesita un PC potente. Para llamar desde la web publicada hay que arrancar Ollama con OLLAMA_ORIGINS=* (en local, el proxy /api/tutor lo evita).", limitsUrl: "https://github.com/ollama/ollama/blob/main/docs/faq.md", kind: "openai" },
   { id: "gemini", name: "Google Gemini (nivel gratuito)", baseUrl: "https://generativelanguage.googleapis.com/v1beta/openai", defaultModel: "gemini-2.5-flash", needsKey: true, docs: "https://aistudio.google.com/apikey", pros: "Nube gratis con clave de Google AI Studio.", cons: "Límites de uso por minuto y por día; en el nivel gratuito Google puede usar los datos para mejorar sus productos (comprueba las condiciones vigentes).", limitsUrl: "https://ai.google.dev/gemini-api/docs/rate-limits", kind: "openai" },
   { id: "groq", name: "Groq (modelos gratuitos)", baseUrl: "https://api.groq.com/openai/v1", defaultModel: "llama-3.3-70b-versatile", needsKey: true, docs: "https://console.groq.com/keys", pros: "Nube gratis y muy rápida.", cons: "Límites de peticiones y tokens por día; los modelos abiertos saben menos chino que Qwen.", limitsUrl: "https://console.groq.com/docs/rate-limits", kind: "openai" },
@@ -63,7 +64,7 @@ export function tutorConfigured(t: TutorSettings): boolean {
   return true;
 }
 
-function resolve(t: TutorSettings): { url: string; model: string; key: string; kind: "openai" | "anthropic" } {
+function resolve(t: TutorSettings): { url: string; model: string; key: string; kind: ProviderInfo["kind"] } {
   const info = providerInfo(t.provider)!;
   return { url: (t.baseUrl || info.baseUrl).replace(/\/+$/, ""), model: t.model || info.defaultModel, key: t.apiKey, kind: info.kind };
 }
@@ -109,6 +110,7 @@ export interface ChatOptions {
 export async function chat(t: TutorSettings, messages: ChatTurn[], opts: ChatOptions = {}): Promise<ChatResult> {
   const { url, model, key, kind } = resolve(t);
   if (kind === "anthropic") return chatAnthropic(url, model, key, messages, opts);
+  if (kind === "webllm") return (await import("./webllm")).chatWebLLM(model, messages, opts);
   const body: Record<string, unknown> = {
     model,
     messages,

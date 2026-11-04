@@ -70,7 +70,7 @@ export interface Settings {
   level: "zero" | "beginner" | "hsk1" | "hsk2";
 }
 
-export type TutorProvider = "none" | "ollama" | "gemini" | "groq" | "openrouter" | "anthropic" | "openai" | "custom";
+export type TutorProvider = "none" | "webgpu" | "ollama" | "gemini" | "groq" | "openrouter" | "anthropic" | "openai" | "custom";
 export interface TutorSettings {
   provider: TutorProvider;
   apiKey: string;

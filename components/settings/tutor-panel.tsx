@@ -9,6 +9,7 @@ import { useEffect, useState } from "react";
 import { CheckCircle2, ExternalLink, PlugZap, RefreshCw, Trash2, XCircle } from "lucide-react";
 import { useSettings, DEFAULT_TUTOR, type TutorProvider } from "@/lib/settings";
 import { markTutorChosen } from "@/lib/tutor/autodetect";
+import { WebLLMStatus, WebModelPicker } from "@/components/tutor/web-model";
 import { listOllamaModels, PROVIDERS, providerInfo, testConnection, tutorConfigured } from "@/lib/tutor/providers";
 import { buildStudentModel } from "@/lib/tutor/student";
 import { Button } from "@/components/ui/button";
@@ -78,7 +79,13 @@ export function TutorPanel() {
             ))}
           </Select>
         </div>
-        {t.provider !== "none" ? (
+        {t.provider === "webgpu" ? (
+          <div className="sm:col-span-2">
+            <Label className="mb-1.5 block">Modelo (se ejecuta en tu tarjeta gráfica)</Label>
+            <WebModelPicker value={t.model || info?.defaultModel || ""} onChange={(id) => set({ model: id })} />
+          </div>
+        ) : null}
+        {t.provider !== "none" && t.provider !== "webgpu" ? (
           <div>
             <Label htmlFor="t-model" className="mb-1.5 block">
               Modelo
@@ -144,7 +151,7 @@ export function TutorPanel() {
             </Button>
           ) : null}
           <Button variant="ink" onClick={() => void test()} disabled={testing || !tutorConfigured(t)}>
-            <PlugZap /> {testing ? "Probando…" : "Probar conexión"}
+            <PlugZap /> {testing ? "Probando…" : t.provider === "webgpu" ? "Descargar y probar" : "Probar conexión"}
           </Button>
           {result ? (
             <span className={cn("inline-flex items-center gap-1 text-sm", result.ok ? "text-celadon-ink" : "text-danger")}>
@@ -153,6 +160,7 @@ export function TutorPanel() {
           ) : null}
         </div>
       ) : null}
+      {t.provider === "webgpu" ? <WebLLMStatus /> : null}
       {modelsErr ? <p className="text-xs text-danger">{modelsErr}</p> : null}
       {models?.length ? (
         <ul className="flex flex-wrap gap-1.5">
