@@ -134,7 +134,7 @@ function ActivationGuide() {
       <p className="mb-2 font-medium text-ink">Activar el tutor (gratis) en 3 pasos</p>
       <ol className="grid gap-2 text-sm text-ink-soft sm:grid-cols-3">
         <li className="rounded-[8px] bg-paper-raised/70 p-3">
-          <span className="font-serif-es text-xl text-cinnabar">1</span> Elige: <strong>Ollama</strong> en tu PC (privado, sin límites; recomendado qwen3.5:9b con ~12–16 GB de gráfica) o una clave gratuita de <strong>Gemini</strong>, <strong>Groq</strong> u <strong>OpenRouter</strong>.
+          <span className="font-serif-es text-xl text-cinnabar">1</span> Elige: <strong>Ollama</strong> en tu PC (privado, sin límites; recomendado qwen3.5:9b, va bien con 8 GB de gráfica) o una clave gratuita de <strong>Gemini</strong>, <strong>Groq</strong> u <strong>OpenRouter</strong>.
         </li>
         <li className="rounded-[8px] bg-paper-raised/70 p-3">
           <span className="font-serif-es text-xl text-cinnabar">2</span> Con Ollama: instala desde{" "}
@@ -151,6 +151,9 @@ function ActivationGuide() {
           elige el proveedor, pega la clave (se queda en tu navegador) y pulsa «Probar conexión».
         </li>
       </ol>
+      <p className="mt-3 text-xs text-ink-soft">
+        <strong>¿Ya tienes Ollama abierto?</strong> El tutor se activa solo al entrar aquí. En la web publicada, Chrome pregunta si la página puede acceder a tu red local o a este dispositivo: pulsa <strong>Permitir</strong>. Si lo bloqueaste, pulsa el icono a la izquierda de la dirección → Configuración del sitio → «Acceso a la red local» → Permitir, y recarga.
+      </p>
     </Card>
   );
 }
