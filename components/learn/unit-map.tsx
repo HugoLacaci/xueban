@@ -1,6 +1,6 @@
 "use client";
 import Link from "@/lib/languages/link";
-import { useEffect, useMemo, useRef, useState, useSyncExternalStore } from "react";
+import { Fragment, useEffect, useMemo, useRef, useState, useSyncExternalStore } from "react";
 import { useLiveQuery } from "dexie-react-hooks";
 import { BookOpen, Check, ChevronRight, FileText, Lock, Play, Sparkles } from "lucide-react";
 import { db } from "@/lib/db";
@@ -50,11 +50,13 @@ export function UnitMap() {
   );
   const progress = useMemo(() => new Map((rows ?? []).map((r) => [r.lessonId, r])), [rows]);
   const next = useMemo(() => nextRecommended(progress), [progress]);
-  const [stageSel, setStageSel] = useState<string | null>(null);
   const [expanded, setExpanded] = useState<Set<string>>(new Set());
   const nextStage = allUnits.find((u) => u.id === next?.unitId)?.stage ?? "e0";
-  const stage = stageSel ?? nextStage;
-  const units = hasStages ? allUnits.filter((u) => (u.stage ?? "e0") === stage) : allUnits;
+  // todas las etapas en el mismo camino; las pestañas saltan a cada una y marcan la etapa actual
+  const stage = nextStage;
+  const units = allUnits;
+  const goStage = (id: string) =>
+    document.getElementById(`etapa-${id}`)?.scrollIntoView({ behavior: "smooth", block: "start" });
   const totalLessons = allUnits.reduce((a, u) => a + u.lessons.length, 0);
   const doneLessons = Array.from(progress.values()).filter((p) => p.status === "completed").length;
   const phase = useSyncExternalStore(noop, dayPhase, serverPhase);
@@ -187,8 +189,7 @@ export function UnitMap() {
         {hasStages ? (
           <div
             className="relative mb-6 flex flex-wrap gap-1.5"
-            role="tablist"
-            aria-label="Etapas del temario"
+            aria-label="Ir a una etapa del temario"
           >
             {STAGES.filter((st) => allUnits.some((u) => u.stage === st.id)).map((st) => {
               const us = allUnits.filter((u) => u.stage === st.id);
@@ -198,9 +199,9 @@ export function UnitMap() {
                 <button
                   key={st.id}
                   type="button"
-                  role="tab"
-                  aria-selected={stage === st.id}
-                  onClick={() => setStageSel(st.id)}
+                  aria-current={stage === st.id ? "step" : undefined}
+                  title={stage === st.id ? "Tu etapa actual" : undefined}
+                  onClick={() => goStage(st.id)}
                   className={cn(
                     "flex min-h-10 items-center gap-2 rounded-full border px-3.5 text-sm transition-colors",
                     stage === st.id
@@ -249,205 +250,228 @@ export function UnitMap() {
               expanded.has(u.id);
             const isLast = ui === units.length - 1;
             return (
-              <li key={u.id} className="relative flex gap-2 pb-6 sm:gap-4">
-                {/* carril */}
-                <div className="relative w-12 shrink-0 sm:w-16 md:w-28" aria-hidden="true">
-                  <div className="absolute inset-x-0 top-6 bottom-[-24px]">
-                    <PathSegment
-                      from={xMob(ui)}
-                      to={isLast ? 50 : xMob(ui + 1)}
-                      done={completed}
-                      className="md:hidden"
-                    />
-                    <PathSegment
-                      from={xDesk(ui)}
-                      to={isLast ? 50 : xDesk(ui + 1)}
-                      done={completed}
-                      className="hidden md:block"
-                    />
-                  </div>
-                  <div
-                    className="absolute top-6 [left:var(--xm)] -translate-x-1/2 -translate-y-1/2 md:[left:var(--xd)]"
-                    style={{
-                      ["--xm" as string]: `${xMob(ui)}%`,
-                      ["--xd" as string]: `${xDesk(ui)}%`,
-                    }}
+              <Fragment key={u.id}>
+                {hasStages && (ui === 0 || units[ui - 1].stage !== u.stage) ? (
+                  <li
+                    id={`etapa-${u.stage}`}
+                    className="relative scroll-mt-20 pb-4 pl-14 sm:pl-20 md:pl-32"
                   >
-                    {isNextUnit ? (
-                      <span className="border-cinnabar/60 motion-safe:animate-breathe absolute -inset-2 rounded-full border-2" />
-                    ) : null}
-                    <Seal
-                      text={numeral}
-                      size={48}
-                      tone={completed ? "cinnabar" : "ink"}
-                      rotate={ui % 2 === 0 ? -3 : 3}
-                      className={cn(locked && "opacity-40")}
-                      title={`${hasStages ? unitLabel(u.id) : `Unidad ${u.level === 0 ? 0 : u.order - 1}`}${completed ? " completada" : locked ? " (recomendada después)" : ""}`}
-                    />
-                  </div>
-                </div>
-
-                {/* ficha de la unidad */}
-                <article
-                  className={cn(
-                    "card-paper min-w-0 flex-1 overflow-hidden p-0",
-                    isNextUnit && "border-cinnabar/50 shadow-[var(--shadow-float)]",
-                    locked && "border-dashed shadow-none",
-                  )}
-                >
-                  <header className="flex items-start gap-3 p-4 pb-3">
-                    <div className="min-w-0 flex-1">
-                      <div className="flex flex-wrap items-center gap-x-2 gap-y-1">
-                        <h2 className="font-serif-es text-ink text-lg leading-tight font-semibold">
-                          <span className="text-ink-faint">
-                            {hasStages
-                              ? `${unitLabel(u.id)} · `
-                              : u.level === 0
-                                ? "Unidad 0 · "
-                                : `Unidad ${u.order - 1} · `}
-                          </span>
-                          <Mixed>{u.title}</Mixed>
-                        </h2>
-                        <span lang={targetLang()} className="zh-kai text-cinnabar text-base">
-                          <Mixed>{u.zh}</Mixed>
-                        </span>
-                      </div>
-                      <p className="text-ink-faint mt-1 text-sm">
-                        <Mixed>{u.description}</Mixed>
-                      </p>
-                      <div className="mt-2 flex flex-wrap items-center gap-1.5">
-                        {u.level === 0 ? (
-                          <Badge variant="gold">base</Badge>
-                        ) : (
-                          <Badge variant="jade">
-                            <Mixed>{levelTitle}</Mixed>
-                          </Badge>
-                        )}
-                        {completed ? (
-                          <Badge variant="lacquer">
-                            <Check className="size-3" /> completada
-                          </Badge>
-                        ) : null}
-                        {isNextUnit ? (
-                          <Badge variant="lacquer">
-                            <Sparkles className="size-3" /> siguiente
-                          </Badge>
-                        ) : null}
-                        {locked ? (
-                          <Badge variant="muted">
-                            <Lock className="size-3" /> recomendado después
-                          </Badge>
-                        ) : null}
-                      </div>
+                    <h2 className="font-serif-es text-ink text-xl font-semibold">
+                      <span lang={targetLang()} className="zh-kai text-cinnabar mr-2">
+                        {STAGES.find((x) => x.id === u.stage)?.zh}
+                      </span>
+                      {STAGES.find((x) => x.id === u.stage)?.es}
+                      {u.stage === stage ? (
+                        <Badge variant="lacquer" className="ml-2 align-middle">
+                          tu etapa
+                        </Badge>
+                      ) : null}
+                    </h2>
+                  </li>
+                ) : null}
+                <li className="relative flex gap-2 pb-6 sm:gap-4">
+                  {/* carril */}
+                  <div className="relative w-12 shrink-0 sm:w-16 md:w-28" aria-hidden="true">
+                    <div className="absolute inset-x-0 top-6 bottom-[-24px]">
+                      <PathSegment
+                        from={xMob(ui)}
+                        to={isLast ? 50 : xMob(ui + 1)}
+                        done={completed}
+                        className="md:hidden"
+                      />
+                      <PathSegment
+                        from={xDesk(ui)}
+                        to={isLast ? 50 : xDesk(ui + 1)}
+                        done={completed}
+                        className="hidden md:block"
+                      />
                     </div>
-                    <span className="bg-paper-sunk text-ink-soft tabular shrink-0 rounded-full px-2 py-0.5 text-xs">
-                      {st.done}/{st.total}
-                    </span>
-                  </header>
-
-                  {!open ? (
-                    <button
-                      type="button"
-                      onClick={() => setExpanded((e) => new Set(e).add(u.id))}
-                      className="border-line text-ink-soft hover:bg-paper-sunk/60 flex w-full items-center gap-2 border-t px-4 py-2.5 text-left text-sm"
+                    <div
+                      className="absolute top-6 [left:var(--xm)] -translate-x-1/2 -translate-y-1/2 md:[left:var(--xd)]"
+                      style={{
+                        ["--xm" as string]: `${xMob(ui)}%`,
+                        ["--xd" as string]: `${xDesk(ui)}%`,
+                      }}
                     >
-                      <ChevronRight className="size-4" /> Ver las {u.lessons.length} lecciones
-                      {u.checkpoint ? " y el checkpoint" : ""}
-                    </button>
-                  ) : null}
-                  <ol
-                    className={cn("divide-line border-line divide-y border-t", !open && "hidden")}
+                      {isNextUnit ? (
+                        <span className="border-cinnabar/60 motion-safe:animate-breathe absolute -inset-2 rounded-full border-2" />
+                      ) : null}
+                      <Seal
+                        text={numeral}
+                        size={48}
+                        tone={completed ? "cinnabar" : "ink"}
+                        rotate={ui % 2 === 0 ? -3 : 3}
+                        className={cn(locked && "opacity-40")}
+                        title={`${hasStages ? unitLabel(u.id) : `Unidad ${u.level === 0 ? 0 : u.order - 1}`}${completed ? " completada" : locked ? " (recomendada después)" : ""}`}
+                      />
+                    </div>
+                  </div>
+
+                  {/* ficha de la unidad */}
+                  <article
+                    className={cn(
+                      "card-paper min-w-0 flex-1 overflow-hidden p-0",
+                      isNextUnit && "border-cinnabar/50 shadow-[var(--shadow-float)]",
+                      locked && "border-dashed shadow-none",
+                    )}
                   >
-                    {u.lessons.map((l, li) => {
-                      const p = progress.get(l.id);
-                      const done = p?.status === "completed";
-                      const isNext = next?.lessonId === l.id;
-                      return (
-                        <li key={l.id}>
-                          <Link
-                            href={`/aprender/leccion/${l.id}`}
-                            aria-current={isNext ? "step" : undefined}
-                            className={cn(
-                              "group hover:bg-paper-sunk/60 flex items-center gap-3 px-4 py-2.5 text-sm transition-colors",
-                              isNext && "bg-cinnabar/[0.06]",
-                            )}
-                          >
-                            <span
+                    <header className="flex items-start gap-3 p-4 pb-3">
+                      <div className="min-w-0 flex-1">
+                        <div className="flex flex-wrap items-center gap-x-2 gap-y-1">
+                          <h2 className="font-serif-es text-ink text-lg leading-tight font-semibold">
+                            <span className="text-ink-faint">
+                              {hasStages
+                                ? `${unitLabel(u.id)} · `
+                                : u.level === 0
+                                  ? "Unidad 0 · "
+                                  : `Unidad ${u.order - 1} · `}
+                            </span>
+                            <Mixed>{u.title}</Mixed>
+                          </h2>
+                          <span lang={targetLang()} className="zh-kai text-cinnabar text-base">
+                            <Mixed>{u.zh}</Mixed>
+                          </span>
+                        </div>
+                        <p className="text-ink-faint mt-1 text-sm">
+                          <Mixed>{u.description}</Mixed>
+                        </p>
+                        <div className="mt-2 flex flex-wrap items-center gap-1.5">
+                          {u.level === 0 ? (
+                            <Badge variant="gold">base</Badge>
+                          ) : (
+                            <Badge variant="jade">
+                              <Mixed>{hasStages && u.level ? `HSK ${u.level}` : levelTitle}</Mixed>
+                            </Badge>
+                          )}
+                          {completed ? (
+                            <Badge variant="lacquer">
+                              <Check className="size-3" /> completada
+                            </Badge>
+                          ) : null}
+                          {isNextUnit ? (
+                            <Badge variant="lacquer">
+                              <Sparkles className="size-3" /> siguiente
+                            </Badge>
+                          ) : null}
+                          {locked ? (
+                            <Badge variant="muted">
+                              <Lock className="size-3" /> recomendado después
+                            </Badge>
+                          ) : null}
+                        </div>
+                      </div>
+                      <span className="bg-paper-sunk text-ink-soft tabular shrink-0 rounded-full px-2 py-0.5 text-xs">
+                        {st.done}/{st.total}
+                      </span>
+                    </header>
+
+                    {!open ? (
+                      <button
+                        type="button"
+                        onClick={() => setExpanded((e) => new Set(e).add(u.id))}
+                        className="border-line text-ink-soft hover:bg-paper-sunk/60 flex w-full items-center gap-2 border-t px-4 py-2.5 text-left text-sm"
+                      >
+                        <ChevronRight className="size-4" /> Ver las {u.lessons.length} lecciones
+                        {u.checkpoint ? " y el checkpoint" : ""}
+                      </button>
+                    ) : null}
+                    <ol
+                      className={cn("divide-line border-line divide-y border-t", !open && "hidden")}
+                    >
+                      {u.lessons.map((l, li) => {
+                        const p = progress.get(l.id);
+                        const done = p?.status === "completed";
+                        const isNext = next?.lessonId === l.id;
+                        return (
+                          <li key={l.id}>
+                            <Link
+                              href={`/aprender/leccion/${l.id}`}
+                              aria-current={isNext ? "step" : undefined}
                               className={cn(
-                                "tabular flex size-6 shrink-0 items-center justify-center rounded-full text-[11px] font-medium",
-                                done
-                                  ? "bg-celadon text-paper-raised"
-                                  : p?.status === "started"
-                                    ? "bg-gold/25 text-gold-ink"
-                                    : "bg-paper-sunk text-ink-faint",
+                                "group hover:bg-paper-sunk/60 flex items-center gap-3 px-4 py-2.5 text-sm transition-colors",
+                                isNext && "bg-cinnabar/[0.06]",
                               )}
                             >
-                              {done ? <Check className="size-3.5" /> : li + 1}
-                            </span>
+                              <span
+                                className={cn(
+                                  "tabular flex size-6 shrink-0 items-center justify-center rounded-full text-[11px] font-medium",
+                                  done
+                                    ? "bg-celadon text-paper-raised"
+                                    : p?.status === "started"
+                                      ? "bg-gold/25 text-gold-ink"
+                                      : "bg-paper-sunk text-ink-faint",
+                                )}
+                              >
+                                {done ? <Check className="size-3.5" /> : li + 1}
+                              </span>
+                              <span className="min-w-0 flex-1">
+                                <span className="text-ink block font-medium">
+                                  <Mixed>{l.title}</Mixed>
+                                </span>
+                                <span className="text-ink-faint block truncate text-xs">
+                                  <Mixed>{l.goal}</Mixed>
+                                </span>
+                              </span>
+                              {p?.score !== undefined ? (
+                                <span className="text-ink-faint tabular hidden text-xs sm:inline">
+                                  {Math.round(p.score * 100)} %
+                                </span>
+                              ) : null}
+                              <span className="text-ink-faint tabular text-xs">
+                                {l.minutes} min
+                              </span>
+                              <ChevronRight className="text-ink-faint size-4 transition-transform group-hover:translate-x-0.5" />
+                            </Link>
+                          </li>
+                        );
+                      })}
+                      {u.checkpoint ? (
+                        <li>
+                          <Link
+                            href={`/aprender/checkpoint/${u.id}`}
+                            className="group hover:bg-paper-sunk/60 flex items-center gap-3 px-4 py-2.5 text-sm transition-colors"
+                          >
+                            <Paifang size={28} tone="gold" className="-my-1 shrink-0" />
                             <span className="min-w-0 flex-1">
                               <span className="text-ink block font-medium">
-                                <Mixed>{l.title}</Mixed>
+                                Checkpoint de la unidad
                               </span>
-                              <span className="text-ink-faint block truncate text-xs">
-                                <Mixed>{l.goal}</Mixed>
+                              <span className="text-ink-faint block text-xs">
+                                Pasa por el <span lang={targetLang()}>{uiText().gate}</span>:
+                                ejercicios mezclados de toda la unidad.
                               </span>
                             </span>
-                            {p?.score !== undefined ? (
-                              <span className="text-ink-faint tabular hidden text-xs sm:inline">
-                                {Math.round(p.score * 100)} %
-                              </span>
-                            ) : null}
-                            <span className="text-ink-faint tabular text-xs">{l.minutes} min</span>
+                            <span className="text-ink-faint tabular text-xs">
+                              {u.checkpoint.exercises} ej.
+                            </span>
                             <ChevronRight className="text-ink-faint size-4 transition-transform group-hover:translate-x-0.5" />
                           </Link>
                         </li>
-                      );
-                    })}
-                    {u.checkpoint ? (
-                      <li>
-                        <Link
-                          href={`/aprender/checkpoint/${u.id}`}
-                          className="group hover:bg-paper-sunk/60 flex items-center gap-3 px-4 py-2.5 text-sm transition-colors"
-                        >
-                          <Paifang size={28} tone="gold" className="-my-1 shrink-0" />
-                          <span className="min-w-0 flex-1">
-                            <span className="text-ink block font-medium">
-                              Checkpoint de la unidad
+                      ) : null}
+                      {hasStages && u.lessons.length ? (
+                        <li>
+                          <Link
+                            href={`/aprender/ficha?u=${u.id}`}
+                            className="group hover:bg-paper-sunk/60 flex items-center gap-3 px-4 py-2.5 text-sm transition-colors"
+                          >
+                            <FileText className="text-ink-faint size-5 shrink-0" />
+                            <span className="min-w-0 flex-1">
+                              <span className="text-ink block font-medium">
+                                Ficha resumen imprimible
+                              </span>
+                              <span className="text-ink-faint block text-xs">
+                                Vocabulario, gramática con el esqueleto y frases modelo de la
+                                unidad.
+                              </span>
                             </span>
-                            <span className="text-ink-faint block text-xs">
-                              Pasa por el <span lang={targetLang()}>{uiText().gate}</span>:
-                              ejercicios mezclados de toda la unidad.
-                            </span>
-                          </span>
-                          <span className="text-ink-faint tabular text-xs">
-                            {u.checkpoint.exercises} ej.
-                          </span>
-                          <ChevronRight className="text-ink-faint size-4 transition-transform group-hover:translate-x-0.5" />
-                        </Link>
-                      </li>
-                    ) : null}
-                    {hasStages && u.lessons.length ? (
-                      <li>
-                        <Link
-                          href={`/aprender/ficha?u=${u.id}`}
-                          className="group hover:bg-paper-sunk/60 flex items-center gap-3 px-4 py-2.5 text-sm transition-colors"
-                        >
-                          <FileText className="text-ink-faint size-5 shrink-0" />
-                          <span className="min-w-0 flex-1">
-                            <span className="text-ink block font-medium">
-                              Ficha resumen imprimible
-                            </span>
-                            <span className="text-ink-faint block text-xs">
-                              Vocabulario, gramática con el esqueleto y frases modelo de la unidad.
-                            </span>
-                          </span>
-                          <ChevronRight className="text-ink-faint size-4 transition-transform group-hover:translate-x-0.5" />
-                        </Link>
-                      </li>
-                    ) : null}
-                  </ol>
-                </article>
-              </li>
+                            <ChevronRight className="text-ink-faint size-4 transition-transform group-hover:translate-x-0.5" />
+                          </Link>
+                        </li>
+                      ) : null}
+                    </ol>
+                  </article>
+                </li>
+              </Fragment>
             );
           })}
           {/* destino: pabellón en la cima */}
