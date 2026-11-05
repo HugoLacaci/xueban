@@ -1,0 +1,160 @@
+{
+  "unitId": "a1-u12",
+  "scenarios": [
+    {
+      "id": "a1-u12-hobbies",
+      "title": "¿Qué te gusta hacer?",
+      "zh": "你的爱好是什么？",
+      "level": 1,
+      "setting": "Después de clase, Ana y Hugo toman un té y hablan de sus aficiones. Tú (la app) eres 安娜.",
+      "role": "compañera de clase",
+      "roleZh": "安娜",
+      "voice": "f",
+      "goals": ["Decir qué te gusta hacer", "Preguntar a Ana qué le gusta", "Decir qué sabes hacer y qué no", "Proponer hacer algo juntos"],
+      "vocab": ["喜欢", "爱好", "电影", "音乐", "唱歌", "打篮球", "会", "想", "吧"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "雨果，周末你常常做什么？", "py": "Yǔguǒ, zhōumò nǐ chángcháng zuò shénme?", "es": "Hugo, ¿qué sueles hacer los fines de semana?" },
+          "user": [
+            { "zh": "我喜欢看电影，也喜欢听音乐。", "py": "Wǒ xǐhuan kàn diànyǐng, yě xǐhuan tīng yīnyuè.", "es": "Me gusta ver películas y también escuchar música.", "keywords": ["电影", "音乐"], "next": "n2", "goal": 0 },
+            { "zh": "我喜欢打篮球，常常跟大卫一起打球。", "py": "Wǒ xǐhuan dǎ lánqiú, chángcháng gēn Dàwèi yìqǐ dǎ qiú.", "es": "Me gusta jugar al baloncesto; suelo jugar con David.", "keywords": ["篮球", "打球"], "next": "n3", "goal": 0 },
+            { "zh": "我常常看电视剧，也玩儿游戏。", "py": "Wǒ chángcháng kàn diànshìjù, yě wánr yóuxì.", "es": "Suelo ver series y también juego a videojuegos.", "keywords": ["电视剧", "游戏"], "next": "n4", "goal": 0 }
+          ],
+          "hint": "Di qué te gusta con 喜欢 + verbo: 看电影, 听音乐, 打篮球, 玩儿游戏."
+        },
+        "n2": {
+          "npc": { "zh": "我也爱看电影！你喜欢什么电影？", "py": "Wǒ yě ài kàn diànyǐng! Nǐ xǐhuan shénme diànyǐng?", "es": "¡A mí también me encanta el cine! ¿Qué películas te gustan?" },
+          "user": [
+            { "zh": "我喜欢中国电影，很有意思。你呢？", "py": "Wǒ xǐhuan Zhōngguó diànyǐng, hěn yǒu yìsi. Nǐ ne?", "es": "Me gustan las películas chinas, son muy interesantes. ¿Y a ti?", "keywords": ["中国电影", "你呢"], "next": "n5", "goal": 1 },
+            { "zh": "我最喜欢美国电影。安娜，你的爱好是什么？", "py": "Wǒ zuì xǐhuan Měiguó diànyǐng. Ānnà, nǐ de àihào shì shénme?", "es": "Lo que más me gusta es el cine estadounidense. Ana, ¿cuál es tu afición?", "keywords": ["爱好", "最喜欢"], "next": "n5", "goal": 1 }
+          ],
+          "hint": "Responde y devuelve la pregunta: 你呢？ / 你的爱好是什么？"
+        },
+        "n3": {
+          "npc": { "zh": "篮球！我不会打篮球。你会唱歌吗？", "py": "Lánqiú! Wǒ bú huì dǎ lánqiú. Nǐ huì chànggē ma?", "es": "¡Baloncesto! Yo no sé jugar. ¿Sabes cantar?" },
+          "user": [
+            { "zh": "我不会唱中国歌，可是我很想学。", "py": "Wǒ bú huì chàng Zhōngguó gē, kěshì wǒ hěn xiǎng xué.", "es": "No sé cantar canciones chinas, pero tengo muchas ganas de aprender.", "keywords": ["不会", "想学"], "next": "n5", "goal": 2 },
+            { "zh": "会，我很喜欢唱歌。你也喜欢吗？", "py": "Huì, wǒ hěn xǐhuan chànggē. Nǐ yě xǐhuan ma?", "es": "Sí, me encanta cantar. ¿A ti también te gusta?", "keywords": ["会", "唱歌"], "next": "n5", "goal": 2 }
+          ],
+          "hint": "会 = saber hacer. Responde 会 / 不会 y añade algo: 很喜欢, 想学."
+        },
+        "n4": {
+          "npc": { "zh": "游戏？我不会玩儿游戏。好玩儿吗？", "py": "Yóuxì? Wǒ bú huì wánr yóuxì. Hǎowánr ma?", "es": "¿Videojuegos? Yo no sé jugar. ¿Es divertido?" },
+          "user": [
+            { "zh": "很好玩儿！你想试试吗？", "py": "Hěn hǎowánr! Nǐ xiǎng shìshi ma?", "es": "¡Muy divertido! ¿Quieres probar?", "keywords": ["好玩儿", "试试"], "next": "n5", "goal": 2 },
+            { "zh": "很好玩儿。我会玩儿，小李也会。你喜欢什么？", "py": "Hěn hǎowánr. Wǒ huì wánr, Xiǎo Lǐ yě huì. Nǐ xǐhuan shénme?", "es": "Muy divertido. Yo sé jugar y Xiao Li también. ¿A ti qué te gusta?", "keywords": ["我会", "你喜欢什么"], "next": "n5", "goal": 1 }
+          ],
+          "hint": "Contesta (很好玩儿) y ofrece (你想试试吗？) o pregúntale qué le gusta."
+        },
+        "n5": {
+          "npc": { "zh": "我喜欢唱歌，也喜欢看书。我常常去书店。", "py": "Wǒ xǐhuan chànggē, yě xǐhuan kàn shū. Wǒ chángcháng qù shūdiàn.", "es": "A mí me gusta cantar y también leer. Voy mucho a la librería." },
+          "user": [
+            { "zh": "我也喜欢看书。星期六我们一起去书店吧！", "py": "Wǒ yě xǐhuan kàn shū. Xīngqīliù wǒmen yìqǐ qù shūdiàn ba!", "es": "A mí también me gusta leer. ¡Vamos juntos a la librería el sábado!", "keywords": ["一起", "书店", "吧"], "next": "n6", "goal": 3 },
+            { "zh": "你会唱中国歌？周末我们一起去唱歌吧！", "py": "Nǐ huì chàng Zhōngguó gē? Zhōumò wǒmen yìqǐ qù chànggē ba!", "es": "¿Sabes cantar canciones chinas? ¡Vamos a cantar juntos el fin de semana!", "keywords": ["唱歌", "吧"], "next": "n6", "goal": 3 },
+            { "zh": "我不太喜欢看书。", "py": "Wǒ bú tài xǐhuan kàn shū.", "es": "A mí no me gusta mucho leer.", "keywords": ["不太喜欢"], "next": "n7" }
+          ],
+          "hint": "Propón un plan con 我们一起……吧."
+        },
+        "n6": {
+          "npc": { "zh": "好！星期六下午，可以吗？", "py": "Hǎo! Xīngqīliù xiàwǔ, kěyǐ ma?", "es": "¡Vale! ¿El sábado por la tarde te va bien?" },
+          "user": [
+            { "zh": "可以！星期六见！", "py": "Kěyǐ! Xīngqīliù jiàn!", "es": "¡Sí! ¡Hasta el sábado!", "keywords": ["可以", "见"], "next": "n8", "goal": 3 },
+            { "zh": "星期六下午我不能去，我很忙。星期天行吗？", "py": "Xīngqīliù xiàwǔ wǒ bù néng qù, wǒ hěn máng. Xīngqītiān xíng ma?", "es": "El sábado por la tarde no puedo, estoy muy liado. ¿El domingo te va bien?", "keywords": ["不能", "星期天"], "next": "n8", "goal": 3 }
+          ],
+          "hint": "Acepta (可以) o cambia el día explicando por qué con 不能."
+        },
+        "n7": {
+          "npc": { "zh": "没关系。那我们一起看电影吧？", "py": "Méi guānxi. Nà wǒmen yìqǐ kàn diànyǐng ba?", "es": "No pasa nada. Entonces, ¿vemos una película juntos?" },
+          "user": [
+            { "zh": "好，我们一起去电影院吧！", "py": "Hǎo, wǒmen yìqǐ qù diànyǐngyuàn ba!", "es": "¡Vale, vamos juntos al cine!", "keywords": ["电影院", "吧"], "next": "n8", "goal": 3 },
+            { "zh": "不用去电影院，我们上网看吧。", "py": "Búyòng qù diànyǐngyuàn, wǒmen shàngwǎng kàn ba.", "es": "No hace falta ir al cine: la vemos en internet.", "keywords": ["不用", "上网"], "next": "n8", "goal": 3 }
+          ],
+          "hint": "Acepta la propuesta con 好……吧 o propón otra cosa con 不用……"
+        },
+        "n8": {
+          "npc": { "zh": "太好了！到时候见！", "py": "Tài hǎo le! Dào shíhou jiàn!", "es": "¡Genial! ¡Nos vemos entonces!" },
+          "end": true,
+          "feedback": "Has hablado de gustos (喜欢 + verbo), de lo que sabes hacer (会 / 不会) y has cerrado un plan con 一起……吧. 你呢 es la forma más fácil de devolver una pregunta."
+        }
+      }
+    },
+    {
+      "id": "a1-u12-weekend-plan",
+      "title": "Quedar para el fin de semana",
+      "zh": "周末一起去吧",
+      "level": 1,
+      "setting": "Jueves por la tarde. Hugo se encuentra con Wang Ming a la salida de clase y quiere hacer un plan para el sábado. Tú (la app) eres 王明.",
+      "role": "amigo chino",
+      "roleZh": "王明",
+      "voice": "m",
+      "goals": ["Preguntar si puede el fin de semana", "Proponer una actividad", "Acordar la hora", "Responder a «¿tengo que llevar algo?»"],
+      "vocab": ["周末", "能", "可以", "想", "要", "不用", "吧", "一起", "电影", "打球"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "雨果，你好！今天课多吗？", "py": "Yǔguǒ, nǐ hǎo! Jīntiān kè duō ma?", "es": "¡Hola, Hugo! ¿Has tenido muchas clases hoy?" },
+          "user": [
+            { "zh": "不多。王明，这个周末你有时间吗？", "py": "Bù duō. Wáng Míng, zhège zhōumò nǐ yǒu shíjiān ma?", "es": "No muchas. Wang Ming, ¿tienes tiempo este fin de semana?", "keywords": ["周末", "有时间"], "next": "n2", "goal": 0 },
+            { "zh": "很多，我有点儿累。星期六你能跟我一起玩儿吗？", "py": "Hěn duō, wǒ yǒudiǎnr lèi. Xīngqīliù nǐ néng gēn wǒ yìqǐ wánr ma?", "es": "Muchas, estoy un poco cansado. ¿Puedes quedar conmigo el sábado?", "keywords": ["星期六", "能"], "next": "n2", "goal": 0 }
+          ],
+          "hint": "Pregunta por su disponibilidad: 周末你有时间吗？ / 星期六你能……吗？"
+        },
+        "n2": {
+          "npc": { "zh": "星期六可以，星期天不能，我要去看爸爸妈妈。你想做什么？", "py": "Xīngqīliù kěyǐ, xīngqītiān bù néng, wǒ yào qù kàn bàba māma. Nǐ xiǎng zuò shénme?", "es": "El sábado sí; el domingo no puedo, voy a ver a mis padres. ¿Qué te apetece hacer?" },
+          "user": [
+            { "zh": "我们一起去看电影吧！", "py": "Wǒmen yìqǐ qù kàn diànyǐng ba!", "es": "¡Vamos juntos al cine!", "keywords": ["电影", "吧"], "next": "n3", "goal": 1 },
+            { "zh": "我们去打篮球，怎么样？", "py": "Wǒmen qù dǎ lánqiú, zěnmeyàng?", "es": "¿Y si vamos a jugar al baloncesto?", "keywords": ["篮球"], "next": "n4", "goal": 1 },
+            { "zh": "我们一起去唱歌吧。", "py": "Wǒmen yìqǐ qù chànggē ba.", "es": "Vamos a cantar juntos.", "keywords": ["唱歌"], "next": "n5", "goal": 1 }
+          ],
+          "hint": "Propón algo con 我们一起……吧 o ……，怎么样？"
+        },
+        "n3": {
+          "npc": { "zh": "好！你想看什么电影？", "py": "Hǎo! Nǐ xiǎng kàn shénme diànyǐng?", "es": "¡Vale! ¿Qué película te apetece ver?" },
+          "user": [
+            { "zh": "一个中国电影，很有意思。星期六下午三点，可以吗？", "py": "Yí ge Zhōngguó diànyǐng, hěn yǒu yìsi. Xīngqīliù xiàwǔ sān diǎn, kěyǐ ma?", "es": "Una película china, muy interesante. ¿El sábado a las tres de la tarde?", "keywords": ["三点", "可以吗"], "next": "n6", "goal": 2 },
+            { "zh": "我不知道。你看看网上的电影吧。", "py": "Wǒ bù zhīdào. Nǐ kànkan wǎngshang de diànyǐng ba.", "es": "No lo sé. Echa un vistazo a las películas de internet.", "keywords": ["看看", "网上"], "next": "n3b" }
+          ],
+          "hint": "Di qué película y propón una hora (……三点，可以吗？), o pídele que mire (看看……吧)."
+        },
+        "n3b": {
+          "npc": { "zh": "我看一下……这个电影很好看。星期六晚上七点吧？", "py": "Wǒ kàn yíxià… Zhège diànyǐng hěn hǎokàn. Xīngqīliù wǎnshang qī diǎn ba?", "es": "Voy a mirar… Esta película está muy bien. ¿El sábado a las siete de la tarde?" },
+          "user": [
+            { "zh": "行，七点。", "py": "Xíng, qī diǎn.", "es": "Vale, a las siete.", "keywords": ["行", "七点"], "next": "n6", "goal": 2 },
+            { "zh": "七点太晚了，下午三点吧。", "py": "Qī diǎn tài wǎn le, xiàwǔ sān diǎn ba.", "es": "Las siete es muy tarde, mejor a las tres de la tarde.", "keywords": ["三点", "太晚"], "next": "n6", "goal": 2 }
+          ],
+          "hint": "Acepta la hora (行) o propón otra: ……太晚了，……吧."
+        },
+        "n4": {
+          "npc": { "zh": "打篮球？好！我很会打篮球。几点去？", "py": "Dǎ lánqiú? Hǎo! Wǒ hěn huì dǎ lánqiú. Jǐ diǎn qù?", "es": "¿Baloncesto? ¡Vale! Se me da muy bien. ¿A qué hora vamos?" },
+          "user": [
+            { "zh": "早上九点吧。", "py": "Zǎoshang jiǔ diǎn ba.", "es": "A las nueve de la mañana.", "keywords": ["九点"], "next": "n6", "goal": 2 },
+            { "zh": "十点半，可以吗？", "py": "Shí diǎn bàn, kěyǐ ma?", "es": "A las diez y media, ¿puede ser?", "keywords": ["十点半"], "next": "n6", "goal": 2 }
+          ],
+          "hint": "Propón una hora: X点吧 o X点，可以吗？"
+        },
+        "n5": {
+          "npc": { "zh": "唱歌？我不会唱歌，你开玩笑吧！", "py": "Chànggē? Wǒ bú huì chànggē, nǐ kāi wánxiào ba!", "es": "¿Cantar? ¡Yo no sé cantar, estás de broma!" },
+          "user": [
+            { "zh": "没关系，你试试吧！星期六晚上八点，行吗？", "py": "Méi guānxi, nǐ shìshi ba! Xīngqīliù wǎnshang bā diǎn, xíng ma?", "es": "No pasa nada, ¡prueba! ¿El sábado a las ocho de la tarde?", "keywords": ["试试", "八点"], "next": "n6", "goal": 2 },
+            { "zh": "那我们去看电影吧。下午三点，怎么样？", "py": "Nà wǒmen qù kàn diànyǐng ba. Xiàwǔ sān diǎn, zěnmeyàng?", "es": "Pues vamos al cine. ¿A las tres de la tarde?", "keywords": ["电影", "三点"], "next": "n6", "goal": 2 }
+          ],
+          "hint": "Anímale (你试试吧) o cambia de plan; propón una hora."
+        },
+        "n6": {
+          "npc": { "zh": "好。我要买什么吗？", "py": "Hǎo. Wǒ yào mǎi shénme ma?", "es": "Vale. ¿Tengo que comprar algo?" },
+          "user": [
+            { "zh": "不用，我有水和水果。", "py": "Búyòng, wǒ yǒu shuǐ hé shuǐguǒ.", "es": "No hace falta, tengo agua y fruta.", "keywords": ["不用"], "next": "n7", "goal": 3 },
+            { "zh": "你可以买茶。", "py": "Nǐ kěyǐ mǎi chá.", "es": "Puedes comprar té.", "keywords": ["可以", "茶"], "next": "n7", "goal": 3 }
+          ],
+          "hint": "不用 = no hace falta. O dile qué puede traer con 可以."
+        },
+        "n7": {
+          "npc": { "zh": "好，星期六见！", "py": "Hǎo, xīngqīliù jiàn!", "es": "Vale, ¡hasta el sábado!" },
+          "end": true,
+          "feedback": "Plan cerrado: disponibilidad (能 / 可以), actividad (一起……吧), hora y 不用 para «no hace falta». Recuerda: 不用 ≠ 不要 (no lo hagas)."
+        }
+      }
+    }
+  ]
+}

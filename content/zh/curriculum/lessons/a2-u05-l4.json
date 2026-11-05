@@ -1,0 +1,138 @@
+{
+  "id": "a2-u05-l4",
+  "title": "En la farmacia: 该…了, 必须 y 大夫让我…",
+  "zh": "你该吃药了",
+  "goal": "Entender cómo tomar una medicina, decir que «ya toca» algo (该…了), lo que es obligatorio (必须 / 不用) y lo que el médico te manda hacer (让).",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "药店", "pinyin": "yàodiàn", "es": "farmacia" },
+    { "hanzi": "药片", "pinyin": "yàopiàn", "es": "pastilla, comprimido", "note": "一片药 = una pastilla." },
+    { "hanzi": "药水", "pinyin": "yàoshuǐ", "es": "jarabe, medicina líquida" },
+    { "hanzi": "该", "pinyin": "gāi", "es": "deber; tocar (ser el momento)", "note": "该 + V + 了 = ya toca…: 该吃药了." },
+    { "hanzi": "必须", "pinyin": "bìxū", "es": "tener que (obligatorio)", "note": "Negativa: 不用 o 不必, nunca *不必须." },
+    { "hanzi": "让", "pinyin": "ràng", "es": "hacer que, dejar; decirle a alguien que haga algo", "note": "Adelanto: 大夫让我多休息. Se amplía en A2-6 y A2-11." },
+    { "hanzi": "注意", "pinyin": "zhùyì", "es": "prestar atención, tener cuidado con" },
+    { "hanzi": "营养", "pinyin": "yíngyǎng", "es": "nutrición; alimento", "note": "注意营养 = comer bien, cuidar la alimentación." },
+    { "hanzi": "卫生", "pinyin": "wèishēng", "es": "higiene; limpio, higiénico", "note": "卫生间 = cuarto de baño." },
+    { "hanzi": "安全", "pinyin": "ānquán", "es": "seguro (sin peligro); seguridad" },
+    { "hanzi": "生命", "pinyin": "shēngmìng", "es": "vida (biológica)" },
+    { "hanzi": "烟", "pinyin": "yān", "es": "tabaco, cigarrillo; humo" },
+    { "hanzi": "抽烟", "pinyin": "chōuyān", "es": "fumar", "note": "抽 = aspirar, tirar de algo." }
+  ],
+  "extraVocab": ["抽烟"],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "九点了，我该吃药了。", "py": "Jiǔ diǎn le, wǒ gāi chī yào le.", "es": "Son las nueve: me toca tomarme la medicina." },
+        { "zh": "这个药必须饭后吃。", "py": "Zhège yào bìxū fàn hòu chī.", "es": "Esta medicina hay que tomarla después de comer." },
+        { "zh": "大夫让我多休息，不让我抽烟。", "py": "Dàifu ràng wǒ duō xiūxi, bú ràng wǒ chōuyān.", "es": "El médico me ha dicho que descanse mucho y no me deja fumar." }
+      ]
+    },
+    { "type": "vocab", "title": "En la farmacia", "words": ["药店", "药片", "药水", "该", "必须", "让", "注意", "营养", "卫生", "安全", "生命", "烟", "抽烟"] },
+    {
+      "type": "phonetics-drill",
+      "title": "Nasales: -n / -ng en 营养, 安全, 生命",
+      "markdown": "Hoy hay muchas sílabas nasales. La regla para hispanohablantes:\n\n- **-n**: la lengua toca detrás de los dientes de arriba, como en «pan»: 安 *ān*, 全 *quán*, 烟 *yān*, 店 *diàn*.\n- **-ng**: la lengua se queda **atrás** y la boca abierta, sin tocar los dientes (como en «tengo» sin la *o*): 营 *yíng*, 养 *yǎng*, 生 *shēng*, 命 *mìng*.\n\nY **必须 bìxū**: tras *x* la *u* es una **ü** (labios redondos, lengua de «i»).",
+      "items": [
+        { "audio": "营养", "options": ["yíngyǎng", "yínyǎn", "yíngyǎn"], "answer": 0, "explain": "Las dos sílabas acaban en -ng." },
+        { "audio": "安全", "options": ["ānquán", "āngquán", "ānquáng"], "answer": 0, "explain": "Las dos acaban en -n." },
+        { "audio": "生命", "options": ["shēngmìng", "shēnmìn", "shēngmìn"], "answer": 0, "explain": "-eng y -ing: las dos con -ng." },
+        { "audio": "必须", "options": ["bìxū", "bìshū", "bìsū"], "answer": 0, "explain": "x + ü (escrita u): labios redondos." },
+        { "audio": "抽烟", "options": ["chōuyān", "chōuyāng", "qiūyān"], "answer": 0, "explain": "ch + ou, y yān con -n." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["药", "烟"],
+      "mnemonics": {
+        "药": "艹 (hierba) arriba + 约 (que da el sonido): las primeras medicinas eran hierbas → 药, 中药.",
+        "烟": "火 (fuego) + 因: lo que sale del fuego → humo; y de ahí, el cigarrillo (抽烟)."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "该…了, 必须 / 不用 y la causativa 让",
+      "markdown": "**1. 该 + V + 了 = «ya toca…»**. 该 va en el hueco **Auxiliar** y el 了 al final: 你**该**吃药**了**. Es lo que dices al mirar el reloj: 十二点了，**该**睡觉**了**.\n\n**2. 必须 = «hay que, es obligatorio»** (más fuerte que 应该). Va en **Adverbios**. Su negativa **no es** *不必须*: se dice **不用** («no hace falta»): 你**不用**住院.\n\n**3. 让 + persona + V** = «hacer que / decirle a alguien que…». Es una frase con **dos verbos**: el primero es 让 con la persona (hueco **Verbo 1**: 让我) y el segundo, lo que la persona hace (hueco **Verbo 2**): 大夫**让我**多休息. Negativa: 不让 = no dejar: 大夫**不让**我喝酒. (También se oye 叫我…, más coloquial.)",
+      "focus": ["aux", "adverb", "verb2"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "time0": { "zh": "现在", "py": "xiànzài" }, "subject": { "zh": "你", "py": "nǐ" }, "aux": { "zh": "该", "py": "gāi" }, "verb1": { "zh": "吃药", "py": "chī yào" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Ahora te toca tomarte la medicina." },
+        { "slots": { "subject": { "zh": "我们", "py": "wǒmen" }, "aux": { "zh": "该", "py": "gāi" }, "verb1": { "zh": "睡觉", "py": "shuìjiào" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Ya es hora de que nos vayamos a dormir." },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "time": { "zh": "每天", "py": "měi tiān" }, "adverb": { "zh": "必须", "py": "bìxū" }, "verb1": { "zh": "吃", "py": "chī" }, "object": { "zh": "两片药", "py": "liǎng piàn yào" } }, "end": "。", "es": "Tienes que tomarte dos pastillas al día." },
+        { "slots": { "subject": { "zh": "大夫", "py": "dàifu" }, "verb1": { "zh": "让我", "py": "ràng wǒ" }, "verb2": { "zh": "多休息", "py": "duō xiūxi" } }, "end": "。", "es": "El médico me ha dicho que descanse mucho.", "esOrder": [{ "text": "El médico", "slot": "subject" }, { "text": "me ha dicho", "slot": "verb1" }, { "text": "que descanse mucho", "slot": "verb2" }] },
+        { "slots": { "subject": { "zh": "妈妈", "py": "māma" }, "verb1": { "zh": "让我", "py": "ràng wǒ" }, "verb2": { "zh": "注意", "py": "zhùyì" }, "object": { "zh": "营养", "py": "yíngyǎng" } }, "end": "。", "es": "Mi madre me dice que cuide la alimentación." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "adverb": { "zh": "不用", "py": "bú yòng" }, "verb1": { "zh": "住院", "py": "zhùyuàn" } }, "end": "。", "es": "No hace falta que te quedes ingresado." },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "adverb": { "zh": "不", "py": "bù" }, "aux": { "zh": "能", "py": "néng" }, "place": { "zh": "在医院里", "py": "zài yīyuàn li" }, "verb1": { "zh": "抽烟", "py": "chōuyān" } }, "end": "。", "es": "No puedes fumar dentro del hospital." },
+        { "slots": { "subject": { "zh": "大夫", "py": "dàifu" }, "adverb": { "zh": "不", "py": "bú" }, "verb1": { "zh": "让我", "py": "ràng wǒ" }, "verb2": { "zh": "喝", "py": "hē" }, "object": { "zh": "酒", "py": "jiǔ" } }, "end": "。", "es": "El médico no me deja beber alcohol." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "aux": { "zh": "该", "py": "gāi" }, "verb1": { "zh": "吃药", "py": "chī yào" }, "particle": { "zh": "了吗", "py": "le ma" } }, "end": "？", "es": "¿Ya me toca la medicina?" },
+        { "slots": { "subject": { "zh": "大夫", "py": "dàifu" }, "verb1": { "zh": "让你", "py": "ràng nǐ" }, "verb2": { "zh": "吃", "py": "chī" }, "object": { "zh": "什么药", "py": "shénme yào" } }, "end": "？", "es": "¿Qué medicina te ha mandado el médico?" }
+      ],
+      "mistakes": [
+        { "wrong": "我不必须去医院。", "right": "我不用去医院。", "why": "La negativa de 必须 es 不用 (o 不必): «no hace falta»." },
+        { "wrong": "我该吃药。（al mirar el reloj）", "right": "我该吃药了。", "why": "«Ya toca» necesita el 了 final: es un cambio de situación." },
+        { "wrong": "大夫让我休息多。", "right": "大夫让我多休息。", "why": "多 va delante del verbo: 多休息, 多喝水." },
+        { "wrong": "大夫让我要多休息。", "right": "大夫让我多休息。", "why": "Detrás de 让 + persona va directamente el verbo; sobra 要." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "En la farmacia del barrio",
+      "lines": [
+        { "speaker": "服务员", "zh": "你好，你要买什么药？", "py": "Nǐ hǎo, nǐ yào mǎi shénme yào?", "es": "Hola, ¿qué medicina quiere?" },
+        { "speaker": "雨果", "zh": "我感冒了。大夫让我吃这个药。", "py": "Wǒ gǎnmào le. Dàifu ràng wǒ chī zhège yào.", "es": "Me he resfriado. El médico me ha mandado esta medicina." },
+        { "speaker": "服务员", "zh": "这个药有药片，也有药水。你要哪个？", "py": "Zhège yào yǒu yàopiàn, yě yǒu yàoshuǐ. Nǐ yào nǎge?", "es": "Esta medicina viene en pastillas y en jarabe. ¿Cuál quiere?" },
+        { "speaker": "雨果", "zh": "药片吧。一天吃几次？", "py": "Yàopiàn ba. Yì tiān chī jǐ cì?", "es": "Pastillas. ¿Cuántas veces al día?" },
+        { "speaker": "服务员", "zh": "一天三次，一次两片。必须饭后吃。", "py": "Yì tiān sān cì, yí cì liǎng piàn. Bìxū fàn hòu chī.", "es": "Tres veces al día, dos pastillas cada vez. Hay que tomarlas después de comer." },
+        { "speaker": "雨果", "zh": "我该注意什么？", "py": "Wǒ gāi zhùyì shénme?", "es": "¿Qué debo tener en cuenta?" },
+        { "speaker": "服务员", "zh": "吃药的时候，不能喝酒，也不能抽烟。", "py": "Chī yào de shíhou, bù néng hē jiǔ, yě bù néng chōuyān.", "es": "Mientras lo tome, no puede beber alcohol ni fumar." },
+        { "speaker": "雨果", "zh": "我不抽烟。我还应该做什么？", "py": "Wǒ bù chōuyān. Wǒ hái yīnggāi zuò shénme?", "es": "No fumo. ¿Qué más debería hacer?" },
+        { "speaker": "服务员", "zh": "多喝水，注意营养，也要注意卫生，常常洗手。", "py": "Duō hē shuǐ, zhùyì yíngyǎng, yě yào zhùyì wèishēng, chángcháng xǐ shǒu.", "es": "Beber mucha agua, comer bien y cuidar la higiene: lávese las manos a menudo." },
+        { "speaker": "雨果", "zh": "好的。在网上买药安全吗？", "py": "Hǎo de. Zài wǎngshàng mǎi yào ānquán ma?", "es": "Vale. ¿Es seguro comprar medicinas por internet?" },
+        { "speaker": "服务员", "zh": "不一定安全。买药，还是来药店吧。", "py": "Bù yídìng ānquán. Mǎi yào, háishi lái yàodiàn ba.", "es": "No siempre. Para comprar medicinas, mejor venga a la farmacia." }
+      ],
+      "notes": "En las farmacias chinas (药店) muchas medicinas occidentales se venden sin receta, y casi siempre hay también un rincón de 中药. 饭后吃 = después de comer; 饭前吃 = antes. 还是……吧 = «mejor…» (recomendación)."
+    },
+    { "type": "exercises", "count": 17, "bank": ["g-modal-verbs", "g-le", "u11"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "你" }, "aux": { "zh": "该" }, "verb1": { "zh": "睡觉" }, "particle": { "zh": "了" } }, "end": "。", "es": "Ya te toca irte a dormir." } },
+        { "sentence": { "slots": { "subject": { "zh": "这个药" }, "adverb": { "zh": "必须" }, "verb1": { "zh": "饭后吃" } }, "end": "。", "es": "Esta medicina hay que tomarla después de comer." }, "distractors": ["不必须"] },
+        { "sentence": { "slots": { "subject": { "zh": "大夫" }, "adverb": { "zh": "不" }, "verb1": { "zh": "让我" }, "verb2": { "zh": "抽" }, "object": { "zh": "烟" } }, "end": "。", "es": "El médico no me deja fumar." }, "distractors": ["要"] },
+        { "sentence": { "slots": { "time0": { "zh": "明天上午" }, "subject": { "zh": "我" }, "adverb": { "zh": "必须" }, "with": { "zh": "跟安娜一起" }, "verb1": { "zh": "去药店" }, "verb2": { "zh": "买" }, "object": { "zh": "感冒药" } }, "end": "。", "es": "Mañana por la mañana tengo que ir con Ana a la farmacia a comprar medicina para el resfriado." } }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "我该吃药了。", "py": "Wǒ gāi chī yào le.", "es": "Me toca la medicina." },
+        { "zh": "一天三次，一次两片。", "py": "Yì tiān sān cì, yí cì liǎng piàn.", "es": "Tres veces al día, dos pastillas cada vez." },
+        { "zh": "大夫让我多喝水。", "py": "Dàifu ràng wǒ duō hē shuǐ.", "es": "El médico me ha dicho que beba mucha agua." },
+        { "zh": "你不用住院。", "py": "Nǐ bú yòng zhùyuàn.", "es": "No hace falta que te quedes ingresado." }
+      ],
+      "respond": [
+        { "q": { "zh": "这个药一天吃几次？", "py": "Zhège yào yì tiān chī jǐ cì?", "es": "¿Cuántas veces al día se toma esta medicina?" }, "model": { "zh": "一天两次，必须饭后吃。", "py": "Yì tiān liǎng cì, bìxū fàn hòu chī.", "es": "Dos veces al día, siempre después de comer." } },
+        { "q": { "zh": "大夫让你做什么？", "py": "Dàifu ràng nǐ zuò shénme?", "es": "¿Qué te ha dicho el médico que hagas?" }, "model": { "zh": "大夫让我多休息，注意营养。", "py": "Dàifu ràng wǒ duō xiūxi, zhùyì yíngyǎng.", "es": "Me ha dicho que descanse mucho y que coma bien." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Normas de la residencia",
+      "text": "这是我们宿舍的通知：一、宿舍里不能抽烟，楼上楼下都不能抽烟。烟对身体不好，也不安全。二、大家必须注意卫生，每天打扫房间。三、晚上过了十一点，大家要小声说话。宿舍的老师说：“生命和健康最重要。你们应该注意营养，多喝水，早一点儿睡觉。生病了，你们不用怕，可以去学校的医院看病，也可以去前边的药店买药。”",
+      "es": "Este es el aviso de nuestra residencia: 1. En la residencia no se puede fumar, ni en las plantas de arriba ni en las de abajo. El tabaco es malo para la salud y además es peligroso. 2. Todos tenéis que cuidar la higiene y limpiar la habitación cada día. 3. Pasadas las once de la noche, todos tenéis que hablar en voz baja. La encargada de la residencia dice: «La vida y la salud es lo más importante. Deberíais comer bien, beber mucha agua y acostaros un poco antes. Si os ponéis enfermos, no tengáis miedo: podéis ir al hospital de la universidad o a la farmacia de aquí delante a comprar medicinas».",
+      "questions": [
+        { "q": "¿Dónde no se puede fumar?", "options": ["En ninguna parte de la residencia", "Solo en la habitación", "Solo arriba"], "answer": 0 },
+        { "q": "¿Qué hay que hacer cada día?", "options": ["Limpiar la habitación", "Ir al hospital", "Tomar medicinas"], "answer": 0 },
+        { "q": "¿Qué es lo más importante según la encargada?", "options": ["La vida y la salud", "Los exámenes", "El dinero"], "answer": 0 },
+        { "q": "¿Dónde pueden comprar medicinas?", "options": ["En la farmacia de delante", "En el comedor", "En la residencia"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

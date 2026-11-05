@@ -1,0 +1,130 @@
+{
+  "id": "a1-u09-l3",
+  "title": "¡Qué rico!: 好吃, 好喝, 好看, 好听, 好玩",
+  "zh": "中国菜很好吃",
+  "goal": "Opinar sobre comida, bebida y cosas con 好 + verbo (好吃, 好喝, 好看…) y decir si algo pica.",
+  "minutes": 13,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "好吃", "pinyin": "hǎochī", "es": "rico, bueno (de comer)", "note": "Lo contrario: 难吃 nánchī." },
+    { "hanzi": "好喝", "pinyin": "hǎohē", "es": "rico, bueno (de beber)", "note": "Para bebidas, nunca 好吃. Lo contrario: 难喝." },
+    { "hanzi": "好看", "pinyin": "hǎokàn", "es": "bonito, guapo; (película, libro) bueno", "note": "Lit. «bueno de ver». Lo contrario: 难看 (unidad 8)." },
+    { "hanzi": "好听", "pinyin": "hǎotīng", "es": "bonito (de oír): voz, música, nombre", "note": "Lit. «bueno de oír». Lo contrario: 难听." },
+    { "hanzi": "好玩", "pinyin": "hǎowán", "es": "divertido (sitio, juego, actividad)", "note": "En el norte, 好玩儿 hǎowánr. 玩 = jugar, divertirse (unidad 12)." },
+    { "hanzi": "辣", "pinyin": "là", "es": "picante", "note": "Clave en Sichuan y Hunan. 不要辣 = sin picante. En Shanghái la comida es más bien dulce." },
+    { "hanzi": "水果", "pinyin": "shuǐguǒ", "es": "fruta" },
+    { "hanzi": "中餐", "pinyin": "zhōngcān", "es": "comida china (como tipo de cocina)", "note": "中国菜 es lo mismo, más coloquial." },
+    { "hanzi": "西餐", "pinyin": "xīcān", "es": "comida occidental", "note": "Para un chino, la pasta, la pizza y la paella son 西餐." }
+  ],
+  "extraVocab": ["好喝", "好玩", "辣"],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "中国菜很好吃。", "py": "Zhōngguó cài hěn hǎochī.", "es": "La comida china está muy rica." },
+        { "zh": "这个茶很好喝。", "py": "Zhège chá hěn hǎohē.", "es": "Este té está muy bueno." },
+        { "zh": "这个菜太辣了！", "py": "Zhège cài tài là le!", "es": "¡Este plato pica demasiado!" }
+      ]
+    },
+    { "type": "vocab", "title": "Opinar: 好 + verbo", "words": ["好吃", "好喝", "好看", "好听", "好玩", "辣", "水果", "中餐", "西餐"] },
+    {
+      "type": "phonetics-drill",
+      "title": "Dos terceros tonos seguidos: 很好喝",
+      "markdown": "Cuando van **dos terceros tonos seguidos**, el primero se convierte en **segundo** (sube). Se sigue escribiendo con ˇ, pero se dice con ´:\n\n- 很好 hěn hǎo → se dice **hén** hǎo\n- 水果 shuǐguǒ → se dice **shuí**guǒ\n- 我想 wǒ xiǎng → se dice **wó** xiǎng\n\nCon tres o más (我也想, 很好喝 delante de otro tercero…), se agrupan por palabras: 我也想吃 → **wó yé** xiǎng chī. No hace falta calcularlo: si dices cada tercer tono **bajo y corto** salvo el último, sonará natural.",
+      "items": [
+        { "audio": "很好", "prompt": "¿Cómo se pronuncia 很 aquí?", "options": ["hén (sube)", "hěn (baja y sube)", "hèn (cae)"], "answer": 0, "explain": "很 + 好: dos terceros, el primero pasa a segundo." },
+        { "audio": "水果", "prompt": "¿Cómo suena de verdad?", "options": ["shuí guǒ", "shuǐ guǒ, los dos completos", "shuì guǒ"], "answer": 0, "explain": "Se escribe shuǐguǒ, pero se dice shuíguǒ." },
+        { "audio": "很好喝", "options": ["hén hǎohē", "hěn háohē", "hèn hǎohē"], "answer": 0, "explain": "Solo cambia 很: 好 va delante de 喝 (primer tono), así que se queda bajo." },
+        { "audio": "我想吃", "options": ["wó xiǎng chī", "wǒ xiáng chī", "wò xiǎng chī"], "answer": 0, "explain": "我 + 想: el primero sube." },
+        { "audio": "好吃", "prompt": "¿Cambia 好 delante de 吃?", "options": ["No: 吃 es primer tono", "Sí, pasa a segundo", "Sí, pasa a cuarto"], "answer": 0, "explain": "El sandhi solo ocurre delante de otro tercer tono." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["喝", "辣"],
+      "mnemonics": {
+        "喝": "口 (boca) + 曷 hé (pista de sonido): lo que entra por la boca y suena «he».",
+        "辣": "辛 (amargo, que escuece) + 束 (manojo atado): un manojo de guindillas que escuece en la boca."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "Opinar: sujeto + 很 + 好吃 / 好喝 / 好看…",
+      "markdown": "**好 + verbo** forma adjetivos de opinión: «bueno de…».\n\n| | significado | para |\n|---|---|---|\n| 好吃 | rico (de comer) | comida |\n| 好喝 | rico (de beber) | bebida |\n| 好看 | bonito (de ver) | ropa, personas, películas |\n| 好听 | bonito (de oír) | música, voces, nombres |\n| 好玩 | divertido | sitios, juegos, planes |\n\nFuncionan como cualquier adjetivo de la unidad 8: **sin 是**, con **很** delante (hueco Adverbio) y el adjetivo en el hueco del verbo:\n\n- 中国菜**很好吃** (no *中国菜是好吃).\n- Negativa: **不好吃** (o 难吃, más fuerte).\n- Pregunta: 好吃**吗**？ o **好不好吃**？\n- Exclamar: **太**好吃**了**！ / **真**好喝！\n\nCon la comida picante, 辣 es un adjetivo normal: 这个菜**很辣**, 不辣, 太辣了.",
+      "focus": ["adverb", "verb1"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "中国菜", "py": "Zhōngguó cài" }, "adverb": { "zh": "很", "py": "hěn" }, "verb1": { "zh": "好吃", "py": "hǎochī" } }, "end": "。", "es": "La comida china está muy rica." },
+        { "slots": { "subject": { "zh": "这个茶", "py": "zhège chá" }, "adverb": { "zh": "很", "py": "hěn" }, "verb1": { "zh": "好喝", "py": "hǎohē" } }, "end": "。", "es": "Este té está muy bueno." },
+        { "slots": { "subject": { "zh": "王老师的名字", "py": "Wáng lǎoshī de míngzi" }, "adverb": { "zh": "很", "py": "hěn" }, "verb1": { "zh": "好听", "py": "hǎotīng" } }, "end": "。", "es": "El nombre de la profesora Wang es muy bonito." },
+        { "slots": { "subject": { "zh": "上海", "py": "Shànghǎi" }, "adverb": { "zh": "真", "py": "zhēn" }, "verb1": { "zh": "好玩", "py": "hǎowán" } }, "end": "！", "es": "¡Shanghái es divertidísimo!" },
+        { "slots": { "subject": { "zh": "这个菜", "py": "zhège cài" }, "adverb": { "zh": "太", "py": "tài" }, "verb1": { "zh": "辣", "py": "là" }, "particle": { "zh": "了", "py": "le" } }, "end": "！", "es": "¡Este plato pica demasiado!" },
+        { "slots": { "subject": { "zh": "安娜", "py": "Ānnà" }, "adverb": { "zh": "很", "py": "hěn" }, "aux": { "zh": "想", "py": "xiǎng" }, "verb1": { "zh": "吃", "py": "chī" }, "object": { "zh": "西餐", "py": "xīcān" } }, "end": "。", "es": "Ana tiene muchas ganas de comer comida occidental." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "这个水果", "py": "zhège shuǐguǒ" }, "adverb": { "zh": "不", "py": "bù" }, "verb1": { "zh": "好吃", "py": "hǎochī" } }, "end": "。", "es": "Esta fruta no está buena." },
+        { "slots": { "subject": { "zh": "西餐", "py": "xīcān" }, "adverb": { "zh": "不", "py": "bú" }, "verb1": { "zh": "辣", "py": "là" } }, "end": "。", "es": "La comida occidental no pica." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "饺子", "py": "jiǎozi" }, "verb1": { "zh": "好吃", "py": "hǎochī" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿Están ricos los jiaozi?", "esOrder": [{ "text": "¿Están ricos", "slot": "verb1" }, { "text": "los jiaozi", "slot": "subject" }, { "text": "?", "slot": "particle" }] },
+        { "slots": { "subject": { "zh": "这个菜", "py": "zhège cài" }, "verb1": { "zh": "辣不辣", "py": "là bu là" } }, "end": "？", "es": "¿Pica este plato?" },
+        { "slots": { "subject": { "zh": "中餐", "py": "zhōngcān" }, "verb1": { "zh": "好不好吃", "py": "hǎo bu hǎochī" } }, "end": "？", "es": "¿Está buena la comida china?" }
+      ],
+      "mistakes": [
+        { "wrong": "这个菜是好吃。", "right": "这个菜很好吃。", "why": "Con adjetivos no se usa 是: se pone 很 (unidad 8)." },
+        { "wrong": "这个茶很好吃。", "right": "这个茶很好喝。", "why": "Lo que se bebe es 好喝; 好吃 solo para lo que se come." },
+        { "wrong": "这个菜很辣了。", "right": "这个菜太辣了。", "why": "La fórmula de exceso es 太…了; 很 no lleva 了." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "La primera comida de Sichuan",
+      "lines": [
+        { "speaker": "小李", "zh": "雨果，中餐好吃吗？", "py": "Yǔguǒ, zhōngcān hǎochī ma?", "es": "Hugo, ¿te gusta la comida china? (lit. ¿está rica?)" },
+        { "speaker": "雨果", "zh": "很好吃！饺子太好吃了！", "py": "Hěn hǎochī! Jiǎozi tài hǎochī le!", "es": "¡Muy rica! ¡Los jiaozi están buenísimos!" },
+        { "speaker": "小李", "zh": "西班牙菜呢？辣不辣？", "py": "Xībānyá cài ne? Là bu là?", "es": "¿Y la comida española? ¿Pica?" },
+        { "speaker": "雨果", "zh": "西班牙菜不辣，也很好吃。", "py": "Xībānyá cài bú là, yě hěn hǎochī.", "es": "La comida española no pica, y también está muy rica." },
+        { "speaker": "小李", "zh": "这个菜很辣，你想吃吗？", "py": "Zhège cài hěn là, nǐ xiǎng chī ma?", "es": "Este plato pica mucho. ¿Quieres probarlo?" },
+        { "speaker": "雨果", "zh": "想！……太辣了！我要喝水！", "py": "Xiǎng! … Tài là le! Wǒ yào hē shuǐ!", "es": "¡Sí! … ¡Pica muchísimo! ¡Necesito agua!" },
+        { "speaker": "小李", "zh": "你喝这个茶，很好喝。", "py": "Nǐ hē zhège chá, hěn hǎohē.", "es": "Bébete este té, está muy bueno." },
+        { "speaker": "雨果", "zh": "真好喝！中国菜真好吃，上海也真好玩！", "py": "Zhēn hǎohē! Zhōngguó cài zhēn hǎochī, Shànghǎi yě zhēn hǎowán!", "es": "¡Qué bueno! ¡La comida china está riquísima y Shanghái es divertidísimo!" }
+      ],
+      "notes": "A una pregunta con 想…吗 se responde repitiendo el auxiliar: 想 (sí) o 不想 (no), sin «sí» ni «no». Si no quieres picante al pedir, di 不要辣; si solo un poco, 微辣 wēi là (lo verás más adelante)."
+    },
+    { "type": "exercises", "count": 14, "bank": ["g-hen-adj", "g-modal-verbs", "u05"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "中国菜" }, "adverb": { "zh": "很" }, "verb1": { "zh": "好吃" } }, "end": "。", "es": "La comida china está muy rica." }, "distractors": ["是"] },
+        { "sentence": { "slots": { "subject": { "zh": "这个茶" }, "adverb": { "zh": "不太" }, "verb1": { "zh": "好喝" } }, "end": "。", "es": "Este té no está muy bueno." }, "distractors": ["好吃"] },
+        { "sentence": { "slots": { "subject": { "zh": "这个菜" }, "adverb": { "zh": "太" }, "verb1": { "zh": "辣" }, "particle": { "zh": "了" } }, "end": "！", "es": "¡Este plato pica demasiado!" }, "distractors": ["很"] },
+        { "sentence": { "slots": { "time0": { "zh": "今天中午" }, "subject": { "zh": "雨果和小李" }, "adverb": { "zh": "都很" }, "aux": { "zh": "想" }, "verb1": { "zh": "去" }, "verb2": { "zh": "吃" }, "object": { "zh": "很辣的中国菜" } }, "end": "。", "es": "Hoy a mediodía Hugo y Xiao Li tienen muchas ganas de ir a comer comida china muy picante." }, "distractors": ["是"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "中国菜很好吃。", "py": "Zhōngguó cài hěn hǎochī.", "es": "La comida china está muy rica." },
+        { "zh": "这个茶很好喝。", "py": "Zhège chá hěn hǎohē.", "es": "Este té está muy bueno." },
+        { "zh": "这个菜太辣了！", "py": "Zhège cài tài là le!", "es": "¡Este plato pica demasiado!" },
+        { "zh": "上海真好玩！", "py": "Shànghǎi zhēn hǎowán!", "es": "¡Shanghái es divertidísimo!" }
+      ],
+      "respond": [
+        { "q": { "zh": "中餐好吃吗？", "py": "Zhōngcān hǎochī ma?", "es": "¿Está rica la comida china?" }, "model": { "zh": "很好吃！饺子太好吃了。", "py": "Hěn hǎochī! Jiǎozi tài hǎochī le.", "es": "¡Muy rica! Los jiaozi están buenísimos." } },
+        { "q": { "zh": "西班牙菜辣不辣？", "py": "Xībānyá cài là bu là?", "es": "¿Pica la comida española?" }, "model": { "zh": "不辣，西班牙菜不太辣。", "py": "Bú là, Xībānyá cài bú tài là.", "es": "No, la comida española no pica mucho." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Opiniones de la residencia",
+      "text": "雨果很爱吃中餐。他说饺子很好吃，包子也很好吃，中国茶很好喝。小李爱吃辣的菜，雨果不太爱吃辣的菜。安娜说西餐也很好吃，水果也很好吃。他们都说上海很好玩。",
+      "es": "A Hugo le encanta la comida china. Dice que los jiaozi están muy ricos, los baozi también, y el té chino está muy bueno. A Xiao Li le encanta la comida picante; a Hugo, no mucho. Ana dice que la comida occidental también está muy rica, y la fruta también. Todos dicen que Shanghái es muy divertido.",
+      "questions": [
+        { "q": "¿A quién le encanta el picante?", "options": ["小李", "雨果", "安娜"], "answer": 0 },
+        { "q": "¿Qué dice Hugo del té chino?", "options": ["很好喝", "很好吃", "不好喝"], "answer": 0 },
+        { "q": "¿Qué opinan todos de Shanghái?", "options": ["很好玩", "很辣", "很好听"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

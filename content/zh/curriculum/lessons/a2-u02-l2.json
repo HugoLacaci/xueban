@@ -1,0 +1,736 @@
+{
+  "id": "a2-u02-l2",
+  "title": "¿A qué hora? ¿Cuánto rato? Punto y duración",
+  "zh": "我每天学习两个小时",
+  "goal": "Distinguir el momento (八点上课: delante del verbo) de la duración (上两个小时: detrás) y preguntar con 多长时间.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    {
+      "hanzi": "多长时间",
+      "pinyin": "duō cháng shíjiān",
+      "es": "cuánto tiempo"
+    },
+    {
+      "hanzi": "校园",
+      "pinyin": "xiàoyuán",
+      "es": "campus"
+    },
+    {
+      "hanzi": "教室",
+      "pinyin": "jiàoshì",
+      "es": "aula"
+    },
+    {
+      "hanzi": "课堂",
+      "pinyin": "kètáng",
+      "es": "clase (el aula como lugar de enseñanza)",
+      "note": "课堂上 = en clase."
+    },
+    {
+      "hanzi": "教师",
+      "pinyin": "jiàoshī",
+      "es": "docente, profesor (más formal que 老师)"
+    },
+    {
+      "hanzi": "校长",
+      "pinyin": "xiàozhǎng",
+      "es": "rector, director (de un centro)"
+    },
+    {
+      "hanzi": "讲",
+      "pinyin": "jiǎng",
+      "es": "explicar; hablar (en público)",
+      "note": "老师讲课 = el profesor da la lección."
+    },
+    {
+      "hanzi": "听讲",
+      "pinyin": "tīngjiǎng",
+      "es": "escuchar la explicación (en clase)"
+    },
+    {
+      "hanzi": "选课",
+      "pinyin": "xuǎnkè",
+      "es": "elegir asignaturas, matricularse"
+    },
+    {
+      "hanzi": "学生证",
+      "pinyin": "xuéshengzhèng",
+      "es": "carné de estudiante"
+    },
+    {
+      "hanzi": "校园卡",
+      "pinyin": "xiàoyuánkǎ",
+      "es": "tarjeta del campus (para comedor, biblioteca…)"
+    }
+  ],
+  "extraVocab": [
+    "选课",
+    "学生证",
+    "校园卡"
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        {
+          "zh": "我每天八点上课。",
+          "py": "Wǒ měitiān bā diǎn shàngkè.",
+          "es": "Entro a clase todos los días a las ocho."
+        },
+        {
+          "zh": "我们每天上四个小时课。",
+          "py": "Wǒmen měitiān shàng sì ge xiǎoshí kè.",
+          "es": "Tenemos cuatro horas de clase al día."
+        },
+        {
+          "zh": "校长讲了一个小时。",
+          "py": "Xiàozhǎng jiǎng le yí ge xiǎoshí.",
+          "es": "El rector habló una hora."
+        }
+      ]
+    },
+    {
+      "type": "vocab",
+      "title": "En el campus",
+      "words": [
+        "多长时间",
+        "校园",
+        "教室",
+        "课堂",
+        "教师",
+        "校长",
+        "讲",
+        "听讲",
+        "选课",
+        "学生证",
+        "校园卡"
+      ]
+    },
+    {
+      "type": "phonetics-drill",
+      "title": "j, q, x en el campus: 讲, 选, 校",
+      "markdown": "Las tres consonantes «planas» van siempre con **i** o **ü**, con la lengua apoyada detrás de los dientes de abajo:\n\n- **j** sin aire: 讲 *jiǎng*, 教 *jiào*.\n- **q** con aire: 去 *qù*, 期 *qī*.\n- **x** como una «s» suave con los labios estirados: 校 *xiào*, 选 *xuǎn* (aquí la *u* es **ü**).\n\nY ojo: **长** tiene dos lecturas: *cháng* (largo: 多长时间) y *zhǎng* (jefe, crecer: 校长).",
+      "items": [
+        {
+          "audio": "讲",
+          "options": [
+            "jiǎng",
+            "qiǎng",
+            "xiǎng"
+          ],
+          "answer": 0,
+          "explain": "j sin aire."
+        },
+        {
+          "audio": "选课",
+          "options": [
+            "xuǎnkè",
+            "shuǎnkè",
+            "xuǎngè"
+          ],
+          "answer": 0,
+          "explain": "x + üan; k con aire."
+        },
+        {
+          "audio": "校长",
+          "options": [
+            "xiàozhǎng",
+            "xiàocháng",
+            "jiàozhǎng"
+          ],
+          "answer": 0,
+          "explain": "长 = jefe → zhǎng."
+        },
+        {
+          "audio": "多长时间",
+          "options": [
+            "duō cháng shíjiān",
+            "duō zhǎng shíjiān",
+            "duō cháng sìjiān"
+          ],
+          "answer": 0,
+          "explain": "长 = largo → cháng."
+        },
+        {
+          "audio": "教室",
+          "options": [
+            "jiàoshì",
+            "qiàoshì",
+            "jiàosì"
+          ],
+          "answer": 0,
+          "explain": "j + sh: dos posiciones de lengua distintas."
+        }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": [
+        "讲",
+        "园"
+      ],
+      "mnemonics": {
+        "讲": "讠 (palabra) + 井 (pozo, da el sonido): sacar palabras como agua de un pozo → explicar.",
+        "园": "囗 (recinto) + 元: un espacio cerrado con plantas → jardín, parque; 校园, el «jardín» de la universidad."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "Momento (antes del verbo) frente a duración (después)",
+      "markdown": "Mira dónde va cada tiempo:\n\n| ¿Qué? | Pregunta | Dónde va | Ejemplo |\n|---|---|---|---|\n| **Momento** (cuándo) | 几点, 什么时候 | **delante del verbo** (hueco *tiempo*) | 我**八点**上课。 |\n| **Duración** (cuánto rato) | 多长时间, 多久 | **detrás del verbo** (hueco *complemento*) | 我学习**两个小时**。 |\n\nEn español decimos «estudio dos horas todos los días» y «a las ocho entro a clase» con el orden que queramos. En chino, **el momento va siempre delante del verbo y la duración, siempre detrás**. Fíjate en las flechas del esqueleto.\n\nCon un objeto corto, la duración se mete entre el verbo y el objeto: 上**四个小时**课 (tener cuatro horas de clase).",
+      "focus": [
+        "time",
+        "complement"
+      ],
+      "compare": true,
+      "sentences": [
+        {
+          "slots": {
+            "subject": {
+              "zh": "我",
+              "py": "wǒ"
+            },
+            "time": {
+              "zh": "每天八点",
+              "py": "měitiān bādiǎn"
+            },
+            "verb1": {
+              "zh": "上课",
+              "py": "shàngkè"
+            }
+          },
+          "end": "。",
+          "es": "Entro a clase a las ocho todos los días.",
+          "esOrder": [
+            {
+              "text": "Entro a clase",
+              "slot": "verb1"
+            },
+            {
+              "text": "a las ocho",
+              "slot": "time"
+            },
+            {
+              "text": "todos los días",
+              "slot": "time"
+            }
+          ]
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "我",
+              "py": "wǒ"
+            },
+            "time": {
+              "zh": "每天",
+              "py": "měitiān"
+            },
+            "verb1": {
+              "zh": "学习",
+              "py": "xuéxí"
+            },
+            "complement": {
+              "zh": "两个小时",
+              "py": "liǎng ge xiǎoshí"
+            }
+          },
+          "end": "。",
+          "es": "Estudio dos horas cada día.",
+          "esOrder": [
+            {
+              "text": "Estudio",
+              "slot": "verb1"
+            },
+            {
+              "text": "dos horas",
+              "slot": "complement"
+            },
+            {
+              "text": "cada día",
+              "slot": "time"
+            }
+          ]
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "校长",
+              "py": "xiàozhǎng"
+            },
+            "time": {
+              "zh": "今天上午",
+              "py": "jīntiān shàngwǔ"
+            },
+            "verb1": {
+              "zh": "讲了",
+              "py": "jiǎng le"
+            },
+            "complement": {
+              "zh": "一个小时",
+              "py": "yí ge xiǎoshí"
+            }
+          },
+          "end": "。",
+          "es": "Esta mañana el rector ha hablado una hora.",
+          "esOrder": [
+            {
+              "text": "El rector",
+              "slot": "subject"
+            },
+            {
+              "text": "ha hablado",
+              "slot": "verb1"
+            },
+            {
+              "text": "una hora",
+              "slot": "complement"
+            },
+            {
+              "text": "esta mañana",
+              "slot": "time"
+            }
+          ]
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "我们",
+              "py": "wǒmen"
+            },
+            "place": {
+              "zh": "在教室",
+              "py": "zài jiàoshì"
+            },
+            "verb1": {
+              "zh": "等了",
+              "py": "děng le"
+            },
+            "complement": {
+              "zh": "十分钟",
+              "py": "shí fēnzhōng"
+            }
+          },
+          "end": "。",
+          "es": "Esperamos diez minutos en el aula."
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "我们",
+              "py": "wǒmen"
+            },
+            "time": {
+              "zh": "每天",
+              "py": "měitiān"
+            },
+            "verb1": {
+              "zh": "上",
+              "py": "shàng"
+            },
+            "object": {
+              "zh": "四个小时课",
+              "py": "sì ge xiǎoshí kè"
+            }
+          },
+          "end": "。",
+          "es": "Tenemos cuatro horas de clase al día."
+        }
+      ],
+      "negative": [
+        {
+          "slots": {
+            "subject": {
+              "zh": "我",
+              "py": "wǒ"
+            },
+            "time": {
+              "zh": "明天",
+              "py": "míngtiān"
+            },
+            "adverb": {
+              "zh": "不",
+              "py": "bù"
+            },
+            "verb1": {
+              "zh": "上课",
+              "py": "shàngkè"
+            }
+          },
+          "end": "。",
+          "es": "Mañana no tengo clase."
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "我们",
+              "py": "wǒmen"
+            },
+            "time": {
+              "zh": "下午",
+              "py": "xiàwǔ"
+            },
+            "adverb": {
+              "zh": "不",
+              "py": "bù"
+            },
+            "verb1": {
+              "zh": "上课",
+              "py": "shàngkè"
+            }
+          },
+          "end": "。",
+          "es": "Por la tarde no tenemos clase."
+        }
+      ],
+      "question": [
+        {
+          "slots": {
+            "subject": {
+              "zh": "你",
+              "py": "nǐ"
+            },
+            "time": {
+              "zh": "每天",
+              "py": "měitiān"
+            },
+            "verb1": {
+              "zh": "学习",
+              "py": "xuéxí"
+            },
+            "complement": {
+              "zh": "多长时间",
+              "py": "duō cháng shíjiān"
+            }
+          },
+          "end": "？",
+          "es": "¿Cuánto tiempo estudias al día?"
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "你们",
+              "py": "nǐmen"
+            },
+            "time": {
+              "zh": "几点",
+              "py": "jǐ diǎn"
+            },
+            "verb1": {
+              "zh": "上课",
+              "py": "shàngkè"
+            }
+          },
+          "end": "？",
+          "es": "¿A qué hora tenéis clase?"
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "我两个小时每天学习。",
+          "right": "我每天学习两个小时。",
+          "why": "El momento (每天) va delante del verbo; la duración (两个小时) detrás."
+        },
+        {
+          "wrong": "我上课八点。",
+          "right": "我八点上课。",
+          "why": "Las ocho es un momento: va delante del verbo."
+        },
+        {
+          "wrong": "你多长时间学习？",
+          "right": "你学习多长时间？",
+          "why": "多长时间 pregunta una duración: va detrás del verbo, donde irá la respuesta."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "En la secretaría del campus",
+      "lines": [
+        {
+          "speaker": "雨果",
+          "zh": "老师，您好。我想问一下，选课要多长时间？",
+          "py": "Lǎoshī, nín hǎo. Wǒ xiǎng wèn yíxià, xuǎnkè yào duō cháng shíjiān?",
+          "es": "Hola. Quería preguntar: ¿cuánto se tarda en matricularse?"
+        },
+        {
+          "speaker": "教师",
+          "zh": "不长，在网上选，十分钟就可以。",
+          "py": "Bù cháng, zài wǎngshàng xuǎn, shí fēnzhōng jiù kěyǐ.",
+          "es": "No mucho: se hace por internet, en diez minutos está."
+        },
+        {
+          "speaker": "雨果",
+          "zh": "好。我的学生证和校园卡呢？",
+          "py": "Hǎo. Wǒ de xuéshengzhèng hé xiàoyuánkǎ ne?",
+          "es": "Vale. ¿Y mi carné de estudiante y la tarjeta del campus?"
+        },
+        {
+          "speaker": "教师",
+          "zh": "下午两点来拿吧。校园卡可以在食堂和图书馆用。",
+          "py": "Xiàwǔ liǎng diǎn lái ná ba. Xiàoyuánkǎ kěyǐ zài shítáng hé túshūguǎn yòng.",
+          "es": "Ven a recogerlos a las dos de la tarde. La tarjeta se puede usar en el comedor y en la biblioteca."
+        },
+        {
+          "speaker": "雨果",
+          "zh": "谢谢。我们每天上几个小时课？",
+          "py": "Xièxie. Wǒmen měitiān shàng jǐ ge xiǎoshí kè?",
+          "es": "Gracias. ¿Cuántas horas de clase tenemos al día?"
+        },
+        {
+          "speaker": "教师",
+          "zh": "语言课每天上三个小时，八点开始。",
+          "py": "Yǔyán kè měitiān shàng sān ge xiǎoshí, bā diǎn kāishǐ.",
+          "es": "Las clases de lengua son tres horas al día; empiezan a las ocho."
+        },
+        {
+          "speaker": "雨果",
+          "zh": "教室在哪儿？",
+          "py": "Jiàoshì zài nǎr?",
+          "es": "¿Dónde está el aula?"
+        },
+        {
+          "speaker": "教师",
+          "zh": "在三号教学楼。明天上午校长也讲话，他讲半个小时。",
+          "py": "Zài sān hào jiàoxuélóu. Míngtiān shàngwǔ xiàozhǎng yě jiǎng huà, tā jiǎng bàn ge xiǎoshí.",
+          "es": "En el edificio de aulas número 3. Mañana por la mañana también habla el rector, una media hora."
+        },
+        {
+          "speaker": "雨果",
+          "zh": "好的，我会认真听讲。",
+          "py": "Hǎode, wǒ huì rènzhēn tīngjiǎng.",
+          "es": "Muy bien: escucharé con atención."
+        }
+      ],
+      "notes": "La tarjeta del campus (校园卡) sirve casi para todo: comedor, biblioteca, a veces la puerta de la residencia. Muchas universidades chinas usan ya el código QR del móvil, pero el carné de estudiante (学生证) sigue siendo útil para descuentos en museos y trenes."
+    },
+    {
+      "type": "exercises",
+      "count": 16,
+      "bank": [
+        "g-dates-time",
+        "g-word-order",
+        "g-question-words"
+      ]
+    },
+    {
+      "type": "sentence-builder",
+      "items": [
+        {
+          "sentence": {
+            "slots": {
+              "subject": {
+                "zh": "我"
+              },
+              "time": {
+                "zh": "每天八点"
+              },
+              "verb1": {
+                "zh": "上课"
+              }
+            },
+            "end": "。",
+            "es": "Entro a clase a las ocho todos los días."
+          },
+          "distractors": [
+            "两个小时"
+          ]
+        },
+        {
+          "sentence": {
+            "slots": {
+              "subject": {
+                "zh": "我"
+              },
+              "time": {
+                "zh": "每天"
+              },
+              "verb1": {
+                "zh": "学习"
+              },
+              "complement": {
+                "zh": "两个小时"
+              }
+            },
+            "end": "。",
+            "es": "Estudio dos horas cada día."
+          }
+        },
+        {
+          "sentence": {
+            "slots": {
+              "subject": {
+                "zh": "你"
+              },
+              "time": {
+                "zh": "每天"
+              },
+              "verb1": {
+                "zh": "学习"
+              },
+              "complement": {
+                "zh": "多长时间"
+              }
+            },
+            "end": "？",
+            "es": "¿Cuánto tiempo estudias al día?"
+          },
+          "distractors": [
+            "几点"
+          ]
+        },
+        {
+          "sentence": {
+            "slots": {
+              "subject": {
+                "zh": "校长"
+              },
+              "time": {
+                "zh": "今天上午"
+              },
+              "place": {
+                "zh": "在教室"
+              },
+              "verb1": {
+                "zh": "讲了"
+              },
+              "complement": {
+                "zh": "一个小时"
+              }
+            },
+            "end": "。",
+            "es": "El rector ha hablado una hora en el aula esta mañana."
+          }
+        },
+        {
+          "sentence": {
+            "slots": {
+              "time0": {
+                "zh": "明天下午"
+              },
+              "subject": {
+                "zh": "我"
+              },
+              "aux": {
+                "zh": "要"
+              },
+              "with": {
+                "zh": "跟安娜一起"
+              },
+              "verb1": {
+                "zh": "去图书馆"
+              },
+              "verb2": {
+                "zh": "学习"
+              },
+              "complement": {
+                "zh": "三个小时"
+              }
+            },
+            "end": "。",
+            "es": "Mañana por la tarde voy a ir con Ana a la biblioteca a estudiar tres horas."
+          }
+        }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        {
+          "zh": "我每天八点上课。",
+          "py": "Wǒ měitiān bā diǎn shàngkè.",
+          "es": "Entro a clase a las ocho todos los días."
+        },
+        {
+          "zh": "我每天学习两个小时。",
+          "py": "Wǒ měitiān xuéxí liǎng ge xiǎoshí.",
+          "es": "Estudio dos horas cada día."
+        },
+        {
+          "zh": "选课要多长时间？",
+          "py": "Xuǎnkè yào duō cháng shíjiān?",
+          "es": "¿Cuánto se tarda en matricularse?"
+        },
+        {
+          "zh": "校长讲了一个小时。",
+          "py": "Xiàozhǎng jiǎng le yí ge xiǎoshí.",
+          "es": "El rector habló una hora."
+        }
+      ],
+      "respond": [
+        {
+          "q": {
+            "zh": "你每天几点上课？",
+            "py": "Nǐ měitiān jǐ diǎn shàngkè?",
+            "es": "¿A qué hora entras a clase cada día?"
+          },
+          "model": {
+            "zh": "我每天八点上课。",
+            "py": "Wǒ měitiān bā diǎn shàngkè.",
+            "es": "Entro a las ocho todos los días."
+          }
+        },
+        {
+          "q": {
+            "zh": "你每天学习多长时间？",
+            "py": "Nǐ měitiān xuéxí duō cháng shíjiān?",
+            "es": "¿Cuánto estudias al día?"
+          },
+          "model": {
+            "zh": "我每天学习两个小时。",
+            "py": "Wǒ měitiān xuéxí liǎng ge xiǎoshí.",
+            "es": "Estudio dos horas al día."
+          }
+        }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Un día en el campus",
+      "text": "雨果的大学很大，校园里有很多树和花。他每天早上七点起床，八点上课。语言课在三号教学楼，每天上三个小时。课堂上，王老师讲得很好，雨果每天都认真听讲。下课以后，他去食堂吃饭，用校园卡买饭。下午他在图书馆学习两个小时。今天上午，校长来教室讲了半个小时，他说：“欢迎你们来我们学校！”",
+      "es": "La universidad de Hugo es muy grande; en el campus hay muchos árboles y flores. Se levanta todos los días a las siete y entra a clase a las ocho. Las clases de lengua son en el edificio de aulas número 3, tres horas al día. En clase, la profesora Wang explica muy bien y Hugo escucha con atención todos los días. Después de clase va al comedor a comer y paga la comida con la tarjeta del campus. Por la tarde estudia dos horas en la biblioteca. Esta mañana el rector ha venido al aula y ha hablado media hora. Ha dicho: «¡Bienvenidos a nuestra universidad!».",
+      "questions": [
+        {
+          "q": "¿A qué hora entra Hugo a clase?",
+          "options": [
+            "八点",
+            "七点",
+            "两点"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "¿Cuántas horas de clase de lengua tiene al día?",
+          "options": [
+            "三个小时",
+            "两个小时",
+            "半个小时"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "¿Cuánto rato habló el rector?",
+          "options": [
+            "半个小时",
+            "一个小时",
+            "三个小时"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "¿Dónde estudia por la tarde?",
+          "options": [
+            "图书馆",
+            "教室",
+            "食堂"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "type": "notes-growth"
+    }
+  ]
+}

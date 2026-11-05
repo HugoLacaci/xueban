@@ -1,0 +1,162 @@
+{
+  "unitId": "a2-u07",
+  "scenarios": [
+    {
+      "id": "a2-u07-volleyball",
+      "title": "Entrar en el equipo de voleibol",
+      "zh": "参加排球队",
+      "level": 2,
+      "setting": "En el pabellón de la universidad, Hugo quiere apuntarse al equipo de voleibol. Tú (la app) eres la capitana del equipo y le preguntas qué tal juega.",
+      "role": "capitana del equipo",
+      "roleZh": "队长",
+      "voice": "f",
+      "goals": ["Decir qué deportes haces", "Decir qué tal los haces (V + 得)", "Compararte con otro jugador (比 / 没有…那么)", "Quedar para el entrenamiento"],
+      "vocab": ["排球", "打得", "比", "没有…那么", "队长", "比赛", "体育馆", "加油"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "你好！你想参加我们的排球队吗？", "py": "Nǐ hǎo! Nǐ xiǎng cānjiā wǒmen de páiqiú duì ma?", "es": "¡Hola! ¿Quieres entrar en nuestro equipo de voleibol?" },
+          "user": [
+            { "zh": "对，我很喜欢打排球。", "py": "Duì, wǒ hěn xǐhuan dǎ páiqiú.", "es": "Sí, me encanta jugar al voleibol.", "keywords": ["喜欢", "排球"], "next": "n2", "goal": 0 },
+            { "zh": "我想试试，我打得不太好。", "py": "Wǒ xiǎng shìshi, wǒ dǎ de bú tài hǎo.", "es": "Quiero probar, pero no juego muy bien.", "keywords": ["试试", "打得"], "next": "n3", "goal": 1 }
+          ],
+          "hint": "Di que te gusta (喜欢打排球) o que quieres probar (想试试)."
+        },
+        "n2": {
+          "npc": { "zh": "太好了！你排球打得怎么样？", "py": "Tài hǎo le! Nǐ páiqiú dǎ de zěnmeyàng?", "es": "¡Genial! ¿Qué tal juegas?" },
+          "user": [
+            { "zh": "我打得还可以，在西班牙常常打。", "py": "Wǒ dǎ de hái kěyǐ, zài Xībānyá chángcháng dǎ.", "es": "Juego bastante bien; en España jugaba mucho.", "keywords": ["打得", "还可以"], "next": "n4", "goal": 1 },
+            { "zh": "我打得不太好，我跑得很快。", "py": "Wǒ dǎ de bú tài hǎo, wǒ pǎo de hěn kuài.", "es": "No juego muy bien, pero corro muy rápido.", "keywords": ["跑得", "快"], "next": "n4", "goal": 1 }
+          ],
+          "hint": "Contesta con V + 得 + adjetivo: 打得还可以, 打得不太好."
+        },
+        "n3": {
+          "npc": { "zh": "没关系，我们一边练习一边学。你还会什么运动？", "py": "Méi guānxi, wǒmen yìbiān liànxí yìbiān xué. Nǐ hái huì shénme yùndòng?", "es": "No pasa nada: aprendemos mientras entrenamos. ¿Qué otros deportes haces?" },
+          "user": [
+            { "zh": "我还会游泳，游得比较快。", "py": "Wǒ hái huì yóuyǒng, yóu de bǐjiào kuài.", "es": "También sé nadar, y bastante rápido.", "keywords": ["游泳", "游得"], "next": "n4", "goal": 0 },
+            { "zh": "我喜欢跑步、爬山什么的。", "py": "Wǒ xǐhuan pǎobù, páshān shénmede.", "es": "Me gusta correr, subir al monte y cosas así.", "keywords": ["跑步", "什么的"], "next": "n4", "goal": 0 }
+          ],
+          "hint": "Nombra deportes (游泳, 跑步, 爬山) y, si puedes, di qué tal los haces o cierra la lista con 什么的."
+        },
+        "n4": {
+          "npc": { "zh": "我们队的大卫打得特别好。你觉得你比他打得好吗？", "py": "Wǒmen duì de Dàwèi dǎ de tèbié hǎo. Nǐ juéde nǐ bǐ tā dǎ de hǎo ma?", "es": "David, de nuestro equipo, juega de maravilla. ¿Crees que juegas mejor que él?" },
+          "user": [
+            { "zh": "不，他比我打得好多了。", "py": "Bù, tā bǐ wǒ dǎ de hǎo duō le.", "es": "No, él juega muchísimo mejor que yo.", "keywords": ["比我", "好多了"], "next": "n5", "goal": 2 },
+            { "zh": "我没有他打得那么好，我会认真练习。", "py": "Wǒ méiyǒu tā dǎ de nàme hǎo, wǒ huì rènzhēn liànxí.", "es": "No juego tan bien como él, pero entrenaré en serio.", "keywords": ["没有", "那么"], "next": "n5", "goal": 2 }
+          ],
+          "hint": "Compara: A 比 B 打得好(多了), o A 没有 B 打得那么好. Sin 很 con 比."
+        },
+        "n5": {
+          "npc": { "zh": "好！我们每个星期二和星期四晚上在体育馆练习。你什么时候有时间？", "py": "Hǎo! Wǒmen měi ge xīngqī'èr hé xīngqīsì wǎnshang zài tǐyùguǎn liànxí. Nǐ shénme shíhou yǒu shíjiān?", "es": "¡Bien! Entrenamos los martes y los jueves por la noche en el pabellón. ¿Cuándo tienes tiempo?" },
+          "user": [
+            { "zh": "星期二晚上我有时间。", "py": "Xīngqī'èr wǎnshang wǒ yǒu shíjiān.", "es": "El martes por la noche tengo tiempo.", "keywords": ["星期二", "有时间"], "next": "n6", "goal": 3 },
+            { "zh": "星期四我有课，星期二可以吗？", "py": "Xīngqīsì wǒ yǒu kè, xīngqī'èr kěyǐ ma?", "es": "El jueves tengo clase; ¿vale el martes?", "keywords": ["有课", "可以"], "next": "n6", "goal": 3 }
+          ],
+          "hint": "Di qué día puedes: 星期二晚上我有时间."
+        },
+        "n6": {
+          "npc": { "zh": "可以。星期六还有一场比赛，你来看吧！", "py": "Kěyǐ. Xīngqīliù hái yǒu yì chǎng bǐsài, nǐ lái kàn ba!", "es": "Vale. Además, el sábado hay partido: ¡ven a verlo!" },
+          "user": [
+            { "zh": "好，我一定去，给你们加油！", "py": "Hǎo, wǒ yídìng qù, gěi nǐmen jiāyóu!", "es": "¡Vale, iré seguro a animaros!", "keywords": ["一定", "加油"], "next": "n7" },
+            { "zh": "我能一边看一边拍视频吗？", "py": "Wǒ néng yìbiān kàn yìbiān pāi shìpín ma?", "es": "¿Puedo grabar un vídeo mientras lo veo?", "keywords": ["一边", "拍"], "next": "n8" }
+          ],
+          "hint": "Acepta (一定去, 给你们加油) o pregunta si puedes hacer dos cosas a la vez (一边…一边…)."
+        },
+        "n7": {
+          "npc": { "zh": "太好了！星期二晚上体育馆见！", "py": "Tài hǎo le! Xīngqī'èr wǎnshang tǐyùguǎn jiàn!", "es": "¡Genial! ¡Nos vemos el martes por la noche en el pabellón!" },
+          "end": true,
+          "feedback": "Has contado qué tal juegas con V + 得, te has comparado con 比 o 没有…那么 y has quedado para entrenar. 给…加油 = animar a alguien."
+        },
+        "n8": {
+          "npc": { "zh": "可以！拍得好看一点儿，发抖音吧！", "py": "Kěyǐ! Pāi de hǎokàn yìdiǎnr, fā Dǒuyīn ba!", "es": "¡Claro! Grábalo bonito y súbelo a Douyin." },
+          "end": true,
+          "feedback": "Has usado 一边…一边… para pedir permiso y has quedado para el entrenamiento. Recuerda: 拍得好看 = que salga bonito (V + 得)."
+        }
+      }
+    },
+    {
+      "id": "a2-u07-hobbies",
+      "title": "Las aficiones de una compañera nueva",
+      "zh": "聊爱好",
+      "level": 2,
+      "setting": "En la cafetería de la universidad, Hugo charla con una compañera china que acaba de conocer. Tú (la app) eres la compañera y os contáis qué hacéis en vuestro tiempo libre.",
+      "role": "compañera de clase",
+      "roleZh": "同学",
+      "voice": "f",
+      "goals": ["Contar qué haces en tu tiempo libre (什么的)", "Describir con V + 得 o con 又…又…", "Preguntar por las aficiones de la otra persona", "Quedar para un plan"],
+      "vocab": ["爱好", "什么的", "一边…一边…", "又…又…", "画得", "演唱会", "音乐会", "歌手"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "雨果，你周末一般做什么？", "py": "Yǔguǒ, nǐ zhōumò yìbān zuò shénme?", "es": "Hugo, ¿qué sueles hacer los fines de semana?" },
+          "user": [
+            { "zh": "我喜欢看电影、听音乐什么的。", "py": "Wǒ xǐhuan kàn diànyǐng, tīng yīnyuè shénmede.", "es": "Me gusta ver películas, escuchar música y cosas así.", "keywords": ["喜欢", "什么的"], "next": "n2", "goal": 0 },
+            { "zh": "我常常去健身房，有时候去爬山。", "py": "Wǒ chángcháng qù jiànshēnfáng, yǒu shíhou qù páshān.", "es": "Voy mucho al gimnasio y a veces al monte.", "keywords": ["健身房", "爬山"], "next": "n3", "goal": 0 }
+          ],
+          "hint": "Haz una lista y ciérrala con 什么的, o di con qué frecuencia (常常, 有时候)."
+        },
+        "n2": {
+          "npc": { "zh": "我也是！你喜欢什么音乐？", "py": "Wǒ yě shì! Nǐ xǐhuan shénme yīnyuè?", "es": "¡Yo también! ¿Qué música te gusta?" },
+          "user": [
+            { "zh": "我喜欢流行音乐，常常一边做饭一边听。", "py": "Wǒ xǐhuan liúxíng yīnyuè, chángcháng yìbiān zuòfàn yìbiān tīng.", "es": "Me gusta el pop; suelo escucharlo mientras cocino.", "keywords": ["流行", "一边"], "next": "n4", "goal": 1 },
+            { "zh": "我更喜欢乐队，他们的歌又好听又有意思。", "py": "Wǒ gèng xǐhuan yuèduì, tāmen de gē yòu hǎotīng yòu yǒu yìsi.", "es": "Prefiero los grupos: sus canciones son bonitas y además interesantes.", "keywords": ["乐队", "又"], "next": "n4", "goal": 1 }
+          ],
+          "hint": "Describe con 又…又… o cuenta qué haces mientras escuchas (一边…一边…)."
+        },
+        "n3": {
+          "npc": { "zh": "你真爱运动！你跑得快吗？", "py": "Nǐ zhēn ài yùndòng! Nǐ pǎo de kuài ma?", "es": "¡Qué deportista eres! ¿Corres rápido?" },
+          "user": [
+            { "zh": "我跑得还可以，没有大卫快。", "py": "Wǒ pǎo de hái kěyǐ, méiyǒu Dàwèi kuài.", "es": "Corro bastante bien, pero no tan rápido como David.", "keywords": ["跑得", "没有"], "next": "n4", "goal": 1 },
+            { "zh": "我跑得不太快，游泳游得很好。", "py": "Wǒ pǎo de bú tài kuài, yóuyǒng yóu de hěn hǎo.", "es": "No corro muy rápido, pero nado muy bien.", "keywords": ["跑得", "游得"], "next": "n4", "goal": 1 }
+          ],
+          "hint": "Responde con V + 得: 跑得还可以, 游泳游得很好."
+        },
+        "n4": {
+          "npc": { "zh": "我的爱好是画画儿和唱歌。", "py": "Wǒ de àihào shì huà huàr hé chànggē.", "es": "A mí me gusta pintar y cantar." },
+          "user": [
+            { "zh": "真的吗？你画得怎么样？", "py": "Zhēn de ma? Nǐ huà de zěnmeyàng?", "es": "¿En serio? ¿Qué tal pintas?", "keywords": ["画得", "怎么样"], "next": "n5", "goal": 2 },
+            { "zh": "你会唱中文歌吗？我想听！", "py": "Nǐ huì chàng Zhōngwén gē ma? Wǒ xiǎng tīng!", "es": "¿Sabes cantar canciones en chino? ¡Quiero oírte!", "keywords": ["唱", "中文歌"], "next": "n6", "goal": 2 }
+          ],
+          "hint": "Pregúntale por sus aficiones: 你画得怎么样？ / 你会唱……吗？"
+        },
+        "n5": {
+          "npc": { "zh": "画得还可以。你看，这是我画的鸟。", "py": "Huà de hái kěyǐ. Nǐ kàn, zhè shì wǒ huà de niǎo.", "es": "No pinto mal. Mira, este es un pájaro que he pintado." },
+          "user": [
+            { "zh": "你画得真好！你是画家吗？", "py": "Nǐ huà de zhēn hǎo! Nǐ shì huàjiā ma?", "es": "¡Pintas genial! ¿Eres pintora?", "keywords": ["画得", "画家"], "next": "n7", "goal": 1 },
+            { "zh": "这只鸟画得又大又漂亮！", "py": "Zhè zhī niǎo huà de yòu dà yòu piàoliang!", "es": "¡Este pájaro te ha quedado grande y precioso!", "keywords": ["又", "漂亮"], "next": "n7", "goal": 1 }
+          ],
+          "hint": "Haz un cumplido con V + 得 (画得真好) o con 又…又…."
+        },
+        "n6": {
+          "npc": { "zh": "会！下个月有一场演唱会，那个歌手唱得特别好。", "py": "Huì! Xià ge yuè yǒu yì chǎng yǎnchànghuì, nàge gēshǒu chàng de tèbié hǎo.", "es": "¡Sí! El mes que viene hay un concierto; ese cantante canta de maravilla." },
+          "user": [
+            { "zh": "我们一起去吧！", "py": "Wǒmen yìqǐ qù ba!", "es": "¡Vamos juntos!", "keywords": ["一起", "去"], "next": "n8", "goal": 3 },
+            { "zh": "票贵不贵？", "py": "Piào guì bu guì?", "es": "¿Son caras las entradas?", "keywords": ["票", "贵"], "next": "n9" }
+          ],
+          "hint": "Propón un plan (我们一起去吧) o pregunta por las entradas."
+        },
+        "n7": {
+          "npc": { "zh": "哪里哪里！下个星期六有一个音乐会，你想去吗？", "py": "Nǎli nǎli! Xià ge xīngqīliù yǒu yí ge yīnyuèhuì, nǐ xiǎng qù ma?", "es": "¡Qué va! El sábado que viene hay un concierto de orquesta, ¿quieres ir?" },
+          "user": [
+            { "zh": "想去！我们一起去吧。", "py": "Xiǎng qù! Wǒmen yìqǐ qù ba.", "es": "¡Sí! Vamos juntos.", "keywords": ["想去", "一起"], "next": "n8", "goal": 3 },
+            { "zh": "星期六我要打排球，星期天可以吗？", "py": "Xīngqīliù wǒ yào dǎ páiqiú, xīngqītiān kěyǐ ma?", "es": "El sábado tengo voleibol; ¿puede ser el domingo?", "keywords": ["星期天", "可以"], "next": "n8", "goal": 3 }
+          ],
+          "hint": "Acepta el plan o propón otro día."
+        },
+        "n9": {
+          "npc": { "zh": "不太贵，一百多块。", "py": "Bú tài guì, yìbǎi duō kuài.", "es": "No mucho, algo más de cien yuanes." },
+          "user": [
+            { "zh": "那我们一起去吧！", "py": "Nà wǒmen yìqǐ qù ba!", "es": "¡Pues vamos juntos!", "keywords": ["一起", "去"], "next": "n8", "goal": 3 },
+            { "zh": "好，我在网上买两张票。", "py": "Hǎo, wǒ zài wǎngshàng mǎi liǎng zhāng piào.", "es": "Vale, compro dos entradas por internet.", "keywords": ["买", "票"], "next": "n8", "goal": 3 }
+          ],
+          "hint": "Cierra el plan: 那我们一起去吧."
+        },
+        "n8": {
+          "npc": { "zh": "好！我们加个微信吧，到时候联系。", "py": "Hǎo! Wǒmen jiā ge Wēixìn ba, dào shíhou liánxì.", "es": "¡Vale! Agreguémonos en WeChat y hablamos." },
+          "end": true,
+          "feedback": "Has hablado de tus aficiones con 什么的, V + 得 y 又…又…, has preguntado por las suyas y habéis quedado. 加个微信 es la forma normal de seguir en contacto en China."
+        }
+      }
+    }
+  ]
+}

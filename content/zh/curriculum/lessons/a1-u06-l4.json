@@ -1,0 +1,132 @@
+{
+  "id": "a1-u06-l4",
+  "title": "¿Cuándo? 什么时候 y repaso de la hora",
+  "zh": "你什么时候有时间？",
+  "goal": "Preguntar «¿cuándo?» con 什么时候, decir si tienes tiempo, y construir frases largas con el tiempo en sus dos sitios.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "什么时候", "pinyin": "shénme shíhou", "es": "¿cuándo?", "note": "Va donde va el tiempo: delante del verbo." },
+    { "hanzi": "时候", "pinyin": "shíhou", "es": "momento, rato" },
+    { "hanzi": "时间", "pinyin": "shíjiān", "es": "tiempo (disponible)" },
+    { "hanzi": "有时间", "pinyin": "yǒu shíjiān", "es": "tener tiempo, estar libre", "note": "Negativa: 没有时间 / 没时间." },
+    { "hanzi": "一会儿", "pinyin": "yíhuìr", "es": "un rato; dentro de un rato", "note": "我一会儿去 = voy dentro de un rato." },
+    { "hanzi": "马上", "pinyin": "mǎshàng", "es": "enseguida, ahora mismo", "note": "Adverbio: 我马上去." },
+    { "hanzi": "半天", "pinyin": "bàntiān", "es": "medio día; un buen rato", "note": "我等你半天了！ = ¡llevo un buen rato esperándote!" },
+    { "hanzi": "晚安", "pinyin": "wǎn'ān", "es": "buenas noches (al irse a dormir)" }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "你什么时候有时间？", "py": "Nǐ shénme shíhou yǒu shíjiān?", "es": "¿Cuándo tienes tiempo?" },
+        { "zh": "现在我没有时间，我马上去上课。", "py": "Xiànzài wǒ méiyǒu shíjiān, wǒ mǎshàng qù shàngkè.", "es": "Ahora no tengo tiempo: me voy enseguida a clase." },
+        { "zh": "明天晚上我有时间。", "py": "Míngtiān wǎnshang wǒ yǒu shíjiān.", "es": "Mañana por la noche tengo tiempo." }
+      ]
+    },
+    { "type": "vocab", "title": "¿Cuándo? ¿Tienes tiempo?", "words": ["什么时候", "时候", "时间", "有时间", "一会儿", "马上", "半天", "晚安"] },
+    {
+      "type": "phonetics-drill",
+      "title": "半 bàn frente a 八 bā, y el apóstrofo de 晚安",
+      "markdown": "**半 bàn** y **八 bā** solo se diferencian en la **-n** final y el tono:\n\n- **八 bā**: 1.er tono, alto y plano, y la boca se queda abierta.\n- **半 bàn**: 4.º tono, cae, y se cierra con la punta de la lengua detrás de los dientes (-n).\n\nEn 八点半 *bā diǎn bàn* salen los dos: el primero alto y abierto, el último cayendo y cerrado.\n\n**晚安 wǎn'ān**: el apóstrofo separa las sílabas para que no se lea *wǎ-nān*. Se pronuncia *wǎn* (medio tercer tono, abajo) + *ān* (alto y plano), con un pequeño corte.",
+      "items": [
+        { "audio": "半", "options": ["bā", "bàn", "bàng"], "answer": 1, "explain": "4.º tono y -n final." },
+        { "audio": "八", "options": ["bā", "bàn", "pā"], "answer": 0, "explain": "1.er tono, boca abierta, sin -n." },
+        { "audio": "八点半", "prompt": "¿Qué hora es?", "options": ["8:30", "8:08", "7:30"], "answer": 0, "explain": "八点 + 半: las ocho y media." },
+        { "audio": "晚安", "options": ["wàn'ān", "wǎng'ān", "wǎn'ān"], "answer": 2, "explain": "wǎn (3.er) + ān (1.º), separadas." },
+        { "audio": "半天", "options": ["bātiān", "bàntiān", "báitiān"], "answer": 1, "explain": "半天 (un buen rato) ≠ 白天 báitiān (de día)." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["时"],
+      "mnemonics": {
+        "时": "日 (sol) + 寸 (una medida pequeña, la de un dedo): medir el paso del sol → el tiempo, la hora."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "什么时候 va donde va la respuesta",
+      "markdown": "**什么时候** (¿cuándo?) ocupa **el hueco del tiempo**, igual que la respuesta. No se mueve al principio como «¿cuándo?» en español, ni lleva 吗:\n\n> 你 **什么时候** 去北京？ → 我 **星期六上午** 去北京。\n\n- Si la respuesta es una hora exacta, puedes preguntar con **几点**: 你几点去？\n- **有时间** = estar libre: 你明天有时间吗？ · 我没有时间.\n- **马上** (enseguida) es un **adverbio**: va detrás del sujeto y del tiempo, delante del verbo: 我马上去.\n- **一会儿** (dentro de un rato) va en el hueco del tiempo: 我一会儿去.\n\n**Repaso de la unidad**: el tiempo va delante del verbo (S + T + V) o delante del sujeto (T + S + V), **nunca al final**. Varios tiempos juntos, de grande a pequeño: 明天上午九点一刻.",
+      "focus": ["time", "time0"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "time": { "zh": "星期六上午", "py": "xīngqīliù shàngwǔ" }, "verb1": { "zh": "去北京", "py": "qù Běijīng" } }, "end": "。", "es": "Voy a Pekín el sábado por la mañana.", "esOrder": [{ "text": "(Yo)", "slot": "subject" }, { "text": "voy a Pekín", "slot": "verb1" }, { "text": "el sábado por la mañana", "slot": "time" }] },
+        { "slots": { "time0": { "zh": "明天晚上", "py": "míngtiān wǎnshang" }, "subject": { "zh": "我", "py": "wǒ" }, "verb1": { "zh": "有", "py": "yǒu" }, "object": { "zh": "时间", "py": "shíjiān" } }, "end": "。", "es": "Mañana por la noche tengo tiempo." },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "马上", "py": "mǎshàng" }, "verb1": { "zh": "去上课", "py": "qù shàngkè" } }, "end": "。", "es": "Me voy a clase enseguida." },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "time": { "zh": "一会儿", "py": "yíhuìr" }, "verb1": { "zh": "去", "py": "qù" } }, "end": "。", "es": "Voy dentro de un rato." },
+        { "slots": { "subject": { "zh": "安娜", "py": "Ānnà" }, "time": { "zh": "下个月", "py": "xià ge yuè" }, "verb1": { "zh": "去西班牙", "py": "qù Xībānyá" } }, "end": "。", "es": "Anna se va a España el mes que viene." }
+      ],
+      "negative": [
+        { "slots": { "time0": { "zh": "现在", "py": "xiànzài" }, "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "没", "py": "méi" }, "verb1": { "zh": "有", "py": "yǒu" }, "object": { "zh": "时间", "py": "shíjiān" } }, "end": "。", "es": "Ahora no tengo tiempo." },
+        { "slots": { "subject": { "zh": "小李", "py": "Xiǎo Lǐ" }, "time": { "zh": "星期天", "py": "xīngqītiān" }, "adverb": { "zh": "不", "py": "bú" }, "verb1": { "zh": "上课", "py": "shàngkè" } }, "end": "。", "es": "Xiao Li no tiene clase el domingo." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "time": { "zh": "什么时候", "py": "shénme shíhou" }, "verb1": { "zh": "去北京", "py": "qù Běijīng" } }, "end": "？", "es": "¿Cuándo vas a Pekín?" },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "time": { "zh": "什么时候", "py": "shénme shíhou" }, "verb1": { "zh": "有", "py": "yǒu" }, "object": { "zh": "时间", "py": "shíjiān" } }, "end": "？", "es": "¿Cuándo tienes tiempo?" },
+        { "slots": { "time0": { "zh": "星期天", "py": "xīngqītiān" }, "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "有", "py": "yǒu" }, "object": { "zh": "时间", "py": "shíjiān" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿El domingo tienes tiempo?" }
+      ],
+      "mistakes": [
+        { "wrong": "你去北京什么时候？", "right": "你什么时候去北京？", "why": "什么时候 va en el hueco del tiempo, delante del verbo, como su respuesta." },
+        { "wrong": "什么时候你去北京吗？", "right": "你什么时候去北京？", "why": "Con 什么时候 no hace falta 吗: ya es una pregunta." },
+        { "wrong": "我去马上。", "right": "我马上去。", "why": "马上 es un adverbio: delante del verbo." },
+        { "wrong": "我有时间明天。", "right": "我明天有时间。 / 明天我有时间。", "why": "El tiempo nunca va al final." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "¿Cuándo vamos a comprar fruta?",
+      "lines": [
+        { "speaker": "小李", "zh": "雨果，我们什么时候去买水果？", "py": "Yǔguǒ, wǒmen shénme shíhou qù mǎi shuǐguǒ?", "es": "Hugo, ¿cuándo vamos a comprar fruta?" },
+        { "speaker": "雨果", "zh": "现在我没有时间，我马上去上课。", "py": "Xiànzài wǒ méiyǒu shíjiān, wǒ mǎshàng qù shàngkè.", "es": "Ahora no tengo tiempo, me voy enseguida a clase." },
+        { "speaker": "小李", "zh": "你晚上有时间吗？", "py": "Nǐ wǎnshang yǒu shíjiān ma?", "es": "¿Y por la noche tienes tiempo?" },
+        { "speaker": "雨果", "zh": "有。晚上七点半，好吗？", "py": "Yǒu. Wǎnshang qī diǎn bàn, hǎo ma?", "es": "Sí. ¿A las siete y media?" },
+        { "speaker": "小李", "zh": "好，七点半我等你。", "py": "Hǎo, qī diǎn bàn wǒ děng nǐ.", "es": "Vale, a las siete y media te espero." },
+        { "speaker": "雨果", "zh": "对不起，对不起！现在几点？", "py": "Duìbuqǐ, duìbuqǐ! Xiànzài jǐ diǎn?", "es": "¡Perdona, perdona! ¿Qué hora es?" },
+        { "speaker": "小李", "zh": "八点一刻！我等你半天了！", "py": "Bā diǎn yí kè! Wǒ děng nǐ bàntiān le!", "es": "¡Las ocho y cuarto! ¡Llevo un buen rato esperándote!" },
+        { "speaker": "雨果", "zh": "太晚了……明天上午去，好吗？", "py": "Tài wǎn le… míngtiān shàngwǔ qù, hǎo ma?", "es": "Es muy tarde… ¿Vamos mañana por la mañana?" }
+      ],
+      "notes": "En China el «quedamos a las siete y media» suele ser bastante puntual, y 我等你半天了 es la queja típica (con humor) del que espera. 晚安 solo se dice al despedirse para irse a dormir, a menudo por WeChat."
+    },
+    { "type": "exercises", "count": 16, "bank": ["g-dates-time", "g-word-order", "u04"] },
+    {
+      "type": "sentence-builder",
+      "title": "Construye la frase completa",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "我和小李" }, "time": { "zh": "明天上午十点半" }, "verb1": { "zh": "买" }, "object": { "zh": "水果" } }, "end": "。", "es": "Xiao Li y yo compramos fruta mañana a las diez y media de la mañana." }, "distractors": ["十点半上午"] },
+        { "sentence": { "slots": { "time0": { "zh": "星期六晚上" }, "subject": { "zh": "安娜和她的中国朋友" }, "adverb": { "zh": "都" }, "verb1": { "zh": "有" }, "object": { "zh": "时间" } }, "end": "。", "es": "El sábado por la noche Anna y su amiga china tienen tiempo las dos." }, "distractors": ["不"] },
+        { "sentence": { "slots": { "subject": { "zh": "王老师" }, "time": { "zh": "下周一上午九点一刻" }, "adverb": { "zh": "也" }, "verb1": { "zh": "上课" } }, "end": "。", "es": "La profesora Wang también da clase el lunes que viene a las nueve y cuarto de la mañana." }, "distractors": ["两刻"] },
+        { "sentence": { "slots": { "time0": { "zh": "现在" }, "subject": { "zh": "我们中文班的同学" }, "adverb": { "zh": "马上" }, "verb1": { "zh": "去上课" } }, "end": "。", "es": "Los compañeros de nuestra clase de chino se van ahora mismo a clase." }, "distractors": ["吗"] },
+        { "sentence": { "slots": { "subject": { "zh": "你的西班牙朋友" }, "time": { "zh": "什么时候" }, "verb1": { "zh": "去北京" } }, "end": "？", "es": "¿Cuándo va a Pekín tu amigo español?" }, "distractors": ["吗"] },
+        { "sentence": { "slots": { "time0": { "zh": "二〇二七年二月" }, "subject": { "zh": "雨果和他的家人" }, "adverb": { "zh": "不" }, "verb1": { "zh": "去西安" } }, "end": "。", "es": "En febrero de 2027 Hugo y su familia no van a Xi'an." }, "distractors": ["二月二〇二七年"] },
+        { "sentence": { "slots": { "time0": { "zh": "今天晚上" }, "subject": { "zh": "我" }, "time": { "zh": "差一刻十二点" }, "verb1": { "zh": "说" }, "object": { "zh": "晚安" } }, "end": "。", "es": "Esta noche, a las doce menos cuarto, digo «buenas noches»." }, "distractors": ["分钟"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "你什么时候有时间？", "py": "Nǐ shénme shíhou yǒu shíjiān?", "es": "¿Cuándo tienes tiempo?" },
+        { "zh": "现在我没有时间。", "py": "Xiànzài wǒ méiyǒu shíjiān.", "es": "Ahora no tengo tiempo." },
+        { "zh": "我马上去！", "py": "Wǒ mǎshàng qù!", "es": "¡Voy enseguida!" },
+        { "zh": "晚安！", "py": "Wǎn'ān!", "es": "¡Buenas noches!" }
+      ],
+      "respond": [
+        { "q": { "zh": "你什么时候去北京？", "py": "Nǐ shénme shíhou qù Běijīng?", "es": "¿Cuándo vas a Pekín?" }, "model": { "zh": "我下个月去北京。", "py": "Wǒ xià ge yuè qù Běijīng.", "es": "Voy a Pekín el mes que viene." } },
+        { "q": { "zh": "你明天晚上有时间吗？", "py": "Nǐ míngtiān wǎnshang yǒu shíjiān ma?", "es": "¿Tienes tiempo mañana por la noche?" }, "model": { "zh": "明天晚上我没有时间，星期六有。", "py": "Míngtiān wǎnshang wǒ méiyǒu shíjiān, xīngqīliù yǒu.", "es": "Mañana por la noche no tengo tiempo; el sábado, sí." } },
+        { "q": { "zh": "现在几点？", "py": "Xiànzài jǐ diǎn?", "es": "¿Qué hora es?" }, "model": { "zh": "现在差五分十点。", "py": "Xiànzài chà wǔ fēn shí diǎn.", "es": "Son las diez menos cinco." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "El sábado de Hugo",
+      "text": "星期六早上九点，雨果和小李去买水果。中午十二点，他们吃鱼。下午两点半，他们去安娜家。晚上七点，大卫说：“你们什么时候有时间？”雨果说：“现在没有时间，明天有。”夜里十一点，雨果说：“晚安！”",
+      "es": "El sábado a las nueve de la mañana Hugo y Xiao Li van a comprar fruta. A las doce del mediodía comen pescado. A las dos y media de la tarde van a casa de Anna. A las siete de la tarde David pregunta: «¿Cuándo tenéis tiempo?». Hugo responde: «Ahora no tenemos tiempo; mañana, sí». A las once de la noche Hugo dice: «¡Buenas noches!».",
+      "questions": [
+        { "q": "¿Qué hacen a las nueve de la mañana?", "options": ["Van a casa de Anna", "Compran fruta", "Comen pescado"], "answer": 1 },
+        { "q": "¿Cuándo tiene tiempo Hugo para David?", "options": ["Mañana", "Ahora", "A las once"], "answer": 0 },
+        { "q": "¿A qué hora dice Hugo «晚安»?", "options": ["A las 7 de la tarde", "A las 2:30", "A las 11 de la noche"], "answer": 2 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

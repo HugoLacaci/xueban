@@ -1,0 +1,138 @@
+{
+  "id": "b1-u08-l1",
+  "title": "En mi opinión: 在…看来, 对…来说 y 看来",
+  "zh": "在我看来",
+  "goal": "Dar tu opinión con 在我看来, decir para quién es importante algo con 对…来说 y sacar conclusiones con 看来.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "看来", "pinyin": "kànlái", "es": "por lo visto, parece que", "note": "Deducción a partir de lo que ves: 看来他今天不来了. En la frase, al principio y con coma." },
+    { "hanzi": "个人", "pinyin": "gèrén", "es": "individuo; personal", "note": "我个人认为… = personalmente, creo que…" },
+    { "hanzi": "观念", "pinyin": "guānniàn", "es": "idea, concepción, mentalidad", "note": "老观念 = mentalidad antigua; 观念变了 = ha cambiado la mentalidad." },
+    { "hanzi": "思想", "pinyin": "sīxiǎng", "es": "pensamiento, ideas (de una persona)" },
+    { "hanzi": "人生", "pinyin": "rénshēng", "es": "la vida (de una persona)", "note": "Para «la vida diaria» se dice 生活." },
+    { "hanzi": "意义", "pinyin": "yìyì", "es": "sentido, significado", "note": "有意义 = tener sentido, valer la pena. No confundas con 意思 (significado de una palabra; gracia)." },
+    { "hanzi": "价值", "pinyin": "jiàzhí", "es": "valor", "note": "有价值 = valioso." },
+    { "hanzi": "现实", "pinyin": "xiànshí", "es": "realidad; realista", "note": "不太现实 = poco realista." },
+    { "hanzi": "客观", "pinyin": "kèguān", "es": "objetivo (imparcial)", "note": "客观地说 = objetivamente hablando." },
+    { "hanzi": "乐观", "pinyin": "lèguān", "es": "optimista", "note": "乐 se lee lè aquí (alegre), y yuè en 音乐." },
+    { "hanzi": "话题", "pinyin": "huàtí", "es": "tema (de conversación o de debate)" },
+    { "hanzi": "谈", "pinyin": "tán", "es": "hablar de, conversar sobre", "note": "谈一个话题, 谈工作. Más formal que 聊." },
+    { "hanzi": "主张", "pinyin": "zhǔzhāng", "es": "defender (una postura); postura, propuesta", "note": "我主张… = yo soy partidario de…" }
+  ],
+  "extraVocab": ["看来"],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "在我看来，这个话题很有意义。", "py": "Zài wǒ kànlái, zhège huàtí hěn yǒu yìyì.", "es": "En mi opinión, este tema tiene mucho sentido." },
+        { "zh": "对我来说，家人最重要。", "py": "Duì wǒ lái shuō, jiārén zuì zhòngyào.", "es": "Para mí, lo más importante es la familia." },
+        { "zh": "看来，他今天不会来了。", "py": "Kànlái, tā jīntiān bú huì lái le.", "es": "Por lo visto, hoy ya no viene." }
+      ]
+    },
+    { "type": "vocab", "title": "Ideas, valores y opiniones", "words": ["看来", "个人", "观念", "思想", "人生", "意义", "价值", "现实", "客观", "乐观", "话题", "谈", "主张"] },
+    {
+      "type": "phonetics-drill",
+      "title": "La pausa del marco de opinión y el doble cuarto tono",
+      "markdown": "Los marcos de opinión (**在我看来**, **对我来说**, **看来**) forman un bloque propio: se dicen de un tirón y se hace una **pausa breve** detrás, como en español tras «en mi opinión,».\n\n- **在我看来**: 我 queda en **medio tercer tono** (baja y no sube) porque va delante de un cuarto tono.\n- **意义 yìyì**: dos cuartos tonos seguidos; el primero cae solo a media altura y el segundo cae entero.\n- **乐观 lèguān**: 乐 tiene dos lecturas: **lè** (alegre) y **yuè** (音乐 «música»).\n- **思想 sīxiǎng**: *s* con la lengua detrás de los dientes, no *sh*.",
+      "items": [
+        { "audio": "对我来说，学汉语很有意思。", "prompt": "¿Dónde va la pausa?", "options": ["Detrás de 对我来说", "Detrás de 对我", "Detrás de 学汉语"], "answer": 0, "explain": "El marco entero es un bloque: 对我来说 | 学汉语很有意思." },
+        { "audio": "乐观", "options": ["lèguān", "yuèguān", "lèguàn"], "answer": 0, "explain": "乐 = lè en «optimista»; yuè solo en 音乐." },
+        { "audio": "思想", "options": ["sīxiǎng", "shīxiǎng", "sīxiàng"], "answer": 0, "explain": "s (no sh) y tercer tono en 想." },
+        { "audio": "意义", "options": ["yìyì", "yìyí", "yíyì"], "answer": 0, "explain": "Dos cuartos tonos: el primero cae menos." },
+        { "audio": "在我看来", "prompt": "¿Cómo suena 我?", "options": ["Medio tercer tono: baja y no sube", "Segundo tono: sube", "Primer tono: alto"], "answer": 0, "explain": "Delante de 看 (cuarto tono), el tercer tono se queda abajo." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["观", "想"],
+      "mnemonics": {
+        "观": "又 (una mano) + 见 (ver): ponerse la mano sobre los ojos para mirar bien. Mirar el mundo → 观点 (punto de vista), 观念, 客观, 乐观.",
+        "想": "相 (mirarse cara a cara) + 心 (corazón): la imagen que tienes delante del corazón, pensar. 思想 = pensamiento."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "Marcos de opinión: 在…看来, 对…来说, 看来",
+      "markdown": "Ya opinas con **我觉得** y **我认为**. En B1 añadimos tres **marcos** que se ponen **delante de toda la frase**:\n\n| Marco | Significa | Ejemplo |\n|---|---|---|\n| **在 + persona + 看来** | en opinión de… | **在我看来**，这个话题很有意义. |\n| **对 + persona + 来说** | para… (desde su situación) | **对留学生来说**，这个话题比较现实. |\n| **看来** | por lo visto (deduzco de lo que veo) | **看来**，他今天不会来了. |\n\n- **在…看来** es una opinión (= 我认为); **对…来说** dice **a quién afecta** o para quién es así (= «para mí, es difícil»); **看来** no lleva persona: es una conclusión.\n- El español «para mí» **no** es 为我 ni 给我: es **对我来说**.\n- No digas *我看来*: o **在我看来**, o simplemente **我看** (coloquial: «yo lo veo así»).\n\n**Convención del esqueleto en B1**: los marcos de opinión (根据…, 在我看来, 对我来说, 一般来说, 看来, 据说, 事实上…) van enteros, **con su coma**, en el hueco **Tiempo inicial**, delante del sujeto.",
+      "focus": ["time0"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "time0": { "zh": "在我看来，", "py": "zài wǒ kànlái," }, "subject": { "zh": "这个话题", "py": "zhège huàtí" }, "adverb": { "zh": "很", "py": "hěn" }, "verb1": { "zh": "有意义", "py": "yǒu yìyì" } }, "end": "。", "es": "En mi opinión, este tema tiene mucho sentido." },
+        { "slots": { "time0": { "zh": "对我来说，", "py": "duì wǒ lái shuō," }, "subject": { "zh": "人生最重要的", "py": "rénshēng zuì zhòngyào de" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "健康", "py": "jiànkāng" } }, "end": "。", "es": "Para mí, lo más importante en la vida es la salud.", "esOrder": [{ "text": "Para mí,", "slot": "time0" }, { "text": "lo más importante en la vida", "slot": "subject" }, { "text": "es", "slot": "verb1" }, { "text": "la salud", "slot": "object" }] },
+        { "slots": { "time0": { "zh": "在王老师看来，", "py": "zài Wáng lǎoshī kànlái," }, "subject": { "zh": "雨果", "py": "Yǔguǒ" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "一个很乐观的人", "py": "yí ge hěn lèguān de rén" } }, "end": "。", "es": "En opinión de la profesora Wang, Hugo es una persona muy optimista." },
+        { "slots": { "time0": { "zh": "对留学生来说，", "py": "duì liúxuéshēng lái shuō," }, "subject": { "zh": "这个话题", "py": "zhège huàtí" }, "adverb": { "zh": "比较", "py": "bǐjiào" }, "verb1": { "zh": "现实", "py": "xiànshí" } }, "end": "。", "es": "Para los estudiantes extranjeros, este tema es bastante realista." },
+        { "slots": { "time0": { "zh": "看来，", "py": "kànlái," }, "subject": { "zh": "你的观念", "py": "nǐ de guānniàn" }, "adverb": { "zh": "已经", "py": "yǐjīng" }, "verb1": { "zh": "变", "py": "biàn" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Por lo visto, tu forma de pensar ya ha cambiado." }
+      ],
+      "negative": [
+        { "slots": { "time0": { "zh": "在我看来，", "py": "zài wǒ kànlái," }, "subject": { "zh": "他的看法", "py": "tā de kànfǎ" }, "adverb": { "zh": "不太", "py": "bú tài" }, "verb1": { "zh": "客观", "py": "kèguān" } }, "end": "。", "es": "En mi opinión, su punto de vista no es muy objetivo." },
+        { "slots": { "time0": { "zh": "看来，", "py": "kànlái," }, "subject": { "zh": "他", "py": "tā" }, "time": { "zh": "今天", "py": "jīntiān" }, "adverb": { "zh": "不", "py": "bú" }, "aux": { "zh": "会", "py": "huì" }, "verb1": { "zh": "来", "py": "lái" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Por lo visto, hoy ya no viene." }
+      ],
+      "question": [
+        { "slots": { "time0": { "zh": "在你看来，", "py": "zài nǐ kànlái," }, "subject": { "zh": "什么", "py": "shénme" }, "adverb": { "zh": "最", "py": "zuì" }, "verb1": { "zh": "有价值", "py": "yǒu jiàzhí" } }, "end": "？", "es": "En tu opinión, ¿qué es lo más valioso?" },
+        { "slots": { "time0": { "zh": "对你来说，", "py": "duì nǐ lái shuō," }, "subject": { "zh": "学汉语", "py": "xué Hànyǔ" }, "verb1": { "zh": "难", "py": "nán" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "Para ti, ¿es difícil estudiar chino?" }
+      ],
+      "mistakes": [
+        { "wrong": "为我，学汉语很重要。", "right": "对我来说，学汉语很重要。", "why": "«Para mí» (desde mi situación) es 对我来说; 为 es «por, en favor de» (为你高兴)." },
+        { "wrong": "我看来，这个话题很有意义。", "right": "在我看来，这个话题很有意义。 / 我看，这个话题很有意义。", "why": "看来 con persona necesita 在…看来; sin 在, di 我看." },
+        { "wrong": "看来我，他不来了。", "right": "看来，他不来了。", "why": "看来 solo no lleva persona: es una deducción (por lo visto)." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Debate en clase: ¿qué da sentido a la vida?",
+      "lines": [
+        { "speaker": "王老师", "zh": "今天我们谈一个新话题：对你们来说，什么样的人生最有意义？", "py": "Jīntiān wǒmen tán yí ge xīn huàtí: duì nǐmen lái shuō, shénmeyàng de rénshēng zuì yǒu yìyì?", "es": "Hoy vamos a hablar de un tema nuevo: para vosotros, ¿qué tipo de vida tiene más sentido?" },
+        { "speaker": "雨果", "zh": "在我看来，有意思的工作最重要。我主张做自己喜欢的事。", "py": "Zài wǒ kànlái, yǒu yìsi de gōngzuò zuì zhòngyào. Wǒ zhǔzhāng zuò zìjǐ xǐhuan de shì.", "es": "En mi opinión, lo más importante es un trabajo interesante. Yo soy partidario de hacer lo que te gusta." },
+        { "speaker": "小李", "zh": "我个人觉得，这个想法不太现实。对很多年轻人来说，钱也很重要。", "py": "Wǒ gèrén juéde, zhège xiǎngfǎ bú tài xiànshí. Duì hěn duō niánqīngrén lái shuō, qián yě hěn zhòngyào.", "es": "Personalmente, creo que esa idea es poco realista. Para muchos jóvenes, el dinero también es importante." },
+        { "speaker": "安娜", "zh": "小李说得有道理，可是钱不是人生的一切。", "py": "Xiǎo Lǐ shuō de yǒu dàolǐ, kěshì qián bú shì rénshēng de yíqiè.", "es": "Xiao Li tiene razón, pero el dinero no lo es todo en la vida." },
+        { "speaker": "大卫", "zh": "我比较乐观。只要努力，就能找到又有意思又有钱的工作。", "py": "Wǒ bǐjiào lèguān. Zhǐyào nǔlì, jiù néng zhǎodào yòu yǒu yìsi yòu yǒu qián de gōngzuò.", "es": "Yo soy bastante optimista. Con esfuerzo, se puede encontrar un trabajo interesante y bien pagado." },
+        { "speaker": "王老师", "zh": "大卫真乐观！小李，在你看来，什么最有价值？", "py": "Dàwèi zhēn lèguān! Xiǎo Lǐ, zài nǐ kànlái, shénme zuì yǒu jiàzhí?", "es": "¡Qué optimista es David! Xiao Li, en tu opinión, ¿qué es lo más valioso?" },
+        { "speaker": "小李", "zh": "对我来说，家人最有价值。我想让我父母过得好一点儿。", "py": "Duì wǒ lái shuō, jiārén zuì yǒu jiàzhí. Wǒ xiǎng ràng wǒ fùmǔ guò de hǎo yìdiǎnr.", "es": "Para mí, lo más valioso es la familia. Quiero que mis padres vivan un poco mejor." },
+        { "speaker": "雨果", "zh": "看来，我们的思想很不一样。", "py": "Kànlái, wǒmen de sīxiǎng hěn bù yíyàng.", "es": "Por lo visto, pensamos de forma muy distinta." },
+        { "speaker": "王老师", "zh": "没关系，每个人的观念都不一样。客观地说，你们的看法都有道理。", "py": "Méi guānxi, měi ge rén de guānniàn dōu bù yíyàng. Kèguān de shuō, nǐmen de kànfǎ dōu yǒu dàolǐ.", "es": "No pasa nada: cada uno tiene su mentalidad. Objetivamente, todos vuestros puntos de vista tienen su lógica." },
+        { "speaker": "安娜", "zh": "老师，那在您看来呢？", "py": "Lǎoshī, nà zài nín kànlái ne?", "es": "Profesora, ¿y en su opinión?" },
+        { "speaker": "王老师", "zh": "在我看来，人生的意义就是每天都学一点儿新东西。", "py": "Zài wǒ kànlái, rénshēng de yìyì jiù shì měi tiān dōu xué yìdiǎnr xīn dōngxi.", "es": "En mi opinión, el sentido de la vida es aprender algo nuevo cada día." },
+        { "speaker": "雨果", "zh": "看来，我们来中国学汉语很有意义！", "py": "Kànlái, wǒmen lái Zhōngguó xué Hànyǔ hěn yǒu yìyì!", "es": "¡Pues entonces venir a China a estudiar chino tiene mucho sentido!" }
+      ],
+      "notes": "我个人觉得 / 我个人认为 suavizan la opinión («personalmente…»), muy útil cuando no estás de acuerdo. 客观地说 = «objetivamente hablando». En los debates de clase en China es habitual que el profesor cierre con 你们的看法都有道理: se valora no dejar a nadie en mal lugar."
+    },
+    { "type": "exercises", "count": 16, "bank": ["g-question-words", "g-word-order", "u13"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "time0": { "zh": "在我看来，" }, "subject": { "zh": "这个话题" }, "adverb": { "zh": "很" }, "verb1": { "zh": "有意义" } }, "end": "。", "es": "En mi opinión, este tema tiene mucho sentido." }, "distractors": ["我看来，"] },
+        { "sentence": { "slots": { "time0": { "zh": "对我来说，" }, "subject": { "zh": "家人" }, "adverb": { "zh": "最" }, "verb1": { "zh": "有价值" } }, "end": "。", "es": "Para mí, lo más valioso es la familia." }, "distractors": ["为我，"] },
+        { "sentence": { "slots": { "time0": { "zh": "看来，" }, "subject": { "zh": "他" }, "time": { "zh": "今天" }, "adverb": { "zh": "不" }, "aux": { "zh": "会" }, "verb1": { "zh": "来" }, "particle": { "zh": "了" } }, "end": "。", "es": "Por lo visto, hoy ya no viene." } },
+        { "sentence": { "slots": { "time0": { "zh": "在王老师看来，" }, "subject": { "zh": "雨果" }, "time": { "zh": "每天" }, "adverb": { "zh": "都" }, "aux": { "zh": "应该" }, "with": { "zh": "跟中国朋友一起" }, "verb1": { "zh": "谈" }, "object": { "zh": "不同的话题" } }, "end": "。", "es": "En opinión de la profesora Wang, Hugo debería hablar todos los días de temas distintos con amigos chinos." } }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "在我看来，这个话题很有意义。", "py": "Zài wǒ kànlái, zhège huàtí hěn yǒu yìyì.", "es": "En mi opinión, este tema tiene mucho sentido." },
+        { "zh": "对我来说，家人最有价值。", "py": "Duì wǒ lái shuō, jiārén zuì yǒu jiàzhí.", "es": "Para mí, lo más valioso es la familia." },
+        { "zh": "我个人觉得，这个想法不太现实。", "py": "Wǒ gèrén juéde, zhège xiǎngfǎ bú tài xiànshí.", "es": "Personalmente, creo que esa idea es poco realista." },
+        { "zh": "看来，我们的思想很不一样。", "py": "Kànlái, wǒmen de sīxiǎng hěn bù yíyàng.", "es": "Por lo visto, pensamos de forma muy distinta." }
+      ],
+      "respond": [
+        { "q": { "zh": "对你来说，什么最重要？", "py": "Duì nǐ lái shuō, shénme zuì zhòngyào?", "es": "Para ti, ¿qué es lo más importante?" }, "model": { "zh": "对我来说，健康和家人最重要。", "py": "Duì wǒ lái shuō, jiànkāng hé jiārén zuì zhòngyào.", "es": "Para mí, lo más importante es la salud y la familia." } },
+        { "q": { "zh": "在你看来，学汉语有意义吗？", "py": "Zài nǐ kànlái, xué Hànyǔ yǒu yìyì ma?", "es": "En tu opinión, ¿tiene sentido estudiar chino?" }, "model": { "zh": "在我看来，很有意义，因为我在中国生活。", "py": "Zài wǒ kànlái, hěn yǒu yìyì, yīnwèi wǒ zài Zhōngguó shēnghuó.", "es": "En mi opinión, mucho, porque vivo en China." } },
+        { "q": { "zh": "你是一个乐观的人吗？", "py": "Nǐ shì yí ge lèguān de rén ma?", "es": "¿Eres una persona optimista?" }, "model": { "zh": "我觉得我比较乐观。", "py": "Wǒ juéde wǒ bǐjiào lèguān.", "es": "Creo que soy bastante optimista." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Un debate que no termina",
+      "text": "这个星期，王老师在课上让我们谈一个大话题：人生的意义是什么？大家的看法很不一样。在雨果看来，做自己喜欢的事最重要，所以他主张找一个有意思的工作。小李觉得这个想法不太现实。他说，对很多中国年轻人来说，找工作的时候，钱和家人都很重要。安娜说她个人比较喜欢旅行，在她看来，看世界也是一种学习。大卫是一个很乐观的人，他觉得只要努力，什么都能做到。王老师说，每个国家、每个人的观念都不一样，这很正常。客观地说，大家的思想都有价值。下课的时候，大家还在谈这个话题。看来，这个问题一节课是谈不完的！",
+      "es": "Esta semana, la profesora Wang nos pidió en clase que habláramos de un tema enorme: ¿cuál es el sentido de la vida? Las opiniones eran muy distintas. En opinión de Hugo, lo más importante es hacer lo que te gusta, así que es partidario de buscar un trabajo interesante. A Xiao Li esa idea le parece poco realista. Dice que, para muchos jóvenes chinos, al buscar trabajo importan tanto el dinero como la familia. Ana dice que a ella, personalmente, le gusta más viajar: en su opinión, ver mundo también es una forma de aprender. David es muy optimista: cree que, con esfuerzo, se puede conseguir cualquier cosa. La profesora Wang dijo que cada país y cada persona tienen su mentalidad, y que eso es normal. Objetivamente, las ideas de todos tienen valor. Al terminar la clase, todos seguían hablando del tema. ¡Por lo visto, esta pregunta no se acaba en una clase!",
+      "questions": [
+        { "q": "¿De qué tema hablaron en clase?", "options": ["人生的意义", "找工作的地方", "中国的旅行"], "answer": 0 },
+        { "q": "¿Qué le parece a Xiao Li la idea de Hugo?", "options": ["不太现实", "很有意思", "很乐观"], "answer": 0 },
+        { "q": "¿Quién es muy optimista?", "options": ["大卫", "小李", "安娜"], "answer": 0 },
+        { "q": "Según la profesora Wang, ¿por qué es normal que las opiniones sean distintas?", "options": ["每个人的观念都不一样", "这个话题太难", "大家都不努力"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

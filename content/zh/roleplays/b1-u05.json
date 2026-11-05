@@ -1,0 +1,147 @@
+{
+  "unitId": "b1-u05",
+  "scenarios": [
+    {
+      "id": "b1-u05-gym",
+      "title": "Hacerse socio del gimnasio",
+      "zh": "办会员卡",
+      "level": 2,
+      "setting": "Hugo entra en el gimnasio que hay al lado de la universidad: quiere hacerse socio y apuntarse a las clases de artes marciales. Tú (la app) eres el entrenador Zhang, que atiende en recepción.",
+      "role": "entrenador del gimnasio",
+      "roleZh": "张教练",
+      "voice": "m",
+      "goals": ["Preguntar cómo hacerse socio y cuánto cuesta", "Preguntar el horario de las clases de 武术", "Entender una condición con 只要…就 / 只有…才 / 除非", "Decidirte y despedirte"],
+      "vocab": ["会员卡", "武术", "教练", "只要", "只有", "除非", "提前", "坚持", "效果"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "你好！欢迎来我们健身房。你想办会员卡吗？", "py": "Nǐ hǎo! Huānyíng lái wǒmen jiànshēnfáng. Nǐ xiǎng bàn huìyuánkǎ ma?", "es": "¡Hola! Bienvenido a nuestro gimnasio. ¿Quieres hacerte socio?" },
+          "user": [
+            { "zh": "对，我想办会员卡。一个月多少钱？", "py": "Duì, wǒ xiǎng bàn huìyuánkǎ. Yí ge yuè duōshao qián?", "es": "Sí, quiero hacerme socio. ¿Cuánto cuesta al mes?", "keywords": ["会员卡", "多少钱"], "next": "n2", "goal": 0 },
+            { "zh": "我想先问问，你们有武术课吗？", "py": "Wǒ xiǎng xiān wènwen, nǐmen yǒu wǔshù kè ma?", "es": "Antes quería preguntar: ¿tenéis clases de artes marciales?", "keywords": ["武术", "课"], "next": "n3", "goal": 1 }
+          ],
+          "hint": "Di que quieres hacerte socio (办会员卡) y pregunta el precio (多少钱), o pregunta si hay clases de 武术."
+        },
+        "n2": {
+          "npc": { "zh": "一个月三百块，一年两千块。只要你是学生，就可以便宜一点儿。", "py": "Yí ge yuè sānbǎi kuài, yì nián liǎngqiān kuài. Zhǐyào nǐ shì xuésheng, jiù kěyǐ piányi yìdiǎnr.", "es": "Trescientos yuanes al mes o dos mil al año. Con tal de que seas estudiante, te sale un poco más barato." },
+          "user": [
+            { "zh": "我是学生，这是我的学生证。", "py": "Wǒ shì xuésheng, zhè shì wǒ de xuéshengzhèng.", "es": "Soy estudiante, aquí tiene mi carné.", "keywords": ["学生", "学生证"], "next": "n4", "goal": 0 },
+            { "zh": "那武术课要不要再付钱？", "py": "Nà wǔshù kè yào bu yào zài fù qián?", "es": "¿Y las clases de artes marciales se pagan aparte?", "keywords": ["武术", "付钱"], "next": "n3", "goal": 1 }
+          ],
+          "hint": "Ha dicho que con tal de ser estudiante (只要…就) es más barato: enseña tu 学生证, o pregunta por las clases de 武术."
+        },
+        "n3": {
+          "npc": { "zh": "武术课不用再付钱，可是只有会员才能上。每个星期一、三、五晚上七点整开始。", "py": "Wǔshù kè bú yòng zài fù qián, kěshì zhǐyǒu huìyuán cái néng shàng. Měi ge xīngqī yī, sān, wǔ wǎnshang qī diǎn zhěng kāishǐ.", "es": "Las clases no se pagan aparte, pero solo pueden ir los socios. Empiezan los lunes, miércoles y viernes a las siete en punto." },
+          "user": [
+            { "zh": "很好，我下了课就能来。要提前报名吗？", "py": "Hěn hǎo, wǒ xià le kè jiù néng lái. Yào tíqián bàomíng ma?", "es": "Muy bien, puedo venir nada más salir de clase. ¿Hay que apuntarse antes?", "keywords": ["提前", "报名"], "next": "n5", "goal": 2 },
+            { "zh": "要是我有时候来不了，怎么办？", "py": "Yàoshi wǒ yǒu shíhou lái bu liǎo, zěnme bàn?", "es": "¿Y si algún día no puedo venir?", "keywords": ["要是", "来不了"], "next": "n6", "goal": 2 }
+          ],
+          "hint": "Solo los socios pueden ir (只有…才). Pregunta si hay que apuntarse antes (提前报名) o qué pasa si un día no puedes ir (要是…来不了)."
+        },
+        "n4": {
+          "npc": { "zh": "好的，学生一年一千五百块。办了卡就能用。你还想上武术课吗？", "py": "Hǎo de, xuésheng yì nián yìqiān wǔbǎi kuài. Bàn le kǎ jiù néng yòng. Nǐ hái xiǎng shàng wǔshù kè ma?", "es": "Vale: para estudiantes, mil quinientos al año. Nada más hacerte la tarjeta ya puedes usarla. ¿Quieres apuntarte también a artes marciales?" },
+          "user": [
+            { "zh": "想！武术课几点开始？", "py": "Xiǎng! Wǔshù kè jǐ diǎn kāishǐ?", "es": "¡Sí! ¿A qué hora empiezan las clases?", "keywords": ["几点", "武术"], "next": "n3", "goal": 1 },
+            { "zh": "想。武术课要不要再付钱？", "py": "Xiǎng. Wǔshù kè yào bu yào zài fù qián?", "es": "Sí. ¿Se pagan aparte?", "keywords": ["付钱", "武术"], "next": "n3", "goal": 1 }
+          ],
+          "hint": "Pregunta la hora de las clases (几点开始) o si se pagan aparte."
+        },
+        "n5": {
+          "npc": { "zh": "要。除非人很少，不然你得提前一天在手机上报名。", "py": "Yào. Chúfēi rén hěn shǎo, bùrán nǐ děi tíqián yì tiān zài shǒujī shang bàomíng.", "es": "Sí. Salvo que haya muy poca gente, tienes que apuntarte en el móvil con un día de antelación." },
+          "user": [
+            { "zh": "明白了。只要我坚持练，三个月就能看到效果吗？", "py": "Míngbai le. Zhǐyào wǒ jiānchí liàn, sān ge yuè jiù néng kàndào xiàoguǒ ma?", "es": "Entendido. Si soy constante, ¿en tres meses se notarán resultados?", "keywords": ["坚持", "效果"], "next": "n7" },
+            { "zh": "好的，那我办一年的会员卡吧。", "py": "Hǎo de, nà wǒ bàn yì nián de huìyuánkǎ ba.", "es": "Vale, pues me hago la tarjeta de un año.", "keywords": ["办", "一年"], "next": "n8", "goal": 3 }
+          ],
+          "hint": "除非人很少，不然… = salvo que haya poca gente, hay que apuntarse. Pregunta por los resultados (效果) o decídete (办一年的卡)."
+        },
+        "n6": {
+          "npc": { "zh": "没关系。不论哪天来不了，都可以提前在手机上取消。", "py": "Méi guānxi. Búlùn nǎ tiān lái bu liǎo, dōu kěyǐ tíqián zài shǒujī shang qǔxiāo.", "es": "No pasa nada. Sea el día que sea, puedes cancelarlo antes en el móvil." },
+          "user": [
+            { "zh": "太好了。要提前报名吗？", "py": "Tài hǎo le. Yào tíqián bàomíng ma?", "es": "Genial. ¿Hay que apuntarse antes?", "keywords": ["提前", "报名"], "next": "n5", "goal": 2 },
+            { "zh": "太好了，那我办一年的会员卡吧。", "py": "Tài hǎo le, nà wǒ bàn yì nián de huìyuánkǎ ba.", "es": "Genial, pues me hago la tarjeta de un año.", "keywords": ["办", "一年"], "next": "n8", "goal": 3 }
+          ],
+          "hint": "不论…都 = sea como sea. Pregunta si hay que apuntarse antes o decídete."
+        },
+        "n7": {
+          "npc": { "zh": "只有每个星期至少练三次，才能看到效果。你一定要坚持！", "py": "Zhǐyǒu měi ge xīngqī zhìshǎo liàn sān cì, cái néng kàndào xiàoguǒ. Nǐ yídìng yào jiānchí!", "es": "Solo si entrenas al menos tres veces por semana notarás resultados. ¡Tienes que ser constante!" },
+          "user": [
+            { "zh": "我保证坚持！我办一年的会员卡吧。", "py": "Wǒ bǎozhèng jiānchí! Wǒ bàn yì nián de huìyuánkǎ ba.", "es": "¡Le prometo que seré constante! Me hago la tarjeta de un año.", "keywords": ["保证", "办"], "next": "n8", "goal": 3 }
+          ],
+          "hint": "Ha usado 只有…才 (solo si…). Promete ser constante (保证坚持) y hazte socio."
+        },
+        "n8": {
+          "npc": { "zh": "好的！用微信付就行。星期一晚上七点整见，别迟到！", "py": "Hǎo de! Yòng Wēixìn fù jiù xíng. Xīngqī yī wǎnshang qī diǎn zhěng jiàn, bié chídào!", "es": "¡Perfecto! Puedes pagar con WeChat. Nos vemos el lunes a las siete en punto, ¡no llegues tarde!" },
+          "end": true,
+          "feedback": "Te has hecho socio y has entendido las condiciones del gimnasio. Fíjate en las parejas: 只要…就 (basta con), 只有…才 (solo si), 除非…不然 (a menos que) y 不论…都 (sea como sea); y en 下了课就… para encadenar acciones."
+        }
+      }
+    },
+    {
+      "id": "b1-u05-roommate",
+      "title": "Normas de convivencia con tu compañero",
+      "zh": "宿舍的规定",
+      "level": 2,
+      "setting": "Hugo y Xiao Li comparten habitación desde esta semana y deciden poner unas normas de convivencia: ruido, luz por la noche, limpieza y comida. Tú (la app) eres Xiao Li.",
+      "role": "compañero de habitación",
+      "roleZh": "小李",
+      "voice": "m",
+      "goals": ["Proponer una norma con 要是…就 o 只要…就", "Negociar una excepción con 除非", "Acordar la limpieza con 一…就 o 不论…都", "Cerrar el acuerdo prometiendo cumplirlo"],
+      "vocab": ["规定", "要是", "只要", "除非", "不论", "尽量", "保证", "按照"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "雨果，我们一起住，是不是应该定几个规定？", "py": "Yǔguǒ, wǒmen yìqǐ zhù, shì bu shì yīnggāi dìng jǐ ge guīdìng?", "es": "Hugo, ahora que vivimos juntos, ¿no deberíamos poner unas cuantas normas?" },
+          "user": [
+            { "zh": "好啊。要是我在学习，你就别大声说话，好吗？", "py": "Hǎo a. Yàoshi wǒ zài xuéxí, nǐ jiù bié dàshēng shuōhuà, hǎo ma?", "es": "Vale. Si estoy estudiando, no hables alto, ¿vale?", "keywords": ["要是", "大声"], "next": "n2", "goal": 0 },
+            { "zh": "好啊。只要我们互相关心，就没问题。", "py": "Hǎo a. Zhǐyào wǒmen hùxiāng guānxīn, jiù méi wèntí.", "es": "Vale. Con tal de que nos preocupemos el uno por el otro, no habrá problema.", "keywords": ["只要", "互相"], "next": "n2", "goal": 0 }
+          ],
+          "hint": "Propón una norma con 要是…就… o 只要…就…"
+        },
+        "n2": {
+          "npc": { "zh": "好的。还有，晚上十一点以后能不能关灯？我一上床就想睡觉。", "py": "Hǎo de. Hái yǒu, wǎnshang shíyī diǎn yǐhòu néng bu néng guān dēng? Wǒ yí shàng chuáng jiù xiǎng shuìjiào.", "es": "De acuerdo. Otra cosa: ¿podemos apagar la luz a partir de las once? Yo, en cuanto me meto en la cama, me quiero dormir." },
+          "user": [
+            { "zh": "可以。除非我有很多作业，不然十一点以后就关灯。", "py": "Kěyǐ. Chúfēi wǒ yǒu hěn duō zuòyè, bùrán shíyī diǎn yǐhòu jiù guān dēng.", "es": "Vale. A menos que tenga muchos deberes, a partir de las once apagamos.", "keywords": ["除非", "不然"], "next": "n4", "goal": 1 },
+            { "zh": "十一点太早了，十二点可以吗？", "py": "Shíyī diǎn tài zǎo le, shí'èr diǎn kěyǐ ma?", "es": "Las once es muy pronto, ¿qué tal a las doce?", "keywords": ["十二点", "太早"], "next": "n3" }
+          ],
+          "hint": "Acepta con una excepción (除非…，不然…) o propón otra hora."
+        },
+        "n3": {
+          "npc": { "zh": "十二点有点儿晚。那这样吧：除非有考试，不然十一点半关灯。", "py": "Shí'èr diǎn yǒudiǎnr wǎn. Nà zhèyàng ba: chúfēi yǒu kǎoshì, bùrán shíyī diǎn bàn guān dēng.", "es": "Las doce es un poco tarde. Hagamos una cosa: salvo que haya examen, apagamos a las once y media." },
+          "user": [
+            { "zh": "好，就这样。除非有考试，我们都十一点半关灯。", "py": "Hǎo, jiù zhèyàng. Chúfēi yǒu kǎoshì, wǒmen dōu shíyī diǎn bàn guān dēng.", "es": "Vale, así quedamos. Salvo que haya examen, apagamos a las once y media.", "keywords": ["就这样", "除非"], "next": "n4", "goal": 1 }
+          ],
+          "hint": "Acepta repitiendo la excepción con 除非."
+        },
+        "n4": {
+          "npc": { "zh": "打扫房间呢？我们怎么安排？", "py": "Dǎsǎo fángjiān ne? Wǒmen zěnme ānpái?", "es": "¿Y la limpieza de la habitación? ¿Cómo nos organizamos?" },
+          "user": [
+            { "zh": "每个星期六我们一起床就打扫，怎么样？", "py": "Měi ge xīngqīliù wǒmen yì qǐchuáng jiù dǎsǎo, zěnmeyàng?", "es": "¿Qué tal si todos los sábados limpiamos nada más levantarnos?", "keywords": ["一起床就", "打扫"], "next": "n5", "goal": 2 },
+            { "zh": "不论谁有空儿，都打扫一下。", "py": "Búlùn shéi yǒu kòngr, dōu dǎsǎo yíxià.", "es": "El que tenga un rato, sea quien sea, que limpie un poco.", "keywords": ["不论", "都"], "next": "n5", "goal": 2 }
+          ],
+          "hint": "Propón un horario con 一…就 o una regla general con 不论…都."
+        },
+        "n5": {
+          "npc": { "zh": "好主意。还有，冰箱里别人的食品能不能吃？", "py": "Hǎo zhǔyi. Hái yǒu, bīngxiāng lǐ biérén de shípǐn néng bu néng chī?", "es": "Buena idea. Y otra cosa: ¿se puede comer la comida del otro que hay en la nevera?" },
+          "user": [
+            { "zh": "只有问了，才能吃。", "py": "Zhǐyǒu wèn le, cái néng chī.", "es": "Solo si preguntas antes.", "keywords": ["只有", "才"], "next": "n6", "goal": 2 },
+            { "zh": "只要说一声，就可以吃。", "py": "Zhǐyào shuō yì shēng, jiù kěyǐ chī.", "es": "Con tal de avisar, se puede comer.", "keywords": ["只要", "说一声"], "next": "n6", "goal": 2 }
+          ],
+          "hint": "Pon una condición con 只有…才 (solo si) o 只要…就 (basta con)."
+        },
+        "n6": {
+          "npc": { "zh": "好，我们就按照这些规定做吧！我把它们写下来，放在门上。", "py": "Hǎo, wǒmen jiù ànzhào zhèxiē guīdìng zuò ba! Wǒ bǎ tāmen xiě xialai, fàng zài mén shang.", "es": "¡Bien, pues seguimos estas normas! Las apunto y las pego en la puerta." },
+          "user": [
+            { "zh": "好！我保证尽量做到。", "py": "Hǎo! Wǒ bǎozhèng jǐnliàng zuòdào.", "es": "¡Vale! Prometo cumplirlas en lo posible.", "keywords": ["保证", "尽量"], "next": "n7", "goal": 3 },
+            { "zh": "太好了。要是有问题，我们就主动说出来。", "py": "Tài hǎo le. Yàoshi yǒu wèntí, wǒmen jiù zhǔdòng shuō chulai.", "es": "Genial. Si hay algún problema, lo decimos sin esperar a que el otro pregunte.", "keywords": ["要是", "主动"], "next": "n7", "goal": 3 }
+          ],
+          "hint": "Cierra el acuerdo: promete (保证) o propón hablar claro (主动说出来)."
+        },
+        "n7": {
+          "npc": { "zh": "我也保证！只要我们按照规定做，就能住得很开心。", "py": "Wǒ yě bǎozhèng! Zhǐyào wǒmen ànzhào guīdìng zuò, jiù néng zhù de hěn kāixīn.", "es": "¡Yo también lo prometo! Con tal de cumplir las normas, viviremos muy a gusto." },
+          "end": true,
+          "feedback": "Habéis acordado normas sobre ruido, luz, limpieza y comida. Has usado condiciones (要是…就, 只要…就, 只有…才), una excepción con 除非…不然 y una regla general con 不论…都. Recuerda: 就, 才 y 都 van siempre detrás del sujeto."
+        }
+      }
+    }
+  ]
+}

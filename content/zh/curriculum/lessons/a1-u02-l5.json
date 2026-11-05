@@ -1,0 +1,134 @@
+{
+  "id": "a1-u02-l5",
+  "title": "Tu número de teléfono (幺) y repaso de la unidad",
+  "zh": "你手机号码是多少？",
+  "goal": "Pedir y dar un número de móvil leyendo el 1 como 幺, agregar a alguien en WeChat y repasar los números, la edad y 二 / 两.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "电话", "pinyin": "diànhuà", "es": "teléfono; llamada" },
+    { "hanzi": "手机", "pinyin": "shǒujī", "es": "teléfono móvil" },
+    { "hanzi": "号码", "pinyin": "hàomǎ", "es": "número (de teléfono, de habitación…)", "note": "手机号码 = número de móvil; en la calle, muchos dicen solo 手机号." },
+    { "hanzi": "幺", "pinyin": "yāo", "es": "uno (al dictar cifras)", "note": "En teléfonos, habitaciones y autobuses el 1 se lee yāo para no confundirlo con 七 qī. Se escribe 一 (o 1): 幺 solo es la lectura." },
+    { "hanzi": "微信", "pinyin": "Wēixìn", "es": "WeChat", "note": "En China casi todo pasa por 微信: mensajes, pagos, grupos de clase." },
+    { "hanzi": "加", "pinyin": "jiā", "es": "añadir, agregar", "note": "加微信 = agregarse en WeChat." },
+    { "hanzi": "用", "pinyin": "yòng", "es": "usar" },
+    { "hanzi": "喂", "pinyin": "wéi", "es": "¿diga?, ¿sí? (al teléfono)", "note": "Al descolgar se dice wéi (2.º tono); wèi (4.º) suena a «¡eh, tú!»." }
+  ],
+  "extraVocab": ["号码", "幺", "微信"],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "你手机号码是多少？", "py": "Nǐ shǒujī hàomǎ shì duōshao?", "es": "¿Cuál es tu número de móvil?" },
+        { "zh": "我手机号码是一三八零零二五六七八九。", "py": "Wǒ shǒujī hàomǎ shì yāo sān bā líng líng èr wǔ liù qī bā jiǔ.", "es": "Mi número de móvil es el 138 0025 6789." },
+        { "zh": "你有微信吗？我加你！", "py": "Nǐ yǒu Wēixìn ma? Wǒ jiā nǐ!", "es": "¿Tienes WeChat? ¡Te agrego!" }
+      ]
+    },
+    { "type": "vocab", "title": "El móvil", "words": ["电话", "手机", "号码", "幺", "微信", "加", "用", "喂"] },
+    {
+      "type": "phonetics-drill",
+      "title": "El 1 de los teléfonos: yāo",
+      "markdown": "Al **dictar cifras sueltas** (teléfonos, habitaciones, autobuses, contraseñas), el 1 no se dice *yī* sino **yāo**: así no se confunde con 七 *qī*, que suena muy parecido por teléfono.\n\n- 一三八 → **yāo** sān bā\n- 一一零 (110, la policía) → **yāo yāo** líng\n- 一零一 (habitación 101) → **yāo** líng **yāo**\n\nPero al **contar** y en las cifras «de cantidad» (11, 21, 100…) sigue siendo **yī**: 十一 shíyī.\n\nLos móviles chinos tienen **11 cifras** y se leen en tres grupos: **3 + 4 + 4** (138 · 0025 · 6789), con una pausa entre grupos.",
+      "items": [
+        { "audio": "一三八", "prompt": "Es el principio de un número de móvil. ¿Cómo se lee?", "options": ["yāo sān bā", "yī sān bā", "qī sān bā"], "answer": 0, "explain": "En los teléfonos, el 1 es yāo." },
+        { "audio": "十一", "prompt": "Es una cantidad (once). ¿Cómo se lee?", "options": ["shíyī", "shíyāo", "shíqī"], "answer": 0, "explain": "Al contar, 一 sigue siendo yī." },
+        { "audio": "喂", "prompt": "Contestas al teléfono. ¿Qué tono?", "options": ["wéi (2.º, sube)", "wèi (4.º, cae)", "wēi (1.º, plano)"], "answer": 0, "explain": "Al teléfono se pregunta subiendo: wéi?" },
+        { "audio": "手机", "options": ["shǒujī", "shōujī", "shǒuqī"], "answer": 0, "explain": "shǒu (3.º) + jī (1.º; j sin aire)." },
+        { "audio": "电话", "options": ["diànhuà", "diǎnhuà", "tiànhuà"], "answer": 0, "explain": "Dos cuartos tonos: diàn (cae) + huà (cae)." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["话", "手"],
+      "mnemonics": {
+        "话": "讠 (palabras) + 舌 (lengua): las palabras que salen de la lengua → lo que se habla. 电话 = «palabras eléctricas».",
+        "手": "Dibujo de una mano con los dedos abiertos y la muñeca. 手机 = «máquina de mano»."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "El número de teléfono como objeto",
+      "markdown": "El número de teléfono es un objeto más, y se pregunta con **多少** (nunca con 几, porque es una cifra larga):\n\n- 你手机号码是**多少**？ → 我手机号码是**一三八…**\n\nFíjate en el sujeto: 你手机号码 («tu número de móvil»). En la unidad 3 verás que lo completo es 你**的**手机号码; en la conversación el 的 se cae muchísimas veces.\n\nY con 有 / 加 / 用 hablas del móvil: 我**有**微信, 我**加**你, 小李**用**微信.",
+      "focus": ["object"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "我手机号码", "py": "wǒ shǒujī hàomǎ" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "一三八零零二五六七八九", "py": "yāo sān bā líng líng èr wǔ liù qī bā jiǔ" } }, "end": "。", "es": "Mi número de móvil es el 138 0025 6789." },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "verb1": { "zh": "有", "py": "yǒu" }, "object": { "zh": "微信", "py": "Wēixìn" } }, "end": "。", "es": "Tengo WeChat." },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "verb1": { "zh": "加", "py": "jiā" }, "object": { "zh": "你", "py": "nǐ" } }, "end": "。", "es": "Te agrego (en WeChat)." },
+        { "slots": { "subject": { "zh": "小李", "py": "Xiǎo Lǐ" }, "verb1": { "zh": "用", "py": "yòng" }, "object": { "zh": "微信", "py": "Wēixìn" } }, "end": "。", "es": "Xiao Li usa WeChat." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "大卫", "py": "Dàwèi" }, "adverb": { "zh": "不", "py": "bú" }, "verb1": { "zh": "用", "py": "yòng" }, "object": { "zh": "微信", "py": "Wēixìn" } }, "end": "。", "es": "David no usa WeChat." },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "不", "py": "bù" }, "verb1": { "zh": "知道", "py": "zhīdào" }, "object": { "zh": "他手机号码", "py": "tā shǒujī hàomǎ" } }, "end": "。", "es": "No sé su número de móvil." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你手机号码", "py": "nǐ shǒujī hàomǎ" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "多少", "py": "duōshao" } }, "end": "？", "es": "¿Cuál es tu número de móvil? (lit. «tu número de móvil es cuánto»)", "esOrder": [{ "text": "¿Cuál", "slot": "object" }, { "text": "es", "slot": "verb1" }, { "text": "tu número de móvil?", "slot": "subject" }] },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "有", "py": "yǒu" }, "object": { "zh": "微信", "py": "Wēixìn" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿Tienes WeChat?" }
+      ],
+      "mistakes": [
+        { "wrong": "你手机号码是几？", "right": "你手机号码是多少？", "why": "几 espera una cifra pequeña; un teléfono se pregunta con 多少." },
+        { "wrong": "一三八 → yī sān bā", "right": "一三八 → yāo sān bā", "why": "Al dictar cifras sueltas, el 1 se lee yāo." },
+        { "wrong": "你手机号码是什么？", "right": "你手机号码是多少？", "why": "No es incorrecto del todo, pero para números lo natural es 多少." },
+        { "wrong": "我加微信你。", "right": "我加你微信。 / 我加你。", "why": "Primero la persona: 加 + persona (+ 微信)." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "¿Nos agregamos?",
+      "lines": [
+        { "speaker": "小李", "zh": "雨果，你有微信吗？", "py": "Yǔguǒ, nǐ yǒu Wēixìn ma?", "es": "Hugo, ¿tienes WeChat?" },
+        { "speaker": "雨果", "zh": "有。我加你！你手机号码是多少？", "py": "Yǒu. Wǒ jiā nǐ! Nǐ shǒujī hàomǎ shì duōshao?", "es": "Sí. ¡Te agrego! ¿Cuál es tu número de móvil?" },
+        { "speaker": "小李", "zh": "一五九、三三四四、五六七八。", "py": "Yāo wǔ jiǔ, sān sān sì sì, wǔ liù qī bā.", "es": "159 · 3344 · 5678." },
+        { "speaker": "雨果", "zh": "对不起，请再说一遍。", "py": "Duìbuqǐ, qǐng zài shuō yí biàn.", "es": "Perdona, ¿me lo repites?" },
+        { "speaker": "小李", "zh": "一五九、三三四四、五六七八。你手机号码呢？", "py": "Yāo wǔ jiǔ, sān sān sì sì, wǔ liù qī bā. Nǐ shǒujī hàomǎ ne?", "es": "159 · 3344 · 5678. ¿Y tu número?" },
+        { "speaker": "雨果", "zh": "我手机号码是一三八零零二五六七八九。", "py": "Wǒ shǒujī hàomǎ shì yāo sān bā líng líng èr wǔ liù qī bā jiǔ.", "es": "Mi número es el 138 0025 6789." },
+        { "speaker": "小李", "zh": "好，我记住了。……喂？雨果，你听！", "py": "Hǎo, wǒ jìzhu le. … Wéi? Yǔguǒ, nǐ tīng!", "es": "Vale, ya lo tengo. … ¿Diga? ¡Hugo, escucha!" },
+        { "speaker": "雨果", "zh": "好！这是你电话。谢谢！", "py": "Hǎo! Zhè shì nǐ diànhuà. Xièxie!", "es": "¡Vale! Es tu llamada. ¡Gracias!" }
+      ],
+      "notes": "Para comprobar un número, lo más práctico es hacer una llamada perdida, como hace Xiao Li. En China casi nadie da el número sin más: se agrega en WeChat escaneando el código QR del otro (扫一扫)."
+    },
+    { "type": "exercises", "count": 16, "bank": ["g-numbers", "g-price-age", "g-question-words", "u02"] },
+    {
+      "type": "sentence-builder",
+      "title": "Construye la frase completa",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "你手机号码" }, "verb1": { "zh": "是" }, "object": { "zh": "多少" } }, "end": "？", "es": "¿Cuál es tu número de móvil?" }, "distractors": ["几", "吗"] },
+        { "sentence": { "slots": { "subject": { "zh": "我们班" }, "verb1": { "zh": "有" }, "object": { "zh": "两个西班牙学生" } }, "end": "。", "es": "En nuestra clase hay dos alumnos españoles." }, "distractors": ["二个"] },
+        { "sentence": { "slots": { "subject": { "zh": "安娜" }, "adverb": { "zh": "也" }, "object": { "zh": "二十三岁" }, "particle": { "zh": "吗" } }, "end": "？", "es": "¿Anna también tiene veintitrés años?" }, "distractors": ["有", "年"] },
+        { "sentence": { "slots": { "subject": { "zh": "大卫" }, "adverb": { "zh": "也" }, "verb1": { "zh": "有" }, "object": { "zh": "十二个中国朋友" } }, "end": "。", "es": "David también tiene doce amigos chinos." }, "distractors": ["十两个"] },
+        { "sentence": { "slots": { "subject": { "zh": "你们班" }, "verb1": { "zh": "有" }, "object": { "zh": "多少美国学生" } }, "end": "？", "es": "¿Cuántos alumnos estadounidenses hay en vuestra clase?" }, "distractors": ["吗", "几"] },
+        { "sentence": { "slots": { "subject": { "zh": "我" }, "adverb": { "zh": "也不" }, "verb1": { "zh": "知道" }, "object": { "zh": "王老师手机号码" } }, "end": "。", "es": "Yo tampoco sé el número de móvil de la profesora Wang." }, "distractors": ["吗"] },
+        { "sentence": { "slots": { "subject": { "zh": "你们" }, "adverb": { "zh": "也" }, "verb1": { "zh": "用" }, "object": { "zh": "微信" }, "particle": { "zh": "吗" } }, "end": "？", "es": "¿Vosotros también usáis WeChat?" }, "distractors": ["呢"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "你手机号码是多少？", "py": "Nǐ shǒujī hàomǎ shì duōshao?", "es": "¿Cuál es tu número de móvil?" },
+        { "zh": "一三八、零零二五、六七八九。", "py": "Yāo sān bā, líng líng èr wǔ, liù qī bā jiǔ.", "es": "138 · 0025 · 6789." },
+        { "zh": "你有微信吗？我加你。", "py": "Nǐ yǒu Wēixìn ma? Wǒ jiā nǐ.", "es": "¿Tienes WeChat? Te agrego." },
+        { "zh": "喂？你好！", "py": "Wéi? Nǐ hǎo!", "es": "¿Diga? ¡Hola!" },
+        { "zh": "我二十四岁，我有两个中国朋友。", "py": "Wǒ èrshísì suì, wǒ yǒu liǎng ge Zhōngguó péngyou.", "es": "Tengo veinticuatro años y dos amigos chinos." }
+      ],
+      "respond": [
+        { "q": { "zh": "你手机号码是多少？", "py": "Nǐ shǒujī hàomǎ shì duōshao?", "es": "¿Cuál es tu número de móvil?" }, "model": { "zh": "我手机号码是一三八零零二五六七八九。", "py": "Wǒ shǒujī hàomǎ shì yāo sān bā líng líng èr wǔ liù qī bā jiǔ.", "es": "Mi número es el 138 0025 6789." } },
+        { "q": { "zh": "你有微信吗？", "py": "Nǐ yǒu Wēixìn ma?", "es": "¿Tienes WeChat?" }, "model": { "zh": "有，我加你！", "py": "Yǒu, wǒ jiā nǐ!", "es": "Sí, ¡te agrego!" } },
+        { "q": { "zh": "你多大？", "py": "Nǐ duō dà?", "es": "¿Cuántos años tienes?" }, "model": { "zh": "我今年二十四岁。", "py": "Wǒ jīnnián èrshísì suì.", "es": "Este año cumplo veinticuatro." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "La ficha de Hugo",
+      "text": "我叫雨果，我是西班牙人。我今年二十四岁，我是学生。我们班有十二个学生：两个西班牙学生，两个美国学生，八个中国学生。我有三个中国朋友。我手机号码是一三八零零二五六七八九。我有微信，我也用微信。",
+      "es": "Me llamo Hugo y soy español. Este año cumplo veinticuatro y soy estudiante. En nuestra clase hay doce alumnos: dos españoles, dos estadounidenses y ocho chinos. Tengo tres amigos chinos. Mi número de móvil es el 138 0025 6789. Tengo WeChat y lo uso.",
+      "questions": [
+        { "q": "¿Cuántos años tiene Hugo?", "options": ["24", "22", "12"], "answer": 0 },
+        { "q": "¿Cuántos alumnos hay en su clase?", "options": ["12", "8", "3"], "answer": 0 },
+        { "q": "¿Cómo se leen las tres primeras cifras de su móvil?", "options": ["yāo sān bā", "yī sān bā", "shísān bā"], "answer": 0 },
+        { "q": "¿Por qué 两个西班牙学生 y no 二个?", "options": ["Porque va con clasificador", "Porque es una cifra", "Porque son extranjeros"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

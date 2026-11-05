@@ -1,0 +1,133 @@
+{
+  "id": "a1-u19-l1",
+  "title": "El cuerpo: 我头疼",
+  "zh": "我头疼",
+  "goal": "Nombrar las partes del cuerpo y decir qué te duele con «persona + parte del cuerpo + 疼».",
+  "minutes": 13,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "身体", "pinyin": "shēntǐ", "es": "cuerpo; salud", "note": "身体很好 = estar bien de salud." },
+    { "hanzi": "头", "pinyin": "tóu", "es": "cabeza" },
+    { "hanzi": "头发", "pinyin": "tóufa", "es": "pelo (de la cabeza)" },
+    { "hanzi": "脸", "pinyin": "liǎn", "es": "cara" },
+    { "hanzi": "眼睛", "pinyin": "yǎnjing", "es": "ojo" },
+    { "hanzi": "眼", "pinyin": "yǎn", "es": "ojo (forma corta)", "note": "Se usa en compuestos y frases hechas: 看一眼 (echar un vistazo)." },
+    { "hanzi": "嘴", "pinyin": "zuǐ", "es": "boca" },
+    { "hanzi": "手", "pinyin": "shǒu", "es": "mano" },
+    { "hanzi": "腿", "pinyin": "tuǐ", "es": "pierna" },
+    { "hanzi": "脚", "pinyin": "jiǎo", "es": "pie" },
+    { "hanzi": "肚子", "pinyin": "dùzi", "es": "barriga, estómago", "note": "Fuera del HSK 1–3, pero muy útil: 肚子疼 = dolor de barriga." },
+    { "hanzi": "疼", "pinyin": "téng", "es": "doler" }
+  ],
+  "extraVocab": ["肚子"],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "我头疼。", "py": "Wǒ tóu téng.", "es": "Me duele la cabeza." },
+        { "zh": "你哪儿疼？", "py": "Nǐ nǎr téng?", "es": "¿Dónde te duele?" },
+        { "zh": "我脚有点儿疼，手不疼。", "py": "Wǒ jiǎo yǒudiǎnr téng, shǒu bù téng.", "es": "Me duele un poco el pie; la mano, no." }
+      ]
+    },
+    { "type": "vocab", "title": "Las partes del cuerpo", "words": ["身体", "头", "头发", "脸", "眼睛", "眼", "嘴", "手", "腿", "脚", "肚子", "疼"] },
+    {
+      "type": "phonetics-drill",
+      "title": "-n y -ng: 身, 脸, 疼",
+      "markdown": "En chino, **-n** y **-ng** al final de sílaba cambian el significado:\n\n- **-n**: la punta de la lengua toca detrás de los dientes de arriba, como en «pan». 身 *shēn*, 脸 *liǎn*.\n- **-ng**: la lengua se queda atrás, la boca abierta, como en «tengo» dicho deprisa (la *g* no se oye). 疼 *téng*, 两 *liǎng*.\n\nTruco: después de -ng la boca queda abierta; después de -n, la lengua arriba.",
+      "items": [
+        { "audio": "疼", "options": ["téng", "tén", "tíng"], "answer": 0, "explain": "-eng: lengua atrás, boca abierta." },
+        { "audio": "身体", "options": ["shēntǐ", "shēngtǐ", "sēntǐ"], "answer": 0, "explain": "身 shēn termina en -n." },
+        { "audio": "脸", "options": ["liǎn", "liǎng", "lǎn"], "answer": 0, "explain": "脸 liǎn (-n); 两 liǎng (-ng) es otra palabra." },
+        { "audio": "眼睛", "options": ["yǎnjing", "yǎngjing", "yǎnjin"], "answer": 0, "explain": "yǎn con -n; jing con -ng y tono neutro." },
+        { "audio": "头疼", "options": ["tóu téng", "tōu téng", "tóu tíng"], "answer": 0, "explain": "Dos segundos tonos seguidos: sube, sube." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["疼", "手"],
+      "mnemonics": {
+        "疼": "疒 (la cama del enfermo, con una gota de sudor) + 冬 (invierno): un dolor que te deja en la cama temblando como en invierno. Casi todas las enfermedades llevan 疒: 病, 疼.",
+        "手": "Dibujo de una mano con los dedos abiertos: tres rayas horizontales y la muñeca que baja."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "Persona + parte del cuerpo + 疼",
+      "markdown": "Para decir qué te duele, el chino dice literalmente «yo, la cabeza duele»: **persona + parte del cuerpo + 疼**. No hay «me» ni «a mí».\n\nEn el esqueleto dibujamos **persona + parte del cuerpo juntas en el hueco del sujeto** (我头, 他脚); 疼 va en el hueco del verbo, como un adjetivo:\n\n- 我头**疼**。 Me duele la cabeza.\n- 他脚**很**疼。 / 我眼睛**有点儿**疼。 → el grado va delante de 疼.\n- **Negativa**: 我腿**不**疼。\n- **Preguntas**: 你头疼**吗**？ · 你**哪儿**疼？ (哪儿 ocupa el sitio de la parte del cuerpo).\n\n身体 sirve también para la salud en general: 我身体很好 = estoy bien de salud.",
+      "focus": ["subject", "verb1"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "我头", "py": "wǒ tóu", "es": "(a mí) la cabeza" }, "verb1": { "zh": "疼", "py": "téng" } }, "end": "。", "es": "Me duele la cabeza.", "esOrder": [{ "text": "Me duele", "slot": "verb1" }, { "text": "la cabeza", "slot": "subject" }] },
+        { "slots": { "subject": { "zh": "他脚", "py": "tā jiǎo" }, "adverb": { "zh": "很", "py": "hěn" }, "verb1": { "zh": "疼", "py": "téng" } }, "end": "。", "es": "Le duele mucho el pie." },
+        { "slots": { "subject": { "zh": "我眼睛", "py": "wǒ yǎnjing" }, "adverb": { "zh": "有点儿", "py": "yǒudiǎnr" }, "verb1": { "zh": "疼", "py": "téng" } }, "end": "。", "es": "Me duelen un poco los ojos." },
+        { "slots": { "subject": { "zh": "她肚子", "py": "tā dùzi" }, "adverb": { "zh": "非常", "py": "fēicháng" }, "verb1": { "zh": "疼", "py": "téng" } }, "end": "。", "es": "Le duele muchísimo la barriga." },
+        { "slots": { "subject": { "zh": "我身体", "py": "wǒ shēntǐ" }, "adverb": { "zh": "很", "py": "hěn" }, "verb1": { "zh": "好", "py": "hǎo" } }, "end": "。", "es": "Estoy muy bien de salud." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "我腿", "py": "wǒ tuǐ" }, "adverb": { "zh": "不", "py": "bù" }, "verb1": { "zh": "疼", "py": "téng" } }, "end": "。", "es": "No me duele la pierna." },
+        { "slots": { "subject": { "zh": "他手", "py": "tā shǒu" }, "adverb": { "zh": "不太", "py": "bú tài" }, "verb1": { "zh": "疼", "py": "téng" } }, "end": "。", "es": "No le duele mucho la mano." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你哪儿", "py": "nǐ nǎr" }, "verb1": { "zh": "疼", "py": "téng" } }, "end": "？", "es": "¿Dónde te duele?" },
+        { "slots": { "subject": { "zh": "你头", "py": "nǐ tóu" }, "verb1": { "zh": "疼", "py": "téng" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿Te duele la cabeza?" }
+      ],
+      "mistakes": [
+        { "wrong": "疼我的头。", "right": "我头疼。", "why": "Primero la persona y la parte del cuerpo; 疼 va detrás, como un adjetivo." },
+        { "wrong": "我的头是疼。", "right": "我的头很疼。", "why": "疼 funciona como un adjetivo: sin 是." },
+        { "wrong": "我有头疼。", "right": "我头疼。", "why": "No se dice «tengo dolor de cabeza» con 有: basta con 头疼." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Después del partido de baloncesto",
+      "lines": [
+        { "speaker": "大卫", "zh": "雨果，你怎么了？", "py": "Yǔguǒ, nǐ zěnme le?", "es": "Hugo, ¿qué te pasa?" },
+        { "speaker": "雨果", "zh": "我脚疼，腿也有点儿疼。", "py": "Wǒ jiǎo téng, tuǐ yě yǒudiǎnr téng.", "es": "Me duele el pie, y la pierna también un poco." },
+        { "speaker": "大卫", "zh": "打篮球太累了！", "py": "Dǎ lánqiú tài lèi le!", "es": "¡Jugar al baloncesto cansa muchísimo!" },
+        { "speaker": "雨果", "zh": "对。你呢？你身体怎么样？", "py": "Duì. Nǐ ne? Nǐ shēntǐ zěnmeyàng?", "es": "Sí. ¿Y tú? ¿Cómo estás?" },
+        { "speaker": "大卫", "zh": "我手有点儿疼，头不疼。", "py": "Wǒ shǒu yǒudiǎnr téng, tóu bù téng.", "es": "Me duele un poco la mano; la cabeza, no." },
+        { "speaker": "雨果", "zh": "你看我的脸，很红吗？", "py": "Nǐ kàn wǒ de liǎn, hěn hóng ma?", "es": "Mírame la cara, ¿está muy roja?" },
+        { "speaker": "大卫", "zh": "很红！你眼睛也红了。你要多喝水。", "py": "Hěn hóng! Nǐ yǎnjing yě hóng le. Nǐ yào duō hē shuǐ.", "es": "¡Muy roja! Y se te han puesto rojos los ojos. Tienes que beber mucha agua." },
+        { "speaker": "雨果", "zh": "好，我们回宿舍休息吧。", "py": "Hǎo, wǒmen huí sùshè xiūxi ba.", "es": "Vale, volvamos a la residencia a descansar." }
+      ],
+      "notes": "你怎么了？ = «¿qué te pasa?»: la pregunta habitual cuando ves a alguien mal. 多喝水 (beber mucha agua) es el consejo chino para casi todo: verás termos con agua caliente en todas partes."
+    },
+    { "type": "exercises", "count": 14, "bank": ["u11", "g-hen-adj", "g-question-words"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "我肚子" }, "adverb": { "zh": "有点儿" }, "verb1": { "zh": "疼" } }, "end": "。", "es": "Me duele un poco la barriga." }, "distractors": ["是"] },
+        { "sentence": { "slots": { "subject": { "zh": "你哪儿" }, "verb1": { "zh": "疼" } }, "end": "？", "es": "¿Dónde te duele?" }, "distractors": ["吗"] },
+        { "sentence": { "slots": { "subject": { "zh": "他的头发" }, "adverb": { "zh": "很" }, "verb1": { "zh": "长" } }, "end": "。", "es": "Tiene el pelo muy largo." } },
+        { "sentence": { "slots": { "time0": { "zh": "今天下午" }, "subject": { "zh": "我们" }, "with": { "zh": "跟大卫一起" }, "verb1": { "zh": "去学校" }, "verb2": { "zh": "打" }, "object": { "zh": "篮球" }, "particle": { "zh": "吧" } }, "end": "！", "es": "¡Esta tarde vamos con David a la universidad a jugar al baloncesto!" } }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "我头疼。", "py": "Wǒ tóu téng.", "es": "Me duele la cabeza." },
+        { "zh": "你哪儿疼？", "py": "Nǐ nǎr téng?", "es": "¿Dónde te duele?" },
+        { "zh": "我脚有点儿疼。", "py": "Wǒ jiǎo yǒudiǎnr téng.", "es": "Me duele un poco el pie." },
+        { "zh": "我身体很好。", "py": "Wǒ shēntǐ hěn hǎo.", "es": "Estoy muy bien de salud." }
+      ],
+      "respond": [
+        { "q": { "zh": "你怎么了？", "py": "Nǐ zěnme le?", "es": "¿Qué te pasa?" }, "model": { "zh": "我肚子疼。", "py": "Wǒ dùzi téng.", "es": "Me duele la barriga." } },
+        { "q": { "zh": "你头疼吗？", "py": "Nǐ tóu téng ma?", "es": "¿Te duele la cabeza?" }, "model": { "zh": "不疼，我眼睛有点儿疼。", "py": "Bù téng, wǒ yǎnjing yǒudiǎnr téng.", "es": "No, me duelen un poco los ojos." } },
+        { "q": { "zh": "你身体怎么样？", "py": "Nǐ shēntǐ zěnmeyàng?", "es": "¿Qué tal de salud?" }, "model": { "zh": "我身体很好，谢谢！", "py": "Wǒ shēntǐ hěn hǎo, xièxie!", "es": "Muy bien, ¡gracias!" } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "David",
+      "text": "大卫是美国人。他很高，腿很长，脚也很大。他的头发是黄色的，眼睛是蓝色的，脸很小，嘴很大。今天下午大卫打了篮球，现在他手有点儿疼，脚也很疼。他不想吃饭，想回宿舍休息。",
+      "es": "David es estadounidense. Es muy alto, tiene las piernas muy largas y los pies también muy grandes. Tiene el pelo rubio y los ojos azules, la cara pequeña y la boca grande. Esta tarde ha jugado al baloncesto y ahora le duele un poco la mano, y el pie, mucho. No quiere comer: quiere volver a la residencia a descansar.",
+      "questions": [
+        { "q": "¿De qué color tiene el pelo David?", "options": ["黄色", "黑色", "红色"], "answer": 0 },
+        { "q": "¿Qué le duele mucho?", "options": ["脚", "头", "肚子"], "answer": 0 },
+        { "q": "¿Qué quiere hacer ahora?", "options": ["回宿舍休息", "吃饭", "打篮球"], "answer": 0 },
+        { "q": "¿Cómo son sus piernas?", "options": ["很长", "很短", "很小"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

@@ -1,0 +1,708 @@
+{
+  "id": "a2-u01-l3",
+  "title": "¿Has estado en la Gran Muralla? 过",
+  "zh": "你去过长城吗",
+  "goal": "Contar experiencias de la vida con V + 过 (我去过西安) y negarlas con 没 + V + 过.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    {
+      "hanzi": "过",
+      "pinyin": "guo",
+      "es": "(partícula: haber hecho alguna vez)",
+      "note": "Tono neutro detrás del verbo: 去过 qùguo."
+    },
+    {
+      "hanzi": "见过",
+      "pinyin": "jiàn guo",
+      "es": "haber visto; conocer (a alguien) ya"
+    },
+    {
+      "hanzi": "旅行",
+      "pinyin": "lǚxíng",
+      "es": "viajar; viaje"
+    },
+    {
+      "hanzi": "旅游",
+      "pinyin": "lǚyóu",
+      "es": "hacer turismo; turismo"
+    },
+    {
+      "hanzi": "旅客",
+      "pinyin": "lǚkè",
+      "es": "viajero, pasajero"
+    },
+    {
+      "hanzi": "游客",
+      "pinyin": "yóukè",
+      "es": "turista"
+    },
+    {
+      "hanzi": "长城",
+      "pinyin": "Chángchéng",
+      "es": "la Gran Muralla"
+    },
+    {
+      "hanzi": "首都",
+      "pinyin": "shǒudū",
+      "es": "capital (de un país)"
+    },
+    {
+      "hanzi": "省",
+      "pinyin": "shěng",
+      "es": "provincia"
+    },
+    {
+      "hanzi": "参观",
+      "pinyin": "cānguān",
+      "es": "visitar (un lugar: museo, escuela…)"
+    },
+    {
+      "hanzi": "照相",
+      "pinyin": "zhàoxiàng",
+      "es": "hacer fotos",
+      "note": "Separable: 照了很多相. Coloquial: 拍照."
+    },
+    {
+      "hanzi": "相机",
+      "pinyin": "xiàngjī",
+      "es": "cámara de fotos"
+    },
+    {
+      "hanzi": "景色",
+      "pinyin": "jǐngsè",
+      "es": "paisaje, vista"
+    }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        {
+          "zh": "我去过长城，没去过西安。",
+          "py": "Wǒ qùguo Chángchéng, méi qùguo Xī'ān.",
+          "es": "He estado en la Gran Muralla; en Xi'an no he estado."
+        },
+        {
+          "zh": "你吃过中国菜吗？",
+          "py": "Nǐ chīguo Zhōngguó cài ma?",
+          "es": "¿Has probado la comida china?"
+        },
+        {
+          "zh": "我没见过这么美的景色。",
+          "py": "Wǒ méi jiàn guo zhème měi de jǐngsè.",
+          "es": "Nunca había visto un paisaje tan bonito."
+        }
+      ]
+    },
+    {
+      "type": "vocab",
+      "title": "Viajes y turismo",
+      "words": [
+        "过",
+        "见过",
+        "旅行",
+        "旅游",
+        "旅客",
+        "游客",
+        "长城",
+        "首都",
+        "省",
+        "参观",
+        "照相",
+        "相机",
+        "景色"
+      ]
+    },
+    {
+      "type": "phonetics-drill",
+      "title": "El tono neutro de 过 y el 3.º tono en frases",
+      "markdown": "**过** detrás del verbo pierde su tono: **去过** *qùguo*, **吃过** *chīguo*, **见过** *jiànguo*. Se dice corto y flojo, pegado al verbo.\n\nY una frase con muchos terceros tonos: **我也想去** wǒ yě xiǎng qù. Cuando se juntan varios 3.º, todos menos el último se dicen **más rápido y subiendo** (como 2.º): *wó yé xiǎng qù*. Se escribe con el tono original, pero se dice así.\n\n**省 shěng** y **首都 shǒudū**: el 3.º delante de 1.º se queda **abajo** (medio tercer tono).",
+      "items": [
+        {
+          "audio": "去过",
+          "options": [
+            "qùguo",
+            "qùguò",
+            "qúguo"
+          ],
+          "answer": 0,
+          "explain": "过 neutro, sin tono."
+        },
+        {
+          "audio": "首都",
+          "options": [
+            "shǒudū",
+            "shǒudòu",
+            "sǒudū"
+          ],
+          "answer": 0,
+          "explain": "都 aquí se lee dū (capital), no dōu (todos)."
+        },
+        {
+          "audio": "长城",
+          "options": [
+            "Chángchéng",
+            "Zhǎngchéng",
+            "Chàngchéng"
+          ],
+          "answer": 0,
+          "explain": "长 = largo (cháng); zhǎng es «crecer»."
+        },
+        {
+          "audio": "旅游",
+          "options": [
+            "lǚyóu",
+            "lǔyóu",
+            "lǚyòu"
+          ],
+          "answer": 0,
+          "explain": "lǚ con labios redondos (ü), luego yóu subiendo."
+        },
+        {
+          "audio": "我也想去",
+          "prompt": "¿Qué pasa con los terceros tonos de 我也想?",
+          "options": [
+            "Los tres primeros suenan casi como 2.º tono",
+            "Los tres primeros bajan mucho",
+            "Todos con el mismo tono"
+          ],
+          "answer": 0,
+          "explain": "Cadena de terceros: solo el último (antes de 去) se queda bajo; los otros suben."
+        }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": [
+        "旅",
+        "游"
+      ],
+      "mnemonics": {
+        "旅": "方 (bandera) + gente marchando debajo: un grupo que viaja tras su estandarte → viajar.",
+        "游": "氵 (agua) + 方 + 子: un niño que se mueve como en el agua → nadar, pasear, hacer turismo (旅游)."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "V + 过: lo que has hecho alguna vez",
+      "markdown": "**过** detrás del verbo dice que algo **ha pasado alguna vez en tu vida** (experiencia), sin decir cuándo:\n\n- 我**去过**长城。 → *He estado en la Gran Muralla.* (alguna vez)\n- 我**吃过**饺子。 → *He comido jiaozi* (ya sé cómo son).\n\n**Negativa**: **没 + V + 过**: 我**没去过**西安。 (nunca he ido). No se dice ~~不去过~~.\n**Pregunta**: …过…吗？ o …过…没有？: 你去过长城吗？\n\nEn el esqueleto, 过 va **pegado al verbo**, como 了: hueco *verbo 1* (去过).\n\n**过 frente a 了**: 我去了长城 = fui (en un viaje concreto); 我去过长城 = he estado alguna vez (es una experiencia que tengo). Con 过 no hace falta decir cuándo. Con 是…的 contarías el detalle: 我是去年去的。\n\nCompara con el español: el chino no dice «nunca» ni «alguna vez»; ya lo dice 过.",
+      "focus": [
+        "verb1"
+      ],
+      "compare": true,
+      "sentences": [
+        {
+          "slots": {
+            "subject": {
+              "zh": "我",
+              "py": "wǒ"
+            },
+            "verb1": {
+              "zh": "去过",
+              "py": "qùguo"
+            },
+            "object": {
+              "zh": "长城",
+              "py": "Chángchéng"
+            }
+          },
+          "end": "。",
+          "es": "He estado en la Gran Muralla.",
+          "esOrder": [
+            {
+              "text": "He estado",
+              "slot": "verb1"
+            },
+            {
+              "text": "en la Gran Muralla",
+              "slot": "object"
+            }
+          ]
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "安娜",
+              "py": "Ānnà"
+            },
+            "verb1": {
+              "zh": "吃过",
+              "py": "chīguo"
+            },
+            "object": {
+              "zh": "饺子",
+              "py": "jiǎozi"
+            }
+          },
+          "end": "。",
+          "es": "Ana ha probado los jiaozi."
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "我们",
+              "py": "wǒmen"
+            },
+            "time": {
+              "zh": "去年",
+              "py": "qùnián"
+            },
+            "verb1": {
+              "zh": "参观过",
+              "py": "cān guān guo"
+            },
+            "object": {
+              "zh": "这个学校",
+              "py": "zhège xuéxiào"
+            }
+          },
+          "end": "。",
+          "es": "El año pasado visitamos esta universidad."
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "我",
+              "py": "wǒ"
+            },
+            "aux": {
+              "zh": "想",
+              "py": "xiǎng"
+            },
+            "verb1": {
+              "zh": "去首都",
+              "py": "qù shǒudū"
+            },
+            "verb2": {
+              "zh": "旅游",
+              "py": "lǚyóu"
+            }
+          },
+          "end": "。",
+          "es": "Quiero ir de turismo a la capital."
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "他",
+              "py": "tā"
+            },
+            "place": {
+              "zh": "在中国",
+              "py": "zài Zhōngguó"
+            },
+            "verb1": {
+              "zh": "坐过",
+              "py": "zuòguo"
+            },
+            "object": {
+              "zh": "高铁",
+              "py": "gāotiě"
+            }
+          },
+          "end": "。",
+          "es": "En China ha ido en tren de alta velocidad."
+        }
+      ],
+      "negative": [
+        {
+          "slots": {
+            "subject": {
+              "zh": "我",
+              "py": "wǒ"
+            },
+            "adverb": {
+              "zh": "没",
+              "py": "méi"
+            },
+            "verb1": {
+              "zh": "去过",
+              "py": "qùguo"
+            },
+            "object": {
+              "zh": "西安",
+              "py": "Xī'ān"
+            }
+          },
+          "end": "。",
+          "es": "No he estado nunca en Xi'an.",
+          "esOrder": [
+            {
+              "text": "(Yo) nunca",
+              "slot": "adverb"
+            },
+            {
+              "text": "he estado",
+              "slot": "verb1"
+            },
+            {
+              "text": "en Xi'an",
+              "slot": "object"
+            }
+          ]
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "小李",
+              "py": "Xiǎo Lǐ"
+            },
+            "adverb": {
+              "zh": "没",
+              "py": "méi"
+            },
+            "verb1": {
+              "zh": "见过",
+              "py": "jiàn guo"
+            },
+            "object": {
+              "zh": "长城",
+              "py": "Chángchéng"
+            }
+          },
+          "end": "。",
+          "es": "Xiao Li no ha visto nunca la Gran Muralla."
+        }
+      ],
+      "question": [
+        {
+          "slots": {
+            "subject": {
+              "zh": "你",
+              "py": "nǐ"
+            },
+            "verb1": {
+              "zh": "去过",
+              "py": "qùguo"
+            },
+            "object": {
+              "zh": "长城",
+              "py": "Chángchéng"
+            },
+            "particle": {
+              "zh": "吗",
+              "py": "ma"
+            }
+          },
+          "end": "？",
+          "es": "¿Has estado en la Gran Muralla?"
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "你",
+              "py": "nǐ"
+            },
+            "verb1": {
+              "zh": "见过",
+              "py": "jiàn guo"
+            },
+            "object": {
+              "zh": "我的朋友",
+              "py": "wǒde péngyou"
+            },
+            "particle": {
+              "zh": "没有",
+              "py": "méiyǒu"
+            }
+          },
+          "end": "？",
+          "es": "¿Has visto alguna vez a mi amigo?"
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "我不去过西安。",
+          "right": "我没去过西安。",
+          "why": "La experiencia se niega con 没 (+ V + 过), nunca con 不."
+        },
+        {
+          "wrong": "我去西安过。",
+          "right": "我去过西安。",
+          "why": "过 va pegado al verbo, delante del objeto."
+        },
+        {
+          "wrong": "我昨天去过长城。",
+          "right": "我昨天去长城了。",
+          "why": "Si dices cuándo pasó (昨天), cuentas un hecho: usa 了. 过 es para «alguna vez en la vida»."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Planes de turismo en la residencia",
+      "lines": [
+        {
+          "speaker": "小李",
+          "zh": "雨果，你去过北京吗？",
+          "py": "Yǔguǒ, nǐ qùguo Běijīng ma?",
+          "es": "Hugo, ¿has estado en Pekín?"
+        },
+        {
+          "speaker": "雨果",
+          "zh": "没去过。可是我很想去长城照相。",
+          "py": "Méi qùguo. Kěshì wǒ hěn xiǎng qù Chángchéng zhàoxiàng.",
+          "es": "No. Pero tengo muchas ganas de ir a hacer fotos a la Gran Muralla."
+        },
+        {
+          "speaker": "小李",
+          "zh": "我去过两次，景色非常美。",
+          "py": "Wǒ qùguo liǎng cì, jǐngsè fēicháng měi.",
+          "es": "Yo he ido dos veces; el paisaje es precioso."
+        },
+        {
+          "speaker": "雨果",
+          "zh": "游客多吗？",
+          "py": "Yóukè duō ma?",
+          "es": "¿Hay muchos turistas?"
+        },
+        {
+          "speaker": "小李",
+          "zh": "很多！十一的时候人太多了。",
+          "py": "Hěn duō! Shíyī de shíhou rén tài duō le.",
+          "es": "¡Muchísimos! En la Semana Dorada de octubre hay demasiada gente."
+        },
+        {
+          "speaker": "雨果",
+          "zh": "那我周末去。你去过西安吗？",
+          "py": "Nà wǒ zhōumò qù. Nǐ qùguo Xī'ān ma?",
+          "es": "Entonces iré un fin de semana. ¿Y has estado en Xi'an?"
+        },
+        {
+          "speaker": "小李",
+          "zh": "去过。我是外地人，我家离西安很近。",
+          "py": "Qùguo. Wǒ shì wàidì rén, wǒ jiā lí Xī'ān hěn jìn.",
+          "es": "Sí. No soy de aquí: mi casa está muy cerca de Xi'an."
+        },
+        {
+          "speaker": "雨果",
+          "zh": "你有相机吗？我想带一个好相机去旅行。",
+          "py": "Nǐ yǒu xiàngjī ma? Wǒ xiǎng dài yí ge hǎo xiàngjī qù lǚxíng.",
+          "es": "¿Tienes cámara? Quiero llevarme una buena cámara de viaje."
+        },
+        {
+          "speaker": "小李",
+          "zh": "有，你用我的吧。",
+          "py": "Yǒu, nǐ yòng wǒde ba.",
+          "es": "Sí, usa la mía."
+        }
+      ],
+      "notes": "十一 (shí-yī, «el 1 de octubre») es la Fiesta Nacional (国庆节): una semana de vacaciones en la que medio país viaja. Si puedes, evita la Gran Muralla esos días. En Pekín, los tramos más visitados son 八达岭 (Badaling) y 慕田峪 (Mutianyu)."
+    },
+    {
+      "type": "exercises",
+      "count": 16,
+      "bank": [
+        "g-le",
+        "g-bu-mei",
+        "g-question-words"
+      ]
+    },
+    {
+      "type": "sentence-builder",
+      "items": [
+        {
+          "sentence": {
+            "slots": {
+              "subject": {
+                "zh": "我"
+              },
+              "verb1": {
+                "zh": "去过"
+              },
+              "object": {
+                "zh": "长城"
+              }
+            },
+            "end": "。",
+            "es": "He estado en la Gran Muralla."
+          },
+          "distractors": [
+            "了",
+            "没"
+          ]
+        },
+        {
+          "sentence": {
+            "slots": {
+              "subject": {
+                "zh": "安娜"
+              },
+              "adverb": {
+                "zh": "没"
+              },
+              "verb1": {
+                "zh": "坐过"
+              },
+              "object": {
+                "zh": "高铁"
+              }
+            },
+            "end": "。",
+            "es": "Ana nunca ha ido en tren de alta velocidad."
+          },
+          "distractors": [
+            "不"
+          ]
+        },
+        {
+          "sentence": {
+            "slots": {
+              "subject": {
+                "zh": "你"
+              },
+              "verb1": {
+                "zh": "见过"
+              },
+              "object": {
+                "zh": "这个游客"
+              },
+              "particle": {
+                "zh": "吗"
+              }
+            },
+            "end": "？",
+            "es": "¿Has visto alguna vez a este turista?"
+          }
+        },
+        {
+          "sentence": {
+            "slots": {
+              "subject": {
+                "zh": "我"
+              },
+              "time": {
+                "zh": "明年"
+              },
+              "aux": {
+                "zh": "想"
+              },
+              "with": {
+                "zh": "跟朋友一起"
+              },
+              "verb1": {
+                "zh": "去首都"
+              },
+              "verb2": {
+                "zh": "旅游"
+              }
+            },
+            "end": "。",
+            "es": "El año que viene quiero ir de turismo a la capital con mis amigos."
+          }
+        }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        {
+          "zh": "我去过长城。",
+          "py": "Wǒ qùguo Chángchéng.",
+          "es": "He estado en la Gran Muralla."
+        },
+        {
+          "zh": "我没去过西安。",
+          "py": "Wǒ méi qùguo Xī'ān.",
+          "es": "No he estado nunca en Xi'an."
+        },
+        {
+          "zh": "你去过北京吗？",
+          "py": "Nǐ qùguo Běijīng ma?",
+          "es": "¿Has estado en Pekín?"
+        },
+        {
+          "zh": "那儿的景色非常美。",
+          "py": "Nàr de jǐngsè fēicháng měi.",
+          "es": "El paisaje de allí es precioso."
+        }
+      ],
+      "respond": [
+        {
+          "q": {
+            "zh": "你去过长城吗？",
+            "py": "Nǐ qùguo Chángchéng ma?",
+            "es": "¿Has estado en la Gran Muralla?"
+          },
+          "model": {
+            "zh": "没去过，我很想去。",
+            "py": "Méi qùguo, wǒ hěn xiǎng qù.",
+            "es": "No, pero tengo muchas ganas de ir."
+          }
+        },
+        {
+          "q": {
+            "zh": "你吃过饺子吗？",
+            "py": "Nǐ chīguo jiǎozi ma?",
+            "es": "¿Has comido alguna vez jiaozi?"
+          },
+          "model": {
+            "zh": "吃过，很好吃。",
+            "py": "Chīguo, hěn hǎochī.",
+            "es": "Sí, están muy buenos."
+          }
+        },
+        {
+          "q": {
+            "zh": "你在中国旅游过吗？",
+            "py": "Nǐ zài Zhōngguó lǚyóuguo ma?",
+            "es": "¿Has hecho turismo en China?"
+          },
+          "model": {
+            "zh": "旅游过，我去过北京。",
+            "py": "Lǚyóu guo, wǒ qùguo Běijīng.",
+            "es": "Sí, he estado en Pekín."
+          }
+        }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Lo que Hugo ha visto en China",
+      "text": "雨果来中国以后，去过很多地方。他去过首都北京，参观过北京大学，也去过长城。长城的景色非常美，游客也非常多。他在长城照了很多相，他的相机是从西班牙带来的。他也坐过高铁，高铁很快，旅客很多。可是他没去过西安，也没吃过西安的面。小李说西安的面很好吃。雨果想：明年我要去西安旅行！",
+      "es": "Desde que llegó a China, Hugo ha estado en muchos sitios. Ha estado en la capital, Pekín; ha visitado la Universidad de Pekín y también ha ido a la Gran Muralla. El paisaje de la Muralla es precioso y hay muchísimos turistas. Allí hizo muchas fotos; su cámara la trajo de España. También ha ido en tren de alta velocidad: es muy rápido y lleva a muchos viajeros. Pero no ha estado en Xi'an ni ha probado los fideos de Xi'an. Xiao Li dice que están buenísimos. Hugo piensa: «¡El año que viene voy de viaje a Xi'an!».",
+      "questions": [
+        {
+          "q": "¿Qué universidad ha visitado Hugo?",
+          "options": [
+            "北京大学",
+            "交通大学",
+            "西安大学"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "¿De dónde es su cámara?",
+          "options": [
+            "从西班牙带来的",
+            "在北京买的",
+            "小李的"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "¿Qué NO ha hecho Hugo?",
+          "options": [
+            "去西安",
+            "坐高铁",
+            "去长城"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "¿Cómo dirías «nunca he probado los fideos de Xi'an»?",
+          "options": [
+            "我没吃过西安的面。",
+            "我不吃过西安的面。",
+            "我吃过西安的面了。"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "type": "notes-growth"
+    }
+  ]
+}

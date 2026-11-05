@@ -1,0 +1,754 @@
+{
+  "id": "a2-u01-l5",
+  "title": "Repaso: cuéntame tu viaje",
+  "zh": "我的中国旅行",
+  "goal": "Combinar 是…的, 过 y 第一次 para contar un viaje completo y preguntar por el de otro.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    {
+      "hanzi": "出国",
+      "pinyin": "chūguó",
+      "es": "salir al extranjero"
+    },
+    {
+      "hanzi": "回国",
+      "pinyin": "huíguó",
+      "es": "volver a tu país"
+    },
+    {
+      "hanzi": "来自",
+      "pinyin": "láizì",
+      "es": "venir de, proceder de (formal)",
+      "note": "我来自西班牙 = soy de España (en presentaciones)."
+    },
+    {
+      "hanzi": "到处",
+      "pinyin": "dàochù",
+      "es": "por todas partes"
+    },
+    {
+      "hanzi": "机会",
+      "pinyin": "jīhuì",
+      "es": "oportunidad"
+    },
+    {
+      "hanzi": "国际",
+      "pinyin": "guójì",
+      "es": "internacional",
+      "note": "国际机场 = aeropuerto internacional."
+    },
+    {
+      "hanzi": "一路顺风",
+      "pinyin": "yílù shùnfēng",
+      "es": "¡buen viaje! (que el viento te sea favorable)"
+    },
+    {
+      "hanzi": "船",
+      "pinyin": "chuán",
+      "es": "barco",
+      "note": "坐船 = ir en barco."
+    }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        {
+          "zh": "我来自西班牙，这是我第一次出国。",
+          "py": "Wǒ láizì Xībānyá, zhè shì wǒ dì-yī cì chūguó.",
+          "es": "Soy de España y es la primera vez que salgo al extranjero."
+        },
+        {
+          "zh": "我是去年来的，到处都去过。",
+          "py": "Wǒ shì qùnián lái de, dàochù dōu qùguo.",
+          "es": "Vine el año pasado y he estado por todas partes."
+        },
+        {
+          "zh": "春节我回国，一路顺风！",
+          "py": "Chūnjié wǒ huíguó, yílù shùnfēng!",
+          "es": "En el Año Nuevo chino vuelvo a mi país: ¡buen viaje!"
+        }
+      ]
+    },
+    {
+      "type": "vocab",
+      "title": "Salir y volver",
+      "words": [
+        "出国",
+        "回国",
+        "来自",
+        "到处",
+        "机会",
+        "国际",
+        "一路顺风",
+        "船"
+      ]
+    },
+    {
+      "type": "phonetics-drill",
+      "title": "Ritmo de frase: grupos de dos y de tres",
+      "markdown": "Una frase china larga se dice en **grupos de sentido**, con una pausa mínima entre ellos y sin «comerse» los tonos:\n\n*我是去年九月 | 从马德里 | 坐飞机 | 来的。*\n\nCada grupo mantiene sus tonos, y el **的 final** cae corto y bajo. Ojo con:\n\n- **国际 guójì**: 2.º + 4.º (sube y cae).\n- **出国 / 回国**: *chūguó / huíguó*; 回 lleva *ui* = «uei».\n- **船 chuán**: ch + uan (como «chuan», en 2.º tono).",
+      "items": [
+        {
+          "audio": "国际",
+          "options": [
+            "guójì",
+            "guōjì",
+            "guójí"
+          ],
+          "answer": 0,
+          "explain": "2.º + 4.º."
+        },
+        {
+          "audio": "回国",
+          "options": [
+            "huíguó",
+            "huìguó",
+            "fúguó"
+          ],
+          "answer": 0,
+          "explain": "Dos segundos tonos: suben los dos."
+        },
+        {
+          "audio": "船",
+          "options": [
+            "chuán",
+            "chuǎn",
+            "zhuán"
+          ],
+          "answer": 0,
+          "explain": "ch con aire, segundo tono."
+        },
+        {
+          "audio": "一路顺风",
+          "options": [
+            "yílù shùnfēng",
+            "yīlù shùnfēng",
+            "yílù sùnfēng"
+          ],
+          "answer": 0,
+          "explain": "一 delante de 4.º → yí; sh en 顺."
+        },
+        {
+          "audio": "机会",
+          "options": [
+            "jīhuì",
+            "jīhuí",
+            "qīhuì"
+          ],
+          "answer": 0,
+          "explain": "j sin aire, 会 en 4.º."
+        }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": [
+        "船",
+        "际"
+      ],
+      "mnemonics": {
+        "船": "舟 (barca, dibujo de una barca) + 㕣: todo lo que lleva 舟 tiene que ver con barcos.",
+        "际": "阝 (montículo, frontera) + 示: el límite entre dos sitios → 国际, «entre países»."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "Toda la unidad junta: 是…的, 过, 第一次 y 次",
+      "markdown": "Repasa las tres herramientas del viaje:\n\n| Quieres decir… | Usa | Ejemplo |\n|---|---|---|\n| el **detalle** de algo pasado (cuándo, cómo, con quién) | **是 … 的** | 我是坐船来的。 |\n| una **experiencia** (alguna vez) | **V + 过** / **没 + V + 过** | 我去过长城。 |\n| la **primera vez** | **第一次 + V** | 我第一次出国。 |\n| **cuántas veces** | **V + número + 次** | 我去过两次。 |\n\nRecuerda la convención: 是 en adverbios (o dentro del tiempo), 的 en la partícula final, 过 pegado al verbo, y 两次 en el complemento.",
+      "focus": [
+        "adverb",
+        "verb1",
+        "complement"
+      ],
+      "compare": true,
+      "sentences": [
+        {
+          "slots": {
+            "subject": {
+              "zh": "我",
+              "py": "wǒ"
+            },
+            "time": {
+              "zh": "是去年",
+              "py": "shì qùnián"
+            },
+            "verb1": {
+              "zh": "来",
+              "py": "lái"
+            },
+            "particle": {
+              "zh": "的",
+              "py": "de"
+            }
+          },
+          "end": "。",
+          "es": "Vine el año pasado."
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "他",
+              "py": "tā"
+            },
+            "adverb": {
+              "zh": "是",
+              "py": "shì"
+            },
+            "verb1": {
+              "zh": "坐船",
+              "py": "zuò chuán"
+            },
+            "verb2": {
+              "zh": "去",
+              "py": "qù"
+            },
+            "object": {
+              "zh": "海边",
+              "py": "hǎibiān"
+            },
+            "particle": {
+              "zh": "的",
+              "py": "de"
+            }
+          },
+          "end": "。",
+          "es": "Fue a la costa en barco.",
+          "esOrder": [
+            {
+              "text": "Fue",
+              "slot": "verb2"
+            },
+            {
+              "text": "a la costa",
+              "slot": "object"
+            },
+            {
+              "text": "en barco",
+              "slot": "verb1"
+            }
+          ]
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "我",
+              "py": "wǒ"
+            },
+            "adverb": {
+              "zh": "到处都",
+              "py": "dàochù dōu"
+            },
+            "verb1": {
+              "zh": "去过",
+              "py": "qùguo"
+            }
+          },
+          "end": "。",
+          "es": "He estado por todas partes."
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "安娜",
+              "py": "Ānnà"
+            },
+            "time": {
+              "zh": "第一次",
+              "py": "dì-yī cì"
+            },
+            "verb1": {
+              "zh": "出国",
+              "py": "chūguó"
+            }
+          },
+          "end": "。",
+          "es": "Es la primera vez que Ana sale al extranjero."
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "我们",
+              "py": "wǒmen"
+            },
+            "verb1": {
+              "zh": "去过",
+              "py": "qùguo"
+            },
+            "object": {
+              "zh": "国际机场",
+              "py": "guójì jīchǎng"
+            },
+            "complement": {
+              "zh": "两次",
+              "py": "liǎng cì"
+            }
+          },
+          "end": "。",
+          "es": "Hemos ido dos veces al aeropuerto internacional."
+        }
+      ],
+      "negative": [
+        {
+          "slots": {
+            "subject": {
+              "zh": "我",
+              "py": "wǒ"
+            },
+            "adverb": {
+              "zh": "没",
+              "py": "méi"
+            },
+            "verb1": {
+              "zh": "坐过",
+              "py": "zuòguo"
+            },
+            "object": {
+              "zh": "船",
+              "py": "chuán"
+            }
+          },
+          "end": "。",
+          "es": "Nunca he ido en barco."
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "她",
+              "py": "tā"
+            },
+            "adverb": {
+              "zh": "不是",
+              "py": "bú shì"
+            },
+            "verb1": {
+              "zh": "坐飞机",
+              "py": "zuò fēijī"
+            },
+            "verb2": {
+              "zh": "回国",
+              "py": "huíguó"
+            },
+            "particle": {
+              "zh": "的",
+              "py": "de"
+            }
+          },
+          "end": "。",
+          "es": "No volvió a su país en avión."
+        }
+      ],
+      "question": [
+        {
+          "slots": {
+            "subject": {
+              "zh": "你",
+              "py": "nǐ"
+            },
+            "time": {
+              "zh": "是什么时候",
+              "py": "shì shénme shíhou"
+            },
+            "verb1": {
+              "zh": "回国",
+              "py": "huíguó"
+            },
+            "particle": {
+              "zh": "的",
+              "py": "de"
+            }
+          },
+          "end": "？",
+          "es": "¿Cuándo volviste a tu país?"
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "你",
+              "py": "nǐ"
+            },
+            "verb1": {
+              "zh": "来自",
+              "py": "láizì"
+            },
+            "object": {
+              "zh": "哪个国家",
+              "py": "nǎge guójiā"
+            }
+          },
+          "end": "？",
+          "es": "¿De qué país eres?"
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "我是去过长城的。",
+          "right": "我去过长城。",
+          "why": "过 ya dice «alguna vez»: no hace falta 是…的."
+        },
+        {
+          "wrong": "我来自在西班牙。",
+          "right": "我来自西班牙。",
+          "why": "来自 ya lleva «de» dentro: el país va directamente detrás."
+        },
+        {
+          "wrong": "我回国了两次。",
+          "right": "我回过两次国。 / 我回了两次国。",
+          "why": "回国 es separable: las veces van entre 回 y 国."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "En el aeropuerto internacional: Ana se va a casa",
+      "lines": [
+        {
+          "speaker": "雨果",
+          "zh": "安娜，你是几点的飞机？",
+          "py": "Ānnà, nǐ shì jǐ diǎn de fēijī?",
+          "es": "Ana, ¿a qué hora es tu avión?"
+        },
+        {
+          "speaker": "安娜",
+          "zh": "十点。这是我第一次一个人回国。",
+          "py": "Shí diǎn. Zhè shì wǒ dì-yī cì yí ge rén huíguó.",
+          "es": "A las diez. Es la primera vez que vuelvo sola a casa."
+        },
+        {
+          "speaker": "雨果",
+          "zh": "你的行李都带了吗？",
+          "py": "Nǐ de xíngli dōu dài le ma?",
+          "es": "¿Llevas todo el equipaje?"
+        },
+        {
+          "speaker": "安娜",
+          "zh": "都带了。我给妈妈带了很多中国茶。",
+          "py": "Dōu dài le. Wǒ gěi māma dài le hěn duō Zhōngguó chá.",
+          "es": "Sí, todo. Le llevo mucho té chino a mi madre."
+        },
+        {
+          "speaker": "雨果",
+          "zh": "这一年你去过很多地方吧？",
+          "py": "Zhè yì nián nǐ qùguo hěn duō dìfang ba?",
+          "es": "Este año has estado en muchos sitios, ¿no?"
+        },
+        {
+          "speaker": "安娜",
+          "zh": "对，我到处都去过：北京、西安、海南，我还坐过船。",
+          "py": "Duì, wǒ dàochù dōu qùguo: Běijīng, Xī'ān, Hǎinán, wǒ hái zuòguo chuán.",
+          "es": "Sí, he estado por todas partes: Pekín, Xi'an, Hainan… y hasta he ido en barco."
+        },
+        {
+          "speaker": "雨果",
+          "zh": "我还没有那么多机会。我只去过一次北京。",
+          "py": "Wǒ hái méiyǒu nàme duō jīhuì. Wǒ zhǐ qùguo yī cì Běijīng.",
+          "es": "Yo todavía no he tenido tantas oportunidades. Solo he ido una vez a Pekín."
+        },
+        {
+          "speaker": "安娜",
+          "zh": "你是去年来的，还有很多机会！",
+          "py": "Nǐ shì qùnián lái de, hái yǒu hěn duō jīhuì!",
+          "es": "Viniste el año pasado: ¡todavía tienes muchas oportunidades!"
+        },
+        {
+          "speaker": "雨果",
+          "zh": "好。到了给我发微信！一路顺风！",
+          "py": "Hǎo. Dào le gěi wǒ fā Wēixìn! Yílù shùnfēng!",
+          "es": "Vale. ¡Mándame un WeChat cuando llegues! ¡Buen viaje!"
+        },
+        {
+          "speaker": "安娜",
+          "zh": "谢谢！再见！",
+          "py": "Xièxie! Zàijiàn!",
+          "es": "¡Gracias! ¡Adiós!"
+        }
+      ],
+      "notes": "一路顺风 se dice al que se va de viaje; a quien vuela, algunos prefieren 一路平安, porque «viento a favor» no es lo ideal para un avión (es un chiste habitual). 到了给我发微信 es la despedida típica: «escríbeme cuando llegues»."
+    },
+    {
+      "type": "exercises",
+      "count": 20,
+      "bank": [
+        "g-shi-de",
+        "g-le",
+        "g-measure-words",
+        "g-bu-mei"
+      ]
+    },
+    {
+      "type": "sentence-builder",
+      "title": "Construye la frase completa",
+      "items": [
+        {
+          "sentence": {
+            "slots": {
+              "subject": {
+                "zh": "我"
+              },
+              "time": {
+                "zh": "是去年九月"
+              },
+              "with": {
+                "zh": "跟安娜一起"
+              },
+              "verb1": {
+                "zh": "坐飞机"
+              },
+              "verb2": {
+                "zh": "来"
+              },
+              "object": {
+                "zh": "上海"
+              },
+              "particle": {
+                "zh": "的"
+              }
+            },
+            "end": "。",
+            "es": "Vine a Shanghái en avión con Ana en septiembre del año pasado."
+          },
+          "distractors": [
+            "了"
+          ]
+        },
+        {
+          "sentence": {
+            "slots": {
+              "subject": {
+                "zh": "这"
+              },
+              "verb1": {
+                "zh": "是"
+              },
+              "object": {
+                "zh": "我第一次一个人出国"
+              }
+            },
+            "end": "。",
+            "es": "Es la primera vez que salgo solo al extranjero."
+          }
+        },
+        {
+          "sentence": {
+            "slots": {
+              "subject": {
+                "zh": "小李"
+              },
+              "adverb": {
+                "zh": "没"
+              },
+              "verb1": {
+                "zh": "去过"
+              },
+              "object": {
+                "zh": "西班牙"
+              },
+              "particle": {
+                "zh": "吧"
+              }
+            },
+            "end": "？",
+            "es": "Xiao Li no ha estado nunca en España, ¿no?"
+          },
+          "distractors": [
+            "不"
+          ]
+        },
+        {
+          "sentence": {
+            "slots": {
+              "subject": {
+                "zh": "我"
+              },
+              "time": {
+                "zh": "明年"
+              },
+              "adverb": {
+                "zh": "还"
+              },
+              "aux": {
+                "zh": "想"
+              },
+              "with": {
+                "zh": "跟朋友们一起"
+              },
+              "verb1": {
+                "zh": "去东北"
+              },
+              "verb2": {
+                "zh": "旅游"
+              },
+              "complement": {
+                "zh": "一次"
+              }
+            },
+            "end": "。",
+            "es": "El año que viene quiero ir otra vez de turismo al nordeste con mis amigos."
+          }
+        },
+        {
+          "sentence": {
+            "slots": {
+              "subject": {
+                "zh": "你们"
+              },
+              "time": {
+                "zh": "是上个星期"
+              },
+              "verb1": {
+                "zh": "从国际机场"
+              },
+              "verb2": {
+                "zh": "出发"
+              },
+              "particle": {
+                "zh": "的吗"
+              }
+            },
+            "end": "？",
+            "es": "¿Salisteis del aeropuerto internacional la semana pasada?"
+          }
+        },
+        {
+          "sentence": {
+            "slots": {
+              "subject": {
+                "zh": "她"
+              },
+              "time": {
+                "zh": "是今天下午"
+              },
+              "with": {
+                "zh": "跟她妈妈一起"
+              },
+              "verb1": {
+                "zh": "坐出租车"
+              },
+              "verb2": {
+                "zh": "去"
+              },
+              "object": {
+                "zh": "酒店"
+              },
+              "particle": {
+                "zh": "的"
+              }
+            },
+            "end": "。",
+            "es": "Esta tarde ha ido al hotel en taxi con su madre."
+          }
+        }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        {
+          "zh": "我来自西班牙。",
+          "py": "Wǒ láizì Xībānyá.",
+          "es": "Soy de España."
+        },
+        {
+          "zh": "这是我第一次出国。",
+          "py": "Zhè shì wǒ dì-yī cì chūguó.",
+          "es": "Es la primera vez que salgo al extranjero."
+        },
+        {
+          "zh": "我到处都去过。",
+          "py": "Wǒ dàochù dōu qùguo.",
+          "es": "He estado por todas partes."
+        },
+        {
+          "zh": "到了给我发微信！一路顺风！",
+          "py": "Dào le gěi wǒ fā Wēixìn! Yílù shùnfēng!",
+          "es": "¡Mándame un WeChat cuando llegues! ¡Buen viaje!"
+        }
+      ],
+      "respond": [
+        {
+          "q": {
+            "zh": "你是什么时候来中国的？",
+            "py": "Nǐ shì shénme shíhou lái Zhōngguó de?",
+            "es": "¿Cuándo viniste a China?"
+          },
+          "model": {
+            "zh": "我是去年九月来的。",
+            "py": "Wǒ shì qùnián jiǔyuè lái de.",
+            "es": "Vine en septiembre del año pasado."
+          }
+        },
+        {
+          "q": {
+            "zh": "你坐过船吗？",
+            "py": "Nǐ zuòguo chuán ma?",
+            "es": "¿Has ido alguna vez en barco?"
+          },
+          "model": {
+            "zh": "坐过一次，在海边。",
+            "py": "Zuòguo yí cì, zài hǎibiān.",
+            "es": "Una vez, en la costa."
+          }
+        },
+        {
+          "q": {
+            "zh": "这是你第一次出国吗？",
+            "py": "Zhè shì nǐ dì-yī cì chūguó ma?",
+            "es": "¿Es la primera vez que sales al extranjero?"
+          },
+          "model": {
+            "zh": "不是，我去过两次英国。",
+            "py": "Bú shì, wǒ qùguo liǎng cì Yīngguó.",
+            "es": "No, he estado dos veces en Inglaterra."
+          }
+        }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Ana vuelve a casa",
+      "text": "安娜来自西班牙，她是去年三月来中国的。这是她第一次出国。在中国的一年里，她到处旅游：她去过首都北京，参观过长城；也去过南方的海边，还坐过船。她说中国人很好，很多人请她吃饭。今天她要回国，雨果是坐地铁来国际机场送她的。安娜带了很多行李，有三个行李箱！雨果说：“你还会有机会来中国。一路顺风！”安娜说：“谢谢！我会再来！”",
+      "es": "Ana es de España; vino a China en marzo del año pasado. Era la primera vez que salía al extranjero. En su año en China ha viajado por todas partes: ha estado en la capital, Pekín, y ha visitado la Gran Muralla; también ha ido a la costa del sur e incluso ha montado en barco. Dice que los chinos son muy amables y que mucha gente la ha invitado a comer. Hoy vuelve a su país; Hugo ha venido en metro al aeropuerto internacional a despedirla. Ana lleva mucho equipaje: ¡tres maletas! Hugo le dice: «Tendrás más oportunidades de volver a China. ¡Buen viaje!». Ana dice: «¡Gracias! ¡Volveré!».",
+      "questions": [
+        {
+          "q": "¿Cuándo vino Ana a China?",
+          "options": [
+            "去年三月",
+            "去年九月",
+            "上个月"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "¿Es la primera vez que Ana sale al extranjero?",
+          "options": [
+            "Sí",
+            "No"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "¿Cómo ha ido Hugo al aeropuerto?",
+          "options": [
+            "坐地铁",
+            "坐出租车",
+            "坐船"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "¿Cuántas maletas lleva Ana?",
+          "options": [
+            "三个",
+            "两个",
+            "一个"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "type": "notes-growth"
+    }
+  ]
+}

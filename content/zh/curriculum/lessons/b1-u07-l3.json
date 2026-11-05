@@ -1,0 +1,139 @@
+{
+  "id": "b1-u07-l3",
+  "title": "Sonriendo, charlando: 着 ampliado",
+  "zh": "爷爷笑着说",
+  "goal": "Decir cómo se hace una acción mientras pasa otra (笑着说), que algo está en curso (正吃着饭呢), que algo ocurre «sin darte cuenta» (走着走着) y dar órdenes con 着 (拿着).",
+  "minutes": 16,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "农村", "pinyin": "nóngcūn", "es": "campo, zona rural", "note": "Lo contrario de 城市." },
+    { "hanzi": "农民", "pinyin": "nóngmín", "es": "campesino, agricultor" },
+    { "hanzi": "农业", "pinyin": "nóngyè", "es": "agricultura" },
+    { "hanzi": "种子", "pinyin": "zhǒngzi", "es": "semilla", "note": "种 zhǒng = clase, semilla; 种 zhòng = sembrar, cultivar (种地, 种菜)." },
+    { "hanzi": "生长", "pinyin": "shēngzhǎng", "es": "crecer (plantas, seres vivos)" },
+    { "hanzi": "生产", "pinyin": "shēngchǎn", "es": "producir; producción" },
+    { "hanzi": "故乡", "pinyin": "gùxiāng", "es": "tierra natal (más literario)" },
+    { "hanzi": "家乡", "pinyin": "jiāxiāng", "es": "pueblo o ciudad natal", "note": "你的家乡在哪儿？ = ¿De dónde eres (de qué pueblo)?" },
+    { "hanzi": "老百姓", "pinyin": "lǎobǎixìng", "es": "la gente corriente, el pueblo llano", "note": "Lit. «los cien apellidos»." },
+    { "hanzi": "亲人", "pinyin": "qīnrén", "es": "familiares (de sangre), seres queridos" },
+    { "hanzi": "亲", "pinyin": "qīn", "es": "propio, de sangre; en persona", "note": "亲手 = con sus propias manos; 亲眼 = con sus propios ojos." },
+    { "hanzi": "机器", "pinyin": "jīqì", "es": "máquina" },
+    { "hanzi": "活", "pinyin": "huó", "es": "vivir, estar vivo; trabajo (manual)", "note": "干活 = trabajar (con las manos); 活到九十岁 = vivir hasta los noventa." }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "爷爷笑着说：“欢迎你！”", "py": "Yéye xiào zhe shuō: “Huānyíng nǐ!”", "es": "El abuelo dijo sonriendo: «¡Bienvenido!»." },
+        { "zh": "他们正吃着饭呢。", "py": "Tāmen zhèng chī zhe fàn ne.", "es": "Están comiendo (justo ahora)." },
+        { "zh": "我们聊着聊着，天就黑了。", "py": "Wǒmen liáo zhe liáo zhe, tiān jiù hēi le.", "es": "Charlando, charlando, se nos hizo de noche." }
+      ]
+    },
+    { "type": "vocab", "title": "El pueblo de Xiao Li", "words": ["农村", "农民", "农业", "种子", "生长", "生产", "故乡", "家乡", "老百姓", "亲人", "亲", "机器", "活"] },
+    {
+      "type": "phonetics-drill",
+      "title": "着 neutro, 着 con tono y el ritmo de 走着走着",
+      "markdown": "**着** tiene tres lecturas:\n\n- **zhe** (neutro), detrás del verbo: 笑着, 坐着, 吃着. Corto y flojo.\n- **zháo** (2.º), en 睡着 *shuìzháo* (quedarse dormido) y 着急 *zháojí*.\n- **zhuó** (2.º) en palabras escritas como 着装; no la necesitas aún.\n\n**V着V着** se dice como dos golpes iguales, con la voz suspendida al final, porque viene «algo»: *zǒuzhe zǒuzhe…*, y la segunda parte cae: *…tiān jiù hēi le.* Con verbo de tercer tono (走), delante del neutro se queda en **medio tercer tono** (baja y no sube).\n\n**老百姓 lǎobǎixìng**: 3 + 3 → el primero sube (*láobǎixìng*). **种子 zhǒngzi** (semilla) frente a **种地 zhòng dì** (cultivar la tierra).",
+      "items": [
+        { "audio": "笑着说", "options": ["xiào zhe shuō", "xiào zháo shuō", "xiào zhuó shuō"], "answer": 0, "explain": "着 de acompañamiento: neutro." },
+        { "audio": "睡着了", "options": ["shuìzháo le", "shuì zhe le", "shuìzhuó le"], "answer": 0, "explain": "睡着 = quedarse dormido: zháo." },
+        { "audio": "走着走着，天就黑了。", "prompt": "¿Cómo suena la primera parte?", "options": ["Dos golpes iguales y la voz queda en suspenso", "Cae del todo, como un final", "Sube como una pregunta"], "answer": 0 },
+        { "audio": "老百姓", "options": ["lǎobǎixìng", "lǎobáixìng", "lāobǎixīng"], "answer": 0, "explain": "Se escribe con dos terceros; al hablar, el primero sube." },
+        { "audio": "种子", "options": ["zhǒngzi", "zhòngzi", "zǒngzi"], "answer": 0, "explain": "Tercer tono + neutro; zh retrofleja." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["农", "活"],
+      "mnemonics": {
+        "农": "En su forma antigua, una herramienta de labrar entre plantas: trabajar el campo. 农民, 农村, 农业.",
+        "活": "氵 (agua) + 舌 (lengua): el agua que corre y «habla», viva; y una lengua húmeda es la de alguien vivo → vivir, estar vivo."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "着 ampliado: 笑着说, 正吃着饭呢, 走着走着",
+      "markdown": "En A2 viste 着 de **estado** (门开着). Hoy, cuatro usos más:\n\n1. **V1着 + V2** = hacer V2 **de esa manera** (acción que acompaña): 笑**着**说 «decir sonriendo», 坐**着**看电视 «ver la tele sentado», 听**着**音乐跑步 «correr escuchando música». La acción principal es la **segunda**.\n2. **正 + V着 + O + 呢** = acción en curso, muy de lengua hablada: 他们正吃**着**饭呢 (≈ 正在吃饭). 着 va **pegado al verbo**, antes del objeto.\n3. **V着V着，…** = «de tanto V, (de pronto) pasa algo»: 走着走着，我们就到了. La segunda parte suele llevar **就** o **突然**.\n4. **Órdenes**: 拿**着**! «¡Tenlo! / ¡Quédatelo!», 你坐**着**吧 «quédate sentado», 等**着** «espera ahí».\n\n**Convención del esqueleto**: V1着 (o V着V着) en *Verbo 1*, la acción principal en *Verbo 2*. Con V着V着, lo que pasa después va en **una segunda fila** (就 en *Adverbios*).",
+      "focus": ["verb1", "verb2"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "爷爷", "py": "yéye" }, "verb1": { "zh": "笑着", "py": "xiào zhe" }, "verb2": { "zh": "说", "py": "shuō" } }, "end": "。", "es": "El abuelo dijo sonriendo.", "esOrder": [{ "text": "El abuelo", "slot": "subject" }, { "text": "dijo", "slot": "verb2" }, { "text": "sonriendo", "slot": "verb1" }] },
+        { "slots": { "subject": { "zh": "奶奶", "py": "nǎinai" }, "time": { "zh": "每天晚上", "py": "měi tiān wǎnshang" }, "adverb": { "zh": "都", "py": "dōu" }, "verb1": { "zh": "坐着", "py": "zuò zhe" }, "verb2": { "zh": "看", "py": "kàn" }, "object": { "zh": "电视", "py": "diànshì" } }, "end": "。", "es": "La abuela ve la tele sentada todas las noches." },
+        { "slots": { "subject": { "zh": "小李", "py": "Xiǎo Lǐ" }, "adverb": { "zh": "常常", "py": "chángcháng" }, "verb1": { "zh": "听着音乐", "py": "tīng zhe yīnyuè" }, "verb2": { "zh": "做饭", "py": "zuò fàn" } }, "end": "。", "es": "Xiao Li suele cocinar escuchando música." },
+        { "slots": { "subject": { "zh": "他们", "py": "tāmen" }, "adverb": { "zh": "正", "py": "zhèng" }, "verb1": { "zh": "吃着", "py": "chī zhe" }, "object": { "zh": "饭", "py": "fàn" }, "particle": { "zh": "呢", "py": "ne" } }, "end": "。", "es": "Están comiendo justo ahora." },
+        { "slots": { "subject": { "zh": "我们", "py": "wǒmen" }, "verb1": { "zh": "聊着聊着", "py": "liáo zhe liáo zhe" } }, "end": "，", "es": "Charlando, charlando… (1.ª parte)" },
+        { "slots": { "subject": { "zh": "天", "py": "tiān" }, "adverb": { "zh": "就", "py": "jiù" }, "verb1": { "zh": "黑", "py": "hēi" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "…se hizo de noche. (2.ª parte)" },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "拿着", "py": "ná zhe" }, "particle": { "zh": "吧", "py": "ba" } }, "end": "！", "es": "¡Quédatelo! (lit. «tenlo cogido»)" }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "adverb": { "zh": "别", "py": "bié" }, "verb1": { "zh": "站着", "py": "zhàn zhe" }, "verb2": { "zh": "吃饭", "py": "chī fàn" } }, "end": "，", "es": "No comas de pie… (1.ª parte)" },
+        { "slots": { "verb1": { "zh": "坐下来", "py": "zuò xialai" }, "verb2": { "zh": "吃", "py": "chī" }, "particle": { "zh": "吧", "py": "ba" } }, "end": "。", "es": "…siéntate a comer. (2.ª parte)" }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "adverb": { "zh": "常常", "py": "chángcháng" }, "verb1": { "zh": "听着音乐", "py": "tīng zhe yīnyuè" }, "verb2": { "zh": "学习", "py": "xuéxí" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿Sueles estudiar escuchando música?" }
+      ],
+      "mistakes": [
+        { "wrong": "爷爷笑说。", "right": "爷爷笑着说。", "why": "Para «decir sonriendo», el primer verbo necesita 着: sin él, son dos acciones sueltas." },
+        { "wrong": "爷爷说着笑。", "right": "爷爷笑着说。", "why": "La acción que acompaña (sonreír) va primero con 着; la principal (decir), detrás." },
+        { "wrong": "他们正吃饭着呢。", "right": "他们正吃着饭呢。", "why": "着 va pegado al verbo, antes del objeto." },
+        { "wrong": "我们走着走着，到了。", "right": "我们走着走着，就到了。", "why": "La segunda parte de V着V着 casi siempre lleva 就 (o 突然): «y sin darnos cuenta…»." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "En el pueblo de Xiao Li",
+      "lines": [
+        { "speaker": "小李", "zh": "雨果，我们到了！这就是我的家乡。", "py": "Yǔguǒ, wǒmen dào le! Zhè jiù shì wǒ de jiāxiāng.", "es": "Hugo, ¡ya hemos llegado! Este es mi pueblo." },
+        { "speaker": "奶奶", "zh": "小李回来了！快进来坐。", "py": "Xiǎo Lǐ huílai le! Kuài jìnlai zuò.", "es": "¡Ha vuelto Xiao Li! Pasad, sentaos." },
+        { "speaker": "雨果", "zh": "奶奶好！我是小李的同学雨果。", "py": "Nǎinai hǎo! Wǒ shì Xiǎo Lǐ de tóngxué Yǔguǒ.", "es": "¡Hola, abuela! Soy Hugo, compañero de Xiao Li." },
+        { "speaker": "奶奶", "zh": "欢迎欢迎！你爷爷在外面干活呢，马上回来。", "py": "Huānyíng huānyíng! Nǐ yéye zài wàimian gàn huó ne, mǎshàng huílai.", "es": "¡Bienvenido! El abuelo está trabajando fuera; ahora mismo vuelve." },
+        { "speaker": "小李", "zh": "奶奶，您别站着，坐着跟我们聊天吧。", "py": "Nǎinai, nín bié zhàn zhe, zuò zhe gēn wǒmen liáotiān ba.", "es": "Abuela, no esté de pie: siéntese y charle con nosotros." },
+        { "speaker": "雨果", "zh": "这里的空气真好！农村跟城市很不一样。", "py": "Zhèlǐ de kōngqì zhēn hǎo! Nóngcūn gēn chéngshì hěn bù yíyàng.", "es": "¡Qué aire tan limpio! El campo es muy distinto de la ciudad." },
+        { "speaker": "爷爷", "zh": "你就是雨果吧？来，这是我亲手种的苹果，你拿着！", "py": "Nǐ jiù shì Yǔguǒ ba? Lái, zhè shì wǒ qīnshǒu zhòng de píngguǒ, nǐ ná zhe!", "es": "Tú eres Hugo, ¿verdad? Toma, son manzanas que he cultivado yo mismo: ¡quédatelas!" },
+        { "speaker": "雨果", "zh": "谢谢爷爷！您种了多少年地了？", "py": "Xièxie yéye! Nín zhòng le duōshao nián dì le?", "es": "¡Gracias, abuelo! ¿Cuántos años lleva cultivando la tierra?" },
+        { "speaker": "爷爷", "zh": "五十多年了。从前我们农民生产的东西不多，现在农业用上机器，好多了。", "py": "Wǔshí duō nián le. Cóngqián wǒmen nóngmín shēngchǎn de dōngxi bù duō, xiànzài nóngyè yòngshang jīqì, hǎo duō le.", "es": "Más de cincuenta años. Antes los campesinos producíamos poco; ahora que la agricultura usa máquinas, estamos mucho mejor." },
+        { "speaker": "奶奶", "zh": "你们正吃着饭呢，别光说话，多吃点儿！", "py": "Nǐmen zhèng chī zhe fàn ne, bié guāng shuōhuà, duō chī diǎnr!", "es": "Que estáis comiendo: no habléis tanto y comed más." },
+        { "speaker": "雨果", "zh": "奶奶做的菜太好吃了！", "py": "Nǎinai zuò de cài tài hǎochī le!", "es": "¡La comida de la abuela está buenísima!" },
+        { "speaker": "小李", "zh": "我们聊着聊着，天都黑了。今天就住在这儿吧。", "py": "Wǒmen liáo zhe liáo zhe, tiān dōu hēi le. Jīntiān jiù zhù zài zhèr ba.", "es": "Charlando, charlando, ya se ha hecho de noche. Hoy nos quedamos a dormir aquí." }
+      ],
+      "notes": "En China es muy normal que los abuelos del campo reciban a los amigos de sus nietos con comida y regalos de su propia cosecha: rechazarlo queda feo, por eso el abuelo insiste con 你拿着！ Fíjate en 用上机器 «empezar a usar máquinas»: el 上 de inicio lo verás en la lección 4. 别光说话 = «no os limitéis a hablar» (光 = solo)."
+    },
+    { "type": "exercises", "count": 17, "bank": ["g-word-order", "g-le", "g-zai"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "爷爷" }, "verb1": { "zh": "笑着" }, "verb2": { "zh": "说" } }, "end": "。", "es": "El abuelo dijo sonriendo." }, "distractors": ["了"] },
+        { "sentence": { "slots": { "subject": { "zh": "他们" }, "adverb": { "zh": "正" }, "verb1": { "zh": "吃着" }, "object": { "zh": "饭" }, "particle": { "zh": "呢" } }, "end": "。", "es": "Están comiendo justo ahora." }, "distractors": ["着"] },
+        { "sentence": { "slots": { "subject": { "zh": "我们" }, "verb1": { "zh": "走着走着" } }, "end": "，", "es": "Andando, andando… (1.ª parte)" } },
+        { "sentence": { "slots": { "adverb": { "zh": "就" }, "verb1": { "zh": "到" }, "object": { "zh": "小李的家乡" }, "particle": { "zh": "了" } }, "end": "。", "es": "…llegamos al pueblo de Xiao Li. (2.ª parte)" } },
+        { "sentence": { "slots": { "time0": { "zh": "放假的时候" }, "subject": { "zh": "小李的爷爷" }, "time": { "zh": "每天" }, "adverb": { "zh": "都" }, "place": { "zh": "在门口" }, "verb1": { "zh": "坐着" }, "verb2": { "zh": "等" }, "object": { "zh": "他的亲人" } }, "end": "。", "es": "En vacaciones, el abuelo de Xiao Li espera todos los días sentado en la puerta a su familia." } }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "爷爷笑着说：“欢迎你！”", "py": "Yéye xiào zhe shuō: “Huānyíng nǐ!”", "es": "El abuelo dijo sonriendo: «¡Bienvenido!»." },
+        { "zh": "这是我亲手种的苹果，你拿着！", "py": "Zhè shì wǒ qīnshǒu zhòng de píngguǒ, nǐ ná zhe!", "es": "Son manzanas que he cultivado yo mismo: ¡quédatelas!" },
+        { "zh": "我们聊着聊着，天就黑了。", "py": "Wǒmen liáo zhe liáo zhe, tiān jiù hēi le.", "es": "Charlando, charlando, se hizo de noche." },
+        { "zh": "他们正吃着饭呢。", "py": "Tāmen zhèng chī zhe fàn ne.", "es": "Están comiendo justo ahora." }
+      ],
+      "respond": [
+        { "q": { "zh": "你喜欢听着音乐学习吗？", "py": "Nǐ xǐhuan tīng zhe yīnyuè xuéxí ma?", "es": "¿Te gusta estudiar escuchando música?" }, "model": { "zh": "不喜欢。我喜欢听着音乐跑步，学习的时候要安静。", "py": "Bù xǐhuan. Wǒ xǐhuan tīng zhe yīnyuè pǎobù, xuéxí de shíhou yào ānjìng.", "es": "No. Me gusta correr escuchando música; para estudiar necesito silencio." } },
+        { "q": { "zh": "你的家乡在农村还是在城市？", "py": "Nǐ de jiāxiāng zài nóngcūn háishi zài chéngshì?", "es": "¿Tu pueblo natal está en el campo o en la ciudad?" }, "model": { "zh": "我的家乡在城市，可是我的爷爷奶奶住在农村。", "py": "Wǒ de jiāxiāng zài chéngshì, kěshì wǒ de yéye nǎinai zhù zài nóngcūn.", "es": "Mi ciudad natal es una ciudad, pero mis abuelos viven en el campo." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "La tierra natal de Xiao Li",
+      "text": "小李的故乡在一个小农村，离上海有三个小时。他的爷爷奶奶都是农民，种了五十多年地了。爷爷说，从前农业很不发达，农民生产的东西不多，老百姓的生活很不容易。现在不一样了，种地用上了机器，种子也比以前好，菜和水果都生长得很快。放假的时候，小李带着雨果回家乡看亲人。奶奶笑着说：“你们来了，我太高兴了！”爷爷拿着几个大苹果走进来，对雨果说：“这是我亲手种的，你拿着！”晚上，大家坐着吃饭，一边吃一边聊。他们聊着聊着，天就黑了。爷爷已经八十岁了，可是身体很好，每天还干活。他说：“我要活到一百岁！”",
+      "es": "La tierra natal de Xiao Li es un pueblecito a tres horas de Shanghái. Sus abuelos son campesinos y llevan más de cincuenta años cultivando la tierra. El abuelo dice que antes la agricultura estaba muy poco desarrollada, los campesinos producían poco y la vida de la gente corriente era muy dura. Ahora es distinto: para cultivar se usan máquinas, las semillas son mejores que antes y las verduras y la fruta crecen muy deprisa. En vacaciones, Xiao Li se llevó a Hugo a su pueblo a ver a la familia. La abuela dijo sonriendo: «¡Qué alegría que hayáis venido!». El abuelo entró con unas manzanas grandes y le dijo a Hugo: «Las he cultivado yo mismo: ¡quédatelas!». Por la noche cenaron todos sentados, comiendo y charlando a la vez. Charlando, charlando, se hizo de noche. El abuelo ya tiene ochenta años, pero está muy bien de salud y todavía trabaja cada día. Dice: «¡Voy a vivir hasta los cien!».",
+      "questions": [
+        { "q": "¿Cuánto tiempo llevan los abuelos cultivando la tierra?", "options": ["五十多年", "八十年", "三年"], "answer": 0 },
+        { "q": "¿Qué ha cambiado en el pueblo?", "options": ["Se cultivan con máquinas y las semillas son mejores", "Ya nadie cultiva la tierra", "Los abuelos se han ido a la ciudad"], "answer": 0 },
+        { "q": "¿Cómo habló la abuela?", "options": ["笑着说", "哭着说", "坐着说"], "answer": 0 },
+        { "q": "¿Qué quiere el abuelo?", "options": ["Vivir hasta los cien años", "Mudarse a Shanghái", "Dejar de trabajar"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

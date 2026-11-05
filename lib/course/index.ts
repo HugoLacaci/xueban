@@ -22,8 +22,21 @@ export function unitById(id: string): Unit | undefined {
   return getActivePack().curriculum.unitById(id);
 }
 
-export function lessonById(lessonId: string): { unit: Unit; lesson: Lesson; index: number } | undefined {
+export function lessonById(
+  lessonId: string,
+): { unit: Unit; lesson: Lesson; index: number } | undefined {
   return getActivePack().curriculum.lessonById(lessonId);
+}
+
+/** Asegura que los pasos de la lección están cargados (el temario v2 los trae bajo demanda). */
+export async function ensureLesson(lessonId: string): Promise<void> {
+  await getActivePack().curriculum.hydrate?.(lessonId);
+}
+
+/** Igual para todas las lecciones de una unidad (checkpoint, ficha resumen). */
+export async function ensureUnit(unitId: string): Promise<void> {
+  const u = unitById(unitId);
+  if (u) await Promise.all(u.lessons.map((l) => ensureLesson(l.id)));
 }
 
 export function nextLesson(lessonId: string): { unit: Unit; lesson: Lesson } | undefined {
@@ -84,6 +97,20 @@ export function stepLabel(step: LessonStep): string {
       return "Errores típicos";
     case "module":
       return step.title ?? step.id;
+    case "objective":
+      return "Objetivo";
+    case "phonetics-drill":
+      return "Pronunciación";
+    case "char-of-day":
+      return "Carácter del día";
+    case "skeleton":
+      return step.title;
+    case "sentence-builder":
+      return step.title ?? "Construye la frase";
+    case "listen-speak":
+      return "Escuchar y hablar";
+    case "notes-growth":
+      return "Tus apuntes";
   }
 }
 

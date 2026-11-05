@@ -1,0 +1,179 @@
+{
+  "unitId": "a1-u05",
+  "scenarios": [
+    {
+      "id": "a1-u05-birthday",
+      "title": "¿Cuándo es tu cumpleaños?",
+      "zh": "你的生日是几月几号？",
+      "level": 1,
+      "setting": "Cafetería de la universidad, miércoles 4 de noviembre. Wang Ming cumple años dentro de dos días y quiere celebrarlo. Tú (la app) eres 王明.",
+      "role": "amigo",
+      "roleZh": "王明",
+      "voice": "m",
+      "goals": ["Decir la fecha de hoy", "Felicitarle el cumpleaños", "Decir tu cumpleaños", "Quedar un día para celebrarlo"],
+      "vocab": ["今天", "号", "月", "星期", "生日", "生日快乐", "今年", "多大", "岁", "星期六", "星期天"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "雨果，今天几号？", "py": "Yǔguǒ, jīntiān jǐ hào?", "es": "Hugo, ¿a qué día estamos?" },
+          "user": [
+            { "zh": "今天十一月四号。", "py": "Jīntiān shíyīyuè sì hào.", "es": "Hoy es 4 de noviembre.", "keywords": ["十一月", "四号"], "next": "n2", "goal": 0 },
+            { "zh": "今天星期三。", "py": "Jīntiān xīngqīsān.", "es": "Hoy es miércoles.", "keywords": ["星期三"], "next": "n1b" }
+          ],
+          "hint": "几号 pregunta el día del mes. Responde con mes + 月 + día + 号."
+        },
+        "n1b": {
+          "npc": { "zh": "星期三，几号？", "py": "Xīngqīsān, jǐ hào?", "es": "Miércoles, pero ¿qué día del mes?" },
+          "user": [
+            { "zh": "十一月四号。", "py": "Shíyīyuè sì hào.", "es": "4 de noviembre.", "keywords": ["十一月", "四号"], "next": "n2", "goal": 0 },
+            { "zh": "对不起，我不知道。", "py": "Duìbuqǐ, wǒ bù zhīdào.", "es": "Perdona, no lo sé.", "keywords": ["不知道", "对不起"], "next": "n2" }
+          ],
+          "hint": "星期 es el día de la semana; 号 es el día del mes: 十一月四号."
+        },
+        "n2": {
+          "npc": { "zh": "十一月四号……我的生日是十一月六号！", "py": "Shíyīyuè sì hào… wǒ de shēngrì shì shíyīyuè liù hào!", "es": "4 de noviembre… ¡Mi cumpleaños es el 6!" },
+          "user": [
+            { "zh": "六号？是星期五！生日快乐！", "py": "Liù hào? Shì xīngqīwǔ! Shēngrì kuàilè!", "es": "¿El 6? ¡Es viernes! ¡Feliz cumpleaños!", "keywords": ["生日快乐", "快乐"], "next": "n3", "goal": 1 },
+            { "zh": "你今年多大？", "py": "Nǐ jīnnián duō dà?", "es": "¿Cuántos años cumples?", "keywords": ["多大", "几岁"], "next": "n2b" }
+          ],
+          "hint": "Felicita con 生日快乐 o pregúntale la edad con 多大."
+        },
+        "n2b": {
+          "npc": { "zh": "我今年二十岁。你呢？", "py": "Wǒ jīnnián èrshí suì. Nǐ ne?", "es": "Este año cumplo veinte. ¿Y tú?" },
+          "user": [
+            { "zh": "我二十六岁。", "py": "Wǒ èrshíliù suì.", "es": "Tengo veintiséis.", "keywords": ["二十六", "岁"], "next": "n3" },
+            { "zh": "二十岁！生日快乐！", "py": "Èrshí suì! Shēngrì kuàilè!", "es": "¡Veinte! ¡Feliz cumpleaños!", "keywords": ["生日快乐", "快乐"], "next": "n3", "goal": 1 }
+          ],
+          "hint": "Di tu edad (número + 岁) o felicítale: 生日快乐."
+        },
+        "n3": {
+          "npc": { "zh": "谢谢！你的生日呢？是几月几号？", "py": "Xièxie! Nǐ de shēngrì ne? Shì jǐ yuè jǐ hào?", "es": "¡Gracias! ¿Y tu cumpleaños? ¿Qué día es?" },
+          "user": [
+            { "zh": "我的生日是五月三号。", "py": "Wǒ de shēngrì shì wǔyuè sān hào.", "es": "Mi cumpleaños es el 3 de mayo.", "keywords": ["五月", "三号"], "next": "n4", "goal": 2 },
+            { "zh": "我的生日是七月十五号。", "py": "Wǒ de shēngrì shì qīyuè shíwǔ hào.", "es": "Mi cumpleaños es el 15 de julio.", "keywords": ["七月", "十五号"], "next": "n4", "goal": 2 }
+          ],
+          "hint": "De grande a pequeño: mes + 月 + día + 号."
+        },
+        "n4": {
+          "npc": { "zh": "好！星期六我们去我家，好吗？", "py": "Hǎo! Xīngqīliù wǒmen qù wǒ jiā, hǎo ma?", "es": "¡Bien! El sábado vamos a mi casa, ¿vale?" },
+          "user": [
+            { "zh": "好！星期六见！", "py": "Hǎo! Xīngqīliù jiàn!", "es": "¡Vale! ¡Hasta el sábado!", "keywords": ["星期六见"], "next": "end1", "goal": 3 },
+            { "zh": "星期六我去西安，星期天呢？", "py": "Xīngqīliù wǒ qù Xī'ān, xīngqītiān ne?", "es": "El sábado voy a Xi'an, ¿y el domingo?", "keywords": ["星期天", "星期日"], "next": "n4b" },
+            { "zh": "对不起，星期六我不去。", "py": "Duìbuqǐ, xīngqīliù wǒ bú qù.", "es": "Lo siento, el sábado no puedo ir.", "keywords": ["不去"], "next": "end2" }
+          ],
+          "hint": "Acepta con 星期六见, propón otro día con 呢 o discúlpate."
+        },
+        "n4b": {
+          "npc": { "zh": "星期天也好！星期天是八号。", "py": "Xīngqītiān yě hǎo! Xīngqītiān shì bā hào.", "es": "¡El domingo también está bien! El domingo es día 8." },
+          "user": [
+            { "zh": "好，十一月八号星期天见！", "py": "Hǎo, shíyīyuè bā hào xīngqītiān jiàn!", "es": "¡Vale, hasta el domingo 8 de noviembre!", "keywords": ["八号", "星期天见"], "next": "end1", "goal": 3 },
+            { "zh": "好，星期天见！", "py": "Hǎo, xīngqītiān jiàn!", "es": "¡Vale, hasta el domingo!", "keywords": ["星期天见"], "next": "end1", "goal": 3 }
+          ],
+          "hint": "Confirma la fecha: mes, día y día de la semana, en ese orden."
+        },
+        "end1": {
+          "npc": { "zh": "好！再见！", "py": "Hǎo! Zàijiàn!", "es": "¡Genial! ¡Adiós!" },
+          "end": true,
+          "feedback": "Fecha de hoy, cumpleaños y cita cerrada. Recuerda: 号 para el día del mes, 星期 para el de la semana, el orden de grande a pequeño (十一月八号星期天) y 生日快乐 para felicitar."
+        },
+        "end2": {
+          "npc": { "zh": "没关系。再见！", "py": "Méi guānxi. Zàijiàn!", "es": "No pasa nada. ¡Adiós!" },
+          "end": true,
+          "feedback": "Has dicho la fecha y tu cumpleaños, pero no habéis quedado. Si no puedes un día, propón otro: 星期天呢？"
+        }
+      }
+    },
+    {
+      "id": "a1-u05-holidays",
+      "title": "Planes para el Año Nuevo chino",
+      "zh": "春节你去哪儿？",
+      "level": 1,
+      "setting": "Biblioteca de la universidad, noviembre de 2026. Anna quiere organizar un viaje para las vacaciones del Año Nuevo chino. Tú (la app) eres 安娜.",
+      "role": "compañera",
+      "roleZh": "安娜",
+      "voice": "f",
+      "goals": ["Decir o preguntar la fecha de una fiesta", "Decir qué día de la semana es", "Decir adónde vas y cuándo", "Cerrar el plan (juntos o la próxima vez)"],
+      "vocab": ["放假", "春节", "国庆节", "明年", "二月", "几月几号", "星期几", "第一次", "下次", "下个月"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "雨果，我们哪天放假？", "py": "Yǔguǒ, wǒmen nǎ tiān fàngjià?", "es": "Hugo, ¿qué día empiezan nuestras vacaciones?" },
+          "user": [
+            { "zh": "春节放假。", "py": "Chūnjié fàngjià.", "es": "En el Año Nuevo chino.", "keywords": ["春节"], "next": "n2" },
+            { "zh": "我不知道。国庆节呢？", "py": "Wǒ bù zhīdào. Guóqìngjié ne?", "es": "No lo sé. ¿Y la Fiesta Nacional?", "keywords": ["国庆节", "不知道"], "next": "n1b" }
+          ],
+          "hint": "Las vacaciones largas de invierno son en 春节."
+        },
+        "n1b": {
+          "npc": { "zh": "国庆节是十月一号。今天是十一月四号，下次放假是春节！", "py": "Guóqìngjié shì shíyuè yī hào. Jīntiān shì shíyīyuè sì hào, xià cì fàngjià shì Chūnjié!", "es": "La Fiesta Nacional es el 1 de octubre. Hoy es 4 de noviembre: ¡las próximas vacaciones son en el Año Nuevo chino!" },
+          "user": [
+            { "zh": "春节是几月几号？", "py": "Chūnjié shì jǐ yuè jǐ hào?", "es": "¿Qué día es el Año Nuevo chino?", "keywords": ["几月几号", "几号"], "next": "n2b", "goal": 0 },
+            { "zh": "好，春节放假。", "py": "Hǎo, Chūnjié fàngjià.", "es": "Vale, en el Año Nuevo chino.", "keywords": ["春节"], "next": "n2" }
+          ],
+          "hint": "Pregunta la fecha con 几月几号."
+        },
+        "n2": {
+          "npc": { "zh": "对！明年的春节是二月六号。", "py": "Duì! Míngnián de Chūnjié shì èryuè liù hào.", "es": "¡Eso! El del año que viene es el 6 de febrero." },
+          "user": [
+            { "zh": "二月六号是星期几？", "py": "Èryuè liù hào shì xīngqī jǐ?", "es": "¿Qué día de la semana es el 6 de febrero?", "keywords": ["星期几"], "next": "n2c", "goal": 0 },
+            { "zh": "二月六号是星期六。", "py": "Èryuè liù hào shì xīngqīliù.", "es": "El 6 de febrero es sábado.", "keywords": ["星期六"], "next": "n3", "goal": 1 }
+          ],
+          "hint": "Pregunta (星期几) o di el día de la semana: es sábado."
+        },
+        "n2b": {
+          "npc": { "zh": "明年的春节是二月六号。", "py": "Míngnián de Chūnjié shì èryuè liù hào.", "es": "El del año que viene es el 6 de febrero." },
+          "user": [
+            { "zh": "二月六号是星期六！", "py": "Èryuè liù hào shì xīngqīliù!", "es": "¡El 6 de febrero es sábado!", "keywords": ["星期六"], "next": "n3", "goal": 1 },
+            { "zh": "二月六号是星期几？", "py": "Èryuè liù hào shì xīngqī jǐ?", "es": "¿Qué día de la semana es?", "keywords": ["星期几"], "next": "n2c" }
+          ],
+          "hint": "El 6 de febrero de 2027 es sábado (星期六)."
+        },
+        "n2c": {
+          "npc": { "zh": "是星期六。", "py": "Shì xīngqīliù.", "es": "Es sábado." },
+          "user": [
+            { "zh": "星期六，好！", "py": "Xīngqīliù, hǎo!", "es": "Sábado, ¡bien!", "keywords": ["星期六"], "next": "n3", "goal": 1 }
+          ],
+          "hint": "Repite el día: 星期六."
+        },
+        "n3": {
+          "npc": { "zh": "春节你去哪儿？", "py": "Chūnjié nǐ qù nǎr?", "es": "¿Adónde vas en el Año Nuevo chino?" },
+          "user": [
+            { "zh": "我明年二月去北京。", "py": "Wǒ míngnián èryuè qù Běijīng.", "es": "En febrero del año que viene voy a Pekín.", "keywords": ["去北京", "北京"], "next": "n4", "goal": 2 },
+            { "zh": "我去西安。", "py": "Wǒ qù Xī'ān.", "es": "Voy a Xi'an.", "keywords": ["西安"], "next": "n4", "goal": 2 },
+            { "zh": "我去西班牙看家人。", "py": "Wǒ qù Xībānyá kàn jiārén.", "es": "Voy a España a ver a mi familia.", "keywords": ["西班牙"], "next": "n4b", "goal": 2 }
+          ],
+          "hint": "Sujeto + tiempo + 去 + lugar: 我明年二月去北京."
+        },
+        "n4": {
+          "npc": { "zh": "这是你第一次去吗？", "py": "Zhè shì nǐ dì-yī cì qù ma?", "es": "¿Es la primera vez que vas?" },
+          "user": [
+            { "zh": "对，这是第一次。", "py": "Duì, zhè shì dì-yī cì.", "es": "Sí, es la primera vez.", "keywords": ["第一次"], "next": "n5" },
+            { "zh": "不是，这是第二次。上次是去年。", "py": "Bú shì, zhè shì dì-èr cì. Shàng cì shì qùnián.", "es": "No, es la segunda. La anterior fue el año pasado.", "keywords": ["第二次", "上次"], "next": "n5" }
+          ],
+          "hint": "第一次 = la primera vez; 第二次 = la segunda; 上次 = la anterior."
+        },
+        "n4b": {
+          "npc": { "zh": "西班牙！你下个月也去吗？", "py": "Xībānyá! Nǐ xià ge yuè yě qù ma?", "es": "¡España! ¿También vas el mes que viene?" },
+          "user": [
+            { "zh": "不去，我明年二月去。", "py": "Bú qù, wǒ míngnián èryuè qù.", "es": "No, voy en febrero del año que viene.", "keywords": ["明年二月", "二月"], "next": "n5" },
+            { "zh": "对，我下个月也去。", "py": "Duì, wǒ xià ge yuè yě qù.", "es": "Sí, el mes que viene también voy.", "keywords": ["下个月"], "next": "n5" }
+          ],
+          "hint": "El tiempo va delante del verbo: 我明年二月去."
+        },
+        "n5": {
+          "npc": { "zh": "我也去！我们一起去，好吗？", "py": "Wǒ yě qù! Wǒmen yìqǐ qù, hǎo ma?", "es": "¡Yo también voy! ¿Vamos juntos?" },
+          "user": [
+            { "zh": "好！我们二月六号一起去！", "py": "Hǎo! Wǒmen èryuè liù hào yìqǐ qù!", "es": "¡Vale! ¡Vamos juntos el 6 de febrero!", "keywords": ["一起", "六号"], "next": "end1", "goal": 3 },
+            { "zh": "对不起，下次我们一起去。", "py": "Duìbuqǐ, xià cì wǒmen yìqǐ qù.", "es": "Lo siento, la próxima vez vamos juntos.", "keywords": ["下次"], "next": "end1", "goal": 3 }
+          ],
+          "hint": "Acepta con la fecha o propón 下次 (la próxima vez)."
+        },
+        "end1": {
+          "npc": { "zh": "好！新年好！", "py": "Hǎo! Xīnnián hǎo!", "es": "¡Genial! ¡Feliz Año Nuevo!" },
+          "end": true,
+          "feedback": "Has hablado de fiestas (春节, 国庆节), fechas con 星期几 y viajes con el tiempo delante del verbo (我明年二月去北京). Recuerda que el 春节 cambia de fecha cada año."
+        }
+      }
+    }
+  ]
+}

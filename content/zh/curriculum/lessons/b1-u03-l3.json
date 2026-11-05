@@ -1,0 +1,138 @@
+{
+  "id": "b1-u03-l3",
+  "title": "¿Llegamos a tiempo? 来得及 / 来不及, 写得完 / 写不完",
+  "zh": "还来得及",
+  "goal": "Decir si da tiempo o no (来得及 / 来不及) y si puedes terminar algo (写得完 / 做不完) al organizar un trabajo de clase.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "报告", "pinyin": "bàogào", "es": "informe, trabajo escrito; informar", "note": "写报告 = hacer un trabajo/informe; 调查报告 = informe de una encuesta." },
+    { "hanzi": "写作", "pinyin": "xiězuò", "es": "escritura, redacción (como actividad)", "note": "写作课 = clase de redacción." },
+    { "hanzi": "文章", "pinyin": "wénzhāng", "es": "artículo, texto, redacción", "note": "Clasificador 篇: 一篇文章." },
+    { "hanzi": "修改", "pinyin": "xiūgǎi", "es": "corregir, modificar, revisar (un texto)" },
+    { "hanzi": "补充", "pinyin": "bǔchōng", "es": "completar, añadir (lo que falta)" },
+    { "hanzi": "结束", "pinyin": "jiéshù", "es": "terminar, acabar(se)", "note": "课结束了 = la clase ha terminado. Normalmente sin objeto." },
+    { "hanzi": "期", "pinyin": "qī", "es": "periodo, fase; número (de una publicación)", "note": "学期, 星期, 假期; 第一期 = la primera fase / el primer número." },
+    { "hanzi": "计算", "pinyin": "jìsuàn", "es": "calcular, contar", "note": "计算机 = ordenador (formal)." },
+    { "hanzi": "总结", "pinyin": "zǒngjié", "es": "resumen, conclusiones; resumir" },
+    { "hanzi": "专题", "pinyin": "zhuāntí", "es": "tema monográfico, tema especial" },
+    { "hanzi": "调查", "pinyin": "diàochá", "es": "encuesta, investigación; investigar", "note": "Aquí 调 se lee diào." },
+    { "hanzi": "分组", "pinyin": "fēnzǔ", "es": "dividir(se) en grupos", "note": "组 = grupo: 我们是一组." },
+    { "hanzi": "正式", "pinyin": "zhèngshì", "es": "formal, oficial" },
+    { "hanzi": "形式", "pinyin": "xíngshì", "es": "forma, formato" }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "现在走还来得及。", "py": "Xiànzài zǒu hái lái de jí.", "es": "Si salimos ahora, todavía llegamos a tiempo." },
+        { "zh": "这个报告我一个星期写不完。", "py": "Zhège bàogào wǒ yí ge xīngqī xiě bu wán.", "es": "Este trabajo no me da tiempo a terminarlo en una semana." },
+        { "zh": "我来不及吃早饭了。", "py": "Wǒ lái bu jí chī zǎofàn le.", "es": "Ya no me da tiempo a desayunar." }
+      ]
+    },
+    { "type": "vocab", "title": "El trabajo en grupo", "words": ["报告", "写作", "文章", "修改", "补充", "结束", "期", "计算", "总结", "专题", "调查", "分组", "正式", "形式"] },
+    {
+      "type": "phonetics-drill",
+      "title": "来不及: un neutro entre dos segundos tonos",
+      "markdown": "**来不及 lái bu jí** y **来得及 lái de jí**: dos segundos tonos (suben) con una sílaba débil en medio. Que no se te «coma» el final: *jí* tiene que subir.\n\nEn la exclamación **来不及了！** el peso cae en 及 y 了 sale cortísimo. En la pregunta **还来得及吗？** el énfasis va en **还** si dudas: *¿todavía da tiempo?*\n\n**写得完 xiě de wán**: 写 es tercer tono y delante de un neutro se queda **abajo** (medio tercer tono).\n\nOjo con **调**: en 调查 se lee **diào**; con otro significado («ajustar») se lee *tiáo*.",
+      "items": [
+        { "audio": "来不及", "options": ["lái bu jí", "lài bu jí", "lái bù jǐ"], "answer": 0, "explain": "Segundo + neutro + segundo." },
+        { "audio": "来得及", "options": ["lái de jí", "lái dé jí", "lái de jì"], "answer": 0 },
+        { "audio": "写得完", "prompt": "¿Cómo suena 写?", "options": ["Medio tercer tono: baja y se queda abajo", "Segundo tono: sube", "Tercer tono completo: baja y sube"], "answer": 0 },
+        { "audio": "调查", "options": ["diàochá", "tiáochá", "diàochà"], "answer": 0, "explain": "调 = diào en 调查 («investigar»)." },
+        { "audio": "还来得及吗？", "prompt": "Si dudas de verdad, ¿qué palabra se refuerza?", "options": ["还 (todavía)", "吗", "得"], "answer": 0 }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["及", "改"],
+      "mnemonics": {
+        "及": "Una mano que alcanza a una persona por detrás: llegar a tiempo, alcanzar. 来得及 = llegar a tiempo.",
+        "改": "己 (uno mismo) + 攵 (una mano con un palo, golpear): darse un golpe para corregirse → cambiar, corregir (修改, 改作业)."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "Tiempo y capacidad: 来得及, 写得完, 做不完",
+      "markdown": "Dos tipos de potencial muy útiles cuando vas justo de tiempo:\n\n- **来得及 / 来不及**: da tiempo / no da tiempo. Pueden ir **solos** (来不及了！) o con **otro verbo detrás**: 来不及**吃早饭**.\n- **V得完 / V不完** (resultado 完, «acabar»): 写得完 = puedo terminar de escribirlo; 做不完 = no consigo terminarlo (hay demasiado o hay poco tiempo).\n\nEl plazo va **delante** del verbo, en *Tiempo*: 一个星期写不完, 今天做得完.\n\n**En el esqueleto**: 来 en *Verbo 1* y 得及 / 不及 en *Complemento*; con un verbo detrás (来不及吃早饭), el bloque 来不及 entero va en *Verbo 1* y el otro verbo en *Verbo 2*.\n\n**¿能 o potencial?** 我不能写完 suena a «no tengo permiso». Si es por tiempo o cantidad, potencial: 我写不完.",
+      "focus": ["complement"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "我们", "py": "wǒmen" }, "adverb": { "zh": "还", "py": "hái" }, "verb1": { "zh": "来", "py": "lái" }, "complement": { "zh": "得及", "py": "de jí" } }, "end": "。", "es": "Todavía llegamos a tiempo." },
+        { "slots": { "subject": { "zh": "这个报告我", "py": "zhège bàogào wǒ" }, "time": { "zh": "今天", "py": "jīntiān" }, "verb1": { "zh": "写", "py": "xiě" }, "complement": { "zh": "得完", "py": "de wán" } }, "end": "。", "es": "Este trabajo puedo terminarlo hoy.", "esOrder": [{ "text": "Este trabajo", "slot": "subject" }, { "text": "puedo terminarlo", "slot": "complement" }, { "text": "hoy", "slot": "time" }] },
+        { "slots": { "subject": { "zh": "这篇文章我", "py": "zhè piān wénzhāng wǒ" }, "time": { "zh": "明天以前", "py": "míngtiān yǐqián" }, "verb1": { "zh": "改", "py": "gǎi" }, "complement": { "zh": "得完", "py": "de wán" } }, "end": "。", "es": "Este texto puedo acabar de corregirlo antes de mañana." },
+        { "slots": { "subject": { "zh": "安娜", "py": "Ānnà" }, "time": { "zh": "一个星期", "py": "yí ge xīngqī" }, "verb1": { "zh": "写得完", "py": "xiě de wán" }, "object": { "zh": "一篇调查报告", "py": "yì piān diàochá bàogào" } }, "end": "。", "es": "Ana es capaz de terminar un informe de encuesta en una semana." },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "time": { "zh": "今天早上", "py": "jīntiān zǎoshang" }, "verb1": { "zh": "来不及", "py": "lái bu jí" }, "verb2": { "zh": "吃", "py": "chī" }, "object": { "zh": "早饭", "py": "zǎofàn" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Esta mañana no me ha dado tiempo a desayunar." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "我们", "py": "wǒmen" }, "adverb": { "zh": "已经", "py": "yǐjīng" }, "verb1": { "zh": "来", "py": "lái" }, "complement": { "zh": "不及", "py": "bu jí" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Ya no nos da tiempo." },
+        { "slots": { "subject": { "zh": "这么多作业我", "py": "zhème duō zuòyè wǒ" }, "time": { "zh": "今天", "py": "jīntiān" }, "verb1": { "zh": "做", "py": "zuò" }, "complement": { "zh": "不完", "py": "bu wán" } }, "end": "。", "es": "Tantos deberes no me da tiempo a acabarlos hoy." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "现在去", "py": "xiànzài qù" }, "adverb": { "zh": "还", "py": "hái" }, "verb1": { "zh": "来", "py": "lái" }, "complement": { "zh": "得及", "py": "de jí" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "Si vamos ahora, ¿todavía llegamos?" },
+        { "slots": { "subject": { "zh": "这个报告你们", "py": "zhège bàogào nǐmen" }, "time": { "zh": "星期五以前", "py": "xīngqīwǔ yǐqián" }, "verb1": { "zh": "写", "py": "xiě" }, "complement": { "zh": "得完写不完", "py": "de wán xiě bu wán" } }, "end": "？", "es": "¿Podéis terminar el trabajo antes del viernes o no?" }
+      ],
+      "mistakes": [
+        { "wrong": "我们不来得及了。", "right": "我们来不及了。", "why": "来得及 / 来不及 funcionan como un bloque: 不 va en medio, no delante." },
+        { "wrong": "我不能写完这个报告。", "right": "这个报告我写不完。", "why": "Si no puedes por tiempo o cantidad, se usa el potencial; 不能写完 suena a prohibición." },
+        { "wrong": "我写不完了这个报告。", "right": "这个报告我写不完了。", "why": "El objeto no va entre el potencial y 了: ponlo delante como tema y 了 al final." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "El trabajo de grupo",
+      "lines": [
+        { "speaker": "王老师", "zh": "这个学期的专题是“上海人的周末”。大家分组做一个调查。", "py": "Zhège xuéqī de zhuāntí shì “Shànghǎirén de zhōumò”. Dàjiā fēnzǔ zuò yí ge diàochá.", "es": "El tema de este cuatrimestre es «El fin de semana de los shanghaineses». Haréis una encuesta por grupos." },
+        { "speaker": "大卫", "zh": "老师，报告什么时候交？", "py": "Lǎoshī, bàogào shénme shíhou jiāo?", "es": "Profesora, ¿cuándo hay que entregar el trabajo?" },
+        { "speaker": "王老师", "zh": "学期结束以前。报告要用正式的形式写。", "py": "Xuéqī jiéshù yǐqián. Bàogào yào yòng zhèngshì de xíngshì xiě.", "es": "Antes de que acabe el cuatrimestre. Tiene que tener formato formal." },
+        { "speaker": "安娜", "zh": "还有六个星期，来得及。", "py": "Hái yǒu liù ge xīngqī, lái de jí.", "es": "Quedan seis semanas: da tiempo." },
+        { "speaker": "雨果", "zh": "我觉得有点儿来不及。我们要先调查，再计算，最后还要写总结。", "py": "Wǒ juéde yǒudiǎnr lái bu jí. Wǒmen yào xiān diàochá, zài jìsuàn, zuìhòu hái yào xiě zǒngjié.", "es": "Yo creo que vamos algo justos. Primero hay que hacer la encuesta, luego calcular y al final escribir las conclusiones." },
+        { "speaker": "大卫", "zh": "我们三个人分工，就做得完。我来计算吧。", "py": "Wǒmen sān ge rén fēn gōng, jiù zuò de wán. Wǒ lái jìsuàn ba.", "es": "Si nos repartimos el trabajo entre los tres, nos da tiempo. Yo me encargo de los cálculos." },
+        { "speaker": "安娜", "zh": "雨果写作写得好，你写总结吧。", "py": "Yǔguǒ xiězuò xiě de hǎo, nǐ xiě zǒngjié ba.", "es": "Hugo, tú redactas bien: escribe tú las conclusiones." },
+        { "speaker": "雨果", "zh": "好。可是我写得慢，一个星期写不完。", "py": "Hǎo. Kěshì wǒ xiě de màn, yí ge xīngqī xiě bu wán.", "es": "Vale. Pero escribo despacio: en una semana no lo termino." },
+        { "speaker": "安娜", "zh": "没关系，我帮你修改，大卫再补充一些内容。", "py": "Méi guānxi, wǒ bāng nǐ xiūgǎi, Dàwèi zài bǔchōng yìxiē nèiróng.", "es": "No pasa nada: yo te lo corrijo y David añade lo que falte." },
+        { "speaker": "大卫", "zh": "不好了！已经八点五十了，九点的课我们来不及了！", "py": "Bù hǎo le! Yǐjīng bā diǎn wǔshí le, jiǔ diǎn de kè wǒmen lái bu jí le!", "es": "¡Ay, no! Ya son las nueve menos diez: ¡no llegamos a la clase de las nueve!" },
+        { "speaker": "安娜", "zh": "快走！现在走还来得及！", "py": "Kuài zǒu! Xiànzài zǒu hái lái de jí!", "es": "¡Corre! ¡Si salimos ya, llegamos!" },
+        { "speaker": "雨果", "zh": "等一下，我的文章还没写完！", "py": "Děng yíxià, wǒ de wénzhāng hái méi xiěwán!", "es": "¡Espera, que no he terminado mi redacción!" },
+        { "speaker": "安娜", "zh": "下课以后再写吧！", "py": "Xiàkè yǐhòu zài xiě ba!", "es": "¡Ya la escribirás después de clase!" }
+      ],
+      "notes": "分工 (repartirse el trabajo) y 分组 (dividirse en grupos) se oyen en todos los trabajos de clase. Fíjate en la diferencia: 还没写完 = todavía no lo he terminado (hecho); 写不完 = no me da / no me dará tiempo a terminarlo (posibilidad)."
+    },
+    { "type": "exercises", "count": 17, "bank": ["g-complements", "g-modal-verbs", "g-le", "g-dates-time"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "我们" }, "adverb": { "zh": "还" }, "verb1": { "zh": "来" }, "complement": { "zh": "得及" } }, "end": "。", "es": "Todavía llegamos a tiempo." }, "distractors": ["不"] },
+        { "sentence": { "slots": { "subject": { "zh": "这么多作业我" }, "time": { "zh": "今天" }, "verb1": { "zh": "做" }, "complement": { "zh": "不完" } }, "end": "。", "es": "Tantos deberes no me da tiempo a acabarlos hoy." }, "distractors": ["能"] },
+        { "sentence": { "slots": { "subject": { "zh": "我" }, "time": { "zh": "今天早上" }, "verb1": { "zh": "来不及" }, "verb2": { "zh": "吃" }, "object": { "zh": "早饭" }, "particle": { "zh": "了" } }, "end": "。", "es": "Esta mañana no me ha dado tiempo a desayunar." } },
+        { "sentence": { "slots": { "subject": { "zh": "这篇正式的调查报告我们" }, "time": { "zh": "学期结束以前" }, "adverb": { "zh": "一定" }, "verb1": { "zh": "写" }, "complement": { "zh": "得完" } }, "end": "。", "es": "Este informe formal de la encuesta seguro que lo terminamos antes de que acabe el cuatrimestre." } }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "现在走还来得及。", "py": "Xiànzài zǒu hái lái de jí.", "es": "Si salimos ahora, todavía llegamos." },
+        { "zh": "来不及了！", "py": "Lái bu jí le!", "es": "¡Ya no da tiempo!" },
+        { "zh": "这个报告我一个星期写不完。", "py": "Zhège bàogào wǒ yí ge xīngqī xiě bu wán.", "es": "Este trabajo no lo termino en una semana." },
+        { "zh": "我帮你修改，你再补充一些内容。", "py": "Wǒ bāng nǐ xiūgǎi, nǐ zài bǔchōng yìxiē nèiróng.", "es": "Yo te lo corrijo y tú añades algo más de contenido." }
+      ],
+      "respond": [
+        { "q": { "zh": "九点上课，现在八点五十，来得及吗？", "py": "Jiǔ diǎn shàngkè, xiànzài bā diǎn wǔshí, lái de jí ma?", "es": "La clase es a las nueve y son las nueve menos diez: ¿llegamos?" }, "model": { "zh": "快走！现在走还来得及。", "py": "Kuài zǒu! Xiànzài zǒu hái lái de jí.", "es": "¡Corre! Si salimos ya, llegamos." } },
+        { "q": { "zh": "这些作业你今天做得完做不完？", "py": "Zhèxiē zuòyè nǐ jīntiān zuò de wán zuò bu wán?", "es": "¿Puedes terminar estos deberes hoy o no?" }, "model": { "zh": "太多了，今天做不完，明天做得完。", "py": "Tài duō le, jīntiān zuò bu wán, míngtiān zuò de wán.", "es": "Son demasiados: hoy no me da tiempo; mañana sí." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "El informe de la encuesta",
+      "text": "这个学期，王老师的写作课有一个专题：“上海人的周末”。老师让大家分组做调查，每组三个人。雨果、安娜和大卫是一组。报告要用正式的形式写，学期结束以前交。安娜说：“还有六个星期，一定来得及。”可是调查比他们想的难多了：他们要问一百个人，还要计算每个问题的回答。大卫说：“这么多工作，我们一个星期做不完。”他们决定每个人做一部分：大卫计算，安娜写调查的内容，雨果写总结。雨果写得慢，一个晚上只写得完三百字。安娜帮他修改了很多地方，大卫又补充了一些内容。这只是第一期调查，下个学期还有第二期。交报告的那天早上，雨果说：“快走！八点上课，现在走还来得及！”",
+      "es": "Este cuatrimestre, la clase de redacción de la profesora Wang tiene un tema monográfico: «El fin de semana de los shanghaineses». La profesora les ha pedido que hagan una encuesta por grupos de tres. Hugo, Ana y David forman un grupo. El informe tiene que tener formato formal y entregarse antes de que acabe el cuatrimestre. Ana dijo: «Quedan seis semanas, seguro que nos da tiempo». Pero la encuesta resultó mucho más difícil de lo que pensaban: tenían que preguntar a cien personas y además calcular las respuestas de cada pregunta. David dijo: «Con tanto trabajo, en una semana no acabamos». Decidieron que cada uno haría una parte: David, los cálculos; Ana, el contenido de la encuesta; y Hugo, las conclusiones. Hugo escribe despacio: en una noche solo consigue escribir trescientos caracteres. Ana le corrigió muchas cosas y David añadió algo de contenido. Esta es solo la primera fase de la encuesta: el próximo cuatrimestre habrá una segunda. La mañana de la entrega, Hugo dijo: «¡Corred! La clase es a las ocho: ¡si salimos ya, llegamos!».",
+      "questions": [
+        { "q": "¿Cuál es el tema del trabajo?", "options": ["上海人的周末", "西班牙人的周末", "大学的生活"], "answer": 0 },
+        { "q": "¿Qué hace Hugo en el grupo?", "options": ["写总结", "计算", "写调查的内容"], "answer": 0 },
+        { "q": "¿Cuánto escribe Hugo en una noche?", "options": ["三百字", "一百字", "一千字"], "answer": 0 },
+        { "q": "¿Cuándo es la segunda fase?", "options": ["下个学期", "下个星期", "明年"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

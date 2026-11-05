@@ -1,0 +1,632 @@
+{
+ "id": "a1-u05-l2",
+ "title": "Meses y fechas: 几月几号？",
+ "zh": "几月几号？",
+ "goal": "Decir y preguntar la fecha (mes, día y día de la semana) en el orden chino, de lo grande a lo pequeño, y felicitar un cumpleaños.",
+ "minutes": 14,
+ "reviewed": false,
+ "vocab": [
+  {
+   "hanzi": "号",
+   "pinyin": "hào",
+   "es": "día (del mes), número",
+   "note": "Hablado. En lo escrito se usa 日: 十一月四日."
+  },
+  {
+   "hanzi": "几月",
+   "pinyin": "jǐ yuè",
+   "es": "¿qué mes?"
+  },
+  {
+   "hanzi": "几号",
+   "pinyin": "jǐ hào",
+   "es": "¿qué día (del mes)?"
+  },
+  {
+   "hanzi": "一月",
+   "pinyin": "yīyuè",
+   "es": "enero",
+   "note": "Los meses se numeran: 一月 (1) … 十二月 (12). El 一 de 一月 no cambia de tono."
+  },
+  {
+   "hanzi": "二月",
+   "pinyin": "èryuè",
+   "es": "febrero",
+   "note": "Siempre 二 (es un nombre de orden): nunca ✗两月."
+  },
+  {
+   "hanzi": "十一月",
+   "pinyin": "shíyīyuè",
+   "es": "noviembre"
+  },
+  {
+   "hanzi": "生日",
+   "pinyin": "shēngrì",
+   "es": "cumpleaños"
+  },
+  {
+   "hanzi": "快乐",
+   "pinyin": "kuàilè",
+   "es": "feliz, alegre",
+   "note": "Lo usarás sobre todo en felicitaciones: 生日快乐, 新年快乐."
+  },
+  {
+   "hanzi": "生日快乐",
+   "pinyin": "shēngrì kuàilè",
+   "es": "¡feliz cumpleaños!",
+   "note": "快乐 = alegre, feliz."
+  },
+  {
+   "hanzi": "日期",
+   "pinyin": "rìqī",
+   "es": "fecha"
+  },
+  {
+   "hanzi": "月份",
+   "pinyin": "yuèfèn",
+   "es": "mes (del calendario)",
+   "note": "几月份 = ¿en qué mes?"
+  }
+ ],
+ "steps": [
+  {
+   "type": "objective",
+   "canSay": [
+    {
+     "zh": "今天十一月四号，星期三。",
+     "py": "Jīntiān shíyīyuè sì hào, xīngqīsān.",
+     "es": "Hoy es miércoles, 4 de noviembre."
+    },
+    {
+     "zh": "你的生日是几月几号？",
+     "py": "Nǐ de shēngrì shì jǐ yuè jǐ hào?",
+     "es": "¿Cuándo es tu cumpleaños?"
+    },
+    {
+     "zh": "生日快乐！",
+     "py": "Shēngrì kuàilè!",
+     "es": "¡Feliz cumpleaños!"
+    }
+   ]
+  },
+  {
+   "type": "vocab",
+   "title": "Meses, días y cumpleaños",
+   "words": [
+    "号",
+    "几月",
+    "几号",
+    "一月",
+    "二月",
+    "十一月",
+    "生日",
+    "快乐",
+    "生日快乐",
+    "日期",
+    "月份"
+   ]
+  },
+  {
+   "type": "phonetics-drill",
+   "title": "号 hào y 好 hǎo: mismo sonido, otro tono",
+   "markdown": "**号 hào** (día del mes) y **好 hǎo** (bien) solo se distinguen por el tono:\n\n- **号 hào**, 4.º tono: cae de golpe, como una orden: «¡ya!».\n- **好 hǎo**, 3.er tono: baja y se queda abajo (y sube un poco si va sola).\n\nLa *h* china no es muda ni es la «j» fuerte española: es un roce suave en la garganta, como una «j» andaluza o caribeña.\n\nAl decir la fecha, el 4.º tono de 号 marca el final: 四号 *sì hào* (dos caídas seguidas), 五号 *wǔ hào* (baja y cae).",
+   "items": [
+    {
+     "audio": "号",
+     "options": [
+      "hǎo",
+      "hào",
+      "háo"
+     ],
+     "answer": 1,
+     "explain": "号: 4.º tono, cae."
+    },
+    {
+     "audio": "好",
+     "options": [
+      "hào",
+      "hāo",
+      "hǎo"
+     ],
+     "answer": 2,
+     "explain": "好: 3.er tono, baja."
+    },
+    {
+     "audio": "几号",
+     "options": [
+      "jǐ hǎo",
+      "jǐ hào",
+      "jī hào"
+     ],
+     "answer": 1,
+     "explain": "几 (3.er) + 号 (4.º)."
+    },
+    {
+     "audio": "四号",
+     "prompt": "¿Qué fecha es?",
+     "options": [
+      "el 4",
+      "el 10",
+      "el 40"
+     ],
+     "answer": 0,
+     "explain": "四 sì + 号 = el día 4."
+    },
+    {
+     "audio": "十一月",
+     "prompt": "¿Qué mes es?",
+     "options": [
+      "enero",
+      "noviembre",
+      "diciembre"
+     ],
+     "answer": 1,
+     "explain": "十一 (11) + 月 = noviembre."
+    }
+   ]
+  },
+  {
+   "type": "char-of-day",
+   "chars": [
+    "号"
+   ],
+   "mnemonics": {
+    "号": "口 (boca) arriba: alguien que grita un nombre o un número para llamar → número, «el día número…»."
+   }
+  },
+  {
+   "type": "skeleton",
+   "title": "La fecha, de grande a pequeño",
+   "markdown": "En español decimos «miércoles, 4 de noviembre» (de pequeño a grande). En chino es **al revés: de lo grande a lo pequeño**:\n\n> **月** (mes) → **号** (día) → **星期** (día de la semana): 十一月四号星期三.\n\n- **Meses**: número + 月: 一月 (enero) … 十二月 (diciembre). Ojo: **一月** es «enero», **一个月** es «un mes» (duración); 二月 es febrero, 两个月 son dos meses.\n- **Días**: número + 号 (hablado) o 日 (escrito): 四号 / 四日.\n- **Preguntar**: 几月几号？ La respuesta ocupa los huecos de 几: 十一月四号.\n\nLa fecha entera ocupa el hueco del **tiempo** (delante del verbo): 安娜七月十五号去西班牙. Si la fecha es lo que se dice (hoy es…), va en el objeto: 今天十一月四号.",
+   "focus": [
+    "time"
+   ],
+   "compare": true,
+   "sentences": [
+    {
+     "slots": {
+      "subject": {
+       "zh": "安娜",
+       "py": "Ānnà"
+      },
+      "time": {
+       "zh": "七月十五号",
+       "py": "qīyuè shíwǔ hào"
+      },
+      "verb1": {
+       "zh": "去西班牙",
+       "py": "qù Xībānyá"
+      }
+     },
+     "end": "。",
+     "es": "Anna va a España el 15 de julio.",
+     "esOrder": [
+      {
+       "text": "Anna",
+       "slot": "subject"
+      },
+      {
+       "text": "va a España",
+       "slot": "verb1"
+      },
+      {
+       "text": "el 15 de julio",
+       "slot": "time"
+      }
+     ]
+    },
+    {
+     "slots": {
+      "subject": {
+       "zh": "今天",
+       "py": "jīntiān"
+      },
+      "object": {
+       "zh": "十一月四号星期三",
+       "py": "shíyīyuè sì hào xīngqīsān"
+      }
+     },
+     "end": "。",
+     "es": "Hoy es miércoles, 4 de noviembre."
+    },
+    {
+     "slots": {
+      "subject": {
+       "zh": "我的生日",
+       "py": "wǒ de shēngrì"
+      },
+      "verb1": {
+       "zh": "是",
+       "py": "shì"
+      },
+      "object": {
+       "zh": "五月三号",
+       "py": "wǔyuè sān hào"
+      }
+     },
+     "end": "。",
+     "es": "Mi cumpleaños es el 3 de mayo."
+    },
+    {
+     "slots": {
+      "subject": {
+       "zh": "雨果",
+       "py": "Yǔguǒ"
+      },
+      "time": {
+       "zh": "九月一号",
+       "py": "jiǔyuè yī hào"
+      },
+      "verb1": {
+       "zh": "去上海",
+       "py": "qù Shànghǎi"
+      }
+     },
+     "end": "。",
+     "es": "Hugo va a Shanghái el 1 de septiembre."
+    },
+    {
+     "slots": {
+      "subject": {
+       "zh": "小李",
+       "py": "Xiǎo Lǐ"
+      },
+      "time": {
+       "zh": "二月",
+       "py": "èryuè"
+      },
+      "verb1": {
+       "zh": "去北京",
+       "py": "qù Běijīng"
+      }
+     },
+     "end": "。",
+     "es": "Xiao Li va a Pekín en febrero."
+    }
+   ],
+   "negative": [
+    {
+     "slots": {
+      "subject": {
+       "zh": "我的生日",
+       "py": "wǒ de shēngrì"
+      },
+      "adverb": {
+       "zh": "不",
+       "py": "bú"
+      },
+      "verb1": {
+       "zh": "是",
+       "py": "shì"
+      },
+      "object": {
+       "zh": "二月",
+       "py": "èryuè"
+      }
+     },
+     "end": "。",
+     "es": "Mi cumpleaños no es en febrero."
+    },
+    {
+     "slots": {
+      "subject": {
+       "zh": "我",
+       "py": "wǒ"
+      },
+      "time": {
+       "zh": "十一月",
+       "py": "shíyīyuè"
+      },
+      "adverb": {
+       "zh": "不",
+       "py": "bú"
+      },
+      "verb1": {
+       "zh": "去北京",
+       "py": "qù Běijīng"
+      }
+     },
+     "end": "。",
+     "es": "En noviembre no voy a Pekín."
+    }
+   ],
+   "question": [
+    {
+     "slots": {
+      "subject": {
+       "zh": "今天",
+       "py": "jīntiān"
+      },
+      "object": {
+       "zh": "几月几号",
+       "py": "jǐ yuè jǐ hào"
+      }
+     },
+     "end": "？",
+     "es": "¿A qué fecha estamos hoy?"
+    },
+    {
+     "slots": {
+      "subject": {
+       "zh": "你的生日",
+       "py": "nǐ de shēngrì"
+      },
+      "verb1": {
+       "zh": "是",
+       "py": "shì"
+      },
+      "object": {
+       "zh": "几月几号",
+       "py": "jǐ yuè jǐ hào"
+      }
+     },
+     "end": "？",
+     "es": "¿Qué día es tu cumpleaños?"
+    }
+   ],
+   "mistakes": [
+    {
+     "wrong": "四号十一月",
+     "right": "十一月四号",
+     "why": "De grande a pequeño: primero el mes y luego el día."
+    },
+    {
+     "wrong": "星期三十一月四号",
+     "right": "十一月四号星期三",
+     "why": "El día de la semana va al final, después de la fecha."
+    },
+    {
+     "wrong": "两月",
+     "right": "二月",
+     "why": "Los meses son nombres de orden: 二月 = febrero. 两个月 = dos meses (duración)."
+    },
+    {
+     "wrong": "我去西班牙七月十五号。",
+     "right": "我七月十五号去西班牙。",
+     "why": "La fecha, como cualquier tiempo, va delante del verbo."
+    }
+   ]
+  },
+  {
+   "type": "dialogue",
+   "title": "¿Cuándo es tu cumpleaños?",
+   "lines": [
+    {
+     "speaker": "小李",
+     "zh": "雨果，今天几号？",
+     "py": "Yǔguǒ, jīntiān jǐ hào?",
+     "es": "Hugo, ¿a qué día estamos?"
+    },
+    {
+     "speaker": "雨果",
+     "zh": "今天十一月四号，星期三。",
+     "py": "Jīntiān shíyīyuè sì hào, xīngqīsān.",
+     "es": "Hoy es miércoles, 4 de noviembre."
+    },
+    {
+     "speaker": "小李",
+     "zh": "十一月四号……我的生日是十一月六号！",
+     "py": "Shíyīyuè sì hào… wǒ de shēngrì shì shíyīyuè liù hào!",
+     "es": "4 de noviembre… ¡mi cumpleaños es el 6!"
+    },
+    {
+     "speaker": "雨果",
+     "zh": "六号？是星期五！生日快乐！",
+     "py": "Liù hào? Shì xīngqīwǔ! Shēngrì kuàilè!",
+     "es": "¿El 6? ¡Es viernes! ¡Feliz cumpleaños!"
+    },
+    {
+     "speaker": "小李",
+     "zh": "谢谢！你的生日是几月几号？",
+     "py": "Xièxie! Nǐ de shēngrì shì jǐ yuè jǐ hào?",
+     "es": "¡Gracias! ¿Y el tuyo cuándo es?"
+    },
+    {
+     "speaker": "雨果",
+     "zh": "我的生日是五月三号。",
+     "py": "Wǒ de shēngrì shì wǔyuè sān hào.",
+     "es": "El 3 de mayo."
+    },
+    {
+     "speaker": "小李",
+     "zh": "安娜的生日是几月份？",
+     "py": "Ānnà de shēngrì shì jǐ yuèfèn?",
+     "es": "¿Y el de Anna en qué mes es?"
+    },
+    {
+     "speaker": "雨果",
+     "zh": "也是五月，五月二十号。",
+     "py": "Yě shì wǔyuè, wǔyuè èrshí hào.",
+     "es": "También en mayo: el 20 de mayo."
+    }
+   ],
+   "notes": "En China se felicita igual que aquí, con 生日快乐, y muchos jóvenes celebran el cumpleaños con tarta. Los mayores a veces celebran el del calendario lunar, que cambia de fecha cada año."
+  },
+  {
+   "type": "exercises",
+   "count": 14,
+   "bank": [
+    "g-dates-time",
+    "g-word-order",
+    "u04"
+   ]
+  },
+  {
+   "type": "sentence-builder",
+   "items": [
+    {
+     "sentence": {
+      "slots": {
+       "subject": {
+        "zh": "我的生日"
+       },
+       "verb1": {
+        "zh": "是"
+       },
+       "object": {
+        "zh": "五月三号"
+       }
+      },
+      "end": "。",
+      "es": "Mi cumpleaños es el 3 de mayo."
+     },
+     "distractors": [
+      "三号五月"
+     ]
+    },
+    {
+     "sentence": {
+      "slots": {
+       "subject": {
+        "zh": "安娜"
+       },
+       "time": {
+        "zh": "七月十五号"
+       },
+       "verb1": {
+        "zh": "去西班牙"
+       }
+      },
+      "end": "。",
+      "es": "Anna va a España el 15 de julio."
+     }
+    },
+    {
+     "sentence": {
+      "slots": {
+       "subject": {
+        "zh": "我"
+       },
+       "time": {
+        "zh": "十一月"
+       },
+       "adverb": {
+        "zh": "不"
+       },
+       "verb1": {
+        "zh": "去北京"
+       }
+      },
+      "end": "。",
+      "es": "En noviembre no voy a Pekín."
+     },
+     "distractors": [
+      "吗"
+     ]
+    },
+    {
+     "sentence": {
+      "slots": {
+       "subject": {
+        "zh": "小李和他妹妹"
+       },
+       "time": {
+        "zh": "二月十三号星期六"
+       },
+       "adverb": {
+        "zh": "都"
+       },
+       "verb1": {
+        "zh": "去朋友家"
+       }
+      },
+      "end": "。",
+      "es": "Xiao Li y su hermana pequeña van los dos a casa de un amigo el sábado 13 de febrero."
+     },
+     "distractors": [
+      "两月"
+     ]
+    }
+   ]
+  },
+  {
+   "type": "listen-speak",
+   "shadowing": [
+    {
+     "zh": "今天十一月四号。",
+     "py": "Jīntiān shíyīyuè sì hào.",
+     "es": "Hoy es 4 de noviembre."
+    },
+    {
+     "zh": "我的生日是五月三号。",
+     "py": "Wǒ de shēngrì shì wǔyuè sān hào.",
+     "es": "Mi cumpleaños es el 3 de mayo."
+    },
+    {
+     "zh": "安娜七月十五号去西班牙。",
+     "py": "Ānnà qīyuè shíwǔ hào qù Xībānyá.",
+     "es": "Anna va a España el 15 de julio."
+    },
+    {
+     "zh": "生日快乐！",
+     "py": "Shēngrì kuàilè!",
+     "es": "¡Feliz cumpleaños!"
+    }
+   ],
+   "respond": [
+    {
+     "q": {
+      "zh": "今天几月几号？",
+      "py": "Jīntiān jǐ yuè jǐ hào?",
+      "es": "¿A qué fecha estamos?"
+     },
+     "model": {
+      "zh": "今天十一月四号。",
+      "py": "Jīntiān shíyīyuè sì hào.",
+      "es": "Hoy es 4 de noviembre."
+     }
+    },
+    {
+     "q": {
+      "zh": "你的生日是几月几号？",
+      "py": "Nǐ de shēngrì shì jǐ yuè jǐ hào?",
+      "es": "¿Cuándo es tu cumpleaños?"
+     },
+     "model": {
+      "zh": "我的生日是八月二十号。",
+      "py": "Wǒ de shēngrì shì bāyuè èrshí hào.",
+      "es": "Mi cumpleaños es el 20 de agosto."
+     }
+    }
+   ]
+  },
+  {
+   "type": "reading",
+   "title": "Tres cumpleaños",
+   "text": "今天十一月四号，星期三。小李的生日是十一月六号，星期五。雨果的生日是五月三号，安娜的生日也是五月，五月二十号。王老师说：“说‘号’，写‘日’：十一月四日。”",
+   "es": "Hoy es miércoles, 4 de noviembre. El cumpleaños de Xiao Li es el viernes 6 de noviembre. El de Hugo es el 3 de mayo, y el de Anna también es en mayo, el 20. La profesora Wang dice: «Se dice 号, se escribe 日: 十一月四日».",
+   "questions": [
+    {
+     "q": "¿Qué día de la semana es el cumpleaños de Xiao Li?",
+     "options": [
+      "Miércoles",
+      "Viernes",
+      "Sábado"
+     ],
+     "answer": 1
+    },
+    {
+     "q": "¿Quiénes cumplen años en mayo?",
+     "options": [
+      "Hugo y Anna",
+      "Xiao Li y Hugo",
+      "Solo Anna"
+     ],
+     "answer": 0
+    },
+    {
+     "q": "¿Qué carácter se usa al escribir la fecha?",
+     "options": [
+      "号",
+      "月",
+      "日"
+     ],
+     "answer": 2
+    }
+   ]
+  },
+  {
+   "type": "notes-growth"
+  }
+ ]
+}

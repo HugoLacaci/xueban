@@ -1,0 +1,131 @@
+{
+  "id": "a1-u17-l3",
+  "title": "Ya lo he hecho: el primer 了",
+  "zh": "我买了一本书",
+  "goal": "Contar en afirmativa algo que has hecho con verbo + 了 + cantidad + objeto (我买了一本书) y preguntar con un interrogativo (你买了什么？).",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "了", "pinyin": "le", "es": "(partícula: acción completada)", "note": "Ya lo conoces de la Etapa 0 (太好了). Hoy: justo detrás del verbo." },
+    { "hanzi": "课", "pinyin": "kè", "es": "clase, lección", "note": "第五课 = la lección 5; 汉语课 = la clase de chino." },
+    { "hanzi": "课本", "pinyin": "kèběn", "es": "libro de texto" },
+    { "hanzi": "课文", "pinyin": "kèwén", "es": "texto (de la lección)" },
+    { "hanzi": "汉字", "pinyin": "Hànzì", "es": "carácter chino" },
+    { "hanzi": "作业", "pinyin": "zuòyè", "es": "deberes, tarea" },
+    { "hanzi": "考", "pinyin": "kǎo", "es": "examinar(se), hacer un examen" },
+    { "hanzi": "考试", "pinyin": "kǎoshì", "es": "examen; examinarse" },
+    { "hanzi": "听写", "pinyin": "tīngxiě", "es": "dictado; hacer un dictado" },
+    { "hanzi": "准备", "pinyin": "zhǔnbèi", "es": "preparar" }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "我买了一本书。", "py": "Wǒ mǎi le yì běn shū.", "es": "He comprado un libro." },
+        { "zh": "今天我们学了十个汉字。", "py": "Jīntiān wǒmen xué le shí ge Hànzì.", "es": "Hoy hemos aprendido diez caracteres." },
+        { "zh": "你买了什么？", "py": "Nǐ mǎi le shénme?", "es": "¿Qué has comprado?" }
+      ]
+    },
+    { "type": "vocab", "title": "En clase", "words": ["了", "课", "课本", "课文", "汉字", "作业", "考", "考试", "听写", "准备"] },
+    {
+      "type": "phonetics-drill",
+      "title": "El 了 átono y kǎo / kè",
+      "markdown": "**了 le** no tiene tono propio: es **corto, suave y bajo**, pegado al verbo, como una sílaba átona en español (*mǎi le* ≈ «MAI-le»). Si lo dices fuerte, suena a otra palabra.\n\nDos sílabas de hoy con **k** (con soplo):\n- 考 *kǎo*: final **ao** y tercer tono.\n- 课 *kè*: la **e** china, que no es nuestra «e»: se dice con la boca medio abierta, como una «o» sin redondear los labios.",
+      "items": [
+        { "audio": "买了", "prompt": "¿Cómo suena 了?", "options": ["Tono neutro: corto y suave", "Cuarto tono, fuerte", "Tercer tono"], "answer": 0, "explain": "了 detrás del verbo es átono: le." },
+        { "audio": "考试", "options": ["kǎoshì", "kàoshì", "gǎoshì"], "answer": 0, "explain": "k con soplo; 考 en tercer tono." },
+        { "audio": "课文", "options": ["kèwén", "kēwén", "gèwén"], "answer": 0, "explain": "课 es cuarto tono." },
+        { "audio": "作业", "options": ["zuòyè", "zhuòyè", "zuòyuè"], "answer": 0, "explain": "z (no zh) + uo; 业 es yè." },
+        { "audio": "准备", "options": ["zhǔnbèi", "zǔnbèi", "zhǔnpèi"], "answer": 0, "explain": "zh + un (uen); b sin soplo." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["考", "课"],
+      "mnemonics": {
+        "考": "Arriba 耂, la parte de arriba de 老 (anciano); abajo, un bastón: el anciano sabio que pone a prueba a los jóvenes. Examinar.",
+        "课": "讠 (palabra, hablar) + 果 (fruto; guǒ, como en 雨果): el fruto de las palabras del profesor, la lección."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "Verbo + 了 + cantidad + objeto",
+      "markdown": "**了 justo detrás del verbo** dice que la acción **se ha completado**: 我买**了**一本书 «he comprado / compré un libro».\n\n- No es «el pasado» del español: el verbo no se conjuga, y muchas frases en pasado **no** llevan 了 (我昨天在家 «ayer estaba en casa»: no es una acción terminada, es un estado; 我以前常常… «antes solía…»).\n- El **objeto** casi siempre lleva **número o cantidad** (一本书, 十个汉字) o algo que lo concrete (明天的考试). *我买了书* sin más suena incompleto, como si fuera a seguir la frase.\n- En el esqueleto, el 了 va **pegado al verbo**, en el hueco del verbo: «买了».\n- **Pregunta**: con un interrogativo en el hueco del objeto: 你买了**什么**？ 你们学了**几个**汉字？\n\n**Ojo**: de momento, solo afirmativas. Para «no lo he hecho» el chino usa 没 y quita el 了: lo verás en la U19. Hoy, 不 solo sirve para lo habitual o lo que no vas a hacer (我今天不考试).",
+      "focus": ["verb1"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "verb1": { "zh": "买了", "py": "mǎi le" }, "object": { "zh": "一本书", "py": "yì běn shū" } }, "end": "。", "es": "He comprado un libro.", "esOrder": [{ "text": "(Yo)", "slot": "subject" }, { "text": "he comprado", "slot": "verb1" }, { "text": "un libro", "slot": "object" }] },
+        { "slots": { "time0": { "zh": "今天", "py": "jīntiān" }, "subject": { "zh": "我们", "py": "wǒmen" }, "verb1": { "zh": "学了", "py": "xué le" }, "object": { "zh": "十个汉字", "py": "shí ge Hànzì" } }, "end": "。", "es": "Hoy hemos aprendido diez caracteres." },
+        { "slots": { "subject": { "zh": "雨果", "py": "Yǔguǒ" }, "time": { "zh": "昨天", "py": "zuótiān" }, "verb1": { "zh": "准备了", "py": "zhǔnbèi le" }, "object": { "zh": "明天的考试", "py": "míngtiān de kǎoshì" } }, "end": "。", "es": "Ayer Hugo preparó el examen de mañana." },
+        { "slots": { "subject": { "zh": "安娜", "py": "Ānnà" }, "verb1": { "zh": "写了", "py": "xiě le" }, "object": { "zh": "三个句子", "py": "sān ge jùzi" } }, "end": "。", "es": "Anna ha escrito tres frases." },
+        { "slots": { "subject": { "zh": "我们", "py": "wǒmen" }, "verb1": { "zh": "听写了", "py": "tīngxiě le" }, "object": { "zh": "二十个汉字", "py": "èrshí ge Hànzì" } }, "end": "。", "es": "Hemos hecho un dictado de veinte caracteres." },
+        { "slots": { "subject": { "zh": "王老师", "py": "Wáng lǎoshī" }, "verb1": { "zh": "给了", "py": "gěi le" }, "object": { "zh": "我们一个作业", "py": "wǒmen yí ge zuòyè" } }, "end": "。", "es": "La profesora Wang nos ha puesto unos deberes." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "time": { "zh": "今天", "py": "jīntiān" }, "adverb": { "zh": "不", "py": "bù" }, "verb1": { "zh": "考试", "py": "kǎoshì" } }, "end": "。", "es": "Hoy no tengo examen." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "买了", "py": "mǎi le" }, "object": { "zh": "什么", "py": "shénme" } }, "end": "？", "es": "¿Qué has comprado?" },
+        { "slots": { "subject": { "zh": "你们", "py": "nǐmen" }, "time": { "zh": "今天", "py": "jīntiān" }, "verb1": { "zh": "学了", "py": "xué le" }, "object": { "zh": "几个汉字", "py": "jǐ ge Hànzì" } }, "end": "？", "es": "¿Cuántos caracteres habéis aprendido hoy?" }
+      ],
+      "mistakes": [
+        { "wrong": "我了买一本书。", "right": "我买了一本书。", "why": "了 va justo detrás del verbo, nunca delante." },
+        { "wrong": "我买一本书了。", "right": "我买了一本书。", "why": "Para contar que has comprado un libro, lo natural es el 了 pegado al verbo, antes del objeto con cantidad. El 了 al final de la frase tiene otro valor (cambio de situación) que verás en la U18." },
+        { "wrong": "我昨天买了书。", "right": "我昨天买了一本书。", "why": "Sin cantidad, la frase suena incompleta: añade el número y el clasificador." },
+        { "wrong": "昨天我是很忙了。", "right": "昨天我很忙。", "why": "了 no es una marca de pasado: un estado (很忙) no lo lleva aquí, ni lleva 是." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Después de clase",
+      "lines": [
+        { "speaker": "安娜", "zh": "雨果，今天王老师的课怎么样？", "py": "Yǔguǒ, jīntiān Wáng lǎoshī de kè zěnmeyàng?", "es": "Hugo, ¿qué tal la clase de la profesora Wang hoy?" },
+        { "speaker": "雨果", "zh": "很有意思！我们学了十个汉字。", "py": "Hěn yǒu yìsi! Wǒmen xué le shí ge Hànzì.", "es": "¡Muy interesante! Hemos aprendido diez caracteres." },
+        { "speaker": "安娜", "zh": "有听写吗？", "py": "Yǒu tīngxiě ma?", "es": "¿Ha habido dictado?" },
+        { "speaker": "雨果", "zh": "有，我们听写了十个汉字。", "py": "Yǒu, wǒmen tīngxiě le shí ge Hànzì.", "es": "Sí, un dictado de diez caracteres." },
+        { "speaker": "安娜", "zh": "作业多吗？", "py": "Zuòyè duō ma?", "es": "¿Hay muchos deberes?" },
+        { "speaker": "雨果", "zh": "不多，写五个句子。下星期三考试，我们要准备一下。", "py": "Bù duō, xiě wǔ ge jùzi. Xià xīngqīsān kǎoshì, wǒmen yào zhǔnbèi yíxià.", "es": "No muchos: escribir cinco frases. El miércoles que viene hay examen y tenemos que prepararlo." },
+        { "speaker": "安娜", "zh": "我今天去书店买了一本课本，很好。你看！", "py": "Wǒ jīntiān qù shūdiàn mǎi le yì běn kèběn, hěn hǎo. Nǐ kàn!", "es": "Hoy he ido a la librería y he comprado un libro de texto muy bueno. ¡Mira!" },
+        { "speaker": "雨果", "zh": "多少钱？", "py": "Duōshao qián?", "es": "¿Cuánto te ha costado?" },
+        { "speaker": "安娜", "zh": "四十五块。我也买了两个本子。", "py": "Sìshíwǔ kuài. Wǒ yě mǎi le liǎng ge běnzi.", "es": "Cuarenta y cinco yuanes. También he comprado dos cuadernos." },
+        { "speaker": "雨果", "zh": "我们一起准备考试吧！", "py": "Wǒmen yìqǐ zhǔnbèi kǎoshì ba!", "es": "¡Preparemos el examen juntos!" }
+      ],
+      "notes": "Fíjate en 去书店买了一本课本: con dos verbos seguidos, el 了 va detrás del segundo, el de la acción que se completa (买). Y en las preguntas de Anna no hay 了: 有听写吗？ basta. Las preguntas del tipo «¿lo has hecho?» con 了 al final de la frase llegan en la U18 y la U19."
+    },
+    { "type": "exercises", "count": 15, "bank": ["g-le", "g-measure-words", "u09"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "我" }, "verb1": { "zh": "买了" }, "object": { "zh": "一本书" } }, "end": "。", "es": "He comprado un libro." }, "distractors": ["是"] },
+        { "sentence": { "slots": { "time0": { "zh": "今天" }, "subject": { "zh": "我们" }, "verb1": { "zh": "学了" }, "object": { "zh": "十个汉字" } }, "end": "。", "es": "Hoy hemos aprendido diez caracteres." }, "distractors": ["吗"] },
+        { "sentence": { "slots": { "subject": { "zh": "你" }, "verb1": { "zh": "买了" }, "object": { "zh": "什么" } }, "end": "？", "es": "¿Qué has comprado?" }, "distractors": ["吗"] },
+        { "sentence": { "slots": { "time0": { "zh": "昨天下午" }, "subject": { "zh": "我" }, "with": { "zh": "跟安娜一起" }, "place": { "zh": "在书店" }, "verb1": { "zh": "买了" }, "object": { "zh": "两本课本" } }, "end": "。", "es": "Ayer por la tarde compré dos libros de texto en la librería con Anna." }, "distractors": ["二"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "我买了一本书。", "py": "Wǒ mǎi le yì běn shū.", "es": "He comprado un libro." },
+        { "zh": "我们学了十个汉字。", "py": "Wǒmen xué le shí ge Hànzì.", "es": "Hemos aprendido diez caracteres." },
+        { "zh": "你买了什么？", "py": "Nǐ mǎi le shénme?", "es": "¿Qué has comprado?" },
+        { "zh": "下星期三考试。", "py": "Xià xīngqīsān kǎoshì.", "es": "El miércoles que viene hay examen." }
+      ],
+      "respond": [
+        { "q": { "zh": "你今天学了几个汉字？", "py": "Nǐ jīntiān xué le jǐ ge Hànzì?", "es": "¿Cuántos caracteres has aprendido hoy?" }, "model": { "zh": "我今天学了十个汉字。", "py": "Wǒ jīntiān xué le shí ge Hànzì.", "es": "Hoy he aprendido diez caracteres." } },
+        { "q": { "zh": "你买了什么？", "py": "Nǐ mǎi le shénme?", "es": "¿Qué has comprado?" }, "model": { "zh": "我买了一本课本。", "py": "Wǒ mǎi le yì běn kèběn.", "es": "He comprado un libro de texto." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "El diario de Hugo",
+      "text": "今天上午我们有汉语课。王老师教了我们十个汉字，我们也读了第五课的课文。下午我去书店买了一本课本和两个本子，一共六十块。晚上我写了作业，也准备了明天的听写。",
+      "es": "Esta mañana hemos tenido clase de chino. La profesora Wang nos ha enseñado diez caracteres y también hemos leído el texto de la lección 5. Por la tarde he ido a la librería y he comprado un libro de texto y dos cuadernos: sesenta yuanes en total. Por la noche he hecho los deberes y he preparado el dictado de mañana.",
+      "questions": [
+        { "q": "¿Cuántos caracteres han aprendido?", "options": ["Diez", "Cinco", "Sesenta"], "answer": 0 },
+        { "q": "¿Qué ha comprado Hugo?", "options": ["Un libro de texto y dos cuadernos", "Dos libros", "Un cuaderno"], "answer": 0 },
+        { "q": "¿Qué hay mañana?", "options": ["Un dictado", "Un examen grande", "No hay clase"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

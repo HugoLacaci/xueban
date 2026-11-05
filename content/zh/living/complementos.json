@@ -1,0 +1,1721 @@
+{
+  "id": "complementos",
+  "title": "Complementos",
+  "zh": "补语",
+  "order": 15,
+  "icon": "Puzzle",
+  "summary": "Lo que va detrás del verbo y lo completa: cuánto dura (两个小时), cuántas veces (两次), un poquito (一下), cómo acaba (吃完, 听懂), cómo sale (说得很好) y hacia dónde va (上来, 走进). En español casi todo esto va en otro sitio o con otra palabra.",
+  "kind": "topic",
+  "reviewed": false,
+  "sections": [
+    {
+      "id": "yixia-reduplicacion",
+      "title": "Verbo + 一下 y verbo repetido: un momento, un poquito",
+      "unlockedBy": "a1-u12-l5",
+      "markdown": "### Suavizar la acción\n\nPara que una petición o propuesta suene **breve y amable** hay dos recursos casi equivalentes:\n\n1. **Verbo + 一下**: 看**一下**, 等**一下**, 休息**一下**. «Un momento, un toque».\n2. **Verbo repetido**: 看看, 听听, 试试 (la segunda vez en tono neutro: kànkan). Con verbos de dos sílabas se repite entero: **休息休息**, 介绍介绍 (ABAB). También 看一看 (A一A).\n\nLos dos van **detrás del verbo y delante del objeto**: 你听一下**这个歌**. En el esqueleto los verás dentro de *Verbo 1* (el hueco *Complemento* llega en la U15).\n\n> 💡 **Truco**: es el «a ver» de los españoles: «déjame ver», «pruébalo a ver». 等一下 y 我介绍一下 apréndelos como una sola palabra.\n\n> ❌ **Error típico**: 我看这个一下 → 我看**一下**这个. 一下 va pegado al verbo.\n\n> ❌ **Error típico**: 休休息息 → **休息休息**.\n\n> ⚠️ **Ojo**: no se usan en negativa (✗ 我不看看) ni con verbos de estado (✗ 喜欢喜欢, ✗ 是一下). Y **一下** se dice **yíxià**.",
+      "skeleton": {
+        "focus": ["verb1"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "你", "py": "nǐ" },
+              "verb1": { "zh": "听一下", "py": "tīng yíxià" },
+              "object": { "zh": "这个歌", "py": "zhège gē" }
+            },
+            "end": "。",
+            "es": "Escucha un momento esta canción.",
+            "esOrder": [
+              { "text": "Escucha un momento", "slot": "verb1" },
+              { "text": "esta canción", "slot": "object" }
+            ]
+          },
+          {
+            "slots": {
+              "subject": { "zh": "我们", "py": "wǒmen" },
+              "verb1": { "zh": "去书店", "py": "qù shūdiàn" },
+              "verb2": { "zh": "看看", "py": "kànkan" },
+              "particle": { "zh": "吧", "py": "ba" }
+            },
+            "end": "。",
+            "es": "Vamos a la librería a echar un vistazo."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "你们", "py": "nǐmen" },
+              "verb1": { "zh": "休息休息", "py": "xiūxi xiūxi" },
+              "particle": { "zh": "吧", "py": "ba" }
+            },
+            "end": "。",
+            "es": "Descansad un poco."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "我介绍一下，这是我的朋友安娜。", "py": "Wǒ jièshào yíxià, zhè shì wǒ de péngyou Ānnà.", "es": "Os presento: esta es mi amiga Ana." },
+        { "zh": "我可以看看吗？", "py": "Wǒ kěyǐ kànkan ma?", "es": "¿Puedo echar un vistazo?" },
+        { "zh": "你试试这个游戏吧！", "py": "Nǐ shìshi zhège yóuxì ba!", "es": "¡Prueba este juego, venga!" },
+        { "zh": "等一下，我想休息一下。", "py": "Děng yíxià, wǒ xiǎng xiūxi yíxià.", "es": "Espera un momento, que quiero descansar un rato." }
+      ],
+      "sourceNotes": ["zh-grammar-yixia", "zh-grammar-reduplication"]
+    },
+    {
+      "id": "primeros-resultados",
+      "title": "看见, 听到, 找到: los primeros resultados",
+      "unlockedBy": "a1-u12-l4",
+      "markdown": "### Acción + resultado en una palabra\n\nYa han salido algunos verbos con **dos piezas**: la primera dice lo que haces y la segunda **cómo acabó**:\n\n| Acción | + resultado | Significa |\n|---|---|---|\n| 看 mirar | 看**见** / 看**到** | ver (lograr ver) |\n| 听 escuchar | 听**见** / 听**到** | oír |\n| 找 buscar | 找**到** | encontrar |\n| 回 volver | 回**到** + lugar | llegar de vuelta |\n\n- 看 es «mirar» (puedes mirar y no ver nada); **看见** es «ver».\n- Funcionan como un solo verbo: en el esqueleto, todo en *Verbo 1*: 我**看到**一个很有意思的视频.\n\n> ❌ **Error típico**: 我看他了 (por «lo vi») → 我**看见**他了.\n\n> 💡 **Truco**: en A2 (a2-u04) verás la familia completa: 完, 好, 懂, 错, 对…",
+      "skeleton": {
+        "focus": ["verb1"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "verb1": { "zh": "看到", "py": "kàndào" },
+              "object": { "zh": "一个很有意思的视频", "py": "yí ge hěn yǒu yìsi de shìpín" }
+            },
+            "end": "。",
+            "es": "He visto un vídeo muy interesante."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "大卫", "py": "Dàwèi" },
+              "time": { "zh": "六点", "py": "liù diǎn" },
+              "verb1": { "zh": "回到", "py": "huídào" },
+              "object": { "zh": "家", "py": "jiā" }
+            },
+            "end": "。",
+            "es": "David llega a casa a las seis."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "你看见王老师了吗？", "py": "Nǐ kànjiàn Wáng lǎoshī le ma?", "es": "¿Has visto a la profesora Wang?" },
+        { "zh": "我找到小李了。", "py": "Wǒ zhǎodào Xiǎo Lǐ le.", "es": "He encontrado a Xiao Li." },
+        { "zh": "你听见了吗？", "py": "Nǐ tīngjiàn le ma?", "es": "¿Lo has oído?" }
+      ],
+      "sourceNotes": ["zh-grammar-complements"]
+    },
+    {
+      "id": "duracion-a1",
+      "title": "La duración, detrás del verbo",
+      "unlockedBy": "a1-u15-l3",
+      "markdown": "### Un hueco nuevo: el complemento\n\n- **Momento** (cuándo): **delante** del verbo → 我**每天**走.\n- **Duración** (cuánto tiempo): **detrás** del verbo → 我每天走**二十分钟**.\n\nEn español la duración va casi en cualquier sitio; en chino tiene un sitio fijo.\n\n**¿Cuánto se tarda?** → **要 + duración**: 坐高铁**要**五个小时. Pregunta: 要**多长时间**？ (o 要多久？).\n\n**Si el verbo lleva objeto**, se repite el verbo: 坐地铁**坐**四十分钟 (en A2 verás también 坐四十分钟地铁).\n\n**Cómo se dice la duración**:\n\n- horas: 一**个**小时, 半**个**小时, 一个半小时 (con 个);\n- minutos: 二十分钟 (sin 个);\n- ojo: **八点** = a las ocho (momento); **八个小时** = ocho horas (duración). 二十**分** es «y veinte»; para la duración, 二十**分钟**.\n\n> ❌ **Error típico**: 我睡觉了八个小时 → 我**睡了八个小时**. 睡觉 es un verbo separable: la duración va con 睡.",
+      "skeleton": {
+        "focus": ["complement"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "time": { "zh": "每天", "py": "měitiān" },
+              "verb1": { "zh": "走", "py": "zǒu" },
+              "complement": { "zh": "二十分钟", "py": "èrshí fēnzhōng" }
+            },
+            "end": "。",
+            "es": "Ando veinte minutos cada día.",
+            "esOrder": [
+              { "text": "Ando", "slot": "verb1" },
+              { "text": "veinte minutos", "slot": "complement" },
+              { "text": "cada día", "slot": "time" }
+            ]
+          },
+          {
+            "slots": {
+              "subject": { "zh": "坐高铁", "py": "zuò gāotiě" },
+              "verb1": { "zh": "要", "py": "yào" },
+              "complement": { "zh": "五个小时", "py": "wǔ ge xiǎoshí" }
+            },
+            "end": "。",
+            "es": "En tren de alta velocidad se tarda cinco horas."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "verb1": { "zh": "坐地铁", "py": "zuò dìtiě" },
+              "verb2": { "zh": "坐", "py": "zuò" },
+              "complement": { "zh": "四十分钟", "py": "sìshí fēnzhōng" }
+            },
+            "end": "。",
+            "es": "Voy cuarenta minutos en metro."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "坐飞机要多长时间？——两个小时。", "py": "Zuò fēijī yào duō cháng shíjiān? — Liǎng ge xiǎoshí.", "es": "¿Cuánto se tarda en avión? —Dos horas." },
+        { "zh": "我每天睡八个小时。", "py": "Wǒ měi tiān shuì bā ge xiǎoshí.", "es": "Duermo ocho horas al día." },
+        { "zh": "我们八点上课，上两个小时。", "py": "Wǒmen bā diǎn shàngkè, shàng liǎng ge xiǎoshí.", "es": "Entramos a clase a las ocho y estamos dos horas." }
+      ]
+    },
+    {
+      "id": "momento-duracion",
+      "title": "Momento delante, duración detrás (A2)",
+      "unlockedBy": "a2-u02-l2",
+      "markdown": "### El mapa del tiempo en la frase\n\n| ¿Qué? | Pregunta | Dónde va | Ejemplo |\n|---|---|---|---|\n| **Momento** (cuándo) | 几点, 什么时候 | **delante del verbo** (*Tiempo*) | 我**八点**上课。 |\n| **Duración** (cuánto rato) | 多长时间, 多久 | **detrás del verbo** (*Complemento*) | 我学习**两个小时**。 |\n\nCon un **objeto corto**, la duración se mete entre el verbo y el objeto, como una cantidad: 上**四个小时**课 (tener cuatro horas de clase), 学了**两年**汉语.\n\nCon **了**, la duración cuenta lo que duró algo terminado (我等了十分钟); con un segundo 了 al final, algo que **sigue** (ver **Aspecto**).\n\n> 💡 **Truco**: fíjate en las flechas del esqueleto: el momento se adelanta al verbo y la duración se queda detrás.",
+      "skeleton": {
+        "focus": ["time", "complement"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "time": { "zh": "每天八点", "py": "měitiān bā diǎn" },
+              "verb1": { "zh": "上课", "py": "shàngkè" }
+            },
+            "end": "。",
+            "es": "Entro a clase a las ocho todos los días."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "time": { "zh": "每天", "py": "měitiān" },
+              "verb1": { "zh": "学习", "py": "xuéxí" },
+              "complement": { "zh": "两个小时", "py": "liǎng ge xiǎoshí" }
+            },
+            "end": "。",
+            "es": "Estudio dos horas cada día.",
+            "esOrder": [
+              { "text": "Estudio", "slot": "verb1" },
+              { "text": "dos horas", "slot": "complement" },
+              { "text": "cada día", "slot": "time" }
+            ]
+          },
+          {
+            "slots": {
+              "subject": { "zh": "我们", "py": "wǒmen" },
+              "time": { "zh": "每天", "py": "měitiān" },
+              "verb1": { "zh": "上", "py": "shàng" },
+              "object": { "zh": "四个小时课", "py": "sì ge xiǎoshí kè" }
+            },
+            "end": "。",
+            "es": "Tenemos cuatro horas de clase al día."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "校长今天上午讲了一个小时。", "py": "Xiàozhǎng jīntiān shàngwǔ jiǎng le yí ge xiǎoshí.", "es": "Esta mañana el rector ha hablado una hora." },
+        { "zh": "我们在教室等了十分钟。", "py": "Wǒmen zài jiàoshì děng le shí fēnzhōng.", "es": "Esperamos diez minutos en el aula." },
+        { "zh": "你每天学习多长时间？", "py": "Nǐ měi tiān xuéxí duō cháng shíjiān?", "es": "¿Cuánto tiempo estudias al día?" }
+      ]
+    },
+    {
+      "id": "repetir-verbo",
+      "title": "V + O + V + 了 + duración: repetir el verbo",
+      "unlockedBy": "a2-u02-l3",
+      "markdown": "### Cuando el objeto y la duración se pelean por el sitio\n\nLos dos quieren ir detrás del verbo. La solución más clara: **repetir el verbo**.\n\n> 我**复习**生词**复习了**一个小时。 Estuve una hora repasando el vocabulario.\n\n1. Verbo + objeto: 复习生词 (*Verbo 1*).\n2. Verbo otra vez + 了: 复习了 (*Verbo 2*).\n3. Duración: 一个小时 (*Complemento*).\n\nLa otra forma también vale: 我复习了一个小时生词. Con objetos largos o concretos, mejor repetir el verbo.\n\n- **Negativa**: 我写作文**没写多长时间** (no estuve mucho rato).\n- **Pregunta**: 你写作文写了**多长时间**？\n\n> ❌ **Error típico**: 我复习生词一个小时 → 我复习生词**复习了**一个小时.",
+      "skeleton": {
+        "focus": ["verb1", "verb2", "complement"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "verb1": { "zh": "复习生词", "py": "fùxí shēngcí" },
+              "verb2": { "zh": "复习了", "py": "fùxí le" },
+              "complement": { "zh": "一个小时", "py": "yí ge xiǎoshí" }
+            },
+            "end": "。",
+            "es": "Estuve una hora repasando las palabras nuevas.",
+            "esOrder": [
+              { "text": "Estuve", "slot": "verb2" },
+              { "text": "una hora", "slot": "complement" },
+              { "text": "repasando las palabras nuevas", "slot": "verb1" }
+            ]
+          },
+          {
+            "slots": {
+              "subject": { "zh": "安娜", "py": "Ānnà" },
+              "verb1": { "zh": "写作文", "py": "xiě zuòwén" },
+              "verb2": { "zh": "写了", "py": "xiě le" },
+              "complement": { "zh": "两个小时", "py": "liǎng ge xiǎoshí" }
+            },
+            "end": "。",
+            "es": "Ana estuvo dos horas escribiendo la redacción."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "大卫查词典查了半天。", "py": "Dàwèi chá cídiǎn chá le bàntiān.", "es": "David se pasó un buen rato buscando en el diccionario." },
+        { "zh": "我们昨天练汉字练了一下午。", "py": "Wǒmen zuótiān liàn Hànzì liàn le yí xiàwǔ.", "es": "Ayer estuvimos toda la tarde practicando caracteres." },
+        { "zh": "你写作文写了多长时间？", "py": "Nǐ xiě zuòwén xiě le duō cháng shíjiān?", "es": "¿Cuánto rato estuviste escribiendo la redacción?" }
+      ]
+    },
+    {
+      "id": "cada-cuanto",
+      "title": "Cada cuánto: 一个星期打扫一次",
+      "unlockedBy": "a2-u03-l3",
+      "markdown": "### El intervalo delante, las veces detrás\n\n- **Intervalo** (cada cuánto): **delante** del verbo, como un tiempo: **一个星期**.\n- **Veces** (cuántas): **detrás**, en el complemento: **一次**.\n\n> 我们**一个星期**打扫**一次**。 Limpiamos una vez a la semana.\n\nPregunta: **多长时间**打扫**一次**？ (¿cada cuánto limpiáis?). Los clasificadores de veces (次, 遍) están en el apunte **Clasificadores**.\n\n> ❌ **Error típico**: 我们打扫一次一个星期 (calco de «una vez a la semana») → 我们一个星期打扫一次.",
+      "skeleton": {
+        "focus": ["time", "complement"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "我们", "py": "wǒmen" },
+              "time": { "zh": "一个星期", "py": "yí ge xīngqī" },
+              "verb1": { "zh": "打扫", "py": "dǎsǎo" },
+              "complement": { "zh": "一次", "py": "yí cì" }
+            },
+            "end": "。",
+            "es": "Limpiamos una vez a la semana.",
+            "esOrder": [
+              { "text": "Limpiamos", "slot": "verb1" },
+              { "text": "una vez", "slot": "complement" },
+              { "text": "a la semana", "slot": "time" }
+            ]
+          },
+          {
+            "slots": {
+              "subject": { "zh": "你们", "py": "nǐmen" },
+              "time": { "zh": "多长时间", "py": "duō cháng shíjiān" },
+              "verb1": { "zh": "打扫", "py": "dǎsǎo" },
+              "complement": { "zh": "一次", "py": "yí cì" }
+            },
+            "end": "？",
+            "es": "¿Cada cuánto limpiáis?"
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "我一个月回一次家。", "py": "Wǒ yí ge yuè huí yí cì jiā.", "es": "Vuelvo a casa una vez al mes." },
+        { "zh": "他一天洗两次澡。", "py": "Tā yì tiān xǐ liǎng cì zǎo.", "es": "Se ducha dos veces al día." },
+        { "zh": "我们好好收拾一下吧。", "py": "Wǒmen hǎohǎo shōushi yíxià ba.", "es": "Vamos a recogerlo bien." }
+      ]
+    },
+    {
+      "id": "resultado",
+      "title": "Complementos de resultado: 吃完, 做好, 听懂, 写错",
+      "unlockedBy": "a2-u04-l2",
+      "markdown": "### Cómo acabó la acción\n\nEl verbo dice **lo que haces**; el complemento, **cómo acabó**:\n\n| Resultado | Significa | Ejemplos |\n|---|---|---|\n| **完** | terminado | 吃完, 做完, 看完 |\n| **好** | bien hecho, listo | 做好, 准备好 |\n| **到** | conseguido, alcanzado | 买到, 找到, 见到 |\n| **懂** | entendido | 听懂, 看懂 |\n| **见** | percibido | 看见, 听见 |\n| **错 / 对** | mal / bien | 写错, 说对 |\n| **会** | aprendido | 学会 |\n\n**Convención del esqueleto**: el resultado va en *Complemento* (吃 | 完). Si hay un objeto detrás, el verbo y su resultado van juntos en *Verbo 1* (吃完 + 饭), igual que 吃了.\n\n- **Negativa con 没**: 我**没**听懂. Nunca ~~不听懂~~.\n- **Pregunta**: 你听懂了**吗**？ / 你听懂了**没有**？\n\n> 💡 **Truco**: tres frases para sobrevivir en clase: 听懂了吗？ · 我没听懂，请再说一遍 · 我做完了.\n\n> ❌ **Error típico**: 我完做了 → 我做完了. El resultado va detrás.\n\n> ⚠️ **Ojo**: 听不懂 («no soy capaz de entender») es la forma potencial; la oirás muchísimo y la estudiarás en B1.",
+      "skeleton": {
+        "focus": ["complement"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "verb1": { "zh": "吃", "py": "chī" },
+              "complement": { "zh": "完", "py": "wán" },
+              "particle": { "zh": "了", "py": "le" }
+            },
+            "end": "。",
+            "es": "Ya he terminado de comer.",
+            "esOrder": [
+              { "text": "Ya he terminado", "slot": "complement" },
+              { "text": "de comer", "slot": "verb1" }
+            ]
+          },
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "verb1": { "zh": "买到", "py": "mǎidào" },
+              "object": { "zh": "方便面", "py": "fāngbiànmiàn" },
+              "particle": { "zh": "了", "py": "le" }
+            },
+            "end": "。",
+            "es": "He conseguido comprar fideos instantáneos."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "这个字你", "py": "zhège zì nǐ" },
+              "verb1": { "zh": "写", "py": "xiě" },
+              "complement": { "zh": "错", "py": "cuò" },
+              "particle": { "zh": "了", "py": "le" }
+            },
+            "end": "。",
+            "es": "Este carácter lo has escrito mal."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "老师说的话，你听懂了吗？——没听懂。", "py": "Lǎoshī shuō de huà, nǐ tīngdǒng le ma? — Méi tīngdǒng.", "es": "¿Has entendido lo que ha dicho la profesora? —No." },
+        { "zh": "你说对了！", "py": "Nǐ shuō duì le!", "es": "¡Has acertado!" },
+        { "zh": "我已经做好作业了。", "py": "Wǒ yǐjīng zuò hǎo zuòyè le.", "es": "Ya tengo hechos los deberes." },
+        { "zh": "我看了，可是没看懂。", "py": "Wǒ kàn le, kěshì méi kàndǒng.", "es": "Lo he leído, pero no lo he entendido." }
+      ],
+      "sourceNotes": ["zh-grammar-complements"]
+    },
+    {
+      "id": "objeto-delante",
+      "title": "La cosa delante: 饭做好了",
+      "unlockedBy": "a2-u04-l4",
+      "markdown": "### Empezar por el tema\n\nEn chino es muy normal empezar la frase por **la cosa de la que hablas** y no decir quién hace la acción:\n\n- **饭**做好了。 La comida está hecha.\n- **汤**喝完了。 La sopa se ha acabado.\n- **豆腐**我没买到。 El tofu no lo he conseguido comprar.\n\nEl objeto pasa al hueco del **sujeto** y casi siempre va con un **complemento de resultado** y **了**. En español usaríamos «se» o una pasiva («se ha acabado la sopa»); en chino no hace falta ninguna palabra especial (nada de 被).\n\nCon **都**: 菜**都**吃完了 (nos hemos comido todos los platos).",
+      "skeleton": {
+        "focus": ["subject", "complement"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "饭", "py": "fàn" },
+              "verb1": { "zh": "做", "py": "zuò" },
+              "complement": { "zh": "好", "py": "hǎo" },
+              "particle": { "zh": "了", "py": "le" }
+            },
+            "end": "。",
+            "es": "La comida está lista.",
+            "esOrder": [
+              { "text": "La comida", "slot": "subject" },
+              { "text": "está lista", "slot": "complement" }
+            ]
+          },
+          {
+            "slots": {
+              "subject": { "zh": "汤", "py": "tāng" },
+              "adverb": { "zh": "都", "py": "dōu" },
+              "verb1": { "zh": "喝", "py": "hē" },
+              "complement": { "zh": "完", "py": "wán" },
+              "particle": { "zh": "了", "py": "le" }
+            },
+            "end": "。",
+            "es": "La sopa se ha acabado toda."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "晚餐准备好了。", "py": "Wǎncān zhǔnbèi hǎo le.", "es": "La cena está preparada." },
+        { "zh": "豆腐我没买到。", "py": "Dòufu wǒ méi mǎidào.", "es": "El tofu no lo he conseguido comprar." },
+        { "zh": "这个菜我吃过。", "py": "Zhège cài wǒ chīguo.", "es": "Este plato ya lo he probado." }
+      ]
+    },
+    {
+      "id": "grado-de",
+      "title": "Verbo + 得 + cómo: 说得很好",
+      "unlockedBy": "a2-u07-l1",
+      "markdown": "### El puente entre el verbo y su nota\n\nEn español decimos «habla **muy bien**»: el «cómo» va detrás. En chino también, pero **unido con 得**: 说**得**很好, 游**得**很快. Es el **complemento de grado**: cuenta cómo sale una acción habitual o ya pasada.\n\n- El adjetivo lleva casi siempre **很, 非常, 特别, 不太…**, igual que cuando es predicado.\n- **Negativa**: 不 va **delante del adjetivo**, no del verbo: 说得**不**好.\n- **Pregunta**: 说得**怎么样**？ / 说得**好不好**？ / 说得好**吗**？\n\n### Con objeto, cuidado\n\nDetrás de V得 no puede ir el objeto (✗ 他说汉语得很好). Dos salidas:\n\n1. **El objeto delante, como tema**: 他**汉语**说得很好.\n2. **Repetir el verbo**: 他**说汉语说得**很好.\n\n**En el esqueleto**: «V得» va en *Verbo 1* y el grado en *Complemento*. Con el objeto como tema, va junto al sujeto (他汉语); si se repite el verbo, *Verbo 1* = 说汉语 y *Verbo 2* = 说得.\n\n> 💡 **Truco**: cuando te digan 你汉语说得真好！, la respuesta modesta es 哪里哪里 o 还差得远呢.\n\n> ❌ **Error típico**: 他不说得好 → 他说得**不**好.",
+      "skeleton": {
+        "focus": ["verb1", "complement"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "她", "py": "tā" },
+              "verb1": { "zh": "跳得", "py": "tiào de" },
+              "complement": { "zh": "非常好", "py": "fēicháng hǎo" }
+            },
+            "end": "。",
+            "es": "Baila muy bien.",
+            "esOrder": [
+              { "text": "Baila", "slot": "verb1" },
+              { "text": "muy bien", "slot": "complement" }
+            ]
+          },
+          {
+            "slots": {
+              "subject": { "zh": "他汉语", "py": "tā Hànyǔ" },
+              "verb1": { "zh": "说得", "py": "shuō de" },
+              "complement": { "zh": "很好", "py": "hěn hǎo" }
+            },
+            "end": "。",
+            "es": "Habla muy bien chino."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "他", "py": "tā" },
+              "verb1": { "zh": "唱歌", "py": "chànggē" },
+              "verb2": { "zh": "唱得", "py": "chàng de" },
+              "complement": { "zh": "怎么样", "py": "zěnmeyàng" }
+            },
+            "end": "？",
+            "es": "¿Qué tal canta?"
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "你汉字写得真好！——哪里哪里。", "py": "Nǐ Hànzì xiě de zhēn hǎo! — Nǎli nǎli.", "es": "¡Qué bien escribes los caracteres! —Qué va." },
+        { "zh": "他跑得不快。", "py": "Tā pǎo de bú kuài.", "es": "No corre rápido." },
+        { "zh": "你昨天睡得好吗？", "py": "Nǐ zuótiān shuì de hǎo ma?", "es": "¿Dormiste bien ayer?" },
+        { "zh": "他游泳游得很快。", "py": "Tā yóuyǒng yóu de hěn kuài.", "es": "Nada muy rápido." }
+      ],
+      "sourceNotes": ["zh-particle-de-complement", "zh-contrast-de-de-de"]
+    },
+    {
+      "id": "separables",
+      "title": "Verbos separables: 游了一个小时泳",
+      "unlockedBy": "a2-u07-l2",
+      "markdown": "### Lo que cuenta la acción va en medio\n\nMuchos verbos son en realidad **verbo + objeto** pegados (离合词): 游泳 (游 + 泳), 跑步, 跳舞, 帮忙, 睡觉, 洗澡, 见面… Por eso la duración, las veces o la persona van **entre las dos piezas**:\n\n- duración: 游**了一个小时**泳, 跑**半个小时**步, 睡**了八个小时**(觉)\n- cantidad o persona: 帮**我一个**忙 (hazme un favor)\n- 了 / 过: 见**过**面, 洗**了**澡\n- reduplicación: solo se dobla el verbo: **游游**泳, **跑跑**步\n\nTambién vale repetir el verbo: 我游泳**游了**一个小时.\n\n**En el esqueleto**: el verbo (con 了) va en *Verbo 1* y lo que queda (cantidad + 泳 / 步 / 舞 / 忙) en *Objeto*.\n\n> ❌ **Error típico**: 我游泳了一个小时 → 我游了一个小时泳 / 我游泳游了一个小时.\n\n> ❌ **Error típico**: 我帮忙你 → 我帮你 / 我帮你一个忙. Los separables no llevan otro objeto: la persona va con 跟 (跟她见面).",
+      "skeleton": {
+        "focus": ["verb1", "object"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "time": { "zh": "昨天", "py": "zuótiān" },
+              "verb1": { "zh": "游了", "py": "yóu le" },
+              "object": { "zh": "一个小时泳", "py": "yí ge xiǎoshí yǒng" }
+            },
+            "end": "。",
+            "es": "Ayer nadé una hora."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "你", "py": "nǐ" },
+              "aux": { "zh": "能", "py": "néng" },
+              "verb1": { "zh": "帮", "py": "bāng" },
+              "object": { "zh": "我一个忙", "py": "wǒ yí ge máng" },
+              "particle": { "zh": "吗", "py": "ma" }
+            },
+            "end": "？",
+            "es": "¿Me puedes hacer un favor?"
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "大卫每天都跑半个小时步。", "py": "Dàwèi měi tiān dōu pǎo bàn ge xiǎoshí bù.", "es": "David corre media hora todos los días." },
+        { "zh": "她们跳了两个小时舞。", "py": "Tāmen tiào le liǎng ge xiǎoshí wǔ.", "es": "Bailaron dos horas." },
+        { "zh": "我们跑跑步吧。", "py": "Wǒmen pǎopao bù ba.", "es": "Vamos a correr un poco." }
+      ]
+    },
+    {
+      "id": "tres-de",
+      "title": "的, 地, 得: las tres «de»",
+      "unlockedBy": "a2-u07-l4",
+      "markdown": "### Mira qué viene detrás (o delante)\n\n| | Posición | Piensa en… | Ejemplo |\n|---|---|---|---|\n| **的** | … + 的 + **nombre** | «de», «mi», «que…» | 我**的**书, 唱歌**的**女孩儿 |\n| **地** | adjetivo + 地 + **verbo** | «-mente» (cómo se hace) | 他认真**地**画画儿 |\n| **得** | **verbo** + 得 + adjetivo | «lo hace + bien / mal» (cómo sale) | 她画**得**很好 |\n\n- 地 **anuncia** la manera antes de la acción: 慢慢**地**说. 得 **valora** el resultado después: 说**得**很慢.\n- Los adjetivos de una sílaba no llevan 地 si no se doblan: ✗ 他快地跑 → 他跑得很快 / 他快快地跑.\n\n> 🧠 **Mnemotecnia**: 的 tiene 白 (blanco): describe cosas. 地 tiene 土 (tierra): el terreno sobre el que se hace la acción (va antes). 得 tiene 彳 (paso): va «un paso» detrás del verbo.\n\n> 👩‍🏫 **Lo dijo el profe**: en mensajes informales muchos chinos escriben 的 por las tres; en el examen, no.\n\n> ❌ **Error típico**: 他慢慢的说 → 他慢慢**地**说.",
+      "skeleton": {
+        "focus": ["adverb", "complement"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "他", "py": "tā" },
+              "adverb": { "zh": "认真地", "py": "rènzhēn de" },
+              "verb1": { "zh": "画", "py": "huà" },
+              "object": { "zh": "画儿", "py": "huàr" }
+            },
+            "end": "。",
+            "es": "Pinta con mucho cuidado."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "她", "py": "tā" },
+              "verb1": { "zh": "画画儿", "py": "huà huàr" },
+              "verb2": { "zh": "画得", "py": "huà de" },
+              "complement": { "zh": "非常好", "py": "fēicháng hǎo" }
+            },
+            "end": "。",
+            "es": "Pinta muy bien."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "我的老师汉字写得很好看。", "py": "Wǒ de lǎoshī Hànzì xiě de hěn hǎokàn.", "es": "Mi profesora escribe los caracteres muy bonitos." },
+        { "zh": "老师，请慢慢地说。", "py": "Lǎoshī, qǐng mànmàn de shuō.", "es": "Profesora, hable despacio, por favor." },
+        { "zh": "大家高高兴兴地回家了。", "py": "Dàjiā gāogāoxìngxìng de huí jiā le.", "es": "Todos se fueron a casa contentísimos." },
+        { "zh": "我喜欢他写的小说。", "py": "Wǒ xǐhuan tā xiě de xiǎoshuō.", "es": "Me gustan las novelas que escribe." }
+      ],
+      "sourceNotes": ["zh-contrast-de-de-de", "zh-particle-de-adverbial", "zh-particle-de-complement"]
+    },
+    {
+      "id": "direccional-laiqu",
+      "title": "Verbo + 来 / 去: hacia mí o lejos de mí",
+      "unlockedBy": "a2-u08-l2",
+      "markdown": "### El chino siempre dice hacia dónde\n\n- **来** = hacia quien habla: 上来 «sube (aquí arriba)», 进来 «entra», 过来 «ven».\n- **去** = lejos de quien habla: 下去 «baja (allí abajo)», 出去 «sal», 回去 «vuelve (allí)».\n\nSi estás en el tercer piso y tu amigo en la calle: **你上来吧**. Si estás en la calle: **我上去**.\n\n### ¿Dónde va el lugar?\n\n**Entre el verbo y 来 / 去**: 回**宿舍**去 · 进**教室**来 · 上**楼**来 (nunca ✗ 回去宿舍).\n\n**Convención del esqueleto**: sin lugar, el bloque entero va en *Verbo 1* (上来, 回去). Con lugar, el verbo en *Verbo 1*, el lugar en *Objeto* y 来 / 去 en *Complemento*: 回 · 宿舍 · 去.\n\n> ⚠️ **Ojo**: el 来 / 去 del complemento suele ser átono: shànglai, xiàqu, huílai.\n\n> 💡 **Truco**: recuerda que 去 y 来 solos ya llevan el «a» dentro: 去学校, 来我家 (sin 到 ni 在).",
+      "skeleton": {
+        "focus": ["verb1", "complement"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "你", "py": "nǐ" },
+              "verb1": { "zh": "上来", "py": "shànglai" },
+              "particle": { "zh": "吧", "py": "ba" }
+            },
+            "end": "。",
+            "es": "Sube (aquí arriba)."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "小李", "py": "Xiǎo Lǐ" },
+              "verb1": { "zh": "回", "py": "huí" },
+              "object": { "zh": "宿舍", "py": "sùshè" },
+              "complement": { "zh": "去", "py": "qu" },
+              "particle": { "zh": "了", "py": "le" }
+            },
+            "end": "。",
+            "es": "Xiao Li se ha vuelto a la residencia.",
+            "esOrder": [
+              { "text": "Xiao Li", "slot": "subject" },
+              { "text": "se ha vuelto", "slot": "verb1" },
+              { "text": "a la residencia", "slot": "object" }
+            ]
+          },
+          {
+            "slots": {
+              "subject": { "zh": "王老师", "py": "Wáng lǎoshī" },
+              "verb1": { "zh": "进", "py": "jìn" },
+              "object": { "zh": "教室", "py": "jiàoshì" },
+              "complement": { "zh": "来", "py": "lai" },
+              "particle": { "zh": "了", "py": "le" }
+            },
+            "end": "。",
+            "es": "La profesora Wang ha entrado en el aula."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "你过来一下！", "py": "Nǐ guòlai yíxià!", "es": "¡Ven un momento!" },
+        { "zh": "我们现在下去吧。", "py": "Wǒmen xiànzài xiàqu ba.", "es": "Bajemos ya." },
+        { "zh": "大卫上楼去了。", "py": "Dàwèi shàng lóu qu le.", "es": "David ha subido al piso de arriba." },
+        { "zh": "外面很冷，你进来吧。", "py": "Wàimiàn hěn lěng, nǐ jìnlai ba.", "es": "Fuera hace mucho frío: entra." }
+      ],
+      "sourceNotes": ["zh-grammar-lai-qu"]
+    },
+    {
+      "id": "direccional-fisico",
+      "title": "Verbo + 上 / 下 / 进 / 出 / 过 / 回 + lugar",
+      "unlockedBy": "a2-u08-l3",
+      "markdown": "### Cómo te mueves + hacia dónde\n\nEl **verbo** dice *cómo* te mueves (走 andando, 跑 corriendo, 开 en coche) y la segunda sílaba, *hacia dónde*:\n\n| | | ejemplo |\n|---|---|---|\n| 上 | arriba | 走上楼 subir (andando) |\n| 下 | abajo | 跑下楼 bajar corriendo |\n| 进 | dentro | 走进公园 entrar en el parque |\n| 出 | fuera | 走出教室 salir del aula |\n| 过 | pasar, cruzar | 走过广场 cruzar la plaza |\n| 回 | volver | 走回宿舍 volver andando |\n\nEl lugar va **justo detrás**: 走进**公园**. En español el «cómo» suele ir aparte («entró **corriendo**»); en chino va delante, pegado: 跑进.\n\n**Convención del esqueleto**: verbo + dirección en *Verbo 1* (走进) y el lugar en *Objeto* (公园).\n\n> ⚠️ **Ojo**: 我们走过广场 = cruzamos la plaza; 我走过这条路 puede ser también «he recorrido esta calle (alguna vez)», con el 过 de experiencia. El contexto lo aclara.",
+      "skeleton": {
+        "focus": ["verb1", "object"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "我们", "py": "wǒmen" },
+              "verb1": { "zh": "走进", "py": "zǒujìn" },
+              "object": { "zh": "公园", "py": "gōngyuán" },
+              "particle": { "zh": "了", "py": "le" }
+            },
+            "end": "。",
+            "es": "Hemos entrado en el parque."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "小狗", "py": "xiǎogǒu" },
+              "verb1": { "zh": "跑出", "py": "pǎochū" },
+              "object": { "zh": "房间", "py": "fángjiān" },
+              "particle": { "zh": "了", "py": "le" }
+            },
+            "end": "。",
+            "es": "El perrito ha salido corriendo de la habitación.",
+            "esOrder": [
+              { "text": "El perrito", "slot": "subject" },
+              { "text": "ha salido corriendo", "slot": "verb1" },
+              { "text": "de la habitación", "slot": "object" }
+            ]
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "他跑下楼了。", "py": "Tā pǎoxià lóu le.", "es": "Ha bajado corriendo las escaleras." },
+        { "zh": "大卫走过广场了。", "py": "Dàwèi zǒuguò guǎngchǎng le.", "es": "David ha cruzado la plaza." },
+        { "zh": "我每天下午走过这个花园。", "py": "Wǒ měi tiān xiàwǔ zǒuguò zhège huāyuán.", "es": "Todas las tardes paso por este jardín." }
+      ]
+    },
+    {
+      "id": "potencial-dedong",
+      "title": "Potencial: 听得懂 / 听不懂",
+      "unlockedBy": "b1-u03-l1",
+      "markdown": "### ¿Eres capaz o no?\n\nYa conoces el resultado: 听**懂**了 = lo he entendido (ha pasado). Si metes **得** o **不** entre el verbo y el resultado, ya no cuentas lo que pasó, sino **si es posible**:\n\n| | |\n|---|---|\n| 听**得**懂 | puedo entenderlo (lo que oigo) |\n| 听**不**懂 | no consigo entenderlo |\n| 看**得**懂 / 看**不**懂 | entiendo / no entiendo lo que leo |\n\nEs el **complemento potencial**: para estas cosas se usa mucho más que 能.\n\n- **Negativa**: cambia 得 por 不. ✗ 不听得懂.\n- **没听懂 ≠ 听不懂**: 没听懂 = esta vez no lo he entendido; 听不懂 = no soy capaz.\n- **Pregunta**: 听得懂**吗**？ o 听得懂**听不懂**？\n\n**En el esqueleto**: el verbo en *Verbo 1* y **得 / 不 + resultado** en *Complemento* (听 · 得懂). El objeto suele ir **delante, como tema**, junto al sujeto (老师的话我听不懂). Si va detrás, el bloque entero va en *Verbo 1*: 听不懂 · 上海话.\n\n> ⚠️ **Ojo** (pronunciación): el 得 y el 不 de en medio se dicen **átonos**: tīng de dǒng, tīng bu dǒng.",
+      "skeleton": {
+        "focus": [
+          "complement"
+        ],
+        "sentences": [
+          {
+            "slots": {
+              "subject": {
+                "zh": "老师的话我",
+                "py": "lǎoshī de huà wǒ"
+              },
+              "adverb": {
+                "zh": "都",
+                "py": "dōu"
+              },
+              "verb1": {
+                "zh": "听",
+                "py": "tīng"
+              },
+              "complement": {
+                "zh": "得懂",
+                "py": "de dǒng"
+              }
+            },
+            "end": "。",
+            "es": "Entiendo todo lo que dice la profesora."
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "这个录音我",
+                "py": "zhège lùyīn wǒ"
+              },
+              "verb1": {
+                "zh": "听",
+                "py": "tīng"
+              },
+              "complement": {
+                "zh": "不懂",
+                "py": "bu dǒng"
+              }
+            },
+            "end": "。",
+            "es": "Esta grabación no consigo entenderla."
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "你",
+                "py": "nǐ"
+              },
+              "verb1": {
+                "zh": "看",
+                "py": "kàn"
+              },
+              "complement": {
+                "zh": "得懂",
+                "py": "de dǒng"
+              },
+              "particle": {
+                "zh": "吗",
+                "py": "ma"
+              }
+            },
+            "end": "？",
+            "es": "¿Lo entiendes (leyendo)?"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "zh": "现在雨果看得懂中文书了。",
+          "py": "Xiànzài Yǔguǒ kàn de dǒng Zhōngwén shū le.",
+          "es": "Ahora Hugo ya entiende libros en chino."
+        },
+        {
+          "zh": "上海话我听不懂。",
+          "py": "Shànghǎihuà wǒ tīng bu dǒng.",
+          "es": "El shanghainés no lo entiendo."
+        },
+        {
+          "zh": "我没听懂，您能再说一遍吗？",
+          "py": "Wǒ méi tīngdǒng, nín néng zài shuō yí biàn ma?",
+          "es": "No lo he entendido, ¿puede repetirlo?"
+        },
+        {
+          "zh": "老师的话你们听得懂听不懂？",
+          "py": "Lǎoshī de huà nǐmen tīng de dǒng tīng bu dǒng?",
+          "es": "¿Entendéis lo que dice la profesora o no?"
+        }
+      ]
+    },
+    {
+      "id": "potencial-laideji",
+      "title": "¿Da tiempo? 来得及 / 来不及, 写得完 / 写不完",
+      "unlockedBy": "b1-u03-l3",
+      "markdown": "### Cuando vas justo de tiempo\n\n- **来得及 / 来不及** = da tiempo / no da tiempo. Pueden ir **solos** (来不及了！) o con **otro verbo detrás**: 来不及**吃早饭**.\n- **V得完 / V不完** = poder / no poder **terminar** algo (por tiempo o porque es demasiado): 写得完, 做不完, 吃不完.\n\nEl plazo va **delante** del verbo, en *Tiempo*: 今天写不完, 一个星期做得完.\n\n**En el esqueleto**: 来 en *Verbo 1* y 得及 / 不及 en *Complemento*. Con otro verbo detrás, 来不及 entero en *Verbo 1* y el otro verbo en *Verbo 2*.\n\n> ⚠️ **Ojo**: 我不能写完 suena a «no me dejan terminarlo». Si es por tiempo o cantidad, potencial: 我**写不完**.",
+      "skeleton": {
+        "focus": [
+          "complement"
+        ],
+        "sentences": [
+          {
+            "slots": {
+              "subject": {
+                "zh": "我们",
+                "py": "wǒmen"
+              },
+              "adverb": {
+                "zh": "还",
+                "py": "hái"
+              },
+              "verb1": {
+                "zh": "来",
+                "py": "lái"
+              },
+              "complement": {
+                "zh": "得及",
+                "py": "de jí"
+              }
+            },
+            "end": "。",
+            "es": "Todavía llegamos a tiempo."
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "这么多作业我",
+                "py": "zhème duō zuòyè wǒ"
+              },
+              "time": {
+                "zh": "今天",
+                "py": "jīntiān"
+              },
+              "verb1": {
+                "zh": "做",
+                "py": "zuò"
+              },
+              "complement": {
+                "zh": "不完",
+                "py": "bu wán"
+              }
+            },
+            "end": "。",
+            "es": "Tantos deberes no me da tiempo a acabarlos hoy."
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "我",
+                "py": "wǒ"
+              },
+              "time": {
+                "zh": "今天早上",
+                "py": "jīntiān zǎoshang"
+              },
+              "verb1": {
+                "zh": "来不及",
+                "py": "lái bu jí"
+              },
+              "verb2": {
+                "zh": "吃",
+                "py": "chī"
+              },
+              "object": {
+                "zh": "早饭",
+                "py": "zǎofàn"
+              },
+              "particle": {
+                "zh": "了",
+                "py": "le"
+              }
+            },
+            "end": "。",
+            "es": "Esta mañana no me ha dado tiempo a desayunar."
+          }
+        ]
+      },
+      "examples": [
+        {
+          "zh": "快走吧，来不及了！",
+          "py": "Kuài zǒu ba, lái bu jí le!",
+          "es": "¡Vámonos ya, que no llegamos!"
+        },
+        {
+          "zh": "这个报告我明天以前写得完。",
+          "py": "Zhège bàogào wǒ míngtiān yǐqián xiě de wán.",
+          "es": "Este trabajo puedo terminarlo antes de mañana."
+        },
+        {
+          "zh": "菜太多了，我们吃不完。",
+          "py": "Cài tài duō le, wǒmen chī bu wán.",
+          "es": "Hay demasiada comida: no nos la vamos a acabar."
+        },
+        {
+          "zh": "现在去还来得及吗？",
+          "py": "Xiànzài qù hái lái de jí ma?",
+          "es": "Si vamos ahora, ¿todavía llegamos?"
+        }
+      ]
+    },
+    {
+      "id": "potencial-dao-liao",
+      "title": "找不到, 买不到 y V不了: cuando las circunstancias no dejan",
+      "unlockedBy": "b1-u03-l4",
+      "markdown": "### Dos resultados más para el potencial\n\n- **到** (conseguir): 找**得**到 / 找**不**到 = lo encuentro / no lo encuentro; 买**不**到 = no hay manera de comprarlo (no lo venden, se ha agotado).\n- **了 liǎo** (poder llevarlo a cabo): 去**不**了 = no puedo ir (tengo otra cosa, estoy malo…); 吃不了 = no puedo con eso (es demasiado, pica mucho); 来得了 = puede venir.\n\n| | |\n|---|---|\n| 买**不到** | no lo hay |\n| 买**不了** | no puedo comprarlo (no me llega, es demasiado) |\n\n**En el esqueleto**: el verbo en *Verbo 1* y 得到 / 不了 en *Complemento*; con objeto detrás, el bloque entero en *Verbo 1* (找不到 · 教室).\n\n> ⚠️ **Ojo** (pronunciación): en este uso 了 se lee **liǎo**, con tono pleno; no es el 了 le de siempre.",
+      "skeleton": {
+        "focus": [
+          "complement"
+        ],
+        "sentences": [
+          {
+            "slots": {
+              "subject": {
+                "zh": "我",
+                "py": "wǒ"
+              },
+              "time": {
+                "zh": "明天",
+                "py": "míngtiān"
+              },
+              "verb1": {
+                "zh": "去",
+                "py": "qù"
+              },
+              "complement": {
+                "zh": "不了",
+                "py": "bu liǎo"
+              }
+            },
+            "end": "。",
+            "es": "Mañana no puedo ir."
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "那本教材我",
+                "py": "nà běn jiàocái wǒ"
+              },
+              "place": {
+                "zh": "在书店",
+                "py": "zài shūdiàn"
+              },
+              "verb1": {
+                "zh": "买",
+                "py": "mǎi"
+              },
+              "complement": {
+                "zh": "不到",
+                "py": "bu dào"
+              }
+            },
+            "end": "。",
+            "es": "Ese libro de texto no lo encuentro en la librería."
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "你",
+                "py": "nǐ"
+              },
+              "verb1": {
+                "zh": "找得到",
+                "py": "zhǎo de dào"
+              },
+              "object": {
+                "zh": "我们的教室",
+                "py": "wǒmen de jiàoshì"
+              },
+              "particle": {
+                "zh": "吗",
+                "py": "ma"
+              }
+            },
+            "end": "？",
+            "es": "¿Sabrás encontrar nuestra aula?"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "zh": "我找不到中文系的办公室。",
+          "py": "Wǒ zhǎo bu dào Zhōngwénxì de bàngōngshì.",
+          "es": "No encuentro el despacho del departamento de chino."
+        },
+        {
+          "zh": "这么多菜我们吃不了。",
+          "py": "Zhème duō cài wǒmen chī bu liǎo.",
+          "es": "No podemos con tanta comida."
+        },
+        {
+          "zh": "太辣了，我吃不了。",
+          "py": "Tài là le, wǒ chī bu liǎo.",
+          "es": "Pica demasiado, no puedo comérmelo."
+        },
+        {
+          "zh": "明天的课你来得了来不了？",
+          "py": "Míngtiān de kè nǐ lái de liǎo lái bu liǎo?",
+          "es": "¿Puedes venir a la clase de mañana o no?"
+        }
+      ]
+    },
+    {
+      "id": "potencial-dakai",
+      "title": "打不开, 离不开: el potencial de los verbos con resultado",
+      "unlockedBy": "b1-u03-l5",
+      "markdown": "### 得 / 不 se mete en medio\n\nMuchos verbos ya llevan dentro su resultado: **打开** (abrir), **离开** (irse, dejar), **看见** (ver). Para el potencial, **得 / 不** se mete **entre las dos sílabas**:\n\n| Verbo | Sí puede | No puede |\n|---|---|---|\n| 打开 | 打**得**开 | 打**不**开 (no se abre) |\n| 离开 | 离**得**开 | 离**不**开 (no puedo prescindir de…) |\n| 看见 | 看**得**见 | 看**不**见 |\n\n**离不开** se usa muchísimo en sentido figurado: 我离不开咖啡 = no puedo vivir sin café.\n\nLos verbos que **no se pueden partir**, como 完成, añaden **得了 / 不了** detrás: 完成不了.\n\n**En el esqueleto**: 打 / 离 en *Verbo 1* y 得开 / 不开 en *Complemento*; con el objeto detrás, el bloque entero en *Verbo 1* (离不开 · 手机).",
+      "skeleton": {
+        "focus": [
+          "complement"
+        ],
+        "sentences": [
+          {
+            "slots": {
+              "subject": {
+                "zh": "这个门",
+                "py": "zhège mén"
+              },
+              "verb1": {
+                "zh": "打",
+                "py": "dǎ"
+              },
+              "complement": {
+                "zh": "不开",
+                "py": "bu kāi"
+              }
+            },
+            "end": "。",
+            "es": "Esta puerta no se abre."
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "现在的学生",
+                "py": "xiànzài de xuésheng"
+              },
+              "verb1": {
+                "zh": "离不开",
+                "py": "lí bu kāi"
+              },
+              "object": {
+                "zh": "手机",
+                "py": "shǒujī"
+              }
+            },
+            "end": "。",
+            "es": "Los estudiantes de hoy no pueden vivir sin el móvil."
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "这个实验我们",
+                "py": "zhège shíyàn wǒmen"
+              },
+              "time": {
+                "zh": "今天",
+                "py": "jīntiān"
+              },
+              "verb1": {
+                "zh": "完成",
+                "py": "wánchéng"
+              },
+              "complement": {
+                "zh": "得了",
+                "py": "de liǎo"
+              },
+              "particle": {
+                "zh": "吗",
+                "py": "ma"
+              }
+            },
+            "end": "？",
+            "es": "¿Podemos completar hoy este experimento?"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "zh": "这封电子邮件我打不开。",
+          "py": "Zhè fēng diànzǐ yóujiàn wǒ dǎ bu kāi.",
+          "es": "Este correo electrónico no consigo abrirlo."
+        },
+        {
+          "zh": "大卫打得开这个文件。",
+          "py": "Dàwèi dǎ de kāi zhège wénjiàn.",
+          "es": "David puede abrir este archivo."
+        },
+        {
+          "zh": "我离不开咖啡。",
+          "py": "Wǒ lí bu kāi kāfēi.",
+          "es": "No puedo vivir sin café."
+        },
+        {
+          "zh": "黑板上的字你看得见吗？",
+          "py": "Hēibǎn shang de zì nǐ kàn de jiàn ma?",
+          "es": "¿Ves las letras de la pizarra?"
+        }
+      ]
+    },
+    {
+      "id": "grado-o-potencial",
+      "title": "¿Grado o potencial? 写得很好 / 写得好 / 写不好",
+      "unlockedBy": "b1-u03-l6",
+      "markdown": "### Un 得, dos sentidos\n\nLos dos llevan 得 detrás del verbo, pero no dicen lo mismo:\n\n| | Qué dice | Ejemplo |\n|---|---|---|\n| **grado** (A2) | **cómo sale** algo que ya se hace | 她写得**很**好 = escribe muy bien |\n| **potencial** (B1) | **si se puede** | 你写得好吗？ = ¿eres capaz de hacerlo bien? |\n\nLas pistas para distinguirlos:\n\n- El **grado** casi siempre lleva **很, 非常, 不太** delante del adjetivo; el potencial, **nunca**.\n- La **negativa** los separa del todo: grado → 写得**不**好 (no escribe bien); potencial → 写**不**好 (no soy capaz de hacerlo bien).\n- La **pregunta** del grado es 写得**怎么样**？; la del potencial, 写得好写不好？\n\n**En el esqueleto**: en los dos casos el verbo va en *Verbo 1* y lo de detrás en *Complemento*. Lo que cambia es lo que hay **dentro** del complemento.",
+      "skeleton": {
+        "focus": [
+          "verb1",
+          "complement"
+        ],
+        "sentences": [
+          {
+            "slots": {
+              "subject": {
+                "zh": "安娜的汉字",
+                "py": "Ānnà de Hànzì"
+              },
+              "verb1": {
+                "zh": "写得",
+                "py": "xiě de"
+              },
+              "complement": {
+                "zh": "很好",
+                "py": "hěn hǎo"
+              }
+            },
+            "end": "。",
+            "es": "Ana escribe muy bien los caracteres (grado)."
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "这么难的字我",
+                "py": "zhème nán de zì wǒ"
+              },
+              "verb1": {
+                "zh": "写",
+                "py": "xiě"
+              },
+              "complement": {
+                "zh": "不好",
+                "py": "bu hǎo"
+              }
+            },
+            "end": "。",
+            "es": "Un carácter tan difícil no soy capaz de escribirlo bien (potencial)."
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "他",
+                "py": "tā"
+              },
+              "verb1": {
+                "zh": "说得",
+                "py": "shuō de"
+              },
+              "complement": {
+                "zh": "不太清楚",
+                "py": "bú tài qīngchu"
+              }
+            },
+            "end": "。",
+            "es": "No lo explica muy claro (grado, negativa)."
+          }
+        ]
+      },
+      "examples": [
+        {
+          "zh": "她的报告写得非常好。",
+          "py": "Tā de bàogào xiě de fēicháng hǎo.",
+          "es": "Su trabajo está muy bien escrito."
+        },
+        {
+          "zh": "这个字我写不好。",
+          "py": "Zhège zì wǒ xiě bu hǎo.",
+          "es": "Este carácter no me sale bien."
+        },
+        {
+          "zh": "你说得怎么样？—说得不太好。",
+          "py": "Nǐ shuō de zěnmeyàng? — Shuō de bú tài hǎo.",
+          "es": "¿Qué tal lo hablas? —No muy bien."
+        },
+        {
+          "zh": "这篇文章你一个星期写得好写不好？",
+          "py": "Zhè piān wénzhāng nǐ yí ge xīngqī xiě de hǎo xiě bu hǎo?",
+          "es": "¿Eres capaz de escribir bien este texto en una semana?"
+        }
+      ]
+    },
+    {
+      "id": "direccional-compuesto",
+      "title": "Direccionales compuestos: 跑上来, 走进去, 站起来",
+      "unlockedBy": "b1-u04-l1",
+      "markdown": "### Tres piezas: cómo + hacia dónde + respecto a mí\n\n**verbo de movimiento** (cómo) + **上 / 下 / 进 / 出 / 回 / 过 / 起** (hacia dónde) + **来 / 去** (hacia quien habla o lejos de él).\n\n| | 来 (hacia aquí) | 去 (hacia allí) |\n|---|---|---|\n| 上 subir | 跑上来 | 走上去 |\n| 下 bajar | 走下来 | 跑下去 |\n| 进 entrar | 走进来 | 跑进去 |\n| 出 salir | 走出来 | 跑出去 |\n| 回 volver | 跑回来 | 走回去 |\n| 过 acercarse | 走过来 | 跑过去 |\n| 起 levantarse | 站起来 | — |\n\n- **来 o 去 depende de dónde estás tú**: si estoy arriba, 你跑**上来**; si estoy abajo, 你跑**上去**.\n- En español el «cómo» suele ir en gerundio (*subir corriendo*); en chino va **primero**: 跑上来.\n\n**En el esqueleto**: sin lugar ni objeto, el bloque entero va en *Verbo 1* (跑上来, 站起来).\n\n> ⚠️ **Ojo** (pronunciación): las dos últimas sílabas suelen ir en tono neutro: pǎo shanglai, zǒu jinqu.",
+      "skeleton": {
+        "focus": [
+          "verb1"
+        ],
+        "sentences": [
+          {
+            "slots": {
+              "subject": {
+                "zh": "小李",
+                "py": "Xiǎo Lǐ"
+              },
+              "verb1": {
+                "zh": "跑上来",
+                "py": "pǎo shanglai"
+              },
+              "particle": {
+                "zh": "了",
+                "py": "le"
+              }
+            },
+            "end": "。",
+            "es": "Xiao Li ha subido corriendo (hasta aquí)."
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "你",
+                "py": "nǐ"
+              },
+              "adverb": {
+                "zh": "快",
+                "py": "kuài"
+              },
+              "verb1": {
+                "zh": "走过来",
+                "py": "zǒu guolai"
+              },
+              "particle": {
+                "zh": "吧",
+                "py": "ba"
+              }
+            },
+            "end": "！",
+            "es": "¡Ven aquí, rápido!"
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "大卫",
+                "py": "Dàwèi"
+              },
+              "adverb": {
+                "zh": "还没",
+                "py": "hái méi"
+              },
+              "verb1": {
+                "zh": "走出来",
+                "py": "zǒu chulai"
+              }
+            },
+            "end": "。",
+            "es": "David todavía no ha salido."
+          }
+        ]
+      },
+      "examples": [
+        {
+          "zh": "大家都站起来了。",
+          "py": "Dàjiā dōu zhàn qilai le.",
+          "es": "Todos se han puesto de pie."
+        },
+        {
+          "zh": "你别跑下去！",
+          "py": "Nǐ bié pǎo xiaqu!",
+          "es": "¡No bajes corriendo!"
+        },
+        {
+          "zh": "安娜朝我们跑过来了。",
+          "py": "Ānnà cháo wǒmen pǎo guolai le.",
+          "es": "Ana ha venido corriendo hacia nosotros."
+        },
+        {
+          "zh": "大卫跑回来了没有？",
+          "py": "Dàwèi pǎo huilai le méiyǒu?",
+          "es": "¿Ha vuelto David corriendo?"
+        }
+      ]
+    },
+    {
+      "id": "compuesto-lugar-medio",
+      "title": "El lugar, en medio: 走进教室来",
+      "unlockedBy": "b1-u04-l2",
+      "markdown": "### El direccional se parte en dos\n\nCon un **lugar**, el complemento compuesto se **parte** y el lugar se mete **en medio**, justo antes de 来 / 去:\n\n> 走进 + **教室** + 来 · 跑下 + **楼** + 去 · 走回 + **宿舍** + 去\n\nNunca al final: ✗ 走进来教室. El 来 / 去 sigue diciendo si el movimiento viene hacia ti o se aleja.\n\n**En el esqueleto**: verbo + dirección en *Verbo 1* (走进, 跑下), el lugar en *Objeto* (教室, 楼) y 来 / 去 en *Complemento*.\n\n> ⚠️ **Ojo**: 回 también funciona solo, sin verbo de movimiento delante: 你什么时候**回**宿舍**来**？",
+      "skeleton": {
+        "focus": [
+          "verb1",
+          "object",
+          "complement"
+        ],
+        "sentences": [
+          {
+            "slots": {
+              "subject": {
+                "zh": "王老师",
+                "py": "Wáng lǎoshī"
+              },
+              "verb1": {
+                "zh": "走进",
+                "py": "zǒujìn"
+              },
+              "object": {
+                "zh": "教室",
+                "py": "jiàoshì"
+              },
+              "complement": {
+                "zh": "来",
+                "py": "lai"
+              },
+              "particle": {
+                "zh": "了",
+                "py": "le"
+              }
+            },
+            "end": "。",
+            "es": "La profesora Wang ha entrado en el aula.",
+            "esOrder": [
+              {
+                "text": "La profesora Wang",
+                "slot": "subject"
+              },
+              {
+                "text": "ha entrado",
+                "slot": "verb1"
+              },
+              {
+                "text": "en el aula",
+                "slot": "object"
+              }
+            ]
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "我们",
+                "py": "wǒmen"
+              },
+              "verb1": {
+                "zh": "跑下",
+                "py": "pǎoxià"
+              },
+              "object": {
+                "zh": "楼",
+                "py": "lóu"
+              },
+              "complement": {
+                "zh": "去",
+                "py": "qu"
+              },
+              "particle": {
+                "zh": "吧",
+                "py": "ba"
+              }
+            },
+            "end": "！",
+            "es": "¡Bajemos corriendo!"
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "你",
+                "py": "nǐ"
+              },
+              "time": {
+                "zh": "什么时候",
+                "py": "shénme shíhou"
+              },
+              "verb1": {
+                "zh": "回",
+                "py": "huí"
+              },
+              "object": {
+                "zh": "宿舍",
+                "py": "sùshè"
+              },
+              "complement": {
+                "zh": "来",
+                "py": "lai"
+              }
+            },
+            "end": "？",
+            "es": "¿Cuándo vuelves a la residencia?"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "zh": "大卫已经走进地铁站去了。",
+          "py": "Dàwèi yǐjīng zǒujìn dìtiězhàn qu le.",
+          "es": "David ya ha entrado en la estación de metro."
+        },
+        {
+          "zh": "小李跑回宿舍去了。",
+          "py": "Xiǎo Lǐ pǎohuí sùshè qu le.",
+          "es": "Xiao Li ha vuelto corriendo a la residencia."
+        },
+        {
+          "zh": "安娜还没走进教室来。",
+          "py": "Ānnà hái méi zǒujìn jiàoshì lai.",
+          "es": "Ana todavía no ha entrado en el aula."
+        },
+        {
+          "zh": "你们别跑上楼去！",
+          "py": "Nǐmen bié pǎoshàng lóu qu!",
+          "es": "¡No subáis corriendo!"
+        }
+      ]
+    },
+    {
+      "id": "compuesto-objeto",
+      "title": "Con una cosa: 拿出一本书来, 拿出来一本书, 把箱子搬上去",
+      "unlockedBy": "b1-u04-l3",
+      "markdown": "### Tres sitios para la cosa\n\nCuando el verbo lleva **una cosa** (拿, 带, 买, 搬, 送…):\n\n1. **En medio**, como el lugar: 拿出**一本书**来, 带回**两本书**去. Vale siempre.\n2. **Al final**, detrás de 来 / 去: 拿出来**一本书**, 买回来了**很多水果**. Solo con acciones ya hechas y cosas con cantidad.\n3. **Delante, con 把** (b1-u01), cuando la cosa ya es conocida: **把箱子**搬上去. El direccional queda entero detrás.\n\nUn **lugar**, en cambio, va **siempre en medio** (走进教室来).\n\n**En el esqueleto**: en medio → *Verbo 1* = 拿出, *Objeto* = 一本书, *Complemento* = 来. Al final → *Verbo 1* = 拿出来, *Objeto* = 一本书. Con 把 → 把 + cosa en *Con quién* y el bloque entero en *Verbo 1*.",
+      "skeleton": {
+        "focus": [
+          "verb1",
+          "object",
+          "complement"
+        ],
+        "sentences": [
+          {
+            "slots": {
+              "subject": {
+                "zh": "老板",
+                "py": "lǎobǎn"
+              },
+              "verb1": {
+                "zh": "拿出",
+                "py": "náchū"
+              },
+              "object": {
+                "zh": "几张邮票",
+                "py": "jǐ zhāng yóupiào"
+              },
+              "complement": {
+                "zh": "来",
+                "py": "lai"
+              },
+              "particle": {
+                "zh": "了",
+                "py": "le"
+              }
+            },
+            "end": "。",
+            "es": "El dueño ha sacado unos sellos."
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "我",
+                "py": "wǒ"
+              },
+              "verb1": {
+                "zh": "买回来了",
+                "py": "mǎi huilai le"
+              },
+              "object": {
+                "zh": "很多水果",
+                "py": "hěn duō shuǐguǒ"
+              }
+            },
+            "end": "。",
+            "es": "He vuelto con un montón de fruta comprada."
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "你",
+                "py": "nǐ"
+              },
+              "with": {
+                "zh": "把这些箱子",
+                "py": "bǎ zhèxiē xiāngzi"
+              },
+              "verb1": {
+                "zh": "搬上去",
+                "py": "bān shangqu"
+              },
+              "particle": {
+                "zh": "吧",
+                "py": "ba"
+              }
+            },
+            "end": "。",
+            "es": "Sube estas cajas."
+          }
+        ]
+      },
+      "examples": [
+        {
+          "zh": "雨果拿出一张卡来。",
+          "py": "Yǔguǒ náchū yì zhāng kǎ lai.",
+          "es": "Hugo saca una tarjeta."
+        },
+        {
+          "zh": "安娜带回两本书去了。",
+          "py": "Ānnà dàihuí liǎng běn shū qu le.",
+          "es": "Ana se ha llevado dos libros (a casa)."
+        },
+        {
+          "zh": "我没带钱包出来！",
+          "py": "Wǒ méi dài qiánbāo chulai!",
+          "es": "¡No he traído la cartera!"
+        },
+        {
+          "zh": "你能把那件衣服拿过来吗？",
+          "py": "Nǐ néng bǎ nà jiàn yīfu ná guolai ma?",
+          "es": "¿Me puedes acercar esa prenda?"
+        }
+      ]
+    },
+    {
+      "id": "direccional-figurado",
+      "title": "Direccionales figurados: 想起, 想出, 写下",
+      "unlockedBy": "b1-u04-l4",
+      "markdown": "### Ya no hay movimiento: hay resultado\n\n| Forma | Sentido | Ejemplo |\n|---|---|---|\n| V + **起来** | levantarse; (con 想) venir a la memoria | 站起来, 我想起来了 |\n| V + **起** + O (+ 来) | acordarse de algo concreto | 想起她的名字来了 |\n| V + **出** (+ 来) | sacar a la luz: idear, reconocer | 想出一个办法, 看出来 |\n| V + **下** (+ 来) | dejar algo fijado | 写下电话, 记下来 |\n\n- **想起 ≠ 记得**: 记得 es un estado («me acuerdo», lo sigo sabiendo); 想起来 es el **momento** en que algo te viene a la cabeza.\n- **No consigo acordarme** es un potencial (b1-u03): 我想**不起来**.\n\n**En el esqueleto**: sin objeto, el bloque entero en *Verbo 1* (想起来了); con objeto, *Verbo 1* = 想出了 / 写下 y *Objeto* = la cosa; si el objeto va entre 起 y 来, el 来 va en *Complemento*. El potencial, como siempre: 想 · 不起来.",
+      "skeleton": {
+        "focus": [
+          "verb1",
+          "object"
+        ],
+        "sentences": [
+          {
+            "slots": {
+              "subject": {
+                "zh": "小李",
+                "py": "Xiǎo Lǐ"
+              },
+              "verb1": {
+                "zh": "想出了",
+                "py": "xiǎngchū le"
+              },
+              "object": {
+                "zh": "一个好办法",
+                "py": "yí ge hǎo bànfǎ"
+              }
+            },
+            "end": "。",
+            "es": "A Xiao Li se le ha ocurrido una buena idea."
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "你",
+                "py": "nǐ"
+              },
+              "verb1": {
+                "zh": "写下",
+                "py": "xiěxià"
+              },
+              "object": {
+                "zh": "你的电话号码",
+                "py": "nǐ de diànhuà hàomǎ"
+              },
+              "particle": {
+                "zh": "吧",
+                "py": "ba"
+              }
+            },
+            "end": "。",
+            "es": "Apunta tu número de teléfono."
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "我",
+                "py": "wǒ"
+              },
+              "verb1": {
+                "zh": "想",
+                "py": "xiǎng"
+              },
+              "complement": {
+                "zh": "不起来",
+                "py": "bu qǐlái"
+              },
+              "particle": {
+                "zh": "了",
+                "py": "le"
+              }
+            },
+            "end": "。",
+            "es": "No consigo acordarme."
+          }
+        ]
+      },
+      "examples": [
+        {
+          "zh": "我想起来了！他是安娜的朋友。",
+          "py": "Wǒ xiǎng qilai le! Tā shì Ānnà de péngyou.",
+          "es": "¡Ya me acuerdo! Es el amigo de Ana."
+        },
+        {
+          "zh": "我想起她的名字来了。",
+          "py": "Wǒ xiǎngqǐ tā de míngzi lai le.",
+          "es": "Ya me he acordado de su nombre."
+        },
+        {
+          "zh": "我们还没想出好的路线。",
+          "py": "Wǒmen hái méi xiǎngchū hǎo de lùxiàn.",
+          "es": "Todavía no se nos ha ocurrido una buena ruta."
+        },
+        {
+          "zh": "你看出来了吗？他不太高兴。",
+          "py": "Nǐ kàn chulai le ma? Tā bú tài gāoxìng.",
+          "es": "¿Te has dado cuenta? No está muy contento."
+        }
+      ]
+    },
+    {
+      "id": "v-qilai-shang",
+      "title": "Empezar: V起来 y V上",
+      "unlockedBy": "b1-u07-l4",
+      "markdown": "### 起来: «ponerse a…»\n\nAdemás de «levantarse» (站起来), **起来** dice que algo **empieza y sigue**:\n\n- 他们**聊起来**了 = se pusieron a charlar. 孩子**哭起来**了 = el niño se echó a llorar.\n- **Con objeto, el objeto va entre 起 y 来**: 下**起雨**来了, 唱**起歌**来了, 聊**起天**来了 (聊天 es separable).\n- Suele llevar **了** al final y, delante, 突然 o 一…就.\n\n### 上: llegar a tener algo nuevo\n\n**V上** = empezar algo **que antes no tenías** o **conseguir llegar** a ello: **用上**微信 (empezar a usarlo), **爱上**上海 (enamorarse de Shanghái).\n\n**En el esqueleto**: sin objeto, el bloque entero en *Verbo 1* (聊起来); con objeto, *Verbo 1* = 下起, *Objeto* = 雨, *Complemento* = 来. V上 + objeto: 用上 en *Verbo 1* y la cosa en *Objeto*.\n\n> ⚠️ **Ojo**: ✗ 下雨起来了 → 下**起雨来**了. El objeto nunca va detrás de 起来.",
+      "skeleton": {
+        "focus": [
+          "verb1",
+          "complement"
+        ],
+        "sentences": [
+          {
+            "slots": {
+              "subject": {
+                "zh": "他们",
+                "py": "tāmen"
+              },
+              "adverb": {
+                "zh": "一见面就",
+                "py": "yí jiànmiàn jiù"
+              },
+              "verb1": {
+                "zh": "聊起来",
+                "py": "liáo qilai"
+              },
+              "particle": {
+                "zh": "了",
+                "py": "le"
+              }
+            },
+            "end": "。",
+            "es": "En cuanto se vieron, se pusieron a charlar."
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "外面",
+                "py": "wàimian"
+              },
+              "verb1": {
+                "zh": "下起",
+                "py": "xiàqǐ"
+              },
+              "object": {
+                "zh": "雨",
+                "py": "yǔ"
+              },
+              "complement": {
+                "zh": "来",
+                "py": "lai"
+              },
+              "particle": {
+                "zh": "了",
+                "py": "le"
+              }
+            },
+            "end": "。",
+            "es": "Fuera se ha puesto a llover."
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "我妈妈",
+                "py": "wǒ māma"
+              },
+              "adverb": {
+                "zh": "也",
+                "py": "yě"
+              },
+              "verb1": {
+                "zh": "用上",
+                "py": "yòngshang"
+              },
+              "object": {
+                "zh": "微信",
+                "py": "Wēixìn"
+              },
+              "particle": {
+                "zh": "了",
+                "py": "le"
+              }
+            },
+            "end": "。",
+            "es": "Mi madre también ha empezado a usar WeChat."
+          }
+        ]
+      },
+      "examples": [
+        {
+          "zh": "孩子突然哭起来了。",
+          "py": "Háizi tūrán kū qilai le.",
+          "es": "El niño se echó a llorar de repente."
+        },
+        {
+          "zh": "大家唱起歌来了。",
+          "py": "Dàjiā chàngqǐ gē lai le.",
+          "es": "Todos se pusieron a cantar."
+        },
+        {
+          "zh": "雨果爱上了上海。",
+          "py": "Yǔguǒ àishang le Shànghǎi.",
+          "es": "Hugo se ha enamorado de Shanghái."
+        },
+        {
+          "zh": "他们为什么笑起来了？",
+          "py": "Tāmen wèi shénme xiào qilai le?",
+          "es": "¿Por qué se han echado a reír?"
+        }
+      ]
+    },
+    {
+      "id": "v-xiaqu-xialai",
+      "title": "Seguir y llegar hasta hoy: V下去 y V下来",
+      "unlockedBy": "b1-u07-l5",
+      "markdown": "### El tiempo también tiene dirección\n\nPiensa en la regla de 来 / 去: 来 viene **hacia mí**, 去 se aleja **de mí**. Y yo estoy en el **presente**:\n\n| | Dirección en el tiempo | Ejemplos |\n|---|---|---|\n| **V下去** | del presente **hacia el futuro**: seguir | 坚持下去, 说下去, 学下去 |\n| **V下来** | del pasado **hasta hoy**: conservarse, quedar | 留下来, 坚持下来 |\n\n- 你说**下去**！ = ¡sigue (hablando)!\n- 这个节日从古代**留下来**了 = esta fiesta se ha conservado desde la antigüedad.\n- Con el **potencial**: 学**不下去**了 = ya no puedo seguir estudiando.\n- **Adjetivo + 下来**: algo se calma o se frena: 安静**下来**, 慢**下来**.\n\n**En el esqueleto**: V下去 / V下来 sin objeto, el bloque entero en *Verbo 1*.",
+      "skeleton": {
+        "focus": [
+          "verb1"
+        ],
+        "sentences": [
+          {
+            "slots": {
+              "subject": {
+                "zh": "我",
+                "py": "wǒ"
+              },
+              "adverb": {
+                "zh": "一定",
+                "py": "yídìng"
+              },
+              "aux": {
+                "zh": "会",
+                "py": "huì"
+              },
+              "verb1": {
+                "zh": "坚持下去",
+                "py": "jiānchí xiaqu"
+              }
+            },
+            "end": "。",
+            "es": "Seguro que voy a seguir adelante."
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "这个节日",
+                "py": "zhège jiérì"
+              },
+              "adverb": {
+                "zh": "从古代一直",
+                "py": "cóng gǔdài yìzhí"
+              },
+              "verb1": {
+                "zh": "留下来",
+                "py": "liú xialai"
+              },
+              "particle": {
+                "zh": "了",
+                "py": "le"
+              }
+            },
+            "end": "。",
+            "es": "Esta fiesta se ha conservado desde la antigüedad."
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "教室里",
+                "py": "jiàoshì li"
+              },
+              "adverb": {
+                "zh": "慢慢",
+                "py": "mànmàn"
+              },
+              "verb1": {
+                "zh": "安静下来",
+                "py": "ānjìng xialai"
+              },
+              "particle": {
+                "zh": "了",
+                "py": "le"
+              }
+            },
+            "end": "。",
+            "es": "El aula se fue quedando en silencio."
+          }
+        ]
+      },
+      "examples": [
+        {
+          "zh": "你说下去吧，我在听。",
+          "py": "Nǐ shuō xiaqu ba, wǒ zài tīng.",
+          "es": "Sigue, que te escucho."
+        },
+        {
+          "zh": "这一年的课雨果都坚持下来了。",
+          "py": "Zhè yì nián de kè Yǔguǒ dōu jiānchí xialai le.",
+          "es": "Hugo ha aguantado las clases de todo el año."
+        },
+        {
+          "zh": "太难了，我真的学不下去了。",
+          "py": "Tài nán le, wǒ zhēn de xué bu xiàqù le.",
+          "es": "Es demasiado difícil: de verdad que ya no puedo seguir estudiando."
+        },
+        {
+          "zh": "你还想学下去吗？",
+          "py": "Nǐ hái xiǎng xué xiaqu ma?",
+          "es": "¿Todavía quieres seguir estudiando?"
+        }
+      ]
+    }
+  ]
+}

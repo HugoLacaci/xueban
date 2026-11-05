@@ -20,15 +20,15 @@ test.describe("Xuébàn · flujos principales", () => {
     await expect(page.getByText(/302 en el mazo/)).toBeVisible();
   });
 
-  test("completar una lección: vocabulario → diálogo → gramática → ejercicios → repaso", async ({ page }) => {
+  test("completar una lección del temario v2 (el enlace antiguo redirige): objetivo → … → ejercicios → apuntes", async ({ page }) => {
     await ready(page);
+    // enlace del temario antiguo → lección equivalente del nuevo
     await page.goto("/zh/aprender/leccion/u01-l1");
-    await expect(page.getByRole("heading", { name: /Hola, gracias, adiós/ })).toBeVisible();
-    await expect(page.getByRole("heading", { name: "Las 7 expresiones que usarás cada día" })).toBeVisible();
-    await page.getByRole("button", { name: "En la puerta de la escuela" }).click();
-    await expect(page.getByRole("heading", { name: "En la puerta de la escuela" })).toBeVisible();
-    await page.getByRole("button", { name: /Preguntas con 吗/ }).click();
-    await expect(page.getByRole("heading", { name: /Preguntas con 吗/ })).toBeVisible();
+    await page.waitForURL(/\/aprender\/leccion\/a1-u01-l1/, { timeout: 20000 });
+    await expect(page.getByRole("heading", { name: /Yo soy, tú eres/ })).toBeVisible({ timeout: 20000 });
+    await expect(page.getByRole("heading", { name: "Objetivo de hoy" })).toBeVisible();
+    await page.getByRole("button", { name: /Sujeto \+ 是/ }).first().click();
+    await expect(page.locator("[data-skeleton]").first()).toBeVisible();
     await page.getByRole("button", { name: "Ejercicios", exact: true }).click();
     // ejercicios: responder o saltar hasta terminar
     await expect(page.locator("text=/\\d+ \\/ \\d+/").first()).toBeVisible({ timeout: 20000 });
@@ -48,9 +48,10 @@ test.describe("Xuébàn · flujos principales", () => {
     }
     await expect(page.getByText("Ejercicios terminados")).toBeVisible({ timeout: 30000 });
     await page.getByRole("button", { name: "Continuar" }).click();
-    await expect(page.getByText("Repaso de la lección")).toBeVisible();
+    // último paso: «Tus apuntes han crecido»
+    await page.getByRole("button", { name: "Tus apuntes" }).click();
+    await expect(page.getByRole("heading", { name: "Tus apuntes han crecido" })).toBeVisible();
     await page.getByRole("button", { name: /Terminar lección/ }).click({ force: true });
-    // guardar progreso + pantalla final con animación: en el servidor de desarrollo puede tardar más de 5 s
     await expect(page.getByText("¡Lección completada!")).toBeVisible({ timeout: 20000 });
     await page.goto("/zh/aprender");
     await expect(page.getByText(/1 de \d+ lecciones completadas/)).toBeVisible();

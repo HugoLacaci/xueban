@@ -1,0 +1,140 @@
+{
+  "id": "a1-u21-l1",
+  "title": "La frase completa: todos los huecos en su sitio",
+  "zh": "明天上午我跟朋友一起坐地铁去学校上汉语课",
+  "goal": "Construir frases largas con todos los huecos del esqueleto en orden (tiempo, sujeto, adverbio, auxiliar, con quién, dónde, verbos, objeto, complemento y partícula).",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "欢迎", "pinyin": "huānyíng", "es": "bienvenido; dar la bienvenida", "note": "欢迎你来上海！ = ¡bienvenido a Shanghái! 欢迎回来 = bienvenido de vuelta." },
+    { "hanzi": "好久", "pinyin": "hǎojiǔ", "es": "mucho tiempo", "note": "好久不见！ = ¡cuánto tiempo sin vernos!" },
+    { "hanzi": "一直", "pinyin": "yìzhí", "es": "todo el tiempo, sin parar; todo recto", "note": "一直在家 = estar en casa todo el rato; 一直走 = sigue todo recto." },
+    { "hanzi": "有人", "pinyin": "yǒu rén", "es": "alguien; hay gente", "note": "有人吗？ = ¿hay alguien?" },
+    { "hanzi": "正好", "pinyin": "zhènghǎo", "es": "justo, precisamente; qué casualidad", "note": "正好我也有课 = justo yo también tengo clase." },
+    { "hanzi": "跟", "pinyin": "gēn", "es": "con", "note": "Repaso de la U11: 跟 + persona + 一起." },
+    { "hanzi": "一起", "pinyin": "yìqǐ", "es": "juntos", "note": "Repaso de la Etapa 0 y la U11." },
+    { "hanzi": "坐", "pinyin": "zuò", "es": "sentarse; ir en (transporte)", "note": "Repaso de la U15: 坐地铁 = ir en metro." }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "好久不见！欢迎回来！", "py": "Hǎojiǔ bú jiàn! Huānyíng huílai!", "es": "¡Cuánto tiempo! ¡Bienvenida de vuelta!" },
+        { "zh": "明天上午我跟朋友一起坐地铁去学校上汉语课。", "py": "Míngtiān shàngwǔ wǒ gēn péngyou yìqǐ zuò dìtiě qù xuéxiào shàng Hànyǔ kè.", "es": "Mañana por la mañana voy con un amigo en metro a la universidad a clase de chino." },
+        { "zh": "我们每天都在图书馆学习两个小时。", "py": "Wǒmen měi tiān dōu zài túshūguǎn xuéxí liǎng ge xiǎoshí.", "es": "Todos los días estudiamos dos horas en la biblioteca." }
+      ]
+    },
+    { "type": "vocab", "title": "Para encontrarse y quedar", "words": ["欢迎", "好久", "一直", "有人", "正好", "跟", "一起", "坐"] },
+    {
+      "type": "phonetics-drill",
+      "title": "Frases largas: pausas por bloques",
+      "markdown": "Una frase larga china no se lee de un tirón ni sílaba a sílaba: se lee **por bloques**, y los bloques son justo **los huecos del esqueleto**. La pausa (muy corta) va **entre huecos, nunca dentro de una palabra**:\n\n明天上午 | 我 | 跟朋友一起 | 坐地铁 | 去学校 | 上汉语课。\n\nEn la práctica se juntan algunos: *明天上午我 | 跟朋友一起 | 坐地铁去学校 | 上汉语课*. Lo que **no** se puede hacer es partir 朋友, 地铁 o 汉语. Y dentro de cada bloque se mantienen los tonos y los cambios (一起 *yìqǐ*, 不见 *bú jiàn*).",
+      "items": [
+        { "audio": "明天上午我跟朋友一起坐地铁去学校。", "prompt": "¿Qué división en bloques es natural?", "options": ["明天上午我 | 跟朋友一起 | 坐地铁去学校", "明天上 | 午我跟朋 | 友一起坐地 | 铁去学校", "明天 | 上午我跟朋友 | 一起坐 | 地铁去学校"], "answer": 0, "explain": "Cada bloque es un hueco (o dos juntos); nunca se rompe una palabra." },
+        { "audio": "我们每天都在图书馆学习。", "prompt": "¿Dónde es más natural la pausa?", "options": ["我们每天都 | 在图书馆学习", "我们每 | 天都在图书 | 馆学习"], "answer": 0, "explain": "Pausa antes del hueco del lugar (在图书馆)." },
+        { "audio": "好久不见", "options": ["hǎojiǔ bú jiàn", "hǎojiǔ bù jiàn", "háojiǔ bú jiàn"], "answer": 0, "explain": "不 + cuarto tono (见) → bú. Y 好久 es 3 + 3: se dice háojiǔ aunque se escriba hǎojiǔ." },
+        { "audio": "欢迎", "options": ["huānyíng", "huānyín", "huányíng"], "answer": 0, "explain": "huān (1.º, -n) + yíng (2.º, -ng)." },
+        { "audio": "一直", "options": ["yìzhí", "yīzhí", "yízhí"], "answer": 0, "explain": "一 delante de segundo tono → yì." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["欢", "迎"],
+      "mnemonics": {
+        "欢": "又 (una mano) + 欠 (una persona con la boca muy abierta): alguien que abre la boca de alegría y saluda con la mano = contento.",
+        "迎": "辶 (caminar) + 卬 (una persona que levanta la vista hacia otra): salir caminando al encuentro de alguien = recibir. 欢迎 = recibir con alegría."
+      }
+    },
+    {
+      "type": "explain",
+      "title": "El esqueleto completo (repaso de A1)",
+      "markdown": "Este es el esqueleto que has ido construyendo en las 20 unidades. Cada hueco tiene su sitio fijo:\n\n| # | Hueco | Ejemplo | Desde |\n|---|---|---|---|\n| 1 | Tiempo (inicial) | 明天上午 | U6 |\n| 2 | Sujeto | 我 | E0 |\n| 3 | Tiempo | 明天 | U5 |\n| 4 | Adverbios | 也 / 都 / 不 / 没 / 常常 / 在 / 快 | U1 |\n| 5 | Auxiliar | 想 / 要 / 会 / 能 / 可以 | U9 |\n| 6 | Con quién | 跟朋友一起 | U11 |\n| 7 | Dónde | 在图书馆 | U14 |\n| 8 | Verbo 1 (+ lugar) | 坐地铁 / 去学校 / 给妈妈打 | U7 |\n| 9 | Verbo 2 | 上 / 吃 / 看 | U7 |\n| 10 | Objeto | 汉语课 / 一杯茶 | E0 |\n| 11 | Complemento | 两个小时 / 一会儿 | U15 |\n| 12 | Partícula | 吗 / 呢 / 吧 / 了 | U1 |\n\nNo hace falta llenarlos todos: lo importante es que **los que uses vayan en este orden**. La regla de oro: **lo que enmarca (cuándo, quién, con quién, dónde) va antes del verbo; lo que completa (qué, cuánto tiempo) va después.**\n\n**Frases yuxtapuestas**: el chino junta a menudo dos frases solo con una coma, sin «y», «pero» ni «así que»: 这是我哥哥，他学习中文。 / 她生病了，不能上课。 En español pondrías un conector; en chino, la coma basta."
+    },
+    {
+      "type": "skeleton",
+      "title": "Todos los huecos en su sitio",
+      "markdown": "Fíjate en cómo cambia el orden respecto al español: en español «con un amigo», «en metro», «en la biblioteca» pueden ir casi en cualquier sitio; en chino tienen un hueco fijo **delante del verbo**.\n\nLos errores típicos de esta etapa son casi todos de orden: el tiempo detrás del verbo, el lugar al final, 一起 antes de 跟…",
+      "focus": ["time0", "subject", "time", "adverb", "aux", "with", "place", "verb1", "verb2", "object", "complement", "particle"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "time0": { "zh": "明天上午", "py": "míngtiān shàngwǔ" }, "subject": { "zh": "我", "py": "wǒ" }, "with": { "zh": "跟朋友一起", "py": "gēn péngyou yìqǐ" }, "verb1": { "zh": "坐地铁去学校", "py": "zuò dìtiě qù xuéxiào" }, "verb2": { "zh": "上", "py": "shàng" }, "object": { "zh": "汉语课", "py": "Hànyǔ kè" } }, "end": "。", "es": "Mañana por la mañana voy con un amigo en metro a la universidad a clase de chino.", "esOrder": [{ "text": "Mañana por la mañana", "slot": "time0" }, { "text": "voy en metro a la universidad", "slot": "verb1" }, { "text": "con un amigo", "slot": "with" }, { "text": "a clase", "slot": "verb2" }, { "text": "de chino", "slot": "object" }] },
+        { "slots": { "subject": { "zh": "我们", "py": "wǒmen" }, "time": { "zh": "每天", "py": "měi tiān" }, "adverb": { "zh": "都", "py": "dōu" }, "place": { "zh": "在图书馆", "py": "zài túshūguǎn" }, "verb1": { "zh": "学习", "py": "xuéxí" }, "object": { "zh": "汉语", "py": "Hànyǔ" } }, "end": "。", "es": "Todos estudiamos chino en la biblioteca todos los días." },
+        { "slots": { "time0": { "zh": "今天晚上", "py": "jīntiān wǎnshang" }, "subject": { "zh": "我", "py": "wǒ" }, "aux": { "zh": "想", "py": "xiǎng" }, "with": { "zh": "跟小李一起", "py": "gēn Xiǎo Lǐ yìqǐ" }, "verb1": { "zh": "去饭馆", "py": "qù fànguǎn" }, "verb2": { "zh": "吃", "py": "chī" }, "object": { "zh": "饺子", "py": "jiǎozi" } }, "end": "。", "es": "Esta noche quiero ir con Xiao Li a un restaurante a comer jiaozi." },
+        { "slots": { "subject": { "zh": "雨果", "py": "Yǔguǒ" }, "time": { "zh": "下午", "py": "xiàwǔ" }, "adverb": { "zh": "一直", "py": "yìzhí" }, "place": { "zh": "在图书馆", "py": "zài túshūguǎn" }, "verb1": { "zh": "看", "py": "kàn" }, "object": { "zh": "书", "py": "shū" } }, "end": "。", "es": "Hugo se pasó toda la tarde leyendo en la biblioteca." },
+        { "slots": { "subject": { "zh": "我们", "py": "wǒmen" }, "place": { "zh": "在这儿", "py": "zài zhèr" }, "verb1": { "zh": "休息", "py": "xiūxi" }, "complement": { "zh": "一会儿", "py": "yíhuìr" }, "particle": { "zh": "吧", "py": "ba" } }, "end": "。", "es": "Descansemos aquí un rato." },
+        { "slots": { "verb1": { "zh": "欢迎你们", "py": "huānyíng nǐmen" }, "verb2": { "zh": "来", "py": "lái" }, "object": { "zh": "上海", "py": "Shànghǎi" } }, "end": "！", "es": "¡Bienvenidos a Shanghái!" }
+      ],
+      "negative": [
+        { "slots": { "time0": { "zh": "明天上午", "py": "míngtiān shàngwǔ" }, "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "不", "py": "bù" }, "with": { "zh": "跟朋友一起", "py": "gēn péngyou yìqǐ" }, "verb1": { "zh": "去学校", "py": "qù xuéxiào" } }, "end": "。", "es": "Mañana por la mañana no voy a la universidad con mi amigo." },
+        { "slots": { "subject": { "zh": "他", "py": "tā" }, "time": { "zh": "昨天", "py": "zuótiān" }, "adverb": { "zh": "没", "py": "méi" }, "place": { "zh": "在食堂", "py": "zài shítáng" }, "verb1": { "zh": "吃", "py": "chī" }, "object": { "zh": "饭", "py": "fàn" } }, "end": "。", "es": "Ayer no comió en el comedor." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "time": { "zh": "明天", "py": "míngtiān" }, "with": { "zh": "跟谁一起", "py": "gēn shéi yìqǐ" }, "verb1": { "zh": "去学校", "py": "qù xuéxiào" } }, "end": "？", "es": "¿Con quién vas mañana a la universidad?" },
+        { "slots": { "time0": { "zh": "星期六", "py": "xīngqīliù" }, "subject": { "zh": "你们", "py": "nǐmen" }, "aux": { "zh": "想不想", "py": "xiǎng bu xiǎng" }, "verb1": { "zh": "去北京", "py": "qù Běijīng" }, "verb2": { "zh": "玩儿", "py": "wánr" } }, "end": "？", "es": "¿Queréis ir a Pekín de paseo el sábado?" }
+      ],
+      "mistakes": [
+        { "wrong": "我去学校明天。", "right": "我明天去学校。", "why": "El tiempo va antes del verbo (o al principio de la frase), nunca al final." },
+        { "wrong": "我在图书馆每天学习。", "right": "我每天在图书馆学习。", "why": "Orden fijo: tiempo → adverbios → con quién → lugar → verbo." },
+        { "wrong": "我一起跟朋友去。", "right": "我跟朋友一起去。", "why": "跟 + persona + 一起: 一起 cierra el bloque." },
+        { "wrong": "我学习汉语在大学。", "right": "我在大学学习汉语。", "why": "在 + lugar va delante del verbo." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "¡Cuánto tiempo!",
+      "lines": [
+        { "speaker": "安娜", "zh": "雨果，好久不见！", "py": "Yǔguǒ, hǎojiǔ bú jiàn!", "es": "¡Hugo, cuánto tiempo!" },
+        { "speaker": "雨果", "zh": "好久不见！你去哪儿了？", "py": "Hǎojiǔ bú jiàn! Nǐ qù nǎr le?", "es": "¡Cuánto tiempo! ¿Dónde has estado?" },
+        { "speaker": "安娜", "zh": "我回西班牙了。我一直在马德里，昨天回上海了。", "py": "Wǒ huí Xībānyá le. Wǒ yìzhí zài Mǎdélǐ, zuótiān huí Shànghǎi le.", "es": "He vuelto a España. He estado todo el tiempo en Madrid y ayer volví a Shanghái." },
+        { "speaker": "雨果", "zh": "欢迎回来！明天上午你去学校吗？", "py": "Huānyíng huílai! Míngtiān shàngwǔ nǐ qù xuéxiào ma?", "es": "¡Bienvenida! ¿Mañana por la mañana vas a la universidad?" },
+        { "speaker": "安娜", "zh": "去。你呢？", "py": "Qù. Nǐ ne?", "es": "Sí. ¿Y tú?" },
+        { "speaker": "雨果", "zh": "我跟小李一起坐地铁去学校上汉语课。", "py": "Wǒ gēn Xiǎo Lǐ yìqǐ zuò dìtiě qù xuéxiào shàng Hànyǔ kè.", "es": "Voy con Xiao Li en metro a la universidad a clase de chino." },
+        { "speaker": "安娜", "zh": "正好我也有课！我们三个人一起去吧。", "py": "Zhènghǎo wǒ yě yǒu kè! Wǒmen sān ge rén yìqǐ qù ba.", "es": "¡Justo yo también tengo clase! Vamos los tres juntos." },
+        { "speaker": "雨果", "zh": "好，我们七点半在地铁站见。", "py": "Hǎo, wǒmen qī diǎn bàn zài dìtiězhàn jiàn.", "es": "Vale, nos vemos a las siete y media en la estación de metro." },
+        { "speaker": "安娜", "zh": "地铁站有人卖早饭吗？", "py": "Dìtiězhàn yǒu rén mài zǎofàn ma?", "es": "¿Hay alguien que venda desayunos en la estación?" },
+        { "speaker": "雨果", "zh": "有，我们在那儿买包子吧！", "py": "Yǒu, wǒmen zài nàr mǎi bāozi ba!", "es": "Sí, ¡compremos allí unos bollos!" }
+      ],
+      "notes": "好久不见 es el saludo para alguien a quien no ves desde hace semanas. Fíjate en la frase larga de Hugo: es exactamente la del esqueleto, con cada bloque en su hueco. 正好 al principio de la frase = «justo, qué casualidad»."
+    },
+    { "type": "exercises", "count": 18, "bank": ["g-word-order", "g-ye-dou", "g-zai", "g-modal-verbs", "g-dates-time"] },
+    {
+      "type": "sentence-builder",
+      "title": "Construye la frase completa",
+      "items": [
+        { "sentence": { "slots": { "time0": { "zh": "明天上午" }, "subject": { "zh": "我" }, "with": { "zh": "跟朋友一起" }, "verb1": { "zh": "坐地铁去学校" }, "verb2": { "zh": "上" }, "object": { "zh": "汉语课" } }, "end": "。", "es": "Mañana por la mañana voy con un amigo en metro a la universidad a clase de chino." }, "distractors": ["了"] },
+        { "sentence": { "slots": { "subject": { "zh": "我们" }, "time": { "zh": "每天晚上" }, "adverb": { "zh": "都" }, "place": { "zh": "在图书馆" }, "verb1": { "zh": "学习" }, "complement": { "zh": "两个小时" } }, "end": "。", "es": "Todas las noches estudiamos dos horas en la biblioteca." } },
+        { "sentence": { "slots": { "time0": { "zh": "星期六中午" }, "subject": { "zh": "安娜" }, "aux": { "zh": "想" }, "with": { "zh": "跟我们一起" }, "verb1": { "zh": "去饭馆" }, "verb2": { "zh": "吃" }, "object": { "zh": "饺子" } }, "end": "。", "es": "El sábado a mediodía Ana quiere ir con nosotros a un restaurante a comer jiaozi." } },
+        { "sentence": { "slots": { "subject": { "zh": "雨果" }, "time": { "zh": "今天下午" }, "adverb": { "zh": "一直" }, "place": { "zh": "在宿舍" }, "verb1": { "zh": "用电脑" }, "verb2": { "zh": "写" }, "object": { "zh": "作业" } }, "end": "。", "es": "Esta tarde Hugo se ha pasado todo el rato haciendo los deberes con el ordenador en la residencia." } },
+        { "sentence": { "slots": { "time0": { "zh": "下个星期" }, "subject": { "zh": "我们" }, "adverb": { "zh": "也" }, "aux": { "zh": "要" }, "with": { "zh": "跟王老师一起" }, "verb1": { "zh": "坐高铁去北京" }, "verb2": { "zh": "看" }, "object": { "zh": "朋友" } }, "end": "。", "es": "La semana que viene también vamos a ir con la profesora Wang en tren de alta velocidad a Pekín a ver a unos amigos." } },
+        { "sentence": { "slots": { "subject": { "zh": "你们" }, "time": { "zh": "明天" }, "aux": { "zh": "能" }, "with": { "zh": "跟我一起" }, "verb1": { "zh": "去机场" }, "verb2": { "zh": "送" }, "object": { "zh": "我妈妈" }, "particle": { "zh": "吗" } }, "end": "？", "es": "¿Podéis venir conmigo mañana al aeropuerto a despedir a mi madre?" } }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "好久不见！欢迎回来！", "py": "Hǎojiǔ bú jiàn! Huānyíng huílai!", "es": "¡Cuánto tiempo! ¡Bienvenida de vuelta!" },
+        { "zh": "明天上午我跟朋友一起坐地铁去学校上汉语课。", "py": "Míngtiān shàngwǔ wǒ gēn péngyou yìqǐ zuò dìtiě qù xuéxiào shàng Hànyǔ kè.", "es": "Mañana por la mañana voy con un amigo en metro a la universidad a clase de chino." },
+        { "zh": "我们每天都在图书馆学习汉语。", "py": "Wǒmen měi tiān dōu zài túshūguǎn xuéxí Hànyǔ.", "es": "Todos estudiamos chino en la biblioteca todos los días." },
+        { "zh": "正好我也有课。", "py": "Zhènghǎo wǒ yě yǒu kè.", "es": "Justo yo también tengo clase." }
+      ],
+      "respond": [
+        { "q": { "zh": "你明天上午做什么？", "py": "Nǐ míngtiān shàngwǔ zuò shénme?", "es": "¿Qué haces mañana por la mañana?" }, "model": { "zh": "明天上午我跟同学一起去学校上课。", "py": "Míngtiān shàngwǔ wǒ gēn tóngxué yìqǐ qù xuéxiào shàngkè.", "es": "Mañana por la mañana voy con mis compañeros a la universidad a clase." } },
+        { "q": { "zh": "你每天在哪儿学习？学习多长时间？", "py": "Nǐ měi tiān zài nǎr xuéxí? Xuéxí duō cháng shíjiān?", "es": "¿Dónde estudias cada día? ¿Cuánto tiempo?" }, "model": { "zh": "我每天在宿舍学习一个小时。", "py": "Wǒ měi tiān zài sùshè xuéxí yí ge xiǎoshí.", "es": "Estudio una hora al día en la residencia." } },
+        { "q": { "zh": "你怎么去学校？", "py": "Nǐ zěnme qù xuéxiào?", "es": "¿Cómo vas a la universidad?" }, "model": { "zh": "我常常跟小李一起坐地铁去。", "py": "Wǒ chángcháng gēn Xiǎo Lǐ yìqǐ zuò dìtiě qù.", "es": "Suelo ir en metro con Xiao Li." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "La semana de Hugo",
+      "text": "雨果是西班牙人，他在上海学习。他每天早上七点起床，八点跟小李一起坐地铁去学校上汉语课。中午他们在食堂吃饭。下午雨果一直在图书馆看书，晚上回宿舍休息。星期六他常常跟朋友一起去饭馆吃饭，星期天在宿舍给妈妈打电话。",
+      "es": "Hugo es español y estudia en Shanghái. Todos los días se levanta a las siete, y a las ocho va con Xiao Li en metro a la universidad a clase de chino. A mediodía comen en el comedor. Por la tarde, Hugo se pasa todo el rato leyendo en la biblioteca y por la noche vuelve a la residencia a descansar. Los sábados suele ir a cenar a algún restaurante con amigos, y los domingos llama a su madre desde la residencia.",
+      "questions": [
+        { "q": "¿Con quién va Hugo a la universidad?", "options": ["跟小李", "跟安娜", "跟王老师"], "answer": 0 },
+        { "q": "¿Dónde pasa la tarde?", "options": ["在图书馆", "在食堂", "在宿舍"], "answer": 0 },
+        { "q": "¿Qué hace los domingos?", "options": ["给妈妈打电话", "去饭馆吃饭", "上汉语课"], "answer": 0 },
+        { "q": "¿Qué orden es correcto?", "options": ["他八点跟小李一起坐地铁去学校。", "他跟小李一起八点去学校坐地铁。", "他坐地铁去学校跟小李一起八点。"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

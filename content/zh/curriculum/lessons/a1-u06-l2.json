@@ -1,0 +1,130 @@
+{
+  "id": "a1-u06-l2",
+  "title": "Los momentos del día: 早上…晚上",
+  "zh": "早上好！",
+  "goal": "Nombrar las partes del día y decir la hora completa en el orden chino: día → parte del día → hora (明天上午十点).",
+  "minutes": 13,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "早上", "pinyin": "zǎoshang", "es": "la mañana temprano", "note": "早上好！ = ¡buenos días!" },
+    { "hanzi": "早晨", "pinyin": "zǎochen", "es": "madrugada, primera hora de la mañana", "note": "Casi igual que 早上, algo más escrito." },
+    { "hanzi": "上午", "pinyin": "shàngwǔ", "es": "la mañana (hasta mediodía)" },
+    { "hanzi": "中午", "pinyin": "zhōngwǔ", "es": "mediodía (12–14 h)" },
+    { "hanzi": "下午", "pinyin": "xiàwǔ", "es": "la tarde (después de comer)" },
+    { "hanzi": "晚上", "pinyin": "wǎnshang", "es": "la noche (desde que oscurece)", "note": "En español «las ocho de la tarde» = 晚上八点." },
+    { "hanzi": "白天", "pinyin": "báitiān", "es": "de día, durante el día" },
+    { "hanzi": "夜里", "pinyin": "yèli", "es": "por la noche, de madrugada" },
+    { "hanzi": "半夜", "pinyin": "bànyè", "es": "medianoche, en plena noche" },
+    { "hanzi": "早", "pinyin": "zǎo", "es": "temprano; ¡buenos días!", "note": "早！ es un saludo de primera hora." },
+    { "hanzi": "晚", "pinyin": "wǎn", "es": "tarde (no a tiempo)", "note": "太晚了！ = ¡es muy tarde!" }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "早上好！", "py": "Zǎoshang hǎo!", "es": "¡Buenos días!" },
+        { "zh": "安娜明天上午十点去北京。", "py": "Ānnà míngtiān shàngwǔ shí diǎn qù Běijīng.", "es": "Anna va a Pekín mañana a las diez de la mañana." },
+        { "zh": "我晚上八点去朋友家。", "py": "Wǒ wǎnshang bā diǎn qù péngyou jiā.", "es": "A las ocho de la tarde voy a casa de un amigo." }
+      ]
+    },
+    { "type": "vocab", "title": "Las partes del día", "words": ["早上", "早晨", "上午", "中午", "下午", "晚上", "白天", "夜里", "半夜", "早", "晚"] },
+    {
+      "type": "phonetics-drill",
+      "title": "z de 早 frente a zh de 中",
+      "markdown": "**早 zǎo** y **中 zhōng** empiezan los dos como una «ch» suave sin aire, pero en sitios distintos:\n\n- **z**: la punta de la lengua **detrás de los dientes de abajo** (una «ds» suave): 早 *zǎo*.\n- **zh**: la punta de la lengua **doblada hacia atrás**, hacia el paladar: 中 *zhōng*.\n\nY fíjate en el **tono neutro** de **早上 zǎoshang** y **晚上 wǎnshang**: 上 se dice corto y flojo, sin tono propio. En cambio, en **上午 shàngwǔ** el 上 lleva su 4.º tono completo.",
+      "items": [
+        { "audio": "早", "options": ["zhǎo", "zǎo", "cǎo"], "answer": 1, "explain": "z: lengua delante, sin aire." },
+        { "audio": "中午", "options": ["zhōngwǔ", "zōngwǔ", "chōngwǔ"], "answer": 0, "explain": "zh: lengua doblada hacia atrás." },
+        { "audio": "晚上", "options": ["wǎnshàng", "wǎnshang", "wànshang"], "answer": 1, "explain": "上 en tono neutro: corto y flojo." },
+        { "audio": "上午", "options": ["shàngwǔ", "shangwǔ", "shāngwǔ"], "answer": 0, "explain": "Aquí 上 conserva el 4.º tono." },
+        { "audio": "下午三点", "prompt": "¿Qué hora es?", "options": ["3:00 de la mañana", "15:00", "13:00"], "answer": 1, "explain": "下午 = por la tarde: las tres de la tarde." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["早", "晚"],
+      "mnemonics": {
+        "早": "日 (sol) encima de 十 (una línea de horizonte con un poste): el sol que acaba de salir por encima del horizonte → temprano.",
+        "晚": "日 (sol) + 免 (miǎn, librarse, que da el sonido): el sol que se escapa → la tarde, tarde."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "Día → parte del día → hora",
+      "markdown": "En chino la hora no lleva «de la mañana» detrás, sino **la parte del día delante**: **晚上八点** (lit. «noche, ocho») = las ocho de la tarde.\n\n| Parte del día | Más o menos | Ejemplo |\n|---|---|---|\n| 早上 / 早晨 | 6–9 h | 早上七点 |\n| 上午 | 9–12 h | 上午十点 |\n| 中午 | 12–14 h | 中午十二点 |\n| 下午 | 14–18 h | 下午三点 |\n| 晚上 | 18–24 h | 晚上八点 |\n| 夜里 / 半夜 | de madrugada | 夜里两点 |\n\nSe usa el reloj de **12 horas** (no ✗晚上二十点). Todo el bloque va de **grande a pequeño** y entra entero en el hueco del **tiempo**:\n\n> 安娜 + **明天上午十点** + 去北京.\n\n白天 (de día) se opone a 晚上 / 夜里.",
+      "focus": ["time"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "time": { "zh": "晚上八点", "py": "wǎnshang bā diǎn" }, "verb1": { "zh": "去朋友家", "py": "qù péngyou jiā" } }, "end": "。", "es": "Voy a casa de un amigo a las ocho de la tarde.", "esOrder": [{ "text": "(Yo)", "slot": "subject" }, { "text": "voy a casa de un amigo", "slot": "verb1" }, { "text": "a las ocho de la tarde", "slot": "time" }] },
+        { "slots": { "subject": { "zh": "安娜", "py": "Ānnà" }, "time": { "zh": "明天上午十点", "py": "míngtiān shàngwǔ shí diǎn" }, "verb1": { "zh": "去北京", "py": "qù Běijīng" } }, "end": "。", "es": "Anna va a Pekín mañana a las diez de la mañana." },
+        { "slots": { "subject": { "zh": "王老师", "py": "Wáng lǎoshī" }, "time": { "zh": "下午三点", "py": "xiàwǔ sān diǎn" }, "verb1": { "zh": "等", "py": "děng" }, "object": { "zh": "我们", "py": "wǒmen" } }, "end": "。", "es": "La profesora Wang nos espera a las tres de la tarde." },
+        { "slots": { "subject": { "zh": "雨果的妈妈", "py": "Yǔguǒ de māma" }, "time": { "zh": "夜里两点", "py": "yèli liǎng diǎn" }, "verb1": { "zh": "等", "py": "děng" }, "object": { "zh": "雨果的电话", "py": "Yǔguǒ de diànhuà" } }, "end": "。", "es": "La madre de Hugo espera la llamada de Hugo a las dos de la madrugada." },
+        { "slots": { "subject": { "zh": "我们", "py": "wǒmen" }, "time": { "zh": "星期六晚上", "py": "xīngqīliù wǎnshang" }, "verb1": { "zh": "去朋友家", "py": "qù péngyou jiā" } }, "end": "。", "es": "El sábado por la noche vamos a casa de unos amigos." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "time": { "zh": "上午", "py": "shàngwǔ" }, "adverb": { "zh": "不", "py": "bú" }, "verb1": { "zh": "去北京", "py": "qù Běijīng" } }, "end": "。", "es": "Por la mañana no voy a Pekín." },
+        { "slots": { "subject": { "zh": "小李", "py": "Xiǎo Lǐ" }, "time": { "zh": "中午", "py": "zhōngwǔ" }, "adverb": { "zh": "不", "py": "bù" }, "verb1": { "zh": "吃", "py": "chī" }, "object": { "zh": "鱼", "py": "yú" } }, "end": "。", "es": "Xiao Li no come pescado a mediodía." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "time": { "zh": "明天上午", "py": "míngtiān shàngwǔ" }, "verb1": { "zh": "去北京", "py": "qù Běijīng" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿Vas a Pekín mañana por la mañana?" },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "time": { "zh": "晚上几点", "py": "wǎnshang jǐ diǎn" }, "verb1": { "zh": "去朋友家", "py": "qù péngyou jiā" } }, "end": "？", "es": "¿A qué hora de la noche vas a casa de tu amigo?" }
+      ],
+      "mistakes": [
+        { "wrong": "八点晚上", "right": "晚上八点", "why": "La parte del día va delante de la hora: de grande a pequeño." },
+        { "wrong": "明天八点上午", "right": "明天上午八点", "why": "Día → parte del día → hora." },
+        { "wrong": "晚上二十点", "right": "晚上八点", "why": "Al hablar se usa el reloj de 12 horas con la parte del día delante." },
+        { "wrong": "我去朋友家晚上八点。", "right": "我晚上八点去朋友家。", "why": "Todo el bloque de tiempo va delante del verbo." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "¿Por la mañana o por la tarde?",
+      "lines": [
+        { "speaker": "安娜", "zh": "雨果，早上好！", "py": "Yǔguǒ, zǎoshang hǎo!", "es": "¡Buenos días, Hugo!" },
+        { "speaker": "雨果", "zh": "早！你今天上午忙吗？", "py": "Zǎo! Nǐ jīntiān shàngwǔ máng ma?", "es": "¡Buenas! ¿Estás ocupada esta mañana?" },
+        { "speaker": "安娜", "zh": "上午忙，下午不忙。", "py": "Shàngwǔ máng, xiàwǔ bù máng.", "es": "Por la mañana sí; por la tarde, no." },
+        { "speaker": "雨果", "zh": "我们下午三点去小李家，好吗？", "py": "Wǒmen xiàwǔ sān diǎn qù Xiǎo Lǐ jiā, hǎo ma?", "es": "¿Vamos a casa de Xiao Li a las tres de la tarde?" },
+        { "speaker": "安娜", "zh": "三点我不去。四点半好吗？", "py": "Sān diǎn wǒ bú qù. Sì diǎn bàn hǎo ma?", "es": "A las tres no puedo. ¿Qué tal a las cuatro y media?" },
+        { "speaker": "雨果", "zh": "好，下午四点半。晚上呢？", "py": "Hǎo, xiàwǔ sì diǎn bàn. Wǎnshang ne?", "es": "Vale, a las cuatro y media. ¿Y por la noche?" },
+        { "speaker": "安娜", "zh": "晚上我不去，太晚了！", "py": "Wǎnshang wǒ bú qù, tài wǎn le!", "es": "Por la noche no voy, ¡es muy tarde!" },
+        { "speaker": "雨果", "zh": "好，下午见！", "py": "Hǎo, xiàwǔ jiàn!", "es": "¡Vale, hasta la tarde!" }
+      ],
+      "notes": "早上好 y 早 son saludos de primera hora; 晚上好 se usa poco, sobre todo en contextos formales. Fíjate en «三点我不去» y «晚上我不去»: aquí el tiempo va delante del sujeto. Es la otra posición del tiempo y la verás en la próxima lección."
+    },
+    { "type": "exercises", "count": 14, "bank": ["g-dates-time", "g-word-order", "u04"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "我" }, "time": { "zh": "晚上八点" }, "verb1": { "zh": "去朋友家" } }, "end": "。", "es": "Voy a casa de un amigo a las ocho de la tarde." }, "distractors": ["八点晚上"] },
+        { "sentence": { "slots": { "subject": { "zh": "王老师" }, "time": { "zh": "下午三点" }, "verb1": { "zh": "等" }, "object": { "zh": "我们" } }, "end": "。", "es": "La profesora Wang nos espera a las tres de la tarde." } },
+        { "sentence": { "slots": { "subject": { "zh": "小李" }, "time": { "zh": "中午" }, "adverb": { "zh": "不" }, "verb1": { "zh": "吃" }, "object": { "zh": "鱼" } }, "end": "。", "es": "Xiao Li no come pescado a mediodía." }, "distractors": ["没"] },
+        { "sentence": { "slots": { "subject": { "zh": "安娜和她的中国朋友" }, "time": { "zh": "明天上午十点半" }, "adverb": { "zh": "都" }, "verb1": { "zh": "去北京" } }, "end": "。", "es": "Anna y su amiga china van las dos a Pekín mañana a las diez y media de la mañana." }, "distractors": ["上午明天"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "早上好！", "py": "Zǎoshang hǎo!", "es": "¡Buenos días!" },
+        { "zh": "早上，上午，中午，下午，晚上。", "py": "Zǎoshang, shàngwǔ, zhōngwǔ, xiàwǔ, wǎnshang.", "es": "Primera hora, mañana, mediodía, tarde, noche." },
+        { "zh": "我晚上八点去朋友家。", "py": "Wǒ wǎnshang bā diǎn qù péngyou jiā.", "es": "A las ocho de la tarde voy a casa de un amigo." },
+        { "zh": "太晚了！", "py": "Tài wǎn le!", "es": "¡Es muy tarde!" }
+      ],
+      "respond": [
+        { "q": { "zh": "你明天上午忙吗？", "py": "Nǐ míngtiān shàngwǔ máng ma?", "es": "¿Estás ocupado mañana por la mañana?" }, "model": { "zh": "上午忙，下午不忙。", "py": "Shàngwǔ máng, xiàwǔ bù máng.", "es": "Por la mañana sí; por la tarde, no." } },
+        { "q": { "zh": "你晚上几点去朋友家？", "py": "Nǐ wǎnshang jǐ diǎn qù péngyou jiā?", "es": "¿A qué hora vas por la noche a casa de tu amigo?" }, "model": { "zh": "我晚上七点半去。", "py": "Wǒ wǎnshang qī diǎn bàn qù.", "es": "Voy a las siete y media." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "El día de Xiao Li",
+      "text": "小李的一天：早上七点，他去大学。上午他忙。中午十二点，他吃鱼。下午三点，他等王老师。晚上八点，他看朋友。夜里十二点，小李说：“太晚了！”",
+      "es": "El día de Xiao Li: a las siete de la mañana va a la universidad. Por la mañana está ocupado. A las doce del mediodía come pescado. A las tres de la tarde espera a la profesora Wang. A las ocho de la tarde ve a sus amigos. A las doce de la noche, Xiao Li dice: «¡Qué tarde es!».",
+      "questions": [
+        { "q": "¿A qué hora va Xiao Li a la universidad?", "options": ["A las 7 de la mañana", "A las 12", "A las 3 de la tarde"], "answer": 0 },
+        { "q": "¿Qué hace a las tres de la tarde?", "options": ["Come pescado", "Espera a la profesora Wang", "Ve a sus amigos"], "answer": 1 },
+        { "q": "¿Qué significa 夜里十二点?", "options": ["Las 12 del mediodía", "Las 2 de la madrugada", "Las 12 de la noche"], "answer": 2 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

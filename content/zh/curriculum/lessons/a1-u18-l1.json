@@ -1,0 +1,130 @@
+{
+  "id": "a1-u18-l1",
+  "title": "¿Qué tiempo hace? 天气怎么样？",
+  "zh": "今天天气怎么样？",
+  "goal": "Preguntar qué tiempo hace con 怎么样 y contestar con adjetivos, 是 + 晴天/阴天 y los grados (度).",
+  "minutes": 13,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "天气", "pinyin": "tiānqì", "es": "tiempo (atmosférico)", "note": "天气 es el tiempo que hace; el tiempo del reloj es 时间." },
+    { "hanzi": "冷", "pinyin": "lěng", "es": "frío; hacer frío" },
+    { "hanzi": "凉快", "pinyin": "liángkuai", "es": "fresco (agradable)", "note": "Se dice del tiempo cuando se está a gusto: ni frío ni calor." },
+    { "hanzi": "晴天", "pinyin": "qíngtiān", "es": "día despejado, día de sol" },
+    { "hanzi": "阴天", "pinyin": "yīntiān", "es": "día nublado, cielo gris" },
+    { "hanzi": "多云", "pinyin": "duōyún", "es": "nuboso, con nubes", "note": "Lo verás en todas las apps del tiempo: 多云 = «muchas nubes»." },
+    { "hanzi": "太阳", "pinyin": "tàiyáng", "es": "sol", "note": "有太阳 = «hace sol» (lit. «hay sol»)." },
+    { "hanzi": "度", "pinyin": "dù", "es": "grado (de temperatura)", "note": "二十度 = 20 grados. China usa grados Celsius, como España." },
+    { "hanzi": "怎么样", "pinyin": "zěnmeyàng", "es": "¿qué tal?, ¿cómo es?", "note": "Repaso (U8 y U13): aquí, para preguntar por el tiempo." }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "今天天气怎么样？", "py": "Jīntiān tiānqì zěnmeyàng?", "es": "¿Qué tiempo hace hoy?" },
+        { "zh": "今天很冷，五度。", "py": "Jīntiān hěn lěng, wǔ dù.", "es": "Hoy hace mucho frío: cinco grados." },
+        { "zh": "明天是晴天，很凉快。", "py": "Míngtiān shì qíngtiān, hěn liángkuai.", "es": "Mañana hará sol y estará fresquito." }
+      ]
+    },
+    { "type": "vocab", "title": "El tiempo que hace", "words": ["天气", "冷", "凉快", "晴天", "阴天", "多云", "太阳", "度", "怎么样"] },
+    {
+      "type": "phonetics-drill",
+      "title": "3 + 3: 很冷, 很好",
+      "markdown": "Cuando se juntan **dos terceros tonos**, el primero se convierte en **segundo** (sube): 很冷 *hěn lěng* se dice **hén lěng**; 很好 se dice **hén hǎo**. En el pinyin se sigue escribiendo el tercer tono, pero tu boca tiene que subir.\n\nEl 冷 final, en cambio, sí es un tercer tono: baja y, si la frase acaba ahí, vuelve a subir un poco. Fíjate también en 天气: *tiān* alto y plano, *qì* cae.",
+      "items": [
+        { "audio": "很冷", "prompt": "¿Cómo suena 很 aquí?", "options": ["hěn (baja y sube)", "hén (sube, como un 2.º tono)", "hèn (cae)"], "answer": 1, "explain": "3 + 3 → 2 + 3: el primer tercer tono sube." },
+        { "audio": "天气", "options": ["tiānqì", "tiānqí", "diānqì"], "answer": 0, "explain": "t aspirada (con aire) y qì en cuarto tono." },
+        { "audio": "多云", "options": ["duōyún", "duōyǔn", "tuōyún"], "answer": 0, "explain": "云 yún es segundo tono: sube." },
+        { "audio": "阴天", "options": ["yīntiān", "yíngtiān", "yīnqiān"], "answer": 0, "explain": "Dos primeros tonos seguidos: alto y plano todo el rato." },
+        { "audio": "很好", "prompt": "¿Cómo suena 很 aquí?", "options": ["hén (sube)", "hěn (baja y sube)"], "answer": 0, "explain": "Otra vez 3 + 3: hén hǎo." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["冷", "晴"],
+      "mnemonics": {
+        "冷": "冫 (dos gotas de hielo) + 令 (orden): el hielo da la orden y todo se queda frío. Los caracteres con 冫 suelen tener que ver con el frío (冬, 凉).",
+        "晴": "日 (sol) + 青 (azul, verde): sol y cielo azul = despejado."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "El tiempo: tiempo + 天气 + adjetivo",
+      "markdown": "Para hablar del tiempo, el **adjetivo es el predicado**, como en la U8: 今天**很冷** (no *今天是冷*). El momento va delante (**今天**、**明天**) y el «tema» de la frase puede ser 天气 o la ciudad.\n\n- **¿Qué tiempo hace?** → **…天气怎么样？** 怎么样 ocupa el hueco del verbo, justo donde irá la respuesta (很好, 很冷…). Nunca lleva 吗.\n- Con un **nombre** (晴天, 阴天) sí se usa 是: 明天**是**晴天.\n- Los **grados** van sin verbo: 今天二十度.\n- Para la pregunta de sí o no: 冷**吗**？ / 冷不冷？",
+      "focus": ["verb1"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "time0": { "zh": "今天", "py": "jīntiān" }, "subject": { "zh": "天气", "py": "tiānqì" }, "adverb": { "zh": "很", "py": "hěn" }, "verb1": { "zh": "好", "py": "hǎo" } }, "end": "。", "es": "Hoy hace buen tiempo.", "esOrder": [{ "text": "Hoy", "slot": "time0" }, { "text": "hace" }, { "text": "buen", "slot": "verb1" }, { "text": "tiempo", "slot": "subject" }] },
+        { "slots": { "subject": { "zh": "北京", "py": "Běijīng" }, "time": { "zh": "今天", "py": "jīntiān" }, "adverb": { "zh": "非常", "py": "fēicháng" }, "verb1": { "zh": "冷", "py": "lěng" } }, "end": "。", "es": "Hoy en Pekín hace muchísimo frío." },
+        { "slots": { "time0": { "zh": "明天", "py": "míngtiān" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "晴天", "py": "qíngtiān" } }, "end": "。", "es": "Mañana hará sol (será un día despejado)." },
+        { "slots": { "time0": { "zh": "今天", "py": "jīntiān" }, "subject": { "zh": "上海", "py": "Shànghǎi" }, "object": { "zh": "二十八度", "py": "èrshíbā dù" } }, "end": "。", "es": "Hoy en Shanghái hay 28 grados." },
+        { "slots": { "time0": { "zh": "晚上", "py": "wǎnshang" }, "adverb": { "zh": "很", "py": "hěn" }, "verb1": { "zh": "凉快", "py": "liángkuai" } }, "end": "。", "es": "Por la noche hace fresquito." }
+      ],
+      "negative": [
+        { "slots": { "time0": { "zh": "今天", "py": "jīntiān" }, "adverb": { "zh": "不", "py": "bù" }, "verb1": { "zh": "冷", "py": "lěng" } }, "end": "。", "es": "Hoy no hace frío." },
+        { "slots": { "time0": { "zh": "明天", "py": "míngtiān" }, "adverb": { "zh": "不", "py": "bú" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "阴天", "py": "yīntiān" } }, "end": "。", "es": "Mañana no estará nublado." }
+      ],
+      "question": [
+        { "slots": { "time0": { "zh": "今天", "py": "jīntiān" }, "subject": { "zh": "天气", "py": "tiānqì" }, "verb1": { "zh": "怎么样", "py": "zěnmeyàng" } }, "end": "？", "es": "¿Qué tiempo hace hoy?" },
+        { "slots": { "subject": { "zh": "北京", "py": "Běijīng" }, "verb1": { "zh": "冷", "py": "lěng" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿Hace frío en Pekín?" },
+        { "slots": { "time0": { "zh": "明天", "py": "míngtiān" }, "object": { "zh": "多少度", "py": "duōshao dù" } }, "end": "？", "es": "¿Cuántos grados hará mañana?" }
+      ],
+      "mistakes": [
+        { "wrong": "今天是很冷。", "right": "今天很冷。", "why": "El adjetivo ya es el predicado: no lleva 是 (lo viste en la U8)." },
+        { "wrong": "今天天气怎么样吗？", "right": "今天天气怎么样？", "why": "怎么样 ya es la pregunta; nunca se junta con 吗." },
+        { "wrong": "今天冷。", "right": "今天很冷。", "why": "Un adjetivo solo suena a contraste («hoy hace frío, pero ayer no»). Para describir sin más, pon 很 (aunque no signifique «muy»)." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Por la mañana, en la residencia",
+      "lines": [
+        { "speaker": "小李", "zh": "雨果，今天天气很好！", "py": "Yǔguǒ, jīntiān tiānqì hěn hǎo!", "es": "¡Hugo, hoy hace muy buen tiempo!" },
+        { "speaker": "雨果", "zh": "是吗？今天多少度？", "py": "Shì ma? Jīntiān duōshao dù?", "es": "¿Ah, sí? ¿Cuántos grados hace hoy?" },
+        { "speaker": "小李", "zh": "二十二度，有太阳，很凉快。", "py": "Èrshí'èr dù, yǒu tàiyáng, hěn liángkuai.", "es": "Veintidós grados, hace sol y está fresquito." },
+        { "speaker": "雨果", "zh": "太好了！北京天气怎么样？", "py": "Tài hǎo le! Běijīng tiānqì zěnmeyàng?", "es": "¡Genial! ¿Y qué tiempo hace en Pekín?" },
+        { "speaker": "小李", "zh": "我妈妈说北京今天是阴天，非常冷。", "py": "Wǒ māma shuō Běijīng jīntiān shì yīntiān, fēicháng lěng.", "es": "Mi madre dice que hoy en Pekín está nublado y hace muchísimo frío." },
+        { "speaker": "雨果", "zh": "明天呢？明天上海也是晴天吗？", "py": "Míngtiān ne? Míngtiān Shànghǎi yě shì qíngtiān ma?", "es": "¿Y mañana? ¿Mañana también hará sol en Shanghái?" },
+        { "speaker": "小李", "zh": "网上说明天多云，二十五度。", "py": "Wǎngshang shuō míngtiān duōyún, èrshíwǔ dù.", "es": "En internet dice que mañana estará nuboso, con veinticinco grados." },
+        { "speaker": "雨果", "zh": "多云也很好，不太热。", "py": "Duōyún yě hěn hǎo, bú tài rè.", "es": "Nuboso también está bien: no hace demasiado calor." }
+      ],
+      "notes": "网上说… = «en internet dice…»: así se cuenta lo que dice la app del tiempo. En Shanghái, el otoño (octubre-noviembre) es la mejor época: 凉快 y muchos días de sol."
+    },
+    { "type": "exercises", "count": 14, "bank": ["u10", "g-hen-adj", "g-question-words"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "time0": { "zh": "今天" }, "adverb": { "zh": "很" }, "verb1": { "zh": "凉快" } }, "end": "。", "es": "Hoy hace fresquito." }, "distractors": ["是"] },
+        { "sentence": { "slots": { "time0": { "zh": "明天" }, "verb1": { "zh": "是" }, "object": { "zh": "阴天" }, "particle": { "zh": "吗" } }, "end": "？", "es": "¿Mañana estará nublado?" } },
+        { "sentence": { "slots": { "subject": { "zh": "北京的天气" }, "verb1": { "zh": "怎么样" } }, "end": "？", "es": "¿Qué tiempo hace en Pekín?" }, "distractors": ["吗"] },
+        { "sentence": { "slots": { "time0": { "zh": "今天上午" }, "subject": { "zh": "上海的天气" }, "adverb": { "zh": "非常" }, "verb1": { "zh": "好" } }, "end": "。", "es": "Esta mañana hace un tiempo estupendo en Shanghái." }, "distractors": ["是", "吗"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "今天天气怎么样？", "py": "Jīntiān tiānqì zěnmeyàng?", "es": "¿Qué tiempo hace hoy?" },
+        { "zh": "今天很冷，五度。", "py": "Jīntiān hěn lěng, wǔ dù.", "es": "Hoy hace mucho frío: cinco grados." },
+        { "zh": "明天是晴天，有太阳。", "py": "Míngtiān shì qíngtiān, yǒu tàiyáng.", "es": "Mañana estará despejado y hará sol." },
+        { "zh": "晚上很凉快。", "py": "Wǎnshang hěn liángkuai.", "es": "Por la noche hace fresquito." }
+      ],
+      "respond": [
+        { "q": { "zh": "今天天气怎么样？", "py": "Jīntiān tiānqì zěnmeyàng?", "es": "¿Qué tiempo hace hoy?" }, "model": { "zh": "今天天气很好，有太阳。", "py": "Jīntiān tiānqì hěn hǎo, yǒu tàiyáng.", "es": "Hoy hace buen tiempo: hace sol." } },
+        { "q": { "zh": "今天多少度？", "py": "Jīntiān duōshao dù?", "es": "¿Cuántos grados hace hoy?" }, "model": { "zh": "今天二十度，很凉快。", "py": "Jīntiān èrshí dù, hěn liángkuai.", "es": "Hoy hay veinte grados: está fresquito." } },
+        { "q": { "zh": "明天是阴天吗？", "py": "Míngtiān shì yīntiān ma?", "es": "¿Mañana estará nublado?" }, "model": { "zh": "不是，明天是晴天。", "py": "Bú shì, míngtiān shì qíngtiān.", "es": "No, mañana hará sol." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "El tiempo de hoy",
+      "text": "今天上海天气很好，是晴天，有太阳。上午二十度，很凉快。下午二十六度，有点儿热。北京今天是阴天，五度，非常冷。明天上海多云，二十二度。",
+      "es": "Hoy en Shanghái hace muy buen tiempo: está despejado y hace sol. Por la mañana hay veinte grados y está fresquito. Por la tarde, veintiséis grados: hace un poco de calor. En Pekín hoy está nublado, hay cinco grados y hace muchísimo frío. Mañana en Shanghái estará nuboso, con veintidós grados.",
+      "questions": [
+        { "q": "¿Qué tiempo hace hoy en Shanghái?", "options": ["晴天", "阴天", "多云"], "answer": 0 },
+        { "q": "¿Cuántos grados hay en Pekín?", "options": ["5", "20", "26"], "answer": 0 },
+        { "q": "¿Cómo está Shanghái por la tarde?", "options": ["有点儿热", "非常冷", "很凉快"], "answer": 0 },
+        { "q": "¿Qué tiempo hará mañana en Shanghái?", "options": ["多云，二十二度", "晴天，二十六度", "阴天，五度"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

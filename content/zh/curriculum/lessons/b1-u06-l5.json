@@ -1,0 +1,139 @@
+{
+  "id": "b1-u06-l5",
+  "title": "Nada de nada: 一点儿也不 y 怎么也",
+  "zh": "一点儿也不累",
+  "goal": "Decir «nada en absoluto» con 一点儿也不 / 一点儿也没 y «no hay manera» con 怎么也 + verbo, en una competición deportiva.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "金牌", "pinyin": "jīnpái", "es": "medalla de oro" },
+    { "hanzi": "银牌", "pinyin": "yínpái", "es": "medalla de plata", "note": "La de bronce es 铜牌 (tóngpái)." },
+    { "hanzi": "金", "pinyin": "jīn", "es": "oro; dorado" },
+    { "hanzi": "银", "pinyin": "yín", "es": "plata; plateado", "note": "Ya conoces 银行 (banco): la «casa de la plata»." },
+    { "hanzi": "纪录", "pinyin": "jìlù", "es": "récord, marca", "note": "破纪录 = batir un récord." },
+    { "hanzi": "跳高", "pinyin": "tiàogāo", "es": "salto de altura" },
+    { "hanzi": "跳远", "pinyin": "tiàoyuǎn", "es": "salto de longitud" },
+    { "hanzi": "划船", "pinyin": "huáchuán", "es": "remar; remo (deporte)" },
+    { "hanzi": "敢", "pinyin": "gǎn", "es": "atreverse a, osar", "note": "Funciona como un auxiliar: 我不敢跳 = no me atrevo a saltar." },
+    { "hanzi": "举办", "pinyin": "jǔbàn", "es": "organizar, celebrar (un acto, una competición)" },
+    { "hanzi": "各", "pinyin": "gè", "es": "cada (uno); cada… respectivamente", "note": "各国 = todos los países; 我们各拿了一个 = cogimos uno cada uno." },
+    { "hanzi": "各种", "pinyin": "gèzhǒng", "es": "todo tipo de, diversos" },
+    { "hanzi": "光", "pinyin": "guāng", "es": "solo, nada más que; luz; agotado (V + 光)", "note": "光说不做 = solo hablar y no hacer; 吃光了 = se lo han comido todo." },
+    { "hanzi": "反应", "pinyin": "fǎnyìng", "es": "reacción; reaccionar", "note": "反应很快 = tener buenos reflejos." }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "跑了十公里，我一点儿也不累。", "py": "Pǎo le shí gōnglǐ, wǒ yìdiǎnr yě bú lèi.", "es": "He corrido diez kilómetros y no estoy nada cansado." },
+        { "zh": "跳高我怎么也跳不过去。", "py": "Tiàogāo wǒ zěnme yě tiào bu guòqù.", "es": "En salto de altura no hay manera de que pase el listón." },
+        { "zh": "快比赛了，你怎么一点儿也不着急？", "py": "Kuài bǐsài le, nǐ zěnme yìdiǎnr yě bù zháojí?", "es": "Está a punto de empezar la competición, ¿cómo es que no estás nada nervioso?" }
+      ]
+    },
+    { "type": "vocab", "title": "Medallas y récords", "words": ["金牌", "银牌", "金", "银", "纪录", "跳高", "跳远", "划船", "敢", "举办", "各", "各种", "光", "反应"] },
+    {
+      "type": "phonetics-drill",
+      "title": "El ritmo de 一点儿也不",
+      "markdown": "**一点儿也不** se dice como una sola palabra, con cuatro golpes: **yì-diǎnr-yě-bù**:\n\n- 一 → **yì** (delante de tercer tono).\n- 点儿 → *diǎnr*, una sílaba con la lengua doblada.\n- 点儿 + 也 son dos terceros tonos seguidos: el primero suena casi como segundo (*diánr yě*), igual que 你好.\n- 不 → **bú** si sigue un cuarto tono (一点儿也不**累** *bú lèi*) y **bù** si no (一点儿也不**难** *bù nán*).\n\nEl acento de la frase cae en **一点儿** y en el adjetivo final: 我**一点儿**也不**累**！\n\nPalabras: **敢 gǎn** (no *gān*), **划船 huáchuán**, **纪录 jìlù**, **跳远 tiàoyuǎn**.",
+      "items": [
+        { "audio": "一点儿也不累", "options": ["yìdiǎnr yě bú lèi", "yīdiǎnr yě bù lèi", "yídiǎnr yě bú lèi"], "answer": 0, "explain": "一 delante de 3.º → yì; 不 delante de 4.º → bú." },
+        { "audio": "一点儿也不难", "prompt": "¿Cómo suena 不 aquí?", "options": ["bù (4.º)", "bú (2.º)"], "answer": 0, "explain": "难 es segundo tono: 不 se queda en bù." },
+        { "audio": "敢", "options": ["gǎn", "gān", "gàn"], "answer": 0 },
+        { "audio": "划船", "options": ["huáchuán", "huàchuán", "huáquán"], "answer": 0, "explain": "Dos segundos tonos; ch retrofleja aspirada." },
+        { "audio": "跳远", "options": ["tiàoyuǎn", "tiàoyuán", "diàoyuǎn"], "answer": 0 }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["敢", "光"],
+      "mnemonics": {
+        "敢": "A la derecha 攵, una mano con un palo; a la izquierda, en las formas antiguas, una mano que agarra a una fiera: hace falta valor → atreverse.",
+        "光": "Arriba, fuego (火 resumido); abajo, 儿, una persona: alguien que lleva una llama sobre la cabeza → luz. Lo que la luz deja limpio y vacío → 吃光 «comérselo todo»."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "一点儿也不 + adjetivo · 怎么也 + no + verbo",
+      "markdown": "Dos formas más de negar con fuerza:\n\n**1. 一点儿也 / 都 + 不 + adjetivo o verbo** = «nada en absoluto»:\n\n> 今天**一点儿也不**冷。 Hoy no hace **nada** de frío.\n> 我**一点儿饭也没**吃。 No he comido **nada de nada**.\n\n- Es el «mínimo» de la lección anterior (一 + CL) con 一点儿.\n- Con **adjetivos** y estados, **不** (一点儿也不累); con **cosas que no han pasado**, **没** y el nombre en medio (一点儿水也没喝).\n- No lo confundas con **有点儿** (algo, un poco: queja) ni con **一点儿** detrás del adjetivo (comparación): 有点儿冷 · 冷一点儿 · **一点儿也不**冷.\n\n**2. 怎么也 / 都 + verbo negativo** = «de ninguna manera, por más que…»; casi siempre con un **complemento potencial** (B1-3):\n\n> 我**怎么也**睡不着。 No hay manera de dormirme.\n\n**En el esqueleto**: 一点儿也不 y 怎么也 van en **Adverbios** (convención de la unidad).",
+      "focus": ["adverb"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "今天", "py": "jīntiān" }, "adverb": { "zh": "一点儿也不", "py": "yìdiǎnr yě bù" }, "verb1": { "zh": "冷", "py": "lěng" } }, "end": "。", "es": "Hoy no hace nada de frío.", "esOrder": [{ "text": "Hoy", "slot": "subject" }, { "text": "no hace nada de", "slot": "adverb" }, { "text": "frío", "slot": "verb1" }] },
+        { "slots": { "subject": { "zh": "这次跳远比赛", "py": "zhè cì tiàoyuǎn bǐsài" }, "adverb": { "zh": "一点儿也不", "py": "yìdiǎnr yě bù" }, "verb1": { "zh": "难", "py": "nán" } }, "end": "。", "es": "Esta prueba de salto de longitud no es nada difícil." },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "一点儿饭也没", "py": "yìdiǎnr fàn yě méi" }, "verb1": { "zh": "吃", "py": "chī" } }, "end": "。", "es": "No he comido nada de nada." },
+        { "slots": { "subject": { "zh": "安娜", "py": "Ānnà" }, "adverb": { "zh": "怎么也", "py": "zěnme yě" }, "verb1": { "zh": "想不起来", "py": "xiǎng bu qǐlái" }, "object": { "zh": "那个选手的名字", "py": "nàge xuǎnshǒu de míngzi" } }, "end": "。", "es": "Ana no consigue acordarse del nombre de aquel deportista por más que lo intenta." },
+        { "slots": { "subject": { "zh": "跳高我", "py": "tiàogāo wǒ" }, "adverb": { "zh": "怎么也", "py": "zěnme yě" }, "verb1": { "zh": "跳不过去", "py": "tiào bu guòqù" } }, "end": "。", "es": "En salto de altura no hay manera de que pase el listón." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "怎么也", "py": "zěnme yě" }, "verb1": { "zh": "睡不着", "py": "shuì bu zháo" } }, "end": "。", "es": "No hay manera de que me duerma." },
+        { "slots": { "subject": { "zh": "他", "py": "tā" }, "adverb": { "zh": "一点儿也不", "py": "yìdiǎnr yě bù" }, "aux": { "zh": "敢", "py": "gǎn" }, "verb1": { "zh": "划船", "py": "huáchuán" } }, "end": "。", "es": "No se atreve para nada a remar." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "adverb": { "zh": "怎么一点儿也不", "py": "zěnme yìdiǎnr yě bù" }, "verb1": { "zh": "着急", "py": "zháojí" } }, "end": "？", "es": "¿Cómo es que no estás nada nervioso?" },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "adverb": { "zh": "一点儿也不", "py": "yìdiǎnr yě bú" }, "verb1": { "zh": "累", "py": "lèi" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿No estás nada cansado?" }
+      ],
+      "mistakes": [
+        { "wrong": "今天不一点儿冷。", "right": "今天一点儿也不冷。", "why": "El orden es 一点儿 + 也 + 不 + adjetivo; sin 也 / 都 no funciona." },
+        { "wrong": "今天有点儿也不冷。", "right": "今天一点儿也不冷。", "why": "有点儿 significa «un poco» (con queja); «nada» es 一点儿也不." },
+        { "wrong": "我睡不着怎么也。", "right": "我怎么也睡不着。", "why": "怎么也 va delante del verbo." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Las fiestas deportivas de la universidad",
+      "lines": [
+        { "speaker": "安娜", "zh": "雨果，下个星期学校要举办运动会，有各种比赛，你参加吗？", "py": "Yǔguǒ, xià ge xīngqī xuéxiào yào jǔbàn yùndònghuì, yǒu gèzhǒng bǐsài, nǐ cānjiā ma?", "es": "Hugo, la semana que viene la universidad organiza unas jornadas deportivas con todo tipo de pruebas. ¿Te apuntas?" },
+        { "speaker": "雨果", "zh": "我想参加跳远。跳高我不敢，怎么也跳不过去。", "py": "Wǒ xiǎng cānjiā tiàoyuǎn. Tiàogāo wǒ bù gǎn, zěnme yě tiào bu guòqù.", "es": "Quiero apuntarme al salto de longitud. Al de altura no me atrevo: no hay manera de que pase el listón." },
+        { "speaker": "安娜", "zh": "你那么高，跳高一定一点儿也不难吧？", "py": "Nǐ nàme gāo, tiàogāo yídìng yìdiǎnr yě bù nán ba?", "es": "Con lo alto que eres, el salto de altura no te costará nada, ¿no?" },
+        { "speaker": "雨果", "zh": "难！上次我练了一个下午，一次也没跳过去。", "py": "Nán! Shàng cì wǒ liàn le yí ge xiàwǔ, yí cì yě méi tiào guòqù.", "es": "¡Sí que cuesta! La última vez estuve practicando toda una tarde y no lo pasé ni una vez." },
+        { "speaker": "安娜", "zh": "光说没用，我们今天就去练练吧。", "py": "Guāng shuō méi yòng, wǒmen jīntiān jiù qù liànlian ba.", "es": "Hablar no sirve de nada: vamos a practicar hoy mismo." },
+        { "speaker": "大卫", "zh": "（运动会那天）你们知道吗？安娜在划船比赛里拿了金牌！", "py": "(Yùndònghuì nà tiān) Nǐmen zhīdào ma? Ānnà zài huáchuán bǐsài li ná le jīnpái!", "es": "(El día de las jornadas) ¿Sabéis qué? ¡Ana ha ganado el oro en remo!" },
+        { "speaker": "雨果", "zh": "真的吗？她连一句也没说过她会划船！", "py": "Zhēn de ma? Tā lián yí jù yě méi shuōguo tā huì huáchuán!", "es": "¿En serio? ¡No había dicho ni una palabra de que supiera remar!" },
+        { "speaker": "大卫", "zh": "她的反应特别快，一开始就领先了。", "py": "Tā de fǎnyìng tèbié kuài, yì kāishǐ jiù lǐngxiān le.", "es": "Tiene unos reflejos buenísimos: fue en cabeza desde el principio." },
+        { "speaker": "雨果", "zh": "你呢？你跑步跑得怎么样？", "py": "Nǐ ne? Nǐ pǎobù pǎo de zěnmeyàng?", "es": "¿Y tú? ¿Qué tal en la carrera?" },
+        { "speaker": "大卫", "zh": "我拿了银牌，第一名只比我快一点儿。", "py": "Wǒ ná le yínpái, dì-yī míng zhǐ bǐ wǒ kuài yìdiǎnr.", "es": "Me he llevado la plata: el primero ha sido solo un poquito más rápido que yo." },
+        { "speaker": "雨果", "zh": "银牌也很好啊！我跳了五米，破了我自己的纪录。", "py": "Yínpái yě hěn hǎo a! Wǒ tiào le wǔ mǐ, pò le wǒ zìjǐ de jìlù.", "es": "¡La plata también está genial! Yo he saltado cinco metros: he batido mi propio récord." },
+        { "speaker": "安娜", "zh": "我们三个人各有各的好成绩，今天我一点儿也不累！", "py": "Wǒmen sān ge rén gè yǒu gè de hǎo chéngjì, jīntiān wǒ yìdiǎnr yě bú lèi!", "es": "Cada uno de los tres tiene su buen resultado. ¡Hoy no estoy nada cansada!" },
+        { "speaker": "雨果", "zh": "晚上一起去吃饭吧，我请客，庆祝一下！", "py": "Wǎnshang yìqǐ qù chī fàn ba, wǒ qǐngkè, qìngzhù yíxià!", "es": "¡Esta noche vamos a cenar juntos, invito yo, para celebrarlo!" }
+      ],
+      "notes": "运动会 son las jornadas deportivas que organizan colegios y universidades en China, normalmente en otoño o primavera, con atletismo y otras pruebas. 各有各的… = «cada uno tiene su propio…». 光说没用 = «hablar no sirve de nada» (光 = solo)."
+    },
+    { "type": "exercises", "count": 18, "bank": ["g-yidianr-youdianr", "g-bu-mei", "g-complements"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "今天" }, "adverb": { "zh": "一点儿也不" }, "verb1": { "zh": "冷" } }, "end": "。", "es": "Hoy no hace nada de frío." }, "distractors": ["有点儿"] },
+        { "sentence": { "slots": { "subject": { "zh": "我" }, "adverb": { "zh": "怎么也" }, "verb1": { "zh": "睡不着" } }, "end": "。", "es": "No hay manera de que me duerma." } },
+        { "sentence": { "slots": { "subject": { "zh": "你" }, "adverb": { "zh": "怎么一点儿也不" }, "verb1": { "zh": "着急" } }, "end": "？", "es": "¿Cómo es que no estás nada nervioso?" }, "distractors": ["吗"] },
+        { "sentence": { "slots": { "time0": { "zh": "比赛那天早上" }, "subject": { "zh": "大卫" }, "adverb": { "zh": "一点儿饭也没" }, "verb1": { "zh": "吃" } }, "end": "。", "es": "La mañana de la competición David no comió nada de nada." } },
+        { "sentence": { "slots": { "time0": { "zh": "上个星期" }, "subject": { "zh": "安娜" }, "place": { "zh": "在学校的运动会上" }, "verb1": { "zh": "拿了" }, "object": { "zh": "一块划船金牌" } }, "end": "。", "es": "La semana pasada Ana ganó una medalla de oro de remo en las jornadas deportivas de la universidad." } }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "我一点儿也不累。", "py": "Wǒ yìdiǎnr yě bú lèi.", "es": "No estoy nada cansado." },
+        { "zh": "我怎么也睡不着。", "py": "Wǒ zěnme yě shuì bu zháo.", "es": "No hay manera de que me duerma." },
+        { "zh": "安娜拿了金牌！", "py": "Ānnà ná le jīnpái!", "es": "¡Ana ha ganado el oro!" },
+        { "zh": "光说没用。", "py": "Guāng shuō méi yòng.", "es": "Hablar no sirve de nada." }
+      ],
+      "respond": [
+        { "q": { "zh": "今天冷吗？", "py": "Jīntiān lěng ma?", "es": "¿Hace frío hoy?" }, "model": { "zh": "一点儿也不冷，很舒服。", "py": "Yìdiǎnr yě bù lěng, hěn shūfu.", "es": "Nada de frío, se está muy bien." } },
+        { "q": { "zh": "你敢跳高吗？", "py": "Nǐ gǎn tiàogāo ma?", "es": "¿Te atreves con el salto de altura?" }, "model": { "zh": "不敢，我怎么也跳不过去。", "py": "Bù gǎn, wǒ zěnme yě tiào bu guòqù.", "es": "No, no hay manera de que pase el listón." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Jornadas deportivas",
+      "text": "每年秋天，雨果的大学都举办运动会。今年有各种比赛：跑步、跳高、跳远，还有在学校旁边的河上划船。雨果本来想参加跳高，可是练了很多次，怎么也跳不过去，最后他决定参加跳远。比赛前一天晚上，他紧张得怎么也睡不着。可是安娜一点儿也不着急，她说：“光紧张没用，好好休息吧。”第二天，安娜在划船比赛中反应最快，一开始就领先，最后拿了金牌。大卫在跑步比赛中拿了银牌。雨果跳了五米，虽然没有拿到金牌，也没有拿到银牌，可是破了自己的纪录，他一点儿也不难过。晚上，三个人各点了一个菜，一起庆祝。雨果说：“今天我们都是第一名！”",
+      "es": "Cada otoño, la universidad de Hugo organiza unas jornadas deportivas. Este año hay todo tipo de pruebas: carreras, salto de altura, salto de longitud y también remo en el río que pasa junto a la universidad. Hugo en principio quería apuntarse al salto de altura, pero por más que practicó no hubo manera de pasar el listón, y al final decidió hacer salto de longitud. La noche antes estaba tan nervioso que no había forma de dormirse. Ana, en cambio, no estaba nada preocupada: «Ponerse nervioso no sirve de nada; descansa bien». Al día siguiente, en remo, Ana fue la de mejores reflejos: fue en cabeza desde el principio y al final ganó el oro. David se llevó la plata en la carrera. Hugo saltó cinco metros: no ganó ni oro ni plata, pero batió su propio récord y no estaba nada triste. Por la noche, cada uno de los tres pidió un plato y lo celebraron juntos. Hugo dijo: «¡Hoy todos somos los primeros!».",
+      "questions": [
+        { "q": "¿Por qué Hugo no hizo salto de altura?", "options": ["怎么也跳不过去", "他不喜欢", "比赛太早"], "answer": 0 },
+        { "q": "¿Cómo estaba Ana la noche antes?", "options": ["一点儿也不着急", "很紧张", "睡不着"], "answer": 0 },
+        { "q": "¿Qué medalla ganó David?", "options": ["银牌", "金牌", "Ninguna"], "answer": 0 },
+        { "q": "¿Qué consiguió Hugo?", "options": ["破了自己的纪录", "拿了金牌", "拿了银牌"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

@@ -1,0 +1,770 @@
+{
+  "id": "a1-u07-l2",
+  "title": "Mediodía y tarde: 去学校上课",
+  "zh": "我去食堂吃饭",
+  "goal": "Encadenar dos verbos (ir a un sitio + hacer algo) para contar tu mediodía y tu tarde.",
+  "minutes": 14,
+  "reviewed": false,
+  "extraVocab": [
+    "食堂"
+  ],
+  "vocab": [
+    {
+      "hanzi": "上课",
+      "pinyin": "shàngkè",
+      "es": "ir a clase, tener clase; empezar la clase",
+      "note": "上 = subir, empezar; 课 = clase."
+    },
+    {
+      "hanzi": "下课",
+      "pinyin": "xiàkè",
+      "es": "salir de clase, acabar la clase"
+    },
+    {
+      "hanzi": "学校",
+      "pinyin": "xuéxiào",
+      "es": "escuela; universidad, campus",
+      "note": "Adelanto: vuelve en la unidad 17 (estudios)."
+    },
+    {
+      "hanzi": "食堂",
+      "pinyin": "shítáng",
+      "es": "comedor (de la universidad o la empresa)",
+      "note": "Fuera del HSK 1–3, pero imprescindible en el campus."
+    },
+    {
+      "hanzi": "午饭",
+      "pinyin": "wǔfàn",
+      "es": "comida (del mediodía)",
+      "note": "吃午饭 = comer (al mediodía)."
+    },
+    {
+      "hanzi": "来",
+      "pinyin": "lái",
+      "es": "venir",
+      "note": "Hacia donde está quien habla; 去 = ir, alejándose."
+    },
+    {
+      "hanzi": "上班",
+      "pinyin": "shàngbān",
+      "es": "entrar a trabajar, ir al trabajo"
+    },
+    {
+      "hanzi": "下班",
+      "pinyin": "xiàbān",
+      "es": "salir del trabajo"
+    },
+    {
+      "hanzi": "工作",
+      "pinyin": "gōngzuò",
+      "es": "trabajar; trabajo",
+      "note": "Adelanto de la unidad 17."
+    },
+    {
+      "hanzi": "学习",
+      "pinyin": "xuéxí",
+      "es": "estudiar",
+      "note": "Adelanto de la unidad 17."
+    },
+    {
+      "hanzi": "车",
+      "pinyin": "chē",
+      "es": "coche, vehículo",
+      "note": "坐车 = ir en coche o en autobús. Los transportes llegan en la unidad 15."
+    }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        {
+          "zh": "我去学校上课。",
+          "py": "Wǒ qù xuéxiào shàngkè.",
+          "es": "Voy a la universidad a clase."
+        },
+        {
+          "zh": "我们去食堂吃午饭。",
+          "py": "Wǒmen qù shítáng chī wǔfàn.",
+          "es": "Vamos al comedor a comer."
+        },
+        {
+          "zh": "王老师坐车去学校。",
+          "py": "Wáng lǎoshī zuò chē qù xuéxiào.",
+          "es": "La profesora Wang va a la universidad en coche."
+        }
+      ]
+    },
+    {
+      "type": "vocab",
+      "title": "Clase, comida y trabajo",
+      "words": [
+        "上课",
+        "下课",
+        "学校",
+        "食堂",
+        "午饭",
+        "来",
+        "上班",
+        "下班",
+        "工作",
+        "学习",
+        "车"
+      ]
+    },
+    {
+      "type": "phonetics-drill",
+      "title": "-n y -ng: 班 frente a 房",
+      "markdown": "En **上班 shàngbān** tienes las dos nasales finales seguidas:\n\n- **-n** (班 bān, 饭 fàn, 半 bàn): la punta de la lengua **toca detrás de los dientes de arriba**, como la «n» de *pan*. La **a** suena delante, clara.\n- **-ng** (上 shàng, 房 fáng, 堂 táng): la lengua **no toca los dientes**; se levanta la parte de atrás, como en *tengo* sin llegar a decir la g. La **a** suena más atrás y más oscura.\n\nSi dices 饭 con -ng (*fàng*), un chino oirá «poner» (放). Exagera la diferencia al principio.",
+      "items": [
+        {
+          "audio": "上班",
+          "options": [
+            "shàngbān",
+            "shànbāng",
+            "shàngbāng"
+          ],
+          "answer": 0,
+          "explain": "shàng con -ng, bān con -n."
+        },
+        {
+          "audio": "饭",
+          "options": [
+            "fàn",
+            "fàng"
+          ],
+          "answer": 0,
+          "explain": "Lengua contra los dientes: -n."
+        },
+        {
+          "audio": "房",
+          "options": [
+            "fáng",
+            "fán"
+          ],
+          "answer": 0,
+          "explain": "Lengua atrás, sin tocar los dientes: -ng."
+        },
+        {
+          "audio": "食堂",
+          "options": [
+            "shítáng",
+            "shítán",
+            "sítáng"
+          ],
+          "answer": 0,
+          "explain": "táng con -ng."
+        },
+        {
+          "audio": "午饭",
+          "options": [
+            "wǔfàn",
+            "wǔfàng",
+            "wǔhuàn"
+          ],
+          "answer": 0,
+          "explain": "f + àn."
+        }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": [
+        "课",
+        "饭"
+      ],
+      "mnemonics": {
+        "课": "讠 (palabras) + 果 (fruto): la clase es donde las palabras dan fruto.",
+        "饭": "饣 (comida) + 反 (fǎn, da el sonido): fàn, la comida."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "Dos verbos seguidos: 去 + lugar + verbo",
+      "markdown": "Hoy se estrena el hueco **Verbo 2**. Cuando vas a un sitio **para** hacer algo, el chino pone los dos verbos **en el orden en que pasan**: primero vas (**去学校**), luego haces (**上课**). No hace falta ni «a» ni «para»:\n\n- 我**去学校** **上课** = voy a la universidad a clase.\n- **来** funciona igual: 他**来我家** **吃饭** = viene a mi casa a comer.\n- El medio de transporte también es una acción previa: **坐车** **去**学校 = voy a la universidad en coche (lit. «me siento en el coche, voy a la universidad»).\n\nEl lugar va **pegado al primer verbo**, dentro de su hueco: 去学校, 去食堂, 来我家. La hora sigue delante de todo el bloque: 我**八点**去学校上课.\n\nNegativa: 不 delante del **primer** verbo (我下午**不**去学校上课).",
+      "focus": [
+        "verb1",
+        "verb2"
+      ],
+      "compare": true,
+      "sentences": [
+        {
+          "slots": {
+            "subject": {
+              "zh": "我",
+              "py": "wǒ"
+            },
+            "time": {
+              "zh": "八点",
+              "py": "bā diǎn"
+            },
+            "verb1": {
+              "zh": "去学校",
+              "py": "qù xuéxiào"
+            },
+            "verb2": {
+              "zh": "上课",
+              "py": "shàngkè"
+            }
+          },
+          "end": "。",
+          "es": "A las ocho voy a la universidad a clase.",
+          "esOrder": [
+            {
+              "text": "A las ocho",
+              "slot": "time"
+            },
+            {
+              "text": "(yo)",
+              "slot": "subject"
+            },
+            {
+              "text": "voy a la universidad",
+              "slot": "verb1"
+            },
+            {
+              "text": "a clase",
+              "slot": "verb2"
+            }
+          ]
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "我们",
+              "py": "wǒmen"
+            },
+            "time": {
+              "zh": "中午",
+              "py": "zhōngwǔ"
+            },
+            "verb1": {
+              "zh": "去食堂",
+              "py": "qù shítáng"
+            },
+            "verb2": {
+              "zh": "吃",
+              "py": "chī"
+            },
+            "object": {
+              "zh": "午饭",
+              "py": "wǔfàn"
+            }
+          },
+          "end": "。",
+          "es": "Al mediodía vamos al comedor a comer."
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "小李",
+              "py": "Xiǎo Lǐ"
+            },
+            "verb1": {
+              "zh": "来我家",
+              "py": "lái wǒ jiā"
+            },
+            "verb2": {
+              "zh": "吃饭",
+              "py": "chīfàn"
+            }
+          },
+          "end": "。",
+          "es": "Xiao Li viene a mi casa a comer."
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "王老师",
+              "py": "Wáng lǎoshī"
+            },
+            "time": {
+              "zh": "每天",
+              "py": "měi tiān"
+            },
+            "verb1": {
+              "zh": "坐车",
+              "py": "zuò chē"
+            },
+            "verb2": {
+              "zh": "去",
+              "py": "qù"
+            },
+            "object": {
+              "zh": "学校",
+              "py": "xuéxiào"
+            }
+          },
+          "end": "。",
+          "es": "La profesora Wang va a la universidad en coche todos los días.",
+          "esOrder": [
+            {
+              "text": "La profesora Wang",
+              "slot": "subject"
+            },
+            {
+              "text": "va",
+              "slot": "verb2"
+            },
+            {
+              "text": "a la universidad",
+              "slot": "object"
+            },
+            {
+              "text": "en coche",
+              "slot": "verb1"
+            },
+            {
+              "text": "todos los días",
+              "slot": "time"
+            }
+          ]
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "安娜",
+              "py": "Ānnà"
+            },
+            "time": {
+              "zh": "下午",
+              "py": "xiàwǔ"
+            },
+            "verb1": {
+              "zh": "去学校",
+              "py": "qù xuéxiào"
+            },
+            "verb2": {
+              "zh": "学习",
+              "py": "xuéxí"
+            },
+            "object": {
+              "zh": "汉语",
+              "py": "Hànyǔ"
+            }
+          },
+          "end": "。",
+          "es": "Ana va por la tarde a la universidad a estudiar chino."
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "大卫",
+              "py": "Dàwèi"
+            },
+            "time": {
+              "zh": "九点",
+              "py": "jiǔ diǎn"
+            },
+            "verb1": {
+              "zh": "上班",
+              "py": "shàngbān"
+            }
+          },
+          "end": "。",
+          "es": "David entra a trabajar a las nueve."
+        }
+      ],
+      "negative": [
+        {
+          "slots": {
+            "subject": {
+              "zh": "我",
+              "py": "wǒ"
+            },
+            "time": {
+              "zh": "下午",
+              "py": "xiàwǔ"
+            },
+            "adverb": {
+              "zh": "不",
+              "py": "bú"
+            },
+            "verb1": {
+              "zh": "去学校",
+              "py": "qù xuéxiào"
+            },
+            "verb2": {
+              "zh": "上课",
+              "py": "shàngkè"
+            }
+          },
+          "end": "。",
+          "es": "Por la tarde no voy a clase."
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "他",
+              "py": "tā"
+            },
+            "time": {
+              "zh": "中午",
+              "py": "zhōngwǔ"
+            },
+            "adverb": {
+              "zh": "不",
+              "py": "bú"
+            },
+            "verb1": {
+              "zh": "去食堂",
+              "py": "qù shítáng"
+            },
+            "verb2": {
+              "zh": "吃饭",
+              "py": "chīfàn"
+            }
+          },
+          "end": "。",
+          "es": "Al mediodía él no va a comer al comedor."
+        }
+      ],
+      "question": [
+        {
+          "slots": {
+            "subject": {
+              "zh": "你",
+              "py": "nǐ"
+            },
+            "time": {
+              "zh": "几点",
+              "py": "jǐ diǎn"
+            },
+            "verb1": {
+              "zh": "去学校",
+              "py": "qù xuéxiào"
+            },
+            "verb2": {
+              "zh": "上课",
+              "py": "shàngkè"
+            }
+          },
+          "end": "？",
+          "es": "¿A qué hora vas a clase?"
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "你",
+              "py": "nǐ"
+            },
+            "time": {
+              "zh": "下午",
+              "py": "xiàwǔ"
+            },
+            "verb1": {
+              "zh": "来学校",
+              "py": "lái xuéxiào"
+            },
+            "verb2": {
+              "zh": "学习",
+              "py": "xuéxí"
+            },
+            "particle": {
+              "zh": "吗",
+              "py": "ma"
+            }
+          },
+          "end": "？",
+          "es": "¿Vienes a la universidad a estudiar por la tarde?"
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "我去学校为了上课。",
+          "right": "我去学校上课。",
+          "why": "No hace falta «para»: el segundo verbo ya dice a qué vas."
+        },
+        {
+          "wrong": "我上课去学校。",
+          "right": "我去学校上课。",
+          "why": "Los verbos van en el orden en que pasan: primero vas, luego das la clase."
+        },
+        {
+          "wrong": "我去学校坐车。",
+          "right": "我坐车去学校。",
+          "why": "El medio de transporte va antes del verbo de movimiento."
+        },
+        {
+          "wrong": "我去到学校。",
+          "right": "我去学校。",
+          "why": "去 lleva el lugar directamente, sin 到 ni 在."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "A las doce, en el campus",
+      "lines": [
+        {
+          "speaker": "小李",
+          "zh": "雨果，现在十二点，你去食堂吃午饭吗？",
+          "py": "Yǔguǒ, xiànzài shí'èr diǎn, nǐ qù shítáng chī wǔfàn ma?",
+          "es": "Hugo, son las doce, ¿vas al comedor a comer?"
+        },
+        {
+          "speaker": "雨果",
+          "zh": "去！我们一起去。",
+          "py": "Qù! Wǒmen yìqǐ qù.",
+          "es": "¡Sí! Vamos juntos."
+        },
+        {
+          "speaker": "小李",
+          "zh": "你下午上课吗？",
+          "py": "Nǐ xiàwǔ shàngkè ma?",
+          "es": "¿Tienes clase por la tarde?"
+        },
+        {
+          "speaker": "雨果",
+          "zh": "不上课。下午我去学校学习汉语。你呢？",
+          "py": "Bú shàngkè. Xiàwǔ wǒ qù xuéxiào xuéxí Hànyǔ. Nǐ ne?",
+          "es": "No. Por la tarde voy a la universidad a estudiar chino. ¿Y tú?"
+        },
+        {
+          "speaker": "小李",
+          "zh": "我下午工作。两点上班，六点下班。",
+          "py": "Wǒ xiàwǔ gōngzuò. Liǎng diǎn shàngbān, liù diǎn xiàbān.",
+          "es": "Yo trabajo por la tarde. Entro a las dos y salgo a las seis."
+        },
+        {
+          "speaker": "雨果",
+          "zh": "你坐车去吗？",
+          "py": "Nǐ zuò chē qù ma?",
+          "es": "¿Vas en coche?"
+        },
+        {
+          "speaker": "小李",
+          "zh": "对，我坐车去。你几点去学校？",
+          "py": "Duì, wǒ zuò chē qù. Nǐ jǐ diǎn qù xuéxiào?",
+          "es": "Sí, voy en coche. ¿A qué hora vas tú a la universidad?"
+        },
+        {
+          "speaker": "雨果",
+          "zh": "两点。现在我们去吃饭！",
+          "py": "Liǎng diǎn. Xiànzài wǒmen qù chīfàn!",
+          "es": "A las dos. ¡Ahora vamos a comer!"
+        }
+      ],
+      "notes": "上 y 下 marcan el principio y el final: 上课 / 下课 (clase), 上班 / 下班 (trabajo). En el 食堂 (comedor universitario) se come barato entre las 11 y las 13; se paga con la tarjeta del campus o con el móvil."
+    },
+    {
+      "type": "exercises",
+      "count": 15,
+      "bank": [
+        "g-lai-qu",
+        "g-word-order",
+        "u13"
+      ]
+    },
+    {
+      "type": "sentence-builder",
+      "items": [
+        {
+          "sentence": {
+            "slots": {
+              "subject": {
+                "zh": "我",
+                "py": "wǒ"
+              },
+              "verb1": {
+                "zh": "去食堂",
+                "py": "qù shítáng"
+              },
+              "verb2": {
+                "zh": "吃",
+                "py": "chī"
+              },
+              "object": {
+                "zh": "午饭",
+                "py": "wǔfàn"
+              }
+            },
+            "end": "。",
+            "es": "Voy al comedor a comer."
+          }
+        },
+        {
+          "sentence": {
+            "slots": {
+              "subject": {
+                "zh": "他",
+                "py": "tā"
+              },
+              "verb1": {
+                "zh": "坐车",
+                "py": "zuò chē"
+              },
+              "verb2": {
+                "zh": "去",
+                "py": "qù"
+              },
+              "object": {
+                "zh": "学校",
+                "py": "xuéxiào"
+              }
+            },
+            "end": "。",
+            "es": "Él va a la universidad en coche."
+          },
+          "distractors": [
+            "在"
+          ]
+        },
+        {
+          "sentence": {
+            "slots": {
+              "subject": {
+                "zh": "安娜",
+                "py": "Ānnà"
+              },
+              "time": {
+                "zh": "下午",
+                "py": "xiàwǔ"
+              },
+              "adverb": {
+                "zh": "不",
+                "py": "bù"
+              },
+              "verb1": {
+                "zh": "来学校",
+                "py": "lái xuéxiào"
+              },
+              "verb2": {
+                "zh": "学习",
+                "py": "xuéxí"
+              }
+            },
+            "end": "。",
+            "es": "Ana no viene a la universidad a estudiar por la tarde."
+          },
+          "distractors": [
+            "吗"
+          ]
+        },
+        {
+          "sentence": {
+            "slots": {
+              "subject": {
+                "zh": "我和小李",
+                "py": "wǒ hé Xiǎo Lǐ"
+              },
+              "time": {
+                "zh": "每天中午十二点",
+                "py": "měi tiān zhōngwǔ shí'èr diǎn"
+              },
+              "adverb": {
+                "zh": "都",
+                "py": "dōu"
+              },
+              "verb1": {
+                "zh": "去食堂",
+                "py": "qù shítáng"
+              },
+              "verb2": {
+                "zh": "吃",
+                "py": "chī"
+              },
+              "object": {
+                "zh": "午饭",
+                "py": "wǔfàn"
+              }
+            },
+            "end": "。",
+            "es": "Xiao Li y yo vamos todos los días a las doce al comedor a comer."
+          },
+          "distractors": [
+            "在"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        {
+          "zh": "我去学校上课。",
+          "py": "Wǒ qù xuéxiào shàngkè.",
+          "es": "Voy a la universidad a clase."
+        },
+        {
+          "zh": "我们去食堂吃午饭。",
+          "py": "Wǒmen qù shítáng chī wǔfàn.",
+          "es": "Vamos al comedor a comer."
+        },
+        {
+          "zh": "王老师坐车去学校。",
+          "py": "Wáng lǎoshī zuò chē qù xuéxiào.",
+          "es": "La profesora Wang va a la universidad en coche."
+        },
+        {
+          "zh": "他两点上班，六点下班。",
+          "py": "Tā liǎng diǎn shàngbān, liù diǎn xiàbān.",
+          "es": "Entra a trabajar a las dos y sale a las seis."
+        }
+      ],
+      "respond": [
+        {
+          "q": {
+            "zh": "你中午去哪儿吃饭？",
+            "py": "Nǐ zhōngwǔ qù nǎr chīfàn?",
+            "es": "¿Adónde vas a comer al mediodía?"
+          },
+          "model": {
+            "zh": "我去食堂吃饭。",
+            "py": "Wǒ qù shítáng chīfàn.",
+            "es": "Voy a comer al comedor."
+          }
+        },
+        {
+          "q": {
+            "zh": "你几点下课？",
+            "py": "Nǐ jǐ diǎn xiàkè?",
+            "es": "¿A qué hora sales de clase?"
+          },
+          "model": {
+            "zh": "我十二点下课。",
+            "py": "Wǒ shí'èr diǎn xiàkè.",
+            "es": "Salgo de clase a las doce."
+          }
+        }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "El mediodía de Hugo y Xiao Li",
+      "text": "雨果每天八点去学校上课，十二点下课。中午他和小李去食堂吃午饭。下午小李去工作，两点上班，六点下班。雨果下午不上课，他去学校学习汉语。",
+      "es": "Hugo va todos los días a clase a las ocho y sale a las doce. Al mediodía va con Xiao Li al comedor a comer. Por la tarde Xiao Li va a trabajar: entra a las dos y sale a las seis. Hugo no tiene clase por la tarde: va a la universidad a estudiar chino.",
+      "questions": [
+        {
+          "q": "¿Dónde comen al mediodía?",
+          "options": [
+            "En el comedor",
+            "En casa",
+            "En la oficina"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "¿Qué hace Xiao Li por la tarde?",
+          "options": [
+            "Trabaja",
+            "Estudia chino",
+            "Va a clase"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "¿A qué hora sale Hugo de clase?",
+          "options": [
+            "A las doce",
+            "A las ocho",
+            "A las seis"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "type": "notes-growth"
+    }
+  ]
+}

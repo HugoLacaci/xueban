@@ -1,0 +1,465 @@
+{
+  "id": "pronombres",
+  "title": "Pronombres",
+  "zh": "代词",
+  "order": 1,
+  "icon": "Users",
+  "summary": "Yo, tú, él y los demás: los pronombres personales y su plural con 们, los posesivos con 的, los demostrativos 这 / 那 / 哪 (con clasificador y como lugares) y los pronombres de grupo y de uno mismo: 咱们, 大家, 自己, 别人.",
+  "kind": "topic",
+  "reviewed": false,
+  "sections": [
+    {
+      "id": "personales",
+      "title": "Yo, tú, usted, él, ella",
+      "unlockedBy": "a1-u01-l1",
+      "markdown": "### Un pronombre, una forma\n\nEl verbo chino **no se conjuga**: 是 vale para *soy, eres, es*. Por eso el pronombre casi siempre se dice: es lo único que indica quién hace la acción.\n\n| Chino | Pinyin | Español | Nota |\n|---|---|---|---|\n| 我 | wǒ | yo | |\n| 你 | nǐ | tú | |\n| 您 | nín | usted | respeto: profesores, mayores, clientes |\n| 他 | tā | él | |\n| 她 | tā | ella | |\n\n- **他 y 她 suenan igual** (tā, primer tono). La diferencia solo se ve al escribir: 亻 (persona) frente a 女 (mujer).\n- **您** lleva 心 (corazón) debajo de 你: es un «tú» con respeto. No tiene plural propio en la lengua hablada.\n- El pronombre ocupa el **hueco del sujeto** (我是学生) o el del **objeto** (老师是她).\n\n> ⚠️ **Ojo**: no existe la diferencia «yo / me / mí». 我 sirve para todo: 我是学生 (yo soy estudiante), 他是我 (él soy yo… en una foto).",
+      "skeleton": {
+        "focus": ["subject"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ", "es": "yo" },
+              "verb1": { "zh": "是", "py": "shì", "es": "soy" },
+              "object": { "zh": "学生", "py": "xuésheng", "es": "estudiante" }
+            },
+            "end": "。",
+            "es": "Soy estudiante."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "她", "py": "tā", "es": "ella" },
+              "adverb": { "zh": "不", "py": "bú", "es": "no" },
+              "verb1": { "zh": "是", "py": "shì", "es": "es" },
+              "object": { "zh": "老师", "py": "lǎoshī", "es": "profesora" }
+            },
+            "end": "。",
+            "es": "Ella no es profesora."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "您", "py": "nín", "es": "usted" },
+              "verb1": { "zh": "是", "py": "shì", "es": "es" },
+              "object": { "zh": "老师", "py": "lǎoshī", "es": "profesor" },
+              "particle": { "zh": "吗", "py": "ma" }
+            },
+            "end": "？",
+            "es": "¿Es usted profesor?"
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "我是学生。", "py": "Wǒ shì xuésheng.", "es": "Soy estudiante." },
+        { "zh": "你是学生吗？", "py": "Nǐ shì xuésheng ma?", "es": "¿Eres estudiante?" },
+        { "zh": "您是老师吗？", "py": "Nín shì lǎoshī ma?", "es": "¿Es usted profesor?" },
+        { "zh": "他是学生，她是老师。", "py": "Tā shì xuésheng, tā shì lǎoshī.", "es": "Él es estudiante y ella es profesora." }
+      ]
+    },
+    {
+      "id": "plural-men",
+      "title": "El plural: 们 (y 它)",
+      "unlockedBy": "a1-u01-l2",
+      "markdown": "### Basta con añadir 们\n\n| Singular | Plural | Español |\n|---|---|---|\n| 我 | 我们 wǒmen | nosotros, nosotras |\n| 你 | 你们 nǐmen | vosotros, vosotras |\n| 他 | 他们 tāmen | ellos (o grupo mixto) |\n| 她 | 她们 tāmen | ellas (solo mujeres) |\n| 它 | 它们 tāmen | ello, ellos (animales y cosas) |\n\n- **们** va en tono neutro y solo se pone a **pronombres y personas**: 老师们, 同学们 (sobre todo al dirigirse a un grupo).\n- **Nunca con un número**: ✗两个学生们 → 两个学生. Ni con cosas: ✗书们.\n- Los nombres no cambian: 学生 es «estudiante» y «estudiantes». El contexto (o un número) dice cuántos.\n- **它** (tā) es el pronombre de animales y cosas; en la conversación casi no se usa para cosas.\n\n> ❌ **Error típico**: ✗我们是学生们. Con el pronombre en plural ya basta: 我们是学生.",
+      "sourceNotes": ["zh-errors-hispanohablantes"],
+      "skeleton": {
+        "focus": ["subject"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "我们", "py": "wǒmen", "es": "nosotros" },
+              "verb1": { "zh": "是", "py": "shì", "es": "somos" },
+              "object": { "zh": "同学", "py": "tóngxué", "es": "compañeros" }
+            },
+            "end": "。",
+            "es": "Somos compañeros de clase."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "他们", "py": "tāmen", "es": "ellos" },
+              "adverb": { "zh": "不", "py": "bú", "es": "no" },
+              "verb1": { "zh": "是", "py": "shì", "es": "son" },
+              "object": { "zh": "老师", "py": "lǎoshī", "es": "profesores" }
+            },
+            "end": "。",
+            "es": "Ellos no son profesores."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "你们", "py": "nǐmen", "es": "vosotros" },
+              "verb1": { "zh": "是", "py": "shì", "es": "sois" },
+              "object": { "zh": "学生", "py": "xuésheng", "es": "estudiantes" },
+              "particle": { "zh": "吗", "py": "ma" }
+            },
+            "end": "？",
+            "es": "¿Sois estudiantes?"
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "我们是同学。", "py": "Wǒmen shì tóngxué.", "es": "Somos compañeros de clase." },
+        { "zh": "你们是学生吗？", "py": "Nǐmen shì xuésheng ma?", "es": "¿Sois estudiantes?" },
+        { "zh": "她们是老师，我们是学生。", "py": "Tāmen shì lǎoshī, wǒmen shì xuésheng.", "es": "Ellas son profesoras y nosotros, estudiantes." },
+        { "zh": "他们不是同学。", "py": "Tāmen bú shì tóngxué.", "es": "Ellos no son compañeros de clase." }
+      ]
+    },
+    {
+      "id": "este-ese",
+      "title": "Esto y eso: 这 y 那",
+      "unlockedBy": "a1-u01-l2",
+      "markdown": "### Solo dos distancias\n\nEl español tiene tres (este, ese, aquel); el chino, dos:\n\n| Chino | Pinyin | Español |\n|---|---|---|\n| 这 | zhè | este, esta, esto (cerca de mí) |\n| 那 | nà | ese, aquel, eso (lejos) |\n\nDe momento los usamos como **sujeto delante de 是**, para presentar o señalar: **这是**王老师 (esta es la profesora Wang), **那是**大卫.\n\n> 💡 **Truco**: 这 sin nada detrás solo funciona como sujeto con 是. Para «este libro» o «quiero esto» hará falta un clasificador (这本书, 这个): lo verás en la unidad 10.",
+      "sourceNotes": ["zh-contrast-zhe-na-na"],
+      "skeleton": {
+        "focus": ["subject"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "这", "py": "zhè", "es": "esta" },
+              "verb1": { "zh": "是", "py": "shì", "es": "es" },
+              "object": { "zh": "王老师", "py": "Wáng lǎoshī", "es": "la profesora Wang" }
+            },
+            "end": "。",
+            "es": "Esta es la profesora Wang."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "那", "py": "nà", "es": "ese" },
+              "adverb": { "zh": "不", "py": "bú", "es": "no" },
+              "verb1": { "zh": "是", "py": "shì", "es": "es" },
+              "object": { "zh": "大卫", "py": "Dàwèi", "es": "David" }
+            },
+            "end": "。",
+            "es": "Ese no es David."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "这是王老师。", "py": "Zhè shì Wáng lǎoshī.", "es": "Esta es la profesora Wang." },
+        { "zh": "那是大卫。", "py": "Nà shì Dàwèi.", "es": "Ese es David." },
+        { "zh": "这是你同学吗？", "py": "Zhè shì nǐ tóngxué ma?", "es": "¿Este es tu compañero de clase?" }
+      ]
+    },
+    {
+      "id": "posesivos",
+      "title": "Mi, tu, su: pronombre + 的",
+      "unlockedBy": "a1-u03-l2",
+      "markdown": "### No hay palabras especiales para «mi» o «tu»\n\nEl posesivo se hace con el pronombre + **的**:\n\n| Pronombre | Posesivo | Español |\n|---|---|---|\n| 我 | 我的 | mi, mío |\n| 你 | 你的 | tu, tuyo |\n| 他 / 她 | 他的 / 她的 | su, suyo (de él / de ella) |\n| 我们 | 我们的 | nuestro |\n| 你们 | 你们的 | vuestro |\n| 他们 | 他们的 | su, suyo (de ellos) |\n\n- **Con la familia y lo muy cercano, el 的 se cae**: 我妈妈, 你爸爸, 我家, 我们班. Ponerlo no es error, pero suena a libro.\n- Con cosas se mantiene: 我**的**手机, 老师**的**名字.\n- 的 aparece aquí por primera vez; todos sus usos están en el apunte **El 的**.\n\n> ⚠️ **Ojo**: «su» en español es ambiguo (de él, de ella, de usted, de ellos). En chino nunca: 他的, 她的, 您的, 他们的.",
+      "sourceNotes": ["zh-grammar-de", "zh-particle-de"],
+      "skeleton": {
+        "focus": ["subject", "object"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "她", "py": "tā", "es": "ella" },
+              "verb1": { "zh": "是", "py": "shì", "es": "es" },
+              "object": { "zh": "我妈妈", "py": "wǒ māma", "es": "mi madre" }
+            },
+            "end": "。",
+            "es": "Ella es mi madre."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "我的老师", "py": "wǒ de lǎoshī", "es": "mi profesora" },
+              "verb1": { "zh": "是", "py": "shì", "es": "es" },
+              "object": { "zh": "中国人", "py": "Zhōngguó rén", "es": "china" }
+            },
+            "end": "。",
+            "es": "Mi profesora es china."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "这", "py": "zhè", "es": "este" },
+              "verb1": { "zh": "是", "py": "shì", "es": "es" },
+              "object": { "zh": "你爸爸", "py": "nǐ bàba", "es": "tu padre" },
+              "particle": { "zh": "吗", "py": "ma" }
+            },
+            "end": "？",
+            "es": "¿Este es tu padre?"
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "她是我妈妈。", "py": "Tā shì wǒ māma.", "es": "Ella es mi madre." },
+        { "zh": "我的老师是中国人。", "py": "Wǒ de lǎoshī shì Zhōngguó rén.", "es": "Mi profesora es china." },
+        { "zh": "他不是我哥哥。", "py": "Tā bú shì wǒ gēge.", "es": "Él no es mi hermano mayor." },
+        { "zh": "这是你们的老师吗？", "py": "Zhè shì nǐmen de lǎoshī ma?", "es": "¿Esta es vuestra profesora?" }
+      ]
+    },
+    {
+      "id": "demostrativos-clasificador",
+      "title": "Este libro, esos tres: 这 / 那 / 哪 + clasificador",
+      "unlockedBy": "a1-u10-l2",
+      "markdown": "### El clasificador no se puede saltar\n\nDelante de un nombre, 这, 那 y 哪 piden **clasificador**, igual que un número:\n\n| Demostrativo | (número) | Clasificador | Nombre | Español |\n|---|---|---|---|---|\n| 这 | | 本 | 书 | este libro |\n| 那 | | 件 | 衣服 | esa prenda |\n| 那 | 三 | 本 | 书 | esos tres libros |\n| 哪 | | 本 | 书 | ¿qué libro? |\n\n- **这个 / 那个** también funcionan solos, como objeto: 我要**这个** (quiero este). ✗我要这.\n- **哪** es el tercero de la familia: siempre pregunta («¿cuál?») y lleva clasificador como los otros dos.\n- En la calle oirás **zhèi** ge, **nèi** ge y **něi** ge: es la lectura coloquial de 这个, 那个 y 哪个.\n\n> ❌ **Error típico**: ✗这书很好看 → 这**本**书很好看.",
+      "sourceNotes": ["zh-contrast-zhe-na-na", "zh-grammar-demonstratives"],
+      "skeleton": {
+        "focus": ["subject", "object"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "这本书", "py": "zhè běn shū", "es": "este libro" },
+              "adverb": { "zh": "很", "py": "hěn" },
+              "verb1": { "zh": "好看", "py": "hǎokàn", "es": "es bueno" }
+            },
+            "end": "。",
+            "es": "Este libro está muy bien."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "verb1": { "zh": "要", "py": "yào", "es": "quiero" },
+              "object": { "zh": "那件衣服", "py": "nà jiàn yīfu", "es": "esa prenda" }
+            },
+            "end": "。",
+            "es": "Quiero esa prenda."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "你", "py": "nǐ" },
+              "verb1": { "zh": "要", "py": "yào", "es": "quieres" },
+              "object": { "zh": "哪本书", "py": "nǎ běn shū", "es": "qué libro" }
+            },
+            "end": "？",
+            "es": "¿Qué libro quieres?"
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "这本书很好看。", "py": "Zhè běn shū hěn hǎokàn.", "es": "Este libro está muy bien." },
+        { "zh": "我要那件衣服。", "py": "Wǒ yào nà jiàn yīfu.", "es": "Quiero esa prenda." },
+        { "zh": "你要哪本书？", "py": "Nǐ yào nǎ běn shū?", "es": "¿Qué libro quieres?" },
+        { "zh": "我不要这个，我要那个。", "py": "Wǒ bú yào zhège, wǒ yào nàge.", "es": "No quiero este, quiero ese." }
+      ]
+    },
+    {
+      "id": "estos-esos",
+      "title": "Estos y esos: 这些 / 那些 / 哪些",
+      "unlockedBy": "a1-u10-l3",
+      "markdown": "### 些: el plural de los demostrativos\n\n| Singular | Plural | Español |\n|---|---|---|\n| 这个 | 这些 zhèxiē | estos |\n| 那个 | 那些 nàxiē | esos, aquellos |\n| 哪个 | 哪些 nǎxiē | ¿cuáles? |\n\n- **些 sustituye al clasificador**: 这些书, 那些鞋 (✗这些本书).\n- Con un número exacto se vuelve al clasificador: 这**两本**书 (estos dos libros).\n- Como 这个, pueden ir solos si se sabe de qué hablamos: 那些是我的.",
+      "sourceNotes": ["zh-contrast-zhe-na-na"],
+      "skeleton": {
+        "focus": ["subject", "object"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "这些书", "py": "zhèxiē shū", "es": "estos libros" },
+              "verb1": { "zh": "是", "py": "shì", "es": "son" },
+              "object": { "zh": "我的", "py": "wǒ de", "es": "míos" }
+            },
+            "end": "。",
+            "es": "Estos libros son míos."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "adverb": { "zh": "不", "py": "bù" },
+              "verb1": { "zh": "穿", "py": "chuān", "es": "me pongo" },
+              "object": { "zh": "那些鞋", "py": "nàxiē xié", "es": "esos zapatos" }
+            },
+            "end": "。",
+            "es": "No me pongo esos zapatos."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "这些书是我的。", "py": "Zhèxiē shū shì wǒ de.", "es": "Estos libros son míos." },
+        { "zh": "那些鞋很好看。", "py": "Nàxiē xié hěn hǎokàn.", "es": "Esos zapatos son muy bonitos." },
+        { "zh": "哪些是你的？", "py": "Nǎxiē shì nǐ de?", "es": "¿Cuáles son los tuyos?" }
+      ]
+    },
+    {
+      "id": "aqui-alli",
+      "title": "Aquí, allí, ¿dónde?: 这儿 / 那儿 / 哪儿",
+      "unlockedBy": "a1-u10-l4",
+      "markdown": "### Añade 儿 o 里 y tienes un lugar\n\n| Cosa | Lugar (norte) | Lugar (sur, también Shanghái) | Español |\n|---|---|---|---|\n| 这 | 这儿 zhèr | 这里 zhèli | aquí |\n| 那 | 那儿 nàr | 那里 nàli | ahí, allí |\n| 哪 | 哪儿 nǎr | 哪里 nǎli | ¿dónde? |\n\n- **Lugar + 有 + cosa** = «aquí hay…»: **这儿**有一张桌子. El lugar va primero.\n- No confundas: **这**是我的书 (esto es mi libro) frente a **这儿**有我的书 (aquí hay un libro mío).\n- 那 (nà, 4.º tono) y 哪 (nǎ, 3.º tono) se confunden al oído: si preguntas, es 哪.\n\n> ❌ **Error típico**: ✗这儿是我的书 para «esto es mi libro». 这儿 es un lugar; «esto» es 这.",
+      "sourceNotes": ["zh-contrast-zhe-na-na"],
+      "skeleton": {
+        "focus": ["subject"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "这儿", "py": "zhèr", "es": "aquí" },
+              "verb1": { "zh": "有", "py": "yǒu", "es": "hay" },
+              "object": { "zh": "一张桌子", "py": "yì zhāng zhuōzi", "es": "una mesa" }
+            },
+            "end": "。",
+            "es": "Aquí hay una mesa."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "那里", "py": "nàli", "es": "allí" },
+              "verb1": { "zh": "没有", "py": "méiyǒu", "es": "no hay" },
+              "object": { "zh": "椅子", "py": "yǐzi", "es": "sillas" }
+            },
+            "end": "。",
+            "es": "Allí no hay sillas."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "哪儿", "py": "nǎr", "es": "dónde" },
+              "verb1": { "zh": "有", "py": "yǒu", "es": "hay" },
+              "object": { "zh": "电脑", "py": "diànnǎo", "es": "un ordenador" }
+            },
+            "end": "？",
+            "es": "¿Dónde hay un ordenador?"
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "这儿有一张桌子。", "py": "Zhèr yǒu yì zhāng zhuōzi.", "es": "Aquí hay una mesa." },
+        { "zh": "那里有很多书。", "py": "Nàli yǒu hěn duō shū.", "es": "Allí hay muchos libros." },
+        { "zh": "哪儿有电脑？", "py": "Nǎr yǒu diànnǎo?", "es": "¿Dónde hay un ordenador?" },
+        { "zh": "这是我的书包，那儿有你的书包。", "py": "Zhè shì wǒ de shūbāo, nàr yǒu nǐ de shūbāo.", "es": "Esta es mi mochila; ahí está la tuya." }
+      ]
+    },
+    {
+      "id": "zanmen",
+      "title": "咱们: «nosotros» contándote a ti",
+      "unlockedBy": "a1-u11-l2",
+      "markdown": "### Dos «nosotros»\n\n| Pronombre | ¿Incluye al que escucha? | Uso |\n|---|---|---|\n| 我们 wǒmen | puede que sí, puede que no | general |\n| 咱们 zánmen | **sí, siempre** | coloquial, sobre todo en el norte |\n\nSi Hugo le dice a Xiao Li **咱们**去吃饭, Xiao Li va con él. Si le dice **我们**去吃饭, puede que solo vaya Hugo con otros.\n\n> 💡 **Truco**: para proponer un plan a un amigo, 咱们 suena cercano y natural: 咱们走吧！ (lo de 吧 llega en la unidad 12).",
+      "skeleton": {
+        "focus": ["subject"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "咱们", "py": "zánmen", "es": "nosotros (tú y yo)" },
+              "verb1": { "zh": "是", "py": "shì", "es": "somos" },
+              "object": { "zh": "好朋友", "py": "hǎo péngyou", "es": "buenos amigos" }
+            },
+            "end": "。",
+            "es": "Tú y yo somos buenos amigos."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "咱们", "py": "zánmen" },
+              "with": { "zh": "一起", "py": "yìqǐ", "es": "juntos" },
+              "verb1": { "zh": "去食堂", "py": "qù shítáng", "es": "vamos al comedor" }
+            },
+            "end": "。",
+            "es": "Vamos juntos al comedor."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "咱们是好朋友。", "py": "Zánmen shì hǎo péngyou.", "es": "Tú y yo somos buenos amigos." },
+        { "zh": "咱们一起去食堂。", "py": "Zánmen yìqǐ qù shítáng.", "es": "Vamos juntos al comedor." },
+        { "zh": "我们是学生，你们是老师。", "py": "Wǒmen shì xuésheng, nǐmen shì lǎoshī.", "es": "Nosotros somos estudiantes y vosotros, profesores.", "note": "Aquí 咱们 no cabe: el que escucha no está incluido." }
+      ]
+    },
+    {
+      "id": "dajia",
+      "title": "大家: todo el mundo",
+      "unlockedBy": "a1-u11-l3",
+      "markdown": "### Un pronombre para el grupo entero\n\n**大家** dàjiā = todos, todo el mundo (los presentes o el grupo del que se habla). Funciona como un pronombre: puede ser sujeto u objeto.\n\n- Como sujeto, casi siempre lleva **都** delante del verbo: 大家**都**想交朋友.\n- **Al saludar a un grupo**: 大家好！ (¡hola a todos!).\n- No lleva 们: ✗大家们.\n\n> ⚠️ **Ojo**: 都 va detrás de 大家, nunca delante: ✗都大家想… → 大家都想….",
+      "skeleton": {
+        "focus": ["subject"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "大家", "py": "dàjiā", "es": "todo el mundo" },
+              "adverb": { "zh": "都", "py": "dōu" },
+              "aux": { "zh": "想", "py": "xiǎng", "es": "quiere" },
+              "verb1": { "zh": "交朋友", "py": "jiāo péngyou", "es": "hacer amigos" }
+            },
+            "end": "。",
+            "es": "Todo el mundo quiere hacer amigos."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "大家", "py": "dàjiā" },
+              "adverb": { "zh": "都", "py": "dōu" },
+              "verb1": { "zh": "是", "py": "shì", "es": "son" },
+              "object": { "zh": "我的同学", "py": "wǒ de tóngxué", "es": "mis compañeros" }
+            },
+            "end": "。",
+            "es": "Todos son compañeros míos."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "大家好！", "py": "Dàjiā hǎo!", "es": "¡Hola a todos!" },
+        { "zh": "大家都想交朋友。", "py": "Dàjiā dōu xiǎng jiāo péngyou.", "es": "Todo el mundo quiere hacer amigos." },
+        { "zh": "大家都是我的同学。", "py": "Dàjiā dōu shì wǒ de tóngxué.", "es": "Todos son compañeros míos." }
+      ]
+    },
+    {
+      "id": "ziji-bieren",
+      "title": "Uno mismo y los demás: 自己 y 别人",
+      "unlockedBy": "a1-u11-l4",
+      "markdown": "### Dos pronombres que se oponen\n\n| Chino | Pinyin | Español |\n|---|---|---|\n| 自己 | zìjǐ | uno mismo, yo mismo, por mi cuenta |\n| 别人 | biérén | los demás, otra gente |\n\n- **自己** delante del verbo = «solo, sin ayuda»: 我**自己**去 (voy yo solo).\n- **别人** puede ser sujeto u objeto y no lleva 们: 我不想告诉**别人**.\n- No confundas **别人** (otra gente) con **别的** + nombre (otro, distinto: 别的颜色).",
+      "skeleton": {
+        "focus": ["subject", "object"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "adverb": { "zh": "自己", "py": "zìjǐ", "es": "yo solo" },
+              "verb1": { "zh": "去", "py": "qù", "es": "voy" }
+            },
+            "end": "。",
+            "es": "Voy yo solo."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "adverb": { "zh": "不", "py": "bù" },
+              "aux": { "zh": "想", "py": "xiǎng", "es": "quiero" },
+              "verb1": { "zh": "告诉", "py": "gàosu", "es": "contar" },
+              "object": { "zh": "别人", "py": "biérén", "es": "a otros" }
+            },
+            "end": "。",
+            "es": "No quiero contárselo a nadie más."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "我自己去。", "py": "Wǒ zìjǐ qù.", "es": "Voy yo solo." },
+        { "zh": "我不想告诉别人。", "py": "Wǒ bù xiǎng gàosu biérén.", "es": "No quiero contárselo a nadie más." },
+        { "zh": "这是我自己的事，别人不知道。", "py": "Zhè shì wǒ zìjǐ de shì, biérén bù zhīdào.", "es": "Es asunto mío; los demás no lo saben." }
+      ]
+    },
+    {
+      "id": "ziji-usos",
+      "title": "自己 en tres usos: solo, mismo y propio",
+      "unlockedBy": "a2-u03-l4",
+      "markdown": "### Vuelve 自己, con más trabajo\n\n| Uso | Posición | Ejemplo | Español |\n|---|---|---|---|\n| Sin ayuda | delante del verbo (hueco Adverbios) | 我**自己**做。 | Lo hago yo solo. |\n| Refuerzo | detrás del pronombre | 他**自己**不知道。 | Ni él mismo lo sabe. |\n| Propio | 自己 + 的 + nombre | 我**自己的**房间 | mi propia habitación |\n\n- También puede ser **objeto**: 他只想自己 (solo piensa en sí mismo).\n- Orden con 的: pronombre + 自己 + 的: 我自己的, nunca ✗我的自己.\n\n> ❌ **Error típico**: ✗我做自己 por «lo hago yo mismo». 自己 va delante del verbo: 我自己做.",
+      "skeleton": {
+        "focus": ["adverb", "object"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "adverb": { "zh": "自己", "py": "zìjǐ", "es": "yo mismo" },
+              "verb1": { "zh": "洗", "py": "xǐ", "es": "lavo" },
+              "object": { "zh": "衣服", "py": "yīfu", "es": "la ropa" }
+            },
+            "end": "。",
+            "es": "Me lavo la ropa yo mismo."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "这", "py": "zhè" },
+              "verb1": { "zh": "是", "py": "shì", "es": "es" },
+              "object": { "zh": "我自己的房间", "py": "wǒ zìjǐ de fángjiān", "es": "mi propia habitación" }
+            },
+            "end": "。",
+            "es": "Esta es mi propia habitación."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "你", "py": "nǐ" },
+              "adverb": { "zh": "自己", "py": "zìjǐ" },
+              "verb1": { "zh": "做饭", "py": "zuò fàn", "es": "cocinas" },
+              "particle": { "zh": "吗", "py": "ma" }
+            },
+            "end": "？",
+            "es": "¿Te haces tú la comida?"
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "你自己去吧。", "py": "Nǐ zìjǐ qù ba.", "es": "Ve tú solo." },
+        { "zh": "这是我自己的房间。", "py": "Zhè shì wǒ zìjǐ de fángjiān.", "es": "Esta es mi propia habitación." },
+        { "zh": "我不想自己去。", "py": "Wǒ bù xiǎng zìjǐ qù.", "es": "No quiero ir solo." },
+        { "zh": "他自己也不知道。", "py": "Tā zìjǐ yě bù zhīdào.", "es": "Ni él mismo lo sabe." }
+      ]
+    }
+  ]
+}

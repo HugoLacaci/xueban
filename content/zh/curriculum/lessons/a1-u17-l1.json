@@ -1,0 +1,129 @@
+{
+  "id": "a1-u17-l1",
+  "title": "¿Dónde estudias? 在 + lugar + 学习 / 工作",
+  "zh": "我在交大读硕士",
+  "goal": "Decir dónde y qué estudias o dónde trabajas (在 + lugar + 学习 / 工作) y preguntárselo a otros.",
+  "minutes": 14,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "学", "pinyin": "xué", "es": "estudiar, aprender", "note": "学 + lo que aprendes: 学汉语, 学开车." },
+    { "hanzi": "大学", "pinyin": "dàxué", "es": "universidad" },
+    { "hanzi": "大学生", "pinyin": "dàxuéshēng", "es": "estudiante universitario (de grado)" },
+    { "hanzi": "学院", "pinyin": "xuéyuàn", "es": "facultad, escuela (universitaria)", "note": "外语学院 = Facultad de Lenguas Extranjeras." },
+    { "hanzi": "研究生", "pinyin": "yánjiūshēng", "es": "estudiante de posgrado (máster o doctorado)" },
+    { "hanzi": "硕士", "pinyin": "shuòshì", "es": "máster", "note": "读硕士 = cursar un máster." },
+    { "hanzi": "专业", "pinyin": "zhuānyè", "es": "carrera, especialidad", "note": "你学什么专业？ = ¿Qué estudias?" },
+    { "hanzi": "公司", "pinyin": "gōngsī", "es": "empresa" }
+  ],
+  "extraVocab": ["研究生", "硕士", "专业"],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "我在交大读硕士。", "py": "Wǒ zài Jiāodà dú shuòshì.", "es": "Estudio un máster en la Jiaotong." },
+        { "zh": "你在哪儿学习？", "py": "Nǐ zài nǎr xuéxí?", "es": "¿Dónde estudias?" },
+        { "zh": "我爸爸在公司工作。", "py": "Wǒ bàba zài gōngsī gōngzuò.", "es": "Mi padre trabaja en una empresa." }
+      ]
+    },
+    { "type": "vocab", "title": "La universidad", "words": ["学", "大学", "大学生", "学院", "研究生", "硕士", "专业", "公司"] },
+    {
+      "type": "phonetics-drill",
+      "title": "x, sh y s: 学 xué, 硕士 shuòshì",
+      "markdown": "Tres «eses» chinas que el español mezcla en una:\n\n- **s** (司 *sī*): como la «s» española, con la lengua detrás de los dientes.\n- **sh** (硕士 *shuòshì*): la punta de la lengua **doblada hacia atrás**.\n- **x** (学 *xué*): lengua **plana**, apoyada detrás de los dientes de abajo, labios estirados como para sonreír; siempre va con i/ü.\n\nEn 学 *xué*, la u es **ü** (labios redondos): suena «sh-üe» suave.",
+      "items": [
+        { "audio": "学", "options": ["xué", "shué", "sué"], "answer": 0, "explain": "x + üe (escrito ue): lengua plana." },
+        { "audio": "硕士", "options": ["shuòshì", "suòsì", "xuòxì"], "answer": 0, "explain": "Dos sh, con la lengua hacia atrás." },
+        { "audio": "公司", "options": ["gōngsī", "gōngshī", "gōngsì"], "answer": 0, "explain": "司 con s (lengua delante) y primer tono." },
+        { "audio": "研究生", "options": ["yánjiūshēng", "yánjiùshēng", "yánqiūshēng"], "answer": 0, "explain": "究 es primer tono y sin soplo (j)." },
+        { "audio": "专业", "options": ["zhuānyè", "zuānyè", "zhuāngyè"], "answer": 0, "explain": "zh (lengua atrás) + uan, terminada en -n." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+  "chars": [
+    "学",
+    "院"
+  ],
+  "mnemonics": {
+    "学": "Abajo 子 (niño); encima, un tejado 冖 y dos manos (⺍) que le enseñan: un niño bajo techo aprendiendo.",
+    "院": "阝 (a la izquierda, un muro o una colina) + 完 (yuán/wán, pista del sonido): un patio rodeado de muros. Hoy, un recinto o una institución: 学院 (facultad), 医院 (hospital), 电影院 (cine)."
+  }
+    },
+    {
+      "type": "skeleton",
+      "title": "在 + lugar + 学习 / 工作",
+      "markdown": "Para decir **dónde** estudias o trabajas, el lugar va **delante** del verbo con 在 (como en la U14): 我**在交大**学习. En español va detrás («estudio **en la Jiaotong**»).\n\n- Si solo dices dónde estás, 在 es el verbo: 我在学校 «estoy en la universidad».\n- **Negativa**: 不 va delante de 在, no delante del verbo final: 大卫**不在**公司工作.\n- **Pregunta**: 你在**哪儿**学习？ La respuesta ocupa el mismo hueco: 我在**交大**学习.\n\n**学, 学习 y 读**:\n- **学** + lo que aprendes: 学汉语, 学开车.\n- **学习** suele ir solo o en registro más formal: 我在交大学习.\n- **读** + estudios: 读大学, 读硕士 «cursar».\n- 你学什么专业？ «¿qué estudias (qué carrera)?».",
+      "focus": ["place"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "place": { "zh": "在交大", "py": "zài Jiāodà" }, "verb1": { "zh": "学习", "py": "xuéxí" } }, "end": "。", "es": "Estudio en la Jiaotong.", "esOrder": [{ "text": "Estudio", "slot": "verb1" }, { "text": "en la Jiaotong", "slot": "place" }] },
+        { "slots": { "subject": { "zh": "雨果", "py": "Yǔguǒ" }, "place": { "zh": "在上海", "py": "zài Shànghǎi" }, "verb1": { "zh": "读", "py": "dú" }, "object": { "zh": "硕士", "py": "shuòshì" } }, "end": "。", "es": "Hugo estudia un máster en Shanghái.", "esOrder": [{ "text": "Hugo", "slot": "subject" }, { "text": "estudia", "slot": "verb1" }, { "text": "un máster", "slot": "object" }, { "text": "en Shanghái", "slot": "place" }] },
+        { "slots": { "subject": { "zh": "安娜", "py": "Ānnà" }, "place": { "zh": "在外语学院", "py": "zài wàiyǔ xuéyuàn" }, "verb1": { "zh": "学", "py": "xué" }, "object": { "zh": "汉语", "py": "Hànyǔ" } }, "end": "。", "es": "Anna estudia chino en la Facultad de Lenguas Extranjeras." },
+        { "slots": { "subject": { "zh": "小李的妈妈", "py": "Xiǎo Lǐ de māma" }, "place": { "zh": "在公司", "py": "zài gōngsī" }, "verb1": { "zh": "工作", "py": "gōngzuò" } }, "end": "。", "es": "La madre de Xiao Li trabaja en una empresa." },
+        { "slots": { "subject": { "zh": "王老师", "py": "Wáng lǎoshī" }, "place": { "zh": "在大学", "py": "zài dàxué" }, "verb1": { "zh": "工作", "py": "gōngzuò" } }, "end": "。", "es": "La profesora Wang trabaja en la universidad." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "大卫", "py": "Dàwèi" }, "adverb": { "zh": "不", "py": "bú" }, "place": { "zh": "在公司", "py": "zài gōngsī" }, "verb1": { "zh": "工作", "py": "gōngzuò" } }, "end": "。", "es": "David no trabaja en una empresa." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "place": { "zh": "在哪儿", "py": "zài nǎr" }, "verb1": { "zh": "学习", "py": "xuéxí" } }, "end": "？", "es": "¿Dónde estudias?" },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "学", "py": "xué" }, "object": { "zh": "什么专业", "py": "shénme zhuānyè" } }, "end": "？", "es": "¿Qué carrera estudias?" }
+      ],
+      "mistakes": [
+        { "wrong": "我学习在交大。", "right": "我在交大学习。", "why": "在 + lugar va delante del verbo." },
+        { "wrong": "我在交大不学习。", "right": "我不在交大学习。", "why": "不 va delante de todo el bloque 在 + lugar + verbo." },
+        { "wrong": "我是学汉语。", "right": "我学汉语。", "why": "No se pone 是 delante de otro verbo." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "En el comedor de la universidad",
+      "lines": [
+        { "speaker": "小王", "zh": "你好！你是新同学吗？", "py": "Nǐ hǎo! Nǐ shì xīn tóngxué ma?", "es": "¡Hola! ¿Eres nuevo?" },
+        { "speaker": "雨果", "zh": "对，我叫雨果，是西班牙人。我在交大读硕士。", "py": "Duì, wǒ jiào Yǔguǒ, shì Xībānyá rén. Wǒ zài Jiāodà dú shuòshì.", "es": "Sí, me llamo Hugo y soy español. Estudio un máster en la Jiaotong." },
+        { "speaker": "小王", "zh": "你在哪个学院学习？", "py": "Nǐ zài nǎge xuéyuàn xuéxí?", "es": "¿En qué facultad estudias?" },
+        { "speaker": "雨果", "zh": "我先在外语学院学一年汉语。你呢？你学什么专业？", "py": "Wǒ xiān zài wàiyǔ xuéyuàn xué yì nián Hànyǔ. Nǐ ne? Nǐ xué shénme zhuānyè?", "es": "Primero estudio un año de chino en la Facultad de Lenguas. ¿Y tú? ¿Qué estudias?" },
+        { "speaker": "小王", "zh": "我学英语，我也是研究生。我哥哥也在交大，他是大学生。", "py": "Wǒ xué Yīngyǔ, wǒ yě shì yánjiūshēng. Wǒ gēge yě zài Jiāodà, tā shì dàxuéshēng.", "es": "Estudio inglés; yo también soy de posgrado. Mi hermano también está en la Jiaotong: estudia el grado." },
+        { "speaker": "雨果", "zh": "你爸爸妈妈呢？他们在哪儿工作？", "py": "Nǐ bàba māma ne? Tāmen zài nǎr gōngzuò?", "es": "¿Y tus padres? ¿Dónde trabajan?" },
+        { "speaker": "小王", "zh": "我爸爸在公司工作。我妈妈是老师，她在大学工作。", "py": "Wǒ bàba zài gōngsī gōngzuò. Wǒ māma shì lǎoshī, tā zài dàxué gōngzuò.", "es": "Mi padre trabaja en una empresa. Mi madre es profesora: trabaja en la universidad." },
+        { "speaker": "雨果", "zh": "你妈妈也在交大吗？", "py": "Nǐ māma yě zài Jiāodà ma?", "es": "¿Tu madre también está en la Jiaotong?" },
+        { "speaker": "小王", "zh": "不，她不在交大工作。她在北京的一个大学工作。", "py": "Bù, tā bú zài Jiāodà gōngzuò. Tā zài Běijīng de yí ge dàxué gōngzuò.", "es": "No, no trabaja en la Jiaotong. Trabaja en una universidad de Pekín." }
+      ],
+      "notes": "En China, 研究生 incluye a los estudiantes de máster (硕士) y de doctorado (博士 bóshì); 大学生 suele referirse a los de grado. Fíjate en 学一年汉语: la duración (一年) va detrás del verbo, como en la U15, y antes del objeto."
+    },
+    { "type": "exercises", "count": 14, "bank": ["g-zai", "g-word-order", "u09"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "我" }, "place": { "zh": "在交大" }, "verb1": { "zh": "学习" } }, "end": "。", "es": "Estudio en la Jiaotong." }, "distractors": ["是"] },
+        { "sentence": { "slots": { "subject": { "zh": "小李的妈妈" }, "place": { "zh": "在公司" }, "verb1": { "zh": "工作" } }, "end": "。", "es": "La madre de Xiao Li trabaja en una empresa." } },
+        { "sentence": { "slots": { "subject": { "zh": "你" }, "place": { "zh": "在哪儿" }, "verb1": { "zh": "学习" } }, "end": "？", "es": "¿Dónde estudias?" }, "distractors": ["吗"] },
+        { "sentence": { "slots": { "time0": { "zh": "明年" }, "subject": { "zh": "我" }, "aux": { "zh": "想" }, "with": { "zh": "跟安娜一起" }, "place": { "zh": "在北京" }, "verb1": { "zh": "学" }, "object": { "zh": "汉语" } }, "end": "。", "es": "El año que viene quiero estudiar chino en Pekín con Anna." }, "distractors": ["是"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "我在交大读硕士。", "py": "Wǒ zài Jiāodà dú shuòshì.", "es": "Estudio un máster en la Jiaotong." },
+        { "zh": "你在哪儿工作？", "py": "Nǐ zài nǎr gōngzuò?", "es": "¿Dónde trabajas?" },
+        { "zh": "我在外语学院学汉语。", "py": "Wǒ zài wàiyǔ xuéyuàn xué Hànyǔ.", "es": "Estudio chino en la Facultad de Lenguas." }
+      ],
+      "respond": [
+        { "q": { "zh": "你在哪儿学习？", "py": "Nǐ zài nǎr xuéxí?", "es": "¿Dónde estudias?" }, "model": { "zh": "我在上海交通大学学习。", "py": "Wǒ zài Shànghǎi Jiāotōng Dàxué xuéxí.", "es": "Estudio en la Universidad Jiaotong de Shanghái." } },
+        { "q": { "zh": "你爸爸在哪儿工作？", "py": "Nǐ bàba zài nǎr gōngzuò?", "es": "¿Dónde trabaja tu padre?" }, "model": { "zh": "我爸爸在西班牙的一个公司工作。", "py": "Wǒ bàba zài Xībānyá de yí ge gōngsī gōngzuò.", "es": "Mi padre trabaja en una empresa de España." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "La familia de Xiao Wang",
+      "text": "小王是交大的研究生，他在外语学院学英语。他哥哥也在交大，是大学生。他们的爸爸在上海的一个公司工作，妈妈在北京的一个大学工作，她是老师。雨果也在交大学习，他先学一年汉语。",
+      "es": "Xiao Wang es estudiante de posgrado en la Jiaotong: estudia inglés en la Facultad de Lenguas. Su hermano mayor también está en la Jiaotong, en el grado. Su padre trabaja en una empresa de Shanghái y su madre trabaja en una universidad de Pekín: es profesora. Hugo también estudia en la Jiaotong; primero estudia un año de chino.",
+      "questions": [
+        { "q": "¿Qué estudia Xiao Wang?", "options": ["Inglés", "Chino", "Español"], "answer": 0 },
+        { "q": "¿Dónde trabaja su madre?", "options": ["En una universidad de Pekín", "En una empresa de Shanghái", "En la Jiaotong"], "answer": 0 },
+        { "q": "¿Qué hace primero Hugo?", "options": ["Estudia un año de chino", "Trabaja en una empresa", "Empieza el máster"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

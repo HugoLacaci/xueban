@@ -1,0 +1,135 @@
+{
+  "id": "a2-u11-l2",
+  "title": "El jefe me pide que…: 请 / 叫 / 让 y 老李, 小王",
+  "zh": "老板让我写报告",
+  "goal": "Contar lo que otros te piden, te mandan o te dejan hacer con 请 / 叫 / 让 + persona + verbo, y tratar a los compañeros con 老 / 小 + apellido.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "老板", "pinyin": "lǎobǎn", "es": "jefe, dueño (de la empresa)", "note": "El que manda en la empresa o en una tienda. 经理 es un cargo; 老板 es «el jefe»." },
+    { "hanzi": "同事", "pinyin": "tóngshì", "es": "compañero de trabajo", "note": "同学 es compañero de clase; 同事, de trabajo." },
+    { "hanzi": "办公室", "pinyin": "bàngōngshì", "es": "oficina, despacho" },
+    { "hanzi": "交给", "pinyin": "jiāogěi", "es": "entregar a", "note": "交给 + persona + cosa, o 把…: de momento, 下午交给他." },
+    { "hanzi": "完成", "pinyin": "wánchéng", "es": "terminar, completar (una tarea)", "note": "完成工作 / 完成作业." },
+    { "hanzi": "表", "pinyin": "biǎo", "es": "formulario, tabla; reloj", "note": "填表 = rellenar un formulario. Con el sentido de reloj: 手表." },
+    { "hanzi": "叫作", "pinyin": "jiàozuò", "es": "llamarse, denominarse", "note": "Más formal que 叫: 这个公司的名称叫作…" },
+    { "hanzi": "称", "pinyin": "chēng", "es": "llamar (a alguien de una forma)", "note": "大家称他为陈总 = todos le llaman «director Chen»." },
+    { "hanzi": "名称", "pinyin": "míngchēng", "es": "nombre (de una cosa, empresa, organismo)", "note": "Para personas se dice 名字 o 姓名." },
+    { "hanzi": "全体", "pinyin": "quántǐ", "es": "todos (los miembros), el conjunto de", "note": "全体同事 = toda la plantilla." },
+    { "hanzi": "讲话", "pinyin": "jiǎnghuà", "es": "dar un discurso, hablar (en público); discurso" },
+    { "hanzi": "事情", "pinyin": "shìqing", "es": "asunto, cosa (que hacer)", "note": "Igual que 事, algo más formal. Segunda sílaba neutra." },
+    { "hanzi": "态度", "pinyin": "tàidu", "es": "actitud, trato", "note": "服务态度 = trato al cliente. 态度很好 = es muy amable." }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "老板让我写一个报告。", "py": "Lǎobǎn ràng wǒ xiě yí ge bàogào.", "es": "El jefe me ha pedido que escriba un informe." },
+        { "zh": "老李请我们吃饭。", "py": "Lǎo Lǐ qǐng wǒmen chī fàn.", "es": "Lao Li nos invita a comer." },
+        { "zh": "经理不让我们在办公室用手机。", "py": "Jīnglǐ bú ràng wǒmen zài bàngōngshì yòng shǒujī.", "es": "El director no nos deja usar el móvil en la oficina." }
+      ]
+    },
+    { "type": "vocab", "title": "La oficina y la gente que trabaja en ella", "words": ["老板", "同事", "办公室", "交给", "完成", "表", "叫作", "称", "名称", "全体", "讲话", "事情", "态度"] },
+    {
+      "type": "phonetics-drill",
+      "title": "老李, 小王 y el tono neutro de 事情",
+      "markdown": "- **老 + apellido** es un bloque: si el apellido es de **tercer tono**, 老 sube: 老李 *lǎo Lǐ* se dice *láo Lǐ*. Con otros tonos, 老 es un tercer tono «a medias» (solo baja): 老王 *lǎo Wáng*.\n- **小王** *xiǎo Wáng*: igual, medio tercer tono + segundo.\n- **事情** *shìqing*: el 情 es **neutro**, muy corto. **态度** *tàidu* se oye también con el 度 neutro.\n- **办公室** *bàngōngshì*: 4 · 1 · 4, como un martillo: arriba, plano, abajo.\n- Ritmo de la causativa: tres bloques, **老板 / 让我 / 写报告**. 让我 va pegado, como una sola palabra.",
+      "items": [
+        { "audio": "老李", "prompt": "¿Cómo suena 老?", "options": ["Sube (láo Lǐ)", "Baja y sube completo (lǎo Lǐ)", "Cae (lào Lǐ)"], "answer": 0, "explain": "3 + 3: el primer tercer tono pasa a segundo." },
+        { "audio": "事情", "options": ["shìqing", "shìqíng", "sìqing"], "answer": 0, "explain": "情 neutro en esta palabra." },
+        { "audio": "办公室", "options": ["bàngōngshì", "bāngōngshì", "bàngōngsì"], "answer": 0, "explain": "办 es cuarto tono; 室 lleva sh." },
+        { "audio": "讲话", "options": ["jiǎnghuà", "jiānghuà", "qiǎnghuà"], "answer": 0, "explain": "j sin aire (q lleva aire); 讲 en tercer tono." },
+        { "audio": "老板让我写报告", "prompt": "¿Cómo se agrupa?", "options": ["老板 / 让我 / 写报告", "老 / 板让 / 我写报告", "老板让 / 我写 / 报告"], "answer": 0, "explain": "Sujeto / 让 + persona / lo que hay que hacer." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["让", "称"],
+      "mnemonics": {
+        "让": "讠 (palabra) + 上 (arriba): con palabras haces que otro se mueva, se aparte o suba. De «ceder» viene «dejar, hacer que»: 让我想想.",
+        "称": "禾 (cereal) + 尔: originalmente «pesar» el grano. De «medir» a alguien viene «llamarle de una forma»: 称他为老师."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "Sujeto + 请 / 叫 / 让 + persona + verbo (+ objeto)",
+      "markdown": "En estas frases hay **dos verbos**: el primero (请, 叫 o 让) con **su persona** en *Verbo 1*, y lo que esa persona hace en *Verbo 2*. La persona es a la vez objeto del primero y sujeto del segundo.\n\n| Verbo | Matiz | Ejemplo |\n|---|---|---|\n| **请** | pedir con cortesía, invitar | 老李**请**我们吃饭. |\n| **叫** | decir que haga, mandar (coloquial) | 经理**叫**小王去办公室. |\n| **让** | hacer que, pedir; **dejar** | 老板**让**我写报告. 他不**让**我去. |\n\n- **Negación** delante del primer verbo: 经理**不让**我们用手机 (no nos deja).\n- **Tratamiento entre compañeros**: **老 + apellido** para alguien mayor que tú (老李), **小 + apellido** para alguien más joven (小王). Al jefe, por el cargo: 刘经理, 陈总.",
+      "focus": ["verb1", "verb2"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "老板", "py": "lǎobǎn" }, "verb1": { "zh": "让我", "py": "ràng wǒ" }, "verb2": { "zh": "写", "py": "xiě" }, "object": { "zh": "一个报告", "py": "yí ge bàogào" } }, "end": "。", "es": "El jefe me pide que escriba un informe.", "esOrder": [{ "text": "El jefe", "slot": "subject" }, { "text": "me pide que", "slot": "verb1" }, { "text": "escriba", "slot": "verb2" }, { "text": "un informe", "slot": "object" }] },
+        { "slots": { "subject": { "zh": "老李", "py": "lǎo Lǐ" }, "verb1": { "zh": "请我们", "py": "qǐng wǒmen" }, "verb2": { "zh": "吃饭", "py": "chī fàn" } }, "end": "。", "es": "Lao Li nos invita a comer." },
+        { "slots": { "subject": { "zh": "经理", "py": "jīnglǐ" }, "verb1": { "zh": "叫小王", "py": "jiào Xiǎo Wáng" }, "verb2": { "zh": "去", "py": "qù" }, "object": { "zh": "办公室", "py": "bàngōngshì" } }, "end": "。", "es": "El director le dice a Xiao Wang que vaya al despacho." },
+        { "slots": { "subject": { "zh": "王老师", "py": "Wáng lǎoshī" }, "verb1": { "zh": "让我们", "py": "ràng wǒmen" }, "verb2": { "zh": "介绍", "py": "jièshào" }, "object": { "zh": "一下自己", "py": "yíxià zìjǐ" } }, "end": "。", "es": "La profesora Wang nos pide que nos presentemos." },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "aux": { "zh": "想", "py": "xiǎng" }, "verb1": { "zh": "请你", "py": "qǐng nǐ" }, "verb2": { "zh": "帮", "py": "bāng" }, "object": { "zh": "我", "py": "wǒ" } }, "end": "。", "es": "Quiero pedirte que me ayudes." },
+        { "slots": { "subject": { "zh": "同事们", "py": "tóngshìmen" }, "adverb": { "zh": "都", "py": "dōu" }, "verb1": { "zh": "叫他", "py": "jiào tā" }, "object": { "zh": "老李", "py": "lǎo Lǐ" } }, "end": "。", "es": "Todos los compañeros le llaman Lao Li." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "经理", "py": "jīnglǐ" }, "adverb": { "zh": "不", "py": "bú" }, "verb1": { "zh": "让我们", "py": "ràng wǒmen" }, "verb2": { "zh": "用", "py": "yòng" }, "object": { "zh": "手机", "py": "shǒujī" } }, "end": "。", "es": "El director no nos deja usar el móvil." },
+        { "slots": { "subject": { "zh": "老板", "py": "lǎobǎn" }, "adverb": { "zh": "没", "py": "méi" }, "verb1": { "zh": "叫我", "py": "jiào wǒ" }, "verb2": { "zh": "去开会", "py": "qù kāihuì" } }, "end": "。", "es": "El jefe no me dijo que fuera a la reunión." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "老板", "py": "lǎobǎn" }, "verb1": { "zh": "让你", "py": "ràng nǐ" }, "verb2": { "zh": "做", "py": "zuò" }, "object": { "zh": "什么事情", "py": "shénme shìqing" } }, "end": "？", "es": "¿Qué te ha pedido el jefe que hagas?" },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "aux": { "zh": "能", "py": "néng" }, "verb1": { "zh": "叫小王", "py": "jiào Xiǎo Wáng" }, "verb2": { "zh": "来", "py": "lái" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿Puedes decirle a Xiao Wang que venga?" }
+      ],
+      "mistakes": [
+        { "wrong": "老板让写我报告。", "right": "老板让我写报告。", "why": "La persona va justo detrás de 让 / 请 / 叫 y delante del segundo verbo." },
+        { "wrong": "经理让我们不用手机。", "right": "经理不让我们用手机。", "why": "«No dejar» se dice con 不 delante de 让: la negación va delante del primer verbo." },
+        { "wrong": "我们都叫他李老。", "right": "我们都叫他老李。", "why": "老 + apellido es el trato familiar entre compañeros. 李老 (apellido + 老) es un tratamiento de mucho respeto para personas mayores e ilustres." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Primer día en la oficina",
+      "lines": [
+        { "speaker": "刘经理", "zh": "雨果，欢迎你！这是我们的办公室。", "py": "Yǔguǒ, huānyíng nǐ! Zhè shì wǒmen de bàngōngshì.", "es": "¡Bienvenido, Hugo! Esta es nuestra oficina." },
+        { "speaker": "雨果", "zh": "谢谢刘经理！这儿真大。", "py": "Xièxie Liú jīnglǐ! Zhèr zhēn dà.", "es": "¡Gracias, director Liu! Qué grande es esto." },
+        { "speaker": "刘经理", "zh": "这是老李，那是小王，他们都是你的同事。", "py": "Zhè shì lǎo Lǐ, nà shì Xiǎo Wáng, tāmen dōu shì nǐ de tóngshì.", "es": "Este es Lao Li y esa es Xiao Wang: son tus compañeros." },
+        { "speaker": "老李", "zh": "你好，雨果！我在这儿工作十年了，大家都叫我老李。", "py": "Nǐ hǎo, Yǔguǒ! Wǒ zài zhèr gōngzuò shí nián le, dàjiā dōu jiào wǒ lǎo Lǐ.", "es": "¡Hola, Hugo! Llevo diez años trabajando aquí; todos me llaman Lao Li." },
+        { "speaker": "小王", "zh": "你好！老板让我先教你用我们的电脑。", "py": "Nǐ hǎo! Lǎobǎn ràng wǒ xiān jiāo nǐ yòng wǒmen de diànnǎo.", "es": "¡Hola! El jefe me ha pedido que primero te enseñe a usar nuestros ordenadores." },
+        { "speaker": "雨果", "zh": "太好了。今天老板让我做什么事情？", "py": "Tài hǎo le. Jīntiān lǎobǎn ràng wǒ zuò shénme shìqing?", "es": "Genial. ¿Qué quiere el jefe que haga hoy?" },
+        { "speaker": "小王", "zh": "你先看看这个表，下午四点以前完成，然后交给刘经理。", "py": "Nǐ xiān kànkan zhège biǎo, xiàwǔ sì diǎn yǐqián wánchéng, ránhòu jiāogěi Liú jīnglǐ.", "es": "Primero échale un vistazo a esta tabla, termínala antes de las cuatro y luego entrégasela al director Liu." },
+        { "speaker": "雨果", "zh": "好的。还有别的事情吗？", "py": "Hǎo de. Hái yǒu biéde shìqing ma?", "es": "Vale. ¿Hay algo más?" },
+        { "speaker": "老李", "zh": "明天上午全体同事开会，老板要讲话。", "py": "Míngtiān shàngwǔ quántǐ tóngshì kāihuì, lǎobǎn yào jiǎnghuà.", "es": "Mañana por la mañana hay reunión de toda la plantilla y el jefe va a dar un discurso." },
+        { "speaker": "小王", "zh": "别怕，老板人很好，态度也很好。", "py": "Bié pà, lǎobǎn rén hěn hǎo, tàidu yě hěn hǎo.", "es": "No te preocupes: el jefe es muy buena persona y muy amable." }
+      ],
+      "notes": "En una oficina china es normal llamar a los compañeros 老 + apellido (si son mayores que tú) o 小 + apellido (si son más jóvenes), y al jefe por su cargo: 刘经理, 陈总 (总 = director general). Llamarle por el nombre de pila sería raro."
+    },
+    { "type": "exercises", "count": 16, "bank": ["g-qing", "u09", "g-word-order"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "老板" }, "verb1": { "zh": "让我" }, "verb2": { "zh": "写" }, "object": { "zh": "一个报告" } }, "end": "。", "es": "El jefe me pide que escriba un informe." }, "distractors": ["给"] },
+        { "sentence": { "slots": { "subject": { "zh": "经理" }, "adverb": { "zh": "不" }, "verb1": { "zh": "让我们" }, "verb2": { "zh": "用" }, "object": { "zh": "手机" } }, "end": "。", "es": "El director no nos deja usar el móvil." }, "distractors": ["没有"] },
+        { "sentence": { "slots": { "subject": { "zh": "老李" }, "time": { "zh": "今天中午" }, "verb1": { "zh": "请全体同事" }, "verb2": { "zh": "吃饭" } }, "end": "。", "es": "Hoy a mediodía Lao Li invita a comer a toda la plantilla." }, "distractors": ["叫作"] },
+        { "sentence": { "slots": { "time0": { "zh": "如果你明天有时间的话，" }, "subject": { "zh": "刘经理" }, "adverb": { "zh": "就" }, "aux": { "zh": "想" }, "verb1": { "zh": "请你" }, "verb2": { "zh": "去" }, "object": { "zh": "他的办公室" } }, "end": "。", "es": "Si mañana tienes tiempo, el director Liu quiere pedirte que vayas a su despacho." }, "distractors": ["所以"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "老板让我写一个报告。", "py": "Lǎobǎn ràng wǒ xiě yí ge bàogào.", "es": "El jefe me ha pedido que escriba un informe." },
+        { "zh": "老李请我们吃饭。", "py": "Lǎo Lǐ qǐng wǒmen chī fàn.", "es": "Lao Li nos invita a comer." },
+        { "zh": "经理不让我们用手机。", "py": "Jīnglǐ bú ràng wǒmen yòng shǒujī.", "es": "El director no nos deja usar el móvil." },
+        { "zh": "下午四点以前交给刘经理。", "py": "Xiàwǔ sì diǎn yǐqián jiāogěi Liú jīnglǐ.", "es": "Entrégaselo al director Liu antes de las cuatro." }
+      ],
+      "respond": [
+        { "q": { "zh": "老师让你们做什么？", "py": "Lǎoshī ràng nǐmen zuò shénme?", "es": "¿Qué os ha pedido la profesora que hagáis?" }, "model": { "zh": "老师让我们写一篇作文。", "py": "Lǎoshī ràng wǒmen xiě yì piān zuòwén.", "es": "Nos ha pedido que escribamos una redacción." } },
+        { "q": { "zh": "你们公司让你们在办公室吃饭吗？", "py": "Nǐmen gōngsī ràng nǐmen zài bàngōngshì chī fàn ma?", "es": "¿Os deja vuestra empresa comer en la oficina?" }, "model": { "zh": "不让，我们都去楼下吃饭。", "py": "Bú ràng, wǒmen dōu qù lóu xià chī fàn.", "es": "No, todos bajamos a comer." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "La oficina de «Viajes Occidente»",
+      "text": "雨果实习的公司名称叫作“西方旅游”，办公室在南京路的一个大楼里。公司不大，全体同事一共十五个人。老板姓陈，大家都称他为“陈总”。刘经理是雨果的经理，他常常让雨果给西班牙的客人打电话。同事们都很热情：比雨果大很多的叫老李，比雨果小的叫小王。第一天中午，老板请全体同事吃饭，还讲了话。他说：“我们的事情很多，可是大家的态度都很好，我很满意。”下午，刘经理叫雨果完成一个表，四点以前交给他。雨果三点半就完成了。",
+      "es": "La empresa en la que Hugo hace prácticas se llama «Viajes Occidente» y tiene la oficina en un edificio de la calle Nanjing. No es grande: en total son quince personas. El jefe se apellida Chen y todos le llaman «director Chen». El director Liu es el responsable de Hugo y a menudo le pide que llame por teléfono a clientes españoles. Los compañeros son muy amables: al que es mucho mayor que Hugo le llaman Lao Li, y a la que es más joven, Xiao Wang. El primer día, a mediodía, el jefe invitó a comer a toda la plantilla y dio un pequeño discurso: «Tenemos mucho trabajo, pero todos tenéis muy buena actitud; estoy muy contento». Por la tarde, el director Liu le pidió a Hugo que completara una tabla y se la entregara antes de las cuatro. Hugo la terminó a las tres y media.",
+      "questions": [
+        { "q": "¿Cómo se llama la empresa?", "options": ["西方旅游", "东方旅游", "南方旅游"], "answer": 0 },
+        { "q": "¿Cuántas personas trabajan allí?", "options": ["十五个", "五个", "五十个"], "answer": 0 },
+        { "q": "¿Cuándo tenía que entregar Hugo la tabla?", "options": ["四点以前", "三点半以后", "明天上午"], "answer": 0 },
+        { "q": "¿Qué frase es correcta?", "options": ["刘经理叫雨果完成一个表。", "刘经理叫完成雨果一个表。", "刘经理雨果叫完成一个表。"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

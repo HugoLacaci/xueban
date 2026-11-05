@@ -1,0 +1,382 @@
+{
+  "unitId": "a1-u03",
+  "scenarios": [
+    {
+      "id": "a1-u03-family-photo",
+      "title": "Una foto de tu familia",
+      "zh": "这是你的家人吗？",
+      "level": 1,
+      "setting": "Residencia de 交通大学. Hugo enseña a Anna una foto de su familia en el móvil: sus padres, su hermana mayor y sus abuelos. Tú (la app) eres 安娜.",
+      "role": "amiga",
+      "roleZh": "安娜",
+      "voice": "f",
+      "goals": ["Decir cuántos sois en casa", "Decir quién es cada uno", "Decir si tienes hermanos", "Preguntar por la familia de Anna"],
+      "vocab": ["家人", "几口人", "口", "爸爸", "妈妈", "姐姐", "哥哥", "爷爷", "奶奶", "外公", "外婆", "没有", "的", "狗", "都"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "雨果，这是你的家人吗？你家有几口人？", "py": "Yǔguǒ, zhè shì nǐ de jiārén ma? Nǐ jiā yǒu jǐ kǒu rén?", "es": "Hugo, ¿esta es tu familia? ¿Cuántos sois en casa?" },
+          "user": [
+            { "zh": "是。我家有四口人。", "py": "Shì. Wǒ jiā yǒu sì kǒu rén.", "es": "Sí. Somos cuatro.", "keywords": ["四口", "四口人"], "next": "n2", "goal": 0 },
+            { "zh": "我家有四个人。", "py": "Wǒ jiā yǒu sì ge rén.", "es": "(Somos cuatro, con el clasificador general.)", "keywords": ["四个人"], "next": "n1b" }
+          ],
+          "hint": "Los miembros de la familia se cuentan con 口: 我家有 + número + 口人."
+        },
+        "n1b": {
+          "npc": { "zh": "四个人？对，你家有四口人！", "py": "Sì ge rén? Duì, nǐ jiā yǒu sì kǒu rén!", "es": "¿Cuatro personas? ¡Sí, sois cuatro en casa!" },
+          "user": [
+            { "zh": "对，我家有四口人：爸爸、妈妈、姐姐和我。", "py": "Duì, wǒ jiā yǒu sì kǒu rén: bàba, māma, jiějie hé wǒ.", "es": "Eso: somos cuatro, mi padre, mi madre, mi hermana y yo.", "keywords": ["四口人", "姐姐和我"], "next": "n2", "goal": 0 }
+          ],
+          "hint": "Para la familia, lo natural es 口: 四口人."
+        },
+        "n2": {
+          "npc": { "zh": "这个人是谁？", "py": "Zhège rén shì shéi?", "es": "¿Quién es esta persona?" },
+          "user": [
+            { "zh": "这是我姐姐。", "py": "Zhè shì wǒ jiějie.", "es": "Es mi hermana mayor.", "keywords": ["姐姐", "我姐"], "next": "n3", "goal": 1 },
+            { "zh": "这是我妈妈。", "py": "Zhè shì wǒ māma.", "es": "Es mi madre.", "keywords": ["妈妈", "我妈"], "next": "n3", "goal": 1 },
+            { "zh": "这是我的女朋友。", "py": "Zhè shì wǒ de nǚ péngyou.", "es": "Es mi novia.", "keywords": ["女朋友"], "next": "n2b" }
+          ],
+          "hint": "Anna señala a una mujer de la foto. Di quién es con 这是我 + 姐姐 / 妈妈… (con familia, sin 的)."
+        },
+        "n2b": {
+          "npc": { "zh": "你有女朋友！她叫什么名字？", "py": "Nǐ yǒu nǚ péngyou! Tā jiào shénme míngzi?", "es": "¡Tienes novia! ¿Cómo se llama?" },
+          "user": [
+            { "zh": "不是，她不是我的女朋友，她是我姐姐！", "py": "Bú shì, tā bú shì wǒ de nǚ péngyou, tā shì wǒ jiějie!", "es": "¡No, no es mi novia, es mi hermana!", "keywords": ["姐姐", "不是"], "next": "n3", "goal": 1 }
+          ],
+          "hint": "Corrige la broma: 她是我姐姐."
+        },
+        "n3": {
+          "npc": { "zh": "你有没有哥哥、弟弟？", "py": "Nǐ yǒu méiyǒu gēge, dìdi?", "es": "¿Tienes hermanos (mayores o pequeños)?" },
+          "user": [
+            { "zh": "没有，我没有哥哥，也没有弟弟。", "py": "Méiyǒu, wǒ méiyǒu gēge, yě méiyǒu dìdi.", "es": "No, no tengo ni hermanos mayores ni pequeños.", "keywords": ["没有", "没有哥哥"], "next": "n4", "goal": 2 },
+            { "zh": "我不有哥哥。", "py": "Wǒ bù yǒu gēge.", "es": "(«No tengo» mal formado.)", "keywords": ["不有"], "next": "n3b" }
+          ],
+          "hint": "«No tener» es 没有 (nunca 不有). Hermano mayor 哥哥, menor 弟弟."
+        },
+        "n3b": {
+          "npc": { "zh": "“不有”？是“没有”！", "py": "“Bù yǒu”? Shì “méiyǒu”!", "es": "¿«Bù yǒu»? ¡Es «méiyǒu»!" },
+          "user": [
+            { "zh": "对，我没有哥哥。", "py": "Duì, wǒ méiyǒu gēge.", "es": "Cierto, no tengo hermano mayor.", "keywords": ["没有哥哥", "没有"], "next": "n4", "goal": 2 }
+          ],
+          "hint": "有 se niega con 没: 没有."
+        },
+        "n4": {
+          "npc": { "zh": "这两个老人是谁？", "py": "Zhè liǎng ge lǎorén shì shéi?", "es": "¿Quiénes son estas dos personas mayores?" },
+          "user": [
+            { "zh": "他们是我爸爸的爸爸妈妈，我爷爷和我奶奶。", "py": "Tāmen shì wǒ bàba de bàba māma, wǒ yéye hé wǒ nǎinai.", "es": "Son los padres de mi padre: mi abuelo y mi abuela.", "keywords": ["爷爷", "奶奶"], "next": "n5", "goal": 1 },
+            { "zh": "他们是我外公和外婆。", "py": "Tāmen shì wǒ wàigōng hé wàipó.", "es": "Son mis abuelos maternos.", "keywords": ["外公", "外婆"], "next": "n5", "goal": 1 }
+          ],
+          "hint": "Los padres del padre son 爷爷 y 奶奶; los de la madre, 外公 y 外婆."
+        },
+        "n5": {
+          "npc": { "zh": "他们都说汉语吗？", "py": "Tāmen dōu shuō Hànyǔ ma?", "es": "¿Hablan chino los dos?" },
+          "user": [
+            { "zh": "不说，他们都不说汉语，也都不说英语。", "py": "Bù shuō, tāmen dōu bù shuō Hànyǔ, yě dōu bù shuō Yīngyǔ.", "es": "No, ninguno habla chino, y tampoco inglés.", "keywords": ["都不说", "不说"], "next": "n6" },
+            { "zh": "他们都说西班牙语。", "py": "Tāmen dōu shuō Xībānyáyǔ.", "es": "Los dos hablan español.", "keywords": ["都说", "西班牙语"], "next": "n6" }
+          ],
+          "hint": "都不 = ninguno de los dos; 都说 = los dos hablan."
+        },
+        "n6": {
+          "npc": { "zh": "你家有狗吗？", "py": "Nǐ jiā yǒu gǒu ma?", "es": "¿Tenéis perro en casa?" },
+          "user": [
+            { "zh": "有！我们全家都喜欢狗。", "py": "Yǒu! Wǒmen quánjiā dōu xǐhuan gǒu.", "es": "¡Sí! A toda la familia nos gustan los perros.", "keywords": ["喜欢狗", "有"], "next": "n7" },
+            { "zh": "没有，我家有猫。", "py": "Méiyǒu, wǒ jiā yǒu māo.", "es": "No, tenemos un gato.", "keywords": ["猫", "没有"], "next": "n7" }
+          ],
+          "hint": "Contesta con 有 / 没有. Con 都 puedes decir que a todos os gustan."
+        },
+        "n7": {
+          "npc": { "zh": "我也喜欢狗！", "py": "Wǒ yě xǐhuan gǒu!", "es": "¡A mí también me gustan los perros!" },
+          "user": [
+            { "zh": "你呢？你家有几口人？", "py": "Nǐ ne? Nǐ jiā yǒu jǐ kǒu rén?", "es": "¿Y tú? ¿Cuántos sois en tu casa?", "keywords": ["几口", "几口人"], "next": "end1", "goal": 3 },
+            { "zh": "你有没有妹妹？", "py": "Nǐ yǒu méiyǒu mèimei?", "es": "¿Tienes hermanas pequeñas?", "keywords": ["有没有", "妹妹"], "next": "end1", "goal": 3 },
+            { "zh": "好，再见！", "py": "Hǎo, zàijiàn!", "es": "Vale, ¡adiós!", "keywords": ["再见", "拜拜"], "next": "end2" }
+          ],
+          "hint": "Ahora pregúntale tú por su familia: 你家有几口人？ / 你有没有妹妹？"
+        },
+        "end1": {
+          "npc": { "zh": "我家有五口人：爸爸、妈妈、两个妹妹和我。", "py": "Wǒ jiā yǒu wǔ kǒu rén: bàba, māma, liǎng ge mèimei hé wǒ.", "es": "Somos cinco: mis padres, mis dos hermanas pequeñas y yo." },
+          "end": true,
+          "feedback": "Has descrito a tu familia (口 para contar, 没有 para negar, 爷爷 / 外公 según la línea) y te has interesado por la de Anna. Muy bien."
+        },
+        "end2": {
+          "npc": { "zh": "再见！", "py": "Zàijiàn!", "es": "¡Adiós!" },
+          "end": true,
+          "feedback": "Has hablado de tu familia, pero te has ido sin preguntar por la de Anna. Un 你呢？你家有几口人？ mantiene viva la conversación."
+        }
+      }
+    },
+    {
+      "id": "a1-u03-wangming-family",
+      "title": "La familia de Wang Ming",
+      "zh": "你家有几口人？",
+      "level": 1,
+      "setting": "Wang Ming enseña a Hugo una foto de su familia en Shanghái. Esta vez preguntas tú. Tú (la app) eres 王明.",
+      "role": "amigo",
+      "roleZh": "王明",
+      "voice": "m",
+      "goals": ["Preguntar cuántos son en su familia", "Preguntar quién es alguien de la foto", "Preguntar por sus hermanos", "Preguntar si tiene mascotas"],
+      "vocab": ["几口人", "谁", "谁的", "爸爸", "妈妈", "有没有", "哥哥", "姐姐", "叔叔", "舅舅", "和", "狗", "猫", "喜欢"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "雨果，这是我的家人。", "py": "Yǔguǒ, zhè shì wǒ de jiārén.", "es": "Hugo, esta es mi familia." },
+          "user": [
+            { "zh": "你家有几口人？", "py": "Nǐ jiā yǒu jǐ kǒu rén?", "es": "¿Cuántos sois en tu familia?", "keywords": ["几口", "几口人"], "next": "n2", "goal": 0 },
+            { "zh": "这是谁？", "py": "Zhè shì shéi?", "es": "¿Quién es este?", "keywords": ["谁", "这是谁"], "next": "n3", "goal": 1 }
+          ],
+          "hint": "Pregunta cuántos son con 你家有几口人 o señala a alguien con 这是谁."
+        },
+        "n2": {
+          "npc": { "zh": "我家有三口人：爸爸、妈妈和我。", "py": "Wǒ jiā yǒu sān kǒu rén: bàba, māma hé wǒ.", "es": "Somos tres: mi padre, mi madre y yo." },
+          "user": [
+            { "zh": "你没有哥哥，也没有姐姐吗？", "py": "Nǐ méiyǒu gēge, yě méiyǒu jiějie ma?", "es": "¿No tienes hermanos ni hermanas mayores?", "keywords": ["没有", "哥哥"], "next": "n2b", "goal": 2 },
+            { "zh": "这是谁？", "py": "Zhè shì shéi?", "es": "¿Quién es este?", "keywords": ["谁", "这是谁"], "next": "n3", "goal": 1 }
+          ],
+          "hint": "Pregunta por hermanos (你有没有哥哥？) o señala a alguien con 这是谁."
+        },
+        "n2b": {
+          "npc": { "zh": "没有。我没有哥哥、姐姐，也没有弟弟、妹妹。", "py": "Méiyǒu. Wǒ méiyǒu gēge, jiějie, yě méiyǒu dìdi, mèimei.", "es": "No. No tengo hermanos, ni mayores ni pequeños." },
+          "user": [
+            { "zh": "我有一个姐姐。这是谁？", "py": "Wǒ yǒu yí ge jiějie. Zhè shì shéi?", "es": "Yo tengo una hermana mayor. ¿Quién es este?", "keywords": ["谁", "姐姐"], "next": "n3", "goal": 1 },
+            { "zh": "那这个人是谁？", "py": "Nà zhège rén shì shéi?", "es": "¿Y esta persona quién es?", "keywords": ["谁", "这个人"], "next": "n3", "goal": 1 }
+          ],
+          "hint": "Cuenta algo tuyo (我有一个姐姐) o sigue preguntando por la foto (这是谁)."
+        },
+        "n3": {
+          "npc": { "zh": "这是我爸爸的弟弟，我叔叔。那是我妈妈的哥哥。", "py": "Zhè shì wǒ bàba de dìdi, wǒ shūshu. Nà shì wǒ māma de gēge.", "es": "Este es el hermano pequeño de mi padre, mi tío. Ese es el hermano mayor de mi madre." },
+          "user": [
+            { "zh": "你妈妈的哥哥是你舅舅，对吗？", "py": "Nǐ māma de gēge shì nǐ jiùjiu, duì ma?", "es": "El hermano de tu madre es tu tío 舅舅, ¿verdad?", "keywords": ["舅舅"], "next": "n4", "goal": 1 },
+            { "zh": "你叔叔有孩子吗？", "py": "Nǐ shūshu yǒu háizi ma?", "es": "¿Tu tío tiene hijos?", "keywords": ["孩子", "叔叔"], "next": "n4b" }
+          ],
+          "hint": "El hermano de la madre es 舅舅; el hermano pequeño del padre, 叔叔. Compruébalo con …，对吗？"
+        },
+        "n4": {
+          "npc": { "zh": "对！我舅舅有两个孩子，一个男孩儿，一个女孩儿。", "py": "Duì! Wǒ jiùjiu yǒu liǎng ge háizi, yí ge nánháir, yí ge nǚháir.", "es": "¡Eso! Mi tío tiene dos hijos: un niño y una niña." },
+          "user": [
+            { "zh": "他们几岁？", "py": "Tāmen jǐ suì?", "es": "¿Cuántos años tienen?", "keywords": ["几岁"], "next": "n5" },
+            { "zh": "你家有狗吗？", "py": "Nǐ jiā yǒu gǒu ma?", "es": "¿Tenéis perro en casa?", "keywords": ["狗吗", "有狗"], "next": "n6", "goal": 3 }
+          ],
+          "hint": "Pregunta la edad de los niños (几岁) o pasa a las mascotas (你家有狗吗？)."
+        },
+        "n4b": {
+          "npc": { "zh": "没有，我叔叔没有孩子。我舅舅有两个孩子。", "py": "Méiyǒu, wǒ shūshu méiyǒu háizi. Wǒ jiùjiu yǒu liǎng ge háizi.", "es": "No, mi tío (paterno) no tiene hijos. Mi tío (materno) tiene dos." },
+          "user": [
+            { "zh": "他们几岁？", "py": "Tāmen jǐ suì?", "es": "¿Cuántos años tienen?", "keywords": ["几岁"], "next": "n5" },
+            { "zh": "你家有猫吗？", "py": "Nǐ jiā yǒu māo ma?", "es": "¿Tenéis gato en casa?", "keywords": ["猫吗", "有猫"], "next": "n6", "goal": 3 }
+          ],
+          "hint": "Pregunta la edad (几岁) o por las mascotas."
+        },
+        "n5": {
+          "npc": { "zh": "男孩儿八岁，女孩儿五岁。", "py": "Nánháir bā suì, nǚháir wǔ suì.", "es": "El niño tiene ocho años y la niña, cinco." },
+          "user": [
+            { "zh": "你家有狗吗？", "py": "Nǐ jiā yǒu gǒu ma?", "es": "¿Tenéis perro en casa?", "keywords": ["狗吗", "有狗"], "next": "n6", "goal": 3 },
+            { "zh": "你家有猫吗？", "py": "Nǐ jiā yǒu māo ma?", "es": "¿Tenéis gato en casa?", "keywords": ["猫吗", "有猫"], "next": "n6", "goal": 3 },
+            { "zh": "好，我知道了。", "py": "Hǎo, wǒ zhīdào le.", "es": "Vale, entendido.", "keywords": ["知道", "知道了"], "next": "end2" }
+          ],
+          "hint": "Pregunta por las mascotas: 你家有狗吗 / 有猫吗."
+        },
+        "n6": {
+          "npc": { "zh": "我家没有狗，有猫。你喜欢猫吗？", "py": "Wǒ jiā méiyǒu gǒu, yǒu māo. Nǐ xǐhuan māo ma?", "es": "No tenemos perro; tenemos gato. ¿Te gustan los gatos?" },
+          "user": [
+            { "zh": "喜欢！我也喜欢狗。", "py": "Xǐhuan! Wǒ yě xǐhuan gǒu.", "es": "¡Sí! Y también los perros.", "keywords": ["也喜欢", "我也喜欢"], "next": "end1" },
+            { "zh": "我不喜欢猫，我喜欢狗。", "py": "Wǒ bù xǐhuan māo, wǒ xǐhuan gǒu.", "es": "No me gustan los gatos; me gustan los perros.", "keywords": ["不喜欢", "不喜欢猫"], "next": "end1" }
+          ],
+          "hint": "Responde con 喜欢 / 不喜欢. 也 = también."
+        },
+        "end1": {
+          "npc": { "zh": "好！我们都喜欢它们。", "py": "Hǎo! Wǒmen dōu xǐhuan tāmen.", "es": "¡Bien! A los dos nos gustan los animales." },
+          "end": true,
+          "feedback": "Has preguntado por la familia, los tíos y las mascotas de Wang Ming. Fíjate en 几口人 (cuántos sois), 我爸爸的弟弟 (dueño + 的 + persona) y 有没有…"
+        },
+        "end2": {
+          "npc": { "zh": "好，再见！", "py": "Hǎo, zàijiàn!", "es": "Vale, ¡adiós!" },
+          "end": true,
+          "feedback": "Has preguntado por su familia y sus tíos, pero no por sus mascotas. Podías haber dicho 你家有狗吗？"
+        }
+      }
+    },
+    {
+      "id": "a1-u03-dog-campus",
+      "title": "Un perro en el campus",
+      "zh": "这是你的狗吗？",
+      "level": 1,
+      "setting": "Jardín de 交通大学. Una niña pequeña pasea un perro y se acerca a Hugo. Tú (la app) eres la niña, 明明, hija de la profesora Wang.",
+      "role": "niña",
+      "roleZh": "小朋友",
+      "voice": "f",
+      "goals": ["Presentarte a la niña", "Preguntar de quién es el perro", "Decir que te gustan los perros", "Preguntar por su familia"],
+      "vocab": ["小朋友", "狗", "猫", "的", "谁的", "它", "喜欢", "几岁", "几口人", "哥哥", "姐姐", "妈妈"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "你好！你是谁？", "py": "Nǐ hǎo! Nǐ shì shéi?", "es": "¡Hola! ¿Quién eres?" },
+          "user": [
+            { "zh": "你好！我叫雨果，我是学生。", "py": "Nǐ hǎo! Wǒ jiào Yǔguǒ, wǒ shì xuésheng.", "es": "¡Hola! Me llamo Hugo, soy estudiante.", "keywords": ["雨果", "学生"], "next": "n2", "goal": 0 },
+            { "zh": "你好，小朋友！这是谁的狗？", "py": "Nǐ hǎo, xiǎopéngyou! Zhè shì shéi de gǒu?", "es": "¡Hola, pequeña! ¿De quién es este perro?", "keywords": ["谁的狗", "谁的"], "next": "n2b", "goal": 1 }
+          ],
+          "hint": "Preséntate (我叫…) o pregunta de quién es el perro: 这是谁的狗？"
+        },
+        "n2": {
+          "npc": { "zh": "我叫明明。这是我的狗！", "py": "Wǒ jiào Míngming. Zhè shì wǒ de gǒu!", "es": "Me llamo Mingming. ¡Este es mi perro!" },
+          "user": [
+            { "zh": "它叫什么名字？", "py": "Tā jiào shénme míngzi?", "es": "¿Cómo se llama?", "keywords": ["名字", "什么"], "next": "n3" },
+            { "zh": "我很喜欢狗！", "py": "Wǒ hěn xǐhuan gǒu!", "es": "¡Me encantan los perros!", "keywords": ["喜欢", "喜欢狗"], "next": "n3", "goal": 2 }
+          ],
+          "hint": "Para animales se usa 它. Pregunta su nombre o di que te gustan los perros."
+        },
+        "n2b": {
+          "npc": { "zh": "是我的狗！你是谁？", "py": "Shì wǒ de gǒu! Nǐ shì shéi?", "es": "¡Es mi perro! ¿Tú quién eres?" },
+          "user": [
+            { "zh": "我叫雨果，我是大学生。", "py": "Wǒ jiào Yǔguǒ, wǒ shì dàxuéshēng.", "es": "Me llamo Hugo, soy universitario.", "keywords": ["雨果", "大学生"], "next": "n3", "goal": 0 },
+            { "zh": "我是王老师的学生。", "py": "Wǒ shì Wáng lǎoshī de xuésheng.", "es": "Soy alumno de la profesora Wang.", "keywords": ["王老师", "老师的学生"], "next": "n3", "goal": 0 }
+          ],
+          "hint": "Preséntate: 我叫雨果 / 我是…的学生."
+        },
+        "n3": {
+          "npc": { "zh": "它叫安安，它两岁。你家有狗吗？", "py": "Tā jiào Ān'ān, tā liǎng suì. Nǐ jiā yǒu gǒu ma?", "es": "Se llama An'an y tiene dos años. ¿En tu casa tenéis perro?" },
+          "user": [
+            { "zh": "有，我家有狗。我们全家都喜欢狗。", "py": "Yǒu, wǒ jiā yǒu gǒu. Wǒmen quánjiā dōu xǐhuan gǒu.", "es": "Sí, tenemos perro. A toda mi familia le gustan los perros.", "keywords": ["都喜欢", "有狗"], "next": "n4", "goal": 2 },
+            { "zh": "没有，我家有猫。", "py": "Méiyǒu, wǒ jiā yǒu māo.", "es": "No, tenemos un gato.", "keywords": ["猫", "没有"], "next": "n4" }
+          ],
+          "hint": "Contesta con 有 / 没有. Si quieres, añade 我们全家都喜欢狗."
+        },
+        "n4": {
+          "npc": { "zh": "我也喜欢狗！我不喜欢猫。", "py": "Wǒ yě xǐhuan gǒu! Wǒ bù xǐhuan māo.", "es": "¡A mí también me gustan los perros! Los gatos no me gustan." },
+          "user": [
+            { "zh": "你家有几口人？", "py": "Nǐ jiā yǒu jǐ kǒu rén?", "es": "¿Cuántos sois en tu casa?", "keywords": ["几口", "几口人"], "next": "n5", "goal": 3 },
+            { "zh": "你有哥哥吗？", "py": "Nǐ yǒu gēge ma?", "es": "¿Tienes hermanos mayores?", "keywords": ["哥哥", "哥哥吗"], "next": "n5b", "goal": 3 }
+          ],
+          "hint": "Pregunta por su familia: 几口人 o 你有哥哥吗."
+        },
+        "n5": {
+          "npc": { "zh": "我家有四口人：爸爸、妈妈、姐姐和我。", "py": "Wǒ jiā yǒu sì kǒu rén: bàba, māma, jiějie hé wǒ.", "es": "Somos cuatro: mi padre, mi madre, mi hermana y yo." },
+          "user": [
+            { "zh": "你姐姐几岁？", "py": "Nǐ jiějie jǐ suì?", "es": "¿Cuántos años tiene tu hermana?", "keywords": ["几岁", "姐姐"], "next": "n6" },
+            { "zh": "你妈妈是王老师吗？", "py": "Nǐ māma shì Wáng lǎoshī ma?", "es": "¿Tu madre es la profesora Wang?", "keywords": ["王老师", "妈妈"], "next": "n6b" }
+          ],
+          "hint": "Pregunta la edad de su hermana (几岁) o si su madre es tu profesora."
+        },
+        "n5b": {
+          "npc": { "zh": "没有哥哥，我有一个姐姐。", "py": "Méiyǒu gēge, wǒ yǒu yí ge jiějie.", "es": "No tengo hermanos mayores; tengo una hermana mayor." },
+          "user": [
+            { "zh": "你姐姐几岁？", "py": "Nǐ jiějie jǐ suì?", "es": "¿Cuántos años tiene tu hermana?", "keywords": ["几岁", "姐姐"], "next": "n6" },
+            { "zh": "你妈妈是王老师吗？", "py": "Nǐ māma shì Wáng lǎoshī ma?", "es": "¿Tu madre es la profesora Wang?", "keywords": ["王老师", "妈妈"], "next": "n6b" }
+          ],
+          "hint": "Sigue preguntando: por su hermana o por su madre."
+        },
+        "n6": {
+          "npc": { "zh": "我姐姐十二岁。我妈妈是老师！", "py": "Wǒ jiějie shí'èr suì. Wǒ māma shì lǎoshī!", "es": "Mi hermana tiene doce años. ¡Mi madre es profesora!" },
+          "user": [
+            { "zh": "你妈妈是王老师吗？我是她的学生！", "py": "Nǐ māma shì Wáng lǎoshī ma? Wǒ shì tā de xuésheng!", "es": "¿Tu madre es la profesora Wang? ¡Soy alumno suyo!", "keywords": ["王老师", "她的学生"], "next": "end1" },
+            { "zh": "好。明明，再见！", "py": "Hǎo. Míngming, zàijiàn!", "es": "Vale. ¡Adiós, Mingming!", "keywords": ["再见", "拜拜"], "next": "end2" }
+          ],
+          "hint": "¿Será su madre tu profesora? Pregúntalo con 你妈妈是王老师吗."
+        },
+        "n6b": {
+          "npc": { "zh": "是！我妈妈是王老师。你是她的学生吗？", "py": "Shì! Wǒ māma shì Wáng lǎoshī. Nǐ shì tā de xuésheng ma?", "es": "¡Sí! Mi madre es la profesora Wang. ¿Eres alumno suyo?" },
+          "user": [
+            { "zh": "是，我是她的学生！", "py": "Shì, wǒ shì tā de xuésheng!", "es": "¡Sí, soy alumno suyo!", "keywords": ["她的学生", "是"], "next": "end1" },
+            { "zh": "不是，我是她的朋友。", "py": "Bú shì, wǒ shì tā de péngyou.", "es": "No, soy amigo suyo.", "keywords": ["朋友", "不是"], "next": "end1" }
+          ],
+          "hint": "她的学生 = su alumno (de ella). Responde 是 o 不是."
+        },
+        "end1": {
+          "npc": { "zh": "妈妈！妈妈！……再见！", "py": "Māma! Māma! … Zàijiàn!", "es": "¡Mamá! ¡Mamá! … ¡Adiós!" },
+          "end": true,
+          "feedback": "Has charlado con una niña sobre su perro y su familia: 它 para el animal, 谁的 para preguntar de quién es, 几口人 y 几岁 para la familia. Muy bien."
+        },
+        "end2": {
+          "npc": { "zh": "再见！", "py": "Zàijiàn!", "es": "¡Adiós!" },
+          "end": true,
+          "feedback": "Buena charla. Te faltó descubrir que su madre es tu profesora: 你妈妈是王老师吗？"
+        }
+      }
+    },
+    {
+      "id": "a1-u03-grandma",
+      "title": "La abuela de Xiao Li",
+      "zh": "奶奶好！",
+      "level": 1,
+      "setting": "Fin de semana en Shanghái. Xiao Li invita a Hugo a su casa y le presenta a su abuela, una señora mayor muy curiosa que solo habla chino despacio. Tú (la app) eres 小李的奶奶.",
+      "role": "abuela de Xiao Li",
+      "roleZh": "奶奶",
+      "voice": "f",
+      "goals": ["Saludar a una persona mayor con respeto", "Decir cuántos sois en tu familia", "Hablar de tus abuelos", "Responder a 你们都…吗"],
+      "vocab": ["奶奶", "您", "几口人", "爷爷", "外公", "外婆", "老人", "都", "也都", "没有", "女朋友", "房子"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "你好！你是小李的同学吗？", "py": "Nǐ hǎo! Nǐ shì Xiǎo Lǐ de tóngxué ma?", "es": "¡Hola! ¿Eres compañero de Xiao Li?" },
+          "user": [
+            { "zh": "奶奶好！对，我是小李的同学。", "py": "Nǎinai hǎo! Duì, wǒ shì Xiǎo Lǐ de tóngxué.", "es": "¡Buenas tardes, señora! Sí, soy compañero de Xiao Li.", "keywords": ["奶奶好", "同学"], "next": "n2", "goal": 0 },
+            { "zh": "你好！是，我是同学。", "py": "Nǐ hǎo! Shì, wǒ shì tóngxué.", "es": "¡Hola! Sí, soy compañero.", "keywords": ["你好", "同学"], "next": "n1b" }
+          ],
+          "hint": "A la abuela de un amigo se la llama 奶奶 (y se la trata de 您). Saluda con 奶奶好！"
+        },
+        "n1b": {
+          "npc": { "zh": "好，好。你叫我“奶奶”！", "py": "Hǎo, hǎo. Nǐ jiào wǒ “nǎinai”!", "es": "Bien, bien. ¡Llámame «abuela»!" },
+          "user": [
+            { "zh": "奶奶好！我叫雨果。", "py": "Nǎinai hǎo! Wǒ jiào Yǔguǒ.", "es": "¡Hola, abuela! Me llamo Hugo.", "keywords": ["奶奶好", "雨果"], "next": "n2", "goal": 0 }
+          ],
+          "hint": "En China, a las abuelas de los amigos se las llama 奶奶 con cariño."
+        },
+        "n2": {
+          "npc": { "zh": "雨果，你家有几口人？", "py": "Yǔguǒ, nǐ jiā yǒu jǐ kǒu rén?", "es": "Hugo, ¿cuántos sois en tu familia?" },
+          "user": [
+            { "zh": "我家有四口人：爸爸、妈妈、姐姐和我。", "py": "Wǒ jiā yǒu sì kǒu rén: bàba, māma, jiějie hé wǒ.", "es": "Somos cuatro: mi padre, mi madre, mi hermana y yo.", "keywords": ["四口人", "四口"], "next": "n3", "goal": 1 },
+            { "zh": "对不起，奶奶，请再说一遍。", "py": "Duìbuqǐ, nǎinai, qǐng zài shuō yí biàn.", "es": "Perdone, abuela, ¿puede repetirlo?", "keywords": ["再说一遍", "一遍"], "next": "n2b" }
+          ],
+          "hint": "几口人 = cuántas personas hay en tu familia. Responde con 我家有 + número + 口人."
+        },
+        "n2b": {
+          "npc": { "zh": "你——家——有——几口人？", "py": "Nǐ — jiā — yǒu — jǐ kǒu rén?", "es": "¿Cuántos — sois — en — tu familia?" },
+          "user": [
+            { "zh": "我家有四口人。", "py": "Wǒ jiā yǒu sì kǒu rén.", "es": "Somos cuatro.", "keywords": ["四口人", "四口"], "next": "n3", "goal": 1 }
+          ],
+          "hint": "Ahora más despacio: 我家有四口人."
+        },
+        "n3": {
+          "npc": { "zh": "你爷爷奶奶呢？他们也都是老人吗？", "py": "Nǐ yéye nǎinai ne? Tāmen yě dōu shì lǎorén ma?", "es": "¿Y tus abuelos? ¿También son mayores los dos?" },
+          "user": [
+            { "zh": "对，我爷爷奶奶也都是老人。", "py": "Duì, wǒ yéye nǎinai yě dōu shì lǎorén.", "es": "Sí, mis abuelos también son mayores.", "keywords": ["也都是", "老人"], "next": "n4", "goal": 3 },
+            { "zh": "我没有爷爷，我有外公和外婆。", "py": "Wǒ méiyǒu yéye, wǒ yǒu wàigōng hé wàipó.", "es": "No tengo abuelo paterno; tengo abuelos maternos.", "keywords": ["外公", "外婆"], "next": "n4", "goal": 2 }
+          ],
+          "hint": "也都 = también… todos (primero 也, luego 都). Puedes hablar de tus 爷爷奶奶 o de tus 外公外婆."
+        },
+        "n4": {
+          "npc": { "zh": "他们有房子吗？他们和你爸爸妈妈是一家人吗？", "py": "Tāmen yǒu fángzi ma? Tāmen hé nǐ bàba māma shì yì jiā rén ma?", "es": "¿Tienen casa propia? ¿Viven con tus padres, como una sola familia?" },
+          "user": [
+            { "zh": "他们有房子。我外公外婆的房子很大！", "py": "Tāmen yǒu fángzi. Wǒ wàigōng wàipó de fángzi hěn dà!", "es": "Tienen casa. ¡La casa de mis abuelos maternos es muy grande!", "keywords": ["房子", "有房子"], "next": "n5", "goal": 2 },
+            { "zh": "我不知道。", "py": "Wǒ bù zhīdào.", "es": "No lo sé.", "keywords": ["不知道"], "next": "n4b" }
+          ],
+          "hint": "房子 = casa (el edificio). Contesta con 有 / 没有 y añade algo con 的."
+        },
+        "n4b": {
+          "npc": { "zh": "你不知道？好，没关系。", "py": "Nǐ bù zhīdào? Hǎo, méi guānxi.", "es": "¿No lo sabes? Bueno, no pasa nada." },
+          "user": [
+            { "zh": "他们有房子，我爸爸妈妈也有房子。", "py": "Tāmen yǒu fángzi, wǒ bàba māma yě yǒu fángzi.", "es": "Ellos tienen casa, y mis padres también.", "keywords": ["房子"], "next": "n5", "goal": 2 }
+          ],
+          "hint": "Inténtalo con 有房子 y 也."
+        },
+        "n5": {
+          "npc": { "zh": "好！你们都是学生吗？你有女朋友吗？", "py": "Hǎo! Nǐmen dōu shì xuésheng ma? Nǐ yǒu nǚ péngyou ma?", "es": "¡Bien! ¿Sois todos estudiantes? ¿Tienes novia?" },
+          "user": [
+            { "zh": "对，我们都是学生。我没有女朋友！", "py": "Duì, wǒmen dōu shì xuésheng. Wǒ méiyǒu nǚ péngyou!", "es": "Sí, todos somos estudiantes. ¡No tengo novia!", "keywords": ["都是学生", "没有女朋友"], "next": "end1", "goal": 3 },
+            { "zh": "奶奶，我们都是学生，我们都很忙！", "py": "Nǎinai, wǒmen dōu shì xuésheng, wǒmen dōu hěn máng!", "es": "Abuela, todos somos estudiantes, ¡estamos todos muy ocupados!", "keywords": ["都是学生", "很忙"], "next": "end2", "goal": 3 }
+          ],
+          "hint": "Las abuelas chinas lo preguntan todo. Contesta a 你们都…吗 con 我们都… y a la pregunta de la novia con 有 / 没有."
+        },
+        "end1": {
+          "npc": { "zh": "没有女朋友？小李，你姑姑的女儿……", "py": "Méiyǒu nǚ péngyou? Xiǎo Lǐ, nǐ gūgu de nǚ'ér…", "es": "¿No tienes novia? Xiao Li, la hija de tu tía…" },
+          "end": true,
+          "feedback": "Has saludado con respeto (奶奶好), has contado tu familia con 口, has hablado de tus abuelos y has usado 都 y 也都 en su sitio. Y has sobrevivido a la pregunta de la novia: en China es de lo más normal."
+        },
+        "end2": {
+          "npc": { "zh": "好，好，你们都是好学生！", "py": "Hǎo, hǎo, nǐmen dōu shì hǎo xuésheng!", "es": "Bien, bien, ¡sois todos buenos estudiantes!" },
+          "end": true,
+          "feedback": "Bien esquivado: has contestado con 我们都… sin hablar de novias. Has usado 口, 都 y 也都 correctamente."
+        }
+      }
+    }
+  ]
+}

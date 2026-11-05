@@ -1,0 +1,797 @@
+{
+  "id": "a2-u01-l2",
+  "title": "Ya he llegado: 是…的 al teléfono",
+  "zh": "我是坐出租车来的",
+  "goal": "Llamar a casa al llegar y contar con 是…的 quién te recogió, cómo fuiste al hotel y qué te llevaste.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    {
+      "hanzi": "平安",
+      "pinyin": "píng'ān",
+      "es": "sano y salvo, sin percances"
+    },
+    {
+      "hanzi": "一路平安",
+      "pinyin": "yílù píng'ān",
+      "es": "¡buen viaje! (que llegues bien)"
+    },
+    {
+      "hanzi": "接",
+      "pinyin": "jiē",
+      "es": "recoger (a alguien); coger (el teléfono)",
+      "note": "去机场接你 = ir a buscarte al aeropuerto; 接电话 = coger el teléfono."
+    },
+    {
+      "hanzi": "接到",
+      "pinyin": "jiēdào",
+      "es": "recoger a alguien con éxito; recibir",
+      "note": "接到你了 = ¡ya te he encontrado!"
+    },
+    {
+      "hanzi": "送到",
+      "pinyin": "sòngdào",
+      "es": "llevar hasta (un sitio)",
+      "note": "司机把我送到酒店 → aquí: 司机送我到酒店."
+    },
+    {
+      "hanzi": "带",
+      "pinyin": "dài",
+      "es": "llevar (consigo), traer",
+      "note": "带护照 = llevar el pasaporte encima."
+    },
+    {
+      "hanzi": "带来",
+      "pinyin": "dàilai",
+      "es": "traer (hacia aquí)"
+    },
+    {
+      "hanzi": "出门",
+      "pinyin": "chūmén",
+      "es": "salir de casa"
+    },
+    {
+      "hanzi": "酒店",
+      "pinyin": "jiǔdiàn",
+      "es": "hotel"
+    },
+    {
+      "hanzi": "旅馆",
+      "pinyin": "lǚguǎn",
+      "es": "hostal, pensión"
+    },
+    {
+      "hanzi": "外地",
+      "pinyin": "wàidì",
+      "es": "otra ciudad, fuera (de la ciudad donde estás)",
+      "note": "外地人 = gente de fuera."
+    }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        {
+          "zh": "我到了，一路很平安。",
+          "py": "Wǒ dào le, yílù hěn píng'ān.",
+          "es": "Ya he llegado; el viaje ha ido sin problemas."
+        },
+        {
+          "zh": "安娜是开车来机场接我的。",
+          "py": "Ānnà shì kāi chē lái jīchǎng jiē wǒ de.",
+          "es": "Ana vino en coche a recogerme al aeropuerto."
+        },
+        {
+          "zh": "我是坐出租车去酒店的。",
+          "py": "Wǒ shì zuò chūzūchē qù jiǔdiàn de.",
+          "es": "Fui al hotel en taxi."
+        }
+      ]
+    },
+    {
+      "type": "vocab",
+      "title": "Llamar a casa al llegar",
+      "words": [
+        "平安",
+        "一路平安",
+        "接",
+        "接到",
+        "送到",
+        "带",
+        "带来",
+        "出门",
+        "酒店",
+        "旅馆",
+        "外地"
+      ]
+    },
+    {
+      "type": "phonetics-drill",
+      "title": "Entonación al teléfono: 喂 y las preguntas",
+      "markdown": "Al teléfono el chino **no sube la voz al final** como el español: los tonos mandan. 你是怎么来的？ termina con *de*, tono neutro, **corto y bajo**.\n\n- La pregunta de **sí/no** con 吗 tampoco «sube»: 吗 es neutro y suave.\n- **喂** se dice *wéi* (subiendo, como «¿diga?») al coger el teléfono.\n- **平安 píng'ān**: dos sílabas separadas por el apóstrofo (*píng* + *ān*), no «pin-gan».\n- **一路 yílù**: 一 delante de 4.º tono pasa a 2.º.",
+      "items": [
+        {
+          "audio": "平安",
+          "options": [
+            "píng'ān",
+            "pín gān",
+            "pìng'ān"
+          ],
+          "answer": 0,
+          "explain": "píng + ān: la g es de píng, no de ān."
+        },
+        {
+          "audio": "一路平安",
+          "options": [
+            "yílù píng'ān",
+            "yīlù píng'ān",
+            "yìlù píng'ān"
+          ],
+          "answer": 0,
+          "explain": "一 + 4.º tono (路) → yí."
+        },
+        {
+          "audio": "接到",
+          "options": [
+            "jiēdào",
+            "qiēdào",
+            "jiēdāo"
+          ],
+          "answer": 0,
+          "explain": "j plana sin aire; 到 cae (4.º)."
+        },
+        {
+          "audio": "酒店",
+          "options": [
+            "jiǔdiàn",
+            "jiùdiàn",
+            "zhiǔdiàn"
+          ],
+          "answer": 0,
+          "explain": "3.º + 4.º: el 3.º se queda bajo y luego cae el 4.º."
+        },
+        {
+          "audio": "旅馆",
+          "options": [
+            "lǚguǎn",
+            "lǔguǎn",
+            "lǚguān"
+          ],
+          "answer": 0,
+          "explain": "旅 lleva ü (labios redondos): lǚ, no lǔ. Y dos terceros: el primero se dice como 2.º."
+        }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": [
+        "带",
+        "接"
+      ],
+      "mnemonics": {
+        "带": "Dibujo de un cinturón con cosas colgadas encima de una tela (巾): lo que llevas colgado → llevar contigo.",
+        "接": "扌 (mano) + 妾: tender la mano para recibir a alguien → recoger, recibir."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "是…的 para contar el viaje: quién, cómo y con qué",
+      "markdown": "Al teléfono, mamá ya sabe que has llegado: lo que quiere son **los detalles**. Todos van entre **是** y el verbo, y **的** cierra:\n\n- **Cómo**: 我是**坐出租车**去酒店的。\n- **Con quién**: 我是**跟安娜一起**来的。\n- **Quién lo hizo** (el que hace la acción va detrás de 是): 是**安娜**来接我的。 → *Fue Ana la que vino a buscarme.*\n- **Para qué**: 她是来**接我**的。\n\nRepaso del curso antiguo (u14 «¿Cuándo llegaste?»): en la respuesta corta basta con **是 + detalle + 的**: 是坐地铁来的。 / 是昨天到的。\n\nCuidado con **到**: 我到了 (ya he llegado: 了, la noticia) frente a 我是昨天到的 (llegué *ayer*: 是…的, el detalle).",
+      "focus": [
+        "adverb",
+        "particle"
+      ],
+      "compare": true,
+      "sentences": [
+        {
+          "slots": {
+            "subject": {
+              "zh": "我",
+              "py": "wǒ"
+            },
+            "adverb": {
+              "zh": "是",
+              "py": "shì"
+            },
+            "verb1": {
+              "zh": "坐出租车",
+              "py": "zuò chūzūchē"
+            },
+            "verb2": {
+              "zh": "去",
+              "py": "qù"
+            },
+            "object": {
+              "zh": "酒店",
+              "py": "jiǔdiàn"
+            },
+            "particle": {
+              "zh": "的",
+              "py": "de"
+            }
+          },
+          "end": "。",
+          "es": "Fui al hotel en taxi.",
+          "esOrder": [
+            {
+              "text": "Fui",
+              "slot": "verb2"
+            },
+            {
+              "text": "al hotel",
+              "slot": "object"
+            },
+            {
+              "text": "en taxi",
+              "slot": "verb1"
+            }
+          ]
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "她",
+              "py": "tā"
+            },
+            "adverb": {
+              "zh": "是",
+              "py": "shì"
+            },
+            "verb1": {
+              "zh": "来机场",
+              "py": "lái jīchǎng"
+            },
+            "verb2": {
+              "zh": "接",
+              "py": "jiē"
+            },
+            "object": {
+              "zh": "我",
+              "py": "wǒ"
+            },
+            "particle": {
+              "zh": "的",
+              "py": "de"
+            }
+          },
+          "end": "。",
+          "es": "Vino al aeropuerto a recogerme."
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "我",
+              "py": "wǒ"
+            },
+            "adverb": {
+              "zh": "是",
+              "py": "shì"
+            },
+            "with": {
+              "zh": "跟安娜一起",
+              "py": "gēn Ānnà yìqǐ"
+            },
+            "verb1": {
+              "zh": "出门",
+              "py": "chūmén"
+            },
+            "particle": {
+              "zh": "的",
+              "py": "de"
+            }
+          },
+          "end": "。",
+          "es": "Salí de casa con Ana."
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "这个行李箱",
+              "py": "zhège xínglixiāng"
+            },
+            "adverb": {
+              "zh": "是",
+              "py": "shì"
+            },
+            "verb1": {
+              "zh": "从西班牙",
+              "py": "cóng Xībānyá"
+            },
+            "verb2": {
+              "zh": "带来",
+              "py": "dàilai"
+            },
+            "particle": {
+              "zh": "的",
+              "py": "de"
+            }
+          },
+          "end": "。",
+          "es": "Esta maleta la traje de España."
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "我们",
+              "py": "wǒmen"
+            },
+            "adverb": {
+              "zh": "是",
+              "py": "shì"
+            },
+            "place": {
+              "zh": "在旅馆",
+              "py": "zài lǚguǎn"
+            },
+            "verb1": {
+              "zh": "认识",
+              "py": "rènshi"
+            },
+            "particle": {
+              "zh": "的",
+              "py": "de"
+            }
+          },
+          "end": "。",
+          "es": "Nos conocimos en el hostal."
+        }
+      ],
+      "negative": [
+        {
+          "slots": {
+            "subject": {
+              "zh": "我",
+              "py": "wǒ"
+            },
+            "adverb": {
+              "zh": "不是",
+              "py": "bú shì"
+            },
+            "verb1": {
+              "zh": "坐地铁",
+              "py": "zuò dìtiě"
+            },
+            "verb2": {
+              "zh": "去",
+              "py": "qù"
+            },
+            "object": {
+              "zh": "酒店",
+              "py": "jiǔdiàn"
+            },
+            "particle": {
+              "zh": "的",
+              "py": "de"
+            }
+          },
+          "end": "。",
+          "es": "No fui al hotel en metro."
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "小李",
+              "py": "Xiǎo Lǐ"
+            },
+            "adverb": {
+              "zh": "不是",
+              "py": "bú shì"
+            },
+            "with": {
+              "zh": "跟我一起",
+              "py": "gēn wǒ yìqǐ"
+            },
+            "verb1": {
+              "zh": "来",
+              "py": "lái"
+            },
+            "particle": {
+              "zh": "的",
+              "py": "de"
+            }
+          },
+          "end": "。",
+          "es": "Xiao Li no vino conmigo."
+        }
+      ],
+      "question": [
+        {
+          "slots": {
+            "subject": {
+              "zh": "你",
+              "py": "nǐ"
+            },
+            "adverb": {
+              "zh": "是",
+              "py": "shì"
+            },
+            "verb1": {
+              "zh": "坐什么",
+              "py": "zuò shénme"
+            },
+            "verb2": {
+              "zh": "去",
+              "py": "qù"
+            },
+            "object": {
+              "zh": "酒店",
+              "py": "jiǔdiàn"
+            },
+            "particle": {
+              "zh": "的",
+              "py": "de"
+            }
+          },
+          "end": "？",
+          "es": "¿En qué fuiste al hotel?"
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "你",
+              "py": "nǐ"
+            },
+            "time": {
+              "zh": "是几点",
+              "py": "shì jǐ diǎn"
+            },
+            "verb1": {
+              "zh": "到",
+              "py": "dào"
+            },
+            "particle": {
+              "zh": "的",
+              "py": "de"
+            }
+          },
+          "end": "？",
+          "es": "¿A qué hora llegaste?"
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "你",
+              "py": "nǐ"
+            },
+            "adverb": {
+              "zh": "是",
+              "py": "shì"
+            },
+            "with": {
+              "zh": "跟谁一起",
+              "py": "gēn shéi yìqǐ"
+            },
+            "verb1": {
+              "zh": "来",
+              "py": "lái"
+            },
+            "particle": {
+              "zh": "的",
+              "py": "de"
+            }
+          },
+          "end": "？",
+          "es": "¿Con quién viniste?"
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "我是到了。",
+          "right": "我到了。 / 我是昨天到的。",
+          "why": "La noticia «ya he llegado» lleva 了; 是…的 solo si cuentas un detalle (cuándo, cómo…)."
+        },
+        {
+          "wrong": "我坐出租车去酒店是的。",
+          "right": "我是坐出租车去酒店的。",
+          "why": "是 va delante del detalle (坐出租车), no al final."
+        },
+        {
+          "wrong": "我带了来护照。",
+          "right": "我带来了护照。 / 护照我带来了。",
+          "why": "带来 es una sola unidad: el 了 va detrás de las dos sílabas."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Videollamada con mamá",
+      "lines": [
+        {
+          "speaker": "妈妈",
+          "zh": "喂，雨果！你到了吗？",
+          "py": "Wèi, Yǔguǒ! Nǐ dào le ma?",
+          "es": "¡Hola, Hugo! ¿Ya has llegado?"
+        },
+        {
+          "speaker": "雨果",
+          "zh": "到了，妈妈。一路很平安，很顺利。",
+          "py": "Dào le, māma. Yílù hěn píng'ān, hěn shùnlì.",
+          "es": "Sí, mamá. El viaje ha ido bien, sin problemas."
+        },
+        {
+          "speaker": "妈妈",
+          "zh": "太好了！你是几点到的？",
+          "py": "Tài hǎo le! Nǐ shì jǐ diǎn dào de?",
+          "es": "¡Qué bien! ¿A qué hora has llegado?"
+        },
+        {
+          "speaker": "雨果",
+          "zh": "我是下午两点到的。安娜来机场接我了。",
+          "py": "Wǒ shì xiàwǔ liǎng diǎn dào de. Ānnà lái jīchǎng jiē wǒ le.",
+          "es": "He llegado a las dos de la tarde. Ana ha venido a recogerme al aeropuerto."
+        },
+        {
+          "speaker": "妈妈",
+          "zh": "你们是怎么去酒店的？",
+          "py": "Nǐmen shì zěnme qù jiǔdiàn de?",
+          "es": "¿Cómo habéis ido al hotel?"
+        },
+        {
+          "speaker": "雨果",
+          "zh": "我们是坐出租车去的。司机送到酒店门口。",
+          "py": "Wǒmen shì zuò chūzūchē qù de. Sījī sòngdào jiǔdiàn ménkǒu.",
+          "es": "Hemos ido en taxi. El taxista nos ha dejado en la puerta del hotel."
+        },
+        {
+          "speaker": "妈妈",
+          "zh": "你的行李都带来了吗？",
+          "py": "Nǐde xíngli dōu dàilai le ma?",
+          "es": "¿Has traído todo el equipaje?"
+        },
+        {
+          "speaker": "雨果",
+          "zh": "都带来了。明天我去学校。",
+          "py": "Dōu dàilai le. Míngtiān wǒ qù xuéxiào.",
+          "es": "Sí, todo. Mañana voy a la universidad."
+        },
+        {
+          "speaker": "妈妈",
+          "zh": "好。出门要带护照！",
+          "py": "Hǎo. Chūmén yào dài hùzhào!",
+          "es": "Vale. ¡Cuando salgas, lleva el pasaporte!"
+        },
+        {
+          "speaker": "雨果",
+          "zh": "知道了。再见，妈妈！",
+          "py": "Zhīdào le. Zàijiàn, māma!",
+          "es": "Entendido. ¡Adiós, mamá!"
+        }
+      ],
+      "notes": "一路平安 (que tengas buen viaje) se dice al que se va; al que llega se le pregunta 路上顺利吗？ En muchos hoteles y hostales (旅馆) de China te pedirán el pasaporte para registrarte: los extranjeros tienen que registrarse en la policía al llegar, y el hotel lo hace por ti."
+    },
+    {
+      "type": "exercises",
+      "count": 16,
+      "bank": [
+        "g-shi-de",
+        "u14",
+        "g-le"
+      ]
+    },
+    {
+      "type": "sentence-builder",
+      "items": [
+        {
+          "sentence": {
+            "slots": {
+              "subject": {
+                "zh": "我"
+              },
+              "adverb": {
+                "zh": "是"
+              },
+              "verb1": {
+                "zh": "坐出租车"
+              },
+              "verb2": {
+                "zh": "去"
+              },
+              "object": {
+                "zh": "酒店"
+              },
+              "particle": {
+                "zh": "的"
+              }
+            },
+            "end": "。",
+            "es": "Fui al hotel en taxi."
+          }
+        },
+        {
+          "sentence": {
+            "slots": {
+              "subject": {
+                "zh": "安娜"
+              },
+              "adverb": {
+                "zh": "是"
+              },
+              "verb1": {
+                "zh": "来机场"
+              },
+              "verb2": {
+                "zh": "接"
+              },
+              "object": {
+                "zh": "我"
+              },
+              "particle": {
+                "zh": "的"
+              }
+            },
+            "end": "。",
+            "es": "Ana vino a recogerme al aeropuerto."
+          },
+          "distractors": [
+            "了"
+          ]
+        },
+        {
+          "sentence": {
+            "slots": {
+              "subject": {
+                "zh": "你"
+              },
+              "adverb": {
+                "zh": "是"
+              },
+              "with": {
+                "zh": "跟谁一起"
+              },
+              "verb1": {
+                "zh": "来"
+              },
+              "particle": {
+                "zh": "的"
+              }
+            },
+            "end": "？",
+            "es": "¿Con quién viniste?"
+          },
+          "distractors": [
+            "吗"
+          ]
+        },
+        {
+          "sentence": {
+            "slots": {
+              "subject": {
+                "zh": "我"
+              },
+              "time": {
+                "zh": "是昨天晚上"
+              },
+              "with": {
+                "zh": "跟我朋友一起"
+              },
+              "verb1": {
+                "zh": "坐地铁"
+              },
+              "verb2": {
+                "zh": "去"
+              },
+              "object": {
+                "zh": "旅馆"
+              },
+              "particle": {
+                "zh": "的"
+              }
+            },
+            "end": "。",
+            "es": "Ayer por la noche fui al hostal en metro con mi amigo."
+          }
+        }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        {
+          "zh": "我到了，一路很平安。",
+          "py": "Wǒ dào le, yílù hěn píng'ān.",
+          "es": "Ya he llegado; el viaje ha ido bien."
+        },
+        {
+          "zh": "我是下午两点到的。",
+          "py": "Wǒ shì xiàwǔ liǎng diǎn dào de.",
+          "es": "He llegado a las dos de la tarde."
+        },
+        {
+          "zh": "我们是坐出租车去酒店的。",
+          "py": "Wǒmen shì zuò chūzūchē qù jiǔdiàn de.",
+          "es": "Fuimos al hotel en taxi."
+        },
+        {
+          "zh": "出门要带护照。",
+          "py": "Chūmén yào dài hùzhào.",
+          "es": "Al salir hay que llevar el pasaporte."
+        }
+      ],
+      "respond": [
+        {
+          "q": {
+            "zh": "你是怎么去酒店的？",
+            "py": "Nǐ shì zěnme qù jiǔdiàn de?",
+            "es": "¿Cómo fuiste al hotel?"
+          },
+          "model": {
+            "zh": "我是坐出租车去的。",
+            "py": "Wǒ shì zuò chūzūchē qù de.",
+            "es": "Fui en taxi."
+          }
+        },
+        {
+          "q": {
+            "zh": "谁去机场接你了？",
+            "py": "Shéi qù jīchǎng jiē nǐ le?",
+            "es": "¿Quién fue a recogerte al aeropuerto?"
+          },
+          "model": {
+            "zh": "是安娜来接我的。",
+            "py": "Shì Ānnà lái jiē wǒ de.",
+            "es": "Fue Ana la que vino a buscarme."
+          }
+        },
+        {
+          "q": {
+            "zh": "你的行李都带来了吗？",
+            "py": "Nǐ de xíngli dōu dàilai le ma?",
+            "es": "¿Has traído todo el equipaje?"
+          },
+          "model": {
+            "zh": "都带来了。",
+            "py": "Dōu dàilai le.",
+            "es": "Sí, lo he traído todo."
+          }
+        }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Un mensaje de WeChat",
+      "text": "妈妈，我到上海了！路上很平安。我是下午两点到的，安娜是开车来机场接我的。她说：“我接到你了！”我们是坐她朋友的车去酒店的，司机送到酒店门口。酒店不大，可是很干净，房间里有电脑。我的行李都带来了，你给我的茶我也带来了。明天早上八点我出门去学校，我会带护照。我的室友是外地人，下个星期来。你和爸爸别忙，我很好！",
+      "es": "Mamá, ¡ya estoy en Shanghái! El viaje ha ido bien. Llegué a las dos de la tarde y Ana vino en coche a buscarme al aeropuerto. Me dijo: «¡Ya te tengo!». Fuimos al hotel en el coche de una amiga suya; el conductor nos dejó en la puerta del hotel. El hotel no es grande, pero está muy limpio y en la habitación hay ordenador. He traído todo el equipaje, y el té que me diste también. Mañana a las ocho salgo hacia la universidad y llevaré el pasaporte. Mi compañero de habitación es de otra ciudad y viene la semana que viene. No os preocupéis papá y tú: ¡estoy muy bien!",
+      "questions": [
+        {
+          "q": "¿A qué hora llegó Hugo?",
+          "options": [
+            "下午两点",
+            "上午八点",
+            "晚上十点"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "¿Cómo fueron al hotel?",
+          "options": [
+            "坐车",
+            "坐地铁",
+            "走路"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "¿Qué le dio su madre que también ha traído?",
+          "options": [
+            "茶",
+            "电脑",
+            "护照"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "¿De dónde es su compañero de habitación?",
+          "options": [
+            "外地",
+            "西班牙",
+            "上海"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "type": "notes-growth"
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "id": "a1-u03-l5",
+  "title": "Todos: 都, las mascotas y repaso de la familia",
+  "zh": "我们全家都喜欢猫",
+  "goal": "Decir «todos» con 都 (y distinguir 都不 de 不都), hablar de la casa y las mascotas, y repasar toda la unidad.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "都", "pinyin": "dōu", "es": "todos, los dos; todo", "note": "Adverbio: detrás del sujeto plural, delante del verbo." },
+    { "hanzi": "家人", "pinyin": "jiārén", "es": "familiares, la familia" },
+    { "hanzi": "全家", "pinyin": "quánjiā", "es": "toda la familia", "note": "Casi siempre con 都: 我们全家都…" },
+    { "hanzi": "老人", "pinyin": "lǎorén", "es": "persona mayor, anciano", "note": "En China es una palabra de respeto, no despectiva." },
+    { "hanzi": "房子", "pinyin": "fángzi", "es": "casa (el edificio), piso" },
+    { "hanzi": "狗", "pinyin": "gǒu", "es": "perro" },
+    { "hanzi": "猫", "pinyin": "māo", "es": "gato" },
+    { "hanzi": "喜欢", "pinyin": "xǐhuan", "es": "gustar", "note": "¡Al revés que en español! 我喜欢猫 = (yo) gusto gatos → me gustan los gatos." }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "我们都是学生。", "py": "Wǒmen dōu shì xuésheng.", "es": "Todos somos estudiantes." },
+        { "zh": "我们全家都喜欢猫。", "py": "Wǒmen quánjiā dōu xǐhuan māo.", "es": "A toda mi familia le gustan los gatos." },
+        { "zh": "我爷爷奶奶都不说英语。", "py": "Wǒ yéye nǎinai dōu bù shuō Yīngyǔ.", "es": "Ni mi abuelo ni mi abuela hablan inglés." }
+      ]
+    },
+    { "type": "vocab", "title": "Toda la familia (y los animales)", "words": ["都", "家人", "全家", "老人", "房子", "狗", "猫", "喜欢"] },
+    {
+      "type": "phonetics-drill",
+      "title": "ou o uo: 都 dōu y 多 duō",
+      "markdown": "Dos diptongos que los hispanohablantes confunden muchísimo:\n\n- **ou** (都 **dōu**, 狗 **gǒu**, 口 **kǒu**): empieza en una «o» abierta y se cierra hacia «u»: *dou* como en el portugués *dou*.\n- **uo** (多 **duō**, 国 **guó**, 说 **shuō**): empieza en «u» y se abre a «o»: *duo* como en «dúo».\n\nAsí: 都 *dōu* (todos) ≠ 多 *duō* (mucho), y 狗 *gǒu* (perro) ≠ 国 *guó* (país). Truco: mira dónde están los labios **al final**: en *ou* acaban redondos y cerrados; en *uo*, abiertos.\n\nY 猫 **māo** suena casi como el maullido de un gato: *miao* es la onomatopeya china.",
+      "items": [
+        { "audio": "都", "options": ["dōu", "duō", "dū"], "answer": 0, "explain": "ou: de «o» a «u»." },
+        { "audio": "多", "options": ["duō", "dōu", "duó"], "answer": 0, "explain": "uo: de «u» a «o»." },
+        { "audio": "狗", "options": ["gǒu", "guǒ", "kǒu"], "answer": 0, "explain": "g sin aire + ou + 3.er tono." },
+        { "audio": "国", "options": ["guó", "gǒu", "góu"], "answer": 0, "explain": "uo + 2.º tono." },
+        { "audio": "喜欢", "options": ["xǐhuan", "xīhuān", "shǐhuan"], "answer": 0, "explain": "xǐ (3.º) + huan neutro." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["猫", "狗"],
+      "mnemonics": {
+        "猫": "犭 (animal, perro) + 苗 (brote, que da el sonido miáo): el animal que hace «miao».",
+        "狗": "犭 (animal) + 句 (que da el sonido gōu): el perro, el animal por excelencia de este radical."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "都 «todos»: detrás de lo que resume",
+      "markdown": "**都** va en el hueco de los **adverbios**, como 也: detrás del sujeto y delante del verbo. Y **resume lo que tiene a la izquierda**, que tiene que ser plural:\n\n- 我们**都**是学生。 Todos somos estudiantes.\n- 我爷爷奶奶**都**是老人。 Mis abuelos son mayores (los dos).\n\nCon **也** juntos, el orden es **也都**: 他们**也都**是学生 (ellos también son todos estudiantes).\n\n**都不 ≠ 不都** (¡el orden cambia el sentido!):\n\n| | significa |\n|---|---|\n| 他们**都不**说英语 | **ninguno** habla inglés |\n| 他们**不都**是中国人 | **no todos** son chinos |\n\nCuidado con el español «*Todos* nosotros»: 都 **nunca** va delante del sujeto.",
+      "focus": ["adverb"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "我们", "py": "wǒmen" }, "adverb": { "zh": "都", "py": "dōu" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "学生", "py": "xuésheng" } }, "end": "。", "es": "Todos somos estudiantes.", "esOrder": [{ "text": "Todos", "slot": "adverb" }, { "text": "(nosotros)", "slot": "subject" }, { "text": "somos", "slot": "verb1" }, { "text": "estudiantes", "slot": "object" }] },
+        { "slots": { "subject": { "zh": "我们全家", "py": "wǒmen quánjiā" }, "adverb": { "zh": "都", "py": "dōu" }, "verb1": { "zh": "喜欢", "py": "xǐhuan" }, "object": { "zh": "猫", "py": "māo" } }, "end": "。", "es": "A toda nuestra familia le gustan los gatos.", "esOrder": [{ "text": "A toda nuestra familia", "slot": "subject" }, { "text": "le gustan", "slot": "verb1" }, { "text": "los gatos", "slot": "object" }] },
+        { "slots": { "subject": { "zh": "我爷爷奶奶", "py": "wǒ yéye nǎinai" }, "adverb": { "zh": "都", "py": "dōu" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "老人", "py": "lǎorén" } }, "end": "。", "es": "Mis abuelos (paternos) son los dos mayores." },
+        { "slots": { "subject": { "zh": "安娜和大卫", "py": "Ānnà hé Dàwèi" }, "adverb": { "zh": "也都", "py": "yě dōu" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "外国人", "py": "wàiguó rén" } }, "end": "。", "es": "Anna y David también son extranjeros (los dos)." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "我爷爷奶奶", "py": "wǒ yéye nǎinai" }, "adverb": { "zh": "都不", "py": "dōu bù" }, "verb1": { "zh": "说", "py": "shuō" }, "object": { "zh": "英语", "py": "Yīngyǔ" } }, "end": "。", "es": "Ni mi abuelo ni mi abuela hablan inglés (ninguno)." },
+        { "slots": { "subject": { "zh": "我们班的同学", "py": "wǒmen bān de tóngxué" }, "adverb": { "zh": "不都", "py": "bù dōu" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "中国人", "py": "Zhōngguó rén" } }, "end": "。", "es": "No todos los compañeros de nuestra clase son chinos." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你们", "py": "nǐmen" }, "adverb": { "zh": "都", "py": "dōu" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "西班牙人", "py": "Xībānyá rén" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿Sois todos españoles?" },
+        { "slots": { "subject": { "zh": "你家人", "py": "nǐ jiārén" }, "adverb": { "zh": "都", "py": "dōu" }, "verb1": { "zh": "喜欢", "py": "xǐhuan" }, "object": { "zh": "狗", "py": "gǒu" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿A toda tu familia le gustan los perros?" }
+      ],
+      "mistakes": [
+        { "wrong": "都我们是学生。", "right": "我们都是学生。", "why": "都 nunca va delante del sujeto, aunque en español digamos «todos nosotros»." },
+        { "wrong": "我们是都学生。", "right": "我们都是学生。", "why": "都 va delante del verbo, no del nombre." },
+        { "wrong": "我们都也是学生。", "right": "我们也都是学生。", "why": "Con los dos adverbios, primero 也 y luego 都." },
+        { "wrong": "我都喜欢狗和猫。", "right": "狗和猫，我都喜欢。", "why": "都 resume lo que tiene a la izquierda; si «todo» se refiere al objeto, el objeto tiene que ir delante." },
+        { "wrong": "猫喜欢我。 (para «me gustan los gatos»)", "right": "我喜欢猫。", "why": "喜欢 funciona al revés que «gustar»: el que siente el gusto es el sujeto." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Familias y mascotas",
+      "lines": [
+        { "speaker": "安娜", "zh": "小李，你家有几口人？", "py": "Xiǎo Lǐ, nǐ jiā yǒu jǐ kǒu rén?", "es": "Xiao Li, ¿cuántos sois en tu familia?" },
+        { "speaker": "小李", "zh": "我家有五口人：爷爷、奶奶、爸爸、妈妈和我。我们全家都是上海人。", "py": "Wǒ jiā yǒu wǔ kǒu rén: yéye, nǎinai, bàba, māma hé wǒ. Wǒmen quánjiā dōu shì Shànghǎi rén.", "es": "Somos cinco: mis abuelos, mis padres y yo. Toda mi familia es de Shanghái." },
+        { "speaker": "安娜", "zh": "你爷爷奶奶也说英语吗？", "py": "Nǐ yéye nǎinai yě shuō Yīngyǔ ma?", "es": "¿Tus abuelos también hablan inglés?" },
+        { "speaker": "小李", "zh": "不说，他们都是老人，都不说英语。", "py": "Bù shuō, tāmen dōu shì lǎorén, dōu bù shuō Yīngyǔ.", "es": "No, son mayores: ninguno de los dos habla inglés." },
+        { "speaker": "雨果", "zh": "你家有狗吗？", "py": "Nǐ jiā yǒu gǒu ma?", "es": "¿Tenéis perro en casa?" },
+        { "speaker": "小李", "zh": "没有，我们家有猫。我们全家都喜欢猫。", "py": "Méiyǒu, wǒmen jiā yǒu māo. Wǒmen quánjiā dōu xǐhuan māo.", "es": "No, tenemos un gato. A toda la familia nos encantan los gatos." },
+        { "speaker": "安娜", "zh": "我也喜欢猫！雨果，你呢？", "py": "Wǒ yě xǐhuan māo! Yǔguǒ, nǐ ne?", "es": "¡A mí también me gustan los gatos! Hugo, ¿y a ti?" },
+        { "speaker": "雨果", "zh": "我喜欢狗。我家有狗，我的家人都喜欢它。", "py": "Wǒ xǐhuan gǒu. Wǒ jiā yǒu gǒu, wǒ de jiārén dōu xǐhuan tā.", "es": "A mí, los perros. En casa tenemos perro y a toda mi familia le encanta." },
+        { "speaker": "小李", "zh": "你家的房子大吗？", "py": "Nǐ jiā de fángzi dà ma?", "es": "¿Tu casa es grande?" },
+        { "speaker": "雨果", "zh": "不大。我们的狗也不大！", "py": "Bú dà. Wǒmen de gǒu yě bú dà!", "es": "No es grande. ¡Y nuestro perro tampoco!" }
+      ],
+      "notes": "En las ciudades chinas se ven cada vez más perros y gatos, sobre todo en las familias jóvenes. 上海人 («gente de Shanghái») funciona igual que 中国人: lugar + 人. El 大吗 / 不大 del final es un adelanto de los adjetivos (unidad 8)."
+    },
+    { "type": "exercises", "count": 16, "bank": ["g-ye-dou", "g-de", "g-you", "g-measure-words", "u03"] },
+    {
+      "type": "sentence-builder",
+      "title": "Construye la frase completa",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "我们全家" }, "adverb": { "zh": "都" }, "verb1": { "zh": "喜欢" }, "object": { "zh": "狗" } }, "end": "。", "es": "A toda nuestra familia le gustan los perros." }, "distractors": ["也"] },
+        { "sentence": { "slots": { "subject": { "zh": "我爸爸的妈妈" }, "adverb": { "zh": "也" }, "verb1": { "zh": "是" }, "object": { "zh": "老师" } }, "end": "。", "es": "La madre de mi padre también es profesora." }, "distractors": ["的"] },
+        { "sentence": { "slots": { "subject": { "zh": "你家" }, "verb1": { "zh": "有" }, "object": { "zh": "几口人" } }, "end": "？", "es": "¿Cuántos sois en tu familia?" }, "distractors": ["吗", "个"] },
+        { "sentence": { "slots": { "subject": { "zh": "安娜和大卫" }, "adverb": { "zh": "也都" }, "verb1": { "zh": "是" }, "object": { "zh": "外国人" } }, "end": "。", "es": "Anna y David también son extranjeros." }, "distractors": ["都也"] },
+        { "sentence": { "slots": { "subject": { "zh": "我妈妈的妹妹" }, "adverb": { "zh": "没" }, "verb1": { "zh": "有" }, "object": { "zh": "孩子" } }, "end": "。", "es": "La hermana pequeña de mi madre no tiene hijos." }, "distractors": ["不", "个"] },
+        { "sentence": { "slots": { "subject": { "zh": "小李的哥哥" }, "adverb": { "zh": "也" }, "verb1": { "zh": "说" }, "object": { "zh": "英语" }, "particle": { "zh": "吗" } }, "end": "？", "es": "¿El hermano mayor de Xiao Li también habla inglés?" }, "distractors": ["呢"] },
+        { "sentence": { "slots": { "subject": { "zh": "我们班的同学" }, "adverb": { "zh": "都" }, "verb1": { "zh": "有" }, "object": { "zh": "微信" }, "particle": { "zh": "吗" } }, "end": "？", "es": "¿Todos los compañeros de nuestra clase tienen WeChat?" }, "distractors": ["几"] },
+        { "sentence": { "slots": { "subject": { "zh": "我爷爷奶奶" }, "adverb": { "zh": "都不" }, "verb1": { "zh": "说" }, "object": { "zh": "汉语" } }, "end": "。", "es": "Ni mi abuelo ni mi abuela hablan chino." }, "distractors": ["不都"] },
+        { "sentence": { "slots": { "subject": { "zh": "张先生" }, "verb1": { "zh": "有" }, "object": { "zh": "两个孩子：一个男孩儿和一个女孩儿" } }, "end": "。", "es": "El señor Zhang tiene dos hijos: un niño y una niña." }, "distractors": ["二", "口"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "我们都是学生。", "py": "Wǒmen dōu shì xuésheng.", "es": "Todos somos estudiantes." },
+        { "zh": "我们全家都喜欢猫。", "py": "Wǒmen quánjiā dōu xǐhuan māo.", "es": "A toda la familia le gustan los gatos." },
+        { "zh": "他们都不说英语。", "py": "Tāmen dōu bù shuō Yīngyǔ.", "es": "Ninguno de ellos habla inglés." },
+        { "zh": "我家有四口人：爸爸、妈妈、姐姐和我。", "py": "Wǒ jiā yǒu sì kǒu rén: bàba, māma, jiějie hé wǒ.", "es": "Somos cuatro: mi padre, mi madre, mi hermana y yo." }
+      ],
+      "respond": [
+        { "q": { "zh": "你们都是西班牙人吗？", "py": "Nǐmen dōu shì Xībānyá rén ma?", "es": "¿Sois todos españoles?" }, "model": { "zh": "不都是。我和安娜是西班牙人，大卫是美国人。", "py": "Bù dōu shì. Wǒ hé Ānnà shì Xībānyá rén, Dàwèi shì Měiguó rén.", "es": "No todos. Anna y yo somos españoles; David es estadounidense." } },
+        { "q": { "zh": "你喜欢狗吗？", "py": "Nǐ xǐhuan gǒu ma?", "es": "¿Te gustan los perros?" }, "model": { "zh": "喜欢！我们全家都喜欢狗。", "py": "Xǐhuan! Wǒmen quánjiā dōu xǐhuan gǒu.", "es": "¡Sí! A toda mi familia le gustan los perros." } },
+        { "q": { "zh": "你家有几口人？", "py": "Nǐ jiā yǒu jǐ kǒu rén?", "es": "¿Cuántos sois en tu familia?" }, "model": { "zh": "我家有四口人。", "py": "Wǒ jiā yǒu sì kǒu rén.", "es": "Somos cuatro." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "La familia de Hugo",
+      "text": "我家有四口人：爸爸、妈妈、姐姐和我。我们都是西班牙人。我爸爸是老师，我妈妈也是老师。我姐姐二十八岁，她有一个儿子，他三岁。我爷爷奶奶都是老人，他们都不说英语。我外公外婆有一个大房子，他们也有狗。我们全家都喜欢狗！",
+      "es": "Somos cuatro en mi familia: mi padre, mi madre, mi hermana y yo. Todos somos españoles. Mi padre es profesor y mi madre también. Mi hermana tiene veintiocho años y tiene un hijo de tres. Mis abuelos paternos son mayores y ninguno habla inglés. Mis abuelos maternos tienen una casa grande, y también tienen perro. ¡A toda la familia nos encantan los perros!",
+      "questions": [
+        { "q": "¿Cuántos son en la familia de Hugo?", "options": ["Cuatro", "Cinco", "Tres"], "answer": 0 },
+        { "q": "¿Qué son los padres de Hugo?", "options": ["Profesores los dos", "Médicos", "Estudiantes"], "answer": 0 },
+        { "q": "¿Quién tiene perros?", "options": ["外公和外婆", "爷爷和奶奶", "姐姐"], "answer": 0 },
+        { "q": "¿Qué significa 他们都不说英语?", "options": ["Ninguno habla inglés", "No todos hablan inglés", "Todos hablan inglés"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

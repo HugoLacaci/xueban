@@ -1,0 +1,126 @@
+{
+  "id": "a1-u02-l4",
+  "title": "Dos: 二 o 两",
+  "zh": "两个问题",
+  "goal": "Elegir bien entre 二 (al contar y dentro de los números) y 两 (dos cosas o personas, con clasificador).",
+  "minutes": 13,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "两", "pinyin": "liǎng", "es": "dos (+ clasificador)", "note": "两个朋友, 两岁. Para contar y dentro de los números se usa 二." },
+    { "hanzi": "班", "pinyin": "bān", "es": "clase, grupo (de alumnos)", "note": "我们班 = nuestra clase. Ya lo has visto dentro de 西班牙." },
+    { "hanzi": "汉字", "pinyin": "Hànzì", "es": "carácter chino" },
+    { "hanzi": "写", "pinyin": "xiě", "es": "escribir" },
+    { "hanzi": "问题", "pinyin": "wèntí", "es": "pregunta; problema" },
+    { "hanzi": "记", "pinyin": "jì", "es": "apuntar, anotar; recordar" },
+    { "hanzi": "记住", "pinyin": "jìzhu", "es": "memorizar, quedarse con algo", "note": "记住了 = ya me lo sé, ya lo tengo." },
+    { "hanzi": "等", "pinyin": "děng", "es": "esperar", "note": "请等一下 = espere un momento." }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "老师，我有两个问题。", "py": "Lǎoshī, wǒ yǒu liǎng ge wèntí.", "es": "Profesora, tengo dos preguntas." },
+        { "zh": "我们班有十二个学生。", "py": "Wǒmen bān yǒu shí'èr ge xuésheng.", "es": "En nuestra clase hay doce alumnos." },
+        { "zh": "请等一下！", "py": "Qǐng děng yíxià!", "es": "¡Espere un momento, por favor!" }
+      ]
+    },
+    { "type": "vocab", "title": "En clase", "words": ["两", "班", "汉字", "写", "问题", "记", "记住", "等"] },
+    {
+      "type": "phonetics-drill",
+      "title": "La «er» de 二 y el liǎng de 两",
+      "markdown": "**二 èr** es un sonido que no existe en español: empieza como una «e» neutra (la de *the* en inglés) y **la lengua se dobla hacia atrás** sin tocar nada, como una «r» inglesa. Cuarto tono: cae.\n\nEs el mismo sonido de **儿 ér** (hijo, y el final de 哪儿) y de 女**儿** nǚ'**ér**.\n\n**两 liǎng**: *l* + *iang* («liang» con -ng), tercer tono. Delante de 个 (tono neutro) se queda en **medio tercer tono**: baja y no sube.\n\nCuidado con **二十二 èrshí'èr** (22): el apóstrofo separa *shí* y *èr* para que no se lea «shíer».",
+      "items": [
+        { "audio": "二", "options": ["èr", "è", "ér"], "answer": 0, "explain": "e + lengua doblada hacia atrás; 4.º tono." },
+        { "audio": "两", "options": ["liǎng", "liáng", "lǎng"], "answer": 0, "explain": "l + iang, 3.er tono." },
+        { "audio": "二十二", "options": ["èrshí'èr", "èrshíèr", "liǎngshí'èr"], "answer": 0, "explain": "Dentro de los números siempre 二; el apóstrofo marca el corte." },
+        { "audio": "女儿", "options": ["nǚ'ér", "nǚ'é", "nǔ'ér"], "answer": 0, "explain": "儿 tiene el mismo sonido «er» que 二, pero en 2.º tono." },
+        { "audio": "两个", "options": ["liǎng ge", "èr ge", "liàng gè"], "answer": 0, "explain": "Con clasificador, 两; 个 en tono neutro." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["两", "写"],
+      "mnemonics": {
+        "两": "Una balanza antigua con dos platos colgando, uno a cada lado: dos cosas, una pareja.",
+        "写": "冖 (una tapa) + 与: escribir es «tapar» el papel en blanco con trazos."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "两 + clasificador; 二 al contar y dentro de los números",
+      "markdown": "En chino hay **dos palabras para «dos»**:\n\n| Usa **二 èr** | Usa **两 liǎng** |\n|---|---|\n| al **contar**: 一、二、三 | con **clasificador**: 两**个**问题, 两**个**朋友 |\n| **dentro** de un número: 十二, 二十, 二十二 | con **岁**: 两岁 (2 años) |\n| en los **teléfonos** y números de lista: 二号 | |\n\nRegla rápida: si el «dos» **cuenta cosas o personas** y va solo, es **两**. Si es una cifra o forma parte de una cifra (12, 20, 22, 32…), es **二**: 十**二**个学生, 二十**二**个汉字.\n\nRecuerda: el número + clasificador + nombre van juntos en el **objeto**.",
+      "focus": ["object"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "verb1": { "zh": "有", "py": "yǒu" }, "object": { "zh": "两个问题", "py": "liǎng ge wèntí" } }, "end": "。", "es": "Tengo dos preguntas.", "esOrder": [{ "text": "Tengo", "slot": "verb1" }, { "text": "dos preguntas", "slot": "object" }] },
+        { "slots": { "subject": { "zh": "我们班", "py": "wǒmen bān" }, "verb1": { "zh": "有", "py": "yǒu" }, "object": { "zh": "十二个学生", "py": "shí'èr ge xuésheng" } }, "end": "。", "es": "En nuestra clase hay doce alumnos (lit. «nuestra clase tiene…»)." },
+        { "slots": { "subject": { "zh": "王老师", "py": "Wáng lǎoshī" }, "verb1": { "zh": "写", "py": "xiě" }, "object": { "zh": "两个汉字", "py": "liǎng ge Hànzì" } }, "end": "。", "es": "La profesora Wang escribe dos caracteres." },
+        { "slots": { "subject": { "zh": "明明", "py": "Míngming" }, "adverb": { "zh": "不", "py": "bú" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "两岁", "py": "liǎng suì" } }, "end": "。", "es": "Mingming no tiene dos años." },
+        { "slots": { "subject": { "zh": "安娜", "py": "Ānnà" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "二号", "py": "èr hào" } }, "end": "。", "es": "Anna es la número dos." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "不", "py": "bù" }, "verb1": { "zh": "记", "py": "jì" }, "object": { "zh": "二十二个汉字", "py": "èrshí'èr ge Hànzì" } }, "end": "。", "es": "No me apunto veintidós caracteres." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "有", "py": "yǒu" }, "object": { "zh": "几个问题", "py": "jǐ ge wèntí" } }, "end": "？", "es": "¿Cuántas preguntas tienes?" },
+        { "slots": { "subject": { "zh": "你们班", "py": "nǐmen bān" }, "verb1": { "zh": "有", "py": "yǒu" }, "object": { "zh": "两个西班牙学生", "py": "liǎng ge Xībānyá xuésheng" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿En vuestra clase hay dos alumnos españoles?" }
+      ],
+      "mistakes": [
+        { "wrong": "我有二个问题。", "right": "我有两个问题。", "why": "Con clasificador, «dos» es 两." },
+        { "wrong": "我们班有十两个学生。", "right": "我们班有十二个学生。", "why": "Dentro de un número (12) siempre 二, aunque detrás venga clasificador." },
+        { "wrong": "两十", "right": "二十", "why": "Las decenas se forman con 二: 二十 (20)." },
+        { "wrong": "我有两问题。", "right": "我有两个问题。", "why": "两, igual que 几, necesita clasificador delante del nombre." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Dos preguntas",
+      "lines": [
+        { "speaker": "王老师", "zh": "同学们，请看。这是两个汉字。请写！", "py": "Tóngxuémen, qǐng kàn. Zhè shì liǎng ge Hànzì. Qǐng xiě!", "es": "Chicos, mirad. Estos son dos caracteres. ¡Escribidlos!" },
+        { "speaker": "雨果", "zh": "老师，我有两个问题。", "py": "Lǎoshī, wǒ yǒu liǎng ge wèntí.", "es": "Profesora, tengo dos preguntas." },
+        { "speaker": "王老师", "zh": "请等一下。……好，你问。", "py": "Qǐng děng yíxià. … Hǎo, nǐ wèn.", "es": "Espera un momento. … Bueno, pregunta." },
+        { "speaker": "雨果", "zh": "我们班有多少学生？", "py": "Wǒmen bān yǒu duōshao xuésheng?", "es": "¿Cuántos alumnos hay en nuestra clase?" },
+        { "speaker": "王老师", "zh": "我们班有十二个学生：两个西班牙学生，两个美国学生……", "py": "Wǒmen bān yǒu shí'èr ge xuésheng: liǎng ge Xībānyá xuésheng, liǎng ge Měiguó xuésheng…", "es": "En nuestra clase hay doce alumnos: dos españoles, dos estadounidenses…" },
+        { "speaker": "雨果", "zh": "我们有几个中国同学？", "py": "Wǒmen yǒu jǐ ge Zhōngguó tóngxué?", "es": "¿Y cuántos compañeros chinos tenemos?" },
+        { "speaker": "王老师", "zh": "八个。你知道了吗？", "py": "Bā ge. Nǐ zhīdào le ma?", "es": "Ocho. ¿Ya lo sabes?" },
+        { "speaker": "雨果", "zh": "对，谢谢老师！我记住了。", "py": "Duì, xièxie lǎoshī! Wǒ jìzhu le.", "es": "Sí, ¡gracias, profesora! Ya me lo sé." }
+      ],
+      "notes": "En clase oirás sin parar 请看 (mirad), 请听 (escuchad), 请读 (leed), 请写 (escribid) y 请记住 (aprendéoslo). 我记住了 es la respuesta para decir «ya lo tengo»."
+    },
+    { "type": "exercises", "count": 15, "bank": ["g-numbers", "g-measure-words", "u02"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "我" }, "verb1": { "zh": "有" }, "object": { "zh": "两个问题" } }, "end": "。", "es": "Tengo dos preguntas." }, "distractors": ["二个问题"] },
+        { "sentence": { "slots": { "subject": { "zh": "我们班" }, "verb1": { "zh": "有" }, "object": { "zh": "十二个学生" } }, "end": "。", "es": "En nuestra clase hay doce alumnos." }, "distractors": ["十两个学生"] },
+        { "sentence": { "slots": { "subject": { "zh": "你们班" }, "verb1": { "zh": "有" }, "object": { "zh": "几个美国学生" } }, "end": "？", "es": "¿Cuántos alumnos estadounidenses hay en vuestra clase?" }, "distractors": ["吗"] },
+        { "sentence": { "slots": { "subject": { "zh": "大卫" }, "adverb": { "zh": "也" }, "verb1": { "zh": "写" }, "object": { "zh": "二十二个汉字" } }, "end": "。", "es": "David también escribe veintidós caracteres." }, "distractors": ["两十两"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "我有两个问题。", "py": "Wǒ yǒu liǎng ge wèntí.", "es": "Tengo dos preguntas." },
+        { "zh": "我们班有十二个学生。", "py": "Wǒmen bān yǒu shí'èr ge xuésheng.", "es": "En nuestra clase hay doce alumnos." },
+        { "zh": "请等一下！", "py": "Qǐng děng yíxià!", "es": "¡Un momento, por favor!" },
+        { "zh": "我记住了。", "py": "Wǒ jìzhu le.", "es": "Ya me lo sé." }
+      ],
+      "respond": [
+        { "q": { "zh": "你们班有多少学生？", "py": "Nǐmen bān yǒu duōshao xuésheng?", "es": "¿Cuántos alumnos hay en vuestra clase?" }, "model": { "zh": "我们班有二十二个学生。", "py": "Wǒmen bān yǒu èrshí'èr ge xuésheng.", "es": "En nuestra clase hay veintidós alumnos." } },
+        { "q": { "zh": "你有几个问题？", "py": "Nǐ yǒu jǐ ge wèntí?", "es": "¿Cuántas preguntas tienes?" }, "model": { "zh": "我有两个问题。", "py": "Wǒ yǒu liǎng ge wèntí.", "es": "Tengo dos preguntas." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Nuestra clase",
+      "text": "我们班有十二个学生：两个西班牙学生，两个美国学生，八个中国学生。王老师写两个汉字：“二”、“两”。雨果问两个问题，王老师回答。雨果说：“我记住了！”",
+      "es": "En nuestra clase hay doce alumnos: dos españoles, dos estadounidenses y ocho chinos. La profesora Wang escribe dos caracteres: 二 y 两. Hugo hace dos preguntas y la profesora contesta. Hugo dice: «¡Ya me lo sé!».",
+      "questions": [
+        { "q": "¿Cuántos alumnos chinos hay?", "options": ["8", "2", "12"], "answer": 0 },
+        { "q": "¿Por qué se dice 十二个学生 y no 十两个学生?", "options": ["Dentro de un número siempre va 二", "Porque son personas", "Porque 两 solo es para cosas"], "answer": 0 },
+        { "q": "¿Cuántas preguntas hace Hugo?", "options": ["Dos", "Doce", "Ocho"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

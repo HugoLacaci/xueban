@@ -1,0 +1,142 @@
+{
+  "id": "b1-u07-l1",
+  "title": "Cuanto más…, más…: 越…越…",
+  "zh": "城市越大，人越多",
+  "goal": "Relacionar dos cambios que crecen a la vez con 越…越… (cuanto más…, más…) y hablar del desarrollo de una ciudad.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "发展", "pinyin": "fāzhǎn", "es": "desarrollarse; desarrollo", "note": "经济发展得很快 = la economía se desarrolla muy deprisa." },
+    { "hanzi": "经济", "pinyin": "jīngjì", "es": "economía; económico" },
+    { "hanzi": "发达", "pinyin": "fādá", "es": "desarrollado, avanzado", "note": "发达国家 = país desarrollado." },
+    { "hanzi": "社会", "pinyin": "shèhuì", "es": "sociedad" },
+    { "hanzi": "现代", "pinyin": "xiàndài", "es": "moderno; época moderna" },
+    { "hanzi": "现代化", "pinyin": "xiàndàihuà", "es": "modernización; modernizado", "note": "现代 + 化: «hacer(se) moderno»." },
+    { "hanzi": "化", "pinyin": "huà", "es": "-izar, -ización (sufijo de cambio)", "note": "现代化, 国际化: el sufijo convierte un nombre o adjetivo en un proceso." },
+    { "hanzi": "建设", "pinyin": "jiànshè", "es": "construir (un país, una ciudad); construcción" },
+    { "hanzi": "技术", "pinyin": "jìshù", "es": "técnica, tecnología" },
+    { "hanzi": "科技", "pinyin": "kējì", "es": "ciencia y tecnología", "note": "Abreviatura de 科学技术." },
+    { "hanzi": "增加", "pinyin": "zēngjiā", "es": "aumentar (en número)", "note": "人口增加了 = ha aumentado la población." },
+    { "hanzi": "增长", "pinyin": "zēngzhǎng", "es": "crecer, crecimiento (cifras, economía)" },
+    { "hanzi": "上升", "pinyin": "shàngshēng", "es": "subir, ascender (precios, temperatura, cifras)" }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "城市越大，人越多。", "py": "Chéngshì yuè dà, rén yuè duō.", "es": "Cuanto más grande es la ciudad, más gente hay." },
+        { "zh": "我越学越喜欢汉语。", "py": "Wǒ yuè xué yuè xǐhuan Hànyǔ.", "es": "Cuanto más estudio chino, más me gusta." },
+        { "zh": "经济越发达，房子越贵。", "py": "Jīngjì yuè fādá, fángzi yuè guì.", "es": "Cuanto más desarrollada está la economía, más caras son las casas." }
+      ]
+    },
+    { "type": "vocab", "title": "Una ciudad que crece", "words": ["发展", "经济", "发达", "社会", "现代", "现代化", "化", "建设", "技术", "科技", "增加", "增长", "上升"] },
+    {
+      "type": "phonetics-drill",
+      "title": "El ritmo de 越…越… y las parejas z / zh",
+      "markdown": "**越…越…** se dice en **dos golpes** con una pausa breve en la coma: 城市**越**大，人**越**多. 越 (*yuè*, cuarto tono) es corto y cae; el peso de la frase va en lo que cambia (**大**, **多**). La primera parte termina con la voz **un poco alta**, como en español «cuanto más grande…», y la segunda cae hasta el final.\n\nCuando las dos partes tienen el mismo sujeto no hay pausa: 我越学越喜欢 se dice de un tirón.\n\nPalabras de hoy:\n- **增 zēng** (z: como «ts» sin aire) frente a **长 zhǎng** (zh: lengua doblada): 增长 *zēngzhǎng*.\n- **现代化 xiàndàihuà**: tres cuartos tonos seguidos; no los aplanes, cada uno cae pero el último cae más.\n- **上升 shàngshēng**: dos *sh* retroflejas, cuarto + primero.",
+      "items": [
+        { "audio": "城市越大，人越多。", "prompt": "¿Dónde está la pausa?", "options": ["Después de 大", "Después de 城市", "No hay pausa"], "answer": 0, "explain": "Una pausa por cláusula: 城市越大 | 人越多." },
+        { "audio": "增长", "options": ["zēngzhǎng", "zhēngzǎng", "zēngzǎng"], "answer": 0, "explain": "z sin doblar la lengua + zh retrofleja." },
+        { "audio": "现代化", "options": ["xiàndàihuà", "xiāndàihuā", "xiàndǎihuà"], "answer": 0, "explain": "Tres cuartos tonos." },
+        { "audio": "我越学越喜欢汉语。", "prompt": "¿Qué palabras llevan más peso?", "options": ["学 y 喜欢", "越 y 越", "我 y 汉语"], "answer": 0, "explain": "越 es corto; lo que cambia es lo que se acentúa." },
+        { "audio": "上升", "options": ["shàngshēng", "sàngsēng", "shāngshèng"], "answer": 0 }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["越", "化"],
+      "mnemonics": {
+        "越": "走 (andar, correr) + 戉 (un hacha antigua; da el sonido): correr y pasar por encima de algo, «superar». De ahí 越…越…: cada vez se supera más.",
+        "化": "亻 (persona de pie) + 匕 (una persona del revés): alguien que se da la vuelta y se convierte en otra cosa → transformarse, -izar."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "Cuanto más…, más…: 越 A，越 B",
+      "markdown": "Ya conoces **越来越** (A2): «cada vez más», un solo cambio con el tiempo. Hoy lo partimos en dos: **越 A，越 B** = «cuanto más A, más B». Dos cambios que crecen juntos.\n\n**Convención del esqueleto en B1** (la misma de los conectores de A2): **una fila por cláusula**, y cada **越** va en el hueco *Adverbios* de su cláusula, **detrás del sujeto** y delante del verbo o adjetivo:\n\n> 城市 · **越** · 大 ， / 人 · **越** · 多 。\n\n- **Dos sujetos**: cada uno delante de su 越 (城市越大，人越多). Se separan con coma.\n- **Un solo sujeto**: aparece solo en la primera cláusula y en chino se dice de un tirón, sin coma (我越学越喜欢). En el esqueleto lo dibujamos igualmente en **dos filas** (la primera termina en «，» solo para separarlas).\n- 越 ya es un grado: **sin 很, 非常, 太** detrás (✗ 越很多).\n- Con verbos de grado (V得): 休息**得越多**，好**得越快** (cuanto más descansas, antes te curas).\n- **越来越** no lleva segunda parte: 人越来越多.\n\nEn español decimos «cuanto **más** grande»; en chino no hay «más» aparte: el propio 越 lo dice.",
+      "focus": ["adverb"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "城市", "py": "chéngshì" }, "adverb": { "zh": "越", "py": "yuè" }, "verb1": { "zh": "大", "py": "dà" } }, "end": "，", "es": "Cuanto más grande es la ciudad… (1.ª parte)", "esOrder": [{ "text": "Cuanto más", "slot": "adverb" }, { "text": "grande", "slot": "verb1" }, { "text": "es" }, { "text": "la ciudad", "slot": "subject" }] },
+        { "slots": { "subject": { "zh": "人", "py": "rén" }, "adverb": { "zh": "越", "py": "yuè" }, "verb1": { "zh": "多", "py": "duō" } }, "end": "。", "es": "…más gente hay. (2.ª parte)" },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "越", "py": "yuè" }, "verb1": { "zh": "学", "py": "xué" } }, "end": "，", "es": "Cuanto más estudio… (1.ª parte)" },
+        { "slots": { "adverb": { "zh": "越", "py": "yuè" }, "verb1": { "zh": "喜欢", "py": "xǐhuan" }, "object": { "zh": "汉语", "py": "Hànyǔ" } }, "end": "。", "es": "…más me gusta el chino. (2.ª parte; se dice sin pausa: 我越学越喜欢汉语)" },
+        { "slots": { "subject": { "zh": "经济", "py": "jīngjì" }, "adverb": { "zh": "越", "py": "yuè" }, "verb1": { "zh": "发达", "py": "fādá" } }, "end": "，", "es": "Cuanto más desarrollada está la economía… (1.ª parte)" },
+        { "slots": { "subject": { "zh": "房子", "py": "fángzi" }, "adverb": { "zh": "越", "py": "yuè" }, "verb1": { "zh": "贵", "py": "guì" } }, "end": "。", "es": "…más caras son las casas. (2.ª parte)" },
+        { "slots": { "subject": { "zh": "雨", "py": "yǔ" }, "adverb": { "zh": "越", "py": "yuè" }, "verb1": { "zh": "下", "py": "xià" } }, "end": "，", "es": "La lluvia, cuanto más cae… (1.ª parte)" },
+        { "slots": { "adverb": { "zh": "越", "py": "yuè" }, "verb1": { "zh": "大", "py": "dà" } }, "end": "。", "es": "…más fuerte es: llueve cada vez más fuerte. (2.ª parte)" }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "他", "py": "tā" }, "adverb": { "zh": "越", "py": "yuè" }, "verb1": { "zh": "喝", "py": "hē" }, "object": { "zh": "咖啡", "py": "kāfēi" } }, "end": "，", "es": "Cuanto más café bebe… (1.ª parte)" },
+        { "slots": { "adverb": { "zh": "越不", "py": "yuè bù" }, "aux": { "zh": "想", "py": "xiǎng" }, "verb1": { "zh": "睡觉", "py": "shuìjiào" } }, "end": "。", "es": "…menos ganas tiene de dormir. (2.ª parte: 越 + 不)" }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "adverb": { "zh": "为什么越", "py": "wèi shénme yuè" }, "verb1": { "zh": "学", "py": "xué" } }, "end": "，", "es": "¿Por qué cuanto más estudias… (1.ª parte)" },
+        { "slots": { "adverb": { "zh": "越", "py": "yuè" }, "verb1": { "zh": "喜欢", "py": "xǐhuan" }, "object": { "zh": "汉语", "py": "Hànyǔ" } }, "end": "？", "es": "…más te gusta el chino? (2.ª parte)" }
+      ],
+      "mistakes": [
+        { "wrong": "城市越大，人越很多。", "right": "城市越大，人越多。", "why": "越 ya es el grado: no admite 很, 非常 ni 太 detrás." },
+        { "wrong": "越城市大，越人多。", "right": "城市越大，人越多。", "why": "越 es un adverbio: va detrás del sujeto, nunca delante." },
+        { "wrong": "我越学越更喜欢汉语。", "right": "我越学越喜欢汉语。", "why": "No se combina con 更 ni con 比较: «más» ya está en 越." },
+        { "wrong": "人越来越多，越贵。", "right": "人越多，东西越贵。", "why": "越来越 es un cambio solo, sin segunda parte. Para dos cambios relacionados, 越…越…" }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Shanghái desde arriba",
+      "lines": [
+        { "speaker": "小李", "zh": "雨果，你看，从这儿能看到半个上海！", "py": "Yǔguǒ, nǐ kàn, cóng zhèr néng kàndào bàn ge Shànghǎi!", "es": "Hugo, mira: ¡desde aquí se ve medio Shanghái!" },
+        { "speaker": "雨果", "zh": "真漂亮！这么多高楼，真现代。", "py": "Zhēn piàoliang! Zhème duō gāolóu, zhēn xiàndài.", "es": "¡Qué bonito! Cuántos rascacielos, qué moderno." },
+        { "speaker": "小李", "zh": "我爸爸说，三十年前这儿还没有这么多楼。", "py": "Wǒ bàba shuō, sānshí nián qián zhèr hái méiyǒu zhème duō lóu.", "es": "Mi padre dice que hace treinta años aquí todavía no había tantos edificios." },
+        { "speaker": "雨果", "zh": "上海发展得真快。经济越发达，城市越大。", "py": "Shànghǎi fāzhǎn de zhēn kuài. Jīngjì yuè fādá, chéngshì yuè dà.", "es": "Shanghái se ha desarrollado rapidísimo. Cuanto más desarrollada está la economía, más grande es la ciudad." },
+        { "speaker": "小李", "zh": "对，城市越大，人也越多。这些年人口一直在增加。", "py": "Duì, chéngshì yuè dà, rén yě yuè duō. Zhèxiē nián rénkǒu yìzhí zài zēngjiā.", "es": "Sí, y cuanto más grande es la ciudad, más gente hay. Estos años la población no ha parado de aumentar." },
+        { "speaker": "雨果", "zh": "人越多，房子越贵吧？", "py": "Rén yuè duō, fángzi yuè guì ba?", "es": "Y cuanta más gente, más caras las casas, ¿no?" },
+        { "speaker": "小李", "zh": "是啊，房子的价格每年都在上升。", "py": "Shì a, fángzi de jiàgé měi nián dōu zài shàngshēng.", "es": "Pues sí, el precio de la vivienda sube cada año." },
+        { "speaker": "雨果", "zh": "不过科技也越来越发达，生活方便多了。", "py": "Búguò kējì yě yuèláiyuè fādá, shēnghuó fāngbiàn duō le.", "es": "Pero la tecnología también está cada vez más avanzada, y la vida es mucho más cómoda." },
+        { "speaker": "小李", "zh": "没错。现在买东西、坐地铁，都用手机。", "py": "Méi cuò. Xiànzài mǎi dōngxi, zuò dìtiě, dōu yòng shǒujī.", "es": "Exacto. Ahora para comprar o coger el metro, todo con el móvil." },
+        { "speaker": "雨果", "zh": "我刚来的时候不习惯，可是越用越觉得方便。", "py": "Wǒ gāng lái de shíhou bù xíguàn, kěshì yuè yòng yuè juéde fāngbiàn.", "es": "Cuando llegué no estaba acostumbrado, pero cuanto más lo uso, más práctico me parece." },
+        { "speaker": "小李", "zh": "中国的社会变化很大，你越住越会发现。", "py": "Zhōngguó de shèhuì biànhuà hěn dà, nǐ yuè zhù yuè huì fāxiàn.", "es": "La sociedad china ha cambiado mucho; cuanto más tiempo vivas aquí, más lo notarás." },
+        { "speaker": "雨果", "zh": "那我得多住几年了！", "py": "Nà wǒ děi duō zhù jǐ nián le!", "es": "¡Pues tendré que quedarme unos cuantos años más!" }
+      ],
+      "notes": "我越学越喜欢 y 越用越觉得方便: con el mismo sujeto se dice de un tirón. 越来越 (cada vez más) y 越…越… (cuanto más…, más…) conviven en la misma conversación: el primero es un cambio en el tiempo; el segundo, dos cambios unidos. 得 en 我得多住几年 se lee **děi** («tener que»)."
+    },
+    { "type": "exercises", "count": 16, "bank": ["g-word-order", "g-hen-adj", "g-complements"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "城市" }, "adverb": { "zh": "越" }, "verb1": { "zh": "大" } }, "end": "，", "es": "Cuanto más grande es la ciudad… (1.ª parte)" }, "distractors": ["很"] },
+        { "sentence": { "slots": { "subject": { "zh": "我" }, "adverb": { "zh": "越" }, "verb1": { "zh": "用" }, "object": { "zh": "手机支付" } }, "end": "，", "es": "Cuanto más uso el pago con el móvil… (1.ª parte)" }, "distractors": ["越来越"] },
+        { "sentence": { "slots": { "adverb": { "zh": "越" }, "verb1": { "zh": "觉得" }, "object": { "zh": "方便" } }, "end": "。", "es": "…más práctico me parece. (2.ª parte)" }, "distractors": ["更"] },
+        { "sentence": { "slots": { "time0": { "zh": "这些年" }, "subject": { "zh": "上海的经济" }, "adverb": { "zh": "一直" }, "verb1": { "zh": "发展得" }, "complement": { "zh": "非常快" } }, "end": "。", "es": "Estos años la economía de Shanghái se ha desarrollado muy deprisa." } },
+        { "sentence": { "slots": { "subject": { "zh": "住在上海的外国人" }, "adverb": { "zh": "越" }, "verb1": { "zh": "多" } }, "end": "，", "es": "Cuantos más extranjeros viven en Shanghái… (1.ª parte)" } },
+        { "sentence": { "slots": { "subject": { "zh": "学汉语的人" }, "adverb": { "zh": "也越" }, "verb1": { "zh": "多" } }, "end": "。", "es": "…más gente estudia chino también. (2.ª parte)" } }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "城市越大，人越多。", "py": "Chéngshì yuè dà, rén yuè duō.", "es": "Cuanto más grande es la ciudad, más gente hay." },
+        { "zh": "我越学越喜欢汉语。", "py": "Wǒ yuè xué yuè xǐhuan Hànyǔ.", "es": "Cuanto más estudio chino, más me gusta." },
+        { "zh": "房子的价格每年都在上升。", "py": "Fángzi de jiàgé měi nián dōu zài shàngshēng.", "es": "El precio de la vivienda sube cada año." },
+        { "zh": "上海的经济发展得很快。", "py": "Shànghǎi de jīngjì fāzhǎn de hěn kuài.", "es": "La economía de Shanghái se desarrolla muy deprisa." }
+      ],
+      "respond": [
+        { "q": { "zh": "你越学汉语越喜欢吗？", "py": "Nǐ yuè xué Hànyǔ yuè xǐhuan ma?", "es": "¿Cuanto más estudias chino, más te gusta?" }, "model": { "zh": "对，我越学越喜欢，越学越觉得有意思。", "py": "Duì, wǒ yuè xué yuè xǐhuan, yuè xué yuè juéde yǒu yìsi.", "es": "Sí, cuanto más lo estudio, más me gusta y más interesante me parece." } },
+        { "q": { "zh": "你觉得城市越大越好吗？", "py": "Nǐ juéde chéngshì yuè dà yuè hǎo ma?", "es": "¿Crees que cuanto más grande la ciudad, mejor?" }, "model": { "zh": "不一定。城市越大，生活越方便，可是房子也越贵。", "py": "Bù yídìng. Chéngshì yuè dà, shēnghuó yuè fāngbiàn, kěshì fángzi yě yuè guì.", "es": "No necesariamente. Cuanto más grande, más cómoda es la vida, pero también más caras las casas." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Una ciudad que no para",
+      "text": "三十年前，上海没有这么多高楼，也没有这么多地铁。这些年，上海的经济发展得非常快，现在已经是一个很现代的大城市了。城市越发达，来这儿工作和学习的人越多，人口一直在增加。人越多，房子越贵，房子的价格差不多每年都在上升。不过，科技的发展也让生活越来越方便：买东西、坐地铁、叫外卖，都可以用手机。小李说，中国的社会变化很大，很多地方都在建设，都在现代化。雨果刚来的时候，觉得用手机付钱不太习惯，可是他越用越觉得方便。现在，他出门的时候连钱包都不带了。他说：“在上海住得越久，我越喜欢这个城市。”",
+      "es": "Hace treinta años Shanghái no tenía tantos rascacielos ni tantas líneas de metro. Estos años su economía se ha desarrollado muy deprisa, y ahora ya es una gran ciudad muy moderna. Cuanto más desarrollada está la ciudad, más gente viene a trabajar y a estudiar, y la población no para de aumentar. Cuanta más gente, más caras las casas: el precio de la vivienda sube casi todos los años. Pero el desarrollo tecnológico también hace la vida cada vez más cómoda: comprar, coger el metro o pedir comida a domicilio se hace con el móvil. Xiao Li dice que la sociedad china ha cambiado mucho y que en muchos sitios se está construyendo y modernizando. Cuando Hugo llegó, no se acostumbraba a pagar con el móvil, pero cuanto más lo usa, más práctico le parece. Ahora, cuando sale, ya ni siquiera lleva la cartera. Dice: «Cuanto más tiempo vivo en Shanghái, más me gusta esta ciudad».",
+      "questions": [
+        { "q": "¿Qué pasa con el precio de la vivienda?", "options": ["差不多每年都在上升", "越来越便宜", "三十年没变"], "answer": 0 },
+        { "q": "¿Por qué hay cada vez más gente en Shanghái?", "options": ["Porque la ciudad está cada vez más desarrollada", "Porque las casas son baratas", "Porque hay pocos rascacielos"], "answer": 0 },
+        { "q": "¿Qué ya no lleva Hugo cuando sale?", "options": ["钱包", "手机", "地铁卡"], "answer": 0 },
+        { "q": "¿Qué significa 在上海住得越久，我越喜欢这个城市?", "options": ["Cuanto más tiempo vivo en Shanghái, más me gusta", "Cada vez vivo más lejos de Shanghái", "Me gusta Shanghái, pero no quiero quedarme"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

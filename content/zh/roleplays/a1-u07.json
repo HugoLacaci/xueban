@@ -1,0 +1,234 @@
+{
+  "unitId": "a1-u07",
+  "scenarios": [
+    {
+      "id": "a1-u07-morning",
+      "title": "Por la mañana, antes de clase",
+      "zh": "你每天几点起床？",
+      "level": 1,
+      "setting": "Hugo y Ana se encuentran en la puerta del aula a las ocho y cuarto. Ana tiene curiosidad por su rutina. Tú (la app) eres 安娜.",
+      "role": "Ana",
+      "roleZh": "安娜",
+      "voice": "f",
+      "goals": ["Decir a qué hora te levantas", "Decir si desayunas y en qué orden haces las cosas", "Decir a qué hora vas a clase y si vas en coche", "Preguntar a Ana por su mañana"],
+      "vocab": ["起床", "洗澡", "早饭", "先", "然后", "上课", "坐车", "每天"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "雨果，早上好！你每天几点起床？", "py": "Yǔguǒ, zǎoshang hǎo! Nǐ měi tiān jǐ diǎn qǐchuáng?", "es": "¡Buenos días, Hugo! ¿A qué hora te levantas cada día?" },
+          "user": [
+            { "zh": "我七点起床。", "py": "Wǒ qī diǎn qǐchuáng.", "es": "Me levanto a las siete.", "keywords": ["七点", "起床"], "next": "n2", "goal": 0 },
+            { "zh": "我六点半起床。", "py": "Wǒ liù diǎn bàn qǐchuáng.", "es": "Me levanto a las seis y media.", "keywords": ["六点半", "起床"], "next": "n2", "goal": 0 },
+            { "zh": "我九点起床，今天上午没有课。", "py": "Wǒ jiǔ diǎn qǐchuáng, jīntiān shàngwǔ méiyǒu kè.", "es": "Me levanto a las nueve: hoy por la mañana no tengo clase.", "keywords": ["九点", "没有课"], "next": "n3", "goal": 0 }
+          ],
+          "hint": "La hora va antes del verbo: 我 + hora + 起床 (我七点起床)."
+        },
+        "n2": {
+          "npc": { "zh": "你早上吃早饭吗？", "py": "Nǐ zǎoshang chī zǎofàn ma?", "es": "¿Desayunas por la mañana?" },
+          "user": [
+            { "zh": "吃，我先洗澡，然后吃早饭。", "py": "Chī, wǒ xiān xǐzǎo, ránhòu chī zǎofàn.", "es": "Sí: primero me ducho y luego desayuno.", "keywords": ["先", "然后", "早饭"], "next": "n4", "goal": 1 },
+            { "zh": "不吃，我早上没有时间。", "py": "Bù chī, wǒ zǎoshang méiyǒu shíjiān.", "es": "No, por la mañana no tengo tiempo.", "keywords": ["不吃", "没有时间"], "next": "n4b", "goal": 1 }
+          ],
+          "hint": "Contesta con el verbo (吃 / 不吃) y, si puedes, ordena las acciones con 先…然后…"
+        },
+        "n3": {
+          "npc": { "zh": "九点！那你今天吃早饭吗？", "py": "Jiǔ diǎn! Nà nǐ jīntiān chī zǎofàn ma?", "es": "¡A las nueve! ¿Y hoy desayunas?" },
+          "user": [
+            { "zh": "吃，我九点半吃早饭。", "py": "Chī, wǒ jiǔ diǎn bàn chī zǎofàn.", "es": "Sí, desayuno a las nueve y media.", "keywords": ["九点半", "早饭"], "next": "n4", "goal": 1 },
+            { "zh": "不吃，我中午去食堂吃午饭。", "py": "Bù chī, wǒ zhōngwǔ qù shítáng chī wǔfàn.", "es": "No, al mediodía voy al comedor a comer.", "keywords": ["食堂", "午饭"], "next": "n4b", "goal": 1 }
+          ],
+          "hint": "吃 / 不吃 + la hora. Para «ir a comer al comedor»: 去食堂吃午饭."
+        },
+        "n4": {
+          "npc": { "zh": "你几点去学校？坐车去吗？", "py": "Nǐ jǐ diǎn qù xuéxiào? Zuò chē qù ma?", "es": "¿A qué hora vas a la universidad? ¿Vas en coche?" },
+          "user": [
+            { "zh": "八点。我坐车去学校。", "py": "Bā diǎn. Wǒ zuò chē qù xuéxiào.", "es": "A las ocho. Voy en coche.", "keywords": ["坐车", "八点"], "next": "n5", "goal": 2 },
+            { "zh": "八点半去学校，我不坐车。", "py": "Bā diǎn bàn qù xuéxiào, wǒ bú zuò chē.", "es": "Voy a las ocho y media; no voy en coche.", "keywords": ["八点半", "不坐车"], "next": "n5", "goal": 2 }
+          ],
+          "hint": "Primero el medio, luego el destino: 坐车去学校."
+        },
+        "n4b": {
+          "npc": { "zh": "不吃早饭不好！你几点去学校上课？", "py": "Bù chī zǎofàn bù hǎo! Nǐ jǐ diǎn qù xuéxiào shàngkè?", "es": "¡No desayunar no es bueno! ¿A qué hora vas a clase?" },
+          "user": [
+            { "zh": "我八点去学校上课。", "py": "Wǒ bā diǎn qù xuéxiào shàngkè.", "es": "Voy a clase a las ocho.", "keywords": ["上课", "八点"], "next": "n5", "goal": 2 },
+            { "zh": "我十点上课，我坐车去。", "py": "Wǒ shí diǎn shàngkè, wǒ zuò chē qù.", "es": "Tengo clase a las diez; voy en coche.", "keywords": ["十点", "坐车"], "next": "n5", "goal": 2 }
+          ],
+          "hint": "Hora + 去学校 + 上课: dos verbos en el orden en que pasan."
+        },
+        "n5": {
+          "npc": { "zh": "我九点上课。", "py": "Wǒ jiǔ diǎn shàngkè.", "es": "Yo tengo clase a las nueve." },
+          "user": [
+            { "zh": "安娜，你每天几点起床？", "py": "Ānnà, nǐ měi tiān jǐ diǎn qǐchuáng?", "es": "Ana, ¿a qué hora te levantas tú cada día?", "keywords": ["几点", "起床"], "next": "n6", "goal": 3 },
+            { "zh": "你吃早饭吗？", "py": "Nǐ chī zǎofàn ma?", "es": "¿Tú desayunas?", "keywords": ["早饭"], "next": "n6b", "goal": 3 }
+          ],
+          "hint": "Ahora pregúntale tú: 你几点起床？ / 你吃早饭吗？"
+        },
+        "n6": {
+          "npc": { "zh": "我七点半起床，先吃早饭，然后坐车来学校。", "py": "Wǒ qī diǎn bàn qǐchuáng, xiān chī zǎofàn, ránhòu zuò chē lái xuéxiào.", "es": "Me levanto a las siete y media, primero desayuno y luego vengo a la universidad en coche." },
+          "user": [
+            { "zh": "你也每天都吃早饭！", "py": "Nǐ yě měi tiān dōu chī zǎofàn!", "es": "¡Tú también desayunas todos los días!", "keywords": ["每天", "早饭"], "next": "n7" },
+            { "zh": "现在八点半，我们去上课！", "py": "Xiànzài bā diǎn bàn, wǒmen qù shàngkè!", "es": "Son las ocho y media: ¡vamos a clase!", "keywords": ["上课", "现在"], "next": "n7" }
+          ],
+          "hint": "Comenta su rutina (每天都…) o cierra: 我们去上课！"
+        },
+        "n6b": {
+          "npc": { "zh": "我不常吃早饭。有时候我十一点半去食堂吃午饭。", "py": "Wǒ bù cháng chī zǎofàn. Yǒu shíhou wǒ shíyī diǎn bàn qù shítáng chī wǔfàn.", "es": "No suelo desayunar. A veces voy al comedor a comer a las once y media." },
+          "user": [
+            { "zh": "现在八点半，我们去上课！", "py": "Xiànzài bā diǎn bàn, wǒmen qù shàngkè!", "es": "Son las ocho y media: ¡vamos a clase!", "keywords": ["上课", "现在"], "next": "n7" },
+            { "zh": "你几点起床？", "py": "Nǐ jǐ diǎn qǐchuáng?", "es": "¿A qué hora te levantas?", "keywords": ["起床"], "next": "n6", "goal": 3 }
+          ],
+          "hint": "Sigue preguntando (你几点起床？) o id a clase (我们去上课！)."
+        },
+        "n7": {
+          "npc": { "zh": "好，我们去上课！", "py": "Hǎo, wǒmen qù shàngkè!", "es": "¡Vale, vamos a clase!" },
+          "end": true,
+          "feedback": "Has contado tu mañana con la hora delante del verbo (七点起床), has ordenado las acciones con 先…然后… y has usado dos verbos seguidos (坐车去学校, 去学校上课). Además has preguntado a Ana por su rutina."
+        }
+      }
+    },
+    {
+      "id": "a1-u07-schedule",
+      "title": "El horario de Xiao Li",
+      "zh": "小李的一天",
+      "level": 1,
+      "setting": "Hugo quiere cenar un día con Xiao Li, su compañero chino de residencia, pero Xiao Li trabaja por las tardes. Le pregunta por su horario para encontrar un hueco. Tú (la app) eres 小李.",
+      "role": "Xiao Li",
+      "roleZh": "小李",
+      "voice": "m",
+      "goals": ["Preguntar a qué hora entra y sale del trabajo", "Preguntar cuándo come", "Preguntar qué hace por la noche", "Proponer un momento para cenar juntos"],
+      "vocab": ["上班", "下班", "午饭", "午睡", "晚饭", "回到", "做饭", "有时候"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "雨果，什么事？", "py": "Yǔguǒ, shénme shì?", "es": "Hugo, ¿qué pasa?" },
+          "user": [
+            { "zh": "小李，你每天几点上班？", "py": "Xiǎo Lǐ, nǐ měi tiān jǐ diǎn shàngbān?", "es": "Xiao Li, ¿a qué hora entras a trabajar cada día?", "keywords": ["上班"], "next": "n2", "goal": 0 },
+            { "zh": "你中午几点吃午饭？", "py": "Nǐ zhōngwǔ jǐ diǎn chī wǔfàn?", "es": "¿A qué hora comes al mediodía?", "keywords": ["午饭", "中午"], "next": "n3", "goal": 1 }
+          ],
+          "hint": "Pregunta por su horario: 几点上班？ o 几点吃午饭？"
+        },
+        "n2": {
+          "npc": { "zh": "我下午两点上班，六点下班。每天都工作。", "py": "Wǒ xiàwǔ liǎng diǎn shàngbān, liù diǎn xiàbān. Měi tiān dōu gōngzuò.", "es": "Entro a las dos de la tarde y salgo a las seis. Trabajo todos los días." },
+          "user": [
+            { "zh": "中午呢？你几点吃午饭？", "py": "Zhōngwǔ ne? Nǐ jǐ diǎn chī wǔfàn?", "es": "¿Y al mediodía? ¿A qué hora comes?", "keywords": ["午饭", "中午"], "next": "n3", "goal": 1 },
+            { "zh": "你晚上做什么？", "py": "Nǐ wǎnshang zuò shénme?", "es": "¿Qué haces por la noche?", "keywords": ["晚上", "做什么"], "next": "n4", "goal": 2 }
+          ],
+          "hint": "Pregunta por el mediodía (中午呢？) o por la noche (晚上做什么？)."
+        },
+        "n3": {
+          "npc": { "zh": "十二点吃午饭，然后午睡，一点半去工作。", "py": "Shí'èr diǎn chī wǔfàn, ránhòu wǔshuì, yī diǎn bàn qù gōngzuò.", "es": "Como a las doce, luego me echo la siesta y a la una y media voy a trabajar." },
+          "user": [
+            { "zh": "你常常午睡吗？", "py": "Nǐ chángcháng wǔshuì ma?", "es": "¿Te echas la siesta a menudo?", "keywords": ["午睡", "常常"], "next": "n3b" },
+            { "zh": "你晚上做什么？", "py": "Nǐ wǎnshang zuò shénme?", "es": "¿Qué haces por la noche?", "keywords": ["晚上", "做什么"], "next": "n4", "goal": 2 }
+          ],
+          "hint": "Pregunta por la siesta (常常午睡吗？) o por la noche."
+        },
+        "n3b": {
+          "npc": { "zh": "对，中国人常午睡。你不午睡吗？", "py": "Duì, Zhōngguó rén cháng wǔshuì. Nǐ bù wǔshuì ma?", "es": "Sí, los chinos solemos echarnos la siesta. ¿Tú no?" },
+          "user": [
+            { "zh": "不午睡。你晚上做什么？", "py": "Bù wǔshuì. Nǐ wǎnshang zuò shénme?", "es": "No. ¿Qué haces por la noche?", "keywords": ["不午睡", "晚上"], "next": "n4", "goal": 2 },
+            { "zh": "我有时候午睡。你晚上做什么？", "py": "Wǒ yǒu shíhou wǔshuì. Nǐ wǎnshang zuò shénme?", "es": "A veces. ¿Qué haces por la noche?", "keywords": ["有时候", "晚上"], "next": "n4", "goal": 2 }
+          ],
+          "hint": "Contesta (不午睡 / 有时候午睡) y pregunta por la noche."
+        },
+        "n4": {
+          "npc": { "zh": "我六点半回到家，先做饭，然后学习英语，十一点睡觉。", "py": "Wǒ liù diǎn bàn huídào jiā, xiān zuòfàn, ránhòu xuéxí Yīngyǔ, shíyī diǎn shuìjiào.", "es": "Llego a casa a las seis y media; primero cocino, luego estudio inglés y me acuesto a las once." },
+          "user": [
+            { "zh": "你每天都做饭？", "py": "Nǐ měi tiān dōu zuòfàn?", "es": "¿Cocinas todos los días?", "keywords": ["每天", "做饭"], "next": "n4b" },
+            { "zh": "晚上我们一起去食堂吃晚饭，好吗？", "py": "Wǎnshang wǒmen yìqǐ qù shítáng chī wǎnfàn, hǎo ma?", "es": "¿Vamos una noche juntos al comedor a cenar?", "keywords": ["一起", "晚饭"], "next": "n5", "goal": 3 }
+          ],
+          "hint": "Comenta lo de cocinar (每天都做饭？) o propón cenar juntos: …一起去食堂吃晚饭，好吗？"
+        },
+        "n4b": {
+          "npc": { "zh": "有时候做，有时候去食堂吃。", "py": "Yǒu shíhou zuò, yǒu shíhou qù shítáng chī.", "es": "Unas veces cocino y otras voy a cenar al comedor." },
+          "user": [
+            { "zh": "星期六晚上我们一起去食堂吃饭，好吗？", "py": "Xīngqīliù wǎnshang wǒmen yìqǐ qù shítáng chīfàn, hǎo ma?", "es": "¿Vamos juntos al comedor a cenar el sábado por la noche?", "keywords": ["星期六", "一起"], "next": "n5", "goal": 3 },
+            { "zh": "那明天晚上你来我家吃饭，好吗？", "py": "Nà míngtiān wǎnshang nǐ lái wǒ jiā chīfàn, hǎo ma?", "es": "Entonces, ¿vienes mañana por la noche a mi casa a cenar?", "keywords": ["来我家", "明天"], "next": "n5", "goal": 3 }
+          ],
+          "hint": "Propón un día: 星期六晚上… / 明天晚上你来我家吃饭，好吗？"
+        },
+        "n5": {
+          "npc": { "zh": "好！我六点下班，七点去。", "py": "Hǎo! Wǒ liù diǎn xiàbān, qī diǎn qù.", "es": "¡Vale! Salgo a las seis y voy a las siete." },
+          "user": [
+            { "zh": "好，七点见！", "py": "Hǎo, qī diǎn jiàn!", "es": "¡Vale, nos vemos a las siete!", "keywords": ["七点", "见"], "next": "n6" },
+            { "zh": "好，明天见！", "py": "Hǎo, míngtiān jiàn!", "es": "¡Vale, hasta mañana!", "keywords": ["明天见"], "next": "n6" }
+          ],
+          "hint": "Cierra el plan: 七点见！ / 明天见！"
+        },
+        "n6": {
+          "npc": { "zh": "再见！", "py": "Zàijiàn!", "es": "¡Hasta luego!" },
+          "end": true,
+          "feedback": "Has recorrido el día de Xiao Li (上班 / 下班, 午饭, 午睡, 回到家) y habéis quedado para cenar. 去食堂吃晚饭 y 来我家吃饭 son verbos en serie: primero el desplazamiento, luego la acción."
+        }
+      }
+    },
+    {
+      "id": "a1-u07-study",
+      "title": "La profesora pregunta por tu rutina",
+      "zh": "你每天学习汉语吗？",
+      "level": 1,
+      "setting": "Al terminar la clase, la profesora Wang pide a Hugo que se quede un momento: le ve cansado y quiere saber cómo organiza el día. Tú (la app) eres 王老师.",
+      "role": "profesora Wang",
+      "roleZh": "王老师",
+      "voice": "f",
+      "goals": ["Decir cuándo estudias chino", "Decir a qué hora te acuestas y te levantas", "Contar qué haces por la tarde o por la noche", "Aceptar o negociar el consejo de la profesora"],
+      "vocab": ["学习", "汉语", "睡觉", "起床", "下午", "晚上", "有时候", "休息"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "雨果，你每天学习汉语吗？", "py": "Yǔguǒ, nǐ měi tiān xuéxí Hànyǔ ma?", "es": "Hugo, ¿estudias chino todos los días?" },
+          "user": [
+            { "zh": "学习，我每天下午学习汉语。", "py": "Xuéxí, wǒ měi tiān xiàwǔ xuéxí Hànyǔ.", "es": "Sí, estudio chino todas las tardes.", "keywords": ["每天", "下午"], "next": "n2", "goal": 0 },
+            { "zh": "我不常学习，下午我常常工作。", "py": "Wǒ bù cháng xuéxí, xiàwǔ wǒ chángcháng gōngzuò.", "es": "No mucho: por la tarde suelo trabajar.", "keywords": ["不常", "工作"], "next": "n3", "goal": 0 }
+          ],
+          "hint": "Di cuándo estudias: 每天 + momento del día + 学习汉语. La negativa de 常常 es 不常."
+        },
+        "n2": {
+          "npc": { "zh": "好！你晚上几点睡觉？", "py": "Hǎo! Nǐ wǎnshang jǐ diǎn shuìjiào?", "es": "¡Bien! ¿A qué hora te acuestas?" },
+          "user": [
+            { "zh": "我晚上十二点半睡觉，七点起床。", "py": "Wǒ wǎnshang shí'èr diǎn bàn shuìjiào, qī diǎn qǐchuáng.", "es": "Me acuesto a las doce y media y me levanto a las siete.", "keywords": ["十二点半", "七点"], "next": "n4", "goal": 1 },
+            { "zh": "我十一点睡，七点起床。", "py": "Wǒ shíyī diǎn shuì, qī diǎn qǐchuáng.", "es": "A las once, y me levanto a las siete.", "keywords": ["十一点", "七点"], "next": "n5", "goal": 1 }
+          ],
+          "hint": "Hora + 睡觉 (o solo 睡), hora + 起床."
+        },
+        "n3": {
+          "npc": { "zh": "你下午工作？晚上做什么？", "py": "Nǐ xiàwǔ gōngzuò? Wǎnshang zuò shénme?", "es": "¿Trabajas por la tarde? ¿Y qué haces por la noche?" },
+          "user": [
+            { "zh": "晚上我回家做饭，然后洗澡、睡觉。", "py": "Wǎnshang wǒ huí jiā zuòfàn, ránhòu xǐzǎo, shuìjiào.", "es": "Por la noche vuelvo a casa a cocinar, y luego me ducho y me acuesto.", "keywords": ["回家", "然后"], "next": "n6", "goal": 2 },
+            { "zh": "晚上我和朋友去吃饭。", "py": "Wǎnshang wǒ hé péngyou qù chīfàn.", "es": "Por la noche voy a cenar con amigos.", "keywords": ["朋友", "吃饭"], "next": "n6", "goal": 2 }
+          ],
+          "hint": "Cuenta tu noche: 晚上我 + 回家 / 去 + verbo, …然后…"
+        },
+        "n4": {
+          "npc": { "zh": "十二点半太晚了！你晚上做什么？", "py": "Shí'èr diǎn bàn tài wǎn le! Nǐ wǎnshang zuò shénme?", "es": "¡Las doce y media es demasiado tarde! ¿Qué haces por la noche?" },
+          "user": [
+            { "zh": "我晚上学习汉语，有时候去看朋友。", "py": "Wǒ wǎnshang xuéxí Hànyǔ, yǒu shíhou qù kàn péngyou.", "es": "Por la noche estudio chino y a veces voy a ver a amigos.", "keywords": ["有时候", "朋友"], "next": "n6", "goal": 2 },
+            { "zh": "我先做饭，然后学习汉语。", "py": "Wǒ xiān zuòfàn, ránhòu xuéxí Hànyǔ.", "es": "Primero cocino y luego estudio chino.", "keywords": ["先", "然后"], "next": "n6", "goal": 2 }
+          ],
+          "hint": "Describe tu noche con 先…然后… o 有时候…"
+        },
+        "n5": {
+          "npc": { "zh": "好，早睡早起。你下午做什么？", "py": "Hǎo, zǎo shuì zǎo qǐ. Nǐ xiàwǔ zuò shénme?", "es": "Bien: te acuestas y te levantas pronto. ¿Qué haces por la tarde?" },
+          "user": [
+            { "zh": "下午我去学校学习汉语。", "py": "Xiàwǔ wǒ qù xuéxiào xuéxí Hànyǔ.", "es": "Por la tarde voy a la universidad a estudiar chino.", "keywords": ["去学校", "学习"], "next": "n6", "goal": 2 },
+            { "zh": "下午我常常休息。", "py": "Xiàwǔ wǒ chángcháng xiūxi.", "es": "Por la tarde suelo descansar.", "keywords": ["休息", "常常"], "next": "n6", "goal": 2 }
+          ],
+          "hint": "下午我 + actividad. Recuerda: 去 + lugar + verbo."
+        },
+        "n6": {
+          "npc": { "zh": "你每天早上七点起床，然后学习汉语，好吗？", "py": "Nǐ měi tiān zǎoshang qī diǎn qǐchuáng, ránhòu xuéxí Hànyǔ, hǎo ma?", "es": "¿Y si te levantas cada mañana a las siete y luego estudias chino?" },
+          "user": [
+            { "zh": "好，老师。明天我七点起床学习。", "py": "Hǎo, lǎoshī. Míngtiān wǒ qī diǎn qǐchuáng xuéxí.", "es": "De acuerdo, profesora. Mañana me levanto a las siete y estudio.", "keywords": ["明天", "七点"], "next": "n7", "goal": 3 },
+            { "zh": "老师，早上我有课，我晚上学习。", "py": "Lǎoshī, zǎoshang wǒ yǒu kè, wǒ wǎnshang xuéxí.", "es": "Profesora, por la mañana tengo clase; estudio por la noche.", "keywords": ["有课", "晚上"], "next": "n7", "goal": 3 }
+          ],
+          "hint": "Acepta el consejo (好，老师) o negocia otro momento (我晚上学习)."
+        },
+        "n7": {
+          "npc": { "zh": "好！明天见。", "py": "Hǎo! Míngtiān jiàn.", "es": "¡Bien! Hasta mañana." },
+          "end": true,
+          "feedback": "Has contado tu rutina de estudio y de sueño con la hora delante del verbo, has usado la frecuencia (常常, 不常, 有时候) y has respondido al consejo. 早睡早起 = acostarse y levantarse pronto."
+        }
+      }
+    }
+  ]
+}

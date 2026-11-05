@@ -1,0 +1,136 @@
+{
+  "id": "b1-u04-l4",
+  "title": "Se me ha ocurrido: 站起来, 想起, 想出, 写下",
+  "zh": "我想出了一个好办法",
+  "goal": "Usar 起来 para levantarse y los direccionales con sentido figurado: recordar (想起来), idear (想出), dejar por escrito (写下), mientras planeas un viaje por China.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "旅行社", "pinyin": "lǚxíngshè", "es": "agencia de viajes" },
+    { "hanzi": "打听", "pinyin": "dǎting", "es": "informarse, preguntar (por algo)", "note": "我想打听一下… = quería informarme de… 听 en tono neutro." },
+    { "hanzi": "访问", "pinyin": "fǎngwèn", "es": "visitar (formal: instituciones, países)", "note": "访问一个大学; para amigos se dice 去看朋友." },
+    { "hanzi": "迷", "pinyin": "mí", "es": "perderse; aficionado (a algo)", "note": "迷路 = perderse; 足球迷 = aficionado al fútbol." },
+    { "hanzi": "范围", "pinyin": "fànwéi", "es": "ámbito, margen, alcance", "note": "在三千块的范围里 = dentro de un margen de tres mil yuanes." },
+    { "hanzi": "各地", "pinyin": "gèdì", "es": "todas partes, diversos lugares", "note": "全国各地 = de todo el país." },
+    { "hanzi": "国内", "pinyin": "guónèi", "es": "nacional, dentro del país", "note": "国内旅行 = viaje nacional; lo contrario, 国外." },
+    { "hanzi": "北部", "pinyin": "běibù", "es": "norte (de una región)", "note": "中国北部 = el norte de China." },
+    { "hanzi": "南部", "pinyin": "nánbù", "es": "sur (de una región)" },
+    { "hanzi": "东部", "pinyin": "dōngbù", "es": "este (de una región)" },
+    { "hanzi": "西部", "pinyin": "xībù", "es": "oeste (de una región)" },
+    { "hanzi": "中部", "pinyin": "zhōngbù", "es": "centro (de una región)" },
+    { "hanzi": "城", "pinyin": "chéng", "es": "ciudad; muralla", "note": "老城 = casco antiguo; 进城 = ir al centro." },
+    { "hanzi": "城市", "pinyin": "chéngshì", "es": "ciudad" }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "我想起来了！她叫安娜。", "py": "Wǒ xiǎng qilai le! Tā jiào Ānnà.", "es": "¡Ya me acuerdo! Se llama Ana." },
+        { "zh": "王老师想出了一个好办法。", "py": "Wáng lǎoshī xiǎngchū le yí ge hǎo bànfǎ.", "es": "La profesora Wang ha dado con una buena idea." },
+        { "zh": "请您写下您的电话号码。", "py": "Qǐng nín xiěxià nín de diànhuà hàomǎ.", "es": "Por favor, apunte su número de teléfono." }
+      ]
+    },
+    { "type": "vocab", "title": "Planear un viaje por China", "words": ["旅行社", "打听", "访问", "迷", "范围", "各地", "国内", "北部", "南部", "东部", "西部", "中部", "城", "城市"] },
+    {
+      "type": "phonetics-drill",
+      "title": "起来 sin tono y el énfasis de «¡ya está!»",
+      "markdown": "**站起来** *zhàn qilai*, **想起来** *xiǎng qilai*: como todos los direccionales detrás del verbo, **起来** pierde el tono. El tercer tono de 想 se queda **abajo** (medio tercer tono).\n\nCuando de repente te acuerdas de algo, **我想起来了！** sube con energía en **想** y cae en **了**: es una exclamación, no una información.\n\nEn cambio **想出** *xiǎngchū* y **写下** *xiěxià* (sin 来 / 去) suelen conservar el tono de 出 y 下.\n\nY dos tonos que confunden: **迷 mí** (segundo, sube) frente a **米 mǐ** (tercero), y **部 bù** (cuarto) en 北部, 南部.",
+      "items": [
+        { "audio": "站起来", "options": ["zhàn qilai", "zhàn qǐlái", "zhāng qilai"], "answer": 0, "explain": "起来 tras el verbo, neutro; 站 termina en -n." },
+        { "audio": "我想起来了！", "prompt": "¿Dónde cae el énfasis?", "options": ["En 想", "En 了", "En 我"], "answer": 0 },
+        { "audio": "迷路", "options": ["mílù", "mǐlù", "mìlù"], "answer": 0, "explain": "迷 en segundo tono." },
+        { "audio": "中部", "options": ["zhōngbù", "zhòngbù", "zōngbù"], "answer": 0, "explain": "中 en primer tono (centro); zhòng sería «acertar»." },
+        { "audio": "打听", "options": ["dǎting", "dàtīng", "dǎdīng"], "answer": 0, "explain": "听 en tono neutro en esta palabra." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["城", "迷"],
+      "mnemonics": {
+        "城": "土 (tierra) + 成 (lograr, completar): la tierra apilada hasta completar una muralla → muralla, ciudad amurallada.",
+        "迷": "辶 (camino) + 米 (arroz, da el sonido mǐ → mí): caminos que se cruzan como granos de arroz esparcidos → perderse."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "起来 y los direccionales figurados: 想起, 想出, 写下",
+      "markdown": "Algunos direccionales ya no hablan de movimiento, sino de **resultado**:\n\n| Forma | Sentido | Ejemplo |\n|---|---|---|\n| V + **起来** | levantarse; (con 想) recordar algo que se había olvidado | 站起来, 我想起来了 |\n| V + **起** + O (+ 来) | recordar algo concreto | 我想起她的名字来了 |\n| V + **出** (+ 来) | sacar a la luz: idear, reconocer | 想出一个办法, 看出来 |\n| V + **下** (+ 来) | dejar algo fijado | 写下电话, 记下来 |\n\n- **想起** ≠ **记得**: 记得 es un estado (*me acuerdo*, lo sigo sabiendo); 想起来 es el **momento** en que te viene a la cabeza.\n- **Negativa**: lo que ya pasó, con 没: 我们还**没**想出办法. «No consigo acordarme» es un **potencial** (b1-u03): 我想**不起来**.\n\n**Convención del esqueleto**: sin objeto, el bloque entero en *Verbo 1* (站起来, 想起来了). Con objeto, *Verbo 1* = 想出了 / 写下 y *Objeto* = 一个好办法 / 电话; si el objeto va en medio de 起…来, el 来 va en *Complemento* (想起 · 她的名字 · 来). El potencial, como en b1-u03: V en *Verbo 1* y 不起来 en *Complemento*.",
+      "focus": ["verb1", "object"],
+      "sentences": [
+        { "slots": { "subject": { "zh": "大家", "py": "dàjiā" }, "adverb": { "zh": "都", "py": "dōu" }, "verb1": { "zh": "站起来", "py": "zhàn qilai" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Todos se han puesto de pie." },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "verb1": { "zh": "想起来", "py": "xiǎng qilai" }, "particle": { "zh": "了", "py": "le" } }, "end": "！", "es": "¡Ya me acuerdo!" },
+        { "slots": { "subject": { "zh": "小李", "py": "Xiǎo Lǐ" }, "verb1": { "zh": "想出了", "py": "xiǎngchū le" }, "object": { "zh": "一个好办法", "py": "yí ge hǎo bànfǎ" } }, "end": "。", "es": "A Xiao Li se le ha ocurrido una buena idea." },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "写下", "py": "xiěxià" }, "object": { "zh": "你的电话号码", "py": "nǐ de diànhuà hàomǎ" }, "particle": { "zh": "吧", "py": "ba" } }, "end": "。", "es": "Apunta tu número de teléfono." },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "verb1": { "zh": "想起", "py": "xiǎngqǐ" }, "object": { "zh": "她的名字", "py": "tā de míngzi" }, "complement": { "zh": "来", "py": "lai" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Ya me acuerdo de su nombre." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "我们", "py": "wǒmen" }, "adverb": { "zh": "还没", "py": "hái méi" }, "verb1": { "zh": "想出", "py": "xiǎngchū" }, "object": { "zh": "好的路线", "py": "hǎo de lùxiàn" } }, "end": "。", "es": "Todavía no se nos ha ocurrido una buena ruta." },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "verb1": { "zh": "想", "py": "xiǎng" }, "complement": { "zh": "不起来", "py": "bu qǐlái" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "No consigo acordarme." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "想起来", "py": "xiǎng qilai" }, "particle": { "zh": "了吗", "py": "le ma" } }, "end": "？", "es": "¿Ya te has acordado?" },
+        { "slots": { "subject": { "zh": "你们", "py": "nǐmen" }, "verb1": { "zh": "想出", "py": "xiǎngchū" }, "object": { "zh": "办法", "py": "bànfǎ" }, "particle": { "zh": "了没有", "py": "le méiyǒu" } }, "end": "？", "es": "¿Habéis encontrado una solución?" }
+      ],
+      "mistakes": [
+        { "wrong": "我想起来她的名字来了。", "right": "我想起她的名字来了。 / 我想起她的名字了。", "why": "Si el objeto va en medio, 来 aparece una sola vez, al final." },
+        { "wrong": "我刚才记得她的名字了。", "right": "我刚才想起她的名字来了。", "why": "记得 es un estado (lo sabes); para el momento en que te viene a la memoria, 想起(来)." },
+        { "wrong": "我没想起来。（= no consigo acordarme）", "right": "我想不起来。", "why": "«No me sale, no puedo» es el potencial: V + 不 + 起来. 没想起来 solo cuenta que no te acordaste." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "En la agencia de viajes",
+      "lines": [
+        { "speaker": "雨果", "zh": "您好，我想打听一下国内旅行的事。", "py": "Nín hǎo, wǒ xiǎng dǎting yíxià guónèi lǚxíng de shì.", "es": "Hola, quería informarme sobre viajes por China." },
+        { "speaker": "工作人员", "zh": "欢迎！请坐。您想去北部、南部还是西部？", "py": "Huānyíng! Qǐng zuò. Nín xiǎng qù běibù, nánbù háishi xībù?", "es": "¡Bienvenido! Siéntese. ¿Quiere ir al norte, al sur o al oeste?" },
+        { "speaker": "雨果", "zh": "下个月我们学校要去西安访问一个大学，我想先在西部玩儿几天。", "py": "Xià ge yuè wǒmen xuéxiào yào qù Xī'ān fǎngwèn yí ge dàxué, wǒ xiǎng xiān zài xībù wánr jǐ tiān.", "es": "El mes que viene mi universidad va a visitar otra universidad en Xi'an, y quiero pasar antes unos días por el oeste." },
+        { "speaker": "工作人员", "zh": "西安是一个很有名的老城市，全国各地的游客都去那儿。", "py": "Xī'ān shì yí ge hěn yǒumíng de lǎo chéngshì, quánguó gèdì de yóukè dōu qù nàr.", "es": "Xi'an es una ciudad antigua muy famosa; va gente de todo el país." },
+        { "speaker": "雨果", "zh": "啊，我想起来了！我朋友说可以在城墙上骑自行车。", "py": "A, wǒ xiǎng qilai le! Wǒ péngyou shuō kěyǐ zài chéngqiáng shang qí zìxíngchē.", "es": "¡Ah, ahora me acuerdo! Un amigo me dijo que se puede ir en bici por la muralla." },
+        { "speaker": "工作人员", "zh": "对，骑一圈要两个小时左右。您的钱在什么范围？", "py": "Duì, qí yì quān yào liǎng ge xiǎoshí zuǒyòu. Nín de qián zài shénme fànwéi?", "es": "Sí, dar la vuelta entera son unas dos horas. ¿Qué presupuesto tiene?" },
+        { "speaker": "雨果", "zh": "三千块左右，不能太贵。", "py": "Sānqiān kuài zuǒyòu, bù néng tài guì.", "es": "Unos tres mil yuanes; no puede ser muy caro." },
+        { "speaker": "工作人员", "zh": "我想出了一条路线：先去西安，再坐高铁去成都。", "py": "Wǒ xiǎngchū le yì tiáo lùxiàn: xiān qù Xī'ān, zài zuò gāotiě qù Chéngdū.", "es": "Se me ocurre una ruta: primero Xi'an y luego el tren de alta velocidad a Chengdu." },
+        { "speaker": "雨果", "zh": "太好了！可是我怕在新的城市迷路。", "py": "Tài hǎo le! Kěshì wǒ pà zài xīn de chéngshì mílù.", "es": "¡Genial! Pero me da miedo perderme en una ciudad nueva." },
+        { "speaker": "工作人员", "zh": "放心，导游会带你们。我把路线写下来给您。", "py": "Fàngxīn, dǎoyóu huì dài nǐmen. Wǒ bǎ lùxiàn xiě xialai gěi nín.", "es": "Tranquilo, os acompaña un guía. Le apunto la ruta." },
+        { "speaker": "雨果", "zh": "谢谢！我也写下您的电话吧。", "py": "Xièxie! Wǒ yě xiěxià nín de diànhuà ba.", "es": "¡Gracias! Le apunto también su teléfono." },
+        { "speaker": "工作人员", "zh": "好。别忘了，我们旅行社周末也开门。", "py": "Hǎo. Bié wàng le, wǒmen lǚxíngshè zhōumò yě kāimén.", "es": "Muy bien. Y recuerde que la agencia abre también los fines de semana." }
+      ],
+      "notes": "**北部 / 南部 / 东部 / 西部 / 中部** son las partes de una región (中国西部, 上海东部); para los puntos cardinales sueltos ya conoces 北, 南, 东, 西. La muralla de Xi'an (西安城墙) rodea todo el casco antiguo y se puede recorrer en bicicleta. 写下来 y 写下 significan lo mismo; con 来 suena más completo."
+    },
+    { "type": "exercises", "count": 16, "bank": ["g-lai-qu", "g-complements", "g-le"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "我" }, "verb1": { "zh": "想起来" }, "particle": { "zh": "了" } }, "end": "！", "es": "¡Ya me acuerdo!" }, "distractors": ["记得"] },
+        { "sentence": { "slots": { "subject": { "zh": "小李" }, "verb1": { "zh": "想出了" }, "object": { "zh": "一个好办法" } }, "end": "。", "es": "A Xiao Li se le ha ocurrido una buena idea." } },
+        { "sentence": { "slots": { "subject": { "zh": "我" }, "verb1": { "zh": "想" }, "complement": { "zh": "不起来" }, "particle": { "zh": "了" } }, "end": "。", "es": "No consigo acordarme." }, "distractors": ["没"] },
+        { "sentence": { "slots": { "time0": { "zh": "上个星期" }, "subject": { "zh": "旅行社的人" }, "adverb": { "zh": "已经" }, "with": { "zh": "给我们" }, "verb1": { "zh": "写下了" }, "object": { "zh": "去西部的路线" } }, "end": "。", "es": "La semana pasada los de la agencia ya nos apuntaron la ruta por el oeste." } }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "我想起来了！", "py": "Wǒ xiǎng qilai le!", "es": "¡Ya me acuerdo!" },
+        { "zh": "我想不起来他的名字了。", "py": "Wǒ xiǎng bu qǐlái tā de míngzi le.", "es": "No consigo acordarme de su nombre." },
+        { "zh": "我想打听一下国内旅行的事。", "py": "Wǒ xiǎng dǎting yíxià guónèi lǚxíng de shì.", "es": "Quería informarme sobre viajes por China." },
+        { "zh": "我把路线写下来给您。", "py": "Wǒ bǎ lùxiàn xiě xialai gěi nín.", "es": "Le apunto la ruta." }
+      ],
+      "respond": [
+        { "q": { "zh": "你想去中国的哪个地方旅行？", "py": "Nǐ xiǎng qù Zhōngguó de nǎge dìfang lǚxíng?", "es": "¿A qué parte de China quieres viajar?" }, "model": { "zh": "我想去西部，先去西安，再去成都。", "py": "Wǒ xiǎng qù xībù, xiān qù Xī'ān, zài qù Chéngdū.", "es": "Quiero ir al oeste: primero a Xi'an y luego a Chengdu." } },
+        { "q": { "zh": "你想出办法了没有？", "py": "Nǐ xiǎngchū bànfǎ le méiyǒu?", "es": "¿Se te ha ocurrido algo?" }, "model": { "zh": "还没想出来，我们问问王老师吧。", "py": "Hái méi xiǎng chulai, wǒmen wènwen Wáng lǎoshī ba.", "es": "Todavía no; preguntemos a la profesora Wang." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Un viaje por el oeste",
+      "text": "下个月，雨果的学校要去西安访问一个大学。雨果想先在中国西部玩儿几天，所以他去旅行社打听国内旅行的事。旅行社的人说，中国很大，北部、南部、东部、西部和中部都有很多有名的城市，全国各地的游客都喜欢去西安。雨果马上站起来说：“我想起来了！我朋友说西安有很长的城墙，可以在上面骑自行车。”雨果的钱不多，在三千块的范围里。旅行社的人想了一下，想出了一条路线：先坐高铁去西安，再去成都。他把路线写下来给雨果。雨果说：“我怕在新的城市迷路。”旅行社的人笑着说：“放心，导游会带你们。”雨果写下了旅行社的电话，高高兴兴地回宿舍去了。",
+      "es": "El mes que viene la universidad de Hugo va a visitar una universidad de Xi'an. Hugo quiere pasar antes unos días por el oeste de China, así que va a una agencia a informarse sobre viajes por el país. El empleado le explica que China es muy grande y que en el norte, el sur, el este, el oeste y el centro hay muchas ciudades famosas, y que a los turistas de todo el país les encanta Xi'an. Hugo se levanta enseguida: «¡Ya me acuerdo! Un amigo me dijo que Xi'an tiene una muralla larguísima y que se puede ir en bici por encima». Hugo no tiene mucho dinero: unos tres mil yuanes como máximo. El empleado lo piensa un momento y se le ocurre una ruta: primero el tren de alta velocidad a Xi'an y luego Chengdu. Se la apunta a Hugo. Hugo dice: «Me da miedo perderme en una ciudad nueva». El empleado se ríe: «Tranquilo, os acompaña un guía». Hugo apunta el teléfono de la agencia y vuelve contentísimo a la residencia.",
+      "questions": [
+        { "q": "¿Qué va a hacer la universidad de Hugo en Xi'an?", "options": ["访问一个大学", "参加比赛", "看城墙"], "answer": 0 },
+        { "q": "¿De qué se acuerda Hugo de repente?", "options": ["De que se puede ir en bici por la muralla", "Del nombre del guía", "De su número de teléfono"], "answer": 0 },
+        { "q": "¿Qué ruta se le ocurre al empleado?", "options": ["先去西安，再去成都", "先去成都，再去北京", "只去西安"], "answer": 0 },
+        { "q": "¿Qué le preocupa a Hugo?", "options": ["Perderse", "El tren", "El tiempo"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

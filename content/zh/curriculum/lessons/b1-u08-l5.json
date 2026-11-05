@@ -1,0 +1,139 @@
+{
+  "id": "b1-u08-l5",
+  "title": "Lo más importante es confiar: frases como sujeto, 怎样 / 如何 y 在…上 / 下 / 中",
+  "zh": "互相信任最重要",
+  "goal": "Valorar acciones con un verbo o una oración como sujeto (多交往很有帮助), preguntar cómo hacer algo con 怎样 / 如何 y situar un ámbito con 在…上 / 下 / 中.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "如何", "pinyin": "rúhé", "es": "cómo (formal)", "note": "= 怎样 / 怎么, más escrito: 如何学好汉语." },
+    { "hanzi": "使", "pinyin": "shǐ", "es": "hacer que, provocar", "note": "这次经历使我更了解中国 = esta experiencia me hizo conocer mejor China. Más formal que 让." },
+    { "hanzi": "由", "pinyin": "yóu", "es": "por, a cargo de; desde", "note": "由你决定 = decides tú; 由我来做 = lo hago yo." },
+    { "hanzi": "由于", "pinyin": "yóuyú", "es": "debido a, como", "note": "由于…，因此… (más formal que 因为…所以…)." },
+    { "hanzi": "因此", "pinyin": "yīncǐ", "es": "por eso, por lo tanto" },
+    { "hanzi": "有利", "pinyin": "yǒulì", "es": "favorable, beneficioso", "note": "对…有利 = ser bueno para…" },
+    { "hanzi": "关系", "pinyin": "guānxi", "es": "relación", "note": "关系很好 = llevarse muy bien. 没关系 ya lo conoces." },
+    { "hanzi": "交往", "pinyin": "jiāowǎng", "es": "tratar (con alguien), relacionarse; trato", "note": "跟中国人交往." },
+    { "hanzi": "信任", "pinyin": "xìnrèn", "es": "confiar en; confianza", "note": "互相信任 = confiar el uno en el otro." },
+    { "hanzi": "对待", "pinyin": "duìdài", "es": "tratar (a alguien de cierta manera), afrontar", "note": "怎样对待不同的观念 = cómo tratar las ideas distintas." },
+    { "hanzi": "共同", "pinyin": "gòngtóng", "es": "común, compartido; juntos", "note": "共同的爱好 = una afición común." },
+    { "hanzi": "体会", "pinyin": "tǐhuì", "es": "vivir y comprender (por experiencia); vivencia", "note": "我体会到… = he comprendido (viviéndolo) que…" },
+    { "hanzi": "应当", "pinyin": "yīngdāng", "es": "deber (formal)", "note": "= 应该, más escrito." }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "多跟中国人交往对学汉语很有帮助。", "py": "Duō gēn Zhōngguórén jiāowǎng duì xué Hànyǔ hěn yǒu bāngzhù.", "es": "Tratar mucho con chinos ayuda mucho a aprender chino." },
+        { "zh": "外国学生如何才能交到中国朋友？", "py": "Wàiguó xuésheng rúhé cái néng jiāodào Zhōngguó péngyou?", "es": "¿Cómo pueden los estudiantes extranjeros hacer amigos chinos?" },
+        { "zh": "在学习上，王老师给了我很多帮助。", "py": "Zài xuéxí shang, Wáng lǎoshī gěi le wǒ hěn duō bāngzhù.", "es": "En los estudios, la profesora Wang me ha ayudado muchísimo." }
+      ]
+    },
+    { "type": "vocab", "title": "Relaciones y confianza", "words": ["如何", "使", "由", "由于", "因此", "有利", "关系", "交往", "信任", "对待", "共同", "体会", "应当"] },
+    {
+      "type": "phonetics-drill",
+      "title": "Sujetos largos: dónde respirar",
+      "markdown": "Cuando el sujeto es **una acción o una frase entera** (多跟中国人交往, 身体健康), se dice de un tirón y se hace una **mini pausa** antes del predicado: 多跟中国人交往 | 对学汉语很有帮助. Sin esa pausa, el oyente no sabe dónde acaba el sujeto.\n\n- **怎样 zěnyàng** (dos sílabas) no es **怎么样 zěnmeyàng** (tres): 怎样 + verbo pregunta *cómo hacer*; 怎么样 pregunta *qué tal*.\n- **由于 yóuyú**: dos segundos tonos seguidos que suben; *yu* = ü.\n- **关系 guānxi**: 系 en **tono neutro**.\n- **使 shǐ** (hacer que) frente a **是 shì** (ser): tercer tono frente a cuarto.",
+      "items": [
+        { "audio": "多跟中国人交往对学汉语很有帮助。", "prompt": "¿Dónde está la pausa principal?", "options": ["Detrás de 交往", "Detrás de 多", "Detrás de 学汉语"], "answer": 0, "explain": "Todo 多跟中国人交往 es el sujeto." },
+        { "audio": "怎样", "options": ["zěnyàng", "zěnmeyàng", "zěnyáng"], "answer": 0, "explain": "Dos sílabas: zěn + yàng." },
+        { "audio": "由于", "options": ["yóuyú", "yǒuyú", "yóuyù"], "answer": 0 },
+        { "audio": "关系", "options": ["guānxi", "guānxì con tono pleno", "guǎnxi"], "answer": 0, "explain": "系 neutro: corto y flojo." },
+        { "audio": "使", "options": ["shǐ", "shì", "sǐ"], "answer": 0, "explain": "Tercer tono: baja y sube." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["信", "由"],
+      "mnemonics": {
+        "信": "亻 (persona) + 言 (palabra): una persona que mantiene su palabra, alguien de quien te fías. 信任 = confiar; 相信 = creer; 信 = carta.",
+        "由": "田 (campo) con un brote que sale por arriba: el punto de donde algo sale. «Desde, por, a cargo de» → 由你决定, 由于."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "Frases como sujeto, 怎样 / 如何 + verbo y 在…上 / 下 / 中",
+      "markdown": "**1. Un verbo o una frase como sujeto.** En español decimos «**es importante** hacer deporte», con el sujeto detrás. En chino, la acción **va delante**, como sujeto, y la valoración detrás: **做运动**很重要. Sin 是 delante del adjetivo.\n\n- Verbo como sujeto: **光说不练**没有用 · **多穿一点儿**比较好.\n- Oración (sujeto + predicado) como sujeto: **身体健康**最重要 · **你来**也可以.\n- En el esqueleto, toda la acción-sujeto va en **Sujeto**. Si hay **对 + cosa** (对学汉语很有帮助), lo dejamos en **Adverbios** junto al grado, porque suena mejor pegado a 很.\n\n**2. 怎样 / 如何 + verbo** = «cómo (se hace)». **怎样** es neutro; **如何**, formal y escrito. Muchas veces con **才能**: **怎样才能**学好汉语？ (= ¿qué hay que hacer para…?). En el esqueleto, 怎样 / 如何 (+ 才) va en **Adverbios**.\n\n**3. 在…上 / 下 / 中** marcan un **ámbito** (hueco *Tiempo inicial*, con coma):\n- **在 + tema + 上**: en cuanto a… → 在学习上, 在生活上.\n- **在 + 的帮助 / 的影响 + 下**: con (la ayuda de)… → 在老师的帮助下.\n- **在 + proceso + 中**: durante… → 在交往中, 在这次比赛中.\n\nY un par de conectores formales: **由于…，因此…** (= 因为…所以…, escrito), con la convención de conectores de la lección 2.",
+      "focus": ["subject", "time0"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "多跟中国人交往", "py": "duō gēn Zhōngguórén jiāowǎng" }, "adverb": { "zh": "对学汉语很", "py": "duì xué Hànyǔ hěn" }, "verb1": { "zh": "有帮助", "py": "yǒu bāngzhù" } }, "end": "。", "es": "Tratar mucho con chinos ayuda mucho a aprender chino.", "esOrder": [{ "text": "Tratar mucho con chinos", "slot": "subject" }, { "text": "ayuda", "slot": "verb1" }, { "text": "mucho a aprender chino", "slot": "adverb" }] },
+        { "slots": { "subject": { "zh": "身体健康", "py": "shēntǐ jiànkāng" }, "adverb": { "zh": "最", "py": "zuì" }, "verb1": { "zh": "重要", "py": "zhòngyào" } }, "end": "。", "es": "Lo más importante es estar sano." },
+        { "slots": { "subject": { "zh": "互相信任", "py": "hùxiāng xìnrèn" }, "adverb": { "zh": "对朋友关系非常", "py": "duì péngyou guānxi fēicháng" }, "verb1": { "zh": "有利", "py": "yǒulì" } }, "end": "。", "es": "Confiar el uno en el otro es muy bueno para una amistad." },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "verb1": { "zh": "想知道", "py": "xiǎng zhīdào" }, "object": { "zh": "怎样才能学好汉语", "py": "zěnyàng cái néng xuéhǎo Hànyǔ" } }, "end": "。", "es": "Quiero saber qué hay que hacer para aprender bien chino." },
+        { "slots": { "time0": { "zh": "在学习上，", "py": "zài xuéxí shang," }, "subject": { "zh": "王老师", "py": "Wáng lǎoshī" }, "verb1": { "zh": "给了", "py": "gěi le" }, "object": { "zh": "我很多帮助", "py": "wǒ hěn duō bāngzhù" } }, "end": "。", "es": "En los estudios, la profesora Wang me ha ayudado muchísimo." },
+        { "slots": { "time0": { "zh": "在王老师的帮助下，", "py": "zài Wáng lǎoshī de bāngzhù xià," }, "subject": { "zh": "我们", "py": "wǒmen" }, "verb1": { "zh": "写完了", "py": "xiě wán le" }, "object": { "zh": "论文", "py": "lùnwén" } }, "end": "。", "es": "Con la ayuda de la profesora Wang, hemos terminado el trabajo." },
+        { "slots": { "time0": { "zh": "由于", "py": "yóuyú" }, "subject": { "zh": "双方", "py": "shuāngfāng" }, "adverb": { "zh": "互相", "py": "hùxiāng" }, "verb1": { "zh": "信任", "py": "xìnrèn" } }, "end": "，", "es": "Como las dos partes confían la una en la otra… (1.ª parte)" },
+        { "slots": { "time0": { "zh": "因此", "py": "yīncǐ" }, "subject": { "zh": "他们的关系", "py": "tāmen de guānxi" }, "adverb": { "zh": "越来越", "py": "yuèláiyuè" }, "verb1": { "zh": "好", "py": "hǎo" } }, "end": "。", "es": "…por eso su relación es cada vez mejor. (2.ª parte)" }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "光说不练", "py": "guāng shuō bú liàn" }, "adverb": { "zh": "没有", "py": "méiyǒu" }, "verb1": { "zh": "用", "py": "yòng" } }, "end": "。", "es": "Hablar sin practicar no sirve de nada." },
+        { "slots": { "time0": { "zh": "在交往中，", "py": "zài jiāowǎng zhōng," }, "subject": { "zh": "我们", "py": "wǒmen" }, "adverb": { "zh": "不应当", "py": "bù yīngdāng" }, "verb1": { "zh": "只想", "py": "zhǐ xiǎng" }, "object": { "zh": "自己", "py": "zìjǐ" } }, "end": "。", "es": "En el trato con los demás, no debemos pensar solo en nosotros mismos." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "我们", "py": "wǒmen" }, "adverb": { "zh": "应当怎样", "py": "yīngdāng zěnyàng" }, "verb1": { "zh": "对待", "py": "duìdài" }, "object": { "zh": "不同的观念", "py": "bù tóng de guānniàn" } }, "end": "？", "es": "¿Cómo debemos tratar las ideas distintas?" },
+        { "slots": { "subject": { "zh": "外国学生", "py": "wàiguó xuésheng" }, "adverb": { "zh": "如何才能", "py": "rúhé cái néng" }, "verb1": { "zh": "交到", "py": "jiāodào" }, "object": { "zh": "中国朋友", "py": "Zhōngguó péngyou" } }, "end": "？", "es": "¿Cómo pueden los estudiantes extranjeros hacer amigos chinos?" }
+      ],
+      "mistakes": [
+        { "wrong": "是很重要做运动。", "right": "做运动很重要。", "why": "La acción va delante como sujeto; no hay «es + adjetivo + infinitivo» como en español." },
+        { "wrong": "怎样学好汉语才能？", "right": "怎样才能学好汉语？", "why": "怎样 y 才能 van juntos delante del verbo." },
+        { "wrong": "在老师的帮助，我写完了论文。", "right": "在老师的帮助下，我写完了论文。", "why": "«Con la ayuda de» es 在…的帮助下: sin 下 la estructura queda coja." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "¿Cómo se hacen amigos chinos?",
+      "lines": [
+        { "speaker": "雨果", "zh": "小李，我想问你一个问题：外国学生如何才能交到中国朋友？", "py": "Xiǎo Lǐ, wǒ xiǎng wèn nǐ yí ge wèntí: wàiguó xuésheng rúhé cái néng jiāodào Zhōngguó péngyou?", "es": "Xiao Li, quiero hacerte una pregunta: ¿cómo pueden los estudiantes extranjeros hacer amigos chinos?" },
+        { "speaker": "小李", "zh": "你说得这么正式！在我看来，有共同的爱好最重要。", "py": "Nǐ shuō de zhème zhèngshì! Zài wǒ kànlái, yǒu gòngtóng de àihào zuì zhòngyào.", "es": "¡Qué formal lo dices! En mi opinión, lo más importante es tener aficiones en común." },
+        { "speaker": "雨果", "zh": "比如说一起打球、一起吃饭？", "py": "Bǐrú shuō yìqǐ dǎ qiú, yìqǐ chīfàn?", "es": "¿Por ejemplo jugar a la pelota o comer juntos?" },
+        { "speaker": "小李", "zh": "对。多跟中国同学交往，对学汉语也很有帮助。", "py": "Duì. Duō gēn Zhōngguó tóngxué jiāowǎng, duì xué Hànyǔ yě hěn yǒu bāngzhù.", "es": "Eso. Y tratar mucho con compañeros chinos también te ayuda mucho con el chino." },
+        { "speaker": "雨果", "zh": "可是我觉得，很多中国人对外国人很客气，关系很难更近一步。", "py": "Kěshì wǒ juéde, hěn duō Zhōngguórén duì wàiguórén hěn kèqi, guānxi hěn nán gèng jìn yí bù.", "es": "Pero me da la sensación de que muchos chinos son muy corteses con los extranjeros y cuesta acercarse más." },
+        { "speaker": "小李", "zh": "我明白。在中国，信任是要慢慢建立的。", "py": "Wǒ míngbai. Zài Zhōngguó, xìnrèn shì yào mànmàn jiànlì de.", "es": "Te entiendo. En China, la confianza hay que construirla poco a poco." },
+        { "speaker": "雨果", "zh": "那我应当怎样做？", "py": "Nà wǒ yīngdāng zěnyàng zuò?", "es": "¿Y qué debería hacer?" },
+        { "speaker": "小李", "zh": "首先，要真心对待别人。其次，别人有问题的时候，你要主动帮忙。", "py": "Shǒuxiān, yào zhēnxīn duìdài biérén. Qícì, biérén yǒu wèntí de shíhou, nǐ yào zhǔdòng bāngmáng.", "es": "Primero, tratar a los demás con sinceridad. Segundo, cuando alguien tenga un problema, ofrecerte a ayudar." },
+        { "speaker": "雨果", "zh": "我体会到了。上个月在你的帮助下，我找到了房子，我们的关系就更好了。", "py": "Wǒ tǐhuì dào le. Shàng ge yuè zài nǐ de bāngzhù xià, wǒ zhǎodào le fángzi, wǒmen de guānxi jiù gèng hǎo le.", "es": "Lo he vivido. El mes pasado, con tu ayuda, encontré piso, y desde entonces nos llevamos aún mejor." },
+        { "speaker": "小李", "zh": "对啊！由于你也常常帮我练习西班牙语，因此我们成了好朋友。", "py": "Duì a! Yóuyú nǐ yě chángcháng bāng wǒ liànxí Xībānyáyǔ, yīncǐ wǒmen chéng le hǎo péngyou.", "es": "¡Claro! Como tú también me ayudas a menudo a practicar español, nos hemos hecho buenos amigos." },
+        { "speaker": "雨果", "zh": "看来，互相帮助使人更快地成为朋友。", "py": "Kànlái, hùxiāng bāngzhù shǐ rén gèng kuài de chéngwéi péngyou.", "es": "Por lo visto, ayudarse mutuamente hace que la gente se haga amiga más rápido." },
+        { "speaker": "小李", "zh": "没错。今天的晚饭由你来请吧！", "py": "Méi cuò. Jīntiān de wǎnfàn yóu nǐ lái qǐng ba!", "es": "Exacto. ¡Hoy la cena la pagas tú!" }
+      ],
+      "notes": "En China, la amistad suele construirse con hechos: ayudar con un trámite, invitar a comer, acompañar al médico. 由你来请 = «te toca invitar a ti»; 请 (客) es invitar pagando. 更近一步 = acercarse un paso más."
+    },
+    { "type": "exercises", "count": 17, "bank": ["g-question-words", "g-word-order", "g-modal-verbs"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "身体健康" }, "adverb": { "zh": "最" }, "verb1": { "zh": "重要" } }, "end": "。", "es": "Lo más importante es estar sano." }, "distractors": ["是"] },
+        { "sentence": { "slots": { "subject": { "zh": "外国学生" }, "adverb": { "zh": "如何才能" }, "verb1": { "zh": "交到" }, "object": { "zh": "中国朋友" } }, "end": "？", "es": "¿Cómo pueden los estudiantes extranjeros hacer amigos chinos?" } },
+        { "sentence": { "slots": { "time0": { "zh": "在王老师的帮助下，" }, "subject": { "zh": "我们" }, "verb1": { "zh": "写完了" }, "object": { "zh": "论文" } }, "end": "。", "es": "Con la ayuda de la profesora Wang, hemos terminado el trabajo." }, "distractors": ["在王老师的帮助，"] },
+        { "sentence": { "slots": { "time0": { "zh": "在生活上，" }, "subject": { "zh": "小李" }, "time": { "zh": "这个学期" }, "adverb": { "zh": "常常" }, "place": { "zh": "在宿舍" }, "verb1": { "zh": "帮雨果" }, "verb2": { "zh": "解决" }, "object": { "zh": "问题" } }, "end": "。", "es": "En el día a día, este cuatrimestre Xiao Li ayuda a menudo a Hugo a resolver problemas en la residencia." } }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "多跟中国人交往对学汉语很有帮助。", "py": "Duō gēn Zhōngguórén jiāowǎng duì xué Hànyǔ hěn yǒu bāngzhù.", "es": "Tratar mucho con chinos ayuda mucho a aprender chino." },
+        { "zh": "身体健康最重要。", "py": "Shēntǐ jiànkāng zuì zhòngyào.", "es": "Lo más importante es estar sano." },
+        { "zh": "怎样才能学好汉语？", "py": "Zěnyàng cái néng xuéhǎo Hànyǔ?", "es": "¿Qué hay que hacer para aprender bien chino?" },
+        { "zh": "在你的帮助下，我找到了房子。", "py": "Zài nǐ de bāngzhù xià, wǒ zhǎodào le fángzi.", "es": "Con tu ayuda, encontré piso." }
+      ],
+      "respond": [
+        { "q": { "zh": "你觉得怎样才能学好汉语？", "py": "Nǐ juéde zěnyàng cái néng xuéhǎo Hànyǔ?", "es": "¿Qué crees que hay que hacer para aprender bien chino?" }, "model": { "zh": "我觉得，多说多练最重要。", "py": "Wǒ juéde, duō shuō duō liàn zuì zhòngyào.", "es": "Creo que lo más importante es hablar y practicar mucho." } },
+        { "q": { "zh": "在生活上，谁帮助你最多？", "py": "Zài shēnghuó shang, shéi bāngzhù nǐ zuì duō?", "es": "En el día a día, ¿quién te ayuda más?" }, "model": { "zh": "在生活上，我的中国室友帮助我最多。", "py": "Zài shēnghuó shang, wǒ de Zhōngguó shìyǒu bāngzhù wǒ zuì duō.", "es": "En el día a día, quien más me ayuda es mi compañero de cuarto chino." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Lo que he aprendido sobre la amistad",
+      "text": "来中国以前，我常常想：外国人如何才能交到中国朋友？现在我在上海住了半年，有了一些自己的体会。首先，有共同的爱好很重要。我和小李都喜欢打球，因此我们常常一起运动。其次，在交往中，真心对待别人最重要。中国人刚认识的时候比较客气，信任是要慢慢建立的。上个月我找房子的时候，在小李的帮助下，问题很快就解决了。由于我也常常帮他练习西班牙语，我们的关系越来越好。我觉得，互相帮助对朋友关系非常有利。光说“我们是朋友”没有用，应当用行动来表明。这半年的经历使我更了解中国人了。",
+      "es": "Antes de venir a China, a menudo pensaba: ¿cómo pueden los extranjeros hacer amigos chinos? Ahora llevo medio año en Shanghái y tengo algunas vivencias propias. En primer lugar, es importante tener aficiones en común. A Xiao Li y a mí nos gusta jugar a la pelota, así que hacemos deporte juntos a menudo. En segundo lugar, en el trato, lo más importante es ser sincero con los demás. Cuando acabas de conocer a alguien en China, la gente es bastante formal: la confianza se construye poco a poco. El mes pasado, cuando buscaba piso, con la ayuda de Xiao Li el problema se resolvió enseguida. Como yo también le ayudo a menudo a practicar español, nos llevamos cada vez mejor. Creo que ayudarse es muy bueno para una amistad. Decir «somos amigos» no sirve de nada: hay que demostrarlo con hechos. Este medio año me ha hecho conocer mejor a los chinos.",
+      "questions": [
+        { "q": "¿Qué afición comparten Hugo y Xiao Li?", "options": ["打球", "跳舞", "游泳"], "answer": 0 },
+        { "q": "Según el texto, ¿cómo se construye la confianza en China?", "options": ["慢慢建立", "很快就有", "不需要"], "answer": 0 },
+        { "q": "¿En qué le ayudó Xiao Li el mes pasado?", "options": ["找房子", "写论文", "学西班牙语"], "answer": 0 },
+        { "q": "¿Qué frase tiene una acción como sujeto?", "options": ["光说“我们是朋友”没有用", "我和小李都喜欢打球", "我在上海住了半年"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

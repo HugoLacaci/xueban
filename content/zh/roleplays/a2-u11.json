@@ -1,0 +1,141 @@
+{
+  "unitId": "a2-u11",
+  "scenarios": [
+    {
+      "id": "a2-u11-interview",
+      "title": "Entrevista para unas prácticas",
+      "zh": "实习面试",
+      "level": 2,
+      "setting": "Hugo tiene una entrevista para hacer prácticas en la agencia de viajes «Viajes Occidente», en Shanghái. Tú (la app) eres el director Liu (刘经理).",
+      "role": "director Liu",
+      "roleZh": "刘经理",
+      "voice": "m",
+      "goals": ["Presentarte: nombre y estudios", "Hablar de tu experiencia de trabajo", "Preguntar por el sueldo o los requisitos", "Poner una condición con 如果…就 o …的话"],
+      "vocab": ["面试", "简历", "实习", "打工", "工资", "要求", "如果", "的话"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "你好，请坐。请说一下你的姓名和专业。", "py": "Nǐ hǎo, qǐng zuò. Qǐng shuō yíxià nǐ de xìngmíng hé zhuānyè.", "es": "Hola, siéntate. Dime tu nombre completo y qué estudias." },
+          "user": [
+            { "zh": "您好，我叫雨果，在交通大学读硕士。", "py": "Nín hǎo, wǒ jiào Yǔguǒ, zài Jiāotōng Dàxué dú shuòshì.", "es": "Buenos días, me llamo Hugo y estudio un máster en la Jiaotong.", "keywords": ["我叫", "硕士"], "next": "n2", "goal": 0 },
+            { "zh": "您好，我是雨果，是西班牙人，现在是研究生。", "py": "Nín hǎo, wǒ shì Yǔguǒ, shì Xībānyárén, xiànzài shì yánjiūshēng.", "es": "Buenos días, soy Hugo, español, y ahora hago un posgrado.", "keywords": ["研究生", "西班牙"], "next": "n2", "goal": 0 }
+          ],
+          "hint": "Di tu nombre (我叫…) y qué estudias (在…读硕士). Con un director, usa 您."
+        },
+        "n2": {
+          "npc": { "zh": "你的简历我看了。你以前打过工吗？", "py": "Nǐ de jiǎnlì wǒ kàn le. Nǐ yǐqián dǎguo gōng ma?", "es": "He leído tu currículum. ¿Has trabajado antes?" },
+          "user": [
+            { "zh": "打过。在马德里的时候，我在一家酒店打工。", "py": "Dǎguo. Zài Mǎdélǐ de shíhou, wǒ zài yì jiā jiǔdiàn dǎgōng.", "es": "Sí. En Madrid trabajaba por horas en un hotel.", "keywords": ["打过", "酒店"], "next": "n3", "goal": 1 },
+            { "zh": "没打过，可是我学习很努力，也会说英语和汉语。", "py": "Méi dǎguo, kěshì wǒ xuéxí hěn nǔlì, yě huì shuō Yīngyǔ hé Hànyǔ.", "es": "No, pero estudio con mucho empeño y también hablo inglés y chino.", "keywords": ["没打过", "努力"], "next": "n3", "goal": 1 }
+          ],
+          "hint": "Experiencia con 过: 打过工 / 没打过. Si no tienes, destaca otra cosa con 可是."
+        },
+        "n3": {
+          "npc": { "zh": "很好。我们单位要一个会说西班牙语的实习生。你有什么问题吗？", "py": "Hěn hǎo. Wǒmen dānwèi yào yí ge huì shuō Xībānyáyǔ de shíxíshēng. Nǐ yǒu shénme wèntí ma?", "es": "Muy bien. Buscamos un becario que hable español. ¿Tienes alguna pregunta?" },
+          "user": [
+            { "zh": "请问，实习生的工资怎么样？", "py": "Qǐngwèn, shíxíshēng de gōngzī zěnmeyàng?", "es": "Perdone, ¿cómo es el sueldo de los becarios?", "keywords": ["工资"], "next": "n4", "goal": 2 },
+            { "zh": "你们有什么要求？每个星期要来几天？", "py": "Nǐmen yǒu shénme yāoqiú? Měi ge xīngqī yào lái jǐ tiān?", "es": "¿Qué requisitos tenéis? ¿Cuántos días a la semana hay que venir?", "keywords": ["要求", "几天"], "next": "n5", "goal": 2 }
+          ],
+          "hint": "Pregunta por el sueldo (工资) o por los requisitos (要求). 请问 suaviza la pregunta."
+        },
+        "n4": {
+          "npc": { "zh": "每个月三千块。如果你做得好，就能多拿一点儿。", "py": "Měi ge yuè sānqiān kuài. Rúguǒ nǐ zuò de hǎo, jiù néng duō ná yìdiǎnr.", "es": "Tres mil al mes. Si lo haces bien, puedes cobrar algo más." },
+          "user": [
+            { "zh": "好的。你们有什么要求？", "py": "Hǎo de. Nǐmen yǒu shénme yāoqiú?", "es": "Vale. ¿Qué requisitos tenéis?", "keywords": ["要求"], "next": "n5", "goal": 2 },
+            { "zh": "没问题。如果能学到很多东西，钱少一点儿也可以。", "py": "Méi wèntí. Rúguǒ néng xuédào hěn duō dōngxi, qián shǎo yìdiǎnr yě kěyǐ.", "es": "Sin problema. Si aprendo mucho, no me importa cobrar un poco menos.", "keywords": ["如果", "学到"], "next": "n5", "goal": 3 }
+          ],
+          "hint": "Acepta o pon una condición: 如果…，(就)…"
+        },
+        "n5": {
+          "npc": { "zh": "每个星期来三天。有课的话，你可以跟我说。你下个星期能来吗？", "py": "Měi ge xīngqī lái sān tiān. Yǒu kè dehuà, nǐ kěyǐ gēn wǒ shuō. Nǐ xià ge xīngqī néng lái ma?", "es": "Tres días a la semana. Si tienes clase, me lo dices. ¿Puedes empezar la semana que viene?" },
+          "user": [
+            { "zh": "能。如果您觉得我可以，我下个星期一就来。", "py": "Néng. Rúguǒ nín juéde wǒ kěyǐ, wǒ xià ge xīngqīyī jiù lái.", "es": "Sí. Si le parece que valgo, vengo el lunes que viene.", "keywords": ["如果", "就来"], "next": "n6", "goal": 3 },
+            { "zh": "下个星期我有考试，考完的话，我就能来。", "py": "Xià ge xīngqī wǒ yǒu kǎoshì, kǎowán dehuà, wǒ jiù néng lái.", "es": "La semana que viene tengo exámenes; cuando termine, puedo venir.", "keywords": ["的话", "就能"], "next": "n6", "goal": 3 }
+          ],
+          "hint": "Pon la condición delante y 就 detrás del sujeto: 如果…，我就… / …的话，我就…"
+        },
+        "n6": {
+          "npc": { "zh": "好，明天我给你打电话。谢谢你来面试！", "py": "Hǎo, míngtiān wǒ gěi nǐ dǎ diànhuà. Xièxie nǐ lái miànshì!", "es": "Bien, mañana te llamo. ¡Gracias por venir a la entrevista!" },
+          "user": [
+            { "zh": "谢谢刘经理，再见！", "py": "Xièxie Liú jīnglǐ, zàijiàn!", "es": "¡Gracias, director Liu, hasta luego!", "keywords": ["谢谢", "再见"], "next": "n7" },
+            { "zh": "谢谢您！我等您的电话。", "py": "Xièxie nín! Wǒ děng nín de diànhuà.", "es": "¡Gracias! Espero su llamada.", "keywords": ["等您的电话"], "next": "n7" }
+          ],
+          "hint": "Despídete dando las gracias con el cargo: 谢谢刘经理."
+        },
+        "n7": {
+          "npc": { "zh": "再见，路上小心！", "py": "Zàijiàn, lù shang xiǎoxīn!", "es": "¡Adiós, ten cuidado por el camino!" },
+          "end": true,
+          "feedback": "Entrevista superada: te presentaste, hablaste de tu experiencia con 过, preguntaste con 请问 y pusiste condiciones con 如果…就 y …的话. Recuerda: la condición siempre va delante, y 就 detrás del sujeto."
+        }
+      }
+    },
+    {
+      "id": "a2-u11-client",
+      "title": "Una clienta que no se decide",
+      "zh": "坐飞机还是坐高铁？",
+      "level": 2,
+      "setting": "Hugo atiende en la agencia a una clienta que quiere viajar por España y no sabe qué elegir. Tú (la app) eres la clienta, la señora Zhang (张女士).",
+      "role": "la señora Zhang, clienta",
+      "roleZh": "张女士",
+      "voice": "f",
+      "goals": ["Preguntar entre dos opciones con 还是", "Ofrecer alternativas con 或者", "Aconsejar con 还是…吧", "Proponer seguir otro día con 再"],
+      "vocab": ["还是", "或者", "顾客", "服务", "直接", "普通", "再", "使用"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "你好，我想去西班牙旅游，可是我不知道怎么去。", "py": "Nǐ hǎo, wǒ xiǎng qù Xībānyá lǚyóu, kěshì wǒ bù zhīdào zěnme qù.", "es": "Hola, quiero hacer un viaje a España, pero no sé cómo ir." },
+          "user": [
+            { "zh": "您好！您想直接去马德里，还是先去巴塞罗那？", "py": "Nín hǎo! Nín xiǎng zhíjiē qù Mǎdélǐ, háishi xiān qù Bāsàiluónà?", "es": "¡Buenos días! ¿Quiere ir directamente a Madrid o primero a Barcelona?", "keywords": ["还是", "直接"], "next": "n2", "goal": 0 },
+            { "zh": "您好，欢迎！您想去几天？", "py": "Nín hǎo, huānyíng! Nín xiǎng qù jǐ tiān?", "es": "¡Buenos días, bienvenida! ¿Cuántos días quiere ir?", "keywords": ["几天"], "next": "n3" }
+          ],
+          "hint": "Ofrécele dos opciones con 还是 (sin 吗): A 还是 B？"
+        },
+        "n2": {
+          "npc": { "zh": "先去马德里吧。从马德里到巴塞罗那，坐飞机好还是坐高铁好？", "py": "Xiān qù Mǎdélǐ ba. Cóng Mǎdélǐ dào Bāsàiluónà, zuò fēijī hǎo háishi zuò gāotiě hǎo?", "es": "Primero Madrid. De Madrid a Barcelona, ¿es mejor el avión o el tren?" },
+          "user": [
+            { "zh": "坐飞机或者坐高铁都可以，高铁比较方便。", "py": "Zuò fēijī huòzhě zuò gāotiě dōu kěyǐ, gāotiě bǐjiào fāngbiàn.", "es": "Avión o tren, las dos opciones valen; el tren es más cómodo.", "keywords": ["或者", "都可以"], "next": "n4", "goal": 1 },
+            { "zh": "您还是坐高铁吧，又快又便宜。", "py": "Nín háishi zuò gāotiě ba, yòu kuài yòu piányi.", "es": "Mejor vaya en tren: es rápido y barato.", "keywords": ["还是", "吧"], "next": "n4", "goal": 2 }
+          ],
+          "hint": "En una afirmación «o» es 或者; para aconsejar, 还是…吧."
+        },
+        "n3": {
+          "npc": { "zh": "十天左右。住大酒店还是普通的酒店，我还没想好。", "py": "Shí tiān zuǒyòu. Zhù dà jiǔdiàn háishi pǔtōng de jiǔdiàn, wǒ hái méi xiǎnghǎo.", "es": "Unos diez días. Aún no he pensado si un hotel grande o uno normal." },
+          "user": [
+            { "zh": "大的或者普通的都可以。如果您想省钱，还是住普通的吧。", "py": "Dà de huòzhě pǔtōng de dōu kěyǐ. Rúguǒ nín xiǎng shěng qián, háishi zhù pǔtōng de ba.", "es": "Grande o normal, cualquiera vale. Si quiere ahorrar, mejor uno normal.", "keywords": ["或者", "还是"], "next": "n4", "goal": 2 },
+            { "zh": "您想直接去马德里，还是先去巴塞罗那？", "py": "Nín xiǎng zhíjiē qù Mǎdélǐ, háishi xiān qù Bāsàiluónà?", "es": "¿Quiere ir directamente a Madrid o primero a Barcelona?", "keywords": ["还是"], "next": "n2", "goal": 0 }
+          ],
+          "hint": "Ofrece alternativas con 或者 y aconseja con 还是…吧."
+        },
+        "n4": {
+          "npc": { "zh": "好。在西班牙，我可以使用微信支付吗？", "py": "Hǎo. Zài Xībānyá, wǒ kěyǐ shǐyòng Wēixìn zhīfù ma?", "es": "Bien. En España, ¿puedo pagar con WeChat?" },
+          "user": [
+            { "zh": "很多地方不能用，您还是带一张信用卡吧。", "py": "Hěn duō dìfang bù néng yòng, nín háishi dài yì zhāng xìnyòngkǎ ba.", "es": "En muchos sitios no; mejor lleve una tarjeta de crédito.", "keywords": ["还是", "信用卡"], "next": "n5", "goal": 2 },
+            { "zh": "有的地方可以，有的地方不可以。您带一点儿钱，也带一张信用卡吧。", "py": "Yǒude dìfang kěyǐ, yǒude dìfang bù kěyǐ. Nín dài yìdiǎnr qián, yě dài yì zhāng xìnyòngkǎ ba.", "es": "En unos sitios sí y en otros no. Mejor lleve algo de dinero y también una tarjeta.", "keywords": ["有的", "吧"], "next": "n5", "goal": 2 }
+          ],
+          "hint": "Aconseja con 还是…吧."
+        },
+        "n5": {
+          "npc": { "zh": "谢谢你。我今天还要跟我先生商量一下。", "py": "Xièxie nǐ. Wǒ jīntiān hái yào gēn wǒ xiānsheng shāngliang yíxià.", "es": "Gracias. Hoy todavía tengo que hablarlo con mi marido." },
+          "user": [
+            { "zh": "没问题。您商量好了，明天再来吧。", "py": "Méi wèntí. Nín shāngliang hǎo le, míngtiān zài lái ba.", "es": "No hay problema. Cuando lo hayan hablado, vuelva mañana.", "keywords": ["再来"], "next": "n6", "goal": 3 },
+            { "zh": "好的。有问题的话，您直接给我打电话或者发微信。", "py": "Hǎo de. Yǒu wèntí dehuà, nín zhíjiē gěi wǒ dǎ diànhuà huòzhě fā Wēixìn.", "es": "De acuerdo. Si tiene alguna duda, llámeme directamente o mándeme un WeChat.", "keywords": ["直接", "或者"], "next": "n6", "goal": 1 }
+          ],
+          "hint": "Propón volver otro día con 再 (lo que aún no ha pasado): 明天再来吧."
+        },
+        "n6": {
+          "npc": { "zh": "好，明天我再来。你们的服务真好！", "py": "Hǎo, míngtiān wǒ zài lái. Nǐmen de fúwù zhēn hǎo!", "es": "Bien, mañana vuelvo. ¡Qué bien atendéis!" },
+          "user": [
+            { "zh": "谢谢！欢迎您明天再来。", "py": "Xièxie! Huānyíng nín míngtiān zài lái.", "es": "¡Gracias! La esperamos mañana.", "keywords": ["欢迎", "再来"], "next": "n7" },
+            { "zh": "不客气，再见！", "py": "Bú kèqi, zàijiàn!", "es": "De nada, ¡hasta luego!", "keywords": ["再见"], "next": "n7" }
+          ],
+          "hint": "Despídete con 欢迎…再来."
+        },
+        "n7": {
+          "npc": { "zh": "再见！", "py": "Zàijiàn!", "es": "¡Adiós!" },
+          "end": true,
+          "feedback": "Buena atención al cliente: preguntaste con 还是 (sin 吗), ofreciste alternativas con 或者, aconsejaste con 还是…吧 y propusiste volver con 再 (no con 又, porque aún no ha pasado)."
+        }
+      }
+    }
+  ]
+}

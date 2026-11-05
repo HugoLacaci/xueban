@@ -1,0 +1,135 @@
+{
+  "id": "a2-u07-l1",
+  "title": "Lo hablas muy bien: verbo + 得 + cómo",
+  "zh": "你说得很好",
+  "goal": "Decir cómo de bien, mal o rápido hace alguien algo con el complemento de grado V + 得 + adjetivo.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "得", "pinyin": "de", "es": "(partícula del complemento de grado)", "note": "V + 得 + adjetivo: 说得很好 = lo habla muy bien. Sin tono." },
+    { "hanzi": "运动", "pinyin": "yùndòng", "es": "deporte; hacer deporte", "note": "做运动 = hacer deporte. 你喜欢什么运动？" },
+    { "hanzi": "体育", "pinyin": "tǐyù", "es": "deporte (como campo), educación física", "note": "体育课 = clase de educación física; 体育节目 = programa de deportes." },
+    { "hanzi": "跑步", "pinyin": "pǎobù", "es": "correr, salir a correr", "note": "Verbo separable: 跑半个小时步 (lo vemos en la lección 2)." },
+    { "hanzi": "游泳", "pinyin": "yóuyǒng", "es": "nadar; natación", "note": "Verbo separable: 游 (nadar) + 泳." },
+    { "hanzi": "游", "pinyin": "yóu", "es": "nadar (el verbo solo)", "note": "游得很快 = nada muy rápido." },
+    { "hanzi": "跳舞", "pinyin": "tiàowǔ", "es": "bailar", "note": "Verbo separable: 跳 (saltar) + 舞 (baile)." },
+    { "hanzi": "跳", "pinyin": "tiào", "es": "saltar; bailar (en 跳得…)", "note": "她跳得很好 = baila muy bien." },
+    { "hanzi": "足球", "pinyin": "zúqiú", "es": "fútbol", "note": "Jugar al fútbol es 踢足球 (tī, «dar patadas»); de momento, 看足球 y 喜欢足球." },
+    { "hanzi": "网球", "pinyin": "wǎngqiú", "es": "tenis", "note": "打网球 = jugar al tenis (lit. «golpear la pelota de red»)." },
+    { "hanzi": "排球", "pinyin": "páiqiú", "es": "voleibol", "note": "打排球 = jugar al voleibol." },
+    { "hanzi": "加油", "pinyin": "jiāyóu", "es": "¡ánimo!, ¡vamos!", "note": "Lit. «echar gasolina». Se grita en los partidos y antes de un examen." }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "你汉语说得很好！", "py": "Nǐ Hànyǔ shuō de hěn hǎo!", "es": "¡Hablas muy bien chino!" },
+        { "zh": "我游泳游得不太快。", "py": "Wǒ yóuyǒng yóu de bú tài kuài.", "es": "No nado muy rápido." },
+        { "zh": "他网球打得怎么样？", "py": "Tā wǎngqiú dǎ de zěnmeyàng?", "es": "¿Qué tal juega al tenis?" }
+      ]
+    },
+    { "type": "vocab", "title": "Deportes y el 得 del grado", "words": ["得", "运动", "体育", "跑步", "游泳", "游", "跳舞", "跳", "足球", "网球", "排球", "加油"] },
+    {
+      "type": "phonetics-drill",
+      "title": "得 sin tono y el tercer tono que va delante",
+      "markdown": "**得** del complemento de grado se lee **de**, en **tono neutro**: corto, flojo, sin subir ni bajar. No es *dé* (得到 «conseguir») ni *děi* («tener que»).\n\nCuando el verbo es de **tercer tono** (跑 *pǎo*, 写 *xiě*, 打 *dǎ*), delante de 得 se queda en **medio tercer tono**: baja y no vuelve a subir; el *de* sale un poco más alto por contraste. 跑得很快 → *pǎo de hěn kuài*.\n\nY dos palabras de hoy con iniciales que a los hispanohablantes se les escapan: **t** aspirada de 跳舞 *tiàowǔ* (con aire, no «d»), y **y** + *-ong* de 游泳 *yóuyǒng*.",
+      "items": [
+        { "audio": "说得很好", "options": ["shuō de hěn hǎo", "shuō dé hěn hǎo", "shuō děi hěn hǎo"], "answer": 0, "explain": "El 得 del grado es siempre neutro: de." },
+        { "audio": "跑得很快", "prompt": "¿Cómo suena 跑 delante de 得?", "options": ["Medio tercer tono: baja y no sube", "Segundo tono: sube", "Cuarto tono: cae"], "answer": 0, "explain": "Delante de un tono neutro, el tercer tono se queda abajo." },
+        { "audio": "跳舞", "options": ["tiàowǔ", "diàowǔ", "tiáowǔ"], "answer": 0, "explain": "t aspirada (con soplo) y cuarto tono." },
+        { "audio": "游泳", "options": ["yóuyǒng", "yǒuyóng", "yóuyōng"], "answer": 0, "explain": "Segundo + tercero: sube y luego baja." },
+        { "audio": "加油", "options": ["jiāyóu", "jiāyōu", "jiàyóu"], "answer": 0, "explain": "Primero (alto y plano) + segundo (sube): ¡como un grito de ánimo!" }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["得", "跳"],
+      "mnemonics": {
+        "得": "彳 (paso, caminar) + una mano que coge algo valioso: ir y conseguir → 得到 «obtener». Como partícula, une el verbo con lo que «sale» de hacerlo: 说得很好.",
+        "跳": "足 (pie) + 兆 (da el sonido, zhào → tiào): lo que hacen los pies al despegar del suelo, saltar."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "Verbo + 得 + cómo: 说得很好",
+      "markdown": "En español decimos «habla **muy bien**», «nada **rápido**»: el «cómo» va detrás del verbo. En chino también va detrás, pero **unido con 得**: 说**得**很好, 游**得**很快. Es el **complemento de grado** (o de estado): cuenta cómo sale la acción, que es habitual o ya ha pasado.\n\n- El adjetivo lleva casi siempre **很, 非常, 特别, 不太…**, igual que cuando es predicado.\n- **Negativa**: 不 va **delante del adjetivo**, no del verbo: 说得**不**好, 跑得**不**快.\n- **Pregunta**: 说得**怎么样**？ / 说得**好不好**？ / 说得好**吗**？\n\n**Con objeto, cuidado**: detrás de V得 no puede ir el objeto (*说得汉语很好*). Hay dos salidas:\n1. **El objeto delante, como tema**: 他**汉语**说得很好.\n2. **Repetir el verbo**: 他**说汉语说得**很好.\n\n**En el esqueleto**: «V得» va en *Verbo 1* y el grado en *Complemento*. Si el objeto va delante como tema, lo ponemos junto al sujeto (*Sujeto* = 他汉语). Si se repite el verbo, *Verbo 1* = 说汉语 y *Verbo 2* = 说得.",
+      "focus": ["verb1", "complement"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "她", "py": "tā" }, "verb1": { "zh": "跳得", "py": "tiào de" }, "complement": { "zh": "非常好", "py": "fēicháng hǎo" } }, "end": "。", "es": "Baila muy bien." },
+        { "slots": { "subject": { "zh": "他网球", "py": "tā wǎngqiú" }, "verb1": { "zh": "打得", "py": "dǎ de" }, "complement": { "zh": "很好", "py": "hěn hǎo" } }, "end": "。", "es": "Juega muy bien al tenis.", "esOrder": [{ "text": "Juega", "slot": "verb1" }, { "text": "muy bien", "slot": "complement" }, { "text": "al tenis", "slot": "subject" }] },
+        { "slots": { "subject": { "zh": "我朋友", "py": "wǒ péngyou" }, "verb1": { "zh": "说汉语", "py": "shuō Hànyǔ" }, "verb2": { "zh": "说得", "py": "shuō de" }, "complement": { "zh": "很流利", "py": "hěn liúlì" } }, "end": "。", "es": "Mi amigo habla chino con mucha soltura." },
+        { "slots": { "subject": { "zh": "大卫", "py": "Dàwèi" }, "verb1": { "zh": "游得", "py": "yóu de" }, "complement": { "zh": "特别快", "py": "tèbié kuài" } }, "end": "。", "es": "David nada rapidísimo." },
+        { "slots": { "subject": { "zh": "我们", "py": "wǒmen" }, "time": { "zh": "昨天", "py": "zuótiān" }, "verb1": { "zh": "玩儿得", "py": "wánr de" }, "complement": { "zh": "很开心", "py": "hěn kāixīn" } }, "end": "。", "es": "Ayer nos lo pasamos muy bien." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "verb1": { "zh": "跑得", "py": "pǎo de" }, "complement": { "zh": "不快", "py": "bú kuài" } }, "end": "。", "es": "No corro rápido." },
+        { "slots": { "subject": { "zh": "我排球", "py": "wǒ páiqiú" }, "verb1": { "zh": "打得", "py": "dǎ de" }, "complement": { "zh": "不太好", "py": "bú tài hǎo" } }, "end": "。", "es": "No juego muy bien al voleibol." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "游泳", "py": "yóuyǒng" }, "verb2": { "zh": "游得", "py": "yóu de" }, "complement": { "zh": "怎么样", "py": "zěnmeyàng" } }, "end": "？", "es": "¿Qué tal nadas?" },
+        { "slots": { "subject": { "zh": "安娜", "py": "Ānnà" }, "verb1": { "zh": "跳舞", "py": "tiàowǔ" }, "verb2": { "zh": "跳得", "py": "tiào de" }, "complement": { "zh": "好", "py": "hǎo" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿Ana baila bien?" }
+      ],
+      "mistakes": [
+        { "wrong": "他说汉语很好。", "right": "他汉语说得很好。 / 他说汉语说得很好。", "why": "El «bien» de cómo haces algo va detrás del verbo con 得. 他说汉语很好 suena a «que hable chino está muy bien»." },
+        { "wrong": "他说得汉语很好。", "right": "他汉语说得很好。", "why": "Detrás de V得 no puede ir el objeto: ponlo delante como tema o repite el verbo." },
+        { "wrong": "我不说得好。", "right": "我说得不好。", "why": "La negación va en el complemento, delante del adjetivo." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "¿Qué deporte te gusta?",
+      "lines": [
+        { "speaker": "小李", "zh": "雨果，你周末喜欢做什么运动？", "py": "Yǔguǒ, nǐ zhōumò xǐhuan zuò shénme yùndòng?", "es": "Hugo, ¿qué deporte te gusta hacer los fines de semana?" },
+        { "speaker": "雨果", "zh": "我喜欢跑步和游泳。你呢？", "py": "Wǒ xǐhuan pǎobù hé yóuyǒng. Nǐ ne?", "es": "Me gusta correr y nadar. ¿Y a ti?" },
+        { "speaker": "小李", "zh": "我喜欢打网球，也常常打排球。你游泳游得怎么样？", "py": "Wǒ xǐhuan dǎ wǎngqiú, yě chángcháng dǎ páiqiú. Nǐ yóuyǒng yóu de zěnmeyàng?", "es": "A mí me gusta jugar al tenis, y también juego mucho al voleibol. ¿Qué tal nadas?" },
+        { "speaker": "雨果", "zh": "游得还可以，不太快。大卫游得特别快！", "py": "Yóu de hái kěyǐ, bú tài kuài. Dàwèi yóu de tèbié kuài!", "es": "Nado bastante bien, pero no muy rápido. ¡David nada rapidísimo!" },
+        { "speaker": "小李", "zh": "我听说大卫跑步也跑得很快。", "py": "Wǒ tīngshuō Dàwèi pǎobù yě pǎo de hěn kuài.", "es": "He oído que David también corre muy rápido." },
+        { "speaker": "雨果", "zh": "对，他每天早上都跑五公里。", "py": "Duì, tā měi tiān zǎoshang dōu pǎo wǔ gōnglǐ.", "es": "Sí, corre cinco kilómetros todas las mañanas." },
+        { "speaker": "小李", "zh": "你汉语说得很好！你学了多长时间？", "py": "Nǐ Hànyǔ shuō de hěn hǎo! Nǐ xué le duō cháng shíjiān?", "es": "¡Hablas muy bien chino! ¿Cuánto tiempo llevas estudiando?" },
+        { "speaker": "雨果", "zh": "哪里哪里，我说得不太好。我学了一年。", "py": "Nǎli nǎli, wǒ shuō de bú tài hǎo. Wǒ xué le yì nián.", "es": "Qué va, no lo hablo muy bien. Llevo un año." },
+        { "speaker": "小李", "zh": "星期六我们去打网球吧！", "py": "Xīngqīliù wǒmen qù dǎ wǎngqiú ba!", "es": "¡El sábado vamos a jugar al tenis!" },
+        { "speaker": "雨果", "zh": "好啊！我打得不太好，没关系吧？", "py": "Hǎo a! Wǒ dǎ de bú tài hǎo, méi guānxi ba?", "es": "¡Vale! No juego muy bien, ¿no importa?" },
+        { "speaker": "小李", "zh": "没关系，加油！", "py": "Méi guānxi, jiāyóu!", "es": "No pasa nada, ¡ánimo!" }
+      ],
+      "notes": "哪里哪里 («¿dónde, dónde?») es la respuesta modesta típica a un cumplido: en China no se contesta «gracias» a 你汉语说得很好, sino que se quita importancia. 还可以 = «no está mal, bastante bien». 加油 se oye en cualquier partido y antes de cualquier examen."
+    },
+    { "type": "exercises", "count": 16, "bank": ["g-complements", "u12", "g-modal-verbs"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "他" }, "verb1": { "zh": "跳得" }, "complement": { "zh": "很好" } }, "end": "。", "es": "Baila muy bien." }, "distractors": ["是"] },
+        { "sentence": { "slots": { "subject": { "zh": "安娜汉语" }, "verb1": { "zh": "说得" }, "complement": { "zh": "非常流利" } }, "end": "。", "es": "Ana habla chino con muchísima soltura." }, "distractors": ["说"] },
+        { "sentence": { "slots": { "subject": { "zh": "我" }, "verb1": { "zh": "游泳" }, "verb2": { "zh": "游得" }, "complement": { "zh": "不太快" } }, "end": "。", "es": "No nado muy rápido." }, "distractors": ["不"] },
+        { "sentence": { "slots": { "time0": { "zh": "上个星期六" }, "subject": { "zh": "我们" }, "with": { "zh": "跟小李一起" }, "place": { "zh": "在学校" }, "verb1": { "zh": "打网球" }, "verb2": { "zh": "打得" }, "complement": { "zh": "很开心" } }, "end": "。", "es": "El sábado pasado jugamos al tenis con Xiao Li en la universidad y nos lo pasamos muy bien." } }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "你汉语说得很好。", "py": "Nǐ Hànyǔ shuō de hěn hǎo.", "es": "Hablas muy bien chino." },
+        { "zh": "哪里哪里，我说得不太好。", "py": "Nǎli nǎli, wǒ shuō de bú tài hǎo.", "es": "Qué va, no lo hablo muy bien." },
+        { "zh": "他游泳游得特别快。", "py": "Tā yóuyǒng yóu de tèbié kuài.", "es": "Nada rapidísimo." },
+        { "zh": "加油！", "py": "Jiāyóu!", "es": "¡Ánimo!" }
+      ],
+      "respond": [
+        { "q": { "zh": "你喜欢做什么运动？", "py": "Nǐ xǐhuan zuò shénme yùndòng?", "es": "¿Qué deporte te gusta hacer?" }, "model": { "zh": "我喜欢跑步，每天跑三公里。", "py": "Wǒ xǐhuan pǎobù, měi tiān pǎo sān gōnglǐ.", "es": "Me gusta correr: corro tres kilómetros al día." } },
+        { "q": { "zh": "你游泳游得怎么样？", "py": "Nǐ yóuyǒng yóu de zěnmeyàng?", "es": "¿Qué tal nadas?" }, "model": { "zh": "我游得还可以，不太快。", "py": "Wǒ yóu de hái kěyǐ, bú tài kuài.", "es": "Nado bastante bien, pero no muy rápido." } },
+        { "q": { "zh": "你汉语说得怎么样？", "py": "Nǐ Hànyǔ shuō de zěnmeyàng?", "es": "¿Qué tal hablas chino?" }, "model": { "zh": "我说得还不太好，我每天都练习。", "py": "Wǒ shuō de hái bú tài hǎo, wǒ měi tiān dōu liànxí.", "es": "Todavía no lo hablo muy bien; practico todos los días." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Los deportes de mis amigos",
+      "text": "我的朋友都很喜欢运动。小李网球打得很好，他每个星期打三次。大卫跑步跑得特别快，每天早上都跑五公里。安娜喜欢跳舞，她跳得非常漂亮。我也喜欢游泳，我游得不太快。王老师说，运动对身体很好。星期六我们一起去学校游泳，大家都说：“雨果，加油！”",
+      "es": "A todos mis amigos les encanta el deporte. Xiao Li juega muy bien al tenis: juega tres veces por semana. David corre rapidísimo: corre cinco kilómetros todas las mañanas. A Ana le gusta bailar y baila precioso. A mí me gusta nadar, pero no nado muy rápido. La profesora Wang dice que el deporte es muy bueno para la salud. El sábado vamos todos juntos a nadar a la universidad y todos me dicen: «¡Hugo, ánimo!».",
+      "questions": [
+        { "q": "¿Quién corre rapidísimo?", "options": ["大卫", "小李", "安娜"], "answer": 0 },
+        { "q": "¿Cuántas veces por semana juega Xiao Li al tenis?", "options": ["三次", "五次", "一次"], "answer": 0 },
+        { "q": "¿Qué tal nada Hugo?", "options": ["No muy rápido", "Rapidísimo", "No sabe nadar"], "answer": 0 },
+        { "q": "¿Cómo baila Ana?", "options": ["跳得非常漂亮", "跳得不太好", "No baila"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

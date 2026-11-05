@@ -1,0 +1,143 @@
+{
+  "id": "b1-u08-l2",
+  "title": "No solo…, sino también: 不但 / 不仅 / 不光…而且 / 并且",
+  "zh": "不但方便，而且便宜",
+  "goal": "Sumar argumentos en una exposición con 不但 / 不仅 / 不光…而且 / 并且 y ordenarlos con 首先, 其次, 另外 y 一方面…另一方面.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "不仅", "pinyin": "bùjǐn", "es": "no solo", "note": "= 不但, algo más formal: 不仅…而且…" },
+    { "hanzi": "不光", "pinyin": "bùguāng", "es": "no solo (coloquial)", "note": "= 不但, muy oral: 他不光会唱，还会跳." },
+    { "hanzi": "并且", "pinyin": "bìngqiě", "es": "y además", "note": "Une dos verbos o dos frases, nunca dos nombres: 同意并且支持." },
+    { "hanzi": "并", "pinyin": "bìng", "es": "y (formal); 并不 / 并没有 = en realidad no", "note": "并不难 = no es tan difícil (como crees): desmiente una idea." },
+    { "hanzi": "仅", "pinyin": "jǐn", "es": "solo, solamente (escrito)", "note": "不仅 = no solo." },
+    { "hanzi": "仅仅", "pinyin": "jǐnjǐn", "es": "solo, nada más que", "note": "Insiste en que es poco: 仅仅两天." },
+    { "hanzi": "另外", "pinyin": "lìngwài", "es": "además; otro", "note": "Al principio de frase: 另外，… = además, …" },
+    { "hanzi": "首先", "pinyin": "shǒuxiān", "es": "en primer lugar" },
+    { "hanzi": "其次", "pinyin": "qícì", "es": "en segundo lugar" },
+    { "hanzi": "一方面", "pinyin": "yì fāngmiàn", "es": "por un lado", "note": "一方面…，另一方面… = por un lado…, por otro…" },
+    { "hanzi": "另一方面", "pinyin": "lìng yì fāngmiàn", "es": "por otro lado" },
+    { "hanzi": "强调", "pinyin": "qiángdiào", "es": "recalcar, subrayar", "note": "强 aquí es qiáng (fuerte)." },
+    { "hanzi": "指出", "pinyin": "zhǐchū", "es": "señalar, indicar (un problema, un error)" }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "上海的地铁不但很方便，而且很便宜。", "py": "Shànghǎi de dìtiě búdàn hěn fāngbiàn, érqiě hěn piányi.", "es": "El metro de Shanghái no solo es muy cómodo, sino también muy barato." },
+        { "zh": "首先，我们谈这个话题的意义；其次，每个人说自己的看法。", "py": "Shǒuxiān, wǒmen tán zhège huàtí de yìyì; qícì, měi ge rén shuō zìjǐ de kànfǎ.", "es": "En primer lugar, hablamos del sentido del tema; en segundo lugar, cada uno dice su opinión." },
+        { "zh": "这个问题并不难。", "py": "Zhège wèntí bìng bù nán.", "es": "Este problema no es tan difícil (como parece)." }
+      ]
+    },
+    { "type": "vocab", "title": "Ordenar y sumar argumentos", "words": ["不仅", "不光", "并且", "并", "仅", "仅仅", "另外", "首先", "其次", "一方面", "另一方面", "强调", "指出"] },
+    {
+      "type": "phonetics-drill",
+      "title": "不 en 不但 / 不仅 / 不光 y la voz en suspenso",
+      "markdown": "**不** cambia según el tono que le sigue, también dentro de los conectores:\n\n- **不但 búdàn**: delante de cuarto tono, 不 pasa a **segundo**.\n- **不仅 bùjǐn**, **不光 bùguāng**: delante de tercero y primero, se queda en **cuarto**.\n\n**仅仅 jǐnjǐn** son dos terceros tonos: el primero se dice como **segundo** (*jínjǐn*), igual que 你好.\n\n**Ritmo de 不但…，而且…**: en la coma la voz queda **en suspenso** (no cae del todo), porque falta lo más importante; **而且** se dice con más fuerza y la frase cae al final. Lo mismo con **首先…，其次…** y **一方面…，另一方面…**.",
+      "items": [
+        { "audio": "不但", "options": ["búdàn", "bùdàn", "bùdān"], "answer": 0, "explain": "不 + cuarto tono → bú." },
+        { "audio": "不仅", "options": ["bùjǐn", "bújǐn", "bùjìn"], "answer": 0, "explain": "不 + tercer tono → se queda en bù." },
+        { "audio": "仅仅", "prompt": "¿Cómo suena el primer 仅?", "options": ["Sube, como un segundo tono", "Baja y sube entero", "Cae, como un cuarto tono"], "answer": 0, "explain": "3 + 3 → el primero pasa a segundo tono." },
+        { "audio": "他不但会说，而且会写。", "prompt": "¿Qué hace la voz en la coma?", "options": ["Queda en suspenso: falta la segunda parte", "Cae del todo, como al final", "Sube mucho, como en una pregunta"], "answer": 0 },
+        { "audio": "其次", "options": ["qícì", "qīcì", "jícì"], "answer": 0, "explain": "q aspirada + segundo tono; 次 cuarto tono." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["仅", "并"],
+      "mnemonics": {
+        "仅": "亻 (persona) + 又 (una mano): una sola persona con una sola mano, «solo, nada más». 不仅 = «no solo».",
+        "并": "Dos personas de pie, una al lado de la otra (la forma antigua eran dos 立 juntos): «juntos, a la vez» → 并且 «y además»."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "Conectores de suma: 不但…而且, 首先…其次, 一方面…另一方面",
+      "markdown": "Viste **不但…，而且…** en A2. En B1 tienes **sinónimos** y **ordenadores** para una exposición:\n\n| Para… | Conectores |\n|---|---|\n| sumar (la 2.ª parte pesa más) | **不但 / 不仅 / 不光** …，**而且 / 并且** …(还 / 也) |\n| ordenar | **首先**…，**其次**…，**另外**… |\n| dos caras de algo | **一方面**…，**另一方面**… |\n\n**Convención del esqueleto para los conectores (toda la Etapa 3)**: **una fila por cláusula**. El **primer conector** va en **Tiempo inicial** si está delante del sujeto, o en **Adverbios** si va detrás; el **segundo** abre la segunda cláusula en **Tiempo inicial** (而且, 并且, 另一方面) o va en **Adverbios** si es un adverbio de enlace (就, 也, 还). En resumen: *primer conector en Tiempo inicial, segundo en Adverbios de la segunda cláusula, o dos filas*.\n\n- **Mismo sujeto** → 不但 **detrás** del sujeto: 她**不光**会说汉语，**并且**说得很流利.\n- **Dos sujetos** → 不仅 **delante** del primero: **不仅**雨果喜欢这个话题，**而且**他的同学**也**喜欢.\n- **并且** une verbos o frases, **nunca nombres** (para nombres, 和).\n- **并不 / 并没有** no suma: **desmiente** lo que el otro cree: 这个问题**并不**难 («no es tan difícil como piensas»).\n- **仅仅** = «solo» (poco): 我们**仅仅**用了两天.",
+      "focus": ["time0", "adverb"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "上海的地铁", "py": "Shànghǎi de dìtiě" }, "adverb": { "zh": "不但很", "py": "búdàn hěn" }, "verb1": { "zh": "方便", "py": "fāngbiàn" } }, "end": "，", "es": "El metro de Shanghái no solo es muy cómodo… (1.ª parte)", "esOrder": [{ "text": "El metro de Shanghái", "slot": "subject" }, { "text": "no solo es muy", "slot": "adverb" }, { "text": "cómodo", "slot": "verb1" }] },
+        { "slots": { "time0": { "zh": "而且", "py": "érqiě" }, "adverb": { "zh": "很", "py": "hěn" }, "verb1": { "zh": "便宜", "py": "piányi" } }, "end": "。", "es": "…sino también muy barato. (2.ª parte)" },
+        { "slots": { "time0": { "zh": "不仅", "py": "bùjǐn" }, "subject": { "zh": "雨果", "py": "Yǔguǒ" }, "verb1": { "zh": "喜欢", "py": "xǐhuan" }, "object": { "zh": "这个话题", "py": "zhège huàtí" } }, "end": "，", "es": "No solo a Hugo le gusta este tema… (1.ª parte)" },
+        { "slots": { "time0": { "zh": "而且", "py": "érqiě" }, "subject": { "zh": "他的同学", "py": "tā de tóngxué" }, "adverb": { "zh": "也都", "py": "yě dōu" }, "verb1": { "zh": "喜欢", "py": "xǐhuan" } }, "end": "。", "es": "…sino que también les gusta a todos sus compañeros. (2.ª parte)" },
+        { "slots": { "subject": { "zh": "她", "py": "tā" }, "adverb": { "zh": "不光", "py": "bùguāng" }, "aux": { "zh": "会", "py": "huì" }, "verb1": { "zh": "说", "py": "shuō" }, "object": { "zh": "汉语", "py": "Hànyǔ" } }, "end": "，", "es": "No solo sabe hablar chino… (1.ª parte)" },
+        { "slots": { "time0": { "zh": "并且", "py": "bìngqiě" }, "verb1": { "zh": "说得", "py": "shuō de" }, "complement": { "zh": "很流利", "py": "hěn liúlì" } }, "end": "。", "es": "…y además lo habla con mucha soltura. (2.ª parte)" },
+        { "slots": { "time0": { "zh": "首先，", "py": "shǒuxiān," }, "subject": { "zh": "我们", "py": "wǒmen" }, "aux": { "zh": "要", "py": "yào" }, "verb1": { "zh": "谈", "py": "tán" }, "object": { "zh": "这个话题的意义", "py": "zhège huàtí de yìyì" } }, "end": "。", "es": "En primer lugar, tenemos que hablar del sentido de este tema." },
+        { "slots": { "time0": { "zh": "其次，", "py": "qícì," }, "subject": { "zh": "每个人", "py": "měi ge rén" }, "aux": { "zh": "要", "py": "yào" }, "verb1": { "zh": "说", "py": "shuō" }, "object": { "zh": "自己的看法", "py": "zìjǐ de kànfǎ" } }, "end": "。", "es": "En segundo lugar, cada uno tiene que dar su opinión." },
+        { "slots": { "time0": { "zh": "一方面，", "py": "yì fāngmiàn," }, "subject": { "zh": "上海的东西", "py": "Shànghǎi de dōngxi" }, "adverb": { "zh": "比较", "py": "bǐjiào" }, "verb1": { "zh": "贵", "py": "guì" } }, "end": "，", "es": "Por un lado, en Shanghái las cosas son bastante caras… (1.ª parte)" },
+        { "slots": { "time0": { "zh": "另一方面，", "py": "lìng yì fāngmiàn," }, "subject": { "zh": "这里的工作机会", "py": "zhèlǐ de gōngzuò jīhuì" }, "adverb": { "zh": "很", "py": "hěn" }, "verb1": { "zh": "多", "py": "duō" } }, "end": "。", "es": "…por otro, aquí hay muchas oportunidades de trabajo. (2.ª parte)" },
+        { "slots": { "subject": { "zh": "我们", "py": "wǒmen" }, "adverb": { "zh": "仅仅", "py": "jǐnjǐn" }, "verb1": { "zh": "用了", "py": "yòng le" }, "object": { "zh": "两天时间", "py": "liǎng tiān shíjiān" } }, "end": "。", "es": "Solo hemos necesitado dos días." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "这个问题", "py": "zhège wèntí" }, "adverb": { "zh": "并不", "py": "bìng bù" }, "verb1": { "zh": "难", "py": "nán" } }, "end": "。", "es": "Este problema no es tan difícil (como crees)." },
+        { "slots": { "subject": { "zh": "这个办法", "py": "zhège bànfǎ" }, "adverb": { "zh": "不仅不", "py": "bùjǐn bù" }, "verb1": { "zh": "便宜", "py": "piányi" } }, "end": "，", "es": "Este método no solo no es barato… (1.ª parte)" },
+        { "slots": { "time0": { "zh": "而且", "py": "érqiě" }, "adverb": { "zh": "也不", "py": "yě bù" }, "verb1": { "zh": "方便", "py": "fāngbiàn" } }, "end": "。", "es": "…sino que tampoco es cómodo. (2.ª parte)" }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "王老师", "py": "Wáng lǎoshī" }, "adverb": { "zh": "为什么", "py": "wèishénme" }, "verb1": { "zh": "强调", "py": "qiángdiào" }, "object": { "zh": "这一点", "py": "zhè yì diǎn" } }, "end": "？", "es": "¿Por qué recalca la profesora Wang este punto?" },
+        { "slots": { "subject": { "zh": "老师", "py": "lǎoshī" }, "verb1": { "zh": "指出了", "py": "zhǐchū le" }, "object": { "zh": "什么问题", "py": "shénme wèntí" } }, "end": "？", "es": "¿Qué problema ha señalado el profesor?" }
+      ],
+      "mistakes": [
+        { "wrong": "不但我会说汉语，而且我会写汉字。", "right": "我不但会说汉语，而且会写汉字。", "why": "Con un solo sujeto, 不但 va detrás del sujeto y la segunda parte no lo repite." },
+        { "wrong": "上海很方便，上海而且很便宜。", "right": "上海不但很方便，而且很便宜。", "why": "而且 abre la segunda cláusula: va delante del sujeto (o sin sujeto), nunca detrás." },
+        { "wrong": "我并且他都是留学生。", "right": "我和他都是留学生。", "why": "并且 une verbos o frases; para unir nombres se usa 和." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Preparando la exposición del grupo",
+      "lines": [
+        { "speaker": "大卫", "zh": "我们的小组报告是“在上海生活”。谁先说？", "py": "Wǒmen de xiǎozǔ bàogào shì “zài Shànghǎi shēnghuó”. Shéi xiān shuō?", "es": "Nuestra exposición de grupo es «Vivir en Shanghái». ¿Quién empieza?" },
+        { "speaker": "安娜", "zh": "我先说吧。首先，上海的交通不但很方便，而且很便宜。", "py": "Wǒ xiān shuō ba. Shǒuxiān, Shànghǎi de jiāotōng búdàn hěn fāngbiàn, érqiě hěn piányi.", "es": "Empiezo yo. En primer lugar, el transporte en Shanghái no solo es muy cómodo, sino también muy barato." },
+        { "speaker": "雨果", "zh": "其次，在这里用手机付钱非常方便，不光买东西，坐地铁也可以。", "py": "Qícì, zài zhèlǐ yòng shǒujī fù qián fēicháng fāngbiàn, bùguāng mǎi dōngxi, zuò dìtiě yě kěyǐ.", "es": "En segundo lugar, aquí pagar con el móvil es comodísimo: no solo para comprar, también para el metro." },
+        { "speaker": "小李", "zh": "另外，我们还要谈一谈问题。一方面，上海的工作机会很多；另一方面，房租太贵了。", "py": "Lìngwài, wǒmen hái yào tán yi tán wèntí. Yì fāngmiàn, Shànghǎi de gōngzuò jīhuì hěn duō; lìng yì fāngmiàn, fángzū tài guì le.", "es": "Además, también tenemos que hablar de los problemas. Por un lado, en Shanghái hay muchas oportunidades de trabajo; por otro, el alquiler es carísimo." },
+        { "speaker": "大卫", "zh": "对，王老师强调过，报告不能只说好的方面。", "py": "Duì, Wáng lǎoshī qiángdiào guo, bàogào bù néng zhǐ shuō hǎo de fāngmiàn.", "es": "Sí, la profesora Wang recalcó que una exposición no puede hablar solo de lo bueno." },
+        { "speaker": "安娜", "zh": "她上次还指出，我们的例子太少了。", "py": "Tā shàng cì hái zhǐchū, wǒmen de lìzi tài shǎo le.", "es": "La última vez también señaló que teníamos muy pocos ejemplos." },
+        { "speaker": "雨果", "zh": "我有一个例子：我住的地方离学校很远，仅仅房租就要四千块。", "py": "Wǒ yǒu yí ge lìzi: wǒ zhù de dìfang lí xuéxiào hěn yuǎn, jǐnjǐn fángzū jiù yào sìqiān kuài.", "es": "Tengo un ejemplo: donde vivo está lejísimos de la universidad, y solo el alquiler ya son cuatro mil yuanes." },
+        { "speaker": "小李", "zh": "四千块并不算贵，在市中心要六七千呢！", "py": "Sìqiān kuài bìng bú suàn guì, zài shì zhōngxīn yào liù-qīqiān ne!", "es": "Cuatro mil no es tan caro, ¡en el centro te piden seis o siete mil!" },
+        { "speaker": "大卫", "zh": "好，这个例子不仅很真实，而且大家都能明白。", "py": "Hǎo, zhège lìzi bùjǐn hěn zhēnshí, érqiě dàjiā dōu néng míngbai.", "es": "Bien, este ejemplo no solo es muy real, sino que además todos lo entienden." },
+        { "speaker": "安娜", "zh": "我们的报告只有十分钟，另外还要准备几个问题。", "py": "Wǒmen de bàogào zhǐ yǒu shí fēnzhōng, lìngwài hái yào zhǔnbèi jǐ ge wèntí.", "es": "La exposición solo dura diez minutos, y además tenemos que preparar unas preguntas." },
+        { "speaker": "小李", "zh": "没问题。我今天晚上写问题，并且发到我们的微信群里。", "py": "Méi wèntí. Wǒ jīntiān wǎnshang xiě wèntí, bìngqiě fā dào wǒmen de Wēixìn qún li.", "es": "No hay problema. Esta noche escribo las preguntas y las mando a nuestro grupo de WeChat." },
+        { "speaker": "雨果", "zh": "太好了！我们的小组不但人好，而且做得快！", "py": "Tài hǎo le! Wǒmen de xiǎozǔ búdàn rén hǎo, érqiě zuò de kuài!", "es": "¡Genial! ¡Nuestro grupo no solo es majo, sino que además trabaja rápido!" }
+      ],
+      "notes": "En las exposiciones (报告) de la universidad china se espera una estructura muy clara: 首先…，其次…，另外…，最后…. 并不算贵 = «no es para tanto». 微信群 es el grupo de WeChat: casi todo trabajo de grupo se organiza allí."
+    },
+    { "type": "exercises", "count": 17, "bank": ["g-word-order", "g-ye-dou", "u13"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "她" }, "adverb": { "zh": "不光" }, "aux": { "zh": "会" }, "verb1": { "zh": "说" }, "object": { "zh": "汉语" } }, "end": "，", "es": "No solo sabe hablar chino… (1.ª parte)" }, "distractors": ["而且"] },
+        { "sentence": { "slots": { "time0": { "zh": "而且" }, "subject": { "zh": "他的同学" }, "adverb": { "zh": "也都" }, "verb1": { "zh": "喜欢" } }, "end": "。", "es": "…sino que también les gusta a todos sus compañeros. (2.ª parte)" }, "distractors": ["并"] },
+        { "sentence": { "slots": { "subject": { "zh": "这个问题" }, "adverb": { "zh": "并不" }, "verb1": { "zh": "难" } }, "end": "。", "es": "Este problema no es tan difícil (como crees)." } },
+        { "sentence": { "slots": { "time0": { "zh": "首先，" }, "subject": { "zh": "我们小组" }, "time": { "zh": "明天下午" }, "aux": { "zh": "要" }, "with": { "zh": "跟王老师一起" }, "place": { "zh": "在图书馆" }, "verb1": { "zh": "谈" }, "object": { "zh": "报告的问题" } }, "end": "。", "es": "En primer lugar, nuestro grupo tiene que hablar mañana por la tarde con la profesora Wang en la biblioteca sobre los problemas de la exposición." } }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "上海的交通不但很方便，而且很便宜。", "py": "Shànghǎi de jiāotōng búdàn hěn fāngbiàn, érqiě hěn piányi.", "es": "El transporte de Shanghái no solo es muy cómodo, sino también muy barato." },
+        { "zh": "首先，我们谈意义；其次，我们谈问题。", "py": "Shǒuxiān, wǒmen tán yìyì; qícì, wǒmen tán wèntí.", "es": "En primer lugar hablamos del sentido; en segundo lugar, de los problemas." },
+        { "zh": "一方面工作机会很多，另一方面房租太贵了。", "py": "Yì fāngmiàn gōngzuò jīhuì hěn duō, lìng yì fāngmiàn fángzū tài guì le.", "es": "Por un lado hay muchas oportunidades de trabajo; por otro, el alquiler es carísimo." },
+        { "zh": "四千块并不算贵。", "py": "Sìqiān kuài bìng bú suàn guì.", "es": "Cuatro mil no es para tanto." }
+      ],
+      "respond": [
+        { "q": { "zh": "你觉得上海的地铁怎么样？", "py": "Nǐ juéde Shànghǎi de dìtiě zěnmeyàng?", "es": "¿Qué te parece el metro de Shanghái?" }, "model": { "zh": "上海的地铁不但很快，而且很干净。", "py": "Shànghǎi de dìtiě búdàn hěn kuài, érqiě hěn gānjìng.", "es": "El metro de Shanghái no solo es muy rápido, sino también muy limpio." } },
+        { "q": { "zh": "在上海生活有什么好处和坏处？", "py": "Zài Shànghǎi shēnghuó yǒu shénme hǎochu hé huàichu?", "es": "¿Qué ventajas y desventajas tiene vivir en Shanghái?" }, "model": { "zh": "一方面工作机会多，另一方面压力比较大。", "py": "Yì fāngmiàn gōngzuò jīhuì duō, lìng yì fāngmiàn yālì bǐjiào dà.", "es": "Por un lado hay más oportunidades de trabajo; por otro, hay bastante presión." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Nuestra exposición: vivir en Shanghái",
+      "text": "上个星期五，我们小组做了一个报告，题目是“在上海生活”。首先，安娜谈了交通。她说上海的地铁不但很方便，而且很便宜，坐一次仅仅三四块钱。其次，雨果谈了手机付钱。在这里，不光买东西可以用手机，坐车、看病也都可以。另外，小李指出了一些问题。一方面，上海的工作机会很多，年轻人都想来；另一方面，房租太贵了，很多人每个月要花一半的钱租房子。大卫最后强调：在大城市生活有好处，也有坏处，并不是每个人都适合。王老师说，我们的报告不仅内容清楚，而且例子很真实，并且每个人都说得很流利。我们听了都非常高兴。",
+      "es": "El viernes pasado, nuestro grupo hizo una exposición titulada «Vivir en Shanghái». En primer lugar, Ana habló del transporte. Dijo que el metro de Shanghái no solo es muy cómodo, sino también muy barato: un viaje cuesta solo tres o cuatro yuanes. En segundo lugar, Hugo habló de pagar con el móvil. Aquí, no solo puedes comprar con el móvil: también coger el autobús o ir al médico. Además, Xiao Li señaló algunos problemas. Por un lado, en Shanghái hay muchas oportunidades de trabajo y todos los jóvenes quieren venir; por otro, el alquiler es carísimo: mucha gente gasta la mitad del dinero de cada mes en alquilar un piso. Al final, David recalcó que vivir en una gran ciudad tiene ventajas e inconvenientes, y que no es para todo el mundo. La profesora Wang dijo que nuestra exposición no solo tenía un contenido claro, sino también ejemplos muy reales, y que además todos hablamos con mucha soltura. Nos alegramos muchísimo.",
+      "questions": [
+        { "q": "¿De qué habló Ana primero?", "options": ["交通", "房租", "手机付钱"], "answer": 0 },
+        { "q": "¿Cuánto cuesta un viaje en metro, según el texto?", "options": ["三四块钱", "四千块", "十块钱"], "answer": 0 },
+        { "q": "¿Qué problema señaló Xiao Li?", "options": ["房租太贵了", "地铁太慢了", "工作机会太少了"], "answer": 0 },
+        { "q": "¿Qué recalcó David al final?", "options": ["大城市并不是每个人都适合", "上海的东西都很便宜", "报告应该很长"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

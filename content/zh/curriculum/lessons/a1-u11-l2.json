@@ -1,0 +1,129 @@
+{
+  "id": "a1-u11-l2",
+  "title": "Novios y amigos: 和 solo une nombres; 还 «además»",
+  "zh": "我和安娜是同学",
+  "goal": "Usar 和 solo entre nombres y unir acciones con 也 o 还; hablar de novios, amigos, chicos y chicas.",
+  "minutes": 14,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "男朋友", "pinyin": "nánpéngyou", "es": "novio", "note": "Ojo: un amigo varón es 朋友, no 男朋友." },
+    { "hanzi": "女朋友", "pinyin": "nǚpéngyou", "es": "novia", "note": "Una amiga es 朋友 (o 女性朋友), no 女朋友." },
+    { "hanzi": "男生", "pinyin": "nánshēng", "es": "chico (estudiante)", "note": "En la universidad, «los chicos»." },
+    { "hanzi": "女生", "pinyin": "nǚshēng", "es": "chica (estudiante)" },
+    { "hanzi": "小朋友", "pinyin": "xiǎopéngyou", "es": "niño, niña (forma cariñosa)", "note": "Así se dirigen los adultos a los niños: 小朋友，你好！" },
+    { "hanzi": "老朋友", "pinyin": "lǎopéngyou", "es": "viejo amigo, amigo de siempre" },
+    { "hanzi": "咱们", "pinyin": "zánmen", "es": "nosotros (tú y yo incluidos)", "note": "咱们 incluye siempre a quien escucha; 我们 puede no incluirle." },
+    { "hanzi": "咱", "pinyin": "zán", "es": "nosotros; yo (coloquial, norte)" },
+    { "hanzi": "还", "pinyin": "hái", "es": "además, también", "note": "Va delante del verbo: 我说汉语，还说英语. (En la unidad 16 verás «todavía».)" }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "我和安娜是同学。", "py": "Wǒ hé Ānnà shì tóngxué.", "es": "Ana y yo somos compañeros de clase." },
+        { "zh": "她喝茶，也吃包子。", "py": "Tā hē chá, yě chī bāozi.", "es": "Ella toma té y come baozi." },
+        { "zh": "我有中国朋友，还有西班牙朋友。", "py": "Wǒ yǒu Zhōngguó péngyou, hái yǒu Xībānyá péngyou.", "es": "Tengo amigos chinos y, además, amigos españoles." }
+      ]
+    },
+    { "type": "vocab", "title": "Chicos, chicas, novios y amigos", "words": ["男朋友", "女朋友", "男生", "女生", "小朋友", "老朋友", "咱们", "咱", "还"] },
+    {
+      "type": "phonetics-drill",
+      "title": "La r inicial: 人, 认识, 热",
+      "markdown": "La **r** china al principio de sílaba **no es la erre española** ni vibra. Se pone la lengua como para **sh** (punta doblada hacia atrás) y se hace sonar la voz: algo parecido a la «j» francesa de *je* o a la «ll» rioplatense de *calle*, pero con la lengua más atrás.\n\n- 人 **r**én, 人们 **r**énmen, 认识 **r**ènshi, 热 **r**è, 肉 **r**òu.\n- No la hagas vibrar (*rrén*) ni la conviertas en «l».\n\nTruco: di **shhhh** y, sin mover nada, añade voz: **rrrr** suave, sin vibración.",
+      "items": [
+        { "audio": "人", "options": ["rén", "lén", "yén"], "answer": 0, "explain": "r sin vibrar, lengua doblada atrás." },
+        { "audio": "热", "options": ["rè", "lè", "shè"], "answer": 0, "explain": "rè: como sh pero con voz." },
+        { "audio": "认识", "options": ["rènshi", "lènshi", "rènsi"], "answer": 0, "explain": "r + sh: las dos con la lengua atrás." },
+        { "audio": "肉", "options": ["ròu", "lòu", "yòu"], "answer": 0, "explain": "ròu: carne." },
+        { "audio": "男朋友", "prompt": "¿Hay alguna r en esta palabra?", "options": ["No: nán-péng-you", "Sí, en péng"], "answer": 0, "explain": "Sirve para comprobar que no «metes» erres donde no las hay." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["男", "还"],
+      "mnemonics": {
+        "男": "田 (campo) + 力 (fuerza): el que pone la fuerza en el campo; hombre, varón.",
+        "还": "辶 (caminar) + 不 (pista de sonido): volver por el camino → devolver; y de ahí, «además, todavía»."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "和 une nombres; 也 / 还 unen acciones",
+      "markdown": "La «**y**» española sirve para todo; **和** no. **和 solo une nombres o pronombres**:\n\n- ✔ 我**和**安娜 · 茶**和**牛奶 · 男生**和**女生\n- ✘ *我吃饭**和**喝茶 (dos verbos) · *我是学生**和**他是老师 (dos frases)\n\nPara unir **acciones o frases**:\n\n1. **Nada**, con una coma: 我是学生，他是老师.\n2. **也** delante del segundo verbo: 她喝茶，**也**吃包子.\n3. **还** «además» delante del segundo verbo: 我有中国朋友，**还**有西班牙朋友 · 安娜说汉语，**还**说英语.\n\n**咱们** = «nosotros» incluyéndote a ti (el que escucha). Si Hugo le dice a Xiao Li «咱们去吃饭», Xiao Li va; si dice «我们去吃饭», quizá no.",
+      "focus": ["subject", "adverb"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "我和安娜", "py": "wǒ hé Ānnà" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "同学", "py": "tóngxué" } }, "end": "。", "es": "Ana y yo somos compañeros de clase.", "esOrder": [{ "text": "Ana y yo", "slot": "subject" }, { "text": "somos", "slot": "verb1" }, { "text": "compañeros", "slot": "object" }] },
+        { "slots": { "subject": { "zh": "雨果", "py": "Yǔguǒ" }, "verb1": { "zh": "有", "py": "yǒu" }, "object": { "zh": "中国朋友和西班牙朋友", "py": "Zhōngguó péngyou hé Xībānyá péngyou" } }, "end": "。", "es": "Hugo tiene amigos chinos y españoles." },
+        { "slots": { "subject": { "zh": "男生和女生", "py": "nánshēng hé nǚshēng" }, "adverb": { "zh": "都很", "py": "dōu hěn" }, "verb1": { "zh": "忙", "py": "máng" } }, "end": "。", "es": "Los chicos y las chicas están todos muy ocupados." },
+        { "slots": { "subject": { "zh": "安娜", "py": "Ānnà" }, "adverb": { "zh": "还", "py": "hái" }, "verb1": { "zh": "说", "py": "shuō" }, "object": { "zh": "英语", "py": "Yīngyǔ" } }, "end": "。", "es": "Además, Ana habla inglés." },
+        { "slots": { "subject": { "zh": "咱们", "py": "zánmen" }, "with": { "zh": "和老朋友一起", "py": "hé lǎopéngyou yìqǐ" }, "verb1": { "zh": "吃饭", "py": "chī fàn" } }, "end": "。", "es": "Comamos (tú y yo) con nuestros viejos amigos." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "他", "py": "tā" }, "verb1": { "zh": "没有", "py": "méiyǒu" }, "object": { "zh": "女朋友", "py": "nǚpéngyou" } }, "end": "。", "es": "No tiene novia." },
+        { "slots": { "subject": { "zh": "我和小李", "py": "wǒ hé Xiǎo Lǐ" }, "adverb": { "zh": "不", "py": "bú" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "老朋友", "py": "lǎopéngyou" } }, "end": "。", "es": "Xiao Li y yo no somos viejos amigos." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "有", "py": "yǒu" }, "object": { "zh": "男朋友", "py": "nánpéngyou" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿Tienes novio?" },
+        { "slots": { "subject": { "zh": "你和大卫", "py": "nǐ hé Dàwèi" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "老朋友", "py": "lǎopéngyou" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿David y tú sois viejos amigos?" }
+      ],
+      "mistakes": [
+        { "wrong": "我吃饭和喝茶。", "right": "我吃饭，也喝茶。", "why": "和 no une verbos. Une las acciones con 也 / 还 o con una coma." },
+        { "wrong": "我是学生和他是老师。", "right": "我是学生，他是老师。", "why": "和 no une frases: basta con la coma." },
+        { "wrong": "她是我的女朋友。（= «es una amiga»）", "right": "她是我的朋友。", "why": "女朋友 es «novia». Para una amiga, simplemente 朋友." },
+        { "wrong": "我有中国朋友，有还西班牙朋友。", "right": "我有中国朋友，还有西班牙朋友。", "why": "还 es un adverbio: va delante del verbo." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Preguntas indiscretas",
+      "lines": [
+        { "speaker": "安娜", "zh": "小李，你有女朋友吗？", "py": "Xiǎo Lǐ, nǐ yǒu nǚpéngyou ma?", "es": "Xiao Li, ¿tienes novia?" },
+        { "speaker": "小李", "zh": "没有。你有男朋友吗？", "py": "Méiyǒu. Nǐ yǒu nánpéngyou ma?", "es": "No. ¿Tú tienes novio?" },
+        { "speaker": "安娜", "zh": "有，我男朋友是西班牙人。", "py": "Yǒu, wǒ nánpéngyou shì Xībānyá rén.", "es": "Sí, mi novio es español." },
+        { "speaker": "小李", "zh": "他也是学生吗？", "py": "Tā yě shì xuésheng ma?", "es": "¿También es estudiante?" },
+        { "speaker": "安娜", "zh": "对，他是学生，还是老师。", "py": "Duì, tā shì xuésheng, hái shì lǎoshī.", "es": "Sí, es estudiante y, además, profesor." },
+        { "speaker": "小李", "zh": "大卫和雨果是老朋友吗？", "py": "Dàwèi hé Yǔguǒ shì lǎopéngyou ma?", "es": "¿David y Hugo son amigos de siempre?" },
+        { "speaker": "安娜", "zh": "不是，他们是新朋友。他们都爱喝茶，还都爱吃饺子。", "py": "Bú shì, tāmen shì xīn péngyou. Tāmen dōu ài hē chá, hái dōu ài chī jiǎozi.", "es": "No, son amigos nuevos. A los dos les encanta el té y, además, los jiaozi." },
+        { "speaker": "小李", "zh": "咱们周末一起吃饺子，好吗？", "py": "Zánmen zhōumò yìqǐ chī jiǎozi, hǎo ma?", "es": "¿Y si comemos jiaozi juntos el fin de semana?" },
+        { "speaker": "安娜", "zh": "好！我叫大卫和雨果，还叫我的老朋友。", "py": "Hǎo! Wǒ jiào Dàwèi hé Yǔguǒ, hái jiào wǒ de lǎopéngyou.", "es": "¡Vale! Llamo a David y a Hugo, y además a mi amiga de siempre." }
+      ],
+      "notes": "Fíjate en 还是 de la última frase de Ana: aquí no es «o» (unidad 9), sino 还 «además» + 是 «ser». Y en China es normal preguntar pronto por la pareja, la edad o el sueldo; no es de mala educación."
+    },
+    { "type": "exercises", "count": 14, "bank": ["g-he", "g-ye-dou"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "我和安娜" }, "verb1": { "zh": "是" }, "object": { "zh": "同学" } }, "end": "。", "es": "Ana y yo somos compañeros de clase." } },
+        { "sentence": { "slots": { "subject": { "zh": "安娜" }, "adverb": { "zh": "还" }, "verb1": { "zh": "说" }, "object": { "zh": "英语" } }, "end": "。", "es": "Además, Ana habla inglés." }, "distractors": ["和"] },
+        { "sentence": { "slots": { "subject": { "zh": "你" }, "verb1": { "zh": "有" }, "object": { "zh": "女朋友" }, "particle": { "zh": "吗" } }, "end": "？", "es": "¿Tienes novia?" }, "distractors": ["不"] },
+        { "sentence": { "slots": { "time0": { "zh": "这个周末" }, "subject": { "zh": "咱们" }, "adverb": { "zh": "都" }, "aux": { "zh": "要" }, "with": { "zh": "和男生女生一起" }, "verb1": { "zh": "去" }, "verb2": { "zh": "吃" }, "object": { "zh": "很好吃的饺子和包子" } }, "end": "。", "es": "Este fin de semana vamos todos a ir con los chicos y las chicas a comer jiaozi y baozi riquísimos." }, "distractors": ["还是"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "我和安娜是同学。", "py": "Wǒ hé Ānnà shì tóngxué.", "es": "Ana y yo somos compañeros de clase." },
+        { "zh": "她喝茶，也吃包子。", "py": "Tā hē chá, yě chī bāozi.", "es": "Ella toma té y come baozi." },
+        { "zh": "我说汉语，还说英语。", "py": "Wǒ shuō Hànyǔ, hái shuō Yīngyǔ.", "es": "Hablo chino y, además, inglés." },
+        { "zh": "咱们一起吃饭，好吗？", "py": "Zánmen yìqǐ chī fàn, hǎo ma?", "es": "¿Comemos juntos?" }
+      ],
+      "respond": [
+        { "q": { "zh": "你有中国朋友吗？", "py": "Nǐ yǒu Zhōngguó péngyou ma?", "es": "¿Tienes amigos chinos?" }, "model": { "zh": "有，我有中国朋友，还有美国朋友。", "py": "Yǒu, wǒ yǒu Zhōngguó péngyou, hái yǒu Měiguó péngyou.", "es": "Sí, tengo amigos chinos y, además, estadounidenses." } },
+        { "q": { "zh": "你说什么外语？", "py": "Nǐ shuō shénme wàiyǔ?", "es": "¿Qué idiomas extranjeros hablas?" }, "model": { "zh": "我说英语，还说汉语。", "py": "Wǒ shuō Yīngyǔ, hái shuō Hànyǔ.", "es": "Hablo inglés y, además, chino." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Los amigos de Ana",
+      "text": "安娜有很多朋友。她有西班牙朋友，还有中国朋友。她和小李是同学，大卫和雨果是她的新朋友。安娜的男朋友是西班牙人，他是学生，也是老师。这个周末，安娜想和朋友们一起吃饺子。",
+      "es": "Ana tiene muchos amigos. Tiene amigos españoles y, además, chinos. Ella y Xiao Li son compañeros de clase; David y Hugo son sus amigos nuevos. El novio de Ana es español: es estudiante y también profesor. Este fin de semana, Ana quiere comer jiaozi con sus amigos.",
+      "questions": [
+        { "q": "¿Qué amigos tiene Ana?", "options": ["西班牙朋友和中国朋友", "Solo amigos chinos", "Solo amigos españoles"], "answer": 0 },
+        { "q": "¿Quiénes son los amigos nuevos de Ana?", "options": ["大卫和雨果", "小李", "Su novio"], "answer": 0 },
+        { "q": "¿Qué hace el novio de Ana?", "options": ["Es estudiante y también profesor", "Es médico", "No trabaja"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

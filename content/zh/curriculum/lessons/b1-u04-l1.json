@@ -1,0 +1,138 @@
+{
+  "id": "b1-u04-l1",
+  "title": "Sube corriendo: verbo + 上来 / 下去 / 过来…",
+  "zh": "他跑上来了",
+  "goal": "Contar movimientos completos (subir corriendo, bajar andando, venir hacia aquí) con verbo + dirección + 来 / 去, sin lugar detrás.",
+  "minutes": 14,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "上来", "pinyin": "shànglai", "es": "subir (hacia aquí, hacia quien habla)", "note": "Detrás de otro verbo suena sin tono: 跑上来 pǎo shanglai." },
+    { "hanzi": "上去", "pinyin": "shàngqu", "es": "subir (hacia allí, alejándose de quien habla)" },
+    { "hanzi": "下来", "pinyin": "xiàlai", "es": "bajar (hacia aquí)" },
+    { "hanzi": "下去", "pinyin": "xiàqu", "es": "bajar (hacia allí)" },
+    { "hanzi": "步", "pinyin": "bù", "es": "paso", "note": "走几步 = andar unos pasos; 一步一步 = paso a paso." },
+    { "hanzi": "朝", "pinyin": "cháo", "es": "hacia, en dirección a", "note": "朝前走 = ir hacia delante. Como 往, va delante del verbo." },
+    { "hanzi": "直", "pinyin": "zhí", "es": "recto; directamente", "note": "直走 = seguir recto (= 一直走)." },
+    { "hanzi": "追", "pinyin": "zhuī", "es": "perseguir, correr detrás de alguien", "note": "追上来 = alcanzar (a quien habla) corriendo." },
+    { "hanzi": "推开", "pinyin": "tuīkāi", "es": "abrir empujando", "note": "推 = empujar + 开 = abierto: 推开门." },
+    { "hanzi": "停止", "pinyin": "tíngzhǐ", "es": "parar, detenerse, dejar de (funcionar)", "note": "Más formal que 停: 电梯停止工作了." },
+    { "hanzi": "前进", "pinyin": "qiánjìn", "es": "avanzar, ir hacia delante", "note": "También se grita en broma: «¡adelante!»." },
+    { "hanzi": "眼前", "pinyin": "yǎnqián", "es": "delante de los ojos, justo enfrente", "note": "饭馆就在眼前 = el restaurante está ahí mismo." },
+    { "hanzi": "背后", "pinyin": "bèihòu", "es": "detrás, a la espalda (de alguien)", "note": "你背后有人 = tienes a alguien detrás." },
+    { "hanzi": "指", "pinyin": "zhǐ", "es": "señalar (con el dedo); dedo", "note": "我指的那个 = el que señalo." }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "你别下来，我们走上去！", "py": "Nǐ bié xiàlai, wǒmen zǒu shangqu!", "es": "¡No bajes, subimos nosotros andando!" },
+        { "zh": "小李朝我们跑过来了。", "py": "Xiǎo Lǐ cháo wǒmen pǎo guolai le.", "es": "Xiao Li ha venido corriendo hacia nosotros." },
+        { "zh": "你背后有个人追上来了。", "py": "Nǐ bèihòu yǒu ge rén zhuī shanglai le.", "es": "Detrás de ti viene alguien corriendo y te ha alcanzado." }
+      ]
+    },
+    { "type": "vocab", "title": "Subir, bajar, avanzar", "words": ["上来", "上去", "下来", "下去", "步", "朝", "直", "追", "推开", "停止", "前进", "眼前", "背后", "指"] },
+    {
+      "type": "phonetics-drill",
+      "title": "El 来 / 去 que se apaga: 跑上来, 走下去",
+      "markdown": "Cuando la dirección va **detrás de otro verbo**, pierde fuerza: 上来, 下去, 过来 se dicen en **tono neutro**, cortos y flojos. El peso lo lleva el **primer verbo**:\n\n- **跑上来** *pǎo shanglai*: fuerte en 跑, el resto casi susurrado.\n- **走下去** *zǒu xiaqu*: 走 en medio tercer tono (baja y no sube) porque lo que sigue es neutro.\n\nEn las órdenes cortas (**别下来！快上去！**) el énfasis cae en **别 / 快** y en la dirección; la frase baja al final, como una orden en español.\n\nY repasa **一 + cuarto tono → yí**: 一步一步 *yí bù yí bù*.",
+      "items": [
+        { "audio": "跑上来", "options": ["pǎo shanglai", "pǎo shàng lái", "páo shànglái"], "answer": 0, "explain": "Detrás del verbo, 上来 se queda sin tono; 跑 es medio tercer tono." },
+        { "audio": "走下去", "options": ["zǒu xiaqu", "zǒu xiàqù", "zǒu xiàgu"], "answer": 0, "explain": "去 neutro, con q (como «ch» con la lengua plana)." },
+        { "audio": "追上来", "options": ["zhuī shanglai", "zuī shanglai", "chuī shanglai"], "answer": 0, "explain": "zh retrofleja sin aire; ch llevaría soplo." },
+        { "audio": "一步一步", "options": ["yí bù yí bù", "yī bù yī bù", "yì bù yì bù"], "answer": 0, "explain": "Delante de cuarto tono, 一 pasa a segundo." },
+        { "audio": "你快上来吧！", "prompt": "¿Dónde cae el énfasis?", "options": ["En 快 y 上", "En 吧", "En 你"], "answer": 0, "explain": "La orden se apoya en 快 y en la dirección; 来 y 吧 son flojos." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["追", "指"],
+      "mnemonics": {
+        "追": "辶 (andar, camino) + 𠂤 (un montón, una tropa): ir por el camino detrás de la tropa → perseguir.",
+        "指": "扌 (mano) + 旨 (intención): la parte de la mano que muestra lo que quieres → dedo, señalar."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "Verbo + 上 / 下 / 进 / 出 / 回 / 过 / 起 + 来 / 去",
+      "markdown": "En A2 viste 上来, 下去 solos y 走进, 走过. Ahora se juntan las tres piezas en un **complemento direccional compuesto**:\n\n**verbo de movimiento** (cómo) + **上 / 下 / 进 / 出 / 回 / 过 / 起** (hacia dónde) + **来 / 去** (hacia quien habla o lejos de él).\n\n| | 来 (hacia aquí) | 去 (hacia allí) |\n|---|---|---|\n| 上 subir | 跑上来 | 走上去 |\n| 下 bajar | 走下来 | 跑下去 |\n| 进 entrar | 走进来 | 跑进去 |\n| 出 salir | 走出来 | 跑出去 |\n| 回 volver | 跑回来 | 走回去 |\n| 过 acercarse, cruzar | 走过来 | 跑过去 |\n| 起 levantarse | 站起来 | — |\n\n- **来 o 去 depende de dónde está quien habla**: si estoy arriba, te digo 你跑**上来**; si estoy abajo, 你跑**上去**.\n- En español el «cómo» suele ir en gerundio (*subir corriendo*); en chino va **primero**: 跑上来.\n- 来 / 去 van en **tono neutro**.\n\n**Convención del esqueleto en esta unidad** (sigue la de a2-u08): **sin lugar ni objeto**, el bloque entero va en **Verbo 1** (跑上来, 走进去, 站起来). Con lugar (lección 2) u objeto (lección 3), el verbo y la dirección van en *Verbo 1*, el lugar o la cosa en *Objeto* y 来 / 去 en *Complemento*. 朝 + persona o dirección va en *Adverbios*, como 往.\n\n- **Negativa**: 没 + V (ya pasado): 他**没**走上来; 别 + V (orden): **别**跑下去.\n- **Pregunta**: …了吗？ / …了没有？ / 能…吗？",
+      "focus": ["verb1"],
+      "sentences": [
+        { "slots": { "subject": { "zh": "小李", "py": "Xiǎo Lǐ" }, "verb1": { "zh": "跑上来", "py": "pǎo shanglai" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Xiao Li ha subido corriendo (hasta aquí)." },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "adverb": { "zh": "快", "py": "kuài" }, "verb1": { "zh": "走过来", "py": "zǒu guolai" }, "particle": { "zh": "吧", "py": "ba" } }, "end": "！", "es": "¡Ven aquí, rápido!" },
+        { "slots": { "subject": { "zh": "安娜", "py": "Ānnà" }, "adverb": { "zh": "朝我们", "py": "cháo wǒmen" }, "verb1": { "zh": "跑过来", "py": "pǎo guolai" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Ana ha venido corriendo hacia nosotros." },
+        { "slots": { "subject": { "zh": "我们", "py": "wǒmen" }, "adverb": { "zh": "一步一步", "py": "yí bù yí bù" }, "verb1": { "zh": "走下去", "py": "zǒu xiaqu" } }, "end": "。", "es": "Bajamos paso a paso." },
+        { "slots": { "subject": { "zh": "那个人", "py": "nà ge rén" }, "verb1": { "zh": "追上来", "py": "zhuī shanglai" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Esa persona nos ha alcanzado corriendo." },
+        { "slots": { "subject": { "zh": "大卫", "py": "Dàwèi" }, "adverb": { "zh": "已经", "py": "yǐjīng" }, "verb1": { "zh": "跑回去", "py": "pǎo huiqu" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "David ya ha vuelto corriendo (allí)." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "adverb": { "zh": "别", "py": "bié" }, "verb1": { "zh": "跑下来", "py": "pǎo xialai" } }, "end": "！", "es": "¡No bajes corriendo!" },
+        { "slots": { "subject": { "zh": "安娜", "py": "Ānnà" }, "adverb": { "zh": "还没", "py": "hái méi" }, "verb1": { "zh": "走上来", "py": "zǒu shanglai" } }, "end": "。", "es": "Ana todavía no ha subido." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "aux": { "zh": "能", "py": "néng" }, "verb1": { "zh": "走上来", "py": "zǒu shanglai" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿Puedes subir andando?" },
+        { "slots": { "subject": { "zh": "大卫", "py": "Dàwèi" }, "verb1": { "zh": "跑回来", "py": "pǎo huilai" }, "particle": { "zh": "了没有", "py": "le méiyǒu" } }, "end": "？", "es": "¿Ha vuelto David corriendo?" }
+      ],
+      "mistakes": [
+        { "wrong": "他跑来上了。", "right": "他跑上来了。", "why": "El orden es fijo: verbo + 上 / 下 / 进… + 来 / 去. 来 / 去 cierran el bloque." },
+        { "wrong": "（Estoy arriba） 你快跑上去！", "right": "你快跑上来！", "why": "Si quien habla está arriba, el movimiento viene hacia él: 上来. 上去 es cuando se aleja." },
+        { "wrong": "我上去跑。", "right": "我跑上去。", "why": "El «cómo» (correr) va primero y la dirección detrás: no se calca el gerundio español." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "La salida del metro",
+      "lines": [
+        { "speaker": "小李", "zh": "喂，雨果，你们到了吗？我在地铁站外面等你们。", "py": "Wéi, Yǔguǒ, nǐmen dào le ma? Wǒ zài dìtiězhàn wàimian děng nǐmen.", "es": "¿Sí? Hugo, ¿habéis llegado? Os espero fuera de la estación de metro." },
+        { "speaker": "雨果", "zh": "到了，到了！我们现在就上去。", "py": "Dào le, dào le! Wǒmen xiànzài jiù shàngqu.", "es": "¡Sí, sí! Ya subimos." },
+        { "speaker": "安娜", "zh": "啊，电梯停止工作了。", "py": "A, diàntī tíngzhǐ gōngzuò le.", "es": "Ay, la escalera mecánica se ha parado." },
+        { "speaker": "雨果", "zh": "没关系，我们走上去吧，就几十步。", "py": "Méi guānxi, wǒmen zǒu shangqu ba, jiù jǐ shí bù.", "es": "No pasa nada, subamos andando: son unas decenas de pasos." },
+        { "speaker": "小李", "zh": "我看见你们了！你们别着急，慢慢走上来。", "py": "Wǒ kànjiàn nǐmen le! Nǐmen bié zháojí, mànmàn zǒu shanglai.", "es": "¡Ya os veo! Tranquilos, subid despacio." },
+        { "speaker": "安娜", "zh": "小李，我的包太重了，你能下来帮我一下吗？", "py": "Xiǎo Lǐ, wǒ de bāo tài zhòng le, nǐ néng xiàlai bāng wǒ yíxià ma?", "es": "Xiao Li, mi bolso pesa muchísimo, ¿puedes bajar a echarme una mano?" },
+        { "speaker": "小李", "zh": "好，我马上跑下去！", "py": "Hǎo, wǒ mǎshàng pǎo xiaqu!", "es": "¡Vale, ahora bajo corriendo!" },
+        { "speaker": "雨果", "zh": "安娜，你背后有个人追上来了。", "py": "Ānnà, nǐ bèihòu yǒu ge rén zhuī shanglai le.", "es": "Ana, detrás de ti viene alguien corriendo." },
+        { "speaker": "安娜", "zh": "啊？是大卫！大卫，你怎么也来了？", "py": "A? Shì Dàwèi! Dàwèi, nǐ zěnme yě lái le?", "es": "¿Eh? ¡Es David! David, ¿tú también has venido?" },
+        { "speaker": "大卫", "zh": "我在下面叫你们，你们没听见，我只好追上来了。", "py": "Wǒ zài xiàmian jiào nǐmen, nǐmen méi tīngjiàn, wǒ zhǐhǎo zhuī shanglai le.", "es": "Os he llamado desde abajo, no me habéis oído y he tenido que correr detrás de vosotros." },
+        { "speaker": "小李", "zh": "好了，大家都上来了。饭馆就在眼前，一直朝前走就到了。", "py": "Hǎo le, dàjiā dōu shànglai le. fàn guǎn jiù zài yǎnqián, yìzhí cháo qián zǒu jiù dào le.", "es": "Bueno, ya estamos todos arriba. El restaurante está ahí mismo: todo recto y llegamos." },
+        { "speaker": "雨果", "zh": "是我指的那家吗？", "py": "Shì wǒ zhǐ de nà jiā ma?", "es": "¿Es ese que señalo?" },
+        { "speaker": "小李", "zh": "对！走吧，前进！", "py": "Duì! Zǒu ba, qiánjìn!", "es": "¡Sí! Venga, ¡adelante!" }
+      ],
+      "notes": "Fíjate en cómo cambia 来 / 去 según quién habla: Ana, abajo, le pide a Xiao Li que **下来** (que baje hacia ella); Xiao Li, arriba, contesta 我**跑下去** (bajo, me alejo de donde estoy). 喂 al teléfono se dice *wéi*. 电梯 vale tanto para el ascensor como para la escalera mecánica (más preciso: 扶梯)."
+    },
+    { "type": "exercises", "count": 16, "bank": ["g-lai-qu", "g-complements", "g-le"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "小李" }, "verb1": { "zh": "跑上来" }, "particle": { "zh": "了" } }, "end": "。", "es": "Xiao Li ha subido corriendo." }, "distractors": ["上去来"] },
+        { "sentence": { "slots": { "subject": { "zh": "你" }, "adverb": { "zh": "别" }, "verb1": { "zh": "跑下来" } }, "end": "！", "es": "¡No bajes corriendo!" }, "distractors": ["没"] },
+        { "sentence": { "slots": { "subject": { "zh": "安娜" }, "adverb": { "zh": "朝我们" }, "verb1": { "zh": "走过来" }, "particle": { "zh": "了" } }, "end": "。", "es": "Ana ha venido andando hacia nosotros." } },
+        { "sentence": { "slots": { "time0": { "zh": "昨天晚上" }, "subject": { "zh": "大卫" }, "adverb": { "zh": "也" }, "with": { "zh": "跟我们一起" }, "verb1": { "zh": "走上去" }, "particle": { "zh": "了" } }, "end": "。", "es": "Anoche David también subió andando con nosotros." }, "distractors": ["上来去"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "你别下来，我们走上去！", "py": "Nǐ bié xiàlai, wǒmen zǒu shangqu!", "es": "¡No bajes, subimos nosotros!" },
+        { "zh": "我马上跑下去。", "py": "Wǒ mǎshàng pǎo xiaqu.", "es": "Ahora bajo corriendo." },
+        { "zh": "你背后有个人追上来了。", "py": "Nǐ bèihòu yǒu ge rén zhuī shanglai le.", "es": "Te ha alcanzado alguien que venía corriendo detrás." },
+        { "zh": "一直朝前走就到了。", "py": "Yìzhí cháo qián zǒu jiù dào le.", "es": "Todo recto y ya llegas." }
+      ],
+      "respond": [
+        { "q": { "zh": "我在楼上，你能上来吗？", "py": "Wǒ zài lóu shang, nǐ néng shànglai ma?", "es": "Estoy arriba, ¿puedes subir?" }, "model": { "zh": "能，我马上走上去。", "py": "Néng, wǒ mǎshàng zǒu shangqu.", "es": "Sí, ahora subo." } },
+        { "q": { "zh": "电梯停止工作了，怎么办？", "py": "Diàntī tíngzhǐ gōngzuò le, zěnme bàn?", "es": "La escalera se ha parado, ¿qué hacemos?" }, "model": { "zh": "没关系，我们一步一步走上去吧。", "py": "Méi guānxi, wǒmen yí bù yí bù zǒu shangqu ba.", "es": "No pasa nada, subamos paso a paso." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Todos arriba",
+      "text": "今天晚上，雨果和安娜去市中心跟小李一起吃饭。他们坐地铁到了人民广场站。出站的时候，电梯停止工作了，很多人只好走上去。安娜的包很重，小李在上面看见了，马上跑下来帮她拿。雨果说：“你别下来，我们自己走上去就行！”可是小李已经跑下来了。走到上面以后，安娜发现背后有一个人一直在追他们，原来是大卫！大卫说：“我在下面叫你们，你们都没听见，所以我追上来了。”小李指着前面说：“饭馆就在眼前，我们一直朝前走，二十几步就到了。”大卫笑着说：“好，大家一起前进！”他们推开饭馆的门，走了进去。",
+      "es": "Esta noche Hugo y Ana van al centro a cenar con Xiao Li. Han llegado en metro a la estación de la Plaza del Pueblo. Al salir, la escalera mecánica se había parado y mucha gente ha tenido que subir andando. El bolso de Ana pesaba mucho; Xiao Li lo ha visto desde arriba y ha bajado corriendo a ayudarla. Hugo le ha dicho: «¡No bajes, subimos nosotros solos!», pero Xiao Li ya había bajado. Al llegar arriba, Ana ha descubierto que alguien los venía siguiendo todo el rato: ¡era David! David ha dicho: «Os he llamado desde abajo, no me habéis oído y he venido corriendo detrás». Xiao Li ha señalado al frente: «El restaurante está ahí mismo; todo recto, veintipico pasos y llegamos». David se ha reído: «¡Venga, todos adelante!». Han empujado la puerta del restaurante y han entrado.",
+      "questions": [
+        { "q": "¿Por qué ha subido andando mucha gente?", "options": ["电梯停止工作了", "地铁站人太多", "他们想运动"], "answer": 0 },
+        { "q": "¿Qué ha hecho Xiao Li al ver el bolso de Ana?", "options": ["跑下来帮她拿", "在上面等她", "给她打电话"], "answer": 0 },
+        { "q": "¿Quién los venía siguiendo?", "options": ["大卫", "王老师", "一个不认识的人"], "answer": 0 },
+        { "q": "¿Está lejos el restaurante?", "options": ["No: veintipico pasos", "Sí: hay que coger un taxi", "No lo sabe nadie"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

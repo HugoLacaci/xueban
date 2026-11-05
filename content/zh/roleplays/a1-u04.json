@@ -1,0 +1,190 @@
+{
+  "unitId": "a1-u04",
+  "scenarios": [
+    {
+      "id": "a1-u04-numbers-quiz",
+      "title": "El concurso de números de Xiao Li",
+      "zh": "一百加五等于多少？",
+      "level": 1,
+      "setting": "Sala común de la residencia. Xiao Li quiere comprobar si Hugo sabe decir números grandes en chino y le hace un concurso. Tú (la app) eres 小李.",
+      "role": "compañero de residencia",
+      "roleZh": "小李",
+      "voice": "m",
+      "goals": ["Decir el resultado de una suma con 百, 千 o 万", "Decir la población de una ciudad o un país", "Dar una cifra aproximada con 多 o 几十", "Decir tu número de orden con 第"],
+      "vocab": ["百", "千", "万", "亿", "零", "加", "等于", "人口", "多", "几十", "第"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "雨果，我们说数字，好吗？一百加五等于多少？", "py": "Yǔguǒ, wǒmen shuō shùzì, hǎo ma? Yìbǎi jiā wǔ děngyú duōshao?", "es": "Hugo, ¿jugamos a los números? ¿Cuánto son cien más cinco?" },
+          "user": [
+            { "zh": "等于一百零五。", "py": "Děngyú yìbǎi líng wǔ.", "es": "Son ciento cinco.", "keywords": ["一百零五"], "next": "n2", "goal": 0 },
+            { "zh": "等于一百五。", "py": "Děngyú yìbǎi wǔ.", "es": "Son 一百五.", "keywords": ["一百五"], "next": "n1b" }
+          ],
+          "hint": "Ojo con el 零 del medio: 105 = 一百零五. 一百五 significa 150."
+        },
+        "n1b": {
+          "npc": { "zh": "不对！一百五是一百五十。一百加五呢？", "py": "Bú duì! Yìbǎi wǔ shì yìbǎi wǔshí. Yìbǎi jiā wǔ ne?", "es": "¡No! 一百五 es ciento cincuenta. ¿Cuánto son cien más cinco?" },
+          "user": [
+            { "zh": "一百零五！", "py": "Yìbǎi líng wǔ!", "es": "¡Ciento cinco!", "keywords": ["一百零五"], "next": "n2", "goal": 0 },
+            { "zh": "对不起，是一百零五。", "py": "Duìbuqǐ, shì yìbǎi líng wǔ.", "es": "Perdona, son ciento cinco.", "keywords": ["是一百零五", "零五"], "next": "n2", "goal": 0 }
+          ],
+          "hint": "Cuando falta la cifra de las decenas, se dice 零."
+        },
+        "n2": {
+          "npc": { "zh": "对！五千加五千等于多少？", "py": "Duì! Wǔqiān jiā wǔqiān děngyú duōshao?", "es": "¡Bien! ¿Y cinco mil más cinco mil?" },
+          "user": [
+            { "zh": "等于一万。", "py": "Děngyú yíwàn.", "es": "Son diez mil.", "keywords": ["一万"], "next": "n3", "goal": 0 },
+            { "zh": "等于十千。", "py": "Děngyú shí qiān.", "es": "Son «diez mil».", "keywords": ["十千"], "next": "n2b" }
+          ],
+          "hint": "10 000 tiene nombre propio en chino: 万."
+        },
+        "n2b": {
+          "npc": { "zh": "不对，我们不说“十千”，我们说“一万”。两万加两万呢？", "py": "Bú duì, wǒmen bù shuō “shí qiān”, wǒmen shuō “yíwàn”. Liǎngwàn jiā liǎngwàn ne?", "es": "No: no decimos «diez mil» así, decimos 一万. ¿Y veinte mil más veinte mil?" },
+          "user": [
+            { "zh": "等于四万。", "py": "Děngyú sìwàn.", "es": "Son cuarenta mil.", "keywords": ["四万"], "next": "n3", "goal": 0 },
+            { "zh": "四十千？不对，是四万！", "py": "Sìshí qiān? Bú duì, shì sìwàn!", "es": "¿Cuarenta mil…? ¡No, 四万!", "keywords": ["是四万"], "next": "n3", "goal": 0 }
+          ],
+          "hint": "两万 + 两万 = 四万 (4 × 10 000)."
+        },
+        "n3": {
+          "npc": { "zh": "好！上海的人口是多少？你知道吗？", "py": "Hǎo! Shànghǎi de rénkǒu shì duōshao? Nǐ zhīdào ma?", "es": "¡Muy bien! ¿Cuántos habitantes tiene Shanghái? ¿Lo sabes?" },
+          "user": [
+            { "zh": "两千四百多万。", "py": "Liǎngqiān sìbǎi duō wàn.", "es": "Veinticuatro millones y pico.", "keywords": ["两千四百", "四百多万"], "next": "n4", "goal": 1 },
+            { "zh": "我不知道。北京呢？", "py": "Wǒ bù zhīdào. Běijīng ne?", "es": "No lo sé. ¿Y Pekín?", "keywords": ["不知道", "北京"], "next": "n3b" }
+          ],
+          "hint": "Agrupa de 4 en 4: 2487 · 0000 = 两千四百八十七万. Si no sabes la cifra exacta, usa 多: 两千四百多万."
+        },
+        "n3b": {
+          "npc": { "zh": "北京的人口是两千一百多万，上海是两千四百多万。西班牙的人口呢？", "py": "Běijīng de rénkǒu shì liǎngqiān yìbǎi duō wàn, Shànghǎi shì liǎngqiān sìbǎi duō wàn. Xībānyá de rénkǒu ne?", "es": "Pekín tiene veintiún millones y pico; Shanghái, veinticuatro y pico. ¿Y España?" },
+          "user": [
+            { "zh": "西班牙的人口是四千八百多万。", "py": "Xībānyá de rénkǒu shì sìqiān bābǎi duō wàn.", "es": "España tiene cuarenta y ocho millones y pico.", "keywords": ["四千八百", "八百多万"], "next": "n4", "goal": 1 },
+            { "zh": "四千八百六十万。", "py": "Sìqiān bābǎi liùshíwàn.", "es": "Cuarenta y ocho millones seiscientos mil.", "keywords": ["四千八百六十万", "六十万"], "next": "n4", "goal": 1 }
+          ],
+          "hint": "48 600 000 → 4860 · 0000 → 四千八百六十万."
+        },
+        "n4": {
+          "npc": { "zh": "对！中国的人口呢？", "py": "Duì! Zhōngguó de rénkǒu ne?", "es": "¡Eso es! ¿Y China?" },
+          "user": [
+            { "zh": "中国的人口是十四亿。", "py": "Zhōngguó de rénkǒu shì shísìyì.", "es": "China tiene mil cuatrocientos millones.", "keywords": ["十四亿"], "next": "n5", "goal": 1 },
+            { "zh": "一亿？", "py": "Yíyì?", "es": "¿Cien millones?", "keywords": ["一亿"], "next": "n4b" }
+          ],
+          "hint": "亿 = cien millones. China: 十四亿."
+        },
+        "n4b": {
+          "npc": { "zh": "不对，是十四亿！十四个一亿。", "py": "Bú duì, shì shísìyì! Shísì ge yíyì.", "es": "¡No, son 十四亿: catorce veces cien millones!" },
+          "user": [
+            { "zh": "十四亿，我知道了。", "py": "Shísìyì, wǒ zhīdào le.", "es": "Mil cuatrocientos millones, entendido.", "keywords": ["十四亿", "知道了"], "next": "n5", "goal": 1 }
+          ],
+          "hint": "Repite la cifra: 十四亿."
+        },
+        "n5": {
+          "npc": { "zh": "你们中文班有多少个学生？", "py": "Nǐmen Zhōngwén bān yǒu duōshao ge xuésheng?", "es": "¿Cuántos estudiantes hay en vuestra clase de chino?" },
+          "user": [
+            { "zh": "我们班有三十多个学生。", "py": "Wǒmen bān yǒu sānshí duō ge xuésheng.", "es": "En nuestra clase hay treinta y pico.", "keywords": ["三十多", "多个"], "next": "n6", "goal": 2 },
+            { "zh": "我不知道，几十个。", "py": "Wǒ bù zhīdào, jǐshí ge.", "es": "No lo sé, unas cuantas decenas.", "keywords": ["几十"], "next": "n6", "goal": 2 }
+          ],
+          "hint": "Aproxima con 多 (三十多个: treinta y pico) o con 几十 (unas decenas). El 多 va detrás de la cifra y delante de 个."
+        },
+        "n6": {
+          "npc": { "zh": "好。你是第几个学生？", "py": "Hǎo. Nǐ shì dì jǐ ge xuésheng?", "es": "Vale. ¿Qué número eres en la lista?" },
+          "user": [
+            { "zh": "我是第二十六个。", "py": "Wǒ shì dì èrshíliù ge.", "es": "Soy el número veintiséis.", "keywords": ["第二十六", "第"], "next": "end1", "goal": 3 },
+            { "zh": "我是第两个。", "py": "Wǒ shì dì liǎng ge.", "es": "Soy el «segundo».", "keywords": ["第两"], "next": "n6b" }
+          ],
+          "hint": "第 + número = ordinal. Con 第 siempre 二, nunca 两."
+        },
+        "n6b": {
+          "npc": { "zh": "我们说“第二”，不说“第两”。", "py": "Wǒmen shuō “dì-èr”, bù shuō “dì liǎng”.", "es": "Se dice 第二, no 第两." },
+          "user": [
+            { "zh": "对，我是第二个！", "py": "Duì, wǒ shì dì-èr ge!", "es": "¡Eso, soy el segundo!", "keywords": ["第二"], "next": "end1", "goal": 3 }
+          ],
+          "hint": "Corrige: 第二个."
+        },
+        "end1": {
+          "npc": { "zh": "好！雨果，你是第一名！", "py": "Hǎo! Yǔguǒ, nǐ shì dì-yī míng!", "es": "¡Genial! Hugo, ¡quedas el primero!" },
+          "end": true,
+          "feedback": "Has sumado con 百, 千 y 万, dicho poblaciones agrupando de 4 en 4, aproximado con 多 y usado 第. Recuerda: 一百零五 (105) ≠ 一百五 (150), y 10 000 = 一万."
+        }
+      }
+    },
+    {
+      "id": "a1-u04-sports-form",
+      "title": "La ficha de deporte",
+      "zh": "你多高？",
+      "level": 1,
+      "setting": "Pabellón de deportes de la universidad. La profesora Wang rellena las fichas de los alumnos extranjeros para el día del deporte. Tú (la app) eres 王老师.",
+      "role": "profesora",
+      "roleZh": "王老师",
+      "voice": "f",
+      "goals": ["Decir tu estatura", "Decir tu peso", "Decir tu número en la lista", "Preguntar cuántos estudiantes participan"],
+      "vocab": ["多高", "米", "多重", "公斤", "千克", "第几", "第", "多少", "一百多", "一半", "大部分"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "雨果，你好！你多高？", "py": "Yǔguǒ, nǐ hǎo! Nǐ duō gāo?", "es": "¡Hola, Hugo! ¿Cuánto mides?" },
+          "user": [
+            { "zh": "我一米八三。", "py": "Wǒ yì mǐ bā sān.", "es": "Mido 1,83.", "keywords": ["一米八", "米"], "next": "n2", "goal": 0 },
+            { "zh": "我不知道……一米八？", "py": "Wǒ bù zhīdào… yì mǐ bā?", "es": "No sé… ¿1,80?", "keywords": ["不知道", "一米"], "next": "n2", "goal": 0 }
+          ],
+          "hint": "La estatura se dice sin verbo: 我一米八三 (1,83 m)."
+        },
+        "n2": {
+          "npc": { "zh": "好。你多重？", "py": "Hǎo. Nǐ duō zhòng?", "es": "Bien. ¿Cuánto pesas?" },
+          "user": [
+            { "zh": "我七十五公斤。", "py": "Wǒ qīshíwǔ gōngjīn.", "es": "Peso setenta y cinco kilos.", "keywords": ["公斤"], "next": "n3", "goal": 1 },
+            { "zh": "七十五千克。", "py": "Qīshíwǔ qiānkè.", "es": "Setenta y cinco kilogramos.", "keywords": ["千克"], "next": "n3", "goal": 1 }
+          ],
+          "hint": "公斤 y 千克 son lo mismo (kilo); 公斤 es más hablado."
+        },
+        "n3": {
+          "npc": { "zh": "你是第几个学生？", "py": "Nǐ shì dì jǐ ge xuésheng?", "es": "¿Qué número eres en la lista?" },
+          "user": [
+            { "zh": "我是第二十六个。", "py": "Wǒ shì dì èrshíliù ge.", "es": "Soy el veintiséis.", "keywords": ["第二十六", "第"], "next": "n4", "goal": 2 },
+            { "zh": "第几个？我不知道。", "py": "Dì jǐ ge? Wǒ bù zhīdào.", "es": "¿Qué número? No lo sé.", "keywords": ["不知道"], "next": "n3b" }
+          ],
+          "hint": "第几 pregunta el orden; responde con 第 + número + 个."
+        },
+        "n3b": {
+          "npc": { "zh": "安娜是第二十五个，你是第二十六个。", "py": "Ānnà shì dì èrshíwǔ ge, nǐ shì dì èrshíliù ge.", "es": "Anna es la veinticinco; tú, el veintiséis." },
+          "user": [
+            { "zh": "好，我是第二十六个。", "py": "Hǎo, wǒ shì dì èrshíliù ge.", "es": "Vale, soy el veintiséis.", "keywords": ["第二十六"], "next": "n4", "goal": 2 }
+          ],
+          "hint": "Repite tu número: 第二十六个."
+        },
+        "n4": {
+          "npc": { "zh": "好，谢谢你。", "py": "Hǎo, xièxie nǐ.", "es": "Muy bien, gracias." },
+          "user": [
+            { "zh": "老师，我们有多少个学生？", "py": "Lǎoshī, wǒmen yǒu duōshao ge xuésheng?", "es": "Profesora, ¿cuántos estudiantes somos?", "keywords": ["多少个学生", "多少"], "next": "n5", "goal": 3 },
+            { "zh": "不客气，再见！", "py": "Bú kèqi, zàijiàn!", "es": "¡De nada, adiós!", "keywords": ["再见", "不客气"], "next": "end2" }
+          ],
+          "hint": "Pregunta cuántos participan con 多少个学生."
+        },
+        "n5": {
+          "npc": { "zh": "一百多个，一半是外国学生。", "py": "Yìbǎi duō ge, yíbàn shì wàiguó xuésheng.", "es": "Ciento y pico; la mitad son extranjeros." },
+          "user": [
+            { "zh": "一百多个！谢谢老师，再见！", "py": "Yìbǎi duō ge! Xièxie lǎoshī, zàijiàn!", "es": "¡Ciento y pico! Gracias, profesora. ¡Adiós!", "keywords": ["一百多", "再见"], "next": "end1" },
+            { "zh": "大部分是中国学生吗？", "py": "Dàbùfen shì Zhōngguó xuésheng ma?", "es": "¿La mayoría son chinos?", "keywords": ["大部分"], "next": "n5b" }
+          ],
+          "hint": "Repite la cifra o pregunta por la mayoría (大部分)."
+        },
+        "n5b": {
+          "npc": { "zh": "一半是中国学生，一半是外国学生。", "py": "Yíbàn shì Zhōngguó xuésheng, yíbàn shì wàiguó xuésheng.", "es": "La mitad son chinos y la otra mitad, extranjeros." },
+          "user": [
+            { "zh": "我知道了，谢谢老师！", "py": "Wǒ zhīdào le, xièxie lǎoshī!", "es": "Entendido, ¡gracias, profesora!", "keywords": ["知道了", "谢谢"], "next": "end1" }
+          ],
+          "hint": "Da las gracias para terminar."
+        },
+        "end1": {
+          "npc": { "zh": "不客气。再见！", "py": "Bú kèqi. Zàijiàn!", "es": "De nada. ¡Adiós!" },
+          "end": true,
+          "feedback": "Has dado estatura (一米八三), peso (七十五公斤) y número de orden (第二十六个), y has entendido 一百多 y 一半. La estatura y el peso se dicen sin verbo."
+        },
+        "end2": {
+          "npc": { "zh": "再见！", "py": "Zàijiàn!", "es": "¡Adiós!" },
+          "end": true,
+          "feedback": "Ficha completa, pero no has preguntado cuántos estudiantes hay. La próxima vez prueba: 我们有多少个学生？"
+        }
+      }
+    }
+  ]
+}

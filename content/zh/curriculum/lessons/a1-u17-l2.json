@@ -1,0 +1,136 @@
+{
+  "id": "a1-u17-l2",
+  "title": "¿A qué te dedicas? Profesiones y 想当…",
+  "zh": "你做什么工作？",
+  "goal": "Preguntar y decir la profesión (做什么工作, 是 + profesión), decir qué quieres ser (想当…) y reconocer los sufijos -家, -员 y -子.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "工人", "pinyin": "gōngrén", "es": "obrero, trabajador" },
+    { "hanzi": "医生", "pinyin": "yīshēng", "es": "médico", "note": "Volverá en la U19 (salud)." },
+    { "hanzi": "当", "pinyin": "dāng", "es": "trabajar de, hacer de, llegar a ser", "note": "想当医生 = querer ser médico." },
+    { "hanzi": "作家", "pinyin": "zuòjiā", "es": "escritor" },
+    { "hanzi": "画家", "pinyin": "huàjiā", "es": "pintor (artista)" },
+    { "hanzi": "运动员", "pinyin": "yùndòngyuán", "es": "deportista" },
+    { "hanzi": "教授", "pinyin": "jiàoshòu", "es": "catedrático, profesor de universidad" },
+    { "hanzi": "教", "pinyin": "jiāo", "es": "enseñar", "note": "教 + persona + materia: 王老师教我们汉语." },
+    { "hanzi": "班", "pinyin": "bān", "es": "clase (grupo de alumnos); turno", "note": "我们班 = nuestra clase. Ya lo conoces de 上班." }
+  ],
+  "extraVocab": ["教授"],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "你做什么工作？", "py": "Nǐ zuò shénme gōngzuò?", "es": "¿A qué te dedicas?" },
+        { "zh": "我爸爸是医生。", "py": "Wǒ bàba shì yīshēng.", "es": "Mi padre es médico." },
+        { "zh": "我想当老师。", "py": "Wǒ xiǎng dāng lǎoshī.", "es": "Quiero ser profesor." }
+      ]
+    },
+    { "type": "vocab", "title": "Profesiones", "words": ["工人", "医生", "当", "作家", "画家", "运动员", "教授", "教", "班"] },
+    {
+      "type": "phonetics-drill",
+      "title": "La -ng de gōng, dāng, shēng",
+      "markdown": "Hoy salen muchas sílabas en **-ng**: 工 *gōng*, 当 *dāng*, 生 *shēng*, 动 *dòng*. Para hacerla, la punta de la lengua **no toca** los dientes: la parte de atrás sube al paladar, como en la «n» de «tengo» o «banco».\n\nOjo con 教: **jiāo** (1.º) es «enseñar» (教汉语); **jiào** (4.º) en 教授 y 教学楼.",
+      "items": [
+        { "audio": "工人", "options": ["gōngrén", "gōnrén", "gòngrén"], "answer": 0, "explain": "工 -ng y 1.er tono; 人 con r." },
+        { "audio": "当", "options": ["dāng", "dān", "tāng"], "answer": 0, "explain": "-ng y d sin soplo." },
+        { "audio": "医生", "options": ["yīshēng", "yīshēn", "yíshēng"], "answer": 0, "explain": "生 termina en -ng." },
+        { "audio": "运动员", "options": ["yùndòngyuán", "yùndōngyuán", "yùntòngyuán"], "answer": 0, "explain": "动 es 4.º tono y con d." },
+        { "audio": "教", "prompt": "«Enseñar» (王老师教汉语)", "options": ["jiāo", "jiào", "qiāo"], "answer": 0, "explain": "Como verbo «enseñar», 1.er tono: jiāo." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["工", "员"],
+      "mnemonics": {
+        "工": "Una regla o escuadra de carpintero: la herramienta del trabajo. 工作 (trabajar), 工人 (obrero).",
+        "员": "口 (boca; aquí «persona», como en 几口人) + 贝 (concha, dinero): la persona que cobra por un puesto. Por eso -员 forma oficios: 服务员, 运动员."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "做什么工作？ · 是 + profesión · 想当 + profesión",
+      "markdown": "**Preguntar la profesión**: 你**做什么工作**？ (lit. «¿qué trabajo haces?»). Sin 做, la frase queda coja.\n\n**Decirla**: 我是 + profesión (我是学生, 我爸爸是医生) o 我在 + lugar + 工作 (lección 1).\n\n**Lo que quieres ser**: **想当** + profesión. 当 es «hacer de, trabajar de, llegar a ser»; 是 es para lo que **ya** eres. 我**想当**医生 (no *我想是医生*). También: 他在饭馆**当**服务员 «trabaja de camarero en un restaurante».\n\n**教 + persona + materia**: 王老师**教我们**汉语 — doble objeto, como 给我一本书 (U16): primero a quién, luego qué.\n\nEn el esqueleto, 想 va en el auxiliar y 当 en el verbo 1.",
+      "focus": ["aux", "verb1"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "我爸爸", "py": "wǒ bàba" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "医生", "py": "yīshēng" } }, "end": "。", "es": "Mi padre es médico." },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "aux": { "zh": "想", "py": "xiǎng" }, "verb1": { "zh": "当", "py": "dāng" }, "object": { "zh": "医生", "py": "yīshēng" } }, "end": "。", "es": "Quiero ser médico." },
+        { "slots": { "subject": { "zh": "小李", "py": "Xiǎo Lǐ" }, "aux": { "zh": "想", "py": "xiǎng" }, "verb1": { "zh": "当", "py": "dāng" }, "object": { "zh": "运动员", "py": "yùndòngyuán" } }, "end": "。", "es": "Xiao Li quiere ser deportista." },
+        { "slots": { "subject": { "zh": "王老师", "py": "Wáng lǎoshī" }, "verb1": { "zh": "教我们", "py": "jiāo wǒmen" }, "object": { "zh": "汉语", "py": "Hànyǔ" } }, "end": "。", "es": "La profesora Wang nos enseña chino." },
+        { "slots": { "subject": { "zh": "他", "py": "tā" }, "place": { "zh": "在饭馆", "py": "zài fànguǎn" }, "verb1": { "zh": "当", "py": "dāng" }, "object": { "zh": "服务员", "py": "fúwùyuán" } }, "end": "。", "es": "Trabaja de camarero en un restaurante.", "esOrder": [{ "text": "Trabaja de", "slot": "verb1" }, { "text": "camarero", "slot": "object" }, { "text": "en un restaurante", "slot": "place" }] },
+        { "slots": { "subject": { "zh": "安娜的姐姐", "py": "Ānnà de jiějie" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "画家", "py": "huàjiā" } }, "end": "。", "es": "La hermana de Anna es pintora." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "不", "py": "bù" }, "aux": { "zh": "想", "py": "xiǎng" }, "verb1": { "zh": "当", "py": "dāng" }, "object": { "zh": "老师", "py": "lǎoshī" } }, "end": "。", "es": "No quiero ser profesor." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "做", "py": "zuò" }, "object": { "zh": "什么工作", "py": "shénme gōngzuò" } }, "end": "？", "es": "¿A qué te dedicas?" },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "aux": { "zh": "想", "py": "xiǎng" }, "verb1": { "zh": "当", "py": "dāng" }, "object": { "zh": "什么", "py": "shénme" } }, "end": "？", "es": "¿Qué quieres ser?" }
+      ],
+      "mistakes": [
+        { "wrong": "我想是医生。", "right": "我想当医生。", "why": "Para «llegar a ser / trabajar de», 当; 是 es para lo que ya eres." },
+        { "wrong": "你什么工作？", "right": "你做什么工作？", "why": "Hace falta el verbo 做." },
+        { "wrong": "王老师教汉语我们。", "right": "王老师教我们汉语。", "why": "Con dos objetos, primero la persona y después la materia (como 给我一本书)." }
+      ]
+    },
+    {
+      "type": "explain",
+      "title": "Sufijos: -家, -员, -子",
+      "markdown": "Muchas palabras chinas se forman con un **sufijo**, como nuestro «-ero» o «-ista»:\n\n| Sufijo | Significa | Ejemplos |\n|---|---|---|\n| **-家** jiā | experto, alguien que se dedica a un arte o un saber | 作家 (escritor), 画家 (pintor) |\n| **-员** yuán | persona con un puesto o un oficio | 服务员 (camarero), 运动员 (deportista) |\n| **-子** zi | sin significado propio: forma nombres, sobre todo de cosas; va en tono neutro | 桌子, 椅子, 本子, 杯子, 瓶子, 房子; también 孩子, 儿子 |\n\nNo todo 家 es sufijo de profesión: en 大家 (todos), 国家 (país) y 家 (casa) significa otra cosa. Con estos sufijos podrás adivinar palabras nuevas: si ves 店员, ya sabes que es «persona que trabaja en una tienda»."
+    },
+    {
+      "type": "dialogue",
+      "title": "¿Qué quieres ser?",
+      "lines": [
+        { "speaker": "小李", "zh": "雨果，你爸爸做什么工作？", "py": "Yǔguǒ, nǐ bàba zuò shénme gōngzuò?", "es": "Hugo, ¿a qué se dedica tu padre?" },
+        { "speaker": "雨果", "zh": "我爸爸是医生。我妈妈是老师，她在一个大学教英语。", "py": "Wǒ bàba shì yīshēng. Wǒ māma shì lǎoshī, tā zài yí ge dàxué jiāo Yīngyǔ.", "es": "Mi padre es médico. Mi madre es profesora: enseña inglés en una universidad." },
+        { "speaker": "小李", "zh": "你也想当老师吗？", "py": "Nǐ yě xiǎng dāng lǎoshī ma?", "es": "¿Tú también quieres ser profesor?" },
+        { "speaker": "雨果", "zh": "不想。我想在中国的公司工作。你呢？你想当什么？", "py": "Bù xiǎng. Wǒ xiǎng zài Zhōngguó de gōngsī gōngzuò. Nǐ ne? Nǐ xiǎng dāng shénme?", "es": "No. Quiero trabajar en una empresa china. ¿Y tú? ¿Qué quieres ser?" },
+        { "speaker": "小李", "zh": "我想当作家。我很喜欢写书。", "py": "Wǒ xiǎng dāng zuòjiā. Wǒ hěn xǐhuan xiě shū.", "es": "Quiero ser escritor. Me encanta escribir libros." },
+        { "speaker": "雨果", "zh": "你哥哥呢？他是运动员吧？", "py": "Nǐ gēge ne? Tā shì yùndòngyuán ba?", "es": "¿Y tu hermano? Es deportista, ¿no?" },
+        { "speaker": "小李", "zh": "对，他是篮球运动员。", "py": "Duì, tā shì lánqiú yùndòngyuán.", "es": "Sí, es jugador de baloncesto." },
+        { "speaker": "雨果", "zh": "我们班的大卫想当画家，他每天画画儿。", "py": "Wǒmen bān de Dàwèi xiǎng dāng huàjiā, tā měitiān huà huàr.", "es": "David, de nuestra clase, quiere ser pintor: pinta todos los días." },
+        { "speaker": "小李", "zh": "那安娜呢？", "py": "Nà Ānnà ne?", "es": "¿Y Anna?" },
+        { "speaker": "雨果", "zh": "安娜想当教授，在大学教汉语！", "py": "Ānnà xiǎng dāng jiàoshòu, zài dàxué jiāo Hànyǔ!", "es": "¡Anna quiere ser catedrática y enseñar chino en la universidad!" }
+      ],
+      "notes": "Para responder «no» a 你想…吗？ se repite el verbo en negativa: 不想. 画画儿 huà huàr es «pintar (cuadros)»: el primer 画 es el verbo y 画儿, el nombre. En China 老师 vale para cualquier profesor; 教授 es un título universitario alto."
+    },
+    { "type": "exercises", "count": 14, "bank": ["g-modal-verbs", "g-question-words", "g-gei", "u09"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "我" }, "aux": { "zh": "想" }, "verb1": { "zh": "当" }, "object": { "zh": "医生" } }, "end": "。", "es": "Quiero ser médico." }, "distractors": ["是"] },
+        { "sentence": { "slots": { "subject": { "zh": "你" }, "verb1": { "zh": "做" }, "object": { "zh": "什么工作" } }, "end": "？", "es": "¿A qué te dedicas?" }, "distractors": ["吗"] },
+        { "sentence": { "slots": { "subject": { "zh": "王老师" }, "verb1": { "zh": "教我们" }, "object": { "zh": "汉语" } }, "end": "。", "es": "La profesora Wang nos enseña chino." } },
+        { "sentence": { "slots": { "subject": { "zh": "我哥哥" }, "place": { "zh": "在北京的一个公司" }, "verb1": { "zh": "工作" } }, "end": "。", "es": "Mi hermano trabaja en una empresa de Pekín." } },
+        { "sentence": { "slots": { "time0": { "zh": "明年" }, "subject": { "zh": "我" }, "adverb": { "zh": "也" }, "aux": { "zh": "想" }, "place": { "zh": "在上海的大学" }, "verb1": { "zh": "当" }, "object": { "zh": "老师" } }, "end": "。", "es": "El año que viene yo también quiero trabajar de profesor en una universidad de Shanghái." }, "distractors": ["是"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "你做什么工作？", "py": "Nǐ zuò shénme gōngzuò?", "es": "¿A qué te dedicas?" },
+        { "zh": "我爸爸是医生。", "py": "Wǒ bàba shì yīshēng.", "es": "Mi padre es médico." },
+        { "zh": "我想当老师。", "py": "Wǒ xiǎng dāng lǎoshī.", "es": "Quiero ser profesor." },
+        { "zh": "他在饭馆当服务员。", "py": "Tā zài fànguǎn dāng fúwùyuán.", "es": "Trabaja de camarero en un restaurante." }
+      ],
+      "respond": [
+        { "q": { "zh": "你做什么工作？", "py": "Nǐ zuò shénme gōngzuò?", "es": "¿A qué te dedicas?" }, "model": { "zh": "我是学生，我在交大读硕士。", "py": "Wǒ shì xuésheng, wǒ zài Jiāodà dú shuòshì.", "es": "Soy estudiante: hago un máster en la Jiaotong." } },
+        { "q": { "zh": "你想当什么？", "py": "Nǐ xiǎng dāng shénme?", "es": "¿Qué quieres ser?" }, "model": { "zh": "我想当老师。", "py": "Wǒ xiǎng dāng lǎoshī.", "es": "Quiero ser profesor." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Nuestra clase",
+      "text": "我们班有十二个学生。大卫想当画家，安娜想当教授，小王想当医生。我呢？我想在中国的公司工作。王老师教我们汉语，她说：“你们都很好！”",
+      "es": "En nuestra clase hay doce alumnos. David quiere ser pintor, Anna quiere ser catedrática y Xiao Wang quiere ser médico. ¿Y yo? Yo quiero trabajar en una empresa china. La profesora Wang nos enseña chino y dice: «¡Sois todos muy buenos!».",
+      "questions": [
+        { "q": "¿Cuántos alumnos hay en la clase?", "options": ["12", "10", "2"], "answer": 0 },
+        { "q": "¿Quién quiere ser médico?", "options": ["小王", "安娜", "大卫"], "answer": 0 },
+        { "q": "¿Qué quiere hacer quien escribe?", "options": ["Trabajar en una empresa china", "Ser pintor", "Ser profesor"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

@@ -1,0 +1,548 @@
+{
+  "id": "numeros",
+  "title": "Números",
+  "zh": "数字",
+  "order": 7,
+  "icon": "Hash",
+  "summary": "Los números chinos se construyen como piezas de Lego: del 0 al 99, 二 o 两, el teléfono con 幺, la edad sin verbo, los clasificadores, 百 / 千 / 万 / 亿 y el 零 del medio, los ordinales con 第, los precios y las aproximaciones (几十, 一百多, 三年多, 七八个).",
+  "kind": "topic",
+  "reviewed": false,
+  "sections": [
+    {
+      "id": "del-0-al-99",
+      "title": "Del 0 al 99: multiplicar y sumar",
+      "unlockedBy": "a1-u02-l1",
+      "markdown": "### Los once que hay que saber\n\n| 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |\n|---|---|---|---|---|---|---|---|---|---|---|\n| 零 líng | 一 yī | 二 èr | 三 sān | 四 sì | 五 wǔ | 六 liù | 七 qī | 八 bā | 九 jiǔ | 十 shí |\n\n### Del 11 al 99, sin palabras nuevas\n\nNo hay «once», «doce» ni «veinte»: todo se construye con 十.\n\n| Cálculo | Chino | Pinyin | Español |\n|---|---|---|---|\n| 10 + 1 | 十一 | shíyī | once |\n| 10 + 2 | 十二 | shí'èr | doce |\n| 2 × 10 | 二十 | èrshí | veinte |\n| 3 × 10 + 5 | 三十五 | sānshíwǔ | treinta y cinco |\n| 9 × 10 + 9 | 九十九 | jiǔshíjiǔ | noventa y nueve |\n\n- «Diez» es solo 十, nunca ✗一十. Los ceros finales no se dicen: 九十 (✗九十零).\n- **一** se queda en **yī** al contar y dentro de las cifras; delante de un clasificador cambia (一个 yí ge).\n- Un número es un nombre más: cabe en el hueco del objeto: 这是**二十五**.\n\n> 💡 **Truco**: lee el número como una suma: 四十七 = «cuatro-diez-siete» = 47.",
+      "sourceNotes": ["zh-numbers-0-99"],
+      "skeleton": {
+        "focus": ["object"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "这", "py": "zhè" },
+              "verb1": { "zh": "是", "py": "shì" },
+              "object": { "zh": "二十五", "py": "èrshíwǔ", "es": "un veinticinco" }
+            },
+            "end": "。",
+            "es": "Esto es un veinticinco."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "这", "py": "zhè" },
+              "adverb": { "zh": "不", "py": "bú" },
+              "verb1": { "zh": "是", "py": "shì" },
+              "object": { "zh": "十四", "py": "shísì", "es": "un catorce" }
+            },
+            "end": "。",
+            "es": "Esto no es un catorce."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "那", "py": "nà" },
+              "verb1": { "zh": "是", "py": "shì" },
+              "object": { "zh": "四十", "py": "sìshí", "es": "un cuarenta" },
+              "particle": { "zh": "吗", "py": "ma" }
+            },
+            "end": "？",
+            "es": "¿Eso es un cuarenta?"
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "这是二十五。", "py": "Zhè shì èrshíwǔ.", "es": "Esto es un veinticinco." },
+        { "zh": "那是十二，不是二十。", "py": "Nà shì shí'èr, bú shì èrshí.", "es": "Eso es un doce, no un veinte." },
+        { "zh": "六十八、四十三、九十、七十一。", "py": "Liùshíbā, sìshísān, jiǔshí, qīshíyī.", "es": "68, 43, 90, 71.", "note": "Lee números al azar en voz alta." }
+      ]
+    },
+    {
+      "id": "cuantos",
+      "title": "¿Cuántos? 几 + clasificador, 多少 + nombre",
+      "unlockedBy": "a1-u02-l2",
+      "markdown": "### La respuesta va en el hueco de la pregunta\n\n| Pregunta | Respuesta |\n|---|---|\n| 你有**几个**中国朋友？ | 我有**三个**中国朋友。 |\n| 王老师有**多少**学生？ | 王老师有**九十个**学生。 |\n\n- **几** espera menos de 10 y **siempre** lleva clasificador (几**个**).\n- **多少** vale para cualquier cifra; el clasificador es opcional.\n- **个** es el clasificador comodín: entre el número y el nombre (三**个**朋友).\n\nLa comparación completa de 几 y 多少 está en el apunte **Preguntas**.",
+      "sourceNotes": ["zh-question-ji-vs-duoshao", "zh-grammar-ji-duoshao"],
+      "skeleton": {
+        "focus": ["object"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "verb1": { "zh": "有", "py": "yǒu" },
+              "object": { "zh": "三个中国朋友", "py": "sān ge Zhōngguó péngyou", "es": "tres amigos chinos" }
+            },
+            "end": "。",
+            "es": "Tengo tres amigos chinos."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "王老师", "py": "Wáng lǎoshī" },
+              "verb1": { "zh": "有", "py": "yǒu" },
+              "object": { "zh": "九十个学生", "py": "jiǔshí ge xuésheng", "es": "noventa alumnos" }
+            },
+            "end": "。",
+            "es": "La profesora Wang tiene noventa alumnos."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "你有几个中国朋友？", "py": "Nǐ yǒu jǐ ge Zhōngguó péngyou?", "es": "¿Cuántos amigos chinos tienes?" },
+        { "zh": "王老师有多少学生？", "py": "Wáng lǎoshī yǒu duōshao xuésheng?", "es": "¿Cuántos alumnos tiene la profesora Wang?" },
+        { "zh": "我有五个朋友。", "py": "Wǒ yǒu wǔ ge péngyou.", "es": "Tengo cinco amigos." }
+      ]
+    },
+    {
+      "id": "edad",
+      "title": "La edad: número + 岁, sin verbo",
+      "unlockedBy": "a1-u02-l3",
+      "markdown": "### La edad no se «tiene»\n\nEn español *tengo* veintidós años; en chino **no hay verbo**: 我**二十二岁** (lit. «yo veintidós años»).\n\n| ✗ Calco | ✓ Chino |\n|---|---|\n| 我有二十二岁。 | 我二十二岁。 |\n| 我是二十二岁。 | 我二十二岁。 |\n\n- **Negativa**: aquí sí aparece 是: 我**不是**二十岁。\n- **Preguntas**, según a quién:\n\n| Pregunta | A quién |\n|---|---|\n| 你**几岁**？ | a un niño |\n| 你**多大**？ | a un joven o a un igual (lo normal) |\n| 您多大年纪？ | a una persona mayor, con respeto |\n\n> 🏮 **¿Sabías que…?**: en China es normal preguntar la edad a alguien que acabas de conocer: sirve para saber cómo tratarle.",
+      "sourceNotes": ["zh-numbers-phone-age", "zh-grammar-price-age"],
+      "skeleton": {
+        "focus": ["object"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ", "es": "yo" },
+              "object": { "zh": "二十三岁", "py": "èrshísān suì", "es": "veintitrés años" }
+            },
+            "end": "。",
+            "es": "Tengo veintitrés años.",
+            "esOrder": [
+              { "text": "Tengo veintitrés años", "slot": "object" }
+            ]
+          },
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "adverb": { "zh": "不", "py": "bú" },
+              "verb1": { "zh": "是", "py": "shì" },
+              "object": { "zh": "二十岁", "py": "èrshí suì", "es": "veinte años" }
+            },
+            "end": "。",
+            "es": "No tengo veinte años."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "你", "py": "nǐ" },
+              "adverb": { "zh": "多", "py": "duō", "es": "cuán" },
+              "verb1": { "zh": "大", "py": "dà", "es": "mayor" }
+            },
+            "end": "？",
+            "es": "¿Cuántos años tienes?"
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "我二十三岁。", "py": "Wǒ èrshísān suì.", "es": "Tengo veintitrés años." },
+        { "zh": "你多大？—我二十二岁，你呢？", "py": "Nǐ duō dà? — Wǒ èrshí'èr suì, nǐ ne?", "es": "¿Cuántos años tienes? —Veintidós, ¿y tú?" },
+        { "zh": "小朋友，你几岁？—我五岁。", "py": "Xiǎopéngyǒu, nǐ jǐ suì? — Wǒ wǔ suì.", "es": "¿Cuántos años tienes, pequeño? —Cinco." },
+        { "zh": "我不是二十岁，我今年二十二岁。", "py": "Wǒ bú shì èrshí suì, wǒ jīnnián èrshí'èr suì.", "es": "No tengo veinte: este año tengo veintidós." }
+      ]
+    },
+    {
+      "id": "er-liang",
+      "title": "Dos: 二 o 两",
+      "unlockedBy": "a1-u02-l4",
+      "markdown": "### El número y la cantidad\n\n| Usa **二** èr | Usa **两** liǎng |\n|---|---|\n| al **contar**: 一、二、三 | delante de **clasificador**: 两**个**人, 两**点**, 两**块** |\n| **dentro** de una cifra: 十二, 二十, 二十二 | con 岁: 两岁 |\n| teléfonos, números de lista, ordinales: 二号, 第二 | con 百 / 千 / 万 (lo más habitual): 两百, 两千, 两万 |\n| meses y días: 二月 (febrero), 二号 (día 2) | horas y duraciones: 两点 (las dos), 两个月 (dos meses) |\n\n- **Regla rápida**: si el «dos» va solo y **cuenta cosas**, es 两. Si es una cifra o forma parte de una cifra, es 二: 十**二**个学生.\n- Nunca ✗二十两个: 二十**二**个.\n\n> 🧠 **Mnemotecnia**: 两 parece una caja con dos personas dentro (人人): «dos de algo». 二 son dos rayas: solo el número.\n\n> ❌ **Error típico**: ✗我有二个问题 → 我有**两**个问题. Y ✗两十 → 二十.",
+      "sourceNotes": ["zh-contrast-er-liang", "zh-grammar-numbers-er-liang", "zh-numbers-0-99"],
+      "skeleton": {
+        "focus": ["object"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "verb1": { "zh": "有", "py": "yǒu" },
+              "object": { "zh": "两个问题", "py": "liǎng ge wèntí", "es": "dos preguntas" }
+            },
+            "end": "。",
+            "es": "Tengo dos preguntas."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "我们班", "py": "wǒmen bān" },
+              "verb1": { "zh": "有", "py": "yǒu" },
+              "object": { "zh": "十二个学生", "py": "shí'èr ge xuésheng", "es": "doce alumnos" }
+            },
+            "end": "。",
+            "es": "En nuestra clase hay doce alumnos."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "我有两个问题。", "py": "Wǒ yǒu liǎng ge wèntí.", "es": "Tengo dos preguntas." },
+        { "zh": "我们班有十二个学生。", "py": "Wǒmen bān yǒu shí'èr ge xuésheng.", "es": "En nuestra clase hay doce alumnos." },
+        { "zh": "王老师写两个汉字。", "py": "Wáng lǎoshī xiě liǎng ge Hànzì.", "es": "La profesora Wang escribe dos caracteres." },
+        { "zh": "两个人，二十二个汉字。", "py": "Liǎng ge rén, èrshí'èr ge Hànzì.", "es": "Dos personas, veintidós caracteres." }
+      ]
+    },
+    {
+      "id": "telefono",
+      "title": "El teléfono: dígito a dígito, con 幺",
+      "unlockedBy": "a1-u02-l5",
+      "markdown": "### Se dicta cifra por cifra\n\nLos teléfonos (y las habitaciones, los autobuses, los vuelos) se leen **dígito a dígito**, con dos particularidades:\n\n| Cifra | Normal | Al dictar |\n|---|---|---|\n| 1 | 一 yī | **幺 yāo** (para no confundirlo con 七 qī) |\n| 2 | 二 èr | 二 èr (nunca 两) |\n| 0 | 零 líng | 零 líng |\n\n- Se pregunta con **多少**: 你手机号码是**多少**？ (✗是什么, ✗是几).\n- Los móviles chinos tienen 11 cifras y empiezan por 1, así que casi todos empiezan por 幺: 138 → 幺三八.\n\n> 🏮 **¿Sabías que…?**: 幺 también se oye en los números de autobús y de habitación: 三零幺 (301).",
+      "sourceNotes": ["zh-numbers-phone-age"],
+      "skeleton": {
+        "focus": ["object"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "你手机号码", "py": "nǐ shǒujī hàomǎ", "es": "tu número de móvil" },
+              "verb1": { "zh": "是", "py": "shì" },
+              "object": { "zh": "多少", "py": "duōshao", "es": "cuál" }
+            },
+            "end": "？",
+            "es": "¿Cuál es tu número de móvil?"
+          },
+          {
+            "slots": {
+              "subject": { "zh": "我手机号码", "py": "wǒ shǒujī hàomǎ" },
+              "verb1": { "zh": "是", "py": "shì" },
+              "object": { "zh": "一三八零零二五六七八九", "py": "yāo sān bā líng líng èr wǔ liù qī bā jiǔ", "es": "138 0025 6789" }
+            },
+            "end": "。",
+            "es": "Mi número de móvil es el 138 0025 6789."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "你手机号码是多少？", "py": "Nǐ shǒujī hàomǎ shì duōshao?", "es": "¿Cuál es tu número de móvil?" },
+        { "zh": "我手机号码是幺三八零零幺二三四五六。", "py": "Wǒ shǒujī hàomǎ shì yāo sān bā líng líng yāo èr sān sì wǔ liù.", "es": "Mi número es el 138 0012 3456." },
+        { "zh": "我有微信，我加你。", "py": "Wǒ yǒu Wēixìn, wǒ jiā nǐ.", "es": "Tengo WeChat: te agrego." }
+      ]
+    },
+    {
+      "id": "clasificador",
+      "title": "Número + clasificador + nombre",
+      "unlockedBy": "a1-u03-l4",
+      "markdown": "### Siempre hay algo entre el número y el nombre\n\nEn chino un número **nunca** toca directamente al nombre: entre los dos va un **clasificador**. El comodín es **个**:\n\n| Número | Clasificador | Nombre | Español |\n|---|---|---|---|\n| 一 | 个 | 人 | una persona |\n| 两 | 个 | 朋友 | dos amigos |\n| 二十 | 个 | 学生 | veinte alumnos |\n| 四 | 口 | 人 | cuatro (de familia) |\n\n- **口** solo para contar a los de casa: 我家有四**口**人.\n- **一** cambia de tono delante del clasificador: 一个 **yí** ge (个 es 4.º tono).\n- Todo el bloque «número + clasificador + nombre» ocupa el hueco del **objeto**.\n\nLa lista de clasificadores está en el apunte **Clasificadores**.\n\n> ❌ **Error típico**: ✗三人, ✗两朋友 → 三**个**人, 两**个**朋友.",
+      "sourceNotes": ["zh-numbers-ordinal-measure", "zh-grammar-measure-words", "zh-errors-hispanohablantes"],
+      "skeleton": {
+        "focus": ["object"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "我家", "py": "wǒ jiā", "es": "mi familia" },
+              "verb1": { "zh": "有", "py": "yǒu" },
+              "object": { "zh": "四口人", "py": "sì kǒu rén", "es": "cuatro personas" }
+            },
+            "end": "。",
+            "es": "En mi familia somos cuatro."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "verb1": { "zh": "有", "py": "yǒu" },
+              "object": { "zh": "两个哥哥", "py": "liǎng ge gēge", "es": "dos hermanos mayores" }
+            },
+            "end": "。",
+            "es": "Tengo dos hermanos mayores."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "我家有四口人。", "py": "Wǒ jiā yǒu sì kǒu rén.", "es": "En mi familia somos cuatro." },
+        { "zh": "我有两个哥哥和一个妹妹。", "py": "Wǒ yǒu liǎng ge gēge hé yí ge mèimei.", "es": "Tengo dos hermanos mayores y una hermana pequeña." },
+        { "zh": "我们班有二十个男生。", "py": "Wǒmen bān yǒu èrshí ge nánshēng.", "es": "En nuestra clase hay veinte chicos." }
+      ]
+    },
+    {
+      "id": "centenas",
+      "title": "Cien: 百 y el 零 del medio",
+      "unlockedBy": "a1-u04-l1",
+      "markdown": "### Se sigue multiplicando y sumando\n\n| Número | Chino | Cómo se piensa |\n|---|---|---|\n| 100 | 一百 | 1 × 100 (aquí sí se dice el 一) |\n| 300 | 三百 | 3 × 100 |\n| 350 | 三百五十 | 3 × 100 + 5 × 10 |\n| 110 | 一百一十 | dentro del número, 十 lleva su 一 |\n| 105 | 一百**零**五 | falta la decena → 零 |\n\n- **零 del medio**: si falta una cifra en medio, se dice 零 (una sola vez aunque falten varias). Los ceros **finales** no se dicen.\n- **La abreviatura**: 一百五 es **150** (se calla el último 十). Por eso 105 necesita su 零.\n- **两百 / 二百**: las dos valen; al principio del número se oye más 两百.\n- Para sumar: A **加** B **等于** C.\n\n> ❌ **Error típico**: ✗百个学生 → **一**百个学生. ✗一百十 → 一百**一**十.",
+      "sourceNotes": ["zh-numbers-100-10000"],
+      "skeleton": {
+        "focus": ["object"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "一百加五", "py": "yìbǎi jiā wǔ", "es": "cien más cinco" },
+              "verb1": { "zh": "等于", "py": "děngyú", "es": "son" },
+              "object": { "zh": "一百零五", "py": "yìbǎi líng wǔ", "es": "ciento cinco" }
+            },
+            "end": "。",
+            "es": "Cien más cinco son ciento cinco."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "中文班", "py": "Zhōngwén bān" },
+              "verb1": { "zh": "有", "py": "yǒu" },
+              "object": { "zh": "一百一十个学生", "py": "yìbǎi yīshí ge xuésheng", "es": "ciento diez alumnos" }
+            },
+            "end": "。",
+            "es": "En la clase de chino hay ciento diez alumnos."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "一百加五等于一百零五。", "py": "Yìbǎi jiā wǔ děngyú yìbǎi líng wǔ.", "es": "Cien más cinco son ciento cinco." },
+        { "zh": "一百零五不是一百五。", "py": "Yìbǎi líng wǔ bú shì yìbǎi wǔ.", "es": "105 no es 一百五 (eso es 150)." },
+        { "zh": "九十九加一等于一百。", "py": "Jiǔshíjiǔ jiā yī děngyú yìbǎi.", "es": "Noventa y nueve más uno son cien." }
+      ]
+    },
+    {
+      "id": "mil-y-diez-mil",
+      "title": "Mil y diez mil: 千 y 万",
+      "unlockedBy": "a1-u04-l2",
+      "markdown": "### 10 000 no es «diez mil», es «un 万»\n\n| Número | Chino |\n|---|---|\n| 1000 | 一千 |\n| 1001 | 一千**零**一 |\n| 1500 | 一千五百 (abreviado: 一千五) |\n| 2000 | 两千 |\n| 10 000 | **一万** (✗十千) |\n| 10 005 | 一万**零**五 (un solo 零) |\n| 12 000 | 一万两千 |\n| 75 000 | 七万五千 |\n\n- 百, 千 y 万 **siempre llevan su 一** cuando valen «uno»: 一千, 一万.\n- Delante de 千 y 万 se dice **两**: 两千, 两万.\n- Peso, distancia y estatura se dicen como la edad, sin verbo: 我七十公斤.\n\n> 🏮 **¿Sabías que…?**: los precios de pisos y coches en China se dan en 万: 一百万 es un millón.",
+      "sourceNotes": ["zh-numbers-100-10000"],
+      "skeleton": {
+        "focus": ["object"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "五千加五千", "py": "wǔqiān jiā wǔqiān" },
+              "verb1": { "zh": "等于", "py": "děngyú" },
+              "object": { "zh": "一万", "py": "yíwàn", "es": "diez mil" }
+            },
+            "end": "。",
+            "es": "Cinco mil más cinco mil son diez mil."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "一千加一", "py": "yìqiān jiā yī" },
+              "verb1": { "zh": "等于", "py": "děngyú" },
+              "object": { "zh": "一千零一", "py": "yìqiān líng yī", "es": "mil uno" }
+            },
+            "end": "。",
+            "es": "Mil más uno son mil uno."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "五千加五千等于一万。", "py": "Wǔqiān jiā wǔqiān děngyú yíwàn.", "es": "Cinco mil más cinco mil son diez mil." },
+        { "zh": "一万是十个一千。", "py": "Yíwàn shì shí ge yìqiān.", "es": "Diez mil son diez «miles»." },
+        { "zh": "两千克不是两公里。", "py": "Liǎng qiānkè bú shì liǎng gōnglǐ.", "es": "Dos kilos no son dos kilómetros." }
+      ]
+    },
+    {
+      "id": "de-cuatro-en-cuatro",
+      "title": "Cifras largas: de cuatro en cuatro (万 y 亿)",
+      "unlockedBy": "a1-u04-l3",
+      "markdown": "### Corta cada cuatro cifras\n\nEl español agrupa de **tres en tres** (mil, millón); el chino, de **cuatro en cuatro**: **万** (10⁴) y **亿** (10⁸).\n\n**Método**: marca cada cuatro cifras desde la derecha, lee cada bloque como un número de 1 a 9999 y añade 万 o 亿.\n\n| Número | De 4 en 4 | Chino |\n|---|---|---|\n| 100 000 | 10 · 0000 | 十万 |\n| 1 000 000 | 100 · 0000 | 一百万 |\n| 10 000 000 | 1000 · 0000 | 一千万 |\n| 24 870 000 | 2487 · 0000 | 两千四百八十七万 |\n| 100 005 | 10 · 0005 | 十万**零**五 |\n| 1 400 000 000 | 14 · 0000 · 0000 | 十四亿 |\n\n- «Un millón» no es una palabra: es **一百万**, «cien diez-miles».\n- 万 va pegado a su bloque, sin 个: 一千万.\n\n> ❌ **Error típico**: ✗一千千 → 一百万. ✗一万万 → 一亿.",
+      "sourceNotes": ["zh-numbers-100-10000"],
+      "skeleton": {
+        "focus": ["object"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "上海的人口", "py": "Shànghǎi de rénkǒu", "es": "la población de Shanghái" },
+              "verb1": { "zh": "是", "py": "shì" },
+              "object": { "zh": "两千四百八十七万", "py": "liǎngqiān sìbǎi bāshíqī wàn", "es": "24 870 000" }
+            },
+            "end": "。",
+            "es": "Shanghái tiene 24 870 000 habitantes."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "中国的人口", "py": "Zhōngguó de rénkǒu" },
+              "verb1": { "zh": "是", "py": "shì" },
+              "object": { "zh": "多少", "py": "duōshao", "es": "cuánto" }
+            },
+            "end": "？",
+            "es": "¿Cuántos habitantes tiene China?"
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "上海的人口是两千四百八十七万。", "py": "Shànghǎi de rénkǒu shì liǎngqiān sìbǎi bāshíqī wàn.", "es": "Shanghái tiene 24 870 000 habitantes." },
+        { "zh": "马德里的人口是三百四十万。", "py": "Mǎdélǐ de rénkǒu shì sānbǎi sìshí wàn.", "es": "Madrid tiene 3 400 000 habitantes." },
+        { "zh": "一百万不是一千万。", "py": "Yìbǎi wàn bú shì yìqiān wàn.", "es": "Un millón no son diez millones." }
+      ]
+    },
+    {
+      "id": "ordinales-aproximaciones",
+      "title": "Primero, segundo… y «ciento y pico»",
+      "unlockedBy": "a1-u04-l4",
+      "markdown": "### Ordinales: 第 + número\n\n| Cantidad | Orden |\n|---|---|\n| 两个学生 (dos estudiantes) | **第二**个学生 (el segundo estudiante) |\n| 十页 (diez páginas) | **第十**页 (la página diez) |\n\n- Con 第 siempre **二**: 第二 (✗第两).\n- Pregunta: **第几**？ (¿qué número?, ¿cuál en el orden?): 第几页？\n- Días, meses y pisos no llevan 第: 三月, 三号, 三楼.\n\n### Aproximaciones\n\n| Forma | Significa | Ejemplo |\n|---|---|---|\n| **几** + 十 / 百 / 千 | unos cuantos | 几十个学生 (unas decenas) |\n| cifra redonda + **多** | y pico | 一百多 (100–199), 三十多个学生 |\n| **一半** | la mitad | 一半的学生 |\n| **大部分** / **一部分** | la mayor parte / una parte | 大部分同学 |\n\n- El 多 va **detrás** de la cifra y **delante** del clasificador: 三十**多**个.\n- No se juntan 几 y 多: ✗几十多.",
+      "sourceNotes": ["zh-numbers-ordinal-measure", "zh-numbers-100-10000"],
+      "skeleton": {
+        "focus": ["object"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "安娜", "py": "Ānnà" },
+              "verb1": { "zh": "是", "py": "shì" },
+              "object": { "zh": "第一个学生", "py": "dì-yī ge xuésheng", "es": "la primera alumna" }
+            },
+            "end": "。",
+            "es": "Ana es la primera alumna (de la lista)."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "中文班", "py": "Zhōngwén bān" },
+              "verb1": { "zh": "有", "py": "yǒu" },
+              "object": { "zh": "几十个学生", "py": "jǐshí ge xuésheng", "es": "unas decenas de alumnos" }
+            },
+            "end": "。",
+            "es": "En la clase de chino hay unas decenas de alumnos."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "我们", "py": "wǒmen" },
+              "verb1": { "zh": "看", "py": "kàn" },
+              "object": { "zh": "第几页", "py": "dì jǐ yè", "es": "qué página" }
+            },
+            "end": "？",
+            "es": "¿Qué página miramos?"
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "我们看第一百零五页。", "py": "Wǒmen kàn dì yìbǎi líng wǔ yè.", "es": "Miramos la página 105." },
+        { "zh": "我们班有三十多个学生。", "py": "Wǒmen bān yǒu sānshí duō ge xuésheng.", "es": "En nuestra clase hay treinta y tantos alumnos." },
+        { "zh": "大部分同学是中国人。", "py": "Dà bùfen tóngxué shì Zhōngguó rén.", "es": "La mayoría de los compañeros son chinos." },
+        { "zh": "上海有两千多万人。", "py": "Shànghǎi yǒu liǎngqiān duō wàn rén.", "es": "Shanghái tiene más de veinte millones de habitantes." }
+      ]
+    },
+    {
+      "id": "precios",
+      "title": "Precios: 块, 毛 y 分",
+      "unlockedBy": "a1-u16-l1",
+      "markdown": "### La escalera del dinero\n\n| Valor | Hablado | Escrito (etiquetas) |\n|---|---|---|\n| 1 yuan | **块** kuài | 元 yuán |\n| 0,10 yuan | **毛** máo | 角 jiǎo |\n| 0,01 yuan | 分 fēn | 分 fēn |\n\nLa moneda es el **人民币** (RMB, ¥). Di 块 y lee 元.\n\n| Precio | Se dice |\n|---|---|\n| ¥24 | 二十四块 (钱) |\n| ¥2 | **两**块 (✗二块) |\n| ¥0,50 | 五毛 |\n| ¥12,50 | 十二块五 (毛): la última unidad se puede callar |\n| ¥250 | 两百五十块 |\n\n- **Sin 是**: el precio va detrás de la cosa, como la edad: 这本书**二十四块**. En la negativa sí: 不是二十四块.\n- **Por unidad**: precio + unidad: 包子**三块一个** («a tres yuanes cada uno»). Pregunta: 多少钱一个？\n- Siempre **多少钱**, nunca ✗几钱.\n\n> 🏮 **¿Sabías que…?**: con el pago por móvil casi nadie habla ya de 分.",
+      "sourceNotes": ["zh-numbers-money", "zh-grammar-price-age"],
+      "skeleton": {
+        "focus": ["object"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "这本书", "py": "zhè běn shū", "es": "este libro" },
+              "object": { "zh": "二十四块", "py": "èrshísì kuài", "es": "veinticuatro yuanes" }
+            },
+            "end": "。",
+            "es": "Este libro cuesta veinticuatro yuanes.",
+            "esOrder": [
+              { "text": "Este libro", "slot": "subject" },
+              { "text": "cuesta veinticuatro yuanes", "slot": "object" }
+            ]
+          },
+          {
+            "slots": {
+              "subject": { "zh": "包子", "py": "bāozi", "es": "los baozi" },
+              "object": { "zh": "三块一个", "py": "sān kuài yí ge", "es": "a tres yuanes cada uno" }
+            },
+            "end": "。",
+            "es": "Los baozi, a tres yuanes cada uno."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "这个", "py": "zhège" },
+              "object": { "zh": "多少钱", "py": "duōshao qián", "es": "cuánto" }
+            },
+            "end": "？",
+            "es": "¿Cuánto cuesta esto?"
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "这个多少钱？—二十五块。", "py": "Zhège duōshao qián? — Èrshíwǔ kuài.", "es": "¿Cuánto cuesta esto? —Veinticinco yuanes." },
+        { "zh": "一杯茶十二块五。", "py": "Yì bēi chá shí'èr kuài wǔ.", "es": "Un té cuesta doce yuanes cincuenta." },
+        { "zh": "包子三块一个。", "py": "Bāozi sān kuài yí ge.", "es": "Los baozi, a tres yuanes cada uno." },
+        { "zh": "这本书不是二十四块。", "py": "Zhè běn shū bú shì èrshísì kuài.", "es": "Este libro no cuesta veinticuatro yuanes." }
+      ]
+    },
+    {
+      "id": "pagar-yigong",
+      "title": "Pagar: 一共 y los precios grandes",
+      "unlockedBy": "a1-u16-l3",
+      "markdown": "### ¿Cuánto es en total?\n\n**一共** (yígòng) = en total, delante del verbo o del precio: **一共**多少钱？ —**一共**八十六块五。\n\n### Precios grandes\n\nSe leen como cualquier número de la unidad 4, con la unidad al final:\n\n| Precio | Se dice |\n|---|---|\n| ¥105 | 一百零五块 |\n| ¥3800 | 三千八百块 (o 三千八) |\n| ¥12 500 | 一万两千五百块 (o 一万两千五) |\n\n- La última unidad se calla con frecuencia: 三千八 = 3800; 一百二 = 120.\n- Delante de 块, 百, 千 y 万, el «dos» suelto es **两**: 两块, 两百, 两千.\n\n> 💡 **Truco**: en la tienda bastan tres frases: 这个多少钱？ → 太贵了！ → 便宜一点儿吧。",
+      "sourceNotes": ["zh-numbers-money", "zh-numbers-100-10000"],
+      "skeleton": {
+        "focus": ["adverb", "object"],
+        "sentences": [
+          {
+            "slots": {
+              "adverb": { "zh": "一共", "py": "yígòng", "es": "en total" },
+              "object": { "zh": "多少钱", "py": "duōshao qián", "es": "cuánto" }
+            },
+            "end": "？",
+            "es": "¿Cuánto es en total?"
+          },
+          {
+            "slots": {
+              "adverb": { "zh": "一共", "py": "yígòng", "es": "en total" },
+              "object": { "zh": "八十六块五", "py": "bāshíliù kuài wǔ", "es": "86,50" }
+            },
+            "end": "。",
+            "es": "En total son 86,50."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "一共多少钱？—一共八十六块五。", "py": "Yígòng duōshao qián? — Yígòng bāshíliù kuài wǔ.", "es": "¿Cuánto es en total? —86,50." },
+        { "zh": "这个电脑三千八百块。", "py": "Zhège diànnǎo sānqiān bābǎi kuài.", "es": "Este ordenador cuesta 3800 yuanes." },
+        { "zh": "这件衣服一百零五块。", "py": "Zhè jiàn yīfu yìbǎi líng wǔ kuài.", "es": "Esta prenda cuesta 105 yuanes." }
+      ]
+    },
+    {
+      "id": "y-pico-y-mas-o-menos",
+      "title": "Y pico, más o menos: 三年多, 二十多个, 大概",
+      "unlockedBy": "a2-u02-l5",
+      "markdown": "### Dónde va el 多\n\n| El número termina en… | 多 va… | Ejemplo |\n|---|---|---|\n| **1–9** | **detrás del clasificador** | 三年**多** (tres años y pico), 一个**多**小时 (hora y pico) |\n| **0** (decenas, centenas…) | **delante del clasificador** | 二十**多**个人 (veintitantas personas), 一百**多**块 |\n\n- **大概** (más o menos, probablemente) va **delante del verbo**, en el hueco de los adverbios: 考试**大概**要两个小时.\n- No acumules aproximaciones: con 多 o con 大概 ya basta.\n\n> ❌ **Error típico**: ✗二十个多人 → 二十多个人. ✗一个小时多 → 一个多小时.",
+      "sourceNotes": ["zh-numbers-100-10000", "zh-numbers-ordinal-measure"],
+      "skeleton": {
+        "focus": ["complement", "adverb"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "verb1": { "zh": "等了", "py": "děng le", "es": "esperé" },
+              "complement": { "zh": "一个多小时", "py": "yí ge duō xiǎoshí", "es": "una hora y pico" }
+            },
+            "end": "。",
+            "es": "Esperé una hora y pico."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "考试", "py": "kǎoshì", "es": "el examen" },
+              "adverb": { "zh": "大概", "py": "dàgài", "es": "más o menos" },
+              "verb1": { "zh": "要", "py": "yào", "es": "dura" },
+              "complement": { "zh": "两个小时", "py": "liǎng ge xiǎoshí", "es": "dos horas" }
+            },
+            "end": "。",
+            "es": "El examen dura unas dos horas."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "我学了三年多汉语。", "py": "Wǒ xué le sān nián duō Hànyǔ.", "es": "He estudiado chino algo más de tres años." },
+        { "zh": "我等了一个多小时。", "py": "Wǒ děng le yí ge duō xiǎoshí.", "es": "Esperé una hora y pico." },
+        { "zh": "我们班有二十多个人。", "py": "Wǒmen bān yǒu èrshí duō ge rén.", "es": "En nuestra clase somos veintitantos." },
+        { "zh": "考试大概要两个小时。", "py": "Kǎoshì dàgài yào liǎng ge xiǎoshí.", "es": "El examen dura unas dos horas." }
+      ]
+    },
+    {
+      "id": "numeros-seguidos",
+      "title": "Dos números seguidos: 七八个",
+      "unlockedBy": "a2-u03-l5",
+      "markdown": "### «Siete u ocho» sin «o»\n\nDos números **consecutivos**, del pequeño al grande, dan una aproximación:\n\n| Chino | Español |\n|---|---|\n| **七八**个人 | siete u ocho personas |\n| **三四**天 | tres o cuatro días |\n| **十五六**分钟 | quince o dieciséis minutos |\n\n- Sin 或者 y siempre en orden: ✗八七个人.\n- No se combinan con 多 ni con 大概 a la vez: ✗大概七八个人 → 七八个人 / 大概七个人.",
+      "sourceNotes": ["zh-numbers-0-99"],
+      "skeleton": {
+        "focus": ["object", "complement"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "我们楼", "py": "wǒmen lóu" },
+              "verb1": { "zh": "有", "py": "yǒu" },
+              "object": { "zh": "七八个留学生", "py": "qī-bā ge liúxuéshēng", "es": "siete u ocho estudiantes extranjeros" }
+            },
+            "end": "。",
+            "es": "En nuestro edificio hay siete u ocho estudiantes extranjeros."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "verb1": { "zh": "等了", "py": "děng le" },
+              "complement": { "zh": "十五六分钟", "py": "shíwǔ-liù fēnzhōng", "es": "quince o dieciséis minutos" }
+            },
+            "end": "。",
+            "es": "Esperé quince o dieciséis minutos."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "我们楼有七八个留学生。", "py": "Wǒmen lóu yǒu qī-bā ge liúxuéshēng.", "es": "En nuestro edificio hay siete u ocho estudiantes extranjeros." },
+        { "zh": "我等了十五六分钟。", "py": "Wǒ děng le shíwǔ-liù fēnzhōng.", "es": "Esperé quince o dieciséis minutos." },
+        { "zh": "我三四天打扫一次房间。", "py": "Wǒ sān-sì tiān dǎsǎo yí cì fángjiān.", "es": "Limpio la habitación cada tres o cuatro días." }
+      ]
+    }
+  ]
+}

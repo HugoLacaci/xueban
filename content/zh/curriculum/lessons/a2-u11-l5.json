@@ -1,0 +1,137 @@
+{
+  "id": "a2-u11-l5",
+  "title": "¿Avión o tren? 还是, 或者 y 还是…吧",
+  "zh": "您还是坐飞机吧",
+  "goal": "Atender a un cliente: preguntar entre dos opciones con 还是, ofrecer alternativas con 或者 (…或者…) y aconsejar con 还是…吧.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "或者", "pinyin": "huòzhě", "es": "o (en afirmaciones)", "note": "茶或者咖啡都可以 = té o café, me da igual. En preguntas se usa 还是." },
+    { "hanzi": "或", "pinyin": "huò", "es": "o (escrito)", "note": "Lo mismo que 或者, más corto; típico de textos y carteles." },
+    { "hanzi": "顾客", "pinyin": "gùkè", "es": "cliente", "note": "老顾客 = cliente habitual." },
+    { "hanzi": "服务", "pinyin": "fúwù", "es": "servicio; atender", "note": "服务态度 = trato al cliente. 服务员 = camarero." },
+    { "hanzi": "商人", "pinyin": "shāngrén", "es": "comerciante, hombre / mujer de negocios" },
+    { "hanzi": "广告", "pinyin": "guǎnggào", "es": "anuncio, publicidad" },
+    { "hanzi": "信", "pinyin": "xìn", "es": "carta", "note": "También «creer»: 相信. 写信 = escribir una carta." },
+    { "hanzi": "封", "pinyin": "fēng", "es": "(clasificador de cartas)", "note": "一封信 = una carta." },
+    { "hanzi": "使用", "pinyin": "shǐyòng", "es": "usar, utilizar", "note": "Más formal que 用: 可以使用微信支付吗？" },
+    { "hanzi": "常用", "pinyin": "chángyòng", "es": "de uso frecuente, habitual", "note": "常用的词 = palabras frecuentes." },
+    { "hanzi": "常见", "pinyin": "chángjiàn", "es": "frecuente, que se ve a menudo", "note": "最常见的问题 = la pregunta más frecuente." },
+    { "hanzi": "普通", "pinyin": "pǔtōng", "es": "normal, corriente", "note": "普通话 = el chino estándar («habla común»)." },
+    { "hanzi": "直接", "pinyin": "zhíjiē", "es": "directo; directamente", "note": "直接去马德里 = ir directamente a Madrid." }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "您想坐飞机还是坐高铁？", "py": "Nín xiǎng zuò fēijī háishi zuò gāotiě?", "es": "¿Prefiere ir en avión o en tren de alta velocidad?" },
+        { "zh": "坐飞机或者坐高铁都可以。", "py": "Zuò fēijī huòzhě zuò gāotiě dōu kěyǐ.", "es": "En avión o en tren, cualquiera de las dos vale." },
+        { "zh": "时间不多的话，您还是坐飞机吧。", "py": "Shíjiān bù duō dehuà, nín háishi zuò fēijī ba.", "es": "Si no tiene mucho tiempo, mejor vaya en avión." }
+      ]
+    },
+    { "type": "vocab", "title": "Atender a los clientes", "words": ["或者", "或", "顾客", "服务", "商人", "广告", "信", "封", "使用", "常用", "常见", "普通", "直接"] },
+    {
+      "type": "phonetics-drill",
+      "title": "La entonación de «¿A o B?»",
+      "markdown": "En una pregunta con **还是**, la voz **sube un poco en la primera opción** y **cae en la segunda**, como en español: «¿Avión ↗ o tren ↘?». No hace falta 吗: la pregunta ya está en 还是.\n\n- **还是** *háishi*: el 是 es **neutro** en esta palabra.\n- **或者** *huòzhě*: 4 + 3; la *zh* con la lengua doblada.\n- **服务** *fúwù*: *f* con los labios, no *h* (✗ *húwù*).\n- **普通** *pǔtōng*: *p* con aire (no *b*) y *t* con aire (no *d*).\n- **或者…，或者…**: pausa después de la primera opción; las dos tienen la misma melodía, como una lista.",
+      "items": [
+        { "audio": "或者", "options": ["huòzhě", "huózhě", "hòuzhě"], "answer": 0, "explain": "huò (4.º) + zhě (3.º)." },
+        { "audio": "还是", "options": ["háishi", "huánshì", "háishī"], "answer": 0, "explain": "还 es hái aquí, y 是 va neutro." },
+        { "audio": "服务", "options": ["fúwù", "húwù", "fùwú"], "answer": 0, "explain": "f labial + 2.º tono, y wù en 4.º." },
+        { "audio": "普通", "options": ["pǔtōng", "bǔtōng", "pǔdōng"], "answer": 0, "explain": "p y t aspiradas: con soplo de aire." },
+        { "audio": "您想坐飞机还是坐高铁", "prompt": "¿Cómo es la melodía?", "options": ["Sube en «avión» y cae en «tren»", "Sube al final, como con 吗", "Plana todo el rato"], "answer": 0, "explain": "Igual que en español: la primera opción queda abierta y la segunda cierra." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["或", "客"],
+      "mnemonics": {
+        "或": "戈 (lanza) + 口 (un recinto) + 一 (la tierra): un territorio defendido con la lanza, que podía ser de uno «o» de otro. De esa duda viene «o, quizá». Con un marco alrededor se hizo 國 (país).",
+        "客": "宀 (techo) + 各 (cada uno): cada uno que llega bajo tu techo es tu invitado. 客人 = invitado; 顾客 = cliente."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "A 还是 B？ · A 或者 B · 还是…吧",
+      "markdown": "Tres usos que los hispanohablantes mezclan porque en español todos son «o» o «mejor»:\n\n| | Para… | Ejemplo |\n|---|---|---|\n| A **还是** B？ | **preguntar** entre dos opciones | 您想喝茶**还是**咖啡？ |\n| A **或者** B | **afirmar**: una u otra, da igual | 茶**或者**咖啡都可以. |\n| **或者**…，**或者**… | enumerar alternativas | 周末我或者去公园，或者在家看书. |\n| **还是**…**吧** | **aconsejar**: «mejor…» | 您**还是**坐飞机**吧**. |\n\n- En 还是…吧, 还是 ocupa el hueco de los **adverbios** (detrás del sujeto) y 吧 el de la **partícula**.\n- **或者…或者…** con un solo sujeto: el 或者 va detrás del sujeto, como un adverbio; cada alternativa, en su fila.\n- Pregunta con 还是 → **sin 吗**.",
+      "focus": ["adverb", "verb1"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "顾客", "py": "gùkè" }, "aux": { "zh": "可以", "py": "kěyǐ" }, "verb1": { "zh": "坐飞机或者坐高铁", "py": "zuò fēijī huòzhě zuò gāotiě" }, "verb2": { "zh": "去", "py": "qù" } }, "end": "。", "es": "Los clientes pueden ir en avión o en tren.", "esOrder": [{ "text": "Los clientes", "slot": "subject" }, { "text": "pueden", "slot": "aux" }, { "text": "ir", "slot": "verb2" }, { "text": "en avión o en tren", "slot": "verb1" }] },
+        { "slots": { "subject": { "zh": "茶或者咖啡", "py": "chá huòzhě kāfēi" }, "adverb": { "zh": "都", "py": "dōu" }, "verb1": { "zh": "可以", "py": "kěyǐ" } }, "end": "。", "es": "Té o café, cualquiera de los dos." },
+        { "slots": { "subject": { "zh": "您", "py": "nín" }, "adverb": { "zh": "还是", "py": "háishi" }, "verb1": { "zh": "坐高铁", "py": "zuò gāotiě" }, "verb2": { "zh": "去", "py": "qù" }, "particle": { "zh": "吧", "py": "ba" } }, "end": "。", "es": "Mejor vaya en tren de alta velocidad." },
+        { "slots": { "time0": { "zh": "周末", "py": "zhōumò" }, "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "或者", "py": "huòzhě" }, "verb1": { "zh": "去", "py": "qù" }, "object": { "zh": "公园", "py": "gōngyuán" } }, "end": "，", "es": "Los fines de semana, o voy al parque… (1.ª parte)" },
+        { "slots": { "adverb": { "zh": "或者", "py": "huòzhě" }, "place": { "zh": "在家", "py": "zài jiā" }, "verb1": { "zh": "看", "py": "kàn" }, "object": { "zh": "书", "py": "shū" } }, "end": "。", "es": "…o leo en casa. (2.ª parte)" },
+        { "slots": { "subject": { "zh": "这个广告", "py": "zhège guǎnggào" }, "adverb": { "zh": "很", "py": "hěn" }, "verb1": { "zh": "普通", "py": "pǔtōng" } }, "end": "。", "es": "Este anuncio es muy normalito." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "adverb": { "zh": "还是别", "py": "háishi bié" }, "verb1": { "zh": "给他打电话", "py": "gěi tā dǎ diànhuà" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Mejor no le llames." },
+        { "slots": { "subject": { "zh": "这个词", "py": "zhège cí" }, "adverb": { "zh": "不", "py": "bù" }, "verb1": { "zh": "常用", "py": "chángyòng" } }, "end": "。", "es": "Esta palabra no es de uso frecuente." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "您", "py": "nín" }, "aux": { "zh": "想", "py": "xiǎng" }, "verb1": { "zh": "喝", "py": "hē" }, "object": { "zh": "茶还是咖啡", "py": "chá háishi kāfēi" } }, "end": "？", "es": "¿Quiere té o café?" },
+        { "slots": { "subject": { "zh": "您", "py": "nín" }, "aux": { "zh": "要", "py": "yào" }, "verb1": { "zh": "直接去", "py": "zhíjiē qù" }, "object": { "zh": "马德里", "py": "Mǎdélǐ" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿Quiere ir directamente a Madrid?" }
+      ],
+      "mistakes": [
+        { "wrong": "你喝茶或者咖啡？", "right": "你喝茶还是咖啡？", "why": "Para preguntar entre dos opciones se usa 还是; 或者 es para afirmar." },
+        { "wrong": "我喝茶还是咖啡都可以。", "right": "我喝茶或者咖啡都可以。", "why": "En una afirmación («me da igual uno u otro») va 或者." },
+        { "wrong": "你喝茶还是咖啡吗？", "right": "你喝茶还是咖啡？", "why": "La pregunta ya está en 还是: no se añade 吗." },
+        { "wrong": "您还是坐飞机。", "right": "您还是坐飞机吧。", "why": "Para aconsejar («mejor…») 还是 va con 吧 al final; sin 吧 suena seco." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Un cliente que viaja a Madrid",
+      "lines": [
+        { "speaker": "雨果", "zh": "您好，欢迎！请问您想去哪儿？", "py": "Nín hǎo, huānyíng! Qǐngwèn nín xiǎng qù nǎr?", "es": "Buenos días, ¡bienvenido! ¿A dónde le gustaría ir?" },
+        { "speaker": "张先生", "zh": "你好，我是商人，下个月要去马德里。", "py": "Nǐ hǎo, wǒ shì shāngrén, xià ge yuè yào qù Mǎdélǐ.", "es": "Hola, soy empresario y el mes que viene tengo que ir a Madrid." },
+        { "speaker": "雨果", "zh": "您想从上海直接去，还是先去北京？", "py": "Nín xiǎng cóng Shànghǎi zhíjiē qù, háishi xiān qù Běijīng?", "es": "¿Quiere ir directamente desde Shanghái o pasar antes por Pekín?" },
+        { "speaker": "张先生", "zh": "直接去吧。你们的服务怎么样？", "py": "Zhíjiē qù ba. Nǐmen de fúwù zěnmeyàng?", "es": "Directamente. ¿Qué tal es vuestro servicio?" },
+        { "speaker": "雨果", "zh": "很好，我们的顾客都很满意。您可以在网上或者手机上看我们的广告。", "py": "Hěn hǎo, wǒmen de gùkè dōu hěn mǎnyì. Nín kěyǐ zài wǎngshang huòzhě shǒujī shang kàn wǒmen de guǎnggào.", "es": "Muy bueno: nuestros clientes están muy contentos. Puede ver nuestros anuncios en internet o en el móvil." },
+        { "speaker": "张先生", "zh": "在马德里，我住大酒店还是普通的酒店好？", "py": "Zài Mǎdélǐ, wǒ zhù dà jiǔdiàn háishi pǔtōng de jiǔdiàn hǎo?", "es": "En Madrid, ¿me conviene más un hotel grande o uno normal?" },
+        { "speaker": "雨果", "zh": "普通的或者大的都可以。如果您常常开会，还是住市中心吧。", "py": "Pǔtōng de huòzhě dà de dōu kěyǐ. Rúguǒ nín chángcháng kāihuì, háishi zhù shì zhōngxīn ba.", "es": "Cualquiera de los dos vale. Si tiene muchas reuniones, mejor alójese en el centro." },
+        { "speaker": "张先生", "zh": "我在那儿可以使用微信支付吗？", "py": "Wǒ zài nàr kěyǐ shǐyòng Wēixìn zhīfù ma?", "es": "¿Allí podré pagar con WeChat?" },
+        { "speaker": "雨果", "zh": "很多地方不能用，您还是带一张信用卡吧。", "py": "Hěn duō dìfang bù néng yòng, nín háishi dài yì zhāng xìnyòngkǎ ba.", "es": "En muchos sitios no se puede; mejor lleve una tarjeta de crédito." },
+        { "speaker": "张先生", "zh": "好的，谢谢。你的服务态度真好！", "py": "Hǎo de, xièxie. Nǐ de fúwù tàidu zhēn hǎo!", "es": "De acuerdo, gracias. ¡Qué bien atiendes!" },
+        { "speaker": "雨果", "zh": "不客气。有问题的话，您直接给我打电话或者发微信。", "py": "Bú kèqi. Yǒu wèntí dehuà, nín zhíjiē gěi wǒ dǎ diànhuà huòzhě fā Wēixìn.", "es": "De nada. Si tiene cualquier problema, llámeme directamente o mándeme un WeChat." }
+      ],
+      "notes": "Con un cliente se usa 您 todo el rato, y los consejos se suavizan con 还是…吧. 市中心 = el centro de la ciudad (市 + 中心)."
+    },
+    { "type": "exercises", "count": 17, "bank": ["u09", "g-question-words", "g-ma", "g-word-order"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "您" }, "aux": { "zh": "想" }, "verb1": { "zh": "喝" }, "object": { "zh": "茶还是咖啡" } }, "end": "？", "es": "¿Quiere té o café?" }, "distractors": ["吗", "或者"] },
+        { "sentence": { "slots": { "subject": { "zh": "茶或者咖啡" }, "adverb": { "zh": "都" }, "verb1": { "zh": "可以" } }, "end": "。", "es": "Té o café, cualquiera de los dos." }, "distractors": ["还是"] },
+        { "sentence": { "slots": { "subject": { "zh": "您" }, "adverb": { "zh": "还是" }, "verb1": { "zh": "带" }, "object": { "zh": "一张信用卡" }, "particle": { "zh": "吧" } }, "end": "。", "es": "Mejor lleve una tarjeta de crédito." }, "distractors": ["或者"] },
+        { "sentence": { "slots": { "time0": { "zh": "时间不多的话，" }, "subject": { "zh": "顾客" }, "time": { "zh": "下个月" }, "adverb": { "zh": "还是" }, "verb1": { "zh": "坐飞机" }, "verb2": { "zh": "直接去" }, "object": { "zh": "马德里" }, "particle": { "zh": "吧" } }, "end": "。", "es": "Si no tiene mucho tiempo, mejor que el cliente vaya el mes que viene en avión directamente a Madrid." }, "distractors": ["或者"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "您想坐飞机还是坐高铁？", "py": "Nín xiǎng zuò fēijī háishi zuò gāotiě?", "es": "¿Prefiere ir en avión o en tren?" },
+        { "zh": "茶或者咖啡都可以。", "py": "Chá huòzhě kāfēi dōu kěyǐ.", "es": "Té o café, cualquiera de los dos." },
+        { "zh": "您还是带一张信用卡吧。", "py": "Nín háishi dài yì zhāng xìnyòngkǎ ba.", "es": "Mejor lleve una tarjeta de crédito." },
+        { "zh": "周末我或者去公园，或者在家看书。", "py": "Zhōumò wǒ huòzhě qù gōngyuán, huòzhě zài jiā kàn shū.", "es": "Los fines de semana, o voy al parque o leo en casa." }
+      ],
+      "respond": [
+        { "q": { "zh": "你喜欢喝茶还是喝咖啡？", "py": "Nǐ xǐhuan hē chá háishi hē kāfēi?", "es": "¿Te gusta más el té o el café?" }, "model": { "zh": "我喜欢喝咖啡，可是晚上我还是喝茶吧。", "py": "Wǒ xǐhuan hē kāfēi, kěshì wǎnshang wǒ háishi hē chá ba.", "es": "Me gusta el café, pero por la noche mejor tomo té." } },
+        { "q": { "zh": "周末你一般做什么？", "py": "Zhōumò nǐ yìbān zuò shénme?", "es": "¿Qué sueles hacer los fines de semana?" }, "model": { "zh": "我或者去打工，或者跟朋友去吃饭。", "py": "Wǒ huòzhě qù dǎgōng, huòzhě gēn péngyou qù chī fàn.", "es": "O voy a trabajar o salgo a comer con amigos." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Cartas para los clientes de siempre",
+      "text": "雨果在公司主要做顾客服务。来公司的顾客，有的是商人，有的是学生，也有很多老年人。顾客最常见的问题是：“坐飞机还是坐高铁？”“住大酒店还是住普通的酒店？”雨果常常说：“您坐飞机或者坐高铁都可以。如果时间不多，您还是坐飞机吧。”公司的广告很多，顾客可以在网上或者手机上看。每年春节，老板都让雨果和小王给老顾客写信。今年他们写了一百多封信。小王说，现在大家常用微信，写信的人越来越少，可是老顾客收到信都很高兴。雨果觉得，写信或者打电话都比发广告好，顾客能感到我们的服务很好。",
+      "es": "En la empresa, Hugo se ocupa sobre todo de atender a los clientes. Algunos son empresarios, otros estudiantes, y también hay muchas personas mayores. Las preguntas más frecuentes son: «¿Avión o tren?» y «¿Hotel grande u hotel normal?». Hugo suele decir: «Puede ir en avión o en tren, cualquiera de las dos. Si no tiene mucho tiempo, mejor en avión». La empresa tiene muchos anuncios, que los clientes pueden ver en internet o en el móvil. Cada Año Nuevo chino, el jefe les pide a Hugo y a Xiao Wang que escriban a los clientes habituales. Este año han escrito más de cien cartas. Xiao Wang dice que ahora todo el mundo usa WeChat y cada vez hay menos gente que escriba cartas, pero a los clientes de siempre les hace mucha ilusión recibirlas. A Hugo le parece que una carta o una llamada es mejor que mandar anuncios: así los clientes notan que se les atiende bien.",
+      "questions": [
+        { "q": "¿De qué se ocupa Hugo en la empresa?", "options": ["顾客服务", "写广告", "开车"], "answer": 0 },
+        { "q": "¿Cuántas cartas han escrito este año?", "options": ["一百多封", "十多封", "一千多封"], "answer": 0 },
+        { "q": "¿Qué aconseja Hugo si el cliente tiene poco tiempo?", "options": ["坐飞机", "坐高铁", "住大酒店"], "answer": 0 },
+        { "q": "¿Qué frase es correcta?", "options": ["您喝茶还是喝咖啡？", "您喝茶或者喝咖啡？", "您喝茶还是喝咖啡吗？"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

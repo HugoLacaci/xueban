@@ -1,0 +1,128 @@
+{
+  "id": "a1-u20-l1",
+  "title": "¿Diga? 喂 y los números de teléfono",
+  "zh": "喂，是安娜吗？",
+  "goal": "Contestar y empezar una llamada con 喂, preguntar por alguien (…在吗？) y dar o pedir un número de móvil leyendo el 1 como 幺.",
+  "minutes": 13,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "喂", "pinyin": "wéi", "es": "¿diga?, ¿sí? (al teléfono)", "note": "Al teléfono, segundo tono (wéi). En cuarto tono (wèi) es «¡eh, oiga!», más brusco." },
+    { "hanzi": "手机", "pinyin": "shǒujī", "es": "móvil", "note": "Lit. «máquina de mano»." },
+    { "hanzi": "打电话", "pinyin": "dǎ diànhuà", "es": "llamar por teléfono", "note": "电话 (teléfono) ya lo viste en la U2; ahora con su verbo, 打." },
+    { "hanzi": "话", "pinyin": "huà", "es": "palabras, lo que se dice", "note": "电话 = «palabras eléctricas»; 说话 = hablar." },
+    { "hanzi": "说话", "pinyin": "shuōhuà", "es": "hablar", "note": "说话 no lleva objeto: 他说话很快. Con objeto, 说: 说汉语." },
+    { "hanzi": "在家", "pinyin": "zài jiā", "es": "estar en casa", "note": "王老师在家吗？ = ¿está la profesora en casa?" },
+    { "hanzi": "号码", "pinyin": "hàomǎ", "es": "número (de teléfono, de habitación…)", "note": "Repaso de la U2: 手机号码 = número de móvil." },
+    { "hanzi": "幺", "pinyin": "yāo", "es": "uno (al leer números de teléfono)", "note": "Repaso de la U2: en números largos el 1 se dice yāo para no confundirlo con 七 qī." }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "喂，请问，王老师在吗？", "py": "Wéi, qǐngwèn, Wáng lǎoshī zài ma?", "es": "¿Sí? Perdone, ¿está la profesora Wang?" },
+        { "zh": "你的手机号码是多少？", "py": "Nǐ de shǒujī hàomǎ shì duōshao?", "es": "¿Cuál es tu número de móvil?" },
+        { "zh": "幺三九，二六八七，五四幺零。", "py": "Yāo sān jiǔ, èr liù bā qī, wǔ sì yāo líng.", "es": "1-3-9, 2-6-8-7, 5-4-1-0." }
+      ]
+    },
+    { "type": "vocab", "title": "Al teléfono", "words": ["喂", "手机", "打电话", "话", "说话", "在家", "号码", "幺"] },
+    {
+      "type": "phonetics-drill",
+      "title": "Los números al teléfono: 幺 yāo",
+      "markdown": "Los móviles chinos tienen **11 cifras** y se leen en grupos: **3 + 4 + 4** (139 2687 5410), con una pequeña pausa entre grupos.\n\nEl **1** se lee **幺 yāo** (no *yī*) para que no se confunda con el **七 qī** por teléfono. Y el **2** se dice **二 èr** (no 两).\n\n喂 al coger el teléfono es **wéi**, en segundo tono: sube, como un «¿sí?».",
+      "items": [
+        { "audio": "幺", "options": ["yāo", "yī", "yáo"], "answer": 0, "explain": "幺 yāo, primer tono: el «uno» de los teléfonos." },
+        { "audio": "幺三九", "options": ["yāo sān jiǔ", "yī sān jiǔ", "yāo sān qī"], "answer": 0, "explain": "1-3-9, con 幺 para el uno." },
+        { "audio": "手机", "options": ["shǒujī", "sǒujī", "shǒuqī"], "answer": 0, "explain": "sh con la lengua atrás; jī sin aire." },
+        { "audio": "电话", "options": ["diànhuà", "diànhuā", "tiànhuà"], "answer": 0, "explain": "Dos cuartos tonos: cae, cae." },
+        { "audio": "号码", "options": ["hàomǎ", "hǎomǎ", "hàomā"], "answer": 0, "explain": "号 hào (4.º) no es 好 hǎo (3.º)." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["话", "机"],
+      "mnemonics": {
+        "话": "讠 (palabra, habla) + 舌 (lengua): lo que sale de la lengua = palabras. 说, 语 y 请 también llevan 讠.",
+        "机": "木 (madera) + 几: las primeras máquinas eran de madera. Hoy está en 手机, 电脑… y en 飞机 y 机场."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "¿…在吗? y el número de móvil",
+      "markdown": "**喂** es una interjección: va **antes de la frase**, fuera del esqueleto, como el «¿Sí?» o el «Oye» españoles: **喂**，你好！ / **喂**，是安娜吗？\n\nPara preguntar **si alguien está**, se usa el verbo **在** (U14) sin lugar: 王老师**在**吗？ Respuesta: 在。 / 她不在。 Si quieres decir dónde, 在 + lugar: 他**在家**。\n\nPara el número se pregunta con **多少** (no con 什么): 你的手机号码是**多少**？ El número va en el hueco del objeto y se lee cifra a cifra.\n\nSi llamas tú, preséntate con **我是…** o pregunta **是…吗？** (¿eres…?).",
+      "focus": ["verb1", "object"],
+      "sentences": [
+        { "slots": { "subject": { "zh": "我的手机号码", "py": "wǒ de shǒujī hàomǎ" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "幺三九二六八七五四幺零", "py": "yāo sān jiǔ èr liù bā qī wǔ sì yāo líng" } }, "end": "。", "es": "Mi número de móvil es el 139 2687 5410." },
+        { "slots": { "subject": { "zh": "小李", "py": "Xiǎo Lǐ" }, "verb1": { "zh": "在家", "py": "zài jiā" } }, "end": "。", "es": "Xiao Li está en casa." },
+        { "slots": { "subject": { "zh": "我爸爸", "py": "wǒ bàba" }, "adverb": { "zh": "常常", "py": "chángcháng" }, "verb1": { "zh": "打", "py": "dǎ" }, "object": { "zh": "电话", "py": "diànhuà" } }, "end": "。", "es": "Mi padre llama mucho por teléfono." },
+        { "slots": { "subject": { "zh": "他说话", "py": "tā shuōhuà" }, "adverb": { "zh": "很", "py": "hěn" }, "verb1": { "zh": "快", "py": "kuài" } }, "end": "。", "es": "Habla muy deprisa." },
+        { "slots": { "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "安娜", "py": "Ānnà" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿Eres Ana? (al teléfono)" }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "王老师", "py": "Wáng lǎoshī" }, "adverb": { "zh": "不", "py": "bú" }, "verb1": { "zh": "在家", "py": "zài jiā" } }, "end": "。", "es": "La profesora Wang no está en casa." },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "没", "py": "méi" }, "verb1": { "zh": "有", "py": "yǒu" }, "object": { "zh": "她的手机号码", "py": "tā de shǒujī hàomǎ" } }, "end": "。", "es": "No tengo su número de móvil." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "王老师", "py": "Wáng lǎoshī" }, "verb1": { "zh": "在", "py": "zài" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿Está la profesora Wang?" },
+        { "slots": { "subject": { "zh": "你的手机号码", "py": "nǐ de shǒujī hàomǎ" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "多少", "py": "duōshao" } }, "end": "？", "es": "¿Cuál es tu número de móvil?" }
+      ],
+      "mistakes": [
+        { "wrong": "一三九……(yī sān jiǔ)", "right": "幺三九……(yāo sān jiǔ)", "why": "En números de teléfono, habitaciones o autobuses el 1 se lee yāo." },
+        { "wrong": "你的手机号码是什么？", "right": "你的手机号码是多少？", "why": "Para números se pregunta con 多少." },
+        { "wrong": "王老师在吗家？", "right": "王老师在家吗？", "why": "吗 va siempre al final de la frase." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Hugo llama a Ana",
+      "lines": [
+        { "speaker": "安娜", "zh": "喂？", "py": "Wéi?", "es": "¿Sí?" },
+        { "speaker": "雨果", "zh": "喂，是安娜吗？我是雨果。", "py": "Wéi, shì Ānnà ma? Wǒ shì Yǔguǒ.", "es": "Hola, ¿eres Ana? Soy Hugo." },
+        { "speaker": "安娜", "zh": "雨果，你好！什么事？", "py": "Yǔguǒ, nǐ hǎo! Shénme shì?", "es": "¡Hola, Hugo! ¿Qué pasa?" },
+        { "speaker": "雨果", "zh": "你在宿舍吗？", "py": "Nǐ zài sùshè ma?", "es": "¿Estás en la residencia?" },
+        { "speaker": "安娜", "zh": "我不在宿舍，我在图书馆。", "py": "Wǒ bú zài sùshè, wǒ zài túshūguǎn.", "es": "No estoy en la residencia: estoy en la biblioteca." },
+        { "speaker": "雨果", "zh": "小李的手机号码是多少？我没有他的号码。", "py": "Xiǎo Lǐ de shǒujī hàomǎ shì duōshao? Wǒ méiyǒu tā de hàomǎ.", "es": "¿Cuál es el número de móvil de Xiao Li? No tengo su número." },
+        { "speaker": "安娜", "zh": "幺三九，二六八七，五四幺零。", "py": "Yāo sān jiǔ, èr liù bā qī, wǔ sì yāo líng.", "es": "1-3-9, 2-6-8-7, 5-4-1-0." },
+        { "speaker": "雨果", "zh": "幺三九，二六八七，五四幺零。对吗？", "py": "Yāo sān jiǔ, èr liù bā qī, wǔ sì yāo líng. Duì ma?", "es": "1-3-9, 2-6-8-7, 5-4-1-0. ¿Es así?" },
+        { "speaker": "安娜", "zh": "对！", "py": "Duì!", "es": "¡Sí!" },
+        { "speaker": "雨果", "zh": "谢谢！再见！", "py": "Xièxie! Zàijiàn!", "es": "¡Gracias! ¡Adiós!" }
+      ],
+      "notes": "Al teléfono no se dice «¡hola!» sino 喂: lo dicen los dos, el que llama y el que contesta. Repetir el número en voz alta para comprobarlo (…对吗？) es lo más normal del mundo."
+    },
+    { "type": "exercises", "count": 14, "bank": ["u14", "g-numbers", "g-zai"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "王老师" }, "verb1": { "zh": "在" }, "particle": { "zh": "吗" } }, "end": "？", "es": "¿Está la profesora Wang?" }, "distractors": ["是"] },
+        { "sentence": { "slots": { "subject": { "zh": "你的手机号码" }, "verb1": { "zh": "是" }, "object": { "zh": "多少" } }, "end": "？", "es": "¿Cuál es tu número de móvil?" }, "distractors": ["什么", "吗"] },
+        { "sentence": { "slots": { "subject": { "zh": "小李" }, "time": { "zh": "今天晚上" }, "adverb": { "zh": "不" }, "verb1": { "zh": "在家" } }, "end": "。", "es": "Xiao Li no está en casa esta noche." } },
+        { "sentence": { "slots": { "time0": { "zh": "明天上午" }, "subject": { "zh": "我" }, "aux": { "zh": "要" }, "verb1": { "zh": "去学校" }, "verb2": { "zh": "买" }, "object": { "zh": "一个新手机" } }, "end": "。", "es": "Mañana por la mañana voy a ir a la universidad a comprarme un móvil nuevo." } }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "喂，是安娜吗？", "py": "Wéi, shì Ānnà ma?", "es": "Hola, ¿eres Ana?" },
+        { "zh": "喂，请问，王老师在吗？", "py": "Wéi, qǐngwèn, Wáng lǎoshī zài ma?", "es": "¿Sí? Perdone, ¿está la profesora Wang?" },
+        { "zh": "你的手机号码是多少？", "py": "Nǐ de shǒujī hàomǎ shì duōshao?", "es": "¿Cuál es tu número de móvil?" },
+        { "zh": "幺八六，三二幺七，零九五五。", "py": "Yāo bā liù, sān èr yāo qī, líng jiǔ wǔ wǔ.", "es": "1-8-6, 3-2-1-7, 0-9-5-5." }
+      ],
+      "respond": [
+        { "q": { "zh": "喂，请问，雨果在吗？", "py": "Wéi, qǐngwèn, Yǔguǒ zài ma?", "es": "¿Sí? Perdona, ¿está Hugo?" }, "model": { "zh": "我是雨果，你好！", "py": "Wǒ shì Yǔguǒ, nǐ hǎo!", "es": "Soy yo, Hugo. ¡Hola!" } },
+        { "q": { "zh": "你的手机号码是多少？", "py": "Nǐ de shǒujī hàomǎ shì duōshao?", "es": "¿Cuál es tu número de móvil?" }, "model": { "zh": "幺五二，八八三六，四七九零。", "py": "Yāo wǔ èr, bā bā sān liù, sì qī jiǔ líng.", "es": "1-5-2, 8-8-3-6, 4-7-9-0." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Los números de Hugo",
+      "text": "雨果有一个新手机。王老师的手机号码是幺三八，六二九七，五零幺幺。小李的手机号码是幺五二，八八三六，四七九零。今天晚上小李不在宿舍，在家。雨果打电话，小李说：“喂？我在家，明天回来。”",
+      "es": "Hugo tiene un móvil nuevo. El número de la profesora Wang es el 138 6297 5011. El de Xiao Li es el 152 8836 4790. Esta noche Xiao Li no está en la residencia: está en casa. Hugo le llama y Xiao Li le dice: «¿Sí? Estoy en casa; vuelvo mañana».",
+      "questions": [
+        { "q": "¿Cómo empieza el número de la profesora?", "options": ["幺三八", "幺五二", "一三八"], "answer": 0 },
+        { "q": "¿Dónde está Xiao Li esta noche?", "options": ["在家", "在宿舍", "在图书馆"], "answer": 0 },
+        { "q": "¿Cuándo vuelve Xiao Li?", "options": ["明天", "今天晚上", "星期六"], "answer": 0 },
+        { "q": "¿Qué dice Xiao Li al coger el teléfono?", "options": ["喂？", "你好吗？", "再见！"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

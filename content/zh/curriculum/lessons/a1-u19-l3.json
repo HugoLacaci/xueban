@@ -1,0 +1,131 @@
+{
+  "id": "a1-u19-l3",
+  "title": "En el médico: 没 + verbo (¡sin 了!)",
+  "zh": "我没去医院",
+  "goal": "Decir lo que no has hecho con 没 + verbo (sin 了) y preguntarlo con …了吗？, …了没有？ y V没V.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "医生", "pinyin": "yīshēng", "es": "médico, médica" },
+    { "hanzi": "医院", "pinyin": "yīyuàn", "es": "hospital", "note": "En China se va al hospital también para consultas normales: no hay «centro de salud» como en España." },
+    { "hanzi": "看病", "pinyin": "kànbìng", "es": "ir al médico; pasar consulta", "note": "Lo dice el paciente (我去医院看病) y también el médico." },
+    { "hanzi": "病人", "pinyin": "bìngrén", "es": "paciente, enfermo" },
+    { "hanzi": "药", "pinyin": "yào", "es": "medicina, medicamento", "note": "Las medicinas se «comen»: 吃药 = tomar la medicina." },
+    { "hanzi": "请假", "pinyin": "qǐngjià", "es": "pedir permiso (para faltar)", "note": "Para faltar a clase o al trabajo. 请了假 / 请假了." },
+    { "hanzi": "没", "pinyin": "méi", "es": "no (lo que no ha pasado)", "note": "Repaso de la U3 (没有). Hoy: 没 + verbo." },
+    { "hanzi": "休息", "pinyin": "xiūxi", "es": "descansar", "note": "Repaso de la U7." }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "我昨天没去医院。", "py": "Wǒ zuótiān méi qù yīyuàn.", "es": "Ayer no fui al hospital." },
+        { "zh": "你吃药了没有？", "py": "Nǐ chī yào le méiyǒu?", "es": "¿Te has tomado la medicina?" },
+        { "zh": "你去没去看病？", "py": "Nǐ qù méi qù kànbìng?", "es": "¿Has ido al médico o no?" }
+      ]
+    },
+    { "type": "vocab", "title": "En el médico", "words": ["医生", "医院", "看病", "病人", "药", "请假", "没", "休息"] },
+    {
+      "type": "phonetics-drill",
+      "title": "Tono neutro: 休息, 舒服… y 医生 (¡este no!)",
+      "markdown": "Muchas palabras de dos sílabas tienen la segunda en **tono neutro**: corta, suave, sin marca en el pinyin. 休息 *xiūxi*, 舒服 *shūfu*, 眼睛 *yǎnjing*, 头发 *tóufa*.\n\nPero no todas: **医生** *yīshēng* tiene **dos primeros tonos plenos**, y 医院 *yīyuàn*, 病人 *bìngrén* también se pronuncian enteras. Si dudas, mira si el pinyin lleva tilde en la segunda sílaba.",
+      "items": [
+        { "audio": "休息", "prompt": "¿Cómo es la segunda sílaba?", "options": ["Neutra: xiūxi", "Primer tono: xiūxī"], "answer": 0 },
+        { "audio": "医生", "prompt": "¿Cómo es la segunda sílaba?", "options": ["Neutra: yīsheng", "Primer tono: yīshēng"], "answer": 1, "explain": "医生 tiene dos primeros tonos." },
+        { "audio": "医院", "options": ["yīyuàn", "yīyuǎn", "yíyuàn"], "answer": 0, "explain": "院 yuàn cae: cuarto tono." },
+        { "audio": "头发", "prompt": "¿Cómo es la segunda sílaba?", "options": ["Neutra: tóufa", "Cuarto tono: tóufà"], "answer": 0 },
+        { "audio": "请假", "options": ["qǐngjià", "qīngjiǎ", "qǐngxià"], "answer": 0, "explain": "请 qǐng (3.º) + 假 jià (4.º)." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["医", "药"],
+      "mnemonics": {
+        "医": "匚 (una caja) + 矢 (flecha): la caja donde se guardaban las puntas de flecha sacadas a los heridos = curar, medicina.",
+        "药": "艹 (hierba) + 约 (que da el sonido, yuē → yào): las primeras medicinas eran hierbas."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "没 + verbo: lo que no ha pasado",
+      "markdown": "Para decir que algo **no ha pasado** (no lo hiciste, no ocurrió) se usa **没** delante del verbo, en el hueco de los **adverbios**:\n\n- 我**没**去医院。 No fui / no he ido al hospital.\n- 他昨天**没**吃药。 Ayer no se tomó la medicina.\n\n⚠️ **Con 没 desaparece el 了.** 了 dice «pasó»; 没 dice «no pasó»: juntos se contradicen. Es el error más típico: ~~我没去了~~.\n\n**不 o 没** con el pasado:\n- 没 = no ocurrió: 昨天我**没**去 (ayer no fui).\n- 不 = no quise / no suelo / no voy a: 明天我**不**去 (mañana no voy).\n\n**Tres maneras de preguntar** si algo pasó:\n1. …**了吗**？ 你吃药了吗？\n2. …**了没有**？ 你吃药了没有？\n3. **V没V** + objeto: 你**去没去**医院？ (como el A不A de la U8, pero con 没 y para el pasado).\n\nRespuesta corta: 吃了。 / **没吃。** (o 没有。)",
+      "focus": ["adverb"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "time": { "zh": "昨天", "py": "zuótiān" }, "verb1": { "zh": "去医院", "py": "qù yīyuàn" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Ayer fui al hospital." },
+        { "slots": { "subject": { "zh": "他", "py": "tā" }, "verb1": { "zh": "吃", "py": "chī" }, "object": { "zh": "药", "py": "yào" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Ya se ha tomado la medicina." },
+        { "slots": { "subject": { "zh": "安娜", "py": "Ānnà" }, "verb1": { "zh": "请假", "py": "qǐngjià" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Ana ha pedido permiso para faltar." },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "time": { "zh": "今天上午", "py": "jīntiān shàngwǔ" }, "verb1": { "zh": "去医院", "py": "qù yīyuàn" }, "verb2": { "zh": "看病", "py": "kànbìng" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Esta mañana he ido al hospital a que me vea el médico." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "time": { "zh": "昨天", "py": "zuótiān" }, "adverb": { "zh": "没", "py": "méi" }, "verb1": { "zh": "去医院", "py": "qù yīyuàn" } }, "end": "。", "es": "Ayer no fui al hospital.", "esOrder": [{ "text": "Ayer", "slot": "time" }, { "text": "no", "slot": "adverb" }, { "text": "fui al hospital", "slot": "verb1" }] },
+        { "slots": { "subject": { "zh": "他", "py": "tā" }, "adverb": { "zh": "没", "py": "méi" }, "verb1": { "zh": "吃", "py": "chī" }, "object": { "zh": "药", "py": "yào" } }, "end": "。", "es": "No se ha tomado la medicina." },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "time": { "zh": "今天", "py": "jīntiān" }, "adverb": { "zh": "没", "py": "méi" }, "verb1": { "zh": "请假", "py": "qǐngjià" } }, "end": "。", "es": "Hoy no he pedido permiso." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "吃", "py": "chī" }, "object": { "zh": "药", "py": "yào" }, "particle": { "zh": "了没有", "py": "le méiyǒu" } }, "end": "？", "es": "¿Te has tomado la medicina?" },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "去没去", "py": "qù méi qù" }, "object": { "zh": "医院", "py": "yīyuàn" } }, "end": "？", "es": "¿Has ido al hospital o no?" },
+        { "slots": { "subject": { "zh": "医生", "py": "yīshēng" }, "verb1": { "zh": "来", "py": "lái" }, "particle": { "zh": "了吗", "py": "le ma" } }, "end": "？", "es": "¿Ha llegado ya el médico?" }
+      ],
+      "mistakes": [
+        { "wrong": "我没去了医院。", "right": "我没去医院。", "why": "没 y 了 no van juntos: 没 ya dice que no pasó." },
+        { "wrong": "我昨天不去医院。", "right": "我昨天没去医院。", "why": "Para algo que no ocurrió en el pasado, 没. 不 es para costumbres, deseos o el futuro." },
+        { "wrong": "你去不去医院了？", "right": "你去没去医院？", "why": "Para preguntar por el pasado se usa V没V (sin 了)." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "En la consulta del hospital",
+      "lines": [
+        { "speaker": "医生", "zh": "你好，请坐。你哪儿不舒服？", "py": "Nǐ hǎo, qǐng zuò. Nǐ nǎr bù shūfu?", "es": "Hola, siéntate. ¿Qué te pasa?" },
+        { "speaker": "雨果", "zh": "医生，我头疼，嗓子也疼。", "py": "Yīshēng, wǒ tóu téng, sǎngzi yě téng.", "es": "Doctora, me duele la cabeza, y también la garganta." },
+        { "speaker": "医生", "zh": "你发烧了吗？", "py": "Nǐ fāshāo le ma?", "es": "¿Has tenido fiebre?" },
+        { "speaker": "雨果", "zh": "昨天晚上发烧了，今天早上没发烧。", "py": "Zuótiān wǎnshang fāshāo le, jīntiān zǎoshang méi fāshāo.", "es": "Anoche sí; esta mañana, no." },
+        { "speaker": "医生", "zh": "你吃药了没有？", "py": "Nǐ chī yào le méiyǒu?", "es": "¿Has tomado alguna medicina?" },
+        { "speaker": "雨果", "zh": "没吃。我昨天没去医院，也没买药。", "py": "Méi chī. Wǒ zuótiān méi qù yīyuàn, yě méi mǎi yào.", "es": "No. Ayer no vine al hospital y tampoco compré medicinas." },
+        { "speaker": "医生", "zh": "你昨天晚上休息了吗？", "py": "Nǐ zuótiān wǎnshang xiūxi le ma?", "es": "¿Anoche descansaste?" },
+        { "speaker": "雨果", "zh": "没休息，我写作业了。", "py": "Méi xiūxi, wǒ xiě zuòyè le.", "es": "No, estuve haciendo los deberes." },
+        { "speaker": "医生", "zh": "病人要多休息。这是药，一天吃三次。", "py": "Bìngrén yào duō xiūxi. Zhè shì yào, yì tiān chī sān cì.", "es": "Los enfermos tienen que descansar mucho. Aquí tienes la medicina: tres veces al día." },
+        { "speaker": "雨果", "zh": "好，谢谢医生。明天我请假吧。", "py": "Hǎo, xièxie yīshēng. Míngtiān wǒ qǐngjià ba.", "es": "Vale, gracias, doctora. Mañana pediré permiso para faltar." }
+      ],
+      "notes": "Al médico se le llama directamente 医生 (como «doctor»). En los hospitales chinos primero se saca número en una máquina o en la app, se pasa consulta y se paga en el móvil; la farmacia está dentro del hospital."
+    },
+    { "type": "exercises", "count": 16, "bank": ["g-bu-mei", "g-mei", "g-le", "u11"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "我" }, "adverb": { "zh": "没" }, "verb1": { "zh": "吃" }, "object": { "zh": "药" } }, "end": "。", "es": "No me he tomado la medicina." }, "distractors": ["了", "不"] },
+        { "sentence": { "slots": { "subject": { "zh": "你" }, "verb1": { "zh": "去没去" }, "object": { "zh": "医院" } }, "end": "？", "es": "¿Has ido al hospital o no?" }, "distractors": ["吗", "了"] },
+        { "sentence": { "slots": { "subject": { "zh": "他" }, "verb1": { "zh": "请假" }, "particle": { "zh": "了没有" } }, "end": "？", "es": "¿Ha pedido permiso para faltar?" } },
+        { "sentence": { "slots": { "subject": { "zh": "小李" }, "time": { "zh": "昨天下午" }, "adverb": { "zh": "没" }, "with": { "zh": "跟我们一起" }, "verb1": { "zh": "去图书馆" }, "verb2": { "zh": "学习" } }, "end": "。", "es": "Ayer por la tarde Xiao Li no fue con nosotros a estudiar a la biblioteca." }, "distractors": ["了", "不"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "我昨天没去医院。", "py": "Wǒ zuótiān méi qù yīyuàn.", "es": "Ayer no fui al hospital." },
+        { "zh": "你吃药了没有？", "py": "Nǐ chī yào le méiyǒu?", "es": "¿Te has tomado la medicina?" },
+        { "zh": "没吃。", "py": "Méi chī.", "es": "No." },
+        { "zh": "你去没去看病？", "py": "Nǐ qù méi qù kànbìng?", "es": "¿Has ido al médico o no?" }
+      ],
+      "respond": [
+        { "q": { "zh": "你吃药了吗？", "py": "Nǐ chī yào le ma?", "es": "¿Te has tomado la medicina?" }, "model": { "zh": "没吃，我没有药。", "py": "Méi chī, wǒ méiyǒu yào.", "es": "No: no tengo medicinas." } },
+        { "q": { "zh": "你昨天去没去上课？", "py": "Nǐ zuótiān qù méi qù shàngkè?", "es": "¿Ayer fuiste a clase o no?" }, "model": { "zh": "没去，我请假了。", "py": "Méi qù, wǒ qǐngjià le.", "es": "No: pedí permiso para faltar." } },
+        { "q": { "zh": "你今天休息了吗？", "py": "Nǐ jīntiān xiūxi le ma?", "es": "¿Has descansado hoy?" }, "model": { "zh": "休息了，我下午在宿舍睡觉了。", "py": "Xiūxi le, wǒ xiàwǔ zài sùshè shuìjiào le.", "es": "Sí, por la tarde he dormido en la residencia." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Dos días malo",
+      "text": "昨天雨果生病了，没去上课。他没去医院，也没吃药。今天早上他去医院看病了。医生说：“你没有大病，要多喝水，多休息。”雨果今天请假了，在宿舍休息。",
+      "es": "Ayer Hugo se puso malo y no fue a clase. No fue al hospital y tampoco tomó medicinas. Esta mañana ha ido al hospital a que le vea el médico. La médica le ha dicho: «No es nada grave; tienes que beber mucha agua y descansar mucho». Hoy Hugo ha pedido permiso para faltar y está descansando en la residencia.",
+      "questions": [
+        { "q": "¿Fue Hugo a clase ayer?", "options": ["没去", "去了", "请假了"], "answer": 0 },
+        { "q": "¿Cuándo fue al hospital?", "options": ["今天早上", "昨天", "昨天晚上"], "answer": 0 },
+        { "q": "¿Qué le dijo la médica?", "options": ["多喝水，多休息", "要去上课", "吃三次饭"], "answer": 0 },
+        { "q": "¿Cuál es la frase correcta?", "options": ["他昨天没吃药。", "他昨天没吃了药。", "他昨天不吃药了。"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

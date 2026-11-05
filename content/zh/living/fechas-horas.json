@@ -1,0 +1,1614 @@
+{
+  "id": "fechas-horas",
+  "title": "Fechas y horas",
+  "zh": "日期和时间",
+  "order": 8,
+  "icon": "CalendarClock",
+  "summary": "El calendario y el reloj en chino: días, meses y años de grande a pequeño, la hora con 点 / 分 / 半 / 刻 / 差, las partes del día, los dos sitios del tiempo en la frase y la diferencia entre el momento (delante del verbo) y la duración (detrás).",
+  "kind": "topic",
+  "reviewed": false,
+  "sections": [
+    {
+      "id": "dias-semana",
+      "title": "Hoy, mañana y los días de la semana",
+      "unlockedBy": "a1-u05-l1",
+      "markdown": "### Los días\n\n| 前天 | 昨天 | 今天 | 明天 | 后天 |\n|---|---|---|---|---|\n| anteayer | ayer | hoy | mañana | pasado mañana |\n\n### La semana: 星期 + número\n\n| Lunes | Martes | Miércoles | Jueves | Viernes | Sábado | Domingo |\n|---|---|---|---|---|---|---|\n| 星期一 | 星期二 | 星期三 | 星期四 | 星期五 | 星期六 | 星期天 / 星期日 |\n\n- Solo el domingo tiene nombre propio: **星期天** (hablado) o **星期日** (escrito). ✗星期七.\n- **周** es sinónimo más corto de 星期: 周末 (fin de semana), 周一.\n- **Preguntar**: 今天**星期几**？ — sin 吗 y sin 是 obligatorio: 今天星期三 (o 今天是星期三).\n- **En la frase**: la palabra de tiempo va **delante del verbo**: 我**明天**去北京.\n\n> ❌ **Error típico**: ✗我去北京明天 → 我明天去北京.",
+      "sourceNotes": [
+        "zh-numbers-dates",
+        "zh-grammar-dates",
+        "zh-grammar-time-before-verb"
+      ],
+      "skeleton": {
+        "focus": [
+          "time"
+        ],
+        "sentences": [
+          {
+            "slots": {
+              "subject": {
+                "zh": "我",
+                "py": "wǒ"
+              },
+              "time": {
+                "zh": "明天",
+                "py": "míngtiān",
+                "es": "mañana"
+              },
+              "verb1": {
+                "zh": "去北京",
+                "py": "qù Běijīng",
+                "es": "voy a Pekín"
+              }
+            },
+            "end": "。",
+            "es": "Voy a Pekín mañana.",
+            "esOrder": [
+              {
+                "text": "Voy a Pekín",
+                "slot": "verb1"
+              },
+              {
+                "text": "mañana",
+                "slot": "time"
+              }
+            ]
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "我们",
+                "py": "wǒmen"
+              },
+              "time": {
+                "zh": "星期六",
+                "py": "xīngqīliù",
+                "es": "el sábado"
+              },
+              "verb1": {
+                "zh": "去朋友家",
+                "py": "qù péngyou jiā",
+                "es": "vamos a casa de un amigo"
+              }
+            },
+            "end": "。",
+            "es": "El sábado vamos a casa de un amigo."
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "今天",
+                "py": "jīntiān",
+                "es": "hoy"
+              },
+              "object": {
+                "zh": "星期几",
+                "py": "xīngqī jǐ",
+                "es": "qué día"
+              }
+            },
+            "end": "？",
+            "es": "¿Qué día es hoy?"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "zh": "今天星期几？—今天星期三。",
+          "py": "Jīntiān xīngqī jǐ? — Jīntiān xīngqīsān.",
+          "es": "¿Qué día es hoy? —Miércoles."
+        },
+        {
+          "zh": "我明天去北京。",
+          "py": "Wǒ míngtiān qù Běijīng.",
+          "es": "Voy a Pekín mañana."
+        },
+        {
+          "zh": "安娜后天去西安。",
+          "py": "Ānnà hòutiān qù Xī'ān.",
+          "es": "Ana va a Xi'an pasado mañana."
+        },
+        {
+          "zh": "周末我们去朋友家。",
+          "py": "Zhōumò wǒmen qù péngyou jiā.",
+          "es": "El fin de semana vamos a casa de un amigo."
+        }
+      ]
+    },
+    {
+      "id": "meses-fechas",
+      "title": "Meses y fechas: de grande a pequeño",
+      "unlockedBy": "a1-u05-l2",
+      "markdown": "### Un zoom: mes → día → día de la semana\n\nEn español: «miércoles, 4 de noviembre» (de pequeño a grande). En chino, **al revés**:\n\n> **十一月** · **四号** · **星期三**\n\n| Pieza | Cómo se dice | Ejemplo |\n|---|---|---|\n| Mes | número + 月 | 一月 (enero) … 十二月 (diciembre) |\n| Día | número + 号 (hablado) / 日 (escrito) | 四号 / 四日 |\n\n- Los meses no tienen nombre: febrero es «mes 2», **二月** (✗两月).\n- **一月** es «enero»; **一个月** es «un mes» (duración). Igual: 二月 (febrero) / 两个月 (dos meses).\n- **Preguntar**: **几月几号**？ La respuesta ocupa el hueco de cada 几.\n- La fecha de una acción va en el hueco del **tiempo**: 安娜**七月十五号**去西班牙. Si la fecha es lo que se dice («hoy es…»), va en el objeto: 今天十一月四号.\n\n> ❌ **Error típico**: ✗四号十一月 → 十一月四号.",
+      "sourceNotes": [
+        "zh-numbers-dates",
+        "zh-grammar-dates"
+      ],
+      "skeleton": {
+        "focus": [
+          "time"
+        ],
+        "sentences": [
+          {
+            "slots": {
+              "subject": {
+                "zh": "安娜",
+                "py": "Ānnà"
+              },
+              "time": {
+                "zh": "七月十五号",
+                "py": "qī yuè shíwǔ hào",
+                "es": "el 15 de julio"
+              },
+              "verb1": {
+                "zh": "去西班牙",
+                "py": "qù Xībānyá",
+                "es": "va a España"
+              }
+            },
+            "end": "。",
+            "es": "Ana va a España el 15 de julio.",
+            "esOrder": [
+              {
+                "text": "Ana",
+                "slot": "subject"
+              },
+              {
+                "text": "va a España",
+                "slot": "verb1"
+              },
+              {
+                "text": "el 15 de julio",
+                "slot": "time"
+              }
+            ]
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "今天",
+                "py": "jīntiān"
+              },
+              "object": {
+                "zh": "十一月四号星期三",
+                "py": "shíyī yuè sì hào xīngqīsān",
+                "es": "miércoles, 4 de noviembre"
+              }
+            },
+            "end": "。",
+            "es": "Hoy es miércoles, 4 de noviembre."
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "今天",
+                "py": "jīntiān"
+              },
+              "object": {
+                "zh": "几月几号",
+                "py": "jǐ yuè jǐ hào",
+                "es": "qué fecha"
+              }
+            },
+            "end": "？",
+            "es": "¿A qué fecha estamos hoy?"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "zh": "今天几月几号？—今天十一月四号。",
+          "py": "Jīntiān jǐ yuè jǐ hào? — Jīntiān shíyī yuè sì hào.",
+          "es": "¿A qué fecha estamos? —A 4 de noviembre."
+        },
+        {
+          "zh": "我的生日是五月三号。",
+          "py": "Wǒ de shēngrì shì wǔ yuè sān hào.",
+          "es": "Mi cumpleaños es el 3 de mayo.",
+          "note": "Con 生日 sí se pone 是."
+        },
+        {
+          "zh": "安娜七月十五号去西班牙。",
+          "py": "Ānnà qī yuè shíwǔ hào qù Xībānyá.",
+          "es": "Ana va a España el 15 de julio."
+        },
+        {
+          "zh": "生日快乐！",
+          "py": "Shēngrì kuàilè!",
+          "es": "¡Feliz cumpleaños!"
+        }
+      ]
+    },
+    {
+      "id": "anos-fiestas",
+      "title": "Años y fiestas: 二〇二六年, 今年, 春节",
+      "unlockedBy": "a1-u05-l3",
+      "markdown": "### El año, cifra a cifra\n\n**Año** = cifras una a una + 年: 二〇二六年 (èr líng èr liù nián), 一九九八年. Por escrito el cero suele ser **〇**.\n\n> ⚠️ **Ojo**: nunca como cantidad: ✗两千零二十六年.\n\n**La fecha completa**, de grande a pequeño:\n\n> **二〇二六年** · **十一月** · **四号** · **星期三**\n\n| 前年 | 去年 | 今年 | 明年 |\n|---|---|---|---|\n| hace dos años | el año pasado | este año | el año que viene |\n\n- Van en el hueco del **tiempo**, como 今天 y 明天: 我**明年**去北京.\n- **Preguntar**: **哪年**？ (¿qué año?): 你哪年去中国？\n\n### Tres fiestas\n\n| Fiesta | Cuándo |\n|---|---|\n| 新年 | 1 de enero |\n| 春节 | Año Nuevo chino (enero o febrero, según la luna) |\n| 国庆节 | 1 de octubre |\n\nEn las dos últimas hay varios días de vacaciones: **放假**.",
+      "sourceNotes": [
+        "zh-numbers-dates",
+        "zh-grammar-dates"
+      ],
+      "skeleton": {
+        "focus": [
+          "time"
+        ],
+        "sentences": [
+          {
+            "slots": {
+              "subject": {
+                "zh": "我",
+                "py": "wǒ"
+              },
+              "time": {
+                "zh": "明年",
+                "py": "míngnián",
+                "es": "el año que viene"
+              },
+              "verb1": {
+                "zh": "去北京",
+                "py": "qù Běijīng",
+                "es": "voy a Pekín"
+              }
+            },
+            "end": "。",
+            "es": "Voy a Pekín el año que viene."
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "我们",
+                "py": "wǒmen"
+              },
+              "time": {
+                "zh": "十月一号",
+                "py": "shí yuè yī hào",
+                "es": "el 1 de octubre"
+              },
+              "verb1": {
+                "zh": "放假",
+                "py": "fàngjià",
+                "es": "tenemos vacaciones"
+              }
+            },
+            "end": "。",
+            "es": "El 1 de octubre tenemos vacaciones."
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "你",
+                "py": "nǐ"
+              },
+              "time": {
+                "zh": "哪年",
+                "py": "nǎ nián",
+                "es": "qué año"
+              },
+              "verb1": {
+                "zh": "去中国",
+                "py": "qù Zhōngguó",
+                "es": "vas a China"
+              }
+            },
+            "end": "？",
+            "es": "¿En qué año vas a China?"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "zh": "今年是二〇二六年。",
+          "py": "Jīnnián shì èr líng èr liù nián.",
+          "es": "Este año es 2026."
+        },
+        {
+          "zh": "我明年去北京。",
+          "py": "Wǒ míngnián qù Běijīng.",
+          "es": "Voy a Pekín el año que viene."
+        },
+        {
+          "zh": "春节我们放假。",
+          "py": "Chūnjié wǒmen fàngjià.",
+          "es": "En el Año Nuevo chino tenemos vacaciones."
+        },
+        {
+          "zh": "你哪年去中国？",
+          "py": "Nǐ nǎ nián qù Zhōngguó?",
+          "es": "¿En qué año vas a China?"
+        }
+      ]
+    },
+    {
+      "id": "antes-despues",
+      "title": "La semana pasada, el mes que viene: 上 y 下",
+      "unlockedBy": "a1-u05-l4",
+      "markdown": "### El calendario se lee de arriba abajo\n\n| Antes (上) | Ahora (这) | Después (下) |\n|---|---|---|\n| 上周 / 上个星期 | 这个星期 | 下周 / 下个星期 |\n| 上个月 | 这个月 | 下个月 |\n| 上次 | — | 下次 |\n\n- **上** = lo anterior; **下** = lo siguiente.\n- Con 星期 y 月 se pone **个**: 上**个**月, 下**个**星期. Con 周, no: 上周 (✗上个周).\n- Para ayer y mañana no se usa 上 / 下: 昨天, 明天.\n- Varias palabras de tiempo juntas, **de grande a pequeño**: 下周三, 二〇二七年二月六号星期六.\n- El tiempo va **antes** de 不 y de los demás adverbios: 我下个月**不**去.\n\n> 🧠 **Mnemotecnia**: el tiempo cae como una cascada: lo de arriba (上) ya pasó, lo de abajo (下) está por llegar.",
+      "sourceNotes": [
+        "zh-numbers-dates",
+        "zh-grammar-dates"
+      ],
+      "skeleton": {
+        "focus": [
+          "time"
+        ],
+        "sentences": [
+          {
+            "slots": {
+              "subject": {
+                "zh": "我",
+                "py": "wǒ"
+              },
+              "time": {
+                "zh": "下周",
+                "py": "xiàzhōu",
+                "es": "la semana que viene"
+              },
+              "verb1": {
+                "zh": "去西安",
+                "py": "qù Xī'ān",
+                "es": "voy a Xi'an"
+              }
+            },
+            "end": "。",
+            "es": "Voy a Xi'an la semana que viene."
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "我",
+                "py": "wǒ"
+              },
+              "time": {
+                "zh": "下个月",
+                "py": "xià ge yuè",
+                "es": "el mes que viene"
+              },
+              "adverb": {
+                "zh": "不",
+                "py": "bú",
+                "es": "no"
+              },
+              "verb1": {
+                "zh": "去北京",
+                "py": "qù Běijīng",
+                "es": "voy a Pekín"
+              }
+            },
+            "end": "。",
+            "es": "El mes que viene no voy a Pekín."
+          }
+        ]
+      },
+      "examples": [
+        {
+          "zh": "我下周去西安。",
+          "py": "Wǒ xiàzhōu qù Xī'ān.",
+          "es": "Voy a Xi'an la semana que viene."
+        },
+        {
+          "zh": "安娜上个月去北京。",
+          "py": "Ānnà shàng ge yuè qù Běijīng.",
+          "es": "Ana fue a Pekín el mes pasado."
+        },
+        {
+          "zh": "我下次说汉语。",
+          "py": "Wǒ xià cì shuō Hànyǔ.",
+          "es": "La próxima vez hablo en chino."
+        },
+        {
+          "zh": "你下周几去西安？",
+          "py": "Nǐ xiàzhōu jǐ qù Xī'ān?",
+          "es": "¿Qué día de la semana que viene vas a Xi'an?"
+        }
+      ]
+    },
+    {
+      "id": "la-hora",
+      "title": "¿Qué hora es? 点, 分 y 半",
+      "unlockedBy": "a1-u06-l1",
+      "markdown": "### Número + 点 (+ número + 分)\n\n| Hora | Chino |\n|---|---|\n| 8:00 | 八点 |\n| 8:10 | 八点十分 |\n| 8:05 | 八点零五分 (o 八点五分) |\n| 8:30 | 八点**半** (o 八点三十分) |\n| 2:00 | **两**点 (✗二点) |\n| 12:00 | 十二点 (aquí sí 二: es parte de 十二) |\n\n- **半** va detrás: 八点半 (✗半八点).\n- En la conversación se puede callar 分: 八点二十 = 8:20.\n- **Preguntar**: 现在**几点**？ (nunca ✗多少点). 现在 hace de sujeto y la hora de objeto; 是 no hace falta.\n- **A qué hora haces algo**: la hora va en el hueco del **tiempo**, delante del verbo: 小李**三点**等雨果.\n\n> ❌ **Error típico**: ✗小李等雨果三点 → 小李三点等雨果.",
+      "sourceNotes": [
+        "zh-numbers-time",
+        "zh-grammar-time-clock",
+        "zh-contrast-er-liang"
+      ],
+      "skeleton": {
+        "focus": [
+          "time",
+          "object"
+        ],
+        "sentences": [
+          {
+            "slots": {
+              "subject": {
+                "zh": "现在",
+                "py": "xiànzài",
+                "es": "ahora"
+              },
+              "object": {
+                "zh": "十点零五分",
+                "py": "shí diǎn líng wǔ fēn",
+                "es": "las diez y cinco"
+              }
+            },
+            "end": "。",
+            "es": "Son las diez y cinco."
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "小李",
+                "py": "Xiǎo Lǐ"
+              },
+              "time": {
+                "zh": "三点",
+                "py": "sān diǎn",
+                "es": "a las tres"
+              },
+              "verb1": {
+                "zh": "等",
+                "py": "děng",
+                "es": "espera"
+              },
+              "object": {
+                "zh": "雨果",
+                "py": "Yǔguǒ",
+                "es": "a Hugo"
+              }
+            },
+            "end": "。",
+            "es": "Xiao Li espera a Hugo a las tres.",
+            "esOrder": [
+              {
+                "text": "Xiao Li",
+                "slot": "subject"
+              },
+              {
+                "text": "espera",
+                "slot": "verb1"
+              },
+              {
+                "text": "a Hugo",
+                "slot": "object"
+              },
+              {
+                "text": "a las tres",
+                "slot": "time"
+              }
+            ]
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "现在",
+                "py": "xiànzài"
+              },
+              "object": {
+                "zh": "几点",
+                "py": "jǐ diǎn",
+                "es": "qué hora"
+              }
+            },
+            "end": "？",
+            "es": "¿Qué hora es?"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "zh": "现在几点？—现在八点半。",
+          "py": "Xiànzài jǐ diǎn? — Xiànzài bā diǎn bàn.",
+          "es": "¿Qué hora es? —Las ocho y media."
+        },
+        {
+          "zh": "现在两点。",
+          "py": "Xiànzài liǎng diǎn.",
+          "es": "Son las dos."
+        },
+        {
+          "zh": "小李三点等雨果。",
+          "py": "Xiǎo Lǐ sān diǎn děng Yǔguǒ.",
+          "es": "Xiao Li espera a Hugo a las tres."
+        },
+        {
+          "zh": "现在不是两点，是一点。",
+          "py": "Xiànzài bú shì liǎng diǎn, shì yī diǎn.",
+          "es": "No son las dos, es la una."
+        }
+      ]
+    },
+    {
+      "id": "partes-del-dia",
+      "title": "Las partes del día: 早上…晚上",
+      "unlockedBy": "a1-u06-l2",
+      "markdown": "### La parte del día va delante de la hora\n\n«Las ocho **de la tarde**» → **晚上**八点 (lit. «noche, ocho»).\n\n| Parte del día | Más o menos | Ejemplo |\n|---|---|---|\n| 早上 / 早晨 | 6–9 h | 早上七点 |\n| 上午 | 9–12 h | 上午十点 |\n| 中午 | 12–14 h | 中午十二点 |\n| 下午 | 14–18 h | 下午三点 |\n| 晚上 | 18–24 h | 晚上八点 |\n| 夜里 / 半夜 | de madrugada | 夜里两点 |\n\n- Al hablar se usa el reloj de **12 horas** (✗晚上二十点).\n- Todo el bloque va **de grande a pequeño** y entra entero en el hueco del tiempo: 明天**上午十点**.\n\n> 🏮 **¿Sabías que…?**: en China se cena pronto: a las seis de la tarde (晚上六点) muchos comedores ya están llenos.\n\n> ❌ **Error típico**: ✗八点晚上 → 晚上八点. ✗明天八点上午 → 明天上午八点.",
+      "sourceNotes": [
+        "zh-numbers-time",
+        "zh-grammar-time-clock"
+      ],
+      "skeleton": {
+        "focus": [
+          "time"
+        ],
+        "sentences": [
+          {
+            "slots": {
+              "subject": {
+                "zh": "安娜",
+                "py": "Ānnà"
+              },
+              "time": {
+                "zh": "明天上午十点",
+                "py": "míngtiān shàngwǔ shí diǎn",
+                "es": "mañana a las diez de la mañana"
+              },
+              "verb1": {
+                "zh": "去北京",
+                "py": "qù Běijīng",
+                "es": "va a Pekín"
+              }
+            },
+            "end": "。",
+            "es": "Ana va a Pekín mañana a las diez de la mañana.",
+            "esOrder": [
+              {
+                "text": "Ana",
+                "slot": "subject"
+              },
+              {
+                "text": "va a Pekín",
+                "slot": "verb1"
+              },
+              {
+                "text": "mañana a las diez de la mañana",
+                "slot": "time"
+              }
+            ]
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "我",
+                "py": "wǒ"
+              },
+              "time": {
+                "zh": "晚上八点",
+                "py": "wǎnshang bā diǎn",
+                "es": "a las ocho de la tarde"
+              },
+              "verb1": {
+                "zh": "去朋友家",
+                "py": "qù péngyou jiā",
+                "es": "voy a casa de un amigo"
+              }
+            },
+            "end": "。",
+            "es": "Voy a casa de un amigo a las ocho de la tarde."
+          }
+        ]
+      },
+      "examples": [
+        {
+          "zh": "我晚上八点去朋友家。",
+          "py": "Wǒ wǎnshang bā diǎn qù péngyou jiā.",
+          "es": "Voy a casa de un amigo a las ocho de la tarde."
+        },
+        {
+          "zh": "王老师下午三点等我们。",
+          "py": "Wáng lǎoshī xiàwǔ sān diǎn děng wǒmen.",
+          "es": "La profesora Wang nos espera a las tres de la tarde."
+        },
+        {
+          "zh": "你明天上午去北京吗？",
+          "py": "Nǐ míngtiān shàngwǔ qù Běijīng ma?",
+          "es": "¿Vas a Pekín mañana por la mañana?"
+        }
+      ]
+    },
+    {
+      "id": "cuartos-y-posicion",
+      "title": "Y cuarto, menos cuarto (刻, 差) y los dos sitios del tiempo",
+      "unlockedBy": "a1-u06-l3",
+      "markdown": "### La hora, más fina\n\n| Pieza | Significa | Ejemplo |\n|---|---|---|\n| 一刻 | y cuarto | 三点一刻 (3:15) |\n| 三刻 | menos cuarto (de la siguiente) | 三点三刻 (3:45) |\n| 差 + minutos + hora | faltan… para | 差五分八点 (7:55), 差一刻八点 (7:45) |\n\n- Solo existen 一刻 y 三刻. «Y media» es **半**, nunca ✗两刻.\n- **分** (minuto, en la hora) ≠ **分钟** (minutos de duración): 一点十五分 (1:15) / 十五分钟 (quince minutos).\n\n### Dos sitios para el tiempo\n\n| | Frase | |\n|---|---|---|\n| S + **T** + V | 我**八点**去上课。 | lo normal |\n| **T** + S + V | **八点**我去上课。 | el tiempo destacado, como tema |\n| S + V + T | ✗我去上课八点 | **nunca** |\n\n> ❌ **Error típico**: ✗我上课在八点 → 我八点上课. El tiempo no lleva 在.",
+      "sourceNotes": [
+        "zh-numbers-time",
+        "zh-grammar-time-before-verb",
+        "zh-grammar-time-clock"
+      ],
+      "skeleton": {
+        "focus": [
+          "time0",
+          "time"
+        ],
+        "sentences": [
+          {
+            "slots": {
+              "subject": {
+                "zh": "王老师",
+                "py": "Wáng lǎoshī"
+              },
+              "time": {
+                "zh": "上午九点一刻",
+                "py": "shàngwǔ jiǔ diǎn yí kè",
+                "es": "a las nueve y cuarto"
+              },
+              "verb1": {
+                "zh": "上课",
+                "py": "shàngkè",
+                "es": "da clase"
+              }
+            },
+            "end": "。",
+            "es": "La profesora Wang da clase a las nueve y cuarto de la mañana."
+          },
+          {
+            "slots": {
+              "time0": {
+                "zh": "八点",
+                "py": "bā diǎn",
+                "es": "a las ocho"
+              },
+              "subject": {
+                "zh": "我",
+                "py": "wǒ"
+              },
+              "verb1": {
+                "zh": "去上课",
+                "py": "qù shàngkè",
+                "es": "voy a clase"
+              }
+            },
+            "end": "。",
+            "es": "A las ocho voy a clase."
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "我们",
+                "py": "wǒmen"
+              },
+              "time": {
+                "zh": "差五分八点",
+                "py": "chà wǔ fēn bā diǎn",
+                "es": "a las ocho menos cinco"
+              },
+              "verb1": {
+                "zh": "上课",
+                "py": "shàngkè",
+                "es": "empezamos la clase"
+              }
+            },
+            "end": "。",
+            "es": "Empezamos la clase a las ocho menos cinco."
+          }
+        ]
+      },
+      "examples": [
+        {
+          "zh": "现在三点一刻。",
+          "py": "Xiànzài sān diǎn yí kè.",
+          "es": "Son las tres y cuarto."
+        },
+        {
+          "zh": "现在差一刻八点。",
+          "py": "Xiànzài chà yí kè bā diǎn.",
+          "es": "Son las ocho menos cuarto."
+        },
+        {
+          "zh": "八点我去上课。",
+          "py": "Bā diǎn wǒ qù shàngkè.",
+          "es": "A las ocho voy a clase."
+        },
+        {
+          "zh": "星期六我们不上课。",
+          "py": "Xīngqīliù wǒmen bú shàngkè.",
+          "es": "Los sábados no tenemos clase."
+        }
+      ]
+    },
+    {
+      "id": "cuando-repaso",
+      "title": "¿Cuándo? 什么时候, 一会儿 y 马上",
+      "unlockedBy": "a1-u06-l4",
+      "markdown": "### Las palabras del «cuándo» más útiles\n\n| Palabra | Significa | Dónde va |\n|---|---|---|\n| 什么时候 | ¿cuándo? | hueco del tiempo |\n| 现在 | ahora | hueco del tiempo (o inicial) |\n| 一会儿 | dentro de un rato | hueco del tiempo: 我**一会儿**去 |\n| 马上 | enseguida | es un **adverbio**: detrás del tiempo, delante del verbo: 我**马上**去 |\n| 有时间 | estar libre | 你明天**有时间**吗？ |\n\n**Resumen de la unidad**: el tiempo va delante del verbo (S + T + V) o delante del sujeto (T + S + V), **nunca al final**; si hay varios, **de grande a pequeño**: 明天上午九点一刻.\n\n> ❌ **Error típico**: ✗我去马上 → 我马上去. ✗我有时间明天 → 我明天有时间.",
+      "sourceNotes": [
+        "zh-question-shenme-shihou",
+        "zh-grammar-time-before-verb"
+      ],
+      "skeleton": {
+        "focus": [
+          "time",
+          "time0"
+        ],
+        "sentences": [
+          {
+            "slots": {
+              "subject": {
+                "zh": "你",
+                "py": "nǐ"
+              },
+              "time": {
+                "zh": "什么时候",
+                "py": "shénme shíhou",
+                "es": "cuándo"
+              },
+              "verb1": {
+                "zh": "去北京",
+                "py": "qù Běijīng",
+                "es": "vas a Pekín"
+              }
+            },
+            "end": "？",
+            "es": "¿Cuándo vas a Pekín?"
+          },
+          {
+            "slots": {
+              "time0": {
+                "zh": "明天晚上",
+                "py": "míngtiān wǎnshang",
+                "es": "mañana por la noche"
+              },
+              "subject": {
+                "zh": "我",
+                "py": "wǒ"
+              },
+              "verb1": {
+                "zh": "有",
+                "py": "yǒu",
+                "es": "tengo"
+              },
+              "object": {
+                "zh": "时间",
+                "py": "shíjiān",
+                "es": "tiempo"
+              }
+            },
+            "end": "。",
+            "es": "Mañana por la noche tengo tiempo."
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "我",
+                "py": "wǒ"
+              },
+              "adverb": {
+                "zh": "马上",
+                "py": "mǎshàng",
+                "es": "enseguida"
+              },
+              "verb1": {
+                "zh": "去上课",
+                "py": "qù shàngkè",
+                "es": "me voy a clase"
+              }
+            },
+            "end": "。",
+            "es": "Me voy a clase enseguida."
+          }
+        ]
+      },
+      "examples": [
+        {
+          "zh": "你什么时候去北京？—我星期六上午去。",
+          "py": "Nǐ shénme shíhou qù Běijīng? — Wǒ xīngqīliù shàngwǔ qù.",
+          "es": "¿Cuándo vas a Pekín? —El sábado por la mañana."
+        },
+        {
+          "zh": "现在我没有时间，一会儿去。",
+          "py": "Xiànzài wǒ méiyǒu shíjiān, yíhuìr qù.",
+          "es": "Ahora no tengo tiempo; voy dentro de un rato."
+        },
+        {
+          "zh": "我马上去上课。",
+          "py": "Wǒ mǎshàng qù shàngkè.",
+          "es": "Me voy a clase enseguida."
+        }
+      ]
+    },
+    {
+      "id": "cada-dia",
+      "title": "Cada día: 每天 (y la rutina)",
+      "unlockedBy": "a1-u07-l1",
+      "markdown": "### 每天 va donde va la hora\n\n**每天** (měi tiān, cada día) ocupa el hueco del **tiempo**, igual que la hora; si van juntos, primero 每天: 我**每天七点**起床.\n\n- Para insistir en «todos los días», se añade **都** delante del verbo: 我每天**都**吃早饭.\n- Sin clasificador: ✗每个天 → 每天. Con otras palabras sí: 每个星期, 每个月 (y 每年, 每次).\n\n> ❌ **Error típico**: ✗我起床七点 → 我七点起床. En español la hora cierra la frase; en chino, nunca.",
+      "sourceNotes": [
+        "zh-grammar-mei-every",
+        "zh-grammar-time-before-verb"
+      ],
+      "skeleton": {
+        "focus": [
+          "time"
+        ],
+        "sentences": [
+          {
+            "slots": {
+              "subject": {
+                "zh": "我",
+                "py": "wǒ"
+              },
+              "time": {
+                "zh": "每天七点",
+                "py": "měi tiān qī diǎn",
+                "es": "todos los días a las siete"
+              },
+              "verb1": {
+                "zh": "起床",
+                "py": "qǐchuáng",
+                "es": "me levanto"
+              }
+            },
+            "end": "。",
+            "es": "Me levanto todos los días a las siete.",
+            "esOrder": [
+              {
+                "text": "Me levanto",
+                "slot": "verb1"
+              },
+              {
+                "text": "todos los días a las siete",
+                "slot": "time"
+              }
+            ]
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "你",
+                "py": "nǐ"
+              },
+              "time": {
+                "zh": "每天几点",
+                "py": "měi tiān jǐ diǎn",
+                "es": "a qué hora cada día"
+              },
+              "verb1": {
+                "zh": "起床",
+                "py": "qǐchuáng",
+                "es": "te levantas"
+              }
+            },
+            "end": "？",
+            "es": "¿A qué hora te levantas cada día?"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "zh": "我每天七点起床。",
+          "py": "Wǒ měi tiān qī diǎn qǐchuáng.",
+          "es": "Me levanto todos los días a las siete."
+        },
+        {
+          "zh": "雨果七点半吃早饭。",
+          "py": "Yǔguǒ qī diǎn bàn chī zǎofàn.",
+          "es": "Hugo desayuna a las siete y media."
+        },
+        {
+          "zh": "我每天都吃早饭。",
+          "py": "Wǒ měi tiān dōu chī zǎofàn.",
+          "es": "Desayuno todos los días."
+        }
+      ]
+    },
+    {
+      "id": "duracion",
+      "title": "Cuánto dura: la duración, detrás del verbo",
+      "unlockedBy": "a1-u15-l3",
+      "markdown": "### Momento delante, duración detrás\n\n| ¿Qué? | Dónde va | Ejemplo |\n|---|---|---|\n| **Momento** (cuándo) | delante del verbo | 我**每天**走。 |\n| **Duración** (cuánto rato) | detrás del verbo (hueco Complemento) | 我每天走**二十分钟**。 |\n\n**Cómo se dice la duración**\n\n| Duración | Chino |\n|---|---|\n| 20 minutos | 二十**分钟** (✗二十分: eso es «y veinte» en la hora) |\n| 1 hora | 一**个小时** (✗一小时 en la lengua hablada) |\n| media hora | 半个小时 |\n| 2 días / 3 semanas / 2 meses | 两天 / 三个星期 / 两个月 |\n\n- **¿Cuánto se tarda?** → **要 + duración**: 坐高铁**要**五个小时. Pregunta: 要**多长时间**？ (o 多久？).\n- Con objeto, se repite el verbo: 坐地铁**坐**四十分钟.\n\n> ❌ **Error típico**: ✗我二十分钟走 → 我走二十分钟. ✗五小时 → 五**个**小时.",
+      "sourceNotes": [
+        "zh-grammar-time-before-verb",
+        "zh-grammar-time-clock"
+      ],
+      "skeleton": {
+        "focus": [
+          "complement"
+        ],
+        "sentences": [
+          {
+            "slots": {
+              "subject": {
+                "zh": "我",
+                "py": "wǒ"
+              },
+              "time": {
+                "zh": "每天",
+                "py": "měi tiān",
+                "es": "cada día"
+              },
+              "verb1": {
+                "zh": "走",
+                "py": "zǒu",
+                "es": "ando"
+              },
+              "complement": {
+                "zh": "二十分钟",
+                "py": "èrshí fēnzhōng",
+                "es": "veinte minutos"
+              }
+            },
+            "end": "。",
+            "es": "Ando veinte minutos cada día.",
+            "esOrder": [
+              {
+                "text": "Cada día",
+                "slot": "time"
+              },
+              {
+                "text": "ando",
+                "slot": "verb1"
+              },
+              {
+                "text": "veinte minutos",
+                "slot": "complement"
+              }
+            ]
+          },
+          {
+            "slots": {
+              "verb1": {
+                "zh": "坐飞机",
+                "py": "zuò fēijī",
+                "es": "en avión"
+              },
+              "verb2": {
+                "zh": "要",
+                "py": "yào",
+                "es": "se tarda"
+              },
+              "complement": {
+                "zh": "多长时间",
+                "py": "duō cháng shíjiān",
+                "es": "cuánto"
+              }
+            },
+            "end": "？",
+            "es": "¿Cuánto se tarda en avión?"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "zh": "雨果每天睡七个小时。",
+          "py": "Yǔguǒ měi tiān shuì qī ge xiǎoshí.",
+          "es": "Hugo duerme siete horas cada día."
+        },
+        {
+          "zh": "坐高铁要五个小时。",
+          "py": "Zuò gāotiě yào wǔ ge xiǎoshí.",
+          "es": "En tren de alta velocidad se tarda cinco horas."
+        },
+        {
+          "zh": "我不想走一个小时。",
+          "py": "Wǒ bù xiǎng zǒu yí ge xiǎoshí.",
+          "es": "No quiero andar una hora."
+        },
+        {
+          "zh": "坐飞机要多长时间？",
+          "py": "Zuò fēijī yào duō cháng shíjiān?",
+          "es": "¿Cuánto se tarda en avión?"
+        }
+      ]
+    },
+    {
+      "id": "v-le-duracion",
+      "title": "V + 了 + duración (+ objeto)",
+      "unlockedBy": "a2-u02-l1",
+      "markdown": "### Cuánto duró\n\n- 我**学了两年**。 → Estudié dos años.\n- 他**等了二十分钟**。 → Esperó veinte minutos.\n\n**Con objeto**, la duración va **entre el verbo y el objeto**, como si fuera su cantidad (igual que 两杯茶):\n\n> 我学了**两年**汉语。 → Estudié chino dos años (lit. «estudié dos años de chino»).\n\n- En el esqueleto, cuando hay objeto, la duración va **dentro del objeto** (两年汉语); el 了 tras el verbo, en Verbo 1 (学了).\n- **Pregunta**: 你学了**多长时间**汉语？\n- **Negativa**: con 没 desaparece el 了: 我没学多长时间.\n\n> ❌ **Error típico**: ✗我两年学了汉语 o ✗我学了汉语两年 → 我学了两年汉语.",
+      "sourceNotes": [
+        "zh-grammar-le-completed",
+        "zh-grammar-time-before-verb"
+      ],
+      "skeleton": {
+        "focus": [
+          "complement",
+          "object"
+        ],
+        "sentences": [
+          {
+            "slots": {
+              "subject": {
+                "zh": "我",
+                "py": "wǒ"
+              },
+              "verb1": {
+                "zh": "学了",
+                "py": "xué le",
+                "es": "estudié"
+              },
+              "complement": {
+                "zh": "两年",
+                "py": "liǎng nián",
+                "es": "dos años"
+              }
+            },
+            "end": "。",
+            "es": "Estudié dos años."
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "我",
+                "py": "wǒ"
+              },
+              "verb1": {
+                "zh": "学了",
+                "py": "xué le",
+                "es": "estudié"
+              },
+              "object": {
+                "zh": "两年汉语",
+                "py": "liǎng nián Hànyǔ",
+                "es": "chino dos años"
+              }
+            },
+            "end": "。",
+            "es": "Estudié chino dos años.",
+            "esOrder": [
+              {
+                "text": "Estudié",
+                "slot": "verb1"
+              },
+              {
+                "text": "chino dos años",
+                "slot": "object"
+              }
+            ]
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "你",
+                "py": "nǐ"
+              },
+              "verb1": {
+                "zh": "学了",
+                "py": "xué le"
+              },
+              "object": {
+                "zh": "多长时间汉语",
+                "py": "duō cháng shíjiān Hànyǔ",
+                "es": "cuánto tiempo chino"
+              }
+            },
+            "end": "？",
+            "es": "¿Cuánto tiempo has estudiado chino?"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "zh": "我学了两年汉语。",
+          "py": "Wǒ xué le liǎng nián Hànyǔ.",
+          "es": "Estudié chino dos años."
+        },
+        {
+          "zh": "他等了二十分钟。",
+          "py": "Tā děng le èrshí fēnzhōng.",
+          "es": "Esperó veinte minutos."
+        },
+        {
+          "zh": "安娜在高中学了三年英文。",
+          "py": "Ānnà zài gāozhōng xué le sān nián Yīngwén.",
+          "es": "Ana estudió inglés tres años en el instituto."
+        },
+        {
+          "zh": "我没学多长时间。",
+          "py": "Wǒ méi xué duō cháng shíjiān.",
+          "es": "No estudié mucho tiempo."
+        }
+      ]
+    },
+    {
+      "id": "momento-duracion",
+      "title": "Momento frente a duración",
+      "unlockedBy": "a2-u02-l2",
+      "markdown": "### Dos tiempos, dos sitios\n\n| ¿Qué? | Pregunta | Dónde va | Ejemplo |\n|---|---|---|---|\n| **Momento** | 几点, 什么时候 | **delante del verbo** (hueco Tiempo) | 我**八点**上课。 |\n| **Duración** | 多长时间, 多久 | **detrás del verbo** (hueco Complemento) | 我学习**两个小时**。 |\n\n```\n   八点        上课          两个小时\n (momento) → VERBO → (duración)\n```\n\n- En español el orden es libre («estudio dos horas todos los días», «todos los días estudio dos horas»); en chino, no.\n- Con un objeto corto, la duración se mete entre verbo y objeto: 上**四个小时**课 (tener cuatro horas de clase).\n\n> ❌ **Error típico**: ✗我两个小时每天学习 → 我每天学习两个小时. ✗你多长时间学习？ → 你学习多长时间？",
+      "sourceNotes": [
+        "zh-grammar-time-before-verb",
+        "zh-grammar-time-clock"
+      ],
+      "skeleton": {
+        "focus": [
+          "time",
+          "complement"
+        ],
+        "sentences": [
+          {
+            "slots": {
+              "subject": {
+                "zh": "我",
+                "py": "wǒ"
+              },
+              "time": {
+                "zh": "每天八点",
+                "py": "měi tiān bā diǎn",
+                "es": "todos los días a las ocho"
+              },
+              "verb1": {
+                "zh": "上课",
+                "py": "shàngkè",
+                "es": "entro a clase"
+              }
+            },
+            "end": "。",
+            "es": "Entro a clase a las ocho todos los días."
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "我",
+                "py": "wǒ"
+              },
+              "time": {
+                "zh": "每天",
+                "py": "měi tiān",
+                "es": "cada día"
+              },
+              "verb1": {
+                "zh": "学习",
+                "py": "xuéxí",
+                "es": "estudio"
+              },
+              "complement": {
+                "zh": "两个小时",
+                "py": "liǎng ge xiǎoshí",
+                "es": "dos horas"
+              }
+            },
+            "end": "。",
+            "es": "Estudio dos horas cada día.",
+            "esOrder": [
+              {
+                "text": "Estudio",
+                "slot": "verb1"
+              },
+              {
+                "text": "dos horas",
+                "slot": "complement"
+              },
+              {
+                "text": "cada día",
+                "slot": "time"
+              }
+            ]
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "你",
+                "py": "nǐ"
+              },
+              "time": {
+                "zh": "每天",
+                "py": "měi tiān"
+              },
+              "verb1": {
+                "zh": "学习",
+                "py": "xuéxí"
+              },
+              "complement": {
+                "zh": "多长时间",
+                "py": "duō cháng shíjiān",
+                "es": "cuánto tiempo"
+              }
+            },
+            "end": "？",
+            "es": "¿Cuánto tiempo estudias al día?"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "zh": "我每天八点上课。",
+          "py": "Wǒ měi tiān bā diǎn shàngkè.",
+          "es": "Entro a clase a las ocho todos los días."
+        },
+        {
+          "zh": "我每天学习两个小时。",
+          "py": "Wǒ měi tiān xuéxí liǎng ge xiǎoshí.",
+          "es": "Estudio dos horas cada día."
+        },
+        {
+          "zh": "校长今天上午讲了一个小时。",
+          "py": "Xiàozhǎng jīntiān shàngwǔ jiǎng le yí ge xiǎoshí.",
+          "es": "Esta mañana el rector ha hablado una hora."
+        },
+        {
+          "zh": "我们星期一上四个小时课。",
+          "py": "Wǒmen xīngqīyī shàng sì ge xiǎoshí kè.",
+          "es": "Los lunes tenemos cuatro horas de clase."
+        }
+      ]
+    },
+    {
+      "id": "repetir-verbo",
+      "title": "V + O + V + 了 + duración",
+      "unlockedBy": "a2-u02-l3",
+      "markdown": "### Cuando el objeto estorba, repite el verbo\n\nLa duración tiene que ir detrás del verbo… y el objeto también. La solución más clara: **decir el verbo dos veces**.\n\n> 我**复习**生词**复习了**一个小时。 → Estuve una hora repasando el vocabulario.\n\n1. Verbo + objeto: 复习生词 (Verbo 1).\n2. Verbo otra vez + 了: 复习了 (Verbo 2).\n3. Duración: 一个小时 (Complemento).\n\n- La forma de la sección anterior también vale: 我复习了一个小时生词. Con objetos largos o concretos, mejor repetir el verbo.\n- Negativa: 我写作文**没写**多长时间.\n\n> ❌ **Error típico**: ✗我复习生词一个小时 → 我复习生词复习了一个小时.",
+      "sourceNotes": [
+        "zh-grammar-time-before-verb"
+      ],
+      "skeleton": {
+        "focus": [
+          "verb1",
+          "verb2",
+          "complement"
+        ],
+        "sentences": [
+          {
+            "slots": {
+              "subject": {
+                "zh": "我",
+                "py": "wǒ"
+              },
+              "verb1": {
+                "zh": "复习生词",
+                "py": "fùxí shēngcí",
+                "es": "repasando las palabras"
+              },
+              "verb2": {
+                "zh": "复习了",
+                "py": "fùxí le",
+                "es": "estuve"
+              },
+              "complement": {
+                "zh": "一个小时",
+                "py": "yí ge xiǎoshí",
+                "es": "una hora"
+              }
+            },
+            "end": "。",
+            "es": "Estuve una hora repasando las palabras nuevas."
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "你",
+                "py": "nǐ"
+              },
+              "verb1": {
+                "zh": "写作文",
+                "py": "xiě zuòwén"
+              },
+              "verb2": {
+                "zh": "写了",
+                "py": "xiě le"
+              },
+              "complement": {
+                "zh": "多长时间",
+                "py": "duō cháng shíjiān"
+              }
+            },
+            "end": "？",
+            "es": "¿Cuánto tiempo estuviste escribiendo la redacción?"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "zh": "我复习生词复习了一个小时。",
+          "py": "Wǒ fùxí shēngcí fùxí le yí ge xiǎoshí.",
+          "es": "Estuve una hora repasando las palabras nuevas."
+        },
+        {
+          "zh": "安娜写作文写了两个小时。",
+          "py": "Ānnà xiě zuòwén xiě le liǎng ge xiǎoshí.",
+          "es": "Ana estuvo dos horas escribiendo la redacción."
+        },
+        {
+          "zh": "我们昨天练汉字练了一下午。",
+          "py": "Wǒmen zuótiān liàn Hànzì liàn le yí xiàwǔ.",
+          "es": "Ayer estuvimos toda la tarde practicando caracteres."
+        }
+      ]
+    },
+    {
+      "id": "tiempo-transcurrido",
+      "title": "Hace tres meses que…: duración + 了 final",
+      "unlockedBy": "a2-u02-l4",
+      "markdown": "### El tiempo que ha pasado desde algo\n\nCon una acción **instantánea** (venir, empezar), la duración cuenta el tiempo **desde entonces**, y la frase acaba en **了**:\n\n- **开学**两个星期**了**。 → Hace dos semanas que empezó el curso.\n- 我**来上海**三个月**了**。 → Hace tres meses que vine a Shanghái.\n\n### 了 … 了: la acción sigue\n\n| Frase | Significa |\n|---|---|\n| 我学了两年汉语。 | Estudié chino dos años (quizá ya no). |\n| 我学了两年汉语**了**。 | Llevo dos años estudiando chino (y sigo). |\n\nEl 了 final dice «hasta ahora»; va en la partícula final. Y para lo que **no** pasa desde hace tiempo: 我三天没吃肉了 (apunte **Negación**).\n\n> ❌ **Error típico**: ✗我来了上海三个月 → 我来上海三个月了. ✗两个星期开学了 → 开学两个星期了.",
+      "sourceNotes": [
+        "zh-grammar-le-change",
+        "zh-grammar-le-completed"
+      ],
+      "skeleton": {
+        "focus": [
+          "complement",
+          "particle"
+        ],
+        "sentences": [
+          {
+            "slots": {
+              "subject": {
+                "zh": "我",
+                "py": "wǒ"
+              },
+              "verb1": {
+                "zh": "来上海",
+                "py": "lái Shànghǎi",
+                "es": "vine a Shanghái"
+              },
+              "complement": {
+                "zh": "三个月",
+                "py": "sān ge yuè",
+                "es": "hace tres meses"
+              },
+              "particle": {
+                "zh": "了",
+                "py": "le"
+              }
+            },
+            "end": "。",
+            "es": "Hace tres meses que vine a Shanghái.",
+            "esOrder": [
+              {
+                "text": "Hace tres meses",
+                "slot": "complement"
+              },
+              {
+                "text": "que vine a Shanghái",
+                "slot": "verb1"
+              }
+            ]
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "我",
+                "py": "wǒ"
+              },
+              "verb1": {
+                "zh": "学了",
+                "py": "xué le",
+                "es": "llevo estudiando"
+              },
+              "object": {
+                "zh": "两年汉语",
+                "py": "liǎng nián Hànyǔ",
+                "es": "dos años chino"
+              },
+              "particle": {
+                "zh": "了",
+                "py": "le",
+                "es": "(y sigo)"
+              }
+            },
+            "end": "。",
+            "es": "Llevo dos años estudiando chino."
+          },
+          {
+            "slots": {
+              "verb1": {
+                "zh": "开学",
+                "py": "kāixué",
+                "es": "empezó el curso"
+              },
+              "complement": {
+                "zh": "多长时间",
+                "py": "duō cháng shíjiān",
+                "es": "cuánto hace"
+              },
+              "particle": {
+                "zh": "了",
+                "py": "le"
+              }
+            },
+            "end": "？",
+            "es": "¿Cuánto hace que empezó el curso?"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "zh": "开学两个星期了。",
+          "py": "Kāixué liǎng ge xīngqī le.",
+          "es": "Hace dos semanas que empezó el curso."
+        },
+        {
+          "zh": "我来上海三个月了。",
+          "py": "Wǒ lái Shànghǎi sān ge yuè le.",
+          "es": "Hace tres meses que vine a Shanghái."
+        },
+        {
+          "zh": "我学了两年汉语了。",
+          "py": "Wǒ xué le liǎng nián Hànyǔ le.",
+          "es": "Llevo dos años estudiando chino."
+        },
+        {
+          "zh": "我等了一个小时了。",
+          "py": "Wǒ děng le yí ge xiǎoshí le.",
+          "es": "Llevo una hora esperando."
+        }
+      ]
+    },
+    {
+      "id": "cuando-de-shihou",
+      "title": "Cuando…: …的时候 y 小时候",
+      "unlockedBy": "a2-u10-l3",
+      "markdown": "### Una frase entera como tiempo\n\n**…的时候** («cuando…») funciona como una expresión de tiempo y va **delante**, en el tiempo inicial:\n\n| Español | Chino |\n|---|---|\n| Cuando nieva, salimos a jugar. | 下雪**的时候**，我们出去玩儿。 |\n| De pequeño… | **小时候**… |\n\n- El «cuando» va **al final** del bloque, al revés que en español.\n- **小时候** ya significa «cuando era pequeño»: ✗当我小时候的时候.\n- **那时候 / 当时** = entonces; **后来** = después (en un relato del pasado); **原来** = al principio, o la sorpresa de descubrir algo.\n\n> ❌ **Error típico**: ✗的时候下雪，… → 下雪的时候，….",
+      "sourceNotes": [
+        "zh-grammar-time-before-verb"
+      ],
+      "skeleton": {
+        "focus": [
+          "time0"
+        ],
+        "sentences": [
+          {
+            "slots": {
+              "time0": {
+                "zh": "小时候",
+                "py": "xiǎoshíhou",
+                "es": "de pequeño"
+              },
+              "subject": {
+                "zh": "我",
+                "py": "wǒ"
+              },
+              "adverb": {
+                "zh": "常常",
+                "py": "chángcháng",
+                "es": "solía"
+              },
+              "place": {
+                "zh": "在奶奶家",
+                "py": "zài nǎinai jiā",
+                "es": "en casa de mi abuela"
+              },
+              "verb1": {
+                "zh": "过年",
+                "py": "guònián",
+                "es": "pasar el Año Nuevo"
+              }
+            },
+            "end": "。",
+            "es": "De pequeño solía pasar el Año Nuevo en casa de mi abuela."
+          },
+          {
+            "slots": {
+              "time0": {
+                "zh": "下雪的时候，",
+                "py": "xià xuě de shíhou,",
+                "es": "cuando nieva"
+              },
+              "subject": {
+                "zh": "我们",
+                "py": "wǒmen"
+              },
+              "verb1": {
+                "zh": "出去",
+                "py": "chūqù",
+                "es": "salimos"
+              },
+              "verb2": {
+                "zh": "玩儿",
+                "py": "wánr",
+                "es": "a jugar"
+              }
+            },
+            "end": "。",
+            "es": "Cuando nieva, salimos a jugar.",
+            "esOrder": [
+              {
+                "text": "Cuando nieva,",
+                "slot": "time0"
+              },
+              {
+                "text": "salimos",
+                "slot": "verb1"
+              },
+              {
+                "text": "a jugar",
+                "slot": "verb2"
+              }
+            ]
+          }
+        ]
+      },
+      "examples": [
+        {
+          "zh": "下雪的时候，我们出去玩儿。",
+          "py": "Xià xuě de shíhou, wǒmen chūqù wánr.",
+          "es": "Cuando nieva, salimos a jugar."
+        },
+        {
+          "zh": "小时候我不喜欢吃鱼。",
+          "py": "Xiǎoshíhou wǒ bù xǐhuan chī yú.",
+          "es": "De pequeño no me gustaba el pescado."
+        },
+        {
+          "zh": "你小时候住在哪儿？",
+          "py": "Nǐ xiǎoshíhou zhù zài nǎr?",
+          "es": "¿Dónde vivías de pequeño?"
+        }
+      ]
+    },
+    {
+      "id": "antes-despues-de",
+      "title": "Antes de… / después de…: …以前 y …以后",
+      "unlockedBy": "a2-u10-l4",
+      "markdown": "### El suceso primero, 以前 / 以后 detrás\n\n| Español | Chino |\n|---|---|\n| **después de** casarse | 结婚**以后** |\n| **antes de** dormir | 睡觉**以前** |\n| **antes de** venir a China | 来中国**以前** |\n\n- Igual que …的时候, el bloque entero va en el **tiempo inicial**, delante del sujeto.\n- Solos, sin suceso delante: **以前** = antes, antiguamente; **以后** = en el futuro, más adelante.\n- Para «después» en un relato del pasado, mejor **后来**.\n\n> ❌ **Error típico**: ✗以后结婚，他们住在上海 → 结婚以后，他们住在上海.",
+      "skeleton": {
+        "focus": [
+          "time0"
+        ],
+        "sentences": [
+          {
+            "slots": {
+              "time0": {
+                "zh": "每天睡觉以前，",
+                "py": "měi tiān shuìjiào yǐqián,",
+                "es": "todos los días antes de dormir"
+              },
+              "subject": {
+                "zh": "我",
+                "py": "wǒ"
+              },
+              "adverb": {
+                "zh": "都",
+                "py": "dōu"
+              },
+              "verb1": {
+                "zh": "洗个澡",
+                "py": "xǐ ge zǎo",
+                "es": "me ducho"
+              }
+            },
+            "end": "。",
+            "es": "Todos los días me ducho antes de dormir."
+          },
+          {
+            "slots": {
+              "time0": {
+                "zh": "来中国以前，",
+                "py": "lái Zhōngguó yǐqián,",
+                "es": "antes de venir a China"
+              },
+              "subject": {
+                "zh": "我",
+                "py": "wǒ"
+              },
+              "adverb": {
+                "zh": "不",
+                "py": "bú"
+              },
+              "aux": {
+                "zh": "会",
+                "py": "huì",
+                "es": "sabía"
+              },
+              "verb1": {
+                "zh": "说",
+                "py": "shuō",
+                "es": "hablar"
+              },
+              "object": {
+                "zh": "汉语",
+                "py": "Hànyǔ",
+                "es": "chino"
+              }
+            },
+            "end": "。",
+            "es": "Antes de venir a China no sabía hablar chino."
+          }
+        ]
+      },
+      "examples": [
+        {
+          "zh": "结婚以后，他们要住在上海。",
+          "py": "Jiéhūn yǐhòu, tāmen yào zhù zài Shànghǎi.",
+          "es": "Cuando se casen, vivirán en Shanghái."
+        },
+        {
+          "zh": "来中国以前，我不会说汉语。",
+          "py": "Lái Zhōngguó yǐqián, wǒ bú huì shuō Hànyǔ.",
+          "es": "Antes de venir a China no sabía hablar chino."
+        },
+        {
+          "zh": "下课以后，我们去食堂吃饭。",
+          "py": "Xiàkè yǐhòu, wǒmen qù shítáng chī fàn.",
+          "es": "Después de clase vamos al comedor a comer."
+        }
+      ]
+    }
+  ]
+}

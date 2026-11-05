@@ -1,0 +1,135 @@
+{
+  "id": "a1-u21-l4",
+  "title": "Listo para el HSK 1: repaso final de A1",
+  "zh": "我们都准备好了吗？",
+  "goal": "Hablar de todos, de los demás y de las diferencias (所有, 全部, 其他, 不同), usar 就 «enseguida, precisamente» y combinar en frases largas todo el A1 antes del checkpoint y el simulacro HSK 1.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "所有", "pinyin": "suǒyǒu", "es": "todos, todo (el conjunto)", "note": "所有的同学都… = todos los compañeros… (pide 都)." },
+    { "hanzi": "全部", "pinyin": "quánbù", "es": "todo, entero; en total", "note": "我全部记得 = me acuerdo de todo." },
+    { "hanzi": "其他", "pinyin": "qítā", "es": "otro(s), los demás", "note": "其他同学 = los demás compañeros." },
+    { "hanzi": "不同", "pinyin": "bùtóng", "es": "diferente, distinto", "note": "= 不一样, un poco más formal." },
+    { "hanzi": "就", "pinyin": "jiù", "es": "enseguida; precisamente, justo", "note": "我明天就去 = mañana mismo voy. 这就是我的宿舍 = esta es precisamente mi residencia." },
+    { "hanzi": "准备", "pinyin": "zhǔnbèi", "es": "preparar(se)", "note": "Repaso de la U17." },
+    { "hanzi": "考试", "pinyin": "kǎoshì", "es": "examen; examinarse", "note": "Repaso de la U17." },
+    { "hanzi": "汉字", "pinyin": "Hànzì", "es": "carácter chino", "note": "Repaso de la U17." }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "我们班所有的同学都要考汉语。", "py": "Wǒmen bān suǒyǒu de tóngxué dōu yào kǎo Hànyǔ.", "es": "Todos los compañeros de mi clase se van a examinar de chino." },
+        { "zh": "我明天就去图书馆准备考试。", "py": "Wǒ míngtiān jiù qù túshūguǎn zhǔnbèi kǎoshì.", "es": "Mañana mismo voy a la biblioteca a preparar el examen." },
+        { "zh": "这两个汉字不同。", "py": "Zhè liǎng ge Hànzì bùtóng.", "es": "Estos dos caracteres son distintos." }
+      ]
+    },
+    { "type": "vocab", "title": "Para el examen", "words": ["所有", "全部", "其他", "不同", "就", "准备", "考试", "汉字"] },
+    {
+      "type": "phonetics-drill",
+      "title": "Leer en voz alta: ritmo y pausas del examen",
+      "markdown": "En el examen oral y en la vida real, una frase larga se entiende mejor si:\n\n1. Haces **una pausa corta entre bloques** (los huecos del esqueleto).\n2. **No alargas las partículas** (的, 了, 吗, 呢): son cortas y neutras.\n3. **Acentúas la información nueva**: en 我**明天**就去, el peso cae en 明天; en 我明天就**去**, en el verbo.\n\nY no olvides los cambios de tono dentro de cada bloque: 所有 *suǒyǒu* (3 + 3 → *suóyǒu*), 不同 *bùtóng*, 其他 *qítā*.",
+      "items": [
+        { "audio": "我们班所有的同学都要考汉语。", "prompt": "¿Qué división es natural?", "options": ["我们班所有的同学 | 都要 | 考汉语", "我们班所 | 有的同 | 学都要考 | 汉语"], "answer": 0, "explain": "Sujeto largo | adverbio + auxiliar | verbo + objeto." },
+        { "audio": "所有", "prompt": "¿Cómo suena 所 aquí?", "options": ["suó (sube: 3 + 3)", "suǒ (baja y sube)"], "answer": 0 },
+        { "audio": "不同", "options": ["bùtóng", "bútóng", "bùdóng"], "answer": 0, "explain": "同 es segundo tono: 不 se queda en bù." },
+        { "audio": "其他", "options": ["qítā", "qítà", "jítā"], "answer": 0, "explain": "q con aire; 他 tā primer tono." },
+        { "audio": "准备", "options": ["zhǔnbèi", "zǔnbèi", "zhǔnpèi"], "answer": 0, "explain": "zh con la lengua atrás; b sin aire." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["就", "同"],
+      "mnemonics": {
+        "就": "京 (la capital, en lo alto) + 尤: ir hacia arriba, acercarse a algo. De «acercarse» vienen «enseguida» y «precisamente».",
+        "同": "Una cubierta (冂) que tapa a 一 + 口 (bocas): muchas bocas bajo el mismo techo = igual, juntos. Está en 同学 y en 不同."
+      }
+    },
+    {
+      "type": "explain",
+      "title": "Antes de acabar A1: checkpoint y simulacro HSK 1",
+      "markdown": "Con esta lección terminas la Etapa 1 (A1). Te quedan dos pruebas:\n\n1. **El checkpoint de la unidad 21** (al final de la unidad, en *Aprender*): 20 ejercicios que mezclan todo el A1 (orden de la frase, 了 / 没 / 不 / 别, preguntas, números, clasificadores…). Si fallas un tipo de ejercicio, vuelve a la unidad que lo enseña: el resultado te lo indica.\n2. **El simulacro HSK 1** de la app (*Practicar → Simulacro*): sigue el formato oficial vigente, **听力 (comprensión oral) 20 preguntas + 阅读 (lectura) 20 preguntas**, con tiempo. No tienes que hacerlo hoy: hazlo cuando el checkpoint te salga bien.\n\nConsejos para el examen:\n- En 听力 se oye cada audio **dos veces**: la primera, escucha entera; la segunda, confirma.\n- En 阅读 busca primero las **palabras clave** (tiempo, lugar, negación). Un 没 o un 不 cambian la respuesta.\n- Lee las frases **por bloques**, como en esta unidad."
+    },
+    {
+      "type": "skeleton",
+      "title": "所有 / 全部 / 其他 + 都, y 就",
+      "markdown": "- **所有的 + nombre** y **全部** casi siempre van con **都** delante del verbo: 所有的同学**都**去 (no ~~所有的同学也去~~ para decir «todos»).\n- **其他** + nombre = los demás: 其他同学, 其他东西.\n- **不同** es un adjetivo: 这两个字**不同** (sin 是).\n- **就** va en el hueco de los **adverbios**, **detrás del tiempo**: 我明天**就**去 = mañana mismo. Con 是, «precisamente»: 她**就**是王老师 = ella es precisamente la profesora Wang.\n\nEsta lección repasa todos los huecos a la vez; en el esqueleto se resaltan los de la frase completa.",
+      "focus": ["time0", "subject", "time", "adverb", "aux", "with", "place", "verb1", "verb2", "object", "particle"],
+      "sentences": [
+        { "slots": { "time0": { "zh": "下个月", "py": "xià ge yuè" }, "subject": { "zh": "我们班所有的同学", "py": "wǒmen bān suǒyǒu de tóngxué" }, "adverb": { "zh": "都", "py": "dōu" }, "aux": { "zh": "要", "py": "yào" }, "verb1": { "zh": "考", "py": "kǎo" }, "object": { "zh": "汉语", "py": "Hànyǔ" } }, "end": "。", "es": "El mes que viene todos los compañeros de mi clase se examinan de chino." },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "time": { "zh": "明天", "py": "míngtiān" }, "adverb": { "zh": "就", "py": "jiù" }, "verb1": { "zh": "去图书馆", "py": "qù túshūguǎn" }, "verb2": { "zh": "准备", "py": "zhǔnbèi" }, "object": { "zh": "考试", "py": "kǎoshì" } }, "end": "。", "es": "Mañana mismo voy a la biblioteca a preparar el examen." },
+        { "slots": { "subject": { "zh": "其他同学", "py": "qítā tóngxué" }, "adverb": { "zh": "都", "py": "dōu" }, "place": { "zh": "在食堂", "py": "zài shítáng" }, "verb1": { "zh": "吃", "py": "chī" }, "object": { "zh": "饭", "py": "fàn" }, "particle": { "zh": "呢", "py": "ne" } }, "end": "。", "es": "Los demás compañeros están todos comiendo en el comedor." },
+        { "slots": { "subject": { "zh": "她", "py": "tā" }, "adverb": { "zh": "就", "py": "jiù" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "我们的汉语老师", "py": "wǒmen de Hànyǔ lǎoshī" } }, "end": "。", "es": "Ella es precisamente nuestra profesora de chino." },
+        { "slots": { "time0": { "zh": "今天下午", "py": "jīntiān xiàwǔ" }, "subject": { "zh": "我们", "py": "wǒmen" }, "with": { "zh": "跟大卫一起", "py": "gēn Dàwèi yìqǐ" }, "place": { "zh": "在宿舍", "py": "zài sùshè" }, "verb1": { "zh": "写", "py": "xiě" }, "object": { "zh": "汉字", "py": "Hànzì" }, "particle": { "zh": "吧", "py": "ba" } }, "end": "！", "es": "¡Esta tarde escribamos caracteres con David en la residencia!" }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "time": { "zh": "今天", "py": "jīntiān" }, "adverb": { "zh": "不", "py": "bù" }, "aux": { "zh": "想", "py": "xiǎng" }, "verb1": { "zh": "去图书馆", "py": "qù túshūguǎn" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Hoy ya no quiero ir a la biblioteca." },
+        { "slots": { "subject": { "zh": "他", "py": "tā" }, "time": { "zh": "昨天", "py": "zuótiān" }, "adverb": { "zh": "没", "py": "méi" }, "verb1": { "zh": "准备", "py": "zhǔnbèi" }, "object": { "zh": "考试", "py": "kǎoshì" } }, "end": "。", "es": "Ayer no preparó el examen." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你们", "py": "nǐmen" }, "verb1": { "zh": "准备", "py": "zhǔnbèi" }, "object": { "zh": "考试", "py": "kǎoshì" }, "particle": { "zh": "了吗", "py": "le ma" } }, "end": "？", "es": "¿Habéis preparado el examen?" },
+        { "slots": { "subject": { "zh": "其他同学", "py": "qítā tóngxué" }, "verb1": { "zh": "去不去", "py": "qù bu qù" } }, "end": "？", "es": "¿Los demás compañeros van o no?" }
+      ],
+      "mistakes": [
+        { "wrong": "所有的同学也去。", "right": "所有的同学都去。", "why": "所有 / 全部 piden 都 («todos»); 也 es «también»." },
+        { "wrong": "我就明天去。", "right": "我明天就去。", "why": "就 va detrás del tiempo, justo delante del verbo." },
+        { "wrong": "这两个字是不同。", "right": "这两个字不同。", "why": "不同 es un adjetivo: sin 是." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "La semana antes del examen",
+      "lines": [
+        { "speaker": "安娜", "zh": "雨果，下个星期就要考试了，你准备了吗？", "py": "Yǔguǒ, xià ge xīngqī jiù yào kǎoshì le, nǐ zhǔnbèi le ma?", "es": "Hugo, la semana que viene ya es el examen. ¿Lo has preparado?" },
+        { "speaker": "雨果", "zh": "准备了。课本上的汉字我差不多全部记得。", "py": "Zhǔnbèi le. Kèběn shang de Hànzì wǒ chàbuduō quánbù jìde.", "es": "Sí. Me acuerdo de casi todos los caracteres del libro." },
+        { "speaker": "安娜", "zh": "太好了！你看，“天”和“大”，这两个字不同吗？", "py": "Tài hǎo le! Nǐ kàn, “tiān” hé “dà”, zhè liǎng ge zì bùtóng ma?", "es": "¡Genial! Mira, 天 y 大: ¿son caracteres distintos?" },
+        { "speaker": "雨果", "zh": "不同！“天”上边有一个“一”。", "py": "Bùtóng! “Tiān” shàngbian yǒu yí ge “yī”.", "es": "¡Sí! 天 tiene un 一 encima." },
+        { "speaker": "安娜", "zh": "对。其他同学都在图书馆准备考试呢。", "py": "Duì. Qítā tóngxué dōu zài túshūguǎn zhǔnbèi kǎoshì ne.", "es": "Eso es. Los demás compañeros están todos en la biblioteca preparando el examen." },
+        { "speaker": "雨果", "zh": "那我们现在就去吧！", "py": "Nà wǒmen xiànzài jiù qù ba!", "es": "¡Pues vamos ahora mismo!" },
+        { "speaker": "安娜", "zh": "好。所有的书你都拿了吗？", "py": "Hǎo. Suǒyǒu de shū nǐ dōu ná le ma?", "es": "Vale. ¿Has cogido todos los libros?" },
+        { "speaker": "雨果", "zh": "拿了，全部在我的书包里。走吧！", "py": "Ná le, quánbù zài wǒ de shūbāo li. Zǒu ba!", "es": "Sí, están todos en la mochila. ¡Vamos!" }
+      ],
+      "notes": "下个星期就要考试了: con un momento concreto (下个星期) se usa 就要…了, la forma que viste anunciada en la U18. 所有的书你都拿了吗？ adelanta el objeto como tema, igual que en la lección 2."
+    },
+    { "type": "exercises", "count": 20, "bank": ["g-word-order", "g-le", "g-bu-mei", "g-question-words", "g-ye-dou", "g-measure-words"] },
+    {
+      "type": "sentence-builder",
+      "title": "Construye la frase completa",
+      "items": [
+        { "sentence": { "slots": { "time0": { "zh": "下个月" }, "subject": { "zh": "我们班所有的同学" }, "adverb": { "zh": "都" }, "aux": { "zh": "要" }, "verb1": { "zh": "去大学" }, "verb2": { "zh": "考" }, "object": { "zh": "汉语" } }, "end": "。", "es": "El mes que viene todos los compañeros de mi clase van a ir a la universidad a examinarse de chino." }, "distractors": ["也"] },
+        { "sentence": { "slots": { "subject": { "zh": "我" }, "time": { "zh": "明天上午" }, "adverb": { "zh": "就" }, "with": { "zh": "跟安娜一起" }, "verb1": { "zh": "坐地铁去图书馆" }, "verb2": { "zh": "准备" }, "object": { "zh": "考试" } }, "end": "。", "es": "Mañana por la mañana mismo voy con Ana en metro a la biblioteca a preparar el examen." } },
+        { "sentence": { "slots": { "time0": { "zh": "现在" }, "subject": { "zh": "其他同学" }, "adverb": { "zh": "都" }, "place": { "zh": "在宿舍" }, "verb1": { "zh": "用电脑" }, "verb2": { "zh": "写" }, "object": { "zh": "汉字" }, "particle": { "zh": "呢" } }, "end": "。", "es": "Ahora los demás compañeros están todos escribiendo caracteres con el ordenador en la residencia." } },
+        { "sentence": { "slots": { "subject": { "zh": "雨果" }, "time": { "zh": "昨天晚上" }, "adverb": { "zh": "没" }, "with": { "zh": "跟我们一起" }, "verb1": { "zh": "去饭馆" }, "verb2": { "zh": "吃" }, "object": { "zh": "饭" } }, "end": "。", "es": "Anoche Hugo no fue con nosotros a cenar al restaurante." }, "distractors": ["了", "不"] },
+        { "sentence": { "slots": { "time0": { "zh": "考试的时候" }, "subject": { "zh": "你们" }, "adverb": { "zh": "都" }, "aux": { "zh": "要" }, "verb1": { "zh": "关" }, "object": { "zh": "手机" } }, "end": "。", "es": "Durante el examen todos tenéis que apagar el móvil." }, "distractors": ["别"] },
+        { "sentence": { "slots": { "time0": { "zh": "星期六下午" }, "subject": { "zh": "你" }, "aux": { "zh": "想不想" }, "with": { "zh": "跟我们一起" }, "verb1": { "zh": "去湖边" }, "verb2": { "zh": "看" }, "object": { "zh": "花" } }, "end": "？", "es": "¿Quieres venir con nosotros el sábado por la tarde al lago a ver las flores?" }, "distractors": ["吗"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "我们班所有的同学都要考汉语。", "py": "Wǒmen bān suǒyǒu de tóngxué dōu yào kǎo Hànyǔ.", "es": "Todos los compañeros de mi clase se van a examinar de chino." },
+        { "zh": "我明天就去图书馆准备考试。", "py": "Wǒ míngtiān jiù qù túshūguǎn zhǔnbèi kǎoshì.", "es": "Mañana mismo voy a la biblioteca a preparar el examen." },
+        { "zh": "其他同学都在图书馆呢。", "py": "Qítā tóngxué dōu zài túshūguǎn ne.", "es": "Los demás compañeros están todos en la biblioteca." },
+        { "zh": "那我们现在就去吧！", "py": "Nà wǒmen xiànzài jiù qù ba!", "es": "¡Pues vamos ahora mismo!" }
+      ],
+      "respond": [
+        { "q": { "zh": "你准备考试了吗？", "py": "Nǐ zhǔnbèi kǎoshì le ma?", "es": "¿Has preparado el examen?" }, "model": { "zh": "准备了，汉字我差不多全部记得。", "py": "Zhǔnbèi le, Hànzì wǒ chàbuduō quánbù jìde.", "es": "Sí, me acuerdo de casi todos los caracteres." } },
+        { "q": { "zh": "其他同学在哪儿？", "py": "Qítā tóngxué zài nǎr?", "es": "¿Dónde están los demás compañeros?" }, "model": { "zh": "他们都在食堂吃饭呢。", "py": "Tāmen dōu zài shítáng chīfàn ne.", "es": "Están todos comiendo en el comedor." } },
+        { "q": { "zh": "你什么时候去图书馆？", "py": "Nǐ shénme shíhou qù túshūguǎn?", "es": "¿Cuándo vas a la biblioteca?" }, "model": { "zh": "我现在就去。", "py": "Wǒ xiànzài jiù qù.", "es": "Voy ahora mismo." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Antes del HSK 1",
+      "text": "下个月我们班所有的同学都要考汉语。雨果每天都在图书馆准备考试。他的汉字不错，课本上的字他差不多全部记得。听有一点儿难，他就每天听汉语。其他同学也很认真。考试的时候，大家都不能用手机。雨果说：“考试，我不怕！”",
+      "es": "El mes que viene todos los compañeros de la clase se examinan de chino. Hugo prepara el examen en la biblioteca todos los días. Va bien de caracteres: se acuerda de casi todos los del libro. La comprensión oral le cuesta un poco, así que escucha chino todos los días. Los demás compañeros también estudian mucho. Durante el examen nadie puede usar el móvil. Hugo dice: «¡El examen no me da miedo!».",
+      "questions": [
+        { "q": "¿Quiénes se examinan el mes que viene?", "options": ["所有的同学", "雨果一个人", "其他老师"], "answer": 0 },
+        { "q": "¿Qué le cuesta un poco a Hugo?", "options": ["听", "汉字", "写"], "answer": 0 },
+        { "q": "¿Qué no se puede hacer en el examen?", "options": ["用手机", "写汉字", "说话"], "answer": 0 },
+        { "q": "¿Qué frase es correcta?", "options": ["所有的同学都去。", "所有的同学也去。", "所有同学的去。"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

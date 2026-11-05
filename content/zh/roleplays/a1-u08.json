@@ -1,0 +1,142 @@
+{
+  "unitId": "a1-u08",
+  "scenarios": [
+    {
+      "id": "a1-u08-roommate",
+      "title": "¿Qué tal tu compañero de residencia?",
+      "zh": "小李怎么样？",
+      "level": 1,
+      "setting": "Ana todavía no conoce a Xiao Li, el compañero chino con el que Hugo comparte residencia, y le pregunta cómo es. Tú (la app) eres 安娜.",
+      "role": "Ana",
+      "roleZh": "安娜",
+      "voice": "f",
+      "goals": ["Describir el carácter de tu compañero", "Decir si es aplicado y limpio", "Describir vuestra casa", "Usar adjetivo + 的 + nombre (一个很认真的学生)"],
+      "vocab": ["很", "认真", "干净", "开心", "生气", "不太", "比较", "最", "重要"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "雨果，小李怎么样？", "py": "Yǔguǒ, Xiǎo Lǐ zěnmeyàng?", "es": "Hugo, ¿qué tal es Xiao Li?" },
+          "user": [
+            { "zh": "他很好，也很爱笑。", "py": "Tā hěn hǎo, yě hěn ài xiào.", "es": "Es muy majo y muy risueño.", "keywords": ["很好", "爱笑"], "next": "n2", "goal": 0 },
+            { "zh": "他非常认真，每天都学习。", "py": "Tā fēicháng rènzhēn, měi tiān dōu xuéxí.", "es": "Es muy aplicado: estudia todos los días.", "keywords": ["认真", "非常"], "next": "n3", "goal": 1 }
+          ],
+          "hint": "Sujeto + 很 / 非常 + adjetivo, sin 是: 他很好, 他非常认真."
+        },
+        "n2": {
+          "npc": { "zh": "他爱笑？他不常生气吗？", "py": "Tā ài xiào? Tā bù cháng shēngqì ma?", "es": "¿Es risueño? ¿No se enfada a menudo?" },
+          "user": [
+            { "zh": "不常生气，他特别开心。", "py": "Bù cháng shēngqì, tā tèbié kāixīn.", "es": "No suele enfadarse: siempre está muy contento.", "keywords": ["不常", "开心"], "next": "n3", "goal": 0 },
+            { "zh": "他不太生气，他是一个很开心的人。", "py": "Tā bú tài shēngqì, tā shì yí ge hěn kāixīn de rén.", "es": "Casi nunca se enfada; es una persona muy alegre.", "keywords": ["不太", "开心的人"], "next": "n3", "goal": 3 }
+          ],
+          "hint": "Suaviza con 不太, o describe con un nombre: 一个很开心的人."
+        },
+        "n3": {
+          "npc": { "zh": "他认真吗？干净不干净？", "py": "Tā rènzhēn ma? Gānjìng bu gānjìng?", "es": "¿Es aplicado? ¿Es limpio?" },
+          "user": [
+            { "zh": "他非常干净，房子很干净。", "py": "Tā fēicháng gānjìng, fángzi hěn gānjìng.", "es": "Es muy limpio: la casa está muy limpia.", "keywords": ["干净"], "next": "n4", "goal": 1 },
+            { "zh": "他比较干净，我不太干净！", "py": "Tā bǐjiào gānjìng, wǒ bú tài gānjìng!", "es": "Él es bastante limpio; ¡yo no mucho!", "keywords": ["比较", "不太"], "next": "n4", "goal": 1 },
+            { "zh": "他是一个很认真的学生。", "py": "Tā shì yí ge hěn rènzhēn de xuésheng.", "es": "Es un estudiante muy aplicado.", "keywords": ["认真的学生"], "next": "n4", "goal": 3 }
+          ],
+          "hint": "A la pregunta A不A se responde con el adjetivo: (很) 干净 / 不太干净."
+        },
+        "n4": {
+          "npc": { "zh": "你们的房子怎么样？大不大？", "py": "Nǐmen de fángzi zěnmeyàng? Dà bu dà?", "es": "¿Y vuestra casa qué tal? ¿Es grande?" },
+          "user": [
+            { "zh": "不太大，比较小，也比较老。", "py": "Bú tài dà, bǐjiào xiǎo, yě bǐjiào lǎo.", "es": "No mucho: es más bien pequeña y algo vieja.", "keywords": ["不太大", "比较"], "next": "n5", "goal": 2 },
+            { "zh": "非常小！我的床也很小。", "py": "Fēicháng xiǎo! Wǒ de chuáng yě hěn xiǎo.", "es": "¡Pequeñísima! Mi cama también es muy pequeña.", "keywords": ["非常小", "床"], "next": "n5", "goal": 2 }
+          ],
+          "hint": "Gradúa: 不太 / 比较 / 很 / 非常 + adjetivo."
+        },
+        "n5": {
+          "npc": { "zh": "房子小没关系，朋友好最重要！", "py": "Fángzi xiǎo méi guānxi, péngyou hǎo zuì zhòngyào!", "es": "Que la casa sea pequeña da igual: ¡lo más importante es que el amigo sea bueno!" },
+          "user": [
+            { "zh": "对！小李是我最好的朋友。", "py": "Duì! Xiǎo Lǐ shì wǒ zuì hǎo de péngyou.", "es": "¡Sí! Xiao Li es mi mejor amigo.", "keywords": ["最好的朋友"], "next": "n6", "goal": 3 },
+            { "zh": "真的，好朋友非常重要。", "py": "Zhēn de, hǎo péngyou fēicháng zhòngyào.", "es": "De verdad: un buen amigo es muy importante.", "keywords": ["好朋友", "重要"], "next": "n6", "goal": 3 }
+          ],
+          "hint": "Adjetivo delante del nombre: 好朋友, 最好的朋友."
+        },
+        "n6": {
+          "npc": { "zh": "太好了！明天我去看小李！", "py": "Tài hǎo le! Míngtiān wǒ qù kàn Xiǎo Lǐ!", "es": "¡Genial! ¡Mañana voy a conocer a Xiao Li!" },
+          "end": true,
+          "feedback": "Has descrito a tu compañero sin 是 delante del adjetivo (他很认真), con grados (非常, 比较, 不太, 最) y con adjetivo + 的 + nombre (一个很认真的学生, 最好的朋友)."
+        }
+      }
+    },
+    {
+      "id": "a1-u08-city",
+      "title": "¿Qué tal Shanghái?",
+      "zh": "上海怎么样？",
+      "level": 1,
+      "setting": "Un día de mucho calor, al salir de clase, la profesora Wang pregunta a Hugo qué le parece Shanghái y cómo es su ciudad, Madrid. Tú (la app) eres 王老师.",
+      "role": "profesora Wang",
+      "roleZh": "王老师",
+      "voice": "f",
+      "goals": ["Describir Shanghái con grados", "Describir tu ciudad con 比较 y 最", "Preguntar con A不A", "Reaccionar con 真 o 太…了"],
+      "vocab": ["怎么样", "非常", "特别", "漂亮", "比较", "最", "有名", "有点儿", "太"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "雨果，上海怎么样？", "py": "Yǔguǒ, Shànghǎi zěnmeyàng?", "es": "Hugo, ¿qué te parece Shanghái?" },
+          "user": [
+            { "zh": "上海非常大，也特别漂亮！", "py": "Shànghǎi fēicháng dà, yě tèbié piàoliang!", "es": "¡Shanghái es enorme y especialmente bonita!", "keywords": ["非常大", "漂亮"], "next": "n2", "goal": 0 },
+            { "zh": "上海很好，人特别多！", "py": "Shànghǎi hěn hǎo, rén tèbié duō!", "es": "Shanghái está muy bien, ¡hay muchísima gente!", "keywords": ["人", "特别多"], "next": "n2", "goal": 0 }
+          ],
+          "hint": "上海 + grado + adjetivo: 非常大, 特别漂亮, 人很多."
+        },
+        "n2": {
+          "npc": { "zh": "马德里大不大？", "py": "Mǎdélǐ dà bu dà?", "es": "¿Es grande Madrid?" },
+          "user": [
+            { "zh": "马德里比较大，上海最大！", "py": "Mǎdélǐ bǐjiào dà, Shànghǎi zuì dà!", "es": "Madrid es bastante grande, ¡pero Shanghái es la más grande!", "keywords": ["比较大", "最大"], "next": "n3", "goal": 1 },
+            { "zh": "马德里不太大，也比较老。", "py": "Mǎdélǐ bú tài dà, yě bǐjiào lǎo.", "es": "Madrid no es muy grande, y es bastante antigua.", "keywords": ["不太大", "比较老"], "next": "n3", "goal": 1 }
+          ],
+          "hint": "比较 (bastante), 不太 (no muy), 最 (el más)."
+        },
+        "n3": {
+          "npc": { "zh": "马德里漂亮吗？", "py": "Mǎdélǐ piàoliang ma?", "es": "¿Es bonita Madrid?" },
+          "user": [
+            { "zh": "马德里非常漂亮，也很有名。", "py": "Mǎdélǐ fēicháng piàoliang, yě hěn yǒumíng.", "es": "Madrid es muy bonita y muy famosa.", "keywords": ["漂亮", "有名"], "next": "n4", "goal": 1 },
+            { "zh": "真的非常漂亮！", "py": "Zhēn de fēicháng piàoliang!", "es": "¡De verdad, es preciosa!", "keywords": ["真的", "漂亮"], "next": "n4", "goal": 1 }
+          ],
+          "hint": "En la respuesta vuelve el grado: (很 / 非常) 漂亮."
+        },
+        "n4": {
+          "npc": { "zh": "上海今天太热了！你累不累？", "py": "Shànghǎi jīntiān tài rè le! Nǐ lèi bu lèi?", "es": "¡Hoy hace demasiado calor en Shanghái! ¿Estás cansado?" },
+          "user": [
+            { "zh": "有点儿累，上海太热了。", "py": "Yǒudiǎnr lèi, Shànghǎi tài rè le.", "es": "Un poco; en Shanghái hace demasiado calor.", "keywords": ["有点儿累", "太热了"], "next": "n5", "goal": 3 },
+            { "zh": "不累！我很开心。", "py": "Bú lèi! Wǒ hěn kāixīn.", "es": "¡No! Estoy muy contento.", "keywords": ["不累", "开心"], "next": "n5" }
+          ],
+          "hint": "有点儿 + adjetivo para quejarte; 太…了 para «demasiado»."
+        },
+        "n5": {
+          "npc": { "zh": "我也有点儿累。", "py": "Wǒ yě yǒudiǎnr lèi.", "es": "Yo también estoy un poco cansada." },
+          "user": [
+            { "zh": "老师，北京怎么样？北京漂不漂亮？", "py": "Lǎoshī, Běijīng zěnmeyàng? Běijīng piào bu piàoliang?", "es": "Profesora, ¿qué tal Pekín? ¿Es bonita?", "keywords": ["怎么样", "漂不漂亮"], "next": "n6", "goal": 2 },
+            { "zh": "老师，您忙不忙？", "py": "Lǎoshī, nín máng bu máng?", "es": "Profesora, ¿está usted ocupada?", "keywords": ["忙不忙"], "next": "n6b", "goal": 2 }
+          ],
+          "hint": "Ahora pregunta tú con A不A: 忙不忙？ 漂不漂亮？ (sin 吗)."
+        },
+        "n6": {
+          "npc": { "zh": "北京比较老，也非常有名，特别漂亮。", "py": "Běijīng bǐjiào lǎo, yě fēicháng yǒumíng, tèbié piàoliang.", "es": "Pekín es más bien antigua, muy famosa y especialmente bonita." },
+          "user": [
+            { "zh": "太好了！我周末去北京。", "py": "Tài hǎo le! Wǒ zhōumò qù Běijīng.", "es": "¡Genial! El fin de semana voy a Pekín.", "keywords": ["太好了", "周末"], "next": "n7", "goal": 3 },
+            { "zh": "真的？北京真有名！", "py": "Zhēn de? Běijīng zhēn yǒumíng!", "es": "¿De verdad? ¡Qué famosa es Pekín!", "keywords": ["真的", "真"], "next": "n7", "goal": 3 }
+          ],
+          "hint": "Reacciona: 太好了！ / 真的？ / 真 + adjetivo."
+        },
+        "n6b": {
+          "npc": { "zh": "今天我非常忙，有课，也有事。", "py": "Jīntiān wǒ fēicháng máng, yǒu kè, yě yǒu shì.", "es": "Hoy estoy muy ocupada: tengo clase y también otras cosas." },
+          "user": [
+            { "zh": "老师，您太忙了！", "py": "Lǎoshī, nín tài máng le!", "es": "Profesora, ¡está usted demasiado ocupada!", "keywords": ["太忙了"], "next": "n7", "goal": 3 },
+            { "zh": "老师，您真忙！", "py": "Lǎoshī, nín zhēn máng!", "es": "¡Qué ocupada está, profesora!", "keywords": ["真忙"], "next": "n7", "goal": 3 }
+          ],
+          "hint": "Reacciona con 太…了 o con 真 + adjetivo."
+        },
+        "n7": {
+          "npc": { "zh": "好，雨果，明天见！", "py": "Hǎo, Yǔguǒ, míngtiān jiàn!", "es": "Bueno, Hugo, ¡hasta mañana!" },
+          "end": true,
+          "feedback": "Has descrito dos ciudades con toda la escala de grados (有点儿, 不太, 比较, 很, 非常, 特别, 最), has preguntado con A不A (忙不忙, 漂不漂亮) y has reaccionado con 真 y 太…了."
+        }
+      }
+    }
+  ]
+}

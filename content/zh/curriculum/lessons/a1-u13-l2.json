@@ -1,0 +1,135 @@
+{
+  "id": "a1-u13-l2",
+  "title": "¿Dónde, cuándo, cuántos? 哪儿, 什么时候, 几, 多少",
+  "zh": "你什么时候去？",
+  "goal": "Preguntar por el lugar, el momento y la cantidad (哪儿 / 哪里, 什么时候, 几点, 几, 多少, 多久) colocando cada interrogativo en su hueco.",
+  "minutes": 14,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "哪儿", "pinyin": "nǎr", "es": "dónde (repaso)", "note": "En el sur se prefiere 哪里." },
+    { "hanzi": "哪里", "pinyin": "nǎlǐ", "es": "dónde", "note": "Suena nálǐ (3.º + 3.º). 哪里人 = «de dónde (de qué ciudad)»." },
+    { "hanzi": "什么时候", "pinyin": "shénme shíhou", "es": "cuándo", "note": "Va en el hueco del tiempo, delante del verbo." },
+    { "hanzi": "几", "pinyin": "jǐ", "es": "cuántos (pocos, con clasificador) (repaso)" },
+    { "hanzi": "多少", "pinyin": "duōshao", "es": "cuánto(s) (cualquier cantidad) (repaso)" },
+    { "hanzi": "多久", "pinyin": "duōjiǔ", "es": "cuánto tiempo", "note": "Lo mismo que 多长时间. Va detrás del verbo: 你要等多久？" },
+    { "hanzi": "啊", "pinyin": "a", "es": "(partícula que suaviza: «¿eh?», «¡…!»)", "note": "你去哪儿啊？ suena más cercano que 你去哪儿？. 啊？ solo = «¿cómo?, ¿qué?»." },
+    { "hanzi": "题", "pinyin": "tí", "es": "ejercicio, pregunta (de examen)", "note": "第一题 «la primera pregunta / el ejercicio 1»." },
+    { "hanzi": "对话", "pinyin": "duìhuà", "es": "diálogo, conversación" }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "你是哪里人？", "py": "Nǐ shì nǎlǐ rén?", "es": "¿De dónde eres?" },
+        { "zh": "你什么时候回西班牙？", "py": "Nǐ shénme shíhou huí Xībānyá?", "es": "¿Cuándo vuelves a España?" },
+        { "zh": "你有几个中国朋友？", "py": "Nǐ yǒu jǐ ge Zhōngguó péngyou?", "es": "¿Cuántos amigos chinos tienes?" }
+      ]
+    },
+    { "type": "vocab", "title": "Dónde, cuándo y cuánto", "words": ["哪儿", "哪里", "什么时候", "几", "多少", "多久", "啊", "题", "对话"] },
+    {
+      "type": "phonetics-drill",
+      "title": "iu = iou y ui = uei: 多久 jiǔ, 对话 duì",
+      "markdown": "El pinyin abrevia dos finales y esconde una vocal:\n\n- **iu** se lee **iou**: 久 jiǔ suena casi «jiou», 球 qiú «qiou». Con el 3.º tono la *o* se oye bastante.\n- **ui** se lee **uei**: 对 duì suena «duei», 会 huì «huei», 回 huí «huei».\n\nSi lees *jiǔ* como la «iu» española (piu-), te quedas corto: abre un poco la boca en medio.",
+      "items": [
+        { "audio": "多久", "options": ["duōjiǔ", "duōjǔ", "duōzhǔ"], "answer": 0, "explain": "jiǔ = j + iou: se nota la o en medio." },
+        { "audio": "对话", "options": ["duìhuà", "dùhuà", "duōhuà"], "answer": 0, "explain": "duì = d + uei." },
+        { "audio": "球", "options": ["qiú", "qú", "qí"], "answer": 0, "explain": "qiú = q + iou, 2.º tono." },
+        { "audio": "回答", "options": ["huídá", "hùdá", "húdá"], "answer": 0, "explain": "huí = h + uei, 2.º tono." },
+        { "audio": "九", "options": ["jiǔ", "jǐ", "jǔ"], "answer": 0, "explain": "九 jiǔ (nueve) frente a 几 jǐ (cuántos)." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["题", "话"],
+      "mnemonics": {
+        "题": "是 (da el sonido) + 页 (cabeza): la «cabeza» de un texto, su título; de ahí «tema, pregunta, ejercicio».",
+        "话": "讠 (palabra) + 舌 (lengua): lo que sale de la lengua, las palabras."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "Cada interrogativo en su hueco: lugar, tiempo y cantidad",
+      "markdown": "La regla de oro sigue igual: **se pregunta en el hueco de la respuesta**.\n\n| Pregunta por… | Palabra | Hueco | Ejemplo |\n|---|---|---|---|\n| lugar | 哪儿 / 哪里 | donde va el lugar | 你去**哪儿**？ → 我去**北京** |\n| momento | 什么时候, 几点 | **Tiempo** (delante del verbo) | 你**什么时候**去？ → 我**明天**去 |\n| cantidad pequeña | 几 + clasificador | Objeto | 你有**几个**朋友？ → 我有**三个**朋友 |\n| cantidad cualquiera | 多少 (+ clasificador) | Objeto | 你有**多少**本书？ → 我有**二十本**书 |\n| duración | 多久 | detrás del verbo | 你要等**多久**？ |\n\n- **几** espera un número pequeño (menos de 10) y **siempre** lleva clasificador; **多少** vale para cualquier número y el clasificador es opcional.\n- **啊** al final suaviza la pregunta (你去哪儿**啊**？); **吗**, en cambio, no se puede usar con interrogativos.",
+      "focus": ["time", "object"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "去", "py": "qù" }, "object": { "zh": "哪儿", "py": "nǎr" } }, "end": "？", "es": "¿Adónde vas?", "esOrder": [{ "text": "¿Adónde", "slot": "object" }, { "text": "vas", "slot": "verb1" }, { "text": "(tú)?", "slot": "subject" }] },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "verb1": { "zh": "去", "py": "qù" }, "object": { "zh": "书店", "py": "shūdiàn" } }, "end": "。", "es": "Voy a la librería." },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "time": { "zh": "什么时候", "py": "shénme shíhou" }, "verb1": { "zh": "回", "py": "huí" }, "object": { "zh": "西班牙", "py": "Xībānyá" } }, "end": "？", "es": "¿Cuándo vuelves a España?", "esOrder": [{ "text": "¿Cuándo", "slot": "time" }, { "text": "vuelves", "slot": "verb1" }, { "text": "(tú)", "slot": "subject" }, { "text": "a España?", "slot": "object" }] },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "time": { "zh": "明年一月", "py": "míngnián yīyuè" }, "verb1": { "zh": "回", "py": "huí" }, "object": { "zh": "西班牙", "py": "Xībānyá" } }, "end": "。", "es": "Vuelvo a España en enero del año que viene." },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "有", "py": "yǒu" }, "object": { "zh": "几个中国朋友", "py": "jǐ ge Zhōngguó péngyou" } }, "end": "？", "es": "¿Cuántos amigos chinos tienes?" },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "verb1": { "zh": "有", "py": "yǒu" }, "object": { "zh": "三个中国朋友", "py": "sān ge Zhōngguó péngyou" } }, "end": "。", "es": "Tengo tres amigos chinos." },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "哪里人", "py": "nǎlǐ rén" } }, "end": "？", "es": "¿De dónde eres (de qué ciudad)?" },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "马德里人", "py": "Mǎdélǐ rén" } }, "end": "。", "es": "Soy de Madrid." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "不", "py": "bù" }, "verb1": { "zh": "知道", "py": "zhīdào" }, "object": { "zh": "他什么时候来", "py": "tā shénme shíhou lái" } }, "end": "。", "es": "No sé cuándo viene." },
+        { "slots": { "subject": { "zh": "小李", "py": "Xiǎo Lǐ" }, "adverb": { "zh": "不", "py": "bù" }, "verb1": { "zh": "知道", "py": "zhīdào" }, "object": { "zh": "他有多少本书", "py": "tā yǒu duōshao běn shū" } }, "end": "。", "es": "Xiao Li no sabe cuántos libros tiene." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你们", "py": "nǐmen" }, "time": { "zh": "几点", "py": "jǐ diǎn" }, "verb1": { "zh": "上课", "py": "shàngkè" } }, "end": "？", "es": "¿A qué hora tenéis clase?" },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "去", "py": "qù" }, "object": { "zh": "哪儿", "py": "nǎr" }, "particle": { "zh": "啊", "py": "a" } }, "end": "？", "es": "¿Adónde vas, eh?" },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "有", "py": "yǒu" }, "object": { "zh": "多少本中文书", "py": "duōshao běn Zhōngwén shū" } }, "end": "？", "es": "¿Cuántos libros en chino tienes?" }
+      ],
+      "mistakes": [
+        { "wrong": "你去什么时候？", "right": "你什么时候去？", "why": "什么时候 va en el hueco del tiempo, delante del verbo, como 明天." },
+        { "wrong": "你去哪儿吗？", "right": "你去哪儿？/ 你去哪儿啊？", "why": "Con 哪儿 no se usa 吗; si quieres suavizar, 啊." },
+        { "wrong": "你有几朋友？", "right": "你有几个朋友？", "why": "几 siempre lleva clasificador." },
+        { "wrong": "哪儿你去？", "right": "你去哪儿？", "why": "La interrogativa no se adelanta: va donde iría el lugar." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Ejercicio de diálogo en clase",
+      "lines": [
+        { "speaker": "王老师", "zh": "今天我们做对话。第一题：雨果，你是哪里人？", "py": "Jīntiān wǒmen zuò duìhuà. Dì-yī tí: Yǔguǒ, nǐ shì nǎlǐ rén?", "es": "Hoy hacemos diálogos. Pregunta 1: Hugo, ¿de dónde eres?" },
+        { "speaker": "雨果", "zh": "我是马德里人。", "py": "Wǒ shì Mǎdélǐ rén.", "es": "Soy de Madrid." },
+        { "speaker": "王老师", "zh": "第二题：大卫，你什么时候回美国？", "py": "Dì-èr tí: Dàwèi, nǐ shénme shíhou huí Měiguó?", "es": "Pregunta 2: David, ¿cuándo vuelves a Estados Unidos?" },
+        { "speaker": "大卫", "zh": "我明年一月回美国。", "py": "Wǒ míngnián yīyuè huí Měiguó.", "es": "Vuelvo a Estados Unidos en enero del año que viene." },
+        { "speaker": "王老师", "zh": "第三题：安娜，你有几个中国朋友？", "py": "Dì-sān tí: Ānnà, nǐ yǒu jǐ ge Zhōngguó péngyou?", "es": "Pregunta 3: Ana, ¿cuántos amigos chinos tienes?" },
+        { "speaker": "安娜", "zh": "我有三个中国朋友：小李、小王和王明。", "py": "Wǒ yǒu sān ge Zhōngguó péngyou: Xiǎo Lǐ, Xiǎo Wáng hé Wáng Míng.", "es": "Tengo tres amigos chinos: Xiao Li, Xiao Wang y Wang Ming." },
+        { "speaker": "王老师", "zh": "第四题：小李，你有多少本书？", "py": "Dì-sì tí: Xiǎo Lǐ, nǐ yǒu duōshao běn shū?", "es": "Pregunta 4: Xiao Li, ¿cuántos libros tienes?" },
+        { "speaker": "小李", "zh": "啊？我有很多书，我不知道有多少！", "py": "A? Wǒ yǒu hěn duō shū, wǒ bù zhīdào yǒu duōshao!", "es": "¿Eh? Tengo muchísimos, ¡no sé cuántos!" },
+        { "speaker": "王老师", "zh": "好。下课以后你们去哪儿啊？", "py": "Hǎo. Xiàkè yǐhòu nǐmen qù nǎr a?", "es": "Bien. ¿Y adónde vais después de clase?" },
+        { "speaker": "雨果", "zh": "我们都去打篮球！", "py": "Wǒmen dōu qù dǎ lánqiú!", "es": "¡Vamos todos a jugar al baloncesto!" }
+      ],
+      "notes": "A 多少本书 se responde con número: 二十本书. Si son muchos y no sabes cuántos, 很多. 以后 (después de) va detrás de la acción: 下课以后 «después de clase»."
+    },
+    { "type": "exercises", "count": 15, "bank": ["g-question-words", "g-numbers", "g-dates-time"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "你" }, "verb1": { "zh": "去" }, "object": { "zh": "哪儿" } }, "end": "？", "es": "¿Adónde vas?" }, "distractors": ["吗"] },
+        { "sentence": { "slots": { "subject": { "zh": "你" }, "time": { "zh": "什么时候" }, "verb1": { "zh": "回" }, "object": { "zh": "西班牙" } }, "end": "？", "es": "¿Cuándo vuelves a España?" } },
+        { "sentence": { "slots": { "subject": { "zh": "你" }, "verb1": { "zh": "有" }, "object": { "zh": "几个中国朋友" } }, "end": "？", "es": "¿Cuántos amigos chinos tienes?" }, "distractors": ["几朋友"] },
+        { "sentence": { "slots": { "subject": { "zh": "你们" }, "time": { "zh": "星期六几点" }, "aux": { "zh": "要" }, "with": { "zh": "跟大卫一起" }, "verb1": { "zh": "去" }, "verb2": { "zh": "打" }, "object": { "zh": "篮球" }, "particle": { "zh": "啊" } }, "end": "？", "es": "¿A qué hora vais a ir a jugar al baloncesto con David el sábado?" }, "distractors": ["吗"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "你是哪里人？", "py": "Nǐ shì nǎlǐ rén?", "es": "¿De dónde eres?" },
+        { "zh": "你什么时候回家？", "py": "Nǐ shénme shíhou huí jiā?", "es": "¿Cuándo vuelves a casa?" },
+        { "zh": "你有多少本中文书？", "py": "Nǐ yǒu duōshao běn Zhōngwén shū?", "es": "¿Cuántos libros en chino tienes?" },
+        { "zh": "我们要等多久？", "py": "Wǒmen yào děng duōjiǔ?", "es": "¿Cuánto tenemos que esperar?" }
+      ],
+      "respond": [
+        { "q": { "zh": "你是哪里人？", "py": "Nǐ shì nǎlǐ rén?", "es": "¿De dónde eres?" }, "model": { "zh": "我是马德里人。", "py": "Wǒ shì Mǎdélǐ rén.", "es": "Soy de Madrid." } },
+        { "q": { "zh": "你什么时候回西班牙？", "py": "Nǐ shénme shíhou huí Xībānyá?", "es": "¿Cuándo vuelves a España?" }, "model": { "zh": "我明年七月回西班牙。", "py": "Wǒ míngnián qīyuè huí Xībānyá.", "es": "Vuelvo a España en julio del año que viene." } },
+        { "q": { "zh": "你们几点上课？", "py": "Nǐmen jǐ diǎn shàngkè?", "es": "¿A qué hora tenéis clase?" }, "model": { "zh": "我们早上八点上课。", "py": "Wǒmen zǎoshang bā diǎn shàngkè.", "es": "Tenemos clase a las ocho de la mañana." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Cola en el cine",
+      "text": "星期六晚上，雨果和安娜去看电影。电影院的人很多。雨果问：“我们要等多久啊？”安娜说：“我不知道。电影是几点的？”雨果说：“八点。现在七点半。”安娜问：“你有几瓶水？”雨果说：“两瓶，一瓶是你的。”",
+      "es": "El sábado por la noche Hugo y Ana van al cine. En el cine hay muchísima gente. Hugo pregunta: «¿Cuánto tenemos que esperar?». Ana dice: «No lo sé. ¿A qué hora es la película?». Hugo dice: «A las ocho. Ahora son las siete y media». Ana pregunta: «¿Cuántas botellas de agua tienes?». Hugo dice: «Dos, una es tuya».",
+      "questions": [
+        { "q": "¿A qué hora es la película?", "options": ["A las ocho", "A las siete y media", "A las siete"], "answer": 0 },
+        { "q": "¿Qué pregunta Hugo con 多久?", "options": ["Cuánto tiempo tienen que esperar", "Cuántas botellas de agua hay", "A qué hora es la película"], "answer": 0 },
+        { "q": "¿Por qué Ana usa 几瓶 y no 多少?", "options": ["Espera un número pequeño", "Pregunta por la hora", "Pregunta por el lugar"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

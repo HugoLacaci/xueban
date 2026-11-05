@@ -1,0 +1,138 @@
+{
+  "id": "a1-u01-l4",
+  "title": "¿Cómo te llamas? 姓, 叫, 什么 y 谁",
+  "zh": "你叫什么名字？",
+  "goal": "Preguntar y decir el nombre y el apellido (姓 / 叫), preguntar quién es alguien (谁) y presentar a otros.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "姓", "pinyin": "xìng", "es": "apellidarse; apellido", "note": "Solo para el apellido: 我姓王." },
+    { "hanzi": "叫", "pinyin": "jiào", "es": "llamarse; llamar", "note": "Para el nombre completo o el nombre de pila: 我叫王明, 我叫雨果." },
+    { "hanzi": "什么", "pinyin": "shénme", "es": "qué, cuál", "note": "么 va en tono neutro." },
+    { "hanzi": "名字", "pinyin": "míngzi", "es": "nombre", "note": "字 va en tono neutro en esta palabra." },
+    { "hanzi": "请问", "pinyin": "qǐngwèn", "es": "disculpe, una pregunta…", "note": "Para empezar a preguntar algo a alguien, sobre todo a un desconocido." },
+    { "hanzi": "贵姓", "pinyin": "guìxìng", "es": "(su) apellido, muy cortés", "note": "Solo en la pregunta 您贵姓？. Para contestar, nunca 贵: 我姓张." },
+    { "hanzi": "介绍", "pinyin": "jièshào", "es": "presentar (a alguien)" },
+    { "hanzi": "一下", "pinyin": "yíxià", "es": "un momento, un poco", "note": "Suaviza el verbo: 我介绍一下 = os presento (un momento). Más en la unidad 12." },
+    { "hanzi": "王", "pinyin": "Wáng", "es": "Wang (apellido)", "note": "También significa «rey»." },
+    { "hanzi": "李", "pinyin": "Lǐ", "es": "Li (apellido)", "note": "También significa «ciruela»." },
+    { "hanzi": "张", "pinyin": "Zhāng", "es": "Zhang (apellido)", "note": "Wang, Li y Zhang son los tres apellidos más comunes de China." }
+  ],
+  "extraVocab": ["贵姓"],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "你叫什么名字？", "py": "Nǐ jiào shénme míngzi?", "es": "¿Cómo te llamas?" },
+        { "zh": "我姓李，叫李明。", "py": "Wǒ xìng Lǐ, jiào Lǐ Míng.", "es": "Me apellido Li y me llamo Li Ming." },
+        { "zh": "请问，您贵姓？", "py": "Qǐngwèn, nín guìxìng?", "es": "Disculpe, ¿cuál es su apellido?" },
+        { "zh": "他是谁？", "py": "Tā shì shéi?", "es": "¿Quién es él?" }
+      ]
+    },
+    { "type": "vocab", "title": "Nombres y apellidos", "words": ["姓", "叫", "什么", "名字", "请问", "贵姓", "介绍", "一下", "王", "李", "张"] },
+    {
+      "type": "phonetics-drill",
+      "title": "-n o -ng: 姓, 名, 王, 张",
+      "markdown": "Muchos nombres chinos terminan en nasal, y **-n** y **-ng** cambian el significado:\n\n- **-n**: la punta de la lengua toca detrás de los dientes de arriba, como la «n» de *pan*.\n- **-ng**: la lengua se queda abajo y la parte de atrás cierra contra el paladar blando, como la «n» de *tengo* (sin decir la «g»).\n\n姓 **xìng** (apellido) frente a 信 *xìn* (carta); 名 **míng** frente a 民 *mín*; 王 **Wáng** frente a 完 *wán*. Truco: en -ng la boca se queda **abierta** al terminar; en -n se cierra con la lengua.\n\nY 什么 **shénme**: *shén* con -n y luego un *me* neutro, muy corto.",
+      "items": [
+        { "audio": "姓", "options": ["xìng", "xìn", "xīng"], "answer": 0, "explain": "4.º tono y final -ng." },
+        { "audio": "名字", "options": ["míngzi", "mínzi", "mǐngzì"], "answer": 0, "explain": "míng con -ng; 字 en tono neutro." },
+        { "audio": "王", "options": ["Wáng", "Wán", "Wǎng"], "answer": 0, "explain": "2.º tono (sube) y -ng." },
+        { "audio": "张", "options": ["Zhāng", "Zhān", "Zāng"], "answer": 0, "explain": "zh con la lengua hacia atrás, primer tono, -ng." },
+        { "audio": "什么", "options": ["shénme", "shéngme", "sénme"], "answer": 0, "explain": "shén acaba en -n; me es neutro." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["姓", "名"],
+      "mnemonics": {
+        "姓": "女 (mujer) + 生 (nacer): lo que te da la mujer de la que naces. Los apellidos más antiguos de China (姜, 姬…) llevan 女.",
+        "名": "夕 (anochecer) + 口 (boca): de noche no se ve la cara, así que dices tu nombre en voz alta."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "什么 y 谁: la pregunta se queda en el hueco de la respuesta",
+      "markdown": "En chino, las palabras interrogativas **no se mueven al principio** como en español («¿*Cómo* te llamas?», «¿*Quién* es él?»). Se ponen **en el mismo sitio donde irá la respuesta**:\n\n- 你叫**什么**名字？ → 我叫**雨果**。\n- 他是**谁**？ → 他是**大卫**。\n\nPor eso, para responder basta con **cambiar la palabra interrogativa por la respuesta**. Y como 什么 / 谁 ya preguntan, **no se añade 吗**.\n\n**姓** sirve solo para el apellido (我姓王) y **叫** para el nombre completo o el de pila (我叫王明, 我叫雨果). Para preguntar el apellido con cortesía: **您贵姓？** — y se responde sin 贵: 我姓张.",
+      "focus": ["object"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "verb1": { "zh": "姓", "py": "xìng" }, "object": { "zh": "王", "py": "Wáng" } }, "end": "。", "es": "Me apellido Wang.", "esOrder": [{ "text": "Me apellido", "slot": "verb1" }, { "text": "Wang", "slot": "object" }] },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "verb1": { "zh": "叫", "py": "jiào" }, "object": { "zh": "雨果", "py": "Yǔguǒ" } }, "end": "。", "es": "Me llamo Hugo." },
+        { "slots": { "subject": { "zh": "她", "py": "tā" }, "verb1": { "zh": "叫", "py": "jiào" }, "object": { "zh": "安娜", "py": "Ānnà" } }, "end": "。", "es": "Ella se llama Anna." },
+        { "slots": { "subject": { "zh": "他", "py": "tā" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "大卫", "py": "Dàwèi" } }, "end": "。", "es": "Él es David." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "不", "py": "bú" }, "verb1": { "zh": "姓", "py": "xìng" }, "object": { "zh": "张", "py": "Zhāng" } }, "end": "。", "es": "No me apellido Zhang." },
+        { "slots": { "subject": { "zh": "他", "py": "tā" }, "adverb": { "zh": "不", "py": "bú" }, "verb1": { "zh": "叫", "py": "jiào" }, "object": { "zh": "大卫", "py": "Dàwèi" } }, "end": "。", "es": "Él no se llama David." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "叫", "py": "jiào" }, "object": { "zh": "什么名字", "py": "shénme míngzi" } }, "end": "？", "es": "¿Cómo te llamas? (lit. «tú te llamas qué nombre»)", "esOrder": [{ "text": "¿Cómo", "slot": "object" }, { "text": "te llamas?", "slot": "verb1" }] },
+        { "slots": { "subject": { "zh": "他", "py": "tā" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "谁", "py": "shéi" } }, "end": "？", "es": "¿Quién es él?", "esOrder": [{ "text": "¿Quién", "slot": "object" }, { "text": "es", "slot": "verb1" }, { "text": "él?", "slot": "subject" }] },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "姓", "py": "xìng" }, "object": { "zh": "什么", "py": "shénme" } }, "end": "？", "es": "¿Cómo te apellidas?" }
+      ],
+      "mistakes": [
+        { "wrong": "什么你叫名字？", "right": "你叫什么名字？", "why": "什么 no va al principio: se queda donde irá la respuesta (我叫雨果)." },
+        { "wrong": "你叫什么名字吗？", "right": "你叫什么名字？", "why": "什么 ya hace la pregunta: no se le añade 吗." },
+        { "wrong": "我贵姓张。", "right": "我姓张。", "why": "贵 es un halago para el apellido del otro; del tuyo no se dice." },
+        { "wrong": "我姓雨果。", "right": "我叫雨果。", "why": "姓 es solo el apellido; para el nombre se usa 叫." }
+      ]
+    },
+    {
+      "type": "explain",
+      "title": "Cómo funcionan los nombres chinos",
+      "markdown": "- **El apellido va primero**: 王明 = Wang (apellido) + Ming (nombre). Casi todos los apellidos tienen una sílaba, y el nombre, una o dos.\n- **Los cargos y tratamientos van detrás**: 王老师 (la profesora Wang), 李先生 (el señor Li), 张小姐. Nunca ~~老师王~~.\n- **小 + apellido** (小李, 小王) es la forma cariñosa de llamar a alguien más joven o a un compañero; entre amigos es muy normal.\n- Los extranjeros suelen tener un **nombre chino**: Hugo → **雨果** (Yǔguǒ), Anna → **安娜**, David → **大卫**. Si alguien te pregunta 你姓什么？, puedes decir tu apellido español o contestar 我叫雨果."
+    },
+    {
+      "type": "dialogue",
+      "title": "En la residencia",
+      "lines": [
+        { "speaker": "雨果", "zh": "请问，你是小李吗？", "py": "Qǐngwèn, nǐ shì Xiǎo Lǐ ma?", "es": "Perdona, ¿eres Xiao Li?" },
+        { "speaker": "小李", "zh": "对，我姓李，叫李明。你叫什么名字？", "py": "Duì, wǒ xìng Lǐ, jiào Lǐ Míng. Nǐ jiào shénme míngzi?", "es": "Sí, me apellido Li y me llamo Li Ming. ¿Cómo te llamas?" },
+        { "speaker": "雨果", "zh": "我叫雨果。他叫大卫。", "py": "Wǒ jiào Yǔguǒ. Tā jiào Dàwèi.", "es": "Me llamo Hugo. Él se llama David." },
+        { "speaker": "小李", "zh": "认识你们很高兴！那是谁？", "py": "Rènshi nǐmen hěn gāoxìng! Nà shì shéi?", "es": "¡Encantado de conoceros! ¿Quién es ese?" },
+        { "speaker": "雨果", "zh": "我不认识他。请问，您贵姓？", "py": "Wǒ bú rènshi tā. Qǐngwèn, nín guìxìng?", "es": "No lo conozco. Disculpe, ¿cuál es su apellido?" },
+        { "speaker": "张先生", "zh": "我姓张。你们是学生吗？", "py": "Wǒ xìng Zhāng. Nǐmen shì xuésheng ma?", "es": "Me apellido Zhang. ¿Sois estudiantes?" },
+        { "speaker": "雨果", "zh": "是。张先生，我介绍一下：这是大卫，这是小李。", "py": "Shì. Zhāng xiānsheng, wǒ jièshào yíxià: zhè shì Dàwèi, zhè shì Xiǎo Lǐ.", "es": "Sí. Señor Zhang, le presento: este es David y este es Xiao Li." },
+        { "speaker": "张先生", "zh": "你们好！", "py": "Nǐmen hǎo!", "es": "¡Hola a todos!" }
+      ],
+      "notes": "您贵姓 es la forma más educada de preguntar a un adulto desconocido; entre estudiantes basta con 你叫什么名字？. Al presentar a varias personas, 我介绍一下 + 这是…，这是… es la fórmula de siempre."
+    },
+    { "type": "exercises", "count": 15, "bank": ["g-question-words", "g-shi", "u01"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "你" }, "verb1": { "zh": "叫" }, "object": { "zh": "什么名字" } }, "end": "？", "es": "¿Cómo te llamas?" }, "distractors": ["吗"] },
+        { "sentence": { "slots": { "subject": { "zh": "那" }, "verb1": { "zh": "是" }, "object": { "zh": "谁" } }, "end": "？", "es": "¿Quién es ese?" }, "distractors": ["吗", "什么"] },
+        { "sentence": { "slots": { "subject": { "zh": "我" }, "adverb": { "zh": "不" }, "verb1": { "zh": "姓" }, "object": { "zh": "王" } }, "end": "。", "es": "No me apellido Wang." }, "distractors": ["贵"] },
+        { "sentence": { "slots": { "subject": { "zh": "张先生" }, "adverb": { "zh": "也" }, "verb1": { "zh": "认识" }, "object": { "zh": "王老师" }, "particle": { "zh": "吗" } }, "end": "？", "es": "¿El señor Zhang también conoce a la profesora Wang?" }, "distractors": ["呢"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "你叫什么名字？", "py": "Nǐ jiào shénme míngzi?", "es": "¿Cómo te llamas?" },
+        { "zh": "我叫雨果。", "py": "Wǒ jiào Yǔguǒ.", "es": "Me llamo Hugo." },
+        { "zh": "请问，您贵姓？", "py": "Qǐngwèn, nín guìxìng?", "es": "Disculpe, ¿cuál es su apellido?" },
+        { "zh": "我介绍一下：这是安娜。", "py": "Wǒ jièshào yíxià: zhè shì Ānnà.", "es": "Os presento: esta es Anna." }
+      ],
+      "respond": [
+        { "q": { "zh": "你叫什么名字？", "py": "Nǐ jiào shénme míngzi?", "es": "¿Cómo te llamas?" }, "model": { "zh": "我叫雨果。", "py": "Wǒ jiào Yǔguǒ.", "es": "Me llamo Hugo." } },
+        { "q": { "zh": "他是谁？", "py": "Tā shì shéi?", "es": "¿Quién es él?" }, "model": { "zh": "他是大卫，他是美国人。", "py": "Tā shì Dàwèi, tā shì Měiguó rén.", "es": "Es David, es estadounidense." } },
+        { "q": { "zh": "您贵姓？", "py": "Nín guìxìng?", "es": "¿Cuál es su apellido?" }, "model": { "zh": "我姓张，叫张明。", "py": "Wǒ xìng Zhāng, jiào Zhāng Míng.", "es": "Me apellido Zhang; me llamo Zhang Ming." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Me presento",
+      "text": "大家好！我介绍一下。我姓李，叫李明，我是中国人，大家叫我小李。他是谁？他叫大卫，他是美国人。她呢？她叫安娜，她是西班牙人。我们是同学。",
+      "es": "¡Hola a todos! Me presento. Me apellido Li y me llamo Li Ming; soy chino y todos me llaman Xiao Li. ¿Quién es él? Se llama David y es estadounidense. ¿Y ella? Se llama Anna y es española. Somos compañeros de clase.",
+      "questions": [
+        { "q": "¿Cuál es el apellido de Xiao Li?", "options": ["李", "明", "王"], "answer": 0 },
+        { "q": "¿Cómo se llama el estudiante estadounidense?", "options": ["大卫", "李明", "安娜"], "answer": 0 },
+        { "q": "¿Por qué lo llaman 小李?", "options": ["Es la forma cariñosa: 小 + apellido", "Porque es bajito", "Porque es su nombre de pila"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

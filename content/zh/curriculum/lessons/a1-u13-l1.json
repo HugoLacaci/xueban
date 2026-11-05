@@ -1,0 +1,136 @@
+{
+  "id": "a1-u13-l1",
+  "title": "La regla de oro: 什么, 谁, 哪个",
+  "zh": "你喜欢什么？",
+  "goal": "Preguntar qué, quién y cuál (什么, 谁, 哪个, 哪些, 干什么, 什么样) dejando la palabra interrogativa en el hueco de la respuesta.",
+  "minutes": 14,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "什么", "pinyin": "shénme", "es": "qué (repaso)" },
+    { "hanzi": "谁", "pinyin": "shéi", "es": "quién (repaso)", "note": "También se oye shuí." },
+    { "hanzi": "哪", "pinyin": "nǎ", "es": "qué, cuál (+ clasificador)", "note": "Siempre con número o clasificador detrás: 哪个, 哪国, 哪些." },
+    { "hanzi": "哪个", "pinyin": "nǎge", "es": "cuál", "note": "Respuesta: 这个 / 那个. Se oye también něige." },
+    { "hanzi": "哪些", "pinyin": "nǎxiē", "es": "cuáles (plural) (repaso)" },
+    { "hanzi": "干", "pinyin": "gàn", "es": "hacer (coloquial)" },
+    { "hanzi": "干什么", "pinyin": "gàn shénme", "es": "¿qué haces?, ¿para qué?", "note": "Coloquial; igual que 做什么." },
+    { "hanzi": "什么样", "pinyin": "shénmeyàng", "es": "¿de qué tipo?, ¿cómo es?", "note": "什么样的 + nombre: 什么样的电影 «qué tipo de películas»." },
+    { "hanzi": "问题", "pinyin": "wèntí", "es": "pregunta; problema", "note": "我可以问一个问题吗？ «¿Puedo hacer una pregunta?»" },
+    { "hanzi": "句子", "pinyin": "jùzi", "es": "frase, oración" },
+    { "hanzi": "句", "pinyin": "jù", "es": "(clasificador de frases)", "note": "一句话 «una frase, unas palabras»." }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "你周末干什么？", "py": "Nǐ zhōumò gàn shénme?", "es": "¿Qué haces los fines de semana?" },
+        { "zh": "谁会说英语？", "py": "Shéi huì shuō Yīngyǔ?", "es": "¿Quién sabe hablar inglés?" },
+        { "zh": "你喜欢哪个电影？", "py": "Nǐ xǐhuan nǎge diànyǐng?", "es": "¿Qué película te gusta (de estas)?" }
+      ]
+    },
+    { "type": "vocab", "title": "Qué, quién, cuál", "words": ["什么", "谁", "哪", "哪个", "哪些", "干", "干什么", "什么样", "问题", "句子", "句"] },
+    {
+      "type": "phonetics-drill",
+      "title": "sh, zh, ch frente a s, z, c: 什么, 谁, 句子",
+      "markdown": "Las preguntas están llenas de **sh**: 什么 **shén**me, 谁 **shéi**. Repasa la pareja:\n\n- **s, z, c**: punta de la lengua detrás de los dientes de abajo, como una *s* española: 四 sì, 子 zi, 菜 cài.\n- **sh, zh, ch**: punta de la lengua **doblada hacia atrás**, hacia el paladar: 是 shì, 中 zhōng, 吃 chī.\n\n**z** suena como «ds» sin voz y **c** como «ts» con un golpe de aire. 句子 jù**zi**: la *zi* final, corta y en tono neutro.",
+      "items": [
+        { "audio": "什么", "options": ["shénme", "sénme", "chénme"], "answer": 0, "explain": "sh con la lengua doblada hacia atrás." },
+        { "audio": "谁", "options": ["shéi", "séi", "zhéi"], "answer": 0, "explain": "谁 shéi (o shuí)." },
+        { "audio": "句子", "options": ["jùzi", "jùzhi", "jùci"], "answer": 0, "explain": "子 zi: z sin aire, lengua adelantada; tono neutro." },
+        { "audio": "菜", "options": ["cài", "chài", "zài"], "answer": 0, "explain": "c = «ts» con aire, lengua adelantada." },
+        { "audio": "中", "options": ["zōng", "zhōng", "chōng"], "answer": 1, "explain": "zh: lengua hacia atrás, sin aire." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["问", "谁"],
+      "mnemonics": {
+        "问": "门 (puerta) + 口 (boca): una boca que se asoma a la puerta para preguntar.",
+        "谁": "讠 (palabra) + 隹 (pájaro de cola corta; da el sonido): «¿quién habla ahí?»."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "La regla de oro: la pregunta va en el hueco de la respuesta",
+      "markdown": "En español movemos la palabra interrogativa al principio: «¿**Qué** te gusta?». En chino **no se mueve nada**: se escribe la respuesta y se cambia la parte desconocida por la palabra interrogativa, **en el mismo hueco**.\n\n| Respuesta | Pregunta | Hueco |\n|---|---|---|\n| 我喜欢**音乐**。 | 你喜欢**什么**？ | Objeto |\n| **安娜**会说英语。 | **谁**会说英语？ | Sujeto |\n| 我喜欢**这个**电影。 | 你喜欢**哪个**电影？ | Objeto |\n| 我周末**打篮球**。 | 你周末**干什么**？ | Verbo + objeto |\n\nMira los pares de abajo: cada pregunta va justo encima de su respuesta y la palabra interrogativa ocupa la misma columna.\n\n- **哪** nunca va solo: 哪 + clasificador (哪**个**, 哪**本**) o 哪**些** (plural), 哪**国**.\n- **什么样的 + nombre** pregunta por el tipo: 什么样的电影？ → 有意思的电影.\n- ⚠️ Una pregunta con palabra interrogativa **no lleva 吗**.",
+      "focus": ["subject", "object"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "喜欢", "py": "xǐhuan" }, "object": { "zh": "什么", "py": "shénme" } }, "end": "？", "es": "¿Qué te gusta?", "esOrder": [{ "text": "¿Qué", "slot": "object" }, { "text": "te", "slot": "subject" }, { "text": "gusta?", "slot": "verb1" }] },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "verb1": { "zh": "喜欢", "py": "xǐhuan" }, "object": { "zh": "音乐", "py": "yīnyuè" } }, "end": "。", "es": "Me gusta la música." },
+        { "slots": { "subject": { "zh": "谁", "py": "shéi" }, "aux": { "zh": "会", "py": "huì" }, "verb1": { "zh": "说", "py": "shuō" }, "object": { "zh": "英语", "py": "Yīngyǔ" } }, "end": "？", "es": "¿Quién sabe hablar inglés?" },
+        { "slots": { "subject": { "zh": "安娜", "py": "Ānnà" }, "aux": { "zh": "会", "py": "huì" }, "verb1": { "zh": "说", "py": "shuō" }, "object": { "zh": "英语", "py": "Yīngyǔ" } }, "end": "。", "es": "Ana sabe hablar inglés." },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "喜欢", "py": "xǐhuan" }, "object": { "zh": "哪个电影", "py": "nǎge diànyǐng" } }, "end": "？", "es": "¿Qué película te gusta (de estas)?" },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "verb1": { "zh": "喜欢", "py": "xǐhuan" }, "object": { "zh": "这个电影", "py": "zhège diànyǐng" } }, "end": "。", "es": "Me gusta esta película." },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "time": { "zh": "周末", "py": "zhōumò" }, "verb1": { "zh": "干", "py": "gàn" }, "object": { "zh": "什么", "py": "shénme" } }, "end": "？", "es": "¿Qué haces los fines de semana?", "esOrder": [{ "text": "¿Qué", "slot": "object" }, { "text": "haces", "slot": "verb1" }, { "text": "(tú)", "slot": "subject" }, { "text": "los fines de semana?", "slot": "time" }] },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "time": { "zh": "周末", "py": "zhōumò" }, "verb1": { "zh": "打", "py": "dǎ" }, "object": { "zh": "篮球", "py": "lánqiú" } }, "end": "。", "es": "Los fines de semana juego al baloncesto." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "不", "py": "bù" }, "verb1": { "zh": "知道", "py": "zhīdào" }, "object": { "zh": "他是谁", "py": "tā shì shéi" } }, "end": "。", "es": "No sé quién es él." },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "不", "py": "bù" }, "verb1": { "zh": "喜欢", "py": "xǐhuan" }, "object": { "zh": "这些问题", "py": "zhèxiē wèntí" } }, "end": "。", "es": "No me gustan estas preguntas." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "喜欢", "py": "xǐhuan" }, "object": { "zh": "什么样的电影", "py": "shénmeyàng de diànyǐng" } }, "end": "？", "es": "¿Qué tipo de películas te gustan?" },
+        { "slots": { "subject": { "zh": "这", "py": "zhè" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "谁的书", "py": "shéi de shū" } }, "end": "？", "es": "¿De quién es este libro?" },
+        { "slots": { "subject": { "zh": "哪些", "py": "nǎxiē" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "你的书", "py": "nǐ de shū" } }, "end": "？", "es": "¿Cuáles son tus libros?" }
+      ],
+      "mistakes": [
+        { "wrong": "什么你喜欢？", "right": "你喜欢什么？", "why": "No se mueve la interrogativa al principio: ocupa el sitio de la respuesta (objeto)." },
+        { "wrong": "你是谁吗？", "right": "你是谁？", "why": "Si ya hay palabra interrogativa (谁), no se añade 吗." },
+        { "wrong": "你喜欢哪电影？", "right": "你喜欢哪个电影？", "why": "哪 necesita clasificador: 哪个, 哪本, 哪些." },
+        { "wrong": "你干什么周末？", "right": "你周末干什么？", "why": "El tiempo va delante del verbo, en la pregunta igual que en la respuesta." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Preguntas en clase",
+      "lines": [
+        { "speaker": "王老师", "zh": "大家好！今天我问，你们回答。雨果，你周末干什么？", "py": "Dàjiā hǎo! Jīntiān wǒ wèn, nǐmen huídá. Yǔguǒ, nǐ zhōumò gàn shénme?", "es": "¡Hola a todos! Hoy pregunto yo y vosotros contestáis. Hugo, ¿qué haces los fines de semana?" },
+        { "speaker": "雨果", "zh": "我周末打篮球。", "py": "Wǒ zhōumò dǎ lánqiú.", "es": "Los fines de semana juego al baloncesto." },
+        { "speaker": "王老师", "zh": "你跟谁一起打篮球？", "py": "Nǐ gēn shéi yìqǐ dǎ lánqiú?", "es": "¿Con quién juegas al baloncesto?" },
+        { "speaker": "雨果", "zh": "我跟大卫一起打。", "py": "Wǒ gēn Dàwèi yìqǐ dǎ.", "es": "Juego con David." },
+        { "speaker": "王老师", "zh": "安娜，你喜欢什么样的电影？", "py": "Ānnà, nǐ xǐhuan shénmeyàng de diànyǐng?", "es": "Ana, ¿qué tipo de películas te gustan?" },
+        { "speaker": "安娜", "zh": "我喜欢有意思的电影。", "py": "Wǒ xǐhuan yǒu yìsi de diànyǐng.", "es": "Me gustan las películas interesantes." },
+        { "speaker": "王老师", "zh": "哪个中国电影最有意思？", "py": "Nǎge Zhōngguó diànyǐng zuì yǒu yìsi?", "es": "¿Qué película china es la más interesante?" },
+        { "speaker": "安娜", "zh": "这个问题很难！我不知道。", "py": "Zhège wèntí hěn nán! Wǒ bù zhīdào.", "es": "¡Qué pregunta tan difícil! No lo sé." },
+        { "speaker": "小李", "zh": "老师，我可以问一个问题吗？这个句子是什么意思？", "py": "Lǎoshī, wǒ kěyǐ wèn yí ge wèntí ma? Zhège jùzi shì shénme yìsi?", "es": "Profesora, ¿puedo hacer una pregunta? ¿Qué significa esta frase?" }
+      ],
+      "notes": "Fíjate en 你跟谁一起打篮球？ → 我跟大卫一起打: 谁 está en el hueco «con quién», justo donde va 大卫. 我可以问一个问题吗 lleva 吗 porque no tiene palabra interrogativa: la respuesta es sí o no."
+    },
+    { "type": "exercises", "count": 15, "bank": ["g-question-words", "g-demonstratives", "g-ma"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "你" }, "verb1": { "zh": "喜欢" }, "object": { "zh": "什么" } }, "end": "？", "es": "¿Qué te gusta?" }, "distractors": ["吗"] },
+        { "sentence": { "slots": { "subject": { "zh": "谁" }, "aux": { "zh": "会" }, "verb1": { "zh": "唱" }, "object": { "zh": "中国歌" } }, "end": "？", "es": "¿Quién sabe cantar canciones chinas?" } },
+        { "sentence": { "slots": { "subject": { "zh": "你" }, "time": { "zh": "周末" }, "verb1": { "zh": "干" }, "object": { "zh": "什么" } }, "end": "？", "es": "¿Qué haces los fines de semana?" }, "distractors": ["吗"] },
+        { "sentence": { "slots": { "subject": { "zh": "你" }, "time": { "zh": "星期六晚上" }, "aux": { "zh": "想" }, "with": { "zh": "跟谁一起" }, "verb1": { "zh": "去电影院" }, "verb2": { "zh": "看" }, "object": { "zh": "电影" } }, "end": "？", "es": "¿Con quién quieres ir al cine el sábado por la noche?" }, "distractors": ["吗", "什么"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "你喜欢什么？", "py": "Nǐ xǐhuan shénme?", "es": "¿Qué te gusta?" },
+        { "zh": "谁会说英语？", "py": "Shéi huì shuō Yīngyǔ?", "es": "¿Quién sabe hablar inglés?" },
+        { "zh": "你周末干什么？", "py": "Nǐ zhōumò gàn shénme?", "es": "¿Qué haces los fines de semana?" },
+        { "zh": "这个句子是什么意思？", "py": "Zhège jùzi shì shénme yìsi?", "es": "¿Qué significa esta frase?" }
+      ],
+      "respond": [
+        { "q": { "zh": "你喜欢什么样的电影？", "py": "Nǐ xǐhuan shénmeyàng de diànyǐng?", "es": "¿Qué tipo de películas te gustan?" }, "model": { "zh": "我喜欢有意思的电影。", "py": "Wǒ xǐhuan yǒu yìsi de diànyǐng.", "es": "Me gustan las películas interesantes." } },
+        { "q": { "zh": "你周末干什么？", "py": "Nǐ zhōumò gàn shénme?", "es": "¿Qué haces los fines de semana?" }, "model": { "zh": "我周末看电影，也打篮球。", "py": "Wǒ zhōumò kàn diànyǐng, yě dǎ lánqiú.", "es": "Los fines de semana veo películas y también juego al baloncesto." } },
+        { "q": { "zh": "谁是你的汉语老师？", "py": "Shéi shì nǐ de Hànyǔ lǎoshī?", "es": "¿Quién es tu profesor de chino?" }, "model": { "zh": "王老师是我的汉语老师。", "py": "Wáng lǎoshī shì wǒ de Hànyǔ lǎoshī.", "es": "La profesora Wang es mi profesora de chino." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "La encuesta de la profesora Wang",
+      "text": "王老师有五个问题：你叫什么名字？你是哪国人？你喜欢什么样的音乐？你周末干什么？谁是你的中国朋友？雨果说：“我叫雨果，我是西班牙人。我喜欢好听的中国歌。我周末打篮球。小李是我的中国朋友。”",
+      "es": "La profesora Wang tiene cinco preguntas: ¿Cómo te llamas? ¿De qué país eres? ¿Qué tipo de música te gusta? ¿Qué haces los fines de semana? ¿Quién es tu amigo chino? Hugo dice: «Me llamo Hugo y soy español. Me gustan las canciones chinas bonitas. Los fines de semana juego al baloncesto. Xiao Li es mi amigo chino».",
+      "questions": [
+        { "q": "¿Cuántas preguntas tiene la profesora?", "options": ["Cinco", "Cuatro", "Seis"], "answer": 0 },
+        { "q": "¿Qué responde Hugo a 你周末干什么？", "options": ["我周末打篮球。", "我是西班牙人。", "我叫雨果。"], "answer": 0 },
+        { "q": "En 谁是你的中国朋友？, ¿qué palabra de la respuesta ocupa el lugar de 谁?", "options": ["小李", "朋友", "中国"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

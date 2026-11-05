@@ -1,0 +1,133 @@
+{
+  "unitId": "a1-u20",
+  "scenarios": [
+    {
+      "id": "a1-u20-call-message",
+      "title": "Llamar a casa de Xiao Li y dejar recado",
+      "zh": "喂，请问小李在吗？",
+      "level": 1,
+      "setting": "El móvil de Xiao Li está apagado, así que Hugo llama al fijo de casa de sus padres. Contesta su madre. Tú (la app) eres la madre de Xiao Li.",
+      "role": "madre de Xiao Li",
+      "roleZh": "小李的妈妈",
+      "voice": "f",
+      "goals": ["Empezar la llamada con 喂 y preguntar por Xiao Li", "Presentarte", "Dejar un recado con 给 + persona", "Dar tu número de móvil con 幺"],
+      "vocab": ["喂", "在", "给", "打电话", "手机", "关机", "号码", "幺"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "喂？", "py": "Wéi?", "es": "¿Sí?" },
+          "user": [
+            { "zh": "喂，您好！请问，小李在吗？", "py": "Wéi, nín hǎo! Qǐngwèn, Xiǎo Lǐ zài ma?", "es": "¡Hola, buenas! Perdone, ¿está Xiao Li?", "keywords": ["喂", "在吗"], "next": "n2", "goal": 0 },
+            { "zh": "喂，阿姨好！小李在家吗？", "py": "Wéi, āyí hǎo! Xiǎo Lǐ zài jiā ma?", "es": "¡Hola, señora! ¿Está Xiao Li en casa?", "keywords": ["阿姨", "在家"], "next": "n2", "goal": 0 }
+          ],
+          "hint": "喂 + saludo + …在吗？ A la madre de un amigo se la llama 阿姨."
+        },
+        "n2": {
+          "npc": { "zh": "他不在家。你是谁？", "py": "Tā bú zài jiā. Nǐ shì shéi?", "es": "No está en casa. ¿Quién eres?" },
+          "user": [
+            { "zh": "我是雨果，小李的同学。", "py": "Wǒ shì Yǔguǒ, Xiǎo Lǐ de tóngxué.", "es": "Soy Hugo, compañero de Xiao Li.", "keywords": ["我是", "同学"], "next": "n3", "goal": 1 },
+            { "zh": "我叫雨果，是西班牙人，我跟小李住在一个宿舍。", "py": "Wǒ jiào Yǔguǒ, shì Xībānyá rén, wǒ gēn Xiǎo Lǐ zhù zài yí ge sùshè.", "es": "Me llamo Hugo, soy español y vivo en la misma residencia que Xiao Li.", "keywords": ["雨果", "宿舍"], "next": "n3", "goal": 1 }
+          ],
+          "hint": "Preséntate: 我是… / 我叫…"
+        },
+        "n3": {
+          "npc": { "zh": "雨果你好！小李在外边，他的手机关机了吗？", "py": "Yǔguǒ nǐ hǎo! Xiǎo Lǐ zài wàibian, tā de shǒujī guānjī le ma?", "es": "¡Hola, Hugo! Xiao Li ha salido. ¿Tiene el móvil apagado?" },
+          "user": [
+            { "zh": "对，我给他打电话，他的手机关机了。", "py": "Duì, wǒ gěi tā dǎ diànhuà, tā de shǒujī guānjī le.", "es": "Sí, le he llamado y lo tiene apagado.", "keywords": ["给他打电话", "关机"], "next": "n4", "goal": 2 },
+            { "zh": "他的手机没电了吧。我给他发了微信，他没回。", "py": "Tā de shǒujī méi diàn le ba. Wǒ gěi tā fā le Wēixìn, tā méi huí.", "es": "Se habrá quedado sin batería. Le he mandado un WeChat y no ha contestado.", "keywords": ["没电了", "发了微信"], "next": "n4", "goal": 2 }
+          ],
+          "hint": "给 + persona + 打电话 / 发微信. 关机了, 没电了: el 了 del cambio."
+        },
+        "n4": {
+          "npc": { "zh": "他回来了，我告诉他。你有什么事？", "py": "Tā huílai le, wǒ gàosu tā. Nǐ yǒu shénme shì?", "es": "Cuando vuelva se lo digo. ¿Qué querías?" },
+          "user": [
+            { "zh": "明天上午我们有考试，请他给我打电话。", "py": "Míngtiān shàngwǔ wǒmen yǒu kǎoshì, qǐng tā gěi wǒ dǎ diànhuà.", "es": "Mañana por la mañana tenemos examen: que me llame, por favor.", "keywords": ["考试", "给我打电话"], "next": "n5", "goal": 2 },
+            { "zh": "请他晚上给我发微信，好吗？", "py": "Qǐng tā wǎnshang gěi wǒ fā Wēixìn, hǎo ma?", "es": "¿Le puede decir que me mande un WeChat esta noche?", "keywords": ["给我发微信"], "next": "n5", "goal": 2 }
+          ],
+          "hint": "Pide el recado con 请他 + 给我 + verbo."
+        },
+        "n5": {
+          "npc": { "zh": "好。你的手机号码是多少？", "py": "Hǎo. Nǐ de shǒujī hàomǎ shì duōshao?", "es": "Muy bien. ¿Cuál es tu número de móvil?" },
+          "user": [
+            { "zh": "幺三九，二六八七，五四幺零。", "py": "Yāo sān jiǔ, èr liù bā qī, wǔ sì yāo líng.", "es": "1-3-9, 2-6-8-7, 5-4-1-0.", "keywords": ["幺三九"], "next": "n6", "goal": 3 },
+            { "zh": "幺八六，三二幺七，零九五五。", "py": "Yāo bā liù, sān èr yāo qī, líng jiǔ wǔ wǔ.", "es": "1-8-6, 3-2-1-7, 0-9-5-5.", "keywords": ["幺八六"], "next": "n6", "goal": 3 }
+          ],
+          "hint": "Por grupos (3 + 4 + 4) y el 1 como 幺 yāo."
+        },
+        "n6": {
+          "npc": { "zh": "好，我记住了。再见！", "py": "Hǎo, wǒ jìzhù le. Zàijiàn!", "es": "Vale, apuntado. ¡Adiós!" },
+          "user": [
+            { "zh": "谢谢阿姨，再见！", "py": "Xièxie āyí, zàijiàn!", "es": "¡Gracias, señora, adiós!", "keywords": ["谢谢", "再见"], "next": "n7" },
+            { "zh": "谢谢您！再见！", "py": "Xièxie nín! Zàijiàn!", "es": "¡Muchas gracias! ¡Adiós!", "keywords": ["谢谢", "再见"], "next": "n7" }
+          ],
+          "hint": "Da las gracias y despídete."
+        },
+        "n7": {
+          "npc": { "zh": "再见！", "py": "Zàijiàn!", "es": "¡Adiós!" },
+          "end": true,
+          "feedback": "Has abierto la llamada con 喂, has preguntado por alguien con …在吗？, has dejado un recado con 给 + persona + 打电话 / 发微信 y has dado tu número leyendo el 1 como 幺."
+        }
+      }
+    },
+    {
+      "id": "a1-u20-what-doing",
+      "title": "¿Qué estás haciendo? Una videollamada",
+      "zh": "你在做什么呢？",
+      "level": 1,
+      "setting": "Domingo por la tarde. Ana hace una videollamada por WeChat a Hugo para quedar. Tú (la app) eres 安娜.",
+      "role": "Ana",
+      "roleZh": "安娜",
+      "voice": "f",
+      "goals": ["Decir qué estás haciendo con 在 / 正在…呢", "Decir qué no estás haciendo con 没在", "Hablar del móvil (batería, cobertura)", "Quedar y prometer un mensaje"],
+      "vocab": ["在", "正在", "呢", "没在", "没电", "信号", "发", "微信"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "喂，雨果！你在做什么呢？", "py": "Wéi, Yǔguǒ! Nǐ zài zuò shénme ne?", "es": "¡Hola, Hugo! ¿Qué estás haciendo?" },
+          "user": [
+            { "zh": "我正在宿舍看视频呢。", "py": "Wǒ zhèng zài sùshè kàn shìpín ne.", "es": "Estoy viendo vídeos en la residencia.", "keywords": ["正在", "视频"], "next": "n2", "goal": 0 },
+            { "zh": "我在图书馆学习呢。", "py": "Wǒ zài túshūguǎn xuéxí ne.", "es": "Estoy estudiando en la biblioteca.", "keywords": ["图书馆", "学习"], "next": "n3", "goal": 0 }
+          ],
+          "hint": "(正)在 + verbo + 呢."
+        },
+        "n2": {
+          "npc": { "zh": "你没在学习吗？明天有考试！", "py": "Nǐ méi zài xuéxí ma? Míngtiān yǒu kǎoshì!", "es": "¿No estás estudiando? ¡Mañana hay examen!" },
+          "user": [
+            { "zh": "没在学习，我在看汉语视频！", "py": "Méi zài xuéxí, wǒ zài kàn Hànyǔ shìpín!", "es": "No, ¡estoy viendo vídeos en chino!", "keywords": ["没在", "汉语视频"], "next": "n4", "goal": 1 },
+            { "zh": "我没在玩儿，我在用电脑写作业。", "py": "Wǒ méi zài wánr, wǒ zài yòng diànnǎo xiě zuòyè.", "es": "No estoy jugando: estoy haciendo los deberes con el ordenador.", "keywords": ["没在", "写作业"], "next": "n4", "goal": 1 }
+          ],
+          "hint": "La negación del progresivo: 没在 + verbo."
+        },
+        "n3": {
+          "npc": { "zh": "喂？喂？雨果，你在吗？", "py": "Wéi? Wéi? Yǔguǒ, nǐ zài ma?", "es": "¿Hola? ¿Hola? Hugo, ¿estás ahí?" },
+          "user": [
+            { "zh": "图书馆的信号不太好。", "py": "Túshūguǎn de xìnhào bú tài hǎo.", "es": "En la biblioteca la cobertura no es muy buena.", "keywords": ["信号"], "next": "n4", "goal": 2 },
+            { "zh": "对不起，我的手机快没电了。", "py": "Duìbuqǐ, wǒ de shǒujī kuài méi diàn le.", "es": "Perdona, me estoy quedando sin batería.", "keywords": ["快没电了"], "next": "n4", "goal": 2 }
+          ],
+          "hint": "信号不太好 / 快没电了 (快…了)."
+        },
+        "n4": {
+          "npc": { "zh": "晚上我们一起去食堂吃饭，好吗？", "py": "Wǎnshang wǒmen yìqǐ qù shítáng chīfàn, hǎo ma?", "es": "¿Vamos juntos a cenar al comedor esta noche?" },
+          "user": [
+            { "zh": "好啊！几点？", "py": "Hǎo a! Jǐ diǎn?", "es": "¡Vale! ¿A qué hora?", "keywords": ["几点"], "next": "n5", "goal": 3 },
+            { "zh": "好，我先给小李打电话，他也想去。", "py": "Hǎo, wǒ xiān gěi Xiǎo Lǐ dǎ diànhuà, tā yě xiǎng qù.", "es": "Vale; primero llamo a Xiao Li, que también quiere venir.", "keywords": ["给小李打电话"], "next": "n5", "goal": 3 }
+          ],
+          "hint": "Acepta y concreta; si quieres, 给 + persona + 打电话."
+        },
+        "n5": {
+          "npc": { "zh": "六点半，在食堂门口。", "py": "Liù diǎn bàn, zài shítáng ménkǒu.", "es": "A las seis y media en la puerta del comedor." },
+          "user": [
+            { "zh": "好，到了我给你发微信。", "py": "Hǎo, dào le wǒ gěi nǐ fā Wēixìn.", "es": "Vale, cuando llegue te mando un WeChat.", "keywords": ["给你发微信"], "next": "n6", "goal": 3 },
+            { "zh": "好！别关机，我给你打电话。", "py": "Hǎo! Bié guānjī, wǒ gěi nǐ dǎ diànhuà.", "es": "¡Vale! No apagues el móvil, que te llamo.", "keywords": ["别关机"], "next": "n6", "goal": 3 }
+          ],
+          "hint": "给你发微信 / 别关机."
+        },
+        "n6": {
+          "npc": { "zh": "好，晚上见！", "py": "Hǎo, wǎnshang jiàn!", "es": "¡Vale, hasta la noche!" },
+          "end": true,
+          "feedback": "Has dicho lo que estabas haciendo con (正)在…呢 y lo que no con 没在, has hablado del móvil (信号, 快没电了) y has quedado usando 给 + persona + verbo y 别关机."
+        }
+      }
+    }
+  ]
+}

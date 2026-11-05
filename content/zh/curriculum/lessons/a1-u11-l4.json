@@ -1,0 +1,135 @@
+{
+  "id": "a1-u11-l4",
+  "title": "Hoy invito yo: 对…说, 告诉, 帮 y repaso de la unidad",
+  "zh": "今天我请客",
+  "goal": "Decir a quién le hablas (对 + persona + 说, 告诉), ofrecer ayuda, invitar y hacer regalos; construir frases largas con toda la unidad.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "告诉", "pinyin": "gàosu", "es": "decir a, contar a, informar", "note": "La persona va justo detrás: 告诉你一件事 (te cuento una cosa)." },
+    { "hanzi": "帮", "pinyin": "bāng", "es": "ayudar (a alguien a hacer algo)", "note": "帮 + persona + verbo: 我帮你拿." },
+    { "hanzi": "帮忙", "pinyin": "bāngmáng", "es": "echar una mano, ayudar", "note": "No lleva objeto: 你能帮忙吗？ / 帮我一个忙." },
+    { "hanzi": "帮助", "pinyin": "bāngzhù", "es": "ayudar; ayuda", "note": "Más formal: 谢谢你的帮助." },
+    { "hanzi": "送", "pinyin": "sòng", "es": "regalar; acompañar, llevar (a alguien)", "note": "送 + persona + cosa: 我送你一本书." },
+    { "hanzi": "请客", "pinyin": "qǐngkè", "es": "invitar (pagar la comida a otros)", "note": "今天我请客 = hoy invito yo. En China se suele turnar: hoy tú, la próxima yo." },
+    { "hanzi": "自己", "pinyin": "zìjǐ", "es": "uno mismo, solo (sin ayuda)", "note": "我自己去 = voy yo solo / yo mismo." },
+    { "hanzi": "别人", "pinyin": "biérén", "es": "otros, los demás, otra persona" }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "老师对我们说汉语。", "py": "Lǎoshī duì wǒmen shuō Hànyǔ.", "es": "La profesora nos habla en chino." },
+        { "zh": "我告诉你一件事。", "py": "Wǒ gàosu nǐ yí jiàn shì.", "es": "Te voy a contar una cosa." },
+        { "zh": "今天我请客！", "py": "Jīntiān wǒ qǐngkè!", "es": "¡Hoy invito yo!" }
+      ]
+    },
+    { "type": "vocab", "title": "Ayudar, regalar e invitar", "words": ["告诉", "帮", "帮忙", "帮助", "送", "请客", "自己", "别人"] },
+    {
+      "type": "phonetics-drill",
+      "title": "La «i» vacía: 自己, 室友, 四 / 西",
+      "markdown": "La letra **i** tiene dos sonidos en pinyin:\n\n- **i «de verdad»** (como en español), tras casi todas las consonantes: 己 j**ǐ**, 西 x**ī**, 一 y**ī**, 笔 b**ǐ**.\n- **i «vacía»** tras **z c s** y **zh ch sh r**: no es una vocal, es la **prolongación del zumbido** de la consonante. 自 z**ì**, 四 s**ì**, 字 z**ì** (lengua delante) · 室 sh**ì**, 是 sh**ì**, 吃 ch**ī**, 日 r**ì** (lengua atrás).\n\nEn **自己 zìjǐ** tienes las dos seguidas: primero la vacía (zì), luego la de verdad (jǐ). Lo mismo en **四十 sìshí** frente a **西 xī**.",
+      "items": [
+        { "audio": "自己", "prompt": "¿Qué i suena en 自?", "options": ["Vacía (zumbido de la z)", "Como la «i» española"], "answer": 0, "explain": "Tras z, la i es vacía; en 己 jǐ, en cambio, es una i de verdad." },
+        { "audio": "四", "options": ["sì", "xì", "shì"], "answer": 0, "explain": "s + i vacía: lengua delante, zumbido." },
+        { "audio": "西", "options": ["xī", "sī", "shī"], "answer": 0, "explain": "x + i de verdad, con los labios estirados." },
+        { "audio": "室友", "options": ["shìyǒu", "sìyǒu", "xìyǒu"], "answer": 0, "explain": "sh + i vacía con la lengua atrás." },
+        { "audio": "送", "options": ["sòng", "shòng", "xòng"], "answer": 0, "explain": "s delante + ong: regalar, acompañar." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["送", "帮"],
+      "mnemonics": {
+        "送": "辶 (caminar) + 关 (pista de forma: dos manos que ofrecen algo): caminar llevando algo a alguien → regalar, acompañar.",
+        "帮": "邦 bāng (pista de sonido) + 巾 (tela): echar un paño, arrimar el hombro → ayudar."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "对 + persona + 说; 告诉 / 帮 / 送 + persona",
+      "markdown": "**对 + persona** («a, hacia alguien») va en el **mismo hueco que 跟…一起**: delante del verbo.\n\n- 老师**对我们**说汉语 = la profesora nos habla en chino (lit. «la profesora a nosotros habla chino»).\n- ✘ *我说对朋友 / *我说朋友 → ✔ 我**对朋友**说.\n\nOtros verbos llevan a la persona **detrás**, sin preposición:\n\n| verbo | | |\n|---|---|---|\n| **告诉** + persona (+ cosa) | 我**告诉你**一件事 | te cuento una cosa |\n| **送** + persona + cosa | 雨果**送安娜**一本书 | Hugo le regala a Ana un libro |\n| **帮** + persona + verbo | 小李**帮我**拿书包 | Xiao Li me ayuda a llevar la mochila |\n\n- **说** necesita 对 para la persona; **告诉** no la necesita.\n- **帮忙** no lleva objeto: ✘ *帮忙你 → ✔ 帮你 o 帮你的忙.\n- **请客** = invitar (pagar). **自己** = yo mismo, solo: 我**自己**去.",
+      "focus": ["with", "verb1"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "老师", "py": "lǎoshī" }, "with": { "zh": "对我们", "py": "duì wǒmen" }, "verb1": { "zh": "说", "py": "shuō" }, "object": { "zh": "汉语", "py": "Hànyǔ" } }, "end": "。", "es": "La profesora nos habla en chino.", "esOrder": [{ "text": "La profesora", "slot": "subject" }, { "text": "nos", "slot": "with" }, { "text": "habla", "slot": "verb1" }, { "text": "en chino", "slot": "object" }] },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "aux": { "zh": "想", "py": "xiǎng" }, "verb1": { "zh": "告诉你", "py": "gàosu nǐ" }, "object": { "zh": "一件事", "py": "yí jiàn shì" } }, "end": "。", "es": "Quiero contarte una cosa." },
+        { "slots": { "subject": { "zh": "雨果", "py": "Yǔguǒ" }, "verb1": { "zh": "送安娜", "py": "sòng Ānnà" }, "object": { "zh": "一本书", "py": "yì běn shū" } }, "end": "。", "es": "Hugo le regala a Ana un libro." },
+        { "slots": { "subject": { "zh": "小李", "py": "Xiǎo Lǐ" }, "verb1": { "zh": "帮我", "py": "bāng wǒ" }, "verb2": { "zh": "拿", "py": "ná" }, "object": { "zh": "书包", "py": "shūbāo" } }, "end": "。", "es": "Xiao Li me ayuda a llevar la mochila." },
+        { "slots": { "time0": { "zh": "今天", "py": "jīntiān" }, "subject": { "zh": "我", "py": "wǒ" }, "verb1": { "zh": "请客", "py": "qǐngkè" } }, "end": "！", "es": "¡Hoy invito yo!" },
+        { "slots": { "subject": { "zh": "王老师", "py": "Wáng lǎoshī" }, "adverb": { "zh": "常常", "py": "chángcháng" }, "verb1": { "zh": "帮助", "py": "bāngzhù" }, "object": { "zh": "别人", "py": "biérén" } }, "end": "。", "es": "La profesora Wang ayuda a menudo a los demás." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "不", "py": "bù" }, "aux": { "zh": "想", "py": "xiǎng" }, "verb1": { "zh": "告诉", "py": "gàosu" }, "object": { "zh": "别人", "py": "biérén" } }, "end": "。", "es": "No quiero contárselo a otros." },
+        { "slots": { "subject": { "zh": "他", "py": "tā" }, "adverb": { "zh": "不", "py": "bú" }, "with": { "zh": "对别人", "py": "duì biérén" }, "verb1": { "zh": "说", "py": "shuō" } }, "end": "。", "es": "Él no se lo dice a los demás." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "with": { "zh": "对谁", "py": "duì shéi" }, "verb1": { "zh": "说", "py": "shuō" } }, "end": "？", "es": "¿A quién se lo dices?" },
+        { "slots": { "subject": { "zh": "谁", "py": "shéi" }, "verb1": { "zh": "请客", "py": "qǐngkè" } }, "end": "？", "es": "¿Quién invita?" }
+      ],
+      "mistakes": [
+        { "wrong": "我说对朋友。", "right": "我对朋友说。", "why": "对 + persona va delante del verbo, como 跟…一起." },
+        { "wrong": "我说他。", "right": "我对他说。 / 我告诉他。", "why": "说 no lleva a la persona detrás: usa 对…说 o 告诉 + persona." },
+        { "wrong": "我帮忙你。", "right": "我帮你。", "why": "帮忙 ya contiene su objeto (忙): no admite otra persona detrás." },
+        { "wrong": "我告诉对你。", "right": "我告诉你。", "why": "告诉 lleva a la persona directamente, sin 对." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "El cumpleaños de Hugo",
+      "lines": [
+        { "speaker": "安娜", "zh": "雨果，今天是你的生日！我送你一本书。", "py": "Yǔguǒ, jīntiān shì nǐ de shēngrì! Wǒ sòng nǐ yì běn shū.", "es": "Hugo, ¡hoy es tu cumpleaños! Te regalo un libro." },
+        { "speaker": "雨果", "zh": "谢谢你！这本书很好看。", "py": "Xièxie nǐ! Zhè běn shū hěn hǎokàn.", "es": "¡Gracias! Este libro es muy bueno." },
+        { "speaker": "小李", "zh": "我送你一个杯子。你想跟大家一起去吃饭吗？", "py": "Wǒ sòng nǐ yí ge bēizi. Nǐ xiǎng gēn dàjiā yìqǐ qù chī fàn ma?", "es": "Yo te regalo un vaso. ¿Quieres ir a cenar con todos?" },
+        { "speaker": "雨果", "zh": "想！今天我请客！", "py": "Xiǎng! Jīntiān wǒ qǐngkè!", "es": "¡Sí! ¡Hoy invito yo!" },
+        { "speaker": "大卫", "zh": "不，今天是你的生日，我们请客！", "py": "Bù, jīntiān shì nǐ de shēngrì, wǒmen qǐngkè!", "es": "No, hoy es tu cumpleaños: ¡invitamos nosotros!" },
+        { "speaker": "雨果", "zh": "你们对我太好了！", "py": "Nǐmen duì wǒ tài hǎo le!", "es": "¡Sois demasiado buenos conmigo!" },
+        { "speaker": "小李", "zh": "我告诉你一件事：王老师也想来。", "py": "Wǒ gàosu nǐ yí jiàn shì: Wáng lǎoshī yě xiǎng lái.", "es": "Te cuento una cosa: la profesora Wang también quiere venir." },
+        { "speaker": "雨果", "zh": "太好了！小李，你帮我拿这些东西，好吗？", "py": "Tài hǎo le! Xiǎo Lǐ, nǐ bāng wǒ ná zhèxiē dōngxi, hǎo ma?", "es": "¡Genial! Xiao Li, ¿me ayudas a llevar estas cosas?" },
+        { "speaker": "小李", "zh": "好，我帮你！", "py": "Hǎo, wǒ bāng nǐ!", "es": "¡Claro, te ayudo!" }
+      ],
+      "notes": "对 + persona + 好 = «ser bueno con alguien»: 你们对我太好了. En los cumpleaños chinos se comen 长寿面 (fideos de la longevidad), cuanto más largos mejor. Y cuidado con los regalos: los relojes de pared (钟) y los paraguas (伞, que suena como 散 «separarse») no se regalan."
+    },
+    { "type": "exercises", "count": 16, "bank": ["g-he", "g-ye-dou", "g-qing", "g-word-order"] },
+    {
+      "type": "sentence-builder",
+      "title": "Construye la frase completa",
+      "items": [
+        { "sentence": { "slots": { "time0": { "zh": "明天晚上" }, "subject": { "zh": "我" }, "aux": { "zh": "想" }, "with": { "zh": "跟室友一起" }, "verb1": { "zh": "去饭馆" }, "verb2": { "zh": "吃" }, "object": { "zh": "一盘饺子" } }, "end": "。", "es": "Mañana por la noche quiero ir con mi compañero de habitación a un restaurante a comer un plato de jiaozi." }, "distractors": ["和"] },
+        { "sentence": { "slots": { "time0": { "zh": "星期六" }, "subject": { "zh": "我们" }, "adverb": { "zh": "也都" }, "aux": { "zh": "要" }, "with": { "zh": "和老朋友一起" }, "verb1": { "zh": "去" }, "verb2": { "zh": "喝" }, "object": { "zh": "很好喝的茶" } }, "end": "。", "es": "El sábado nosotros también vamos a ir todos con viejos amigos a tomar un té buenísimo." }, "distractors": ["都也"] },
+        { "sentence": { "slots": { "time0": { "zh": "今天中午" }, "subject": { "zh": "安娜和大卫" }, "adverb": { "zh": "都不" }, "aux": { "zh": "想" }, "with": { "zh": "跟别人一起" }, "verb1": { "zh": "吃饭" } }, "end": "。", "es": "Hoy a mediodía ni Ana ni David quieren comer con otras personas." }, "distractors": ["没"] },
+        { "sentence": { "slots": { "subject": { "zh": "小李" }, "time": { "zh": "晚上" }, "adverb": { "zh": "常常" }, "with": { "zh": "跟女朋友一块儿" }, "verb1": { "zh": "聊天" } }, "end": "。", "es": "Por las noches Xiao Li suele charlar con su novia." }, "distractors": ["一起跟"] },
+        { "sentence": { "slots": { "subject": { "zh": "王老师" }, "time": { "zh": "今天" }, "adverb": { "zh": "也" }, "aux": { "zh": "想" }, "with": { "zh": "对大家" }, "verb1": { "zh": "说" }, "object": { "zh": "汉语" } }, "end": "。", "es": "Hoy la profesora Wang también quiere hablarnos a todos en chino." }, "distractors": ["告诉"] },
+        { "sentence": { "slots": { "subject": { "zh": "你们" }, "time": { "zh": "周末" }, "aux": { "zh": "想" }, "with": { "zh": "跟谁一起" }, "verb1": { "zh": "去" }, "verb2": { "zh": "买" }, "object": { "zh": "衣服" } }, "end": "？", "es": "¿Con quién queréis ir a comprar ropa el fin de semana?" }, "distractors": ["吗"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "老师对我们说汉语。", "py": "Lǎoshī duì wǒmen shuō Hànyǔ.", "es": "La profesora nos habla en chino." },
+        { "zh": "我告诉你一件事。", "py": "Wǒ gàosu nǐ yí jiàn shì.", "es": "Te cuento una cosa." },
+        { "zh": "今天我请客！", "py": "Jīntiān wǒ qǐngkè!", "es": "¡Hoy invito yo!" },
+        { "zh": "我帮你拿。", "py": "Wǒ bāng nǐ ná.", "es": "Te ayudo a llevarlo." },
+        { "zh": "我自己去。", "py": "Wǒ zìjǐ qù.", "es": "Voy yo solo." }
+      ],
+      "respond": [
+        { "q": { "zh": "你生日想跟谁一起吃饭？", "py": "Nǐ shēngrì xiǎng gēn shéi yìqǐ chī fàn?", "es": "¿Con quién quieres cenar el día de tu cumpleaños?" }, "model": { "zh": "我想跟好朋友一起吃饭。", "py": "Wǒ xiǎng gēn hǎo péngyou yìqǐ chī fàn.", "es": "Quiero cenar con mis mejores amigos." } },
+        { "q": { "zh": "今天谁请客？", "py": "Jīntiān shéi qǐngkè?", "es": "¿Quién invita hoy?" }, "model": { "zh": "今天我请客！", "py": "Jīntiān wǒ qǐngkè!", "es": "¡Hoy invito yo!" } },
+        { "q": { "zh": "你要我帮忙吗？", "py": "Nǐ yào wǒ bāngmáng ma?", "es": "¿Quieres que te ayude?" }, "model": { "zh": "不要，谢谢，我自己拿。", "py": "Bú yào, xièxie, wǒ zìjǐ ná.", "es": "No hace falta, gracias, lo llevo yo." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Un cumpleaños en Shanghái",
+      "text": "今天是雨果的生日。安娜送他一本书，小李送他一个杯子。晚上，雨果想跟大家一起去饭馆吃饭。他说：“今天我请客！”大卫说：“不，我们请客！”小李告诉雨果：王老师也想来。王老师对雨果说：“你是大家的好朋友！”大家都很高兴，雨果也很开心。",
+      "es": "Hoy es el cumpleaños de Hugo. Ana le regala un libro y Xiao Li, un vaso. Por la noche, Hugo quiere ir con todos a cenar a un restaurante. Dice: «¡Hoy invito yo!». David dice: «¡No, invitamos nosotros!». Xiao Li le cuenta a Hugo que la profesora Wang también quiere venir. La profesora Wang le dice a Hugo: «¡Eres el buen amigo de todos!». Todos están muy contentos, y Hugo también.",
+      "questions": [
+        { "q": "¿Qué le regala Xiao Li a Hugo?", "options": ["一个杯子", "一本书", "一件衣服"], "answer": 0 },
+        { "q": "¿Quién quiere invitar al final?", "options": ["Los amigos (我们请客)", "Hugo", "La profesora Wang"], "answer": 0 },
+        { "q": "¿A quién le habla la profesora Wang?", "options": ["对雨果", "对安娜", "对小李"], "answer": 0 },
+        { "q": "¿Cómo se dice «Xiao Li le cuenta a Hugo»?", "options": ["小李告诉雨果", "小李说雨果", "小李对告诉雨果"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

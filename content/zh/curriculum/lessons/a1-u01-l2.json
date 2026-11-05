@@ -1,0 +1,137 @@
+{
+  "id": "a1-u01-l2",
+  "title": "¿Eres…? 吗 y las respuestas cortas",
+  "zh": "你是安娜吗？——是。",
+  "goal": "Hacer preguntas de sí/no con 吗 y contestar en corto con 是 / 不是 y 对 / 不对.",
+  "minutes": 13,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "我们", "pinyin": "wǒmen", "es": "nosotros, nosotras" },
+    { "hanzi": "你们", "pinyin": "nǐmen", "es": "vosotros, vosotras" },
+    { "hanzi": "他们", "pinyin": "tāmen", "es": "ellos", "note": "También para un grupo mixto." },
+    { "hanzi": "她们", "pinyin": "tāmen", "es": "ellas", "note": "Solo si todas son mujeres." },
+    { "hanzi": "它", "pinyin": "tā", "es": "ello (animales y cosas)", "note": "Suena igual que 他 y 她. Con cosas casi no se usa: se repite el nombre o se omite." },
+    { "hanzi": "它们", "pinyin": "tāmen", "es": "ellos, ellas (animales y cosas)" },
+    { "hanzi": "这", "pinyin": "zhè", "es": "esto, este, esta", "note": "Lo que está cerca: 这是… = este/esta es…" },
+    { "hanzi": "那", "pinyin": "nà", "es": "eso, ese, aquello", "note": "Lo que está lejos: 那是… = ese/aquel es…" },
+    { "hanzi": "同学", "pinyin": "tóngxué", "es": "compañero de clase, compañera", "note": "También sirve para llamar a un estudiante que no conoces: 同学，你好！" },
+    { "hanzi": "不对", "pinyin": "bú duì", "es": "no, incorrecto; no es así" },
+    { "hanzi": "对不起", "pinyin": "duìbuqǐ", "es": "perdón, lo siento" },
+    { "hanzi": "没关系", "pinyin": "méi guānxi", "es": "no pasa nada", "note": "La respuesta a 对不起 y a 不好意思." },
+    { "hanzi": "不好意思", "pinyin": "bù hǎoyìsi", "es": "perdona, qué vergüenza; disculpa", "note": "Más suave que 对不起: para errores pequeños o para interrumpir." }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "你是安娜吗？", "py": "Nǐ shì Ānnà ma?", "es": "¿Eres Anna?" },
+        { "zh": "不是，我是雨果。", "py": "Bú shì, wǒ shì Yǔguǒ.", "es": "No, soy Hugo." },
+        { "zh": "对，那是王老师。", "py": "Duì, nà shì Wáng lǎoshī.", "es": "Sí, esa es la profesora Wang." },
+        { "zh": "对不起！——没关系。", "py": "Duìbuqǐ! — Méi guānxi.", "es": "¡Perdón! — No pasa nada." }
+      ]
+    },
+    { "type": "vocab", "title": "Plurales, 这 / 那 y las respuestas cortas", "words": ["我们", "你们", "他们", "她们", "它", "它们", "这", "那", "同学", "不对", "对不起", "没关系", "不好意思"] },
+    {
+      "type": "phonetics-drill",
+      "title": "El tono neutro: 吗, 们 y 起",
+      "markdown": "**吗 ma** y **们 men** no tienen tono propio: son **cortos y flojos**, y su altura depende de la sílaba anterior.\n\n- Tras 1.º tono (他们 **tā**men) y 2.º tono (同学们), el neutro queda a media altura.\n- Tras 3.er tono (我们 **wǒ**men, 你们), el neutro sale **algo más alto**: la voz baja en wǒ y «rebota» en men.\n- Tras 4.º tono (是吗 **shì** ma), el neutro queda **abajo del todo**.\n\nEn **对不起 duìbuqǐ** el 不 de en medio se dice neutro y muy breve; lo importante son **duì** (cae) y **qǐ** (baja). Truco: no alargues nunca 吗 ni 们; si los alargas, suenan a pregunta enfadada.",
+      "items": [
+        { "audio": "我们", "options": ["wǒmen", "wǒmén", "wómen"], "answer": 0, "explain": "们 es neutro: sin tilde. 我 conserva su tercer tono." },
+        { "audio": "你是学生吗？", "prompt": "¿Cómo suena 吗 aquí?", "options": ["Corto y flojo (neutro)", "Alto y largo (1.º)", "Subiendo (2.º)"], "answer": 0, "explain": "吗 nunca lleva tono: es corto y sin fuerza." },
+        { "audio": "对不起", "options": ["duìbuqǐ", "duìbúqǐ", "dùibuqí"], "answer": 0, "explain": "duì (4.º) + bu (neutro) + qǐ (3.º)." },
+        { "audio": "同学", "options": ["tóngxué", "tōngxuě", "tóngxuè"], "answer": 0, "explain": "Dos segundos tonos seguidos: los dos suben, como «¿eh? ¿eh?»." },
+        { "audio": "没关系", "options": ["méi guānxi", "mèi guānxì", "méi guǎnxi"], "answer": 0, "explain": "méi sube, guān es alto y plano, xi es neutro." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["吗", "这"],
+      "mnemonics": {
+        "吗": "口 (boca) + 马 (caballo, que da el sonido mǎ): la boca que pregunta «¿ma?».",
+        "这": "辶 (el camino, andar) + 文: lo que está aquí, en mi camino, a mi alcance."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "La pregunta con 吗 y la respuesta corta",
+      "markdown": "Para preguntar **sí o no** basta con poner **吗** al final de la frase afirmativa: el orden no cambia.\n\nEl chino no tiene una palabra exacta para «sí» o «no». Se contesta **repitiendo el verbo**:\n\n- 你是学生吗？ → **是。** (sí) / **不是。** (no)\n- Con **对** («correcto») confirmas lo que el otro ha dicho; con **不对** lo corriges: 他是大卫吗？ — **对。** / **不对**，他是雨果。\n\nDespués de la respuesta corta, lo normal es añadir la frase completa: **不是，我是雨果。**\n\n**这 / 那** («este / ese») funcionan como sujeto: **这是**王老师 (esta es la profesora Wang).",
+      "focus": ["particle", "adverb"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "这", "py": "zhè" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "王老师", "py": "Wáng lǎoshī" } }, "end": "。", "es": "Esta es la profesora Wang.", "esOrder": [{ "text": "Esta", "slot": "subject" }, { "text": "es", "slot": "verb1" }, { "text": "la profesora Wang", "slot": "object" }] },
+        { "slots": { "subject": { "zh": "那", "py": "nà" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "大卫", "py": "Dàwèi" } }, "end": "。", "es": "Ese es David." },
+        { "slots": { "subject": { "zh": "我们", "py": "wǒmen" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "同学", "py": "tóngxué" } }, "end": "。", "es": "Somos compañeros de clase." },
+        { "slots": { "subject": { "zh": "它们", "py": "tāmen" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "鱼", "py": "yú" } }, "end": "。", "es": "Son peces (de un dibujo o una foto)." },
+        { "slots": { "verb1": { "zh": "是", "py": "shì" } }, "end": "。", "es": "Sí. (respuesta corta: se repite el verbo)" }
+      ],
+      "negative": [
+        { "slots": { "adverb": { "zh": "不", "py": "bú" }, "verb1": { "zh": "是", "py": "shì" } }, "end": "。", "es": "No. (respuesta corta)" },
+        { "slots": { "subject": { "zh": "他们", "py": "tāmen" }, "adverb": { "zh": "不", "py": "bú" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "老师", "py": "lǎoshī" } }, "end": "。", "es": "Ellos no son profesores." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "安娜", "py": "Ānnà" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿Eres Anna?", "esOrder": [{ "text": "¿Eres", "slot": "verb1" }, { "text": "Anna?", "slot": "object" }] },
+        { "slots": { "subject": { "zh": "那", "py": "nà" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "王老师", "py": "Wáng lǎoshī" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿Esa es la profesora Wang?" },
+        { "slots": { "subject": { "zh": "你们", "py": "nǐmen" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "同学", "py": "tóngxué" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿Sois compañeros de clase?" }
+      ],
+      "mistakes": [
+        { "wrong": "你是安娜吗？——吗。", "right": "你是安娜吗？——是。", "why": "Se contesta repitiendo el verbo (是 / 不是), nunca con la partícula." },
+        { "wrong": "你是学生吗？——不。", "right": "你是学生吗？——不是。", "why": "不 solo, a secas, suena brusco e incompleto: el chino repite el verbo negado." },
+        { "wrong": "你是不学生吗？", "right": "你不是学生吗？", "why": "不 va delante del verbo, no del nombre (y 你不是学生吗 significa «¿no eres estudiante?»)." },
+        { "wrong": "对不起！——不客气。", "right": "对不起！——没关系。", "why": "不客气 responde a 谢谢; a 对不起 y a 不好意思 se responde 没关系." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "¿Eres Anna?",
+      "lines": [
+        { "speaker": "雨果", "zh": "你好！你是安娜吗？", "py": "Nǐ hǎo! Nǐ shì Ānnà ma?", "es": "¡Hola! ¿Eres Anna?" },
+        { "speaker": "安娜", "zh": "是，我是安娜。你是大卫吗？", "py": "Shì, wǒ shì Ānnà. Nǐ shì Dàwèi ma?", "es": "Sí, soy Anna. ¿Tú eres David?" },
+        { "speaker": "雨果", "zh": "不是，我是雨果。", "py": "Bú shì, wǒ shì Yǔguǒ.", "es": "No, soy Hugo." },
+        { "speaker": "安娜", "zh": "不好意思！", "py": "Bù hǎoyìsi!", "es": "¡Uy, perdona!" },
+        { "speaker": "雨果", "zh": "没关系。我们是同学！", "py": "Méi guānxi. Wǒmen shì tóngxué!", "es": "No pasa nada. ¡Somos compañeros!" },
+        { "speaker": "安娜", "zh": "那是大卫吗？他是老师吗？", "py": "Nà shì Dàwèi ma? Tā shì lǎoshī ma?", "es": "¿Ese es David? ¿Es profesor?" },
+        { "speaker": "雨果", "zh": "不对，他不是老师，他是学生。", "py": "Bú duì, tā bú shì lǎoshī, tā shì xuésheng.", "es": "No, no es profesor: es estudiante." },
+        { "speaker": "安娜", "zh": "这是王老师吗？", "py": "Zhè shì Wáng lǎoshī ma?", "es": "¿Esta es la profesora Wang?" },
+        { "speaker": "雨果", "zh": "对，这是王老师。", "py": "Duì, zhè shì Wáng lǎoshī.", "es": "Sí, esta es la profesora Wang." }
+      ],
+      "notes": "这是… / 那是… es la forma normal de presentar o señalar a alguien: 这是王老师 («esta es la profesora Wang»). 不好意思 es la disculpa más corriente para errores pequeños; 对不起 suena más serio."
+    },
+    { "type": "exercises", "count": 14, "bank": ["g-ma", "g-shi", "g-bu-mei", "u01"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "这" }, "verb1": { "zh": "是" }, "object": { "zh": "王老师" } }, "end": "。", "es": "Esta es la profesora Wang." }, "distractors": ["吗"] },
+        { "sentence": { "slots": { "subject": { "zh": "你们" }, "verb1": { "zh": "是" }, "object": { "zh": "同学" }, "particle": { "zh": "吗" } }, "end": "？", "es": "¿Sois compañeros de clase?" } },
+        { "sentence": { "slots": { "subject": { "zh": "那" }, "adverb": { "zh": "不" }, "verb1": { "zh": "是" }, "object": { "zh": "大卫" } }, "end": "。", "es": "Ese no es David." }, "distractors": ["这"] },
+        { "sentence": { "slots": { "subject": { "zh": "她们" }, "adverb": { "zh": "不" }, "verb1": { "zh": "是" }, "object": { "zh": "老师" }, "particle": { "zh": "吗" } }, "end": "？", "es": "¿Ellas no son profesoras?" }, "distractors": ["他们", "对"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "你是安娜吗？", "py": "Nǐ shì Ānnà ma?", "es": "¿Eres Anna?" },
+        { "zh": "不是，我是雨果。", "py": "Bú shì, wǒ shì Yǔguǒ.", "es": "No, soy Hugo." },
+        { "zh": "对，我们是同学。", "py": "Duì, wǒmen shì tóngxué.", "es": "Sí, somos compañeros." },
+        { "zh": "不好意思！——没关系。", "py": "Bù hǎoyìsi! — Méi guānxi.", "es": "¡Perdona! — No pasa nada." }
+      ],
+      "respond": [
+        { "q": { "zh": "你是大卫吗？", "py": "Nǐ shì Dàwèi ma?", "es": "¿Eres David?" }, "model": { "zh": "不是，我是雨果。", "py": "Bú shì, wǒ shì Yǔguǒ.", "es": "No, soy Hugo." } },
+        { "q": { "zh": "你们是同学吗？", "py": "Nǐmen shì tóngxué ma?", "es": "¿Sois compañeros de clase?" }, "model": { "zh": "对，我们是同学。", "py": "Duì, wǒmen shì tóngxué.", "es": "Sí, somos compañeros." } },
+        { "q": { "zh": "对不起！", "py": "Duìbuqǐ!", "es": "¡Perdón!" }, "model": { "zh": "没关系。", "py": "Méi guānxi.", "es": "No pasa nada." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "La foto de clase",
+      "text": "这是王老师，她是老师。那是安娜，她是学生。这是大卫吗？不是，这是雨果。那是大卫。雨果是学生，安娜是学生，大卫是学生。他们是同学，他们不是老师。",
+      "es": "Esta es la profesora Wang: es profesora. Esa es Anna: es estudiante. ¿Este es David? No, este es Hugo. Ese es David. Hugo, Anna y David son estudiantes. Son compañeros de clase; no son profesores.",
+      "questions": [
+        { "q": "¿Quién es la profesora?", "options": ["王老师", "安娜", "大卫"], "answer": 0 },
+        { "q": "La persona de la foto que parecía David, ¿quién es?", "options": ["雨果", "王老师", "安娜"], "answer": 0 },
+        { "q": "¿Son profesores Hugo, Anna y David?", "options": ["Sí", "No"], "answer": 1 },
+        { "q": "¿Qué significa 同学?", "options": ["compañero de clase", "profesor", "amigo"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

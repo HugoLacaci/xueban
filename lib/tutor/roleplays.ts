@@ -1,5 +1,6 @@
 "use client";
 /** Role-plays por turnos (content/zh/roleplays/uNN.json): tipos y carga diferida por unidad. */
+import { getUnits } from "@/lib/course";
 
 export interface UserOption {
   zh: string;
@@ -55,8 +56,19 @@ export function loadRoleplays(unitId: string): Promise<RoleplayFile | null> {
   return cache.get(unitId)!;
 }
 
+/** Unidades con role-play: las del temario activo (v2: a1-u01…; antiguo: u01…). Las que no tienen archivo se ignoran. */
+function roleplayUnits(): string[] {
+  try {
+    const ids = getUnits().map((u) => u.id);
+    if (ids.includes("e0")) return ids.filter((id) => id !== "e0");
+  } catch {
+    /* sin paquete activo (tests): temario antiguo */
+  }
+  return ROLEPLAY_UNITS;
+}
+
 export async function loadAllRoleplays(): Promise<Scenario[]> {
-  const files = await Promise.all(ROLEPLAY_UNITS.map(loadRoleplays));
+  const files = await Promise.all(roleplayUnits().map(loadRoleplays));
   return files.flatMap((f) => f?.scenarios ?? []);
 }
 

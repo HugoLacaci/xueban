@@ -1,0 +1,350 @@
+{
+  "unitId": "a2-u03",
+  "scenarios": [
+    {
+      "id": "a2-u03-roommate",
+      "title": "Normas con el compañero de habitación",
+      "zh": "跟室友说好",
+      "level": 2,
+      "setting": "Es la primera noche de Hugo con su nuevo compañero de habitación, Xiao Li. Quieren ponerse de acuerdo en horarios y limpieza. Tú (la app) eres Xiao Li.",
+      "role": "compañero de habitación",
+      "roleZh": "室友",
+      "voice": "m",
+      "goals": [
+        "Decir a qué hora te acuestas normalmente",
+        "Decir cuándo te duchas",
+        "Acordar cada cuánto limpiáis",
+        "Decir algo que no haces nunca"
+      ],
+      "vocab": [
+        "一般",
+        "每天",
+        "经常",
+        "多长时间…一次",
+        "从来不",
+        "打扫"
+      ],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": {
+            "zh": "雨果，你晚上一般几点睡觉？",
+            "py": "Yǔguǒ, nǐ wǎnshang yìbān jǐ diǎn shuìjiào?",
+            "es": "Hugo, ¿a qué hora te acuestas normalmente?"
+          },
+          "user": [
+            {
+              "zh": "我一般十一点睡觉。",
+              "py": "Wǒ yìbān shíyī diǎn shuìjiào.",
+              "es": "Normalmente me acuesto a las once.",
+              "keywords": [
+                "一般"
+              ],
+              "next": "n2",
+              "goal": 0
+            },
+            {
+              "zh": "我每天都十二点睡觉。",
+              "py": "Wǒ měitiān dōu shí'èr diǎn shuìjiào.",
+              "es": "Me acuesto todos los días a las doce.",
+              "keywords": [
+                "每天"
+              ],
+              "next": "n2",
+              "goal": 0
+            }
+          ],
+          "hint": "Usa 一般 o 每天都 + hora + 睡觉."
+        },
+        "n2": {
+          "npc": {
+            "zh": "好。你早上洗澡还是晚上洗澡？",
+            "py": "Hǎo. Nǐ zǎoshang xǐzǎo háishi wǎnshang xǐzǎo?",
+            "es": "Vale. ¿Te duchas por la mañana o por la noche?"
+          },
+          "user": [
+            {
+              "zh": "我每天早上洗澡。",
+              "py": "Wǒ měitiān zǎoshang xǐzǎo.",
+              "es": "Me ducho todas las mañanas.",
+              "keywords": [
+                "早上",
+                "洗澡"
+              ],
+              "next": "n3",
+              "goal": 1
+            },
+            {
+              "zh": "我经常晚上洗澡。",
+              "py": "Wǒ jīngcháng wǎnshang xǐzǎo.",
+              "es": "Suelo ducharme por la noche.",
+              "keywords": [
+                "晚上",
+                "洗澡"
+              ],
+              "next": "n3",
+              "goal": 1
+            }
+          ],
+          "hint": "Responde con 每天早上 / 经常晚上 + 洗澡."
+        },
+        "n3": {
+          "npc": {
+            "zh": "我们多长时间打扫一次房间？",
+            "py": "Wǒmen duō cháng shíjiān dǎsǎo yí cì fángjiān?",
+            "es": "¿Cada cuánto limpiamos la habitación?"
+          },
+          "user": [
+            {
+              "zh": "一个星期一次，怎么样？",
+              "py": "Yí ge xīngqī yí cì, zěnmeyàng?",
+              "es": "Una vez a la semana, ¿qué te parece?",
+              "keywords": [
+                "一次",
+                "星期"
+              ],
+              "next": "n4",
+              "goal": 2
+            },
+            {
+              "zh": "两个星期打扫一次吧。",
+              "py": "Liǎng ge xīngqī dǎsǎo yí cì ba.",
+              "es": "Limpiemos cada dos semanas.",
+              "keywords": [
+                "一次"
+              ],
+              "next": "n4",
+              "goal": 2
+            }
+          ],
+          "hint": "Intervalo delante del verbo, veces detrás: 一个星期打扫一次."
+        },
+        "n4": {
+          "npc": {
+            "zh": "好！你有什么习惯吗？",
+            "py": "Hǎo! Nǐ yǒu shénme xíguàn ma?",
+            "es": "¡Vale! ¿Tienes alguna costumbre?"
+          },
+          "user": [
+            {
+              "zh": "我从来不喝酒。",
+              "py": "Wǒ cónglái bù hējiǔ.",
+              "es": "Nunca bebo alcohol.",
+              "keywords": [
+                "从来不"
+              ],
+              "next": "n5",
+              "goal": 3
+            },
+            {
+              "zh": "我很少在宿舍吃饭。",
+              "py": "Wǒ hěn shǎo zài sùshè chīfàn.",
+              "es": "Casi nunca como en la habitación.",
+              "keywords": [
+                "很少"
+              ],
+              "next": "n5",
+              "goal": 3
+            }
+          ],
+          "hint": "Di algo que no haces nunca (从来不 + V) o casi nunca (很少)."
+        },
+        "n5": {
+          "npc": {
+            "zh": "好的，我也是。我们会是好室友！",
+            "py": "Hǎo de, wǒ yě shì. Wǒmen huì shì hǎo shìyǒu!",
+            "es": "Vale, yo tampoco. ¡Vamos a ser buenos compañeros!"
+          },
+          "end": true,
+          "feedback": "Has hablado de tus costumbres con 一般, 每天都, 经常, 从来不 y 很少, y has acordado la limpieza con «intervalo + V + 一次». ¡Eso es la vida en la residencia!"
+        }
+      }
+    },
+    {
+      "id": "a2-u03-concierge",
+      "title": "Una avería en la habitación",
+      "zh": "找宿舍阿姨",
+      "level": 2,
+      "setting": "El aire acondicionado de la habitación de Hugo no funciona y además está esperando un paquete. Baja a la conserjería. Tú (la app) eres la conserje de la residencia (宿舍阿姨).",
+      "role": "conserje de la residencia",
+      "roleZh": "宿舍阿姨",
+      "voice": "f",
+      "goals": [
+        "Explicar qué no funciona",
+        "Decir desde cuándo pasa",
+        "Preguntar cuándo lo arreglan",
+        "Preguntar por tu paquete"
+      ],
+      "vocab": [
+        "空调",
+        "不行了",
+        "…天了",
+        "弄",
+        "快递",
+        "自己"
+      ],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": {
+            "zh": "同学，你好！有什么事？",
+            "py": "Tóngxué, nǐ hǎo! Yǒu shénme shì?",
+            "es": "¡Hola, chico! ¿Qué necesitas?"
+          },
+          "user": [
+            {
+              "zh": "阿姨好！我们房间的空调不行了。",
+              "py": "Āyí hǎo! Wǒmen fángjiān de kōngtiáo bù xíng le.",
+              "es": "¡Hola! El aire acondicionado de nuestra habitación no funciona.",
+              "keywords": [
+                "空调"
+              ],
+              "next": "n2",
+              "goal": 0
+            },
+            {
+              "zh": "阿姨，我们屋子的无线网和空调都不行。",
+              "py": "Āyí, wǒmen wūzi de wúxiànwǎng hé kōngtiáo dōu bù xíng.",
+              "es": "Oiga, en nuestra habitación no funcionan ni el wifi ni el aire.",
+              "keywords": [
+                "空调",
+                "无线网"
+              ],
+              "next": "n2",
+              "goal": 0
+            }
+          ],
+          "hint": "Di qué no funciona: …不行了."
+        },
+        "n2": {
+          "npc": {
+            "zh": "多长时间了？",
+            "py": "Duō cháng shíjiān le?",
+            "es": "¿Desde cuándo?"
+          },
+          "user": [
+            {
+              "zh": "两三天了。",
+              "py": "Liǎng-sān tiān le.",
+              "es": "Desde hace dos o tres días.",
+              "keywords": [
+                "天了"
+              ],
+              "next": "n3",
+              "goal": 1
+            },
+            {
+              "zh": "一个星期了。",
+              "py": "Yí ge xīngqī le.",
+              "es": "Desde hace una semana.",
+              "keywords": [
+                "星期了"
+              ],
+              "next": "n3",
+              "goal": 1
+            }
+          ],
+          "hint": "Tiempo transcurrido: duración + 了 (两三天了)."
+        },
+        "n3": {
+          "npc": {
+            "zh": "好，我知道了。你住几号房间？",
+            "py": "Hǎo, wǒ zhīdào le. Nǐ zhù jǐ hào fángjiān?",
+            "es": "Vale, entendido. ¿En qué habitación vives?"
+          },
+          "user": [
+            {
+              "zh": "我住三零八。什么时候有人来弄？",
+              "py": "Wǒ zhù sān líng bā. Shénme shíhou yǒu rén lái nòng?",
+              "es": "En la 308. ¿Cuándo viene alguien a arreglarlo?",
+              "keywords": [
+                "什么时候",
+                "弄"
+              ],
+              "next": "n4",
+              "goal": 2
+            }
+          ],
+          "hint": "Di tu habitación y pregunta cuándo vienen a arreglarlo (什么时候…来弄？)."
+        },
+        "n4": {
+          "npc": {
+            "zh": "明天上午有人来。你在吗？",
+            "py": "Míngtiān shàngwǔ yǒu rén lái. Nǐ zài ma?",
+            "es": "Mañana por la mañana viene alguien. ¿Estarás?"
+          },
+          "user": [
+            {
+              "zh": "在。还有，我有一个快递吗？",
+              "py": "Zài. Hái yǒu, wǒ yǒu yí ge kuàidì ma?",
+              "es": "Sí. Otra cosa: ¿tengo algún paquete?",
+              "keywords": [
+                "快递"
+              ],
+              "next": "n5",
+              "goal": 3
+            },
+            {
+              "zh": "上午我有课，我室友在。",
+              "py": "Shàngwǔ wǒ yǒu kè, wǒ shìyǒu zài.",
+              "es": "Por la mañana tengo clase; estará mi compañero.",
+              "keywords": [
+                "室友"
+              ],
+              "next": "n4b"
+            }
+          ],
+          "hint": "Contesta y pregunta por el paquete (快递)."
+        },
+        "n4b": {
+          "npc": {
+            "zh": "没问题。还有别的事吗？",
+            "py": "Méiwèntí. Hái yǒu biéde shì ma?",
+            "es": "Sin problema. ¿Algo más?"
+          },
+          "user": [
+            {
+              "zh": "我有快递吗？",
+              "py": "Wǒ yǒu kuàidì ma?",
+              "es": "¿Tengo algún paquete?",
+              "keywords": [
+                "快递"
+              ],
+              "next": "n5",
+              "goal": 3
+            }
+          ],
+          "hint": "Pregunta por el paquete."
+        },
+        "n5": {
+          "npc": {
+            "zh": "有，在门口。你自己去拿吧。",
+            "py": "Yǒu, zài ménkǒu. Nǐ zìjǐ qù ná ba.",
+            "es": "Sí, está en la entrada. Ve tú mismo a cogerlo."
+          },
+          "user": [
+            {
+              "zh": "好的，谢谢阿姨！",
+              "py": "Hǎo de, xièxie āyí!",
+              "es": "Vale, ¡gracias!",
+              "keywords": [
+                "谢谢"
+              ],
+              "next": "n6"
+            }
+          ],
+          "hint": "Da las gracias."
+        },
+        "n6": {
+          "npc": {
+            "zh": "不客气，有事随时来！",
+            "py": "Bù kèqi, yǒu shì suíshí lái!",
+            "es": "De nada, ¡si necesitas algo, ven cuando quieras!"
+          },
+          "end": true,
+          "feedback": "Has explicado una avería, cuánto tiempo hace que pasa (两三天了) y has preguntado por el arreglo y el paquete. Con la conserje, 阿姨好 abre muchas puertas."
+        }
+      }
+    }
+  ]
+}

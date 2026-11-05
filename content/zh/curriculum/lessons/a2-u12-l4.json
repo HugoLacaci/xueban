@@ -1,0 +1,136 @@
+{
+  "id": "a2-u12-l4",
+  "title": "A partir de mañana: 从…起 y 为了…",
+  "zh": "从明天起，我每天跑步",
+  "goal": "Fijar propósitos con 从…起 («a partir de…») y explicar para qué haces algo con 为了….",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "为了", "pinyin": "wèile", "es": "para, con el fin de", "note": "为了 + objetivo，+ lo que haces: 为了找工作，我每天学汉语." },
+    { "hanzi": "信心", "pinyin": "xìnxīn", "es": "confianza, seguridad (en uno mismo)", "note": "有信心 = estar seguro de poder hacerlo." },
+    { "hanzi": "行动", "pinyin": "xíngdòng", "es": "acción; actuar" },
+    { "hanzi": "行为", "pinyin": "xíngwéi", "es": "conducta, comportamiento" },
+    { "hanzi": "永远", "pinyin": "yǒngyuǎn", "es": "siempre, para siempre" },
+    { "hanzi": "一生", "pinyin": "yìshēng", "es": "toda la vida" },
+    { "hanzi": "真正", "pinyin": "zhēnzhèng", "es": "verdadero; de verdad" },
+    { "hanzi": "实际", "pinyin": "shíjì", "es": "realista, práctico; la realidad" },
+    { "hanzi": "实在", "pinyin": "shízài", "es": "de verdad, realmente", "note": "Delante del adjetivo: 你实在太忙了." },
+    { "hanzi": "十分", "pinyin": "shífēn", "es": "muy, totalmente", "note": "= 非常, algo más escrito. No se junta con 很." },
+    { "hanzi": "完全", "pinyin": "wánquán", "es": "completamente, del todo" },
+    { "hanzi": "懂得", "pinyin": "dǒngde", "es": "comprender (de verdad), saber (por experiencia)" },
+    { "hanzi": "取得", "pinyin": "qǔdé", "es": "conseguir, obtener (un resultado)", "note": "取得好成绩 = sacar buenas notas." },
+    { "hanzi": "受到", "pinyin": "shòudào", "es": "recibir (influencia, ayuda, una visita…)" }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "从明天起，我每天都要跑步。", "py": "Cóng míngtiān qǐ, wǒ měi tiān dōu yào pǎobù.", "es": "A partir de mañana voy a correr todos los días." },
+        { "zh": "为了找工作，我每天都练习口语。", "py": "Wèile zhǎo gōngzuò, wǒ měi tiān dōu liànxí kǒuyǔ.", "es": "Para encontrar trabajo, practico la expresión oral todos los días." },
+        { "zh": "我有信心，我一定能做到。", "py": "Wǒ yǒu xìnxīn, wǒ yídìng néng zuòdào.", "es": "Confío en mí: seguro que lo consigo." }
+      ]
+    },
+    { "type": "vocab", "title": "Propósitos y fuerza de voluntad", "words": ["为了", "信心", "行动", "行为", "永远", "一生", "真正", "实际", "实在", "十分", "完全", "懂得", "取得", "受到"] },
+    {
+      "type": "phonetics-drill",
+      "title": "El bloque inicial: 从明天起 / 为了…",
+      "markdown": "**从…起** y **为了…** abren la frase con un **bloque**. Se dice de un tirón, con una ligera subida al final, y luego hay una **pausa** (la coma) antes del sujeto: 从明天起 ↗ / 我每天跑步 ↘.\n\nTonos de hoy:\n- **一生** *yìshēng*: 一 delante de primer tono → **yì**.\n- **为了** *wèile*: 为 en cuarto tono (*wèi*, «para») y 了 **neutro**; no lo confundas con 以为 *yǐwéi*.\n- **行动, 行为** *xíng-*: 行 se lee *xíng* («andar, actuar»); *háng* es «fila, banco» (银行).\n- **永远** *yǒngyuǎn*: 3 + 3 → el primero se dice como segundo.\n- **懂得** *dǒngde*: 得 neutro.",
+      "items": [
+        { "audio": "从明天起，我每天跑步。", "prompt": "¿Dónde va la pausa?", "options": ["从明天起 / 我每天跑步", "从明天 / 起我每天跑步", "从明天起我 / 每天跑步"], "answer": 0, "explain": "从…起 es un bloque: la pausa va después de 起." },
+        { "audio": "一生", "options": ["yìshēng", "yíshēng", "yīshēng"], "answer": 0, "explain": "生 es primer tono → yì." },
+        { "audio": "为了", "options": ["wèile", "wéile", "wèiliǎo"], "answer": 0, "explain": "为 cuarto tono; 了 neutro." },
+        { "audio": "行动", "options": ["xíngdòng", "hángdòng", "xīngdòng"], "answer": 0 },
+        { "audio": "永远", "prompt": "¿Cómo suena en realidad?", "options": ["yóng yuǎn (el primero sube)", "yǒng yuǎn (los dos completos)", "yòng yuǎn (el primero cae)"], "answer": 0, "explain": "3 + 3 → 2 + 3." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["信", "永"],
+      "mnemonics": {
+        "信": "亻 (persona) + 言 (palabra): una persona que cumple su palabra es de fiar. 信 = creer, confiar; 信心 = el corazón que confía.",
+        "永": "Un río que se divide en corrientes y sigue fluyendo sin parar: «para siempre». Los calígrafos lo usan para practicar, porque tiene los ocho trazos básicos (永字八法)."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "从…起 / 为了… + frase",
+      "markdown": "Los dos son **bloques que funcionan como un tiempo** (convención de a2-u09-l1): van enteros en el *Tiempo inicial*, delante del sujeto, y suelen llevar coma.\n\n- **从 + momento + 起** = «a partir de…»: **从明天起**，我每天跑步. A menudo va con 就 o 都 detrás del sujeto: 从那天起，我们**就**成了好朋友.\n- **为了 + objetivo** = «para…»: **为了找工作**，雨果每天学汉语. Si lo dices al final, hace falta **是**: 我学汉语**是为了**找工作 (✗ 我学汉语为了找工作).\n\nAdverbios nuevos del hueco *Adverbios*: **十分** (= 非常), **完全** (del todo), **实在** (de verdad), **永远** (siempre).",
+      "focus": ["time0"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "time0": { "zh": "从明天起，", "py": "cóng míngtiān qǐ," }, "subject": { "zh": "我", "py": "wǒ" }, "time": { "zh": "每天", "py": "měi tiān" }, "adverb": { "zh": "都", "py": "dōu" }, "aux": { "zh": "要", "py": "yào" }, "verb1": { "zh": "跑步", "py": "pǎobù" } }, "end": "。", "es": "A partir de mañana voy a correr todos los días.", "esOrder": [{ "text": "A partir de mañana", "slot": "time0" }, { "text": "voy a", "slot": "aux" }, { "text": "correr", "slot": "verb1" }, { "text": "todos los días", "slot": "time" }] },
+        { "slots": { "time0": { "zh": "为了找工作，", "py": "wèile zhǎo gōngzuò," }, "subject": { "zh": "雨果", "py": "Yǔguǒ" }, "time": { "zh": "每天", "py": "měi tiān" }, "adverb": { "zh": "都", "py": "dōu" }, "verb1": { "zh": "练习", "py": "liànxí" }, "object": { "zh": "口语", "py": "kǒuyǔ" } }, "end": "。", "es": "Para encontrar trabajo, Hugo practica la expresión oral todos los días." },
+        { "slots": { "time0": { "zh": "从那天起，", "py": "cóng nà tiān qǐ," }, "subject": { "zh": "我们", "py": "wǒmen" }, "adverb": { "zh": "就", "py": "jiù" }, "verb1": { "zh": "成了", "py": "chéng le" }, "object": { "zh": "好朋友", "py": "hǎo péngyou" } }, "end": "。", "es": "Desde aquel día, nos hicimos buenos amigos." },
+        { "slots": { "time0": { "zh": "为了学好汉语，", "py": "wèile xuéhǎo Hànyǔ," }, "subject": { "zh": "安娜", "py": "Ānnà" }, "verb1": { "zh": "看了", "py": "kàn le" }, "object": { "zh": "很多中国电影", "py": "hěn duō Zhōngguó diànyǐng" } }, "end": "。", "es": "Para aprender bien chino, Anna ha visto muchas películas chinas." },
+        { "slots": { "subject": { "zh": "他", "py": "tā" }, "adverb": { "zh": "十分", "py": "shífēn" }, "verb1": { "zh": "有", "py": "yǒu" }, "object": { "zh": "信心", "py": "xìnxīn" } }, "end": "。", "es": "Tiene muchísima confianza en sí mismo." },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "verb1": { "zh": "受到了", "py": "shòudào le" }, "object": { "zh": "王老师的影响", "py": "Wáng lǎoshī de yǐngxiǎng" } }, "end": "。", "es": "La profesora Wang me ha influido (lit. he recibido su influencia)." }
+      ],
+      "negative": [
+        { "slots": { "time0": { "zh": "从下个月起，", "py": "cóng xià ge yuè qǐ," }, "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "不", "py": "bù" }, "verb1": { "zh": "喝", "py": "hē" }, "object": { "zh": "咖啡", "py": "kāfēi" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "A partir del mes que viene, dejo el café." },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "完全不", "py": "wánquán bù" }, "verb1": { "zh": "懂", "py": "dǒng" }, "object": { "zh": "他的意思", "py": "tā de yìsi" } }, "end": "。", "es": "No entiendo en absoluto lo que quiere decir." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你学汉语", "py": "nǐ xué Hànyǔ" }, "verb1": { "zh": "是为了", "py": "shì wèile" }, "object": { "zh": "什么", "py": "shénme" } }, "end": "？", "es": "¿Para qué estudias chino?" },
+        { "slots": { "time0": { "zh": "从明天起，", "py": "cóng míngtiān qǐ," }, "subject": { "zh": "你", "py": "nǐ" }, "aux": { "zh": "能", "py": "néng" }, "verb1": { "zh": "早起", "py": "zǎoqǐ" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿Podrás madrugar a partir de mañana?" }
+      ],
+      "mistakes": [
+        { "wrong": "我每天跑步为了身体健康。", "right": "为了身体健康，我每天跑步。", "why": "为了 va delante, como un tiempo. Al final solo puede ir con 是: 我每天跑步是为了身体健康." },
+        { "wrong": "我从明天起跑步每天。", "right": "从明天起，我每天跑步。", "why": "每天 es un tiempo: va delante del verbo, nunca al final." },
+        { "wrong": "我十分很高兴。", "right": "我十分高兴。", "why": "十分 ya es «muy»: no se acumula con 很." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Los propósitos de Hugo",
+      "lines": [
+        { "speaker": "大卫", "zh": "雨果，你在写什么？", "py": "Yǔguǒ, nǐ zài xiě shénme?", "es": "Hugo, ¿qué escribes?" },
+        { "speaker": "雨果", "zh": "我的计划。从下个星期起，我每天早上六点起床，跑步半个小时。", "py": "Wǒ de jìhuà. Cóng xià ge xīngqī qǐ, wǒ měi tiān zǎoshang liù diǎn qǐchuáng, pǎobù bàn ge xiǎoshí.", "es": "Mi plan. A partir de la semana que viene, me levanto a las seis todas las mañanas y corro media hora." },
+        { "speaker": "大卫", "zh": "真的吗？你实在太忙了，能做到吗？", "py": "Zhēn de ma? Nǐ shízài tài máng le, néng zuòdào ma?", "es": "¿En serio? Estás realmente muy liado, ¿podrás hacerlo?" },
+        { "speaker": "雨果", "zh": "我有信心！为了身体健康，我一定要做到。", "py": "Wǒ yǒu xìnxīn! Wèile shēntǐ jiànkāng, wǒ yídìng yào zuòdào.", "es": "¡Confío en mí! Por mi salud, tengo que conseguirlo." },
+        { "speaker": "大卫", "zh": "上次你也这么说，可是没有行动。", "py": "Shàng cì nǐ yě zhème shuō, kěshì méiyǒu xíngdòng.", "es": "La última vez también dijiste lo mismo, pero no hiciste nada." },
+        { "speaker": "雨果", "zh": "这次不一样。我真正懂得了：只说不做没有用。", "py": "Zhè cì bù yíyàng. Wǒ zhēnzhèng dǒngde le: zhǐ shuō bú zuò méiyǒu yòng.", "es": "Esta vez es distinto. Lo he entendido de verdad: hablar sin hacer no sirve de nada." },
+        { "speaker": "大卫", "zh": "好吧。为了帮你，我跟你一起跑。", "py": "Hǎo ba. Wèile bāng nǐ, wǒ gēn nǐ yìqǐ pǎo.", "es": "Vale. Para ayudarte, corro contigo." },
+        { "speaker": "雨果", "zh": "太好了！而且从下个月起，我每天学三十个生词，为了考试取得好成绩。", "py": "Tài hǎo le! Érqiě cóng xià ge yuè qǐ, wǒ měi tiān xué sānshí ge shēngcí, wèile kǎoshì qǔdé hǎo chéngjì.", "es": "¡Genial! Y además, a partir del mes que viene, voy a aprender treinta palabras nuevas al día para sacar buena nota en el examen." },
+        { "speaker": "大卫", "zh": "你的计划实际吗？三十个太多了吧！", "py": "Nǐ de jìhuà shíjì ma? Sānshí ge tài duō le ba!", "es": "¿Tu plan es realista? ¡Treinta son demasiadas!" },
+        { "speaker": "雨果", "zh": "好，那二十个。你说得完全对。", "py": "Hǎo, nà èrshí ge. Nǐ shuō de wánquán duì.", "es": "Vale, pues veinte. Tienes toda la razón." }
+      ],
+      "notes": "En el habla, 为了… a veces se añade al final como explicación (…，为了考试取得好成绩), igual que en español «…, para sacar buena nota». Al escribir, mejor delante o con 是为了."
+    },
+    { "type": "exercises", "count": 17, "bank": ["g-word-order", "g-modal-verbs", "g-dates-time", "u09"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "time0": { "zh": "从明天起，" }, "subject": { "zh": "我" }, "time": { "zh": "每天" }, "verb1": { "zh": "跑步" } }, "end": "。", "es": "A partir de mañana, corro todos los días." }, "distractors": ["了"] },
+        { "sentence": { "slots": { "time0": { "zh": "为了找工作，" }, "subject": { "zh": "雨果" }, "time": { "zh": "每天" }, "adverb": { "zh": "都" }, "verb1": { "zh": "练习" }, "object": { "zh": "口语" } }, "end": "。", "es": "Para encontrar trabajo, Hugo practica la expresión oral todos los días." }, "distractors": ["是"] },
+        { "sentence": { "slots": { "subject": { "zh": "我" }, "adverb": { "zh": "完全不" }, "verb1": { "zh": "懂" }, "object": { "zh": "他的意思" } }, "end": "。", "es": "No entiendo en absoluto lo que quiere decir." }, "distractors": ["没"] },
+        { "sentence": { "slots": { "time0": { "zh": "为了取得好成绩，" }, "subject": { "zh": "安娜" }, "time": { "zh": "每天晚上" }, "adverb": { "zh": "都" }, "with": { "zh": "跟小李一起" }, "place": { "zh": "在图书馆" }, "verb1": { "zh": "复习" }, "complement": { "zh": "两个小时" } }, "end": "。", "es": "Para sacar buenas notas, Anna repasa dos horas todas las noches en la biblioteca con Xiao Li." }, "distractors": ["了", "是"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "从明天起，我每天都要跑步。", "py": "Cóng míngtiān qǐ, wǒ měi tiān dōu yào pǎobù.", "es": "A partir de mañana voy a correr todos los días." },
+        { "zh": "为了身体健康，我一定要做到。", "py": "Wèile shēntǐ jiànkāng, wǒ yídìng yào zuòdào.", "es": "Por mi salud, tengo que conseguirlo." },
+        { "zh": "只说不做没有用。", "py": "Zhǐ shuō bú zuò méiyǒu yòng.", "es": "Hablar sin hacer no sirve de nada." },
+        { "zh": "你说得完全对。", "py": "Nǐ shuō de wánquán duì.", "es": "Tienes toda la razón." }
+      ],
+      "respond": [
+        { "q": { "zh": "你学汉语是为了什么？", "py": "Nǐ xué Hànyǔ shì wèile shénme?", "es": "¿Para qué estudias chino?" }, "model": { "zh": "我学汉语是为了在中国工作。", "py": "Wǒ xué Hànyǔ shì wèile zài Zhōngguó gōngzuò.", "es": "Estudio chino para trabajar en China." } },
+        { "q": { "zh": "从下个月起，你打算做什么？", "py": "Cóng xià ge yuè qǐ, nǐ dǎsuàn zuò shénme?", "es": "¿Qué piensas hacer a partir del mes que viene?" }, "model": { "zh": "从下个月起，我每天早上都去跑步。", "py": "Cóng xià ge yuè qǐ, wǒ měi tiān zǎoshang dōu qù pǎobù.", "es": "A partir del mes que viene, voy a correr todas las mañanas." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Una frase de la profesora Wang",
+      "text": "雨果刚来上海的时候，汉语说得不好，他对自己没有信心。有一天，王老师对他说：“学语言是一生的事。只说不做没有用，你要有行动。”雨果受到了很大的影响。从那天起，他每天早上六点起床。为了练习口语，他每天都跟小李说半个小时汉语。他也懂得了一件事：说错了没关系，真正的问题是不说。他的行为改变了，汉语也越来越好了。半年以后，他在考试中取得了十分好的成绩。雨果说：“我永远不会忘记王老师的这句话。”",
+      "es": "Cuando Hugo acababa de llegar a Shanghái, hablaba mal chino y no tenía confianza en sí mismo. Un día, la profesora Wang le dijo: «Aprender una lengua es cosa de toda la vida. Hablar sin hacer no sirve de nada: tienes que pasar a la acción». A Hugo le influyó mucho. Desde aquel día, se levanta a las seis de la mañana. Para practicar la expresión oral, habla media hora en chino con Xiao Li todos los días. También comprendió una cosa: equivocarse no importa; el verdadero problema es no hablar. Cambió su forma de actuar y su chino fue mejorando cada vez más. Medio año después, sacó una nota excelente en el examen. Hugo dice: «Nunca olvidaré esta frase de la profesora Wang».",
+      "questions": [
+        { "q": "¿Cómo se sentía Hugo al llegar?", "options": ["对自己没有信心", "十分有信心", "很高兴"], "answer": 0 },
+        { "q": "¿Qué hace desde aquel día?", "options": ["每天六点起床", "每天看电影", "每天加班"], "answer": 0 },
+        { "q": "Según Hugo, ¿cuál es el verdadero problema?", "options": ["不说", "说错", "说得慢"], "answer": 0 },
+        { "q": "¿Qué consiguió medio año después?", "options": ["很好的成绩", "一个新工作", "一个新朋友"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

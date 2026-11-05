@@ -1,0 +1,127 @@
+{
+  "id": "a1-u04-l4",
+  "title": "Primero, segundo… y «ciento y pico»",
+  "zh": "第一 · 一百多",
+  "goal": "Decir ordinales con 第 (第一, 第二, 第一百零五页) y dar cifras aproximadas con 几十, 一百多, 一半 y 大部分.",
+  "minutes": 14,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "第", "pinyin": "dì", "es": "(prefijo de los ordinales)", "note": "第 + número = «-ésimo»: 第三 = tercero." },
+    { "hanzi": "第一", "pinyin": "dì-yī", "es": "primero", "note": "El 一 de los ordinales no cambia de tono: dì-yī." },
+    { "hanzi": "第二", "pinyin": "dì-èr", "es": "segundo", "note": "Siempre 二, nunca ✗第两." },
+    { "hanzi": "页", "pinyin": "yè", "es": "página", "note": "第十页 = la página diez; 十页 = diez páginas." },
+    { "hanzi": "几十", "pinyin": "jǐshí", "es": "unas decenas, varias decenas", "note": "Igual: 几百, 几千, 几万 (unos cientos, unos miles…)." },
+    { "hanzi": "一百多", "pinyin": "yìbǎi duō", "es": "ciento y pico, más de cien", "note": "多 va detrás de la cifra redonda: 二十多, 两千多." },
+    { "hanzi": "一半", "pinyin": "yíbàn", "es": "la mitad" },
+    { "hanzi": "部分", "pinyin": "bùfen", "es": "parte" },
+    { "hanzi": "大部分", "pinyin": "dàbùfen", "es": "la mayor parte" },
+    { "hanzi": "一部分", "pinyin": "yíbùfen", "es": "una parte" }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "我们看第一百零五页。", "py": "Wǒmen kàn dì yìbǎi líng wǔ yè.", "es": "Miramos la página 105." },
+        { "zh": "中文班有三十多个学生。", "py": "Zhōngwén bān yǒu sānshí duō ge xuésheng.", "es": "En la clase de chino hay treinta y tantos estudiantes." },
+        { "zh": "一半的学生是外国人。", "py": "Yíbàn de xuésheng shì wàiguórén.", "es": "La mitad de los estudiantes son extranjeros." }
+      ]
+    },
+    { "type": "vocab", "title": "Ordinales y cifras «a ojo»", "words": ["第", "第一", "第二", "页", "几十", "一百多", "一半", "部分", "大部分", "一部分"] },
+    {
+      "type": "phonetics-drill",
+      "title": "La er de 二 y el 一 de los ordinales",
+      "markdown": "**二 èr** no tiene equivalente en español: empieza con una vocal neutra (como la «e» de *the* en inglés) y al final **la lengua se dobla hacia atrás**, sin tocar el paladar. Cuarto tono: cae.\n\n**第 dì** suena igual que 弟 (hermano menor): *d* sin aire y 4.º tono.\n\n**第一 dì-yī**: en los ordinales el 一 **no cambia** de tono aunque venga un 4.º tono delante o detrás: 第一 *dì-yī*, 第一页 *dì-yī yè*. Compara con 一页 *yí yè* (una página).",
+      "items": [
+        { "audio": "第二", "options": ["dì-ěr", "dì-èr", "dí-èr"], "answer": 1, "explain": "第 y 二, los dos en 4.º tono." },
+        { "audio": "第一", "options": ["dì-yí", "dì-yì", "dì-yī"], "answer": 2, "explain": "En los ordinales 一 conserva su tono: yī." },
+        { "audio": "几十", "options": ["jīshí", "jǐshí", "jìshí"], "answer": 1, "explain": "几 es 3.er tono: jǐ." },
+        { "audio": "二十", "options": ["èrshí", "àshí", "ěrshí"], "answer": 0, "explain": "La er empieza neutra y termina con la lengua doblada." },
+        { "audio": "一半", "options": ["yībàn", "yìbàn", "yíbàn"], "answer": 2, "explain": "半 es 4.º tono: 一 pasa a yí." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["第", "半"],
+      "mnemonics": {
+        "第": "⺮ (bambú) arriba: los libros antiguos eran tablillas de bambú atadas en orden, una tras otra → el orden, «primero, segundo…».",
+        "半": "八 (separar, dividir) arriba + 牛 (vaca) simplificada: partir la vaca por la mitad → mitad."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "第 + número, y los números «a ojo»",
+      "markdown": "**Ordinales**: 第 + número: 第一, 第二, 第十, 第一百零五. Fíjate en la diferencia:\n\n| Cantidad | Orden |\n|---|---|\n| 两个学生 (dos estudiantes) | 第二个学生 (el segundo estudiante) |\n| 十页 (diez páginas) | 第十页 (la página diez) |\n\n- Con 第 siempre **二**: 第二, 第二十, 第二百 (nunca ✗第两).\n- Para preguntar el número de orden: **第几**: 第几页？ (¿qué página?).\n\n**Aproximaciones**:\n\n- **几 + 十 / 百 / 千 / 万** = unos cuantos: 几十个学生 (unas decenas), 几千公里 (unos miles de km).\n- **cifra redonda + 多** = «y pico»: 一百多 (100–199), 三十多个学生, 两千四百多万. El 多 va **detrás** de la cifra y **delante** del clasificador.\n- **一半** (la mitad), **大部分** (la mayor parte), **一部分** (una parte) y 大多数 van delante del nombre: 一半的学生, 大部分同学.\n\nNo se juntan 几 y 多: ✗几十多.",
+      "focus": ["object"],
+      "sentences": [
+        { "slots": { "subject": { "zh": "我们", "py": "wǒmen" }, "verb1": { "zh": "看", "py": "kàn" }, "object": { "zh": "第一百零五页", "py": "dì yìbǎi líng wǔ yè" } }, "end": "。", "es": "Miramos la página 105." },
+        { "slots": { "subject": { "zh": "安娜", "py": "Ānnà" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "第一个学生", "py": "dì-yī ge xuésheng" } }, "end": "。", "es": "Anna es la primera alumna (de la lista)." },
+        { "slots": { "subject": { "zh": "中文班", "py": "Zhōngwén bān" }, "verb1": { "zh": "有", "py": "yǒu" }, "object": { "zh": "几十个学生", "py": "jǐshí ge xuésheng" } }, "end": "。", "es": "En la clase de chino hay unas decenas de estudiantes." },
+        { "slots": { "subject": { "zh": "上海的人口", "py": "Shànghǎi de rénkǒu" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "两千四百多万", "py": "liǎngqiān sìbǎi duō wàn" } }, "end": "。", "es": "Shanghái tiene veinticuatro millones y pico de habitantes." },
+        { "slots": { "subject": { "zh": "一半的学生", "py": "yíbàn de xuésheng" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "外国人", "py": "wàiguórén" } }, "end": "。", "es": "La mitad de los estudiantes son extranjeros." },
+        { "slots": { "subject": { "zh": "大部分同学", "py": "dàbùfen tóngxué" }, "verb1": { "zh": "说", "py": "shuō" }, "object": { "zh": "英语", "py": "Yīngyǔ" } }, "end": "。", "es": "La mayoría de los compañeros habla inglés." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "我们", "py": "wǒmen" }, "adverb": { "zh": "不", "py": "bú" }, "verb1": { "zh": "看", "py": "kàn" }, "object": { "zh": "第二页", "py": "dì-èr yè" } }, "end": "。", "es": "No miramos la página dos." },
+        { "slots": { "subject": { "zh": "一部分学生", "py": "yíbùfen xuésheng" }, "adverb": { "zh": "不", "py": "bù" }, "verb1": { "zh": "说", "py": "shuō" }, "object": { "zh": "英语", "py": "Yīngyǔ" } }, "end": "。", "es": "Una parte de los estudiantes no habla inglés." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "我们", "py": "wǒmen" }, "verb1": { "zh": "看", "py": "kàn" }, "object": { "zh": "第几页", "py": "dì jǐ yè" } }, "end": "？", "es": "¿Qué página miramos?" },
+        { "slots": { "subject": { "zh": "你们班", "py": "nǐmen bān" }, "verb1": { "zh": "有", "py": "yǒu" }, "object": { "zh": "多少个学生", "py": "duōshao ge xuésheng" } }, "end": "？", "es": "¿Cuántos estudiantes hay en vuestra clase?" }
+      ],
+      "mistakes": [
+        { "wrong": "第两", "right": "第二", "why": "两 es para cantidades («dos de algo»). En el orden siempre 二." },
+        { "wrong": "一多百", "right": "一百多", "why": "多 va detrás de la cifra redonda: 一百多 (100 y pico), 二十多 (20 y pico)." },
+        { "wrong": "几十多个学生", "right": "几十个学生", "why": "几 y 多 ya dicen «unos cuantos»: no se combinan." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "¿Qué página?",
+      "lines": [
+        { "speaker": "王老师", "zh": "同学们，我们看第一百零五页。", "py": "Tóngxuémen, wǒmen kàn dì yìbǎi líng wǔ yè.", "es": "Chicos, vamos a la página 105." },
+        { "speaker": "大卫", "zh": "老师，第几页？", "py": "Lǎoshī, dì jǐ yè?", "es": "Profesora, ¿qué página?" },
+        { "speaker": "王老师", "zh": "第一百零五页。第二个汉字是什么？", "py": "Dì yìbǎi líng wǔ yè. Dì-èr ge Hànzì shì shénme?", "es": "La 105. ¿Cuál es el segundo carácter?" },
+        { "speaker": "大卫", "zh": "是“万”。", "py": "Shì “wàn”.", "es": "Es 万." },
+        { "speaker": "安娜", "zh": "老师，我们班有多少个学生？", "py": "Lǎoshī, wǒmen bān yǒu duōshao ge xuésheng?", "es": "Profesora, ¿cuántos alumnos somos en la clase?" },
+        { "speaker": "王老师", "zh": "三十多个。一半的学生是外国人。", "py": "Sānshí duō ge. Yíbàn de xuésheng shì wàiguórén.", "es": "Treinta y pico. La mitad son extranjeros." },
+        { "speaker": "雨果", "zh": "大部分外国同学说英语。", "py": "Dàbùfen wàiguó tóngxué shuō Yīngyǔ.", "es": "La mayoría de los compañeros extranjeros habla inglés." },
+        { "speaker": "安娜", "zh": "我们也说汉语！", "py": "Wǒmen yě shuō Hànyǔ!", "es": "¡Y también hablamos chino!" }
+      ],
+      "notes": "En clase oirás muchas veces 第几页？ y 我们看第…页. 同学们 es la forma habitual del profesor para dirigirse a toda la clase."
+    },
+    { "type": "exercises", "count": 15, "bank": ["g-numbers", "g-measure-words", "u02"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "我们" }, "verb1": { "zh": "看" }, "object": { "zh": "第一百零五页" } }, "end": "。", "es": "Miramos la página 105." }, "distractors": ["两"] },
+        { "sentence": { "slots": { "subject": { "zh": "上海的人口" }, "verb1": { "zh": "是" }, "object": { "zh": "两千四百多万" } }, "end": "。", "es": "Shanghái tiene veinticuatro millones y pico de habitantes." }, "distractors": ["几"] },
+        { "sentence": { "slots": { "subject": { "zh": "一半的学生" }, "verb1": { "zh": "是" }, "object": { "zh": "外国人" } }, "end": "。", "es": "La mitad de los estudiantes son extranjeros." } },
+        { "sentence": { "slots": { "subject": { "zh": "我们班的大部分同学" }, "adverb": { "zh": "都" }, "verb1": { "zh": "说" }, "object": { "zh": "英语" } }, "end": "。", "es": "Casi todos los compañeros de nuestra clase hablan inglés." }, "distractors": ["第"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "第一，第二，第三。", "py": "Dì-yī, dì-èr, dì-sān.", "es": "Primero, segundo, tercero." },
+        { "zh": "我们看第一百零五页。", "py": "Wǒmen kàn dì yìbǎi líng wǔ yè.", "es": "Miramos la página 105." },
+        { "zh": "我们班有三十多个学生。", "py": "Wǒmen bān yǒu sānshí duō ge xuésheng.", "es": "En nuestra clase hay treinta y pico alumnos." }
+      ],
+      "respond": [
+        { "q": { "zh": "你们班有多少个学生？", "py": "Nǐmen bān yǒu duōshao ge xuésheng?", "es": "¿Cuántos alumnos hay en vuestra clase?" }, "model": { "zh": "我们班有二十多个学生。", "py": "Wǒmen bān yǒu èrshí duō ge xuésheng.", "es": "Somos veintitantos." } },
+        { "q": { "zh": "我们看第几页？", "py": "Wǒmen kàn dì jǐ yè?", "es": "¿Qué página miramos?" }, "model": { "zh": "我们看第二十页。", "py": "Wǒmen kàn dì èrshí yè.", "es": "Miramos la página veinte." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Nuestra clase",
+      "text": "我们中文班有三十多个学生。一半的学生是外国人：大部分是美国人，一部分是西班牙人。雨果是第一个西班牙学生，安娜是第二个。王老师说：“我们看第一百零五页！”",
+      "es": "En nuestra clase de chino hay treinta y tantos estudiantes. La mitad son extranjeros: la mayoría, estadounidenses; una parte, españoles. Hugo es el primer estudiante español y Anna, la segunda. La profesora Wang dice: «¡Vamos a la página 105!».",
+      "questions": [
+        { "q": "¿Cuántos estudiantes hay?", "options": ["Unos 13", "Treinta y tantos", "Unos 300"], "answer": 1 },
+        { "q": "¿De dónde es la mayoría de los extranjeros?", "options": ["Estados Unidos", "España", "China"], "answer": 0 },
+        { "q": "¿Qué es Anna en la lista de españoles?", "options": ["La primera", "La segunda", "La tercera"], "answer": 1 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "id": "a1-u19-l4",
+  "title": "不, 没 y 别: las tres negaciones",
+  "zh": "别动！",
+  "goal": "Elegir bien entre 不, 没 y 别 (y 不用), dar consejos con 最好 y prohibir con 别 (…了).",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "别", "pinyin": "bié", "es": "no (+ orden): ¡no hagas…!", "note": "别动！ = ¡no te muevas! 别…了 = deja de…, ya no…" },
+    { "hanzi": "动", "pinyin": "dòng", "es": "moverse; mover" },
+    { "hanzi": "动作", "pinyin": "dòngzuò", "es": "movimiento, gesto" },
+    { "hanzi": "最好", "pinyin": "zuìhǎo", "es": "lo mejor es…; más vale que…", "note": "Va delante del verbo: 你最好多休息." },
+    { "hanzi": "咳嗽", "pinyin": "késou", "es": "toser; tos", "note": "Fuera del HSK 1–3, pero lo necesitarás en el médico." },
+    { "hanzi": "不", "pinyin": "bù", "es": "no (costumbres, deseos, futuro, estados)", "note": "Repaso de la U1." },
+    { "hanzi": "没有", "pinyin": "méiyǒu", "es": "no tener; no (ha pasado)", "note": "Repaso de la U3: 没有 = 没." },
+    { "hanzi": "不用", "pinyin": "búyòng", "es": "no hace falta", "note": "Repaso de la U12." }
+  ],
+  "extraVocab": ["咳嗽"],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "别动！", "py": "Bié dòng!", "es": "¡No te muevas!" },
+        { "zh": "你最好多休息，别喝冷水。", "py": "Nǐ zuìhǎo duō xiūxi, bié hē lěng shuǐ.", "es": "Más vale que descanses mucho y no bebas agua fría." },
+        { "zh": "我昨天没去上课，明天也不去。", "py": "Wǒ zuótiān méi qù shàngkè, míngtiān yě bú qù.", "es": "Ayer no fui a clase, y mañana tampoco voy." }
+      ]
+    },
+    { "type": "vocab", "title": "Negar, prohibir y aconsejar", "words": ["别", "动", "动作", "最好", "咳嗽", "不", "没有", "不用"] },
+    {
+      "type": "phonetics-drill",
+      "title": "不 bù / bú, 没 méi y 别 bié",
+      "markdown": "- **不** es *bù* (cuarto tono), pero delante de **otro cuarto tono** pasa a **bú**: 不去 *bú qù*, 不用 *bú yòng*, 不是 *bú shì*. Delante de los demás tonos sigue siendo *bù*: 不疼 *bù téng*, 不舒服 *bù shūfu*, 不冷 *bù lěng*.\n- **没** *méi* y **别** *bié* son siempre **segundo tono**: suben, como una pregunta.\n- 咳嗽 *késou*: la segunda sílaba es neutra.",
+      "items": [
+        { "audio": "不去", "options": ["bú qù", "bù qù"], "answer": 0, "explain": "不 + cuarto tono → bú." },
+        { "audio": "不疼", "options": ["bù téng", "bú téng"], "answer": 0, "explain": "疼 es segundo tono: 不 se queda en bù." },
+        { "audio": "不用", "options": ["bú yòng", "bù yòng"], "answer": 0, "explain": "用 yòng es cuarto tono → bú." },
+        { "audio": "别动", "options": ["bié dòng", "biè dòng", "bí dòng"], "answer": 0, "explain": "别 sube (2.º) y 动 cae (4.º)." },
+        { "audio": "没去", "options": ["méi qù", "mèi qù", "mì qù"], "answer": 0, "explain": "没 méi siempre en segundo tono." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["别", "动"],
+      "mnemonics": {
+        "别": "另 (otro, aparte) + 刂 (cuchillo): cortar para separar. De «separar, apartar» viene «¡no (lo hagas)!» y también 别人 (los otros).",
+        "动": "云 + 力 (fuerza): hace falta fuerza para mover algo. 力 aparece en otras palabras de esfuerzo."
+      }
+    },
+    {
+      "type": "explain",
+      "title": "La negación completa: ¿不, 没 o 别?",
+      "markdown": "| Negación | Para… | Ejemplo |\n|---|---|---|\n| **不** | costumbres, deseos, el futuro, estados y adjetivos; 是, 会, 想, 能… | 我**不**喝酒。 明天我**不**去。 我**不**舒服。 |\n| **没 / 没有** | lo que **no ha pasado** (sin 了) y el verbo 有 | 我昨天**没**去。 我**没有**钱。 |\n| **别** (= 不要) | **órdenes y consejos**: «¡no hagas…!» | **别**动！ 你**别**喝冷水。 |\n| **不用** | «no hace falta» | 你**不用**请假。 |\n\n**别…了** = «deja de…, ya no…»: 下雨了，**别**出去**了**。 (Llueve: ya no salgas.)\n\nUna prueba rápida: si en español dirías «¡no…!» dando una orden → 别. Si dirías «no + pasado» (no fui, no he comido) → 没. Casi todo lo demás → 不."
+    },
+    {
+      "type": "skeleton",
+      "title": "Tres negaciones en el mismo hueco",
+      "markdown": "不, 没, 别, 不用 y también 最好 van **en el mismo hueco**: el de los **adverbios**, delante del auxiliar y del verbo.\n\n- Consejo: 你**最好**多休息。\n- Orden negativa: 你**别**喝冷水。 / **别**动！ (sin sujeto, como en español).\n- Pasado negado: 我**没**去。 Futuro negado: 我明天**不**去。\n\nCon 别 la frase no lleva 吗 ni 了 del verbo; si añades 了 al final, significa «deja de…» o «ya no…».",
+      "focus": ["adverb"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "adverb": { "zh": "最好", "py": "zuìhǎo" }, "place": { "zh": "在宿舍", "py": "zài sùshè" }, "verb1": { "zh": "休息", "py": "xiūxi" } }, "end": "。", "es": "Más vale que descanses en la residencia.", "esOrder": [{ "text": "Más vale que", "slot": "adverb" }, { "text": "descanses", "slot": "verb1" }, { "text": "en la residencia", "slot": "place" }] },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "adverb": { "zh": "最好", "py": "zuìhǎo" }, "verb1": { "zh": "穿", "py": "chuān" }, "object": { "zh": "大衣", "py": "dàyī" } }, "end": "。", "es": "Mejor ponte el abrigo." },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "time": { "zh": "每天", "py": "měi tiān" }, "adverb": { "zh": "都", "py": "dōu" }, "verb1": { "zh": "喝", "py": "hē" }, "object": { "zh": "很多水", "py": "hěn duō shuǐ" } }, "end": "。", "es": "Bebo mucha agua todos los días." },
+        { "slots": { "subject": { "zh": "这个动作", "py": "zhège dòngzuò" }, "adverb": { "zh": "很", "py": "hěn" }, "verb1": { "zh": "难", "py": "nán" } }, "end": "。", "es": "Este movimiento es muy difícil." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "time": { "zh": "明天", "py": "míngtiān" }, "adverb": { "zh": "不", "py": "bú" }, "verb1": { "zh": "去医院", "py": "qù yīyuàn" } }, "end": "。", "es": "Mañana no voy al hospital." },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "time": { "zh": "昨天", "py": "zuótiān" }, "adverb": { "zh": "没", "py": "méi" }, "verb1": { "zh": "去医院", "py": "qù yīyuàn" } }, "end": "。", "es": "Ayer no fui al hospital." },
+        { "slots": { "adverb": { "zh": "别", "py": "bié" }, "verb1": { "zh": "动", "py": "dòng" } }, "end": "！", "es": "¡No te muevas!" },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "adverb": { "zh": "别", "py": "bié" }, "verb1": { "zh": "喝", "py": "hē" }, "object": { "zh": "冷水", "py": "lěng shuǐ" } }, "end": "。", "es": "No bebas agua fría." },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "adverb": { "zh": "不用", "py": "búyòng" }, "verb1": { "zh": "请假", "py": "qǐngjià" } }, "end": "。", "es": "No hace falta que pidas permiso." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "aux": { "zh": "能", "py": "néng" }, "verb1": { "zh": "动", "py": "dòng" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿Me puedo mover?" },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "咳嗽", "py": "késou" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿Tienes tos?" }
+      ],
+      "mistakes": [
+        { "wrong": "你没动！", "right": "别动！", "why": "Para dar una orden negativa («¡no te muevas!») se usa 别, no 没." },
+        { "wrong": "明天我没去。", "right": "明天我不去。", "why": "El futuro y las decisiones se niegan con 不; 没 es para lo que ya no ocurrió." },
+        { "wrong": "你多休息最好。", "right": "你最好多休息。", "why": "最好 va delante del verbo, en el hueco de los adverbios." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Xiao Li visita a Hugo",
+      "lines": [
+        { "speaker": "小李", "zh": "雨果，你身体怎么样了？", "py": "Yǔguǒ, nǐ shēntǐ zěnmeyàng le?", "es": "Hugo, ¿cómo estás ya?" },
+        { "speaker": "雨果", "zh": "不发烧了，还有点儿咳嗽。", "py": "Bù fāshāo le, hái yǒudiǎnr késou.", "es": "Ya no tengo fiebre, pero todavía toso un poco." },
+        { "speaker": "小李", "zh": "你吃药了没有？", "py": "Nǐ chī yào le méiyǒu?", "es": "¿Te has tomado la medicina?" },
+        { "speaker": "雨果", "zh": "吃了。医生说我最好多休息，别喝冷水。", "py": "Chī le. Yīshēng shuō wǒ zuìhǎo duō xiūxi, bié hē lěng shuǐ.", "es": "Sí. La médica dice que más vale que descanse mucho y que no beba agua fría." },
+        { "speaker": "小李", "zh": "那你今天别去打球了。", "py": "Nà nǐ jīntiān bié qù dǎ qiú le.", "es": "Entonces hoy ya no vayas a jugar a la pelota." },
+        { "speaker": "雨果", "zh": "我不去。我今天也没去上课，请假了。", "py": "Wǒ bú qù. Wǒ jīntiān yě méi qù shàngkè, qǐngjià le.", "es": "No voy. Hoy tampoco he ido a clase: he pedido permiso." },
+        { "speaker": "小李", "zh": "明天呢？", "py": "Míngtiān ne?", "es": "¿Y mañana?" },
+        { "speaker": "雨果", "zh": "明天不用请假，我要去上课。", "py": "Míngtiān búyòng qǐngjià, wǒ yào qù shàngkè.", "es": "Mañana no hace falta pedir permiso: voy a ir a clase." },
+        { "speaker": "小李", "zh": "好。你别起来，我去食堂买饭。", "py": "Hǎo. Nǐ bié qǐlai, wǒ qù shítáng mǎi fàn.", "es": "Bien. No te levantes, voy yo al comedor a comprar la comida." },
+        { "speaker": "雨果", "zh": "谢谢你，小李！", "py": "Xièxie nǐ, Xiǎo Lǐ!", "es": "¡Gracias, Xiao Li!" }
+      ],
+      "notes": "En una sola conversación salen las cuatro negaciones: 不发烧了 (ya no), 没去上课 (no ocurrió), 别喝冷水 / 别去打球了 (consejo y «ya no vayas») y 不用请假 (no hace falta)."
+    },
+    { "type": "exercises", "count": 18, "bank": ["g-bu-mei", "g-mei", "g-modal-verbs", "u11"] },
+    {
+      "type": "sentence-builder",
+      "title": "Construye la frase completa",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "你" }, "time": { "zh": "今天" }, "adverb": { "zh": "最好" }, "place": { "zh": "在宿舍" }, "verb1": { "zh": "休息" } }, "end": "。", "es": "Hoy más vale que descanses en la residencia." }, "distractors": ["没"] },
+        { "sentence": { "slots": { "subject": { "zh": "我" }, "time": { "zh": "昨天" }, "adverb": { "zh": "没" }, "with": { "zh": "跟小李一起" }, "verb1": { "zh": "去医院" }, "verb2": { "zh": "看病" } }, "end": "。", "es": "Ayer no fui al médico con Xiao Li." }, "distractors": ["了", "不"] },
+        { "sentence": { "slots": { "time0": { "zh": "明天上午" }, "subject": { "zh": "你" }, "adverb": { "zh": "别" }, "verb1": { "zh": "去学校" }, "verb2": { "zh": "上课" }, "particle": { "zh": "了" } }, "end": "。", "es": "Mañana por la mañana ya no vayas a clase." }, "distractors": ["没"] },
+        { "sentence": { "slots": { "subject": { "zh": "我" }, "time": { "zh": "今天早上" }, "place": { "zh": "在食堂" }, "verb1": { "zh": "喝了" }, "object": { "zh": "一杯热水" } }, "end": "。", "es": "Esta mañana me he bebido un vaso de agua caliente en el comedor." } },
+        { "sentence": { "slots": { "subject": { "zh": "他" }, "time": { "zh": "明天" }, "adverb": { "zh": "不" }, "aux": { "zh": "能" }, "with": { "zh": "跟我们一起" }, "verb1": { "zh": "去" }, "verb2": { "zh": "打" }, "object": { "zh": "篮球" } }, "end": "。", "es": "Mañana no puede ir a jugar al baloncesto con nosotros." }, "distractors": ["没"] },
+        { "sentence": { "slots": { "subject": { "zh": "小李" }, "time": { "zh": "昨天晚上" }, "adverb": { "zh": "没" }, "place": { "zh": "在宿舍" }, "verb1": { "zh": "睡觉" } }, "end": "。", "es": "Anoche Xiao Li no durmió en la residencia." }, "distractors": ["了"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "别动！", "py": "Bié dòng!", "es": "¡No te muevas!" },
+        { "zh": "你最好多休息。", "py": "Nǐ zuìhǎo duō xiūxi.", "es": "Más vale que descanses mucho." },
+        { "zh": "别喝冷水。", "py": "Bié hē lěng shuǐ.", "es": "No bebas agua fría." },
+        { "zh": "我昨天没去上课，明天也不去。", "py": "Wǒ zuótiān méi qù shàngkè, míngtiān yě bú qù.", "es": "Ayer no fui a clase, y mañana tampoco voy." }
+      ],
+      "respond": [
+        { "q": { "zh": "我咳嗽，能喝冷水吗？", "py": "Wǒ késou, néng hē lěng shuǐ ma?", "es": "Tengo tos, ¿puedo beber agua fría?" }, "model": { "zh": "你最好别喝冷水，喝热水吧。", "py": "Nǐ zuìhǎo bié hē lěng shuǐ, hē rè shuǐ ba.", "es": "Mejor no bebas agua fría: bebe agua caliente." } },
+        { "q": { "zh": "你昨天去上课了吗？", "py": "Nǐ zuótiān qù shàngkè le ma?", "es": "¿Fuiste ayer a clase?" }, "model": { "zh": "没去，我生病了。", "py": "Méi qù, wǒ shēngbìng le.", "es": "No, me puse malo." } },
+        { "q": { "zh": "明天我要请假吗？", "py": "Míngtiān wǒ yào qǐngjià ma?", "es": "¿Mañana tengo que pedir permiso?" }, "model": { "zh": "不用，明天没有课。", "py": "Búyòng, míngtiān méiyǒu kè.", "es": "No hace falta: mañana no hay clase." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Una clase con movimientos",
+      "text": "今天的汉语课很有意思。王老师说：“我说，你们做动作。”老师说“手”，我们动手；老师说“头”，我们动头。雨果的脚还有点儿疼，老师说：“雨果，你别动脚，你最好坐下。”雨果没动脚，他动了手和头。",
+      "es": "La clase de chino de hoy ha sido muy divertida. La profesora Wang ha dicho: «Yo digo una palabra y vosotros hacéis el movimiento». Cuando decía «mano», movíamos la mano; cuando decía «cabeza», movíamos la cabeza. A Hugo todavía le duele un poco el pie, así que la profesora le ha dicho: «Hugo, no muevas el pie; mejor siéntate». Hugo no ha movido el pie: ha movido las manos y la cabeza.",
+      "questions": [
+        { "q": "¿Qué hacían los alumnos cuando la profesora decía «手»?", "options": ["动手", "动头", "坐下"], "answer": 0 },
+        { "q": "¿Por qué no podía mover el pie Hugo?", "options": ["Le dolía un poco", "Estaba cansado", "No quería"], "answer": 0 },
+        { "q": "¿Qué le aconsejó la profesora?", "options": ["最好坐下", "别来上课", "多喝水"], "answer": 0 },
+        { "q": "¿Qué frase es correcta?", "options": ["雨果没动脚。", "雨果没动了脚。", "雨果别动脚了。"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

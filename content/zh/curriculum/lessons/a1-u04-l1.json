@@ -1,0 +1,126 @@
+{
+  "id": "a1-u04-l1",
+  "title": "Cien: 百 y el 零 del medio",
+  "zh": "一百零五",
+  "goal": "Contar del 100 al 999, hacer sumas sencillas y decir tu estatura, poniendo 零 cuando falta una cifra en medio.",
+  "minutes": 13,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "百", "pinyin": "bǎi", "es": "cien (la centena)", "note": "Solo no es un número: «cien» es 一百." },
+    { "hanzi": "一百", "pinyin": "yìbǎi", "es": "cien", "note": "一 delante de 百 se lee yì." },
+    { "hanzi": "两百", "pinyin": "liǎngbǎi", "es": "doscientos", "note": "También se oye 二百; al principio del número, 两百 es lo más frecuente." },
+    { "hanzi": "加", "pinyin": "jiā", "es": "más (sumar); añadir" },
+    { "hanzi": "等于", "pinyin": "děngyú", "es": "es igual a, son" },
+    { "hanzi": "米", "pinyin": "mǐ", "es": "metro", "note": "También «arroz» (大米). 一米八 = 1,80 m." },
+    { "hanzi": "高", "pinyin": "gāo", "es": "alto; altura" },
+    { "hanzi": "多高", "pinyin": "duō gāo", "es": "¿qué altura?, ¿cuánto mides?", "note": "多 + adjetivo = «¿cómo de…?»." },
+    { "hanzi": "个子", "pinyin": "gèzi", "es": "estatura, talla", "note": "他个子高 = es alto (de estatura)." }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "一百加五等于一百零五。", "py": "Yìbǎi jiā wǔ děngyú yìbǎi líng wǔ.", "es": "Cien más cinco son ciento cinco." },
+        { "zh": "中文班有一百一十个学生。", "py": "Zhōngwén bān yǒu yìbǎi yīshí ge xuésheng.", "es": "En la clase de chino hay ciento diez estudiantes." },
+        { "zh": "我一米八，你多高？", "py": "Wǒ yì mǐ bā, nǐ duō gāo?", "es": "Mido 1,80; ¿y tú cuánto mides?" }
+      ]
+    },
+    { "type": "vocab", "title": "Centenas, sumas y estatura", "words": ["百", "一百", "两百", "加", "等于", "米", "高", "多高", "个子"] },
+    {
+      "type": "phonetics-drill",
+      "title": "El 一 dentro de los números: yī, yí, yì",
+      "markdown": "Ya sabes que 一 cambia de tono. Con los números grandes la regla se ve en cada cifra:\n\n- **Contando** o **al final** del número, 一 se queda en **yī**: 一、二、三… · 十一 *shíyī* · 一百零一 *yìbǎi líng yī*.\n- **Delante de 百 y 千** (1.º, 2.º y 3.er tono) pasa a **yì**: 一百 *yìbǎi*, 一千 *yìqiān*.\n- **Delante de 万** (4.º tono) pasa a **yí**: 一万 *yíwàn* (lo verás en la próxima lección).\n- Delante de una medida pasa lo mismo: 一米八 *yì mǐ bā*.\n\nEn 一百一十 (110) el segundo 一 es una cifra dentro del número: *yìbǎi yīshí*.",
+      "items": [
+        { "audio": "一百", "options": ["yībǎi", "yìbǎi", "yíbǎi"], "answer": 1, "explain": "百 es 3.er tono: 一 delante pasa a 4.º, yì." },
+        { "audio": "十一", "options": ["shíyì", "shíyí", "shíyī"], "answer": 2, "explain": "Al final del número 一 conserva su primer tono." },
+        { "audio": "一百一十", "options": ["yìbǎi yīshí", "yíbǎi yìshí", "yībǎi shí"], "answer": 0, "explain": "yì delante de 百; el 一 de 一十 es una cifra: yīshí." },
+        { "audio": "一米八", "options": ["yí mǐ bā", "yī mǐ bā", "yì mǐ bā"], "answer": 2, "explain": "米 es 3.er tono: 一 pasa a yì." },
+        { "audio": "两百", "prompt": "¿Qué número es?", "options": ["200", "102", "2000"], "answer": 0, "explain": "两 liǎng (2) + 百 (100)." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["百", "加"],
+      "mnemonics": {
+        "百": "一 (uno) sobre 白 (blanco, bái, que da el sonido): «un blanco» hacía de marca para contar de cien en cien.",
+        "加": "力 (fuerza) + 口 (boca): añadir fuerza a lo que dices → añadir, sumar."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "Las centenas: cifra + 百, y 零 para el hueco",
+      "markdown": "Los números grandes se construyen igual que del 11 al 99: **multiplicas y sumas**.\n\n| Número | Chino | Cómo se piensa |\n|---|---|---|\n| 300 | 三百 | 3 × 100 |\n| 350 | 三百五十 | 3 × 100 + 5 × 10 |\n| 110 | 一百一十 | 100 + 1 × 10 (dentro del número, 十 lleva su 一) |\n| 105 | 一百零五 | 100 + **零** + 5 |\n| 999 | 九百九十九 | 9 × 100 + 9 × 10 + 9 |\n\n- **零 del medio**: si falta la cifra de las decenas, se dice 零: 一百零五, 三百零八. Así no se confunde con…\n- **…la abreviatura**: 一百五 es **150** (se calla el 十 final), igual que 两百三 = 230.\n- **两百 / 二百**: las dos son correctas; al principio del número se oye más 两百.\n\nEl número va en el hueco del **objeto**: 中文班有一百一十个学生. Para sumar: **A 加 B 等于 C**. La estatura, como la edad, se dice sin verbo: 我一米八 (1,80).",
+      "focus": ["object"],
+      "sentences": [
+        { "slots": { "subject": { "zh": "一百加五", "py": "yìbǎi jiā wǔ" }, "verb1": { "zh": "等于", "py": "děngyú" }, "object": { "zh": "一百零五", "py": "yìbǎi líng wǔ" } }, "end": "。", "es": "Cien más cinco son ciento cinco." },
+        { "slots": { "subject": { "zh": "九十九加一", "py": "jiǔshíjiǔ jiā yī" }, "verb1": { "zh": "等于", "py": "děngyú" }, "object": { "zh": "一百", "py": "yìbǎi" } }, "end": "。", "es": "Noventa y nueve más uno son cien." },
+        { "slots": { "subject": { "zh": "中文班", "py": "Zhōngwén bān" }, "verb1": { "zh": "有", "py": "yǒu" }, "object": { "zh": "一百一十个学生", "py": "yìbǎi yīshí ge xuésheng" } }, "end": "。", "es": "En la clase de chino hay ciento diez estudiantes." },
+        { "slots": { "subject": { "zh": "安娜", "py": "Ānnà" }, "verb1": { "zh": "有", "py": "yǒu" }, "object": { "zh": "三百零八个微信朋友", "py": "sānbǎi líng bā ge Wēixìn péngyou" } }, "end": "。", "es": "Anna tiene 308 amigos en WeChat." },
+        { "slots": { "subject": { "zh": "大卫", "py": "Dàwèi" }, "object": { "zh": "一米九", "py": "yì mǐ jiǔ" } }, "end": "。", "es": "David mide 1,90." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "一百零五", "py": "yìbǎi líng wǔ" }, "adverb": { "zh": "不", "py": "bú" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "一百五", "py": "yìbǎi wǔ" } }, "end": "。", "es": "Ciento cinco no es 一百五 (eso es 150)." },
+        { "slots": { "subject": { "zh": "他", "py": "tā" }, "adverb": { "zh": "没", "py": "méi" }, "verb1": { "zh": "有", "py": "yǒu" }, "object": { "zh": "两百个朋友", "py": "liǎngbǎi ge péngyou" } }, "end": "。", "es": "No tiene doscientos amigos." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "一百加十", "py": "yìbǎi jiā shí" }, "verb1": { "zh": "等于", "py": "děngyú" }, "object": { "zh": "多少", "py": "duōshao" } }, "end": "？", "es": "¿Cuánto son cien más diez?" },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "adverb": { "zh": "多", "py": "duō" }, "verb1": { "zh": "高", "py": "gāo" } }, "end": "？", "es": "¿Cuánto mides?" }
+      ],
+      "mistakes": [
+        { "wrong": "一百五（= 105）", "right": "一百零五", "why": "Si faltan las decenas hay que decir 零. 一百五 significa 150 (abreviatura de 一百五十)." },
+        { "wrong": "一百十", "right": "一百一十", "why": "Dentro del número el 十 lleva su 一. Solo al principio se dice 十 a secas (十五)." },
+        { "wrong": "百个学生", "right": "一百个学生", "why": "«Cien» siempre es 一百: 百 solo es la unidad, como «-cientos»." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Matemáticas en chino",
+      "lines": [
+        { "speaker": "王老师", "zh": "雨果，一百加五等于多少？", "py": "Yǔguǒ, yìbǎi jiā wǔ děngyú duōshao?", "es": "Hugo, ¿cuánto son cien más cinco?" },
+        { "speaker": "雨果", "zh": "等于一百五。", "py": "Děngyú yìbǎi wǔ.", "es": "Son 一百五." },
+        { "speaker": "王老师", "zh": "不对。安娜，你说。", "py": "Bú duì. Ānnà, nǐ shuō.", "es": "No. Anna, dilo tú." },
+        { "speaker": "安娜", "zh": "等于一百零五。", "py": "Děngyú yìbǎi líng wǔ.", "es": "Son ciento cinco." },
+        { "speaker": "王老师", "zh": "对！一百五是一百五十。", "py": "Duì! Yìbǎi wǔ shì yìbǎi wǔshí.", "es": "¡Eso es! 一百五 es ciento cincuenta." },
+        { "speaker": "雨果", "zh": "一百零五，一百五十……我知道了。", "py": "Yìbǎi líng wǔ, yìbǎi wǔshí… wǒ zhīdào le.", "es": "Ciento cinco, ciento cincuenta… ya lo pillo." },
+        { "speaker": "王老师", "zh": "两百加两百等于多少？", "py": "Liǎngbǎi jiā liǎngbǎi děngyú duōshao?", "es": "¿Y doscientos más doscientos?" },
+        { "speaker": "雨果", "zh": "等于四百！", "py": "Děngyú sìbǎi!", "es": "¡Cuatrocientos!" }
+      ],
+      "notes": "La abreviatura (一百五 = 150, 两百三 = 230) es muy frecuente en la calle y en los precios. Por eso el 零 del medio importa: sin él, 105 se entiende como 150."
+    },
+    { "type": "exercises", "count": 14, "bank": ["g-numbers", "u02"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "九十九加一" }, "verb1": { "zh": "等于" }, "object": { "zh": "一百" } }, "end": "。", "es": "Noventa y nueve más uno son cien." }, "distractors": ["零"] },
+        { "sentence": { "slots": { "subject": { "zh": "中文班" }, "verb1": { "zh": "有" }, "object": { "zh": "一百一十个学生" } }, "end": "。", "es": "En la clase de chino hay ciento diez estudiantes." }, "distractors": ["是"] },
+        { "sentence": { "slots": { "subject": { "zh": "安娜" }, "adverb": { "zh": "没" }, "verb1": { "zh": "有" }, "object": { "zh": "三百零八个微信朋友" } }, "end": "。", "es": "Anna no tiene 308 amigos en WeChat." }, "distractors": ["不"] },
+        { "sentence": { "slots": { "subject": { "zh": "我和我哥哥" }, "adverb": { "zh": "都" }, "object": { "zh": "一米八" } }, "end": "。", "es": "Mi hermano y yo medimos los dos 1,80." }, "distractors": ["是"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "一百零五。", "py": "Yìbǎi líng wǔ.", "es": "Ciento cinco." },
+        { "zh": "一百一十。", "py": "Yìbǎi yīshí.", "es": "Ciento diez." },
+        { "zh": "两百加两百等于四百。", "py": "Liǎngbǎi jiā liǎngbǎi děngyú sìbǎi.", "es": "Doscientos más doscientos son cuatrocientos." },
+        { "zh": "我一米八，我哥哥一米八三。", "py": "Wǒ yì mǐ bā, wǒ gēge yì mǐ bā sān.", "es": "Mido 1,80 y mi hermano, 1,83." }
+      ],
+      "respond": [
+        { "q": { "zh": "你多高？", "py": "Nǐ duō gāo?", "es": "¿Cuánto mides?" }, "model": { "zh": "我一米七五。", "py": "Wǒ yì mǐ qī wǔ.", "es": "Mido 1,75." } },
+        { "q": { "zh": "一百加一等于多少？", "py": "Yìbǎi jiā yī děngyú duōshao?", "es": "¿Cuánto son cien más uno?" }, "model": { "zh": "等于一百零一。", "py": "Děngyú yìbǎi líng yī.", "es": "Son ciento uno." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Tres estaturas",
+      "text": "大卫是美国人，他一米九。雨果是西班牙人，他一米八三。安娜一米六五。大卫说：“我们三个人，一米九加一米八三加一米六五，等于五米三八！”",
+      "es": "David es estadounidense y mide 1,90. Hugo es español y mide 1,83. Anna mide 1,65. David dice: «Nosotros tres: 1,90 más 1,83 más 1,65… ¡son 5,38 metros!».",
+      "questions": [
+        { "q": "¿Cuánto mide Hugo?", "options": ["1,38", "1,83", "1,80"], "answer": 1 },
+        { "q": "¿Quién es el más alto?", "options": ["大卫", "雨果", "安娜"], "answer": 0 },
+        { "q": "¿Cuánto suman los tres?", "options": ["5,83 m", "3,58 m", "5,38 m"], "answer": 2 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "id": "a2-u09-l1",
+  "title": "Cada vez más frío: 越来越",
+  "zh": "天气越来越冷了",
+  "goal": "Contar cómo cambian el tiempo y las cosas con 越来越 + adjetivo / verbo y con 变.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "越来越", "pinyin": "yuèláiyuè", "es": "cada vez más", "note": "Va detrás del sujeto y delante del adjetivo o del verbo: 天气越来越冷. Nunca con 很 delante del adjetivo." },
+    { "hanzi": "越", "pinyin": "yuè", "es": "más (en 越来越, 越…越…)", "note": "Solo no se usa todavía: 越…越… llega en B1." },
+    { "hanzi": "气温", "pinyin": "qìwēn", "es": "temperatura (del aire)", "note": "La del parte meteorológico." },
+    { "hanzi": "温度", "pinyin": "wēndù", "es": "temperatura (en general)", "note": "Del agua, de una habitación, del cuerpo… 气温 es solo la del aire." },
+    { "hanzi": "零下", "pinyin": "língxià", "es": "bajo cero", "note": "Delante del número: 零下五度 = cinco grados bajo cero." },
+    { "hanzi": "变", "pinyin": "biàn", "es": "cambiar; volverse", "note": "变 + adjetivo: 变冷 (enfriarse), 变好 (mejorar)." },
+    { "hanzi": "变化", "pinyin": "biànhuà", "es": "cambio; cambiar", "note": "气温变化很大 = la temperatura cambia mucho." },
+    { "hanzi": "变成", "pinyin": "biànchéng", "es": "convertirse en", "note": "Con un nombre o un número detrás: 雨变成了雪." },
+    { "hanzi": "气候", "pinyin": "qìhòu", "es": "clima (de un lugar)", "note": "天气 es el tiempo de hoy; 气候 el de todo el año." },
+    { "hanzi": "暖和", "pinyin": "nuǎnhuo", "es": "templado, agradable (sin frío)", "note": "La segunda sílaba es neutra." },
+    { "hanzi": "凉", "pinyin": "liáng", "es": "fresco, frío (al tacto)", "note": "凉快 (fresquito, agradable) ya lo conoces; 凉 solo suele ser «frío» de bebidas o del aire." },
+    { "hanzi": "慢慢", "pinyin": "mànmàn", "es": "poco a poco, despacio", "note": "Delante del verbo: 天气慢慢变冷了." }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "天气越来越冷了。", "py": "Tiānqì yuèláiyuè lěng le.", "es": "Cada vez hace más frío." },
+        { "zh": "我的汉语越来越好了。", "py": "Wǒ de Hànyǔ yuèláiyuè hǎo le.", "es": "Mi chino es cada vez mejor." },
+        { "zh": "十一月，上海的气温慢慢变低了。", "py": "Shíyī yuè, Shànghǎi de qìwēn mànmàn biàn dī le.", "es": "En noviembre, la temperatura de Shanghái baja poco a poco." }
+      ]
+    },
+    { "type": "vocab", "title": "Cambios de tiempo y de temperatura", "words": ["越来越", "越", "气温", "温度", "零下", "变", "变化", "变成", "气候", "暖和", "凉", "慢慢"] },
+    {
+      "type": "phonetics-drill",
+      "title": "El ritmo de 越来越 y las pausas de la frase",
+      "markdown": "**越来越** *yuèláiyuè* es un bloque de tres sílabas con tonos **4 · 2 · 4**: cae, sube, cae. Dilo de un tirón, sin pausa dentro, y apoya la voz en el **adjetivo** que viene detrás: 越来越**冷**.\n\nEn chino, las pausas naturales caen **entre los bloques** de la frase, nunca dentro de una palabra: 天气 / 越来越冷了. Hasta ahora decías frases cortas; en A2 empiezan las largas, y respetar estas pausas es lo que más ayuda a que te entiendan.\n\nCuidado también con:\n- **暖和** *nuǎnhuo*: la segunda sílaba es **neutra** (corta y sin tono). No digas *nuǎnhé*.\n- **气温** *qìwēn* (4 + 1) y **气候** *qìhòu* (4 + 4): la primera sílaba es igual, la segunda cambia de tono y de final.\n- **零下** *língxià*: *líng* termina en **-ng** (nasal de atrás, como en «ángulo»).",
+      "items": [
+        { "audio": "越来越冷", "options": ["yuèláiyuè lěng", "yuēláiyuē lěng", "yuèlàiyuè lěng"], "answer": 0, "explain": "Tonos 4 · 2 · 4 y luego el tercer tono de 冷." },
+        { "audio": "暖和", "options": ["nuǎnhuo", "nuǎnhé", "luǎnhuo"], "answer": 0, "explain": "和 aquí es neutro: nuǎnhuo." },
+        { "audio": "气候", "options": ["qìhòu", "qìwēn", "qīhòu"], "answer": 0, "explain": "气候 qìhòu (clima); 气温 qìwēn es la temperatura." },
+        { "audio": "零下五度", "options": ["língxià wǔ dù", "lǐngxià wǔ dù", "línxià wǔ dù"], "answer": 0, "explain": "líng, segundo tono y final -ng." },
+        { "audio": "天气越来越冷了", "prompt": "¿Dónde va la pausa natural?", "options": ["天气 / 越来越冷了", "天气越 / 来越冷了", "天气越来 / 越冷了"], "answer": 0, "explain": "Se para entre el sujeto (天气) y el resto; 越来越 no se corta nunca." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["越", "变"],
+      "mnemonics": {
+        "越": "走 (andar) + 戉 (un hacha antigua): andar abriéndose paso, «ir más allá» de un obstáculo. De «superar» viene «más»: 越来越 = cada vez más allá.",
+        "变": "Abajo lleva 又 («otra vez»): algo que se repite una y otra vez y nunca sale igual está cambiando. Es la forma simplificada de 變."
+      }
+    },
+    {
+      "type": "explain",
+      "title": "Frases de dos partes en el esqueleto (cómo las verás en toda la Etapa 2)",
+      "markdown": "En A2 las frases empiezan a tener **dos cláusulas**: 因为…，所以… · 虽然…，但是… · 如果…，就… · 一…就… El esqueleto las dibuja siempre igual:\n\n1. **Una fila por cláusula.** La primera termina en coma «，» y la segunda lleva el punto. Cada fila tiene su sujeto, sus adverbios y su verbo.\n2. **Conectores de cabeza** (van **delante del sujeto**): 因为, 所以, 虽然, 但是 / 可是 / 不过, 如果, 而且… → hueco **Tiempo inicial**, el primero de la fila. Si además hay un tiempo, van juntos: [所以明天] [我] [不] [去]。\n3. **Conectores-adverbio** (van **detrás del sujeto** y delante del verbo): 就, 才, 也, 还, 都, 又, 再, el 一 de 一…就, 不但 (cuando el sujeto es el mismo)… → hueco **Adverbios**.\n4. **Bloques que funcionan como un tiempo**: …的时候, …以前 / 以后, 从…起, 为了…, 除了…以外, (如果)…的话. Pueden ir **enteros** en el *Tiempo inicial* de una sola fila, y el segundo conector va en *Adverbios*: [如果明天下雨，] [我们] [就不] [去]。\n\nLa regla que esconde todo esto: 所以 y 但是 pueden ir delante del sujeto, pero **就, 才, 也, 还 nunca** (✗ 就我去 → ✓ 我就去).\n\nHoy solo verás una frase de dos partes (冬天到了，天气越来越冷了): fíjate en que son dos filas."
+    },
+    {
+      "type": "skeleton",
+      "title": "Sujeto + 越来越 + adjetivo / verbo (+ 了)",
+      "markdown": "**越来越** significa «cada vez más» y ocupa el hueco de los **adverbios**: detrás del sujeto, delante del adjetivo o del verbo.\n\n- Con adjetivos: 天气**越来越**冷 · 学汉语的人**越来越**多.\n- Con verbos de sentimiento o de capacidad: 我**越来越**喜欢上海 · 他**越来越**会做饭.\n- Muchas veces termina en **了** (el del cambio de la U18): la situación ya es otra.\n- **越来越 ya es un grado**: no se le pone 很, 非常 ni 太 delante del adjetivo.\n- Para «cada vez menos»: **越来越 + 不 / 少**: 越来越不好, 越来越少.\n\nEl verbo **变** («volverse») también cuenta cambios: 气温慢慢**变**低了 (la temperatura ha bajado poco a poco). Con un nombre o una cifra se usa **变成**: 雨**变成**了雪.",
+      "focus": ["adverb"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "天气", "py": "tiānqì" }, "adverb": { "zh": "越来越", "py": "yuèláiyuè" }, "verb1": { "zh": "冷", "py": "lěng" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Cada vez hace más frío.", "esOrder": [{ "text": "Cada vez más", "slot": "adverb" }, { "text": "frío", "slot": "verb1" }, { "text": "(el tiempo)", "slot": "subject" }] },
+        { "slots": { "subject": { "zh": "学汉语的人", "py": "xué Hànyǔ de rén" }, "adverb": { "zh": "越来越", "py": "yuèláiyuè" }, "verb1": { "zh": "多", "py": "duō" } }, "end": "。", "es": "Cada vez hay más gente que estudia chino." },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "越来越", "py": "yuèláiyuè" }, "verb1": { "zh": "喜欢", "py": "xǐhuan" }, "object": { "zh": "上海", "py": "Shànghǎi" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Shanghái me gusta cada vez más." },
+        { "slots": { "time0": { "zh": "十一月", "py": "shíyī yuè" }, "subject": { "zh": "上海的气温", "py": "Shànghǎi de qìwēn" }, "adverb": { "zh": "慢慢", "py": "mànmàn" }, "verb1": { "zh": "变低", "py": "biàn dī" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "En noviembre, la temperatura de Shanghái baja poco a poco." },
+        { "slots": { "subject": { "zh": "冬天", "py": "dōngtiān" }, "verb1": { "zh": "到了", "py": "dào le" } }, "end": "，", "es": "Ha llegado el invierno… (1.ª parte)" },
+        { "slots": { "subject": { "zh": "天气", "py": "tiānqì" }, "adverb": { "zh": "越来越", "py": "yuèláiyuè" }, "verb1": { "zh": "冷", "py": "lěng" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "…y cada vez hace más frío. (2.ª parte)" }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "这儿的天气", "py": "zhèr de tiānqì" }, "adverb": { "zh": "越来越不", "py": "yuèláiyuè bù" }, "verb1": { "zh": "好", "py": "hǎo" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "El tiempo de aquí es cada vez peor (lit. «cada vez menos bueno»)." },
+        { "slots": { "subject": { "zh": "这儿的气候", "py": "zhèr de qìhòu" }, "adverb": { "zh": "没", "py": "méi" }, "verb1": { "zh": "变", "py": "biàn" } }, "end": "。", "es": "El clima de aquí no ha cambiado." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你的汉语", "py": "nǐ de Hànyǔ" }, "adverb": { "zh": "是不是越来越", "py": "shì bu shì yuèláiyuè" }, "verb1": { "zh": "好", "py": "hǎo" }, "particle": { "zh": "了", "py": "le" } }, "end": "？", "es": "¿A que tu chino está cada vez mejor?" },
+        { "slots": { "subject": { "zh": "上海的气温", "py": "Shànghǎi de qìwēn" }, "verb1": { "zh": "变化大", "py": "biànhuà dà" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿Cambia mucho la temperatura en Shanghái?" }
+      ],
+      "mistakes": [
+        { "wrong": "天气越来越很冷。", "right": "天气越来越冷。", "why": "越来越 ya indica el grado: no lleva 很, 非常 ni 太 delante del adjetivo." },
+        { "wrong": "越来越天气冷了。", "right": "天气越来越冷了。", "why": "Como todos los adverbios, 越来越 va detrás del sujeto y delante del adjetivo o del verbo." },
+        { "wrong": "今天五度零下。", "right": "今天零下五度。", "why": "零下 va delante de la cifra, al revés que «cinco grados bajo cero»." },
+        { "wrong": "雨变了雪。", "right": "雨变成了雪。", "why": "Con un nombre detrás se dice 变成 («convertirse en»); 变 solo va con adjetivos (变冷, 变好)." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Noviembre en Shanghái",
+      "lines": [
+        { "speaker": "小李", "zh": "雨果，今天外面几度？", "py": "Yǔguǒ, jīntiān wàimiàn jǐ dù?", "es": "Hugo, ¿cuántos grados hace hoy fuera?" },
+        { "speaker": "雨果", "zh": "八度。上海越来越冷了！", "py": "Bā dù. Shànghǎi yuèláiyuè lěng le!", "es": "Ocho. ¡Shanghái está cada vez más fría!" },
+        { "speaker": "小李", "zh": "是啊，十一月气温变化很大，昨天还十五度呢。", "py": "Shì a, shíyī yuè qìwēn biànhuà hěn dà, zuótiān hái shíwǔ dù ne.", "es": "Sí, en noviembre la temperatura cambia mucho: ayer todavía hacía quince grados." },
+        { "speaker": "雨果", "zh": "我老家十一月比较暖和，现在差不多十八度。", "py": "Wǒ lǎojiā shíyī yuè bǐjiào nuǎnhuo, xiànzài chàbuduō shíbā dù.", "es": "En mi tierra noviembre es bastante templado: ahora estarán a unos dieciocho grados." },
+        { "speaker": "小李", "zh": "上海的冬天很少到零下，北京的冬天常常零下十几度。", "py": "Shànghǎi de dōngtiān hěn shǎo dào língxià, Běijīng de dōngtiān chángcháng língxià shí jǐ dù.", "es": "En Shanghái el invierno rara vez baja de cero; en Pekín se está a menudo a más de diez bajo cero." },
+        { "speaker": "雨果", "zh": "零下十几度？太冷了！", "py": "Língxià shí jǐ dù? Tài lěng le!", "es": "¿Más de diez bajo cero? ¡Qué frío!" },
+        { "speaker": "小李", "zh": "没关系，你慢慢就习惯了。", "py": "Méi guānxi, nǐ mànmàn jiù xíguàn le.", "es": "Tranquilo, poco a poco te acostumbrarás." },
+        { "speaker": "雨果", "zh": "我觉得这儿的气候跟西班牙很不一样。", "py": "Wǒ juéde zhèr de qìhòu gēn Xībānyá hěn bù yíyàng.", "es": "Creo que el clima de aquí es muy distinto del de España." },
+        { "speaker": "小李", "zh": "对。天气越来越凉，你要多穿衣服。", "py": "Duì. Tiānqì yuèláiyuè liáng, nǐ yào duō chuān yīfu.", "es": "Sí. Cada vez refresca más: tienes que abrigarte." },
+        { "speaker": "雨果", "zh": "我明天去买一件大衣。我的汉语越来越好，买东西没问题！", "py": "Wǒ míngtiān qù mǎi yí jiàn dàyī. Wǒ de Hànyǔ yuèláiyuè hǎo, mǎi dōngxi méi wèntí!", "es": "Mañana voy a comprarme un abrigo. Mi chino es cada vez mejor: ¡comprar no es problema!" }
+      ],
+      "notes": "十几度 = «diez y pico grados»: 几 detrás de 十 indica una cifra entre 11 y 19. 你慢慢就习惯了 adelanta el 就 que verás en esta unidad: «ya verás como…»."
+    },
+    { "type": "exercises", "count": 16, "bank": ["u10", "g-hen-adj", "g-le"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "天气" }, "adverb": { "zh": "越来越" }, "verb1": { "zh": "冷" }, "particle": { "zh": "了" } }, "end": "。", "es": "Cada vez hace más frío." }, "distractors": ["很"] },
+        { "sentence": { "slots": { "subject": { "zh": "学汉语的人" }, "adverb": { "zh": "越来越" }, "verb1": { "zh": "多" } }, "end": "。", "es": "Cada vez hay más gente que estudia chino." }, "distractors": ["非常"] },
+        { "sentence": { "slots": { "time0": { "zh": "十一月" }, "subject": { "zh": "上海的气温" }, "adverb": { "zh": "慢慢" }, "verb1": { "zh": "变低" }, "particle": { "zh": "了" } }, "end": "。", "es": "En noviembre, la temperatura de Shanghái baja poco a poco." }, "distractors": ["变成"] },
+        { "sentence": { "slots": { "time0": { "zh": "现在" }, "subject": { "zh": "我" }, "adverb": { "zh": "越来越" }, "aux": { "zh": "想" }, "with": { "zh": "跟中国朋友一起" }, "verb1": { "zh": "说" }, "object": { "zh": "汉语" }, "particle": { "zh": "了" } }, "end": "。", "es": "Ahora tengo cada vez más ganas de hablar chino con mis amigos chinos." }, "distractors": ["很"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "天气越来越冷了。", "py": "Tiānqì yuèláiyuè lěng le.", "es": "Cada vez hace más frío." },
+        { "zh": "上海的冬天很少到零下。", "py": "Shànghǎi de dōngtiān hěn shǎo dào língxià.", "es": "En Shanghái el invierno rara vez baja de cero." },
+        { "zh": "十一月气温变化很大。", "py": "Shíyī yuè qìwēn biànhuà hěn dà.", "es": "En noviembre la temperatura cambia mucho." },
+        { "zh": "我越来越喜欢上海了。", "py": "Wǒ yuèláiyuè xǐhuan Shànghǎi le.", "es": "Shanghái me gusta cada vez más." }
+      ],
+      "respond": [
+        { "q": { "zh": "你的汉语怎么样了？", "py": "Nǐ de Hànyǔ zěnmeyàng le?", "es": "¿Qué tal va tu chino?" }, "model": { "zh": "越来越好了，我还要多练习。", "py": "Yuèláiyuè hǎo le, wǒ hái yào duō liànxí.", "es": "Cada vez mejor; todavía tengo que practicar mucho." } },
+        { "q": { "zh": "你老家的冬天冷吗？", "py": "Nǐ lǎojiā de dōngtiān lěng ma?", "es": "¿Hace frío en invierno en tu tierra?" }, "model": { "zh": "不太冷，比较暖和，很少到零下。", "py": "Bú tài lěng, bǐjiào nuǎnhuo, hěn shǎo dào língxià.", "es": "No mucho: es bastante templado y rara vez baja de cero." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Del calor de septiembre al abrigo de noviembre",
+      "text": "雨果是九月来上海的。九月的上海很热，气温三十多度，他觉得跟马德里的夏天差不多。到了十月，天气慢慢变凉了。现在是十一月，气温的变化越来越大：早上八度，中午十八度，晚上又变成十度。小李说，上海的冬天很少到零下，北京的冬天常常零下十几度。雨果觉得上海的气候跟西班牙很不一样：马德里的冬天很少下雨，上海的冬天常常下雨。今天他去商店买了一件大衣。现在雨果越来越习惯上海的天气了，他也越来越喜欢这个城市。",
+      "es": "Hugo llegó a Shanghái en septiembre. En septiembre Shanghái es muy calurosa, con más de treinta grados; a él le pareció más o menos como el verano de Madrid. En octubre el tiempo fue refrescando poco a poco. Ahora es noviembre y la temperatura cambia cada vez más: por la mañana ocho grados, a mediodía dieciocho y por la noche otra vez diez. Xiao Li dice que en Shanghái el invierno rara vez baja de cero, mientras que en Pekín se está a menudo a más de diez bajo cero. A Hugo le parece que el clima de Shanghái es muy distinto del de España: en Madrid llueve poco en invierno y en Shanghái llueve a menudo. Hoy ha ido a una tienda y se ha comprado un abrigo. Ahora Hugo está cada vez más acostumbrado al tiempo de Shanghái, y la ciudad también le gusta cada vez más.",
+      "questions": [
+        { "q": "¿Qué temperatura hacía en septiembre?", "options": ["三十多度", "十八度", "零下十几度"], "answer": 0 },
+        { "q": "¿Qué pasa con la temperatura en noviembre?", "options": ["变化越来越大", "每天都很热", "每天都零下"], "answer": 0 },
+        { "q": "¿Qué se ha comprado Hugo?", "options": ["一件大衣", "一个手机", "一本书"], "answer": 0 },
+        { "q": "¿Qué frase es correcta?", "options": ["雨果越来越喜欢上海。", "雨果越来越很喜欢上海。", "雨果喜欢越来越上海。"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

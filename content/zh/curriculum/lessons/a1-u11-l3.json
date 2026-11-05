@@ -1,0 +1,129 @@
+{
+  "id": "a1-u11-l3",
+  "title": "Todos y también: 也, 都 y 也都",
+  "zh": "我们也都是学生",
+  "goal": "Colocar bien 也 y 都 (siempre antes del verbo, en el orden 也都), distinguir 都不 de 不都 y hablar de hacer amigos.",
+  "minutes": 14,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "大家", "pinyin": "dàjiā", "es": "todos, todo el mundo", "note": "大家好！ = ¡Hola a todos! Suele ir con 都: 大家都…" },
+    { "hanzi": "人们", "pinyin": "rénmen", "es": "la gente", "note": "Más general y escrito que 大家." },
+    { "hanzi": "网友", "pinyin": "wǎngyǒu", "es": "amigo de internet, internauta", "note": "En las noticias, 网友 = «los internautas»." },
+    { "hanzi": "交朋友", "pinyin": "jiāo péngyou", "es": "hacer amigos", "note": "交 = relacionarse, entablar." },
+    { "hanzi": "见", "pinyin": "jiàn", "es": "ver, encontrarse con (alguien)", "note": "见 + persona: 我想见你. 明天见 = hasta mañana." },
+    { "hanzi": "找", "pinyin": "zhǎo", "es": "buscar; ir a ver a (alguien)", "note": "你找谁？ = ¿A quién busca? (al llamar a una puerta o al teléfono)." },
+    { "hanzi": "找到", "pinyin": "zhǎodào", "es": "encontrar (buscar con éxito)" },
+    { "hanzi": "一样", "pinyin": "yíyàng", "es": "igual, lo mismo", "note": "我们的手表一样 = nuestros relojes son iguales. 不一样 = distinto." }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "我们也都是学生。", "py": "Wǒmen yě dōu shì xuésheng.", "es": "Nosotros también somos todos estudiantes." },
+        { "zh": "大家都想交朋友。", "py": "Dàjiā dōu xiǎng jiāo péngyou.", "es": "Todo el mundo quiere hacer amigos." },
+        { "zh": "我们不都是西班牙人。", "py": "Wǒmen bù dōu shì Xībānyá rén.", "es": "No todos somos españoles." }
+      ]
+    },
+    { "type": "vocab", "title": "Todos, la gente y hacer amigos", "words": ["大家", "人们", "网友", "交朋友", "见", "找", "找到", "一样"] },
+    {
+      "type": "phonetics-drill",
+      "title": "El tono de 不: 不一样, 不见, 不找",
+      "markdown": "**不** es cuarto tono (**bù**), pero delante de **otro cuarto tono** pasa a **segundo** (**bú**), igual que 一:\n\n- 不**是** **bú** shì · 不**见** **bú** jiàn · 不**要** **bú** yào · 不**一样** **bù** yíyàng (ojo: 一 ya ha cambiado a yí, que es segundo tono, así que 不 se queda en bù).\n- Delante de 1.º, 2.º o 3.º se queda **bù**: 不**找** bù zhǎo, 不**来** bù lái, 不**吃** bù chī.\n- En medio de A不A suele quedar **neutro**: 是不是 shì bu shì.\n\nSe escribe con el tono ya cambiado.",
+      "items": [
+        { "audio": "不见", "options": ["bú jiàn", "bù jiàn", "bū jiàn"], "answer": 0, "explain": "见 es cuarto tono → bú." },
+        { "audio": "不找", "options": ["bù zhǎo", "bú zhǎo"], "answer": 0, "explain": "找 es tercer tono → bù." },
+        { "audio": "不一样", "options": ["bù yíyàng", "bú yíyàng", "bù yīyàng"], "answer": 0, "explain": "一 pasa a yí delante de 样 (cuarto); 不 queda bù delante de yí." },
+        { "audio": "都不是", "options": ["dōu bú shì", "dōu bù shì", "dóu bú shì"], "answer": 0, "explain": "不 delante de 是 (cuarto) → bú." },
+        { "audio": "不都是", "options": ["bù dōu shì", "bú dōu shì"], "answer": 0, "explain": "Aquí 不 va delante de 都 (primer tono) → bù." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["都", "找"],
+      "mnemonics": {
+        "都": "者 (pista de sonido) + 阝 a la derecha (ciudad): la capital, donde se junta todo el mundo → «todos».",
+        "找": "扌 (mano) + 戈 (alabarda): con la mano y el arma por delante, uno busca."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "也 y 都: antes del verbo, y en el orden 也都",
+      "markdown": "**也** (también) y **都** (todos, los dos) son adverbios: van **después del sujeto y antes del verbo**, nunca al principio de la frase como en español:\n\n- ✘ *也我是学生 → ✔ 我**也**是学生 (lit. «yo también soy estudiante»).\n- ✘ *都我们是学生 → ✔ 我们**都**是学生.\n\nSi van juntos, el orden es siempre **也都** (no *都也): 他们**也都**是学生 = ellos también son todos estudiantes.\n\n**都** mira hacia **atrás**: se refiere a lo que va delante (我们, 大家, 这些书). Por eso 大家 casi siempre lleva 都: 大家**都**想交朋友.\n\nCon la negación cambia el sentido:\n\n| | | |\n|---|---|---|\n| 我们**都不**是老师 | ninguno somos profesores | 都 + 不 |\n| 我们**不都**是老师 | no todos somos profesores | 不 + 都 |\n\nY todos van antes del auxiliar y de 跟…一起: 安娜**也**想**跟大家一起**去.",
+      "focus": ["adverb"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "我们", "py": "wǒmen" }, "adverb": { "zh": "都", "py": "dōu" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "学生", "py": "xuésheng" } }, "end": "。", "es": "Todos somos estudiantes.", "esOrder": [{ "text": "Todos", "slot": "adverb" }, { "text": "(nosotros)", "slot": "subject" }, { "text": "somos", "slot": "verb1" }, { "text": "estudiantes", "slot": "object" }] },
+        { "slots": { "subject": { "zh": "他们", "py": "tāmen" }, "adverb": { "zh": "也都", "py": "yě dōu" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "网友", "py": "wǎngyǒu" } }, "end": "。", "es": "Ellos también son todos amigos de internet." },
+        { "slots": { "subject": { "zh": "大家", "py": "dàjiā" }, "adverb": { "zh": "都", "py": "dōu" }, "aux": { "zh": "想", "py": "xiǎng" }, "verb1": { "zh": "交朋友", "py": "jiāo péngyou" } }, "end": "。", "es": "Todo el mundo quiere hacer amigos." },
+        { "slots": { "subject": { "zh": "安娜", "py": "Ānnà" }, "adverb": { "zh": "也", "py": "yě" }, "aux": { "zh": "想", "py": "xiǎng" }, "with": { "zh": "跟大家一起", "py": "gēn dàjiā yìqǐ" }, "verb1": { "zh": "去", "py": "qù" } }, "end": "。", "es": "Ana también quiere ir con todos." },
+        { "slots": { "subject": { "zh": "我们的手表", "py": "wǒmen de shǒubiǎo" }, "verb1": { "zh": "一样", "py": "yíyàng" } }, "end": "。", "es": "Nuestros relojes son iguales." },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "aux": { "zh": "想", "py": "xiǎng" }, "verb1": { "zh": "找", "py": "zhǎo" }, "object": { "zh": "小李", "py": "Xiǎo Lǐ" } }, "end": "。", "es": "Busco a Xiao Li (quiero verle)." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "我们", "py": "wǒmen" }, "adverb": { "zh": "都不", "py": "dōu bú" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "老师", "py": "lǎoshī" } }, "end": "。", "es": "Ninguno de nosotros es profesor." },
+        { "slots": { "subject": { "zh": "我们", "py": "wǒmen" }, "adverb": { "zh": "不都", "py": "bù dōu" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "西班牙人", "py": "Xībānyá rén" } }, "end": "。", "es": "No todos somos españoles." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你们", "py": "nǐmen" }, "adverb": { "zh": "都", "py": "dōu" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "网友", "py": "wǎngyǒu" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿Sois todos amigos de internet?" },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "找", "py": "zhǎo" }, "object": { "zh": "谁", "py": "shéi" } }, "end": "？", "es": "¿A quién buscas?" }
+      ],
+      "mistakes": [
+        { "wrong": "也我是学生。", "right": "我也是学生。", "why": "也 va después del sujeto, delante del verbo." },
+        { "wrong": "我们是都学生。", "right": "我们都是学生。", "why": "都 es un adverbio: delante del verbo, no del nombre." },
+        { "wrong": "他们都也是网友。", "right": "他们也都是网友。", "why": "Juntos, siempre en el orden 也都." },
+        { "wrong": "都大家想交朋友。", "right": "大家都想交朋友。", "why": "都 se refiere a lo que va delante: primero 大家, luego 都." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "El amigo de internet",
+      "lines": [
+        { "speaker": "雨果", "zh": "你好！你是小王吗？", "py": "Nǐ hǎo! Nǐ shì Xiǎo Wáng ma?", "es": "¡Hola! ¿Eres Xiao Wang?" },
+        { "speaker": "小王", "zh": "对！你是雨果吗？", "py": "Duì! Nǐ shì Yǔguǒ ma?", "es": "¡Sí! ¿Tú eres Hugo?" },
+        { "speaker": "雨果", "zh": "对，我是雨果。很高兴见到你！", "py": "Duì, wǒ shì Yǔguǒ. Hěn gāoxìng jiàndào nǐ!", "es": "Sí, soy Hugo. ¡Encantado de verte!" },
+        { "speaker": "小王", "zh": "我也很高兴。我们是网友，今天也是朋友！", "py": "Wǒ yě hěn gāoxìng. Wǒmen shì wǎngyǒu, jīntiān yě shì péngyou!", "es": "Yo también. Éramos amigos de internet y hoy ya somos amigos." },
+        { "speaker": "雨果", "zh": "你的朋友们也都是学生吗？", "py": "Nǐ de péngyoumen yě dōu shì xuésheng ma?", "es": "¿Tus amigos también son todos estudiantes?" },
+        { "speaker": "小王", "zh": "对，他们也都是学生。大家都想交外国朋友。", "py": "Duì, tāmen yě dōu shì xuésheng. Dàjiā dōu xiǎng jiāo wàiguó péngyou.", "es": "Sí, también son todos estudiantes. Todos quieren hacer amigos extranjeros." },
+        { "speaker": "雨果", "zh": "我也想交中国朋友！", "py": "Wǒ yě xiǎng jiāo Zhōngguó péngyou!", "es": "¡Y yo quiero hacer amigos chinos!" },
+        { "speaker": "小王", "zh": "你想找中国朋友，我想找外国朋友。咱们一样！", "py": "Nǐ xiǎng zhǎo Zhōngguó péngyou, wǒ xiǎng zhǎo wàiguó péngyou. Zánmen yíyàng!", "es": "Tú buscas amigos chinos y yo, extranjeros. ¡Somos iguales!" },
+        { "speaker": "雨果", "zh": "对，咱们一样！", "py": "Duì, zánmen yíyàng!", "es": "¡Sí, somos iguales!" }
+      ],
+      "notes": "很高兴见到你 es la fórmula de «encantado de verte» al conocer en persona a alguien. Muchos estudiantes chinos buscan 语伴 (yǔbàn, compañero de intercambio de idiomas): es la mejor forma de practicar."
+    },
+    { "type": "exercises", "count": 15, "bank": ["g-ye-dou", "g-he", "g-word-order"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "我们" }, "adverb": { "zh": "也都" }, "verb1": { "zh": "是" }, "object": { "zh": "学生" } }, "end": "。", "es": "Nosotros también somos todos estudiantes." }, "distractors": ["都也"] },
+        { "sentence": { "slots": { "subject": { "zh": "大家" }, "adverb": { "zh": "都" }, "aux": { "zh": "想" }, "verb1": { "zh": "交朋友" } }, "end": "。", "es": "Todo el mundo quiere hacer amigos." }, "distractors": ["也"] },
+        { "sentence": { "slots": { "subject": { "zh": "我们" }, "adverb": { "zh": "不都" }, "verb1": { "zh": "是" }, "object": { "zh": "西班牙人" } }, "end": "。", "es": "No todos somos españoles." }, "distractors": ["都不"] },
+        { "sentence": { "slots": { "time0": { "zh": "这个周末" }, "subject": { "zh": "雨果和小王" }, "adverb": { "zh": "也都" }, "aux": { "zh": "想" }, "with": { "zh": "跟网友们一起" }, "verb1": { "zh": "去饭馆" }, "verb2": { "zh": "吃" }, "object": { "zh": "中餐" } }, "end": "。", "es": "Este fin de semana Hugo y Xiao Wang también quieren ir con sus amigos de internet a un restaurante a comer comida china." }, "distractors": ["都也"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "我们也都是学生。", "py": "Wǒmen yě dōu shì xuésheng.", "es": "Nosotros también somos todos estudiantes." },
+        { "zh": "大家都想交朋友。", "py": "Dàjiā dōu xiǎng jiāo péngyou.", "es": "Todo el mundo quiere hacer amigos." },
+        { "zh": "我们都不是老师。", "py": "Wǒmen dōu bú shì lǎoshī.", "es": "Ninguno somos profesores." },
+        { "zh": "很高兴见到你！", "py": "Hěn gāoxìng jiàndào nǐ!", "es": "¡Encantado de verte!" }
+      ],
+      "respond": [
+        { "q": { "zh": "你们都是西班牙人吗？", "py": "Nǐmen dōu shì Xībānyá rén ma?", "es": "¿Sois todos españoles?" }, "model": { "zh": "不都是。我是西班牙人，大卫是美国人。", "py": "Bù dōu shì. Wǒ shì Xībānyá rén, Dàwèi shì Měiguó rén.", "es": "No todos. Yo soy español y David es estadounidense." } },
+        { "q": { "zh": "你找谁？", "py": "Nǐ zhǎo shéi?", "es": "¿A quién buscas?" }, "model": { "zh": "我找王老师。", "py": "Wǒ zhǎo Wáng lǎoshī.", "es": "Busco a la profesora Wang." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Hacer amigos en Shanghái",
+      "text": "雨果的网友叫小王。今天他们见面，大家都很高兴。小王的朋友们也都是学生，他们都想交外国朋友。雨果也想交中国朋友。人们说：交朋友不难！雨果和小王一样，都爱聊天。",
+      "es": "El amigo de internet de Hugo se llama Xiao Wang. Hoy se conocen en persona y todos están muy contentos. Los amigos de Xiao Wang también son todos estudiantes y todos quieren hacer amigos extranjeros. Hugo también quiere hacer amigos chinos. La gente dice: ¡hacer amigos no es difícil! Hugo y Xiao Wang son iguales: a los dos les encanta charlar.",
+      "questions": [
+        { "q": "¿Cómo se llama el amigo de internet de Hugo?", "options": ["小王", "小李", "大卫"], "answer": 0 },
+        { "q": "¿Qué quieren los amigos de Xiao Wang?", "options": ["交外国朋友", "去西班牙", "学英语"], "answer": 0 },
+        { "q": "¿En qué se parecen Hugo y Xiao Wang?", "options": ["都爱聊天", "都是老师", "都戴眼镜"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

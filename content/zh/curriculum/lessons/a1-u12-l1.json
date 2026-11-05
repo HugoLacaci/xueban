@@ -1,0 +1,135 @@
+{
+  "id": "a1-u12-l1",
+  "title": "Me gusta la música y el cine: 喜欢 + verbo",
+  "zh": "我喜欢听音乐",
+  "goal": "Decir qué te gusta hacer (música, cine, series) con 喜欢 + verbo y preguntar por las aficiones de otro.",
+  "minutes": 14,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "喜欢", "pinyin": "xǐhuan", "es": "gustar (lit. «apreciar»)", "note": "El sujeto es la persona: 我喜欢… = (a mí) me gusta…" },
+    { "hanzi": "爱好", "pinyin": "àihào", "es": "afición, hobby" },
+    { "hanzi": "音乐", "pinyin": "yīnyuè", "es": "música" },
+    { "hanzi": "歌", "pinyin": "gē", "es": "canción" },
+    { "hanzi": "唱", "pinyin": "chàng", "es": "cantar" },
+    { "hanzi": "唱歌", "pinyin": "chànggē", "es": "cantar (canciones)", "note": "Verbo + objeto: 唱 + 歌. Se dice 唱歌 aunque en español baste «cantar»." },
+    { "hanzi": "电影", "pinyin": "diànyǐng", "es": "película; el cine (arte)" },
+    { "hanzi": "电视", "pinyin": "diànshì", "es": "televisión (lo que se ve)" },
+    { "hanzi": "电视机", "pinyin": "diànshìjī", "es": "televisor (el aparato)" },
+    { "hanzi": "电视剧", "pinyin": "diànshìjù", "es": "serie de televisión", "note": "Fuera del HSK 1–3, pero imprescindible: en China se ven series a todas horas." },
+    { "hanzi": "好听", "pinyin": "hǎotīng", "es": "bonito (de oír), que suena bien", "note": "Ya visto en la U9 con 好 + verbo: 好听, 好看." },
+    { "hanzi": "好看", "pinyin": "hǎokàn", "es": "bonito (de ver); que está bien (película)" },
+    { "hanzi": "有意思", "pinyin": "yǒu yìsi", "es": "interesante, divertido", "note": "Lit. «tiene sentido». Contrario: 没有意思 / 没意思 «aburrido»." }
+  ],
+  "extraVocab": ["电视剧"],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "我喜欢听音乐。", "py": "Wǒ xǐhuan tīng yīnyuè.", "es": "Me gusta escuchar música." },
+        { "zh": "你喜欢看电影吗？", "py": "Nǐ xǐhuan kàn diànyǐng ma?", "es": "¿Te gusta ver películas?" },
+        { "zh": "我的爱好是唱歌。", "py": "Wǒ de àihào shì chànggē.", "es": "Mi afición es cantar." }
+      ]
+    },
+    { "type": "vocab", "title": "Música, cine y series", "words": ["喜欢", "爱好", "音乐", "歌", "唱", "唱歌", "电影", "电视", "电视机", "电视剧", "好听", "好看", "有意思"] },
+    {
+      "type": "phonetics-drill",
+      "title": "La ü: 音乐 yuè, 电视剧 jù, 女 nǚ",
+      "markdown": "La **ü** no existe en español: di una **i** y, sin mover la lengua, redondea los labios como para silbar.\n\n- Tras **j, q, x** y **y** se escribe **u**, pero se pronuncia **ü**: 剧 **jù**, 去 **qù**, 乐 **yuè**. Esas letras nunca van con la *u* española, así que no hay confusión.\n- Tras **n** y **l** se escriben los dos puntos, porque ahí sí hay pareja: 女 **nǚ** (mujer) / 努 nǔ; 绿 **lǜ** (verde) / 路 lù.\n\nTruco: si te sale «yue» como «yu-é» española, la lengua se ha ido hacia atrás. Mantenla adelantada, como en la *i*.",
+      "items": [
+        { "audio": "音乐", "options": ["yīnyuè", "yīnyè", "yīnwè"], "answer": 0, "explain": "yuè = ü + e: labios redondos al empezar." },
+        { "audio": "电视剧", "options": ["diànshìjù", "diànshìzhù", "diànshìjiù"], "answer": 0, "explain": "jù: j + ü, con la lengua plana y adelantada." },
+        { "audio": "去", "options": ["qù", "cù", "qiù"], "answer": 0, "explain": "q aspirada + ü; se escribe u." },
+        { "audio": "女", "options": ["nǚ", "nǔ", "nǐ"], "answer": 0, "explain": "Tras n la ü lleva los dos puntos: nǚ." },
+        { "audio": "绿", "options": ["lù", "lǜ", "lì"], "answer": 1, "explain": "绿 lǜ (verde) frente a 路 lù (camino)." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["唱", "欢"],
+      "mnemonics": {
+        "唱": "口 (boca) + 昌 chāng (dos soles 日 apilados, «esplendor»; da el sonido): la boca que suena a pleno sol, cantar.",
+        "欢": "又 (mano) + 欠 (persona con la boca muy abierta): alguien que abre la boca y aplaude de alegría."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "喜欢 + verbo + objeto",
+      "markdown": "En español la música «te gusta» a ti (la música es el sujeto). En chino es al revés: **la persona es el sujeto** y 喜欢 funciona como «apreciar»: **我喜欢音乐** (lit. «yo aprecio la música»).\n\nDetrás de 喜欢 puede ir:\n\n- un **nombre**: 我喜欢音乐.\n- un **verbo + objeto** (lo más natural para aficiones): 我喜欢**听**音乐, 我喜欢**看**电影. Aquí 喜欢 ocupa el **Verbo 1** y la actividad va en el **Verbo 2**.\n\nGrados: **很**喜欢 (me gusta mucho), **最**喜欢 (lo que más me gusta), **不太**喜欢 (no mucho). **爱 + verbo** es más fuerte: 我爱看电影 «me encanta el cine».\n\n- **Negativa**: 不 delante de 喜欢: 我**不**喜欢唱歌.\n- **Pregunta**: …吗？ o la forma A不A: 你**喜欢不喜欢**看电影？ Para la afición: 你的爱好是**什么**？",
+      "focus": ["verb1", "verb2"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "verb1": { "zh": "喜欢", "py": "xǐhuan" }, "verb2": { "zh": "听", "py": "tīng" }, "object": { "zh": "音乐", "py": "yīnyuè" } }, "end": "。", "es": "Me gusta escuchar música.", "esOrder": [{ "text": "A mí", "slot": "subject" }, { "text": "me gusta", "slot": "verb1" }, { "text": "escuchar", "slot": "verb2" }, { "text": "música", "slot": "object" }] },
+        { "slots": { "subject": { "zh": "安娜", "py": "Ānnà" }, "adverb": { "zh": "很", "py": "hěn" }, "verb1": { "zh": "喜欢", "py": "xǐhuan" }, "verb2": { "zh": "看", "py": "kàn" }, "object": { "zh": "电影", "py": "diànyǐng" } }, "end": "。", "es": "A Ana le gusta mucho ver películas.", "esOrder": [{ "text": "A Ana", "slot": "subject" }, { "text": "le gusta", "slot": "verb1" }, { "text": "mucho", "slot": "adverb" }, { "text": "ver", "slot": "verb2" }, { "text": "películas", "slot": "object" }] },
+        { "slots": { "subject": { "zh": "小李", "py": "Xiǎo Lǐ" }, "adverb": { "zh": "最", "py": "zuì" }, "verb1": { "zh": "喜欢", "py": "xǐhuan" }, "verb2": { "zh": "唱", "py": "chàng" }, "object": { "zh": "歌", "py": "gē" } }, "end": "。", "es": "Lo que más le gusta a Xiao Li es cantar." },
+        { "slots": { "subject": { "zh": "我们", "py": "wǒmen" }, "adverb": { "zh": "都", "py": "dōu" }, "verb1": { "zh": "爱", "py": "ài" }, "verb2": { "zh": "看", "py": "kàn" }, "object": { "zh": "中国电视剧", "py": "Zhōngguó diànshìjù" } }, "end": "。", "es": "A todos nos encantan las series chinas." },
+        { "slots": { "subject": { "zh": "他的爱好", "py": "tā de àihào" }, "verb1": { "zh": "是", "py": "shì" }, "verb2": { "zh": "听", "py": "tīng" }, "object": { "zh": "音乐", "py": "yīnyuè" } }, "end": "。", "es": "Su afición es escuchar música." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "大卫", "py": "Dàwèi" }, "adverb": { "zh": "不", "py": "bù" }, "verb1": { "zh": "喜欢", "py": "xǐhuan" }, "verb2": { "zh": "看", "py": "kàn" }, "object": { "zh": "电视", "py": "diànshì" } }, "end": "。", "es": "A David no le gusta ver la tele." },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "不太", "py": "bú tài" }, "verb1": { "zh": "喜欢", "py": "xǐhuan" }, "verb2": { "zh": "唱", "py": "chàng" }, "object": { "zh": "歌", "py": "gē" } }, "end": "。", "es": "No me gusta mucho cantar." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "喜欢", "py": "xǐhuan" }, "verb2": { "zh": "听", "py": "tīng" }, "object": { "zh": "音乐", "py": "yīnyuè" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿Te gusta escuchar música?" },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "喜欢不喜欢", "py": "xǐhuan bu xǐhuan" }, "verb2": { "zh": "看", "py": "kàn" }, "object": { "zh": "电影", "py": "diànyǐng" } }, "end": "？", "es": "¿Te gusta o no ver películas?" },
+        { "slots": { "subject": { "zh": "你的爱好", "py": "nǐ de àihào" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "什么", "py": "shénme" } }, "end": "？", "es": "¿Cuál es tu afición?" }
+      ],
+      "mistakes": [
+        { "wrong": "音乐喜欢我。", "right": "我喜欢音乐。", "why": "Calco de «me gusta la música»: en chino la persona es el sujeto y va delante." },
+        { "wrong": "我喜欢很看电影。", "right": "我很喜欢看电影。", "why": "很 / 最 / 不 van delante de 喜欢, no delante del segundo verbo." },
+        { "wrong": "我是喜欢音乐。", "right": "我喜欢音乐。", "why": "喜欢 ya es el verbo: no se añade 是." },
+        { "wrong": "你喜欢不喜欢看电影吗？", "right": "你喜欢不喜欢看电影？", "why": "La forma A不A ya es pregunta: no lleva 吗." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "En la residencia: ¿cuál es tu afición?",
+      "lines": [
+        { "speaker": "小李", "zh": "雨果，你的爱好是什么？", "py": "Yǔguǒ, nǐ de àihào shì shénme?", "es": "Hugo, ¿cuál es tu afición?" },
+        { "speaker": "雨果", "zh": "我喜欢听音乐，也喜欢看电影。你呢？", "py": "Wǒ xǐhuan tīng yīnyuè, yě xǐhuan kàn diànyǐng. Nǐ ne?", "es": "Me gusta escuchar música y también ver películas. ¿Y tú?" },
+        { "speaker": "小李", "zh": "我也喜欢看电影。我最喜欢中国电影，很有意思。", "py": "Wǒ yě xǐhuan kàn diànyǐng. Wǒ zuì xǐhuan Zhōngguó diànyǐng, hěn yǒu yìsi.", "es": "A mí también me gusta el cine. Lo que más me gusta es el cine chino: es muy interesante." },
+        { "speaker": "雨果", "zh": "你喜欢唱歌吗？", "py": "Nǐ xǐhuan chànggē ma?", "es": "¿Te gusta cantar?" },
+        { "speaker": "小李", "zh": "很喜欢！周末我常常跟朋友一起唱歌。", "py": "Hěn xǐhuan! Zhōumò wǒ chángcháng gēn péngyou yìqǐ chànggē.", "es": "¡Mucho! Los fines de semana suelo ir a cantar con mis amigos." },
+        { "speaker": "雨果", "zh": "我不太喜欢唱歌，我爱看电视剧。", "py": "Wǒ bú tài xǐhuan chànggē, wǒ ài kàn diànshìjù.", "es": "A mí no me gusta mucho cantar; me encantan las series." },
+        { "speaker": "小李", "zh": "中国电视剧也很好看。今天晚上我们一起看，好吗？", "py": "Zhōngguó diànshìjù yě hěn hǎokàn. Jīntiān wǎnshang wǒmen yìqǐ kàn, hǎo ma?", "es": "Las series chinas también están muy bien. ¿Vemos una juntos esta noche?" },
+        { "speaker": "雨果", "zh": "好！我没有电视机，我去你那儿看。", "py": "Hǎo! Wǒ méiyǒu diànshìjī, wǒ qù nǐ nàr kàn.", "es": "¡Vale! No tengo tele: voy a tu cuarto a verla." }
+      ],
+      "notes": "唱歌 en China suele significar ir al **KTV** (karaoke en salas privadas), un plan muy habitual entre estudiantes. 爱 + verbo (我爱看电视剧) es más fuerte que 喜欢: «me encanta»."
+    },
+    { "type": "exercises", "count": 14, "bank": ["u12", "g-word-order"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "我" }, "verb1": { "zh": "喜欢" }, "verb2": { "zh": "听" }, "object": { "zh": "音乐" } }, "end": "。", "es": "Me gusta escuchar música." }, "distractors": ["是"] },
+        { "sentence": { "slots": { "subject": { "zh": "大卫" }, "adverb": { "zh": "不太" }, "verb1": { "zh": "喜欢" }, "verb2": { "zh": "唱" }, "object": { "zh": "歌" } }, "end": "。", "es": "A David no le gusta mucho cantar." } },
+        { "sentence": { "slots": { "subject": { "zh": "你" }, "verb1": { "zh": "喜欢" }, "verb2": { "zh": "看" }, "object": { "zh": "中国电影" }, "particle": { "zh": "吗" } }, "end": "？", "es": "¿Te gustan las películas chinas?" }, "distractors": ["呢"] },
+        { "sentence": { "slots": { "subject": { "zh": "我和安娜" }, "time": { "zh": "周末" }, "adverb": { "zh": "常常" }, "with": { "zh": "跟小李一起" }, "verb1": { "zh": "看" }, "object": { "zh": "中国电视剧" } }, "end": "。", "es": "Los fines de semana Ana y yo solemos ver series chinas con Xiao Li." }, "distractors": ["很"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "我喜欢听音乐。", "py": "Wǒ xǐhuan tīng yīnyuè.", "es": "Me gusta escuchar música." },
+        { "zh": "她很喜欢看电影。", "py": "Tā hěn xǐhuan kàn diànyǐng.", "es": "A ella le gusta mucho el cine." },
+        { "zh": "这个电视剧很有意思。", "py": "Zhège diànshìjù hěn yǒu yìsi.", "es": "Esta serie es muy interesante." },
+        { "zh": "你的爱好是什么？", "py": "Nǐ de àihào shì shénme?", "es": "¿Cuál es tu afición?" }
+      ],
+      "respond": [
+        { "q": { "zh": "你喜欢听音乐吗？", "py": "Nǐ xǐhuan tīng yīnyuè ma?", "es": "¿Te gusta escuchar música?" }, "model": { "zh": "很喜欢，我每天都听音乐。", "py": "Hěn xǐhuan, wǒ měi tiān dōu tīng yīnyuè.", "es": "Mucho, escucho música todos los días." } },
+        { "q": { "zh": "你喜欢唱歌吗？", "py": "Nǐ xǐhuan chànggē ma?", "es": "¿Te gusta cantar?" }, "model": { "zh": "我不太喜欢唱歌，我喜欢看电影。", "py": "Wǒ bú tài xǐhuan chànggē, wǒ xǐhuan kàn diànyǐng.", "es": "No me gusta mucho cantar; me gusta ver películas." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Las aficiones de la residencia",
+      "text": "我叫小李，我的爱好是唱歌。周末我常常跟朋友一起唱歌。雨果不太喜欢唱歌，他喜欢听音乐，也喜欢看电影。安娜最喜欢看中国电视剧，她说中国电视剧很有意思。大卫不喜欢看电视，他没有电视机。",
+      "es": "Me llamo Xiao Li y mi afición es cantar. Los fines de semana suelo cantar con mis amigos. A Hugo no le gusta mucho cantar: le gusta escuchar música y también ver películas. Lo que más le gusta a Ana es ver series chinas; dice que son muy interesantes. A David no le gusta ver la tele: no tiene televisor.",
+      "questions": [
+        { "q": "¿Cuál es la afición de Xiao Li?", "options": ["Cantar", "Ver películas", "Ver series"], "answer": 0 },
+        { "q": "¿Qué es lo que más le gusta a Ana?", "options": ["Escuchar música", "Las series chinas", "Cantar"], "answer": 1 },
+        { "q": "¿Por qué David no ve la tele?", "options": ["No tiene televisor", "No tiene tiempo", "Prefiere cantar"], "answer": 0 },
+        { "q": "¿Qué significa 有意思?", "options": ["Interesante", "Aburrido", "Bonito de oír"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

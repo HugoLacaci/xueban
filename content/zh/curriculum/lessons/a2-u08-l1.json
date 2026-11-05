@@ -1,0 +1,134 @@
+{
+  "id": "a2-u08-l1",
+  "title": "¿Por dónde se va? 往 y 向 + dirección",
+  "zh": "一直往前走",
+  "goal": "Preguntar el camino y entender indicaciones con 往 / 向 + dirección + verbo (往前走, 往东走, 向左走).",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "往", "pinyin": "wǎng", "es": "hacia (dirección)", "note": "往 + dirección + verbo: 往前走, 往东走." },
+    { "hanzi": "向", "pinyin": "xiàng", "es": "hacia; a (dirección o persona)", "note": "Como 往 con direcciones (向左走); además sirve con personas (向老师问好)." },
+    { "hanzi": "问路", "pinyin": "wènlù", "es": "preguntar el camino" },
+    { "hanzi": "方向", "pinyin": "fāngxiàng", "es": "dirección, sentido", "note": "哪个方向 = qué dirección." },
+    { "hanzi": "街", "pinyin": "jiē", "es": "calle", "note": "Clasificador 条: 一条街." },
+    { "hanzi": "前面", "pinyin": "qiánmian", "es": "delante, (más) adelante", "note": "= 前边; 前面 es más frecuente en indicaciones." },
+    { "hanzi": "后面", "pinyin": "hòumian", "es": "detrás", "note": "= 后边." },
+    { "hanzi": "路边", "pinyin": "lùbiān", "es": "borde de la calle, junto a la carretera" },
+    { "hanzi": "边", "pinyin": "biān", "es": "lado, borde", "note": "东边, 那边, 路边, 身边…" },
+    { "hanzi": "红绿灯", "pinyin": "hónglǜdēng", "es": "semáforo", "note": "Lit. «luz roja y verde»." },
+    { "hanzi": "经过", "pinyin": "jīngguò", "es": "pasar por, atravesar" }
+  ],
+  "extraVocab": ["红绿灯"],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "请问，地铁站怎么走？", "py": "Qǐngwèn, dìtiězhàn zěnme zǒu?", "es": "Perdone, ¿cómo se va a la estación de metro?" },
+        { "zh": "你一直往前走，到了红绿灯往左走。", "py": "Nǐ yìzhí wǎng qián zǒu, dào le hónglǜdēng wǎng zuǒ zǒu.", "es": "Sigue todo recto y, al llegar al semáforo, gira a la izquierda." },
+        { "zh": "超市在银行后面吗？", "py": "Chāoshì zài yínháng hòumian ma?", "es": "¿El supermercado está detrás del banco?" }
+      ]
+    },
+    { "type": "vocab", "title": "Orientarse en la calle", "words": ["往", "向", "问路", "方向", "街", "前面", "后面", "路边", "边", "红绿灯", "经过"] },
+    {
+      "type": "phonetics-drill",
+      "title": "El tercer tono en cadena: 往北走, 往左走",
+      "markdown": "**往 wǎng** es tercer tono, y muchas direcciones también: **北 běi**, **左 zuǒ**, y el verbo **走 zǒu**. Cuando se juntan tres terceros tonos, no se pronuncian los tres «bajando y subiendo»:\n\n- **往北走** wǎng běi zǒu → se dice ***wáng béi zǒu***: los dos primeros suben (2.º tono) y solo el último baja de verdad.\n- **往左走** → *wáng zuó zǒu*.\n- **往前走** wǎng qián zǒu: delante de un 2.º tono, 往 se queda en **medio tercer tono** (solo la parte baja).\n\nEl pinyin se escribe siempre con el tono original (wǎng běi zǒu): el cambio lo haces tú al hablar.\n\nY atención a **向 xiàng** (4.º, cae) frente a **想 xiǎng** (3.º, «querer»): 向右走 no es 想右走.",
+      "items": [
+        { "audio": "往北走", "prompt": "¿Cómo suena de verdad?", "options": ["wáng béi zǒu", "wǎng běi zǒu (tres terceros completos)", "wàng bèi zòu"], "answer": 0, "explain": "Tres terceros seguidos: los dos primeros suben y solo el último baja." },
+        { "audio": "向右走", "options": ["xiàng yòu zǒu", "xiǎng yòu zǒu", "xiāng yòu zǒu"], "answer": 0, "explain": "向 es 4.º tono, cae con fuerza; 想 (3.º) significa «querer»." },
+        { "audio": "红绿灯", "options": ["hónglǜdēng", "hónglùdēng", "hōnglǜdèng"], "answer": 0, "explain": "绿 lǜ lleva ü: labios redondos como para silbar." },
+        { "audio": "方向", "options": ["fāngxiàng", "fāngxiāng", "fàngxiàng"], "answer": 0, "explain": "fāng (1.º, alto) + xiàng (4.º, cae)." },
+        { "audio": "问路", "options": ["wènlù", "wénlǜ", "wěnlù"], "answer": 0, "explain": "Dos cuartos tonos: el primero cae solo hasta la mitad, el segundo cae del todo." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["往", "街"],
+      "mnemonics": {
+        "往": "彳 (paso, pie que avanza) + 主: los pasos que te llevan hacia un sitio → «hacia».",
+        "街": "行 (dibujo de un cruce de calles) con 圭 (dos 土, tierra) en medio: tierra entre dos aceras = calle."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "往 / 向 + dirección van delante del verbo",
+      "markdown": "En español la dirección va **después** del verbo («sigue **recto**», «gira **a la izquierda**»). En chino, **往 / 向 + dirección** va **delante** del verbo, como un adverbio:\n\n> 你 **往前** 走。 Sigue recto (lit. «tú hacia delante anda»).\n\n- **往** solo indica dirección: 往前, 往左, 往右, 往东, 往北, 往这边.\n- **向** también, y además se usa con personas (向老师问好): lo verás en la lección 5.\n- Para «girar», en las indicaciones se dice simplemente **往左走 / 往右走**.\n\n**Convención del esqueleto en esta unidad**: preposición + **dirección** (往前, 向左, 一直往东) va en el hueco **Adverbios**; preposición + **persona** (给他, 对我, 向老师) irá en **Con quién**.\n\nLos puntos cardinales (东 南 西 北) ya los conoces: en las ciudades del norte de China se dan las indicaciones casi siempre con ellos (往北走 = «ve hacia el norte»); en Shanghái se usan más 左 / 右.",
+      "focus": ["adverb"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "adverb": { "zh": "一直往前", "py": "yìzhí wǎng qián" }, "verb1": { "zh": "走", "py": "zǒu" } }, "end": "。", "es": "Sigue todo recto.", "esOrder": [{ "text": "Sigue", "slot": "verb1" }, { "text": "todo recto", "slot": "adverb" }] },
+        { "slots": { "subject": { "zh": "我们", "py": "wǒmen" }, "adverb": { "zh": "先往东", "py": "xiān wǎng dōng" }, "verb1": { "zh": "走", "py": "zǒu" }, "complement": { "zh": "五分钟", "py": "wǔ fēnzhōng" } }, "end": "。", "es": "Primero andamos cinco minutos hacia el este.", "esOrder": [{ "text": "Primero", "slot": "adverb" }, { "text": "andamos", "slot": "verb1" }, { "text": "cinco minutos", "slot": "complement" }, { "text": "hacia el este", "slot": "adverb" }] },
+        { "slots": { "subject": { "zh": "地铁站", "py": "dìtiězhàn" }, "verb1": { "zh": "在", "py": "zài" }, "object": { "zh": "学校北边", "py": "xuéxiào běibian" } }, "end": "。", "es": "La estación de metro está al norte de la universidad." },
+        { "slots": { "subject": { "zh": "这路公交车", "py": "zhè lù gōngjiāochē" }, "verb1": { "zh": "经过", "py": "jīngguò" }, "object": { "zh": "我们学校", "py": "wǒmen xuéxiào" } }, "end": "。", "es": "Esta línea de autobús pasa por nuestra universidad." },
+        { "slots": { "subject": { "zh": "安娜", "py": "Ānnà" }, "place": { "zh": "在路边", "py": "zài lùbiān" }, "verb1": { "zh": "等", "py": "děng" }, "object": { "zh": "我们", "py": "wǒmen" } }, "end": "。", "es": "Ana nos espera junto a la calle." },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "adverb": { "zh": "向右", "py": "xiàng yòu" }, "verb1": { "zh": "看", "py": "kàn" } }, "end": "。", "es": "Mira a la derecha." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "adverb": { "zh": "别往右", "py": "bié wǎng yòu" }, "verb1": { "zh": "走", "py": "zǒu" } }, "end": "。", "es": "No gires a la derecha." },
+        { "slots": { "subject": { "zh": "这路公交车", "py": "zhè lù gōngjiāochē" }, "adverb": { "zh": "不", "py": "bù" }, "verb1": { "zh": "经过", "py": "jīngguò" }, "object": { "zh": "地铁站", "py": "dìtiězhàn" } }, "end": "。", "es": "Esta línea de autobús no pasa por la estación de metro." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "往哪个方向", "py": "wǎng nǎge fāngxiàng" }, "verb1": { "zh": "走", "py": "zǒu" } }, "end": "？", "es": "¿Hacia qué dirección voy?" },
+        { "slots": { "subject": { "zh": "超市", "py": "chāoshì" }, "verb1": { "zh": "在", "py": "zài" }, "object": { "zh": "前面", "py": "qiánmian" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿El supermercado está más adelante?" }
+      ],
+      "mistakes": [
+        { "wrong": "你走往前。", "right": "你往前走。", "why": "往 + dirección va delante del verbo, no detrás como en español («anda hacia delante»)." },
+        { "wrong": "你往前走直。", "right": "你一直往前走。", "why": "«Recto, sin parar» es 一直, y va delante, con los adverbios." },
+        { "wrong": "我往老师问好。", "right": "我向老师问好。", "why": "往 solo lleva direcciones o lugares; con una persona se usa 向." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Hugo pregunta el camino",
+      "lines": [
+        { "speaker": "雨果", "zh": "阿姨，您好！请问，地铁站怎么走？", "py": "Āyí, nín hǎo! Qǐngwèn, dìtiězhàn zěnme zǒu?", "es": "¡Buenos días, señora! Perdone, ¿cómo se va a la estación de metro?" },
+        { "speaker": "阿姨", "zh": "地铁站？你往前走，到了红绿灯往左走。", "py": "Dìtiězhàn? Nǐ wǎng qián zǒu, dào le hónglǜdēng wǎng zuǒ zǒu.", "es": "¿La estación de metro? Sigue adelante y, al llegar al semáforo, gira a la izquierda." },
+        { "speaker": "雨果", "zh": "往左走，然后呢？", "py": "Wǎng zuǒ zǒu, ránhòu ne?", "es": "A la izquierda, ¿y luego?" },
+        { "speaker": "阿姨", "zh": "然后一直往东走，经过一个大超市，地铁站就在超市后面。", "py": "Ránhòu yìzhí wǎng dōng zǒu, jīngguò yí ge dà chāoshì, dìtiězhàn jiù zài chāoshì hòumian.", "es": "Luego todo recto hacia el este; pasas un supermercado grande y la estación está justo detrás." },
+        { "speaker": "雨果", "zh": "东边是哪个方向？我不太清楚。", "py": "Dōngbian shì nǎge fāngxiàng? Wǒ bú tài qīngchu.", "es": "¿Hacia dónde queda el este? No lo tengo muy claro." },
+        { "speaker": "阿姨", "zh": "你看，现在是早上，太阳在那边，那边就是东。", "py": "Nǐ kàn, xiànzài shì zǎoshang, tàiyáng zài nàbian, nàbian jiù shì dōng.", "es": "Mira: ahora es por la mañana, el sol está por allí; pues allí es el este." },
+        { "speaker": "雨果", "zh": "我明白了。远不远？", "py": "Wǒ míngbai le. Yuǎn bu yuǎn?", "es": "Entendido. ¿Está lejos?" },
+        { "speaker": "阿姨", "zh": "不远，走路十分钟。路边人很多，你跟他们走就行。", "py": "Bù yuǎn, zǒulù shí fēnzhōng. Lùbiān rén hěn duō, nǐ gēn tāmen zǒu jiù xíng.", "es": "No, diez minutos andando. Por la acera va mucha gente: sigue a los demás y ya está." },
+        { "speaker": "雨果", "zh": "谢谢阿姨！", "py": "Xièxie āyí!", "es": "¡Muchas gracias, señora!" },
+        { "speaker": "阿姨", "zh": "不客气。过马路的时候小心！", "py": "Bú kèqi. Guò mǎlù de shíhou xiǎoxīn!", "es": "De nada. ¡Ten cuidado al cruzar!" }
+      ],
+      "notes": "阿姨 (lit. «tía») es la forma amable de dirigirse a una mujer de mediana edad desconocida. Para preguntar el camino basta con 请问，……怎么走？ En Pekín te dirán 往北走, 往东走; en Shanghái, más bien 往左 / 往右."
+    },
+    { "type": "exercises", "count": 16, "bank": ["g-zai", "u07", "g-word-order"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "你" }, "adverb": { "zh": "一直往前" }, "verb1": { "zh": "走" } }, "end": "。", "es": "Sigue todo recto." }, "distractors": ["在"] },
+        { "sentence": { "slots": { "subject": { "zh": "地铁站" }, "verb1": { "zh": "在" }, "object": { "zh": "超市后面" } }, "end": "。", "es": "La estación de metro está detrás del supermercado." }, "distractors": ["往"] },
+        { "sentence": { "slots": { "subject": { "zh": "我们" }, "adverb": { "zh": "先往东" }, "verb1": { "zh": "走" }, "complement": { "zh": "十分钟" } }, "end": "。", "es": "Primero andamos diez minutos hacia el este." } },
+        { "sentence": { "slots": { "time0": { "zh": "今天下午" }, "subject": { "zh": "我" }, "aux": { "zh": "想" }, "with": { "zh": "跟小李一起" }, "verb1": { "zh": "去学校东边的超市" }, "verb2": { "zh": "买" }, "object": { "zh": "水果" } }, "end": "。", "es": "Esta tarde quiero ir con Xiao Li al supermercado que está al este de la universidad a comprar fruta." } }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "请问，地铁站怎么走？", "py": "Qǐngwèn, dìtiězhàn zěnme zǒu?", "es": "Perdone, ¿cómo se va a la estación de metro?" },
+        { "zh": "你一直往前走。", "py": "Nǐ yìzhí wǎng qián zǒu.", "es": "Sigue todo recto." },
+        { "zh": "到了红绿灯往左走。", "py": "Dào le hónglǜdēng wǎng zuǒ zǒu.", "es": "Al llegar al semáforo, gira a la izquierda." },
+        { "zh": "地铁站在超市后面。", "py": "Dìtiězhàn zài chāoshì hòumian.", "es": "La estación de metro está detrás del supermercado." }
+      ],
+      "respond": [
+        { "q": { "zh": "请问，超市怎么走？", "py": "Qǐngwèn, chāoshì zěnme zǒu?", "es": "Perdona, ¿cómo se va al supermercado?" }, "model": { "zh": "你往前走，超市在右边。", "py": "Nǐ wǎng qián zǒu, chāoshì zài yòubian.", "es": "Sigue adelante: el supermercado está a la derecha." } },
+        { "q": { "zh": "你的宿舍在学校哪边？", "py": "Nǐ de sùshè zài xuéxiào nǎbian?", "es": "¿En qué parte de la universidad está tu residencia?" }, "model": { "zh": "我的宿舍在学校东边。", "py": "Wǒ de sùshè zài xuéxiào dōngbian.", "es": "Mi residencia está en el lado este de la universidad." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "La estación estaba detrás",
+      "text": "上海的路很多，雨果第一次一个人出门的时候，不知道怎么走。他问了一个阿姨：“请问，地铁站怎么走？”阿姨说：“你一直往前走，经过两个红绿灯，然后往左走。地铁站在一个大超市后面。”雨果往前走了十分钟，然后他忘了往哪个方向走。他在路边又问了一个学生。学生笑了：“地铁站就在你后面！”",
+      "es": "Shanghái tiene muchísimas calles y, la primera vez que Hugo salió solo, no sabía cómo ir. Le preguntó a una señora: «Perdone, ¿cómo se va a la estación de metro?». La señora le dijo: «Sigue todo recto, pasa dos semáforos y luego gira a la izquierda. La estación está detrás de un supermercado grande». Hugo anduvo diez minutos, pero se le olvidó hacia dónde tenía que ir. En la acera le volvió a preguntar a un estudiante. El estudiante se rió: «¡La estación está justo detrás de ti!».",
+      "questions": [
+        { "q": "¿Dónde está la estación de metro, según la señora?", "options": ["Detrás de un supermercado", "Delante de la universidad", "Al norte del parque"], "answer": 0 },
+        { "q": "¿Cuántos semáforos hay que pasar?", "options": ["两个", "一个", "三个"], "answer": 0 },
+        { "q": "¿Qué le pasó a Hugo después de andar diez minutos?", "options": ["Se le olvidó la dirección", "Se le acabó la batería", "Llegó a la estación"], "answer": 0 },
+        { "q": "¿Dónde estaba la estación al final?", "options": ["Detrás de Hugo", "Delante del semáforo", "A la izquierda del estudiante"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

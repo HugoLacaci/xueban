@@ -1,0 +1,138 @@
+{
+  "id": "b1-u02-l5",
+  "title": "Lo han llevado al hospital: 被 + verbo + 到 / 在 + lugar",
+  "zh": "小李被送到医院了",
+  "goal": "Contar adónde ha ido a parar alguien o algo con 被 + V + 到 / 在 + lugar, y reaccionar ante una urgencia (立刻, 连忙, 只好, 千万).",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "只好", "pinyin": "zhǐhǎo", "es": "no tener más remedio que", "note": "Va delante del verbo: 我只好请假." },
+    { "hanzi": "立刻", "pinyin": "lìkè", "es": "inmediatamente, en el acto", "note": "Sirve también para órdenes y planes: 我们立刻去！" },
+    { "hanzi": "连忙", "pinyin": "liánmáng", "es": "enseguida, apresuradamente", "note": "Solo para contar lo que alguien hizo (pasado), nunca en órdenes." },
+    { "hanzi": "紧急", "pinyin": "jǐnjí", "es": "urgente, de emergencia", "note": "紧急情况 = una emergencia. En China, ambulancias: 120." },
+    { "hanzi": "受", "pinyin": "shòu", "es": "recibir, sufrir", "note": "受伤 = herirse, resultar herido. Ya lleva sentido pasivo: no se dice *被受伤." },
+    { "hanzi": "痛苦", "pinyin": "tòngkǔ", "es": "sufrimiento; doloroso, angustiado" },
+    { "hanzi": "伤心", "pinyin": "shāngxīn", "es": "triste, apenado (por algo)" },
+    { "hanzi": "不安", "pinyin": "bù'ān", "es": "intranquilo, inquieto" },
+    { "hanzi": "去世", "pinyin": "qùshì", "es": "fallecer", "note": "Forma respetuosa para personas (frente a 死)." },
+    { "hanzi": "千万", "pinyin": "qiānwàn", "es": "¡no se te ocurra…! / sea como sea", "note": "Ya lo conoces como número (一千万 = diez millones); aquí es adverbio: 千万别… = ni se te ocurra…; 千万要… = no dejes de…" },
+    { "hanzi": "麻烦", "pinyin": "máfan", "es": "molestia, lío; molestar", "note": "麻烦你… = ¿te importaría…? 有一个麻烦 = hay un problema." },
+    { "hanzi": "困难", "pinyin": "kùnnan", "es": "dificultad; difícil" },
+    { "hanzi": "解决", "pinyin": "jiějué", "es": "resolver, solucionar" }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "小李被送到医院了。", "py": "Xiǎo Lǐ bèi sòngdào yīyuàn le.", "es": "Han llevado a Xiao Li al hospital." },
+        { "zh": "我们立刻去看他吧！", "py": "Wǒmen lìkè qù kàn tā ba!", "es": "¡Vamos a verlo ahora mismo!" },
+        { "zh": "有什么困难，千万要告诉我们。", "py": "Yǒu shénme kùnnan, qiānwàn yào gàosu wǒmen.", "es": "Si tienes cualquier problema, no dejes de decírnoslo." }
+      ]
+    },
+    { "type": "vocab", "title": "Urgencias", "words": ["只好", "立刻", "连忙", "紧急", "受", "痛苦", "伤心", "不安", "去世", "千万", "麻烦", "困难", "解决"] },
+    {
+      "type": "phonetics-drill",
+      "title": "El tono neutro del final y la urgencia en la voz",
+      "markdown": "En 被送**到**医院了, el 到 del resultado se dice **pegado al verbo** y sin pausa: *sòngdào yīyuàn*. La frase entera va en un solo arco que cae al final.\n\nCuando hay urgencia, el chino **acelera** y marca con fuerza la primera sílaba del adverbio: **立**刻！, **千**万别…！\n\nPalabras de hoy:\n\n- **麻烦 máfan** y **困难 kùnnan**: la segunda sílaba es **neutra** en el habla normal.\n- **紧急 jǐnjí**: tercero + segundo; *j* sin aire.\n- **不安 bù'ān**: 不 no cambia (delante de primer tono sigue siendo *bù*).",
+      "items": [
+        { "audio": "麻烦", "options": ["máfan", "máfán", "mǎfan"], "answer": 0, "explain": "Segundo tono + neutro." },
+        { "audio": "不安", "options": ["bù'ān", "bú'ān", "bǔ'ān"], "answer": 0, "explain": "不 solo cambia a bú delante de cuarto tono." },
+        { "audio": "小李被送到医院了。", "prompt": "¿Adónde lo han llevado?", "options": ["Al hospital", "A casa", "A la universidad"], "answer": 0 },
+        { "audio": "千万别告诉妈妈！", "prompt": "¿Qué te piden?", "options": ["Que no se lo digas a mamá", "Que se lo digas a mamá", "Que llames a mamá"], "answer": 0, "explain": "千万别 = ni se te ocurra." },
+        { "audio": "紧急", "options": ["jǐnjí", "jīnjí", "qǐnjí"], "answer": 0, "explain": "Tercero + segundo; j sin aire." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["受", "急"],
+      "mnemonics": {
+        "受": "Una mano arriba (爫) y otra abajo (又) con algo en medio (冖): una mano da y la otra recibe. Recibir, y también sufrir: 受伤.",
+        "急": "Arriba, alguien que alcanza a otro por detrás; abajo, 心 (corazón): el corazón con prisa. 着急, 紧急."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "Lo afectado + 被 + verbo + 到 / 在 + lugar",
+      "markdown": "Igual que con 把 (把箱子放在门口), con 被 el verbo puede llevar detrás **到 / 在 + lugar** para decir **adónde ha ido a parar** algo o alguien:\n\n**小李** + **被** + **送到** + **医院** + 了.\n\nEn el esqueleto: el verbo con 到 / 在 en *Verbo 1* (送到, 放在, 叫到), el lugar en *Objeto*. Con dirección (来 / 去) detrás del lugar, 来 / 去 en *Complemento*: 被叫到办公室**去**了.\n\nTambién puede llevar **得 + estado**: 他被老师说**得很不好意思** (V得 en *Verbo 1*, el estado en *Complemento*).\n\n**Para reaccionar**: 立刻 (ahora mismo), 连忙 (enseguida, solo en pasado), 只好 (no hay más remedio), 千万要 / 千万别 (no dejes de / ni se te ocurra). Van en *Adverbios*.\n\nY recuerda: **受伤** y **感冒** no llevan 被: 他受伤了, 我感冒了.",
+      "focus": ["with", "verb1", "object"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "小李", "py": "Xiǎo Lǐ" }, "with": { "zh": "被", "py": "bèi" }, "verb1": { "zh": "送到", "py": "sòngdào" }, "object": { "zh": "医院", "py": "yīyuàn" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Han llevado a Xiao Li al hospital.", "esOrder": [{ "text": "Han llevado", "slot": "verb1" }, { "text": "a Xiao Li", "slot": "subject" }, { "text": "al hospital", "slot": "object" }] },
+        { "slots": { "subject": { "zh": "那个病人", "py": "nà ge bìngrén" }, "with": { "zh": "被救护车", "py": "bèi jiùhùchē" }, "verb1": { "zh": "送到", "py": "sòngdào" }, "object": { "zh": "医院", "py": "yīyuàn" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "La ambulancia ha llevado al enfermo al hospital." },
+        { "slots": { "subject": { "zh": "我的行李", "py": "wǒ de xíngli" }, "with": { "zh": "被", "py": "bèi" }, "verb1": { "zh": "放在", "py": "fàng zài" }, "object": { "zh": "门口", "py": "ménkǒu" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Me han dejado el equipaje en la puerta." },
+        { "slots": { "subject": { "zh": "大卫", "py": "Dàwèi" }, "with": { "zh": "被王老师", "py": "bèi Wáng lǎoshī" }, "verb1": { "zh": "叫到", "py": "jiàodào" }, "object": { "zh": "办公室", "py": "bàngōngshì" }, "complement": { "zh": "去", "py": "qu" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "La profesora Wang ha llamado a David a su despacho." },
+        { "slots": { "subject": { "zh": "他", "py": "tā" }, "with": { "zh": "被老师", "py": "bèi lǎoshī" }, "verb1": { "zh": "说得", "py": "shuō de" }, "complement": { "zh": "很不好意思", "py": "hěn bù hǎoyìsi" } }, "end": "。", "es": "La profesora le ha echado una bronca que lo ha dejado muerto de vergüenza." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "他", "py": "tā" }, "adverb": { "zh": "没", "py": "méi" }, "with": { "zh": "被", "py": "bèi" }, "verb1": { "zh": "送到", "py": "sòngdào" }, "object": { "zh": "医院", "py": "yīyuàn" } }, "end": "。", "es": "No lo han llevado al hospital." },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "adverb": { "zh": "千万别", "py": "qiānwàn bié" }, "verb1": { "zh": "告诉", "py": "gàosu" }, "object": { "zh": "我妈妈", "py": "wǒ māma" } }, "end": "！", "es": "¡Ni se te ocurra decírselo a mi madre!" }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "病人", "py": "bìngrén" }, "with": { "zh": "被", "py": "bèi" }, "verb1": { "zh": "送到", "py": "sòngdào" }, "object": { "zh": "哪个医院", "py": "nǎ ge yīyuàn" }, "particle": { "zh": "了", "py": "le" } }, "end": "？", "es": "¿A qué hospital han llevado al enfermo?" }
+      ],
+      "mistakes": [
+        { "wrong": "小李被送医院到了。", "right": "小李被送到医院了。", "why": "到 va pegado al verbo, y el lugar detrás: 送到医院." },
+        { "wrong": "他被受伤了。", "right": "他受伤了。", "why": "受 ya significa «sufrir, recibir»: no necesita 被." },
+        { "wrong": "我被感冒了。", "right": "我感冒了。", "why": "Nadie te «hace» un resfriado: las enfermedades no llevan 被." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Xiao Li, al hospital",
+      "lines": [
+        { "speaker": "安娜", "zh": "雨果，你听说了吗？小李出事了！", "py": "Yǔguǒ, nǐ tīngshuō le ma? Xiǎo Lǐ chūshì le!", "es": "Hugo, ¿te has enterado? ¡Xiao Li ha tenido un accidente!" },
+        { "speaker": "雨果", "zh": "什么？他怎么了？", "py": "Shénme? Tā zěnme le?", "es": "¿Qué? ¿Qué le ha pasado?" },
+        { "speaker": "安娜", "zh": "他骑自行车的时候，被一辆电动车碰倒了。", "py": "Tā qí zìxíngchē de shíhou, bèi yí liàng diàndòngchē pèngdǎo le.", "es": "Iba en bici y una moto eléctrica lo ha tirado." },
+        { "speaker": "雨果", "zh": "他受伤了吗？", "py": "Tā shòushāng le ma?", "es": "¿Está herido?" },
+        { "speaker": "安娜", "zh": "腿受了一点儿伤，已经被送到医院了。", "py": "Tuǐ shòu le yìdiǎnr shāng, yǐjīng bèi sòngdào yīyuàn le.", "es": "Se ha hecho un poco de daño en la pierna y ya lo han llevado al hospital." },
+        { "speaker": "雨果", "zh": "我们立刻去看他吧！", "py": "Wǒmen lìkè qù kàn tā ba!", "es": "¡Vamos a verlo ahora mismo!" },
+        { "speaker": "雨果", "zh": "小李，你怎么样？疼吗？", "py": "Xiǎo Lǐ, nǐ zěnmeyàng? Téng ma?", "es": "Xiao Li, ¿qué tal estás? ¿Te duele?" },
+        { "speaker": "小李", "zh": "有点儿疼，可是不太痛苦。医生说问题不大。", "py": "Yǒudiǎnr téng, kěshì bú tài tòngkǔ. Yīshēng shuō wèntí bú dà.", "es": "Me duele un poco, pero no lo estoy pasando mal. El médico dice que no es grave." },
+        { "speaker": "安娜", "zh": "你妈妈知道吗？她一定很不安。", "py": "Nǐ māma zhīdào ma? Tā yídìng hěn bù'ān.", "es": "¿Lo sabe tu madre? Estará muy intranquila." },
+        { "speaker": "小李", "zh": "我还没告诉她，我怕她伤心。你们千万别告诉她！", "py": "Wǒ hái méi gàosu tā, wǒ pà tā shāngxīn. Nǐmen qiānwàn bié gàosu tā!", "es": "Aún no se lo he dicho: no quiero que se disguste. ¡Ni se os ocurra contárselo!" },
+        { "speaker": "雨果", "zh": "好。有什么困难，千万要告诉我们。", "py": "Hǎo. Yǒu shénme kùnnan, qiānwàn yào gàosu wǒmen.", "es": "Vale. Si tienes cualquier problema, no dejes de decírnoslo." },
+        { "speaker": "小李", "zh": "有一个麻烦：明天我有考试，只好请假了。", "py": "Yǒu yí ge máfan: míngtiān wǒ yǒu kǎoshì, zhǐhǎo qǐngjià le.", "es": "Hay un problema: mañana tengo examen y no me queda otra que pedir permiso para faltar." },
+        { "speaker": "雨果", "zh": "别着急，这个问题我们来解决，我去跟王老师说。", "py": "Bié zháojí, zhège wèntí wǒmen lái jiějué, wǒ qù gēn Wáng lǎoshī shuō.", "es": "Tranquilo, eso lo solucionamos nosotros: yo hablo con la profesora Wang." },
+        { "speaker": "小李", "zh": "谢谢你们，我真被你们感动了！", "py": "Xièxie nǐmen, wǒ zhēn bèi nǐmen gǎndòng le!", "es": "Gracias, ¡me habéis emocionado de verdad!" }
+      ],
+      "notes": "被 + 感动: 我被你们感动了 es una de las pocas pasivas «positivas» frecuentes (emocionar). 电动车 son las motos eléctricas que llenan las calles chinas. En una emergencia: 120 ambulancia, 110 policía, 119 bomberos."
+    },
+    { "type": "exercises", "count": 17, "bank": ["g-complements", "g-zai", "g-le"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "小李" }, "with": { "zh": "被" }, "verb1": { "zh": "送到" }, "object": { "zh": "医院" }, "particle": { "zh": "了" } }, "end": "。", "es": "Han llevado a Xiao Li al hospital." }, "distractors": ["在"] },
+        { "sentence": { "slots": { "subject": { "zh": "我的行李" }, "with": { "zh": "被" }, "verb1": { "zh": "放在" }, "object": { "zh": "门口" }, "particle": { "zh": "了" } }, "end": "。", "es": "Me han dejado el equipaje en la puerta." } },
+        { "sentence": { "slots": { "subject": { "zh": "你们" }, "adverb": { "zh": "千万别" }, "verb1": { "zh": "告诉" }, "object": { "zh": "我妈妈" } }, "end": "！", "es": "¡Ni se os ocurra decírselo a mi madre!" }, "distractors": ["不"] },
+        { "sentence": { "slots": { "time0": { "zh": "因为腿受了伤，" }, "subject": { "zh": "小李" }, "time": { "zh": "明天" }, "adverb": { "zh": "只好" }, "with": { "zh": "跟王老师" }, "verb1": { "zh": "请" }, "object": { "zh": "一天假" } }, "end": "。", "es": "Como se ha hecho daño en la pierna, mañana Xiao Li no tendrá más remedio que pedirle a la profesora Wang un día libre." } },
+        { "sentence": { "slots": { "time0": { "zh": "昨天下午" }, "subject": { "zh": "那个受伤的人" }, "with": { "zh": "被救护车" }, "verb1": { "zh": "送到" }, "object": { "zh": "学校旁边的医院" }, "particle": { "zh": "了" } }, "end": "。", "es": "Ayer por la tarde la ambulancia llevó al herido al hospital de al lado de la universidad." } }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "小李被送到医院了。", "py": "Xiǎo Lǐ bèi sòngdào yīyuàn le.", "es": "Han llevado a Xiao Li al hospital." },
+        { "zh": "我们立刻去看他吧！", "py": "Wǒmen lìkè qù kàn tā ba!", "es": "¡Vamos a verlo ahora mismo!" },
+        { "zh": "你们千万别告诉我妈妈！", "py": "Nǐmen qiānwàn bié gàosu wǒ māma!", "es": "¡Ni se os ocurra decírselo a mi madre!" },
+        { "zh": "这个问题我们来解决。", "py": "Zhège wèntí wǒmen lái jiějué.", "es": "Este problema lo solucionamos nosotros." }
+      ],
+      "respond": [
+        { "q": { "zh": "小李怎么了？", "py": "Xiǎo Lǐ zěnme le?", "es": "¿Qué le ha pasado a Xiao Li?" }, "model": { "zh": "他受伤了，被送到医院了。", "py": "Tā shòushāng le, bèi sòngdào yīyuàn le.", "es": "Se ha hecho daño y lo han llevado al hospital." } },
+        { "q": { "zh": "明天的考试怎么办？", "py": "Míngtiān de kǎoshì zěnme bàn?", "es": "¿Qué hacemos con el examen de mañana?" }, "model": { "zh": "我只好请假了。", "py": "Wǒ zhǐhǎo qǐngjià le.", "es": "No me queda otra que pedir permiso para faltar." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Una llamada urgente",
+      "text": "上个月的一天晚上，安娜接到了妈妈的电话：她的奶奶生病了，已经被送到了马德里的医院。安娜听了以后非常不安。两年前，她的爷爷去世了，那时候她在中国，没能及时回家，她一直很伤心。所以这一次，她连忙在网上买飞机票。可是第二天的飞机票都没有了，她只好买了第三天的。王老师知道了以后，说：“这是紧急情况，你立刻回去吧，课以后再补。有什么困难，千万要告诉我。”同学们也都来帮她：雨果帮她解决了宿舍的麻烦，小李把她送到了机场。到了马德里以后，安娜马上去了医院。奶奶看见她，笑着说：“医生说我的病不太痛苦，你别着急。”在医院住了一个星期以后，奶奶出院了。安娜说：“这个星期，我真被大家感动了。”",
+      "es": "Una noche del mes pasado, Ana recibió una llamada de su madre: su abuela se había puesto enferma y ya la habían llevado al hospital en Madrid. Al oírlo, Ana se quedó muy intranquila. Hace dos años murió su abuelo; ella estaba en China, no pudo volver a tiempo y desde entonces le dolía mucho. Así que esta vez compró enseguida un billete de avión por internet. Pero ya no quedaban billetes para el día siguiente y no tuvo más remedio que comprar uno para dos días después. Cuando la profesora Wang se enteró, le dijo: «Es una emergencia: vuelve ahora mismo, las clases ya las recuperarás. Si tienes cualquier problema, no dejes de decírmelo». Sus compañeros también la ayudaron: Hugo le solucionó el lío de la residencia y Xiao Li la llevó al aeropuerto. Al llegar a Madrid, Ana fue directa al hospital. Su abuela, al verla, le dijo sonriendo: «El médico dice que lo mío no es muy doloroso, no te preocupes». Después de una semana ingresada, la abuela salió del hospital. Ana dijo: «Esta semana, todos me habéis emocionado de verdad».",
+      "questions": [
+        { "q": "¿Dónde llevaron a la abuela de Ana?", "options": ["马德里的医院", "上海的医院", "家里"], "answer": 0 },
+        { "q": "¿Por qué estaba Ana tan intranquila?", "options": ["Porque no pudo volver a tiempo cuando murió su abuelo", "Porque tenía un examen", "Porque perdió el billete"], "answer": 0 },
+        { "q": "¿Por qué compró el billete para dos días después?", "options": ["No quedaban billetes para el día siguiente", "Era más barato", "Tenía clase"], "answer": 0 },
+        { "q": "¿Quién la llevó al aeropuerto?", "options": ["小李", "雨果", "王老师"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

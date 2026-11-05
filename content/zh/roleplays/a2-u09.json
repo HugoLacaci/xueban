@@ -1,0 +1,138 @@
+{
+  "unitId": "a2-u09",
+  "scenarios": [
+    {
+      "id": "a2-u09-weekend-trip",
+      "title": "¿Excursión el sábado? Mirando el parte",
+      "zh": "天气预报怎么说？",
+      "level": 2,
+      "setting": "Jueves por la noche en la residencia. Xiao Li quiere ir de excursión a la montaña el fin de semana y te pregunta qué tiempo va a hacer. Tú (la app) eres 小李.",
+      "role": "Xiao Li",
+      "roleZh": "小李",
+      "voice": "m",
+      "goals": ["Decir qué dice el parte (就要…了 / 已经…了)", "Contar cómo está cambiando el tiempo (越来越)", "Proponer la mejor opción con 还是…吧", "Quedar a una hora y en un sitio concretos (就在…)"],
+      "vocab": ["天气预报", "越来越", "已经", "就要", "还是", "吧", "空气", "大自然"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "雨果，星期六我们去山上走走吧？那儿的空气好极了。", "py": "Yǔguǒ, xīngqīliù wǒmen qù shān shang zǒuzou ba? Nàr de kōngqì hǎo jí le.", "es": "Hugo, ¿el sábado vamos a pasear por el monte? Allí el aire es buenísimo." },
+          "user": [
+            { "zh": "好啊！你看天气预报了吗？", "py": "Hǎo a! Nǐ kàn tiānqì yùbào le ma?", "es": "¡Vale! ¿Has mirado el parte?", "keywords": ["天气预报", "看"], "next": "n2", "goal": 0 },
+            { "zh": "好啊！天气越来越冷了，山上冷吗？", "py": "Hǎo a! Tiānqì yuèláiyuè lěng le, shān shang lěng ma?", "es": "¡Vale! Cada vez hace más frío: ¿hace frío en el monte?", "keywords": ["越来越", "冷"], "next": "n3", "goal": 1 }
+          ],
+          "hint": "Acepta y pregunta por el parte (你看天气预报了吗？) o comenta que cada vez hace más frío (越来越冷了)."
+        },
+        "n2": {
+          "npc": { "zh": "我还没看呢。你帮我看一下吧。", "py": "Wǒ hái méi kàn ne. Nǐ bāng wǒ kàn yíxià ba.", "es": "Todavía no. Míralo tú, anda." },
+          "user": [
+            { "zh": "预报说星期六是晴天，星期天就要下雨了。", "py": "Yùbào shuō xīngqīliù shì qíngtiān, xīngqītiān jiùyào xià yǔ le.", "es": "Dice que el sábado estará despejado y que el domingo va a llover.", "keywords": ["就要", "下雨", "晴天"], "next": "n4", "goal": 0 },
+            { "zh": "预报说星期六气温零下一度。", "py": "Yùbào shuō xīngqīliù qìwēn língxià yí dù.", "es": "Dice que el sábado estaremos a un grado bajo cero.", "keywords": ["零下", "气温"], "next": "n3", "goal": 0 }
+          ],
+          "hint": "Cuenta lo que dice el parte: 预报说… + 就要…了 para lo que va a pasar, o la temperatura (零下…度)."
+        },
+        "n3": {
+          "npc": { "zh": "是啊，十二月了，气温变化很大。山上更冷。", "py": "Shì a, shí'èr yuè le, qìwēn biànhuà hěn dà. Shān shang gèng lěng.", "es": "Ya, estamos en diciembre y la temperatura cambia mucho. En el monte hace todavía más frío." },
+          "user": [
+            { "zh": "那我们还是多穿一点儿衣服吧。", "py": "Nà wǒmen háishi duō chuān yìdiǎnr yīfu ba.", "es": "Pues mejor nos abrigamos bien.", "keywords": ["还是", "吧", "穿"], "next": "n4", "goal": 2 },
+            { "zh": "太冷了，我们还是去公园吧。", "py": "Tài lěng le, wǒmen háishi qù gōngyuán ba.", "es": "Hace demasiado frío: mejor vamos al parque.", "keywords": ["还是", "公园"], "next": "n5", "goal": 2 }
+          ],
+          "hint": "Propón la mejor opción con 还是…吧: abrigarse (多穿一点儿衣服) o cambiar de plan (去公园)."
+        },
+        "n4": {
+          "npc": { "zh": "好，那就星期六去。我们几点走？", "py": "Hǎo, nà jiù xīngqīliù qù. Wǒmen jǐ diǎn zǒu?", "es": "Vale, pues vamos el sábado. ¿A qué hora salimos?" },
+          "user": [
+            { "zh": "早上八点吧，我们在地铁站见。", "py": "Zǎoshang bā diǎn ba, wǒmen zài dìtiězhàn jiàn.", "es": "A las ocho de la mañana; quedamos en la estación de metro.", "keywords": ["八点", "地铁站"], "next": "n6", "goal": 3 },
+            { "zh": "八点太早了，我们还是九点走吧。", "py": "Bā diǎn tài zǎo le, wǒmen háishi jiǔ diǎn zǒu ba.", "es": "Las ocho es muy pronto: mejor salimos a las nueve.", "keywords": ["还是", "九点"], "next": "n6", "goal": 2 }
+          ],
+          "hint": "Di una hora (…点吧) y un sitio para quedar (在…见), o propón otra hora con 还是…吧."
+        },
+        "n5": {
+          "npc": { "zh": "公园也可以。哪个公园？", "py": "Gōngyuán yě kěyǐ. Nǎge gōngyuán?", "es": "El parque también vale. ¿Cuál?" },
+          "user": [
+            { "zh": "就是学校旁边的那个公园，很近。", "py": "Jiù shì xuéxiào pángbiān de nàge gōngyuán, hěn jìn.", "es": "Justo el que está al lado de la universidad: está muy cerca.", "keywords": ["就是", "旁边"], "next": "n4", "goal": 3 },
+            { "zh": "我不知道，你说吧。", "py": "Wǒ bù zhīdào, nǐ shuō ba.", "es": "No sé, dilo tú.", "keywords": ["不知道"], "next": "n4" }
+          ],
+          "hint": "Señálalo con 就: 就是…的那个公园 / 就在学校旁边."
+        },
+        "n6": {
+          "npc": { "zh": "好，那我们星期六见。别忘了看一下天气预报！", "py": "Hǎo, nà wǒmen xīngqīliù jiàn. Bié wàng le kàn yíxià tiānqì yùbào!", "es": "Vale, pues nos vemos el sábado. ¡No te olvides de mirar el parte!" },
+          "user": [
+            { "zh": "我早就看了，你放心吧！", "py": "Wǒ zǎo jiù kàn le, nǐ fàngxīn ba!", "es": "¡Ya lo he mirado hace rato, tranquilo!", "keywords": ["早就", "放心"], "next": "n7", "goal": 0 },
+            { "zh": "好，我马上看。星期六见！", "py": "Hǎo, wǒ mǎshàng kàn. Xīngqīliù jiàn!", "es": "Vale, lo miro ahora mismo. ¡Hasta el sábado!", "keywords": ["马上", "见"], "next": "n7" }
+          ],
+          "hint": "Responde con 早就…了 (ya hace rato que…) o con 马上 (enseguida)."
+        },
+        "n7": {
+          "npc": { "zh": "好，星期六见！", "py": "Hǎo, xīngqīliù jiàn!", "es": "¡Hasta el sábado!" },
+          "end": true,
+          "feedback": "Plan cerrado. Has usado el tiempo de esta unidad: 就要…了 para lo que va a pasar, 越来越 para el cambio, 还是…吧 para proponer la mejor opción y 就 para señalar «justo ese»."
+        }
+      }
+    },
+    {
+      "id": "a2-u09-late",
+      "title": "¡Que son las siete y media! Llegas tarde",
+      "zh": "都七点半了！",
+      "level": 2,
+      "setting": "Has quedado con Anna a las siete para cenar en un restaurante cerca de la universidad. Son las siete y media y todavía no has llegado. Anna te llama. Tú (la app) eres 安娜.",
+      "role": "Anna",
+      "roleZh": "安娜",
+      "voice": "f",
+      "goals": ["Disculparte y decir dónde estás", "Explicar lo que acaba de pasar (刚 / 刚才)", "Decir cuándo llegas (马上 / 一会儿)", "Decidir qué hacer con 还是…吧"],
+      "vocab": ["都…了", "刚", "刚才", "马上", "一直", "还没", "一会儿", "还是"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "雨果，都七点半了！你怎么还没到？", "py": "Yǔguǒ, dōu qī diǎn bàn le! Nǐ zěnme hái méi dào?", "es": "Hugo, ¡que son las siete y media! ¿Cómo es que todavía no has llegado?" },
+          "user": [
+            { "zh": "对不起！我刚下地铁，马上就到。", "py": "Duìbuqǐ! Wǒ gāng xià dìtiě, mǎshàng jiù dào.", "es": "¡Perdona! Acabo de bajar del metro, llego enseguida.", "keywords": ["刚", "马上"], "next": "n2", "goal": 0 },
+            { "zh": "对不起，我还在宿舍。刚才下了一场大雨。", "py": "Duìbuqǐ, wǒ hái zài sùshè. Gāngcái xiàle yì cháng dà yǔ.", "es": "Perdona, todavía estoy en la residencia. Hace un momento ha caído un buen chaparrón.", "keywords": ["刚才", "下雨", "还在"], "next": "n3", "goal": 1 }
+          ],
+          "hint": "Discúlpate (对不起) y di dónde estás: 我刚下地铁 (acabo de bajar del metro) o 我还在宿舍."
+        },
+        "n2": {
+          "npc": { "zh": "好吧。我一直在门口等你，外面越来越冷了。", "py": "Hǎo ba. Wǒ yìzhí zài ménkǒu děng nǐ, wàimiàn yuèláiyuè lěng le.", "es": "Vale. Llevo todo el rato esperándote en la puerta y cada vez hace más frío." },
+          "user": [
+            { "zh": "你还是先进去吧，我十分钟就到。", "py": "Nǐ háishi xiān jìnqu ba, wǒ shí fēnzhōng jiù dào.", "es": "Mejor entra tú primero; llego en diez minutos.", "keywords": ["还是", "进去", "就到"], "next": "n4", "goal": 3 },
+            { "zh": "真不好意思，我马上就到！", "py": "Zhēn bù hǎoyìsi, wǒ mǎshàng jiù dào!", "es": "Lo siento mucho, ¡llego ya mismo!", "keywords": ["马上", "不好意思"], "next": "n4", "goal": 2 }
+          ],
+          "hint": "Propónle que entre con 还是…吧 o repite que llegas enseguida (马上就到)."
+        },
+        "n3": {
+          "npc": { "zh": "下雨了？我这儿没下雨啊。雨现在停了吗？", "py": "Xià yǔ le? Wǒ zhèr méi xià yǔ a. Yǔ xiànzài tíng le ma?", "es": "¿Ha llovido? Aquí no ha caído ni gota. ¿Ha parado ya?" },
+          "user": [
+            { "zh": "已经停了，我一会儿就出门。", "py": "Yǐjīng tíng le, wǒ yíhuìr jiù chūmén.", "es": "Ya ha parado: salgo dentro de un rato.", "keywords": ["已经", "一会儿"], "next": "n5", "goal": 2 },
+            { "zh": "还没停呢，一直在下。", "py": "Hái méi tíng ne, yìzhí zài xià.", "es": "Todavía no, no para de llover.", "keywords": ["还没", "一直"], "next": "n5", "goal": 1 }
+          ],
+          "hint": "Di si ya ha parado (已经停了) o todavía no (还没停呢 / 一直在下)."
+        },
+        "n4": {
+          "npc": { "zh": "好，我先进去点菜。你要喝什么？", "py": "Hǎo, wǒ xiān jìnqu diǎn cài. Nǐ yào hē shénme?", "es": "Vale, entro y voy pidiendo. ¿Qué quieres beber?" },
+          "user": [
+            { "zh": "天气太冷了，我还是喝热茶吧。", "py": "Tiānqì tài lěng le, wǒ háishi hē rè chá ba.", "es": "Con este frío, mejor un té caliente.", "keywords": ["还是", "热茶"], "next": "n6", "goal": 3 },
+            { "zh": "你点吧，我什么都可以。", "py": "Nǐ diǎn ba, wǒ shénme dōu kěyǐ.", "es": "Pide tú, a mí me vale cualquier cosa.", "keywords": ["你点吧"], "next": "n6" }
+          ],
+          "hint": "Elige con 还是…吧 (还是喝热茶吧) o deja que pida ella."
+        },
+        "n5": {
+          "npc": { "zh": "那我们还是明天去吧？", "py": "Nà wǒmen háishi míngtiān qù ba?", "es": "¿Entonces mejor lo dejamos para mañana?" },
+          "user": [
+            { "zh": "不用，我马上打车去，二十分钟就到。", "py": "Búyòng, wǒ mǎshàng dǎchē qù, èrshí fēnzhōng jiù dào.", "es": "No hace falta: cojo un taxi ahora mismo y en veinte minutos estoy.", "keywords": ["马上", "打车"], "next": "n4", "goal": 2 },
+            { "zh": "好，还是明天吧。真不好意思！", "py": "Hǎo, háishi míngtiān ba. Zhēn bù hǎoyìsi!", "es": "Vale, mejor mañana. ¡Lo siento mucho!", "keywords": ["还是", "明天"], "next": "n7", "goal": 3 }
+          ],
+          "hint": "Decide: o vas ya (马上打车去) o lo dejáis para mañana (还是明天吧)."
+        },
+        "n6": {
+          "npc": { "zh": "好，我等你。快点儿啊！", "py": "Hǎo, wǒ děng nǐ. Kuài diǎnr a!", "es": "Vale, te espero. ¡Date prisa!" },
+          "end": true,
+          "feedback": "¡Salvado! Te has disculpado, has explicado lo que acababa de pasar (刚 / 刚才), has dicho cuándo llegabas (马上 / 一会儿) y has propuesto soluciones con 还是…吧. Y Anna te ha recibido con un buen 都七点半了！"
+        },
+        "n7": {
+          "npc": { "zh": "没关系，明天见！明天别再晚了！", "py": "Méi guānxi, míngtiān jiàn! Míngtiān bié zài wǎn le!", "es": "No pasa nada, ¡hasta mañana! ¡Y mañana no llegues tarde!" },
+          "end": true,
+          "feedback": "Plan aplazado con educación. Has contado lo que pasaba (刚才下了一场大雨, 一直在下) y has elegido la mejor opción con 还是…吧."
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "id": "b1-u05-l2",
+  "title": "Saliendo de clase, al gimnasio: V了…就…",
+  "zh": "我下了课就去健身房",
+  "goal": "Encadenar dos acciones («nada más hacer X, hago Y») y decir qué efecto tiene algo con V了 + O + 就 + V, hablando de entrenar y de constancia.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "会员", "pinyin": "huìyuán", "es": "socio, miembro", "note": "会员卡 = tarjeta de socio; 办会员卡 = hacerse socio." },
+    { "hanzi": "教练", "pinyin": "jiàoliàn", "es": "entrenador, entrenadora", "note": "Como 老师, sirve de tratamiento: 张教练." },
+    { "hanzi": "训练", "pinyin": "xùnliàn", "es": "entrenar; entrenamiento" },
+    { "hanzi": "武术", "pinyin": "wǔshù", "es": "artes marciales (chinas)", "note": "练武术 = practicar artes marciales." },
+    { "hanzi": "功夫", "pinyin": "gōngfu", "es": "kung-fu; destreza", "note": "功夫电影 = película de kung-fu." },
+    { "hanzi": "工夫", "pinyin": "gōngfu", "es": "tiempo y esfuerzo (que cuesta algo)", "note": "Suena igual que 功夫: 花了很多工夫 = me ha costado mucho tiempo." },
+    { "hanzi": "坚持", "pinyin": "jiānchí", "es": "mantener, no rendirse, perseverar", "note": "坚持练习 = seguir practicando sin dejarlo; 坚持下去 = aguantar." },
+    { "hanzi": "继续", "pinyin": "jìxù", "es": "continuar, seguir", "note": "继续 + V: 继续练, 继续学习." },
+    { "hanzi": "连续", "pinyin": "liánxù", "es": "seguido, consecutivo", "note": "连续练了三天 = tres días seguidos." },
+    { "hanzi": "至少", "pinyin": "zhìshǎo", "es": "al menos, como mínimo", "note": "Va delante del verbo o de la cantidad: 至少练一个小时." },
+    { "hanzi": "效果", "pinyin": "xiàoguǒ", "es": "efecto, resultado", "note": "效果很好 = funciona muy bien." },
+    { "hanzi": "有效", "pinyin": "yǒuxiào", "es": "eficaz, que funciona; válido", "note": "这个方法很有效. También: 会员卡一年有效 (vale un año)." },
+    { "hanzi": "达到", "pinyin": "dádào", "es": "alcanzar (un nivel, un objetivo)", "note": "达到目标, 达到初级水平." },
+    { "hanzi": "目标", "pinyin": "mùbiāo", "es": "objetivo, meta" }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "我下了课就去健身房。", "py": "Wǒ xià le kè jiù qù jiànshēnfáng.", "es": "Nada más salir de clase me voy al gimnasio." },
+        { "zh": "他吃了药就好多了。", "py": "Tā chī le yào jiù hǎo duō le.", "es": "Se tomó la medicina y enseguida se encontró mucho mejor." },
+        { "zh": "我每个星期至少训练三次。", "py": "Wǒ měi ge xīngqī zhìshǎo xùnliàn sān cì.", "es": "Entreno al menos tres veces por semana." }
+      ]
+    },
+    { "type": "vocab", "title": "En el gimnasio", "words": ["会员", "教练", "训练", "武术", "功夫", "工夫", "坚持", "继续", "连续", "至少", "效果", "有效", "达到", "目标"] },
+    {
+      "type": "phonetics-drill",
+      "title": "El 了 de en medio y los tonos neutros de 功夫",
+      "markdown": "En **V了 + O + 就…** el 了 va **en medio** de la frase, no al final, y se dice igual: **le**, neutro, cortísimo, pegado al verbo: 下了课 *xià le kè*, 吃了药 *chī le yào*. Si lo alargas o lo acentúas, la frase se rompe en dos.\n\n**Ritmo**: [下了课] [就去健身房]: dos bloques; el primero termina un poco en alto y el segundo baja hasta el final.\n\n**功夫** y **工夫** suenan igual: *gōngfu*, con *fu* neutro (flojo, sin tono). Y dos sonidos difíciles de hoy: la **x** + **ün** de 训 *xùn* (labios redondeados, como una «ü» francesa) y la **ch** aspirada de 坚持 *jiānchí*.",
+      "items": [
+        { "audio": "功夫", "options": ["gōngfu", "gōngfū", "gòngfu"], "answer": 0, "explain": "功 en primer tono y 夫 neutro." },
+        { "audio": "下了课就去", "prompt": "¿Cómo suena 了?", "options": ["le, neutro y corto", "liǎo, tercer tono", "lè, cuarto tono"], "answer": 0, "explain": "El 了 aspectual es siempre neutro, también en medio de la frase." },
+        { "audio": "训练", "options": ["xùnliàn", "shùnliàn", "xūnliàn"], "answer": 0, "explain": "x con la lengua plana + ün; cuarto tono en las dos sílabas." },
+        { "audio": "武术", "options": ["wǔshù", "wùshù", "wǔshū"], "answer": 0, "explain": "Tercero (bajo) + cuarto (cae)." },
+        { "audio": "坚持", "options": ["jiānchí", "jiānqí", "jiānzhí"], "answer": 0, "explain": "ch retrofleja y con aire; no es q (lengua plana) ni zh (sin aire)." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["武", "练"],
+      "mnemonics": {
+        "武": "止 (pie, detenerse) + 戈 (alabarda): avanzar con el arma, o según la explicación clásica, «detener la lanza». Es lo militar y las artes marciales: 武术.",
+        "练": "纟 (hilo de seda) + 东 (forma simplificada de 柬, escoger): cocer y seleccionar la seda una y otra vez hasta que queda blanca. Repetir hasta que sale bien: 练习, 训练, 教练."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "V了 + O，就 + V2: nada más hacer una cosa, la otra",
+      "markdown": "**V了 + O + 就 + V2** une dos acciones: la segunda empieza **en cuanto termina** la primera. El 了 marca que la primera acción está **acabada** (no que sea pasado):\n\n- Rutina: 我下**了**课**就**去健身房 = cada día, saliendo de clase, me voy al gimnasio.\n- Futuro: 明天我吃**了**早饭**就**去 = mañana, nada más desayunar, voy.\n- Pasado y efecto: 他吃**了**药**就**好多了 = se tomó la medicina y enseguida mejoró.\n\nCon verbos separables (下课, 吃饭, 跑步), 了 se mete **en medio**: 下**了**课, 吃**了**饭, 跑**了**步.\n\n**Frente a 一…就**: 一…就 subraya la rapidez («nada más…»); V了…就 subraya que una cosa **acaba** antes de la otra. A menudo valen los dos.\n\n**Convención**: una fila por cláusula. En la primera, *Verbo 1* = V了 (下了, 吃了) y el objeto en *Objeto*; en la segunda, 就 en *Adverbios*.",
+      "focus": ["verb1", "adverb"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "verb1": { "zh": "下了", "py": "xià le" }, "object": { "zh": "课", "py": "kè" } }, "end": "，", "es": "Nada más salir de clase… (1.ª parte)", "esOrder": [{ "text": "Nada más salir", "slot": "verb1" }, { "text": "de clase", "slot": "object" }, { "text": "(yo)", "slot": "subject" }] },
+        { "slots": { "adverb": { "zh": "就", "py": "jiù" }, "verb1": { "zh": "去健身房", "py": "qù jiànshēnfáng" } }, "end": "。", "es": "…me voy al gimnasio. (2.ª parte)" },
+        { "slots": { "subject": { "zh": "他", "py": "tā" }, "verb1": { "zh": "吃了", "py": "chī le" }, "object": { "zh": "药", "py": "yào" } }, "end": "，", "es": "Se tomó la medicina… (1.ª parte)" },
+        { "slots": { "adverb": { "zh": "就", "py": "jiù" }, "verb1": { "zh": "好", "py": "hǎo" }, "complement": { "zh": "多了", "py": "duō le" } }, "end": "。", "es": "…y enseguida mejoró mucho. (2.ª parte)" },
+        { "slots": { "subject": { "zh": "我们", "py": "wǒmen" }, "time": { "zh": "明天", "py": "míngtiān" }, "verb1": { "zh": "吃了", "py": "chī le" }, "object": { "zh": "早饭", "py": "zǎofàn" } }, "end": "，", "es": "Mañana, nada más desayunar… (1.ª parte)" },
+        { "slots": { "adverb": { "zh": "就", "py": "jiù" }, "verb1": { "zh": "去公园", "py": "qù gōngyuán" }, "verb2": { "zh": "练", "py": "liàn" }, "object": { "zh": "武术", "py": "wǔshù" } }, "end": "。", "es": "…nos vamos al parque a practicar artes marciales. (2.ª parte)" }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "time": { "zh": "晚上", "py": "wǎnshang" }, "verb1": { "zh": "喝了", "py": "hē le" }, "object": { "zh": "咖啡", "py": "kāfēi" } }, "end": "，", "es": "Si me tomo un café por la noche… (1.ª parte)" },
+        { "slots": { "adverb": { "zh": "就", "py": "jiù" }, "verb1": { "zh": "睡", "py": "shuì" }, "complement": { "zh": "不着", "py": "bu zháo" } }, "end": "。", "es": "…luego no puedo dormir. (2.ª parte, con potencial negativo)" },
+        { "slots": { "subject": { "zh": "很多人", "py": "hěn duō rén" }, "verb1": { "zh": "练了", "py": "liàn le" }, "complement": { "zh": "一个月", "py": "yí ge yuè" } }, "end": "，", "es": "Mucha gente, al mes de entrenar… (1.ª parte)" },
+        { "slots": { "adverb": { "zh": "就不", "py": "jiù bù" }, "verb1": { "zh": "来", "py": "lái" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "…ya no viene. (2.ª parte: 就不…了)" }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "下了", "py": "xià le" }, "object": { "zh": "课", "py": "kè" } }, "end": "，", "es": "Al salir de clase… (1.ª parte)" },
+        { "slots": { "adverb": { "zh": "就", "py": "jiù" }, "verb1": { "zh": "去", "py": "qù" }, "object": { "zh": "哪儿", "py": "nǎr" } }, "end": "？", "es": "…¿adónde vas?" }
+      ],
+      "mistakes": [
+        { "wrong": "我下课了就去健身房。", "right": "我下了课就去健身房。", "why": "En los verbos separables, el 了 de en medio va entre el verbo y su objeto: 下了课, 吃了饭." },
+        { "wrong": "我下了课，就我去健身房。", "right": "我下了课就去健身房。", "why": "就 es un adverbio: nunca va delante del sujeto. Con el mismo sujeto, no se repite." },
+        { "wrong": "他吃了药就好了多。", "right": "他吃了药就好多了。", "why": "«Mucho mejor» es 好多了: el 了 va al final, detrás de 多." },
+        { "wrong": "我喝了咖啡就不睡着。", "right": "我喝了咖啡就睡不着。", "why": "«No poder dormir» es el potencial negativo 睡不着 (b1-u03): 不 va entre el verbo y el resultado." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "La primera clase de kung-fu",
+      "lines": [
+        { "speaker": "张教练", "zh": "你好！你是新会员吗？", "py": "Nǐ hǎo! Nǐ shì xīn huìyuán ma?", "es": "¡Hola! ¿Eres socio nuevo?" },
+        { "speaker": "雨果", "zh": "对，我昨天办了会员卡。我想练武术，可以吗？", "py": "Duì, wǒ zuótiān bàn le huìyuánkǎ. Wǒ xiǎng liàn wǔshù, kěyǐ ma?", "es": "Sí, ayer me hice la tarjeta de socio. Quiero practicar artes marciales, ¿se puede?" },
+        { "speaker": "张教练", "zh": "当然可以，我就是武术教练。你以前练过功夫吗？", "py": "Dāngrán kěyǐ, wǒ jiù shì wǔshù jiàoliàn. Nǐ yǐqián liàn guo gōngfu ma?", "es": "Claro que sí: el entrenador de artes marciales soy yo. ¿Has practicado kung-fu antes?" },
+        { "speaker": "雨果", "zh": "没练过，我只看过功夫电影。", "py": "Méi liàn guo, wǒ zhǐ kàn guo gōngfu diànyǐng.", "es": "No, solo he visto películas de kung-fu." },
+        { "speaker": "张教练", "zh": "没关系。你的目标是什么？", "py": "Méi guānxi. Nǐ de mùbiāo shì shénme?", "es": "No pasa nada. ¿Cuál es tu objetivo?" },
+        { "speaker": "雨果", "zh": "我想让身体更好，也想达到初级水平。", "py": "Wǒ xiǎng ràng shēntǐ gèng hǎo, yě xiǎng dádào chūjí shuǐpíng.", "es": "Quiero estar más en forma y también llegar al nivel inicial." },
+        { "speaker": "张教练", "zh": "好。我们每个星期训练三次，每次至少一个小时。你什么时候有时间？", "py": "Hǎo. Wǒmen měi ge xīngqī xùnliàn sān cì, měi cì zhìshǎo yí ge xiǎoshí. Nǐ shénme shíhou yǒu shíjiān?", "es": "Bien. Entrenamos tres veces por semana, al menos una hora cada vez. ¿Cuándo tienes tiempo?" },
+        { "speaker": "雨果", "zh": "星期一、三、五，我下了课就可以来。", "py": "Xīngqī yī, sān, wǔ, wǒ xià le kè jiù kěyǐ lái.", "es": "Lunes, miércoles y viernes puedo venir nada más salir de clase." },
+        { "speaker": "张教练", "zh": "很好。练功夫要花很多工夫，你一定要坚持。", "py": "Hěn hǎo. Liàn gōngfu yào huā hěn duō gōngfu, nǐ yídìng yào jiānchí.", "es": "Muy bien. Aprender kung-fu cuesta mucho tiempo y esfuerzo: tienes que ser constante." },
+        { "speaker": "雨果", "zh": "多长时间能看到效果？", "py": "Duō cháng shíjiān néng kàndào xiàoguǒ?", "es": "¿Cuánto tiempo hace falta para notar resultados?" },
+        { "speaker": "张教练", "zh": "我的方法很有效，连续练三个月就能看到。可是很多人练了一个月就不来了。", "py": "Wǒ de fāngfǎ hěn yǒuxiào, liánxù liàn sān ge yuè jiù néng kàndào. Kěshì hěn duō rén liàn le yí ge yuè jiù bù lái le.", "es": "Mi método funciona: con tres meses seguidos ya se nota. Pero mucha gente, al mes, deja de venir." },
+        { "speaker": "雨果", "zh": "放心吧，我会继续练下去的！", "py": "Fàngxīn ba, wǒ huì jìxù liàn xiaqu de!", "es": "Tranquilo, ¡yo voy a seguir!" },
+        { "speaker": "张教练", "zh": "好！那我们现在开始吧。先跑十分钟，跑了步就练。", "py": "Hǎo! Nà wǒmen xiànzài kāishǐ ba. Xiān pǎo shí fēnzhōng, pǎo le bù jiù liàn.", "es": "¡Bien! Pues empezamos ya. Primero corres diez minutos y, después de correr, practicamos." }
+      ],
+      "notes": "功夫 (kung-fu) y 工夫 (el tiempo y el esfuerzo que cuesta algo) se pronuncian igual: 练功夫要花很多工夫 es un juego de palabras que a los profesores de artes marciales les encanta. 武术 es el nombre general de las artes marciales chinas; 太极拳 (taichí) es la que verás en los parques por la mañana. 会员卡 se paga por meses o por años y muchos gimnasios chinos ofrecen 私教 (entrenador personal)."
+    },
+    { "type": "exercises", "count": 16, "bank": ["g-le", "g-word-order", "g-complements"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "time0": { "zh": "我下了课，" }, "adverb": { "zh": "就" }, "verb1": { "zh": "去健身房" } }, "end": "。", "es": "Nada más salir de clase me voy al gimnasio." }, "distractors": ["才"] },
+        { "sentence": { "slots": { "time0": { "zh": "他吃了药，" }, "adverb": { "zh": "就" }, "verb1": { "zh": "好" }, "complement": { "zh": "多了" } }, "end": "。", "es": "Se tomó la medicina y enseguida mejoró mucho." }, "distractors": ["很"] },
+        { "sentence": { "slots": { "subject": { "zh": "我们" }, "time": { "zh": "每个星期" }, "adverb": { "zh": "至少" }, "verb1": { "zh": "训练" }, "complement": { "zh": "三次" } }, "end": "。", "es": "Entrenamos al menos tres veces por semana." } },
+        { "sentence": { "slots": { "subject": { "zh": "雨果" }, "adverb": { "zh": "已经连续" }, "verb1": { "zh": "练了" }, "complement": { "zh": "一个月" }, "particle": { "zh": "了" } }, "end": "。", "es": "Hugo ya lleva un mes seguido entrenando." }, "distractors": ["继续"] },
+        { "sentence": { "slots": { "time0": { "zh": "明天我们吃了早饭，" }, "adverb": { "zh": "就" }, "with": { "zh": "跟张教练一起" }, "verb1": { "zh": "去公园" }, "verb2": { "zh": "练" }, "object": { "zh": "武术" } }, "end": "。", "es": "Mañana, nada más desayunar, nos vamos con el entrenador Zhang al parque a practicar artes marciales." } }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "我下了课就去健身房。", "py": "Wǒ xià le kè jiù qù jiànshēnfáng.", "es": "Nada más salir de clase me voy al gimnasio." },
+        { "zh": "他吃了药就好多了。", "py": "Tā chī le yào jiù hǎo duō le.", "es": "Se tomó la medicina y enseguida mejoró mucho." },
+        { "zh": "练功夫要花很多工夫。", "py": "Liàn gōngfu yào huā hěn duō gōngfu.", "es": "Aprender kung-fu cuesta mucho tiempo y esfuerzo." },
+        { "zh": "你一定要坚持。", "py": "Nǐ yídìng yào jiānchí.", "es": "Tienes que ser constante." }
+      ],
+      "respond": [
+        { "q": { "zh": "你下了课就做什么？", "py": "Nǐ xià le kè jiù zuò shénme?", "es": "¿Qué haces nada más salir de clase?" }, "model": { "zh": "我下了课就去食堂吃饭，吃了饭就去图书馆。", "py": "Wǒ xià le kè jiù qù shítáng chī fàn, chī le fàn jiù qù túshūguǎn.", "es": "Nada más salir de clase voy al comedor a comer y, después de comer, a la biblioteca." } },
+        { "q": { "zh": "你学汉语的目标是什么？", "py": "Nǐ xué Hànyǔ de mùbiāo shì shénme?", "es": "¿Cuál es tu objetivo con el chino?" }, "model": { "zh": "我的目标是明年达到三级水平。", "py": "Wǒ de mùbiāo shì míngnián dádào sān jí shuǐpíng.", "es": "Mi objetivo es llegar al nivel 3 el año que viene." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Hugo aprende kung-fu",
+      "text": "上个星期，雨果在学校旁边的健身房办了一张会员卡。他的目标很简单：一是让身体更好，二是学一点儿中国功夫。健身房的武术教练姓张，大家都叫他张教练。张教练说，练功夫要花很多工夫，每个星期至少要训练三次，每次一个多小时。现在雨果星期一、三、五下了课就去健身房。他先跑二十分钟步，跑了步就跟教练练武术。刚开始的时候，他练了半个小时就累得不想动了。可是他一直坚持，连续练了一个月，效果很好：他睡得比以前好，饭也吃得多了。张教练说他的方法很有效，只要继续练下去，三个月以后就能达到初级水平。雨果听了很高兴，回了宿舍就给妈妈打电话。",
+      "es": "La semana pasada Hugo se hizo socio del gimnasio que hay al lado de la universidad. Su objetivo es sencillo: primero, estar más en forma; segundo, aprender un poco de kung-fu. El entrenador de artes marciales se apellida Zhang y todos lo llaman «entrenador Zhang». Dice que aprender kung-fu cuesta mucho tiempo y esfuerzo, y que hay que entrenar al menos tres veces por semana, algo más de una hora cada vez. Ahora Hugo, los lunes, miércoles y viernes, va al gimnasio nada más salir de clase. Primero corre veinte minutos y, después de correr, practica con el entrenador. Al principio, a la media hora estaba tan cansado que no podía ni moverse. Pero ha sido constante, ha entrenado un mes seguido y se nota: duerme mejor que antes y come más. El entrenador Zhang dice que su método funciona y que, si sigue así, en tres meses llegará al nivel inicial. Hugo se puso muy contento y, nada más volver a la residencia, llamó a su madre.",
+      "questions": [
+        { "q": "¿Qué días va Hugo al gimnasio?", "options": ["Lunes, miércoles y viernes", "Martes, jueves y sábados", "Todos los días"], "answer": 0 },
+        { "q": "¿Qué hace antes de practicar con el entrenador?", "options": ["跑二十分钟步", "吃饭", "看功夫电影"], "answer": 0 },
+        { "q": "Al principio, ¿cuánto aguantaba antes de cansarse?", "options": ["半个小时", "一个多小时", "二十分钟"], "answer": 0 },
+        { "q": "¿Qué hizo al volver a la residencia?", "options": ["给妈妈打电话", "继续练武术", "睡觉"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

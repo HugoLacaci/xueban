@@ -1,0 +1,147 @@
+{
+  "unitId": "b1-u10",
+  "scenarios": [
+    {
+      "id": "b1-u10-interview",
+      "title": "Entrevista para unas prácticas",
+      "zh": "实习面试",
+      "level": 3,
+      "setting": "Hugo quiere hacer prácticas en el departamento internacional de una empresa de telecomunicaciones de Shanghái. Tú (la app) eres la jefa del departamento, la señora Zhang, que le hace la entrevista.",
+      "role": "jefa de departamento",
+      "roleZh": "部门主任",
+      "voice": "f",
+      "goals": ["Presentarte y decir cuánto tiempo llevas estudiando chino (了…了)", "Explicar por qué quieres trabajar allí con 不但…而且 o 对…来说", "Decir qué sabes hacer y qué no con potenciales (听得懂, 写不好…)", "Aceptar las condiciones con 只要…就 o 既然…就 y despedirte"],
+      "vocab": ["实习", "部门", "主任", "学了…了", "不但…而且", "对我来说", "听得懂", "只要…就", "负责", "接待"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "你好，请坐。先介绍一下你自己吧。", "py": "Nǐ hǎo, qǐng zuò. Xiān jièshào yíxià nǐ zìjǐ ba.", "es": "Hola, siéntate. Primero preséntate, por favor." },
+          "user": [
+            { "zh": "张主任好！我叫雨果，是西班牙人，在上海读硕士。我学汉语学了两年多了。", "py": "Zhāng zhǔrèn hǎo! Wǒ jiào Yǔguǒ, shì Xībānyárén, zài Shànghǎi dú shuòshì. Wǒ xué Hànyǔ xué le liǎng nián duō le.", "es": "¡Buenos días, señora Zhang! Me llamo Hugo, soy español y hago un máster en Shanghái. Llevo más de dos años estudiando chino.", "keywords": ["学了", "年", "了"], "next": "n2", "goal": 0 },
+            { "zh": "您好！我是雨果，西班牙人。我是被学校介绍来的。", "py": "Nín hǎo! Wǒ shì Yǔguǒ, Xībānyárén. Wǒ shì bèi xuéxiào jièshào lái de.", "es": "¡Buenos días! Soy Hugo, español. Me ha recomendado la universidad.", "keywords": ["被", "学校"], "next": "n1b" }
+          ],
+          "hint": "Saluda con 张主任好, di tu nombre y cuánto tiempo llevas estudiando chino con el 了 doble: 我学汉语学了……了."
+        },
+        "n1b": {
+          "npc": { "zh": "欢迎。你学汉语学了多长时间了？", "py": "Huānyíng. Nǐ xué Hànyǔ xué le duō cháng shíjiān le?", "es": "Bienvenido. ¿Cuánto tiempo llevas estudiando chino?" },
+          "user": [
+            { "zh": "我学了两年多了，现在在上海读硕士。", "py": "Wǒ xué le liǎng nián duō le, xiànzài zài Shànghǎi dú shuòshì.", "es": "Llevo más de dos años; ahora hago un máster en Shanghái.", "keywords": ["学了", "了"], "next": "n2", "goal": 0 }
+          ],
+          "hint": "Responde con el 了 doble: 我学了……了."
+        },
+        "n2": {
+          "npc": { "zh": "你的汉语说得不错。你为什么想来我们公司实习？", "py": "Nǐ de Hànyǔ shuō de búcuò. Nǐ wèi shénme xiǎng lái wǒmen gōngsī shíxí?", "es": "Hablas bien chino. ¿Por qué quieres hacer las prácticas en nuestra empresa?" },
+          "user": [
+            { "zh": "因为贵公司不但是一家很大的通信公司，而且跟很多国家合作。", "py": "Yīnwèi guì gōngsī búdàn shì yì jiā hěn dà de tōngxìn gōngsī, érqiě gēn hěn duō guójiā hézuò.", "es": "Porque su empresa no solo es una gran empresa de telecomunicaciones, sino que además colabora con muchos países.", "keywords": ["不但", "而且"], "next": "n3", "goal": 1 },
+            { "zh": "对我来说，在中国公司工作是了解中国最好的办法。", "py": "Duì wǒ lái shuō, zài Zhōngguó gōngsī gōngzuò shì liǎojiě Zhōngguó zuì hǎo de bànfǎ.", "es": "Para mí, trabajar en una empresa china es la mejor forma de conocer China.", "keywords": ["对我来说"], "next": "n3", "goal": 1 }
+          ],
+          "hint": "Da dos razones con 不但……而且…… o tu opinión con 对我来说 / 在我看来."
+        },
+        "n3": {
+          "npc": { "zh": "我们部门主要负责接待外国客人。开会的时候，大家说话都很快，你听得懂吗？", "py": "Wǒmen bùmén zhǔyào fùzé jiēdài wàiguó kèrén. Kāihuì de shíhou, dàjiā shuōhuà dōu hěn kuài, nǐ tīng de dǒng ma?", "es": "Nuestro departamento se encarga sobre todo de atender a clientes extranjeros. En las reuniones todo el mundo habla muy rápido. ¿Lo entenderías?" },
+          "user": [
+            { "zh": "一般的会议我都听得懂，可是专业的词有时候还听不懂。", "py": "Yìbān de huìyì wǒ dōu tīng de dǒng, kěshì zhuānyè de cí yǒu shíhou hái tīng bu dǒng.", "es": "Las reuniones normales las entiendo, pero los términos técnicos a veces todavía no.", "keywords": ["听得懂", "听不懂"], "next": "n4", "goal": 2 },
+            { "zh": "我听得懂，说得也还可以，就是汉字写得不太好。", "py": "Wǒ tīng de dǒng, shuō de yě hái kěyǐ, jiùshì Hànzì xiě de bú tài hǎo.", "es": "Lo entiendo y hablo bastante bien; lo que no se me da muy bien es escribir caracteres.", "keywords": ["听得懂", "写得"], "next": "n4", "goal": 2 }
+          ],
+          "hint": "Di qué entiendes y qué no con 听得懂 / 听不懂, o cómo escribes con V得."
+        },
+        "n4": {
+          "npc": { "zh": "没关系，只有多练习，才能进步。实习每天要工作八个小时，有时候周末也要加班。", "py": "Méi guānxi, zhǐyǒu duō liànxí, cái néng jìnbù. Shíxí měi tiān yào gōngzuò bā ge xiǎoshí, yǒu shíhou zhōumò yě yào jiābān.", "es": "No pasa nada: solo practicando mucho se mejora. En las prácticas se trabajan ocho horas al día, y a veces también hay que hacer horas extra el fin de semana." },
+          "user": [
+            { "zh": "没问题。只要能学到东西，我就愿意加班。", "py": "Méi wèntí. Zhǐyào néng xuédào dōngxi, wǒ jiù yuànyì jiābān.", "es": "No hay problema. Con tal de aprender, estoy dispuesto a hacer horas extra.", "keywords": ["只要", "就"], "next": "n5", "goal": 3 },
+            { "zh": "既然是实习，我就要认真地做每一件事。", "py": "Jìrán shì shíxí, wǒ jiù yào rènzhēn de zuò měi yí jiàn shì.", "es": "Ya que son prácticas, haré todo con mucha seriedad.", "keywords": ["既然", "就"], "next": "n5", "goal": 3 },
+            { "zh": "连周末也要工作吗？", "py": "Lián zhōumò yě yào gōngzuò ma?", "es": "¿Hasta los fines de semana hay que trabajar?", "keywords": ["连", "也"], "next": "n4b" }
+          ],
+          "hint": "Acepta las condiciones con 只要……就…… o 既然……就……"
+        },
+        "n4b": {
+          "npc": { "zh": "不是每个周末，一个月大概一两次。", "py": "Bú shì měi ge zhōumò, yí ge yuè dàgài yì liǎng cì.", "es": "No todos los fines de semana: una o dos veces al mes, más o menos." },
+          "user": [
+            { "zh": "那没问题。只要能学到东西，我就愿意。", "py": "Nà méi wèntí. Zhǐyào néng xuédào dōngxi, wǒ jiù yuànyì.", "es": "Entonces no hay problema. Con tal de aprender, me apunto.", "keywords": ["只要", "就"], "next": "n5", "goal": 3 }
+          ],
+          "hint": "Acepta con 只要……就……"
+        },
+        "n5": {
+          "npc": { "zh": "好，我们下个星期通知你。你还有什么问题吗？", "py": "Hǎo, wǒmen xià ge xīngqī tōngzhī nǐ. Nǐ hái yǒu shénme wèntí ma?", "es": "Muy bien, te avisamos la semana que viene. ¿Tienes alguna pregunta?" },
+          "user": [
+            { "zh": "没有了。谢谢张主任，希望有机会跟您一起工作！", "py": "Méiyǒu le. Xièxie Zhāng zhǔrèn, xīwàng yǒu jīhuì gēn nín yìqǐ gōngzuò!", "es": "No. Gracias, señora Zhang; ¡espero tener la oportunidad de trabajar con usted!", "keywords": ["谢谢", "希望"], "next": "n6" },
+            { "zh": "请问，如果我被选上了，什么时候开始实习？", "py": "Qǐngwèn, rúguǒ wǒ bèi xuǎn shàng le, shénme shíhou kāishǐ shíxí?", "es": "Perdone, si me eligen, ¿cuándo empezaría?", "keywords": ["如果", "被"], "next": "n5b" }
+          ],
+          "hint": "Despídete con 谢谢 + 希望…… o pregunta cuándo empezarías con 如果我被选上了……"
+        },
+        "n5b": {
+          "npc": { "zh": "一般来说，下个月一号就可以开始。", "py": "Yìbān lái shuō, xià ge yuè yī hào jiù kěyǐ kāishǐ.", "es": "Por lo general, se puede empezar el día uno del mes que viene." },
+          "user": [
+            { "zh": "太好了，谢谢您！再见！", "py": "Tài hǎo le, xièxie nín! Zàijiàn!", "es": "¡Genial, muchas gracias! ¡Adiós!", "keywords": ["谢谢", "再见"], "next": "n6" }
+          ],
+          "hint": "Da las gracias y despídete."
+        },
+        "n6": {
+          "npc": { "zh": "不客气，再见！", "py": "Bú kèqi, zàijiàn!", "es": "De nada, ¡adiós!" },
+          "end": true,
+          "feedback": "Has hecho una entrevista entera en chino: la duración con el 了 doble (学了两年多了), las razones con 不但…而且 / 对我来说, lo que sabes hacer con los potenciales (听得懂 / 听不懂) y la aceptación con 只要…就 / 既然…就. En una entrevista real, trata a la entrevistadora por su apellido y cargo (张主任) y llama a su empresa 贵公司."
+        }
+      }
+    },
+    {
+      "id": "b1-u10-group",
+      "title": "Reunión del grupo de trabajo",
+      "zh": "小组开会",
+      "level": 3,
+      "setting": "El grupo de Hugo tiene que presentar el proyecto en dos semanas, pero va con retraso. Tú (la app) eres Xiao Li, el coordinador, que abre la reunión.",
+      "role": "coordinador del grupo",
+      "roleZh": "小组负责人",
+      "voice": "m",
+      "goals": ["Dar tu opinión sobre cómo va el proyecto (在我看来, 看来)", "Explicar un problema con 连…也 o 一点儿也不", "Proponer una solución con 如果…就 / 只有…才", "Repartir el trabajo con 把 y cerrar la reunión"],
+      "vocab": ["进展", "在我看来", "越来越", "连……也", "一点儿也不", "如果……就", "只有……才", "把……分配给", "相互配合"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "大家好。我们的报告两个星期以后就要交了。雨果，你觉得进展怎么样？", "py": "Dàjiā hǎo. Wǒmen de bàogào liǎng ge xīngqī yǐhòu jiù yào jiāo le. Yǔguǒ, nǐ juéde jìnzhǎn zěnmeyàng?", "es": "Hola a todos. Tenemos que entregar el informe dentro de dos semanas. Hugo, ¿cómo crees que vamos?" },
+          "user": [
+            { "zh": "在我看来，进展有点儿慢，大家的积极性越来越低了。", "py": "Zài wǒ kànlái, jìnzhǎn yǒudiǎnr màn, dàjiā de jījíxìng yuèláiyuè dī le.", "es": "En mi opinión, vamos un poco lentos y cada vez tenemos menos ganas.", "keywords": ["在我看来", "越来越"], "next": "n2", "goal": 0 },
+            { "zh": "看来我们要快一点儿了，现在才写完一半。", "py": "Kànlái wǒmen yào kuài yìdiǎnr le, xiànzài cái xiě wán yíbàn.", "es": "Por lo visto tenemos que darnos prisa: solo llevamos la mitad.", "keywords": ["看来", "才"], "next": "n2", "goal": 0 }
+          ],
+          "hint": "Opina con 在我看来…… o concluye con 看来……"
+        },
+        "n2": {
+          "npc": { "zh": "我也这么觉得。问题在哪儿？", "py": "Wǒ yě zhème juéde. Wèntí zài nǎr?", "es": "Yo también lo creo. ¿Dónde está el problema?" },
+          "user": [
+            { "zh": "大家都各自做各自的事，连上个星期的会也没开。", "py": "Dàjiā dōu gèzì zuò gèzì de shì, lián shàng ge xīngqī de huì yě méi kāi.", "es": "Cada uno va a lo suyo; ni siquiera hicimos la reunión de la semana pasada.", "keywords": ["连", "也没"], "next": "n3", "goal": 1 },
+            { "zh": "我们相互一点儿也不了解，不知道别人做到哪儿了。", "py": "Wǒmen xiānghù yìdiǎnr yě bù liǎojiě, bù zhīdào biérén zuò dào nǎr le.", "es": "No sabemos nada de lo que hacen los demás: no sé hasta dónde ha llegado cada uno.", "keywords": ["一点儿也不"], "next": "n3", "goal": 1 }
+          ],
+          "hint": "Explica el problema con 连……也没…… o 一点儿也不……"
+        },
+        "n3": {
+          "npc": { "zh": "那你有什么好主意？", "py": "Nà nǐ yǒu shénme hǎo zhǔyi?", "es": "¿Y tienes alguna buena idea?" },
+          "user": [
+            { "zh": "如果我们每两天开一次短会，就能知道大家的进展。", "py": "Rúguǒ wǒmen měi liǎng tiān kāi yí cì duǎn huì, jiù néng zhīdào dàjiā de jìnzhǎn.", "es": "Si hacemos una reunión corta cada dos días, sabremos cómo va cada uno.", "keywords": ["如果", "就"], "next": "n4", "goal": 2 },
+            { "zh": "只有大家相互配合，我们才能按时交报告。", "py": "Zhǐyǒu dàjiā xiānghù pèihé, wǒmen cái néng ànshí jiāo bàogào.", "es": "Solo si nos compenetramos podremos entregar el informe a tiempo.", "keywords": ["只有", "才"], "next": "n4", "goal": 2 }
+          ],
+          "hint": "Propón una solución con 如果……就…… o 只有……才……"
+        },
+        "n4": {
+          "npc": { "zh": "好主意。那别的工作怎么分？", "py": "Hǎo zhǔyi. Nà bié de gōngzuò zěnme fēn?", "es": "Buena idea. ¿Y cómo repartimos el resto del trabajo?" },
+          "user": [
+            { "zh": "我们把数据的部分分配给大卫，把文字的部分交给我和安娜吧。", "py": "Wǒmen bǎ shùjù de bùfen fēnpèi gěi Dàwèi, bǎ wénzì de bùfen jiāo gěi wǒ hé Ānnà ba.", "es": "Asignemos la parte de datos a David y dejadnos a Ana y a mí la parte de redacción.", "keywords": ["把", "分配给", "交给"], "next": "n5", "goal": 3 },
+            { "zh": "你负责管理吧，你把工作分配给每个人。", "py": "Nǐ fùzé guǎnlǐ ba, nǐ bǎ gōngzuò fēnpèi gěi měi ge rén.", "es": "Encárgate tú de coordinar: reparte el trabajo entre todos.", "keywords": ["把", "分配给"], "next": "n5", "goal": 3 }
+          ],
+          "hint": "Reparte el trabajo con 把 + tarea + 分配给 / 交给 + persona."
+        },
+        "n5": {
+          "npc": { "zh": "行，就这么办。既然大家都同意了，我们明天就开始吧！", "py": "Xíng, jiù zhème bàn. Jìrán dàjiā dōu tóngyì le, wǒmen míngtiān jiù kāishǐ ba!", "es": "Vale, así lo hacemos. Ya que todos estamos de acuerdo, ¡empezamos mañana!" },
+          "user": [
+            { "zh": "好！只要我们一步一步地做，就一定能做好。加油！", "py": "Hǎo! Zhǐyào wǒmen yí bù yí bù de zuò, jiù yídìng néng zuò hǎo. Jiāyóu!", "es": "¡Bien! Con tal de ir paso a paso, seguro que sale bien. ¡Ánimo!", "keywords": ["只要", "一步一步", "加油"], "next": "n6" },
+            { "zh": "没问题，明天见！", "py": "Méi wèntí, míngtiān jiàn!", "es": "¡Hecho, hasta mañana!", "keywords": ["明天见"], "next": "n6" }
+          ],
+          "hint": "Cierra con ánimo: 只要……就…… / 一步一步地 / 加油."
+        },
+        "n6": {
+          "npc": { "zh": "明天见！", "py": "Míngtiān jiàn!", "es": "¡Hasta mañana!" },
+          "end": true,
+          "feedback": "Has llevado una reunión de trabajo con estructuras de todo B1: opinión (在我看来, 看来), énfasis (连…也没, 一点儿也不), condiciones (如果…就, 只有…才), 把 para repartir tareas y 既然 / 只要 para cerrar. Recuerda: 就 y 才 van siempre detrás del sujeto."
+        }
+      }
+    }
+  ]
+}

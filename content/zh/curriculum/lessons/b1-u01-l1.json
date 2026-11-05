@@ -1,0 +1,137 @@
+{
+  "id": "b1-u01-l1",
+  "title": "Deja la caja aquí: 把 + objeto + 放在 / 搬到 + lugar",
+  "zh": "把箱子放在这儿",
+  "goal": "Decir dónde pones o adónde llevas algo concreto con 把 + objeto + 放在 / 搬到 + lugar.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "把", "pinyin": "bǎ", "es": "(marca el objeto que se manipula)", "note": "把 + objeto + verbo + algo más: 把箱子放在这儿. También es clasificador de objetos con mango: 一把椅子." },
+    { "hanzi": "搬", "pinyin": "bān", "es": "llevar, trasladar (algo pesado)", "note": "搬箱子, 搬桌子; 搬到 + lugar." },
+    { "hanzi": "搬家", "pinyin": "bānjiā", "es": "mudarse (de casa)", "note": "Verbo separable: 搬了三次家." },
+    { "hanzi": "家具", "pinyin": "jiājù", "es": "muebles", "note": "Incontable: 很多家具, 一件家具." },
+    { "hanzi": "沙发", "pinyin": "shāfā", "es": "sofá", "note": "Préstamo del inglés sofa." },
+    { "hanzi": "书架", "pinyin": "shūjià", "es": "estantería (para libros)" },
+    { "hanzi": "放到", "pinyin": "fàngdào", "es": "poner en, dejar en, llevar a (un sitio)", "note": "放到 subraya que algo llega a un sitio; 放在, que se queda allí." },
+    { "hanzi": "底下", "pinyin": "dǐxia", "es": "debajo (de)", "note": "床底下 = debajo de la cama. Va detrás del nombre, como 上 / 里." },
+    { "hanzi": "室", "pinyin": "shì", "es": "habitación, sala (en compuestos)", "note": "教室 aula, 办公室 despacho; 两室的房子 = piso de dos dormitorios." },
+    { "hanzi": "挂", "pinyin": "guà", "es": "colgar", "note": "把衣服挂在门后面 = colgar la ropa detrás de la puerta." },
+    { "hanzi": "箱子", "pinyin": "xiāngzi", "es": "caja; maleta", "note": "Fuera del HSK 1–3. 一个箱子." },
+    { "hanzi": "冰箱", "pinyin": "bīngxiāng", "es": "nevera, frigorífico", "note": "Fuera del HSK 1–3. Lit. «caja de hielo»." }
+  ],
+  "extraVocab": ["箱子", "冰箱"],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "你把箱子放在这儿吧。", "py": "Nǐ bǎ xiāngzi fàng zài zhèr ba.", "es": "Deja la caja aquí." },
+        { "zh": "我们把沙发搬到楼上了。", "py": "Wǒmen bǎ shāfā bāndào lóu shang le.", "es": "Hemos subido el sofá al piso de arriba." },
+        { "zh": "你把冰箱放在哪儿了？", "py": "Nǐ bǎ bīngxiāng fàng zài nǎr le?", "es": "¿Dónde has puesto la nevera?" }
+      ]
+    },
+    { "type": "vocab", "title": "Día de mudanza", "words": ["把", "搬", "搬家", "家具", "沙发", "书架", "放到", "底下", "室", "挂", "箱子", "冰箱"] },
+    {
+      "type": "phonetics-drill",
+      "title": "El ritmo de una frase con 把",
+      "markdown": "Una frase con 把 se dice en **dos bloques**: primero **把 + objeto** (lo que tocas) y, tras una micropausa, **verbo + lugar** (lo que haces con ello): *bǎ xiāngzi* | *fàng zài zhèr*.\n\n- **把 bǎ** es tercer tono; como casi siempre va seguido de otra sílaba, se queda en **medio tercer tono** (baja y no sube).\n- **在 / 到** detrás del verbo se dicen **flojos y cortos**: el peso recae en el verbo (放) y en el lugar (这儿, 楼上).\n- **底下 dǐxia**: 下 en tono neutro.\n- **搬 bān**: *b* sin aire (no es *p*) y primer tono, alto y plano.",
+      "items": [
+        { "audio": "把箱子放在这儿", "options": ["bǎ xiāngzi fàng zài zhèr", "bà xiāngzi fàng zài zhèr", "bǎ xiāngzǐ fāng zài zhèr"], "answer": 0, "explain": "把 en tercer tono, 子 neutro y 放 en cuarto tono." },
+        { "audio": "把沙发搬到楼上", "prompt": "¿Dónde va la pausa natural?", "options": ["把沙发 | 搬到楼上", "把 | 沙发搬到楼上", "把沙发搬 | 到楼上"], "answer": 0, "explain": "Primero el bloque 把 + objeto; luego el verbo con su destino." },
+        { "audio": "搬家", "options": ["bānjiā", "pānjiā", "bànjiā"], "answer": 0, "explain": "b sin aspirar y dos primeros tonos, altos y planos." },
+        { "audio": "冰箱", "options": ["bīngxiāng", "bīnxiāng", "píngxiāng"], "answer": 0, "explain": "Las dos sílabas acaban en -ng (nasal al fondo de la boca)." },
+        { "audio": "床底下", "prompt": "¿Qué sílaba es neutra?", "options": ["下 (xia)", "底 (dǐ)", "床 (chuáng)"], "answer": 0 }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["把", "搬"],
+      "mnemonics": {
+        "把": "扌 (mano) + 巴 (bā, da el sonido): lo que agarras con la mano. Por eso 把 presenta el objeto que «coges» para hacer algo con él.",
+        "搬": "扌 (mano) + 般 (bān, da el sonido): mover cosas con las manos de un sitio a otro."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "Sujeto + 把 + objeto + 放在 / 搬到 + lugar",
+      "markdown": "Con **把** el objeto se adelanta: va **delante del verbo** y la frase cuenta **qué le pasa** a ese objeto. Aquí, adónde va a parar:\n\n**Sujeto + 把 + objeto + 放在 / 搬到 / 挂在 + lugar**\n\n- Con «poner, llevar, colgar **algo en un sitio**» (V + 在 / 到 + lugar), el 把 es **obligatorio**: no se puede decir *放箱子在这儿*.\n- El objeto es **concreto**, ya sabido: *la* caja, *ese* sofá, 这些书. Nunca «una caja cualquiera».\n- El verbo **nunca va solo**: siempre lleva detrás algo (aquí, 在 / 到 + lugar).\n- **Negativa**: 没 (o 别, 不要) va **delante de 把**: 我**没**把箱子搬到楼上.\n\n**Convención del esqueleto para toda la Etapa 3**: **把 + objeto** va en el hueco **Con quién**, el mismo de 跟他 / 给他. Ocupa exactamente ese sitio: detrás de los adverbios y auxiliares (没把, 别把, 能把, 已经把) y delante del verbo. Así el hueco **Objeto** queda libre para lo que va **detrás** del verbo: el lugar (这儿, 楼上) o, en la próxima lección, la persona (老师). Como en A2 (住在 + 上海), **放在 / 搬到** van juntos en *Verbo 1*. Igual haremos con 被 + agente en la unidad 2.\n\nOjo: 把 también es clasificador de cosas con mango o respaldo (一把椅子). El contexto lo aclara.",
+      "focus": ["with"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "with": { "zh": "把箱子", "py": "bǎ xiāngzi" }, "verb1": { "zh": "放在", "py": "fàng zài" }, "object": { "zh": "这儿", "py": "zhèr" }, "particle": { "zh": "吧", "py": "ba" } }, "end": "。", "es": "Deja la caja aquí.", "esOrder": [{ "text": "Deja", "slot": "verb1" }, { "text": "la caja", "slot": "with" }, { "text": "aquí", "slot": "object" }] },
+        { "slots": { "subject": { "zh": "我们", "py": "wǒmen" }, "with": { "zh": "把沙发", "py": "bǎ shāfā" }, "verb1": { "zh": "搬到", "py": "bāndào" }, "object": { "zh": "楼上", "py": "lóu shang" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Hemos subido el sofá al piso de arriba." },
+        { "slots": { "subject": { "zh": "雨果", "py": "Yǔguǒ" }, "with": { "zh": "把书", "py": "bǎ shū" }, "verb1": { "zh": "放在", "py": "fàng zài" }, "object": { "zh": "书架上", "py": "shūjià shang" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Hugo ha puesto los libros en la estantería." },
+        { "slots": { "subject": { "zh": "安娜", "py": "Ānnà" }, "with": { "zh": "把衣服", "py": "bǎ yīfu" }, "verb1": { "zh": "挂在", "py": "guà zài" }, "object": { "zh": "门后面", "py": "mén hòumian" } }, "end": "。", "es": "Ana cuelga la ropa detrás de la puerta." },
+        { "slots": { "subject": { "zh": "小李", "py": "Xiǎo Lǐ" }, "with": { "zh": "把小箱子", "py": "bǎ xiǎo xiāngzi" }, "verb1": { "zh": "放到", "py": "fàngdào" }, "object": { "zh": "床底下", "py": "chuáng dǐxia" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Xiao Li ha metido la caja pequeña debajo de la cama." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "他", "py": "tā" }, "adverb": { "zh": "没", "py": "méi" }, "with": { "zh": "把冰箱", "py": "bǎ bīngxiāng" }, "verb1": { "zh": "搬到", "py": "bāndào" }, "object": { "zh": "楼上", "py": "lóu shang" } }, "end": "。", "es": "No subió la nevera al piso de arriba." },
+        { "slots": { "adverb": { "zh": "别", "py": "bié" }, "with": { "zh": "把沙发", "py": "bǎ shāfā" }, "verb1": { "zh": "放在", "py": "fàng zài" }, "object": { "zh": "门口", "py": "ménkǒu" } }, "end": "。", "es": "No dejes el sofá en la entrada." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "with": { "zh": "把冰箱", "py": "bǎ bīngxiāng" }, "verb1": { "zh": "放在", "py": "fàng zài" }, "object": { "zh": "哪儿", "py": "nǎr" }, "particle": { "zh": "了", "py": "le" } }, "end": "？", "es": "¿Dónde has puesto la nevera?" },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "aux": { "zh": "能", "py": "néng" }, "with": { "zh": "把这些书", "py": "bǎ zhèxiē shū" }, "verb1": { "zh": "搬到", "py": "bāndào" }, "object": { "zh": "我的房间", "py": "wǒ de fángjiān" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿Puedes llevar estos libros a mi habitación?" }
+      ],
+      "mistakes": [
+        { "wrong": "我放箱子在这儿。", "right": "我把箱子放在这儿。", "why": "Con V + 在 / 到 + lugar el objeto no puede quedarse detrás del verbo: se adelanta con 把." },
+        { "wrong": "我把放箱子在这儿。", "right": "我把箱子放在这儿。", "why": "Detrás de 把 va directamente el objeto; el verbo viene después." },
+        { "wrong": "我把沙发没搬到楼上。", "right": "我没把沙发搬到楼上。", "why": "没 / 别 / 能 / 要 van delante de 把, no delante del verbo." },
+        { "wrong": "我把一个箱子放在这儿。", "right": "我把那个箱子放在这儿。", "why": "El objeto de 把 es algo concreto y conocido: 这个 / 那个 / 我的…, no «uno cualquiera»." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Hoy me mudo",
+      "lines": [
+        { "speaker": "小李", "zh": "雨果，你今天搬家吗？我来帮你！", "py": "Yǔguǒ, nǐ jīntiān bānjiā ma? Wǒ lái bāng nǐ!", "es": "Hugo, ¿hoy te mudas? ¡Vengo a echarte una mano!" },
+        { "speaker": "雨果", "zh": "太好了，谢谢！我们先把这些箱子搬到楼上吧。", "py": "Tài hǎo le, xièxie! Wǒmen xiān bǎ zhèxiē xiāngzi bāndào lóu shang ba.", "es": "¡Genial, gracias! Primero subamos estas cajas." },
+        { "speaker": "小李", "zh": "这个箱子太重了！里面是什么？", "py": "Zhège xiāngzi tài zhòng le! Lǐmiàn shì shénme?", "es": "¡Esta caja pesa muchísimo! ¿Qué hay dentro?" },
+        { "speaker": "雨果", "zh": "都是书。你把它放在书架旁边吧。", "py": "Dōu shì shū. Nǐ bǎ tā fàng zài shūjià pángbiān ba.", "es": "Todo libros. Déjala al lado de la estantería." },
+        { "speaker": "小李", "zh": "好。沙发呢？放在哪儿？", "py": "Hǎo. Shāfā ne? Fàng zài nǎr?", "es": "Vale. ¿Y el sofá? ¿Dónde lo ponemos?" },
+        { "speaker": "雨果", "zh": "我们把沙发放在电视对面吧。", "py": "Wǒmen bǎ shāfā fàng zài diànshì duìmiàn ba.", "es": "Pongamos el sofá enfrente de la tele." },
+        { "speaker": "小李", "zh": "冰箱也搬到这个房间吗？", "py": "Bīngxiāng yě bāndào zhège fángjiān ma?", "es": "¿La nevera también la traemos a esta habitación?" },
+        { "speaker": "雨果", "zh": "不，冰箱太大了。把它放到那个小房间里吧。", "py": "Bù, bīngxiāng tài dà le. Bǎ tā fàngdào nàge xiǎo fángjiān li ba.", "es": "No, la nevera es demasiado grande. Llevémosla a la habitación pequeña." },
+        { "speaker": "安娜", "zh": "雨果，你的衣服呢？我把它们挂在门后面，好吗？", "py": "Yǔguǒ, nǐ de yīfu ne? Wǒ bǎ tāmen guà zài mén hòumian, hǎo ma?", "es": "Hugo, ¿y tu ropa? La cuelgo detrás de la puerta, ¿vale?" },
+        { "speaker": "雨果", "zh": "好啊。那个小箱子，你把它放到床底下就行。", "py": "Hǎo a. Nàge xiǎo xiāngzi, nǐ bǎ tā fàngdào chuáng dǐxia jiù xíng.", "es": "Vale. Esa caja pequeña, con que la metas debajo de la cama vale." },
+        { "speaker": "小李", "zh": "家具都搬好了！两室的房子，一个人住真舒服。", "py": "Jiājù dōu bān hǎo le! Liǎng shì de fángzi, yí ge rén zhù zhēn shūfu.", "es": "¡Ya están todos los muebles! Un piso de dos dormitorios para uno solo: qué gusto." },
+        { "speaker": "雨果", "zh": "谢谢你们！今天晚上我请你们吃饭！", "py": "Xièxie nǐmen! Jīntiān wǎnshang wǒ qǐng nǐmen chīfàn!", "es": "¡Gracias a los dos! ¡Esta noche os invito a cenar!" }
+      ],
+      "notes": "En una mudanza, los amigos ayudan y quien se muda invita a comer o a cenar (我请你们吃饭). 把它 se usa mucho para no repetir el objeto: 把它放在这儿. Fíjate también en 沙发呢？放在哪儿？: cuando el objeto ya se ha mencionado, se puede poner al principio como tema, sin 把."
+    },
+    { "type": "exercises", "count": 16, "bank": ["g-zai", "g-word-order", "g-le"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "你" }, "with": { "zh": "把箱子" }, "verb1": { "zh": "放在" }, "object": { "zh": "这儿" }, "particle": { "zh": "吧" } }, "end": "。", "es": "Deja la caja aquí." }, "distractors": ["在"] },
+        { "sentence": { "slots": { "subject": { "zh": "我们" }, "with": { "zh": "把沙发" }, "verb1": { "zh": "搬到" }, "object": { "zh": "楼上" }, "particle": { "zh": "了" } }, "end": "。", "es": "Hemos subido el sofá al piso de arriba." } },
+        { "sentence": { "slots": { "subject": { "zh": "他" }, "adverb": { "zh": "没" }, "with": { "zh": "把冰箱" }, "verb1": { "zh": "放到" }, "object": { "zh": "小房间里" } }, "end": "。", "es": "No llevó la nevera a la habitación pequeña." }, "distractors": ["不"] },
+        { "sentence": { "slots": { "time0": { "zh": "明天上午" }, "subject": { "zh": "我们" }, "aux": { "zh": "要" }, "with": { "zh": "把这些家具" }, "verb1": { "zh": "搬到" }, "object": { "zh": "新房子里" } }, "end": "。", "es": "Mañana por la mañana tenemos que llevar todos estos muebles a la casa nueva." }, "distractors": ["在"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "你把箱子放在这儿吧。", "py": "Nǐ bǎ xiāngzi fàng zài zhèr ba.", "es": "Deja la caja aquí." },
+        { "zh": "我们把沙发搬到楼上了。", "py": "Wǒmen bǎ shāfā bāndào lóu shang le.", "es": "Hemos subido el sofá al piso de arriba." },
+        { "zh": "别把冰箱放在门口。", "py": "Bié bǎ bīngxiāng fàng zài ménkǒu.", "es": "No dejes la nevera en la entrada." },
+        { "zh": "安娜把衣服挂在门后面。", "py": "Ānnà bǎ yīfu guà zài mén hòumian.", "es": "Ana cuelga la ropa detrás de la puerta." }
+      ],
+      "respond": [
+        { "q": { "zh": "你的书呢？你把书放在哪儿了？", "py": "Nǐ de shū ne? Nǐ bǎ shū fàng zài nǎr le?", "es": "¿Y tus libros? ¿Dónde los has puesto?" }, "model": { "zh": "我把书放在书架上了。", "py": "Wǒ bǎ shū fàng zài shūjià shang le.", "es": "Los he puesto en la estantería." } },
+        { "q": { "zh": "你什么时候搬家？", "py": "Nǐ shénme shíhou bānjiā?", "es": "¿Cuándo te mudas?" }, "model": { "zh": "我下个星期六搬家，你能来帮我吗？", "py": "Wǒ xià ge xīngqīliù bānjiā, nǐ néng lái bāng wǒ ma?", "es": "Me mudo el sábado que viene, ¿puedes venir a ayudarme?" } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "La mudanza de Hugo",
+      "text": "上个周末雨果搬家了。他的新房子离学校不远，是两室的，比以前的宿舍大多了。那天早上，小李和安娜都来帮他。他们先把箱子从车上搬下来，再把箱子搬到楼上。箱子里都是书，小李把书一本一本地放在书架上。雨果的家具不多：一个沙发、一张桌子、两把椅子和一个冰箱。雨果把沙发放在电视对面，把桌子放在阳台旁边。冰箱太重了，三个人一起才把它搬到小房间里。安娜把雨果的衣服挂在门后面，还把一个小箱子放到了床底下。下午四点，东西都放好了。小李看了看房间，说：“你的新家真漂亮！”雨果说：“谢谢你们！今天晚上我请客！”",
+      "es": "El fin de semana pasado Hugo se mudó. Su casa nueva no está lejos de la universidad, tiene dos dormitorios y es mucho más grande que la residencia de antes. Esa mañana, Xiao Li y Ana fueron a ayudarle. Primero bajaron las cajas del coche y luego las subieron. Las cajas estaban llenas de libros, y Xiao Li los fue poniendo uno a uno en la estantería. Hugo no tiene muchos muebles: un sofá, una mesa, dos sillas y una nevera. Puso el sofá enfrente de la tele y la mesa al lado del balcón. La nevera pesaba tanto que entre los tres a duras penas la llevaron a la habitación pequeña. Ana colgó la ropa de Hugo detrás de la puerta y metió una caja pequeña debajo de la cama. A las cuatro de la tarde todo estaba en su sitio. Xiao Li echó un vistazo a la habitación y dijo: «¡Qué bonita es tu casa nueva!». Hugo dijo: «¡Gracias! ¡Esta noche invito yo!».",
+      "questions": [
+        { "q": "¿Dónde puso Hugo el sofá?", "options": ["电视对面", "阳台旁边", "床底下"], "answer": 0 },
+        { "q": "¿Por qué tuvieron que llevar la nevera entre los tres?", "options": ["冰箱太重了", "冰箱太贵了", "冰箱太小了"], "answer": 0 },
+        { "q": "¿Qué hizo Ana?", "options": ["把衣服挂在门后面", "把书放在书架上", "把沙发搬到楼上"], "answer": 0 },
+        { "q": "En «两把椅子», ¿qué es 把?", "options": ["Un clasificador (sillas)", "El 把 del objeto", "Un verbo"], "answer": 0, "explain": "把 también cuenta objetos con mango o respaldo: 一把椅子, 一把伞." }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

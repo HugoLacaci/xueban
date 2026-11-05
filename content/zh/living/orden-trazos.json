@@ -1,0 +1,88 @@
+{
+  "id": "orden-trazos",
+  "title": "Orden de trazos",
+  "zh": "笔顺",
+  "order": 23,
+  "icon": "ListOrdered",
+  "summary": "Los ocho trazos básicos con su nombre chino y las siete reglas del orden de trazos, con ejemplos trazo a trazo.",
+  "kind": "reference",
+  "reviewed": false,
+  "sections": [
+    {
+      "id": "ocho-trazos",
+      "title": "Los ocho trazos básicos",
+      "unlockedBy": "e0-12",
+      "markdown": "| Trazo | Nombre | Pinyin | Significado | Dirección | Ejemplo |\n|---|---|---|---|---|---|\n| 一 | 横 | héng | horizontal | → de izquierda a derecha | 一, 大 (1.º) |\n| 丨 | 竖 | shù | vertical | ↓ de arriba abajo | 十 (2.º), 中 (4.º) |\n| 丿 | 撇 | piě | barrido a la izquierda | ↙ afinando | 人 (1.º), 月 (1.º) |\n| ㇏ | 捺 | nà | barrido a la derecha | ↘ engordando al final | 人 (2.º), 大 (3.º) |\n| 丶 | 点 | diǎn | punto | ↘ corto | 六 (1.º) |\n| ㇀ | 提 | tí | subida | ↗ corta | 氵 (3.º) |\n| ㇕ | 折 | zhé | quiebro | → y ↓ sin levantar | 口 (2.º), 日 (2.º) |\n| ㇚ | 钩 | gōu | gancho | un remate al final de otro trazo | 水 (1.º) |\n\n### Trazos compuestos\n\nSe nombran juntando los básicos: **横折** (→↓, el 2.º de 口), **横折钩** (→↓ + gancho, el 2.º de 月), **竖钩** (↓ + gancho, el 1.º de 水).\n\n> 💡 **Truco**: aprende los nombres chinos: las fichas de trazos, los vídeos y los profesores los usan siempre.",
+      "examples": [
+        {
+          "zh": "一",
+          "py": "yī",
+          "es": "uno",
+          "note": "Un 横."
+        },
+        {
+          "zh": "人",
+          "py": "rén",
+          "es": "persona",
+          "note": "撇 + 捺."
+        },
+        {
+          "zh": "口",
+          "py": "kǒu",
+          "es": "boca",
+          "note": "竖 + 横折 + 横."
+        },
+        {
+          "zh": "六",
+          "py": "liù",
+          "es": "seis",
+          "note": "Empieza con un 点."
+        },
+        {
+          "zh": "水",
+          "py": "shuǐ",
+          "es": "agua",
+          "note": "Empieza con un 竖钩."
+        }
+      ]
+    },
+    {
+      "id": "siete-reglas-de-orden",
+      "title": "Las siete reglas del orden",
+      "unlockedBy": "e0-12",
+      "markdown": "| # | Regla | Ejemplo | Orden |\n|---|---|---|---|\n| 1 | **Arriba antes que abajo** | 三 | 横 de arriba → 横 del medio → 横 de abajo |\n| 2 | **Izquierda antes que derecha** | 你 | 亻 → 尔 |\n| 3 | **Horizontal antes que vertical** (si se cruzan) | 十 | 横 → 竖 |\n| 4 | **撇 antes que 捺** | 人, 大 | 人: 撇 → 捺 · 大: 横 → 撇 → 捺 |\n| 5 | **De fuera a dentro; la «puerta» se cierra al final** | 月, 日, 口 | 日: 竖 → 横折 → 横 de dentro → 横 de abajo |\n| 6 | **Centro antes que los lados** (si es simétrico) | 小, 水 | 小: 竖钩 → 点 izquierdo → 点 derecho |\n| 7 | **La vertical que atraviesa todo, al final** | 中 | 竖 → 横折 → 横 → 竖 central |\n\n### Trazo a trazo\n\n| Carácter | Trazos | Orden |\n|---|---|---|\n| 人 rén | 2 | 撇, 捺 |\n| 大 dà | 3 | 横, 撇, 捺 |\n| 口 kǒu | 3 | 竖, 横折, 横 |\n| 日 rì | 4 | 竖, 横折, 横, 横 |\n| 月 yuè | 4 | 撇, 横折钩, 横, 横 |\n| 中 zhōng | 4 | 竖, 横折, 横, 竖 |\n\n> ⚠️ **Ojo**: en la lección 0.12 la regla 5 aparece partida en dos («de fuera a dentro» y «dentro antes de cerrar»); aquí van juntas porque siempre se aplican a la vez.\n\n> 💡 **Truco**: todo carácter ocupa el mismo **cuadrado imaginario** (田字格). Practica en papel cuadriculado para que 口 y 中 no te salgan de tamaños distintos.",
+      "examples": [
+        {
+          "zh": "大",
+          "py": "dà",
+          "es": "grande",
+          "note": "Reglas 3 y 4: 横, 撇, 捺."
+        },
+        {
+          "zh": "中",
+          "py": "zhōng",
+          "es": "medio, centro",
+          "note": "Regla 7: la vertical central, al final."
+        },
+        {
+          "zh": "日",
+          "py": "rì",
+          "es": "sol; día",
+          "note": "Regla 5: se cierra al final."
+        },
+        {
+          "zh": "月",
+          "py": "yuè",
+          "es": "luna; mes",
+          "note": "Regla 5: primero el marco."
+        },
+        {
+          "zh": "中国人",
+          "py": "Zhōngguó rén",
+          "es": "chino, china (persona)",
+          "note": "中 (regla 7), 国 (regla 5), 人 (regla 4)."
+        }
+      ]
+    }
+  ]
+}

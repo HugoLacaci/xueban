@@ -1,0 +1,135 @@
+{
+  "id": "b1-u01-l4",
+  "title": "Sácalo y cuélgalo: 把 + objeto + dirección / 得 + estado",
+  "zh": "把衣服挂起来",
+  "goal": "Decir hacia dónde mueves algo (把衣服拿出来, 把箱子搬进房间去) y cómo lo dejas (把衬衫洗得干干净净) con 把.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "衬衫", "pinyin": "chènshān", "es": "camisa", "note": "一件衬衫." },
+    { "hanzi": "衬衣", "pinyin": "chènyī", "es": "camisa (sinónimo de 衬衫)" },
+    { "hanzi": "裤子", "pinyin": "kùzi", "es": "pantalones", "note": "一条裤子." },
+    { "hanzi": "短裤", "pinyin": "duǎnkù", "es": "pantalón corto" },
+    { "hanzi": "裙子", "pinyin": "qúnzi", "es": "falda; vestido", "note": "一条裙子." },
+    { "hanzi": "上衣", "pinyin": "shàngyī", "es": "prenda de arriba, chaqueta, blusa" },
+    { "hanzi": "服装", "pinyin": "fúzhuāng", "es": "ropa, indumentaria (más formal)", "note": "服装店 = tienda de ropa." },
+    { "hanzi": "布", "pinyin": "bù", "es": "tela" },
+    { "hanzi": "皮", "pinyin": "pí", "es": "piel, cuero; corteza, piel (de fruta)", "note": "皮上衣 = chaqueta de cuero." },
+    { "hanzi": "结实", "pinyin": "jiēshi", "es": "resistente, fuerte, sólido" },
+    { "hanzi": "紧", "pinyin": "jǐn", "es": "apretado, ajustado; tenso", "note": "这条裤子太紧了 = estos pantalones me aprietan." },
+    { "hanzi": "适合", "pinyin": "shìhé", "es": "ser adecuado para, sentar bien a", "note": "这件衣服很适合你 = esta prenda te queda muy bien." },
+    { "hanzi": "整齐", "pinyin": "zhěngqí", "es": "ordenado, bien colocado", "note": "Reduplicado: 整整齐齐." }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "你把衣服拿出来吧。", "py": "Nǐ bǎ yīfu ná chulai ba.", "es": "Saca la ropa." },
+        { "zh": "我们把箱子搬进房间去了。", "py": "Wǒmen bǎ xiāngzi bānjìn fángjiān qu le.", "es": "Hemos metido las cajas en la habitación." },
+        { "zh": "妈妈把衬衫洗得干干净净。", "py": "Māma bǎ chènshān xǐ de gān gān jìng jìng.", "es": "Mi madre deja las camisas limpísimas." }
+      ]
+    },
+    { "type": "vocab", "title": "La ropa", "words": ["衬衫", "衬衣", "裤子", "短裤", "裙子", "上衣", "服装", "布", "皮", "结实", "紧", "适合", "整齐"] },
+    {
+      "type": "phonetics-drill",
+      "title": "Direccionales flojos y adjetivos duplicados",
+      "markdown": "**来 / 去 y 出来, 起来, 进去** detrás de un verbo se dicen normalmente en **tono neutro**: el peso lo lleva el verbo. 拿出来 → *ná chulai*, 挂起来 → *guà qilai*. (Hablando despacio también se oyen con su tono.)\n\nLos adjetivos duplicados **AABB** (干干净净, 整整齐齐) tienen un **ritmo de cuatro golpes** muy marcado: *gān-gān-jìng-jìng*, *zhěng-zhěng-qí-qí*. Suenan expresivos: «limpísimo», «ordenadísimo».\n\nY dos sonidos de hoy: **ch** retrofleja de 衬衫 *chènshān* (con aire) y **q** de 裙子 *qúnzi* (lengua plana, con aire, y ü que se escribe u).",
+      "items": [
+        { "audio": "拿出来", "options": ["ná chulai", "nà chulai", "ná chūqù"], "answer": 0, "explain": "拿 sube (segundo tono) y 出来 queda flojo." },
+        { "audio": "挂起来", "options": ["guà qilai", "guā qilai", "guà qìlai"], "answer": 0, "explain": "挂 cae (cuarto tono); 起来, neutro." },
+        { "audio": "洗得干干净净", "prompt": "¿Qué sílaba es neutra?", "options": ["得 (de)", "洗 (xǐ)", "净 (jìng)"], "answer": 0, "explain": "El 得 del estado es siempre neutro." },
+        { "audio": "衬衫", "options": ["chènshān", "chénshān", "zhènshān"], "answer": 0, "explain": "ch aspirada; cuarto + primero." },
+        { "audio": "裙子", "options": ["qúnzi", "jūnzi", "qǔnzi"], "answer": 0, "explain": "q con aire y segundo tono; 子 neutro." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["裤", "裙"],
+      "mnemonics": {
+        "裤": "衤 (radical de la ropa, variante de 衣) + 库 (kù, «almacén», da el sonido): la prenda que «guarda» las piernas.",
+        "裙": "衤 (ropa) + 君 (jūn, da un sonido parecido): la prenda que cae suelta desde la cintura."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "把 + objeto + V + dirección / V得 + estado",
+      "markdown": "Lo que va detrás del verbo en una frase con 把 también puede ser:\n\n1. **Una dirección** (los direccionales de A2): 把衣服**拿出来**, 把裙子**挂起来**, 把箱子**搬进**房间**去**. El lugar va **entre** 进 / 出 / 上 / 回 y 来 / 去.\n2. **Un estado con 得** (el complemento de grado de A2): 把衬衫洗**得干干净净**, 把衣服放**得很整齐**. Cuenta cómo ha quedado el objeto.\n\n- **Negativa**: 没 delante de 把: 他**没**把短裤拿出来.\n- **Esqueleto** (convenciones de A2): direccional sin lugar, entero en *Verbo 1* (拿出来); con lugar, 搬进 en *Verbo 1*, el lugar en *Objeto* y 来 / 去 en *Complemento*. Con 得: 洗得 en *Verbo 1* y el estado en *Complemento*.",
+      "focus": ["with", "complement"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "with": { "zh": "把衣服", "py": "bǎ yīfu" }, "verb1": { "zh": "拿出来", "py": "ná chulai" }, "particle": { "zh": "吧", "py": "ba" } }, "end": "。", "es": "Saca la ropa." },
+        { "slots": { "subject": { "zh": "我们", "py": "wǒmen" }, "with": { "zh": "把箱子", "py": "bǎ xiāngzi" }, "verb1": { "zh": "搬进", "py": "bānjìn" }, "object": { "zh": "房间", "py": "fángjiān" }, "complement": { "zh": "去", "py": "qu" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Hemos metido las cajas en la habitación.", "esOrder": [{ "text": "Hemos metido", "slot": "verb1" }, { "text": "las cajas", "slot": "with" }, { "text": "en la habitación", "slot": "object" }] },
+        { "slots": { "subject": { "zh": "安娜", "py": "Ānnà" }, "with": { "zh": "把裙子", "py": "bǎ qúnzi" }, "verb1": { "zh": "挂起来", "py": "guà qilai" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Ana ha colgado la falda." },
+        { "slots": { "subject": { "zh": "妈妈", "py": "māma" }, "with": { "zh": "把衬衫", "py": "bǎ chènshān" }, "verb1": { "zh": "洗得", "py": "xǐ de" }, "complement": { "zh": "干干净净", "py": "gān gān jìng jìng" } }, "end": "。", "es": "Mi madre deja las camisas limpísimas." },
+        { "slots": { "subject": { "zh": "雨果", "py": "Yǔguǒ" }, "with": { "zh": "把衣服", "py": "bǎ yīfu" }, "verb1": { "zh": "放得", "py": "fàng de" }, "complement": { "zh": "很整齐", "py": "hěn zhěngqí" } }, "end": "。", "es": "Hugo deja la ropa muy bien colocada." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "他", "py": "tā" }, "adverb": { "zh": "没", "py": "méi" }, "with": { "zh": "把短裤", "py": "bǎ duǎnkù" }, "verb1": { "zh": "拿出来", "py": "ná chulai" } }, "end": "。", "es": "No ha sacado los pantalones cortos." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "aux": { "zh": "能", "py": "néng" }, "with": { "zh": "把那条裤子", "py": "bǎ nà tiáo kùzi" }, "verb1": { "zh": "拿过来", "py": "ná guolai" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿Me puedes traer esos pantalones?" },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "with": { "zh": "把房间", "py": "bǎ fángjiān" }, "verb1": { "zh": "收拾得", "py": "shōushi de" }, "complement": { "zh": "怎么样", "py": "zěnmeyàng" }, "particle": { "zh": "了", "py": "le" } }, "end": "？", "es": "¿Cómo llevas lo de ordenar la habitación?" }
+      ],
+      "mistakes": [
+        { "wrong": "我把衣服拿出。", "right": "我把衣服拿出来。", "why": "出 solo no basta en la lengua hablada: añade 来 o 去 (hacia ti o lejos de ti)." },
+        { "wrong": "我把箱子搬进去房间。", "right": "我把箱子搬进房间去。", "why": "El lugar va entre 进 y 去, no detrás." },
+        { "wrong": "她把衬衫洗干干净净。", "right": "她把衬衫洗得干干净净。", "why": "Para decir cómo queda algo con un adjetivo duplicado hace falta 得." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Deshacer las maletas",
+      "lines": [
+        { "speaker": "安娜", "zh": "雨果，你的衣服还在箱子里？快把它们拿出来吧。", "py": "Yǔguǒ, nǐ de yīfu hái zài xiāngzi li? Kuài bǎ tāmen ná chulai ba.", "es": "Hugo, ¿todavía tienes la ropa en la maleta? Sácala ya." },
+        { "speaker": "雨果", "zh": "好。你帮我把这些衬衫挂起来，好吗？", "py": "Hǎo. Nǐ bāng wǒ bǎ zhèxiē chènshān guà qilai, hǎo ma?", "es": "Vale. ¿Me ayudas a colgar estas camisas?" },
+        { "speaker": "安娜", "zh": "没问题。这件衬衣是新的吗？布很好。", "py": "Méi wèntí. Zhè jiàn chènyī shì xīn de ma? Bù hěn hǎo.", "es": "Claro. ¿Esta camisa es nueva? La tela es muy buena." },
+        { "speaker": "雨果", "zh": "是我妈妈买的。她说这件衬衣的布很结实。", "py": "Shì wǒ māma mǎi de. Tā shuō zhè jiàn chènyī de bù hěn jiēshi.", "es": "Me la compró mi madre. Dice que la tela es muy resistente." },
+        { "speaker": "安娜", "zh": "这条裤子呢？挂起来还是放进去？", "py": "Zhè tiáo kùzi ne? Guà qilai háishi fàng jinqu?", "es": "¿Y estos pantalones? ¿Los cuelgo o los guardo?" },
+        { "speaker": "雨果", "zh": "那条裤子太紧了，不适合我。你把它放在床上吧，我想送给小李。", "py": "Nà tiáo kùzi tài jǐn le, bú shìhé wǒ. Nǐ bǎ tā fàng zài chuáng shang ba, wǒ xiǎng sònggěi Xiǎo Lǐ.", "es": "Esos me aprietan mucho, no me quedan bien. Déjalos en la cama, que se los quiero regalar a Xiao Li." },
+        { "speaker": "安娜", "zh": "这件皮上衣真漂亮！", "py": "Zhè jiàn pí shàngyī zhēn piàoliang!", "es": "¡Qué bonita esta chaqueta de cuero!" },
+        { "speaker": "雨果", "zh": "谢谢，冬天穿的。夏天我只穿短裤。", "py": "Xièxie, dōngtiān chuān de. Xiàtiān wǒ zhǐ chuān duǎnkù.", "es": "Gracias, es para el invierno. En verano solo llevo pantalón corto." },
+        { "speaker": "安娜", "zh": "那你把短裤都放进那个小箱子里去吧。", "py": "Nà nǐ bǎ duǎnkù dōu fàngjìn nàge xiǎo xiāngzi li qu ba.", "es": "Pues mete todos los pantalones cortos en esa maleta pequeña." },
+        { "speaker": "雨果", "zh": "好。你看，我把衣服放得整整齐齐！", "py": "Hǎo. Nǐ kàn, wǒ bǎ yīfu fàng de zhěngzhěng-qíqí!", "es": "Vale. ¡Mira qué ordenadita he dejado la ropa!" },
+        { "speaker": "安娜", "zh": "不错！我觉得你可以开一个服装店了。", "py": "Búcuò! Wǒ juéde nǐ kěyǐ kāi yí ge fúzhuāng diàn le.", "es": "¡Muy bien! Ya podrías abrir una tienda de ropa." },
+        { "speaker": "雨果", "zh": "开服装店？我还是先学好汉语吧！", "py": "Kāi fúzhuāng diàn? Wǒ háishi xiān xué hǎo Hànyǔ ba!", "es": "¿Una tienda de ropa? ¡Mejor aprendo bien chino primero!" }
+      ],
+      "notes": "Para la ropa, recuerda los clasificadores: 一件衬衫 / 上衣 (prendas de arriba), 一条裤子 / 裙子 / 短裤 (prendas largas y estrechas). 适合 + persona: 这件衣服很适合你 es la forma educada de decir «te queda muy bien»."
+    },
+    { "type": "exercises", "count": 17, "bank": ["g-lai-qu", "g-complements", "g-measure-words"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "你" }, "with": { "zh": "把衣服" }, "verb1": { "zh": "拿出来" }, "particle": { "zh": "吧" } }, "end": "。", "es": "Saca la ropa." }, "distractors": ["拿出"] },
+        { "sentence": { "slots": { "subject": { "zh": "我们" }, "with": { "zh": "把箱子" }, "verb1": { "zh": "搬进" }, "object": { "zh": "房间" }, "complement": { "zh": "去" }, "particle": { "zh": "了" } }, "end": "。", "es": "Hemos metido las cajas en la habitación." } },
+        { "sentence": { "slots": { "subject": { "zh": "妈妈" }, "with": { "zh": "把衬衫" }, "verb1": { "zh": "洗得" }, "complement": { "zh": "干干净净" } }, "end": "。", "es": "Mi madre deja las camisas limpísimas." }, "distractors": ["洗"] },
+        { "sentence": { "slots": { "time0": { "zh": "昨天晚上" }, "subject": { "zh": "雨果" }, "adverb": { "zh": "已经" }, "with": { "zh": "把所有的衣服" }, "verb1": { "zh": "放得" }, "complement": { "zh": "整整齐齐" }, "particle": { "zh": "了" } }, "end": "。", "es": "Anoche Hugo ya dejó toda la ropa perfectamente ordenada." } }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "你把衣服拿出来吧。", "py": "Nǐ bǎ yīfu ná chulai ba.", "es": "Saca la ropa." },
+        { "zh": "安娜把裙子挂起来了。", "py": "Ānnà bǎ qúnzi guà qilai le.", "es": "Ana ha colgado la falda." },
+        { "zh": "这条裤子太紧了，不适合我。", "py": "Zhè tiáo kùzi tài jǐn le, bú shìhé wǒ.", "es": "Estos pantalones me aprietan, no me quedan bien." },
+        { "zh": "我把衣服放得整整齐齐。", "py": "Wǒ bǎ yīfu fàng de zhěngzhěng-qíqí.", "es": "He dejado la ropa perfectamente ordenada." }
+      ],
+      "respond": [
+        { "q": { "zh": "你的衣服呢？还在箱子里吗？", "py": "Nǐ de yīfu ne? Hái zài xiāngzi li ma?", "es": "¿Y tu ropa? ¿Sigue en la maleta?" }, "model": { "zh": "不在了，我已经把衣服挂起来了。", "py": "Bú zài le, wǒ yǐjīng bǎ yīfu guà qilai le.", "es": "No, ya la he colgado." } },
+        { "q": { "zh": "这件衬衫适合我吗？", "py": "Zhè jiàn chènshān shìhé wǒ ma?", "es": "¿Me queda bien esta camisa?" }, "model": { "zh": "很适合你，颜色也很漂亮。", "py": "Hěn shìhé nǐ, yánsè yě hěn piàoliang.", "es": "Te queda muy bien, y el color es muy bonito." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Dos maletas de ropa",
+      "text": "雨果从西班牙带来了两个大箱子，里面都是衣服。搬家以后，安娜来帮他把衣服拿出来。雨果的服装不多，可是都很好：三件白衬衫、两条裤子、几条短裤，还有一件皮上衣。皮上衣是他爸爸送给他的，非常结实，已经穿了五年了。安娜把衬衫一件一件地挂起来，雨果把裤子放进书架下面的箱子里。有一条裤子太紧了，不适合雨果，他想把它送给小李。安娜也拿出来一条裙子，说：“这是我给你妹妹买的，布很好，你下次回国的时候带给她吧。”最后，雨果把衣服放得整整齐齐。安娜笑着说：“你的房间比我的还干净！”",
+      "es": "Hugo trajo de España dos maletas grandes llenas de ropa. Después de la mudanza, Ana fue a ayudarle a sacarla. Hugo no tiene mucha ropa, pero toda es buena: tres camisas blancas, dos pantalones, unos cuantos pantalones cortos y una chaqueta de cuero. La chaqueta se la regaló su padre: es resistentísima y ya la ha llevado cinco años. Ana colgó las camisas una a una y Hugo guardó los pantalones en la caja que hay debajo de la estantería. Unos pantalones le apretaban demasiado, así que quiere regalárselos a Xiao Li. Ana también sacó una falda y dijo: «Esto se lo he comprado a tu hermana; la tela es muy buena: llévasela la próxima vez que vuelvas a casa». Al final, Hugo dejó toda la ropa perfectamente ordenada. Ana dijo riéndose: «¡Tu habitación está aún más limpia que la mía!».",
+      "questions": [
+        { "q": "¿Quién le regaló a Hugo la chaqueta de cuero?", "options": ["他爸爸", "安娜", "他妈妈"], "answer": 0 },
+        { "q": "¿Qué hizo Ana con las camisas?", "options": ["把它们挂起来了", "把它们洗干净了", "把它们送给小李了"], "answer": 0 },
+        { "q": "¿Por qué quiere regalar Hugo unos pantalones?", "options": ["太紧了", "太长了", "太贵了"], "answer": 0 },
+        { "q": "¿Para quién es la falda?", "options": ["雨果的妹妹", "安娜", "小李"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

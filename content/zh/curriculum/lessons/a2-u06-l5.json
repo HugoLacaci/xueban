@@ -1,0 +1,141 @@
+{
+  "id": "a2-u06-l5",
+  "title": "Repaso: entre amigos (最, 别人, 咱们)",
+  "zh": "咱们还是好朋友",
+  "goal": "Contar un malentendido entre amigos y arreglarlo: 别人 y 咱们, 最, y repaso de todas las comparaciones de la unidad.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "哭", "pinyin": "kū", "es": "llorar" },
+    { "hanzi": "气", "pinyin": "qì", "es": "enfadarse; enfadar; aire", "note": "气死我了 = ¡me tiene harto! 你别气了 = no te enfades." },
+    { "hanzi": "笑话", "pinyin": "xiàohua", "es": "reírse de, burlarse de; chiste", "note": "别笑话我 = no te rías de mí." },
+    { "hanzi": "笑话儿", "pinyin": "xiàohuar", "es": "chiste", "note": "讲一个笑话儿 = contar un chiste (con erhua, más coloquial)." },
+    { "hanzi": "故意", "pinyin": "gùyì", "es": "a propósito, adrede", "note": "我不是故意的 = no lo he hecho a propósito." },
+    { "hanzi": "喊", "pinyin": "hǎn", "es": "gritar, llamar a voces" },
+    { "hanzi": "碰", "pinyin": "pèng", "es": "tocar, chocar con, darle a (algo)", "note": "别碰我的电脑 = no toques mi ordenador." },
+    { "hanzi": "碰到", "pinyin": "pèngdào", "es": "chocar con; encontrarse (con algo o alguien)" },
+    { "hanzi": "碰见", "pinyin": "pèngjiàn", "es": "encontrarse por casualidad (con alguien)" },
+    { "hanzi": "想起", "pinyin": "xiǎngqǐ", "es": "acordarse de", "note": "我想起来了 = ¡ya me acuerdo!" },
+    { "hanzi": "点头", "pinyin": "diǎntóu", "es": "asentir con la cabeza", "note": "Es separable: 点了点头." }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "他不是故意的，别生气了。", "py": "Tā bú shì gùyì de, bié shēngqì le.", "es": "No lo ha hecho a propósito; no te enfades." },
+        { "zh": "咱们别笑话别人。", "py": "Zánmen bié xiàohua biérén.", "es": "No nos riamos de los demás." },
+        { "zh": "在我们班，安娜最认真，她比别人都认真。", "py": "Zài wǒmen bān, Ānnà zuì rènzhēn, tā bǐ biérén dōu rènzhēn.", "es": "En nuestra clase, Ana es la más aplicada: más que todos los demás." }
+      ]
+    },
+    { "type": "vocab", "title": "Riñas y reconciliaciones", "words": ["哭", "气", "笑话", "笑话儿", "故意", "喊", "碰", "碰到", "碰见", "想起", "点头"] },
+    {
+      "type": "phonetics-drill",
+      "title": "Entonación: enfado, ruego y broma",
+      "markdown": "El chino tiene tonos, pero **también entonación**: la frase entera sube o baja *sin destrozar* los tonos de cada sílaba.\n\n- **Enfado** (我很生气！): más fuerte y más rápido; los cuartos tonos caen todavía más.\n- **Ruego** (别生气了): más suave y lento; 了 final alargado y flojo.\n- **Broma**: 笑话儿 *xiàohuar* con erhua: la lengua se dobla al final de *hua*.\n\nY tres sílabas nuevas: **哭 kū** (alto y plano), **喊 hǎn** (baja y sube), **碰 pèng** (cae con fuerza, p aspirada).",
+      "items": [
+        { "audio": "碰见", "options": ["pèngjiàn", "pēngjiàn", "bèngjiàn"], "answer": 0, "explain": "p aspirada y dos cuartos tonos." },
+        { "audio": "笑话儿", "options": ["xiàohuar", "xiàohuà ér", "xiāohuar"], "answer": 0, "explain": "话儿 se funde en una sílaba: huar." },
+        { "audio": "喊", "options": ["hǎn", "hàn", "kǎn"], "answer": 0, "explain": "Tercer tono: baja y sube." },
+        { "audio": "哭", "options": ["kū", "kù", "gū"], "answer": 0, "explain": "k aspirada y primer tono." },
+        { "audio": "故意", "options": ["gùyì", "gūyì", "gùyí"], "answer": 0, "explain": "Dos cuartos tonos: el primero cae solo a media altura." },
+        { "audio": "别生气了！", "prompt": "¿Cómo suena?", "options": ["Suave, como un ruego", "Fuerte, como una orden enfadada", "Como una pregunta"], "answer": 0 }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["哭", "喊"],
+      "mnemonics": {
+        "哭": "Dos 口 arriba (dos ojos hinchados o dos bocas que gimen) + 犬 (perro): llorar como un perro que aúlla.",
+        "喊": "口 (boca) + 咸 (que da el sonido, xián → hǎn): abrir mucho la boca para llamar a alguien."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "Repaso: comparar y hablar de los demás (最, 别人, 咱们)",
+      "markdown": "**咱们** = «nosotros» **contándote a ti** (el que escucha). **我们** puede incluirte o no. Por eso, para proponer algo a un amigo, 咱们 es lo más natural en el norte de China: 咱们走吧！\n\n**别人** = los demás, otra gente. Puede ser sujeto (别人都知道) u objeto (别笑话别人). No lleva 们.\n\n**最** = el que más; no se combina con 比. Para «más que todos los demás»: 比别人都 + adj.\n\n**Resumen de las convenciones de la unidad**:\n\n| Estructura | Hueco |\n|---|---|\n| 比他 / 比他更 / 没有他那么 / 跟他一样 | *Adverbios* |\n| 一点儿 / 多了 / 得多 / 两岁 | *Complemento* |\n| 她个子 (tema + rasgo) | *Sujeto* |\n| 北京人, 二十岁 (predicado nominal) | *Objeto* |\n| 让我 + verbo | *Verbo 1* + *Verbo 2* |",
+      "focus": ["subject", "adverb"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "咱们", "py": "zánmen" }, "time": { "zh": "明天", "py": "míngtiān" }, "with": { "zh": "跟大卫一起", "py": "gēn Dàwèi yìqǐ" }, "verb1": { "zh": "去饭店", "py": "qù fàndiàn" }, "verb2": { "zh": "吃饭", "py": "chīfàn" }, "particle": { "zh": "吧", "py": "ba" } }, "end": "！", "es": "¡Mañana vamos a comer con David a un restaurante!", "esOrder": [{ "text": "Mañana", "slot": "time" }, { "text": "vamos", "slot": "subject" }, { "text": "a comer", "slot": "verb2" }, { "text": "con David", "slot": "with" }, { "text": "a un restaurante", "slot": "verb1" }] },
+        { "slots": { "subject": { "zh": "安娜", "py": "Ānnà" }, "adverb": { "zh": "最", "py": "zuì" }, "verb1": { "zh": "喜欢", "py": "xǐhuan" }, "object": { "zh": "听笑话儿", "py": "tīng xiàohuar" } }, "end": "。", "es": "A Ana lo que más le gusta es oír chistes." },
+        { "slots": { "subject": { "zh": "别人", "py": "biérén" }, "adverb": { "zh": "都", "py": "dōu" }, "verb1": { "zh": "笑话", "py": "xiàohua" }, "object": { "zh": "他", "py": "tā" } }, "end": "。", "es": "Todos los demás se ríen de él." },
+        { "slots": { "subject": { "zh": "小李", "py": "Xiǎo Lǐ" }, "adverb": { "zh": "比别人更", "py": "bǐ biérén gèng" }, "verb1": { "zh": "关心", "py": "guānxīn" }, "object": { "zh": "朋友", "py": "péngyou" } }, "end": "。", "es": "Xiao Li se preocupa por sus amigos más que nadie." },
+        { "slots": { "subject": { "zh": "安娜", "py": "Ānnà" }, "time": { "zh": "昨天", "py": "zuótiān" }, "place": { "zh": "在路上", "py": "zài lù shang" }, "verb1": { "zh": "碰见了", "py": "pèngjiàn le" }, "object": { "zh": "王老师", "py": "Wáng lǎoshī" } }, "end": "。", "es": "Ayer Ana se encontró con la profesora Wang por la calle." },
+        { "slots": { "subject": { "zh": "他", "py": "tā" }, "adverb": { "zh": "不", "py": "bú" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "故意的", "py": "gùyì de" } }, "end": "。", "es": "No lo ha hecho a propósito." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "咱们", "py": "zánmen" }, "adverb": { "zh": "别", "py": "bié" }, "verb1": { "zh": "笑话", "py": "xiàohua" }, "object": { "zh": "别人", "py": "biérén" } }, "end": "。", "es": "No nos riamos de los demás." },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "adverb": { "zh": "别", "py": "bié" }, "verb1": { "zh": "碰", "py": "pèng" }, "object": { "zh": "我的电脑", "py": "wǒ de diànnǎo" } }, "end": "！", "es": "¡No toques mi ordenador!" }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你们班谁", "py": "nǐmen bān shéi" }, "adverb": { "zh": "最", "py": "zuì" }, "verb1": { "zh": "高", "py": "gāo" } }, "end": "？", "es": "¿Quién es el más alto de vuestra clase?" },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "想起", "py": "xiǎngqǐ" }, "object": { "zh": "他的名字", "py": "tā de míngzi" }, "particle": { "zh": "了吗", "py": "le ma" } }, "end": "？", "es": "¿Ya te has acordado de su nombre?" }
+      ],
+      "mistakes": [
+        { "wrong": "他最比我高。", "right": "他比我高。 / 他最高。", "why": "最 (el que más) y 比 (más que) no van juntos. Para «más que todos», 他比别人都高." },
+        { "wrong": "别人们都知道。", "right": "别人都知道。", "why": "别人 ya es plural («los demás»): no lleva 们." },
+        { "wrong": "我碰见了王老师在路上。", "right": "我在路上碰见了王老师。", "why": "El lugar (在 + lugar) va delante del verbo, no al final como en español." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Un mal día de Ana",
+      "lines": [
+        { "speaker": "雨果", "zh": "安娜？我在路上碰见你了！你怎么了？你哭了？", "py": "Ānnà? Wǒ zài lù shang pèngjiàn nǐ le! Nǐ zěnme le? Nǐ kū le?", "es": "¿Ana? ¡Qué casualidad! ¿Qué te pasa? ¿Has llorado?" },
+        { "speaker": "安娜", "zh": "我没哭……我很生气！", "py": "Wǒ méi kū…… Wǒ hěn shēngqì!", "es": "No he llorado… ¡Estoy muy enfadada!" },
+        { "speaker": "雨果", "zh": "谁让你生气了？", "py": "Shéi ràng nǐ shēngqì le?", "es": "¿Quién te ha hecho enfadar?" },
+        { "speaker": "安娜", "zh": "大卫！我说汉语的时候，他大声笑，还笑话我。", "py": "Dàwèi! Wǒ shuō Hànyǔ de shíhou, tā dàshēng xiào, hái xiàohua wǒ.", "es": "¡David! Cuando yo hablaba en chino, se reía a carcajadas y encima se burlaba de mí." },
+        { "speaker": "雨果", "zh": "他不是故意的。大卫最喜欢开玩笑。", "py": "Tā bú shì gùyì de. Dàwèi zuì xǐhuan kāi wánxiào.", "es": "No lo hace a propósito. A David lo que más le gusta es hacer bromas." },
+        { "speaker": "安娜", "zh": "别人都听见了！", "py": "Biérén dōu tīngjiàn le!", "es": "¡Pero lo ha oído todo el mundo!" },
+        { "speaker": "雨果", "zh": "我想起来了，上个星期他也笑话了我的发音。", "py": "Wǒ xiǎng qǐlái le, shàng ge xīngqī tā yě xiàohua le wǒ de fāyīn.", "es": "Ahora que me acuerdo, la semana pasada también se rió de mi pronunciación." },
+        { "speaker": "安娜", "zh": "真的？你不气吗？", "py": "Zhēn de? Nǐ bú qì ma?", "es": "¿En serio? ¿Y no te enfadaste?" },
+        { "speaker": "雨果", "zh": "不气。朋友要互相帮助，也可以互相开玩笑。", "py": "Bú qì. Péngyou yào hùxiāng bāngzhù, yě kěyǐ hùxiāng kāi wánxiào.", "es": "No. Los amigos tienen que ayudarse, y también pueden gastarse bromas." },
+        { "speaker": "安娜", "zh": "好吧，我相信你。", "py": "Hǎo ba, wǒ xiāngxìn nǐ.", "es": "Bueno, te creo." },
+        { "speaker": "雨果", "zh": "咱们现在去找大卫吧，让他给你讲一个笑话儿！", "py": "Zánmen xiànzài qù zhǎo Dàwèi ba, ràng tā gěi nǐ jiǎng yí ge xiàohuar!", "es": "Vamos ahora a buscar a David, ¡y que te cuente un chiste!" },
+        { "speaker": "安娜", "zh": "好。他的笑话儿没有你的那么好笑。", "py": "Hǎo. Tā de xiàohuar méiyǒu nǐ de nàme hǎoxiào.", "es": "Vale, pero sus chistes no tienen tanta gracia como los tuyos." }
+      ],
+      "notes": "我不是故意的 es la disculpa automática cuando haces algo sin querer. 想起来了 = «¡ya me acuerdo!». 谁让你生气了 usa el 让 causativo («¿quién ha hecho que te enfades?»). Con 咱们 Hugo incluye a Ana en el plan."
+    },
+    { "type": "exercises", "count": 20, "bank": ["u08", "u03", "g-hen-adj", "u09", "g-yidianr-youdianr"] },
+    {
+      "type": "sentence-builder",
+      "title": "Construye la frase completa",
+      "items": [
+        { "sentence": { "slots": { "time0": { "zh": "这个学期" }, "subject": { "zh": "我们班的同学" }, "adverb": { "zh": "都比上个学期" }, "verb1": { "zh": "认真" }, "complement": { "zh": "多了" } }, "end": "。", "es": "Este cuatrimestre todos los compañeros de clase son mucho más aplicados que el anterior." }, "distractors": ["很"] },
+        { "sentence": { "slots": { "time0": { "zh": "明天下午" }, "subject": { "zh": "咱们" }, "with": { "zh": "跟大卫一起" }, "place": { "zh": "在食堂" }, "verb1": { "zh": "吃" }, "object": { "zh": "饭" }, "particle": { "zh": "吧" } }, "end": "！", "es": "¡Mañana por la tarde comemos con David en el comedor!" } },
+        { "sentence": { "slots": { "subject": { "zh": "坐地铁去学校" }, "adverb": { "zh": "比坐公交车" }, "verb1": { "zh": "快" }, "complement": { "zh": "得多" } }, "end": "。", "es": "Ir a la universidad en metro es mucho más rápido que en autobús." }, "distractors": ["有点儿"] },
+        { "sentence": { "slots": { "time0": { "zh": "昨天晚上" }, "subject": { "zh": "安娜" }, "place": { "zh": "在宿舍楼下" }, "verb1": { "zh": "碰见了" }, "object": { "zh": "王老师和她的爱人" } }, "end": "。", "es": "Anoche Ana se encontró con la profesora Wang y su marido delante de la residencia." } },
+        { "sentence": { "slots": { "time0": { "zh": "今年" }, "subject": { "zh": "上海的冬天" }, "adverb": { "zh": "没有去年那么" }, "verb1": { "zh": "冷" } }, "end": "。", "es": "Este año el invierno de Shanghái no es tan frío como el del año pasado." }, "distractors": ["多了"] },
+        { "sentence": { "slots": { "subject": { "zh": "我" }, "adverb": { "zh": "跟大卫一样" }, "verb1": { "zh": "喜欢" }, "object": { "zh": "跟中国朋友一起吃火锅" } }, "end": "。", "es": "A mí, igual que a David, me encanta comer hot pot con amigos chinos." } },
+        { "sentence": { "slots": { "subject": { "zh": "雨果的新朋友" }, "object": { "zh": "北京人，二十四岁，高个子、大眼睛" } }, "end": "。", "es": "El nuevo amigo de Hugo es de Pekín, tiene veinticuatro años, es alto y tiene los ojos grandes." } }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "咱们一起去吧！", "py": "Zánmen yìqǐ qù ba!", "es": "¡Vamos juntos!" },
+        { "zh": "他不是故意的。", "py": "Tā bú shì gùyì de.", "es": "No lo ha hecho a propósito." },
+        { "zh": "别笑话别人。", "py": "Bié xiàohua biérén.", "es": "No te rías de los demás." },
+        { "zh": "在我们班，安娜最认真。", "py": "Zài wǒmen bān, Ānnà zuì rènzhēn.", "es": "En nuestra clase, Ana es la más aplicada." }
+      ],
+      "respond": [
+        { "q": { "zh": "你们班谁最高？", "py": "Nǐmen bān shéi zuì gāo?", "es": "¿Quién es el más alto de vuestra clase?" }, "model": { "zh": "大卫最高，他比我们都高。", "py": "Dàwèi zuì gāo, tā bǐ wǒmen dōu gāo.", "es": "David es el más alto: más que todos nosotros." } },
+        { "q": { "zh": "你的好朋友什么样子？", "py": "Nǐ de hǎo péngyou shénme yàngzi?", "es": "¿Cómo es tu mejor amigo?" }, "model": { "zh": "他个子很高，人很热情，比我还喜欢开玩笑。", "py": "Tā gèzi hěn gāo, rén hěn rèqíng, bǐ wǒ hái xǐhuan kāi wánxiào.", "es": "Es alto, muy simpático, y le gusta hacer bromas todavía más que a mí." } },
+        { "q": { "zh": "你跟你的好朋友一样大吗？", "py": "Nǐ gēn nǐ de hǎo péngyou yíyàng dà ma?", "es": "¿Tienes la misma edad que tu mejor amigo?" }, "model": { "zh": "不一样，他比我大一岁。", "py": "Bù yíyàng, tā bǐ wǒ dà yí suì.", "es": "No, me saca un año." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Seguimos siendo amigos",
+      "text": "昨天下午，安娜在食堂跟大卫说汉语。大卫说话的时候碰到了安娜的杯子。他还讲了一个笑话儿，别人都笑了。安娜觉得他是故意的，很生气。她回宿舍的时候，在路上碰见了雨果。雨果说：“大卫最喜欢开玩笑，他不是想笑话你。”安娜想起来，大卫也常常帮助她。他们一起去找大卫。在楼下，雨果大声喊：“大卫！”大卫下来了，跟安娜说了“对不起”。安娜点了点头，说：“没关系，咱们还是好朋友。”",
+      "es": "Ayer por la tarde Ana estaba hablando en chino con David en el comedor. Mientras hablaba, David le dio a la taza de Ana. Luego contó un chiste y todos los demás se rieron. Ana pensó que lo había hecho a propósito y se enfadó mucho. Volviendo a la residencia se encontró con Hugo por el camino. Hugo le dijo: «A David lo que más le gusta es hacer bromas; no quería reírse de ti». Ana se acordó de que David también la ayuda a menudo. Fueron juntos a buscarlo. Abajo, Hugo gritó: «¡David!». David bajó y le pidió perdón a Ana. Ana asintió y dijo: «No pasa nada, seguimos siendo amigos».",
+      "questions": [
+        { "q": "¿Dónde estaban Ana y David?", "options": ["在食堂", "在宿舍", "在路上"], "answer": 0 },
+        { "q": "¿Por qué se enfadó Ana?", "options": ["别人都笑了", "大卫没来", "她的杯子很贵"], "answer": 0 },
+        { "q": "¿Con quién se encontró Ana por el camino?", "options": ["雨果", "王老师", "小李"], "answer": 0 },
+        { "q": "¿Qué hizo Ana al final?", "options": ["点了点头", "哭了", "回家了"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

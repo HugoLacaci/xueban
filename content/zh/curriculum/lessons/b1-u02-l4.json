@@ -1,0 +1,134 @@
+{
+  "id": "b1-u02-l4",
+  "title": "Todavía no lo han aprobado: 没被, 已经被 y los papeles",
+  "zh": "我的签证还没被批准",
+  "goal": "Negar y matizar la pasiva (没被, 还没被, 已经被, 不会被) colocando bien adverbios y auxiliares delante de 被, y hacer trámites con papeles y seguros.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "办理", "pinyin": "bànlǐ", "es": "tramitar, gestionar", "note": "办理手续 = hacer los trámites." },
+    { "hanzi": "手续", "pinyin": "shǒuxù", "es": "trámites, papeleo" },
+    { "hanzi": "表格", "pinyin": "biǎogé", "es": "formulario, impreso" },
+    { "hanzi": "证", "pinyin": "zhèng", "es": "carné, certificado (en compuestos)", "note": "学生证 = carné de estudiante; 工作证, 身份证." },
+    { "hanzi": "证明", "pinyin": "zhèngmíng", "es": "certificado, justificante; demostrar" },
+    { "hanzi": "证据", "pinyin": "zhèngjù", "es": "prueba (de algo)" },
+    { "hanzi": "批准", "pinyin": "pīzhǔn", "es": "aprobar, autorizar (una solicitud)" },
+    { "hanzi": "资格", "pinyin": "zīgé", "es": "derecho, requisitos (para algo)", "note": "有资格 = tener derecho a, cumplir los requisitos." },
+    { "hanzi": "大使馆", "pinyin": "dàshǐguǎn", "es": "embajada", "note": "La de España está en Pekín; en Shanghái hay un consulado general." },
+    { "hanzi": "亲自", "pinyin": "qīnzì", "es": "en persona, personalmente" },
+    { "hanzi": "退", "pinyin": "tuì", "es": "devolver; retroceder", "note": "退钱 = devolver el dinero; 退回来 = devolver (a quien lo envió)." },
+    { "hanzi": "保险", "pinyin": "bǎoxiǎn", "es": "seguro (médico, de viaje…)", "note": "Dos terceros tonos seguidos: báoxiǎn." }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "我的签证还没被批准。", "py": "Wǒ de qiānzhèng hái méi bèi pīzhǔn.", "es": "Todavía no me han aprobado el visado." },
+        { "zh": "你的表格已经被退回来了。", "py": "Nǐ de biǎogé yǐjīng bèi tuì huilai le.", "es": "Te han devuelto el formulario." },
+        { "zh": "我要亲自去办理手续吗？", "py": "Wǒ yào qīnzì qù bànlǐ shǒuxù ma?", "es": "¿Tengo que ir en persona a hacer los trámites?" }
+      ]
+    },
+    { "type": "vocab", "title": "Papeles y trámites", "words": ["办理", "手续", "表格", "证", "证明", "证据", "批准", "资格", "大使馆", "亲自", "退", "保险"] },
+    {
+      "type": "phonetics-drill",
+      "title": "La negación delante: 没被, 还没被 y dos terceros tonos",
+      "markdown": "Al negar la pasiva, **没** se pega a 被 y se dicen como una sola palabra: *méi bèi*. Si hay 还, el bloque es 还没被 *hái méi bèi*: tres sílabas rápidas, y el peso de la frase cae **al final**, en el verbo: 还没被**批准**.\n\nHoy hay varias palabras con **dos terceros tonos seguidos**, y el primero se dice en segundo tono:\n\n- 保险 *bǎoxiǎn* → *báoxiǎn*\n- 手续 no: *shǒuxù* es tercero + cuarto (el tercero se queda abajo).\n- 表格 *biǎogé*: tercero + segundo.\n\nY 批准 *pīzhǔn*: primero alto y plano + tercero.",
+      "items": [
+        { "audio": "保险", "prompt": "¿Cómo suena 保?", "options": ["Sube (como segundo tono)", "Baja y sube entero", "Alto y plano"], "answer": 0, "explain": "Tercero + tercero → el primero cambia a segundo." },
+        { "audio": "还没被批准", "options": ["hái méi bèi pīzhǔn", "hài méi bèi pízhǔn", "hái mèi pèi pīzhǔn"], "answer": 0, "explain": "还 segundo, 没 segundo, 被 cuarto, 批 primero, 准 tercero." },
+        { "audio": "我的签证已经被批准了。", "prompt": "¿Lo han aprobado?", "options": ["Sí, ya", "Todavía no", "No se sabe"], "answer": 0, "explain": "已经被批准了 = ya lo han aprobado." },
+        { "audio": "大使馆", "options": ["dàshǐguǎn", "dàsìguǎn", "dàshíguān"], "answer": 0, "explain": "shǐ con sh retrofleja; guǎn en tercer tono." },
+        { "audio": "资格", "options": ["zīgé", "zhīgé", "cīgé"], "answer": 0, "explain": "z sin aire, con la lengua detrás de los dientes." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["证", "退"],
+      "mnemonics": {
+        "证": "讠 (palabra) + 正 (recto, correcto): palabras que dicen que algo es correcto. De ahí 证明 (demostrar), 证据 (prueba) y todos los carnés: 身份证, 学生证.",
+        "退": "辶 (camino) + 艮 (mirar atrás con dureza): dar la vuelta en el camino. Retroceder y devolver: 退钱, 退回来."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "Adverbios y auxiliares, siempre delante de 被",
+      "markdown": "Como en las frases con 把, **todo lo que matiza** (negación, tiempo, posibilidad) va **delante de 被**, nunca entre 被 y el verbo:\n\n| Qué quieres decir | Cómo |\n|---|---|\n| no ha pasado | **没**被 |\n| todavía no | **还没**被 |\n| ya ha pasado | **已经**被…了 |\n| no pasará | **不会**被 |\n| no puede pasar | **不能**被 |\n| ¡que no te…! | **别**被 |\n\nEn el esqueleto: 没 / 还没 / 已经 / 别 → *Adverbios*; 会 / 能 → *Auxiliar*; y después **被 (+ agente)** en *Con quién*.\n\n- Con 没被 **no** se pone 了 al final: 还没被批准 (no *还没被批准了).\n- Pregunta: …被批准了**没有**？ o …被批准了**吗**？",
+      "focus": ["adverb", "aux", "with"],
+      "sentences": [
+        { "slots": { "subject": { "zh": "我的签证", "py": "wǒ de qiānzhèng" }, "adverb": { "zh": "已经", "py": "yǐjīng" }, "with": { "zh": "被", "py": "bèi" }, "verb1": { "zh": "批准", "py": "pīzhǔn" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Ya me han aprobado el visado." },
+        { "slots": { "subject": { "zh": "雨果的表格", "py": "Yǔguǒ de biǎogé" }, "with": { "zh": "被大使馆", "py": "bèi dàshǐguǎn" }, "verb1": { "zh": "退回来", "py": "tuì huilai" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "La embajada le ha devuelto el formulario a Hugo." },
+        { "slots": { "subject": { "zh": "你的东西", "py": "nǐ de dōngxi" }, "adverb": { "zh": "不", "py": "bú" }, "aux": { "zh": "会", "py": "huì" }, "with": { "zh": "被人", "py": "bèi rén" }, "verb1": { "zh": "拿走", "py": "názǒu" } }, "end": "。", "es": "Nadie se llevará tus cosas." },
+        { "slots": { "subject": { "zh": "他的资格", "py": "tā de zīgé" }, "adverb": { "zh": "也", "py": "yě" }, "with": { "zh": "被", "py": "bèi" }, "verb1": { "zh": "取消", "py": "qǔxiāo" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "También le han retirado el derecho a participar." },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "adverb": { "zh": "别", "py": "bié" }, "with": { "zh": "被小偷", "py": "bèi xiǎotōu" }, "verb1": { "zh": "看见", "py": "kànjiàn" }, "object": { "zh": "你的现金", "py": "nǐ de xiànjīn" } }, "end": "！", "es": "¡Que el ladrón no te vea el dinero!" }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "我的签证", "py": "wǒ de qiānzhèng" }, "adverb": { "zh": "还没", "py": "hái méi" }, "with": { "zh": "被", "py": "bèi" }, "verb1": { "zh": "批准", "py": "pīzhǔn" } }, "end": "。", "es": "Todavía no me han aprobado el visado." },
+        { "slots": { "subject": { "zh": "这些证据", "py": "zhèxiē zhèngjù" }, "adverb": { "zh": "没", "py": "méi" }, "with": { "zh": "被警察", "py": "bèi jǐngchá" }, "verb1": { "zh": "拿走", "py": "názǒu" } }, "end": "。", "es": "La policía no se ha llevado estas pruebas." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你的签证", "py": "nǐ de qiānzhèng" }, "with": { "zh": "被", "py": "bèi" }, "verb1": { "zh": "批准", "py": "pīzhǔn" }, "particle": { "zh": "了没有", "py": "le méiyǒu" } }, "end": "？", "es": "¿Te han aprobado el visado o no?" }
+      ],
+      "mistakes": [
+        { "wrong": "我的签证被没批准。", "right": "我的签证没被批准。", "why": "La negación va delante de 被, no delante del verbo." },
+        { "wrong": "我的签证被已经批准了。", "right": "我的签证已经被批准了。", "why": "Los adverbios (已经, 也, 都) van delante de 被." },
+        { "wrong": "我的签证还没被批准了。", "right": "我的签证还没被批准。", "why": "Con 没 / 还没 no se pone 了 al final." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "En la oficina de estudiantes internacionales",
+      "lines": [
+        { "speaker": "工作人员", "zh": "你好，你要办理什么手续？", "py": "Nǐ hǎo, nǐ yào bànlǐ shénme shǒuxù?", "es": "Hola, ¿qué trámite quieres hacer?" },
+        { "speaker": "雨果", "zh": "你好。我的学生证被偷了，我想办一个新的。", "py": "Nǐ hǎo. Wǒ de xuéshengzhèng bèi tōu le, wǒ xiǎng bàn yí ge xīn de.", "es": "Hola. Me han robado el carné de estudiante y quiero hacerme uno nuevo." },
+        { "speaker": "工作人员", "zh": "好的，请先看一下这张表格，在这儿写你的名字和电话。", "py": "Hǎo de, qǐng xiān kàn yíxià zhè zhāng biǎogé, zài zhèr xiě nǐ de míngzi hé diànhuà.", "es": "Vale, primero mira este formulario y escribe aquí tu nombre y tu teléfono." },
+        { "speaker": "雨果", "zh": "还要别的证明吗？", "py": "Hái yào bié de zhèngmíng ma?", "es": "¿Hace falta algún otro justificante?" },
+        { "speaker": "工作人员", "zh": "要。你要有警察的证明，证明你的东西被偷了。", "py": "Yào. Nǐ yào yǒu jǐngchá de zhèngmíng, zhèngmíng nǐ de dōngxi bèi tōu le.", "es": "Sí. Necesitas un justificante de la policía que demuestre que te lo robaron." },
+        { "speaker": "雨果", "zh": "有，这是警察给我的证明。", "py": "Yǒu, zhè shì jǐngchá gěi wǒ de zhèngmíng.", "es": "Sí, aquí está el que me dio la policía." },
+        { "speaker": "工作人员", "zh": "好。你的护照呢？没被偷吧？", "py": "Hǎo. Nǐ de hùzhào ne? Méi bèi tōu ba?", "es": "Bien. ¿Y el pasaporte? No te lo robaron, ¿no?" },
+        { "speaker": "雨果", "zh": "没被偷，还在宿舍。如果护照丢了，要怎么办？", "py": "Méi bèi tōu, hái zài sùshè. Rúguǒ hùzhào diū le, yào zěnme bàn?", "es": "No, sigue en la residencia. ¿Y si pierdes el pasaporte, qué hay que hacer?" },
+        { "speaker": "工作人员", "zh": "那就要亲自去你们国家的大使馆办理。", "py": "Nà jiù yào qīnzì qù nǐmen guójiā de dàshǐguǎn bànlǐ.", "es": "Entonces tienes que ir en persona a la embajada de tu país." },
+        { "speaker": "雨果", "zh": "我还想问一下：我的手机被压坏了，学校的保险能退钱吗？", "py": "Wǒ hái xiǎng wèn yíxià: wǒ de shǒujī bèi yāhuài le, xuéxiào de bǎoxiǎn néng tuì qián ma?", "es": "Otra pregunta: se me aplastó el móvil, ¿el seguro de la universidad me devuelve el dinero?" },
+        { "speaker": "工作人员", "zh": "你有资格用学校的保险，可是要有证据，比如手机的照片。", "py": "Nǐ yǒu zīgé yòng xuéxiào de bǎoxiǎn, kěshì yào yǒu zhèngjù, bǐrú shǒujī de zhàopiàn.", "es": "Tienes derecho al seguro de la universidad, pero necesitas pruebas, por ejemplo fotos del móvil." },
+        { "speaker": "雨果", "zh": "我有照片。多长时间能被批准？", "py": "Wǒ yǒu zhàopiàn. Duō cháng shíjiān néng bèi pīzhǔn?", "es": "Tengo fotos. ¿Cuánto tardan en aprobarlo?" },
+        { "speaker": "工作人员", "zh": "一般一个星期。如果没被批准，我们会给你打电话。", "py": "Yìbān yí ge xīngqī. Rúguǒ méi bèi pīzhǔn, wǒmen huì gěi nǐ dǎ diànhuà.", "es": "Normalmente una semana. Si no lo aprueban, te llamamos." }
+      ],
+      "notes": "工作人员 = «el personal», cualquier empleado de una oficina o una estación. En China casi todos los trámites piden 证明 (justificantes) y 证件 (documentos), y muchos hay que hacerlos 亲自 (en persona). 怎么办？ = ¿qué hago?"
+    },
+    { "type": "exercises", "count": 16, "bank": ["g-bu-mei", "g-word-order", "g-le"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "我的签证" }, "adverb": { "zh": "还没" }, "with": { "zh": "被" }, "verb1": { "zh": "批准" } }, "end": "。", "es": "Todavía no me han aprobado el visado." }, "distractors": ["了"] },
+        { "sentence": { "slots": { "subject": { "zh": "雨果的表格" }, "adverb": { "zh": "已经" }, "with": { "zh": "被大使馆" }, "verb1": { "zh": "退回来" }, "particle": { "zh": "了" } }, "end": "。", "es": "La embajada ya le ha devuelto el formulario a Hugo." } },
+        { "sentence": { "slots": { "subject": { "zh": "你的东西" }, "adverb": { "zh": "不" }, "aux": { "zh": "会" }, "with": { "zh": "被人" }, "verb1": { "zh": "拿走" } }, "end": "。", "es": "Nadie se llevará tus cosas." }, "distractors": ["没"] },
+        { "sentence": { "slots": { "time0": { "zh": "如果护照丢了，" }, "subject": { "zh": "你" }, "adverb": { "zh": "就" }, "aux": { "zh": "要" }, "verb1": { "zh": "亲自去大使馆" }, "verb2": { "zh": "办理" }, "object": { "zh": "手续" } }, "end": "。", "es": "Si pierdes el pasaporte, tienes que ir en persona a la embajada a hacer los trámites." } }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "我的签证还没被批准。", "py": "Wǒ de qiānzhèng hái méi bèi pīzhǔn.", "es": "Todavía no me han aprobado el visado." },
+        { "zh": "我要亲自去办理手续吗？", "py": "Wǒ yào qīnzì qù bànlǐ shǒuxù ma?", "es": "¿Tengo que ir en persona a hacer los trámites?" },
+        { "zh": "这是警察给我的证明。", "py": "Zhè shì jǐngchá gěi wǒ de zhèngmíng.", "es": "Este es el justificante que me dio la policía." },
+        { "zh": "学校的保险能退钱吗？", "py": "Xuéxiào de bǎoxiǎn néng tuì qián ma?", "es": "¿El seguro de la universidad devuelve el dinero?" }
+      ],
+      "respond": [
+        { "q": { "zh": "你的签证被批准了没有？", "py": "Nǐ de qiānzhèng bèi pīzhǔn le méiyǒu?", "es": "¿Te han aprobado el visado?" }, "model": { "zh": "还没被批准，我还在等。", "py": "Hái méi bèi pīzhǔn, wǒ hái zài děng.", "es": "Todavía no, sigo esperando." } },
+        { "q": { "zh": "你要办理什么手续？", "py": "Nǐ yào bànlǐ shénme shǒuxù?", "es": "¿Qué trámite quieres hacer?" }, "model": { "zh": "我的学生证被偷了，我想办一个新的。", "py": "Wǒ de xuéshengzhèng bèi tōu le, wǒ xiǎng bàn yí ge xīn de.", "es": "Me han robado el carné de estudiante y quiero hacerme uno nuevo." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Los papeles de David",
+      "text": "大卫来上海已经一年了，这个月他要办理新的签证。他先在网上看了要什么证件：护照、照片、学校的证明，还有一张表格。他把表格写好，亲自去办公室交了。一个星期以后，他的表格被退回来了，因为他没写电话号码。大卫只能再去一次。这次工作人员说：“你的手续都办好了，可是签证还没被批准，你要再等两个星期。”大卫有点儿着急，因为他下个月要回国看家人。他问：“我的护照会被你们留下吗？”工作人员说：“会，可是你有资格拿一个证明，用这个证明可以坐飞机。”大卫还问了保险的事：去年他生病的时候，保险公司已经给他退了一半的钱。现在他明白了：在中国办手续，不能着急，也要有证据。",
+      "es": "David lleva ya un año en Shanghái y este mes tiene que tramitar el nuevo visado. Primero miró en internet qué documentos hacían falta: el pasaporte, fotos, un certificado de la universidad y un formulario. Rellenó el formulario y lo entregó en persona en la oficina. Una semana después se lo devolvieron porque no había puesto el número de teléfono. David tuvo que volver otra vez. Esta vez el empleado le dijo: «Ya tienes todos los trámites hechos, pero el visado aún no está aprobado: tienes que esperar dos semanas más». David se puso un poco nervioso, porque el mes que viene quiere volver a su país a ver a su familia. Preguntó: «¿Os vais a quedar con mi pasaporte?». El empleado respondió: «Sí, pero tienes derecho a un justificante, y con él puedes coger el avión». David también preguntó por el seguro: el año pasado, cuando se puso enfermo, la aseguradora ya le devolvió la mitad del dinero. Ahora lo tiene claro: en China, para hacer papeles no hay que ponerse nervioso… y hay que tener pruebas.",
+      "questions": [
+        { "q": "¿Por qué le devolvieron el formulario a David?", "options": ["No había escrito el teléfono", "Le faltaba el pasaporte", "Lo entregó tarde"], "answer": 0 },
+        { "q": "¿Cuánto tiene que esperar todavía?", "options": ["两个星期", "一个星期", "一个月"], "answer": 0 },
+        { "q": "¿Qué frase dice que el visado no está aprobado?", "options": ["签证还没被批准", "签证已经被批准了", "签证被退回来了"], "answer": 0 },
+        { "q": "¿Qué le devolvió el seguro el año pasado?", "options": ["La mitad del dinero", "Todo el dinero", "Nada"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

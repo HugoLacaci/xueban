@@ -3,6 +3,7 @@
  * funciones que usa el núcleo (lección por id, siguiente lección, vocabulario controlado, pools).
  */
 import type { CurriculumIndex, GrammarIndex } from "@/lib/languages/types";
+import { joinPy, joinZh } from "@/lib/course/skeleton";
 import type { GrammarPoint, Lesson, Unit } from "@/lib/course/types";
 import type { Pool, PoolSentence, PoolWord } from "@/lib/exercises/types";
 
@@ -58,6 +59,11 @@ export function buildCurriculum(opts: CurriculumOptions): { curriculum: Curricul
         }
       }
       if (step.type === "reading") for (const s of splitSentences(step.text)) out.push({ zh: s, es: "" });
+      // temario v2: frases del esqueleto, de «Construye la frase», del objetivo y de escuchar y hablar
+      if (step.type === "skeleton") for (const sk of [...step.sentences, ...(step.negative ?? []), ...(step.question ?? [])]) out.push({ zh: joinZh(sk), py: joinPy(sk), es: sk.es });
+      if (step.type === "sentence-builder") for (const it of step.items) out.push({ zh: joinZh(it.sentence), py: joinPy(it.sentence), es: it.sentence.es });
+      if (step.type === "objective") for (const l of step.canSay) out.push({ zh: l.zh, py: l.py, es: l.es });
+      if (step.type === "listen-speak") for (const l of step.shadowing) out.push({ zh: l.zh, py: l.py, es: l.es });
     }
     return out.filter((s) => s.es);
   }

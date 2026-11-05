@@ -1,0 +1,158 @@
+{
+  "id": "a2-u06-l4",
+  "title": "No tan… como tú; igual que tú: 没有…那么 y 跟…一样",
+  "zh": "我没有你这么高",
+  "goal": "Decir que algo «no es tan… como» (没有…那么 / 这么, 不如), preguntar si llega a serlo (有…吗) y decir que dos cosas son iguales o distintas (跟…一样 / 不一样, 像).",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "这么", "pinyin": "zhème", "es": "tan, así (cerca: lo de aquí, lo tuyo)" },
+    { "hanzi": "那么", "pinyin": "nàme", "es": "tan, así (lejos: lo de allí, lo de otro)" },
+    { "hanzi": "不如", "pinyin": "bùrú", "es": "no ser tan bueno como; más vale…", "note": "A 不如 B = A es peor que B." },
+    { "hanzi": "同样", "pinyin": "tóngyàng", "es": "igual, del mismo modo" },
+    { "hanzi": "相同", "pinyin": "xiāngtóng", "es": "idéntico, igual", "note": "Más formal que 一样." },
+    { "hanzi": "像", "pinyin": "xiàng", "es": "parecerse a; como", "note": "他像他爸爸 = se parece a su padre." },
+    { "hanzi": "相信", "pinyin": "xiāngxìn", "es": "creer (en), confiar en" },
+    { "hanzi": "感情", "pinyin": "gǎnqíng", "es": "sentimientos; cariño, relación", "note": "他们感情很好 = se llevan muy bien." },
+    { "hanzi": "爱情", "pinyin": "àiqíng", "es": "amor (de pareja)" },
+    { "hanzi": "心里", "pinyin": "xīnli", "es": "en el fondo, por dentro (lit. «dentro del corazón»)" },
+    { "hanzi": "心中", "pinyin": "xīnzhōng", "es": "en el corazón (más literario)" }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "我的汉语没有你这么好。", "py": "Wǒ de Hànyǔ méiyǒu nǐ zhème hǎo.", "es": "Mi chino no es tan bueno como el tuyo." },
+        { "zh": "上海的冬天有北京那么冷吗？", "py": "Shànghǎi de dōngtiān yǒu Běijīng nàme lěng ma?", "es": "¿El invierno de Shanghái es tan frío como el de Pekín?" },
+        { "zh": "我的意见跟你的不一样。", "py": "Wǒ de yìjiàn gēn nǐ de bù yíyàng.", "es": "Mi opinión es distinta de la tuya." }
+      ]
+    },
+    { "type": "vocab", "title": "Iguales y distintos", "words": ["这么", "那么", "不如", "同样", "相同", "像", "相信", "感情", "爱情", "心里", "心中"] },
+    {
+      "type": "phonetics-drill",
+      "title": "这么 / 那么 neutros y el 一 de 一样",
+      "markdown": "**这么 zhème, 那么 nàme**: el 么 es neutro, muy corto. Se acentúa la primera sílaba.\n\n**一样 yíyàng**: 一 delante de cuarto tono pasa a **segundo**. Y **不一样** se dice *bù yíyàng*: 不 va delante de 一 (que ahora es segundo tono), así que 不 se queda en cuarto.\n\n**像 xiàng / 相 xiāng**: misma sílaba; 像 (parecerse) cae, 相 (相信, 相同) es alto y plano.\n\n**心 xīn / 信 xìn**: en 相信 *xiāngxìn* la última sílaba cae.",
+      "items": [
+        { "audio": "这么", "options": ["zhème", "zhèmè", "zhéme"], "answer": 0, "explain": "这 en cuarto tono y 么 neutro." },
+        { "audio": "一样", "options": ["yíyàng", "yīyàng", "yìyàng"], "answer": 0, "explain": "一 + 4.º tono → yí." },
+        { "audio": "不一样", "options": ["bù yíyàng", "bú yíyàng", "bù yīyàng"], "answer": 0, "explain": "不 solo cambia delante de un 4.º tono; aquí va delante de yí." },
+        { "audio": "像", "options": ["xiàng", "xiāng", "qiàng"], "answer": 0, "explain": "Cuarto tono; 相 es primero." },
+        { "audio": "相信", "options": ["xiāngxìn", "xiàngxīn", "xiāngxīn"], "answer": 0, "explain": "1.º + 4.º." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["像", "心"],
+      "mnemonics": {
+        "像": "亻 (persona) + 象 (elefante): una persona que imita a un elefante… y se le parece. De ahí «parecerse».",
+        "心": "Dibujo del corazón con sus cavidades: tres gotas y una curva. Está en 心情, 关心, 心里."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "A 没有 B (那么 / 这么) + adjetivo: «no tan… como»",
+      "markdown": "Para «A **no es tan** alto **como** B», lo normal en chino es **没有**, no 不比:\n\n> 我**没有你这么**高。 = No soy tan alto como tú.\n\n**Convención del esqueleto**: «没有 + B + 那么/这么» va entero en *Adverbios*; el adjetivo, en *Verbo 1*.\n\n- **这么** si B está cerca (tú, aquí, ahora); **那么** si está lejos (él, allí, antes). Se pueden omitir: 我没有你高.\n- **Pregunta**: con **有**: 你**有**你哥哥高吗？ = ¿eres tan alto como tu hermano? (este 有 significa «llegar a»; también 王老师有三十岁吗？).\n- **不如**: A 不如 B (+ adj) = «A es peor que B». Es un poco más formal.\n- **No mezcles** 没有 con 多了 / 一点儿: *没有他高一点儿* es un error.\n- **不比** existe, pero es otra cosa: 我不比他高 = no soy más alto que él (más o menos igual).",
+      "focus": ["adverb"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "我的汉语", "py": "wǒ de Hànyǔ" }, "adverb": { "zh": "没有你这么", "py": "méiyǒu nǐ zhème" }, "verb1": { "zh": "好", "py": "hǎo" } }, "end": "。", "es": "Mi chino no es tan bueno como el tuyo.", "esOrder": [{ "text": "Mi chino", "slot": "subject" }, { "text": "no es tan bueno", "slot": "verb1" }, { "text": "como el tuyo", "slot": "adverb" }] },
+        { "slots": { "subject": { "zh": "今天", "py": "jīntiān" }, "adverb": { "zh": "没有昨天那么", "py": "méiyǒu zuótiān nàme" }, "verb1": { "zh": "冷", "py": "lěng" } }, "end": "。", "es": "Hoy no hace tanto frío como ayer." },
+        { "slots": { "subject": { "zh": "坐公交车", "py": "zuò gōngjiāochē" }, "adverb": { "zh": "没有坐地铁", "py": "méiyǒu zuò dìtiě" }, "verb1": { "zh": "快", "py": "kuài" } }, "end": "。", "es": "El autobús no es tan rápido como el metro." },
+        { "slots": { "subject": { "zh": "上海的冬天", "py": "Shànghǎi de dōngtiān" }, "adverb": { "zh": "没有北京那么", "py": "méiyǒu Běijīng nàme" }, "verb1": { "zh": "冷", "py": "lěng" } }, "end": "。", "es": "El invierno de Shanghái no es tan frío como el de Pekín." },
+        { "slots": { "subject": { "zh": "这家的菜", "py": "zhè jiā de cài" }, "adverb": { "zh": "不如那家的", "py": "bùrú nà jiā de" }, "verb1": { "zh": "好吃", "py": "hǎochī" } }, "end": "。", "es": "La comida de este sitio no está tan rica como la del otro." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "不比他", "py": "bù bǐ tā" }, "verb1": { "zh": "高", "py": "gāo" } }, "end": "。", "es": "No soy más alto que él (somos más o menos iguales)." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "adverb": { "zh": "有你哥哥", "py": "yǒu nǐ gēge" }, "verb1": { "zh": "高", "py": "gāo" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿Eres tan alto como tu hermano?" },
+        { "slots": { "subject": { "zh": "上海的冬天", "py": "Shànghǎi de dōngtiān" }, "adverb": { "zh": "有北京那么", "py": "yǒu Běijīng nàme" }, "verb1": { "zh": "冷", "py": "lěng" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿El invierno de Shanghái es tan frío como el de Pekín?" }
+      ],
+      "mistakes": [
+        { "wrong": "我没有你很高。", "right": "我没有你高。 / 我没有你这么高。", "why": "Igual que con 比: nada de 很. Si quieres reforzar, 这么 / 那么." },
+        { "wrong": "我比你不高。", "right": "我没有你高。", "why": "«No tan alto como tú» es 没有; el 不 nunca va entre B y el adjetivo." },
+        { "wrong": "今天没有昨天冷多了。", "right": "今天没有昨天那么冷。", "why": "多了 / 一点儿 solo van con 比, no con 没有." }
+      ]
+    },
+    {
+      "type": "skeleton",
+      "title": "A 跟 B 一样 (+ adjetivo): «igual (de…) que»",
+      "markdown": "**A 跟 B 一样** = A es igual que B. Con un adjetivo detrás: **A 跟 B 一样 + adj** = A es igual de … que B.\n\n**Convención del esqueleto**: «跟 + B + 一样» va en *Adverbios* y el adjetivo en *Verbo 1* (跟那个房间一样 | 大). Sin adjetivo, 一样 hace de predicado: «跟你的» en *Adverbios* y 一样 en *Verbo 1*. **Negativa**: 不 va **delante de 一样**: 跟你的**不**一样 (en el esqueleto, «跟你的不» + 一样).\n\n- Ni 很 ni 非常 delante del adjetivo: *跟你一样很高*.\n- **像**: A 像 B = A se parece a B (他像他爸爸).\n- **相同** y **同样** son más formales: 我们的爱好相同; 他们同样喜欢…",
+      "focus": ["adverb", "verb1"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "这个房间", "py": "zhège fángjiān" }, "adverb": { "zh": "跟那个房间一样", "py": "gēn nàge fángjiān yíyàng" }, "verb1": { "zh": "大", "py": "dà" } }, "end": "。", "es": "Esta habitación es igual de grande que esa.", "esOrder": [{ "text": "Esta habitación", "slot": "subject" }, { "text": "es igual de grande", "slot": "verb1" }, { "text": "que esa", "slot": "adverb" }] },
+        { "slots": { "subject": { "zh": "我的手机", "py": "wǒ de shǒujī" }, "adverb": { "zh": "跟你的", "py": "gēn nǐ de" }, "verb1": { "zh": "一样", "py": "yíyàng" } }, "end": "。", "es": "Mi móvil es igual que el tuyo." },
+        { "slots": { "subject": { "zh": "安娜", "py": "Ānnà" }, "adverb": { "zh": "跟我一样", "py": "gēn wǒ yíyàng" }, "verb1": { "zh": "喜欢", "py": "xǐhuan" }, "object": { "zh": "中国菜", "py": "Zhōngguó cài" } }, "end": "。", "es": "A Ana le gusta la comida china tanto como a mí." },
+        { "slots": { "subject": { "zh": "他", "py": "tā" }, "verb1": { "zh": "像", "py": "xiàng" }, "object": { "zh": "他爸爸", "py": "tā bàba" } }, "end": "。", "es": "Se parece a su padre." },
+        { "slots": { "subject": { "zh": "我们的爱好", "py": "wǒmen de àihào" }, "verb1": { "zh": "相同", "py": "xiāngtóng" } }, "end": "。", "es": "Tenemos las mismas aficiones." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "我的意见", "py": "wǒ de yìjiàn" }, "adverb": { "zh": "跟你的不", "py": "gēn nǐ de bù" }, "verb1": { "zh": "一样", "py": "yíyàng" } }, "end": "。", "es": "Mi opinión es distinta de la tuya." },
+        { "slots": { "subject": { "zh": "他", "py": "tā" }, "adverb": { "zh": "不", "py": "bú" }, "verb1": { "zh": "像", "py": "xiàng" }, "object": { "zh": "他妈妈", "py": "tā māma" } }, "end": "。", "es": "No se parece a su madre." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "上海的菜", "py": "Shànghǎi de cài" }, "adverb": { "zh": "跟北京的", "py": "gēn Běijīng de" }, "verb1": { "zh": "一样", "py": "yíyàng" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿La comida de Shanghái es igual que la de Pekín?" },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "像", "py": "xiàng" }, "object": { "zh": "你爸爸还是你妈妈", "py": "nǐ bàba háishi nǐ māma" } }, "end": "？", "es": "¿Te pareces a tu padre o a tu madre?" }
+      ],
+      "mistakes": [
+        { "wrong": "我跟你一样很高。", "right": "我跟你一样高。", "why": "Detrás de 一样 va el adjetivo solo, sin 很." },
+        { "wrong": "我不跟你一样。", "right": "我跟你不一样。", "why": "Lo que se niega es 一样, así que 不 va justo delante de 一样." },
+        { "wrong": "我一样高跟你。", "right": "我跟你一样高。", "why": "跟 + B va delante, como todos los complementos de comparación." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "¿Son iguales los amigos chinos?",
+      "lines": [
+        { "speaker": "大卫", "zh": "雨果，你觉得中国朋友跟西班牙朋友一样吗？", "py": "Yǔguǒ, nǐ juéde Zhōngguó péngyou gēn Xībānyá péngyou yíyàng ma?", "es": "Hugo, ¿crees que los amigos chinos son iguales que los españoles?" },
+        { "speaker": "雨果", "zh": "不太一样。西班牙人说话的声音很大，中国朋友没有他们那么大声。", "py": "Bú tài yíyàng. Xībānyá rén shuōhuà de shēngyīn hěn dà, Zhōngguó péngyou méiyǒu tāmen nàme dàshēng.", "es": "No mucho. Los españoles hablan muy alto, y los amigos chinos no tanto." },
+        { "speaker": "大卫", "zh": "美国朋友跟西班牙朋友一样热情！", "py": "Měiguó péngyou gēn Xībānyá péngyou yíyàng rèqíng!", "es": "¡Los amigos estadounidenses son igual de cálidos que los españoles!" },
+        { "speaker": "雨果", "zh": "我觉得，中国朋友心里同样很热情，他们不说。", "py": "Wǒ juéde, Zhōngguó péngyou xīnli tóngyàng hěn rèqíng, tāmen bù shuō.", "es": "Yo creo que los amigos chinos son igual de cariñosos por dentro; lo que pasa es que no lo dicen." },
+        { "speaker": "大卫", "zh": "对，小李是这样。他不说，心里很关心我们。", "py": "Duì, Xiǎo Lǐ shì zhèyàng. Tā bù shuō, xīnli hěn guānxīn wǒmen.", "es": "Sí, Xiao Li es así. No lo dice, pero se preocupa mucho por nosotros." },
+        { "speaker": "雨果", "zh": "你跟小李的爱好相同吗？", "py": "Nǐ gēn Xiǎo Lǐ de àihào xiāngtóng ma?", "es": "¿Xiao Li y tú tenéis las mismas aficiones?" },
+        { "speaker": "大卫", "zh": "不一样。他喜欢看书，我喜欢打球。他没有我这么喜欢打球。", "py": "Bù yíyàng. Tā xǐhuan kàn shū, wǒ xǐhuan dǎ qiú. Tā méiyǒu wǒ zhème xǐhuan dǎ qiú.", "es": "No. A él le gusta leer y a mí jugar a la pelota. No le gusta tanto como a mí." },
+        { "speaker": "雨果", "zh": "安娜说，你很像小李的哥哥！", "py": "Ānnà shuō, nǐ hěn xiàng Xiǎo Lǐ de gēge!", "es": "¡Ana dice que te pareces mucho al hermano de Xiao Li!" },
+        { "speaker": "大卫", "zh": "不像吧！他哥哥比我高多了。", "py": "Bú xiàng ba! Tā gēge bǐ wǒ gāo duō le.", "es": "¡Qué va! Su hermano es mucho más alto que yo." },
+        { "speaker": "雨果", "zh": "我相信安娜，她看人最认真。", "py": "Wǒ xiāngxìn Ānnà, tā kàn rén zuì rènzhēn.", "es": "Yo me fío de Ana: es la que mejor se fija en la gente." }
+      ],
+      "notes": "心里 es muy frecuente para hablar de lo que uno siente sin decirlo: 他心里很高兴. Para gustos o actividades también sirve la comparación: 他没有我这么喜欢打球."
+    },
+    { "type": "exercises", "count": 18, "bank": ["u09", "u10", "u08", "g-bu-mei"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "我的汉语" }, "adverb": { "zh": "没有你这么" }, "verb1": { "zh": "好" } }, "end": "。", "es": "Mi chino no es tan bueno como el tuyo." }, "distractors": ["很", "不"] },
+        { "sentence": { "slots": { "subject": { "zh": "这个房间" }, "adverb": { "zh": "跟那个房间一样" }, "verb1": { "zh": "大" } }, "end": "。", "es": "Esta habitación es igual de grande que esa." }, "distractors": ["很"] },
+        { "sentence": { "slots": { "subject": { "zh": "我的意见" }, "adverb": { "zh": "跟你的不" }, "verb1": { "zh": "一样" } }, "end": "。", "es": "Mi opinión es distinta de la tuya." }, "distractors": ["没"] },
+        { "sentence": { "slots": { "time0": { "zh": "今年" }, "subject": { "zh": "上海的冬天" }, "adverb": { "zh": "没有去年那么" }, "verb1": { "zh": "冷" } }, "end": "。", "es": "Este año el invierno de Shanghái no es tan frío como el del año pasado." }, "distractors": ["多了"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "我的汉语没有你这么好。", "py": "Wǒ de Hànyǔ méiyǒu nǐ zhème hǎo.", "es": "Mi chino no es tan bueno como el tuyo." },
+        { "zh": "上海的冬天没有北京那么冷。", "py": "Shànghǎi de dōngtiān méiyǒu Běijīng nàme lěng.", "es": "El invierno de Shanghái no es tan frío como el de Pekín." },
+        { "zh": "我跟你一样高。", "py": "Wǒ gēn nǐ yíyàng gāo.", "es": "Soy igual de alto que tú." },
+        { "zh": "他很像他爸爸。", "py": "Tā hěn xiàng tā bàba.", "es": "Se parece mucho a su padre." }
+      ],
+      "respond": [
+        { "q": { "zh": "你有你哥哥高吗？", "py": "Nǐ yǒu nǐ gēge gāo ma?", "es": "¿Eres tan alto como tu hermano?" }, "model": { "zh": "没有，我没有他那么高。", "py": "Méiyǒu, wǒ méiyǒu tā nàme gāo.", "es": "No, no soy tan alto como él." } },
+        { "q": { "zh": "你像你爸爸还是你妈妈？", "py": "Nǐ xiàng nǐ bàba háishi nǐ māma?", "es": "¿Te pareces a tu padre o a tu madre?" }, "model": { "zh": "我像我妈妈。", "py": "Wǒ xiàng wǒ māma.", "es": "Me parezco a mi madre." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Dos amigos muy distintos",
+      "text": "大卫和小李是好朋友，他们一点儿也不一样。大卫是美国人，个子很高，说话的声音很大。小李没有大卫那么高，说话的声音也没有他那么大。大卫喜欢打球，小李喜欢看书和看爱情电影。他们的爱好不相同，感情很好。他们同样喜欢吃上海菜。小李说：“朋友跟家人一样重要。”大卫也相信：好朋友在心中，不在嘴上。",
+      "es": "David y Xiao Li son buenos amigos, pero no se parecen en nada. David es estadounidense, alto, y habla muy alto. Xiao Li no es tan alto como David y tampoco habla tan alto. A David le gusta jugar a la pelota; a Xiao Li, leer y ver películas románticas. No tienen las mismas aficiones, pero se llevan muy bien. A los dos les gusta igual la comida de Shanghái. Xiao Li dice: «Los amigos son tan importantes como la familia». David también lo cree: los buenos amigos se llevan en el corazón, no en la boca.",
+      "questions": [
+        { "q": "¿Quién es más alto?", "options": ["大卫", "小李", "Igual"], "answer": 0 },
+        { "q": "¿Qué le gusta a Xiao Li?", "options": ["看书和看爱情电影", "打球", "唱歌"], "answer": 0 },
+        { "q": "¿Qué les gusta a los dos?", "options": ["吃上海菜", "打球", "看爱情电影"], "answer": 0 },
+        { "q": "Según Xiao Li, los amigos son…", "options": ["跟家人一样重要", "没有家人重要", "比家人重要"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

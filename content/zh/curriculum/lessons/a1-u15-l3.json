@@ -1,0 +1,132 @@
+{
+  "id": "a1-u15-l3",
+  "title": "Tren de alta velocidad, avión y DiDi: ¿cuánto se tarda?",
+  "zh": "坐高铁要五个小时",
+  "goal": "Preguntar y decir cuánto tiempo dura algo (多长时间, 一个小时): la duración va detrás del verbo.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "火车", "pinyin": "huǒchē", "es": "tren", "note": "Lit. «carro de fuego»." },
+    { "hanzi": "高铁", "pinyin": "gāotiě", "es": "tren de alta velocidad", "note": "Abreviatura de 高速铁路 «vía férrea de alta velocidad»." },
+    { "hanzi": "飞机", "pinyin": "fēijī", "es": "avión" },
+    { "hanzi": "飞", "pinyin": "fēi", "es": "volar" },
+    { "hanzi": "机场", "pinyin": "jīchǎng", "es": "aeropuerto" },
+    { "hanzi": "车站", "pinyin": "chēzhàn", "es": "estación (de tren o autobús)" },
+    { "hanzi": "票", "pinyin": "piào", "es": "billete, entrada", "note": "Se cuenta con 张: 一张票." },
+    { "hanzi": "车票", "pinyin": "chēpiào", "es": "billete (de tren o autobús)" },
+    { "hanzi": "机票", "pinyin": "jīpiào", "es": "billete de avión" },
+    { "hanzi": "打车", "pinyin": "dǎchē", "es": "coger un taxi" },
+    { "hanzi": "滴滴", "pinyin": "Dīdī", "es": "DiDi (app de coches con conductor)", "note": "用滴滴打车 = pedir un coche con DiDi." },
+    { "hanzi": "司机", "pinyin": "sījī", "es": "conductor, taxista" },
+    { "hanzi": "多长时间", "pinyin": "duō cháng shíjiān", "es": "¿cuánto tiempo?", "note": "Lit. «cuán largo tiempo». Sinónimo: 多久 (U13)." }
+  ],
+  "extraVocab": ["高铁", "滴滴"],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "坐高铁要五个小时。", "py": "Zuò gāotiě yào wǔ ge xiǎoshí.", "es": "En tren de alta velocidad se tarda cinco horas." },
+        { "zh": "坐飞机要多长时间？", "py": "Zuò fēijī yào duō cháng shíjiān?", "es": "¿Cuánto se tarda en avión?" },
+        { "zh": "我每天走二十分钟。", "py": "Wǒ měitiān zǒu èrshí fēnzhōng.", "es": "Ando veinte minutos cada día." }
+      ]
+    },
+    { "type": "vocab", "title": "Viajes largos", "words": ["火车", "高铁", "飞机", "飞", "机场", "车站", "票", "车票", "机票", "打车", "滴滴", "司机", "多长时间"] },
+    {
+      "type": "phonetics-drill",
+      "title": "f y h: 飞 fēi, 火 huǒ",
+      "markdown": "- **f** es como la «f» española: labio inferior contra los dientes de arriba.\n- **h** no es muda como en español: suena parecida a nuestra **«j»**, pero más suave y más atrás, sin rascar la garganta. 火车 *huǒchē* suena casi «juó-che».\n\nNo las confundas: 飞 *fēi* (volar) no es 黑 *hēi* (negro). Y en 机场 *jīchǎng* la j es suave, sin soplo; la q, en cambio, sopla.",
+      "items": [
+        { "audio": "飞机", "options": ["fēijī", "huījī", "fēiqī"], "answer": 0, "explain": "f labial; 机 con j, sin soplo." },
+        { "audio": "火车", "options": ["huǒchē", "fǒchē", "huǒzhē"], "answer": 0, "explain": "h como una «j» suave; ch con soplo." },
+        { "audio": "机场", "options": ["jīchǎng", "jīcháng", "qīchǎng"], "answer": 0, "explain": "场 es tercer tono: chǎng." },
+        { "audio": "滴滴", "options": ["Dīdī", "Tītī", "Dídí"], "answer": 0, "explain": "Dos primeros tonos, altos y planos; d sin soplo." },
+        { "audio": "高铁", "options": ["gāotiě", "kāotiě", "gāotiē"], "answer": 0, "explain": "g sin soplo; 铁 en tercer tono." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["飞", "机"],
+      "mnemonics": {
+        "飞": "Un pájaro con las alas abiertas. La forma tradicional 飛 tenía dos pares de alas; la simplificada conserva un ala y las plumas.",
+        "机": "木 (madera) + 几 (jī, pista del sonido): una máquina, que al principio era de madera (un telar). Hoy está en 飞机, 机场, 司机."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "La duración, detrás del verbo",
+      "markdown": "Estreno de un hueco nuevo en el esqueleto: el **complemento**, justo **detrás del verbo**. Hoy lo usamos para la **duración** (cuánto tiempo).\n\n- **Momento** (cuándo): **delante** del verbo → 我**每天**走。\n- **Duración** (cuánto tiempo): **detrás** del verbo → 我每天走**二十分钟**。\n\nEn español la duración puede ir casi en cualquier sitio («Cada día ando veinte minutos», «Ando veinte minutos cada día»); en chino tiene un sitio fijo.\n\n**¿Cuánto se tarda?** → **要 + duración**: 坐高铁**要**五个小时。 Pregunta: 要**多长时间**？ (o 要多久？). La respuesta ocupa el mismo hueco que la pregunta.\n\n**Si el verbo lleva objeto**, se repite el verbo: 坐地铁**坐**四十分钟. (También se oye 坐四十分钟地铁; lo verás en A2.)\n\n**Cómo se dice la duración**:\n- horas: 一**个**小时, 两**个**小时, 半**个**小时, 一个半小时 (con 个);\n- minutos: 二十分钟 (sin 个);\n- ojo: **八点** = a las ocho (momento); **八个小时** = ocho horas (duración). Y 二十**分** es «y veinte» en la hora; para la duración, 二十**分钟**.",
+      "focus": ["complement"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "time": { "zh": "每天", "py": "měitiān" }, "verb1": { "zh": "走", "py": "zǒu" }, "complement": { "zh": "二十分钟", "py": "èrshí fēnzhōng" } }, "end": "。", "es": "Ando veinte minutos cada día.", "esOrder": [{ "text": "Ando", "slot": "verb1" }, { "text": "veinte minutos", "slot": "complement" }, { "text": "cada día", "slot": "time" }] },
+        { "slots": { "subject": { "zh": "雨果", "py": "Yǔguǒ" }, "time": { "zh": "每天", "py": "měitiān" }, "verb1": { "zh": "睡", "py": "shuì" }, "complement": { "zh": "七个小时", "py": "qī ge xiǎoshí" } }, "end": "。", "es": "Hugo duerme siete horas cada día." },
+        { "slots": { "verb1": { "zh": "坐高铁", "py": "zuò gāotiě" }, "verb2": { "zh": "要", "py": "yào" }, "complement": { "zh": "五个小时", "py": "wǔ ge xiǎoshí" } }, "end": "。", "es": "En tren de alta velocidad se tarda cinco horas.", "esOrder": [{ "text": "En tren de alta velocidad", "slot": "verb1" }, { "text": "se tarda", "slot": "verb2" }, { "text": "cinco horas", "slot": "complement" }] },
+        { "slots": { "subject": { "zh": "我们", "py": "wǒmen" }, "verb1": { "zh": "休息", "py": "xiūxi" }, "complement": { "zh": "十分钟", "py": "shí fēnzhōng" }, "particle": { "zh": "吧", "py": "ba" } }, "end": "。", "es": "Descansemos diez minutos." },
+        { "slots": { "subject": { "zh": "小李", "py": "Xiǎo Lǐ" }, "verb1": { "zh": "坐地铁", "py": "zuò dìtiě" }, "verb2": { "zh": "坐", "py": "zuò" }, "complement": { "zh": "四十分钟", "py": "sìshí fēnzhōng" } }, "end": "。", "es": "Xiao Li va cuarenta minutos en metro." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "不", "py": "bù" }, "aux": { "zh": "想", "py": "xiǎng" }, "verb1": { "zh": "走", "py": "zǒu" }, "complement": { "zh": "一个小时", "py": "yí ge xiǎoshí" } }, "end": "。", "es": "No quiero andar una hora." }
+      ],
+      "question": [
+        { "slots": { "verb1": { "zh": "坐飞机", "py": "zuò fēijī" }, "verb2": { "zh": "要", "py": "yào" }, "complement": { "zh": "多长时间", "py": "duō cháng shíjiān" } }, "end": "？", "es": "¿Cuánto se tarda en avión?" },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "time": { "zh": "每天", "py": "měitiān" }, "verb1": { "zh": "睡", "py": "shuì" }, "complement": { "zh": "几个小时", "py": "jǐ ge xiǎoshí" } }, "end": "？", "es": "¿Cuántas horas duermes cada día?" }
+      ],
+      "mistakes": [
+        { "wrong": "我二十分钟走。", "right": "我走二十分钟。", "why": "La duración va detrás del verbo; delante solo va el momento (每天, 八点)." },
+        { "wrong": "我每天走二十分。", "right": "我每天走二十分钟。", "why": "二十分 es «y veinte» en la hora del reloj; para la duración, 分钟." },
+        { "wrong": "坐高铁要五小时。", "right": "坐高铁要五个小时。", "why": "小时 necesita el clasificador 个: 五个小时 (pero 二十分钟, sin 个)." },
+        { "wrong": "我坐地铁四十分钟。", "right": "我坐地铁坐四十分钟。", "why": "Si el verbo tiene objeto (地铁), se repite el verbo antes de la duración." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Un fin de semana en Pekín",
+      "lines": [
+        { "speaker": "雨果", "zh": "小李，这个周末我想去北京。坐火车要多长时间？", "py": "Xiǎo Lǐ, zhège zhōumò wǒ xiǎng qù Běijīng. Zuò huǒchē yào duō cháng shíjiān?", "es": "Xiao Li, este fin de semana quiero ir a Pekín. ¿Cuánto se tarda en tren?" },
+        { "speaker": "小李", "zh": "坐高铁要五个小时，很快。", "py": "Zuò gāotiě yào wǔ ge xiǎoshí, hěn kuài.", "es": "En tren de alta velocidad, cinco horas. Es muy rápido." },
+        { "speaker": "雨果", "zh": "坐飞机呢？", "py": "Zuò fēijī ne?", "es": "¿Y en avión?" },
+        { "speaker": "小李", "zh": "坐飞机要两个小时。机场离这儿很远，打车要一个小时。", "py": "Zuò fēijī yào liǎng ge xiǎoshí. Jīchǎng lí zhèr hěn yuǎn, dǎchē yào yí ge xiǎoshí.", "es": "En avión, dos horas. Pero el aeropuerto está muy lejos de aquí: en taxi se tarda una hora." },
+        { "speaker": "雨果", "zh": "那我坐高铁。车站远吗？", "py": "Nà wǒ zuò gāotiě. Chēzhàn yuǎn ma?", "es": "Entonces voy en tren. ¿Está lejos la estación?" },
+        { "speaker": "小李", "zh": "不远。你用滴滴打车，二十分钟到。", "py": "Bù yuǎn. Nǐ yòng Dīdī dǎchē, èrshí fēnzhōng dào.", "es": "No. Pides un coche con DiDi y en veinte minutos estás allí." },
+        { "speaker": "雨果", "zh": "好！我在网上买车票。", "py": "Hǎo! Wǒ zài wǎngshang mǎi chēpiào.", "es": "¡Vale! Compro el billete por internet." },
+        { "speaker": "小李", "zh": "对，你看一下，星期六早上有高铁票。", "py": "Duì, nǐ kàn yíxià, xīngqīliù zǎoshang yǒu gāotiě piào.", "es": "Eso es. Mira: el sábado por la mañana hay billetes." }
+      ],
+      "notes": "El 高铁 une Shanghái y Pekín (unos 1300 km) en 4,5–6 horas. Los billetes se compran por internet con el pasaporte, y en la estación se pasa el pasaporte por el torno. 滴滴 es la app china de coches con conductor; para pedir uno se dice 用滴滴打车. Al conductor (司机) se le suele llamar 师傅 shīfu, «maestro»."
+    },
+    { "type": "exercises", "count": 15, "bank": ["g-word-order", "g-question-words", "g-lai-qu", "u08"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "我" }, "time": { "zh": "每天" }, "verb1": { "zh": "走" }, "complement": { "zh": "二十分钟" } }, "end": "。", "es": "Ando veinte minutos cada día." }, "distractors": ["点"] },
+        { "sentence": { "slots": { "verb1": { "zh": "坐高铁" }, "verb2": { "zh": "要" }, "complement": { "zh": "五个小时" } }, "end": "。", "es": "En tren de alta velocidad se tarda cinco horas." } },
+        { "sentence": { "slots": { "subject": { "zh": "我们" }, "verb1": { "zh": "休息" }, "complement": { "zh": "十分钟" }, "particle": { "zh": "吧" } }, "end": "。", "es": "Descansemos diez minutos." }, "distractors": ["吗"] },
+        { "sentence": { "slots": { "time0": { "zh": "这个周末" }, "subject": { "zh": "我" }, "aux": { "zh": "想" }, "with": { "zh": "跟安娜一起" }, "verb1": { "zh": "坐高铁" }, "verb2": { "zh": "去" }, "object": { "zh": "北京" } }, "end": "。", "es": "Este fin de semana quiero ir a Pekín en tren de alta velocidad con Anna." }, "distractors": ["骑"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "坐高铁要五个小时。", "py": "Zuò gāotiě yào wǔ ge xiǎoshí.", "es": "En tren de alta velocidad se tarda cinco horas." },
+        { "zh": "坐飞机要多长时间？", "py": "Zuò fēijī yào duō cháng shíjiān?", "es": "¿Cuánto se tarda en avión?" },
+        { "zh": "我每天走二十分钟。", "py": "Wǒ měitiān zǒu èrshí fēnzhōng.", "es": "Ando veinte minutos cada día." },
+        { "zh": "我用滴滴打车。", "py": "Wǒ yòng Dīdī dǎchē.", "es": "Pido un coche con DiDi." }
+      ],
+      "respond": [
+        { "q": { "zh": "你每天睡几个小时？", "py": "Nǐ měitiān shuì jǐ ge xiǎoshí?", "es": "¿Cuántas horas duermes al día?" }, "model": { "zh": "我每天睡七个小时。", "py": "Wǒ měitiān shuì qī ge xiǎoshí.", "es": "Duermo siete horas al día." } },
+        { "q": { "zh": "从宿舍到地铁站要多长时间？", "py": "Cóng sùshè dào dìtiězhàn yào duō cháng shíjiān?", "es": "¿Cuánto se tarda de la residencia a la estación de metro?" }, "model": { "zh": "走路要十分钟。", "py": "Zǒulù yào shí fēnzhōng.", "es": "Andando, diez minutos." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Hugo va a Pekín",
+      "text": "这个星期六雨果去北京。他不坐飞机，机场太远了。他坐高铁，要五个小时。早上七点，他用滴滴打车去车站，二十分钟到。在高铁上，他看书，也睡一个小时。",
+      "es": "Este sábado Hugo va a Pekín. No va en avión: el aeropuerto está demasiado lejos. Va en tren de alta velocidad, que tarda cinco horas. A las siete de la mañana pide un coche con DiDi para ir a la estación y llega en veinte minutos. En el tren lee y también duerme una hora.",
+      "questions": [
+        { "q": "¿Por qué no va en avión?", "options": ["El aeropuerto está demasiado lejos", "Le da miedo volar", "No hay billetes"], "answer": 0 },
+        { "q": "¿Cuánto tarda el tren?", "options": ["Cinco horas", "Dos horas", "Veinte minutos"], "answer": 0 },
+        { "q": "¿Cuánto duerme en el tren?", "options": ["Una hora", "Cinco horas", "Nada"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

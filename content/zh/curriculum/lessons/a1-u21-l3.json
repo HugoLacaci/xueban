@@ -1,0 +1,134 @@
+{
+  "id": "a1-u21-l3",
+  "title": "Matizar: 挺, 不错, 差不多, 好多",
+  "zh": "挺好的！",
+  "goal": "Matizar opiniones y cantidades como un nativo: 挺…的, 不错, 差不多, 有一点儿 / 一点点, 好多 / 许多 / 不少.",
+  "minutes": 14,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "挺", "pinyin": "tǐng", "es": "bastante, muy (coloquial)", "note": "Suele ir con 的 al final: 挺好的, 挺冷的." },
+    { "hanzi": "挺好", "pinyin": "tǐng hǎo", "es": "muy bien, bastante bien", "note": "La respuesta más típica a «¿qué tal?»: 挺好的！" },
+    { "hanzi": "不错", "pinyin": "búcuò", "es": "bastante bien, nada mal", "note": "Lit. «no está mal»: es un elogio." },
+    { "hanzi": "差不多", "pinyin": "chàbuduō", "es": "casi igual; más o menos", "note": "A 跟 B 差不多 = A y B son casi iguales." },
+    { "hanzi": "有一点儿", "pinyin": "yǒu yìdiǎnr", "es": "un poco (algo negativo)", "note": "= 有点儿 (U8), forma completa: 有一点儿累." },
+    { "hanzi": "一点点", "pinyin": "yìdiǎndiǎn", "es": "un poquito", "note": "我会说一点点汉语 = hablo un poquito de chino." },
+    { "hanzi": "好多", "pinyin": "hǎo duō", "es": "muchísimos, un montón", "note": "好多人 = un montón de gente (好 + adj = «muy», U8)." },
+    { "hanzi": "许多", "pinyin": "xǔduō", "es": "muchos (más escrito)", "note": "许多人 = muchas personas." },
+    { "hanzi": "不少", "pinyin": "bù shǎo", "es": "bastantes, no pocos", "note": "不少同学 = bastantes compañeros." }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "上海挺好的，好多地方都很有意思。", "py": "Shànghǎi tǐng hǎo de, hǎo duō dìfang dōu hěn yǒu yìsi.", "es": "Shanghái está muy bien: un montón de sitios son muy interesantes." },
+        { "zh": "我会说一点点汉语。", "py": "Wǒ huì shuō yìdiǎndiǎn Hànyǔ.", "es": "Hablo un poquito de chino." },
+        { "zh": "西班牙的冬天跟上海差不多。", "py": "Xībānyá de dōngtiān gēn Shànghǎi chàbuduō.", "es": "El invierno de España es más o menos como el de Shanghái." }
+      ]
+    },
+    { "type": "vocab", "title": "Para matizar", "words": ["挺", "挺好", "不错", "差不多", "有一点儿", "一点点", "好多", "许多", "不少"] },
+    {
+      "type": "phonetics-drill",
+      "title": "Ritmo: 差不多, 一点点, 挺好",
+      "markdown": "Las palabras de tres sílabas tienen su ritmo:\n\n- **差不多** *chàbuduō*: el 不 del medio es **neutro** y muy corto: *CHÀ-bu-DUŌ*.\n- **一点点** *yìdiǎndiǎn*: 一 delante de tercer tono → *yì*; y 3 + 3 dentro: el primer 点 suena casi como segundo tono.\n- **挺好** *tǐng hǎo*: 3 + 3 → *tíng hǎo*.\n- **不错** *búcuò*: 不 + cuarto tono → *bú*.",
+      "items": [
+        { "audio": "差不多", "options": ["chàbuduō", "chàbùduō", "chābuduō"], "answer": 0, "explain": "不 neutro en medio." },
+        { "audio": "挺好", "prompt": "¿Cómo suena 挺 aquí?", "options": ["tíng (sube)", "tǐng (baja y sube)", "tìng (cae)"], "answer": 0, "explain": "3 + 3 → 2 + 3." },
+        { "audio": "不错", "options": ["búcuò", "bùcuò", "búzuò"], "answer": 0, "explain": "不 + 4.º → bú; c con aire." },
+        { "audio": "一点点", "options": ["yìdiǎndiǎn", "yīdiǎndiǎn", "yídiǎndiǎn"], "answer": 0, "explain": "一 delante de 3.º → yì." },
+        { "audio": "许多", "options": ["xǔduō", "xūduō", "shǔduō"], "answer": 0, "explain": "xu = x + ü." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["挺", "错"],
+      "mnemonics": {
+        "挺": "扌 (mano) + 廷 (que da el sonido, tíng → tǐng): ponerse derecho, estirarse. De «sobresalir» viene «bastante, muy».",
+        "错": "钅 (metal) + 昔: antiguamente, incrustar oro en el metal; de «mezclar» pasó a «equivocarse». 不错 = no está equivocado → está bien."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "Grados y cantidades",
+      "markdown": "Todos estos matices van en el hueco de los **adverbios** (delante del adjetivo o verbo) o dentro del **objeto** (delante del nombre):\n\n| Adverbio (+ adj) | Ejemplo |\n|---|---|\n| 挺 … (的) | 上海的冬天**挺**冷**的**。 |\n| 有一点儿 / 有点儿 (algo negativo) | 我**有一点儿**累。 |\n| 不太 (no muy) | 今天**不太**冷。 |\n\n| Cantidad (+ nombre, en el objeto) | Ejemplo |\n|---|---|\n| 好多 / 许多 / 很多 | 食堂里有**好多人**。 |\n| 不少 | 我们班有**不少外国人**。 |\n| 一点点 / 一点儿 | 我会说**一点点汉语**。 |\n\n**不错** y **差不多** funcionan como adjetivos: van en el hueco del verbo. 你的汉语**不错**！ A **跟** B **差不多**.\n\nCuidado: **有一点儿** + algo **negativo** (累, 贵, 冷); para lo positivo, 挺 o 很: 我**挺**高兴的.",
+      "focus": ["adverb", "object"],
+      "sentences": [
+        { "slots": { "subject": { "zh": "上海的冬天", "py": "Shànghǎi de dōngtiān" }, "adverb": { "zh": "挺", "py": "tǐng" }, "verb1": { "zh": "冷", "py": "lěng" }, "particle": { "zh": "的", "py": "de" } }, "end": "。", "es": "El invierno de Shanghái es bastante frío." },
+        { "slots": { "subject": { "zh": "你的汉语", "py": "nǐ de Hànyǔ" }, "verb1": { "zh": "不错", "py": "búcuò" } }, "end": "！", "es": "¡Tu chino no está nada mal!" },
+        { "slots": { "subject": { "zh": "西班牙的冬天", "py": "Xībānyá de dōngtiān" }, "with": { "zh": "跟上海", "py": "gēn Shànghǎi" }, "verb1": { "zh": "差不多", "py": "chàbuduō" } }, "end": "。", "es": "El invierno de España es más o menos como el de Shanghái." },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "有一点儿", "py": "yǒu yìdiǎnr" }, "verb1": { "zh": "累", "py": "lèi" } }, "end": "。", "es": "Estoy un poco cansado." },
+        { "slots": { "subject": { "zh": "食堂里", "py": "shítáng li" }, "verb1": { "zh": "有", "py": "yǒu" }, "object": { "zh": "好多人", "py": "hǎo duō rén" } }, "end": "。", "es": "En el comedor hay un montón de gente." },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "aux": { "zh": "会", "py": "huì" }, "verb1": { "zh": "说", "py": "shuō" }, "object": { "zh": "一点点汉语", "py": "yìdiǎndiǎn Hànyǔ" } }, "end": "。", "es": "Hablo un poquito de chino." }
+      ],
+      "negative": [
+        { "slots": { "time0": { "zh": "今天", "py": "jīntiān" }, "adverb": { "zh": "不太", "py": "bú tài" }, "verb1": { "zh": "冷", "py": "lěng" } }, "end": "。", "es": "Hoy no hace mucho frío." },
+        { "slots": { "subject": { "zh": "这两个汉字", "py": "zhè liǎng ge Hànzì" }, "adverb": { "zh": "不", "py": "bú" }, "verb1": { "zh": "一样", "py": "yíyàng" } }, "end": "。", "es": "Estos dos caracteres no son iguales." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你的身体", "py": "nǐ de shēntǐ" }, "verb1": { "zh": "怎么样", "py": "zěnmeyàng" } }, "end": "？", "es": "¿Qué tal estás de salud?" },
+        { "slots": { "subject": { "zh": "你们班", "py": "nǐmen bān" }, "verb1": { "zh": "有", "py": "yǒu" }, "object": { "zh": "多少外国人", "py": "duōshao wàiguó rén" } }, "end": "？", "es": "¿Cuántos extranjeros hay en tu clase?" }
+      ],
+      "mistakes": [
+        { "wrong": "我很有一点儿累。", "right": "我有一点儿累。", "why": "有一点儿 ya es el grado: no se junta con 很." },
+        { "wrong": "我有一点儿高兴。", "right": "我挺高兴的。", "why": "有一点儿 suena a queja; con cosas positivas usa 挺 o 很." },
+        { "wrong": "你的汉语是不错。", "right": "你的汉语不错。", "why": "不错 es como un adjetivo: sin 是." },
+        { "wrong": "许多的人", "right": "许多人", "why": "许多 / 好多 / 很多 + nombre van sin 的." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "¿Qué tal en Shanghái?",
+      "lines": [
+        { "speaker": "王老师", "zh": "雨果，上海怎么样？你喜欢吗？", "py": "Yǔguǒ, Shànghǎi zěnmeyàng? Nǐ xǐhuan ma?", "es": "Hugo, ¿qué tal Shanghái? ¿Te gusta?" },
+        { "speaker": "雨果", "zh": "挺好的！好多地方都很有意思。", "py": "Tǐng hǎo de! Hǎo duō dìfang dōu hěn yǒu yìsi.", "es": "¡Muy bien! Un montón de sitios son muy interesantes." },
+        { "speaker": "王老师", "zh": "你的汉语也不错！", "py": "Nǐ de Hànyǔ yě búcuò!", "es": "¡Y tu chino tampoco está nada mal!" },
+        { "speaker": "雨果", "zh": "谢谢老师！我会说一点点。听还有一点儿难。", "py": "Xièxie lǎoshī! Wǒ huì shuō yìdiǎndiǎn. Tīng hái yǒu yìdiǎnr nán.", "es": "¡Gracias, profesora! Hablo un poquito. Entender todavía me cuesta un poco." },
+        { "speaker": "王老师", "zh": "冬天快到了，你有大衣吗？", "py": "Dōngtiān kuài dào le, nǐ yǒu dàyī ma?", "es": "Ya casi llega el invierno, ¿tienes abrigo?" },
+        { "speaker": "雨果", "zh": "有。我觉得西班牙北边的冬天跟上海差不多。", "py": "Yǒu. Wǒ juéde Xībānyá běibian de dōngtiān gēn Shànghǎi chàbuduō.", "es": "Sí. Creo que el invierno del norte de España es más o menos como el de Shanghái." },
+        { "speaker": "王老师", "zh": "上海冬天常常下雨，挺冷的。", "py": "Shànghǎi dōngtiān chángcháng xià yǔ, tǐng lěng de.", "es": "En Shanghái llueve mucho en invierno y hace bastante frío." },
+        { "speaker": "雨果", "zh": "没问题！我们班有不少外国人，我们常常一起出去。", "py": "Méi wèntí! Wǒmen bān yǒu bù shǎo wàiguó rén, wǒmen chángcháng yìqǐ chūqu.", "es": "¡No hay problema! En mi clase hay bastantes extranjeros y salimos juntos a menudo." },
+        { "speaker": "王老师", "zh": "太好了！", "py": "Tài hǎo le!", "es": "¡Estupendo!" }
+      ],
+      "notes": "Cuando un chino te dice 你的汉语很好！ o 不错！ lo correcto es quitarle importancia: 哪里哪里 o 还差得远 (lo verás más adelante). De momento, 谢谢 + 我会说一点点 queda muy bien."
+    },
+    { "type": "exercises", "count": 16, "bank": ["g-hen-adj", "g-yidianr-youdianr", "g-tai-le", "u13"] },
+    {
+      "type": "sentence-builder",
+      "title": "Construye la frase completa",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "上海的冬天" }, "adverb": { "zh": "挺" }, "verb1": { "zh": "冷" }, "particle": { "zh": "的" } }, "end": "。", "es": "El invierno de Shanghái es bastante frío." }, "distractors": ["是"] },
+        { "sentence": { "slots": { "time0": { "zh": "今天中午" }, "subject": { "zh": "食堂里" }, "adverb": { "zh": "也" }, "verb1": { "zh": "有" }, "object": { "zh": "好多学生" } }, "end": "。", "es": "Hoy a mediodía también hay un montón de estudiantes en el comedor." }, "distractors": ["的"] },
+        { "sentence": { "slots": { "subject": { "zh": "我们班" }, "time": { "zh": "每个星期" }, "adverb": { "zh": "都" }, "with": { "zh": "跟不少中国同学一起" }, "verb1": { "zh": "去饭馆" }, "verb2": { "zh": "吃" }, "object": { "zh": "饭" } }, "end": "。", "es": "Todas las semanas mi clase va a comer a un restaurante con bastantes compañeros chinos." } },
+        { "sentence": { "slots": { "subject": { "zh": "雨果" }, "time": { "zh": "现在" }, "aux": { "zh": "能" }, "with": { "zh": "跟小李" }, "verb1": { "zh": "说" }, "object": { "zh": "一点点汉语" } }, "end": "。", "es": "Ahora Hugo puede hablar un poquito de chino con Xiao Li." } },
+        { "sentence": { "slots": { "time0": { "zh": "昨天晚上" }, "subject": { "zh": "我" }, "adverb": { "zh": "有一点儿" }, "verb1": { "zh": "不舒服" } }, "end": "。", "es": "Anoche no me encontraba muy bien." }, "distractors": ["很"] },
+        { "sentence": { "slots": { "subject": { "zh": "这个饭馆的菜" }, "adverb": { "zh": "挺" }, "verb1": { "zh": "好吃" }, "particle": { "zh": "的" } }, "end": "。", "es": "La comida de este restaurante está bastante buena." }, "distractors": ["很"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "挺好的！", "py": "Tǐng hǎo de!", "es": "¡Muy bien!" },
+        { "zh": "你的汉语不错！", "py": "Nǐ de Hànyǔ búcuò!", "es": "¡Tu chino no está nada mal!" },
+        { "zh": "我会说一点点汉语。", "py": "Wǒ huì shuō yìdiǎndiǎn Hànyǔ.", "es": "Hablo un poquito de chino." },
+        { "zh": "这两个字差不多。", "py": "Zhè liǎng ge zì chàbuduō.", "es": "Estos dos caracteres son casi iguales." }
+      ],
+      "respond": [
+        { "q": { "zh": "你最近怎么样？", "py": "Nǐ zuìjìn zěnmeyàng?", "es": "¿Qué tal últimamente?" }, "model": { "zh": "挺好的，有一点儿累。", "py": "Tǐng hǎo de, yǒu yìdiǎnr lèi.", "es": "Muy bien, aunque un poco cansado." } },
+        { "q": { "zh": "你会说汉语吗？", "py": "Nǐ huì shuō Hànyǔ ma?", "es": "¿Hablas chino?" }, "model": { "zh": "会说一点点。", "py": "Huì shuō yìdiǎndiǎn.", "es": "Un poquito." } },
+        { "q": { "zh": "你们班有多少外国人？", "py": "Nǐmen bān yǒu duōshao wàiguó rén?", "es": "¿Cuántos extranjeros hay en tu clase?" }, "model": { "zh": "不少，差不多十个。", "py": "Bù shǎo, chàbuduō shí ge.", "es": "Bastantes: unos diez." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Hugo en Shanghái",
+      "text": "雨果在上海学习汉语。他觉得上海挺好的，好多地方都很有意思。他的汉语也不错，会说一点点，听还有一点儿难。他们班有许多外国学生，也有不少中国同学。上海的冬天跟西班牙北边差不多，有一点儿冷，常常下雨。",
+      "es": "Hugo estudia chino en Shanghái. Le parece que la ciudad está muy bien: un montón de sitios son muy interesantes. Su chino tampoco está nada mal: habla un poquito, aunque entender todavía le cuesta un poco. En su clase hay muchos estudiantes extranjeros y también bastantes compañeros chinos. El invierno de Shanghái es más o menos como el del norte de España: hace un poco de frío y llueve a menudo.",
+      "questions": [
+        { "q": "¿Qué le parece Shanghái a Hugo?", "options": ["挺好的", "有一点儿难", "不太好"], "answer": 0 },
+        { "q": "¿Qué le cuesta todavía?", "options": ["听", "说", "写"], "answer": 0 },
+        { "q": "¿A qué se parece el invierno de Shanghái?", "options": ["Al del norte de España", "Al de Pekín", "Al verano español"], "answer": 0 },
+        { "q": "¿Qué frase está bien?", "options": ["我有一点儿累。", "我很有一点儿累。", "我有一点儿高兴。"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

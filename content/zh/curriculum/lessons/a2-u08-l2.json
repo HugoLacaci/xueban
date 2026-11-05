@@ -1,0 +1,135 @@
+{
+  "id": "a2-u08-l2",
+  "title": "¡Sube! ¡Baja!: verbo + 来 / 去",
+  "zh": "你上来吧",
+  "goal": "Indicar movimiento hacia ti o lejos de ti con 来 / 去 (上来, 下去, 进来, 过来, 回宿舍去) y colocar bien el lugar.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "过来", "pinyin": "guòlai", "es": "venir (hacia aquí), acercarse", "note": "过去 = ir hacia allí. 来 / 去 en tono neutro." },
+    { "hanzi": "走开", "pinyin": "zǒukāi", "es": "irse, apartarse", "note": "走开！ = ¡vete!, ¡apártate! (brusco)." },
+    { "hanzi": "站住", "pinyin": "zhànzhù", "es": "¡alto!, pararse (en seco)" },
+    { "hanzi": "停", "pinyin": "tíng", "es": "parar, detenerse; aparcar" },
+    { "hanzi": "层", "pinyin": "céng", "es": "planta, piso (de un edificio)", "note": "三层 = tercera planta (= 三楼)." },
+    { "hanzi": "大门", "pinyin": "dàmén", "es": "puerta principal, entrada" },
+    { "hanzi": "银行", "pinyin": "yínháng", "es": "banco (entidad)", "note": "行 aquí se lee háng." },
+    { "hanzi": "广场", "pinyin": "guǎngchǎng", "es": "plaza" },
+    { "hanzi": "上面", "pinyin": "shàngmian", "es": "encima, arriba" },
+    { "hanzi": "下面", "pinyin": "xiàmian", "es": "debajo, abajo" },
+    { "hanzi": "里面", "pinyin": "lǐmian", "es": "dentro" },
+    { "hanzi": "外面", "pinyin": "wàimian", "es": "fuera" }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "我在三层，你上来吧。", "py": "Wǒ zài sān céng, nǐ shànglai ba.", "es": "Estoy en la tercera planta: sube." },
+        { "zh": "小李回宿舍去了。", "py": "Xiǎo Lǐ huí sùshè qu le.", "es": "Xiao Li se ha vuelto a la residencia." },
+        { "zh": "你过来一下！", "py": "Nǐ guòlai yíxià!", "es": "¡Ven un momento!" }
+      ]
+    },
+    { "type": "vocab", "title": "Arriba, abajo, dentro, fuera", "words": ["过来", "走开", "站住", "停", "层", "大门", "银行", "广场", "上面", "下面", "里面", "外面"] },
+    {
+      "type": "phonetics-drill",
+      "title": "来 y 去 sin fuerza: 进来 jìnlai, 出去 chūqu",
+      "markdown": "Detrás de un verbo de movimiento, **来** y **去** casi siempre se dicen en **tono neutro**: cortos, flojos, sin dibujar tono.\n\n- 进**来** *jìnlai*, 出**去** *chūqu*, 上**来** *shànglai*, 下**去** *xiàqu*, 过**来** *guòlai*, 回**去** *huíqu*.\n- El peso de la palabra cae en la **primera** sílaba: **JÌN**-lai, **SHÀNG**-lai.\n\nCompara con 来 y 去 como verbos sueltos, con su tono completo: 你来！ *Nǐ lái!* / 我去。 *Wǒ qù.*\n\nY dos sílabas parecidas de hoy: **层 céng** (2.º, con *c* aspirada: «ts» con aire) y **站住 zhànzhù** (dos 4.º seguidos, como dos órdenes).",
+      "items": [
+        { "audio": "进来", "options": ["jìnlai", "jīnlái", "jìnlǎi"], "answer": 0, "explain": "进 en 4.º tono y 来 neutro, muy corto." },
+        { "audio": "下去", "options": ["xiàqu", "xiáqù", "xiāqu"], "answer": 0, "explain": "下 cae (4.º) y 去 queda flojo." },
+        { "audio": "层", "options": ["céng", "zéng", "cén"], "answer": 0, "explain": "c = «ts» con aire; -eng con la boca abierta y sonido nasal al final." },
+        { "audio": "站住", "options": ["zhànzhù", "zhānzhū", "zànzù"], "answer": 0, "explain": "zh con la lengua hacia atrás; dos cuartos tonos." },
+        { "audio": "你来！", "prompt": "¿Cómo suena 来 aquí?", "options": ["Con su tono (2.º, sube)", "Neutro, flojo"], "answer": 0, "explain": "Como verbo suelto 来 conserva el 2.º tono; solo pierde el tono detrás de otro verbo." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["停", "层"],
+      "mnemonics": {
+        "停": "亻 (persona) + 亭 (pabellón del camino): el viajero que se detiene en el pabellón para descansar → parar.",
+        "层": "尸 (aquí, un techo o una casa) + 云 (nubes): pisos que se apilan uno encima de otro como capas de nubes → planta, capa."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "Verbo + 来 / 去: hacia mí o lejos de mí",
+      "markdown": "En chino casi siempre se dice **hacia dónde** va el movimiento respecto a quien habla:\n\n- **来** = hacia el hablante (hacia aquí): 上来 «sube (aquí arriba)», 进来 «entra», 过来 «ven».\n- **去** = lejos del hablante (hacia allí): 下去 «baja (allí abajo)», 出去 «sal», 回去 «vuelve (allí)».\n\nSi estás en el tercer piso y tu amigo en la calle, le dices **你上来吧**; si estás en la calle, **我上去**.\n\n**¿Dónde va el lugar?** Entre el verbo y 来 / 去:\n\n> 回**宿舍**去 · 进**教室**来 · 上**楼**来 (nunca *回去宿舍*).\n\n**Convención del esqueleto**: sin lugar, el bloque entero va en **Verbo 1** (上来, 回去). Con lugar, el verbo va en **Verbo 1**, el lugar en **Objeto** y 来 / 去 en **Complemento**: 回 · 宿舍 · 去.",
+      "focus": ["verb1", "complement"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "上来", "py": "shànglai" }, "particle": { "zh": "吧", "py": "ba" } }, "end": "。", "es": "Sube (aquí arriba)." },
+        { "slots": { "subject": { "zh": "小李", "py": "Xiǎo Lǐ" }, "verb1": { "zh": "回", "py": "huí" }, "object": { "zh": "宿舍", "py": "sùshè" }, "complement": { "zh": "去", "py": "qu" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Xiao Li se ha vuelto a la residencia.", "esOrder": [{ "text": "Xiao Li", "slot": "subject" }, { "text": "se ha vuelto", "slot": "verb1" }, { "text": "(allí)", "slot": "complement" }, { "text": "a la residencia", "slot": "object" }] },
+        { "slots": { "subject": { "zh": "王老师", "py": "Wáng lǎoshī" }, "verb1": { "zh": "进", "py": "jìn" }, "object": { "zh": "教室", "py": "jiàoshì" }, "complement": { "zh": "来", "py": "lai" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "La profesora Wang ha entrado en el aula." },
+        { "slots": { "subject": { "zh": "我们", "py": "wǒmen" }, "time": { "zh": "现在", "py": "xiànzài" }, "verb1": { "zh": "下去", "py": "xiàqu" }, "particle": { "zh": "吧", "py": "ba" } }, "end": "。", "es": "Bajemos ya." },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "过来", "py": "guòlai" }, "complement": { "zh": "一下", "py": "yíxià" } }, "end": "！", "es": "¡Ven un momento!" },
+        { "slots": { "subject": { "zh": "大卫", "py": "Dàwèi" }, "verb1": { "zh": "上", "py": "shàng" }, "object": { "zh": "楼", "py": "lóu" }, "complement": { "zh": "去", "py": "qu" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "David ha subido (al piso de arriba)." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "他", "py": "tā" }, "adverb": { "zh": "不", "py": "bù" }, "aux": { "zh": "想", "py": "xiǎng" }, "verb1": { "zh": "回", "py": "huí" }, "object": { "zh": "家", "py": "jiā" }, "complement": { "zh": "去", "py": "qu" } }, "end": "。", "es": "No quiere volver a casa." },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "adverb": { "zh": "别", "py": "bié" }, "verb1": { "zh": "走开", "py": "zǒukāi" } }, "end": "！", "es": "¡No te vayas!" }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "time": { "zh": "什么时候", "py": "shénme shíhou" }, "verb1": { "zh": "回", "py": "huí" }, "object": { "zh": "西班牙", "py": "Xībānyá" }, "complement": { "zh": "去", "py": "qu" } }, "end": "？", "es": "¿Cuándo vuelves a España?" },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "aux": { "zh": "能", "py": "néng" }, "verb1": { "zh": "下来", "py": "xiàlai" }, "complement": { "zh": "一下", "py": "yíxià" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿Puedes bajar un momento?" }
+      ],
+      "mistakes": [
+        { "wrong": "他回去宿舍了。", "right": "他回宿舍去了。 / 他回宿舍了。", "why": "El lugar va entre el verbo y 去; también puedes quitar 去." },
+        { "wrong": "我进来教室了。", "right": "我进教室来了。", "why": "Lo mismo con 来: 进 + lugar + 来." },
+        { "wrong": "（Estás en tu cuarto y llaman a la puerta）你进去吧。", "right": "你进来吧。", "why": "Si tú estás dentro, el otro viene hacia ti: 来. 去 sería «entra allí», lejos de ti." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "En el banco de la plaza",
+      "lines": [
+        { "speaker": "小李", "zh": "喂，雨果，你在哪儿？", "py": "Wéi, Yǔguǒ, nǐ zài nǎr?", "es": "¿Sí? Hugo, ¿dónde estás?" },
+        { "speaker": "雨果", "zh": "我在广场上，在银行大门外面。", "py": "Wǒ zài guǎngchǎng shang, zài yínháng dàmén wàimian.", "es": "Estoy en la plaza, fuera, en la puerta del banco." },
+        { "speaker": "小李", "zh": "银行在三层，你上来吧。", "py": "Yínháng zài sān céng, nǐ shànglai ba.", "es": "El banco está en la tercera planta: sube." },
+        { "speaker": "雨果", "zh": "好。电梯在哪儿？", "py": "Hǎo. Diàntī zài nǎr?", "es": "Vale. ¿Dónde está el ascensor?" },
+        { "speaker": "小李", "zh": "你进来，电梯就在右边。", "py": "Nǐ jìnlai, diàntī jiù zài yòubian.", "es": "Entra; el ascensor está justo a la derecha." },
+        { "speaker": "雨果", "zh": "我到三层了。你在哪儿？", "py": "Wǒ dào sān céng le. Nǐ zài nǎr?", "es": "Ya estoy en la tercera. ¿Dónde estás tú?" },
+        { "speaker": "小李", "zh": "我在银行里面。你过来吧，我看见你了。", "py": "Wǒ zài yínháng lǐmian. Nǐ guòlai ba, wǒ kànjiàn nǐ le.", "es": "Dentro del banco. Ven, que ya te veo." },
+        { "speaker": "雨果", "zh": "你的事做完了吗？", "py": "Nǐ de shì zuò wán le ma?", "es": "¿Has terminado lo tuyo?" },
+        { "speaker": "小李", "zh": "做完了。我们下去吧，在广场上喝杯咖啡。", "py": "Zuò wán le. Wǒmen xiàqu ba, zài guǎngchǎng shang hē bēi kāfēi.", "es": "Sí. Bajemos y tomamos un café en la plaza." },
+        { "speaker": "雨果", "zh": "好啊。停！你的手机还在桌子上面！", "py": "Hǎo a. Tíng! Nǐ de shǒujī hái zài zhuōzi shàngmian!", "es": "Venga. ¡Para! ¡Tu móvil sigue encima de la mesa!" },
+        { "speaker": "小李", "zh": "啊，谢谢你！", "py": "A, xièxie nǐ!", "es": "¡Ay, gracias!" }
+      ],
+      "notes": "Por teléfono, 来 y 去 dependen de dónde está cada uno: Xiao Li, arriba, dice 你上来吧; Hugo, abajo, contestaría 我上去. En China las plantas se cuentan desde la calle: 一层 es la planta baja española, y 三层 es nuestro «segundo piso»."
+    },
+    { "type": "exercises", "count": 16, "bank": ["g-lai-qu", "u07", "u08"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "你" }, "verb1": { "zh": "上来" }, "particle": { "zh": "吧" } }, "end": "。", "es": "Sube." }, "distractors": ["去"] },
+        { "sentence": { "slots": { "subject": { "zh": "小李" }, "verb1": { "zh": "回" }, "object": { "zh": "宿舍" }, "complement": { "zh": "去" }, "particle": { "zh": "了" } }, "end": "。", "es": "Xiao Li se ha vuelto a la residencia." }, "distractors": ["来"] },
+        { "sentence": { "slots": { "subject": { "zh": "王老师" }, "verb1": { "zh": "进" }, "object": { "zh": "教室" }, "complement": { "zh": "来" }, "particle": { "zh": "了" } }, "end": "。", "es": "La profesora Wang ha entrado en el aula." } },
+        { "sentence": { "slots": { "time0": { "zh": "今天晚上" }, "subject": { "zh": "我们" }, "aux": { "zh": "要" }, "with": { "zh": "跟大卫一起" }, "verb1": { "zh": "回" }, "object": { "zh": "学校" }, "complement": { "zh": "去" } }, "end": "。", "es": "Esta noche vamos a volver con David a la universidad." }, "distractors": ["来"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "你上来吧。", "py": "Nǐ shànglai ba.", "es": "Sube." },
+        { "zh": "我们下去吧。", "py": "Wǒmen xiàqu ba.", "es": "Bajemos." },
+        { "zh": "你进来吧，外面很冷。", "py": "Nǐ jìnlai ba, wàimian hěn lěng.", "es": "Entra, que fuera hace mucho frío." },
+        { "zh": "小李回宿舍去了。", "py": "Xiǎo Lǐ huí sùshè qu le.", "es": "Xiao Li se ha vuelto a la residencia." }
+      ],
+      "respond": [
+        { "q": { "zh": "我在楼下，你能下来吗？", "py": "Wǒ zài lóu xià, nǐ néng xiàlai ma?", "es": "Estoy abajo, ¿puedes bajar?" }, "model": { "zh": "能，我现在下去。", "py": "Néng, wǒ xiànzài xiàqu.", "es": "Sí, ahora bajo." } },
+        { "q": { "zh": "你什么时候回西班牙去？", "py": "Nǐ shénme shíhou huí Xībānyá qu?", "es": "¿Cuándo vuelves a España?" }, "model": { "zh": "我明年七月回去。", "py": "Wǒ míngnián qī yuè huíqu.", "es": "Vuelvo el próximo julio." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "La plaza de la universidad",
+      "text": "我们学校东边有一个大广场。广场上面有很多人，有的在跳舞，有的在散步。广场北边有一座大楼，一层是超市，三层是银行。今天下午我去银行换钱。我到了大楼外面，给小李打电话。小李说：“我在银行里面，你上来吧！”我坐电梯上去了。换完钱，我们下去，在广场上喝了一杯咖啡。",
+      "es": "Al este de nuestra universidad hay una plaza grande. En la plaza hay mucha gente: unos bailan y otros pasean. En el lado norte de la plaza hay un edificio alto: en la planta baja hay un supermercado y en la tercera, un banco. Esta tarde he ido al banco a cambiar dinero. Al llegar fuera del edificio, he llamado a Xiao Li. Xiao Li me ha dicho: «Estoy dentro del banco, ¡sube!». He subido en ascensor. Después de cambiar el dinero, hemos bajado y nos hemos tomado un café en la plaza.",
+      "questions": [
+        { "q": "¿En qué planta está el banco?", "options": ["三层", "一层", "二层"], "answer": 0 },
+        { "q": "¿Qué hace la gente en la plaza?", "options": ["Bailar y pasear", "Comprar fruta", "Jugar al baloncesto"], "answer": 0 },
+        { "q": "¿Por qué dice Xiao Li 你上来吧 y no 你上去吧?", "options": ["Porque él está arriba", "Porque Hugo está arriba", "Porque hay ascensor"], "answer": 0, "explain": "来 = hacia el que habla: Xiao Li está en la tercera planta." },
+        { "q": "¿Qué hacen al final?", "options": ["Tomar un café en la plaza", "Volver a la residencia", "Ir al supermercado"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

@@ -1,0 +1,133 @@
+{
+  "id": "a1-u16-l4",
+  "title": "Pagar con 微信 y 支付宝: repaso de las compras",
+  "zh": "可以用微信吗？",
+  "goal": "Preguntar cómo se puede pagar (可以用…吗), pagar con el móvil o con tarjeta y resolver una compra completa, también con precios grandes.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "用", "pinyin": "yòng", "es": "usar; con (un medio)", "note": "用微信付钱 = pagar con WeChat." },
+    { "hanzi": "卡", "pinyin": "kǎ", "es": "tarjeta", "note": "Préstamo del inglés «card»." },
+    { "hanzi": "信用卡", "pinyin": "xìnyòngkǎ", "es": "tarjeta de crédito" },
+    { "hanzi": "银行卡", "pinyin": "yínhángkǎ", "es": "tarjeta bancaria (de débito)" },
+    { "hanzi": "微信支付", "pinyin": "Wēixìn zhīfù", "es": "WeChat Pay" },
+    { "hanzi": "支付宝", "pinyin": "Zhīfùbǎo", "es": "Alipay" },
+    { "hanzi": "扫码", "pinyin": "sǎomǎ", "es": "escanear el código (QR)", "note": "Repaso de la U9." },
+    { "hanzi": "网购", "pinyin": "wǎnggòu", "es": "comprar por internet" },
+    { "hanzi": "淘宝", "pinyin": "Táobǎo", "es": "Taobao (tienda en línea)" }
+  ],
+  "extraVocab": ["微信支付", "支付宝", "网购", "淘宝"],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "可以用微信吗？", "py": "Kěyǐ yòng Wēixìn ma?", "es": "¿Se puede pagar con WeChat?" },
+        { "zh": "我用支付宝付钱。", "py": "Wǒ yòng Zhīfùbǎo fù qián.", "es": "Pago con Alipay." },
+        { "zh": "这个电脑一共三千二百块。", "py": "Zhège diànnǎo yígòng sānqiān èrbǎi kuài.", "es": "Este ordenador son tres mil doscientos yuanes en total." }
+      ]
+    },
+    { "type": "vocab", "title": "Pagar en China", "words": ["用", "卡", "信用卡", "银行卡", "微信支付", "支付宝", "扫码", "网购", "淘宝"] },
+    {
+      "type": "phonetics-drill",
+      "title": "-n y -ng: 银行, 信用卡",
+      "markdown": "En español la «n» final casi no cambia; en chino **-n** y **-ng** son palabras distintas:\n\n- **-n**: la punta de la lengua toca detrás de los dientes de arriba (como en «pan»): 银 *yín*, 信 *xìn*.\n- **-ng**: la lengua se queda **atrás**, la boca abierta, como la «n» de «tengo»: 行 *háng*, 用 *yòng*, 网 *wǎng*.\n\nY de paso: en 扫码 *sǎomǎ* hay 3.º + 3.º, así que 扫 suena como un 2.º tono.",
+      "items": [
+        { "audio": "银行", "options": ["yínháng", "yíngháng", "yínhán"], "answer": 0, "explain": "银 -n, 行 -ng." },
+        { "audio": "信用卡", "options": ["xìnyòngkǎ", "xìngyòngkǎ", "xìnyònkǎ"], "answer": 0, "explain": "信 -n, 用 -ng." },
+        { "audio": "网购", "options": ["wǎnggòu", "wǎngòu", "wǎnggòng"], "answer": 0, "explain": "网 -ng, y 购 termina en -ou." },
+        { "audio": "扫码", "prompt": "¿Cómo suena 扫 aquí?", "options": ["Sube, como un 2.º tono", "Baja y sube entero", "Cae"], "answer": 0, "explain": "3.º + 3.º → 2.º + 3.º." },
+        { "audio": "支付宝", "options": ["Zhīfùbǎo", "Zīfùbǎo", "Zhīfúbǎo"], "answer": 0, "explain": "zh (lengua atrás) + fù (4.º) + bǎo (3.º)." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["卡", "用"],
+      "mnemonics": {
+        "卡": "上 (arriba) + 下 (abajo): algo atascado entre arriba y abajo (卡住 «atascarse»). Por el sonido, se usó para la «card» inglesa: 卡 kǎ.",
+        "用": "En la forma antigua, un recipiente o un cubo de madera: algo que se usa. Hoy: 用微信, 有用 (útil), 不用 (no hace falta)."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "用 + medio + 付钱; 可以用…吗？",
+      "markdown": "**用 + medio + verbo**: es otra fila de verbos, como 坐地铁去学校: primero **con qué** (用微信), después **qué haces** (付钱). En español el medio va detrás («pago **con WeChat**»).\n\n**¿Se puede pagar con…?** → **可以用 + medio + 吗？** (可以用信用卡吗？). Negativa: **不能用** / **不可以用**.\n\n**En China** se paga casi todo con el móvil: 微信支付 o 支付宝. O escaneas tú el código del comercio (扫码), o el cajero escanea el código de pago de tu app. Hoy los extranjeros también pueden vincular a las dos apps una tarjeta de su país.\n\n**Repaso de la unidad**: 多少钱 · 三块一个 · 有点儿贵 · 便宜一点儿 · 太贵了 · 给我… · 再来一个 · 一共 · 只.",
+      "focus": ["verb1", "verb2"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "verb1": { "zh": "用微信", "py": "yòng Wēixìn" }, "verb2": { "zh": "付钱", "py": "fù qián" } }, "end": "。", "es": "Pago con WeChat.", "esOrder": [{ "text": "(Yo)", "slot": "subject" }, { "text": "pago", "slot": "verb2" }, { "text": "con WeChat", "slot": "verb1" }] },
+        { "slots": { "subject": { "zh": "安娜", "py": "Ānnà" }, "verb1": { "zh": "用支付宝", "py": "yòng Zhīfùbǎo" }, "verb2": { "zh": "扫码", "py": "sǎomǎ" } }, "end": "。", "es": "Anna escanea el código con Alipay." },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "常常", "py": "chángcháng" }, "place": { "zh": "在淘宝", "py": "zài Táobǎo" }, "verb1": { "zh": "买", "py": "mǎi" }, "object": { "zh": "东西", "py": "dōngxi" } }, "end": "。", "es": "A menudo compro cosas en Taobao." },
+        { "slots": { "subject": { "zh": "这个超市", "py": "zhège chāoshì" }, "aux": { "zh": "可以", "py": "kěyǐ" }, "verb1": { "zh": "用", "py": "yòng" }, "object": { "zh": "信用卡", "py": "xìnyòngkǎ" } }, "end": "。", "es": "En este supermercado se puede pagar con tarjeta de crédito." },
+        { "slots": { "subject": { "zh": "这个电脑", "py": "zhège diànnǎo" }, "adverb": { "zh": "一共", "py": "yígòng" }, "object": { "zh": "三千八百块", "py": "sānqiān bābǎi kuài" } }, "end": "。", "es": "Este ordenador son tres mil ochocientos yuanes en total." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "这个小店", "py": "zhège xiǎo diàn" }, "adverb": { "zh": "不", "py": "bù" }, "aux": { "zh": "能", "py": "néng" }, "verb1": { "zh": "用", "py": "yòng" }, "object": { "zh": "信用卡", "py": "xìnyòngkǎ" } }, "end": "。", "es": "En esta tienda pequeña no se puede pagar con tarjeta de crédito." }
+      ],
+      "question": [
+        { "slots": { "aux": { "zh": "可以", "py": "kěyǐ" }, "verb1": { "zh": "用", "py": "yòng" }, "object": { "zh": "微信", "py": "Wēixìn" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿Se puede pagar con WeChat?" },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "用什么", "py": "yòng shénme" }, "verb2": { "zh": "付钱", "py": "fù qián" } }, "end": "？", "es": "¿Con qué pagas?" }
+      ],
+      "mistakes": [
+        { "wrong": "我付钱用微信。", "right": "我用微信付钱。", "why": "El medio (用微信) va antes de la acción, como 坐地铁去…" },
+        { "wrong": "可以我用微信吗？", "right": "我可以用微信吗？", "why": "可以 va detrás del sujeto, delante del verbo (o sin sujeto: 可以用微信吗？)." },
+        { "wrong": "二千块", "right": "两千块", "why": "Delante de 千 y 万, el 2 es 两 (repaso de la U4)." },
+        { "wrong": "这个电脑是一共三千块。", "right": "这个电脑一共三千块。", "why": "Con precios no hace falta 是; 一共 va directamente delante del número." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Un ordenador nuevo",
+      "lines": [
+        { "speaker": "服务员", "zh": "这个电脑三千八百块。", "py": "Zhège diànnǎo sānqiān bābǎi kuài.", "es": "Este ordenador cuesta tres mil ochocientos yuanes." },
+        { "speaker": "雨果", "zh": "有点儿贵。有便宜一点儿的吗？", "py": "Yǒudiǎnr guì. Yǒu piányi yìdiǎnr de ma?", "es": "Es un poco caro. ¿Tiene alguno más barato?" },
+        { "speaker": "服务员", "zh": "那个三千二百块，也很好。", "py": "Nàge sānqiān èrbǎi kuài, yě hěn hǎo.", "es": "Ese cuesta tres mil doscientos, y también es muy bueno." },
+        { "speaker": "雨果", "zh": "好，我要那个。可以用信用卡吗？", "py": "Hǎo, wǒ yào nàge. Kěyǐ yòng xìnyòngkǎ ma?", "es": "Vale, me llevo ese. ¿Puedo pagar con tarjeta de crédito?" },
+        { "speaker": "服务员", "zh": "可以。银行卡、微信、支付宝都可以。", "py": "Kěyǐ. Yínhángkǎ, Wēixìn, Zhīfùbǎo dōu kěyǐ.", "es": "Sí. Tarjeta, WeChat, Alipay… todo vale." },
+        { "speaker": "雨果", "zh": "我用支付宝。我扫码吗？", "py": "Wǒ yòng Zhīfùbǎo. Wǒ sǎomǎ ma?", "es": "Pago con Alipay. ¿Escaneo yo el código?" },
+        { "speaker": "服务员", "zh": "对，你扫这个码。一共三千二百块。", "py": "Duì, nǐ sǎo zhège mǎ. Yígòng sānqiān èrbǎi kuài.", "es": "Sí, escanee este código. Son tres mil doscientos en total." },
+        { "speaker": "雨果", "zh": "好的。你看，对吗？", "py": "Hǎo de. Nǐ kàn, duì ma?", "es": "Vale. Mire, ¿está bien así?" },
+        { "speaker": "服务员", "zh": "对。谢谢！这是你的电脑。", "py": "Duì. Xièxie! Zhè shì nǐ de diànnǎo.", "es": "Sí. ¡Gracias! Aquí tiene su ordenador." }
+      ],
+      "notes": "扫码 son dos palabras pegadas: 扫 «barrer, escanear» + 码 «código»; por eso se puede separar: 扫这个码. Para enseñar que ya has pagado, se gira el móvil hacia el cajero: 你看，对吗？ En las tiendas de precio fijo, como esta, no se regatea, pero sí se puede preguntar por algo más barato."
+    },
+    { "type": "exercises", "count": 16, "bank": ["g-price-age", "g-yidianr-youdianr", "g-gei", "g-tai-le", "g-modal-verbs", "u06"] },
+    {
+      "type": "sentence-builder",
+      "title": "Construye la frase completa",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "我" }, "verb1": { "zh": "用微信" }, "verb2": { "zh": "付钱" } }, "end": "。", "es": "Pago con WeChat." }, "distractors": ["坐"] },
+        { "sentence": { "slots": { "subject": { "zh": "这个电脑" }, "adverb": { "zh": "一共" }, "object": { "zh": "三千八百块" } }, "end": "。", "es": "Este ordenador son tres mil ochocientos yuanes en total." }, "distractors": ["是", "二千"] },
+        { "sentence": { "slots": { "aux": { "zh": "可以" }, "verb1": { "zh": "便宜" }, "complement": { "zh": "一点儿" }, "particle": { "zh": "吗" } }, "end": "？", "es": "¿Me lo puede dejar un poco más barato?" }, "distractors": ["有点儿"] },
+        { "sentence": { "slots": { "subject": { "zh": "你" }, "verb1": { "zh": "给我" }, "object": { "zh": "两包纸" }, "particle": { "zh": "吧" } }, "end": "。", "es": "Dame dos paquetes de pañuelos." }, "distractors": ["二"] },
+        { "sentence": { "slots": { "time0": { "zh": "星期六下午" }, "subject": { "zh": "我" }, "aux": { "zh": "想" }, "with": { "zh": "跟安娜一起" }, "verb1": { "zh": "去商场" }, "verb2": { "zh": "买" }, "object": { "zh": "衣服" } }, "end": "。", "es": "El sábado por la tarde quiero ir al centro comercial con Anna a comprar ropa." }, "distractors": ["卖"] },
+        { "sentence": { "slots": { "subject": { "zh": "我们" }, "adverb": { "zh": "只" }, "verb1": { "zh": "用支付宝" }, "verb2": { "zh": "付钱" } }, "end": "。", "es": "Solo pagamos con Alipay." }, "distractors": ["再"] },
+        { "sentence": { "slots": { "time0": { "zh": "明天" }, "subject": { "zh": "我" }, "place": { "zh": "在网上" }, "verb1": { "zh": "买" }, "object": { "zh": "一套汉语书" } }, "end": "。", "es": "Mañana compro por internet una colección de libros de chino." }, "distractors": ["本"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "可以用微信吗？", "py": "Kěyǐ yòng Wēixìn ma?", "es": "¿Se puede pagar con WeChat?" },
+        { "zh": "我用支付宝付钱。", "py": "Wǒ yòng Zhīfùbǎo fù qián.", "es": "Pago con Alipay." },
+        { "zh": "一共三千二百块。", "py": "Yígòng sānqiān èrbǎi kuài.", "es": "Son tres mil doscientos yuanes en total." },
+        { "zh": "你扫这个码。", "py": "Nǐ sǎo zhège mǎ.", "es": "Escanee este código." }
+      ],
+      "respond": [
+        { "q": { "zh": "你用什么付钱？", "py": "Nǐ yòng shénme fù qián?", "es": "¿Con qué paga?" }, "model": { "zh": "我用微信付钱。", "py": "Wǒ yòng Wēixìn fù qián.", "es": "Pago con WeChat." } },
+        { "q": { "zh": "这个小店不能用信用卡。", "py": "Zhège xiǎo diàn bù néng yòng xìnyòngkǎ.", "es": "En esta tienda no se puede pagar con tarjeta de crédito." }, "model": { "zh": "没关系，我用支付宝。", "py": "Méi guānxi, wǒ yòng Zhīfùbǎo.", "es": "No pasa nada, pago con Alipay." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Sin cartera",
+      "text": "在中国，买东西的时候，很多人不用钱包，也不用银行卡。他们用微信支付和支付宝扫码。雨果也用支付宝：吃饭、坐地铁、打车，他都扫码。他也常常在淘宝网购，东西很便宜。",
+      "es": "En China, cuando compran algo, muchas personas no usan la cartera ni la tarjeta: escanean el código con WeChat Pay o con Alipay. Hugo también usa Alipay: para comer, para el metro y para el taxi, siempre escanea el código. Además, compra a menudo por internet en Taobao, donde las cosas son muy baratas.",
+      "questions": [
+        { "q": "¿Qué no usan muchos chinos al comprar?", "options": ["La cartera y la tarjeta", "WeChat", "Alipay"], "answer": 0 },
+        { "q": "¿Para qué usa Hugo Alipay?", "options": ["Para comer, el metro y el taxi", "Solo para comer", "Solo para Taobao"], "answer": 0 },
+        { "q": "¿Cómo son las cosas en Taobao, según el texto?", "options": ["Muy baratas", "Muy caras", "Un poco caras"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

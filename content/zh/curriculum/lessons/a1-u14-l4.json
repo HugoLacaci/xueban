@@ -1,0 +1,141 @@
+{
+  "id": "a1-u14-l4",
+  "title": "¿Está lejos? 离…远/近, 从…到… y los puntos cardinales",
+  "zh": "书店离这儿远吗？",
+  "goal": "Decir si un sitio está lejos o cerca (离 + lugar + 远 / 近), de dónde a dónde (从…到…), usar 东 南 西 北 y repasar la unidad construyendo frases completas.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "离", "pinyin": "lí", "es": "(distancia) de, respecto a", "note": "A 离 B 很远 «A está lejos de B»." },
+    { "hanzi": "远", "pinyin": "yuǎn", "es": "lejos, lejano" },
+    { "hanzi": "近", "pinyin": "jìn", "es": "cerca, cercano" },
+    { "hanzi": "从", "pinyin": "cóng", "es": "desde, de (origen); por (camino)", "note": "从…到… «de… a…», en el espacio y en el tiempo." },
+    { "hanzi": "到", "pinyin": "dào", "es": "hasta, a; llegar" },
+    { "hanzi": "东", "pinyin": "dōng", "es": "este" },
+    { "hanzi": "东边", "pinyin": "dōngbian", "es": "el este, al este" },
+    { "hanzi": "西", "pinyin": "xī", "es": "oeste" },
+    { "hanzi": "西边", "pinyin": "xībian", "es": "el oeste, al oeste" },
+    { "hanzi": "南", "pinyin": "nán", "es": "sur" },
+    { "hanzi": "南边", "pinyin": "nánbian", "es": "el sur, al sur" },
+    { "hanzi": "北", "pinyin": "běi", "es": "norte" },
+    { "hanzi": "北边", "pinyin": "běibian", "es": "el norte, al norte", "note": "Orden chino: 东南西北 (este, sur, oeste, norte). 东北 = noreste." }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "书店离这儿远吗？", "py": "Shūdiàn lí zhèr yuǎn ma?", "es": "¿La librería está lejos de aquí?" },
+        { "zh": "宿舍离图书馆很近。", "py": "Sùshè lí túshūguǎn hěn jìn.", "es": "La residencia está muy cerca de la biblioteca." },
+        { "zh": "我们从八点到十二点上课。", "py": "Wǒmen cóng bā diǎn dào shí'èr diǎn shàngkè.", "es": "Tenemos clase de ocho a doce." }
+      ]
+    },
+    { "type": "vocab", "title": "Lejos, cerca y los puntos cardinales", "words": ["离", "远", "近", "从", "到", "东", "东边", "西", "西边", "南", "南边", "北", "北边"] },
+    {
+      "type": "phonetics-drill",
+      "title": "yuan, jin / jing y la c de 从",
+      "markdown": "Tres sonidos de la lección:\n\n- **远 yuǎn**: es **ü + an**, con los labios redondos al principio; no es «wan» (晚 wǎn).\n- **近 jìn** termina en **-n** (lengua arriba); **京 jīng** en **-ng** (boca abierta). Recuerda 北京 Běijīng.\n- **从 cóng**: **c** = «ts» con golpe de aire, como en *tsunami*; no es la *c* de «casa».\n\nY **离 lí** (de, distancia) con l; no lo confundas con **你 nǐ**.",
+      "items": [
+        { "audio": "远", "options": ["yuǎn", "wǎn", "yǎn"], "answer": 0, "explain": "yuǎn: ü + an, labios redondos." },
+        { "audio": "近", "options": ["jìn", "jìng", "jiàn"], "answer": 0, "explain": "近 jìn con -n; 京 jīng con -ng." },
+        { "audio": "北京", "options": ["Běijīng", "Běijīn", "Běiqīng"], "answer": 0, "explain": "京 jīng con -ng." },
+        { "audio": "从", "options": ["cóng", "zóng", "kóng"], "answer": 0, "explain": "c = «ts» con aire." },
+        { "audio": "离", "options": ["lí", "ní", "lǐ"], "answer": 0, "explain": "离 lí, 2.º tono; 里 lǐ es 3.º." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["远", "近"],
+      "mnemonics": {
+        "远": "辶 (caminar) + 元 yuán (da el sonido): un camino que hay que andar mucho, lejos.",
+        "近": "辶 (caminar) + 斤 jīn (da el sonido): un camino corto, cerca. Los dos llevan 辶: la distancia se mide andando."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "离 + lugar + 远 / 近 y 从… 到…",
+      "markdown": "**离 lí** mide la distancia **respecto a** un sitio: **A + 离 + B + 远 / 近**. El bloque 离 + lugar va en el hueco **Dónde**, delante del adjetivo:\n\n宿舍**离图书馆**很近。 (La residencia está muy cerca de la biblioteca.)\n\n⚠️ En español: «está cerca **de** la biblioteca», con el lugar al final. En chino, delante. Y **sin 是 ni 在**: ~~宿舍是离图书馆很近~~.\n\n**从 cóng** marca el **origen** y **到 dào** el **destino**, en el espacio o en el tiempo:\n\n- 我**从宿舍**去食堂。 (Voy de la residencia al comedor.)\n- 我们**从八点到十二点**上课。 (De ocho a doce.) — el bloque de tiempo va en el hueco **Tiempo**.\n- 你**从哪儿**来？ (¿De dónde vienes?)\n- Por dónde: 我们**从北门**进吧。 (Entremos por la puerta norte.)\n\nPara la distancia, **多远** (U13): 从这儿到书店**多远**？ — Puntos cardinales: 东边 南边 西边 北边, detrás del nombre como los demás localizadores: 上海在北京**南边**.",
+      "focus": ["place", "time"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "宿舍", "py": "sùshè" }, "place": { "zh": "离图书馆", "py": "lí túshūguǎn" }, "verb1": { "zh": "很近", "py": "hěn jìn" } }, "end": "。", "es": "La residencia está muy cerca de la biblioteca.", "esOrder": [{ "text": "La residencia", "slot": "subject" }, { "text": "está muy cerca", "slot": "verb1" }, { "text": "de la biblioteca", "slot": "place" }] },
+        { "slots": { "subject": { "zh": "西班牙", "py": "Xībānyá" }, "place": { "zh": "离中国", "py": "lí Zhōngguó" }, "verb1": { "zh": "很远", "py": "hěn yuǎn" } }, "end": "。", "es": "España está muy lejos de China." },
+        { "slots": { "subject": { "zh": "我们", "py": "wǒmen" }, "time": { "zh": "从八点到十二点", "py": "cóng bā diǎn dào shí'èr diǎn" }, "verb1": { "zh": "上课", "py": "shàngkè" } }, "end": "。", "es": "Tenemos clase de ocho a doce.", "esOrder": [{ "text": "Tenemos clase", "slot": "verb1" }, { "text": "(nosotros)", "slot": "subject" }, { "text": "de ocho a doce", "slot": "time" }] },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "place": { "zh": "从宿舍", "py": "cóng sùshè" }, "verb1": { "zh": "去", "py": "qù" }, "object": { "zh": "食堂", "py": "shítáng" } }, "end": "。", "es": "Voy de la residencia al comedor." },
+        { "slots": { "subject": { "zh": "书店", "py": "shūdiàn" }, "verb1": { "zh": "在", "py": "zài" }, "object": { "zh": "图书馆东边", "py": "túshūguǎn dōngbian" } }, "end": "。", "es": "La librería está al este de la biblioteca." },
+        { "slots": { "subject": { "zh": "上海", "py": "Shànghǎi" }, "verb1": { "zh": "在", "py": "zài" }, "object": { "zh": "北京南边", "py": "Běijīng nánbian" } }, "end": "。", "es": "Shanghái está al sur de Pekín." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "便利店", "py": "biànlìdiàn" }, "place": { "zh": "离这儿", "py": "lí zhèr" }, "verb1": { "zh": "不远", "py": "bù yuǎn" } }, "end": "。", "es": "La tienda 24 horas no está lejos de aquí." },
+        { "slots": { "subject": { "zh": "北门", "py": "běimén" }, "place": { "zh": "离宿舍", "py": "lí sùshè" }, "verb1": { "zh": "不太近", "py": "bú tài jìn" } }, "end": "。", "es": "La puerta norte no está muy cerca de la residencia." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "书店", "py": "shūdiàn" }, "place": { "zh": "离这儿", "py": "lí zhèr" }, "verb1": { "zh": "远", "py": "yuǎn" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿La librería está lejos de aquí?" },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "place": { "zh": "从哪儿", "py": "cóng nǎr" }, "verb1": { "zh": "来", "py": "lái" } }, "end": "？", "es": "¿De dónde vienes?" },
+        { "slots": { "place": { "zh": "从这儿到书店", "py": "cóng zhèr dào shūdiàn" }, "verb1": { "zh": "多远", "py": "duō yuǎn" } }, "end": "？", "es": "¿Qué distancia hay de aquí a la librería?" }
+      ],
+      "mistakes": [
+        { "wrong": "宿舍很近离图书馆。", "right": "宿舍离图书馆很近。", "why": "离 + lugar va delante del adjetivo, no detrás." },
+        { "wrong": "宿舍是离图书馆很近。", "right": "宿舍离图书馆很近。", "why": "No se usa 是: 近 / 远 son adjetivos predicado." },
+        { "wrong": "我离西班牙来。", "right": "我从西班牙来。", "why": "El origen (de dónde vienes) es 从; 离 solo mide distancias." },
+        { "wrong": "我们上课从八点到十二点。", "right": "我们从八点到十二点上课。", "why": "从…到… de tiempo va delante del verbo, como cualquier expresión de tiempo." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "¿Está lejos la librería?",
+      "lines": [
+        { "speaker": "雨果", "zh": "同学，请问，书店离这儿远吗？", "py": "Tóngxué, qǐngwèn, shūdiàn lí zhèr yuǎn ma?", "es": "Perdona, ¿la librería está lejos de aquí?" },
+        { "speaker": "小王", "zh": "不远，很近。书店在图书馆东边。", "py": "Bù yuǎn, hěn jìn. Shūdiàn zài túshūguǎn dōngbian.", "es": "No, está muy cerca. La librería está al este de la biblioteca." },
+        { "speaker": "雨果", "zh": "从这儿到图书馆多远？", "py": "Cóng zhèr dào túshūguǎn duō yuǎn?", "es": "¿Qué distancia hay de aquí a la biblioteca?" },
+        { "speaker": "小王", "zh": "不远，走五分钟。", "py": "Bù yuǎn, zǒu wǔ fēnzhōng.", "es": "Poca, cinco minutos andando." },
+        { "speaker": "雨果", "zh": "我从东门去还是从北门去？", "py": "Wǒ cóng dōngmén qù háishi cóng běimén qù?", "es": "¿Voy por la puerta este o por la puerta norte?" },
+        { "speaker": "小王", "zh": "从北门去吧，北门离图书馆最近。", "py": "Cóng běimén qù ba, běimén lí túshūguǎn zuì jìn.", "es": "Ve por la puerta norte: es la que está más cerca de la biblioteca." },
+        { "speaker": "雨果", "zh": "北门在哪儿？", "py": "Běimén zài nǎr?", "es": "¿Dónde está la puerta norte?" },
+        { "speaker": "小王", "zh": "在那边，在宿舍北边。书店从早上八点到晚上十点开门。", "py": "Zài nàbian, zài sùshè běibian. Shūdiàn cóng zǎoshang bā diǎn dào wǎnshang shí diǎn kāimén.", "es": "Por allí, al norte de la residencia. La librería abre de ocho de la mañana a diez de la noche." },
+        { "speaker": "雨果", "zh": "太好了，谢谢！", "py": "Tài hǎo le, xièxie!", "es": "¡Genial, gracias!" },
+        { "speaker": "小王", "zh": "不客气！", "py": "Bú kèqi!", "es": "¡De nada!" }
+      ],
+      "notes": "Para llamar a un estudiante desconocido en el campus se dice 同学 («compañero»). En el norte de China se dan las direcciones con los puntos cardinales (东边, 北边…); en Shanghái se usan más 左边 / 右边."
+    },
+    { "type": "exercises", "count": 16, "bank": ["g-zai", "g-you", "u07", "g-word-order"] },
+    {
+      "type": "sentence-builder",
+      "title": "Construye la frase completa",
+      "items": [
+        { "sentence": { "slots": { "time0": { "zh": "明天下午" }, "subject": { "zh": "我" }, "aux": { "zh": "想" }, "with": { "zh": "跟安娜一起" }, "place": { "zh": "在图书馆" }, "verb1": { "zh": "学习" }, "object": { "zh": "汉语" } }, "end": "。", "es": "Mañana por la tarde quiero estudiar chino con Ana en la biblioteca." }, "distractors": ["是"] },
+        { "sentence": { "slots": { "subject": { "zh": "我们" }, "time": { "zh": "每天从八点到十二点" }, "adverb": { "zh": "都" }, "place": { "zh": "在楼上" }, "verb1": { "zh": "上" }, "object": { "zh": "汉语课" } }, "end": "。", "es": "Todos los días tenemos clase de chino arriba de ocho a doce." }, "distractors": ["离"] },
+        { "sentence": { "slots": { "subject": { "zh": "我们的宿舍" }, "place": { "zh": "离北门的便利店" }, "verb1": { "zh": "很近" } }, "end": "。", "es": "Nuestra residencia está muy cerca de la tienda 24 horas de la puerta norte." }, "distractors": ["从"] },
+        { "sentence": { "slots": { "time0": { "zh": "星期六晚上" }, "subject": { "zh": "雨果和大卫" }, "adverb": { "zh": "都" }, "aux": { "zh": "要" }, "with": { "zh": "跟小李一起" }, "place": { "zh": "在电影院门口" }, "verb1": { "zh": "等" }, "object": { "zh": "安娜" } }, "end": "。", "es": "El sábado por la noche Hugo y David van a esperar a Ana en la puerta del cine con Xiao Li." } },
+        { "sentence": { "slots": { "subject": { "zh": "你" }, "time": { "zh": "明天" }, "aux": { "zh": "可以" }, "place": { "zh": "从东门" }, "verb1": { "zh": "去" }, "verb2": { "zh": "买" }, "object": { "zh": "水果" } }, "end": "。", "es": "Mañana puedes ir a comprar fruta saliendo por la puerta este." }, "distractors": ["离"] },
+        { "sentence": { "slots": { "subject": { "zh": "安娜" }, "time": { "zh": "周末" }, "adverb": { "zh": "常常" }, "with": { "zh": "跟朋友一起" }, "place": { "zh": "在食堂旁边的书店" }, "verb1": { "zh": "看" }, "object": { "zh": "中文书" } }, "end": "。", "es": "Los fines de semana Ana suele leer libros en chino con sus amigos en la librería de al lado del comedor." }, "distractors": ["是"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "书店离这儿远吗？", "py": "Shūdiàn lí zhèr yuǎn ma?", "es": "¿La librería está lejos de aquí?" },
+        { "zh": "不远，很近。", "py": "Bù yuǎn, hěn jìn.", "es": "No, está muy cerca." },
+        { "zh": "我们从八点到十二点上课。", "py": "Wǒmen cóng bā diǎn dào shí'èr diǎn shàngkè.", "es": "Tenemos clase de ocho a doce." },
+        { "zh": "上海在北京南边。", "py": "Shànghǎi zài Běijīng nánbian.", "es": "Shanghái está al sur de Pekín." }
+      ],
+      "respond": [
+        { "q": { "zh": "你的宿舍离图书馆远吗？", "py": "Nǐ de sùshè lí túshūguǎn yuǎn ma?", "es": "¿Tu residencia está lejos de la biblioteca?" }, "model": { "zh": "不远，走五分钟。", "py": "Bù yuǎn, zǒu wǔ fēnzhōng.", "es": "No, a cinco minutos andando." } },
+        { "q": { "zh": "你从哪儿来？", "py": "Nǐ cóng nǎr lái?", "es": "¿De dónde vienes?" }, "model": { "zh": "我从西班牙来，我是马德里人。", "py": "Wǒ cóng Xībānyá lái, wǒ shì Mǎdélǐ rén.", "es": "Vengo de España, soy de Madrid." } },
+        { "q": { "zh": "你们从几点到几点上课？", "py": "Nǐmen cóng jǐ diǎn dào jǐ diǎn shàngkè?", "es": "¿De qué hora a qué hora tenéis clase?" }, "model": { "zh": "我们从八点到十二点上课。", "py": "Wǒmen cóng bā diǎn dào shí'èr diǎn shàngkè.", "es": "Tenemos clase de ocho a doce." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Lejos y cerca",
+      "text": "雨果从西班牙来，西班牙离中国很远。上海在中国的东边，北京在上海北边。雨果的宿舍离图书馆很近，走五分钟。他每天从八点到十二点上课，下午在图书馆学习。宿舍北边有一个便利店，晚上他常常去那儿买水果。",
+      "es": "Hugo viene de España, que está muy lejos de China. Shanghái está en el este de China y Pekín, al norte de Shanghái. La residencia de Hugo está muy cerca de la biblioteca: a cinco minutos andando. Todos los días tiene clase de ocho a doce y por la tarde estudia en la biblioteca. Al norte de la residencia hay una tienda 24 horas; por la noche suele ir allí a comprar fruta.",
+      "questions": [
+        { "q": "¿Dónde está Pekín respecto a Shanghái?", "options": ["Al norte", "Al sur", "Al oeste"], "answer": 0 },
+        { "q": "¿Cuánto se tarda de la residencia a la biblioteca?", "options": ["Cinco minutos andando", "Diez minutos", "Una hora"], "answer": 0 },
+        { "q": "¿De qué hora a qué hora tiene clase Hugo?", "options": ["De 8 a 12", "De 8 a 10", "De 12 a 8"], "answer": 0 },
+        { "q": "¿Qué hay al norte de la residencia?", "options": ["Una tienda 24 horas", "La biblioteca", "El cine"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

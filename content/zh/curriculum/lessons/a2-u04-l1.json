@@ -1,0 +1,702 @@
+{
+  "id": "a2-u04-l1",
+  "title": "Primero esto y luego aquello: 先…再…",
+  "zh": "先放油，再放鸡蛋",
+  "goal": "Explicar los pasos de una receta sencilla con 先…再…, 接着 y 接下来.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    {
+      "hanzi": "做饭",
+      "pinyin": "zuò fàn",
+      "es": "cocinar, hacer la comida"
+    },
+    {
+      "hanzi": "食物",
+      "pinyin": "shíwù",
+      "es": "comida, alimentos"
+    },
+    {
+      "hanzi": "鸡",
+      "pinyin": "jī",
+      "es": "pollo; gallina"
+    },
+    {
+      "hanzi": "蛋",
+      "pinyin": "dàn",
+      "es": "huevo",
+      "note": "鸡蛋 ya lo conoces; 蛋 solo, en compuestos: 蛋汤."
+    },
+    {
+      "hanzi": "油",
+      "pinyin": "yóu",
+      "es": "aceite"
+    },
+    {
+      "hanzi": "盐",
+      "pinyin": "yán",
+      "es": "sal"
+    },
+    {
+      "hanzi": "刀",
+      "pinyin": "dāo",
+      "es": "cuchillo"
+    },
+    {
+      "hanzi": "片",
+      "pinyin": "piàn",
+      "es": "loncha, rodaja; (clasificador de cosas planas y finas)",
+      "note": "一片面包 = una rebanada de pan; 肉片 = lonchas de carne."
+    },
+    {
+      "hanzi": "面",
+      "pinyin": "miàn",
+      "es": "fideos; harina"
+    },
+    {
+      "hanzi": "接着",
+      "pinyin": "jiēzhe",
+      "es": "a continuación, acto seguido"
+    },
+    {
+      "hanzi": "接下来",
+      "pinyin": "jiē xiàlai",
+      "es": "lo siguiente, a continuación"
+    },
+    {
+      "hanzi": "做法",
+      "pinyin": "zuòfǎ",
+      "es": "manera de hacerlo; receta"
+    }
+  ],
+  "extraVocab": [
+    "盐"
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        {
+          "zh": "我先洗手，再做饭。",
+          "py": "Wǒ xiān xǐ shǒu, zài zuò fàn.",
+          "es": "Primero me lavo las manos y luego cocino."
+        },
+        {
+          "zh": "先放油，再放鸡蛋，接着放盐。",
+          "py": "Xiān fàng yóu, zài fàng jīdàn, jiēzhe fàng yán.",
+          "es": "Primero echas el aceite, luego el huevo y a continuación la sal."
+        },
+        {
+          "zh": "这个菜的做法很容易。",
+          "py": "Zhège cài de zuòfǎ hěn róngyì.",
+          "es": "La receta de este plato es muy fácil."
+        }
+      ]
+    },
+    {
+      "type": "vocab",
+      "title": "En la cocina",
+      "words": [
+        "做饭",
+        "食物",
+        "鸡",
+        "蛋",
+        "油",
+        "盐",
+        "刀",
+        "片",
+        "面",
+        "接着",
+        "接下来",
+        "做法"
+      ]
+    },
+    {
+      "type": "phonetics-drill",
+      "title": "y, j, x delante de a: 盐, 鸡, 先, 接",
+      "markdown": "Hoy aparecen sílabas con **i** + vocal: **盐** *yán*, **先** *xiān*, **接** *jiē*, **面** *miàn*.\n\nOjo: **-ian** se pronuncia casi **«ien»**: *yán* suena «ien», *xiān* suena «sien», *miàn* suena «mien». No digas «yan» con a abierta.\n\n**油 yóu** (aceite) y **有 yǒu** (tener) solo se distinguen por el tono: 2.º sube, 3.º baja y sube.",
+      "items": [
+        {
+          "audio": "盐",
+          "options": [
+            "yán",
+            "yáng",
+            "yǎn"
+          ],
+          "answer": 0,
+          "explain": "-an final (sin g); suena «ien»."
+        },
+        {
+          "audio": "先",
+          "options": [
+            "xiān",
+            "shiān",
+            "xiāng"
+          ],
+          "answer": 0,
+          "explain": "x plana; -ian = «ien»."
+        },
+        {
+          "audio": "油",
+          "options": [
+            "yóu",
+            "yǒu",
+            "yòu"
+          ],
+          "answer": 0,
+          "explain": "Aceite: 2.º tono (sube)."
+        },
+        {
+          "audio": "接着",
+          "options": [
+            "jiēzhe",
+            "qiēzhe",
+            "jiēzhuó"
+          ],
+          "answer": 0,
+          "explain": "着 neutro: zhe."
+        },
+        {
+          "audio": "面",
+          "options": [
+            "miàn",
+            "mián",
+            "miǎn"
+          ],
+          "answer": 0,
+          "explain": "4.º: cae fuerte."
+        }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": [
+        "刀",
+        "油"
+      ],
+      "mnemonics": {
+        "刀": "Dibujo de un cuchillo con su hoja curva. Aparece como 刂 en caracteres de cortar: 别, 到, 刻.",
+        "油": "氵 (agua, líquido) + 由 (da el sonido, yóu): el líquido que sale del fruto → aceite."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "先 + V1, 再 + V2: los pasos en orden",
+      "markdown": "Para dar **instrucciones en orden**:\n\n> **先** + acción 1, **再** + acción 2 → *primero…, luego…*\n\n- 我**先**洗手，**再**吃饭。\n- 你**先**放油，**再**放鸡蛋。\n\n**先** va en el hueco de los **adverbios**, delante del primer verbo; **再** va **delante del segundo verbo** (aquí lo verás dentro del hueco *verbo 2*: 再吃饭).\n\nOjo: este **再** no es «otra vez», sino **«después, entonces»**, y mira al futuro o a instrucciones. Para lo que ya pasó se usa **然后**: 我先洗了手，**然后**吃了饭。\n\nPara más pasos: **先… 再… 接着 / 接下来… 最后…**",
+      "focus": [
+        "adverb",
+        "verb2"
+      ],
+      "compare": true,
+      "sentences": [
+        {
+          "slots": {
+            "subject": {
+              "zh": "我",
+              "py": "wǒ"
+            },
+            "adverb": {
+              "zh": "先",
+              "py": "xiān"
+            },
+            "verb1": {
+              "zh": "洗手",
+              "py": "xǐshǒu"
+            },
+            "verb2": {
+              "zh": "再吃饭",
+              "py": "zài chī fàn"
+            }
+          },
+          "end": "。",
+          "es": "Primero me lavo las manos y luego como.",
+          "esOrder": [
+            {
+              "text": "Primero",
+              "slot": "adverb"
+            },
+            {
+              "text": "me lavo las manos",
+              "slot": "verb1"
+            },
+            {
+              "text": "y luego como",
+              "slot": "verb2"
+            }
+          ]
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "你",
+              "py": "nǐ"
+            },
+            "adverb": {
+              "zh": "先",
+              "py": "xiān"
+            },
+            "verb1": {
+              "zh": "放",
+              "py": "fàng"
+            },
+            "object": {
+              "zh": "油",
+              "py": "yóu"
+            }
+          },
+          "end": "。",
+          "es": "Primero echa el aceite."
+        },
+        {
+          "slots": {
+            "adverb": {
+              "zh": "接着",
+              "py": "jiēzhe"
+            },
+            "verb1": {
+              "zh": "放",
+              "py": "fàng"
+            },
+            "object": {
+              "zh": "鸡蛋",
+              "py": "jīdàn"
+            }
+          },
+          "end": "。",
+          "es": "A continuación echa el huevo."
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "我们",
+              "py": "wǒmen"
+            },
+            "adverb": {
+              "zh": "先",
+              "py": "xiān"
+            },
+            "verb1": {
+              "zh": "去超市",
+              "py": "qù chāoshì"
+            },
+            "verb2": {
+              "zh": "买",
+              "py": "mǎi"
+            },
+            "object": {
+              "zh": "食物",
+              "py": "shíwù"
+            }
+          },
+          "end": "。",
+          "es": "Primero vamos al súper a comprar comida."
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "你",
+              "py": "nǐ"
+            },
+            "adverb": {
+              "zh": "先",
+              "py": "xiān"
+            },
+            "verb1": {
+              "zh": "休息一会儿",
+              "py": "xiūxi yíhuìr"
+            },
+            "verb2": {
+              "zh": "再做",
+              "py": "zài zuò"
+            },
+            "object": {
+              "zh": "饭",
+              "py": "fàn"
+            }
+          },
+          "end": "。",
+          "es": "Descansa un rato y luego haces la comida."
+        }
+      ],
+      "negative": [
+        {
+          "slots": {
+            "subject": {
+              "zh": "你",
+              "py": "nǐ"
+            },
+            "adverb": {
+              "zh": "先别",
+              "py": "xiānbié"
+            },
+            "verb1": {
+              "zh": "放",
+              "py": "fàng"
+            },
+            "object": {
+              "zh": "盐",
+              "py": "yán"
+            }
+          },
+          "end": "。",
+          "es": "No eches la sal todavía."
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "我",
+              "py": "wǒ"
+            },
+            "adverb": {
+              "zh": "还没",
+              "py": "hái méi"
+            },
+            "verb1": {
+              "zh": "放",
+              "py": "fàng"
+            },
+            "object": {
+              "zh": "油",
+              "py": "yóu"
+            }
+          },
+          "end": "。",
+          "es": "Todavía no he echado el aceite."
+        }
+      ],
+      "question": [
+        {
+          "slots": {
+            "subject": {
+              "zh": "我们",
+              "py": "wǒmen"
+            },
+            "adverb": {
+              "zh": "先",
+              "py": "xiān"
+            },
+            "verb1": {
+              "zh": "做",
+              "py": "zuò"
+            },
+            "object": {
+              "zh": "什么",
+              "py": "shénme"
+            }
+          },
+          "end": "？",
+          "es": "¿Qué hacemos primero?"
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "这个菜的做法",
+              "py": "zhège càide zuòfǎ"
+            },
+            "verb1": {
+              "zh": "难",
+              "py": "nán"
+            },
+            "particle": {
+              "zh": "吗",
+              "py": "ma"
+            }
+          },
+          "end": "？",
+          "es": "¿Es difícil la receta de este plato?"
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "我先吃饭，再我洗手。",
+          "right": "我先洗手，再吃饭。",
+          "why": "再 va delante del segundo verbo, no delante del sujeto."
+        },
+        {
+          "wrong": "昨天我先洗手，再吃饭了。",
+          "right": "昨天我先洗了手，然后吃了饭。",
+          "why": "Para el pasado se usa 然后; 再 es para instrucciones y planes."
+        },
+        {
+          "wrong": "你放油先。",
+          "right": "你先放油。",
+          "why": "先 va delante del verbo, no al final como «primero» en español."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Xiao Li enseña a Hugo a hacer huevos",
+      "lines": [
+        {
+          "speaker": "雨果",
+          "zh": "小李，你会做饭吗？我不太会。",
+          "py": "Xiǎo Lǐ, nǐ huì zuò fàn ma? Wǒ bù tài huì.",
+          "es": "Xiao Li, ¿sabes cocinar? Yo no mucho."
+        },
+        {
+          "speaker": "小李",
+          "zh": "会一点儿。今天我们做一个很容易的菜：鸡蛋面。",
+          "py": "Huì yìdiǎnr. Jīntiān wǒmen zuò yí ge hěn róngyì de cài: Jīdàn miàn.",
+          "es": "Un poco. Hoy vamos a hacer un plato muy fácil: fideos con huevo."
+        },
+        {
+          "speaker": "雨果",
+          "zh": "好！做法是什么？",
+          "py": "Hǎo! Zuòfǎ shì shénme?",
+          "es": "¡Vale! ¿Cómo se hace?"
+        },
+        {
+          "speaker": "小李",
+          "zh": "你先洗手，再拿两个鸡蛋。",
+          "py": "Nǐ xiān xǐ shǒu, zài ná liǎng ge jīdàn.",
+          "es": "Primero lávate las manos y luego coge dos huevos."
+        },
+        {
+          "speaker": "雨果",
+          "zh": "好了。接下来呢？",
+          "py": "Hǎo le. Jiē xiàlai ne?",
+          "es": "Hecho. ¿Y ahora?"
+        },
+        {
+          "speaker": "小李",
+          "zh": "先放一点儿油，再放鸡蛋。",
+          "py": "Xiān fàng yìdiǎnr yóu, zài fàng jīdàn.",
+          "es": "Primero echa un poco de aceite y luego los huevos."
+        },
+        {
+          "speaker": "雨果",
+          "zh": "要放盐吗？",
+          "py": "Yào fàng yán ma?",
+          "es": "¿Hay que echar sal?"
+        },
+        {
+          "speaker": "小李",
+          "zh": "先别放。接着放面，最后再放一点儿盐。",
+          "py": "Xiān bié fàng. Jiēzhe fàng miàn, zuìhòu zài fàng yìdiǎnr yán.",
+          "es": "Todavía no. A continuación echa los fideos y, al final, un poco de sal."
+        },
+        {
+          "speaker": "雨果",
+          "zh": "要用刀吗？",
+          "py": "Yào yòng dāo ma?",
+          "es": "¿Hace falta usar el cuchillo?"
+        },
+        {
+          "speaker": "小李",
+          "zh": "不用，今天不用刀。你看，很容易吧？",
+          "py": "Búyòng, jīntiān bù yòng dāo. Nǐ kàn, hěn róngyì ba?",
+          "es": "No hace falta, hoy no usamos cuchillo. Mira, ¿a que es fácil?"
+        }
+      ],
+      "notes": "En muchas residencias chinas no se puede cocinar en la habitación (los hornillos están prohibidos por seguridad); se cocina en cocinas comunes o en el piso de algún amigo. El cuchillo se cuenta con 把 (一把刀), el clasificador de los objetos con mango."
+    },
+    {
+      "type": "exercises",
+      "count": 16,
+      "bank": [
+        "g-word-order",
+        "g-yixia",
+        "u05"
+      ]
+    },
+    {
+      "type": "sentence-builder",
+      "items": [
+        {
+          "sentence": {
+            "slots": {
+              "subject": {
+                "zh": "我"
+              },
+              "adverb": {
+                "zh": "先"
+              },
+              "verb1": {
+                "zh": "洗手"
+              },
+              "verb2": {
+                "zh": "再吃饭"
+              }
+            },
+            "end": "。",
+            "es": "Primero me lavo las manos y luego como."
+          },
+          "distractors": [
+            "然后"
+          ]
+        },
+        {
+          "sentence": {
+            "slots": {
+              "subject": {
+                "zh": "你"
+              },
+              "adverb": {
+                "zh": "先"
+              },
+              "verb1": {
+                "zh": "放"
+              },
+              "object": {
+                "zh": "油"
+              }
+            },
+            "end": "。",
+            "es": "Primero echa el aceite."
+          }
+        },
+        {
+          "sentence": {
+            "slots": {
+              "subject": {
+                "zh": "你"
+              },
+              "adverb": {
+                "zh": "先别"
+              },
+              "verb1": {
+                "zh": "放"
+              },
+              "object": {
+                "zh": "盐"
+              }
+            },
+            "end": "。",
+            "es": "No eches la sal todavía."
+          },
+          "distractors": [
+            "不"
+          ]
+        },
+        {
+          "sentence": {
+            "slots": {
+              "time0": {
+                "zh": "今天晚上"
+              },
+              "subject": {
+                "zh": "我"
+              },
+              "aux": {
+                "zh": "想"
+              },
+              "with": {
+                "zh": "跟小李一起"
+              },
+              "place": {
+                "zh": "在宿舍"
+              },
+              "verb1": {
+                "zh": "做"
+              },
+              "object": {
+                "zh": "鸡蛋面"
+              }
+            },
+            "end": "。",
+            "es": "Esta noche quiero hacer fideos con huevo con Xiao Li en la residencia."
+          }
+        }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        {
+          "zh": "我先洗手，再做饭。",
+          "py": "Wǒ xiān xǐ shǒu, zài zuò fàn.",
+          "es": "Primero me lavo las manos y luego cocino."
+        },
+        {
+          "zh": "先放油，再放鸡蛋。",
+          "py": "Xiān fàng yóu, zài fàng jīdàn.",
+          "es": "Primero el aceite y luego el huevo."
+        },
+        {
+          "zh": "接着放面，最后放盐。",
+          "py": "Jiēzhe fàng miàn, zuìhòu fàng yán.",
+          "es": "A continuación los fideos y al final la sal."
+        },
+        {
+          "zh": "这个菜的做法很容易。",
+          "py": "Zhège cài de zuòfǎ hěn róngyì.",
+          "es": "La receta de este plato es muy fácil."
+        }
+      ],
+      "respond": [
+        {
+          "q": {
+            "zh": "我们先做什么？",
+            "py": "Wǒmen xiān zuò shénme?",
+            "es": "¿Qué hacemos primero?"
+          },
+          "model": {
+            "zh": "先洗手，再做饭。",
+            "py": "Xiān xǐ shǒu, zài zuò fàn.",
+            "es": "Primero nos lavamos las manos y luego cocinamos."
+          }
+        },
+        {
+          "q": {
+            "zh": "你会做饭吗？",
+            "py": "Nǐ huì zuò fàn ma?",
+            "es": "¿Sabes cocinar?"
+          },
+          "model": {
+            "zh": "会一点儿，我会做鸡蛋面。",
+            "py": "Huì yìdiǎnr, wǒ huì zuò jīdàn miàn.",
+            "es": "Un poco: sé hacer fideos con huevo."
+          }
+        }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Receta: fideos con huevo",
+      "text": "鸡蛋面的做法很容易。先洗手，再准备食物：两个鸡蛋、一些面、一点儿油和盐。先放油，油热了，再放鸡蛋。接着放水，水开了，再放面。接下来等五六分钟。最后放一点儿盐，就好了。小李说：“你也可以放几片肉和一些菜。”雨果第一次自己做饭，他觉得很好吃。",
+      "es": "La receta de los fideos con huevo es muy fácil. Primero lávate las manos y luego prepara los ingredientes: dos huevos, unos fideos, un poco de aceite y sal. Primero echa el aceite; cuando esté caliente, echa los huevos. A continuación añade agua; cuando hierva, echa los fideos. Después espera cinco o seis minutos. Al final echa un poco de sal y listo. Xiao Li dice: «También puedes echar unas lonchas de carne y algo de verdura». Es la primera vez que Hugo cocina solo, y le parece que está muy bueno.",
+      "questions": [
+        {
+          "q": "¿Qué se echa primero?",
+          "options": [
+            "油",
+            "鸡蛋",
+            "面"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "¿Cuánto hay que esperar?",
+          "options": [
+            "五六分钟",
+            "半个小时",
+            "一个小时"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "¿Qué se echa al final?",
+          "options": [
+            "盐",
+            "水",
+            "肉"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "¿Qué más se puede añadir, según Xiao Li?",
+          "options": [
+            "肉和菜",
+            "方便面",
+            "鸡"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "type": "notes-growth"
+    }
+  ]
+}

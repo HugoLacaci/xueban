@@ -1,0 +1,144 @@
+{
+  "id": "b1-u01-l7",
+  "title": "Bienvenidos a mi casa: repaso de 把",
+  "zh": "欢迎来我家做客",
+  "goal": "Repasar todas las formas de 把 (lugar, persona, resultado, dirección, estado, V成) contando la fiesta de bienvenida en el piso nuevo, y construir frases largas con todo lo de la unidad.",
+  "minutes": 16,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "保安", "pinyin": "bǎo'ān", "es": "vigilante de seguridad, portero", "note": "En las urbanizaciones chinas hay 保安 en la entrada día y noche." },
+    { "hanzi": "房屋", "pinyin": "fángwū", "es": "vivienda, casas, edificios (más formal)" },
+    { "hanzi": "告别", "pinyin": "gàobié", "es": "despedirse", "note": "跟朋友告别 = despedirse de los amigos." },
+    { "hanzi": "架", "pinyin": "jià", "es": "soporte, armazón; (clasificador de aviones, pianos…)", "note": "衣架 = percha; 书架 = estantería; 一架飞机 = un avión." },
+    { "hanzi": "收音机", "pinyin": "shōuyīnjī", "es": "radio (aparato)" },
+    { "hanzi": "运输", "pinyin": "yùnshū", "es": "transporte (de mercancías); transportar", "note": "运输公司 = empresa de transportes." },
+    { "hanzi": "整个", "pinyin": "zhěnggè", "es": "todo, entero", "note": "整个房间 = toda la habitación; 整个下午 = toda la tarde." },
+    { "hanzi": "造", "pinyin": "zào", "es": "construir, fabricar" },
+    { "hanzi": "制作", "pinyin": "zhìzuò", "es": "hacer, elaborar (a mano o con cuidado)", "note": "自己制作的卡片 = una tarjeta hecha por él mismo." },
+    { "hanzi": "束", "pinyin": "shù", "es": "(clasificador de ramos y haces)", "note": "一束花 = un ramo de flores." },
+    { "hanzi": "做客", "pinyin": "zuòkè", "es": "ir de visita, ser invitado (a casa de alguien)", "note": "欢迎来我家做客！" },
+    { "hanzi": "合", "pinyin": "hé", "es": "cerrar, juntar", "note": "合上书 = cerrar el libro; 把书合上." }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "欢迎来我家做客！", "py": "Huānyíng lái wǒ jiā zuòkè!", "es": "¡Bienvenidos a mi casa!" },
+        { "zh": "我把整个房子打扫了三遍。", "py": "Wǒ bǎ zhěnggè fángzi dǎsǎo le sān biàn.", "es": "He limpiado la casa entera tres veces." },
+        { "zh": "搬家那天，保安帮我把冰箱搬到了楼上。", "py": "Bānjiā nà tiān, bǎo'ān bāng wǒ bǎ bīngxiāng bāndào le lóu shang.", "es": "El día de la mudanza, el vigilante me ayudó a subir la nevera." }
+      ]
+    },
+    { "type": "vocab", "title": "La fiesta de bienvenida", "words": ["保安", "房屋", "告别", "架", "收音机", "运输", "整个", "造", "制作", "束", "做客", "合"] },
+    {
+      "type": "phonetics-drill",
+      "title": "Frases largas: bloques, pausas y la pregunta con 吗",
+      "markdown": "Una frase larga en chino se dice en **bloques de sentido**, con micropausas entre ellos: **tiempo** | **sujeto + 把 + objeto** | **verbo + lo que va detrás**. 明天晚上 | 我们把礼物 | 带到雨果家去.\n\nEn las preguntas con **吗**, la entonación **no sube** como en español: la pregunta la hace la partícula. Si subieras mucho al final, alterarías el tono de la última sílaba.\n\nY tres palabras de hoy: **保安 bǎo'ān** (con apóstrofo: dos sílabas, *bǎo-ān*), **收音机 shōuyīnjī** (tres primeros tonos, altos y planos) y **一束花 yí shù huā** (一 + cuarto tono → segundo).",
+      "items": [
+        { "audio": "一束花", "options": ["yí shù huā", "yì shù huā", "yī shù huā"], "answer": 0, "explain": "一 delante de cuarto tono pasa a segundo." },
+        { "audio": "保安", "options": ["bǎo'ān", "bào'ān", "bǎo'àn"], "answer": 0, "explain": "Tercero + primero: dos sílabas, no «bǎo-nān»." },
+        { "audio": "明天晚上我们把礼物带到雨果家去", "prompt": "¿Cómo se agrupa?", "options": ["明天晚上 | 我们把礼物 | 带到雨果家去", "明天 | 晚上我们 | 把礼物带到 | 雨果家去", "明天晚上我们把 | 礼物带到雨果家去"], "answer": 0 },
+        { "audio": "收音机", "options": ["shōuyīnjī", "shòuyīnjī", "shōuyìnjī"], "answer": 0, "explain": "Tres primeros tonos seguidos." },
+        { "audio": "你们把礼物带来了吗？", "prompt": "¿Qué hace la entonación al final?", "options": ["Casi nada: la pregunta la marca 吗", "Sube mucho, como en español", "Baja con fuerza"], "answer": 0 }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["造", "束"],
+      "mnemonics": {
+        "造": "辶 (camino, ir) + 告 (gào, da un sonido parecido): ir y ponerse a hacer algo. Construir, fabricar.",
+        "束": "木 (madera, ramas) con una atadura en medio: un haz de ramas atado. De ahí 一束花, un ramo."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "Repaso: todo lo que puede ir detrás de 把 + objeto + verbo",
+      "markdown": "**Sujeto + (没 / 别 / 能 / 要…) + 把 + objeto concreto + verbo + algo más**\n\n| Lo que va detrás | Ejemplo |\n|---|---|\n| 在 / 到 + lugar | 把花放**在桌子上** |\n| 给 + persona | 把卡片送**给雨果** |\n| resultado | 把房间打扫**干净** |\n| dirección | 把箱子搬**到楼上来** |\n| 得 + estado | 把衣服放**得很整齐** |\n| 成 + resultado | 把东西分**成三类** |\n| cantidad de veces | 把房子打扫**了三遍** |\n| 了 (deshacerse) | 把旧沙发卖**了** |\n\nRecuerda: el verbo **nunca va solo**; el objeto es **concreto**; la negación y los auxiliares van **delante de 把**; y **no** llevan 把 认识, 知道, 喜欢, 是, 有, 来, 去.\n\n**Esqueleto**: 把 + objeto en *Con quién*; V + 在 / 到 / 给 / 成 o V + resultado en *Verbo 1*; lugar o persona en *Objeto*; 来 / 去, el estado con 得 y las veces en *Complemento*.",
+      "focus": ["with", "verb1", "complement"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "我们", "py": "wǒmen" }, "with": { "zh": "把房间", "py": "bǎ fángjiān" }, "verb1": { "zh": "打扫干净", "py": "dǎsǎo gānjìng" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Hemos dejado la habitación limpia." },
+        { "slots": { "subject": { "zh": "安娜", "py": "Ānnà" }, "with": { "zh": "把那束花", "py": "bǎ nà shù huā" }, "verb1": { "zh": "放在", "py": "fàng zài" }, "object": { "zh": "桌子上", "py": "zhuōzi shang" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Ana ha puesto el ramo de flores en la mesa." },
+        { "slots": { "subject": { "zh": "保安", "py": "bǎo'ān" }, "with": { "zh": "把箱子", "py": "bǎ xiāngzi" }, "verb1": { "zh": "搬到", "py": "bāndào" }, "object": { "zh": "楼上", "py": "lóu shang" }, "complement": { "zh": "来", "py": "lai" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "El vigilante ha subido las cajas hasta aquí arriba." },
+        { "slots": { "subject": { "zh": "小李", "py": "Xiǎo Lǐ" }, "with": { "zh": "把自己制作的卡片", "py": "bǎ zìjǐ zhìzuò de kǎpiàn" }, "verb1": { "zh": "送给", "py": "sònggěi" }, "object": { "zh": "雨果", "py": "Yǔguǒ" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Xiao Li le ha regalado a Hugo una tarjeta hecha por él.", "esOrder": [{ "text": "Xiao Li", "slot": "subject" }, { "text": "le ha regalado", "slot": "verb1" }, { "text": "a Hugo", "slot": "object" }, { "text": "una tarjeta hecha por él", "slot": "with" }] },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "with": { "zh": "把整个房子", "py": "bǎ zhěnggè fángzi" }, "verb1": { "zh": "打扫了", "py": "dǎsǎo le" }, "complement": { "zh": "三遍", "py": "sān biàn" } }, "end": "。", "es": "He limpiado la casa entera tres veces." },
+        { "slots": { "subject": { "zh": "大家", "py": "dàjiā" }, "with": { "zh": "把书", "py": "bǎ shū" }, "verb1": { "zh": "合上", "py": "héshang" }, "particle": { "zh": "吧", "py": "ba" } }, "end": "。", "es": "Cerrad todos el libro." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "还没", "py": "hái méi" }, "with": { "zh": "把衣服", "py": "bǎ yīfu" }, "verb1": { "zh": "挂在", "py": "guà zài" }, "object": { "zh": "衣架上", "py": "yījià shang" } }, "end": "。", "es": "Todavía no he colgado la ropa en las perchas." },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "adverb": { "zh": "别", "py": "bié" }, "with": { "zh": "把花", "py": "bǎ huā" }, "verb1": { "zh": "放在", "py": "fàng zài" }, "object": { "zh": "收音机上面", "py": "shōuyīnjī shàngmian" } }, "end": "。", "es": "No pongas las flores encima de la radio." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你们", "py": "nǐmen" }, "with": { "zh": "把礼物", "py": "bǎ lǐwù" }, "verb1": { "zh": "带来", "py": "dài lai" }, "particle": { "zh": "了吗", "py": "le ma" } }, "end": "？", "es": "¿Habéis traído los regalos?" },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "aux": { "zh": "能", "py": "néng" }, "with": { "zh": "把收音机", "py": "bǎ shōuyīnjī" }, "verb1": { "zh": "打开", "py": "dǎkāi" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿Puedes encender la radio?" }
+      ],
+      "mistakes": [
+        { "wrong": "我把门关。", "right": "我把门关上了。", "why": "Con 把 el verbo necesita algo detrás: aquí, el resultado 上." },
+        { "wrong": "我没把作业做完了。", "right": "我没把作业做完。", "why": "Con 没 no se añade 了." },
+        { "wrong": "我把这个收音机喜欢。", "right": "我喜欢这个收音机。", "why": "喜欢 no admite 把." },
+        { "wrong": "我把花放桌子上在。", "right": "我把花放在桌子上。", "why": "在 va pegado al verbo, delante del lugar." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Fiesta en el piso nuevo",
+      "lines": [
+        { "speaker": "雨果", "zh": "欢迎欢迎！快进来！", "py": "Huānyíng huānyíng! Kuài jìnlai!", "es": "¡Bienvenidos! ¡Pasad, pasad!" },
+        { "speaker": "安娜", "zh": "这束花是送给你的，祝你在新家住得开心！", "py": "Zhè shù huā shì sònggěi nǐ de, zhù nǐ zài xīn jiā zhù de kāixīn!", "es": "Este ramo es para ti: ¡que seas muy feliz en tu casa nueva!" },
+        { "speaker": "雨果", "zh": "谢谢！我把它放在桌子上吧。", "py": "Xièxie! Wǒ bǎ tā fàng zài zhuōzi shang ba.", "es": "¡Gracias! Lo pongo en la mesa." },
+        { "speaker": "小李", "zh": "这是我自己制作的卡片，上面画着你的新房子。", "py": "Zhè shì wǒ zìjǐ zhìzuò de kǎpiàn, shàngmian huàzhe nǐ de xīn fángzi.", "es": "Esta tarjeta la he hecho yo; tiene dibujada tu casa nueva." },
+        { "speaker": "雨果", "zh": "太漂亮了！我要把它挂在书架旁边。", "py": "Tài piàoliang le! Wǒ yào bǎ tā guà zài shūjià pángbiān.", "es": "¡Qué bonita! Voy a colgarla al lado de la estantería." },
+        { "speaker": "大卫", "zh": "你家楼下的保安真热情，他帮我把啤酒搬上来了。", "py": "Nǐ jiā lóu xià de bǎo'ān zhēn rèqíng, tā bāng wǒ bǎ píjiǔ bān shanglai le.", "es": "El vigilante de tu portal es majísimo: me ha ayudado a subir las cervezas." },
+        { "speaker": "雨果", "zh": "对，他人很好。搬家那天，他也帮我把冰箱搬到了楼上。", "py": "Duì, tā rén hěn hǎo. Bānjiā nà tiān, tā yě bāng wǒ bǎ bīngxiāng bāndào le lóu shang.", "es": "Sí, es muy buena persona. El día de la mudanza también me ayudó a subir la nevera." },
+        { "speaker": "安娜", "zh": "整个房子都很干净，比宿舍舒服多了。", "py": "Zhěnggè fángzi dōu hěn gānjìng, bǐ sùshè shūfu duō le.", "es": "La casa entera está limpísima; es mucho más cómoda que la residencia." },
+        { "speaker": "雨果", "zh": "我把整个房子打扫了三遍！", "py": "Wǒ bǎ zhěnggè fángzi dǎsǎo le sān biàn!", "es": "¡He limpiado la casa entera tres veces!" },
+        { "speaker": "大卫", "zh": "这个收音机是你的吗？很旧啊。", "py": "Zhège shōuyīnjī shì nǐ de ma? Hěn jiù a.", "es": "¿Esta radio es tuya? Es muy antigua." },
+        { "speaker": "雨果", "zh": "是房东的。她说是她爸爸三十年前买的，我决定把它保留下来。", "py": "Shì fángdōng de. Tā shuō shì tā bàba sānshí nián qián mǎi de, wǒ juédìng bǎ tā bǎoliú xialai.", "es": "Es de la casera. Dice que la compró su padre hace treinta años; he decidido quedármela." },
+        { "speaker": "小李", "zh": "这些房屋也很旧吧？是什么时候造的？", "py": "Zhèxiē fángwū yě hěn jiù ba? Shì shénme shíhou zào de?", "es": "Estos edificios también son antiguos, ¿no? ¿Cuándo los construyeron?" },
+        { "speaker": "雨果", "zh": "听房东说，是五十年前造的。我们把收音机打开，听听音乐吧！", "py": "Tīng fángdōng shuō, shì wǔshí nián qián zào de. Wǒmen bǎ shōuyīnjī dǎkāi, tīngting yīnyuè ba!", "es": "Según la casera, hace cincuenta años. ¡Encendamos la radio y pongamos música!" },
+        { "speaker": "安娜", "zh": "好！今天来你家做客，真开心！", "py": "Hǎo! Jīntiān lái nǐ jiā zuòkè, zhēn kāixīn!", "es": "¡Venga! ¡Qué bien lo estamos pasando en tu casa!" }
+      ],
+      "notes": "Cuando vas 做客 a una casa china, lo normal es llevar algo: fruta, flores, bebida o un detalle hecho a mano. El anfitrión dice 欢迎欢迎, 快进来, 随便坐 («siéntate donde quieras»). 是…造的 / 是…买的 es el 是…的 de A2: subraya cuándo o quién."
+    },
+    { "type": "exercises", "count": 20, "bank": ["g-complements", "g-zai", "g-gei", "g-lai-qu", "g-word-order"] },
+    {
+      "type": "sentence-builder",
+      "title": "Construye la frase completa",
+      "items": [
+        { "sentence": { "slots": { "time0": { "zh": "搬家那天" }, "subject": { "zh": "保安" }, "adverb": { "zh": "也" }, "with": { "zh": "把我的冰箱" }, "verb1": { "zh": "搬到" }, "object": { "zh": "楼上" }, "complement": { "zh": "来" }, "particle": { "zh": "了" } }, "end": "。", "es": "El día de la mudanza, el vigilante también me subió la nevera hasta aquí." }, "distractors": ["在"] },
+        { "sentence": { "slots": { "time0": { "zh": "签合同以前" }, "subject": { "zh": "你" }, "aux": { "zh": "应该" }, "with": { "zh": "把合同" }, "verb1": { "zh": "看" }, "complement": { "zh": "两遍" } }, "end": "。", "es": "Antes de firmar el contrato deberías leerlo dos veces." } },
+        { "sentence": { "slots": { "time0": { "zh": "明天上午" }, "subject": { "zh": "我们" }, "aux": { "zh": "得" }, "with": { "zh": "把这些旧家具和不要的衣服" }, "verb1": { "zh": "送给" }, "object": { "zh": "需要的人" } }, "end": "。", "es": "Mañana por la mañana tenemos que darles estos muebles viejos y la ropa que no queremos a quien los necesite." }, "distractors": ["没"] },
+        { "sentence": { "slots": { "subject": { "zh": "安娜" }, "time": { "zh": "昨天晚上" }, "adverb": { "zh": "已经" }, "with": { "zh": "把雨果的衬衫和裤子" }, "verb1": { "zh": "挂起来" }, "particle": { "zh": "了" } }, "end": "。", "es": "Anoche Ana ya colgó las camisas y los pantalones de Hugo." } },
+        { "sentence": { "slots": { "time0": { "zh": "星期六下午" }, "subject": { "zh": "物业的人" }, "adverb": { "zh": "照着说明书" }, "with": { "zh": "把新空调" }, "verb1": { "zh": "安装好" }, "particle": { "zh": "了" } }, "end": "。", "es": "El sábado por la tarde los de mantenimiento instalaron el aire acondicionado nuevo siguiendo las instrucciones." } },
+        { "sentence": { "slots": { "time0": { "zh": "下个月" }, "subject": { "zh": "小李" }, "aux": { "zh": "要" }, "with": { "zh": "把押金和最后一个月的房租" }, "verb1": { "zh": "转给" }, "object": { "zh": "房东" } }, "end": "。", "es": "El mes que viene Xiao Li tiene que transferirle a la casera la fianza y el último mes de alquiler." }, "distractors": ["被"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "欢迎来我家做客！", "py": "Huānyíng lái wǒ jiā zuòkè!", "es": "¡Bienvenidos a mi casa!" },
+        { "zh": "这束花是送给你的。", "py": "Zhè shù huā shì sònggěi nǐ de.", "es": "Este ramo es para ti." },
+        { "zh": "我把整个房子打扫了三遍。", "py": "Wǒ bǎ zhěnggè fángzi dǎsǎo le sān biàn.", "es": "He limpiado la casa entera tres veces." },
+        { "zh": "我们把收音机打开，听听音乐吧！", "py": "Wǒmen bǎ shōuyīnjī dǎkāi, tīngting yīnyuè ba!", "es": "¡Encendamos la radio y pongamos música!" }
+      ],
+      "respond": [
+        { "q": { "zh": "你搬家以后，把旧东西怎么办了？", "py": "Nǐ bānjiā yǐhòu, bǎ jiù dōngxi zěnme bàn le?", "es": "Después de mudarte, ¿qué hiciste con las cosas viejas?" }, "model": { "zh": "我把旧书送给了朋友，把旧沙发卖了。", "py": "Wǒ bǎ jiù shū sònggěi le péngyou, bǎ jiù shāfā mài le.", "es": "Les di los libros viejos a unos amigos y vendí el sofá viejo." } },
+        { "q": { "zh": "去朋友家做客，你会带什么？", "py": "Qù péngyou jiā zuòkè, nǐ huì dài shénme?", "es": "Cuando vas de visita a casa de un amigo, ¿qué llevas?" }, "model": { "zh": "我会带一束花或者一些水果。", "py": "Wǒ huì dài yí shù huā huòzhě yìxiē shuǐguǒ.", "es": "Llevo un ramo de flores o algo de fruta." } },
+        { "q": { "zh": "你的钥匙呢？", "py": "Nǐ de yàoshi ne?", "es": "¿Y tus llaves?" }, "model": { "zh": "我把钥匙放在书包里了。", "py": "Wǒ bǎ yàoshi fàng zài shūbāo li le.", "es": "Las he metido en la mochila." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Mi casa en Shanghái",
+      "text": "雨果搬家以前，先去跟宿舍的朋友们告别。他把自己的旧书送给了大卫，把一些不要的衣服留给了需要的人。搬家那天，他订了一家运输公司，工人把整个房间的东西都搬到了车上。新房子的楼很旧，这些房屋是五十年前造的，可是里面的设备都是新的。楼下的保安非常热情，还帮雨果把冰箱搬到了楼上。安娜帮他买了十个衣架，把他的衣服都挂了起来。一个星期以后，雨果请朋友们来做客。安娜送给他一束花，小李把自己制作的卡片送给了他，卡片上画着他的新房子。雨果把卡片挂在书架旁边，把花放在桌子上。房东的旧收音机也还能用，大家把它打开，一边听音乐一边吃饭。晚上十点，朋友们要走了，雨果把他们送到楼下。保安笑着说：“你的朋友真多！”雨果说：“是啊，这儿就是我在上海的家！”",
+      "es": "Antes de mudarse, Hugo fue a despedirse de sus amigos de la residencia. Le dio sus libros viejos a David y dejó la ropa que no quería para quien la necesitara. El día de la mudanza contrató una empresa de transportes, y los operarios cargaron en el camión todo lo que había en la habitación. El edificio nuevo es antiguo —lo construyeron hace cincuenta años—, pero todas las instalaciones son nuevas. El vigilante de abajo es muy amable y le ayudó a subir la nevera. Ana le compró diez perchas y le colgó toda la ropa. Una semana después, Hugo invitó a sus amigos a casa. Ana le regaló un ramo de flores, y Xiao Li, una tarjeta hecha por él con la casa nueva dibujada. Hugo colgó la tarjeta junto a la estantería y puso las flores en la mesa. La vieja radio de la casera todavía funciona: la encendieron y cenaron escuchando música. A las diez de la noche, los amigos se fueron y Hugo los acompañó hasta el portal. El vigilante dijo sonriendo: «¡Cuántos amigos tienes!». Y Hugo contestó: «Sí: esta es mi casa en Shanghái».",
+      "questions": [
+        { "q": "¿Qué hizo Hugo con sus libros viejos?", "options": ["送给了大卫", "卖了", "带到了新房子"], "answer": 0 },
+        { "q": "¿Cuándo se construyó el edificio?", "options": ["五十年前", "三十年前", "去年"], "answer": 0 },
+        { "q": "¿Qué le regaló Xiao Li?", "options": ["自己制作的卡片", "一束花", "一个收音机"], "answer": 0 },
+        { "q": "¿Quién le ayudó a subir la nevera?", "options": ["保安", "大卫", "房东"], "answer": 0 },
+        { "q": "¿Qué compró Ana?", "options": ["十个衣架", "一个书架", "一个冰箱"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

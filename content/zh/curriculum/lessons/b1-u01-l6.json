@@ -1,0 +1,136 @@
+{
+  "id": "b1-u01-l6",
+  "title": "¿Con 把 o sin 把? Errores típicos al decorar la casa",
+  "zh": "我认识他，不说“我把他认识”",
+  "goal": "Evitar los errores típicos con 把 (verbo solo, objeto indefinido, verbos como 认识 / 喜欢 / 有) y usar V成 / 照着 al decorar una habitación.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "设计", "pinyin": "shèjì", "es": "diseñar; diseño", "note": "学设计 = estudiar diseño; 设计师 = diseñador." },
+    { "hanzi": "面积", "pinyin": "miànjī", "es": "superficie, metros (de una casa)", "note": "面积多大？ — 二十平方米 (20 m²)." },
+    { "hanzi": "形状", "pinyin": "xíngzhuàng", "es": "forma" },
+    { "hanzi": "牌子", "pinyin": "páizi", "es": "marca; letrero, cartel", "note": "什么牌子的？ = ¿de qué marca es?" },
+    { "hanzi": "配", "pinyin": "pèi", "es": "combinar, ir a juego; hacer una copia (de una llave)", "note": "颜色很配 = los colores combinan; 配钥匙 = hacer copia de una llave." },
+    { "hanzi": "组合", "pinyin": "zǔhé", "es": "combinar; conjunto, combinación", "note": "组合沙发 = sofá modular." },
+    { "hanzi": "整体", "pinyin": "zhěngtǐ", "es": "conjunto; en conjunto", "note": "整体看起来 = en conjunto parece…" },
+    { "hanzi": "类", "pinyin": "lèi", "es": "tipo, clase, categoría", "note": "分成三类 = dividir en tres tipos." },
+    { "hanzi": "数量", "pinyin": "shùliàng", "es": "cantidad, número" },
+    { "hanzi": "照", "pinyin": "zhào", "es": "fotografiar; reflejar, mirarse; según, siguiendo", "note": "照照片, 照镜子; 照着说明书 = siguiendo las instrucciones." },
+    { "hanzi": "图画", "pinyin": "túhuà", "es": "dibujo, cuadro, ilustración" },
+    { "hanzi": "玩具", "pinyin": "wánjù", "es": "juguete" }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "我们把这些东西分成三类吧。", "py": "Wǒmen bǎ zhèxiē dōngxi fēnchéng sān lèi ba.", "es": "Dividamos estas cosas en tres tipos." },
+        { "zh": "雨果照着说明书把书架安装好了。", "py": "Yǔguǒ zhàozhe shuōmíngshū bǎ shūjià ānzhuāng hǎo le.", "es": "Hugo montó la estantería siguiendo las instrucciones." },
+        { "zh": "我很喜欢这张图画。", "py": "Wǒ hěn xǐhuan zhè zhāng túhuà.", "es": "Me gusta mucho este cuadro." }
+      ]
+    },
+    { "type": "vocab", "title": "Decorar la habitación", "words": ["设计", "面积", "形状", "牌子", "配", "组合", "整体", "类", "数量", "照", "图画", "玩具"] },
+    {
+      "type": "phonetics-drill",
+      "title": "Oír la diferencia: 把 + resultado frente al verbo solo",
+      "markdown": "En la frase hablada, lo que te dice si la frase con 把 está completa es **lo que suena detrás del verbo**: 我把书看**完了** (completo) frente a 我看书 (sin 把). Acostúmbrate a esperar ese final: 完了, 好了, 在 + lugar, 给 + persona.\n\nPalabras de hoy con trampa:\n\n- **数量 shùliàng**: aquí 数 es *shù* (nombre, «número»), no *shǔ* (verbo, «contar»).\n- **照着 zhàozhe**: 着 neutro, como en A2.\n- **面积 miànjī**: cuarto + primero.\n- **牌子 páizi**: *p* con aire y 子 neutro.",
+      "items": [
+        { "audio": "我把书看完了", "prompt": "¿Qué frase oyes?", "options": ["我把书看完了", "我把书看了", "我看完书了"], "answer": 0 },
+        { "audio": "数量", "options": ["shùliàng", "shǔliàng", "sùliàng"], "answer": 0, "explain": "数 como nombre: shù, cuarto tono." },
+        { "audio": "照着图画", "options": ["zhàozhe túhuà", "zhāozhe túhuà", "zhàozháo túhuà"], "answer": 0, "explain": "着 de «siguiendo, manteniendo» es neutro." },
+        { "audio": "面积", "options": ["miànjī", "miǎnjī", "miànjí"], "answer": 0 },
+        { "audio": "牌子", "options": ["páizi", "bàizi", "páizǐ"], "answer": 0, "explain": "p aspirada y segundo tono; 子 neutro." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["设", "形"],
+      "mnemonics": {
+        "设": "讠 (palabra) + 殳 (mano con herramienta): planear con palabras y con las manos. Establecer, diseñar (设计).",
+        "形": "开 + 彡 (trazos de dibujo): lo que dibujas con unos cuantos trazos. La forma, la figura (形状)."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "¿Con 把 o sin 把?",
+      "markdown": "Ya conoces las formas de 把. Hoy, **cuándo no se puede usar** y los errores más frecuentes:\n\n1. **El verbo nunca va solo**: *我把书看* ✗. O 我**看书** (sin 把), o 我把书**看完了** (con resultado).\n2. **Solo verbos que «hacen algo» al objeto** (lo mueven, lo cambian, lo dejan de una manera). No admiten 把: **是, 有, 在, 认识, 知道, 喜欢, 觉得, 看见**, ni **来 / 去 / 回**: 我认识他, nunca *我把他认识*.\n3. **Objeto concreto**: 我**买了一本书**, no *我把一本书买了*.\n4. **V成** (convertir, dividir en…) también exige 把: 把东西**分成**三类, 把这个房间**变成**书房.\n\nY una palabra útil: **照着 + modelo** («siguiendo…») va antes de 把, en *Adverbios*: 他**照着说明书**把书架安装好了.",
+      "focus": ["with", "verb1"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "我们", "py": "wǒmen" }, "with": { "zh": "把这些东西", "py": "bǎ zhèxiē dōngxi" }, "verb1": { "zh": "分成", "py": "fēnchéng" }, "object": { "zh": "三类", "py": "sān lèi" }, "particle": { "zh": "吧", "py": "ba" } }, "end": "。", "es": "Dividamos estas cosas en tres tipos.", "esOrder": [{ "text": "Dividamos", "slot": "verb1" }, { "text": "estas cosas", "slot": "with" }, { "text": "en tres tipos", "slot": "object" }] },
+        { "slots": { "subject": { "zh": "安娜", "py": "Ānnà" }, "with": { "zh": "把房间", "py": "bǎ fángjiān" }, "verb1": { "zh": "设计得", "py": "shèjì de" }, "complement": { "zh": "很漂亮", "py": "hěn piàoliang" } }, "end": "。", "es": "Ana ha diseñado la habitación preciosa." },
+        { "slots": { "subject": { "zh": "雨果", "py": "Yǔguǒ" }, "adverb": { "zh": "照着说明书", "py": "zhàozhe shuōmíngshū" }, "with": { "zh": "把书架", "py": "bǎ shūjià" }, "verb1": { "zh": "安装好", "py": "ānzhuāng hǎo" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Hugo montó la estantería siguiendo las instrucciones." },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "很", "py": "hěn" }, "verb1": { "zh": "喜欢", "py": "xǐhuan" }, "object": { "zh": "这张图画", "py": "zhè zhāng túhuà" } }, "end": "。", "es": "Me gusta mucho este cuadro (喜欢: sin 把)." },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "verb1": { "zh": "去配", "py": "qù pèi" }, "object": { "zh": "一把钥匙", "py": "yì bǎ yàoshi" } }, "end": "。", "es": "Voy a hacer una copia de la llave (objeto indefinido: sin 把; aquí 把 es el clasificador)." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "他", "py": "tā" }, "adverb": { "zh": "没", "py": "méi" }, "with": { "zh": "把玩具", "py": "bǎ wánjù" }, "verb1": { "zh": "放回去", "py": "fàng huiqu" } }, "end": "。", "es": "No ha vuelto a guardar los juguetes." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "with": { "zh": "把房间的面积", "py": "bǎ fángjiān de miànjī" }, "verb1": { "zh": "算好", "py": "suàn hǎo" }, "particle": { "zh": "了吗", "py": "le ma" } }, "end": "？", "es": "¿Has calculado ya los metros de la habitación?" },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "aux": { "zh": "能", "py": "néng" }, "with": { "zh": "把这两类东西", "py": "bǎ zhè liǎng lèi dōngxi" }, "verb1": { "zh": "分开", "py": "fēnkāi" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿Puedes separar estos dos tipos de cosas?" }
+      ],
+      "mistakes": [
+        { "wrong": "我把书看。", "right": "我看书。 / 我把书看完了。", "why": "Con 把 el verbo no puede ir solo: o quitas 把, o añades lo que le pasa al objeto." },
+        { "wrong": "我把他认识。", "right": "我认识他。", "why": "认识, 知道, 喜欢, 是, 有 no «hacen» nada al objeto: no admiten 把." },
+        { "wrong": "我把一本书买了。", "right": "我买了一本书。", "why": "El objeto de 把 tiene que ser concreto y conocido; «un libro cualquiera» va detrás del verbo." },
+        { "wrong": "我把上海去了。", "right": "我去了上海。", "why": "来 / 去 / 回 + lugar nunca llevan 把." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Ana, diseñadora",
+      "lines": [
+        { "speaker": "安娜", "zh": "雨果，你的房间面积多大？", "py": "Yǔguǒ, nǐ de fángjiān miànjī duō dà?", "es": "Hugo, ¿cuántos metros tiene tu habitación?" },
+        { "speaker": "雨果", "zh": "二十多平方米。我想把它设计得漂亮一点儿。", "py": "Èrshí duō píngfāngmǐ. Wǒ xiǎng bǎ tā shèjì de piàoliang yìdiǎnr.", "es": "Veintipocos metros. Quiero dejarla un poco más bonita." },
+        { "speaker": "安娜", "zh": "我是学设计的，我帮你！你的家具颜色都不一样，整体看起来有点儿乱。", "py": "Wǒ shì xué shèjì de, wǒ bāng nǐ! Nǐ de jiājù yánsè dōu bù yíyàng, zhěngtǐ kàn qilai yǒudiǎnr luàn.", "es": "Yo estudio diseño, ¡te ayudo! Tus muebles son todos de colores distintos y en conjunto queda un poco desordenado." },
+        { "speaker": "雨果", "zh": "那怎么办？", "py": "Nà zěnme bàn?", "es": "¿Y qué hago?" },
+        { "speaker": "安娜", "zh": "我们把这个组合沙发分开，一个放在门旁边，一个放在书架对面。", "py": "Wǒmen bǎ zhège zǔhé shāfā fēnkāi, yí ge fàng zài mén pángbiān, yí ge fàng zài shūjià duìmiàn.", "es": "Separamos este sofá modular: una parte junto a la puerta y otra enfrente de la estantería." },
+        { "speaker": "雨果", "zh": "好主意。我很喜欢这张图画，把它挂在沙发上面吧。", "py": "Hǎo zhǔyi. Wǒ hěn xǐhuan zhè zhāng túhuà, bǎ tā guà zài shāfā shàngmian ba.", "es": "Buena idea. Este cuadro me encanta: colguémoslo encima del sofá." },
+        { "speaker": "安娜", "zh": "好。这张图画的颜色跟沙发很配。", "py": "Hǎo. Zhè zhāng túhuà de yánsè gēn shāfā hěn pèi.", "es": "Vale. Los colores del cuadro combinan muy bien con el sofá." },
+        { "speaker": "雨果", "zh": "这个新书架是什么牌子的？怎么这么多东西？", "py": "Zhège xīn shūjià shì shénme páizi de? Zěnme zhème duō dōngxi?", "es": "¿De qué marca es esta estantería nueva? ¿Por qué trae tantas piezas?" },
+        { "speaker": "安娜", "zh": "这个牌子的书架都要自己安装。你照着说明书上的图画装就行。", "py": "Zhège páizi de shūjià dōu yào zìjǐ ānzhuāng. Nǐ zhàozhe shuōmíngshū shang de túhuà zhuāng jiù xíng.", "es": "Las estanterías de esta marca hay que montarlas uno mismo. Basta con que sigas los dibujos de las instrucciones." },
+        { "speaker": "雨果", "zh": "书架上放什么呢？我的东西数量太多了。", "py": "Shūjià shang fàng shénme ne? Wǒ de dōngxi shùliàng tài duō le.", "es": "¿Y qué pongo en la estantería? Tengo demasiadas cosas." },
+        { "speaker": "安娜", "zh": "你先把东西分成三类：书、照片和小玩具。", "py": "Nǐ xiān bǎ dōngxi fēnchéng sān lèi: shū, zhàopiàn hé xiǎo wánjù.", "es": "Primero divide las cosas en tres tipos: libros, fotos y muñequitos." },
+        { "speaker": "雨果", "zh": "那些小玩具是我从西班牙带来的，我很喜欢。", "py": "Nàxiē xiǎo wánjù shì wǒ cóng Xībānyá dài lai de, wǒ hěn xǐhuan.", "es": "Esos muñequitos me los traje de España: me encantan." },
+        { "speaker": "安娜", "zh": "那就把它们放在书架最上面吧。好看！", "py": "Nà jiù bǎ tāmen fàng zài shūjià zuì shàngmian ba. Hǎokàn!", "es": "Pues ponlos en lo más alto de la estantería. ¡Queda genial!" }
+      ],
+      "notes": "Fíjate en que Hugo dice 我很喜欢这张图画 (sin 把: 喜欢 no cambia el cuadro), pero 把它挂在沙发上面 (con 把: lo cuelga en un sitio). 平方米 = metro cuadrado; en los anuncios de pisos verás la superficie siempre en 平方米 (o ㎡). Muchos muebles en China se compran por internet y llegan para montar: 照着说明书安装."
+    },
+    { "type": "exercises", "count": 18, "bank": ["g-word-order", "g-complements", "g-measure-words"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "我" }, "verb1": { "zh": "认识" }, "object": { "zh": "房东" } }, "end": "。", "es": "Conozco a la casera." }, "distractors": ["把"] },
+        { "sentence": { "slots": { "subject": { "zh": "安娜" }, "with": { "zh": "把房间" }, "verb1": { "zh": "设计得" }, "complement": { "zh": "很漂亮" } }, "end": "。", "es": "Ana ha diseñado la habitación preciosa." } },
+        { "sentence": { "slots": { "subject": { "zh": "你" }, "adverb": { "zh": "先" }, "with": { "zh": "把东西" }, "verb1": { "zh": "分成" }, "object": { "zh": "三类" } }, "end": "。", "es": "Primero divide las cosas en tres tipos." }, "distractors": ["分"] },
+        { "sentence": { "slots": { "time0": { "zh": "上个周末" }, "subject": { "zh": "雨果" }, "adverb": { "zh": "照着说明书上的图画" }, "with": { "zh": "把新书架" }, "verb1": { "zh": "安装好" }, "particle": { "zh": "了" } }, "end": "。", "es": "El fin de semana pasado Hugo montó la estantería nueva siguiendo los dibujos de las instrucciones." } }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "我认识他，我很喜欢他。", "py": "Wǒ rènshi tā, wǒ hěn xǐhuan tā.", "es": "Lo conozco y me cae muy bien." },
+        { "zh": "你先把东西分成三类。", "py": "Nǐ xiān bǎ dōngxi fēnchéng sān lèi.", "es": "Primero divide las cosas en tres tipos." },
+        { "zh": "这张图画的颜色跟沙发很配。", "py": "Zhè zhāng túhuà de yánsè gēn shāfā hěn pèi.", "es": "Los colores del cuadro combinan muy bien con el sofá." },
+        { "zh": "他照着说明书把书架安装好了。", "py": "Tā zhàozhe shuōmíngshū bǎ shūjià ānzhuāng hǎo le.", "es": "Montó la estantería siguiendo las instrucciones." }
+      ],
+      "respond": [
+        { "q": { "zh": "你的房间面积多大？", "py": "Nǐ de fángjiān miànjī duō dà?", "es": "¿Cuántos metros tiene tu habitación?" }, "model": { "zh": "不太大，十五平方米。", "py": "Bú tài dà, shíwǔ píngfāngmǐ.", "es": "No muy grande: quince metros cuadrados." } },
+        { "q": { "zh": "这个书架是什么牌子的？", "py": "Zhège shūjià shì shénme páizi de?", "es": "¿De qué marca es esta estantería?" }, "model": { "zh": "我不知道，是房东买的。", "py": "Wǒ bù zhīdào, shì fángdōng mǎi de.", "es": "No lo sé, la compró la casera." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Una habitación pequeña, pero bonita",
+      "text": "雨果的房间面积不大，只有二十多平方米。安娜是学设计的，她说：“房间小没关系，整体的颜色要配。”她先让雨果把东西分成三类：每天要用的、有时候用的和不需要的。不需要的东西，雨果都送给了别人。然后，安娜把组合沙发分开，一个放在门旁边，一个放在书架对面。雨果买了一个新牌子的书架，形状很特别，有很多小格子。他照着说明书上的图画，一个人把它安装好了。书架上的东西数量不多：一些书、几张照片和几个从西班牙带来的小玩具。最后，雨果把一张很大的图画挂在沙发上面。安娜照了几张照片，发给了王老师。王老师说：“你们可以去当设计师了！”",
+      "es": "La habitación de Hugo no es grande: solo tiene veintipocos metros cuadrados. Ana estudia diseño y le dijo: «Que la habitación sea pequeña no importa: lo que tiene que combinar es el color del conjunto». Primero le hizo dividir sus cosas en tres tipos: lo que usa a diario, lo que usa de vez en cuando y lo que no necesita. Lo que no necesitaba, Hugo se lo regaló a otras personas. Después, Ana separó el sofá modular: una parte junto a la puerta y la otra enfrente de la estantería. Hugo compró una estantería de una marca nueva, con una forma muy original, llena de casillas. La montó él solo siguiendo los dibujos de las instrucciones. En la estantería no hay muchas cosas: algunos libros, unas cuantas fotos y unos muñequitos que trajo de España. Por último, Hugo colgó un cuadro muy grande encima del sofá. Ana hizo unas fotos y se las mandó a la profesora Wang, que dijo: «¡Ya podéis trabajar de diseñadores!».",
+      "questions": [
+        { "q": "¿Cuántos metros tiene la habitación?", "options": ["二十多平方米", "十平方米", "五十平方米"], "answer": 0 },
+        { "q": "¿En cuántos tipos dividió Hugo sus cosas?", "options": ["三类", "两类", "四类"], "answer": 0 },
+        { "q": "¿Cómo montó la estantería?", "options": ["照着说明书上的图画", "小李帮他", "物业的人帮他"], "answer": 0 },
+        { "q": "¿Qué colgó encima del sofá?", "options": ["一张很大的图画", "几张照片", "一件衬衫"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

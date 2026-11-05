@@ -1,0 +1,132 @@
+{
+  "id": "a1-u16-l3",
+  "title": "Dame una bolsa: 给, 再, 一共 y 只",
+  "zh": "请给我一包纸",
+  "goal": "Pedir cosas con 给 + persona + cosa, pedir «otro más» con 再, y entender el total (一共) y lo que solo quieres o tienes (只).",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "给", "pinyin": "gěi", "es": "dar", "note": "给我… «dame…»; 给你 «aquí tienes». Como preposición («a, para») lo verás en la U20." },
+    { "hanzi": "再", "pinyin": "zài", "es": "otra vez, más (lo que aún no ha pasado)", "note": "Ya lo conoces de 再见 y 再说一遍. 再来一个 = otro más." },
+    { "hanzi": "一共", "pinyin": "yígòng", "es": "en total" },
+    { "hanzi": "只", "pinyin": "zhǐ", "es": "solo, solamente", "note": "Delante del verbo: 我只要一个." },
+    { "hanzi": "还", "pinyin": "hái", "es": "además, también, todavía", "note": "还要别的吗？ = ¿algo más? (Otra lectura: huán «devolver».)" },
+    { "hanzi": "包", "pinyin": "bāo", "es": "bolsa, paquete; (clasificador) paquete de", "note": "一包纸 = un paquete de pañuelos; 一包饺子 = una bolsa de jiaozi." },
+    { "hanzi": "钱包", "pinyin": "qiánbāo", "es": "cartera, monedero" },
+    { "hanzi": "换", "pinyin": "huàn", "es": "cambiar", "note": "换一个 = cambiarlo por otro; 换钱 = cambiar dinero." },
+    { "hanzi": "收", "pinyin": "shōu", "es": "recibir, cobrar", "note": "收你一百 = le cobro de cien (recibo cien)." },
+    { "hanzi": "门票", "pinyin": "ménpiào", "es": "entrada (de cine, museo, parque)" }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "请给我一包纸。", "py": "Qǐng gěi wǒ yì bāo zhǐ.", "es": "Deme un paquete de pañuelos, por favor." },
+        { "zh": "一共多少钱？", "py": "Yígòng duōshao qián?", "es": "¿Cuánto es en total?" },
+        { "zh": "我只有三十块。", "py": "Wǒ zhǐ yǒu sānshí kuài.", "es": "Solo tengo treinta yuanes." }
+      ]
+    },
+    { "type": "vocab", "title": "En la caja", "words": ["给", "再", "一共", "只", "还", "包", "钱包", "换", "收", "门票"] },
+    {
+      "type": "phonetics-drill",
+      "title": "El cambio de tono de 一: 一共, 一包, 一个",
+      "markdown": "Repaso de la regla del 一 (Etapa 0), que en las compras sale a cada momento:\n\n- 一 + **4.º** tono → **yí** (sube): 一共 *yígòng*, 一个 *yí ge* (个 es 4.º en origen), 一块 *yí kuài*.\n- 一 + **1.º, 2.º o 3.º** → **yì** (cae): 一包 *yì bāo*, 一瓶 *yì píng*, 一本 *yì běn*.\n- Solo, al contar o al final: **yī** (一, 二, 三…; 第一).\n\nY un par de homófonos: 只 *zhǐ* (solo) y 纸 *zhǐ* (papel) suenan igual.",
+      "items": [
+        { "audio": "一共", "options": ["yígòng", "yìgòng", "yīgòng"], "answer": 0, "explain": "共 es 4.º tono → yí." },
+        { "audio": "一包", "options": ["yí bāo", "yì bāo", "yī bāo"], "answer": 1, "explain": "包 es 1.º tono → yì." },
+        { "audio": "一瓶", "options": ["yì píng", "yí píng", "yī píng"], "answer": 0, "explain": "瓶 es 2.º tono → yì." },
+        { "audio": "一块", "options": ["yì kuài", "yí kuài", "yī kuài"], "answer": 1, "explain": "块 es 4.º tono → yí." },
+        { "audio": "只", "options": ["zhǐ", "zǐ", "jǐ"], "answer": 0, "explain": "zh con la lengua hacia atrás; igual que 纸." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["给", "包"],
+      "mnemonics": {
+        "给": "纟 (hilo de seda) + 合 (juntar, cerrar): atar con hilo lo que vas a entregar. Dar.",
+        "包": "勹 (algo que envuelve) + 巳 (un bebé enroscado): el vientre que envuelve al niño. Envolver → bolsa, paquete (钱包, 书包, 包子)."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "给 + persona + cosa; 再, 一共, 只, 还",
+      "markdown": "**Doble objeto**: algunos verbos llevan **dos objetos**: primero **a quién**, después **qué**. Igual que en español «**dame** un libro» (me = a mí).\n- 给我一本书 (dame un libro) · 老师给我们一本书 · 我问你一个问题 · 找你五毛 (te devuelvo cinco mao).\n- El orden es fijo: **persona + cosa**. Nunca *给一本书我*.\n- En el esqueleto, el verbo con la persona va en el **verbo 1** (给我) y la cosa en el **objeto**.\n\n**Adverbios de hoy** (todos **delante del verbo** o del precio, en el hueco de los adverbios):\n- **再** «otra vez, más» para lo que **todavía no** ha pasado: 我们**再**买一瓶水吧. En las tiendas: **再来**一个 «otro más».\n- **一共** «en total»: **一共**二十六块.\n- **只** «solo»: 我**只**要一个 · 我**只**有三十块. En español «solo» puede ir en muchos sitios; en chino, delante del verbo.\n- **还** «además»: 你**还**要别的吗？ «¿quiere algo más?».\n\n**包**: clasificador para paquetes y bolsas: 一包纸, 两包饺子.",
+      "focus": ["adverb", "object"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "老师", "py": "lǎoshī" }, "verb1": { "zh": "给我们", "py": "gěi wǒmen" }, "object": { "zh": "一本书", "py": "yì běn shū" } }, "end": "。", "es": "La profesora nos da un libro.", "esOrder": [{ "text": "La profesora", "slot": "subject" }, { "text": "nos da", "slot": "verb1" }, { "text": "un libro", "slot": "object" }] },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "给我", "py": "gěi wǒ" }, "object": { "zh": "一包纸", "py": "yì bāo zhǐ" }, "particle": { "zh": "吧", "py": "ba" } }, "end": "。", "es": "Dame un paquete de pañuelos." },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "verb1": { "zh": "问你", "py": "wèn nǐ" }, "object": { "zh": "一个问题", "py": "yí ge wèntí" } }, "end": "。", "es": "Te hago una pregunta." },
+        { "slots": { "adverb": { "zh": "一共", "py": "yígòng" }, "object": { "zh": "二十六块", "py": "èrshíliù kuài" } }, "end": "。", "es": "Son veintiséis yuanes en total.", "esOrder": [{ "text": "Son" }, { "text": "veintiséis yuanes", "slot": "object" }, { "text": "en total", "slot": "adverb" }] },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "只", "py": "zhǐ" }, "verb1": { "zh": "要", "py": "yào" }, "object": { "zh": "一个", "py": "yí ge" } }, "end": "。", "es": "Solo quiero uno." },
+        { "slots": { "subject": { "zh": "我们", "py": "wǒmen" }, "adverb": { "zh": "再", "py": "zài" }, "verb1": { "zh": "买", "py": "mǎi" }, "object": { "zh": "一瓶水", "py": "yì píng shuǐ" }, "particle": { "zh": "吧", "py": "ba" } }, "end": "。", "es": "Compremos otra botella de agua." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "他", "py": "tā" }, "adverb": { "zh": "不", "py": "bú" }, "verb1": { "zh": "要", "py": "yào" }, "object": { "zh": "别的", "py": "biéde" } }, "end": "。", "es": "No quiere nada más." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "adverb": { "zh": "还", "py": "hái" }, "verb1": { "zh": "要", "py": "yào" }, "object": { "zh": "别的", "py": "biéde" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿Quiere algo más?" },
+        { "slots": { "adverb": { "zh": "一共", "py": "yígòng" }, "object": { "zh": "多少钱", "py": "duōshao qián" } }, "end": "？", "es": "¿Cuánto es en total?" }
+      ],
+      "mistakes": [
+        { "wrong": "给一本书我。", "right": "给我一本书。", "why": "Con dos objetos, primero la persona y después la cosa." },
+        { "wrong": "只我要一个。", "right": "我只要一个。", "why": "只 va delante del verbo, no al principio de la frase." },
+        { "wrong": "二十块一共。", "right": "一共二十块。", "why": "一共 va delante del número, como un adverbio." },
+        { "wrong": "我买再一瓶。", "right": "我再买一瓶。", "why": "再 es un adverbio: delante del verbo." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Solo treinta yuanes",
+      "lines": [
+        { "speaker": "服务员", "zh": "你好，你要什么？", "py": "Nǐ hǎo, nǐ yào shénme?", "es": "Hola, ¿qué desea?" },
+        { "speaker": "雨果", "zh": "请给我一包纸，两瓶水。", "py": "Qǐng gěi wǒ yì bāo zhǐ, liǎng píng shuǐ.", "es": "Deme un paquete de pañuelos y dos botellas de agua, por favor." },
+        { "speaker": "服务员", "zh": "好的。你还要别的吗？", "py": "Hǎo de. Nǐ hái yào biéde ma?", "es": "Muy bien. ¿Quiere algo más?" },
+        { "speaker": "雨果", "zh": "再来一包饺子。", "py": "Zài lái yì bāo jiǎozi.", "es": "Y una bolsa de jiaozi." },
+        { "speaker": "服务员", "zh": "一共三十二块。", "py": "Yígòng sānshí'èr kuài.", "es": "Son treinta y dos yuanes en total." },
+        { "speaker": "雨果", "zh": "我钱包里只有三十块！", "py": "Wǒ qiánbāo li zhǐ yǒu sānshí kuài!", "es": "¡En la cartera solo tengo treinta!" },
+        { "speaker": "服务员", "zh": "不够。你可以扫码。", "py": "Bú gòu. Nǐ kěyǐ sǎomǎ.", "es": "No llega. Puede pagar escaneando el código." },
+        { "speaker": "雨果", "zh": "那我不要水，只要纸和饺子。", "py": "Nà wǒ bú yào shuǐ, zhǐ yào zhǐ hé jiǎozi.", "es": "Entonces no quiero el agua: solo los pañuelos y los jiaozi." },
+        { "speaker": "服务员", "zh": "好，二十六块。收你三十，找你四块。", "py": "Hǎo, èrshíliù kuài. Shōu nǐ sānshí, zhǎo nǐ sì kuài.", "es": "Vale, veintiséis. Me da treinta y le devuelvo cuatro." },
+        { "speaker": "雨果", "zh": "谢谢！明天我再来买水。", "py": "Xièxie! Míngtiān wǒ zài lái mǎi shuǐ.", "es": "¡Gracias! Mañana vuelvo a por el agua." }
+      ],
+      "notes": "纸 «papel» es también lo que se pide para «pañuelos de papel»: 一包纸. Fíjate en el juego de palabras 只要纸 *zhǐ yào zhǐ* «solo quiero pañuelos». 收你三十，找你四块 es la fórmula de la caja: «recibo treinta, te devuelvo cuatro»."
+    },
+    { "type": "exercises", "count": 15, "bank": ["g-gei", "g-measure-words", "g-price-age", "u06"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "你" }, "verb1": { "zh": "给我" }, "object": { "zh": "一包纸" }, "particle": { "zh": "吧" } }, "end": "。", "es": "Dame un paquete de pañuelos." }, "distractors": ["一本"] },
+        { "sentence": { "slots": { "subject": { "zh": "我" }, "adverb": { "zh": "只" }, "verb1": { "zh": "要" }, "object": { "zh": "一个" } }, "end": "。", "es": "Solo quiero uno." }, "distractors": ["再"] },
+        { "sentence": { "slots": { "adverb": { "zh": "一共" }, "object": { "zh": "多少钱" } }, "end": "？", "es": "¿Cuánto es en total?" }, "distractors": ["几"] },
+        { "sentence": { "slots": { "subject": { "zh": "我们" }, "adverb": { "zh": "再" }, "verb1": { "zh": "买" }, "object": { "zh": "一瓶水" }, "particle": { "zh": "吧" } }, "end": "。", "es": "Compremos otra botella de agua." }, "distractors": ["只"] },
+        { "sentence": { "slots": { "time0": { "zh": "明天下午" }, "subject": { "zh": "我" }, "aux": { "zh": "想" }, "with": { "zh": "跟小李一起" }, "verb1": { "zh": "去超市" }, "verb2": { "zh": "买" }, "object": { "zh": "两包饺子" } }, "end": "。", "es": "Mañana por la tarde quiero ir al súper con Xiao Li a comprar dos bolsas de jiaozi." }, "distractors": ["本"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "请给我一包纸。", "py": "Qǐng gěi wǒ yì bāo zhǐ.", "es": "Deme un paquete de pañuelos, por favor." },
+        { "zh": "你还要别的吗？", "py": "Nǐ hái yào biéde ma?", "es": "¿Quiere algo más?" },
+        { "zh": "一共多少钱？", "py": "Yígòng duōshao qián?", "es": "¿Cuánto es en total?" },
+        { "zh": "我只有三十块。", "py": "Wǒ zhǐ yǒu sānshí kuài.", "es": "Solo tengo treinta yuanes." }
+      ],
+      "respond": [
+        { "q": { "zh": "你还要别的吗？", "py": "Nǐ hái yào biéde ma?", "es": "¿Quiere algo más?" }, "model": { "zh": "再来一瓶水。", "py": "Zài lái yì píng shuǐ.", "es": "Otra botella de agua." } },
+        { "q": { "zh": "一共三十二块。", "py": "Yígòng sānshí'èr kuài.", "es": "Son treinta y dos yuanes." }, "model": { "zh": "我只有三十块，可以扫码吗？", "py": "Wǒ zhǐ yǒu sānshí kuài, kěyǐ sǎomǎ ma?", "es": "Solo tengo treinta: ¿puedo pagar con el código?" } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Noche de cine",
+      "text": "星期六晚上，雨果和安娜去电影院看电影。门票一张四十五块，两张一共九十块。雨果的钱包里只有五十块，不够！安娜说：“我给你钱。”雨果说：“不用，我扫码。”他们还要两瓶水，一共九十六块。",
+      "es": "El sábado por la noche Hugo y Anna van al cine. Las entradas cuestan cuarenta y cinco yuanes cada una: noventa las dos. En la cartera Hugo solo tiene cincuenta, ¡no le llega! Anna dice: «Te doy el dinero». Hugo dice: «No hace falta, pago con el código». Además quieren dos botellas de agua: noventa y seis yuanes en total.",
+      "questions": [
+        { "q": "¿Cuánto cuesta una entrada?", "options": ["45 yuanes", "90 yuanes", "50 yuanes"], "answer": 0 },
+        { "q": "¿Cuánto dinero lleva Hugo en la cartera?", "options": ["50 yuanes", "90 yuanes", "96 yuanes"], "answer": 0 },
+        { "q": "¿Cuánto pagan en total?", "options": ["96 yuanes", "90 yuanes", "45 yuanes"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

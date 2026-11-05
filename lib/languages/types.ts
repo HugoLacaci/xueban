@@ -259,6 +259,8 @@ export interface CurriculumIndex {
   splitSentences(text: string): string[];
   /** Título del nivel del curso: «HSK 1», «N5», «TOPIK I» */
   levelTitle: string;
+  /** Carga diferida de los pasos de una lección (temario v2: el paquete solo lleva metadatos). */
+  hydrate?(lessonId: string): Promise<void>;
 }
 
 export interface GrammarIndex {

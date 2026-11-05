@@ -1,0 +1,140 @@
+{
+  "id": "a2-u10-l2",
+  "title": "Aunque… pero…: 虽然…，但是…",
+  "zh": "虽然很远，但是…",
+  "goal": "Contrastar dos ideas con 虽然…，但是 / 可是 / 不过… y hablar de la Fiesta de la Primavera en familia: 红包, 福, el animal del año.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "虽然", "pinyin": "suīrán", "es": "aunque", "note": "Abre la primera parte; la segunda empieza por 但是 / 可是 / 不过. Puede ir delante o detrás del sujeto." },
+    { "hanzi": "但是", "pinyin": "dànshì", "es": "pero", "note": "Delante del sujeto de la segunda parte." },
+    { "hanzi": "但", "pinyin": "dàn", "es": "pero (más breve, escrito)", "note": "Igual que 但是." },
+    { "hanzi": "可是", "pinyin": "kěshì", "es": "pero (más oral)", "note": "虽然…，可是… es tan correcto como 虽然…，但是…" },
+    { "hanzi": "不过", "pinyin": "búguò", "es": "pero, aunque, eso sí", "note": "Más suave: matiza más que contradice." },
+    { "hanzi": "家庭", "pinyin": "jiātíng", "es": "familia (como unidad), hogar", "note": "家庭 es la familia como grupo; 家 también es «casa»." },
+    { "hanzi": "父母", "pinyin": "fùmǔ", "es": "padres (padre y madre)", "note": "Más formal que 爸爸妈妈." },
+    { "hanzi": "家长", "pinyin": "jiāzhǎng", "es": "padres, tutores (de un niño)", "note": "Sobre todo en la escuela: 家长会 = reunión de padres." },
+    { "hanzi": "属", "pinyin": "shǔ", "es": "ser del signo de (animal del zodiaco chino)", "note": "你属什么？ — 我属龙." },
+    { "hanzi": "龙", "pinyin": "lóng", "es": "dragón", "note": "En China es símbolo de fuerza y buena suerte, no un monstruo." },
+    { "hanzi": "福", "pinyin": "fú", "es": "buena suerte, felicidad", "note": "El carácter que se pega en las puertas por Año Nuevo, a veces al revés: «la suerte ha llegado»." },
+    { "hanzi": "祝", "pinyin": "zhù", "es": "desear (felicitar)", "note": "祝你新年快乐！ = ¡Feliz Año Nuevo!" },
+    { "hanzi": "红包", "pinyin": "hóngbāo", "es": "sobre rojo (con dinero)", "note": "Fuera del HSK. Hoy también se mandan por 微信." }
+  ],
+  "extraVocab": ["红包"],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "虽然机票很贵，但是我很想回家。", "py": "Suīrán jīpiào hěn guì, dànshì wǒ hěn xiǎng huí jiā.", "es": "Aunque el billete de avión es muy caro, tengo muchas ganas de volver a casa." },
+        { "zh": "学汉语虽然很难，可是很有意思。", "py": "Xué Hànyǔ suīrán hěn nán, kěshì hěn yǒu yìsi.", "es": "Aunque estudiar chino es difícil, es muy interesante." },
+        { "zh": "祝你新年快乐！", "py": "Zhù nǐ xīnnián kuàilè!", "es": "¡Feliz Año Nuevo!" }
+      ]
+    },
+    { "type": "vocab", "title": "Contrastes y la Fiesta de la Primavera", "words": ["虽然", "但是", "但", "可是", "不过", "家庭", "父母", "家长", "属", "龙", "福", "祝", "红包"] },
+    {
+      "type": "phonetics-drill",
+      "title": "虽然… | 但是…: la curva del contraste",
+      "markdown": "En una frase con **虽然…，但是…** la primera parte se dice **en suspenso** (la voz no baja en la coma) y el peso cae en **但是 / 可是**, que se dice con más fuerza: es ahí donde está la idea importante.\n\n- **虽然** *suīrán*: 1.º + 2.º, alto y luego sube.\n- **不过** *búguò*: 不 delante de cuarto tono pasa a **bú**.\n- **但是** *dànshì*: dos cuartos tonos; el primero algo más corto.\n- **父母** *fùmǔ* y **属** *shǔ*: tercer tono bajo; 属 lleva *sh* con la lengua hacia atrás, no *s*.",
+      "items": [
+        { "audio": "虽然", "options": ["suīrán", "suírán", "shuīrán"], "answer": 0, "explain": "s (no sh) + uī, y rán en segundo tono." },
+        { "audio": "不过", "options": ["búguò", "bùguò", "bǔguò"], "answer": 0, "explain": "不 + cuarto tono → bú." },
+        { "audio": "属龙", "options": ["shǔ lóng", "sǔ lóng", "shù lóng"], "answer": 0, "explain": "属 shǔ (3.º, con sh); 龙 lóng (2.º)." },
+        { "audio": "父母", "options": ["fùmǔ", "fúmǔ", "fùmu"], "answer": 0, "explain": "fù cae y mǔ es un tercer tono bajo." },
+        { "audio": "虽然很累，但是很高兴。", "prompt": "¿Dónde va la pausa?", "options": ["虽然很累 / 但是很高兴", "虽然 / 很累但是很高兴", "虽然很累但是 / 很高兴"], "answer": 0, "explain": "La pausa va en la coma; 但是 abre la segunda parte con fuerza." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["福", "龙"],
+      "mnemonics": {
+        "福": "礻 (altar, lo sagrado) + 畐 (una vasija llena): los dioses llenan tu vasija. Por eso se pega en la puerta en Año Nuevo.",
+        "龙": "Simplificado de 龍, que dibujaba un animal con cuernos y un cuerpo largo que serpentea. En 龙 aún se ve la cola que se curva."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "虽然…，但是 / 可是 / 不过…",
+      "markdown": "Una fila por cláusula, como en la lección anterior. 但是, 可是, 不过 y 但 abren la segunda parte **delante del sujeto** (hueco *Tiempo inicial*).\n\n- **虽然** puede ir **delante del sujeto** (*Tiempo inicial*): **虽然**机票很贵，… o **detrás** (hueco *Adverbios*), sobre todo cuando las dos partes tienen el mismo sujeto: 学汉语**虽然**很难，但是很有意思.\n- **Nunca 虽然 + 所以**: el contraste se cierra con 但是 / 可是 / 不过.\n- En español podemos decir solo «aunque…» o solo «pero…»; en chino se suelen poner **los dos**: 虽然… **但是**…\n- **不过** es más suave (≈ «eso sí»), **可是** más oral, **但** más breve y escrito.",
+      "focus": ["time0", "adverb"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "time0": { "zh": "虽然", "py": "suīrán" }, "subject": { "zh": "火车票", "py": "huǒchēpiào" }, "adverb": { "zh": "很难", "py": "hěn nán" }, "verb1": { "zh": "买", "py": "mǎi" } }, "end": "，", "es": "Aunque los billetes de tren son difíciles de conseguir… (1.ª parte)" },
+        { "slots": { "time0": { "zh": "但是", "py": "dànshì" }, "subject": { "zh": "大家", "py": "dàjiā" }, "adverb": { "zh": "都", "py": "dōu" }, "verb1": { "zh": "回家", "py": "huí jiā" }, "verb2": { "zh": "过年", "py": "guònián" } }, "end": "。", "es": "…todo el mundo vuelve a casa por Año Nuevo. (2.ª parte)" },
+        { "slots": { "subject": { "zh": "学汉语", "py": "xué Hànyǔ" }, "adverb": { "zh": "虽然很", "py": "suīrán hěn" }, "verb1": { "zh": "难", "py": "nán" } }, "end": "，", "es": "Aunque estudiar chino es difícil… (1.ª parte)", "esOrder": [{ "text": "Aunque", "slot": "adverb" }, { "text": "estudiar chino", "slot": "subject" }, { "text": "es difícil", "slot": "verb1" }] },
+        { "slots": { "time0": { "zh": "但是", "py": "dànshì" }, "adverb": { "zh": "很", "py": "hěn" }, "verb1": { "zh": "有意思", "py": "yǒu yìsi" } }, "end": "。", "es": "…es muy interesante. (2.ª parte)" },
+        { "slots": { "time0": { "zh": "虽然", "py": "suīrán" }, "subject": { "zh": "我", "py": "wǒ" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "西班牙人", "py": "Xībānyá rén" } }, "end": "，", "es": "Aunque soy español… (1.ª parte)" },
+        { "slots": { "time0": { "zh": "可是", "py": "kěshì" }, "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "也", "py": "yě" }, "aux": { "zh": "想", "py": "xiǎng" }, "verb1": { "zh": "过", "py": "guò" }, "object": { "zh": "春节", "py": "Chūnjié" } }, "end": "。", "es": "…también quiero celebrar la Fiesta de la Primavera. (2.ª parte)" },
+        { "slots": { "subject": { "zh": "这个红包", "py": "zhège hóngbāo" }, "adverb": { "zh": "不", "py": "bú" }, "verb1": { "zh": "大", "py": "dà" } }, "end": "，", "es": "Este sobre rojo no es grande… (1.ª parte)" },
+        { "slots": { "time0": { "zh": "不过", "py": "búguò" }, "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "很", "py": "hěn" }, "verb1": { "zh": "高兴", "py": "gāoxìng" } }, "end": "。", "es": "…pero estoy muy contento. (2.ª parte)" }
+      ],
+      "negative": [
+        { "slots": { "time0": { "zh": "虽然", "py": "suīrán" }, "subject": { "zh": "我", "py": "wǒ" }, "time": { "zh": "今年春节", "py": "jīnnián Chūnjié" }, "adverb": { "zh": "不", "py": "bù" }, "aux": { "zh": "能", "py": "néng" }, "verb1": { "zh": "回国", "py": "huí guó" } }, "end": "，", "es": "Aunque esta Fiesta de la Primavera no puedo volver a mi país… (1.ª parte)" },
+        { "slots": { "time0": { "zh": "但是", "py": "dànshì" }, "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "不", "py": "bù" }, "verb1": { "zh": "难过", "py": "nánguò" } }, "end": "。", "es": "…no estoy triste. (2.ª parte)" }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "属", "py": "shǔ" }, "object": { "zh": "什么", "py": "shénme" } }, "end": "？", "es": "¿De qué signo eres (en el zodiaco chino)?" },
+        { "slots": { "subject": { "zh": "你们家", "py": "nǐmen jiā" }, "verb1": { "zh": "给", "py": "gěi" }, "object": { "zh": "孩子红包", "py": "háizi hóngbāo" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿En vuestra casa les dais sobres rojos a los niños?" }
+      ],
+      "mistakes": [
+        { "wrong": "虽然很冷，所以很多人出去玩儿。", "right": "虽然很冷，但是很多人出去玩儿。", "why": "虽然 se cierra con 但是 / 可是 / 不过, nunca con 所以 (eso es para la causa)." },
+        { "wrong": "但是学汉语很难，虽然很有意思。", "right": "学汉语虽然很难，但是很有意思。", "why": "虽然 va en la primera parte y 但是 en la segunda." },
+        { "wrong": "虽然他很忙，他但是来了。", "right": "虽然他很忙，但是他来了。", "why": "但是 abre la segunda cláusula: delante del sujeto." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "¿Vienes a casa por Año Nuevo?",
+      "lines": [
+        { "speaker": "小李", "zh": "雨果，春节你回西班牙吗？", "py": "Yǔguǒ, Chūnjié nǐ huí Xībānyá ma?", "es": "Hugo, ¿vuelves a España por la Fiesta de la Primavera?" },
+        { "speaker": "雨果", "zh": "不回。虽然很想家，但是机票太贵了。", "py": "Bù huí. Suīrán hěn xiǎng jiā, dànshì jīpiào tài guì le.", "es": "No. Aunque echo mucho de menos mi casa, el billete de avión es carísimo." },
+        { "speaker": "小李", "zh": "那你来我家过年吧！我父母说欢迎你。", "py": "Nà nǐ lái wǒ jiā guònián ba! Wǒ fùmǔ shuō huānyíng nǐ.", "es": "¡Pues vente a mi casa por Año Nuevo! Mis padres dicen que eres bienvenido." },
+        { "speaker": "雨果", "zh": "真的吗？谢谢！可是我不知道中国家庭怎么过年。", "py": "Zhēn de ma? Xièxie! Kěshì wǒ bù zhīdào Zhōngguó jiātíng zěnme guònián.", "es": "¿De verdad? ¡Gracias! Pero no sé cómo celebra el Año Nuevo una familia china." },
+        { "speaker": "小李", "zh": "没关系。我们一起包饺子、看电视，爸爸妈妈给孩子红包。", "py": "Méi guānxi. Wǒmen yìqǐ bāo jiǎozi, kàn diànshì, bàba māma gěi háizi hóngbāo.", "es": "No pasa nada. Hacemos jiaozi juntos, vemos la tele y los padres dan sobres rojos a los hijos." },
+        { "speaker": "雨果", "zh": "我不是孩子，也有红包吗？", "py": "Wǒ bú shì háizi, yě yǒu hóngbāo ma?", "es": "Yo no soy un niño: ¿también me toca sobre?" },
+        { "speaker": "小李", "zh": "你还是学生，我妈妈说也给你！", "py": "Nǐ hái shì xuésheng, wǒ māma shuō yě gěi nǐ!", "es": "Todavía eres estudiante: ¡mi madre dice que a ti también te da!" },
+        { "speaker": "雨果", "zh": "太好了！听说今年是龙年，你属什么？", "py": "Tài hǎo le! Tīngshuō jīnnián shì lóng nián, nǐ shǔ shénme?", "es": "¡Genial! He oído que este año es el año del dragón. ¿Tú de qué signo eres?" },
+        { "speaker": "小李", "zh": "我属龙。龙虽然很好，不过属龙的人太多了！", "py": "Wǒ shǔ lóng. Lóng suīrán hěn hǎo, búguò shǔ lóng de rén tài duō le!", "es": "Soy dragón. El dragón es estupendo, eso sí, ¡hay muchísima gente que es dragón!" },
+        { "speaker": "雨果", "zh": "我知道我的生日，但不知道我属什么。", "py": "Wǒ zhīdào wǒ de shēngrì, dàn bù zhīdào wǒ shǔ shénme.", "es": "Sé cuándo es mi cumpleaños, pero no sé de qué signo soy." },
+        { "speaker": "小李", "zh": "我帮你看看……你属马。来，我们写一个“福”字，送给我爸妈。", "py": "Wǒ bāng nǐ kànkan…… Nǐ shǔ mǎ. Lái, wǒmen xiě yí ge “fú” zì, sòng gěi wǒ bà mā.", "es": "Te lo miro… Eres caballo. Venga, vamos a escribir un carácter 福 para regalárselo a mis padres." },
+        { "speaker": "雨果", "zh": "好！祝你们新年快乐！", "py": "Hǎo! Zhù nǐmen xīnnián kuàilè!", "es": "¡Vale! ¡Feliz Año Nuevo a todos!" }
+      ],
+      "notes": "Por Año Nuevo se pega 福 en la puerta, a veces del revés: «福倒了» (la suerte está del revés) suena como «福到了» (la suerte ha llegado). El zodiaco chino tiene doce animales y cada año corresponde a uno: 属 + animal dice el tuyo."
+    },
+    { "type": "exercises", "count": 16, "bank": ["g-gei", "g-dates-time", "g-de"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "time0": { "zh": "虽然" }, "subject": { "zh": "火车票" }, "adverb": { "zh": "很难" }, "verb1": { "zh": "买" } }, "end": "，", "es": "Aunque los billetes de tren son difíciles de conseguir…" }, "distractors": ["所以"] },
+        { "sentence": { "slots": { "time0": { "zh": "但是" }, "subject": { "zh": "大家" }, "adverb": { "zh": "都" }, "verb1": { "zh": "回家" }, "verb2": { "zh": "过年" } }, "end": "。", "es": "…todo el mundo vuelve a casa por Año Nuevo." }, "distractors": ["所以"] },
+        { "sentence": { "slots": { "subject": { "zh": "学汉语" }, "adverb": { "zh": "虽然很" }, "verb1": { "zh": "难" } }, "end": "，", "es": "Aunque estudiar chino es difícil…" }, "distractors": ["但是"] },
+        { "sentence": { "slots": { "time0": { "zh": "可是今年春节" }, "subject": { "zh": "我" }, "aux": { "zh": "想" }, "with": { "zh": "跟小李的父母一起" }, "place": { "zh": "在他们家" }, "verb1": { "zh": "过年" } }, "end": "。", "es": "…pero esta Fiesta de la Primavera quiero celebrar el Año Nuevo en casa de los padres de Xiao Li, con ellos." }, "distractors": ["所以"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "虽然很想家，但是机票太贵了。", "py": "Suīrán hěn xiǎng jiā, dànshì jīpiào tài guì le.", "es": "Aunque echo de menos mi casa, el billete es carísimo." },
+        { "zh": "学汉语虽然很难，可是很有意思。", "py": "Xué Hànyǔ suīrán hěn nán, kěshì hěn yǒu yìsi.", "es": "Aunque estudiar chino es difícil, es muy interesante." },
+        { "zh": "我属马，你属什么？", "py": "Wǒ shǔ mǎ, nǐ shǔ shénme?", "es": "Yo soy caballo, ¿y tú?" },
+        { "zh": "祝你们新年快乐！", "py": "Zhù nǐmen xīnnián kuàilè!", "es": "¡Feliz Año Nuevo a todos!" }
+      ],
+      "respond": [
+        { "q": { "zh": "你觉得学汉语难吗？", "py": "Nǐ juéde xué Hànyǔ nán ma?", "es": "¿Te parece difícil estudiar chino?" }, "model": { "zh": "虽然很难，但是很有意思。", "py": "Suīrán hěn nán, dànshì hěn yǒu yìsi.", "es": "Aunque es difícil, es muy interesante." } },
+        { "q": { "zh": "春节你回国吗？", "py": "Chūnjié nǐ huí guó ma?", "es": "¿Vuelves a tu país por la Fiesta de la Primavera?" }, "model": { "zh": "不回。虽然很想父母，不过机票太贵了。", "py": "Bù huí. Suīrán hěn xiǎng fùmǔ, búguò jīpiào tài guì le.", "es": "No. Aunque echo de menos a mis padres, el billete es carísimo." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "La fiesta de la familia",
+      "text": "春节是中国最大的节日，也是家庭的节日。虽然很多人在别的城市工作，但是春节大家都要回家，跟父母一起过年。过年，人们一起包饺子、吃饭、看电视，还要写“福”字。家长给孩子红包，红包里有钱，孩子们都很高兴。中国人也喜欢问“你属什么”：每年都有一个动物，今年是龙年。中国人觉得龙很好，所以很多父母都想要属龙的孩子。雨果虽然是西班牙人，不过今年他也在中国过年：小李的父母请他去家里吃饭。小李的妈妈给了他一个红包，说：“祝你学习好，身体好！”雨果说：“谢谢阿姨，祝您新年快乐！”",
+      "es": "La Fiesta de la Primavera es la fiesta más importante de China y también es la fiesta de la familia. Aunque mucha gente trabaja en otras ciudades, por la Fiesta de la Primavera todos vuelven a casa para celebrar el Año Nuevo con sus padres. Por Año Nuevo la gente hace jiaozi, come y ve la tele en familia, y además escribe el carácter 福. Los padres dan sobres rojos a los niños; dentro hay dinero, y los niños están contentísimos. A los chinos también les gusta preguntar «¿de qué signo eres?»: cada año tiene un animal, y este año es el del dragón. En China el dragón se considera muy positivo, así que muchos padres quieren tener un hijo dragón. Aunque Hugo es español, este año también celebra el Año Nuevo en China: los padres de Xiao Li le han invitado a comer a casa. La madre de Xiao Li le ha dado un sobre rojo y le ha dicho: «¡Que te vaya bien en los estudios y que tengas salud!». Hugo ha respondido: «Gracias, señora. ¡Feliz Año Nuevo!».",
+      "questions": [
+        { "q": "¿Con quién celebra la gente el Año Nuevo?", "options": ["跟父母一起", "跟同学一起", "跟老师一起"], "answer": 0 },
+        { "q": "¿Qué dan los padres a los niños?", "options": ["红包", "饺子", "福字"], "answer": 0 },
+        { "q": "¿Qué animal es este año?", "options": ["龙", "马", "鱼"], "answer": 0 },
+        { "q": "¿Qué frase es correcta?", "options": ["虽然很远，但是我想去。", "虽然很远，所以我想去。", "但是很远，虽然我想去。"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

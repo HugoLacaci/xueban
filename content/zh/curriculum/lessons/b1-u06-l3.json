@@ -1,0 +1,137 @@
+{
+  "id": "b1-u06-l3",
+  "title": "¡Qué casualidad! Interrogativos con sentido indefinido",
+  "zh": "我好像在哪儿见过他",
+  "goal": "Usar 哪儿, 什么 y 谁 con sentido de «algún sitio», «algo» y «alguien», y reaccionar al encontrarte con un conocido por casualidad.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "巧", "pinyin": "qiǎo", "es": "casualidad, oportuno; hábil", "note": "太巧了！ / 真巧！ = ¡qué casualidad!" },
+    { "hanzi": "熟人", "pinyin": "shúrén", "es": "conocido (persona que conoces)" },
+    { "hanzi": "认出", "pinyin": "rènchū", "es": "reconocer (a alguien al verlo)", "note": "我没认出你来 = no te había reconocido." },
+    { "hanzi": "认得", "pinyin": "rènde", "es": "conocer, reconocer (de vista); saber leer (un carácter)", "note": "Más oral que 认识: 你还认得我吗？" },
+    { "hanzi": "某", "pinyin": "mǒu", "es": "cierto, algún (sin decir cuál)", "note": "某个地方 = cierto sitio; 某一天 = un día." },
+    { "hanzi": "握手", "pinyin": "wòshǒu", "es": "dar(se) la mano", "note": "跟他握手 = darle la mano. Separable: 握握手." },
+    { "hanzi": "经历", "pinyin": "jīnglì", "es": "experiencia (vivida); vivir, pasar por", "note": "Lo que te ha pasado. «Experiencia profesional» es 经验." },
+    { "hanzi": "命运", "pinyin": "mìngyùn", "es": "destino, suerte (de la vida)" },
+    { "hanzi": "幸运", "pinyin": "xìngyùn", "es": "afortunado; suerte", "note": "我很幸运 = tengo mucha suerte." },
+    { "hanzi": "时刻", "pinyin": "shíkè", "es": "momento (importante); en todo momento", "note": "最幸福的时刻 = el momento más feliz." },
+    { "hanzi": "信封", "pinyin": "xìnfēng", "es": "sobre (de carta)" },
+    { "hanzi": "红酒", "pinyin": "hóngjiǔ", "es": "vino tinto" },
+    { "hanzi": "任何", "pinyin": "rènhé", "es": "cualquier", "note": "Casi siempre con 都 / 也: 任何人都可以 = cualquiera puede." }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "我好像在哪儿见过他。", "py": "Wǒ hǎoxiàng zài nǎr jiànguo tā.", "es": "Me parece que lo he visto en algún sitio." },
+        { "zh": "你想喝点儿什么吗？", "py": "Nǐ xiǎng hē diǎnr shénme ma?", "es": "¿Quieres beber algo?" },
+        { "zh": "太巧了！我差点儿没认出你来。", "py": "Tài qiǎo le! Wǒ chàdiǎnr méi rènchū nǐ lái.", "es": "¡Qué casualidad! Casi no te reconozco." }
+      ]
+    },
+    { "type": "vocab", "title": "Encuentros inesperados", "words": ["巧", "熟人", "认出", "认得", "某", "握手", "经历", "命运", "幸运", "时刻", "信封", "红酒", "任何"] },
+    {
+      "type": "phonetics-drill",
+      "title": "¿Pregunta o no? 什么 con y sin acento",
+      "markdown": "El mismo 什么 puede preguntar **qué** o significar **algo**, y la voz lo marca:\n\n- **你想喝什么？** (¿qué quieres beber?): 什么 lleva el **acento** y la frase sube.\n- **你想喝点儿什么吗？** (¿quieres beber **algo**?): 什么 va **átono**, rápido; el acento está en 喝 y la pregunta la hace 吗.\n- Igual con 哪儿: 我在**哪儿**见过他？ (¿dónde lo he visto?) frente a 我好像在哪儿**见过**他 (en algún sitio).\n\nY tres palabras: **认得 rènde** (得 neutro), **熟人 shúrén** (oralmente también *shóurén*), **某 mǒu** (tercer tono, «ou» como en *bou*).",
+      "items": [
+        { "audio": "你想喝点儿什么吗？", "prompt": "¿Qué significa 什么 aquí?", "options": ["algo", "qué"], "answer": 0, "explain": "Con 吗 al final, 什么 no pregunta: es «algo»." },
+        { "audio": "你想喝什么？", "prompt": "¿Y aquí?", "options": ["qué", "algo"], "answer": 0 },
+        { "audio": "认得", "options": ["rènde", "rèndé", "rěnde"], "answer": 0, "explain": "得 en tono neutro." },
+        { "audio": "某", "options": ["mǒu", "mǔ", "méi"], "answer": 0 },
+        { "audio": "太巧了", "options": ["tài qiǎo le", "tài jiǎo le", "tài qiáo le"], "answer": 0, "explain": "q aspirada y tercer tono." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["巧", "熟"],
+      "mnemonics": {
+        "巧": "工 (herramienta, trabajo) + 丂: manos hábiles con la herramienta → hábil, ingenioso; y lo que encaja «justo» → casualidad (真巧).",
+        "熟": "孰 + 灬 (fuego): lo que ha pasado por el fuego está hecho, maduro; lo que has visto muchas veces te es «familiar» → 熟人, conocido."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "哪儿 «algún sitio», 什么 «algo», 谁 «alguien»",
+      "markdown": "En la lección anterior, interrogativo + 都 = «todo / nada». **Sin 都**, en una frase que no pregunta, el interrogativo significa **«algún / alguien / algo»**:\n\n> 我好像在**哪儿**见过他。 Lo he visto en **algún sitio**.\n> 你先吃点儿**什么**吧。 Come **algo** primero.\n> 我想请**谁**来帮帮忙。 Quiero pedirle a **alguien** que me ayude.\n\n- Se queda **en su sitio** (no sube delante del verbo como con 都).\n- Aparece sobre todo con **好像, 想, 吧, 吗** y con la negación suave: 我**不**想吃**什么** = no me apetece comer nada en especial.\n- **¿Pregunta o no?** Si la frase lleva **吗**, el interrogativo no pregunta: 你想吃点儿什么**吗**？ = ¿quieres comer **algo**?\n- **任何 + nombre + 都 / 也** = «cualquier»: **任何人都**可以来.\n\n**En el esqueleto**: el indefinido va en su hueco normal (*Dónde*: 在哪儿; *Objeto*: 点儿什么; *Verbo 1*: 请谁).",
+      "focus": ["place", "object"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "好像", "py": "hǎoxiàng" }, "place": { "zh": "在哪儿", "py": "zài nǎr" }, "verb1": { "zh": "见过", "py": "jiànguo" }, "object": { "zh": "他", "py": "tā" } }, "end": "。", "es": "Me parece que lo he visto en algún sitio.", "esOrder": [{ "text": "Me parece que", "slot": "adverb" }, { "text": "lo", "slot": "object" }, { "text": "he visto", "slot": "verb1" }, { "text": "en algún sitio", "slot": "place" }] },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "adverb": { "zh": "先", "py": "xiān" }, "verb1": { "zh": "吃", "py": "chī" }, "object": { "zh": "点儿什么", "py": "diǎnr shénme" }, "particle": { "zh": "吧", "py": "ba" } }, "end": "。", "es": "Come algo primero." },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "aux": { "zh": "想", "py": "xiǎng" }, "verb1": { "zh": "请谁", "py": "qǐng shéi" }, "verb2": { "zh": "帮帮忙", "py": "bāngbang máng" } }, "end": "。", "es": "Quiero pedirle a alguien que me eche una mano." },
+        { "slots": { "time0": { "zh": "周末", "py": "zhōumò" }, "subject": { "zh": "我们", "py": "wǒmen" }, "verb1": { "zh": "去哪儿", "py": "qù nǎr" }, "verb2": { "zh": "玩玩", "py": "wánwan" }, "particle": { "zh": "吧", "py": "ba" } }, "end": "。", "es": "El fin de semana vamos a algún sitio a dar una vuelta." },
+        { "slots": { "subject": { "zh": "任何人", "py": "rènhé rén" }, "adverb": { "zh": "都", "py": "dōu" }, "aux": { "zh": "可以", "py": "kěyǐ" }, "verb1": { "zh": "参加", "py": "cānjiā" } }, "end": "。", "es": "Puede participar cualquiera." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "不", "py": "bù" }, "aux": { "zh": "想", "py": "xiǎng" }, "verb1": { "zh": "吃", "py": "chī" }, "object": { "zh": "什么", "py": "shénme" } }, "end": "。", "es": "No me apetece comer nada en especial." },
+        { "slots": { "subject": { "zh": "他", "py": "tā" }, "adverb": { "zh": "没", "py": "méi" }, "verb1": { "zh": "说", "py": "shuō" }, "object": { "zh": "什么", "py": "shénme" } }, "end": "。", "es": "No dijo gran cosa." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "aux": { "zh": "想", "py": "xiǎng" }, "verb1": { "zh": "喝", "py": "hē" }, "object": { "zh": "点儿什么", "py": "diǎnr shénme" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿Quieres beber algo?" },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "adverb": { "zh": "还", "py": "hái" }, "verb1": { "zh": "认得", "py": "rènde" }, "object": { "zh": "我", "py": "wǒ" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿Todavía me reconoces?" }
+      ],
+      "mistakes": [
+        { "wrong": "我好像见过他在哪儿。", "right": "我好像在哪儿见过他。", "why": "在 + lugar (también 在哪儿) va delante del verbo." },
+        { "wrong": "你想喝什么吗？ (para preguntar «¿qué quieres beber?»)", "right": "你想喝什么？", "why": "Con 吗, 什么 ya no pregunta: significa «algo». Para preguntar «qué», sin 吗." },
+        { "wrong": "任何人可以参加。", "right": "任何人都可以参加。", "why": "任何 pide 都 o 也 delante del verbo." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "¡Qué casualidad!",
+      "lines": [
+        { "speaker": "雨果", "zh": "那个人我好像在哪儿见过……你是不是马克？", "py": "Nàge rén wǒ hǎoxiàng zài nǎr jiànguo…… Nǐ shì bu shì Mǎkè?", "es": "A ese chico lo he visto en algún sitio… ¿Tú no eres Marc?" },
+        { "speaker": "马克", "zh": "雨果？真的是你！我差点儿没认出你来。", "py": "Yǔguǒ? Zhēn de shì nǐ! Wǒ chàdiǎnr méi rènchū nǐ lái.", "es": "¿Hugo? ¡Eres tú de verdad! Casi no te reconozco." },
+        { "speaker": "雨果", "zh": "太巧了！在上海碰见熟人，我真的没想到。", "py": "Tài qiǎo le! Zài Shànghǎi pèngjiàn shúrén, wǒ zhēn de méi xiǎngdào.", "es": "¡Qué casualidad! No me esperaba encontrarme a un conocido en Shanghái." },
+        { "speaker": "马克", "zh": "来，握握手！你还认得我，太好了。你怎么在这儿？", "py": "Lái, wòwo shǒu! Nǐ hái rènde wǒ, tài hǎo le. Nǐ zěnme zài zhèr?", "es": "¡Venga, choca esa mano! Qué bien que todavía me reconozcas. ¿Qué haces aquí?" },
+        { "speaker": "雨果", "zh": "我在交通大学读研究生。你呢？", "py": "Wǒ zài Jiāotōng Dàxué dú yánjiūshēng. Nǐ ne?", "es": "Estoy haciendo un máster en la Universidad Jiaotong. ¿Y tú?" },
+        { "speaker": "马克", "zh": "我在一家公司工作，卖西班牙红酒。今天来超市看看我们的红酒卖得怎么样。", "py": "Wǒ zài yì jiā gōngsī gōngzuò, mài Xībānyá hóngjiǔ. Jīntiān lái chāoshì kànkan wǒmen de hóngjiǔ mài de zěnmeyàng.", "es": "Trabajo en una empresa que vende vino tinto español. Hoy he venido al súper a ver cómo se vende nuestro vino." },
+        { "speaker": "雨果", "zh": "你在上海有什么有意思的经历吗？", "py": "Nǐ zài Shànghǎi yǒu shénme yǒu yìsi de jīnglì ma?", "es": "¿Te ha pasado algo interesante en Shanghái?" },
+        { "speaker": "马克", "zh": "很多！有一次在某个小饭馆，我想点个鱼，结果服务员给我拿来了一瓶红酒。", "py": "Hěn duō! Yǒu yí cì zài mǒu ge xiǎo fànguǎn, wǒ xiǎng diǎn ge yú, jiéguǒ fúwùyuán gěi wǒ ná lái le yì píng hóngjiǔ.", "es": "¡Muchas! Una vez, en cierto restaurantito, quise pedir pescado y el camarero me trajo una botella de vino." },
+        { "speaker": "雨果", "zh": "哈哈！我们找个地方喝点儿什么吧，慢慢聊。", "py": "Hāhā! Wǒmen zhǎo ge dìfang hē diǎnr shénme ba, mànmàn liáo.", "es": "¡Ja, ja! Vamos a algún sitio a tomar algo y hablamos con calma." },
+        { "speaker": "马克", "zh": "好啊。对了，这个信封给你，里面有两张电影票，我去不了。", "py": "Hǎo a. Duì le, zhège xìnfēng gěi nǐ, lǐmian yǒu liǎng zhāng diànyǐngpiào, wǒ qù bu liǎo.", "es": "Vale. Por cierto, toma este sobre: dentro hay dos entradas de cine, yo no puedo ir." },
+        { "speaker": "雨果", "zh": "你太客气了！你任何时候来我们学校，我都请你吃饭。", "py": "Nǐ tài kèqi le! Nǐ rènhé shíhou lái wǒmen xuéxiào, wǒ dōu qǐng nǐ chī fàn.", "es": "¡Qué detalle! Cuando quieras que vengas a mi universidad, te invito a comer." },
+        { "speaker": "马克", "zh": "我们能在这儿见面，简直是命运！", "py": "Wǒmen néng zài zhèr jiànmiàn, jiǎnzhí shì mìngyùn!", "es": "Que nos hayamos encontrado aquí… ¡es el destino!" },
+        { "speaker": "雨果", "zh": "是啊，我太幸运了。这是我今天最高兴的时刻！", "py": "Shì a, wǒ tài xìngyùn le. Zhè shì wǒ jīntiān zuì gāoxìng de shíkè!", "es": "Sí, qué suerte tengo. ¡Es el mejor momento del día!" }
+      ],
+      "notes": "马克 (Mǎkè) es la forma habitual de transcribir Marc / Mark. 差点儿没认出你来 = «por poco no te reconozco» (con 差点儿, 没 no cambia el sentido). 找个地方 y 点个鱼: 一 cae y queda solo 个. En China se da la mano al saludar en situaciones formales; entre amigos jóvenes es más raro que en España, y los dos besos no se usan."
+    },
+    { "type": "exercises", "count": 16, "bank": ["g-question-words", "g-ye-dou", "u12"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "我" }, "adverb": { "zh": "好像" }, "place": { "zh": "在哪儿" }, "verb1": { "zh": "见过" }, "object": { "zh": "他" } }, "end": "。", "es": "Me parece que lo he visto en algún sitio." } },
+        { "sentence": { "slots": { "subject": { "zh": "你" }, "aux": { "zh": "想" }, "verb1": { "zh": "喝" }, "object": { "zh": "点儿什么" }, "particle": { "zh": "吗" } }, "end": "？", "es": "¿Quieres beber algo?" }, "distractors": ["都"] },
+        { "sentence": { "slots": { "subject": { "zh": "任何人" }, "adverb": { "zh": "都" }, "aux": { "zh": "可以" }, "verb1": { "zh": "参加" } }, "end": "。", "es": "Puede participar cualquiera." } },
+        { "sentence": { "slots": { "time0": { "zh": "下个周末" }, "subject": { "zh": "我" }, "aux": { "zh": "想" }, "with": { "zh": "跟马克一起" }, "verb1": { "zh": "去哪儿" }, "verb2": { "zh": "喝点儿红酒" } }, "end": "。", "es": "El fin de semana que viene quiero ir a algún sitio con Marc a tomar un poco de vino." } }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "太巧了！", "py": "Tài qiǎo le!", "es": "¡Qué casualidad!" },
+        { "zh": "我好像在哪儿见过他。", "py": "Wǒ hǎoxiàng zài nǎr jiànguo tā.", "es": "Me parece que lo he visto en algún sitio." },
+        { "zh": "你想喝点儿什么吗？", "py": "Nǐ xiǎng hē diǎnr shénme ma?", "es": "¿Quieres beber algo?" },
+        { "zh": "我差点儿没认出你来。", "py": "Wǒ chàdiǎnr méi rènchū nǐ lái.", "es": "Casi no te reconozco." }
+      ],
+      "respond": [
+        { "q": { "zh": "你还认得我吗？", "py": "Nǐ hái rènde wǒ ma?", "es": "¿Todavía me reconoces?" }, "model": { "zh": "当然认得！太巧了，你怎么在这儿？", "py": "Dāngrán rènde! Tài qiǎo le, nǐ zěnme zài zhèr?", "es": "¡Claro que sí! Qué casualidad, ¿qué haces aquí?" } },
+        { "q": { "zh": "你想吃点儿什么吗？", "py": "Nǐ xiǎng chī diǎnr shénme ma?", "es": "¿Quieres comer algo?" }, "model": { "zh": "谢谢，我不饿，不想吃什么。", "py": "Xièxie, wǒ bú è, bù xiǎng chī shénme.", "es": "Gracias, no tengo hambre: no me apetece nada." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "El destino en el supermercado",
+      "text": "上个星期六，雨果去超市想买点儿什么吃的。他走到卖红酒的地方，看见一个外国人正在跟服务员说话。雨果觉得这个人好像在哪儿见过，可是一时想不起来。那个人回头看了他一眼，突然笑了：“雨果？”原来是马克，雨果在马德里的中学同学！两个人已经七年没见面了，马克差点儿没认出雨果来。他们高兴地握了握手。雨果说：“在这么大的城市碰见熟人，太巧了！”马克现在在一家公司工作，卖西班牙红酒。他给雨果讲了很多在中国的有意思的经历。走的时候，马克给了雨果一个信封，里面有两张电影票。雨果想：“我该请谁一起去呢？”他觉得自己真幸运。马克说：“这就是命运。以后任何时候你想喝红酒，都可以给我打电话！”",
+      "es": "El sábado pasado Hugo fue al súper a comprar algo de comer. Al llegar a la sección de vinos vio a un extranjero hablando con un dependiente. A Hugo le pareció que lo había visto en algún sitio, pero en ese momento no caía. El hombre se volvió, lo miró y de repente sonrió: «¿Hugo?». ¡Era Marc, su compañero del instituto en Madrid! Hacía siete años que no se veían, y Marc casi no reconoce a Hugo. Se dieron la mano muy contentos. Hugo dijo: «¡Qué casualidad encontrarse con un conocido en una ciudad tan grande!». Marc trabaja ahora en una empresa que vende vino tinto español. Le contó a Hugo muchas experiencias divertidas en China. Al despedirse, le dio un sobre con dos entradas de cine. Hugo pensó: «¿A quién podría invitar?». Se sentía muy afortunado. Marc dijo: «Es el destino. ¡A partir de ahora, cuando quieras vino tinto, llámame!».",
+      "questions": [
+        { "q": "¿Dónde se encontraron Hugo y Marc?", "options": ["在超市", "在学校", "在电影院"], "answer": 0 },
+        { "q": "¿Cuánto tiempo hacía que no se veían?", "options": ["七年", "一年", "七个月"], "answer": 0 },
+        { "q": "¿Qué había en el sobre?", "options": ["两张电影票", "一瓶红酒", "钱"], "answer": 0 },
+        { "q": "En 我该请谁一起去呢, ¿qué significa 谁?", "options": ["a quién (se lo pregunta a sí mismo)", "todo el mundo", "nadie"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

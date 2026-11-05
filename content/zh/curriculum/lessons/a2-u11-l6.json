@@ -1,0 +1,139 @@
+{
+  "id": "a2-u11-l6",
+  "title": "Además de…, menos…: 除了…以外 y repaso del trabajo",
+  "zh": "除了汉语以外，我还会说英语",
+  "goal": "Añadir («además de…») y excluir («menos…») con 除了…以外 + 还 / 也 / 都, usar 别的 / 其他 y repasar toda la unidad en frases largas.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "除了", "pinyin": "chúle", "es": "además de; excepto", "note": "Con 还 / 也 = «además de»; con 都 = «menos, excepto»." },
+    { "hanzi": "以外", "pinyin": "yǐwài", "es": "(cierra el bloque de 除了)", "note": "除了汉语以外 = además del chino. Se puede omitir: 除了汉语，…" },
+    { "hanzi": "别的", "pinyin": "biéde", "es": "otro(s), distinto(s)", "note": "Siempre con 的 delante del nombre: 别的城市. Repaso de A1." },
+    { "hanzi": "其他", "pinyin": "qítā", "es": "otro(s), los demás", "note": "其他同事 = los demás compañeros (el resto de un grupo)." },
+    { "hanzi": "作家", "pinyin": "zuòjiā", "es": "escritor, escritora" },
+    { "hanzi": "成为", "pinyin": "chéngwéi", "es": "llegar a ser, convertirse en", "note": "我想成为一个作家. Más formal que 当." },
+    { "hanzi": "成", "pinyin": "chéng", "es": "convertirse en; lograr", "note": "Detrás de otro verbo: 变成, 做成, 写成." },
+    { "hanzi": "组成", "pinyin": "zǔchéng", "es": "formar, componer", "note": "五个人组成了一个小组 = cinco personas formaron un grupo." },
+    { "hanzi": "发现", "pinyin": "fāxiàn", "es": "descubrir, darse cuenta de" },
+    { "hanzi": "接受", "pinyin": "jiēshòu", "es": "aceptar", "note": "接受工作 = aceptar un trabajo." },
+    { "hanzi": "正是", "pinyin": "zhèng shì", "es": "justamente es, precisamente", "note": "这正是我想做的工作 = es justo el trabajo que quiero." },
+    { "hanzi": "不满", "pinyin": "bùmǎn", "es": "descontento; estar descontento", "note": "对服务不满 = estar descontento con el servicio." }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "除了汉语以外，我还会说英语。", "py": "Chúle Hànyǔ yǐwài, wǒ hái huì shuō Yīngyǔ.", "es": "Además de chino, también hablo inglés." },
+        { "zh": "除了老李以外，全体同事都来了。", "py": "Chúle lǎo Lǐ yǐwài, quántǐ tóngshì dōu lái le.", "es": "Han venido todos los compañeros menos Lao Li." },
+        { "zh": "这正是我想做的工作。", "py": "Zhè zhèng shì wǒ xiǎng zuò de gōngzuò.", "es": "Es justo el trabajo que quiero hacer." }
+      ]
+    },
+    { "type": "vocab", "title": "Añadir, excluir y despedirse", "words": ["除了", "以外", "别的", "其他", "作家", "成为", "成", "组成", "发现", "接受", "正是", "不满"] },
+    {
+      "type": "phonetics-drill",
+      "title": "Frases largas: el bloque de 除了…以外",
+      "markdown": "**除了…以外** forma un bloque que se dice **de un tirón**, con una pausa breve **después de 以外**: 除了汉语以外 / 我还会说英语. La voz se queda arriba en la pausa y cae al final.\n\n- **除了** *chúle*: el 了 es **neutro**.\n- **以外** *yǐwài*: 3 + 4 → el 以 es medio tercer tono (solo baja).\n- **不满** *bùmǎn*: 不 delante de tercer tono **no cambia**: *bù*.\n- **正是** *zhèng shì*: dos cuartos tonos fuertes; el acento cae en **正** («¡justo eso!»).",
+      "items": [
+        { "audio": "除了", "options": ["chúle", "chùle", "cúle"], "answer": 0, "explain": "chú en segundo tono + le neutro." },
+        { "audio": "不满", "options": ["bùmǎn", "búmǎn", "bùmán"], "answer": 0, "explain": "不 solo cambia a bú delante de cuarto tono." },
+        { "audio": "接受", "options": ["jiēshòu", "jiēsòu", "qiēshòu"], "answer": 0, "explain": "j sin aire, y shòu con sh." },
+        { "audio": "组成", "options": ["zǔchéng", "zhǔchéng", "zǔzhéng"], "answer": 0, "explain": "z (lengua delante) + ch (lengua atrás)." },
+        { "audio": "除了汉语以外，我还会说英语", "prompt": "¿Dónde va la pausa?", "options": ["除了汉语以外 / 我还会说英语", "除了 / 汉语以外我还会说英语", "除了汉语 / 以外我还会说英语"], "answer": 0, "explain": "El bloque 除了…以外 no se corta; la pausa va después de 以外." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["除", "成"],
+      "mnemonics": {
+        "除": "阝 (colina, escalones) + 余 (lo que sobra): quitar lo que sobra de los escalones. De «quitar» viene «excepto, aparte de».",
+        "成": "Lleva 戈 (lanza, alabarda): una campaña que se lleva a término. De «lograr, completar» viene «convertirse en»: 成为, 变成."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "除了…以外，sujeto + 还 / 也 / 都 + verbo",
+      "markdown": "El bloque **除了 X 以外** va entero en el **Tiempo inicial** (como dice la convención de la Etapa 2) y el adverbio de la segunda parte decide el sentido:\n\n| Adverbio | Sentido | Ejemplo |\n|---|---|---|\n| **还 / 也** | **además de** X (X incluido) | 除了汉语以外，雨果**还**会说英语. |\n| **都** | **excepto** X (X fuera) | 除了老李以外，全体同事**都**来了. |\n\n- 以外 se puede omitir: 除了汉语，…\n- **别的** + nombre: «otro(s) cualquiera(s)»: 别的城市. **其他** + nombre: «los demás, el resto»: 其他同事都回家了.\n- **Repaso de la unidad**: 如果…就 · 才 / 就 · 再 / 又 · 还是 / 或者 · 请 / 叫 / 让.",
+      "focus": ["time0", "adverb"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "time0": { "zh": "除了汉语以外，", "py": "chúle Hànyǔ yǐwài," }, "subject": { "zh": "雨果", "py": "Yǔguǒ" }, "adverb": { "zh": "还", "py": "hái" }, "aux": { "zh": "会", "py": "huì" }, "verb1": { "zh": "说", "py": "shuō" }, "object": { "zh": "英语", "py": "Yīngyǔ" } }, "end": "。", "es": "Hugo también habla inglés, además de chino.", "esOrder": [{ "text": "Hugo", "slot": "subject" }, { "text": "también", "slot": "adverb" }, { "text": "habla", "slot": "verb1" }, { "text": "inglés", "slot": "object" }, { "text": "además de chino", "slot": "time0" }] },
+        { "slots": { "time0": { "zh": "除了老李以外，", "py": "chúle lǎo Lǐ yǐwài," }, "subject": { "zh": "全体同事", "py": "quántǐ tóngshì" }, "adverb": { "zh": "都", "py": "dōu" }, "verb1": { "zh": "来了", "py": "lái le" } }, "end": "。", "es": "Han venido todos los compañeros menos Lao Li." },
+        { "slots": { "time0": { "zh": "除了上班以外，", "py": "chúle shàngbān yǐwài," }, "subject": { "zh": "小王", "py": "Xiǎo Wáng" }, "time": { "zh": "晚上", "py": "wǎnshang" }, "adverb": { "zh": "也", "py": "yě" }, "verb1": { "zh": "写", "py": "xiě" }, "object": { "zh": "小说", "py": "xiǎoshuō" } }, "end": "。", "es": "Además de trabajar, Xiao Wang también escribe novelas por la noche." },
+        { "slots": { "subject": { "zh": "她", "py": "tā" }, "aux": { "zh": "想", "py": "xiǎng" }, "verb1": { "zh": "成为", "py": "chéngwéi" }, "object": { "zh": "一个作家", "py": "yí ge zuòjiā" } }, "end": "。", "es": "Quiere llegar a ser escritora." },
+        { "slots": { "subject": { "zh": "其他同事", "py": "qítā tóngshì" }, "adverb": { "zh": "都", "py": "dōu" }, "verb1": { "zh": "回家", "py": "huí jiā" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Los demás compañeros ya se han ido a casa." },
+        { "slots": { "subject": { "zh": "五个人", "py": "wǔ ge rén" }, "verb1": { "zh": "组成了", "py": "zǔchéng le" }, "object": { "zh": "一个小组", "py": "yí ge xiǎozǔ" } }, "end": "。", "es": "Cinco personas formaron un grupo." }
+      ],
+      "negative": [
+        { "slots": { "time0": { "zh": "除了雨果以外，", "py": "chúle Yǔguǒ yǐwài," }, "subject": { "zh": "其他人", "py": "qítā rén" }, "adverb": { "zh": "都不", "py": "dōu bú" }, "aux": { "zh": "会", "py": "huì" }, "verb1": { "zh": "说", "py": "shuō" }, "object": { "zh": "西班牙语", "py": "Xībānyáyǔ" } }, "end": "。", "es": "Aparte de Hugo, nadie sabe español." },
+        { "slots": { "subject": { "zh": "顾客", "py": "gùkè" }, "adverb": { "zh": "没有", "py": "méiyǒu" }, "verb1": { "zh": "接受", "py": "jiēshòu" }, "object": { "zh": "这个办法", "py": "zhège bànfǎ" } }, "end": "。", "es": "El cliente no aceptó esta solución." }
+      ],
+      "question": [
+        { "slots": { "time0": { "zh": "除了汉语以外，", "py": "chúle Hànyǔ yǐwài," }, "subject": { "zh": "你", "py": "nǐ" }, "adverb": { "zh": "还", "py": "hái" }, "verb1": { "zh": "学", "py": "xué" }, "object": { "zh": "别的外语", "py": "biéde wàiyǔ" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "Además de chino, ¿estudias otro idioma?" },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "发现", "py": "fāxiàn" }, "object": { "zh": "什么问题", "py": "shénme wèntí" }, "particle": { "zh": "了", "py": "le" } }, "end": "？", "es": "¿Qué problema has descubierto?" }
+      ],
+      "mistakes": [
+        { "wrong": "除了老李以外，我们也去了。", "right": "除了老李以外，我们都去了。", "why": "Para «todos menos Lao Li» se usa 都; con 也 / 还 se entiende «además de Lao Li, también nosotros»." },
+        { "wrong": "我还要买别东西。", "right": "我还要买别的东西。", "why": "别的 lleva siempre 的 delante del nombre (其他 no lo necesita: 其他东西)." },
+        { "wrong": "除了以外汉语，我还会说英语。", "right": "除了汉语以外，我还会说英语。", "why": "Lo que se añade o se excluye va entre 除了 y 以外." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Último día de prácticas",
+      "lines": [
+        { "speaker": "刘经理", "zh": "雨果，今天是你实习的最后一天了。", "py": "Yǔguǒ, jīntiān shì nǐ shíxí de zuìhòu yì tiān le.", "es": "Hugo, hoy es tu último día de prácticas." },
+        { "speaker": "雨果", "zh": "是啊，时间过得真快！除了工作以外，我还学到了很多汉语。", "py": "Shì a, shíjiān guò de zhēn kuài! Chúle gōngzuò yǐwài, wǒ hái xuédào le hěn duō Hànyǔ.", "es": "Sí, ¡qué rápido ha pasado! Además del trabajo, he aprendido mucho chino." },
+        { "speaker": "刘经理", "zh": "除了老李以外，全体同事都来了。老李去北京开会了。", "py": "Chúle lǎo Lǐ yǐwài, quántǐ tóngshì dōu lái le. Lǎo Lǐ qù Běijīng kāihuì le.", "es": "Ha venido toda la plantilla menos Lao Li, que está en Pekín en una reunión." },
+        { "speaker": "小王", "zh": "雨果，我告诉你一件事：我想成为一个作家。", "py": "Yǔguǒ, wǒ gàosu nǐ yí jiàn shì: wǒ xiǎng chéngwéi yí ge zuòjiā.", "es": "Hugo, te voy a contar una cosa: quiero llegar a ser escritora." },
+        { "speaker": "雨果", "zh": "真的吗？除了上班以外，你还写小说？", "py": "Zhēn de ma? Chúle shàngbān yǐwài, nǐ hái xiě xiǎoshuō?", "es": "¿En serio? ¿Además de trabajar escribes novelas?" },
+        { "speaker": "小王", "zh": "对，每天晚上都写。我们几个人组成了一个小组，每个星期讨论一次。", "py": "Duì, měi tiān wǎnshang dōu xiě. Wǒmen jǐ ge rén zǔchéng le yí ge xiǎozǔ, měi ge xīngqī tǎolùn yí cì.", "es": "Sí, todas las noches. Unos cuantos hemos formado un grupo y lo comentamos una vez a la semana." },
+        { "speaker": "雨果", "zh": "你写的小说，我能看看吗？", "py": "Nǐ xiě de xiǎoshuō, wǒ néng kànkan ma?", "es": "¿Puedo leer tu novela?" },
+        { "speaker": "小王", "zh": "当然可以！这本就是送给你的。", "py": "Dāngrán kěyǐ! Zhè běn jiù shì sònggěi nǐ de.", "es": "¡Claro! Este ejemplar es para ti." },
+        { "speaker": "刘经理", "zh": "雨果，你读完硕士以后，公司想请你来工作。你能接受吗？", "py": "Yǔguǒ, nǐ dúwán shuòshì yǐhòu, gōngsī xiǎng qǐng nǐ lái gōngzuò. Nǐ néng jiēshòu ma?", "es": "Hugo, cuando termines el máster, la empresa quiere contratarte. ¿Aceptarías?" },
+        { "speaker": "雨果", "zh": "谢谢！这正是我想做的工作。可是我还要跟家人商量一下。", "py": "Xièxie! Zhè zhèng shì wǒ xiǎng zuò de gōngzuò. Kěshì wǒ hái yào gēn jiārén shāngliang yíxià.", "es": "¡Gracias! Es justo el trabajo que quiero. Pero antes tengo que hablarlo con mi familia." },
+        { "speaker": "刘经理", "zh": "好，商量好了就给我打电话。其他的事情我们以后再说。", "py": "Hǎo, shāngliang hǎo le jiù gěi wǒ dǎ diànhuà. Qítā de shìqing wǒmen yǐhòu zài shuō.", "es": "Bien, cuando lo hayáis hablado, llámame. Lo demás ya lo veremos." }
+      ],
+      "notes": "En la misma conversación salen los dos sentidos de 除了: 除了工作以外，我还… (además) y 除了老李以外，…都… (menos). 以后再说 = «ya lo hablaremos», muy útil para aplazar algo con educación."
+    },
+    { "type": "exercises", "count": 20, "bank": ["u09", "g-ye-dou", "g-modal-verbs", "g-qing", "g-question-words", "g-word-order"] },
+    {
+      "type": "sentence-builder",
+      "title": "Construye la frase completa",
+      "items": [
+        { "sentence": { "slots": { "time0": { "zh": "除了汉语以外，" }, "subject": { "zh": "雨果" }, "time": { "zh": "现在" }, "adverb": { "zh": "还" }, "aux": { "zh": "想" }, "verb1": { "zh": "学" }, "object": { "zh": "一点儿上海话" } }, "end": "。", "es": "Además de chino, ahora Hugo también quiere aprender un poco de dialecto de Shanghái." }, "distractors": ["都"] },
+        { "sentence": { "slots": { "time0": { "zh": "如果明天下雨的话，" }, "subject": { "zh": "我们" }, "adverb": { "zh": "就" }, "with": { "zh": "跟顾客一起" }, "place": { "zh": "在办公室" }, "verb1": { "zh": "开会" } }, "end": "。", "es": "Si mañana llueve, nos reuniremos con los clientes en la oficina." }, "distractors": ["所以"] },
+        { "sentence": { "slots": { "subject": { "zh": "老板" }, "time": { "zh": "昨天晚上" }, "verb1": { "zh": "让全体同事" }, "verb2": { "zh": "加班" }, "complement": { "zh": "到十点" } }, "end": "。", "es": "Anoche el jefe hizo que toda la plantilla se quedara hasta las diez." }, "distractors": ["给"] },
+        { "sentence": { "slots": { "subject": { "zh": "小王" }, "time": { "zh": "昨天晚上十一点" }, "adverb": { "zh": "才" }, "with": { "zh": "跟老李一起" }, "verb1": { "zh": "下班" } }, "end": "。", "es": "Anoche Xiao Wang no salió del trabajo con Lao Li hasta las once." }, "distractors": ["了"] },
+        { "sentence": { "slots": { "subject": { "zh": "我们" }, "time": { "zh": "下个星期一" }, "adverb": { "zh": "再" }, "with": { "zh": "跟刘经理一起" }, "verb1": { "zh": "讨论" }, "object": { "zh": "顾客的不满" } }, "end": "。", "es": "El lunes que viene volveremos a tratar el descontento de los clientes con el director Liu." }, "distractors": ["又"] },
+        { "sentence": { "slots": { "time0": { "zh": "时间不多的话，" }, "subject": { "zh": "您" }, "time": { "zh": "下个月" }, "adverb": { "zh": "还是" }, "verb1": { "zh": "坐飞机" }, "verb2": { "zh": "直接去" }, "object": { "zh": "马德里" }, "particle": { "zh": "吧" } }, "end": "。", "es": "Si no tiene mucho tiempo, el mes que viene mejor vaya en avión directamente a Madrid." }, "distractors": ["或者"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "除了汉语以外，我还会说英语。", "py": "Chúle Hànyǔ yǐwài, wǒ hái huì shuō Yīngyǔ.", "es": "Además de chino, también hablo inglés." },
+        { "zh": "除了老李以外，全体同事都来了。", "py": "Chúle lǎo Lǐ yǐwài, quántǐ tóngshì dōu lái le.", "es": "Han venido todos los compañeros menos Lao Li." },
+        { "zh": "其他同事都回家了。", "py": "Qítā tóngshì dōu huí jiā le.", "es": "Los demás compañeros ya se han ido a casa." },
+        { "zh": "这正是我想做的工作。", "py": "Zhè zhèng shì wǒ xiǎng zuò de gōngzuò.", "es": "Es justo el trabajo que quiero hacer." }
+      ],
+      "respond": [
+        { "q": { "zh": "除了汉语以外，你还会说什么语言？", "py": "Chúle Hànyǔ yǐwài, nǐ hái huì shuō shénme yǔyán?", "es": "Además de chino, ¿qué idiomas hablas?" }, "model": { "zh": "除了汉语以外，我还会说西班牙语和英语。", "py": "Chúle Hànyǔ yǐwài, wǒ hái huì shuō Xībānyáyǔ hé Yīngyǔ.", "es": "Además de chino, hablo español e inglés." } },
+        { "q": { "zh": "你们班的同学都是西班牙人吗？", "py": "Nǐmen bān de tóngxué dōu shì Xībānyárén ma?", "es": "¿Todos tus compañeros de clase son españoles?" }, "model": { "zh": "不是。除了我和安娜以外，其他同学都不是西班牙人。", "py": "Bú shì. Chúle wǒ hé Ānnà yǐwài, qítā tóngxué dōu bú shì Xībānyárén.", "es": "No. Aparte de Anna y yo, ninguno de los demás es español." } },
+        { "q": { "zh": "如果公司请你去工作，你接受吗？", "py": "Rúguǒ gōngsī qǐng nǐ qù gōngzuò, nǐ jiēshòu ma?", "es": "Si una empresa te ofrece trabajo, ¿aceptas?" }, "model": { "zh": "如果工作有意思的话，我就接受。", "py": "Rúguǒ gōngzuò yǒu yìsi dehuà, wǒ jiù jiēshòu.", "es": "Si el trabajo es interesante, acepto." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Tres meses en «Viajes Occidente»",
+      "text": "雨果在“西方旅游”实习了三个月。除了顾客服务以外，他还写广告、给老顾客写信，有时候也跟同事们一起加班。他发现，中国的同事都很努力：老李常常七点就到办公室了，小王晚上十点才下班。除了上班以外，小王还写小说，她想成为一个作家。她和几个朋友组成了一个小组，每个星期六一起讨论他们写的小说。如果顾客对服务有不满，刘经理就让雨果直接给他们打电话。雨果觉得，这正是学汉语最好的方法。最后一天，除了老李以外，全体同事都请雨果吃饭。刘经理问他读完硕士以后想不想来公司工作。雨果很想接受，可是要先跟家人商量一下。其他的事情，他们以后再说。",
+      "es": "Hugo ha estado tres meses de prácticas en «Viajes Occidente». Además de atender a los clientes, ha escrito anuncios y cartas a los clientes habituales, y alguna vez se ha quedado a hacer horas extra con los compañeros. Ha descubierto que sus compañeros chinos trabajan muchísimo: Lao Li suele estar en la oficina ya a las siete, y Xiao Wang no sale hasta las diez de la noche. Además de trabajar, Xiao Wang escribe novelas: quiere ser escritora. Con unos amigos ha formado un grupo, y todos los sábados comentan juntos lo que escriben. Si algún cliente está descontento con el servicio, el director Liu le pide a Hugo que le llame directamente. A Hugo le parece que esa es justamente la mejor manera de aprender chino. El último día, todos los compañeros menos Lao Li invitaron a Hugo a comer. El director Liu le preguntó si querría trabajar en la empresa cuando terminara el máster. Hugo tiene muchas ganas de aceptar, pero antes tiene que hablarlo con su familia. Lo demás, ya lo hablarán más adelante.",
+      "questions": [
+        { "q": "¿Cuánto tiempo ha durado la práctica de Hugo?", "options": ["三个月", "三个星期", "三年"], "answer": 0 },
+        { "q": "¿Qué hace Xiao Wang además de trabajar?", "options": ["写小说", "学西班牙语", "去北京开会"], "answer": 0 },
+        { "q": "¿Quién no estuvo en la comida del último día?", "options": ["老李", "小王", "刘经理"], "answer": 0 },
+        { "q": "¿Qué frase significa «todos menos Lao Li»?", "options": ["除了老李以外，大家都去了。", "除了老李以外，大家也去了。", "除了老李以外，大家还去了。"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

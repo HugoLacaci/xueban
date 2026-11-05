@@ -1,0 +1,139 @@
+{
+  "id": "a1-u01-l3",
+  "title": "¿Y tú? 呢 y 也",
+  "zh": "我是学生，你呢？——我也是。",
+  "goal": "Devolver la pregunta con 呢 y decir «yo también» con 也, en el primer encuentro con alguien.",
+  "minutes": 14,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "呢", "pinyin": "ne", "es": "¿y…? (devuelve la pregunta)", "note": "Tono neutro. 你呢？ = ¿y tú?" },
+    { "hanzi": "也", "pinyin": "yě", "es": "también", "note": "Siempre detrás del sujeto y delante del verbo." },
+    { "hanzi": "认识", "pinyin": "rènshi", "es": "conocer (a alguien)" },
+    { "hanzi": "高兴", "pinyin": "gāoxìng", "es": "contento, encantado" },
+    { "hanzi": "很", "pinyin": "hěn", "es": "muy", "note": "En 很好 y 很高兴 casi no significa «muy»: acompaña al adjetivo. Lo verás a fondo en la unidad 8." },
+    { "hanzi": "先生", "pinyin": "xiānsheng", "es": "señor", "note": "Detrás del apellido: 李先生 = el señor Li." },
+    { "hanzi": "小姐", "pinyin": "xiǎojiě", "es": "señorita", "note": "Detrás del apellido: 王小姐. En la calle, para llamar a una camarera, hoy suena raro: se usa 服务员 o 你好." },
+    { "hanzi": "请进", "pinyin": "qǐng jìn", "es": "adelante, pase (entre)" },
+    { "hanzi": "请坐", "pinyin": "qǐng zuò", "es": "siéntese, siéntate" },
+    { "hanzi": "坐下", "pinyin": "zuòxia", "es": "sentarse", "note": "坐下 a secas suena a orden: «¡siéntate!». Con 请 es cortés." },
+    { "hanzi": "西班牙", "pinyin": "Xībānyá", "es": "España", "note": "西班牙人 = español, española." },
+    { "hanzi": "美国", "pinyin": "Měiguó", "es": "Estados Unidos", "note": "美国人 = estadounidense." }
+  ],
+  "extraVocab": ["西班牙", "美国"],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "我是西班牙人，你呢？", "py": "Wǒ shì Xībānyá rén, nǐ ne?", "es": "Soy español, ¿y tú?" },
+        { "zh": "我也是学生。", "py": "Wǒ yě shì xuésheng.", "es": "Yo también soy estudiante." },
+        { "zh": "认识你很高兴！", "py": "Rènshi nǐ hěn gāoxìng!", "es": "¡Encantado de conocerte!" }
+      ]
+    },
+    { "type": "vocab", "title": "Conocer a alguien", "words": ["呢", "也", "认识", "高兴", "很", "先生", "小姐", "请进", "请坐", "坐下", "西班牙", "美国"] },
+    {
+      "type": "phonetics-drill",
+      "title": "Dos terceros tonos seguidos: 你好, 我也, 很好",
+      "markdown": "Cuando van **dos terceros tonos juntos**, el primero se convierte en **segundo tono** (sube):\n\n- 你好 nǐ hǎo → se dice *ní hǎo*\n- 很好 hěn hǎo → *hén hǎo*\n- 我也 wǒ yě → *wó yě*\n\nSe sigue **escribiendo** el tercer tono en el pinyin; solo cambia al hablar. Con tres seguidos (**我也很好**, ¡cuatro!) se agrupan por sentido: *wó yé hén hǎo* suena natural, y solo el último hace el tercer tono completo.\n\nOjo: **小姐 xiǎojiě** también es 3 + 3: se dice *xiáojiě*.",
+      "items": [
+        { "audio": "你好", "prompt": "¿Cómo suena 你 aquí?", "options": ["Sube (como un 2.º tono)", "Baja y sube completo (3.º)", "Cae (4.º)"], "answer": 0, "explain": "3 + 3 → el primero pasa a 2.º tono." },
+        { "audio": "很好", "options": ["hěn hǎo", "hèn hǎo", "hēn hǎo"], "answer": 0, "explain": "Se escribe hěn hǎo aunque se diga hén hǎo." },
+        { "audio": "小姐", "options": ["xiǎojiě", "xiāojiè", "xiàojiē"], "answer": 0, "explain": "Dos terceros tonos: se dice xiáojiě." },
+        { "audio": "我也是", "prompt": "¿Qué sílaba cambia de tono al hablar?", "options": ["我 (pasa a 2.º)", "也 (pasa a 1.º)", "是 (pasa a 2.º)"], "answer": 0, "explain": "我 + 也 son 3 + 3: 我 sube. 是 es 4.º y no cambia." },
+        { "audio": "高兴", "options": ["gāoxìng", "gàoxīng", "gāoxīn"], "answer": 0, "explain": "gāo alto y plano + xìng que cae; termina en -ng (nasal del fondo)." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["也", "呢"],
+      "mnemonics": {
+        "也": "Pictograma antiguo de una serpiente o de un recipiente; hoy es un carácter «gramatical»: piensa en el gancho final como un «y yo también» que se engancha a la frase.",
+        "呢": "口 (boca) + 尼 (que da el sonido ní): la boca que devuelve la pregunta, «¿y tú?»."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "也: detrás del sujeto, delante del verbo",
+      "markdown": "**也** («también») va siempre en el **hueco de los adverbios**: detrás del sujeto y delante del verbo. Nunca al principio ni al final de la frase, aunque en español digamos «*también* yo» o «yo soy estudiante *también*».\n\n- 我**也**是学生。 Yo también soy estudiante.\n- 我**也**很高兴。 Yo también estoy encantado (也 va delante de 很).\n- Negativa: **也不** + verbo: 我**也不**是老师 (yo tampoco soy profesor). En español es «tampoco»; en chino, «también no».\n\nPregunta: añade 吗: 你**也**是学生吗？",
+      "focus": ["adverb"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "也", "py": "yě" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "学生", "py": "xuésheng" } }, "end": "。", "es": "Yo también soy estudiante.", "esOrder": [{ "text": "Yo", "slot": "subject" }, { "text": "también", "slot": "adverb" }, { "text": "soy", "slot": "verb1" }, { "text": "estudiante", "slot": "object" }] },
+        { "slots": { "subject": { "zh": "安娜", "py": "Ānnà" }, "adverb": { "zh": "也", "py": "yě" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "西班牙人", "py": "Xībānyá rén" } }, "end": "。", "es": "Anna es española también.", "esOrder": [{ "text": "Anna", "slot": "subject" }, { "text": "es", "slot": "verb1" }, { "text": "española", "slot": "object" }, { "text": "también", "slot": "adverb" }] },
+        { "slots": { "subject": { "zh": "李先生", "py": "Lǐ xiānsheng" }, "adverb": { "zh": "也", "py": "yě" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "老师", "py": "lǎoshī" } }, "end": "。", "es": "El señor Li también es profesor." },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "也很", "py": "yě hěn" }, "verb1": { "zh": "高兴", "py": "gāoxìng" } }, "end": "。", "es": "Yo también estoy encantado." },
+        { "slots": { "subject": { "zh": "大卫", "py": "Dàwèi" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "美国人", "py": "Měiguó rén" } }, "end": "。", "es": "David es estadounidense." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "大卫", "py": "Dàwèi" }, "adverb": { "zh": "不", "py": "bú" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "西班牙人", "py": "Xībānyá rén" } }, "end": "。", "es": "David no es español." },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "也不", "py": "yě bú" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "老师", "py": "lǎoshī" } }, "end": "。", "es": "Yo tampoco soy profesor.", "esOrder": [{ "text": "Yo", "slot": "subject" }, { "text": "tampoco", "slot": "adverb" }, { "text": "soy", "slot": "verb1" }, { "text": "profesor", "slot": "object" }] }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "adverb": { "zh": "也", "py": "yě" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "学生", "py": "xuésheng" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿Tú también eres estudiante?" },
+        { "slots": { "subject": { "zh": "王小姐", "py": "Wáng xiǎojiě" }, "adverb": { "zh": "也", "py": "yě" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "中国人", "py": "Zhōngguó rén" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿La señorita Wang también es china?" }
+      ],
+      "mistakes": [
+        { "wrong": "也我是学生。", "right": "我也是学生。", "why": "也 nunca va delante del sujeto: siempre detrás de él." },
+        { "wrong": "我是学生也。", "right": "我也是学生。", "why": "Tampoco al final, aunque en español digamos «…también»." },
+        { "wrong": "我是也学生。", "right": "我也是学生。", "why": "也 va delante del verbo (是), no delante del nombre." },
+        { "wrong": "我很也高兴。", "right": "我也很高兴。", "why": "Con dos adverbios, 也 va primero: 也很, 也不." }
+      ]
+    },
+    {
+      "type": "explain",
+      "title": "呢: «¿y tú?» sin repetir la pregunta",
+      "markdown": "**呢** se pone detrás de una persona (o cosa) para **devolver la pregunta** que acaba de salir, sin repetirla:\n\n- 我是西班牙人，**你呢？** — Soy español, ¿y tú?\n- 我是学生。**安娜呢？** — Yo soy estudiante. ¿Y Anna?\n\nLa respuesta suele llevar **也** si coincide (我**也**是西班牙人) o una frase con 不 si no (我不是西班牙人，我是美国人).\n\nDos detalles:\n\n- **呢 y 吗 no se juntan**: ~~你呢吗？~~ → 你呢？\n- 呢 necesita contexto: si nadie ha dicho nada antes, 你呢？ no se entiende."
+    },
+    {
+      "type": "dialogue",
+      "title": "En el despacho de la profesora Wang",
+      "lines": [
+        { "speaker": "王老师", "zh": "请进！", "py": "Qǐng jìn!", "es": "¡Adelante!" },
+        { "speaker": "雨果", "zh": "王老师好！", "py": "Wáng lǎoshī hǎo!", "es": "¡Buenos días, profesora Wang!" },
+        { "speaker": "王老师", "zh": "雨果，你好！请坐。这是大卫，他是美国人。", "py": "Yǔguǒ, nǐ hǎo! Qǐng zuò. Zhè shì Dàwèi, tā shì Měiguó rén.", "es": "¡Hola, Hugo! Siéntate. Este es David: es estadounidense." },
+        { "speaker": "大卫", "zh": "你好！认识你很高兴。", "py": "Nǐ hǎo! Rènshi nǐ hěn gāoxìng.", "es": "¡Hola! Encantado de conocerte." },
+        { "speaker": "雨果", "zh": "我也很高兴。我是西班牙人，你是学生吗？", "py": "Wǒ yě hěn gāoxìng. Wǒ shì Xībānyá rén, nǐ shì xuésheng ma?", "es": "Igualmente. Soy español; ¿eres estudiante?" },
+        { "speaker": "大卫", "zh": "是，我是学生。你呢？", "py": "Shì, wǒ shì xuésheng. Nǐ ne?", "es": "Sí, soy estudiante. ¿Y tú?" },
+        { "speaker": "雨果", "zh": "我也是学生。安娜呢？", "py": "Wǒ yě shì xuésheng. Ānnà ne?", "es": "Yo también soy estudiante. ¿Y Anna?" },
+        { "speaker": "王老师", "zh": "安娜也是西班牙人，她也是学生。", "py": "Ānnà yě shì Xībānyá rén, tā yě shì xuésheng.", "es": "Anna también es española, y también es estudiante." }
+      ],
+      "notes": "认识你很高兴 (lit. «conocerte, muy contento») es el «encantado de conocerte» chino; se contesta 我也很高兴. 请进 y 请坐 son las dos fórmulas de cortesía al recibir a alguien en un despacho o en casa."
+    },
+    { "type": "exercises", "count": 14, "bank": ["g-ne", "g-ye-dou", "g-ma", "u01"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "我" }, "adverb": { "zh": "也" }, "verb1": { "zh": "是" }, "object": { "zh": "学生" } }, "end": "。", "es": "Yo también soy estudiante." } },
+        { "sentence": { "slots": { "subject": { "zh": "我" }, "adverb": { "zh": "也很" }, "verb1": { "zh": "高兴" } }, "end": "。", "es": "Yo también estoy encantado." }, "distractors": ["呢"] },
+        { "sentence": { "slots": { "subject": { "zh": "他们" }, "adverb": { "zh": "也不" }, "verb1": { "zh": "是" }, "object": { "zh": "西班牙人" } }, "end": "。", "es": "Ellos tampoco son españoles." }, "distractors": ["吗"] },
+        { "sentence": { "slots": { "subject": { "zh": "李先生" }, "adverb": { "zh": "也" }, "verb1": { "zh": "是" }, "object": { "zh": "美国人" }, "particle": { "zh": "吗" } }, "end": "？", "es": "¿El señor Li también es estadounidense?" }, "distractors": ["呢", "不"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "认识你很高兴！", "py": "Rènshi nǐ hěn gāoxìng!", "es": "¡Encantado de conocerte!" },
+        { "zh": "我也很高兴。", "py": "Wǒ yě hěn gāoxìng.", "es": "Igualmente." },
+        { "zh": "我是西班牙人，你呢？", "py": "Wǒ shì Xībānyá rén, nǐ ne?", "es": "Soy español, ¿y tú?" },
+        { "zh": "请进！请坐！", "py": "Qǐng jìn! Qǐng zuò!", "es": "¡Adelante! ¡Siéntate!" }
+      ],
+      "respond": [
+        { "q": { "zh": "我是学生，你呢？", "py": "Wǒ shì xuésheng, nǐ ne?", "es": "Soy estudiante, ¿y tú?" }, "model": { "zh": "我也是学生。", "py": "Wǒ yě shì xuésheng.", "es": "Yo también soy estudiante." } },
+        { "q": { "zh": "认识你很高兴！", "py": "Rènshi nǐ hěn gāoxìng!", "es": "¡Encantado de conocerte!" }, "model": { "zh": "我也很高兴。", "py": "Wǒ yě hěn gāoxìng.", "es": "Igualmente." } },
+        { "q": { "zh": "我是美国人，你呢？", "py": "Wǒ shì Měiguó rén, nǐ ne?", "es": "Soy estadounidense, ¿y tú?" }, "model": { "zh": "我不是美国人，我是西班牙人。", "py": "Wǒ bú shì Měiguó rén, wǒ shì Xībānyá rén.", "es": "No soy estadounidense: soy español." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Los profesores nuevos",
+      "text": "这是李先生，他是老师。那是王小姐，她也是老师。李先生是中国人，王小姐也是中国人。我是雨果，我是西班牙人。安娜呢？安娜也是西班牙人。大卫不是西班牙人，他是美国人。",
+      "es": "Este es el señor Li: es profesor. Esa es la señorita Wang: también es profesora. El señor Li es chino, y la señorita Wang también. Yo soy Hugo, soy español. ¿Y Anna? Anna también es española. David no es español: es estadounidense.",
+      "questions": [
+        { "q": "¿Qué es la señorita Wang?", "options": ["Profesora", "Estudiante", "Española"], "answer": 0 },
+        { "q": "¿Quién es español, además de Hugo?", "options": ["安娜", "大卫", "李先生"], "answer": 0 },
+        { "q": "¿De dónde es David?", "options": ["Estados Unidos", "España", "China"], "answer": 0 },
+        { "q": "En «安娜呢？», ¿qué hace 呢?", "options": ["Pregunta «¿y Anna?»", "Niega", "Significa «también»"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

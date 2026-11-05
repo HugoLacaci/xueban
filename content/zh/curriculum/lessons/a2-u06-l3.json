@@ -1,0 +1,133 @@
+{
+  "id": "a2-u06-l3",
+  "title": "Dos años mayor: 比 + adjetivo + cuánto",
+  "zh": "他比我大两岁",
+  "goal": "Decir cuánta diferencia hay en una comparación: un poco (一点儿), mucho (多了 / 得多) o una cantidad exacta (大两岁, 贵五块).",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "关心", "pinyin": "guānxīn", "es": "preocuparse por, interesarse por (alguien)", "note": "谢谢你关心 = gracias por preocuparte." },
+    { "hanzi": "照顾", "pinyin": "zhàogù", "es": "cuidar (de alguien)" },
+    { "hanzi": "友好", "pinyin": "yǒuhǎo", "es": "amable, amistoso" },
+    { "hanzi": "互相", "pinyin": "hùxiāng", "es": "mutuamente, el uno al otro", "note": "Va delante del verbo: 互相帮助." },
+    { "hanzi": "联系", "pinyin": "liánxì", "es": "contactar; contacto", "note": "跟……联系 = ponerse en contacto con…" },
+    { "hanzi": "送给", "pinyin": "sònggěi", "es": "regalar a", "note": "送给我一本书 = regalarme un libro." },
+    { "hanzi": "让", "pinyin": "ràng", "es": "hacer que, pedir que, dejar (que alguien haga algo)", "note": "妈妈让我多休息 = mi madre me dice que descanse." },
+    { "hanzi": "答应", "pinyin": "dāying", "es": "prometer, aceptar (una petición)" },
+    { "hanzi": "好人", "pinyin": "hǎorén", "es": "buena persona" },
+    { "hanzi": "坏人", "pinyin": "huàirén", "es": "mala persona" }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "我哥哥比我大两岁。", "py": "Wǒ gēge bǐ wǒ dà liǎng suì.", "es": "Mi hermano es dos años mayor que yo." },
+        { "zh": "我的身体比上个星期好多了。", "py": "Wǒ de shēntǐ bǐ shàng ge xīngqī hǎo duō le.", "es": "Estoy mucho mejor que la semana pasada." },
+        { "zh": "咖啡比奶茶贵一点儿。", "py": "Kāfēi bǐ nǎichá guì yìdiǎnr.", "es": "El café es un poco más caro que el té con leche." }
+      ]
+    },
+    { "type": "vocab", "title": "Los buenos amigos", "words": ["关心", "照顾", "友好", "互相", "联系", "送给", "让", "答应", "好人", "坏人"] },
+    {
+      "type": "phonetics-drill",
+      "title": "Lo que va detrás: 多了, 得多, 一点儿",
+      "markdown": "La diferencia de una comparación va **al final**, y tiene su ritmo:\n\n- **好多了 hǎo duō le**: el peso está en 多; 了 es neutro y muy corto.\n- **好得多 hǎo de duō**: aquí el neutro es 得 (*de*, corto), y 多 vuelve a llevar el peso.\n- **一点儿 yìdiǎnr**: 一 pasa a cuarto tono delante de tercero, y 点儿 se funde en una sola sílaba con la lengua doblada: *diǎnr*, no *diǎn ér*.\n- **两岁 liǎng suì**: 两 en tercer tono, *liang* con «a» abierta.",
+      "items": [
+        { "audio": "一点儿", "options": ["yìdiǎnr", "yīdiǎnr", "yìdiǎn ér"], "answer": 0, "explain": "一 + 3.er tono → yì; el 儿 se pega a la sílaba anterior." },
+        { "audio": "好多了", "options": ["hǎo duō le", "hǎo duō lè", "hǎo duó le"], "answer": 0, "explain": "了 en tono neutro." },
+        { "audio": "好得多", "prompt": "¿Qué sílaba es neutra?", "options": ["得 (de)", "多 (duō)", "好 (hǎo)"], "answer": 0 },
+        { "audio": "照顾", "options": ["zhàogù", "zhāogù", "jiàogù"], "answer": 0, "explain": "zh retrofleja y dos cuartos tonos seguidos." },
+        { "audio": "互相", "options": ["hùxiāng", "hùxiàng", "fùxiāng"], "answer": 0, "explain": "La h china es áspera, como una jota suave; 相 aquí es primer tono." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["照", "互"],
+      "mnemonics": {
+        "照": "日 (sol) + 召 (llamar) + 灬 (fuego): la luz que «llama» e ilumina. De ahí 照片 (foto) y 照顾 (mirar por alguien, cuidar).",
+        "互": "Dos ganchos que se enganchan el uno en el otro: «mutuamente»."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "¿Cuánto más? 比 + adjetivo + 一点儿 / 多了 / 得多 / 两岁",
+      "markdown": "Ya sabes decir 他比我大. Para decir **cuánto**, la diferencia va **detrás del adjetivo**, en el hueco *Complemento*:\n\n| Diferencia | Ejemplo |\n|---|---|\n| un poco | 贵**一点儿**, 快**一些** |\n| mucho | 冷**多了**, 快**得多** |\n| cantidad exacta | 大**两岁**, 贵**五十块**, 快**十分钟** |\n\n(Recuerda la convención: 比 + B en *Adverbios*, el adjetivo en *Verbo 1*.)\n\n- La cantidad va **después** del adjetivo, al revés que en español («**dos años** mayor»).\n- **一点儿**, no 有点儿: 有点儿 va **delante** del adjetivo y suena a queja (有点儿贵 = algo caro, ¡vaya!).\n- **多了** es más coloquial (y típico de cambios: 好多了 = mucho mejor); **得多** es neutro.\n- Con cantidad no se niega: para «no es mayor que yo», 他不比我大.",
+      "focus": ["complement"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "我哥哥", "py": "wǒ gēge" }, "adverb": { "zh": "比我", "py": "bǐ wǒ" }, "verb1": { "zh": "大", "py": "dà" }, "complement": { "zh": "两岁", "py": "liǎng suì" } }, "end": "。", "es": "Mi hermano es dos años mayor que yo.", "esOrder": [{ "text": "Mi hermano", "slot": "subject" }, { "text": "es" }, { "text": "dos años", "slot": "complement" }, { "text": "mayor", "slot": "verb1" }, { "text": "que yo", "slot": "adverb" }] },
+        { "slots": { "subject": { "zh": "咖啡", "py": "kāfēi" }, "adverb": { "zh": "比奶茶", "py": "bǐ nǎichá" }, "verb1": { "zh": "贵", "py": "guì" }, "complement": { "zh": "一点儿", "py": "yìdiǎnr" } }, "end": "。", "es": "El café es un poco más caro que el té con leche." },
+        { "slots": { "subject": { "zh": "今天", "py": "jīntiān" }, "adverb": { "zh": "比昨天", "py": "bǐ zuótiān" }, "verb1": { "zh": "冷", "py": "lěng" }, "complement": { "zh": "多了", "py": "duō le" } }, "end": "。", "es": "Hoy hace mucho más frío que ayer." },
+        { "slots": { "subject": { "zh": "坐地铁", "py": "zuò dìtiě" }, "adverb": { "zh": "比坐公交车", "py": "bǐ zuò gōngjiāochē" }, "verb1": { "zh": "快", "py": "kuài" }, "complement": { "zh": "得多", "py": "de duō" } }, "end": "。", "es": "Ir en metro es mucho más rápido que ir en autobús." },
+        { "slots": { "time0": { "zh": "现在", "py": "xiànzài" }, "subject": { "zh": "我的身体", "py": "wǒ de shēntǐ" }, "adverb": { "zh": "比上个月", "py": "bǐ shàng ge yuè" }, "verb1": { "zh": "好", "py": "hǎo" }, "complement": { "zh": "多了", "py": "duō le" } }, "end": "。", "es": "Ahora estoy mucho mejor de salud que el mes pasado." },
+        { "slots": { "subject": { "zh": "这件衣服", "py": "zhè jiàn yīfu" }, "adverb": { "zh": "比那件", "py": "bǐ nà jiàn" }, "verb1": { "zh": "便宜", "py": "piányi" }, "complement": { "zh": "五十块", "py": "wǔshí kuài" } }, "end": "。", "es": "Esta prenda es cincuenta yuanes más barata que aquella." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "他", "py": "tā" }, "adverb": { "zh": "不比我", "py": "bù bǐ wǒ" }, "verb1": { "zh": "大", "py": "dà" } }, "end": "。", "es": "No es mayor que yo." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你哥哥", "py": "nǐ gēge" }, "adverb": { "zh": "比你", "py": "bǐ nǐ" }, "verb1": { "zh": "大", "py": "dà" }, "complement": { "zh": "几岁", "py": "jǐ suì" } }, "end": "？", "es": "¿Cuántos años te saca tu hermano?" },
+        { "slots": { "subject": { "zh": "坐地铁", "py": "zuò dìtiě" }, "adverb": { "zh": "比打车", "py": "bǐ dǎchē" }, "verb1": { "zh": "便宜", "py": "piányi" }, "complement": { "zh": "多少", "py": "duōshao" } }, "end": "？", "es": "¿Cuánto más barato es el metro que el taxi?" }
+      ],
+      "mistakes": [
+        { "wrong": "我哥哥比我两岁大。", "right": "我哥哥比我大两岁。", "why": "La cantidad va detrás del adjetivo, no delante como en español." },
+        { "wrong": "今天比昨天很冷。", "right": "今天比昨天冷多了。 / 今天比昨天冷得多。", "why": "«Mucho más» no es 很: es 多了 o 得多 detrás del adjetivo." },
+        { "wrong": "咖啡比奶茶有点儿贵。", "right": "咖啡比奶茶贵一点儿。", "why": "Con 比, «un poco» es 一点儿 detrás del adjetivo; 有点儿 no se combina con 比." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Mucho mejor, gracias",
+      "lines": [
+        { "speaker": "安娜", "zh": "雨果，你的身体怎么样了？", "py": "Yǔguǒ, nǐ de shēntǐ zěnmeyàng le?", "es": "Hugo, ¿qué tal estás de salud?" },
+        { "speaker": "雨果", "zh": "比上个星期好多了。小李很关心我，每天都照顾我。", "py": "Bǐ shàng ge xīngqī hǎo duō le. Xiǎo Lǐ hěn guānxīn wǒ, měi tiān dōu zhàogù wǒ.", "es": "Mucho mejor que la semana pasada. Xiao Li se preocupa mucho por mí y me cuida todos los días." },
+        { "speaker": "安娜", "zh": "小李真是一个好人！他比你大吗？", "py": "Xiǎo Lǐ zhēn shì yí ge hǎorén! Tā bǐ nǐ dà ma?", "es": "¡Xiao Li es buenísima persona! ¿Es mayor que tú?" },
+        { "speaker": "雨果", "zh": "他比我大两岁，个子比我矮一点儿。", "py": "Tā bǐ wǒ dà liǎng suì, gèzi bǐ wǒ ǎi yìdiǎnr.", "es": "Me saca dos años, pero es un poco más bajo que yo." },
+        { "speaker": "安娜", "zh": "你们宿舍的人互相帮助，真好。", "py": "Nǐmen sùshè de rén hùxiāng bāngzhù, zhēn hǎo.", "es": "En vuestra residencia os ayudáis unos a otros: qué bien." },
+        { "speaker": "雨果", "zh": "是啊，这儿的人都很友好。", "py": "Shì a, zhèr de rén dōu hěn yǒuhǎo.", "es": "Sí, aquí todo el mundo es muy amable." },
+        { "speaker": "安娜", "zh": "你妈妈知道你生病了吗？", "py": "Nǐ māma zhīdào nǐ shēngbìng le ma?", "es": "¿Sabe tu madre que te has puesto malo?" },
+        { "speaker": "雨果", "zh": "知道。她让我多休息，还让小李常常跟她联系。", "py": "Zhīdào. Tā ràng wǒ duō xiūxi, hái ràng Xiǎo Lǐ chángcháng gēn tā liánxì.", "es": "Sí. Me ha dicho que descanse mucho, y le ha pedido a Xiao Li que la tenga al tanto." },
+        { "speaker": "安娜", "zh": "小李答应了吗？", "py": "Xiǎo Lǐ dāying le ma?", "es": "¿Y Xiao Li ha dicho que sí?" },
+        { "speaker": "雨果", "zh": "答应了！他还送给我一个苹果，比我的手还大！", "py": "Dāying le! Tā hái sònggěi wǒ yí ge píngguǒ, bǐ wǒ de shǒu hái dà!", "es": "¡Sí! Y además me ha regalado una manzana más grande que mi mano." },
+        { "speaker": "安娜", "zh": "真的吗？你要好好休息！", "py": "Zhēn de ma? Nǐ yào hǎohǎo xiūxi!", "es": "¿En serio? ¡Tienes que descansar bien!" }
+      ],
+      "notes": "比……还 + adj = «aún más… que»: sirve para exagerar (比我的手还大). 让 + persona + verbo es «hacer que alguien haga algo»: 她让我多休息. En chino se agradece la preocupación con 谢谢你的关心 o 谢谢关心."
+    },
+    { "type": "exercises", "count": 17, "bank": ["u08", "g-yidianr-youdianr", "g-numbers", "g-price-age"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "我哥哥" }, "adverb": { "zh": "比我" }, "verb1": { "zh": "大" }, "complement": { "zh": "两岁" } }, "end": "。", "es": "Mi hermano es dos años mayor que yo." }, "distractors": ["很"] },
+        { "sentence": { "slots": { "subject": { "zh": "咖啡" }, "adverb": { "zh": "比奶茶" }, "verb1": { "zh": "贵" }, "complement": { "zh": "一点儿" } }, "end": "。", "es": "El café es un poco más caro que el té con leche." }, "distractors": ["有点儿"] },
+        { "sentence": { "slots": { "subject": { "zh": "坐地铁" }, "adverb": { "zh": "比坐公交车" }, "verb1": { "zh": "快" }, "complement": { "zh": "得多" } }, "end": "。", "es": "Ir en metro es mucho más rápido que ir en autobús." }, "distractors": ["很"] },
+        { "sentence": { "slots": { "time0": { "zh": "这个学期" }, "subject": { "zh": "雨果的汉语" }, "adverb": { "zh": "比上个学期" }, "verb1": { "zh": "好" }, "complement": { "zh": "多了" } }, "end": "。", "es": "Este cuatrimestre el chino de Hugo es mucho mejor que el anterior." } },
+        { "sentence": { "slots": { "subject": { "zh": "妈妈" }, "time": { "zh": "每天晚上" }, "adverb": { "zh": "都" }, "verb1": { "zh": "让我" }, "verb2": { "zh": "早一点儿睡觉" } }, "end": "。", "es": "Mi madre me dice todas las noches que me acueste un poco antes." } }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "我哥哥比我大两岁。", "py": "Wǒ gēge bǐ wǒ dà liǎng suì.", "es": "Mi hermano es dos años mayor que yo." },
+        { "zh": "今天比昨天冷多了。", "py": "Jīntiān bǐ zuótiān lěng duō le.", "es": "Hoy hace mucho más frío que ayer." },
+        { "zh": "坐地铁比坐公交车快得多。", "py": "Zuò dìtiě bǐ zuò gōngjiāochē kuài de duō.", "es": "Ir en metro es mucho más rápido que ir en autobús." },
+        { "zh": "咖啡比奶茶贵一点儿。", "py": "Kāfēi bǐ nǎichá guì yìdiǎnr.", "es": "El café es un poco más caro que el té con leche." }
+      ],
+      "respond": [
+        { "q": { "zh": "你哥哥比你大几岁？", "py": "Nǐ gēge bǐ nǐ dà jǐ suì?", "es": "¿Cuántos años te saca tu hermano?" }, "model": { "zh": "他比我大三岁。", "py": "Tā bǐ wǒ dà sān suì.", "es": "Me saca tres años." } },
+        { "q": { "zh": "你的身体怎么样了？", "py": "Nǐ de shēntǐ zěnmeyàng le?", "es": "¿Qué tal estás de salud?" }, "model": { "zh": "比昨天好多了，谢谢你关心。", "py": "Bǐ zuótiān hǎo duō le, xièxie nǐ guānxīn.", "es": "Mucho mejor que ayer, gracias por preocuparte." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Un buen compañero",
+      "text": "雨果生病的时候，小李每天都照顾他。小李比雨果大两岁，个子比雨果矮一点儿，他做的菜比雨果的好吃得多。雨果的妈妈很关心儿子，她让小李常常跟她联系，小李答应了。他说：“朋友要互相帮助。”雨果的妈妈说：“在外国，好人多，坏人少，你们也要小心。”现在雨果的身体比上个星期好多了。他觉得宿舍的同学都很友好。他还送给小李一本西班牙语的书。",
+      "es": "Cuando Hugo se puso malo, Xiao Li lo cuidó todos los días. Xiao Li es dos años mayor que Hugo y un poco más bajo, pero cocina muchísimo mejor que él. La madre de Hugo se preocupa mucho por su hijo: le pidió a Xiao Li que la tuviera al tanto, y él se lo prometió. Dijo: «Los amigos tienen que ayudarse». La madre de Hugo contestó: «En el extranjero hay mucha gente buena y poca mala, pero tened cuidado también». Ahora Hugo está mucho mejor que la semana pasada. Le parece que todos los compañeros de la residencia son muy amables. Además le ha regalado a Xiao Li un libro en español.",
+      "questions": [
+        { "q": "¿Cuántos años le saca Xiao Li a Hugo?", "options": ["两岁", "一岁", "三岁"], "answer": 0 },
+        { "q": "¿Quién cocina mejor?", "options": ["小李", "雨果", "Igual"], "answer": 0 },
+        { "q": "¿Qué le pidió la madre de Hugo a Xiao Li?", "options": ["常常跟她联系", "给雨果做饭", "送给雨果一本书"], "answer": 0 },
+        { "q": "¿Qué le ha regalado Hugo a Xiao Li?", "options": ["一本西班牙语的书", "一个苹果", "一件衣服"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

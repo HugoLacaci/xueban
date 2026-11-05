@@ -1,0 +1,143 @@
+{
+  "id": "a2-u09-l3",
+  "title": "Acaba de llover: 刚, 刚才, 马上 y 一直",
+  "zh": "我刚到",
+  "goal": "Contar lo que acaba de pasar con 刚 / 刚才, lo que va a pasar enseguida con 马上 y lo que no para con 一直.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "刚", "pinyin": "gāng", "es": "acabar de", "note": "Adverbio: detrás del sujeto, sin 了 final. 我刚到 = acabo de llegar." },
+    { "hanzi": "刚刚", "pinyin": "gānggāng", "es": "justo ahora, hace nada", "note": "Igual que 刚, pero más enfático." },
+    { "hanzi": "刚才", "pinyin": "gāngcái", "es": "hace un momento", "note": "Es un tiempo (como 昨天): puede ir delante del sujeto y admite 了 y 没." },
+    { "hanzi": "马上", "pinyin": "mǎshàng", "es": "enseguida, ahora mismo", "note": "我马上来 = voy enseguida. 马上就要…了 = está a punto de…" },
+    { "hanzi": "一会儿", "pinyin": "yíhuìr", "es": "un rato; dentro de un rato", "note": "Delante del verbo = «dentro de un rato»; detrás = «durante un rato» (等一会儿)." },
+    { "hanzi": "不一会儿", "pinyin": "bù yíhuìr", "es": "al poco rato", "note": "Para contar: 不一会儿，雨就停了." },
+    { "hanzi": "不久", "pinyin": "bùjiǔ", "es": "poco después; dentro de poco" },
+    { "hanzi": "忽然", "pinyin": "hūrán", "es": "de repente", "note": "Va delante del verbo o al principio de la frase." },
+    { "hanzi": "出现", "pinyin": "chūxiàn", "es": "aparecer", "note": "天上出现了很多云: el lugar va delante, lo que aparece detrás." },
+    { "hanzi": "一直", "pinyin": "yìzhí", "es": "todo el rato, sin parar; siempre", "note": "今天一直下雨 = hoy no ha parado de llover." },
+    { "hanzi": "天空", "pinyin": "tiānkōng", "es": "cielo (el espacio)" },
+    { "hanzi": "天上", "pinyin": "tiān shang", "es": "en el cielo" },
+    { "hanzi": "亮", "pinyin": "liàng", "es": "claro, luminoso; brillar", "note": "天亮了 = ya es de día / ha clareado." }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "我刚到家。", "py": "Wǒ gāng dào jiā.", "es": "Acabo de llegar a casa." },
+        { "zh": "刚才下了一场大雨。", "py": "Gāngcái xiàle yì cháng dà yǔ.", "es": "Hace un momento ha caído un buen chaparrón." },
+        { "zh": "等一下，我马上来！", "py": "Děng yíxià, wǒ mǎshàng lái!", "es": "¡Espera, voy enseguida!" }
+      ]
+    },
+    { "type": "vocab", "title": "Acabar de, enseguida y de repente", "words": ["刚", "刚刚", "刚才", "马上", "一会儿", "不一会儿", "不久", "忽然", "出现", "一直", "天空", "天上", "亮"] },
+    {
+      "type": "phonetics-drill",
+      "title": "El 一 que cambia de tono, el erhua de 一会儿 y la -ng de 刚",
+      "markdown": "**一** cambia de tono según la sílaba que sigue (Etapa 0):\n- delante de un **4.º** tono pasa a **yí**: 一会儿 *yíhuìr*, 一下 *yíxià*;\n- delante de los **demás** pasa a **yì**: 一直 *yìzhí*, 一场 *yì cháng*.\n\n**一会儿** termina en **erhua**: *huìr* es una sola sílaba con la lengua curvada al final, no *huì-ér*. En el sur de China (Shanghái) mucha gente dice *yíhuì* sin erhua: entenderás las dos.\n\n**刚** *gāng* acaba en **-ng** (nasal de atrás); no lo confundas con *gān*. Y **马上** *mǎshàng*: el 马 es un medio tercer tono, bajo y corto.\n\nEn las frases que cuentan algo (不一会儿，雨就停了), haz una **pausa breve** tras la expresión de tiempo: así el oyente sabe que empieza lo importante.",
+      "items": [
+        { "audio": "一会儿", "options": ["yíhuìr", "yìhuìr", "yīhuìr"], "answer": 0, "explain": "会 es 4.º tono: 一 pasa a yí." },
+        { "audio": "一直", "options": ["yìzhí", "yízhí", "yīzhí"], "answer": 0, "explain": "直 es 2.º tono: 一 pasa a yì." },
+        { "audio": "刚才", "options": ["gāngcái", "gāncái", "gāngcāi"], "answer": 0, "explain": "gāng con -ng y cái subiendo." },
+        { "audio": "忽然", "options": ["hūrán", "fūrán", "hūlán"], "answer": 0, "explain": "La h china suena como una j suave española; 然 empieza por r, no por l." },
+        { "audio": "马上", "options": ["mǎshàng", "máshàng", "mǎshāng"], "answer": 0, "explain": "Medio tercer tono + cuarto tono." },
+        { "audio": "不一会儿，雨就停了。", "prompt": "¿Dónde va la pausa?", "options": ["不一会儿 / 雨就停了", "不一 / 会儿雨就停了", "不一会儿雨 / 就停了"], "answer": 0, "explain": "Tras la expresión de tiempo (不一会儿), marcada en la escritura con la coma." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["刚", "亮"],
+      "mnemonics": {
+        "刚": "冈 (la loma) + 刂 (el cuchillo): un cuchillo recién afilado, duro y firme. Su primer sentido era «duro»; de ahí, «justo, en este mismo instante».",
+        "亮": "Parece 高 (alto) cortado por abajo, con 几 debajo: un farol puesto en lo alto de una torre que lo alumbra todo."
+      }
+    },
+    {
+      "type": "explain",
+      "title": "刚 y 刚才 no son lo mismo",
+      "markdown": "| | **刚 / 刚刚** | **刚才** |\n|---|---|---|\n| Qué es | adverbio («acabar de») | tiempo («hace un momento») |\n| Posición | **detrás** del sujeto: 我**刚**到 | delante o detrás del sujeto: **刚才**我看见他了 / 我**刚才**看见他了 |\n| ¿了 final? | normalmente **no**: 我刚到。 | **sí**: 刚才下雨了。 |\n| ¿Se niega? | **no** | **sí**: 我刚才**没**看见他。 |\n| ¿Con duración? | **sí**: 我刚来**两个月** (llevo solo dos meses) | no |\n\nAdemás, **刚** sirve para algo pasado aunque no sea reciente, si al hablante le parece poco: 我刚来上海两个月 («solo llevo dos meses»). 刚才 es siempre hace unos minutos.\n\nY tres expresiones para contar: **马上** (enseguida; 马上就要…了 = está a punto de), **一会儿** (dentro de un rato / durante un rato) y **不一会儿** (al poco rato, en una narración)."
+    },
+    {
+      "type": "skeleton",
+      "title": "刚 / 马上 / 一直 (adverbios) y 刚才 (tiempo)",
+      "markdown": "**刚, 刚刚, 马上, 一直, 忽然** van en el hueco de los **adverbios**. **刚才** y **不一会儿** son expresiones de **tiempo**: 刚才 va en *Tiempo* (detrás del sujeto) o en *Tiempo inicial* (delante); 不一会儿 suele ir delante, separado por coma.\n\nCon 刚 y 刚才 la diferencia se ve en la negativa: solo 刚才 se puede negar.",
+      "focus": ["adverb", "time"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "刚", "py": "gāng" }, "verb1": { "zh": "到家", "py": "dào jiā" } }, "end": "。", "es": "Acabo de llegar a casa.", "esOrder": [{ "text": "Acabo de", "slot": "adverb" }, { "text": "llegar a casa", "slot": "verb1" }] },
+        { "slots": { "time0": { "zh": "刚才", "py": "gāngcái" }, "verb1": { "zh": "下了", "py": "xiàle" }, "object": { "zh": "一场大雨", "py": "yì cháng dà yǔ" } }, "end": "。", "es": "Hace un momento ha caído un buen chaparrón." },
+        { "slots": { "subject": { "zh": "雨果", "py": "Yǔguǒ" }, "adverb": { "zh": "刚", "py": "gāng" }, "verb1": { "zh": "来上海", "py": "lái Shànghǎi" }, "complement": { "zh": "两个月", "py": "liǎng ge yuè" } }, "end": "。", "es": "Hugo solo lleva dos meses en Shanghái." },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "马上", "py": "mǎshàng" }, "verb1": { "zh": "回来", "py": "huílai" } }, "end": "。", "es": "Vuelvo enseguida." },
+        { "slots": { "time0": { "zh": "今天", "py": "jīntiān" }, "adverb": { "zh": "一直", "py": "yìzhí" }, "verb1": { "zh": "下雨", "py": "xià yǔ" } }, "end": "。", "es": "Hoy no ha parado de llover." },
+        { "slots": { "time0": { "zh": "不一会儿，", "py": "bù yíhuìr," }, "subject": { "zh": "天上", "py": "tiān shang" }, "verb1": { "zh": "出现了", "py": "chūxiàn le" }, "object": { "zh": "很多云", "py": "hěn duō yún" } }, "end": "。", "es": "Al poco rato aparecieron muchas nubes en el cielo." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "time": { "zh": "刚才", "py": "gāngcái" }, "adverb": { "zh": "没", "py": "méi" }, "verb1": { "zh": "看见", "py": "kànjiàn" }, "object": { "zh": "他", "py": "tā" } }, "end": "。", "es": "Hace un momento no lo he visto." },
+        { "slots": { "subject": { "zh": "他", "py": "tā" }, "adverb": { "zh": "一直没", "py": "yìzhí méi" }, "verb1": { "zh": "来", "py": "lái" } }, "end": "。", "es": "No ha llegado en todo el rato." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "time": { "zh": "刚才", "py": "gāngcái" }, "verb1": { "zh": "去", "py": "qù" }, "object": { "zh": "哪儿", "py": "nǎr" }, "particle": { "zh": "了", "py": "le" } }, "end": "？", "es": "¿Adónde has ido hace un momento?" },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "adverb": { "zh": "是不是刚", "py": "shì bu shì gāng" }, "verb1": { "zh": "起床", "py": "qǐchuáng" } }, "end": "？", "es": "¿A que te acabas de levantar?" }
+      ],
+      "mistakes": [
+        { "wrong": "我刚到了。", "right": "我刚到。", "why": "Con 刚 la frase no suele llevar 了 final: «acabar de» ya dice que ha pasado." },
+        { "wrong": "刚我看见他了。", "right": "刚才我看见他了。", "why": "刚 es un adverbio y no puede ir delante del sujeto; 刚才 (un tiempo) sí." },
+        { "wrong": "我刚没吃饭。", "right": "我刚才没吃饭。", "why": "刚 no se niega; para «hace un momento no…» se usa 刚才 + 没." },
+        { "wrong": "我回来马上。", "right": "我马上回来。", "why": "马上 es adverbio: delante del verbo, no al final como «enseguida»." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Chaparrón de tarde",
+      "lines": [
+        { "speaker": "小李", "zh": "雨果，你刚回来吗？身上都是水！", "py": "Yǔguǒ, nǐ gāng huílai ma? Shēn shang dōu shì shuǐ!", "es": "Hugo, ¿acabas de volver? ¡Estás empapado!" },
+        { "speaker": "雨果", "zh": "对，我刚到。刚才下了一场大雨，我没带伞。", "py": "Duì, wǒ gāng dào. Gāngcái xiàle yì cháng dà yǔ, wǒ méi dài sǎn.", "es": "Sí, acabo de llegar. Ha caído un buen chaparrón y no llevaba paraguas." },
+        { "speaker": "小李", "zh": "我刚才在宿舍，看见天空忽然变黑了。", "py": "Wǒ gāngcái zài sùshè, kànjiàn tiānkōng hūrán biàn hēi le.", "es": "Yo estaba en la residencia y he visto que el cielo se ponía negro de repente." },
+        { "speaker": "雨果", "zh": "是啊，一点天上还有太阳，不一会儿就出现了很多云。", "py": "Shì a, yì diǎn tiān shang hái yǒu tàiyáng, bù yíhuìr jiù chūxiànle hěn duō yún.", "es": "Sí: a la una todavía había sol, y al poco rato han aparecido un montón de nubes." },
+        { "speaker": "小李", "zh": "上海的天气常常这样。你马上去洗个澡吧。", "py": "Shànghǎi de tiānqì chángcháng zhèyàng. Nǐ mǎshàng qù xǐ ge zǎo ba.", "es": "En Shanghái pasa a menudo. Date una ducha ahora mismo." },
+        { "speaker": "雨果", "zh": "好，我马上去。雨还在下吗？", "py": "Hǎo, wǒ mǎshàng qù. Yǔ hái zài xià ma?", "es": "Vale, voy enseguida. ¿Sigue lloviendo?" },
+        { "speaker": "小李", "zh": "雨刚刚停。你看，天又亮了。", "py": "Yǔ gānggāng tíng. Nǐ kàn, tiān yòu liàng le.", "es": "Acaba de parar justo ahora. Mira, ya vuelve a clarear." },
+        { "speaker": "雨果", "zh": "这儿的天气变化太快了！", "py": "Zhèr de tiānqì biànhuà tài kuài le!", "es": "¡Aquí el tiempo cambia rapidísimo!" },
+        { "speaker": "小李", "zh": "天气预报说，明天一直是晴天。", "py": "Tiānqì yùbào shuō, míngtiān yìzhí shì qíngtiān.", "es": "El parte dice que mañana estará despejado todo el día." },
+        { "speaker": "雨果", "zh": "太好了。一会儿我们一起去吃饭吧？", "py": "Tài hǎo le. Yíhuìr wǒmen yìqǐ qù chīfàn ba?", "es": "Genial. ¿Vamos a cenar juntos dentro de un rato?" },
+        { "speaker": "小李", "zh": "好，你先洗澡，我等你一会儿。", "py": "Hǎo, nǐ xiān xǐzǎo, wǒ děng nǐ yíhuìr.", "es": "Vale: dúchate primero, que te espero un rato." }
+      ],
+      "notes": "Fíjate en las dos posiciones de 一会儿: 一会儿我们去吃饭 (delante del verbo: «dentro de un rato») y 我等你一会儿 (detrás: «durante un rato»). 洗个澡 es el separable 洗澡 con 个 en medio: suena más informal, «darse una ducha»."
+    },
+    { "type": "exercises", "count": 18, "bank": ["u10", "g-le", "g-dates-time"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "我" }, "adverb": { "zh": "刚" }, "verb1": { "zh": "到家" } }, "end": "。", "es": "Acabo de llegar a casa." }, "distractors": ["了"] },
+        { "sentence": { "slots": { "time0": { "zh": "刚才" }, "verb1": { "zh": "下了" }, "object": { "zh": "一场大雨" } }, "end": "。", "es": "Hace un momento ha caído un buen chaparrón." }, "distractors": ["刚"] },
+        { "sentence": { "slots": { "subject": { "zh": "你" }, "adverb": { "zh": "马上" }, "verb1": { "zh": "去" }, "verb2": { "zh": "洗澡" }, "particle": { "zh": "吧" } }, "end": "。", "es": "Ve a ducharte ahora mismo." }, "distractors": ["已经"] },
+        { "sentence": { "slots": { "time0": { "zh": "刚才" }, "subject": { "zh": "我" }, "adverb": { "zh": "一直" }, "with": { "zh": "跟安娜一起" }, "place": { "zh": "在食堂" }, "verb1": { "zh": "等" }, "object": { "zh": "雨停" } }, "end": "。", "es": "Hace un rato he estado todo el tiempo en el comedor con Anna esperando a que parase de llover." }, "distractors": ["刚"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "我刚到家。", "py": "Wǒ gāng dào jiā.", "es": "Acabo de llegar a casa." },
+        { "zh": "刚才下了一场大雨。", "py": "Gāngcái xiàle yì cháng dà yǔ.", "es": "Hace un momento ha caído un buen chaparrón." },
+        { "zh": "不一会儿，雨就停了。", "py": "Bù yíhuìr, yǔ jiù tíng le.", "es": "Al poco rato dejó de llover." },
+        { "zh": "等一下，我马上来！", "py": "Děng yíxià, wǒ mǎshàng lái!", "es": "¡Espera, voy enseguida!" }
+      ],
+      "respond": [
+        { "q": { "zh": "你刚才去哪儿了？", "py": "Nǐ gāngcái qù nǎr le?", "es": "¿Adónde has ido hace un momento?" }, "model": { "zh": "我刚才去超市了，刚回来。", "py": "Wǒ gāngcái qù chāoshì le, gāng huílai.", "es": "He ido al súper; acabo de volver." } },
+        { "q": { "zh": "你什么时候来？我们都在等你。", "py": "Nǐ shénme shíhou lái? Wǒmen dōu zài děng nǐ.", "es": "¿Cuándo vienes? Te estamos esperando todos." }, "model": { "zh": "对不起，我马上就到！", "py": "Duìbuqǐ, wǒ mǎshàng jiù dào!", "es": "¡Perdón, llego enseguida!" } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "De repente, la tormenta",
+      "text": "上海的夏天常常有大雨。昨天下午一点，天空还很蓝，太阳也很大。雨果刚从图书馆出来，准备去超市买东西。忽然，天上出现了很多黑云，风也越来越大。不一会儿，大雨就来了。雨果没带伞，只能跑回宿舍。他回到宿舍，身上都是水。小李说：“你马上去洗澡吧，别生病了。”雨果洗完澡，雨已经停了，天又亮了，天空中出现了一个大大的太阳。小李说：“上海的天气就是这样，一会儿下雨，一会儿晴天。”雨果说：“我刚来上海三个月，还不太习惯这儿的天气，我觉得很有意思。”",
+      "es": "En verano en Shanghái suele haber tormentas. Ayer a la una de la tarde el cielo todavía estaba azul y hacía mucho sol. Hugo acababa de salir de la biblioteca e iba al súper a comprar. De repente aparecieron muchas nubes negras en el cielo y el viento fue cada vez más fuerte. Al poco rato llegó el aguacero. Hugo no llevaba paraguas y tuvo que volver corriendo a la residencia. Llegó empapado. Xiao Li le dijo: «Dúchate ahora mismo, no te vayas a poner malo». Cuando Hugo terminó de ducharse ya había parado de llover, había vuelto a clarear y en el cielo había un sol enorme. Xiao Li dijo: «El tiempo de Shanghái es así: ahora llueve, ahora hace sol». Hugo contestó: «Solo llevo tres meses en Shanghái y todavía no me acostumbro a este tiempo; me parece muy curioso».",
+      "questions": [
+        { "q": "¿Qué tiempo hacía a la una?", "options": ["天空很蓝，太阳很大", "下大雨", "下雪"], "answer": 0 },
+        { "q": "¿Por qué tuvo que volver corriendo Hugo?", "options": ["没带伞", "要洗澡", "超市关门了"], "answer": 0 },
+        { "q": "¿Qué había pasado cuando Hugo terminó de ducharse?", "options": ["雨已经停了", "雨越来越大", "天黑了"], "answer": 0 },
+        { "q": "¿Qué frase es correcta?", "options": ["我刚到。", "我刚到了。", "刚我到了。"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "id": "a1-u03-l3",
+  "title": "¿Cuántos sois en casa? 几口人, 和 y los tíos",
+  "zh": "你家有几口人？",
+  "goal": "Preguntar y decir cuántos sois en la familia (几口人), enumerar con 和 y nombrar a los tíos por la línea paterna y materna.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "和", "pinyin": "hé", "es": "y (entre nombres)", "note": "Solo une nombres o pronombres: 爸爸和妈妈. No une frases ni verbos." },
+    { "hanzi": "家里", "pinyin": "jiāli", "es": "en casa; la familia", "note": "你家里有几口人？ = ¿cuántos sois en tu casa?" },
+    { "hanzi": "儿子", "pinyin": "érzi", "es": "hijo", "note": "Ya conoces 女儿 (hija)." },
+    { "hanzi": "孩子", "pinyin": "háizi", "es": "niño, niña; hijo, hija", "note": "孩子们 = los niños. 你有孩子吗？ = ¿tienes hijos?" },
+    { "hanzi": "爱人", "pinyin": "àiren", "es": "esposo, esposa; cónyuge", "note": "Muy usado en China continental, sobre todo por la gente mayor." },
+    { "hanzi": "太太", "pinyin": "tàitai", "es": "esposa; señora (de)", "note": "张太太 = la señora de Zhang. Y 先生 también es «marido»: 我先生." },
+    { "hanzi": "叔叔", "pinyin": "shūshu", "es": "tío (hermano menor del padre)", "note": "El hermano mayor del padre es 伯伯 bóbo. Los niños llaman 叔叔 a cualquier hombre adulto." },
+    { "hanzi": "姑姑", "pinyin": "gūgu", "es": "tía (hermana del padre)" },
+    { "hanzi": "舅舅", "pinyin": "jiùjiu", "es": "tío (hermano de la madre)" },
+    { "hanzi": "阿姨", "pinyin": "āyí", "es": "tía (hermana de la madre); señora", "note": "También es como se llama a cualquier mujer de la edad de tu madre, o a la señora de la limpieza de la residencia." }
+  ],
+  "extraVocab": ["叔叔", "姑姑", "舅舅", "阿姨"],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "你家有几口人？", "py": "Nǐ jiā yǒu jǐ kǒu rén?", "es": "¿Cuántos sois en tu familia?" },
+        { "zh": "我家有四口人：爸爸、妈妈、姐姐和我。", "py": "Wǒ jiā yǒu sì kǒu rén: bàba, māma, jiějie hé wǒ.", "es": "Somos cuatro: mi padre, mi madre, mi hermana y yo." },
+        { "zh": "我有一个叔叔和一个姑姑。", "py": "Wǒ yǒu yí ge shūshu hé yí ge gūgu.", "es": "Tengo un tío y una tía por parte de padre." }
+      ]
+    },
+    { "type": "vocab", "title": "La familia extensa", "words": ["和", "家里", "儿子", "孩子", "爱人", "太太", "叔叔", "姑姑", "舅舅", "阿姨"] },
+    {
+      "type": "phonetics-drill",
+      "title": "La h china y la k de 口",
+      "markdown": "Buena noticia: la **h** china (和 **hé**, 很 **hěn**, 好 **hǎo**, 汉 **Hàn**) se parece mucho a la **jota española suave**, la de *jamón* dicha sin rascar. No es muda como la h española.\n\nLa **k** (口 **kǒu**, 客 **kè**) es **aspirada**: una «k» con un golpe de aire detrás. Pon la mano delante de la boca: 口 tiene que soplar; 狗 gǒu (g, sin aire) no.\n\nY en **几口人 jǐ kǒu rén** hay dos terceros tonos seguidos: 几 se dice como 2.º tono (*jí kǒu rén*).",
+      "items": [
+        { "audio": "和", "options": ["hé", "é", "hè"], "answer": 0, "explain": "h como jota suave + 2.º tono." },
+        { "audio": "口", "options": ["kǒu", "gǒu", "kòu"], "answer": 0, "explain": "k con aire + ou + 3.er tono." },
+        { "audio": "几口人", "prompt": "¿Cómo suena 几 aquí?", "options": ["Sube (como 2.º tono)", "Baja y sube (3.º completo)", "Cae (4.º)"], "answer": 0, "explain": "几 + 口 son 3 + 3: el primero pasa a 2.º." },
+        { "audio": "舅舅", "options": ["jiùjiu", "jiūjiu", "qiùqiu"], "answer": 0, "explain": "jiù (4.º) + jiu neutro." },
+        { "audio": "阿姨", "options": ["āyí", "ǎyí", "āyì"], "answer": 0, "explain": "ā (1.º) + yí (2.º)." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["家"],
+      "mnemonics": {
+        "家": "宀 (tejado) + 豕 (cerdo): en la China antigua, una casa con su cerdo debajo del techo era un hogar con familia y comida."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "家 + 有 + número + 口人; A 和 B",
+      "markdown": "Para preguntar por la familia **no** se dice «¿cuántos sois?», sino **«tu casa tiene cuántas bocas de persona?»**: 你家**有几口人**？. El **口** («boca») es el clasificador de los miembros de una familia: cada boca que alimentar.\n\n- Respuesta: 我家有**四口人**.\n- Fíjate en el sujeto: **你家 / 我家**, sin 的 (lo viste en la lección anterior).\n\n**和** une **nombres** dentro de un hueco: 爸爸、妈妈**和**我. En una lista va **solo delante del último**; los demás se separan con 、.\n\n**和 no une frases ni verbos**: para «tengo un hermano *y también* una hermana» se usa 也: 我有哥哥，**也**有姐姐.",
+      "focus": ["object"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "我家", "py": "wǒ jiā" }, "verb1": { "zh": "有", "py": "yǒu" }, "object": { "zh": "四口人", "py": "sì kǒu rén" } }, "end": "。", "es": "Somos cuatro en mi familia.", "esOrder": [{ "text": "Somos", "slot": "verb1" }, { "text": "cuatro", "slot": "object" }, { "text": "en mi familia", "slot": "subject" }] },
+        { "slots": { "subject": { "zh": "我家", "py": "wǒ jiā" }, "verb1": { "zh": "有", "py": "yǒu" }, "object": { "zh": "爸爸、妈妈、姐姐和我", "py": "bàba, māma, jiějie hé wǒ" } }, "end": "。", "es": "En mi familia están mi padre, mi madre, mi hermana y yo." },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "verb1": { "zh": "有", "py": "yǒu" }, "object": { "zh": "一个叔叔和一个姑姑", "py": "yí ge shūshu hé yí ge gūgu" } }, "end": "。", "es": "Tengo un tío y una tía (por parte de padre)." },
+        { "slots": { "subject": { "zh": "王老师", "py": "Wáng lǎoshī" }, "verb1": { "zh": "有", "py": "yǒu" }, "object": { "zh": "爱人和孩子", "py": "àiren hé háizi" } }, "end": "。", "es": "La profesora Wang tiene marido e hijos." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "没", "py": "méi" }, "verb1": { "zh": "有", "py": "yǒu" }, "object": { "zh": "舅舅", "py": "jiùjiu" } }, "end": "。", "es": "No tengo tíos por parte de madre." },
+        { "slots": { "subject": { "zh": "安娜", "py": "Ānnà" }, "adverb": { "zh": "也没", "py": "yě méi" }, "verb1": { "zh": "有", "py": "yǒu" }, "object": { "zh": "姑姑", "py": "gūgu" } }, "end": "。", "es": "Anna tampoco tiene tías por parte de padre." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你家", "py": "nǐ jiā" }, "verb1": { "zh": "有", "py": "yǒu" }, "object": { "zh": "几口人", "py": "jǐ kǒu rén" } }, "end": "？", "es": "¿Cuántos sois en tu familia?", "esOrder": [{ "text": "¿Cuántos", "slot": "object" }, { "text": "sois", "slot": "verb1" }, { "text": "en tu familia?", "slot": "subject" }] },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "有没有", "py": "yǒu méiyǒu" }, "object": { "zh": "阿姨", "py": "āyí" } }, "end": "？", "es": "¿Tienes tías por parte de madre?" }
+      ],
+      "mistakes": [
+        { "wrong": "我家有爸爸和妈妈和姐姐。", "right": "我家有爸爸、妈妈和姐姐。", "why": "En una lista, 和 va solo delante del último; los demás, con 、." },
+        { "wrong": "我有哥哥和我有姐姐。", "right": "我有哥哥，也有姐姐。", "why": "和 no une frases: solo nombres. Para unir frases, 也." },
+        { "wrong": "我家有四人。", "right": "我家有四口人。", "why": "Hace falta clasificador entre el número y 人; para la familia, 口." },
+        { "wrong": "你家有几口人吗？", "right": "你家有几口人？", "why": "几 ya pregunta: sin 吗." }
+      ]
+    },
+    {
+      "type": "explain",
+      "title": "Los tíos: por parte de padre y por parte de madre",
+      "markdown": "Como con los abuelos, el chino separa las dos líneas (y la paterna distingue incluso mayor y menor):\n\n| | hermano | hermana |\n|---|---|---|\n| **del padre** | 伯伯 bóbo (mayor) · **叔叔** shūshu (menor) | **姑姑** gūgu |\n| **de la madre** | **舅舅** jiùjiu | **阿姨** āyí (o 姨妈) |\n\n**Fuera de la familia**: los niños y los jóvenes llaman **叔叔** y **阿姨** a cualquier adulto de la edad de sus padres. En la residencia, la señora de la portería o de la limpieza es **阿姨**: 阿姨好！ es un saludo muy amable.\n\n**Parejas**: 爱人 (cónyuge), 太太 (esposa) y 先生 (marido). 我爱人 suena a matrimonio de toda la vida; 我太太 y 我先生, más actuales."
+    },
+    {
+      "type": "dialogue",
+      "title": "La familia de la profesora Wang",
+      "lines": [
+        { "speaker": "王老师", "zh": "雨果，你家有几口人？", "py": "Yǔguǒ, nǐ jiā yǒu jǐ kǒu rén?", "es": "Hugo, ¿cuántos sois en tu familia?" },
+        { "speaker": "雨果", "zh": "我家有四口人：爸爸、妈妈、姐姐和我。", "py": "Wǒ jiā yǒu sì kǒu rén: bàba, māma, jiějie hé wǒ.", "es": "Somos cuatro: mi padre, mi madre, mi hermana y yo." },
+        { "speaker": "王老师", "zh": "你爸爸有弟弟吗？", "py": "Nǐ bàba yǒu dìdi ma?", "es": "¿Tu padre tiene hermanos pequeños?" },
+        { "speaker": "雨果", "zh": "有，我有一个叔叔。我妈妈有一个妹妹，她是我阿姨。", "py": "Yǒu, wǒ yǒu yí ge shūshu. Wǒ māma yǒu yí ge mèimei, tā shì wǒ āyí.", "es": "Sí, tengo un tío. Mi madre tiene una hermana pequeña: es mi tía." },
+        { "speaker": "王老师", "zh": "你有舅舅吗？", "py": "Nǐ yǒu jiùjiu ma?", "es": "¿Tienes tíos por parte de madre?" },
+        { "speaker": "雨果", "zh": "没有，我没有舅舅，也没有姑姑。老师，您家有几口人？", "py": "Méiyǒu, wǒ méiyǒu jiùjiu, yě méiyǒu gūgu. Lǎoshī, nín jiā yǒu jǐ kǒu rén?", "es": "No, no tengo tíos por parte de madre ni tías por parte de padre. Profesora, ¿cuántos son ustedes en casa?" },
+        { "speaker": "王老师", "zh": "我家有三口人：我爱人、儿子和我。", "py": "Wǒ jiā yǒu sān kǒu rén: wǒ àiren, érzi hé wǒ.", "es": "Somos tres: mi marido, mi hijo y yo." },
+        { "speaker": "雨果", "zh": "他几岁？", "py": "Tā jǐ suì?", "es": "¿Y cuántos años tiene su hijo?" },
+        { "speaker": "王老师", "zh": "他八岁。", "py": "Tā bā suì.", "es": "Tiene ocho años." }
+      ],
+      "notes": "Hugo pregunta 他几岁 porque el hijo es un niño: 几岁 va con la edad del niño, aunque hable con la profesora. Hablando de su familia, Wang dice 我家, 我爱人 sin 的."
+    },
+    { "type": "exercises", "count": 15, "bank": ["g-you", "g-measure-words", "g-he", "u03"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "你家" }, "verb1": { "zh": "有" }, "object": { "zh": "几口人" } }, "end": "？", "es": "¿Cuántos sois en tu familia?" }, "distractors": ["吗", "个"] },
+        { "sentence": { "slots": { "subject": { "zh": "我家" }, "verb1": { "zh": "有" }, "object": { "zh": "爸爸、妈妈和我" } }, "end": "。", "es": "En mi familia están mi padre, mi madre y yo." }, "distractors": ["也"] },
+        { "sentence": { "slots": { "subject": { "zh": "我" }, "adverb": { "zh": "没" }, "verb1": { "zh": "有" }, "object": { "zh": "舅舅" } }, "end": "。", "es": "No tengo tíos por parte de madre." }, "distractors": ["不"] },
+        { "sentence": { "slots": { "subject": { "zh": "我妈妈的妹妹" }, "adverb": { "zh": "也" }, "verb1": { "zh": "有" }, "object": { "zh": "一个儿子和一个女儿" } }, "end": "。", "es": "La hermana pequeña de mi madre también tiene un hijo y una hija." }, "distractors": ["两"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "你家有几口人？", "py": "Nǐ jiā yǒu jǐ kǒu rén?", "es": "¿Cuántos sois en tu familia?" },
+        { "zh": "我家有四口人。", "py": "Wǒ jiā yǒu sì kǒu rén.", "es": "Somos cuatro." },
+        { "zh": "爸爸、妈妈、姐姐和我。", "py": "Bàba, māma, jiějie hé wǒ.", "es": "Mi padre, mi madre, mi hermana y yo." },
+        { "zh": "阿姨好！", "py": "Āyí hǎo!", "es": "¡Hola, señora!" }
+      ],
+      "respond": [
+        { "q": { "zh": "你家有几口人？", "py": "Nǐ jiā yǒu jǐ kǒu rén?", "es": "¿Cuántos sois en tu familia?" }, "model": { "zh": "我家有四口人：爸爸、妈妈、姐姐和我。", "py": "Wǒ jiā yǒu sì kǒu rén: bàba, māma, jiějie hé wǒ.", "es": "Somos cuatro: mi padre, mi madre, mi hermana y yo." } },
+        { "q": { "zh": "你有叔叔吗？", "py": "Nǐ yǒu shūshu ma?", "es": "¿Tienes tíos por parte de padre?" }, "model": { "zh": "有，我有一个叔叔。", "py": "Yǒu, wǒ yǒu yí ge shūshu.", "es": "Sí, tengo un tío." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "La familia del señor Zhang",
+      "text": "张先生家有五口人：张先生、张太太、两个儿子和一个女儿。张先生有一个妹妹，她是孩子们的姑姑。张太太有一个弟弟，他是孩子们的舅舅。张先生的爸爸和妈妈是孩子们的爷爷和奶奶。",
+      "es": "En casa del señor Zhang son cinco: el señor Zhang, su mujer, dos hijos y una hija. El señor Zhang tiene una hermana pequeña: es la tía (paterna) de los niños. La señora Zhang tiene un hermano pequeño: es el tío (materno) de los niños. El padre y la madre del señor Zhang son el abuelo y la abuela (paternos) de los niños.",
+      "questions": [
+        { "q": "¿Cuántos son en casa del señor Zhang?", "options": ["Cinco", "Tres", "Cuatro"], "answer": 0 },
+        { "q": "Para los niños, ¿quién es 舅舅?", "options": ["El hermano de la señora Zhang", "La hermana del señor Zhang", "El padre del señor Zhang"], "answer": 0 },
+        { "q": "¿Y 姑姑?", "options": ["La hermana del señor Zhang", "La hermana de la señora Zhang", "La abuela"], "answer": 0 },
+        { "q": "¿Por qué 五口人 y no 五个人?", "options": ["口 es el clasificador de los miembros de la familia", "个 no existe", "Porque son niños"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

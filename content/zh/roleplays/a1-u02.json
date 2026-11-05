@@ -1,0 +1,376 @@
+{
+  "unitId": "a1-u02",
+  "scenarios": [
+    {
+      "id": "a1-u02-exchange-phone",
+      "title": "Intercambiar teléfonos",
+      "zh": "你手机号码是多少？",
+      "level": 1,
+      "setting": "Después de clase en 交通大学. Wang Ming quiere quedar otro día y os intercambiáis los números. Tú (la app) eres 王明. El número de Hugo es 136 5512 3478.",
+      "role": "amigo",
+      "roleZh": "王明",
+      "voice": "m",
+      "goals": ["Preguntar su número de teléfono", "Dar tu número", "Agregarlo en WeChat", "Despedirte"],
+      "vocab": ["手机", "电话", "号码", "多少", "幺", "微信", "加", "请", "再", "遍", "知道", "认识", "高兴"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "雨果，你好！认识你很高兴！", "py": "Yǔguǒ, nǐ hǎo! Rènshi nǐ hěn gāoxìng!", "es": "¡Hola, Hugo! ¡Encantado de conocerte!" },
+          "user": [
+            { "zh": "认识你我也很高兴！", "py": "Rènshi nǐ wǒ yě hěn gāoxìng!", "es": "¡Encantado yo también!", "keywords": ["也很高兴", "高兴"], "next": "n2" },
+            { "zh": "你好，王明！", "py": "Nǐ hǎo, Wáng Míng!", "es": "¡Hola, Wang Ming!", "keywords": ["你好", "王明"], "next": "n2" }
+          ],
+          "hint": "认识你很高兴 = encantado de conocerte. Devuélvelo con 我也很高兴."
+        },
+        "n2": {
+          "npc": { "zh": "你有手机吗？", "py": "Nǐ yǒu shǒujī ma?", "es": "¿Tienes móvil?" },
+          "user": [
+            { "zh": "有。你手机号码是多少？", "py": "Yǒu. Nǐ shǒujī hàomǎ shì duōshao?", "es": "Sí. ¿Cuál es tu número?", "keywords": ["多少", "号码是多少"], "next": "n3", "goal": 0 },
+            { "zh": "有，我有手机。", "py": "Yǒu, wǒ yǒu shǒujī.", "es": "Sí, tengo móvil.", "keywords": ["我有", "有手机"], "next": "n2b" }
+          ],
+          "hint": "Los números de teléfono se preguntan con 多少: 你手机号码是多少？"
+        },
+        "n2b": {
+          "npc": { "zh": "好！你手机号码是多少？", "py": "Hǎo! Nǐ shǒujī hàomǎ shì duōshao?", "es": "¡Bien! ¿Cuál es tu número de móvil?" },
+          "user": [
+            { "zh": "我手机号码是一三六五五一二三四七八。", "py": "Wǒ shǒujī hàomǎ shì yāo sān liù wǔ wǔ yāo èr sān sì qī bā.", "es": "Mi número es el 136 5512 3478.", "keywords": ["一三六", "我手机号码"], "next": "n5", "goal": 1 },
+            { "zh": "你呢？你手机号码是多少？", "py": "Nǐ ne? Nǐ shǒujī hàomǎ shì duōshao?", "es": "¿Y tú? ¿Cuál es tu número?", "keywords": ["多少", "你呢"], "next": "n3", "goal": 0 }
+          ],
+          "hint": "Di tu número cifra a cifra (一 se lee yāo en los teléfonos) o pídele antes el suyo."
+        },
+        "n3": {
+          "npc": { "zh": "我手机号码是一五零、二二八八、六六九一。", "py": "Wǒ shǒujī hàomǎ shì yāo wǔ líng, èr èr bā bā, liù liù jiǔ yāo.", "es": "Mi número es el 150 2288 6691." },
+          "user": [
+            { "zh": "一五零二二八八六六九一。知道了，谢谢！", "py": "Yāo wǔ líng èr èr bā bā liù liù jiǔ yāo. Zhīdào le, xièxie!", "es": "150 2288 6691. ¡Entendido, gracias!", "keywords": ["知道", "谢谢"], "next": "n4" },
+            { "zh": "对不起，请再说一遍。", "py": "Duìbuqǐ, qǐng zài shuō yí biàn.", "es": "Perdona, ¿me lo repites?", "keywords": ["再说一遍", "一遍"], "next": "n3" }
+          ],
+          "hint": "Repite el número para confirmarlo y di 知道了. Si no lo has cogido, pide que lo repita: 请再说一遍."
+        },
+        "n4": {
+          "npc": { "zh": "你手机号码呢？", "py": "Nǐ shǒujī hàomǎ ne?", "es": "¿Y tu número?" },
+          "user": [
+            { "zh": "我手机号码是一三六五五一二三四七八。", "py": "Wǒ shǒujī hàomǎ shì yāo sān liù wǔ wǔ yāo èr sān sì qī bā.", "es": "Mi número es el 136 5512 3478.", "keywords": ["一三六", "我手机号码"], "next": "n6", "goal": 1 },
+            { "zh": "对不起，我不知道！", "py": "Duìbuqǐ, wǒ bù zhīdào!", "es": "¡Perdona, no lo sé!", "keywords": ["不知道"], "next": "endx" }
+          ],
+          "hint": "Ahora te toca a ti: 我手机号码是 + cifras (136 5512 3478), con yāo para el 1."
+        },
+        "n5": {
+          "npc": { "zh": "一三六五五一二三四七八。好，我记住了！", "py": "Yāo sān liù wǔ wǔ yāo èr sān sì qī bā. Hǎo, wǒ jìzhu le!", "es": "136 5512 3478. ¡Vale, apuntado!" },
+          "user": [
+            { "zh": "你手机号码是多少？", "py": "Nǐ shǒujī hàomǎ shì duōshao?", "es": "¿Y cuál es tu número?", "keywords": ["多少", "号码是多少"], "next": "n3", "goal": 0 },
+            { "zh": "谢谢！再见！", "py": "Xièxie! Zàijiàn!", "es": "¡Gracias! ¡Adiós!", "keywords": ["再见", "谢谢"], "next": "end2" }
+          ],
+          "hint": "Ya tiene tu número. Pídele el suyo (你手机号码是多少) antes de despedirte."
+        },
+        "n6": {
+          "npc": { "zh": "好！你有微信吗？", "py": "Hǎo! Nǐ yǒu Wēixìn ma?", "es": "¡Genial! ¿Tienes WeChat?" },
+          "user": [
+            { "zh": "有，我加你！", "py": "Yǒu, wǒ jiā nǐ!", "es": "¡Sí, te agrego!", "keywords": ["加你", "我加"], "next": "n7", "goal": 2 },
+            { "zh": "没有，我不用微信。", "py": "Méiyǒu, wǒ bú yòng Wēixìn.", "es": "No, no uso WeChat.", "keywords": ["不用", "没有"], "next": "n6b" }
+          ],
+          "hint": "En China todo pasa por WeChat: di 有 y 我加你."
+        },
+        "n6b": {
+          "npc": { "zh": "你不用微信？中国人用微信，我们班也用微信！", "py": "Nǐ bú yòng Wēixìn? Zhōngguó rén yòng Wēixìn, wǒmen bān yě yòng Wēixìn!", "es": "¿No usas WeChat? Los chinos usan WeChat, ¡y nuestra clase también!" },
+          "user": [
+            { "zh": "好，我用微信。我加你！", "py": "Hǎo, wǒ yòng Wēixìn. Wǒ jiā nǐ!", "es": "Vale, uso WeChat. ¡Te agrego!", "keywords": ["加你", "我加"], "next": "n7", "goal": 2 }
+          ],
+          "hint": "Rectifica y agrégalo: 我加你."
+        },
+        "n7": {
+          "npc": { "zh": "好！谢谢，再见！", "py": "Hǎo! Xièxie, zàijiàn!", "es": "¡Bien! Gracias, ¡adiós!" },
+          "user": [
+            { "zh": "再见！", "py": "Zàijiàn!", "es": "¡Adiós!", "keywords": ["再见", "拜拜"], "next": "end1", "goal": 3 },
+            { "zh": "不客气！", "py": "Bú kèqi!", "es": "¡De nada!", "keywords": ["不客气", "客气"], "next": "end1" }
+          ],
+          "hint": "Despídete con 再见."
+        },
+        "endx": {
+          "npc": { "zh": "没关系。你有我手机号码，我们加微信！", "py": "Méi guānxi. Nǐ yǒu wǒ shǒujī hàomǎ, wǒmen jiā Wēixìn!", "es": "No pasa nada. Tienes mi número; ¡nos agregamos en WeChat!" },
+          "end": true,
+          "feedback": "Tienes su número, pero no le has dado el tuyo. Apréndete tu número en chino cifra a cifra: 一三六 五五一二 三四七八 (yāo sān liù…)."
+        },
+        "end1": {
+          "npc": { "zh": "再见，雨果！", "py": "Zàijiàn, Yǔguǒ!", "es": "¡Adiós, Hugo!" },
+          "end": true,
+          "feedback": "Perfecto: has pedido su número con 多少, has dado el tuyo leyendo el 1 como yāo, os habéis agregado en WeChat y te has despedido."
+        },
+        "end2": {
+          "npc": { "zh": "再见！", "py": "Zàijiàn!", "es": "¡Adiós!" },
+          "end": true,
+          "feedback": "Él tiene tu número, pero tú no el suyo. La próxima vez, antes de despedirte: 你手机号码是多少？"
+        }
+      }
+    },
+    {
+      "id": "a1-u02-how-old",
+      "title": "¿Cuántos años tienes?",
+      "zh": "你多大？",
+      "level": 1,
+      "setting": "Parque del campus de 交通大学. Anna y Hugo están sentados en un banco; cerca juega una niña pequeña, 明明. Tú (la app) eres 安娜.",
+      "role": "amiga",
+      "roleZh": "安娜",
+      "voice": "f",
+      "goals": ["Decir tu edad", "Preguntar la edad de Anna con 多大", "Preguntar la edad de la niña con 几岁", "Usar 两 bien"],
+      "vocab": ["岁", "多大", "几岁", "今年", "小朋友", "大学生", "两", "几个", "知道"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "雨果，你今年多大？", "py": "Yǔguǒ, nǐ jīnnián duō dà?", "es": "Hugo, ¿cuántos años tienes?" },
+          "user": [
+            { "zh": "我今年二十四岁。", "py": "Wǒ jīnnián èrshísì suì.", "es": "Este año cumplo veinticuatro.", "keywords": ["二十四", "二十四岁"], "next": "n2", "goal": 0 },
+            { "zh": "你呢？你多大？", "py": "Nǐ ne? Nǐ duō dà?", "es": "¿Y tú? ¿Cuántos años tienes?", "keywords": ["你呢", "你多大"], "next": "n1b", "goal": 1 }
+          ],
+          "hint": "多大 pregunta la edad a jóvenes y adultos. Responde con 我 + número + 岁 (sin 有)."
+        },
+        "n1b": {
+          "npc": { "zh": "我二十三岁。你呢？", "py": "Wǒ èrshísān suì. Nǐ ne?", "es": "Tengo veintitrés. ¿Y tú?" },
+          "user": [
+            { "zh": "我二十四岁。", "py": "Wǒ èrshísì suì.", "es": "Tengo veinticuatro.", "keywords": ["二十四", "二十四岁"], "next": "n3", "goal": 0 },
+            { "zh": "我有二十四岁。", "py": "Wǒ yǒu èrshísì suì.", "es": "(Tengo veinticuatro años, calcado del español.)", "keywords": ["有二十四"], "next": "n1c" }
+          ],
+          "hint": "Di tu edad: número + 岁, sin verbo."
+        },
+        "n1c": {
+          "npc": { "zh": "“我有二十四岁”？不对，是“我二十四岁”！", "py": "“Wǒ yǒu èrshísì suì”? Bú duì, shì “wǒ èrshísì suì”!", "es": "¿«Wǒ yǒu èrshísì suì»? No: es «wǒ èrshísì suì»." },
+          "user": [
+            { "zh": "对，我二十四岁。", "py": "Duì, wǒ èrshísì suì.", "es": "Cierto: tengo veinticuatro.", "keywords": ["我二十四岁", "二十四岁"], "next": "n3", "goal": 0 }
+          ],
+          "hint": "La edad va sin 有: 我二十四岁."
+        },
+        "n2": {
+          "npc": { "zh": "二十四岁！你是大学生吗？", "py": "Èrshísì suì! Nǐ shì dàxuéshēng ma?", "es": "¡Veinticuatro! ¿Estás en la universidad?" },
+          "user": [
+            { "zh": "对，我是学生。你呢？你多大？", "py": "Duì, wǒ shì xuésheng. Nǐ ne? Nǐ duō dà?", "es": "Sí, soy estudiante. ¿Y tú? ¿Cuántos años tienes?", "keywords": ["多大", "你呢"], "next": "n2b", "goal": 1 },
+            { "zh": "对，我是学生。", "py": "Duì, wǒ shì xuésheng.", "es": "Sí, soy estudiante.", "keywords": ["学生", "对"], "next": "n2c" }
+          ],
+          "hint": "Contesta y devuélvele la pregunta: 你呢？你多大？"
+        },
+        "n2b": {
+          "npc": { "zh": "我二十三岁。", "py": "Wǒ èrshísān suì.", "es": "Tengo veintitrés." },
+          "user": [
+            { "zh": "好。那是谁？", "py": "Hǎo. Nà shì shéi?", "es": "Vale. ¿Quién es esa?", "keywords": ["谁", "那是谁"], "next": "n3" },
+            { "zh": "二十三岁！我知道了。", "py": "Èrshísān suì! Wǒ zhīdào le.", "es": "¡Veintitrés! Entendido.", "keywords": ["知道", "二十三"], "next": "n3" }
+          ],
+          "hint": "Comenta su edad o pregunta por la niña con 那是谁."
+        },
+        "n2c": {
+          "npc": { "zh": "我也是学生。我二十三岁。", "py": "Wǒ yě shì xuésheng. Wǒ èrshísān suì.", "es": "Yo también soy estudiante. Tengo veintitrés." },
+          "user": [
+            { "zh": "好。那是谁？", "py": "Hǎo. Nà shì shéi?", "es": "Vale. ¿Quién es esa?", "keywords": ["谁", "那是谁"], "next": "n3" }
+          ],
+          "hint": "Ya sabes su edad. Pregunta por la niña: 那是谁？"
+        },
+        "n3": {
+          "npc": { "zh": "那是明明，她是小朋友。", "py": "Nà shì Míngming, tā shì xiǎopéngyou.", "es": "Es Mingming, una niña." },
+          "user": [
+            { "zh": "明明，你好！小朋友，你几岁？", "py": "Míngming, nǐ hǎo! Xiǎopéngyou, nǐ jǐ suì?", "es": "¡Hola, Mingming! Pequeña, ¿cuántos años tienes?", "keywords": ["几岁", "你几岁"], "next": "n4", "goal": 2 },
+            { "zh": "明明，你多大？", "py": "Míngming, nǐ duō dà?", "es": "Mingming, ¿cuántos años tienes?", "keywords": ["多大"], "next": "n3b" }
+          ],
+          "hint": "A los niños pequeños se les pregunta la edad con 几岁 (no con 多大)."
+        },
+        "n3b": {
+          "npc": { "zh": "她是小朋友！你问：“你几岁？”", "py": "Tā shì xiǎopéngyou! Nǐ wèn: “Nǐ jǐ suì?”", "es": "¡Es una niña! Pregúntale: «¿Nǐ jǐ suì?»." },
+          "user": [
+            { "zh": "小朋友，你几岁？", "py": "Xiǎopéngyou, nǐ jǐ suì?", "es": "Pequeña, ¿cuántos años tienes?", "keywords": ["几岁", "你几岁"], "next": "n4", "goal": 2 }
+          ],
+          "hint": "Con niños, 几岁."
+        },
+        "n4": {
+          "npc": { "zh": "明明说她五岁。她有两个中国朋友，你有几个？", "py": "Míngming shuō tā wǔ suì. Tā yǒu liǎng ge Zhōngguó péngyou, nǐ yǒu jǐ ge?", "es": "Mingming dice que tiene cinco años. Tiene dos amigos chinos… ¿y tú cuántos tienes?" },
+          "user": [
+            { "zh": "我有两个中国朋友。", "py": "Wǒ yǒu liǎng ge Zhōngguó péngyou.", "es": "Tengo dos amigos chinos.", "keywords": ["两个", "两个中国朋友"], "next": "n5", "goal": 3 },
+            { "zh": "我有二个中国朋友。", "py": "Wǒ yǒu èr ge Zhōngguó péngyou.", "es": "(«Dos» mal elegido.)", "keywords": ["二个"], "next": "n4b" },
+            { "zh": "我有十二个中国朋友！", "py": "Wǒ yǒu shí'èr ge Zhōngguó péngyou!", "es": "¡Tengo doce amigos chinos!", "keywords": ["十二个"], "next": "n5", "goal": 3 }
+          ],
+          "hint": "Cuenta tus amigos con número + 个. Si son dos: 两个, nunca 二个."
+        },
+        "n4b": {
+          "npc": { "zh": "“二个”？不对，是“两个”！", "py": "“Èr ge”? Bú duì, shì “liǎng ge”!", "es": "¿«Èr ge»? No: es «liǎng ge»." },
+          "user": [
+            { "zh": "对，我有两个中国朋友。", "py": "Duì, wǒ yǒu liǎng ge Zhōngguó péngyou.", "es": "Sí, tengo dos amigos chinos.", "keywords": ["两个"], "next": "n5", "goal": 3 }
+          ],
+          "hint": "Con clasificador, 两: 两个朋友."
+        },
+        "n5": {
+          "npc": { "zh": "好！明明，再见！", "py": "Hǎo! Míngming, zàijiàn!", "es": "¡Bien! ¡Adiós, Mingming!" },
+          "end": true,
+          "feedback": "Has hablado de edades: 多大 para jóvenes y adultos, 几岁 para niños, la edad sin 有 (我二十四岁) y 两个 para contar dos. Muy bien."
+        }
+      }
+    },
+    {
+      "id": "a1-u02-count-class",
+      "title": "¿Cuántos somos en clase?",
+      "zh": "我们班有多少学生？",
+      "level": 1,
+      "setting": "Clase de chino en 交通大学, primer día. La profesora quiere saber cuántos alumnos hay y reparte caracteres para escribir. Tú (la app) eres 王老师.",
+      "role": "profesora",
+      "roleZh": "王老师",
+      "voice": "f",
+      "goals": ["Contar a los alumnos", "Usar 二 y 两 bien", "Decir cuántas preguntas tienes", "Pedir que repita"],
+      "vocab": ["几", "多少", "个", "两", "班", "学生", "汉字", "写", "问题", "请再说一遍", "知道"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "雨果，我们班有多少学生？", "py": "Yǔguǒ, wǒmen bān yǒu duōshao xuésheng?", "es": "Hugo, ¿cuántos alumnos hay en nuestra clase?" },
+          "user": [
+            { "zh": "我们班有十二个学生。", "py": "Wǒmen bān yǒu shí'èr ge xuésheng.", "es": "En nuestra clase hay doce alumnos.", "keywords": ["十二个", "十二个学生"], "next": "n2", "goal": 0 },
+            { "zh": "老师，我不知道。", "py": "Lǎoshī, wǒ bù zhīdào.", "es": "Profesora, no lo sé.", "keywords": ["不知道"], "next": "n1b" },
+            { "zh": "我们班有十两个学生。", "py": "Wǒmen bān yǒu shí liǎng ge xuésheng.", "es": "(«Doce» mal formado.)", "keywords": ["十两"], "next": "n1c" }
+          ],
+          "hint": "Cuenta a la clase: 我们班有 + número + 个学生. Hay doce."
+        },
+        "n1b": {
+          "npc": { "zh": "请数：一、二、三、四、五……", "py": "Qǐng shǔ: yī, èr, sān, sì, wǔ…", "es": "Cuenta: uno, dos, tres, cuatro, cinco…" },
+          "user": [
+            { "zh": "……十一、十二。我们班有十二个学生。", "py": "… shíyī, shí'èr. Wǒmen bān yǒu shí'èr ge xuésheng.", "es": "… once, doce. En nuestra clase hay doce alumnos.", "keywords": ["十二个", "十二"], "next": "n2", "goal": 0 }
+          ],
+          "hint": "Sigue contando hasta el final: 六、七、八、九、十、十一、十二."
+        },
+        "n1c": {
+          "npc": { "zh": "“十两个”？不对。是“十二个”。", "py": "“Shí liǎng ge”? Bú duì. Shì “shí'èr ge”.", "es": "¿«Shí liǎng ge»? No. Es «shí'èr ge»." },
+          "user": [
+            { "zh": "对不起，是十二个学生。", "py": "Duìbuqǐ, shì shí'èr ge xuésheng.", "es": "Perdón: son doce alumnos.", "keywords": ["十二个", "十二"], "next": "n2", "goal": 0 }
+          ],
+          "hint": "Dentro de un número, siempre 二: 十二."
+        },
+        "n2": {
+          "npc": { "zh": "对！我们班有几个西班牙学生？", "py": "Duì! Wǒmen bān yǒu jǐ ge Xībānyá xuésheng?", "es": "¡Correcto! ¿Cuántos alumnos españoles hay en nuestra clase?" },
+          "user": [
+            { "zh": "我们班有两个西班牙学生。安娜是西班牙人，我也是。", "py": "Wǒmen bān yǒu liǎng ge Xībānyá xuésheng. Ānnà shì Xībānyá rén, wǒ yě shì.", "es": "Hay dos alumnos españoles. Anna es española, y yo también.", "keywords": ["两个", "两个西班牙"], "next": "n3", "goal": 1 },
+            { "zh": "二个。", "py": "Èr ge.", "es": "(«Dos» mal elegido.)", "keywords": ["二个"], "next": "n2b" }
+          ],
+          "hint": "Anna y tú sois dos: 两个西班牙学生 (con clasificador, 两)."
+        },
+        "n2b": {
+          "npc": { "zh": "“二个”？请再说一遍。", "py": "“Èr ge”? Qǐng zài shuō yí biàn.", "es": "¿«Èr ge»? Repítelo." },
+          "user": [
+            { "zh": "两个！我们班有两个西班牙学生。", "py": "Liǎng ge! Wǒmen bān yǒu liǎng ge Xībānyá xuésheng.", "es": "¡Dos! Hay dos alumnos españoles.", "keywords": ["两个"], "next": "n3", "goal": 1 }
+          ],
+          "hint": "Con clasificador, 两个."
+        },
+        "n3": {
+          "npc": { "zh": "很好。请写两个汉字：“二”、“两”。你有问题吗？", "py": "Hěn hǎo. Qǐng xiě liǎng ge Hànzì: “èr”, “liǎng”. Nǐ yǒu wèntí ma?", "es": "Muy bien. Escribid dos caracteres: 二 y 两. ¿Tienes alguna pregunta?" },
+          "user": [
+            { "zh": "老师，我有两个问题。", "py": "Lǎoshī, wǒ yǒu liǎng ge wèntí.", "es": "Profesora, tengo dos preguntas.", "keywords": ["两个问题", "问题"], "next": "n4", "goal": 2 },
+            { "zh": "对不起，请再说一遍。", "py": "Duìbuqǐ, qǐng zài shuō yí biàn.", "es": "Perdone, ¿puede repetirlo?", "keywords": ["再说一遍", "一遍"], "next": "n3b", "goal": 3 }
+          ],
+          "hint": "Di cuántas preguntas tienes (两个问题) o pide que repita con 请再说一遍."
+        },
+        "n3b": {
+          "npc": { "zh": "好。请——写——两个汉字。你有问题吗？", "py": "Hǎo. Qǐng — xiě — liǎng ge Hànzì. Nǐ yǒu wèntí ma?", "es": "Vale. Escribid — dos — caracteres. ¿Tienes alguna pregunta?" },
+          "user": [
+            { "zh": "我有一个问题。", "py": "Wǒ yǒu yí ge wèntí.", "es": "Tengo una pregunta.", "keywords": ["一个问题", "问题"], "next": "n4", "goal": 2 },
+            { "zh": "没有，我知道了。", "py": "Méiyǒu, wǒ zhīdào le.", "es": "No, ya lo he entendido.", "keywords": ["知道", "没有"], "next": "end2" }
+          ],
+          "hint": "Contesta si tienes preguntas: 我有一个问题 / 没有，我知道了."
+        },
+        "n4": {
+          "npc": { "zh": "好，你问。", "py": "Hǎo, nǐ wèn.", "es": "Bien, pregunta." },
+          "user": [
+            { "zh": "老师，您手机号码是多少？", "py": "Lǎoshī, nín shǒujī hàomǎ shì duōshao?", "es": "Profesora, ¿cuál es su número de móvil?", "keywords": ["多少", "号码"], "next": "end1" },
+            { "zh": "我们班有几个中国学生？", "py": "Wǒmen bān yǒu jǐ ge Zhōngguó xuésheng?", "es": "¿Cuántos alumnos chinos hay en nuestra clase?", "keywords": ["几个", "中国学生"], "next": "end3" }
+          ],
+          "hint": "Haz tu pregunta con 几 o 多少 en el hueco de la respuesta."
+        },
+        "end1": {
+          "npc": { "zh": "我们班有微信，请加我。好，同学们，再见！", "py": "Wǒmen bān yǒu Wēixìn, qǐng jiā wǒ. Hǎo, tóngxuémen, zàijiàn!", "es": "La clase tiene grupo de WeChat: agregadme ahí. ¡Bueno, chicos, hasta luego!" },
+          "end": true,
+          "feedback": "Muy bien: has contado a la clase, has usado 两 con clasificador y 二 dentro de los números, y has preguntado con 多少."
+        },
+        "end2": {
+          "npc": { "zh": "好。同学们，再见！", "py": "Hǎo. Tóngxuémen, zàijiàn!", "es": "Bien. ¡Hasta luego, chicos!" },
+          "end": true,
+          "feedback": "Has contado bien y has pedido que repitiera cuando no entendías (请再说一遍): esa frase te salvará en China."
+        },
+        "end3": {
+          "npc": { "zh": "八个。我们班有八个中国学生。同学们，再见！", "py": "Bā ge. Wǒmen bān yǒu bā ge Zhōngguó xuésheng. Tóngxuémen, zàijiàn!", "es": "Ocho. Hay ocho alumnos chinos. ¡Hasta luego, chicos!" },
+          "end": true,
+          "feedback": "Perfecto: 几个 para una cantidad pequeña, 两个 con clasificador y 十二 dentro de los números."
+        }
+      }
+    },
+    {
+      "id": "a1-u02-dictation",
+      "title": "Dictado de números",
+      "zh": "请听，请读",
+      "level": 1,
+      "setting": "Clase de chino. La profesora dicta números y cada alumno tiene que repetirlos en voz alta. Hugo confunde a menudo 十四 y 四十. Tú (la app) eres 王老师.",
+      "role": "profesora",
+      "roleZh": "王老师",
+      "voice": "f",
+      "goals": ["Leer bien un número", "Distinguir 十四 y 四十", "Pedir que repita", "Decir tu número de la lista"],
+      "vocab": ["请", "听", "读", "再", "遍", "对", "错", "几号", "十四", "四十", "知道"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "雨果，你是几号？", "py": "Yǔguǒ, nǐ shì jǐ hào?", "es": "Hugo, ¿qué número eres en la lista?" },
+          "user": [
+            { "zh": "我是九号。", "py": "Wǒ shì jiǔ hào.", "es": "Soy el nueve.", "keywords": ["九号"], "next": "n2", "goal": 3 },
+            { "zh": "对不起，请再说一遍。", "py": "Duìbuqǐ, qǐng zài shuō yí biàn.", "es": "Perdone, ¿puede repetirlo?", "keywords": ["再说一遍", "一遍"], "next": "n1b", "goal": 2 }
+          ],
+          "hint": "几号 = qué número. Eres el 9: 我是九号."
+        },
+        "n1b": {
+          "npc": { "zh": "你——是——几——号？", "py": "Nǐ — shì — jǐ — hào?", "es": "¿Qué — número — eres?" },
+          "user": [
+            { "zh": "我是九号。", "py": "Wǒ shì jiǔ hào.", "es": "Soy el nueve.", "keywords": ["九号"], "next": "n2", "goal": 3 }
+          ],
+          "hint": "Responde en el hueco de la pregunta: 我是九号."
+        },
+        "n2": {
+          "npc": { "zh": "好，九号。请听：四十。请读！", "py": "Hǎo, jiǔ hào. Qǐng tīng: sìshí. Qǐng dú!", "es": "Bien, el nueve. Escucha: cuarenta. ¡Léelo!" },
+          "user": [
+            { "zh": "四十。", "py": "Sìshí.", "es": "Cuarenta.", "keywords": ["四十"], "next": "n3", "goal": 0 },
+            { "zh": "十四。", "py": "Shísì.", "es": "Catorce.", "keywords": ["十四"], "next": "n2b" }
+          ],
+          "hint": "四十 = 4 × 10: primero sì (cae), luego shí (sube)."
+        },
+        "n2b": {
+          "npc": { "zh": "错了！不是十四，是四十。请再读一遍。", "py": "Cuò le! Bú shì shísì, shì sìshí. Qǐng zài dú yí biàn.", "es": "¡Error! No es catorce, es cuarenta. Léelo otra vez." },
+          "user": [
+            { "zh": "四十。", "py": "Sìshí.", "es": "Cuarenta.", "keywords": ["四十"], "next": "n3", "goal": 1 },
+            { "zh": "对不起，我不知道。", "py": "Duìbuqǐ, wǒ bù zhīdào.", "es": "Perdone, no lo sé.", "keywords": ["不知道"], "next": "n2b" }
+          ],
+          "hint": "Lo que va delante de 十 multiplica: 四十 = 40. Lo que va detrás, suma: 十四 = 14."
+        },
+        "n3": {
+          "npc": { "zh": "对！请听：十四。", "py": "Duì! Qǐng tīng: shísì.", "es": "¡Bien! Escucha: catorce." },
+          "user": [
+            { "zh": "十四。", "py": "Shísì.", "es": "Catorce.", "keywords": ["十四"], "next": "n4", "goal": 1 },
+            { "zh": "四十。", "py": "Sìshí.", "es": "Cuarenta.", "keywords": ["四十"], "next": "n3b" }
+          ],
+          "hint": "Ahora es al revés: 十四 = 10 + 4."
+        },
+        "n3b": {
+          "npc": { "zh": "不对，是十四！十，四。", "py": "Bú duì, shì shísì! Shí, sì.", "es": "No, ¡es catorce! Diez, cuatro." },
+          "user": [
+            { "zh": "十四。我记住了！", "py": "Shísì. Wǒ jìzhu le!", "es": "Catorce. ¡Ya lo tengo!", "keywords": ["十四"], "next": "n4", "goal": 1 }
+          ],
+          "hint": "shí (sube) + sì (cae)."
+        },
+        "n4": {
+          "npc": { "zh": "很好！请听：九十九、二十二、六十八。", "py": "Hěn hǎo! Qǐng tīng: jiǔshíjiǔ, èrshí'èr, liùshíbā.", "es": "¡Muy bien! Escucha: noventa y nueve, veintidós, sesenta y ocho." },
+          "user": [
+            { "zh": "九十九、二十二、六十八。", "py": "Jiǔshíjiǔ, èrshí'èr, liùshíbā.", "es": "Noventa y nueve, veintidós, sesenta y ocho.", "keywords": ["九十九", "六十八"], "next": "end1", "goal": 0 },
+            { "zh": "对不起，请再说一遍。", "py": "Duìbuqǐ, qǐng zài shuō yí biàn.", "es": "Perdone, ¿puede repetirlo?", "keywords": ["再说一遍", "一遍"], "next": "n4b", "goal": 2 }
+          ],
+          "hint": "Repite los tres números. Si no los has cogido, 请再说一遍."
+        },
+        "n4b": {
+          "npc": { "zh": "好。九十九……二十二……六十八。", "py": "Hǎo. Jiǔshíjiǔ… èrshí'èr… liùshíbā.", "es": "Vale. Noventa y nueve… veintidós… sesenta y ocho." },
+          "user": [
+            { "zh": "九十九、二十二、六十八。", "py": "Jiǔshíjiǔ, èrshí'èr, liùshíbā.", "es": "Noventa y nueve, veintidós, sesenta y ocho.", "keywords": ["九十九", "六十八"], "next": "end1", "goal": 0 }
+          ],
+          "hint": "Ahora más despacio: repítelos."
+        },
+        "end1": {
+          "npc": { "zh": "对！九号，很好！", "py": "Duì! Jiǔ hào, hěn hǎo!", "es": "¡Correcto! Número nueve, ¡muy bien!" },
+          "end": true,
+          "feedback": "Has leído bien los números y has distinguido 十四 (10 + 4) de 四十 (4 × 10). Y si pediste que repitiera con 请再说一遍, mejor todavía: es la frase más útil de clase."
+        }
+      }
+    }
+  ]
+}

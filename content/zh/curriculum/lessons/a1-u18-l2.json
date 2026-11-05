@@ -1,0 +1,131 @@
+{
+  "id": "a1-u18-l2",
+  "title": "下雨了: el 了 del cambio",
+  "zh": "下雨了！",
+  "goal": "Anunciar un cambio de tiempo o de situación con 了 al final (下雨了, 天晴了, 不下雨了).",
+  "minutes": 14,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "下雨", "pinyin": "xià yǔ", "es": "llover", "note": "Lit. «caer lluvia». No hace falta sujeto: 下雨了 = «está lloviendo, se ha puesto a llover»." },
+    { "hanzi": "雨", "pinyin": "yǔ", "es": "lluvia", "note": "雨很大 = llueve mucho (lit. «la lluvia es grande»)." },
+    { "hanzi": "下雪", "pinyin": "xià xuě", "es": "nevar" },
+    { "hanzi": "雪", "pinyin": "xuě", "es": "nieve" },
+    { "hanzi": "风", "pinyin": "fēng", "es": "viento", "note": "风很大 = hace mucho viento." },
+    { "hanzi": "晴", "pinyin": "qíng", "es": "despejado; despejarse", "note": "天晴了 = se ha despejado." },
+    { "hanzi": "阴", "pinyin": "yīn", "es": "nublado; nublarse", "note": "天阴了 = se ha nublado." },
+    { "hanzi": "伞", "pinyin": "sǎn", "es": "paraguas", "note": "Palabra fuera del HSK 1–3, pero imprescindible en Shanghái." },
+    { "hanzi": "了", "pinyin": "le", "es": "(partícula de cambio, al final de la frase)", "note": "Repaso de la Etapa 0 y la U17: ahora al final de la frase." }
+  ],
+  "extraVocab": ["伞"],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "你看，下雨了！", "py": "Nǐ kàn, xià yǔ le!", "es": "¡Mira, está lloviendo!" },
+        { "zh": "不下雨了，天晴了。", "py": "Bú xià yǔ le, tiān qíng le.", "es": "Ya no llueve: se ha despejado." },
+        { "zh": "天冷了。", "py": "Tiān lěng le.", "es": "Ya hace frío." }
+      ]
+    },
+    { "type": "vocab", "title": "Lluvia, nieve y viento", "words": ["下雨", "雨", "下雪", "雪", "风", "晴", "阴", "伞", "了"] },
+    {
+      "type": "phonetics-drill",
+      "title": "La ü de 雨 y 雪",
+      "markdown": "雨 se escribe *yǔ*, pero **no** es una «iu»: es la **ü** (di «i» con los labios redondeados, como para silbar). Tras **y, j, q, x** la ü pierde los puntos al escribirla, pero sigue sonando ü: 雨 *yǔ*, 雪 *xuě*, 去 *qù*.\n\n雪 *xuě* = x + **üe**: empieza con los labios redondos y los abre en una «e» como la española. No la confundas con 写 *xiě* (escribir).\n\n了 al final de frase va siempre en **tono neutro**: corto y suave, *le*.",
+      "items": [
+        { "audio": "雨", "options": ["yǔ", "yǒu", "wǔ"], "answer": 0, "explain": "yu = ü con labios redondos; 有 yǒu y 五 wǔ son sonidos distintos." },
+        { "audio": "雪", "options": ["xuě", "xiě", "shuě"], "answer": 0, "explain": "xue = x + üe (la ü pierde los puntos tras x)." },
+        { "audio": "鱼", "prompt": "¿Cuál es el tono?", "options": ["yú (2.º, sube)", "yǔ (3.º)", "yù (4.º)"], "answer": 0, "explain": "鱼 yú sube; 雨 yǔ baja y sube." },
+        { "audio": "下雪了", "options": ["xià xuě le", "xià xiě le", "shà xuě le"], "answer": 0, "explain": "x (lengua plana) + üe, y le neutro al final." },
+        { "audio": "阴", "options": ["yīn", "yīng", "yún"], "answer": 0, "explain": "-n final, con la lengua detrás de los dientes." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["雨", "雪"],
+      "mnemonics": {
+        "雨": "Dibujo de un cielo (la raya de arriba) con nubes y gotas cayendo. Va encima de muchos caracteres del tiempo: 雪, 雷, 雾.",
+        "雪": "雨 (lluvia) + 彐 (una mano, una escoba): la lluvia que puedes coger con la mano y barrer = nieve."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "了 al final: «ahora es así (antes no)»",
+      "markdown": "En la U17 viste el 了 **detrás del verbo** (我吃了饭: acción terminada). Hoy llega el otro 了, el que va **al final de la frase**, en el hueco de la **partícula**: anuncia un **cambio** o una **situación nueva**.\n\n- 下雨**了**。 → antes no llovía; ahora, sí («¡se ha puesto a llover!»).\n- 天冷**了**。 → ya hace frío (antes no).\n- 八点**了**。 → ya son las ocho.\n\nFíjate en que **下雨了 no tiene sujeto**: en chino, con el tiempo, no hace falta (como «llueve» en español).\n\n**Negativa**: 不 + verbo + 了 = **«ya no»**: 不下雨**了** (ya no llueve), 我不冷**了** (ya no tengo frío).\n**Pregunta**: se añade 吗 detrás de 了: 下雨了**吗**？",
+      "focus": ["particle"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "verb1": { "zh": "下雨", "py": "xià yǔ" }, "particle": { "zh": "了", "py": "le" } }, "end": "！", "es": "¡Está lloviendo! (se ha puesto a llover)" },
+        { "slots": { "subject": { "zh": "天", "py": "tiān" }, "verb1": { "zh": "冷", "py": "lěng" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Ya hace frío.", "esOrder": [{ "text": "Ya", "slot": "particle" }, { "text": "hace" }, { "text": "frío", "slot": "verb1" }] },
+        { "slots": { "subject": { "zh": "外边", "py": "wàibian" }, "verb1": { "zh": "下雪", "py": "xià xuě" }, "particle": { "zh": "了", "py": "le" } }, "end": "！", "es": "¡Fuera está nevando!" },
+        { "slots": { "subject": { "zh": "风", "py": "fēng" }, "verb1": { "zh": "大", "py": "dà" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Se ha levantado viento (el viento es más fuerte)." },
+        { "slots": { "subject": { "zh": "天", "py": "tiān" }, "verb1": { "zh": "晴", "py": "qíng" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Se ha despejado." },
+        { "slots": { "object": { "zh": "八点", "py": "bā diǎn" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Ya son las ocho." }
+      ],
+      "negative": [
+        { "slots": { "adverb": { "zh": "不", "py": "bú" }, "verb1": { "zh": "下雨", "py": "xià yǔ" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Ya no llueve." },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "不", "py": "bù" }, "verb1": { "zh": "冷", "py": "lěng" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Ya no tengo frío." }
+      ],
+      "question": [
+        { "slots": { "verb1": { "zh": "下雨", "py": "xià yǔ" }, "particle": { "zh": "了吗", "py": "le ma" } }, "end": "？", "es": "¿Está lloviendo ya?" },
+        { "slots": { "subject": { "zh": "北京", "py": "Běijīng" }, "verb1": { "zh": "下雪", "py": "xià xuě" }, "particle": { "zh": "了吗", "py": "le ma" } }, "end": "？", "es": "¿Ha empezado a nevar en Pekín?" }
+      ],
+      "mistakes": [
+        { "wrong": "你看，下雨！", "right": "你看，下雨了！", "why": "Para anunciar que acaba de empezar a llover hace falta 了: sin él, 下雨 suena a «llover» en general." },
+        { "wrong": "不下雨。", "right": "不下雨了。", "why": "«Ya no llueve» es un cambio: 不 + verbo + 了. Sin 了 significa «no llueve» (normalmente)." },
+        { "wrong": "天是冷了。", "right": "天冷了。", "why": "冷 es el predicado: ni 是 ni 很 delante cuando anuncias el cambio con 了." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Saliendo de la biblioteca",
+      "lines": [
+        { "speaker": "雨果", "zh": "小李，你看，下雨了！", "py": "Xiǎo Lǐ, nǐ kàn, xià yǔ le!", "es": "¡Xiao Li, mira, está lloviendo!" },
+        { "speaker": "小李", "zh": "雨很大！你有伞吗？", "py": "Yǔ hěn dà! Nǐ yǒu sǎn ma?", "es": "¡Llueve muchísimo! ¿Tienes paraguas?" },
+        { "speaker": "雨果", "zh": "我没有伞。早上有太阳，是晴天。", "py": "Wǒ méiyǒu sǎn. Zǎoshang yǒu tàiyáng, shì qíngtiān.", "es": "No tengo paraguas. Por la mañana hacía sol, estaba despejado." },
+        { "speaker": "小李", "zh": "没关系，我有伞。我们一起走吧。", "py": "Méi guānxi, wǒ yǒu sǎn. Wǒmen yìqǐ zǒu ba.", "es": "No pasa nada, yo tengo. Vámonos juntos." },
+        { "speaker": "雨果", "zh": "你看，不下雨了！天晴了。", "py": "Nǐ kàn, bú xià yǔ le! Tiān qíng le.", "es": "¡Mira, ya no llueve! Se ha despejado." },
+        { "speaker": "小李", "zh": "对，有太阳了。风也大了，有点儿冷。", "py": "Duì, yǒu tàiyáng le. Fēng yě dà le, yǒudiǎnr lěng.", "es": "Sí, ha salido el sol. Y se ha levantado viento: hace un poco de frío." },
+        { "speaker": "雨果", "zh": "我妈妈说北京下雪了。", "py": "Wǒ māma shuō Běijīng xià xuě le.", "es": "Mi madre dice que en Pekín está nevando." },
+        { "speaker": "小李", "zh": "北京常常下雪，上海不常下雪。", "py": "Běijīng chángcháng xià xuě, Shànghǎi bù cháng xià xuě.", "es": "En Pekín nieva a menudo; en Shanghái, no." }
+      ],
+      "notes": "有太阳了 = «ha salido el sol» (antes no había): el mismo 了 de cambio. En Shanghái el tiempo cambia rápido, sobre todo en junio (la estación de lluvias, 梅雨 méiyǔ): lleva siempre un paraguas plegable."
+    },
+    { "type": "exercises", "count": 15, "bank": ["g-le", "u10", "g-bu-mei"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "verb1": { "zh": "下雪" }, "particle": { "zh": "了" } }, "end": "！", "es": "¡Está nevando!" }, "distractors": ["是"] },
+        { "sentence": { "slots": { "adverb": { "zh": "不" }, "verb1": { "zh": "下雨" }, "particle": { "zh": "了" } }, "end": "。", "es": "Ya no llueve." }, "distractors": ["没"] },
+        { "sentence": { "slots": { "subject": { "zh": "外边的风" }, "verb1": { "zh": "大" }, "particle": { "zh": "了吗" } }, "end": "？", "es": "¿Se ha levantado viento fuera?" } },
+        { "sentence": { "slots": { "time0": { "zh": "今天下午" }, "subject": { "zh": "上海" }, "adverb": { "zh": "也" }, "verb1": { "zh": "下雨" }, "particle": { "zh": "了" } }, "end": "。", "es": "Esta tarde también se ha puesto a llover en Shanghái." }, "distractors": ["很"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "你看，下雨了！", "py": "Nǐ kàn, xià yǔ le!", "es": "¡Mira, está lloviendo!" },
+        { "zh": "不下雨了，天晴了。", "py": "Bú xià yǔ le, tiān qíng le.", "es": "Ya no llueve: se ha despejado." },
+        { "zh": "风大了，有点儿冷。", "py": "Fēng dà le, yǒudiǎnr lěng.", "es": "Se ha levantado viento: hace un poco de frío." },
+        { "zh": "北京下雪了。", "py": "Běijīng xià xuě le.", "es": "En Pekín está nevando." }
+      ],
+      "respond": [
+        { "q": { "zh": "外边下雨了吗？", "py": "Wàibian xià yǔ le ma?", "es": "¿Está lloviendo fuera?" }, "model": { "zh": "下雨了，雨很大。", "py": "Xià yǔ le, yǔ hěn dà.", "es": "Sí, se ha puesto a llover, y mucho." } },
+        { "q": { "zh": "你有伞吗？", "py": "Nǐ yǒu sǎn ma?", "es": "¿Tienes paraguas?" }, "model": { "zh": "没有，我们一起走吧。", "py": "Méiyǒu, wǒmen yìqǐ zǒu ba.", "es": "No; vámonos juntos." } },
+        { "q": { "zh": "你冷吗？", "py": "Nǐ lěng ma?", "es": "¿Tienes frío?" }, "model": { "zh": "现在不冷了。", "py": "Xiànzài bù lěng le.", "es": "Ahora ya no." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Un día de tiempo loco",
+      "text": "早上是晴天，有太阳。中午天阴了，风也大了。下午下雨了，雨很大。雨果没有伞，小李有伞，他们一起回宿舍。晚上不下雨了，天晴了，有点儿冷了。",
+      "es": "Por la mañana estaba despejado y hacía sol. A mediodía se nubló y se levantó viento. Por la tarde se puso a llover, y mucho. Hugo no tenía paraguas; Xiao Li, sí, así que volvieron juntos a la residencia. Por la noche ya no llovía: se despejó y empezó a hacer un poco de frío.",
+      "questions": [
+        { "q": "¿Qué tiempo hacía por la mañana?", "options": ["晴天", "下雨", "下雪"], "answer": 0 },
+        { "q": "¿Quién tenía paraguas?", "options": ["小李", "雨果", "Los dos"], "answer": 0 },
+        { "q": "¿Qué pasó por la noche?", "options": ["Dejó de llover", "Se puso a nevar", "Se levantó mucho viento"], "answer": 0 },
+        { "q": "¿Qué significa 天阴了?", "options": ["Se ha nublado", "Hace sol", "Ya no llueve"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "id": "b1-u04-l2",
+  "title": "Entrar en la estación: 走进地铁站去",
+  "zh": "我们跑下楼去吧",
+  "goal": "Decir adónde entras, subes o vuelves poniendo el lugar entre la dirección y 来 / 去 (走进教室来, 跑下楼去), y moverte por el metro con 换乘 y 导航.",
+  "minutes": 15,
+  "reviewed": false,
+  "extraVocab": ["导航", "换乘"],
+  "vocab": [
+    { "hanzi": "导航", "pinyin": "dǎoháng", "es": "navegador (GPS); guiar con el GPS", "note": "Palabra extra (fuera del HSK 1–3): 导航说… = el GPS dice…" },
+    { "hanzi": "换乘", "pinyin": "huànchéng", "es": "hacer transbordo", "note": "Palabra extra. En los carteles del metro: 换乘 2号线." },
+    { "hanzi": "路线", "pinyin": "lùxiàn", "es": "ruta, itinerario" },
+    { "hanzi": "线", "pinyin": "xiàn", "es": "línea (de metro, autobús); hilo", "note": "二号线 = línea 2." },
+    { "hanzi": "到达", "pinyin": "dàodá", "es": "llegar (a un destino)", "note": "Más formal que 到: 到达北京." },
+    { "hanzi": "前往", "pinyin": "qiánwǎng", "es": "dirigirse a, ir a", "note": "Formal, típico de anuncios: 前往北京的高铁." },
+    { "hanzi": "区", "pinyin": "qū", "es": "distrito, zona", "note": "上海有十六个区." },
+    { "hanzi": "地区", "pinyin": "dìqū", "es": "región, zona" },
+    { "hanzi": "速度", "pinyin": "sùdù", "es": "velocidad" },
+    { "hanzi": "快速", "pinyin": "kuàisù", "es": "rápido, a gran velocidad", "note": "Más formal que 快: 快速换乘, 快速前进." },
+    { "hanzi": "高速", "pinyin": "gāosù", "es": "alta velocidad; autopista (abreviado)", "note": "上高速 = coger la autopista." },
+    { "hanzi": "高速公路", "pinyin": "gāosù gōnglù", "es": "autopista" },
+    { "hanzi": "铁路", "pinyin": "tiělù", "es": "ferrocarril, vía de tren", "note": "高铁 = 高速铁路, el tren de alta velocidad." },
+    { "hanzi": "票价", "pinyin": "piàojià", "es": "precio del billete" }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "二号线在楼下，我们跑下楼去吧。", "py": "Èr hào xiàn zài lóu xià, wǒmen pǎo xià lóu qu ba.", "es": "La línea 2 está abajo: bajemos corriendo." },
+        { "zh": "大卫已经走进火车站去了。", "py": "Dàwèi yǐjīng zǒujìn huǒchēzhàn qu le.", "es": "David ya ha entrado en la estación de tren." },
+        { "zh": "导航说我们要在人民广场换乘。", "py": "Dǎoháng shuō wǒmen yào zài Rénmín Guǎngchǎng huànchéng.", "es": "El GPS dice que tenemos que hacer transbordo en la Plaza del Pueblo." }
+      ]
+    },
+    { "type": "vocab", "title": "Metro, tren y autopista", "words": ["导航", "换乘", "路线", "线", "到达", "前往", "区", "地区", "速度", "快速", "高速", "高速公路", "铁路", "票价"] },
+    {
+      "type": "phonetics-drill",
+      "title": "El lugar en medio: ritmo de 走进教室来",
+      "markdown": "Cuando el lugar se mete en medio, la frase se parte en **dos golpes**: **走进 | 教室来**. El lugar lleva su tono completo y el 来 / 去 final se queda **neutro y corto**, pegado al lugar: *zǒujìn jiàoshì lai*.\n\n- 跑下**楼去** *pǎo xià lóu qu*: el peso cae en 楼.\n- 回**宿舍去** *huí sùshè qu*: el peso cae en 宿舍.\n\nOjo con **线 xiàn** (cuarto tono, como «sien» con x) frente a **先 xiān** (primero, primer tono), y con la **ch** aspirada de **换乘 huànchéng**.",
+      "items": [
+        { "audio": "走进教室来", "options": ["zǒujìn jiàoshì lai", "zǒu jìnlái jiàoshì", "zǒujìn jiàoshì lái qù"], "answer": 0, "explain": "Lugar en medio y 来 final, neutro." },
+        { "audio": "二号线", "options": ["èr hào xiàn", "èr hào xiān", "èr hào xuǎn"], "answer": 0, "explain": "线 es cuarto tono." },
+        { "audio": "换乘", "options": ["huànchéng", "huànzhéng", "huānchéng"], "answer": 0, "explain": "ch con soplo de aire; 换 en cuarto tono." },
+        { "audio": "我们跑下楼去吧。", "prompt": "¿Qué sílaba lleva más peso?", "options": ["楼", "去", "吧"], "answer": 0, "explain": "El lugar se marca; 去 y 吧 son neutros." },
+        { "audio": "票价", "options": ["piàojià", "piāojià", "biàojià"], "answer": 0, "explain": "p aspirada y dos cuartos tonos." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["线", "速"],
+      "mnemonics": {
+        "线": "纟 (hilo de seda) + 戋 (fino, pequeño): un hilo fino → hilo, línea; y de ahí las líneas de metro.",
+        "速": "辶 (camino, avanzar) + 束 (atar, apretar): avanzar apretando el paso → rápido, velocidad."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "Verbo + dirección + LUGAR + 来 / 去",
+      "markdown": "Con un **lugar**, el complemento compuesto se **parte en dos** y el lugar se mete **en medio**, justo antes de 来 / 去:\n\n**走进** + **教室** + **来** · **跑下** + **楼** + **去** · **走回** + **宿舍** + **去**\n\nNunca al final: ~~走进来教室~~. El 来 / 去 sigue diciendo hacia dónde va el movimiento respecto a quien habla.\n\n**Convención del esqueleto** (la de a2-u08-l2): el verbo con la dirección en **Verbo 1** (走进, 跑下), el lugar en **Objeto** (教室, 楼) y 来 / 去 en **Complemento**. El 了 final va en *Partícula*.\n\n- **Negativa**: 没 / 还没 / 别 delante: 他**还没**走进教室来.\n- **Pregunta**: …了吗？ o con 什么时候 / 哪儿 en su hueco: 你什么时候回宿舍来？\n\n**Vocabulario práctico del metro**: 坐二号**线**, 在人民广场**换乘**, 这条**路线**最快, **票价**是四块.",
+      "focus": ["verb1", "object", "complement"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "王老师", "py": "Wáng lǎoshī" }, "verb1": { "zh": "走进", "py": "zǒujìn" }, "object": { "zh": "教室", "py": "jiàoshì" }, "complement": { "zh": "来", "py": "lai" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "La profesora Wang ha entrado en el aula.", "esOrder": [{ "text": "La profesora Wang", "slot": "subject" }, { "text": "ha entrado", "slot": "verb1" }, { "text": "(hacia aquí)", "slot": "complement" }, { "text": "en el aula", "slot": "object" }] },
+        { "slots": { "subject": { "zh": "我们", "py": "wǒmen" }, "verb1": { "zh": "跑下", "py": "pǎo xià" }, "object": { "zh": "楼", "py": "lóu" }, "complement": { "zh": "去", "py": "qu" }, "particle": { "zh": "吧", "py": "ba" } }, "end": "！", "es": "¡Bajemos corriendo!" },
+        { "slots": { "subject": { "zh": "大卫", "py": "Dàwèi" }, "adverb": { "zh": "已经", "py": "yǐjīng" }, "verb1": { "zh": "走进", "py": "zǒujìn" }, "object": { "zh": "火车站", "py": "huǒchēzhàn" }, "complement": { "zh": "去", "py": "qu" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "David ya ha entrado en la estación de tren." },
+        { "slots": { "subject": { "zh": "小李", "py": "Xiǎo Lǐ" }, "verb1": { "zh": "跑回", "py": "pǎo huí" }, "object": { "zh": "宿舍", "py": "sùshè" }, "complement": { "zh": "去", "py": "qu" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Xiao Li ha vuelto corriendo a la residencia." },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "adverb": { "zh": "快", "py": "kuài" }, "verb1": { "zh": "走出", "py": "zǒuchū" }, "object": { "zh": "地铁站", "py": "dìtiězhàn" }, "complement": { "zh": "来", "py": "lai" }, "particle": { "zh": "吧", "py": "ba" } }, "end": "！", "es": "¡Sal ya de la estación, que te espero fuera!" }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "安娜", "py": "Ānnà" }, "adverb": { "zh": "还没", "py": "hái méi" }, "verb1": { "zh": "走进", "py": "zǒujìn" }, "object": { "zh": "教室", "py": "jiàoshì" }, "complement": { "zh": "来", "py": "lai" } }, "end": "。", "es": "Ana todavía no ha entrado en el aula." },
+        { "slots": { "subject": { "zh": "你们", "py": "nǐmen" }, "adverb": { "zh": "别", "py": "bié" }, "verb1": { "zh": "跑上", "py": "pǎo shàng" }, "object": { "zh": "楼", "py": "lóu" }, "complement": { "zh": "去", "py": "qu" } }, "end": "！", "es": "¡No subáis corriendo!" }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "time": { "zh": "什么时候", "py": "shénme shíhou" }, "verb1": { "zh": "回", "py": "huí" }, "object": { "zh": "宿舍", "py": "sùshè" }, "complement": { "zh": "来", "py": "lai" } }, "end": "？", "es": "¿Cuándo vuelves a la residencia?" },
+        { "slots": { "subject": { "zh": "他们", "py": "tāmen" }, "verb1": { "zh": "走进", "py": "zǒujìn" }, "object": { "zh": "地铁站", "py": "dìtiězhàn" }, "complement": { "zh": "去", "py": "qu" }, "particle": { "zh": "了吗", "py": "le ma" } }, "end": "？", "es": "¿Han entrado ya en la estación de metro?" }
+      ],
+      "mistakes": [
+        { "wrong": "王老师走进来教室了。", "right": "王老师走进教室来了。", "why": "El lugar va entre la dirección y 来 / 去, nunca detrás." },
+        { "wrong": "我回去宿舍。", "right": "我回宿舍去。", "why": "Igual con 回: el lugar va en medio. (También vale 我回宿舍.)" },
+        { "wrong": "我们在人民广场换乘去二号线。", "right": "我们在人民广场换乘二号线。", "why": "换乘 lleva directamente la línea a la que cambias; no necesita 去." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Transbordo en la Plaza del Pueblo",
+      "lines": [
+        { "speaker": "安娜", "zh": "雨果，导航说我们要在人民广场换乘。", "py": "Yǔguǒ, dǎoháng shuō wǒmen yào zài Rénmín Guǎngchǎng huànchéng.", "es": "Hugo, el GPS dice que tenemos que hacer transbordo en la Plaza del Pueblo." },
+        { "speaker": "雨果", "zh": "对，先坐一号线，再换乘二号线。这条路线最快。", "py": "Duì, xiān zuò yī hào xiàn, zài huànchéng èr hào xiàn. Zhè tiáo lùxiàn zuì kuài.", "es": "Sí, primero la línea 1 y luego cambiamos a la 2. Es la ruta más rápida." },
+        { "speaker": "安娜", "zh": "到了！二号线在楼下，我们跑下楼去吧！", "py": "Dào le! Èr hào xiàn zài lóu xià, wǒmen pǎo xià lóu qu ba!", "es": "¡Ya estamos! La línea 2 está abajo, ¡bajemos corriendo!" },
+        { "speaker": "雨果", "zh": "别跑，小心！我们还有时间。", "py": "Bié pǎo, xiǎoxīn! Wǒmen hái yǒu shíjiān.", "es": "¡No corras, cuidado! Todavía tenemos tiempo." },
+        { "speaker": "安娜", "zh": "车来了，快走进去！", "py": "Chē lái le, kuài zǒu jinqu!", "es": "¡Ya viene el tren, entra rápido!" },
+        { "speaker": "雨果", "zh": "地铁的速度真快，比打车快多了。", "py": "Dìtiě de sùdù zhēn kuài, bǐ dǎchē kuài duō le.", "es": "El metro va rapidísimo, mucho más que un taxi." },
+        { "speaker": "安娜", "zh": "到了火车站，我们还要坐高铁前往北京吧？", "py": "Dào le huǒchēzhàn, wǒmen hái yào zuò gāotiě qiánwǎng Běijīng ba?", "es": "Al llegar a la estación, todavía tenemos que coger el AVE a Pekín, ¿no?" },
+        { "speaker": "雨果", "zh": "对。高铁比走高速公路快多了，五个小时就能到达北京。", "py": "Duì. Gāotiě bǐ zǒu gāosù gōnglù kuài duō le, wǔ ge xiǎoshí jiù néng dàodá Běijīng.", "es": "Sí. El tren de alta velocidad es mucho más rápido que ir por autopista: en cinco horas estamos en Pekín." },
+        { "speaker": "安娜", "zh": "票价贵不贵？", "py": "Piàojià guì bu guì?", "es": "¿Es caro el billete?" },
+        { "speaker": "雨果", "zh": "不太贵，五百多块。中国的铁路又快又方便。", "py": "Bú tài guì, wǔbǎi duō kuài. Zhōngguó de tiělù yòu kuài yòu fāngbiàn.", "es": "No mucho: algo más de quinientos yuanes. El tren en China es rápido y cómodo." },
+        { "speaker": "安娜", "zh": "你看，大卫发微信了：他已经走进火车站去了。", "py": "Nǐ kàn, Dàwèi fā Wēixìn le: tā yǐjīng zǒujìn huǒchēzhàn qu le.", "es": "Mira, David ha mandado un WeChat: ya ha entrado en la estación." },
+        { "speaker": "雨果", "zh": "好，我们出了地铁站，就快速走进去找他。", "py": "Hǎo, wǒmen chū le dìtiězhàn, jiù kuàisù zǒu jinqu zhǎo tā.", "es": "Vale, en cuanto salgamos del metro, entramos rápido a buscarlo." }
+      ],
+      "notes": "En el metro de Shanghái los carteles verdes dicen **换乘** (transbordo) con el número de la línea; los de salida, **出口**. **前往** y **到达** son palabras de anuncio y de pantalla: 前往北京的列车 (el tren con destino a Pekín), 到达时间 (hora de llegada). 高铁 es la abreviatura de **高速铁路**."
+    },
+    { "type": "exercises", "count": 17, "bank": ["g-lai-qu", "g-zai", "g-word-order", "u08"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "王老师" }, "verb1": { "zh": "走进" }, "object": { "zh": "教室" }, "complement": { "zh": "来" }, "particle": { "zh": "了" } }, "end": "。", "es": "La profesora Wang ha entrado en el aula." }, "distractors": ["进来"] },
+        { "sentence": { "slots": { "subject": { "zh": "我们" }, "verb1": { "zh": "跑下" }, "object": { "zh": "楼" }, "complement": { "zh": "去" }, "particle": { "zh": "吧" } }, "end": "！", "es": "¡Bajemos corriendo!" } },
+        { "sentence": { "slots": { "subject": { "zh": "你" }, "time": { "zh": "什么时候" }, "verb1": { "zh": "回" }, "object": { "zh": "宿舍" }, "complement": { "zh": "来" } }, "end": "？", "es": "¿Cuándo vuelves a la residencia?" }, "distractors": ["吗"] },
+        { "sentence": { "slots": { "time0": { "zh": "今天下午" }, "subject": { "zh": "我们" }, "aux": { "zh": "要" }, "place": { "zh": "在人民广场" }, "verb1": { "zh": "换乘" }, "object": { "zh": "二号线" } }, "end": "。", "es": "Esta tarde tenemos que hacer transbordo a la línea 2 en la Plaza del Pueblo." }, "distractors": ["去"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "导航说我们要在人民广场换乘。", "py": "Dǎoháng shuō wǒmen yào zài Rénmín Guǎngchǎng huànchéng.", "es": "El GPS dice que tenemos que hacer transbordo en la Plaza del Pueblo." },
+        { "zh": "我们跑下楼去吧！", "py": "Wǒmen pǎo xià lóu qu ba!", "es": "¡Bajemos corriendo!" },
+        { "zh": "王老师走进教室来了。", "py": "Wáng lǎoshī zǒujìn jiàoshì lai le.", "es": "La profesora Wang ha entrado en el aula." },
+        { "zh": "这条路线最快。", "py": "Zhè tiáo lùxiàn zuì kuài.", "es": "Esta ruta es la más rápida." }
+      ],
+      "respond": [
+        { "q": { "zh": "去火车站要换乘吗？", "py": "Qù huǒchēzhàn yào huànchéng ma?", "es": "¿Hay que hacer transbordo para ir a la estación de tren?" }, "model": { "zh": "要，在人民广场换乘一号线。", "py": "Yào, zài Rénmín Guǎngchǎng huànchéng yī hào xiàn.", "es": "Sí, en la Plaza del Pueblo cambias a la línea 1." } },
+        { "q": { "zh": "你什么时候回宿舍来？", "py": "Nǐ shénme shíhou huí sùshè lai?", "es": "¿Cuándo vuelves a la residencia?" }, "model": { "zh": "下课以后我就回宿舍去。", "py": "Xiàkè yǐhòu wǒ jiù huí sùshè qu.", "es": "En cuanto salga de clase vuelvo." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Rumbo a Pekín",
+      "text": "这个周末，雨果和安娜要坐高铁前往北京。他们住在学校的宿舍，学校在上海的西南地区，离火车站有点儿远。早上七点，他们走出宿舍去，走进地铁站。导航说：“先坐一号线，在人民广场换乘二号线。”这条路线最快。到了人民广场，二号线在楼下，安娜想跑下楼去，雨果说：“别跑，我们还有时间。”地铁的速度很快，四十分钟就到达了火车站。大卫已经在里面了，他给他们发微信：“我已经走进火车站来了，你们快进来！”高铁的票价是五百多块，比坐飞机便宜。中国的铁路很长，很多地区都有高铁。高铁快速地往北开去，比走高速公路快多了。下午一点，他们就到了北京。",
+      "es": "Este fin de semana Hugo y Ana van a coger el tren de alta velocidad a Pekín. Viven en la residencia de la universidad, que está en la zona suroeste de Shanghái, algo lejos de la estación de tren. A las siete de la mañana salen de la residencia y entran en el metro. El GPS dice: «Primero la línea 1 y en la Plaza del Pueblo, transbordo a la línea 2». Es la ruta más rápida. En la Plaza del Pueblo la línea 2 está abajo; Ana quiere bajar corriendo, pero Hugo le dice: «No corras, que tenemos tiempo». El metro va rápido y en cuarenta minutos llegan a la estación. David ya está dentro y les manda un WeChat: «Ya he entrado en la estación, ¡entrad rápido!». El billete cuesta algo más de quinientos yuanes, más barato que el avión. La red de ferrocarril de China es muy larga y en muchas regiones hay tren de alta velocidad. El tren sale a toda velocidad hacia el norte, mucho más rápido que por autopista. A la una de la tarde ya están en Pekín.",
+      "questions": [
+        { "q": "¿Dónde hacen transbordo?", "options": ["人民广场", "火车站", "学校"], "answer": 0 },
+        { "q": "¿Cuánto tarda el metro hasta la estación?", "options": ["四十分钟", "五个小时", "七分钟"], "answer": 0 },
+        { "q": "¿Dónde está David cuando les escribe?", "options": ["Dentro de la estación", "En la residencia", "En el metro"], "answer": 0 },
+        { "q": "¿Cómo es el billete de tren comparado con el avión?", "options": ["Más barato", "Más caro", "Igual"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

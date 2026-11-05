@@ -1,0 +1,138 @@
+{
+  "id": "b1-u09-l2",
+  "title": "Parece más joven: 看起来, 看上去 y 显得",
+  "zh": "她看起来很年轻",
+  "goal": "Decir qué aspecto tiene alguien o algo (看起来很累, 看上去很精神, 显得年轻) y contrastarlo con lo que hay detrás (表面上…，其实…).",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "看起来", "pinyin": "kàn qilai", "es": "parecer, tener pinta de (por lo que se ve)", "note": "她看起来很年轻 = parece muy joven. 起来 suele ir en tono neutro." },
+    { "hanzi": "看上去", "pinyin": "kàn shangqu", "es": "parecer a simple vista", "note": "Casi igual que 看起来, más centrado en el aspecto físico." },
+    { "hanzi": "显得", "pinyin": "xiǎnde", "es": "mostrarse, verse, resultar (+ adj)", "note": "穿这件衣服，你显得很年轻 = con esta ropa se te ve muy joven." },
+    { "hanzi": "表面", "pinyin": "biǎomiàn", "es": "superficie; apariencia", "note": "表面上… ，其实… = en apariencia…, pero en realidad…" },
+    { "hanzi": "状态", "pinyin": "zhuàngtài", "es": "estado, forma (física o mental)", "note": "状态很好 = estar en buena forma." },
+    { "hanzi": "精神", "pinyin": "jīngshen", "es": "con energía, despierto; espíritu", "note": "Adjetivo: 他看上去很精神. Con el sentido de «espíritu», jīngshén." },
+    { "hanzi": "明显", "pinyin": "míngxiǎn", "es": "evidente, claro; claramente", "note": "他明显瘦了 = se nota que ha adelgazado." },
+    { "hanzi": "真实", "pinyin": "zhēnshí", "es": "real, verdadero", "note": "真实的生活 = la vida real." },
+    { "hanzi": "相当", "pinyin": "xiāngdāng", "es": "bastante, considerablemente", "note": "Adverbio de grado: 相当好 = bastante bien (más que 比较)." },
+    { "hanzi": "头脑", "pinyin": "tóunǎo", "es": "cabeza, mente", "note": "头脑很清楚 = tener la cabeza despejada." },
+    { "hanzi": "内心", "pinyin": "nèixīn", "es": "interior, en el fondo (del corazón)" },
+    { "hanzi": "亲切", "pinyin": "qīnqiè", "es": "cercano, afable, cariñoso", "note": "王老师很亲切 = la profesora Wang es muy cercana." },
+    { "hanzi": "坚强", "pinyin": "jiānqiáng", "es": "fuerte (de carácter), entero" },
+    { "hanzi": "积极", "pinyin": "jījí", "es": "activo, positivo, con iniciativa", "note": "学习很积极 = muy aplicado; 积极参加 = participar con ganas." }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "王老师看起来很年轻。", "py": "Wáng lǎoshī kàn qilai hěn niánqīng.", "es": "La profesora Wang parece muy joven." },
+        { "zh": "你今天看上去不太精神。", "py": "Nǐ jīntiān kàn shangqu bú tài jīngshen.", "es": "Hoy no se te ve muy despierto." },
+        { "zh": "表面上他很坚强，其实他的内心很难过。", "py": "Biǎomiàn shang tā hěn jiānqiáng, qíshí tā de nèixīn hěn nánguò.", "es": "Por fuera parece entero, pero en el fondo está muy triste." }
+      ]
+    },
+    { "type": "vocab", "title": "Lo que se ve y lo que hay dentro", "words": ["看起来", "看上去", "显得", "表面", "状态", "精神", "明显", "真实", "相当", "头脑", "内心", "亲切", "坚强", "积极"] },
+    {
+      "type": "phonetics-drill",
+      "title": "看起来 y 看上去: el peso en 看",
+      "markdown": "En **看起来** y **看上去** el golpe va en **看 kàn** (cuarto tono, fuerte); las dos sílabas de detrás se dicen **ligeras**, casi neutras: *kàn qilai*, *kàn shangqu*. Si las pronuncias con todos sus tonos, suena a «mirar hacia arriba» (el movimiento real).\n\nOtras de hoy:\n\n- **显得 xiǎnde**: tercer tono + 得 neutro → medio tercer tono, baja y no sube.\n- **精神**: como adjetivo («con energía») el 神 va neutro: *jīngshen*.\n- **积极 jījí**: primero + segundo; la *j* es plana, nunca la jota española.\n- **不太**: 不 delante de cuarto tono → *bú tài*.",
+      "items": [
+        { "audio": "看起来", "options": ["kàn qilai", "kān qǐlái", "kàn qílái"], "answer": 0, "explain": "Fuerza en 看; 起来 ligero." },
+        { "audio": "显得", "options": ["xiǎnde", "xiánde", "xiǎndé"], "answer": 0, "explain": "Medio tercer tono delante del neutro 得." },
+        { "audio": "他很精神", "prompt": "¿Cómo suena 精神 aquí (adjetivo)?", "options": ["jīngshen, 神 neutro", "jīngshén, 神 en segundo tono", "jìngshén"], "answer": 0, "explain": "Como adjetivo, «con energía», se dice con neutro." },
+        { "audio": "积极", "options": ["jījí", "jíjī", "qījí"], "answer": 0, "explain": "Primero + segundo, y j sin aire." },
+        { "audio": "不太精神", "options": ["bú tài jīngshen", "bù tài jīngshen", "bǔ tài jīngshen"], "answer": 0, "explain": "不 delante de cuarto tono → bú." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["显", "精"],
+      "mnemonics": {
+        "显": "日 (sol) arriba + 业 abajo: lo que queda a la luz del sol se ve claramente → «mostrar, evidente» (明显, 显得).",
+        "精": "米 (arroz) + 青 (da el sonido, qīng → jīng): el arroz pulido y escogido, lo mejor del grano → «esencia, fino», y de ahí 精神, la energía del espíritu."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "看起来 / 看上去 / 显得 + adjetivo",
+      "markdown": "Para decir **qué aspecto tiene** algo, el chino pone **看起来** o **看上去** delante del adjetivo, como un adverbio: 她**看起来**很年轻 «parece muy joven».\n\n- **看起来** y **看上去** son casi iguales; 看上去 se fija más en el aspecto físico (a simple vista).\n- El adjetivo sigue llevando **很, 相当, 不太…**: 看起来**很**累, no *看起来累*.\n- Pueden ir también **delante del sujeto**, con coma: **看上去，**这个问题很难.\n- **显得 + adjetivo** = «se le ve…, resulta…», muchas veces por una causa: 穿上这件衣服，你**显得**很精神.\n- **表面上…，其实…** contrapone lo que se ve y lo que hay: 表面上很坚强，其实内心很难过.\n- No lo confundas con **看来** (b1-u08), que saca una **conclusión**: 看来他今天不来了 «por lo visto hoy no viene».\n\n**Convención del esqueleto**: 看起来 / 看上去 / 显得 + el grado van en *Adverbios* y el adjetivo en *Verbo 1* (她 · 看起来很 · 年轻). Si van delante del sujeto (看上去，/ 表面上 / 其实), en *Tiempo inicial*. Las frases con dos partes se escriben en dos filas, como los conectores de A2.",
+      "focus": ["adverb"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "王老师", "py": "Wáng lǎoshī" }, "adverb": { "zh": "看起来很", "py": "kàn qilai hěn" }, "verb1": { "zh": "年轻", "py": "niánqīng" } }, "end": "。", "es": "La profesora Wang parece muy joven." },
+        { "slots": { "subject": { "zh": "这些菜", "py": "zhèxiē cài" }, "adverb": { "zh": "看起来都很", "py": "kàn qilai dōu hěn" }, "verb1": { "zh": "好吃", "py": "hǎochī" } }, "end": "。", "es": "Todos estos platos tienen muy buena pinta." },
+        { "slots": { "subject": { "zh": "那个老头儿", "py": "nà ge lǎotóur" }, "adverb": { "zh": "看上去相当", "py": "kàn shangqu xiāngdāng" }, "verb1": { "zh": "精神", "py": "jīngshen" } }, "end": "。", "es": "Ese anciano se ve bastante lleno de energía." },
+        { "slots": { "subject": { "zh": "她", "py": "tā" }, "time": { "zh": "今天", "py": "jīntiān" }, "adverb": { "zh": "显得特别", "py": "xiǎnde tèbié" }, "verb1": { "zh": "高兴", "py": "gāoxìng" } }, "end": "。", "es": "Se la ve especialmente contenta hoy.", "esOrder": [{ "text": "Se la ve especialmente", "slot": "adverb" }, { "text": "contenta", "slot": "verb1" }, { "text": "hoy", "slot": "time" }] },
+        { "slots": { "time0": { "zh": "看上去，", "py": "kàn shangqu," }, "subject": { "zh": "这个问题", "py": "zhège wèntí" }, "adverb": { "zh": "很", "py": "hěn" }, "verb1": { "zh": "难", "py": "nán" } }, "end": "。", "es": "A simple vista, este problema es muy difícil." },
+        { "slots": { "time0": { "zh": "表面上", "py": "biǎomiàn shang" }, "subject": { "zh": "他", "py": "tā" }, "adverb": { "zh": "很", "py": "hěn" }, "verb1": { "zh": "坚强", "py": "jiānqiáng" } }, "end": "，", "es": "Por fuera parece entero… (1.ª parte)" },
+        { "slots": { "time0": { "zh": "其实", "py": "qíshí" }, "subject": { "zh": "他的内心", "py": "tā de nèixīn" }, "adverb": { "zh": "很", "py": "hěn" }, "verb1": { "zh": "难过", "py": "nánguò" } }, "end": "。", "es": "…pero en el fondo está muy triste. (2.ª parte)" }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "他", "py": "tā" }, "adverb": { "zh": "看起来不太", "py": "kàn qilai bú tài" }, "verb1": { "zh": "高兴", "py": "gāoxìng" } }, "end": "。", "es": "No parece muy contento." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "time": { "zh": "今天", "py": "jīntiān" }, "adverb": { "zh": "看上去", "py": "kàn shangqu" }, "verb1": { "zh": "怎么样", "py": "zěnmeyàng" } }, "end": "？", "es": "¿Qué tal me ves hoy?" },
+        { "slots": { "subject": { "zh": "她", "py": "tā" }, "adverb": { "zh": "看起来", "py": "kàn qilai" }, "verb1": { "zh": "有", "py": "yǒu" }, "object": { "zh": "多大年纪", "py": "duō dà niánjì" } }, "end": "？", "es": "¿Cuántos años aparenta?" }
+      ],
+      "mistakes": [
+        { "wrong": "他看起来累。", "right": "他看起来很累。", "why": "Detrás de 看起来 el adjetivo se comporta como predicado: necesita 很 u otro grado." },
+        { "wrong": "他看起来像很累。", "right": "他看起来很累。 / 他好像很累。", "why": "«Parece cansado» no lleva 像 delante del adjetivo; 像 va con nombres (他像一个老师)." },
+        { "wrong": "她看上来很年轻。", "right": "她看上去很年轻。 / 她看起来很年轻。", "why": "Se dice 看上去 o 看起来; *看上来* no existe." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Se te ve cansado",
+      "lines": [
+        { "speaker": "小李", "zh": "雨果，你今天看起来很累，怎么了？", "py": "Yǔguǒ, nǐ jīntiān kàn qilai hěn lèi, zěnme le?", "es": "Hugo, hoy se te ve muy cansado. ¿Qué te pasa?" },
+        { "speaker": "雨果", "zh": "快要考试了，我每天都睡得很晚，状态不太好。", "py": "Kuài yào kǎoshì le, wǒ měi tiān dōu shuì de hěn wǎn, zhuàngtài bú tài hǎo.", "es": "Tengo exámenes pronto y me acuesto muy tarde todos los días; no estoy en buena forma." },
+        { "speaker": "小李", "zh": "你看上去明显瘦了。", "py": "Nǐ kàn shangqu míngxiǎn shòu le.", "es": "Se nota que has adelgazado." },
+        { "speaker": "雨果", "zh": "是吗？可是我觉得我的头脑还很清楚。", "py": "Shì ma? Kěshì wǒ juéde wǒ de tóunǎo hái hěn qīngchu.", "es": "¿Sí? Pues yo tengo la cabeza todavía despejada." },
+        { "speaker": "小李", "zh": "表面上你很坚强，其实你内心很着急吧？", "py": "Biǎomiàn shang nǐ hěn jiānqiáng, qíshí nǐ nèixīn hěn zháojí ba?", "es": "Por fuera pareces muy entero, pero en el fondo estás agobiado, ¿no?" },
+        { "speaker": "雨果", "zh": "被你说对了，我很怕考不好。", "py": "Bèi nǐ shuō duì le, wǒ hěn pà kǎo bu hǎo.", "es": "Has dado en el clavo: me da mucho miedo que me salga mal." },
+        { "speaker": "小李", "zh": "别着急。你学习那么积极，一定没问题。", "py": "Bié zháojí. Nǐ xuéxí nàme jījí, yídìng méi wèntí.", "es": "Tranquilo. Con lo aplicado que eres, seguro que no hay problema." },
+        { "speaker": "雨果", "zh": "谢谢。王老师也这么说，她总是那么亲切。", "py": "Xièxie. Wáng lǎoshī yě zhème shuō, tā zǒngshì nàme qīnqiè.", "es": "Gracias. La profesora Wang dice lo mismo; siempre es tan cercana…" },
+        { "speaker": "小李", "zh": "王老师看起来很年轻，其实她已经五十多岁了。", "py": "Wáng lǎoshī kàn qilai hěn niánqīng, qíshí tā yǐjīng wǔshí duō suì le.", "es": "La profesora Wang parece muy joven, pero en realidad ya tiene cincuenta y tantos." },
+        { "speaker": "雨果", "zh": "真的吗？她看上去只有四十岁！", "py": "Zhēn de ma? Tā kàn shangqu zhǐ yǒu sìshí suì!", "es": "¿En serio? ¡Aparenta cuarenta como mucho!" },
+        { "speaker": "小李", "zh": "她每天早上都跑步，所以显得年轻。你也应该运动运动。", "py": "Tā měi tiān zǎoshang dōu pǎobù, suǒyǐ xiǎnde niánqīng. Nǐ yě yīnggāi yùndòng yùndòng.", "es": "Corre todas las mañanas, por eso se la ve joven. Tú también deberías moverte un poco." },
+        { "speaker": "雨果", "zh": "好，考完试我就跟你一起去跑步！", "py": "Hǎo, kǎo wán shì wǒ jiù gēn nǐ yìqǐ qù pǎobù!", "es": "Vale: ¡en cuanto acabe los exámenes, me voy a correr contigo!" }
+      ],
+      "notes": "En China es muy normal comentar el aspecto de alguien (你瘦了, 你看起来很累): no es de mala educación, es una forma de mostrar interés. 被你说对了 = «lo has dicho tal cual» (pasiva coloquial de b1-u02)."
+    },
+    { "type": "exercises", "count": 16, "bank": ["g-hen-adj", "g-complements", "g-question-words"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "王老师" }, "adverb": { "zh": "看起来很" }, "verb1": { "zh": "年轻" } }, "end": "。", "es": "La profesora Wang parece muy joven." }, "distractors": ["是"] },
+        { "sentence": { "slots": { "subject": { "zh": "那个老头儿" }, "adverb": { "zh": "看上去相当" }, "verb1": { "zh": "精神" } }, "end": "。", "es": "Ese anciano se ve bastante lleno de energía." }, "distractors": ["像"] },
+        { "sentence": { "slots": { "subject": { "zh": "穿红衣服的那个姑娘" }, "time": { "zh": "今天" }, "adverb": { "zh": "显得特别" }, "verb1": { "zh": "高兴" } }, "end": "。", "es": "La chica vestida de rojo está hoy especialmente contenta." } },
+        { "sentence": { "slots": { "time0": { "zh": "每天早上" }, "subject": { "zh": "我们楼下那位七十多岁的老太太" }, "adverb": { "zh": "看起来都比我们还" }, "verb1": { "zh": "精神" } }, "end": "。", "es": "Todas las mañanas, la señora de setenta y tantos años de abajo parece aún más llena de energía que nosotros." } }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "你今天看起来很累。", "py": "Nǐ jīntiān kàn qilai hěn lèi.", "es": "Hoy se te ve muy cansado." },
+        { "zh": "她看上去只有四十岁。", "py": "Tā kàn shangqu zhǐ yǒu sìshí suì.", "es": "Aparenta cuarenta como mucho." },
+        { "zh": "表面上他很坚强，其实他的内心很难过。", "py": "Biǎomiàn shang tā hěn jiānqiáng, qíshí tā de nèixīn hěn nánguò.", "es": "Por fuera parece entero, pero en el fondo está muy triste." },
+        { "zh": "王老师总是那么亲切。", "py": "Wáng lǎoshī zǒngshì nàme qīnqiè.", "es": "La profesora Wang siempre es tan cercana." }
+      ],
+      "respond": [
+        { "q": { "zh": "我今天看上去怎么样？", "py": "Wǒ jīntiān kàn shangqu zěnmeyàng?", "es": "¿Qué tal me ves hoy?" }, "model": { "zh": "你看上去很精神，状态很好！", "py": "Nǐ kàn shangqu hěn jīngshen, zhuàngtài hěn hǎo!", "es": "¡Se te ve con mucha energía, estás en plena forma!" } },
+        { "q": { "zh": "你的老师看起来多大年纪？", "py": "Nǐ de lǎoshī kàn qilai duō dà niánjì?", "es": "¿Cuántos años aparenta tu profesora?" }, "model": { "zh": "她看起来四十多岁，其实已经五十多岁了。", "py": "Tā kàn qilai sìshí duō suì, qíshí yǐjīng wǔshí duō suì le.", "es": "Aparenta cuarenta y tantos, pero en realidad ya pasa de los cincuenta." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Las fotos del móvil",
+      "text": "在微信上，我的朋友们看起来都过得相当好：有的在海边喝咖啡，有的在美丽的公园跑步，每个人的状态都很好，每张照片都显得那么开心。可是，表面上的东西不一定是真实的生活。上个星期我跟安娜一起吃饭，她发的照片上，她看上去非常精神，可是那天她明显很累。她告诉我，最近她工作压力很大，晚上常常睡不着觉，内心很着急。她说：“我不想让家里人知道，所以只发好看的照片。”我觉得安娜是一个很坚强的姑娘，她学习和工作都很积极，可是坚强的人也需要朋友的帮助。从那天起，我常常给她打电话，跟她聊聊天。王老师说得对：“看人不能只看表面，要用头脑，也要用心。”",
+      "es": "En WeChat, todos mis amigos parecen irles bastante bien: unos toman café junto al mar, otros corren por parques preciosos; todo el mundo está en plena forma y en todas las fotos se los ve muy contentos. Pero lo que se ve por fuera no siempre es la vida real. La semana pasada comí con Ana: en las fotos que publica se la ve llena de energía, pero ese día se notaba que estaba muy cansada. Me contó que últimamente tiene mucha presión en el trabajo, que muchas noches no consigue dormir y que por dentro está muy agobiada. Me dijo: «No quiero que mi familia lo sepa, por eso solo subo fotos bonitas». Creo que Ana es una chica muy fuerte, muy aplicada en el estudio y en el trabajo, pero la gente fuerte también necesita la ayuda de sus amigos. Desde ese día la llamo a menudo para charlar un rato. La profesora Wang tiene razón: «A las personas no se las puede juzgar solo por fuera: hay que usar la cabeza, y también el corazón».",
+      "questions": [
+        { "q": "En las fotos de WeChat, ¿cómo parecen los amigos de Hugo?", "options": ["过得相当好", "很累", "不太开心"], "answer": 0 },
+        { "q": "¿Cómo estaba realmente Ana el día de la comida?", "options": ["明显很累", "非常精神", "很开心"], "answer": 0 },
+        { "q": "¿Por qué Ana solo sube fotos bonitas?", "options": ["不想让家里人知道", "她喜欢照相", "王老师让她发"], "answer": 0 },
+        { "q": "¿Qué hace Hugo desde ese día?", "options": ["常常给安娜打电话", "不看微信了", "每天跟安娜跑步"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

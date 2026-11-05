@@ -1,0 +1,136 @@
+{
+  "id": "b1-u07-l5",
+  "title": "Seguir adelante: V下去, V下来 y 一步一步",
+  "zh": "我会坚持下去",
+  "goal": "Decir que algo continúa hacia el futuro (坚持下去) o que ha llegado hasta hoy desde el pasado (留下来), y que se avanza poco a poco (一步一步地).",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "古", "pinyin": "gǔ", "es": "antiguo", "note": "古城 = ciudad antigua; 古人 = los antiguos." },
+    { "hanzi": "古代", "pinyin": "gǔdài", "es": "antigüedad; antiguo", "note": "Contrario de 现代." },
+    { "hanzi": "民间", "pinyin": "mínjiān", "es": "popular, del pueblo (tradición, cuento)", "note": "民间故事 = cuento popular." },
+    { "hanzi": "民族", "pinyin": "mínzú", "es": "nación, etnia", "note": "China reconoce 56 民族." },
+    { "hanzi": "中华民族", "pinyin": "Zhōnghuá mínzú", "es": "la nación china" },
+    { "hanzi": "文明", "pinyin": "wénmíng", "es": "civilización; civilizado, educado", "note": "En carteles: 文明乘车 = viaje con civismo." },
+    { "hanzi": "纪念", "pinyin": "jìniàn", "es": "conmemorar; recuerdo", "note": "纪念品 = recuerdo (de un viaje)." },
+    { "hanzi": "时代", "pinyin": "shídài", "es": "época, era" },
+    { "hanzi": "年代", "pinyin": "niándài", "es": "década; época", "note": "八十年代 = los años ochenta." },
+    { "hanzi": "世纪", "pinyin": "shìjì", "es": "siglo", "note": "二十一世纪 = siglo XXI." },
+    { "hanzi": "人类", "pinyin": "rénlèi", "es": "humanidad, ser humano" },
+    { "hanzi": "生存", "pinyin": "shēngcún", "es": "sobrevivir; supervivencia" }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "学汉语不容易，可是我会坚持下去。", "py": "Xué Hànyǔ bù róngyì, kěshì wǒ huì jiānchí xiaqu.", "es": "Estudiar chino no es fácil, pero voy a seguir adelante." },
+        { "zh": "这个节日从古代一直留下来了。", "py": "Zhège jiérì cóng gǔdài yìzhí liú xialai le.", "es": "Esta fiesta se ha conservado desde la antigüedad." },
+        { "zh": "我们一步一步地学。", "py": "Wǒmen yí bù yí bù de xué.", "es": "Aprendemos paso a paso." }
+      ]
+    },
+    { "type": "vocab", "title": "Lo que llega desde la antigüedad", "words": ["古", "古代", "民间", "民族", "中华民族", "文明", "纪念", "时代", "年代", "世纪", "人类", "生存"] },
+    {
+      "type": "phonetics-drill",
+      "title": "一步一步 y el neutro de 下去 / 下来",
+      "markdown": "**一步一步 yí bù yí bù**: 步 es cuarto tono, así que **los dos 一 pasan a segundo** (*yí*). Lo mismo en 一句一句 *yí jù yí jù*. El ritmo es regular, como pasos: ta-TA ta-TA. Y 地 detrás se lee **de**, neutro.\n\n**下去 / 下来** detrás de un verbo pierden el tono: 坚持下去 *jiānchí xiaqu*, 留下来 *liú xialai*. Fíjate en la vocal final: *-qu* (lejos de ti → hacia el futuro) frente a *-lai* (hacia ti → hasta el presente).\n\nPalabras de hoy: **世纪 shìjì** (dos cuartos, *sh* frente a *j*) y **时代 shídài** (segundo + cuarto); **民族 mínzú** (z sin aire).",
+      "items": [
+        { "audio": "一步一步", "options": ["yí bù yí bù", "yī bù yī bù", "yì bù yì bù"], "answer": 0, "explain": "一 + 4.º tono → yí." },
+        { "audio": "坚持下去", "prompt": "¿Qué oyes al final?", "options": ["xiaqu (下去)", "xialai (下来)"], "answer": 0 },
+        { "audio": "留下来", "prompt": "¿Qué oyes al final?", "options": ["xialai (下来)", "xiaqu (下去)"], "answer": 0 },
+        { "audio": "世纪", "options": ["shìjì", "shíjì", "sìjì"], "answer": 0, "explain": "Dos cuartos tonos; sh retrofleja." },
+        { "audio": "一句一句地读", "options": ["yí jù yí jù de dú", "yì jù yì jù de dú", "yí jù yí jù dì dú"], "answer": 0, "explain": "一 → yí delante de 句 (4.º) y 地 neutro (de)." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["古", "纪"],
+      "mnemonics": {
+        "古": "十 (diez) + 口 (boca): lo que ha pasado por diez bocas, de generación en generación → antiguo.",
+        "纪": "纟 (hilo) + 己 (da el sonido): el hilo con nudos para llevar la cuenta de los años → 世纪 (siglo), 纪念 (recordar)."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "Que siga: V下去 (hacia el futuro) y V下来 (hasta hoy)",
+      "markdown": "Igual que 起来, **下去** y **下来** tienen un sentido figurado de **tiempo**. Piensa en la regla de 来 / 去 (A2): 来 viene **hacia mí**, 去 se aleja **de mí**. Yo estoy en el **presente**:\n\n| | Dirección en el tiempo | Ejemplos |\n|---|---|---|\n| **V下去** | del presente **hacia el futuro**: seguir | 坚持下去, 说下去, 学下去, 住下去 |\n| **V下来** | del pasado **hasta el presente**: conservarse, quedar | 留下来, 坚持下来, 活下来, 生存下来 |\n\n- 你说**下去**！ = ¡sigue (hablando)! 我会坚持**下去** = voy a aguantar y seguir.\n- 这个节日**留下来**了 = esta fiesta se ha conservado (hasta hoy). 一年的课他都坚持**下来**了 = ha aguantado todo el curso.\n- Con el **potencial** (B1-3): 学**不下去**了 = ya no puedo seguir estudiando.\n- **Adjetivo + 下来**: algo se calma o se frena: 安静**下来**, 慢**下来**.\n\n**一步一步(地)**, **一句一句(地)** = «paso a paso, frase a frase»: número + clasificador repetido, **delante del verbo**, con 地 opcional.\n\n**Convención del esqueleto**: V下去 / V下来 sin objeto, el bloque entero en *Verbo 1*; 一步一步地 en *Adverbios*.",
+      "focus": ["verb1", "adverb"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "一定", "py": "yídìng" }, "aux": { "zh": "会", "py": "huì" }, "verb1": { "zh": "坚持下去", "py": "jiānchí xiaqu" } }, "end": "。", "es": "Seguro que voy a seguir adelante.", "esOrder": [{ "text": "Seguro que", "slot": "adverb" }, { "text": "voy a", "slot": "aux" }, { "text": "seguir adelante", "slot": "verb1" }] },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "说下去", "py": "shuō xiaqu" }, "particle": { "zh": "吧", "py": "ba" } }, "end": "。", "es": "Sigue hablando." },
+        { "slots": { "subject": { "zh": "这个节日", "py": "zhège jiérì" }, "adverb": { "zh": "从古代一直", "py": "cóng gǔdài yìzhí" }, "verb1": { "zh": "留下来", "py": "liú xialai" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Esta fiesta se ha conservado desde la antigüedad.", "esOrder": [{ "text": "Esta fiesta", "slot": "subject" }, { "text": "se ha conservado", "slot": "verb1" }, { "text": "desde la antigüedad", "slot": "adverb" }] },
+        { "slots": { "time0": { "zh": "这一年，", "py": "zhè yì nián," }, "subject": { "zh": "雨果", "py": "Yǔguǒ" }, "adverb": { "zh": "都", "py": "dōu" }, "verb1": { "zh": "坚持下来", "py": "jiānchí xialai" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Hugo ha aguantado todo este año." },
+        { "slots": { "subject": { "zh": "我们", "py": "wǒmen" }, "adverb": { "zh": "一步一步地", "py": "yí bù yí bù de" }, "verb1": { "zh": "学", "py": "xué" } }, "end": "。", "es": "Aprendemos paso a paso." },
+        { "slots": { "subject": { "zh": "王老师", "py": "Wáng lǎoshī" }, "adverb": { "zh": "一句一句地", "py": "yí jù yí jù de" }, "verb1": { "zh": "教我们", "py": "jiāo wǒmen" }, "verb2": { "zh": "读", "py": "dú" }, "object": { "zh": "课文", "py": "kèwén" } }, "end": "。", "es": "La profesora Wang nos enseña a leer el texto frase a frase." },
+        { "slots": { "subject": { "zh": "教室里", "py": "jiàoshì li" }, "adverb": { "zh": "慢慢", "py": "mànmàn" }, "verb1": { "zh": "安静下来", "py": "ānjìng xialai" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "El aula se fue quedando en silencio." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "真的", "py": "zhēn de" }, "verb1": { "zh": "学不下去", "py": "xué bu xiàqù" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "De verdad que ya no puedo seguir estudiando." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "adverb": { "zh": "还", "py": "hái" }, "aux": { "zh": "想", "py": "xiǎng" }, "verb1": { "zh": "学下去", "py": "xué xiaqu" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿Todavía quieres seguir estudiando?" }
+      ],
+      "mistakes": [
+        { "wrong": "这个节日从古代留下去了。", "right": "这个节日从古代留下来了。", "why": "Del pasado hasta hoy es 下来 (hacia mí, hacia el presente); 下去 mira al futuro." },
+        { "wrong": "你说下来吧。", "right": "你说下去吧。", "why": "«Sigue hablando» es seguir hacia adelante: 下去." },
+        { "wrong": "我们学一步一步。", "right": "我们一步一步地学。", "why": "一步一步 va delante del verbo, como un adverbio de modo." },
+        { "wrong": "我坚持下去学汉语。", "right": "我会坚持学下去。 / 我会坚持学汉语。", "why": "下去 va detrás del verbo que continúa, no delante de otro verbo." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "No puedo más",
+      "lines": [
+        { "speaker": "雨果", "zh": "王老师，汉字太难了，我真的学不下去了。", "py": "Wáng lǎoshī, Hànzì tài nán le, wǒ zhēn de xué bu xiàqù le.", "es": "Profesora Wang, los caracteres son demasiado difíciles: de verdad que no puedo seguir." },
+        { "speaker": "王老师", "zh": "别着急。你说下去，哪儿最难？", "py": "Bié zháojí. Nǐ shuō xiaqu, nǎr zuì nán?", "es": "Tranquilo. Sigue, ¿qué es lo más difícil?" },
+        { "speaker": "雨果", "zh": "我每天写，可是写了就忘。", "py": "Wǒ měi tiān xiě, kěshì xiě le jiù wàng.", "es": "Escribo todos los días, pero lo que escribo se me olvida enseguida." },
+        { "speaker": "王老师", "zh": "这很正常。学汉字要一步一步地学，不能着急。", "py": "Zhè hěn zhèngcháng. Xué Hànzì yào yí bù yí bù de xué, bù néng zháojí.", "es": "Es normal. Los caracteres hay que aprenderlos paso a paso, sin prisas." },
+        { "speaker": "雨果", "zh": "中国的孩子也觉得难吗？", "py": "Zhōngguó de háizi yě juéde nán ma?", "es": "¿A los niños chinos también les parecen difíciles?" },
+        { "speaker": "王老师", "zh": "当然！汉字从古代留下来，有几千年了。中国人也要学很多年。", "py": "Dāngrán! Hànzì cóng gǔdài liú xialai, yǒu jǐ qiān nián le. Zhōngguórén yě yào xué hěn duō nián.", "es": "¡Claro! Los caracteres vienen de la antigüedad, tienen miles de años. Los chinos también tardan muchos años en aprenderlos." },
+        { "speaker": "雨果", "zh": "几千年？那汉字真是中华民族的文明啊。", "py": "Jǐ qiān nián? Nà Hànzì zhēn shì Zhōnghuá mínzú de wénmíng a.", "es": "¿Miles de años? Entonces los caracteres son de verdad la civilización de la nación china." },
+        { "speaker": "王老师", "zh": "对。很多民间故事、古代的书都是用汉字写下来的。", "py": "Duì. Hěn duō mínjiān gùshi, gǔdài de shū dōu shì yòng Hànzì xiě xialai de.", "es": "Sí. Muchos cuentos populares y libros antiguos se pusieron por escrito con caracteres." },
+        { "speaker": "雨果", "zh": "这样说，我一定要学下去。", "py": "Zhèyàng shuō, wǒ yídìng yào xué xiaqu.", "es": "Visto así, tengo que seguir estudiando sí o sí." },
+        { "speaker": "王老师", "zh": "这一年你都坚持下来了，再坚持下去，就会越来越容易。", "py": "Zhè yì nián nǐ dōu jiānchí xialai le, zài jiānchí xiaqu, jiù huì yuèláiyuè róngyì.", "es": "Has aguantado todo este año; si sigues aguantando, cada vez te resultará más fácil." },
+        { "speaker": "雨果", "zh": "谢谢老师！我会坚持下去的。", "py": "Xièxie lǎoshī! Wǒ huì jiānchí xiaqu de.", "es": "¡Gracias, profesora! Voy a seguir adelante." }
+      ],
+      "notes": "写下来 = «poner por escrito, anotar»: aquí 下来 dice que algo queda fijado, otro uso muy frecuente (记下来 = apuntar). 我会坚持下去的: el 的 final da seguridad a la promesa (会…的 = seguro que…)."
+    },
+    { "type": "exercises", "count": 17, "bank": ["g-lai-qu", "g-complements", "g-modal-verbs"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "我" }, "adverb": { "zh": "一定" }, "aux": { "zh": "会" }, "verb1": { "zh": "坚持下去" } }, "end": "。", "es": "Seguro que voy a seguir adelante." }, "distractors": ["下来"] },
+        { "sentence": { "slots": { "subject": { "zh": "这个节日" }, "adverb": { "zh": "从古代一直" }, "verb1": { "zh": "留下来" }, "particle": { "zh": "了" } }, "end": "。", "es": "Esta fiesta se ha conservado desde la antigüedad." }, "distractors": ["下去"] },
+        { "sentence": { "slots": { "subject": { "zh": "王老师" }, "adverb": { "zh": "一句一句地" }, "verb1": { "zh": "教我们" }, "verb2": { "zh": "读" }, "object": { "zh": "课文" } }, "end": "。", "es": "La profesora Wang nos enseña a leer el texto frase a frase." } },
+        { "sentence": { "slots": { "time0": { "zh": "虽然汉字很难，" }, "subject": { "zh": "雨果" }, "adverb": { "zh": "还是每天一个一个地" }, "verb1": { "zh": "写" }, "object": { "zh": "新学的字" } }, "end": "。", "es": "Aunque los caracteres son difíciles, Hugo sigue escribiendo cada día, uno a uno, los que acaba de aprender." } },
+        { "sentence": { "slots": { "time0": { "zh": "自从来到中国以来，" }, "subject": { "zh": "我" }, "adverb": { "zh": "一步一步地" }, "verb1": { "zh": "坚持下来" }, "particle": { "zh": "了" } }, "end": "。", "es": "Desde que llegué a China he ido aguantando paso a paso." } }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "学汉语不容易，可是我会坚持下去。", "py": "Xué Hànyǔ bù róngyì, kěshì wǒ huì jiānchí xiaqu.", "es": "Estudiar chino no es fácil, pero voy a seguir adelante." },
+        { "zh": "这个节日从古代一直留下来了。", "py": "Zhège jiérì cóng gǔdài yìzhí liú xialai le.", "es": "Esta fiesta se ha conservado desde la antigüedad." },
+        { "zh": "学汉字要一步一步地学。", "py": "Xué Hànzì yào yí bù yí bù de xué.", "es": "Los caracteres hay que aprenderlos paso a paso." },
+        { "zh": "你说下去吧。", "py": "Nǐ shuō xiaqu ba.", "es": "Sigue hablando." }
+      ],
+      "respond": [
+        { "q": { "zh": "学汉语很难，你还想学下去吗？", "py": "Xué Hànyǔ hěn nán, nǐ hái xiǎng xué xiaqu ma?", "es": "El chino es difícil: ¿todavía quieres seguir estudiándolo?" }, "model": { "zh": "想！我会一步一步地学下去。", "py": "Xiǎng! Wǒ huì yí bù yí bù de xué xiaqu.", "es": "¡Sí! Voy a seguir estudiando paso a paso." } },
+        { "q": { "zh": "你们国家有什么从古代留下来的节日？", "py": "Nǐmen guójiā yǒu shénme cóng gǔdài liú xialai de jiérì?", "es": "¿Qué fiestas de tu país se conservan desde la antigüedad?" }, "model": { "zh": "西班牙有很多民间的节日，很多都是从古代留下来的。", "py": "Xībānyá yǒu hěn duō mínjiān de jiérì, hěn duō dōu shì cóng gǔdài liú xialai de.", "es": "En España hay muchas fiestas populares, y muchas vienen de la antigüedad." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Miles de años de caracteres",
+      "text": "汉字是人类很古老的一种文字，从古代一直留下来，到现在已经有三千多年了。很多民间故事、古代的书都是用汉字写下来的，所以有人说，汉字是中华民族文明的一部分。时代不断变化，二十世纪五十年代以后，很多汉字变得比以前简单了，可是人们还在用它们，汉字也一直生存下来了。雨果刚开始学汉字的时候，觉得太难了，有一天还对王老师说：“我学不下去了。”王老师笑着说：“别着急，一步一步地学。中国的孩子也要学很多年。”现在，雨果每天晚上都一个一个地写新学的字。这一年他都坚持下来了。他买了一本古代的书作纪念，他说：“我要学下去，以后要能看懂这本书。”",
+      "es": "Los caracteres chinos son una escritura antiquísima de la humanidad; se han conservado desde la antigüedad y ya tienen más de tres mil años. Muchos cuentos populares y libros antiguos se pusieron por escrito con caracteres; por eso hay quien dice que son parte de la civilización de la nación china. Las épocas cambian sin parar: a partir de los años cincuenta del siglo XX muchos caracteres se simplificaron, pero la gente sigue usándolos y los caracteres han sobrevivido. Cuando Hugo empezó a aprenderlos le parecían dificilísimos, y un día le dijo a la profesora Wang: «No puedo seguir». Ella le contestó sonriendo: «Tranquilo, paso a paso. Los niños chinos también tardan muchos años». Ahora Hugo escribe todas las noches, uno a uno, los caracteres nuevos. Ha aguantado todo el año. Se ha comprado un libro antiguo como recuerdo y dice: «Voy a seguir estudiando; algún día quiero poder leerlo».",
+      "questions": [
+        { "q": "¿Cuántos años tienen los caracteres chinos, según el texto?", "options": ["三千多年", "三百年", "五十年"], "answer": 0 },
+        { "q": "¿Qué pasó a partir de los años cincuenta del siglo XX?", "options": ["Muchos caracteres se simplificaron", "Dejaron de usarse", "Se inventaron todos"], "answer": 0 },
+        { "q": "¿Qué consejo le dio la profesora a Hugo?", "options": ["一步一步地学", "别学下去了", "每天写一百个字"], "answer": 0 },
+        { "q": "¿Para qué se ha comprado Hugo el libro antiguo?", "options": ["Como recuerdo y para leerlo algún día", "Para regalarlo", "Para la clase de mañana"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

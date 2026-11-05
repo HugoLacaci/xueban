@@ -1,0 +1,76 @@
+{
+  "id": "e0-03",
+  "title": "Iniciales 1: b p m f d t n l",
+  "zh": "声母（一）",
+  "goal": "Distinguir las iniciales aspiradas (p, t) de las no aspiradas (b, d) y pronunciar b p m f d t n l.",
+  "minutes": 13,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "不", "pinyin": "bù", "es": "no", "note": "b sin aire. Delante de un 4.º tono pasa a bú: 不怕 bú pà." },
+    { "hanzi": "他", "pinyin": "tā", "es": "él", "note": "t con un soplo de aire." },
+    { "hanzi": "你", "pinyin": "nǐ", "es": "tú", "note": "Ya lo conoces (lección 1). Fíjate ahora en la n." },
+    { "hanzi": "了", "pinyin": "le", "es": "(partícula: cambio o acción acabada)", "note": "De momento, solo dentro de 太好了." },
+    { "hanzi": "大", "pinyin": "dà", "es": "grande", "note": "d sin aire: la pareja de 他 tā." },
+    { "hanzi": "怕", "pinyin": "pà", "es": "tener miedo", "note": "p con aire: la pareja de 爸 bà." },
+    { "hanzi": "太", "pinyin": "tài", "es": "demasiado; muy", "note": "太好了 «¡genial!». La final ai la verás en la lección 6." }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "太好了！", "py": "Tài hǎo le!", "es": "¡Genial! (lit. «demasiado bien»)" },
+        { "zh": "不谢！", "py": "Bú xiè!", "es": "¡De nada! (lit. «no gracias»)" },
+        { "zh": "他不怕。", "py": "Tā bú pà.", "es": "Él no tiene miedo." }
+      ]
+    },
+    { "type": "vocab", "title": "Palabras con b p m f d t n l", "words": ["不", "他", "你", "了", "大", "怕", "太"] },
+    {
+      "type": "phonetics-drill",
+      "title": "Con aire o sin aire",
+      "markdown": "En chino, **b/p** y **d/t** no se distinguen por la vibración de la garganta (como en español «vaso/paso»), sino por el **aire**: la *p* y la *t* chinas salen con un soplo fuerte; la *b* y la *d*, sin soplo. Pon la mano delante de la boca mientras repites cada audio: con *p* y *t* notarás el aire en la palma.\n\nTambién hay un par **n/l**, que en español no da problemas, pero en algunas zonas de China sí, y un par **m/f** para calentar.",
+      "items": [
+        { "audio": "八", "options": ["bā", "pā"], "answer": 0, "explain": "八 bā «ocho»: sin soplo. 趴 pā «tumbarse boca abajo» llevaría aire." },
+        { "audio": "怕", "options": ["bà", "pà"], "answer": 1, "explain": "怕 pà «tener miedo»: con soplo. 爸 bà «papá» no lo lleva." },
+        { "audio": "大", "options": ["dà", "tà"], "answer": 0, "explain": "大 dà «grande»: sin soplo, como una «t» española muy limpia." },
+        { "audio": "他", "options": ["dā", "tā"], "answer": 1, "explain": "他 tā «él»: con soplo. 搭 dā sería sin aire." },
+        { "audio": "肚", "options": ["dù", "tù"], "answer": 0, "explain": "肚 dù «barriga» frente a 兔 tù «conejo»." },
+        { "audio": "兔", "options": ["dù", "tù"], "answer": 1, "explain": "兔 tù «conejo»: ahora sí, con aire." },
+        { "audio": "你", "options": ["nǐ", "lǐ"], "answer": 0, "explain": "n: la lengua toca detrás de los dientes y el aire sale por la nariz. l: el aire sale por los lados de la lengua." },
+        { "audio": "发", "options": ["fā", "mā", "pā"], "answer": 0, "explain": "发 fā «enviar»: f como en español, dientes de arriba sobre el labio de abajo." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["大"],
+      "mnemonics": {
+        "大": "Es 人 (persona) con los brazos abiertos de par en par: «¡así de grande!». Un trazo horizontal (los brazos) sobre las dos piernas de 人."
+      }
+    },
+    {
+      "type": "explain",
+      "title": "Aspiradas y no aspiradas: la clave de las iniciales",
+      "markdown": "En español distinguimos **p** y **b** porque en la *b* vibran las cuerdas vocales y en la *p* no. En chino eso **no importa**: ninguna de las dos vibra. Lo que las separa es el **soplo de aire** que sale justo después de la consonante.\n\n| Sin aire (no aspirada) | Con aire (aspirada) |\n|---|---|\n| **b** 爸 bà «papá» | **p** 怕 pà «tener miedo» |\n| **d** 大 dà «grande» | **t** 他 tā «él» |\n\n- La **b** china se parece más a nuestra «p» de «papá» que a nuestra «b»: labios cerrados, se abren de golpe, sin vibración y sin aire.\n- La **p** china es esa misma «p» seguida de un soplo, como si dijeras «p-jà» muy rápido. Igual que la *p* del inglés *pot*.\n- **d** y **t** funcionan igual, con la punta de la lengua detrás de los dientes de arriba.\n\n### La prueba del papel\n\nCoge una hoja de papel fina o un pañuelo y sujétalo por arriba a unos tres dedos de la boca.\n\n1. Di **pà** (怕): el papel tiene que **moverse** claramente.\n2. Di **bà** (爸): el papel tiene que quedarse **casi quieto**.\n3. Repite con **tā** (他) y **dà** (大).\n\nSi el papel no se mueve con *p* y *t*, sopla más. Si se mueve con *b* y *d*, estás echando aire de más. Al principio exagera; con la práctica el soplo se vuelve natural."
+    },
+    {
+      "type": "explain",
+      "title": "m, f, n, l y los errores típicos",
+      "markdown": "Las otras cuatro iniciales de hoy son fáciles para un hispanohablante:\n\n- **m** y **f**: como en español (妈 mā, 发 fā).\n- **n**: como en español (你 nǐ).\n- **l**: como la «l» de «luna», nunca como la «ll» (了 le, 绿 lǜ).\n\nCon estas iniciales aparecen ya algunas finales nuevas: **bo, po, mo, fo** suenan «buo, puo, muo, fuo» (la *o* lleva una «u» delante), y en **de, te, ne, le** la *e* es la «e» china de la lección 2 (了 le en tono neutro, muy breve).\n\n### Errores típicos de un hispanohablante\n\n1. **Suavizar la b y la d entre vocales.** En español, la *b* de «haba» y la *d* de «dedo» se convierten en sonidos suaves, casi sin cerrar la boca. En chino no: en 爸爸 *bàba* las dos *b* son igual de firmes, labios bien cerrados.\n2. **Hacer vibrar la b y la d.** Si las haces sonoras como en español se te entiende, pero suena extranjero. Piensa en «p» y «t» españolas.\n3. **Olvidar el soplo de p y t.** Es el error más importante: sin aire, 他 *tā* «él» acaba sonando como 搭 *dā*, y 怕 *pà* como 爸 *bà*.\n\n**Bonus**: 不 *bù* cambia a *bú* delante de un cuarto tono (不怕 *bú pà*, 不谢 *bú xiè*). La regla completa llega en la lección 11; por ahora, imita los audios."
+    },
+    { "type": "exercises", "count": 10, "bank": ["u0"] },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "太好了！", "py": "Tài hǎo le!", "es": "¡Genial!" },
+        { "zh": "不怕！", "py": "Bú pà!", "es": "¡No pasa nada! / ¡Sin miedo!" },
+        { "zh": "他不怕。", "py": "Tā bú pà.", "es": "Él no tiene miedo." },
+        { "zh": "太大了！", "py": "Tài dà le!", "es": "¡Es demasiado grande!" },
+        { "zh": "不谢！", "py": "Bú xiè!", "es": "¡De nada!" }
+      ],
+      "respond": [
+        { "q": { "zh": "谢谢！", "py": "Xièxie!", "es": "¡Gracias!" }, "model": { "zh": "不谢！", "py": "Bú xiè!", "es": "¡De nada!" } },
+        { "q": { "zh": "你怕不怕？", "py": "Nǐ pà bu pà?", "es": "¿Tienes miedo?" }, "model": { "zh": "不怕！", "py": "Bú pà!", "es": "¡No!" } }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

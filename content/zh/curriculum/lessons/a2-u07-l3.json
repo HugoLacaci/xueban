@@ -1,0 +1,133 @@
+{
+  "id": "a2-u07-l3",
+  "title": "Música mientras corro: 一边…一边…, 又…又… y 什么的",
+  "zh": "一边听音乐一边跑步",
+  "goal": "Contar dos cosas que haces a la vez (一边…一边…), dar dos cualidades juntas (又…又…) y cerrar una lista con 什么的.",
+  "minutes": 14,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "一边", "pinyin": "yìbiān", "es": "mientras, a la vez (一边A一边B)", "note": "Repetido delante de cada verbo: 一边吃饭一边看手机." },
+    { "hanzi": "又", "pinyin": "yòu", "es": "(又A又B) a la vez A y B; otra vez", "note": "又便宜又好看 = barato y además bonito." },
+    { "hanzi": "散步", "pinyin": "sànbù", "es": "pasear, dar un paseo", "note": "Separable: 散散步, 散了一会儿步." },
+    { "hanzi": "音乐会", "pinyin": "yīnyuèhuì", "es": "concierto (de música clásica, de orquesta)" },
+    { "hanzi": "演唱会", "pinyin": "yǎnchànghuì", "es": "concierto (de un cantante, de pop)" },
+    { "hanzi": "乐队", "pinyin": "yuèduì", "es": "grupo de música, banda; orquesta" },
+    { "hanzi": "歌手", "pinyin": "gēshǒu", "es": "cantante" },
+    { "hanzi": "歌迷", "pinyin": "gēmí", "es": "fan (de un cantante)", "note": "Como 球迷: 迷 = fascinado por algo." },
+    { "hanzi": "明星", "pinyin": "míngxīng", "es": "estrella, famoso", "note": "Lit. «estrella brillante»." },
+    { "hanzi": "流行", "pinyin": "liúxíng", "es": "de moda, popular; estar de moda", "note": "流行音乐 = música pop." },
+    { "hanzi": "游戏", "pinyin": "yóuxì", "es": "juego; videojuego", "note": "玩儿游戏 / 打游戏 = jugar a videojuegos." },
+    { "hanzi": "抖音", "pinyin": "Dǒuyīn", "es": "Douyin (el TikTok chino)", "note": "Fuera de China se llama TikTok; dentro, 抖音." }
+  ],
+  "extraVocab": ["抖音"],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "我常常一边听音乐一边跑步。", "py": "Wǒ chángcháng yìbiān tīng yīnyuè yìbiān pǎobù.", "es": "Suelo correr mientras escucho música." },
+        { "zh": "这个歌手又年轻又有名。", "py": "Zhège gēshǒu yòu niánqīng yòu yǒumíng.", "es": "Este cantante es joven y además famoso." },
+        { "zh": "周末我喜欢唱歌、跳舞什么的。", "py": "Zhōumò wǒ xǐhuan chànggē, tiàowǔ shénmede.", "es": "Los fines de semana me gusta cantar, bailar y cosas así." }
+      ]
+    },
+    { "type": "vocab", "title": "Música, famosos y tiempo libre", "words": ["一边", "又", "散步", "音乐会", "演唱会", "乐队", "歌手", "歌迷", "明星", "流行", "游戏", "抖音"] },
+    {
+      "type": "phonetics-drill",
+      "title": "一边 yìbiān, 乐 yuè / lè y el ritmo de 又…又…",
+      "markdown": "- **一边** *yìbiān*: 一 delante de primer tono pasa a **cuarto**.\n- **乐** tiene dos lecturas: **yuè** cuando es «música» (音乐, 乐队, 音乐会) y **lè** cuando es «alegría» (快乐).\n- **演唱会** *yǎnchànghuì*: *ch* con la lengua doblada atrás y con aire.\n- **流行** *liúxíng*: «l» clara (no «n») y *-ing* nasal, con la boca abierta al final.\n\n**Ritmo**: en 又A又B el acento cae en los **adjetivos**; los dos 又 van rápidos y suaves: *yòu* **piányi** *yòu* **hǎokàn**.",
+      "items": [
+        { "audio": "一边", "options": ["yìbiān", "yībiān", "yíbiān"], "answer": 0, "explain": "一 + primer tono → yì." },
+        { "audio": "乐队", "options": ["yuèduì", "lèduì", "yuèdǔi"], "answer": 0, "explain": "乐 = música → yuè." },
+        { "audio": "演唱会", "options": ["yǎnchànghuì", "yánchànghuì", "yǎnzhànghuì"], "answer": 0, "explain": "ch aspirada; 演 en tercer tono." },
+        { "audio": "流行", "options": ["liúxíng", "niúxíng", "liúxín"], "answer": 0, "explain": "l inicial y -ing final." },
+        { "audio": "又便宜又好看", "prompt": "¿Dónde cae el acento?", "options": ["En los adjetivos (便宜, 好看); los 又 van más flojos", "En los dos 又", "En la última sílaba"], "answer": 0 }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["边", "又"],
+      "mnemonics": {
+        "边": "辶 (camino) + 力: el borde del camino, un lado. 一边…一边… = «por un lado… por el otro»: dos cosas a la vez.",
+        "又": "Dibujo antiguo de una mano derecha: la mano que vuelve a coger algo → «otra vez», «y además»."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "Dos cosas a la vez: 一边…一边… y 又…又…",
+      "markdown": "**一边A一边B** = hacer A y B **al mismo tiempo** (el mismo sujeto). Cada 一边 va **justo delante de su verbo**: 我一边听音乐一边跑步. En español solemos decir «corro **mientras** escucho música», con el orden al revés.\n\n**又A又B** = tener **dos cualidades a la vez**: 又便宜又好看, 又年轻又有名. Los adjetivos van **sin 很**. También vale con verbos de estado: 又会唱又会跳.\n\n**什么的** se pone al final de una lista y equivale a «y cosas así», «etcétera»: 唱歌、跳舞什么的.\n\n**En el esqueleto**: 一边 + verbo 1 en *Verbo 1*, 一边 + verbo 2 en *Verbo 2*. Con 又…又…, cada 又 con su adjetivo, igual: *Verbo 1* = 又年轻, *Verbo 2* = 又有名. 什么的 va dentro del *Objeto*.",
+      "focus": ["verb1", "verb2"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "常常", "py": "chángcháng" }, "verb1": { "zh": "一边听音乐", "py": "yìbiān tīng yīnyuè" }, "verb2": { "zh": "一边跑步", "py": "yìbiān pǎobù" } }, "end": "。", "es": "Suelo correr mientras escucho música.", "esOrder": [{ "text": "Suelo", "slot": "adverb" }, { "text": "correr", "slot": "verb2" }, { "text": "mientras escucho música", "slot": "verb1" }] },
+        { "slots": { "subject": { "zh": "小李", "py": "Xiǎo Lǐ" }, "verb1": { "zh": "一边吃饭", "py": "yìbiān chīfàn" }, "verb2": { "zh": "一边看抖音", "py": "yìbiān kàn Dǒuyīn" } }, "end": "。", "es": "Xiao Li come mientras mira Douyin." },
+        { "slots": { "subject": { "zh": "这个乐队", "py": "zhège yuèduì" }, "verb1": { "zh": "又年轻", "py": "yòu niánqīng" }, "verb2": { "zh": "又有名", "py": "yòu yǒumíng" } }, "end": "。", "es": "Este grupo es joven y además famoso." },
+        { "slots": { "subject": { "zh": "那个歌手的歌", "py": "nàge gēshǒu de gē" }, "verb1": { "zh": "又好听", "py": "yòu hǎotīng" }, "verb2": { "zh": "又流行", "py": "yòu liúxíng" } }, "end": "。", "es": "Las canciones de ese cantante son bonitas y están de moda." },
+        { "slots": { "time0": { "zh": "周末", "py": "zhōumò" }, "subject": { "zh": "我", "py": "wǒ" }, "verb1": { "zh": "喜欢", "py": "xǐhuan" }, "object": { "zh": "唱歌、跳舞、玩儿游戏什么的", "py": "chànggē, tiàowǔ, wánr yóuxì shénmede" } }, "end": "。", "es": "Los fines de semana me gusta cantar, bailar, jugar a videojuegos y cosas así." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "adverb": { "zh": "别", "py": "bié" }, "verb1": { "zh": "一边走路", "py": "yìbiān zǒulù" }, "verb2": { "zh": "一边看手机", "py": "yìbiān kàn shǒujī" } }, "end": "！", "es": "¡No mires el móvil mientras caminas!" },
+        { "slots": { "subject": { "zh": "这个游戏", "py": "zhège yóuxì" }, "verb1": { "zh": "又不好玩儿", "py": "yòu bù hǎowánr" }, "verb2": { "zh": "又不便宜", "py": "yòu bù piányi" } }, "end": "。", "es": "Este videojuego ni es divertido ni es barato." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "adverb": { "zh": "常常", "py": "chángcháng" }, "verb1": { "zh": "一边做作业", "py": "yìbiān zuò zuòyè" }, "verb2": { "zh": "一边听音乐", "py": "yìbiān tīng yīnyuè" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿Sueles escuchar música mientras haces los deberes?" }
+      ],
+      "mistakes": [
+        { "wrong": "我一边跑步听音乐。", "right": "我一边跑步一边听音乐。", "why": "一边 se repite delante de cada verbo." },
+        { "wrong": "这件衣服又很便宜又很好看。", "right": "这件衣服又便宜又好看。", "why": "Con 又…又… los adjetivos no llevan 很." },
+        { "wrong": "我喜欢唱歌、跳舞什么的东西。", "right": "我喜欢唱歌、跳舞什么的。", "why": "什么的 cierra la lista: no hace falta añadir 东西 detrás." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Entradas para un concierto",
+      "lines": [
+        { "speaker": "安娜", "zh": "雨果，你在做什么呢？", "py": "Yǔguǒ, nǐ zài zuò shénme ne?", "es": "Hugo, ¿qué haces?" },
+        { "speaker": "雨果", "zh": "我一边散步一边看抖音呢。", "py": "Wǒ yìbiān sànbù yìbiān kàn Dǒuyīn ne.", "es": "Estoy paseando mientras miro Douyin." },
+        { "speaker": "安娜", "zh": "别一边走路一边看手机！你在看什么？", "py": "Bié yìbiān zǒulù yìbiān kàn shǒujī! Nǐ zài kàn shénme?", "es": "¡No mires el móvil mientras andas! ¿Qué estás viendo?" },
+        { "speaker": "雨果", "zh": "音乐、电影、游戏什么的。你看，这个歌手又年轻又有名。", "py": "Yīnyuè, diànyǐng, yóuxì shénmede. Nǐ kàn, zhège gēshǒu yòu niánqīng yòu yǒumíng.", "es": "Música, películas, videojuegos y cosas así. Mira, este cantante es joven y además famoso." },
+        { "speaker": "安娜", "zh": "他是很流行的明星！下个月他在上海有演唱会。", "py": "Tā shì hěn liúxíng de míngxīng! Xià ge yuè tā zài Shànghǎi yǒu yǎnchànghuì.", "es": "¡Es una estrella que está muy de moda! El mes que viene da un concierto en Shanghái." },
+        { "speaker": "雨果", "zh": "你是他的歌迷吗？", "py": "Nǐ shì tā de gēmí ma?", "es": "¿Eres fan suya?" },
+        { "speaker": "安娜", "zh": "对，我买了两张票。你跟我一起去吧！", "py": "Duì, wǒ mǎi le liǎng zhāng piào. Nǐ gēn wǒ yìqǐ qù ba!", "es": "Sí, he comprado dos entradas. ¡Vente conmigo!" },
+        { "speaker": "雨果", "zh": "好啊！我更喜欢乐队。上个星期我去了一个音乐会，那个乐队特别好。", "py": "Hǎo a! Wǒ gèng xǐhuan yuèduì. Shàng ge xīngqī wǒ qù le yí ge yīnyuèhuì, nàge yuèduì tèbié hǎo.", "es": "¡Vale! Aunque a mí me gustan más los grupos. La semana pasada fui a un concierto y el grupo era buenísimo." },
+        { "speaker": "安娜", "zh": "演唱会上也有乐队。我们可以一边听一边唱！", "py": "Yǎnchànghuì shang yě yǒu yuèduì. Wǒmen kěyǐ yìbiān tīng yìbiān chàng!", "es": "En el concierto también hay banda. ¡Podemos escuchar y cantar a la vez!" },
+        { "speaker": "雨果", "zh": "太好了。听完演唱会，我们去吃火锅吧！", "py": "Tài hǎo le. Tīng wán yǎnchànghuì, wǒmen qù chī huǒguō ba!", "es": "Genial. ¡Después del concierto vamos a comer hotpot!" }
+      ],
+      "notes": "音乐会 es el concierto «serio» (orquesta, música clásica, jazz); 演唱会 es el de un cantante o grupo pop. En China las entradas de los 演唱会 grandes se agotan en segundos y se compran en apps con DNI: ¡date prisa!"
+    },
+    { "type": "exercises", "count": 16, "bank": ["u12", "g-hen-adj", "g-ye-dou"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "他" }, "verb1": { "zh": "一边吃饭" }, "verb2": { "zh": "一边看抖音" } }, "end": "。", "es": "Come mientras mira Douyin." }, "distractors": ["一起"] },
+        { "sentence": { "slots": { "subject": { "zh": "这个歌手" }, "verb1": { "zh": "又年轻" }, "verb2": { "zh": "又有名" } }, "end": "。", "es": "Este cantante es joven y además famoso." }, "distractors": ["很"] },
+        { "sentence": { "slots": { "subject": { "zh": "我" }, "verb1": { "zh": "喜欢" }, "object": { "zh": "唱歌、跳舞什么的" } }, "end": "。", "es": "Me gusta cantar, bailar y cosas así." }, "distractors": ["东西"] },
+        { "sentence": { "slots": { "time0": { "zh": "每天晚上" }, "subject": { "zh": "我" }, "adverb": { "zh": "常常" }, "with": { "zh": "跟小李一起" }, "place": { "zh": "在校园里" }, "verb1": { "zh": "一边散步" }, "verb2": { "zh": "一边聊天" } }, "end": "。", "es": "Por las noches suelo pasear por el campus con Xiao Li mientras charlamos." } }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "我一边跑步一边听音乐。", "py": "Wǒ yìbiān pǎobù yìbiān tīng yīnyuè.", "es": "Corro mientras escucho música." },
+        { "zh": "这个乐队又年轻又有名。", "py": "Zhège yuèduì yòu niánqīng yòu yǒumíng.", "es": "Este grupo es joven y además famoso." },
+        { "zh": "我喜欢唱歌、跳舞什么的。", "py": "Wǒ xǐhuan chànggē, tiàowǔ shénmede.", "es": "Me gusta cantar, bailar y cosas así." },
+        { "zh": "别一边走路一边看手机！", "py": "Bié yìbiān zǒulù yìbiān kàn shǒujī!", "es": "¡No mires el móvil mientras andas!" }
+      ],
+      "respond": [
+        { "q": { "zh": "你喜欢一边做什么一边听音乐？", "py": "Nǐ xǐhuan yìbiān zuò shénme yìbiān tīng yīnyuè?", "es": "¿Qué te gusta hacer mientras escuchas música?" }, "model": { "zh": "我喜欢一边做饭一边听音乐。", "py": "Wǒ xǐhuan yìbiān zuòfàn yìbiān tīng yīnyuè.", "es": "Me gusta cocinar escuchando música." } },
+        { "q": { "zh": "你喜欢哪个歌手？", "py": "Nǐ xǐhuan nǎge gēshǒu?", "es": "¿Qué cantante te gusta?" }, "model": { "zh": "我喜欢一个西班牙歌手，他的歌又好听又流行。", "py": "Wǒ xǐhuan yí ge Xībānyá gēshǒu, tā de gē yòu hǎotīng yòu liúxíng.", "es": "Me gusta un cantante español: sus canciones son bonitas y están de moda." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "El concierto",
+      "text": "安娜是一个流行歌手的歌迷。这个歌手又年轻又有名，抖音上很多人都看他的视频。上个星期六，安娜和雨果去看了他的演唱会。演唱会上，歌手一边唱歌一边跳舞，大家一边听一边唱。雨果更喜欢音乐会和乐队，他觉得这个演唱会也很有意思。听完演唱会，他们一边散步一边聊天，十一点多回到了宿舍。",
+      "es": "Ana es fan de un cantante pop. El cantante es joven y además famoso, y mucha gente ve sus vídeos en Douyin. El sábado pasado, Ana y Hugo fueron a su concierto. En el concierto, el cantante cantaba mientras bailaba, y todo el público escuchaba y cantaba a la vez. Hugo prefiere los conciertos de orquesta y los grupos, pero este concierto también le pareció muy interesante. Después, volvieron paseando y charlando, y llegaron a la residencia pasadas las once.",
+      "questions": [
+        { "q": "¿De quién es fan Ana?", "options": ["De un cantante pop", "De un grupo", "De la profesora Wang"], "answer": 0 },
+        { "q": "¿Qué hacía el cantante en el concierto?", "options": ["一边唱歌一边跳舞", "一边跑步一边唱歌", "一边吃饭一边说话"], "answer": 0 },
+        { "q": "¿Qué prefiere Hugo?", "options": ["音乐会和乐队", "演唱会", "抖音"], "answer": 0 },
+        { "q": "¿A qué hora volvieron a la residencia?", "options": ["Pasadas las once", "A las diez", "A medianoche"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

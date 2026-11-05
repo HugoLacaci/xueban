@@ -1,0 +1,142 @@
+{
+  "id": "a1-u21-l2",
+  "title": "Una frase, tres formas: afirmar, negar y preguntar",
+  "zh": "你记不记得？",
+  "goal": "Transformar cualquier frase de A1 en negativa (不 / 没 / 别) y en pregunta (吗, A不A, V没V, interrogativo) sin cambiar el orden.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "记得", "pinyin": "jìde", "es": "acordarse, recordar", "note": "Es un estado: se niega con 不 (我不记得)." },
+    { "hanzi": "忘", "pinyin": "wàng", "es": "olvidar", "note": "Casi siempre con 了: 我忘了 = se me ha olvidado." },
+    { "hanzi": "忘记", "pinyin": "wàngjì", "es": "olvidar (más formal)", "note": "忘记了 = 忘了." },
+    { "hanzi": "得到", "pinyin": "dédào", "es": "conseguir, obtener", "note": "得到帮助 = recibir ayuda." },
+    { "hanzi": "小心", "pinyin": "xiǎoxīn", "es": "¡cuidado!; tener cuidado", "note": "路上小心！ = ¡ten cuidado por el camino!" },
+    { "hanzi": "快点儿", "pinyin": "kuài diǎnr", "es": "¡date prisa!, más rápido", "note": "快点儿走吧！ = ¡vámonos ya, rápido!" },
+    { "hanzi": "别", "pinyin": "bié", "es": "no (+ orden)", "note": "Repaso de la U19: 别忘了 = no te olvides." },
+    { "hanzi": "吗", "pinyin": "ma", "es": "(partícula de pregunta sí/no)", "note": "Repaso de la U1." }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "你记不记得他的名字？", "py": "Nǐ jì bu jìde tā de míngzi?", "es": "¿Te acuerdas de su nombre?" },
+        { "zh": "我不记得，我忘了。", "py": "Wǒ bú jìde, wǒ wàng le.", "es": "No me acuerdo: se me ha olvidado." },
+        { "zh": "别忘了你的伞！", "py": "Bié wàng le nǐ de sǎn!", "es": "¡No te olvides el paraguas!" }
+      ]
+    },
+    { "type": "vocab", "title": "Recordar, olvidar y avisar", "words": ["记得", "忘", "忘记", "得到", "小心", "快点儿", "别", "吗"] },
+    {
+      "type": "phonetics-drill",
+      "title": "La melodía de la pregunta",
+      "markdown": "En español la pregunta **sube al final**. En chino los tonos no se pueden cambiar, así que la pregunta se marca con **palabras** (吗, 呢, A不A, interrogativos) y con una melodía general **un poco más alta**, pero sin deformar el tono de la última sílaba.\n\n- 吗 es neutro: corto y ligero, no lo alargues como un «¿mmmaaa?».\n- En **A不A** el 不 se pronuncia **neutro y rápido**: 去不去 *qù bu qù*, 记不记得 *jì bu jìde*.\n- En **V没V** el 没 conserva su tono: 去没去 *qù méi qù*.",
+      "items": [
+        { "audio": "你记得吗？", "prompt": "¿Es una pregunta o una afirmación?", "options": ["Pregunta (吗 al final)", "Afirmación"], "answer": 0 },
+        { "audio": "记得", "options": ["jìde", "jìdé", "jǐde"], "answer": 0, "explain": "得 es neutro en 记得." },
+        { "audio": "忘记", "options": ["wàngjì", "wàngjī", "wángjì"], "answer": 0, "explain": "Dos cuartos tonos." },
+        { "audio": "小心", "options": ["xiǎoxīn", "xiǎoxīng", "shǎoxīn"], "answer": 0, "explain": "x plana y -n final." },
+        { "audio": "去不去", "options": ["qù bu qù", "qù bú qù", "qù méi qù"], "answer": 0, "explain": "En A不A el 不 va neutro." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["忘", "记"],
+      "mnemonics": {
+        "忘": "亡 (perderse, desaparecer) + 心 (corazón, mente): lo que se pierde de la mente = olvidar.",
+        "记": "讠 (palabra) + 己 (uno mismo): guardar las palabras para uno mismo = recordar, apuntar. Está en 记住, 笔记, 日记."
+      }
+    },
+    {
+      "type": "explain",
+      "title": "Tabla de transformaciones",
+      "markdown": "**Regla de oro**: para negar o preguntar **no se cambia el orden** de la frase. Solo se añade (o se cambia) una pieza en un hueco.\n\n| Afirmativa | Negativa | Pregunta |\n|---|---|---|\n| 我**是**学生。 | 我**不**是学生。 | 你是学生**吗**？ / 你**是不是**学生？ |\n| 我**有**伞。 | 我**没**有伞。 | 你有伞**吗**？ / 你**有没有**伞？ |\n| 我**想**去。 | 我**不**想去。 | 你**想不想**去？ |\n| 他**去**医院**了**。 | 他**没**去医院。 (¡sin 了!) | 他去医院**了吗**？ / 他**去没去**医院？ |\n| 他**在**看书。 | 他**没在**看书。 | 他在看书**吗**？ / 他在**做什么**？ |\n| 下雨**了**。 | **不**下雨**了**。 (ya no) | 下雨**了吗**？ |\n| 你喝冷水。 | **别**喝冷水！ (orden) | — |\n\nY la pregunta con **interrogativo** (U13): la palabra interrogativa va **en el hueco de la respuesta**, y entonces **sin 吗**: 你**什么时候**去？ → 我**明天**去。"
+    },
+    {
+      "type": "skeleton",
+      "title": "Una frase, tres formas",
+      "markdown": "Mira cómo en las tres formas los huecos no se mueven: solo cambia el **adverbio** (不 / 没 / 别) o la **partícula** (吗 / 了).\n\n- **记得** es un estado → 不记得.\n- **忘** casi siempre va con 了 (se me ha olvidado), y su orden negativa es **别忘了**: «¡que no se te olvide!».\n- **快点儿** va delante del verbo como un adverbio: 快点儿走！",
+      "focus": ["adverb", "particle"],
+      "sentences": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "verb1": { "zh": "记得", "py": "jìde" }, "object": { "zh": "他的名字", "py": "tā de míngzi" } }, "end": "。", "es": "Me acuerdo de su nombre." },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "verb1": { "zh": "忘了", "py": "wàng le" }, "object": { "zh": "他的手机号码", "py": "tā de shǒujī hàomǎ" } }, "end": "。", "es": "Se me ha olvidado su número de móvil." },
+        { "slots": { "subject": { "zh": "他", "py": "tā" }, "time": { "zh": "昨天", "py": "zuótiān" }, "verb1": { "zh": "去医院", "py": "qù yīyuàn" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Ayer fue al hospital." },
+        { "slots": { "subject": { "zh": "我们", "py": "wǒmen" }, "adverb": { "zh": "快点儿", "py": "kuài diǎnr" }, "verb1": { "zh": "走", "py": "zǒu" }, "particle": { "zh": "吧", "py": "ba" } }, "end": "！", "es": "¡Vámonos rápido!" },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "verb1": { "zh": "得到了", "py": "dédào le" }, "object": { "zh": "很多帮助", "py": "hěn duō bāngzhù" } }, "end": "。", "es": "He recibido mucha ayuda." },
+        { "slots": { "time0": { "zh": "过马路的时候", "py": "guò mǎlù de shíhou" }, "subject": { "zh": "你", "py": "nǐ" }, "aux": { "zh": "要", "py": "yào" }, "verb1": { "zh": "小心", "py": "xiǎoxīn" } }, "end": "。", "es": "Al cruzar la calle tienes que tener cuidado." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "不", "py": "bú" }, "verb1": { "zh": "记得", "py": "jìde" }, "object": { "zh": "他的名字", "py": "tā de míngzi" } }, "end": "。", "es": "No me acuerdo de su nombre." },
+        { "slots": { "subject": { "zh": "他", "py": "tā" }, "time": { "zh": "昨天", "py": "zuótiān" }, "adverb": { "zh": "没", "py": "méi" }, "verb1": { "zh": "去医院", "py": "qù yīyuàn" } }, "end": "。", "es": "Ayer no fue al hospital." },
+        { "slots": { "adverb": { "zh": "别", "py": "bié" }, "verb1": { "zh": "忘了", "py": "wàng le" }, "object": { "zh": "你的伞", "py": "nǐ de sǎn" } }, "end": "！", "es": "¡No te olvides el paraguas!" }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "记得", "py": "jìde" }, "object": { "zh": "他的名字", "py": "tā de míngzi" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿Te acuerdas de su nombre?" },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "记不记得", "py": "jì bu jìde" }, "object": { "zh": "他的名字", "py": "tā de míngzi" } }, "end": "？", "es": "¿Te acuerdas o no de su nombre?" },
+        { "slots": { "subject": { "zh": "他", "py": "tā" }, "time": { "zh": "昨天", "py": "zuótiān" }, "verb1": { "zh": "去没去", "py": "qù méi qù" }, "object": { "zh": "医院", "py": "yīyuàn" } }, "end": "？", "es": "¿Fue ayer al hospital o no?" },
+        { "slots": { "subject": { "zh": "他", "py": "tā" }, "time": { "zh": "什么时候", "py": "shénme shíhou" }, "verb1": { "zh": "去医院", "py": "qù yīyuàn" }, "particle": { "zh": "了", "py": "le" } }, "end": "？", "es": "¿Cuándo fue al hospital?" }
+      ],
+      "mistakes": [
+        { "wrong": "我没记得。", "right": "我不记得。", "why": "记得 es un estado (como 知道): se niega con 不." },
+        { "wrong": "他昨天没去了医院。", "right": "他昨天没去医院。", "why": "Con 没 desaparece el 了." },
+        { "wrong": "你去没去医院吗？", "right": "你去没去医院？", "why": "A不A / V没V ya son preguntas: no se añade 吗." },
+        { "wrong": "你什么时候去医院吗？", "right": "你什么时候去医院？", "why": "Con interrogativo (什么时候, 哪儿, 谁…) no se usa 吗." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Prisas antes de clase",
+      "lines": [
+        { "speaker": "小李", "zh": "雨果，快点儿！要上课了！", "py": "Yǔguǒ, kuài diǎnr! Yào shàngkè le!", "es": "¡Hugo, date prisa! ¡Que empieza la clase!" },
+        { "speaker": "雨果", "zh": "等一下儿！我的手机呢？", "py": "Děng yíxiàr! Wǒ de shǒujī ne?", "es": "¡Espera un momento! ¿Y mi móvil?" },
+        { "speaker": "小李", "zh": "在桌子上。别忘了你的伞，外边下雨了。", "py": "Zài zhuōzi shang. Bié wàng le nǐ de sǎn, wàibian xià yǔ le.", "es": "En la mesa. No te olvides el paraguas: fuera está lloviendo." },
+        { "speaker": "雨果", "zh": "好。你记得今天有考试吗？", "py": "Hǎo. Nǐ jìde jīntiān yǒu kǎoshì ma?", "es": "Vale. ¿Te acuerdas de que hoy hay examen?" },
+        { "speaker": "小李", "zh": "记得！你昨天学习了没有？", "py": "Jìde! Nǐ zuótiān xuéxí le méiyǒu?", "es": "¡Claro! ¿Estudiaste ayer?" },
+        { "speaker": "雨果", "zh": "学习了。我在网上得到了很多好题。", "py": "Xuéxí le. Wǒ zài wǎngshang dédào le hěn duō hǎo tí.", "es": "Sí. Conseguí un montón de ejercicios buenos en internet." },
+        { "speaker": "小李", "zh": "太好了。王老师的名字你记不记得？考试要写。", "py": "Tài hǎo le. Wáng lǎoshī de míngzi nǐ jì bu jìde? Kǎoshì yào xiě.", "es": "Genial. ¿Te acuerdas del nombre completo de la profesora Wang? Hay que escribirlo en el examen." },
+        { "speaker": "雨果", "zh": "我不记得，我忘了！", "py": "Wǒ bú jìde, wǒ wàng le!", "es": "No me acuerdo: ¡se me ha olvidado!" },
+        { "speaker": "小李", "zh": "没关系，我告诉你。走吧，路上小心，地上有水。", "py": "Méi guānxi, wǒ gàosu nǐ. Zǒu ba, lù shang xiǎoxīn, dì shang yǒu shuǐ.", "es": "No pasa nada, te lo digo yo. Vamos; cuidado por el camino, que el suelo está mojado." }
+      ],
+      "notes": "王老师的名字你记不记得？ pone el objeto delante como tema (lo que ya se ha mencionado o importa más). Es muy frecuente en la lengua hablada; el orden básico sigue siendo 你记不记得王老师的名字？"
+    },
+    { "type": "exercises", "count": 18, "bank": ["g-bu-mei", "g-ma", "g-question-words", "g-le", "g-mei"] },
+    {
+      "type": "sentence-builder",
+      "title": "Construye la frase completa",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "我" }, "time": { "zh": "昨天晚上" }, "adverb": { "zh": "没" }, "with": { "zh": "跟安娜一起" }, "place": { "zh": "在图书馆" }, "verb1": { "zh": "学习" } }, "end": "。", "es": "Anoche no estudié con Ana en la biblioteca." }, "distractors": ["了", "不"] },
+        { "sentence": { "slots": { "subject": { "zh": "你" }, "time": { "zh": "明天上午" }, "aux": { "zh": "想不想" }, "with": { "zh": "跟我们一起" }, "verb1": { "zh": "坐地铁去商场" }, "verb2": { "zh": "买" }, "object": { "zh": "东西" } }, "end": "？", "es": "¿Quieres venir mañana por la mañana con nosotros en metro al centro comercial a comprar cosas?" }, "distractors": ["吗"] },
+        { "sentence": { "slots": { "time0": { "zh": "上课的时候" }, "subject": { "zh": "你们" }, "adverb": { "zh": "别" }, "verb1": { "zh": "用手机" }, "verb2": { "zh": "发" }, "object": { "zh": "微信" } }, "end": "。", "es": "Durante la clase no mandéis WeChats con el móvil." }, "distractors": ["没"] },
+        { "sentence": { "slots": { "subject": { "zh": "他" }, "time": { "zh": "昨天下午" }, "verb1": { "zh": "去没去" }, "object": { "zh": "医院" } }, "end": "？", "es": "¿Fue ayer por la tarde al hospital o no?" }, "distractors": ["吗", "了"] },
+        { "sentence": { "slots": { "subject": { "zh": "我" }, "adverb": { "zh": "不" }, "verb1": { "zh": "记得" }, "object": { "zh": "王老师的手机号码" } }, "end": "。", "es": "No me acuerdo del número de móvil de la profesora Wang." }, "distractors": ["没"] },
+        { "sentence": { "slots": { "subject": { "zh": "你们" }, "time": { "zh": "明天上午" }, "adverb": { "zh": "最好" }, "with": { "zh": "跟王老师一起" }, "verb1": { "zh": "去医院" }, "verb2": { "zh": "看" }, "object": { "zh": "病" } }, "end": "。", "es": "Mañana por la mañana más vale que vayáis al médico con la profesora Wang." } }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "你记不记得他的名字？", "py": "Nǐ jì bu jìde tā de míngzi?", "es": "¿Te acuerdas de su nombre?" },
+        { "zh": "我不记得，我忘了。", "py": "Wǒ bú jìde, wǒ wàng le.", "es": "No me acuerdo: se me ha olvidado." },
+        { "zh": "别忘了你的伞！", "py": "Bié wàng le nǐ de sǎn!", "es": "¡No te olvides el paraguas!" },
+        { "zh": "快点儿，要上课了！", "py": "Kuài diǎnr, yào shàngkè le!", "es": "¡Rápido, que empieza la clase!" },
+        { "zh": "路上小心！", "py": "Lù shang xiǎoxīn!", "es": "¡Cuidado por el camino!" }
+      ],
+      "respond": [
+        { "q": { "zh": "你去医院了吗？", "py": "Nǐ qù yīyuàn le ma?", "es": "¿Has ido al hospital?" }, "model": { "zh": "没去，我明天去。", "py": "Méi qù, wǒ míngtiān qù.", "es": "No; voy mañana." } },
+        { "q": { "zh": "你记得我的生日吗？", "py": "Nǐ jìde wǒ de shēngrì ma?", "es": "¿Te acuerdas de mi cumpleaños?" }, "model": { "zh": "记得！十二月三号。", "py": "Jìde! Shí'èr yuè sān hào.", "es": "¡Claro! El 3 de diciembre." } },
+        { "q": { "zh": "你想不想去看电影？", "py": "Nǐ xiǎng bu xiǎng qù kàn diànyǐng?", "es": "¿Te apetece ir al cine?" }, "model": { "zh": "想！我们什么时候去？", "py": "Xiǎng! Wǒmen shénme shíhou qù?", "es": "¡Sí! ¿Cuándo vamos?" } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Un día de despistes",
+      "text": "今天雨果忘了很多东西。早上他没吃早饭，也忘了拿伞。中午下雨了，他没有伞，小李有伞，他们一起走。下午他不记得王老师的手机号码，没给她打电话。晚上小李问他：“你明天还忘不忘？”雨果说：“不忘了！”",
+      "es": "Hoy a Hugo se le han olvidado muchas cosas. Por la mañana no ha desayunado y también se le ha olvidado coger el paraguas. A mediodía se ha puesto a llover y no tenía paraguas; Xiao Li sí tenía, así que se han ido juntos. Por la tarde no se acordaba del número de la profesora Wang y no la ha llamado. Por la noche Xiao Li le ha preguntado: «¿Mañana también se te van a olvidar las cosas?». Hugo ha dicho: «¡Ya no se me olvidan más!».",
+      "questions": [
+        { "q": "¿Qué no ha hecho Hugo por la mañana?", "options": ["没吃早饭", "没上课", "没起床"], "answer": 0 },
+        { "q": "¿Quién tenía paraguas?", "options": ["小李", "王老师", "安娜"], "answer": 0 },
+        { "q": "¿Por qué no ha llamado a la profesora?", "options": ["No se acordaba del número", "No tenía batería", "No tenía tiempo"], "answer": 0 },
+        { "q": "¿Qué significa 不忘了?", "options": ["Ya no se me va a olvidar", "No se me ha olvidado", "No te olvides"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

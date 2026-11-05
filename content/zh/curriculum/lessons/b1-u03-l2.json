@@ -1,0 +1,136 @@
+{
+  "id": "b1-u03-l2",
+  "title": "¿Lo ves bien? 看得见 / 看不清楚",
+  "zh": "我看不清楚",
+  "goal": "Decir si ves u oyes bien en clase con 看得见 / 看不见, 看得清楚 / 看不清楚, 听得见 / 听不见, y preguntarlo con la forma V得C V不C.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "图", "pinyin": "tú", "es": "dibujo, imagen, gráfico", "note": "地图 = mapa; 这张图 = esta imagen." },
+    { "hanzi": "显示", "pinyin": "xiǎnshì", "es": "mostrar, aparecer (en una pantalla)", "note": "电脑上显示…… = en el ordenador sale…" },
+    { "hanzi": "文字", "pinyin": "wénzì", "es": "texto escrito, letras, escritura", "note": "图和文字 = imágenes y texto." },
+    { "hanzi": "标题", "pinyin": "biāotí", "es": "título (de un texto o artículo)" },
+    { "hanzi": "题目", "pinyin": "tímù", "es": "enunciado, pregunta (de un ejercicio); tema", "note": "做题目 = hacer los ejercicios." },
+    { "hanzi": "试题", "pinyin": "shìtí", "es": "preguntas de examen" },
+    { "hanzi": "复印", "pinyin": "fùyìn", "es": "fotocopiar", "note": "复印一下 = fotocopiar (rápido); 复印了三张 = he hecho tres copias." },
+    { "hanzi": "教材", "pinyin": "jiàocái", "es": "libro de texto, material didáctico" },
+    { "hanzi": "单元", "pinyin": "dānyuán", "es": "unidad, tema (de un libro)", "note": "第三单元 = la unidad 3." },
+    { "hanzi": "预习", "pinyin": "yùxí", "es": "preparar la lección (antes de clase)", "note": "预习 antes; 复习 después." },
+    { "hanzi": "功课", "pinyin": "gōngkè", "es": "deberes, tareas (de clase)", "note": "Más escolar que 作业; se oye mucho: 做功课." },
+    { "hanzi": "记录", "pinyin": "jìlù", "es": "anotar, tomar nota; apuntes, registro" },
+    { "hanzi": "集中", "pinyin": "jízhōng", "es": "concentrar(se), reunir", "note": "集中注意力 = concentrarse; 上课要集中 = hay que estar concentrado." }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "黑板上的字我看不清楚。", "py": "Hēibǎn shang de zì wǒ kàn bu qīngchu.", "es": "No veo bien las letras de la pizarra." },
+        { "zh": "后面的同学，你们听得见吗？", "py": "Hòumiàn de tóngxué, nǐmen tīng de jiàn ma?", "es": "Los de atrás, ¿me oís?" },
+        { "zh": "你们看得见看不见？", "py": "Nǐmen kàn de jiàn kàn bu jiàn?", "es": "¿Lo veis o no?" }
+      ]
+    },
+    { "type": "vocab", "title": "La pizarra, el libro y los deberes", "words": ["图", "显示", "文字", "标题", "题目", "试题", "复印", "教材", "单元", "预习", "功课", "记录", "集中"] },
+    {
+      "type": "phonetics-drill",
+      "title": "Ritmo de 看不清楚 y la pausa de 看得见看不见",
+      "markdown": "**看不清楚 kàn bu qīngchu**: cuatro sílabas con ritmo **fuerte – débil – fuerte – débil**. 不 se apaga y **楚** también es neutro en 清楚.\n\nEn la pregunta **看得见看不见？** hay dos bloques: *kàn de jiàn | kàn bu jiàn*. La pausa (muy corta) va **entre los dos bloques**, y la voz no sube al final como en español: el chino pregunta con la estructura, no con la entonación.\n\n**显示 xiǎnshì**: *x* con la lengua plana detrás de los dientes de abajo; *sh* con la lengua hacia atrás.",
+      "items": [
+        { "audio": "看不见", "options": ["kàn bu jiàn", "kàn bù jiān", "kān bu jiàn"], "answer": 0, "explain": "不 ligero y dos cuartos tonos plenos en 看 y 见." },
+        { "audio": "看得清楚", "options": ["kàn de qīngchu", "kàn dé qīngchǔ", "kàn de qìngchu"], "answer": 0, "explain": "得 neutro y 楚 neutro en 清楚." },
+        { "audio": "看得见看不见？", "prompt": "¿Dónde está la pausa natural?", "options": ["看得见 | 看不见", "看 | 得见看不见", "看得 | 见看不见"], "answer": 0 },
+        { "audio": "显示", "options": ["xiǎnshì", "xiānshì", "xiǎnsì"], "answer": 0, "explain": "Tercero + cuarto; x plana y sh retrofleja." },
+        { "audio": "复印", "options": ["fùyìn", "fúyìn", "fùyīn"], "answer": 0, "explain": "Dos cuartos tonos: el primero cae solo a media altura." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["图", "显"],
+      "mnemonics": {
+        "图": "囗 (un marco) + 冬 dentro: lo que se dibuja dentro de un marco, una imagen o un plano.",
+        "显": "日 (sol) encima de 业: lo que queda a la vista cuando le da el sol → mostrar, ser evidente (显示)."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "Ver y oír: 看得见, 看不清楚, 听不见",
+      "markdown": "Con los sentidos hay dos resultados que se usan mucho:\n\n- **见**: llegar a percibir. 看**得**见 = lo veo (llego a verlo), 听**不**见 = no lo oigo.\n- **清楚**: con claridad. 看**得**清楚 = lo veo bien, 看**不**清楚 = no lo veo bien (está borroso, muy pequeño…).\n\n看不见 es que no lo ves en absoluto; 看不清楚, que lo ves pero mal.\n\n**Pregunta V得C V不C**: 看得见看不见？ 听得清楚听不清楚？ Es como 好不好, pero con el bloque entero. En el esqueleto, igual que en la lección anterior: el verbo en *Verbo 1* y **得见看不见** entero en *Complemento*.\n\nRecuerda: el objeto suele ir delante como tema (黑板上的字我看不清楚); si va detrás, V得C entero en *Verbo 1* (安娜看得见黑板上的题目).",
+      "focus": ["complement"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "黑板上的字我", "py": "hēibǎn shang de zì wǒ" }, "verb1": { "zh": "看", "py": "kàn" }, "complement": { "zh": "得见", "py": "de jiàn" } }, "end": "。", "es": "Veo las letras de la pizarra.", "esOrder": [{ "text": "Veo", "slot": "verb1" }, { "text": "las letras de la pizarra", "slot": "subject" }] },
+        { "slots": { "subject": { "zh": "老师的声音我们", "py": "lǎoshī de shēngyīn wǒmen" }, "verb1": { "zh": "听", "py": "tīng" }, "complement": { "zh": "得见", "py": "de jiàn" } }, "end": "。", "es": "Oímos la voz de la profesora." },
+        { "slots": { "subject": { "zh": "电脑上显示的图大家", "py": "diànnǎo shang xiǎnshì de tú dàjiā" }, "adverb": { "zh": "都", "py": "dōu" }, "verb1": { "zh": "看", "py": "kàn" }, "complement": { "zh": "得清楚", "py": "de qīngchu" } }, "end": "。", "es": "Todos ven bien la imagen que sale en el ordenador." },
+        { "slots": { "subject": { "zh": "安娜", "py": "Ānnà" }, "verb1": { "zh": "看得见", "py": "kàn de jiàn" }, "object": { "zh": "黑板上的题目", "py": "hēibǎn shang de tímù" } }, "end": "。", "es": "Ana ve los enunciados de la pizarra." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "这些文字我", "py": "zhèxiē wénzì wǒ" }, "verb1": { "zh": "看", "py": "kàn" }, "complement": { "zh": "不清楚", "py": "bu qīngchu" } }, "end": "。", "es": "Este texto no lo veo bien." },
+        { "slots": { "subject": { "zh": "后面的同学", "py": "hòumiàn de tóngxué" }, "verb1": { "zh": "听", "py": "tīng" }, "complement": { "zh": "不见", "py": "bu jiàn" } }, "end": "。", "es": "Los de atrás no oyen." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "黑板上的标题你", "py": "hēibǎn shang de biāotí nǐ" }, "verb1": { "zh": "看", "py": "kàn" }, "complement": { "zh": "得见", "py": "de jiàn" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿Ves el título de la pizarra?" },
+        { "slots": { "subject": { "zh": "后面的同学", "py": "hòumiàn de tóngxué" }, "verb1": { "zh": "听", "py": "tīng" }, "complement": { "zh": "得清楚听不清楚", "py": "de qīngchu tīng bu qīngchu" } }, "end": "？", "es": "¿Los de atrás oís bien o no?" }
+      ],
+      "mistakes": [
+        { "wrong": "我看不见清楚。", "right": "我看不清楚。 / 我看不见。", "why": "见 y 清楚 son dos resultados distintos: el potencial lleva uno solo." },
+        { "wrong": "黑板上的字我不看得见。", "right": "黑板上的字我看不见。", "why": "En el potencial, 不 va en medio (V不C), nunca delante del verbo." },
+        { "wrong": "我看不见了黑板。", "right": "我看不见黑板了。", "why": "El potencial no lleva 了 detrás; si es un cambio de situación, 了 va al final de la frase." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Desde la última fila",
+      "lines": [
+        { "speaker": "王老师", "zh": "今天我们学第三单元。大家都预习了吗？", "py": "Jīntiān wǒmen xué dì sān dānyuán. Dàjiā dōu yùxí le ma?", "es": "Hoy damos la unidad 3. ¿La habéis preparado todos?" },
+        { "speaker": "安娜", "zh": "预习了。教材上的题目我都做了。", "py": "Yùxí le. Jiàocái shang de tímù wǒ dōu zuò le.", "es": "Sí. He hecho todos los ejercicios del libro." },
+        { "speaker": "王老师", "zh": "很好。请看电脑上显示的图。后面的同学，你们看得见看不见？", "py": "Hěn hǎo. Qǐng kàn diànnǎo shang xiǎnshì de tú. Hòumiàn de tóngxué, nǐmen kàn de jiàn kàn bu jiàn?", "es": "Muy bien. Mirad la imagen del ordenador. Los de atrás, ¿la veis?" },
+        { "speaker": "雨果", "zh": "图看得见，可是上面的文字太小了，我看不清楚。", "py": "Tú kàn de jiàn, kěshì shàngmiàn de wénzì tài xiǎo le, wǒ kàn bu qīngchu.", "es": "La imagen sí, pero el texto es demasiado pequeño: no lo veo bien." },
+        { "speaker": "王老师", "zh": "那你坐前面吧。现在看得清楚吗？", "py": "Nà nǐ zuò qiánmiàn ba. Xiànzài kàn de qīngchu ma?", "es": "Pues siéntate delante. ¿Ahora lo ves bien?" },
+        { "speaker": "雨果", "zh": "看得清楚了，谢谢老师。", "py": "Kàn de qīngchu le, xièxie lǎoshī.", "es": "Ahora sí, gracias, profesora." },
+        { "speaker": "大卫", "zh": "老师，您的声音有点儿小，我们听不见。", "py": "Lǎoshī, nín de shēngyīn yǒudiǎnr xiǎo, wǒmen tīng bu jiàn.", "es": "Profesora, habla un poco bajo: no la oímos." },
+        { "speaker": "王老师", "zh": "好，我大声说。这个标题大家看得懂吗？", "py": "Hǎo, wǒ dàshēng shuō. Zhège biāotí dàjiā kàn de dǒng ma?", "es": "Vale, hablo más alto. ¿Entendéis este título?" },
+        { "speaker": "安娜", "zh": "看得懂。“试题”就是考试的题目，对吗？", "py": "Kàn de dǒng. “Shìtí” jiù shì kǎoshì de tímù, duì ma?", "es": "Sí. «试题» son las preguntas de un examen, ¿no?" },
+        { "speaker": "王老师", "zh": "对。这些试题我复印了，下课以后每个人拿一张。", "py": "Duì. Zhèxiē shìtí wǒ fùyìn le, xiàkè yǐhòu měi ge rén ná yì zhāng.", "es": "Exacto. Las he fotocopiado: al acabar la clase, coged una hoja cada uno." },
+        { "speaker": "王老师", "zh": "上课的时候请大家集中注意力，把重要的内容记录在本子上。", "py": "Shàngkè de shíhou qǐng dàjiā jízhōng zhùyìlì, bǎ zhòngyào de nèiróng jìlù zài běnzi shang.", "es": "En clase, concentraos y apuntad en el cuaderno lo importante." },
+        { "speaker": "大卫", "zh": "老师，今天的功课多吗？", "py": "Lǎoshī, jīntiān de gōngkè duō ma?", "es": "Profesora, ¿hay muchos deberes hoy?" },
+        { "speaker": "王老师", "zh": "不多。做完第三单元的题目就可以了。", "py": "Bù duō. Zuòwán dì sān dānyuán de tímù jiù kěyǐ le.", "es": "No muchos. Con que terminéis los ejercicios de la unidad 3 basta." }
+      ],
+      "notes": "En las aulas chinas es habitual que el profesor proyecte el libro (教材) en la pantalla del ordenador y pregunte 看得见吗？ / 听得见吗？ Si te sientas atrás y no ves, pide sin miedo: 老师，我看不清楚，可以坐前面吗？"
+    },
+    { "type": "exercises", "count": 16, "bank": ["g-complements", "g-ma", "g-question-words"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "黑板上的字我" }, "verb1": { "zh": "看" }, "complement": { "zh": "不清楚" } }, "end": "。", "es": "No veo bien las letras de la pizarra." }, "distractors": ["没"] },
+        { "sentence": { "slots": { "subject": { "zh": "后面的同学" }, "verb1": { "zh": "听" }, "complement": { "zh": "得见听不见" } }, "end": "？", "es": "¿Los de atrás oís o no?" }, "distractors": ["吗"] },
+        { "sentence": { "slots": { "subject": { "zh": "安娜" }, "verb1": { "zh": "看得见" }, "object": { "zh": "黑板上的题目" } }, "end": "。", "es": "Ana ve los enunciados de la pizarra." } },
+        { "sentence": { "slots": { "subject": { "zh": "坐在后面的同学" }, "adverb": { "zh": "也" }, "verb1": { "zh": "看得清楚" }, "object": { "zh": "电脑上显示的图和文字" } }, "end": "。", "es": "Los compañeros que se sientan atrás también ven bien las imágenes y el texto del ordenador." }, "distractors": ["不"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "黑板上的字我看不清楚。", "py": "Hēibǎn shang de zì wǒ kàn bu qīngchu.", "es": "No veo bien las letras de la pizarra." },
+        { "zh": "老师，我们听不见。", "py": "Lǎoshī, wǒmen tīng bu jiàn.", "es": "Profesora, no la oímos." },
+        { "zh": "你们看得见看不见？", "py": "Nǐmen kàn de jiàn kàn bu jiàn?", "es": "¿Lo veis o no?" },
+        { "zh": "现在看得清楚了。", "py": "Xiànzài kàn de qīngchu le.", "es": "Ahora sí lo veo bien." }
+      ],
+      "respond": [
+        { "q": { "zh": "黑板上的字你看得清楚吗？", "py": "Hēibǎn shang de zì nǐ kàn de qīngchu ma?", "es": "¿Ves bien las letras de la pizarra?" }, "model": { "zh": "看不清楚，字太小了。我可以坐前面吗？", "py": "Kàn bu qīngchu, zì tài xiǎo le. Wǒ kěyǐ zuò qiánmiàn ma?", "es": "No muy bien, son muy pequeñas. ¿Me puedo sentar delante?" } },
+        { "q": { "zh": "我的声音你们听得见听不见？", "py": "Wǒ de shēngyīn nǐmen tīng de jiàn tīng bu jiàn?", "es": "¿Me oís o no?" }, "model": { "zh": "听得见，可是听不太清楚。", "py": "Tīng de jiàn, kěshì tīng bu tài qīngchu.", "es": "Sí, pero no muy bien." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Sin gafas",
+      "text": "雨果的眼睛有点儿近视。星期一上课的时候，他忘了带眼镜，又坐在教室的最后面。王老师用电脑给大家看第三单元的图和文字，雨果只看得见图，上面的文字他一点儿也看不清楚。黑板上的题目他也看不见，只好问旁边的安娜。安娜说：“你坐前面吧，前面看得清楚。”下课以前，王老师给大家复印了一些试题，还说：“今天的功课是做完这些题目，再预习第四单元。”那天雨果上课的时候不太集中，没有记录老师说的重要内容。下课以后，他借了安娜的本子，把她的记录复印了一下。安娜笑着说：“明天别忘了带眼镜，也别坐在最后面了！”",
+      "es": "Hugo es un poco miope. El lunes se olvidó las gafas en clase y, encima, se sentó al fondo del aula. La profesora Wang enseñó en el ordenador las imágenes y el texto de la unidad 3: Hugo solo veía las imágenes; el texto no lo distinguía nada bien. Tampoco veía los enunciados de la pizarra, así que tuvo que preguntarle a Ana, que estaba a su lado. Ana le dijo: «Siéntate delante; desde ahí se ve bien». Antes de terminar, la profesora fotocopió unas preguntas de examen para todos y dijo: «Los deberes de hoy son terminar estos ejercicios y preparar la unidad 4». Ese día Hugo no estuvo muy concentrado y no apuntó lo importante que dijo la profesora. Después de clase le pidió a Ana el cuaderno y le fotocopió los apuntes. Ana le dijo riéndose: «Mañana no te olvides las gafas, ¡y no te sientes al fondo!».",
+      "questions": [
+        { "q": "¿Por qué no veía bien Hugo?", "options": ["忘了带眼镜，又坐在最后面", "电脑坏了", "老师的字太大了"], "answer": 0 },
+        { "q": "¿Qué veía Hugo en el ordenador?", "options": ["只看得见图", "图和文字都看得清楚", "什么也看不见"], "answer": 0 },
+        { "q": "¿Cuáles son los deberes?", "options": ["做完试题，预习第四单元", "复印安娜的本子", "记录老师的话"], "answer": 0 },
+        { "q": "¿Qué fotocopió Hugo?", "options": ["安娜的记录", "教材", "第四单元"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

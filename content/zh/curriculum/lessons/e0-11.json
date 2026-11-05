@@ -1,0 +1,76 @@
+{
+  "id": "e0-11",
+  "title": "Pares de tonos y cambios de tono",
+  "zh": "双音节与变调",
+  "goal": "Encadenar dos tonos seguidos y aplicar los cambios de tono: 3+3, 一, 不, medio tercer tono, neutro y erhua.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "你好", "pinyin": "nǐ hǎo", "es": "hola", "note": "Se escribe nǐ hǎo, pero se dice ní hǎo (3 + 3 → 2 + 3)." },
+    { "hanzi": "一个", "pinyin": "yí ge", "es": "uno, un (+ cosa o persona)", "note": "一 pasa a yí delante de 4.º tono (个 es gè; en la frase, neutro)." },
+    { "hanzi": "不是", "pinyin": "bú shì", "es": "no ser", "note": "不 pasa a bú delante de 4.º tono." },
+    { "hanzi": "不客气", "pinyin": "bú kèqi", "es": "de nada", "note": "La respuesta a 谢谢. 不 + kè (4.º) → bú." },
+    { "hanzi": "一起", "pinyin": "yìqǐ", "es": "juntos", "note": "一 pasa a yì delante de 1.º, 2.º y 3.º tono." },
+    { "hanzi": "哪儿", "pinyin": "nǎr", "es": "¿dónde?", "note": "Erhua: 儿 no forma sílaba, se une como una r final. Típico del norte (Pekín); en el sur se dice 哪里 nǎli." }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "谢谢！不客气！", "py": "Xièxie! Bú kèqi!", "es": "¡Gracias! ¡De nada!" },
+        { "zh": "你去哪儿？", "py": "Nǐ qù nǎr?", "es": "¿Adónde vas?" },
+        { "zh": "他不是老师。", "py": "Tā bú shì lǎoshī.", "es": "Él no es profesor." }
+      ]
+    },
+    { "type": "vocab", "title": "Palabras que cambian de tono", "words": ["你好", "一个", "不是", "不客气", "一起", "哪儿"] },
+    {
+      "type": "phonetics-drill",
+      "title": "Lo que se escribe y lo que se dice",
+      "markdown": "El pinyin de los diccionarios da el **tono de cita** de cada carácter, pero al hablar algunos tonos **cambian** por los vecinos. Solo 一 y 不 cambian también en la escritura; el 3 + 3 se escribe igual y se dice distinto. Escucha y elige **lo que se oye**.",
+      "items": [
+        { "audio": "你好", "prompt": "¿Qué tonos oyes?", "options": ["3.º + 3.º", "2.º + 3.º", "1.º + 3.º"], "answer": 1, "explain": "Dos terceros seguidos: el primero pasa a segundo. Se escribe nǐ hǎo." },
+        { "audio": "一个", "prompt": "¿Cómo suena 一?", "options": ["yī", "yí", "yì"], "answer": 1, "explain": "Delante de 4.º tono (gè), 一 sube: yí ge." },
+        { "audio": "一起", "prompt": "¿Cómo suena 一?", "options": ["yī", "yí", "yì"], "answer": 2, "explain": "Delante de 3.er tono, 一 cae: yìqǐ." },
+        { "audio": "不是", "prompt": "¿Cómo suena 不?", "options": ["bù", "bú"], "answer": 1, "explain": "Delante de 4.º tono, 不 sube: bú shì." },
+        { "audio": "不好", "prompt": "¿Cómo suena 不?", "options": ["bù", "bú"], "answer": 0, "explain": "Delante de 3.er tono, 不 se queda en 4.º: bù hǎo." },
+        { "audio": "谢谢", "prompt": "¿Y la segunda sílaba?", "options": ["4.º, igual que la primera", "Neutra: corta y más baja"], "answer": 1, "explain": "En las palabras dobladas, la segunda sílaba suele ser neutra: xièxie." },
+        { "audio": "哪儿", "options": ["nǎr (una sílaba)", "nǎ ér (dos sílabas)"], "answer": 0, "explain": "El erhua une la r a la sílaba anterior: nǎr." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["好"],
+      "mnemonics": {
+        "好": "女 (mujer) + 子 (niño): una madre con su hijo, la imagen de lo bueno. Significa «bueno, bien»: 你好 es, literalmente, «tú bien»."
+      }
+    },
+    {
+      "type": "explain",
+      "title": "Los 20 pares de tonos",
+      "markdown": "La mayoría de las palabras chinas tienen **dos sílabas**, así que lo que de verdad hay que dominar son las **combinaciones de dos tonos**: 4 × 4 = 16, más 4 terminadas en neutro = **20 pares**.\n\nAlgunos ejemplos con palabras que ya conoces:\n\n| | + 1.º | + 2.º | + 3.º | + 4.º | + neutro |\n|---|---|---|---|---|---|\n| **1.º** | 西安 *Xī'ān* | 中国 *Zhōngguó* | 喝水 *hē shuǐ* | 他是 *tā shì* | 妈妈 *māma* |\n| **2.º** | 十七 *shíqī* | 国王 *guówáng* | 十五 *shíwǔ* | 十四 *shísì* | 学生 *xuésheng* |\n| **3.º** | 北京 *Běijīng* | 女儿 *nǚ'ér* | 你好 *nǐ hǎo* | 买卖 *mǎimài* | 买了 *mǎi le* |\n| **4.º** | 大家 *dàjiā* | 大学 *dàxué* | 热水 *rè shuǐ* | 再见 *zàijiàn* | 爸爸 *bàba* |\n\n(En las filas está el tono de la primera sílaba; en las columnas, el de la segunda.)\n\nNo hace falta memorizar la tabla: el módulo siguiente te deja **oír y repetir cada par**. Practica primero los que más cuestan a los hispanohablantes: **2 + 3**, **3 + 2** y **4 + 4** (los dos cuartos caen, pero el segundo empieza un poco más bajo)."
+    },
+    { "type": "tone-pairs" },
+    {
+      "type": "explain",
+      "title": "Los cambios de tono (sandhi)",
+      "markdown": "### 1. 3.º + 3.º → 2.º + 3.º\nDos terceros tonos seguidos son incómodos: el primero se convierte en **segundo**. 你好 se escribe *nǐ hǎo* y se dice **ní hǎo**. Con tres seguidos, depende de cómo se agrupan las palabras; de momento, basta con no decir nunca dos terceros completos seguidos.\n\n### 2. El medio tercer tono\nDelante de 1.º, 2.º, 4.º o neutro, el tercer tono **solo baja** (21) y no sube: 老师 *lǎoshī* = «baja» + «alto». Es el tercer tono más frecuente.\n\n### 3. 一 yī\n- Solo, en números y ordinales: **yī** (一, 十一, 第一).\n- Delante de 4.º tono (o de un neutro que era 4.º): **yí** → 一个 *yí ge*.\n- Delante de 1.º, 2.º o 3.º: **yì** → 一天 *yì tiān*, 一起 *yìqǐ*.\n\n### 4. 不 bù\n- Normalmente es **bù**: 不好 *bù hǎo*, 不吃 *bù chī*.\n- Delante de 4.º tono pasa a **bú**: 不是 *bú shì*, 不去 *bú qù*, 不客气 *bú kèqi*.\n\nEn Xuébàn **一 y 不 se escriben ya con el cambio** (yí ge, bú shì), como en la mayoría de los libros; el 3 + 3 se escribe sin cambio.\n\n### 5. Neutro en palabras dobladas\nCuando una palabra repite la sílaba, la segunda suele ser **neutra**: 妈妈 *māma*, 爸爸 *bàba*, 哥哥 *gēge*, 谢谢 *xièxie*.\n\n### 6. Erhua básico\nEn el norte, y sobre todo en Pekín, se añade una **r** al final de algunas sílabas: 哪儿 *nǎr* (¿dónde?), 这儿 *zhèr* (aquí). El 儿 **no es una sílaba más**: la lengua se dobla hacia atrás al final de la sílaba anterior. En Shanghái lo oirás poco (allí se dice 哪里 *nǎli*), pero tienes que entenderlo."
+    },
+    { "type": "exercises", "count": 10, "bank": ["u0"] },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "你好！", "py": "Nǐ hǎo!", "es": "¡Hola!" },
+        { "zh": "谢谢！不客气！", "py": "Xièxie! Bú kèqi!", "es": "¡Gracias! ¡De nada!" },
+        { "zh": "他不是老师。", "py": "Tā bú shì lǎoshī.", "es": "Él no es profesor." },
+        { "zh": "一个中国朋友。", "py": "Yí ge Zhōngguó péngyou.", "es": "Un amigo chino." },
+        { "zh": "你去哪儿？", "py": "Nǐ qù nǎr?", "es": "¿Adónde vas?" }
+      ],
+      "respond": [
+        { "q": { "zh": "谢谢！", "py": "Xièxie!", "es": "¡Gracias!" }, "model": { "zh": "不客气！", "py": "Bú kèqi!", "es": "¡De nada!" } },
+        { "q": { "zh": "他去哪儿？", "py": "Tā qù nǎr?", "es": "¿Adónde va?" }, "model": { "zh": "他去北京。", "py": "Tā qù Běijīng.", "es": "Va a Pekín." } },
+        { "q": { "zh": "他是老师？", "py": "Tā shì lǎoshī?", "es": "¿Es profesor?" }, "model": { "zh": "不是，他是学生。", "py": "Bú shì, tā shì xuésheng.", "es": "No, es estudiante." } }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

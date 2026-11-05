@@ -1,0 +1,114 @@
+{
+  "id": "reglas-pinyin",
+  "title": "Reglas de escritura del pinyin",
+  "zh": "拼写规则",
+  "order": 22,
+  "icon": "SpellCheck",
+  "summary": "Las siete reglas para escribir bien el pinyin: y/w, la ü, las abreviaturas, la tilde, el apóstrofo, las mayúsculas y las palabras juntas.",
+  "kind": "reference",
+  "reviewed": false,
+  "sections": [
+    {
+      "id": "siete-reglas",
+      "title": "Las siete reglas en una tabla",
+      "unlockedBy": "e0-07",
+      "markdown": "### Chuleta\n\n| # | Regla | Qué dice | Ejemplos |\n|---|---|---|---|\n| 1 | **y / w** | Una sílaba no empieza por i, u, ü sueltas: se escribe con y / w (que no suenan) | 一 yī, 五 wǔ, 有 yǒu, 我 wǒ, 鱼 yú |\n| 2 | **ü** | Pierde los puntos tras **j q x y**; los conserva tras **n l** | 去 qù, 鱼 yú · 女 nǚ, 绿 lǜ |\n| 3 | **Abreviaturas** | Tras consonante: iou → **iu**, uei → **ui**, uen → **un** | 六 liù, 对 duì, 水 shuǐ, 春 chūn |\n| 4 | **Tilde** | Sobre **a**; si no hay, **o**; si no, **e**; en iu / ui, sobre la **segunda** | hǎo, yǒu, xiè · liù, duì |\n| 5 | **Apóstrofo** | Antes de una sílaba que empieza por a, o, e dentro de la palabra | 西安 Xī'ān, 女儿 nǚ'ér, 十二 shí'èr |\n| 6 | **Mayúsculas** | Inicio de frase y nombres propios; apellido y nombre separados | Zhōngguó, Běijīng, Wáng Míng |\n| 7 | **Palabras juntas** | Se escribe por palabras, no por sílabas | lǎoshī, péngyou, xuésheng |\n\n> ⚠️ **Ojo**: las reglas cambian la **escritura**, no el sonido. *liù* suena «liou» y *duì* suena «duei».",
+      "examples": [
+        {
+          "zh": "六",
+          "py": "liù",
+          "es": "seis",
+          "note": "iou → iu; tilde sobre la segunda vocal."
+        },
+        {
+          "zh": "对，是六。",
+          "py": "Duì, shì liù.",
+          "es": "Sí, es el seis.",
+          "note": "uei → ui; mayúscula al empezar."
+        },
+        {
+          "zh": "他有水。",
+          "py": "Tā yǒu shuǐ.",
+          "es": "Tiene agua.",
+          "note": "you (i → y); shuǐ (uei → ui)."
+        },
+        {
+          "zh": "女儿",
+          "py": "nǚ'ér",
+          "es": "hija",
+          "note": "ü con puntos tras n; apóstrofo antes de er."
+        },
+        {
+          "zh": "他去西安。",
+          "py": "Tā qù Xī'ān.",
+          "es": "Va a Xi'an.",
+          "note": "qù sin puntos; Xī'ān con apóstrofo y mayúscula."
+        }
+      ]
+    },
+    {
+      "id": "y-w-en-detalle",
+      "title": "y / w en detalle",
+      "unlockedBy": "e0-07",
+      "markdown": "### Cuando no hay inicial\n\n| Sin inicial | Se escribe | Cómo |\n|---|---|---|\n| i, in, ing | **yi, yin, ying** | se añade y |\n| ia, ie, iao, iou, ian, iang, iong | **ya, ye, yao, you, yan, yang, yong** | i → y |\n| u | **wu** | se añade w |\n| ua, uo, uai, uei, uan, uen, uang, ueng | **wa, wo, wai, wei, wan, wen, wang, weng** | u → w |\n| ü, üe, üan, ün | **yu, yue, yuan, yun** | se añade y y se quitan los puntos |\n\nSin consonante delante **no se abrevia**: se escribe *you*, *wei*, *wen*, nunca *yiu*, *wui* ni *wun*.\n\n> ❌ **Error típico**: leer *yi* como «lli» o *wu* como «güu». La y y la w no suenan como consonantes.",
+      "examples": [
+        {
+          "zh": "一、五",
+          "py": "Yī, wǔ",
+          "es": "Uno, cinco.",
+          "note": "i → yi; u → wu."
+        },
+        {
+          "zh": "有",
+          "py": "yǒu",
+          "es": "tener; haber",
+          "note": "iou sin inicial → you."
+        },
+        {
+          "zh": "我",
+          "py": "wǒ",
+          "es": "yo",
+          "note": "uo sin inicial → wo."
+        },
+        {
+          "zh": "鱼",
+          "py": "yú",
+          "es": "pez; pescado",
+          "note": "ü sin inicial → yu, sin puntos."
+        }
+      ]
+    },
+    {
+      "id": "donde-va-la-tilde",
+      "title": "Dónde va la tilde",
+      "unlockedBy": "e0-07",
+      "markdown": "### El orden a > o > e\n\n1. ¿Hay **a**? Ahí: hǎo, xiān, kuài.\n2. Si no, ¿hay **o**? Ahí: yǒu, guó, zhōng.\n3. Si no, ¿hay **e**? Ahí: xiè, Běi, xué.\n4. Si no hay ninguna: va sobre la **única vocal** (nǐ, qù, nǚ) o, en **iu** y **ui**, sobre la **segunda** (liù, duì, shuǐ).\n\nSobre la *i*, la tilde **sustituye al punto**: ī í ǐ ì.\n\n> 💡 **Truco**: la tilde va en la vocal más abierta. Busca a, luego o, luego e; solo si no hay ninguna miras si es iu o ui.\n\n### Si escribes con números\n\n*ma1 ma2 ma3 ma4* = mā má mǎ mà; *ma5* o *ma* = neutro. Escribe *nv3* para nǚ (la v hace de ü).",
+      "examples": [
+        {
+          "zh": "好",
+          "py": "hǎo",
+          "es": "bueno; bien",
+          "note": "Hay a: va en la a."
+        },
+        {
+          "zh": "有",
+          "py": "yǒu",
+          "es": "tener; haber",
+          "note": "No hay a; hay o."
+        },
+        {
+          "zh": "谢谢",
+          "py": "xièxie",
+          "es": "gracias",
+          "note": "Ni a ni o; hay e."
+        },
+        {
+          "zh": "水",
+          "py": "shuǐ",
+          "es": "agua",
+          "note": "ui: sobre la segunda."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,813 @@
+{
+  "id": "adjetivos",
+  "title": "Adjetivos",
+  "zh": "形容词",
+  "order": 5,
+  "icon": "Palette",
+  "summary": "En chino el adjetivo ya es un verbo: 很 + adjetivo sin 是, su negación y su pregunta, la escala de grados, 好 + verbo, el adjetivo delante del nombre con 的, 一点儿 / 有点儿, la comparación con 比, el complemento de grado con 得 y los adjetivos doblados.",
+  "kind": "topic",
+  "reviewed": false,
+  "sections": [
+    {
+      "id": "adjetivo-predicado",
+      "title": "El adjetivo es el predicado: 很 + adjetivo, sin 是",
+      "unlockedBy": "a1-u08-l1",
+      "markdown": "### Un adjetivo que ya trae el «ser / estar»\n\n累 no es solo «cansado»: es **estar cansado**. 难 es **ser difícil**. Por eso **no llevan 是**:\n\n| ✗ Calco del español | ✓ Chino |\n|---|---|\n| 我是累。 | 我**很**累。 |\n| 汉语是难。 | 汉语**很**难。 |\n| 这个是很贵。 | 这个**很**贵。 |\n\n- **很** es casi obligatorio en una afirmación normal. Sin él, 我累 suena a frase a medias o a contraste («yo sí estoy cansado; tú no»).\n- Dicho sin énfasis, 很 apenas significa «muy»: 我很好 = «estoy bien». Para un «muy» de verdad, acentúalo o usa otro grado.\n- En el esqueleto, **很** va en el hueco de los adverbios y el **adjetivo** en el del verbo.\n\n### Ser y estar, resueltos\n\n| Después del sujeto viene… | Chino | Ejemplo |\n|---|---|---|\n| un nombre (qué o quién es) | 是 | 我是学生。 |\n| un lugar (dónde está) | 在 | 我在家。 |\n| un adjetivo (cómo es o está) | 很 + adjetivo | 我很忙。 |\n\n> 💡 **Truco**: piensa en 很 como el «pues» de «pues estoy cansado»: no pesa, pero sin él la frase cojea.",
+      "sourceNotes": ["zh-grammar-hen-adj", "zh-contrast-ser-estar", "zh-errors-hispanohablantes"],
+      "skeleton": {
+        "focus": ["adverb", "verb1"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ", "es": "yo" },
+              "adverb": { "zh": "很", "py": "hěn" },
+              "verb1": { "zh": "累", "py": "lèi", "es": "estoy cansado" }
+            },
+            "end": "。",
+            "es": "Estoy cansado.",
+            "esOrder": [
+              { "text": "Estoy cansado", "slot": "verb1" }
+            ]
+          },
+          {
+            "slots": {
+              "subject": { "zh": "汉语", "py": "Hànyǔ", "es": "el chino" },
+              "adverb": { "zh": "很", "py": "hěn" },
+              "verb1": { "zh": "难", "py": "nán", "es": "es difícil" }
+            },
+            "end": "。",
+            "es": "El chino es difícil."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "我的房子", "py": "wǒ de fángzi", "es": "mi casa" },
+              "adverb": { "zh": "很", "py": "hěn" },
+              "verb1": { "zh": "小", "py": "xiǎo", "es": "es pequeña" }
+            },
+            "end": "。",
+            "es": "Mi casa es pequeña."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "我很累。", "py": "Wǒ hěn lèi.", "es": "Estoy cansado." },
+        { "zh": "汉语很难。", "py": "Hànyǔ hěn nán.", "es": "El chino es difícil." },
+        { "zh": "王老师很忙，我很累。", "py": "Wáng lǎoshī hěn máng, wǒ hěn lèi.", "es": "La profesora Wang está ocupada y yo, cansado." },
+        { "zh": "我很忙，他也很忙。", "py": "Wǒ hěn máng, tā yě hěn máng.", "es": "Estoy ocupado, y él también.", "note": "也 va delante de 很." }
+      ]
+    },
+    {
+      "id": "negar-preguntar",
+      "title": "Negar y preguntar con un adjetivo",
+      "unlockedBy": "a1-u08-l2",
+      "markdown": "### 很 solo vive en la afirmativa\n\n| Afirmativa | Negativa | Pregunta |\n|---|---|---|\n| 我**很**忙。 | 我**不**忙。 | 你忙**吗**？ / 你**忙不忙**？ |\n\n- **Negativa**: 不 + adjetivo, sin 很. Para suavizar: **不太** + adjetivo (no muy): 不太干净.\n- **Pregunta**: adjetivo + 吗, o **A不A** (忙不忙, 漂不漂亮), sin 很 en ninguna de las dos.\n- **怎么样** (¿qué tal?) ocupa el sitio del adjetivo: 你的学校**怎么样**？ —很好！\n\n> ❌ **Error típico**: ✗你很忙吗？ → 你忙吗？ (con 很 preguntas «¿muy ocupado?»). Y ✗我很不忙 → 我不忙 / 我不太忙.",
+      "sourceNotes": ["zh-grammar-hen-adj", "zh-grammar-tai-le", "zh-question-a-not-a", "zh-question-zenmeyang"],
+      "skeleton": {
+        "focus": ["adverb", "verb1", "particle"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "我的房子", "py": "wǒ de fángzi" },
+              "adverb": { "zh": "不太", "py": "bú tài", "es": "no muy" },
+              "verb1": { "zh": "干净", "py": "gānjìng", "es": "limpia" }
+            },
+            "end": "。",
+            "es": "Mi casa no está muy limpia."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "你", "py": "nǐ" },
+              "verb1": { "zh": "忙不忙", "py": "máng bu máng", "es": "estás ocupado" }
+            },
+            "end": "？",
+            "es": "¿Estás ocupado?"
+          },
+          {
+            "slots": {
+              "subject": { "zh": "你", "py": "nǐ" },
+              "verb1": { "zh": "累", "py": "lèi" },
+              "particle": { "zh": "吗", "py": "ma" }
+            },
+            "end": "？",
+            "es": "¿Estás cansado?"
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "我不累。", "py": "Wǒ bú lèi.", "es": "No estoy cansado." },
+        { "zh": "你忙不忙？—不太忙。", "py": "Nǐ máng bu máng? — Bú tài máng.", "es": "¿Estás ocupado? —No mucho." },
+        { "zh": "上海漂亮吗？—很漂亮。", "py": "Shànghǎi piàoliang ma? — Hěn piàoliang.", "es": "¿Es bonita Shanghái? —Mucho." },
+        { "zh": "你的学校怎么样？", "py": "Nǐ de xuéxiào zěnmeyàng?", "es": "¿Qué tal tu universidad?" }
+      ]
+    },
+    {
+      "id": "grados",
+      "title": "La escala de los grados",
+      "unlockedBy": "a1-u08-l3",
+      "markdown": "### Un solo grado cada vez, delante del adjetivo\n\n| Menos → más | Uso | Ejemplo |\n|---|---|---|\n| **有点儿** | un poco, y no me gusta | 有点儿累 |\n| **比较** | bastante, más bien | 比较难 |\n| **很** | neutro (casi obligatorio) | 很好 |\n| **非常** / **特别** | muy, especialmente | 非常难 |\n| **真** | ¡qué…! (exclamación) | 真大！ |\n| **太…了** | demasiado, o ¡qué…! | 太好了！ 太贵了！ |\n| **最** | el más | 最年轻 |\n\n- **No se acumulan**: ✗很太好了, ✗很有点儿累.\n- **太…了** es un sándwich: el adjetivo en medio. Sin 了 suena cortado (✗太好). Con **不太** el 了 desaparece: 不太好.\n- En la lengua hablada, **好 + adjetivo** = «muy, qué»: **好大！ 好累！**\n- **有点儿** solo con cosas que no gustan: ✗有点儿好.\n\n> 💡 **Truco**: 太好了 vale para casi cualquier buena noticia (¡genial!), y 太贵了 es la frase número uno del regateo.",
+      "sourceNotes": ["zh-grammar-tai-le", "zh-grammar-hen-adj", "zh-grammar-yidianr-youdianr"],
+      "skeleton": {
+        "focus": ["adverb"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "汉语", "py": "Hànyǔ" },
+              "adverb": { "zh": "非常", "py": "fēicháng", "es": "muy" },
+              "verb1": { "zh": "难", "py": "nán", "es": "difícil" }
+            },
+            "end": "。",
+            "es": "El chino es dificilísimo."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "今天", "py": "jīntiān" },
+              "adverb": { "zh": "太", "py": "tài", "es": "demasiado" },
+              "verb1": { "zh": "热", "py": "rè", "es": "calor" },
+              "particle": { "zh": "了", "py": "le" }
+            },
+            "end": "！",
+            "es": "¡Hoy hace demasiado calor!"
+          },
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "adverb": { "zh": "有点儿", "py": "yǒudiǎnr", "es": "un poco" },
+              "verb1": { "zh": "累", "py": "lèi", "es": "cansado" }
+            },
+            "end": "。",
+            "es": "Estoy un poco cansado."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "上海真大！", "py": "Shànghǎi zhēn dà!", "es": "¡Qué grande es Shanghái!" },
+        { "zh": "太好了！", "py": "Tài hǎo le!", "es": "¡Genial!" },
+        { "zh": "这个比较难。", "py": "Zhège bǐjiào nán.", "es": "Esto es bastante difícil." },
+        { "zh": "她是我们班最年轻的老师。", "py": "Tā shì wǒmen bān zuì niánqīng de lǎoshī.", "es": "Es la profesora más joven de nuestra clase." }
+      ]
+    },
+    {
+      "id": "adjetivo-de-nombre",
+      "title": "Delante del nombre: adjetivo (+ 的) + nombre",
+      "unlockedBy": "a1-u08-l4",
+      "markdown": "### Al revés que en español\n\nEl adjetivo que describe a un nombre va **delante**: «casa grande» → **大**房子.\n\n| Tipo | ¿Lleva 的? | Ejemplo |\n|---|---|---|\n| Una sílaba, sin grado | no: va pegado | 大房子, 新老师, 好朋友 |\n| Con grado (很, 非常, 最…) | sí | **很大的**房子, **最重要的**事 |\n| Dos sílabas | normalmente sí | **漂亮的**猫, **有名的**老师 |\n\n- Y vuelve el **是**, porque ahora el predicado es un nombre: 他**很认真** (adjetivo) frente a 他**是**很认真**的**学生 (nombre).\n- Todo el grupo «adjetivo + 的 + nombre» ocupa **un solo hueco** (sujeto u objeto).\n\n> ❌ **Error típico**: ✗很大房子 → 很大**的**房子. Y ✗一个房子大 → 一个大房子.",
+      "sourceNotes": ["zh-grammar-de", "zh-particle-de"],
+      "skeleton": {
+        "focus": ["object"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "小李", "py": "Xiǎo Lǐ" },
+              "verb1": { "zh": "是", "py": "shì", "es": "es" },
+              "object": { "zh": "我的好朋友", "py": "wǒ de hǎo péngyou", "es": "mi buen amigo" }
+            },
+            "end": "。",
+            "es": "Xiao Li es mi buen amigo."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "王老师", "py": "Wáng lǎoshī" },
+              "verb1": { "zh": "是", "py": "shì" },
+              "object": { "zh": "一个很有名的老师", "py": "yí ge hěn yǒumíng de lǎoshī", "es": "una profesora muy famosa" }
+            },
+            "end": "。",
+            "es": "La profesora Wang es una profesora muy famosa.",
+            "esOrder": [
+              { "text": "La profesora Wang", "slot": "subject" },
+              { "text": "es", "slot": "verb1" },
+              { "text": "una profesora muy famosa", "slot": "object" }
+            ]
+          },
+          {
+            "slots": {
+              "subject": { "zh": "这", "py": "zhè" },
+              "verb1": { "zh": "是", "py": "shì" },
+              "object": { "zh": "很重要的事", "py": "hěn zhòngyào de shì", "es": "una cosa muy importante" }
+            },
+            "end": "。",
+            "es": "Esto es una cosa muy importante."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "小李是我的好朋友。", "py": "Xiǎo Lǐ shì wǒ de hǎo péngyou.", "es": "Xiao Li es mi buen amigo." },
+        { "zh": "我家有一个很大的房子。", "py": "Wǒ jiā yǒu yí ge hěn dà de fángzi.", "es": "Mi familia tiene una casa muy grande." },
+        { "zh": "他很认真，是很认真的学生。", "py": "Tā hěn rènzhēn, shì hěn rènzhēn de xuésheng.", "es": "Es muy aplicado: es un estudiante muy aplicado." },
+        { "zh": "这是很重要的事。", "py": "Zhè shì hěn zhòngyào de shì.", "es": "Esto es una cosa muy importante." }
+      ]
+    },
+    {
+      "id": "hao-verbo",
+      "title": "好 + verbo: 好吃, 好喝, 好看, 好听, 好玩",
+      "unlockedBy": "a1-u09-l3",
+      "markdown": "### «Bueno de…»\n\n**好 + verbo** forma adjetivos de opinión:\n\n| | Significado | Para |\n|---|---|---|\n| 好吃 | rico (de comer) | comida |\n| 好喝 | rico (de beber) | bebida |\n| 好看 | bonito (de ver) | ropa, personas, películas |\n| 好听 | bonito (de oír) | música, voces, nombres |\n| 好玩 | divertido | sitios, juegos, planes |\n\nFuncionan como cualquier adjetivo: **sin 是**, con **很**, negados con **不** (不好吃, o 难吃, más fuerte) y preguntados con 吗 o **好不好吃**.\n\n> ❌ **Error típico**: ✗这个茶很好吃 → 这个茶很**好喝**. Y ✗中国菜是好吃 → 中国菜很好吃.",
+      "sourceNotes": ["zh-grammar-hen-adj", "zh-contrast-ser-estar"],
+      "skeleton": {
+        "focus": ["adverb", "verb1"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "中国菜", "py": "Zhōngguó cài", "es": "la comida china" },
+              "adverb": { "zh": "很", "py": "hěn" },
+              "verb1": { "zh": "好吃", "py": "hǎochī", "es": "está rica" }
+            },
+            "end": "。",
+            "es": "La comida china está muy rica."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "这个水果", "py": "zhège shuǐguǒ" },
+              "adverb": { "zh": "不", "py": "bù", "es": "no" },
+              "verb1": { "zh": "好吃", "py": "hǎochī", "es": "está buena" }
+            },
+            "end": "。",
+            "es": "Esta fruta no está buena."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "饺子", "py": "jiǎozi" },
+              "verb1": { "zh": "好吃", "py": "hǎochī" },
+              "particle": { "zh": "吗", "py": "ma" }
+            },
+            "end": "？",
+            "es": "¿Están ricos los jiaozi?"
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "中国菜很好吃。", "py": "Zhōngguó cài hěn hǎochī.", "es": "La comida china está muy rica." },
+        { "zh": "这个茶很好喝。", "py": "Zhège chá hěn hǎohē.", "es": "Este té está muy bueno." },
+        { "zh": "这个菜太辣了！", "py": "Zhège cài tài là le!", "es": "¡Este plato pica muchísimo!" },
+        { "zh": "王老师的名字很好听。", "py": "Wáng lǎoshī de míngzi hěn hǎotīng.", "es": "El nombre de la profesora Wang es muy bonito." }
+      ]
+    },
+    {
+      "id": "yidianr-youdianr",
+      "title": "Un poco: 有点儿 + adj. y adj. + 一点儿",
+      "unlockedBy": "a1-u16-l2",
+      "markdown": "### Dos «un poco», dos sitios\n\n| | 有点儿 yǒudiǎnr | 一点儿 yìdiǎnr |\n|---|---|---|\n| Posición | **delante** del adjetivo (hueco Adverbios) | **detrás** del adjetivo (hueco Complemento) o del verbo |\n| Matiz | queja: «un poco (demasiado)» | «un poco más» (pedir, comparar) o «un poco de» |\n| Ejemplo | 这件衣服**有点儿**贵。 | 便宜**一点儿**吧！ · 喝**一点儿**水 |\n| Con nombre | nunca | sí: 一点儿水 |\n\n- 有点儿便宜 no es «un poco más barato»: es «es un poco barato» (y suena a queja).\n- **一点儿也不** + adj = «nada»: 一点儿也不贵 (no es nada caro).\n- En Shanghái oirás 一点 y 有点, sin 儿.\n\n> 💡 **Truco**: si en español dirías «un poco demasiado…», es 有点儿. Si dirías «un poco más…» o «un poco de…», es 一点儿.\n\n> 💬 **Para regatear**: 这个有点儿贵，可以便宜一点儿吗？",
+      "sourceNotes": ["zh-grammar-yidianr-youdianr", "zh-contrast-yidianr-youdianr", "zh-numbers-money"],
+      "skeleton": {
+        "focus": ["adverb", "complement"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "这件衣服", "py": "zhè jiàn yīfu", "es": "esta prenda" },
+              "adverb": { "zh": "有点儿", "py": "yǒudiǎnr", "es": "un poco" },
+              "verb1": { "zh": "贵", "py": "guì", "es": "cara" }
+            },
+            "end": "。",
+            "es": "Esta prenda es un poco cara."
+          },
+          {
+            "slots": {
+              "verb1": { "zh": "便宜", "py": "piányi", "es": "barato" },
+              "complement": { "zh": "一点儿", "py": "yìdiǎnr", "es": "un poco más" },
+              "particle": { "zh": "吧", "py": "ba" }
+            },
+            "end": "！",
+            "es": "¡Un poco más barato, anda!",
+            "esOrder": [
+              { "text": "un poco más", "slot": "complement" },
+              { "text": "barato", "slot": "verb1" }
+            ]
+          },
+          {
+            "slots": {
+              "aux": { "zh": "可以", "py": "kěyǐ", "es": "puede" },
+              "verb1": { "zh": "便宜", "py": "piányi" },
+              "complement": { "zh": "一点儿", "py": "yìdiǎnr" },
+              "particle": { "zh": "吗", "py": "ma" }
+            },
+            "end": "？",
+            "es": "¿Me lo puede dejar un poco más barato?"
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "这件衣服有点儿贵。", "py": "Zhè jiàn yīfu yǒudiǎnr guì.", "es": "Esta prenda es un poco cara." },
+        { "zh": "太贵了！便宜一点儿吧。", "py": "Tài guì le! Piányi yìdiǎnr ba.", "es": "¡Qué caro! Un poco más barato, anda." },
+        { "zh": "我会说一点儿汉语。", "py": "Wǒ huì shuō yìdiǎnr Hànyǔ.", "es": "Sé hablar un poco de chino." },
+        { "zh": "这个一点儿也不贵。", "py": "Zhège yìdiǎnr yě bú guì.", "es": "Esto no es nada caro." }
+      ]
+    },
+    {
+      "id": "comparar-bi",
+      "title": "Comparar: A 比 B + adjetivo",
+      "unlockedBy": "a2-u06-l2",
+      "markdown": "### Una balanza\n\nPara «A es más … que B», el chino pone **比 + B** delante del adjetivo: 安娜**比我**高 (lit. «Ana, comparada conmigo, alta»).\n\n- **Nada de 很, 非常 ni 太** con 比: ✗安娜比我很高. Para reforzar: **更** o **还** (aún más): 他比我**更**忙.\n- **最** (el que más) no necesita 比: 这家饭店的菜**最**好吃.\n- **不比** = «no es más… que» (más o menos igual). Para «no tan… como», 没有 (sección siguiente).\n- En el esqueleto, **比 + B** va en el hueco de los adverbios y el adjetivo en el del verbo.\n\n> ❌ **Error típico**: ✗安娜高比我 → 安娜比我高. El adjetivo, al final y «limpio».",
+      "sourceNotes": ["zh-grammar-bi"],
+      "skeleton": {
+        "focus": ["adverb"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "安娜", "py": "Ānnà", "es": "Ana" },
+              "adverb": { "zh": "比我", "py": "bǐ wǒ", "es": "que yo" },
+              "verb1": { "zh": "高", "py": "gāo", "es": "es más alta" }
+            },
+            "end": "。",
+            "es": "Ana es más alta que yo.",
+            "esOrder": [
+              { "text": "Ana", "slot": "subject" },
+              { "text": "es más alta", "slot": "verb1" },
+              { "text": "que yo", "slot": "adverb" }
+            ]
+          },
+          {
+            "slots": {
+              "subject": { "zh": "今天", "py": "jīntiān" },
+              "adverb": { "zh": "比昨天", "py": "bǐ zuótiān", "es": "que ayer" },
+              "verb1": { "zh": "冷", "py": "lěng", "es": "hace más frío" }
+            },
+            "end": "。",
+            "es": "Hoy hace más frío que ayer."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "坐地铁", "py": "zuò dìtiě", "es": "ir en metro" },
+              "adverb": { "zh": "比打车", "py": "bǐ dǎchē", "es": "que en taxi" },
+              "verb1": { "zh": "便宜", "py": "piányi", "es": "es más barato" }
+            },
+            "end": "。",
+            "es": "Ir en metro es más barato que coger un taxi."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "安娜比我高。", "py": "Ānnà bǐ wǒ gāo.", "es": "Ana es más alta que yo." },
+        { "zh": "今天比昨天冷。", "py": "Jīntiān bǐ zuótiān lěng.", "es": "Hoy hace más frío que ayer." },
+        { "zh": "他比我更忙。", "py": "Tā bǐ wǒ gèng máng.", "es": "Él está aún más ocupado que yo." },
+        { "zh": "你比你哥哥高吗？", "py": "Nǐ bǐ nǐ gēge gāo ma?", "es": "¿Eres más alto que tu hermano?" }
+      ]
+    },
+    {
+      "id": "comparar-cuanto",
+      "title": "¿Cuánto más? 一点儿, 多了, 得多, 两岁",
+      "unlockedBy": "a2-u06-l3",
+      "markdown": "### La diferencia, detrás del adjetivo\n\n| Diferencia | Ejemplo |\n|---|---|\n| un poco | 贵**一点儿**, 快**一些** |\n| mucho | 冷**多了**, 快**得多** |\n| cantidad exacta | 大**两岁**, 贵**五十块** |\n\n- Va en el hueco del **complemento**, al revés que en español («**dos años** mayor» → 大**两岁**).\n- **一点儿**, no 有点儿: ✗比奶茶有点儿贵.\n- **多了** es más coloquial (好多了 = mucho mejor); **得多** es neutro.\n\n> ❌ **Error típico**: ✗今天比昨天很冷 → 今天比昨天冷多了.",
+      "sourceNotes": ["zh-grammar-bi", "zh-contrast-yidianr-youdianr"],
+      "skeleton": {
+        "focus": ["complement"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "我哥哥", "py": "wǒ gēge", "es": "mi hermano" },
+              "adverb": { "zh": "比我", "py": "bǐ wǒ", "es": "que yo" },
+              "verb1": { "zh": "大", "py": "dà", "es": "mayor" },
+              "complement": { "zh": "两岁", "py": "liǎng suì", "es": "dos años" }
+            },
+            "end": "。",
+            "es": "Mi hermano es dos años mayor que yo.",
+            "esOrder": [
+              { "text": "Mi hermano", "slot": "subject" },
+              { "text": "es dos años", "slot": "complement" },
+              { "text": "mayor", "slot": "verb1" },
+              { "text": "que yo", "slot": "adverb" }
+            ]
+          },
+          {
+            "slots": {
+              "subject": { "zh": "咖啡", "py": "kāfēi" },
+              "adverb": { "zh": "比奶茶", "py": "bǐ nǎichá" },
+              "verb1": { "zh": "贵", "py": "guì" },
+              "complement": { "zh": "一点儿", "py": "yìdiǎnr", "es": "un poco" }
+            },
+            "end": "。",
+            "es": "El café es un poco más caro que el té con leche."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "今天", "py": "jīntiān" },
+              "adverb": { "zh": "比昨天", "py": "bǐ zuótiān" },
+              "verb1": { "zh": "冷", "py": "lěng" },
+              "complement": { "zh": "多了", "py": "duō le", "es": "mucho" }
+            },
+            "end": "。",
+            "es": "Hoy hace mucho más frío que ayer."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "我哥哥比我大两岁。", "py": "Wǒ gēge bǐ wǒ dà liǎng suì.", "es": "Mi hermano es dos años mayor que yo." },
+        { "zh": "咖啡比奶茶贵一点儿。", "py": "Kāfēi bǐ nǎichá guì yìdiǎnr.", "es": "El café es un poco más caro que el té con leche." },
+        { "zh": "今天比昨天冷多了。", "py": "Jīntiān bǐ zuótiān lěng duō le.", "es": "Hoy hace mucho más frío que ayer." },
+        { "zh": "你哥哥比你大几岁？", "py": "Nǐ gēge bǐ nǐ dà jǐ suì?", "es": "¿Cuántos años te saca tu hermano?" }
+      ]
+    },
+    {
+      "id": "no-tan-igual",
+      "title": "No tan… como; igual de… que: 没有…那么, 跟…一样",
+      "unlockedBy": "a2-u06-l4",
+      "markdown": "### Las otras dos comparaciones\n\n| Estructura | Significa | Ejemplo |\n|---|---|---|\n| A **没有** B (**这么 / 那么**) + adj | A no es tan… como B | 我**没有你这么**高。 |\n| A **跟** B **一样** + adj | A es igual de… que B | 这个房间**跟那个一样**大。 |\n| A **跟** B **一样** | A es igual que B | 我的手机**跟你的一样**。 |\n| A **跟** B **不一样** | A es distinto de B | 我的意见**跟你的不一样**。 |\n\n- **这么** si B está cerca (tú, aquí); **那么** si está lejos. Se pueden omitir.\n- Ni 很 ni 多了 en estas estructuras: ✗我没有你很高, ✗我跟你一样很高.\n- La negación de 一样 va **delante de 一样**: ✗我不跟你一样 → 我跟你**不**一样.",
+      "sourceNotes": ["zh-grammar-bi"],
+      "skeleton": {
+        "focus": ["adverb"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "我的汉语", "py": "wǒ de Hànyǔ", "es": "mi chino" },
+              "adverb": { "zh": "没有你这么", "py": "méiyǒu nǐ zhème", "es": "no tan… como el tuyo" },
+              "verb1": { "zh": "好", "py": "hǎo", "es": "bueno" }
+            },
+            "end": "。",
+            "es": "Mi chino no es tan bueno como el tuyo."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "这个房间", "py": "zhège fángjiān" },
+              "adverb": { "zh": "跟那个房间一样", "py": "gēn nàge fángjiān yíyàng", "es": "igual que esa" },
+              "verb1": { "zh": "大", "py": "dà", "es": "de grande" }
+            },
+            "end": "。",
+            "es": "Esta habitación es igual de grande que esa."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "我的意见", "py": "wǒ de yìjiàn" },
+              "adverb": { "zh": "跟你的不", "py": "gēn nǐ de bù" },
+              "verb1": { "zh": "一样", "py": "yíyàng", "es": "igual" }
+            },
+            "end": "。",
+            "es": "Mi opinión es distinta de la tuya."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "我的汉语没有你这么好。", "py": "Wǒ de Hànyǔ méiyǒu nǐ zhème hǎo.", "es": "Mi chino no es tan bueno como el tuyo." },
+        { "zh": "今天没有昨天那么冷。", "py": "Jīntiān méiyǒu zuótiān nàme lěng.", "es": "Hoy no hace tanto frío como ayer." },
+        { "zh": "这个房间跟那个房间一样大。", "py": "Zhège fángjiān gēn nàge fángjiān yíyàng dà.", "es": "Esta habitación es igual de grande que esa." },
+        { "zh": "上海的菜跟北京的一样吗？", "py": "Shànghǎi de cài gēn Běijīng de yíyàng ma?", "es": "¿La comida de Shanghái es igual que la de Pekín?" }
+      ]
+    },
+    {
+      "id": "grado-de",
+      "title": "Cómo sale la acción: verbo + 得 + adjetivo",
+      "unlockedBy": "a2-u07-l1",
+      "markdown": "### El adjetivo valora la acción\n\nPara decir **cómo** se hace algo («habla muy bien», «nada rápido»), el adjetivo va **detrás del verbo, unido con 得**: 说**得**很好, 游**得**很快.\n\n- El adjetivo lleva casi siempre su grado: 很, 非常, 不太…\n- **Negativa**: 不 delante del **adjetivo**: 说得**不**好 (✗不说得好).\n- **Pregunta**: 说得**怎么样**？ / 说得**好不好**？\n- **Con objeto**, dos salidas: el objeto delante (他**汉语**说得很好) o repetir el verbo (他**说汉语说得**很好). Nunca ✗他说得汉语很好.\n- Para comparar: 他**比我**跑得快 / 他跑得**比我**快.\n\n> 💡 **Truco**: 得 es un puente: primero la acción, luego la nota. 你说得很好！ te lo dirán desde la primera semana; responde con modestia: 哪里哪里.",
+      "sourceNotes": ["zh-particle-de-complement", "zh-contrast-de-de-de"],
+      "skeleton": {
+        "focus": ["verb1", "complement"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "她", "py": "tā" },
+              "verb1": { "zh": "跳得", "py": "tiào de", "es": "baila" },
+              "complement": { "zh": "非常好", "py": "fēicháng hǎo", "es": "muy bien" }
+            },
+            "end": "。",
+            "es": "Baila muy bien."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "我朋友", "py": "wǒ péngyou" },
+              "verb1": { "zh": "说汉语", "py": "shuō Hànyǔ", "es": "habla chino" },
+              "verb2": { "zh": "说得", "py": "shuō de" },
+              "complement": { "zh": "很流利", "py": "hěn liúlì", "es": "con mucha soltura" }
+            },
+            "end": "。",
+            "es": "Mi amigo habla chino con mucha soltura."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "verb1": { "zh": "跑得", "py": "pǎo de", "es": "corro" },
+              "complement": { "zh": "不快", "py": "bú kuài", "es": "no rápido" }
+            },
+            "end": "。",
+            "es": "No corro rápido."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "她跳得非常好。", "py": "Tā tiào de fēicháng hǎo.", "es": "Baila muy bien." },
+        { "zh": "他汉语说得很好。", "py": "Tā Hànyǔ shuō de hěn hǎo.", "es": "Habla chino muy bien." },
+        { "zh": "我跑得不快。", "py": "Wǒ pǎo de bú kuài.", "es": "No corro rápido." },
+        { "zh": "你游泳游得怎么样？", "py": "Nǐ yóuyǒng yóu de zěnmeyàng?", "es": "¿Qué tal nadas?" }
+      ]
+    },
+    {
+      "id": "reduplicacion",
+      "title": "Adjetivos doblados: 大大的, 高高兴兴地",
+      "unlockedBy": "a2-u07-l4",
+      "markdown": "### Doblar para dar viveza\n\n| Forma | Ejemplo |\n|---|---|\n| **AA** (una sílaba) | 大 → **大大**的眼睛 · 慢 → **慢慢**地说 |\n| **AABB** (dos sílabas) | 高兴 → **高高兴兴** · 干净 → **干干净净** · 认真 → **认认真真** |\n\nReglas:\n\n1. **Sin 很**: el doblado ya intensifica (✗很大大的).\n2. Delante de un **nombre**, con **的** (大大的眼睛); delante de un **verbo**, con **地** (高高兴兴地回家).\n3. **No se niega**: ✗不干干净净 → 不干净.\n4. **AABB**, no ABAB: 高兴高兴 es la reduplicación de los **verbos** (休息休息 = descansar un rato).",
+      "sourceNotes": ["zh-particle-de-adverbial", "zh-contrast-de-de-de"],
+      "skeleton": {
+        "focus": ["adverb", "object"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "大家", "py": "dàjiā" },
+              "adverb": { "zh": "高高兴兴地", "py": "gāogāoxìngxìng de", "es": "contentísimos" },
+              "verb1": { "zh": "回家", "py": "huí jiā", "es": "se fueron a casa" },
+              "particle": { "zh": "了", "py": "le" }
+            },
+            "end": "。",
+            "es": "Todos se fueron a casa contentísimos."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "她", "py": "tā" },
+              "verb1": { "zh": "有", "py": "yǒu" },
+              "object": { "zh": "大大的眼睛", "py": "dàdà de yǎnjing", "es": "unos ojos muy grandes" }
+            },
+            "end": "。",
+            "es": "Tiene unos ojos muy grandes."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "她有大大的眼睛。", "py": "Tā yǒu dàdà de yǎnjing.", "es": "Tiene unos ojos muy grandes." },
+        { "zh": "老师，请慢慢地说。", "py": "Lǎoshī, qǐng mànmàn de shuō.", "es": "Profesora, hable despacio, por favor." },
+        { "zh": "大家高高兴兴地回家了。", "py": "Dàjiā gāogāoxìngxìng de huí jiā le.", "es": "Todos se fueron a casa contentísimos." },
+        { "zh": "他的房间不干净。", "py": "Tā de fángjiān bù gānjìng.", "es": "Su habitación no está limpia.", "note": "Para negar, vuelve al adjetivo normal." }
+      ]
+    },
+    {
+      "id": "kanqilai-xiande",
+      "title": "Parecer: 看起来, 看上去 y 显得",
+      "unlockedBy": "b1-u09-l2",
+      "markdown": "### El aspecto de las cosas\n\n**看起来** o **看上去** + adjetivo = «parece…, tiene pinta de…»: 她**看起来**很年轻.\n\n- 看上去 se fija más en el **aspecto físico**, a simple vista; 看起来 es más general.\n- El adjetivo sigue llevando **很, 相当, 不太…**: 看起来**很**累 (no ✗ 看起来累).\n- Pueden ir **delante del sujeto**, con coma: **看上去，**这个问题很难.\n- **显得 + adjetivo** = «se le ve…, resulta…», muchas veces por una causa: 穿上这件衣服，你**显得**很精神.\n- **表面上…，其实…** contrapone lo que se ve y lo que hay.\n\n**En el esqueleto**: 看起来 / 看上去 / 显得 + el grado en *Adverbios* y el adjetivo en *Verbo 1*.\n\n> ⚠️ **Ojo**: **看来** (b1-u08) no describe: saca una **conclusión**. 看来他今天不来了 = por lo visto hoy no viene.",
+      "skeleton": {
+        "focus": [
+          "adverb"
+        ],
+        "sentences": [
+          {
+            "slots": {
+              "subject": {
+                "zh": "王老师",
+                "py": "Wáng lǎoshī"
+              },
+              "adverb": {
+                "zh": "看起来很",
+                "py": "kàn qilai hěn"
+              },
+              "verb1": {
+                "zh": "年轻",
+                "py": "niánqīng"
+              }
+            },
+            "end": "。",
+            "es": "La profesora Wang parece muy joven.",
+            "esOrder": [
+              {
+                "text": "La profesora Wang",
+                "slot": "subject"
+              },
+              {
+                "text": "parece muy",
+                "slot": "adverb"
+              },
+              {
+                "text": "joven",
+                "slot": "verb1"
+              }
+            ]
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "她",
+                "py": "tā"
+              },
+              "time": {
+                "zh": "今天",
+                "py": "jīntiān"
+              },
+              "adverb": {
+                "zh": "显得特别",
+                "py": "xiǎnde tèbié"
+              },
+              "verb1": {
+                "zh": "高兴",
+                "py": "gāoxìng"
+              }
+            },
+            "end": "。",
+            "es": "Hoy se la ve especialmente contenta."
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "他",
+                "py": "tā"
+              },
+              "adverb": {
+                "zh": "看起来不太",
+                "py": "kàn qilai bú tài"
+              },
+              "verb1": {
+                "zh": "高兴",
+                "py": "gāoxìng"
+              }
+            },
+            "end": "。",
+            "es": "No parece muy contento."
+          }
+        ]
+      },
+      "examples": [
+        {
+          "zh": "这些菜看起来都很好吃。",
+          "py": "Zhèxiē cài kàn qilai dōu hěn hǎochī.",
+          "es": "Todos estos platos tienen muy buena pinta."
+        },
+        {
+          "zh": "那个老头儿看上去相当精神。",
+          "py": "Nà ge lǎotóur kàn shangqu xiāngdāng jīngshen.",
+          "es": "Ese anciano se ve bastante lleno de energía."
+        },
+        {
+          "zh": "表面上他很坚强，其实他的内心很难过。",
+          "py": "Biǎomiàn shang tā hěn jiānqiáng, qíshí tā de nèixīn hěn nánguò.",
+          "es": "Por fuera parece entero, pero en el fondo está muy triste."
+        },
+        {
+          "zh": "她看起来有多大年纪？",
+          "py": "Tā kàn qilai yǒu duō dà niánjì?",
+          "es": "¿Cuántos años aparenta?"
+        }
+      ]
+    },
+    {
+      "id": "intensificar-detras",
+      "title": "¡Buenísimo!: 得很, 极了, 坏了",
+      "unlockedBy": "b1-u09-l5",
+      "markdown": "### Intensificar por detrás\n\nAdemás de 很 / 非常 **delante**, el chino puede reforzar un adjetivo **por detrás**:\n\n| Forma | Matiz | Ejemplos |\n|---|---|---|\n| adj + **得很** | «muy», oral y enfático | 好得很, 方便得很 |\n| adj / V + **极了** | «a más no poder» | 高兴极了, 好吃极了 |\n| adj / V + **坏了** | «hasta reventar»: cuerpo y ánimo | 累坏了, 饿坏了, 急坏了 |\n\n- **Nunca con 很 delante**: ✗ 很好极了, ✗ 很累坏了.\n- **坏了** no es negativo por fuerza: 高兴坏了 = loco de contento.\n\n**En el esqueleto**: el adjetivo en *Verbo 1* y 得很 / 极了 / 坏了 en *Complemento*.\n\n> 💡 **Truco**: 极了 sirve para casi todo; 坏了, sobre todo para cómo se siente alguien (累, 饿, 急, 高兴).",
+      "skeleton": {
+        "focus": [
+          "complement"
+        ],
+        "sentences": [
+          {
+            "slots": {
+              "subject": {
+                "zh": "这个小区的环境",
+                "py": "zhège xiǎoqū de huánjìng"
+              },
+              "verb1": {
+                "zh": "好",
+                "py": "hǎo"
+              },
+              "complement": {
+                "zh": "得很",
+                "py": "de hěn"
+              }
+            },
+            "end": "。",
+            "es": "El entorno de esta urbanización es buenísimo."
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "我",
+                "py": "wǒ"
+              },
+              "verb1": {
+                "zh": "高兴",
+                "py": "gāoxìng"
+              },
+              "complement": {
+                "zh": "极了",
+                "py": "jí le"
+              }
+            },
+            "end": "。",
+            "es": "Estoy contentísimo."
+          },
+          {
+            "slots": {
+              "time0": {
+                "zh": "搬完家以后，",
+                "py": "bānwán jiā yǐhòu,"
+              },
+              "subject": {
+                "zh": "大家",
+                "py": "dàjiā"
+              },
+              "adverb": {
+                "zh": "都",
+                "py": "dōu"
+              },
+              "verb1": {
+                "zh": "累",
+                "py": "lèi"
+              },
+              "complement": {
+                "zh": "坏了",
+                "py": "huài le"
+              }
+            },
+            "end": "。",
+            "es": "Después de la mudanza, todos estábamos reventados."
+          }
+        ]
+      },
+      "examples": [
+        {
+          "zh": "这家饭馆的饺子好吃极了！",
+          "py": "Zhè jiā fànguǎn de jiǎozi hǎochī jí le!",
+          "es": "¡Las empanadillas de este restaurante están buenísimas!"
+        },
+        {
+          "zh": "坐地铁方便得很。",
+          "py": "Zuò dìtiě fāngbiàn de hěn.",
+          "es": "Ir en metro es comodísimo."
+        },
+        {
+          "zh": "你饿坏了吧？",
+          "py": "Nǐ è huài le ba?",
+          "es": "Estarás muerto de hambre, ¿no?"
+        },
+        {
+          "zh": "妈妈找不到孩子，急坏了。",
+          "py": "Māma zhǎo bu dào háizi, jí huài le.",
+          "es": "La madre no encontraba al niño y estaba desesperada."
+        }
+      ]
+    },
+    {
+      "id": "bu-a-bu-b",
+      "title": "El punto justo: 不A不B (y 个个都)",
+      "unlockedBy": "b1-u09-l5",
+      "markdown": "### Ni mucho ni poco\n\n**不 + A + 不 + B**, con dos adjetivos **contrarios** de una sílaba, describe **el punto justo**, casi siempre como elogio:\n\n> 不大不小 · 不冷不热 · 不多不少 · 不早不晚 · 不高不矮\n\n这个房间**不大不小** = esta habitación tiene el tamaño justo.\n\n- Funciona como un adjetivo entero: **sin 很** delante.\n- Ojo con el tono: 不 cambia a **bú** delante de cuarto tono (**bú** dà bù xiǎo, bù lěng **bú** rè).\n\n**Clasificador doblado + 都** = «todos y cada uno»: 这些苹果**个个都**很甜, 他拍的照片**张张都**很漂亮. Va **delante del verbo**, con **都**.\n\n**En el esqueleto**: 不A不B entero en *Verbo 1*; 个个都 / 张张都 en *Adverbios*.\n\n> ❌ **Error típico**: 我喜欢个个苹果 → 这些苹果我**个个都**喜欢. El clasificador doblado va delante del verbo.",
+      "skeleton": {
+        "focus": [
+          "verb1",
+          "adverb"
+        ],
+        "sentences": [
+          {
+            "slots": {
+              "subject": {
+                "zh": "这个房间",
+                "py": "zhège fángjiān"
+              },
+              "verb1": {
+                "zh": "不大不小",
+                "py": "bú dà bù xiǎo"
+              }
+            },
+            "end": "。",
+            "es": "Esta habitación tiene el tamaño justo."
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "上海的秋天",
+                "py": "Shànghǎi de qiūtiān"
+              },
+              "verb1": {
+                "zh": "不冷不热",
+                "py": "bù lěng bú rè"
+              }
+            },
+            "end": "。",
+            "es": "En otoño, en Shanghái no hace ni frío ni calor."
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "这些苹果",
+                "py": "zhèxiē píngguǒ"
+              },
+              "adverb": {
+                "zh": "个个都很",
+                "py": "gègè dōu hěn"
+              },
+              "verb1": {
+                "zh": "甜",
+                "py": "tián"
+              }
+            },
+            "end": "。",
+            "es": "Todas y cada una de estas manzanas son muy dulces."
+          }
+        ]
+      },
+      "examples": [
+        {
+          "zh": "这件衣服不长不短，你穿正好。",
+          "py": "Zhè jiàn yīfu bù cháng bù duǎn, nǐ chuān zhènghǎo.",
+          "es": "Esta prenda no es ni larga ni corta: te queda perfecta."
+        },
+        {
+          "zh": "我们八点到，不早不晚。",
+          "py": "Wǒmen bā diǎn dào, bù zǎo bù wǎn.",
+          "es": "Llegamos a las ocho: ni pronto ni tarde."
+        },
+        {
+          "zh": "他拍的照片张张都很漂亮。",
+          "py": "Tā pāi de zhàopiàn zhāngzhāng dōu hěn piàoliang.",
+          "es": "Todas las fotos que hace son preciosas."
+        },
+        {
+          "zh": "这些问题个个都不简单。",
+          "py": "Zhèxiē wèntí gègè dōu bù jiǎndān.",
+          "es": "Ninguno de estos problemas es sencillo."
+        }
+      ]
+    }
+  ]
+}

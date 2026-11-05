@@ -1,0 +1,216 @@
+{
+  "unitId": "a1-u13",
+  "scenarios": [
+    {
+      "id": "a1-u13-icebreaker",
+      "title": "Rompehielos: entrevista a un compañero",
+      "zh": "你叫什么名字？",
+      "level": 1,
+      "setting": "Primer día del curso. La profesora Wang pide que cada uno entreviste a un compañero nuevo y luego lo presente a la clase. Hugo entrevista a Xiao Wang. Tú (la app) eres 小王.",
+      "role": "compañero nuevo",
+      "roleZh": "小王",
+      "voice": "m",
+      "goals": ["Preguntar nombre y de dónde es (什么, 哪里)", "Preguntar la edad y qué hace el fin de semana (多大, 干什么)", "Preguntar por qué estudia y cuándo (为什么, 什么时候)", "Cerrar sin poner 吗 tras un interrogativo"],
+      "vocab": ["什么", "谁", "哪里", "多大", "干什么", "为什么", "什么时候", "怎么样", "吧"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "你好！老师说你问，我回答。你问吧！", "py": "Nǐ hǎo! Lǎoshī shuō nǐ wèn, wǒ huídá. Nǐ wèn ba!", "es": "¡Hola! La profesora dice que tú preguntas y yo contesto. ¡Pregunta!" },
+          "user": [
+            { "zh": "你好！你叫什么名字？", "py": "Nǐ hǎo! Nǐ jiào shénme míngzi?", "es": "¡Hola! ¿Cómo te llamas?", "keywords": ["什么名字", "叫什么"], "next": "n2", "goal": 0 },
+            { "zh": "你好！你是哪里人？", "py": "Nǐ hǎo! Nǐ shì nǎlǐ rén?", "es": "¡Hola! ¿De dónde eres?", "keywords": ["哪里人", "哪儿人"], "next": "n2b", "goal": 0 },
+            { "zh": "你叫什么名字吗？", "py": "Nǐ jiào shénme míngzi ma?", "es": "(incorrecto: 什么 + 吗)", "keywords": ["什么名字吗"], "next": "n1x" }
+          ],
+          "hint": "Empieza por el nombre o la ciudad: 你叫什么名字？ / 你是哪里人？ (sin 吗)."
+        },
+        "n1x": {
+          "npc": { "zh": "啊？你说“什么……吗”？", "py": "A? Nǐ shuō “shénme… ma”?", "es": "¿Eh? ¿Has dicho «什么… 吗»?" },
+          "user": [
+            { "zh": "对不起。你叫什么名字？", "py": "Duìbuqǐ. Nǐ jiào shénme míngzi?", "es": "Perdona. ¿Cómo te llamas?", "keywords": ["叫什么"], "next": "n2", "goal": 0 }
+          ],
+          "hint": "Con una palabra interrogativa (什么) no se pone 吗. Repite sin él."
+        },
+        "n2": {
+          "npc": { "zh": "我叫王明，大家都叫我小王。", "py": "Wǒ jiào Wáng Míng, dàjiā dōu jiào wǒ Xiǎo Wáng.", "es": "Me llamo Wang Ming; todos me llaman Xiao Wang." },
+          "user": [
+            { "zh": "你是哪里人？", "py": "Nǐ shì nǎlǐ rén?", "es": "¿De dónde eres?", "keywords": ["哪里人", "哪儿人"], "next": "n3", "goal": 0 },
+            { "zh": "你是上海人吧？", "py": "Nǐ shì Shànghǎi rén ba?", "es": "Eres de Shanghái, ¿no?", "keywords": ["上海人吧", "吧"], "next": "n3", "goal": 0 }
+          ],
+          "hint": "Pregunta la ciudad: 你是哪里人？ o supón con 吧: 你是上海人吧？"
+        },
+        "n2b": {
+          "npc": { "zh": "我是北京人。我叫王明，大家都叫我小王。", "py": "Wǒ shì Běijīng rén. Wǒ jiào Wáng Míng, dàjiā dōu jiào wǒ Xiǎo Wáng.", "es": "Soy de Pekín. Me llamo Wang Ming; todos me llaman Xiao Wang." },
+          "user": [
+            { "zh": "你今年多大？", "py": "Nǐ jīnnián duō dà?", "es": "¿Cuántos años tienes?", "keywords": ["多大"], "next": "n4", "goal": 1 },
+            { "zh": "北京很远吧？", "py": "Běijīng hěn yuǎn ba?", "es": "Pekín está muy lejos, ¿no?", "keywords": ["远吧", "吧"], "next": "n3b" }
+          ],
+          "hint": "Sigue con la edad (你今年多大？) o comenta algo con 吧."
+        },
+        "n3": {
+          "npc": { "zh": "不是，我是北京人。", "py": "Bú shì, wǒ shì Běijīng rén.", "es": "No, soy de Pekín." },
+          "user": [
+            { "zh": "你今年多大？", "py": "Nǐ jīnnián duō dà?", "es": "¿Cuántos años tienes?", "keywords": ["多大"], "next": "n4", "goal": 1 },
+            { "zh": "北京很远吧？", "py": "Běijīng hěn yuǎn ba?", "es": "Pekín está muy lejos, ¿no?", "keywords": ["远吧", "吧"], "next": "n3b" }
+          ],
+          "hint": "Pregunta la edad: 你今年多大？"
+        },
+        "n3b": {
+          "npc": { "zh": "很远。我不常回家。", "py": "Hěn yuǎn. Wǒ bù cháng huí jiā.", "es": "Muy lejos. No vuelvo mucho a casa." },
+          "user": [
+            { "zh": "你今年多大？", "py": "Nǐ jīnnián duō dà?", "es": "¿Cuántos años tienes?", "keywords": ["多大"], "next": "n4", "goal": 1 },
+            { "zh": "你什么时候回北京？", "py": "Nǐ shénme shíhou huí Běijīng?", "es": "¿Cuándo vuelves a Pekín?", "keywords": ["什么时候"], "next": "n3c", "goal": 2 }
+          ],
+          "hint": "什么时候 va delante del verbo: 你什么时候回北京？"
+        },
+        "n3c": {
+          "npc": { "zh": "明年一月，我放假的时候回去。", "py": "Míngnián yīyuè, wǒ fàngjià de shíhou huíqu.", "es": "En enero, cuando tenga vacaciones." },
+          "user": [
+            { "zh": "你今年多大？", "py": "Nǐ jīnnián duō dà?", "es": "¿Cuántos años tienes?", "keywords": ["多大"], "next": "n4", "goal": 1 }
+          ],
+          "hint": "Ahora la edad: 你今年多大？"
+        },
+        "n4": {
+          "npc": { "zh": "我二十二岁。你呢？", "py": "Wǒ èrshí'èr suì. Nǐ ne?", "es": "Veintidós. ¿Y tú?" },
+          "user": [
+            { "zh": "我二十五岁。你周末干什么？", "py": "Wǒ èrshíwǔ suì. Nǐ zhōumò gàn shénme?", "es": "Veinticinco. ¿Qué haces los fines de semana?", "keywords": ["干什么", "做什么"], "next": "n5", "goal": 1 },
+            { "zh": "我二十五岁。你的爱好是什么？", "py": "Wǒ èrshíwǔ suì. Nǐ de àihào shì shénme?", "es": "Veinticinco. ¿Cuál es tu afición?", "keywords": ["爱好"], "next": "n5", "goal": 1 }
+          ],
+          "hint": "Contesta y pregunta por su tiempo libre: 你周末干什么？ / 你的爱好是什么？"
+        },
+        "n5": {
+          "npc": { "zh": "我周末常常跟朋友一起打篮球，也上网看视频。", "py": "Wǒ zhōumò chángcháng gēn péngyou yìqǐ dǎ lánqiú, yě shàngwǎng kàn shìpín.", "es": "Los fines de semana suelo jugar al baloncesto con amigos y también veo vídeos en internet." },
+          "user": [
+            { "zh": "你跟谁一起打篮球？", "py": "Nǐ gēn shéi yìqǐ dǎ lánqiú?", "es": "¿Con quién juegas al baloncesto?", "keywords": ["跟谁"], "next": "n6", "goal": 1 },
+            { "zh": "你为什么学英语？", "py": "Nǐ wèishénme xué Yīngyǔ?", "es": "¿Por qué estudias inglés?", "keywords": ["为什么"], "next": "n7", "goal": 2 }
+          ],
+          "hint": "Pregunta con quién (跟谁一起……？: 谁 en el hueco de la persona) o por qué estudia (为什么)."
+        },
+        "n6": {
+          "npc": { "zh": "跟我的同学。你会打篮球吗？", "py": "Gēn wǒ de tóngxué. Nǐ huì dǎ lánqiú ma?", "es": "Con mis compañeros. ¿Tú sabes jugar al baloncesto?" },
+          "user": [
+            { "zh": "会！你们什么时候打？我也想去。", "py": "Huì! Nǐmen shénme shíhou dǎ? Wǒ yě xiǎng qù.", "es": "¡Sí! ¿Cuándo jugáis? Yo también quiero ir.", "keywords": ["什么时候"], "next": "n6b", "goal": 2 },
+            { "zh": "不会。你为什么学英语？", "py": "Bú huì. Nǐ wèishénme xué Yīngyǔ?", "es": "No. ¿Por qué estudias inglés?", "keywords": ["为什么"], "next": "n7", "goal": 2 }
+          ],
+          "hint": "Responde 会 / 不会 y pregunta cuándo (什么时候) o por qué (为什么)."
+        },
+        "n6b": {
+          "npc": { "zh": "星期六下午三点。你来吧！你为什么学汉语？", "py": "Xīngqīliù xiàwǔ sān diǎn. Nǐ lái ba! Nǐ wèishénme xué Hànyǔ?", "es": "El sábado a las tres de la tarde. ¡Vente! ¿Y tú por qué estudias chino?" },
+          "user": [
+            { "zh": "我觉得汉语很有意思，也很有用。", "py": "Wǒ juéde Hànyǔ hěn yǒu yìsi, yě hěn yǒuyòng.", "es": "Creo que el chino es muy interesante y también muy útil.", "keywords": ["觉得", "有意思"], "next": "n8", "goal": 3 }
+          ],
+          "hint": "Da tu opinión con 我觉得……"
+        },
+        "n7": {
+          "npc": { "zh": "我想去美国。你呢？你为什么学汉语？", "py": "Wǒ xiǎng qù Měiguó. Nǐ ne? Nǐ wèishénme xué Hànyǔ?", "es": "Quiero ir a Estados Unidos. ¿Y tú? ¿Por qué estudias chino?" },
+          "user": [
+            { "zh": "我觉得汉语很有意思，也很有用。", "py": "Wǒ juéde Hànyǔ hěn yǒu yìsi, yě hěn yǒuyòng.", "es": "Creo que el chino es muy interesante y también muy útil.", "keywords": ["觉得", "有意思"], "next": "n8", "goal": 3 },
+            { "zh": "我想认识很多中国朋友。", "py": "Wǒ xiǎng rènshi hěn duō Zhōngguó péngyou.", "es": "Quiero conocer a muchos amigos chinos.", "keywords": ["认识", "朋友"], "next": "n8", "goal": 3 }
+          ],
+          "hint": "Responde con la razón: 我觉得…… / 我想……"
+        },
+        "n8": {
+          "npc": { "zh": "太好了！还有问题吗？", "py": "Tài hǎo le! Hái yǒu wèntí ma?", "es": "¡Genial! ¿Tienes más preguntas?" },
+          "user": [
+            { "zh": "没有了，谢谢！我觉得你很有意思。", "py": "Méiyǒu le, xièxie! Wǒ juéde nǐ hěn yǒu yìsi.", "es": "No, ¡gracias! Me pareces muy majo.", "keywords": ["没有", "谢谢"], "next": "n9", "goal": 3 },
+            { "zh": "还有一个：你的微信是什么？", "py": "Hái yǒu yí ge: nǐ de Wēixìn shì shénme?", "es": "Una más: ¿cuál es tu WeChat?", "keywords": ["还有", "微信"], "next": "n9", "goal": 3 }
+          ],
+          "hint": "Cierra (没有了，谢谢) o haz una pregunta más con 还有……"
+        },
+        "n9": {
+          "npc": { "zh": "没事儿！现在我问你，好吗？", "py": "Méi shìr! Xiànzài wǒ wèn nǐ, hǎo ma?", "es": "¡No hay de qué! Ahora te pregunto yo, ¿vale?" },
+          "end": true,
+          "feedback": "Has hecho una entrevista completa: 什么, 哪里, 多大, 干什么, 跟谁, 什么时候 y 为什么, cada uno en el hueco de su respuesta y sin 吗. 吧 te sirve para suponer (你是上海人吧？)."
+        }
+      }
+    },
+    {
+      "id": "a1-u13-teacher-interview",
+      "title": "La profesora te pregunta",
+      "zh": "王老师的问题",
+      "level": 1,
+      "setting": "En clase, la profesora Wang hace preguntas rápidas a Hugo para practicar la regla de oro: hay que contestar poniendo la respuesta en el mismo hueco que la pregunta. Tú (la app) eres 王老师.",
+      "role": "profesora de chino",
+      "roleZh": "王老师",
+      "voice": "f",
+      "goals": ["Responder dónde y cuándo (哪儿, 什么时候)", "Responder cuántos (几, 多少)", "Responder cómo y qué tal (怎么, 怎么样)", "Pedir aclaración si no entiendes"],
+      "vocab": ["哪儿", "什么时候", "几", "多少", "怎么", "怎么样", "明白", "什么意思", "怎么说"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "雨果，你每天几点起床？", "py": "Yǔguǒ, nǐ měi tiān jǐ diǎn qǐchuáng?", "es": "Hugo, ¿a qué hora te levantas cada día?" },
+          "user": [
+            { "zh": "我每天七点起床。", "py": "Wǒ měi tiān qī diǎn qǐchuáng.", "es": "Me levanto todos los días a las siete.", "keywords": ["七点", "点起床"], "next": "n2", "goal": 0 },
+            { "zh": "我起床七点。", "py": "Wǒ qǐchuáng qī diǎn.", "es": "(incorrecto: la hora va delante del verbo)", "keywords": ["起床七点"], "next": "n1x" }
+          ],
+          "hint": "La hora va en el mismo sitio que 几点: delante del verbo. 我每天 + hora + 起床."
+        },
+        "n1x": {
+          "npc": { "zh": "“我起床七点”？不对。你再说一下。", "py": "“Wǒ qǐchuáng qī diǎn”? Bú duì. Nǐ zài shuō yíxià.", "es": "¿«我起床七点»? No es correcto. Dilo otra vez." },
+          "user": [
+            { "zh": "我每天七点起床。", "py": "Wǒ měi tiān qī diǎn qǐchuáng.", "es": "Me levanto todos los días a las siete.", "keywords": ["七点起床"], "next": "n2", "goal": 0 }
+          ],
+          "hint": "Copia la pregunta y cambia 几点 por la hora."
+        },
+        "n2": {
+          "npc": { "zh": "很好。下课以后你去哪儿？", "py": "Hěn hǎo. Xiàkè yǐhòu nǐ qù nǎr?", "es": "Muy bien. ¿Adónde vas después de clase?" },
+          "user": [
+            { "zh": "下课以后我去食堂。", "py": "Xiàkè yǐhòu wǒ qù shítáng.", "es": "Después de clase voy al comedor.", "keywords": ["去食堂", "去"], "next": "n3", "goal": 0 },
+            { "zh": "我去书店买书。", "py": "Wǒ qù shūdiàn mǎi shū.", "es": "Voy a la librería a comprar libros.", "keywords": ["书店"], "next": "n3", "goal": 0 }
+          ],
+          "hint": "Pon el lugar donde estaba 哪儿: 我去 + lugar."
+        },
+        "n3": {
+          "npc": { "zh": "你有几个中国朋友？", "py": "Nǐ yǒu jǐ ge Zhōngguó péngyou?", "es": "¿Cuántos amigos chinos tienes?" },
+          "user": [
+            { "zh": "我有三个中国朋友。", "py": "Wǒ yǒu sān ge Zhōngguó péngyou.", "es": "Tengo tres amigos chinos.", "keywords": ["三个", "个中国朋友"], "next": "n4", "goal": 1 },
+            { "zh": "我有很多中国朋友！", "py": "Wǒ yǒu hěn duō Zhōngguó péngyou!", "es": "¡Tengo muchos amigos chinos!", "keywords": ["很多"], "next": "n4", "goal": 1 }
+          ],
+          "hint": "Número + 个 en el hueco de 几个: 我有三个……"
+        },
+        "n4": {
+          "npc": { "zh": "你每天说多少汉语？……开玩笑！你觉得汉语怎么样？", "py": "Nǐ měi tiān shuō duōshao Hànyǔ? … Kāi wánxiào! Nǐ juéde Hànyǔ zěnmeyàng?", "es": "¿Cuánto chino hablas al día?… ¡Es broma! ¿Qué te parece el chino?" },
+          "user": [
+            { "zh": "我觉得汉语很难，也很有意思。", "py": "Wǒ juéde Hànyǔ hěn nán, yě hěn yǒu yìsi.", "es": "Me parece muy difícil y también muy interesante.", "keywords": ["觉得", "很难", "有意思"], "next": "n5", "goal": 2 },
+            { "zh": "老师，“开玩笑”是什么意思？", "py": "Lǎoshī, “kāi wánxiào” shì shénme yìsi?", "es": "Profesora, ¿qué significa «开玩笑»?", "keywords": ["什么意思"], "next": "n4b", "goal": 3 }
+          ],
+          "hint": "Responde con una opinión (我觉得汉语很……) o pide el significado: ……是什么意思？"
+        },
+        "n4b": {
+          "npc": { "zh": "“开玩笑”的意思是：不是真的。明白吗？", "py": "“Kāi wánxiào” de yìsi shì: bú shì zhēn de. Míngbai ma?", "es": "«开玩笑» significa que no va en serio. ¿Entendido?" },
+          "user": [
+            { "zh": "明白了！我觉得汉语很有意思。", "py": "Míngbai le! Wǒ juéde Hànyǔ hěn yǒu yìsi.", "es": "¡Entendido! Creo que el chino es muy interesante.", "keywords": ["明白", "觉得"], "next": "n5", "goal": 2 }
+          ],
+          "hint": "Confirma con 明白了 y contesta: 我觉得汉语……"
+        },
+        "n5": {
+          "npc": { "zh": "好。“Gracias”汉语怎么说？", "py": "Hǎo. “Gracias” Hànyǔ zěnme shuō?", "es": "Bien. ¿Cómo se dice «gracias» en chino?" },
+          "user": [
+            { "zh": "汉语说“谢谢”。", "py": "Hànyǔ shuō “xièxie”.", "es": "En chino se dice «谢谢».", "keywords": ["谢谢"], "next": "n6", "goal": 2 },
+            { "zh": "我不明白，您再说一下，可以吗？", "py": "Wǒ bù míngbai, nín zài shuō yíxià, kěyǐ ma?", "es": "No lo entiendo, ¿puede repetirlo?", "keywords": ["不明白", "再说"], "next": "n5b", "goal": 3 }
+          ],
+          "hint": "怎么说 pide una palabra: 汉语说…… Si no entiendes: 我不明白，您再说一下."
+        },
+        "n5b": {
+          "npc": { "zh": "“Gracias”是西班牙语。汉语怎么说？", "py": "“Gracias” shì Xībānyáyǔ. Hànyǔ zěnme shuō?", "es": "«Gracias» es español. ¿Cómo se dice en chino?" },
+          "user": [
+            { "zh": "啊，明白了！汉语说“谢谢”。", "py": "A, míngbai le! Hànyǔ shuō “xièxie”.", "es": "¡Ah, entendido! En chino se dice «谢谢».", "keywords": ["谢谢"], "next": "n6", "goal": 2 }
+          ],
+          "hint": "Responde 汉语说……"
+        },
+        "n6": {
+          "npc": { "zh": "非常好！最后一个问题：你为什么来中国？", "py": "Fēicháng hǎo! Zuìhòu yí ge wèntí: nǐ wèishénme lái Zhōngguó?", "es": "¡Muy bien! Última pregunta: ¿por qué has venido a China?" },
+          "user": [
+            { "zh": "我很喜欢中国，也想认识中国朋友。", "py": "Wǒ hěn xǐhuan Zhōngguó, yě xiǎng rènshi Zhōngguó péngyou.", "es": "Me gusta mucho China y también quiero conocer amigos chinos.", "keywords": ["喜欢", "朋友"], "next": "n7", "goal": 2 },
+            { "zh": "我觉得中国很有意思。", "py": "Wǒ juéde Zhōngguó hěn yǒu yìsi.", "es": "China me parece muy interesante.", "keywords": ["觉得"], "next": "n7", "goal": 2 }
+          ],
+          "hint": "A 为什么 se responde con la razón: 我想…… / 我觉得……"
+        },
+        "n7": {
+          "npc": { "zh": "很好！你的回答都很好。", "py": "Hěn hǎo! Nǐ de huídá dōu hěn hǎo.", "es": "¡Muy bien! Todas tus respuestas han sido muy buenas." },
+          "end": true,
+          "feedback": "Has respondido poniendo cada dato en el hueco de la pregunta (几点 → 七点, 哪儿 → 食堂, 几个 → 三个) y has pedido ayuda con 是什么意思, 怎么说 y 我不明白."
+        }
+      }
+    }
+  ]
+}

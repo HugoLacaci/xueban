@@ -1,0 +1,137 @@
+{
+  "id": "b1-u04-l3",
+  "title": "Sacar, traer, llevarse: 拿出一本书来",
+  "zh": "老板拿出几张邮票来",
+  "goal": "Decir qué sacas, traes o te llevas con un objeto y un direccional compuesto (拿出一本书来 / 拿出来一本书, 把箱子搬上去) en un mercado de Shanghái.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "市场", "pinyin": "shìchǎng", "es": "mercado", "note": "菜市场 = mercado de abastos." },
+    { "hanzi": "商品", "pinyin": "shāngpǐn", "es": "mercancía, producto (a la venta)" },
+    { "hanzi": "商业", "pinyin": "shāngyè", "es": "comercio; comercial", "note": "商业街 = calle comercial." },
+    { "hanzi": "生意", "pinyin": "shēngyi", "es": "negocio, ventas", "note": "生意很好 = el negocio va muy bien. 意 en tono neutro." },
+    { "hanzi": "消费", "pinyin": "xiāofèi", "es": "consumo; gastar (consumir)", "note": "这儿消费不高 = aquí no se gasta mucho." },
+    { "hanzi": "收费", "pinyin": "shōufèi", "es": "cobrar (una tarifa)", "note": "进门不收费 = la entrada es gratis." },
+    { "hanzi": "邮票", "pinyin": "yóupiào", "es": "sello (de correos)" },
+    { "hanzi": "当地", "pinyin": "dāngdì", "es": "local, del lugar", "note": "当地人 = la gente de aquí." },
+    { "hanzi": "华人", "pinyin": "huárén", "es": "persona de origen chino (sobre todo fuera de China)", "note": "在西班牙长大的华人 = chino criado en España." },
+    { "hanzi": "人群", "pinyin": "rénqún", "es": "multitud, gentío" },
+    { "hanzi": "群", "pinyin": "qún", "es": "grupo, multitud (clasificador)", "note": "一群人 = un grupo de gente; 微信群 = grupo de WeChat." },
+    { "hanzi": "围", "pinyin": "wéi", "es": "rodear", "note": "围着 = alrededor de: 一群人围着一个小店." },
+    { "hanzi": "周围", "pinyin": "zhōuwéi", "es": "alrededor; los alrededores", "note": "学校周围 = alrededor de la universidad." },
+    { "hanzi": "左右", "pinyin": "zuǒyòu", "es": "más o menos, unos (tras una cifra)", "note": "一百块左右 = unos cien yuanes." }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "老板拿出几张邮票来给我们看。", "py": "Lǎobǎn náchū jǐ zhāng yóupiào lai gěi wǒmen kàn.", "es": "El dueño ha sacado unos sellos para enseñárnoslos." },
+        { "zh": "我买回来了很多水果。", "py": "Wǒ mǎi huilai le hěn duō shuǐguǒ.", "es": "He vuelto con un montón de fruta." },
+        { "zh": "你把这些商品搬进去吧。", "py": "Nǐ bǎ zhèxiē shāngpǐn bān jinqu ba.", "es": "Mete estos productos (dentro)." }
+      ]
+    },
+    { "type": "vocab", "title": "En el mercado", "words": ["市场", "商品", "商业", "生意", "消费", "收费", "邮票", "当地", "华人", "人群", "群", "围", "周围", "左右"] },
+    {
+      "type": "phonetics-drill",
+      "title": "Dónde va el objeto: el ritmo de 拿出一本书来",
+      "markdown": "Con objeto, la frase tiene **tres partes** y el oído las separa: **拿出 · 一本书 · 来**. El objeto se dice entero y con su tono; el 来 final, neutro, cierra la frase.\n\nSi el objeto va al final (**拿出来 · 一本书**), el 来 sigue neutro pero queda **en medio**, muy corto: *ná chulai yì běn shū*.\n\nY tres sonidos del día: **sh** de 商 *shāng* (lengua hacia atrás), **x** de 消 *xiāo* (lengua plana, sonrisa) y **q** de 群 *qún* (como «ch» plana con aire; la ü se escribe u).",
+      "items": [
+        { "audio": "拿出一本书来", "options": ["náchū yì běn shū lai", "ná chūlái yì běn shū", "náchū yí běn shū lái"], "answer": 0, "explain": "Objeto en medio; 一 + tercer tono → yì; 来 neutro." },
+        { "audio": "商品", "options": ["shāngpǐn", "sāngpǐn", "shāngbǐn"], "answer": 0, "explain": "sh retrofleja; p aspirada." },
+        { "audio": "消费", "options": ["xiāofèi", "shāofèi", "xiǎofèi"], "answer": 0, "explain": "x con la lengua plana; primer + cuarto tono." },
+        { "audio": "人群", "options": ["rénqún", "rénjūn", "rénxún"], "answer": 0, "explain": "q con soplo; detrás de q la ü se escribe u." },
+        { "audio": "一百块左右", "options": ["yìbǎi kuài zuǒyòu", "yībǎi kuài zuǒyòu", "yíbǎi kuài zuǒyòu"], "answer": 0, "explain": "一 delante de tercer tono → yì." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["围", "群"],
+      "mnemonics": {
+        "围": "囗 (un recinto cerrado) + 韦 (cuero que envuelve): rodear algo por todos los lados.",
+        "群": "君 (señor, da el sonido) + 羊 (oveja): las ovejas van siempre en grupo → rebaño, grupo, multitud."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "Verbo + dirección + OBJETO + 来 / 去 (o el objeto detrás)",
+      "markdown": "Cuando el verbo lleva **una cosa** (拿, 带, 买, 搬, 送…), hay dos sitios para ella:\n\n1. **En medio**, igual que el lugar: 拿出**一本书**来, 带回**很多水果**去. Vale siempre.\n2. **Al final**, detrás de 来 / 去: 拿出来**一本书**, 买回来了**很多水果**. Solo con acciones ya hechas y cosas con cantidad (一本, 很多, 几张).\n\nUn **lugar** va **siempre en medio** (走进教室来, lección 2).\n\n**Con 把** (b1-u01) la cosa se adelanta y el direccional queda entero detrás: 你**把箱子**搬上去吧. Es lo más natural cuando la cosa ya es conocida (*la* maleta, *estos* productos).\n\n**Convención del esqueleto**: objeto en medio → *Verbo 1* = 拿出, *Objeto* = 一本书, *Complemento* = 来. Objeto al final → *Verbo 1* = 拿出来, *Objeto* = 一本书. Con 把: 把 + cosa en **Con quién** (como en b1-u01) y el bloque entero en *Verbo 1*.",
+      "focus": ["verb1", "object", "complement"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "老板", "py": "lǎobǎn" }, "verb1": { "zh": "拿出", "py": "náchū" }, "object": { "zh": "几张邮票", "py": "jǐ zhāng yóupiào" }, "complement": { "zh": "来", "py": "lai" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "El dueño ha sacado unos sellos.", "esOrder": [{ "text": "El dueño", "slot": "subject" }, { "text": "ha sacado", "slot": "verb1" }, { "text": "(hacia aquí)", "slot": "complement" }, { "text": "unos sellos", "slot": "object" }] },
+        { "slots": { "subject": { "zh": "雨果", "py": "Yǔguǒ" }, "verb1": { "zh": "拿出来", "py": "ná chulai" }, "object": { "zh": "一张卡", "py": "yì zhāng kǎ" } }, "end": "。", "es": "Hugo saca una tarjeta." },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "verb1": { "zh": "买回来了", "py": "mǎi huilai le" }, "object": { "zh": "很多水果", "py": "hěn duō shuǐguǒ" } }, "end": "。", "es": "He vuelto con un montón de fruta comprada." },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "with": { "zh": "把这些商品", "py": "bǎ zhèxiē shāngpǐn" }, "verb1": { "zh": "搬进去", "py": "bān jinqu" }, "particle": { "zh": "吧", "py": "ba" } }, "end": "。", "es": "Mete estos productos dentro." },
+        { "slots": { "subject": { "zh": "安娜", "py": "Ānnà" }, "verb1": { "zh": "带回", "py": "dàihuí" }, "object": { "zh": "两本书", "py": "liǎng běn shū" }, "complement": { "zh": "去", "py": "qu" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Ana se ha llevado dos libros (a casa)." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "没", "py": "méi" }, "verb1": { "zh": "带", "py": "dài" }, "object": { "zh": "钱包", "py": "qiánbāo" }, "complement": { "zh": "出来", "py": "chulai" } }, "end": "！", "es": "¡No he traído la cartera!" },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "adverb": { "zh": "别", "py": "bié" }, "with": { "zh": "把箱子", "py": "bǎ xiāngzi" }, "verb1": { "zh": "搬下去", "py": "bān xiaqu" } }, "end": "。", "es": "No bajes la maleta." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "买回来", "py": "mǎi huilai" }, "object": { "zh": "什么", "py": "shénme" }, "particle": { "zh": "了", "py": "le" } }, "end": "？", "es": "¿Qué has traído (de la compra)?" },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "aux": { "zh": "能", "py": "néng" }, "with": { "zh": "把那件衣服", "py": "bǎ nà jiàn yīfu" }, "verb1": { "zh": "拿过来", "py": "ná guolai" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿Me puedes acercar esa prenda?" }
+      ],
+      "mistakes": [
+        { "wrong": "我买去回很多水果。", "right": "我买回来了很多水果。", "why": "Primero la dirección (回), luego 来 / 去. Y si vuelves a donde estás hablando, es 回来." },
+        { "wrong": "我把箱子搬。", "right": "我把箱子搬上去。", "why": "Con 把 el verbo no puede ir solo: necesita algo detrás, como el direccional." },
+        { "wrong": "他走进来商店了。", "right": "他走进商店来了。", "why": "La cosa puede ir al final, pero el lugar no: el lugar va siempre en medio." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "El puesto de sellos",
+      "lines": [
+        { "speaker": "小李", "zh": "雨果，这个市场很有名，当地人都喜欢来这儿买东西。", "py": "Yǔguǒ, zhège shìchǎng hěn yǒumíng, dāngdì rén dōu xǐhuan lái zhèr mǎi dōngxi.", "es": "Hugo, este mercado es muy famoso; a la gente de aquí le encanta venir a comprar." },
+        { "speaker": "雨果", "zh": "人真多！那边一群人围着一个小店，他们在看什么？", "py": "Rén zhēn duō! Nàbian yì qún rén wéizhe yí ge xiǎo diàn, tāmen zài kàn shénme?", "es": "¡Cuánta gente! Allí hay un grupo rodeando una tiendecita, ¿qué miran?" },
+        { "speaker": "小李", "zh": "那家卖老邮票，生意特别好。我们走过去看看吧。", "py": "Nà jiā mài lǎo yóupiào, shēngyi tèbié hǎo. Wǒmen zǒu guoqu kànkan ba.", "es": "Esa vende sellos antiguos y le va de maravilla. Vamos a echar un vistazo." },
+        { "speaker": "老板", "zh": "你们好！你是西班牙人吧？我是在马德里长大的华人。", "py": "Nǐmen hǎo! Nǐ shì Xībānyá rén ba? Wǒ shì zài Mǎdélǐ zhǎngdà de huárén.", "es": "¡Hola! Tú eres español, ¿no? Yo soy chino, pero me crie en Madrid." },
+        { "speaker": "雨果", "zh": "真的吗？真没想到！", "py": "Zhēn de ma? Zhēn méi xiǎngdào!", "es": "¿En serio? ¡Quién lo iba a decir!" },
+        { "speaker": "老板", "zh": "我拿出几张西班牙的老邮票来，给你们看看。", "py": "Wǒ náchū jǐ zhāng Xībānyá de lǎo yóupiào lai, gěi nǐmen kànkan.", "es": "Voy a sacar unos sellos antiguos de España para que los veáis." },
+        { "speaker": "雨果", "zh": "太好看了！这张多少钱？", "py": "Tài hǎokàn le! Zhè zhāng duōshao qián?", "es": "¡Qué bonitos! ¿Cuánto cuesta este?" },
+        { "speaker": "老板", "zh": "一百块左右吧。你喜欢的话，给你便宜一点儿。", "py": "Yìbǎi kuài zuǒyòu ba. Nǐ xǐhuan de huà, gěi nǐ piányi yìdiǎnr.", "es": "Unos cien yuanes. Si te gusta, te lo dejo un poco más barato." },
+        { "speaker": "小李", "zh": "这个市场的商品都不太贵，消费不高。", "py": "Zhège shìchǎng de shāngpǐn dōu bú tài guì, xiāofèi bù gāo.", "es": "Aquí los productos no son caros; no se gasta mucho." },
+        { "speaker": "雨果", "zh": "好，我买两张。我拿出钱包来……啊，我没带钱包出来！", "py": "Hǎo, wǒ mǎi liǎng zhāng. Wǒ náchū qiánbāo lai……A, wǒ méi dài qiánbāo chulai!", "es": "Vale, me llevo dos. Saco la cartera… ¡Ay, que no la he traído!" },
+        { "speaker": "老板", "zh": "没关系，用微信付吧，不收费。", "py": "Méi guānxi, yòng Wēixìn fù ba, bù shōufèi.", "es": "No pasa nada, paga con WeChat, sin comisión." },
+        { "speaker": "雨果", "zh": "好！我要把这两张邮票带回西班牙去，送给我爸爸。", "py": "Hǎo! Wǒ yào bǎ zhè liǎng zhāng yóupiào dàihuí Xībānyá qu, sònggěi wǒ bàba.", "es": "¡Genial! Voy a llevarme estos dos sellos a España para regalárselos a mi padre." }
+      ],
+      "notes": "**华人** se usa sobre todo para chinos y descendientes de chinos que viven fuera de China (在西班牙的华人). **左右** detrás de una cifra es «más o menos»: 一百块左右, 五点左右. En China casi todo se paga con el móvil (微信, 支付宝), y por eso olvidarse la cartera no es un drama."
+    },
+    { "type": "exercises", "count": 17, "bank": ["g-lai-qu", "g-complements", "g-measure-words", "g-price-age"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "老板" }, "verb1": { "zh": "拿出" }, "object": { "zh": "几张邮票" }, "complement": { "zh": "来" }, "particle": { "zh": "了" } }, "end": "。", "es": "El dueño ha sacado unos sellos." }, "distractors": ["去"] },
+        { "sentence": { "slots": { "subject": { "zh": "我" }, "verb1": { "zh": "买回来了" }, "object": { "zh": "很多水果" } }, "end": "。", "es": "He vuelto con mucha fruta." } },
+        { "sentence": { "slots": { "subject": { "zh": "你" }, "with": { "zh": "把这些商品" }, "verb1": { "zh": "搬进去" }, "particle": { "zh": "吧" } }, "end": "。", "es": "Mete estos productos dentro." }, "distractors": ["被"] },
+        { "sentence": { "slots": { "time0": { "zh": "下个月" }, "subject": { "zh": "雨果" }, "aux": { "zh": "要" }, "with": { "zh": "把两张老邮票" }, "verb1": { "zh": "带回" }, "object": { "zh": "西班牙" }, "complement": { "zh": "去" } }, "end": "。", "es": "El mes que viene Hugo se va a llevar dos sellos antiguos a España." } }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "我拿出钱包来。", "py": "Wǒ náchū qiánbāo lai.", "es": "Saco la cartera." },
+        { "zh": "我没带钱包出来！", "py": "Wǒ méi dài qiánbāo chulai!", "es": "¡No he traído la cartera!" },
+        { "zh": "一百块左右吧。", "py": "Yìbǎi kuài zuǒyòu ba.", "es": "Unos cien yuanes." },
+        { "zh": "当地人都喜欢来这儿买东西。", "py": "Dāngdì rén dōu xǐhuan lái zhèr mǎi dōngxi.", "es": "A la gente de aquí le encanta venir a comprar." }
+      ],
+      "respond": [
+        { "q": { "zh": "你从市场买回来什么了？", "py": "Nǐ cóng shìchǎng mǎi huilai shénme le?", "es": "¿Qué has traído del mercado?" }, "model": { "zh": "我买回来了很多水果和两张邮票。", "py": "Wǒ mǎi huilai le hěn duō shuǐguǒ hé liǎng zhāng yóupiào.", "es": "He traído mucha fruta y dos sellos." } },
+        { "q": { "zh": "这个箱子放在哪儿？", "py": "Zhège xiāngzi fàng zài nǎr?", "es": "¿Dónde pongo esta maleta?" }, "model": { "zh": "你把它搬上去吧，放在我的房间里。", "py": "Nǐ bǎ tā bān shangqu ba, fàng zài wǒ de fángjiān li.", "es": "Súbela, déjala en mi habitación." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Un mercado con historia",
+      "text": "小李带雨果去了一个很有名的市场。市场周围是一条老商业街，当地人都喜欢来这儿买东西。这里的商品很多，也不太贵，消费不高，进门也不收费。他们走进市场去，看见一群人围着一个小店。那家店卖老邮票，生意特别好。老板是一个在马德里长大的华人，会说西班牙语。他拿出几张西班牙的老邮票来，给雨果看。一张一百块左右。雨果很喜欢，想拿出钱包来，可是他没带钱包出来！老板笑着说：“没关系，用微信付吧。”雨果买了两张。离开的时候，人群越来越多，他们只好慢慢地走出市场去。晚上回到宿舍，雨果把邮票拿出来，给大卫看。他说：“下个月我要把它们带回西班牙去，送给我爸爸。”",
+      "es": "Xiao Li ha llevado a Hugo a un mercado muy famoso. Alrededor del mercado hay una calle comercial antigua, y a la gente de aquí le encanta venir a comprar. Hay muchísimos productos, no son caros, se gasta poco y la entrada es gratis. Al entrar en el mercado ven a un grupo de gente rodeando una tiendecita. Vende sellos antiguos y el negocio va de maravilla. El dueño es un chino que se crio en Madrid y habla español. Saca unos sellos antiguos de España para enseñárselos a Hugo: cada uno cuesta unos cien yuanes. A Hugo le encantan y va a sacar la cartera, ¡pero no la ha traído! El dueño se ríe: «No pasa nada, paga con WeChat». Hugo compra dos. Cuando se van, cada vez hay más gente y tienen que salir del mercado despacito. Por la noche, de vuelta en la residencia, Hugo saca los sellos para enseñárselos a David y le dice: «El mes que viene me los llevo a España para regalárselos a mi padre».",
+      "questions": [
+        { "q": "¿Qué hay alrededor del mercado?", "options": ["一条老商业街", "一个公园", "一个地铁站"], "answer": 0 },
+        { "q": "¿Quién es el dueño de la tienda?", "options": ["Un chino criado en Madrid", "Un español", "Un amigo de Xiao Li"], "answer": 0 },
+        { "q": "¿Cuánto cuesta cada sello?", "options": ["一百块左右", "十块左右", "一千块左右"], "answer": 0 },
+        { "q": "¿Para quién son los sellos?", "options": ["雨果的爸爸", "大卫", "小李"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

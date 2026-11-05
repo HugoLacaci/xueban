@@ -1,0 +1,369 @@
+{
+  "unitId": "a2-u02",
+  "scenarios": [
+    {
+      "id": "a2-u02-office",
+      "title": "En la oficina de estudiantes internacionales",
+      "zh": "在留学生办公室",
+      "level": 2,
+      "setting": "Es la primera semana del curso. Hugo va a la oficina de estudiantes internacionales para recoger su carné y preguntar por las clases de lengua. Tú (la app) eres la funcionaria de la oficina.",
+      "role": "funcionaria de la oficina",
+      "roleZh": "老师",
+      "voice": "f",
+      "goals": [
+        "Pedir el carné de estudiante y la tarjeta del campus",
+        "Preguntar cuántas horas de clase hay al día",
+        "Preguntar a qué hora empiezan las clases",
+        "Decir cuánto tiempo has estudiado chino"
+      ],
+      "vocab": [
+        "学生证",
+        "校园卡",
+        "多长时间",
+        "几点",
+        "上课",
+        "学了"
+      ],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": {
+            "zh": "你好，有什么事？",
+            "py": "Nǐ hǎo, yǒu shénme shì?",
+            "es": "Hola, ¿qué necesitas?"
+          },
+          "user": [
+            {
+              "zh": "老师好，我来拿学生证和校园卡。",
+              "py": "Lǎoshī hǎo, wǒ lái ná xuéshengzhèng hé xiàoyuánkǎ.",
+              "es": "Hola, vengo a recoger el carné de estudiante y la tarjeta del campus.",
+              "keywords": [
+                "学生证",
+                "校园卡"
+              ],
+              "next": "n2",
+              "goal": 0
+            },
+            {
+              "zh": "您好，我是新留学生，我想问一下上课的事。",
+              "py": "Nín hǎo, wǒ shì xīn liúxuéshēng, wǒ xiǎng wèn yíxià shàngkè de shì.",
+              "es": "Hola, soy un estudiante extranjero nuevo y quería preguntar por las clases.",
+              "keywords": [
+                "上课"
+              ],
+              "next": "n3"
+            }
+          ],
+          "hint": "Pide el carné (学生证) y la tarjeta (校园卡): 我来拿…"
+        },
+        "n2": {
+          "npc": {
+            "zh": "好，你叫什么名字？……这是你的学生证和校园卡。",
+            "py": "Hǎo, nǐ jiào shénme míngzi? ……zhè shì nǐde xuéshengzhèng hé xiàoyuánkǎ.",
+            "es": "Vale, ¿cómo te llamas? … Aquí tienes tu carné y tu tarjeta."
+          },
+          "user": [
+            {
+              "zh": "谢谢！我们每天上几个小时课？",
+              "py": "Xièxie! Wǒmen měitiān shàng jǐ ge xiǎoshí kè?",
+              "es": "¡Gracias! ¿Cuántas horas de clase tenemos al día?",
+              "keywords": [
+                "几个小时",
+                "多长时间"
+              ],
+              "next": "n3",
+              "goal": 1
+            },
+            {
+              "zh": "谢谢！语言课几点开始？",
+              "py": "Xièxie! Yǔyán kè jǐ diǎn kāishǐ?",
+              "es": "¡Gracias! ¿A qué hora empiezan las clases de lengua?",
+              "keywords": [
+                "几点"
+              ],
+              "next": "n4",
+              "goal": 2
+            }
+          ],
+          "hint": "Pregunta la duración (每天上几个小时课？) o la hora (几点开始？)."
+        },
+        "n3": {
+          "npc": {
+            "zh": "语言课每天上午上三个小时。",
+            "py": "Yǔyán kè měitiān shàngwǔ shàng sān ge xiǎoshí.",
+            "es": "Las clases de lengua son tres horas cada mañana."
+          },
+          "user": [
+            {
+              "zh": "几点开始？",
+              "py": "Jǐ diǎn kāishǐ?",
+              "es": "¿A qué hora empiezan?",
+              "keywords": [
+                "几点"
+              ],
+              "next": "n4",
+              "goal": 2
+            }
+          ],
+          "hint": "Ahora pregunta el momento: 几点开始？"
+        },
+        "n4": {
+          "npc": {
+            "zh": "八点开始。你学了多长时间汉语？",
+            "py": "Bā diǎn kāishǐ. Nǐ xué le duō cháng shíjiān Hànyǔ?",
+            "es": "Empiezan a las ocho. ¿Cuánto tiempo has estudiado chino?"
+          },
+          "user": [
+            {
+              "zh": "我学了一年汉语。",
+              "py": "Wǒ xué le yì nián Hànyǔ.",
+              "es": "He estudiado chino un año.",
+              "keywords": [
+                "学了"
+              ],
+              "next": "n5",
+              "goal": 3
+            },
+            {
+              "zh": "我学了一年多了。",
+              "py": "Wǒ xué le yì nián duō le.",
+              "es": "Llevo algo más de un año.",
+              "keywords": [
+                "一年多"
+              ],
+              "next": "n5",
+              "goal": 3
+            }
+          ],
+          "hint": "La duración va detrás del verbo: 我学了 + duración (+ 汉语)."
+        },
+        "n5": {
+          "npc": {
+            "zh": "那你去中级班吧。在三号教学楼。",
+            "py": "Nà nǐ qù zhōngjí bān ba. Zài sān hào jiàoxuélóu.",
+            "es": "Entonces ve al grupo intermedio. Está en el edificio de aulas número 3."
+          },
+          "user": [
+            {
+              "zh": "好的，谢谢老师！",
+              "py": "Hǎode, xièxie lǎoshī!",
+              "es": "Muy bien, ¡gracias!",
+              "keywords": [
+                "谢谢"
+              ],
+              "next": "n6"
+            },
+            {
+              "zh": "中级班有多少学生？",
+              "py": "Zhōngjí bān yǒu duōshao xuésheng?",
+              "es": "¿Cuántos estudiantes hay en el intermedio?",
+              "keywords": [
+                "多少"
+              ],
+              "next": "n5b"
+            }
+          ],
+          "hint": "Da las gracias o pregunta cuántos estudiantes hay."
+        },
+        "n5b": {
+          "npc": {
+            "zh": "大概二十多个。",
+            "py": "Dàgài èrshí duō ge.",
+            "es": "Unos veintitantos."
+          },
+          "user": [
+            {
+              "zh": "好的，谢谢！",
+              "py": "Hǎode, xièxie!",
+              "es": "Vale, ¡gracias!",
+              "keywords": [
+                "谢谢"
+              ],
+              "next": "n6"
+            }
+          ],
+          "hint": "Despídete dando las gracias."
+        },
+        "n6": {
+          "npc": {
+            "zh": "不客气，有问题再来！",
+            "py": "Bù kèqi, yǒu wèntí zài lái!",
+            "es": "De nada, ¡si tienes alguna duda, vuelve!"
+          },
+          "end": true,
+          "feedback": "Has distinguido bien el momento (几点开始: delante del verbo) de la duración (上三个小时, 学了一年: detrás). Esa es la clave de la unidad."
+        }
+      }
+    },
+    {
+      "id": "a2-u02-tutor",
+      "title": "Primera reunión con tu director de tesis",
+      "zh": "第一次见导师",
+      "level": 2,
+      "setting": "Hugo tiene su primera reunión con su director de tesis, el profesor Li, en su despacho. Tú (la app) eres el profesor Li.",
+      "role": "director de tesis",
+      "roleZh": "导师",
+      "voice": "m",
+      "goals": [
+        "Decir cuánto tiempo llevas en China",
+        "Explicar qué quieres investigar",
+        "Preguntar cada cuánto os veréis",
+        "Preguntar por la conferencia de la semana"
+      ],
+      "vocab": [
+        "导师",
+        "论文",
+        "多长时间了",
+        "研究",
+        "讲座",
+        "一次"
+      ],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": {
+            "zh": "雨果，你好！你来中国多长时间了？",
+            "py": "Yǔguǒ, nǐ hǎo! Nǐ lái Zhōngguó duō cháng shíjiān le?",
+            "es": "¡Hola, Hugo! ¿Cuánto tiempo llevas en China?"
+          },
+          "user": [
+            {
+              "zh": "李老师好！我来中国两个多月了。",
+              "py": "Lǐ lǎoshī hǎo! Wǒ lái Zhōngguó liǎng ge duō yuè le.",
+              "es": "¡Hola, profesor Li! Llevo dos meses y pico en China.",
+              "keywords": [
+                "月了",
+                "多长时间"
+              ],
+              "next": "n2",
+              "goal": 0
+            },
+            {
+              "zh": "老师好，我来了三个月了。",
+              "py": "Lǎoshī hǎo, wǒ lái le sān ge yuè le.",
+              "es": "Hola, profesor, llevo tres meses.",
+              "keywords": [
+                "三个月了"
+              ],
+              "next": "n2",
+              "goal": 0
+            }
+          ],
+          "hint": "Tiempo transcurrido: 我来中国 + duración + 了。"
+        },
+        "n2": {
+          "npc": {
+            "zh": "你的论文想研究什么？",
+            "py": "Nǐ de lùnwén xiǎng yánjiū shénme?",
+            "es": "¿Qué quieres investigar en tu tesis?"
+          },
+          "user": [
+            {
+              "zh": "我想研究中小学教育。",
+              "py": "Wǒ xiǎng yánjiū zhōng-xiǎoxué jiàoyù.",
+              "es": "Quiero investigar la educación primaria y secundaria.",
+              "keywords": [
+                "研究",
+                "教育"
+              ],
+              "next": "n3",
+              "goal": 1
+            },
+            {
+              "zh": "我想研究中国的语言教学。",
+              "py": "Wǒ xiǎng yánjiū Zhōngguó de yǔyán jiàoxué.",
+              "es": "Quiero investigar la enseñanza de lenguas en China.",
+              "keywords": [
+                "研究",
+                "教学"
+              ],
+              "next": "n3",
+              "goal": 1
+            }
+          ],
+          "hint": "Di qué quieres investigar: 我想研究…"
+        },
+        "n3": {
+          "npc": {
+            "zh": "很好。你要多看书。",
+            "py": "Hěn hǎo. Nǐ yào duō kàn shū.",
+            "es": "Muy bien. Tienes que leer mucho."
+          },
+          "user": [
+            {
+              "zh": "我们多长时间见一次？",
+              "py": "Wǒmen duō cháng shíjiān jiàn yí cì?",
+              "es": "¿Cada cuánto nos vemos?",
+              "keywords": [
+                "一次",
+                "多长时间"
+              ],
+              "next": "n4",
+              "goal": 2
+            },
+            {
+              "zh": "我每个星期来一次，可以吗？",
+              "py": "Wǒ měi ge xīngqī lái yí cì, kěyǐ ma?",
+              "es": "¿Puedo venir una vez por semana?",
+              "keywords": [
+                "一次",
+                "每个星期"
+              ],
+              "next": "n4",
+              "goal": 2
+            }
+          ],
+          "hint": "Pregunta la frecuencia: 我们多长时间见一次？"
+        },
+        "n4": {
+          "npc": {
+            "zh": "每个星期一次，星期三下午来吧。",
+            "py": "Měi ge xīngqī yí cì, xīngqīsān xiàwǔ lái ba.",
+            "es": "Una vez por semana; ven los miércoles por la tarde."
+          },
+          "user": [
+            {
+              "zh": "好的。老师，这个星期有讲座吗？",
+              "py": "Hǎode. Lǎoshī, zhè ge xīngqī yǒu jiǎngzuò ma?",
+              "es": "De acuerdo. Profesor, ¿hay alguna conferencia esta semana?",
+              "keywords": [
+                "讲座"
+              ],
+              "next": "n5",
+              "goal": 3
+            }
+          ],
+          "hint": "Pregunta por la conferencia: 这个星期有讲座吗？"
+        },
+        "n5": {
+          "npc": {
+            "zh": "有，星期五下午两点，大概两个小时。",
+            "py": "Yǒu, xīngqīwǔ xiàwǔ liǎng diǎn, dàgài liǎng ge xiǎoshí.",
+            "es": "Sí, el viernes a las dos de la tarde, unas dos horas."
+          },
+          "user": [
+            {
+              "zh": "好，我会去的。谢谢老师！",
+              "py": "Hǎo, wǒ huì qù de. Xièxie lǎoshī!",
+              "es": "Vale, allí estaré. ¡Gracias, profesor!",
+              "keywords": [
+                "谢谢"
+              ],
+              "next": "n6"
+            }
+          ],
+          "hint": "Di que irás y da las gracias."
+        },
+        "n6": {
+          "npc": {
+            "zh": "不客气，星期三见！",
+            "py": "Bù kèqi, xīngqīsān jiàn!",
+            "es": "De nada, ¡hasta el miércoles!"
+          },
+          "end": true,
+          "feedback": "Has usado el tiempo transcurrido (来中国两个多月了), la frecuencia (每个星期一次) y has entendido una hora (两点) frente a una duración (两个小时)."
+        }
+      }
+    }
+  ]
+}

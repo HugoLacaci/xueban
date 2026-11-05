@@ -1,0 +1,139 @@
+{
+  "id": "b1-u06-l1",
+  "title": "Ni siquiera eso: 连…都 / 也",
+  "zh": "他连小李都没告诉",
+  "goal": "Expresar sorpresa con 连…都 / 也 («incluso, ni siquiera») y reaccionar ante una noticia inesperada.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "连", "pinyin": "lián", "es": "incluso, hasta; ni siquiera (con 都 / 也 + negación)", "note": "连 + lo sorprendente + 都 / 也 + verbo: 连孩子都知道 = hasta los niños lo saben." },
+    { "hanzi": "突然", "pinyin": "tūrán", "es": "de repente; repentino", "note": "Va delante del verbo (他突然走了) o como adjetivo (太突然了！)." },
+    { "hanzi": "消息", "pinyin": "xiāoxi", "es": "noticia; mensaje", "note": "好消息 / 坏消息. 有消息吗？ = ¿sabes algo?" },
+    { "hanzi": "奇怪", "pinyin": "qíguài", "es": "raro, extraño" },
+    { "hanzi": "好奇", "pinyin": "hàoqí", "es": "curioso (con curiosidad)", "note": "Ojo: 好 se lee hào («ser aficionado a»). 我很好奇 = me pica la curiosidad." },
+    { "hanzi": "其实", "pinyin": "qíshí", "es": "en realidad, la verdad es que" },
+    { "hanzi": "本来", "pinyin": "běnlái", "es": "en un principio, originalmente; en realidad (de por sí)", "note": "我本来想去… = en principio quería ir… (pero cambió)." },
+    { "hanzi": "简直", "pinyin": "jiǎnzhí", "es": "simplemente, sencillamente (exagera)", "note": "简直太好了！ = ¡es que es genial!" },
+    { "hanzi": "果然", "pinyin": "guǒrán", "es": "efectivamente, tal como se esperaba" },
+    { "hanzi": "到底", "pinyin": "dàodǐ", "es": "(en preguntas) ¿pero…?, al fin y al cabo", "note": "你到底去不去？ = ¿pero vas o no?" },
+    { "hanzi": "难道", "pinyin": "nándào", "es": "¿acaso…? (pregunta retórica)", "note": "Suele cerrar con 吗: 难道你不知道吗？" },
+    { "hanzi": "终于", "pinyin": "zhōngyú", "es": "por fin, finalmente" },
+    { "hanzi": "哈哈", "pinyin": "hāhā", "es": "¡ja, ja! (risa)" },
+    { "hanzi": "吃惊", "pinyin": "chījīng", "es": "sorprenderse, asustarse", "note": "Fuera del HSK 1–3 (nivel 4). 我很吃惊 = me he quedado de piedra." }
+  ],
+  "extraVocab": ["吃惊"],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "他连小李都没告诉。", "py": "Tā lián Xiǎo Lǐ dōu méi gàosu.", "es": "No se lo ha dicho ni a Xiao Li." },
+        { "zh": "这件事连孩子都知道。", "py": "Zhè jiàn shì lián háizi dōu zhīdào.", "es": "Esto lo saben hasta los niños." },
+        { "zh": "难道你连这个消息也没听说吗？", "py": "Nándào nǐ lián zhège xiāoxi yě méi tīngshuō ma?", "es": "¿Acaso ni siquiera te has enterado de esta noticia?" }
+      ]
+    },
+    { "type": "vocab", "title": "Noticias y sorpresas", "words": ["连", "突然", "消息", "奇怪", "好奇", "其实", "本来", "简直", "果然", "到底", "难道", "终于", "哈哈", "吃惊"] },
+    {
+      "type": "phonetics-drill",
+      "title": "El énfasis de 连…都 y la entonación de la sorpresa",
+      "markdown": "En una frase con **连…都**, el peso de la voz cae en **lo que va detrás de 连**, que es lo sorprendente: 他连**饭**都没吃 (¡ni siquiera ha **comido**!). 连 y 都 se dicen más rápidos y suaves.\n\n- **难道…吗？** sube al final, pero no como una pregunta normal: suena a reproche («¿acaso…?»).\n- **突然 tūrán**: la *r* china no es la «r» española; es casi una «y» con la lengua doblada hacia atrás.\n- **消息 xiāoxi**: 息 en tono neutro, corto y flojo.\n- **好奇 hàoqí**: aquí 好 es **cuarto tono**, no tercero.",
+      "items": [
+        { "audio": "他连饭都没吃。", "prompt": "¿Qué palabra lleva el énfasis?", "options": ["饭", "都", "他"], "answer": 0, "explain": "Se destaca lo que va detrás de 连: lo inesperado." },
+        { "audio": "好奇", "options": ["hàoqí", "hǎoqí", "hàoqì"], "answer": 0, "explain": "好 «ser aficionado a» se lee hào." },
+        { "audio": "突然", "options": ["tūrán", "túrán", "tūlán"], "answer": 0, "explain": "Primer tono + segundo; r retrofleja, no l." },
+        { "audio": "消息", "prompt": "¿Cómo suena 息?", "options": ["Neutro, corto", "Primer tono, largo", "Cuarto tono"], "answer": 0 },
+        { "audio": "难道你不知道吗？", "prompt": "¿Qué expresa esta pregunta?", "options": ["Sorpresa o reproche: «¿acaso no lo sabes?»", "Una pregunta neutra", "Una orden"], "answer": 0 }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["连", "突"],
+      "mnemonics": {
+        "连": "辶 (caminar) + 车 (carro): carros que avanzan en fila, uno pegado al otro → unir, seguido. 连…都 «incluso»: hasta el último de la fila.",
+        "突": "穴 (cueva) + 犬 (perro): un perro que sale disparado de la cueva → de golpe, de repente (突然)."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "连 + lo sorprendente + 都 / 也 + verbo",
+      "markdown": "**连…都 / 也** destaca algo **extremo** para sorprender: «incluso…», «hasta…» y, con negación, «ni siquiera…».\n\n> 他**连**饭**都**没吃。 Ni siquiera ha comido.\n> **连**孩子**都**知道。 Hasta los niños lo saben.\n\n- Detrás de 连 va lo que sorprende: el **objeto** (puesto delante del verbo) o el **sujeto**.\n- **都** y **也** son casi iguales aquí; 都 es más frecuente en frases afirmativas.\n- La negación (不 / 没) va **después** de 都 / 也: 连饭都**没**吃.\n- En español podemos poner «ni siquiera» al principio o al final («no ha comido ni siquiera»); en chino el bloque va **siempre delante del verbo**.\n\n**Convención del esqueleto en B1**: el bloque 连 + X + 都 / 也 (+ 不 / 没) va en **Adverbios**, como 比 + B en A2: 他 · **连饭都没** · 吃. Si 连 marca al **sujeto**, va en *Sujeto* (连孩子) y 都 / 也 en *Adverbios*.",
+      "focus": ["adverb"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "连他的名字都", "py": "lián tā de míngzi dōu" }, "verb1": { "zh": "忘", "py": "wàng" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Se me ha olvidado incluso su nombre.", "esOrder": [{ "text": "Se me ha olvidado", "slot": "verb1" }, { "text": "incluso su nombre", "slot": "adverb" }] },
+        { "slots": { "subject": { "zh": "连孩子", "py": "lián háizi" }, "adverb": { "zh": "都", "py": "dōu" }, "verb1": { "zh": "知道", "py": "zhīdào" }, "object": { "zh": "这件事", "py": "zhè jiàn shì" } }, "end": "。", "es": "Hasta los niños saben esto." },
+        { "slots": { "subject": { "zh": "大卫", "py": "Dàwèi" }, "adverb": { "zh": "连西班牙语都", "py": "lián Xībānyáyǔ dōu" }, "aux": { "zh": "会", "py": "huì" }, "verb1": { "zh": "说", "py": "shuō" } }, "end": "。", "es": "David sabe hablar incluso español." },
+        { "slots": { "subject": { "zh": "他", "py": "tā" }, "adverb": { "zh": "连饭都没", "py": "lián fàn dōu méi" }, "verb1": { "zh": "吃", "py": "chī" } }, "end": "，", "es": "Ni siquiera ha comido…" },
+        { "slots": { "subject": { "zh": "小李", "py": "Xiǎo Lǐ" }, "adverb": { "zh": "突然", "py": "tūrán" }, "verb1": { "zh": "走", "py": "zǒu" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "…y Xiao Li se ha ido de repente." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "他", "py": "tā" }, "adverb": { "zh": "连周末也不", "py": "lián zhōumò yě bù" }, "verb1": { "zh": "休息", "py": "xiūxi" } }, "end": "。", "es": "No descansa ni los fines de semana." },
+        { "slots": { "subject": { "zh": "连王老师", "py": "lián Wáng lǎoshī" }, "adverb": { "zh": "都没", "py": "dōu méi" }, "verb1": { "zh": "听说", "py": "tīngshuō" }, "object": { "zh": "这个消息", "py": "zhège xiāoxi" } }, "end": "。", "es": "Ni siquiera la profesora Wang se ha enterado de esta noticia." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "adverb": { "zh": "连这个都不", "py": "lián zhège dōu bù" }, "verb1": { "zh": "知道", "py": "zhīdào" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿Ni siquiera sabes esto?" },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "adverb": { "zh": "难道连他也不", "py": "nándào lián tā yě bú" }, "verb1": { "zh": "认识", "py": "rènshi" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿Acaso no lo conoces ni a él?" }
+      ],
+      "mistakes": [
+        { "wrong": "他连饭没吃。", "right": "他连饭都没吃。", "why": "连 casi nunca va solo: detrás de lo que destaca hace falta 都 o 也." },
+        { "wrong": "他没连饭都吃。", "right": "他连饭都没吃。", "why": "La negación va detrás de 都 / 也, pegada al verbo." },
+        { "wrong": "我忘了连他的名字。", "right": "我连他的名字都忘了。", "why": "Lo que va con 连 se pone delante del verbo, no detrás como en español («olvidé incluso su nombre»)." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "¡No me lo puedo creer!",
+      "lines": [
+        { "speaker": "安娜", "zh": "雨果，告诉你一个消息，你一定会很吃惊！", "py": "Yǔguǒ, gàosu nǐ yí ge xiāoxi, nǐ yídìng huì hěn chījīng!", "es": "Hugo, te cuento una noticia: ¡te vas a quedar de piedra!" },
+        { "speaker": "雨果", "zh": "什么消息？快说，我很好奇。", "py": "Shénme xiāoxi? Kuài shuō, wǒ hěn hàoqí.", "es": "¿Qué noticia? Venga, cuenta, que me pica la curiosidad." },
+        { "speaker": "安娜", "zh": "大卫有女朋友了，是上海人。", "py": "Dàwèi yǒu nǚpéngyou le, shì Shànghǎirén.", "es": "David tiene novia, y es de Shanghái." },
+        { "speaker": "雨果", "zh": "真的吗？他连小李都没告诉！他们住一个房间啊。", "py": "Zhēn de ma? Tā lián Xiǎo Lǐ dōu méi gàosu! Tāmen zhù yí ge fángjiān a.", "es": "¿En serio? ¡No se lo ha dicho ni a Xiao Li! Y eso que comparten habitación." },
+        { "speaker": "安娜", "zh": "其实我本来也不知道。昨天我突然在食堂看见他们一起吃饭。", "py": "Qíshí wǒ běnlái yě bù zhīdào. Zuótiān wǒ tūrán zài shítáng kànjiàn tāmen yìqǐ chī fàn.", "es": "La verdad es que yo tampoco lo sabía. Ayer, de repente, los vi comiendo juntos en el comedor." },
+        { "speaker": "雨果", "zh": "太奇怪了！他为什么连我们也不告诉？", "py": "Tài qíguài le! Tā wèi shénme lián wǒmen yě bú gàosu?", "es": "¡Qué raro! ¿Por qué no nos lo ha dicho ni a nosotros?" },
+        { "speaker": "安娜", "zh": "我觉得他是不好意思。", "py": "Wǒ juéde tā shì bù hǎoyìsi.", "es": "Creo que le da vergüenza." },
+        { "speaker": "雨果", "zh": "难道他怕我们笑他吗？", "py": "Nándào tā pà wǒmen xiào tā ma?", "es": "¿Acaso tiene miedo de que nos riamos de él?" },
+        { "speaker": "安娜", "zh": "哈哈，有可能。你知道吗？他最近连周末都在学汉语。", "py": "Hāhā, yǒu kěnéng. Nǐ zhīdào ma? Tā zuìjìn lián zhōumò dōu zài xué Hànyǔ.", "es": "Ja, ja, puede ser. ¿Sabes qué? Últimamente estudia chino hasta los fines de semana." },
+        { "speaker": "雨果", "zh": "果然！我说呢，他的汉语进步得简直太快了。", "py": "Guǒrán! Wǒ shuō ne, tā de Hànyǔ jìnbù de jiǎnzhí tài kuài le.", "es": "¡Lo sabía! Ya decía yo: su chino ha mejorado rapidísimo." },
+        { "speaker": "安娜", "zh": "可是他们到底是怎么认识的？", "py": "Kěshì tāmen dàodǐ shì zěnme rènshi de?", "es": "Pero ¿cómo se conocieron, eh?" },
+        { "speaker": "雨果", "zh": "我们晚上问问他吧。他终于有女朋友了，真为他高兴！", "py": "Wǒmen wǎnshang wènwen tā ba. Tā zhōngyú yǒu nǚpéngyou le, zhēn wèi tā gāoxìng!", "es": "Esta noche le preguntamos. ¡Por fin tiene novia, me alegro mucho por él!" }
+      ],
+      "notes": "我说呢 (lit. «yo decía…») = «¡ya decía yo!»: se usa cuando algo raro por fin se explica. 果然 confirma lo que uno ya sospechaba. 到底 en una pregunta muestra impaciencia: «pero, a ver, ¿cómo…?». 难道…吗 no pide información: expresa extrañeza o reproche."
+    },
+    { "type": "exercises", "count": 16, "bank": ["g-ye-dou", "g-bu-mei", "g-word-order"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "他" }, "adverb": { "zh": "连饭都没" }, "verb1": { "zh": "吃" } }, "end": "。", "es": "Ni siquiera ha comido." }, "distractors": ["不"] },
+        { "sentence": { "slots": { "subject": { "zh": "连孩子" }, "adverb": { "zh": "都" }, "verb1": { "zh": "知道" }, "object": { "zh": "这件事" } }, "end": "。", "es": "Hasta los niños saben esto." }, "distractors": ["也不"] },
+        { "sentence": { "slots": { "subject": { "zh": "你" }, "adverb": { "zh": "难道连这个也不" }, "verb1": { "zh": "知道" }, "particle": { "zh": "吗" } }, "end": "？", "es": "¿Acaso ni siquiera sabes esto?" } },
+        { "sentence": { "slots": { "time0": { "zh": "上个星期" }, "subject": { "zh": "大卫" }, "adverb": { "zh": "突然" }, "with": { "zh": "跟女朋友一起" }, "verb1": { "zh": "去" }, "object": { "zh": "北京" }, "particle": { "zh": "了" } }, "end": "。", "es": "La semana pasada David se fue de repente a Pekín con su novia." } },
+        { "sentence": { "slots": { "subject": { "zh": "小李" }, "time": { "zh": "最近" }, "adverb": { "zh": "连周末都" }, "place": { "zh": "在图书馆" }, "verb1": { "zh": "准备" }, "object": { "zh": "考试" } }, "end": "。", "es": "Últimamente Xiao Li prepara los exámenes en la biblioteca hasta los fines de semana." } }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "他连小李都没告诉。", "py": "Tā lián Xiǎo Lǐ dōu méi gàosu.", "es": "No se lo ha dicho ni a Xiao Li." },
+        { "zh": "这件事连孩子都知道。", "py": "Zhè jiàn shì lián háizi dōu zhīdào.", "es": "Esto lo saben hasta los niños." },
+        { "zh": "太奇怪了！", "py": "Tài qíguài le!", "es": "¡Qué raro!" },
+        { "zh": "难道你不知道吗？", "py": "Nándào nǐ bù zhīdào ma?", "es": "¿Acaso no lo sabes?" }
+      ],
+      "respond": [
+        { "q": { "zh": "你最近忙吗？", "py": "Nǐ zuìjìn máng ma?", "es": "¿Estás liado últimamente?" }, "model": { "zh": "特别忙，我连周末都不休息。", "py": "Tèbié máng, wǒ lián zhōumò dōu bù xiūxi.", "es": "Muchísimo: no descanso ni los fines de semana." } },
+        { "q": { "zh": "你吃早饭了吗？", "py": "Nǐ chī zǎofàn le ma?", "es": "¿Has desayunado?" }, "model": { "zh": "没有，今天起晚了，我连水都没喝。", "py": "Méiyǒu, jīntiān qǐ wǎn le, wǒ lián shuǐ dōu méi hē.", "es": "No, hoy me he levantado tarde y no he bebido ni agua." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Un día lleno de sorpresas",
+      "text": "今天发生了一件奇怪的事。早上我去教室，突然看见王老师穿着运动衣在跑步。王老师本来不喜欢运动，连楼梯都不想爬，可是今天她跑了五公里！我很好奇，就问她：“老师，您为什么突然开始跑步了？”她笑着说：“其实我想参加学校的比赛。”我听了很吃惊。下午小李告诉我一个消息：这次比赛连校长也要参加。果然，晚上学校的网站上有很多校长跑步的照片，大家都在看。我简直不相信：校长六十多岁了，跑得比我还快！到底谁会跑第一呢？我也很想知道。哈哈，难道我也要开始跑步吗？我想了很长时间，终于决定：明天早上我也去跑步！",
+      "es": "Hoy ha pasado una cosa rara. Por la mañana, de camino a clase, de repente he visto a la profesora Wang corriendo en chándal. A la profesora Wang, en principio, no le gusta el deporte: no quiere subir ni las escaleras, ¡pero hoy ha corrido cinco kilómetros! Me picaba la curiosidad y le he preguntado: «Profesora, ¿por qué se ha puesto de repente a correr?». Me ha dicho riéndose: «La verdad es que quiero participar en la carrera de la universidad». Me he quedado de piedra. Por la tarde Xiao Li me ha dado una noticia: en esta carrera participa hasta el rector. Efectivamente, por la noche en la web de la universidad había muchas fotos del rector corriendo, y todo el mundo las estaba viendo. No me lo podía creer: el rector tiene más de sesenta años ¡y corre más rápido que yo! ¿Quién quedará primero? Yo también me muero por saberlo. Ja, ja, ¿acaso tengo que ponerme a correr yo también? Lo he pensado mucho rato y por fin lo he decidido: ¡mañana por la mañana yo también salgo a correr!",
+      "questions": [
+        { "q": "¿Qué hacía la profesora Wang por la mañana?", "options": ["跑步", "上课", "爬山"], "answer": 0 },
+        { "q": "¿Qué significa 连楼梯都不想爬?", "options": ["No quiere subir ni las escaleras", "Sube las escaleras corriendo", "Le gusta subir escaleras"], "answer": 0 },
+        { "q": "¿Quién más participa en la carrera?", "options": ["校长", "小李", "安娜"], "answer": 0 },
+        { "q": "¿Qué decide Hugo al final?", "options": ["Salir a correr mañana", "Ver las fotos", "No participar"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

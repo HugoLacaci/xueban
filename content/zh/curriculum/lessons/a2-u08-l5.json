@@ -1,0 +1,142 @@
+{
+  "id": "a2-u08-l5",
+  "title": "Por ti, para ti: 给 · 对 · 为 · 向 + persona (y repaso)",
+  "zh": "我为你高兴",
+  "goal": "Decir para quién, a quién o por quién haces algo con 给 / 对 / 为 / 向 + persona, y repasar la unidad construyendo frases completas por la ciudad.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "为", "pinyin": "wèi", "es": "por, para (alguien)", "note": "为你高兴 = me alegro por ti. Es el 为 de 为什么." },
+    { "hanzi": "方便", "pinyin": "fāngbiàn", "es": "cómodo, práctico; bien comunicado", "note": "交通很方便 = está muy bien comunicado." },
+    { "hanzi": "出租", "pinyin": "chūzū", "es": "alquilar (dar en alquiler)", "note": "出租车 = taxi; 房子出租 = se alquila piso." },
+    { "hanzi": "公路", "pinyin": "gōnglù", "es": "carretera" },
+    { "hanzi": "道路", "pinyin": "dàolù", "es": "vía, calzada, camino", "note": "Más formal que 路." },
+    { "hanzi": "菜市场", "pinyin": "càishìchǎng", "es": "mercado (de abastos)" },
+    { "hanzi": "市", "pinyin": "shì", "es": "ciudad, municipio; mercado", "note": "上海市 = el municipio de Shanghái." },
+    { "hanzi": "市长", "pinyin": "shìzhǎng", "es": "alcalde, alcaldesa", "note": "长 aquí se lee zhǎng («jefe»)." },
+    { "hanzi": "中心", "pinyin": "zhōngxīn", "es": "centro", "note": "市中心 = el centro de la ciudad." },
+    { "hanzi": "座", "pinyin": "zuò", "es": "(clasificador de edificios, montañas, puentes, ciudades)", "note": "一座楼, 一座山, 一座城市." }
+  ],
+  "extraVocab": ["菜市场"],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "我给你打电话。", "py": "Wǒ gěi nǐ dǎ diànhuà.", "es": "Te llamo (por teléfono)." },
+        { "zh": "王老师对我们很好。", "py": "Wáng lǎoshī duì wǒmen hěn hǎo.", "es": "La profesora Wang es muy buena con nosotros." },
+        { "zh": "我们都为你高兴。", "py": "Wǒmen dōu wèi nǐ gāoxìng.", "es": "Todos nos alegramos por ti." },
+        { "zh": "请向你妈妈问好。", "py": "Qǐng xiàng nǐ māma wèn hǎo.", "es": "Dale recuerdos a tu madre." }
+      ]
+    },
+    { "type": "vocab", "title": "El centro de la ciudad", "words": ["为", "方便", "出租", "公路", "道路", "菜市场", "市", "市长", "中心", "座"] },
+    {
+      "type": "phonetics-drill",
+      "title": "shì, shì, shì: 是 · 市 · 事 · 试 y la entonación de la pregunta",
+      "markdown": "Hoy aparece **市 shì** (ciudad, mercado), que suena **exactamente igual** que 是, 事 y 试: cuarto tono, *sh* con la lengua hacia atrás y la «i» vacía. Solo el contexto (y el carácter) los distingue: 市中心, 上海市, 菜市场.\n\n**为** tiene dos lecturas: **wèi** (por, para: 为你, 为什么) y **wéi** (en palabras más cultas que verás más adelante). Hoy, siempre **wèi**.\n\n**Entonación**: en chino la pregunta con 吗 **no sube al final** como en español: los tonos de cada sílaba se mantienen y 吗 es corto y neutro. Lo que marca la pregunta es 吗 (o el interrogativo), no la melodía. Si subes mucho la voz, puedes cambiar el tono de la última sílaba.",
+      "items": [
+        { "audio": "市中心", "options": ["shì zhōngxīn", "sì zhōngxīn", "shí zhōngxīn"], "answer": 0, "explain": "市 = shì, 4.º tono, igual que 是." },
+        { "audio": "市长", "options": ["shìzhǎng", "shìcháng", "sìzhǎng"], "answer": 0, "explain": "长 = zhǎng cuando significa «jefe»; cháng es «largo»." },
+        { "audio": "为你高兴", "options": ["wèi nǐ gāoxìng", "wéi nǐ gāoxìng", "wěi nǐ gāoxìng"], "answer": 0, "explain": "为 «por, para» = wèi (4.º)." },
+        { "audio": "交通方便吗？", "prompt": "¿Qué marca la pregunta?", "options": ["La partícula 吗", "Que la voz sube mucho al final", "El tono de 便"], "answer": 0, "explain": "便 mantiene su 4.º tono; 吗 hace la pregunta." },
+        { "audio": "菜市场", "options": ["càishìchǎng", "cáishìchǎng", "càisìchǎng"], "answer": 0, "explain": "菜 cài (4.º) con c aspirada; 市 con sh." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["市", "为"],
+      "mnemonics": {
+        "市": "亠 (un tejadillo) + 巾 (una tela colgada): el toldo y la tela de un puesto → mercado; donde hay mercado, hay ciudad.",
+        "为": "En la escritura antigua era una mano que guía a un elefante para que trabaje: hacer algo por alguien → «por, para»."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "给 / 对 / 为 / 向 + persona, delante del verbo",
+      "markdown": "Como 跟 + persona (U11), estas preposiciones van **delante del verbo**, nunca al final como en español («llamo **a ti**», «es buena **con nosotros**»):\n\n| | uso | ejemplo |\n|---|---|---|\n| **给** | a / para quién va algo (llamar, mandar, comprar) | 我**给你**打电话 |\n| **对** | hacia quién (decir, tratar, actitud) | 她**对我**很好 · **对他**说 |\n| **为** | por quién, en beneficio de quién | 我们**为你**高兴 · **为大家**做菜 |\n| **向** | hacia quién (saludar, aprender, pedir) | **向老师**问好 · **向他**学习 |\n\nY recuerda (lección 1): **往 / 向 + dirección** (往前走, 向左看).\n\n**Convención del esqueleto**: preposición + **persona** en el hueco **Con quién**; preposición + **dirección** en **Adverbios**. Los adverbios (都, 也, 没, 别) y auxiliares (想, 应该) van **delante**: 我们**都**为你高兴, 我**想**给妈妈买….\n\nUn caso especial: con 对 + persona + adjetivo (王老师**对我们很好**) el 很 va detrás de 对我们, así que en el esqueleto «很好» va en **Verbo 1**.",
+      "focus": ["with"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "with": { "zh": "给你", "py": "gěi nǐ" }, "verb1": { "zh": "打", "py": "dǎ" }, "object": { "zh": "电话", "py": "diànhuà" } }, "end": "。", "es": "Te llamo.", "esOrder": [{ "text": "Te", "slot": "with" }, { "text": "llamo", "slot": "verb1" }] },
+        { "slots": { "subject": { "zh": "王老师", "py": "Wáng lǎoshī" }, "with": { "zh": "对我们", "py": "duì wǒmen" }, "verb1": { "zh": "很好", "py": "hěn hǎo" } }, "end": "。", "es": "La profesora Wang es muy buena con nosotros.", "esOrder": [{ "text": "La profesora Wang", "slot": "subject" }, { "text": "es muy buena", "slot": "verb1" }, { "text": "con nosotros", "slot": "with" }] },
+        { "slots": { "subject": { "zh": "我们", "py": "wǒmen" }, "adverb": { "zh": "都", "py": "dōu" }, "with": { "zh": "为你", "py": "wèi nǐ" }, "verb1": { "zh": "高兴", "py": "gāoxìng" } }, "end": "。", "es": "Todos nos alegramos por ti.", "esOrder": [{ "text": "Todos", "slot": "adverb" }, { "text": "nos alegramos", "slot": "verb1" }, { "text": "por ti", "slot": "with" }] },
+        { "slots": { "subject": { "zh": "安娜", "py": "Ānnà" }, "with": { "zh": "为大家", "py": "wèi dàjiā" }, "verb1": { "zh": "做了", "py": "zuò le" }, "object": { "zh": "很多西班牙菜", "py": "hěn duō Xībānyá cài" } }, "end": "。", "es": "Ana ha hecho mucha comida española para todos." },
+        { "slots": { "subject": { "zh": "我们", "py": "wǒmen" }, "aux": { "zh": "应该", "py": "yīnggāi" }, "with": { "zh": "向王老师", "py": "xiàng Wáng lǎoshī" }, "verb1": { "zh": "学习", "py": "xuéxí" } }, "end": "。", "es": "Deberíamos aprender de la profesora Wang." },
+        { "slots": { "subject": { "zh": "市长", "py": "shìzhǎng" }, "with": { "zh": "对大家", "py": "duì dàjiā" }, "verb1": { "zh": "说了", "py": "shuō le" }, "object": { "zh": "几句话", "py": "jǐ jù huà" } }, "end": "。", "es": "El alcalde ha dicho unas palabras a todos." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "他", "py": "tā" }, "adverb": { "zh": "没", "py": "méi" }, "with": { "zh": "给我", "py": "gěi wǒ" }, "verb1": { "zh": "发", "py": "fā" }, "object": { "zh": "微信", "py": "wēixìn" } }, "end": "。", "es": "No me ha mandado ningún WeChat." },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "adverb": { "zh": "别", "py": "bié" }, "with": { "zh": "对他", "py": "duì tā" }, "verb1": { "zh": "说", "py": "shuō" } }, "end": "。", "es": "No se lo digas a él." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "aux": { "zh": "能", "py": "néng" }, "with": { "zh": "给我们", "py": "gěi wǒmen" }, "verb1": { "zh": "介绍", "py": "jièshào" }, "complement": { "zh": "一下", "py": "yíxià" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿Nos lo puedes presentar un poco?" },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "with": { "zh": "向谁", "py": "xiàng shéi" }, "verb1": { "zh": "问", "py": "wèn" }, "object": { "zh": "路", "py": "lù" }, "particle": { "zh": "了", "py": "le" } }, "end": "？", "es": "¿A quién le has preguntado el camino?" }
+      ],
+      "mistakes": [
+        { "wrong": "我打电话给你。", "right": "我给你打电话。", "why": "La forma estándar pone 给 + persona delante del verbo (la otra se oye en el sur, pero no la uses como modelo)." },
+        { "wrong": "他很好对我。", "right": "他对我很好。", "why": "对 + persona va delante del adjetivo, no detrás como en español («bueno conmigo»)." },
+        { "wrong": "我给他说了。", "right": "我对他说了。 / 我跟他说了。", "why": "Con 说 se usa 对 o 跟; 给他说 es dialectal." },
+        { "wrong": "我往老师学习。", "right": "我向老师学习。", "why": "Con personas, 向; 往 solo con direcciones." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "En taxi al mercado del centro",
+      "lines": [
+        { "speaker": "司机", "zh": "你好，去哪儿？", "py": "Nǐ hǎo, qù nǎr?", "es": "Hola, ¿adónde vamos?" },
+        { "speaker": "雨果", "zh": "你好，我去市中心的菜市场。", "py": "Nǐ hǎo, wǒ qù shì zhōngxīn de càishìchǎng.", "es": "Hola, voy al mercado del centro." },
+        { "speaker": "司机", "zh": "好。今天公路上车很多，我们走小路吧。", "py": "Hǎo. Jīntiān gōnglù shang chē hěn duō, wǒmen zǒu xiǎo lù ba.", "es": "Vale. Hoy hay mucho coche en la carretera: vamos por calles pequeñas." },
+        { "speaker": "雨果", "zh": "好的。市中心的交通是不是常常不好？", "py": "Hǎo de. Shì zhōngxīn de jiāotōng shì bu shì chángcháng bù hǎo?", "es": "Vale. ¿En el centro el tráfico suele estar mal?" },
+        { "speaker": "司机", "zh": "对，上下班的时候道路上都是车。你是留学生吧？你的汉语说得真好！", "py": "Duì, shàng xià bān de shíhou dàolù shang dōu shì chē. Nǐ shì liúxuéshēng ba? Nǐ de Hànyǔ shuō de zhēn hǎo!", "es": "Sí, a la hora de entrar y salir del trabajo las calles están llenas de coches. Eres estudiante extranjero, ¿verdad? ¡Hablas muy bien chino!" },
+        { "speaker": "雨果", "zh": "谢谢！我在交通大学学习。今天我为一个朋友买菜，她过生日。", "py": "Xièxie! Wǒ zài Jiāotōng Dàxué xuéxí. Jīntiān wǒ wèi yí ge péngyou mǎi cài, tā guò shēngrì.", "es": "¡Gracias! Estudio en la Jiaotong. Hoy hago la compra para una amiga: es su cumpleaños." },
+        { "speaker": "司机", "zh": "你对朋友真好！菜市场就在前面那座楼后面。", "py": "Nǐ duì péngyou zhēn hǎo! Càishìchǎng jiù zài qiánmian nà zuò lóu hòumian.", "es": "¡Qué bien te portas con tus amigos! El mercado está justo detrás de aquel edificio de ahí delante." },
+        { "speaker": "雨果", "zh": "我在这儿下车方便吗？", "py": "Wǒ zài zhèr xià chē fāngbiàn ma?", "es": "¿Le va bien que me baje aquí?" },
+        { "speaker": "司机", "zh": "方便。我给你停在路边。", "py": "Fāngbiàn. Wǒ gěi nǐ tíng zài lùbiān.", "es": "Sin problema. Te dejo aquí, junto a la acera." },
+        { "speaker": "雨果", "zh": "谢谢！我扫码吧。", "py": "Xièxie! Wǒ sǎo mǎ ba.", "es": "¡Gracias! Pago con el código, ¿vale?" },
+        { "speaker": "司机", "zh": "好的。再见，你朋友生日快乐！", "py": "Hǎo de. Zàijiàn, nǐ péngyou shēngrì kuàilè!", "es": "Perfecto. ¡Adiós, y feliz cumpleaños a tu amiga!" }
+      ],
+      "notes": "En los taxis de Shanghái se paga casi siempre escaneando un código QR (扫码) con WeChat o Alipay. 方便吗？ es la forma educada de preguntar si algo le viene bien al otro (¿le va bien parar aquí?)."
+    },
+    { "type": "exercises", "count": 20, "bank": ["g-gei", "g-lai-qu", "g-zai", "u07", "u08"] },
+    {
+      "type": "sentence-builder",
+      "title": "Construye la frase completa",
+      "items": [
+        { "sentence": { "slots": { "time0": { "zh": "明天上午" }, "subject": { "zh": "我" }, "aux": { "zh": "要" }, "with": { "zh": "跟小李一起" }, "verb1": { "zh": "去市中心的银行" }, "verb2": { "zh": "换" }, "object": { "zh": "钱" } }, "end": "。", "es": "Mañana por la mañana voy a ir con Xiao Li al banco del centro a cambiar dinero." }, "distractors": ["在"] },
+        { "sentence": { "slots": { "time0": { "zh": "星期六下午" }, "subject": { "zh": "我们" }, "aux": { "zh": "想" }, "with": { "zh": "跟大卫一起" }, "verb1": { "zh": "坐公共汽车" }, "verb2": { "zh": "去" }, "object": { "zh": "动物园" } }, "end": "。", "es": "El sábado por la tarde queremos ir con David al zoo en autobús." } },
+        { "sentence": { "slots": { "time0": { "zh": "今天晚上" }, "subject": { "zh": "你" }, "aux": { "zh": "应该" }, "with": { "zh": "给妈妈" }, "verb1": { "zh": "打" }, "object": { "zh": "一个电话" } }, "end": "。", "es": "Esta noche deberías llamar a tu madre." }, "distractors": ["对"] },
+        { "sentence": { "slots": { "subject": { "zh": "王老师" }, "time": { "zh": "昨天" }, "adverb": { "zh": "也" }, "with": { "zh": "为我们" }, "verb1": { "zh": "做了" }, "object": { "zh": "很多好吃的中国菜" } }, "end": "。", "es": "Ayer la profesora Wang también nos hizo mucha comida china buenísima." } },
+        { "sentence": { "slots": { "place": { "zh": "市中心的广场上" }, "verb1": { "zh": "站着" }, "object": { "zh": "很多穿着红衣服的人" } }, "end": "。", "es": "En la plaza del centro hay mucha gente de pie vestida de rojo." }, "distractors": ["有", "在"] },
+        { "sentence": { "slots": { "subject": { "zh": "你" }, "adverb": { "zh": "先一直往东" }, "verb1": { "zh": "走" }, "complement": { "zh": "十分钟" } }, "end": "。", "es": "Primero sigue todo recto hacia el este diez minutos." }, "distractors": ["往前走"] },
+        { "sentence": { "slots": { "subject": { "zh": "小李" }, "time": { "zh": "下午五点" }, "adverb": { "zh": "就" }, "verb1": { "zh": "回" }, "object": { "zh": "宿舍" }, "complement": { "zh": "去" }, "particle": { "zh": "了" } }, "end": "。", "es": "Xiao Li ya se volvió a la residencia a las cinco de la tarde." }, "distractors": ["来"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "我给你打电话。", "py": "Wǒ gěi nǐ dǎ diànhuà.", "es": "Te llamo." },
+        { "zh": "王老师对我们很好。", "py": "Wáng lǎoshī duì wǒmen hěn hǎo.", "es": "La profesora Wang es muy buena con nosotros." },
+        { "zh": "我们都为你高兴。", "py": "Wǒmen dōu wèi nǐ gāoxìng.", "es": "Todos nos alegramos por ti." },
+        { "zh": "我们应该向王老师学习。", "py": "Wǒmen yīnggāi xiàng Wáng lǎoshī xuéxí.", "es": "Deberíamos aprender de la profesora Wang." },
+        { "zh": "你一直往前走，银行在右边。", "py": "Nǐ yìzhí wǎng qián zǒu, yínháng zài yòubian.", "es": "Sigue todo recto: el banco está a la derecha." }
+      ],
+      "respond": [
+        { "q": { "zh": "你住的地方交通方便吗？", "py": "Nǐ zhù de dìfang jiāotōng fāngbiàn ma?", "es": "¿Está bien comunicado el sitio donde vives?" }, "model": { "zh": "很方便，旁边就是地铁站。", "py": "Hěn fāngbiàn, pángbiān jiù shì dìtiězhàn.", "es": "Muy bien: justo al lado está el metro." } },
+        { "q": { "zh": "你常常给家人打电话吗？", "py": "Nǐ chángcháng gěi jiārén dǎ diànhuà ma?", "es": "¿Llamas a menudo a tu familia?" }, "model": { "zh": "常常，我每个星期给妈妈打两次电话。", "py": "Chángcháng, wǒ měi ge xīngqī gěi māma dǎ liǎng cì diànhuà.", "es": "Sí, llamo a mi madre dos veces por semana." } },
+        { "q": { "zh": "请问，市中心怎么走？", "py": "Qǐngwèn, shì zhōngxīn zěnme zǒu?", "es": "Perdona, ¿cómo se va al centro?" }, "model": { "zh": "你往北走，到了红绿灯坐地铁，三站就到了。", "py": "Nǐ wǎng běi zǒu, dào le hónglǜdēng zuò dìtiě, sān zhàn jiù dào le.", "es": "Ve hacia el norte; al llegar al semáforo coge el metro: en tres paradas estás." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Mi barrio en Shanghái",
+      "text": "我住在上海市的东北边，离市中心不太远。我家旁边有一座很高的楼，一层是银行，上面都是出租的房子。楼后面有一个菜市场，东西又新又便宜。这里交通很方便：往前走五分钟就是地铁站，路边还停着很多共享单车。上个月，市长来我们这儿看了看新的道路，还对大家说：“去年这里没有公路，现在大家出门方便多了！”我很喜欢这里。",
+      "es": "Vivo en el noreste del municipio de Shanghái, no muy lejos del centro. Junto a mi casa hay un edificio muy alto: en la planta baja hay un banco y, arriba, todo son pisos de alquiler. Detrás del edificio hay un mercado con productos frescos y baratos. La zona está muy bien comunicada: andando cinco minutos hacia delante está la estación de metro, y en la acera hay además muchas bicis compartidas aparcadas. El mes pasado vino el alcalde a ver las calles nuevas y dijo a todos: «El año pasado aquí no había carretera; ¡ahora salir es mucho más cómodo!». Me gusta mucho vivir aquí.",
+      "questions": [
+        { "q": "¿Qué hay en la planta baja del edificio?", "options": ["Un banco", "Un mercado", "Un aparcamiento"], "answer": 0 },
+        { "q": "¿Cómo es el mercado?", "options": ["Fresco y barato", "Caro y lejos", "Pequeño y sucio"], "answer": 0 },
+        { "q": "¿Cuánto se tarda en llegar al metro?", "options": ["Cinco minutos andando", "Diez minutos en bici", "Tres paradas de autobús"], "answer": 0 },
+        { "q": "¿Quién vino a ver las calles nuevas?", "options": ["市长", "王老师", "司机"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

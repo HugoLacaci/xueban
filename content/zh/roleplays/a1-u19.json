@@ -1,0 +1,149 @@
+{
+  "unitId": "a1-u19",
+  "scenarios": [
+    {
+      "id": "a1-u19-doctor",
+      "title": "En el médico",
+      "zh": "你哪儿不舒服？",
+      "level": 1,
+      "setting": "Hugo lleva dos días encontrándose mal y va al hospital del campus de Jiaotong. Tú (la app) eres la médica.",
+      "role": "médica",
+      "roleZh": "医生",
+      "voice": "f",
+      "goals": ["Decir qué te duele y cómo te encuentras", "Contar lo que hiciste y lo que no (了 / 没)", "Preguntar por las medicinas", "Preguntar qué no puedes hacer y si puedes ir a clase"],
+      "vocab": ["不舒服", "疼", "发烧", "没", "药", "休息", "别", "请假"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "你好，请坐。你哪儿不舒服？", "py": "Nǐ hǎo, qǐng zuò. Nǐ nǎr bù shūfu?", "es": "Hola, siéntate. ¿Qué te pasa?" },
+          "user": [
+            { "zh": "医生，我头疼，嗓子也很疼。", "py": "Yīshēng, wǒ tóu téng, sǎngzi yě hěn téng.", "es": "Doctora, me duele la cabeza, y también mucho la garganta.", "keywords": ["头疼", "嗓子"], "next": "n2", "goal": 0 },
+            { "zh": "我肚子疼，不想吃饭。", "py": "Wǒ dùzi téng, bù xiǎng chī fàn.", "es": "Me duele la barriga y no tengo ganas de comer.", "keywords": ["肚子疼", "不想吃"], "next": "n3", "goal": 0 }
+          ],
+          "hint": "Persona + parte del cuerpo + 疼: 我头疼, 我肚子疼."
+        },
+        "n2": {
+          "npc": { "zh": "你发烧了吗？", "py": "Nǐ fāshāo le ma?", "es": "¿Has tenido fiebre?" },
+          "user": [
+            { "zh": "昨天晚上发烧了，今天没发烧。", "py": "Zuótiān wǎnshang fāshāo le, jīntiān méi fāshāo.", "es": "Anoche sí; hoy, no.", "keywords": ["发烧了", "没发烧"], "next": "n4", "goal": 1 },
+            { "zh": "我不知道，我身上很热。", "py": "Wǒ bù zhīdào, wǒ shēnshang hěn rè.", "es": "No lo sé; tengo el cuerpo muy caliente.", "keywords": ["身上", "热"], "next": "n4", "goal": 1 }
+          ],
+          "hint": "Lo que pasó: …了. Lo que no pasó: 没 + verbo, ¡sin 了!"
+        },
+        "n3": {
+          "npc": { "zh": "你昨天吃什么了？", "py": "Nǐ zuótiān chī shénme le?", "es": "¿Qué comiste ayer?" },
+          "user": [
+            { "zh": "我吃了很多辣的菜，也喝了冷水。", "py": "Wǒ chī le hěn duō là de cài, yě hē le lěng shuǐ.", "es": "Comí mucha comida picante y también bebí agua fría.", "keywords": ["吃了", "冷水"], "next": "n4", "goal": 1 },
+            { "zh": "我昨天没吃饭，只喝了水。", "py": "Wǒ zuótiān méi chī fàn, zhǐ hē le shuǐ.", "es": "Ayer no comí; solo bebí agua.", "keywords": ["没吃饭", "喝了"], "next": "n4", "goal": 1 }
+          ],
+          "hint": "了 detrás del verbo cuando el objeto lleva cantidad (很多…); 没 + verbo para lo que no hiciste."
+        },
+        "n4": {
+          "npc": { "zh": "你吃药了没有？", "py": "Nǐ chī yào le méiyǒu?", "es": "¿Has tomado alguna medicina?" },
+          "user": [
+            { "zh": "没吃。我要吃药吗？", "py": "Méi chī. Wǒ yào chī yào ma?", "es": "No. ¿Tengo que tomar medicinas?", "keywords": ["没吃", "吃药"], "next": "n5", "goal": 2 },
+            { "zh": "吃了，还很不舒服。", "py": "Chī le, hái hěn bù shūfu.", "es": "Sí, pero sigo encontrándome muy mal.", "keywords": ["吃了", "不舒服"], "next": "n5", "goal": 2 }
+          ],
+          "hint": "Respuesta corta: 吃了 / 没吃 (¡no 没吃了!)."
+        },
+        "n5": {
+          "npc": { "zh": "这是药，一天吃三次。你最好多喝热水，多休息。", "py": "Zhè shì yào, yì tiān chī sān cì. Nǐ zuìhǎo duō hē rè shuǐ, duō xiūxi.", "es": "Aquí tienes la medicina: tres veces al día. Más vale que bebas mucha agua caliente y descanses mucho." },
+          "user": [
+            { "zh": "我能喝冷水吗？", "py": "Wǒ néng hē lěng shuǐ ma?", "es": "¿Puedo beber agua fría?", "keywords": ["冷水"], "next": "n6", "goal": 3 },
+            { "zh": "我明天能去上课吗？", "py": "Wǒ míngtiān néng qù shàngkè ma?", "es": "¿Mañana puedo ir a clase?", "keywords": ["上课", "明天"], "next": "n7", "goal": 3 }
+          ],
+          "hint": "Pregunta qué puedes hacer: 我能…吗？"
+        },
+        "n6": {
+          "npc": { "zh": "别喝冷水，也别吃辣的。", "py": "Bié hē lěng shuǐ, yě bié chī là de.", "es": "No bebas agua fría ni comas picante." },
+          "user": [
+            { "zh": "好的。我明天能去上课吗？", "py": "Hǎo de. Wǒ míngtiān néng qù shàngkè ma?", "es": "De acuerdo. ¿Mañana puedo ir a clase?", "keywords": ["上课"], "next": "n7", "goal": 3 },
+            { "zh": "好，我不喝了。谢谢医生！", "py": "Hǎo, wǒ bù hē le. Xièxie yīshēng!", "es": "Vale, ya no bebo más. ¡Gracias, doctora!", "keywords": ["不喝了", "谢谢"], "next": "n8" }
+          ],
+          "hint": "别 = «no hagas»; 不…了 = «ya no»."
+        },
+        "n7": {
+          "npc": { "zh": "明天你最好请假，在宿舍休息。后天可以去。", "py": "Míngtiān nǐ zuìhǎo qǐngjià, zài sùshè xiūxi. Hòutiān kěyǐ qù.", "es": "Mañana mejor pide permiso y descansa en la residencia. Pasado mañana ya puedes ir." },
+          "user": [
+            { "zh": "好，我明天请假。谢谢医生！", "py": "Hǎo, wǒ míngtiān qǐngjià. Xièxie yīshēng!", "es": "Vale, mañana pido permiso. ¡Gracias, doctora!", "keywords": ["请假", "谢谢"], "next": "n8" },
+            { "zh": "明天有考试，我不能请假……", "py": "Míngtiān yǒu kǎoshì, wǒ bù néng qǐngjià……", "es": "Mañana tengo examen, no puedo faltar…", "keywords": ["考试", "不能"], "next": "n8" }
+          ],
+          "hint": "Acepta (我明天请假) o explica por qué no puedes (不能请假)."
+        },
+        "n8": {
+          "npc": { "zh": "身体最重要！别累了，再见。", "py": "Shēntǐ zuì zhòngyào! Bié lèi le, zàijiàn.", "es": "¡La salud es lo primero! No te canses, adiós." },
+          "end": true,
+          "feedback": "Has descrito tus síntomas (头疼, 不舒服, 发烧了), has contado lo que hiciste y lo que no (吃了 / 没吃, sin 了 con 没) y has entendido los consejos con 最好 y las prohibiciones con 别."
+        }
+      }
+    },
+    {
+      "id": "a1-u19-ask-help",
+      "title": "Pedir ayuda: no me encuentro bien",
+      "zh": "我有点儿不舒服",
+      "level": 1,
+      "setting": "En la biblioteca, Hugo empieza a encontrarse mal de repente. Ana está a su lado. Tú (la app) eres 安娜.",
+      "role": "Ana",
+      "roleZh": "安娜",
+      "voice": "f",
+      "goals": ["Decir que no te encuentras bien y qué te duele", "Contestar si has comido o dormido (了 / 没)", "Decidir si ir al hospital", "Aceptar o rechazar ayuda"],
+      "vocab": ["不舒服", "疼", "没", "医院", "看病", "别", "最好", "休息"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "雨果，你怎么了？你的脸很白。", "py": "Yǔguǒ, nǐ zěnme le? Nǐ de liǎn hěn bái.", "es": "Hugo, ¿qué te pasa? Estás muy pálido." },
+          "user": [
+            { "zh": "我有点儿不舒服，头很疼。", "py": "Wǒ yǒudiǎnr bù shūfu, tóu hěn téng.", "es": "No me encuentro muy bien: me duele mucho la cabeza.", "keywords": ["不舒服", "头"], "next": "n2", "goal": 0 },
+            { "zh": "我眼睛疼，也很累。", "py": "Wǒ yǎnjing téng, yě hěn lèi.", "es": "Me duelen los ojos y estoy muy cansado.", "keywords": ["眼睛", "累"], "next": "n2", "goal": 0 }
+          ],
+          "hint": "有点儿不舒服 + qué te duele (头疼, 眼睛疼)."
+        },
+        "n2": {
+          "npc": { "zh": "你今天吃饭了吗？", "py": "Nǐ jīntiān chīfàn le ma?", "es": "¿Has comido hoy?" },
+          "user": [
+            { "zh": "没吃。我早上没吃早饭，中午也没吃。", "py": "Méi chī. Wǒ zǎoshang méi chī zǎofàn, zhōngwǔ yě méi chī.", "es": "No. Por la mañana no he desayunado y a mediodía tampoco he comido.", "keywords": ["没吃"], "next": "n3", "goal": 1 },
+            { "zh": "吃了。我昨天晚上没睡觉。", "py": "Chī le. Wǒ zuótiān wǎnshang méi shuìjiào.", "es": "Sí. Pero anoche no dormí.", "keywords": ["吃了", "没睡觉"], "next": "n4", "goal": 1 }
+          ],
+          "hint": "吃了 / 没吃. Para lo que no hiciste: 没 + verbo, sin 了."
+        },
+        "n3": {
+          "npc": { "zh": "你要吃饭！我们去食堂吧。", "py": "Nǐ yào chīfàn! Wǒmen qù shítáng ba.", "es": "¡Tienes que comer! Vamos al comedor." },
+          "user": [
+            { "zh": "好，谢谢。我们去食堂吃饭吧。", "py": "Hǎo, xièxie. Wǒmen qù shítáng chīfàn ba.", "es": "Vale, gracias. Vamos a comer al comedor.", "keywords": ["食堂"], "next": "n6", "goal": 3 },
+            { "zh": "我不想吃。我想去医院看病。", "py": "Wǒ bù xiǎng chī. Wǒ xiǎng qù yīyuàn kànbìng.", "es": "No me apetece comer. Quiero ir al médico.", "keywords": ["医院", "看病"], "next": "n5", "goal": 2 }
+          ],
+          "hint": "Acepta (好，谢谢) o propón ir al hospital (去医院看病)."
+        },
+        "n4": {
+          "npc": { "zh": "你没睡觉？你最好回宿舍休息。", "py": "Nǐ méi shuìjiào? Nǐ zuìhǎo huí sùshè xiūxi.", "es": "¿No dormiste? Más vale que vuelvas a la residencia a descansar." },
+          "user": [
+            { "zh": "好，我现在回宿舍。", "py": "Hǎo, wǒ xiànzài huí sùshè.", "es": "Vale, vuelvo ahora a la residencia.", "keywords": ["回宿舍"], "next": "n6", "goal": 3 },
+            { "zh": "我头很疼，我们去医院吧。", "py": "Wǒ tóu hěn téng, wǒmen qù yīyuàn ba.", "es": "Me duele mucho la cabeza: vamos al hospital.", "keywords": ["医院"], "next": "n5", "goal": 2 }
+          ],
+          "hint": "Sigue el consejo o propón otra cosa."
+        },
+        "n5": {
+          "npc": { "zh": "好，我跟你一起去。医院不远，我们走路去。", "py": "Hǎo, wǒ gēn nǐ yìqǐ qù. Yīyuàn bù yuǎn, wǒmen zǒulù qù.", "es": "Vale, voy contigo. El hospital no está lejos: vamos andando." },
+          "user": [
+            { "zh": "谢谢你，安娜！", "py": "Xièxie nǐ, Ānnà!", "es": "¡Gracias, Ana!", "keywords": ["谢谢"], "next": "n7" },
+            { "zh": "你不用跟我去，你在这儿学习吧。", "py": "Nǐ búyòng gēn wǒ qù, nǐ zài zhèr xuéxí ba.", "es": "No hace falta que vengas; quédate aquí estudiando.", "keywords": ["不用"], "next": "n7" }
+          ],
+          "hint": "Da las gracias o rechaza con 不用."
+        },
+        "n6": {
+          "npc": { "zh": "好。别学习了，身体最重要！", "py": "Hǎo. Bié xuéxí le, shēntǐ zuì zhòngyào!", "es": "Bien. Deja ya de estudiar: ¡la salud es lo primero!" },
+          "user": [
+            { "zh": "对，我明天再学习。谢谢你！", "py": "Duì, wǒ míngtiān zài xuéxí. Xièxie nǐ!", "es": "Sí, ya estudiaré mañana. ¡Gracias!", "keywords": ["明天", "谢谢"], "next": "n7" },
+            { "zh": "好，我不学习了。", "py": "Hǎo, wǒ bù xuéxí le.", "es": "Vale, ya no estudio más.", "keywords": ["不学习了"], "next": "n7" }
+          ],
+          "hint": "别…了 = deja de…; 不…了 = ya no…"
+        },
+        "n7": {
+          "npc": { "zh": "不客气！你好好休息。", "py": "Bú kèqi! Nǐ hǎohǎo xiūxi.", "es": "¡De nada! Descansa bien." },
+          "end": true,
+          "feedback": "Has dicho que no te encontrabas bien, has contado lo que no habías hecho con 没 (没吃, 没睡觉) y has entendido 最好, 别…了 y 不用: las negaciones y consejos de la unidad."
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,685 @@
+{
+  "id": "a2-u04-l3",
+  "title": "¡No bebas tanto! 别 y 不要",
+  "zh": "别喝太多咖啡",
+  "goal": "Prohibir y aconsejar con 别 / 不要 (+ 了), pedir bebidas y brindar con 干杯.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    {
+      "hanzi": "不要",
+      "pinyin": "búyào",
+      "es": "no (prohibición); no querer"
+    },
+    {
+      "hanzi": "咖啡",
+      "pinyin": "kāfēi",
+      "es": "café"
+    },
+    {
+      "hanzi": "可乐",
+      "pinyin": "kělè",
+      "es": "cola (refresco)"
+    },
+    {
+      "hanzi": "啤酒",
+      "pinyin": "píjiǔ",
+      "es": "cerveza"
+    },
+    {
+      "hanzi": "果汁",
+      "pinyin": "guǒzhī",
+      "es": "zumo"
+    },
+    {
+      "hanzi": "奶茶",
+      "pinyin": "nǎichá",
+      "es": "té con leche (bubble tea)"
+    },
+    {
+      "hanzi": "红茶",
+      "pinyin": "hóngchá",
+      "es": "té negro (lit. «té rojo»)"
+    },
+    {
+      "hanzi": "绿茶",
+      "pinyin": "lǜchá",
+      "es": "té verde"
+    },
+    {
+      "hanzi": "糖",
+      "pinyin": "táng",
+      "es": "azúcar; caramelo"
+    },
+    {
+      "hanzi": "甜",
+      "pinyin": "tián",
+      "es": "dulce"
+    },
+    {
+      "hanzi": "干杯",
+      "pinyin": "gānbēi",
+      "es": "¡salud! (brindis; lit. «vaso seco»)"
+    }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        {
+          "zh": "别喝太多咖啡！",
+          "py": "Bié hē tài duō kāfēi!",
+          "es": "¡No bebas tanto café!"
+        },
+        {
+          "zh": "不要放糖，谢谢。",
+          "py": "Búyào fàng táng, xièxie.",
+          "es": "Sin azúcar, gracias."
+        },
+        {
+          "zh": "别喝了，我们回家吧。",
+          "py": "Bié hē le, wǒmen huí jiā ba.",
+          "es": "Deja de beber, vámonos a casa."
+        }
+      ]
+    },
+    {
+      "type": "vocab",
+      "title": "Bebidas",
+      "words": [
+        "不要",
+        "咖啡",
+        "可乐",
+        "啤酒",
+        "果汁",
+        "奶茶",
+        "红茶",
+        "绿茶",
+        "糖",
+        "甜",
+        "干杯"
+      ]
+    },
+    {
+      "type": "phonetics-drill",
+      "title": "ü en 绿茶 y el 3.º tono de 啤酒, 奶茶",
+      "markdown": "**绿 lǜ** lleva **ü** con diéresis: detrás de *l* y *n* hay que escribirla, porque *lu* (路) y *lü* (绿) son sílabas distintas. Labios redondos y di «i».\n\n**啤酒** *píjiǔ* (2.º + 3.º) y **奶茶** *nǎichá* (3.º + 2.º): el 3.º delante de otro tono se queda **bajo**, sin subir.\n\n**不要** *búyào*: 不 delante de 4.º → *bú*.",
+      "items": [
+        {
+          "audio": "绿茶",
+          "options": [
+            "lǜchá",
+            "lùchá",
+            "nǜchá"
+          ],
+          "answer": 0,
+          "explain": "ü con labios redondos."
+        },
+        {
+          "audio": "啤酒",
+          "options": [
+            "píjiǔ",
+            "pījiǔ",
+            "bíjiǔ"
+          ],
+          "answer": 0,
+          "explain": "p con aire; 2.º + 3.º."
+        },
+        {
+          "audio": "奶茶",
+          "options": [
+            "nǎichá",
+            "lǎichá",
+            "nàichá"
+          ],
+          "answer": 0,
+          "explain": "n nasal; 3.º bajo + 2.º."
+        },
+        {
+          "audio": "不要",
+          "options": [
+            "búyào",
+            "bùyào",
+            "bǔyào"
+          ],
+          "answer": 0,
+          "explain": "不 + 4.º → bú."
+        },
+        {
+          "audio": "咖啡",
+          "options": [
+            "kāfēi",
+            "gāfēi",
+            "kāfèi"
+          ],
+          "answer": 0,
+          "explain": "Dos 1.º tonos, altos."
+        }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": [
+        "甜",
+        "茶"
+      ],
+      "mnemonics": {
+        "甜": "舌 (lengua) + 甘 (dulce): lo que la lengua nota como dulce.",
+        "茶": "艹 (hierba) + 人 + 木 (árbol): una persona entre hierbas y árboles → la planta del té."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "别 / 不要 + V: no hagas…",
+      "markdown": "Para **prohibir** o **aconsejar que no**: **别** o **不要** delante del verbo (hueco de los **adverbios**). 别 es más corto y coloquial; 不要, algo más fuerte o escrito.\n\n- **别**喝太多咖啡！ → *¡No bebas tanto café!*\n- **不要**在这儿说话。 → *No habléis aquí.*\n\n**别 … 了** = *deja de…*: algo que ya está pasando y tiene que parar: **别**喝**了**！ → *¡Deja de beber!*\n\n**请 + 别**, para suavizar: 请别放糖。\n\nRecuerda: 别 = 不要, pero **不要** también es «no quiero»: 我不要咖啡 = no quiero café. Y **不用** = no hace falta: 不用谢 (de nada).",
+      "focus": [
+        "adverb"
+      ],
+      "compare": true,
+      "sentences": [
+        {
+          "slots": {
+            "subject": {
+              "zh": "我",
+              "py": "wǒ"
+            },
+            "verb1": {
+              "zh": "要",
+              "py": "yào"
+            },
+            "object": {
+              "zh": "一杯奶茶",
+              "py": "yì bēi nǎichá"
+            }
+          },
+          "end": "。",
+          "es": "Quiero un té con leche."
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "你",
+              "py": "nǐ"
+            },
+            "adverb": {
+              "zh": "多",
+              "py": "duō"
+            },
+            "verb1": {
+              "zh": "喝",
+              "py": "hē"
+            },
+            "object": {
+              "zh": "水",
+              "py": "shuǐ"
+            }
+          },
+          "end": "。",
+          "es": "Bebe mucha agua.",
+          "esOrder": [
+            {
+              "text": "Bebe",
+              "slot": "verb1"
+            },
+            {
+              "text": "mucha",
+              "slot": "adverb"
+            },
+            {
+              "text": "agua",
+              "slot": "object"
+            }
+          ]
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "我们",
+              "py": "wǒmen"
+            },
+            "verb1": {
+              "zh": "干杯",
+              "py": "gānbēi"
+            },
+            "particle": {
+              "zh": "吧",
+              "py": "ba"
+            }
+          },
+          "end": "。",
+          "es": "¡Brindemos!"
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "这个果汁",
+              "py": "zhège guǒzhī"
+            },
+            "adverb": {
+              "zh": "很",
+              "py": "hěn"
+            },
+            "verb1": {
+              "zh": "甜",
+              "py": "tián"
+            }
+          },
+          "end": "。",
+          "es": "Este zumo es muy dulce."
+        },
+        {
+          "slots": {
+            "verb1": {
+              "zh": "请给",
+              "py": "qǐng gěi"
+            },
+            "object": {
+              "zh": "我一杯绿茶",
+              "py": "wǒ yì bēi lǜchá"
+            }
+          },
+          "end": "。",
+          "es": "Póngame un té verde, por favor."
+        }
+      ],
+      "negative": [
+        {
+          "slots": {
+            "adverb": {
+              "zh": "别",
+              "py": "bié"
+            },
+            "verb1": {
+              "zh": "喝",
+              "py": "hē"
+            },
+            "object": {
+              "zh": "太多咖啡",
+              "py": "tài duō kāfēi"
+            }
+          },
+          "end": "。",
+          "es": "¡No bebas tanto café!",
+          "esOrder": [
+            {
+              "text": "No bebas",
+              "slot": "verb1"
+            },
+            {
+              "text": "tanto café",
+              "slot": "object"
+            }
+          ]
+        },
+        {
+          "slots": {
+            "adverb": {
+              "zh": "不要",
+              "py": "búyào"
+            },
+            "verb1": {
+              "zh": "放",
+              "py": "fàng"
+            },
+            "object": {
+              "zh": "糖",
+              "py": "táng"
+            }
+          },
+          "end": "。",
+          "es": "No le eches azúcar."
+        },
+        {
+          "slots": {
+            "adverb": {
+              "zh": "别",
+              "py": "bié"
+            },
+            "verb1": {
+              "zh": "喝",
+              "py": "hē"
+            },
+            "particle": {
+              "zh": "了",
+              "py": "le"
+            }
+          },
+          "end": "。",
+          "es": "¡Deja de beber!"
+        }
+      ],
+      "question": [
+        {
+          "slots": {
+            "subject": {
+              "zh": "你",
+              "py": "nǐ"
+            },
+            "verb1": {
+              "zh": "要",
+              "py": "yào"
+            },
+            "object": {
+              "zh": "糖",
+              "py": "táng"
+            },
+            "particle": {
+              "zh": "吗",
+              "py": "ma"
+            }
+          },
+          "end": "？",
+          "es": "¿Quieres azúcar?"
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "我们",
+              "py": "wǒmen"
+            },
+            "aux": {
+              "zh": "可以",
+              "py": "kěyǐ"
+            },
+            "verb1": {
+              "zh": "喝",
+              "py": "hē"
+            },
+            "object": {
+              "zh": "啤酒",
+              "py": "píjiǔ"
+            },
+            "particle": {
+              "zh": "吗",
+              "py": "ma"
+            }
+          },
+          "end": "？",
+          "es": "¿Podemos beber cerveza?"
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "你不喝咖啡！ (para prohibir)",
+          "right": "你别喝咖啡！ / 不要喝咖啡！",
+          "why": "不 + V describe un hecho («no bebes café»); para prohibir hace falta 别 o 不要."
+        },
+        {
+          "wrong": "别喝了咖啡。",
+          "right": "别喝咖啡了。",
+          "why": "En «deja de…», el 了 va al final de la frase."
+        },
+        {
+          "wrong": "没放糖！ (para prohibir)",
+          "right": "别放糖！",
+          "why": "没 habla de lo que no ha pasado; para dar una orden, 别."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "En la cafetería del campus",
+      "lines": [
+        {
+          "speaker": "安娜",
+          "zh": "雨果，你今天喝了几杯咖啡了？",
+          "py": "Yǔguǒ, nǐ jīntiān hē le jǐ bēi kāfēi le?",
+          "es": "Hugo, ¿cuántos cafés llevas hoy?"
+        },
+        {
+          "speaker": "雨果",
+          "zh": "三杯。今天晚上我要写完作文。",
+          "py": "Sān bēi. Jīntiān wǎnshang wǒ yào xiěwán zuòwén.",
+          "es": "Tres. Esta noche tengo que terminar la redacción."
+        },
+        {
+          "speaker": "安娜",
+          "zh": "别喝太多咖啡！晚上你会不舒服。",
+          "py": "Bié hē tài duō kāfēi! Wǎnshang nǐ huì bù shūfu.",
+          "es": "¡No bebas tanto café! Por la noche te vas a encontrar mal."
+        },
+        {
+          "speaker": "雨果",
+          "zh": "好吧。那我要一杯绿茶。",
+          "py": "Hǎo ba. Nà wǒ yào yì bēi lǜchá.",
+          "es": "Vale. Entonces me tomo un té verde."
+        },
+        {
+          "speaker": "服务员",
+          "zh": "您要什么？",
+          "py": "Nín yào shénme?",
+          "es": "¿Qué desean?"
+        },
+        {
+          "speaker": "安娜",
+          "zh": "一杯绿茶，一杯奶茶。奶茶不要放糖。",
+          "py": "Yì bēi lǜchá, yì bēi nǎichá. Nǎichá búyào fàng táng.",
+          "es": "Un té verde y un té con leche. El té con leche, sin azúcar."
+        },
+        {
+          "speaker": "服务员",
+          "zh": "不要糖吗？我们的奶茶很甜。",
+          "py": "Búyào táng ma? Wǒmen de nǎichá hěn tián.",
+          "es": "¿Sin azúcar? Nuestro té con leche es muy dulce."
+        },
+        {
+          "speaker": "安娜",
+          "zh": "对，不要糖，谢谢。",
+          "py": "Duì, búyào táng, xièxie.",
+          "es": "Sí, sin azúcar, gracias."
+        },
+        {
+          "speaker": "雨果",
+          "zh": "晚上大卫请我们喝啤酒，你去吗？",
+          "py": "Wǎnshang Dàwèi qǐng wǒmen hē píjiǔ, nǐ qù ma?",
+          "es": "Esta noche David nos invita a cerveza, ¿vienes?"
+        },
+        {
+          "speaker": "安娜",
+          "zh": "去！可是你别喝太多。明天还有课！",
+          "py": "Qù! Kěshì nǐ bié hē tài duō. Míngtiān hái yǒu kè!",
+          "es": "¡Sí! Pero tú no bebas mucho. ¡Mañana hay clase!"
+        }
+      ],
+      "notes": "En una cena china, 干杯 significa literalmente «vaso seco»: a veces se espera que te lo bebas todo. Si no quieres, di 我随意 («yo, a mi ritmo») o brinda con té. En las tiendas de té con leche se puede elegir el nivel de azúcar: 不要糖 / 少糖 / 半糖."
+    },
+    {
+      "type": "exercises",
+      "count": 16,
+      "bank": [
+        "g-bu-mei",
+        "g-modal-verbs",
+        "u05"
+      ]
+    },
+    {
+      "type": "sentence-builder",
+      "items": [
+        {
+          "sentence": {
+            "slots": {
+              "adverb": {
+                "zh": "别"
+              },
+              "verb1": {
+                "zh": "喝"
+              },
+              "object": {
+                "zh": "太多咖啡"
+              }
+            },
+            "end": "。",
+            "es": "¡No bebas tanto café!"
+          },
+          "distractors": [
+            "不"
+          ]
+        },
+        {
+          "sentence": {
+            "slots": {
+              "adverb": {
+                "zh": "不要"
+              },
+              "verb1": {
+                "zh": "放"
+              },
+              "object": {
+                "zh": "糖"
+              }
+            },
+            "end": "。",
+            "es": "No le eches azúcar."
+          },
+          "distractors": [
+            "没"
+          ]
+        },
+        {
+          "sentence": {
+            "slots": {
+              "adverb": {
+                "zh": "别"
+              },
+              "verb1": {
+                "zh": "喝"
+              },
+              "particle": {
+                "zh": "了"
+              }
+            },
+            "end": "。",
+            "es": "¡Deja de beber!"
+          }
+        },
+        {
+          "sentence": {
+            "slots": {
+              "time0": {
+                "zh": "今天晚上"
+              },
+              "subject": {
+                "zh": "你"
+              },
+              "adverb": {
+                "zh": "别"
+              },
+              "with": {
+                "zh": "跟大卫一起"
+              },
+              "place": {
+                "zh": "在酒吧"
+              },
+              "verb1": {
+                "zh": "喝"
+              },
+              "object": {
+                "zh": "太多啤酒"
+              }
+            },
+            "end": "。",
+            "es": "Esta noche no bebas demasiada cerveza con David en el bar."
+          }
+        }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        {
+          "zh": "别喝太多咖啡！",
+          "py": "Bié hē tài duō kāfēi!",
+          "es": "¡No bebas tanto café!"
+        },
+        {
+          "zh": "不要放糖，谢谢。",
+          "py": "Búyào fàng táng, xièxie.",
+          "es": "Sin azúcar, gracias."
+        },
+        {
+          "zh": "别喝了！",
+          "py": "Bié hē le!",
+          "es": "¡Deja de beber!"
+        },
+        {
+          "zh": "干杯！",
+          "py": "Gānbēi!",
+          "es": "¡Salud!"
+        }
+      ],
+      "respond": [
+        {
+          "q": {
+            "zh": "你要喝什么？",
+            "py": "Nǐ yào hē shénme?",
+            "es": "¿Qué quieres beber?"
+          },
+          "model": {
+            "zh": "我要一杯红茶，不要糖。",
+            "py": "Wǒ yào yì bēi hóngchá, búyào táng.",
+            "es": "Un té negro, sin azúcar."
+          }
+        },
+        {
+          "q": {
+            "zh": "我可以再喝一杯啤酒吗？",
+            "py": "Wǒ kěyǐ zài hē yì bēi píjiǔ ma?",
+            "es": "¿Puedo tomarme otra cerveza?"
+          },
+          "model": {
+            "zh": "别喝了，明天还有课。",
+            "py": "Bié hē le, míngtiān hái yǒu kè.",
+            "es": "Deja de beber, mañana hay clase."
+          }
+        }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Bebidas en China",
+      "text": "在中国，很多人喜欢喝茶：有绿茶，也有红茶。年轻人很喜欢喝奶茶，学校旁边有很多奶茶店。可是奶茶很甜，安娜每次都说：“不要放糖！”雨果每天都喝两三杯咖啡，王老师说：“别喝太多咖啡，多喝水。”晚上，大家有时候一起喝啤酒，中国人喝酒的时候常常说“干杯”。小李不喝酒，他一般喝果汁和可乐。",
+      "es": "En China a mucha gente le gusta el té: hay té verde y también té negro. A los jóvenes les encanta el té con leche, y al lado de la universidad hay muchas teterías. Pero el té con leche es muy dulce, y Ana siempre dice: «¡Sin azúcar!». Hugo se bebe dos o tres cafés al día; la profesora Wang le dice: «No bebas tanto café, bebe más agua». Por la noche a veces todos toman cerveza juntos; los chinos, cuando beben, suelen decir «¡干杯!». Xiao Li no bebe alcohol: normalmente toma zumo y cola.",
+      "questions": [
+        {
+          "q": "¿Qué les encanta a los jóvenes?",
+          "options": [
+            "奶茶",
+            "啤酒",
+            "红茶"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "¿Qué dice siempre Ana?",
+          "options": [
+            "不要放糖",
+            "干杯",
+            "别喝了"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "¿Qué le aconseja la profesora a Hugo?",
+          "options": [
+            "别喝太多咖啡",
+            "别喝奶茶",
+            "多喝咖啡"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "¿Qué bebe Xiao Li?",
+          "options": [
+            "果汁和可乐",
+            "啤酒",
+            "咖啡"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "type": "notes-growth"
+    }
+  ]
+}

@@ -21,7 +21,11 @@
     "screenshots": "node scripts/screenshots.mjs",
     "anki:build": "tsx scripts/build-anki.ts",
     "screenshots:home": "node scripts/screenshots-home.mjs",
-    "glyphs:fetch": "tsx scripts/fetch-glyph-evolution.ts"
+    "glyphs:fetch": "tsx scripts/fetch-glyph-evolution.ts",
+    "glyphs:normalize": "tsx scripts/normalize-glyphs.ts",
+    "curriculum:index": "tsx scripts/curriculum-index.ts",
+    "curriculum:coverage": "tsx scripts/curriculum-coverage.ts",
+    "vocab:levels": "tsx scripts/build-vocab-levels.ts"
   },
   "dependencies": {
     "@dnd-kit/core": "^6.3.1",

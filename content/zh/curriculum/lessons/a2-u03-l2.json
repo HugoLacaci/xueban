@@ -1,0 +1,686 @@
+{
+  "id": "a2-u03-l2",
+  "title": "Siempre, a veces, casi nunca: la escala de la frecuencia",
+  "zh": "他总是很晚睡觉",
+  "goal": "Situar una costumbre en la escala 总是 · 经常 · 一般 · 有时候 · 很少 · 偶尔, y quejarte con 老是.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    {
+      "hanzi": "总是",
+      "pinyin": "zǒngshì",
+      "es": "siempre"
+    },
+    {
+      "hanzi": "老是",
+      "pinyin": "lǎoshì",
+      "es": "siempre (y molesta)",
+      "note": "Tiene un tono de queja: 他老是迟到 = siempre llega tarde."
+    },
+    {
+      "hanzi": "一般",
+      "pinyin": "yìbān",
+      "es": "normalmente, por lo general; normal"
+    },
+    {
+      "hanzi": "偶尔",
+      "pinyin": "ǒu'ěr",
+      "es": "de vez en cuando, alguna vez",
+      "note": "No está en el plan del HSK 2, pero completa la escala."
+    },
+    {
+      "hanzi": "吵",
+      "pinyin": "chǎo",
+      "es": "ruidoso; hacer ruido; discutir"
+    },
+    {
+      "hanzi": "安静",
+      "pinyin": "ānjìng",
+      "es": "tranquilo, silencioso"
+    },
+    {
+      "hanzi": "声音",
+      "pinyin": "shēngyīn",
+      "es": "sonido, voz, ruido"
+    },
+    {
+      "hanzi": "小声",
+      "pinyin": "xiǎoshēng",
+      "es": "en voz baja"
+    },
+    {
+      "hanzi": "大声",
+      "pinyin": "dàshēng",
+      "es": "en voz alta"
+    },
+    {
+      "hanzi": "响",
+      "pinyin": "xiǎng",
+      "es": "sonar"
+    },
+    {
+      "hanzi": "夜",
+      "pinyin": "yè",
+      "es": "noche",
+      "note": "夜里 = de noche, por la noche."
+    }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        {
+          "zh": "我的室友总是很晚睡觉。",
+          "py": "Wǒ de shìyǒu zǒngshì hěn wǎn shuìjiào.",
+          "es": "Mi compañero de habitación siempre se acuesta muy tarde."
+        },
+        {
+          "zh": "有时候夜里很吵，我睡不好。",
+          "py": "Yǒu shíhou yèli hěn chǎo, wǒ shuì bù hǎo.",
+          "es": "A veces por la noche hay mucho ruido; no duermo bien."
+        },
+        {
+          "zh": "他偶尔大声打电话。",
+          "py": "Tā ǒu'ěr dàshēng dǎ diànhuà.",
+          "es": "De vez en cuando habla por teléfono a voces."
+        }
+      ]
+    },
+    {
+      "type": "vocab",
+      "title": "Ruido y silencio",
+      "words": [
+        "总是",
+        "老是",
+        "一般",
+        "偶尔",
+        "吵",
+        "安静",
+        "声音",
+        "小声",
+        "大声",
+        "响",
+        "夜"
+      ]
+    },
+    {
+      "type": "phonetics-drill",
+      "title": "El 3.º tono en cadena: 我很少, 老是, 偶尔",
+      "markdown": "Cuando dos **terceros tonos** van seguidos, el primero se dice como **segundo** (sube): **老是** no, este es 3.º + 4.º (*lǎo* bajo + *shì* cae). Pero **我很少** son **tres** terceros: *wǒ hěn shǎo* → se dice *wó hén shǎo*.\n\n**偶尔** *ǒu'ěr* también son dos terceros: suena *óu'ěr*. El apóstrofo separa las sílabas: *ǒu* + *ěr*.\n\n**总是** *zǒngshì*: 3.º bajo + 4.º que cae.",
+      "items": [
+        {
+          "audio": "偶尔",
+          "prompt": "¿Cómo suena 偶尔 al decirlo?",
+          "options": [
+            "Suena óu'ěr (el primero sube)",
+            "Suena ǒu'ěr con dos bajadas",
+            "Suena òu'ěr"
+          ],
+          "answer": 0,
+          "explain": "3.º + 3.º → el primero se convierte en 2.º."
+        },
+        {
+          "audio": "总是",
+          "options": [
+            "zǒngshì",
+            "zhǒngshì",
+            "zǒngsì"
+          ],
+          "answer": 0,
+          "explain": "z plana + sh doblada."
+        },
+        {
+          "audio": "安静",
+          "options": [
+            "ānjìng",
+            "ānjìn",
+            "ānqìng"
+          ],
+          "answer": 0,
+          "explain": "静 termina en ng."
+        },
+        {
+          "audio": "吵",
+          "options": [
+            "chǎo",
+            "cǎo",
+            "zhǎo"
+          ],
+          "answer": 0,
+          "explain": "ch doblada con aire."
+        },
+        {
+          "audio": "一般",
+          "options": [
+            "yìbān",
+            "yíbān",
+            "yībān"
+          ],
+          "answer": 0,
+          "explain": "一 delante de 1.º → yì."
+        }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": [
+        "吵",
+        "静"
+      ],
+      "mnemonics": {
+        "吵": "口 (boca) + 少 (poco, da el sonido): muchas bocas hablando a la vez → ruidoso.",
+        "静": "青 (azul-verde, claro) + 争 (discutir): cuando la discusión se aclara, llega la calma → tranquilo."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "La escala de la frecuencia (todos delante del verbo)",
+      "markdown": "Todos estos adverbios van en el mismo sitio: **detrás del sujeto (y del tiempo) y delante del verbo**.\n\n| | Adverbio | Ejemplo |\n|---|---|---|\n| 100 % | **总是** (siempre) / **老是** (siempre, ¡qué pesado!) | 他**总是**很晚睡觉。 |\n| | **经常 / 常常** (a menudo) | 我**经常**去图书馆。 |\n| | **一般** (normalmente) | 我晚上**一般**在宿舍。 |\n| | **有时候** (a veces; también al principio de la frase) | **有时候**夜里很吵。 |\n| | **很少** (pocas veces) | 我**很少**看电视。 |\n| | **偶尔** (de vez en cuando) | 他**偶尔**大声说话。 |\n| 0 % | 从来不 (nunca) → lección 3 | |\n\nEn español «siempre» y «a veces» pueden ir al final («se acuesta tarde siempre»); en chino, **nunca**.",
+      "focus": [
+        "adverb"
+      ],
+      "compare": true,
+      "sentences": [
+        {
+          "slots": {
+            "subject": {
+              "zh": "我的室友",
+              "py": "wǒde shìyǒu"
+            },
+            "adverb": {
+              "zh": "总是",
+              "py": "zǒngshì"
+            },
+            "verb1": {
+              "zh": "很晚睡觉",
+              "py": "hěnwǎn shuìjiào"
+            }
+          },
+          "end": "。",
+          "es": "Mi compañero de habitación siempre se acuesta muy tarde.",
+          "esOrder": [
+            {
+              "text": "Mi compañero",
+              "slot": "subject"
+            },
+            {
+              "text": "se acuesta muy tarde",
+              "slot": "verb1"
+            },
+            {
+              "text": "siempre",
+              "slot": "adverb"
+            }
+          ]
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "他",
+              "py": "tā"
+            },
+            "adverb": {
+              "zh": "老是",
+              "py": "lǎoshì"
+            },
+            "verb1": {
+              "zh": "大声说话",
+              "py": "dàshēng shuōhuà"
+            }
+          },
+          "end": "。",
+          "es": "Siempre habla a gritos (¡qué pesado!)."
+        },
+        {
+          "slots": {
+            "time0": {
+              "zh": "晚上",
+              "py": "wǎnshang"
+            },
+            "subject": {
+              "zh": "我",
+              "py": "wǒ"
+            },
+            "adverb": {
+              "zh": "一般",
+              "py": "yìbān"
+            },
+            "verb1": {
+              "zh": "在",
+              "py": "zài"
+            },
+            "object": {
+              "zh": "宿舍",
+              "py": "sùshè"
+            }
+          },
+          "end": "。",
+          "es": "Por la noche normalmente estoy en la residencia."
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "夜里",
+              "py": "yèli"
+            },
+            "adverb": {
+              "zh": "有时候很",
+              "py": "yǒu shíhou hěn"
+            },
+            "verb1": {
+              "zh": "吵",
+              "py": "chǎo"
+            }
+          },
+          "end": "。",
+          "es": "Por la noche a veces hay mucho ruido."
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "我们",
+              "py": "wǒmen"
+            },
+            "adverb": {
+              "zh": "偶尔",
+              "py": "ǒu'ěr"
+            },
+            "verb1": {
+              "zh": "去",
+              "py": "qù"
+            },
+            "object": {
+              "zh": "酒吧",
+              "py": "jiǔbā"
+            }
+          },
+          "end": "。",
+          "es": "De vez en cuando vamos a un bar."
+        }
+      ],
+      "negative": [
+        {
+          "slots": {
+            "subject": {
+              "zh": "我",
+              "py": "wǒ"
+            },
+            "adverb": {
+              "zh": "很少",
+              "py": "hěn shǎo"
+            },
+            "verb1": {
+              "zh": "看",
+              "py": "kàn"
+            },
+            "object": {
+              "zh": "电视",
+              "py": "diànshì"
+            }
+          },
+          "end": "。",
+          "es": "Veo la tele muy pocas veces."
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "宿舍",
+              "py": "sùshè"
+            },
+            "time": {
+              "zh": "晚上",
+              "py": "wǎnshang"
+            },
+            "adverb": {
+              "zh": "不太",
+              "py": "bú tài"
+            },
+            "verb1": {
+              "zh": "安静",
+              "py": "ānjìng"
+            }
+          },
+          "end": "。",
+          "es": "Por la noche la residencia no es muy tranquila."
+        }
+      ],
+      "question": [
+        {
+          "slots": {
+            "subject": {
+              "zh": "你们宿舍",
+              "py": "nǐmen sùshè"
+            },
+            "time": {
+              "zh": "晚上",
+              "py": "wǎnshang"
+            },
+            "verb1": {
+              "zh": "吵",
+              "py": "chǎo"
+            },
+            "particle": {
+              "zh": "吗",
+              "py": "ma"
+            }
+          },
+          "end": "？",
+          "es": "¿Hay ruido en vuestra residencia por la noche?"
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "他",
+              "py": "tā"
+            },
+            "adverb": {
+              "zh": "经常",
+              "py": "jīngcháng"
+            },
+            "verb1": {
+              "zh": "这么大声说话",
+              "py": "zhème dàshēng shuōhuà"
+            },
+            "particle": {
+              "zh": "吗",
+              "py": "ma"
+            }
+          },
+          "end": "？",
+          "es": "¿Siempre habla tan alto?"
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "他睡觉很晚总是。",
+          "right": "他总是很晚睡觉。",
+          "why": "Los adverbios de frecuencia van delante del verbo, nunca al final."
+        },
+        {
+          "wrong": "我总是不去酒吧。",
+          "right": "我从来不去酒吧。 / 我很少去酒吧。",
+          "why": "Para «nunca» se usa 从来不; 总是不 suena raro salvo para quejas concretas."
+        },
+        {
+          "wrong": "我少看电视。",
+          "right": "我很少看电视。",
+          "why": "少 solo, como adverbio, necesita 很: 很少."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Quejas en la residencia",
+      "lines": [
+        {
+          "speaker": "安娜",
+          "zh": "雨果，你怎么了？很累吗？",
+          "py": "Yǔguǒ, nǐ zěnme le? Hěn lèi ma?",
+          "es": "Hugo, ¿qué te pasa? ¿Estás muy cansado?"
+        },
+        {
+          "speaker": "雨果",
+          "zh": "我们楼夜里太吵了！旁边房间的人总是很晚睡觉。",
+          "py": "Wǒmen lóu yèli tài chǎo le! Pángbiān fángjiān de rén zǒngshì hěn wǎn shuìjiào.",
+          "es": "¡En nuestro edificio hay muchísimo ruido por la noche! Los de la habitación de al lado siempre se acuestan muy tarde."
+        },
+        {
+          "speaker": "安娜",
+          "zh": "他们经常这样吗？",
+          "py": "Tāmen jīngcháng zhèyàng ma?",
+          "es": "¿Lo hacen a menudo?"
+        },
+        {
+          "speaker": "雨果",
+          "zh": "对，他们老是大声说话，有时候还唱歌。",
+          "py": "Duì, tāmen lǎoshì dàshēng shuōhuà, yǒu shíhou hái chànggē.",
+          "es": "Sí, siempre hablan a voces y a veces hasta cantan."
+        },
+        {
+          "speaker": "安娜",
+          "zh": "我们楼一般很安静。你可以请他们小声一点儿。",
+          "py": "Wǒmen lóu yìbān hěn ānjìng. Nǐ kěyǐ qǐng tāmen xiǎoshēng yìdiǎnr.",
+          "es": "Nuestro edificio suele estar muy tranquilo. Puedes pedirles que hablen más bajo."
+        },
+        {
+          "speaker": "雨果",
+          "zh": "我说了，他们很少听。",
+          "py": "Wǒ shuō le, tāmen hěn shǎo tīng.",
+          "es": "Ya se lo he dicho, pero casi nunca hacen caso."
+        },
+        {
+          "speaker": "安娜",
+          "zh": "那你偶尔来我们这儿学习吧。",
+          "py": "Nà nǐ ǒu'ěr lái wǒmen zhèr xuéxí ba.",
+          "es": "Pues vente de vez en cuando a estudiar con nosotras."
+        },
+        {
+          "speaker": "雨果",
+          "zh": "好。还有，我的手机夜里老是响，是微信。",
+          "py": "Hǎo. Hái yǒu, wǒ de shǒujī yèli lǎoshì xiǎng, shì Wēixìn.",
+          "es": "Vale. Y además, mi móvil suena siempre por la noche: es WeChat."
+        },
+        {
+          "speaker": "安娜",
+          "zh": "晚上关机吧！",
+          "py": "Wǎnshang guānjī ba!",
+          "es": "¡Apágalo por la noche!"
+        }
+      ],
+      "notes": "老是 suena a queja: úsalo con cuidado delante de la persona de la que hablas. Para pedir silencio con educación: 请小声一点儿, 好吗？ En las residencias chinas suele haber hora de silencio y a veces se corta la luz por la noche (熄灯) en las de grado."
+    },
+    {
+      "type": "exercises",
+      "count": 16,
+      "bank": [
+        "g-word-order",
+        "g-ye-dou",
+        "u13"
+      ]
+    },
+    {
+      "type": "sentence-builder",
+      "items": [
+        {
+          "sentence": {
+            "slots": {
+              "subject": {
+                "zh": "我的室友"
+              },
+              "adverb": {
+                "zh": "总是"
+              },
+              "verb1": {
+                "zh": "很晚睡觉"
+              }
+            },
+            "end": "。",
+            "es": "Mi compañero de habitación siempre se acuesta muy tarde."
+          },
+          "distractors": [
+            "常常"
+          ]
+        },
+        {
+          "sentence": {
+            "slots": {
+              "subject": {
+                "zh": "我们"
+              },
+              "adverb": {
+                "zh": "偶尔"
+              },
+              "verb1": {
+                "zh": "去"
+              },
+              "object": {
+                "zh": "酒吧"
+              }
+            },
+            "end": "。",
+            "es": "De vez en cuando vamos a un bar."
+          }
+        },
+        {
+          "sentence": {
+            "slots": {
+              "subject": {
+                "zh": "他"
+              },
+              "adverb": {
+                "zh": "老是"
+              },
+              "verb1": {
+                "zh": "大声说话"
+              }
+            },
+            "end": "。",
+            "es": "Siempre habla a voces."
+          },
+          "distractors": [
+            "小声"
+          ]
+        },
+        {
+          "sentence": {
+            "slots": {
+              "subject": {
+                "zh": "安娜"
+              },
+              "time": {
+                "zh": "周末"
+              },
+              "adverb": {
+                "zh": "一般"
+              },
+              "with": {
+                "zh": "跟朋友们一起"
+              },
+              "place": {
+                "zh": "在宿舍"
+              },
+              "verb1": {
+                "zh": "看"
+              },
+              "object": {
+                "zh": "电影"
+              }
+            },
+            "end": "。",
+            "es": "Los fines de semana Ana normalmente ve películas en la residencia con sus amigos."
+          }
+        }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        {
+          "zh": "他总是很晚睡觉。",
+          "py": "Tā zǒngshì hěn wǎn shuìjiào.",
+          "es": "Siempre se acuesta muy tarde."
+        },
+        {
+          "zh": "有时候夜里很吵。",
+          "py": "Yǒu shíhou yèli hěn chǎo.",
+          "es": "A veces por la noche hay mucho ruido."
+        },
+        {
+          "zh": "我很少看电视。",
+          "py": "Wǒ hěn shǎo kàn diànshì.",
+          "es": "Veo la tele muy pocas veces."
+        },
+        {
+          "zh": "请小声一点儿，好吗？",
+          "py": "Qǐng xiǎoshēng yìdiǎnr, hǎo ma?",
+          "es": "¿Podéis hablar más bajo, por favor?"
+        }
+      ],
+      "respond": [
+        {
+          "q": {
+            "zh": "你经常去图书馆吗？",
+            "py": "Nǐ jīngcháng qù túshūguǎn ma?",
+            "es": "¿Vas a menudo a la biblioteca?"
+          },
+          "model": {
+            "zh": "我一般下午去。",
+            "py": "Wǒ yìbān xiàwǔ qù.",
+            "es": "Normalmente voy por la tarde."
+          }
+        },
+        {
+          "q": {
+            "zh": "你们宿舍吵吗？",
+            "py": "Nǐmen sùshè chǎo ma?",
+            "es": "¿Hay ruido en vuestra residencia?"
+          },
+          "model": {
+            "zh": "有时候很吵，一般很安静。",
+            "py": "Yǒu shíhou hěn chǎo, yìbān hěn ānjìng.",
+            "es": "A veces mucho; normalmente está tranquila."
+          }
+        },
+        {
+          "q": {
+            "zh": "你看电视吗？",
+            "py": "Nǐ kàn diànshì ma?",
+            "es": "¿Ves la tele?"
+          },
+          "model": {
+            "zh": "很少看，我偶尔看电影。",
+            "py": "Hěn shǎo kàn, wǒ ǒu'ěr kàn diànyǐng.",
+            "es": "Muy poco; de vez en cuando veo alguna película."
+          }
+        }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Una noche sin dormir",
+      "text": "雨果的宿舍楼一般很安静，可是这个星期夜里总是很吵。旁边房间的两个学生老是很晚睡觉，他们大声说话，有时候还唱歌。雨果请他们小声一点儿，他们说“好，好”，可是很少听。雨果的手机也老是响，有很多微信。他很少睡得好，白天上课很累。安娜说：“你偶尔来我们这儿学习吧，我们那儿夜里很安静。”小李说：“晚上关机，就好了！”",
+      "es": "El edificio de la residencia de Hugo suele estar muy tranquilo, pero esta semana por las noches siempre hay mucho ruido. Los dos estudiantes de la habitación de al lado se acuestan siempre muy tarde, hablan a voces y a veces hasta cantan. Hugo les ha pedido que hablen más bajo; ellos dicen «vale, vale», pero casi nunca hacen caso. El móvil de Hugo también suena constantemente: tiene muchos mensajes de WeChat. Pocas veces duerme bien y de día en clase está muy cansado. Ana le dice: «Ven de vez en cuando a estudiar con nosotras: allí por la noche está muy tranquilo». Xiao Li dice: «¡Apaga el móvil por la noche y listo!».",
+      "questions": [
+        {
+          "q": "¿Cómo suele ser el edificio de Hugo?",
+          "options": [
+            "很安静",
+            "很吵",
+            "很大"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "¿Qué hacen a veces los vecinos?",
+          "options": [
+            "唱歌",
+            "看电影",
+            "打球"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "¿Hacen caso los vecinos?",
+          "options": [
+            "很少听",
+            "总是听",
+            "经常听"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "¿Qué le aconseja Xiao Li?",
+          "options": [
+            "晚上关机",
+            "去图书馆",
+            "换宿舍"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "type": "notes-growth"
+    }
+  ]
+}

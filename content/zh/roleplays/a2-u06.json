@@ -1,0 +1,130 @@
+{
+  "unitId": "a2-u06",
+  "scenarios": [
+    {
+      "id": "a2-u06-station",
+      "title": "Recoger a un amigo en la estación",
+      "zh": "去车站接朋友",
+      "level": 2,
+      "setting": "Un amigo de Hugo llega mañana a Shanghái desde Madrid. Xiao Li se ha ofrecido a ir a buscarlo a la estación, pero no lo conoce. Tú (la app) eres Xiao Li y le preguntas a Hugo cómo es su amigo.",
+      "role": "Xiao Li, compañero de residencia",
+      "roleZh": "小李",
+      "voice": "m",
+      "goals": ["Decir la edad y de dónde es tu amigo", "Describir su aspecto", "Compararlo contigo", "Quedar o dar las gracias"],
+      "vocab": ["个子", "瘦", "胖", "帅", "比", "没有……那么", "一样", "咱们", "照顾"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "雨果，明天我去车站接你的朋友。他多大？哪儿人？", "py": "Yǔguǒ, míngtiān wǒ qù chēzhàn jiē nǐ de péngyou. Tā duō dà? Nǎr rén?", "es": "Hugo, mañana voy a la estación a recoger a tu amigo. ¿Cuántos años tiene? ¿De dónde es?" },
+          "user": [
+            { "zh": "他二十五岁，马德里人。", "py": "Tā èrshíwǔ suì, Mǎdélǐ rén.", "es": "Tiene veinticinco años y es de Madrid.", "keywords": ["岁", "马德里"], "next": "n2", "goal": 0 },
+            { "zh": "他跟我一样大，也是马德里人。", "py": "Tā gēn wǒ yíyàng dà, yě shì Mǎdélǐ rén.", "es": "Tiene mi edad y también es de Madrid.", "keywords": ["一样", "马德里"], "next": "n2", "goal": 0 }
+          ],
+          "hint": "Edad y procedencia sin 是: 他二十五岁，马德里人. O compáralo contigo: 他跟我一样大."
+        },
+        "n2": {
+          "npc": { "zh": "他什么样子？车站的人非常多。", "py": "Tā shénme yàngzi? Chēzhàn de rén fēicháng duō.", "es": "¿Y cómo es? En la estación hay muchísima gente." },
+          "user": [
+            { "zh": "他个子很高，有点儿瘦，戴眼镜。", "py": "Tā gèzi hěn gāo, yǒudiǎnr shòu, dài yǎnjìng.", "es": "Es alto, un poco delgado y lleva gafas.", "keywords": ["个子", "瘦", "眼镜"], "next": "n3", "goal": 1 },
+            { "zh": "他有点儿胖，头发很短，很帅。", "py": "Tā yǒudiǎnr pàng, tóufa hěn duǎn, hěn shuài.", "es": "Es algo rellenito, lleva el pelo corto y es muy guapo.", "keywords": ["胖", "头发", "帅"], "next": "n3", "goal": 1 }
+          ],
+          "hint": "Describe con «tema + rasgo + adjetivo»: 他个子很高, 头发很短."
+        },
+        "n3": {
+          "npc": { "zh": "他比你高吗？", "py": "Tā bǐ nǐ gāo ma?", "es": "¿Es más alto que tú?" },
+          "user": [
+            { "zh": "对，他比我高多了。", "py": "Duì, tā bǐ wǒ gāo duō le.", "es": "Sí, mucho más alto que yo.", "keywords": ["比", "多了"], "next": "n4", "goal": 2 },
+            { "zh": "没有，他没有我这么高，跟你一样高。", "py": "Méiyǒu, tā méiyǒu wǒ zhème gāo, gēn nǐ yíyàng gāo.", "es": "No, no es tan alto como yo: es igual de alto que tú.", "keywords": ["没有", "一样"], "next": "n4", "goal": 2 }
+          ],
+          "hint": "比 + B + adj (+ 多了 / 一点儿), o 没有 + B + 这么 + adj, o 跟 + B + 一样 + adj."
+        },
+        "n4": {
+          "npc": { "zh": "好，我知道了。他会说汉语吗？", "py": "Hǎo, wǒ zhīdào le. Tā huì shuō Hànyǔ ma?", "es": "Vale, entendido. ¿Sabe hablar chino?" },
+          "user": [
+            { "zh": "会一点儿，他的汉语没有我的好。", "py": "Huì yìdiǎnr, tā de Hànyǔ méiyǒu wǒ de hǎo.", "es": "Un poco, pero su chino no es tan bueno como el mío.", "keywords": ["没有", "汉语"], "next": "n5", "goal": 2 },
+            { "zh": "不会，他只会说英语和西班牙语。", "py": "Bú huì, tā zhǐ huì shuō Yīngyǔ hé Xībānyáyǔ.", "es": "No, solo sabe inglés y español.", "keywords": ["不会", "英语"], "next": "n5" }
+          ],
+          "hint": "Puedes volver a comparar: 他的汉语没有我的好."
+        },
+        "n5": {
+          "npc": { "zh": "没关系。明天你也去车站吗？", "py": "Méi guānxi. Míngtiān nǐ yě qù chēzhàn ma?", "es": "No pasa nada. ¿Mañana vienes tú también a la estación?" },
+          "user": [
+            { "zh": "去！咱们一起去吧。", "py": "Qù! Zánmen yìqǐ qù ba.", "es": "¡Sí! Vamos juntos.", "keywords": ["咱们", "一起"], "next": "n6", "goal": 3 },
+            { "zh": "我明天有课，不能去。谢谢你照顾他！", "py": "Wǒ míngtiān yǒu kè, bù néng qù. Xièxie nǐ zhàogù tā!", "es": "Mañana tengo clase y no puedo ir. ¡Gracias por ocuparte de él!", "keywords": ["谢谢", "照顾"], "next": "n7", "goal": 3 }
+          ],
+          "hint": "Propón ir juntos con 咱们……吧, o da las gracias: 谢谢你照顾他."
+        },
+        "n6": {
+          "npc": { "zh": "好，咱们明天下午两点在宿舍楼下见！", "py": "Hǎo, zánmen míngtiān xiàwǔ liǎng diǎn zài sùshè lóu xià jiàn!", "es": "Perfecto: ¡quedamos mañana a las dos de la tarde delante de la residencia!" },
+          "end": true,
+          "feedback": "Has descrito a tu amigo sin 是 (他二十五岁，马德里人; 他个子很高) y lo has comparado contigo. 咱们 incluye a Xiao Li en el plan."
+        },
+        "n7": {
+          "npc": { "zh": "不客气，朋友要互相帮助。", "py": "Bú kèqi, péngyou yào hùxiāng bāngzhù.", "es": "De nada, los amigos tienen que ayudarse." },
+          "end": true,
+          "feedback": "Has descrito a tu amigo y has agradecido la ayuda. La próxima vez prueba a proponer un plan con 咱们……吧."
+        }
+      }
+    },
+    {
+      "id": "a2-u06-gift",
+      "title": "Un regalo para Xiao Li",
+      "zh": "给小李买生日礼物",
+      "level": 2,
+      "setting": "La semana que viene es el cumpleaños de Xiao Li. Hugo y Ana están en un centro comercial y no se ponen de acuerdo entre una mochila y un reloj. Tú (la app) eres Ana.",
+      "role": "Ana, compañera de clase",
+      "roleZh": "安娜",
+      "voice": "f",
+      "goals": ["Comparar los precios", "Comparar cómo son", "Dar tu opinión", "Decidir juntos con 咱们"],
+      "vocab": ["比", "贵", "便宜", "多了", "得多", "没有……那么", "跟……一样", "意见", "满意", "咱们"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "雨果，下个星期是小李的生日。咱们送给他什么？这个包和那个手表，你觉得哪个更好？", "py": "Yǔguǒ, xià ge xīngqī shì Xiǎo Lǐ de shēngrì. Zánmen sònggěi tā shénme? Zhège bāo hé nàge shǒubiǎo, nǐ juéde nǎge gèng hǎo?", "es": "Hugo, la semana que viene es el cumpleaños de Xiao Li. ¿Qué le regalamos? Esta mochila o ese reloj: ¿cuál te parece mejor?" },
+          "user": [
+            { "zh": "我觉得手表更好，小李没有手表。", "py": "Wǒ juéde shǒubiǎo gèng hǎo, Xiǎo Lǐ méiyǒu shǒubiǎo.", "es": "Creo que el reloj es mejor: Xiao Li no tiene reloj.", "keywords": ["更好", "手表"], "next": "n2", "goal": 2 },
+            { "zh": "这个包多少钱？比手表贵吗？", "py": "Zhège bāo duōshao qián? Bǐ shǒubiǎo guì ma?", "es": "¿Cuánto cuesta la mochila? ¿Es más cara que el reloj?", "keywords": ["多少钱", "比"], "next": "n3", "goal": 0 }
+          ],
+          "hint": "Da tu opinión con 我觉得……更好, o pregunta el precio con 比……贵吗."
+        },
+        "n2": {
+          "npc": { "zh": "手表比包贵多了！手表八百块，包三百块。", "py": "Shǒubiǎo bǐ bāo guì duō le! Shǒubiǎo bābǎi kuài, bāo sānbǎi kuài.", "es": "¡Pero el reloj es mucho más caro que la mochila! El reloj cuesta ochocientos yuanes y la mochila, trescientos." },
+          "user": [
+            { "zh": "手表比包贵五百块……太贵了。", "py": "Shǒubiǎo bǐ bāo guì wǔbǎi kuài…… Tài guì le.", "es": "El reloj cuesta quinientos más que la mochila… Es demasiado caro.", "keywords": ["贵五百块"], "next": "n4", "goal": 0 },
+            { "zh": "贵一点儿没关系，咱们两个人一起买。", "py": "Guì yìdiǎnr méi guānxi, zánmen liǎng ge rén yìqǐ mǎi.", "es": "Que sea un poco más caro da igual: lo compramos entre los dos.", "keywords": ["一点儿", "咱们"], "next": "n5", "goal": 3 }
+          ],
+          "hint": "Di la diferencia exacta detrás del adjetivo: 贵五百块."
+        },
+        "n3": {
+          "npc": { "zh": "不，包比手表便宜得多。包三百块，手表八百块。", "py": "No, bāo bǐ shǒubiǎo piányi de duō. Bāo sānbǎi kuài, shǒubiǎo bābǎi kuài.", "es": "No, la mochila es muchísimo más barata que el reloj. La mochila cuesta trescientos yuanes y el reloj, ochocientos." },
+          "user": [
+            { "zh": "那包更好。小李每天都背书包去上课。", "py": "Nà bāo gèng hǎo. Xiǎo Lǐ měi tiān dōu bēi shūbāo qù shàngkè.", "es": "Entonces mejor la mochila. Xiao Li va a clase con mochila todos los días.", "keywords": ["更好", "书包"], "next": "n4", "goal": 1 },
+            { "zh": "包没有手表那么好看。", "py": "Bāo méiyǒu shǒubiǎo nàme hǎokàn.", "es": "Pero la mochila no es tan bonita como el reloj.", "keywords": ["没有", "那么"], "next": "n5", "goal": 1 }
+          ],
+          "hint": "Compara cómo son: 没有……那么好看, o decide: 那包更好."
+        },
+        "n4": {
+          "npc": { "zh": "你看，这个包跟小李现在的包一样大，颜色也一样。", "py": "Nǐ kàn, zhège bāo gēn Xiǎo Lǐ xiànzài de bāo yíyàng dà, yánsè yě yíyàng.", "es": "Mira, esta mochila es igual de grande que la que tiene ahora Xiao Li, y del mismo color." },
+          "user": [
+            { "zh": "一样的不好，咱们买一个不一样的吧。", "py": "Yíyàng de bù hǎo, zánmen mǎi yí ge bù yíyàng de ba.", "es": "Una igual no tiene gracia; compremos una distinta.", "keywords": ["不一样", "咱们"], "next": "n6", "goal": 3 },
+            { "zh": "很好！他一定很满意。咱们买这个吧！", "py": "Hěn hǎo! Tā yídìng hěn mǎnyì. Zánmen mǎi zhège ba!", "es": "¡Genial! Seguro que le encanta. ¡Compremos esta!", "keywords": ["满意", "咱们"], "next": "n6", "goal": 3 }
+          ],
+          "hint": "Decide con 咱们……吧. 不一样 = distinto."
+        },
+        "n5": {
+          "npc": { "zh": "好，咱们一起买手表。你的意见呢？黑色的比白色的好看吗？", "py": "Hǎo, zánmen yìqǐ mǎi shǒubiǎo. Nǐ de yìjiàn ne? Hēisè de bǐ báisè de hǎokàn ma?", "es": "Vale, compramos el reloj entre los dos. ¿Y tú qué opinas? ¿El negro es más bonito que el blanco?" },
+          "user": [
+            { "zh": "我觉得黑色的更好看，跟他的衣服一样。", "py": "Wǒ juéde hēisè de gèng hǎokàn, gēn tā de yīfu yíyàng.", "es": "Creo que el negro es más bonito, como su ropa.", "keywords": ["更好看", "一样"], "next": "n6", "goal": 2 },
+            { "zh": "白色的没有黑色的那么好看。", "py": "Báisè de méiyǒu hēisè de nàme hǎokàn.", "es": "El blanco no es tan bonito como el negro.", "keywords": ["没有", "那么"], "next": "n6", "goal": 2 }
+          ],
+          "hint": "Da tu opinión: 我觉得……更好看, o 白色的没有黑色的那么好看."
+        },
+        "n6": {
+          "npc": { "zh": "好！小李一定很高兴。咱们现在去买单吧。", "py": "Hǎo! Xiǎo Lǐ yídìng hěn gāoxìng. Zánmen xiànzài qù mǎidān ba.", "es": "¡Hecho! Seguro que Xiao Li se pone muy contento. Vamos a pagar." },
+          "end": true,
+          "feedback": "Has comparado precios (贵多了, 便宜得多, 贵五百块), aspecto (没有……那么好看, 跟……一样) y habéis decidido juntos con 咱们. Recuerda: con 比 nunca va 很."
+        }
+      }
+    }
+  ]
+}

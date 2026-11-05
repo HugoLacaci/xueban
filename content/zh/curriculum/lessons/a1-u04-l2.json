@@ -1,0 +1,128 @@
+{
+  "id": "a1-u04-l2",
+  "title": "Mil y diez mil: 千 y 万",
+  "zh": "一万",
+  "goal": "Decir cifras del 1000 al 99 999 sabiendo que 万 (10 000) es una unidad propia, y hablar de pesos y distancias.",
+  "minutes": 14,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "千", "pinyin": "qiān", "es": "mil (el millar)" },
+    { "hanzi": "一千", "pinyin": "yìqiān", "es": "mil" },
+    { "hanzi": "两千", "pinyin": "liǎngqiān", "es": "dos mil", "note": "Delante de 千 y 万 se dice 两." },
+    { "hanzi": "万", "pinyin": "wàn", "es": "diez mil (unidad)", "note": "El español no tiene palabra para 10 000; el chino, sí." },
+    { "hanzi": "一万", "pinyin": "yíwàn", "es": "diez mil", "note": "一 delante de 4.º tono → yí." },
+    { "hanzi": "两万", "pinyin": "liǎngwàn", "es": "veinte mil" },
+    { "hanzi": "公里", "pinyin": "gōnglǐ", "es": "kilómetro" },
+    { "hanzi": "公斤", "pinyin": "gōngjīn", "es": "kilo (kilogramo)", "note": "En el mercado se pesa en 斤 (medio kilo)." },
+    { "hanzi": "千克", "pinyin": "qiānkè", "es": "kilogramo", "note": "Igual que 公斤, pero más formal: etiquetas, informes." },
+    { "hanzi": "克", "pinyin": "kè", "es": "gramo" },
+    { "hanzi": "重", "pinyin": "zhòng", "es": "pesado; peso", "note": "多重 = ¿cuánto pesa?" }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "一千零一，一万零五。", "py": "Yìqiān líng yī, yíwàn líng wǔ.", "es": "Mil uno; diez mil cinco." },
+        { "zh": "一万是十个一千。", "py": "Yíwàn shì shí ge yìqiān.", "es": "Diez mil son diez «miles»." },
+        { "zh": "我七十公斤，你多重？", "py": "Wǒ qīshí gōngjīn, nǐ duō zhòng?", "es": "Peso setenta kilos; ¿y tú cuánto pesas?" }
+      ]
+    },
+    { "type": "vocab", "title": "Millares, decenas de millar, pesos y distancias", "words": ["千", "一千", "两千", "万", "一万", "两万", "公里", "公斤", "千克", "克", "重"] },
+    {
+      "type": "phonetics-drill",
+      "title": "La q de 千 y el 4.º tono de 万",
+      "markdown": "**千 qiān**: la *q* no es la «q» española. Es una «ch» con la lengua plana contra los dientes de abajo y la boca en sonrisa, **con un soplo de aire** (aspirada). Su pareja sin aire es *j*: 千 *qiān* ≠ 间 *jiān*. Y *ian* suena casi «ien».\n\n**万 wàn**: cuarto tono, cae de golpe. Por eso 一 delante se lee **yí**: 一万 *yíwàn*.\n\n**七千** junta dos *q*: *qīqiān*, las dos con aire.",
+      "items": [
+        { "audio": "千", "options": ["jiān", "qiān", "xiān"], "answer": 1, "explain": "q con soplo de aire; j sin aire; x es un soplo sin golpe." },
+        { "audio": "一万", "options": ["yíwàn", "yīwàn", "yìwàn"], "answer": 0, "explain": "万 es 4.º tono: 一 delante pasa a 2.º." },
+        { "audio": "七千", "options": ["jīqiān", "qīqiān", "qíqiān"], "answer": 1, "explain": "七 se queda en 1.er tono; las dos q llevan aire." },
+        { "audio": "两万", "options": ["liángwàn", "liǎngwǎn", "liǎngwàn"], "answer": 2, "explain": "两 (3.er tono) + 万 (4.º tono)." },
+        { "audio": "公斤", "options": ["gōngjīn", "gōngqīn", "gōngjīng"], "answer": 0, "explain": "斤 jīn: j sin aire y final -n (no -ng)." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["千", "万"],
+      "mnemonics": {
+        "千": "En los huesos oraculares era 人 (persona) con una raya encima: «una raya sobre la gente» = mil personas, un millar.",
+        "万": "La forma antigua (萬) dibujaba un escorpión: había tantos que acabó significando «diez mil», «muchísimos». 万 es una forma simplificada muy antigua."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "千 y 万: el chino cuenta de diez mil en diez mil",
+      "markdown": "**千** funciona como 百: 三千 = 3000, 三千五百 = 3500. Pero a partir de ahí cambia la lógica:\n\n> En español, 10 000 es «diez mil». En chino **no se dice** ✗十千: es **一万**, una unidad nueva.\n\n| Número | Chino |\n|---|---|\n| 1000 | 一千 |\n| 1001 | 一千零一 |\n| 1010 | 一千零一十 |\n| 1500 | 一千五百 (abreviado: 一千五) |\n| 2000 | 两千 |\n| 10 000 | 一万 |\n| 10 005 | 一万零五 (**un solo 零** aunque falten varias cifras) |\n| 12 000 | 一万两千 |\n| 20 000 | 两万 |\n| 75 000 | 七万五千 |\n\n- Delante de **千** y **万** se dice **两**: 两千, 两万.\n- Igual que antes, la abreviatura calla la última unidad: 一千五 = 1500, 一万五 = 15 000. Por eso 1001 necesita su 零: 一千零一.\n\nPeso y distancia, como la estatura, sin verbo: 我七十公斤. 公斤 y 千克 son lo mismo (kilo); 公斤 es más hablado.",
+      "focus": ["object"],
+      "sentences": [
+        { "slots": { "subject": { "zh": "一万", "py": "yíwàn" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "十个一千", "py": "shí ge yìqiān" } }, "end": "。", "es": "Diez mil son diez «miles»." },
+        { "slots": { "subject": { "zh": "五千加五千", "py": "wǔqiān jiā wǔqiān" }, "verb1": { "zh": "等于", "py": "děngyú" }, "object": { "zh": "一万", "py": "yíwàn" } }, "end": "。", "es": "Cinco mil más cinco mil son diez mil." },
+        { "slots": { "subject": { "zh": "一千加一", "py": "yìqiān jiā yī" }, "verb1": { "zh": "等于", "py": "děngyú" }, "object": { "zh": "一千零一", "py": "yìqiān líng yī" } }, "end": "。", "es": "Mil más uno son mil uno." },
+        { "slots": { "subject": { "zh": "一公斤", "py": "yì gōngjīn" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "一千克", "py": "yìqiān kè" } }, "end": "。", "es": "Un kilo son mil gramos." },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "object": { "zh": "七十公斤", "py": "qīshí gōngjīn" } }, "end": "。", "es": "Peso setenta kilos." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "两千克", "py": "liǎng qiānkè" }, "adverb": { "zh": "不", "py": "bú" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "两公里", "py": "liǎng gōnglǐ" } }, "end": "。", "es": "Dos kilos no son dos kilómetros." },
+        { "slots": { "subject": { "zh": "一千零一", "py": "yìqiān líng yī" }, "adverb": { "zh": "不", "py": "bú" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "一千一", "py": "yìqiān yī" } }, "end": "。", "es": "Mil uno no es 一千一 (eso es 1100)." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "adverb": { "zh": "多", "py": "duō" }, "verb1": { "zh": "重", "py": "zhòng" } }, "end": "？", "es": "¿Cuánto pesas?" },
+        { "slots": { "subject": { "zh": "一万加两万", "py": "yíwàn jiā liǎngwàn" }, "verb1": { "zh": "等于", "py": "děngyú" }, "object": { "zh": "多少", "py": "duōshao" } }, "end": "？", "es": "¿Cuánto son diez mil más veinte mil?" }
+      ],
+      "mistakes": [
+        { "wrong": "十千", "right": "一万", "why": "10 000 tiene nombre propio: 万. «Diez mil» al pie de la letra no existe en chino." },
+        { "wrong": "一千一（= 1001）", "right": "一千零一", "why": "一千一 es la abreviatura de 一千一百 (1100). Para 1001 hace falta 零." },
+        { "wrong": "一万零零五", "right": "一万零五", "why": "Aunque falten varias cifras seguidas, se dice un solo 零." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Diez kilos de arroz",
+      "lines": [
+        { "speaker": "小李", "zh": "雨果，这是什么？", "py": "Yǔguǒ, zhè shì shénme?", "es": "Hugo, ¿qué es esto?" },
+        { "speaker": "雨果", "zh": "是大米，十公斤。", "py": "Shì dàmǐ, shí gōngjīn.", "es": "Arroz: diez kilos." },
+        { "speaker": "小李", "zh": "十公斤？十公斤是一万克！", "py": "Shí gōngjīn? Shí gōngjīn shì yíwàn kè!", "es": "¿Diez kilos? ¡Diez kilos son diez mil gramos!" },
+        { "speaker": "雨果", "zh": "对，一公斤是一千克。你多重？", "py": "Duì, yì gōngjīn shì yìqiān kè. Nǐ duō zhòng?", "es": "Sí, un kilo son mil gramos. ¿Tú cuánto pesas?" },
+        { "speaker": "小李", "zh": "我六十公斤。你呢？", "py": "Wǒ liùshí gōngjīn. Nǐ ne?", "es": "Sesenta kilos. ¿Y tú?" },
+        { "speaker": "雨果", "zh": "我七十五公斤。", "py": "Wǒ qīshíwǔ gōngjīn.", "es": "Setenta y cinco." },
+        { "speaker": "小李", "zh": "七十五公斤……等于七万五千克！", "py": "Qīshíwǔ gōngjīn… děngyú qīwàn wǔqiān kè!", "es": "Setenta y cinco kilos… ¡son setenta y cinco mil gramos!" },
+        { "speaker": "雨果", "zh": "小李，你是数学老师吗？", "py": "Xiǎo Lǐ, nǐ shì shùxué lǎoshī ma?", "es": "Xiao Li, ¿eres profesor de matemáticas o qué?" }
+      ],
+      "notes": "En los mercados chinos el peso se da en 斤 jīn (500 g): «两斤» es un kilo. En el súper y en los papeles verás 公斤 o 千克 (kg). 数学 (matemáticas) se entiende por sus partes: 数 «número» + 学 «estudiar»."
+    },
+    { "type": "exercises", "count": 14, "bank": ["g-numbers", "g-measure-words", "u02"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "五千加五千" }, "verb1": { "zh": "等于" }, "object": { "zh": "一万" } }, "end": "。", "es": "Cinco mil más cinco mil son diez mil." }, "distractors": ["十千"] },
+        { "sentence": { "slots": { "subject": { "zh": "一公斤" }, "verb1": { "zh": "是" }, "object": { "zh": "一千克" } }, "end": "。", "es": "Un kilo son mil gramos." }, "distractors": ["一百克"] },
+        { "sentence": { "slots": { "subject": { "zh": "我的狗" }, "adverb": { "zh": "也" }, "object": { "zh": "二十公斤" } }, "end": "。", "es": "Mi perro también pesa veinte kilos." } },
+        { "sentence": { "slots": { "subject": { "zh": "我爸爸和我哥哥" }, "adverb": { "zh": "都" }, "object": { "zh": "八十公斤" } }, "end": "。", "es": "Mi padre y mi hermano pesan los dos ochenta kilos." }, "distractors": ["是"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "一千零一。", "py": "Yìqiān líng yī.", "es": "Mil uno." },
+        { "zh": "一万零五。", "py": "Yíwàn líng wǔ.", "es": "Diez mil cinco." },
+        { "zh": "一万是十个一千。", "py": "Yíwàn shì shí ge yìqiān.", "es": "Diez mil son diez «miles»." },
+        { "zh": "我七十公斤。", "py": "Wǒ qīshí gōngjīn.", "es": "Peso setenta kilos." }
+      ],
+      "respond": [
+        { "q": { "zh": "你多重？", "py": "Nǐ duō zhòng?", "es": "¿Cuánto pesas?" }, "model": { "zh": "我六十八公斤。", "py": "Wǒ liùshíbā gōngjīn.", "es": "Peso sesenta y ocho kilos." } },
+        { "q": { "zh": "两千加三千等于多少？", "py": "Liǎngqiān jiā sānqiān děngyú duōshao?", "es": "¿Cuánto son dos mil más tres mil?" }, "model": { "zh": "等于五千。", "py": "Děngyú wǔqiān.", "es": "Son cinco mil." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Kilos y gramos",
+      "text": "雨果七十五公斤，小李六十公斤。雨果的狗二十公斤，小李的猫四公斤。雨果说：“一公斤等于一千克，四公斤是四千克。我和我的狗，七十五加二十，等于九十五公斤！”",
+      "es": "Hugo pesa 75 kilos y Xiao Li, 60. El perro de Hugo pesa 20 kilos y el gato de Xiao Li, 4. Hugo dice: «Un kilo son mil gramos: cuatro kilos son cuatro mil gramos. Mi perro y yo, 75 más 20… ¡95 kilos!».",
+      "questions": [
+        { "q": "¿Cuánto pesa el perro de Hugo?", "options": ["4 kg", "60 kg", "20 kg"], "answer": 2 },
+        { "q": "¿Cuántos gramos son 四公斤?", "options": ["4000", "400", "40 000"], "answer": 0 },
+        { "q": "¿Cuánto pesan juntos Hugo y su perro?", "options": ["75 kg", "95 kg", "80 kg"], "answer": 1 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "id": "a1-u10-l4",
+  "title": "Aquí, allí, ¿dónde?: 这儿 / 那儿 / 哪儿 y 有",
+  "zh": "这儿有一张桌子",
+  "goal": "Decir qué hay en un sitio (这儿有…, 那里没有…), preguntar dónde hay algo y pedir que cojan o dejen cosas.",
+  "minutes": 14,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "这儿", "pinyin": "zhèr", "es": "aquí", "note": "Más del norte. En Shanghái oirás más 这里." },
+    { "hanzi": "那儿", "pinyin": "nàr", "es": "ahí, allí", "note": "Cuarto tono. No lo confundas con 哪儿 nǎr (¿dónde?), tercer tono." },
+    { "hanzi": "这里", "pinyin": "zhèli", "es": "aquí", "note": "Igual que 这儿, más habitual en el sur y por escrito." },
+    { "hanzi": "那里", "pinyin": "nàli", "es": "ahí, allí" },
+    { "hanzi": "哪里", "pinyin": "nǎli", "es": "¿dónde?", "note": "Igual que 哪儿. Se pronuncia náli (3+3). 哪里哪里 = «qué va» (respuesta modesta a un elogio)." },
+    { "hanzi": "书包", "pinyin": "shūbāo", "es": "mochila, cartera (de estudiante)" },
+    { "hanzi": "间", "pinyin": "jiān", "es": "(clasificador de habitaciones)", "note": "一间房子 una habitación, una casita." },
+    { "hanzi": "拿", "pinyin": "ná", "es": "coger, tomar (con la mano); llevar", "note": "你拿这本书 = coge este libro." },
+    { "hanzi": "放", "pinyin": "fàng", "es": "poner, dejar (en un sitio)", "note": "放这儿 = déjalo aquí (coloquial). La forma completa con 在 llega en la unidad 14." },
+    { "hanzi": "别的", "pinyin": "bié de", "es": "otro, otros (distinto)", "note": "别的颜色 = otro color; 没有别的 = no hay otra cosa." }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "这儿有一张桌子。", "py": "Zhèr yǒu yì zhāng zhuōzi.", "es": "Aquí hay una mesa." },
+        { "zh": "哪儿有椅子？", "py": "Nǎr yǒu yǐzi?", "es": "¿Dónde hay sillas?" },
+        { "zh": "这儿没有别的颜色。", "py": "Zhèr méiyǒu bié de yánsè.", "es": "Aquí no hay otros colores." }
+      ]
+    },
+    { "type": "vocab", "title": "Lugares cercanos y lejanos", "words": ["这儿", "那儿", "这里", "那里", "哪里", "书包", "间", "拿", "放", "别的"] },
+    {
+      "type": "phonetics-drill",
+      "title": "Erhua: 这儿, 那儿, 哪儿",
+      "markdown": "El **儿** del final no es una sílaba más: se **funde** con la anterior y la termina con la lengua **doblada hacia atrás**, como una *r* inglesa:\n\n- 这儿 → **zhèr** (una sola sílaba)\n- 那儿 → **nàr**, 哪儿 → **nǎr**\n- 面条儿 → miàn**tiáor**, 一点儿 → yì**diǎnr** (la *n* desaparece: suena «diar»)\n\nEs muy del norte (Pekín). En Shanghái se oye poco: allí dicen **这里 / 那里 / 哪里**. Entiende los dos.\n\nY no confundas los tonos: **那儿 nàr** (cae: «allí») frente a **哪儿 nǎr** (baja: «¿dónde?»).",
+      "items": [
+        { "audio": "这儿", "options": ["zhèr", "zhè ér", "zhèn"], "answer": 0, "explain": "Una sola sílaba con la r al final." },
+        { "audio": "那儿", "prompt": "¿Allí o dónde?", "options": ["nàr (allí)", "nǎr (¿dónde?)"], "answer": 0, "explain": "Cuarto tono, cae: 那儿, allí." },
+        { "audio": "哪儿", "prompt": "¿Allí o dónde?", "options": ["nǎr (¿dónde?)", "nàr (allí)"], "answer": 0, "explain": "Tercer tono, bajo: 哪儿, ¿dónde?" },
+        { "audio": "一点儿", "options": ["yìdiǎnr", "yìdiǎn ér", "yìdiànr"], "answer": 0, "explain": "La -n de diǎn se pierde y queda «diar»." },
+        { "audio": "哪里", "options": ["náli", "nǎlǐ", "nàli"], "answer": 0, "explain": "3+3: 哪 sube a segundo; 里 suele quedar neutro." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["拿", "放"],
+      "mnemonics": {
+        "拿": "合 (juntar) encima de 手 (mano): juntar la mano sobre algo para cogerlo.",
+        "放": "方 fāng (pista de sonido) + 攵 (mano con un palo, acción): la acción de soltar algo y dejarlo en su sitio."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "Lugar + 有 + cosa: «aquí hay…»",
+      "markdown": "Para decir **qué hay en un sitio**, el chino empieza por el **lugar** y luego pone **有**:\n\n**这儿 + 有 + 一张桌子** = aquí hay una mesa.\n\nEl lugar ocupa el sitio del sujeto. En español solemos decir «hay una mesa aquí»; en chino el lugar va **primero** siempre.\n\n- Negativa: **没有** (那里**没有**椅子).\n- Pregunta: **哪儿有**…？ (¿dónde hay…?), …**有**…**吗**？, …**有没有**…？\n- **别的** = «otro, distinto»: 有没有**别的**颜色？ (¿hay otros colores?).\n\n| cerca | lejos | pregunta |\n|---|---|---|\n| 这儿 / 这里 | 那儿 / 那里 | 哪儿 / 哪里 |\n\nPara pedir que cojan o dejen algo: **拿** + cosa (你拿这本书) y **放** + lugar (放这儿). Todavía sin 在: «poner **en** la mesa» llega en la unidad 14.",
+      "focus": ["subject", "verb1"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "这儿", "py": "zhèr" }, "verb1": { "zh": "有", "py": "yǒu" }, "object": { "zh": "一张桌子", "py": "yì zhāng zhuōzi" } }, "end": "。", "es": "Aquí hay una mesa." },
+        { "slots": { "subject": { "zh": "那里", "py": "nàli" }, "verb1": { "zh": "有", "py": "yǒu" }, "object": { "zh": "很多书", "py": "hěn duō shū" } }, "end": "。", "es": "Hay muchos libros allí.", "esOrder": [{ "text": "Hay", "slot": "verb1" }, { "text": "muchos libros", "slot": "object" }, { "text": "allí", "slot": "subject" }] },
+        { "slots": { "subject": { "zh": "这间房子", "py": "zhè jiān fángzi" }, "verb1": { "zh": "有", "py": "yǒu" }, "object": { "zh": "两张床", "py": "liǎng zhāng chuáng" } }, "end": "。", "es": "En esta habitación hay dos camas." },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "拿", "py": "ná" }, "object": { "zh": "这本书", "py": "zhè běn shū" } }, "end": "。", "es": "Coge este libro." },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "aux": { "zh": "想", "py": "xiǎng" }, "verb1": { "zh": "拿", "py": "ná" }, "object": { "zh": "那支笔", "py": "nà zhī bǐ" } }, "end": "。", "es": "Quiero coger ese bolígrafo." },
+        { "slots": { "adverb": { "zh": "请", "py": "qǐng" }, "verb1": { "zh": "放这儿", "py": "fàng zhèr" } }, "end": "。", "es": "Déjelo aquí, por favor." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "这儿", "py": "zhèr" }, "verb1": { "zh": "没有", "py": "méiyǒu" }, "object": { "zh": "别的颜色", "py": "bié de yánsè" } }, "end": "。", "es": "Aquí no hay otros colores." },
+        { "slots": { "subject": { "zh": "那里", "py": "nàli" }, "verb1": { "zh": "没有", "py": "méiyǒu" }, "object": { "zh": "椅子", "py": "yǐzi" } }, "end": "。", "es": "Allí no hay sillas." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "哪儿", "py": "nǎr" }, "verb1": { "zh": "有", "py": "yǒu" }, "object": { "zh": "电脑", "py": "diànnǎo" } }, "end": "？", "es": "¿Dónde hay un ordenador?" },
+        { "slots": { "subject": { "zh": "这儿", "py": "zhèr" }, "verb1": { "zh": "有没有", "py": "yǒu méiyǒu" }, "object": { "zh": "别的书包", "py": "bié de shūbāo" } }, "end": "？", "es": "¿Hay aquí otras mochilas?" }
+      ],
+      "mistakes": [
+        { "wrong": "有一张桌子这儿。", "right": "这儿有一张桌子。", "why": "El lugar va primero y después 有, al revés que en «hay una mesa aquí»." },
+        { "wrong": "这儿是一张桌子。", "right": "这儿有一张桌子。", "why": "Para decir que algo existe en un sitio se usa 有, no 是." },
+        { "wrong": "那儿没有别颜色。", "right": "那儿没有别的颜色。", "why": "别 solo no significa «otro»: hace falta 别的." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "El primer día en la residencia",
+      "lines": [
+        { "speaker": "小李", "zh": "雨果，这儿是我们的家！", "py": "Yǔguǒ, zhèr shì wǒmen de jiā!", "es": "¡Hugo, esta es nuestra casa!" },
+        { "speaker": "雨果", "zh": "太好了！我的书包放哪儿？", "py": "Tài hǎo le! Wǒ de shūbāo fàng nǎr?", "es": "¡Genial! ¿Dónde dejo la mochila?" },
+        { "speaker": "小李", "zh": "放这儿。这儿有一张桌子。", "py": "Fàng zhèr. Zhèr yǒu yì zhāng zhuōzi.", "es": "Déjala aquí. Aquí hay una mesa." },
+        { "speaker": "雨果", "zh": "哪儿有椅子？", "py": "Nǎr yǒu yǐzi?", "es": "¿Y dónde hay sillas?" },
+        { "speaker": "小李", "zh": "那儿有椅子。你拿那个椅子。", "py": "Nàr yǒu yǐzi. Nǐ ná nàge yǐzi.", "es": "Allí hay. Coge esa." },
+        { "speaker": "雨果", "zh": "好。这里有别的桌子吗？", "py": "Hǎo. Zhèli yǒu bié de zhuōzi ma?", "es": "Vale. ¿Hay alguna otra mesa?" },
+        { "speaker": "小李", "zh": "没有别的桌子。这里很小。", "py": "Méiyǒu bié de zhuōzi. Zhèli hěn xiǎo.", "es": "No hay otra mesa. Esto es muy pequeño." },
+        { "speaker": "雨果", "zh": "没关系！这里很好。哪里有水？", "py": "Méi guānxi! Zhèli hěn hǎo. Nǎli yǒu shuǐ?", "es": "¡No pasa nada! Se está muy bien. ¿Dónde hay agua?" },
+        { "speaker": "小李", "zh": "那里有水，你拿一瓶。", "py": "Nàli yǒu shuǐ, nǐ ná yì píng.", "es": "Allí hay agua, coge una botella." }
+      ],
+      "notes": "En las residencias chinas los estudiantes suelen compartir habitación (de dos a cuatro personas), con una mesa y una cama por persona. Fíjate en que 小李 usa 这儿 y 这里 indistintamente: los dos significan «aquí»."
+    },
+    { "type": "exercises", "count": 14, "bank": ["g-demonstratives", "g-you", "u06"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "这儿" }, "verb1": { "zh": "有" }, "object": { "zh": "一张桌子" } }, "end": "。", "es": "Aquí hay una mesa." }, "distractors": ["是"] },
+        { "sentence": { "slots": { "subject": { "zh": "哪儿" }, "verb1": { "zh": "有" }, "object": { "zh": "椅子" } }, "end": "？", "es": "¿Dónde hay sillas?" }, "distractors": ["吗"] },
+        { "sentence": { "slots": { "subject": { "zh": "那里" }, "verb1": { "zh": "没有" }, "object": { "zh": "别的颜色" } }, "end": "。", "es": "Allí no hay otros colores." }, "distractors": ["不"] },
+        { "sentence": { "slots": { "time0": { "zh": "今天下午" }, "subject": { "zh": "雨果" }, "adverb": { "zh": "也" }, "aux": { "zh": "要" }, "verb1": { "zh": "拿" }, "object": { "zh": "那个很漂亮的蓝色的书包" } }, "end": "。", "es": "Esta tarde Hugo también va a coger esa mochila azul tan bonita." }, "distractors": ["那些"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "这儿有一张桌子。", "py": "Zhèr yǒu yì zhāng zhuōzi.", "es": "Aquí hay una mesa." },
+        { "zh": "哪儿有椅子？", "py": "Nǎr yǒu yǐzi?", "es": "¿Dónde hay sillas?" },
+        { "zh": "那儿有很多书。", "py": "Nàr yǒu hěn duō shū.", "es": "Allí hay muchos libros." },
+        { "zh": "请放这儿。", "py": "Qǐng fàng zhèr.", "es": "Déjelo aquí, por favor." }
+      ],
+      "respond": [
+        { "q": { "zh": "哪儿有水？", "py": "Nǎr yǒu shuǐ?", "es": "¿Dónde hay agua?" }, "model": { "zh": "那儿有水。", "py": "Nàr yǒu shuǐ.", "es": "Allí hay agua." } },
+        { "q": { "zh": "这儿有别的颜色吗？", "py": "Zhèr yǒu bié de yánsè ma?", "es": "¿Hay otros colores aquí?" }, "model": { "zh": "没有，这儿没有别的颜色。", "py": "Méiyǒu, zhèr méiyǒu bié de yánsè.", "es": "No, aquí no hay otros colores." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "La habitación de Hugo",
+      "text": "这间房子不大，很干净。这儿有两张桌子，那儿有两张床。雨果有一个蓝色的书包，他的书和笔都放这儿。小李问：“你要拿别的东西吗？那里有很多。”雨果说：“不要，谢谢。”",
+      "es": "Esta habitación no es grande, pero está muy limpia. Aquí hay dos mesas y allí, dos camas. Hugo tiene una mochila azul; sus libros y sus bolígrafos los deja aquí. Xiao Li pregunta: «¿Quieres coger alguna otra cosa? Allí hay muchas». Hugo dice: «No, gracias».",
+      "questions": [
+        { "q": "¿Cuántas camas hay?", "options": ["两张", "一张", "三张"], "answer": 0 },
+        { "q": "¿De qué color es la mochila de Hugo?", "options": ["蓝色", "红色", "黑色"], "answer": 0 },
+        { "q": "¿Cómo es la habitación?", "options": ["No es grande y está limpia", "Grande y sucia", "Muy grande"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "id": "a2-u06-l1",
+  "title": "¿Cómo es tu amigo? 她个子很高",
+  "zh": "她个子很高",
+  "goal": "Describir a una persona sin 是: la edad y la procedencia directamente tras el sujeto (小王北京人，二十四岁) y el aspecto con «tema + rasgo + adjetivo» (她个子很高).",
+  "minutes": 14,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "胖", "pinyin": "pàng", "es": "gordo, rellenito", "note": "Con adultos suena directo: mejor 有点儿胖. Con bebés es un elogio." },
+    { "hanzi": "瘦", "pinyin": "shòu", "es": "delgado, flaco" },
+    { "hanzi": "矮", "pinyin": "ǎi", "es": "bajo (de estatura)", "note": "Lo contrario de 高 para personas: 个子矮." },
+    { "hanzi": "帅", "pinyin": "shuài", "es": "guapo (sobre todo de chicos)", "note": "Para chicas se dice 漂亮." },
+    { "hanzi": "低", "pinyin": "dī", "es": "bajo (de altura, de volumen)", "note": "楼很低, 声音很低. Para la estatura de personas, 矮." },
+    { "hanzi": "样子", "pinyin": "yàngzi", "es": "aspecto, pinta; forma" },
+    { "hanzi": "大小", "pinyin": "dàxiǎo", "es": "tamaño", "note": "Lit. «grande-pequeño»: 大小很合适 = del tamaño justo." },
+    { "hanzi": "少年", "pinyin": "shàonián", "es": "chaval, adolescente (unos 12–17 años)", "note": "少 se lee shào aquí, no shǎo." },
+    { "hanzi": "青年", "pinyin": "qīngnián", "es": "joven (unos 18–35 años)" },
+    { "hanzi": "中年", "pinyin": "zhōngnián", "es": "mediana edad", "note": "中年人 = persona de mediana edad." },
+    { "hanzi": "老年", "pinyin": "lǎonián", "es": "vejez, tercera edad", "note": "老年人 = persona mayor (más respetuoso que 老人)." },
+    { "hanzi": "听说", "pinyin": "tīngshuō", "es": "he oído que…, dicen que…" },
+    { "hanzi": "交", "pinyin": "jiāo", "es": "hacer (amigos); entregar", "note": "交朋友 ya lo conoces; 交作业 = entregar los deberes." }
+  ],
+  "extraVocab": ["帅", "瘦", "矮"],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "我的新朋友叫小王，北京人，二十四岁。", "py": "Wǒ de xīn péngyou jiào Xiǎo Wáng, Běijīng rén, èrshísì suì.", "es": "Mi nuevo amigo se llama Xiao Wang, es de Pekín y tiene veinticuatro años." },
+        { "zh": "他个子很高，有点儿瘦，很帅。", "py": "Tā gèzi hěn gāo, yǒudiǎnr shòu, hěn shuài.", "es": "Es alto, un poco delgado y muy guapo." },
+        { "zh": "听说你交了一个新朋友？", "py": "Tīngshuō nǐ jiāo le yí ge xīn péngyou?", "es": "Me han dicho que has hecho un amigo nuevo, ¿no?" }
+      ]
+    },
+    { "type": "vocab", "title": "Cómo es la gente", "words": ["胖", "瘦", "矮", "帅", "低", "样子", "大小", "少年", "青年", "中年", "老年", "听说", "交"] },
+    {
+      "type": "phonetics-drill",
+      "title": "El 子 neutro y el tercer tono en 很矮, 很好",
+      "markdown": "**个子 gèzi, 样子 yàngzi**: el 子 final es **tono neutro**: corto, flojo, casi tragado. Si lo dices con fuerza (*gèzǐ*) suena extraño.\n\n**很矮, 很好, 很冷**: son dos terceros tonos seguidos. El primero se dice como **segundo tono** (sube): *hén ǎi*, aunque se siga escribiendo *hěn ǎi*. En frases largas (我很矮) solo el último tercer tono baja del todo.\n\n**帅 shuài / 睡 shuì**: en *shuai* la boca se abre en una «a» clara; en *shui* no hay «a».\n\n**胖 pàng / 旁 páng**: misma sílaba, distinto tono. 胖 cae con fuerza (cuarto tono).",
+      "items": [
+        { "audio": "个子", "options": ["gèzi", "gèzǐ", "gézi"], "answer": 0, "explain": "个 en cuarto tono y 子 neutro, muy corto." },
+        { "audio": "很矮", "prompt": "¿Cómo suena 很 aquí?", "options": ["Sube, como un 2.º tono (hén ǎi)", "Baja y sube entero (hěn ǎi)", "Cae, como un 4.º tono (hèn ǎi)"], "answer": 0, "explain": "3.º + 3.º: el primero pasa a sonar como segundo." },
+        { "audio": "帅", "options": ["shuài", "shuì", "suài"], "answer": 0, "explain": "sh con la lengua atrás y la «a» bien abierta." },
+        { "audio": "胖", "options": ["pàng", "páng", "bàng"], "answer": 0, "explain": "p aspirada (sale aire) y cuarto tono." },
+        { "audio": "瘦", "options": ["shòu", "shǒu", "sòu"], "answer": 0, "explain": "Cuarto tono; 手 shǒu (mano) es tercero." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["胖", "矮"],
+      "mnemonics": {
+        "胖": "月 (aquí no es «luna», sino «carne», como en 脸 o 腿) + 半 (mitad, que da el sonido pàn → pàng): carne por las dos mitades = gordito.",
+        "矮": "矢 (flecha) + 委: la flecha es el arma más corta del arquero; quien mide «una flecha» es bajito."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "Frases sin 是: 小王北京人, 她个子很高",
+      "markdown": "Para describir a alguien, el chino ahorra verbos.\n\n**1. Predicado nominal**: la edad, la procedencia, la fecha o el precio pueden ir **directamente tras el sujeto**, sin 是: 小王**北京人**, 他**二十四岁**, 王老师**四十多岁**. En el esqueleto el sujeto va en *Sujeto* y lo que dices de él, en *Objeto*. **Solo en afirmativa**: para negar hace falta 不是 (他**不是**北京人).\n\n**2. Sujeto-predicado**: primero la persona (el tema) y luego la parte de la que hablas, con su adjetivo: 她**个子**很高 (lit. «ella, la estatura, alta»), 他**人**很好 («él, como persona, bueno»). En esta unidad, **tema + rasgo van juntos en el hueco *Sujeto*** («她个子»), y el adjetivo sigue la regla de siempre: 很 en *Adverbios* + adjetivo en *Verbo 1*.\n\nEl español dice «tiene veinte años» o «es alta»: en chino **no hay 有 ni 是**.",
+      "focus": ["subject", "object"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "她个子", "py": "tā gèzi" }, "adverb": { "zh": "很", "py": "hěn" }, "verb1": { "zh": "高", "py": "gāo" } }, "end": "。", "es": "Ella es alta (lit. «ella, la estatura, alta»).", "esOrder": [{ "text": "Ella", "slot": "subject" }, { "text": "es muy", "slot": "adverb" }, { "text": "alta", "slot": "verb1" }] },
+        { "slots": { "subject": { "zh": "小王", "py": "Xiǎo Wáng" }, "object": { "zh": "北京人", "py": "Běijīng rén" } }, "end": "。", "es": "Xiao Wang es de Pekín.", "esOrder": [{ "text": "Xiao Wang", "slot": "subject" }, { "text": "es" }, { "text": "de Pekín", "slot": "object" }] },
+        { "slots": { "subject": { "zh": "他", "py": "tā" }, "object": { "zh": "二十四岁", "py": "èrshísì suì" } }, "end": "。", "es": "Tiene veinticuatro años.", "esOrder": [{ "text": "(Él)", "slot": "subject" }, { "text": "tiene" }, { "text": "veinticuatro años", "slot": "object" }] },
+        { "slots": { "subject": { "zh": "王老师", "py": "Wáng lǎoshī" }, "object": { "zh": "四十多岁", "py": "sìshí duō suì" } }, "end": "。", "es": "La profesora Wang tiene cuarenta y tantos años." },
+        { "slots": { "subject": { "zh": "小王", "py": "Xiǎo Wáng" }, "object": { "zh": "高个子、大眼睛", "py": "gāo gèzi, dà yǎnjing" } }, "end": "。", "es": "Xiao Wang es alto y tiene los ojos grandes." },
+        { "slots": { "subject": { "zh": "这个房间大小", "py": "zhège fángjiān dàxiǎo" }, "adverb": { "zh": "很", "py": "hěn" }, "verb1": { "zh": "合适", "py": "héshì" } }, "end": "。", "es": "Esta habitación tiene el tamaño justo." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "他个子", "py": "tā gèzi" }, "adverb": { "zh": "不", "py": "bù" }, "verb1": { "zh": "高", "py": "gāo" } }, "end": "。", "es": "No es alto." },
+        { "slots": { "subject": { "zh": "小王", "py": "Xiǎo Wáng" }, "adverb": { "zh": "不", "py": "bú" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "上海人", "py": "Shànghǎi rén" } }, "end": "。", "es": "Xiao Wang no es de Shanghái." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你朋友", "py": "nǐ péngyou" }, "object": { "zh": "多大", "py": "duō dà" } }, "end": "？", "es": "¿Cuántos años tiene tu amigo?" },
+        { "slots": { "subject": { "zh": "他个子", "py": "tā gèzi" }, "verb1": { "zh": "高不高", "py": "gāo bu gāo" } }, "end": "？", "es": "¿Es alto?" },
+        { "slots": { "subject": { "zh": "他", "py": "tā" }, "object": { "zh": "什么样子", "py": "shénme yàngzi" } }, "end": "？", "es": "¿Qué pinta tiene? (¿cómo es?)" }
+      ],
+      "mistakes": [
+        { "wrong": "他有二十四岁。", "right": "他二十四岁。", "why": "En español «tiene … años»; en chino la edad va directamente detrás del sujeto, sin 有." },
+        { "wrong": "她是很高。", "right": "她很高。 / 她个子很高。", "why": "El adjetivo es el predicado: nunca lleva 是 delante." },
+        { "wrong": "小王不北京人。", "right": "小王不是北京人。", "why": "El predicado nominal solo funciona en afirmativa; para negar hace falta 不是." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Un amigo nuevo",
+      "lines": [
+        { "speaker": "安娜", "zh": "雨果，听说你交了一个新朋友？", "py": "Yǔguǒ, tīngshuō nǐ jiāo le yí ge xīn péngyou?", "es": "Hugo, me han dicho que tienes un amigo nuevo, ¿no?" },
+        { "speaker": "雨果", "zh": "对，他叫小王，北京人，二十四岁。", "py": "Duì, tā jiào Xiǎo Wáng, Běijīng rén, èrshísì suì.", "es": "Sí, se llama Xiao Wang, es de Pekín y tiene veinticuatro años." },
+        { "speaker": "安娜", "zh": "他什么样子？", "py": "Tā shénme yàngzi?", "es": "¿Y cómo es?" },
+        { "speaker": "雨果", "zh": "他个子很高，有点儿瘦，大眼睛，很帅。", "py": "Tā gèzi hěn gāo, yǒudiǎnr shòu, dà yǎnjing, hěn shuài.", "es": "Es alto, un poco delgado, tiene los ojos grandes y es muy guapo." },
+        { "speaker": "安娜", "zh": "他戴眼镜吗？", "py": "Tā dài yǎnjìng ma?", "es": "¿Lleva gafas?" },
+        { "speaker": "雨果", "zh": "戴。他声音很低，人也很好。", "py": "Dài. Tā shēngyīn hěn dī, rén yě hěn hǎo.", "es": "Sí. Tiene la voz muy grave y además es muy buena persona." },
+        { "speaker": "安娜", "zh": "我认识他！他姐姐也在我们学校，个子有点儿矮。", "py": "Wǒ rènshi tā! Tā jiějie yě zài wǒmen xuéxiào, gèzi yǒudiǎnr ǎi.", "es": "¡Lo conozco! Su hermana también está en nuestra universidad; es más bien bajita." },
+        { "speaker": "雨果", "zh": "对，他姐姐三十岁，是老师。", "py": "Duì, tā jiějie sānshí suì, shì lǎoshī.", "es": "Eso es: su hermana tiene treinta años y es profesora." },
+        { "speaker": "安娜", "zh": "他们家的人都很瘦吗？", "py": "Tāmen jiā de rén dōu hěn shòu ma?", "es": "¿En su familia son todos delgados?" },
+        { "speaker": "雨果", "zh": "不，他爸爸是中年人，有点儿胖，很喜欢吃！", "py": "Bù, tā bàba shì zhōngnián rén, yǒudiǎnr pàng, hěn xǐhuan chī!", "es": "No, su padre es un señor de mediana edad, algo rellenito, ¡y le encanta comer!" },
+        { "speaker": "安娜", "zh": "下次你们一起来吃饭吧！", "py": "Xià cì nǐmen yìqǐ lái chīfàn ba!", "es": "¡La próxima vez venid a comer juntos!" }
+      ],
+      "notes": "人很好 («como persona, bien») es la forma más habitual de decir que alguien es buena gente. 帅 es para chicos y 漂亮 para chicas. Ojo con 胖: decirle a un adulto 你很胖 es muy directo; en China a veces se comenta el peso con naturalidad, pero mejor 有点儿胖 o no decirlo."
+    },
+    { "type": "exercises", "count": 16, "bank": ["g-hen-adj", "u03", "g-shi", "g-price-age"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "她个子" }, "adverb": { "zh": "很" }, "verb1": { "zh": "高" } }, "end": "。", "es": "Ella es alta." }, "distractors": ["是"] },
+        { "sentence": { "slots": { "subject": { "zh": "小王" }, "object": { "zh": "北京人" } }, "end": "。", "es": "Xiao Wang es de Pekín." }, "distractors": ["有"] },
+        { "sentence": { "slots": { "subject": { "zh": "我朋友" }, "object": { "zh": "二十四岁" } }, "end": "。", "es": "Mi amigo tiene veinticuatro años." }, "distractors": ["有", "是"] },
+        { "sentence": { "slots": { "time0": { "zh": "去年" }, "subject": { "zh": "雨果" }, "place": { "zh": "在上海" }, "verb1": { "zh": "交了" }, "object": { "zh": "两个中国朋友" } }, "end": "。", "es": "El año pasado Hugo hizo dos amigos chinos en Shanghái." } }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "她个子很高。", "py": "Tā gèzi hěn gāo.", "es": "Ella es alta." },
+        { "zh": "小王北京人，二十四岁。", "py": "Xiǎo Wáng Běijīng rén, èrshísì suì.", "es": "Xiao Wang es de Pekín y tiene veinticuatro años." },
+        { "zh": "他有点儿瘦，很帅。", "py": "Tā yǒudiǎnr shòu, hěn shuài.", "es": "Es un poco delgado y muy guapo." },
+        { "zh": "他声音很低，人很好。", "py": "Tā shēngyīn hěn dī, rén hěn hǎo.", "es": "Tiene la voz grave y es buena persona." }
+      ],
+      "respond": [
+        { "q": { "zh": "你朋友什么样子？", "py": "Nǐ péngyou shénme yàngzi?", "es": "¿Cómo es tu amigo?" }, "model": { "zh": "他个子不高，有点儿胖，人很好。", "py": "Tā gèzi bù gāo, yǒudiǎnr pàng, rén hěn hǎo.", "es": "No es alto, es algo rellenito y es muy buena persona." } },
+        { "q": { "zh": "你多大？", "py": "Nǐ duō dà?", "es": "¿Cuántos años tienes?" }, "model": { "zh": "我二十三岁。", "py": "Wǒ èrshísān suì.", "es": "Tengo veintitrés años." } },
+        { "q": { "zh": "你是哪儿人？", "py": "Nǐ shì nǎr rén?", "es": "¿De dónde eres?" }, "model": { "zh": "我是西班牙人，马德里人。", "py": "Wǒ shì Xībānyá rén, Mǎdélǐ rén.", "es": "Soy español, de Madrid." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "La gente de mi residencia",
+      "text": "我的室友叫大卫，美国人，二十五岁。他个子很高，有点儿瘦，头发是黄色的，很帅。他声音很低，人很好。我们楼里有很多人：有少年，有青年，也有中年人和老年人。听说楼下的张老师七十多岁了。她个子很矮，有点儿胖，身体很好，每天早上都出去走路。她的房间不大，大小很合适。",
+      "es": "Mi compañero de habitación se llama David, es estadounidense y tiene veinticinco años. Es alto, un poco delgado, rubio y muy guapo. Tiene la voz grave y es muy buena persona. En nuestro edificio vive mucha gente: chavales, jóvenes, y también gente de mediana edad y mayores. Dicen que la profesora Zhang, la del piso de abajo, tiene ya setenta y tantos años. Es bajita y algo rellenita, pero está muy bien de salud y todas las mañanas sale a caminar. Su habitación no es grande, pero tiene el tamaño justo.",
+      "questions": [
+        { "q": "¿De dónde es David?", "options": ["美国人", "北京人", "上海人"], "answer": 0 },
+        { "q": "¿Cómo es David?", "options": ["个子很高，有点儿瘦", "个子很矮，有点儿胖", "个子不高，很瘦"], "answer": 0 },
+        { "q": "¿Cuántos años tiene la profesora Zhang?", "options": ["七十多岁", "二十五岁", "四十多岁"], "answer": 0 },
+        { "q": "¿Qué hace la profesora Zhang cada mañana?", "options": ["出去走路", "去上课", "去打球"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

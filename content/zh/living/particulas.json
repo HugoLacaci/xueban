@@ -1,0 +1,571 @@
+{
+  "id": "particulas",
+  "title": "Partículas",
+  "zh": "语气助词",
+  "order": 12,
+  "icon": "MessageCircle",
+  "summary": "吗, 呢, 吧, 啊, 了: sílabas átonas al final de la frase que la convierten en pregunta, la devuelven, la suavizan o le ponen cara. Como la voz ya está ocupada con los tonos, la emoción va aquí.",
+  "kind": "topic",
+  "reviewed": false,
+  "sections": [
+    {
+      "id": "ma",
+      "title": "吗: el signo de interrogación hablado",
+      "unlockedBy": "a1-u01-l2",
+      "markdown": "### Afirma y pégale 吗\n\nEn español invertimos el orden o subimos la voz. En chino **no se toca nada**: se dice la afirmación y se añade **吗** al final. 你是学生 + 吗 = ¿eres estudiante?\n\n### La respuesta: repite el verbo\n\nNo hay un «sí» universal: se devuelve el verbo de la pregunta.\n\n- 是吗？ → **是。/ 不是。** · 有吗？ → **有。/ 没有。** · 忙吗？ → **忙。/ 不忙。**\n- **对 / 不对** confirma o corrige lo que ha dicho el otro.\n\n> ⚠️ **Ojo**: 吗 es **tono neutro** (ma), corto y ligero, y la frase **no sube**: la pregunta ya la hace 吗. No lo confundas con 妈 mā ni con 马 mǎ.\n\n> ❌ **Error típico**: 你是谁吗？ → 你是谁？ Con 谁, 什么, 哪儿, 几… no hay 吗: una frase, una marca de pregunta.\n\n> ❌ **Error típico**: 是你学生吗？ → 你是学生吗？ El orden es el de la afirmación.\n\n> 💡 **Truco**: 吗 es boca (口) + caballo (马): el caballo relincha al final y pregunta.",
+      "skeleton": {
+        "focus": [
+          "particle"
+        ],
+        "sentences": [
+          {
+            "slots": {
+              "subject": {
+                "zh": "你",
+                "py": "nǐ"
+              },
+              "verb1": {
+                "zh": "是",
+                "py": "shì"
+              },
+              "object": {
+                "zh": "学生",
+                "py": "xuésheng"
+              },
+              "particle": {
+                "zh": "吗",
+                "py": "ma"
+              }
+            },
+            "end": "？",
+            "es": "¿Eres estudiante?",
+            "esOrder": [
+              {
+                "text": "¿Eres",
+                "slot": "verb1"
+              },
+              {
+                "text": "estudiante?",
+                "slot": "object"
+              }
+            ]
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "他",
+                "py": "tā"
+              },
+              "verb1": {
+                "zh": "是",
+                "py": "shì"
+              },
+              "object": {
+                "zh": "王老师",
+                "py": "Wáng lǎoshī"
+              },
+              "particle": {
+                "zh": "吗",
+                "py": "ma"
+              }
+            },
+            "end": "？",
+            "es": "¿Es la profesora Wang?"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "zh": "你是学生吗？——是，我是学生。",
+          "py": "Nǐ shì xuésheng ma? — Shì, wǒ shì xuésheng.",
+          "es": "¿Eres estudiante? —Sí, soy estudiante."
+        },
+        {
+          "zh": "他是大卫吗？——不是，他是雨果。",
+          "py": "Tā shì Dàwèi ma? — Bú shì, tā shì Yǔguǒ.",
+          "es": "¿Es David? —No, es Hugo."
+        },
+        {
+          "zh": "这是王老师吗？——对。",
+          "py": "Zhè shì Wáng lǎoshī ma? — Duì.",
+          "es": "¿Esta es la profesora Wang? —Sí."
+        }
+      ],
+      "sourceNotes": [
+        "zh-grammar-ma",
+        "zh-particle-ma"
+      ]
+    },
+    {
+      "id": "ne-devolver",
+      "title": "呢: «¿y tú?» sin repetir la pregunta",
+      "unlockedBy": "a1-u01-l3",
+      "markdown": "### 呢 = «¿y…?»\n\n**呢** se pone detrás de una persona o cosa para **devolver la pregunta** que acaba de salir: 我是西班牙人，**你呢？** La respuesta suele llevar **也** si coincide.\n\nCon el mismo «¿y…?» del español se pregunta también **dónde está algo que no se ve**: «¿y mi móvil?» = 我的手机**呢**？ (lo usarás en cuanto sepas decir las cosas).\n\n- **呢 y 吗 no se juntan**: ~~你呢吗？~~ → 你呢？\n- **呢 necesita contexto**: si nadie ha dicho nada antes, 你呢？ no se entiende. Para empezar, 你好吗？\n\n> ❌ **Error típico**: 你好呢？ → 你好**吗**？ 呢 no hace una pregunta de sí / no desde cero.\n\n> 💡 **Truco**: si en español empiezas por «¿y…?», en chino acabas en 呢: 我叫雨果，你呢？",
+      "examples": [
+        {
+          "zh": "我是学生，你呢？——我也是学生。",
+          "py": "Wǒ shì xuésheng, nǐ ne? — Wǒ yě shì xuésheng.",
+          "es": "Soy estudiante, ¿y tú? —Yo también."
+        },
+        {
+          "zh": "我很高兴，安娜呢？",
+          "py": "Wǒ hěn gāoxìng, Ānnà ne?",
+          "es": "Yo estoy encantado, ¿y Ana?"
+        },
+        {
+          "zh": "李先生是老师，你呢？",
+          "py": "Lǐ xiānsheng shì lǎoshī, nǐ ne?",
+          "es": "El señor Li es profesor, ¿y tú?"
+        }
+      ],
+      "sourceNotes": [
+        "zh-grammar-ne",
+        "zh-particle-ne"
+      ]
+    },
+    {
+      "id": "ba-propuesta",
+      "title": "吧 de propuesta: «vamos a…», «venga»",
+      "unlockedBy": "a1-u12-l4",
+      "markdown": "### El cojín del final\n\n**吧** al final convierte una orden en **invitación**: 我们去 → 我们去**吧**！ (¡vamos!). Es el «anda», «venga» del español.\n\n- **我们 + verbo + 吧** = «vamos a + verbo»: tu plantilla para proponer planes. 我们去吃饭吧.\n- Con «tú»: 你坐**吧** (siéntate, anda), 你试试**吧**.\n- Se responde con **好** (vale) o **好吧** (bueno, vale…).\n\n> ❌ **Error típico**: 我们走！ a secas, a un amigo. Sin 吧 suena a orden militar.\n\n> ❌ **Error típico**: 吧我们走 → 我们走吧. Siempre al final.\n\n> ⚠️ **Ojo**: **请坐** es formal y cortés; **你坐吧** es amistoso y relajado. Juntar 请 + 吧 suena muy suave; en un contexto formal basta 请坐.",
+      "skeleton": {
+        "focus": [
+          "particle"
+        ],
+        "sentences": [
+          {
+            "slots": {
+              "subject": {
+                "zh": "我们",
+                "py": "wǒmen"
+              },
+              "with": {
+                "zh": "一起",
+                "py": "yìqǐ"
+              },
+              "verb1": {
+                "zh": "去",
+                "py": "qù"
+              },
+              "verb2": {
+                "zh": "看",
+                "py": "kàn"
+              },
+              "object": {
+                "zh": "电影",
+                "py": "diànyǐng"
+              },
+              "particle": {
+                "zh": "吧",
+                "py": "ba"
+              }
+            },
+            "end": "！",
+            "es": "¡Vamos juntos a ver una película!"
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "你",
+                "py": "nǐ"
+              },
+              "verb1": {
+                "zh": "看",
+                "py": "kàn"
+              },
+              "object": {
+                "zh": "这个视频",
+                "py": "zhège shìpín"
+              },
+              "particle": {
+                "zh": "吧",
+                "py": "ba"
+              }
+            },
+            "end": "。",
+            "es": "Mira este vídeo (venga)."
+          }
+        ]
+      },
+      "examples": [
+        {
+          "zh": "我们去吃饭吧！——好！",
+          "py": "Wǒmen qù chī fàn ba! — Hǎo!",
+          "es": "¡Vamos a comer! —¡Vale!"
+        },
+        {
+          "zh": "你坐吧。",
+          "py": "Nǐ zuò ba.",
+          "es": "Siéntate, anda."
+        },
+        {
+          "zh": "我们周末去电影院吧。",
+          "py": "Wǒmen zhōumò qù diànyǐngyuàn ba.",
+          "es": "Vamos al cine el fin de semana."
+        }
+      ],
+      "sourceNotes": [
+        "zh-grammar-ba",
+        "zh-particle-ba"
+      ]
+    },
+    {
+      "id": "a-suavizar",
+      "title": "啊: calor, énfasis y preguntas más cercanas",
+      "unlockedBy": "a1-u13-l2",
+      "markdown": "### El signo de admiración hecho sílaba\n\n**啊** le pone **calor** a lo que dices. Si en español añadirías «¡…!» o un «pues sí», en chino va 啊.\n\n- **Suaviza las preguntas** con interrogativo: 你去哪儿**啊**？ suena más cercano que 你去哪儿？ (Con interrogativos **nunca** 吗, pero 啊 sí.)\n- **Admiración**: 真好吃**啊**！\n- **Aceptar con ganas**: 好**啊**！ / 是**啊**。\n\n> ⚠️ **Ojo**: 啊 cambia de sonido según la sílaba anterior: 是啊 suena «shì ya», 好啊 «hǎo wa», 看啊 «kàn na». A veces se escribe 呀 o 哇. No es error tuyo: es fonética.\n\n> ⚠️ **Ojo**: **啊？** solo, al principio y con tono que sube = «¿cómo?, ¿qué?». La partícula final siempre es átona.\n\n> ❌ **Error típico**: usar 啊 como 吗. 啊 nunca convierte una afirmación en pregunta de sí / no.",
+      "skeleton": {
+        "focus": [
+          "particle"
+        ],
+        "sentences": [
+          {
+            "slots": {
+              "subject": {
+                "zh": "你",
+                "py": "nǐ"
+              },
+              "verb1": {
+                "zh": "去",
+                "py": "qù"
+              },
+              "object": {
+                "zh": "哪儿",
+                "py": "nǎr"
+              },
+              "particle": {
+                "zh": "啊",
+                "py": "a"
+              }
+            },
+            "end": "？",
+            "es": "¿Adónde vas, eh?"
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "这个菜",
+                "py": "zhège cài"
+              },
+              "adverb": {
+                "zh": "真",
+                "py": "zhēn"
+              },
+              "verb1": {
+                "zh": "好吃",
+                "py": "hǎochī"
+              },
+              "particle": {
+                "zh": "啊",
+                "py": "a"
+              }
+            },
+            "end": "！",
+            "es": "¡Este plato está buenísimo!"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "zh": "你什么时候回家啊？",
+          "py": "Nǐ shénme shíhou huí jiā a?",
+          "es": "¿Y cuándo vuelves a casa?"
+        },
+        {
+          "zh": "我们一起去吧？——好啊！",
+          "py": "Wǒmen yìqǐ qù ba? — Hǎo a!",
+          "es": "¿Vamos juntos? —¡Claro!"
+        },
+        {
+          "zh": "上海真大啊！",
+          "py": "Shànghǎi zhēn dà a!",
+          "es": "¡Qué grande es Shanghái!"
+        }
+      ],
+      "sourceNotes": [
+        "zh-particle-a"
+      ]
+    },
+    {
+      "id": "ba-suposicion",
+      "title": "吧 de suposición: «…, ¿no?» (y 吗, 呢, 吧 juntos)",
+      "unlockedBy": "a1-u13-l4",
+      "markdown": "### Con 吗 preguntas; con 吧 supones\n\nCon **吧** al final y tono de pregunta, ya crees saber la respuesta y pides que te la confirmen: 你是西班牙人**吧**？ (eres español, ¿no?).\n\n| | Cuándo | Ejemplo |\n|---|---|---|\n| **吗** | no sé la respuesta | 你是学生吗？ |\n| **吧？** | creo que sí, confírmamelo | 你是学生吧？ |\n| **吧。** | propongo | 我们走吧。 |\n| **呢** | devuelvo la pregunta | 你呢？ |\n\nTambién confirma **是不是**: 你是不是学生？ (¿verdad que eres estudiante?).\n\n> ❌ **Error típico**: traducir «¿no?» siempre como 吗. «Eres español, ¿no?» es 你是西班牙人**吧**？\n\n> ❌ **Error típico**: 你是学生吗吧？ 吗 y 吧 no se juntan: o preguntas de verdad o supones.\n\n> ❌ **Error típico**: 你叫什么名字吧？ → 你叫什么名字？ 吧 tampoco va con interrogativos.",
+      "skeleton": {
+        "focus": [
+          "particle"
+        ],
+        "sentences": [
+          {
+            "slots": {
+              "subject": {
+                "zh": "你",
+                "py": "nǐ"
+              },
+              "verb1": {
+                "zh": "是",
+                "py": "shì"
+              },
+              "object": {
+                "zh": "西班牙人",
+                "py": "Xībānyá rén"
+              },
+              "particle": {
+                "zh": "吧",
+                "py": "ba"
+              }
+            },
+            "end": "？",
+            "es": "Eres español, ¿no?",
+            "esOrder": [
+              {
+                "text": "Eres",
+                "slot": "verb1"
+              },
+              {
+                "text": "español",
+                "slot": "object"
+              },
+              {
+                "text": "¿no?",
+                "slot": "particle"
+              }
+            ]
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "你",
+                "py": "nǐ"
+              },
+              "verb1": {
+                "zh": "是",
+                "py": "shì"
+              },
+              "object": {
+                "zh": "西班牙人",
+                "py": "Xībānyá rén"
+              },
+              "particle": {
+                "zh": "吗",
+                "py": "ma"
+              }
+            },
+            "end": "？",
+            "es": "¿Eres español? (no lo sé)"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "zh": "你是李老师的学生吧？——对，我是。",
+          "py": "Nǐ shì Lǐ lǎoshī de xuésheng ba? — Duì, wǒ shì.",
+          "es": "Eres alumno del profesor Li, ¿no? —Sí."
+        },
+        {
+          "zh": "你累了吧？",
+          "py": "Nǐ lèi le ba?",
+          "es": "Estás cansado, ¿no?",
+          "note": "了 + 吧 sí se combinan: 了 no es de pregunta."
+        },
+        {
+          "zh": "你为什么不去啊？",
+          "py": "Nǐ wèishénme bú qù a?",
+          "es": "¿Y por qué no vas?"
+        },
+        {
+          "zh": "你是不是大卫？",
+          "py": "Nǐ shì bu shì Dàwèi?",
+          "es": "¿Verdad que eres David?"
+        }
+      ],
+      "sourceNotes": [
+        "zh-grammar-ba",
+        "zh-particle-ba",
+        "zh-contrast-ma-ne-ba"
+      ]
+    },
+    {
+      "id": "le-final",
+      "title": "了 al final: «ya», algo ha cambiado",
+      "unlockedBy": "a1-u18-l2",
+      "markdown": "### La partícula del cambio\n\n**了** al final de la frase anuncia una **situación nueva**: 下雨**了** (se ha puesto a llover), 八点**了** (ya son las ocho). Es el «ya» del español. (El aspecto completo, con el otro 了, está en el apunte **Aspecto**.)\n\n### Combinaciones con otras partículas\n\n| | | |\n|---|---|---|\n| **了 + 吗** | ¿ya…? | 下雨了吗？ |\n| **了 + 吧** | ya…, ¿no? | 你累了吧？ |\n| **太 … 了** | ¡demasiado!, ¡qué…! | 太好了！ |\n| **不 … 了** | ya no | 我不去了。 |\n\n> ⚠️ **Ojo**: **una sola partícula de pregunta** por frase (nunca 吗 + 吧, ni 吗 + 呢). Pero 了 no es de pregunta, así que 了吗 y 了吧 sí existen.\n\n> ⚠️ **Ojo**: es **átono** (le). Si le das tono, cambias de palabra.",
+      "skeleton": {
+        "focus": [
+          "particle"
+        ],
+        "sentences": [
+          {
+            "slots": {
+              "verb1": {
+                "zh": "下雨",
+                "py": "xià yǔ"
+              },
+              "particle": {
+                "zh": "了",
+                "py": "le"
+              }
+            },
+            "end": "！",
+            "es": "¡Se ha puesto a llover!"
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "天",
+                "py": "tiān"
+              },
+              "verb1": {
+                "zh": "冷",
+                "py": "lěng"
+              },
+              "particle": {
+                "zh": "了吗",
+                "py": "le ma"
+              }
+            },
+            "end": "？",
+            "es": "¿Ya hace frío?"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "zh": "八点了，我们走吧。",
+          "py": "Bā diǎn le, wǒmen zǒu ba.",
+          "es": "Ya son las ocho: vámonos."
+        },
+        {
+          "zh": "不下雨了。",
+          "py": "Bú xià yǔ le.",
+          "es": "Ya no llueve."
+        },
+        {
+          "zh": "外边下雪了吗？",
+          "py": "Wàibian xià xuě le ma?",
+          "es": "¿Está nevando fuera?"
+        }
+      ],
+      "sourceNotes": [
+        "zh-particle-le-1",
+        "zh-particle-tone-table"
+      ]
+    },
+    {
+      "id": "ne-en-curso",
+      "title": "呢 de «ahora mismo» (y 还没…呢)",
+      "unlockedBy": "a1-u20-l3",
+      "markdown": "### El tercer 呢\n\nAl final de una frase con acción, **呢** dice que **está pasando ahora**: 我看书**呢** (estoy leyendo). Muy a menudo acompaña a **在 / 正在**: 王老师**正在**打电话**呢**.\n\nYa tienes los tres usos de 呢:\n\n| Uso | Ejemplo |\n|---|---|\n| devolver la pregunta | 我很好，你呢？ |\n| ¿dónde está? | 我的手机呢？ |\n| acción en curso | 他在吃饭呢。 |\n\nEn A2 verás un cuarto, en **还没…呢** (todavía no): 我还没吃饭**呢**.\n\n> 💡 **Truco**: tras una pregunta con interrogativo, 呢 añade un «a ver» curioso: 你为什么不去**呢**？\n\n> ⚠️ **Ojo**: el 呢 de «en curso» no lleva 了: 他在吃饭呢 (está comiendo) frente a 他吃饭了 (ya ha comido).",
+      "skeleton": {
+        "focus": [
+          "particle"
+        ],
+        "sentences": [
+          {
+            "slots": {
+              "subject": {
+                "zh": "王老师",
+                "py": "Wáng lǎoshī"
+              },
+              "adverb": {
+                "zh": "正在",
+                "py": "zhèngzài"
+              },
+              "verb1": {
+                "zh": "打",
+                "py": "dǎ"
+              },
+              "object": {
+                "zh": "电话",
+                "py": "diànhuà"
+              },
+              "particle": {
+                "zh": "呢",
+                "py": "ne"
+              }
+            },
+            "end": "。",
+            "es": "La profesora Wang está hablando por teléfono."
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "我",
+                "py": "wǒ"
+              },
+              "verb1": {
+                "zh": "看",
+                "py": "kàn"
+              },
+              "object": {
+                "zh": "照片",
+                "py": "zhàopiàn"
+              },
+              "particle": {
+                "zh": "呢",
+                "py": "ne"
+              }
+            },
+            "end": "。",
+            "es": "Estoy mirando fotos."
+          }
+        ]
+      },
+      "examples": [
+        {
+          "zh": "妈妈呢？——她在做饭呢。",
+          "py": "Māma ne? — Tā zài zuòfàn ne.",
+          "es": "¿Y mamá? —Está cocinando.",
+          "note": "Dos 呢: el primero pregunta dónde está; el segundo, acción en curso."
+        },
+        {
+          "zh": "我的手机呢？",
+          "py": "Wǒ de shǒujī ne?",
+          "es": "¿Y mi móvil? (¿dónde está?)"
+        },
+        {
+          "zh": "小李在上网呢。",
+          "py": "Xiǎo Lǐ zài shàngwǎng ne.",
+          "es": "Xiao Li está conectado a internet."
+        }
+      ],
+      "sourceNotes": [
+        "zh-particle-ne",
+        "zh-grammar-ne"
+      ]
+    },
+    {
+      "id": "caras-de-la-frase",
+      "title": "La cara de la frase: tabla del tono emocional",
+      "unlockedBy": "a1-u21-l2",
+      "markdown": "### Misma frase, distinta partícula, distinta cara\n\n| Partícula | Tono / emoción | Ejemplo | Español |\n|---|---|---|---|\n| 吗 | pregunta neutra, sin idea previa | 你去吗？ | ¿Vas? |\n| 吗 | cortesía fija | 可以吗？ | ¿Se puede? |\n| 呢 | curiosa, cercana: «¿y…?» | 我去，你呢？ | Yo voy, ¿y tú? |\n| 呢 | «ahora mismo» | 他在吃饭呢。 | Está comiendo. |\n| 吧 | sugerencia, invitación | 我们去吧。 | Vamos, anda. |\n| 吧 | suposición: «…, ¿no?» | 你去吧？ | Vas, ¿no? |\n| 吧 | aceptar con poca gana | 好吧。 | Bueno, vale. |\n| 啊 | admiración, entusiasmo | 真好吃啊！ | ¡Qué bueno está! |\n| 啊 | confirmar con calidez | 是啊。/ 好啊！ | Pues sí. / ¡Claro! |\n| 啊 | impaciencia o ánimo | 快去啊！ | ¡Venga, ve ya! |\n| 了 | cambio: «ya» | 下雨了。 | Ya llueve. |\n| 了 | aviso o alivio | 我饿了！ | ¡Tengo hambre! |\n| 了 | «ya no» | 我不去了。 | Ya no voy. |\n\n### Elige por tu ánimo\n\n¿No sé la respuesta? → 吗. ¿Creo que sí? → 吧. ¿Devuelvo la pregunta? → 呢. ¿Pongo emoción? → 啊. ¿Algo ha cambiado? → 了.\n\n> ⚠️ **Ojo**: todas son **átonas** y cortas. Si las alargas o les pones tono, cambian de palabra: 吗 ma ≠ 妈 mā; 吧 ba ≠ 八 bā.\n\n> 🏮 **¿Sabías que…?**: en los mensajes de WeChat los chinos usan 啊, 呢 y 吧 constantemente; un mensaje sin partícula final puede sonar seco o enfadado.",
+      "examples": [
+        {
+          "zh": "我们去吃饭吧。——好啊！/ 好的。/ 好吧。",
+          "py": "Wǒmen qù chī fàn ba. — Hǎo a! / Hǎo de. / Hǎo ba.",
+          "es": "Vamos a comer. —¡Claro! (con ganas) / Vale. (neutro) / Bueno… (resignado)"
+        },
+        {
+          "zh": "你是学生吗？/ 你是学生吧？",
+          "py": "Nǐ shì xuésheng ma? / Nǐ shì xuésheng ba?",
+          "es": "¿Eres estudiante? (no lo sé) / Eres estudiante, ¿no? (lo supongo)"
+        },
+        {
+          "zh": "你吃饭了吗？——还没呢。",
+          "py": "Nǐ chī fàn le ma? — Hái méi ne.",
+          "es": "¿Has comido? —Todavía no."
+        },
+        {
+          "zh": "你是学生吗？——是，你呢？——我也是。那我们一起学习吧！",
+          "py": "Nǐ shì xuésheng ma? — Shì, nǐ ne? — Wǒ yě shì. Nà wǒmen yìqǐ xuéxí ba!",
+          "es": "¿Eres estudiante? —Sí, ¿y tú? —Yo también. ¡Pues estudiemos juntos!",
+          "note": "吗 pregunta, 呢 devuelve, 吧 propone."
+        }
+      ],
+      "sourceNotes": [
+        "zh-particle-tone-table",
+        "zh-contrast-ma-ne-ba"
+      ]
+    }
+  ]
+}

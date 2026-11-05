@@ -1,0 +1,135 @@
+{
+  "id": "a1-u16-l2",
+  "title": "Caro, barato y regatear",
+  "zh": "太贵了！便宜一点儿吧。",
+  "goal": "Quejarte del precio (有点儿贵, 太贵了), pedir que te lo dejen más barato (便宜一点儿) y regatear con 可以…吗.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "贵", "pinyin": "guì", "es": "caro" },
+    { "hanzi": "便宜", "pinyin": "piányi", "es": "barato", "note": "Aquí 便 se lee pián (en 方便 «cómodo» se lee biàn)." },
+    { "hanzi": "一点儿", "pinyin": "yìdiǎnr", "es": "un poco (más)", "note": "Detrás del adjetivo: 便宜一点儿 «un poco más barato». Delante del nombre: 一点儿水 «un poco de agua»." },
+    { "hanzi": "店", "pinyin": "diàn", "es": "tienda, local", "note": "小店, 书店, 饭店." },
+    { "hanzi": "商场", "pinyin": "shāngchǎng", "es": "centro comercial" },
+    { "hanzi": "合适", "pinyin": "héshì", "es": "adecuado; que queda bien (talla, precio)" },
+    { "hanzi": "套", "pinyin": "tào", "es": "juego, conjunto (clasificador)", "note": "一套书 = una colección de libros; 一套衣服 = un conjunto." },
+    { "hanzi": "够", "pinyin": "gòu", "es": "bastar, ser suficiente" },
+    { "hanzi": "不够", "pinyin": "bú gòu", "es": "no llegar, no ser suficiente" },
+    { "hanzi": "算", "pinyin": "suàn", "es": "calcular, contar; dejarlo en (un precio)", "note": "算一百块吧 = déjamelo en cien." },
+    { "hanzi": "砍价", "pinyin": "kǎnjià", "es": "regatear", "note": "Lit. «cortar el precio» (palabra coloquial)." }
+  ],
+  "extraVocab": ["砍价"],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "太贵了！便宜一点儿吧。", "py": "Tài guì le! Piányi yìdiǎnr ba.", "es": "¡Es demasiado caro! Déjamelo un poco más barato." },
+        { "zh": "这件衣服有点儿贵。", "py": "Zhè jiàn yīfu yǒudiǎnr guì.", "es": "Esta prenda es un poco cara." },
+        { "zh": "可以便宜一点儿吗？", "py": "Kěyǐ piányi yìdiǎnr ma?", "es": "¿Me lo puede dejar un poco más barato?" }
+      ]
+    },
+    { "type": "vocab", "title": "Precios y regateo", "words": ["贵", "便宜", "一点儿", "店", "商场", "合适", "套", "够", "不够", "算", "砍价"] },
+    {
+      "type": "phonetics-drill",
+      "title": "便宜 piányi: un carácter, dos lecturas",
+      "markdown": "Algunos caracteres tienen **dos lecturas** según la palabra. 便 se lee **pián** en 便宜 (barato) y **biàn** en 方便 (cómodo). Y 宜 va en **tono neutro**: *piányi*, corto y sin fuerza.\n\nDos más de hoy:\n- 贵 *guì*: la final **ui** es en realidad **uei**: se oye una «e» breve en medio («guei»).\n- 一点儿 *yìdiǎnr*: 一 pasa a 4.º delante del 3.º, y el **儿** no es otra sílaba: se pega a *diǎn* doblando la lengua (*diǎnr* ≈ «diar»).",
+      "items": [
+        { "audio": "便宜", "options": ["piányi", "biànyí", "piányí"], "answer": 0, "explain": "pián + yi en tono neutro." },
+        { "audio": "贵", "options": ["guì", "kuì", "guò"], "answer": 0, "explain": "g sin soplo; ui suena «uei»." },
+        { "audio": "一点儿", "options": ["yìdiǎnr", "yīdiǎnr", "yídiǎnr"], "answer": 0, "explain": "一 delante de 3.º tono → 4.º: yì." },
+        { "audio": "合适", "options": ["héshì", "héshí", "hésì"], "answer": 0, "explain": "适 es 4.º tono y con sh." },
+        { "audio": "够", "options": ["gòu", "guò", "kòu"], "answer": 0, "explain": "ou (como en 走), no uo (como en 过)." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["贵", "店"],
+      "mnemonics": {
+        "贵": "Arriba 中 + 一, abajo 贝 (concha): las conchas fueron el primer dinero de China. Mucho dinero encima de la concha → caro. 贝 también está en 买 y 卖 (forma tradicional) y en 货.",
+        "店": "广 (un tejado abierto por delante, un local) + 占 (diàn/zhàn, pista del sonido): el local abierto a la calle, la tienda."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "有点儿 + adj., adj. + 一点儿, 太 + adj. + 了",
+      "markdown": "Tres maneras de matizar un adjetivo, cada una en su hueco:\n\n- **有点儿 + adj.** (delante, hueco de los adverbios): una **queja**, «es un poco (demasiado)…»: 这件衣服**有点儿**贵.\n- **adj. + 一点儿** (detrás, hueco del complemento): «un poco **más**…», para **pedir** o comparar: 便宜**一点儿**吧！ (en español «más» va delante; en chino, 一点儿 va detrás).\n- **太 + adj. + 了**: «¡demasiado…!» (U8): **太**贵**了**！\n\n**Regatear** (砍价): en mercados y tiendas pequeñas se regatea; en supermercados y centros comerciales, no.\n- 太贵了！便宜一点儿吧。\n- **可以**便宜一点儿**吗**？ (可以…吗 para pedir algo con educación, U12)\n- **算**一百块吧 / 一百块，行吗？\n\nNo confundas: 有点儿便宜 no es «un poco más barato», sino «es un poco barato» (y suena a queja).",
+      "focus": ["adverb", "complement"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "这件衣服", "py": "zhè jiàn yīfu" }, "adverb": { "zh": "有点儿", "py": "yǒudiǎnr" }, "verb1": { "zh": "贵", "py": "guì" } }, "end": "。", "es": "Esta prenda es un poco cara." },
+        { "slots": { "verb1": { "zh": "便宜", "py": "piányi" }, "complement": { "zh": "一点儿", "py": "yìdiǎnr" }, "particle": { "zh": "吧", "py": "ba" } }, "end": "。", "es": "Un poco más barato, ¿no?", "esOrder": [{ "text": "Un poco", "slot": "complement" }, { "text": "más barato", "slot": "verb1" }, { "text": "¿no?", "slot": "particle" }] },
+        { "slots": { "subject": { "zh": "这个", "py": "zhège" }, "adverb": { "zh": "太", "py": "tài" }, "verb1": { "zh": "贵", "py": "guì" }, "particle": { "zh": "了", "py": "le" } }, "end": "！", "es": "¡Esto es demasiado caro!" },
+        { "slots": { "subject": { "zh": "那个店", "py": "nàge diàn" }, "adverb": { "zh": "很", "py": "hěn" }, "verb1": { "zh": "便宜", "py": "piányi" } }, "end": "。", "es": "Esa tienda es muy barata." },
+        { "slots": { "subject": { "zh": "这双鞋", "py": "zhè shuāng xié" }, "adverb": { "zh": "很", "py": "hěn" }, "verb1": { "zh": "合适", "py": "héshì" } }, "end": "。", "es": "Estos zapatos me quedan bien." },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "算", "py": "suàn" }, "object": { "zh": "一百块", "py": "yìbǎi kuài" }, "particle": { "zh": "吧", "py": "ba" } }, "end": "。", "es": "Déjamelo en cien yuanes." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "这个商场的东西", "py": "zhège shāngchǎng de dōngxi" }, "adverb": { "zh": "不", "py": "bú" }, "verb1": { "zh": "贵", "py": "guì" } }, "end": "。", "es": "Las cosas de este centro comercial no son caras." },
+        { "slots": { "subject": { "zh": "我的钱", "py": "wǒ de qián" }, "adverb": { "zh": "不", "py": "bú" }, "verb1": { "zh": "够", "py": "gòu" } }, "end": "。", "es": "No me llega el dinero." }
+      ],
+      "question": [
+        { "slots": { "aux": { "zh": "可以", "py": "kěyǐ" }, "verb1": { "zh": "便宜", "py": "piányi" }, "complement": { "zh": "一点儿", "py": "yìdiǎnr" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿Me lo puede dejar un poco más barato?" },
+        { "slots": { "subject": { "zh": "这套书", "py": "zhè tào shū" }, "verb1": { "zh": "贵不贵", "py": "guì bu guì" } }, "end": "？", "es": "¿Es cara esta colección de libros?" }
+      ],
+      "mistakes": [
+        { "wrong": "这个一点儿贵。", "right": "这个有点儿贵。", "why": "Delante del adjetivo, para quejarse, 有点儿; 一点儿 va detrás." },
+        { "wrong": "有点儿便宜吧！", "right": "便宜一点儿吧！", "why": "Para pedir «un poco más barato», 一点儿 detrás del adjetivo." },
+        { "wrong": "这个是太贵了。", "right": "这个太贵了。", "why": "El adjetivo es el predicado: sin 是 (U8)." },
+        { "wrong": "可以一点儿便宜吗？", "right": "可以便宜一点儿吗？", "why": "一点儿 siempre detrás del adjetivo cuando significa «un poco más»." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "En un puesto del mercado",
+      "lines": [
+        { "speaker": "老板", "zh": "你好！看一下，这件衣服很漂亮。", "py": "Nǐ hǎo! Kàn yíxià, zhè jiàn yīfu hěn piàoliang.", "es": "¡Hola! Mire, esta prenda es muy bonita." },
+        { "speaker": "安娜", "zh": "多少钱？", "py": "Duōshao qián?", "es": "¿Cuánto cuesta?" },
+        { "speaker": "老板", "zh": "三百块。", "py": "Sānbǎi kuài.", "es": "Trescientos yuanes." },
+        { "speaker": "安娜", "zh": "太贵了！便宜一点儿吧。", "py": "Tài guì le! Piányi yìdiǎnr ba.", "es": "¡Es demasiado caro! Déjemelo más barato." },
+        { "speaker": "老板", "zh": "两百五十块，不贵！", "py": "Liǎngbǎi wǔshí kuài, bú guì!", "es": "Doscientos cincuenta, ¡no es caro!" },
+        { "speaker": "雨果", "zh": "有点儿贵。算一百五十块，行吗？", "py": "Yǒudiǎnr guì. Suàn yìbǎi wǔshí kuài, xíng ma?", "es": "Es un poco caro. ¿Nos lo deja en ciento cincuenta?" },
+        { "speaker": "老板", "zh": "一百五十块不够。两百块吧。", "py": "Yìbǎi wǔshí kuài bú gòu. Liǎngbǎi kuài ba.", "es": "Ciento cincuenta no me llega. Doscientos." },
+        { "speaker": "安娜", "zh": "一百八十块，可以吗？", "py": "Yìbǎi bāshí kuài, kěyǐ ma?", "es": "¿Ciento ochenta?" },
+        { "speaker": "老板", "zh": "好吧，一百八十块。", "py": "Hǎo ba, yìbǎi bāshí kuài.", "es": "Bueno, vale, ciento ochenta." },
+        { "speaker": "安娜", "zh": "我试一下……很合适！我买。", "py": "Wǒ shì yíxià…… hěn héshì! Wǒ mǎi.", "es": "Me la pruebo… ¡Me queda bien! Me la llevo." }
+      ],
+      "notes": "老板 lǎobǎn (lit. «jefe») es como se llama a quien atiende un puesto o una tienda pequeña; la palabra la estudiarás en A2. En los mercados el primer precio suele ser alto: es normal ofrecer bastante menos y subir poco a poco. En un 商场 o un 超市 los precios son fijos."
+    },
+    { "type": "exercises", "count": 15, "bank": ["g-tai-le", "g-yidianr-youdianr", "g-modal-verbs", "u06"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "这件衣服" }, "adverb": { "zh": "有点儿" }, "verb1": { "zh": "贵" } }, "end": "。", "es": "Esta prenda es un poco cara." }, "distractors": ["一点儿"] },
+        { "sentence": { "slots": { "verb1": { "zh": "便宜" }, "complement": { "zh": "一点儿" }, "particle": { "zh": "吧" } }, "end": "。", "es": "Un poco más barato, ¿no?" }, "distractors": ["有点儿"] },
+        { "sentence": { "slots": { "aux": { "zh": "可以" }, "verb1": { "zh": "便宜" }, "complement": { "zh": "一点儿" }, "particle": { "zh": "吗" } }, "end": "？", "es": "¿Me lo puede dejar un poco más barato?" } },
+        { "sentence": { "slots": { "subject": { "zh": "这个商场的东西" }, "adverb": { "zh": "太" }, "verb1": { "zh": "贵" }, "particle": { "zh": "了" } }, "end": "！", "es": "¡Las cosas de este centro comercial son demasiado caras!" }, "distractors": ["是"] },
+        { "sentence": { "slots": { "time0": { "zh": "明天下午" }, "subject": { "zh": "我" }, "aux": { "zh": "想" }, "with": { "zh": "跟安娜一起" }, "verb1": { "zh": "去那个店" }, "verb2": { "zh": "买" }, "object": { "zh": "衣服" } }, "end": "。", "es": "Mañana por la tarde quiero ir con Anna a esa tienda a comprar ropa." }, "distractors": ["卖"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "太贵了！", "py": "Tài guì le!", "es": "¡Es demasiado caro!" },
+        { "zh": "便宜一点儿吧。", "py": "Piányi yìdiǎnr ba.", "es": "Un poco más barato, ¿no?" },
+        { "zh": "可以便宜一点儿吗？", "py": "Kěyǐ piányi yìdiǎnr ma?", "es": "¿Me lo puede dejar más barato?" },
+        { "zh": "这个有点儿贵。", "py": "Zhège yǒudiǎnr guì.", "es": "Esto es un poco caro." }
+      ],
+      "respond": [
+        { "q": { "zh": "这件衣服三百块。", "py": "Zhè jiàn yīfu sānbǎi kuài.", "es": "Esta prenda cuesta trescientos yuanes." }, "model": { "zh": "太贵了！便宜一点儿吧。", "py": "Tài guì le! Piányi yìdiǎnr ba.", "es": "¡Es demasiado caro! Un poco más barato, ¿no?" } },
+        { "q": { "zh": "两百块，行吗？", "py": "Liǎngbǎi kuài, xíng ma?", "es": "Doscientos, ¿vale?" }, "model": { "zh": "有点儿贵。一百五十块，可以吗？", "py": "Yǒudiǎnr guì. Yìbǎi wǔshí kuài, kěyǐ ma?", "es": "Es un poco caro. ¿Ciento cincuenta?" } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Anna regatea",
+      "text": "商场的衣服很漂亮，也很贵。路口有一个小店，衣服有点儿便宜。安娜在小店看到一件红衣服，三百块。她说：“太贵了！便宜一点儿吧。”店里的人说两百块，安娜说一百八十块。最后，一百八十块！",
+      "es": "La ropa del centro comercial es muy bonita, pero también muy cara. En el cruce hay una tienda pequeña donde la ropa es algo más barata. En la tienda Anna ve una prenda roja de trescientos yuanes. Dice: «¡Es demasiado cara! Déjemela más barata». El dependiente dice doscientos y Anna dice ciento ochenta. Al final, ¡ciento ochenta!",
+      "questions": [
+        { "q": "¿Cómo es la ropa del centro comercial?", "options": ["Bonita y cara", "Fea y barata", "Bonita y barata"], "answer": 0 },
+        { "q": "¿Cuánto pedía el dueño al principio?", "options": ["300 yuanes", "200 yuanes", "180 yuanes"], "answer": 0 },
+        { "q": "¿Por cuánto la compra Anna?", "options": ["180 yuanes", "200 yuanes", "250 yuanes"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

@@ -1,0 +1,133 @@
+{
+  "id": "a1-u12-l4",
+  "title": "¿Qué te apetece? 想, 要, 不用 y 吧",
+  "zh": "我们一起看吧！",
+  "goal": "Decir lo que quieres o no quieres hacer (想 / 要 / 不想 / 不用) y proponer un plan con 吧.",
+  "minutes": 14,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "想", "pinyin": "xiǎng", "es": "querer, tener ganas de (+ verbo)", "note": "Repaso de la U9. Suave: «me apetece»." },
+    { "hanzi": "要", "pinyin": "yào", "es": "querer (decidido); ir a; tener que", "note": "Repaso de la U9. Más firme que 想." },
+    { "hanzi": "不用", "pinyin": "búyòng", "es": "no hace falta, no tienes que", "note": "Negativa de 要 cuando es «tener que». También para rechazar con educación: 不用，谢谢。" },
+    { "hanzi": "吧", "pinyin": "ba", "es": "(partícula de sugerencia: «vamos a…», «…, ¿no?»)", "note": "我们走吧！ = ¡Vámonos! Suaviza una propuesta o una orden." },
+    { "hanzi": "看到", "pinyin": "kàndào", "es": "ver (llegar a ver), encontrarse con", "note": "Casi igual que 看见; 看到 es más frecuente al hablar de cosas leídas o vistas en internet." },
+    { "hanzi": "听到", "pinyin": "tīngdào", "es": "oír (llegar a oír)" },
+    { "hanzi": "视频", "pinyin": "shìpín", "es": "vídeo", "note": "Palabra que el plan coloca en la U20 (vida digital); se adelanta aquí por el tema." },
+    { "hanzi": "抖音", "pinyin": "Dǒuyīn", "es": "Douyin (el TikTok chino)" },
+    { "hanzi": "B站", "pinyin": "B zhàn", "es": "Bilibili (web de vídeos, «la estación B»)", "note": "Muy usada por estudiantes: series, anime, clases. Se dice «bì zhàn»." }
+  ],
+  "extraVocab": ["抖音", "B站"],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "我想看这个电影。", "py": "Wǒ xiǎng kàn zhège diànyǐng.", "es": "Me apetece ver esta película." },
+        { "zh": "你不用去，我去。", "py": "Nǐ búyòng qù, wǒ qù.", "es": "No hace falta que vayas, voy yo." },
+        { "zh": "我们一起看吧！", "py": "Wǒmen yìqǐ kàn ba!", "es": "¡Veámoslo juntos!" }
+      ]
+    },
+    { "type": "vocab", "title": "Querer, no hacer falta y proponer", "words": ["想", "要", "不用", "吧", "看到", "听到", "视频", "抖音", "B站"] },
+    {
+      "type": "phonetics-drill",
+      "title": "El tono neutro de 吧, 吗 y 呢",
+      "markdown": "Las partículas finales **吧 ba, 吗 ma, 呢 ne** no tienen tono propio: son **cortas y flojas**, y su altura depende de la sílaba anterior.\n\n- Tras 1.º, 2.º o 4.º tono suenan **más bajas**: 去吧 qù **ba**, 来吧 lái **ba**.\n- Tras 3.º tono suenan **más altas** (el 3.º se queda abajo y la partícula «rebota»): 走吧 zǒu **ba**, 好吗 hǎo **ma**.\n\nNo las alargues ni las subas como una pregunta española: la pregunta ya la hace la partícula. Y 吧 no es 八 bā ni 爸 bà.",
+      "items": [
+        { "audio": "去吧", "options": ["qù ba", "qù bā", "qù bà"], "answer": 0, "explain": "吧 en tono neutro: corto y flojo." },
+        { "audio": "走吧", "prompt": "Tras un 3.º tono, ¿cómo suena 吧?", "options": ["Más alto que 走", "Más bajo que 走", "Igual que 八 bā"], "answer": 0, "explain": "El 3.º se queda abajo; el neutro que sigue suena algo más alto." },
+        { "audio": "好吗", "options": ["hǎo ma", "hǎo mǎ", "hǎo mà"], "answer": 0, "explain": "吗 es neutro, no 马 mǎ ni 骂 mà." },
+        { "audio": "你呢", "options": ["nǐ ne", "nǐ nè", "nǐ né"], "answer": 0, "explain": "呢 neutro, muy breve." },
+        { "audio": "爸爸", "prompt": "¿La segunda sílaba es…?", "options": ["Neutra, como 吧", "4.º tono, como la primera"], "answer": 0, "explain": "爸爸 bàba: la segunda va en tono neutro, igual que 吧 ba." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["想", "吧"],
+      "mnemonics": {
+        "想": "相 (mirar: un ojo 目 junto a un árbol 木) + 心 (corazón): mirar algo con el corazón, pensar en ello, desearlo.",
+        "吧": "口 (boca) + 巴 bā (da el sonido): la boca que añade un «ba» al final para suavizar la frase."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "Querer o no: 想 / 要 / 不想 / 不用, y proponer con 吧",
+      "markdown": "Ya conoces 想 y 要 de la U9. Ahora, con todos los auxiliares, fíjate en sus **negativas**, que no son simétricas:\n\n| Afirmativa | Idea | Negativa |\n|---|---|---|\n| 想 + V | me apetece | **不想** (no me apetece) |\n| 要 + V | quiero, voy a (decidido) | **不想** (no quiero) — 不要 suena a orden: «¡no lo hagas!» |\n| 要 + V | tengo que | **不用** (no hace falta) |\n| 会 + V | sé hacer | 不会 |\n| 能 + V | puedo | 不能 |\n| 可以 + V | me dejan | 不可以 / 不能 |\n\n**吧 de sugerencia**: al final de la frase convierte una afirmación en una propuesta amable: 我们去 → 我们去**吧**！ «¡Vamos!». Va en el hueco **Partícula final**, siempre al final.\n\nPregunta: 你想…吗？, 你要不要…？ (¿te apuntas?), 你想看**什么**？",
+      "focus": ["aux", "particle"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "aux": { "zh": "想", "py": "xiǎng" }, "verb1": { "zh": "看", "py": "kàn" }, "object": { "zh": "这个电影", "py": "zhège diànyǐng" } }, "end": "。", "es": "Me apetece ver esta película." },
+        { "slots": { "time0": { "zh": "周末", "py": "zhōumò" }, "subject": { "zh": "我", "py": "wǒ" }, "aux": { "zh": "要", "py": "yào" }, "verb1": { "zh": "去", "py": "qù" }, "object": { "zh": "电影院", "py": "diànyǐngyuàn" } }, "end": "。", "es": "El fin de semana voy a ir al cine." },
+        { "slots": { "subject": { "zh": "我们", "py": "wǒmen" }, "with": { "zh": "一起", "py": "yìqǐ" }, "verb1": { "zh": "去", "py": "qù" }, "verb2": { "zh": "看", "py": "kàn" }, "object": { "zh": "电影", "py": "diànyǐng" }, "particle": { "zh": "吧", "py": "ba" } }, "end": "！", "es": "¡Vamos juntos a ver una película!", "esOrder": [{ "text": "Vamos", "slot": "verb1" }, { "text": "juntos", "slot": "with" }, { "text": "a ver", "slot": "verb2" }, { "text": "una película", "slot": "object" }] },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "看", "py": "kàn" }, "object": { "zh": "这个视频", "py": "zhège shìpín" }, "particle": { "zh": "吧", "py": "ba" } }, "end": "。", "es": "Mira este vídeo (venga)." },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "verb1": { "zh": "看到", "py": "kàndào" }, "object": { "zh": "一个很有意思的视频", "py": "yí ge hěn yǒu yìsi de shìpín" } }, "end": "。", "es": "He visto un vídeo muy interesante." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "不", "py": "bù" }, "aux": { "zh": "想", "py": "xiǎng" }, "verb1": { "zh": "看", "py": "kàn" }, "object": { "zh": "电视", "py": "diànshì" } }, "end": "。", "es": "No me apetece ver la tele." },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "adverb": { "zh": "不用", "py": "búyòng" }, "verb1": { "zh": "去", "py": "qù" } }, "end": "。", "es": "No hace falta que vayas.", "esOrder": [{ "text": "No hace falta", "slot": "adverb" }, { "text": "que (tú)", "slot": "subject" }, { "text": "vayas", "slot": "verb1" }] },
+        { "slots": { "time0": { "zh": "明天", "py": "míngtiān" }, "subject": { "zh": "我们", "py": "wǒmen" }, "adverb": { "zh": "不用", "py": "búyòng" }, "verb1": { "zh": "上课", "py": "shàngkè" } }, "end": "。", "es": "Mañana no tenemos que ir a clase." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "aux": { "zh": "想", "py": "xiǎng" }, "verb1": { "zh": "看", "py": "kàn" }, "object": { "zh": "什么电影", "py": "shénme diànyǐng" } }, "end": "？", "es": "¿Qué película te apetece ver?" },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "aux": { "zh": "要不要", "py": "yào bu yào" }, "with": { "zh": "跟我们一起", "py": "gēn wǒmen yìqǐ" }, "verb1": { "zh": "去", "py": "qù" } }, "end": "？", "es": "¿Quieres venir con nosotros?" }
+      ],
+      "mistakes": [
+        { "wrong": "我不要看电视。（= no me apetece）", "right": "我不想看电视。", "why": "Para «no me apetece / no quiero» lo natural es 不想; 不要 + verbo suena tajante o a orden." },
+        { "wrong": "你不要去。（= no hace falta）", "right": "你不用去。", "why": "不要去 = «¡no vayas!» (prohibición); 不用去 = «no hace falta que vayas»." },
+        { "wrong": "我们吧去看电影。", "right": "我们去看电影吧。", "why": "吧 es una partícula final: siempre al final de la frase." },
+        { "wrong": "我想会看电影。", "right": "我想看电影。", "why": "Un solo auxiliar basta; 会 aquí no significa nada." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Planes para el sábado",
+      "lines": [
+        { "speaker": "小李", "zh": "雨果，星期六你想做什么？", "py": "Yǔguǒ, xīngqīliù nǐ xiǎng zuò shénme?", "es": "Hugo, ¿qué te apetece hacer el sábado?" },
+        { "speaker": "雨果", "zh": "我想去电影院看电影。你呢？", "py": "Wǒ xiǎng qù diànyǐngyuàn kàn diànyǐng. Nǐ ne?", "es": "Me apetece ir al cine. ¿Y a ti?" },
+        { "speaker": "小李", "zh": "我不想去电影院，我想上网看视频。", "py": "Wǒ bù xiǎng qù diànyǐngyuàn, wǒ xiǎng shàngwǎng kàn shìpín.", "es": "Yo no tengo ganas de ir al cine; quiero ver vídeos en internet." },
+        { "speaker": "雨果", "zh": "什么视频？", "py": "Shénme shìpín?", "es": "¿Qué vídeos?" },
+        { "speaker": "小李", "zh": "抖音的视频。我看到一个很好玩儿的视频，你看！", "py": "Dǒuyīn de shìpín. Wǒ kàndào yí ge hěn hǎowánr de shìpín, nǐ kàn!", "es": "Vídeos de Douyin. He visto uno muy divertido, ¡mira!" },
+        { "speaker": "雨果", "zh": "真有意思！我也喜欢B站的视频。", "py": "Zhēn yǒu yìsi! Wǒ yě xǐhuan B zhàn de shìpín.", "es": "¡Qué gracioso! A mí también me gustan los vídeos de Bilibili." },
+        { "speaker": "小李", "zh": "那星期六晚上我们一起看吧！", "py": "Nà xīngqīliù wǎnshang wǒmen yìqǐ kàn ba!", "es": "¡Pues el sábado por la noche los vemos juntos!" },
+        { "speaker": "雨果", "zh": "好！我要去买水果吗？", "py": "Hǎo! Wǒ yào qù mǎi shuǐguǒ ma?", "es": "¡Vale! ¿Tengo que ir a comprar fruta?" },
+        { "speaker": "小李", "zh": "不用，我有水果，也有茶。", "py": "Búyòng, wǒ yǒu shuǐguǒ, yě yǒu chá.", "es": "No hace falta, tengo fruta y también té." }
+      ],
+      "notes": "那 al principio de la frase significa «pues, entonces»: 那我们一起看吧. Douyin y Bilibili son las dos apps de vídeo más usadas por los estudiantes chinos; en Bilibili hay muchas series y vídeos para aprender chino."
+    },
+    { "type": "exercises", "count": 15, "bank": ["g-modal-verbs", "g-ba", "u12"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "我们" }, "verb1": { "zh": "去" }, "verb2": { "zh": "看" }, "object": { "zh": "电影" }, "particle": { "zh": "吧" } }, "end": "！", "es": "¡Vamos a ver una película!" }, "distractors": ["吗"] },
+        { "sentence": { "slots": { "subject": { "zh": "你" }, "adverb": { "zh": "不用" }, "verb1": { "zh": "买" }, "object": { "zh": "水果" } }, "end": "。", "es": "No hace falta que compres fruta." }, "distractors": ["不要"] },
+        { "sentence": { "slots": { "subject": { "zh": "我" }, "adverb": { "zh": "不" }, "aux": { "zh": "想" }, "verb1": { "zh": "看" }, "object": { "zh": "这个电视剧" } }, "end": "。", "es": "No me apetece ver esta serie." } },
+        { "sentence": { "slots": { "time0": { "zh": "星期六晚上" }, "subject": { "zh": "我们" }, "with": { "zh": "跟小李一起" }, "verb1": { "zh": "上网" }, "verb2": { "zh": "看" }, "object": { "zh": "B站的视频" }, "particle": { "zh": "吧" } }, "end": "！", "es": "¡El sábado por la noche veamos vídeos de Bilibili con Xiao Li!" } }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "我想看这个电影。", "py": "Wǒ xiǎng kàn zhège diànyǐng.", "es": "Me apetece ver esta película." },
+        { "zh": "我们一起去吧！", "py": "Wǒmen yìqǐ qù ba!", "es": "¡Vamos juntos!" },
+        { "zh": "不用，谢谢。", "py": "Búyòng, xièxie.", "es": "No hace falta, gracias." },
+        { "zh": "你要不要跟我们一起去？", "py": "Nǐ yào bu yào gēn wǒmen yìqǐ qù?", "es": "¿Quieres venir con nosotros?" }
+      ],
+      "respond": [
+        { "q": { "zh": "星期六你想做什么？", "py": "Xīngqīliù nǐ xiǎng zuò shénme?", "es": "¿Qué te apetece hacer el sábado?" }, "model": { "zh": "我想去电影院看电影。", "py": "Wǒ xiǎng qù diànyǐngyuàn kàn diànyǐng.", "es": "Me apetece ir al cine." } },
+        { "q": { "zh": "我要去买茶吗？", "py": "Wǒ yào qù mǎi chá ma?", "es": "¿Tengo que ir a comprar té?" }, "model": { "zh": "不用，我有茶。", "py": "Búyòng, wǒ yǒu chá.", "es": "No hace falta, tengo té." } },
+        { "q": { "zh": "我们一起看视频吧？", "py": "Wǒmen yìqǐ kàn shìpín ba?", "es": "¿Vemos vídeos juntos?" }, "model": { "zh": "好！我们看B站的吧。", "py": "Hǎo! Wǒmen kàn B zhàn de ba.", "es": "¡Vale! Veamos los de Bilibili." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "El sábado de Ana",
+      "text": "这个星期六安娜不想去电影院，她想上网看中国电视剧。大卫要去打篮球，他说：“安娜，你也一起去吧！”安娜说：“不用，我不会打篮球。”晚上，他们一起看B站的视频。安娜看到一个很好玩儿的视频，大家都说：“真有意思！”",
+      "es": "Este sábado Ana no tiene ganas de ir al cine: quiere ver series chinas en internet. David va a jugar al baloncesto y le dice: «Ana, ¡vente tú también!». Ana contesta: «No hace falta, no sé jugar al baloncesto». Por la noche ven juntos vídeos de Bilibili. Ana encuentra un vídeo muy divertido y todos dicen: «¡Qué gracioso!».",
+      "questions": [
+        { "q": "¿Qué quiere hacer Ana el sábado?", "options": ["Ver series chinas en internet", "Ir al cine", "Jugar al baloncesto"], "answer": 0 },
+        { "q": "¿Qué va a hacer David?", "options": ["Jugar al baloncesto", "Ver vídeos", "Ir al cine"], "answer": 0 },
+        { "q": "¿Por qué Ana no va con David?", "options": ["No sabe jugar al baloncesto", "No puede salir", "No le dejan"], "answer": 0 },
+        { "q": "En «你也一起去吧», ¿qué hace 吧?", "options": ["Hace una propuesta amable", "Pregunta sí/no", "Indica pasado"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "id": "a1-u13-l3",
+  "title": "¿Cómo? 怎么 + verbo, 怎么样 y 怎么办",
+  "zh": "这个字怎么读？",
+  "goal": "Preguntar cómo se hace algo (怎么 + verbo), qué tal es algo (怎么样), qué hacer (怎么办) y qué significa una palabra, y decir que no lo entiendes.",
+  "minutes": 14,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "怎么", "pinyin": "zěnme", "es": "cómo (de qué manera); ¿cómo es que…?", "note": "怎么 + verbo = manera: 怎么读？ «¿cómo se lee?»." },
+    { "hanzi": "怎么样", "pinyin": "zěnmeyàng", "es": "¿qué tal?; ¿te parece? (repaso)", "note": "Al final de una propuesta: 我们去看电影，怎么样？" },
+    { "hanzi": "怎样", "pinyin": "zěnyàng", "es": "cómo, de qué manera (más escrito)", "note": "Equivale a 怎么 / 怎么样 en textos." },
+    { "hanzi": "怎么办", "pinyin": "zěnme bàn", "es": "¿qué hago?, ¿qué hacemos?" },
+    { "hanzi": "这样", "pinyin": "zhèyàng", "es": "así, de esta manera" },
+    { "hanzi": "那样", "pinyin": "nàyàng", "es": "así, de esa manera" },
+    { "hanzi": "明白", "pinyin": "míngbai", "es": "entender, tener claro", "note": "我不明白 «no lo entiendo». 明白了！ «¡Entendido!»." },
+    { "hanzi": "不行", "pinyin": "bù xíng", "es": "no puede ser, imposible; no vale" },
+    { "hanzi": "意思", "pinyin": "yìsi", "es": "significado, sentido", "note": "……是什么意思？ «¿Qué significa…?»." }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "这个字怎么读？", "py": "Zhège zì zěnme dú?", "es": "¿Cómo se lee este carácter?" },
+        { "zh": "这个句子是什么意思？", "py": "Zhège jùzi shì shénme yìsi?", "es": "¿Qué significa esta frase?" },
+        { "zh": "我不明白，怎么办？", "py": "Wǒ bù míngbai, zěnme bàn?", "es": "No lo entiendo, ¿qué hago?" }
+      ]
+    },
+    { "type": "vocab", "title": "Cómo, así y entender", "words": ["怎么", "怎么样", "怎样", "怎么办", "这样", "那样", "明白", "不行", "意思"] },
+    {
+      "type": "phonetics-drill",
+      "title": "El tercer tono a medias: 怎么, 我明白",
+      "markdown": "El 3.º tono completo (baja y sube) solo se oye **aislado o al final**. Delante de un **1.º, 2.º, 4.º tono o de un neutro**, se queda en la parte **baja**: baja y **no sube**. Es el «medio tercer tono».\n\n- 怎么 **zěn**me: 怎 bajo y grave, 么 suelto.\n- 我明白 **wǒ** míngbai: 我 bajo, 明 sube desde ahí.\n- 好吃 **hǎo** chī, 你看 **nǐ** kàn.\n\nDelante de otro 3.º, ya lo sabes: sube (很好 → hén hǎo). Si pronuncias cada 3.º completo, la frase suena lenta y extraña.",
+      "items": [
+        { "audio": "怎么", "prompt": "¿Cómo suena 怎?", "options": ["Bajo, sin subir", "Sube, como un 2.º", "Cae, como un 4.º"], "answer": 0, "explain": "Ante neutro, medio tercer tono: solo la parte baja." },
+        { "audio": "我明白", "prompt": "¿Cómo suena 我?", "options": ["Bajo, sin subir", "Sube, como un 2.º"], "answer": 0, "explain": "明 es 2.º, no 3.º: 我 se queda bajo." },
+        { "audio": "很好", "prompt": "¿Cómo suena 很?", "options": ["Bajo, sin subir", "Sube, como un 2.º"], "answer": 1, "explain": "Aquí sí hay dos terceros: el primero sube." },
+        { "audio": "好吃", "options": ["hǎochī", "hàochī", "háochī"], "answer": 0, "explain": "好 bajo + 吃 alto y plano: el contraste es muy claro." },
+        { "audio": "你看", "prompt": "¿Qué tono tiene 看?", "options": ["4.º (cae)", "3.º", "1.º"], "answer": 0, "explain": "你 bajo + 看 que cae desde arriba." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["怎", "样"],
+      "mnemonics": {
+        "怎": "乍 zhà (da el sonido) + 心 (corazón): el corazón que duda «¿y cómo…?».",
+        "样": "木 (árbol, madera) + 羊 yáng (oveja; da el sonido): la plantilla de madera con la forma de algo, el «modelo»; de ahí 这样 «de esta forma»."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "怎么 + verbo: la manera va delante del verbo",
+      "markdown": "**怎么** pregunta por la **manera** y va, como un adverbio, **delante del verbo**. La respuesta ocupa el mismo hueco: **这样** (así) o una explicación.\n\n| Pregunta | Respuesta |\n|---|---|\n| 这个字**怎么**读？ | 这个字**这样**读。 |\n| 饺子**怎么**吃？ | 饺子**这样**吃。 |\n\n**Otras tres preguntas con 怎么**:\n\n- **怎么样** = «¿qué tal?»: hace de predicado, como un adjetivo: 这个电影**怎么样**？ → 这个电影**很有意思**。 Al final de una propuesta: 我们去吧，怎么样？ (¿te parece?)\n- **怎么办** = «¿qué hacemos?».\n- **……是什么意思？** = «¿qué significa…?» (no 怎么).\n\n⚠️ 怎么 + verbo = **cómo**; 怎么样 = **qué tal**. No digas ~~你怎么样去？~~ para «¿cómo vas?».\n\nY para pedir una palabra: «hola» **汉语怎么说**？ — la frase más útil para un estudiante.",
+      "focus": ["adverb", "verb1"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "这个字", "py": "zhège zì" }, "adverb": { "zh": "怎么", "py": "zěnme" }, "verb1": { "zh": "读", "py": "dú" } }, "end": "？", "es": "¿Cómo se lee este carácter?", "esOrder": [{ "text": "¿Cómo", "slot": "adverb" }, { "text": "se lee", "slot": "verb1" }, { "text": "este carácter?", "slot": "subject" }] },
+        { "slots": { "subject": { "zh": "这个字", "py": "zhège zì" }, "adverb": { "zh": "这样", "py": "zhèyàng" }, "verb1": { "zh": "读", "py": "dú" } }, "end": "。", "es": "Este carácter se lee así." },
+        { "slots": { "subject": { "zh": "饺子", "py": "jiǎozi" }, "adverb": { "zh": "怎么", "py": "zěnme" }, "verb1": { "zh": "吃", "py": "chī" } }, "end": "？", "es": "¿Cómo se comen los jiaozi?" },
+        { "slots": { "subject": { "zh": "饺子", "py": "jiǎozi" }, "adverb": { "zh": "这样", "py": "zhèyàng" }, "verb1": { "zh": "吃", "py": "chī" } }, "end": "。", "es": "Los jiaozi se comen así." },
+        { "slots": { "subject": { "zh": "这个电影", "py": "zhège diànyǐng" }, "verb1": { "zh": "怎么样", "py": "zěnmeyàng" } }, "end": "？", "es": "¿Qué tal esta película?" },
+        { "slots": { "subject": { "zh": "这个电影", "py": "zhège diànyǐng" }, "adverb": { "zh": "很", "py": "hěn" }, "verb1": { "zh": "有意思", "py": "yǒu yìsi" } }, "end": "。", "es": "Esta película es muy interesante." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "不", "py": "bù" }, "verb1": { "zh": "明白", "py": "míngbai" }, "object": { "zh": "这个句子的意思", "py": "zhège jùzi de yìsi" } }, "end": "。", "es": "No entiendo el significado de esta frase." },
+        { "slots": { "subject": { "zh": "我们", "py": "wǒmen" }, "adverb": { "zh": "不", "py": "bù" }, "aux": { "zh": "能", "py": "néng" }, "verb1": { "zh": "那样做", "py": "nàyàng zuò" } }, "end": "。", "es": "No podemos hacerlo así." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "汉语", "py": "Hànyǔ" }, "adverb": { "zh": "怎么", "py": "zěnme" }, "verb1": { "zh": "说", "py": "shuō" } }, "end": "？", "es": "¿Cómo se dice en chino?" },
+        { "slots": { "subject": { "zh": "我们", "py": "wǒmen" }, "adverb": { "zh": "怎么", "py": "zěnme" }, "verb1": { "zh": "办", "py": "bàn" } }, "end": "？", "es": "¿Qué hacemos?" },
+        { "slots": { "subject": { "zh": "这个句子", "py": "zhège jùzi" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "什么意思", "py": "shénme yìsi" } }, "end": "？", "es": "¿Qué significa esta frase?" }
+      ],
+      "mistakes": [
+        { "wrong": "怎么你读这个字？", "right": "这个字你怎么读？/ 你怎么读这个字？", "why": "怎么 va pegado delante del verbo, no al principio de la frase." },
+        { "wrong": "这个电影怎么样吗？", "right": "这个电影怎么样？", "why": "怎么样 ya es pregunta: sin 吗." },
+        { "wrong": "这个字怎么样读？", "right": "这个字怎么读？", "why": "Manera = 怎么 + verbo; 怎么样 es «qué tal»." },
+        { "wrong": "这个句子怎么意思？", "right": "这个句子是什么意思？", "why": "Para el significado se pregunta 是什么意思." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Un mensaje que Hugo no entiende",
+      "lines": [
+        { "speaker": "雨果", "zh": "小李，这个字怎么读？", "py": "Xiǎo Lǐ, zhège zì zěnme dú?", "es": "Xiao Li, ¿cómo se lee este carácter?" },
+        { "speaker": "小李", "zh": "这是明天的明。", "py": "Zhè shì míngtiān de míng.", "es": "Es el 明 de 明天 (se lee míng)." },
+        { "speaker": "雨果", "zh": "这个句子是什么意思？我不明白。", "py": "Zhège jùzi shì shénme yìsi? Wǒ bù míngbai.", "es": "¿Qué significa esta frase? No la entiendo." },
+        { "speaker": "小李", "zh": "意思是：明天王老师不来，你们不用上课。", "py": "Yìsi shì: míngtiān Wáng lǎoshī bù lái, nǐmen búyòng shàngkè.", "es": "Significa que mañana la profesora Wang no viene y no tenéis clase." },
+        { "speaker": "雨果", "zh": "真的吗？那明天我们怎么办？", "py": "Zhēn de ma? Nà míngtiān wǒmen zěnme bàn?", "es": "¿En serio? ¿Y qué hacemos mañana?" },
+        { "speaker": "小李", "zh": "我们上午去看电影，怎么样？", "py": "Wǒmen shàngwǔ qù kàn diànyǐng, zěnmeyàng?", "es": "¿Y si vamos al cine por la mañana?" },
+        { "speaker": "雨果", "zh": "不行，上午我很忙。晚上去，怎么样？", "py": "Bù xíng, shàngwǔ wǒ hěn máng. Wǎnshang qù, zěnmeyàng?", "es": "No puede ser, por la mañana estoy muy liado. ¿Y si vamos por la noche?" },
+        { "speaker": "小李", "zh": "行！你怎么这么忙啊？", "py": "Xíng! Nǐ zěnme zhème máng a?", "es": "¡Vale! ¿Cómo es que estás tan liado?" },
+        { "speaker": "雨果", "zh": "我要写很多汉字！这样写，那样写……真难！", "py": "Wǒ yào xiě hěn duō Hànzì! Zhèyàng xiě, nàyàng xiě… Zhēn nán!", "es": "¡Tengo que escribir muchísimos caracteres! Así, asá… ¡Qué difícil!" }
+      ],
+      "notes": "你怎么这么忙？ muestra otro uso de 怎么: «¿cómo es que…?», con sorpresa. 这么 = tan (这么忙 «tan ocupado»). Para pedir la lectura de un carácter, los chinos lo explican con una palabra conocida: 明天的明 «el 明 de 明天»."
+    },
+    { "type": "exercises", "count": 15, "bank": ["g-question-words", "g-hen-adj"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "这个字" }, "adverb": { "zh": "怎么" }, "verb1": { "zh": "读" } }, "end": "？", "es": "¿Cómo se lee este carácter?" }, "distractors": ["怎么样"] },
+        { "sentence": { "slots": { "subject": { "zh": "这个电视剧" }, "verb1": { "zh": "怎么样" } }, "end": "？", "es": "¿Qué tal esta serie?" }, "distractors": ["吗"] },
+        { "sentence": { "slots": { "subject": { "zh": "我" }, "adverb": { "zh": "不" }, "verb1": { "zh": "明白" }, "object": { "zh": "这个句子的意思" } }, "end": "。", "es": "No entiendo el significado de esta frase." } },
+        { "sentence": { "slots": { "time0": { "zh": "明天晚上" }, "subject": { "zh": "我们" }, "with": { "zh": "跟王老师一起" }, "verb1": { "zh": "去" }, "verb2": { "zh": "吃" }, "object": { "zh": "饺子" }, "particle": { "zh": "吧" } }, "end": "！", "es": "¡Mañana por la noche vamos a comer jiaozi con la profesora Wang!" }, "distractors": ["怎么"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "这个字怎么读？", "py": "Zhège zì zěnme dú?", "es": "¿Cómo se lee este carácter?" },
+        { "zh": "这个句子是什么意思？", "py": "Zhège jùzi shì shénme yìsi?", "es": "¿Qué significa esta frase?" },
+        { "zh": "我不明白。", "py": "Wǒ bù míngbai.", "es": "No lo entiendo." },
+        { "zh": "我们晚上去，怎么样？", "py": "Wǒmen wǎnshang qù, zěnmeyàng?", "es": "¿Y si vamos por la noche?" }
+      ],
+      "respond": [
+        { "q": { "zh": "这个电影怎么样？", "py": "Zhège diànyǐng zěnmeyàng?", "es": "¿Qué tal esta película?" }, "model": { "zh": "很有意思，我很喜欢。", "py": "Hěn yǒu yìsi, wǒ hěn xǐhuan.", "es": "Muy interesante, me gusta mucho." } },
+        { "q": { "zh": "你明白吗？", "py": "Nǐ míngbai ma?", "es": "¿Lo entiendes?" }, "model": { "zh": "不明白。这个字怎么读？", "py": "Bù míngbai. Zhège zì zěnme dú?", "es": "No. ¿Cómo se lee este carácter?" } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Las tres preguntas de Ana",
+      "text": "安娜说，学汉语有三个很有用的问题：“这个字怎么读？”“这个句子是什么意思？”“……汉语怎么说？”她不明白的时候，问小李。小李说：“你这样问，很好！”",
+      "es": "Ana dice que para aprender chino hay tres preguntas muy útiles: «¿Cómo se lee este carácter?», «¿Qué significa esta frase?» y «¿Cómo se dice… en chino?». Cuando no entiende algo, se lo pregunta a Xiao Li. Xiao Li le dice: «¡Haces muy bien en preguntar así!».",
+      "questions": [
+        { "q": "¿Cuántas preguntas útiles tiene Ana?", "options": ["Tres", "Dos", "Cuatro"], "answer": 0 },
+        { "q": "¿Qué hace Ana cuando no entiende algo?", "options": ["Pregunta a Xiao Li", "Mira la tele", "Pregunta a la profesora"], "answer": 0 },
+        { "q": "¿Cómo se pregunta el significado de una frase?", "options": ["这个句子是什么意思？", "这个句子怎么样？", "这个句子怎么读吗？"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

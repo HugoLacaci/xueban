@@ -1,0 +1,129 @@
+{
+  "id": "a1-u20-l2",
+  "title": "给 + persona: llamar y escribir a alguien",
+  "zh": "我给你发微信",
+  "goal": "Decir a quién llamas o escribes con 给 + persona + 打电话 / 发微信 / 发短信, y si has recibido (收到) un mensaje.",
+  "minutes": 14,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "给", "pinyin": "gěi", "es": "a, para (+ persona, delante del verbo); dar", "note": "给妈妈打电话 = llamar a mamá. Como verbo («dar») lo verás con más detalle en la U16." },
+    { "hanzi": "发", "pinyin": "fā", "es": "enviar, mandar (mensajes)" },
+    { "hanzi": "微信", "pinyin": "Wēixìn", "es": "WeChat; mensaje de WeChat", "note": "Nivel 4, pero en China es imprescindible: chat, pagos, transporte… 发微信 = mandar un WeChat." },
+    { "hanzi": "短信", "pinyin": "duǎnxìn", "es": "SMS, mensaje de texto", "note": "Lit. «carta corta». Los bancos y las apps mandan los códigos por 短信." },
+    { "hanzi": "信息", "pinyin": "xìnxī", "es": "mensaje; información", "note": "发信息 = mandar un mensaje (de cualquier app)." },
+    { "hanzi": "收到", "pinyin": "shōudào", "es": "recibir", "note": "收到！ (o 收到了) también se usa como «¡recibido!, ¡entendido!»." },
+    { "hanzi": "语音", "pinyin": "yǔyīn", "es": "mensaje de voz, audio", "note": "Nivel 4. 发语音 = mandar un audio." },
+    { "hanzi": "回", "pinyin": "huí", "es": "volver; contestar (un mensaje)", "note": "Repaso de la U7 con un uso nuevo: 回微信 = contestar un WeChat." }
+  ],
+  "extraVocab": ["微信", "语音"],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "我每天给妈妈打电话。", "py": "Wǒ měi tiān gěi māma dǎ diànhuà.", "es": "Llamo a mi madre todos los días." },
+        { "zh": "晚上我给你发微信。", "py": "Wǎnshang wǒ gěi nǐ fā Wēixìn.", "es": "Esta noche te mando un WeChat." },
+        { "zh": "你收到我的信息了吗？", "py": "Nǐ shōudào wǒ de xìnxī le ma?", "es": "¿Has recibido mi mensaje?" }
+      ]
+    },
+    { "type": "vocab", "title": "Mensajes y llamadas", "words": ["给", "发", "微信", "短信", "信息", "收到", "语音", "回"] },
+    {
+      "type": "phonetics-drill",
+      "title": "ei y ui: 给, 微, 回",
+      "markdown": "- **ei**: como la «ei» de *seis*. 给 *gěi*, 微 *wēi*.\n- **ui** es la abreviatura de **uei**: entre consonante y final suena una «u» y una «ei» muy rápidas. 回 *huí* suena casi «juei», 对 *duì* casi «duei».\n- **in** (信 *xìn*) es corta y termina con la lengua arriba; no la alargues a *ing*.",
+      "items": [
+        { "audio": "给", "options": ["gěi", "gǐ", "kěi"], "answer": 0, "explain": "g sin aire + ei en tercer tono." },
+        { "audio": "微信", "options": ["Wēixìn", "Wēixìng", "Wīxìn"], "answer": 0, "explain": "wei + xin (con -n)." },
+        { "audio": "回", "options": ["huí", "hé", "hú"], "answer": 0, "explain": "hui = h + uei abreviado." },
+        { "audio": "收到", "options": ["shōudào", "sōudào", "shōutào"], "answer": 0, "explain": "sh con la lengua atrás; d sin aire." },
+        { "audio": "信息", "options": ["xìnxī", "xìngxī", "xìnsī"], "answer": 0, "explain": "Dos x de lengua plana." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["给", "信"],
+      "mnemonics": {
+        "给": "纟 (hilo de seda) + 合 (juntar): atar con un hilo lo que se entrega = dar, para.",
+        "信": "亻 (persona) + 言 (palabra): la palabra de una persona. Por eso 信 es carta, mensaje… y también confianza."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "给 + persona + 打电话 / 发微信",
+      "markdown": "En español la persona va **detrás** («llamo **a mi madre**»). En chino va **delante del verbo**, con **给**: 我**给妈妈**打电话 (lit. «yo, para mamá, hago la llamada»).\n\n**Convención del esqueleto**: 给 + persona va siempre **pegado delante del verbo**, así que lo dibujamos **dentro del hueco Verbo 1** (给妈妈 + 打), y lo que mandas (电话, 微信, 短信) va en **Objeto**:\n\n| … | Verbo 1 | Objeto |\n|---|---|---|\n| 我 | 给妈妈打 | 电话 |\n| 我 | 给你发 | 微信 |\n\nTodo lo demás (tiempo, 没, 想…) va **antes** de 给: 我**没**给他打电话, 我**想**给妈妈打电话. Nunca entre 给 + persona y el verbo.\n\n⚠️ 打电话 no admite la persona detrás: ~~打电话妈妈~~.",
+      "focus": ["verb1"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "verb1": { "zh": "给妈妈打", "py": "gěi māma dǎ" }, "object": { "zh": "电话", "py": "diànhuà" } }, "end": "。", "es": "Llamo a mi madre." },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "time": { "zh": "每天", "py": "měi tiān" }, "verb1": { "zh": "给爸爸妈妈打", "py": "gěi bàba māma dǎ" }, "object": { "zh": "电话", "py": "diànhuà" } }, "end": "。", "es": "Llamo a mis padres todos los días." },
+        { "slots": { "time0": { "zh": "晚上", "py": "wǎnshang" }, "subject": { "zh": "我", "py": "wǒ" }, "verb1": { "zh": "给你发", "py": "gěi nǐ fā" }, "object": { "zh": "微信", "py": "Wēixìn" } }, "end": "。", "es": "Esta noche te mando un WeChat.", "esOrder": [{ "text": "Esta noche", "slot": "time0" }, { "text": "te mando", "slot": "verb1" }, { "text": "un WeChat", "slot": "object" }] },
+        { "slots": { "subject": { "zh": "小李", "py": "Xiǎo Lǐ" }, "verb1": { "zh": "给我发了", "py": "gěi wǒ fā le" }, "object": { "zh": "一条短信", "py": "yì tiáo duǎnxìn" } }, "end": "。", "es": "Xiao Li me ha mandado un SMS." },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "verb1": { "zh": "收到了", "py": "shōudào le" }, "object": { "zh": "你的信息", "py": "nǐ de xìnxī" } }, "end": "。", "es": "He recibido tu mensaje." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "没", "py": "méi" }, "verb1": { "zh": "给他打", "py": "gěi tā dǎ" }, "object": { "zh": "电话", "py": "diànhuà" } }, "end": "。", "es": "No le he llamado." },
+        { "slots": { "subject": { "zh": "安娜", "py": "Ānnà" }, "adverb": { "zh": "没", "py": "méi" }, "verb1": { "zh": "回", "py": "huí" }, "object": { "zh": "我的微信", "py": "wǒ de Wēixìn" } }, "end": "。", "es": "Ana no me ha contestado el WeChat." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "给王老师打", "py": "gěi Wáng lǎoshī dǎ" }, "object": { "zh": "电话", "py": "diànhuà" }, "particle": { "zh": "了吗", "py": "le ma" } }, "end": "？", "es": "¿Has llamado a la profesora Wang?" },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "收到", "py": "shōudào" }, "object": { "zh": "我的语音", "py": "wǒ de yǔyīn" }, "particle": { "zh": "了吗", "py": "le ma" } }, "end": "？", "es": "¿Has recibido mi audio?" }
+      ],
+      "mistakes": [
+        { "wrong": "我打电话妈妈。", "right": "我给妈妈打电话。", "why": "La persona a la que llamas va delante del verbo, con 给." },
+        { "wrong": "我给打电话妈妈。", "right": "我给妈妈打电话。", "why": "给 va pegado a la persona: 给妈妈, y después el verbo." },
+        { "wrong": "我给他没打电话。", "right": "我没给他打电话。", "why": "没 (y 想, 要, 每天…) van delante de 给, no entre 给 y el verbo." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "¿Te ha llegado mi mensaje?",
+      "lines": [
+        { "speaker": "安娜", "zh": "雨果，你收到我的微信了吗？", "py": "Yǔguǒ, nǐ shōudào wǒ de Wēixìn le ma?", "es": "Hugo, ¿te ha llegado mi WeChat?" },
+        { "speaker": "雨果", "zh": "没收到。我看一下儿手机。", "py": "Méi shōudào. Wǒ kàn yíxiàr shǒujī.", "es": "No me ha llegado. Miro el móvil." },
+        { "speaker": "雨果", "zh": "啊，收到了，是一条语音。", "py": "A, shōudào le, shì yì tiáo yǔyīn.", "es": "¡Ah, sí, ya está! Es un audio." },
+        { "speaker": "安娜", "zh": "明天王老师不上课。你给大卫发一个信息吧。", "py": "Míngtiān Wáng lǎoshī bú shàngkè. Nǐ gěi Dàwèi fā yí ge xìnxī ba.", "es": "Mañana la profesora Wang no da clase. Mándale un mensaje a David." },
+        { "speaker": "雨果", "zh": "我没有大卫的微信。我给他打电话吧。", "py": "Wǒ méiyǒu Dàwèi de Wēixìn. Wǒ gěi tā dǎ diànhuà ba.", "es": "No tengo el WeChat de David. Le llamo por teléfono." },
+        { "speaker": "安娜", "zh": "好。小李呢？", "py": "Hǎo. Xiǎo Lǐ ne?", "es": "Vale. ¿Y Xiao Li?" },
+        { "speaker": "雨果", "zh": "我晚上给小李发短信。", "py": "Wǒ wǎnshang gěi Xiǎo Lǐ fā duǎnxìn.", "es": "Esta noche le mando un SMS a Xiao Li." },
+        { "speaker": "安娜", "zh": "他不常看短信，你给他发微信吧！", "py": "Tā bù cháng kàn duǎnxìn, nǐ gěi tā fā Wēixìn ba!", "es": "No suele mirar los SMS: ¡mándale un WeChat!" },
+        { "speaker": "雨果", "zh": "好，我现在发。", "py": "Hǎo, wǒ xiànzài fā.", "es": "Vale, se lo mando ahora." }
+      ],
+      "notes": "En China casi nadie usa los SMS para hablar con amigos: se usan para los códigos de verificación y los avisos del banco. Entre amigos, todo va por 微信, y los audios (语音) son muy frecuentes."
+    },
+    { "type": "exercises", "count": 15, "bank": ["g-gei", "u14", "g-word-order"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "我" }, "verb1": { "zh": "给妈妈打" }, "object": { "zh": "电话" } }, "end": "。", "es": "Llamo a mi madre." }, "distractors": ["跟"] },
+        { "sentence": { "slots": { "subject": { "zh": "你" }, "verb1": { "zh": "收到" }, "object": { "zh": "我的短信" }, "particle": { "zh": "了吗" } }, "end": "？", "es": "¿Has recibido mi SMS?" } },
+        { "sentence": { "slots": { "subject": { "zh": "我" }, "adverb": { "zh": "没" }, "verb1": { "zh": "给大卫发" }, "object": { "zh": "微信" } }, "end": "。", "es": "No le he mandado un WeChat a David." }, "distractors": ["了"] },
+        { "sentence": { "slots": { "time0": { "zh": "今天晚上" }, "subject": { "zh": "我" }, "aux": { "zh": "想" }, "place": { "zh": "在宿舍" }, "verb1": { "zh": "给西班牙的朋友打" }, "object": { "zh": "电话" } }, "end": "。", "es": "Esta noche quiero llamar desde la residencia a mis amigos de España." } }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "我每天给妈妈打电话。", "py": "Wǒ měi tiān gěi māma dǎ diànhuà.", "es": "Llamo a mi madre todos los días." },
+        { "zh": "晚上我给你发微信。", "py": "Wǎnshang wǒ gěi nǐ fā Wēixìn.", "es": "Esta noche te mando un WeChat." },
+        { "zh": "你收到我的信息了吗？", "py": "Nǐ shōudào wǒ de xìnxī le ma?", "es": "¿Has recibido mi mensaje?" },
+        { "zh": "我没给他打电话。", "py": "Wǒ méi gěi tā dǎ diànhuà.", "es": "No le he llamado." }
+      ],
+      "respond": [
+        { "q": { "zh": "你常常给爸爸妈妈打电话吗？", "py": "Nǐ chángcháng gěi bàba māma dǎ diànhuà ma?", "es": "¿Llamas a menudo a tus padres?" }, "model": { "zh": "我每个星期给他们打电话。", "py": "Wǒ měi ge xīngqī gěi tāmen dǎ diànhuà.", "es": "Les llamo todas las semanas." } },
+        { "q": { "zh": "你收到我的语音了吗？", "py": "Nǐ shōudào wǒ de yǔyīn le ma?", "es": "¿Te ha llegado mi audio?" }, "model": { "zh": "收到了，我晚上给你回。", "py": "Shōudào le, wǒ wǎnshang gěi nǐ huí.", "es": "Sí, ya me ha llegado. Te contesto esta noche." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Mensajes desde España",
+      "text": "雨果的爸爸妈妈在西班牙。雨果每个星期给妈妈打电话，也常常给她发微信。今天早上他收到了妈妈的语音：“雨果，上海冷吗？”雨果给妈妈回了一条信息：“不冷，我很好！”",
+      "es": "Los padres de Hugo están en España. Hugo llama a su madre todas las semanas y también le manda WeChats a menudo. Esta mañana ha recibido un audio de su madre: «Hugo, ¿hace frío en Shanghái?». Hugo le ha contestado con un mensaje: «¡No hace frío, estoy muy bien!».",
+      "questions": [
+        { "q": "¿Con qué frecuencia llama Hugo a su madre?", "options": ["每个星期", "每天", "不常"], "answer": 0 },
+        { "q": "¿Qué ha recibido Hugo esta mañana?", "options": ["一条语音", "一条短信", "一个电话"], "answer": 0 },
+        { "q": "¿Qué le pregunta su madre?", "options": ["上海冷吗？", "你吃饭了吗？", "你在哪儿？"], "answer": 0 },
+        { "q": "¿Cuál es el orden correcto?", "options": ["雨果给妈妈打电话。", "雨果打电话给妈妈给。", "雨果打电话妈妈。"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

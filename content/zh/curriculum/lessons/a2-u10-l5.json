@@ -1,0 +1,143 @@
+{
+  "id": "a2-u10-l5",
+  "title": "Te regalo un pastel de luna: 送给 + persona + cosa (repaso)",
+  "zh": "送给你一包月饼",
+  "goal": "Dar, prestar y vender algo a alguien con 送给 / 借给 / 卖给 + persona + cosa, y repasar toda la unidad hablando de 中秋节, 端午节 y 元宵节.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "礼物", "pinyin": "lǐwù", "es": "regalo" },
+    { "hanzi": "文化", "pinyin": "wénhuà", "es": "cultura" },
+    { "hanzi": "传说", "pinyin": "chuánshuō", "es": "leyenda; se dice que", "note": "传说月亮上住着… = cuenta la leyenda que en la luna vive…" },
+    { "hanzi": "中秋节", "pinyin": "Zhōngqiūjié", "es": "Fiesta del Medio Otoño", "note": "Fuera del HSK. El 15 del octavo mes lunar: luna llena y pasteles de luna." },
+    { "hanzi": "月饼", "pinyin": "yuèbǐng", "es": "pastel de luna", "note": "Fuera del HSK. Se regalan en paquetes y cajas (一包月饼)." },
+    { "hanzi": "端午节", "pinyin": "Duānwǔjié", "es": "Fiesta del Bote del Dragón", "note": "Fuera del HSK. Regatas de barcos dragón (龙船) y 粽子." },
+    { "hanzi": "粽子", "pinyin": "zòngzi", "es": "zongzi (arroz glutinoso envuelto en hojas)", "note": "Fuera del HSK." },
+    { "hanzi": "元宵节", "pinyin": "Yuánxiāojié", "es": "Fiesta de los Faroles", "note": "Fuera del HSK. El día 15 después del Año Nuevo: se comen 元宵 (bolitas de arroz dulces) y se ven faroles." },
+    { "hanzi": "送给", "pinyin": "sòng gěi", "es": "regalar a", "note": "Repaso. 送给 + persona + cosa: 送给我一本书." },
+    { "hanzi": "借给", "pinyin": "jiè gěi", "es": "prestar a", "note": "借给我一百块 = préstame cien yuanes." },
+    { "hanzi": "卖给", "pinyin": "mài gěi", "es": "vender a" },
+    { "hanzi": "因为", "pinyin": "yīnwèi", "es": "porque", "note": "Repaso de la lección 1." },
+    { "hanzi": "虽然", "pinyin": "suīrán", "es": "aunque", "note": "Repaso de la lección 2." },
+    { "hanzi": "以后", "pinyin": "yǐhòu", "es": "después (de)", "note": "Repaso de la lección 4." }
+  ],
+  "extraVocab": ["中秋节", "月饼", "端午节", "粽子", "元宵节"],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "小李送给我一包月饼。", "py": "Xiǎo Lǐ sòng gěi wǒ yì bāo yuèbǐng.", "es": "Xiao Li me ha regalado un paquete de pasteles de luna." },
+        { "zh": "虽然我不是中国人，但是我也过中秋节。", "py": "Suīrán wǒ bú shì Zhōngguórén, dànshì wǒ yě guò Zhōngqiūjié.", "es": "Aunque no soy chino, también celebro la Fiesta del Medio Otoño." },
+        { "zh": "放了假以后，我们就去北京吧。", "py": "Fàng le jià yǐhòu, wǒmen jiù qù Běijīng ba.", "es": "Cuando empiecen las vacaciones, vámonos a Pekín." }
+      ]
+    },
+    { "type": "vocab", "title": "Regalos, fiestas tradicionales y repaso", "words": ["礼物", "文化", "传说", "中秋节", "月饼", "端午节", "粽子", "元宵节", "送给", "借给", "卖给", "因为", "虽然", "以后"] },
+    {
+      "type": "phonetics-drill",
+      "title": "Repaso: 一 + clasificador, tono neutro y la fuerza de 但是",
+      "markdown": "- **一** cambia de tono según lo que venga detrás: 一**包** *yì bāo* (delante de 1.er tono → 4.º), 一**个** *yí ge* (delante del 4.º original de 个 → 2.º).\n- **粽子** *zòngzi*: 子 es **neutro**, como en 饺子, 孩子.\n- **送给我** *sòng gěi wǒ*: 给 + 我 son dos terceros tonos → *géi wǒ*.\n- En las frases de dos partes, la **voz carga en la segunda**: 虽然我不是中国人，**但是**我也过中秋节.",
+      "items": [
+        { "audio": "月饼", "options": ["yuèbǐng", "yuèbīng", "yuèpǐng"], "answer": 0, "explain": "饼 bǐng: b sin aspirar, tercer tono." },
+        { "audio": "粽子", "options": ["zòngzi", "zhòngzi", "zòngzǐ"], "answer": 0, "explain": "z (no zh) y 子 neutro." },
+        { "audio": "一包月饼", "options": ["yì bāo yuèbǐng", "yí hé yuèbǐng", "yī hé yuèbǐng"], "answer": 0, "explain": "一 delante de primer tono → yì." },
+        { "audio": "端午节", "options": ["Duānwǔjié", "Duānwūjié", "Dānwǔjié"], "answer": 0, "explain": "duān con u; wǔ tercer tono." },
+        { "audio": "虽然我不是中国人，但是我也过中秋节。", "prompt": "¿Dónde carga la voz?", "options": ["En la segunda parte (但是…)", "En 虽然", "En 我, al principio"], "answer": 0, "explain": "La primera parte va en suspenso; la idea importante y el peso, en la segunda." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["礼", "送"],
+      "mnemonics": {
+        "礼": "礻 (altar) + 乚: lo que se ofrecía en el altar. De la ofrenda a los dioses viene «cortesía» y «regalo» (礼物).",
+        "送": "辶 (caminar) + 关: ir andando a llevar algo a alguien. Por eso 送 es «regalar» y también «acompañar» (送你回家)."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "送给 / 借给 / 卖给 + persona + cosa",
+      "markdown": "Algunos verbos de «dar» llevan **dos objetos**: primero **a quién** y luego **qué**. Con 送, 借, 卖 se pega **给** al verbo: **送给** + persona + cosa.\n\nEn el esqueleto, el verbo con su persona va en *Verbo 1* (送给王老师) y la cosa, con su clasificador, en *Objeto* (一本书):\n\n- 小李**送给我**一包月饼。\n- 大卫**借给我**他的自行车。\n- 那个商店**卖给我**两个粽子。\n\nEn español la persona va con «a» o es un pronombre delante del verbo («**me** regaló»); en chino va **justo detrás de 给** y antes de la cosa. 给 solo («dar») ya lo conoces: 给我一杯水.",
+      "focus": ["verb1", "object"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "小李", "py": "Xiǎo Lǐ" }, "verb1": { "zh": "送给我", "py": "sòng gěi wǒ" }, "object": { "zh": "一包月饼", "py": "yì bāo yuèbǐng" } }, "end": "。", "es": "Xiao Li me ha regalado un paquete de pasteles de luna.", "esOrder": [{ "text": "Xiao Li", "slot": "subject" }, { "text": "me ha regalado", "slot": "verb1" }, { "text": "un paquete de pasteles de luna", "slot": "object" }] },
+        { "slots": { "subject": { "zh": "我们", "py": "wǒmen" }, "verb1": { "zh": "送给王老师", "py": "sòng gěi Wáng lǎoshī" }, "object": { "zh": "一本西班牙书", "py": "yì běn Xībānyá shū" } }, "end": "。", "es": "Le regalamos a la profesora Wang un libro español." },
+        { "slots": { "subject": { "zh": "大卫", "py": "Dàwèi" }, "verb1": { "zh": "借给我", "py": "jiè gěi wǒ" }, "object": { "zh": "他的自行车", "py": "tā de zìxíngchē" } }, "end": "。", "es": "David me presta su bici." },
+        { "slots": { "subject": { "zh": "那个商店", "py": "nàge shāngdiàn" }, "verb1": { "zh": "卖给我", "py": "mài gěi wǒ" }, "object": { "zh": "两个粽子", "py": "liǎng ge zòngzi" } }, "end": "。", "es": "Esa tienda me vendió dos zongzi." },
+        { "slots": { "time0": { "zh": "因为", "py": "yīnwèi" }, "subject": { "zh": "明天", "py": "míngtiān" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "中秋节", "py": "Zhōngqiūjié" } }, "end": "，", "es": "Como mañana es la Fiesta del Medio Otoño… (1.ª parte)" },
+        { "slots": { "time0": { "zh": "所以", "py": "suǒyǐ" }, "subject": { "zh": "我", "py": "wǒ" }, "verb1": { "zh": "送给你", "py": "sòng gěi nǐ" }, "object": { "zh": "一个月饼", "py": "yí ge yuèbǐng" } }, "end": "。", "es": "…te regalo un pastel de luna. (2.ª parte)" }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "他", "py": "tā" }, "adverb": { "zh": "还没", "py": "hái méi" }, "verb1": { "zh": "送给我", "py": "sòng gěi wǒ" }, "object": { "zh": "礼物", "py": "lǐwù" } }, "end": "。", "es": "Todavía no me ha dado el regalo." },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "不", "py": "bù" }, "aux": { "zh": "想", "py": "xiǎng" }, "verb1": { "zh": "卖给他", "py": "mài gěi tā" }, "object": { "zh": "我的电脑", "py": "wǒ de diànnǎo" } }, "end": "。", "es": "No quiero venderle mi ordenador." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "送给她", "py": "sòng gěi tā" }, "object": { "zh": "什么礼物", "py": "shénme lǐwù" } }, "end": "？", "es": "¿Qué regalo le vas a hacer?" },
+        { "slots": { "subject": { "zh": "谁", "py": "shéi" }, "verb1": { "zh": "送给你", "py": "sòng gěi nǐ" }, "object": { "zh": "这些粽子", "py": "zhèxiē zòngzi" } }, "end": "？", "es": "¿Quién te ha regalado estos zongzi?" }
+      ],
+      "mistakes": [
+        { "wrong": "小李送给一包月饼我。", "right": "小李送给我一包月饼。", "why": "Primero la persona (detrás de 给) y después la cosa." },
+        { "wrong": "他给送我一个礼物。", "right": "他送给我一个礼物。", "why": "给 se pega detrás del verbo: 送给, 借给, 卖给." },
+        { "wrong": "我送给王老师。", "right": "我送给王老师一本书。", "why": "Con 送给 + persona hay que decir qué se regala; si no, di 我送她 / 我给她." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Pasteles de luna en la residencia",
+      "lines": [
+        { "speaker": "小李", "zh": "雨果，明天是中秋节，这些月饼送给你！", "py": "Yǔguǒ, míngtiān shì Zhōngqiūjié, zhèxiē yuèbǐng sòng gěi nǐ!", "es": "Hugo, mañana es la Fiesta del Medio Otoño: ¡estos pasteles de luna son para ti!" },
+        { "speaker": "雨果", "zh": "谢谢！这是我第一次吃月饼。中秋节为什么吃月饼？", "py": "Xièxie! Zhè shì wǒ dì yī cì chī yuèbǐng. Zhōngqiūjié wèi shénme chī yuèbǐng?", "es": "¡Gracias! Es la primera vez que como uno. ¿Por qué se comen en el Medio Otoño?" },
+        { "speaker": "小李", "zh": "因为中秋节的月亮很大很亮，月饼就像月亮。", "py": "Yīnwèi Zhōngqiūjié de yuèliang hěn dà hěn liàng, yuèbǐng jiù xiàng yuèliang.", "es": "Porque en el Medio Otoño la luna está muy grande y brillante, y el pastel se parece a la luna." },
+        { "speaker": "安娜", "zh": "我听说中秋节还有一个月亮的传说。", "py": "Wǒ tīngshuō Zhōngqiūjié hái yǒu yí ge yuèliang de chuánshuō.", "es": "He oído que el Medio Otoño tiene además una leyenda sobre la luna." },
+        { "speaker": "小李", "zh": "对，传说月亮上住着一个很漂亮的女人，她以前是人。", "py": "Duì, chuánshuō yuèliang shang zhùzhe yí ge hěn piàoliang de nǚrén, tā yǐqián shì rén.", "es": "Sí: cuenta la leyenda que en la luna vive una mujer guapísima que antes era humana." },
+        { "speaker": "雨果", "zh": "虽然我不是中国人，但是我很喜欢这个节日。我也想送给你们一个礼物。", "py": "Suīrán wǒ bú shì Zhōngguórén, dànshì wǒ hěn xǐhuan zhège jiérì. Wǒ yě xiǎng sòng gěi nǐmen yí ge lǐwù.", "es": "Aunque no soy chino, esta fiesta me encanta. Yo también quiero haceros un regalo." },
+        { "speaker": "安娜", "zh": "什么礼物？", "py": "Shénme lǐwù?", "es": "¿Qué regalo?" },
+        { "speaker": "雨果", "zh": "西班牙火腿！我妈妈给我买的。", "py": "Xībānyá huǒtuǐ! Wǒ māma gěi wǒ mǎi de.", "es": "¡Jamón español! Me lo ha comprado mi madre." },
+        { "speaker": "小李", "zh": "太好了！中国还有很多节日：端午节吃粽子，元宵节吃元宵。", "py": "Tài hǎo le! Zhōngguó hái yǒu hěn duō jiérì: Duānwǔjié chī zòngzi, Yuánxiāojié chī yuánxiāo.", "es": "¡Genial! En China hay muchas más fiestas: en la del Bote del Dragón se comen zongzi y en la de los Faroles, yuanxiao." },
+        { "speaker": "安娜", "zh": "我觉得中国文化很有意思。以后我们每个节日都一起过吧！", "py": "Wǒ juéde Zhōngguó wénhuà hěn yǒu yìsi. Yǐhòu wǒmen měi ge jiérì dōu yìqǐ guò ba!", "es": "La cultura china me parece interesantísima. ¡A partir de ahora celebremos juntos todas las fiestas!" },
+        { "speaker": "雨果", "zh": "好！那端午节谁送给我们粽子？", "py": "Hǎo! Nà Duānwǔjié shéi sòng gěi wǒmen zòngzi?", "es": "¡Vale! Y en la del Bote del Dragón, ¿quién nos regala los zongzi?" },
+        { "speaker": "小李", "zh": "我！我妈妈做的粽子最好吃。", "py": "Wǒ! Wǒ māma zuò de zòngzi zuì hǎochī.", "es": "¡Yo! Los zongzi que hace mi madre son los mejores." }
+      ],
+      "notes": "El Medio Otoño (中秋节) es el día 15 del octavo mes lunar, con luna llena: es la segunda fiesta familiar del año tras el Año Nuevo. La mujer de la luna de la leyenda se llama 嫦娥 Cháng'é; el programa lunar chino lleva su nombre."
+    },
+    { "type": "exercises", "count": 20, "bank": ["g-gei", "g-measure-words", "g-dates-time", "g-word-order", "g-le"] },
+    {
+      "type": "sentence-builder",
+      "title": "Construye la frase completa",
+      "items": [
+        { "sentence": { "slots": { "time0": { "zh": "因为中秋节，" }, "subject": { "zh": "小李" }, "time": { "zh": "昨天" }, "verb1": { "zh": "送给我" }, "object": { "zh": "一包月饼" } }, "end": "。", "es": "Por el Medio Otoño, ayer Xiao Li me regaló un paquete de pasteles de luna." }, "distractors": ["所以"] },
+        { "sentence": { "slots": { "time0": { "zh": "来中国以前，" }, "subject": { "zh": "我" }, "adverb": { "zh": "从来没" }, "verb1": { "zh": "吃过" }, "object": { "zh": "粽子" } }, "end": "。", "es": "Antes de venir a China no había comido nunca zongzi." }, "distractors": ["以后", "不"] },
+        { "sentence": { "slots": { "time0": { "zh": "过春节的时候，" }, "subject": { "zh": "人们" }, "adverb": { "zh": "都" }, "with": { "zh": "跟父母一起" }, "place": { "zh": "在家里" }, "verb1": { "zh": "包" }, "object": { "zh": "饺子" } }, "end": "。", "es": "Por la Fiesta de la Primavera todo el mundo hace jiaozi en casa con sus padres." }, "distractors": ["当"] },
+        { "sentence": { "slots": { "time0": { "zh": "但是今年" }, "subject": { "zh": "我" }, "aux": { "zh": "想" }, "with": { "zh": "跟中国朋友一起" }, "place": { "zh": "在上海" }, "verb1": { "zh": "过" }, "object": { "zh": "春节" } }, "end": "。", "es": "…pero este año quiero pasar la Fiesta de la Primavera en Shanghái con amigos chinos." }, "distractors": ["所以"] },
+        { "sentence": { "slots": { "time0": { "zh": "放了假以后，" }, "subject": { "zh": "我们" }, "adverb": { "zh": "就" }, "verb1": { "zh": "坐高铁" }, "verb2": { "zh": "去北京" }, "particle": { "zh": "吧" } }, "end": "。", "es": "Cuando empiecen las vacaciones, vámonos a Pekín en tren de alta velocidad." }, "distractors": ["以前"] },
+        { "sentence": { "slots": { "time0": { "zh": "结婚以后，" }, "subject": { "zh": "他们" }, "adverb": { "zh": "也" }, "aux": { "zh": "要" }, "place": { "zh": "在上海" }, "verb1": { "zh": "举行" }, "object": { "zh": "一个晚会" } }, "end": "。", "es": "Después de la boda, también van a hacer una fiesta en Shanghái." }, "distractors": ["结婚了"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "小李送给我一包月饼。", "py": "Xiǎo Lǐ sòng gěi wǒ yì bāo yuèbǐng.", "es": "Xiao Li me ha regalado un paquete de pasteles de luna." },
+        { "zh": "中秋节吃月饼，端午节吃粽子。", "py": "Zhōngqiūjié chī yuèbǐng, Duānwǔjié chī zòngzi.", "es": "En el Medio Otoño se comen pasteles de luna; en el Bote del Dragón, zongzi." },
+        { "zh": "虽然我不是中国人，但是我也过中秋节。", "py": "Suīrán wǒ bú shì Zhōngguórén, dànshì wǒ yě guò Zhōngqiūjié.", "es": "Aunque no soy chino, también celebro el Medio Otoño." },
+        { "zh": "因为人太多，所以我们不去旅游。", "py": "Yīnwèi rén tài duō, suǒyǐ wǒmen bú qù lǚyóu.", "es": "Como hay demasiada gente, no nos vamos de viaje." }
+      ],
+      "respond": [
+        { "q": { "zh": "你送给小李什么礼物？", "py": "Nǐ sòng gěi Xiǎo Lǐ shénme lǐwù?", "es": "¿Qué le regalas a Xiao Li?" }, "model": { "zh": "我送给他一个西班牙火腿。", "py": "Wǒ sòng gěi tā yí ge Xībānyá huǒtuǐ.", "es": "Le regalo un jamón español." } },
+        { "q": { "zh": "来中国以前，你知道中秋节吗？", "py": "Lái Zhōngguó yǐqián, nǐ zhīdào Zhōngqiūjié ma?", "es": "Antes de venir a China, ¿conocías la Fiesta del Medio Otoño?" }, "model": { "zh": "不知道。来中国以后，小李送给我月饼，我就知道了。", "py": "Bù zhīdào. Lái Zhōngguó yǐhòu, Xiǎo Lǐ sòng gěi wǒ yuèbǐng, wǒ jiù zhīdào le.", "es": "No. Cuando vine a China, Xiao Li me regaló pasteles de luna y así la conocí." } },
+        { "q": { "zh": "你小时候最喜欢什么节日？为什么？", "py": "Nǐ xiǎoshíhou zuì xǐhuan shénme jiérì? Wèi shénme?", "es": "De pequeño, ¿cuál era tu fiesta favorita? ¿Por qué?" }, "model": { "zh": "我最喜欢新年，因为全家人都在一起。", "py": "Wǒ zuì xǐhuan xīnnián, yīnwèi quánjiā rén dōu zài yìqǐ.", "es": "Mi favorita era Año Nuevo, porque estaba toda la familia junta." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "El blog de Hugo: las fiestas de China",
+      "text": "来中国以前，我只知道春节。来中国以后，我知道了中国还有很多别的节日。九月，小李送给我一包月饼，因为那天是中秋节。中秋节的晚上，月亮又大又亮，家人都在一起看月亮、吃月饼。小李说，中秋节有一个很老的传说：月亮上住着一个漂亮的女人。春节以后的第十五天是元宵节，人们吃元宵、看灯。五六月有端午节，大家吃粽子，还有龙船比赛。虽然这些节日的时间都不一样，但是它们都是家庭的节日。我觉得中国文化越来越有意思了。今后每个节日，我都想送给中国朋友一个西班牙的小礼物。",
+      "es": "Antes de venir a China solo conocía la Fiesta de la Primavera. Desde que estoy aquí he descubierto que China tiene muchas otras fiestas. En septiembre Xiao Li me regaló un paquete de pasteles de luna, porque era la Fiesta del Medio Otoño. Esa noche la luna está grande y brillante, y las familias se reúnen a mirarla y a comer pasteles de luna. Xiao Li dice que el Medio Otoño tiene una leyenda muy antigua: en la luna vive una mujer guapísima. El día quince después del Año Nuevo es la Fiesta de los Faroles: se comen yuanxiao y se van a ver los faroles. En mayo o junio está la Fiesta del Bote del Dragón: se comen zongzi y hay regatas de barcos dragón. Aunque cada fiesta cae en una fecha distinta, todas son fiestas de la familia. La cultura china me parece cada vez más interesante. A partir de ahora, en cada fiesta quiero regalarles a mis amigos chinos un detallito español.",
+      "questions": [
+        { "q": "¿Qué le regaló Xiao Li a Hugo?", "options": ["一包月饼", "两个粽子", "一个红包"], "answer": 0 },
+        { "q": "¿Qué se hace en la Fiesta de los Faroles?", "options": ["吃元宵、看灯", "吃粽子、看龙船", "吃月饼、看月亮"], "answer": 0 },
+        { "q": "¿Qué tienen en común todas estas fiestas, según Hugo?", "options": ["都是家庭的节日", "时间都一样", "都在九月"], "answer": 0 },
+        { "q": "¿Qué frase es correcta?", "options": ["小李送给我一包月饼。", "小李送给一包月饼我。", "小李给送我一包月饼。"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

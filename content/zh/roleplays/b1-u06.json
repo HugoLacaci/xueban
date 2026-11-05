@@ -1,0 +1,118 @@
+{
+  "unitId": "b1-u06",
+  "scenarios": [
+    {
+      "id": "b1-u06-final",
+      "title": "La final en el bar",
+      "zh": "看决赛",
+      "level": 3,
+      "setting": "Es la noche de la final del Mundial y Hugo la ve en un bar cerca de la universidad. Tú (la app) eres un aficionado chino sentado a su lado que no sabe nada del equipo español.",
+      "role": "aficionado al fútbol",
+      "roleZh": "球迷",
+      "voice": "m",
+      "goals": ["Decir que todo el mundo quiere ver la final (谁都…)", "Explicar algo sorprendente de un jugador con 连…都", "Reaccionar a un gol o al resultado", "Contar que no has comido o dormido nada con 一点儿也 / 什么都没"],
+      "vocab": ["世界杯", "决赛", "谁都", "连…都", "得分", "领先", "赢", "什么都没", "一点儿也不"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "你好！你也来看世界杯决赛啊？今天这儿的人真多。", "py": "Nǐ hǎo! Nǐ yě lái kàn Shìjièbēi juésài a? Jīntiān zhèr de rén zhēn duō.", "es": "¡Hola! ¿Tú también has venido a ver la final del Mundial? Hoy hay muchísima gente." },
+          "user": [
+            { "zh": "是啊，今天谁都想看这场比赛。", "py": "Shì a, jīntiān shéi dōu xiǎng kàn zhè chǎng bǐsài.", "es": "Sí, hoy todo el mundo quiere ver este partido.", "keywords": ["谁都"], "next": "n2", "goal": 0 },
+            { "zh": "对，我是西班牙人，今天我哪儿都不想去，就想看比赛。", "py": "Duì, wǒ shì Xībānyárén, jīntiān wǒ nǎr dōu bù xiǎng qù, jiù xiǎng kàn bǐsài.", "es": "Sí, soy español: hoy no quiero ir a ningún sitio, solo ver el partido.", "keywords": ["哪儿都不"], "next": "n2", "goal": 0 }
+          ],
+          "hint": "Di que todo el mundo quiere ver la final con 谁都想看…, o que hoy no quieres ir a ningún sitio (哪儿都不想去)."
+        },
+        "n2": {
+          "npc": { "zh": "西班牙队我一个选手也不认识。哪个选手最好？", "py": "Xībānyá duì wǒ yí ge xuǎnshǒu yě bú rènshi. Nǎge xuǎnshǒu zuì hǎo?", "es": "Del equipo español no conozco ni a un jugador. ¿Cuál es el mejor?" },
+          "user": [
+            { "zh": "十号。他才十九岁，连世界杯都参加过两次了。", "py": "Shí hào. Tā cái shíjiǔ suì, lián Shìjièbēi dōu cānjiāguo liǎng cì le.", "es": "El diez. Solo tiene diecinueve años y ya ha jugado incluso dos Mundiales.", "keywords": ["连", "都"], "next": "n3", "goal": 1 },
+            { "zh": "十号选手最好，他跑得特别快，连对手都怕他。", "py": "Shí hào xuǎnshǒu zuì hǎo, tā pǎo de tèbié kuài, lián duìshǒu dōu pà tā.", "es": "El número diez: corre rapidísimo, hasta los rivales le tienen miedo.", "keywords": ["连", "都怕"], "next": "n3", "goal": 1 }
+          ],
+          "hint": "Cuenta algo sorprendente del jugador con 连…都: 连对手都怕他, 连世界杯都参加过…"
+        },
+        "n3": {
+          "npc": { "zh": "你看你看！西班牙得分了！", "py": "Nǐ kàn nǐ kàn! Xībānyá défēn le!", "es": "¡Mira, mira! ¡Ha marcado España!" },
+          "user": [
+            { "zh": "太好了！一比零，西班牙领先了！", "py": "Tài hǎo le! Yī bǐ líng, Xībānyá lǐngxiān le!", "es": "¡Genial! ¡Uno a cero, España va ganando!", "keywords": ["领先", "一比零"], "next": "n4", "goal": 2 },
+            { "zh": "我简直不敢相信！全场都站起来了！", "py": "Wǒ jiǎnzhí bù gǎn xiāngxìn! Quánchǎng dōu zhàn qǐlái le!", "es": "¡No me lo puedo creer! ¡Todo el estadio se ha puesto de pie!", "keywords": ["简直", "全场"], "next": "n4", "goal": 2 }
+          ],
+          "hint": "Celebra el gol: 一比零领先, 太好了, 简直不敢相信…"
+        },
+        "n4": {
+          "npc": { "zh": "你今天晚上吃饭了吗？我看你一直很紧张。", "py": "Nǐ jīntiān wǎnshang chī fàn le ma? Wǒ kàn nǐ yìzhí hěn jǐnzhāng.", "es": "¿Has cenado esta noche? Te veo muy nervioso todo el rato." },
+          "user": [
+            { "zh": "没有，我太紧张了，什么都没吃。", "py": "Méiyǒu, wǒ tài jǐnzhāng le, shénme dōu méi chī.", "es": "No, estoy tan nervioso que no he comido nada.", "keywords": ["什么都没"], "next": "n5", "goal": 3 },
+            { "zh": "我一点儿也不饿，比赛完了再吃。", "py": "Wǒ yìdiǎnr yě bú è, bǐsài wán le zài chī.", "es": "No tengo nada de hambre: comeré cuando acabe el partido.", "keywords": ["一点儿也不"], "next": "n5", "goal": 3 },
+            { "zh": "连一口水都没喝！", "py": "Lián yì kǒu shuǐ dōu méi hē!", "es": "¡No he bebido ni un trago de agua!", "keywords": ["连", "都没"], "next": "n5", "goal": 3 }
+          ],
+          "hint": "Di que no has comido nada (什么都没吃), que no tienes nada de hambre (一点儿也不饿) o que no has bebido ni agua (连…都没)."
+        },
+        "n5": {
+          "npc": { "zh": "比赛结束了！西班牙赢了！真为你高兴！", "py": "Bǐsài jiéshù le! Xībānyá yíng le! Zhēn wèi nǐ gāoxìng!", "es": "¡Se acabó el partido! ¡Ha ganado España! ¡Me alegro por ti!" },
+          "user": [
+            { "zh": "谢谢！今天谁想喝什么，我都请客！", "py": "Xièxie! Jīntiān shéi xiǎng hē shénme, wǒ dōu qǐngkè!", "es": "¡Gracias! ¡Hoy invito yo a lo que quiera cada uno!", "keywords": ["谁", "什么", "请客"], "next": "n6", "goal": 2 },
+            { "zh": "太幸福了！我终于看到西班牙胜利了！", "py": "Tài xìngfú le! Wǒ zhōngyú kàndào Xībānyá shènglì le!", "es": "¡Qué felicidad! ¡Por fin he visto ganar a España!", "keywords": ["终于", "胜利"], "next": "n6", "goal": 2 }
+          ],
+          "hint": "Agradece y celebra: invita a todos (谁想喝什么，我都请客) o di que por fin ha ganado (终于…胜利了)."
+        },
+        "n6": {
+          "npc": { "zh": "哈哈，你真热情！下次世界杯我们再一起看吧。", "py": "Hāhā, nǐ zhēn rèqíng! Xià cì Shìjièbēi wǒmen zài yìqǐ kàn ba.", "es": "¡Ja, ja, qué simpático eres! En el próximo Mundial lo vemos juntos otra vez." },
+          "end": true,
+          "feedback": "Has usado las estructuras de sorpresa de la unidad: 谁都 / 哪儿都不 (todo el mundo, a ningún sitio), 连…都 para destacar lo extremo y 什么都没 / 一点儿也不 para negar del todo. Recuerda: el bloque siempre va delante del verbo y la negación, detrás de 都 / 也."
+        }
+      }
+    },
+    {
+      "id": "b1-u06-encuentro",
+      "title": "Un conocido por casualidad",
+      "zh": "碰见熟人",
+      "level": 3,
+      "setting": "Hugo está en la cola de un teatro para ver una obra y la persona de delante le resulta familiar. Tú (la app) eres esa persona: 王明, un chico chino que estuvo de intercambio en Madrid hace años.",
+      "role": "antiguo conocido",
+      "roleZh": "熟人",
+      "voice": "m",
+      "goals": ["Decir que te parece haberlo visto en algún sitio (在哪儿见过)", "Expresar la sorpresa de la casualidad (太巧了)", "Contar que no conoces a nadie / nada de la obra (一个也不…)", "Proponer tomar algo después (喝点儿什么)"],
+      "vocab": ["好像", "在哪儿见过", "认出", "太巧了", "熟人", "一个也不", "话剧", "喝点儿什么"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "你好，请问你也是来看话剧的吗？", "py": "Nǐ hǎo, qǐngwèn nǐ yě shì lái kàn huàjù de ma?", "es": "Hola, perdona, ¿tú también vienes a ver la obra?" },
+          "user": [
+            { "zh": "对。不好意思，我好像在哪儿见过你。", "py": "Duì. Bù hǎoyìsi, wǒ hǎoxiàng zài nǎr jiànguo nǐ.", "es": "Sí. Perdona, me parece que te he visto en algún sitio.", "keywords": ["在哪儿见过", "好像"], "next": "n2", "goal": 0 },
+            { "zh": "是的。你是不是在马德里学习过？我好像认得你。", "py": "Shì de. Nǐ shì bu shì zài Mǎdélǐ xuéxíguo? Wǒ hǎoxiàng rènde nǐ.", "es": "Sí. ¿Tú no estudiaste en Madrid? Creo que te conozco.", "keywords": ["认得", "马德里"], "next": "n2", "goal": 0 }
+          ],
+          "hint": "Dile que te parece haberlo visto en algún sitio: 我好像在哪儿见过你."
+        },
+        "n2": {
+          "npc": { "zh": "啊！你是雨果吧？我是王明，在马德里我们一起上过西班牙语课！", "py": "A! Nǐ shì Yǔguǒ ba? Wǒ shì Wáng Míng, zài Mǎdélǐ wǒmen yìqǐ shàngguo Xībānyáyǔ kè!", "es": "¡Ah! Eres Hugo, ¿verdad? Soy Wang Ming: ¡en Madrid fuimos juntos a clase de español!" },
+          "user": [
+            { "zh": "太巧了！在上海碰见熟人，我真没想到。", "py": "Tài qiǎo le! Zài Shànghǎi pèngjiàn shúrén, wǒ zhēn méi xiǎngdào.", "es": "¡Qué casualidad! No me esperaba encontrarme a un conocido en Shanghái.", "keywords": ["太巧了", "熟人"], "next": "n3", "goal": 1 },
+            { "zh": "王明！真的是你！我差点儿没认出你来。", "py": "Wáng Míng! Zhēn de shì nǐ! Wǒ chàdiǎnr méi rènchū nǐ lái.", "es": "¡Wang Ming! ¡Eres tú de verdad! Casi no te reconozco.", "keywords": ["认出"], "next": "n3", "goal": 1 }
+          ],
+          "hint": "Muestra tu sorpresa: 太巧了！ o 我差点儿没认出你来."
+        },
+        "n3": {
+          "npc": { "zh": "这个话剧的演员你认识吗？听说都很有名。", "py": "Zhège huàjù de yǎnyuán nǐ rènshi ma? Tīngshuō dōu hěn yǒumíng.", "es": "¿Conoces a los actores de esta obra? Dicen que son todos muy famosos." },
+          "user": [
+            { "zh": "我一个也不认识，是朋友给我的票。", "py": "Wǒ yí ge yě bú rènshi, shì péngyou gěi wǒ de piào.", "es": "No conozco a ninguno: la entrada me la dio un amigo.", "keywords": ["一个也不"], "next": "n4", "goal": 2 },
+            { "zh": "不认识。其实我连这个话剧的名字都看不懂。", "py": "Bú rènshi. Qíshí wǒ lián zhège huàjù de míngzi dōu kàn bu dǒng.", "es": "No. La verdad es que no entiendo ni el título de la obra.", "keywords": ["连", "都"], "next": "n4", "goal": 2 }
+          ],
+          "hint": "Di que no conoces a ninguno (一个也不认识) o que no entiendes ni el título (连…都看不懂)."
+        },
+        "n4": {
+          "npc": { "zh": "没关系，我给你讲讲。这个导演的话剧一点儿也不难懂。", "py": "Méi guānxi, wǒ gěi nǐ jiǎngjiang. Zhège dǎoyǎn de huàjù yìdiǎnr yě bù nán dǒng.", "es": "No pasa nada, yo te lo explico. Las obras de este director no son nada difíciles de entender." },
+          "user": [
+            { "zh": "太好了！看完以后我们去喝点儿什么吧？", "py": "Tài hǎo le! Kàn wán yǐhòu wǒmen qù hē diǎnr shénme ba?", "es": "¡Genial! ¿Y al acabar vamos a tomar algo?", "keywords": ["喝点儿什么"], "next": "n5", "goal": 3 },
+            { "zh": "谢谢！演出以后你有时间吗？我们找个地方聊聊。", "py": "Xièxie! Yǎnchū yǐhòu nǐ yǒu shíjiān ma? Wǒmen zhǎo ge dìfang liáoliao.", "es": "¡Gracias! ¿Tienes tiempo después de la función? Buscamos algún sitio y charlamos.", "keywords": ["找个地方", "聊聊"], "next": "n5", "goal": 3 }
+          ],
+          "hint": "Propón ir a tomar algo después: 我们去喝点儿什么吧."
+        },
+        "n5": {
+          "npc": { "zh": "好啊！时间有的是。今天能碰见你，真是太幸运了！", "py": "Hǎo a! Shíjiān yǒudeshì. Jīntiān néng pèngjiàn nǐ, zhēn shì tài xìngyùn le!", "es": "¡Claro! Tiempo hay de sobra. ¡Qué suerte haberte encontrado hoy!" },
+          "end": true,
+          "feedback": "Has usado el interrogativo con sentido indefinido (在哪儿见过, 喝点儿什么), has reaccionado a la casualidad (太巧了, 差点儿没认出你来) y has negado del todo con 一个也不 o 连…都. Ojo: con 吗 o en propuestas con 吧, 什么 significa «algo», no «qué»."
+        }
+      }
+    }
+  ]
+}

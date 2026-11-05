@@ -1,0 +1,138 @@
+{
+  "id": "a2-u10-l3",
+  "title": "Cuando era pequeño: …的时候 y 小时候",
+  "zh": "我小时候…",
+  "goal": "Contar recuerdos de infancia y de fiestas pasadas con …的时候, 小时候, 那时候, 后来 y 原来.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "小时候", "pinyin": "xiǎoshíhou", "es": "de pequeño, en la infancia", "note": "我小时候… = cuando era pequeño… (sin 当 ni 的时候)." },
+    { "hanzi": "从小", "pinyin": "cóngxiǎo", "es": "desde pequeño", "note": "Suele ir con 就: 我从小就喜欢画画儿." },
+    { "hanzi": "出生", "pinyin": "chūshēng", "es": "nacer" },
+    { "hanzi": "长大", "pinyin": "zhǎngdà", "es": "crecer, hacerse mayor", "note": "长 aquí es zhǎng (crecer), no cháng (largo)." },
+    { "hanzi": "那时", "pinyin": "nàshí", "es": "entonces, en aquel momento", "note": "Más escrito que 那时候." },
+    { "hanzi": "那时候", "pinyin": "nà shíhou", "es": "en aquella época, entonces" },
+    { "hanzi": "这时", "pinyin": "zhèshí", "es": "en ese momento (de un relato)" },
+    { "hanzi": "这时候", "pinyin": "zhè shíhou", "es": "en este / ese momento" },
+    { "hanzi": "当时", "pinyin": "dāngshí", "es": "en aquel momento, entonces", "note": "Para un momento concreto del pasado: 当时我很紧张." },
+    { "hanzi": "那会儿", "pinyin": "nàhuìr", "es": "por aquel entonces (oral)", "note": "Muy oral, con erhua del norte." },
+    { "hanzi": "过去", "pinyin": "guòqù", "es": "el pasado; antes, antiguamente", "note": "También «pasar, ir hacia allí» (verbo direccional)." },
+    { "hanzi": "后来", "pinyin": "hòulái", "es": "después, más tarde (en el pasado)", "note": "Solo para contar el pasado: 后来他长大了." },
+    { "hanzi": "原来", "pinyin": "yuánlái", "es": "antes, al principio; ¡así que…!", "note": "原来你是老师！ = ¡Anda, así que eres profesor!" }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "我小时候常常在奶奶家过年。", "py": "Wǒ xiǎoshíhou chángcháng zài nǎinai jiā guònián.", "es": "De pequeño solía pasar el Año Nuevo en casa de mi abuela." },
+        { "zh": "下雪的时候，我们出去玩儿。", "py": "Xià xuě de shíhou, wǒmen chūqù wánr.", "es": "Cuando nieva, salimos a jugar." },
+        { "zh": "后来我长大了，来上海读硕士。", "py": "Hòulái wǒ zhǎngdà le, lái Shànghǎi dú shuòshì.", "es": "Después crecí y vine a Shanghái a hacer el máster." }
+      ]
+    },
+    { "type": "vocab", "title": "Recuerdos y momentos del pasado", "words": ["小时候", "从小", "出生", "长大", "那时", "那时候", "这时", "这时候", "当时", "那会儿", "过去", "后来", "原来"] },
+    {
+      "type": "phonetics-drill",
+      "title": "El tono neutro de 时候 y la pausa tras …的时候",
+      "markdown": "**时候** se dice *shíhou*: la segunda sílaba es **neutra**, corta y sin tono. Lo mismo en 小时候 *xiǎoshíhou*, 那时候 *nà shíhou*.\n\nUn bloque **…的时候** es la primera parte de la frase: termina con la voz **en suspenso**, se hace una **pausa** y luego viene lo que pasa: 下雪的时候 | 我们出去玩儿. No cortes nunca entre 的 y 时候.\n\n- **长大** *zhǎngdà*: 长 de «crecer» es **zhǎng** (3.º), no *cháng*.\n- **那会儿** *nàhuìr*: erhua, la *r* se pega a *huì*; no digas *huì ér*.\n- **出生** *chūshēng*: dos sílabas con la lengua hacia atrás (ch, sh).",
+      "items": [
+        { "audio": "小时候", "options": ["xiǎoshíhou", "xiǎoshíhòu", "xiāoshíhou"], "answer": 0, "explain": "候 neutro: corto y sin tono." },
+        { "audio": "长大", "options": ["zhǎngdà", "chángdà", "zhàngdà"], "answer": 0, "explain": "长 = crecer → zhǎng." },
+        { "audio": "那会儿", "options": ["nàhuìr", "nà huì ér", "nǎhuìr"], "answer": 0, "explain": "Erhua: la r se une a huì." },
+        { "audio": "出生", "options": ["chūshēng", "chūsēng", "cūshēng"], "answer": 0, "explain": "ch y sh, las dos retroflejas." },
+        { "audio": "下雪的时候，我们出去玩儿。", "prompt": "¿Dónde va la pausa?", "options": ["下雪的时候 / 我们出去玩儿", "下雪 / 的时候我们出去玩儿", "下雪的 / 时候我们出去玩儿"], "answer": 0, "explain": "…的时候 es un bloque entero: la pausa va detrás." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["长", "原"],
+      "mnemonics": {
+        "长": "Era el dibujo de una persona mayor con el pelo largo: de ahí «largo» (cháng) y «crecer, hacerse mayor» (zhǎng), como en 长大.",
+        "原": "厂 (un acantilado) + 泉 (manantial) abreviado: el agua que brota de la roca es el «origen». Por eso 原来 = «desde el origen, al principio»."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "…的时候 / 小时候 en el Tiempo inicial",
+      "markdown": "**…的时候** («cuando…») funciona como **una expresión de tiempo**: va **delante** del resto, como 明天 o 八点. Según la convención de la Etapa 2, el bloque entero cabe en el *Tiempo inicial* de una sola fila: [下雪的时候，] [我们] [出去] [玩儿]。\n\n- El orden es **al revés que en español**: «cuando nieva» → 下雪**的时候** (el «cuando» va al final del bloque).\n- **小时候** ya significa «cuando era pequeño»: 我小时候… (✗ 当我小时候的时候).\n- **那时候 / 当时 / 那会儿** = «entonces»; **这时(候)** = «en ese momento» de un relato.\n- **后来** = «después» **en el pasado** (para el futuro, otra palabra: 以后, en la próxima lección).\n- **原来** = «antes, al principio» o la sorpresa de descubrir algo: 原来他是小李的哥哥！",
+      "focus": ["time0", "time"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "time0": { "zh": "小时候", "py": "xiǎoshíhou" }, "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "常常", "py": "chángcháng" }, "place": { "zh": "在奶奶家", "py": "zài nǎinai jiā" }, "verb1": { "zh": "过年", "py": "guònián" } }, "end": "。", "es": "De pequeño solía pasar el Año Nuevo en casa de mi abuela.", "esOrder": [{ "text": "De pequeño", "slot": "time0" }, { "text": "solía", "slot": "adverb" }, { "text": "pasar el Año Nuevo", "slot": "verb1" }, { "text": "en casa de mi abuela", "slot": "place" }] },
+        { "slots": { "time0": { "zh": "下雪的时候，", "py": "xià xuě de shíhou," }, "subject": { "zh": "我们", "py": "wǒmen" }, "verb1": { "zh": "出去", "py": "chūqù" }, "verb2": { "zh": "玩儿", "py": "wánr" } }, "end": "。", "es": "Cuando nieva, salimos a jugar." },
+        { "slots": { "time0": { "zh": "过春节的时候，", "py": "guò Chūnjié de shíhou," }, "subject": { "zh": "人们", "py": "rénmen" }, "adverb": { "zh": "都", "py": "dōu" }, "verb1": { "zh": "回家", "py": "huí jiā" } }, "end": "。", "es": "Por la Fiesta de la Primavera todo el mundo vuelve a casa." },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "从小就", "py": "cóngxiǎo jiù" }, "verb1": { "zh": "喜欢", "py": "xǐhuan" }, "object": { "zh": "画画儿", "py": "huà huàr" } }, "end": "。", "es": "Me gusta dibujar desde pequeño." },
+        { "slots": { "subject": { "zh": "雨果", "py": "Yǔguǒ" }, "place": { "zh": "在马德里", "py": "zài Mǎdélǐ" }, "verb1": { "zh": "出生", "py": "chūshēng" } }, "end": "，", "es": "Hugo nació en Madrid… (1.ª parte)" },
+        { "slots": { "time0": { "zh": "后来", "py": "hòulái" }, "subject": { "zh": "他", "py": "tā" }, "verb1": { "zh": "来上海", "py": "lái Shànghǎi" }, "verb2": { "zh": "读", "py": "dú" }, "object": { "zh": "硕士", "py": "shuòshì" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "…y después vino a Shanghái a hacer el máster. (2.ª parte)" },
+        { "slots": { "subject": { "zh": "他", "py": "tā" }, "adverb": { "zh": "原来", "py": "yuánlái" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "小李的哥哥", "py": "Xiǎo Lǐ de gēge" } }, "end": "！", "es": "¡Anda, así que es el hermano mayor de Xiao Li!" }
+      ],
+      "negative": [
+        { "slots": { "time0": { "zh": "小时候", "py": "xiǎoshíhou" }, "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "不", "py": "bù" }, "verb1": { "zh": "喜欢", "py": "xǐhuan" }, "object": { "zh": "吃鱼", "py": "chī yú" } }, "end": "。", "es": "De pequeño no me gustaba el pescado." },
+        { "slots": { "time0": { "zh": "那时候", "py": "nà shíhou" }, "subject": { "zh": "我们家", "py": "wǒmen jiā" }, "verb1": { "zh": "没有", "py": "méiyǒu" }, "object": { "zh": "电视", "py": "diànshì" } }, "end": "。", "es": "En aquella época en casa no teníamos tele." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "time": { "zh": "小时候", "py": "xiǎoshíhou" }, "verb1": { "zh": "住在", "py": "zhù zài" }, "object": { "zh": "哪儿", "py": "nǎr" } }, "end": "？", "es": "¿Dónde vivías de pequeño?" },
+        { "slots": { "time0": { "zh": "过春节的时候，", "py": "guò Chūnjié de shíhou," }, "subject": { "zh": "你们", "py": "nǐmen" }, "verb1": { "zh": "吃", "py": "chī" }, "object": { "zh": "什么", "py": "shénme" } }, "end": "？", "es": "¿Qué coméis por la Fiesta de la Primavera?" }
+      ],
+      "mistakes": [
+        { "wrong": "的时候下雪，我们出去玩儿。", "right": "下雪的时候，我们出去玩儿。", "why": "的时候 cierra el bloque: va detrás, al revés que «cuando» en español." },
+        { "wrong": "当我小时候的时候，我住在马德里。", "right": "我小时候住在马德里。", "why": "小时候 ya es «cuando era pequeño»: no hace falta 当 ni 的时候." },
+        { "wrong": "那时候我是五岁。", "right": "那时候我五岁。", "why": "Con la edad no se usa 是 (lo viste en la U2)." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Fiestas de cuando éramos pequeños",
+      "lines": [
+        { "speaker": "安娜", "zh": "雨果，你小时候怎么过新年？", "py": "Yǔguǒ, nǐ xiǎoshíhou zěnme guò xīnnián?", "es": "Hugo, ¿cómo celebrabas el Año Nuevo de pequeño?" },
+        { "speaker": "雨果", "zh": "小时候我们全家都去奶奶家。那时候她住在一个小城市。", "py": "Xiǎoshíhou wǒmen quánjiā dōu qù nǎinai jiā. Nà shíhou tā zhù zài yí ge xiǎo chéngshì.", "es": "De pequeño íbamos todos a casa de mi abuela. Entonces vivía en una ciudad pequeña." },
+        { "speaker": "安娜", "zh": "我从小就最喜欢一月六号。", "py": "Wǒ cóngxiǎo jiù zuì xǐhuan yī yuè liù hào.", "es": "A mí desde pequeña lo que más me gusta es el 6 de enero." },
+        { "speaker": "雨果", "zh": "对，那天孩子们都很开心。", "py": "Duì, nà tiān háizimen dōu hěn kāixīn.", "es": "Sí, ese día los niños están felices." },
+        { "speaker": "安娜", "zh": "我五岁的时候，在路上看见了“国王”，当时非常高兴。", "py": "Wǒ wǔ suì de shíhou, zài lù shang kànjiàn le “guówáng”, dāngshí fēicháng gāoxìng.", "es": "Cuando tenía cinco años vi a los Reyes en la calle: en aquel momento me puse contentísima." },
+        { "speaker": "雨果", "zh": "原来你那会儿那么喜欢“国王”！", "py": "Yuánlái nǐ nàhuìr nàme xǐhuan “guówáng”!", "es": "¡Anda, así que por aquel entonces te encantaban los Reyes!" },
+        { "speaker": "安娜", "zh": "是啊。后来我长大了，就知道了。", "py": "Shì a. Hòulái wǒ zhǎngdà le, jiù zhīdào le.", "es": "Pues sí. Después crecí y ya me enteré." },
+        { "speaker": "雨果", "zh": "我是在马德里出生的。过年的时候，我们十二点要吃十二个小水果。", "py": "Wǒ shì zài Mǎdélǐ chūshēng de. Guònián de shíhou, wǒmen shí'èr diǎn yào chī shí'èr ge xiǎo shuǐguǒ.", "es": "Yo nací en Madrid. En Nochevieja, a las doce, tenemos que comernos doce frutitas (las uvas)." },
+        { "speaker": "安娜", "zh": "这时候大家都很开心，对吧？", "py": "Zhè shíhou dàjiā dōu hěn kāixīn, duì ba?", "es": "Y en ese momento todo el mundo está feliz, ¿verdad?" },
+        { "speaker": "雨果", "zh": "对！可是小时候我吃得很慢，常常吃不了十二个。", "py": "Duì! Kěshì xiǎoshíhou wǒ chī de hěn màn, chángcháng chī bu liǎo shí'èr ge.", "es": "¡Sí! Pero de pequeño comía muy despacio y muchas veces no me daba tiempo a las doce." },
+        { "speaker": "安娜", "zh": "过去很多中国人过年要回老家住很多天，现在也是这样吗？", "py": "Guòqù hěn duō Zhōngguórén guònián yào huí lǎojiā zhù hěn duō tiān, xiànzài yě shì zhèyàng ma?", "es": "Antiguamente muchos chinos volvían a su pueblo muchos días por Año Nuevo. ¿Ahora sigue siendo así?" },
+        { "speaker": "雨果", "zh": "小李说，现在大家的假期不太长，一般回家住七八天。", "py": "Xiǎo Lǐ shuō, xiànzài dàjiā de jiàqī bú tài cháng, yìbān huí jiā zhù qī bā tiān.", "es": "Xiao Li dice que ahora las vacaciones no son muy largas: normalmente se quedan siete u ocho días." }
+      ],
+      "notes": "En España, las doce uvas de Nochevieja; en China, la cena de Nochevieja (年夜饭) con toda la familia. 吃不了 («no poder acabar de comer») es un complemento potencial: lo verás en B1; por ahora, apréndelo como bloque."
+    },
+    { "type": "exercises", "count": 16, "bank": ["g-dates-time", "g-word-order", "g-le"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "time0": { "zh": "下雪的时候，" }, "subject": { "zh": "我们" }, "verb1": { "zh": "出去" }, "verb2": { "zh": "玩儿" } }, "end": "。", "es": "Cuando nieva, salimos a jugar." }, "distractors": ["当"] },
+        { "sentence": { "slots": { "subject": { "zh": "我" }, "adverb": { "zh": "从小就" }, "verb1": { "zh": "喜欢" }, "object": { "zh": "画画儿" } }, "end": "。", "es": "Me gusta dibujar desde pequeño." } },
+        { "sentence": { "slots": { "time0": { "zh": "那时候" }, "subject": { "zh": "我们家" }, "verb1": { "zh": "没有" }, "object": { "zh": "电视" } }, "end": "。", "es": "En aquella época en casa no teníamos tele." }, "distractors": ["是"] },
+        { "sentence": { "slots": { "time0": { "zh": "小时候" }, "subject": { "zh": "我" }, "time": { "zh": "每年" }, "adverb": { "zh": "都" }, "with": { "zh": "跟爸爸妈妈一起" }, "place": { "zh": "在奶奶家" }, "verb1": { "zh": "过" }, "object": { "zh": "新年" } }, "end": "。", "es": "De pequeño pasaba todos los años el Año Nuevo en casa de mi abuela, con mis padres." }, "distractors": ["的时候"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "我小时候常常在奶奶家过年。", "py": "Wǒ xiǎoshíhou chángcháng zài nǎinai jiā guònián.", "es": "De pequeño solía pasar el Año Nuevo en casa de mi abuela." },
+        { "zh": "下雪的时候，我们出去玩儿。", "py": "Xià xuě de shíhou, wǒmen chūqù wánr.", "es": "Cuando nieva, salimos a jugar." },
+        { "zh": "后来我长大了，来上海读硕士。", "py": "Hòulái wǒ zhǎngdà le, lái Shànghǎi dú shuòshì.", "es": "Después crecí y vine a Shanghái a hacer el máster." },
+        { "zh": "原来你是小李的哥哥！", "py": "Yuánlái nǐ shì Xiǎo Lǐ de gēge!", "es": "¡Anda, así que eres el hermano de Xiao Li!" }
+      ],
+      "respond": [
+        { "q": { "zh": "你是在哪儿出生的？", "py": "Nǐ shì zài nǎr chūshēng de?", "es": "¿Dónde naciste?" }, "model": { "zh": "我是在马德里出生的，也在马德里长大。", "py": "Wǒ shì zài Mǎdélǐ chūshēng de, yě zài Mǎdélǐ zhǎngdà.", "es": "Nací en Madrid y también crecí allí." } },
+        { "q": { "zh": "你小时候喜欢什么节日？", "py": "Nǐ xiǎoshíhou xǐhuan shénme jiérì?", "es": "¿Qué fiesta te gustaba de pequeño?" }, "model": { "zh": "我从小就喜欢一月六号，因为那天很开心。", "py": "Wǒ cóngxiǎo jiù xǐhuan yī yuè liù hào, yīnwèi nà tiān hěn kāixīn.", "es": "Desde pequeño me encanta el 6 de enero, porque ese día es muy alegre." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Los Años Nuevos de Xiao Li",
+      "text": "小李在一个小城市出生，从小跟爷爷奶奶住在一起，因为那时候他的父母在上海工作。小时候，他最喜欢过春节。过春节的时候，父母回家，全家人一起包饺子、看电视。这时，小李觉得自己是最高兴的孩子。当时家里没有电脑，也没有手机，可是大家每天都在一起说话。后来小李长大了，来上海上大学。原来他觉得上海很大、很远，现在他越来越喜欢这个城市了。那会儿的春节和现在的春节不太一样：过去大家在家里看电视，现在很多人在手机上发红包。小李说：“虽然现在生活很方便，但是我还是常常想起小时候的春节。”",
+      "es": "Xiao Li nació en una ciudad pequeña y desde pequeño vivió con sus abuelos, porque entonces sus padres trabajaban en Shanghái. De niño, su fiesta favorita era la Fiesta de la Primavera. En esas fechas sus padres volvían a casa y toda la familia hacía jiaozi y veía la tele junta. En esos momentos Xiao Li se sentía el niño más feliz del mundo. Entonces en casa no había ordenador ni móvil, pero todos estaban juntos hablando cada día. Después Xiao Li creció y vino a Shanghái a estudiar en la universidad. Al principio Shanghái le parecía enorme y lejísimos; ahora le gusta cada vez más. Las fiestas de entonces no son como las de ahora: antes la gente veía la tele en casa; ahora mucha gente manda sobres rojos por el móvil. Xiao Li dice: «Aunque ahora la vida es muy cómoda, sigo acordándome a menudo de las fiestas de mi infancia».",
+      "questions": [
+        { "q": "¿Con quién vivía Xiao Li de pequeño?", "options": ["跟爷爷奶奶", "跟父母", "跟同学"], "answer": 0 },
+        { "q": "¿Por qué no vivía con sus padres?", "options": ["他们在上海工作", "他们在西班牙", "他们在大学学习"], "answer": 0 },
+        { "q": "¿Qué hace ahora mucha gente por Año Nuevo?", "options": ["在手机上发红包", "在家里画画儿", "去奶奶家住一年"], "answer": 0 },
+        { "q": "¿Qué frase es correcta?", "options": ["下雪的时候，我们出去玩儿。", "的时候下雪，我们出去玩儿。", "当下雪的时候时候，我们出去。"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "id": "b1-u02-l2",
+  "title": "Se ha roto: 被 sin decir quién",
+  "zh": "杯子被打破了",
+  "goal": "Contar que algo se ha roto, perdido o estropeado con 被 sin agente (杯子被打破了) y distinguirlo de los verbos que no lo necesitan (杯子破了, 钥匙丢了).",
+  "minutes": 14,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "破", "pinyin": "pò", "es": "roto, rajado; romper", "note": "衣服破了 = la ropa está rota. 打破 = romper (un vaso…)." },
+    { "hanzi": "断", "pinyin": "duàn", "es": "partirse, romperse (algo largo); cortarse", "note": "椅子腿断了, 网断了 (se ha cortado internet)." },
+    { "hanzi": "丢", "pinyin": "diū", "es": "perder; perderse", "note": "我的钥匙丢了 = he perdido las llaves. No necesita 被." },
+    { "hanzi": "压", "pinyin": "yā", "es": "aplastar, presionar (con peso)", "note": "压坏 = aplastar y estropear." },
+    { "hanzi": "破坏", "pinyin": "pòhuài", "es": "destrozar, dañar, estropear (a propósito)" },
+    { "hanzi": "没用", "pinyin": "méi yòng", "es": "no sirve de nada; inútil", "note": "生气也没用 = enfadarse no sirve de nada." },
+    { "hanzi": "补", "pinyin": "bǔ", "es": "remendar, arreglar; recuperar (una clase)", "note": "补衣服 = remendar ropa; 补课 = recuperar clase." },
+    { "hanzi": "缺", "pinyin": "quē", "es": "faltar, carecer de (coloquial)", "note": "还缺一个杯子 = aún falta un vaso." },
+    { "hanzi": "缺少", "pinyin": "quēshǎo", "es": "faltar, carecer de", "note": "Algo más formal que 缺: 缺少经验." },
+    { "hanzi": "意外", "pinyin": "yìwài", "es": "accidente, imprevisto; inesperado" },
+    { "hanzi": "倒霉", "pinyin": "dǎoméi", "es": "tener mala suerte; gafado", "note": "今天真倒霉！ = ¡Qué mala suerte hoy!" },
+    { "hanzi": "死", "pinyin": "sǐ", "es": "morir; muerto", "note": "Para plantas y animales: 花死了. Para personas se prefiere 去世 (lección 5)." }
+  ],
+  "extraVocab": ["丢", "倒霉"],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "我的杯子被打破了。", "py": "Wǒ de bēizi bèi dǎpò le.", "es": "Se me ha roto el vaso (alguien lo ha roto)." },
+        { "zh": "还好，我的电脑没被压坏。", "py": "Hái hǎo, wǒ de diànnǎo méi bèi yāhuài.", "es": "Menos mal que no se me ha aplastado el ordenador." },
+        { "zh": "今天真倒霉！", "py": "Jīntiān zhēn dǎoméi!", "es": "¡Hoy qué mala suerte!" }
+      ]
+    },
+    { "type": "vocab", "title": "Cosas que se rompen", "words": ["破", "断", "丢", "压", "破坏", "没用", "补", "缺", "缺少", "意外", "倒霉", "死"] },
+    {
+      "type": "phonetics-drill",
+      "title": "被 + verbo + resultado: un solo golpe de voz",
+      "markdown": "Sin agente, 被 va pegado al verbo y todo se dice **de un tirón**: 被打破了 *bèi dǎpò le*. El resultado (破, 坏, 断, 走) es la sílaba fuerte; 了 es neutro y cortísimo.\n\n- 打破 *dǎpò*: tercero + cuarto; el tercero se queda abajo (medio tercer tono) y 破 cae con fuerza.\n- 压坏 *yāhuài*: primero alto y plano + cuarto que cae.\n- **倒霉 dǎoméi**: tercero + segundo, nada de *dào*.\n- **意外 yìwài**: 意 es cuarto tono (no confundir con 一 *yī*).",
+      "items": [
+        { "audio": "杯子被打破了", "options": ["bēizi bèi dǎpò le", "bēizi bèi dǎpō le", "bèizi bèi dǎpò le"], "answer": 0, "explain": "杯 primer tono, 子 neutro; 破 cuarto tono." },
+        { "audio": "杯子被他打破了", "prompt": "¿Se dice quién lo rompió?", "options": ["Sí: 他", "No"], "answer": 0, "explain": "被他 = por él. Sin 他 no se dice quién." },
+        { "audio": "倒霉", "options": ["dǎoméi", "dàoméi", "dǎoměi"], "answer": 0, "explain": "Tercero + segundo." },
+        { "audio": "意外", "options": ["yìwài", "yīwài", "yìwái"], "answer": 0, "explain": "Dos cuartos tonos." },
+        { "audio": "缺少", "options": ["quēshǎo", "quèshǎo", "qiēshǎo"], "answer": 0, "explain": "q + üe (se escribe ue): labios redondeados." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["破", "断"],
+      "mnemonics": {
+        "破": "石 (piedra) + 皮 (piel, da el sonido): la piedra que rompe la piel. Todo lo que se raja o se rompe: 打破, 破了.",
+        "断": "米 (granos, aquí hilos atados) + 斤 (un hacha): el hacha que corta lo que estaba unido. Partirse en dos: 椅子腿断了."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "Lo afectado + 被 + verbo + resultado (sin agente)",
+      "markdown": "Muchas veces no sabes **quién** lo hizo o no importa: «me han roto el vaso», «han forzado la puerta». Entonces el agente desaparece y 被 se pega al verbo: **杯子被打破了**.\n\nEn el esqueleto, el hueco *Con quién* lleva **solo 被**.\n\n**¿Cuándo hace falta 被 y cuándo no?**\n\n| Con 被 (alguien lo hizo) | Sin 被 (le pasa solo, estado) |\n|---|---|\n| 杯子被打破了 | 杯子破了 |\n| 椅子被压断了 | 椅子断了 |\n| 自行车被偷走了 | 钥匙丢了 |\n\nLos verbos de estado o cambio (破, 断, 死, 丢) no necesitan 被: 花死了, 我的钥匙丢了. Si quieres decir que **alguien** lo perdió, usa 弄: 钥匙被弄丢了.\n\n- **Negativa**: 没被: 电脑**没被**压坏.\n- **Pregunta**: …被偷了**吗**？",
+      "focus": ["with"],
+      "sentences": [
+        { "slots": { "subject": { "zh": "我的杯子", "py": "wǒ de bēizi" }, "with": { "zh": "被", "py": "bèi" }, "verb1": { "zh": "打破", "py": "dǎpò" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Se me ha roto el vaso." },
+        { "slots": { "subject": { "zh": "我的眼镜", "py": "wǒ de yǎnjìng" }, "with": { "zh": "被", "py": "bèi" }, "verb1": { "zh": "压坏", "py": "yāhuài" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Se me han aplastado las gafas." },
+        { "slots": { "subject": { "zh": "门口的自行车", "py": "ménkǒu de zìxíngchē" }, "with": { "zh": "被", "py": "bèi" }, "verb1": { "zh": "偷走", "py": "tōuzǒu" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Han robado la bici de la puerta." },
+        { "slots": { "subject": { "zh": "椅子", "py": "yǐzi" }, "with": { "zh": "被", "py": "bèi" }, "verb1": { "zh": "压断", "py": "yāduàn" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "La silla se ha partido por el peso." },
+        { "slots": { "subject": { "zh": "公园里的花", "py": "gōngyuán li de huā" }, "adverb": { "zh": "都", "py": "dōu" }, "with": { "zh": "被", "py": "bèi" }, "verb1": { "zh": "破坏", "py": "pòhuài" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Han destrozado todas las flores del parque." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "我的电脑", "py": "wǒ de diànnǎo" }, "adverb": { "zh": "没", "py": "méi" }, "with": { "zh": "被", "py": "bèi" }, "verb1": { "zh": "压坏", "py": "yāhuài" } }, "end": "。", "es": "No se me ha aplastado el ordenador." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你的钥匙", "py": "nǐ de yàoshi" }, "with": { "zh": "被", "py": "bèi" }, "verb1": { "zh": "拿走", "py": "názǒu" }, "particle": { "zh": "了吗", "py": "le ma" } }, "end": "？", "es": "¿Se han llevado tus llaves?" }
+      ],
+      "mistakes": [
+        { "wrong": "我的钥匙被丢了。", "right": "我的钥匙丢了。 / 我的钥匙被弄丢了。", "why": "丢 ya significa «perderse»: no necesita 被. Si alguien las perdió, 被弄丢了." },
+        { "wrong": "杯子被破了。", "right": "杯子破了。 / 杯子被打破了。", "why": "破 es el estado (roto); con 被 hace falta un verbo de acción + resultado: 打破." },
+        { "wrong": "我被倒霉了。", "right": "我真倒霉。", "why": "倒霉 ya es «tener mala suerte»: no es una acción que alguien te haga." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Un día gafado",
+      "lines": [
+        { "speaker": "小李", "zh": "雨果，你的房间怎么了？东西都在地上！", "py": "Yǔguǒ, nǐ de fángjiān zěnme le? Dōngxi dōu zài dì shang!", "es": "Hugo, ¿qué le ha pasado a tu cuarto? ¡Está todo por el suelo!" },
+        { "speaker": "雨果", "zh": "别说了，今天真倒霉。我的杯子被打破了，椅子也断了。", "py": "Bié shuō le, jīntiān zhēn dǎoméi. Wǒ de bēizi bèi dǎpò le, yǐzi yě duàn le.", "es": "Calla, hoy qué mala suerte. Me han roto el vaso y la silla también se ha partido." },
+        { "speaker": "小李", "zh": "椅子怎么断的？", "py": "Yǐzi zěnme duàn de?", "es": "¿Y cómo se ha partido la silla?" },
+        { "speaker": "雨果", "zh": "不知道。我回来的时候，它已经被压断了。", "py": "Bù zhīdào. Wǒ huílai de shíhou, tā yǐjīng bèi yāduàn le.", "es": "No lo sé. Cuando volví, ya estaba partida, como si alguien se hubiera sentado encima con fuerza." },
+        { "speaker": "小李", "zh": "你的眼镜呢？没被压坏吧？", "py": "Nǐ de yǎnjìng ne? Méi bèi yāhuài ba?", "es": "¿Y tus gafas? No se habrán aplastado, ¿no?" },
+        { "speaker": "雨果", "zh": "还好，眼镜没事。可是我的衣服破了，要补一下。", "py": "Hái hǎo, yǎnjìng méi shì. Kěshì wǒ de yīfu pò le, yào bǔ yíxià.", "es": "Menos mal, las gafas están bien. Pero se me ha roto la ropa y tengo que remendarla." },
+        { "speaker": "小李", "zh": "你的门也被破坏了吗？", "py": "Nǐ de mén yě bèi pòhuài le ma?", "es": "¿También te han forzado la puerta?" },
+        { "speaker": "雨果", "zh": "没有，门是好的。我想是一个意外。", "py": "Méiyǒu, mén shì hǎo de. Wǒ xiǎng shì yí ge yìwài.", "es": "No, la puerta está bien. Creo que ha sido un accidente." },
+        { "speaker": "小李", "zh": "啊，你的花也死了！", "py": "A, nǐ de huā yě sǐ le!", "es": "¡Ay, y la planta también se te ha muerto!" },
+        { "speaker": "雨果", "zh": "那不是意外，是我太忙了，一个星期没给它喝水。", "py": "Nà bú shì yìwài, shì wǒ tài máng le, yí ge xīngqī méi gěi tā hē shuǐ.", "es": "Eso no ha sido un accidente: he estado tan liado que llevo una semana sin regarla." },
+        { "speaker": "小李", "zh": "你还缺什么东西吗？我可以借给你。", "py": "Nǐ hái quē shénme dōngxi ma? Wǒ kěyǐ jiè gěi nǐ.", "es": "¿Te falta algo? Te lo puedo prestar." },
+        { "speaker": "雨果", "zh": "我缺少一把椅子和一个杯子。", "py": "Wǒ quēshǎo yì bǎ yǐzi hé yí ge bēizi.", "es": "Me falta una silla y un vaso." },
+        { "speaker": "小李", "zh": "没问题。别生气了，生气也没用！", "py": "Méi wèntí. Bié shēngqì le, shēngqì yě méi yòng!", "es": "Sin problema. No te enfades, ¡enfadarse no sirve de nada!" }
+      ],
+      "notes": "Fíjate en la diferencia: 椅子断了 (la silla está partida: estado) frente a 椅子被压断了 (alguien o algo la ha partido con peso). 别说了 y 别提了 sirven para empezar a contar un mal día. 没事 = «no le ha pasado nada, está bien»."
+    },
+    { "type": "exercises", "count": 16, "bank": ["g-le", "g-complements", "g-bu-mei"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "我的杯子" }, "with": { "zh": "被" }, "verb1": { "zh": "打破" }, "particle": { "zh": "了" } }, "end": "。", "es": "Se me ha roto el vaso." }, "distractors": ["破"] },
+        { "sentence": { "slots": { "subject": { "zh": "我的电脑" }, "adverb": { "zh": "没" }, "with": { "zh": "被" }, "verb1": { "zh": "压坏" } }, "end": "。", "es": "No se me ha aplastado el ordenador." }, "distractors": ["不"] },
+        { "sentence": { "slots": { "subject": { "zh": "公园里的花" }, "adverb": { "zh": "都" }, "with": { "zh": "被" }, "verb1": { "zh": "破坏" }, "particle": { "zh": "了" } }, "end": "。", "es": "Han destrozado todas las flores del parque." } },
+        { "sentence": { "slots": { "time0": { "zh": "昨天晚上" }, "subject": { "zh": "宿舍门口的三辆自行车" }, "adverb": { "zh": "都" }, "with": { "zh": "被" }, "verb1": { "zh": "偷走" }, "particle": { "zh": "了" } }, "end": "。", "es": "Anoche robaron las tres bicis de la puerta de la residencia." }, "distractors": ["把"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "我的杯子被打破了。", "py": "Wǒ de bēizi bèi dǎpò le.", "es": "Se me ha roto el vaso." },
+        { "zh": "我的钥匙丢了。", "py": "Wǒ de yàoshi diū le.", "es": "He perdido las llaves." },
+        { "zh": "生气也没用。", "py": "Shēngqì yě méi yòng.", "es": "Enfadarse no sirve de nada." },
+        { "zh": "今天真倒霉！", "py": "Jīntiān zhēn dǎoméi!", "es": "¡Hoy qué mala suerte!" }
+      ],
+      "respond": [
+        { "q": { "zh": "你的眼镜怎么了？", "py": "Nǐ de yǎnjìng zěnme le?", "es": "¿Qué les ha pasado a tus gafas?" }, "model": { "zh": "我的眼镜被压坏了。", "py": "Wǒ de yǎnjìng bèi yāhuài le.", "es": "Se me han aplastado las gafas." } },
+        { "q": { "zh": "你还缺什么？", "py": "Nǐ hái quē shénme?", "es": "¿Qué te falta todavía?" }, "model": { "zh": "我还缺一把椅子。", "py": "Wǒ hái quē yì bǎ yǐzi.", "es": "Aún me falta una silla." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "La semana gafada de Ana",
+      "text": "这个星期安娜特别倒霉。星期一，她的手机被压坏了：她把手机放在床上，然后忘了，坐了上去。星期二，下大雨，她的伞被风吹断了，她只能在大雨里走回宿舍。星期三，她在食堂吃饭，一个同学走得太快，她的杯子被打破了。星期四，她发现宿舍门口的自行车被偷走了。星期五早上，她的钥匙丢了，她只能在门口等室友回来。她房间里的花也死了，因为她一个星期没给花喝水。安娜给妈妈打电话，说：“我缺少一个好运气！”妈妈说：“生气也没用。手机可以修，衣服可以补，自行车可以再买。人没事就好！”安娜笑了，觉得妈妈说得对。",
+      "es": "Esta semana Ana ha tenido muy mala suerte. El lunes se le aplastó el móvil: lo dejó en la cama, se olvidó y se sentó encima. El martes llovía muchísimo, el viento le rompió el paraguas y tuvo que volver a la residencia bajo la lluvia. El miércoles, comiendo en el comedor, un compañero iba demasiado deprisa y le rompieron el vaso. El jueves descubrió que le habían robado la bici de la puerta de la residencia. El viernes por la mañana perdió las llaves y tuvo que esperar en la puerta a que volviera su compañera de cuarto. Hasta la planta de su cuarto se murió, porque llevaba una semana sin regarla. Ana llamó a su madre y le dijo: «¡Me falta un poco de buena suerte!». Su madre le contestó: «Enfadarse no sirve de nada. El móvil se puede arreglar, la ropa se puede remendar y la bici se puede volver a comprar. ¡Lo importante es que tú estés bien!». Ana se rio y pensó que su madre tenía razón.",
+      "questions": [
+        { "q": "¿Qué pasó el martes?", "options": ["她的伞被风吹断了", "她的杯子被打破了", "她的钥匙丢了"], "answer": 0 },
+        { "q": "¿Por qué se murió la planta?", "options": ["Ana no la regó en una semana", "Se la rompió el viento", "Se la robaron"], "answer": 0 },
+        { "q": "¿Qué le falta a Ana, según ella?", "options": ["一个好运气", "一把伞", "一辆自行车"], "answer": 0 },
+        { "q": "¿Qué piensa su madre?", "options": ["Lo importante es que Ana esté bien", "Ana tiene que comprar un móvil nuevo hoy", "Ana tiene la culpa de todo"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

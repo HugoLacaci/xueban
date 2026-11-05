@@ -1,0 +1,159 @@
+{
+  "id": "b1-u03-l5",
+  "title": "La puerta no se abre: 打不开, 离不开 y 一遍, 一口, 一声",
+  "zh": "门打不开",
+  "goal": "Usar el potencial con verbos de resultado como 打开 o 离开 (打不开, 离不开) y contar cuántas veces haces algo con 遍, 回, 口 y 声.",
+  "minutes": 16,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "实验", "pinyin": "shíyàn", "es": "experimento, práctica (de laboratorio)", "note": "做实验 = hacer un experimento." },
+    { "hanzi": "实验室", "pinyin": "shíyànshì", "es": "laboratorio" },
+    { "hanzi": "试验", "pinyin": "shìyàn", "es": "prueba, ensayo; probar", "note": "试验 = probar algo para ver si funciona; 实验 = experimento científico. A menudo se confunden." },
+    { "hanzi": "电子邮件", "pinyin": "diànzǐ yóujiàn", "es": "correo electrónico", "note": "Clasificador 封: 一封电子邮件." },
+    { "hanzi": "邮件", "pinyin": "yóujiàn", "es": "correo, mensaje (electrónico o postal)" },
+    { "hanzi": "邮箱", "pinyin": "yóuxiāng", "es": "buzón; dirección de correo electrónico", "note": "你的邮箱是多少？ = ¿cuál es tu correo?" },
+    { "hanzi": "发送", "pinyin": "fāsòng", "es": "enviar (un mensaje, un correo)" },
+    { "hanzi": "输入", "pinyin": "shūrù", "es": "introducir, teclear (datos)", "note": "输入密码 = introducir la contraseña." },
+    { "hanzi": "应用", "pinyin": "yìngyòng", "es": "aplicar; aplicación (también de móvil)", "note": "La app del móvil también se dice 应用 o, coloquial, App." },
+    { "hanzi": "指导", "pinyin": "zhǐdǎo", "es": "orientar, dirigir (un trabajo)", "note": "指导老师 = tutor/a (del trabajo de fin de máster)." },
+    { "hanzi": "请教", "pinyin": "qǐngjiào", "es": "consultar, pedir consejo (a alguien que sabe)", "note": "Muy cortés: 我想请教您一个问题." },
+    { "hanzi": "专家", "pinyin": "zhuānjiā", "es": "experto, especialista" },
+    { "hanzi": "制定", "pinyin": "zhìdìng", "es": "elaborar, fijar (un plan, unas normas)", "note": "制定计划 = hacer un plan." }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "实验室的门我打不开。", "py": "Shíyànshì de mén wǒ dǎ bu kāi.", "es": "No consigo abrir la puerta del laboratorio." },
+        { "zh": "现在的学生离不开手机。", "py": "Xiànzài de xuésheng lí bu kāi shǒujī.", "es": "Los estudiantes de hoy no pueden vivir sin el móvil." },
+        { "zh": "老师，请您再说一遍。", "py": "Lǎoshī, qǐng nín zài shuō yí biàn.", "es": "Profesora, ¿puede repetirlo, por favor?" }
+      ]
+    },
+    { "type": "vocab", "title": "Laboratorio y correo electrónico", "words": ["实验", "实验室", "试验", "电子邮件", "邮件", "邮箱", "发送", "输入", "应用", "指导", "请教", "专家", "制定"] },
+    {
+      "type": "phonetics-drill",
+      "title": "一 delante de 遍, 口, 回, 声",
+      "markdown": "Con los clasificadores verbales vuelve el sandhi de **一**:\n\n- delante de cuarto tono → **yí**: 一遍 *yí biàn*.\n- delante de 1.º, 2.º o 3.º → **yì**: 一声 *yì shēng*, 一回 *yì huí*, 一口 *yì kǒu*.\n\nEn **再说一遍** el énfasis cae en **再** (otra vez) y la frase acaba bajando: es una petición, no una pregunta.\n\nY en el potencial de hoy: **打不开 dǎ bu kāi** (打 medio tercer tono, 不 apagado, 开 alto) y **离不开 lí bu kāi**.",
+      "items": [
+        { "audio": "一遍", "options": ["yí biàn", "yì biàn", "yī biàn"], "answer": 0, "explain": "一 + cuarto tono → yí." },
+        { "audio": "一口", "options": ["yì kǒu", "yí kǒu", "yī kǒu"], "answer": 0, "explain": "一 + tercer tono → yì." },
+        { "audio": "说一声", "options": ["shuō yì shēng", "shuō yí shēng", "shuō yī shèng"], "answer": 0 },
+        { "audio": "打不开", "options": ["dǎ bu kāi", "dǎ bù kài", "dā bu kāi"], "answer": 0 },
+        { "audio": "老师，请您再说一遍。", "prompt": "¿Qué palabra lleva el énfasis?", "options": ["再 (otra vez)", "您", "遍"], "answer": 0 }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["验", "遍"],
+      "mnemonics": {
+        "验": "马 (caballo) + 佥 (todos): antes se examinaba a los caballos uno a uno para comprobar si eran buenos → comprobar, experimentar (实验).",
+        "遍": "辶 (caminar) + 扁 (da el sonido, biǎn → biàn): recorrer un camino de principio a fin → una vez completa (读一遍) o «por todas partes»."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "打不开, 离不开: el potencial de los verbos con resultado",
+      "markdown": "Muchos verbos chinos ya llevan dentro su resultado: **打开** (abrir: «golpear» + «abierto»), **离开** (irse, dejar), **看见** (ver), **完成** (completar). Para el potencial, **得 / 不** se mete **en medio**:\n\n| Verbo | Sí puede | No puede |\n|---|---|---|\n| 打开 | 打**得**开 | 打**不**开 (no se abre) |\n| 离开 | 离**得**开 | 离**不**开 (no puedo prescindir de…) |\n| 完成 | 完成**得了** | 完成**不了** |\n\n**离不开** se usa muchísimo en sentido figurado: 我离不开咖啡 = no puedo vivir sin café.\n\nCon 完成 (no se puede separar) se añade 得了 / 不了 detrás.\n\nEn el esqueleto: 打 / 离 en *Verbo 1* y 得开 / 不开 en *Complemento*; si el objeto va detrás, el bloque entero en *Verbo 1* (离不开 · 手机).",
+      "focus": ["complement"],
+      "sentences": [
+        { "slots": { "subject": { "zh": "实验室的门我", "py": "shíyànshì de mén wǒ" }, "verb1": { "zh": "打", "py": "dǎ" }, "complement": { "zh": "得开", "py": "de kāi" } }, "end": "。", "es": "La puerta del laboratorio sé abrirla." },
+        { "slots": { "subject": { "zh": "这个实验我们", "py": "zhège shíyàn wǒmen" }, "time": { "zh": "今天", "py": "jīntiān" }, "verb1": { "zh": "完成", "py": "wánchéng" }, "complement": { "zh": "得了", "py": "de liǎo" } }, "end": "。", "es": "Este experimento podemos completarlo hoy." },
+        { "slots": { "time0": { "zh": "用这个应用", "py": "yòng zhège yìngyòng" }, "subject": { "zh": "老师的邮件", "py": "lǎoshī de yóujiàn" }, "verb1": { "zh": "打", "py": "dǎ" }, "complement": { "zh": "得开", "py": "de kāi" } }, "end": "。", "es": "Con esta aplicación, los correos de la profesora se abren." },
+        { "slots": { "subject": { "zh": "大卫", "py": "Dàwèi" }, "verb1": { "zh": "打得开", "py": "dǎ de kāi" }, "object": { "zh": "这个文件", "py": "zhège wénjiàn" } }, "end": "。", "es": "David puede abrir este archivo." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "这封电子邮件我", "py": "zhè fēng diànzǐ yóujiàn wǒ" }, "verb1": { "zh": "打", "py": "dǎ" }, "complement": { "zh": "不开", "py": "bu kāi" } }, "end": "。", "es": "Este correo electrónico no consigo abrirlo." },
+        { "slots": { "subject": { "zh": "现在的学生", "py": "xiànzài de xuésheng" }, "verb1": { "zh": "离不开", "py": "lí bu kāi" }, "object": { "zh": "手机", "py": "shǒujī" } }, "end": "。", "es": "Los estudiantes de hoy no pueden vivir sin el móvil." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "实验室的门你", "py": "shíyànshì de mén nǐ" }, "verb1": { "zh": "打", "py": "dǎ" }, "complement": { "zh": "得开打不开", "py": "de kāi dǎ bu kāi" } }, "end": "？", "es": "¿Puedes abrir la puerta del laboratorio o no?" },
+        { "slots": { "subject": { "zh": "这个试验", "py": "zhège shìyàn" }, "time": { "zh": "今天", "py": "jīntiān" }, "verb1": { "zh": "完成", "py": "wánchéng" }, "complement": { "zh": "得了", "py": "de liǎo" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿Se puede completar hoy esta prueba?" }
+      ],
+      "mistakes": [
+        { "wrong": "我打开不了这个门。", "right": "这个门我打不开。", "why": "Con 打开, 不 se mete entre 打 y 开. 打开不了 se oye a veces, pero lo normal es 打不开." },
+        { "wrong": "我不离开手机。", "right": "我离不开手机。", "why": "不离开 = no me voy / no lo dejo (decisión); 离不开 = no puedo estar sin él (no soy capaz)." }
+      ]
+    },
+    {
+      "type": "skeleton",
+      "title": "¿Cuántas veces? 一遍, 一回, 一口, 一声",
+      "markdown": "Ya conoces **次** (三次). Hay otros **clasificadores verbales** que cuentan acciones:\n\n| | Para… | Ejemplo |\n|---|---|---|\n| **遍** | una vez **de principio a fin** | 再说一遍, 读了三遍 |\n| **回** | una vez (= 次, más coloquial) | 去过两回 |\n| **口** | un bocado, un trago | 喝了一口茶 |\n| **声** | un sonido, un aviso | 叫了一声, 跟我说一声 |\n\nVan **detrás del verbo**, como la duración. En el esqueleto:\n\n- sin objeto: cantidad en *Complemento* (说 · 一遍).\n- con un objeto común, la cantidad va **delante del objeto** y juntas en *Objeto* (喝了 · 一口茶).\n- con un **lugar** o una **persona**, la cantidad puede ir detrás: 去过 · 实验室 · 两回.\n\n**«Ni una vez»**: 一 + clasificador + 也没 delante del verbo (一遍也没听过), en *Adverbios*.",
+      "focus": ["complement", "object"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "您", "py": "nín" }, "adverb": { "zh": "再", "py": "zài" }, "verb1": { "zh": "说", "py": "shuō" }, "complement": { "zh": "一遍", "py": "yí biàn" }, "particle": { "zh": "吧", "py": "ba" } }, "end": "。", "es": "Repítalo otra vez, por favor.", "esOrder": [{ "text": "Repítalo", "slot": "verb1" }, { "text": "otra", "slot": "adverb" }, { "text": "vez", "slot": "complement" }] },
+        { "slots": { "subject": { "zh": "他", "py": "tā" }, "verb1": { "zh": "喝了", "py": "hē le" }, "object": { "zh": "一口茶", "py": "yì kǒu chá" } }, "end": "。", "es": "Le dio un sorbo al té." },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "verb1": { "zh": "去过", "py": "qù guo" }, "object": { "zh": "那个实验室", "py": "nàge shíyànshì" }, "complement": { "zh": "两回", "py": "liǎng huí" } }, "end": "。", "es": "He ido dos veces a ese laboratorio." },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "time": { "zh": "走以前", "py": "zǒu yǐqián" }, "with": { "zh": "跟我", "py": "gēn wǒ" }, "verb1": { "zh": "说", "py": "shuō" }, "complement": { "zh": "一声", "py": "yì shēng" } }, "end": "。", "es": "Antes de irte, avísame." },
+        { "slots": { "subject": { "zh": "这篇文章我", "py": "zhè piān wénzhāng wǒ" }, "verb1": { "zh": "读了", "py": "dú le" }, "complement": { "zh": "三遍", "py": "sān biàn" } }, "end": "。", "es": "Este texto lo he leído tres veces." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "这个录音我", "py": "zhège lùyīn wǒ" }, "adverb": { "zh": "一遍也没", "py": "yí biàn yě méi" }, "verb1": { "zh": "听过", "py": "tīng guo" } }, "end": "。", "es": "Esta grabación no la he escuchado ni una vez." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "去过", "py": "qù guo" }, "object": { "zh": "专家的实验室", "py": "zhuānjiā de shíyànshì" }, "complement": { "zh": "几回", "py": "jǐ huí" } }, "end": "？", "es": "¿Cuántas veces has ido al laboratorio del experto?" }
+      ],
+      "mistakes": [
+        { "wrong": "请再一遍说。", "right": "请再说一遍。", "why": "El clasificador verbal va detrás del verbo, no delante como «una vez más» en español." },
+        { "wrong": "他喝了茶一口。", "right": "他喝了一口茶。", "why": "Con un objeto normal, la cantidad va delante del objeto." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "En el laboratorio",
+      "lines": [
+        { "speaker": "雨果", "zh": "小李，实验室的门我打不开，你打得开吗？", "py": "Xiǎo Lǐ, shíyànshì de mén wǒ dǎ bu kāi, nǐ dǎ de kāi ma?", "es": "Xiao Li, no consigo abrir la puerta del laboratorio, ¿tú puedes?" },
+        { "speaker": "小李", "zh": "我试一下……也打不开。你输入密码了吗？", "py": "Wǒ shì yíxià…… yě dǎ bu kāi. Nǐ shūrù mìmǎ le ma?", "es": "A ver… Yo tampoco. ¿Has metido la contraseña?" },
+        { "speaker": "雨果", "zh": "输入了三遍，门上都显示“密码不对”。", "py": "Shūrù le sān biàn, mén shang dōu xiǎnshì “mìmǎ bú duì”.", "es": "La he metido tres veces y en la puerta siempre sale «contraseña incorrecta»." },
+        { "speaker": "小李", "zh": "你给指导老师发一封邮件问问吧。", "py": "Nǐ gěi zhǐdǎo lǎoshī fā yì fēng yóujiàn wènwen ba.", "es": "Mándale un correo a tu tutora y pregúntale." },
+        { "speaker": "雨果", "zh": "我发送了，可是她的邮箱好像有问题，我的电子邮件她打不开。", "py": "Wǒ fāsòng le, kěshì tā de yóuxiāng hǎoxiàng yǒu wèntí, wǒ de diànzǐ yóujiàn tā dǎ bu kāi.", "es": "Ya se lo he mandado, pero parece que su correo tiene algún problema: no puede abrir mis mensajes." },
+        { "speaker": "小李", "zh": "那用微信跟她说一声吧。现在谁都离不开微信。", "py": "Nà yòng Wēixìn gēn tā shuō yì shēng ba. Xiànzài shéi dōu lí bu kāi Wēixìn.", "es": "Pues avísala por WeChat. Hoy en día nadie puede vivir sin WeChat." },
+        { "speaker": "雨果", "zh": "好……老师回了：密码换了，新的是一二三四。", "py": "Hǎo…… Lǎoshī huí le: mìmǎ huàn le, xīn de shì yī èr sān sì.", "es": "Vale… Ya me ha contestado: han cambiado la contraseña, la nueva es 1234." },
+        { "speaker": "小李", "zh": "门开了！今天的试验要做几回？", "py": "Mén kāi le! Jīntiān de shìyàn yào zuò jǐ huí?", "es": "¡Abierta! ¿Cuántas veces hay que hacer hoy la prueba?" },
+        { "speaker": "雨果", "zh": "两回。老师说，第一回做完以后，要请教一下专家。", "py": "Liǎng huí. Lǎoshī shuō, dì yī huí zuòwán yǐhòu, yào qǐngjiào yíxià zhuānjiā.", "es": "Dos. La profesora dice que, después de la primera, hay que consultar al experto." },
+        { "speaker": "小李", "zh": "专家几点来？", "py": "Zhuānjiā jǐ diǎn lái?", "es": "¿A qué hora viene el experto?" },
+        { "speaker": "雨果", "zh": "下午两点。我们先喝一口水，再制定一个实验计划吧。", "py": "Xiàwǔ liǎng diǎn. Wǒmen xiān hē yì kǒu shuǐ, zài zhìdìng yí ge shíyàn jìhuà ba.", "es": "A las dos. Primero bebamos un poco de agua y luego hacemos un plan para el experimento." },
+        { "speaker": "小李", "zh": "好。写完以后，你把计划念一遍给我听。", "py": "Hǎo. Xiěwán yǐhòu, nǐ bǎ jìhuà niàn yí biàn gěi wǒ tīng.", "es": "Vale. Cuando lo termines, léemelo una vez en voz alta." }
+      ],
+      "notes": "指导老师 es el tutor o la tutora del trabajo de fin de máster (毕业论文): en China se le escribe por WeChat más que por correo. 请教 es la forma respetuosa de pedir ayuda a alguien que sabe más: 我想请教您一个问题. Y 说一声 (lit. «decir un sonido») es «avisar»: 到了跟我说一声 = avísame cuando llegues."
+    },
+    { "type": "exercises", "count": 18, "bank": ["g-complements", "g-measure-words", "g-modal-verbs", "g-le"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "实验室的门我" }, "verb1": { "zh": "打" }, "complement": { "zh": "不开" } }, "end": "。", "es": "No consigo abrir la puerta del laboratorio." }, "distractors": ["没"] },
+        { "sentence": { "slots": { "subject": { "zh": "您" }, "adverb": { "zh": "再" }, "verb1": { "zh": "说" }, "complement": { "zh": "一遍" }, "particle": { "zh": "吧" } }, "end": "。", "es": "Repítalo otra vez, por favor." }, "distractors": ["一口"] },
+        { "sentence": { "slots": { "subject": { "zh": "他" }, "verb1": { "zh": "喝了" }, "object": { "zh": "一口茶" } }, "end": "。", "es": "Le dio un sorbo al té." } },
+        { "sentence": { "slots": { "subject": { "zh": "我" }, "adverb": { "zh": "已经" }, "with": { "zh": "把那封电子邮件" }, "verb1": { "zh": "发送给" }, "object": { "zh": "我的指导老师" }, "particle": { "zh": "了" } }, "end": "。", "es": "Ya le he enviado ese correo electrónico a mi tutora." } },
+        { "sentence": { "slots": { "subject": { "zh": "现在做实验的学生" }, "adverb": { "zh": "都" }, "verb1": { "zh": "离不开" }, "object": { "zh": "电脑和手机上的应用" } }, "end": "。", "es": "Hoy los estudiantes que hacen experimentos no pueden prescindir del ordenador ni de las aplicaciones del móvil." } }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "实验室的门我打不开。", "py": "Shíyànshì de mén wǒ dǎ bu kāi.", "es": "No consigo abrir la puerta del laboratorio." },
+        { "zh": "老师，请您再说一遍。", "py": "Lǎoshī, qǐng nín zài shuō yí biàn.", "es": "Profesora, repítalo, por favor." },
+        { "zh": "到了跟我说一声。", "py": "Dào le gēn wǒ shuō yì shēng.", "es": "Avísame cuando llegues." },
+        { "zh": "我想请教您一个问题。", "py": "Wǒ xiǎng qǐngjiào nín yí ge wèntí.", "es": "Quería consultarle una cosa." }
+      ],
+      "respond": [
+        { "q": { "zh": "这个文件你打得开吗？", "py": "Zhège wénjiàn nǐ dǎ de kāi ma?", "es": "¿Puedes abrir este archivo?" }, "model": { "zh": "打不开，你再发送一遍吧。", "py": "Dǎ bu kāi, nǐ zài fāsòng yí biàn ba.", "es": "No se abre, mándamelo otra vez." } },
+        { "q": { "zh": "你离得开手机吗？", "py": "Nǐ lí de kāi shǒujī ma?", "es": "¿Podrías vivir sin el móvil?" }, "model": { "zh": "离不开，我每天都用手机学汉语。", "py": "Lí bu kāi, wǒ měi tiān dōu yòng shǒujī xué Hànyǔ.", "es": "No, lo uso todos los días para estudiar chino." } },
+        { "q": { "zh": "这篇文章你读了几遍？", "py": "Zhè piān wénzhāng nǐ dú le jǐ biàn?", "es": "¿Cuántas veces has leído este texto?" }, "model": { "zh": "我读了三遍，现在看得懂了。", "py": "Wǒ dú le sān biàn, xiànzài kàn de dǒng le.", "es": "Lo he leído tres veces y ya lo entiendo." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "La contraseña del laboratorio",
+      "text": "雨果的实验课在三楼的实验室。第一次上实验课的时候，实验室的门他打不开。他输入了三遍密码，门上都显示“密码不对”。他给指导老师发送了一封电子邮件，可是老师的邮箱好像有问题，一直没有回。最后他用微信跟老师说了一声，老师马上告诉他新的密码。进门以后，老师说：“今天的试验要做两回。做完第一回，大家先休息一下，喝一口水。”下午有一位专家来实验室，同学们都去请教他。专家说：“现在做实验离不开电脑，你们要学会应用新的方法。”下课以前，老师让大家一起制定下个星期的计划，还让雨果把计划念了一遍。雨果念得有点儿慢，可是大家都听得懂。",
+      "es": "La clase de prácticas de Hugo es en el laboratorio de la tercera planta. El primer día no conseguía abrir la puerta: metió la contraseña tres veces y siempre salía «contraseña incorrecta». Le mandó un correo electrónico a su tutora, pero parece que su buzón tenía algún problema y no le contestaba. Al final la avisó por WeChat y ella le dio enseguida la nueva contraseña. Una vez dentro, la profesora dijo: «La prueba de hoy hay que hacerla dos veces. Cuando terminéis la primera, descansad un poco y bebed un trago de agua». Por la tarde vino al laboratorio un experto y todos los alumnos fueron a consultarle. El experto dijo: «Hoy no se pueden hacer experimentos sin ordenador: tenéis que aprender a aplicar métodos nuevos». Antes de terminar, la profesora pidió que hicieran entre todos el plan de la semana siguiente y que Hugo lo leyera una vez en voz alta. Hugo lo leyó un poco despacio, pero todos lo entendieron.",
+      "questions": [
+        { "q": "¿Cuántas veces metió Hugo la contraseña?", "options": ["三遍", "一遍", "两遍"], "answer": 0 },
+        { "q": "¿Cómo avisó por fin a su tutora?", "options": ["用微信", "发电子邮件", "去她的办公室"], "answer": 0 },
+        { "q": "¿Cuántas veces hay que hacer la prueba?", "options": ["两回", "三回", "一回"], "answer": 0 },
+        { "q": "Según el experto, ¿de qué no se puede prescindir?", "options": ["电脑", "密码", "邮箱"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

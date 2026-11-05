@@ -1,0 +1,133 @@
+{
+  "id": "a1-u03-l1",
+  "title": "¿Tienes hermanos? 有 y 没有",
+  "zh": "你有哥哥吗？",
+  "goal": "Decir qué hermanos tienes y no tienes con 有 / 没有, y preguntarlo con 吗 y con 有没有.",
+  "minutes": 13,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "有", "pinyin": "yǒu", "es": "tener; haber" },
+    { "hanzi": "没有", "pinyin": "méiyǒu", "es": "no tener; no haber", "note": "La negativa de 有 es siempre 没有, nunca 不有." },
+    { "hanzi": "没", "pinyin": "méi", "es": "no (con 有)", "note": "En la respuesta corta basta con 没有. Más usos de 没 en la unidad 19." },
+    { "hanzi": "姐姐", "pinyin": "jiějie", "es": "hermana mayor" },
+    { "hanzi": "弟弟", "pinyin": "dìdi", "es": "hermano menor" },
+    { "hanzi": "妹妹", "pinyin": "mèimei", "es": "hermana menor" },
+    { "hanzi": "姐", "pinyin": "jiě", "es": "hermana mayor (coloquial)", "note": "我姐 = mi hermana mayor. También se usa con chicas algo mayores que tú." },
+    { "hanzi": "弟", "pinyin": "dì", "es": "hermano menor (coloquial)", "note": "我弟 = mi hermano pequeño." },
+    { "hanzi": "妹", "pinyin": "mèi", "es": "hermana menor (coloquial)", "note": "我妹 = mi hermana pequeña." }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "我有一个姐姐。", "py": "Wǒ yǒu yí ge jiějie.", "es": "Tengo una hermana mayor." },
+        { "zh": "我没有哥哥，也没有弟弟。", "py": "Wǒ méiyǒu gēge, yě méiyǒu dìdi.", "es": "No tengo hermanos (ni mayores ni pequeños)." },
+        { "zh": "你有没有妹妹？", "py": "Nǐ yǒu méiyǒu mèimei?", "es": "¿Tienes hermana pequeña?" }
+      ]
+    },
+    { "type": "vocab", "title": "Los hermanos", "words": ["有", "没有", "没", "姐姐", "弟弟", "妹妹", "姐", "弟", "妹"] },
+    {
+      "type": "phonetics-drill",
+      "title": "méi, měi, mèi: el tono lo cambia todo",
+      "markdown": "Tres sílabas con las mismas letras y tres palabras distintas de esta unidad:\n\n- **没 méi** (2.º, sube): «no» → 没有 *méiyǒu*\n- **美 měi** (3.º, baja): «bonito» → 美国 *Měiguó*\n- **妹 mèi** (4.º, cae): «hermana menor» → 妹妹 *mèimei*\n\nLa *ei* es como la «ei» de *rey*, pero más cerrada.\n\nY en **没有 méiyǒu** fíjate en el 有: tras un 2.º tono, el 3.º se dice entero (baja y sube) solo si está al final de la frase: 我没有。 En medio (我没有哥哥) se queda en **medio tercero**: solo baja.",
+      "items": [
+        { "audio": "没", "options": ["méi", "měi", "mèi"], "answer": 0, "explain": "没 sube: 2.º tono." },
+        { "audio": "妹妹", "options": ["mèimei", "méimei", "měiměi"], "answer": 0, "explain": "mèi cae; el segundo 妹 va en tono neutro." },
+        { "audio": "美国", "options": ["Měiguó", "Méiguó", "Mèiguó"], "answer": 0, "explain": "美 es 3.er tono (medio tercero delante de guó)." },
+        { "audio": "没有", "options": ["méiyǒu", "mèiyǒu", "méiyóu"], "answer": 0, "explain": "2.º + 3.er tono." },
+        { "audio": "姐姐", "options": ["jiějie", "jiējie", "jièjie"], "answer": 0, "explain": "jiě (3.º) + jie neutro, que tras el 3.º suena algo más alto." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["有", "没"],
+      "mnemonics": {
+        "有": "Una mano (𠂇, arriba) que sujeta un trozo de carne (月, aquí «carne», no «luna»): tener algo en la mano.",
+        "没": "氵 (agua) + 殳: algo que se hunde en el agua y desaparece → ya no está, no hay."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "有 y su negativa 没有",
+      "markdown": "**有** («tener», «haber») va en el hueco del verbo, y lo que se tiene, en el objeto: 我**有**一个姐姐.\n\nSu negativa es **没有**: 没 va en el hueco de los adverbios, donde suele ir 不. Con 有 **nunca** se usa 不: ~~我不有~~.\n\nDos formas de preguntar:\n\n- con **吗**: 你有哥哥**吗**？\n- con **有没有** (verbo afirmativo + negativo): 你**有没有**哥哥？ — sin 吗.\n\nRespuesta corta: **有。** / **没有。**\n\nEn la negativa normalmente **no se pone número**: 我没有弟弟 (no ~~我没有一个弟弟~~).",
+      "focus": ["verb1", "adverb"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "verb1": { "zh": "有", "py": "yǒu" }, "object": { "zh": "一个姐姐", "py": "yí ge jiějie" } }, "end": "。", "es": "Tengo una hermana mayor.", "esOrder": [{ "text": "Tengo", "slot": "verb1" }, { "text": "una hermana mayor", "slot": "object" }] },
+        { "slots": { "subject": { "zh": "小李", "py": "Xiǎo Lǐ" }, "verb1": { "zh": "有", "py": "yǒu" }, "object": { "zh": "一个哥哥", "py": "yí ge gēge" } }, "end": "。", "es": "Xiao Li tiene un hermano mayor." },
+        { "slots": { "subject": { "zh": "安娜", "py": "Ānnà" }, "verb1": { "zh": "有", "py": "yǒu" }, "object": { "zh": "两个妹妹", "py": "liǎng ge mèimei" } }, "end": "。", "es": "Anna tiene dos hermanas pequeñas." },
+        { "slots": { "subject": { "zh": "大卫", "py": "Dàwèi" }, "adverb": { "zh": "也", "py": "yě" }, "verb1": { "zh": "有", "py": "yǒu" }, "object": { "zh": "弟弟", "py": "dìdi" } }, "end": "。", "es": "David también tiene un hermano pequeño." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "没", "py": "méi" }, "verb1": { "zh": "有", "py": "yǒu" }, "object": { "zh": "哥哥", "py": "gēge" } }, "end": "。", "es": "No tengo hermano mayor.", "esOrder": [{ "text": "No", "slot": "adverb" }, { "text": "tengo", "slot": "verb1" }, { "text": "hermano mayor", "slot": "object" }] },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "也没", "py": "yě méi" }, "verb1": { "zh": "有", "py": "yǒu" }, "object": { "zh": "弟弟", "py": "dìdi" } }, "end": "。", "es": "Tampoco tengo hermano pequeño." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "有", "py": "yǒu" }, "object": { "zh": "哥哥", "py": "gēge" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿Tienes hermano mayor?" },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "有没有", "py": "yǒu méiyǒu" }, "object": { "zh": "妹妹", "py": "mèimei" } }, "end": "？", "es": "¿Tienes o no hermana pequeña?" },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "有", "py": "yǒu" }, "object": { "zh": "几个弟弟", "py": "jǐ ge dìdi" } }, "end": "？", "es": "¿Cuántos hermanos pequeños tienes?" }
+      ],
+      "mistakes": [
+        { "wrong": "我不有弟弟。", "right": "我没有弟弟。", "why": "有 se niega siempre con 没: 没有." },
+        { "wrong": "我没有一个弟弟。", "right": "我没有弟弟。", "why": "En la negativa no hace falta (ni suena natural) el número." },
+        { "wrong": "你有没有妹妹吗？", "right": "你有没有妹妹？ / 你有妹妹吗？", "why": "有没有 ya es una pregunta: no se le añade 吗." },
+        { "wrong": "我有一个兄弟。 (para «tengo un hermano»)", "right": "我有一个哥哥。 / 我有一个弟弟。", "why": "El chino casi siempre dice si el hermano es mayor (哥哥) o menor (弟弟)." }
+      ]
+    },
+    {
+      "type": "explain",
+      "title": "Mayor o menor: el chino siempre lo dice",
+      "markdown": "En español «hermano» vale para todos; en chino hay **cuatro palabras** y casi siempre se elige una:\n\n| | mayor | menor |\n|---|---|---|\n| **chico** | 哥哥 gēge | 弟弟 dìdi |\n| **chica** | 姐姐 jiějie | 妹妹 mèimei |\n\nEn la conversación se acortan: **我哥, 我姐, 我弟, 我妹**.\n\n**Cultura**: por la política del hijo único (1980–2015), muchos chinos de la edad de Hugo **no tienen hermanos** (独生子女, «hijo único»). Si preguntas 你有没有哥哥？, no te extrañe un 没有, 我没有哥哥，也没有姐姐. A los primos y a los amigos muy cercanos se les llama a menudo 哥 / 姐 por cariño."
+    },
+    {
+      "type": "dialogue",
+      "title": "Hermanos",
+      "lines": [
+        { "speaker": "小李", "zh": "雨果，你有哥哥吗？", "py": "Yǔguǒ, nǐ yǒu gēge ma?", "es": "Hugo, ¿tienes hermanos mayores?" },
+        { "speaker": "雨果", "zh": "没有。我有一个姐姐。你呢？", "py": "Méiyǒu. Wǒ yǒu yí ge jiějie. Nǐ ne?", "es": "No. Tengo una hermana mayor. ¿Y tú?" },
+        { "speaker": "小李", "zh": "我有一个哥哥，没有姐姐。", "py": "Wǒ yǒu yí ge gēge, méiyǒu jiějie.", "es": "Tengo un hermano mayor; no tengo hermanas mayores." },
+        { "speaker": "雨果", "zh": "你有没有弟弟、妹妹？", "py": "Nǐ yǒu méiyǒu dìdi, mèimei?", "es": "¿Tienes hermanos pequeños?" },
+        { "speaker": "小李", "zh": "没有。安娜呢？", "py": "Méiyǒu. Ānnà ne?", "es": "No. ¿Y Anna?" },
+        { "speaker": "雨果", "zh": "安娜有两个妹妹。", "py": "Ānnà yǒu liǎng ge mèimei.", "es": "Anna tiene dos hermanas pequeñas." },
+        { "speaker": "小李", "zh": "大卫也有妹妹吗？", "py": "Dàwèi yě yǒu mèimei ma?", "es": "¿David también tiene hermanas pequeñas?" },
+        { "speaker": "雨果", "zh": "大卫没有妹妹，他有一个弟弟。", "py": "Dàwèi méiyǒu mèimei, tā yǒu yí ge dìdi.", "es": "David no tiene hermanas: tiene un hermano pequeño." }
+      ],
+      "notes": "Fíjate en la respuesta corta: 没有 (no) / 有 (sí). Con 有 no se contesta 不 ni 不是."
+    },
+    { "type": "exercises", "count": 14, "bank": ["g-you", "g-bu-mei", "u03"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "我" }, "verb1": { "zh": "有" }, "object": { "zh": "一个姐姐" } }, "end": "。", "es": "Tengo una hermana mayor." } },
+        { "sentence": { "slots": { "subject": { "zh": "我" }, "adverb": { "zh": "没" }, "verb1": { "zh": "有" }, "object": { "zh": "哥哥" } }, "end": "。", "es": "No tengo hermano mayor." }, "distractors": ["不"] },
+        { "sentence": { "slots": { "subject": { "zh": "你" }, "verb1": { "zh": "有没有" }, "object": { "zh": "妹妹" } }, "end": "？", "es": "¿Tienes hermana pequeña?" }, "distractors": ["吗"] },
+        { "sentence": { "slots": { "subject": { "zh": "安娜" }, "adverb": { "zh": "也没" }, "verb1": { "zh": "有" }, "object": { "zh": "中国朋友" } }, "end": "。", "es": "Anna tampoco tiene amigos chinos." }, "distractors": ["不", "一个"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "我有一个姐姐。", "py": "Wǒ yǒu yí ge jiějie.", "es": "Tengo una hermana mayor." },
+        { "zh": "我没有哥哥，也没有弟弟。", "py": "Wǒ méiyǒu gēge, yě méiyǒu dìdi.", "es": "No tengo hermanos." },
+        { "zh": "你有没有妹妹？", "py": "Nǐ yǒu méiyǒu mèimei?", "es": "¿Tienes hermana pequeña?" }
+      ],
+      "respond": [
+        { "q": { "zh": "你有哥哥吗？", "py": "Nǐ yǒu gēge ma?", "es": "¿Tienes hermano mayor?" }, "model": { "zh": "没有，我没有哥哥。我有一个姐姐。", "py": "Méiyǒu, wǒ méiyǒu gēge. Wǒ yǒu yí ge jiějie.", "es": "No, no tengo hermano mayor. Tengo una hermana mayor." } },
+        { "q": { "zh": "你有没有弟弟？", "py": "Nǐ yǒu méiyǒu dìdi?", "es": "¿Tienes hermano pequeño?" }, "model": { "zh": "没有。", "py": "Méiyǒu.", "es": "No." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Los hermanos de la clase",
+      "text": "雨果有一个姐姐，他没有哥哥，也没有弟弟、妹妹。小李有一个哥哥。安娜有两个妹妹，她没有姐姐。大卫有一个弟弟。王老师呢？王老师有一个妹妹。",
+      "es": "Hugo tiene una hermana mayor; no tiene hermanos mayores ni hermanos pequeños. Xiao Li tiene un hermano mayor. Anna tiene dos hermanas pequeñas y no tiene hermanas mayores. David tiene un hermano pequeño. ¿Y la profesora Wang? Tiene una hermana pequeña.",
+      "questions": [
+        { "q": "¿Quién tiene un hermano mayor?", "options": ["小李", "雨果", "大卫"], "answer": 0 },
+        { "q": "¿Cuántas hermanas pequeñas tiene Anna?", "options": ["Dos", "Una", "Ninguna"], "answer": 0 },
+        { "q": "¿Qué hermanos tiene Hugo?", "options": ["Una hermana mayor", "Un hermano pequeño", "Ninguno"], "answer": 0 },
+        { "q": "¿Cuál es la negativa de 有?", "options": ["没有", "不有", "不是"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

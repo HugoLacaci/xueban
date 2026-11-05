@@ -1,0 +1,138 @@
+{
+  "id": "b1-u03-l4",
+  "title": "No lo encuentro: 找不到, 买不到, 去不了",
+  "zh": "我找不到教室",
+  "goal": "Decir que no encuentras o no consigues algo (找不到, 买不到) y que no puedes hacer algo por las circunstancias (去不了, 吃不了) el día de la matrícula.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "报到", "pinyin": "bàodào", "es": "presentarse, registrarse (al llegar)", "note": "新生报到 = registro de los alumnos nuevos. No confundir con 报道 (noticia)." },
+    { "hanzi": "学费", "pinyin": "xuéfèi", "es": "matrícula, tasas académicas", "note": "交学费 = pagar la matrícula." },
+    { "hanzi": "班级", "pinyin": "bānjí", "es": "clase, grupo (de alumnos)" },
+    { "hanzi": "专业", "pinyin": "zhuānyè", "es": "especialidad, carrera; profesional", "note": "你是什么专业的？ = ¿qué estudias?" },
+    { "hanzi": "系", "pinyin": "xì", "es": "departamento, facultad", "note": "中文系 = departamento de Filología China." },
+    { "hanzi": "课程", "pinyin": "kèchéng", "es": "asignatura, curso, programa", "note": "课程表 = horario de clases." },
+    { "hanzi": "初", "pinyin": "chū", "es": "principio de; (de) primero", "note": "月初 = principios de mes; 初次 = primera vez." },
+    { "hanzi": "初步", "pinyin": "chūbù", "es": "inicial, preliminar", "note": "初步的考试 = prueba inicial (de nivel)." },
+    { "hanzi": "初级", "pinyin": "chūjí", "es": "nivel inicial, elemental", "note": "初级 · 中级 · 高级." },
+    { "hanzi": "初一", "pinyin": "chūyī", "es": "primero de secundaria (1.º de ESO); primer día del mes lunar", "note": "大年初一 = el primer día del Año Nuevo chino." },
+    { "hanzi": "初中", "pinyin": "chūzhōng", "es": "secundaria (primer ciclo, 12–15 años)", "note": "Después viene 高中 (bachillerato)." },
+    { "hanzi": "基础", "pinyin": "jīchǔ", "es": "base, fundamentos", "note": "汉语基础很好 = tiene muy buena base de chino." },
+    { "hanzi": "能力", "pinyin": "nénglì", "es": "capacidad, habilidad" }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "对不起，我找不到中文系的办公室。", "py": "Duìbuqǐ, wǒ zhǎo bu dào Zhōngwénxì de bàn gōng shì.", "es": "Perdone, no encuentro el despacho del departamento de chino." },
+        { "zh": "这本教材现在买不到。", "py": "Zhè běn jiàocái xiànzài mǎi bu dào.", "es": "Este libro de texto ahora no se consigue." },
+        { "zh": "明天的课我去不了。", "py": "Míngtiān de kè wǒ qù bu liǎo.", "es": "Mañana no puedo ir a clase." }
+      ]
+    },
+    { "type": "vocab", "title": "El día de la matrícula", "words": ["报到", "学费", "班级", "专业", "系", "课程", "初", "初步", "初级", "初一", "初中", "基础", "能力"] },
+    {
+      "type": "phonetics-drill",
+      "title": "了 que se lee liǎo: 去不了, 吃不了",
+      "markdown": "En el potencial **V得了 / V不了**, 了 **no** es la partícula *le*: se lee **liǎo**, en tercer tono, y lleva el peso de la palabra.\n\n- 我去**了** *wǒ qù le* = he ido.\n- 我去不**了** *wǒ qù bu liǎo* = no puedo ir.\n\nUn error de pronunciación aquí cambia el significado entero. Y recuerda que 不 se apaga en medio: *qù bu liǎo*.\n\n**找不到 zhǎo bu dào**: 找 es tercer tono y delante del neutro se queda abajo; 到 cae con fuerza al final.",
+      "items": [
+        { "audio": "吃不了", "options": ["chī bu liǎo", "chī bu le", "chī bù lái"], "answer": 0, "explain": "En el potencial, 了 = liǎo." },
+        { "audio": "我去不了。", "prompt": "¿Qué has oído?", "options": ["No puedo ir.", "Ya he ido.", "No he ido."], "answer": 0, "explain": "liǎo: potencial. Ya he ido sería 我去了 (le)." },
+        { "audio": "找不到", "options": ["zhǎo bu dào", "zhāo bu dào", "zǎo bu dào"], "answer": 0, "explain": "zh retrofleja y tercer tono que se queda abajo." },
+        { "audio": "初中", "options": ["chūzhōng", "zhūzhōng", "chūzhòng"], "answer": 0, "explain": "ch con aire y dos primeros tonos, altos y planos." },
+        { "audio": "学费", "options": ["xuéfèi", "xuéfēi", "xuěfèi"], "answer": 0 }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["初", "础"],
+      "mnemonics": {
+        "初": "衤 (ropa) + 刀 (cuchillo): para hacer ropa, lo primero es cortar la tela → principio (初, 初级).",
+        "础": "石 (piedra) + 出: la piedra que sale del suelo bajo una columna, la base (基础)."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "找不到, 买不到, V不了: cuando las circunstancias no dejan",
+      "markdown": "Dos resultados más para el potencial:\n\n- **到** (llegar a, conseguir): 找**得**到 / 找**不**到 = lo encuentro / no lo encuentro; 买不到 = no se encuentra para comprar (se ha agotado, no lo venden); 借不到 = no hay manera de que te lo presten.\n- **了 liǎo** (poder llevarlo a cabo): 去**不**了 = no puedo ir (tengo otra cosa, estoy malo…); 吃不了 = no puedo comer tanto / no puedo comerlo (picante, alergia…); 来得了 = puede venir.\n\n**买不到 o 买不了**: 买不到 = no lo hay; 买不了 = no puedo comprarlo (no me llega el dinero, es demasiado).\n\n**吃不了 o 吃不完**: los dos sirven para «es demasiado», pero 吃不了 también vale para «no puedo comerlo» (太辣了，我吃不了).\n\nEn el esqueleto, igual que en las lecciones anteriores: verbo en *Verbo 1*, 得到 / 不了 en *Complemento*; con objeto detrás, el bloque entero en *Verbo 1*.",
+      "focus": ["complement"],
+      "sentences": [
+        { "slots": { "subject": { "zh": "这本书", "py": "zhè běn shū" }, "place": { "zh": "在图书馆", "py": "zài túshūguǎn" }, "verb1": { "zh": "借", "py": "jiè" }, "complement": { "zh": "得到", "py": "de dào" } }, "end": "。", "es": "Este libro se puede sacar en la biblioteca." },
+        { "slots": { "subject": { "zh": "三碗米饭他", "py": "sān wǎn mǐfàn tā" }, "verb1": { "zh": "吃", "py": "chī" }, "complement": { "zh": "得了", "py": "de liǎo" } }, "end": "。", "es": "Él es capaz de comerse tres cuencos de arroz." },
+        { "slots": { "time0": { "zh": "用手机地图", "py": "yòng shǒujī dìtú" }, "subject": { "zh": "雨果", "py": "Yǔguǒ" }, "verb1": { "zh": "找得到", "py": "zhǎo de dào" }, "object": { "zh": "中文系的办公室", "py": "Zhōngwénxì de bàn gōng shì" } }, "end": "。", "es": "Con el mapa del móvil, Hugo puede encontrar el despacho del departamento de chino." },
+        { "slots": { "subject": { "zh": "学费我", "py": "xuéfèi wǒ" }, "adverb": { "zh": "自己", "py": "zìjǐ" }, "verb1": { "zh": "付", "py": "fù" }, "complement": { "zh": "得了", "py": "de liǎo" } }, "end": "。", "es": "La matrícula puedo pagarla yo solo." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "那本教材我", "py": "nà běn jiàocái wǒ" }, "place": { "zh": "在书店", "py": "zài shūdiàn" }, "verb1": { "zh": "买", "py": "mǎi" }, "complement": { "zh": "不到", "py": "bu dào" } }, "end": "。", "es": "Ese libro de texto no lo encuentro en la librería." },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "time": { "zh": "明天", "py": "míngtiān" }, "verb1": { "zh": "去", "py": "qù" }, "complement": { "zh": "不了", "py": "bu liǎo" } }, "end": "。", "es": "Mañana no puedo ir." },
+        { "slots": { "subject": { "zh": "这么多菜我们", "py": "zhème duō cài wǒmen" }, "verb1": { "zh": "吃", "py": "chī" }, "complement": { "zh": "不了", "py": "bu liǎo" } }, "end": "。", "es": "No podemos con tanta comida." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "找得到", "py": "zhǎo de dào" }, "object": { "zh": "我们的班级", "py": "wǒmen de bānjí" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿Sabrás encontrar nuestra clase?" },
+        { "slots": { "subject": { "zh": "明天的报到你", "py": "míngtiān de bàodào nǐ" }, "verb1": { "zh": "来", "py": "lái" }, "complement": { "zh": "得了来不了", "py": "de liǎo lái bu liǎo" } }, "end": "？", "es": "¿Puedes venir mañana al registro o no?" }
+      ],
+      "mistakes": [
+        { "wrong": "我不能找到教室。", "right": "我找不到教室。", "why": "«No encuentro» (aunque lo intento) es potencial con 到." },
+        { "wrong": "那本书卖完了，我买不了。", "right": "那本书卖完了，我买不到。", "why": "Si no lo hay, 买不到; 买不了 es que tú no puedes comprarlo (dinero, cantidad)." },
+        { "wrong": "我明天不去得了。", "right": "我明天去不了。", "why": "不 va en medio: V不了." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "El día del registro",
+      "lines": [
+        { "speaker": "雨果", "zh": "老师您好，我是新来的留学生，今天来报到。", "py": "Lǎoshī nín hǎo, wǒ shì xīn lái de liúxuéshēng, jīntiān lái bàodào.", "es": "Buenos días, soy un estudiante extranjero nuevo y vengo a registrarme." },
+        { "speaker": "老师", "zh": "你好！你是什么专业的？", "py": "Nǐ hǎo! Nǐ shì shénme zhuānyè de?", "es": "¡Hola! ¿Qué estudias?" },
+        { "speaker": "雨果", "zh": "我是国际关系专业的研究生。我找了半天，也找不到你们系的办公室。", "py": "Wǒ shì guójì guānxi zhuānyè de yánjiūshēng. Wǒ zhǎo le bàntiān, yě zhǎo bu dào nǐmen xì de bàn gōng shì.", "es": "Soy estudiante de posgrado de Relaciones Internacionales. Llevo un buen rato buscando y no encontraba el despacho de vuestro departamento." },
+        { "speaker": "老师", "zh": "很多新同学都找不到。学费交了吗？", "py": "Hěn duō xīn tóngxué dōu zhǎo bu dào. Xuéfèi jiāo le ma?", "es": "A muchos nuevos les pasa. ¿Has pagado la matrícula?" },
+        { "speaker": "雨果", "zh": "还没交。在哪儿交？", "py": "Hái méi jiāo. Zài nǎr jiāo?", "es": "Todavía no. ¿Dónde se paga?" },
+        { "speaker": "老师", "zh": "在一楼，出门往右走就找得到。", "py": "Zài yī lóu, chū mén wǎng yòu zǒu jiù zhǎo de dào.", "es": "En la planta baja: sal y gira a la derecha, que lo encontrarás." },
+        { "speaker": "雨果", "zh": "谢谢。还有，中文课我上哪个班级？", "py": "Xièxie. Hái yǒu, Zhōngwén kè wǒ shàng nǎ ge bānjí?", "es": "Gracias. Otra cosa: ¿a qué grupo voy en la clase de chino?" },
+        { "speaker": "老师", "zh": "你的汉语基础怎么样？先做一个初步的考试，看看你的能力。", "py": "Nǐ de Hànyǔ jīchǔ zěnmeyàng? Xiān zuò yí ge chūbù de kǎoshì, kànkan nǐ de nénglì.", "es": "¿Qué tal tu base de chino? Primero haz una prueba inicial para ver tu nivel." },
+        { "speaker": "雨果", "zh": "我在西班牙学了一年，现在是初级水平。", "py": "Wǒ zài Xībānyá xué le yì nián, xiànzài shì chūjí shuǐpíng.", "es": "Estudié un año en España; ahora tengo nivel elemental." },
+        { "speaker": "老师", "zh": "那你可能上初级二班。课程表在网上，你看得到吗？", "py": "Nà nǐ kěnéng shàng chūjí èr bān. Kèchéngbiǎo zài wǎngshang, nǐ kàn de dào ma?", "es": "Entonces seguramente irás al grupo 2 de nivel elemental. El horario está en internet, ¿lo puedes ver?" },
+        { "speaker": "雨果", "zh": "看得到。可是教材我买不到，书店说卖完了。", "py": "Kàn de dào. Kěshì jiàocái wǒ mǎi bu dào, shūdiàn shuō mài wán le.", "es": "Sí. Pero el libro de texto no lo encuentro: en la librería dicen que se ha agotado." },
+        { "speaker": "老师", "zh": "别着急，月初书店还会有。这个星期你先复印一下吧。", "py": "Bié zháojí, yuèchū shūdiàn hái huì yǒu. Zhège xīngqī nǐ xiān fùyìn yíxià ba.", "es": "Tranquilo, a principios de mes volverán a tenerlo. Esta semana fotocópialo." },
+        { "speaker": "雨果", "zh": "好的。对了，明天上午我要去银行，班会我去不了，没关系吧？", "py": "Hǎo de. Duì le, míngtiān shàngwǔ wǒ yào qù yínháng, bānhuì wǒ qù bu liǎo, méi guānxi ba?", "es": "Vale. Por cierto, mañana por la mañana tengo que ir al banco y no puedo ir a la reunión de clase. ¿Pasa algo?" },
+        { "speaker": "老师", "zh": "没关系，下午来也来得及。", "py": "Méi guānxi, xiàwǔ lái yě lái de jí.", "es": "No pasa nada, si vienes por la tarde también llegas a tiempo." }
+      ],
+      "notes": "报到 es el trámite de llegada de cada alumno nuevo: presentar los papeles, pagar (交学费), recoger el carné. 班会 es la reunión del grupo (班) con su tutor. En la universidad china cada grupo tiene un 班长 (delegado) que se encarga de avisar de todo por el grupo de WeChat."
+    },
+    { "type": "exercises", "count": 17, "bank": ["g-complements", "g-modal-verbs", "g-zai", "g-le"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "我" }, "verb1": { "zh": "找不到" }, "object": { "zh": "中文系的办公室" } }, "end": "。", "es": "No encuentro el despacho del departamento de chino." }, "distractors": ["能", "没"] },
+        { "sentence": { "slots": { "subject": { "zh": "那本教材我" }, "place": { "zh": "在书店" }, "verb1": { "zh": "买" }, "complement": { "zh": "不到" } }, "end": "。", "es": "Ese libro de texto no lo encuentro en la librería." }, "distractors": ["不了"] },
+        { "sentence": { "slots": { "subject": { "zh": "这么多菜我们" }, "verb1": { "zh": "吃" }, "complement": { "zh": "不了" } }, "end": "。", "es": "No podemos con tanta comida." } },
+        { "sentence": { "slots": { "subject": { "zh": "新来的留学生" }, "time": { "zh": "开学的第一天" }, "adverb": { "zh": "常常" }, "verb1": { "zh": "找不到" }, "object": { "zh": "自己的班级和教室" } }, "end": "。", "es": "Los estudiantes extranjeros nuevos a menudo no encuentran su grupo ni su aula el primer día de curso." } }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "对不起，我找不到办公室。", "py": "Duìbuqǐ, wǒ zhǎo bu dào bàn gōng shì.", "es": "Perdone, no encuentro el despacho." },
+        { "zh": "那本教材现在买不到。", "py": "Nà běn jiàocái xiànzài mǎi bu dào.", "es": "Ese libro ahora no se encuentra." },
+        { "zh": "明天我去不了。", "py": "Míngtiān wǒ qù bu liǎo.", "es": "Mañana no puedo ir." },
+        { "zh": "太多了，我吃不了。", "py": "Tài duō le, wǒ chī bu liǎo.", "es": "Es demasiado, no puedo con todo." }
+      ],
+      "respond": [
+        { "q": { "zh": "你是什么专业的？", "py": "Nǐ shì shénme zhuānyè de?", "es": "¿Qué estudias?" }, "model": { "zh": "我是国际关系专业的研究生。", "py": "Wǒ shì guójì guānxi zhuānyè de yánjiūshēng.", "es": "Hago un posgrado en Relaciones Internacionales." } },
+        { "q": { "zh": "明天的课你来得了吗？", "py": "Míngtiān de kè nǐ lái de liǎo ma?", "es": "¿Puedes venir mañana a clase?" }, "model": { "zh": "来不了，我要去银行。对不起！", "py": "Lái bu liǎo, wǒ yào qù yínháng. Duìbuqǐ!", "es": "No puedo, tengo que ir al banco. ¡Lo siento!" } },
+        { "q": { "zh": "你的汉语基础怎么样？", "py": "Nǐ de Hànyǔ jīchǔ zěnmeyàng?", "es": "¿Qué tal tu base de chino?" }, "model": { "zh": "还可以，我现在是初级水平。", "py": "Hái kěyǐ, wǒ xiànzài shì chūjí shuǐpíng.", "es": "No está mal: ahora tengo nivel elemental." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Primer día en la universidad",
+      "text": "九月初，雨果第一次来学校报到。他是国际关系专业的研究生。报到的那天，他在学校里走了半个小时，也找不到他们系的办公室。后来他用手机地图，才找到了。办公室的老师很友好，她告诉雨果先去一楼交学费，然后做一个初步的汉语考试，看看他的能力。雨果的汉语基础还可以，所以他上初级二班。这个班级有十五个学生，都是留学生。课程表在网上看得到，可是教材雨果买不到，书店说月初才有。那天雨果太累了，晚上的活动他去不了。老师的女儿也在办公室，她今年上初中，是初一的学生。她听说雨果买不到书，就说：“哥哥，我有很多中文书，我一个人看不完，借你一本吧！”",
+      "es": "A principios de septiembre, Hugo fue por primera vez a registrarse a la universidad. Es estudiante de posgrado de Relaciones Internacionales. Ese día estuvo media hora dando vueltas por el campus y no conseguía encontrar el despacho de su departamento. Al final, con el mapa del móvil, lo encontró. La profesora del despacho fue muy amable: le dijo que primero fuera a la planta baja a pagar la matrícula y que luego hiciera una prueba inicial de chino para ver su nivel. Hugo tiene una base de chino bastante decente, así que va al grupo 2 de nivel elemental. En ese grupo hay quince alumnos, todos extranjeros. El horario se puede ver en internet, pero Hugo no encuentra el libro de texto: en la librería dicen que no lo tendrán hasta principios de mes. Ese día Hugo estaba tan cansado que no pudo ir a la actividad de la noche. La hija de la profesora también estaba en el despacho: este año empieza la secundaria, está en primero. Cuando oyó que Hugo no encontraba el libro, le dijo: «Tengo muchos libros en chino y yo sola no me los puedo leer todos: ¡te presto uno!».",
+      "questions": [
+        { "q": "¿Qué no encontraba Hugo al principio?", "options": ["他们系的办公室", "银行", "宿舍"], "answer": 0 },
+        { "q": "¿A qué grupo va Hugo?", "options": ["初级二班", "初级一班", "初中一班"], "answer": 0 },
+        { "q": "¿Por qué no fue a la actividad de la noche?", "options": ["太累了", "找不到地方", "要交学费"], "answer": 0 },
+        { "q": "¿Quién le presta un libro?", "options": ["老师的女儿", "安娜", "书店"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

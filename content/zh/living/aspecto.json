@@ -1,0 +1,803 @@
+{
+  "id": "aspecto",
+  "title": "Aspecto (了 / 过 / 着 / 在)",
+  "zh": "动态助词",
+  "order": 13,
+  "icon": "Clock",
+  "summary": "El verbo chino no se conjuga: lo que cuenta es si la acción está hecha (了), si ha cambiado algo (了 final), si se ha vivido alguna vez (过), si está en curso (在…呢) o si su resultado sigue ahí (着). Ninguno de ellos es «el pasado».",
+  "kind": "topic",
+  "reviewed": false,
+  "sections": [
+    {
+      "id": "le-completado",
+      "title": "Verbo + 了: acción completada",
+      "unlockedBy": "a1-u17-l3",
+      "markdown": "### Un «check ✓» detrás del verbo\n\n**了 justo detrás del verbo** dice que la acción **se ha completado**: 我买**了**一本书 = he comprado / compré un libro. 买了 = «comprado ✓».\n\n- **No es el pasado** del español: muchas frases en pasado **no** llevan 了. 我昨天在家 (ayer estaba en casa) es un estado; 我以前常常… (antes solía…) es un hábito.\n- El **objeto** casi siempre lleva **número o cantidad** (一本书, 十个汉字) o algo que lo concrete (明天的考试). *我买了书* a secas suena a frase sin terminar.\n- En el esqueleto, el 了 va **pegado al verbo**, en *Verbo 1*: «买了».\n- **Pregunta**: un interrogativo en el hueco del objeto: 你买了**什么**？ 你们学了**几个**汉字？\n\n> 💡 **Truco**: dos preguntas antes de poner 了: ¿la acción ocurrió de verdad? ¿No es un hábito ni un estado? Si las dos son sí, 了.\n\n> ❌ **Error típico**: 我每天吃了早饭 → 我每天吃早饭. Un hábito no lleva ✓.\n\n> ❌ **Error típico**: 我昨天很累了 → 我昨天很累. Los adjetivos y 是 / 在 / 有 no llevan 了 por hablar de ayer.\n\n> ❌ **Error típico**: 我了买书 → 我买了一本书. 了 nunca va delante del verbo.",
+      "skeleton": {
+        "focus": ["verb1"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "verb1": { "zh": "买了", "py": "mǎi le" },
+              "object": { "zh": "一本书", "py": "yì běn shū" }
+            },
+            "end": "。",
+            "es": "He comprado un libro.",
+            "esOrder": [
+              { "text": "(Yo)", "slot": "subject" },
+              { "text": "he comprado", "slot": "verb1" },
+              { "text": "un libro", "slot": "object" }
+            ]
+          },
+          {
+            "slots": {
+              "time0": { "zh": "今天", "py": "jīntiān" },
+              "subject": { "zh": "我们", "py": "wǒmen" },
+              "verb1": { "zh": "学了", "py": "xué le" },
+              "object": { "zh": "十个汉字", "py": "shí ge Hànzì" }
+            },
+            "end": "。",
+            "es": "Hoy hemos aprendido diez caracteres."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "你", "py": "nǐ" },
+              "verb1": { "zh": "买了", "py": "mǎi le" },
+              "object": { "zh": "什么", "py": "shénme" }
+            },
+            "end": "？",
+            "es": "¿Qué has comprado?"
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "安娜写了三个句子。", "py": "Ānnà xiě le sān ge jùzi.", "es": "Ana ha escrito tres frases." },
+        { "zh": "雨果昨天准备了明天的考试。", "py": "Yǔguǒ zuótiān zhǔnbèi le míngtiān de kǎoshì.", "es": "Ayer Hugo preparó el examen de mañana." },
+        { "zh": "王老师给了我们一个作业。", "py": "Wáng lǎoshī gěi le wǒmen yí ge zuòyè.", "es": "La profesora Wang nos ha puesto unos deberes." },
+        { "zh": "你们学了几个汉字？", "py": "Nǐmen xué le jǐ ge Hànzì?", "es": "¿Cuántos caracteres habéis aprendido?" }
+      ],
+      "sourceNotes": ["zh-grammar-le-completed", "zh-particle-le-2"]
+    },
+    {
+      "id": "le-cambio",
+      "title": "了 al final: el cambio de situación",
+      "unlockedBy": "a1-u18-l2",
+      "markdown": "### Un interruptor que acaba de cambiar\n\nEl otro 了 va **al final de la frase** (hueco *Partícula final*) y anuncia un **cambio**: antes no, ahora sí.\n\n- 下雨**了**。 → antes no llovía; ahora sí.\n- 天冷**了**。 → ya hace frío.\n- 我二十岁**了**。 → ya tengo veinte (antes diecinueve).\n- 我饿**了**。 → me ha entrado hambre. ¡Es presente!\n\n**Negativa**: **不 + verbo + 了 = «ya no»**: 不下雨了, 我不去了 (útil para cambiar de planes sin dar explicaciones).\n**Pregunta**: 了 + 吗: 下雨了吗？\n\n> 💡 **Truco**: pregúntate «¿antes era de otra manera?». Si sí, 了 al final. El «ya» del español casi siempre es este 了.\n\n> ❌ **Error típico**: 昨天天气很冷了 → 昨天天气很冷. Un estado del pasado sin cambio no lleva 了.\n\n> ❌ **Error típico**: 我是学生了 para «soy estudiante». Eso significa «ya soy estudiante (antes no)».\n\n> ❌ **Error típico**: 我没饿了 → 我**不**饿了. «Ya no» es 不…了.",
+      "skeleton": {
+        "focus": ["particle"],
+        "sentences": [
+          {
+            "slots": {
+              "verb1": { "zh": "下雨", "py": "xià yǔ" },
+              "particle": { "zh": "了", "py": "le" }
+            },
+            "end": "！",
+            "es": "¡Se ha puesto a llover!"
+          },
+          {
+            "slots": {
+              "subject": { "zh": "天", "py": "tiān" },
+              "verb1": { "zh": "晴", "py": "qíng" },
+              "particle": { "zh": "了", "py": "le" }
+            },
+            "end": "。",
+            "es": "Se ha despejado."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "adverb": { "zh": "不", "py": "bù" },
+              "verb1": { "zh": "冷", "py": "lěng" },
+              "particle": { "zh": "了", "py": "le" }
+            },
+            "end": "。",
+            "es": "Ya no tengo frío.",
+            "esOrder": [
+              { "text": "Ya", "slot": "particle" },
+              { "text": "no", "slot": "adverb" },
+              { "text": "tengo frío", "slot": "verb1" }
+            ]
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "外边下雪了！", "py": "Wàibian xià xuě le!", "es": "¡Fuera está nevando!" },
+        { "zh": "八点了。", "py": "Bā diǎn le.", "es": "Ya son las ocho." },
+        { "zh": "风大了。", "py": "Fēng dà le.", "es": "Se ha levantado viento." },
+        { "zh": "我以前不喜欢下雨，现在喜欢了。", "py": "Wǒ yǐqián bù xǐhuan xià yǔ, xiànzài xǐhuan le.", "es": "Antes no me gustaba la lluvia; ahora sí.", "note": "El 了 marca el cambio de opinión." }
+      ],
+      "sourceNotes": ["zh-grammar-le-change", "zh-particle-le-1"]
+    },
+    {
+      "id": "a-punto",
+      "title": "快 / 快要 / 要 … 了: a punto de pasar",
+      "unlockedBy": "a1-u18-l3",
+      "markdown": "### El 了 del cambio, mirando al futuro\n\nPara decir que algo **va a pasar enseguida**, se envuelve el verbo: **快 / 快要 / 要** (hueco de los adverbios) + verbo + **了** (al final).\n\n- 快下雨**了**。 Va a llover enseguida.\n- 冬天快要到**了**。 Ya casi llega el invierno.\n- 我们要放假**了**。 Nos vamos de vacaciones.\n\nAquí **要 no es «querer»**: significa «estar a punto de».\n\n- **El 了 es obligatorio**: sin él la frase queda coja.\n- 快 también va delante de un nombre de tiempo: 快十二点了.\n- Con una **fecha u hora concreta** no se usa 快 / 快要: 明天**要**考试**了** (o 明天就要…了, en A2).\n\n> ⚠️ **Ojo**: la negativa de una predicción no es *不快…*: se dice 不会 + verbo (明天不会下雨) o 还不 + adjetivo (现在还不冷).",
+      "skeleton": {
+        "focus": ["adverb", "particle"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "冬天", "py": "dōngtiān" },
+              "adverb": { "zh": "快", "py": "kuài" },
+              "verb1": { "zh": "到", "py": "dào" },
+              "particle": { "zh": "了", "py": "le" }
+            },
+            "end": "。",
+            "es": "Ya casi llega el invierno."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "花", "py": "huā" },
+              "adverb": { "zh": "快要", "py": "kuàiyào" },
+              "verb1": { "zh": "开", "py": "kāi" },
+              "particle": { "zh": "了", "py": "le" }
+            },
+            "end": "。",
+            "es": "Las flores están a punto de abrirse."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "快下雨了，我们回家吧。", "py": "Kuài xià yǔ le, wǒmen huí jiā ba.", "es": "Va a llover enseguida: volvamos a casa." },
+        { "zh": "快十二点了。", "py": "Kuài shí'èr diǎn le.", "es": "Ya casi son las doce." },
+        { "zh": "我们要放假了！", "py": "Wǒmen yào fàngjià le!", "es": "¡Nos vamos de vacaciones!" }
+      ]
+    },
+    {
+      "id": "dos-le",
+      "title": "Los dos 了 juntos: ¿detrás del verbo o al final?",
+      "unlockedBy": "a1-u19-l2",
+      "markdown": "### La regla práctica\n\n| Objeto | Dónde va 了 | Ejemplo |\n|---|---|---|\n| con **número o detalle** | **detrás del verbo** | 我喝**了**两杯水。 |\n| **simple**, sin nada | **al final** | 我喝水**了**。 |\n| sin objeto, con cambio | al final | 我生病**了**。 |\n\n*我喝了水* suena a frase sin terminar, como si fuera a seguir («he bebido agua y…»).\n\n### Estados y enfermedades\n\n- 我**生病了** / 她**病了**: me he puesto enfermo (cambio). Nunca ~~很生病~~.\n- **不舒服** es un estado: se niega con 不 y no lleva 了: 我不舒服.\n\n> ⚠️ **Ojo**: 他吃饭了 puede ser las dos cosas a la vez: «ya ha comido» (acción hecha) y «ahora ya está comido» (situación nueva). No hace falta elegir.",
+      "skeleton": {
+        "focus": ["verb1", "particle"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "time": { "zh": "今天早上", "py": "jīntiān zǎoshang" },
+              "verb1": { "zh": "喝了", "py": "hē le" },
+              "object": { "zh": "两杯热水", "py": "liǎng bēi rè shuǐ" }
+            },
+            "end": "。",
+            "es": "Esta mañana me he bebido dos vasos de agua caliente."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "verb1": { "zh": "吃", "py": "chī" },
+              "object": { "zh": "饭", "py": "fàn" },
+              "particle": { "zh": "了", "py": "le" }
+            },
+            "end": "。",
+            "es": "Ya he comido."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "他", "py": "tā" },
+              "time": { "zh": "昨天", "py": "zuótiān" },
+              "verb1": { "zh": "发烧", "py": "fāshāo" },
+              "particle": { "zh": "了", "py": "le" }
+            },
+            "end": "。",
+            "es": "Ayer tuvo fiebre."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "我生病了。", "py": "Wǒ shēngbìng le.", "es": "Me he puesto enfermo." },
+        { "zh": "安娜买了三个包子，吃了一个。", "py": "Ānnà mǎi le sān ge bāozi, chī le yí ge.", "es": "Ana compró tres baozi y se comió uno." },
+        { "zh": "我不舒服，嗓子很疼。", "py": "Wǒ bù shūfu, sǎngzi hěn téng.", "es": "No me encuentro bien: me duele mucho la garganta." },
+        { "zh": "她病了，今天不来上课。", "py": "Tā bìng le, jīntiān bù lái shàngkè.", "es": "Se ha puesto enferma: hoy no viene a clase." }
+      ],
+      "sourceNotes": ["zh-grammar-le-completed", "zh-particle-le-2"]
+    },
+    {
+      "id": "mei-sin-le",
+      "title": "没 + verbo, ¡sin 了!",
+      "unlockedBy": "a1-u19-l3",
+      "markdown": "### Lo que no pasó\n\nPara decir que una acción **no ha ocurrido**, **没** delante del verbo, y **el 了 desaparece**: 了 dice «pasó»; 没 dice «no pasó». Juntos se contradicen.\n\n| Afirmativa | Negativa |\n|---|---|\n| 我去医院了。 | 我**没**去医院。 |\n| 他吃了药。 | 他**没**吃药。 |\n\n### Tres maneras de preguntar si algo pasó\n\n1. …**了吗**？ 你吃药了吗？\n2. …**了没有**？ 你吃药了没有？\n3. **V没V** + objeto: 你**去没去**医院？\n\nRespuesta corta: 吃了。/ **没吃。** (o 没有。) Si todavía puede pasar: **还没**(呢).\n\n> ❌ **Error típico**: 我没吃了饭 → 我没吃饭. Con 没, fuera el 了. Es el error más típico.\n\n> ⚠️ **Ojo**: 不 + verbo en pasado significa «no quise» o «no suelo»; para «no fui», 没: 昨天我**没**去 / 明天我**不**去.",
+      "skeleton": {
+        "focus": ["adverb"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "adverb": { "zh": "没", "py": "méi" },
+              "verb1": { "zh": "去医院", "py": "qù yīyuàn" }
+            },
+            "end": "。",
+            "es": "No he ido al hospital."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "他", "py": "tā" },
+              "time": { "zh": "昨天", "py": "zuótiān" },
+              "adverb": { "zh": "没", "py": "méi" },
+              "verb1": { "zh": "吃", "py": "chī" },
+              "object": { "zh": "药", "py": "yào" }
+            },
+            "end": "。",
+            "es": "Ayer no se tomó la medicina.",
+            "esOrder": [
+              { "text": "Ayer", "slot": "time" },
+              { "text": "no", "slot": "adverb" },
+              { "text": "se tomó", "slot": "verb1" },
+              { "text": "la medicina", "slot": "object" }
+            ]
+          },
+          {
+            "slots": {
+              "subject": { "zh": "你", "py": "nǐ" },
+              "verb1": { "zh": "吃", "py": "chī" },
+              "object": { "zh": "药", "py": "yào" },
+              "particle": { "zh": "了没有", "py": "le méiyǒu" }
+            },
+            "end": "？",
+            "es": "¿Te has tomado la medicina?"
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "你去没去医院？——没去。", "py": "Nǐ qù méi qù yīyuàn? — Méi qù.", "es": "¿Has ido al hospital? —No." },
+        { "zh": "你做了作业吗？——还没做。", "py": "Nǐ zuò le zuòyè ma? — Hái méi zuò.", "es": "¿Has hecho los deberes? —Todavía no." },
+        { "zh": "我昨天没去，明天也不去。", "py": "Wǒ zuótiān méi qù, míngtiān yě bú qù.", "es": "Ayer no fui, y mañana tampoco voy." },
+        { "zh": "安娜请假了，今天没来。", "py": "Ānnà qǐngjià le, jīntiān méi lái.", "es": "Ana ha pedido permiso: hoy no ha venido." }
+      ],
+      "sourceNotes": ["zh-grammar-le-completed", "zh-particle-le-2"]
+    },
+    {
+      "id": "zai-progresivo",
+      "title": "在 / 正在 + verbo (+ 呢): estar haciendo",
+      "unlockedBy": "a1-u20-l3",
+      "markdown": "### El vídeo de la acción\n\n**在** o **正在** delante del verbo (hueco de los adverbios), y muchas veces **呢** al final: la acción **está en curso**.\n\n- 我**在**看视频。 Estoy viendo un vídeo.\n- 王老师**正在**打电话**呢**。 Está hablando por teléfono (justo ahora).\n- 我看书**呢**。 Solo con 呢 también vale.\n\n正 significa «justo»: 正在 = «justo en medio de». Las variantes dicen lo mismo y se eligen por el oído: 正在…呢 > 正在… > 在…呢 > 在….\n\n### Los tres 在\n\n| 在 | Hueco | Ejemplo |\n|---|---|---|\n| verbo «estar en» | Verbo 1 | 他**在**宿舍。 |\n| 在 + lugar + otro verbo | Dónde | 他**在宿舍**看书。 |\n| 在 + verbo «estar haciendo» | Adverbios | 他**在**看书。 |\n\nCon un lugar, el 在 del lugar ya basta y 正 queda solo: 他**正在宿舍**看书**呢**.\n\n**Negativa**: **没(在)** + verbo: 他**没在**打电话. Nunca 不在 (eso es «no está»).\n\n> ❌ **Error típico**: 我是在吃饭 → 我在吃饭. El «estoy» ya va dentro de 在.\n\n> ❌ **Error típico**: 我在吃饭了 → 我在吃饭 / 我吃饭了. En curso y terminado se contradicen.\n\n> ⚠️ **Ojo**: 正在 va con acciones, no con estados ni lugares: ~~正在高兴~~, ~~正在家~~.",
+      "skeleton": {
+        "focus": ["adverb", "particle"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "adverb": { "zh": "在", "py": "zài" },
+              "verb1": { "zh": "看", "py": "kàn" },
+              "object": { "zh": "视频", "py": "shìpín" }
+            },
+            "end": "。",
+            "es": "Estoy viendo un vídeo.",
+            "esOrder": [
+              { "text": "Estoy", "slot": "adverb" },
+              { "text": "viendo", "slot": "verb1" },
+              { "text": "un vídeo", "slot": "object" }
+            ]
+          },
+          {
+            "slots": {
+              "subject": { "zh": "他", "py": "tā" },
+              "adverb": { "zh": "正", "py": "zhèng" },
+              "place": { "zh": "在宿舍", "py": "zài sùshè" },
+              "verb1": { "zh": "用", "py": "yòng" },
+              "object": { "zh": "电脑", "py": "diànnǎo" },
+              "particle": { "zh": "呢", "py": "ne" }
+            },
+            "end": "。",
+            "es": "Está usando el ordenador en la residencia."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "他", "py": "tā" },
+              "adverb": { "zh": "没在", "py": "méi zài" },
+              "verb1": { "zh": "打", "py": "dǎ" },
+              "object": { "zh": "电话", "py": "diànhuà" }
+            },
+            "end": "。",
+            "es": "No está hablando por teléfono."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "你在做什么呢？——我在上网。", "py": "Nǐ zài zuò shénme ne? — Wǒ zài shàngwǎng.", "es": "¿Qué estás haciendo? —Estoy en internet." },
+        { "zh": "我正在吃饭，不能去。", "py": "Wǒ zhèngzài chī fàn, bù néng qù.", "es": "Estoy comiendo justo ahora: no puedo ir." },
+        { "zh": "雨果在学校学习，现在他在上课。", "py": "Yǔguǒ zài xuéxiào xuéxí, xiànzài tā zài shàngkè.", "es": "Hugo estudia en la universidad; ahora está en clase.", "note": "Primer 在 = en (lugar); segundo 在 = estar haciendo." },
+        { "zh": "他在上课吗？", "py": "Tā zài shàngkè ma?", "es": "¿Está en clase?" }
+      ],
+      "sourceNotes": ["zh-grammar-zai-progressive", "zh-grammar-zhengzai", "zh-contrast-zai"]
+    },
+    {
+      "id": "guo-experiencia",
+      "title": "Verbo + 过: «alguna vez» (experiencia)",
+      "unlockedBy": "a2-u01-l3",
+      "markdown": "### El sello del pasaporte\n\n**过** (átono, guo) detrás del verbo dice que algo **ha pasado alguna vez en tu vida**, sin decir cuándo: 我**去过**长城 = he estado en la Gran Muralla.\n\n- **Negativa**: **没 + V + 过**, y **el 过 se queda**: 我**没去过**西安. (Con 了 pasaba lo contrario: desaparecía.)\n- **Pregunta**: …过…吗？ / …过…没有？: 你去过长城吗？\n- **Veces**: 去过**两次** (detrás del verbo).\n- En el esqueleto, 过 va pegado al verbo, como 了: *Verbo 1* = 去过.\n\n### 过 frente a 了\n\n| | 过 | 了 |\n|---|---|---|\n| Idea | alguna vez (experiencia) | hecho concreto, completado |\n| Ejemplo | 我去过北京 | 我昨天去了北京 |\n| Negación | 没去过 (nunca) | 没去 (no fui) |\n\n> ❌ **Error típico**: 我不去过北京 → 我**没**去过北京.\n\n> ❌ **Error típico**: 我没去北京过 → 我没去过北京. 过 va pegado al verbo, antes del objeto.\n\n> ⚠️ **Ojo**: 过 verbo (guò, «pasar, cruzar»: 过马路) es otra cosa, con tono.",
+      "skeleton": {
+        "focus": ["verb1"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "verb1": { "zh": "去过", "py": "qùguo" },
+              "object": { "zh": "长城", "py": "Chángchéng" }
+            },
+            "end": "。",
+            "es": "He estado en la Gran Muralla."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "adverb": { "zh": "没", "py": "méi" },
+              "verb1": { "zh": "去过", "py": "qùguo" },
+              "object": { "zh": "西安", "py": "Xī'ān" }
+            },
+            "end": "。",
+            "es": "Nunca he estado en Xi'an.",
+            "esOrder": [
+              { "text": "Nunca", "slot": "adverb" },
+              { "text": "he estado", "slot": "verb1" },
+              { "text": "en Xi'an", "slot": "object" }
+            ]
+          },
+          {
+            "slots": {
+              "subject": { "zh": "他", "py": "tā" },
+              "place": { "zh": "在中国", "py": "zài Zhōngguó" },
+              "verb1": { "zh": "坐过", "py": "zuòguo" },
+              "object": { "zh": "高铁", "py": "gāotiě" }
+            },
+            "end": "。",
+            "es": "En China ha ido en tren de alta velocidad."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "你吃过饺子吗？——吃过。", "py": "Nǐ chīguo jiǎozi ma? — Chīguo.", "es": "¿Has probado los jiaozi? —Sí." },
+        { "zh": "你去过中国吗？——去过，我在上海住过一年。", "py": "Nǐ qùguo Zhōngguó ma? — Qùguo, wǒ zài Shànghǎi zhùguo yì nián.", "es": "¿Has estado en China? —Sí, viví un año en Shanghái." },
+        { "zh": "我没见过这个人。", "py": "Wǒ méi jiàn guo zhège rén.", "es": "No he visto nunca a esta persona." },
+        { "zh": "我昨天去了长城，我以前没去过。", "py": "Wǒ zuótiān qù le Chángchéng, wǒ yǐqián méi qùguo.", "es": "Ayer fui a la Gran Muralla; antes no había estado nunca." }
+      ],
+      "sourceNotes": ["zh-grammar-guo", "zh-particle-guo"]
+    },
+    {
+      "id": "le-duracion",
+      "title": "V + 了 + duración: cuánto duró",
+      "unlockedBy": "a2-u02-l1",
+      "markdown": "### La duración, detrás del verbo con 了\n\nCon 了, la duración cuenta **cuánto duró** una acción terminada:\n\n- 我**学了两年**。 Estudié dos años.\n- 他**等了二十分钟**。 Esperó veinte minutos.\n\n**Con objeto**, la duración se mete **entre el verbo y el objeto**, como si fuera su cantidad (igual que 两杯茶): 我学了**两年汉语** (lit. «estudié dos años de chino»).\n\n- **Pregunta**: 多长时间 en el hueco de la respuesta: 你学了**多长时间**汉语？\n- **Negativa**: con 没 desaparece el 了: 我**没**学多长时间.\n\n> ⚠️ **Ojo**: sin 了 final, la frase dice que **se acabó** (quizá ya no estudias). Para «llevo dos años y sigo», hace falta el segundo 了 (lección 4).\n\nLa posición de la duración, con todos sus casos, está en el apunte **Complementos**.",
+      "skeleton": {
+        "focus": ["verb1", "complement"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "verb1": { "zh": "学了", "py": "xué le" },
+              "complement": { "zh": "两年", "py": "liǎng nián" }
+            },
+            "end": "。",
+            "es": "Estudié dos años."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "verb1": { "zh": "学了", "py": "xué le" },
+              "object": { "zh": "两年汉语", "py": "liǎng nián Hànyǔ" }
+            },
+            "end": "。",
+            "es": "Estudié chino dos años.",
+            "esOrder": [
+              { "text": "Estudié", "slot": "verb1" },
+              { "text": "chino dos años", "slot": "object" }
+            ]
+          },
+          {
+            "slots": {
+              "subject": { "zh": "我们", "py": "wǒmen" },
+              "place": { "zh": "在北京", "py": "zài Běijīng" },
+              "verb1": { "zh": "住了", "py": "zhù le" },
+              "complement": { "zh": "一个月", "py": "yí ge yuè" }
+            },
+            "end": "。",
+            "es": "Vivimos un mes en Pekín."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "大卫昨天等了二十分钟。", "py": "Dàwèi zuótiān děng le èrshí fēnzhōng.", "es": "Ayer David esperó veinte minutos." },
+        { "zh": "安娜在高中学了三年英文。", "py": "Ānnà zài gāozhōng xué le sān nián Yīngwén.", "es": "Ana estudió inglés tres años en el instituto." },
+        { "zh": "你学了多长时间汉语？", "py": "Nǐ xué le duō cháng shíjiān Hànyǔ?", "es": "¿Cuánto tiempo estudiaste chino?" }
+      ]
+    },
+    {
+      "id": "le-le",
+      "title": "了…了: «llevo…» y el tiempo transcurrido",
+      "unlockedBy": "a2-u02-l4",
+      "markdown": "### El 了 final dice «hasta ahora»\n\n| | Significa |\n|---|---|\n| 我学了两年汉语。 | Estudié chino dos años (quizá ya no). |\n| 我学了两年汉语**了**。 | **Llevo** dos años estudiando chino (y sigo). |\n\nEl primer 了 va pegado al verbo; el segundo, en la *Partícula final*.\n\n### Tiempo transcurrido desde algo instantáneo\n\nCon acciones que no duran (venir, empezar, llegar), la duración cuenta el tiempo **desde entonces**:\n\n- **开学**两个星期**了**。 Hace dos semanas que empezó el curso.\n- 我**来上海**三个月**了**。 Hace tres meses que vine a Shanghái / llevo tres meses aquí.\n\n> 💡 **Truco**: si en español dices «llevo…» o «hace… que…», casi seguro hay un 了 al final.",
+      "skeleton": {
+        "focus": ["complement", "particle"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "verb1": { "zh": "学了", "py": "xué le" },
+              "object": { "zh": "两年汉语", "py": "liǎng nián Hànyǔ" },
+              "particle": { "zh": "了", "py": "le" }
+            },
+            "end": "。",
+            "es": "Llevo dos años estudiando chino."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "verb1": { "zh": "来上海", "py": "lái Shànghǎi" },
+              "complement": { "zh": "三个月", "py": "sān ge yuè" },
+              "particle": { "zh": "了", "py": "le" }
+            },
+            "end": "。",
+            "es": "Hace tres meses que vine a Shanghái.",
+            "esOrder": [
+              { "text": "Hace tres meses", "slot": "complement" },
+              { "text": "que vine a Shanghái", "slot": "verb1" }
+            ]
+          },
+          {
+            "slots": {
+              "subject": { "zh": "我们", "py": "wǒmen" },
+              "verb1": { "zh": "等了", "py": "děng le" },
+              "complement": { "zh": "半个小时", "py": "bàn ge xiǎoshí" },
+              "particle": { "zh": "了", "py": "le" }
+            },
+            "end": "。",
+            "es": "Llevamos media hora esperando."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "开学两个星期了。", "py": "Kāixué liǎng ge xīngqī le.", "es": "Hace dos semanas que empezó el curso." },
+        { "zh": "他学汉语学了三年了。", "py": "Tā xué Hànyǔ xué le sān nián le.", "es": "Lleva tres años estudiando chino." },
+        { "zh": "你来中国多长时间了？", "py": "Nǐ lái Zhōngguó duō cháng shíjiān le?", "es": "¿Cuánto tiempo llevas en China?" }
+      ]
+    },
+    {
+      "id": "mei-duracion",
+      "title": "Tres días sin…: 三天没…了",
+      "unlockedBy": "a2-u05-l2",
+      "markdown": "### La duración negativa va delante\n\nPara «hace tres días que **no**…», la duración va **delante de 没** (hueco del *Tiempo*) y la frase acaba en **了**:\n\n- 我**三天没**吃肉**了**。 Hace tres días que no como carne.\n\nEn español la duración va al final («…desde hace tres días»); en chino, antes del verbo negado. Compara con la positiva, que va detrás:\n\n| | |\n|---|---|\n| 他发烧**两天了**。 | Lleva dos días con fiebre. |\n| 他**两天没**发烧**了**。 | Lleva dos días sin fiebre. |\n\n> ❌ **Error típico**: 我没吃肉三天了 → 我**三天没**吃肉**了**.\n\n> ❌ **Error típico**: 我发烧两个天了 → 我发烧**两天**了. 天 no lleva 个.",
+      "skeleton": {
+        "focus": ["time", "complement", "particle"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "time": { "zh": "三天", "py": "sān tiān" },
+              "adverb": { "zh": "没", "py": "méi" },
+              "verb1": { "zh": "吃", "py": "chī" },
+              "object": { "zh": "肉", "py": "ròu" },
+              "particle": { "zh": "了", "py": "le" }
+            },
+            "end": "。",
+            "es": "Hace tres días que no como carne.",
+            "esOrder": [
+              { "text": "Hace tres días", "slot": "time" },
+              { "text": "que no", "slot": "adverb" },
+              { "text": "como", "slot": "verb1" },
+              { "text": "carne", "slot": "object" }
+            ]
+          },
+          {
+            "slots": {
+              "subject": { "zh": "雨果", "py": "Yǔguǒ" },
+              "verb1": { "zh": "发烧", "py": "fāshāo" },
+              "complement": { "zh": "两天", "py": "liǎng tiān" },
+              "particle": { "zh": "了", "py": "le" }
+            },
+            "end": "。",
+            "es": "Hugo lleva dos días con fiebre."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "小李的爷爷住院一个星期了。", "py": "Xiǎo Lǐ de yéye zhùyuàn yí ge xīngqī le.", "es": "El abuelo de Xiao Li lleva una semana ingresado." },
+        { "zh": "我两天没睡好了。", "py": "Wǒ liǎng tiān méi shuì hǎo le.", "es": "Llevo dos días sin dormir bien." },
+        { "zh": "你发烧多长时间了？", "py": "Nǐ fāshāo duō cháng shíjiān le?", "es": "¿Cuánto tiempo llevas con fiebre?" }
+      ]
+    },
+    {
+      "id": "zhe-estado",
+      "title": "Verbo + 着: el resultado que sigue ahí",
+      "unlockedBy": "a2-u08-l4",
+      "markdown": "### Una foto, no un vídeo\n\n**着** (átono, zhe) detrás del verbo dice que el **resultado de una acción se mantiene**: 开 es abrir; 开**着** es «está abierta». 穿 es ponerse; 穿**着** es «lleva puesto».\n\n- 门**开着**。 · 他**坐着**。 · 她**穿着**一件红衣服。\n- Funciona muy bien con verbos de postura y de colocar: 坐着, 站着, 放着, 停着, 拿着, 穿着, 开着, 关着.\n\n### Qué hay en un sitio\n\n**lugar + V着 + cantidad + cosa**, sin 在 delante y sin 有: **门口**站着一个人 (en la puerta hay un hombre de pie). Es como 有, pero además dice **cómo** está.\n\n### Dos verbos: V1着 V2\n\nEl primero, con 着, es la manera o postura; el segundo, lo que se hace: 他**坐着**看书 (lee sentado), 她**笑着**说 (dice sonriendo).\n\n**Negativa**: 没 + V着: 门**没开着**.\n\n> ❌ **Error típico**: 门是开着 → 门开着. Sin 是.\n\n> ❌ **Error típico**: 我在穿着衣服 → 我在穿衣服 (me estoy vistiendo) / 我穿着衣服 (llevo ropa puesta). 在 y 着 no se mezclan.\n\n> ⚠️ **Ojo**: 着 tiene otras lecturas: 睡着 **zháo** = quedarse dormido.",
+      "skeleton": {
+        "focus": ["verb1", "place"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "门", "py": "mén" },
+              "verb1": { "zh": "开着", "py": "kāizhe" }
+            },
+            "end": "。",
+            "es": "La puerta está abierta."
+          },
+          {
+            "slots": {
+              "place": { "zh": "门口", "py": "ménkǒu" },
+              "verb1": { "zh": "站着", "py": "zhànzhe" },
+              "object": { "zh": "一个人", "py": "yí ge rén" }
+            },
+            "end": "。",
+            "es": "Hay un hombre de pie en la puerta.",
+            "esOrder": [
+              { "text": "Hay un hombre", "slot": "object" },
+              { "text": "de pie", "slot": "verb1" },
+              { "text": "en la puerta", "slot": "place" }
+            ]
+          },
+          {
+            "slots": {
+              "subject": { "zh": "雨果", "py": "Yǔguǒ" },
+              "verb1": { "zh": "穿着", "py": "chuānzhe" },
+              "object": { "zh": "一件红衣服", "py": "yí jiàn hóng yīfu" }
+            },
+            "end": "。",
+            "es": "Hugo lleva puesta una prenda roja."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "公共汽车上坐着很多学生。", "py": "Gōnggòng qìchē shang zuòzhe hěn duō xuésheng.", "es": "En el autobús van sentados muchos estudiantes." },
+        { "zh": "大卫靠着车门。", "py": "Dàwèi kàozhe chēmén.", "es": "David está apoyado en la puerta del autobús." },
+        { "zh": "桌子上放着一本书。", "py": "Zhuōzi shang fàngzhe yì běn shū.", "es": "Encima de la mesa hay un libro." },
+        { "zh": "他拿着手机打电话。", "py": "Tā názhe shǒujī dǎ diànhuà.", "es": "Habla por teléfono con el móvil en la mano." }
+      ],
+      "sourceNotes": ["zh-grammar-zhe", "zh-particle-zhe"]
+    },
+    {
+      "id": "resumen-aspecto",
+      "title": "Resumen: 了, 过, 着 y 在 de un vistazo",
+      "unlockedBy": "a2-u08-l4",
+      "markdown": "### Cuatro marcas, cuatro preguntas\n\n| Marca | Pregunta que responde | Ejemplo | Negación |\n|---|---|---|---|\n| V + **了** | ¿Se hizo? | 我买了一本书。 | 没买 (sin 了) |\n| … **了** (final) | ¿Ha cambiado algo? | 下雨了。 | 不…了 (ya no) |\n| V + **过** | ¿Alguna vez? | 我去过北京。 | 没去过 (con 过) |\n| **在** + V (呢) | ¿Está pasando ahora? | 他在吃饭呢。 | 没在吃饭 |\n| V + **着** | ¿Cómo está? (resultado que dura) | 门开着。 | 没开着 |\n\n### Parejas que se confunden\n\n- **门开了** (se ha abierto: cambio) / **门开着** (está abierta: estado).\n- **他在穿衣服** (se está vistiendo: vídeo) / **他穿着红衣服** (lleva ropa roja: foto).\n- **我去了北京** (fui, esa vez) / **我去过北京** (he estado alguna vez).\n- **他吃饭了** (ya ha comido) / **他在吃饭呢** (está comiendo).\n\n> 💡 **Truco**: ninguno de los cuatro es un tiempo verbal. El cuándo lo dicen las palabras de tiempo (昨天, 明天, 现在); estas marcas solo dicen **cómo** se ve la acción.",
+      "examples": [
+        { "zh": "门开了，门口站着一个人。", "py": "Mén kāi le, ménkǒu zhànzhe yí ge rén.", "es": "Se abrió la puerta, y en la entrada había un hombre de pie." },
+        { "zh": "我去过北京，去年又去了一次。", "py": "Wǒ qùguo Běijīng, qùnián yòu qù le yí cì.", "es": "He estado en Pekín; el año pasado fui otra vez." },
+        { "zh": "他在穿衣服呢，你等一下。", "py": "Tā zài chuān yīfu ne, nǐ děng yíxià.", "es": "Se está vistiendo: espera un momento." },
+        { "zh": "我学了两年汉语了，还没去过西安。", "py": "Wǒ xué le liǎng nián Hànyǔ le, hái méi qùguo Xī'ān.", "es": "Llevo dos años estudiando chino y todavía no he estado en Xi'an." }
+      ],
+      "sourceNotes": ["zh-particle-guo", "zh-particle-zhe", "zh-particle-le-1", "zh-particle-le-2"]
+    },
+    {
+      "id": "le-doble-b1",
+      "title": "El 了 doble: «llevo dos años…» (y sigo)",
+      "unlockedBy": "b1-u07-l2",
+      "markdown": "### Un 了 más cambia la historia\n\n| | Significa |\n|---|---|\n| 我学了两年汉语。 | Estudié chino dos años (quizá ya no). |\n| 我学了两年汉语**了**。 | **Llevo** dos años estudiando chino (y sigo). |\n\nEl **了 final** dice «hasta ahora, y la cosa sigue». En español: «llevo…», «hace… que…».\n\n- **Con cantidades**, igual: 我看了三本**了** = ya llevo tres (y voy a seguir).\n- **Verbos que no duran** (来, 退休, 毕业, 结婚, 认识): el tiempo cuenta **desde que pasó** y va **sin 了 tras el verbo**: 我来上海一年**了**.\n- **Negativa**: duración + **没** + V + 了: 我两年**没**回西班牙**了**.\n- **自从…以来** («desde que…») marca el punto de partida, al principio y con coma.\n\n**En el esqueleto**: V了 en *Verbo 1*, la duración en *Complemento* (o pegada al objeto en *Objeto*) y el 了 final en *Partícula*; 自从…以来 en *Tiempo inicial*.",
+      "skeleton": {
+        "focus": [
+          "verb1",
+          "particle"
+        ],
+        "sentences": [
+          {
+            "slots": {
+              "subject": {
+                "zh": "我",
+                "py": "wǒ"
+              },
+              "verb1": {
+                "zh": "学了",
+                "py": "xué le"
+              },
+              "object": {
+                "zh": "两年汉语",
+                "py": "liǎng nián Hànyǔ"
+              },
+              "particle": {
+                "zh": "了",
+                "py": "le"
+              }
+            },
+            "end": "。",
+            "es": "Llevo dos años estudiando chino."
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "我",
+                "py": "wǒ"
+              },
+              "adverb": {
+                "zh": "已经",
+                "py": "yǐjīng"
+              },
+              "verb1": {
+                "zh": "看了",
+                "py": "kàn le"
+              },
+              "object": {
+                "zh": "三本",
+                "py": "sān běn"
+              },
+              "particle": {
+                "zh": "了",
+                "py": "le"
+              }
+            },
+            "end": "。",
+            "es": "Ya llevo tres (libros) leídos."
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "我爸爸",
+                "py": "wǒ bàba"
+              },
+              "verb1": {
+                "zh": "退休",
+                "py": "tuìxiū"
+              },
+              "complement": {
+                "zh": "三年",
+                "py": "sān nián"
+              },
+              "particle": {
+                "zh": "了",
+                "py": "le"
+              }
+            },
+            "end": "。",
+            "es": "Mi padre se jubiló hace tres años."
+          }
+        ]
+      },
+      "examples": [
+        {
+          "zh": "安娜学汉语学了三年了。",
+          "py": "Ānnà xué Hànyǔ xué le sān nián le.",
+          "es": "Ana lleva tres años estudiando chino."
+        },
+        {
+          "zh": "我来上海一年了。",
+          "py": "Wǒ lái Shànghǎi yì nián le.",
+          "es": "Hace un año que vine a Shanghái."
+        },
+        {
+          "zh": "自从来到上海以来，我已经认识了二十多个中国朋友了。",
+          "py": "Zìcóng láidào Shànghǎi yǐlái, wǒ yǐjīng rènshi le èrshí duō ge Zhōngguó péngyou le.",
+          "es": "Desde que llegué a Shanghái ya he conocido a más de veinte amigos chinos."
+        },
+        {
+          "zh": "你学汉语学了多长时间了？",
+          "py": "Nǐ xué Hànyǔ xué le duō cháng shíjiān le?",
+          "es": "¿Cuánto tiempo llevas estudiando chino?"
+        }
+      ]
+    },
+    {
+      "id": "zhe-ampliado",
+      "title": "着 ampliado: 笑着说, 正吃着饭呢, 走着走着, 拿着",
+      "unlockedBy": "b1-u07-l3",
+      "markdown": "### Cuatro usos nuevos de 着\n\nEn A2 viste el 着 de **estado** (门开着). Ahora:\n\n1. **V1着 + V2** = hacer V2 **de esa manera**: 笑**着**说 «decir sonriendo», 坐**着**看电视 «ver la tele sentado». La acción principal es la **segunda**.\n2. **正 + V着 + O + 呢** = acción en curso, muy oral: 他们正吃**着**饭呢 (≈ 正在吃饭). 着 va **pegado al verbo**, antes del objeto.\n3. **V着V着，…** = «de tanto V, (de pronto)…»: 走着走着，我们就到了. La segunda parte suele llevar **就** o **突然**.\n4. **Órdenes**: 拿**着**！ «¡tenlo!», 你坐**着**吧 «quédate sentado», 等**着** «espera ahí».\n\n**En el esqueleto**: V1着 (o V着V着) en *Verbo 1* y la acción principal en *Verbo 2*; con V着V着, lo que pasa después va en una segunda fila.\n\n> 💡 **Truco**: el gerundio español («sonriendo», «sentado») suele ser un V着 delante del verbo principal.",
+      "skeleton": {
+        "focus": [
+          "verb1",
+          "verb2"
+        ],
+        "sentences": [
+          {
+            "slots": {
+              "subject": {
+                "zh": "爷爷",
+                "py": "yéye"
+              },
+              "verb1": {
+                "zh": "笑着",
+                "py": "xiàozhe"
+              },
+              "verb2": {
+                "zh": "说",
+                "py": "shuō"
+              }
+            },
+            "end": "。",
+            "es": "El abuelo dijo sonriendo.",
+            "esOrder": [
+              {
+                "text": "El abuelo",
+                "slot": "subject"
+              },
+              {
+                "text": "dijo",
+                "slot": "verb2"
+              },
+              {
+                "text": "sonriendo",
+                "slot": "verb1"
+              }
+            ]
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "他们",
+                "py": "tāmen"
+              },
+              "adverb": {
+                "zh": "正",
+                "py": "zhèng"
+              },
+              "verb1": {
+                "zh": "吃着",
+                "py": "chīzhe"
+              },
+              "object": {
+                "zh": "饭",
+                "py": "fàn"
+              },
+              "particle": {
+                "zh": "呢",
+                "py": "ne"
+              }
+            },
+            "end": "。",
+            "es": "Están comiendo justo ahora."
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "我们",
+                "py": "wǒmen"
+              },
+              "verb1": {
+                "zh": "聊着聊着",
+                "py": "liáozhe liáozhe"
+              }
+            },
+            "end": "，",
+            "es": "Charlando, charlando… (1.ª parte)"
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "天",
+                "py": "tiān"
+              },
+              "adverb": {
+                "zh": "就",
+                "py": "jiù"
+              },
+              "verb1": {
+                "zh": "黑",
+                "py": "hēi"
+              },
+              "particle": {
+                "zh": "了",
+                "py": "le"
+              }
+            },
+            "end": "。",
+            "es": "…se hizo de noche. (2.ª parte)"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "zh": "奶奶每天晚上都坐着看电视。",
+          "py": "Nǎinai měi tiān wǎnshang dōu zuòzhe kàn diànshì.",
+          "es": "La abuela ve la tele sentada todas las noches."
+        },
+        {
+          "zh": "小李常常听着音乐做饭。",
+          "py": "Xiǎo Lǐ chángcháng tīngzhe yīnyuè zuò fàn.",
+          "es": "Xiao Li suele cocinar escuchando música."
+        },
+        {
+          "zh": "走着走着，我们就到了。",
+          "py": "Zǒuzhe zǒuzhe, wǒmen jiù dào le.",
+          "es": "Andando, andando, llegamos sin darnos cuenta."
+        },
+        {
+          "zh": "这是给你的，拿着吧！",
+          "py": "Zhè shì gěi nǐ de, názhe ba!",
+          "es": "Esto es para ti, ¡quédatelo!"
+        },
+        {
+          "zh": "你别站着吃饭。",
+          "py": "Nǐ bié zhànzhe chī fàn.",
+          "es": "No comas de pie."
+        }
+      ]
+    }
+  ]
+}

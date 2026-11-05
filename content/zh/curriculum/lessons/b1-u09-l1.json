@@ -1,0 +1,136 @@
+{
+  "id": "b1-u09-l1",
+  "title": "Esa chica alta vestida de rojo: el orden de los atributos",
+  "zh": "那个穿红衣服的高个子姑娘",
+  "goal": "Describir a una persona o una cosa con varios atributos seguidos (那个穿红衣服的高个子姑娘) en el orden chino, y usar la aposición (首都北京, 我们学生).",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "姑娘", "pinyin": "gūniang", "es": "chica, muchacha", "note": "Coloquial y cariñoso: 那个姑娘 = esa chica. 娘 en tono neutro." },
+    { "hanzi": "老太太", "pinyin": "lǎotàitai", "es": "señora mayor, anciana", "note": "Respetuoso. Para dirigirte a ella, mejor 奶奶 o 阿姨." },
+    { "hanzi": "老头儿", "pinyin": "lǎotóur", "es": "anciano, viejecito", "note": "Coloquial y algo familiar; ante él, di 爷爷 o 大爷." },
+    { "hanzi": "男子", "pinyin": "nánzǐ", "es": "hombre, varón", "note": "Más formal o escrito que 男人: 男子网球 = tenis masculino." },
+    { "hanzi": "女子", "pinyin": "nǚzǐ", "es": "mujer", "note": "Formal o escrito: 女子跑步比赛 = carrera femenina." },
+    { "hanzi": "年纪", "pinyin": "niánjì", "es": "edad (de personas mayores)", "note": "您多大年纪了？ = ¿Cuántos años tiene usted? (a un mayor). 年纪很大 = muy mayor." },
+    { "hanzi": "形象", "pinyin": "xíngxiàng", "es": "imagen (de una persona, una ciudad…)", "note": "上海的形象 = la imagen de Shanghái." },
+    { "hanzi": "印象", "pinyin": "yìnxiàng", "es": "impresión", "note": "第一印象 = primera impresión; 给我的印象很好 = me causó muy buena impresión." },
+    { "hanzi": "性别", "pinyin": "xìngbié", "es": "sexo (en formularios), género" },
+    { "hanzi": "美", "pinyin": "měi", "es": "bello; belleza", "note": "Más culto que 漂亮: 这儿的山很美." },
+    { "hanzi": "美丽", "pinyin": "měilì", "es": "bello, hermoso", "note": "Sobre todo escrito: 美丽的城市, 美丽的姑娘." },
+    { "hanzi": "彩色", "pinyin": "cǎisè", "es": "de colores, en color", "note": "彩色的衣服 = ropa de colores; 彩色照片 = foto en color." },
+    { "hanzi": "种", "pinyin": "zhǒng", "es": "tipo, clase (clasificador)", "note": "这种衣服 = este tipo de ropa. Con el cuarto tono (zhòng) es «plantar»." }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "那个穿红衣服的高个子姑娘是我的同学。", "py": "Nà ge chuān hóng yīfu de gāo gèzi gūniang shì wǒ de tóngxué.", "es": "Esa chica alta vestida de rojo es mi compañera de clase." },
+        { "zh": "我们楼下那位年纪很大的老太太每天都去公园。", "py": "Wǒmen lóuxià nà wèi niánjì hěn dà de lǎotàitai měi tiān dōu qù gōngyuán.", "es": "La señora mayor que vive debajo de nosotros va al parque todos los días." },
+        { "zh": "她给我的第一印象很好。", "py": "Tā gěi wǒ de dì-yī yìnxiàng hěn hǎo.", "es": "Me causó muy buena primera impresión." }
+      ]
+    },
+    { "type": "vocab", "title": "Personas y cómo nos parecen", "words": ["姑娘", "老太太", "老头儿", "男子", "女子", "年纪", "形象", "印象", "性别", "美", "美丽", "彩色", "种"] },
+    {
+      "type": "phonetics-drill",
+      "title": "El 的 que no suena y las palabras con neutro",
+      "markdown": "En una descripción larga hay muchos **的**, y todos se dicen igual: **de**, en tono neutro, cortísimo y sin fuerza. El peso de la frase cae en los adjetivos y en el nombre, no en 的: *nà ge chuān hóng yīfu **de** gāo gèzi gūniang*.\n\nHoy además hay varias palabras con **tono neutro al final**: 姑娘 *gūniang*, 老太太 *lǎotàitai* (el segundo 太 es neutro, como en 妈妈), y el **erhua** de 老头儿 *lǎotóur*: la *r* se pega a la sílaba, no suena «tóu ér».\n\nRecuerda también **一 + clasificador**: 一位 *yí wèi* (delante de 4.º tono), 一种 *yì zhǒng* (delante de 3.º).",
+      "items": [
+        { "audio": "姑娘", "options": ["gūniang", "gūniáng", "gùniang"], "answer": 0, "explain": "Primer tono + neutro: 娘 sale corto y flojo." },
+        { "audio": "老太太", "options": ["lǎotàitai", "lǎotàitài", "láotàitai"], "answer": 0, "explain": "El 太 repetido es neutro, como en 妈妈 o 奶奶." },
+        { "audio": "老头儿", "options": ["lǎotóur", "lǎotóu ér", "lǎotou"], "answer": 0, "explain": "Erhua: el 儿 no es una sílaba, solo dobla la lengua al final de tóu." },
+        { "audio": "我的同学", "prompt": "¿Cómo suena 的?", "options": ["de, neutro y corto", "dé, segundo tono", "dì, cuarto tono"], "answer": 0, "explain": "El 的 del atributo nunca lleva tono." },
+        { "audio": "一位老太太", "options": ["yí wèi lǎotàitai", "yī wèi lǎotàitai", "yì wèi lǎotàitai"], "answer": 0, "explain": "一 delante de cuarto tono pasa a segundo: yí wèi." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["美", "印"],
+      "mnemonics": {
+        "美": "羊 (oveja) arriba + 大 (grande) abajo: una oveja grande y hermosa era lo más bonito y valioso que se podía tener. De ahí «bello».",
+        "印": "A la izquierda, una mano que aprieta; a la derecha, 卩, una persona arrodillada: presionar hasta dejar marca → sello, huella. 印象 es la huella que alguien te deja."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "Varios atributos delante del nombre: el orden chino",
+      "markdown": "En español los adjetivos y las oraciones de relativo van **detrás** del nombre («la chica **alta** **que lleva un vestido rojo**»). En chino **todo** lo que describe va **delante**, y en un orden bastante fijo:\n\n| Orden | Qué es | Ejemplo |\n|---|---|---|\n| 1 | de quién (posesor) | 我的, 我们学校的 |\n| 2 | demostrativo / número + clasificador | 那个, 那位, 一件 |\n| 3 | frase u oración con 的 | 穿红衣服的, 我昨天买的 |\n| 4 | adjetivo (con 的 si es largo o lleva 很) | 很漂亮的, 黑色的 |\n| 5 | adjetivo de una sílaba pegado al nombre, sin 的 | 红, 高个子, 老 |\n| 6 | el nombre | 姑娘, 衣服 |\n\n> 我昨天新买的 **那条** 黑色的 裤子 · **那个** 穿红衣服的 高个子 姑娘\n\nLa oración con 的 puede ir también **antes** del demostrativo cuando es larga (我昨天新买的那条裤子 = 那条我昨天新买的裤子).\n\n- **No acumules 的**: con familia y cosas muy cercanas se quita (我妈妈的朋友, no *我的妈妈的朋友*).\n- **Aposición**: dos nombres seguidos que son la misma cosa, sin 的: **首都北京** (la capital, Pekín), **我们学生** (nosotros, los estudiantes), **她一个人** (ella sola), **我朋友小李**.\n\n**Convención del esqueleto en esta unidad**: todos los atributos con 的 y las aposiciones van **dentro** del hueco del nombre al que describen (*Sujeto* u *Objeto*).",
+      "focus": ["subject", "object"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "那个穿红衣服的高个子姑娘", "py": "nà ge chuān hóng yīfu de gāo gèzi gūniang" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "我的同学", "py": "wǒ de tóngxué" } }, "end": "。", "es": "Esa chica alta vestida de rojo es mi compañera de clase." },
+        { "slots": { "subject": { "zh": "我们楼下那位年纪很大的老太太", "py": "wǒmen lóuxià nà wèi niánjì hěn dà de lǎotàitai" }, "time": { "zh": "每天早上", "py": "měi tiān zǎoshang" }, "adverb": { "zh": "都", "py": "dōu" }, "place": { "zh": "在公园", "py": "zài gōngyuán" }, "verb1": { "zh": "跳舞", "py": "tiàowǔ" } }, "end": "。", "es": "La señora mayor de abajo baila todas las mañanas en el parque.", "esOrder": [{ "text": "La señora mayor de abajo", "slot": "subject" }, { "text": "baila", "slot": "verb1" }, { "text": "todas las mañanas", "slot": "time" }, { "text": "en el parque", "slot": "place" }] },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "verb1": { "zh": "买了", "py": "mǎi le" }, "object": { "zh": "一件很漂亮的彩色衬衫", "py": "yí jiàn hěn piàoliang de cǎisè chènshān" } }, "end": "。", "es": "Me he comprado una camisa de colores muy bonita." },
+        { "slots": { "subject": { "zh": "首都北京", "py": "shǒudū Běijīng" }, "adverb": { "zh": "也", "py": "yě" }, "verb1": { "zh": "有", "py": "yǒu" }, "object": { "zh": "很多美丽的公园", "py": "hěn duō měilì de gōngyuán" } }, "end": "。", "es": "La capital, Pekín, también tiene muchos parques preciosos." },
+        { "slots": { "subject": { "zh": "我们学生", "py": "wǒmen xuésheng" }, "adverb": { "zh": "都", "py": "dōu" }, "verb1": { "zh": "喜欢", "py": "xǐhuan" }, "object": { "zh": "这种安静的地方", "py": "zhè zhǒng ānjìng de dìfang" } }, "end": "。", "es": "A nosotros, los estudiantes, nos gusta este tipo de sitios tranquilos." },
+        { "slots": { "subject": { "zh": "她一个人", "py": "tā yí ge rén" }, "place": { "zh": "在上海", "py": "zài Shànghǎi" }, "verb1": { "zh": "学习", "py": "xuéxí" } }, "end": "。", "es": "Ella estudia sola en Shanghái." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "那个戴眼镜的男子", "py": "nà ge dài yǎnjìng de nánzǐ" }, "adverb": { "zh": "不", "py": "bú" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "我们的老师", "py": "wǒmen de lǎoshī" } }, "end": "。", "es": "Ese hombre con gafas no es nuestro profesor." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你说的那个老头儿", "py": "nǐ shuō de nà ge lǎotóur" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "哪国人", "py": "nǎ guó rén" } }, "end": "？", "es": "¿De dónde es el anciano del que hablas?" },
+        { "slots": { "subject": { "zh": "您", "py": "nín" }, "verb1": { "zh": "多大", "py": "duō dà" }, "object": { "zh": "年纪", "py": "niánjì" }, "particle": { "zh": "了", "py": "le" } }, "end": "？", "es": "¿Cuántos años tiene usted? (a una persona mayor)" }
+      ],
+      "mistakes": [
+        { "wrong": "姑娘穿红衣服的是我同学。", "right": "穿红衣服的姑娘是我同学。", "why": "La «oración de relativo» (que lleva ropa roja) va delante del nombre, con 的, nunca detrás como en español." },
+        { "wrong": "我买的书那本很有意思。", "right": "我买的那本书很有意思。", "why": "El demostrativo con su clasificador (那本) va delante del nombre, no al final." },
+        { "wrong": "我的妈妈的朋友的女儿", "right": "我妈妈朋友的女儿", "why": "Tres 的 seguidos suenan torpes: con la familia y las relaciones cercanas se quita 的." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "¿Quién es esa chica?",
+      "lines": [
+        { "speaker": "安娜", "zh": "雨果，那个穿红衣服的高个子姑娘是谁？", "py": "Yǔguǒ, nà ge chuān hóng yīfu de gāo gèzi gūniang shì shéi?", "es": "Hugo, ¿quién es esa chica alta vestida de rojo?" },
+        { "speaker": "雨果", "zh": "哪个？站在门口的那个吗？", "py": "Nǎ ge? Zhàn zài ménkǒu de nà ge ma?", "es": "¿Cuál? ¿La que está en la puerta?" },
+        { "speaker": "安娜", "zh": "不是，是那个拿着彩色杯子的。", "py": "Bú shì, shì nà ge ná zhe cǎisè bēizi de.", "es": "No, la que lleva una taza de colores." },
+        { "speaker": "雨果", "zh": "她是我们班的新同学，叫小王。她给我的第一印象很好。", "py": "Tā shì wǒmen bān de xīn tóngxué, jiào Xiǎo Wáng. Tā gěi wǒ de dì-yī yìnxiàng hěn hǎo.", "es": "Ah, es una compañera nueva de clase, se llama Xiao Wang. Me causó muy buena primera impresión." },
+        { "speaker": "安娜", "zh": "她旁边那位年纪很大的老太太呢？", "py": "Tā pángbiān nà wèi niánjì hěn dà de lǎotàitai ne?", "es": "¿Y la señora mayor que está a su lado?" },
+        { "speaker": "雨果", "zh": "那是她奶奶。她奶奶一个人从北京来看她。", "py": "Nà shì tā nǎinai. Tā nǎinai yí ge rén cóng Běijīng lái kàn tā.", "es": "Es su abuela. Ha venido ella sola desde Pekín a verla." },
+        { "speaker": "安娜", "zh": "老太太穿的那件衣服真美！", "py": "Lǎotàitai chuān de nà jiàn yīfu zhēn měi!", "es": "¡Qué bonita es la ropa que lleva la señora!" },
+        { "speaker": "雨果", "zh": "她说那是一种很老的北京衣服。", "py": "Tā shuō nà shì yì zhǒng hěn lǎo de Běijīng yīfu.", "es": "Dice que es un tipo de ropa pequinesa muy antigua." },
+        { "speaker": "安娜", "zh": "那个戴眼镜的男子是老师吗？", "py": "Nà ge dài yǎnjìng de nánzǐ shì lǎoshī ma?", "es": "Y ese hombre con gafas, ¿es profesor?" },
+        { "speaker": "雨果", "zh": "对，他是我们学校新来的张老师。", "py": "Duì, tā shì wǒmen xuéxiào xīn lái de Zhāng lǎoshī.", "es": "Sí, es el profesor Zhang, que acaba de llegar a la universidad." },
+        { "speaker": "安娜", "zh": "我们学生应该过去跟他们说一声“你好”吧？", "py": "Wǒmen xuésheng yīnggāi guòqu gēn tāmen shuō yì shēng “nǐ hǎo” ba?", "es": "Nosotros, los estudiantes, deberíamos ir a saludarlos, ¿no?" },
+        { "speaker": "雨果", "zh": "好啊，走吧！", "py": "Hǎo a, zǒu ba!", "es": "¡Venga, vamos!" }
+      ],
+      "notes": "Para señalar a alguien entre mucha gente, los chinos encadenan atributos igual que Ana: 那个 + qué lleva o qué hace + 的 + cómo es + persona. A una señora mayor desconocida no se la llama 老太太 a la cara: se le dice 奶奶 o 阿姨. 说一声 = «decir una palabra» (saludar, avisar)."
+    },
+    { "type": "exercises", "count": 16, "bank": ["g-de", "g-measure-words", "g-hen-adj"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "那个穿红衣服的姑娘" }, "verb1": { "zh": "是" }, "object": { "zh": "我同学" } }, "end": "。", "es": "Esa chica vestida de rojo es mi compañera." }, "distractors": ["地"] },
+        { "sentence": { "slots": { "subject": { "zh": "我" }, "verb1": { "zh": "买了" }, "object": { "zh": "一件彩色的衬衫" } }, "end": "。", "es": "Me he comprado una camisa de colores." }, "distractors": ["得"] },
+        { "sentence": { "slots": { "subject": { "zh": "我们学生" }, "adverb": { "zh": "都" }, "verb1": { "zh": "喜欢" }, "object": { "zh": "这种安静的地方" } }, "end": "。", "es": "A nosotros, los estudiantes, nos gusta este tipo de sitios tranquilos." } },
+        { "sentence": { "slots": { "time0": { "zh": "每天早上" }, "subject": { "zh": "我们楼下那位年纪很大的老太太" }, "adverb": { "zh": "都" }, "with": { "zh": "跟她的朋友一起" }, "place": { "zh": "在公园" }, "verb1": { "zh": "跳舞" } }, "end": "。", "es": "Todas las mañanas, la señora mayor de abajo baila en el parque con sus amigas." } }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "那个穿红衣服的高个子姑娘是我的同学。", "py": "Nà ge chuān hóng yīfu de gāo gèzi gūniang shì wǒ de tóngxué.", "es": "Esa chica alta vestida de rojo es mi compañera de clase." },
+        { "zh": "她给我的第一印象很好。", "py": "Tā gěi wǒ de dì-yī yìnxiàng hěn hǎo.", "es": "Me causó muy buena primera impresión." },
+        { "zh": "首都北京也有很多美丽的公园。", "py": "Shǒudū Běijīng yě yǒu hěn duō měilì de gōngyuán.", "es": "La capital, Pekín, también tiene muchos parques preciosos." },
+        { "zh": "请写一下您的名字、性别和年纪。", "py": "Qǐng xiě yíxià nín de míngzi, xìngbié hé niánjì.", "es": "Escriba, por favor, su nombre, su sexo y su edad." }
+      ],
+      "respond": [
+        { "q": { "zh": "你对上海的第一印象怎么样？", "py": "Nǐ duì Shànghǎi de dì-yī yìnxiàng zěnmeyàng?", "es": "¿Qué primera impresión te causó Shanghái?" }, "model": { "zh": "我对上海的第一印象很好，这是一个又大又美丽的城市。", "py": "Wǒ duì Shànghǎi de dì-yī yìnxiàng hěn hǎo, zhè shì yí ge yòu dà yòu měilì de chéngshì.", "es": "Muy buena: es una ciudad grande y preciosa." } },
+        { "q": { "zh": "你最好的朋友是一个什么样的人？", "py": "Nǐ zuì hǎo de péngyou shì yí ge shénmeyàng de rén?", "es": "¿Cómo es tu mejor amigo?" }, "model": { "zh": "他是一个个子很高、很喜欢运动的西班牙人。", "py": "Tā shì yí ge gèzi hěn gāo, hěn xǐhuan yùndòng de Xībānyá rén.", "es": "Es un español muy alto al que le encanta el deporte." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Mis vecinos",
+      "text": "我住的那个小区不大，但是住着很多有意思的人。我们楼下那位年纪很大的老太太，每天早上都在公园跳舞。她给我的第一印象是很热情，每次见到我都问：“吃饭了吗？”她家对面住着一个高个子的老头儿，他总是穿一件黑色的旧衣服，很少说话，可是对我们这些外国学生特别好。三楼住着两个年轻的姑娘，一个是上海人，一个是北京人，她们都是我们学校的研究生。上海姑娘喜欢穿彩色的衣服，北京姑娘喜欢穿白色的。小区门口有一家很小的咖啡店，老板是一个三十多岁的男子。他说他最喜欢我们西班牙学生，因为我们每天都去喝他做的咖啡。北京姑娘常常说，首都北京有北京的美，上海也有上海的美。在我的心里，上海的形象就是这个美丽的小区。",
+      "es": "El barrio en el que vivo no es grande, pero vive mucha gente interesante. La señora mayor de abajo baila en el parque todas las mañanas. Mi primera impresión fue que es muy cariñosa: cada vez que me ve, me pregunta «¿Has comido?». Enfrente de su casa vive un anciano alto que siempre lleva una ropa negra vieja; habla poco, pero es especialmente amable con nosotros, los estudiantes extranjeros. En el tercero viven dos chicas jóvenes, una de Shanghái y otra de Pekín; las dos son estudiantes de posgrado de nuestra universidad. A la de Shanghái le gusta vestir de colores; a la de Pekín, de blanco. En la entrada del barrio hay una cafetería muy pequeña cuyo dueño es un hombre de treinta y tantos años. Dice que los estudiantes españoles somos sus favoritos, porque vamos todos los días a tomar el café que prepara. La chica de Pekín suele decir que la capital, Pekín, tiene su belleza, y Shanghái la suya. Para mí, la imagen de Shanghái es este barrio tan bonito.",
+      "questions": [
+        { "q": "¿Qué hace la señora mayor todas las mañanas?", "options": ["在公园跳舞", "去咖啡店", "穿彩色的衣服"], "answer": 0 },
+        { "q": "¿Cómo es el anciano de enfrente?", "options": ["个子高，很少说话", "很年轻，喜欢说话", "常常穿彩色的衣服"], "answer": 0 },
+        { "q": "¿De dónde es la chica a la que le gusta vestir de colores?", "options": ["上海", "北京", "西班牙"], "answer": 0 },
+        { "q": "¿Quién es el dueño de la cafetería?", "options": ["一个三十多岁的男子", "一位老太太", "一个研究生"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

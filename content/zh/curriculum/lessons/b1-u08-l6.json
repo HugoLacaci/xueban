@@ -1,0 +1,139 @@
+{
+  "id": "b1-u08-l6",
+  "title": "¿Caro? ¡Qué va!: X什么啊, 不怎么样 y críticas con tacto",
+  "zh": "贵什么啊",
+  "goal": "Rechazar una opinión con X什么啊, decir que algo no vale gran cosa con 不怎么样 y criticar o valorar con 根本, 绝对, 恐怕 y 值得.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "批评", "pinyin": "pīpíng", "es": "criticar, reñir; crítica" },
+    { "hanzi": "评价", "pinyin": "píngjià", "es": "valorar; valoración, reseña", "note": "网上的评价 = las reseñas de internet." },
+    { "hanzi": "否定", "pinyin": "fǒudìng", "es": "negar, rechazar (una idea, un trabajo)" },
+    { "hanzi": "否认", "pinyin": "fǒurèn", "es": "negar (un hecho)", "note": "他不否认 = no lo niega." },
+    { "hanzi": "认可", "pinyin": "rènkě", "es": "aprobar, reconocer (como válido)" },
+    { "hanzi": "绝对", "pinyin": "juéduì", "es": "absolutamente, sin duda", "note": "绝对值得 = merece totalmente la pena." },
+    { "hanzi": "根本", "pinyin": "gēnběn", "es": "en absoluto (con negación); fundamental", "note": "根本不 / 根本没 = nada de nada." },
+    { "hanzi": "反正", "pinyin": "fǎnzhèng", "es": "total, de todas formas", "note": "反正我们没事，就去吧 = total, no tenemos nada que hacer: vamos." },
+    { "hanzi": "恐怕", "pinyin": "kǒngpà", "es": "me temo que, probablemente (algo malo)", "note": "No es «tener miedo» (怕): 恐怕要下雨 = me temo que va a llover." },
+    { "hanzi": "争", "pinyin": "zhēng", "es": "discutir, disputarse", "note": "你们别争了 = dejad de discutir." },
+    { "hanzi": "值得", "pinyin": "zhíde", "es": "merecer la pena", "note": "值得 + verbo: 值得去, 值得一看." },
+    { "hanzi": "合理", "pinyin": "hélǐ", "es": "razonable, lógico", "note": "价格很合理 = el precio es razonable." },
+    { "hanzi": "存在", "pinyin": "cúnzài", "es": "existir; haber (un problema)", "note": "这个问题确实存在 = el problema existe de verdad." }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "这家饭馆贵什么啊！每人才五十块。", "py": "Zhè jiā fànguǎn guì shénme a! Měi rén cái wǔshí kuài.", "es": "¿Caro este restaurante? ¡Qué va! Solo son cincuenta por persona." },
+        { "zh": "那部电影不怎么样。", "py": "Nà bù diànyǐng bù zěnmeyàng.", "es": "Esa película no es nada del otro mundo." },
+        { "zh": "这家店绝对值得去。", "py": "Zhè jiā diàn juéduì zhíde qù.", "es": "Merece totalmente la pena ir a esta tienda." }
+      ]
+    },
+    { "type": "vocab", "title": "Criticar, valorar, discutir", "words": ["批评", "评价", "否定", "否认", "认可", "绝对", "根本", "反正", "恐怕", "争", "值得", "合理", "存在"] },
+    {
+      "type": "phonetics-drill",
+      "title": "什么啊 suena «shénme ya» y el tono de la queja",
+      "markdown": "**X什么啊** es una frase de rechazo y lleva entonación de **queja**: el adjetivo se dice fuerte y **什么啊** sale rápido y bajando.\n\nLa partícula **啊** cambia de sonido según lo que va delante: tras **-e, -a, -i, -o, -ü** suena **ya** (por eso a veces se escribe 呀): 什么啊 → *shénme ya*; tras **-n** suena **na** (难啊 → *nán na*).\n\n- **不怎么样 bù zěnmeyàng**: 不 delante de tercer tono se queda en *bù*.\n- **否 fǒu**: tercer tono, con *f* labiodental como en español.\n- **批评 pīpíng**: *p* aspirada las dos veces (con soplo).",
+      "items": [
+        { "audio": "贵什么啊", "prompt": "¿Cómo suena el final?", "options": ["shénme ya", "shénme a, separado", "shénme na"], "answer": 0, "explain": "啊 tras -e suena ya." },
+        { "audio": "贵什么啊！", "prompt": "¿Qué quiere decir quien habla?", "options": ["Que no es caro", "Que es carísimo", "Pregunta cuánto cuesta"], "answer": 0, "explain": "X什么啊 rechaza la palabra X." },
+        { "audio": "不怎么样", "options": ["bù zěnmeyàng", "bú zěnmeyàng", "bù zěnyàng"], "answer": 0 },
+        { "audio": "批评", "options": ["pīpíng", "bīpíng", "pīpǐng"], "answer": 0, "explain": "Dos p aspiradas." },
+        { "audio": "恐怕", "options": ["kǒngpà", "kōngpà", "gǒngpà"], "answer": 0, "explain": "k aspirada y tercer tono." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["评", "否"],
+      "mnemonics": {
+        "评": "讠 (palabras) + 平 (plano, equilibrado): hablar con equilibrio de algo, juzgarlo. 评价 = valorar; 批评 = criticar.",
+        "否": "不 (no) encima de 口 (boca): una boca que dice «no». 否认 = negar; 否定 = rechazar."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "Rechazar y criticar: X什么啊, 不怎么样, 根本, 绝对, 恐怕",
+      "markdown": "**X什么啊** (L3-51) repite la palabra del otro y la **rechaza**: A: 这家饭馆很贵. B: **贵什么啊**！ («¿caro? ¡qué va!»). Funciona con adjetivos y verbos: **客气什么啊** (no hace falta tanta cortesía), **着急什么啊** (¿de qué te preocupas?). Es coloquial y algo brusco: con amigos sí, con tu profesora mejor no. En el esqueleto: «X什么» en *Verbo 1* y 啊 en *Partícula*.\n\n**不怎么样** = «no es nada del otro mundo», crítica suave. Va sola como predicado (那部电影不怎么样) o tras 得 (做得不怎么样). Sin 是 delante.\n\n**Adverbios para criticar o valorar** (hueco *Adverbios*):\n- **根本** + 不 / 没: «en absoluto» → 他**根本不**认可.\n- **绝对**: «sin duda» → **绝对**值得.\n- **恐怕**: «me temo que» (algo que no te gusta) → 他今天**恐怕**来不了.\n- **反正**: «total, de todas formas», muchas veces al principio (*Tiempo inicial*).\n\n**Criticar con tacto** en chino: primero lo bueno, luego el «pero»: 菜不错，**不过**服务**不怎么样**.",
+      "focus": ["verb1", "particle", "adverb"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "这家饭馆", "py": "zhè jiā fànguǎn" }, "verb1": { "zh": "贵什么", "py": "guì shénme" }, "particle": { "zh": "啊", "py": "a" } }, "end": "！", "es": "¿Caro este restaurante? ¡Qué va!", "esOrder": [{ "text": "¿Caro", "slot": "verb1" }, { "text": "este restaurante?", "slot": "subject" }, { "text": "¡Qué va!", "slot": "particle" }] },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "客气什么", "py": "kèqi shénme" }, "particle": { "zh": "啊", "py": "a" } }, "end": "！", "es": "¡No hace falta que seas tan formal!" },
+        { "slots": { "subject": { "zh": "这家饭馆的菜", "py": "zhè jiā fànguǎn de cài" }, "verb1": { "zh": "做得", "py": "zuò de" }, "complement": { "zh": "不怎么样", "py": "bù zěnmeyàng" } }, "end": "。", "es": "La comida de este restaurante no es nada del otro mundo." },
+        { "slots": { "subject": { "zh": "这本书", "py": "zhè běn shū" }, "adverb": { "zh": "绝对", "py": "juéduì" }, "verb1": { "zh": "值得", "py": "zhíde" }, "object": { "zh": "一看", "py": "yí kàn" } }, "end": "。", "es": "Este libro merece totalmente la pena." },
+        { "slots": { "subject": { "zh": "这里的价格", "py": "zhèlǐ de jiàgé" }, "adverb": { "zh": "很", "py": "hěn" }, "verb1": { "zh": "合理", "py": "hélǐ" } }, "end": "。", "es": "Los precios de aquí son muy razonables." },
+        { "slots": { "subject": { "zh": "这个问题", "py": "zhège wèntí" }, "adverb": { "zh": "确实", "py": "quèshí" }, "verb1": { "zh": "存在", "py": "cúnzài" } }, "end": "。", "es": "Este problema existe de verdad." },
+        { "slots": { "time0": { "zh": "反正", "py": "fǎnzhèng" }, "subject": { "zh": "我们", "py": "wǒmen" }, "time": { "zh": "明天", "py": "míngtiān" }, "verb1": { "zh": "没有", "py": "méiyǒu" }, "object": { "zh": "课", "py": "kè" } }, "end": "，", "es": "Total, mañana no tenemos clase… (1.ª parte)" },
+        { "slots": { "adverb": { "zh": "就晚一点儿", "py": "jiù wǎn yìdiǎnr" }, "verb1": { "zh": "睡", "py": "shuì" }, "particle": { "zh": "吧", "py": "ba" } }, "end": "。", "es": "…así que acostémonos un poco más tarde. (2.ª parte)" }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "他", "py": "tā" }, "adverb": { "zh": "根本不", "py": "gēnběn bù" }, "verb1": { "zh": "认可", "py": "rènkě" }, "object": { "zh": "这个评价", "py": "zhège píngjià" } }, "end": "。", "es": "No acepta en absoluto esa valoración." },
+        { "slots": { "subject": { "zh": "王老师", "py": "Wáng lǎoshī" }, "adverb": { "zh": "没有", "py": "méiyǒu" }, "verb1": { "zh": "否定", "py": "fǒudìng" }, "object": { "zh": "我们的看法", "py": "wǒmen de kànfǎ" } }, "end": "。", "es": "La profesora Wang no ha rechazado nuestro punto de vista." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "这家饭馆", "py": "zhè jiā fànguǎn" }, "verb1": { "zh": "值得", "py": "zhíde" }, "object": { "zh": "去", "py": "qù" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿Merece la pena ir a este restaurante?" },
+        { "slots": { "subject": { "zh": "他", "py": "tā" }, "time": { "zh": "今天", "py": "jīntiān" }, "adverb": { "zh": "恐怕", "py": "kǒngpà" }, "verb1": { "zh": "来", "py": "lái" }, "complement": { "zh": "不了", "py": "bu liǎo" }, "particle": { "zh": "吧", "py": "ba" } }, "end": "？", "es": "Me temo que hoy no puede venir, ¿no?" }
+      ],
+      "mistakes": [
+        { "wrong": "这家饭馆什么贵啊！", "right": "这家饭馆贵什么啊！", "why": "什么 va detrás de la palabra que rechazas." },
+        { "wrong": "这部电影是不怎么样。", "right": "这部电影不怎么样。", "why": "不怎么样 es predicado por sí solo: sin 是." },
+        { "wrong": "我恐怕狗。", "right": "我怕狗。", "why": "恐怕 es «me temo que» (probabilidad); «tener miedo» es 怕." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "¿Adónde vamos a cenar?",
+      "lines": [
+        { "speaker": "安娜", "zh": "今天晚上我们去学校旁边的火锅店吧，网上的评价很好。", "py": "Jīntiān wǎnshang wǒmen qù xuéxiào pángbiān de huǒguō diàn ba, wǎngshàng de píngjià hěn hǎo.", "es": "Esta noche vamos a la tienda de hotpot que hay al lado de la universidad: tiene muy buenas reseñas." },
+        { "speaker": "大卫", "zh": "那家店太贵了，一个人要一百多块。", "py": "Nà jiā diàn tài guì le, yí ge rén yào yìbǎi duō kuài.", "es": "Ese sitio es carísimo: más de cien por persona." },
+        { "speaker": "小李", "zh": "贵什么啊！东西又多又好吃，价格很合理。", "py": "Guì shénme a! Dōngxi yòu duō yòu hǎochī, jiàgé hěn hélǐ.", "es": "¿Caro? ¡Qué va! Hay mucha comida y está buena: el precio es muy razonable." },
+        { "speaker": "雨果", "zh": "我上个月去过，菜不错，不过服务不怎么样。", "py": "Wǒ shàng ge yuè qù guo, cài bú cuò, búguò fúwù bù zěnmeyàng.", "es": "Fui el mes pasado: la comida está bien, pero el servicio no es nada del otro mundo." },
+        { "speaker": "安娜", "zh": "可是网上几乎没有人批评它的服务。", "py": "Kěshì wǎngshàng jīhū méiyǒu rén pīpíng tā de fúwù.", "es": "Pero en internet casi nadie critica su servicio." },
+        { "speaker": "雨果", "zh": "网上的评价根本不可靠，很多是店里的人自己写的。", "py": "Wǎngshàng de píngjià gēnběn bù kěkào, hěn duō shì diàn li de rén zìjǐ xiě de.", "es": "Las reseñas de internet no son nada fiables: muchas las escribe la propia gente del local." },
+        { "speaker": "小李", "zh": "这个问题确实存在，我不否认。但是这家店我认可，绝对值得去。", "py": "Zhège wèntí quèshí cúnzài, wǒ bù fǒurèn. Dànshì zhè jiā diàn wǒ rènkě, juéduì zhíde qù.", "es": "Ese problema existe de verdad, no lo niego. Pero yo esta tienda la apruebo: merece totalmente la pena." },
+        { "speaker": "大卫", "zh": "你们别争了。我只是觉得有点儿贵。", "py": "Nǐmen bié zhēng le. Wǒ zhǐshì juéde yǒudiǎnr guì.", "es": "Dejad de discutir. Solo digo que me parece un poco caro." },
+        { "speaker": "安娜", "zh": "大卫，我没有否定你的看法。我们可以少点几个菜。", "py": "Dàwèi, wǒ méiyǒu fǒudìng nǐ de kànfǎ. Wǒmen kěyǐ shǎo diǎn jǐ ge cài.", "es": "David, no he rechazado tu opinión. Podemos pedir unos cuantos platos menos." },
+        { "speaker": "雨果", "zh": "现在六点半了，恐怕要排队。", "py": "Xiànzài liù diǎn bàn le, kǒngpà yào páiduì.", "es": "Ya son las seis y media: me temo que habrá que hacer cola." },
+        { "speaker": "小李", "zh": "反正我们明天没有课，排一会儿也没关系。", "py": "Fǎnzhèng wǒmen míngtiān méiyǒu kè, pái yíhuìr yě méi guānxi.", "es": "Total, mañana no tenemos clase: no pasa nada por esperar un rato." },
+        { "speaker": "大卫", "zh": "好吧好吧。小李，今天你请客吗？客气什么啊，我开玩笑的！", "py": "Hǎo ba hǎo ba. Xiǎo Lǐ, jīntiān nǐ qǐngkè ma? Kèqi shénme a, wǒ kāi wánxiào de!", "es": "Vale, vale. Xiao Li, ¿hoy invitas tú? ¡No pongas esa cara, que es broma!" }
+      ],
+      "notes": "Criticar con tacto: primero lo positivo y después 不过 / 但是 + 不怎么样. X什么啊 es muy coloquial: entre amigos suena natural; con desconocidos o con la profesora, mejor 我觉得不太…. 请客 = invitar (pagar la cuenta); en China, quien invita suele pagar todo, no se divide la cuenta tan a menudo como en España."
+    },
+    { "type": "exercises", "count": 17, "bank": ["g-question-words", "g-complements", "u13"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "这家饭馆" }, "verb1": { "zh": "贵什么" }, "particle": { "zh": "啊" } }, "end": "！", "es": "¿Caro este restaurante? ¡Qué va!" }, "distractors": ["什么贵"] },
+        { "sentence": { "slots": { "subject": { "zh": "这家饭馆的菜" }, "verb1": { "zh": "做得" }, "complement": { "zh": "不怎么样" } }, "end": "。", "es": "La comida de este restaurante no es nada del otro mundo." }, "distractors": ["是"] },
+        { "sentence": { "slots": { "subject": { "zh": "他" }, "adverb": { "zh": "根本不" }, "verb1": { "zh": "认可" }, "object": { "zh": "这个评价" } }, "end": "。", "es": "No acepta en absoluto esa valoración." } },
+        { "sentence": { "slots": { "subject": { "zh": "我们" }, "time": { "zh": "周末" }, "adverb": { "zh": "绝对" }, "aux": { "zh": "应该" }, "with": { "zh": "跟小李一起" }, "verb1": { "zh": "去" }, "verb2": { "zh": "吃" }, "object": { "zh": "那家价格合理的火锅" } }, "end": "。", "es": "Este fin de semana tenemos que ir sin falta con Xiao Li a comer a ese hotpot de precio razonable." } }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "贵什么啊！价格很合理。", "py": "Guì shénme a! Jiàgé hěn hélǐ.", "es": "¿Caro? ¡Qué va! El precio es muy razonable." },
+        { "zh": "菜不错，不过服务不怎么样。", "py": "Cài bú cuò, búguò fúwù bù zěnmeyàng.", "es": "La comida está bien, pero el servicio no es nada del otro mundo." },
+        { "zh": "网上的评价根本不可靠。", "py": "Wǎngshàng de píngjià gēnběn bù kěkào.", "es": "Las reseñas de internet no son nada fiables." },
+        { "zh": "这家店绝对值得去。", "py": "Zhè jiā diàn juéduì zhíde qù.", "es": "Merece totalmente la pena ir a esta tienda." }
+      ],
+      "respond": [
+        { "q": { "zh": "那部电影怎么样？", "py": "Nà bù diànyǐng zěnmeyàng?", "es": "¿Qué tal esa película?" }, "model": { "zh": "不怎么样，我觉得不值得看。", "py": "Bù zěnmeyàng, wǒ juéde bù zhíde kàn.", "es": "Nada del otro mundo; no creo que merezca la pena." } },
+        { "q": { "zh": "谢谢你帮我，真不好意思！", "py": "Xièxie nǐ bāng wǒ, zhēn bù hǎoyìsi!", "es": "Gracias por ayudarme, ¡qué apuro!" }, "model": { "zh": "客气什么啊，我们是朋友！", "py": "Kèqi shénme a, wǒmen shì péngyou!", "es": "¡Nada de cumplidos, somos amigos!" } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "¿Fiarse de las reseñas?",
+      "text": "在中国，很多人吃饭以前都要先看看网上的评价。安娜也是这样，她觉得评价好的饭馆绝对值得去。可是雨果不这么看。他说，网上的评价根本不可靠，有的是饭馆自己写的，有的是朋友帮忙写的。小李不否认这个问题确实存在，但是他认为，如果一家店有几千个评价，大部分都说好，那就比较可靠了。大卫说：“评价好什么啊！上次我去了一家评价很高的店，菜做得不怎么样，价格也不合理。”大家你一句我一句地争了半天。最后王老师说：“别人的评价可以看，但是不能只看评价，自己去试试最重要。反正吃一次也花不了多少钱。”大家都认可了这个看法。",
+      "es": "En China, mucha gente mira las reseñas de internet antes de ir a comer. Ana también: cree que a un restaurante con buenas reseñas merece totalmente la pena ir. Pero Hugo no lo ve así. Dice que las reseñas de internet no son nada fiables: unas las escribe el propio restaurante y otras, amigos que echan una mano. Xiao Li no niega que ese problema exista, pero cree que si una tienda tiene miles de reseñas y la mayoría son buenas, entonces es bastante fiable. David dijo: «¿Buenas reseñas? ¡Venga ya! La última vez fui a un sitio con una nota altísima: la comida no era nada del otro mundo y el precio tampoco era razonable». Estuvieron un buen rato discutiendo, cada uno con su frase. Al final, la profesora Wang dijo: «Las reseñas de otros se pueden mirar, pero no hay que fiarse solo de ellas: lo más importante es probarlo uno mismo. Total, comer una vez no cuesta mucho». Todos aceptaron esa opinión.",
+      "questions": [
+        { "q": "¿Qué piensa Hugo de las reseñas de internet?", "options": ["根本不可靠", "绝对值得看", "非常客观"], "answer": 0 },
+        { "q": "Según Xiao Li, ¿cuándo son bastante fiables las reseñas?", "options": ["有几千个评价，大部分都说好", "朋友帮忙写的", "饭馆自己写的"], "answer": 0 },
+        { "q": "¿Qué quiere decir David con 评价好什么啊?", "options": ["Que las buenas reseñas no significan nada", "Que las reseñas son muy buenas", "Pregunta qué reseña es buena"], "answer": 0 },
+        { "q": "¿Qué propone la profesora Wang?", "options": ["自己去试试", "只看评价", "不去饭馆吃饭"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

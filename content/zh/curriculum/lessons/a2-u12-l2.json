@@ -1,0 +1,137 @@
+{
+  "id": "a2-u12-l2",
+  "title": "En cuanto me gradúe: 一…就 y dar tu opinión",
+  "zh": "我一毕业就回国",
+  "goal": "Decir «en cuanto…» con 一…就 y dar tu opinión con 认为, 看法 y 比如 (sin confundir 认为 con 以为).",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "认为", "pinyin": "rènwéi", "es": "opinar, considerar", "note": "Para opiniones pensadas: 我认为这个办法很好. Algo más formal que 觉得." },
+    { "hanzi": "以为", "pinyin": "yǐwéi", "es": "creía (y no era así)", "note": "Casi siempre para una idea equivocada: 我以为你是老师 (y no lo eres)." },
+    { "hanzi": "看法", "pinyin": "kànfǎ", "es": "opinión, punto de vista", "note": "你的看法是什么？ = ¿Tú qué opinas?" },
+    { "hanzi": "观点", "pinyin": "guāndiǎn", "es": "postura, punto de vista (argumentado)" },
+    { "hanzi": "比如", "pinyin": "bǐrú", "es": "por ejemplo" },
+    { "hanzi": "比如说", "pinyin": "bǐrú shuō", "es": "por ejemplo (al hablar)", "note": "En la conversación es lo más normal." },
+    { "hanzi": "例如", "pinyin": "lìrú", "es": "por ejemplo (más escrito)" },
+    { "hanzi": "例子", "pinyin": "lìzi", "es": "ejemplo", "note": "举一个例子 = poner un ejemplo." },
+    { "hanzi": "好处", "pinyin": "hǎochu", "es": "ventaja, lo bueno" },
+    { "hanzi": "坏处", "pinyin": "huàichu", "es": "inconveniente, lo malo" },
+    { "hanzi": "方面", "pinyin": "fāngmiàn", "es": "aspecto, lado", "note": "这方面 = en este aspecto; 工作方面 = en lo laboral." },
+    { "hanzi": "角度", "pinyin": "jiǎodù", "es": "ángulo, punto de vista", "note": "从我的角度看… = desde mi punto de vista…" },
+    { "hanzi": "就", "pinyin": "jiù", "es": "enseguida, ya (en 一…就)", "note": "Repaso: siempre detrás del sujeto." }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "我一毕业就回国。", "py": "Wǒ yí bìyè jiù huí guó.", "es": "En cuanto me gradúe, vuelvo a mi país." },
+        { "zh": "我认为在中国工作好处很多。", "py": "Wǒ rènwéi zài Zhōngguó gōngzuò hǎochu hěn duō.", "es": "Creo que trabajar en China tiene muchas ventajas." },
+        { "zh": "我以为今天会下雨，可是没下。", "py": "Wǒ yǐwéi jīntiān huì xià yǔ, kěshì méi xià.", "es": "Creía que hoy iba a llover, pero no ha llovido." }
+      ]
+    },
+    { "type": "vocab", "title": "Opinar y poner ejemplos", "words": ["认为", "以为", "看法", "观点", "比如", "比如说", "例如", "例子", "好处", "坏处", "方面", "角度", "就"] },
+    {
+      "type": "phonetics-drill",
+      "title": "El tono de 一 en 一…就 y la pausa entre las dos partes",
+      "markdown": "En **一…就** el 一 va delante de un verbo y **cambia de tono** según lo que viene detrás:\n- delante de 1.º, 2.º o 3.º tono → **yì**: 一听 *yì tīng*, 一回家 *yì huí jiā*, 一想 *yì xiǎng*;\n- delante de 4.º tono → **yí**: 一下课 *yí xiàkè*, 一到 *yí dào*, 一毕业 *yí bìyè*.\n\nEl ritmo de la frase: la primera parte **sube un poco** al final (queda abierta) y, si hay coma, se hace una pausa breve; la segunda parte arranca en **就** y baja hasta el final: 我一下课 ↗ / 就去吃饭 ↘. Sin sujeto nuevo, muchas veces ni siquiera hay pausa: 我一下课就去.\n\nTono neutro hoy: **好处** *hǎochu*, **坏处** *huàichu*, **例子** *lìzi*.",
+      "items": [
+        { "audio": "一下课", "options": ["yí xiàkè", "yì xiàkè", "yī xiàkè"], "answer": 0, "explain": "下 es cuarto tono → yí." },
+        { "audio": "一回家", "options": ["yì huí jiā", "yí huí jiā", "yī huí jiā"], "answer": 0, "explain": "回 es segundo tono → yì." },
+        { "audio": "老师一说，我们就明白了。", "prompt": "¿Dónde va la pausa?", "options": ["老师一说 / 我们就明白了", "老师 / 一说我们就明白了", "老师一说我们 / 就明白了"], "answer": 0, "explain": "La pausa separa las dos cláusulas: cada una tiene su sujeto." },
+        { "audio": "好处", "options": ["hǎochu", "hàochù", "hǎozhu"], "answer": 0, "explain": "处 aquí es neutro." },
+        { "audio": "认为", "options": ["rènwéi", "rènwèi", "lènwéi"], "answer": 0, "explain": "La r china no vibra: se parece a la «y» de «yo» dicha con la lengua hacia atrás." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["例", "观"],
+      "mnemonics": {
+        "例": "亻 (persona) + 列 (fila, poner en fila): poner a una persona delante de la fila para enseñarla como modelo. 例 = ejemplo.",
+        "观": "又 + 见 (ver): mirar una y otra vez con atención. 观点 = el punto desde el que miras las cosas."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "Sujeto + 一 + V1，(sujeto) + 就 + V2",
+      "markdown": "**一…就** = «en cuanto…, enseguida…». Las dos palabras son **adverbios**: van detrás del sujeto y delante del verbo, cada una en su cláusula.\n\n- Mismo sujeto: 我**一**下课**就**去吃饭 (casi siempre sin coma ni segundo sujeto).\n- Dos sujetos: 老师**一**说，我们**就**明白了.\n- **就 nunca va delante del sujeto**: ✗ 一下课，就我去.\n- Puede describir una costumbre (我一累就想睡觉) o algo que pasó (他一到家就睡了).\n\nEn el esqueleto, cada cláusula es una fila. En «Construye la frase», la primera parte va entera en un trozo del *Tiempo inicial* (como 毕业以后).\n\n**Opinar**: 我**认为** / 我**觉得** + frase. Y ojo con **以为**: es «creía…» cuando **te equivocabas**.",
+      "focus": ["adverb"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "一", "py": "yí" }, "verb1": { "zh": "毕业", "py": "bìyè" } }, "end": "，", "es": "En cuanto me gradúe… (1.ª parte)", "esOrder": [{ "text": "En cuanto", "slot": "adverb" }, { "text": "me gradúe", "slot": "verb1" }, { "text": "(yo)", "slot": "subject" }] },
+        { "slots": { "adverb": { "zh": "就", "py": "jiù" }, "verb1": { "zh": "回国", "py": "huí guó" } }, "end": "。", "es": "…vuelvo a mi país. (2.ª parte)" },
+        { "slots": { "subject": { "zh": "他", "py": "tā" }, "adverb": { "zh": "一", "py": "yí" }, "verb1": { "zh": "下课", "py": "xiàkè" } }, "end": "，", "es": "En cuanto terminó la clase… (1.ª parte)" },
+        { "slots": { "adverb": { "zh": "就", "py": "jiù" }, "verb1": { "zh": "去", "py": "qù" }, "verb2": { "zh": "打", "py": "dǎ" }, "object": { "zh": "篮球", "py": "lánqiú" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "…se fue a jugar al baloncesto. (2.ª parte)" },
+        { "slots": { "subject": { "zh": "老师", "py": "lǎoshī" }, "adverb": { "zh": "一", "py": "yì" }, "verb1": { "zh": "说", "py": "shuō" } }, "end": "，", "es": "En cuanto la profesora lo dijo… (1.ª parte)" },
+        { "slots": { "subject": { "zh": "我们", "py": "wǒmen" }, "adverb": { "zh": "就", "py": "jiù" }, "verb1": { "zh": "明白", "py": "míngbai" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "…lo entendimos. (2.ª parte)" },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "verb1": { "zh": "认为", "py": "rènwéi" }, "object": { "zh": "这个办法很好", "py": "zhège bànfǎ hěn hǎo" } }, "end": "。", "es": "Creo que este método es muy bueno." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "一", "py": "yí" }, "verb1": { "zh": "累", "py": "lèi" } }, "end": "，", "es": "En cuanto me canso… (1.ª parte)" },
+        { "slots": { "adverb": { "zh": "就不", "py": "jiù bù" }, "aux": { "zh": "想", "py": "xiǎng" }, "verb1": { "zh": "说话", "py": "shuōhuà" } }, "end": "。", "es": "…ya no quiero hablar. (2.ª parte)" },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "不这么", "py": "bú zhème" }, "verb1": { "zh": "认为", "py": "rènwéi" } }, "end": "。", "es": "Yo no lo veo así." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你的看法", "py": "nǐ de kànfǎ" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "什么", "py": "shénme" } }, "end": "？", "es": "¿Tú qué opinas?" },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "认为", "py": "rènwéi" }, "object": { "zh": "哪个方面最重要", "py": "nǎge fāngmiàn zuì zhòngyào" } }, "end": "？", "es": "¿Qué aspecto crees que es el más importante?" }
+      ],
+      "mistakes": [
+        { "wrong": "我一下课，就我去吃饭。", "right": "我一下课就去吃饭。", "why": "就 es un adverbio: va detrás del sujeto, nunca delante. Si el sujeto es el mismo, no se repite." },
+        { "wrong": "我认为今天会下雨，可是没下。", "right": "我以为今天会下雨，可是没下。", "why": "Para «creía (y me equivocaba)» se usa 以为; 认为 es tu opinión actual." },
+        { "wrong": "一他到家，就睡觉了。", "right": "他一到家就睡觉了。", "why": "一 también es adverbio: detrás del sujeto, delante del verbo." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "¿Quedarse a trabajar en China?",
+      "lines": [
+        { "speaker": "大卫", "zh": "雨果，你认为毕业以后留在中国工作好不好？", "py": "Yǔguǒ, nǐ rènwéi bìyè yǐhòu liú zài Zhōngguó gōngzuò hǎo bu hǎo?", "es": "Hugo, ¿crees que está bien quedarse a trabajar en China después de graduarse?" },
+        { "speaker": "雨果", "zh": "我认为好处很多。比如说，机会多，交通方便，生活也很有意思。", "py": "Wǒ rènwéi hǎochu hěn duō. Bǐrú shuō, jīhuì duō, jiāotōng fāngbiàn, shēnghuó yě hěn yǒu yìsi.", "es": "Creo que tiene muchas ventajas. Por ejemplo: hay muchas oportunidades, el transporte es cómodo y la vida es muy interesante." },
+        { "speaker": "大卫", "zh": "坏处呢？", "py": "Huàichu ne?", "es": "¿Y los inconvenientes?" },
+        { "speaker": "雨果", "zh": "坏处也有，比如工作很忙，常常要加班。", "py": "Huàichu yě yǒu, bǐrú gōngzuò hěn máng, chángcháng yào jiābān.", "es": "También los hay; por ejemplo, el trabajo es muy intenso y a menudo hay que hacer horas extra." },
+        { "speaker": "小李", "zh": "我以为外国人都不愿意加班！", "py": "Wǒ yǐwéi wàiguó rén dōu bú yuànyì jiābān!", "es": "¡Creía que a los extranjeros no les gustaba nada hacer horas extra!" },
+        { "speaker": "大卫", "zh": "没有人愿意加班。从我的角度看，最大的问题是离家太远。", "py": "Méiyǒu rén yuànyì jiābān. Cóng wǒ de jiǎodù kàn, zuì dà de wèntí shì lí jiā tài yuǎn.", "es": "A nadie le gusta hacer horas extra. Desde mi punto de vista, el mayor problema es estar tan lejos de casa." },
+        { "speaker": "雨果", "zh": "对，这方面我跟你的看法一样。我一想家就给妈妈打电话。", "py": "Duì, zhè fāngmiàn wǒ gēn nǐ de kànfǎ yíyàng. Wǒ yì xiǎng jiā jiù gěi māma dǎ diànhuà.", "es": "Sí, en eso opino como tú. En cuanto echo de menos mi casa, llamo a mi madre." },
+        { "speaker": "小李", "zh": "你们的观点都很有意思。我举一个例子：我表哥在西班牙工作，他一放假就回中国。", "py": "Nǐmen de guāndiǎn dōu hěn yǒu yìsi. Wǒ jǔ yí ge lìzi: wǒ biǎogē zài Xībānyá gōngzuò, tā yí fàngjià jiù huí Zhōngguó.", "es": "Vuestros puntos de vista son muy interesantes. Os pongo un ejemplo: mi primo trabaja en España y, en cuanto tiene vacaciones, vuelve a China." },
+        { "speaker": "大卫", "zh": "你看，例如过年，在外国工作的人都想回家。", "py": "Nǐ kàn, lìrú guònián, zài wàiguó gōngzuò de rén dōu xiǎng huí jiā.", "es": "¿Lo ves? Por ejemplo, en Año Nuevo, todos los que trabajan en el extranjero quieren volver a casa." },
+        { "speaker": "雨果", "zh": "所以我打算一毕业就先工作两年，然后再看。", "py": "Suǒyǐ wǒ dǎsuàn yí bìyè jiù xiān gōngzuò liǎng nián, ránhòu zài kàn.", "es": "Por eso tengo pensado trabajar dos años nada más graduarme, y luego ya veré." }
+      ],
+      "notes": "从我的角度看 («desde mi punto de vista») es una fórmula muy útil para dar tu opinión con suavidad. 表哥 es el primo mayor por parte de madre (o hijo de una tía paterna): el chino distingue cada primo."
+    },
+    { "type": "exercises", "count": 16, "bank": ["g-word-order", "g-le", "u09"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "time0": { "zh": "我一下课，" }, "adverb": { "zh": "就" }, "verb1": { "zh": "去食堂" }, "verb2": { "zh": "吃饭" } }, "end": "。", "es": "En cuanto salgo de clase, voy al comedor a comer." }, "distractors": ["才"] },
+        { "sentence": { "slots": { "subject": { "zh": "我" }, "verb1": { "zh": "以为" }, "object": { "zh": "今天会下雨" } }, "end": "。", "es": "Creía que hoy iba a llover." }, "distractors": ["了"] },
+        { "sentence": { "slots": { "subject": { "zh": "你" }, "verb1": { "zh": "认为" }, "object": { "zh": "哪个方面最重要" } }, "end": "？", "es": "¿Qué aspecto crees que es el más importante?" }, "distractors": ["吗"] },
+        { "sentence": { "slots": { "time0": { "zh": "安娜一放假，" }, "adverb": { "zh": "就" }, "with": { "zh": "跟朋友一起" }, "verb1": { "zh": "坐飞机" }, "verb2": { "zh": "去西安旅游" } }, "end": "。", "es": "En cuanto Anna tiene vacaciones, se va de viaje a Xi'an en avión con sus amigos." }, "distractors": ["才", "了"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "我一毕业就回国。", "py": "Wǒ yí bìyè jiù huí guó.", "es": "En cuanto me gradúe, vuelvo a mi país." },
+        { "zh": "老师一说，我们就明白了。", "py": "Lǎoshī yì shuō, wǒmen jiù míngbai le.", "es": "En cuanto la profesora lo dijo, lo entendimos." },
+        { "zh": "从我的角度看，好处比坏处多。", "py": "Cóng wǒ de jiǎodù kàn, hǎochu bǐ huàichu duō.", "es": "Desde mi punto de vista, hay más ventajas que inconvenientes." },
+        { "zh": "我以为你是老师！", "py": "Wǒ yǐwéi nǐ shì lǎoshī!", "es": "¡Creía que eras profesor!" }
+      ],
+      "respond": [
+        { "q": { "zh": "你一下课就做什么？", "py": "Nǐ yí xiàkè jiù zuò shénme?", "es": "¿Qué haces en cuanto sales de clase?" }, "model": { "zh": "我一下课就去食堂吃饭。", "py": "Wǒ yí xiàkè jiù qù shítáng chī fàn.", "es": "En cuanto salgo de clase, voy al comedor a comer." } },
+        { "q": { "zh": "你认为在中国生活有什么好处？", "py": "Nǐ rènwéi zài Zhōngguó shēnghuó yǒu shénme hǎochu?", "es": "¿Qué ventajas crees que tiene vivir en China?" }, "model": { "zh": "好处很多，比如说交通很方便，东西也不贵。", "py": "Hǎochu hěn duō, bǐrú shuō jiāotōng hěn fāngbiàn, dōngxi yě bú guì.", "es": "Muchas: por ejemplo, el transporte es muy cómodo y las cosas no son caras." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Un foro de estudiantes extranjeros",
+      "text": "今天在留学生的网上，大家讨论一个问题：“毕业以后，留在中国工作好不好？”大卫认为好处很多，比如说工作机会多，工资也不错。安娜的看法不一样，她认为坏处也不少，例如离家太远，工作也很忙。一个日本学生说：“我以为在中国工作很难，可是我的同事都很热情，我一有问题，他们就来帮我。”雨果说：“这个问题要从不同的角度看。从工作方面看，中国的机会很多；从家庭方面看，回国更好。我的观点是：先工作两年，然后再看。”最后大家都说，这个例子很好。",
+      "es": "Hoy, en un foro en internet de estudiantes extranjeros, se ha debatido una pregunta: «¿Está bien quedarse a trabajar en China después de graduarse?». David cree que tiene muchas ventajas; por ejemplo, hay muchas ofertas de trabajo y el sueldo no está mal. Anna opina distinto: cree que también hay bastantes inconvenientes, como estar demasiado lejos de casa o que el trabajo es muy intenso. Un estudiante japonés ha dicho: «Creía que trabajar en China sería muy difícil, pero mis compañeros son muy amables: en cuanto tengo un problema, vienen a ayudarme». Hugo ha dicho: «Hay que mirar esta cuestión desde distintos puntos de vista. En lo laboral, en China hay muchas oportunidades; en lo familiar, es mejor volver. Mi postura es: primero trabajar dos años y luego ya veremos». Al final todos han dicho que es un buen ejemplo.",
+      "questions": [
+        { "q": "¿Qué opina David?", "options": ["好处很多", "坏处很多", "回国更好"], "answer": 0 },
+        { "q": "¿Qué creía el estudiante japonés?", "options": ["在中国工作很难", "同事不热情", "工资很低"], "answer": 0 },
+        { "q": "¿Qué hacen sus compañeros en cuanto tiene un problema?", "options": ["来帮他", "给他打电话", "让他回国"], "answer": 0 },
+        { "q": "¿Cuál es la postura de Hugo?", "options": ["先工作两年，然后再看", "一毕业就回国", "一直留在中国"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

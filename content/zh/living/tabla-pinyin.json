@@ -1,0 +1,134 @@
+{
+  "id": "tabla-pinyin",
+  "title": "Tabla de pinyin",
+  "zh": "拼音表",
+  "order": 20,
+  "icon": "Table",
+  "summary": "Guía para leer la tabla iniciales × finales: grupos de iniciales, familias de finales, combinaciones imposibles y la ü tras j, q, x.",
+  "kind": "reference",
+  "reviewed": false,
+  "sections": [
+    {
+      "id": "como-leer-la-tabla",
+      "title": "Cómo se lee la tabla",
+      "unlockedBy": "e0-09",
+      "markdown": "### Una casilla, una sílaba\n\nEl mandarín tiene unas **400 sílabas** (unas 1.300 con tonos) y todas caben en una tabla:\n\n- **Columnas**: las **21 iniciales**, más una columna **sin inicial** (donde viven las formas con y / w: ya, wo, yu…).\n- **Filas**: las **finales**, en cuatro familias (a/o/e, i, u, ü).\n- **Casillas atenuadas**: combinaciones que **no existen**. No es un fallo: es información. Si una sílaba no está, la has oído mal.\n\n> 💡 **La tabla interactiva está en la lección 0.9 (e0-09)**: pulsa una casilla para oírla en los cuatro tonos y usa los filtros para ver solo un grupo.\n\n### Cinco búsquedas para practicar\n\n1. La fila de la **-i vacía**: zhi chi shi ri zi ci si.\n2. Las columnas **j q x**: solo tienen casillas en las filas de i y ü.\n3. **nü** y **lü**: las únicas donde la ü conserva los puntos.\n4. Huecos: no existen *fi*, *bü* ni *gi* (será fei, bu, ji).\n5. Tus palabras: ni, hao, xie, lao, shi, zhong, guo, bei, jing, chi, qu, peng, you.",
+      "examples": [
+        {
+          "zh": "你好，老师！",
+          "py": "Nǐ hǎo, lǎoshī!",
+          "es": "¡Hola, profe!",
+          "note": "n + i, h + ao, l + ao, sh + i."
+        },
+        {
+          "zh": "他去北京。",
+          "py": "Tā qù Běijīng.",
+          "es": "Va a Pekín.",
+          "note": "q + ü (escrito u), j + ing."
+        },
+        {
+          "zh": "他是中国朋友。",
+          "py": "Tā shì Zhōngguó péngyou.",
+          "es": "Es un amigo chino.",
+          "note": "zh + ong, g + uo, p + eng."
+        }
+      ]
+    },
+    {
+      "id": "grupos-de-iniciales",
+      "title": "Las 21 iniciales por grupos",
+      "unlockedBy": "e0-09",
+      "markdown": "### Agrupadas por el lugar de la boca\n\n| Grupo | Sin aire | Con aire | Otras | Dónde |\n|---|---|---|---|---|\n| Labios | **b** | **p** | **m f** | Labios (f: dientes + labio) |\n| Punta de la lengua | **d** | **t** | **n l** | Detrás de los dientes de arriba |\n| Garganta | **g** | **k** | **h** | Fondo de la boca |\n| Lengua plana | **j** | **q** | **x** | Punta abajo, sonrisa |\n| Lengua atrás | **zh** | **ch** | **sh r** | Punta levantada hacia el paladar |\n| Detrás de los dientes | **z** | **c** | **s** | Punta detrás de los dientes |\n\nLee la tabla por columnas: **b d g j zh z** no llevan aire; **p t k q ch c**, sí. Es la oposición más importante del chino y en español no existe.\n\n> 💡 **Truco**: los grupos vecinos que más se confunden son **zh / j / z**, **ch / q / c** y **sh / x / s**. En la tabla interactiva, ponlos uno al lado del otro y escúchalos seguidos.",
+      "examples": [
+        {
+          "zh": "吃",
+          "py": "chī",
+          "es": "comer",
+          "note": "ch: lengua atrás, con aire."
+        },
+        {
+          "zh": "去",
+          "py": "qù",
+          "es": "ir",
+          "note": "q: lengua plana, con aire."
+        },
+        {
+          "zh": "四",
+          "py": "sì",
+          "es": "cuatro",
+          "note": "s: detrás de los dientes."
+        },
+        {
+          "zh": "他不怕。",
+          "py": "Tā bú pà.",
+          "es": "No tiene miedo.",
+          "note": "t y p con aire; b sin aire."
+        }
+      ]
+    },
+    {
+      "id": "familias-de-finales",
+      "title": "Las finales en cuatro familias",
+      "unlockedBy": "e0-09",
+      "markdown": "### Las filas de la tabla\n\n| Familia | Finales | Sin inicial se escriben… |\n|---|---|---|\n| **a / o / e** | a o e ai ei ao ou an en ang eng ong er · -i vacía | a, o, e, ai, ao, ou, an, en, ang, er |\n| **i** | i ia ie iao iou ian in iang ing iong | yi ya ye yao you yan yin yang ying yong |\n| **u** | u ua uo uai uei uan uen uang ueng | wu wa wo wai wei wan wen wang weng |\n| **ü** | ü üe üan ün | yu yue yuan yun |\n\n- Las finales de cada familia **empiezan por la misma vocal**: por eso, si una inicial no combina con *i*, tampoco combina con ninguna final de esa familia.\n- Tras consonante, **iou → iu**, **uei → ui**, **uen → un** (六 liù, 对 duì).",
+      "examples": [
+        {
+          "zh": "有",
+          "py": "yǒu",
+          "es": "tener; haber",
+          "note": "Familia i: iou sin inicial → you."
+        },
+        {
+          "zh": "我",
+          "py": "wǒ",
+          "es": "yo",
+          "note": "Familia u: uo sin inicial → wo."
+        },
+        {
+          "zh": "月",
+          "py": "yuè",
+          "es": "luna; mes",
+          "note": "Familia ü: üe sin inicial → yue."
+        },
+        {
+          "zh": "六",
+          "py": "liù",
+          "es": "seis",
+          "note": "l + iou → liu."
+        }
+      ]
+    },
+    {
+      "id": "combinaciones-imposibles",
+      "title": "Combinaciones imposibles y la ü tras j, q, x",
+      "unlockedBy": "e0-09",
+      "markdown": "### Las casillas vacías tienen su lógica\n\n| Regla | Consecuencia | Ejemplos |\n|---|---|---|\n| **j q x** solo van con las familias **i** y **ü** | No existen *ja*, *xo* ni *qu* con la u de «tú» | 家 jiā, 去 qù, 谢 xiè |\n| **g k h**, **z c s**, **zh ch sh r** nunca van con i ni ü de verdad | Su *i* es la **-i vacía** (zi, shi); no existen *gi*, *ki*, *hü* | 四 sì, 是 shì |\n| **b p m f** no van con ü; **f** tampoco con la familia i | No existen *bü*, *fi*, *fian* | 八 bā, 爸 bà |\n| La **o** simple solo va tras **b p m f** | Las demás consonantes llevan **uo** | 波 bō, 国 guó, 我 wǒ |\n| **ong** siempre lleva inicial | Sin inicial se escribe **weng** | 中 zhōng |\n| Solo **n** y **l** combinan con u **y** con ü | Por eso solo ahí se ven los puntos | 女 nǚ, 绿 lǜ |\n\n### La ü que no se ve\n\nComo **j, q, x, y** nunca van con *u*, la ü pierde los puntos tras ellas: **ju qu xu yu**, **jue que xue yue**, **juan quan xuan yuan**, **jun qun xun yun**. Se escribe *u*, **suena ü**.\n\n> ❌ **Error típico**: leer 去 *qù* como «cu» o «chu». Es **q + ü**.\n\n> 💡 **Truco**: si crees haber oído una sílaba que en la tabla está atenuada, no existe: busca la casilla vecina (*fi* → fei; *bü* → bu; *gi* → ji).",
+      "examples": [
+        {
+          "zh": "去",
+          "py": "qù",
+          "es": "ir",
+          "note": "Se escribe u, suena ü."
+        },
+        {
+          "zh": "鱼",
+          "py": "yú",
+          "es": "pez; pescado",
+          "note": "yu = ü."
+        },
+        {
+          "zh": "学生",
+          "py": "xuésheng",
+          "es": "estudiante",
+          "note": "xue = x + üe."
+        },
+        {
+          "zh": "女儿",
+          "py": "nǚ'ér",
+          "es": "hija",
+          "note": "Tras n la ü conserva los puntos."
+        }
+      ]
+    }
+  ]
+}

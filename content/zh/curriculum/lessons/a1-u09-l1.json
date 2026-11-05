@@ -1,0 +1,134 @@
+{
+  "id": "a1-u09-l1",
+  "title": "Tengo hambre: 想 + verbo",
+  "zh": "我想吃饭",
+  "goal": "Decir que tienes hambre o sed y qué te apetece comer o beber con 想 + verbo.",
+  "minutes": 14,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "想", "pinyin": "xiǎng", "es": "querer, tener ganas de (+ verbo); echar de menos (+ persona)", "note": "想 + verbo = «me apetece». 想 + persona = «echo de menos»: 我想妈妈." },
+    { "hanzi": "饿", "pinyin": "è", "es": "hambriento, tener hambre", "note": "Es un adjetivo: 我很饿 (no *我有饿)." },
+    { "hanzi": "渴", "pinyin": "kě", "es": "sediento, tener sed", "note": "Adjetivo, como 饿: 你渴吗？" },
+    { "hanzi": "饱", "pinyin": "bǎo", "es": "lleno, saciado", "note": "我很饱 = estoy lleno, no puedo más." },
+    { "hanzi": "饭", "pinyin": "fàn", "es": "comida; arroz cocido", "note": "吃饭 = comer (en general), aunque no haya arroz." },
+    { "hanzi": "米饭", "pinyin": "mǐfàn", "es": "arroz (cocido, en cuenco)" },
+    { "hanzi": "面条儿", "pinyin": "miàntiáor", "es": "fideos, tallarines", "note": "En el norte se dice con erhua (面条儿); en Shanghái oirás más 面条 miàntiáo." },
+    { "hanzi": "菜", "pinyin": "cài", "es": "plato (comida); verdura", "note": "中国菜 = comida china; en el mercado, 菜 son las verduras." },
+    { "hanzi": "肉", "pinyin": "ròu", "es": "carne", "note": "Sin más, en China suele ser carne de cerdo." },
+    { "hanzi": "鸡蛋", "pinyin": "jīdàn", "es": "huevo (de gallina)" },
+    { "hanzi": "茶", "pinyin": "chá", "es": "té" },
+    { "hanzi": "牛奶", "pinyin": "niúnǎi", "es": "leche (de vaca)" }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "我很饿，我想吃饭。", "py": "Wǒ hěn è, wǒ xiǎng chī fàn.", "es": "Tengo mucha hambre, quiero comer." },
+        { "zh": "你想喝什么？", "py": "Nǐ xiǎng hē shénme?", "es": "¿Qué te apetece beber?" },
+        { "zh": "我不想吃肉。", "py": "Wǒ bù xiǎng chī ròu.", "es": "No me apetece comer carne." }
+      ]
+    },
+    { "type": "vocab", "title": "Hambre, sed y lo básico de la mesa", "words": ["想", "饿", "渴", "饱", "饭", "米饭", "面条儿", "菜", "肉", "鸡蛋", "茶", "牛奶"] },
+    {
+      "type": "phonetics-drill",
+      "title": "ch frente a q: 茶 y 去",
+      "markdown": "Las dos se parecen a la «ch» española, pero **no son iguales**, y las dos llevan **aire fuerte** (son aspiradas).\n\n- **ch** (茶 chá, 吃 chī): punta de la lengua **doblada hacia atrás**, tocando detrás de los alvéolos. Los labios se redondean un poco. Suena más «hueca».\n- **q** (去 qù, 七 qī): lengua **plana**, la punta abajo, detrás de los dientes inferiores; el centro de la lengua toca el paladar. Labios estirados, como sonriendo. Suena más «fina».\n\nTruco: **q** solo va delante de **i** o **ü** (qi, qu = qü, qian…). Si después viene **a, e, o, u** «de verdad», es **ch**: 茶 chá, 吃 chī.",
+      "items": [
+        { "audio": "茶", "options": ["chá", "cá", "zhá"], "answer": 0, "explain": "ch aspirada, con la lengua doblada hacia atrás; segundo tono, sube." },
+        { "audio": "去", "options": ["qù", "chù", "jù"], "answer": 0, "explain": "q: lengua plana y aire fuerte. La u de qu es en realidad ü." },
+        { "audio": "吃", "options": ["chī", "qī", "cī"], "answer": 0, "explain": "chī: la i no suena como «i»; es el zumbido de la ch." },
+        { "audio": "七", "options": ["qī", "chī", "xī"], "answer": 0, "explain": "qī: aquí la i es una «i» de verdad, con los labios estirados." },
+        { "audio": "去吃饭", "options": ["qù chī fàn", "chù qī fàn", "qù qī fàn"], "answer": 0, "explain": "q (plana) + ch (doblada): pasa de una a otra sin mezclarlas." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["饭", "想"],
+      "mnemonics": {
+        "饭": "饣 (comida, forma reducida de 食) + 反 fǎn (pista de sonido): la comida que suena «fan».",
+        "想": "相 (mirar a algo) encima de 心 (corazón): lo que el corazón mira es lo que piensas y lo que quieres."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "Sujeto + 想 + verbo: «me apetece…»",
+      "markdown": "Se estrena un hueco nuevo: el **auxiliar**, justo **delante del verbo**. 想 dice lo que **te apetece hacer**:\n\n**我 + 想 + 吃 + 米饭** = (lit. «yo quiero comer arroz»).\n\n- El orden es como en español: *quiero comer arroz*. Lo que cambia es el **tiempo** (中午, 晚上), que sigue yendo delante del verbo, no al final.\n- **Negativa**: 不 va **delante de 想**, nunca entre 想 y el verbo: 我**不想**吃肉 (bù xiǎng: 不 no cambia porque 想 es tercer tono).\n- **Pregunta**: 吗 al final, una palabra interrogativa en el hueco de lo que preguntas (你想喝**什么**？), o la forma A不A: **想不想**.\n- 很 también cabe delante de 想: 我**很想**喝茶 = tengo muchas ganas de beber té.\n\nOjo: **想 + nombre** sin verbo significa *echar de menos*: 我想妈妈 = echo de menos a mi madre. Para comida, pon siempre el verbo: 我想**吃**米饭.",
+      "focus": ["aux"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "aux": { "zh": "想", "py": "xiǎng" }, "verb1": { "zh": "吃", "py": "chī" }, "object": { "zh": "米饭", "py": "mǐfàn" } }, "end": "。", "es": "Me apetece comer arroz." },
+        { "slots": { "subject": { "zh": "他", "py": "tā" }, "aux": { "zh": "想", "py": "xiǎng" }, "verb1": { "zh": "喝", "py": "hē" }, "object": { "zh": "茶", "py": "chá" } }, "end": "。", "es": "Él quiere beber té." },
+        { "slots": { "subject": { "zh": "我们", "py": "wǒmen" }, "time": { "zh": "中午", "py": "zhōngwǔ" }, "aux": { "zh": "想", "py": "xiǎng" }, "verb1": { "zh": "吃", "py": "chī" }, "object": { "zh": "面条儿", "py": "miàntiáor" } }, "end": "。", "es": "A mediodía queremos comer fideos.", "esOrder": [{ "text": "(Nosotros)", "slot": "subject" }, { "text": "queremos", "slot": "aux" }, { "text": "comer", "slot": "verb1" }, { "text": "fideos", "slot": "object" }, { "text": "a mediodía", "slot": "time" }] },
+        { "slots": { "subject": { "zh": "雨果", "py": "Yǔguǒ" }, "adverb": { "zh": "很", "py": "hěn" }, "aux": { "zh": "想", "py": "xiǎng" }, "verb1": { "zh": "喝", "py": "hē" }, "object": { "zh": "牛奶", "py": "niúnǎi" } }, "end": "。", "es": "Hugo tiene muchas ganas de beber leche." },
+        { "slots": { "subject": { "zh": "安娜", "py": "Ānnà" }, "adverb": { "zh": "也", "py": "yě" }, "aux": { "zh": "想", "py": "xiǎng" }, "verb1": { "zh": "吃", "py": "chī" }, "object": { "zh": "鸡蛋", "py": "jīdàn" } }, "end": "。", "es": "Ana también quiere comer huevo." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "不", "py": "bù" }, "aux": { "zh": "想", "py": "xiǎng" }, "verb1": { "zh": "吃", "py": "chī" }, "object": { "zh": "肉", "py": "ròu" } }, "end": "。", "es": "No me apetece comer carne." },
+        { "slots": { "subject": { "zh": "小李", "py": "Xiǎo Lǐ" }, "time": { "zh": "今天", "py": "jīntiān" }, "adverb": { "zh": "不", "py": "bù" }, "aux": { "zh": "想", "py": "xiǎng" }, "verb1": { "zh": "吃饭", "py": "chī fàn" } }, "end": "。", "es": "Xiao Li hoy no quiere comer." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "aux": { "zh": "想", "py": "xiǎng" }, "verb1": { "zh": "喝", "py": "hē" }, "object": { "zh": "什么", "py": "shénme" } }, "end": "？", "es": "¿Qué te apetece beber?" },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "aux": { "zh": "想", "py": "xiǎng" }, "verb1": { "zh": "喝", "py": "hē" }, "object": { "zh": "茶", "py": "chá" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿Quieres beber té?" },
+        { "slots": { "subject": { "zh": "你们", "py": "nǐmen" }, "aux": { "zh": "想不想", "py": "xiǎng bu xiǎng" }, "verb1": { "zh": "吃", "py": "chī" }, "object": { "zh": "鸡蛋", "py": "jīdàn" } }, "end": "？", "es": "¿Queréis comer huevo o no?" }
+      ],
+      "mistakes": [
+        { "wrong": "我吃想米饭。", "right": "我想吃米饭。", "why": "El auxiliar va delante del verbo, como en español «quiero comer»." },
+        { "wrong": "我想米饭。", "right": "我想吃米饭。", "why": "想 + nombre significa «echar de menos». Para «quiero arroz» pon el verbo (想吃) o usa 要 (siguiente lección)." },
+        { "wrong": "我想不吃肉。", "right": "我不想吃肉。", "why": "不 niega el auxiliar: va delante de 想." },
+        { "wrong": "我有饿。", "right": "我很饿。", "why": "饿 y 渴 son adjetivos: van con 很, como 很忙 (unidad 8). No se traduce «tener»." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "En la residencia, a la hora de comer",
+      "lines": [
+        { "speaker": "小李", "zh": "雨果，你饿吗？", "py": "Yǔguǒ, nǐ è ma?", "es": "Hugo, ¿tienes hambre?" },
+        { "speaker": "雨果", "zh": "很饿！我想吃饭。", "py": "Hěn è! Wǒ xiǎng chī fàn.", "es": "¡Muchísima! Quiero comer." },
+        { "speaker": "小李", "zh": "你想吃什么？", "py": "Nǐ xiǎng chī shénme?", "es": "¿Qué te apetece?" },
+        { "speaker": "雨果", "zh": "我想吃米饭和肉。你呢？", "py": "Wǒ xiǎng chī mǐfàn hé ròu. Nǐ ne?", "es": "Me apetece arroz con carne. ¿Y a ti?" },
+        { "speaker": "小李", "zh": "我不太饿，我想吃面条儿。", "py": "Wǒ bú tài è, wǒ xiǎng chī miàntiáor.", "es": "Yo no tengo mucha hambre; me apetecen unos fideos." },
+        { "speaker": "雨果", "zh": "你想喝什么？茶吗？", "py": "Nǐ xiǎng hē shénme? Chá ma?", "es": "¿Qué quieres beber? ¿Té?" },
+        { "speaker": "小李", "zh": "对，我想喝茶。你也想喝茶吗？", "py": "Duì, wǒ xiǎng hē chá. Nǐ yě xiǎng hē chá ma?", "es": "Sí, me apetece un té. ¿Tú también quieres té?" },
+        { "speaker": "雨果", "zh": "不，我很渴，我想喝水。", "py": "Bù, wǒ hěn kě, wǒ xiǎng hē shuǐ.", "es": "No, tengo mucha sed: quiero agua." },
+        { "speaker": "小李", "zh": "好，我们去吃饭！", "py": "Hǎo, wǒmen qù chī fàn!", "es": "¡Venga, vamos a comer!" }
+      ],
+      "notes": "吃饭 es «comer» en general (desayuno, comida o cena), aunque no haya arroz. En China se come pronto: la comida hacia las 11:30–12:00 y la cena hacia las 17:30–18:30; los comedores universitarios cierran antes de lo que esperas."
+    },
+    { "type": "exercises", "count": 14, "bank": ["g-modal-verbs", "u05"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "我" }, "aux": { "zh": "想" }, "verb1": { "zh": "喝" }, "object": { "zh": "茶" } }, "end": "。", "es": "Quiero beber té." } },
+        { "sentence": { "slots": { "subject": { "zh": "他" }, "adverb": { "zh": "不" }, "aux": { "zh": "想" }, "verb1": { "zh": "吃" }, "object": { "zh": "肉" } }, "end": "。", "es": "Él no quiere comer carne." }, "distractors": ["吗"] },
+        { "sentence": { "slots": { "subject": { "zh": "你" }, "aux": { "zh": "想" }, "verb1": { "zh": "吃" }, "object": { "zh": "什么" } }, "end": "？", "es": "¿Qué te apetece comer?" }, "distractors": ["吗"] },
+        { "sentence": { "slots": { "time0": { "zh": "今天晚上" }, "subject": { "zh": "我和小李" }, "adverb": { "zh": "都很" }, "aux": { "zh": "想" }, "verb1": { "zh": "去" }, "verb2": { "zh": "吃" }, "object": { "zh": "米饭和肉" } }, "end": "。", "es": "Esta noche Xiao Li y yo tenemos muchas ganas de ir a comer arroz con carne." }, "distractors": ["不"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "我很饿，我想吃饭。", "py": "Wǒ hěn è, wǒ xiǎng chī fàn.", "es": "Tengo mucha hambre, quiero comer." },
+        { "zh": "你想喝什么？", "py": "Nǐ xiǎng hē shénme?", "es": "¿Qué te apetece beber?" },
+        { "zh": "我不想吃肉，我想吃鸡蛋。", "py": "Wǒ bù xiǎng chī ròu, wǒ xiǎng chī jīdàn.", "es": "No me apetece carne, quiero huevo." },
+        { "zh": "我很饱。", "py": "Wǒ hěn bǎo.", "es": "Estoy lleno." }
+      ],
+      "respond": [
+        { "q": { "zh": "你饿吗？", "py": "Nǐ è ma?", "es": "¿Tienes hambre?" }, "model": { "zh": "很饿，我想吃米饭。", "py": "Hěn è, wǒ xiǎng chī mǐfàn.", "es": "Mucha, me apetece arroz." } },
+        { "q": { "zh": "你想喝茶吗？", "py": "Nǐ xiǎng hē chá ma?", "es": "¿Te apetece un té?" }, "model": { "zh": "不想，我想喝牛奶。", "py": "Bù xiǎng, wǒ xiǎng hē niúnǎi.", "es": "No, me apetece leche." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "La hora de comer",
+      "text": "我是雨果。现在是中午，我很饿，也很渴。我想吃米饭和肉，也想喝茶。小李不太饿，他想吃面条儿。安娜很饱，她不想吃饭，她想喝牛奶。我们都想去吃饭。",
+      "es": "Soy Hugo. Es mediodía; tengo mucha hambre y mucha sed. Me apetece arroz con carne y también un té. Xiao Li no tiene mucha hambre: quiere fideos. Ana está llena: no quiere comer, quiere leche. Todos queremos ir a comer.",
+      "questions": [
+        { "q": "¿Qué quiere comer Hugo?", "options": ["米饭和肉", "面条儿", "鸡蛋"], "answer": 0 },
+        { "q": "¿Por qué Ana no quiere comer?", "options": ["Está llena (很饱)", "Tiene sed (很渴)", "No le gusta la carne"], "answer": 0 },
+        { "q": "¿Qué quiere beber Ana?", "options": ["牛奶", "茶", "水"], "answer": 0 },
+        { "q": "¿Qué hora del día es?", "options": ["中午", "晚上", "早上"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

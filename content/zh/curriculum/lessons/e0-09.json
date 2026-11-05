@@ -1,0 +1,76 @@
+{
+  "id": "e0-09",
+  "title": "La tabla completa del pinyin",
+  "zh": "拼音表",
+  "goal": "Encontrar cualquier sílaba en la tabla de iniciales × finales, oírla en los cuatro tonos y saber qué combinaciones no existen.",
+  "minutes": 13,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "你好", "pinyin": "nǐ hǎo", "es": "hola", "note": "Repaso. Búscalo en la tabla: n + i, h + ao." },
+    { "hanzi": "谢谢", "pinyin": "xièxie", "es": "gracias", "note": "Repaso. x + ie: la x solo aparece en las filas de i y ü." },
+    { "hanzi": "老师", "pinyin": "lǎoshī", "es": "profesor, profesora", "note": "Repaso. shi está en la fila de la -i vacía." },
+    { "hanzi": "中国", "pinyin": "Zhōngguó", "es": "China", "note": "Repaso. zh + ong, g + uo." },
+    { "hanzi": "北京", "pinyin": "Běijīng", "es": "Pekín", "note": "Repaso. b + ei, j + ing." },
+    { "hanzi": "吃", "pinyin": "chī", "es": "comer", "note": "Repaso. ch + -i vacía." },
+    { "hanzi": "去", "pinyin": "qù", "es": "ir", "note": "Repaso. q + ü, escrita u." },
+    { "hanzi": "朋友", "pinyin": "péngyou", "es": "amigo, amiga", "note": "Repaso. p + eng; you = iou sin inicial." }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "你好，老师！", "py": "Nǐ hǎo, lǎoshī!", "es": "¡Hola, profesora!" },
+        { "zh": "他去北京。", "py": "Tā qù Běijīng.", "es": "Él va a Pekín." },
+        { "zh": "他是中国朋友。", "py": "Tā shì Zhōngguó péngyou.", "es": "Es un amigo chino." }
+      ]
+    },
+    { "type": "vocab", "title": "Repaso: palabras para buscar en la tabla", "words": ["你好", "谢谢", "老师", "中国", "北京", "吃", "去", "朋友"] },
+    {
+      "type": "phonetics-drill",
+      "title": "¿Qué casilla de la tabla es?",
+      "markdown": "Cada sílaba china ocupa **una casilla** de la tabla: la **columna** es la inicial (b, p, m…) y la **fila**, la final (a, o, e…). Antes de abrir la tabla, comprueba que distingues las casillas vecinas que más se confunden: **ch / q / c**, **zh / j / z** y **sh / x / s**.",
+      "items": [
+        { "audio": "吃", "options": ["chī", "qī", "cī"], "answer": 0, "explain": "ch (lengua atrás) + -i vacía." },
+        { "audio": "七", "options": ["chī", "qī", "cī"], "answer": 1, "explain": "q (lengua plana, sonrisa) + i verdadera." },
+        { "audio": "去", "options": ["qù", "jù", "cù"], "answer": 0, "explain": "q con aire; j sin aire." },
+        { "audio": "中国", "options": ["Zōngguó", "Zhōngguó", "Jōngguó"], "answer": 1, "explain": "zh: lengua doblada. Además, jong no existe: j solo va con i/ü." },
+        { "audio": "北京", "options": ["Běijīng", "Pěijīng", "Běizhīng"], "answer": 0, "explain": "b sin aire; j + ing." },
+        { "audio": "谢谢", "options": ["shièxie", "xièxie", "sièxie"], "answer": 1, "explain": "x + ie. shie y sie no existen: ninguna casilla los recoge." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["口"],
+      "mnemonics": {
+        "口": "Pictograma de una boca abierta, vista de frente y hecha cuadrada. Como componente marca lo que se hace con la boca: 吃 (comer), 喝 (beber) y las partículas habladas como 吗."
+      }
+    },
+    {
+      "type": "explain",
+      "title": "Cómo se lee la tabla",
+      "markdown": "El mandarín tiene unas **400 sílabas** (unas 1300 contando los tonos). Todas caben en una tabla:\n\n- **Columnas**: las 21 iniciales, agrupadas por el lugar de la boca: **b p m f** (labios) · **d t n l** (punta de la lengua) · **g k h** (garganta) · **j q x** (lengua plana) · **zh ch sh r** (lengua doblada) · **z c s** (detrás de los dientes). La primera columna, **sin inicial**, es donde aparecen las formas con y / w (ya, wo, yu…).\n- **Filas**: las finales, agrupadas en cuatro familias: las que empiezan por **a/o/e**, por **i**, por **u** y por **ü**.\n- **Casillas atenuadas**: combinaciones que **no existen**. No son un fallo de la tabla, son información: si una sílaba no está, la has oído mal.\n\nPulsa una casilla para oírla en los **cuatro tonos**. Usa los filtros para ver solo un grupo (por ejemplo, j q x) y fíjate en sus huecos."
+    },
+    { "type": "pinyin-table" },
+    {
+      "type": "explain",
+      "title": "Cinco búsquedas en la tabla",
+      "markdown": "Abre la tabla de arriba y resuelve estos retos:\n\n1. **La fila de la -i vacía.** Busca zhi chi shi ri zi ci si y escúchalas seguidas: ninguna tiene una «i» española.\n2. **j q x.** Filtra estas tres columnas: ¿por qué solo tienen casillas en las filas de **i** y **ü**? (Respuesta: es justo lo que permite escribir ju, qu, xu sin puntos.)\n3. **n y l con ü.** Busca **nü** y **lü**: son las únicas casillas donde la ü conserva los puntos.\n4. **Huecos curiosos.** Comprueba que no existen *fi*, *bü* ni *gi*: si crees oír una, será otra cosa (fei, bu, ji).\n5. **Tus palabras.** Localiza las ocho palabras de repaso: ni, hao, xie, lao, shi, zhong, guo, bei, jing, chi, qu, peng, you. Escucha cada sílaba en los cuatro tonos y elige el bueno."
+    },
+    { "type": "exercises", "count": 10, "bank": ["u0"] },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "你好，老师！", "py": "Nǐ hǎo, lǎoshī!", "es": "¡Hola, profesora!" },
+        { "zh": "谢谢！", "py": "Xièxie!", "es": "¡Gracias!" },
+        { "zh": "他去北京。", "py": "Tā qù Běijīng.", "es": "Él va a Pekín." },
+        { "zh": "他是中国朋友。", "py": "Tā shì Zhōngguó péngyou.", "es": "Es un amigo chino." },
+        { "zh": "再见！", "py": "Zàijiàn!", "es": "¡Adiós!" }
+      ],
+      "respond": [
+        { "q": { "zh": "你好！", "py": "Nǐ hǎo!", "es": "¡Hola!" }, "model": { "zh": "老师好！", "py": "Lǎoshī hǎo!", "es": "¡Hola, profesora!" } },
+        { "q": { "zh": "他去北京？", "py": "Tā qù Běijīng?", "es": "¿Va a Pekín?" }, "model": { "zh": "对，他去北京。", "py": "Duì, tā qù Běijīng.", "es": "Sí, va a Pekín." } }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

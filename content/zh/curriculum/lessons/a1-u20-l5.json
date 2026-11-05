@@ -1,0 +1,133 @@
+{
+  "id": "a1-u20-l5",
+  "title": "La vida en WeChat: 用手机…",
+  "zh": "你扫一下儿我的二维码",
+  "goal": "Añadir a alguien en WeChat, hablar de códigos, contraseñas y avisos, y decir con qué haces algo (用 + cosa + verbo); repaso de la unidad.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "二维码", "pinyin": "èrwéimǎ", "es": "código QR", "note": "Fuera del HSK 1–3. Lit. «código de dos dimensiones»." },
+    { "hanzi": "密码", "pinyin": "mìmǎ", "es": "contraseña, PIN" },
+    { "hanzi": "通知", "pinyin": "tōngzhī", "es": "aviso, notificación; avisar" },
+    { "hanzi": "网站", "pinyin": "wǎngzhàn", "es": "página web", "note": "在网站上 = en la página web." },
+    { "hanzi": "朋友圈", "pinyin": "péngyouquān", "es": "Momentos (el muro de WeChat)", "note": "Fuera del HSK. Lit. «círculo de amigos»: 发朋友圈 = publicar en Momentos." },
+    { "hanzi": "下载", "pinyin": "xiàzài", "es": "descargar", "note": "Nivel 4 del HSK." },
+    { "hanzi": "扫码", "pinyin": "sǎomǎ", "es": "escanear un código", "note": "Repaso de la U9: 扫一下儿 = escanea." },
+    { "hanzi": "加", "pinyin": "jiā", "es": "sumar; añadir (a alguien)", "note": "Repaso de la U4 con un uso nuevo: 加微信 = añadirse en WeChat." }
+  ],
+  "extraVocab": ["二维码", "朋友圈", "下载"],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "我们加一下儿微信吧！", "py": "Wǒmen jiā yíxiàr Wēixìn ba!", "es": "¡Agreguémonos en WeChat!" },
+        { "zh": "你扫一下儿我的二维码。", "py": "Nǐ sǎo yíxiàr wǒ de èrwéimǎ.", "es": "Escanea mi código QR." },
+        { "zh": "我用手机看通知。", "py": "Wǒ yòng shǒujī kàn tōngzhī.", "es": "Miro los avisos en el móvil." }
+      ]
+    },
+    { "type": "vocab", "title": "WeChat y la vida digital", "words": ["二维码", "密码", "通知", "网站", "朋友圈", "下载", "扫码", "加"] },
+    {
+      "type": "phonetics-drill",
+      "title": "er y quan: 二维码, 朋友圈",
+      "markdown": "- **er** (二 *èr*): una «e» china con la lengua que se dobla hacia atrás al final, como la «r» inglesa. No es «er» española con vibración.\n- **quan** (圈 *quān*): q + **üan** (la ü pierde los puntos tras q). Suena casi «chüen»: labios redondos al principio y una «e» abierta antes de la n.\n- 朋友 *péngyou*: la segunda sílaba es neutra, y por eso 朋友圈 se dice *péngyouquān*.",
+      "items": [
+        { "audio": "二维码", "options": ["èrwéimǎ", "èrwèimǎ", "ěrwéimǎ"], "answer": 0, "explain": "èr (4.º) + wéi (2.º) + mǎ (3.º)." },
+        { "audio": "朋友圈", "options": ["péngyouquān", "péngyouqiān", "péngyouchuān"], "answer": 0, "explain": "quan = q + üan." },
+        { "audio": "密码", "options": ["mìmǎ", "mímǎ", "mìmā"], "answer": 0, "explain": "密 mì cae; 码 mǎ baja y sube." },
+        { "audio": "下载", "options": ["xiàzài", "xiàzhài", "shàzài"], "answer": 0, "explain": "x plana + z adelante." },
+        { "audio": "通知", "options": ["tōngzhī", "dōngzhī", "tōngzī"], "answer": 0, "explain": "t con aire; zhi con la lengua atrás." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["码", "圈"],
+      "mnemonics": {
+        "码": "石 (piedra) + 马 (que da el sonido, mǎ): las piedrecitas que se usaban para contar = números, códigos. Está en 号码, 密码 y 二维码.",
+        "圈": "囗 (un recinto cerrado) + 卷 (enrollar): algo que se cierra en redondo = círculo. 朋友圈 = tu círculo de amigos."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "用 + cosa + verbo: con qué haces algo",
+      "markdown": "Para decir **con qué** haces algo, el chino pone **用 + la herramienta** delante de la acción, como dos verbos en serie (U7): primero coges la herramienta, después haces la acción.\n\n- 我**用手机**看视频。 Veo vídeos **con el móvil**.\n- 我们**用学校的网站**考试。 Hacemos el examen **en** la web de la universidad.\n\nEn el esqueleto, 用 + cosa va en **Verbo 1** y la acción en **Verbo 2**. En español la herramienta va al final («con el móvil»); en chino, delante.\n\nRepaso de la unidad en el mismo esqueleto: 给 + persona + verbo (L2), 在 + verbo (L3) y el 了 del cambio (L4).",
+      "focus": ["verb1", "verb2"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "verb1": { "zh": "用手机", "py": "yòng shǒujī" }, "verb2": { "zh": "看", "py": "kàn" }, "object": { "zh": "视频", "py": "shìpín" } }, "end": "。", "es": "Veo vídeos con el móvil.", "esOrder": [{ "text": "Veo", "slot": "verb2" }, { "text": "vídeos", "slot": "object" }, { "text": "con el móvil", "slot": "verb1" }] },
+        { "slots": { "subject": { "zh": "我们", "py": "wǒmen" }, "time": { "zh": "明天", "py": "míngtiān" }, "aux": { "zh": "要", "py": "yào" }, "verb1": { "zh": "用学校的网站", "py": "yòng xuéxiào de wǎngzhàn" }, "verb2": { "zh": "考试", "py": "kǎoshì" } }, "end": "。", "es": "Mañana tenemos que hacer el examen en la web de la universidad." },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "扫一下儿", "py": "sǎo yíxiàr" }, "object": { "zh": "这个二维码", "py": "zhège èrwéimǎ" } }, "end": "。", "es": "Escanea este código QR." },
+        { "slots": { "subject": { "zh": "王老师", "py": "Wáng lǎoshī" }, "place": { "zh": "在朋友圈", "py": "zài péngyouquān" }, "verb1": { "zh": "发了", "py": "fā le" }, "object": { "zh": "一张照片", "py": "yì zhāng zhàopiàn" } }, "end": "。", "es": "La profesora Wang ha publicado una foto en Momentos." },
+        { "slots": { "subject": { "zh": "我们", "py": "wǒmen" }, "verb1": { "zh": "加一下儿", "py": "jiā yíxiàr" }, "object": { "zh": "微信", "py": "Wēixìn" }, "particle": { "zh": "吧", "py": "ba" } }, "end": "！", "es": "¡Agreguémonos en WeChat!" }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "不", "py": "bù" }, "verb1": { "zh": "知道", "py": "zhīdào" }, "object": { "zh": "密码", "py": "mìmǎ" } }, "end": "。", "es": "No sé la contraseña." },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "没", "py": "méi" }, "verb1": { "zh": "收到", "py": "shōudào" }, "object": { "zh": "学校的通知", "py": "xuéxiào de tōngzhī" } }, "end": "。", "es": "No me ha llegado el aviso de la universidad." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "用不用", "py": "yòng bu yòng" }, "object": { "zh": "支付宝", "py": "Zhīfùbǎo" } }, "end": "？", "es": "¿Usas Alipay?" },
+        { "slots": { "subject": { "zh": "这个网站的密码", "py": "zhège wǎngzhàn de mìmǎ" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "多少", "py": "duōshao" } }, "end": "？", "es": "¿Cuál es la contraseña de esta web?" }
+      ],
+      "mistakes": [
+        { "wrong": "我看视频用手机。", "right": "我用手机看视频。", "why": "La herramienta (用 + cosa) va delante de la acción." },
+        { "wrong": "你扫这个二维码一下儿。", "right": "你扫一下儿这个二维码。", "why": "一下儿 va pegado al verbo, antes del objeto." },
+        { "wrong": "王老师发了朋友圈一张照片。", "right": "王老师在朋友圈发了一张照片。", "why": "El lugar (en Momentos) va delante del verbo, con 在." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "El primer día de David en clase",
+      "lines": [
+        { "speaker": "大卫", "zh": "雨果，我们加一下儿微信吧！", "py": "Yǔguǒ, wǒmen jiā yíxiàr Wēixìn ba!", "es": "¡Hugo, agreguémonos en WeChat!" },
+        { "speaker": "雨果", "zh": "好啊，你扫一下儿我的二维码。", "py": "Hǎo a, nǐ sǎo yíxiàr wǒ de èrwéimǎ.", "es": "Vale, escanea mi código QR." },
+        { "speaker": "大卫", "zh": "好了。你看朋友圈了吗？王老师发了一个通知。", "py": "Hǎo le. Nǐ kàn péngyouquān le ma? Wáng lǎoshī fā le yí ge tōngzhī.", "es": "Listo. ¿Has mirado Momentos? La profesora Wang ha publicado un aviso." },
+        { "speaker": "雨果", "zh": "我没看。通知说什么？", "py": "Wǒ méi kàn. Tōngzhī shuō shénme?", "es": "No lo he mirado. ¿Qué dice el aviso?" },
+        { "speaker": "大卫", "zh": "明天我们要用学校的网站考试。", "py": "Míngtiān wǒmen yào yòng xuéxiào de wǎngzhàn kǎoshì.", "es": "Mañana tenemos que hacer el examen en la web de la universidad." },
+        { "speaker": "雨果", "zh": "网站的密码是多少？", "py": "Wǎngzhàn de mìmǎ shì duōshao?", "es": "¿Cuál es la contraseña de la web?" },
+        { "speaker": "大卫", "zh": "密码在通知里。你最好下载一下儿。", "py": "Mìmǎ zài tōngzhī li. Nǐ zuìhǎo xiàzài yíxiàr.", "es": "La contraseña está en el aviso. Mejor descárgatelo." },
+        { "speaker": "雨果", "zh": "好，我现在用手机看。谢谢你！", "py": "Hǎo, wǒ xiànzài yòng shǒujī kàn. Xièxie nǐ!", "es": "Vale, lo miro ahora con el móvil. ¡Gracias!" },
+        { "speaker": "大卫", "zh": "不客气！晚上我给你发语音。", "py": "Bú kèqi! Wǎnshang wǒ gěi nǐ fā yǔyīn.", "es": "¡De nada! Esta noche te mando un audio." }
+      ],
+      "notes": "En China la gente no se da el número de teléfono: se escanea el QR de WeChat (加微信). Los profesores avisan casi siempre por el grupo de WeChat de la clase."
+    },
+    { "type": "exercises", "count": 18, "bank": ["g-gei", "g-zai", "g-word-order", "u14"] },
+    {
+      "type": "sentence-builder",
+      "title": "Construye la frase completa",
+      "items": [
+        { "sentence": { "slots": { "time0": { "zh": "今天晚上" }, "subject": { "zh": "我" }, "aux": { "zh": "想" }, "place": { "zh": "在宿舍" }, "verb1": { "zh": "用电脑" }, "verb2": { "zh": "给妈妈打" }, "object": { "zh": "视频电话" } }, "end": "。", "es": "Esta noche quiero hacerle una videollamada a mi madre con el ordenador desde la residencia." }, "distractors": ["了"] },
+        { "sentence": { "slots": { "subject": { "zh": "王老师" }, "time": { "zh": "昨天晚上" }, "place": { "zh": "在朋友圈" }, "verb1": { "zh": "给我们发了" }, "object": { "zh": "一个通知" } }, "end": "。", "es": "Anoche la profesora Wang nos mandó un aviso por Momentos." } },
+        { "sentence": { "slots": { "subject": { "zh": "大卫" }, "time": { "zh": "现在" }, "adverb": { "zh": "正" }, "with": { "zh": "跟小李一起" }, "place": { "zh": "在图书馆" }, "verb1": { "zh": "用手机" }, "verb2": { "zh": "看" }, "object": { "zh": "汉语视频" }, "particle": { "zh": "呢" } }, "end": "。", "es": "David está ahora mismo en la biblioteca viendo vídeos en chino con Xiao Li en el móvil." } },
+        { "sentence": { "slots": { "subject": { "zh": "我" }, "time": { "zh": "今天上午" }, "adverb": { "zh": "没" }, "verb1": { "zh": "给小李打" }, "object": { "zh": "电话" } }, "end": "。", "es": "Esta mañana no he llamado a Xiao Li." }, "distractors": ["了", "不"] },
+        { "sentence": { "slots": { "time0": { "zh": "上课的时候" }, "subject": { "zh": "你们" }, "adverb": { "zh": "最好别" }, "verb1": { "zh": "用手机" }, "verb2": { "zh": "上" }, "object": { "zh": "网" } }, "end": "。", "es": "Durante la clase, mejor no os conectéis a internet con el móvil." } },
+        { "sentence": { "slots": { "subject": { "zh": "我的手机" }, "time": { "zh": "昨天晚上" }, "adverb": { "zh": "也没" }, "verb1": { "zh": "有" }, "object": { "zh": "电" }, "particle": { "zh": "了" } }, "end": "。", "es": "Anoche mi móvil también se quedó sin batería." } }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "我们加一下儿微信吧！", "py": "Wǒmen jiā yíxiàr Wēixìn ba!", "es": "¡Agreguémonos en WeChat!" },
+        { "zh": "你扫一下儿我的二维码。", "py": "Nǐ sǎo yíxiàr wǒ de èrwéimǎ.", "es": "Escanea mi código QR." },
+        { "zh": "密码是多少？", "py": "Mìmǎ shì duōshao?", "es": "¿Cuál es la contraseña?" },
+        { "zh": "我用手机看通知。", "py": "Wǒ yòng shǒujī kàn tōngzhī.", "es": "Miro los avisos en el móvil." }
+      ],
+      "respond": [
+        { "q": { "zh": "我们加一下儿微信，好吗？", "py": "Wǒmen jiā yíxiàr Wēixìn, hǎo ma?", "es": "¿Nos agregamos en WeChat?" }, "model": { "zh": "好，你扫我的二维码吧。", "py": "Hǎo, nǐ sǎo wǒ de èrwéimǎ ba.", "es": "Vale, escanea mi código." } },
+        { "q": { "zh": "你收到学校的通知了吗？", "py": "Nǐ shōudào xuéxiào de tōngzhī le ma?", "es": "¿Te ha llegado el aviso de la universidad?" }, "model": { "zh": "没收到，你给我发一下儿吧。", "py": "Méi shōudào, nǐ gěi wǒ fā yíxiàr ba.", "es": "No me ha llegado; mándamelo, porfa." } },
+        { "q": { "zh": "你用手机做什么？", "py": "Nǐ yòng shǒujī zuò shénme?", "es": "¿Qué haces con el móvil?" }, "model": { "zh": "我用手机发微信、看视频，也买东西。", "py": "Wǒ yòng shǒujī fā Wēixìn, kàn shìpín, yě mǎi dōngxi.", "es": "Con el móvil mando WeChats, veo vídeos y también compro cosas." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Un día con el móvil",
+      "text": "在中国，手机非常重要。雨果每天用微信：给朋友发信息，看朋友圈，也用微信支付买东西。在饭馆，他扫一下儿桌子上的二维码，用手机点菜。学校的通知也在网站上，雨果下载了学校的通知。他的密码是他的生日。",
+      "es": "En China, el móvil es importantísimo. Hugo usa WeChat todos los días: manda mensajes a sus amigos, mira Momentos y también paga con WeChat Pay. En el restaurante escanea el QR de la mesa y pide la comida con el móvil. Los avisos de la universidad también están en la web, y Hugo se los ha descargado. Su contraseña es su cumpleaños.",
+      "questions": [
+        { "q": "¿Qué hace Hugo en el restaurante?", "options": ["扫二维码，用手机点菜", "给朋友打电话", "看朋友圈"], "answer": 0 },
+        { "q": "¿Dónde están los avisos de la universidad?", "options": ["在网站上", "在朋友圈", "在短信里"], "answer": 0 },
+        { "q": "¿Cuál es la contraseña de Hugo?", "options": ["他的生日", "他的手机号码", "幺二三四"], "answer": 0 },
+        { "q": "¿Qué orden es correcto?", "options": ["他用手机点菜。", "他点菜用手机。", "他手机用点菜。"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

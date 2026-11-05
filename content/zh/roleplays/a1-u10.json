@@ -1,0 +1,161 @@
+{
+  "unitId": "a1-u10",
+  "scenarios": [
+    {
+      "id": "a1-u10-buy-clothes",
+      "title": "Comprar ropa: color y talla",
+      "zh": "买衣服",
+      "level": 1,
+      "setting": "Hugo necesita ropa para el invierno de Shanghái y entra en una tienda cerca de la universidad. Tú (la app) eres la dependienta.",
+      "role": "dependienta",
+      "roleZh": "服务员",
+      "voice": "f",
+      "goals": ["Decir qué prenda buscas", "Elegir el color", "Pedir otra talla (大的 / 小的)", "Decidir si te lo llevas"],
+      "vocab": ["衣服", "件", "双", "鞋", "颜色", "红", "白", "黑", "蓝", "绿", "这件", "那件", "大的", "小的", "别的", "有没有", "要"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "你好！你想买什么？", "py": "Nǐ hǎo! Nǐ xiǎng mǎi shénme?", "es": "¡Hola! ¿Qué quieres comprar?" },
+          "user": [
+            { "zh": "我想买一件衣服。", "py": "Wǒ xiǎng mǎi yí jiàn yīfu.", "es": "Quiero comprar una prenda.", "keywords": ["衣服", "一件"], "next": "n2", "goal": 0 },
+            { "zh": "我想买一双鞋。", "py": "Wǒ xiǎng mǎi yì shuāng xié.", "es": "Quiero comprar unos zapatos.", "keywords": ["鞋", "一双"], "next": "n2b", "goal": 0 }
+          ],
+          "hint": "Prendas con 件 (一件衣服), zapatos con 双 (一双鞋)."
+        },
+        "n2": {
+          "npc": { "zh": "这些衣服都很好看。你要什么颜色的？", "py": "Zhèxiē yīfu dōu hěn hǎokàn. Nǐ yào shénme yánsè de?", "es": "Toda esta ropa es muy bonita. ¿De qué color la quieres?" },
+          "user": [
+            { "zh": "我要黑色的。", "py": "Wǒ yào hēisè de.", "es": "La quiero negra.", "keywords": ["黑", "黑色的"], "next": "n3", "goal": 1 },
+            { "zh": "有没有蓝的？", "py": "Yǒu méiyǒu lán de?", "es": "¿Hay alguna azul?", "keywords": ["蓝", "有没有"], "next": "n3", "goal": 1 },
+            { "zh": "我爱红色。有红的吗？", "py": "Wǒ ài hóngsè. Yǒu hóng de ma?", "es": "Me encanta el rojo. ¿Hay alguna roja?", "keywords": ["红"], "next": "n2c", "goal": 1 }
+          ],
+          "hint": "Color + 的 sin nombre: 黑色的 / 蓝的 = «la negra», «la azul»."
+        },
+        "n2b": {
+          "npc": { "zh": "好。这双白的和那双黑的都很新。你要哪双？", "py": "Hǎo. Zhè shuāng bái de hé nà shuāng hēi de dōu hěn xīn. Nǐ yào nǎ shuāng?", "es": "Vale. Estos blancos y esos negros son modelos nuevos. ¿Cuáles quieres?" },
+          "user": [
+            { "zh": "我要那双黑的。", "py": "Wǒ yào nà shuāng hēi de.", "es": "Quiero esos negros.", "keywords": ["黑", "那双"], "next": "n3", "goal": 1 },
+            { "zh": "这双白的很好看。", "py": "Zhè shuāng bái de hěn hǎokàn.", "es": "Estos blancos son muy bonitos.", "keywords": ["白", "这双"], "next": "n3", "goal": 1 }
+          ],
+          "hint": "这双 / 那双 + color + 的."
+        },
+        "n2c": {
+          "npc": { "zh": "红的没有。有白的、黑的，也有绿的。", "py": "Hóng de méiyǒu. Yǒu bái de, hēi de, yě yǒu lǜ de.", "es": "Rojas no hay. Hay blancas, negras y también verdes." },
+          "user": [
+            { "zh": "好，我要绿的。", "py": "Hǎo, wǒ yào lǜ de.", "es": "Vale, quiero la verde.", "keywords": ["绿"], "next": "n3", "goal": 1 },
+            { "zh": "没有别的颜色吗？", "py": "Méiyǒu bié de yánsè ma?", "es": "¿No hay otros colores?", "keywords": ["别的", "颜色"], "next": "n2d" }
+          ],
+          "hint": "Elige otro color o pregunta por 别的颜色."
+        },
+        "n2d": {
+          "npc": { "zh": "对不起，没有别的颜色。", "py": "Duìbuqǐ, méiyǒu bié de yánsè.", "es": "Lo siento, no hay otros colores." },
+          "user": [
+            { "zh": "没关系，我要白的。", "py": "Méi guānxi, wǒ yào bái de.", "es": "No pasa nada, quiero la blanca.", "keywords": ["白"], "next": "n3", "goal": 1 }
+          ],
+          "hint": "Quítale importancia (没关系) y elige: 我要…的."
+        },
+        "n3": {
+          "npc": { "zh": "这个很好看！你穿，大不大？", "py": "Zhège hěn hǎokàn! Nǐ chuān, dà bu dà?", "es": "¡Te queda muy bien! ¿Te está grande?" },
+          "user": [
+            { "zh": "太大了！有没有小的？", "py": "Tài dà le! Yǒu méiyǒu xiǎo de?", "es": "¡Me está enorme! ¿Hay alguna más pequeña?", "keywords": ["小的", "太大"], "next": "n4", "goal": 2 },
+            { "zh": "有点儿小，我要大的。", "py": "Yǒudiǎnr xiǎo, wǒ yào dà de.", "es": "Me queda un poco pequeña, quiero una más grande.", "keywords": ["大的", "小"], "next": "n4", "goal": 2 },
+            { "zh": "不大不小，很好。", "py": "Bú dà bù xiǎo, hěn hǎo.", "es": "Ni grande ni pequeña: perfecta.", "keywords": ["很好", "不大"], "next": "n5", "goal": 2 }
+          ],
+          "hint": "Pide otra talla con 大的 / 小的; 太…了 y 有点儿 para quejarte."
+        },
+        "n4": {
+          "npc": { "zh": "有，这个是你的。你看，好不好？", "py": "Yǒu, zhège shì nǐ de. Nǐ kàn, hǎo bu hǎo?", "es": "Sí, aquí tienes la tuya. Mira, ¿qué tal?" },
+          "user": [
+            { "zh": "很好！我要这个。", "py": "Hěn hǎo! Wǒ yào zhège.", "es": "¡Muy bien! Me la llevo.", "keywords": ["要这个", "很好"], "next": "n5", "goal": 3 }
+          ],
+          "hint": "Si te gusta, di 我要这个."
+        },
+        "n5": {
+          "npc": { "zh": "好的。你还要别的东西吗？", "py": "Hǎo de. Nǐ hái yào bié de dōngxi ma?", "es": "Muy bien. ¿Quieres algo más?" },
+          "user": [
+            { "zh": "不要了，谢谢！", "py": "Bú yào le, xièxie!", "es": "Nada más, ¡gracias!", "keywords": ["不要", "谢谢"], "next": "end1", "goal": 3 },
+            { "zh": "我也想买一个帽子。", "py": "Wǒ yě xiǎng mǎi yí ge màozi.", "es": "También quiero comprar un gorro.", "keywords": ["帽子"], "next": "end2", "goal": 3 }
+          ],
+          "hint": "别的东西 = otra cosa. Acaba (不要了) o pide algo más."
+        },
+        "end1": {
+          "npc": { "zh": "谢谢！再见！", "py": "Xièxie! Zàijiàn!", "es": "¡Gracias! ¡Adiós!" },
+          "end": true,
+          "feedback": "Has pedido con el clasificador correcto (件 / 双), has elegido color con 的 sin nombre (黑色的, 蓝的) y has pedido otra talla (大的 / 小的). ¡Compra hecha!"
+        },
+        "end2": {
+          "npc": { "zh": "好！这儿有帽子……你戴这个白的，很好看！", "py": "Hǎo! Zhèr yǒu màozi… Nǐ dài zhège bái de, hěn hǎokàn!", "es": "¡Muy bien! Aquí hay gorros… ¡Ponte este blanco, te queda genial!" },
+          "end": true,
+          "feedback": "Ropa elegida y, además, un gorro: recuerda que el gorro se «戴», no se «穿». Has usado clasificadores, colores con 的 y 别的."
+        }
+      }
+    },
+    {
+      "id": "a1-u10-need-pen",
+      "title": "¿Me dejas un boli?",
+      "zh": "你有笔吗？",
+      "level": 1,
+      "setting": "Faltan cinco minutos para el examen y Hugo no encuentra su bolígrafo. Le pide cosas a su compañera. Tú (la app) eres 安娜.",
+      "role": "compañera de clase",
+      "roleZh": "安娜",
+      "voice": "f",
+      "goals": ["Pedir un bolígrafo", "Pedir papel", "Decir de quién es cada cosa", "Dar las gracias"],
+      "vocab": ["笔", "支", "纸", "张", "本子", "书包", "拿", "放", "这儿", "那儿", "我的", "你的", "别的", "颜色"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "雨果，你怎么样？", "py": "Yǔguǒ, nǐ zěnmeyàng?", "es": "Hugo, ¿qué tal?" },
+          "user": [
+            { "zh": "不好！我没有笔。你有没有笔？", "py": "Bù hǎo! Wǒ méiyǒu bǐ. Nǐ yǒu méiyǒu bǐ?", "es": "¡Mal! No tengo boli. ¿Tienes uno?", "keywords": ["笔", "有没有"], "next": "n2", "goal": 0 },
+            { "zh": "请给我一支笔。", "py": "Qǐng gěi wǒ yì zhī bǐ.", "es": "Dame un boli, por favor.", "keywords": ["一支笔", "笔"], "next": "n2", "goal": 0 }
+          ],
+          "hint": "有 se niega con 没有. Bolígrafos con 支: 一支笔."
+        },
+        "n2": {
+          "npc": { "zh": "有。我有三支笔：红的、黑的和蓝的。你要哪支？", "py": "Yǒu. Wǒ yǒu sān zhī bǐ: hóng de, hēi de hé lán de. Nǐ yào nǎ zhī?", "es": "Sí. Tengo tres: uno rojo, uno negro y uno azul. ¿Cuál quieres?" },
+          "user": [
+            { "zh": "我要黑的，谢谢。", "py": "Wǒ yào hēi de, xièxie.", "es": "El negro, gracias.", "keywords": ["黑的", "黑"], "next": "n3", "goal": 0 },
+            { "zh": "蓝的。", "py": "Lán de.", "es": "El azul.", "keywords": ["蓝的", "蓝"], "next": "n3", "goal": 0 }
+          ],
+          "hint": "Elige con color + 的: 黑的, 蓝的."
+        },
+        "n3": {
+          "npc": { "zh": "好，你拿。你有纸吗？", "py": "Hǎo, nǐ ná. Nǐ yǒu zhǐ ma?", "es": "Vale, cógelo. ¿Tienes papel?" },
+          "user": [
+            { "zh": "没有。请给我两张纸。", "py": "Méiyǒu. Qǐng gěi wǒ liǎng zhāng zhǐ.", "es": "No. Dame dos hojas, por favor.", "keywords": ["两张", "纸"], "next": "n4", "goal": 1 },
+            { "zh": "有，我有一个本子。", "py": "Yǒu, wǒ yǒu yí ge běnzi.", "es": "Sí, tengo un cuaderno.", "keywords": ["本子"], "next": "n4", "goal": 1 }
+          ],
+          "hint": "Papel con 张: 两张纸 (dos con 两)."
+        },
+        "n4": {
+          "npc": { "zh": "这个书包是你的吗？", "py": "Zhège shūbāo shì nǐ de ma?", "es": "¿Esta mochila es tuya?" },
+          "user": [
+            { "zh": "不是，那个蓝色的是我的。", "py": "Bú shì, nàge lánsè de shì wǒ de.", "es": "No, la mía es esa azul.", "keywords": ["我的", "蓝色的"], "next": "n5", "goal": 2 },
+            { "zh": "是，这是我的书包。", "py": "Shì, zhè shì wǒ de shūbāo.", "es": "Sí, es mi mochila.", "keywords": ["我的书包", "我的"], "next": "n4b", "goal": 2 }
+          ],
+          "hint": "我的 sin nombre = «el mío / la mía»."
+        },
+        "n4b": {
+          "npc": { "zh": "你看，这儿有一支笔。是你的吗？", "py": "Nǐ kàn, zhèr yǒu yì zhī bǐ. Shì nǐ de ma?", "es": "Mira, aquí hay un boli. ¿Es tuyo?" },
+          "user": [
+            { "zh": "对，是我的！太好了！这支是你的，谢谢！", "py": "Duì, shì wǒ de! Tài hǎo le! Zhè zhī shì nǐ de, xièxie!", "es": "¡Sí, es el mío! ¡Genial! Este es el tuyo, ¡gracias!", "keywords": ["你的", "谢谢"], "next": "end1", "goal": 3 }
+          ],
+          "hint": "Devuelve el boli: 这支是你的."
+        },
+        "n5": {
+          "npc": { "zh": "好。你的书包放那儿，我的放这儿。", "py": "Hǎo. Nǐ de shūbāo fàng nàr, wǒ de fàng zhèr.", "es": "Vale. Tu mochila, déjala allí; la mía, aquí." },
+          "user": [
+            { "zh": "好的。谢谢你，安娜！", "py": "Hǎo de. Xièxie nǐ, Ānnà!", "es": "Vale. ¡Gracias, Ana!", "keywords": ["谢谢"], "next": "end1", "goal": 3 },
+            { "zh": "谢谢！你的笔很好看。", "py": "Xièxie! Nǐ de bǐ hěn hǎokàn.", "es": "¡Gracias! Tu boli es muy bonito.", "keywords": ["谢谢", "好看"], "next": "end1", "goal": 3 }
+          ],
+          "hint": "Da las gracias: 谢谢你."
+        },
+        "end1": {
+          "npc": { "zh": "不客气！我们上课！", "py": "Bú kèqi! Wǒmen shàngkè!", "es": "¡De nada! ¡A clase!" },
+          "end": true,
+          "feedback": "Has pedido cosas con 有没有 y 请给我, has usado los clasificadores 支 y 张, has elegido con color + 的 y has dicho de quién era cada cosa (我的 / 你的)."
+        }
+      }
+    }
+  ]
+}

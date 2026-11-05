@@ -1,0 +1,149 @@
+{
+  "unitId": "a2-u10",
+  "scenarios": [
+    {
+      "id": "a2-u10-spring-festival",
+      "title": "Año Nuevo en casa de Xiao Li",
+      "zh": "在小李家过年",
+      "level": 2,
+      "setting": "Nochevieja del Año Nuevo chino. Hugo no ha vuelto a España y los padres de Xiao Li le han invitado a cenar. Tú (la app) eres la madre de Xiao Li.",
+      "role": "la madre de Xiao Li",
+      "roleZh": "小李的妈妈",
+      "voice": "f",
+      "goals": ["Explicar por qué pasas el Año Nuevo en China (因为…所以 / 虽然…但是)", "Contar cómo celebrabas el Año Nuevo de pequeño", "Decir tu signo del zodiaco chino", "Dar las gracias y felicitar el Año Nuevo"],
+      "vocab": ["因为", "所以", "虽然", "但是", "小时候", "属", "红包", "祝", "礼物"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "雨果，欢迎欢迎！快进来。你是第一次在中国过春节吗？", "py": "Yǔguǒ, huānyíng huānyíng! Kuài jìnlai. Nǐ shì dì yī cì zài Zhōngguó guò Chūnjié ma?", "es": "¡Hugo, bienvenido! Pasa, pasa. ¿Es la primera vez que pasas la Fiesta de la Primavera en China?" },
+          "user": [
+            { "zh": "是的，阿姨。虽然我很想家，但是在这儿过年也很好。", "py": "Shì de, āyí. Suīrán wǒ hěn xiǎng jiā, dànshì zài zhèr guònián yě hěn hǎo.", "es": "Sí, señora. Aunque echo de menos mi casa, pasar aquí el Año Nuevo también está muy bien.", "keywords": ["虽然", "但是"], "next": "n2", "goal": 0 },
+            { "zh": "对，这是我第一次。因为机票太贵了，所以我没回西班牙。", "py": "Duì, zhè shì wǒ dì yī cì. Yīnwèi jīpiào tài guì le, suǒyǐ wǒ méi huí Xībānyá.", "es": "Sí, es la primera vez. Como el billete era carísimo, no he vuelto a España.", "keywords": ["因为", "所以"], "next": "n2", "goal": 0 }
+          ],
+          "hint": "Explica por qué estás en China: 因为…，所以… o 虽然…，但是…"
+        },
+        "n2": {
+          "npc": { "zh": "我们一起包饺子吧。你小时候在西班牙怎么过新年？", "py": "Wǒmen yìqǐ bāo jiǎozi ba. Nǐ xiǎoshíhou zài Xībānyá zěnme guò xīnnián?", "es": "Vamos a hacer jiaozi juntos. ¿Cómo celebrabas el Año Nuevo en España de pequeño?" },
+          "user": [
+            { "zh": "小时候我们全家都去奶奶家，十二点吃十二个小水果。", "py": "Xiǎoshíhou wǒmen quánjiā dōu qù nǎinai jiā, shí'èr diǎn chī shí'èr ge xiǎo shuǐguǒ.", "es": "De pequeño íbamos todos a casa de mi abuela y a las doce comíamos doce frutitas.", "keywords": ["小时候", "奶奶家"], "next": "n3", "goal": 1 },
+            { "zh": "我从小就喜欢新年，因为全家人都在一起。", "py": "Wǒ cóngxiǎo jiù xǐhuan xīnnián, yīnwèi quánjiā rén dōu zài yìqǐ.", "es": "Desde pequeño me encanta el Año Nuevo, porque está toda la familia junta.", "keywords": ["从小", "因为"], "next": "n3", "goal": 1 }
+          ],
+          "hint": "Cuenta un recuerdo con 小时候… o 我从小就…"
+        },
+        "n3": {
+          "npc": { "zh": "真有意思！对了，你属什么？", "py": "Zhēn yǒu yìsi! Duì le, nǐ shǔ shénme?", "es": "¡Qué interesante! Por cierto, ¿de qué signo eres?" },
+          "user": [
+            { "zh": "我属马。阿姨，您属什么？", "py": "Wǒ shǔ mǎ. Āyí, nín shǔ shénme?", "es": "Soy caballo. ¿Y usted, señora?", "keywords": ["属马", "属"], "next": "n4", "goal": 2 },
+            { "zh": "我不知道我属什么。我是二零零零年出生的。", "py": "Wǒ bù zhīdào wǒ shǔ shénme. Wǒ shì èr líng líng líng nián chūshēng de.", "es": "No sé de qué signo soy. Nací en el año 2000.", "keywords": ["出生"], "next": "n5", "goal": 2 }
+          ],
+          "hint": "属 + animal: 我属马, 我属龙… Si no lo sabes, di el año en que naciste (我是…年出生的)."
+        },
+        "n4": {
+          "npc": { "zh": "我属龙。来，这个红包送给你，祝你学习好、身体好！", "py": "Wǒ shǔ lóng. Lái, zhège hóngbāo sòng gěi nǐ, zhù nǐ xuéxí hǎo, shēntǐ hǎo!", "es": "Yo soy dragón. Toma, este sobre rojo es para ti: ¡que te vaya bien en los estudios y que tengas salud!" },
+          "user": [
+            { "zh": "谢谢阿姨！祝您新年快乐！", "py": "Xièxie āyí! Zhù nín xīnnián kuàilè!", "es": "¡Gracias, señora! ¡Feliz Año Nuevo!", "keywords": ["祝", "新年快乐"], "next": "n6", "goal": 3 },
+            { "zh": "谢谢！我也有一个小礼物送给您。", "py": "Xièxie! Wǒ yě yǒu yí ge xiǎo lǐwù sòng gěi nín.", "es": "¡Gracias! Yo también tengo un regalito para usted.", "keywords": ["送给您", "礼物"], "next": "n7", "goal": 3 }
+          ],
+          "hint": "Da las gracias y felicita con 祝您新年快乐, o saca tu regalo: 送给您…"
+        },
+        "n5": {
+          "npc": { "zh": "二零零零年……你属龙，跟我一样！来，这个红包送给你。", "py": "Èr líng líng líng nián…… Nǐ shǔ lóng, gēn wǒ yíyàng! Lái, zhège hóngbāo sòng gěi nǐ.", "es": "El 2000… ¡Eres dragón, como yo! Toma, este sobre rojo es para ti." },
+          "user": [
+            { "zh": "谢谢阿姨！祝您新年快乐！", "py": "Xièxie āyí! Zhù nín xīnnián kuàilè!", "es": "¡Gracias, señora! ¡Feliz Año Nuevo!", "keywords": ["祝", "新年快乐"], "next": "n6", "goal": 3 },
+            { "zh": "太好了！我也有一个礼物送给您。", "py": "Tài hǎo le! Wǒ yě yǒu yí ge lǐwù sòng gěi nín.", "es": "¡Qué bien! Yo también tengo un regalo para usted.", "keywords": ["送给您", "礼物"], "next": "n7", "goal": 3 }
+          ],
+          "hint": "Agradece el 红包 y felicita: 祝您新年快乐！"
+        },
+        "n6": {
+          "npc": { "zh": "好，好！吃了饺子以后，我们一起看春节晚会。", "py": "Hǎo, hǎo! Chī le jiǎozi yǐhòu, wǒmen yìqǐ kàn Chūnjié wǎnhuì.", "es": "¡Muy bien! Después de cenar los jiaozi vemos juntos la gala de Año Nuevo." },
+          "user": [
+            { "zh": "好啊！我从来没看过春节晚会。", "py": "Hǎo a! Wǒ cónglái méi kàn guo Chūnjié wǎnhuì.", "es": "¡Vale! Nunca he visto la gala de Año Nuevo.", "keywords": ["没看过", "晚会"], "next": "n8" },
+            { "zh": "太好了！看了晚会以后，我给我父母打电话。", "py": "Tài hǎo le! Kàn le wǎnhuì yǐhòu, wǒ gěi wǒ fùmǔ dǎ diànhuà.", "es": "¡Genial! Después de la gala llamo a mis padres.", "keywords": ["以后", "父母"], "next": "n8" }
+          ],
+          "hint": "Acepta el plan; puedes añadir qué harás después con …以后."
+        },
+        "n7": {
+          "npc": { "zh": "你太客气了！这是什么？", "py": "Nǐ tài kèqi le! Zhè shì shénme?", "es": "¡No tenías que molestarte! ¿Qué es?" },
+          "user": [
+            { "zh": "西班牙火腿！因为您喜欢做菜，所以我买了这个。", "py": "Xībānyá huǒtuǐ! Yīnwèi nín xǐhuan zuò cài, suǒyǐ wǒ mǎi le zhège.", "es": "¡Jamón español! Como le gusta cocinar, le he comprado esto.", "keywords": ["因为", "所以", "火腿"], "next": "n6", "goal": 3 },
+            { "zh": "是西班牙的小礼物。祝您新年快乐！", "py": "Shì Xībānyá de xiǎo lǐwù. Zhù nín xīnnián kuàilè!", "es": "Es un detallito de España. ¡Feliz Año Nuevo!", "keywords": ["祝", "礼物"], "next": "n6", "goal": 3 }
+          ],
+          "hint": "Explica tu regalo; si quieres, con 因为…，所以…"
+        },
+        "n8": {
+          "npc": { "zh": "雨果，以后每年春节都来我们家过年吧！", "py": "Yǔguǒ, yǐhòu měi nián Chūnjié dōu lái wǒmen jiā guònián ba!", "es": "Hugo, ¡a partir de ahora ven a pasar con nosotros la Fiesta de la Primavera todos los años!" },
+          "end": true,
+          "feedback": "¡Has sobrevivido a tu primera Nochevieja china! Explicaste por qué estabas en China (因为…所以 / 虽然…但是), contaste un recuerdo con 小时候, dijiste tu signo con 属 y felicitaste con 祝您新年快乐. Recuerda: el 红包 se recibe con las dos manos y no se abre delante de quien lo da."
+        }
+      }
+    },
+    {
+      "id": "a2-u10-mooncakes",
+      "title": "Pasteles de luna para la profesora",
+      "zh": "买月饼送给老师",
+      "level": 2,
+      "setting": "Se acerca la Fiesta del Medio Otoño. Hugo entra en una pastelería cerca de la universidad para comprarle pasteles de luna a la profesora Wang. Tú (la app) eres el dependiente.",
+      "role": "dependiente de la pastelería",
+      "roleZh": "店员",
+      "voice": "m",
+      "goals": ["Decir para quién es el regalo (送给…)", "Poner una pega con 虽然…但是…", "Elegir y justificar con 因为", "Hablar de la leyenda o de las fiestas que vienen"],
+      "vocab": ["月饼", "中秋节", "送给", "礼物", "虽然", "但是", "因为", "传说"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "你好！中秋节快到了，买月饼吗？", "py": "Nǐ hǎo! Zhōngqiūjié kuài dào le, mǎi yuèbǐng ma?", "es": "¡Hola! Ya casi es el Medio Otoño. ¿Vas a comprar pasteles de luna?" },
+          "user": [
+            { "zh": "对，我想买月饼送给我的老师。", "py": "Duì, wǒ xiǎng mǎi yuèbǐng sòng gěi wǒ de lǎoshī.", "es": "Sí, quiero comprarle pasteles de luna a mi profesora.", "keywords": ["送给", "老师"], "next": "n2", "goal": 0 },
+            { "zh": "我想买一个礼物送给老师，中秋节送什么好？", "py": "Wǒ xiǎng mǎi yí ge lǐwù sòng gěi lǎoshī, Zhōngqiūjié sòng shénme hǎo?", "es": "Quiero comprarle un regalo a mi profesora. ¿Qué se regala en el Medio Otoño?", "keywords": ["礼物", "送什么"], "next": "n2", "goal": 0 }
+          ],
+          "hint": "Di para quién es: 送给 + persona."
+        },
+        "n2": {
+          "npc": { "zh": "送月饼最好。这个月饼卖得很好，虽然有点儿贵，但是很好吃。", "py": "Sòng yuèbǐng zuì hǎo. Zhè zhǒng yuèbǐng mài de hěn hǎo, suīrán yǒudiǎnr guì, dànshì hěn hǎochī.", "es": "Lo mejor son pasteles de luna. Estos se venden muy bien: aunque son algo caros, están buenísimos." },
+          "user": [
+            { "zh": "虽然很好吃，但是太贵了。有便宜一点儿的吗？", "py": "Suīrán hěn hǎochī, dànshì tài guì le. Yǒu piányi yìdiǎnr de ma?", "es": "Aunque estén buenos, son demasiado caros. ¿Tiene alguno más barato?", "keywords": ["虽然", "但是", "便宜"], "next": "n3", "goal": 1 },
+            { "zh": "好，我就买这个。多少钱？", "py": "Hǎo, wǒ jiù mǎi zhège. Duōshao qián?", "es": "Vale, me llevo estos. ¿Cuánto es?", "keywords": ["多少钱"], "next": "n4", "goal": 2 }
+          ],
+          "hint": "Pon una pega con 虽然…，但是… o decide y pregunta el precio."
+        },
+        "n3": {
+          "npc": { "zh": "有，这个八十块，那个五十块。", "py": "Yǒu, zhège bāshí kuài, nàge wǔshí kuài.", "es": "Sí: estos cuestan ochenta yuanes y aquellos, cincuenta." },
+          "user": [
+            { "zh": "我要八十块的，因为是送给老师的。", "py": "Wǒ yào bāshí kuài de, yīnwèi shì sòng gěi lǎoshī de.", "es": "Me llevo los de ochenta, porque son para mi profesora.", "keywords": ["因为", "送给"], "next": "n4", "goal": 2 },
+            { "zh": "那我买五十块的吧。", "py": "Nà wǒ mǎi wǔshí kuài de ba.", "es": "Pues me llevo los de cincuenta.", "keywords": ["五十块"], "next": "n4", "goal": 2 }
+          ],
+          "hint": "Elige; si puedes, explica por qué con 因为."
+        },
+        "n4": {
+          "npc": { "zh": "好的。你是留学生吧？你知道中秋节的传说吗？", "py": "Hǎo de. Nǐ shì liúxuéshēng ba? Nǐ zhīdào Zhōngqiūjié de chuánshuō ma?", "es": "Muy bien. Eres estudiante extranjero, ¿no? ¿Conoces la leyenda del Medio Otoño?" },
+          "user": [
+            { "zh": "知道一点儿，传说月亮上住着一个漂亮的女人。", "py": "Zhīdào yìdiǎnr, chuánshuō yuèliang shang zhùzhe yí ge piàoliang de nǚrén.", "es": "Un poco: cuenta la leyenda que en la luna vive una mujer muy guapa.", "keywords": ["传说", "月亮"], "next": "n5", "goal": 3 },
+            { "zh": "不知道。您能告诉我吗？", "py": "Bù zhīdào. Nín néng gàosu wǒ ma?", "es": "No. ¿Me la puede contar?", "keywords": ["告诉"], "next": "n6", "goal": 3 }
+          ],
+          "hint": "Cuenta lo que sepas con 传说… o pide que te lo cuente."
+        },
+        "n5": {
+          "npc": { "zh": "你知道得真多！中秋节以后还有国庆节，放七天假。", "py": "Nǐ zhīdào de zhēn duō! Zhōngqiūjié yǐhòu hái yǒu Guóqìngjié, fàng qī tiān jià.", "es": "¡Cuánto sabes! Después del Medio Otoño viene el Día Nacional: siete días de fiesta." },
+          "user": [
+            { "zh": "我知道！放了假以后，我想去北京。", "py": "Wǒ zhīdào! Fàng le jià yǐhòu, wǒ xiǎng qù Běijīng.", "es": "¡Ya lo sé! Cuando empiecen las vacaciones quiero ir a Pekín.", "keywords": ["以后", "放了假"], "next": "n7" },
+            { "zh": "因为人太多，所以国庆节我在上海过。", "py": "Yīnwèi rén tài duō, suǒyǐ Guóqìngjié wǒ zài Shànghǎi guò.", "es": "Como hay demasiada gente, el Día Nacional lo paso en Shanghái.", "keywords": ["因为", "所以"], "next": "n7" }
+          ],
+          "hint": "Cuenta tus planes para el Día Nacional (…以后 / 因为…所以)."
+        },
+        "n6": {
+          "npc": { "zh": "传说月亮上住着一个漂亮的女人，她以前是人。所以中秋节大家都看月亮。", "py": "Chuánshuō yuèliang shang zhùzhe yí ge piàoliang de nǚrén, tā yǐqián shì rén. Suǒyǐ Zhōngqiūjié dàjiā dōu kàn yuèliang.", "es": "Cuenta la leyenda que en la luna vive una mujer guapísima que antes era humana. Por eso en el Medio Otoño todo el mundo mira la luna." },
+          "user": [
+            { "zh": "原来是这样！谢谢您。", "py": "Yuánlái shì zhèyàng! Xièxie nín.", "es": "¡Así que es eso! Gracias.", "keywords": ["原来"], "next": "n7" },
+            { "zh": "真有意思！我要告诉我的老师。", "py": "Zhēn yǒu yìsi! Wǒ yào gàosu wǒ de lǎoshī.", "es": "¡Qué interesante! Se lo voy a contar a mi profesora.", "keywords": ["有意思"], "next": "n7" }
+          ],
+          "hint": "原来是这样 = «¡ah, así que es eso!»."
+        },
+        "n7": {
+          "npc": { "zh": "好，月饼给你。祝你和你的老师中秋节快乐！", "py": "Hǎo, yuèbǐng gěi nǐ. Zhù nǐ hé nǐ de lǎoshī Zhōngqiūjié kuàilè!", "es": "Aquí tienes los pasteles. ¡Feliz Medio Otoño a ti y a tu profesora!" },
+          "end": true,
+          "feedback": "Regalo conseguido. Usaste 送给 + persona, pusiste una pega con 虽然…但是…, justificaste con 因为 y hablaste de la leyenda o de tus planes. En China los pasteles de luna se regalan a profesores, jefes y familia unos días antes de la fiesta."
+        }
+      }
+    }
+  ]
+}

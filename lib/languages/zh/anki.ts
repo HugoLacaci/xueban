@@ -94,8 +94,14 @@ export const zhAnki: AnkiModelSpec = {
   tags: tagsFor,
   deckFor(w, names) {
     const idx = names.indexOf(w.category);
-    if (w.source === "seed" && idx >= 0) return `${DECK_HSK1}::${String(idx + 1).padStart(2, "0")} ${w.category}`;
-    return DECK_MINE;
+    // semilla HSK 1 (como siempre) y palabras del temario («curso»): submazo por categoría; nivel 2/3 y extras, en su raíz
+    const fromCourse = w.source === "seed" || (w.tags ?? []).includes("curso");
+    if (!fromCourse || idx < 0) return DECK_MINE;
+    const sub = `${String(idx + 1).padStart(2, "0")} ${w.category}`;
+    if (w.source === "seed") return `${DECK_HSK1}::${sub}`;
+    if ((w.hsk ?? []).includes("Extra")) return `${DECK_ROOT}::Vida en China::${sub}`;
+    const lv = w.level && w.level >= 2 && w.level <= 3 ? w.level : 1;
+    return lv === 1 ? `${DECK_HSK1}::${sub}` : `${DECK_ROOT}::HSK ${lv}::${sub}`;
   },
   minePrefix: "mine-",
   apkgFileName: "Chino_HSK1_Hugo",

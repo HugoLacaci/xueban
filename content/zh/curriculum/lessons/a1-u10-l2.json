@@ -1,0 +1,131 @@
+{
+  "id": "a1-u10-l2",
+  "title": "Este libro, esa prenda: 这 / 那 / 哪 + 本 件 张 支",
+  "zh": "这本书很好看",
+  "goal": "Señalar objetos con 这 / 那 / 哪 + clasificador + nombre (这本书, 那件衣服, 哪支笔).",
+  "minutes": 14,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "本", "pinyin": "běn", "es": "(clasificador de libros y cuadernos)", "note": "一本书, 两本书." },
+    { "hanzi": "书", "pinyin": "shū", "es": "libro" },
+    { "hanzi": "本子", "pinyin": "běnzi", "es": "cuaderno, libreta", "note": "Se cuenta con 个 o 本: 一个本子." },
+    { "hanzi": "件", "pinyin": "jiàn", "es": "(clasificador de prendas de cintura para arriba y de asuntos)", "note": "一件衣服; también 一件事 (un asunto)." },
+    { "hanzi": "衣服", "pinyin": "yīfu", "es": "ropa, prenda", "note": "Tono neutro en 服." },
+    { "hanzi": "张", "pinyin": "zhāng", "es": "(clasificador de cosas planas: papel, mesas, camas, fotos)", "note": "一张纸, 一张桌子, 一张床. También es un apellido muy común." },
+    { "hanzi": "纸", "pinyin": "zhǐ", "es": "papel" },
+    { "hanzi": "桌子", "pinyin": "zhuōzi", "es": "mesa", "note": "La superficie es plana: 一张桌子." },
+    { "hanzi": "支", "pinyin": "zhī", "es": "(clasificador de bolígrafos, lápices y objetos alargados)", "note": "一支笔." },
+    { "hanzi": "笔", "pinyin": "bǐ", "es": "bolígrafo, lápiz (cualquier cosa para escribir)" },
+    { "hanzi": "椅子", "pinyin": "yǐzi", "es": "silla", "note": "Su clasificador propio es 把 (lo verás más adelante); de momento, 这个椅子." },
+    { "hanzi": "子", "pinyin": "zi", "es": "(sufijo de nombres: 桌子, 椅子, 本子)", "note": "Como sufijo es tono neutro; como palabra suelta, zǐ es «hijo»." }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "这本书很好看。", "py": "Zhè běn shū hěn hǎokàn.", "es": "Este libro es muy bueno." },
+        { "zh": "我要那件衣服。", "py": "Wǒ yào nà jiàn yīfu.", "es": "Quiero esa prenda." },
+        { "zh": "你要哪支笔？", "py": "Nǐ yào nǎ zhī bǐ?", "es": "¿Qué bolígrafo quieres?" }
+      ]
+    },
+    { "type": "vocab", "title": "Objetos de clase y sus clasificadores", "words": ["本", "书", "本子", "件", "衣服", "张", "纸", "桌子", "支", "笔", "椅子", "子"] },
+    {
+      "type": "phonetics-drill",
+      "title": "El tono neutro: 衣服, 桌子, 椅子",
+      "markdown": "Muchas palabras de dos sílabas tienen la segunda **sin tono**: se dice **corta y floja**, sin esfuerzo, y su altura depende de la sílaba anterior:\n\n- Tras 1.º tono, el neutro queda **a media altura**: 衣服 yī**fu**, 桌子 zhuō**zi**, 东西 dōng**xi**.\n- Tras 3.er tono, queda **algo más alto**: 椅子 yǐ**zi**, 本子 běn**zi** (y el tercero se queda en su parte baja).\n\nEl sufijo **子** casi siempre es neutro. Error típico: pronunciar 衣服 como «yī fú», con las dos sílabas igual de fuertes.",
+      "items": [
+        { "audio": "衣服", "options": ["yīfu", "yīfú", "yìfu"], "answer": 0, "explain": "服 en tono neutro: corto y flojo." },
+        { "audio": "桌子", "options": ["zhuōzi", "zhuōzǐ", "zhuózi"], "answer": 0, "explain": "子 como sufijo, neutro." },
+        { "audio": "椅子", "options": ["yǐzi", "yízi", "yīzi"], "answer": 0, "explain": "椅 es tercer tono (solo la parte baja) + neutro." },
+        { "audio": "东西", "prompt": "¿«cosa» o «este y oeste»?", "options": ["dōngxi (cosa)", "dōngxī (este y oeste)"], "answer": 0, "explain": "Con 西 neutro, «cosa»." },
+        { "audio": "本子", "options": ["běnzi", "bēnzi", "bèngzi"], "answer": 0, "explain": "běn (tercer tono, final -n) + zi neutro." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["本", "衣"],
+      "mnemonics": {
+        "本": "木 (árbol) con una raya en la raíz: la raíz, el origen; de ahí, el libro (y su clasificador).",
+        "衣": "Dibujo de una prenda: el cuello arriba y las mangas y faldones abajo."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "这 / 那 / 哪 + (número) + clasificador + nombre",
+      "markdown": "Igual que con los números, **这** (este), **那** (ese, aquel) y **哪** (¿cuál?) necesitan un **clasificador** antes del nombre:\n\n| | clasificador | nombre | |\n|---|---|---|---|\n| 这 | 本 | 书 | este libro |\n| 那 | 件 | 衣服 | esa prenda |\n| 哪 | 支 | 笔 | ¿qué bolígrafo? |\n| 这 两 | 张 | 纸 | estas dos hojas |\n\n- El **número** va entre el demostrativo y el clasificador: 那**三**本书 = esos tres libros.\n- Cada clasificador agrupa **por forma**: 本 (cosas encuadernadas), 件 (prendas y asuntos), 张 (cosas planas), 支 (cosas alargadas).\n- **个** es el comodín: si no sabes el clasificador, usa 个 y te entenderán; pero con libros, ropa y papel, los chinos usan el suyo.\n- Pronunciación: en la calle oirás **zhèi** běn, **nèi** jiàn, **něi** zhī (这一, 那一, 哪一 fundidos). Las dos formas son correctas.\n- Todo el bloque puede ser **sujeto** (这本书很好看) u **objeto** (我要那件衣服).",
+      "focus": ["subject", "object"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "这本书", "py": "zhè běn shū" }, "adverb": { "zh": "很", "py": "hěn" }, "verb1": { "zh": "好看", "py": "hǎokàn" } }, "end": "。", "es": "Este libro es muy bueno." },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "verb1": { "zh": "要", "py": "yào" }, "object": { "zh": "那件衣服", "py": "nà jiàn yīfu" } }, "end": "。", "es": "Quiero esa prenda." },
+        { "slots": { "subject": { "zh": "雨果", "py": "Yǔguǒ" }, "verb1": { "zh": "要", "py": "yào" }, "object": { "zh": "两张纸", "py": "liǎng zhāng zhǐ" } }, "end": "。", "es": "Hugo quiere dos hojas de papel." },
+        { "slots": { "subject": { "zh": "这支笔", "py": "zhè zhī bǐ" }, "adverb": { "zh": "很", "py": "hěn" }, "verb1": { "zh": "新", "py": "xīn" } }, "end": "。", "es": "Este bolígrafo es muy nuevo." },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "time": { "zh": "明天", "py": "míngtiān" }, "aux": { "zh": "要", "py": "yào" }, "verb1": { "zh": "买", "py": "mǎi" }, "object": { "zh": "那三本书", "py": "nà sān běn shū" } }, "end": "。", "es": "Mañana voy a comprar esos tres libros.", "esOrder": [{ "text": "Mañana", "slot": "time" }, { "text": "(yo)", "slot": "subject" }, { "text": "voy a", "slot": "aux" }, { "text": "comprar", "slot": "verb1" }, { "text": "esos tres libros", "slot": "object" }] }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "不", "py": "bú" }, "verb1": { "zh": "要", "py": "yào" }, "object": { "zh": "这件衣服", "py": "zhè jiàn yīfu" } }, "end": "。", "es": "No quiero esta prenda." },
+        { "slots": { "subject": { "zh": "那张桌子", "py": "nà zhāng zhuōzi" }, "adverb": { "zh": "不", "py": "bú" }, "verb1": { "zh": "大", "py": "dà" } }, "end": "。", "es": "Esa mesa no es grande." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "要", "py": "yào" }, "object": { "zh": "哪本书", "py": "nǎ běn shū" } }, "end": "？", "es": "¿Qué libro quieres?" },
+        { "slots": { "subject": { "zh": "哪件衣服", "py": "nǎ jiàn yīfu" }, "verb1": { "zh": "好看", "py": "hǎokàn" } }, "end": "？", "es": "¿Qué prenda es bonita?" },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "有", "py": "yǒu" }, "object": { "zh": "几支笔", "py": "jǐ zhī bǐ" } }, "end": "？", "es": "¿Cuántos bolígrafos tienes?" }
+      ],
+      "mistakes": [
+        { "wrong": "我有一书。", "right": "我有一本书。", "why": "Entre número y nombre siempre hace falta el clasificador." },
+        { "wrong": "一张衣服", "right": "一件衣服", "why": "张 es para cosas planas (papel, mesas); las prendas van con 件." },
+        { "wrong": "这书本很好看。", "right": "这本书很好看。", "why": "El clasificador va delante del nombre: 这 + 本 + 书." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Antes de clase",
+      "lines": [
+        { "speaker": "安娜", "zh": "雨果，明天上课，你有笔吗？", "py": "Yǔguǒ, míngtiān shàngkè, nǐ yǒu bǐ ma?", "es": "Hugo, mañana hay clase. ¿Tienes bolígrafo?" },
+        { "speaker": "雨果", "zh": "我有一支笔，没有本子。", "py": "Wǒ yǒu yì zhī bǐ, méiyǒu běnzi.", "es": "Tengo un boli, pero no tengo cuaderno." },
+        { "speaker": "安娜", "zh": "我有两个本子。这个本子给你。", "py": "Wǒ yǒu liǎng ge běnzi. Zhège běnzi gěi nǐ.", "es": "Yo tengo dos. Toma, este para ti." },
+        { "speaker": "雨果", "zh": "谢谢！这本书是你的吗？", "py": "Xièxie! Zhè běn shū shì nǐ de ma?", "es": "¡Gracias! ¿Este libro es tuyo?" },
+        { "speaker": "安娜", "zh": "不是，那是大卫的书。", "py": "Bú shì, nà shì Dàwèi de shū.", "es": "No, ese es el libro de David." },
+        { "speaker": "雨果", "zh": "哪本书是你的？", "py": "Nǎ běn shū shì nǐ de?", "es": "¿Y cuál es el tuyo?" },
+        { "speaker": "安娜", "zh": "这本。这本书很好看！", "py": "Zhè běn. Zhè běn shū hěn hǎokàn!", "es": "Este. ¡Es muy bueno!" },
+        { "speaker": "雨果", "zh": "你这件衣服也很好看！", "py": "Nǐ zhè jiàn yīfu yě hěn hǎokàn!", "es": "¡Y esa prenda que llevas también es muy bonita!" }
+      ],
+      "notes": "这本 o 那本 sin nombre detrás es normal cuando ya se sabe de qué se habla (como «este» o «ese» en español). 好看 sirve para libros y películas («bueno, que se lee o se ve con gusto») y para ropa o personas («bonito, guapo»)."
+    },
+    { "type": "exercises", "count": 15, "bank": ["g-measure-words", "g-demonstratives", "u06"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "这本书" }, "adverb": { "zh": "很" }, "verb1": { "zh": "好看" } }, "end": "。", "es": "Este libro es muy bueno." }, "distractors": ["这个书"] },
+        { "sentence": { "slots": { "subject": { "zh": "我" }, "verb1": { "zh": "要" }, "object": { "zh": "那件衣服" } }, "end": "。", "es": "Quiero esa prenda." }, "distractors": ["那张衣服"] },
+        { "sentence": { "slots": { "subject": { "zh": "你" }, "verb1": { "zh": "有" }, "object": { "zh": "几支笔" } }, "end": "？", "es": "¿Cuántos bolígrafos tienes?" }, "distractors": ["吗"] },
+        { "sentence": { "slots": { "time0": { "zh": "明天上午" }, "subject": { "zh": "安娜和大卫" }, "adverb": { "zh": "都" }, "aux": { "zh": "要" }, "verb1": { "zh": "去" }, "verb2": { "zh": "买" }, "object": { "zh": "两本很有名的书" } }, "end": "。", "es": "Mañana por la mañana Ana y David van a ir a comprar dos libros muy famosos." }, "distractors": ["两个"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "这本书很好看。", "py": "Zhè běn shū hěn hǎokàn.", "es": "Este libro es muy bueno." },
+        { "zh": "我要那件衣服。", "py": "Wǒ yào nà jiàn yīfu.", "es": "Quiero esa prenda." },
+        { "zh": "请给我两张纸。", "py": "Qǐng gěi wǒ liǎng zhāng zhǐ.", "es": "Dame dos hojas de papel, por favor." },
+        { "zh": "你要哪支笔？", "py": "Nǐ yào nǎ zhī bǐ?", "es": "¿Qué bolígrafo quieres?" }
+      ],
+      "respond": [
+        { "q": { "zh": "你有几本书？", "py": "Nǐ yǒu jǐ běn shū?", "es": "¿Cuántos libros tienes?" }, "model": { "zh": "我有三本书。", "py": "Wǒ yǒu sān běn shū.", "es": "Tengo tres libros." } },
+        { "q": { "zh": "你要哪件衣服？", "py": "Nǐ yào nǎ jiàn yīfu?", "es": "¿Qué prenda quieres?" }, "model": { "zh": "我要这件衣服。", "py": "Wǒ yào zhè jiàn yīfu.", "es": "Quiero esta." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "La mesa de Hugo",
+      "text": "雨果有一张小桌子，没有椅子。他有三本书、两个本子和四支笔。这本书是王老师的，那两本书是他的。他的衣服不多，他想买一件新衣服。",
+      "es": "Hugo tiene una mesa pequeña, pero no tiene silla. Tiene tres libros, dos cuadernos y cuatro bolígrafos. Este libro es de la profesora Wang; esos dos son suyos. No tiene mucha ropa: quiere comprarse una prenda nueva.",
+      "questions": [
+        { "q": "¿Qué le falta a Hugo?", "options": ["椅子", "桌子", "笔"], "answer": 0 },
+        { "q": "¿Cuántos bolígrafos tiene?", "options": ["四支", "两支", "三支"], "answer": 0 },
+        { "q": "¿Qué quiere comprar?", "options": ["一件新衣服", "一本书", "一张桌子"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

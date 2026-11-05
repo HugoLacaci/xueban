@@ -1,0 +1,135 @@
+{
+  "id": "a2-u11-l4",
+  "title": "¿Otra reunión? 再 y 又",
+  "zh": "我们明天再讨论",
+  "goal": "Distinguir 再 (otra vez o «luego», en lo que aún no ha pasado) de 又 (otra vez, en lo que ya ha pasado) en una reunión de trabajo.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "讨论", "pinyin": "tǎolùn", "es": "debatir, discutir (un tema)", "note": "讨论问题 = tratar un tema. No es «pelearse»." },
+    { "hanzi": "商量", "pinyin": "shāngliang", "es": "consultar, hablarlo (con alguien)", "note": "跟老板商量一下 = hablarlo con el jefe. Segunda sílaba neutra." },
+    { "hanzi": "提", "pinyin": "tí", "es": "plantear, mencionar; llevar (en la mano)", "note": "提问题 = plantear una pregunta." },
+    { "hanzi": "提出", "pinyin": "tíchū", "es": "proponer, plantear", "note": "提出一个办法 = proponer una solución." },
+    { "hanzi": "提到", "pinyin": "tídào", "es": "mencionar, sacar (un tema)" },
+    { "hanzi": "提高", "pinyin": "tígāo", "es": "mejorar, elevar", "note": "提高水平 = subir de nivel." },
+    { "hanzi": "进行", "pinyin": "jìnxíng", "es": "llevar a cabo, desarrollarse", "note": "Formal: 讨论进行了两个小时." },
+    { "hanzi": "说明", "pinyin": "shuōmíng", "es": "explicar, aclarar; explicación", "note": "说明一下 = explicar brevemente." },
+    { "hanzi": "重点", "pinyin": "zhòngdiǎn", "es": "punto clave, lo principal" },
+    { "hanzi": "主要", "pinyin": "zhǔyào", "es": "principal; principalmente", "note": "今天主要讨论… = hoy sobre todo vamos a tratar…" },
+    { "hanzi": "方法", "pinyin": "fāngfǎ", "es": "método, manera (de hacer algo)", "note": "学习方法 = método de estudio." },
+    { "hanzi": "办法", "pinyin": "bànfǎ", "es": "solución, manera (de resolver un problema)", "note": "没办法 = no hay nada que hacer." },
+    { "hanzi": "办", "pinyin": "bàn", "es": "hacer, tramitar, gestionar", "note": "办签证 = tramitar el visado. 怎么办？ = ¿qué hacemos?" }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "我们明天再讨论吧。", "py": "Wǒmen míngtiān zài tǎolùn ba.", "es": "Lo seguimos hablando mañana." },
+        { "zh": "老李今天又提到了这个问题。", "py": "Lǎo Lǐ jīntiān yòu tídào le zhège wèntí.", "es": "Hoy Lao Li ha vuelto a sacar este tema." },
+        { "zh": "你先说明一下重点，我们再商量。", "py": "Nǐ xiān shuōmíng yíxià zhòngdiǎn, wǒmen zài shāngliang.", "es": "Primero explica lo principal y luego lo hablamos." }
+      ]
+    },
+    { "type": "vocab", "title": "Palabras de reunión", "words": ["讨论", "商量", "提", "提出", "提到", "提高", "进行", "说明", "重点", "主要", "方法", "办法", "办"] },
+    {
+      "type": "phonetics-drill",
+      "title": "又 yòu frente a 有 yǒu, y 再 = 在",
+      "markdown": "- **又** *yòu* (cuarto tono, cae) y **有** *yǒu* (tercer tono, baja y sube) solo se distinguen por el tono: 他又来了 / 他有车.\n- **再** y **在** suenan **igual**: *zài*. Los distingue el contexto: 再 va delante de un verbo que aún no ha ocurrido (再讨论); 在 va delante de un lugar o de una acción en curso (在办公室, 在开会).\n- **商量** *shāngliang*: la segunda sílaba es **neutra**.\n- **Dos cláusulas con 先…再…**: la voz se queda en el aire después de la primera (你先说明一下重点 →) y cae al final (我们再商量 ↓).",
+      "items": [
+        { "audio": "又", "options": ["yòu", "yǒu", "yóu"], "answer": 0, "explain": "又 cae (4.º); 有 baja y sube (3.º)." },
+        { "audio": "商量", "options": ["shāngliang", "shàngliáng", "sāngliang"], "answer": 0, "explain": "shāng + liang neutro." },
+        { "audio": "重点", "options": ["zhòngdiǎn", "chóngdiǎn", "zhōngdiǎn"], "answer": 0, "explain": "重 es zhòng (importante, pesado); chóng es «de nuevo»." },
+        { "audio": "说明", "options": ["shuōmíng", "shuòmíng", "suōmíng"], "answer": 0, "explain": "shuō en primer tono, con sh." },
+        { "audio": "你先说明一下重点，我们再商量", "prompt": "¿Dónde va la pausa?", "options": ["你先说明一下重点 / 我们再商量", "你先 / 说明一下重点我们再商量", "你先说明一下 / 重点我们再商量"], "answer": 0, "explain": "La pausa separa las dos cláusulas: primero esto, luego aquello." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["再", "又"],
+      "mnemonics": {
+        "再": "Una pieza con otra raya 一 encima: poner algo igual sobre lo que ya había, «una segunda vez». Mira hacia delante: lo que vas a repetir.",
+        "又": "Dibujo de una mano derecha. La mano que vuelve a hacer lo mismo una y otra vez: «otra vez» (y ya ha pasado). Aparece dentro de 友, 双, 对…"
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "再 (lo que aún no ha pasado) y 又 (lo que ya pasó)",
+      "markdown": "Los dos son «otra vez» y los dos van en el hueco de los **adverbios**, pero miran en direcciones opuestas:\n\n| | Cuándo | Ejemplo |\n|---|---|---|\n| **再** | futuro, órdenes, propuestas: aún **no** ha pasado | 我们明天**再**讨论吧. 请**再**说一遍. |\n| **又** | pasado: **ya** se ha repetido (suele llevar 了) | 老李今天**又**提到了这个问题. |\n| **又** + futuro seguro | lo que se repetirá sí o sí (fechas, rutinas) | 明天**又**是星期一了. |\n\n- **先…再…** = «primero…, luego…»: 你先说明一下，我们再商量.\n- **再 va detrás de los auxiliares**: 我想**再**问一个问题 · 你可以**再**说一遍吗. (En el esqueleto, cuando hay auxiliar, verás 再 pegado al verbo.)\n- Recuerda la convención: dos cláusulas, dos filas.",
+      "focus": ["adverb"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "我们", "py": "wǒmen" }, "time": { "zh": "明天", "py": "míngtiān" }, "adverb": { "zh": "再", "py": "zài" }, "verb1": { "zh": "讨论", "py": "tǎolùn" }, "particle": { "zh": "吧", "py": "ba" } }, "end": "。", "es": "Lo volvemos a hablar mañana.", "esOrder": [{ "text": "Lo volvemos a hablar", "slot": "verb1" }, { "text": "mañana", "slot": "time" }] },
+        { "slots": { "subject": { "zh": "老李", "py": "lǎo Lǐ" }, "time": { "zh": "今天", "py": "jīntiān" }, "adverb": { "zh": "又", "py": "yòu" }, "verb1": { "zh": "提到了", "py": "tídào le" }, "object": { "zh": "这个问题", "py": "zhège wèntí" } }, "end": "。", "es": "Hoy Lao Li ha vuelto a sacar este tema." },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "adverb": { "zh": "先", "py": "xiān" }, "verb1": { "zh": "说明一下", "py": "shuōmíng yíxià" }, "object": { "zh": "重点", "py": "zhòngdiǎn" } }, "end": "，", "es": "Primero explica lo principal… (1.ª parte)" },
+        { "slots": { "subject": { "zh": "我们", "py": "wǒmen" }, "adverb": { "zh": "再", "py": "zài" }, "verb1": { "zh": "商量", "py": "shāngliang" } }, "end": "。", "es": "…y luego lo hablamos. (2.ª parte)" },
+        { "slots": { "subject": { "zh": "明天", "py": "míngtiān" }, "adverb": { "zh": "又", "py": "yòu" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "星期一", "py": "xīngqīyī" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Mañana ya es lunes otra vez." },
+        { "slots": { "subject": { "zh": "雨果", "py": "Yǔguǒ" }, "time": { "zh": "上个星期", "py": "shàng ge xīngqī" }, "adverb": { "zh": "又", "py": "yòu" }, "verb1": { "zh": "提出了", "py": "tíchū le" }, "object": { "zh": "一个办法", "py": "yí ge bànfǎ" } }, "end": "。", "es": "La semana pasada Hugo volvió a proponer una solución." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "他", "py": "tā" }, "adverb": { "zh": "又没", "py": "yòu méi" }, "verb1": { "zh": "来", "py": "lái" }, "verb2": { "zh": "开会", "py": "kāihuì" } }, "end": "。", "es": "Otra vez no ha venido a la reunión." },
+        { "slots": { "subject": { "zh": "我们", "py": "wǒmen" }, "adverb": { "zh": "别再", "py": "bié zài" }, "verb1": { "zh": "讨论", "py": "tǎolùn" }, "object": { "zh": "这个问题", "py": "zhège wèntí" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "No sigamos hablando de este tema." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你们", "py": "nǐmen" }, "adverb": { "zh": "又", "py": "yòu" }, "verb1": { "zh": "开会", "py": "kāihuì" }, "particle": { "zh": "了吗", "py": "le ma" } }, "end": "？", "es": "¿Otra vez tenéis reunión?" },
+        { "slots": { "subject": { "zh": "我们", "py": "wǒmen" }, "time": { "zh": "什么时候", "py": "shénme shíhou" }, "adverb": { "zh": "再", "py": "zài" }, "verb1": { "zh": "商量", "py": "shāngliang" } }, "end": "？", "es": "¿Cuándo lo volvemos a hablar?" }
+      ],
+      "mistakes": [
+        { "wrong": "他昨天再来了。", "right": "他昨天又来了。", "why": "Lo que ya se ha repetido se dice con 又; 再 es para lo que todavía no ha pasado." },
+        { "wrong": "明天我又来。", "right": "明天我再来。", "why": "Una repetición futura o una propuesta va con 再 (salvo fechas y rutinas seguras: 明天又是星期一)." },
+        { "wrong": "我再想问一个问题。", "right": "我想再问一个问题。", "why": "再 va detrás del auxiliar (想, 要, 可以, 能) y justo delante del verbo." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "La reunión de los lunes",
+      "lines": [
+        { "speaker": "刘经理", "zh": "今天我们主要讨论去西班牙旅游的新路线。", "py": "Jīntiān wǒmen zhǔyào tǎolùn qù Xībānyá lǚyóu de xīn lùxiàn.", "es": "Hoy vamos a tratar sobre todo la nueva ruta de viajes a España." },
+        { "speaker": "老李", "zh": "刘经理，我又要提那个问题：机票太贵了。", "py": "Liú jīnglǐ, wǒ yòu yào tí nàge wèntí: jīpiào tài guì le.", "es": "Director Liu, vuelvo a sacar el mismo tema: los billetes de avión son demasiado caros." },
+        { "speaker": "刘经理", "zh": "老李，你上个星期已经提过了，今天又提到了。", "py": "Lǎo Lǐ, nǐ shàng ge xīngqī yǐjīng tíguo le, jīntiān yòu tídào le.", "es": "Lao Li, ya lo dijiste la semana pasada y hoy lo vuelves a mencionar." },
+        { "speaker": "老李", "zh": "因为这个问题很重要啊！机票太贵，客人就不来了。", "py": "Yīnwèi zhège wèntí hěn zhòngyào a! Jīpiào tài guì, kèrén jiù bù lái le.", "es": "¡Porque es un problema importante! Si los billetes son tan caros, los clientes no vienen." },
+        { "speaker": "雨果", "zh": "我能提一个办法吗？先坐飞机到马德里，再坐高铁去别的城市。", "py": "Wǒ néng tí yí ge bànfǎ ma? Xiān zuò fēijī dào Mǎdélǐ, zài zuò gāotiě qù biéde chéngshì.", "es": "¿Puedo proponer una solución? Primero en avión hasta Madrid y luego en AVE a las demás ciudades." },
+        { "speaker": "小王", "zh": "这个方法不错，高铁比飞机便宜。", "py": "Zhège fāngfǎ búcuò, gāotiě bǐ fēijī piányi.", "es": "Es buena idea: el tren es más barato que el avión." },
+        { "speaker": "刘经理", "zh": "雨果，你能说明一下重点吗？", "py": "Yǔguǒ, nǐ néng shuōmíng yíxià zhòngdiǎn ma?", "es": "Hugo, ¿puedes explicar lo principal?" },
+        { "speaker": "雨果", "zh": "第一，机票便宜；第二，客人能看到更多的城市。", "py": "Dì yī, jīpiào piányi; dì èr, kèrén néng kàndào gèng duō de chéngshì.", "es": "Primero, los billetes salen más baratos; segundo, los clientes pueden ver más ciudades." },
+        { "speaker": "刘经理", "zh": "好。这件事我们明天再跟老板商量吧。", "py": "Hǎo. Zhè jiàn shì wǒmen míngtiān zài gēn lǎobǎn shāngliang ba.", "es": "Bien. Mañana lo volvemos a hablar con el jefe." },
+        { "speaker": "老李", "zh": "明天又要开会啊！", "py": "Míngtiān yòu yào kāihuì a!", "es": "¡Mañana otra reunión!" }
+      ],
+      "notes": "明天又要开会 usa 又 en futuro porque es algo seguro y que se repite (y que a Lao Li no le hace ninguna gracia). 高铁 es el tren de alta velocidad; en España, el AVE."
+    },
+    { "type": "exercises", "count": 17, "bank": ["u09", "g-modal-verbs", "g-le", "g-word-order"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "我们" }, "time": { "zh": "明天" }, "adverb": { "zh": "再" }, "verb1": { "zh": "讨论" }, "particle": { "zh": "吧" } }, "end": "。", "es": "Lo volvemos a hablar mañana." }, "distractors": ["又"] },
+        { "sentence": { "slots": { "subject": { "zh": "老李" }, "time": { "zh": "今天" }, "adverb": { "zh": "又" }, "verb1": { "zh": "提到了" }, "object": { "zh": "机票的问题" } }, "end": "。", "es": "Hoy Lao Li ha vuelto a mencionar el problema de los billetes." }, "distractors": ["再"] },
+        { "sentence": { "slots": { "subject": { "zh": "他" }, "adverb": { "zh": "又没" }, "verb1": { "zh": "来" }, "verb2": { "zh": "开会" } }, "end": "。", "es": "Otra vez no ha venido a la reunión." }, "distractors": ["再"] },
+        { "sentence": { "slots": { "subject": { "zh": "我们" }, "time": { "zh": "下个星期一" }, "adverb": { "zh": "再" }, "with": { "zh": "跟刘经理一起" }, "verb1": { "zh": "商量" }, "object": { "zh": "这个办法" } }, "end": "。", "es": "El lunes que viene volveremos a hablar de esta solución con el director Liu." }, "distractors": ["又"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "我们明天再讨论吧。", "py": "Wǒmen míngtiān zài tǎolùn ba.", "es": "Lo seguimos hablando mañana." },
+        { "zh": "他又提到了这个问题。", "py": "Tā yòu tídào le zhège wèntí.", "es": "Ha vuelto a mencionar este tema." },
+        { "zh": "请您再说一遍。", "py": "Qǐng nín zài shuō yí biàn.", "es": "Repítalo, por favor." },
+        { "zh": "你先说明一下重点，我们再商量。", "py": "Nǐ xiān shuōmíng yíxià zhòngdiǎn, wǒmen zài shāngliang.", "es": "Primero explica lo principal y luego lo hablamos." }
+      ],
+      "respond": [
+        { "q": { "zh": "你昨天去公司了，今天呢？", "py": "Nǐ zuótiān qù gōngsī le, jīntiān ne?", "es": "Ayer fuiste a la empresa, ¿y hoy?" }, "model": { "zh": "今天我又去了，明天不去了。", "py": "Jīntiān wǒ yòu qù le, míngtiān bú qù le.", "es": "Hoy he vuelto a ir; mañana ya no voy." } },
+        { "q": { "zh": "这个问题我们现在讨论吗？", "py": "Zhège wèntí wǒmen xiànzài tǎolùn ma?", "es": "¿Tratamos este tema ahora?" }, "model": { "zh": "现在时间不够，我们明天再讨论吧。", "py": "Xiànzài shíjiān bú gòu, wǒmen míngtiān zài tǎolùn ba.", "es": "Ahora no hay tiempo; mejor lo tratamos mañana." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "El acta de la reunión",
+      "text": "星期一上午，公司又开会了。这次主要讨论去西班牙旅游的新路线，讨论进行了两个小时。老李又提到了机票的问题：机票太贵，客人越来越少。雨果提出了一个办法：先坐飞机到马德里，再坐高铁去巴塞罗那和别的城市。刘经理让雨果说明一下这个方法的重点。雨果说，这样机票更便宜，客人也能看到更多的地方。同事们都觉得这个办法不错，可是刘经理说要再跟老板商量一下。开完会，刘经理对雨果说：“你的汉语提高了很多！下次开会，你再多说说你的意见。”下午雨果还要去办签证，他很高兴地走了。",
+      "es": "El lunes por la mañana volvió a haber reunión en la empresa. Esta vez se trató sobre todo la nueva ruta de viajes a España, y el debate duró dos horas. Lao Li volvió a sacar el problema de los billetes: son demasiado caros y cada vez hay menos clientes. Hugo propuso una solución: primero en avión hasta Madrid y luego en AVE a Barcelona y a otras ciudades. El director Liu le pidió a Hugo que explicara lo principal de su propuesta. Hugo dijo que así los billetes salen más baratos y los clientes pueden ver más sitios. A todos los compañeros les pareció una buena idea, pero el director Liu dijo que tenía que volver a hablarlo con el jefe. Al terminar, el director Liu le dijo a Hugo: «¡Tu chino ha mejorado mucho! En la próxima reunión, vuelve a darnos tu opinión». Por la tarde Hugo todavía tenía que ir a tramitar el visado, y se fue muy contento.",
+      "questions": [
+        { "q": "¿Cuánto duró el debate?", "options": ["两个小时", "两天", "二十分钟"], "answer": 0 },
+        { "q": "¿Qué problema volvió a mencionar Lao Li?", "options": ["机票太贵", "高铁太慢", "办公室太小"], "answer": 0 },
+        { "q": "¿Qué tiene que hacer Hugo por la tarde?", "options": ["办签证", "再开会", "坐高铁"], "answer": 0 },
+        { "q": "¿Qué frase es correcta?", "options": ["老李昨天又提到了这个问题。", "老李昨天再提到了这个问题。", "老李明天又提到了这个问题。"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

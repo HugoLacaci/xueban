@@ -1,0 +1,139 @@
+{
+  "id": "b1-u05-l3",
+  "title": "Basta con tener wifi: 只要…就",
+  "zh": "只要有网，就能看直播",
+  "goal": "Decir que basta una condición para que algo ocurra con 只要…就, hablando de radio, televisión y series.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "广播", "pinyin": "guǎngbō", "es": "radio (emisión); retransmitir por radio", "note": "听广播 = escuchar la radio." },
+    { "hanzi": "电台", "pinyin": "diàntái", "es": "emisora de radio" },
+    { "hanzi": "电视台", "pinyin": "diànshìtái", "es": "cadena de televisión", "note": "台 = estación, plataforma." },
+    { "hanzi": "播出", "pinyin": "bōchū", "es": "emitir (un programa)", "note": "每天晚上八点播出 = se emite a las ocho." },
+    { "hanzi": "播放", "pinyin": "bōfàng", "es": "reproducir, poner, emitir", "note": "播放音乐, 播放比赛." },
+    { "hanzi": "直播", "pinyin": "zhíbō", "es": "directo, retransmisión en directo", "note": "看直播 = verlo en directo. También los directos de las apps." },
+    { "hanzi": "收看", "pinyin": "shōukàn", "es": "ver (un programa de televisión)", "note": "Más formal que 看: 欢迎收看 = bienvenidos a…" },
+    { "hanzi": "收听", "pinyin": "shōutīng", "es": "escuchar, sintonizar (la radio)" },
+    { "hanzi": "听众", "pinyin": "tīngzhòng", "es": "oyente, oyentes", "note": "众 = mucha gente." },
+    { "hanzi": "连续剧", "pinyin": "liánxùjù", "es": "serie (de televisión)", "note": "Lit. «drama continuado». 一集 = un capítulo." },
+    { "hanzi": "影视", "pinyin": "yǐngshì", "es": "cine y televisión", "note": "影视节目 = programas de cine y tele." },
+    { "hanzi": "只是", "pinyin": "zhǐshì", "es": "solo, simplemente; solo que…", "note": "我只是问问 = solo pregunto. 好是好，只是太贵 = está bien, solo que es caro." },
+    { "hanzi": "按", "pinyin": "àn", "es": "pulsar, apretar; según", "note": "按这儿 = pulsa aquí. 按时 = a su hora." }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "只要有网，就能看直播。", "py": "Zhǐyào yǒu wǎng, jiù néng kàn zhíbō.", "es": "Basta con tener internet para ver el directo." },
+        { "zh": "只要每天听，听力就会进步。", "py": "Zhǐyào měi tiān tīng, tīnglì jiù huì jìnbù.", "es": "Con tal de que escuches todos los días, la comprensión oral mejorará." },
+        { "zh": "这个连续剧每天晚上八点播出。", "py": "Zhège liánxùjù měi tiān wǎnshang bā diǎn bōchū.", "es": "Esta serie se emite todas las noches a las ocho." }
+      ]
+    },
+    { "type": "vocab", "title": "Radio, tele y series", "words": ["广播", "电台", "电视台", "播出", "播放", "直播", "收看", "收听", "听众", "连续剧", "影视", "只是", "按"] },
+    {
+      "type": "phonetics-drill",
+      "title": "La condición sube, el resultado baja",
+      "markdown": "En una frase con **只要…就**, la entonación tiene dos partes:\n\n1. **La condición** (只要有网) termina con una **subida ligera** y una **pausa corta** (la coma): es como el «si…» español que deja la frase en el aire.\n2. **El resultado** (就能看直播) arranca con 就, corto y sin fuerza, y **baja** hasta el final.\n\nEl peso de la frase cae en lo que **basta**: 只要**有网**…, 只要**每天听**…\n\nSonidos de hoy: **播 bō** (b sin aire, no *pō*), **众 zhòng** (zh + -ong, cuarto tono), **只是 zhǐshì** (dos retroflejas seguidas) y **台 tái** (t con aire, segundo tono).",
+      "items": [
+        { "audio": "只要有网，就能看直播。", "prompt": "¿Dónde está la pausa?", "options": ["Después de 网, al acabar la condición", "Después de 只要", "Después de 就"], "answer": 0, "explain": "La pausa separa la condición del resultado; 就 abre la segunda parte." },
+        { "audio": "播放", "options": ["bōfàng", "pōfàng", "bōfáng"], "answer": 0, "explain": "b sin soplo + primer tono; 放 cae (cuarto)." },
+        { "audio": "听众", "options": ["tīngzhòng", "tīngzhōng", "dīngzhòng"], "answer": 0, "explain": "t aspirada; 众 en cuarto tono." },
+        { "audio": "只是", "options": ["zhǐshì", "zhǐshí", "zìshì"], "answer": 0, "explain": "zh y sh, las dos con la lengua doblada; 是 cae." },
+        { "audio": "电视台", "options": ["diànshìtái", "diànshìtài", "tiānshìtái"], "answer": 0, "explain": "台 sube (segundo tono)." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["播", "众"],
+      "mnemonics": {
+        "播": "扌 (mano) + 番 (sembrar, da el sonido): esparcir semillas con la mano. Hoy lo que se «siembra» son ondas y señales: 广播 (sembrar a lo ancho), 直播 (en directo).",
+        "众": "Tres 人 juntos: una persona, otra, otra… mucha gente. 听众 = la mucha gente que escucha."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "只要 + condición，(sujeto) + 就 + resultado",
+      "markdown": "**只要…就** = «basta con que…, con tal de que…»: la condición es **suficiente**, no hace falta nada más. Ya lo viste en a2-u12; ahora con más soltura:\n\n- **只要** va al principio (delante del sujeto) **o** detrás del sujeto: 只要你每天听… / 你只要每天听…\n- **就** va siempre **detrás del sujeto** de la segunda parte, delante del verbo (y del auxiliar: 就**能**, 就**会**).\n- Si los dos sujetos son el mismo, el segundo se suele callar: 你只要每天听，就会进步.\n\n**Convención**: una fila por cláusula; 只要 en *Tiempo inicial* si va delante del sujeto (en *Adverbios* si va detrás), 就 en *Adverbios*.\n\nNo lo confundas con **只有…才** (la próxima lección): 只要 dice «basta con esto»; 只有 dice «solo con esto, sin esto no».",
+      "focus": ["time0", "adverb"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "time0": { "zh": "只要", "py": "zhǐyào" }, "verb1": { "zh": "有", "py": "yǒu" }, "object": { "zh": "网", "py": "wǎng" } }, "end": "，", "es": "Basta con que haya internet… (1.ª parte)", "esOrder": [{ "text": "Basta con que", "slot": "time0" }, { "text": "haya", "slot": "verb1" }, { "text": "internet", "slot": "object" }] },
+        { "slots": { "subject": { "zh": "我们", "py": "wǒmen" }, "adverb": { "zh": "就", "py": "jiù" }, "aux": { "zh": "能", "py": "néng" }, "verb1": { "zh": "收看", "py": "shōukàn" }, "object": { "zh": "足球直播", "py": "zúqiú zhíbō" } }, "end": "。", "es": "…para que podamos ver el fútbol en directo. (2.ª parte)" },
+        { "slots": { "time0": { "zh": "只要", "py": "zhǐyào" }, "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "按", "py": "àn" }, "object": { "zh": "这儿", "py": "zhèr" } }, "end": "，", "es": "Basta con que pulses aquí… (1.ª parte)" },
+        { "slots": { "subject": { "zh": "手机", "py": "shǒujī" }, "adverb": { "zh": "就", "py": "jiù" }, "aux": { "zh": "会", "py": "huì" }, "verb1": { "zh": "播放", "py": "bōfàng" }, "object": { "zh": "这个电台", "py": "zhège diàntái" } }, "end": "。", "es": "…y el móvil pone esta emisora. (2.ª parte)" },
+        { "slots": { "subject": { "zh": "雨果", "py": "Yǔguǒ" }, "adverb": { "zh": "只要", "py": "zhǐyào" }, "verb1": { "zh": "有", "py": "yǒu" }, "object": { "zh": "空儿", "py": "kòngr" } }, "end": "，", "es": "Hugo, con tal de tener un rato… (1.ª parte, 只要 detrás del sujeto)" },
+        { "slots": { "adverb": { "zh": "就", "py": "jiù" }, "verb1": { "zh": "看", "py": "kàn" }, "object": { "zh": "中国连续剧", "py": "Zhōngguó liánxùjù" } }, "end": "。", "es": "…se pone series chinas. (2.ª parte)" }
+      ],
+      "negative": [
+        { "slots": { "time0": { "zh": "只要", "py": "zhǐyào" }, "subject": { "zh": "你", "py": "nǐ" }, "adverb": { "zh": "不", "py": "bù" }, "verb1": { "zh": "看", "py": "kàn" }, "object": { "zh": "新闻", "py": "xīnwén" } }, "end": "，", "es": "Con tal de que no mires las noticias… (1.ª parte)" },
+        { "slots": { "adverb": { "zh": "就不", "py": "jiù bù" }, "verb1": { "zh": "知道", "py": "zhīdào" }, "object": { "zh": "比赛的结果", "py": "bǐsài de jiéguǒ" } }, "end": "。", "es": "…no sabrás el resultado del partido. (2.ª parte)" }
+      ],
+      "question": [
+        { "slots": { "time0": { "zh": "只要", "py": "zhǐyào" }, "subject": { "zh": "我", "py": "wǒ" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "会员", "py": "huìyuán" } }, "end": "，", "es": "Con tal de que sea socio… (1.ª parte)" },
+        { "slots": { "adverb": { "zh": "就", "py": "jiù" }, "aux": { "zh": "能", "py": "néng" }, "verb1": { "zh": "看", "py": "kàn" }, "object": { "zh": "这个连续剧", "py": "zhège liánxùjù" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "…¿ya puedo ver esta serie?" }
+      ],
+      "mistakes": [
+        { "wrong": "只要你每天听，才能听懂。", "right": "只要你每天听，就能听懂。", "why": "只要 va con 就; 才 es la pareja de 只有." },
+        { "wrong": "只要你努力，就你能进步。", "right": "只要你努力，你就能进步。", "why": "就 es un adverbio: va detrás del sujeto, nunca delante." },
+        { "wrong": "只要有网，能看直播。", "right": "只要有网，就能看直播。", "why": "En la segunda parte hace falta 就: sin él, la frase queda coja." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "El partido a las cuatro de la mañana",
+      "lines": [
+        { "speaker": "大卫", "zh": "雨果，今天晚上有西班牙队的足球比赛，你看吗？", "py": "Yǔguǒ, jīntiān wǎnshang yǒu Xībānyá duì de zúqiú bǐsài, nǐ kàn ma?", "es": "Hugo, esta noche juega la selección española, ¿lo vas a ver?" },
+        { "speaker": "雨果", "zh": "当然看！可是宿舍的电视收不到西班牙的电视台。", "py": "Dāngrán kàn! Kěshì sùshè de diànshì shōu bu dào Xībānyá de diànshìtái.", "es": "¡Claro! Pero la tele de la residencia no coge las cadenas españolas." },
+        { "speaker": "大卫", "zh": "没关系，网上有直播。只要有网，就能收看。", "py": "Méi guānxi, wǎngshang yǒu zhíbō. Zhǐyào yǒu wǎng, jiù néng shōukàn.", "es": "No pasa nada, en internet lo dan en directo. Basta con tener conexión." },
+        { "speaker": "雨果", "zh": "太好了！几点播出？", "py": "Tài hǎo le! Jǐ diǎn bōchū?", "es": "¡Genial! ¿A qué hora lo echan?" },
+        { "speaker": "大卫", "zh": "北京时间早上四点。", "py": "Běijīng shíjiān zǎoshang sì diǎn.", "es": "A las cuatro de la mañana, hora de Pekín." },
+        { "speaker": "雨果", "zh": "四点？那么早！好是好，只是我明天八点有课……", "py": "Sì diǎn? Nàme zǎo! Hǎo shì hǎo, zhǐshì wǒ míngtiān bā diǎn yǒu kè……", "es": "¿A las cuatro? ¡Qué pronto! Estaría bien, solo que mañana tengo clase a las ocho…" },
+        { "speaker": "大卫", "zh": "比赛结束以后，网上也会播放。只要你不看新闻，就不知道结果。", "py": "Bǐsài jiéshù yǐhòu, wǎngshang yě huì bōfàng. Zhǐyào nǐ bú kàn xīnwén, jiù bù zhīdào jiéguǒ.", "es": "Cuando acabe el partido también lo pondrán en internet. Con tal de que no mires las noticias, no sabrás el resultado." },
+        { "speaker": "雨果", "zh": "好主意。对了，你平时听中文广播吗？", "py": "Hǎo zhǔyi. Duì le, nǐ píngshí tīng Zhōngwén guǎngbō ma?", "es": "Buena idea. Por cierto, ¿tú sueles escuchar la radio en chino?" },
+        { "speaker": "大卫", "zh": "听啊。我每天早上都收听一个电台的节目，听众可以打电话跟主持人聊天。", "py": "Tīng a. Wǒ měi tiān zǎoshang dōu shōutīng yí ge diàntái de jiémù, tīngzhòng kěyǐ dǎ diànhuà gēn zhǔchírén liáotiān.", "es": "Sí. Todas las mañanas escucho un programa de una emisora en el que los oyentes llaman y charlan con el presentador." },
+        { "speaker": "雨果", "zh": "你听得懂吗？", "py": "Nǐ tīng de dǒng ma?", "es": "¿Lo entiendes?" },
+        { "speaker": "大卫", "zh": "刚开始听不懂。可是只要每天听，听力就会进步。", "py": "Gāng kāishǐ tīng bu dǒng. Kěshì zhǐyào měi tiān tīng, tīnglì jiù huì jìnbù.", "es": "Al principio no lo entendía. Pero con tal de escuchar a diario, el oído mejora." },
+        { "speaker": "雨果", "zh": "我也想试试。我还很喜欢中国的影视节目，特别是连续剧。", "py": "Wǒ yě xiǎng shìshi. Wǒ hái hěn xǐhuan Zhōngguó de yǐngshì jiémù, tèbié shì liánxùjù.", "es": "Yo también quiero probar. Además me gustan los programas chinos de cine y tele, sobre todo las series." },
+        { "speaker": "大卫", "zh": "那你按这儿。只要你是会员，就能看很多连续剧。", "py": "Nà nǐ àn zhèr. Zhǐyào nǐ shì huìyuán, jiù néng kàn hěn duō liánxùjù.", "es": "Pues pulsa aquí. Con tal de ser socio, puedes ver un montón de series." }
+      ],
+      "notes": "Entre España y China hay 6 o 7 horas de diferencia: un partido de las nueve de la noche en Madrid se ve a las tres o cuatro de la madrugada en Shanghái. Las plataformas chinas de vídeo (como 爱奇艺 o 腾讯视频) funcionan con 会员 (suscripción). 好是好，只是… = «estar, está bien, solo que…»: una forma educada de poner una pega."
+    },
+    { "type": "exercises", "count": 16, "bank": ["g-word-order", "g-modal-verbs", "g-complements"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "time0": { "zh": "只要有网，" }, "subject": { "zh": "我们" }, "adverb": { "zh": "就" }, "aux": { "zh": "能" }, "verb1": { "zh": "看" }, "object": { "zh": "直播" } }, "end": "。", "es": "Con tal de que haya internet, podemos verlo en directo." }, "distractors": ["才"] },
+        { "sentence": { "slots": { "subject": { "zh": "这个连续剧" }, "time": { "zh": "每天晚上八点" }, "verb1": { "zh": "播出" } }, "end": "。", "es": "Esta serie se emite todas las noches a las ocho." } },
+        { "sentence": { "slots": { "time0": { "zh": "只要你每天听，" }, "subject": { "zh": "你的听力" }, "adverb": { "zh": "就" }, "aux": { "zh": "会" }, "verb1": { "zh": "进步" } }, "end": "。", "es": "Con tal de que escuches cada día, tu comprensión oral mejorará." }, "distractors": ["才"] },
+        { "sentence": { "slots": { "subject": { "zh": "我" }, "adverb": { "zh": "只是" }, "verb1": { "zh": "问问" } }, "end": "。", "es": "Solo pregunto." }, "distractors": ["只要"] },
+        { "sentence": { "slots": { "time0": { "zh": "只要你不看手机上的新闻，" }, "subject": { "zh": "你" }, "adverb": { "zh": "明天早上就不" }, "aux": { "zh": "会" }, "verb1": { "zh": "知道" }, "object": { "zh": "西班牙队比赛的结果" } }, "end": "。", "es": "Con tal de que no mires las noticias en el móvil, mañana por la mañana no sabrás el resultado del partido de España." } }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "只要有网，就能看直播。", "py": "Zhǐyào yǒu wǎng, jiù néng kàn zhíbō.", "es": "Con tal de que haya internet, se puede ver el directo." },
+        { "zh": "只要每天听，听力就会进步。", "py": "Zhǐyào měi tiān tīng, tīnglì jiù huì jìnbù.", "es": "Con tal de escuchar a diario, el oído mejora." },
+        { "zh": "好是好，只是太早了。", "py": "Hǎo shì hǎo, zhǐshì tài zǎo le.", "es": "Estar, está bien; solo que es demasiado pronto." },
+        { "zh": "这个连续剧每天晚上八点播出。", "py": "Zhège liánxùjù měi tiān wǎnshang bā diǎn bōchū.", "es": "Esta serie se emite todas las noches a las ocho." }
+      ],
+      "respond": [
+        { "q": { "zh": "你平时听广播吗？", "py": "Nǐ píngshí tīng guǎngbō ma?", "es": "¿Sueles escuchar la radio?" }, "model": { "zh": "不常听，我往往用手机看节目。", "py": "Bù cháng tīng, wǒ wǎngwǎng yòng shǒujī kàn jiémù.", "es": "No mucho; suelo ver los programas en el móvil." } },
+        { "q": { "zh": "怎么才能提高听力？", "py": "Zěnme cái néng tígāo tīnglì?", "es": "¿Cómo se puede mejorar la comprensión oral?" }, "model": { "zh": "只要每天听一点儿中文广播，听力就会慢慢提高。", "py": "Zhǐyào měi tiān tīng yìdiǎnr Zhōngwén guǎngbō, tīnglì jiù huì mànmàn tígāo.", "es": "Con tal de escuchar un poco de radio en chino cada día, el oído mejora poco a poco." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Radio, móvil y series",
+      "text": "在中国，很多人还是喜欢听广播。小李的爸爸每天早上一起床就打开收音机，收听新闻。他说：“只要有广播，我就知道今天发生了什么事。”雨果和大卫是年轻人，他们不常看电视，往往用手机收看节目。只要有网，在宿舍、在地铁上就能看。大卫每天早上收听一个中文电台的节目，听众可以打电话跟主持人聊天。大卫说，刚开始他听不懂，可是只要每天听，听力就会慢慢进步。雨果很喜欢中国的影视节目，特别是连续剧。有一个连续剧每天晚上八点播出，一共四十集，雨果下了课就按时回宿舍看。小李笑他：“你只是想看漂亮的演员吧？”雨果说：“不是！只要我每天看一集，我的汉语就会进步。”周末有足球比赛的时候，电视台会直播，比赛结束以后网上也会播放。",
+      "es": "En China mucha gente sigue escuchando la radio. El padre de Xiao Li, nada más levantarse, enciende la radio y escucha las noticias. Dice: «Con tener la radio, ya sé lo que ha pasado hoy». Hugo y David son jóvenes: no ven mucho la tele y suelen ver los programas en el móvil. Basta con tener internet para verlos en la residencia o en el metro. David escucha todas las mañanas un programa de una emisora en chino en el que los oyentes llaman y charlan con el presentador. Dice que al principio no entendía nada, pero que, con tal de escuchar a diario, el oído va mejorando poco a poco. A Hugo le gustan los programas chinos de cine y televisión, sobre todo las series. Hay una que se emite todas las noches a las ocho, con cuarenta capítulos en total, y Hugo, nada más salir de clase, vuelve puntual a la residencia para verla. Xiao Li se ríe de él: «Tú lo que quieres es ver a los actores guapos, ¿no?». Hugo contesta: «¡Que no! Con tal de ver un capítulo al día, mi chino mejorará». Los fines de semana, cuando hay fútbol, la tele lo da en directo, y al terminar el partido también lo ponen en internet.",
+      "questions": [
+        { "q": "¿Qué hace el padre de Xiao Li nada más levantarse?", "options": ["收听新闻", "看连续剧", "看足球"], "answer": 0 },
+        { "q": "¿Con qué suelen ver los programas Hugo y David?", "options": ["手机", "电视", "收音机"], "answer": 0 },
+        { "q": "¿Cuántos capítulos tiene la serie?", "options": ["四十集", "八集", "十四集"], "answer": 0 },
+        { "q": "Según Hugo, ¿para qué ve la serie?", "options": ["Para que mejore su chino", "Para ver a los actores", "Para dormirse"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

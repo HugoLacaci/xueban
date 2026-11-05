@@ -1,0 +1,75 @@
+{
+  "id": "e0-08",
+  "title": "Reglas de pronunciación: lo que el pinyin esconde",
+  "zh": "发音规则",
+  "goal": "Leer bien las letras del pinyin que no suenan como parecen (e, -i, uo, ian, r, x/sh/s) y evitar los errores típicos de los hispanohablantes.",
+  "minutes": 14,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "谁", "pinyin": "shéi", "es": "¿quién?", "note": "También se oye shuí, sobre todo en lectura formal; en la calle, shéi." },
+    { "hanzi": "人", "pinyin": "rén", "es": "persona", "note": "La r china no vibra: lengua doblada hacia atrás, casi como la «j» francesa." },
+    { "hanzi": "热", "pinyin": "rè", "es": "calor; caliente", "note": "Ya la viste en los sonidos zh/ch/sh/r: aquí, para practicar la e sola." },
+    { "hanzi": "学生", "pinyin": "xuésheng", "es": "estudiante", "note": "xué: la e es abierta, como en español. sheng: tono neutro." },
+    { "hanzi": "月", "pinyin": "yuè", "es": "luna; mes", "note": "yuè = ü + e abierta: «üe»." },
+    { "hanzi": "天", "pinyin": "tiān", "es": "cielo; día", "note": "Se escribe ian, pero suena «tien»." }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "他是谁？", "py": "Tā shì shéi?", "es": "¿Quién es él?" },
+        { "zh": "他是学生。", "py": "Tā shì xuésheng.", "es": "Es estudiante." },
+        { "zh": "他是中国人。", "py": "Tā shì Zhōngguó rén.", "es": "Es chino." }
+      ]
+    },
+    { "type": "vocab", "title": "Palabras con trampa", "words": ["谁", "人", "热", "学生", "月", "天"] },
+    {
+      "type": "phonetics-drill",
+      "title": "x, sh, s y la r",
+      "markdown": "Tres sibilantes que en español serían una sola «s»:\n\n- **s**: como la s española, con la lengua detrás de los dientes de abajo (四 sì).\n- **x**: lengua **plana**, la punta tocando los dientes de abajo y los labios en sonrisa; suena entre «s» y «sh» (西 xī, 学 xué). Solo va con i y ü.\n- **sh**: punta de la lengua **doblada hacia atrás**, hacia el paladar (是 shì).\n\nY la **r** inicial no es la erre española: no vibra. Pon la lengua como para *sh* y deja sonar la voz (人 rén, 热 rè).",
+      "items": [
+        { "audio": "学", "options": ["xué", "shué", "sué"], "answer": 0, "explain": "x con la lengua plana y sonrisa; además, la e de -üe es abierta, como en español." },
+        { "audio": "是", "options": ["sì", "shì", "xì"], "answer": 1, "explain": "sh: lengua doblada hacia atrás." },
+        { "audio": "四", "options": ["sì", "shì", "xì"], "answer": 0, "explain": "s: como en español, con un zumbido final en lugar de «i»." },
+        { "audio": "人", "options": ["lén", "rén", "yén"], "answer": 1, "explain": "La r china es continua, sin golpe de lengua: ni l ni erre." },
+        { "audio": "热", "options": ["rè", "lè", "rì"], "answer": 0, "explain": "rè: r + e china (una «e» que se oye casi como «ö» sin redondear)." },
+        { "audio": "月", "options": ["yè", "yuè", "wè"], "answer": 1, "explain": "yuè lleva ü: labios redondeados al principio." },
+        { "audio": "天", "options": ["tiān", "tān", "diān"], "answer": 0, "explain": "Suena «tien», con aire en la t (aspirada)." },
+        { "audio": "谁", "options": ["shéi", "séi", "xéi"], "answer": 0, "explain": "sh + ei, segundo tono, que sube." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["月"],
+      "mnemonics": {
+        "月": "Pictograma de la luna creciente con dos líneas dentro. También significa «mes»: 一月 es «mes uno», enero. Como componente a la izquierda (朋, 服) suele venir de 肉 «carne», no de la luna: es una pista de forma, no de significado."
+      }
+    },
+    {
+      "type": "explain",
+      "title": "Seis cosas que el pinyin no te dice",
+      "markdown": "### 1. La e cambia según la compañía\n- **e sola o tras consonante** (喝 hē, 热 rè, 了 le): no es la e española. Pon la boca como para decir «o», **sin redondear los labios**, y di «e»: sale un sonido parecido a «ö» o a la «e» muda francesa.\n- **e en -ie y -üe** (谢 xiè, 学 xué, 月 yuè): aquí sí es una **e abierta**, como la española.\n- **e en ei** (谁 shéi, 北 běi): como la e española de «rey».\n- **e en en / eng** (人 rén): una e relajada, neutra, como la de *the* en inglés.\n\n### 2. La -i vacía\nEn **zi ci si** y **zhi chi shi ri**, la i **no es una «i»**: es la prolongación del zumbido de la consonante (四 sì, 是 shì, 日 rì). Si dices una «i» española, 是 shì se acerca a 戏 xì. La i verdadera solo aparece tras otras consonantes (你 nǐ, 七 qī, 一 yī).\n\n### 3. uo\nSe pronuncian las dos vocales, deslizando de la u a la o: 国 **guó** «guo», 我 **wǒ** «uo». Tras b, p, m, f la o lleva también una u escondida: **bō** suena «buo».\n\n### 4. ian = «ien»\nLa a de -ian se cierra y suena casi como **e**: 天 **tiān** «tien», 先 **xiān** «sien», 见 **jiàn** «chien» (j suave). Lo mismo con yan «ien». En cambio en **üan** (yuan, quan, xuan) se oye más abierta, a medio camino.\n\n### 5. La r inicial\nNo vibra nunca. Lengua doblada hacia atrás, como para **sh**, pero con voz. Se parece a la «r» inglesa de *run* o a la «j» francesa de *je*. Al final de sílaba (erhua, 哪儿 nǎr) es una r inglesa suave.\n\n### 6. x, sh y s\nRepasa el ejercicio de arriba: **s** delante (dientes), **x** plana (sonrisa, solo con i/ü), **sh** atrás (lengua doblada)."
+    },
+    { "type": "spanish-errors" },
+    {
+      "type": "explain",
+      "title": "Los errores que delatan a un hispanohablante",
+      "markdown": "| Error típico | Cómo corregirlo |\n|---|---|\n| Leer **j** como la jota española | j es una «ch» suave sin aire (家 jiā). La jota española se parece más a la **h** china (喝 hē), aunque más suave. |\n| Leer **z** y **c** con ceceo (como en «zapato», «cielo») | z = «ts» suave; c = «ts» con aire (字 zì, 菜 cài). Nunca es el sonido de la z de España. |\n| No aspirar **p t k q ch c** | Con la mano delante de la boca tienes que notar un soplo: 他 tā, 怕 pà. Si no sale aire, suena como d o b. |\n| Hacer vibrar la **r** | La r china nunca vibra: 人 rén, 热 rè. |\n| Decir «u» en vez de **ü** | Di «i» y redondea los labios sin mover la lengua: 鱼 yú, 女 nǚ. |\n| Comerse la **-ng** o confundirla con -n | -n: la lengua toca detrás de los dientes. -ng: la lengua se queda atrás, como en «tengo» dicho rápido. 中 zhōng ≠ zhōn. |\n| Leer la **-i** de shi/si como «i» | Es un zumbido: 是 shì, 四 sì. |\n| Leer **ian** como «ian» | Suena «ien»: 天 tiān. |\n\nNo intentes corregirlo todo a la vez: elige **un** error por semana y exagera la versión correcta."
+    },
+    { "type": "exercises", "count": 10, "bank": ["u0"] },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "他是谁？", "py": "Tā shì shéi?", "es": "¿Quién es él?" },
+        { "zh": "他是学生。", "py": "Tā shì xuésheng.", "es": "Es estudiante." },
+        { "zh": "他是中国人。", "py": "Tā shì Zhōngguó rén.", "es": "Es chino." },
+        { "zh": "天热了！", "py": "Tiān rè le!", "es": "¡Ya hace calor!" }
+      ],
+      "respond": [
+        { "q": { "zh": "他是谁？", "py": "Tā shì shéi?", "es": "¿Quién es él?" }, "model": { "zh": "他是老师。", "py": "Tā shì lǎoshī.", "es": "Es el profesor." } },
+        { "q": { "zh": "他是学生？", "py": "Tā shì xuésheng?", "es": "¿Es estudiante?" }, "model": { "zh": "对，他是学生。", "py": "Duì, tā shì xuésheng.", "es": "Sí, es estudiante." } }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

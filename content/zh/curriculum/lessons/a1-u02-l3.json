@@ -1,0 +1,128 @@
+{
+  "id": "a1-u02-l3",
+  "title": "¿Cuántos años tienes? 岁, 几岁 y 多大",
+  "zh": "你多大？",
+  "goal": "Decir tu edad con 岁 (sin verbo) y preguntarla con 几岁 a un niño y con 多大 a un adulto joven.",
+  "minutes": 13,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "岁", "pinyin": "suì", "es": "año (de edad)", "note": "Solo para la edad: 我二十二岁." },
+    { "hanzi": "多", "pinyin": "duō", "es": "mucho; ¿cuán…? (delante de un adjetivo)", "note": "多大 = ¿cuán mayor? → ¿cuántos años tienes?" },
+    { "hanzi": "今年", "pinyin": "jīnnián", "es": "este año" },
+    { "hanzi": "年", "pinyin": "nián", "es": "año (del calendario)", "note": "No confundir con 岁: 年 es el año del calendario; 岁, el de la edad." },
+    { "hanzi": "小朋友", "pinyin": "xiǎopéngyou", "es": "niño, niña (al hablarle)", "note": "Literalmente «amiguito»: así se llama a cualquier niño que no conoces." },
+    { "hanzi": "大学生", "pinyin": "dàxuéshēng", "es": "estudiante universitario", "note": "Hugo estudia un máster: es 研究生 (yánjiūshēng), pero 学生 sirve siempre." },
+    { "hanzi": "问", "pinyin": "wèn", "es": "preguntar" },
+    { "hanzi": "回答", "pinyin": "huídá", "es": "responder, contestar; respuesta" }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "我二十三岁。", "py": "Wǒ èrshísān suì.", "es": "Tengo veintitrés años." },
+        { "zh": "你多大？", "py": "Nǐ duō dà?", "es": "¿Cuántos años tienes?" },
+        { "zh": "小朋友，你几岁？", "py": "Xiǎopéngyou, nǐ jǐ suì?", "es": "Pequeño, ¿cuántos años tienes?" }
+      ]
+    },
+    { "type": "vocab", "title": "La edad", "words": ["岁", "多", "今年", "年", "小朋友", "大学生", "问", "回答"] },
+    {
+      "type": "phonetics-drill",
+      "title": "ui = uei: 岁, 对, 回",
+      "markdown": "El pinyin **abrevia**: cuando *uei* va detrás de una consonante se escribe **ui**, pero se sigue oyendo una «e» pequeña en medio:\n\n- 岁 **suì** → suena *suei*\n- 对 **duì** → *duei*\n- 回 **huí** → *huei*\n\nSi lees *ui* como en español («cuidado»), suena raro. Piensa en «u-ei» muy rápido.\n\nLa tilde va siempre **sobre la última letra**: su**ì**, du**ì**, hu**í**. Y ojo a **岁 suì** (s delante) frente a **谁 shéi** (sh atrás, y otra vocal).",
+      "items": [
+        { "audio": "岁", "options": ["suì", "shuì", "sù"], "answer": 0, "explain": "s delante + ui (suena «suei») + 4.º tono." },
+        { "audio": "回答", "options": ["huídá", "huìdà", "hūdá"], "answer": 0, "explain": "huí (2.º) + dá (2.º): dos tonos que suben." },
+        { "audio": "对", "options": ["duì", "dù", "tuì"], "answer": 0, "explain": "d sin aire + ui + 4.º tono." },
+        { "audio": "几岁", "options": ["jǐ suì", "jì suì", "jǐ shuì"], "answer": 0, "explain": "jǐ (3.º, aquí medio tercero: solo baja) + suì." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["岁", "问"],
+      "mnemonics": {
+        "岁": "山 (montaña) + 夕 (anochecer): cada año que pasa es otra montaña y otro anochecer.",
+        "问": "门 (puerta) + 口 (boca): asomas la boca por la puerta para preguntar."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "La edad sin verbo: sujeto + número + 岁",
+      "markdown": "En español «*tengo* veintitrés años»; en chino **no hay verbo**: 我**二十三岁** (lit. «yo veintitrés años»). No se usa ~~有~~ como en español, y el 是 sobra.\n\n- **Negativa**: aquí sí aparece **是**: 我**不是**二十岁 (no tengo veinte años).\n- **Preguntas**:\n  - a un **niño**: 你**几**岁？ (几 = esperas un número pequeño)\n  - a un **adulto joven** o a un igual: 你**多大**？ (lit. «¿cuán grande eres?»)\n  - a una persona **mayor**, con más respeto: 您多大年纪？ (lo verás más adelante).\n\n多大 se escribe en el esqueleto como **adverbio (多) + adjetivo (大)**: es la forma de preguntar «¿cuán…?».",
+      "focus": ["object"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "object": { "zh": "二十三岁", "py": "èrshísān suì" } }, "end": "。", "es": "Tengo veintitrés años.", "esOrder": [{ "text": "(Yo)", "slot": "subject" }, { "text": "tengo" }, { "text": "veintitrés años", "slot": "object" }] },
+        { "slots": { "subject": { "zh": "小李", "py": "Xiǎo Lǐ" }, "object": { "zh": "二十岁", "py": "èrshí suì" } }, "end": "。", "es": "Xiao Li tiene veinte años." },
+        { "slots": { "subject": { "zh": "安娜", "py": "Ānnà" }, "adverb": { "zh": "也", "py": "yě" }, "object": { "zh": "二十三岁", "py": "èrshísān suì" } }, "end": "。", "es": "Anna también tiene veintitrés años." },
+        { "slots": { "subject": { "zh": "小朋友", "py": "xiǎopéngyou" }, "object": { "zh": "五岁", "py": "wǔ suì" } }, "end": "。", "es": "El niño tiene cinco años." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "不", "py": "bú" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "二十岁", "py": "èrshí suì" } }, "end": "。", "es": "No tengo veinte años.", "esOrder": [{ "text": "No", "slot": "adverb" }, { "text": "tengo", "slot": "verb1" }, { "text": "veinte años", "slot": "object" }] },
+        { "slots": { "subject": { "zh": "大卫", "py": "Dàwèi" }, "adverb": { "zh": "不", "py": "bú" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "大学生", "py": "dàxuéshēng" } }, "end": "。", "es": "David no es estudiante universitario (de grado)." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "adverb": { "zh": "多", "py": "duō" }, "verb1": { "zh": "大", "py": "dà" } }, "end": "？", "es": "¿Cuántos años tienes? (lit. «¿cuán mayor eres?»)", "esOrder": [{ "text": "¿Cuántos años", "slot": "adverb" }, { "text": "tienes?", "slot": "verb1" }] },
+        { "slots": { "subject": { "zh": "小朋友", "py": "xiǎopéngyou" }, "object": { "zh": "几岁", "py": "jǐ suì" } }, "end": "？", "es": "¿Cuántos años tiene el niño?" },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "大学生", "py": "dàxuéshēng" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿Eres universitario?" }
+      ],
+      "mistakes": [
+        { "wrong": "我有二十三岁。", "right": "我二十三岁。", "why": "La edad no lleva «tener»: número + 岁 directamente detrás del sujeto." },
+        { "wrong": "我二十三年。", "right": "我二十三岁。", "why": "年 es el año del calendario; para la edad se usa 岁." },
+        { "wrong": "我不二十岁。", "right": "我不是二十岁。", "why": "En la negativa sí hace falta 是: 不是 + edad." },
+        { "wrong": "王老师，您几岁？", "right": "王老师，您多大？ (o mejor, no se pregunta)", "why": "几岁 es para niños; a un adulto, 多大. A un profesor o a alguien mayor, preguntar la edad es poco cortés." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "En el parque del campus",
+      "lines": [
+        { "speaker": "安娜", "zh": "小李，你今年多大？", "py": "Xiǎo Lǐ, nǐ jīnnián duō dà?", "es": "Xiao Li, ¿cuántos años tienes?" },
+        { "speaker": "小李", "zh": "我今年二十岁。我是大学生。你呢？", "py": "Wǒ jīnnián èrshí suì. Wǒ shì dàxuéshēng. Nǐ ne?", "es": "Este año cumplo veinte. Estoy en la universidad. ¿Y tú?" },
+        { "speaker": "安娜", "zh": "我二十三岁。雨果也二十三岁。", "py": "Wǒ èrshísān suì. Yǔguǒ yě èrshísān suì.", "es": "Tengo veintitrés. Hugo también tiene veintitrés." },
+        { "speaker": "雨果", "zh": "不对！我不是二十三岁，我二十四岁。", "py": "Bú duì! Wǒ bú shì èrshísān suì, wǒ èrshísì suì.", "es": "¡No! No tengo veintitrés: tengo veinticuatro." },
+        { "speaker": "安娜", "zh": "对不起！……小朋友，你好！你几岁？", "py": "Duìbuqǐ! … Xiǎopéngyou, nǐ hǎo! Nǐ jǐ suì?", "es": "¡Perdón! … ¡Hola, pequeña! ¿Cuántos años tienes?" },
+        { "speaker": "小朋友", "zh": "我五岁。你们是老师吗？", "py": "Wǒ wǔ suì. Nǐmen shì lǎoshī ma?", "es": "Tengo cinco. ¿Sois profesores?" },
+        { "speaker": "雨果", "zh": "不是，我们是学生。你叫什么名字？", "py": "Bú shì, wǒmen shì xuésheng. Nǐ jiào shénme míngzi?", "es": "No, somos estudiantes. ¿Cómo te llamas?" },
+        { "speaker": "小朋友", "zh": "我叫明明。", "py": "Wǒ jiào Míngming.", "es": "Me llamo Mingming." }
+      ],
+      "notes": "Los chinos preguntan la edad con mucha más naturalidad que en España, sobre todo entre jóvenes: no es indiscreto. A los niños se les habla con 小朋友 y se les pregunta 你几岁？. 今年 («este año») delante del número es muy frecuente: 我今年二十岁."
+    },
+    { "type": "exercises", "count": 14, "bank": ["g-price-age", "g-numbers", "g-question-words", "u02"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "我" }, "object": { "zh": "二十三岁" } }, "end": "。", "es": "Tengo veintitrés años." }, "distractors": ["有", "年"] },
+        { "sentence": { "slots": { "subject": { "zh": "你" }, "adverb": { "zh": "多" }, "verb1": { "zh": "大" } }, "end": "？", "es": "¿Cuántos años tienes?" }, "distractors": ["吗"] },
+        { "sentence": { "slots": { "subject": { "zh": "我" }, "adverb": { "zh": "不" }, "verb1": { "zh": "是" }, "object": { "zh": "二十岁" } }, "end": "。", "es": "No tengo veinte años." }, "distractors": ["有"] },
+        { "sentence": { "slots": { "subject": { "zh": "安娜" }, "adverb": { "zh": "也" }, "object": { "zh": "二十三岁" }, "particle": { "zh": "吗" } }, "end": "？", "es": "¿Anna también tiene veintitrés años?" }, "distractors": ["呢", "年"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "你多大？", "py": "Nǐ duō dà?", "es": "¿Cuántos años tienes?" },
+        { "zh": "我今年二十四岁。", "py": "Wǒ jīnnián èrshísì suì.", "es": "Este año cumplo veinticuatro." },
+        { "zh": "小朋友，你几岁？", "py": "Xiǎopéngyou, nǐ jǐ suì?", "es": "Pequeño, ¿cuántos años tienes?" },
+        { "zh": "我不是二十岁。", "py": "Wǒ bú shì èrshí suì.", "es": "No tengo veinte años." }
+      ],
+      "respond": [
+        { "q": { "zh": "你多大？", "py": "Nǐ duō dà?", "es": "¿Cuántos años tienes?" }, "model": { "zh": "我二十四岁。", "py": "Wǒ èrshísì suì.", "es": "Tengo veinticuatro años." } },
+        { "q": { "zh": "你是大学生吗？", "py": "Nǐ shì dàxuéshēng ma?", "es": "¿Eres universitario?" }, "model": { "zh": "对，我是学生。", "py": "Duì, wǒ shì xuésheng.", "es": "Sí, soy estudiante." } },
+        { "q": { "zh": "你二十岁吗？", "py": "Nǐ èrshí suì ma?", "es": "¿Tienes veinte años?" }, "model": { "zh": "不是，我二十四岁。", "py": "Bú shì, wǒ èrshísì suì.", "es": "No, tengo veinticuatro." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Preguntas y respuestas",
+      "text": "王老师问：“雨果，你多大？”雨果回答：“我今年二十四岁。”王老师问：“安娜呢？”安娜回答：“我二十三岁。”小李是大学生，他二十岁。明明是小朋友，她五岁。大卫多大？大卫不回答！",
+      "es": "La profesora Wang pregunta: «Hugo, ¿cuántos años tienes?». Hugo responde: «Este año cumplo veinticuatro». La profesora pregunta: «¿Y Anna?». Anna responde: «Tengo veintitrés». Xiao Li es universitario: tiene veinte años. Mingming es una niña: tiene cinco años. ¿Cuántos años tiene David? ¡David no contesta!",
+      "questions": [
+        { "q": "¿Cuántos años tiene Hugo?", "options": ["24", "23", "20"], "answer": 0 },
+        { "q": "¿Quién es universitario?", "options": ["小李", "明明", "王老师"], "answer": 0 },
+        { "q": "¿A quién se le preguntaría 你几岁？", "options": ["明明", "王老师", "雨果"], "answer": 0 },
+        { "q": "¿Qué hace David?", "options": ["No contesta", "Dice que tiene 20 años", "Pregunta a la profesora"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

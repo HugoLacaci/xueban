@@ -20,6 +20,7 @@ import { dayPhase, Enso, Seal, Lantern } from "@/components/ornament";
 import { cn } from "@/lib/utils";
 import { targetLang } from "@/lib/languages/registry";
 import { Mixed } from "@/components/target/mixed";
+import { LivingNotesNews } from "@/components/notes/living-news";
 
 
 export function TodayDashboard() {
@@ -192,6 +193,9 @@ export function TodayDashboard() {
           {ItemOfDay ? <ItemOfDay dayIndex={dayIndex} /> : null}
         </Card>
       </section>
+
+      {/* Novedades en los apuntes vivos (solo si hay) */}
+      <LivingNotesNews />
 
       {/* Accesos rápidos */}
       <section aria-label="Accesos rápidos">

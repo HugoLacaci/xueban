@@ -1,0 +1,1094 @@
+{
+  "id": "adverbios",
+  "title": "Adverbios",
+  "zh": "副词",
+  "order": 10,
+  "icon": "Gauge",
+  "summary": "也, 都, 很, 常常, 已经, 才, 再… Todos viven en el mismo sitio: detrás del sujeto y delante del verbo (y del auxiliar). Aquí se reúnen por familias: también y todos, grado, frecuencia, tiempo y repetición.",
+  "kind": "topic",
+  "reviewed": false,
+  "sections": [
+    {
+      "id": "ye-tambien",
+      "title": "也: «también» tiene un asiento fijo",
+      "unlockedBy": "a1-u01-l3",
+      "markdown": "### Detrás del sujeto, delante del verbo\n\nEn español «también» se mueve: «*también* yo», «yo *también*», «soy estudiante *también*». En chino **no**: 也 va siempre en el hueco de los **adverbios**, entre el sujeto y el verbo.\n\n- 我**也**是学生。 Yo también soy estudiante.\n- 我**也**很高兴。 Yo también estoy encantado (也 va delante de 很).\n- **Pregunta**: 你**也**是学生吗？\n\n### «Tampoco» = 也不\n\n«Tampoco» no tiene palabra propia: es **也 + negación**. 我**也不**是老师 = yo tampoco soy profesor (lit. «yo también no soy»).\n\n> ❌ **Error típico**: 也我是学生 (calco de «también yo») → 我**也**是学生.\n\n> ❌ **Error típico**: 我是学生也 → 我**也**是学生. Ni al principio ni al final.\n\n> ❌ **Error típico**: 我不也是 → 我**也不**是. 也 va antes de la negación.",
+      "skeleton": {
+        "focus": ["adverb"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "adverb": { "zh": "也", "py": "yě" },
+              "verb1": { "zh": "是", "py": "shì" },
+              "object": { "zh": "学生", "py": "xuésheng" }
+            },
+            "end": "。",
+            "es": "Yo también soy estudiante.",
+            "esOrder": [
+              { "text": "Yo", "slot": "subject" },
+              { "text": "también", "slot": "adverb" },
+              { "text": "soy", "slot": "verb1" },
+              { "text": "estudiante", "slot": "object" }
+            ]
+          },
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "adverb": { "zh": "也很", "py": "yě hěn" },
+              "verb1": { "zh": "高兴", "py": "gāoxìng" }
+            },
+            "end": "。",
+            "es": "Yo también estoy encantado."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "李先生", "py": "Lǐ xiānsheng" },
+              "adverb": { "zh": "也不", "py": "yě bú" },
+              "verb1": { "zh": "是", "py": "shì" },
+              "object": { "zh": "老师", "py": "lǎoshī" }
+            },
+            "end": "。",
+            "es": "El señor Li tampoco es profesor."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "我是西班牙人，你呢？——我也是西班牙人。", "py": "Wǒ shì Xībānyá rén, nǐ ne? — Wǒ yě shì Xībānyá rén.", "es": "Soy español, ¿y tú? —Yo también soy español." },
+        { "zh": "你也是学生吗？", "py": "Nǐ yě shì xuésheng ma?", "es": "¿Tú también eres estudiante?" },
+        { "zh": "认识你，我也很高兴。", "py": "Rènshi nǐ, wǒ yě hěn gāoxìng.", "es": "Yo también estoy encantado de conocerte." },
+        { "zh": "我不是老师，安娜也不是。", "py": "Wǒ bú shì lǎoshī, Ānnà yě bú shì.", "es": "Yo no soy profesor, y Ana tampoco." }
+      ],
+      "sourceNotes": ["zh-grammar-ye-dou"]
+    },
+    {
+      "id": "dou-todos",
+      "title": "都: «todos», mirando hacia atrás",
+      "unlockedBy": "a1-u03-l5",
+      "markdown": "### 都 resume lo que tiene a la izquierda\n\n**都** va en el mismo hueco que 也 (detrás del sujeto, delante del verbo) y **resume lo que va delante**, que tiene que ser plural: 我们**都**, 爸爸和妈妈**都**, 我爷爷奶奶**都**.\n\n- 我们**都**是学生。 Todos somos estudiantes.\n- 爸爸和妈妈**都**是老师。 Papá y mamá son profesores (los dos).\n- Con 也: el orden es siempre **也都**: 他们**也都**是学生.\n\n### 都不 ≠ 不都\n\n| | significa |\n|---|---|\n| 他们**都不**说英语 | **ninguno** habla inglés |\n| 他们**不都**是中国人 | **no todos** son chinos |\n\n> 💡 **Truco**: A 和 B casi siempre llama a 都: 爸爸和妈妈**都**是老师. Si tienes dos sujetos unidos con 和, pon 都 delante del verbo.\n\n> ❌ **Error típico**: 都他们是学生 (calco de «todos ellos») → 他们**都**是学生. 都 **nunca** va delante del sujeto.\n\n> ⚠️ **Ojo**: 都 no es «todos» como sujeto. «Todos van» no es ✗都去, sino 他们都去.",
+      "skeleton": {
+        "focus": ["adverb"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "我们", "py": "wǒmen" },
+              "adverb": { "zh": "都", "py": "dōu" },
+              "verb1": { "zh": "是", "py": "shì" },
+              "object": { "zh": "学生", "py": "xuésheng" }
+            },
+            "end": "。",
+            "es": "Todos somos estudiantes.",
+            "esOrder": [
+              { "text": "Todos", "slot": "adverb" },
+              { "text": "(nosotros)", "slot": "subject" },
+              { "text": "somos", "slot": "verb1" },
+              { "text": "estudiantes", "slot": "object" }
+            ]
+          },
+          {
+            "slots": {
+              "subject": { "zh": "安娜和大卫", "py": "Ānnà hé Dàwèi" },
+              "adverb": { "zh": "也都", "py": "yě dōu" },
+              "verb1": { "zh": "是", "py": "shì" },
+              "object": { "zh": "外国人", "py": "wàiguó rén" }
+            },
+            "end": "。",
+            "es": "Ana y David también son extranjeros (los dos)."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "他们", "py": "tāmen" },
+              "adverb": { "zh": "都不", "py": "dōu bù" },
+              "verb1": { "zh": "说", "py": "shuō" },
+              "object": { "zh": "英语", "py": "Yīngyǔ" }
+            },
+            "end": "。",
+            "es": "Ninguno de ellos habla inglés."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "爸爸和妈妈都是老师。", "py": "Bàba hé māma dōu shì lǎoshī.", "es": "Papá y mamá son profesores (los dos)." },
+        { "zh": "我们全家都喜欢猫。", "py": "Wǒmen quánjiā dōu xǐhuan māo.", "es": "A toda nuestra familia le gustan los gatos." },
+        { "zh": "他们不都是中国人。", "py": "Tāmen bù dōu shì Zhōngguó rén.", "es": "No todos son chinos." },
+        { "zh": "我爷爷奶奶都是老人。", "py": "Wǒ yéye nǎinai dōu shì lǎorén.", "es": "Mis abuelos (paternos) son los dos mayores." },
+        { "zh": "你们都有狗吗？", "py": "Nǐmen dōu yǒu gǒu ma?", "es": "¿Tenéis todos perro?" }
+      ],
+      "sourceNotes": ["zh-grammar-ye-dou", "zh-contrast-he-ye-dou"]
+    },
+    {
+      "id": "mei-dou",
+      "title": "每…都: «cada día, todos los días»",
+      "unlockedBy": "a1-u07-l1",
+      "markdown": "### Una pareja fija\n\n**每** = «cada». Como habla de «todos», el verbo suele llevar **都** delante: 我**每天都**吃早饭. Los chinos dicen las dos cosas: «cada día, todos (los días), desayuno». Tómalo como una fórmula: **每 … 都 + verbo**.\n\n- 每天 va en el hueco del **tiempo** (delante del verbo); 都, en el de los **adverbios**.\n- **天** y **年** van sin clasificador: 每天, 每年. Los demás lo llevan: 每**个**星期, 每**个**月, 每**个**人.\n\n> ❌ **Error típico**: 每个天 → **每天**.\n\n> ❌ **Error típico**: 我都每天学习 → 我**每天都**学习. 都 va después de 每天, justo delante del verbo.\n\n> ⚠️ **Ojo**: con 每 no se pone el 了 de acción completada (lo verás en la U17): un hábito no es algo que se termina.\n\n> 💡 **Truco**: para tu rutina, **我每天 + hora + verbo**: 我每天七点起床.",
+      "skeleton": {
+        "focus": ["time", "adverb"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "time": { "zh": "每天", "py": "měi tiān" },
+              "adverb": { "zh": "都", "py": "dōu" },
+              "verb1": { "zh": "吃", "py": "chī" },
+              "object": { "zh": "早饭", "py": "zǎofàn" }
+            },
+            "end": "。",
+            "es": "Desayuno todos los días.",
+            "esOrder": [
+              { "text": "Desayuno", "slot": "verb1" },
+              { "text": "todos los días", "slot": "time" }
+            ]
+          },
+          {
+            "slots": {
+              "subject": { "zh": "雨果", "py": "Yǔguǒ" },
+              "time": { "zh": "每天七点", "py": "měi tiān qī diǎn" },
+              "verb1": { "zh": "起床", "py": "qǐchuáng" }
+            },
+            "end": "。",
+            "es": "Hugo se levanta todos los días a las siete."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "我每天都洗澡。", "py": "Wǒ měi tiān dōu xǐzǎo.", "es": "Me ducho todos los días." },
+        { "zh": "小李每天早上都吃早饭。", "py": "Xiǎo Lǐ měi tiān zǎoshang dōu chī zǎofàn.", "es": "Xiao Li desayuna todas las mañanas." },
+        { "zh": "每个星期六我都不上课。", "py": "Měi ge xīngqīliù wǒ dōu bú shàngkè.", "es": "Los sábados nunca tengo clase." },
+        { "zh": "我们每个人都有一个中国名字。", "py": "Wǒmen měi ge rén dōu yǒu yí ge Zhōngguó míngzi.", "es": "Cada uno de nosotros tiene un nombre chino." }
+      ],
+      "sourceNotes": ["zh-grammar-mei-every"]
+    },
+    {
+      "id": "frecuencia-a1",
+      "title": "常常, 有时候 y 不常: cada cuánto",
+      "unlockedBy": "a1-u07-l3",
+      "markdown": "### Dos sitios para la frecuencia\n\n- **常常 / 常** (a menudo) es un adverbio: hueco de los **adverbios**, delante del verbo: 王老师**常常**回家做饭.\n- **有时候 / 有时** (a veces) suele **abrir la frase**: **有时候**我十二点睡觉. (También cabe detrás del sujeto.)\n\n**Negativa**: **不常** (no a menudo), no ~~不常常~~: 我**不常**吃早饭.\n\n> ⚠️ **Ojo**: en español «a veces» y «a menudo» pueden ir al final («ceno en casa *a menudo*»). En chino, **nunca** detrás del verbo.\n\n> 💡 **Truco**: verás más grados en A2 (总是, 经常, 一般, 很少, 偶尔…): todos en el mismo hueco.",
+      "skeleton": {
+        "focus": ["adverb", "time0"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "王老师", "py": "Wáng lǎoshī" },
+              "adverb": { "zh": "常常", "py": "chángcháng" },
+              "verb1": { "zh": "回家", "py": "huí jiā" },
+              "verb2": { "zh": "做饭", "py": "zuòfàn" }
+            },
+            "end": "。",
+            "es": "La profesora Wang vuelve a menudo a casa a cocinar.",
+            "esOrder": [
+              { "text": "La profesora Wang", "slot": "subject" },
+              { "text": "vuelve a casa", "slot": "verb1" },
+              { "text": "a cocinar", "slot": "verb2" },
+              { "text": "a menudo", "slot": "adverb" }
+            ]
+          },
+          {
+            "slots": {
+              "time0": { "zh": "有时候", "py": "yǒu shíhou" },
+              "subject": { "zh": "我们", "py": "wǒmen" },
+              "time": { "zh": "十二点", "py": "shí'èr diǎn" },
+              "verb1": { "zh": "睡觉", "py": "shuìjiào" }
+            },
+            "end": "。",
+            "es": "A veces nos acostamos a las doce."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "adverb": { "zh": "不常", "py": "bù cháng" },
+              "verb1": { "zh": "吃", "py": "chī" },
+              "object": { "zh": "早饭", "py": "zǎofàn" }
+            },
+            "end": "。",
+            "es": "No suelo desayunar."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "大卫常常十二点睡觉。", "py": "Dàwèi chángcháng shí'èr diǎn shuìjiào.", "es": "David se acuesta a menudo a las doce." },
+        { "zh": "有时候我回家吃晚饭。", "py": "Yǒu shíhou wǒ huí jiā chī wǎnfàn.", "es": "A veces vuelvo a casa a cenar." },
+        { "zh": "你常常做饭吗？——不常。", "py": "Nǐ chángcháng zuòfàn ma? — Bù cháng.", "es": "¿Cocinas a menudo? —No mucho." }
+      ]
+    },
+    {
+      "id": "grado",
+      "title": "Grado: de 有点儿 a 最 (y 太…了)",
+      "unlockedBy": "a1-u08-l3",
+      "markdown": "### Un solo adverbio de grado, delante del adjetivo\n\n| Menos → más | Uso |\n|---|---|\n| **有点儿** | un poco, y **no gusta**: 有点儿累 |\n| **不太** | no muy (educado): 不太好 |\n| **比较** | bastante, más bien: 比较难 |\n| **很** | neutro (casi obligatorio en la afirmación) |\n| **非常 / 特别** | muy, especialmente |\n| **真** | ¡qué…! (exclamación): 真大！ |\n| **太…了** | demasiado, o ¡qué…! (también positivo): 太好了！ |\n| **最** | el más: 最年轻 |\n\nEn la lengua hablada, **好 + adjetivo** = «¡qué…!»: 好大！ 好累！\n\n### 太…了 es un sándwich\n\n太 y 了 son el pan; el adjetivo, el relleno: 太贵**了**. Sin el 了 suena cortado. Pero con **不太** el 了 desaparece: 不太贵.\n\n### 有点儿 frente a 一点儿\n\n**有点儿** va **delante** del adjetivo y se queja (有点儿贵). **一点儿** va **detrás** del verbo o del adjetivo y mide o pide un cambio (喝一点儿水, 便宜一点儿, U16).\n\n> ❌ **Error típico**: 很太好了 → 太好了. No se acumulan adverbios de grado.\n\n> ❌ **Error típico**: 这个一点儿贵 → 这个**有点儿**贵.\n\n> ❌ **Error típico**: 这个有点儿好. 有点儿 solo con lo que no te gusta: 这个很好.\n\n> ⚠️ **Ojo**: 不太 se pronuncia **bú tài** (太 es 4.º tono).",
+      "skeleton": {
+        "focus": ["adverb"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "今天", "py": "jīntiān" },
+              "adverb": { "zh": "太", "py": "tài" },
+              "verb1": { "zh": "热", "py": "rè" },
+              "particle": { "zh": "了", "py": "le" }
+            },
+            "end": "！",
+            "es": "¡Hoy hace demasiado calor!"
+          },
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "adverb": { "zh": "有点儿", "py": "yǒudiǎnr" },
+              "verb1": { "zh": "累", "py": "lèi" }
+            },
+            "end": "。",
+            "es": "Estoy un poco cansado."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "小李", "py": "Xiǎo Lǐ" },
+              "adverb": { "zh": "最", "py": "zuì" },
+              "verb1": { "zh": "年轻", "py": "niánqīng" }
+            },
+            "end": "。",
+            "es": "Xiao Li es el más joven."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "汉语非常难。", "py": "Hànyǔ fēicháng nán.", "es": "El chino es dificilísimo." },
+        { "zh": "上海真大！", "py": "Shànghǎi zhēn dà!", "es": "¡Qué grande es Shanghái!" },
+        { "zh": "太好了！", "py": "Tài hǎo le!", "es": "¡Genial!" },
+        { "zh": "这个食堂特别干净。", "py": "Zhège shítáng tèbié gānjìng.", "es": "Este comedor está especialmente limpio." },
+        { "zh": "安娜比较认真。", "py": "Ānnà bǐjiào rènzhēn.", "es": "Ana es bastante aplicada." },
+        { "zh": "我不太累。", "py": "Wǒ bú tài lèi.", "es": "No estoy muy cansado." }
+      ],
+      "sourceNotes": ["zh-grammar-tai-le", "zh-grammar-yidianr-youdianr", "zh-contrast-yidianr-youdianr"]
+    },
+    {
+      "id": "ye-dou-hai",
+      "title": "也都, 都不 / 不都 y 还 «además»: el orden de los adverbios",
+      "unlockedBy": "a1-u11-l3",
+      "markdown": "### La fila del cine\n\nLos adverbios tienen butaca fija, siempre **después del sujeto** y **antes del auxiliar, de 跟…一起 y del verbo**:\n\n**Sujeto · 也 · 都 · 不 · auxiliar · 跟 + persona + 一起 · verbo**\n\n- 他们**也都**是学生 (nunca *都也*).\n- 安娜**也**想跟大家一起去.\n- 大家 casi siempre lleva 都: 大家**都**想交朋友.\n\n### La negación cambia el sentido según dónde vaya\n\n| | | |\n|---|---|---|\n| 我们**都不**是老师 | ninguno somos profesores | 都 + 不 |\n| 我们**不都**是老师 | no todos somos profesores | 不 + 都 |\n| 我**也不**去 | yo tampoco voy | 也 + 不 |\n\n### 还 «además»\n\nPara sumar una acción más de la misma persona se usa **还** (o 也) delante del segundo verbo, nunca 和: 安娜说汉语，**还**说英语.\n\n> 🧠 **Mnemotecnia**: 也 y 都 son «pegatinas del verbo»: se pegan delante de él y no se mueven.\n\n> ❌ **Error típico**: 我们都也去 → 我们**也都**去.",
+      "skeleton": {
+        "focus": ["adverb"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "大家", "py": "dàjiā" },
+              "adverb": { "zh": "都", "py": "dōu" },
+              "aux": { "zh": "想", "py": "xiǎng" },
+              "verb1": { "zh": "交朋友", "py": "jiāo péngyou" }
+            },
+            "end": "。",
+            "es": "Todo el mundo quiere hacer amigos."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "安娜", "py": "Ānnà" },
+              "adverb": { "zh": "也", "py": "yě" },
+              "aux": { "zh": "想", "py": "xiǎng" },
+              "with": { "zh": "跟大家一起", "py": "gēn dàjiā yìqǐ" },
+              "verb1": { "zh": "去", "py": "qù" }
+            },
+            "end": "。",
+            "es": "Ana también quiere ir con todos.",
+            "esOrder": [
+              { "text": "Ana", "slot": "subject" },
+              { "text": "también", "slot": "adverb" },
+              { "text": "quiere", "slot": "aux" },
+              { "text": "ir", "slot": "verb1" },
+              { "text": "con todos", "slot": "with" }
+            ]
+          },
+          {
+            "slots": {
+              "subject": { "zh": "我们", "py": "wǒmen" },
+              "adverb": { "zh": "不都", "py": "bù dōu" },
+              "verb1": { "zh": "是", "py": "shì" },
+              "object": { "zh": "老师", "py": "lǎoshī" }
+            },
+            "end": "。",
+            "es": "No todos somos profesores."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "他们也都是网友。", "py": "Tāmen yě dōu shì wǎngyǒu.", "es": "Ellos también son todos amigos de internet." },
+        { "zh": "我们都不是老师。", "py": "Wǒmen dōu bú shì lǎoshī.", "es": "Ninguno somos profesores." },
+        { "zh": "安娜说汉语，还说英语。", "py": "Ānnà shuō Hànyǔ, hái shuō Yīngyǔ.", "es": "Ana habla chino y además inglés." },
+        { "zh": "我有中国朋友，还有西班牙朋友。", "py": "Wǒ yǒu Zhōngguó péngyou, hái yǒu Xībānyá péngyou.", "es": "Tengo amigos chinos, y además españoles." },
+        { "zh": "我和安娜都是学生，我们也都学习汉语。", "py": "Wǒ hé Ānnà dōu shì xuésheng, wǒmen yě dōu xuéxí Hànyǔ.", "es": "Ana y yo somos los dos estudiantes, y los dos estudiamos chino." }
+      ],
+      "sourceNotes": ["zh-grammar-ye-dou", "zh-contrast-he-ye-dou"]
+    },
+    {
+      "id": "tienda-zai-zhi",
+      "title": "再, 一共, 只 y 还 en la tienda",
+      "unlockedBy": "a1-u16-l3",
+      "markdown": "### Cuatro adverbios para comprar\n\nTodos van **delante del verbo** (o del precio), en el hueco de los adverbios:\n\n| Adverbio | Significa | Ejemplo |\n|---|---|---|\n| **再** | otra vez, más (lo que **aún no** ha pasado) | 我们**再**买一瓶水吧 · **再**来一个 |\n| **一共** | en total | **一共**二十六块 |\n| **只** | solo | 我**只**要一个 · 我**只**有三十块 |\n| **还** | además, más | 你**还**要别的吗？ |\n\n> ⚠️ **Ojo**: en español «solo» puede ir en muchos sitios («quiero solo uno», «solo quiero uno»). En chino, **delante del verbo**: 我只要一个 (✗ 我要只一个).\n\n> ⚠️ **Ojo**: **再** mira al futuro: «otra vez» en lo que todavía vas a hacer. Para lo que ya se ha repetido verás **又** en A2.\n\n> 💡 **Truco**: 请再说一遍 (dilo otra vez, por favor) es la frase de oro de clase desde la U2.",
+      "skeleton": {
+        "focus": ["adverb"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "adverb": { "zh": "只", "py": "zhǐ" },
+              "verb1": { "zh": "要", "py": "yào" },
+              "object": { "zh": "一个", "py": "yí ge" }
+            },
+            "end": "。",
+            "es": "Solo quiero uno.",
+            "esOrder": [
+              { "text": "Solo", "slot": "adverb" },
+              { "text": "quiero", "slot": "verb1" },
+              { "text": "uno", "slot": "object" }
+            ]
+          },
+          {
+            "slots": {
+              "subject": { "zh": "我们", "py": "wǒmen" },
+              "adverb": { "zh": "再", "py": "zài" },
+              "verb1": { "zh": "买", "py": "mǎi" },
+              "object": { "zh": "一瓶水", "py": "yì píng shuǐ" },
+              "particle": { "zh": "吧", "py": "ba" }
+            },
+            "end": "。",
+            "es": "Compremos otra botella de agua."
+          },
+          {
+            "slots": {
+              "adverb": { "zh": "一共", "py": "yígòng" },
+              "object": { "zh": "二十六块", "py": "èrshíliù kuài" }
+            },
+            "end": "。",
+            "es": "Son veintiséis yuanes en total."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "你还要别的吗？", "py": "Nǐ hái yào bié de ma?", "es": "¿Quiere algo más?" },
+        { "zh": "我只有三十块。", "py": "Wǒ zhǐ yǒu sānshí kuài.", "es": "Solo tengo treinta yuanes." },
+        { "zh": "这个很好吃，再来一个！", "py": "Zhège hěn hǎochī, zài lái yí ge!", "es": "Esto está riquísimo: ¡otro más!" },
+        { "zh": "两本书一共多少钱？", "py": "Liǎng běn shū yígòng duōshao qián?", "es": "¿Cuánto son los dos libros en total?" }
+      ]
+    },
+    {
+      "id": "ting-matices",
+      "title": "挺…的, 不太 y 有一点儿: matizar como un nativo",
+      "unlockedBy": "a1-u21-l3",
+      "markdown": "### Ni muy muy, ni tan tan\n\n| Adverbio (+ adjetivo) | Matiz | Ejemplo |\n|---|---|---|\n| **挺 … (的)** | bastante, más bien (positivo o neutro) | 上海的冬天**挺**冷**的** |\n| **不太** | no muy (educado) | 今天**不太**冷 |\n| **有一点儿 / 有点儿** | un poco (y no gusta) | 我**有一点儿**累 |\n\n- **挺** es muy oral; el **的** final es opcional pero muy frecuente.\n- **不错** y **差不多** funcionan como adjetivos (hueco del verbo): 你的汉语**不错**！\n\n> ⚠️ **Ojo**: para lo **positivo**, 挺 o 很, nunca 有一点儿: 我**挺**高兴的 (✗ 我有一点儿高兴).\n\n> 💡 **Truco**: cuando un chino te pregunte qué tal algo y no quieras ofender, 不太… o 还可以 son tus amigos.",
+      "skeleton": {
+        "focus": ["adverb"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "上海的冬天", "py": "Shànghǎi de dōngtiān" },
+              "adverb": { "zh": "挺", "py": "tǐng" },
+              "verb1": { "zh": "冷", "py": "lěng" },
+              "particle": { "zh": "的", "py": "de" }
+            },
+            "end": "。",
+            "es": "El invierno de Shanghái es bastante frío."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "adverb": { "zh": "有一点儿", "py": "yǒu yìdiǎnr" },
+              "verb1": { "zh": "累", "py": "lèi" }
+            },
+            "end": "。",
+            "es": "Estoy un poco cansado."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "我挺高兴的。", "py": "Wǒ tǐng gāoxìng de.", "es": "Estoy bastante contento." },
+        { "zh": "今天不太冷。", "py": "Jīntiān bú tài lěng.", "es": "Hoy no hace mucho frío." },
+        { "zh": "你的汉语不错！", "py": "Nǐ de Hànyǔ búcuò!", "es": "¡Tu chino no está nada mal!" },
+        { "zh": "这个菜挺好吃的，就是有一点儿辣。", "py": "Zhège cài tǐng hǎochī de, jiùshì yǒu yìdiǎnr là.", "es": "Este plato está bastante rico; eso sí, pica un poco." }
+      ]
+    },
+    {
+      "id": "jiu-justo",
+      "title": "就: «mañana mismo», «precisamente»",
+      "unlockedBy": "a1-u21-l4",
+      "markdown": "### Detrás del tiempo, delante del verbo\n\n**就** va en el hueco de los **adverbios**, **detrás del tiempo**:\n\n- **Enseguida, ya mismo**: 我明天**就**去 = mañana mismo voy.\n- **Precisamente** (con 是, 在): 她**就**是王老师 = ella es precisamente la profesora Wang. 地铁站**就**在前面 = la estación está justo ahí delante.\n\n> 💡 **Truco**: si en español puedes añadir «mismo», «justo» o «ni más ni menos», en chino probablemente hay un 就.\n\n> ⚠️ **Ojo**: 就 tiene más usos que irás viendo: con 才 (a2-u11), en 如果…就 y 一…就 (conectores).",
+      "skeleton": {
+        "focus": ["adverb"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "time": { "zh": "明天", "py": "míngtiān" },
+              "adverb": { "zh": "就", "py": "jiù" },
+              "verb1": { "zh": "去图书馆", "py": "qù túshūguǎn" },
+              "verb2": { "zh": "准备", "py": "zhǔnbèi" },
+              "object": { "zh": "考试", "py": "kǎoshì" }
+            },
+            "end": "。",
+            "es": "Mañana mismo voy a la biblioteca a preparar el examen."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "她", "py": "tā" },
+              "adverb": { "zh": "就", "py": "jiù" },
+              "verb1": { "zh": "是", "py": "shì" },
+              "object": { "zh": "我们的汉语老师", "py": "wǒmen de Hànyǔ lǎoshī" }
+            },
+            "end": "。",
+            "es": "Ella es precisamente nuestra profesora de chino."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "我就是雨果。", "py": "Wǒ jiù shì Yǔguǒ.", "es": "Hugo soy yo." },
+        { "zh": "书店就在前边。", "py": "Shūdiàn jiù zài qiánbian.", "es": "La librería está justo ahí delante." },
+        { "zh": "你等一下，我现在就来。", "py": "Nǐ děng yíxià, wǒ xiànzài jiù lái.", "es": "Espera un momento, que voy ahora mismo." }
+      ]
+    },
+    {
+      "id": "jingchang-meici",
+      "title": "每次…都, 经常 / 不常 y 平时",
+      "unlockedBy": "a2-u03-l1",
+      "markdown": "### Tiempo + 都\n\n**每天** (cada día) y **每次** (cada vez) son **tiempos**: van delante del verbo y casi siempre piden **都**:\n\n- 我**每次**洗衣服**都**要排队。 Cada vez que lavo la ropa tengo que hacer cola. (每次 + lo que haces, luego 都)\n\n### 经常 / 常常\n\nAdverbios de frecuencia, detrás del sujeto: 我们**经常**用洗衣机.\n\n### ¡Cuidado con el orden de la negación!\n\n| | significa |\n|---|---|\n| 他**不常**吃早饭 | no desayuna a menudo |\n| 他**经常不**吃早饭 | muchas veces **no** desayuna |\n\n**平时** (normalmente) es un tiempo: va con el tiempo, antes de los adverbios: 小李**平时常常**在图书馆学习.",
+      "skeleton": {
+        "focus": ["time", "adverb"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "time": { "zh": "每次洗衣服", "py": "měi cì xǐ yīfu" },
+              "adverb": { "zh": "都", "py": "dōu" },
+              "aux": { "zh": "要", "py": "yào" },
+              "verb1": { "zh": "排队", "py": "páiduì" }
+            },
+            "end": "。",
+            "es": "Cada vez que lavo la ropa tengo que hacer cola."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "小李", "py": "Xiǎo Lǐ" },
+              "time": { "zh": "平时", "py": "píngshí" },
+              "adverb": { "zh": "常常", "py": "chángcháng" },
+              "place": { "zh": "在图书馆", "py": "zài túshūguǎn" },
+              "verb1": { "zh": "学习", "py": "xuéxí" }
+            },
+            "end": "。",
+            "es": "Normalmente Xiao Li estudia a menudo en la biblioteca."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "他", "py": "tā" },
+              "adverb": { "zh": "经常不", "py": "jīngcháng bù" },
+              "verb1": { "zh": "吃", "py": "chī" },
+              "object": { "zh": "早饭", "py": "zǎofàn" }
+            },
+            "end": "。",
+            "es": "Muchas veces no desayuna."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "我们经常用洗衣机。", "py": "Wǒmen jīngcháng yòng xǐyījī.", "es": "Usamos la lavadora a menudo." },
+        { "zh": "我不经常去卫生间洗衣服。", "py": "Wǒ bù jīngcháng qù wèishēngjiān xǐ yīfu.", "es": "No suelo lavar la ropa en el baño." },
+        { "zh": "每次我去食堂，都要排队。", "py": "Měi cì wǒ qù shítáng, dōu yào páiduì.", "es": "Cada vez que voy al comedor, tengo que hacer cola." },
+        { "zh": "我习惯了这儿的生活。", "py": "Wǒ xíguàn le zhèr de shēnghuó.", "es": "Ya me he acostumbrado a la vida de aquí." }
+      ],
+      "sourceNotes": ["zh-grammar-mei-every"]
+    },
+    {
+      "id": "escala-frecuencia",
+      "title": "La escala de la frecuencia: 总是 … 偶尔",
+      "unlockedBy": "a2-u03-l2",
+      "markdown": "### Todos en el mismo hueco\n\n| | Adverbio | Ejemplo |\n|---|---|---|\n| 100 % | **总是** (siempre) / **老是** (siempre, ¡qué pesado!) | 他**总是**很晚睡觉。 |\n| | **经常 / 常常** (a menudo) | 我**经常**去图书馆。 |\n| | **一般** (normalmente) | 我晚上**一般**在宿舍。 |\n| | **有时候** (a veces; también al principio) | **有时候**夜里很吵。 |\n| | **很少** (pocas veces) | 我**很少**看电视。 |\n| | **偶尔** (de vez en cuando) | 他**偶尔**大声说话。 |\n| 0 % | **从来不** (nunca) → lección 3 | |\n\nTodos van **detrás del sujeto (y del tiempo) y delante del verbo**. En español «siempre» puede ir al final («se acuesta tarde siempre»); en chino, nunca.\n\n> ⚠️ **Ojo**: **老是** lleva queja: 他老是迟到 suena a «¡siempre llega tarde, qué harto estoy!». Para algo neutro, 总是.",
+      "skeleton": {
+        "focus": ["adverb"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "我的室友", "py": "wǒ de shìyǒu" },
+              "adverb": { "zh": "总是", "py": "zǒngshì" },
+              "verb1": { "zh": "很晚睡觉", "py": "hěn wǎn shuìjiào" }
+            },
+            "end": "。",
+            "es": "Mi compañero de habitación siempre se acuesta muy tarde.",
+            "esOrder": [
+              { "text": "Mi compañero de habitación", "slot": "subject" },
+              { "text": "se acuesta muy tarde", "slot": "verb1" },
+              { "text": "siempre", "slot": "adverb" }
+            ]
+          },
+          {
+            "slots": {
+              "subject": { "zh": "我们", "py": "wǒmen" },
+              "adverb": { "zh": "偶尔", "py": "ǒu'ěr" },
+              "verb1": { "zh": "去", "py": "qù" },
+              "object": { "zh": "酒吧", "py": "jiǔbā" }
+            },
+            "end": "。",
+            "es": "De vez en cuando vamos a un bar."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "他老是大声说话。", "py": "Tā lǎoshì dàshēng shuōhuà.", "es": "Siempre habla a gritos (¡qué pesado!)." },
+        { "zh": "晚上我一般在宿舍。", "py": "Wǎnshang wǒ yìbān zài sùshè.", "es": "Por la noche normalmente estoy en la residencia." },
+        { "zh": "我很少看电视。", "py": "Wǒ hěn shǎo kàn diànshì.", "es": "Veo poco la tele." },
+        { "zh": "有时候夜里很吵。", "py": "Yǒu shíhou yèli hěn chǎo.", "es": "A veces por la noche hay mucho ruido." }
+      ]
+    },
+    {
+      "id": "conglai",
+      "title": "从来不 y 从来没…过: «nunca»",
+      "unlockedBy": "a2-u03-l3",
+      "markdown": "### Dos «nunca» distintos\n\n| | Para… | Ejemplo |\n|---|---|---|\n| **从来不 + V** | lo que alguien **no hace nunca** (costumbre, decisión) | 他**从来不**打扫房间。 |\n| **从来没 + V + 过** | lo que **no ha pasado nunca** (experiencia) | 我**从来没**用**过**空调。 |\n\n从来不 / 从来没 van en el hueco de los **adverbios**; 过, pegado al verbo (como en a2-u01).\n\n> 💡 **Truco**: es la misma elección que entre 不 y 没: costumbre → 不; lo que (no) ha pasado → 没.\n\n> ❌ **Error típico**: 我从来不去过 → 我**从来没**去过. Con 过, la negación es 没.",
+      "skeleton": {
+        "focus": ["adverb"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "他", "py": "tā" },
+              "adverb": { "zh": "从来不", "py": "cónglái bù" },
+              "verb1": { "zh": "打扫", "py": "dǎsǎo" },
+              "object": { "zh": "房间", "py": "fángjiān" }
+            },
+            "end": "。",
+            "es": "Nunca limpia la habitación."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "adverb": { "zh": "从来没", "py": "cónglái méi" },
+              "verb1": { "zh": "用过", "py": "yòngguo" },
+              "object": { "zh": "这个空调", "py": "zhège kōngtiáo" }
+            },
+            "end": "。",
+            "es": "Nunca he usado este aire acondicionado.",
+            "esOrder": [
+              { "text": "Nunca", "slot": "adverb" },
+              { "text": "he usado", "slot": "verb1" },
+              { "text": "este aire acondicionado", "slot": "object" }
+            ]
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "我从来不在宿舍做饭。", "py": "Wǒ cónglái bú zài sùshè zuòfàn.", "es": "Nunca cocino en la residencia." },
+        { "zh": "他从来没打扫过屋子。", "py": "Tā cónglái méi dǎsǎo guo wūzi.", "es": "No ha limpiado la habitación en su vida." },
+        { "zh": "我们好好收拾一下吧。", "py": "Wǒmen hǎohǎo shōushi yíxià ba.", "es": "Vamos a recogerlo bien." }
+      ]
+    },
+    {
+      "id": "yijing-haimei",
+      "title": "已经…了, 还没…呢, 快要…了 y 都…了: la línea del tiempo",
+      "unlockedBy": "a2-u09-l2",
+      "markdown": "### Antes, ya, todavía no\n\n| Momento | Estructura | Ejemplo |\n|---|---|---|\n| a punto de pasar | **快要 / 快 / 就要** + V + **了** | 快要下雨了。 |\n| ya ha pasado | **已经** + V + **了** | 雨**已经**停了。 |\n| ya hace mucho | **早就** + V + **了** | 我**早就**知道了。 |\n| todavía no ha pasado | **还没** + V (+ **呢**), **sin 了** | 我**还没**吃饭**呢**。 |\n| todavía no (a propósito) | **还不** + V | 你怎么**还不**睡觉？ |\n| «¡ya es…!» (queja) | **都** + tiempo / cifra + **了** | **都**十二点**了**！ |\n\n- **快要** no admite una hora o día delante; **就要** sí: ✓ 明天就要下雪了 · ✗ 明天快要下雪了.\n- **都…了** no significa «todos»: exagera la cifra («ya, nada menos que…») y suele ir seguido de un reproche: 都十一点了，别看手机了。\n\n> ❌ **Error típico**: 我还没吃了 → 我**还没**吃(**呢**). Con 没, fuera el 了.",
+      "skeleton": {
+        "focus": ["adverb", "particle"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "雪", "py": "xuě" },
+              "adverb": { "zh": "已经", "py": "yǐjīng" },
+              "verb1": { "zh": "停", "py": "tíng" },
+              "particle": { "zh": "了", "py": "le" }
+            },
+            "end": "。",
+            "es": "Ya ha dejado de nevar."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "adverb": { "zh": "还没", "py": "hái méi" },
+              "verb1": { "zh": "吃", "py": "chī" },
+              "object": { "zh": "饭", "py": "fàn" },
+              "particle": { "zh": "呢", "py": "ne" }
+            },
+            "end": "。",
+            "es": "Todavía no he comido.",
+            "esOrder": [
+              { "text": "Todavía no", "slot": "adverb" },
+              { "text": "he comido", "slot": "verb1" }
+            ]
+          },
+          {
+            "slots": {
+              "adverb": { "zh": "都", "py": "dōu" },
+              "verb1": { "zh": "十二点", "py": "shí'èr diǎn" },
+              "particle": { "zh": "了", "py": "le" }
+            },
+            "end": "！",
+            "es": "¡Ya son las doce!"
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "冬天已经到了。", "py": "Dōngtiān yǐjīng dào le.", "es": "El invierno ya ha llegado." },
+        { "zh": "火车就要开了。", "py": "Huǒchē jiùyào kāi le.", "es": "El tren está a punto de salir." },
+        { "zh": "这件事我早就知道了。", "py": "Zhè jiàn shì wǒ zǎo jiù zhīdào le.", "es": "Eso lo sé desde hace mucho." },
+        { "zh": "都十一点了，你怎么还不睡觉？", "py": "Dōu shíyī diǎn le, nǐ zěnme hái bú shuìjiào?", "es": "¡Ya son las once! ¿Cómo es que todavía no te acuestas?" }
+      ]
+    },
+    {
+      "id": "gang-mashang",
+      "title": "刚 / 刚才, 马上 y 一直",
+      "unlockedBy": "a2-u09-l3",
+      "markdown": "### 刚 y 刚才 no son lo mismo\n\n| | **刚 / 刚刚** | **刚才** |\n|---|---|---|\n| Qué es | adverbio («acabar de») | tiempo («hace un momento») |\n| Posición | **detrás** del sujeto: 我**刚**到 | delante o detrás del sujeto |\n| ¿了 final? | normalmente **no**: 我刚到。 | **sí**: 刚才下雨了。 |\n| ¿Se niega? | **no** | **sí**: 我刚才**没**看见他。 |\n| ¿Con duración? | **sí**: 我刚来两个月 (solo llevo dos meses) | no |\n\n### Enseguida y sin parar\n\n- **马上** = enseguida: 我**马上**回来. **马上就要…了** = está a punto de.\n- **一直** = sin parar, todo el rato: 今天**一直**下雨.\n- **忽然** = de repente. **一会儿** = (dentro de / durante) un rato. **不一会儿** = al poco rato (en una narración, al principio de la frase).",
+      "skeleton": {
+        "focus": ["adverb", "time"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "adverb": { "zh": "刚", "py": "gāng" },
+              "verb1": { "zh": "到家", "py": "dào jiā" }
+            },
+            "end": "。",
+            "es": "Acabo de llegar a casa."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "time": { "zh": "刚才", "py": "gāngcái" },
+              "adverb": { "zh": "没", "py": "méi" },
+              "verb1": { "zh": "看见", "py": "kànjiàn" },
+              "object": { "zh": "他", "py": "tā" }
+            },
+            "end": "。",
+            "es": "Hace un momento no lo he visto."
+          },
+          {
+            "slots": {
+              "time0": { "zh": "今天", "py": "jīntiān" },
+              "adverb": { "zh": "一直", "py": "yìzhí" },
+              "verb1": { "zh": "下雨", "py": "xià yǔ" }
+            },
+            "end": "。",
+            "es": "Hoy no ha parado de llover."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "我马上回来。", "py": "Wǒ mǎshàng huílai.", "es": "Vuelvo enseguida." },
+        { "zh": "雨果刚来上海两个月。", "py": "Yǔguǒ gāng lái Shànghǎi liǎng ge yuè.", "es": "Hugo solo lleva dos meses en Shanghái." },
+        { "zh": "刚才下了一场大雨。", "py": "Gāngcái xià le yì cháng dà yǔ.", "es": "Hace un momento ha caído un buen chaparrón." },
+        { "zh": "天空忽然亮了。", "py": "Tiānkōng hūrán liàng le.", "es": "De repente el cielo se iluminó." }
+      ]
+    },
+    {
+      "id": "cai-jiu",
+      "title": "才 y 就: ¡qué tarde! / ¡qué pronto!",
+      "unlockedBy": "a2-u11-l3",
+      "markdown": "### Lo que piensas de esa hora\n\n**就** y **才** van en el hueco de los **adverbios**, **detrás del tiempo**:\n\n| | Significa | Ejemplo |\n|---|---|---|\n| tiempo + **就** + V + **了** | antes de lo esperado | 我七点**就**到了. |\n| tiempo + **才** + V | más tarde de lo esperado | 他十点**才**到. |\n| **才** + número | poco, solo | 我们公司**才**十五个人. |\n| **才** + V | acabar de | 他**才**到家，还没吃饭. |\n\n- **才 no lleva 了**: 他十点才到 (✗ 才到了). **就** en pasado sí suele llevarlo.\n- Delante va casi siempre una hora, un día o una cantidad: sin eso, 才 y 就 no tienen con qué compararse.\n\n> 💡 **Truco**: en español lo decimos con «ya» y «hasta»: «a las siete **ya** estaba» (就) / «no llegó **hasta** las diez» (才).\n\n> ⚠️ **Ojo**: 就 de «justo, precisamente» (就在前面, a1-u21) es otro uso del mismo carácter.",
+      "skeleton": {
+        "focus": ["adverb"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "time": { "zh": "七点半", "py": "qī diǎn bàn" },
+              "adverb": { "zh": "就", "py": "jiù" },
+              "verb1": { "zh": "到", "py": "dào" },
+              "object": { "zh": "办公室", "py": "bàngōngshì" },
+              "particle": { "zh": "了", "py": "le" }
+            },
+            "end": "。",
+            "es": "A las siete y media ya estaba en la oficina."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "小王", "py": "Xiǎo Wáng" },
+              "time": { "zh": "九点", "py": "jiǔ diǎn" },
+              "adverb": { "zh": "才", "py": "cái" },
+              "verb1": { "zh": "到", "py": "dào" }
+            },
+            "end": "。",
+            "es": "Xiao Wang no llegó hasta las nueve.",
+            "esOrder": [
+              { "text": "Xiao Wang", "slot": "subject" },
+              { "text": "no llegó", "slot": "verb1" },
+              { "text": "hasta", "slot": "adverb" },
+              { "text": "las nueve", "slot": "time" }
+            ]
+          },
+          {
+            "slots": {
+              "subject": { "zh": "我们公司", "py": "wǒmen gōngsī" },
+              "adverb": { "zh": "才", "py": "cái" },
+              "verb1": { "zh": "有", "py": "yǒu" },
+              "object": { "zh": "十五个人", "py": "shíwǔ ge rén" }
+            },
+            "end": "。",
+            "es": "Nuestra empresa solo tiene quince personas."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "我们昨天晚上十一点才下班。", "py": "Wǒmen zuótiān wǎnshang shíyī diǎn cái xiàbān.", "es": "Anoche no salimos del trabajo hasta las once." },
+        { "zh": "他才到家，还没吃饭。", "py": "Tā cái dào jiā, hái méi chī fàn.", "es": "Acaba de llegar a casa y todavía no ha comido." },
+        { "zh": "今天我们只能加班了。", "py": "Jīntiān wǒmen zhǐ néng jiābān le.", "es": "Hoy no nos queda más remedio que hacer horas extra." },
+        { "zh": "我们算了三次，才得出结果。", "py": "Wǒmen suàn le sān cì, cái déchū jiéguǒ.", "es": "Hicimos la cuenta tres veces y solo entonces sacamos el resultado." }
+      ]
+    },
+    {
+      "id": "zai-you",
+      "title": "再 y 又: «otra vez» hacia delante y hacia atrás",
+      "unlockedBy": "a2-u11-l4",
+      "markdown": "### Dos «otra vez» que miran en direcciones opuestas\n\n| | Cuándo | Ejemplo |\n|---|---|---|\n| **再** | futuro, órdenes, propuestas: aún **no** ha pasado | 我们明天**再**讨论吧. 请**再**说一遍. |\n| **又** | pasado: **ya** se ha repetido (suele llevar 了) | 老李今天**又**提到了这个问题. |\n| **又** + futuro seguro | lo que se repetirá sí o sí (fechas, rutinas) | 明天**又**是星期一了. |\n\n- **再 va detrás de los auxiliares**: 我想**再**问一个问题 · 你可以**再**说一遍吗.\n- **先…再…** = «primero…, luego…» (ver *Conectores*).\n\n> 💡 **Truco**: 又 se queja a menudo: 你又迟到了！ («¡otra vez llegas tarde!»).\n\n> ❌ **Error típico**: 我昨天再去了 → 我昨天**又**去了. Lo que ya ha pasado, con 又.",
+      "skeleton": {
+        "focus": ["adverb"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "我们", "py": "wǒmen" },
+              "time": { "zh": "明天", "py": "míngtiān" },
+              "adverb": { "zh": "再", "py": "zài" },
+              "verb1": { "zh": "讨论", "py": "tǎolùn" },
+              "particle": { "zh": "吧", "py": "ba" }
+            },
+            "end": "。",
+            "es": "Lo volvemos a hablar mañana."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "老李", "py": "lǎo Lǐ" },
+              "time": { "zh": "今天", "py": "jīntiān" },
+              "adverb": { "zh": "又", "py": "yòu" },
+              "verb1": { "zh": "提到了", "py": "tídào le" },
+              "object": { "zh": "这个问题", "py": "zhège wèntí" }
+            },
+            "end": "。",
+            "es": "Hoy Lao Li ha vuelto a sacar este tema."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "明天", "py": "míngtiān" },
+              "adverb": { "zh": "又", "py": "yòu" },
+              "verb1": { "zh": "是", "py": "shì" },
+              "object": { "zh": "星期一", "py": "xīngqīyī" },
+              "particle": { "zh": "了", "py": "le" }
+            },
+            "end": "。",
+            "es": "Mañana ya es lunes otra vez."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "我想再问一个问题。", "py": "Wǒ xiǎng zài wèn yí ge wèntí.", "es": "Quiero hacer otra pregunta." },
+        { "zh": "你可以再说一遍吗？", "py": "Nǐ kěyǐ zài shuō yí biàn ma?", "es": "¿Puedes repetirlo?" },
+        { "zh": "雨果上个星期又提出了一个办法。", "py": "Yǔguǒ shàng ge xīngqī yòu tíchū le yí ge bànfǎ.", "es": "La semana pasada Hugo volvió a proponer una solución." },
+        { "zh": "怎么又开会？", "py": "Zěnme yòu kāihuì?", "es": "¿Cómo que otra reunión?" }
+      ]
+    },
+    {
+      "id": "sorpresa-b1",
+      "title": "终于, 果然, 到底, 难道, 简直: adverbios de la sorpresa",
+      "unlockedBy": "b1-u06-l1",
+      "markdown": "### Adverbios con emoción\n\nTodos van en el hueco de siempre: **detrás del sujeto, delante del verbo**.\n\n| | Significa | Ejemplo |\n|---|---|---|\n| **终于** | por fin (tras esperar) | 他**终于**有女朋友了！ |\n| **果然** | efectivamente, tal como pensaba | **果然**下雨了. |\n| **到底** | (en preguntas) pero, a ver… (impaciencia) | 你**到底**去不去？ |\n| **难道…吗** | ¿acaso…? (extrañeza, reproche) | 你**难道**不知道**吗**？ |\n| **简直** | es que…, sencillamente (exagera) | **简直**太好了！ |\n| **突然** | de repente | 他**突然**走了. |\n| **本来** | en un principio (luego cambió) | 我**本来**想去… |\n| **其实** | en realidad | **其实**我也不知道. |\n\n- **到底** solo va en preguntas con interrogativo o A不A; ✗ 到底…吗.\n- **难道** pide **吗** al final y no busca información: expresa que te extraña.\n- **果然** confirma lo que ya sospechabas; **其实** corrige lo que parecía.\n\n> 💡 **Truco**: 我说呢！ = «¡ya decía yo!», cuando algo raro por fin se explica; suele ir con 果然.",
+      "skeleton": {
+        "focus": [
+          "adverb"
+        ],
+        "sentences": [
+          {
+            "slots": {
+              "subject": {
+                "zh": "他",
+                "py": "tā"
+              },
+              "adverb": {
+                "zh": "终于",
+                "py": "zhōngyú"
+              },
+              "verb1": {
+                "zh": "有",
+                "py": "yǒu"
+              },
+              "object": {
+                "zh": "女朋友",
+                "py": "nǚpéngyou"
+              },
+              "particle": {
+                "zh": "了",
+                "py": "le"
+              }
+            },
+            "end": "！",
+            "es": "¡Por fin tiene novia!"
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "你",
+                "py": "nǐ"
+              },
+              "adverb": {
+                "zh": "到底",
+                "py": "dàodǐ"
+              },
+              "verb1": {
+                "zh": "去不去",
+                "py": "qù bu qù"
+              }
+            },
+            "end": "？",
+            "es": "Pero, a ver, ¿vas o no?"
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "你",
+                "py": "nǐ"
+              },
+              "adverb": {
+                "zh": "难道不",
+                "py": "nándào bù"
+              },
+              "verb1": {
+                "zh": "知道",
+                "py": "zhīdào"
+              },
+              "particle": {
+                "zh": "吗",
+                "py": "ma"
+              }
+            },
+            "end": "？",
+            "es": "¿Acaso no lo sabes?"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "zh": "果然！我说呢，他的汉语进步得简直太快了。",
+          "py": "Guǒrán! Wǒ shuō ne, tā de Hànyǔ jìnbù de jiǎnzhí tài kuài le.",
+          "es": "¡Lo sabía! Ya decía yo: es que su chino ha mejorado rapidísimo."
+        },
+        {
+          "zh": "他们到底是怎么认识的？",
+          "py": "Tāmen dàodǐ shì zěnme rènshi de?",
+          "es": "Pero ¿cómo se conocieron, eh?"
+        },
+        {
+          "zh": "我本来想去，可是突然有事。",
+          "py": "Wǒ běnlái xiǎng qù, kěshì tūrán yǒu shì.",
+          "es": "En principio quería ir, pero de repente me ha surgido algo."
+        },
+        {
+          "zh": "其实我也不知道这个消息。",
+          "py": "Qíshí wǒ yě bù zhīdào zhège xiāoxi.",
+          "es": "La verdad es que yo tampoco sabía esta noticia."
+        }
+      ]
+    },
+    {
+      "id": "cengjing-rengran",
+      "title": "曾经 y 仍然: lo que fue y lo que sigue",
+      "unlockedBy": "b1-u07-l6",
+      "markdown": "### Dos adverbios para contar cambios\n\n- **曾经** = «en otro tiempo, alguna vez»: algo que **pasó** (y muchas veces ya no es así). Suele ir con **过**: 我**曾经**去过西安. Es más escrito que el simple V过.\n- **仍然** (o **仍**, más escrito) = «todavía, seguir igual», como 还 pero más formal: 他**仍然**住在老家.\n\nLos dos van en *Adverbios*, detrás del sujeto.\n\n- Para negar, lo normal es **没** + V + 过, sin 曾经: 我没去过西安 (o, más fuerte, 我从来没去过).\n- 仍然 + negación = «sigue sin…»: 他**仍然不**习惯.\n\n> 💡 **Truco**: juntos cuentan una vida: 他曾经在上海工作过，现在仍然常常回来 = trabajó en Shanghái y todavía vuelve a menudo.",
+      "skeleton": {
+        "focus": [
+          "adverb"
+        ],
+        "sentences": [
+          {
+            "slots": {
+              "subject": {
+                "zh": "我",
+                "py": "wǒ"
+              },
+              "adverb": {
+                "zh": "曾经",
+                "py": "céngjīng"
+              },
+              "verb1": {
+                "zh": "去过",
+                "py": "qùguo"
+              },
+              "object": {
+                "zh": "西安",
+                "py": "Xī'ān"
+              }
+            },
+            "end": "。",
+            "es": "En otro tiempo estuve en Xi'an."
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "我爷爷",
+                "py": "wǒ yéye"
+              },
+              "adverb": {
+                "zh": "仍然",
+                "py": "réngrán"
+              },
+              "verb1": {
+                "zh": "住在",
+                "py": "zhù zài"
+              },
+              "object": {
+                "zh": "农村",
+                "py": "nóngcūn"
+              }
+            },
+            "end": "。",
+            "es": "Mi abuelo sigue viviendo en el campo.",
+            "esOrder": [
+              {
+                "text": "Mi abuelo",
+                "slot": "subject"
+              },
+              {
+                "text": "sigue",
+                "slot": "adverb"
+              },
+              {
+                "text": "viviendo",
+                "slot": "verb1"
+              },
+              {
+                "text": "en el campo",
+                "slot": "object"
+              }
+            ]
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "他",
+                "py": "tā"
+              },
+              "adverb": {
+                "zh": "仍然不",
+                "py": "réngrán bù"
+              },
+              "verb1": {
+                "zh": "习惯",
+                "py": "xíguàn"
+              },
+              "object": {
+                "zh": "这儿的天气",
+                "py": "zhèr de tiānqì"
+              }
+            },
+            "end": "。",
+            "es": "Sigue sin acostumbrarse al tiempo de aquí."
+          }
+        ]
+      },
+      "examples": [
+        {
+          "zh": "王老师曾经在西班牙工作过。",
+          "py": "Wáng lǎoshī céngjīng zài Xībānyá gōngzuò guo.",
+          "es": "La profesora Wang trabajó en otro tiempo en España."
+        },
+        {
+          "zh": "十年过去了，他仍然是我最好的朋友。",
+          "py": "Shí nián guòqu le, tā réngrán shì wǒ zuì hǎo de péngyou.",
+          "es": "Han pasado diez años y sigue siendo mi mejor amigo."
+        },
+        {
+          "zh": "我父亲退休了，可是仍然每天看书。",
+          "py": "Wǒ fùqin tuìxiū le, kěshì réngrán měi tiān kàn shū.",
+          "es": "Mi padre se ha jubilado, pero sigue leyendo cada día."
+        }
+      ]
+    },
+    {
+      "id": "opinion-matices",
+      "title": "当然, 确实, 大概, 差不多, 几乎: opinar con matices",
+      "unlockedBy": "b1-u08-l4",
+      "markdown": "### Reforzar y suavizar lo que dices\n\n| | Para… | Ejemplo |\n|---|---|---|\n| **当然** | claro, por supuesto | 我**当然**支持你！ |\n| **确实** | de verdad, efectivamente (das la razón) | 你说得**确实**有道理. |\n| **大概** | probablemente; más o menos | 他**大概**不来了 · **大概**要半个小时 |\n| **差不多** | más o menos, casi | **差不多**有二十个人 |\n| **几乎** | casi (al límite) | **几乎都**用手机 · **几乎没**来 |\n\n- Todos van en *Adverbios*, detrás del sujeto; **当然** también puede abrir la frase con coma: **当然，**…\n- **几乎** va muy a menudo con **都** o **没**: 几乎**都**, 几乎**没有人**.\n- **差不多** también es adjetivo: 差不多了 = «ya casi está»; 跟…差不多 = «más o menos igual que…».\n\n> 💡 **Truco**: 大概 mira la **probabilidad** o el **cálculo**; 几乎, lo **cerca** que estás del todo o la nada.",
+      "skeleton": {
+        "focus": [
+          "adverb"
+        ],
+        "sentences": [
+          {
+            "slots": {
+              "subject": {
+                "zh": "我",
+                "py": "wǒ"
+              },
+              "adverb": {
+                "zh": "当然",
+                "py": "dāngrán"
+              },
+              "verb1": {
+                "zh": "支持",
+                "py": "zhīchí"
+              },
+              "object": {
+                "zh": "你",
+                "py": "nǐ"
+              }
+            },
+            "end": "！",
+            "es": "¡Claro que te apoyo!"
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "中国的年轻人",
+                "py": "Zhōngguó de niánqīngrén"
+              },
+              "adverb": {
+                "zh": "几乎都",
+                "py": "jīhū dōu"
+              },
+              "verb1": {
+                "zh": "用",
+                "py": "yòng"
+              },
+              "object": {
+                "zh": "手机付钱",
+                "py": "shǒujī fù qián"
+              }
+            },
+            "end": "。",
+            "es": "Casi todos los jóvenes chinos pagan con el móvil."
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "外卖",
+                "py": "wàimài"
+              },
+              "adverb": {
+                "zh": "大概",
+                "py": "dàgài"
+              },
+              "verb1": {
+                "zh": "要",
+                "py": "yào"
+              },
+              "object": {
+                "zh": "半个小时",
+                "py": "bàn ge xiǎoshí"
+              }
+            },
+            "end": "。",
+            "es": "La comida a domicilio tarda más o menos media hora."
+          }
+        ]
+      },
+      "examples": [
+        {
+          "zh": "他的看法确实很有道理。",
+          "py": "Tā de kànfǎ quèshí hěn yǒu dàolǐ.",
+          "es": "Su punto de vista tiene mucho sentido, de verdad."
+        },
+        {
+          "zh": "我们班差不多有二十个学生。",
+          "py": "Wǒmen bān chàbuduō yǒu èrshí ge xuésheng.",
+          "es": "En nuestra clase hay unos veinte estudiantes."
+        },
+        {
+          "zh": "他这个学期几乎没来上课。",
+          "py": "Tā zhège xuéqī jīhū méi lái shàngkè.",
+          "es": "Este cuatrimestre casi no ha venido a clase."
+        },
+        {
+          "zh": "从这儿到机场大概要多长时间？",
+          "py": "Cóng zhèr dào jīchǎng dàgài yào duō cháng shíjiān?",
+          "es": "¿Cuánto se tarda más o menos de aquí al aeropuerto?"
+        }
+      ]
+    }
+  ]
+}

@@ -232,7 +232,7 @@ export async function deckWordSet(lang: Lang = getActiveLang()): Promise<Map<str
 
 /* ------------------------- Copia de seguridad ------------------------- */
 
-const LANG_TABLES = ["words", "cards", "reviewLogs", "categories", "charStates", "lessonProgress", "exerciseAttempts", "videos", "readings", "notes", "studySessions", "dictHistory", "favorites", "daily", "noteCards", "exerciseSets", "exerciseItems", "itemAttempts", "chats", "assets"];
+const LANG_TABLES = ["words", "cards", "reviewLogs", "categories", "charStates", "lessonProgress", "exerciseAttempts", "videos", "readings", "notes", "studySessions", "dictHistory", "favorites", "daily", "noteCards", "exerciseSets", "exerciseItems", "itemAttempts", "chats", "assets", "livingNoteAdds"];
 
 export async function exportBackup(lang?: Lang): Promise<string> {
   const tables = db.tables.map((t) => t.name);

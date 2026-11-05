@@ -231,6 +231,8 @@ export interface Note {
   links: string[];
   grammarIds: string[];
   unitId?: string;
+  /** unitId del temario antiguo (u01…u14), conservado tras la migración al temario nuevo */
+  legacyUnitId?: string;
   level?: number; // nivel HSK (1–3)
   pinned: boolean;
   /** Apunte del profesor (compendio incluido en la app). Se puede duplicar y anotar. */
@@ -294,6 +296,8 @@ export interface ExerciseSet {
   date?: string; // YYYY-MM-DD
   topic?: string;
   unitId?: string;
+  /** unitId del temario antiguo (u01…u14), conservado tras la migración al temario nuevo */
+  legacyUnitId?: string;
   tags: string[];
   createdAt: number;
   updatedAt: number;
@@ -311,6 +315,8 @@ export interface ExerciseItem {
   tags: string[];
   grammarIds: string[];
   unitId?: string;
+  /** unitId del temario antiguo (u01…u14), conservado tras la migración al temario nuevo */
+  legacyUnitId?: string;
   // SRS (ts-fsrs)
   due: number;
   stability: number;
@@ -440,3 +446,16 @@ export interface DailyStat {
 export type LegacyCharacterState = Omit<CharacterState, "id" | "lang">;
 export type LegacyDictFavorite = Omit<DictFavorite, "id" | "lang">;
 export type LegacyDailyStat = Omit<DailyStat, "id" | "lang">;
+
+/** v6: aportaciones del usuario a los apuntes vivos (separadas del contenido base: nunca se sobrescriben). */
+export interface LivingNoteAdd {
+  id: string;
+  lang: Lang;
+  noteId: string;
+  afterSectionId?: string;
+  kind: "section" | "example" | "teacher";
+  title?: string;
+  markdown: string;
+  createdAt: number;
+  updatedAt: number;
+}

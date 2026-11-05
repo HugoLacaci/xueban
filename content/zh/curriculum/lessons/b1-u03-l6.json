@@ -1,0 +1,141 @@
+{
+  "id": "b1-u03-l6",
+  "title": "Repaso: ¿puedo o no puedo? 写得很好 frente a 写得好 / 写不好",
+  "zh": "我听得懂了",
+  "goal": "Repasar la unidad: distinguir el potencial (写得好 / 写不好) del complemento de grado (写得很好) y construir frases completas sobre la vida de clase.",
+  "minutes": 16,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "留学", "pinyin": "liúxué", "es": "estudiar en el extranjero", "note": "留学生 = estudiante extranjero; 来中国留学 = venir a estudiar a China." },
+    { "hanzi": "志愿", "pinyin": "zhìyuàn", "es": "voluntario (adj.); deseo, aspiración", "note": "志愿活动 = actividad de voluntariado." },
+    { "hanzi": "志愿者", "pinyin": "zhìyuànzhě", "es": "voluntario, voluntaria", "note": "做志愿者 = hacer de voluntario." },
+    { "hanzi": "美术", "pinyin": "měishù", "es": "bellas artes, artes plásticas", "note": "美术馆 = museo de arte." },
+    { "hanzi": "文学", "pinyin": "wénxué", "es": "literatura" },
+    { "hanzi": "作品", "pinyin": "zuòpǐn", "es": "obra (de un artista o escritor)" },
+    { "hanzi": "作者", "pinyin": "zuòzhě", "es": "autor, autora" },
+    { "hanzi": "读者", "pinyin": "dúzhě", "es": "lector, lectora" },
+    { "hanzi": "杂志", "pinyin": "zázhì", "es": "revista", "note": "Clasificador 本: 一本杂志; 这一期杂志 = este número de la revista." },
+    { "hanzi": "合格", "pinyin": "hégé", "es": "apto, aprobado; que cumple los requisitos", "note": "考试合格了 = he aprobado (he sacado «apto»)." },
+    { "hanzi": "标准", "pinyin": "biāozhǔn", "es": "estándar, criterio; correcto, normativo", "note": "他的普通话很标准 = habla un chino estándar muy correcto." },
+    { "hanzi": "进步", "pinyin": "jìnbù", "es": "progresar; progreso", "note": "你进步了！ = ¡has mejorado mucho!" },
+    { "hanzi": "概念", "pinyin": "gàiniàn", "es": "concepto" }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "现在老师的话我都听得懂了。", "py": "Xiànzài lǎoshī de huà wǒ dōu tīng de dǒng le.", "es": "Ahora ya entiendo todo lo que dice la profesora." },
+        { "zh": "这个概念我还理解不了。", "py": "Zhège gàiniàn wǒ hái lǐjiě bu liǎo.", "es": "Este concepto todavía no consigo entenderlo." },
+        { "zh": "他的作品写得很好，可是我看不太懂。", "py": "Tā de zuòpǐn xiě de hěn hǎo, kěshì wǒ kàn bu tài dǒng.", "es": "Sus obras están muy bien escritas, pero no las entiendo del todo." }
+      ]
+    },
+    { "type": "vocab", "title": "Literatura, arte y voluntariado", "words": ["留学", "志愿", "志愿者", "美术", "文学", "作品", "作者", "读者", "杂志", "合格", "标准", "进步", "概念"] },
+    {
+      "type": "phonetics-drill",
+      "title": "Dos 得 que suenan igual: grado y potencial",
+      "markdown": "**写得很好** (grado: «lo escribe muy bien») y **写得好** (potencial: «puede escribirlo bien») tienen el mismo 得 neutro. Lo que los distingue al oído es el **ritmo**:\n\n- Grado: 写得 **很好** — el adverbio (很, 非常, 不太) lleva el peso.\n- Potencial: 写**得好** / 写**不好** — tres sílabas seguidas, el peso en el resultado.\n\nEn una frase larga con dos partes, haz la **pausa en la coma** y baja la voz al final de cada parte: 我听得懂， | 可是说不好。\n\n**Ojo con 志愿者 zhìyuànzhě**: dos retroflejas (zh) con *yuàn* en medio, y 者 en tercer tono.",
+      "items": [
+        { "audio": "他写得很好。", "prompt": "¿Grado o potencial?", "options": ["Grado: lo escribe muy bien", "Potencial: puede escribirlo"], "answer": 0, "explain": "Con 很 delante del adjetivo, es complemento de grado." },
+        { "audio": "我写不好。", "prompt": "¿Grado o potencial?", "options": ["Potencial: no consigo escribirlo bien", "Grado: lo escribe mal"], "answer": 0, "explain": "V不C: potencial. El grado negativo sería 写得不好." },
+        { "audio": "志愿者", "options": ["zhìyuànzhě", "zìyuànzhě", "zhìyuǎnzhě"], "answer": 0 },
+        { "audio": "我听得懂，可是说不好。", "prompt": "¿Dónde va la pausa?", "options": ["Después de 听得懂", "Después de 我", "Después de 可是说"], "answer": 0 },
+        { "audio": "合格", "options": ["hégé", "hégè", "hēgé"], "answer": 0, "explain": "Dos segundos tonos: la voz sube dos veces." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["志", "概"],
+      "mnemonics": {
+        "志": "士 (persona culta, guerrero) + 心 (corazón): lo que un corazón decidido se propone → voluntad, aspiración (志愿).",
+        "概": "木 (madera) + 既 (da el sonido): un palo para nivelar el grano en la medida → lo general, a grandes rasgos (概念, «idea general»)."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "¿Grado o potencial? 写得很好 / 写得好 / 写不好",
+      "markdown": "Ya tienes dos complementos con **得**, y se parecen mucho:\n\n| | Afirmativa | Negativa | Qué dice |\n|---|---|---|---|\n| **Grado** (a2-u07) | 写得**很**好 | 写得**不**好 | cómo lo hace (de hecho) |\n| **Potencial** (esta unidad) | 写**得**好 | 写**不**好 | si es capaz / si es posible |\n\nPistas para no confundirlos:\n\n1. El grado lleva casi siempre **很, 非常, 不太…** delante del adjetivo; el potencial, **nunca**: *看得很懂* no existe.\n2. Las negativas son distintas: 写**得不**好 (grado) / 写**不**好 (potencial).\n3. Si hay **能** delante, sobra: lo normal es 我听不懂, no 我不能听懂.\n\nEn el esqueleto lo verás en las columnas: en el grado, **V得** va en *Verbo 1* y el adjetivo en *Complemento* (写得 · 很好); en el potencial, el verbo solo en *Verbo 1* y **得 / 不 + resultado** en *Complemento* (写 · 不好).\n\nResumen de la unidad: 听得懂 · 看不清楚 · 来不及 · 写得完 · 找不到 · 去不了 · 打不开 · 离不开.",
+      "focus": ["verb1", "complement"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "安娜", "py": "Ānnà" }, "verb1": { "zh": "写得", "py": "xiě de" }, "complement": { "zh": "很好", "py": "hěn hǎo" } }, "end": "。", "es": "Ana escribe muy bien. (grado)" },
+        { "slots": { "subject": { "zh": "这篇文章她", "py": "zhè piān wénzhāng tā" }, "time": { "zh": "一天", "py": "yì tiān" }, "verb1": { "zh": "写", "py": "xiě" }, "complement": { "zh": "得完", "py": "de wán" } }, "end": "。", "es": "Este artículo es capaz de terminarlo en un día. (potencial)" },
+        { "slots": { "subject": { "zh": "这本文学杂志我", "py": "zhè běn wénxué zázhì wǒ" }, "verb1": { "zh": "看", "py": "kàn" }, "complement": { "zh": "得懂", "py": "de dǒng" } }, "end": "。", "es": "Esta revista de literatura la entiendo. (potencial)" },
+        { "slots": { "subject": { "zh": "他的普通话", "py": "tā de pǔtōnghuà" }, "verb1": { "zh": "说得", "py": "shuō de" }, "complement": { "zh": "非常标准", "py": "fēicháng biāozhǔn" } }, "end": "。", "es": "Habla un chino estándar muy correcto. (grado)" }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "这么难的概念我", "py": "zhème nán de gàiniàn wǒ" }, "verb1": { "zh": "理解", "py": "lǐjiě" }, "complement": { "zh": "不了", "py": "bu liǎo" } }, "end": "。", "es": "Un concepto tan difícil no consigo entenderlo. (potencial)" },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "verb1": { "zh": "说得", "py": "shuō de" }, "complement": { "zh": "不太标准", "py": "bú tài biāozhǔn" } }, "end": "。", "es": "No hablo muy correctamente. (grado)" }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "这本文学杂志你", "py": "zhè běn wénxué zázhì nǐ" }, "verb1": { "zh": "看", "py": "kàn" }, "complement": { "zh": "得懂", "py": "de dǒng" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿Entiendes esta revista de literatura? (potencial)" },
+        { "slots": { "subject": { "zh": "那位作者", "py": "nà wèi zuòzhě" }, "verb1": { "zh": "写得", "py": "xiě de" }, "complement": { "zh": "怎么样", "py": "zěnmeyàng" } }, "end": "？", "es": "¿Qué tal escribe ese autor? (grado)" }
+      ],
+      "mistakes": [
+        { "wrong": "这本书我看得很懂。", "right": "这本书我看得懂。", "why": "El potencial no lleva 很: 很 es del complemento de grado." },
+        { "wrong": "我不能看懂这本杂志。", "right": "这本杂志我看不懂。", "why": "Para «no soy capaz de entenderlo» se usa el potencial, no 不能." },
+        { "wrong": "他写得不完。", "right": "他写不完。", "why": "得不 es la negativa del grado; la del potencial es solo 不 en medio." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Aprobados y voluntarios",
+      "lines": [
+        { "speaker": "安娜", "zh": "雨果，期中考试的成绩你看了吗？", "py": "Yǔguǒ, qīzhōng kǎoshì de chéngjì nǐ kàn le ma?", "es": "Hugo, ¿has visto las notas del examen parcial?" },
+        { "speaker": "雨果", "zh": "看了，合格了！听力比上次进步了很多。", "py": "Kàn le, hégé le! Tīnglì bǐ shàng cì jìnbù le hěn duō.", "es": "Sí, ¡he aprobado! La comprensión oral me ha salido mucho mejor que la última vez." },
+        { "speaker": "安娜", "zh": "太好了！以前你常常听不懂，现在都听得懂了。", "py": "Tài hǎo le! Yǐqián nǐ chángcháng tīng bu dǒng, xiànzài dōu tīng de dǒng le.", "es": "¡Genial! Antes muchas veces no entendías nada y ahora lo entiendes todo." },
+        { "speaker": "雨果", "zh": "还有一些概念我理解不了。你呢？", "py": "Hái yǒu yìxiē gàiniàn wǒ lǐjiě bu liǎo. Nǐ ne?", "es": "Todavía hay algunos conceptos que no consigo entender. ¿Y tú?" },
+        { "speaker": "安娜", "zh": "我的写作不太好，老师说我的文章写得不够标准。", "py": "Wǒ de xiězuò bú tài hǎo, lǎoshī shuō wǒ de wénzhāng xiě de bú gòu biāozhǔn.", "es": "A mí la redacción no me va muy bien: la profesora dice que mis textos no son lo bastante correctos." },
+        { "speaker": "雨果", "zh": "对了，这个周末学校有一个美术和文学的活动，要找志愿者。", "py": "Duì le, zhège zhōumò xuéxiào yǒu yí ge měishù hé wénxué de huódòng, yào zhǎo zhìyuànzhě.", "es": "Por cierto, este fin de semana hay una actividad de arte y literatura en la universidad y buscan voluntarios." },
+        { "speaker": "安娜", "zh": "我想去！做志愿者要做什么？", "py": "Wǒ xiǎng qù! Zuò zhìyuànzhě yào zuò shénme?", "es": "¡Yo quiero ir! ¿Qué hacen los voluntarios?" },
+        { "speaker": "雨果", "zh": "帮作者跟读者交流。有一本文学杂志的作者也来。", "py": "Bāng zuòzhě gēn dúzhě jiāoliú. Yǒu yì běn wénxué zázhì de zuòzhě yě lái.", "es": "Ayudar a que los autores hablen con los lectores. También viene un autor de una revista de literatura." },
+        { "speaker": "安娜", "zh": "他的作品我看过，写得很好，可是我看不太懂。", "py": "Tā de zuòpǐn wǒ kàn guo, xiě de hěn hǎo, kěshì wǒ kàn bu tài dǒng.", "es": "He leído sus obras: están muy bien escritas, pero no las entiendo del todo." },
+        { "speaker": "雨果", "zh": "没关系，他说话说得很慢，我们一定听得懂。", "py": "Méi guānxi, tā shuōhuà shuō de hěn màn, wǒmen yídìng tīng de dǒng.", "es": "No pasa nada: habla muy despacio, seguro que lo entendemos." },
+        { "speaker": "安娜", "zh": "你为什么想做志愿者？", "py": "Nǐ wèi shénme xiǎng zuò zhìyuànzhě?", "es": "¿Por qué quieres hacer de voluntario?" },
+        { "speaker": "雨果", "zh": "来中国留学，不能只在教室里学汉语，要多跟人交流！", "py": "Lái Zhōngguó liúxué, bù néng zhǐ zài jiàoshì li xué Hànyǔ, yào duō gēn rén jiāoliú!", "es": "Si vienes a estudiar a China, no puedes aprender chino solo en el aula: ¡hay que hablar con la gente!" }
+      ],
+      "notes": "En las universidades chinas los 志愿者 están por todas partes: en la semana de llegada de los nuevos, en los exámenes, en congresos y actividades culturales. Para un estudiante extranjero es una manera estupenda de practicar. 看不太懂 («no lo entiendo mucho») es un potencial suavizado con 太: muy natural."
+    },
+    { "type": "exercises", "count": 20, "bank": ["g-complements", "g-modal-verbs", "g-measure-words", "g-word-order", "g-le"] },
+    {
+      "type": "sentence-builder",
+      "title": "Construye la frase completa",
+      "items": [
+        { "sentence": { "slots": { "time0": { "zh": "上课的时候" }, "subject": { "zh": "王老师说的话我们" }, "adverb": { "zh": "现在都" }, "verb1": { "zh": "听" }, "complement": { "zh": "得懂" }, "particle": { "zh": "了" } }, "end": "。", "es": "Ahora en clase entendemos todo lo que dice la profesora Wang." }, "distractors": ["不能"] },
+        { "sentence": { "slots": { "subject": { "zh": "这么多期中考试的试题我们" }, "time": { "zh": "半个小时" }, "adverb": { "zh": "一定" }, "verb1": { "zh": "做" }, "complement": { "zh": "不完" } }, "end": "。", "es": "Tantas preguntas del examen parcial seguro que no nos da tiempo a terminarlas en media hora." }, "distractors": ["得不"] },
+        { "sentence": { "slots": { "subject": { "zh": "坐在最后面的同学" }, "adverb": { "zh": "也" }, "verb1": { "zh": "看得清楚" }, "object": { "zh": "黑板上的标题和文字" } }, "end": "。", "es": "Los compañeros que se sientan al fondo también ven bien el título y el texto de la pizarra." }, "distractors": ["很"] },
+        { "sentence": { "slots": { "subject": { "zh": "我的指导老师" }, "time": { "zh": "明天上午" }, "adverb": { "zh": "可能" }, "verb1": { "zh": "来" }, "complement": { "zh": "不了" }, "particle": { "zh": "了" } }, "end": "。", "es": "Puede que mi tutora no pueda venir mañana por la mañana." } },
+        { "sentence": { "slots": { "time0": { "zh": "用这个新的应用" }, "subject": { "zh": "大家" }, "adverb": { "zh": "都" }, "verb1": { "zh": "打得开" }, "object": { "zh": "王老师发送的电子邮件" } }, "end": "。", "es": "Con esta aplicación nueva, todos pueden abrir los correos que manda la profesora Wang." } },
+        { "sentence": { "slots": { "subject": { "zh": "雨果" }, "time": { "zh": "昨天晚上" }, "adverb": { "zh": "已经" }, "with": { "zh": "把那位作者的文章" }, "verb1": { "zh": "读了" }, "complement": { "zh": "三遍" } }, "end": "。", "es": "Anoche Hugo ya se había leído tres veces el artículo de ese autor." }, "distractors": ["次"] },
+        { "sentence": { "slots": { "subject": { "zh": "很多来中国留学的学生" }, "adverb": { "zh": "都" }, "verb1": { "zh": "离不开" }, "object": { "zh": "手机上的地图和词典" } }, "end": "。", "es": "Muchos estudiantes que vienen a estudiar a China no pueden vivir sin el mapa y el diccionario del móvil." } }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "现在老师的话我都听得懂了。", "py": "Xiànzài lǎoshī de huà wǒ dōu tīng de dǒng le.", "es": "Ahora ya entiendo todo lo que dice la profesora." },
+        { "zh": "这个概念我还理解不了。", "py": "Zhège gàiniàn wǒ hái lǐjiě bu liǎo.", "es": "Este concepto todavía no consigo entenderlo." },
+        { "zh": "他写得很好，可是我看不太懂。", "py": "Tā xiě de hěn hǎo, kěshì wǒ kàn bu tài dǒng.", "es": "Escribe muy bien, pero no lo entiendo del todo." },
+        { "zh": "你进步了很多！", "py": "Nǐ jìnbù le hěn duō!", "es": "¡Has mejorado muchísimo!" },
+        { "zh": "现在走还来得及。", "py": "Xiànzài zǒu hái lái de jí.", "es": "Si salimos ahora, todavía llegamos." }
+      ],
+      "respond": [
+        { "q": { "zh": "王老师的话你都听得懂吗？", "py": "Wáng lǎoshī de huà nǐ dōu tīng de dǒng ma?", "es": "¿Entiendes todo lo que dice la profesora Wang?" }, "model": { "zh": "差不多都听得懂，有些概念还理解不了。", "py": "Chàbuduō dōu tīng de dǒng, yǒuxiē gàiniàn hái lǐjiě bu liǎo.", "es": "Casi todo; algunos conceptos todavía no consigo entenderlos." } },
+        { "q": { "zh": "你为什么来中国留学？", "py": "Nǐ wèi shénme lái Zhōngguó liúxué?", "es": "¿Por qué has venido a estudiar a China?" }, "model": { "zh": "因为我想学好汉语，也想多跟中国人交流。", "py": "Yīnwèi wǒ xiǎng xuéhǎo Hànyǔ, yě xiǎng duō gēn Zhōngguórén jiāoliú.", "es": "Porque quiero aprender bien chino y también hablar mucho con chinos." } },
+        { "q": { "zh": "这个周末你做得了志愿者吗？", "py": "Zhège zhōumò nǐ zuò de liǎo zhìyuànzhě ma?", "es": "¿Puedes hacer de voluntario este fin de semana?" }, "model": { "zh": "做得了，星期六我没有课。", "py": "Zuò de liǎo, xīngqīliù wǒ méiyǒu kè.", "es": "Sí, puedo: el sábado no tengo clase." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Tres meses en China",
+      "text": "雨果来中国留学已经三个月了。刚来的时候，老师的话他常常听不懂，黑板上的字也看不清楚。现在他的听力进步了很多，上课的内容差不多都听得懂。期中考试他合格了，可是王老师说他的写作还不够标准，有些概念他也理解不了。这个周末，学校有一个美术和文学的活动，要找二十个志愿者。雨果和安娜都去做志愿者了。他们的工作是帮作者跟读者交流。有一位作者写了很多作品，他的文章在很多杂志上都看得到。雨果问他：“您的书，外国人看得懂吗？”作者笑着说：“只要多读几遍，就看得懂。”雨果觉得，来中国留学，不能只在教室里学习，还要多跟人交流。",
+      "es": "Hugo lleva ya tres meses estudiando en China. Cuando llegó, muchas veces no entendía lo que decía la profesora ni distinguía bien las letras de la pizarra. Ahora su comprensión oral ha mejorado mucho y entiende casi todo lo que se explica en clase. Ha aprobado el examen parcial, pero la profesora Wang dice que su redacción todavía no es lo bastante correcta, y hay conceptos que tampoco consigue entender. Este fin de semana, la universidad organiza una actividad de arte y literatura y busca veinte voluntarios. Hugo y Ana se apuntaron. Su trabajo consiste en ayudar a que los autores hablen con los lectores. Uno de los autores ha escrito muchísimas obras y sus artículos salen en muchas revistas. Hugo le preguntó: «¿Los extranjeros pueden entender sus libros?». El autor contestó sonriendo: «Basta con leerlos unas cuantas veces y se entienden». Hugo piensa que, si vienes a estudiar a China, no puedes aprender solo en el aula: también hay que hablar mucho con la gente.",
+      "questions": [
+        { "q": "¿Cuánto tiempo lleva Hugo en China?", "options": ["三个月", "一年", "三个星期"], "answer": 0 },
+        { "q": "¿Qué dice la profesora de la redacción de Hugo?", "options": ["还不够标准", "非常好", "写不完"], "answer": 0 },
+        { "q": "¿Qué hacen Hugo y Ana el fin de semana?", "options": ["做志愿者", "考试", "做实验"], "answer": 0 },
+        { "q": "Según el autor, ¿cómo se entienden sus libros?", "options": ["多读几遍", "问老师", "看杂志"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

@@ -1,17 +1,34 @@
 "use client";
 import { useEffect, useMemo, useState } from "react";
-import Link from "@/lib/languages/link";
-import { useRouter } from "next/navigation";
+import Link, { useLangRouter } from "@/lib/languages/link";
 import { ArrowLeft, ArrowRight, Check, ChevronLeft, X } from "lucide-react";
-import { lessonById, nextLesson, stepLabel } from "@/lib/course";
+import { ensureLesson, lessonById, nextLesson, stepLabel } from "@/lib/course";
 import { markCompleted, markStarted } from "@/lib/course/progress";
+import { LESSON_MAP } from "@/lib/course/migration";
 import { useSettings } from "@/lib/settings";
 import { playFeedback } from "@/lib/sounds";
 import { Button } from "@/components/ui/button";
-import { Badge, PageHeader, Progress } from "@/components/ui/primitives";
+import { Badge, PageHeader, Progress, Spinner } from "@/components/ui/primitives";
 import { InkDivider, PetalRain, Seal } from "@/components/ornament";
 import { cn } from "@/lib/utils";
-import { ExplainStep, VocabStep, DialogueStep, GrammarStep, ExercisesStep, ReadingStep, ReviewStep } from "./steps";
+import {
+  ExplainStep,
+  VocabStep,
+  DialogueStep,
+  GrammarStep,
+  ExercisesStep,
+  ReadingStep,
+  ReviewStep,
+} from "./steps";
+import {
+  GrowthNotice,
+  ListenSpeakStep,
+  NotesGrowthStep,
+  ObjectiveStep,
+  PhoneticsDrillStep,
+  SentenceBuilderStep,
+  SkeletonStep,
+} from "./steps-v2";
 import { targetLang, getActivePack } from "@/lib/languages/registry";
 import { ui } from "@/lib/languages/ui-text";
 import { Mixed } from "@/components/target/mixed";
@@ -39,7 +56,23 @@ function useCountUp(target: number, duration = 700): number {
 }
 
 /** Pantalla de fin de lección: tinta que se extiende, sello 完成 estampado, cifras que suben, pétalos. */
-function LessonDone({ title, zh, score, words, onNext, nextTitle }: { title: string; zh?: string; score: number | null; words: number; onNext?: () => void; nextTitle?: string }) {
+function LessonDone({
+  lessonId,
+  title,
+  zh,
+  score,
+  words,
+  onNext,
+  nextTitle,
+}: {
+  lessonId: string;
+  title: string;
+  zh?: string;
+  score: number | null;
+  words: number;
+  onNext?: () => void;
+  nextTitle?: string;
+}) {
   const sounds = useSettings((s) => s.settings.sounds);
   const [stage, setStage] = useState<0 | 1 | 2>(0); // 0 tinta · 1 sello · 2 cifras
   useEffect(() => {
@@ -59,19 +92,28 @@ function LessonDone({ title, zh, score, words, onNext, nextTitle }: { title: str
   return (
     <div className="relative mx-auto max-w-lg">
       {stage >= 1 ? <PetalRain duration={1400} count={32} /> : null}
-      <div className="card-paper relative overflow-hidden px-6 pb-8 pt-10 text-center sm:px-10">
+      <div className="card-paper relative overflow-hidden px-6 pt-10 pb-8 text-center sm:px-10">
         {/* tinta que se extiende desde el centro */}
-        <span aria-hidden="true" className="pointer-events-none absolute left-1/2 top-24 size-10 -translate-x-1/2 -translate-y-1/2 rounded-full bg-ink/10 motion-safe:animate-[ink-spread_900ms_var(--ease-ink)_forwards] motion-reduce:scale-[28] motion-reduce:opacity-0" />
+        <span
+          aria-hidden="true"
+          className="bg-ink/10 pointer-events-none absolute top-24 left-1/2 size-10 -translate-x-1/2 -translate-y-1/2 rounded-full motion-safe:animate-[ink-spread_900ms_var(--ease-ink)_forwards] motion-reduce:scale-[28] motion-reduce:opacity-0"
+        />
         <style>{`@keyframes ink-spread { 0% { transform: translate(-50%,-50%) scale(0.2); opacity: .35; } 100% { transform: translate(-50%,-50%) scale(30); opacity: 0; } }`}</style>
 
         <div className="relative mx-auto flex h-24 items-center justify-center">
-          {stage >= 1 ? <Seal text={ui().doneSeal} size={92} stamped rotate={-4} title="Lección completada" /> : <span className="size-[92px]" />}
+          {stage >= 1 ? (
+            <Seal text={ui().doneSeal} size={92} stamped rotate={-4} title="Lección completada" />
+          ) : (
+            <span className="size-[92px]" />
+          )}
         </div>
-        <h1 className="font-serif-es mt-4 text-[26px] font-semibold leading-tight text-ink">¡Lección completada!</h1>
-        <p className="mt-1 text-ink-soft">
+        <h1 className="font-serif-es text-ink mt-4 text-[26px] leading-tight font-semibold">
+          ¡Lección completada!
+        </h1>
+        <p className="text-ink-soft mt-1">
           {title}
           {zh ? (
-            <span lang={targetLang()} className="zh-kai ml-2 text-cinnabar">
+            <span lang={targetLang()} className="zh-kai text-cinnabar ml-2">
               {zh}
             </span>
           ) : null}
@@ -79,21 +121,40 @@ function LessonDone({ title, zh, score, words, onNext, nextTitle }: { title: str
 
         <InkDivider label={ui().score} className="my-5" />
 
-        <div className={cn("grid grid-cols-2 gap-3 transition-opacity duration-500", stage < 2 && "opacity-0")} aria-live="polite">
+        <div
+          className={cn(
+            "grid grid-cols-2 gap-3 transition-opacity duration-500",
+            stage < 2 && "opacity-0",
+          )}
+          aria-live="polite"
+        >
           <div className="card-sunk p-3">
-            <p className="font-serif-es text-3xl font-semibold text-ink tabular">
+            <p className="font-serif-es text-ink tabular text-3xl font-semibold">
               {score !== null ? `${n} %` : n}
             </p>
-            <p className="text-xs text-ink-faint">{score !== null ? "acierto en ejercicios" : "palabras vistas"}</p>
+            <p className="text-ink-faint text-xs">
+              {score !== null ? "acierto en ejercicios" : "palabras vistas"}
+            </p>
           </div>
           <div className="card-sunk p-3">
-            <p className="font-serif-es text-3xl font-semibold text-celadon-ink tabular">{words}</p>
-            <p className="text-xs text-ink-faint">palabras en tu mazo</p>
+            <p className="font-serif-es text-celadon-ink tabular text-3xl font-semibold">{words}</p>
+            <p className="text-ink-faint text-xs">palabras en tu mazo</p>
           </div>
         </div>
-        <p className="mt-3 text-sm text-ink-faint">El vocabulario nuevo ya está en tus tarjetas. Lo verás en el repaso de mañana.</p>
+        <p className="text-ink-faint mt-3 text-sm">
+          El vocabulario nuevo ya está en tus tarjetas. Lo verás en el repaso de mañana.
+        </p>
+        <GrowthNotice
+          lessonId={lessonId}
+          className={cn("mt-4 text-left transition-opacity duration-500", stage < 2 && "opacity-0")}
+        />
 
-        <div className={cn("mt-6 flex flex-wrap justify-center gap-2 transition-opacity duration-500", stage < 2 && "opacity-0")}>
+        <div
+          className={cn(
+            "mt-6 flex flex-wrap justify-center gap-2 transition-opacity duration-500",
+            stage < 2 && "opacity-0",
+          )}
+        >
           {onNext ? (
             <Button size="lg" onClick={onNext}>
               Siguiente: {nextTitle} <ArrowRight />
@@ -112,8 +173,17 @@ function LessonDone({ title, zh, score, words, onNext, nextTitle }: { title: str
 }
 
 export function LessonPlayer({ lessonId }: { lessonId: string }) {
-  const router = useRouter();
+  const router = useLangRouter();
   const found = useMemo(() => lessonById(lessonId), [lessonId]);
+  // temario v2: los pasos llegan bajo demanda (el paquete solo lleva metadatos)
+  const [hydrated, setHydrated] = useState<string | null>(null);
+  useEffect(() => {
+    let alive = true;
+    void ensureLesson(lessonId).then(() => alive && setHydrated(lessonId));
+    return () => {
+      alive = false;
+    };
+  }, [lessonId]);
   const [step, setStep] = useState(0);
   const [scores, setScores] = useState<Record<number, number>>({});
   const [done, setDone] = useState(false);
@@ -121,6 +191,12 @@ export function LessonPlayer({ lessonId }: { lessonId: string }) {
   useEffect(() => {
     if (found) void markStarted(found.unit.id, found.lesson.id);
   }, [found]);
+
+  // enlace antiguo (u01-l1…) con el temario v2 activo → lección equivalente
+  const legacyTarget = !found ? LESSON_MAP[lessonId]?.find((id) => lessonById(id)) : undefined;
+  useEffect(() => {
+    if (legacyTarget) router.replace(`/aprender/leccion/${legacyTarget}`);
+  }, [legacyTarget, router]);
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -135,6 +211,13 @@ export function LessonPlayer({ lessonId }: { lessonId: string }) {
             <ArrowLeft /> Volver al curso
           </Link>
         </Button>
+      </div>
+    );
+  }
+  if (hydrated !== lessonId || !found.lesson.steps.length) {
+    return (
+      <div className="text-ink-faint flex items-center justify-center gap-2 py-16">
+        <Spinner /> Cargando la lección…
       </div>
     );
   }
@@ -158,8 +241,20 @@ export function LessonPlayer({ lessonId }: { lessonId: string }) {
 
   if (done) {
     const vals = Object.values(scores);
-    const score = vals.length ? Math.round((vals.reduce((a, b) => a + b, 0) / vals.length) * 100) : null;
-    return <LessonDone title={lesson.title} zh={lesson.zh} score={score} words={lesson.vocab.length} nextTitle={next?.lesson.title} onNext={next ? () => router.push(`/aprender/leccion/${next.lesson.id}`) : undefined} />;
+    const score = vals.length
+      ? Math.round((vals.reduce((a, b) => a + b, 0) / vals.length) * 100)
+      : null;
+    return (
+      <LessonDone
+        lessonId={lesson.id}
+        title={lesson.title}
+        zh={lesson.zh}
+        score={score}
+        words={lesson.vocab.length}
+        nextTitle={next?.lesson.title}
+        onNext={next ? () => router.push(`/aprender/leccion/${next.lesson.id}`) : undefined}
+      />
+    );
   }
 
   const pct = ((step + 1) / steps.length) * 100;
@@ -169,31 +264,47 @@ export function LessonPlayer({ lessonId }: { lessonId: string }) {
       {/* cabecera: cerrar · unidad · paso, con pincelada de progreso */}
       <div className="mb-4">
         <div className="flex items-center gap-2 text-sm">
-          <Button variant="ghost" size="icon-sm" asChild aria-label="Cerrar la lección y volver al curso">
+          <Button
+            variant="ghost"
+            size="icon-sm"
+            asChild
+            aria-label="Cerrar la lección y volver al curso"
+          >
             <Link href="/aprender">
               <X />
             </Link>
           </Button>
-          <Link href="/aprender" className="flex min-w-0 items-center gap-1 text-ink-faint hover:text-ink">
-            <ChevronLeft className="size-4 shrink-0" /> <span className="truncate"><Mixed>{unit.title}</Mixed></span>
+          <Link
+            href="/aprender"
+            className="text-ink-faint hover:text-ink flex min-w-0 items-center gap-1"
+          >
+            <ChevronLeft className="size-4 shrink-0" />{" "}
+            <span className="truncate">
+              <Mixed>{unit.title}</Mixed>
+            </span>
           </Link>
-          <span className="ml-auto shrink-0 text-xs text-ink-faint tabular">
+          <span className="text-ink-faint tabular ml-auto shrink-0 text-xs">
             {lesson.minutes} min · paso {step + 1} / {steps.length}
           </span>
         </div>
-        <Progress value={pct} brush className="mt-2 h-1.5" color={isLast ? "rgb(var(--celadon))" : "rgb(var(--ink))"} />
+        <Progress
+          value={pct}
+          brush
+          className="mt-2 h-1.5"
+          color={isLast ? "rgb(var(--celadon))" : "rgb(var(--ink))"}
+        />
       </div>
 
-      <h1 className="font-serif-es text-[26px] font-semibold leading-tight tracking-tight text-ink sm:text-3xl">
+      <h1 className="font-serif-es text-ink text-[26px] leading-tight font-semibold tracking-tight sm:text-3xl">
         {lesson.title}
         {lesson.zh ? (
-          <span lang={targetLang()} className="zh-kai ml-2 text-xl font-normal text-cinnabar">
+          <span lang={targetLang()} className="zh-kai text-cinnabar ml-2 text-xl font-normal">
             {lesson.zh}
           </span>
         ) : null}
       </h1>
-      <p className="mb-4 mt-1 text-sm text-ink-faint">
-        <span className="font-medium text-ink-soft">Objetivo:</span> {lesson.goal}
+      <p className="text-ink-faint mt-1 mb-4 text-sm">
+        <span className="text-ink-soft font-medium">Objetivo:</span> {lesson.goal}
         {!lesson.reviewed ? (
           <Badge variant="muted" className="ml-2">
             contenido pendiente de revisar con tu profesor
@@ -203,7 +314,10 @@ export function LessonPlayer({ lessonId }: { lessonId: string }) {
 
       {/* barra de pasos: scroll horizontal con bordes desvanecidos */}
       <div className="relative -mx-4 mb-5 sm:mx-0">
-        <ol className="no-scrollbar flex gap-1.5 overflow-x-auto px-4 py-1 sm:px-0 [mask-image:linear-gradient(90deg,transparent,#000_14px,#000_calc(100%-14px),transparent)]" aria-label="Pasos de la lección">
+        <ol
+          className="no-scrollbar flex gap-1.5 overflow-x-auto [mask-image:linear-gradient(90deg,transparent,#000_14px,#000_calc(100%-14px),transparent)] px-4 py-1 sm:px-0"
+          aria-label="Pasos de la lección"
+        >
           {steps.map((s, i) => (
             <li key={i} className="shrink-0">
               <button
@@ -212,7 +326,11 @@ export function LessonPlayer({ lessonId }: { lessonId: string }) {
                 aria-label={stepLabel(s)}
                 className={cn(
                   "flex h-8 items-center gap-1 rounded-full border px-3 text-xs transition-colors duration-[var(--dur-ui)]",
-                  i === step ? "border-ink bg-ink text-paper" : i < step ? "border-celadon/50 bg-celadon/12 text-celadon-ink" : "border-line bg-paper-raised text-ink-faint hover:border-ink/30 hover:text-ink",
+                  i === step
+                    ? "border-ink bg-ink text-paper"
+                    : i < step
+                      ? "border-celadon/50 bg-celadon/12 text-celadon-ink"
+                      : "border-line bg-paper-raised text-ink-faint hover:border-ink/30 hover:text-ink",
                 )}
               >
                 {i < step ? <Check className="size-3" /> : <span className="tabular">{i + 1}</span>}
@@ -250,12 +368,25 @@ export function LessonPlayer({ lessonId }: { lessonId: string }) {
           />
         ) : null}
         {cur.type === "review" ? <ReviewStep lesson={lesson} scores={scores} /> : null}
+        {cur.type === "objective" ? <ObjectiveStep lesson={lesson} step={cur} /> : null}
+        {cur.type === "phonetics-drill" ? <PhoneticsDrillStep step={cur} /> : null}
+        {cur.type === "skeleton" ? <SkeletonStep lesson={lesson} step={cur} /> : null}
+        {cur.type === "sentence-builder" ? (
+          <SentenceBuilderStep lesson={lesson} step={cur} />
+        ) : null}
+        {cur.type === "listen-speak" ? <ListenSpeakStep step={cur} /> : null}
+        {cur.type === "notes-growth" ? <NotesGrowthStep lesson={lesson} /> : null}
         <SpecialStep step={cur} onFinish={() => goNext()} />
       </div>
 
       {cur.type !== "exercises" && cur.type !== "reading" ? (
         <div className="mt-6 flex items-center justify-between gap-2">
-          <Button variant="ghost" size="lg" onClick={() => setStep((s) => Math.max(0, s - 1))} disabled={step === 0}>
+          <Button
+            variant="ghost"
+            size="lg"
+            onClick={() => setStep((s) => Math.max(0, s - 1))}
+            disabled={step === 0}
+          >
             <ArrowLeft /> Anterior
           </Button>
           <Button onClick={goNext} size="lg" variant={isLast ? "jade" : "default"}>
@@ -276,11 +407,24 @@ export function LessonPlayer({ lessonId }: { lessonId: string }) {
 }
 
 /** Pasos propios del idioma (Unidad 0, kana, hangul, acento…): los aporta el paquete activo. */
-function SpecialStep({ step, onFinish }: { step: import("@/lib/course/types").LessonStep; onFinish: () => void }) {
+function SpecialStep({
+  step,
+  onFinish,
+}: {
+  step: import("@/lib/course/types").LessonStep;
+  onFinish: () => void;
+}) {
   const modules = getActivePack().ui.modules;
   const id = step.type === "module" ? step.id : step.type;
   const Mod = modules[id];
   if (!Mod) return null;
-  const params = step.type === "radicals" ? { radicals: step.radicals } : step.type === "module" ? step.params : undefined;
+  const params =
+    step.type === "radicals"
+      ? { radicals: step.radicals }
+      : step.type === "module"
+        ? step.params
+        : step.type === "char-of-day"
+          ? { chars: step.chars, mnemonics: step.mnemonics }
+          : undefined;
   return <Mod params={params} onFinish={() => onFinish()} />;
 }

@@ -1,0 +1,139 @@
+{
+  "id": "b1-u04-l5",
+  "title": "Por ahí viene alguien: 前面走过来一个人",
+  "zh": "出口走出来很多人",
+  "goal": "Contar que algo o alguien aparece o desaparece en un lugar con lugar + verbo + complemento + cantidad + persona o cosa (前面开过来一辆车, 树上飞走了一只鸟).",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "迎接", "pinyin": "yíngjiē", "es": "recibir, ir a recibir (a alguien que llega)", "note": "去机场迎接朋友." },
+    { "hanzi": "飞行", "pinyin": "fēixíng", "es": "volar; vuelo", "note": "飞行了十三个小时." },
+    { "hanzi": "团", "pinyin": "tuán", "es": "grupo, delegación", "note": "旅行团 = viaje organizado, grupo turístico." },
+    { "hanzi": "带领", "pinyin": "dàilǐng", "es": "guiar, dirigir (a un grupo)" },
+    { "hanzi": "领", "pinyin": "lǐng", "es": "guiar; recoger (algo que te dan)", "note": "领行李 = recoger el equipaje." },
+    { "hanzi": "人员", "pinyin": "rényuán", "es": "personal (de un sitio)", "note": "工作人员 = el personal, los empleados." },
+    { "hanzi": "现场", "pinyin": "xiànchǎng", "es": "el lugar mismo, en directo, in situ", "note": "现场有很多人 = allí mismo había mucha gente." },
+    { "hanzi": "传来", "pinyin": "chuánlai", "es": "llegar (un sonido, una noticia)", "note": "那边传来一个声音 = desde allí llega una voz." },
+    { "hanzi": "大约", "pinyin": "dàyuē", "es": "aproximadamente", "note": "Va delante de la cifra: 大约五点. (左右 va detrás.)" },
+    { "hanzi": "前后", "pinyin": "qiánhòu", "es": "hacia (una hora), más o menos; delante y detrás", "note": "五点前后 = hacia las cinco." },
+    { "hanzi": "将近", "pinyin": "jiāngjìn", "es": "casi, cerca de (una cantidad)", "note": "将近十四个小时 = casi catorce horas." },
+    { "hanzi": "接近", "pinyin": "jiējìn", "es": "acercarse a; casi", "note": "飞机接近上海了 = el avión se acerca a Shanghái." },
+    { "hanzi": "升", "pinyin": "shēng", "es": "subir, ascender, elevarse", "note": "太阳升起来了 = ha salido el sol." },
+    { "hanzi": "静", "pinyin": "jìng", "es": "tranquilo, silencioso", "note": "静下来 = calmarse, quedarse en silencio. Ya conoces 安静." }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "前面开过来一辆出租车。", "py": "Qiánmian kāi guolai yí liàng chūzūchē.", "es": "Por delante viene un taxi." },
+        { "zh": "出口走出来了很多人。", "py": "Chūkǒu zǒu chulai le hěn duō rén.", "es": "Por la salida ha salido un montón de gente." },
+        { "zh": "树上飞走了一只鸟。", "py": "Shù shang fēizǒu le yì zhī niǎo.", "es": "Del árbol se ha ido volando un pájaro." }
+      ]
+    },
+    { "type": "vocab", "title": "En el aeropuerto", "words": ["迎接", "飞行", "团", "带领", "领", "人员", "现场", "传来", "大约", "前后", "将近", "接近", "升", "静"] },
+    {
+      "type": "phonetics-drill",
+      "title": "Lo nuevo va al final: ritmo de las frases de aparición",
+      "markdown": "En 前面走过来**一个人**, lo importante es **lo que aparece**, y por eso va **al final** y con el acento de la frase. El direccional del medio (走过来 *zǒu guolai*) se dice rápido y sin tono en 过来.\n\n- 树上飞走了**一只鸟** *shù shang fēizǒu le yì zhī niǎo*: 上 y 了 neutros, peso en 鸟.\n- **一辆** *yí liàng* (一 + cuarto tono → yí), **一只** *yì zhī* (一 + primer tono → yì).\n\nOjo con dos pares: **将近 jiāngjìn** y **接近 jiējìn** (las dos con j: lengua plana, sin aire), y **升 shēng** (sh retrofleja) frente a **星 xīng**.",
+      "items": [
+        { "audio": "前面走过来一个人。", "prompt": "¿Dónde cae el peso de la frase?", "options": ["En 一个人", "En 过来", "En 前面"], "answer": 0, "explain": "Lo nuevo, lo que aparece, va al final y se marca." },
+        { "audio": "一辆车", "options": ["yí liàng chē", "yì liàng chē", "yī liàng chē"], "answer": 0, "explain": "一 + cuarto tono → yí." },
+        { "audio": "一只鸟", "options": ["yì zhī niǎo", "yí zhī niǎo", "yī zhī niǎo"], "answer": 0, "explain": "一 + primer tono → yì." },
+        { "audio": "将近", "options": ["jiāngjìn", "jiējìn", "qiāngjìn"], "answer": 0, "explain": "jiāng con -ng final; jiējìn es 接近." },
+        { "audio": "升", "options": ["shēng", "xīng", "sēng"], "answer": 0, "explain": "sh retrofleja + -eng." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["迎", "静"],
+      "mnemonics": {
+        "迎": "辶 (camino) + 卬 (alguien que levanta la vista): salir al camino mirando a quien llega → recibir, dar la bienvenida (欢迎).",
+        "静": "青 (verde, limpio) + 争 (pelear): cuando la pelea se calma y todo queda limpio → tranquilo, silencioso."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "Lugar + V + complemento + (了) + cantidad + persona / cosa",
+      "markdown": "Para contar que algo **aparece** o **desaparece** en un sitio, el chino empieza por el **lugar** y deja **lo nuevo para el final**:\n\n**前面** + **走过来** + **一个人** (aparece) · **树上** + **飞走了** + **一只鸟** (desaparece)\n\n- El lugar va **sin 在** al principio (como en las frases de existencia con 着, a2-u08-l4).\n- Detrás del verbo hay siempre un **complemento**: direccional (走过来, 搬来) o de resultado (飞走, 开走).\n- Lo que aparece lleva casi siempre **cantidad** (一个, 几辆, 很多): es algo **nuevo, indeterminado**. Si ya sabemos quién es, va de sujeto normal: **那个人**从前面走过来了.\n- En español también solemos invertir («por ahí viene *un hombre*»), pero el chino lo hace **siempre** y sin preposición.\n\n**Convención del esqueleto**: el lugar del principio en **Dónde** (sin 在), V + complemento (+ 了) en **Verbo 1**, lo que aparece en **Objeto**.\n\n**Negativa y pregunta**: estas frases casi no se niegan; para negar, la persona o cosa conocida pasa a sujeto: 那辆出租车**还没**开过来. Para preguntar, 几 / 什么 en el objeto: 门口走进来了**几个人**？",
+      "focus": ["place", "verb1", "object"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "place": { "zh": "前面", "py": "qiánmian" }, "verb1": { "zh": "走过来", "py": "zǒu guolai" }, "object": { "zh": "一个人", "py": "yí ge rén" } }, "end": "。", "es": "Por delante viene un hombre.", "esOrder": [{ "text": "Por delante", "slot": "place" }, { "text": "viene", "slot": "verb1" }, { "text": "un hombre", "slot": "object" }] },
+        { "slots": { "place": { "zh": "楼上", "py": "lóu shang" }, "verb1": { "zh": "搬来了", "py": "bānlai le" }, "object": { "zh": "一家人", "py": "yì jiā rén" } }, "end": "。", "es": "Arriba se ha mudado una familia." },
+        { "slots": { "place": { "zh": "门口", "py": "ménkǒu" }, "verb1": { "zh": "开过来", "py": "kāi guolai" }, "object": { "zh": "一辆出租车", "py": "yí liàng chūzūchē" } }, "end": "。", "es": "Hasta la puerta llega un taxi." },
+        { "slots": { "place": { "zh": "树上", "py": "shù shang" }, "verb1": { "zh": "飞走了", "py": "fēizǒu le" }, "object": { "zh": "一只鸟", "py": "yì zhī niǎo" } }, "end": "。", "es": "Del árbol se ha ido volando un pájaro." },
+        { "slots": { "place": { "zh": "停车场", "py": "tíngchēchǎng" }, "verb1": { "zh": "开走了", "py": "kāizǒu le" }, "object": { "zh": "几辆车", "py": "jǐ liàng chē" } }, "end": "。", "es": "Del aparcamiento se han ido unos cuantos coches." },
+        { "slots": { "place": { "zh": "那边", "py": "nàbian" }, "verb1": { "zh": "传来了", "py": "chuánlai le" }, "object": { "zh": "一个声音", "py": "yí ge shēngyīn" } }, "end": "。", "es": "Desde allí llega una voz." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "那辆出租车", "py": "nà liàng chūzūchē" }, "adverb": { "zh": "还没", "py": "hái méi" }, "verb1": { "zh": "开过来", "py": "kāi guolai" } }, "end": "。", "es": "Ese taxi todavía no ha llegado." },
+        { "slots": { "subject": { "zh": "安娜的爸爸", "py": "Ānnà de bàba" }, "adverb": { "zh": "还没", "py": "hái méi" }, "verb1": { "zh": "走出来", "py": "zǒu chulai" } }, "end": "。", "es": "El padre de Ana todavía no ha salido." }
+      ],
+      "question": [
+        { "slots": { "place": { "zh": "门口", "py": "ménkǒu" }, "verb1": { "zh": "走进来了", "py": "zǒu jinlai le" }, "object": { "zh": "几个人", "py": "jǐ ge rén" } }, "end": "？", "es": "¿Cuántas personas han entrado por la puerta?" },
+        { "slots": { "place": { "zh": "楼上", "py": "lóu shang" }, "verb1": { "zh": "搬来了", "py": "bānlai le" }, "object": { "zh": "一家人", "py": "yì jiā rén" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿Se ha mudado una familia arriba?" }
+      ],
+      "mistakes": [
+        { "wrong": "一个人前面走过来。", "right": "前面走过来一个人。", "why": "Lo nuevo e indeterminado (un hombre) no abre la frase: va detrás del verbo." },
+        { "wrong": "在前面走过来一个人。", "right": "前面走过来一个人。", "why": "El lugar del principio no lleva 在 en estas frases." },
+        { "wrong": "前面走过来王老师。", "right": "王老师从前面走过来了。", "why": "Si es alguien conocido, va de sujeto normal; detrás del verbo solo va lo nuevo, con cantidad." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Llegadas internacionales",
+      "lines": [
+        { "speaker": "安娜", "zh": "雨果，快一点儿！我爸爸妈妈的飞机五点前后到。", "py": "Yǔguǒ, kuài yìdiǎnr! Wǒ bàba māma de fēijī wǔ diǎn qiánhòu dào.", "es": "¡Hugo, date prisa! El avión de mis padres llega hacia las cinco." },
+        { "speaker": "雨果", "zh": "别着急，现在大约四点半，我们来得及。", "py": "Bié zháojí, xiànzài dàyuē sì diǎn bàn, wǒmen láidejí.", "es": "Tranquila, son más o menos las cuatro y media: llegamos a tiempo." },
+        { "speaker": "安娜", "zh": "他们是跟一个旅行团来的，飞行了将近十四个小时。", "py": "Tāmen shì gēn yí ge lǚxíngtuán lái de, fēixíng le jiāngjìn shísì ge xiǎoshí.", "es": "Vienen con un viaje organizado; han volado casi catorce horas." },
+        { "speaker": "雨果", "zh": "真累啊！谁带领这个团？", "py": "Zhēn lèi a! Shéi dàilǐng zhège tuán?", "es": "¡Qué paliza! ¿Quién guía el grupo?" },
+        { "speaker": "安娜", "zh": "一个西班牙导游，她领着二十多个人。", "py": "Yí ge Xībānyá dǎoyóu, tā lǐngzhe èrshí duō ge rén.", "es": "Una guía española; lleva a más de veinte personas." },
+        { "speaker": "雨果", "zh": "你看，出口走出来了很多人！", "py": "Nǐ kàn, chūkǒu zǒu chulai le hěn duō rén!", "es": "¡Mira, por la salida está saliendo un montón de gente!" },
+        { "speaker": "安娜", "zh": "还不是他们……啊，那边传来了一个声音：“安娜！”", "py": "Hái bú shì tāmen……A, nàbian chuánlai le yí ge shēngyīn: “Ānnà!”", "es": "Todavía no son ellos… ¡Ah, desde allí llega una voz: «¡Ana!»!" },
+        { "speaker": "雨果", "zh": "是你妈妈！你看，人群里跑过来一个人。", "py": "Shì nǐ māma! Nǐ kàn, rénqún li pǎo guolai yí ge rén.", "es": "¡Es tu madre! Mira, de entre la gente viene alguien corriendo." },
+        { "speaker": "安娜的妈妈", "zh": "安娜！我们到了！现场的人真多啊！", "py": "Ānnà! Wǒmen dào le! Xiànchǎng de rén zhēn duō a!", "es": "¡Ana! ¡Ya estamos aquí! ¡Cuánta gente hay en el aeropuerto!" },
+        { "speaker": "安娜", "zh": "妈妈！爸爸呢？", "py": "Māma! Bàba ne?", "es": "¡Mamá! ¿Y papá?" },
+        { "speaker": "安娜的妈妈", "zh": "他在里面领行李，马上就出来。", "py": "Tā zài lǐmian lǐng xíngli, mǎshàng jiù chūlai.", "es": "Está dentro recogiendo las maletas; ahora sale." },
+        { "speaker": "工作人员", "zh": "对不起，这里不能停车。前面开过来一辆大巴，请让一下。", "py": "Duìbuqǐ, zhèlǐ bù néng tíngchē. Qiánmian kāi guolai yí liàng dàbā, qǐng ràng yíxià.", "es": "Perdonen, aquí no se puede parar. Por delante viene un autobús, déjenle pasar, por favor." },
+        { "speaker": "雨果", "zh": "好的。阿姨，欢迎来上海！我们来迎接你们。", "py": "Hǎo de. Āyí, huānyíng lái Shànghǎi! Wǒmen lái yíngjiē nǐmen.", "es": "Claro. ¡Señora, bienvenida a Shanghái! Hemos venido a recibiros." }
+      ],
+      "notes": "**大约** va **delante** de la cifra (大约五点) y **左右 / 前后** van **detrás** (五点左右, 五点前后); no se usan los dos a la vez. A la madre de un amigo se la llama **阿姨** (lit. «tía»), aunque no sea de la familia. 现场 se oye mucho en la tele: 现场直播 (en directo)."
+    },
+    { "type": "exercises", "count": 17, "bank": ["g-lai-qu", "g-you", "g-measure-words", "g-le"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "place": { "zh": "前面" }, "verb1": { "zh": "走过来" }, "object": { "zh": "一个人" } }, "end": "。", "es": "Por delante viene un hombre." }, "distractors": ["在"] },
+        { "sentence": { "slots": { "place": { "zh": "树上" }, "verb1": { "zh": "飞走了" }, "object": { "zh": "一只鸟" } }, "end": "。", "es": "Del árbol se ha ido volando un pájaro." } },
+        { "sentence": { "slots": { "place": { "zh": "门口" }, "verb1": { "zh": "走进来了" }, "object": { "zh": "几个人" } }, "end": "？", "es": "¿Cuántas personas han entrado por la puerta?" }, "distractors": ["吗"] },
+        { "sentence": { "slots": { "place": { "zh": "机场出口" }, "verb1": { "zh": "走出来了" }, "object": { "zh": "一个很大的西班牙旅行团" } }, "end": "。", "es": "Por la salida del aeropuerto ha salido un grupo de turistas españoles enorme." }, "distractors": ["在", "那个"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "前面开过来一辆出租车。", "py": "Qiánmian kāi guolai yí liàng chūzūchē.", "es": "Por delante viene un taxi." },
+        { "zh": "那边传来了一个声音。", "py": "Nàbian chuánlai le yí ge shēngyīn.", "es": "Desde allí llega una voz." },
+        { "zh": "他们飞行了将近十四个小时。", "py": "Tāmen fēixíng le jiāngjìn shísì ge xiǎoshí.", "es": "Han volado casi catorce horas." },
+        { "zh": "我们来迎接你们。", "py": "Wǒmen lái yíngjiē nǐmen.", "es": "Hemos venido a recibiros." }
+      ],
+      "respond": [
+        { "q": { "zh": "你看，前面走过来了什么人？", "py": "Nǐ kàn, qiánmian zǒu guolai le shénme rén?", "es": "Mira, ¿quién viene por ahí?" }, "model": { "zh": "前面走过来了几个学生。", "py": "Qiánmian zǒu guolai le jǐ ge xuésheng.", "es": "Vienen unos estudiantes." } },
+        { "q": { "zh": "飞机几点到？", "py": "Fēijī jǐ diǎn dào?", "es": "¿A qué hora llega el avión?" }, "model": { "zh": "大约五点，五点前后吧。", "py": "Dàyuē wǔ diǎn, wǔ diǎn qiánhòu ba.", "es": "Más o menos a las cinco, hacia las cinco." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Esperando en el aeropuerto",
+      "text": "安娜的爸爸妈妈跟一个旅行团来上海玩儿。一个西班牙导游带领这个团，她领着二十多个人。他们飞行了将近十四个小时，飞机五点前后到。雨果和安娜大约四点半到了机场，去迎接他们。现场人很多，机场的工作人员说：“这里不能停车。”这时，前面开过来一辆大巴，停在门口，车上走下来几个人。五点多，飞机接近上海了。又过了半个小时，出口走出来了很多人。那边传来了一个声音：“安娜！安娜！”人群里跑过来一个人，是安娜的妈妈！她爸爸领了行李，也走了出来。大家都很高兴。晚上，他们坐在饭馆里，外面静了下来。安娜的妈妈说：“明天早上，我们要去看太阳升起来！”",
+      "es": "Los padres de Ana vienen de viaje a Shanghái con un grupo organizado. Los guía una española, que lleva a más de veinte personas. Han volado casi catorce horas y el avión llega hacia las cinco. Hugo y Ana llegan al aeropuerto sobre las cuatro y media para recibirlos. Allí hay muchísima gente y el personal del aeropuerto dice: «Aquí no se puede parar». En ese momento llega un autobús, se para en la puerta y se bajan unas cuantas personas. Pasadas las cinco, el avión se acerca a Shanghái. Media hora después, por la salida sale un montón de gente. Desde allí llega una voz: «¡Ana! ¡Ana!». De entre la gente viene alguien corriendo: ¡es la madre de Ana! Su padre recoge las maletas y sale también. Todos están contentísimos. Por la noche cenan en un restaurante y fuera todo se queda en silencio. La madre de Ana dice: «¡Mañana por la mañana vamos a ver salir el sol!».",
+      "questions": [
+        { "q": "¿Cuántas horas han volado?", "options": ["将近十四个小时", "大约五个小时", "二十多个小时"], "answer": 0 },
+        { "q": "¿Qué llega a la puerta del aeropuerto?", "options": ["一辆大巴", "一辆出租车", "一个旅行团"], "answer": 0 },
+        { "q": "¿Quién sale corriendo de entre la gente?", "options": ["安娜的妈妈", "导游", "安娜的爸爸"], "answer": 0 },
+        { "q": "¿Qué quiere hacer la madre de Ana mañana?", "options": ["Ver salir el sol", "Ir de compras", "Volver a España"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

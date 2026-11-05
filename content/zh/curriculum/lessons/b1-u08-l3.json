@@ -1,0 +1,141 @@
+{
+  "id": "b1-u08-l3",
+  "title": "Ya que estás de acuerdo…: 既然…就, 是不是 y 不是…吗",
+  "zh": "既然你同意，就…",
+  "goal": "Sacar consecuencias con 既然…就, confirmar una sospecha con 是不是 y recordar o reprochar algo con la pregunta retórica 不是…吗.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "既然", "pinyin": "jìrán", "es": "ya que, puesto que", "note": "既然…，就… : parte de algo que los dos ya sabéis. Fuera del HSK 3 (nivel 4)." },
+    { "hanzi": "同意", "pinyin": "tóngyì", "es": "estar de acuerdo, aceptar", "note": "我同意你的看法. Negativa: 不同意." },
+    { "hanzi": "支持", "pinyin": "zhīchí", "es": "apoyar; apoyo", "note": "我支持你！ = ¡cuenta conmigo!" },
+    { "hanzi": "反对", "pinyin": "fǎnduì", "es": "estar en contra, oponerse" },
+    { "hanzi": "当然", "pinyin": "dāngrán", "es": "claro, por supuesto" },
+    { "hanzi": "确实", "pinyin": "quèshí", "es": "de verdad, efectivamente", "note": "Confirma lo que dice el otro: 你说得确实有道理." },
+    { "hanzi": "确定", "pinyin": "quèdìng", "es": "estar seguro; fijar, decidir", "note": "我不确定 = no estoy seguro; 确定时间 = fijar la hora." },
+    { "hanzi": "能不能", "pinyin": "néng bu néng", "es": "¿se puede…?, ¿puedes…?", "note": "Pregunta A不A con 能: 能不能用手机？" },
+    { "hanzi": "主意", "pinyin": "zhǔyi", "es": "idea (plan concreto)", "note": "好主意！ = ¡buena idea! 意 en tono neutro." },
+    { "hanzi": "建议", "pinyin": "jiànyì", "es": "sugerir, proponer; propuesta", "note": "我建议我们先… = propongo que primero…" },
+    { "hanzi": "坚决", "pinyin": "jiānjué", "es": "firme, rotundo; rotundamente", "note": "我坚决反对 = me opongo rotundamente." },
+    { "hanzi": "双方", "pinyin": "shuāngfāng", "es": "ambas partes" },
+    { "hanzi": "对方", "pinyin": "duìfāng", "es": "la otra parte, el otro (en un debate, una negociación)" }
+  ],
+  "extraVocab": ["既然"],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "既然大家都同意，我们就这么做吧。", "py": "Jìrán dàjiā dōu tóngyì, wǒmen jiù zhème zuò ba.", "es": "Ya que todos estáis de acuerdo, hagámoslo así." },
+        { "zh": "你是不是反对这个建议？", "py": "Nǐ shì bu shì fǎnduì zhège jiànyì?", "es": "¿Es que estás en contra de esta propuesta?" },
+        { "zh": "你不是同意了吗？", "py": "Nǐ bú shì tóngyì le ma?", "es": "¿Pero no habías dicho que sí?" }
+      ]
+    },
+    { "type": "vocab", "title": "Estar de acuerdo o no", "words": ["既然", "同意", "支持", "反对", "当然", "确实", "确定", "能不能", "主意", "建议", "坚决", "双方", "对方"] },
+    {
+      "type": "phonetics-drill",
+      "title": "La pregunta retórica y el 不 neutro de 是不是",
+      "markdown": "**不是…吗？** no pide información: **recuerda** algo o muestra **sorpresa** («¡pero si…!»). Se marca con la voz: **不是** se dice con fuerza, y 吗 sale corto y algo más alto.\n\n**是不是**: en las preguntas A不A, **不 es neutro** y corto: *shì bu shì*, *néng bu néng*. Si lo pones al final (…，是不是？), suena a «¿verdad?».\n\n- **既然 jìrán**: la *r* china es suave, casi como la «y» de «yo» rioplatense; nunca una erre vibrante.\n- **确 què**: *q* aspirada + *üe* (labios redondos).\n- **双方 shuāngfāng**: *sh* retrofleja y dos primeros tonos, altos y planos.",
+      "items": [
+        { "audio": "你不是同意了吗？", "prompt": "¿Qué expresa?", "options": ["Sorpresa o recordatorio: «¡pero si dijiste que sí!»", "Una pregunta neutra de sí o no", "Una orden"], "answer": 0 },
+        { "audio": "是不是", "options": ["shì bu shì", "shì bú shì", "shí bu shì"], "answer": 0, "explain": "En A不A, 不 va en tono neutro." },
+        { "audio": "既然", "options": ["jìrán", "jìlán", "jīrán"], "answer": 0, "explain": "Cuarto + segundo, con la r china suave." },
+        { "audio": "确实", "options": ["quèshí", "quèsí", "qièshí"], "answer": 0, "explain": "què con ü redonda; shí retroflejo." },
+        { "audio": "双方", "options": ["shuāngfāng", "shuāngfáng", "suāngfāng"], "answer": 0 }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["既", "支"],
+      "mnemonics": {
+        "既": "A la izquierda, un cuenco lleno de comida; a la derecha, una persona que gira la cabeza: ya ha comido y no quiere más. «Ya» → 既然 «ya que».",
+        "支": "十 (una rama) + 又 (una mano): una mano que sostiene una rama. Sostener → 支持 «apoyar»."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "既然…就, 是不是 y 不是…吗",
+      "markdown": "**1. 既然 A，(sujeto) 就 B** = «ya que A, (entonces) B». A es algo que **los dos ya sabéis** (lo acabas de oír, es evidente); B suele ser una propuesta, una orden o una conclusión: 既然你不舒服，就别去了.\n\n- Diferencia con **因为…所以**: 因为 da una **causa nueva**; 既然 parte de lo que el otro **acaba de decir**.\n- **Nunca 既然…所以**: la segunda parte lleva **就** (y a menudo 吧 o 了).\n- **Esqueleto** (convención de conectores de la lección 2): 既然 en **Tiempo inicial** de la primera fila; **就** en **Adverbios** de la segunda.\n\n**2. 是不是** sirve para **confirmar una sospecha** («¿es que…?, ¿a que…?»): va **delante del predicado** (hueco *Adverbios*) o **al final** tras una coma (*Partícula*: …，是不是？). Nunca con 吗.\n\n**3. 不是…吗？** es una **pregunta retórica**: «¿no es que…? / ¡pero si…!». 不是 va en *Adverbios* y 吗 en *Partícula*: 你**不是**同意了**吗**？ = «¡pero si dijiste que sí!». Sirve para recordar algo o mostrar sorpresa.",
+      "focus": ["time0", "adverb", "particle"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "time0": { "zh": "既然", "py": "jìrán" }, "subject": { "zh": "大家", "py": "dàjiā" }, "adverb": { "zh": "都", "py": "dōu" }, "verb1": { "zh": "支持", "py": "zhīchí" }, "object": { "zh": "这个主意", "py": "zhège zhǔyi" } }, "end": "，", "es": "Ya que todos apoyáis esta idea… (1.ª parte)", "esOrder": [{ "text": "Ya que", "slot": "time0" }, { "text": "todos", "slot": "adverb" }, { "text": "apoyáis", "slot": "verb1" }, { "text": "esta idea", "slot": "object" }] },
+        { "slots": { "subject": { "zh": "我们", "py": "wǒmen" }, "adverb": { "zh": "就这么", "py": "jiù zhème" }, "verb1": { "zh": "做", "py": "zuò" }, "particle": { "zh": "吧", "py": "ba" } }, "end": "。", "es": "…hagámoslo así. (2.ª parte)" },
+        { "slots": { "time0": { "zh": "既然", "py": "jìrán" }, "subject": { "zh": "你", "py": "nǐ" }, "adverb": { "zh": "不", "py": "bù" }, "verb1": { "zh": "同意", "py": "tóngyì" } }, "end": "，", "es": "Ya que no estás de acuerdo… (1.ª parte)" },
+        { "slots": { "subject": { "zh": "我们", "py": "wǒmen" }, "adverb": { "zh": "就再", "py": "jiù zài" }, "verb1": { "zh": "谈谈", "py": "tántan" }, "particle": { "zh": "吧", "py": "ba" } }, "end": "。", "es": "…hablémoslo otra vez. (2.ª parte)" },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "adverb": { "zh": "不是", "py": "bú shì" }, "verb1": { "zh": "同意", "py": "tóngyì" }, "particle": { "zh": "了吗", "py": "le ma" } }, "end": "？", "es": "¿Pero no habías dicho que estabas de acuerdo?" },
+        { "slots": { "subject": { "zh": "他的看法", "py": "tā de kànfǎ" }, "adverb": { "zh": "确实很", "py": "quèshí hěn" }, "verb1": { "zh": "有道理", "py": "yǒu dàolǐ" } }, "end": "。", "es": "Su punto de vista tiene mucho sentido, de verdad." },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "当然", "py": "dāngrán" }, "verb1": { "zh": "支持", "py": "zhīchí" }, "object": { "zh": "你", "py": "nǐ" } }, "end": "！", "es": "¡Claro que te apoyo!" }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "坚决不", "py": "jiānjué bù" }, "verb1": { "zh": "同意", "py": "tóngyì" } }, "end": "。", "es": "No estoy de acuerdo en absoluto." },
+        { "slots": { "time0": { "zh": "既然", "py": "jìrán" }, "subject": { "zh": "你", "py": "nǐ" }, "adverb": { "zh": "还不", "py": "hái bù" }, "verb1": { "zh": "确定", "py": "quèdìng" } }, "end": "，", "es": "Ya que todavía no estás seguro… (1.ª parte)" },
+        { "slots": { "adverb": { "zh": "就先别", "py": "jiù xiān bié" }, "verb1": { "zh": "告诉", "py": "gàosu" }, "object": { "zh": "对方", "py": "duìfāng" } }, "end": "。", "es": "…de momento no se lo digas a la otra parte. (2.ª parte)" }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "adverb": { "zh": "是不是", "py": "shì bu shì" }, "verb1": { "zh": "反对", "py": "fǎnduì" }, "object": { "zh": "这个建议", "py": "zhège jiànyì" } }, "end": "？", "es": "¿Es que estás en contra de esta propuesta?" },
+        { "slots": { "subject": { "zh": "这个主意", "py": "zhège zhǔyi" }, "adverb": { "zh": "不", "py": "bú" }, "verb1": { "zh": "错", "py": "cuò" }, "particle": { "zh": "，是不是", "py": ", shì bu shì" } }, "end": "？", "es": "Esta idea no está mal, ¿verdad?" },
+        { "slots": { "subject": { "zh": "上课的时候", "py": "shàngkè de shíhou" }, "aux": { "zh": "能不能", "py": "néng bu néng" }, "verb1": { "zh": "用", "py": "yòng" }, "object": { "zh": "手机", "py": "shǒujī" } }, "end": "？", "es": "¿Se puede usar el móvil en clase?" }
+      ],
+      "mistakes": [
+        { "wrong": "既然你不舒服，所以别去了。", "right": "既然你不舒服，就别去了。", "why": "既然 se cierra con 就, no con 所以 (所以 va con 因为)." },
+        { "wrong": "你是不是学生吗？", "right": "你是不是学生？ / 你是学生，是不是？", "why": "是不是 ya es la pregunta: no se combina con 吗." },
+        { "wrong": "你不是同意了？", "right": "你不是同意了吗？", "why": "La pregunta retórica necesita 吗 al final; sin él suena a afirmación incompleta." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Debate: ¿móviles en clase?",
+      "lines": [
+        { "speaker": "王老师", "zh": "今天讨论的话题是：上课的时候能不能用手机？雨果和安娜支持，小李和大卫反对。", "py": "Jīntiān tǎolùn de huàtí shì: shàngkè de shíhou néng bu néng yòng shǒujī? Yǔguǒ hé Ānnà zhīchí, Xiǎo Lǐ hé Dàwèi fǎnduì.", "es": "El tema que debatimos hoy es: ¿se puede usar el móvil en clase? Hugo y Ana, a favor; Xiao Li y David, en contra." },
+        { "speaker": "雨果", "zh": "我们支持用手机。查生词的时候，手机确实很有用。", "py": "Wǒmen zhīchí yòng shǒujī. Chá shēngcí de shíhou, shǒujī quèshí hěn yǒuyòng.", "es": "Estamos a favor. Para buscar palabras nuevas, el móvil es realmente muy útil." },
+        { "speaker": "小李", "zh": "我坚决反对！很多同学上课的时候是不是都在看微信？", "py": "Wǒ jiānjué fǎnduì! Hěn duō tóngxué shàngkè de shíhou shì bu shì dōu zài kàn Wēixìn?", "es": "¡Me opongo rotundamente! ¿Acaso no hay muchos compañeros mirando WeChat en clase?" },
+        { "speaker": "安娜", "zh": "有的人会看，可是这不是手机的问题，是人的问题。", "py": "Yǒu de rén huì kàn, kěshì zhè bú shì shǒujī de wèntí, shì rén de wèntí.", "es": "Algunos lo miran, pero eso no es culpa del móvil, sino de las personas." },
+        { "speaker": "大卫", "zh": "安娜，你上个星期不是说，手机让你不能好好听课吗？", "py": "Ānnà, nǐ shàng ge xīngqī bú shì shuō, shǒujī ràng nǐ bù néng hǎohǎo tīngkè ma?", "es": "Ana, ¿no dijiste la semana pasada que el móvil no te dejaba atender bien en clase?" },
+        { "speaker": "安娜", "zh": "我是说过……可是我现在只用手机查词典。", "py": "Wǒ shì shuō guo…… kěshì wǒ xiànzài zhǐ yòng shǒujī chá cídiǎn.", "es": "Sí que lo dije… pero ahora solo uso el móvil para el diccionario." },
+        { "speaker": "雨果", "zh": "对方说得也有道理。我建议：上课的时候可以用手机，但是只能查词典。", "py": "Duìfāng shuō de yě yǒu dàolǐ. Wǒ jiànyì: shàngkè de shíhou kěyǐ yòng shǒujī, dànshì zhǐ néng chá cídiǎn.", "es": "Lo que dice la otra parte también tiene sentido. Propongo esto: en clase se puede usar el móvil, pero solo para el diccionario." },
+        { "speaker": "小李", "zh": "你确定大家都只查词典吗？", "py": "Nǐ quèdìng dàjiā dōu zhǐ chá cídiǎn ma?", "es": "¿Estás seguro de que todos lo usarán solo para el diccionario?" },
+        { "speaker": "雨果", "zh": "不确定。但是老师能看到，是不是？", "py": "Bú quèdìng. Dànshì lǎoshī néng kàndào, shì bu shì?", "es": "Seguro, no. Pero la profesora lo ve, ¿no?" },
+        { "speaker": "大卫", "zh": "好主意。既然只查词典，我就同意吧。", "py": "Hǎo zhǔyi. Jìrán zhǐ chá cídiǎn, wǒ jiù tóngyì ba.", "es": "Buena idea. Ya que es solo para el diccionario, estoy de acuerdo." },
+        { "speaker": "王老师", "zh": "既然双方都同意了，我们就这么做吧。", "py": "Jìrán shuāngfāng dōu tóngyì le, wǒmen jiù zhème zuò ba.", "es": "Ya que ambas partes estáis de acuerdo, lo haremos así." },
+        { "speaker": "小李", "zh": "当然，老师的手机除外！", "py": "Dāngrán, lǎoshī de shǒujī chúwài!", "es": "¡Claro, menos el móvil de la profesora!" }
+      ],
+      "notes": "En las universidades chinas son muy populares los debates formales (辩论 biànlùn), con dos equipos: a favor (正方) y en contra (反方). Para disentir con cortesía se reconoce primero al otro: 对方说得也有道理, 你说得确实对，但是…. 除外 = «excepto»: lo conoces por 除了…以外."
+    },
+    { "type": "exercises", "count": 17, "bank": ["g-question-words", "g-ma", "u13"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "time0": { "zh": "既然" }, "subject": { "zh": "你" }, "adverb": { "zh": "不" }, "verb1": { "zh": "同意" } }, "end": "，", "es": "Ya que no estás de acuerdo… (1.ª parte)" }, "distractors": ["所以"] },
+        { "sentence": { "slots": { "subject": { "zh": "我们" }, "adverb": { "zh": "就再" }, "verb1": { "zh": "谈谈" }, "particle": { "zh": "吧" } }, "end": "。", "es": "…hablémoslo otra vez. (2.ª parte)" }, "distractors": ["所以"] },
+        { "sentence": { "slots": { "subject": { "zh": "你" }, "adverb": { "zh": "是不是" }, "verb1": { "zh": "反对" }, "object": { "zh": "这个建议" } }, "end": "？", "es": "¿Es que estás en contra de esta propuesta?" }, "distractors": ["吗"] },
+        { "sentence": { "slots": { "subject": { "zh": "你" }, "time": { "zh": "上个星期" }, "adverb": { "zh": "不是" }, "verb1": { "zh": "说" }, "object": { "zh": "要跟对方一起准备" }, "particle": { "zh": "吗" } }, "end": "？", "es": "¿No dijiste la semana pasada que ibas a prepararlo con la otra parte?" } }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "既然大家都同意，我们就这么做吧。", "py": "Jìrán dàjiā dōu tóngyì, wǒmen jiù zhème zuò ba.", "es": "Ya que todos estáis de acuerdo, hagámoslo así." },
+        { "zh": "你不是同意了吗？", "py": "Nǐ bú shì tóngyì le ma?", "es": "¿Pero no habías dicho que sí?" },
+        { "zh": "对方说得也有道理。", "py": "Duìfāng shuō de yě yǒu dàolǐ.", "es": "Lo que dice la otra parte también tiene sentido." },
+        { "zh": "这个主意不错，是不是？", "py": "Zhège zhǔyi bú cuò, shì bu shì?", "es": "Esta idea no está mal, ¿verdad?" }
+      ],
+      "respond": [
+        { "q": { "zh": "你同意上课的时候用手机吗？", "py": "Nǐ tóngyì shàngkè de shíhou yòng shǒujī ma?", "es": "¿Estás de acuerdo con usar el móvil en clase?" }, "model": { "zh": "我同意，但是只能查词典。", "py": "Wǒ tóngyì, dànshì zhǐ néng chá cídiǎn.", "es": "Sí, pero solo para el diccionario." } },
+        { "q": { "zh": "我今天有点儿不舒服。", "py": "Wǒ jīntiān yǒudiǎnr bù shūfu.", "es": "Hoy no me encuentro muy bien." }, "model": { "zh": "既然你不舒服，就早点儿回去休息吧。", "py": "Jìrán nǐ bù shūfu, jiù zǎo diǎnr huíqu xiūxi ba.", "es": "Ya que no te encuentras bien, vuelve pronto a descansar." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Un debate con final feliz",
+      "text": "星期三的汉语课上，我们做了一个小讨论，话题是“上课的时候能不能用手机”。雨果和安娜支持，小李和大卫坚决反对。小李说，很多同学上课的时候不是听老师说话，而是在看微信。雨果说，查生词的时候，手机确实很有用。大卫问安娜：“你不是说过手机让你不能好好听课吗？”安娜笑了，说：“我是说过，可是现在我只用手机查词典。”最后雨果建议，上课的时候可以用手机，但是只能查词典。小李问他能不能确定大家都这么做，雨果说不能确定，但是老师都看得到。王老师说：“既然双方都同意了，我们就试一个月吧。”大家都觉得这是一个好主意。",
+      "es": "En la clase de chino del miércoles hicimos un pequeño debate con el tema «¿Se puede usar el móvil en clase?». Hugo y Ana estaban a favor; Xiao Li y David, rotundamente en contra. Xiao Li dijo que muchos compañeros, en clase, en vez de escuchar a la profesora, miran WeChat. Hugo dijo que el móvil es realmente muy útil para buscar palabras nuevas. David le preguntó a Ana: «¿No dijiste que el móvil no te dejaba atender bien en clase?». Ana se rio y dijo: «Sí que lo dije, pero ahora solo uso el móvil para el diccionario». Al final, Hugo propuso que en clase se pudiera usar el móvil, pero solo para el diccionario. Xiao Li le preguntó si podía asegurar que todos lo harían así; Hugo dijo que no, pero que la profesora lo ve todo. La profesora Wang dijo: «Ya que ambas partes estáis de acuerdo, probemos un mes». A todos les pareció buena idea.",
+      "questions": [
+        { "q": "¿Quiénes estaban en contra?", "options": ["小李和大卫", "雨果和安娜", "王老师和雨果"], "answer": 0 },
+        { "q": "¿Qué le recordó David a Ana con 不是…吗?", "options": ["她说过手机让她不能好好听课", "她不喜欢辩论", "她没有手机"], "answer": 0 },
+        { "q": "¿Qué propuso Hugo?", "options": ["只能用手机查词典", "上课不能用手机", "只有老师能用手机"], "answer": 0 },
+        { "q": "¿Qué decidió la profesora?", "options": ["试一个月", "再辩论一次", "不能用手机"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

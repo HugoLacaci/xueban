@@ -1,0 +1,125 @@
+{
+  "id": "a1-u01-l1",
+  "title": "Yo soy, tú eres: pronombres y 是",
+  "zh": "我是学生",
+  "goal": "Decir quién eres con 我是… y preguntar a otro si es estudiante o profesor.",
+  "minutes": 14,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "我", "pinyin": "wǒ", "es": "yo" },
+    { "hanzi": "你", "pinyin": "nǐ", "es": "tú" },
+    { "hanzi": "您", "pinyin": "nín", "es": "usted", "note": "Cortesía: con profesores y mayores." },
+    { "hanzi": "他", "pinyin": "tā", "es": "él" },
+    { "hanzi": "她", "pinyin": "tā", "es": "ella", "note": "Suena igual que 他; solo cambia la escritura (女 = mujer)." },
+    { "hanzi": "们", "pinyin": "men", "es": "(plural de personas)", "note": "我们 nosotros, 你们 vosotros, 他们 ellos." },
+    { "hanzi": "是", "pinyin": "shì", "es": "ser (identificar)" },
+    { "hanzi": "不", "pinyin": "bù", "es": "no" },
+    { "hanzi": "学生", "pinyin": "xuésheng", "es": "estudiante" },
+    { "hanzi": "老师", "pinyin": "lǎoshī", "es": "profesor, profesora" },
+    { "hanzi": "吗", "pinyin": "ma", "es": "(partícula de pregunta sí/no)" },
+    { "hanzi": "对", "pinyin": "duì", "es": "sí, correcto" }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "我是学生。", "py": "Wǒ shì xuésheng.", "es": "Soy estudiante." },
+        { "zh": "她不是学生。", "py": "Tā bú shì xuésheng.", "es": "Ella no es estudiante." },
+        { "zh": "您是老师吗？", "py": "Nín shì lǎoshī ma?", "es": "¿Es usted profesor?" }
+      ]
+    },
+    { "type": "vocab", "title": "Pronombres y las primeras palabras", "words": ["我", "你", "您", "他", "她", "们", "是", "不", "学生", "老师", "吗", "对"] },
+    {
+      "type": "phonetics-drill",
+      "title": "tā, shì y la «sh»",
+      "markdown": "**他 / 她 / 它** se pronuncian igual: **tā**, primer tono alto y plano. La diferencia solo se ve al escribir.\n\n**是 shì**: la *sh* se hace con la punta de la lengua doblada hacia atrás (como una «s» con la lengua hacia el paladar); la *i* de *shi* no suena como la «i» española, sino como un zumbido prolongado de la *sh*. Y es **cuarto tono**: cae con fuerza, como una orden.\n\n**不 bù** cambia a **bú** delante de otro cuarto tono: 不是 se dice **bú shì**.",
+      "items": [
+        { "audio": "是", "options": ["shì", "sì", "xì"], "answer": 0, "explain": "sh con la lengua hacia atrás; s con la lengua detrás de los dientes; x con la lengua plana (va con i/ü)." },
+        { "audio": "不是", "options": ["bù shì", "bú shì", "bǔ shì"], "answer": 1, "explain": "不 delante de cuarto tono pasa a segundo: bú shì." },
+        { "audio": "老师", "options": ["lǎoshī", "lǎosī", "láoshí"], "answer": 0, "explain": "lǎo (tercer tono) + shī (primer tono, alto y plano)." },
+        { "audio": "他", "prompt": "¿Cuál es el tono?", "options": ["1.º (alto y plano)", "2.º (sube)", "3.º (baja y sube)", "4.º (cae)"], "answer": 0 }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["你", "她"],
+      "mnemonics": {
+        "你": "亻 (persona) + 尔 (tú, en chino clásico): la persona que tengo delante.",
+        "她": "女 (mujer) + 也: en el siglo XX se creó 她 para distinguir «ella» de 他 por escrito."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "Sujeto + 是 + nombre",
+      "markdown": "En chino el verbo **no se conjuga**: 是 sirve para *soy, eres, es, somos…* El orden es el mismo que en español: **sujeto + 是 + nombre**.\n\n- **Negativa**: 不 va justo **delante** del verbo, en el hueco de los adverbios: 我**不**是老师.\n- **Pregunta de sí/no**: se añade **吗** al final de la frase afirmativa, sin cambiar el orden.\n\n是 solo une **dos nombres** (soy *estudiante*, ella es *profesora*). No se usa con adjetivos ni con lugares: eso llega en las unidades 8 y 14.",
+      "focus": ["subject", "verb1"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "学生", "py": "xuésheng" } }, "end": "。", "es": "Soy estudiante.", "esOrder": [{ "text": "(Yo)", "slot": "subject" }, { "text": "soy", "slot": "verb1" }, { "text": "estudiante", "slot": "object" }] },
+        { "slots": { "subject": { "zh": "他", "py": "tā" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "老师", "py": "lǎoshī" } }, "end": "。", "es": "Él es profesor." },
+        { "slots": { "subject": { "zh": "我们", "py": "wǒmen" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "学生", "py": "xuésheng" } }, "end": "。", "es": "Somos estudiantes." },
+        { "slots": { "subject": { "zh": "您", "py": "nín" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "老师", "py": "lǎoshī" } }, "end": "。", "es": "Usted es profesor." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "不", "py": "bú" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "老师", "py": "lǎoshī" } }, "end": "。", "es": "No soy profesor." },
+        { "slots": { "subject": { "zh": "她们", "py": "tāmen" }, "adverb": { "zh": "不", "py": "bú" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "学生", "py": "xuésheng" } }, "end": "。", "es": "Ellas no son estudiantes." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "学生", "py": "xuésheng" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿Eres estudiante?" },
+        { "slots": { "subject": { "zh": "他们", "py": "tāmen" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "老师", "py": "lǎoshī" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿Son ellos profesores?" }
+      ],
+      "mistakes": [
+        { "wrong": "我是不老师。", "right": "我不是老师。", "why": "不 va delante del verbo, no delante del nombre." },
+        { "wrong": "是你学生吗？", "right": "你是学生吗？", "why": "Para preguntar no se cambia el orden: basta con 吗 al final." },
+        { "wrong": "我们是学生们。", "right": "我们是学生。", "why": "们 solo va con pronombres y personas concretas; con 学生 detrás de 是 no hace falta." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Primer día de clase",
+      "lines": [
+        { "speaker": "王老师", "zh": "你好！", "py": "Nǐ hǎo!", "es": "¡Hola!" },
+        { "speaker": "雨果", "zh": "老师好！", "py": "Lǎoshī hǎo!", "es": "¡Hola, profesora!" },
+        { "speaker": "王老师", "zh": "你是学生吗？", "py": "Nǐ shì xuésheng ma?", "es": "¿Eres estudiante?" },
+        { "speaker": "雨果", "zh": "对，我是学生。您是老师吗？", "py": "Duì, wǒ shì xuésheng. Nín shì lǎoshī ma?", "es": "Sí, soy estudiante. ¿Es usted la profesora?" },
+        { "speaker": "王老师", "zh": "对，我是老师。她是学生吗？", "py": "Duì, wǒ shì lǎoshī. Tā shì xuésheng ma?", "es": "Sí, soy la profesora. ¿Ella es estudiante?" },
+        { "speaker": "雨果", "zh": "她不是学生，她是老师。", "py": "Tā bú shì xuésheng, tā shì lǎoshī.", "es": "No, no es estudiante: es profesora." }
+      ],
+      "notes": "老师好 es el saludo habitual de los alumnos al profesor (literalmente «profesor, bien»). 你好 ya lo conoces de la Etapa 0."
+    },
+    { "type": "exercises", "count": 14, "bank": ["g-shi", "g-ma", "g-bu-mei"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "我" }, "verb1": { "zh": "是" }, "object": { "zh": "学生" } }, "end": "。", "es": "Soy estudiante." } },
+        { "sentence": { "slots": { "subject": { "zh": "他" }, "adverb": { "zh": "不" }, "verb1": { "zh": "是" }, "object": { "zh": "老师" } }, "end": "。", "es": "Él no es profesor." }, "distractors": ["吗"] },
+        { "sentence": { "slots": { "subject": { "zh": "您" }, "verb1": { "zh": "是" }, "object": { "zh": "老师" }, "particle": { "zh": "吗" } }, "end": "？", "es": "¿Es usted profesor?" } },
+        { "sentence": { "slots": { "subject": { "zh": "我们" }, "adverb": { "zh": "不" }, "verb1": { "zh": "是" }, "object": { "zh": "老师" } }, "end": "。", "es": "No somos profesores." }, "distractors": ["们"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "我是学生。", "py": "Wǒ shì xuésheng.", "es": "Soy estudiante." },
+        { "zh": "我不是老师。", "py": "Wǒ bú shì lǎoshī.", "es": "No soy profesor." },
+        { "zh": "你是学生吗？", "py": "Nǐ shì xuésheng ma?", "es": "¿Eres estudiante?" }
+      ],
+      "respond": [
+        { "q": { "zh": "你是学生吗？", "py": "Nǐ shì xuésheng ma?", "es": "¿Eres estudiante?" }, "model": { "zh": "对，我是学生。", "py": "Duì, wǒ shì xuésheng.", "es": "Sí, soy estudiante." } },
+        { "q": { "zh": "你是老师吗？", "py": "Nǐ shì lǎoshī ma?", "es": "¿Eres profesor?" }, "model": { "zh": "我不是老师，我是学生。", "py": "Wǒ bú shì lǎoshī, wǒ shì xuésheng.", "es": "No soy profesor, soy estudiante." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "En clase",
+      "text": "我是学生。他是学生。她不是学生，她是老师。我们是学生，她是老师。",
+      "es": "Yo soy estudiante. Él es estudiante. Ella no es estudiante: es profesora. Nosotros somos estudiantes y ella es la profesora.",
+      "questions": [
+        { "q": "¿Quién es profesora?", "options": ["她", "他", "我"], "answer": 0 },
+        { "q": "¿Es estudiante él (他)?", "options": ["Sí", "No"], "answer": 0 },
+        { "q": "¿Cómo se dice «nosotros»?", "options": ["我们", "你们", "他们"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

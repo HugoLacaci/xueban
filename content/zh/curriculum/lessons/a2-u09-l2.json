@@ -1,0 +1,144 @@
+{
+  "id": "a2-u09-l2",
+  "title": "Ya, todavía no y ¡ya son las…!: 已经, 还没, 都…了",
+  "zh": "都十点了！",
+  "goal": "Situar algo en el tiempo con 已经…了, 还没…呢, 快要 / 就要…了 y quejarse de la hora con 都…了.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "已经", "pinyin": "yǐjīng", "es": "ya", "note": "Casi siempre con 了 al final: 冬天已经到了." },
+    { "hanzi": "早就", "pinyin": "zǎo jiù", "es": "ya hace rato, hace tiempo que", "note": "Más fuerte que 已经: 我早就知道了 (lo sé desde hace mucho)." },
+    { "hanzi": "快要", "pinyin": "kuàiyào", "es": "estar a punto de", "note": "快要…了 = 快…了 (U18). Sin un tiempo concreto delante." },
+    { "hanzi": "就要", "pinyin": "jiùyào", "es": "estar a punto de (con una hora o día)", "note": "明天就要下雪了: con 明天, 八点… se usa 就要, no 快要." },
+    { "hanzi": "预报", "pinyin": "yùbào", "es": "previsión, parte", "note": "天气预报 = el parte meteorológico." },
+    { "hanzi": "极了", "pinyin": "jí le", "es": "muchísimo, ¡qué…!", "note": "Detrás del adjetivo: 好极了 = ¡estupendo!" },
+    { "hanzi": "温暖", "pinyin": "wēnnuǎn", "es": "cálido, templado", "note": "Más literario que 暖和; también para personas: 温暖的家." },
+    { "hanzi": "阳光", "pinyin": "yángguāng", "es": "luz del sol, sol", "note": "阳光很好 = hace buen sol." },
+    { "hanzi": "多么", "pinyin": "duōme", "es": "¡qué…! (exclamación)", "note": "多么好的天气啊！ = ¡qué tiempo tan bueno!" },
+    { "hanzi": "大大", "pinyin": "dàdà", "es": "grandote, bien grande", "note": "Adjetivo doblado (A2-7): 大大的太阳." },
+    { "hanzi": "吹", "pinyin": "chuī", "es": "soplar", "note": "风吹在脸上 = el viento te da en la cara." },
+    { "hanzi": "云", "pinyin": "yún", "es": "nube", "note": "多云 (nuboso) ya lo conoces." },
+    { "hanzi": "还", "pinyin": "hái", "es": "todavía", "note": "还没…呢 = todavía no; 还不 = aún no (por decisión o costumbre)." }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "冬天已经到了。", "py": "Dōngtiān yǐjīng dào le.", "es": "El invierno ya ha llegado." },
+        { "zh": "我还没吃饭呢。", "py": "Wǒ hái méi chīfàn ne.", "es": "Todavía no he comido." },
+        { "zh": "都十二点了，你怎么还不睡觉？", "py": "Dōu shí'èr diǎn le, nǐ zěnme hái bú shuìjiào?", "es": "¡Ya son las doce! ¿Cómo es que aún no te acuestas?" }
+      ]
+    },
+    { "type": "vocab", "title": "Ya, todavía, a punto de… y el parte del tiempo", "words": ["已经", "早就", "快要", "就要", "预报", "极了", "温暖", "阳光", "多么", "大大", "吹", "云", "还"] },
+    {
+      "type": "phonetics-drill",
+      "title": "La exclamación de 都…了 y los terceros tonos de 已经 y 早就",
+      "markdown": "**都…了** no es una pregunta ni una información neutra: es una **queja o sorpresa** («¡ya son las doce!»). Se nota en la voz: **都** sale un poco más fuerte y la **cifra** lleva el acento: 都**十二点**了！ El 了 final cae y se apaga.\n\nSi sigue otra cláusula (都十二点了，你怎么还不睡觉？), haz una **pausa corta en la coma** y deja que la segunda parte suba al final, porque es una pregunta.\n\nTercer tono delante de otro tono: **已经** *yǐjīng* y **早就** *zǎo jiù* empiezan con un tercer tono **bajo y corto** (medio tercer tono): no subas al final de *yǐ* ni de *zǎo*. **极了** *jí le*: 极 sube (2.º) y 了 es neutro.",
+      "items": [
+        { "audio": "已经", "options": ["yǐjīng", "yíjīng", "yǐjìng"], "answer": 0, "explain": "3.º (medio, bajo) + 1.º alto." },
+        { "audio": "早就", "options": ["zǎo jiù", "záo jiù", "zǎo jiū"], "answer": 0, "explain": "早 bajo y 就 cayendo (4.º)." },
+        { "audio": "天气预报", "options": ["tiānqì yùbào", "tiānqì yǔbào", "tiānqì yùbāo"], "answer": 0, "explain": "预报: dos cuartos tonos seguidos; el primero cae menos." },
+        { "audio": "好极了", "options": ["hǎo jí le", "hǎo jǐ le", "hào jí le"], "answer": 0, "explain": "极 jí sube; no lo confundas con 几 jǐ." },
+        { "audio": "还没", "options": ["hái méi", "huán méi", "hài méi"], "answer": 0, "explain": "还 se lee hái («todavía»); huán es «devolver»." },
+        { "audio": "都十二点了，你怎么还不睡觉？", "prompt": "¿Qué expresa la primera parte?", "options": ["Queja o sorpresa: ¡ya son las doce!", "Una pregunta por la hora", "Que todavía es pronto"], "answer": 0, "explain": "都…了 + cifra marcada = «¡ya es tardísimo!»." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["已", "云"],
+      "mnemonics": {
+        "已": "Tres hermanos casi iguales: 己 (yo) está abierto, 已 (ya) tiene el trazo vertical a medio subir, y 巳 (la serpiente del zodiaco) está cerrado. Truco: «ya» está a medio camino.",
+        "云": "Dos rayas arriba (el cielo) y debajo un remolino de vapor que sube: una nube. Es también la forma simplificada de 雲, que llevaba 雨 (lluvia) encima."
+      }
+    },
+    {
+      "type": "explain",
+      "title": "La línea del tiempo: 快要…了 · 已经…了 · 还没…呢",
+      "markdown": "| Momento | Estructura | Ejemplo |\n|---|---|---|\n| a punto de pasar | **快要 / 快 / 就要** + V + **了** | 快要下雨了。 明天**就要**下雪了。 |\n| ya ha pasado | **已经** + V + **了** | 雨**已经**停了。 |\n| ya hace mucho | **早就** + V + **了** | 我**早就**知道了。 |\n| todavía no ha pasado | **还没** + V (+ **呢**), **sin 了** | 我**还没**吃饭**呢**。 |\n| todavía no (lo hago a propósito) | **还不** + V | 你怎么**还不**睡觉？ |\n| «¡ya es…!» (queja) | **都** + tiempo / cifra + **了** | **都**十二点**了**！ |\n\n- **快要** no admite una hora o día delante; **就要** sí: ✓ 明天就要下雪了 · ✗ 明天快要下雪了.\n- **都…了** no significa «todos»: aquí 都 es un adverbio de modo que exagera la cifra («ya, nada menos que…»). Suele ir seguido de un reproche o de una orden: 都十一点了，别看手机了。"
+    },
+    {
+      "type": "skeleton",
+      "title": "已经 / 早就 / 还没 / 就要 en el hueco de los adverbios",
+      "markdown": "Todas estas palabras van en el hueco de los **adverbios**, detrás del sujeto (y del tiempo) y delante del verbo. El **了** final (o el **呢** de 还没) va en *Partícula final*.\n\nEn **都十二点了** no hay verbo: la cifra hace de predicado y va en el hueco del verbo, como un adjetivo.\n\nRecuerda la convención de A2: una fila por cláusula. 都十二点了 es la primera fila (termina en coma) y 你怎么还不睡觉 la segunda.",
+      "focus": ["adverb", "particle"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "冬天", "py": "dōngtiān" }, "adverb": { "zh": "已经", "py": "yǐjīng" }, "verb1": { "zh": "到", "py": "dào" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "El invierno ya ha llegado.", "esOrder": [{ "text": "El invierno", "slot": "subject" }, { "text": "ya", "slot": "adverb" }, { "text": "ha llegado", "slot": "verb1" }] },
+        { "slots": { "subject": { "zh": "雪", "py": "xuě" }, "adverb": { "zh": "已经", "py": "yǐjīng" }, "verb1": { "zh": "停", "py": "tíng" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Ya ha dejado de nevar." },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "早就", "py": "zǎo jiù" }, "verb1": { "zh": "知道", "py": "zhīdào" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Lo sé desde hace mucho." },
+        { "slots": { "subject": { "zh": "火车", "py": "huǒchē" }, "adverb": { "zh": "就要", "py": "jiùyào" }, "verb1": { "zh": "开", "py": "kāi" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "El tren está a punto de salir." },
+        { "slots": { "subject": { "zh": "天气预报", "py": "tiānqì yùbào" }, "verb1": { "zh": "说", "py": "shuō" }, "object": { "zh": "明天就要下雪了", "py": "míngtiān jiùyào xià xuě le" } }, "end": "。", "es": "El parte dice que mañana va a nevar." },
+        { "slots": { "adverb": { "zh": "都", "py": "dōu" }, "verb1": { "zh": "十二点", "py": "shí'èr diǎn" }, "particle": { "zh": "了", "py": "le" } }, "end": "！", "es": "¡Ya son las doce!" }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "还没", "py": "hái méi" }, "verb1": { "zh": "吃饭", "py": "chīfàn" }, "particle": { "zh": "呢", "py": "ne" } }, "end": "。", "es": "Todavía no he comido." },
+        { "slots": { "subject": { "zh": "小李", "py": "Xiǎo Lǐ" }, "adverb": { "zh": "还没", "py": "hái méi" }, "verb1": { "zh": "起床", "py": "qǐchuáng" } }, "end": "。", "es": "Xiao Li todavía no se ha levantado." }
+      ],
+      "question": [
+        { "slots": { "adverb": { "zh": "都", "py": "dōu" }, "verb1": { "zh": "十二点", "py": "shí'èr diǎn" }, "particle": { "zh": "了", "py": "le" } }, "end": "，", "es": "¡Ya son las doce!… (1.ª parte)" },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "adverb": { "zh": "怎么还不", "py": "zěnme hái bú" }, "verb1": { "zh": "睡觉", "py": "shuìjiào" } }, "end": "？", "es": "…¿cómo es que aún no te acuestas? (2.ª parte)" },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "adverb": { "zh": "已经", "py": "yǐjīng" }, "verb1": { "zh": "看", "py": "kàn" }, "object": { "zh": "天气预报", "py": "tiānqì yùbào" }, "particle": { "zh": "了吗", "py": "le ma" } }, "end": "？", "es": "¿Ya has mirado el parte del tiempo?" }
+      ],
+      "mistakes": [
+        { "wrong": "我还没吃饭了。", "right": "我还没吃饭呢。", "why": "还没 (todavía no) no lleva 了: si quieres algo al final, pon 呢." },
+        { "wrong": "明天快要下雪了。", "right": "明天就要下雪了。", "why": "Con un tiempo concreto delante (明天, 八点…) se usa 就要; 快要 va sin él." },
+        { "wrong": "已经我吃了。", "right": "我已经吃了。", "why": "已经 es un adverbio: detrás del sujeto, nunca delante." },
+        { "wrong": "火车就要开。", "right": "火车就要开了。", "why": "快要 / 就要 piden 了 al final de la frase." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Un sábado de sol (y de parte meteorológico)",
+      "lines": [
+        { "speaker": "安娜", "zh": "雨果，都十点了，你还没起床吗？", "py": "Yǔguǒ, dōu shí diǎn le, nǐ hái méi qǐchuáng ma?", "es": "Hugo, ¡que son las diez! ¿Todavía no te has levantado?" },
+        { "speaker": "雨果", "zh": "我早就起床了，已经吃完早饭了。", "py": "Wǒ zǎo jiù qǐchuáng le, yǐjīng chīwán zǎofàn le.", "es": "Me he levantado hace mucho y ya he desayunado." },
+        { "speaker": "安娜", "zh": "今天天气好极了！阳光很温暖，我们去公园走走吧。", "py": "Jīntiān tiānqì hǎo jí le! Yángguāng hěn wēnnuǎn, wǒmen qù gōngyuán zǒuzou ba.", "es": "¡Hoy hace un tiempo estupendo! El sol calienta: vamos a dar una vuelta por el parque." },
+        { "speaker": "雨果", "zh": "好啊！你看天气预报了吗？", "py": "Hǎo a! Nǐ kàn tiānqì yùbào le ma?", "es": "¡Vale! ¿Has mirado el parte?" },
+        { "speaker": "安娜", "zh": "看了。预报说上午是晴天，下午就要下雨了。", "py": "Kàn le. Yùbào shuō shàngwǔ shì qíngtiān, xiàwǔ jiùyào xià yǔ le.", "es": "Sí. Dice que por la mañana está despejado y que por la tarde va a llover." },
+        { "speaker": "雨果", "zh": "那我们现在就去吧。外面风大吗？", "py": "Nà wǒmen xiànzài jiù qù ba. Wàimiàn fēng dà ma?", "es": "Pues vamos ahora mismo. ¿Hace mucho viento fuera?" },
+        { "speaker": "安娜", "zh": "有一点儿风，吹在脸上有点儿凉。你多穿一件衣服。", "py": "Yǒu yìdiǎnr fēng, chuī zài liǎn shang yǒudiǎnr liáng. Nǐ duō chuān yí jiàn yīfu.", "es": "Un poco; el viento en la cara está algo fresco. Ponte una prenda más." },
+        { "speaker": "雨果", "zh": "好。天上的云多吗？", "py": "Hǎo. Tiān shang de yún duō ma?", "es": "Vale. ¿Hay muchas nubes?" },
+        { "speaker": "安娜", "zh": "不多。你看，多么好的天气啊！", "py": "Bù duō. Nǐ kàn, duōme hǎo de tiānqì a!", "es": "No muchas. Mira, ¡qué tiempo tan bueno!" },
+        { "speaker": "雨果", "zh": "我十分钟就到！你别忘了带伞。", "py": "Wǒ shí fēnzhōng jiù dào! Nǐ bié wàng le dài sǎn.", "es": "¡Llego en diez minutos! No te olvides del paraguas." }
+      ],
+      "notes": "都十点了 no es «son todas las diez»: 都 exagera la hora («¡ya son las diez!»). En China, mirar el 天气预报 en el móvil antes de salir es casi un ritual: en Shanghái el tiempo cambia rápido de la mañana a la tarde."
+    },
+    { "type": "exercises", "count": 18, "bank": ["g-le", "u10", "g-bu-mei"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "冬天" }, "adverb": { "zh": "已经" }, "verb1": { "zh": "到" }, "particle": { "zh": "了" } }, "end": "。", "es": "El invierno ya ha llegado." }, "distractors": ["没"] },
+        { "sentence": { "slots": { "subject": { "zh": "我" }, "adverb": { "zh": "还没" }, "verb1": { "zh": "吃饭" }, "particle": { "zh": "呢" } }, "end": "。", "es": "Todavía no he comido." }, "distractors": ["了"] },
+        { "sentence": { "slots": { "time0": { "zh": "明天" }, "subject": { "zh": "北京" }, "adverb": { "zh": "就要" }, "verb1": { "zh": "下雪" }, "particle": { "zh": "了" } }, "end": "。", "es": "Mañana va a nevar en Pekín." }, "distractors": ["快要"] },
+        { "sentence": { "slots": { "time0": { "zh": "今天早上" }, "subject": { "zh": "我" }, "adverb": { "zh": "已经" }, "with": { "zh": "跟安娜一起" }, "place": { "zh": "在公园" }, "verb1": { "zh": "走了" }, "complement": { "zh": "一个小时" } }, "end": "。", "es": "Esta mañana ya he paseado una hora por el parque con Anna." }, "distractors": ["还没"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "都十点了，你还没起床吗？", "py": "Dōu shí diǎn le, nǐ hái méi qǐchuáng ma?", "es": "¡Que son las diez! ¿Todavía no te has levantado?" },
+        { "zh": "我早就起床了。", "py": "Wǒ zǎo jiù qǐchuáng le.", "es": "Me he levantado hace mucho." },
+        { "zh": "冬天已经到了。", "py": "Dōngtiān yǐjīng dào le.", "es": "El invierno ya ha llegado." },
+        { "zh": "下午就要下雨了。", "py": "Xiàwǔ jiùyào xià yǔ le.", "es": "Por la tarde va a llover." }
+      ],
+      "respond": [
+        { "q": { "zh": "你吃饭了吗？", "py": "Nǐ chīfàn le ma?", "es": "¿Has comido?" }, "model": { "zh": "还没呢，我们一起去吃吧。", "py": "Hái méi ne, wǒmen yìqǐ qù chī ba.", "es": "Todavía no: vamos a comer juntos." } },
+        { "q": { "zh": "现在几点了？", "py": "Xiànzài jǐ diǎn le?", "es": "¿Qué hora es?" }, "model": { "zh": "都十二点了，快睡觉吧！", "py": "Dōu shí'èr diǎn le, kuài shuìjiào ba!", "es": "¡Ya son las doce: a dormir!" } },
+        { "q": { "zh": "天气预报说什么？", "py": "Tiānqì yùbào shuō shénme?", "es": "¿Qué dice el parte?" }, "model": { "zh": "预报说明天就要下雪了。", "py": "Yùbào shuō míngtiān jiùyào xià xuě le.", "es": "Dice que mañana va a nevar." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "El parte tenía razón",
+      "text": "星期六早上，雨果看了天气预报：上午是晴天，下午风很大，晚上就要下雨了。九点，安娜给雨果打电话：“都九点了，你还没起床吗？”雨果说他早就起床了，已经吃完早饭了。他们一起去了公园。天上有大大的太阳，阳光很温暖，天很蓝，云也不多。安娜说：“多么好的天气啊！”下午两点，风越来越大，吹得树都动了，天上的云也越来越多。雨果说：“快要下雨了，我们回去吧！”他们三点就到家了。晚上真的下雨了，雨很大。雨果觉得今天的天气预报说得很对。",
+      "es": "El sábado por la mañana Hugo miró el parte: por la mañana, despejado; por la tarde, mucho viento; y por la noche iba a llover. A las nueve Anna lo llamó: «¡Que son las nueve! ¿Todavía no te has levantado?». Hugo le dijo que se había levantado hacía mucho y que ya había desayunado. Fueron juntos al parque. En el cielo había un sol enorme, el sol calentaba, el cielo estaba azul y no había muchas nubes. Anna dijo: «¡Qué tiempo tan bueno!». A las dos de la tarde el viento era cada vez más fuerte, movía los árboles, y cada vez había más nubes. Hugo dijo: «Va a llover: volvamos». A las tres ya estaban en casa. Por la noche llovió de verdad, y mucho. A Hugo le pareció que el parte de hoy había acertado.",
+      "questions": [
+        { "q": "¿Qué decía el parte para la noche?", "options": ["晚上就要下雨了", "晚上是晴天", "晚上有大太阳"], "answer": 0 },
+        { "q": "Cuando llamó Anna, ¿se había levantado Hugo?", "options": ["Sí, hacía rato", "No, todavía no", "Se levantó al oír el teléfono"], "answer": 0 },
+        { "q": "¿Por qué volvieron a casa?", "options": ["Iba a llover", "Tenían hambre", "Hacía mucho calor"], "answer": 0 },
+        { "q": "¿Qué frase es correcta?", "options": ["我还没吃饭呢。", "我还没吃饭了。", "我已经没吃饭。"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

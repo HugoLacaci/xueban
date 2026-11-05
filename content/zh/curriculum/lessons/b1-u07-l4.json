@@ -1,0 +1,138 @@
+{
+  "id": "b1-u07-l4",
+  "title": "Empezar a…: V起来 y V上",
+  "zh": "我妈妈也用上微信了",
+  "goal": "Decir que algo empieza (聊起来, 下起雨来) o que por fin se llega a tener o hacer algo nuevo (用上, 爱上), hablando de tecnología e internet.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "互联网", "pinyin": "hùliánwǎng", "es": "internet", "note": "En la calle se dice más 网上 (en internet) y 上网 (conectarse)." },
+    { "hanzi": "人工", "pinyin": "réngōng", "es": "artificial; mano de obra, hecho a mano", "note": "人工服务 = atención por una persona (no por máquina)." },
+    { "hanzi": "发明", "pinyin": "fāmíng", "es": "inventar; invento" },
+    { "hanzi": "创新", "pinyin": "chuàngxīn", "es": "innovar; innovación" },
+    { "hanzi": "改进", "pinyin": "gǎijìn", "es": "mejorar, perfeccionar (un método, un producto)" },
+    { "hanzi": "普及", "pinyin": "pǔjí", "es": "generalizarse, popularizar(se)", "note": "手机支付已经普及了 = el pago con el móvil ya se ha generalizado." },
+    { "hanzi": "加快", "pinyin": "jiākuài", "es": "acelerar" },
+    { "hanzi": "先进", "pinyin": "xiānjìn", "es": "avanzado, puntero" },
+    { "hanzi": "落后", "pinyin": "luòhòu", "es": "atrasado; quedarse atrás" },
+    { "hanzi": "制造", "pinyin": "zhìzào", "es": "fabricar; fabricación", "note": "中国制造 = «hecho en China»." },
+    { "hanzi": "工业", "pinyin": "gōngyè", "es": "industria" },
+    { "hanzi": "全球", "pinyin": "quánqiú", "es": "todo el mundo, global", "note": "Lit. «toda la esfera»." }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "他们一见面就聊起来了。", "py": "Tāmen yí jiànmiàn jiù liáo qǐlai le.", "es": "En cuanto se vieron, se pusieron a charlar." },
+        { "zh": "外面下起雨来了。", "py": "Wàimian xià qǐ yǔ lai le.", "es": "Fuera se ha puesto a llover." },
+        { "zh": "我妈妈也用上微信了。", "py": "Wǒ māma yě yòngshang Wēixìn le.", "es": "Mi madre también ha empezado a usar WeChat." }
+      ]
+    },
+    { "type": "vocab", "title": "Tecnología e internet", "words": ["互联网", "人工", "发明", "创新", "改进", "普及", "加快", "先进", "落后", "制造", "工业", "全球"] },
+    {
+      "type": "phonetics-drill",
+      "title": "起来 ligero y el objeto en medio",
+      "markdown": "Detrás de un verbo, **起来** pierde fuerza: *qǐ* conserva el tercer tono (medio, sin subir) y **来 queda neutro**: 笑起来 *xiào qǐlai*, 聊起来 *liáo qǐlai*.\n\nCuando hay objeto, se mete **entre 起 y 来**, y el ritmo es de tres golpes: 下**起** | **雨** | 来了 (*xià qǐ yǔ lai le*). 起 + 雨 son dos terceros: el primero sube (*qí yǔ*).\n\nEl **上** de inicio también se debilita a veces: 用上 *yòngshang*, 爱上 *àishang*, aunque se oye mucho con su cuarto tono.\n\nPalabras de hoy: **互联网 hùliánwǎng** (4 + 2 + 3), **全球 quánqiú** (dos q aspiradas y dos segundos tonos), **普及 pǔjí** (p con aire).",
+      "items": [
+        { "audio": "笑起来", "options": ["xiào qǐlai", "xiào qílái", "xiāo qǐlai"], "answer": 0, "explain": "来 neutro detrás de 起." },
+        { "audio": "下起雨来了", "prompt": "¿Dónde va 雨?", "options": ["Entre 起 y 来", "Detrás de 来", "Delante de 下"], "answer": 0 },
+        { "audio": "互联网", "options": ["hùliánwǎng", "hūliánwàng", "fùliánwǎng"], "answer": 0, "explain": "4.º + 2.º + 3.º." },
+        { "audio": "全球", "options": ["quánqiú", "chuánqiú", "quānqiù"], "answer": 0, "explain": "q = «ch» con mucho aire y la lengua plana." },
+        { "audio": "普及", "options": ["pǔjí", "bǔjí", "pùjì"], "answer": 0 }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["起", "网"],
+      "mnemonics": {
+        "起": "走 (andar) + 己 (uno mismo, da el sonido): uno mismo se pone en pie para echar a andar → levantarse, empezar. 起床, 起来.",
+        "网": "Un marco con hilos cruzados: una red de pesca. Hoy es también la red de internet: 上网, 网上, 互联网."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "Empieza algo: V起来 / V上",
+      "markdown": "En B1-4 viste **起来** como dirección («levantarse»: 站起来). Aquí tiene un sentido figurado: **empezar a hacer algo y seguir** («ponerse a…»):\n\n- 他们**聊起来**了 = se pusieron a charlar. 孩子**哭起来**了 = el niño se echó a llorar. 大家都**笑起来**了.\n- **Con objeto, el objeto va entre 起 y 来**: 下**起雨**来了, 唱**起歌**来了, 聊**起天**来了 (聊天 es separable).\n- Suele ir con **了** al final y con 突然, 一…就 delante.\n\n**V上** = empezar algo **nuevo que antes no tenías** o **conseguir llegar** a ello: **用上**微信 (empezar a usar), **爱上**上海 (enamorarse de), **过上**好日子 (llegar a vivir bien).\n\n**Convención del esqueleto** (la de los direccionales de A2): sin objeto, el bloque entero en *Verbo 1* (聊起来); con objeto, *Verbo 1* = 下起, *Objeto* = 雨, *Complemento* = 来. V上 + objeto: 用上了 en *Verbo 1* y el objeto en *Objeto*.\n\n(**看起来** «parece» es otro uso, de descripción: llega en B1-9.)",
+      "focus": ["verb1", "complement"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "他们", "py": "tāmen" }, "adverb": { "zh": "一见面就", "py": "yí jiànmiàn jiù" }, "verb1": { "zh": "聊起来", "py": "liáo qǐlai" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "En cuanto se vieron, se pusieron a charlar.", "esOrder": [{ "text": "En cuanto se vieron", "slot": "adverb" }, { "text": "se pusieron a charlar", "slot": "verb1" }] },
+        { "slots": { "subject": { "zh": "外面", "py": "wàimian" }, "verb1": { "zh": "下起", "py": "xià qǐ" }, "object": { "zh": "雨", "py": "yǔ" }, "complement": { "zh": "来", "py": "lai" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Fuera se ha puesto a llover.", "esOrder": [{ "text": "Fuera", "slot": "subject" }, { "text": "se ha puesto a", "slot": "verb1" }, { "text": "llover", "slot": "object" }] },
+        { "slots": { "subject": { "zh": "孩子", "py": "háizi" }, "adverb": { "zh": "突然", "py": "tūrán" }, "verb1": { "zh": "哭起来", "py": "kū qǐlai" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "El niño se echó a llorar de repente." },
+        { "slots": { "subject": { "zh": "我妈妈", "py": "wǒ māma" }, "adverb": { "zh": "也", "py": "yě" }, "verb1": { "zh": "用上", "py": "yòngshang" }, "object": { "zh": "微信", "py": "Wēixìn" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Mi madre también ha empezado a usar WeChat." },
+        { "slots": { "subject": { "zh": "雨果", "py": "Yǔguǒ" }, "verb1": { "zh": "爱上了", "py": "àishang le" }, "object": { "zh": "上海", "py": "Shànghǎi" } }, "end": "。", "es": "Hugo se ha enamorado de Shanghái." },
+        { "slots": { "subject": { "zh": "大家", "py": "dàjiā" }, "verb1": { "zh": "唱起", "py": "chàng qǐ" }, "object": { "zh": "歌", "py": "gē" }, "complement": { "zh": "来", "py": "lai" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Todos se pusieron a cantar." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "雨", "py": "yǔ" }, "adverb": { "zh": "还没", "py": "hái méi" }, "verb1": { "zh": "下起来", "py": "xià qǐlai" } }, "end": "，", "es": "Todavía no ha empezado a llover… (1.ª parte)" },
+        { "slots": { "subject": { "zh": "我们", "py": "wǒmen" }, "adverb": { "zh": "快", "py": "kuài" }, "verb1": { "zh": "走", "py": "zǒu" }, "particle": { "zh": "吧", "py": "ba" } }, "end": "。", "es": "…vámonos rápido. (2.ª parte)" }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "adverb": { "zh": "是什么时候", "py": "shì shénme shíhou" }, "verb1": { "zh": "爱上", "py": "àishang" }, "object": { "zh": "中国菜", "py": "Zhōngguó cài" }, "particle": { "zh": "的", "py": "de" } }, "end": "？", "es": "¿Cuándo te enamoraste de la comida china?" },
+        { "slots": { "subject": { "zh": "他们", "py": "tāmen" }, "adverb": { "zh": "为什么", "py": "wèi shénme" }, "verb1": { "zh": "笑起来", "py": "xiào qǐlai" }, "particle": { "zh": "了", "py": "le" } }, "end": "？", "es": "¿Por qué se han echado a reír?" }
+      ],
+      "mistakes": [
+        { "wrong": "外面下雨起来了。", "right": "外面下起雨来了。", "why": "El objeto va entre 起 y 来." },
+        { "wrong": "他们聊天起来了。", "right": "他们聊起天来了。 / 他们聊起来了。", "why": "聊天 es separable: 天 es el objeto y se mete en medio. O quita 天." },
+        { "wrong": "我爱起来上海了。", "right": "我爱上上海了。 / 我爱上了上海。", "why": "Para «enamorarse», «empezar a usar algo nuevo», se usa 上, no 起来." },
+        { "wrong": "下起来雨了。", "right": "下起雨来了。", "why": "No dejes 来 delante del objeto: 起 + objeto + 来." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Hasta mi madre usa WeChat",
+      "lines": [
+        { "speaker": "安娜", "zh": "雨果，你在笑什么？", "py": "Yǔguǒ, nǐ zài xiào shénme?", "es": "Hugo, ¿de qué te ríes?" },
+        { "speaker": "雨果", "zh": "我妈妈也用上微信了！她刚给我发了一个红包。", "py": "Wǒ māma yě yòngshang Wēixìn le! Tā gāng gěi wǒ fā le yí ge hóngbāo.", "es": "¡Mi madre también ha empezado a usar WeChat! Acaba de mandarme un sobre rojo." },
+        { "speaker": "安娜", "zh": "哈哈，真的吗？她以前不是不喜欢用手机吗？", "py": "Hāhā, zhēn de ma? Tā yǐqián bú shì bù xǐhuan yòng shǒujī ma?", "es": "Jaja, ¿en serio? ¿Pero antes no odiaba el móvil?" },
+        { "speaker": "雨果", "zh": "是啊，可是她现在一拿起手机就跟朋友聊起来，停不下来。", "py": "Shì a, kěshì tā xiànzài yì náqǐ shǒujī jiù gēn péngyou liáo qǐlai, tíng bu xiàlái.", "es": "Sí, pero ahora en cuanto coge el móvil se pone a charlar con sus amigas y no hay quien la pare." },
+        { "speaker": "安娜", "zh": "互联网真是改变了全球的生活。", "py": "Hùliánwǎng zhēn shì gǎibiàn le quánqiú de shēnghuó.", "es": "Internet ha cambiado de verdad la vida de todo el mundo." },
+        { "speaker": "雨果", "zh": "在中国，手机支付早已普及了。西班牙在这方面有点儿落后。", "py": "Zài Zhōngguó, shǒujī zhīfù zǎoyǐ pǔjí le. Xībānyá zài zhè fāngmiàn yǒudiǎnr luòhòu.", "es": "En China el pago con el móvil se generalizó hace tiempo. España en eso va un poco atrasada." },
+        { "speaker": "安娜", "zh": "中国的科技发展得很快，很多先进的东西都是中国制造的。", "py": "Zhōngguó de kējì fāzhǎn de hěn kuài, hěn duō xiānjìn de dōngxi dōu shì Zhōngguó zhìzào de.", "es": "La tecnología china avanza muy deprisa: muchas cosas punteras están hechas en China." },
+        { "speaker": "雨果", "zh": "对，以前说“中国制造”，大家想到的是工业，现在想到的是创新。", "py": "Duì, yǐqián shuō “Zhōngguó zhìzào”, dàjiā xiǎngdào de shì gōngyè, xiànzài xiǎngdào de shì chuàngxīn.", "es": "Sí: antes, al decir «hecho en China», la gente pensaba en industria; ahora piensa en innovación." },
+        { "speaker": "安娜", "zh": "你看，外面下起雨来了！", "py": "Nǐ kàn, wàimian xià qǐ yǔ lai le!", "es": "¡Mira, se ha puesto a llover!" },
+        { "speaker": "雨果", "zh": "没关系，我用手机叫个车。几分钟就到。", "py": "Méi guānxi, wǒ yòng shǒujī jiào ge chē. Jǐ fēnzhōng jiù dào.", "es": "No pasa nada, pido un coche con el móvil. Llega en unos minutos." },
+        { "speaker": "安娜", "zh": "你也越来越像中国人了！", "py": "Nǐ yě yuèláiyuè xiàng Zhōngguórén le!", "es": "¡Tú también te pareces cada vez más a un chino!" },
+        { "speaker": "雨果", "zh": "我早就爱上这里的生活了。", "py": "Wǒ zǎo jiù àishang zhèlǐ de shēnghuó le.", "es": "Hace tiempo que me enamoré de la vida de aquí." }
+      ],
+      "notes": "红包 (sobre rojo) es dinero que se regala en fiestas y celebraciones; en WeChat se manda con dos toques y se ha vuelto un juego entre amigos y familiares. 停不下来 (no poder parar) combina el potencial (B1-3) con 下来, que verás en la lección siguiente. 她以前不是不喜欢……吗？ es una pregunta retórica («¿no era que…?»): la estudiarás en B1-8."
+    },
+    { "type": "exercises", "count": 17, "bank": ["g-lai-qu", "g-complements", "g-le"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "孩子" }, "adverb": { "zh": "突然" }, "verb1": { "zh": "哭起来" }, "particle": { "zh": "了" } }, "end": "。", "es": "El niño se echó a llorar de repente." }, "distractors": ["起"] },
+        { "sentence": { "slots": { "subject": { "zh": "外面" }, "verb1": { "zh": "下起" }, "object": { "zh": "雨" }, "complement": { "zh": "来" }, "particle": { "zh": "了" } }, "end": "。", "es": "Fuera se ha puesto a llover." }, "distractors": ["上"] },
+        { "sentence": { "slots": { "subject": { "zh": "我爷爷" }, "adverb": { "zh": "也" }, "verb1": { "zh": "用上" }, "object": { "zh": "手机支付" }, "particle": { "zh": "了" } }, "end": "。", "es": "Mi abuelo también ha empezado a pagar con el móvil." }, "distractors": ["起来"] },
+        { "sentence": { "slots": { "subject": { "zh": "大卫和小李" }, "adverb": { "zh": "一见面就" }, "place": { "zh": "在宿舍门口" }, "verb1": { "zh": "聊起" }, "object": { "zh": "足球" }, "complement": { "zh": "来" }, "particle": { "zh": "了" } }, "end": "。", "es": "En cuanto se vieron, David y Xiao Li se pusieron a hablar de fútbol en la puerta de la residencia." } },
+        { "sentence": { "slots": { "time0": { "zh": "这几年" }, "subject": { "zh": "很多农村的老人" }, "adverb": { "zh": "都" }, "verb1": { "zh": "用上了" }, "object": { "zh": "互联网" } }, "end": "。", "es": "Estos últimos años, muchos ancianos del campo han empezado a usar internet." } }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "他们一见面就聊起来了。", "py": "Tāmen yí jiànmiàn jiù liáo qǐlai le.", "es": "En cuanto se vieron, se pusieron a charlar." },
+        { "zh": "外面下起雨来了。", "py": "Wàimian xià qǐ yǔ lai le.", "es": "Fuera se ha puesto a llover." },
+        { "zh": "我妈妈也用上微信了。", "py": "Wǒ māma yě yòngshang Wēixìn le.", "es": "Mi madre también ha empezado a usar WeChat." },
+        { "zh": "我早就爱上这里的生活了。", "py": "Wǒ zǎo jiù àishang zhèlǐ de shēnghuó le.", "es": "Hace tiempo que me enamoré de la vida de aquí." }
+      ],
+      "respond": [
+        { "q": { "zh": "你是什么时候爱上中国菜的？", "py": "Nǐ shì shénme shíhou àishang Zhōngguó cài de?", "es": "¿Cuándo te enamoraste de la comida china?" }, "model": { "zh": "我第一次吃饺子的时候，就爱上中国菜了。", "py": "Wǒ dì-yī cì chī jiǎozi de shíhou, jiù àishang Zhōngguó cài le.", "es": "La primera vez que comí jiaozi me enamoré de la comida china." } },
+        { "q": { "zh": "你的家人用上微信了吗？", "py": "Nǐ de jiārén yòngshang Wēixìn le ma?", "es": "¿Tu familia ya usa WeChat?" }, "model": { "zh": "我妈妈用上了，我爸爸还没用上。", "py": "Wǒ māma yòngshang le, wǒ bàba hái méi yòngshang.", "es": "Mi madre sí; mi padre todavía no." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Hecho en China",
+      "text": "这几十年，中国的科技发展得非常快。以前，中国的工业比较落后，很多先进的机器都要从外国买。现在，很多新的东西都是中国制造的，全球的人都在用。在中国，互联网早已普及了，买东西、坐车、吃饭，用手机都可以。很多公司不断改进自己的东西，越来越重视创新。有的东西虽然不是中国人发明的，可是在中国用得最多，比如手机支付。雨果的妈妈以前不喜欢用手机，可是自从雨果来了上海，她也用上了微信。现在她一拿起手机就跟朋友聊起来。有时候她还给雨果发红包，雨果每次都笑起来。不过，也有人觉得，生活变化得太快了，人工的服务越来越少，老人有时候不太习惯。",
+      "es": "En las últimas décadas la tecnología china se ha desarrollado muy deprisa. Antes, la industria china estaba bastante atrasada y muchas máquinas avanzadas había que comprarlas en el extranjero. Ahora muchas cosas nuevas están hechas en China y las usa gente de todo el mundo. En China, internet se generalizó hace tiempo: comprar, coger un coche o ir a comer se puede hacer con el móvil. Muchas empresas mejoran sin parar sus productos y dan cada vez más importancia a la innovación. Algunas cosas no las inventaron los chinos, pero es en China donde más se usan; por ejemplo, el pago con el móvil. A la madre de Hugo antes no le gustaba el móvil, pero desde que Hugo vino a Shanghái ella también ha empezado a usar WeChat. Ahora, en cuanto coge el móvil, se pone a charlar con sus amigas. A veces incluso le manda sobres rojos a Hugo, y él siempre se echa a reír. Sin embargo, también hay quien piensa que la vida cambia demasiado deprisa: cada vez hay menos atención por personas y a los mayores a veces les cuesta acostumbrarse.",
+      "questions": [
+        { "q": "¿Cómo era antes la industria china, según el texto?", "options": ["比较落后", "非常先进", "全球第一"], "answer": 0 },
+        { "q": "¿Qué ejemplo da el texto de algo que se usa muchísimo en China?", "options": ["手机支付", "人工服务", "红包"], "answer": 0 },
+        { "q": "¿Qué hace la madre de Hugo en cuanto coge el móvil?", "options": ["跟朋友聊起来", "给雨果打电话", "买东西"], "answer": 0 },
+        { "q": "¿Qué problema menciona el texto al final?", "options": ["Hay cada vez menos atención por personas", "Internet es muy caro", "Las máquinas son extranjeras"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

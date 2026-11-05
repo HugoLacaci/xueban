@@ -1,0 +1,132 @@
+{
+  "id": "a1-u05-l1",
+  "title": "Hoy, mañana y los días de la semana",
+  "zh": "今天星期几？",
+  "goal": "Decir qué día es hoy, ayer y mañana, nombrar los días de la semana y colocar el «cuándo» delante del verbo.",
+  "minutes": 14,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "今天", "pinyin": "jīntiān", "es": "hoy" },
+    { "hanzi": "明天", "pinyin": "míngtiān", "es": "mañana (el día siguiente)" },
+    { "hanzi": "昨天", "pinyin": "zuótiān", "es": "ayer" },
+    { "hanzi": "后天", "pinyin": "hòutiān", "es": "pasado mañana" },
+    { "hanzi": "前天", "pinyin": "qiántiān", "es": "anteayer" },
+    { "hanzi": "星期", "pinyin": "xīngqī", "es": "semana; día de la semana" },
+    { "hanzi": "星期一", "pinyin": "xīngqīyī", "es": "lunes", "note": "Los días se numeran: 星期一 (1) … 星期六 (6)." },
+    { "hanzi": "星期六", "pinyin": "xīngqīliù", "es": "sábado" },
+    { "hanzi": "星期天", "pinyin": "xīngqītiān", "es": "domingo", "note": "Hablado." },
+    { "hanzi": "星期日", "pinyin": "xīngqīrì", "es": "domingo", "note": "Más formal o escrito. Nunca ✗星期七." },
+    { "hanzi": "星期几", "pinyin": "xīngqī jǐ", "es": "¿qué día de la semana?" },
+    { "hanzi": "周", "pinyin": "zhōu", "es": "semana", "note": "Más breve y escrito que 星期: 周一 = lunes." },
+    { "hanzi": "周末", "pinyin": "zhōumò", "es": "fin de semana" }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "今天星期三，明天星期四。", "py": "Jīntiān xīngqīsān, míngtiān xīngqīsì.", "es": "Hoy es miércoles y mañana, jueves." },
+        { "zh": "我明天去北京。", "py": "Wǒ míngtiān qù Běijīng.", "es": "Mañana voy a Pekín." },
+        { "zh": "周末你去哪儿？", "py": "Zhōumò nǐ qù nǎr?", "es": "¿Adónde vas el fin de semana?" }
+      ]
+    },
+    { "type": "vocab", "title": "Los días", "words": ["今天", "明天", "昨天", "后天", "前天", "星期", "星期一", "星期六", "星期天", "星期日", "星期几", "周", "周末"] },
+    {
+      "type": "phonetics-drill",
+      "title": "星期 xīngqī: la x, la q y la -ing",
+      "markdown": "**星期 xīngqī** junta tres sonidos que no tenemos en español:\n\n- **x**: la lengua plana contra los dientes de abajo, y sale el aire como en una «s» suave sonriendo (entre «s» y «sh»).\n- **q**: misma posición, pero con un golpe y **soplo de aire**: una «ch» sonriente y aspirada.\n- **-ing**: «i» que se cierra atrás, como *sing* en inglés.\n\nLos dos son 1.er tono: alto y plano, **xīng-qī**, como una nota sostenida.\n\nY ojo a **今天 jīntiān**: *j* (sin aire) + *-in* (cierre delante); 明天 *míngtiān* tiene *-ing*.",
+      "items": [
+        { "audio": "星期", "options": ["shīngqī", "xīnqī", "xīngqī"], "answer": 2, "explain": "x (lengua plana), -ing (cierre atrás) y q con aire." },
+        { "audio": "今天", "options": ["jīntiān", "jīngtiān", "qīntiān"], "answer": 0, "explain": "j sin aire y -in con la lengua delante." },
+        { "audio": "明天", "options": ["míntiān", "míngtiān", "mǐngtiān"], "answer": 1, "explain": "明 míng: 2.º tono y -ng." },
+        { "audio": "前天", "options": ["qiántiān", "jiántiān", "qiāntiān"], "answer": 0, "explain": "q con aire y 2.º tono: anteayer." },
+        { "audio": "星期日", "prompt": "¿Qué día es?", "options": ["sábado", "domingo", "lunes"], "answer": 1, "explain": "星期日 (o 星期天) = domingo." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["明", "星"],
+      "mnemonics": {
+        "明": "日 (sol) + 月 (luna): lo que brilla de día y de noche → claro, brillante. 明天 es «el día claro que viene».",
+        "星": "日 (aquí, un astro brillante) + 生 (shēng, nacer, que da el sonido): luces que nacen en el cielo → estrella. 星期 era el ciclo de los siete astros."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "El tiempo va delante del verbo: S + T + V",
+      "markdown": "Se estrena un hueco nuevo: **Tiempo**. Las palabras que dicen *cuándo* (今天, 明天, 星期六, 周末…) **no van al final** como en español («voy a Pekín mañana»), sino **entre el sujeto y el verbo**:\n\n> **我** + **明天** + **去北京**。 (Yo + mañana + voy a Pekín.)\n\n- Si hay 不 u otro adverbio, el tiempo va **antes**: 我明天**不**去.\n- **Días de la semana**: 星期 + número: 星期一 (lunes) … 星期六 (sábado). El domingo es **星期天** (hablado) o **星期日** (escrito).\n- **Preguntar el día**: 今天星期几？ La respuesta ocupa el hueco de 几: 今天星期三. No hace falta 是 (aunque se puede decir: 今天是星期三).\n- Con 几 **no** se pone 吗.",
+      "focus": ["time"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "time": { "zh": "明天", "py": "míngtiān" }, "verb1": { "zh": "去北京", "py": "qù Běijīng" } }, "end": "。", "es": "Voy a Pekín mañana.", "esOrder": [{ "text": "(Yo)", "slot": "subject" }, { "text": "voy a Pekín", "slot": "verb1" }, { "text": "mañana", "slot": "time" }] },
+        { "slots": { "subject": { "zh": "安娜", "py": "Ānnà" }, "time": { "zh": "后天", "py": "hòutiān" }, "verb1": { "zh": "去西安", "py": "qù Xī'ān" } }, "end": "。", "es": "Anna va a Xi'an pasado mañana.", "esOrder": [{ "text": "Anna", "slot": "subject" }, { "text": "va a Xi'an", "slot": "verb1" }, { "text": "pasado mañana", "slot": "time" }] },
+        { "slots": { "subject": { "zh": "我们", "py": "wǒmen" }, "time": { "zh": "星期六", "py": "xīngqīliù" }, "verb1": { "zh": "去朋友家", "py": "qù péngyou jiā" } }, "end": "。", "es": "El sábado vamos a casa de un amigo." },
+        { "slots": { "subject": { "zh": "小李", "py": "Xiǎo Lǐ" }, "time": { "zh": "周末", "py": "zhōumò" }, "verb1": { "zh": "看", "py": "kàn" }, "object": { "zh": "他爸爸妈妈", "py": "tā bàba māma" } }, "end": "。", "es": "Xiao Li visita a sus padres el fin de semana." },
+        { "slots": { "subject": { "zh": "今天", "py": "jīntiān" }, "object": { "zh": "星期三", "py": "xīngqīsān" } }, "end": "。", "es": "Hoy es miércoles." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "time": { "zh": "明天", "py": "míngtiān" }, "adverb": { "zh": "不", "py": "bú" }, "verb1": { "zh": "去上海", "py": "qù Shànghǎi" } }, "end": "。", "es": "Mañana no voy a Shanghái." },
+        { "slots": { "subject": { "zh": "昨天", "py": "zuótiān" }, "adverb": { "zh": "不", "py": "bú" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "星期一", "py": "xīngqīyī" } }, "end": "。", "es": "Ayer no fue lunes." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "今天", "py": "jīntiān" }, "object": { "zh": "星期几", "py": "xīngqī jǐ" } }, "end": "？", "es": "¿Qué día es hoy?" },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "time": { "zh": "星期天", "py": "xīngqītiān" }, "verb1": { "zh": "去北京", "py": "qù Běijīng" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿Vas a Pekín el domingo?" }
+      ],
+      "mistakes": [
+        { "wrong": "我去北京明天。", "right": "我明天去北京。", "why": "El tiempo va delante del verbo, no al final como en español." },
+        { "wrong": "我不明天去。", "right": "我明天不去。", "why": "Primero el tiempo y después 不: el hueco del tiempo va antes que el de los adverbios." },
+        { "wrong": "今天星期几吗？", "right": "今天星期几？", "why": "几 ya pregunta: no se añade 吗." },
+        { "wrong": "星期七", "right": "星期天 / 星期日", "why": "El domingo no tiene número." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "¿Qué haces el fin de semana?",
+      "lines": [
+        { "speaker": "安娜", "zh": "雨果，今天星期几？", "py": "Yǔguǒ, jīntiān xīngqī jǐ?", "es": "Hugo, ¿qué día es hoy?" },
+        { "speaker": "雨果", "zh": "今天星期五。", "py": "Jīntiān xīngqīwǔ.", "es": "Hoy es viernes." },
+        { "speaker": "安娜", "zh": "明天星期六！周末你去哪儿？", "py": "Míngtiān xīngqīliù! Zhōumò nǐ qù nǎr?", "es": "¡Mañana es sábado! ¿Adónde vas el fin de semana?" },
+        { "speaker": "雨果", "zh": "我明天去西安。你呢？", "py": "Wǒ míngtiān qù Xī'ān. Nǐ ne?", "es": "Mañana voy a Xi'an. ¿Y tú?" },
+        { "speaker": "安娜", "zh": "我明天不去，我星期天去朋友家。", "py": "Wǒ míngtiān bú qù, wǒ xīngqītiān qù péngyou jiā.", "es": "Mañana no voy a ningún sitio; el domingo voy a casa de una amiga." },
+        { "speaker": "雨果", "zh": "你的朋友是中国人吗？", "py": "Nǐ de péngyou shì Zhōngguórén ma?", "es": "¿Tu amiga es china?" },
+        { "speaker": "安娜", "zh": "对，她是上海人，她叫小王。", "py": "Duì, tā shì Shànghǎirén, tā jiào Xiǎo Wáng.", "es": "Sí, es de Shanghái; se llama Xiao Wang." },
+        { "speaker": "雨果", "zh": "好，星期一见！", "py": "Hǎo, xīngqīyī jiàn!", "es": "¡Vale, hasta el lunes!" }
+      ],
+      "notes": "Día + 见 sirve para despedirse: 明天见 (hasta mañana), 星期一见 (hasta el lunes). En los horarios y en el móvil verás también 周一, 周二… (más corto y escrito)."
+    },
+    { "type": "exercises", "count": 14, "bank": ["g-dates-time", "g-word-order", "u04"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "我" }, "time": { "zh": "明天" }, "verb1": { "zh": "去北京" } }, "end": "。", "es": "Voy a Pekín mañana." } },
+        { "sentence": { "slots": { "subject": { "zh": "安娜" }, "time": { "zh": "后天" }, "adverb": { "zh": "不" }, "verb1": { "zh": "去西安" } }, "end": "。", "es": "Anna no va a Xi'an pasado mañana." }, "distractors": ["吗"] },
+        { "sentence": { "slots": { "subject": { "zh": "小李" }, "time": { "zh": "周末" }, "verb1": { "zh": "看" }, "object": { "zh": "他爸爸妈妈" } }, "end": "。", "es": "Xiao Li visita a sus padres el fin de semana." } },
+        { "sentence": { "slots": { "subject": { "zh": "我和安娜" }, "time": { "zh": "星期六" }, "adverb": { "zh": "都" }, "verb1": { "zh": "去朋友家" } }, "end": "。", "es": "Anna y yo vamos los dos a casa de un amigo el sábado." }, "distractors": ["星期七"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "今天星期三。", "py": "Jīntiān xīngqīsān.", "es": "Hoy es miércoles." },
+        { "zh": "昨天星期二，明天星期四。", "py": "Zuótiān xīngqī'èr, míngtiān xīngqīsì.", "es": "Ayer fue martes y mañana es jueves." },
+        { "zh": "我明天去北京。", "py": "Wǒ míngtiān qù Běijīng.", "es": "Mañana voy a Pekín." },
+        { "zh": "星期一见！", "py": "Xīngqīyī jiàn!", "es": "¡Hasta el lunes!" }
+      ],
+      "respond": [
+        { "q": { "zh": "今天星期几？", "py": "Jīntiān xīngqī jǐ?", "es": "¿Qué día es hoy?" }, "model": { "zh": "今天星期四。", "py": "Jīntiān xīngqīsì.", "es": "Hoy es jueves." } },
+        { "q": { "zh": "周末你去哪儿？", "py": "Zhōumò nǐ qù nǎr?", "es": "¿Adónde vas el fin de semana?" }, "model": { "zh": "我星期六去朋友家。", "py": "Wǒ xīngqīliù qù péngyou jiā.", "es": "El sábado voy a casa de un amigo." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "La semana de Hugo",
+      "text": "今天星期三。昨天星期二，前天星期一。明天星期四，后天星期五。周末是星期六和星期天。雨果星期六去北京，星期天看朋友。他星期一不去北京。",
+      "es": "Hoy es miércoles. Ayer fue martes y anteayer, lunes. Mañana es jueves y pasado mañana, viernes. El fin de semana son el sábado y el domingo. Hugo va a Pekín el sábado y el domingo ve a unos amigos. El lunes no va a Pekín.",
+      "questions": [
+        { "q": "¿Qué día fue anteayer (前天)?", "options": ["Lunes", "Martes", "Viernes"], "answer": 0 },
+        { "q": "¿Cuándo va Hugo a Pekín?", "options": ["El lunes", "El domingo", "El sábado"], "answer": 2 },
+        { "q": "¿Qué es 后天 si hoy es miércoles?", "options": ["Viernes", "Jueves", "Lunes"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

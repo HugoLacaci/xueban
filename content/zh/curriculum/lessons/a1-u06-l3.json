@@ -1,0 +1,128 @@
+{
+  "id": "a1-u06-l3",
+  "title": "¿Dónde va el tiempo? Antes del verbo o al principio",
+  "zh": "八点我去上课",
+  "goal": "Colocar el tiempo en sus dos sitios posibles (S + T + V o T + S + V, nunca al final) y afinar la hora con 刻 y 差.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "刻", "pinyin": "kè", "es": "cuarto (de hora)" },
+    { "hanzi": "一刻", "pinyin": "yí kè", "es": "y cuarto", "note": "三点一刻 = 3:15." },
+    { "hanzi": "三刻", "pinyin": "sān kè", "es": "menos cuarto (de la hora siguiente)", "note": "三点三刻 = 3:45. No existe ✗两刻: se dice 半." },
+    { "hanzi": "差", "pinyin": "chà", "es": "faltar; menos (en la hora)", "note": "差五分八点 = las ocho menos cinco." },
+    { "hanzi": "差一刻", "pinyin": "chà yí kè", "es": "menos cuarto", "note": "差一刻八点 = las ocho menos cuarto." },
+    { "hanzi": "分钟", "pinyin": "fēnzhōng", "es": "minuto (de duración)", "note": "八点十分 (la hora) ≠ 十分钟 (diez minutos de duración)." },
+    { "hanzi": "小时", "pinyin": "xiǎoshí", "es": "hora (de duración)", "note": "一个小时 = una hora (que dura)." },
+    { "hanzi": "上课", "pinyin": "shàngkè", "es": "tener clase, dar clase, ir a clase", "note": "Se adelanta aquí; se repasa en la unidad 7." }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "我八点去上课。", "py": "Wǒ bā diǎn qù shàngkè.", "es": "Voy a clase a las ocho." },
+        { "zh": "八点我去上课。", "py": "Bā diǎn wǒ qù shàngkè.", "es": "A las ocho voy a clase." },
+        { "zh": "现在差五分九点。", "py": "Xiànzài chà wǔ fēn jiǔ diǎn.", "es": "Son las nueve menos cinco." }
+      ]
+    },
+    { "type": "vocab", "title": "Cuartos, «menos» y duración", "words": ["刻", "一刻", "三刻", "差", "差一刻", "分钟", "小时", "上课"] },
+    {
+      "type": "phonetics-drill",
+      "title": "刻 kè (con aire) y 差 chà",
+      "markdown": "**刻 kè** y **课 kè** suenan exactamente igual: *k* **con soplo de aire** + la *e* china (una «e» con la boca relajada, casi «ö» sin redondear) + 4.º tono. Su pareja sin aire es **个 gè**.\n\nPrueba del papel: pon una hoja delante de la boca. Con *kè* se mueve; con *gè*, casi no.\n\n**差 chà**: *ch* con la lengua **doblada hacia atrás** y un soplo de aire; 4.º tono, como un «¡cha!» seco. No es la «ch» española (que va con la lengua plana).",
+      "items": [
+        { "audio": "刻", "options": ["gè", "kè", "hè"], "answer": 1, "explain": "k con aire; g sin aire." },
+        { "audio": "一刻", "options": ["yí kè", "yì kè", "yī gè"], "answer": 0, "explain": "刻 es 4.º tono: 一 pasa a yí." },
+        { "audio": "上课", "options": ["shànggè", "shàngkè", "sàngkè"], "answer": 1, "explain": "课 = kè, igual que 刻." },
+        { "audio": "差", "options": ["zhà", "shà", "chà"], "answer": 2, "explain": "ch: lengua atrás + aire." },
+        { "audio": "三点一刻", "prompt": "¿Qué hora es?", "options": ["3:45", "3:15", "1:30"], "answer": 1, "explain": "一刻 = quince minutos: las tres y cuarto." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["刻", "差"],
+      "mnemonics": {
+        "刻": "亥 (hài, que da el sonido) + 刂 (cuchillo): grabar con cuchillo. Los relojes de agua tenían marcas grabadas: cada marca era un 刻, y hoy un cuarto de hora.",
+        "差": "Truco: un 羊 (oveja) que ha perdido la cola, encima de 工 (trabajo): un trabajo al que le falta algo → faltar, diferencia."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "El tiempo tiene dos sitios: delante del verbo o al principio",
+      "markdown": "Se estrena el último sitio del tiempo: **delante del sujeto**. Ahora hay dos posiciones correctas y una prohibida:\n\n| | Frase | |\n|---|---|---|\n| S + **T** + V | 我**八点**去上课。 | lo normal |\n| **T** + S + V | **八点**我去上课。 | pone el tiempo como tema: «a las ocho, (lo que hago es) ir a clase» |\n| S + V + **T** | ✗我去上课八点。 | **nunca** |\n\nEn español el tiempo puede ir al final («voy a clase a las ocho»); en chino, **nunca**. Delante del sujeto suele ir cuando quieres destacarlo o contrastarlo: 星期六我们不上课.\n\n**La hora, más fina**:\n\n- **刻** = cuarto de hora: 三点一刻 (3:15), 三点三刻 (3:45). Para 3:30, 半 (no ✗两刻).\n- **差** + minutos + hora = «faltan… para»: 差五分八点 (7:55), 差一刻八点 (7:45). También se oye 八点差五分.\n- **点 / 分** dicen la hora del reloj; **小时 / 分钟** dicen cuánto dura: 一个小时是六十分钟.",
+      "focus": ["time0", "time"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "time": { "zh": "八点", "py": "bā diǎn" }, "verb1": { "zh": "去上课", "py": "qù shàngkè" } }, "end": "。", "es": "Voy a clase a las ocho.", "esOrder": [{ "text": "(Yo)", "slot": "subject" }, { "text": "voy a clase", "slot": "verb1" }, { "text": "a las ocho", "slot": "time" }] },
+        { "slots": { "time0": { "zh": "八点", "py": "bā diǎn" }, "subject": { "zh": "我", "py": "wǒ" }, "verb1": { "zh": "去上课", "py": "qù shàngkè" } }, "end": "。", "es": "A las ocho voy a clase.", "esOrder": [{ "text": "A las ocho", "slot": "time0" }, { "text": "(yo)", "slot": "subject" }, { "text": "voy a clase", "slot": "verb1" }] },
+        { "slots": { "subject": { "zh": "王老师", "py": "Wáng lǎoshī" }, "time": { "zh": "上午九点一刻", "py": "shàngwǔ jiǔ diǎn yí kè" }, "verb1": { "zh": "上课", "py": "shàngkè" } }, "end": "。", "es": "La profesora Wang da clase a las nueve y cuarto de la mañana." },
+        { "slots": { "time0": { "zh": "明天下午", "py": "míngtiān xiàwǔ" }, "subject": { "zh": "我们", "py": "wǒmen" }, "verb1": { "zh": "去西安", "py": "qù Xī'ān" } }, "end": "。", "es": "Mañana por la tarde nos vamos a Xi'an." },
+        { "slots": { "subject": { "zh": "安娜", "py": "Ānnà" }, "time": { "zh": "差五分八点", "py": "chà wǔ fēn bā diǎn" }, "verb1": { "zh": "去上课", "py": "qù shàngkè" } }, "end": "。", "es": "Anna va a clase a las ocho menos cinco." },
+        { "slots": { "subject": { "zh": "一个小时", "py": "yí ge xiǎoshí" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "六十分钟", "py": "liùshí fēnzhōng" } }, "end": "。", "es": "Una hora son sesenta minutos." }
+      ],
+      "negative": [
+        { "slots": { "time0": { "zh": "星期六", "py": "xīngqīliù" }, "subject": { "zh": "我们", "py": "wǒmen" }, "adverb": { "zh": "不", "py": "bú" }, "verb1": { "zh": "上课", "py": "shàngkè" } }, "end": "。", "es": "Los sábados no tenemos clase." },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "time": { "zh": "今天晚上", "py": "jīntiān wǎnshang" }, "adverb": { "zh": "不", "py": "bú" }, "verb1": { "zh": "去朋友家", "py": "qù péngyou jiā" } }, "end": "。", "es": "Esta noche no voy a casa de mi amigo." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "time": { "zh": "几点", "py": "jǐ diǎn" }, "verb1": { "zh": "上课", "py": "shàngkè" } }, "end": "？", "es": "¿A qué hora tienes clase?" },
+        { "slots": { "time0": { "zh": "明天", "py": "míngtiān" }, "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "去北京", "py": "qù Běijīng" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿Mañana vas a Pekín?" }
+      ],
+      "mistakes": [
+        { "wrong": "我去上课八点。", "right": "我八点去上课。 / 八点我去上课。", "why": "El tiempo nunca va al final: delante del verbo o al principio de la frase." },
+        { "wrong": "我上课在八点。", "right": "我八点上课。", "why": "«A las ocho» no lleva preposición: la hora sola, delante del verbo." },
+        { "wrong": "我八点上课在星期一。", "right": "我星期一八点上课。", "why": "Varios tiempos juntos, de grande a pequeño y delante del verbo." },
+        { "wrong": "一点十五分钟", "right": "一点十五分 / 一点一刻", "why": "分钟 es duración; para la hora del reloj se usa 分." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Llegar tarde",
+      "lines": [
+        { "speaker": "王老师", "zh": "安娜，现在几点？", "py": "Ānnà, xiànzài jǐ diǎn?", "es": "Anna, ¿qué hora es?" },
+        { "speaker": "安娜", "zh": "现在八点一刻。对不起，老师！", "py": "Xiànzài bā diǎn yí kè. Duìbuqǐ, lǎoshī!", "es": "Las ocho y cuarto. ¡Lo siento, profesora!" },
+        { "speaker": "王老师", "zh": "我们几点上课？", "py": "Wǒmen jǐ diǎn shàngkè?", "es": "¿A qué hora tenemos clase?" },
+        { "speaker": "安娜", "zh": "八点上课。", "py": "Bā diǎn shàngkè.", "es": "A las ocho." },
+        { "speaker": "王老师", "zh": "对，八点上课，不是八点一刻！", "py": "Duì, bā diǎn shàngkè, bú shì bā diǎn yí kè!", "es": "Eso es: a las ocho, no a las ocho y cuarto." },
+        { "speaker": "雨果", "zh": "老师，明天我们也八点上课吗？", "py": "Lǎoshī, míngtiān wǒmen yě bā diǎn shàngkè ma?", "es": "Profesora, ¿mañana también tenemos clase a las ocho?" },
+        { "speaker": "王老师", "zh": "明天上午九点上课。", "py": "Míngtiān shàngwǔ jiǔ diǎn shàngkè.", "es": "Mañana la clase es a las nueve." },
+        { "speaker": "安娜", "zh": "好，明天我差五分九点去！", "py": "Hǎo, míngtiān wǒ chà wǔ fēn jiǔ diǎn qù!", "es": "¡Vale, mañana voy a las nueve menos cinco!" }
+      ],
+      "notes": "En la universidad china la puntualidad cuenta: llegar tarde a clase se nota y se disculpa con 对不起. Fíjate en «明天我们也八点上课吗» y «明天我差五分九点去»: 明天 delante del sujeto y la hora delante del verbo, las dos posiciones a la vez."
+    },
+    { "type": "exercises", "count": 15, "bank": ["g-dates-time", "g-word-order", "u04"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "time0": { "zh": "八点" }, "subject": { "zh": "我" }, "verb1": { "zh": "去上课" } }, "end": "。", "es": "A las ocho voy a clase." }, "distractors": ["在"] },
+        { "sentence": { "slots": { "subject": { "zh": "王老师" }, "time": { "zh": "上午九点一刻" }, "verb1": { "zh": "上课" } }, "end": "。", "es": "La profesora Wang da clase a las nueve y cuarto de la mañana." }, "distractors": ["两刻"] },
+        { "sentence": { "slots": { "time0": { "zh": "星期六" }, "subject": { "zh": "我们" }, "adverb": { "zh": "不" }, "verb1": { "zh": "上课" } }, "end": "。", "es": "Los sábados no tenemos clase." }, "distractors": ["没"] },
+        { "sentence": { "slots": { "time0": { "zh": "明天下午" }, "subject": { "zh": "雨果和安娜" }, "time": { "zh": "两点三刻" }, "adverb": { "zh": "都" }, "verb1": { "zh": "去西安" } }, "end": "。", "es": "Mañana por la tarde Hugo y Anna se van los dos a Xi'an a las tres menos cuarto." }, "distractors": ["分钟"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "我八点去上课。", "py": "Wǒ bā diǎn qù shàngkè.", "es": "Voy a clase a las ocho." },
+        { "zh": "八点我去上课。", "py": "Bā diǎn wǒ qù shàngkè.", "es": "A las ocho voy a clase." },
+        { "zh": "三点一刻，三点半，三点三刻。", "py": "Sān diǎn yí kè, sān diǎn bàn, sān diǎn sān kè.", "es": "Las tres y cuarto, las tres y media, las cuatro menos cuarto." },
+        { "zh": "现在差五分九点。", "py": "Xiànzài chà wǔ fēn jiǔ diǎn.", "es": "Son las nueve menos cinco." }
+      ],
+      "respond": [
+        { "q": { "zh": "你几点上课？", "py": "Nǐ jǐ diǎn shàngkè?", "es": "¿A qué hora tienes clase?" }, "model": { "zh": "我上午九点一刻上课。", "py": "Wǒ shàngwǔ jiǔ diǎn yí kè shàngkè.", "es": "Tengo clase a las nueve y cuarto de la mañana." } },
+        { "q": { "zh": "星期六你上课吗？", "py": "Xīngqīliù nǐ shàngkè ma?", "es": "¿El sábado tienes clase?" }, "model": { "zh": "星期六我不上课。", "py": "Xīngqīliù wǒ bú shàngkè.", "es": "El sábado no tengo clase." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Cuartos y minutos",
+      "text": "一个小时是六十分钟，一刻是十五分钟，半个小时是三十分钟。雨果八点上课。七点四十五分是七点三刻，也是差一刻八点：雨果七点三刻去上课。星期六和星期天，他不上课。",
+      "es": "Una hora son sesenta minutos, un cuarto son quince y media hora, treinta. Hugo tiene clase a las ocho. Las siete cuarenta y cinco son 七点三刻 y también 差一刻八点: Hugo va a clase a las ocho menos cuarto. Los sábados y los domingos no tiene clase.",
+      "questions": [
+        { "q": "¿Cuántos minutos son 一刻?", "options": ["Diez", "Quince", "Treinta"], "answer": 1 },
+        { "q": "¿A qué hora va Hugo a clase?", "options": ["7:45", "8:15", "7:15"], "answer": 0 },
+        { "q": "¿Qué otra forma hay de decir 七点三刻?", "options": ["七点半", "差三刻八点", "差一刻八点"], "answer": 2 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

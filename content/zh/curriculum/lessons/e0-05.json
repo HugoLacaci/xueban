@@ -1,0 +1,81 @@
+{
+  "id": "e0-05",
+  "title": "Iniciales 3: z c s · zh ch sh r",
+  "zh": "声母（三）",
+  "goal": "Separar z c s de zh ch sh r y pronunciar la «-i vacía» de zi, ci, si, zhi, chi, shi, ri.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "是", "pinyin": "shì", "es": "ser", "note": "sh con la lengua hacia atrás + i vacía." },
+    { "hanzi": "十", "pinyin": "shí", "es": "diez", "note": "Igual que 是 pero en 2.º tono. ¡No lo confundas con 四 sì!" },
+    { "hanzi": "吃", "pinyin": "chī", "es": "comer" },
+    { "hanzi": "四", "pinyin": "sì", "es": "cuatro", "note": "s con la lengua detrás de los dientes + i vacía." },
+    { "hanzi": "日", "pinyin": "rì", "es": "sol; día" },
+    { "hanzi": "字", "pinyin": "zì", "es": "carácter (escrito)", "note": "汉字 hànzì: los caracteres chinos." },
+    { "hanzi": "热", "pinyin": "rè", "es": "calor; caliente" }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "他是老师。", "py": "Tā shì lǎoshī.", "es": "Él es profesor." },
+        { "zh": "太热了！", "py": "Tài rè le!", "es": "¡Qué calor! (lit. «demasiado calor»)" },
+        { "zh": "四、十", "py": "Sì, shí", "es": "cuatro, diez" }
+      ]
+    },
+    { "type": "vocab", "title": "Palabras con z c s y zh ch sh r", "words": ["是", "十", "吃", "四", "日", "字", "热"] },
+    {
+      "type": "phonetics-drill",
+      "title": "Lengua delante o lengua atrás",
+      "markdown": "Hay tres zonas para las «eses» chinas y cada una cambia la palabra:\n\n- **z c s**: punta de la lengua **detrás de los dientes de arriba** (delante).\n- **zh ch sh r**: punta de la lengua **levantada y un poco hacia atrás**, hacia el paladar (atrás).\n- **j q x**: lengua **plana**, punta abajo (lección 4).\n\nEscucha y elige. El par más importante para la vida diaria: **四 sì** «cuatro» frente a **十 shí** «diez».",
+      "items": [
+        { "audio": "是", "options": ["shì", "sì", "xì"], "answer": 0, "explain": "sh: lengua hacia atrás. s: detrás de los dientes. x: lengua plana y sonriendo." },
+        { "audio": "四", "options": ["shì", "sì", "xì"], "answer": 1, "explain": "四 sì: lengua delante, sonido más agudo y silbante." },
+        { "audio": "十", "options": ["shí", "sí", "xí"], "answer": 0, "explain": "十 shí «diez»: lengua atrás y voz que sube." },
+        { "audio": "字", "options": ["zì", "zhì", "jì"], "answer": 0, "explain": "字 zì: «ts» suave sin aire, lengua delante, y luego el zumbido." },
+        { "audio": "吃", "options": ["chī", "cī", "qī"], "answer": 0, "explain": "吃 chī: lengua atrás y con aire. 七 qī se hace con la lengua plana sonriendo." },
+        { "audio": "词", "options": ["cí", "chí", "zí"], "answer": 0, "explain": "词 cí «palabra»: «ts» con un soplo fuerte, lengua delante." },
+        { "audio": "日", "options": ["rì", "lì", "yì"], "answer": 0, "explain": "日 rì: como un sh con voz y lengua hacia atrás. No es la «r» española." },
+        { "audio": "热", "options": ["rè", "lè", "yè"], "answer": 0, "explain": "热 rè: r china + la «e» china de la lección 2." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["日"],
+      "mnemonics": {
+        "日": "Era un círculo con un punto en el centro: el sol. Al escribirse con pincel el círculo se volvió cuadrado y el punto, una raya. Del sol sale «día»: 日 aparece en las fechas y en 日本 (Japón, «origen del sol»)."
+      }
+    },
+    {
+      "type": "explain",
+      "title": "z c s: delante, detrás de los dientes",
+      "markdown": "| Inicial | Ejemplo | Cómo se hace |\n|---|---|---|\n| **z** | 字 zì | Como una «ts» suave, **sin aire** (la «ts» de *pizza* en italiano). No es la «z» española de «zapato». |\n| **c** | 词 cí | La misma «ts» con un **soplo fuerte**. Nunca «k» ni «z». |\n| **s** | 四 sì | Una «s» con la punta de la lengua **detrás de los dientes de arriba**. |\n\n**Ojo con la s si eres de España.** La «s» castellana se hace con la punta de la lengua un poco levantada hacia los alveolos, y a oídos chinos puede sonar casi como *sh*. La *s* china es más **adelantada y silbante**, como la «s» andaluza o la de muchos hispanoamericanos. Para 四 *sì*, apoya la punta de la lengua detrás de los dientes."
+    },
+    {
+      "type": "explain",
+      "title": "zh ch sh r: con la lengua hacia atrás",
+      "markdown": "Para estas cuatro, **levanta la punta de la lengua** y llévala un poco hacia atrás, al techo de la boca, justo detrás de la encía de los dientes de arriba. No hace falta enroscarla mucho: basta con que la punta mire hacia arriba.\n\n| Inicial | Ejemplo | Cómo se hace |\n|---|---|---|\n| **zh** | 中 zhōng | Una «ch» con la lengua hacia atrás, **sin aire**. |\n| **ch** | 吃 chī | La misma con **soplo fuerte**. |\n| **sh** | 是 shì, 十 shí | El «sh» de «¡shhh!», con la lengua hacia atrás. |\n| **r** | 日 rì, 热 rè | La posición de *sh*, pero **haciendo vibrar la garganta**. Parecido a la «s» de «*mismo*» dicha con la lengua hacia atrás, o a la «j» francesa de *je*. **Nunca** como la «r» ni la «rr» españolas. |\n\nTres pares para entrenar: **zì / zhì**, **cí / chí**, **sì / shì**. La boca es la misma; solo se mueve la punta de la lengua, de delante a atrás."
+    },
+    {
+      "type": "explain",
+      "title": "La «-i vacía»: zi ci si, zhi chi shi ri",
+      "markdown": "Detrás de **z c s** y de **zh ch sh r**, la letra **i no suena «i»**. Es una «i vacía»: la lengua **se queda donde estaba** la consonante y la voz sigue sonando, como un zumbido.\n\n- En **zi, ci, si** (字, 词, 四): alarga la *s* y pon voz: «sssz…». Parecido al zumbido de una abeja.\n- En **zhi, chi, shi, ri** (是, 吃, 十, 日): alarga la *sh* con voz: suena como una «r» muy apagada, «shrr…».\n\nRecuerda (lección 4) que estas iniciales **nunca van con una i de verdad**: por eso el pinyin aprovecha la letra *i* para este sonido sin miedo a confundirse.\n\n### Errores típicos de un hispanohablante\n\n1. Decir 四 *sì* como el «sí» español, con una «i» clara: suena a 西 *xī*.\n2. Confundir **四 sì** y **十 shí**. Es el error más peligroso: en una tienda, cuatro o diez yuanes no es lo mismo. Acompaña el tono, que también es distinto (4.º frente a 2.º).\n3. Pronunciar la **r** con un toque de lengua (como en «pero»): 热 *rè* no es «re».\n4. Leer **z** como la «z» de «zapato» y **c** como «k»: *zì* no es «zí» ni *cí* es «kí»."
+    },
+    { "type": "exercises", "count": 10, "bank": ["u0"] },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "四、十", "py": "Sì, shí", "es": "cuatro, diez" },
+        { "zh": "他是老师。", "py": "Tā shì lǎoshī.", "es": "Él es profesor." },
+        { "zh": "太热了！", "py": "Tài rè le!", "es": "¡Qué calor!" },
+        { "zh": "不吃。", "py": "Bù chī.", "es": "No como. / No, gracias (comida)." },
+        { "zh": "十四", "py": "shísì", "es": "catorce" }
+      ],
+      "respond": [
+        { "q": { "zh": "吃不吃？", "py": "Chī bu chī?", "es": "¿Comes? (lit. «¿comes o no comes?»)" }, "model": { "zh": "吃！谢谢！", "py": "Chī! Xièxie!", "es": "¡Sí! ¡Gracias!" } },
+        { "q": { "zh": "热不热？", "py": "Rè bu rè?", "es": "¿Hace calor?" }, "model": { "zh": "太热了！", "py": "Tài rè le!", "es": "¡Muchísimo!" } }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

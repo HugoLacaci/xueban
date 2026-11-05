@@ -1,0 +1,134 @@
+{
+  "id": "a1-u14-l2",
+  "title": "Encima, dentro, delante: 上, 里, 前…",
+  "zh": "书在桌子上",
+  "goal": "Situar cosas y personas con nombre + localizador (桌子上, 书包里, 图书馆前边) y entender que en chino el localizador va detrás.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "上", "pinyin": "shàng", "es": "encima, sobre (tras el nombre)", "note": "桌子上 «sobre la mesa»." },
+    { "hanzi": "上边", "pinyin": "shàngbian", "es": "arriba, la parte de encima", "note": "= 上面 shàngmian." },
+    { "hanzi": "下", "pinyin": "xià", "es": "debajo (tras el nombre)" },
+    { "hanzi": "下边", "pinyin": "xiàbian", "es": "abajo, debajo", "note": "= 下面." },
+    { "hanzi": "里", "pinyin": "lǐ", "es": "dentro (tras el nombre)", "note": "书包里 «dentro de la mochila»." },
+    { "hanzi": "里边", "pinyin": "lǐbian", "es": "dentro, la parte de dentro", "note": "= 里面." },
+    { "hanzi": "外", "pinyin": "wài", "es": "fuera (tras el nombre)" },
+    { "hanzi": "外边", "pinyin": "wàibian", "es": "fuera, afuera", "note": "= 外面." },
+    { "hanzi": "前", "pinyin": "qián", "es": "delante (tras el nombre)" },
+    { "hanzi": "前边", "pinyin": "qiánbian", "es": "delante, enfrente (por delante)", "note": "= 前面." },
+    { "hanzi": "后", "pinyin": "hòu", "es": "detrás (tras el nombre)" },
+    { "hanzi": "后边", "pinyin": "hòubian", "es": "detrás", "note": "= 后面." },
+    { "hanzi": "地", "pinyin": "dì", "es": "suelo, tierra" },
+    { "hanzi": "地上", "pinyin": "dìshang", "es": "en el suelo" }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "你的书在桌子上。", "py": "Nǐ de shū zài zhuōzi shang.", "es": "Tu libro está sobre la mesa." },
+        { "zh": "食堂在图书馆后边。", "py": "Shítáng zài túshūguǎn hòubian.", "es": "El comedor está detrás de la biblioteca." },
+        { "zh": "我的笔在哪儿？在书包里吗？", "py": "Wǒ de bǐ zài nǎr? Zài shūbāo li ma?", "es": "¿Dónde está mi boli? ¿En la mochila?" }
+      ]
+    },
+    { "type": "vocab", "title": "Los localizadores", "words": ["上", "上边", "下", "下边", "里", "里边", "外", "外边", "前", "前边", "后", "后边", "地", "地上"] },
+    {
+      "type": "phonetics-drill",
+      "title": "Dos cuartos tonos seguidos: 后面, 宿舍, 对面",
+      "markdown": "El **4.º tono** cae desde arriba hasta abajo. Cuando van **dos seguidos**, el primero **no baja del todo**: cae solo hasta la mitad, y el segundo hace la caída completa.\n\n- 后面 hòumiàn: hòu (cae a medias) → miàn (cae entero).\n- 宿舍 sùshè, 对面 duìmiàn, 电视 diànshì, 下次 xiàcì.\n\nSi haces dos caídas completas suena a enfado o a orden militar. Piensa en una escalera: dos escalones hacia abajo, no dos saltos.",
+      "items": [
+        { "audio": "后面", "options": ["hòumiàn", "hóumiàn", "hòumián"], "answer": 0, "explain": "4.º + 4.º: el primero cae a medias." },
+        { "audio": "宿舍", "options": ["sùshè", "súshè", "sùshé"], "answer": 0, "explain": "Dos 4.º tonos: sù-shè." },
+        { "audio": "电视", "options": ["diànshì", "diǎnshì", "diànshí"], "answer": 0, "explain": "电 diàn + 视 shì, los dos 4.º." },
+        { "audio": "下边", "prompt": "¿Qué tono tiene 边 aquí?", "options": ["Neutro (corto)", "1.º (alto)", "4.º"], "answer": 0, "explain": "En 上边, 下边, 里边… el 边 suele ir en tono neutro." },
+        { "audio": "外边", "options": ["wàibian", "wǎibian", "wēibian"], "answer": 0, "explain": "外 wài en 4.º + 边 neutro." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["上", "里"],
+      "mnemonics": {
+        "上": "Una línea de base y un trazo que se levanta por encima: arriba, encima.",
+        "里": "田 (campo) + 土 (tierra): el campo y la tierra donde vive la gente, el barrio; de ahí «dentro»."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "Nombre + localizador: 桌子上, 书包里",
+      "markdown": "En español la preposición va **delante**: «*sobre* la mesa», «*dentro de* la mochila». En chino el **localizador va detrás del nombre**: 桌子**上**, 书包**里**, 图书馆**前边**. El bloque entero funciona como un lugar.\n\n| Corto | Largo (边 / 面) | Ejemplo |\n|---|---|---|\n| 上 | 上边 / 上面 | 桌子上 |\n| 下 | 下边 / 下面 | 椅子下边 |\n| 里 | 里边 / 里面 | 书包里 |\n| 外 | 外边 / 外面 | 宿舍外边 |\n| 前 | 前边 / 前面 | 图书馆前边 |\n| 后 | 后边 / 后面 | 食堂后边 |\n\n- La forma **corta** (上, 里) va siempre pegada a un nombre. La **larga** puede ir sola: 他在**外边** (está fuera).\n- **边** y **面** significan lo mismo (面 es algo más frecuente en el sur).\n- Un **objeto** (mesa, mochila) no es un lugar: necesita localizador. ~~书在桌子~~ → 书在桌子**上**.\n- Con **países y ciudades** no se pone 里: 我在中国, no ~~我在中国里~~.\n\nPregunta: …在**哪儿**？ → 在桌子**上**。 Negativa: 不在.",
+      "focus": ["object", "place"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "你的书", "py": "nǐ de shū" }, "verb1": { "zh": "在", "py": "zài" }, "object": { "zh": "桌子上", "py": "zhuōzi shang" } }, "end": "。", "es": "Tu libro está sobre la mesa.", "esOrder": [{ "text": "Tu libro", "slot": "subject" }, { "text": "está", "slot": "verb1" }, { "text": "sobre la mesa", "slot": "object" }] },
+        { "slots": { "subject": { "zh": "我的笔", "py": "wǒ de bǐ" }, "verb1": { "zh": "在", "py": "zài" }, "object": { "zh": "书包里", "py": "shūbāo li" } }, "end": "。", "es": "Mi boli está en la mochila." },
+        { "slots": { "subject": { "zh": "小猫", "py": "xiǎo māo" }, "verb1": { "zh": "在", "py": "zài" }, "object": { "zh": "椅子下边", "py": "yǐzi xiàbian" } }, "end": "。", "es": "El gatito está debajo de la silla." },
+        { "slots": { "subject": { "zh": "食堂", "py": "shítáng" }, "verb1": { "zh": "在", "py": "zài" }, "object": { "zh": "图书馆后边", "py": "túshūguǎn hòubian" } }, "end": "。", "es": "El comedor está detrás de la biblioteca." },
+        { "slots": { "subject": { "zh": "大卫", "py": "Dàwèi" }, "place": { "zh": "在宿舍外边", "py": "zài sùshè wàibian" }, "verb1": { "zh": "等", "py": "děng" }, "object": { "zh": "我们", "py": "wǒmen" } }, "end": "。", "es": "David nos espera fuera de la residencia.", "esOrder": [{ "text": "David", "slot": "subject" }, { "text": "nos", "slot": "object" }, { "text": "espera", "slot": "verb1" }, { "text": "fuera de la residencia", "slot": "place" }] },
+        { "slots": { "subject": { "zh": "我们", "py": "wǒmen" }, "place": { "zh": "在图书馆前边", "py": "zài túshūguǎn qiánbian" }, "verb1": { "zh": "见", "py": "jiàn" } }, "end": "。", "es": "Quedamos delante de la biblioteca." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "你的书", "py": "nǐ de shū" }, "adverb": { "zh": "不", "py": "bú" }, "verb1": { "zh": "在", "py": "zài" }, "object": { "zh": "桌子上", "py": "zhuōzi shang" } }, "end": "。", "es": "Tu libro no está sobre la mesa." },
+        { "slots": { "subject": { "zh": "小李", "py": "Xiǎo Lǐ" }, "adverb": { "zh": "不", "py": "bú" }, "verb1": { "zh": "在", "py": "zài" }, "object": { "zh": "里边", "py": "lǐbian" } }, "end": "。", "es": "Xiao Li no está dentro." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "我的笔", "py": "wǒ de bǐ" }, "verb1": { "zh": "在", "py": "zài" }, "object": { "zh": "哪儿", "py": "nǎr" } }, "end": "？", "es": "¿Dónde está mi boli?" },
+        { "slots": { "subject": { "zh": "我的笔", "py": "wǒ de bǐ" }, "verb1": { "zh": "在", "py": "zài" }, "object": { "zh": "地上", "py": "dìshang" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿Mi boli está en el suelo?" }
+      ],
+      "mistakes": [
+        { "wrong": "书在上桌子。", "right": "书在桌子上。", "why": "El localizador va detrás del nombre, no delante como la preposición española." },
+        { "wrong": "书在桌子。", "right": "书在桌子上。", "why": "Un objeto no es un lugar: hace falta 上, 里, 下…" },
+        { "wrong": "我在中国里。", "right": "我在中国。", "why": "Con países y ciudades no se usa 里." },
+        { "wrong": "他在边外。", "right": "他在外边。", "why": "La forma larga es localizador + 边: 外边, 前边." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "¿Dónde está mi boli?",
+      "lines": [
+        { "speaker": "雨果", "zh": "小李，我的笔在哪儿？", "py": "Xiǎo Lǐ, wǒ de bǐ zài nǎr?", "es": "Xiao Li, ¿dónde está mi boli?" },
+        { "speaker": "小李", "zh": "在桌子上吗？", "py": "Zài zhuōzi shang ma?", "es": "¿Está en la mesa?" },
+        { "speaker": "雨果", "zh": "不在桌子上。书包里也没有。", "py": "Bú zài zhuōzi shang. Shūbāo li yě méiyǒu.", "es": "En la mesa no está. En la mochila tampoco." },
+        { "speaker": "小李", "zh": "你看看椅子下边。", "py": "Nǐ kànkan yǐzi xiàbian.", "es": "Mira debajo de la silla." },
+        { "speaker": "雨果", "zh": "啊，在这儿！在地上。谢谢！", "py": "A, zài zhèr! Zài dìshang. Xièxie!", "es": "¡Ah, aquí está! En el suelo. ¡Gracias!" },
+        { "speaker": "小李", "zh": "你去哪儿？大卫在外边等你。", "py": "Nǐ qù nǎr? Dàwèi zài wàibian děng nǐ.", "es": "¿Adónde vas? David te está esperando fuera." },
+        { "speaker": "雨果", "zh": "我们去图书馆。他在宿舍前边还是后边？", "py": "Wǒmen qù túshūguǎn. Tā zài sùshè qiánbian háishi hòubian?", "es": "Vamos a la biblioteca. ¿Está delante o detrás de la residencia?" },
+        { "speaker": "小李", "zh": "在前边，在楼下。快去吧！", "py": "Zài qiánbian, zài lóuxià. Kuài qù ba!", "es": "Delante, abajo. ¡Corre, ve!" }
+      ],
+      "notes": "En el habla rápida 上 y 里 tras un nombre suelen ir en tono neutro: 桌子上 zhuōzi shang, 书包里 shūbāo li. 快去吧 = «ve rápido»."
+    },
+    { "type": "exercises", "count": 15, "bank": ["g-zai", "u07"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "你的书" }, "verb1": { "zh": "在" }, "object": { "zh": "桌子上" } }, "end": "。", "es": "Tu libro está sobre la mesa." }, "distractors": ["上桌子"] },
+        { "sentence": { "slots": { "subject": { "zh": "食堂" }, "verb1": { "zh": "在" }, "object": { "zh": "图书馆后边" } }, "end": "。", "es": "El comedor está detrás de la biblioteca." }, "distractors": ["是"] },
+        { "sentence": { "slots": { "subject": { "zh": "大卫" }, "place": { "zh": "在宿舍外边" }, "verb1": { "zh": "等" }, "object": { "zh": "我们" } }, "end": "。", "es": "David nos espera fuera de la residencia." } },
+        { "sentence": { "slots": { "time0": { "zh": "星期六上午十点" }, "subject": { "zh": "我们" }, "adverb": { "zh": "都" }, "aux": { "zh": "要" }, "place": { "zh": "在图书馆前边" }, "verb1": { "zh": "等" }, "object": { "zh": "王老师" } }, "end": "。", "es": "El sábado a las diez de la mañana todos vamos a esperar a la profesora Wang delante de la biblioteca." }, "distractors": ["前边图书馆"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "你的书在桌子上。", "py": "Nǐ de shū zài zhuōzi shang.", "es": "Tu libro está sobre la mesa." },
+        { "zh": "我的笔在书包里。", "py": "Wǒ de bǐ zài shūbāo li.", "es": "Mi boli está en la mochila." },
+        { "zh": "大卫在外边等你。", "py": "Dàwèi zài wàibian děng nǐ.", "es": "David te espera fuera." },
+        { "zh": "食堂在图书馆后边。", "py": "Shítáng zài túshūguǎn hòubian.", "es": "El comedor está detrás de la biblioteca." }
+      ],
+      "respond": [
+        { "q": { "zh": "你的书包在哪儿？", "py": "Nǐ de shūbāo zài nǎr?", "es": "¿Dónde está tu mochila?" }, "model": { "zh": "在椅子上。", "py": "Zài yǐzi shang.", "es": "En la silla." } },
+        { "q": { "zh": "小李在里边吗？", "py": "Xiǎo Lǐ zài lǐbian ma?", "es": "¿Xiao Li está dentro?" }, "model": { "zh": "不在里边，他在外边。", "py": "Bú zài lǐbian, tā zài wàibian.", "es": "No está dentro, está fuera." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "La mesa de Hugo",
+      "text": "雨果的房间很小。桌子上有很多书，也有一个电脑。桌子下边是他的书包。书包里有笔和本子。椅子上有一件衣服，地上有两双鞋。房间外边是洗手间。小李说：“你的东西真多！”雨果说：“对，可是我知道东西都在哪儿！”",
+      "es": "La habitación de Hugo es muy pequeña. Sobre la mesa hay muchos libros y también un ordenador. Debajo de la mesa está su mochila. En la mochila hay bolis y cuadernos. En la silla hay una prenda de ropa y en el suelo, dos pares de zapatos. Fuera de la habitación está el aseo. Xiao Li dice: «¡Cuántas cosas tienes!». Hugo responde: «Sí, ¡pero sé dónde está cada una!».",
+      "questions": [
+        { "q": "¿Qué hay debajo de la mesa?", "options": ["La mochila", "Un ordenador", "Zapatos"], "answer": 0 },
+        { "q": "¿Dónde están los zapatos?", "options": ["En el suelo", "En la silla", "En la mochila"], "answer": 0 },
+        { "q": "¿Cómo se dice «dentro de la mochila»?", "options": ["书包里", "里书包", "在里书包"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

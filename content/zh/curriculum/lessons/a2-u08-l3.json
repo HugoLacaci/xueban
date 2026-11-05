@@ -1,0 +1,133 @@
+{
+  "id": "a2-u08-l3",
+  "title": "Entrar, salir, cruzar: 走进, 走过, 跑下",
+  "zh": "我们走进公园",
+  "goal": "Contar movimientos con verbo + 上 / 下 / 进 / 出 / 过 / 回 + lugar (走进公园, 走过广场, 跑下楼) en un paseo por la ciudad.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "走进", "pinyin": "zǒujìn", "es": "entrar (andando) en", "note": "走进公园 = entrar en el parque." },
+    { "hanzi": "走过", "pinyin": "zǒuguò", "es": "pasar (andando) por, cruzar", "note": "走过广场 = cruzar la plaza. No confundir con 过 de experiencia." },
+    { "hanzi": "进入", "pinyin": "jìnrù", "es": "entrar en, acceder a", "note": "Más formal que 进: carteles, normas." },
+    { "hanzi": "里头", "pinyin": "lǐtou", "es": "dentro (coloquial)", "note": "= 里面, más hablado." },
+    { "hanzi": "公园", "pinyin": "gōngyuán", "es": "parque" },
+    { "hanzi": "花园", "pinyin": "huāyuán", "es": "jardín" },
+    { "hanzi": "动物", "pinyin": "dòngwù", "es": "animal" },
+    { "hanzi": "动物园", "pinyin": "dòngwùyuán", "es": "zoo, parque zoológico" },
+    { "hanzi": "通", "pinyin": "tōng", "es": "llevar a, comunicar con (un camino)", "note": "这条路通动物园 = esta calle lleva al zoo." },
+    { "hanzi": "面前", "pinyin": "miànqián", "es": "delante de (alguien), ante" },
+    { "hanzi": "身边", "pinyin": "shēnbiān", "es": "al lado de (alguien), junto a uno" },
+    { "hanzi": "平", "pinyin": "píng", "es": "llano, plano", "note": "这条路很平 = este camino es llano." }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "我们走进公园了。", "py": "Wǒmen zǒujìn gōngyuán le.", "es": "Hemos entrado en el parque." },
+        { "zh": "这条路通动物园吗？", "py": "Zhè tiáo lù tōng dòngwùyuán ma?", "es": "¿Esta calle lleva al zoo?" },
+        { "zh": "一个小男孩儿跑过我身边。", "py": "Yí ge xiǎo nánháir pǎoguò wǒ shēnbiān.", "es": "Un niño ha pasado corriendo a mi lado." }
+      ]
+    },
+    { "type": "vocab", "title": "Un paseo por el parque", "words": ["走进", "走过", "进入", "里头", "公园", "花园", "动物", "动物园", "通", "面前", "身边", "平"] },
+    {
+      "type": "phonetics-drill",
+      "title": "yuán, la ü escondida: 公园, 花园, 动物园",
+      "markdown": "**园 yuán** se escribe con *u*, pero es una **ü** escondida: después de *y* (y de j, q, x) la ü pierde los puntos. Se dice con los **labios redondeados** al principio, y la *a* suena casi como una «e»: algo como *[yüén]*.\n\n- 公园 *gōngyuán*, 花园 *huāyuán*, 动物园 *dòngwùyuán*.\n- Compara con **言 yán** (sin redondear los labios).\n\nY dos detalles de hoy:\n\n- **里头 lǐtou**: 头 en tono neutro, muy corto.\n- **走进 zǒujìn / 走过 zǒuguò**: 走 en tercer tono delante de un cuarto se queda en **medio tercer tono** (solo baja), y el cuarto tono cae encima.",
+      "items": [
+        { "audio": "公园", "options": ["gōngyuán", "gōngyán", "gōngwán"], "answer": 0, "explain": "yuan = ü + an: labios redondos al empezar." },
+        { "audio": "动物园", "options": ["dòngwùyuán", "dōngwūyuán", "dòngwùyán"], "answer": 0, "explain": "Dos cuartos tonos y un segundo: cae, cae, sube." },
+        { "audio": "里头", "options": ["lǐtou", "lǐtóu", "lìtou"], "answer": 0, "explain": "头 pierde el tono en 里头." },
+        { "audio": "走进", "options": ["zǒujìn", "zǒujīn", "zóujìn"], "answer": 0, "explain": "走 en medio tercer tono + 进 en cuarto." },
+        { "audio": "花园", "options": ["huāyuán", "huàyuán", "huāyuǎn"], "answer": 0, "explain": "huā (1.º, alto) + yuán (2.º, sube); 远 yuǎn es «lejos»." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["园", "通"],
+      "mnemonics": {
+        "园": "囗 (un recinto cerrado, una tapia) + 元 (que da el sonido yuán): un terreno con tapia = jardín, parque.",
+        "通": "辶 (caminar) + 甬 (pasillo, corredor): un pasillo por el que se puede caminar de un lado a otro → comunicar, llevar a."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "Verbo + 上 / 下 / 进 / 出 / 过 / 回 + lugar",
+      "markdown": "En la lección anterior viste 来 / 去 (hacia mí, lejos de mí). Hoy ponemos detrás del verbo **la dirección física**:\n\n| | | ejemplo |\n|---|---|---|\n| 上 | arriba | 走上楼 subir (andando) |\n| 下 | abajo | 跑下楼 bajar corriendo |\n| 进 | dentro | 走进公园 entrar en el parque |\n| 出 | fuera | 走出教室 salir del aula |\n| 过 | pasar, cruzar | 走过广场 cruzar la plaza |\n| 回 | volver | 走回宿舍 volver andando a la residencia |\n\nEl **verbo** dice *cómo* te mueves (走 andando, 跑 corriendo, 开 en coche) y la segunda sílaba, *hacia dónde*. El lugar va **justo detrás**: 走进**公园**.\n\n**Convención del esqueleto**: verbo + dirección en **Verbo 1** (走进) y el lugar en **Objeto** (公园).\n\nOjo con 走过: 我们走过广场 = «cruzamos la plaza»; 我走过这条路 puede significar también «he recorrido esta calle (alguna vez)» con el 过 de experiencia. El contexto lo aclara.",
+      "focus": ["verb1", "object"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "我们", "py": "wǒmen" }, "verb1": { "zh": "走进", "py": "zǒujìn" }, "object": { "zh": "公园", "py": "gōngyuán" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Hemos entrado en el parque." },
+        { "slots": { "subject": { "zh": "他", "py": "tā" }, "verb1": { "zh": "跑下", "py": "pǎoxià" }, "object": { "zh": "楼", "py": "lóu" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Ha bajado corriendo las escaleras.", "esOrder": [{ "text": "(Él)", "slot": "subject" }, { "text": "ha bajado corriendo", "slot": "verb1" }, { "text": "las escaleras", "slot": "object" }] },
+        { "slots": { "subject": { "zh": "大卫", "py": "Dàwèi" }, "verb1": { "zh": "走过", "py": "zǒuguò" }, "object": { "zh": "广场", "py": "guǎngchǎng" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "David ha cruzado la plaza." },
+        { "slots": { "subject": { "zh": "小狗", "py": "xiǎogǒu" }, "verb1": { "zh": "跑出", "py": "pǎochū" }, "object": { "zh": "房间", "py": "fángjiān" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "El perrito ha salido corriendo de la habitación." },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "time": { "zh": "每天下午", "py": "měi tiān xiàwǔ" }, "verb1": { "zh": "走过", "py": "zǒuguò" }, "object": { "zh": "这个花园", "py": "zhège huāyuán" } }, "end": "。", "es": "Todas las tardes paso por este jardín." },
+        { "slots": { "subject": { "zh": "这条路", "py": "zhè tiáo lù" }, "verb1": { "zh": "通", "py": "tōng" }, "object": { "zh": "动物园", "py": "dòngwùyuán" } }, "end": "。", "es": "Esta calle lleva al zoo." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "汽车", "py": "qìchē" }, "adverb": { "zh": "不", "py": "bù" }, "aux": { "zh": "能", "py": "néng" }, "verb1": { "zh": "进入", "py": "jìnrù" }, "object": { "zh": "公园", "py": "gōngyuán" } }, "end": "。", "es": "Los coches no pueden entrar en el parque." },
+        { "slots": { "subject": { "zh": "他", "py": "tā" }, "adverb": { "zh": "没", "py": "méi" }, "verb1": { "zh": "走进", "py": "zǒujìn" }, "object": { "zh": "教室", "py": "jiàoshì" } }, "end": "。", "es": "No entró en el aula." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "这条路", "py": "zhè tiáo lù" }, "verb1": { "zh": "通", "py": "tōng" }, "object": { "zh": "动物园", "py": "dòngwùyuán" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿Esta calle lleva al zoo?" },
+        { "slots": { "subject": { "zh": "他", "py": "tā" }, "verb1": { "zh": "跑回", "py": "pǎohuí" }, "object": { "zh": "宿舍", "py": "sùshè" }, "particle": { "zh": "了吗", "py": "le ma" } }, "end": "？", "es": "¿Ha vuelto corriendo a la residencia?" }
+      ],
+      "mistakes": [
+        { "wrong": "我走公园进。", "right": "我走进公园。", "why": "La dirección (进) va pegada al verbo, y el lugar detrás de los dos." },
+        { "wrong": "他跑楼下了。", "right": "他跑下楼了。", "why": "楼下 es «el piso de abajo» (un lugar); para «bajar corriendo» la dirección va con el verbo: 跑下 + 楼." },
+        { "wrong": "汽车不能进去公园。", "right": "汽车不能进入公园。 / 汽车不能进公园。", "why": "Con 去 el lugar va en medio (进公园去); si el lugar va detrás, usa 进 o 进入." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Domingo en el zoo",
+      "lines": [
+        { "speaker": "安娜", "zh": "雨果，这条路通动物园吗？", "py": "Yǔguǒ, zhè tiáo lù tōng dòngwùyuán ma?", "es": "Hugo, ¿esta calle lleva al zoo?" },
+        { "speaker": "雨果", "zh": "通。我们走过这个公园，动物园就在公园东边。", "py": "Tōng. Wǒmen zǒuguò zhège gōngyuán, dòngwùyuán jiù zài gōngyuán dōngbian.", "es": "Sí. Cruzamos este parque y el zoo está justo al este." },
+        { "speaker": "安娜", "zh": "公园里头有花园吗？", "py": "Gōngyuán lǐtou yǒu huāyuán ma?", "es": "¿Hay algún jardín dentro del parque?" },
+        { "speaker": "雨果", "zh": "有，很漂亮。你看，我们走进公园了。这条路很平，很好走。", "py": "Yǒu, hěn piàoliang. Nǐ kàn, wǒmen zǒujìn gōngyuán le. Zhè tiáo lù hěn píng, hěn hǎo zǒu.", "es": "Sí, y muy bonito. Mira, ya hemos entrado en el parque. El camino es llano y se anda muy bien." },
+        { "speaker": "安娜", "zh": "小朋友真多！一个小男孩儿跑过我身边。", "py": "Xiǎopéngyǒu zhēn duō! Yí ge xiǎo nánháir pǎoguò wǒ shēnbiān.", "es": "¡Cuántos niños! Uno acaba de pasar corriendo a mi lado." },
+        { "speaker": "雨果", "zh": "星期天大家都来公园玩儿。", "py": "Xīngqītiān dàjiā dōu lái gōngyuán wánr.", "es": "Los domingos todo el mundo viene a pasarlo bien al parque." },
+        { "speaker": "安娜", "zh": "那是动物园的门吗？人好多啊！", "py": "Nà shì dòngwùyuán de mén ma? Rén hǎo duō a!", "es": "¿Esa es la puerta del zoo? ¡Cuánta gente!" },
+        { "speaker": "雨果", "zh": "对。进入动物园要买票，我在网上买了。", "py": "Duì. Jìnrù dòngwùyuán yào mǎi piào, wǒ zài wǎngshang mǎi le.", "es": "Sí. Para entrar hay que comprar entrada; yo ya la he comprado por internet." },
+        { "speaker": "安娜", "zh": "太好了！我们快进去吧。", "py": "Tài hǎo le! Wǒmen kuài jìnqu ba.", "es": "¡Genial! Entremos ya." },
+        { "speaker": "雨果", "zh": "你看，你面前就是动物园的大门！", "py": "Nǐ kàn, nǐ miànqián jiù shì dòngwùyuán de dàmén!", "es": "¡Mira, tienes la entrada del zoo delante de ti!" }
+      ],
+      "notes": "Los parques chinos (公园) suelen tener tapia, puertas y a veces entrada de pago; los fines de semana se llenan de familias, gente bailando y jubilados haciendo taichí. 进去 aquí: Ana y Hugo están fuera y van hacia dentro, lejos de donde están."
+    },
+    { "type": "exercises", "count": 16, "bank": ["g-lai-qu", "g-complements", "u07"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "我们" }, "verb1": { "zh": "走进" }, "object": { "zh": "公园" }, "particle": { "zh": "了" } }, "end": "。", "es": "Hemos entrado en el parque." }, "distractors": ["在"] },
+        { "sentence": { "slots": { "subject": { "zh": "他" }, "verb1": { "zh": "跑下" }, "object": { "zh": "楼" }, "particle": { "zh": "了" } }, "end": "。", "es": "Ha bajado corriendo." }, "distractors": ["楼下"] },
+        { "sentence": { "slots": { "subject": { "zh": "这条路" }, "verb1": { "zh": "通" }, "object": { "zh": "动物园" }, "particle": { "zh": "吗" } }, "end": "？", "es": "¿Esta calle lleva al zoo?" } },
+        { "sentence": { "slots": { "time0": { "zh": "星期天上午" }, "subject": { "zh": "雨果" }, "adverb": { "zh": "先" }, "with": { "zh": "跟安娜一起" }, "verb1": { "zh": "走过" }, "object": { "zh": "学校旁边的公园" } }, "end": "。", "es": "El domingo por la mañana Hugo primero cruza con Ana el parque que hay junto a la universidad." } }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "我们走进公园了。", "py": "Wǒmen zǒujìn gōngyuán le.", "es": "Hemos entrado en el parque." },
+        { "zh": "这条路通动物园吗？", "py": "Zhè tiáo lù tōng dòngwùyuán ma?", "es": "¿Esta calle lleva al zoo?" },
+        { "zh": "我每天下午走过这个花园。", "py": "Wǒ měi tiān xiàwǔ zǒuguò zhège huāyuán.", "es": "Todas las tardes paso por este jardín." }
+      ],
+      "respond": [
+        { "q": { "zh": "公园里头有什么？", "py": "Gōngyuán lǐtou yǒu shénme?", "es": "¿Qué hay dentro del parque?" }, "model": { "zh": "有一个很大的花园，还有很多树。", "py": "Yǒu yí ge hěn dà de huāyuán, hái yǒu hěn duō shù.", "es": "Hay un jardín muy grande y muchos árboles." } },
+        { "q": { "zh": "你喜欢去动物园吗？", "py": "Nǐ xǐhuan qù dòngwùyuán ma?", "es": "¿Te gusta ir al zoo?" }, "model": { "zh": "喜欢，我喜欢看动物。", "py": "Xǐhuan, wǒ xǐhuan kàn dòngwù.", "es": "Sí, me gusta ver animales." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Un domingo en el zoo",
+      "text": "星期天天气很好，雨果和安娜去动物园玩儿。他们先走过学校旁边的广场，然后走进一个大公园。公园里头有一个花园，花很漂亮，路也很平。很多小朋友在玩儿，一个小男孩儿跑过安娜身边，还对她笑了笑。走出公园，他们面前就是动物园的大门。动物园里的动物很多，安娜最喜欢看鸟。下午五点，他们坐地铁回学校了。",
+      "es": "El domingo hacía muy buen tiempo y Hugo y Ana fueron a pasar el día al zoo. Primero cruzaron la plaza que hay junto a la universidad y luego entraron en un parque grande. Dentro del parque hay un jardín con flores muy bonitas, y el camino es llano. Había muchos niños jugando; uno pasó corriendo al lado de Ana y hasta le sonrió. Al salir del parque, tenían delante la entrada del zoo. En el zoo hay muchos animales; a Ana lo que más le gusta es ver los pájaros. A las cinco de la tarde volvieron a la universidad en metro.",
+      "questions": [
+        { "q": "¿Qué cruzan primero?", "options": ["La plaza junto a la universidad", "El zoo", "Un jardín"], "answer": 0 },
+        { "q": "¿Cómo es el camino del parque?", "options": ["Llano", "Muy largo", "Sucio"], "answer": 0 },
+        { "q": "¿Qué encuentran al salir del parque?", "options": ["La entrada del zoo", "Una estación de metro", "Un supermercado"], "answer": 0 },
+        { "q": "¿Qué le gusta más ver a Ana?", "options": ["鸟", "狗", "猫"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

@@ -1,0 +1,145 @@
+{
+  "unitId": "a2-u08",
+  "scenarios": [
+    {
+      "id": "a2-u08-ask-way",
+      "title": "Preguntar el camino",
+      "zh": "问路",
+      "level": 2,
+      "setting": "Hugo ha salido del metro en una zona de Shanghái que no conoce y busca el banco donde ha quedado con Xiao Li. Tú (la app) eres una señora del barrio que pasa por allí.",
+      "role": "señora del barrio",
+      "roleZh": "阿姨",
+      "voice": "f",
+      "goals": ["Preguntar cómo se va", "Entender una indicación con 往 + dirección", "Preguntar si está lejos o en qué planta está", "Dar las gracias y despedirte"],
+      "vocab": ["请问", "怎么走", "往前走", "往左", "红绿灯", "经过", "银行", "层", "上去"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "你好！你在找什么地方？", "py": "Nǐ hǎo! Nǐ zài zhǎo shénme dìfang?", "es": "¡Hola! ¿Buscas algún sitio?" },
+          "user": [
+            { "zh": "阿姨，您好！请问，银行怎么走？", "py": "Āyí, nín hǎo! Qǐngwèn, yínháng zěnme zǒu?", "es": "¡Hola, señora! Perdone, ¿cómo se va al banco?", "keywords": ["银行", "怎么走"], "next": "n2", "goal": 0 },
+            { "zh": "请问，这儿离广场远吗？", "py": "Qǐngwèn, zhèr lí guǎngchǎng yuǎn ma?", "es": "Perdone, ¿la plaza está lejos de aquí?", "keywords": ["广场", "远"], "next": "n2b", "goal": 0 }
+          ],
+          "hint": "Para preguntar el camino: 请问，……怎么走？ o ……离这儿远吗？"
+        },
+        "n2": {
+          "npc": { "zh": "银行？你往前走，经过两个红绿灯，然后往右走，银行就在广场北边。", "py": "Yínháng? Nǐ wǎng qián zǒu, jīngguò liǎng ge hónglǜdēng, ránhòu wǎng yòu zǒu, yínháng jiù zài guǎngchǎng běibian.", "es": "¿El banco? Sigue adelante, pasa dos semáforos y luego gira a la derecha: el banco está en el lado norte de la plaza." },
+          "user": [
+            { "zh": "往前走，经过两个红绿灯，往右走。对吗？", "py": "Wǎng qián zǒu, jīngguò liǎng ge hónglǜdēng, wǎng yòu zǒu. Duì ma?", "es": "Recto, dos semáforos y a la derecha. ¿Es así?", "keywords": ["往前", "往右"], "next": "n3", "goal": 1 },
+            { "zh": "对不起，我没听懂。您能再说一遍吗？", "py": "Duìbuqǐ, wǒ méi tīngdǒng. Nín néng zài shuō yí biàn ma?", "es": "Perdone, no lo he entendido. ¿Me lo puede repetir?", "keywords": ["再说一遍"], "next": "n2c", "goal": 1 }
+          ],
+          "hint": "Repite la indicación para confirmar (往前走…往右走，对吗？) o pide que te la repitan (再说一遍)."
+        },
+        "n2b": {
+          "npc": { "zh": "不远，走路五分钟。你要去广场的什么地方？", "py": "Bù yuǎn, zǒulù wǔ fēnzhōng. Nǐ yào qù guǎngchǎng de shénme dìfang?", "es": "No, cinco minutos andando. ¿A qué sitio de la plaza vas?" },
+          "user": [
+            { "zh": "我去广场上的银行。", "py": "Wǒ qù guǎngchǎng shang de yínháng.", "es": "Voy al banco de la plaza.", "keywords": ["银行"], "next": "n2", "goal": 0 }
+          ],
+          "hint": "Di adónde vas exactamente: 我去……的银行."
+        },
+        "n2c": {
+          "npc": { "zh": "好，我慢慢说：你一直往前走……到了第二个红绿灯，往右走。", "py": "Hǎo, wǒ mànmàn shuō: nǐ yìzhí wǎng qián zǒu…… dào le dì-èr ge hónglǜdēng, wǎng yòu zǒu.", "es": "Vale, despacio: sigue todo recto… y al llegar al segundo semáforo, a la derecha." },
+          "user": [
+            { "zh": "我明白了，一直往前走，然后往右走。", "py": "Wǒ míngbai le, yìzhí wǎng qián zǒu, ránhòu wǎng yòu zǒu.", "es": "Entendido: todo recto y luego a la derecha.", "keywords": ["往前", "往右"], "next": "n3", "goal": 1 }
+          ],
+          "hint": "Confirma con 往前走 y 往右走."
+        },
+        "n3": {
+          "npc": { "zh": "对！广场北边有一座大楼，银行在楼里面。", "py": "Duì! Guǎngchǎng běibian yǒu yí zuò dà lóu, yínháng zài lóu lǐmian.", "es": "¡Eso es! En el lado norte de la plaza hay un edificio grande y el banco está dentro." },
+          "user": [
+            { "zh": "银行在几层？", "py": "Yínháng zài jǐ céng?", "es": "¿En qué planta está el banco?", "keywords": ["几层"], "next": "n4", "goal": 2 },
+            { "zh": "远不远？我要走多长时间？", "py": "Yuǎn bu yuǎn? Wǒ yào zǒu duō cháng shíjiān?", "es": "¿Está lejos? ¿Cuánto tengo que andar?", "keywords": ["远", "多长时间"], "next": "n4b", "goal": 2 }
+          ],
+          "hint": "Pregunta la planta (几层) o la distancia (远不远, 多长时间)."
+        },
+        "n4": {
+          "npc": { "zh": "在三层。你进大门，坐电梯上去就行。", "py": "Zài sān céng. Nǐ jìn dàmén, zuò diàntī shàngqu jiù xíng.", "es": "En la tercera. Entras por la puerta principal y subes en ascensor, y listo." },
+          "user": [
+            { "zh": "太好了，谢谢阿姨！", "py": "Tài hǎo le, xièxie āyí!", "es": "¡Genial, muchas gracias, señora!", "keywords": ["谢谢"], "next": "n5", "goal": 3 },
+            { "zh": "我明白了。谢谢您，再见！", "py": "Wǒ míngbai le. Xièxie nín, zàijiàn!", "es": "Entendido. ¡Gracias, adiós!", "keywords": ["谢谢", "再见"], "next": "n5", "goal": 3 }
+          ],
+          "hint": "Da las gracias: 谢谢阿姨 / 谢谢您."
+        },
+        "n4b": {
+          "npc": { "zh": "不远，走路十分钟。银行在三层，你坐电梯上去。", "py": "Bù yuǎn, zǒulù shí fēnzhōng. Yínháng zài sān céng, nǐ zuò diàntī shàngqu.", "es": "No, diez minutos andando. El banco está en la tercera: sube en ascensor." },
+          "user": [
+            { "zh": "好的，谢谢您！", "py": "Hǎo de, xièxie nín!", "es": "¡Vale, gracias!", "keywords": ["谢谢"], "next": "n5", "goal": 3 }
+          ],
+          "hint": "Despídete dando las gracias."
+        },
+        "n5": {
+          "npc": { "zh": "不客气。过马路的时候小心车！", "py": "Bú kèqi. Guò mǎlù de shíhou xiǎoxīn chē!", "es": "De nada. ¡Cuidado con los coches al cruzar!" },
+          "end": true,
+          "feedback": "Has preguntado el camino con 请问……怎么走 y has confirmado la indicación repitiendo 往前走 / 往右走. Recuerda: la dirección va delante del verbo y, para subir, 上去 (te alejas de quien habla)."
+        }
+      }
+    },
+    {
+      "id": "a2-u08-taxi",
+      "title": "En el taxi",
+      "zh": "坐出租车",
+      "level": 2,
+      "setting": "Hugo coge un taxi para ir al mercado del centro y comprar comida para la cena de cumpleaños de Ana. Tú (la app) eres el taxista, muy hablador.",
+      "role": "taxista",
+      "roleZh": "出租车司机",
+      "voice": "m",
+      "goals": ["Decir adónde vas", "Dar una indicación al taxista (往左 / 往前 / 停)", "Explicar para quién haces la compra (为 / 给 + persona)", "Pagar y despedirte"],
+      "vocab": ["市中心", "菜市场", "往前", "往左", "停", "路边", "为", "给", "扫码"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "你好！去哪儿？", "py": "Nǐ hǎo! Qù nǎr?", "es": "¡Hola! ¿Adónde vamos?" },
+          "user": [
+            { "zh": "你好，我去市中心的菜市场。", "py": "Nǐ hǎo, wǒ qù shì zhōngxīn de càishìchǎng.", "es": "Hola, voy al mercado del centro.", "keywords": ["市中心", "菜市场"], "next": "n2", "goal": 0 },
+            { "zh": "你好，去人民广场，谢谢。", "py": "Nǐ hǎo, qù Rénmín Guǎngchǎng, xièxie.", "es": "Hola, a la plaza del Pueblo, gracias.", "keywords": ["广场"], "next": "n2b", "goal": 0 }
+          ],
+          "hint": "Di el destino: 我去…… o simplemente 去……，谢谢."
+        },
+        "n2": {
+          "npc": { "zh": "好。今天公路上车很多，我们走小路吧。你去菜市场买什么？", "py": "Hǎo. Jīntiān gōnglù shang chē hěn duō, wǒmen zǒu xiǎo lù ba. Nǐ qù càishìchǎng mǎi shénme?", "es": "Vale. Hoy la carretera está llena de coches: vamos por calles pequeñas. ¿Qué vas a comprar al mercado?" },
+          "user": [
+            { "zh": "我为朋友买菜，今天是她的生日。", "py": "Wǒ wèi péngyou mǎi cài, jīntiān shì tā de shēngrì.", "es": "Hago la compra para una amiga: hoy es su cumpleaños.", "keywords": ["为", "生日"], "next": "n3", "goal": 2 },
+            { "zh": "我想给朋友们做西班牙菜。", "py": "Wǒ xiǎng gěi péngyoumen zuò Xībānyá cài.", "es": "Quiero hacerles comida española a mis amigos.", "keywords": ["给", "做"], "next": "n3", "goal": 2 }
+          ],
+          "hint": "Di para quién compras o cocinas: 为朋友买菜 / 给朋友做菜 (la persona, delante del verbo)."
+        },
+        "n2b": {
+          "npc": { "zh": "人民广场很大。你要去广场的哪边？", "py": "Rénmín Guǎngchǎng hěn dà. Nǐ yào qù guǎngchǎng de nǎbian?", "es": "La plaza del Pueblo es muy grande. ¿A qué lado vas?" },
+          "user": [
+            { "zh": "我去广场东边的菜市场。", "py": "Wǒ qù guǎngchǎng dōngbian de càishìchǎng.", "es": "Al mercado del lado este de la plaza.", "keywords": ["东边", "菜市场"], "next": "n2", "goal": 0 }
+          ],
+          "hint": "Precisa con un punto cardinal: 广场东边 / 北边……"
+        },
+        "n3": {
+          "npc": { "zh": "你对朋友真好！我们快到了。你看，前面是红绿灯，往哪边走？", "py": "Nǐ duì péngyou zhēn hǎo! Wǒmen kuài dào le. Nǐ kàn, qiánmian shì hónglǜdēng, wǎng nǎbian zǒu?", "es": "¡Qué bien te portas con tus amigos! Ya casi estamos. Mira, ahí está el semáforo: ¿hacia dónde voy?" },
+          "user": [
+            { "zh": "到了红绿灯往左走，然后一直往前。", "py": "Dào le hónglǜdēng wǎng zuǒ zǒu, ránhòu yìzhí wǎng qián.", "es": "En el semáforo a la izquierda y luego todo recto.", "keywords": ["往左", "往前"], "next": "n4", "goal": 1 },
+            { "zh": "往右走，菜市场在那座楼后面。", "py": "Wǎng yòu zǒu, càishìchǎng zài nà zuò lóu hòumian.", "es": "A la derecha: el mercado está detrás de aquel edificio.", "keywords": ["往右", "后面"], "next": "n4", "goal": 1 }
+          ],
+          "hint": "Da la indicación con 往 + dirección delante del verbo: 往左走, 一直往前."
+        },
+        "n4": {
+          "npc": { "zh": "好的。到了！我在哪儿停？", "py": "Hǎo de. Dào le! Wǒ zài nǎr tíng?", "es": "Muy bien. ¡Ya estamos! ¿Dónde paro?" },
+          "user": [
+            { "zh": "请在路边停一下，在大门前面。", "py": "Qǐng zài lùbiān tíng yíxià, zài dàmén qiánmian.", "es": "Pare junto a la acera, por favor, delante de la entrada.", "keywords": ["路边", "停"], "next": "n5", "goal": 1 },
+            { "zh": "停在这儿就行。多少钱？", "py": "Tíng zài zhèr jiù xíng. Duōshao qián?", "es": "Aquí mismo está bien. ¿Cuánto es?", "keywords": ["停", "多少钱"], "next": "n5", "goal": 3 }
+          ],
+          "hint": "Pide que pare: 在路边停一下 / 停在这儿就行."
+        },
+        "n5": {
+          "npc": { "zh": "一共三十五块。你扫码吧。", "py": "Yígòng sānshíwǔ kuài. Nǐ sǎo mǎ ba.", "es": "Son treinta y cinco yuanes en total. Escanea el código." },
+          "user": [
+            { "zh": "好的，我扫了。谢谢您，再见！", "py": "Hǎo de, wǒ sǎo le. Xièxie nín, zàijiàn!", "es": "Vale, ya está. ¡Gracias, adiós!", "keywords": ["扫", "谢谢"], "next": "n6", "goal": 3 },
+            { "zh": "我用微信给您钱。谢谢！", "py": "Wǒ yòng Wēixìn gěi nín qián. Xièxie!", "es": "Le pago por WeChat. ¡Gracias!", "keywords": ["微信", "谢谢"], "next": "n6", "goal": 3 }
+          ],
+          "hint": "Paga escaneando (扫码) y despídete."
+        },
+        "n6": {
+          "npc": { "zh": "不客气！下车的时候注意后面的自行车。你朋友生日快乐！", "py": "Bú kèqi! Xià chē de shíhou zhùyì hòumian de zìxíngchē. Nǐ péngyou shēngrì kuàilè!", "es": "¡De nada! Al bajar, cuidado con las bicis que vienen por detrás. ¡Feliz cumpleaños a tu amiga!" },
+          "end": true,
+          "feedback": "Has dado indicaciones con 往 + dirección (往左走, 一直往前) y has dicho para quién hacías la compra con 为 / 给 + persona, siempre delante del verbo. En el taxi, 停在这儿就行 y 扫码 te sacan de cualquier apuro."
+        }
+      }
+    }
+  ]
+}

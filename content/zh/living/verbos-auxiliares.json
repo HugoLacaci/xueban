@@ -1,0 +1,483 @@
+{
+  "id": "verbos-auxiliares",
+  "title": "Verbos auxiliares",
+  "zh": "能愿动词",
+  "order": 9,
+  "icon": "Zap",
+  "summary": "Querer, saber, poder, deber, tener previsto…: los auxiliares que van justo delante del verbo, cómo se niegan (que no siempre es con 不 + el mismo auxiliar) y cuál elegir cuando en español todo es «poder» o «querer».",
+  "kind": "topic",
+  "reviewed": false,
+  "sections": [
+    {
+      "id": "xiang-apetecer",
+      "title": "想 + verbo: «me apetece», «me gustaría»",
+      "unlockedBy": "a1-u09-l1",
+      "markdown": "### Un hueco nuevo, justo delante del verbo\n\nEl **auxiliar** es una palabra que se pone **delante del verbo principal** y le añade una actitud: ganas, capacidad, permiso, obligación… El primero es **想 xiǎng**: lo que **te apetece hacer**.\n\n**Sujeto + 想 + verbo + objeto** → 我**想**吃米饭 (me apetece comer arroz).\n\n- **Negativa**: 不 va **delante de 想**, nunca entre 想 y el verbo: 我**不想**吃肉.\n- **Pregunta**: 吗 al final, un interrogativo en el hueco de lo que preguntas (你想喝**什么**？) o la forma A不A: **想不想**.\n- **很想** = tener muchas ganas: 我很想喝茶.\n\n> 💡 **Truco**: 想 lleva el radical del corazón (心) abajo: es el querer **del corazón**, el deseo suave, que puede no cumplirse.\n\n> ⚠️ **Ojo**: **想 + nombre** (sin verbo) significa *echar de menos* o *pensar en*: 我想妈妈 = echo de menos a mi madre. Para comida y bebida pon siempre el verbo: 我想**吃**米饭, 我想**喝**茶.\n\n> ❌ **Error típico**: 我想想去 (por «quiero ir»). 想想 es «pensarlo un poco». Un solo 想: 我想去.",
+      "skeleton": {
+        "focus": ["aux"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "aux": { "zh": "想", "py": "xiǎng" },
+              "verb1": { "zh": "吃", "py": "chī" },
+              "object": { "zh": "米饭", "py": "mǐfàn" }
+            },
+            "end": "。",
+            "es": "Me apetece comer arroz.",
+            "esOrder": [
+              { "text": "Me apetece", "slot": "aux" },
+              { "text": "comer", "slot": "verb1" },
+              { "text": "arroz", "slot": "object" }
+            ]
+          },
+          {
+            "slots": {
+              "subject": { "zh": "安娜", "py": "Ānnà" },
+              "adverb": { "zh": "不", "py": "bù" },
+              "aux": { "zh": "想", "py": "xiǎng" },
+              "verb1": { "zh": "吃", "py": "chī" },
+              "object": { "zh": "肉", "py": "ròu" }
+            },
+            "end": "。",
+            "es": "A Ana no le apetece comer carne."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "我们", "py": "wǒmen" },
+              "time": { "zh": "晚上", "py": "wǎnshang" },
+              "aux": { "zh": "想", "py": "xiǎng" },
+              "verb1": { "zh": "吃", "py": "chī" },
+              "object": { "zh": "面条儿", "py": "miàntiáor" }
+            },
+            "end": "。",
+            "es": "Esta noche queremos comer fideos."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "我饿了，我想吃饭。", "py": "Wǒ è le, wǒ xiǎng chī fàn.", "es": "Tengo hambre: me apetece comer." },
+        { "zh": "你想喝什么？", "py": "Nǐ xiǎng hē shénme?", "es": "¿Qué te apetece beber?" },
+        { "zh": "我很想喝茶。", "py": "Wǒ hěn xiǎng hē chá.", "es": "Tengo muchas ganas de tomar un té." },
+        { "zh": "他不想吃鸡蛋。", "py": "Tā bù xiǎng chī jīdàn.", "es": "No le apetece comer huevo." },
+        { "zh": "我想妈妈。", "py": "Wǒ xiǎng māma.", "es": "Echo de menos a mi madre.", "note": "想 + persona = echar de menos." }
+      ],
+      "sourceNotes": ["zh-grammar-xiang-yao"]
+    },
+    {
+      "id": "yao-pedir",
+      "title": "要: pedir algo (+ nombre) y querer en serio (+ verbo)",
+      "unlockedBy": "a1-u09-l2",
+      "markdown": "### Dos 要 en uno\n\n| | Hueco | Ejemplo |\n|---|---|---|\n| **要 + nombre** = «quiero, ponme» | Verbo 1 | 我**要**一杯茶 |\n| **要 + verbo** = «quiero, voy a» (decidido) | Auxiliar | 我**要**喝水 |\n\n### 想 frente a 要\n\n| | 想 xiǎng | 要 yào |\n|---|---|---|\n| Grado | deseo suave, ganas | decisión, pedido, «voy a» |\n| + verbo | 我想去 (me gustaría ir) | 我要去 (voy a ir) |\n| + nombre | 我想妈妈 (la echo de menos) | 我要茶 (quiero té) |\n\n> 💡 **Truco**: 想 es el querer del corazón; 要, el de la cartera. En el restaurante y en la tienda, **要 + número + clasificador + cosa**: 我要一杯茶. Para sonar menos brusco, junta los dos: **我想要**一杯茶.\n\n> ❌ **Error típico**: 我想一杯咖啡 → 我**要**一杯咖啡 / 我想**喝**一杯咖啡.\n\n> ❌ **Error típico**: 我要想去 → 我想去. Un solo auxiliar por verbo (salvo combinaciones fijas que verás más adelante).\n\n> ⚠️ **Ojo**: 我要你 no es «te quiero» (eso es 我爱你).",
+      "skeleton": {
+        "focus": ["aux", "verb1"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "verb1": { "zh": "要", "py": "yào" },
+              "object": { "zh": "一杯茶", "py": "yì bēi chá" }
+            },
+            "end": "。",
+            "es": "Quiero un té."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "安娜", "py": "Ānnà" },
+              "aux": { "zh": "要", "py": "yào" },
+              "verb1": { "zh": "喝", "py": "hē" },
+              "object": { "zh": "一瓶水", "py": "yì píng shuǐ" }
+            },
+            "end": "。",
+            "es": "Ana va a beberse una botella de agua."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "他", "py": "tā" },
+              "verb1": { "zh": "要", "py": "yào" },
+              "object": { "zh": "两碗米饭", "py": "liǎng wǎn mǐfàn" }
+            },
+            "end": "。",
+            "es": "Él quiere dos boles de arroz."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "我要一盘饺子。", "py": "Wǒ yào yì pán jiǎozi.", "es": "Quiero un plato de jiaozi." },
+        { "zh": "你要几个包子？", "py": "Nǐ yào jǐ ge bāozi?", "es": "¿Cuántos baozi quieres?" },
+        { "zh": "我想要一杯牛奶。", "py": "Wǒ xiǎng yào yì bēi niúnǎi.", "es": "Querría un vaso de leche.", "note": "想要: más suave que 要 a secas." },
+        { "zh": "我早上要吃两个包子。", "py": "Wǒ zǎoshang yào chī liǎng ge bāozi.", "es": "Por la mañana me voy a comer dos baozi." },
+        { "zh": "我不要茶，我要水。", "py": "Wǒ bú yào chá, wǒ yào shuǐ.", "es": "No quiero té, quiero agua." }
+      ],
+      "sourceNotes": ["zh-grammar-xiang-yao", "zh-contrast-xiang-yao"]
+    },
+    {
+      "id": "hui-saber",
+      "title": "会 + verbo: saber hacer (lo aprendido)",
+      "unlockedBy": "a1-u12-l2",
+      "markdown": "### «Sé nadar», «sé chino»\n\n**会 huì** dice que algo **se sabe hacer porque se ha aprendido**: idiomas, deportes, cantar, cocinar, conducir, un juego.\n\n**Sujeto + 会 + verbo + objeto** → 我**会**打篮球.\n\n- **Negativa**: **不会** (bú huì), con 不 delante del auxiliar.\n- **Pregunta**: …会…吗？ o **会不会**…？ La respuesta corta repite el auxiliar: **会。/ 不会。** (no hay un «sí» universal).\n- **很会** + verbo = «se le da muy bien»: 他很会开玩笑.\n\n> 💡 **Truco**: si en español puedes decir «**sé** + infinitivo», en chino es 会. 会 se parece mucho al «saber» español.\n\n> ⚠️ **Ojo**: el «saber» de los **datos** no es 会, es **知道**: 我知道他的名字 (sé cómo se llama).\n\n> ❌ **Error típico**: 我能说汉语 para «hablo chino» → 我**会**说汉语. 能 sonaría a «soy capaz físicamente».",
+      "skeleton": {
+        "focus": ["aux"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "aux": { "zh": "会", "py": "huì" },
+              "verb1": { "zh": "打", "py": "dǎ" },
+              "object": { "zh": "篮球", "py": "lánqiú" }
+            },
+            "end": "。",
+            "es": "Sé jugar al baloncesto.",
+            "esOrder": [
+              { "text": "Sé", "slot": "aux" },
+              { "text": "jugar", "slot": "verb1" },
+              { "text": "al baloncesto", "slot": "object" }
+            ]
+          },
+          {
+            "slots": {
+              "subject": { "zh": "大卫", "py": "Dàwèi" },
+              "adverb": { "zh": "不", "py": "bú" },
+              "aux": { "zh": "会", "py": "huì" },
+              "verb1": { "zh": "说", "py": "shuō" },
+              "object": { "zh": "汉语", "py": "Hànyǔ" }
+            },
+            "end": "。",
+            "es": "David no sabe hablar chino."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "雨果", "py": "Yǔguǒ" },
+              "adverb": { "zh": "很", "py": "hěn" },
+              "aux": { "zh": "会", "py": "huì" },
+              "verb1": { "zh": "开玩笑", "py": "kāi wánxiào" }
+            },
+            "end": "。",
+            "es": "A Hugo se le da muy bien bromear."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "你会说英语吗？——会。", "py": "Nǐ huì shuō Yīngyǔ ma? — Huì.", "es": "¿Sabes hablar inglés? —Sí." },
+        { "zh": "小李会唱很多中国歌。", "py": "Xiǎo Lǐ huì chàng hěn duō Zhōngguó gē.", "es": "Xiao Li sabe cantar muchas canciones chinas." },
+        { "zh": "你会不会玩儿这个游戏？", "py": "Nǐ huì bu huì wánr zhège yóuxì?", "es": "¿Sabes jugar a este juego?" },
+        { "zh": "我会说一点儿汉语。", "py": "Wǒ huì shuō yìdiǎnr Hànyǔ.", "es": "Hablo un poco de chino.", "note": "La respuesta modesta perfecta." }
+      ],
+      "sourceNotes": ["zh-grammar-hui-neng-keyi", "zh-contrast-hui-neng-keyi"]
+    },
+    {
+      "id": "neng-keyi",
+      "title": "能 y 可以: poder por capacidad y poder por permiso",
+      "unlockedBy": "a1-u12-l3",
+      "markdown": "### Tres «poder», tres preguntas\n\nEn español todo es «poder»; en chino, cada auxiliar responde a una pregunta distinta:\n\n| | Pregunta que responde | Ejemplo | Negación |\n|---|---|---|---|\n| **会 huì** | ¿Lo he **aprendido**? | 我会说汉语 | 不会 |\n| **能 néng** | ¿Es **posible**? ¿Tengo tiempo, fuerzas, condiciones? | 今天我不能去 | 不能 |\n| **可以 kěyǐ** | ¿Está **permitido**? ¿Me dejan? | 这儿可以上网吗？ | 不可以 / 不能 |\n\n- Para **pedir permiso**, la plantilla es **可以…吗？**: 我可以坐这儿吗？ También se oye 能…吗？\n- Respuesta corta: 可以。/ 行。/ 不行。 A不A: 能不能, 可(以)不可以.\n- En muchas frases cotidianas 能 y 可以 se intercambian (你能帮我吗？= 你可以帮我吗？). Pero para **negar un permiso** se prefiere **不能**: 这儿不能上网. **不可以** suena tajante, de cartel o de padres.\n\n> 💡 **Truco**: pon los tres en la misma historia y verás la diferencia: 我**会**游泳 (sé), 今天**不能**游泳 (no puedo, estoy enfermo), 这儿**不可以**游泳 (está prohibido).\n\n> ❌ **Error típico**: 我不可以开车 para «no sé conducir» → 我**不会**开车. 不可以 es «no me dejan».\n\n> ❌ **Error típico**: 我会去，因为我有时间 → 我**能**去. Tener tiempo es una circunstancia: 能.",
+      "skeleton": {
+        "focus": ["aux"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "time": { "zh": "明天", "py": "míngtiān" },
+              "aux": { "zh": "能", "py": "néng" },
+              "verb1": { "zh": "去", "py": "qù" },
+              "verb2": { "zh": "看", "py": "kàn" },
+              "object": { "zh": "电影", "py": "diànyǐng" }
+            },
+            "end": "。",
+            "es": "Mañana puedo ir a ver una película."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "这儿", "py": "zhèr" },
+              "aux": { "zh": "可以", "py": "kěyǐ" },
+              "verb1": { "zh": "上网", "py": "shàngwǎng" },
+              "particle": { "zh": "吗", "py": "ma" }
+            },
+            "end": "？",
+            "es": "¿Aquí se puede usar internet?",
+            "esOrder": [
+              { "text": "¿Aquí", "slot": "subject" },
+              { "text": "se puede", "slot": "aux" },
+              { "text": "usar internet?", "slot": "verb1" }
+            ]
+          },
+          {
+            "slots": {
+              "subject": { "zh": "大卫", "py": "Dàwèi" },
+              "aux": { "zh": "能", "py": "néng" },
+              "verb1": { "zh": "吃", "py": "chī" },
+              "object": { "zh": "三碗米饭", "py": "sān wǎn mǐfàn" }
+            },
+            "end": "。",
+            "es": "David es capaz de comerse tres boles de arroz."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "我可以看你的书吗？——可以。", "py": "Wǒ kěyǐ kàn nǐ de shū ma? — Kěyǐ.", "es": "¿Puedo leer tu libro? —Sí, claro." },
+        { "zh": "今天我很忙，不能去书店。", "py": "Jīntiān wǒ hěn máng, bù néng qù shūdiàn.", "es": "Hoy estoy muy ocupado: no puedo ir a la librería." },
+        { "zh": "电影院里不能打电话。", "py": "Diànyǐngyuàn li bù néng dǎ diànhuà.", "es": "En el cine no se puede hablar por teléfono." },
+        { "zh": "我会说汉语，可是今天不能说，我很累。", "py": "Wǒ huì shuō Hànyǔ, kěshì jīntiān bù néng shuō, wǒ hěn lèi.", "es": "Sé hablar chino, pero hoy no puedo: estoy muy cansado.", "note": "会 = lo aprendí; 能 = las circunstancias de hoy." }
+      ],
+      "sourceNotes": ["zh-grammar-hui-neng-keyi", "zh-contrast-hui-neng-keyi"]
+    },
+    {
+      "id": "negar-auxiliares",
+      "title": "Negar los auxiliares: 不想, 不用 y el peligroso 不要",
+      "unlockedBy": "a1-u12-l4",
+      "markdown": "### Las negativas no son simétricas\n\n| Afirmativa | Idea | Negativa |\n|---|---|---|\n| 想 + V | me apetece | **不想** (no me apetece) |\n| 要 + V | quiero, voy a | **不想** (no quiero) |\n| 要 + V | tengo que | **不用** (no hace falta) |\n| 会 + V | sé hacer | 不会 |\n| 能 + V | puedo | 不能 |\n| 可以 + V | me dejan | 不可以 / 不能 |\n\n### ¿Y 不要?\n\n**不要 + verbo** es una **prohibición**: 不要说话 = «¡no habléis!». Si solo quieres decir que no te apetece, **不想**: 我不想说话.\n\n- Para **rechazar algo que te ofrecen**, 不要，谢谢 está bien (es 要 + nombre).\n- Para decir que no vas, **不想去**, no 不要去.\n\n> 💡 **Truco**: si tu frase en español es «no quiero + infinitivo», tradúcela con 不想; si es «no hace falta», con 不用.\n\n> ❌ **Error típico**: 我不要去 (por «no me apetece ir») → 我**不想**去. 不要 suena a negativa tajante o a orden.\n\n> ⚠️ **Ojo**: 不用 también sirve para rechazar con cortesía una ayuda: ——我帮你吧。——**不用**，谢谢！",
+      "skeleton": {
+        "focus": ["adverb", "aux"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "adverb": { "zh": "不", "py": "bù" },
+              "aux": { "zh": "想", "py": "xiǎng" },
+              "verb1": { "zh": "看", "py": "kàn" },
+              "object": { "zh": "这个电影", "py": "zhège diànyǐng" }
+            },
+            "end": "。",
+            "es": "No me apetece ver esta película."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "你", "py": "nǐ" },
+              "adverb": { "zh": "不", "py": "bú" },
+              "aux": { "zh": "用", "py": "yòng" },
+              "verb1": { "zh": "去", "py": "qù" }
+            },
+            "end": "。",
+            "es": "No hace falta que vayas."
+          },
+          {
+            "slots": {
+              "time0": { "zh": "周末", "py": "zhōumò" },
+              "subject": { "zh": "我", "py": "wǒ" },
+              "aux": { "zh": "要", "py": "yào" },
+              "verb1": { "zh": "去", "py": "qù" },
+              "object": { "zh": "电影院", "py": "diànyǐngyuàn" }
+            },
+            "end": "。",
+            "es": "El fin de semana voy a ir al cine."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "你要不要看这个视频？", "py": "Nǐ yào bu yào kàn zhège shìpín?", "es": "¿Quieres ver este vídeo?" },
+        { "zh": "我今天很累，不想去。", "py": "Wǒ jīntiān hěn lèi, bù xiǎng qù.", "es": "Hoy estoy muy cansado: no me apetece ir." },
+        { "zh": "不用，谢谢！", "py": "Bú yòng, xièxie!", "es": "No hace falta, ¡gracias!" },
+        { "zh": "不要说话！", "py": "Bú yào shuōhuà!", "es": "¡No habléis!", "note": "不要 + verbo = prohibición." },
+        { "zh": "我们一起去看电影吧！", "py": "Wǒmen yìqǐ qù kàn diànyǐng ba!", "es": "¡Vamos juntos a ver una película!" }
+      ],
+      "sourceNotes": ["zh-grammar-xiang-yao", "zh-contrast-xiang-yao"]
+    },
+    {
+      "id": "yinggai",
+      "title": "应该: «deberías», lo correcto",
+      "unlockedBy": "a2-u05-l1",
+      "markdown": "### El consejo\n\n**应该 yīnggāi** = «deberías, lo correcto es». Va en el hueco del **auxiliar**: detrás del sujeto (y del tiempo) y delante del lugar y del verbo.\n\n- 你**应该**多休息。 (多 delante del verbo = «mucho, más»: 多喝水, 多休息.)\n- **Negativa**: 你**不应该**喝酒.\n- **Pregunta**: 我应该……吗？ o con interrogativo: 我应该吃什么药？\n- Con lugar: 你应该**在宿舍**休息 (el lugar, entre el auxiliar y el verbo).\n\n### La escala de la obligación (lo que irás viendo)\n\n| Más suave → más fuerte | |\n|---|---|\n| 最好 (más vale que) | consejo amable |\n| **应该** (deberías) | lo correcto |\n| 要 (tienes que) | necesidad |\n| 必须 (es obligatorio) | sin discusión (lección 4) |\n\n> ⚠️ **Ojo**: el 应 de 应该 es primer tono (yīng). Y 该 solo, sin 应, también existe: «ya toca…» (lección 4).",
+      "skeleton": {
+        "focus": ["aux"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "你", "py": "nǐ" },
+              "aux": { "zh": "应该", "py": "yīnggāi" },
+              "verb1": { "zh": "多休息", "py": "duō xiūxi" }
+            },
+            "end": "。",
+            "es": "Deberías descansar mucho.",
+            "esOrder": [
+              { "text": "Deberías", "slot": "aux" },
+              { "text": "descansar mucho", "slot": "verb1" }
+            ]
+          },
+          {
+            "slots": {
+              "subject": { "zh": "雨果", "py": "Yǔguǒ" },
+              "time": { "zh": "今天", "py": "jīntiān" },
+              "aux": { "zh": "应该", "py": "yīnggāi" },
+              "place": { "zh": "在宿舍", "py": "zài sùshè" },
+              "verb1": { "zh": "休息", "py": "xiūxi" }
+            },
+            "end": "。",
+            "es": "Hoy Hugo debería descansar en la residencia."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "你", "py": "nǐ" },
+              "adverb": { "zh": "不", "py": "bù" },
+              "aux": { "zh": "应该", "py": "yīnggāi" },
+              "verb1": { "zh": "喝", "py": "hē" },
+              "object": { "zh": "冷水", "py": "lěng shuǐ" }
+            },
+            "end": "。",
+            "es": "No deberías beber agua fría."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "你感冒了，应该多喝热水。", "py": "Nǐ gǎnmào le, yīnggāi duō hē rè shuǐ.", "es": "Te has resfriado: deberías beber mucha agua caliente." },
+        { "zh": "我应该去医院吗？", "py": "Wǒ yīnggāi qù yīyuàn ma?", "es": "¿Debería ir al hospital?" },
+        { "zh": "你不应该喝酒。", "py": "Nǐ bù yīnggāi hē jiǔ.", "es": "No deberías beber alcohol." },
+        { "zh": "我最近很困，应该早点儿睡觉。", "py": "Wǒ zuìjìn hěn kùn, yīnggāi zǎo diǎnr shuìjiào.", "es": "Últimamente tengo mucho sueño: debería acostarme antes." }
+      ]
+    },
+    {
+      "id": "keneng-yiding",
+      "title": "可能, 一定, 也许, 好像: lo seguro que estás (y el 会 de «pasará»)",
+      "unlockedBy": "a2-u05-l3",
+      "markdown": "### La escala de la certeza\n\n| | |\n|---|---|\n| **一定** | seguro (casi 100 %) |\n| **可能 / 也许** | puede que, a lo mejor (50 %) |\n| **好像** | parece que (por lo que ves) |\n\nVan en el hueco de los **adverbios**, delante del verbo **y del auxiliar**: 他**可能**感冒了 · 他**一定**很累.\n\n**Convención del esqueleto**: 可能 es un verbo modal en las gramáticas, pero aquí va en *Adverbios* junto a 一定, 也许 y 好像; así el *Auxiliar* queda libre para 会 / 要 / 能 (可能 | 会 | 来).\n\n### 会 de futuro probable\n\nYa conoces 会 = saber hacer. Tiene un **segundo uso**: «**pasará**, es probable que». 明天**会**下雨 no es «mañana sabe llover», es «mañana lloverá». Combinado: 明天**可能会**下雨.\n\n- **一定要** + V = «sin falta»: 你一定要去医院.\n- **Negativa**: 不 va **detrás** de estos adverbios: 他可能**不**来 · 他可能**不会**来.\n- **不一定** = «no necesariamente»: 感冒**不一定**要吃药.",
+      "skeleton": {
+        "focus": ["adverb", "aux"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "他", "py": "tā" },
+              "adverb": { "zh": "可能", "py": "kěnéng" },
+              "verb1": { "zh": "感冒", "py": "gǎnmào" },
+              "particle": { "zh": "了", "py": "le" }
+            },
+            "end": "。",
+            "es": "Puede que se haya resfriado."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "明天", "py": "míngtiān" },
+              "adverb": { "zh": "可能", "py": "kěnéng" },
+              "aux": { "zh": "会", "py": "huì" },
+              "verb1": { "zh": "下雨", "py": "xià yǔ" }
+            },
+            "end": "。",
+            "es": "Puede que mañana llueva."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "你", "py": "nǐ" },
+              "adverb": { "zh": "一定", "py": "yídìng" },
+              "aux": { "zh": "要", "py": "yào" },
+              "verb1": { "zh": "去医院", "py": "qù yīyuàn" }
+            },
+            "end": "。",
+            "es": "Tienes que ir al hospital sin falta."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "雨果一定很累。", "py": "Yǔguǒ yídìng hěn lèi.", "es": "Seguro que Hugo está muy cansado." },
+        { "zh": "大卫好像不舒服。", "py": "Dàwèi hǎoxiàng bù shūfu.", "es": "Parece que David no se encuentra bien." },
+        { "zh": "他也许不会来。", "py": "Tā yěxǔ bú huì lái.", "es": "A lo mejor no viene." },
+        { "zh": "感冒不一定要吃药。", "py": "Gǎnmào bù yídìng yào chī yào.", "es": "Un resfriado no tiene por qué necesitar medicinas." },
+        { "zh": "他的伤很轻，你不用害怕。", "py": "Tā de shāng hěn qīng, nǐ bú yòng hàipà.", "es": "Su herida es leve: no tienes que asustarte." }
+      ],
+      "sourceNotes": ["zh-grammar-hui-neng-keyi", "zh-contrast-hui-neng-keyi"]
+    },
+    {
+      "id": "gai-bixu",
+      "title": "该…了, 必须 y 不用: ya toca, es obligatorio, no hace falta",
+      "unlockedBy": "a2-u05-l4",
+      "markdown": "### 该 + verbo + 了 = «ya toca…»\n\n**该** va en el hueco del **auxiliar** y el **了** al final: 你**该**吃药**了**. Es lo que dices mirando el reloj: 十二点了，**该**睡觉**了**.\n\n### 必须 = «hay que, es obligatorio»\n\nMás fuerte que 应该. En el esqueleto va en **Adverbios**: 你每天**必须**吃两片药.\n\n> ❌ **Error típico**: negar 必须 con *不必须*. Su negativa es **不用** («no hace falta»): 你**不用**住院.\n\n### Resumen de la obligación\n\n| Afirmativa | Negativa |\n|---|---|\n| 应该 (deberías) | 不应该 (no deberías) |\n| 要 (tienes que) | **不用** (no hace falta) |\n| 必须 (es obligatorio) | **不用** (no hace falta) |\n| 该…了 (ya toca) | — |\n\n> 💡 **Truco**: con **让** + persona + verbo cuentas lo que te mandan: 大夫**让我**多休息 (el médico me ha dicho que descanse). Ahí el «deber» lo pone otra persona.",
+      "skeleton": {
+        "focus": ["aux", "adverb"],
+        "sentences": [
+          {
+            "slots": {
+              "time0": { "zh": "现在", "py": "xiànzài" },
+              "subject": { "zh": "你", "py": "nǐ" },
+              "aux": { "zh": "该", "py": "gāi" },
+              "verb1": { "zh": "吃药", "py": "chī yào" },
+              "particle": { "zh": "了", "py": "le" }
+            },
+            "end": "。",
+            "es": "Ahora te toca tomarte la medicina."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "你", "py": "nǐ" },
+              "time": { "zh": "每天", "py": "měi tiān" },
+              "adverb": { "zh": "必须", "py": "bìxū" },
+              "verb1": { "zh": "吃", "py": "chī" },
+              "object": { "zh": "两片药", "py": "liǎng piàn yào" }
+            },
+            "end": "。",
+            "es": "Tienes que tomarte dos pastillas al día."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "你", "py": "nǐ" },
+              "adverb": { "zh": "不用", "py": "bú yòng" },
+              "verb1": { "zh": "住院", "py": "zhùyuàn" }
+            },
+            "end": "。",
+            "es": "No hace falta que te ingresen."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "十二点了，我们该睡觉了。", "py": "Shí'èr diǎn le, wǒmen gāi shuìjiào le.", "es": "Son las doce: ya toca irse a dormir." },
+        { "zh": "这个药你必须每天吃。", "py": "Zhège yào nǐ bìxū měi tiān chī.", "es": "Esta medicina tienes que tomártela todos los días." },
+        { "zh": "大夫让我多休息。", "py": "Dàifu ràng wǒ duō xiūxi.", "es": "El médico me ha dicho que descanse mucho." },
+        { "zh": "你不用害怕，你的病不重。", "py": "Nǐ bú yòng hàipà, nǐ de bìng bú zhòng.", "es": "No tienes que preocuparte: lo tuyo no es grave." }
+      ]
+    },
+    {
+      "id": "planes-dasuan",
+      "title": "想, 要, 打算, 计划, 希望, 愿意: hablar de planes",
+      "unlockedBy": "a2-u12-l1",
+      "markdown": "### Seis maneras de mirar al futuro\n\n| Palabra | Qué expresa | Ejemplo |\n|---|---|---|\n| **想** | deseo, ganas (puede no cumplirse) | 我想去西安。 |\n| **要** | decisión firme o algo ya próximo | 我明年要回国。 |\n| **打算** | plan pensado: «tengo previsto» | 我打算在上海找工作。 |\n| **计划** | plan formal, con pasos | 我计划先工作两年。 |\n| **希望** | esperanza; detrás va una frase | 我希望你能来。 |\n| **愿意** | estar dispuesto, de buen grado | 我很愿意帮你。 |\n\nTodos ocupan el hueco del **auxiliar**: detrás del sujeto (y del tiempo), delante del lugar y del verbo.\n\n- El lugar va **antes** del verbo: 我打算**在上海**找工作 (✗ 找工作在上海).\n- **很** cabe delante de 想 y 愿意: 我很想去, 我很愿意.\n- **Negar**: 不想, 不打算, 不愿意, 没有计划. Para negar el 要 de intención, **不想** (不要 suena a «¡no lo hagas!»).\n\n> 💡 **Truco**: 打算 y 计划 también son nombres: 你有什么**打算**？ (¿qué planes tienes?), 我的**计划**.",
+      "skeleton": {
+        "focus": ["aux"],
+        "sentences": [
+          {
+            "slots": {
+              "time0": { "zh": "毕业以后", "py": "bìyè yǐhòu" },
+              "subject": { "zh": "我", "py": "wǒ" },
+              "aux": { "zh": "打算", "py": "dǎsuàn" },
+              "place": { "zh": "在上海", "py": "zài Shànghǎi" },
+              "verb1": { "zh": "找", "py": "zhǎo" },
+              "object": { "zh": "工作", "py": "gōngzuò" }
+            },
+            "end": "。",
+            "es": "Después de graduarme, tengo previsto buscar trabajo en Shanghái.",
+            "esOrder": [
+              { "text": "Después de graduarme,", "slot": "time0" },
+              { "text": "tengo previsto", "slot": "aux" },
+              { "text": "buscar", "slot": "verb1" },
+              { "text": "trabajo", "slot": "object" },
+              { "text": "en Shanghái", "slot": "place" }
+            ]
+          },
+          {
+            "slots": {
+              "subject": { "zh": "安娜", "py": "Ānnà" },
+              "time": { "zh": "明年", "py": "míngnián" },
+              "aux": { "zh": "要", "py": "yào" },
+              "verb1": { "zh": "回国", "py": "huí guó" }
+            },
+            "end": "。",
+            "es": "Ana vuelve a su país el año que viene."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "adverb": { "zh": "很", "py": "hěn" },
+              "aux": { "zh": "愿意", "py": "yuànyì" },
+              "verb1": { "zh": "帮", "py": "bāng" },
+              "object": { "zh": "你", "py": "nǐ" }
+            },
+            "end": "。",
+            "es": "Te ayudo encantado."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "你毕业以后有什么打算？", "py": "Nǐ bìyè yǐhòu yǒu shénme dǎsuàn?", "es": "¿Qué planes tienes para después de graduarte?" },
+        { "zh": "我计划先工作两年。", "py": "Wǒ jìhuà xiān gōngzuò liǎng nián.", "es": "Tengo planeado trabajar primero dos años." },
+        { "zh": "我希望你能来西班牙。", "py": "Wǒ xīwàng nǐ néng lái Xībānyá.", "es": "Espero que puedas venir a España." },
+        { "zh": "他不打算留在中国。", "py": "Tā bù dǎsuàn liú zài Zhōngguó.", "es": "No tiene previsto quedarse en China." },
+        { "zh": "将来我希望能实现我的理想。", "py": "Jiānglái wǒ xīwàng néng shíxiàn wǒ de lǐxiǎng.", "es": "En el futuro espero poder hacer realidad mi sueño." }
+      ],
+      "sourceNotes": ["zh-grammar-xiang-yao", "zh-contrast-xiang-yao"]
+    }
+  ]
+}

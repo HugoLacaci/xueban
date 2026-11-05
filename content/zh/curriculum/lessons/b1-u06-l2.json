@@ -1,0 +1,142 @@
+{
+  "id": "b1-u06-l2",
+  "title": "Todo el mundo, de todo, a ningún sitio: 谁都, 什么都, 哪儿都",
+  "zh": "谁都想看决赛",
+  "goal": "Decir «todo el mundo», «de todo», «en todas partes» (y sus negativas «nadie», «nada», «a ningún sitio») con interrogativo + 都 / 也.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "世界杯", "pinyin": "Shìjièbēi", "es": "la Copa del Mundo, el Mundial (de fútbol)" },
+    { "hanzi": "决赛", "pinyin": "juésài", "es": "final (de una competición)", "note": "半决赛 = semifinal." },
+    { "hanzi": "选手", "pinyin": "xuǎnshǒu", "es": "jugador, deportista (en una competición), concursante" },
+    { "hanzi": "对手", "pinyin": "duìshǒu", "es": "rival, contrincante" },
+    { "hanzi": "赢", "pinyin": "yíng", "es": "ganar (un partido, una apuesta)", "note": "赢了比赛 = ganar el partido. 赢 + rival: 西班牙赢了法国." },
+    { "hanzi": "输", "pinyin": "shū", "es": "perder (un partido, una apuesta)", "note": "Lo contrario de 赢. «Perder las llaves» es otro verbo (丢)." },
+    { "hanzi": "胜", "pinyin": "shèng", "es": "vencer, ganar (más escrito)", "note": "Típico en titulares y resultados: 西班牙二比一胜法国." },
+    { "hanzi": "胜利", "pinyin": "shènglì", "es": "victoria; triunfar" },
+    { "hanzi": "得分", "pinyin": "défēn", "es": "marcar, anotar (un tanto); puntuación", "note": "得 aquí es dé («obtener»), no el de de neutro." },
+    { "hanzi": "领先", "pinyin": "lǐngxiān", "es": "ir ganando, ir en cabeza", "note": "一比零领先 = ir uno a cero." },
+    { "hanzi": "实力", "pinyin": "shílì", "es": "fuerza real, nivel (de un equipo o persona)" },
+    { "hanzi": "排名", "pinyin": "páimíng", "es": "clasificación, ranking; puesto", "note": "排名第一 = ser el número uno." },
+    { "hanzi": "全场", "pinyin": "quánchǎng", "es": "todo el estadio, todo el público; todo el partido" },
+    { "hanzi": "热烈", "pinyin": "rèliè", "es": "caluroso, entusiasta (aplausos, ambiente)" }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "谁都想看世界杯决赛。", "py": "Shéi dōu xiǎng kàn Shìjièbēi juésài.", "es": "Todo el mundo quiere ver la final del Mundial." },
+        { "zh": "我太紧张了，什么都说不出来。", "py": "Wǒ tài jǐnzhāng le, shénme dōu shuō bu chūlái.", "es": "Estoy tan nervioso que no me sale nada." },
+        { "zh": "今天晚上我哪儿都不去。", "py": "Jīntiān wǎnshang wǒ nǎr dōu bú qù.", "es": "Esta noche no voy a ningún sitio." }
+      ]
+    },
+    { "type": "vocab", "title": "La final del Mundial", "words": ["世界杯", "决赛", "选手", "对手", "赢", "输", "胜", "胜利", "得分", "领先", "实力", "排名", "全场", "热烈"] },
+    {
+      "type": "phonetics-drill",
+      "title": "谁都, 什么都: el interrogativo que no pregunta",
+      "markdown": "Cuando 谁, 什么 o 哪儿 **no preguntan**, la entonación cambia: la frase **baja al final** como una afirmación, y el acento recae en el interrogativo y en 都.\n\n- **谁都知道** (afirma: «lo sabe todo el mundo») ↘ frente a **谁知道？** (pregunta) ↗.\n- 什么 tiene el segundo 么 en **tono neutro**: *shénme*.\n- **谁** se lee *shéi* (más oral) o *shuí*.\n- Ojo a **决赛 juésài**: tras j, la *u* es en realidad *ü* («iu» con labios redondos).\n- **热烈 rèliè**: *r* y *l* seguidas; no las confundas.",
+      "items": [
+        { "audio": "谁都知道。", "prompt": "¿Es una pregunta o una afirmación?", "options": ["Afirmación: «todo el mundo lo sabe»", "Pregunta: «¿quién lo sabe?»"], "answer": 0, "explain": "Con 都 detrás, 谁 significa «todo el mundo» y la frase baja al final." },
+        { "audio": "谁知道？", "prompt": "¿Y esta?", "options": ["Pregunta: «¿quién lo sabe?»", "Afirmación: «todo el mundo lo sabe»"], "answer": 0 },
+        { "audio": "决赛", "options": ["juésài", "jiésài", "juèsài"], "answer": 0, "explain": "jue = j + üe; segundo tono + cuarto." },
+        { "audio": "赢了", "options": ["yíng le", "yīng le", "yín le"], "answer": 0, "explain": "Segundo tono y final nasal -ng (posterior)." },
+        { "audio": "热烈", "options": ["rèliè", "lèliè", "rèrè"], "answer": 0, "explain": "Primero r retrofleja, luego l: dos cuartos tonos." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["赢", "输"],
+      "mnemonics": {
+        "赢": "亡 + 口 + 月 + 贝 (dinero, conchas) + 凡: para ganar hace falta arriesgarlo todo (亡), hablar bien (口), tiempo (月), dinero (贝) y un poco de todo (凡).",
+        "输": "车 (carro) + 俞: en origen «transportar» (输送); lo que se carga en el carro se va… y se pierde. Hoy, «perder»."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "Interrogativo + 都 / 也: «todo el mundo», «de todo», «nada»",
+      "markdown": "Un interrogativo seguido de **都** (o **也**) deja de preguntar y pasa a significar **«todo / cualquiera»**; con negación, **«nada / nadie / ninguno»**:\n\n| | afirmativa | negativa |\n|---|---|---|\n| 谁都 | todo el mundo | 谁都不 / 没 = nadie |\n| 什么都 | de todo | 什么都不 / 没 = nada |\n| 哪儿都 | en / a todas partes | 哪儿都不 / 没 = a ningún sitio |\n| 什么时候都 | siempre, a cualquier hora | — |\n| 怎么也 / 都 + no | — | de ninguna manera |\n\n- El interrogativo va **delante de 都**, y los dos **delante del verbo**: 我**什么都**吃 (✗ 我吃什么都).\n- La negación va **detrás** de 都 / 也: 我什么都**没**买.\n- **谁…谁…**: el mismo interrogativo en dos cláusulas = «quien…, ese…»: **谁**想去，**谁**就去 (quien quiera ir, que vaya).\n\n**Convención del esqueleto**: 谁 en *Sujeto* y 都 en *Adverbios* (谁 · 都 · 知道); si el interrogativo es el **objeto**, sube con 都 / 也 a *Adverbios*: 我 · **什么都** · 吃; 我 · **哪儿都没** · 去; 我 · **怎么也** · 睡不着.",
+      "focus": ["adverb", "subject"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "谁", "py": "shéi" }, "adverb": { "zh": "都", "py": "dōu" }, "aux": { "zh": "想", "py": "xiǎng" }, "verb1": { "zh": "看", "py": "kàn" }, "object": { "zh": "世界杯决赛", "py": "Shìjièbēi juésài" } }, "end": "。", "es": "Todo el mundo quiere ver la final del Mundial." },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "什么都", "py": "shénme dōu" }, "verb1": { "zh": "吃", "py": "chī" } }, "end": "。", "es": "Como de todo.", "esOrder": [{ "text": "Como", "slot": "verb1" }, { "text": "de todo", "slot": "adverb" }] },
+        { "slots": { "subject": { "zh": "这个选手", "py": "zhège xuǎnshǒu" }, "adverb": { "zh": "哪儿都", "py": "nǎr dōu" }, "verb1": { "zh": "去过", "py": "qùguo" } }, "end": "。", "es": "Este jugador ha estado en todas partes." },
+        { "slots": { "subject": { "zh": "王老师", "py": "Wáng lǎoshī" }, "adverb": { "zh": "什么时候都很", "py": "shénme shíhou dōu hěn" }, "verb1": { "zh": "忙", "py": "máng" } }, "end": "。", "es": "La profesora Wang siempre está ocupada." },
+        { "slots": { "subject": { "zh": "谁", "py": "shéi" }, "aux": { "zh": "想", "py": "xiǎng" }, "verb1": { "zh": "去", "py": "qù" } }, "end": "，", "es": "Quien quiera ir… (1.ª parte)" },
+        { "slots": { "subject": { "zh": "谁", "py": "shéi" }, "adverb": { "zh": "就", "py": "jiù" }, "verb1": { "zh": "去", "py": "qù" } }, "end": "。", "es": "…que vaya. (2.ª parte)" }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "什么都没", "py": "shénme dōu méi" }, "verb1": { "zh": "买", "py": "mǎi" } }, "end": "。", "es": "No he comprado nada." },
+        { "slots": { "time0": { "zh": "今天晚上", "py": "jīntiān wǎnshang" }, "subject": { "zh": "我们", "py": "wǒmen" }, "adverb": { "zh": "哪儿都不", "py": "nǎr dōu bú" }, "verb1": { "zh": "去", "py": "qù" } }, "end": "。", "es": "Esta noche no vamos a ningún sitio." },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "怎么也", "py": "zěnme yě" }, "verb1": { "zh": "睡不着", "py": "shuì bu zháo" } }, "end": "。", "es": "No hay manera de que me duerma." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "adverb": { "zh": "什么都", "py": "shénme dōu" }, "verb1": { "zh": "吃", "py": "chī" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿Comes de todo?" },
+        { "slots": { "time0": { "zh": "这次比赛", "py": "zhè cì bǐsài" }, "subject": { "zh": "谁", "py": "shéi" }, "adverb": { "zh": "都", "py": "dōu" }, "aux": { "zh": "能", "py": "néng" }, "verb1": { "zh": "参加", "py": "cānjiā" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿En esta competición puede participar cualquiera?" }
+      ],
+      "mistakes": [
+        { "wrong": "我吃什么都。", "right": "我什么都吃。", "why": "El interrogativo + 都 va delante del verbo, no en el lugar del objeto." },
+        { "wrong": "我都什么吃。", "right": "我什么都吃。", "why": "Primero el interrogativo y después 都." },
+        { "wrong": "我没什么都买。", "right": "我什么都没买。", "why": "La negación va detrás de 都, pegada al verbo." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "La final",
+      "lines": [
+        { "speaker": "小李", "zh": "今天晚上是世界杯决赛，西班牙对法国！你们去哪儿看？", "py": "Jīntiān wǎnshang shì Shìjièbēi juésài, Xībānyá duì Fǎguó! Nǐmen qù nǎr kàn?", "es": "¡Esta noche es la final del Mundial, España contra Francia! ¿Dónde vais a verla?" },
+        { "speaker": "雨果", "zh": "我哪儿都不去，就在宿舍看。谁想来，谁就来！", "py": "Wǒ nǎr dōu bú qù, jiù zài sùshè kàn. Shéi xiǎng lái, shéi jiù lái!", "es": "Yo no voy a ningún sitio: la veo en la residencia. ¡Quien quiera, que venga!" },
+        { "speaker": "大卫", "zh": "我也来。可是我什么都不懂，你们给我说说吧。", "py": "Wǒ yě lái. Kěshì wǒ shénme dōu bù dǒng, nǐmen gěi wǒ shuōshuo ba.", "es": "Yo también voy. Pero no entiendo nada: me lo vais explicando." },
+        { "speaker": "小李", "zh": "没问题。西班牙的排名比法国高，可是法国的实力也很不错。", "py": "Méi wèntí. Xībānyá de páimíng bǐ Fǎguó gāo, kěshì Fǎguó de shílì yě hěn búcuò.", "es": "Sin problema. España está más arriba en el ranking, pero Francia también tiene mucho nivel." },
+        { "speaker": "雨果", "zh": "对，谁都可能赢。法国是一个很难的对手。", "py": "Duì, shéi dōu kěnéng yíng. Fǎguó shì yí ge hěn nán de duìshǒu.", "es": "Sí, puede ganar cualquiera. Francia es un rival muy difícil." },
+        { "speaker": "大卫", "zh": "太好了，西班牙的十号选手得分了！一比零领先！", "py": "Tài hǎo le, Xībānyá de shí hào xuǎnshǒu défēn le! Yī bǐ líng lǐngxiān!", "es": "¡Bien, ha marcado el número diez de España! ¡Uno a cero!" },
+        { "speaker": "小李", "zh": "你看，全场的人都站起来了，太热烈了！", "py": "Nǐ kàn, quánchǎng de rén dōu zhàn qǐlái le, tài rèliè le!", "es": "¡Mira, todo el estadio se ha puesto de pie, qué ambiente!" },
+        { "speaker": "雨果", "zh": "别高兴得太早，还有六十分钟呢。", "py": "Bié gāoxìng de tài zǎo, hái yǒu liùshí fēnzhōng ne.", "es": "No lo celebréis tan pronto, que quedan sesenta minutos." },
+        { "speaker": "大卫", "zh": "法国也进了一个球……一比一了。雨果，你怎么什么都不说了？", "py": "Fǎguó yě jìn le yí ge qiú…… yī bǐ yī le. Yǔguǒ, nǐ zěnme shénme dōu bù shuō le?", "es": "Francia también ha metido un gol… uno a uno. Hugo, ¿por qué ya no dices nada?" },
+        { "speaker": "雨果", "zh": "我太紧张了，什么都说不出来。", "py": "Wǒ tài jǐnzhāng le, shénme dōu shuō bu chūlái.", "es": "Estoy tan nervioso que no me sale nada." },
+        { "speaker": "小李", "zh": "最后一分钟……西班牙又得分了！二比一，西班牙胜！", "py": "Zuìhòu yì fēnzhōng…… Xībānyá yòu défēn le! Èr bǐ yī, Xībānyá shèng!", "es": "Último minuto… ¡España ha vuelto a marcar! ¡Dos a uno, gana España!" },
+        { "speaker": "雨果", "zh": "胜利了！今天谁想喝什么，我都请客！", "py": "Shènglì le! Jīntiān shéi xiǎng hē shénme, wǒ dōu qǐngkè!", "es": "¡Hemos ganado! ¡Hoy invito yo a lo que quiera cada uno!" },
+        { "speaker": "大卫", "zh": "法国输了，可是他们也很不错。", "py": "Fǎguó shū le, kěshì tāmen yě hěn búcuò.", "es": "Francia ha perdido, pero también ha jugado muy bien." }
+      ],
+      "notes": "Los resultados se dicen con 比: 二比一 (2-1), 一比零 (1-0). En los titulares se usa 胜 («A 胜 B»); en la conversación, 赢 y 输. 谁想喝什么，我都请客 combina dos interrogativos: «lo que quiera beber cada uno, invito yo». 请客 = invitar (pagar la cuenta)."
+    },
+    { "type": "exercises", "count": 18, "bank": ["g-question-words", "g-ye-dou", "g-bu-mei"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "谁" }, "adverb": { "zh": "都" }, "aux": { "zh": "想" }, "verb1": { "zh": "看" }, "object": { "zh": "这场决赛" } }, "end": "。", "es": "Todo el mundo quiere ver esta final." }, "distractors": ["吗"] },
+        { "sentence": { "slots": { "subject": { "zh": "我" }, "adverb": { "zh": "什么都没" }, "verb1": { "zh": "买" } }, "end": "。", "es": "No he comprado nada." }, "distractors": ["不"] },
+        { "sentence": { "slots": { "time0": { "zh": "这次比赛" }, "subject": { "zh": "谁" }, "adverb": { "zh": "都" }, "aux": { "zh": "可以" }, "verb1": { "zh": "参加" } }, "end": "。", "es": "En esta competición puede participar cualquiera." } },
+        { "sentence": { "slots": { "time0": { "zh": "决赛那天晚上" }, "subject": { "zh": "我们" }, "adverb": { "zh": "哪儿都没" }, "verb1": { "zh": "去" } }, "end": "，", "es": "La noche de la final no fuimos a ningún sitio…" } },
+        { "sentence": { "slots": { "subject": { "zh": "我们" }, "adverb": { "zh": "就" }, "with": { "zh": "跟小李一起" }, "place": { "zh": "在宿舍" }, "verb1": { "zh": "看" }, "object": { "zh": "世界杯" } }, "end": "。", "es": "…y vimos el Mundial con Xiao Li en la residencia." } }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "谁都想看世界杯决赛。", "py": "Shéi dōu xiǎng kàn Shìjièbēi juésài.", "es": "Todo el mundo quiere ver la final del Mundial." },
+        { "zh": "我什么都吃。", "py": "Wǒ shénme dōu chī.", "es": "Como de todo." },
+        { "zh": "今天晚上我哪儿都不去。", "py": "Jīntiān wǎnshang wǒ nǎr dōu bú qù.", "es": "Esta noche no voy a ningún sitio." },
+        { "zh": "西班牙一比零领先！", "py": "Xībānyá yī bǐ líng lǐngxiān!", "es": "¡España va ganando uno a cero!" }
+      ],
+      "respond": [
+        { "q": { "zh": "这个周末你去哪儿？", "py": "Zhège zhōumò nǐ qù nǎr?", "es": "¿Adónde vas este fin de semana?" }, "model": { "zh": "我哪儿都不去，在宿舍休息。", "py": "Wǒ nǎr dōu bú qù, zài sùshè xiūxi.", "es": "No voy a ningún sitio; descanso en la residencia." } },
+        { "q": { "zh": "你有什么不吃的吗？", "py": "Nǐ yǒu shénme bù chī de ma?", "es": "¿Hay algo que no comas?" }, "model": { "zh": "没有，我什么都吃。", "py": "Méiyǒu, wǒ shénme dōu chī.", "es": "No, como de todo." } },
+        { "q": { "zh": "昨天的比赛谁赢了？", "py": "Zuótiān de bǐsài shéi yíng le?", "es": "¿Quién ganó el partido de ayer?" }, "model": { "zh": "西班牙赢了，二比一。", "py": "Xībānyá yíng le, èr bǐ yī.", "es": "Ganó España, dos a uno." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Una noche de Mundial",
+      "text": "世界杯决赛那天，宿舍里谁都不想睡觉。晚上十点，大家都来到雨果的房间，连平时什么运动都不看的大卫也来了。西班牙的排名比法国高，可是法国的实力也不错，谁都不知道谁会赢。比赛开始以后，雨果什么都不吃，什么都不喝，只看电视。第二十分钟，西班牙的一个年轻选手得分了，一比零领先。全场的人都站了起来，大家热烈地叫着。可是不久，法国也进了一个球。最后一分钟，西班牙又得分了！二比一，西班牙胜利了！雨果高兴得说不出话来。小李说：“你们的选手哪儿都好，跑得快，也很年轻。”大卫说：“法国输了，可是他们也是很好的对手。”那天晚上，大家一直聊到三点，谁都不觉得累。",
+      "es": "El día de la final del Mundial, en la residencia nadie quería dormir. A las diez de la noche todos fueron a la habitación de Hugo; vino hasta David, que normalmente no ve ningún deporte. España estaba más arriba en el ranking que Francia, pero Francia también tenía mucho nivel: nadie sabía quién iba a ganar. Cuando empezó el partido, Hugo no comía nada ni bebía nada: solo miraba la tele. En el minuto veinte marcó un jugador joven de España: uno a cero. Todo el público del estadio se puso de pie y gritaba con entusiasmo. Pero poco después Francia también metió un gol. ¡En el último minuto España volvió a marcar! ¡Dos a uno, victoria de España! Hugo estaba tan contento que no le salían las palabras. Xiao Li dijo: «Vuestros jugadores lo hacen todo bien: corren rápido y son muy jóvenes». David dijo: «Francia ha perdido, pero también ha sido un rival muy bueno». Esa noche estuvieron charlando hasta las tres, y nadie estaba cansado.",
+      "questions": [
+        { "q": "¿Quién vino aunque normalmente no ve deporte?", "options": ["大卫", "小李", "王老师"], "answer": 0 },
+        { "q": "¿Qué hacía Hugo durante el partido?", "options": ["什么都不吃，只看电视", "一直吃东西", "睡觉"], "answer": 0 },
+        { "q": "¿Cómo terminó el partido?", "options": ["二比一，西班牙胜", "一比一", "法国赢了"], "answer": 0 },
+        { "q": "¿Qué significa 谁都不觉得累?", "options": ["Nadie estaba cansado", "Todos estaban cansados", "Solo uno estaba cansado"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

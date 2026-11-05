@@ -1,0 +1,426 @@
+{
+  "unitId": "a2-u01",
+  "scenarios": [
+    {
+      "id": "a2-u01-customs",
+      "title": "En el control de pasaportes",
+      "zh": "在海关",
+      "level": 2,
+      "setting": "Hugo acaba de aterrizar en el aeropuerto internacional de Pudong y hace cola en el control de entrada. Tú (la app) eres la agente de fronteras.",
+      "role": "agente de fronteras",
+      "roleZh": "工作人员",
+      "voice": "f",
+      "goals": [
+        "Dar el pasaporte y el visado",
+        "Decir de dónde vienes y cuándo saliste (是…的)",
+        "Explicar a qué vienes",
+        "Preguntar dónde está la salida"
+      ],
+      "vocab": [
+        "护照",
+        "签证",
+        "是…的",
+        "出发",
+        "学习",
+        "出口"
+      ],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": {
+            "zh": "你好，请给我你的护照。",
+            "py": "Nǐ hǎo, qǐng gěi wǒ nǐde hùzhào.",
+            "es": "Hola, su pasaporte, por favor."
+          },
+          "user": [
+            {
+              "zh": "好的，这是我的护照和签证。",
+              "py": "Hǎode, zhè shì wǒde hùzhào hé qiānzhèng.",
+              "es": "Claro, aquí tiene mi pasaporte y mi visado.",
+              "keywords": [
+                "护照",
+                "签证"
+              ],
+              "next": "n2",
+              "goal": 0
+            },
+            {
+              "zh": "给您。",
+              "py": "Gěi nín.",
+              "es": "Tenga.",
+              "keywords": [
+                "给"
+              ],
+              "next": "n1b",
+              "goal": 0
+            }
+          ],
+          "hint": "Da el pasaporte (护照) y el visado (签证): 这是我的护照和签证。"
+        },
+        "n1b": {
+          "npc": {
+            "zh": "你的签证呢？",
+            "py": "Nǐde qiānzhèng ne?",
+            "es": "¿Y su visado?"
+          },
+          "user": [
+            {
+              "zh": "对不起，这是我的签证。",
+              "py": "Duìbuqǐ, zhè shì wǒde qiānzhèng.",
+              "es": "Perdone, aquí está mi visado.",
+              "keywords": [
+                "签证"
+              ],
+              "next": "n2",
+              "goal": 0
+            }
+          ],
+          "hint": "Te falta el visado: 这是我的签证。"
+        },
+        "n2": {
+          "npc": {
+            "zh": "你是从哪儿来的？",
+            "py": "Nǐ shì cóng nǎr lái de?",
+            "es": "¿De dónde viene?"
+          },
+          "user": [
+            {
+              "zh": "我是从马德里来的。",
+              "py": "Wǒ shì cóng Mǎdélǐ lái de.",
+              "es": "Vengo de Madrid.",
+              "keywords": [
+                "是从",
+                "来的"
+              ],
+              "next": "n3",
+              "goal": 1
+            },
+            {
+              "zh": "我来自西班牙。",
+              "py": "Wǒ láizì Xībānyá.",
+              "es": "Vengo de España.",
+              "keywords": [
+                "来自"
+              ],
+              "next": "n3",
+              "goal": 1
+            }
+          ],
+          "hint": "Contesta con 是从…来的 o con 来自 + país."
+        },
+        "n3": {
+          "npc": {
+            "zh": "你是什么时候出发的？",
+            "py": "Nǐ shì shénme shíhou chūfā de?",
+            "es": "¿Cuándo salió?"
+          },
+          "user": [
+            {
+              "zh": "我是昨天晚上出发的。",
+              "py": "Wǒ shì zuótiān wǎnshang chūfā de.",
+              "es": "Salí ayer por la noche.",
+              "keywords": [
+                "是",
+                "出发的"
+              ],
+              "next": "n4",
+              "goal": 1
+            },
+            {
+              "zh": "昨天晚上。",
+              "py": "Zuótiān wǎnshang.",
+              "es": "Ayer por la noche.",
+              "keywords": [
+                "昨天"
+              ],
+              "next": "n4",
+              "goal": 1
+            }
+          ],
+          "hint": "Detalle de tiempo: 我是 + cuándo + 出发的。"
+        },
+        "n4": {
+          "npc": {
+            "zh": "你来中国做什么？",
+            "py": "Nǐ lái Zhōngguó zuò shénme?",
+            "es": "¿A qué viene a China?"
+          },
+          "user": [
+            {
+              "zh": "我是来学习的，我是研究生。",
+              "py": "Wǒ shì lái xuéxí de, wǒ shì yánjiūshēng.",
+              "es": "Vengo a estudiar; soy estudiante de posgrado.",
+              "keywords": [
+                "学习",
+                "研究生"
+              ],
+              "next": "n5",
+              "goal": 2
+            },
+            {
+              "zh": "我来上海交通大学学习汉语。",
+              "py": "Wǒ lái Shànghǎi Jiāotōng Dàxué xuéxí Hànyǔ.",
+              "es": "Vengo a estudiar chino a la Universidad Jiaotong de Shanghái.",
+              "keywords": [
+                "学习"
+              ],
+              "next": "n5",
+              "goal": 2
+            }
+          ],
+          "hint": "Explica que vienes a estudiar: 我是来学习的。"
+        },
+        "n5": {
+          "npc": {
+            "zh": "好，欢迎你来中国！",
+            "py": "Hǎo, huānyíng nǐ lái Zhōngguó!",
+            "es": "Muy bien, ¡bienvenido a China!"
+          },
+          "user": [
+            {
+              "zh": "谢谢！请问，出口在哪儿？",
+              "py": "Xièxie! Qǐngwèn, chūkǒu zài nǎr?",
+              "es": "¡Gracias! Perdone, ¿dónde está la salida?",
+              "keywords": [
+                "出口",
+                "哪儿"
+              ],
+              "next": "n6",
+              "goal": 3
+            },
+            {
+              "zh": "谢谢！行李在哪儿拿？",
+              "py": "Xièxie! Xíngli zài nǎr ná?",
+              "es": "¡Gracias! ¿Dónde se recoge el equipaje?",
+              "keywords": [
+                "行李"
+              ],
+              "next": "n5b"
+            }
+          ],
+          "hint": "Pregunta por la salida: 出口在哪儿？"
+        },
+        "n5b": {
+          "npc": {
+            "zh": "行李在前边，出口在行李后边。",
+            "py": "Xíngli zài qiánbian, chūkǒu zài xíngli hòubian.",
+            "es": "El equipaje está más adelante, y la salida, detrás del equipaje."
+          },
+          "user": [
+            {
+              "zh": "好的，谢谢您！",
+              "py": "Hǎode, xièxie nín!",
+              "es": "Muy bien, ¡muchas gracias!",
+              "keywords": [
+                "谢谢"
+              ],
+              "next": "n6",
+              "goal": 3
+            }
+          ],
+          "hint": "Da las gracias: 谢谢您！"
+        },
+        "n6": {
+          "npc": {
+            "zh": "不客气。下一位！",
+            "py": "Bù kèqi. Xià yí wèi!",
+            "es": "De nada. ¡El siguiente!"
+          },
+          "end": true,
+          "feedback": "Has pasado el control: has dado los documentos, has contado de dónde y cuándo saliste con 是…的 y has explicado que vienes a estudiar. Recuerda: 是 va delante del detalle y 的 al final."
+        }
+      }
+    },
+    {
+      "id": "a2-u01-call-home",
+      "title": "Llamada a casa al llegar",
+      "zh": "给妈妈打电话",
+      "level": 2,
+      "setting": "Hugo acaba de llegar al hotel y llama por WeChat a su madre, que ha aprendido algo de chino para practicar con él. Tú (la app) eres la madre de Hugo.",
+      "role": "madre de Hugo",
+      "roleZh": "妈妈",
+      "voice": "f",
+      "goals": [
+        "Decir que has llegado bien",
+        "Contar a qué hora llegaste y quién te recogió",
+        "Contar cómo fuiste al hotel",
+        "Despedirte"
+      ],
+      "vocab": [
+        "到了",
+        "平安",
+        "接",
+        "是…的",
+        "出租车",
+        "酒店"
+      ],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": {
+            "zh": "喂，雨果！你到了吗？",
+            "py": "Wèi, Yǔguǒ! Nǐ dào le ma?",
+            "es": "¡Hola, Hugo! ¿Ya has llegado?"
+          },
+          "user": [
+            {
+              "zh": "到了，一路很平安。",
+              "py": "Dào le, yílù hěn píng'ān.",
+              "es": "Sí, el viaje ha ido bien.",
+              "keywords": [
+                "到了",
+                "平安"
+              ],
+              "next": "n2",
+              "goal": 0
+            },
+            {
+              "zh": "我到了，很顺利。",
+              "py": "Wǒ dào le, hěn shùnlì.",
+              "es": "Ya he llegado, todo ha ido bien.",
+              "keywords": [
+                "到了",
+                "顺利"
+              ],
+              "next": "n2",
+              "goal": 0
+            }
+          ],
+          "hint": "Di que has llegado (我到了) y que todo bien (很平安 / 很顺利)."
+        },
+        "n2": {
+          "npc": {
+            "zh": "太好了！你是几点到的？",
+            "py": "Tài hǎo le! Nǐ shì jǐ diǎn dào de?",
+            "es": "¡Qué bien! ¿A qué hora has llegado?"
+          },
+          "user": [
+            {
+              "zh": "我是下午两点到的。",
+              "py": "Wǒ shì xiàwǔ liǎng diǎn dào de.",
+              "es": "He llegado a las dos de la tarde.",
+              "keywords": [
+                "是",
+                "到的"
+              ],
+              "next": "n3",
+              "goal": 1
+            },
+            {
+              "zh": "两点到的。",
+              "py": "Liǎng diǎn dào de.",
+              "es": "A las dos.",
+              "keywords": [
+                "到的"
+              ],
+              "next": "n3",
+              "goal": 1
+            }
+          ],
+          "hint": "Detalle de tiempo con 是…的: 我是 + hora + 到的。"
+        },
+        "n3": {
+          "npc": {
+            "zh": "谁去机场接你了？",
+            "py": "Shéi qù jīchǎng jiē nǐ le?",
+            "es": "¿Quién ha ido a recogerte al aeropuerto?"
+          },
+          "user": [
+            {
+              "zh": "是安娜来接我的。",
+              "py": "Shì Ānnà lái jiē wǒ de.",
+              "es": "Ha sido Ana la que ha venido a buscarme.",
+              "keywords": [
+                "安娜",
+                "接"
+              ],
+              "next": "n4",
+              "goal": 1
+            },
+            {
+              "zh": "没有人接我，我是一个人来的。",
+              "py": "Méiyǒu rén jiē wǒ, wǒ shì yí ge rén lái de.",
+              "es": "No me ha recogido nadie; he venido solo.",
+              "keywords": [
+                "一个人"
+              ],
+              "next": "n4",
+              "goal": 1
+            }
+          ],
+          "hint": "Quién lo hizo: 是 + persona + 来接我的。"
+        },
+        "n4": {
+          "npc": {
+            "zh": "你是怎么去酒店的？",
+            "py": "Nǐ shì zěnme qù jiǔdiàn de?",
+            "es": "¿Cómo has ido al hotel?"
+          },
+          "user": [
+            {
+              "zh": "我是坐出租车去的。",
+              "py": "Wǒ shì zuò chūzūchē qù de.",
+              "es": "He ido en taxi.",
+              "keywords": [
+                "出租车"
+              ],
+              "next": "n5",
+              "goal": 2
+            },
+            {
+              "zh": "我是坐地铁去的。",
+              "py": "Wǒ shì zuò dìtiě qù de.",
+              "es": "He ido en metro.",
+              "keywords": [
+                "地铁"
+              ],
+              "next": "n5",
+              "goal": 2
+            }
+          ],
+          "hint": "Detalle de manera: 我是坐 + transporte + 去的。"
+        },
+        "n5": {
+          "npc": {
+            "zh": "好。出门要带护照，知道吗？",
+            "py": "Hǎo. Chūmén yào dài hùzhào, zhīdào ma?",
+            "es": "Bien. Cuando salgas, lleva el pasaporte, ¿vale?"
+          },
+          "user": [
+            {
+              "zh": "知道了。妈妈，再见！",
+              "py": "Zhīdào le. Māma, zàijiàn!",
+              "es": "Entendido. ¡Adiós, mamá!",
+              "keywords": [
+                "知道",
+                "再见"
+              ],
+              "next": "n6",
+              "goal": 3
+            },
+            {
+              "zh": "好的，我会带。明天给你打电话。再见！",
+              "py": "Hǎode, wǒ huì dài. Míngtiān gěi nǐ dǎ diànhuà. Zàijiàn!",
+              "es": "Vale, lo llevaré. Mañana te llamo. ¡Adiós!",
+              "keywords": [
+                "再见"
+              ],
+              "next": "n6",
+              "goal": 3
+            }
+          ],
+          "hint": "Dile que vale (知道了) y despídete (再见)."
+        },
+        "n6": {
+          "npc": {
+            "zh": "再见，雨果！",
+            "py": "Zàijiàn, Yǔguǒ!",
+            "es": "¡Adiós, Hugo!"
+          },
+          "end": true,
+          "feedback": "Muy bien: has dado la noticia con 了 (我到了) y los detalles con 是…的 (cuándo, quién, cómo). Esa es justo la diferencia de la unidad."
+        }
+      }
+    }
+  ]
+}

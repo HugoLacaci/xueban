@@ -1,0 +1,129 @@
+{
+  "unitId": "b1-u09",
+  "scenarios": [
+    {
+      "id": "b1-u09-lost-bag",
+      "title": "He perdido la mochila en el metro",
+      "zh": "在地铁站找包",
+      "level": 3,
+      "setting": "Hugo se ha dejado la mochila en un vagón de la línea 10 y va al mostrador de atención de la estación. Tú (la app) eres el empleado, que tiene varias mochilas parecidas y necesita una descripción precisa.",
+      "role": "empleado de la estación",
+      "roleZh": "地铁站工作人员",
+      "voice": "m",
+      "goals": ["Explicar qué has perdido y dónde", "Describir la mochila con varios atributos (color, tamaño, qué lleva)", "Distinguirla de otra parecida con una comparación", "Dar las gracias y despedirte"],
+      "vocab": ["包", "深蓝色", "不大不小", "里面", "看起来", "比", "相似", "区别", "具体"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "你好，有什么可以帮你的？", "py": "Nǐ hǎo, yǒu shénme kěyǐ bāng nǐ de?", "es": "Hola, ¿en qué puedo ayudarte?" },
+          "user": [
+            { "zh": "你好，我的包丢在地铁上了。", "py": "Nǐ hǎo, wǒ de bāo diū zài dìtiě shang le.", "es": "Hola, me he dejado la mochila en el metro.", "keywords": ["包", "丢"], "next": "n2", "goal": 0 },
+            { "zh": "请问，有没有人找到一个深蓝色的包？", "py": "Qǐngwèn, yǒu méiyǒu rén zhǎo dào yí ge shēn lánsè de bāo?", "es": "Perdone, ¿alguien ha encontrado una mochila azul oscuro?", "keywords": ["深蓝色", "包", "找到"], "next": "n3", "goal": 1 }
+          ],
+          "hint": "Explica qué te ha pasado: 我的包丢在……了, o pregunta directamente si han encontrado tu mochila (有没有人找到……)."
+        },
+        "n2": {
+          "npc": { "zh": "别着急。你是在几号线、什么时候丢的？", "py": "Bié zháojí. Nǐ shì zài jǐ hào xiàn, shénme shíhou diū de?", "es": "Tranquilo. ¿En qué línea y cuándo la perdiste?" },
+          "user": [
+            { "zh": "是在十号线上丢的，大概半个小时以前。", "py": "Shì zài shí hào xiàn shang diū de, dàgài bàn ge xiǎoshí yǐqián.", "es": "En la línea 10, hace una media hora.", "keywords": ["十号线", "以前"], "next": "n3", "goal": 0 }
+          ],
+          "hint": "Usa 是……的 para decir dónde y cuándo: 是在……号线上丢的, 大概……以前."
+        },
+        "n3": {
+          "npc": { "zh": "我们今天找到了好几个包。你的包是什么样子的？请说得具体一点儿。", "py": "Wǒmen jīntiān zhǎo dào le hǎo jǐ ge bāo. Nǐ de bāo shì shénme yàngzi de? Qǐng shuō de jùtǐ yìdiǎnr.", "es": "Hoy han aparecido unas cuantas mochilas. ¿Cómo es la tuya? Descríbela con detalle, por favor." },
+          "user": [
+            { "zh": "是一个不大不小的深蓝色的包，里面有一台电脑和两本汉语书。", "py": "Shì yí ge bú dà bù xiǎo de shēn lánsè de bāo, lǐmian yǒu yì tái diànnǎo hé liǎng běn Hànyǔ shū.", "es": "Es una mochila azul oscuro, de tamaño mediano; dentro hay un ordenador y dos libros de chino.", "keywords": ["不大不小", "深蓝色", "电脑"], "next": "n4", "goal": 1 },
+            { "zh": "我的包是深蓝色的，看起来有点儿旧。", "py": "Wǒ de bāo shì shēn lánsè de, kàn qilai yǒudiǎnr jiù.", "es": "Mi mochila es azul oscuro y se ve un poco vieja.", "keywords": ["深蓝色", "看起来", "旧"], "next": "n3b", "goal": 1 }
+          ],
+          "hint": "Pon los atributos delante del nombre: 一个 + 不大不小的 + 深蓝色的 + 包. Di también qué lleva dentro (里面有……)."
+        },
+        "n3b": {
+          "npc": { "zh": "深蓝色的包有两个，看起来都差不多。里面有什么东西？", "py": "Shēn lánsè de bāo yǒu liǎng ge, kàn qilai dōu chàbuduō. Lǐmian yǒu shénme dōngxi?", "es": "Hay dos mochilas azul oscuro y parecen casi iguales. ¿Qué llevaba dentro?" },
+          "user": [
+            { "zh": "里面有一台电脑和两本汉语书，书上写着我的名字。", "py": "Lǐmian yǒu yì tái diànnǎo hé liǎng běn Hànyǔ shū, shū shang xiě zhe wǒ de míngzi.", "es": "Un ordenador y dos libros de chino con mi nombre escrito.", "keywords": ["电脑", "书", "名字"], "next": "n4", "goal": 1 }
+          ],
+          "hint": "Sé concreto: qué hay dentro y si hay algo con tu nombre (写着我的名字)."
+        },
+        "n4": {
+          "npc": { "zh": "这两个包很相似，你看看，哪个是你的？", "py": "Zhè liǎng ge bāo hěn xiāngsì, nǐ kànkan, nǎ ge shì nǐ de?", "es": "Estas dos mochilas se parecen mucho. Mira, ¿cuál es la tuya?" },
+          "user": [
+            { "zh": "左边那个是我的，它比右边那个大一点儿。", "py": "Zuǒbian nàge shì wǒ de, tā bǐ yòubian nàge dà yìdiǎnr.", "es": "La de la izquierda es la mía: es un poco más grande que la de la derecha.", "keywords": ["左边", "比", "大一点儿"], "next": "n5", "goal": 2 },
+            { "zh": "它们的区别是：我的包颜色比那个深一点儿。", "py": "Tāmen de qūbié shì: wǒ de bāo yánsè bǐ nàge shēn yìdiǎnr.", "es": "La diferencia es que la mía es de un color un poco más oscuro que aquella.", "keywords": ["区别", "比", "深"], "next": "n5", "goal": 2 }
+          ],
+          "hint": "Compara: 我的包比那个 + adjetivo + 一点儿 (la diferencia va detrás del adjetivo)."
+        },
+        "n5": {
+          "npc": { "zh": "对，里面有电脑和书，是你的。请在这儿写一下你的名字和电话。", "py": "Duì, lǐmian yǒu diànnǎo hé shū, shì nǐ de. Qǐng zài zhèr xiě yíxià nǐ de míngzi hé diànhuà.", "es": "Sí, lleva el ordenador y los libros: es tuya. Escribe aquí tu nombre y tu teléfono, por favor." },
+          "user": [
+            { "zh": "太好了！我高兴极了，真是太谢谢你了！", "py": "Tài hǎo le! Wǒ gāoxìng jí le, zhēn shì tài xièxie nǐ le!", "es": "¡Genial! ¡Me alegro muchísimo, de verdad, muchas gracias!", "keywords": ["极了", "谢谢"], "next": "n6", "goal": 3 },
+            { "zh": "好的，写好了。刚才我急坏了，谢谢你！", "py": "Hǎo de, xiě hǎo le. Gāngcái wǒ jí huài le, xièxie nǐ!", "es": "Vale, ya está. Hace un momento estaba agobiadísimo. ¡Gracias!", "keywords": ["急坏了", "谢谢"], "next": "n6", "goal": 3 }
+          ],
+          "hint": "Da las gracias con un intensificador: 高兴极了, 急坏了."
+        },
+        "n6": {
+          "npc": { "zh": "不客气。下次下车的时候小心一点儿！", "py": "Bú kèqi. Xià cì xià chē de shíhou xiǎoxīn yìdiǎnr!", "es": "De nada. ¡La próxima vez, cuidado al bajar!" },
+          "end": true,
+          "feedback": "Has descrito la mochila con varios atributos en el orden chino (一个不大不小的深蓝色的包), la has distinguido con una comparación (比那个大一点儿) y has cerrado con 极了 / 坏了. Recuerda: todo lo que describe va delante del nombre."
+        }
+      }
+    },
+    {
+      "id": "b1-u09-phone-shop",
+      "title": "Comparar dos móviles en la tienda",
+      "zh": "在手机店",
+      "level": 3,
+      "setting": "Hugo quiere comprarse un móvil nuevo y duda entre dos modelos. Tú (la app) eres la dependienta de la tienda.",
+      "role": "dependienta",
+      "roleZh": "店员",
+      "voice": "f",
+      "goals": ["Preguntar qué diferencia hay entre dos modelos", "Entender y hacer comparaciones (比…拍得清楚, 比…便宜…块)", "Decir qué necesitas tú y por qué", "Elegir uno y pagar"],
+      "vocab": ["区别", "功能", "比", "拍照", "便宜", "优势", "更", "适合"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "欢迎光临！你想看看什么手机？", "py": "Huānyíng guānglín! Nǐ xiǎng kànkan shénme shǒujī?", "es": "¡Bienvenido! ¿Qué móvil quieres ver?" },
+          "user": [
+            { "zh": "我想看看这两种。它们有什么区别？", "py": "Wǒ xiǎng kànkan zhè liǎng zhǒng. Tāmen yǒu shénme qūbié?", "es": "Quería ver estos dos. ¿Qué diferencia hay entre ellos?", "keywords": ["区别"], "next": "n2", "goal": 0 },
+            { "zh": "这两种手机看起来很相似，哪个更好？", "py": "Zhè liǎng zhǒng shǒujī kàn qilai hěn xiāngsì, nǎ ge gèng hǎo?", "es": "Estos dos móviles parecen muy similares: ¿cuál es mejor?", "keywords": ["相似", "更好"], "next": "n2", "goal": 0 }
+          ],
+          "hint": "Pregunta por la diferencia (有什么区别) o cuál es mejor (哪个更好)."
+        },
+        "n2": {
+          "npc": { "zh": "它们的功能差不多。不过这个拍照比那个拍得清楚多了，那个比这个便宜五百块。", "py": "Tāmen de gōngnéng chàbuduō. Búguò zhège pāizhào bǐ nàge pāi de qīngchu duō le, nàge bǐ zhège piányi wǔbǎi kuài.", "es": "Tienen casi las mismas funciones. Pero este hace fotos mucho más nítidas que aquel, y aquel es quinientos yuanes más barato que este." },
+          "user": [
+            { "zh": "我常常拍照，给家里人发照片。那个便宜的拍得怎么样？", "py": "Wǒ chángcháng pāizhào, gěi jiā li rén fā zhàopiàn. Nàge piányi de pāi de zěnmeyàng?", "es": "Hago muchas fotos para mandárselas a mi familia. ¿Qué tal las hace el barato?", "keywords": ["拍照", "拍得怎么样"], "next": "n3", "goal": 2 },
+            { "zh": "除了拍照，这个还有什么优势？", "py": "Chúle pāizhào, zhège hái yǒu shénme yōushì?", "es": "Además de la cámara, ¿qué otras ventajas tiene este?", "keywords": ["优势"], "next": "n3b", "goal": 1 }
+          ],
+          "hint": "Di lo que necesitas (我常常……) o pregunta por otras ventajas (还有什么优势)."
+        },
+        "n3": {
+          "npc": { "zh": "也不错，不过晚上拍的照片没有这个清楚。", "py": "Yě búcuò, búguò wǎnshang pāi de zhàopiàn méiyǒu zhège qīngchu.", "es": "Tampoco están mal, pero las fotos de noche no son tan nítidas como con este." },
+          "user": [
+            { "zh": "那这个更适合我。贵五百块也值得。", "py": "Nà zhège gèng shìhé wǒ. Guì wǔbǎi kuài yě zhíde.", "es": "Entonces este me va mejor. Aunque cueste quinientos más, merece la pena.", "keywords": ["更适合", "值得"], "next": "n4", "goal": 2 }
+          ],
+          "hint": "Decide: 这个更适合我, y justifica que la diferencia de precio merece la pena (值得)."
+        },
+        "n3b": {
+          "npc": { "zh": "这个打开什么都比那个快，用的时间也比那个长两个小时。", "py": "Zhège dǎkāi shénme dōu bǐ nàge kuài, yòng de shíjiān yě bǐ nàge cháng liǎng ge xiǎoshí.", "es": "Abre cualquier cosa más rápido que aquel, y la batería le dura dos horas más." },
+          "user": [
+            { "zh": "听起来这个比那个好得多。我就买这个吧。", "py": "Tīng qilai zhège bǐ nàge hǎo de duō. Wǒ jiù mǎi zhège ba.", "es": "Por lo que dices, este es mucho mejor que aquel. Me quedo con este.", "keywords": ["好得多", "买这个"], "next": "n4", "goal": 2 }
+          ],
+          "hint": "Resume la comparación (比那个好得多) y elige."
+        },
+        "n4": {
+          "npc": { "zh": "好的，一共三千九百九十九块。微信还是支付宝？", "py": "Hǎo de, yígòng sānqiān jiǔbǎi jiǔshíjiǔ kuài. Wēixìn háishi Zhīfùbǎo?", "es": "Muy bien, son 3999 yuanes en total. ¿WeChat o Alipay?" },
+          "user": [
+            { "zh": "微信吧。谢谢你，你介绍得很清楚！", "py": "Wēixìn ba. Xièxie nǐ, nǐ jièshào de hěn qīngchu!", "es": "WeChat. ¡Gracias, me lo has explicado muy bien!", "keywords": ["微信", "谢谢"], "next": "n5", "goal": 3 },
+            { "zh": "我用支付宝。这个手机我满意极了！", "py": "Wǒ yòng Zhīfùbǎo. Zhège shǒujī wǒ mǎnyì jí le!", "es": "Pago con Alipay. ¡Estoy contentísimo con este móvil!", "keywords": ["支付宝", "极了"], "next": "n5", "goal": 3 }
+          ],
+          "hint": "Elige cómo pagar y da las gracias (介绍得很清楚) o di lo contento que estás (满意极了)."
+        },
+        "n5": {
+          "npc": { "zh": "不客气，有问题随时来找我们！", "py": "Bú kèqi, yǒu wèntí suíshí lái zhǎo wǒmen!", "es": "De nada. ¡Si tienes algún problema, ven cuando quieras!" },
+          "end": true,
+          "feedback": "Has comparado acciones y cantidades: 拍得比那个清楚, 便宜五百块, 比那个好得多. Recuerda: con 比 nunca 很, y la diferencia va detrás del adjetivo."
+        }
+      }
+    }
+  ]
+}

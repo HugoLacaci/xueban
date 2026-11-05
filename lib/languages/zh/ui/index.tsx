@@ -1,5 +1,8 @@
 "use client";
 /** Componentes propios del paquete chino, expuestos al núcleo a través de pack.ui. */
+import { CharOfDayStep } from "./char-of-day-step";
+import { PinyinGrid } from "./pinyin-grid";
+import { ChaoDiagram, PinyinRules } from "./tone-rules";
 import { useEffect, useState } from "react";
 import type { LanguageUI, ReadingInputProps } from "@/lib/languages/types";
 import { Input } from "@/components/ui/primitives";
@@ -13,7 +16,7 @@ import { CharactersPage } from "./characters-page";
 import { CharDetail } from "./char-detail";
 import { RadicalPicker } from "./radical-picker";
 import { HandwritingPad } from "@/components/target/handwriting-pad";
-import { PinyinTableStep, TonesStep, TonePairsStep, StrokesStep, RadicalsStep, SpanishErrorsStep } from "./special-steps";
+import { TonesStep, TonePairsStep, StrokesStep, RadicalsStep, SpanishErrorsStep } from "./special-steps";
 import { CharOfDay } from "./char-of-day";
 import type { Candidate } from "@/lib/handwriting";
 
@@ -112,12 +115,15 @@ export const zhUI: LanguageUI = {
   CharacterDetail: ({ char, onNavigate }) => <CharDetail ch={char} onNavigate={onNavigate} />,
   DictionaryExtras,
   modules: {
-    "pinyin-table": PinyinTableStep,
+    "pinyin-table": PinyinGrid,
     tones: TonesStep,
     "tone-pairs": TonePairsStep,
     strokes: StrokesStep,
     radicals: ({ params }) => <RadicalsStep radicals={(params?.radicals as string[]) ?? []} />,
     "spanish-errors": SpanishErrorsStep,
+    "char-of-day": CharOfDayStep,
+    "chao-diagram": ChaoDiagram,
+    "pinyin-rules": PinyinRules,
   },
   ReadingInput: PinyinInputField,
   PronunciationView: TonePitchView,

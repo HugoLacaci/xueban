@@ -1,0 +1,130 @@
+{
+  "id": "a1-u18-l3",
+  "title": "Las estaciones: 快…了 y 要…了",
+  "zh": "冬天快到了",
+  "goal": "Nombrar las cuatro estaciones y decir que algo está a punto de pasar con 快…了 / 快要…了 / 要…了.",
+  "minutes": 14,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "春天", "pinyin": "chūntiān", "es": "primavera" },
+    { "hanzi": "夏天", "pinyin": "xiàtiān", "es": "verano" },
+    { "hanzi": "秋天", "pinyin": "qiūtiān", "es": "otoño" },
+    { "hanzi": "冬天", "pinyin": "dōngtiān", "es": "invierno" },
+    { "hanzi": "大衣", "pinyin": "dàyī", "es": "abrigo", "note": "Con clasificador 件: 一件大衣." },
+    { "hanzi": "花", "pinyin": "huā", "es": "flor", "note": "花开了 = las flores se han abierto." },
+    { "hanzi": "快", "pinyin": "kuài", "es": "rápido; (快…了) a punto de", "note": "Repaso de la U8 con un uso nuevo: 快下雨了 = va a llover enseguida." },
+    { "hanzi": "要", "pinyin": "yào", "es": "querer; (要…了) ir a, estar a punto de", "note": "Repaso de la U9 con un uso nuevo: 要下课了 = la clase está a punto de acabar." },
+    { "hanzi": "热", "pinyin": "rè", "es": "calor; caluroso", "note": "Repaso de la Etapa 0." }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "冬天快到了。", "py": "Dōngtiān kuài dào le.", "es": "Ya casi llega el invierno." },
+        { "zh": "快下雨了，我们走吧！", "py": "Kuài xià yǔ le, wǒmen zǒu ba!", "es": "Va a llover enseguida: ¡vámonos!" },
+        { "zh": "我喜欢秋天，不冷也不热。", "py": "Wǒ xǐhuan qiūtiān, bù lěng yě bú rè.", "es": "Me gusta el otoño: ni hace frío ni calor." }
+      ]
+    },
+    { "type": "vocab", "title": "Las cuatro estaciones", "words": ["春天", "夏天", "秋天", "冬天", "大衣", "花", "快", "要", "热"] },
+    {
+      "type": "phonetics-drill",
+      "title": "ch / q y x / sh: 春 y 秋",
+      "markdown": "春 **chūn** y 秋 **qiū** empiezan los dos con un sonido parecido a la «ch» española, pero no son iguales:\n\n- **ch**: la punta de la lengua **doblada hacia atrás**, con mucho aire. 春, 吃.\n- **q**: la lengua **plana**, apoyada detrás de los dientes de abajo, y los labios estirados como sonriendo. Solo va delante de *i* o *ü*: 秋, 去, 七.\n\nLo mismo pasa con **sh** (lengua atrás) y **x** (lengua plana): 夏 **xià**, no *shà*.",
+      "items": [
+        { "audio": "春天", "options": ["chūntiān", "qūntiān", "cūntiān"], "answer": 0, "explain": "ch con la lengua doblada hacia atrás." },
+        { "audio": "秋天", "options": ["qiūtiān", "chōutiān", "jiūtiān"], "answer": 0, "explain": "q con la lengua plana y mucho aire (j no lleva aire)." },
+        { "audio": "夏天", "options": ["xiàtiān", "shàtiān", "jiàtiān"], "answer": 0, "explain": "x con la lengua plana, como una «s» sonriendo." },
+        { "audio": "冬天", "options": ["dōngtiān", "tōngtiān", "dēngtiān"], "answer": 0, "explain": "d sin aire; -ong con los labios redondos." },
+        { "audio": "七", "options": ["qī", "chī"], "answer": 0, "explain": "七 qī (lengua plana) frente a 吃 chī (lengua atrás)." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["春", "秋"],
+      "mnemonics": {
+        "春": "Arriba, brotes que empujan (antes era 艸, hierba); abajo, 日 (sol): el sol hace brotar las plantas = primavera.",
+        "秋": "禾 (planta de cereal) + 火 (fuego): tras la cosecha se queman los rastrojos = otoño."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "快…了 / 快要…了 / 要…了: a punto de pasar",
+      "markdown": "Para decir que algo **va a pasar enseguida**, se envuelve el verbo:\n\n**快** / **快要** / **要** (en el hueco de los **adverbios**) + verbo + **了** (al final).\n\n- 快下雨**了**。 Va a llover enseguida.\n- 冬天快要到**了**。 Ya casi llega el invierno.\n- 我们要放假**了**。 Nos vamos a ir de vacaciones.\n\nAquí **要 no es «querer»**: significa «estar a punto de», y por eso lo dibujamos en el hueco de los adverbios, junto a 快.\n\n**El 了 es obligatorio**: sin él la frase queda coja. 快 también va delante de un **nombre** de tiempo: 快十二点了 (ya casi son las doce), 快冬天了.\n\nCon una **fecha u hora concreta** no se usa 快 / 快要: se dice 明天**要**考试**了** o 明天**就要**考试了 (就 lo verás en la U21).\n\n**Negativa**: la de una predicción suele ser 不会 + verbo (明天不会下雨) o 还不 + adjetivo (现在还不冷).",
+      "focus": ["adverb", "particle"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "冬天", "py": "dōngtiān" }, "adverb": { "zh": "快", "py": "kuài" }, "verb1": { "zh": "到", "py": "dào" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Ya casi llega el invierno.", "esOrder": [{ "text": "Ya casi", "slot": "adverb" }, { "text": "llega", "slot": "verb1" }, { "text": "el invierno", "slot": "subject" }] },
+        { "slots": { "adverb": { "zh": "快", "py": "kuài" }, "verb1": { "zh": "下雨", "py": "xià yǔ" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Va a llover enseguida." },
+        { "slots": { "subject": { "zh": "我们", "py": "wǒmen" }, "adverb": { "zh": "要", "py": "yào" }, "verb1": { "zh": "放假", "py": "fàngjià" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Nos vamos a ir de vacaciones." },
+        { "slots": { "subject": { "zh": "花", "py": "huā" }, "adverb": { "zh": "快要", "py": "kuàiyào" }, "verb1": { "zh": "开", "py": "kāi" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Las flores están a punto de abrirse." },
+        { "slots": { "adverb": { "zh": "快", "py": "kuài" }, "object": { "zh": "十二点", "py": "shí'èr diǎn" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Ya casi son las doce." }
+      ],
+      "negative": [
+        { "slots": { "time0": { "zh": "明天", "py": "míngtiān" }, "adverb": { "zh": "不", "py": "bú" }, "aux": { "zh": "会", "py": "huì" }, "verb1": { "zh": "下雨", "py": "xià yǔ" } }, "end": "。", "es": "Mañana no va a llover." },
+        { "slots": { "time0": { "zh": "现在", "py": "xiànzài" }, "adverb": { "zh": "还不", "py": "hái bù" }, "verb1": { "zh": "冷", "py": "lěng" } }, "end": "。", "es": "Ahora todavía no hace frío." }
+      ],
+      "question": [
+        { "slots": { "adverb": { "zh": "要", "py": "yào" }, "verb1": { "zh": "下雨", "py": "xià yǔ" }, "particle": { "zh": "了吗", "py": "le ma" } }, "end": "？", "es": "¿Va a llover?" },
+        { "slots": { "subject": { "zh": "春天", "py": "chūntiān" }, "adverb": { "zh": "快", "py": "kuài" }, "verb1": { "zh": "到", "py": "dào" }, "particle": { "zh": "了吗", "py": "le ma" } }, "end": "？", "es": "¿Ya casi llega la primavera?" }
+      ],
+      "mistakes": [
+        { "wrong": "快下雨。", "right": "快下雨了。", "why": "快…了 va siempre con su 了 final." },
+        { "wrong": "明天快考试了。", "right": "明天要考试了。", "why": "Con un momento concreto (明天, 八点…) no se usa 快: usa 要…了 (o 就要…了)." },
+        { "wrong": "我快要了下课。", "right": "我快要下课了。", "why": "Este 了 va al final de la frase, no detrás del verbo." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "En clase, a finales de noviembre",
+      "lines": [
+        { "speaker": "王老师", "zh": "雨果，你喜欢上海的秋天吗？", "py": "Yǔguǒ, nǐ xǐhuan Shànghǎi de qiūtiān ma?", "es": "Hugo, ¿te gusta el otoño de Shanghái?" },
+        { "speaker": "雨果", "zh": "喜欢！秋天不冷也不热，很凉快。", "py": "Xǐhuan! Qiūtiān bù lěng yě bú rè, hěn liángkuai.", "es": "¡Sí! En otoño ni hace frío ni calor: está fresquito." },
+        { "speaker": "王老师", "zh": "冬天快到了，上海的冬天很冷。", "py": "Dōngtiān kuài dào le, Shànghǎi de dōngtiān hěn lěng.", "es": "Ya casi llega el invierno, y el invierno de Shanghái es muy frío." },
+        { "speaker": "雨果", "zh": "真的吗？我没有大衣。", "py": "Zhēn de ma? Wǒ méiyǒu dàyī.", "es": "¿En serio? No tengo abrigo." },
+        { "speaker": "王老师", "zh": "你要买一件大衣。上海冬天不常下雪，有时候下雨，很冷。", "py": "Nǐ yào mǎi yí jiàn dàyī. Shànghǎi dōngtiān bù cháng xià xuě, yǒu shíhou xià yǔ, hěn lěng.", "es": "Tienes que comprarte un abrigo. En invierno en Shanghái no suele nevar, pero a veces llueve y hace mucho frío." },
+        { "speaker": "雨果", "zh": "西班牙的冬天不太冷，夏天非常热！", "py": "Xībānyá de dōngtiān bú tài lěng, xiàtiān fēicháng rè!", "es": "En España el invierno no es muy frío, ¡pero el verano es calurosísimo!" },
+        { "speaker": "王老师", "zh": "上海的夏天也很热。我最喜欢春天，有很多花。", "py": "Shànghǎi de xiàtiān yě hěn rè. Wǒ zuì xǐhuan chūntiān, yǒu hěn duō huā.", "es": "El verano de Shanghái también es muy caluroso. A mí lo que más me gusta es la primavera: hay muchas flores." },
+        { "speaker": "雨果", "zh": "老师，快下课了吧？", "py": "Lǎoshī, kuài xiàkè le ba?", "es": "Profesora, ya casi se acaba la clase, ¿no?" },
+        { "speaker": "王老师", "zh": "对，要下课了。", "py": "Duì, yào xiàkè le.", "es": "Sí, ya vamos a terminar." }
+      ],
+      "notes": "快下课了吧？ = 快…了 + 吧 para pedir confirmación («¿no?»). La calefacción central solo existe al norte del río Yangtsé: en Shanghái muchas aulas y residencias no la tienen, por eso el invierno se nota tanto."
+    },
+    { "type": "exercises", "count": 15, "bank": ["g-le", "u10", "g-tai-le"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "春天" }, "adverb": { "zh": "快" }, "verb1": { "zh": "到" }, "particle": { "zh": "了" } }, "end": "。", "es": "Ya casi llega la primavera." }, "distractors": ["吗"] },
+        { "sentence": { "slots": { "subject": { "zh": "我们" }, "adverb": { "zh": "要" }, "verb1": { "zh": "放假" }, "particle": { "zh": "了" } }, "end": "！", "es": "¡Nos vamos de vacaciones!" } },
+        { "sentence": { "slots": { "adverb": { "zh": "快" }, "object": { "zh": "八点" }, "particle": { "zh": "了" } }, "end": "。", "es": "Ya casi son las ocho." }, "distractors": ["是"] },
+        { "sentence": { "slots": { "subject": { "zh": "我" }, "time": { "zh": "明天" }, "aux": { "zh": "想" }, "verb1": { "zh": "去商场" }, "verb2": { "zh": "买" }, "object": { "zh": "一件大衣" } }, "end": "。", "es": "Mañana quiero ir al centro comercial a comprarme un abrigo." }, "distractors": ["了"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "冬天快到了。", "py": "Dōngtiān kuài dào le.", "es": "Ya casi llega el invierno." },
+        { "zh": "快下雨了，我们走吧！", "py": "Kuài xià yǔ le, wǒmen zǒu ba!", "es": "Va a llover enseguida: ¡vámonos!" },
+        { "zh": "我最喜欢秋天。", "py": "Wǒ zuì xǐhuan qiūtiān.", "es": "La estación que más me gusta es el otoño." },
+        { "zh": "上海的夏天非常热。", "py": "Shànghǎi de xiàtiān fēicháng rè.", "es": "El verano de Shanghái es calurosísimo." }
+      ],
+      "respond": [
+        { "q": { "zh": "你最喜欢春天、夏天、秋天还是冬天？", "py": "Nǐ zuì xǐhuan chūntiān, xiàtiān, qiūtiān háishi dōngtiān?", "es": "¿Qué te gusta más: la primavera, el verano, el otoño o el invierno?" }, "model": { "zh": "我喜欢春天，有很多花。", "py": "Wǒ xǐhuan chūntiān, yǒu hěn duō huā.", "es": "Me gusta la primavera: hay muchas flores." } },
+        { "q": { "zh": "西班牙的夏天热吗？", "py": "Xībānyá de xiàtiān rè ma?", "es": "¿El verano de España es caluroso?" }, "model": { "zh": "非常热，有时候四十度！", "py": "Fēicháng rè, yǒu shíhou sìshí dù!", "es": "Muchísimo: ¡a veces hay cuarenta grados!" } },
+        { "q": { "zh": "快下课了吗？", "py": "Kuài xiàkè le ma?", "es": "¿Ya casi termina la clase?" }, "model": { "zh": "对，快下课了。", "py": "Duì, kuài xiàkè le.", "es": "Sí, ya casi." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Las estaciones de Hugo",
+      "text": "西班牙的夏天非常热，冬天不太冷。上海的春天有很多花，夏天很热，常常下雨，秋天最凉快。现在是十一月，冬天快到了，天冷了。雨果没有大衣，他明天要去商场买一件。",
+      "es": "En España el verano es calurosísimo y el invierno no es muy frío. En Shanghái, en primavera hay muchas flores; el verano es muy caluroso y llueve a menudo; el otoño es la estación más fresca. Ahora es noviembre, ya casi llega el invierno y empieza a hacer frío. Hugo no tiene abrigo: mañana irá al centro comercial a comprarse uno.",
+      "questions": [
+        { "q": "¿Cómo es el verano en Shanghái?", "options": ["很热，常常下雨", "不太冷", "最凉快"], "answer": 0 },
+        { "q": "¿Qué estación está a punto de llegar?", "options": ["冬天", "春天", "夏天"], "answer": 0 },
+        { "q": "¿Qué va a comprar Hugo?", "options": ["一件大衣", "伞", "花"], "answer": 0 },
+        { "q": "¿Qué significa 天冷了?", "options": ["Ya hace frío (antes no)", "Siempre hace frío", "Va a hacer frío"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

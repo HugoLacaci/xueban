@@ -1,0 +1,153 @@
+{
+  "id": "a2-u07-l4",
+  "title": "Las tres «de»: 的, 地, 得 (y 高高兴兴地)",
+  "zh": "她画画儿画得很好",
+  "goal": "Distinguir 的 (delante de un nombre), 地 (delante de un verbo) y 得 (detrás del verbo); describir con frases como 唱歌的女孩儿 y con adjetivos doblados (高高兴兴地).",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "画", "pinyin": "huà", "es": "pintar, dibujar; cuadro", "note": "画画儿 = pintar, dibujar (verbo + objeto)." },
+    { "hanzi": "画儿", "pinyin": "huàr", "es": "cuadro, dibujo", "note": "Con erhua: huàr. 一张画儿 = un dibujo." },
+    { "hanzi": "画家", "pinyin": "huàjiā", "es": "pintor, pintora", "note": "家 = experto en algo: 画家, 作家, 科学家." },
+    { "hanzi": "拍", "pinyin": "pāi", "es": "hacer (fotos), grabar (vídeo); dar palmadas", "note": "拍照片 = hacer fotos; 拍视频 = grabar un vídeo." },
+    { "hanzi": "图片", "pinyin": "túpiàn", "es": "imagen, foto (en pantalla o en papel)" },
+    { "hanzi": "养", "pinyin": "yǎng", "es": "tener, criar (animales, plantas)", "note": "养猫 = tener gato; 养花 = tener plantas." },
+    { "hanzi": "鸟", "pinyin": "niǎo", "es": "pájaro", "note": "Clasificador 只: 两只鸟. 小鸟 = pajarito." },
+    { "hanzi": "小说", "pinyin": "xiǎoshuō", "es": "novela", "note": "Clasificador 本: 一本小说." },
+    { "hanzi": "故事", "pinyin": "gùshi", "es": "cuento, historia", "note": "讲故事 = contar un cuento." }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "这是我爷爷画的画儿。", "py": "Zhè shì wǒ yéye huà de huàr.", "es": "Este es un cuadro que ha pintado mi abuelo." },
+        { "zh": "那个唱歌的女孩儿是谁？", "py": "Nàge chànggē de nǚháir shì shéi?", "es": "¿Quién es la chica que canta?" },
+        { "zh": "大家高高兴兴地回家了。", "py": "Dàjiā gāogāoxìngxìng de huí jiā le.", "es": "Todos se fueron a casa contentísimos." }
+      ]
+    },
+    { "type": "vocab", "title": "Pintar, leer y tener mascotas", "words": ["画", "画儿", "画家", "拍", "图片", "养", "鸟", "小说", "故事"] },
+    {
+      "type": "phonetics-drill",
+      "title": "Erhua (画儿) y las tres «de» sin tono",
+      "markdown": "**Erhua**: en el norte (y en el chino estándar) muchas palabras terminan en **-r**: la lengua se dobla hacia atrás al final de la sílaba, **sin añadir otra sílaba**. 画 *huà* → 画儿 *huàr*; 玩 → 玩儿 *wánr*. No digas *huà-ér* en dos golpes. En Shanghái oirás menos erhua, pero en la tele y en los exámenes es lo normal.\n\n**的, 地, 得**: las tres se leen **de**, en **tono neutro**, cortas y flojas. 地 solo es *dì* cuando significa «suelo, tierra» (地方, 地铁).\n\nY repasa **n / l**: 鸟 *niǎo* (n) frente a 了 *liǎo* (l).",
+      "items": [
+        { "audio": "画儿", "options": ["huàr", "huà ér", "huā"], "answer": 0, "explain": "Una sola sílaba con la lengua doblada al final." },
+        { "audio": "认真地", "prompt": "¿Cómo suena 地 aquí?", "options": ["de (tono neutro)", "dì (cuarto tono, como en 地方)", "dé"], "answer": 0 },
+        { "audio": "鸟", "options": ["niǎo", "liǎo", "nǎo"], "answer": 0, "explain": "n + iao, tercer tono." },
+        { "audio": "故事", "options": ["gùshi", "kùshi", "gǔshì"], "answer": 0, "explain": "g sin aire; 事 suele ir en tono neutro." },
+        { "audio": "高高兴兴", "options": ["gāogāoxìngxìng", "gàogàoxǐngxǐng", "gāoxìnggāoxìng"], "answer": 0, "explain": "AABB: cada sílaba se dobla en su sitio (高高 + 兴兴)." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["画", "鸟"],
+      "mnemonics": {
+        "画": "Un campo (田) dentro de un marco (凵) y una raya encima: en la forma antigua, una mano con pincel trazando los límites de un campo → dibujar, pintar.",
+        "鸟": "Dibujo de un pájaro de perfil: el punto es el ojo, arriba la cabeza y abajo la cola y las patas."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "的 + nombre, 地 + verbo, verbo + 得",
+      "markdown": "Tres caracteres, el mismo sonido (*de*), tres trabajos distintos. **Mira qué viene detrás**:\n\n| | Posición | Ejemplo |\n|---|---|---|\n| **的** | … + 的 + **nombre** | 我**的**书, 我爷爷画**的**画儿 |\n| **地** | adjetivo + 地 + **verbo** (cómo se hace) | 他认真**地**画画儿 |\n| **得** | **verbo** + 得 + adjetivo (cómo sale) | 她画**得**很好 |\n\n(Tienes la tabla completa en el apunte *的 / 地 / 得: las tres «de»*.)\n\n**Frases con 的 delante del nombre**. Con 的 no solo se dice «mi libro»: **cualquier verbo o frase** puede describir a un nombre. En español usamos «que…» detrás; en chino, **todo va delante**:\n\n- 唱歌**的**女孩儿 = la chica **que canta**\n- 我爷爷画**的**画儿 = el cuadro **que ha pintado mi abuelo**\n- 我学习汉语**的**学校 = la escuela **donde estudio chino**\n\n**En el esqueleto**: el atributo con 的 va dentro de su hueco (*Sujeto* u *Objeto*); «认真地» va en *Adverbios*; «画得» en *Verbo* y el grado en *Complemento*.",
+      "focus": ["subject", "object", "adverb"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "那个唱歌的女孩儿", "py": "nàge chànggē de nǚháir" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "我同学", "py": "wǒ tóngxué" } }, "end": "。", "es": "La chica que canta es compañera mía." },
+        { "slots": { "subject": { "zh": "这", "py": "zhè" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "我学习汉语的学校", "py": "wǒ xuéxí Hànyǔ de xuéxiào" } }, "end": "。", "es": "Esta es la escuela donde estudio chino." },
+        { "slots": { "subject": { "zh": "他", "py": "tā" }, "adverb": { "zh": "认真地", "py": "rènzhēn de" }, "verb1": { "zh": "画", "py": "huà" }, "object": { "zh": "画儿", "py": "huàr" } }, "end": "。", "es": "Pinta con mucho cuidado.", "esOrder": [{ "text": "Pinta", "slot": "verb1" }, { "text": "con mucho cuidado", "slot": "adverb" }] },
+        { "slots": { "subject": { "zh": "她", "py": "tā" }, "verb1": { "zh": "画画儿", "py": "huà huàr" }, "verb2": { "zh": "画得", "py": "huà de" }, "complement": { "zh": "非常好", "py": "fēicháng hǎo" } }, "end": "。", "es": "Pinta muy bien." },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "verb1": { "zh": "喜欢", "py": "xǐhuan" }, "object": { "zh": "他写的小说", "py": "tā xiě de xiǎoshuō" } }, "end": "。", "es": "Me gustan las novelas que escribe." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "这", "py": "zhè" }, "adverb": { "zh": "不", "py": "bú" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "我拍的图片", "py": "wǒ pāi de túpiàn" } }, "end": "。", "es": "Esta no es una foto que haya hecho yo." },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "verb1": { "zh": "拍照片", "py": "pāi zhàopiàn" }, "verb2": { "zh": "拍得", "py": "pāi de" }, "complement": { "zh": "不好", "py": "bù hǎo" } }, "end": "。", "es": "No hago bien las fotos." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "那个养鸟的人", "py": "nàge yǎng niǎo de rén" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "谁", "py": "shéi" } }, "end": "？", "es": "¿Quién es ese señor que tiene pájaros?" }
+      ],
+      "mistakes": [
+        { "wrong": "她画画儿画的很好。", "right": "她画画儿画得很好。", "why": "Detrás del verbo, para decir cómo sale, es 得." },
+        { "wrong": "他认真的画画儿。", "right": "他认真地画画儿。", "why": "Delante de un verbo, para decir cómo se hace, se escribe 地 (al hablar suenan igual)." },
+        { "wrong": "唱歌女孩儿是谁？", "right": "那个唱歌的女孩儿是谁？", "why": "Un verbo que describe a un nombre necesita 的 entre los dos." }
+      ]
+    },
+    {
+      "type": "skeleton",
+      "title": "Adjetivos doblados: 大大的, 高高兴兴地",
+      "markdown": "Un adjetivo se puede **doblar** para que la descripción sea más viva, casi como si la vieras:\n\n- **AA** (adjetivos de una sílaba): 大 → **大大**的眼睛, 慢 → **慢慢**地说, 高 → **高高**的个子.\n- **AABB** (de dos sílabas): 高兴 → **高高兴兴**, 干净 → **干干净净**, 认真 → **认认真真**.\n\nReglas:\n1. **Sin 很**: el doblado ya intensifica (*很大大的* está mal).\n2. Delante de un **nombre** con **的** (大大的眼睛); delante de un **verbo** con **地** (高高兴兴地回家).\n3. **No se niega**: *不干干净净* está mal; para negar, vuelve al adjetivo normal (不干净).\n4. AABB, no ABAB: *高兴高兴* es para verbos (休息休息 = descansar un rato).\n\n**En el esqueleto**: «高高兴兴地» va en *Adverbios*; «大大的眼睛» va entero en *Objeto*.",
+      "focus": ["adverb"],
+      "sentences": [
+        { "slots": { "subject": { "zh": "大家", "py": "dàjiā" }, "adverb": { "zh": "高高兴兴地", "py": "gāogāoxìngxìng de" }, "verb1": { "zh": "回家", "py": "huí jiā" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Todos se fueron a casa contentísimos." },
+        { "slots": { "subject": { "zh": "她", "py": "tā" }, "verb1": { "zh": "有", "py": "yǒu" }, "object": { "zh": "大大的眼睛", "py": "dàdà de yǎnjing" } }, "end": "。", "es": "Tiene unos ojos muy grandes." },
+        { "slots": { "subject": { "zh": "爷爷", "py": "yéye" }, "time": { "zh": "每天", "py": "měi tiān" }, "adverb": { "zh": "都认认真真地", "py": "dōu rènrènzhēnzhēn de" }, "verb1": { "zh": "画", "py": "huà" }, "object": { "zh": "小鸟", "py": "xiǎo niǎo" } }, "end": "。", "es": "El abuelo pinta pajaritos todos los días con muchísimo cuidado." },
+        { "slots": { "subject": { "zh": "我的房间", "py": "wǒ de fángjiān" }, "verb1": { "zh": "干干净净的", "py": "gān gān jìngjìng de" } }, "end": "。", "es": "Mi habitación está limpísima." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "他的房间", "py": "tā de fángjiān" }, "adverb": { "zh": "不", "py": "bù" }, "verb1": { "zh": "干净", "py": "gānjìng" } }, "end": "。", "es": "Su habitación no está limpia." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "他", "py": "tā" }, "time": { "zh": "每天", "py": "měi tiān" }, "adverb": { "zh": "都高高兴兴地", "py": "dōu gāogāoxìngxìng de" }, "verb1": { "zh": "去上班", "py": "qù shàngbān" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿Va a trabajar contento todos los días?" }
+      ],
+      "mistakes": [
+        { "wrong": "她有很大大的眼睛。", "right": "她有大大的眼睛。", "why": "El adjetivo doblado ya intensifica: sin 很." },
+        { "wrong": "他的房间不干干净净。", "right": "他的房间不干净。", "why": "La forma doblada no se niega: se niega el adjetivo normal." },
+        { "wrong": "大家高兴高兴地回家了。", "right": "大家高高兴兴地回家了。", "why": "Los adjetivos de dos sílabas se doblan AABB; ABAB es para verbos (休息休息)." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "El abuelo de Xiao Li",
+      "lines": [
+        { "speaker": "雨果", "zh": "小李，这些图片真漂亮！是你拍的吗？", "py": "Xiǎo Lǐ, zhèxiē túpiàn zhēn piàoliang! Shì nǐ pāi de ma?", "es": "Xiao Li, ¡qué fotos tan bonitas! ¿Las has hecho tú?" },
+        { "speaker": "小李", "zh": "照片是我拍的，画儿是我爷爷画的。", "py": "Zhàopiàn shì wǒ pāi de, huàr shì wǒ yéye huà de.", "es": "Las fotos sí, pero los cuadros los ha pintado mi abuelo." },
+        { "speaker": "雨果", "zh": "你爷爷是画家吗？", "py": "Nǐ yéye shì huàjiā ma?", "es": "¿Tu abuelo es pintor?" },
+        { "speaker": "小李", "zh": "不是，他是老师。他很喜欢画画儿，画得非常好。", "py": "Bú shì, tā shì lǎoshī. Tā hěn xǐhuan huà huàr, huà de fēicháng hǎo.", "es": "No, es profesor. Pero le encanta pintar y lo hace de maravilla." },
+        { "speaker": "雨果", "zh": "这只鸟画得真好！", "py": "Zhè zhī niǎo huà de zhēn hǎo!", "es": "¡Qué bien pintado está este pájaro!" },
+        { "speaker": "小李", "zh": "这是我爷爷养的鸟。他每天早上都高高兴兴地带鸟出去散步。", "py": "Zhè shì wǒ yéye yǎng de niǎo. Tā měi tiān zǎoshang dōu gāogāoxìngxìng de dài niǎo chūqu sànbù.", "es": "Es el pájaro que tiene mi abuelo. Todas las mañanas sale tan contento a pasear con él." },
+        { "speaker": "雨果", "zh": "真有意思！我也想慢慢地学画画儿。", "py": "Zhēn yǒu yìsi! Wǒ yě xiǎng mànmàn de xué huà huàr.", "es": "¡Qué interesante! Yo también quiero aprender a pintar poco a poco." },
+        { "speaker": "小李", "zh": "你可以先画小鸟、花什么的。", "py": "Nǐ kěyǐ xiān huà xiǎo niǎo, huā shénmede.", "es": "Puedes empezar pintando pajaritos, flores y cosas así." },
+        { "speaker": "雨果", "zh": "好！我还喜欢看小说，你呢？", "py": "Hǎo! Wǒ hái xǐhuan kàn xiǎoshuō, nǐ ne?", "es": "¡Vale! A mí también me gusta leer novelas, ¿y a ti?" },
+        { "speaker": "小李", "zh": "我喜欢听爷爷讲故事。他讲得特别有意思。", "py": "Wǒ xǐhuan tīng yéye jiǎng gùshi. Tā jiǎng de tèbié yǒu yìsi.", "es": "A mí me gusta escuchar las historias de mi abuelo. Las cuenta de una forma muy divertida." },
+        { "speaker": "雨果", "zh": "讲故事的爷爷，就是画画儿的爷爷！", "py": "Jiǎng gùshi de yéye, jiù shì huà huàr de yéye!", "es": "¡El abuelo que cuenta historias es el mismo abuelo que pinta!" }
+      ],
+      "notes": "En los parques chinos verás a muchos jubilados que «pasean» a sus pájaros: llevan la jaula colgada, la cuelgan de un árbol y charlan mientras los pájaros cantan. 遛鸟 (liù niǎo) es el nombre de esta costumbre."
+    },
+    { "type": "exercises", "count": 18, "bank": ["g-de", "g-reduplication", "g-complements"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "她" }, "verb1": { "zh": "画画儿" }, "verb2": { "zh": "画得" }, "complement": { "zh": "很好" } }, "end": "。", "es": "Pinta muy bien." }, "distractors": ["画的"] },
+        { "sentence": { "slots": { "subject": { "zh": "大家" }, "adverb": { "zh": "高高兴兴地" }, "verb1": { "zh": "回家" }, "particle": { "zh": "了" } }, "end": "。", "es": "Todos se fueron a casa contentísimos." }, "distractors": ["很"] },
+        { "sentence": { "slots": { "subject": { "zh": "那个唱歌的女孩儿" }, "verb1": { "zh": "是" }, "object": { "zh": "安娜的妹妹" } }, "end": "。", "es": "La chica que canta es la hermana de Ana." }, "distractors": ["地"] },
+        { "sentence": { "slots": { "time0": { "zh": "每个星期天" }, "subject": { "zh": "小李的爷爷" }, "adverb": { "zh": "都" }, "with": { "zh": "跟我一起" }, "place": { "zh": "在家里" }, "verb1": { "zh": "画" }, "object": { "zh": "小鸟和花" } }, "end": "。", "es": "Todos los domingos el abuelo de Xiao Li pinta pajaritos y flores conmigo en su casa." } }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "她画画儿画得很好。", "py": "Tā huà huàr huà de hěn hǎo.", "es": "Pinta muy bien." },
+        { "zh": "那个唱歌的女孩儿是谁？", "py": "Nàge chànggē de nǚháir shì shéi?", "es": "¿Quién es la chica que canta?" },
+        { "zh": "大家高高兴兴地回家了。", "py": "Dàjiā gāogāoxìngxìng de huí jiā le.", "es": "Todos se fueron a casa contentísimos." },
+        { "zh": "这是我爷爷画的画儿。", "py": "Zhè shì wǒ yéye huà de huàr.", "es": "Este es un cuadro que ha pintado mi abuelo." }
+      ],
+      "respond": [
+        { "q": { "zh": "你会画画儿吗？", "py": "Nǐ huì huà huàr ma?", "es": "¿Sabes pintar?" }, "model": { "zh": "会一点儿，画得不太好。", "py": "Huì yìdiǎnr, huà de bú tài hǎo.", "es": "Un poco, pero no pinto muy bien." } },
+        { "q": { "zh": "你喜欢看什么小说？", "py": "Nǐ xǐhuan kàn shénme xiǎoshuō?", "es": "¿Qué novelas te gusta leer?" }, "model": { "zh": "我喜欢看有意思的故事。", "py": "Wǒ xǐhuan kàn yǒu yìsi de gùshi.", "es": "Me gusta leer historias interesantes." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "El abuelo que pinta pájaros",
+      "text": "小李的爷爷今年七十多岁了。他不是画家，画儿也画得非常好。他养了两只小鸟，每天早上都高高兴兴地带鸟出去散步。回到家里，他喝一杯茶，然后认认真真地画画儿。他最喜欢画鸟和花。爷爷还很会讲故事，小李小时候常常听他讲故事。现在，雨果也想跟爷爷学画画儿。小李说：“爷爷画的画儿，我都拍了照片，你可以看看这些图片。”",
+      "es": "El abuelo de Xiao Li tiene más de setenta años. No es pintor, pero pinta muy bien. Tiene dos pajaritos y todas las mañanas sale tan contento a pasear con ellos. Al volver a casa, se toma un té y luego pinta con muchísimo cuidado. Lo que más le gusta pintar son pájaros y flores. Además, el abuelo cuenta muy bien historias: de pequeño, Xiao Li siempre lo escuchaba. Ahora Hugo también quiere aprender a pintar con él. Xiao Li le dice: «A todos los cuadros del abuelo les he hecho fotos: puedes mirar estas imágenes».",
+      "questions": [
+        { "q": "¿Cuántos pájaros tiene el abuelo?", "options": ["两只", "一只", "三只"], "answer": 0 },
+        { "q": "¿Qué es lo que más le gusta pintar?", "options": ["鸟和花", "山和河", "人"], "answer": 0 },
+        { "q": "¿Es pintor el abuelo?", "options": ["No", "Sí"], "answer": 0 },
+        { "q": "¿Qué hizo Xiao Li con los cuadros?", "options": ["Les hizo fotos", "Los vendió", "Los pintó"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

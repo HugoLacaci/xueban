@@ -118,6 +118,8 @@ describe("paridad entre idiomas", () => {
       beforeAll(async () => {
         pack = await activateLang(lang);
         await pack.dictionary.load();
+        // temario v2 (zh): los pasos de las lecciones se cargan bajo demanda, como al abrir una lección en la app
+        if (pack.curriculum.hydrate) await Promise.all(pack.curriculum.units.flatMap((u) => u.lessons).map((l) => pack.curriculum.hydrate!(l.id)));
         // como en la app: las palabras del mazo (semilla) se registran en el diccionario
         pack.dictionary.setUserWords(pack.seed.words.map((w) => ({ ...w, lang, examplePinyin: w.example_pinyin, exampleTranslation: w.example_translation, tags: [], source: "seed", createdAt: 0, updatedAt: 0 })) as never);
       }, 60000);

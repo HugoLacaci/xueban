@@ -1,0 +1,135 @@
+{
+  "id": "a2-u08-l4",
+  "title": "La puerta está abierta: 着 de estado",
+  "zh": "门开着",
+  "goal": "Describir cómo están las cosas y las personas con V + 着 (门开着, 他穿着…) y decir qué hay en un sitio con lugar + V着 + N (门口站着一个人).",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "着", "pinyin": "zhe", "es": "(partícula: estado que dura)", "note": "V + 着: 开着 (está abierto), 坐着 (está sentado)." },
+    { "hanzi": "靠", "pinyin": "kào", "es": "apoyarse en; junto a", "note": "靠着门 = apoyado en la puerta." },
+    { "hanzi": "座位", "pinyin": "zuòwèi", "es": "asiento, plaza" },
+    { "hanzi": "占", "pinyin": "zhàn", "es": "ocupar (un sitio)", "note": "占座位 = guardar / ocupar un asiento." },
+    { "hanzi": "公共汽车", "pinyin": "gōnggòng qìchē", "es": "autobús (urbano)", "note": "Forma completa de 公交车." },
+    { "hanzi": "车辆", "pinyin": "chēliàng", "es": "vehículos (en general)", "note": "Palabra de carteles y noticias." },
+    { "hanzi": "辆", "pinyin": "liàng", "es": "(clasificador de vehículos)", "note": "一辆车, 两辆自行车." },
+    { "hanzi": "停车", "pinyin": "tíngchē", "es": "aparcar; parar el vehículo" },
+    { "hanzi": "停车场", "pinyin": "tíngchēchǎng", "es": "aparcamiento, parking" },
+    { "hanzi": "行人", "pinyin": "xíngrén", "es": "peatón, peatones" },
+    { "hanzi": "人数", "pinyin": "rénshù", "es": "número de personas" },
+    { "hanzi": "交通", "pinyin": "jiāotōng", "es": "tráfico; transporte", "note": "交通很好 = está bien comunicado." }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "银行的门开着吗？", "py": "Yínháng de mén kāizhe ma?", "es": "¿Está abierta la puerta del banco?" },
+        { "zh": "车站门口站着很多人。", "py": "Chēzhàn ménkǒu zhànzhe hěn duō rén.", "es": "En la entrada de la parada hay mucha gente de pie." },
+        { "zh": "那个座位上放着一个包。", "py": "Nàge zuòwèi shang fàngzhe yí ge bāo.", "es": "En aquel asiento hay un bolso." }
+      ]
+    },
+    { "type": "vocab", "title": "En el autobús y en la calle", "words": ["着", "靠", "座位", "占", "公共汽车", "车辆", "辆", "停车", "停车场", "行人", "人数", "交通"] },
+    {
+      "type": "phonetics-drill",
+      "title": "着 zhe, siempre flojo; 辆 liàng no es 两 liǎng",
+      "markdown": "**着** de estado se dice en **tono neutro**: *zhe*, corto y sin fuerza, pegado al verbo. El verbo lleva todo el peso: **KĀI**-zhe, **ZHÀN**-zhe, **ZUÒ**-zhe.\n\n(Con otras lecturas — 睡**着** *shuìzháo*, «dormirse» — tiene tono; hoy no.)\n\nOtros sonidos de la lección:\n\n- **辆 liàng** (4.º, clasificador de coches) frente a **两 liǎng** (3.º, «dos»): 两辆车 *liǎng liàng chē*.\n- **公共汽车 gōnggòng qìchē**: g-g-q, cuidado con la **q** (como «ch» con la lengua plana y mucho aire).\n- **占 zhàn** (ocupar) frente a **站 zhàn** (estar de pie): suenan igual; los distingue el carácter.",
+      "items": [
+        { "audio": "开着", "options": ["kāizhe", "kāizhé", "kāizháo"], "answer": 0, "explain": "着 de estado: tono neutro." },
+        { "audio": "两辆车", "options": ["liǎng liàng chē", "liàng liǎng chē", "liǎng liǎng chē"], "answer": 0, "explain": "Primero el número (3.º), después el clasificador (4.º)." },
+        { "audio": "公共汽车", "options": ["gōnggòng qìchē", "gōnggōng jìchē", "gònggòng qìchè"], "answer": 0, "explain": "qì con q aspirada; chē en primer tono." },
+        { "audio": "停车场", "options": ["tíngchēchǎng", "tīngchēchǎng", "tíngchēcháng"], "answer": 0, "explain": "停 sube (2.º); 场 baja y sube (3.º)." },
+        { "audio": "座位", "options": ["zuòwèi", "zuǒwèi", "zòuwèi"], "answer": 0, "explain": "Dos cuartos tonos: zuò-wèi." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["着", "辆"],
+      "mnemonics": {
+        "着": "Arriba, una forma de 羊; abajo, 目 (ojo): un ojo que se queda fijo, mirando sin parar → algo que se mantiene, que sigue así.",
+        "辆": "车 (vehículo) + 两 (dos, y el sonido liàng): los antiguos carros tenían dos ruedas → clasificador de vehículos."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "V + 着: cómo está algo (y qué hay en un sitio)",
+      "markdown": "**着** detrás del verbo dice que el **resultado de una acción sigue ahí**, como un estado: no es «está haciéndose», es «está así».\n\n- 门**开着**。 La puerta está abierta (alguien la abrió y sigue abierta).\n- 他**穿着**一件红衣服。 Lleva puesta una prenda roja.\n- 灯**开着**, 他**坐着**, 她**站着**, 我**拿着**手机.\n\n**Qué hay en un sitio** (existencia): **lugar + V着 + cantidad + cosa**, sin 在 delante y sin 有:\n\n> **门口** 站着 一个人。 «En la puerta hay un hombre de pie».\n> **桌子上** 放着 一本书。\n\nEs como 桌子上**有**一本书, pero además dice **cómo** está (puesto, sentado, de pie, aparcado).\n\n**Negativa**: 没(有) + V着 (门**没开着**), nunca 不.\n\n**Convención del esqueleto**: V着 va en **Verbo 1**. En las frases de existencia, el lugar del principio va en **Dónde**, sin 在.",
+      "focus": ["verb1", "place"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "门", "py": "mén" }, "verb1": { "zh": "开着", "py": "kāizhe" } }, "end": "。", "es": "La puerta está abierta." },
+        { "slots": { "subject": { "zh": "雨果", "py": "Yǔguǒ" }, "verb1": { "zh": "穿着", "py": "chuānzhe" }, "object": { "zh": "一件红衣服", "py": "yí jiàn hóng yīfu" } }, "end": "。", "es": "Hugo lleva puesta una prenda roja." },
+        { "slots": { "place": { "zh": "门口", "py": "ménkǒu" }, "verb1": { "zh": "站着", "py": "zhànzhe" }, "object": { "zh": "一个人", "py": "yí ge rén" } }, "end": "。", "es": "Hay un hombre de pie en la puerta.", "esOrder": [{ "text": "Hay" }, { "text": "un hombre", "slot": "object" }, { "text": "de pie", "slot": "verb1" }, { "text": "en la puerta", "slot": "place" }] },
+        { "slots": { "place": { "zh": "停车场里", "py": "tíngchēchǎng li" }, "verb1": { "zh": "停着", "py": "tíngzhe" }, "object": { "zh": "三辆车", "py": "sān liàng chē" } }, "end": "。", "es": "En el aparcamiento hay tres coches aparcados." },
+        { "slots": { "place": { "zh": "公共汽车上", "py": "gōnggòng qìchē shang" }, "verb1": { "zh": "坐着", "py": "zuòzhe" }, "object": { "zh": "很多学生", "py": "hěn duō xuésheng" } }, "end": "。", "es": "En el autobús van sentados muchos estudiantes." },
+        { "slots": { "subject": { "zh": "大卫", "py": "Dàwèi" }, "verb1": { "zh": "靠着", "py": "kàozhe" }, "object": { "zh": "车门", "py": "chēmén" } }, "end": "。", "es": "David está apoyado en la puerta del autobús." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "银行的门", "py": "yínháng de mén" }, "adverb": { "zh": "没", "py": "méi" }, "verb1": { "zh": "开着", "py": "kāizhe" } }, "end": "。", "es": "La puerta del banco no está abierta." },
+        { "slots": { "subject": { "zh": "教室的灯", "py": "jiàoshì de dēng" }, "adverb": { "zh": "没", "py": "méi" }, "verb1": { "zh": "开着", "py": "kāizhe" } }, "end": "。", "es": "Las luces del aula no están encendidas." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "门", "py": "mén" }, "verb1": { "zh": "开着", "py": "kāizhe" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿Está abierta la puerta?" },
+        { "slots": { "subject": { "zh": "空调", "py": "kōngtiáo" }, "verb1": { "zh": "开着", "py": "kāizhe" }, "particle": { "zh": "没有", "py": "méiyǒu" } }, "end": "？", "es": "¿Está encendido el aire acondicionado?" }
+      ],
+      "mistakes": [
+        { "wrong": "门口有站着一个人。", "right": "门口站着一个人。", "why": "En la frase de existencia V着 sustituye a 有: no se ponen los dos." },
+        { "wrong": "在门口站着一个人。", "right": "门口站着一个人。", "why": "Cuando el lugar abre la frase como «tema», va sin 在." },
+        { "wrong": "门不开着。", "right": "门没开着。", "why": "El estado con 着 se niega con 没." },
+        { "wrong": "他正在穿着衣服。", "right": "他穿着红衣服。 / 他在穿衣服。", "why": "穿着 = llevar puesto (estado); 在穿 = estar vistiéndose (acción). No los mezcles." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "En el autobús de la hora punta",
+      "lines": [
+        { "speaker": "小李", "zh": "雨果，快上车！前面有一个座位。", "py": "Yǔguǒ, kuài shàng chē! Qiánmian yǒu yí ge zuòwèi.", "es": "¡Hugo, sube rápido! Ahí delante hay un asiento libre." },
+        { "speaker": "雨果", "zh": "那个座位上放着一个包，有人占了吧？", "py": "Nàge zuòwèi shang fàngzhe yí ge bāo, yǒu rén zhàn le ba?", "es": "En ese asiento hay un bolso; alguien lo habrá cogido, ¿no?" },
+        { "speaker": "小李", "zh": "我问一下。你好，这个座位有人吗？", "py": "Wǒ wèn yíxià. Nǐ hǎo, zhège zuòwèi yǒu rén ma?", "es": "Voy a preguntar. Hola, ¿está ocupado este asiento?" },
+        { "speaker": "女生", "zh": "没有人，我的包放在这儿，你坐吧。", "py": "Méiyǒu rén, wǒ de bāo fàng zài zhèr, nǐ zuò ba.", "es": "No, solo había dejado aquí el bolso. Siéntate." },
+        { "speaker": "雨果", "zh": "谢谢！小李，今天车上的人数真多。", "py": "Xièxie! Xiǎo Lǐ, jīntiān chē shang de rénshù zhēn duō.", "es": "¡Gracias! Xiao Li, hoy va muchísima gente en el autobús." },
+        { "speaker": "小李", "zh": "现在是下班的时候，交通很不好。你看外面，路上都是车辆。", "py": "Xiànzài shì xiàbān de shíhou, jiāotōng hěn bù hǎo. Nǐ kàn wàimian, lù shang dōu shì chēliàng.", "es": "Es la hora de salida del trabajo y el tráfico está fatal. Mira fuera: la calle está llena de vehículos." },
+        { "speaker": "雨果", "zh": "是啊，车站门口还站着很多人。", "py": "Shì a, chēzhàn ménkǒu hái zhànzhe hěn duō rén.", "es": "Sí, y en la parada todavía hay mucha gente de pie esperando." },
+        { "speaker": "小李", "zh": "别靠着车门站，危险！", "py": "Bié kàozhe chēmén zhàn, wēixiǎn!", "es": "No te apoyes en la puerta, ¡es peligroso!" },
+        { "speaker": "雨果", "zh": "好。我们在哪个站下车？", "py": "Hǎo. Wǒmen zài nǎge zhàn xià chē?", "es": "Vale. ¿En qué parada nos bajamos?" },
+        { "speaker": "小李", "zh": "下一站。下车的时候注意行人和自行车。", "py": "Xià yí zhàn. Xià chē de shíhou zhùyì xíngrén hé zìxíngchē.", "es": "En la próxima. Al bajar, cuidado con los peatones y las bicis." }
+      ],
+      "notes": "En China es habitual «guardar» un asiento dejando encima un bolso o un libro (占座位), sobre todo en la biblioteca de la universidad. 靠着车门站: el primer verbo con 着 dice cómo se hace el segundo (estar de pie apoyado)."
+    },
+    { "type": "exercises", "count": 16, "bank": ["g-zai", "u08", "g-measure-words"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "门" }, "verb1": { "zh": "开着" } }, "end": "。", "es": "La puerta está abierta." }, "distractors": ["是", "不"] },
+        { "sentence": { "slots": { "place": { "zh": "门口" }, "verb1": { "zh": "站着" }, "object": { "zh": "一个人" } }, "end": "。", "es": "Hay un hombre de pie en la puerta." }, "distractors": ["在", "有"] },
+        { "sentence": { "slots": { "place": { "zh": "停车场里" }, "verb1": { "zh": "停着" }, "object": { "zh": "两辆车" } }, "end": "。", "es": "En el aparcamiento hay dos coches aparcados." }, "distractors": ["个"] },
+        { "sentence": { "slots": { "time0": { "zh": "每天早上" }, "subject": { "zh": "小李" }, "adverb": { "zh": "都" }, "place": { "zh": "在图书馆" }, "verb1": { "zh": "占" }, "object": { "zh": "两个座位" } }, "end": "。", "es": "Todas las mañanas Xiao Li guarda dos asientos en la biblioteca." } }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "门开着，你进来吧。", "py": "Mén kāizhe, nǐ jìnlai ba.", "es": "La puerta está abierta, entra." },
+        { "zh": "门口站着一个人。", "py": "Ménkǒu zhànzhe yí ge rén.", "es": "Hay un hombre de pie en la puerta." },
+        { "zh": "公共汽车上坐着很多学生。", "py": "Gōnggòng qìchē shang zuòzhe hěn duō xuésheng.", "es": "En el autobús van sentados muchos estudiantes." },
+        { "zh": "这个座位有人吗？", "py": "Zhège zuòwèi yǒu rén ma?", "es": "¿Está ocupado este asiento?" }
+      ],
+      "respond": [
+        { "q": { "zh": "你今天穿着什么颜色的衣服？", "py": "Nǐ jīntiān chuānzhe shénme yánsè de yīfu?", "es": "¿De qué color es la ropa que llevas hoy?" }, "model": { "zh": "我穿着一件蓝色的衣服。", "py": "Wǒ chuānzhe yí jiàn lánsè de yīfu.", "es": "Llevo una prenda azul." } },
+        { "q": { "zh": "你的桌子上放着什么？", "py": "Nǐ de zhuōzi shang fàngzhe shénme?", "es": "¿Qué tienes encima de la mesa?" }, "model": { "zh": "桌子上放着一台电脑和两本书。", "py": "Zhuōzi shang fàngzhe yì tái diànnǎo hé liǎng běn shū.", "es": "Encima de la mesa hay un ordenador y dos libros." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "A las seis, en la parada",
+      "text": "下午六点，雨果在学校门口等公共汽车。车站上站着很多人，有的拿着手机，有的靠着树休息。路上的车辆很多，交通很不好。车来了，车门开着，车上的人数太多了，座位上都坐着人。雨果没有上车。他看了看旁边：停车场里停着很多辆共享单车。他扫了码，骑车回宿舍去了。",
+      "es": "A las seis de la tarde, Hugo espera el autobús en la puerta de la universidad. En la parada hay mucha gente de pie: unos con el móvil en la mano, otros apoyados en un árbol descansando. Hay muchísimos vehículos en la calle y el tráfico está fatal. Llega el autobús, con la puerta abierta, pero va demasiado lleno: todos los asientos están ocupados. Hugo no sube. Mira a su alrededor: en el aparcamiento hay un montón de bicis compartidas. Escanea el código y se vuelve en bici a la residencia.",
+      "questions": [
+        { "q": "¿Dónde espera Hugo el autobús?", "options": ["En la puerta de la universidad", "En el aparcamiento", "En la estación de metro"], "answer": 0 },
+        { "q": "¿Cómo está el tráfico?", "options": ["Fatal", "Muy bien", "No hay coches"], "answer": 0 },
+        { "q": "¿Por qué no sube Hugo al autobús?", "options": ["Va demasiado lleno", "La puerta está cerrada", "No lleva dinero"], "answer": 0 },
+        { "q": "¿Cómo vuelve a la residencia?", "options": ["En bici compartida", "Andando", "En taxi"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

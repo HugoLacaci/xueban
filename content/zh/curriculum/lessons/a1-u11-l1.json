@@ -1,0 +1,129 @@
+{
+  "id": "a1-u11-l1",
+  "title": "Con mis amigos: 跟 / 和 + persona + 一起",
+  "zh": "我跟朋友一起吃饭",
+  "goal": "Decir con quién haces algo con 跟 / 和 + persona + 一起 + verbo, y quedar con alguien (见面).",
+  "minutes": 14,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "跟", "pinyin": "gēn", "es": "con (+ persona)", "note": "Va delante del verbo: 跟朋友一起吃饭. Más oral que 和 en este uso." },
+    { "hanzi": "和", "pinyin": "hé", "es": "y (entre nombres); con (+ persona)", "note": "Repaso (unidad 3): 和 une nombres. Delante del verbo, igual que 跟: 和小李一起去." },
+    { "hanzi": "一起", "pinyin": "yìqǐ", "es": "juntos", "note": "Repaso (Etapa 0). Va justo delante del verbo." },
+    { "hanzi": "一块儿", "pinyin": "yíkuàir", "es": "juntos (coloquial)", "note": "Igual que 一起, más del norte y más informal." },
+    { "hanzi": "好朋友", "pinyin": "hǎo péngyou", "es": "buen amigo, mejor amigo" },
+    { "hanzi": "室友", "pinyin": "shìyǒu", "es": "compañero de habitación", "note": "En la residencia, tu 室友 es la persona con la que compartes cuarto." },
+    { "hanzi": "聊天", "pinyin": "liáotiān", "es": "charlar, chatear", "note": "跟朋友聊天 = charlar con amigos. También es chatear por 微信." },
+    { "hanzi": "见面", "pinyin": "jiànmiàn", "es": "verse, quedar (con alguien)", "note": "No lleva objeto: 跟朋友见面 (no *见面朋友)." }
+  ],
+  "extraVocab": ["室友", "聊天"],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "我跟朋友一起吃饭。", "py": "Wǒ gēn péngyou yìqǐ chī fàn.", "es": "Como con mis amigos." },
+        { "zh": "你跟谁一起去？", "py": "Nǐ gēn shéi yìqǐ qù?", "es": "¿Con quién vas?" },
+        { "zh": "我们六点见面。", "py": "Wǒmen liù diǎn jiànmiàn.", "es": "Quedamos a las seis." }
+      ]
+    },
+    { "type": "vocab", "title": "Juntos: amigos y compañeros", "words": ["跟", "和", "一起", "一块儿", "好朋友", "室友", "聊天", "见面"] },
+    {
+      "type": "phonetics-drill",
+      "title": "La «e» china: 和, 喝, 客",
+      "markdown": "La **e** del pinyin **no es la «e» española**. Sola o tras consonante (和 hé, 喝 hē, 客 kè, 的 de, 这 zhè), se dice con la boca medio abierta, los labios **sin redondear** y la lengua **atrás**: algo entre «e» y «o», como un «eh» dicho desde la garganta.\n\n- Empieza diciendo una **o** y, sin mover la lengua, **estira los labios**: eso es la e china.\n- En cambio, en **-ie / -üe** (谢 xiè, 学 xué) y en **ei** (北 běi) sí suena como la «e» española.\n\n和 hé y 喝 hē tienen la misma vocal: solo cambia el tono.",
+      "items": [
+        { "audio": "和", "prompt": "¿Qué palabra oyes?", "options": ["和 hé (y, con)", "喝 hē (beber)"], "answer": 0, "explain": "Segundo tono, sube: 和." },
+        { "audio": "喝", "prompt": "¿Qué palabra oyes?", "options": ["喝 hē (beber)", "和 hé (y, con)"], "answer": 0, "explain": "Primer tono, alto y plano: 喝." },
+        { "audio": "不客气", "options": ["bú kèqi", "bú kìqi", "bú kuòqi"], "answer": 0, "explain": "La e de kè es la e china, no la «e» española." },
+        { "audio": "谢谢", "prompt": "La e de 谢 xiè suena…", "options": ["como la «e» española", "como la e china (de 和)"], "answer": 0, "explain": "En -ie la e es abierta, como en español." },
+        { "audio": "跟", "options": ["gēn", "gōn", "gīn"], "answer": 0, "explain": "En -en la e es central y breve: gēn." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["跟", "友"],
+      "mnemonics": {
+        "跟": "⻊ (pie) + 艮 gèn (pista de sonido): ir pegado a los talones de alguien → seguir, ir con.",
+        "友": "Dos manos (𠂇 y 又) que se dan la una a la otra: la amistad."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "Sujeto + 跟/和 + persona + 一起 + verbo",
+      "markdown": "Se estrena el hueco **«con quién»**. En español «con mis amigos» va **después** del verbo («como **con mis amigos**»); en chino va **delante**:\n\n**我 + 跟朋友一起 + 吃饭** (lit. «yo con amigos juntos como»).\n\n- **跟** o **和** + persona + **一起** (o 一块儿, más coloquial). 一起 se puede omitir con verbos que ya implican a dos personas: 跟朋友**见面**, 跟她**聊天**.\n- El **adverbio** (不, 也, 都, 常常) y el **auxiliar** (想, 要) van **antes** de 跟: 我**不**跟他一起去 · 我**想**跟你见面.\n- Pregunta: **跟谁**一起…？ ¿con quién…?\n\nOrden completo hasta hoy: **tiempo · sujeto · tiempo · adverbio · auxiliar · con quién · verbo · objeto · partícula**.",
+      "focus": ["with"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "with": { "zh": "跟朋友一起", "py": "gēn péngyou yìqǐ" }, "verb1": { "zh": "吃饭", "py": "chī fàn" } }, "end": "。", "es": "Como con mis amigos.", "esOrder": [{ "text": "(Yo)", "slot": "subject" }, { "text": "como", "slot": "verb1" }, { "text": "con mis amigos", "slot": "with" }] },
+        { "slots": { "subject": { "zh": "雨果", "py": "Yǔguǒ" }, "with": { "zh": "和小李一起", "py": "hé Xiǎo Lǐ yìqǐ" }, "verb1": { "zh": "去食堂", "py": "qù shítáng" } }, "end": "。", "es": "Hugo va al comedor con Xiao Li.", "esOrder": [{ "text": "Hugo", "slot": "subject" }, { "text": "va al comedor", "slot": "verb1" }, { "text": "con Xiao Li", "slot": "with" }] },
+        { "slots": { "subject": { "zh": "安娜", "py": "Ānnà" }, "adverb": { "zh": "常常", "py": "chángcháng" }, "with": { "zh": "跟室友", "py": "gēn shìyǒu" }, "verb1": { "zh": "聊天", "py": "liáotiān" } }, "end": "。", "es": "Ana charla a menudo con su compañera de habitación." },
+        { "slots": { "subject": { "zh": "我们", "py": "wǒmen" }, "time": { "zh": "晚上", "py": "wǎnshang" }, "with": { "zh": "一块儿", "py": "yíkuàir" }, "verb1": { "zh": "去", "py": "qù" }, "verb2": { "zh": "吃饭", "py": "chī fàn" } }, "end": "。", "es": "Esta noche vamos a cenar juntos." },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "aux": { "zh": "想", "py": "xiǎng" }, "with": { "zh": "跟你", "py": "gēn nǐ" }, "verb1": { "zh": "见面", "py": "jiànmiàn" } }, "end": "。", "es": "Quiero quedar contigo." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "time": { "zh": "今天", "py": "jīntiān" }, "adverb": { "zh": "不", "py": "bù" }, "with": { "zh": "跟他一起", "py": "gēn tā yìqǐ" }, "verb1": { "zh": "吃饭", "py": "chī fàn" } }, "end": "。", "es": "Hoy no como con él." },
+        { "slots": { "subject": { "zh": "小李", "py": "Xiǎo Lǐ" }, "adverb": { "zh": "不", "py": "bù" }, "aux": { "zh": "想", "py": "xiǎng" }, "with": { "zh": "和我们一起", "py": "hé wǒmen yìqǐ" }, "verb1": { "zh": "去", "py": "qù" } }, "end": "。", "es": "Xiao Li no quiere venir con nosotros." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "with": { "zh": "跟谁一起", "py": "gēn shéi yìqǐ" }, "verb1": { "zh": "吃饭", "py": "chī fàn" } }, "end": "？", "es": "¿Con quién comes?" },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "aux": { "zh": "想", "py": "xiǎng" }, "with": { "zh": "跟我们一起", "py": "gēn wǒmen yìqǐ" }, "verb1": { "zh": "去", "py": "qù" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿Quieres venir con nosotros?" }
+      ],
+      "mistakes": [
+        { "wrong": "我吃饭跟朋友。", "right": "我跟朋友一起吃饭。", "why": "«Con quién» va delante del verbo, no detrás como en español." },
+        { "wrong": "我一起跟朋友吃饭。", "right": "我跟朋友一起吃饭。", "why": "El orden es 跟 + persona + 一起: 一起 va pegado al verbo." },
+        { "wrong": "我跟朋友一起不吃饭。", "right": "我不跟朋友一起吃饭。", "why": "不 va delante de todo el bloque 跟…一起." },
+        { "wrong": "我想见面你。", "right": "我想跟你见面。", "why": "见面 no lleva objeto: la persona va con 跟." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "¿Con quién cenas?",
+      "lines": [
+        { "speaker": "小李", "zh": "雨果，你晚上跟谁一起吃饭？", "py": "Yǔguǒ, nǐ wǎnshang gēn shéi yìqǐ chī fàn?", "es": "Hugo, ¿con quién cenas esta noche?" },
+        { "speaker": "雨果", "zh": "我跟安娜一起吃饭。你想跟我们一起去吗？", "py": "Wǒ gēn Ānnà yìqǐ chī fàn. Nǐ xiǎng gēn wǒmen yìqǐ qù ma?", "es": "Ceno con Ana. ¿Quieres venir con nosotros?" },
+        { "speaker": "小李", "zh": "想！我们去哪儿吃？", "py": "Xiǎng! Wǒmen qù nǎr chī?", "es": "¡Sí! ¿Adónde vamos?" },
+        { "speaker": "雨果", "zh": "去饭馆。我们六点见面，好吗？", "py": "Qù fànguǎn. Wǒmen liù diǎn jiànmiàn, hǎo ma?", "es": "A un restaurante. Quedamos a las seis, ¿vale?" },
+        { "speaker": "小李", "zh": "好。安娜是你的好朋友吗？", "py": "Hǎo. Ānnà shì nǐ de hǎo péngyou ma?", "es": "Vale. ¿Ana es muy amiga tuya?" },
+        { "speaker": "雨果", "zh": "对，她是我的好朋友，也是我的同学。", "py": "Duì, tā shì wǒ de hǎo péngyou, yě shì wǒ de tóngxué.", "es": "Sí, es muy buena amiga y también compañera de clase." },
+        { "speaker": "小李", "zh": "你们常常一块儿聊天吗？", "py": "Nǐmen chángcháng yíkuàir liáotiān ma?", "es": "¿Charláis mucho juntos?" },
+        { "speaker": "雨果", "zh": "对，我们常常一起喝茶、聊天。", "py": "Duì, wǒmen chángcháng yìqǐ hē chá, liáotiān.", "es": "Sí, a menudo tomamos té y charlamos juntos." },
+        { "speaker": "小李", "zh": "太好了，晚上见！", "py": "Tài hǎo le, wǎnshang jiàn!", "es": "¡Genial, hasta la noche!" }
+      ],
+      "notes": "晚上见 «hasta la noche», 明天见 «hasta mañana»: hora + 见 es la despedida para quedar. En China se queda mucho para comer: «一起吃饭吧» es la invitación social más típica."
+    },
+    { "type": "exercises", "count": 14, "bank": ["g-he", "g-ye-dou", "g-word-order"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "我" }, "with": { "zh": "跟朋友一起" }, "verb1": { "zh": "吃饭" } }, "end": "。", "es": "Como con mis amigos." } },
+        { "sentence": { "slots": { "subject": { "zh": "你" }, "with": { "zh": "跟谁一起" }, "verb1": { "zh": "去" } }, "end": "？", "es": "¿Con quién vas?" }, "distractors": ["吗"] },
+        { "sentence": { "slots": { "subject": { "zh": "他" }, "adverb": { "zh": "不" }, "with": { "zh": "和我们一起" }, "verb1": { "zh": "喝茶" } }, "end": "。", "es": "Él no toma té con nosotros." }, "distractors": ["没"] },
+        { "sentence": { "slots": { "time0": { "zh": "明天晚上" }, "subject": { "zh": "雨果" }, "adverb": { "zh": "也" }, "aux": { "zh": "想" }, "with": { "zh": "跟室友一起" }, "verb1": { "zh": "去饭馆" }, "verb2": { "zh": "吃" }, "object": { "zh": "一盘饺子" } }, "end": "。", "es": "Mañana por la noche Hugo también quiere ir con su compañero de habitación a un restaurante a comer un plato de jiaozi." }, "distractors": ["和"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "我跟朋友一起吃饭。", "py": "Wǒ gēn péngyou yìqǐ chī fàn.", "es": "Como con mis amigos." },
+        { "zh": "你跟谁一起去？", "py": "Nǐ gēn shéi yìqǐ qù?", "es": "¿Con quién vas?" },
+        { "zh": "我们六点见面。", "py": "Wǒmen liù diǎn jiànmiàn.", "es": "Quedamos a las seis." },
+        { "zh": "我常常跟室友聊天。", "py": "Wǒ chángcháng gēn shìyǒu liáotiān.", "es": "Charlo a menudo con mi compañero de habitación." }
+      ],
+      "respond": [
+        { "q": { "zh": "你常常跟谁一起吃饭？", "py": "Nǐ chángcháng gēn shéi yìqǐ chī fàn?", "es": "¿Con quién sueles comer?" }, "model": { "zh": "我常常跟同学一起吃饭。", "py": "Wǒ chángcháng gēn tóngxué yìqǐ chī fàn.", "es": "Suelo comer con mis compañeros de clase." } },
+        { "q": { "zh": "你想跟我们一起去吗？", "py": "Nǐ xiǎng gēn wǒmen yìqǐ qù ma?", "es": "¿Quieres venir con nosotros?" }, "model": { "zh": "想！我们几点见面？", "py": "Xiǎng! Wǒmen jǐ diǎn jiànmiàn?", "es": "¡Sí! ¿A qué hora quedamos?" } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Hugo y sus amigos",
+      "text": "雨果的室友是小李。他们常常一起去食堂吃饭。安娜是雨果的好朋友，他们常常一块儿喝茶、聊天。今天晚上，雨果、安娜和小李一起去饭馆。他们六点见面。",
+      "es": "El compañero de habitación de Hugo es Xiao Li. A menudo van juntos al comedor a comer. Ana es muy amiga de Hugo: a menudo toman té y charlan juntos. Esta noche, Hugo, Ana y Xiao Li van juntos a un restaurante. Han quedado a las seis.",
+      "questions": [
+        { "q": "¿Quién es el compañero de habitación de Hugo?", "options": ["小李", "安娜", "大卫"], "answer": 0 },
+        { "q": "¿Qué hacen a menudo Hugo y Ana?", "options": ["喝茶、聊天", "去食堂", "买衣服"], "answer": 0 },
+        { "q": "¿A qué hora quedan esta noche?", "options": ["六点", "七点", "八点"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

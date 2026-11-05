@@ -1,0 +1,310 @@
+{
+  "id": "fonetica",
+  "title": "Fonética",
+  "zh": "语音",
+  "order": 17,
+  "icon": "AudioLines",
+  "summary": "Cómo suena el chino: la sílaba, las finales, las 21 iniciales y lo que el pinyin no te dice, con los errores típicos de un hispanohablante y cómo corregirlos.",
+  "kind": "topic",
+  "reviewed": false,
+  "sections": [
+    {
+      "id": "la-silaba",
+      "title": "La sílaba china: inicial + final + tono",
+      "unlockedBy": "e0-01",
+      "markdown": "### Una sílaba, tres piezas\n\nToda sílaba china tiene la misma estructura, mucho más sencilla que la española:\n\n| Sílaba | Inicial | Final | Tono |\n|---|---|---|---|\n| hǎo 好 | h | ao | 3.º |\n| nǐ 你 | n | i | 3.º |\n| shī 师 | sh | i | 1.º |\n| jiàn 见 | j | ian | 4.º |\n\n- **Inicial**: la consonante del principio. Hay **21**. Puede faltar (爱 *ài*).\n- **Final**: el resto. Vocales y, como mucho, **-n** o **-ng** al acabar. Nunca otra consonante final: en chino no hay sílabas como «mes» o «sol».\n- **Tono**: la melodía que va encima de toda la sílaba.\n\nCon 21 iniciales y unas 38 finales salen **unas 400 sílabas** (unas 1.300 con tonos). Son muy pocas comparadas con el español: por eso hay tantos caracteres que suenan igual y por eso el tono importa tanto.\n\n### El pinyin no se lee como el español\n\nEl pinyin usa nuestras letras, pero cada una representa **un sonido chino**:\n\n| Letra | No es… | Se parece a… | Ejemplo |\n|---|---|---|---|\n| **x** | «ks» de *taxi* | una «s» suave con la lengua plana y sonriendo | 谢谢 xièxie |\n| **h** | muda | una «j» española suave, sin rascar | 好 hǎo |\n| **z** | la «z» de *zapato* | «ts» sin soplo | 再见 zàijiàn |\n| **j** | la «j» de *jamón* | la «ch» de *chico*, con la lengua plana | 见 jiàn |\n| **sh** | «s» | «¡shhh!» con la lengua hacia atrás | 老师 lǎoshī |\n\n> 💡 **Regla de oro de la Etapa 0**: primero escucha, después lee. El pinyin te recuerda lo que has oído; no te dice cómo suena si no lo has oído antes.",
+      "examples": [
+        {
+          "zh": "你好！",
+          "py": "Nǐ hǎo!",
+          "es": "¡Hola!",
+          "note": "n + i · h + ao: dos sílabas, cada una con su tono."
+        },
+        {
+          "zh": "老师好！",
+          "py": "Lǎoshī hǎo!",
+          "es": "¡Hola, profe!"
+        },
+        {
+          "zh": "谢谢老师！",
+          "py": "Xièxie lǎoshī!",
+          "es": "¡Gracias, profe!",
+          "note": "x con sonrisa; sh con la lengua atrás."
+        },
+        {
+          "zh": "再见！",
+          "py": "Zàijiàn!",
+          "es": "¡Adiós!",
+          "note": "z = «ts»; j = una «ch» suave."
+        }
+      ]
+    },
+    {
+      "id": "finales-simples",
+      "title": "Finales simples: a o e i u ü",
+      "unlockedBy": "e0-02",
+      "markdown": "### Las seis vocales de base\n\n| Final | Ejemplo | Cómo se hace | Comparación con el español |\n|---|---|---|---|\n| **a** | 八 bā | Boca muy abierta, lengua baja. | La «a» de *casa*, más abierta. |\n| **o** | 波 bō | Labios redondos, con un toque de «u» delante. | «uo» rápida. Solo va tras b, p, m, f. |\n| **e** | 饿 è | Boca medio abierta, labios **sin redondear**, lengua atrás. | No existe. Un «eeh…» de duda, más grave. |\n| **i** | 一 yī | Labios estirados, lengua alta delante. | La «i» de *sí*. |\n| **u** | 五 wǔ | Labios redondos y adelantados. | La «u» de *tú*, más cerrada. |\n| **ü** | 鱼 yú | Lengua de «i» + labios de «u». | No existe. La «u» francesa o la «ü» alemana. |\n\nY una más: **er** (二 èr): una «e» china que termina con la punta de la lengua curvada hacia atrás.\n\n### Trucos para las dos difíciles\n\n- **e**: di «o» y, sin mover la lengua, estira los labios hacia los lados.\n- **ü**: «**i** por dentro, **u** por fuera». Di «iiii» largo y, mientras suena, cierra los labios en un círculo pequeño sin mover nada más.\n\n> ⚠️ **Ojo**: en el teclado del móvil la ü se escribe con la **v**: *nv* → 女, *lv* → 绿.\n\n### Cuando no hay inicial: y / w\n\nSi la sílaba no tiene consonante, el pinyin escribe **y** o **w** delante. **No suenan**:\n\n- i → **yi** (一 yī suena «i»)\n- u → **wu** (五 wǔ suena «u»)\n- ü → **yu** (鱼 yú suena «ü», **no** «iu»)\n\n### Errores típicos\n\n1. Decir la **e** china como nuestra «e» abierta.\n2. Decir la **ü** como «iu» o como «u».\n3. Leer *wu* como «güu» o *yi* como «lli».\n4. Vocales tímidas: en chino son más extremas que en español. Exagera.",
+      "examples": [
+        {
+          "zh": "一、五、八",
+          "py": "Yī, wǔ, bā",
+          "es": "Uno, cinco, ocho.",
+          "note": "i, u, a: tres finales simples, escritas con y / w cuando no hay inicial."
+        },
+        {
+          "zh": "妈妈好！",
+          "py": "Māma hǎo!",
+          "es": "¡Hola, mamá!"
+        },
+        {
+          "zh": "爸爸再见！",
+          "py": "Bàba zàijiàn!",
+          "es": "¡Adiós, papá!"
+        },
+        {
+          "zh": "鱼",
+          "py": "yú",
+          "es": "pez; pescado",
+          "note": "yu = ü: lengua de «i», labios de «u»."
+        }
+      ],
+      "sourceNotes": [
+        "zh-pron-u-umlaut"
+      ]
+    },
+    {
+      "id": "aspiradas-b-p-d-t",
+      "title": "Iniciales 1: b p m f · d t n l (con aire o sin aire)",
+      "unlockedBy": "e0-03",
+      "markdown": "### La clave: el soplo, no la vibración\n\nEn español, *b* y *p* se distinguen porque en la *b* vibran las cuerdas vocales. En chino **ninguna vibra**: lo que las separa es el **soplo de aire** que sale después.\n\n| Sin aire (no aspirada) | Con aire (aspirada) |\n|---|---|\n| **b** 爸 bà «papá» | **p** 怕 pà «tener miedo» |\n| **d** 大 dà «grande» | **t** 他 tā «él» |\n\n- La **b** china se parece más a nuestra «p» que a nuestra «b».\n- La **p** china es esa «p» seguida de un soplo, como la *p* inglesa de *pot*.\n- **d / t** funcionan igual, con la lengua detrás de los dientes de arriba.\n\n### La prueba del papel\n\nSujeta una hoja fina a tres dedos de la boca:\n\n1. **pà** (怕) y **tā** (他): el papel **se mueve**.\n2. **bà** (爸) y **dà** (大): el papel se queda **casi quieto**.\n\n### Las fáciles: m, f, n, l\n\nComo en español. La **l** es la de *luna*, nunca «ll». Con estas iniciales, **bo po mo fo** suenan «buo, puo, muo, fuo», y en **de te ne le** la *e* es la «e» china.\n\n### Errores típicos\n\n1. **Suavizar b y d entre vocales** (como en *haba*, *dedo*): en 爸爸 bàba las dos *b* son firmes.\n2. **Hacerlas vibrar**: piensa en «p» y «t» españolas.\n3. **Olvidar el soplo de p y t**: 他 tā acaba sonando como *dā* y 怕 pà como 爸 bà.",
+      "examples": [
+        {
+          "zh": "他不怕。",
+          "py": "Tā bú pà.",
+          "es": "Él no tiene miedo.",
+          "note": "t y p con soplo; b sin soplo."
+        },
+        {
+          "zh": "太好了！",
+          "py": "Tài hǎo le!",
+          "es": "¡Genial!",
+          "note": "t con aire; en le la e es la «e» china."
+        },
+        {
+          "zh": "不谢！",
+          "py": "Bú xiè!",
+          "es": "¡De nada!"
+        },
+        {
+          "zh": "爸爸怕妈妈。",
+          "py": "Bàba pà māma.",
+          "es": "Papá le tiene miedo a mamá.",
+          "note": "b sin aire frente a p con aire, en la misma frase."
+        }
+      ]
+    },
+    {
+      "id": "g-k-h-j-q-x",
+      "title": "Iniciales 2: g k h · j q x",
+      "unlockedBy": "e0-04",
+      "markdown": "### g, k, h: al fondo de la boca\n\n| Inicial | Ejemplo | Cómo se hace |\n|---|---|---|\n| **g** | 哥哥 gēge | Como la «g» de *gato*, sin vibrar: casi una «k». Sin aire. |\n| **k** | 渴 kě | Una «k» con soplo fuerte. |\n| **h** | 喝 hē | Nuestra «j» de *jamón*, pero **suave**: casi un suspiro. |\n\ng / k es el mismo juego que b / p: **sin aire / con aire**.\n\n### j, q, x: lengua plana y sonrisa\n\nPunta de la lengua **detrás de los dientes de abajo**, el centro de la lengua sube y los labios se estiran.\n\n| Inicial | Ejemplo | Cómo suena |\n|---|---|---|\n| **j** | 家 jiā, 九 jiǔ | Una «ch» de *chico* con la lengua plana, **sin aire**. Nada que ver con nuestra «j». |\n| **q** | 七 qī, 去 qù | La misma «ch» con **soplo**. No es «k» ni «cu». |\n| **x** | 谢谢 xièxie | Una «s» suave y sonriente. Nunca «ks». |\n\n> 💡 **Truco**: la prueba del papel también vale aquí. Con 七 qī el papel se mueve; con 家 jiā, no.\n\n### ¿Por qué j, q, x solo van con i y ü?\n\nPorque nacieron así: delante de **i** y **ü**, los antiguos *g k h* y *z c s* se «ablandaron» y se convirtieron en *j q x*. Consecuencias:\n\n- **j q x** solo aparecen delante de **i** o **ü**.\n- Tras j, q, x **no puede haber u**, así que la ü se escribe sin puntos: 去 se escribe *qù* y suena **q + ü**.\n\n### Errores típicos\n\n1. 家 jiā como «jiá» con jota española.\n2. 七 qī como «ki»; 去 qù como «cu».\n3. 谢谢 como «kseksie».\n4. Olvidar la ü escondida tras j, q, x.",
+      "examples": [
+        {
+          "zh": "谢谢哥哥！",
+          "py": "Xièxie gēge!",
+          "es": "¡Gracias, hermano!",
+          "note": "x sonriendo; g sin aire."
+        },
+        {
+          "zh": "他不去。",
+          "py": "Tā bú qù.",
+          "es": "Él no va.",
+          "note": "去 qù: q con soplo + ü escondida."
+        },
+        {
+          "zh": "七、八、九",
+          "py": "Qī, bā, jiǔ",
+          "es": "Siete, ocho, nueve.",
+          "note": "q con aire, j sin aire."
+        },
+        {
+          "zh": "他去哥哥家。",
+          "py": "Tā qù gēge jiā.",
+          "es": "Va a casa de su hermano mayor."
+        }
+      ],
+      "sourceNotes": [
+        "zh-pron-q-ch-c",
+        "zh-pron-u-umlaut"
+      ]
+    },
+    {
+      "id": "z-c-s-zh-ch-sh-r",
+      "title": "Iniciales 3: z c s · zh ch sh r y la -i vacía",
+      "unlockedBy": "e0-05",
+      "markdown": "### Tres zonas para las «eses»\n\n| Zona | Iniciales | Lengua |\n|---|---|---|\n| Delante | **z c s** | Punta detrás de los dientes de arriba |\n| Atrás | **zh ch sh r** | Punta levantada hacia el paladar |\n| Plana | **j q x** | Punta abajo, sonrisa (solo con i / ü) |\n\n### z c s y zh ch sh\n\n| Sin aire | Con aire | Fricativa | Lengua |\n|---|---|---|---|\n| **z** 字 zì («ts») | **c** 词 cí («ts» + soplo) | **s** 四 sì | delante |\n| **zh** 中 zhōng | **ch** 吃 chī | **sh** 是 shì | atrás |\n| **j** 家 jiā | **q** 七 qī | **x** 谢 xiè | plana |\n\nLee la tabla por columnas: **q, ch y c** son las tres «ches» con golpe de aire; **x, sh y s**, las tres «eses». Lo que cambia entre ellas es solo **dónde** está la lengua.\n\n> 💡 **Sonrisa – tubo – neutro**: x sonriendo, sh con la boca en tubo, s normal.\n\n> ⚠️ **Ojo si eres de España**: la «s» castellana se hace con la punta un poco levantada y a oídos chinos suena casi a *sh*. La *s* china es más adelantada y silbante.\n\n### La r china: una «sh» con voz\n\nLengua en la posición de **sh**, pero haciendo vibrar la garganta. Nunca «r» ni «rr» españolas, y tampoco «l».\n\n> 💡 **Truco**: practica en pares, sin mover la lengua: **shì → rì**, **shè → rè**. En el segundo solo «enciendes el motor».\n\n### La -i vacía\n\nDetrás de **z c s** y **zh ch sh r**, la *i* **no suena «i»**: la lengua se queda donde estaba y la voz sigue, como un zumbido.\n\n- **zi ci si**: un «sssz…» de abeja (字, 四).\n- **zhi chi shi ri**: una «shrr…» apagada (是, 吃, 十, 日).\n\n### Errores típicos\n\n1. 四 sì con una «i» clara: suena a 西 xī.\n2. Confundir **四 sì** y **十 shí**: en una tienda, cuatro o diez yuanes no es lo mismo.\n3. 热 rè con un toque de lengua, como en *pero*.\n4. z como la «z» de *zapato*; c como «k».",
+      "examples": [
+        {
+          "zh": "他是老师。",
+          "py": "Tā shì lǎoshī.",
+          "es": "Él es profesor.",
+          "note": "shì y shī: lengua atrás, -i vacía."
+        },
+        {
+          "zh": "太热了！",
+          "py": "Tài rè le!",
+          "es": "¡Qué calor!",
+          "note": "r = «sh» con voz, sin vibrar."
+        },
+        {
+          "zh": "四、十",
+          "py": "Sì, shí",
+          "es": "Cuatro, diez.",
+          "note": "s delante, sh atrás; y tonos distintos (4.º / 2.º)."
+        },
+        {
+          "zh": "四十四",
+          "py": "sìshísì",
+          "es": "cuarenta y cuatro",
+          "note": "s – sh – s: si te sale, tienes el par."
+        },
+        {
+          "zh": "他不吃。",
+          "py": "Tā bù chī.",
+          "es": "Él no come.",
+          "note": "ch: lengua atrás y soplo."
+        }
+      ],
+      "sourceNotes": [
+        "zh-pron-x-sh-s",
+        "zh-pron-q-ch-c",
+        "zh-pron-r"
+      ]
+    },
+    {
+      "id": "finales-compuestas",
+      "title": "Finales compuestas y nasales: -n / -ng",
+      "unlockedBy": "e0-06",
+      "markdown": "### Diptongos y triptongos\n\nLa vocal **principal** (la más abierta) se oye más larga; las demás, breves.\n\n| Final | Ejemplo | Suena |\n|---|---|---|\n| **ai** / **ei** | 爱 ài / 北 běi | «hay» / «rey» |\n| **ao** / **ou** | 好 hǎo / 友 yǒu | «au» / «ou» (nunca «au») |\n| **ia** / **ie** | 家 jiā / 谢 xiè | «ia» / «ie» con e clara |\n| **iao** / **iou** (iu) | 小 xiǎo / 九 jiǔ | «iau» / «iou» |\n| **ua** / **uo** | 花 huā / 我 wǒ, 国 guó | «ua» / «uo» |\n| **uai** / **uei** (ui) | 快 kuài / 对 duì | «uai» / «uei» |\n| **üe** | 月 yuè, 学 xué | ü + e clara |\n\n### -n frente a -ng\n\nEl español también tiene dos «enes», aunque no lo notemos: en *pan* la lengua acaba delante; en *banco*, atrás.\n\n| -n (lengua delante) | -ng (lengua atrás) |\n|---|---|\n| **an** 看 kàn | **ang** 忙 máng |\n| **en** 们 men | **eng** 朋 péng |\n| **in** 今 jīn | **ing** 京 jīng |\n| **ian** 见 jiàn («ien») | **iang** 想 xiǎng |\n| **uan** 晚 wǎn | **uang** 黄 huáng |\n| **un** 问 wèn («uen») | **ong** 中 zhōng («ung») |\n| **üan** 远 yuǎn · **ün** 云 yún | **iong** 用 yòng («iung») |\n\n> 💡 **-n cierra, -ng abre.** Termina la sílaba y mantén la posición dos segundos. ¿Boca casi cerrada y punta de la lengua en los dientes? -n. ¿Boca abierta y lengua atrás sin tocar nada? -ng.\n\n> 💡 **Truco**: para -ng, di *tengo* y para justo antes de la *g*.\n\n> ⚠️ **Ojo**: no pronuncies la *g*. -ng es **una sola** consonante: *máng*, no «mang-g».\n\n> 🏮 **¿Sabías que…?** Muchos hablantes del sur de China (Shanghái incluida) tampoco distinguen bien -n y -ng. Tú sí: para el examen y para que te entiendan en todas partes.\n\n### Errores típicos\n\n1. Pronunciar la *g* de -ng.\n2. Leer **ian** tal cual: 见 jiàn suena «jien».\n3. **ong** a la española: 中 zhōng suena más cerca de «chung».\n4. Mezclar -n y -ng: 饭 fàn «comida» y 放 fàng «poner» son palabras distintas. Y 上海 Shànghǎi no es «Shan-hai».",
+      "examples": [
+        {
+          "zh": "我太忙了！",
+          "py": "Wǒ tài máng le!",
+          "es": "¡Estoy liadísimo!",
+          "note": "忙 máng: -ng, boca abierta al acabar."
+        },
+        {
+          "zh": "你好，朋友！",
+          "py": "Nǐ hǎo, péngyou!",
+          "es": "¡Hola, amigo!",
+          "note": "ao y ou; 朋 con -ng."
+        },
+        {
+          "zh": "我爱北京！",
+          "py": "Wǒ ài Běijīng!",
+          "es": "¡Me encanta Pekín!",
+          "note": "uo, ai, ei, ing: cuatro finales compuestas seguidas."
+        },
+        {
+          "zh": "中国",
+          "py": "Zhōngguó",
+          "es": "China",
+          "note": "ong suena «ung»; uo se desliza de u a o."
+        },
+        {
+          "zh": "他看我。",
+          "py": "Tā kàn wǒ.",
+          "es": "Él me mira.",
+          "note": "看 kàn: -n, lengua en los dientes."
+        }
+      ],
+      "sourceNotes": [
+        "zh-pron-n-ng"
+      ]
+    },
+    {
+      "id": "lo-que-el-pinyin-esconde",
+      "title": "Lo que el pinyin esconde",
+      "unlockedBy": "e0-08",
+      "markdown": "### 1. La e cambia según la compañía\n\n| Dónde | Ejemplo | Cómo suena |\n|---|---|---|\n| Sola o tras consonante | 喝 hē, 热 rè, 了 le | La «e» china: boca de «o» sin redondear |\n| En -ie / -üe | 谢 xiè, 学 xué, 月 yuè | «e» abierta, como la española |\n| En ei | 谁 shéi, 北 běi | La «e» de *rey* |\n| En en / eng | 人 rén, 朋 péng | Una «e» relajada, neutra |\n\n### 2. La -i vacía\n\nEn **zi ci si** y **zhi chi shi ri** la *i* es un zumbido (四 sì, 是 shì, 日 rì). La *i* de verdad solo va tras las demás consonantes (你 nǐ, 七 qī).\n\n### 3. uo y la o tras b p m f\n\nSe oyen las dos vocales: 国 **guó**, 我 **wǒ**. Y **bō** suena «buo».\n\n### 4. ian = «ien»\n\n天 **tiān** «tien», 见 **jiàn** «chien». En **üan** (yuan, quan) la *a* se oye algo más abierta.\n\n### 5. La r inicial\n\nNo vibra nunca: lengua de **sh** + voz (人 rén, 热 rè). Al final de sílaba (哪儿 nǎr) es una «r» inglesa suave.\n\n### 6. Las abreviaturas se oyen\n\n**iu** suena «iou» (六 liù), **ui** suena «uei» (对 duì), **un** suena «uen». El pinyin se come la vocal; tu boca, no.",
+      "examples": [
+        {
+          "zh": "他是谁？",
+          "py": "Tā shì shéi?",
+          "es": "¿Quién es?",
+          "note": "shì con -i vacía; shéi con la «e» de *rey*."
+        },
+        {
+          "zh": "他是学生。",
+          "py": "Tā shì xuésheng.",
+          "es": "Es estudiante.",
+          "note": "学 xué: e abierta; 生 sheng: e neutra."
+        },
+        {
+          "zh": "他是中国人。",
+          "py": "Tā shì Zhōngguó rén.",
+          "es": "Es chino.",
+          "note": "人 rén: r sin vibrar."
+        },
+        {
+          "zh": "天",
+          "py": "tiān",
+          "es": "cielo; día",
+          "note": "Suena «tien»."
+        },
+        {
+          "zh": "热水",
+          "py": "rèshuǐ",
+          "es": "agua caliente",
+          "note": "热: e china; 水: ui suena «uei»."
+        }
+      ]
+    },
+    {
+      "id": "errores-de-hispanohablantes",
+      "title": "Los errores que delatan a un hispanohablante",
+      "unlockedBy": "e0-08",
+      "markdown": "### La tabla de los errores\n\n| Sonido | Lo que hacemos | Lo que hay que hacer |\n|---|---|---|\n| **r** | «r» o «rr» que vibra | Lengua atrás, sin vibrar: una «sh» con voz (人 rén, 热 rè) |\n| **x / sh / s** | Las tres como «s» | x sonriendo, sh con la lengua atrás, s delante (谢 xiè, 是 shì, 四 sì) |\n| **q / ch / c** | Las tres como «ch» sin aire | Las tres con soplo: q sonriendo, ch atrás, c = «ts» (七 qī, 吃 chī, 菜 cài) |\n| **ü** | «u» | «i» con labios de «u» (鱼 yú, 女 nǚ, 去 qù) |\n| **-n / -ng** | Igual | -n cierra (lengua en los dientes); -ng abre (lengua atrás) |\n| **j** | Jota española | Una «ch» suave sin aire (家 jiā). Nuestra jota se parece más a la **h** china |\n| **z / c** | Ceceo (*zapato*, *cielo*) | «ts» sin aire / con aire (字 zì, 菜 cài) |\n| **p t k q ch c** | Sin aire | Con la mano delante tienes que notar el soplo (他 tā, 怕 pà) |\n| **-i** de shi / si | «i» clara | Un zumbido (是 shì, 四 sì) |\n| **ian** | «ian» | «ien» (天 tiān) |\n\n### Por qué importa: pares que cambian de palabra\n\n- **r ≠ l**: 热 rè «calor» ≠ 乐 lè «alegre». Al huir de la «rr», muchos acabamos en la «l».\n- **x ≠ s española**: 谢谢 dicho «sié-sié» se entiende, pero suena muy extranjero; 上海 dicho «Sangai» ya no se entiende.\n- **q sin aire → j**: 请 qǐng sin soplo se acerca a 近 jìn / 经 jīng.\n- **ü → u**: 去 qù dicho como «chu» se parece a 出 chū «salir»; 女 nǚ dicho «nu» se acerca a 努 nǔ «esforzarse».\n- **-ng → -n**: 星期 xīngqī «semana» con -n suena a 新 xīn «nuevo».\n\n### Cómo entrenar\n\n- **Pares mínimos**: shì → rì, shè → rè, shén → rén (solo enciendes la voz); 四 sì → 十 shí → 西 xī (solo mueves la lengua).\n- **Prueba del papel**: 七 qī, 吃 chī y 菜 cài mueven la hoja; 家 jiā, 中 zhōng y 再 zài no.\n- **Pausa en -n / -ng**: aguanta la posición final dos segundos y comprueba dónde está la lengua.\n- **Un error por semana**: no lo corrijas todo a la vez. Elige uno y exagera la versión correcta.\n\n> 💡 **Truco**: si te llamas Hugo, tu nombre chino 雨果 Yǔguǒ empieza por ü: cada vez que te presentas, practicas.",
+      "examples": [
+        {
+          "zh": "他是中国人。",
+          "py": "Tā shì Zhōngguó rén.",
+          "es": "Es chino.",
+          "note": "sh – zh – r: tres sonidos con la lengua atrás."
+        },
+        {
+          "zh": "四十四",
+          "py": "sìshísì",
+          "es": "cuarenta y cuatro",
+          "note": "s – sh – s: el trabalenguas clásico."
+        },
+        {
+          "zh": "七、九、十",
+          "py": "Qī, jiǔ, shí",
+          "es": "Siete, nueve, diez.",
+          "note": "q con aire, j sin aire, sh atrás."
+        },
+        {
+          "zh": "他去西安。",
+          "py": "Tā qù Xī'ān.",
+          "es": "Va a Xi'an.",
+          "note": "qù con ü escondida; Xī con sonrisa; ān con -n."
+        },
+        {
+          "zh": "我太忙了！",
+          "py": "Wǒ tài máng le!",
+          "es": "¡Estoy liadísimo!",
+          "note": "t con soplo; -ng abierta."
+        }
+      ],
+      "sourceNotes": [
+        "zh-errors-hispanohablantes",
+        "zh-pron-r",
+        "zh-pron-x-sh-s",
+        "zh-pron-q-ch-c",
+        "zh-pron-u-umlaut",
+        "zh-pron-n-ng"
+      ]
+    }
+  ]
+}

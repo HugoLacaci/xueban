@@ -1,0 +1,138 @@
+{
+  "id": "b1-u03-l1",
+  "title": "¿Lo entiendes? 听得懂 / 听不懂",
+  "zh": "我听得懂",
+  "goal": "Decir si eres capaz o no de entender lo que oyes o lees con el complemento potencial 听得懂 / 听不懂, 看得懂 / 看不懂.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "听力", "pinyin": "tīnglì", "es": "comprensión oral; (clase de) audición", "note": "听力课 = clase de comprensión oral; 听力考试 = examen de audición." },
+    { "hanzi": "录音", "pinyin": "lùyīn", "es": "grabación; grabar (sonido)", "note": "听录音 = escuchar la grabación." },
+    { "hanzi": "录", "pinyin": "lù", "es": "grabar, registrar", "note": "老师把课录了 = la profesora ha grabado la clase." },
+    { "hanzi": "理解", "pinyin": "lǐjiě", "es": "comprender, entender (a fondo)", "note": "Más profundo que 懂: 理解这个意思, 理解你的想法." },
+    { "hanzi": "内容", "pinyin": "nèiróng", "es": "contenido" },
+    { "hanzi": "表达", "pinyin": "biǎodá", "es": "expresar; expresión", "note": "表达能力 = capacidad de expresión." },
+    { "hanzi": "交流", "pinyin": "jiāoliú", "es": "comunicarse, intercambiar (ideas)", "note": "跟同学交流 = hablar con los compañeros, intercambiar." },
+    { "hanzi": "提问", "pinyin": "tíwèn", "es": "hacer una pregunta (en clase)", "note": "Verbo: 我可以提问吗？ Para «una pregunta» como cosa se dice 问题." },
+    { "hanzi": "发言", "pinyin": "fāyán", "es": "intervenir, tomar la palabra", "note": "在课上发言 = participar en clase." },
+    { "hanzi": "各位", "pinyin": "gèwèi", "es": "todos ustedes, señoras y señores", "note": "Fórmula educada para dirigirse a un grupo: 各位同学, 各位老师." },
+    { "hanzi": "外文", "pinyin": "wàiwén", "es": "lengua extranjera (sobre todo escrita)", "note": "外文书 = libro en lengua extranjera." },
+    { "hanzi": "念", "pinyin": "niàn", "es": "leer en voz alta", "note": "念课文 = leer el texto en voz alta. 看 = leer en silencio." },
+    { "hanzi": "反复", "pinyin": "fǎnfù", "es": "repetidamente, una y otra vez", "note": "Va delante del verbo: 反复听, 反复练习." },
+    { "hanzi": "难度", "pinyin": "nándù", "es": "dificultad (grado)", "note": "难度很大 = es muy difícil." }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "老师的话我都听得懂。", "py": "Lǎoshī de huà wǒ dōu tīng de dǒng.", "es": "Entiendo todo lo que dice la profesora." },
+        { "zh": "这个录音我听不懂。", "py": "Zhège lùyīn wǒ tīng bu dǒng.", "es": "Esta grabación no la entiendo." },
+        { "zh": "你听得懂听不懂？", "py": "Nǐ tīng de dǒng tīng bu dǒng?", "es": "¿Lo entiendes o no?" }
+      ]
+    },
+    { "type": "vocab", "title": "Escuchar y hablar en clase", "words": ["听力", "录音", "录", "理解", "内容", "表达", "交流", "提问", "发言", "各位", "外文", "念", "反复", "难度"] },
+    {
+      "type": "phonetics-drill",
+      "title": "得 y 不 sin fuerza en medio: 听得懂, 听不懂",
+      "markdown": "En el complemento potencial, la sílaba del medio se queda **débil**:\n\n- **听得懂 tīng de dǒng**: 得 en **tono neutro**, corto y flojo.\n- **听不懂 tīng bu dǒng**: 不 también se **apaga** (*bu*, casi sin tono). No lo pronuncies como un *bù* enfático: el peso cae en el **resultado** (懂).\n\nRitmo: **fuerte – débil – fuerte** (TĪNG-de-DǑNG). Cuando contrastas dos ideas, el énfasis va en los resultados: 我听得**懂**，可是说不**好**.\n\nY un sandhi de tercer tono: **理解** se escribe *lǐjiě*, pero el primer tercer tono sube: suena *lí-jiě*.",
+      "items": [
+        { "audio": "听得懂", "options": ["tīng de dǒng", "tīng dé dǒng", "tīng děi dǒng"], "answer": 0, "explain": "El 得 del potencial es neutro, como el del grado." },
+        { "audio": "听不懂", "prompt": "¿Cómo suena 不 aquí?", "options": ["Ligero, casi sin tono: bu", "Cuarto tono fuerte: bù", "Segundo tono: bú"], "answer": 0, "explain": "En medio del potencial, 不 pierde el tono." },
+        { "audio": "我听得懂，可是说不好。", "prompt": "¿Dónde cae el énfasis?", "options": ["En 懂 y 好, los resultados", "En 得 y 不", "En 我"], "answer": 0 },
+        { "audio": "理解", "prompt": "¿Cómo se pronuncia de verdad?", "options": ["Lí-jiě: el primer tercer tono sube", "Lǐ-jiě con dos terceros completos", "Lì-jiě"], "answer": 0, "explain": "Tercero + tercero → segundo + tercero." },
+        { "audio": "录音", "options": ["lùyīn", "lǜyīn", "lùyìn"], "answer": 0, "explain": "lu con u normal (no ü) y cuarto tono; 音 en primero." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["懂", "念"],
+      "mnemonics": {
+        "懂": "忄 (corazón) + 董 (da el sonido, dǒng): entender es cosa del corazón, no solo del oído.",
+        "念": "今 (ahora) + 心 (corazón): lo que tienes ahora en el corazón y en la boca → pensar en alguien (想念) y leer en voz alta (念课文)."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "Verbo + 得 / 不 + resultado: 听得懂, 听不懂",
+      "markdown": "Ya conoces el resultado 懂: 我听**懂**了 = lo he entendido (ha pasado). Si metes **得** o **不** entre el verbo y el resultado, hablas de **si es posible**:\n\n| | |\n|---|---|\n| 听**得**懂 | puedo entenderlo (lo que oigo) |\n| 听**不**懂 | no consigo entenderlo |\n| 看**得**懂 / 看**不**懂 | entiendo / no entiendo lo que leo |\n\nEs el **complemento potencial**: se usa muchísimo, más que 能 para estas cosas.\n\n- **Negativa**: cambia 得 por **不**. Nada de 不 delante: *不听得懂* no existe.\n- **No es lo mismo que 没听懂**: 没听懂 = no lo entendí (esta vez); 听不懂 = no soy capaz de entenderlo.\n- **Pregunta**: 听得懂**吗**？ o la forma afirmativa-negativa 听得懂**听不懂**？\n\n**En el esqueleto** (convención de esta unidad): el verbo va en **Verbo 1** y **得 / 不 + resultado** en **Complemento**: 听 · 得懂. En la pregunta afirmativa-negativa, todo el bloque 得懂听不懂 va en *Complemento*.\n\n**Con objeto**: casi siempre el objeto va **delante como tema** (老师的话我听不懂), igual que con el 得 del grado (a2-u07): lo ponemos junto al sujeto. Si va **detrás** (我听不懂上海话), el bloque entero 听不懂 va en *Verbo 1* y el objeto en *Objeto*, como 看完了 + objeto.",
+      "focus": ["complement"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "老师的话我", "py": "lǎoshī de huà wǒ" }, "adverb": { "zh": "都", "py": "dōu" }, "verb1": { "zh": "听", "py": "tīng" }, "complement": { "zh": "得懂", "py": "de dǒng" } }, "end": "。", "es": "Entiendo todo lo que dice la profesora.", "esOrder": [{ "text": "Entiendo", "slot": "verb1" }, { "text": "todo", "slot": "adverb" }, { "text": "lo que dice la profesora", "slot": "subject" }] },
+        { "slots": { "subject": { "zh": "这个录音大卫", "py": "zhège lùyīn Dàwèi" }, "verb1": { "zh": "听", "py": "tīng" }, "complement": { "zh": "得懂", "py": "de dǒng" } }, "end": "。", "es": "David entiende esta grabación." },
+        { "slots": { "subject": { "zh": "安娜", "py": "Ānnà" }, "verb1": { "zh": "听得懂", "py": "tīng de dǒng" }, "object": { "zh": "上海话", "py": "Shànghǎihuà" } }, "end": "。", "es": "Ana entiende el shanghainés." },
+        { "slots": { "time0": { "zh": "现在", "py": "xiànzài" }, "subject": { "zh": "雨果", "py": "Yǔguǒ" }, "verb1": { "zh": "看得懂", "py": "kàn de dǒng" }, "object": { "zh": "中文书", "py": "Zhōngwén shū" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Ahora Hugo ya entiende libros en chino." },
+        { "slots": { "subject": { "zh": "这本外文书我", "py": "zhè běn wàiwén shū wǒ" }, "verb1": { "zh": "看", "py": "kàn" }, "complement": { "zh": "得懂", "py": "de dǒng" } }, "end": "。", "es": "Este libro en lengua extranjera lo entiendo." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "verb1": { "zh": "听", "py": "tīng" }, "complement": { "zh": "不懂", "py": "bu dǒng" } }, "end": "。", "es": "No lo entiendo (no soy capaz)." },
+        { "slots": { "subject": { "zh": "这个录音的内容我", "py": "zhège lùyīn de nèiróng wǒ" }, "adverb": { "zh": "还是", "py": "háishi" }, "verb1": { "zh": "听", "py": "tīng" }, "complement": { "zh": "不懂", "py": "bu dǒng" } }, "end": "。", "es": "Sigo sin entender el contenido de esta grabación." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "听", "py": "tīng" }, "complement": { "zh": "得懂", "py": "de dǒng" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿Lo entiendes?" },
+        { "slots": { "subject": { "zh": "老师的话你们", "py": "lǎoshī de huà nǐmen" }, "verb1": { "zh": "听", "py": "tīng" }, "complement": { "zh": "得懂听不懂", "py": "de dǒng tīng bu dǒng" } }, "end": "？", "es": "¿Entendéis lo que dice la profesora o no?" }
+      ],
+      "mistakes": [
+        { "wrong": "我不能听懂老师的话。", "right": "老师的话我听不懂。", "why": "Para «no consigo entender» se usa el potencial. 不能 suena a «no me está permitido» o a algo forzado." },
+        { "wrong": "我听得不懂。", "right": "我听不懂。", "why": "La negativa sustituye 得 por 不: no se usan los dos a la vez." },
+        { "wrong": "我没听得懂。", "right": "我没听懂。 / 我听不懂。", "why": "没 niega un resultado pasado (没听懂 = no lo entendí); el potencial solo se niega con 不 en medio." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "La primera clase de audición",
+      "lines": [
+        { "speaker": "王老师", "zh": "各位同学，大家好！我说话的时候，你们听得懂吗？", "py": "Gèwèi tóngxué, dàjiā hǎo! Wǒ shuōhuà de shíhou, nǐmen tīng de dǒng ma?", "es": "¡Hola a todos! Cuando hablo, ¿me entendéis?" },
+        { "speaker": "雨果", "zh": "老师，您说得慢一点儿，我就听得懂。", "py": "Lǎoshī, nín shuō de màn yìdiǎnr, wǒ jiù tīng de dǒng.", "es": "Profesora, si habla un poco más despacio, sí la entiendo." },
+        { "speaker": "大卫", "zh": "我听不懂。老师，您能再说一遍吗？", "py": "Wǒ tīng bu dǒng. Lǎoshī, nín néng zài shuō yí biàn ma?", "es": "Yo no la entiendo. Profesora, ¿puede repetirlo?" },
+        { "speaker": "王老师", "zh": "好。今天我们先听一个录音，然后大家交流一下。", "py": "Hǎo. Jīntiān wǒmen xiān tīng yí ge lùyīn, ránhòu dàjiā jiāoliú yíxià.", "es": "Vale. Hoy primero escuchamos una grabación y luego lo comentamos entre todos." },
+        { "speaker": "安娜", "zh": "这个录音的难度有点儿大，内容我只听懂了一半。", "py": "Zhège lùyīn de nándù yǒudiǎnr dà, nèiróng wǒ zhǐ tīngdǒng le yíbàn.", "es": "Esta grabación es bastante difícil: solo he entendido la mitad del contenido." },
+        { "speaker": "王老师", "zh": "没关系，我们反复听几遍，你们就听得懂了。", "py": "Méi guānxi, wǒmen fǎnfù tīng jǐ biàn, nǐmen jiù tīng de dǒng le.", "es": "No pasa nada: la escuchamos varias veces y ya la entenderéis." },
+        { "speaker": "雨果", "zh": "老师，我可以提问吗？“表达”是什么意思？", "py": "Lǎoshī, wǒ kěyǐ tíwèn ma? “Biǎodá” shì shénme yìsi?", "es": "Profesora, ¿puedo hacer una pregunta? ¿Qué significa «表达»?" },
+        { "speaker": "王老师", "zh": "表达就是用语言告诉别人你的想法。", "py": "Biǎodá jiù shì yòng yǔyán gàosu biérén nǐ de xiǎngfǎ.", "es": "«表达» es contar a los demás lo que piensas con palabras: expresar." },
+        { "speaker": "大卫", "zh": "我理解了。可是用汉语表达，我觉得还很难。", "py": "Wǒ lǐjiě le. Kěshì yòng Hànyǔ biǎodá, wǒ juéde hái hěn nán.", "es": "Entendido. Pero expresarme en chino todavía me parece muy difícil." },
+        { "speaker": "王老师", "zh": "所以上课的时候大家要多发言，听力和口语都要练习。", "py": "Suǒyǐ shàngkè de shíhou dàjiā yào duō fāyán, tīnglì hé kǒuyǔ dōu yào liànxí.", "es": "Por eso en clase tenéis que intervenir mucho: hay que practicar la comprensión y la expresión oral." },
+        { "speaker": "安娜", "zh": "外文书我看得懂，可是中文录音我常常听不懂。", "py": "Wàiwén shū wǒ kàn de dǒng, kěshì Zhōngwén lùyīn wǒ chángcháng tīng bu dǒng.", "es": "Los libros en lengua extranjera los entiendo, pero las grabaciones en chino muchas veces no." },
+        { "speaker": "王老师", "zh": "今天的课我录了，下课以后发给大家。每天听半个小时吧。", "py": "Jīntiān de kè wǒ lù le, xiàkè yǐhòu fāgěi dàjiā. Měi tiān tīng bàn ge xiǎoshí ba.", "es": "He grabado la clase de hoy; os la mando después. Escuchadla media hora cada día." },
+        { "speaker": "雨果", "zh": "好！我回宿舍以后，把录音再念几遍。", "py": "Hǎo! Wǒ huí sùshè yǐhòu, bǎ lùyīn zài niàn jǐ biàn.", "es": "¡Vale! Cuando vuelva a la residencia, repetiré la grabación en voz alta unas cuantas veces." }
+      ],
+      "notes": "各位同学 es la manera educada de dirigirse a una clase entera (en un acto: 各位老师, 各位朋友). En China es normal que el profesor pregunte 听得懂吗？ y que los alumnos contesten a coro 听得懂！ aunque no lo entiendan todo: si no lo entiendes, di 老师，我没听懂，能再说一遍吗？"
+    },
+    { "type": "exercises", "count": 16, "bank": ["g-complements", "g-modal-verbs", "g-bu-mei"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "老师的话我" }, "adverb": { "zh": "都" }, "verb1": { "zh": "听" }, "complement": { "zh": "得懂" } }, "end": "。", "es": "Entiendo todo lo que dice la profesora." }, "distractors": ["不"] },
+        { "sentence": { "slots": { "subject": { "zh": "这个录音我" }, "adverb": { "zh": "还是" }, "verb1": { "zh": "听" }, "complement": { "zh": "不懂" } }, "end": "。", "es": "Sigo sin entender esta grabación." }, "distractors": ["没", "能"] },
+        { "sentence": { "slots": { "subject": { "zh": "安娜" }, "verb1": { "zh": "听得懂" }, "object": { "zh": "上海话" }, "particle": { "zh": "吗" } }, "end": "？", "es": "¿Ana entiende el shanghainés?" } },
+        { "sentence": { "slots": { "time0": { "zh": "这个学期" }, "subject": { "zh": "雨果" }, "adverb": { "zh": "已经" }, "verb1": { "zh": "听得懂" }, "object": { "zh": "王老师上课的内容" }, "particle": { "zh": "了" } }, "end": "。", "es": "Este cuatrimestre Hugo ya entiende lo que explica la profesora Wang en clase." }, "distractors": ["不能"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "老师的话我都听得懂。", "py": "Lǎoshī de huà wǒ dōu tīng de dǒng.", "es": "Entiendo todo lo que dice la profesora." },
+        { "zh": "这个录音我听不懂。", "py": "Zhège lùyīn wǒ tīng bu dǒng.", "es": "Esta grabación no la entiendo." },
+        { "zh": "老师，我没听懂，能再说一遍吗？", "py": "Lǎoshī, wǒ méi tīngdǒng, néng zài shuō yí biàn ma?", "es": "Profesora, no lo he entendido, ¿puede repetirlo?" },
+        { "zh": "我听得懂，可是说不好。", "py": "Wǒ tīng de dǒng, kěshì shuō bu hǎo.", "es": "Lo entiendo, pero no consigo decirlo bien." }
+      ],
+      "respond": [
+        { "q": { "zh": "我说的话你听得懂吗？", "py": "Wǒ shuō de huà nǐ tīng de dǒng ma?", "es": "¿Entiendes lo que digo?" }, "model": { "zh": "听得懂。您说得慢一点儿，我都听得懂。", "py": "Tīng de dǒng. Nín shuō de màn yìdiǎnr, wǒ dōu tīng de dǒng.", "es": "Sí. Si habla un poco más despacio, lo entiendo todo." } },
+        { "q": { "zh": "上海话你听得懂听不懂？", "py": "Shànghǎihuà nǐ tīng de dǒng tīng bu dǒng?", "es": "¿Entiendes el shanghainés?" }, "model": { "zh": "上海话我听不懂，普通话听得懂。", "py": "Shànghǎihuà wǒ tīng bu dǒng, pǔtōnghuà tīng de dǒng.", "es": "El shanghainés no lo entiendo; el chino estándar, sí." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Al principio no entendía nada",
+      "text": "我叫雨果，是上海一所大学的研究生。刚开始上课的时候，王老师说话说得很快，我常常听不懂。听力课的录音难度也很大，内容我只听得懂一半。有一天下课以后，我去问王老师：“老师，我的听力不好，怎么办？”王老师说：“别着急。你可以把课上的录音反复听几遍。听不懂的地方，上课的时候就提问。”她还说，学习外文，理解和表达都很重要，所以要多发言，多跟同学交流。现在我每天晚上都在宿舍听半个小时录音，有时候还念课文。一个多月以后，老师的话我差不多都听得懂了。上个星期，我第一次在课上发言，王老师说：“各位同学，雨果说得很好！”",
+      "es": "Me llamo Hugo y soy estudiante de posgrado en una universidad de Shanghái. Al principio de las clases, la profesora Wang hablaba muy rápido y muchas veces no la entendía. Las grabaciones de la clase de audición también eran muy difíciles: solo entendía la mitad del contenido. Un día, al salir de clase, fui a preguntarle: «Profesora, no tengo buen oído para el chino, ¿qué hago?». Me dijo: «Tranquilo. Puedes escuchar las grabaciones de clase varias veces. Lo que no entiendas, pregúntalo en clase». También me dijo que, para aprender una lengua extranjera, comprender y expresarse son igual de importantes, así que hay que intervenir mucho y hablar con los compañeros. Ahora escucho grabaciones media hora todas las noches en la residencia y a veces leo los textos en voz alta. Al cabo de algo más de un mes, ya entiendo casi todo lo que dice la profesora. La semana pasada intervine por primera vez en clase y la profesora Wang dijo: «¡Compañeros, Hugo lo ha dicho muy bien!».",
+      "questions": [
+        { "q": "¿Qué le pasaba a Hugo al principio?", "options": ["常常听不懂老师的话", "常常看不懂中文书", "不想上课"], "answer": 0 },
+        { "q": "¿Qué le aconseja la profesora?", "options": ["把录音反复听几遍", "不要提问", "只看外文书"], "answer": 0 },
+        { "q": "¿Cuánto escucha Hugo cada noche?", "options": ["半个小时", "一个小时", "两个小时"], "answer": 0 },
+        { "q": "¿Qué pasó la semana pasada?", "options": ["雨果第一次在课上发言", "雨果没去上课", "老师录了一个录音"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

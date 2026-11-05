@@ -1,0 +1,82 @@
+{
+  "id": "esquema-tonos",
+  "title": "Esquema de los tonos (Chao)",
+  "zh": "声调图",
+  "order": 21,
+  "icon": "Activity",
+  "summary": "Los cinco niveles de Chao Yuen-ren y la ficha de cada tono: valor, ejemplo, gesto, marca, número y color.",
+  "kind": "reference",
+  "reviewed": false,
+  "sections": [
+    {
+      "id": "cinco-niveles",
+      "title": "Los cinco niveles de Chao",
+      "unlockedBy": "e0-10",
+      "markdown": "### La escala\n\nEl lingüista **Chao Yuen-ren** dividió la altura de la voz de cada persona en **cinco niveles**: **1** es lo más grave que dices cómodamente y **5**, lo más agudo. Cada tono se describe con los niveles por los que pasa.\n\n| Nivel | Altura |\n|---|---|\n| 5 | aguda |\n| 4 | media-aguda |\n| 3 | media |\n| 2 | media-grave |\n| 1 | grave |\n\n### La ficha de cada tono\n\n| Tono | Chao | Ejemplo | Gesto | Marca · número | Color en Xuébàn |\n|---|---|---|---|---|---|\n| 1.º | **55** | 妈 mā «mamá» | → alto y recto | ā · ma1 | rojo |\n| 2.º | **35** | 麻 má «cáñamo» | ↗ hacia arriba | á · ma2 | verde |\n| 3.º | **214 → 21** | 马 mǎ «caballo» | ↘↗ (la subida, corta) | ǎ · ma3 | azul |\n| 4.º | **51** | 骂 mà «regañar» | ↘ de golpe | à · ma4 | morado |\n| neutro | — | 吗 ma | un toque breve | ma · ma5 | gris |\n\n### Notas\n\n- **3.º = 21 casi siempre**. El 214 completo solo aparece aislado o al final con énfasis. Delante de otra sílaba, baja y se queda grave (el «medio tercer tono»).\n- Los números son **relativos**: un 55 de una voz grave es más bajo que un 55 de una voz aguda. Lo que importa es el dibujo.\n- Las alturas del español: «¿Vienes?» sube (≈ 35), «¡Ven!» cae (≈ 51). Los mismos dibujos, pero en chino van en **cada sílaba**.",
+      "examples": [
+        {
+          "zh": "妈",
+          "py": "mā",
+          "es": "mamá",
+          "note": "55"
+        },
+        {
+          "zh": "麻",
+          "py": "má",
+          "es": "cáñamo; entumecido",
+          "note": "35"
+        },
+        {
+          "zh": "马",
+          "py": "mǎ",
+          "es": "caballo",
+          "note": "214; en la frase, 21"
+        },
+        {
+          "zh": "骂",
+          "py": "mà",
+          "es": "regañar, insultar",
+          "note": "51"
+        },
+        {
+          "zh": "吗",
+          "py": "ma",
+          "es": "(partícula de pregunta)",
+          "note": "neutro"
+        }
+      ]
+    },
+    {
+      "id": "altura-del-neutro",
+      "title": "La altura del tono neutro",
+      "unlockedBy": "e0-10",
+      "markdown": "### Depende de la sílaba anterior\n\nEl neutro no tiene dibujo propio: es un punto corto cuya altura la marca el tono que va delante.\n\n| Tono anterior | Altura del neutro | Ejemplo |\n|---|---|---|\n| 1.º (55) | media-grave (≈ 2) | 妈妈 māma |\n| 2.º (35) | media (≈ 3) | 学生 xuésheng |\n| 3.º (21) | media-aguda (≈ 4): ¡más alta que la anterior! | 买了 mǎi le |\n| 4.º (51) | grave (≈ 1) | 爸爸 bàba |\n\n> 💡 **Truco**: no lo pienses como «bajo», sino como **corto y sin fuerza**: la voz «cae» donde la dejó la sílaba anterior.",
+      "examples": [
+        {
+          "zh": "妈妈",
+          "py": "māma",
+          "es": "mamá",
+          "note": "1.º + neutro"
+        },
+        {
+          "zh": "学生",
+          "py": "xuésheng",
+          "es": "estudiante",
+          "note": "2.º + neutro"
+        },
+        {
+          "zh": "你好吗？",
+          "py": "Nǐ hǎo ma?",
+          "es": "¿Qué tal?",
+          "note": "Tras el 3.º, 吗 queda un poco más alto."
+        },
+        {
+          "zh": "爸爸",
+          "py": "bàba",
+          "es": "papá",
+          "note": "4.º + neutro: el neutro queda abajo del todo."
+        }
+      ]
+    }
+  ]
+}

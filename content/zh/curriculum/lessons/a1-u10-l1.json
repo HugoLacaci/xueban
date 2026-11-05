@@ -1,0 +1,134 @@
+{
+  "id": "a1-u10-l1",
+  "title": "¿De qué color es?: los colores y 什么颜色",
+  "zh": "什么颜色？",
+  "goal": "Nombrar los colores, preguntar de qué color es algo y describir cosas con color + 的 + nombre.",
+  "minutes": 13,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "颜色", "pinyin": "yánsè", "es": "color", "note": "什么颜色？ = ¿de qué color?" },
+    { "hanzi": "红", "pinyin": "hóng", "es": "rojo (adjetivo)", "note": "El color de la suerte y de las fiestas." },
+    { "hanzi": "红色", "pinyin": "hóngsè", "es": "rojo (el color)", "note": "Con 色 es un nombre: 我爱红色. Como adjetivo con 很, sin 色: 很红." },
+    { "hanzi": "白", "pinyin": "bái", "es": "blanco" },
+    { "hanzi": "白色", "pinyin": "báisè", "es": "(color) blanco", "note": "Tradicionalmente, el color del luto." },
+    { "hanzi": "黑", "pinyin": "hēi", "es": "negro; oscuro", "note": "天黑了 = ya es de noche (oscurece)." },
+    { "hanzi": "黑色", "pinyin": "hēisè", "es": "(color) negro" },
+    { "hanzi": "黄", "pinyin": "huáng", "es": "amarillo" },
+    { "hanzi": "黄色", "pinyin": "huángsè", "es": "(color) amarillo", "note": "Cuidado: 黄色 también es «verde» en el sentido de «picante, erótico» (黄色电影)." },
+    { "hanzi": "蓝", "pinyin": "lán", "es": "azul" },
+    { "hanzi": "蓝色", "pinyin": "lánsè", "es": "(color) azul" },
+    { "hanzi": "绿", "pinyin": "lǜ", "es": "verde", "note": "绿茶 = té verde." },
+    { "hanzi": "绿色", "pinyin": "lǜsè", "es": "(color) verde" },
+    { "hanzi": "东西", "pinyin": "dōngxi", "es": "cosa, cosas", "note": "Lit. «este-oeste». Con tono neutro en 西; dōngxī (con primer tono) es «este y oeste»." }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "你的杯子是什么颜色？", "py": "Nǐ de bēizi shì shénme yánsè?", "es": "¿De qué color es tu vaso?" },
+        { "zh": "我有一个红色的杯子。", "py": "Wǒ yǒu yí ge hóngsè de bēizi.", "es": "Tengo un vaso rojo." },
+        { "zh": "北京的天很蓝。", "py": "Běijīng de tiān hěn lán.", "es": "El cielo de Pekín está muy azul." }
+      ]
+    },
+    { "type": "vocab", "title": "Los colores", "words": ["颜色", "红", "红色", "白", "白色", "黑", "黑色", "黄", "黄色", "蓝", "蓝色", "绿", "绿色", "东西"] },
+    {
+      "type": "phonetics-drill",
+      "title": "La ü: 绿 lǜ y 女 nǚ",
+      "markdown": "La **ü** no existe en español: es una **«i» con los labios redondeados**, como la *u* francesa o la *ü* alemana. Di «iiii» y, sin mover la lengua, redondea los labios como para silbar.\n\n- Tras **n** y **l** se escriben los puntos, porque hay pares con u: 绿 **lǜ** (verde) / 路 lù (camino), 女 **nǚ** (mujer) / 努 nǔ.\n- Tras **j q x y** los puntos **no se escriben**, pero la vocal sigue siendo ü: 去 qù, 鱼 yú, 学 xué.\n\nSi te sale «u», es que has movido la lengua hacia atrás.",
+      "items": [
+        { "audio": "绿", "options": ["lǜ", "lù", "lǚ"], "answer": 0, "explain": "lǜ: ü y cuarto tono. 路 lù sería «camino»." },
+        { "audio": "女", "options": ["nǚ", "nǔ", "nǜ"], "answer": 0, "explain": "nǚ: ü con tercer tono." },
+        { "audio": "绿色", "options": ["lǜsè", "lùsè", "lǜshè"], "answer": 0, "explain": "lǜ + sè (s, no sh): dos cuartos tonos." },
+        { "audio": "鱼", "prompt": "¿Qué vocal suena en yu?", "options": ["ü (i redondeada)", "u (como en español)", "iu"], "answer": 0, "explain": "Tras y, la u escrita es siempre ü." },
+        { "audio": "去", "prompt": "¿Qué vocal suena en qu?", "options": ["ü", "u"], "answer": 0, "explain": "Tras j q x, la u escrita es siempre ü." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["红", "黑"],
+      "mnemonics": {
+        "红": "纟 (hilo de seda) + 工 gōng (pista de sonido): la seda teñida de rojo.",
+        "黑": "Arriba, una chimenea llena de hollín; abajo, 灬 (fuego): lo que deja el fuego es negro."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "Color + 的 + nombre: «un vaso rojo»",
+      "markdown": "En chino **el adjetivo va delante del nombre**, al revés que en español: «un vaso **rojo**» → 一个**红色的**杯子 (lit. «un rojo de vaso»). El 的 une el color al nombre, como en la unidad 8 (很好吃的饺子).\n\nDos formas para cada color:\n\n- **红 / 白 / 蓝…** son **adjetivos**: van con 很 como predicado (天**很蓝**) o pegados al nombre en palabras fijas (绿茶, 白酒).\n- **红色 / 白色 / 蓝色…** son **nombres de color**: 我爱**红色**; 红色**的**杯子.\n\nPara preguntar: **什么颜色**？ o **什么颜色的** + nombre？\n\n> 你的杯子是**什么颜色**？ — 红色。\n\n**有** sirve para decir lo que tienes y para preguntar si *hay* algo: 你**有**红色的杯子**吗**？ Su negativa es siempre **没有**, nunca *不有.",
+      "focus": ["object"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "verb1": { "zh": "有", "py": "yǒu" }, "object": { "zh": "一个红色的杯子", "py": "yí ge hóngsè de bēizi" } }, "end": "。", "es": "Tengo un vaso rojo.", "esOrder": [{ "text": "Tengo", "slot": "verb1" }, { "text": "un vaso rojo", "slot": "object" }] },
+        { "slots": { "subject": { "zh": "安娜", "py": "Ānnà" }, "aux": { "zh": "想", "py": "xiǎng" }, "verb1": { "zh": "要", "py": "yào" }, "object": { "zh": "白色的瓶子", "py": "báisè de píngzi" } }, "end": "。", "es": "Ana quiere una botella blanca." },
+        { "slots": { "subject": { "zh": "北京的天", "py": "Běijīng de tiān" }, "adverb": { "zh": "很", "py": "hěn" }, "verb1": { "zh": "蓝", "py": "lán" } }, "end": "。", "es": "El cielo de Pekín está muy azul." },
+        { "slots": { "subject": { "zh": "小李", "py": "Xiǎo Lǐ" }, "adverb": { "zh": "常常", "py": "chángcháng" }, "verb1": { "zh": "喝", "py": "hē" }, "object": { "zh": "绿茶", "py": "lǜchá" } }, "end": "。", "es": "Xiao Li bebe té verde a menudo." },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "verb1": { "zh": "爱", "py": "ài" }, "object": { "zh": "黄色", "py": "huángsè" } }, "end": "。", "es": "Me encanta el amarillo." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "verb1": { "zh": "没有", "py": "méiyǒu" }, "object": { "zh": "黑色的杯子", "py": "hēisè de bēizi" } }, "end": "。", "es": "No tengo ningún vaso negro." },
+        { "slots": { "subject": { "zh": "上海的天", "py": "Shànghǎi de tiān" }, "adverb": { "zh": "不太", "py": "bú tài" }, "verb1": { "zh": "蓝", "py": "lán" } }, "end": "。", "es": "El cielo de Shanghái no está muy azul." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你的杯子", "py": "nǐ de bēizi" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "什么颜色", "py": "shénme yánsè" } }, "end": "？", "es": "¿De qué color es tu vaso?" },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "有", "py": "yǒu" }, "object": { "zh": "绿色的瓶子", "py": "lǜsè de píngzi" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿Tienes una botella verde?" },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "aux": { "zh": "想", "py": "xiǎng" }, "verb1": { "zh": "要", "py": "yào" }, "object": { "zh": "什么颜色的杯子", "py": "shénme yánsè de bēizi" } }, "end": "？", "es": "¿De qué color quieres el vaso?" }
+      ],
+      "mistakes": [
+        { "wrong": "我有一个杯子红色的。", "right": "我有一个红色的杯子。", "why": "El color va delante del nombre, al revés que en español." },
+        { "wrong": "天很蓝色。", "right": "天很蓝。", "why": "Con 很 se usa el adjetivo (蓝), no el nombre del color (蓝色)." },
+        { "wrong": "我不有黑色的杯子。", "right": "我没有黑色的杯子。", "why": "有 se niega siempre con 没: 没有." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Un vaso para la residencia",
+      "lines": [
+        { "speaker": "安娜", "zh": "雨果，你想买什么东西？", "py": "Yǔguǒ, nǐ xiǎng mǎi shénme dōngxi?", "es": "Hugo, ¿qué quieres comprar?" },
+        { "speaker": "雨果", "zh": "我想买一个杯子。", "py": "Wǒ xiǎng mǎi yí ge bēizi.", "es": "Quiero comprar un vaso." },
+        { "speaker": "安娜", "zh": "你要什么颜色的杯子？", "py": "Nǐ yào shénme yánsè de bēizi?", "es": "¿De qué color lo quieres?" },
+        { "speaker": "雨果", "zh": "我爱红色。有红色的杯子吗？", "py": "Wǒ ài hóngsè. Yǒu hóngsè de bēizi ma?", "es": "Me encanta el rojo. ¿Hay vasos rojos?" },
+        { "speaker": "卖东西的", "zh": "有。这个红色的杯子很好看。", "py": "Yǒu. Zhège hóngsè de bēizi hěn hǎokàn.", "es": "Sí. Este vaso rojo es muy bonito." },
+        { "speaker": "安娜", "zh": "我想要一个白色的杯子。", "py": "Wǒ xiǎng yào yí ge báisè de bēizi.", "es": "Yo quiero un vaso blanco." },
+        { "speaker": "卖东西的", "zh": "没有白色的杯子。黑色的杯子和绿色的杯子也很好看。", "py": "Méiyǒu báisè de bēizi. Hēisè de bēizi hé lǜsè de bēizi yě hěn hǎokàn.", "es": "Blancos no hay. Los negros y los verdes también son muy bonitos." },
+        { "speaker": "安娜", "zh": "好，我要一个绿色的杯子。", "py": "Hǎo, wǒ yào yí ge lǜsè de bēizi.", "es": "Vale, quiero uno verde." },
+        { "speaker": "雨果", "zh": "我要这个红色的杯子。谢谢！", "py": "Wǒ yào zhège hóngsè de bēizi. Xièxie!", "es": "Y yo, este rojo. ¡Gracias!" }
+      ],
+      "notes": "Repetir «杯子» en cada frase suena pesado; en la lección 5 verás cómo el chino lo evita: 我要绿色的 («quiero el verde»). En China, el rojo es el color de la suerte (sobres rojos 红包, bodas) y el blanco se asocia al luto: no regales cosas blancas en una boda."
+    },
+    { "type": "exercises", "count": 14, "bank": ["g-de", "g-you", "u06"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "我" }, "verb1": { "zh": "有" }, "object": { "zh": "一个红色的杯子" } }, "end": "。", "es": "Tengo un vaso rojo." }, "distractors": ["不"] },
+        { "sentence": { "slots": { "subject": { "zh": "你的杯子" }, "verb1": { "zh": "是" }, "object": { "zh": "什么颜色" } }, "end": "？", "es": "¿De qué color es tu vaso?" }, "distractors": ["吗"] },
+        { "sentence": { "slots": { "subject": { "zh": "北京的天" }, "adverb": { "zh": "很" }, "verb1": { "zh": "蓝" } }, "end": "。", "es": "El cielo de Pekín está muy azul." }, "distractors": ["蓝色"] },
+        { "sentence": { "slots": { "time0": { "zh": "明天下午" }, "subject": { "zh": "我和安娜" }, "adverb": { "zh": "都" }, "aux": { "zh": "想" }, "verb1": { "zh": "去" }, "verb2": { "zh": "买" }, "object": { "zh": "一个很好看的绿色的杯子" } }, "end": "。", "es": "Mañana por la tarde Ana y yo queremos ir a comprar un vaso verde muy bonito." }, "distractors": ["没"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "你的杯子是什么颜色？", "py": "Nǐ de bēizi shì shénme yánsè?", "es": "¿De qué color es tu vaso?" },
+        { "zh": "我有一个红色的杯子。", "py": "Wǒ yǒu yí ge hóngsè de bēizi.", "es": "Tengo un vaso rojo." },
+        { "zh": "我爱绿色。", "py": "Wǒ ài lǜsè.", "es": "Me encanta el verde." },
+        { "zh": "没有白色的杯子。", "py": "Méiyǒu báisè de bēizi.", "es": "No hay vasos blancos." }
+      ],
+      "respond": [
+        { "q": { "zh": "你爱什么颜色？", "py": "Nǐ ài shénme yánsè?", "es": "¿Qué color te encanta?" }, "model": { "zh": "我爱蓝色。", "py": "Wǒ ài lánsè.", "es": "Me encanta el azul." } },
+        { "q": { "zh": "你有红色的杯子吗？", "py": "Nǐ yǒu hóngsè de bēizi ma?", "es": "¿Tienes algún vaso rojo?" }, "model": { "zh": "没有，我有一个白色的杯子。", "py": "Méiyǒu, wǒ yǒu yí ge báisè de bēizi.", "es": "No, tengo un vaso blanco." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Los colores de la residencia",
+      "text": "雨果有很多东西。他有一个红色的杯子和一个白色的杯子。安娜爱绿色，她有一个绿色的瓶子。小李爱喝绿茶。小李的猫很白，也很可爱。北京的天很蓝，上海的天不太蓝。",
+      "es": "Hugo tiene muchas cosas. Tiene un vaso rojo y uno blanco. A Ana le encanta el verde: tiene una botella verde. A Xiao Li le encanta el té verde. El gato de Xiao Li es muy blanco y muy mono. El cielo de Pekín está muy azul; el de Shanghái, no tanto.",
+      "questions": [
+        { "q": "¿De qué color es la botella de Ana?", "options": ["绿色", "红色", "白色"], "answer": 0 },
+        { "q": "¿Cuántos vasos tiene Hugo?", "options": ["两个", "一个", "三个"], "answer": 0 },
+        { "q": "¿Cómo es el gato de Xiao Li?", "options": ["Blanco y mono", "Negro y grande", "Amarillo"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

@@ -1,0 +1,949 @@
+{
+  "id": "esqueleto",
+  "title": "El esqueleto de la frase",
+  "zh": "句子的骨架",
+  "order": 2,
+  "icon": "Rows3",
+  "summary": "La frase china tiene una fila de huecos fijos: quién, cuándo, cómo, con quién, dónde, qué hace y cómo sale. Cada hueco se estrena en una unidad y aquí se va dibujando el esqueleto completo, comparado con el orden del español.",
+  "kind": "topic",
+  "reviewed": false,
+  "sections": [
+    {
+      "id": "sujeto-verbo-objeto",
+      "title": "Sujeto · Verbo · Objeto",
+      "unlockedBy": "a1-u01-l1",
+      "markdown": "### Los tres primeros huecos\n\nLa frase más sencilla tiene el mismo orden que en español: **quién → qué hace → a qué**.\n\n| Sujeto | Verbo | Objeto |\n|---|---|---|\n| 我 | 是 | 学生 |\n| 她 | 是 | 老师 |\n\nLo que cambia es que **el verbo no se conjuga**: 是 sirve para *soy, eres, es, somos…* y tampoco cambia con el pasado o el futuro. Por eso el chino necesita colocar cada pieza en su sitio: **el orden hace el trabajo que en español hacen las terminaciones**.\n\n> 🧠 **Mnemotecnia**: piensa en una estantería con huecos numerados. Cada pieza tiene su balda y no se cambia de sitio aunque la frase sea pregunta o negación.\n\n> ⚠️ **Ojo**: el esqueleto irá creciendo. Cada vez que se estrene un hueco nuevo, este apunte añadirá una sección y la fila se hará más larga.",
+      "sourceNotes": ["zh-word-order-skeleton", "zh-grammar-word-order", "zh-grammar-shi"],
+      "skeleton": {
+        "focus": ["subject", "verb1", "object"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ", "es": "yo" },
+              "verb1": { "zh": "是", "py": "shì", "es": "soy" },
+              "object": { "zh": "学生", "py": "xuésheng", "es": "estudiante" }
+            },
+            "end": "。",
+            "es": "Soy estudiante.",
+            "esOrder": [
+              { "text": "(Yo)", "slot": "subject" },
+              { "text": "soy", "slot": "verb1" },
+              { "text": "estudiante", "slot": "object" }
+            ]
+          },
+          {
+            "slots": {
+              "subject": { "zh": "她", "py": "tā", "es": "ella" },
+              "verb1": { "zh": "是", "py": "shì", "es": "es" },
+              "object": { "zh": "老师", "py": "lǎoshī", "es": "profesora" }
+            },
+            "end": "。",
+            "es": "Ella es profesora."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "我们", "py": "wǒmen", "es": "nosotros" },
+              "verb1": { "zh": "是", "py": "shì", "es": "somos" },
+              "object": { "zh": "学生", "py": "xuésheng", "es": "estudiantes" }
+            },
+            "end": "。",
+            "es": "Somos estudiantes."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "我是学生。", "py": "Wǒ shì xuésheng.", "es": "Soy estudiante." },
+        { "zh": "他是老师。", "py": "Tā shì lǎoshī.", "es": "Él es profesor." },
+        { "zh": "我们是学生。", "py": "Wǒmen shì xuésheng.", "es": "Somos estudiantes." }
+      ]
+    },
+    {
+      "id": "particula-final",
+      "title": "La partícula final",
+      "unlockedBy": "a1-u01-l2",
+      "markdown": "### Al final de todo\n\nEl último hueco es para las **partículas finales**: palabras cortas, sin tono propio, que cambian el «tono» de toda la frase. La primera es **吗**: convierte una afirmación en pregunta de sí / no.\n\n| Sujeto | Verbo | Objeto | Partícula |\n|---|---|---|---|\n| 你 | 是 | 学生 | **吗**？ |\n\n- **No se mueve nada**: ni se invierte el sujeto ni se sube la voz. Solo se añade 吗.\n- Más adelante entrarán en este mismo hueco **呢** (¿y tú?), **吧** (propuesta, suposición) y **了** (cambio).\n\n> ❌ **Error típico**: invertir como en español (✗是你学生吗？). El orden de la pregunta es el de la respuesta.",
+      "sourceNotes": ["zh-word-order-skeleton", "zh-grammar-ma"],
+      "skeleton": {
+        "focus": ["particle"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "你", "py": "nǐ", "es": "tú" },
+              "verb1": { "zh": "是", "py": "shì", "es": "eres" },
+              "object": { "zh": "安娜", "py": "Ānnà", "es": "Ana" },
+              "particle": { "zh": "吗", "py": "ma", "es": "¿…?" }
+            },
+            "end": "？",
+            "es": "¿Eres Ana?"
+          },
+          {
+            "slots": {
+              "subject": { "zh": "他们", "py": "tāmen", "es": "ellos" },
+              "verb1": { "zh": "是", "py": "shì", "es": "son" },
+              "object": { "zh": "同学", "py": "tóngxué", "es": "compañeros" },
+              "particle": { "zh": "吗", "py": "ma", "es": "¿…?" }
+            },
+            "end": "？",
+            "es": "¿Son compañeros de clase?"
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "你是安娜吗？", "py": "Nǐ shì Ānnà ma?", "es": "¿Eres Ana?" },
+        { "zh": "这是王老师吗？", "py": "Zhè shì Wáng lǎoshī ma?", "es": "¿Esta es la profesora Wang?" },
+        { "zh": "他们是同学吗？", "py": "Tāmen shì tóngxué ma?", "es": "¿Son compañeros de clase?" }
+      ]
+    },
+    {
+      "id": "adverbios",
+      "title": "Adverbios: entre el sujeto y el verbo",
+      "unlockedBy": "a1-u01-l3",
+      "markdown": "### Un hueco para 也, 不 y compañía\n\nLos adverbios cortos van **detrás del sujeto y delante del verbo**. Nunca al principio ni al final, aunque en español digamos «*también* yo» o «yo *también*».\n\n| Sujeto | Adverbio | Verbo | Objeto |\n|---|---|---|---|\n| 我 | **也** | 是 | 学生 |\n| 我 | **不** | 是 | 老师 |\n| 我 | **也不** | 是 | 老师 |\n\n- Si hay varios, el orden es fijo: **也** antes que **不** (也不 = «tampoco»).\n- En este hueco irán entrando 都, 很, 没, 常常… y, más tarde, los adverbios de tiempo y de frecuencia.\n- Con adjetivos, 很 también va aquí y el adjetivo hace de verbo: 我也**很**高兴.\n\n> ❌ **Error típico**: ✗也我是学生, ✗我是学生也 → 我**也**是学生.",
+      "sourceNotes": ["zh-word-order-skeleton", "zh-grammar-ye-dou"],
+      "skeleton": {
+        "focus": ["adverb"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ", "es": "yo" },
+              "adverb": { "zh": "也", "py": "yě", "es": "también" },
+              "verb1": { "zh": "是", "py": "shì", "es": "soy" },
+              "object": { "zh": "学生", "py": "xuésheng", "es": "estudiante" }
+            },
+            "end": "。",
+            "es": "Yo también soy estudiante.",
+            "esOrder": [
+              { "text": "Yo", "slot": "subject" },
+              { "text": "también", "slot": "adverb" },
+              { "text": "soy", "slot": "verb1" },
+              { "text": "estudiante", "slot": "object" }
+            ]
+          },
+          {
+            "slots": {
+              "subject": { "zh": "大卫", "py": "Dàwèi", "es": "David" },
+              "adverb": { "zh": "不", "py": "bú", "es": "no" },
+              "verb1": { "zh": "是", "py": "shì", "es": "es" },
+              "object": { "zh": "西班牙人", "py": "Xībānyá rén", "es": "español" }
+            },
+            "end": "。",
+            "es": "David no es español."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "adverb": { "zh": "也很", "py": "yě hěn", "es": "también" },
+              "verb1": { "zh": "高兴", "py": "gāoxìng", "es": "estoy encantado" }
+            },
+            "end": "。",
+            "es": "Yo también estoy encantado."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "我也是学生。", "py": "Wǒ yě shì xuésheng.", "es": "Yo también soy estudiante." },
+        { "zh": "我也不是老师。", "py": "Wǒ yě bú shì lǎoshī.", "es": "Yo tampoco soy profesor." },
+        { "zh": "认识你，我也很高兴。", "py": "Rènshi nǐ, wǒ yě hěn gāoxìng.", "es": "Yo también estoy encantado de conocerte." },
+        { "zh": "你也是西班牙人吗？", "py": "Nǐ yě shì Xībānyá rén ma?", "es": "¿Tú también eres español?" }
+      ]
+    },
+    {
+      "id": "tiempo",
+      "title": "Tiempo: delante del verbo",
+      "unlockedBy": "a1-u05-l1",
+      "markdown": "### El cuándo avisa antes de la acción\n\nComo el verbo no tiene pasado ni futuro, la palabra de tiempo (今天, 明天, 星期六…) tiene que llegar **antes que el verbo**. Va entre el sujeto y el verbo, y también antes de los adverbios:\n\n| Sujeto | **Tiempo** | Adverbio | Verbo (+ lugar) |\n|---|---|---|---|\n| 我 | **明天** | | 去北京 |\n| 我 | **明天** | 不 | 去上海 |\n\n- En español el tiempo puede cerrar la frase («voy a Pekín mañana»); en chino, **nunca**.\n- Varias palabras de tiempo van **de grande a pequeño**: 明天上午八点.\n- El tiempo no lleva preposición: ✗在星期六 → 星期六.\n\n> ❌ **Error típico**: ✗我去北京明天 → 我明天去北京. Y ✗我不明天去 → 我明天不去.",
+      "sourceNotes": ["zh-grammar-time-before-verb", "zh-word-order-skeleton"],
+      "skeleton": {
+        "focus": ["time"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ", "es": "yo" },
+              "time": { "zh": "明天", "py": "míngtiān", "es": "mañana" },
+              "verb1": { "zh": "去北京", "py": "qù Běijīng", "es": "voy a Pekín" }
+            },
+            "end": "。",
+            "es": "Voy a Pekín mañana.",
+            "esOrder": [
+              { "text": "Voy a Pekín", "slot": "verb1" },
+              { "text": "mañana", "slot": "time" }
+            ]
+          },
+          {
+            "slots": {
+              "subject": { "zh": "我们", "py": "wǒmen" },
+              "time": { "zh": "星期六", "py": "xīngqīliù", "es": "el sábado" },
+              "verb1": { "zh": "去朋友家", "py": "qù péngyou jiā", "es": "vamos a casa de un amigo" }
+            },
+            "end": "。",
+            "es": "El sábado vamos a casa de un amigo."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "time": { "zh": "明天", "py": "míngtiān", "es": "mañana" },
+              "adverb": { "zh": "不", "py": "bú", "es": "no" },
+              "verb1": { "zh": "去上海", "py": "qù Shànghǎi", "es": "voy a Shanghái" }
+            },
+            "end": "。",
+            "es": "Mañana no voy a Shanghái."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "我明天去北京。", "py": "Wǒ míngtiān qù Běijīng.", "es": "Voy a Pekín mañana." },
+        { "zh": "安娜后天去西安。", "py": "Ānnà hòutiān qù Xī'ān.", "es": "Ana va a Xi'an pasado mañana." },
+        { "zh": "我明天不去上海。", "py": "Wǒ míngtiān bú qù Shànghǎi.", "es": "Mañana no voy a Shanghái." },
+        { "zh": "你星期天去朋友家吗？", "py": "Nǐ xīngqītiān qù péngyou jiā ma?", "es": "¿Vas a casa de tu amigo el domingo?" }
+      ]
+    },
+    {
+      "id": "tiempo-inicial",
+      "title": "El tiempo al principio",
+      "unlockedBy": "a1-u06-l3",
+      "markdown": "### Dos sitios correctos y uno prohibido\n\nEl tiempo tiene un segundo hueco: **delante del sujeto**. Se usa para destacarlo o contrastarlo («los sábados, lo que pasa es que no hay clase»).\n\n| Tiempo inicial | Sujeto | Tiempo | Verbo | |\n|---|---|---|---|---|\n| | 我 | 八点 | 去上课 | lo normal |\n| **八点** | 我 | | 去上课 | tiempo destacado |\n| | 我 | | 去上课 **八点** | ✗ nunca |\n\n- Las dos posiciones correctas significan lo mismo; la del principio suena a «tema» de la frase.\n- El **lugar** con 在 y los adverbios **no** pueden ir delante del sujeto: solo el tiempo.\n\n> 💡 **Truco**: si en español empiezas la frase por el tiempo («Mañana por la noche…»), en chino también puedes.",
+      "sourceNotes": ["zh-grammar-time-before-verb", "zh-word-order-skeleton"],
+      "skeleton": {
+        "focus": ["time0", "time"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "time": { "zh": "八点", "py": "bā diǎn", "es": "a las ocho" },
+              "verb1": { "zh": "去上课", "py": "qù shàngkè", "es": "voy a clase" }
+            },
+            "end": "。",
+            "es": "Voy a clase a las ocho."
+          },
+          {
+            "slots": {
+              "time0": { "zh": "八点", "py": "bā diǎn", "es": "a las ocho" },
+              "subject": { "zh": "我", "py": "wǒ" },
+              "verb1": { "zh": "去上课", "py": "qù shàngkè", "es": "voy a clase" }
+            },
+            "end": "。",
+            "es": "A las ocho voy a clase.",
+            "esOrder": [
+              { "text": "A las ocho", "slot": "time0" },
+              { "text": "voy a clase", "slot": "verb1" }
+            ]
+          },
+          {
+            "slots": {
+              "time0": { "zh": "星期六", "py": "xīngqīliù", "es": "los sábados" },
+              "subject": { "zh": "我们", "py": "wǒmen" },
+              "adverb": { "zh": "不", "py": "bú", "es": "no" },
+              "verb1": { "zh": "上课", "py": "shàngkè", "es": "tenemos clase" }
+            },
+            "end": "。",
+            "es": "Los sábados no tenemos clase."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "八点我去上课。", "py": "Bā diǎn wǒ qù shàngkè.", "es": "A las ocho voy a clase." },
+        { "zh": "星期六我们不上课。", "py": "Xīngqīliù wǒmen bú shàngkè.", "es": "Los sábados no tenemos clase." },
+        { "zh": "明天上午九点我去上课。", "py": "Míngtiān shàngwǔ jiǔ diǎn wǒ qù shàngkè.", "es": "Mañana a las nueve de la mañana voy a clase." },
+        { "zh": "今天下午我们不上课。", "py": "Jīntiān xiàwǔ wǒmen bú shàngkè.", "es": "Esta tarde no tenemos clase." }
+      ]
+    },
+    {
+      "id": "verbo-2",
+      "title": "Verbo 2: dos acciones seguidas",
+      "unlockedBy": "a1-u07-l2",
+      "markdown": "### En el orden en que pasan\n\nCuando vas a un sitio **para** hacer algo, el chino pone los dos verbos uno detrás de otro, en orden cronológico, sin «a» ni «para»:\n\n| Sujeto | Tiempo | **Verbo 1 (+ lugar)** | **Verbo 2** | Objeto |\n|---|---|---|---|---|\n| 我 | 八点 | 去学校 | 上课 | |\n| 我们 | 中午 | 去食堂 | 吃 | 午饭 |\n\n- El lugar va **pegado al primer verbo**: 去学校, 来我家.\n- El medio de transporte es otra acción previa: **坐车**去学校 (lit. «me siento en el coche, voy a la escuela»).\n- La negación va delante del **primer** verbo: 我下午**不**去学校上课.\n\n> ❌ **Error típico**: ✗我去学校为了上课 o ✗我上课去学校 → 我去学校上课.",
+      "sourceNotes": ["zh-grammar-lai-qu", "zh-word-order-skeleton"],
+      "skeleton": {
+        "focus": ["verb1", "verb2"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "time": { "zh": "八点", "py": "bā diǎn", "es": "a las ocho" },
+              "verb1": { "zh": "去学校", "py": "qù xuéxiào", "es": "voy a la universidad" },
+              "verb2": { "zh": "上课", "py": "shàngkè", "es": "a clase" }
+            },
+            "end": "。",
+            "es": "A las ocho voy a la universidad a clase.",
+            "esOrder": [
+              { "text": "A las ocho", "slot": "time" },
+              { "text": "voy a la universidad", "slot": "verb1" },
+              { "text": "a clase", "slot": "verb2" }
+            ]
+          },
+          {
+            "slots": {
+              "subject": { "zh": "小李", "py": "Xiǎo Lǐ" },
+              "verb1": { "zh": "来我家", "py": "lái wǒ jiā", "es": "viene a mi casa" },
+              "verb2": { "zh": "吃饭", "py": "chī fàn", "es": "a comer" }
+            },
+            "end": "。",
+            "es": "Xiao Li viene a mi casa a comer."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "time": { "zh": "下午", "py": "xiàwǔ" },
+              "adverb": { "zh": "不", "py": "bú", "es": "no" },
+              "verb1": { "zh": "去学校", "py": "qù xuéxiào" },
+              "verb2": { "zh": "上课", "py": "shàngkè" }
+            },
+            "end": "。",
+            "es": "Por la tarde no voy a clase."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "我八点去学校上课。", "py": "Wǒ bā diǎn qù xuéxiào shàngkè.", "es": "A las ocho voy a la universidad a clase." },
+        { "zh": "我们中午去食堂吃午饭。", "py": "Wǒmen zhōngwǔ qù shítáng chī wǔfàn.", "es": "Al mediodía vamos al comedor a comer." },
+        { "zh": "小李来我家吃饭。", "py": "Xiǎo Lǐ lái wǒ jiā chī fàn.", "es": "Xiao Li viene a mi casa a comer." },
+        { "zh": "你几点去学校上课？", "py": "Nǐ jǐ diǎn qù xuéxiào shàngkè?", "es": "¿A qué hora vas a clase?" }
+      ]
+    },
+    {
+      "id": "auxiliar",
+      "title": "Auxiliar: justo delante del verbo",
+      "unlockedBy": "a1-u09-l1",
+      "markdown": "### Querer, poder, saber… antes de la acción\n\nLos verbos auxiliares (想, 要 y, en la unidad 12, 会, 能, 可以) tienen su propio hueco, **entre los adverbios y el verbo**:\n\n| Sujeto | Tiempo | Adverbio | **Auxiliar** | Verbo | Objeto |\n|---|---|---|---|---|---|\n| 我 | | | 想 | 吃 | 米饭 |\n| 我们 | 中午 | | 想 | 吃 | 面条儿 |\n| 我 | | 不 | 想 | 吃 | 肉 |\n\n- La negación va **delante del auxiliar**, nunca entre el auxiliar y el verbo: ✗我想不吃肉 → 我**不想**吃肉.\n- El orden coincide con el español («quiero comer»); lo que cambia es que el tiempo sigue yendo delante.\n\n> ❌ **Error típico**: ✗我吃想米饭 → 我想吃米饭.",
+      "sourceNotes": ["zh-grammar-xiang-yao", "zh-word-order-skeleton"],
+      "skeleton": {
+        "focus": ["aux"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "aux": { "zh": "想", "py": "xiǎng", "es": "me apetece" },
+              "verb1": { "zh": "吃", "py": "chī", "es": "comer" },
+              "object": { "zh": "米饭", "py": "mǐfàn", "es": "arroz" }
+            },
+            "end": "。",
+            "es": "Me apetece comer arroz."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "我们", "py": "wǒmen" },
+              "time": { "zh": "中午", "py": "zhōngwǔ", "es": "a mediodía" },
+              "aux": { "zh": "想", "py": "xiǎng", "es": "queremos" },
+              "verb1": { "zh": "吃", "py": "chī", "es": "comer" },
+              "object": { "zh": "面条儿", "py": "miàntiáor", "es": "fideos" }
+            },
+            "end": "。",
+            "es": "A mediodía queremos comer fideos.",
+            "esOrder": [
+              { "text": "A mediodía", "slot": "time" },
+              { "text": "queremos", "slot": "aux" },
+              { "text": "comer", "slot": "verb1" },
+              { "text": "fideos", "slot": "object" }
+            ]
+          },
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "adverb": { "zh": "不", "py": "bù", "es": "no" },
+              "aux": { "zh": "想", "py": "xiǎng", "es": "me apetece" },
+              "verb1": { "zh": "吃", "py": "chī", "es": "comer" },
+              "object": { "zh": "肉", "py": "ròu", "es": "carne" }
+            },
+            "end": "。",
+            "es": "No me apetece comer carne."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "我想吃米饭。", "py": "Wǒ xiǎng chī mǐfàn.", "es": "Me apetece comer arroz." },
+        { "zh": "他想喝茶。", "py": "Tā xiǎng hē chá.", "es": "Él quiere beber té." },
+        { "zh": "我不想吃肉。", "py": "Wǒ bù xiǎng chī ròu.", "es": "No me apetece comer carne." },
+        { "zh": "你想喝什么？", "py": "Nǐ xiǎng hē shénme?", "es": "¿Qué te apetece beber?" }
+      ]
+    },
+    {
+      "id": "con-quien",
+      "title": "Con quién: 跟 / 和 + persona + 一起",
+      "unlockedBy": "a1-u11-l1",
+      "markdown": "### La compañía, delante del verbo\n\nEn español «con mis amigos» va detrás del verbo («como **con mis amigos**»). En chino va **delante**, en un hueco propio:\n\n| Sujeto | Adverbio | Auxiliar | **Con quién** | Verbo | Objeto |\n|---|---|---|---|---|---|\n| 我 | | | 跟朋友一起 | 吃饭 | |\n| 我 | 不 | | 跟他一起 | 吃饭 | |\n| 我 | | 想 | 跟你 | 见面 | |\n\n- **跟** o **和** + persona + **一起** (juntos). Con verbos que ya implican a dos (见面, 聊天), 一起 puede faltar.\n- Adverbio y auxiliar van **antes** de 跟: 我**不**跟他一起去 · 我**想**跟你见面.\n- Pregunta: **跟谁**一起…？\n\n> ❌ **Error típico**: ✗我吃饭跟朋友, ✗我一起跟朋友吃饭 → 我跟朋友一起吃饭.",
+      "sourceNotes": ["zh-grammar-gen-yiqi", "zh-word-order-skeleton"],
+      "skeleton": {
+        "focus": ["with"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "with": { "zh": "跟朋友一起", "py": "gēn péngyou yìqǐ", "es": "con mis amigos" },
+              "verb1": { "zh": "吃饭", "py": "chī fàn", "es": "como" }
+            },
+            "end": "。",
+            "es": "Como con mis amigos.",
+            "esOrder": [
+              { "text": "Como", "slot": "verb1" },
+              { "text": "con mis amigos", "slot": "with" }
+            ]
+          },
+          {
+            "slots": {
+              "subject": { "zh": "安娜", "py": "Ānnà" },
+              "adverb": { "zh": "常常", "py": "chángcháng", "es": "a menudo" },
+              "with": { "zh": "跟室友", "py": "gēn shìyǒu", "es": "con su compañera" },
+              "verb1": { "zh": "聊天", "py": "liáotiān", "es": "charla" }
+            },
+            "end": "。",
+            "es": "Ana charla a menudo con su compañera de habitación."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "你", "py": "nǐ" },
+              "with": { "zh": "跟谁一起", "py": "gēn shéi yìqǐ", "es": "con quién" },
+              "verb1": { "zh": "吃饭", "py": "chī fàn", "es": "comes" }
+            },
+            "end": "？",
+            "es": "¿Con quién comes?"
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "我跟朋友一起吃饭。", "py": "Wǒ gēn péngyou yìqǐ chī fàn.", "es": "Como con mis amigos." },
+        { "zh": "雨果和小李一起去食堂。", "py": "Yǔguǒ hé Xiǎo Lǐ yìqǐ qù shítáng.", "es": "Hugo va al comedor con Xiao Li." },
+        { "zh": "我今天不跟他一起吃饭。", "py": "Wǒ jīntiān bù gēn tā yìqǐ chī fàn.", "es": "Hoy no como con él." },
+        { "zh": "我想跟你见面。", "py": "Wǒ xiǎng gēn nǐ jiànmiàn.", "es": "Quiero quedar contigo." }
+      ]
+    },
+    {
+      "id": "lugar",
+      "title": "Dónde: 在 + lugar, antes del verbo",
+      "unlockedBy": "a1-u14-l1",
+      "markdown": "### Primero el decorado, luego la acción\n\nEl lugar donde **ocurre** algo va con **在** y **delante del verbo**, justo después de «con quién»:\n\n| Sujeto | Tiempo | Adverbio | Auxiliar | Con quién | **Dónde** | Verbo | Objeto |\n|---|---|---|---|---|---|---|---|\n| 我 | | | | | 在图书馆 | 学习 | |\n| 我 | 明天 | 也 | 想 | 跟安娜一起 | 在图书馆 | 学习 | |\n\n- **Tiempo antes que lugar**: 我明天在学校学习 (✗我在学校明天学习).\n- Para negar dónde se hace algo, 不 va delante de 在: 我**不在**宿舍学习.\n- No confundas los dos «lugares»: el **destino** va pegado al verbo (去学校, hueco Verbo 1); el **sitio donde pasa** algo va con 在 delante del verbo (在学校学习).\n- Excepción: con 住 (vivir) el lugar va detrás: 我**住在**三号楼.\n\n> ❌ **Error típico**: ✗我学习在图书馆 → 我在图书馆学习. Es uno de los errores más frecuentes de los hispanohablantes.",
+      "sourceNotes": ["zh-grammar-zai-place", "zh-grammar-zai-verb", "zh-grammar-word-order"],
+      "skeleton": {
+        "focus": ["place"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "place": { "zh": "在图书馆", "py": "zài túshūguǎn", "es": "en la biblioteca" },
+              "verb1": { "zh": "学习", "py": "xuéxí", "es": "estudio" }
+            },
+            "end": "。",
+            "es": "Estudio en la biblioteca.",
+            "esOrder": [
+              { "text": "Estudio", "slot": "verb1" },
+              { "text": "en la biblioteca", "slot": "place" }
+            ]
+          },
+          {
+            "slots": {
+              "subject": { "zh": "小李", "py": "Xiǎo Lǐ" },
+              "place": { "zh": "在宿舍", "py": "zài sùshè", "es": "en la residencia" },
+              "verb1": { "zh": "看", "py": "kàn", "es": "ve" },
+              "object": { "zh": "电视", "py": "diànshì", "es": "la tele" }
+            },
+            "end": "。",
+            "es": "Xiao Li ve la tele en la residencia."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "time": { "zh": "明天", "py": "míngtiān" },
+              "adverb": { "zh": "也", "py": "yě" },
+              "aux": { "zh": "想", "py": "xiǎng" },
+              "with": { "zh": "跟安娜一起", "py": "gēn Ānnà yìqǐ" },
+              "place": { "zh": "在图书馆", "py": "zài túshūguǎn" },
+              "verb1": { "zh": "学习", "py": "xuéxí" }
+            },
+            "end": "。",
+            "es": "Mañana yo también quiero estudiar con Ana en la biblioteca."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "你", "py": "nǐ" },
+              "place": { "zh": "在哪儿", "py": "zài nǎr", "es": "dónde" },
+              "verb1": { "zh": "学习", "py": "xuéxí", "es": "estudias" }
+            },
+            "end": "？",
+            "es": "¿Dónde estudias?"
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "我在图书馆学习。", "py": "Wǒ zài túshūguǎn xuéxí.", "es": "Estudio en la biblioteca." },
+        { "zh": "我不在宿舍学习。", "py": "Wǒ bú zài sùshè xuéxí.", "es": "No estudio en la residencia." },
+        { "zh": "我明天在学校吃饭。", "py": "Wǒ míngtiān zài xuéxiào chī fàn.", "es": "Mañana como en la universidad." },
+        { "zh": "你在哪儿学习？", "py": "Nǐ zài nǎr xuéxí?", "es": "¿Dónde estudias?" }
+      ]
+    },
+    {
+      "id": "complemento",
+      "title": "Complemento: detrás del verbo",
+      "unlockedBy": "a1-u15-l3",
+      "markdown": "### El único hueco que va después del verbo (y del objeto)\n\nCasi todo va **delante** del verbo… salvo el **complemento**, que cuenta cuánto dura la acción o cómo sale. Se estrena con la **duración**:\n\n| Sujeto | Tiempo (momento) | Verbo | **Complemento (duración)** |\n|---|---|---|---|\n| 我 | 每天 | 走 | 二十分钟 |\n| 雨果 | 每天 | 睡 | 七个小时 |\n\n- **Momento** (cuándo) → delante del verbo. **Duración** (cuánto rato) → detrás.\n- ¿Cuánto se tarda? → **要 + duración**: 坐高铁要五个小时.\n- Si el verbo lleva objeto, se repite el verbo: 坐地铁**坐**四十分钟.\n- En este hueco irán entrando el grado con 得 (说得很好), los resultados (做完) y las cantidades de las comparaciones (大两岁).\n\n> ❌ **Error típico**: ✗我二十分钟走 → 我走二十分钟.",
+      "sourceNotes": ["zh-grammar-time-before-verb", "zh-grammar-word-order"],
+      "skeleton": {
+        "focus": ["complement"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "time": { "zh": "每天", "py": "měi tiān", "es": "cada día" },
+              "verb1": { "zh": "走", "py": "zǒu", "es": "ando" },
+              "complement": { "zh": "二十分钟", "py": "èrshí fēnzhōng", "es": "veinte minutos" }
+            },
+            "end": "。",
+            "es": "Ando veinte minutos cada día."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "雨果", "py": "Yǔguǒ" },
+              "time": { "zh": "每天", "py": "měi tiān" },
+              "verb1": { "zh": "睡", "py": "shuì", "es": "duerme" },
+              "complement": { "zh": "七个小时", "py": "qī ge xiǎoshí", "es": "siete horas" }
+            },
+            "end": "。",
+            "es": "Hugo duerme siete horas cada día."
+          },
+          {
+            "slots": {
+              "verb1": { "zh": "坐高铁", "py": "zuò gāotiě", "es": "en tren de alta velocidad" },
+              "verb2": { "zh": "要", "py": "yào", "es": "se tarda" },
+              "complement": { "zh": "五个小时", "py": "wǔ ge xiǎoshí", "es": "cinco horas" }
+            },
+            "end": "。",
+            "es": "En tren de alta velocidad se tarda cinco horas."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "我每天走二十分钟。", "py": "Wǒ měi tiān zǒu èrshí fēnzhōng.", "es": "Ando veinte minutos cada día." },
+        { "zh": "坐高铁要五个小时。", "py": "Zuò gāotiě yào wǔ ge xiǎoshí.", "es": "En tren de alta velocidad se tarda cinco horas." },
+        { "zh": "我坐地铁坐四十分钟。", "py": "Wǒ zuò dìtiě zuò sìshí fēnzhōng.", "es": "Voy cuarenta minutos en metro." },
+        { "zh": "坐飞机要多长时间？", "py": "Zuò fēijī yào duō cháng shíjiān?", "es": "¿Cuánto se tarda en avión?" }
+      ]
+    },
+    {
+      "id": "esqueleto-completo",
+      "title": "El esqueleto completo de A1",
+      "unlockedBy": "a1-u21-l1",
+      "markdown": "### Todos los huecos en su sitio\n\n| Tiempo inicial | Sujeto | Tiempo | Adverbios | Auxiliar | Con quién | Dónde | Verbo 1 (+ lugar) | Verbo 2 | Objeto | Complemento | Partícula |\n|---|---|---|---|---|---|---|---|---|---|---|---|\n| 明天上午 | 我 | | | | 跟朋友一起 | | 坐地铁去学校 | 上 | 汉语课 | | |\n| | 我们 | 每天 | 都 | | | 在图书馆 | 学习 | | 汉语 | | |\n| 今天晚上 | 我 | | | 想 | 跟小李一起 | | 去饭馆 | 吃 | 饺子 | | |\n\n**Regla general**: el **escenario** (cuándo, cómo, con quién, dónde) va antes de la **acción**; detrás del verbo solo quedan el objeto, el complemento y la partícula.\n\n**Chuleta de errores de orden**:\n\n| ✗ Calco del español | ✓ Chino |\n|---|---|\n| 我去学校明天。 | 我明天去学校。 |\n| 我学习汉语在大学。 | 我在大学学习汉语。 |\n| 我在图书馆每天学习。 | 我每天在图书馆学习。 |\n| 我一起跟朋友去。 | 我跟朋友一起去。 |\n| 也我去。 | 我也去。 |\n\n> 💡 **Truco**: antes de hablar, ordena mentalmente «quién – cuándo – con quién – dónde – qué hace».",
+      "sourceNotes": ["zh-word-order-skeleton", "zh-grammar-word-order", "zh-errors-hispanohablantes"],
+      "skeleton": {
+        "focus": ["time0", "subject", "time", "adverb", "aux", "with", "place", "verb1", "verb2", "object", "complement", "particle"],
+        "sentences": [
+          {
+            "slots": {
+              "time0": { "zh": "明天上午", "py": "míngtiān shàngwǔ", "es": "mañana por la mañana" },
+              "subject": { "zh": "我", "py": "wǒ" },
+              "with": { "zh": "跟朋友一起", "py": "gēn péngyou yìqǐ", "es": "con un amigo" },
+              "verb1": { "zh": "坐地铁去学校", "py": "zuò dìtiě qù xuéxiào", "es": "voy en metro a la universidad" },
+              "verb2": { "zh": "上", "py": "shàng", "es": "a dar" },
+              "object": { "zh": "汉语课", "py": "Hànyǔ kè", "es": "clase de chino" }
+            },
+            "end": "。",
+            "es": "Mañana por la mañana voy con un amigo en metro a la universidad a clase de chino.",
+            "esOrder": [
+              { "text": "Mañana por la mañana", "slot": "time0" },
+              { "text": "voy en metro a la universidad", "slot": "verb1" },
+              { "text": "con un amigo", "slot": "with" },
+              { "text": "a", "slot": "verb2" },
+              { "text": "clase de chino", "slot": "object" }
+            ]
+          },
+          {
+            "slots": {
+              "subject": { "zh": "我们", "py": "wǒmen" },
+              "time": { "zh": "每天", "py": "měi tiān" },
+              "adverb": { "zh": "都", "py": "dōu" },
+              "place": { "zh": "在图书馆", "py": "zài túshūguǎn" },
+              "verb1": { "zh": "学习", "py": "xuéxí" },
+              "object": { "zh": "汉语", "py": "Hànyǔ" }
+            },
+            "end": "。",
+            "es": "Todos estudiamos chino en la biblioteca todos los días."
+          },
+          {
+            "slots": {
+              "time0": { "zh": "今天晚上", "py": "jīntiān wǎnshang" },
+              "subject": { "zh": "我", "py": "wǒ" },
+              "aux": { "zh": "想", "py": "xiǎng" },
+              "with": { "zh": "跟小李一起", "py": "gēn Xiǎo Lǐ yìqǐ" },
+              "verb1": { "zh": "去饭馆", "py": "qù fànguǎn" },
+              "verb2": { "zh": "吃", "py": "chī" },
+              "object": { "zh": "饺子", "py": "jiǎozi" },
+              "particle": { "zh": "吧", "py": "ba" }
+            },
+            "end": "。",
+            "es": "Esta noche me apetece ir con Xiao Li a un restaurante a comer jiaozi, ¿vale?"
+          },
+          {
+            "slots": {
+              "subject": { "zh": "你", "py": "nǐ" },
+              "time": { "zh": "每天", "py": "měi tiān" },
+              "place": { "zh": "在图书馆", "py": "zài túshūguǎn" },
+              "verb1": { "zh": "学习", "py": "xuéxí" },
+              "complement": { "zh": "多长时间", "py": "duō cháng shíjiān" }
+            },
+            "end": "？",
+            "es": "¿Cuánto tiempo estudias en la biblioteca cada día?"
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "我们每天都在图书馆学习汉语。", "py": "Wǒmen měi tiān dōu zài túshūguǎn xuéxí Hànyǔ.", "es": "Todos estudiamos chino en la biblioteca todos los días." },
+        { "zh": "今天晚上我想跟小李一起去饭馆吃饺子。", "py": "Jīntiān wǎnshang wǒ xiǎng gēn Xiǎo Lǐ yìqǐ qù fànguǎn chī jiǎozi.", "es": "Esta noche quiero ir con Xiao Li a un restaurante a comer jiaozi." },
+        { "zh": "明天上午我不跟朋友一起去学校。", "py": "Míngtiān shàngwǔ wǒ bù gēn péngyou yìqǐ qù xuéxiào.", "es": "Mañana por la mañana no voy a la universidad con mi amigo." },
+        { "zh": "你明天跟谁一起去学校？", "py": "Nǐ míngtiān gēn shéi yìqǐ qù xuéxiào?", "es": "¿Con quién vas mañana a la universidad?" }
+      ]
+    },
+    {
+      "id": "ba-objeto",
+      "title": "把 + objeto: la cosa se adelanta",
+      "unlockedBy": "b1-u01-l1",
+      "markdown": "### Primero la cosa, luego lo que le pasa\n\nCon **把** el objeto deja su sitio de siempre (detrás del verbo) y se coloca **delante del verbo**. La frase cuenta **qué le haces a esa cosa** y cómo queda o adónde va a parar:\n\n> Sujeto + **把 + objeto** + verbo + **algo más** (在 / 到 + lugar, resultado, dirección…)\n\n**En el esqueleto**: **把 + objeto** ocupa el hueco **Con quién**, el mismo de 跟朋友 o 给他. Así el hueco *Objeto* queda libre para lo que va **detrás** del verbo: el lugar (这儿, 楼上). Como en A2, 放在 / 搬到 van juntos en *Verbo 1*.\n\nTres reglas de oro:\n\n1. El objeto es **concreto y conocido**: *la* caja, *esos* libros (那个箱子, 这些书), nunca «una caja cualquiera».\n2. El verbo **nunca va solo**: siempre lleva algo detrás.\n3. Con «poner / llevar algo **en un sitio**» (V + 在 / 到 + lugar), 把 es **obligatorio**: ✗ 放箱子在这儿.\n\nLos adverbios y auxiliares (没, 别, 已经, 能, 要) van **a la izquierda de 把**, en sus huecos de siempre.\n\n> ❌ **Error típico**: 我把放箱子在这儿 → 我**把箱子**放在这儿. Detrás de 把 va la cosa, no el verbo.",
+      "skeleton": {
+        "focus": [
+          "with"
+        ],
+        "sentences": [
+          {
+            "slots": {
+              "subject": {
+                "zh": "你",
+                "py": "nǐ"
+              },
+              "with": {
+                "zh": "把这些书",
+                "py": "bǎ zhèxiē shū"
+              },
+              "verb1": {
+                "zh": "放在",
+                "py": "fàng zài"
+              },
+              "object": {
+                "zh": "桌子上",
+                "py": "zhuōzi shang"
+              },
+              "particle": {
+                "zh": "吧",
+                "py": "ba"
+              }
+            },
+            "end": "。",
+            "es": "Deja estos libros en la mesa.",
+            "esOrder": [
+              {
+                "text": "Deja",
+                "slot": "verb1"
+              },
+              {
+                "text": "estos libros",
+                "slot": "with"
+              },
+              {
+                "text": "en la mesa",
+                "slot": "object"
+              }
+            ]
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "我们",
+                "py": "wǒmen"
+              },
+              "adverb": {
+                "zh": "已经",
+                "py": "yǐjīng"
+              },
+              "with": {
+                "zh": "把沙发",
+                "py": "bǎ shāfā"
+              },
+              "verb1": {
+                "zh": "搬到",
+                "py": "bāndào"
+              },
+              "object": {
+                "zh": "楼上",
+                "py": "lóu shang"
+              },
+              "particle": {
+                "zh": "了",
+                "py": "le"
+              }
+            },
+            "end": "。",
+            "es": "Ya hemos subido el sofá al piso de arriba."
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "他",
+                "py": "tā"
+              },
+              "adverb": {
+                "zh": "没",
+                "py": "méi"
+              },
+              "with": {
+                "zh": "把冰箱",
+                "py": "bǎ bīngxiāng"
+              },
+              "verb1": {
+                "zh": "放到",
+                "py": "fàngdào"
+              },
+              "object": {
+                "zh": "门口",
+                "py": "ménkǒu"
+              }
+            },
+            "end": "。",
+            "es": "No ha dejado la nevera en la entrada."
+          }
+        ]
+      },
+      "examples": [
+        {
+          "zh": "请把箱子放在这儿。",
+          "py": "Qǐng bǎ xiāngzi fàng zài zhèr.",
+          "es": "Deje la caja aquí, por favor."
+        },
+        {
+          "zh": "安娜把衣服挂在门后面了。",
+          "py": "Ānnà bǎ yīfu guà zài mén hòumian le.",
+          "es": "Ana ha colgado la ropa detrás de la puerta."
+        },
+        {
+          "zh": "你别把书架放在床旁边。",
+          "py": "Nǐ bié bǎ shūjià fàng zài chuáng pángbiān.",
+          "es": "No pongas la estantería al lado de la cama."
+        },
+        {
+          "zh": "你能把这个小箱子搬到我的房间吗？",
+          "py": "Nǐ néng bǎ zhège xiǎo xiāngzi bāndào wǒ de fángjiān ma?",
+          "es": "¿Puedes llevar esta caja pequeña a mi habitación?"
+        }
+      ]
+    },
+    {
+      "id": "bei-agente",
+      "title": "被 + quién: lo afectado va delante",
+      "unlockedBy": "b1-u02-l1",
+      "markdown": "### Contar lo que te ha pasado\n\nCuando algo **ha sufrido** una acción (casi siempre algo malo: un robo, una rotura), el chino empieza por **lo afectado** y pone **被 + quién lo hizo** delante del verbo:\n\n> **我的皮包** · **被小偷** · 偷走 · 了 = Un ladrón me ha robado el bolso.\n\n**En el esqueleto** (la misma convención que 把): **被 + agente** va en el hueco **Con quién**. Delante, en sus huecos, los adverbios y auxiliares (没, 已经, 也, 会); detrás, el verbo con su resultado en *Verbo 1* y el 了 en *Partícula*. Si no se dice quién lo hizo, *Con quién* lleva solo **被** (我的手机被偷了).\n\n- Como con 把, el verbo **no va solo**: 偷**走**, 抓**住**, 吃**完**, o al menos 了.\n- **Negativa**: 没 **delante de 被**: 我的钱**没被**他拿走.\n- **Pregunta**: 被**谁**…？ o 吗 al final.\n\n> 💡 **Truco**: 把 cuenta la historia desde **quien actúa** (小偷把皮包偷走了); 被, desde **lo afectado** (皮包被小偷偷走了). Es el mismo hecho visto desde los dos lados.\n\n> ❌ **Error típico**: 被小偷偷走了我的皮包 (calco de «fue robado mi bolso») → **我的皮包**被小偷偷走了.",
+      "skeleton": {
+        "focus": [
+          "with"
+        ],
+        "sentences": [
+          {
+            "slots": {
+              "subject": {
+                "zh": "我的手机",
+                "py": "wǒ de shǒujī"
+              },
+              "with": {
+                "zh": "被小偷",
+                "py": "bèi xiǎotōu"
+              },
+              "verb1": {
+                "zh": "偷走",
+                "py": "tōuzǒu"
+              },
+              "particle": {
+                "zh": "了",
+                "py": "le"
+              }
+            },
+            "end": "。",
+            "es": "Un ladrón me ha robado el móvil.",
+            "esOrder": [
+              {
+                "text": "Un ladrón",
+                "slot": "with"
+              },
+              {
+                "text": "me ha robado",
+                "slot": "verb1"
+              },
+              {
+                "text": "el móvil",
+                "slot": "subject"
+              }
+            ]
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "我的自行车",
+                "py": "wǒ de zìxíngchē"
+              },
+              "adverb": {
+                "zh": "也",
+                "py": "yě"
+              },
+              "with": {
+                "zh": "被朋友",
+                "py": "bèi péngyou"
+              },
+              "verb1": {
+                "zh": "借走",
+                "py": "jièzǒu"
+              },
+              "particle": {
+                "zh": "了",
+                "py": "le"
+              }
+            },
+            "end": "。",
+            "es": "Un amigo también se ha llevado prestada mi bici."
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "我的现金",
+                "py": "wǒ de xiànjīn"
+              },
+              "adverb": {
+                "zh": "没",
+                "py": "méi"
+              },
+              "with": {
+                "zh": "被他",
+                "py": "bèi tā"
+              },
+              "verb1": {
+                "zh": "拿走",
+                "py": "názǒu"
+              }
+            },
+            "end": "。",
+            "es": "No se ha llevado mi dinero en efectivo."
+          }
+        ]
+      },
+      "examples": [
+        {
+          "zh": "小偷被警察抓住了。",
+          "py": "Xiǎotōu bèi jǐngchá zhuāzhù le.",
+          "es": "La policía ha atrapado al ladrón."
+        },
+        {
+          "zh": "雨果的身份证也被小偷拿走了。",
+          "py": "Yǔguǒ de shēnfènzhèng yě bèi xiǎotōu názǒu le.",
+          "es": "El ladrón también se ha llevado el DNI de Hugo."
+        },
+        {
+          "zh": "冰箱里的水果被大卫吃完了。",
+          "py": "Bīngxiāng li de shuǐguǒ bèi Dàwèi chīwán le.",
+          "es": "David se ha acabado la fruta de la nevera."
+        },
+        {
+          "zh": "你的皮包被谁拿走了？",
+          "py": "Nǐ de píbāo bèi shéi názǒu le?",
+          "es": "¿Quién se ha llevado tu bolso?"
+        }
+      ]
+    },
+    {
+      "id": "aparicion-lugar",
+      "title": "Aparecer y desaparecer: el lugar delante, lo nuevo al final",
+      "unlockedBy": "b1-u04-l5",
+      "markdown": "### 前面走过来一个人\n\nPara contar que algo o alguien **aparece** o **desaparece** en un sitio, el chino abre la frase con el **lugar** y deja **lo nuevo para el final**:\n\n> **Lugar** + verbo + complemento (+ 了) + **cantidad + persona / cosa**\n\n- El lugar va **sin 在**: 前面, 门口, 树上, 楼上.\n- El verbo lleva siempre un **complemento**: direccional (走过来, 搬来, 走进来) o de resultado (飞走, 开走).\n- Lo que aparece es **nuevo e indeterminado**, así que casi siempre lleva **cantidad**: 一个人, 几辆车, 很多人.\n\n**En el esqueleto**: el lugar del principio en **Dónde** (sin 在), V + complemento en *Verbo 1* y lo que aparece en *Objeto*. No hay sujeto.\n\n> ⚠️ **Ojo**: si ya sabemos quién es, deja de ser «lo nuevo» y vuelve a ser sujeto normal: **那个人**从前面走过来了. Por eso estas frases casi no se niegan; para negar, la persona o cosa conocida pasa a sujeto: 那辆车还没开过来.\n\n> 💡 **Truco**: en español también invertimos a veces («por ahí viene *un hombre*»); el chino lo hace siempre, y sin preposición.",
+      "skeleton": {
+        "focus": [
+          "place",
+          "verb1",
+          "object"
+        ],
+        "sentences": [
+          {
+            "slots": {
+              "place": {
+                "zh": "前面",
+                "py": "qiánmian"
+              },
+              "verb1": {
+                "zh": "走过来",
+                "py": "zǒu guolai"
+              },
+              "object": {
+                "zh": "一个人",
+                "py": "yí ge rén"
+              }
+            },
+            "end": "。",
+            "es": "Por delante viene un hombre.",
+            "esOrder": [
+              {
+                "text": "Por delante",
+                "slot": "place"
+              },
+              {
+                "text": "viene",
+                "slot": "verb1"
+              },
+              {
+                "text": "un hombre",
+                "slot": "object"
+              }
+            ]
+          },
+          {
+            "slots": {
+              "place": {
+                "zh": "门口",
+                "py": "ménkǒu"
+              },
+              "verb1": {
+                "zh": "走进来了",
+                "py": "zǒu jinlai le"
+              },
+              "object": {
+                "zh": "两个学生",
+                "py": "liǎng ge xuésheng"
+              }
+            },
+            "end": "。",
+            "es": "Por la puerta han entrado dos estudiantes."
+          },
+          {
+            "slots": {
+              "place": {
+                "zh": "树上",
+                "py": "shù shang"
+              },
+              "verb1": {
+                "zh": "飞走了",
+                "py": "fēizǒu le"
+              },
+              "object": {
+                "zh": "一只鸟",
+                "py": "yì zhī niǎo"
+              }
+            },
+            "end": "。",
+            "es": "Del árbol se ha ido volando un pájaro."
+          }
+        ]
+      },
+      "examples": [
+        {
+          "zh": "楼上搬来了一家人。",
+          "py": "Lóu shang bānlai le yì jiā rén.",
+          "es": "Arriba se ha mudado una familia."
+        },
+        {
+          "zh": "停车场开走了几辆车。",
+          "py": "Tíngchēchǎng kāizǒu le jǐ liàng chē.",
+          "es": "Del aparcamiento se han ido unos cuantos coches."
+        },
+        {
+          "zh": "前面开过来一辆出租车。",
+          "py": "Qiánmian kāi guolai yí liàng chūzūchē.",
+          "es": "Por delante viene un taxi."
+        },
+        {
+          "zh": "门口走进来了几个人？",
+          "py": "Ménkǒu zǒu jinlai le jǐ ge rén?",
+          "es": "¿Cuántas personas han entrado por la puerta?"
+        }
+      ]
+    }
+  ]
+}

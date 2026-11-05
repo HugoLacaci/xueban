@@ -1,0 +1,1241 @@
+{
+  "id": "negacion",
+  "title": "Negación",
+  "zh": "否定",
+  "order": 4,
+  "icon": "Ban",
+  "summary": "El español tiene un solo «no»; el chino, varios: 不 para lo habitual, lo futuro, los deseos y los adjetivos; 没 para 有 y para lo que no ha pasado; 别 para prohibir; y sus compañeros 不用, 没…过, 从来不 / 从来没 y la duración negativa.",
+  "kind": "topic",
+  "reviewed": false,
+  "sections": [
+    {
+      "id": "bu-delante-del-verbo",
+      "title": "不: delante del verbo (y bú delante de 4.º tono)",
+      "unlockedBy": "a1-u01-l1",
+      "markdown": "### El «no» por defecto\n\n**不** va **justo delante del verbo**, en el hueco de los adverbios. Nunca delante del sujeto ni detrás del verbo.\n\n| ✓ | ✗ |\n|---|---|\n| 我**不**是老师。 | ✗不我是老师 · ✗我是不老师 |\n\n### El tono cambia\n\n不 es **bù** (4.º tono), pero **delante de otro 4.º tono** se dice **bú**:\n\n| Delante de 1.º, 2.º, 3.º | Delante de 4.º |\n|---|---|\n| 不喝 bù hē · 不忙 bù máng · 不好 bù hǎo | 不是 **bú** shì · 不去 **bú** qù · 不对 **bú** duì |\n\n> 💡 **Truco**: de momento piensa en 不是 como un bloque: **bú shì**. Es la negación que más vas a decir.\n\n> ❌ **Error típico**: ✗我是不学生 → 我**不是**学生.",
+      "sourceNotes": ["zh-grammar-bu", "zh-grammar-shi"],
+      "skeleton": {
+        "focus": ["adverb"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ", "es": "yo" },
+              "adverb": { "zh": "不", "py": "bú", "es": "no" },
+              "verb1": { "zh": "是", "py": "shì", "es": "soy" },
+              "object": { "zh": "老师", "py": "lǎoshī", "es": "profesor" }
+            },
+            "end": "。",
+            "es": "No soy profesor."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "她", "py": "tā" },
+              "adverb": { "zh": "不", "py": "bú", "es": "no" },
+              "verb1": { "zh": "是", "py": "shì", "es": "es" },
+              "object": { "zh": "学生", "py": "xuésheng", "es": "estudiante" }
+            },
+            "end": "。",
+            "es": "Ella no es estudiante."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "我不是老师。", "py": "Wǒ bú shì lǎoshī.", "es": "No soy profesor." },
+        { "zh": "她不是学生，她是老师。", "py": "Tā bú shì xuésheng, tā shì lǎoshī.", "es": "Ella no es estudiante: es profesora." },
+        { "zh": "我们不是老师。", "py": "Wǒmen bú shì lǎoshī.", "es": "No somos profesores." }
+      ]
+    },
+    {
+      "id": "decir-que-no",
+      "title": "Decir que no: 不是, 不对 y 没关系",
+      "unlockedBy": "a1-u01-l2",
+      "markdown": "### No hay un «no» suelto\n\nPara responder que no se **niega el verbo de la pregunta**:\n\n| Pregunta | No |\n|---|---|\n| 你是学生吗？ | **不是**。 |\n| 他是大卫，对吗？ | **不对**，他是雨果。 |\n\n- **不** a secas como respuesta suena brusco o incompleto: ✗你是学生吗？—不。\n- **不对** corrige un dato («no es así»).\n- **没关系** (no pasa nada) responde a 对不起; 不客气 (de nada) responde a 谢谢.\n\n> ⚠️ **Ojo**: 没关系 lleva **没**, no 不: es una frase hecha (lit. «no hay relación»).",
+      "sourceNotes": ["zh-question-ma"],
+      "examples": [
+        { "zh": "你是安娜吗？—不是，我是小李。", "py": "Nǐ shì Ānnà ma? — Bú shì, wǒ shì Xiǎo Lǐ.", "es": "¿Eres Ana? —No, soy Xiao Li." },
+        { "zh": "他是大卫吗？—不对，他是雨果。", "py": "Tā shì Dàwèi ma? — Bú duì, tā shì Yǔguǒ.", "es": "¿Es David? —No, es Hugo." },
+        { "zh": "对不起！—没关系。", "py": "Duìbuqǐ! — Méi guānxi.", "es": "¡Perdón! —No pasa nada." }
+      ]
+    },
+    {
+      "id": "ye-bu",
+      "title": "也不: «tampoco»",
+      "unlockedBy": "a1-u01-l3",
+      "markdown": "### «También no»\n\nEl chino no tiene una palabra para «tampoco»: dice **也不** (también + no), en ese orden, delante del verbo.\n\n| Español | Chino |\n|---|---|\n| Yo tampoco soy profesor. | 我**也不**是老师。 |\n| David tampoco es español. | 大卫**也不**是西班牙人。 |\n\n> ❌ **Error típico**: ✗我不也是老师 → 我**也不**是老师. 也 siempre va primero.",
+      "sourceNotes": ["zh-grammar-ye-dou", "zh-word-order-skeleton"],
+      "skeleton": {
+        "focus": ["adverb"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "adverb": { "zh": "也不", "py": "yě bú", "es": "tampoco" },
+              "verb1": { "zh": "是", "py": "shì", "es": "soy" },
+              "object": { "zh": "老师", "py": "lǎoshī", "es": "profesor" }
+            },
+            "end": "。",
+            "es": "Yo tampoco soy profesor.",
+            "esOrder": [
+              { "text": "Yo", "slot": "subject" },
+              { "text": "tampoco", "slot": "adverb" },
+              { "text": "soy", "slot": "verb1" },
+              { "text": "profesor", "slot": "object" }
+            ]
+          },
+          {
+            "slots": {
+              "subject": { "zh": "大卫", "py": "Dàwèi" },
+              "adverb": { "zh": "也不", "py": "yě bú" },
+              "verb1": { "zh": "是", "py": "shì" },
+              "object": { "zh": "西班牙人", "py": "Xībānyá rén" }
+            },
+            "end": "。",
+            "es": "David tampoco es español."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "我也不是老师。", "py": "Wǒ yě bú shì lǎoshī.", "es": "Yo tampoco soy profesor." },
+        { "zh": "他不是西班牙人，我也不是。", "py": "Tā bú shì Xībānyá rén, wǒ yě bú shì.", "es": "Él no es español, y yo tampoco." },
+        { "zh": "安娜不是老师，我也不是。", "py": "Ānnà bú shì lǎoshī, wǒ yě bú shì.", "es": "Ana no es profesora, y yo tampoco." }
+      ]
+    },
+    {
+      "id": "mei-you",
+      "title": "没有: no tener, no haber",
+      "unlockedBy": "a1-u03-l1",
+      "markdown": "### 有 solo se niega con 没\n\n**有** (tener, haber) es la gran excepción: **nunca** va con 不. Su negativa es **没有** (méiyǒu), con 没 en el hueco de los adverbios.\n\n| Afirmativa | Negativa |\n|---|---|\n| 我**有**一个姐姐。 | 我**没有**姐姐。 |\n| 这儿**有**… | 这儿**没有**… |\n\n- En la negativa normalmente **no se pone número**: 我没有弟弟 (✗我没有一个弟弟).\n- 没 es siempre **méi** (2.º tono): no cambia como 不.\n- Respuesta corta: **没有。**\n\n> 🧠 **Mnemotecnia**: 没 lleva agua (氵): lo que tenías se lo ha llevado el río.\n\n> ❌ **Error típico**: ✗我不有弟弟 → 我**没有**弟弟.",
+      "sourceNotes": ["zh-grammar-mei", "zh-grammar-you", "zh-contrast-bu-mei"],
+      "skeleton": {
+        "focus": ["adverb", "verb1"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "verb1": { "zh": "有", "py": "yǒu", "es": "tengo" },
+              "object": { "zh": "一个姐姐", "py": "yí ge jiějie", "es": "una hermana mayor" }
+            },
+            "end": "。",
+            "es": "Tengo una hermana mayor."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "adverb": { "zh": "没", "py": "méi", "es": "no" },
+              "verb1": { "zh": "有", "py": "yǒu", "es": "tengo" },
+              "object": { "zh": "哥哥", "py": "gēge", "es": "hermano mayor" }
+            },
+            "end": "。",
+            "es": "No tengo hermano mayor."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "我没有哥哥。", "py": "Wǒ méiyǒu gēge.", "es": "No tengo hermano mayor." },
+        { "zh": "小李没有妹妹，有一个弟弟。", "py": "Xiǎo Lǐ méiyǒu mèimei, yǒu yí ge dìdi.", "es": "Xiao Li no tiene hermanas pequeñas; tiene un hermano pequeño." },
+        { "zh": "你有姐姐吗？—没有。", "py": "Nǐ yǒu jiějie ma? — Méiyǒu.", "es": "¿Tienes hermana mayor? —No." }
+      ]
+    },
+    {
+      "id": "bu-adjetivo",
+      "title": "不 + adjetivo (sin 很) y 不太",
+      "unlockedBy": "a1-u08-l2",
+      "markdown": "### Al negar, 很 desaparece\n\n| Afirmativa | Negativa | Suavizada |\n|---|---|---|\n| 我**很**累。 | 我**不**累。 | 我**不太**累。 |\n| 汉语**很**难。 | 汉语**不**难。 | 汉语**不太**难。 |\n\n- **不 + adjetivo** es tajante: 不好 = «no está bien».\n- **不太 + adjetivo** (bú tài) = «no muy»: la forma educada de decir que algo no convence. 不大 también se oye.\n- Los adjetivos se niegan con 不 **aunque hablemos del pasado**: 昨天天气不好 (✗没好).\n\n> ❌ **Error típico**: ✗我很不累 por «no estoy cansado» → 我不累. (很不 existe, pero es enfático: «nada en absoluto».)",
+      "sourceNotes": ["zh-grammar-hen-adj", "zh-grammar-tai-le", "zh-grammar-bu"],
+      "skeleton": {
+        "focus": ["adverb"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "adverb": { "zh": "不", "py": "bú", "es": "no" },
+              "verb1": { "zh": "累", "py": "lèi", "es": "cansado" }
+            },
+            "end": "。",
+            "es": "No estoy cansado."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "我的房子", "py": "wǒ de fángzi", "es": "mi casa" },
+              "adverb": { "zh": "不太", "py": "bú tài", "es": "no muy" },
+              "verb1": { "zh": "干净", "py": "gānjìng", "es": "limpia" }
+            },
+            "end": "。",
+            "es": "Mi casa no está muy limpia."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "我不累。", "py": "Wǒ bú lèi.", "es": "No estoy cansado." },
+        { "zh": "汉语不太难。", "py": "Hànyǔ bú tài nán.", "es": "El chino no es muy difícil." },
+        { "zh": "他不太认真。", "py": "Tā bú tài rènzhēn.", "es": "No es muy aplicado." },
+        { "zh": "我的房子不大。", "py": "Wǒ de fángzi bú dà.", "es": "Mi casa no es grande." }
+      ]
+    },
+    {
+      "id": "bu-auxiliar",
+      "title": "La negación delante del auxiliar",
+      "unlockedBy": "a1-u09-l1",
+      "markdown": "### 不想, no ✗想不\n\nCon un auxiliar, 不 va **delante del auxiliar**, no entre el auxiliar y el verbo:\n\n| ✓ | ✗ |\n|---|---|\n| 我**不想**吃肉。 | ✗我想不吃肉 |\n\n- 不想 se dice **bù xiǎng** (想 es 3.er tono: no hay cambio).\n- La misma regla valdrá para 会, 能 y 可以 en la unidad 12: 不会, 不能, 不可以.",
+      "sourceNotes": ["zh-grammar-bu", "zh-grammar-xiang-yao"],
+      "skeleton": {
+        "focus": ["adverb", "aux"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "adverb": { "zh": "不", "py": "bù", "es": "no" },
+              "aux": { "zh": "想", "py": "xiǎng", "es": "me apetece" },
+              "verb1": { "zh": "吃", "py": "chī", "es": "comer" },
+              "object": { "zh": "肉", "py": "ròu", "es": "carne" }
+            },
+            "end": "。",
+            "es": "No me apetece comer carne."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "他", "py": "tā" },
+              "time": { "zh": "晚上", "py": "wǎnshang" },
+              "adverb": { "zh": "不", "py": "bù" },
+              "aux": { "zh": "想", "py": "xiǎng" },
+              "verb1": { "zh": "喝", "py": "hē" },
+              "object": { "zh": "茶", "py": "chá" }
+            },
+            "end": "。",
+            "es": "Por la noche no quiere tomar té."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "我不想吃肉。", "py": "Wǒ bù xiǎng chī ròu.", "es": "No me apetece comer carne." },
+        { "zh": "我不饿，不想吃饭。", "py": "Wǒ bú è, bù xiǎng chī fàn.", "es": "No tengo hambre; no me apetece comer." },
+        { "zh": "他晚上不想喝茶。", "py": "Tā wǎnshang bù xiǎng hē chá.", "es": "Por la noche no quiere tomar té." }
+      ]
+    },
+    {
+      "id": "dou-bu",
+      "title": "都不 y 不都: ninguno o no todos",
+      "unlockedBy": "a1-u11-l3",
+      "markdown": "### El orden cambia el sentido\n\n| Orden | Significa | Ejemplo |\n|---|---|---|\n| **都不** | ninguno | 我们**都不**是老师。 Ninguno somos profesores. |\n| **不都** | no todos | 我们**不都**是老师。 No todos somos profesores. |\n| **也都不** | tampoco ninguno | 他们**也都不**是老师。 |\n\n> 💡 **Truco**: lee de izquierda a derecha. 都不 = «todos → no» (todos dicen que no). 不都 = «no → todos» (no es verdad que todos).",
+      "sourceNotes": ["zh-grammar-ye-dou", "zh-contrast-he-ye-dou"],
+      "skeleton": {
+        "focus": ["adverb"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "我们", "py": "wǒmen" },
+              "adverb": { "zh": "都不", "py": "dōu bú", "es": "ninguno" },
+              "verb1": { "zh": "是", "py": "shì", "es": "somos" },
+              "object": { "zh": "老师", "py": "lǎoshī", "es": "profesores" }
+            },
+            "end": "。",
+            "es": "Ninguno de nosotros es profesor."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "我们", "py": "wǒmen" },
+              "adverb": { "zh": "不都", "py": "bù dōu", "es": "no todos" },
+              "verb1": { "zh": "是", "py": "shì" },
+              "object": { "zh": "老师", "py": "lǎoshī" }
+            },
+            "end": "。",
+            "es": "No todos somos profesores."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "我们都不是老师。", "py": "Wǒmen dōu bú shì lǎoshī.", "es": "Ninguno de nosotros es profesor." },
+        { "zh": "我们不都是老师。", "py": "Wǒmen bù dōu shì lǎoshī.", "es": "No todos somos profesores." },
+        { "zh": "他们都不想去。", "py": "Tāmen dōu bù xiǎng qù.", "es": "Ninguno quiere ir." }
+      ]
+    },
+    {
+      "id": "bu-yong",
+      "title": "Las negativas de los auxiliares: 不想, 不用, 不会, 不能",
+      "unlockedBy": "a1-u12-l4",
+      "markdown": "### No son simétricas\n\n| Afirmativa | Idea | Negativa |\n|---|---|---|\n| 想 + V | me apetece | **不想** (no me apetece) |\n| 要 + V | quiero, voy a | **不想** (no quiero) |\n| 要 + V | tengo que | **不用** (no hace falta) |\n| 会 + V | sé hacer | **不会** |\n| 能 + V | puedo | **不能** |\n| 可以 + V | me dejan | **不可以** / **不能** |\n\n- **不要** + V suena a orden: «¡no lo hagas!». Para «no quiero hacerlo», mejor **不想**.\n- **不用** = «no hace falta»: 你不用去 (no hace falta que vayas). 不用谢 = de nada.\n\n> ❌ **Error típico**: ✗你不要去 para «no hace falta que vayas» → 你**不用**去.",
+      "sourceNotes": ["zh-grammar-hui-neng-keyi", "zh-contrast-hui-neng-keyi", "zh-contrast-xiang-yao", "zh-grammar-xiang-yao"],
+      "skeleton": {
+        "focus": ["adverb", "aux"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "你", "py": "nǐ" },
+              "adverb": { "zh": "不用", "py": "bú yòng", "es": "no hace falta" },
+              "verb1": { "zh": "去", "py": "qù", "es": "que vayas" }
+            },
+            "end": "。",
+            "es": "No hace falta que vayas."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "adverb": { "zh": "不", "py": "bù" },
+              "aux": { "zh": "想", "py": "xiǎng" },
+              "verb1": { "zh": "看", "py": "kàn" },
+              "object": { "zh": "电视", "py": "diànshì" }
+            },
+            "end": "。",
+            "es": "No me apetece ver la tele."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "adverb": { "zh": "不", "py": "bú" },
+              "aux": { "zh": "会", "py": "huì", "es": "sé" },
+              "verb1": { "zh": "打", "py": "dǎ", "es": "jugar" },
+              "object": { "zh": "篮球", "py": "lánqiú", "es": "al baloncesto" }
+            },
+            "end": "。",
+            "es": "No sé jugar al baloncesto."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "你不用去。", "py": "Nǐ bú yòng qù.", "es": "No hace falta que vayas." },
+        { "zh": "我不想看电视。", "py": "Wǒ bù xiǎng kàn diànshì.", "es": "No me apetece ver la tele." },
+        { "zh": "我不会打篮球。", "py": "Wǒ bú huì dǎ lánqiú.", "es": "No sé jugar al baloncesto." },
+        { "zh": "这儿不能上网。", "py": "Zhèr bù néng shàngwǎng.", "es": "Aquí no se puede navegar por internet." }
+      ]
+    },
+    {
+      "id": "bu-zai",
+      "title": "不在: no estar (y no hacerlo en un sitio)",
+      "unlockedBy": "a1-u14-l1",
+      "markdown": "### Estar en un lugar es un estado: se niega con 不\n\n| Afirmativa | Negativa |\n|---|---|\n| 他**在**房间。 | 他**不在**房间。 |\n| 我**在**宿舍学习。 | 我**不在**宿舍学习。 |\n\n- 不在 se dice **bú zài**.\n- Para negar dónde haces algo, 不 va **delante de 在**, no delante del verbo: ✗我在宿舍不学习 → 我**不在**宿舍学习.\n\n> ⚠️ **Ojo**: **没在** no es «no estar en un sitio»: más adelante verás que 没在 + verbo significa «no estar haciendo».",
+      "sourceNotes": ["zh-grammar-zai-verb", "zh-grammar-zai-place", "zh-word-order-skeleton"],
+      "skeleton": {
+        "focus": ["adverb", "place"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "雨果", "py": "Yǔguǒ" },
+              "adverb": { "zh": "不", "py": "bú", "es": "no" },
+              "verb1": { "zh": "在", "py": "zài", "es": "está" },
+              "object": { "zh": "房间", "py": "fángjiān", "es": "en la habitación" }
+            },
+            "end": "。",
+            "es": "Hugo no está en la habitación."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "adverb": { "zh": "不", "py": "bú", "es": "no" },
+              "place": { "zh": "在宿舍", "py": "zài sùshè", "es": "en la residencia" },
+              "verb1": { "zh": "学习", "py": "xuéxí", "es": "estudio" }
+            },
+            "end": "。",
+            "es": "No estudio en la residencia."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "雨果不在房间。", "py": "Yǔguǒ bú zài fángjiān.", "es": "Hugo no está en la habitación." },
+        { "zh": "我不在宿舍学习，我在图书馆学习。", "py": "Wǒ bú zài sùshè xuéxí, wǒ zài túshūguǎn xuéxí.", "es": "No estudio en la residencia: estudio en la biblioteca." },
+        { "zh": "王老师今天不在学校。", "py": "Wáng lǎoshī jīntiān bú zài xuéxiào.", "es": "La profesora Wang no está hoy en la universidad." }
+      ]
+    },
+    {
+      "id": "bu-le",
+      "title": "不…了: «ya no»",
+      "unlockedBy": "a1-u18-l2",
+      "markdown": "### Un cambio hacia el no\n\nEl 了 final anuncia un cambio. Con 不 delante del verbo, el cambio es **dejar de**:\n\n| Antes | Ahora |\n|---|---|\n| 下雨。 (llueve) | **不**下雨**了**。 (ya no llueve) |\n| 我很冷。 | 我**不**冷**了**。 (ya no tengo frío) |\n| 我去。 | 我**不**去**了**。 (al final no voy) |\n\n> ⚠️ **Ojo**: 不…了 sí existe (= «ya no»); lo que no existe es ✗没…了 para una acción que no se hizo (eso es 没 + V, sin 了).",
+      "sourceNotes": ["zh-contrast-bu-mei", "zh-grammar-le-change"],
+      "skeleton": {
+        "focus": ["adverb", "particle"],
+        "sentences": [
+          {
+            "slots": {
+              "adverb": { "zh": "不", "py": "bú", "es": "ya no" },
+              "verb1": { "zh": "下雨", "py": "xià yǔ", "es": "llueve" },
+              "particle": { "zh": "了", "py": "le" }
+            },
+            "end": "。",
+            "es": "Ya no llueve."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "adverb": { "zh": "不", "py": "bù", "es": "ya no" },
+              "verb1": { "zh": "冷", "py": "lěng", "es": "tengo frío" },
+              "particle": { "zh": "了", "py": "le" }
+            },
+            "end": "。",
+            "es": "Ya no tengo frío."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "不下雨了。", "py": "Bú xià yǔ le.", "es": "Ya no llueve." },
+        { "zh": "我不冷了。", "py": "Wǒ bù lěng le.", "es": "Ya no tengo frío." },
+        { "zh": "下雨了，我不去了。", "py": "Xià yǔ le, wǒ bú qù le.", "es": "Se ha puesto a llover: al final no voy." }
+      ]
+    },
+    {
+      "id": "mei-verbo",
+      "title": "没 + verbo: lo que no ha pasado (¡sin 了!)",
+      "unlockedBy": "a1-u19-l3",
+      "markdown": "### No ocurrió\n\nPara decir que algo **no pasó** (no lo hiciste, no ocurrió), 没 va delante del verbo:\n\n- 我**没**去医院。 → No fui / no he ido al hospital.\n- 他昨天**没**吃药。 → Ayer no se tomó la medicina.\n\n**Con 没 desaparece el 了**: 了 dice «pasó», 没 dice «no pasó»; juntos se contradicen.\n\n| ✓ | ✗ |\n|---|---|\n| 我没去医院。 | ✗我没去了医院 · ✗我没去医院了 |\n\n### ¿不 o 没 con el pasado?\n\n- **没** = no ocurrió: 昨天我**没**去 (ayer no fui).\n- **不** = no quise, no suelo, no voy a: 明天我**不**去 · 我**不**喝咖啡.\n\n> 💡 **Truco**: 还没 = «todavía no». Es la respuesta natural a 你吃饭了吗？ → 还没。",
+      "sourceNotes": ["zh-grammar-mei", "zh-contrast-bu-mei", "zh-errors-hispanohablantes"],
+      "skeleton": {
+        "focus": ["adverb"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "time": { "zh": "昨天", "py": "zuótiān", "es": "ayer" },
+              "adverb": { "zh": "没", "py": "méi", "es": "no" },
+              "verb1": { "zh": "去医院", "py": "qù yīyuàn", "es": "fui al hospital" }
+            },
+            "end": "。",
+            "es": "Ayer no fui al hospital.",
+            "esOrder": [
+              { "text": "Ayer", "slot": "time" },
+              { "text": "no", "slot": "adverb" },
+              { "text": "fui al hospital", "slot": "verb1" }
+            ]
+          },
+          {
+            "slots": {
+              "subject": { "zh": "他", "py": "tā" },
+              "adverb": { "zh": "没", "py": "méi" },
+              "verb1": { "zh": "吃", "py": "chī", "es": "se tomó" },
+              "object": { "zh": "药", "py": "yào", "es": "la medicina" }
+            },
+            "end": "。",
+            "es": "No se ha tomado la medicina."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "我昨天没去医院。", "py": "Wǒ zuótiān méi qù yīyuàn.", "es": "Ayer no fui al hospital." },
+        { "zh": "他没吃药。", "py": "Tā méi chī yào.", "es": "No se ha tomado la medicina." },
+        { "zh": "你吃饭了吗？—还没吃。", "py": "Nǐ chī fàn le ma? — Hái méi chī.", "es": "¿Has comido? —Todavía no." },
+        { "zh": "我不吃肉，昨天也没吃。", "py": "Wǒ bù chī ròu, zuótiān yě méi chī.", "es": "No como carne, y ayer tampoco comí.", "note": "不 = costumbre; 没 = ayer no ocurrió." }
+      ]
+    },
+    {
+      "id": "bu-mei-bie",
+      "title": "不, 没 y 别: las tres negaciones",
+      "unlockedBy": "a1-u19-l4",
+      "markdown": "### Tres negaciones en el mismo hueco\n\n| | 不 bù | 没 méi | 别 bié |\n|---|---|---|---|\n| Niega | presente, costumbre, futuro, voluntad, adjetivos, 是, 在 y los auxiliares | 有 y lo que no ha pasado | órdenes: «¡no hagas…!» |\n| Ejemplo | 我明天**不**去。 | 我昨天**没**去。 | 你**别**去！ |\n| Con 了 | 不…了 = «ya no» | nunca: 没 sustituye a 了 | 别…了 = «deja de…» |\n| Tono | bú delante de 4.º tono | siempre méi | siempre bié |\n\n- **别** va sin sujeto si la orden es directa, como en español: **别动！** (¡no te muevas!).\n- Con 别 la frase no lleva 吗.\n- **最好** (más vale que…) también va en este hueco: 你最好多休息.\n\n### Regla de un segundo\n\n¿Es 有 o algo que no ocurrió? → **没**. ¿Es una orden? → **别**. Todo lo demás → **不**.",
+      "sourceNotes": ["zh-contrast-bu-mei", "zh-grammar-bu", "zh-grammar-mei", "zh-errors-hispanohablantes"],
+      "skeleton": {
+        "focus": ["adverb"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "time": { "zh": "明天", "py": "míngtiān" },
+              "adverb": { "zh": "不", "py": "bú", "es": "no" },
+              "verb1": { "zh": "去医院", "py": "qù yīyuàn", "es": "voy al hospital" }
+            },
+            "end": "。",
+            "es": "Mañana no voy al hospital."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "time": { "zh": "昨天", "py": "zuótiān" },
+              "adverb": { "zh": "没", "py": "méi", "es": "no" },
+              "verb1": { "zh": "去医院", "py": "qù yīyuàn", "es": "fui al hospital" }
+            },
+            "end": "。",
+            "es": "Ayer no fui al hospital."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "你", "py": "nǐ" },
+              "adverb": { "zh": "别", "py": "bié", "es": "no" },
+              "verb1": { "zh": "喝", "py": "hē", "es": "bebas" },
+              "object": { "zh": "冷水", "py": "lěng shuǐ", "es": "agua fría" }
+            },
+            "end": "！",
+            "es": "¡No bebas agua fría!"
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "别动！", "py": "Bié dòng!", "es": "¡No te muevas!" },
+        { "zh": "你别喝冷水。", "py": "Nǐ bié hē lěng shuǐ.", "es": "No bebas agua fría." },
+        { "zh": "我明天不去，昨天也没去。", "py": "Wǒ míngtiān bú qù, zuótiān yě méi qù.", "es": "Mañana no voy, y ayer tampoco fui." },
+        { "zh": "你最好多休息，不用去上课。", "py": "Nǐ zuìhǎo duō xiūxi, bú yòng qù shàngkè.", "es": "Más vale que descanses; no hace falta que vayas a clase." }
+      ]
+    },
+    {
+      "id": "bu-shi-de",
+      "title": "不是…的: negar el detalle",
+      "unlockedBy": "a2-u01-l1",
+      "markdown": "### El foco se niega con 不是\n\nCon 是…的 lo que se niega es el **detalle** (cuándo, cómo, con quién), no la acción. En la negativa **是 no se puede omitir**:\n\n- 我**不是**坐火车来**的**。 → No vine en tren (vine de otra manera).\n- ✗我没是坐飞机来的 → 我**不是**坐飞机来的.\n\nTodo sobre 是…的 está en el apunte **El 的**.",
+      "sourceNotes": ["zh-grammar-shi-de"],
+      "skeleton": {
+        "focus": ["adverb", "particle"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "adverb": { "zh": "不是", "py": "bú shì", "es": "no fue" },
+              "verb1": { "zh": "坐火车", "py": "zuò huǒchē", "es": "en tren" },
+              "verb2": { "zh": "来", "py": "lái", "es": "como vine" },
+              "particle": { "zh": "的", "py": "de" }
+            },
+            "end": "。",
+            "es": "No vine en tren."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "她", "py": "tā" },
+              "adverb": { "zh": "不是", "py": "bú shì" },
+              "with": { "zh": "跟我一起", "py": "gēn wǒ yìqǐ", "es": "conmigo" },
+              "verb1": { "zh": "来", "py": "lái", "es": "vino" },
+              "particle": { "zh": "的", "py": "de" }
+            },
+            "end": "。",
+            "es": "No vino conmigo."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "我不是坐火车来的。", "py": "Wǒ bú shì zuò huǒchē lái de.", "es": "No vine en tren." },
+        { "zh": "她不是跟我一起来的。", "py": "Tā bú shì gēn wǒ yìqǐ lái de.", "es": "No vino conmigo." },
+        { "zh": "我不是去年来的，是今年来的。", "py": "Wǒ bú shì qùnián lái de, shì jīnnián lái de.", "es": "No vine el año pasado, sino este año." }
+      ]
+    },
+    {
+      "id": "mei-guo",
+      "title": "没 + V + 过: nunca he…",
+      "unlockedBy": "a2-u01-l3",
+      "markdown": "### La experiencia que no tienes\n\n过 tras el verbo cuenta lo que has hecho alguna vez. Su negativa es **没 + V + 过**, y aquí **过 se queda** (a diferencia de 了, que con 没 desaparece):\n\n| Afirmativa | Negativa |\n|---|---|\n| 我去**过**长城。 | 我**没**去**过**长城。 |\n| 我吃**过**饺子。 | 我**没**吃**过**饺子。 |\n\n- Nunca con 不: ✗我不去过西安.\n- 还没…过 = «todavía no he… nunca»: 我还没去过长城.\n\n> ⚠️ **Ojo**: el par que hay que recordar: **没…了** ✗ (el 了 se va), **没…过** ✓ (el 过 se queda).",
+      "sourceNotes": ["zh-grammar-guo", "zh-particle-guo"],
+      "skeleton": {
+        "focus": ["adverb", "verb1"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "adverb": { "zh": "没", "py": "méi", "es": "no" },
+              "verb1": { "zh": "去过", "py": "qùguo", "es": "he estado nunca" },
+              "object": { "zh": "西安", "py": "Xī'ān", "es": "en Xi'an" }
+            },
+            "end": "。",
+            "es": "No he estado nunca en Xi'an."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "安娜", "py": "Ānnà" },
+              "adverb": { "zh": "还没", "py": "hái méi", "es": "todavía no" },
+              "verb1": { "zh": "吃过", "py": "chīguo", "es": "ha probado" },
+              "object": { "zh": "饺子", "py": "jiǎozi", "es": "los jiaozi" }
+            },
+            "end": "。",
+            "es": "Ana todavía no ha probado los jiaozi."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "我没去过西安。", "py": "Wǒ méi qùguo Xī'ān.", "es": "No he estado nunca en Xi'an." },
+        { "zh": "你去过长城吗？—没去过。", "py": "Nǐ qùguo Chángchéng ma? — Méi qùguo.", "es": "¿Has estado en la Gran Muralla? —No, nunca." },
+        { "zh": "安娜还没吃过饺子。", "py": "Ānnà hái méi chīguo jiǎozi.", "es": "Ana todavía no ha probado los jiaozi." }
+      ]
+    },
+    {
+      "id": "conglai",
+      "title": "Nunca: 从来不 y 从来没…过",
+      "unlockedBy": "a2-u03-l3",
+      "markdown": "### Dos «nunca»\n\n| | Significa | Ejemplo |\n|---|---|---|\n| **从来不** + V | no lo hace nunca, por costumbre o decisión | 他**从来不**打扫房间。 |\n| **从来没** + V + **过** | no ha pasado nunca (experiencia) | 我**从来没**用**过**空调。 |\n\n- 从来不 / 从来没 van en el hueco de los adverbios; 过, pegado al verbo.\n- 从来不 es el «nunca» de los hábitos; 从来没…过, el de la experiencia (como 没…过 de la unidad 1).\n\n> ❌ **Error típico**: ✗我从来不去过酒吧 → 我从来**没**去过酒吧. Con 过, siempre 没.",
+      "sourceNotes": ["zh-contrast-bu-mei", "zh-grammar-guo"],
+      "skeleton": {
+        "focus": ["adverb"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "他", "py": "tā" },
+              "adverb": { "zh": "从来不", "py": "cónglái bù", "es": "nunca" },
+              "verb1": { "zh": "打扫", "py": "dǎsǎo", "es": "limpia" },
+              "object": { "zh": "房间", "py": "fángjiān", "es": "la habitación" }
+            },
+            "end": "。",
+            "es": "Él nunca limpia la habitación."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "adverb": { "zh": "从来没", "py": "cónglái méi", "es": "nunca" },
+              "verb1": { "zh": "用过", "py": "yòngguo", "es": "he usado" },
+              "object": { "zh": "空调", "py": "kōngtiáo", "es": "el aire acondicionado" }
+            },
+            "end": "。",
+            "es": "Nunca he usado el aire acondicionado."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "他从来不打扫房间。", "py": "Tā cónglái bù dǎsǎo fángjiān.", "es": "Él nunca limpia la habitación." },
+        { "zh": "我从来没用过空调。", "py": "Wǒ cónglái méi yòngguo kōngtiáo.", "es": "Nunca he usado el aire acondicionado." },
+        { "zh": "大卫从来不吃肉。", "py": "Dàwèi cónglái bù chī ròu.", "es": "David no come nunca carne." }
+      ]
+    },
+    {
+      "id": "bie-buyao",
+      "title": "别 y 不要: prohibir y aconsejar que no",
+      "unlockedBy": "a2-u04-l3",
+      "markdown": "### No hagas…\n\n**别** o **不要** delante del verbo, en el hueco de los adverbios:\n\n| Forma | Matiz | Ejemplo |\n|---|---|---|\n| 别 + V | corto, coloquial | **别**喝太多咖啡！ |\n| 不要 + V | algo más fuerte o escrito | **不要**在这儿说话。 |\n| 请别 + V | suavizado | **请别**放糖。 |\n| 别 + V + 了 | deja de… (ya está pasando) | **别**喝**了**！ |\n\n- **不要** + nombre es otra cosa: 我不要咖啡 = no quiero café.\n- **不用** = no hace falta: 不用谢.\n\n> ❌ **Error típico**: ✗别喝了咖啡 → 别喝咖啡了. El 了 de «deja de» va al final.",
+      "sourceNotes": ["zh-contrast-bu-mei"],
+      "skeleton": {
+        "focus": ["adverb"],
+        "sentences": [
+          {
+            "slots": {
+              "adverb": { "zh": "别", "py": "bié", "es": "no" },
+              "verb1": { "zh": "喝", "py": "hē", "es": "bebas" },
+              "object": { "zh": "太多咖啡", "py": "tài duō kāfēi", "es": "tanto café" }
+            },
+            "end": "！",
+            "es": "¡No bebas tanto café!"
+          },
+          {
+            "slots": {
+              "adverb": { "zh": "请别", "py": "qǐng bié", "es": "por favor, no" },
+              "verb1": { "zh": "放", "py": "fàng", "es": "pongas" },
+              "object": { "zh": "糖", "py": "táng", "es": "azúcar" }
+            },
+            "end": "。",
+            "es": "Sin azúcar, por favor."
+          },
+          {
+            "slots": {
+              "adverb": { "zh": "别", "py": "bié" },
+              "verb1": { "zh": "喝", "py": "hē" },
+              "particle": { "zh": "了", "py": "le", "es": "ya" }
+            },
+            "end": "！",
+            "es": "¡Deja de beber!"
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "别喝太多咖啡！", "py": "Bié hē tài duō kāfēi!", "es": "¡No bebas tanto café!" },
+        { "zh": "不要在这儿说话。", "py": "Bú yào zài zhèr shuōhuà.", "es": "No habléis aquí." },
+        { "zh": "请别放糖。", "py": "Qǐng bié fàng táng.", "es": "Sin azúcar, por favor." },
+        { "zh": "别喝了，我们回家吧。", "py": "Bié hē le, wǒmen huí jiā ba.", "es": "Deja de beber, vámonos a casa." }
+      ]
+    },
+    {
+      "id": "duracion-negativa",
+      "title": "Hace tres días que no…: 三天没…了",
+      "unlockedBy": "a2-u05-l2",
+      "markdown": "### La duración se adelanta al 没\n\nPara decir cuánto tiempo hace que algo **no** pasa, la duración va **delante de 没** (hueco del tiempo) y la frase acaba en **了**:\n\n| Español | Chino |\n|---|---|\n| Hace tres días que no como carne. | 我**三天没**吃肉**了**。 |\n| Hace una semana que no lo veo. | 我**一个星期没**见他**了**。 |\n\n- Es el único caso en que la duración va **antes** del verbo: compara 我等了一个小时 (esperé una hora: detrás).\n- Aquí 了 sí acompaña a 没, porque es el 了 final del cambio («hasta ahora»).\n\n> ❌ **Error típico**: ✗我没吃肉三天了 → 我三天没吃肉了.",
+      "sourceNotes": ["zh-grammar-mei", "zh-grammar-time-before-verb"],
+      "skeleton": {
+        "focus": ["time", "adverb", "particle"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "time": { "zh": "三天", "py": "sān tiān", "es": "hace tres días" },
+              "adverb": { "zh": "没", "py": "méi", "es": "que no" },
+              "verb1": { "zh": "吃", "py": "chī", "es": "como" },
+              "object": { "zh": "肉", "py": "ròu", "es": "carne" },
+              "particle": { "zh": "了", "py": "le" }
+            },
+            "end": "。",
+            "es": "Hace tres días que no como carne.",
+            "esOrder": [
+              { "text": "Hace tres días", "slot": "time" },
+              { "text": "que no", "slot": "adverb" },
+              { "text": "como", "slot": "verb1" },
+              { "text": "carne", "slot": "object" }
+            ]
+          },
+          {
+            "slots": {
+              "subject": { "zh": "雨果", "py": "Yǔguǒ" },
+              "time": { "zh": "两天", "py": "liǎng tiān" },
+              "adverb": { "zh": "没", "py": "méi" },
+              "verb1": { "zh": "去上课", "py": "qù shàngkè", "es": "va a clase" },
+              "particle": { "zh": "了", "py": "le" }
+            },
+            "end": "。",
+            "es": "Hace dos días que Hugo no va a clase."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "我三天没吃肉了。", "py": "Wǒ sān tiān méi chī ròu le.", "es": "Hace tres días que no como carne." },
+        { "zh": "雨果两天没去上课了。", "py": "Yǔguǒ liǎng tiān méi qù shàngkè le.", "es": "Hace dos días que Hugo no va a clase." },
+        { "zh": "我一个星期没见他了。", "py": "Wǒ yí ge xīngqī méi jiàn tā le.", "es": "Hace una semana que no lo veo." }
+      ]
+    },
+    {
+      "id": "hai-mei",
+      "title": "还没…呢: todavía no",
+      "unlockedBy": "a2-u09-l2",
+      "markdown": "### Lo que aún no ha pasado (pero pasará)\n\n**还没** + verbo (+ **呢**) = «todavía no». El 呢 final es opcional y suaviza; el 了, en cambio, **sobra**:\n\n| ✓ | ✗ |\n|---|---|\n| 我**还没**吃饭**呢**。 | ✗我还没吃饭了 |\n\n- Su contrario es **已经…了** (ya): 我**已经**吃**了**.\n- **还不** + adjetivo o verbo de estado = «sigue sin…»: 无线网还不行 (el wifi sigue sin funcionar).",
+      "sourceNotes": ["zh-grammar-mei"],
+      "skeleton": {
+        "focus": ["adverb", "particle"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "adverb": { "zh": "还没", "py": "hái méi", "es": "todavía no" },
+              "verb1": { "zh": "吃饭", "py": "chī fàn", "es": "he comido" },
+              "particle": { "zh": "呢", "py": "ne" }
+            },
+            "end": "。",
+            "es": "Todavía no he comido."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "adverb": { "zh": "已经", "py": "yǐjīng", "es": "ya" },
+              "verb1": { "zh": "吃", "py": "chī", "es": "he comido" },
+              "particle": { "zh": "了", "py": "le" }
+            },
+            "end": "。",
+            "es": "Ya he comido."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "我还没吃饭呢。", "py": "Wǒ hái méi chī fàn ne.", "es": "Todavía no he comido." },
+        { "zh": "雪还没停呢。", "py": "Xuě hái méi tíng ne.", "es": "Todavía no ha dejado de nevar." },
+        { "zh": "你吃饭了吗？—我已经吃了。", "py": "Nǐ chī fàn le ma? — Wǒ yǐjīng chī le.", "es": "¿Has comido? —Ya he comido." }
+      ]
+    },
+    {
+      "id": "mei-ba-bie-ba",
+      "title": "没把, 别把, 不能把: la negación, delante de 把",
+      "unlockedBy": "b1-u01-l5",
+      "markdown": "### Nunca entre la cosa y el verbo\n\nEn las frases con 把, la negación y los auxiliares van **delante de 把**, en sus huecos (*Adverbios*, *Auxiliar*), nunca entre el objeto y el verbo:\n\n| | |\n|---|---|\n| no lo hice | 我**没**把钥匙带来. |\n| ¡no lo hagas! | **别** / **不要**把它卖了. |\n| condición, costumbre | 你**不**把作业做完，就不能出去. |\n| no puedo / no debo | 我们**不能**把冰箱搬到楼上. |\n\n> ❌ **Error típico**: 我把门没关上 → 我**没把**门关上. ✗ 我把钥匙能给你 → 我**能把**钥匙给你.\n\n> 💡 **Truco**: piensa en 把 + objeto como un bloque pegado al verbo: nada se mete dentro.",
+      "skeleton": {
+        "focus": [
+          "adverb",
+          "aux",
+          "with"
+        ],
+        "sentences": [
+          {
+            "slots": {
+              "subject": {
+                "zh": "我",
+                "py": "wǒ"
+              },
+              "adverb": {
+                "zh": "没",
+                "py": "méi"
+              },
+              "with": {
+                "zh": "把门",
+                "py": "bǎ mén"
+              },
+              "verb1": {
+                "zh": "关上",
+                "py": "guānshang"
+              }
+            },
+            "end": "。",
+            "es": "No he cerrado la puerta.",
+            "esOrder": [
+              {
+                "text": "No",
+                "slot": "adverb"
+              },
+              {
+                "text": "he cerrado",
+                "slot": "verb1"
+              },
+              {
+                "text": "la puerta",
+                "slot": "with"
+              }
+            ]
+          },
+          {
+            "slots": {
+              "adverb": {
+                "zh": "别",
+                "py": "bié"
+              },
+              "with": {
+                "zh": "把这些文件",
+                "py": "bǎ zhèxiē wénjiàn"
+              },
+              "verb1": {
+                "zh": "放在",
+                "py": "fàng zài"
+              },
+              "object": {
+                "zh": "这儿",
+                "py": "zhèr"
+              }
+            },
+            "end": "！",
+            "es": "¡No dejes estos documentos aquí!"
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "我们",
+                "py": "wǒmen"
+              },
+              "adverb": {
+                "zh": "不",
+                "py": "bù"
+              },
+              "aux": {
+                "zh": "能",
+                "py": "néng"
+              },
+              "with": {
+                "zh": "把冰箱",
+                "py": "bǎ bīngxiāng"
+              },
+              "verb1": {
+                "zh": "搬到",
+                "py": "bāndào"
+              },
+              "object": {
+                "zh": "楼上",
+                "py": "lóu shang"
+              }
+            },
+            "end": "。",
+            "es": "No podemos subir la nevera."
+          }
+        ]
+      },
+      "examples": [
+        {
+          "zh": "我还没把钥匙还给房东。",
+          "py": "Wǒ hái méi bǎ yàoshi huán gěi fángdōng.",
+          "es": "Todavía no le he devuelto las llaves al casero."
+        },
+        {
+          "zh": "你别把它卖了！",
+          "py": "Nǐ bié bǎ tā mài le!",
+          "es": "¡No lo vendas!"
+        },
+        {
+          "zh": "你应该把文件保存好。",
+          "py": "Nǐ yīnggāi bǎ wénjiàn bǎocún hǎo.",
+          "es": "Deberías guardar bien los archivos."
+        },
+        {
+          "zh": "你不把作业做完，就不能出去。",
+          "py": "Nǐ bù bǎ zuòyè zuòwán, jiù bù néng chūqu.",
+          "es": "Si no terminas los deberes, no puedes salir."
+        }
+      ]
+    },
+    {
+      "id": "mei-bei",
+      "title": "没被, 还没被, 不会被: negar la pasiva",
+      "unlockedBy": "b1-u02-l4",
+      "markdown": "### Como con 把: todo delante de 被\n\n| Qué quieres decir | Cómo |\n|---|---|\n| no ha pasado | **没**被 |\n| todavía no | **还没**被 |\n| no pasará | **不会**被 |\n| ¡que no te…! | **别**被 |\n\nEn el esqueleto: 没 / 还没 / 别 en *Adverbios*, 会 / 能 en *Auxiliar* y después **被 (+ agente)** en *Con quién*.\n\n- Con **没被** no se pone 了 al final: 还没被批准 (✗ 还没被批准了).\n- Pregunta: …被批准了**没有**？\n\n> ❌ **Error típico**: 我的签证被没批准 → 我的签证**没被**批准.",
+      "skeleton": {
+        "focus": [
+          "adverb",
+          "aux",
+          "with"
+        ],
+        "sentences": [
+          {
+            "slots": {
+              "subject": {
+                "zh": "我的签证",
+                "py": "wǒ de qiānzhèng"
+              },
+              "adverb": {
+                "zh": "还没",
+                "py": "hái méi"
+              },
+              "with": {
+                "zh": "被",
+                "py": "bèi"
+              },
+              "verb1": {
+                "zh": "批准",
+                "py": "pīzhǔn"
+              }
+            },
+            "end": "。",
+            "es": "Todavía no me han aprobado el visado."
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "我的现金",
+                "py": "wǒ de xiànjīn"
+              },
+              "adverb": {
+                "zh": "没",
+                "py": "méi"
+              },
+              "with": {
+                "zh": "被小偷",
+                "py": "bèi xiǎotōu"
+              },
+              "verb1": {
+                "zh": "拿走",
+                "py": "názǒu"
+              }
+            },
+            "end": "。",
+            "es": "El ladrón no se ha llevado mi dinero en efectivo."
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "你的东西",
+                "py": "nǐ de dōngxi"
+              },
+              "adverb": {
+                "zh": "不",
+                "py": "bú"
+              },
+              "aux": {
+                "zh": "会",
+                "py": "huì"
+              },
+              "with": {
+                "zh": "被人",
+                "py": "bèi rén"
+              },
+              "verb1": {
+                "zh": "拿走",
+                "py": "názǒu"
+              }
+            },
+            "end": "。",
+            "es": "Nadie se llevará tus cosas."
+          }
+        ]
+      },
+      "examples": [
+        {
+          "zh": "这些证据没被警察拿走。",
+          "py": "Zhèxiē zhèngjù méi bèi jǐngchá názǒu.",
+          "es": "La policía no se ha llevado estas pruebas."
+        },
+        {
+          "zh": "我的表格已经被大使馆批准了。",
+          "py": "Wǒ de biǎogé yǐjīng bèi dàshǐguǎn pīzhǔn le.",
+          "es": "La embajada ya me ha aprobado el formulario."
+        },
+        {
+          "zh": "你别被小偷看见你的现金！",
+          "py": "Nǐ bié bèi xiǎotōu kànjiàn nǐ de xiànjīn!",
+          "es": "¡Que el ladrón no te vea el dinero!"
+        },
+        {
+          "zh": "你的签证被批准了没有？",
+          "py": "Nǐ de qiānzhèng bèi pīzhǔn le méiyǒu?",
+          "es": "¿Te han aprobado el visado o no?"
+        }
+      ]
+    },
+    {
+      "id": "lian-dou",
+      "title": "连…都 / 也 (+ 不 / 没): incluso, ni siquiera",
+      "unlockedBy": "b1-u06-l1",
+      "markdown": "### Destacar lo extremo\n\n**连 + X + 都 / 也** destaca algo **extremo** para sorprender: «incluso, hasta»; con negación, «**ni siquiera**»:\n\n> 他**连**饭**都没**吃。 Ni siquiera ha comido.\n> **连**孩子**都**知道。 Hasta los niños lo saben.\n\n- Detrás de 连 va lo que sorprende: el **objeto** (que sube delante del verbo) o el **sujeto**.\n- La negación va **después** de 都 / 也: 连饭都**没**吃.\n- En español «ni siquiera» puede ir al final; en chino el bloque va **siempre delante del verbo**.\n\n**En el esqueleto**: el bloque 连 + X + 都 / 也 (+ 不 / 没) va en *Adverbios*; si 连 marca al sujeto, va en *Sujeto* (连孩子) y 都 en *Adverbios*.\n\n> ❌ **Error típico**: 他没吃连饭 → 他**连饭都没**吃.",
+      "skeleton": {
+        "focus": [
+          "adverb"
+        ],
+        "sentences": [
+          {
+            "slots": {
+              "subject": {
+                "zh": "他",
+                "py": "tā"
+              },
+              "adverb": {
+                "zh": "连饭都没",
+                "py": "lián fàn dōu méi"
+              },
+              "verb1": {
+                "zh": "吃",
+                "py": "chī"
+              }
+            },
+            "end": "。",
+            "es": "Ni siquiera ha comido.",
+            "esOrder": [
+              {
+                "text": "Ni siquiera",
+                "slot": "adverb"
+              },
+              {
+                "text": "ha comido",
+                "slot": "verb1"
+              }
+            ]
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "我",
+                "py": "wǒ"
+              },
+              "adverb": {
+                "zh": "连他的名字都",
+                "py": "lián tā de míngzi dōu"
+              },
+              "verb1": {
+                "zh": "忘",
+                "py": "wàng"
+              },
+              "particle": {
+                "zh": "了",
+                "py": "le"
+              }
+            },
+            "end": "。",
+            "es": "Se me ha olvidado incluso su nombre."
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "连孩子",
+                "py": "lián háizi"
+              },
+              "adverb": {
+                "zh": "都",
+                "py": "dōu"
+              },
+              "verb1": {
+                "zh": "知道",
+                "py": "zhīdào"
+              },
+              "object": {
+                "zh": "这件事",
+                "py": "zhè jiàn shì"
+              }
+            },
+            "end": "。",
+            "es": "Hasta los niños saben esto."
+          }
+        ]
+      },
+      "examples": [
+        {
+          "zh": "他连周末也不休息。",
+          "py": "Tā lián zhōumò yě bù xiūxi.",
+          "es": "No descansa ni los fines de semana."
+        },
+        {
+          "zh": "大卫连小李都没告诉。",
+          "py": "Dàwèi lián Xiǎo Lǐ dōu méi gàosu.",
+          "es": "David no se lo ha dicho ni a Xiao Li."
+        },
+        {
+          "zh": "你连这个都不知道吗？",
+          "py": "Nǐ lián zhège dōu bù zhīdào ma?",
+          "es": "¿Ni siquiera sabes esto?"
+        }
+      ]
+    },
+    {
+      "id": "yi-cl-ye-bu",
+      "title": "Ni uno solo: 一 + clasificador + 也 / 都 + 不 / 没",
+      "unlockedBy": "b1-u06-l4",
+      "markdown": "### El mínimo, delante del verbo\n\nPara negar del todo («ni un solo…, ni una…»), el chino pone **lo mínimo** (一 + clasificador) **delante del verbo**, con 也 / 都 y la negación:\n\n> 我**一句**汉语**也不**会说。 No sé decir ni una frase en chino.\n> 剧场里**一个人都没**有。 En el teatro no hay ni una persona.\n\n- El nombre puede ir con el clasificador (一句汉语) o delante, como tema (京剧，我一次也没看过).\n- **不** para costumbres y capacidad (不会, 不认识); **没** para lo que no ha pasado (没看过, 没走).\n- Es pariente de 连…都: 连一句汉语都不会说.\n\n**En el esqueleto**: todo el bloque 一 + CL (+ N) + 也 / 都 + 不 / 没 va en *Adverbios*.\n\n> ❌ **Error típico**: 我没看过一次 (calco de «no lo he visto ni una vez») → 我**一次也没**看过.",
+      "skeleton": {
+        "focus": [
+          "adverb"
+        ],
+        "sentences": [
+          {
+            "slots": {
+              "subject": {
+                "zh": "我",
+                "py": "wǒ"
+              },
+              "adverb": {
+                "zh": "一句汉语也不",
+                "py": "yí jù Hànyǔ yě bú"
+              },
+              "aux": {
+                "zh": "会",
+                "py": "huì"
+              },
+              "verb1": {
+                "zh": "说",
+                "py": "shuō"
+              }
+            },
+            "end": "。",
+            "es": "No sé decir ni una frase en chino.",
+            "esOrder": [
+              {
+                "text": "No sé",
+                "slot": "aux"
+              },
+              {
+                "text": "decir",
+                "slot": "verb1"
+              },
+              {
+                "text": "ni una frase en chino",
+                "slot": "adverb"
+              }
+            ]
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "剧场里",
+                "py": "jùchǎng li"
+              },
+              "adverb": {
+                "zh": "一个人也没",
+                "py": "yí ge rén yě méi"
+              },
+              "verb1": {
+                "zh": "有",
+                "py": "yǒu"
+              }
+            },
+            "end": "。",
+            "es": "En el teatro no hay ni una persona."
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "我",
+                "py": "wǒ"
+              },
+              "adverb": {
+                "zh": "一次京剧也没",
+                "py": "yí cì jīngjù yě méi"
+              },
+              "verb1": {
+                "zh": "看过",
+                "py": "kànguo"
+              }
+            },
+            "end": "。",
+            "es": "No he visto ópera de Pekín ni una sola vez."
+          }
+        ]
+      },
+      "examples": [
+        {
+          "zh": "这些演员我一个都不认识。",
+          "py": "Zhèxiē yǎnyuán wǒ yí ge dōu bú rènshi.",
+          "es": "No conozco a ninguno de estos actores."
+        },
+        {
+          "zh": "观众一个都没走。",
+          "py": "Guānzhòng yí ge dōu méi zǒu.",
+          "es": "No se fue ni un solo espectador."
+        },
+        {
+          "zh": "主持人的话我一句也没听懂。",
+          "py": "Zhǔchírén de huà wǒ yí jù yě méi tīngdǒng.",
+          "es": "De lo que dijo el presentador no entendí ni una frase."
+        },
+        {
+          "zh": "你一张票也没买到吗？",
+          "py": "Nǐ yì zhāng piào yě méi mǎidào ma?",
+          "es": "¿No has conseguido ni una entrada?"
+        }
+      ]
+    },
+    {
+      "id": "yidianr-ye-bu",
+      "title": "一点儿也不: nada en absoluto",
+      "unlockedBy": "b1-u06-l5",
+      "markdown": "### El «mínimo» con 一点儿\n\n**一点儿也 / 都 + 不 / 没** = «nada en absoluto»:\n\n- Con **adjetivos** y estados, **不**: 今天**一点儿也不**冷.\n- Con **cosas que no han pasado**, **没** y el nombre en medio: 我**一点儿饭也没**吃.\n\nTres «poco» que no hay que confundir:\n\n| | |\n|---|---|\n| **有点儿**冷 | hace algo de frío (queja) |\n| 冷**一点儿** | un poco más frío (comparación) |\n| **一点儿也不**冷 | no hace nada de frío |\n\n**En el esqueleto**: 一点儿也不 va en *Adverbios*, como el bloque de 一 + CL.\n\n> 💡 **Truco**: para «no hay manera», 怎么也 + potencial negativo: 我**怎么也**想不起来.",
+      "skeleton": {
+        "focus": [
+          "adverb"
+        ],
+        "sentences": [
+          {
+            "slots": {
+              "subject": {
+                "zh": "今天",
+                "py": "jīntiān"
+              },
+              "adverb": {
+                "zh": "一点儿也不",
+                "py": "yìdiǎnr yě bù"
+              },
+              "verb1": {
+                "zh": "冷",
+                "py": "lěng"
+              }
+            },
+            "end": "。",
+            "es": "Hoy no hace nada de frío."
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "我",
+                "py": "wǒ"
+              },
+              "adverb": {
+                "zh": "一点儿饭也没",
+                "py": "yìdiǎnr fàn yě méi"
+              },
+              "verb1": {
+                "zh": "吃",
+                "py": "chī"
+              }
+            },
+            "end": "。",
+            "es": "No he comido nada de nada."
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "你",
+                "py": "nǐ"
+              },
+              "adverb": {
+                "zh": "一点儿也不",
+                "py": "yìdiǎnr yě bú"
+              },
+              "verb1": {
+                "zh": "累",
+                "py": "lèi"
+              },
+              "particle": {
+                "zh": "吗",
+                "py": "ma"
+              }
+            },
+            "end": "？",
+            "es": "¿No estás nada cansado?"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "zh": "这次比赛一点儿也不难。",
+          "py": "Zhè cì bǐsài yìdiǎnr yě bù nán.",
+          "es": "Esta competición no es nada difícil."
+        },
+        {
+          "zh": "他一点儿也不敢划船。",
+          "py": "Tā yìdiǎnr yě bù gǎn huáchuán.",
+          "es": "No se atreve para nada a remar."
+        },
+        {
+          "zh": "你怎么一点儿也不着急？",
+          "py": "Nǐ zěnme yìdiǎnr yě bù zháojí?",
+          "es": "¿Cómo es que no estás nada nervioso?"
+        },
+        {
+          "zh": "我一点儿水也没喝。",
+          "py": "Wǒ yìdiǎnr shuǐ yě méi hē.",
+          "es": "No he bebido nada de agua."
+        }
+      ]
+    }
+  ]
+}

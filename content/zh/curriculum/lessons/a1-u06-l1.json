@@ -1,0 +1,128 @@
+{
+  "id": "a1-u06-l1",
+  "title": "¿Qué hora es?",
+  "zh": "现在几点？",
+  "goal": "Preguntar y decir la hora con 点, 分 y 半, y decir a qué hora haces algo.",
+  "minutes": 13,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "现在", "pinyin": "xiànzài", "es": "ahora" },
+    { "hanzi": "点", "pinyin": "diǎn", "es": "hora (en punto, del reloj)", "note": "八点 = las ocho. La duración («dos horas») es otra palabra: 小时." },
+    { "hanzi": "几点", "pinyin": "jǐ diǎn", "es": "¿qué hora?, ¿a qué hora?" },
+    { "hanzi": "分", "pinyin": "fēn", "es": "minuto (en la hora)", "note": "八点十分 = las ocho y diez." },
+    { "hanzi": "半", "pinyin": "bàn", "es": "media", "note": "Detrás de la hora: 八点半 = las ocho y media." },
+    { "hanzi": "一点", "pinyin": "yī diǎn", "es": "la una", "note": "En la hora el 一 se suele quedar en 1.er tono. No confundir con 一点儿 yìdiǎnr «un poco»." },
+    { "hanzi": "两点", "pinyin": "liǎng diǎn", "es": "las dos", "note": "Nunca ✗二点." },
+    { "hanzi": "十二点", "pinyin": "shí'èr diǎn", "es": "las doce" },
+    { "hanzi": "零五分", "pinyin": "líng wǔ fēn", "es": "y cinco (minutos)", "note": "Del 1 al 9 se suele poner 零: 八点零五分 = 8:05." }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "现在几点？", "py": "Xiànzài jǐ diǎn?", "es": "¿Qué hora es?" },
+        { "zh": "现在两点半。", "py": "Xiànzài liǎng diǎn bàn.", "es": "Son las dos y media." },
+        { "zh": "小李三点等雨果。", "py": "Xiǎo Lǐ sān diǎn děng Yǔguǒ.", "es": "Xiao Li espera a Hugo a las tres." }
+      ]
+    },
+    { "type": "vocab", "title": "El reloj", "words": ["现在", "点", "几点", "分", "半", "一点", "两点", "十二点", "零五分"] },
+    {
+      "type": "phonetics-drill",
+      "title": "点 diǎn: la «ian» que suena «ien»",
+      "markdown": "En pinyin se escribe **ian**, pero se pronuncia casi **«ien»**: la *a* se cierra hacia una *e* por culpa de la *i* y la *n* que la rodean.\n\n- **点 diǎn** ≈ «dién» con 3.er tono (baja).\n- **现在 xiànzài**: *xiàn* ≈ «sién» (con la x china) + *zài* ≈ «dsai».\n- **天 tiān** (ya la conoces) suena igual: «tién».\n\nCompara con **两 liǎng**: aquí no hay *-n* final sino *-ng*, y la *a* sí suena *a*: «liang».\n\nY **分 fēn** termina en *-n* (lengua delante), no en *-ng*.",
+      "items": [
+        { "audio": "点", "options": ["dǎn", "diǎng", "diǎn"], "answer": 2, "explain": "ian ≈ «ien», con -n final." },
+        { "audio": "现在", "options": ["xiànzài", "xiàngzài", "shànzài"], "answer": 0, "explain": "xiàn ≈ «sién» + zài." },
+        { "audio": "两点", "options": ["liǎn diǎn", "liǎng diǎn", "lǎng diǎn"], "answer": 1, "explain": "两 con -ng y la a abierta; 点 con ian ≈ «ien»." },
+        { "audio": "分", "options": ["fēng", "fān", "fēn"], "answer": 2, "explain": "-en con la lengua delante." },
+        { "audio": "八点半", "prompt": "¿Qué hora es?", "options": ["8:30", "8:00", "1:30"], "answer": 0, "explain": "八点 + 半 = las ocho y media." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["点", "现"],
+      "mnemonics": {
+        "点": "占 (marcar un sitio) + 灬 (cuatro puntos): hacer una marca, un punto → la hora «en punto» que marcaba el tambor de la ciudad.",
+        "现": "王 (aquí, jade) + 见 (ver): el jade que se deja ver al pulirlo → aparecer, lo que está a la vista: «ahora»."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "La hora: 点 + 分, y delante del verbo",
+      "markdown": "**Decir la hora**: número + **点** (+ número + **分**):\n\n| Hora | Chino |\n|---|---|\n| 8:00 | 八点 |\n| 8:10 | 八点十分 |\n| 8:05 | 八点零五分 (o 八点五分) |\n| 8:30 | 八点半 (o 八点三十分) |\n| 2:00 | **两**点 (nunca ✗二点) |\n| 12:00 | 十二点 (aquí sí 二: es parte de 十二) |\n\n- **半** (media) va **detrás**: 八点半, nunca ✗半八点.\n- En la conversación se puede callar 分: 八点二十 = 8:20.\n- **Preguntar**: 现在几点？ (sin 吗: 几 ya pregunta). 现在 hace de sujeto y la hora de objeto; no hace falta 是.\n\n**A qué hora haces algo**: la hora entra en el hueco del **tiempo**, delante del verbo, como 明天: 小李**三点**等雨果.",
+      "focus": ["time"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "现在", "py": "xiànzài" }, "object": { "zh": "八点", "py": "bā diǎn" } }, "end": "。", "es": "Son las ocho." },
+        { "slots": { "subject": { "zh": "现在", "py": "xiànzài" }, "object": { "zh": "十点零五分", "py": "shí diǎn líng wǔ fēn" } }, "end": "。", "es": "Son las diez y cinco." },
+        { "slots": { "subject": { "zh": "小李", "py": "Xiǎo Lǐ" }, "time": { "zh": "三点", "py": "sān diǎn" }, "verb1": { "zh": "等", "py": "děng" }, "object": { "zh": "雨果", "py": "Yǔguǒ" } }, "end": "。", "es": "Xiao Li espera a Hugo a las tres.", "esOrder": [{ "text": "Xiao Li", "slot": "subject" }, { "text": "espera", "slot": "verb1" }, { "text": "a Hugo", "slot": "object" }, { "text": "a las tres", "slot": "time" }] },
+        { "slots": { "subject": { "zh": "安娜", "py": "Ānnà" }, "time": { "zh": "九点半", "py": "jiǔ diǎn bàn" }, "verb1": { "zh": "去朋友家", "py": "qù péngyou jiā" } }, "end": "。", "es": "Anna va a casa de una amiga a las nueve y media." },
+        { "slots": { "subject": { "zh": "大卫", "py": "Dàwèi" }, "time": { "zh": "明天两点", "py": "míngtiān liǎng diǎn" }, "verb1": { "zh": "去西安", "py": "qù Xī'ān" } }, "end": "。", "es": "David se va a Xi'an mañana a las dos." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "现在", "py": "xiànzài" }, "adverb": { "zh": "不", "py": "bú" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "两点", "py": "liǎng diǎn" } }, "end": "。", "es": "No son las dos." },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "time": { "zh": "三点", "py": "sān diǎn" }, "adverb": { "zh": "不", "py": "bú" }, "verb1": { "zh": "去朋友家", "py": "qù péngyou jiā" } }, "end": "。", "es": "A las tres no voy a casa de mi amigo." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "现在", "py": "xiànzài" }, "object": { "zh": "几点", "py": "jǐ diǎn" } }, "end": "？", "es": "¿Qué hora es?" },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "time": { "zh": "几点", "py": "jǐ diǎn" }, "verb1": { "zh": "等", "py": "děng" }, "object": { "zh": "小李", "py": "Xiǎo Lǐ" } }, "end": "？", "es": "¿A qué hora esperas a Xiao Li?" }
+      ],
+      "mistakes": [
+        { "wrong": "二点", "right": "两点", "why": "Las dos se dicen con 两, como «dos de algo». Pero 十二点: el 二 forma parte del número doce." },
+        { "wrong": "半八点", "right": "八点半", "why": "半 va detrás de la hora." },
+        { "wrong": "现在几点吗？", "right": "现在几点？", "why": "几 ya pregunta: no se añade 吗." },
+        { "wrong": "小李等雨果三点。", "right": "小李三点等雨果。", "why": "La hora es tiempo: va delante del verbo." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Dos relojes",
+      "lines": [
+        { "speaker": "雨果", "zh": "小李，现在几点？", "py": "Xiǎo Lǐ, xiànzài jǐ diǎn?", "es": "Xiao Li, ¿qué hora es?" },
+        { "speaker": "小李", "zh": "现在八点二十五分。", "py": "Xiànzài bā diǎn èrshíwǔ fēn.", "es": "Las ocho y veinticinco." },
+        { "speaker": "雨果", "zh": "八点二十五……马德里现在几点？", "py": "Bā diǎn èrshíwǔ… Mǎdélǐ xiànzài jǐ diǎn?", "es": "Las ocho y veinticinco… ¿Qué hora será en Madrid?" },
+        { "speaker": "小李", "zh": "我不知道。你说！", "py": "Wǒ bù zhīdào. Nǐ shuō!", "es": "Ni idea. ¡Dímelo tú!" },
+        { "speaker": "雨果", "zh": "马德里现在一点二十五分。", "py": "Mǎdélǐ xiànzài yī diǎn èrshíwǔ fēn.", "es": "En Madrid es la una y veinticinco." },
+        { "speaker": "小李", "zh": "好。我们几点等大卫？", "py": "Hǎo. Wǒmen jǐ diǎn děng Dàwèi?", "es": "Vale. ¿A qué hora quedamos con David?" },
+        { "speaker": "雨果", "zh": "九点。我们八点五十去。", "py": "Jiǔ diǎn. Wǒmen bā diǎn wǔshí qù.", "es": "A las nueve. Salimos a las nueve menos diez." },
+        { "speaker": "小李", "zh": "好，八点五十。", "py": "Hǎo, bā diǎn wǔshí.", "es": "Vale, a las ocho cincuenta." }
+      ],
+      "notes": "Toda China usa una sola hora oficial, la de Pekín. En invierno España va 7 horas por detrás (6 en verano): cuando en Shanghái son las 20:25, en Madrid es la 13:25. En chino se suele contar de 1 a 12 y aclarar la parte del día (lo verás en la próxima lección)."
+    },
+    { "type": "exercises", "count": 14, "bank": ["g-dates-time", "g-word-order", "u04"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "现在" }, "object": { "zh": "两点半" } }, "end": "。", "es": "Son las dos y media." }, "distractors": ["二点", "吗"] },
+        { "sentence": { "slots": { "subject": { "zh": "小李" }, "time": { "zh": "三点" }, "verb1": { "zh": "等" }, "object": { "zh": "雨果" } }, "end": "。", "es": "Xiao Li espera a Hugo a las tres." } },
+        { "sentence": { "slots": { "subject": { "zh": "我" }, "time": { "zh": "三点" }, "adverb": { "zh": "不" }, "verb1": { "zh": "去朋友家" } }, "end": "。", "es": "A las tres no voy a casa de mi amigo." }, "distractors": ["半"] },
+        { "sentence": { "slots": { "subject": { "zh": "大卫和他的美国同学" }, "time": { "zh": "星期六十点半" }, "adverb": { "zh": "都" }, "verb1": { "zh": "去西安" } }, "end": "。", "es": "David y sus compañeros estadounidenses se van todos a Xi'an el sábado a las diez y media." }, "distractors": ["半十点"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "现在几点？", "py": "Xiànzài jǐ diǎn?", "es": "¿Qué hora es?" },
+        { "zh": "现在两点半。", "py": "Xiànzài liǎng diǎn bàn.", "es": "Son las dos y media." },
+        { "zh": "现在十点零五分。", "py": "Xiànzài shí diǎn líng wǔ fēn.", "es": "Son las diez y cinco." },
+        { "zh": "小李三点等雨果。", "py": "Xiǎo Lǐ sān diǎn děng Yǔguǒ.", "es": "Xiao Li espera a Hugo a las tres." }
+      ],
+      "respond": [
+        { "q": { "zh": "现在几点？", "py": "Xiànzài jǐ diǎn?", "es": "¿Qué hora es?" }, "model": { "zh": "现在四点十分。", "py": "Xiànzài sì diǎn shí fēn.", "es": "Son las cuatro y diez." } },
+        { "q": { "zh": "你几点去朋友家？", "py": "Nǐ jǐ diǎn qù péngyou jiā?", "es": "¿A qué hora vas a casa de tu amigo?" }, "model": { "zh": "我七点半去朋友家。", "py": "Wǒ qī diǎn bàn qù péngyou jiā.", "es": "Voy a casa de mi amigo a las siete y media." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "La misma hora en toda China",
+      "text": "现在上海两点十分，北京也两点十分，西安也两点十分。马德里现在七点十分，巴塞罗那也七点十分。雨果说：“上海两点，马德里七点。我妈妈现在不忙！”",
+      "es": "Ahora en Shanghái son las dos y diez; en Pekín también, y en Xi'an también (toda China tiene la misma hora). En Madrid son las siete y diez, y en Barcelona también. Hugo dice: «En Shanghái son las dos y en Madrid, las siete. ¡Mi madre ahora no está ocupada!».",
+      "questions": [
+        { "q": "¿Qué hora es en Xi'an?", "options": ["7:10", "2:10", "2:30"], "answer": 1 },
+        { "q": "¿Qué hora es en Barcelona?", "options": ["7:10", "2:10", "1:10"], "answer": 0 },
+        { "q": "¿Cuántas horas de diferencia hay en el texto?", "options": ["Cinco", "Seis", "Siete"], "answer": 2 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

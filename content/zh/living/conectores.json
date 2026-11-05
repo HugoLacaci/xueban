@@ -1,0 +1,1632 @@
+{
+  "id": "conectores",
+  "title": "Conectores",
+  "zh": "关联词",
+  "order": 16,
+  "icon": "Link",
+  "summary": "和 (solo entre nombres), 先…然后…, 还是 / 或者, 因为…所以…, 虽然…但是…, 如果…就…, 一边…一边…, 越来越, 除了…以外, 不但…而且…, 一…就…: cómo se unen palabras y frases. El chino suele usar los dos conectores de la pareja y casi siempre pone primero la causa o la condición.",
+  "kind": "topic",
+  "reviewed": false,
+  "sections": [
+    {
+      "id": "he-nombres",
+      "title": "和: una «y» solo para nombres",
+      "unlockedBy": "a1-u03-l3",
+      "markdown": "### Un «y» de bolsillo pequeño\n\n**和** une **nombres o pronombres** dentro de un mismo hueco: 爸爸**和**妈妈, 茶**和**咖啡, 我**和**你.\n\n- En una lista de tres o más, 和 va **solo antes del último**; los demás se separan con la coma de enumeración **、**: 爸爸、妈妈**和**我.\n- Como sujeto, A 和 B casi siempre llama a **都**: 爸爸和妈妈**都**是老师.\n\n> ⚠️ **Ojo**: **和 no une frases ni verbos**. Para «tengo un hermano y también una hermana» se usa 也: 我有哥哥，**也**有姐姐 (lo verás a fondo en la U11).\n\n> ❌ **Error típico**: 我和忙 → 我很忙. 和 necesita dos nombres a los lados.",
+      "skeleton": {
+        "focus": ["object"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "我家", "py": "wǒ jiā" },
+              "verb1": { "zh": "有", "py": "yǒu" },
+              "object": { "zh": "爸爸、妈妈、姐姐和我", "py": "bàba, māma, jiějie hé wǒ" }
+            },
+            "end": "。",
+            "es": "En mi familia están mi padre, mi madre, mi hermana y yo."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "verb1": { "zh": "有", "py": "yǒu" },
+              "object": { "zh": "一个叔叔和一个姑姑", "py": "yí ge shūshu hé yí ge gūgu" }
+            },
+            "end": "。",
+            "es": "Tengo un tío y una tía (por parte de padre)."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "王老师有爱人和孩子。", "py": "Wáng lǎoshī yǒu àiren hé háizi.", "es": "La profesora Wang tiene marido e hijos." },
+        { "zh": "我家有爸爸、妈妈、哥哥和我。", "py": "Wǒ jiā yǒu bàba, māma, gēge hé wǒ.", "es": "En mi familia estamos mi padre, mi madre, mi hermano y yo." },
+        { "zh": "我有哥哥，也有姐姐。", "py": "Wǒ yǒu gēge, yě yǒu jiějie.", "es": "Tengo un hermano mayor y también una hermana mayor.", "note": "Dos frases: 也, no 和." }
+      ],
+      "sourceNotes": ["zh-grammar-he"]
+    },
+    {
+      "id": "xian-ranhou",
+      "title": "先…然后…: primero…, luego…",
+      "unlockedBy": "a1-u07-l1",
+      "markdown": "### Contar en orden\n\n- **先** (primero) es un **adverbio**: va justo **delante del verbo**: 我**先**洗澡.\n- **然后** (luego) **abre** la acción siguiente, al principio de esa parte (antes del sujeto o en su lugar): **然后**我吃早饭 / 我先洗澡，**然后**吃早饭.\n\nEn el esqueleto, 先 va en *Adverbios* y 然后, en *Tiempo inicial*.\n\n> 💡 **Truco**: para tu rutina, junta hora y orden: 我每天七点起床，**先**洗澡，**然后**吃早饭.\n\n> ⚠️ **Ojo**: ✗ 我然后吃早饭: 然后 no va detrás del sujeto como un adverbio; abre la frase.",
+      "skeleton": {
+        "focus": ["adverb", "time0"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "adverb": { "zh": "先", "py": "xiān" },
+              "verb1": { "zh": "洗澡", "py": "xǐzǎo" }
+            },
+            "end": "，",
+            "es": "Primero me ducho… (1.ª parte)"
+          },
+          {
+            "slots": {
+              "time0": { "zh": "然后", "py": "ránhòu" },
+              "subject": { "zh": "我", "py": "wǒ" },
+              "verb1": { "zh": "吃", "py": "chī" },
+              "object": { "zh": "早饭", "py": "zǎofàn" }
+            },
+            "end": "。",
+            "es": "…y luego desayuno. (2.ª parte)"
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "我先起床，然后洗澡。", "py": "Wǒ xiān qǐchuáng, ránhòu xǐzǎo.", "es": "Primero me levanto y luego me ducho." },
+        { "zh": "小李先吃早饭，然后走。", "py": "Xiǎo Lǐ xiān chī zǎofàn, ránhòu zǒu.", "es": "Xiao Li primero desayuna y luego se va." },
+        { "zh": "你先洗澡，然后我洗。", "py": "Nǐ xiān xǐzǎo, ránhòu wǒ xǐ.", "es": "Tú te duchas primero y luego me ducho yo." }
+      ]
+    },
+    {
+      "id": "zuihou",
+      "title": "…最后…: el día completo",
+      "unlockedBy": "a1-u07-l4",
+      "markdown": "### Primero, luego, por último\n\nPara contar un día entero, encadena frases cortas con **先** (primero), **然后** (luego) y **最后** (por último). 先 va delante del verbo; **然后** y **最后** abren su frase, en el hueco del *Tiempo inicial*.\n\n> 先 … ，然后 … ，然后 … ，最后 …\n\n> 💡 **Truco**: no repitas 然后 cinco veces seguidas: mete la hora (然后**八点**…), o cambia de sujeto. Y cierra siempre con 最后.",
+      "skeleton": {
+        "focus": ["time0"],
+        "sentences": [
+          {
+            "slots": {
+              "time0": { "zh": "然后", "py": "ránhòu" },
+              "subject": { "zh": "我", "py": "wǒ" },
+              "verb1": { "zh": "去学校", "py": "qù xuéxiào" },
+              "verb2": { "zh": "上课", "py": "shàngkè" }
+            },
+            "end": "。",
+            "es": "Luego voy a la universidad a clase."
+          },
+          {
+            "slots": {
+              "time0": { "zh": "最后", "py": "zuìhòu" },
+              "subject": { "zh": "我", "py": "wǒ" },
+              "time": { "zh": "十一点", "py": "shíyī diǎn" },
+              "verb1": { "zh": "睡觉", "py": "shuìjiào" }
+            },
+            "end": "。",
+            "es": "Por último, me acuesto a las once.",
+            "esOrder": [
+              { "text": "Por último,", "slot": "time0" },
+              { "text": "me acuesto", "slot": "verb1" },
+              { "text": "a las once", "slot": "time" }
+            ]
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "我先吃午饭，然后午睡，最后去上课。", "py": "Wǒ xiān chī wǔfàn, ránhòu wǔshuì, zuìhòu qù shàngkè.", "es": "Primero como, luego me echo la siesta y por último voy a clase." },
+        { "zh": "我们先去食堂，然后回家休息。", "py": "Wǒmen xiān qù shítáng, ránhòu huí jiā xiūxi.", "es": "Primero vamos al comedor y luego volvemos a casa a descansar." },
+        { "zh": "最后，我十二点睡觉。", "py": "Zuìhòu, wǒ shí'èr diǎn shuìjiào.", "es": "Por último, me acuesto a las doce." }
+      ]
+    },
+    {
+      "id": "haishi",
+      "title": "还是: «¿A o B?» en las preguntas",
+      "unlockedBy": "a1-u09-l4",
+      "markdown": "### La «o» del camarero\n\n**还是** se pone entre dos opciones, en el hueco donde iría la respuesta:\n\n- ¿Qué? → objeto: 你要**茶还是水**？\n- ¿Cuándo? → tiempo: 我们**中午还是晚上**去？\n- ¿Quién? → sujeto: **你还是他**是老师？\n\nReglas:\n\n1. Una pregunta con 还是 **ya es pregunta**: **no lleva 吗**.\n2. 还是 es solo para **preguntar**. En afirmaciones, «o» es **或者** (A2).\n3. No lo confundas con **和**: 茶**和**水 = té *y* agua (las dos cosas).\n4. Con **是**, el segundo se funde: 你是老师**还是**学生？ (✗ 还是是).\n\nLa respuesta es una de las dos opciones, en el mismo hueco: 我要**茶**.\n\n> 💡 **Truco**: puedes repetir el verbo en las dos opciones (喝茶还是喝咖啡) o solo en la primera (喝茶还是咖啡).\n\n> ❌ **Error típico**: 你喝茶还是咖啡吗？ → fuera el 吗.",
+      "skeleton": {
+        "focus": ["object", "time"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "你", "py": "nǐ" },
+              "verb1": { "zh": "要", "py": "yào" },
+              "object": { "zh": "茶还是水", "py": "chá háishi shuǐ" }
+            },
+            "end": "？",
+            "es": "¿Quieres té o agua?",
+            "esOrder": [
+              { "text": "¿Quieres", "slot": "verb1" },
+              { "text": "té o agua?", "slot": "object" }
+            ]
+          },
+          {
+            "slots": {
+              "subject": { "zh": "我们", "py": "wǒmen" },
+              "time": { "zh": "中午还是晚上", "py": "zhōngwǔ háishi wǎnshang" },
+              "verb1": { "zh": "去饭馆", "py": "qù fànguǎn" }
+            },
+            "end": "？",
+            "es": "¿Vamos al restaurante a mediodía o por la noche?"
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "你想吃中餐还是西餐？", "py": "Nǐ xiǎng chī zhōngcān háishi xīcān?", "es": "¿Te apetece comida china u occidental?" },
+        { "zh": "他要一碗还是两碗？", "py": "Tā yào yì wǎn háishi liǎng wǎn?", "es": "¿Quiere un bol o dos?" },
+        { "zh": "你是老师还是学生？", "py": "Nǐ shì lǎoshī háishi xuésheng?", "es": "¿Eres profesor o estudiante?" }
+      ],
+      "sourceNotes": ["zh-grammar-haishi"]
+    },
+    {
+      "id": "he-no-verbos",
+      "title": "和 no une acciones: también 也, 还 o nada",
+      "unlockedBy": "a1-u11-l2",
+      "markdown": "### La «y» española sirve para todo; 和, no\n\n- ✔ 我**和**安娜 · 茶**和**牛奶 · 男生**和**女生\n- ✘ *我吃饭**和**喝茶 (dos verbos) · *我很忙**和**很累 (dos adjetivos) · *我是学生**和**他是老师 (dos frases)\n\nPara unir **acciones o frases**:\n\n1. **Nada**, con una coma: 我是学生，他是老师.\n2. **也** delante del segundo verbo: 她喝茶，**也**吃包子.\n3. **还** («además») delante del segundo verbo: 安娜说汉语，**还**说英语.\n\nY no olvides el otro uso de 和: «**con**» (和 / 跟 + persona + 一起, U11).\n\n> 🧠 **Mnemotecnia**: 和 es un pegamento solo para nombres. Si lo que quieres unir son dos cosas que haces, dilas seguidas o mete 也.\n\n> ❌ **Error típico**: 我学习和工作 → 我学习，也工作.",
+      "skeleton": {
+        "focus": ["subject", "adverb"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "男生和女生", "py": "nánshēng hé nǚshēng" },
+              "adverb": { "zh": "都很", "py": "dōu hěn" },
+              "verb1": { "zh": "忙", "py": "máng" }
+            },
+            "end": "。",
+            "es": "Los chicos y las chicas están todos muy ocupados."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "安娜", "py": "Ānnà" },
+              "adverb": { "zh": "还", "py": "hái" },
+              "verb1": { "zh": "说", "py": "shuō" },
+              "object": { "zh": "英语", "py": "Yīngyǔ" }
+            },
+            "end": "。",
+            "es": "Además, Ana habla inglés."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "我很忙，也很累。", "py": "Wǒ hěn máng, yě hěn lèi.", "es": "Estoy muy ocupado y muy cansado." },
+        { "zh": "她喝茶，也吃包子。", "py": "Tā hē chá, yě chī bāozi.", "es": "Toma té y también come baozi." },
+        { "zh": "雨果有中国朋友和西班牙朋友。", "py": "Yǔguǒ yǒu Zhōngguó péngyou hé Xībānyá péngyou.", "es": "Hugo tiene amigos chinos y españoles." },
+        { "zh": "我和安娜是同学。", "py": "Wǒ hé Ānnà shì tóngxué.", "es": "Ana y yo somos compañeros de clase." }
+      ],
+      "sourceNotes": ["zh-grammar-he", "zh-contrast-he-ye-dou"]
+    },
+    {
+      "id": "xian-zai",
+      "title": "先…再…: los pasos de unas instrucciones",
+      "unlockedBy": "a2-u04-l1",
+      "markdown": "### Primero esto, luego aquello (de ahora en adelante)\n\n> **先** + acción 1，**再** + acción 2 → *primero…, luego…*\n\n- 我**先**洗手，**再**吃饭。\n- 你**先**放油，**再**放鸡蛋。\n\n**先** va en *Adverbios*, delante del primer verbo; **再**, delante del segundo (en el esqueleto, dentro de *Verbo 2*: 再吃饭).\n\n### 再 o 然后\n\nEste **再** no es «otra vez», sino **«después, entonces»**, y mira al **futuro** o a instrucciones. Para lo que **ya pasó** se usa **然后**: 我先洗了手，**然后**吃了饭.\n\nPara más pasos: **先… 再… 接着 / 接下来… 最后…**\n\n> 💡 **Truco**: es la estructura de todas las recetas y de todos los «¿cómo se hace?» del móvil: 先下载，再注册.",
+      "skeleton": {
+        "focus": ["adverb", "verb2"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "adverb": { "zh": "先", "py": "xiān" },
+              "verb1": { "zh": "洗手", "py": "xǐshǒu" },
+              "verb2": { "zh": "再吃饭", "py": "zài chī fàn" }
+            },
+            "end": "。",
+            "es": "Primero me lavo las manos y luego como."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "你", "py": "nǐ" },
+              "adverb": { "zh": "先", "py": "xiān" },
+              "verb1": { "zh": "休息一会儿", "py": "xiūxi yíhuìr" },
+              "verb2": { "zh": "再做", "py": "zài zuò" },
+              "object": { "zh": "饭", "py": "fàn" }
+            },
+            "end": "。",
+            "es": "Descansa un rato y luego haces la comida."
+          },
+          {
+            "slots": {
+              "adverb": { "zh": "接着", "py": "jiēzhe" },
+              "verb1": { "zh": "放", "py": "fàng" },
+              "object": { "zh": "鸡蛋", "py": "jīdàn" }
+            },
+            "end": "。",
+            "es": "A continuación echa el huevo."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "你先放油，再放鸡蛋。", "py": "Nǐ xiān fàng yóu, zài fàng jīdàn.", "es": "Primero echa el aceite y luego el huevo." },
+        { "zh": "我们先去超市买食物，再回家做饭。", "py": "Wǒmen xiān qù chāoshì mǎi shíwù, zài huí jiā zuòfàn.", "es": "Primero vamos al súper a comprar comida y luego volvemos a casa a cocinar." },
+        { "zh": "我先洗了手，然后吃了饭。", "py": "Wǒ xiān xǐ le shǒu, ránhòu chī le fàn.", "es": "Primero me lavé las manos y luego comí.", "note": "Pasado: 然后, no 再." }
+      ]
+    },
+    {
+      "id": "yibian-youyou",
+      "title": "一边…一边… y 又…又…: dos cosas a la vez",
+      "unlockedBy": "a2-u07-l3",
+      "markdown": "### Dos acciones simultáneas\n\n**一边 A 一边 B** = hacer A y B **al mismo tiempo** (mismo sujeto). Cada 一边 va **justo delante de su verbo**: 我一边听音乐一边跑步. En español solemos decir «corro **mientras** escucho música», con el orden al revés.\n\n### Dos cualidades a la vez\n\n**又 A 又 B** = tener **dos cualidades juntas**: 又便宜又好看, 又年轻又有名. Los adjetivos van **sin 很**. También con verbos de capacidad: 又会唱又会跳.\n\n### …什么的\n\nAl final de una lista equivale a «y cosas así», «etcétera»: 唱歌、跳舞**什么的**.\n\n**En el esqueleto**: 一边 + verbo 1 en *Verbo 1*, 一边 + verbo 2 en *Verbo 2*. Con 又…又…, igual: *Verbo 1* = 又年轻, *Verbo 2* = 又有名.\n\n> ❌ **Error típico**: 又很便宜又很好看 → 又便宜又好看.\n\n> ⚠️ **Ojo**: este 又 no es «otra vez» (a2-u11): aquí suma cualidades.",
+      "skeleton": {
+        "focus": ["verb1", "verb2"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "adverb": { "zh": "常常", "py": "chángcháng" },
+              "verb1": { "zh": "一边听音乐", "py": "yìbiān tīng yīnyuè" },
+              "verb2": { "zh": "一边跑步", "py": "yìbiān pǎobù" }
+            },
+            "end": "。",
+            "es": "Suelo correr mientras escucho música.",
+            "esOrder": [
+              { "text": "Suelo", "slot": "adverb" },
+              { "text": "correr", "slot": "verb2" },
+              { "text": "mientras escucho música", "slot": "verb1" }
+            ]
+          },
+          {
+            "slots": {
+              "subject": { "zh": "这个乐队", "py": "zhège yuèduì" },
+              "verb1": { "zh": "又年轻", "py": "yòu niánqīng" },
+              "verb2": { "zh": "又有名", "py": "yòu yǒumíng" }
+            },
+            "end": "。",
+            "es": "Este grupo es joven y además famoso."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "小李一边吃饭一边看抖音。", "py": "Xiǎo Lǐ yìbiān chī fàn yìbiān kàn Dǒuyīn.", "es": "Xiao Li come mientras mira Douyin." },
+        { "zh": "那个歌手的歌又好听又流行。", "py": "Nàge gēshǒu de gē yòu hǎotīng yòu liúxíng.", "es": "Las canciones de ese cantante son bonitas y están de moda." },
+        { "zh": "这件衣服又便宜又好看。", "py": "Zhè jiàn yīfu yòu piányi yòu hǎokàn.", "es": "Esta prenda es barata y bonita." },
+        { "zh": "周末我喜欢唱歌、跳舞什么的。", "py": "Zhōumò wǒ xǐhuan chànggē, tiàowǔ shénmede.", "es": "Los fines de semana me gusta cantar, bailar y cosas así." }
+      ]
+    },
+    {
+      "id": "yuelaiyue",
+      "title": "越来越: cada vez más",
+      "unlockedBy": "a2-u09-l1",
+      "markdown": "### Un cambio que no para\n\n**越来越** ocupa el hueco de los **adverbios**: detrás del sujeto, delante del adjetivo o del verbo.\n\n- Con adjetivos: 天气**越来越**冷 · 学汉语的人**越来越**多.\n- Con verbos de sentimiento o capacidad: 我**越来越**喜欢上海 · 他**越来越**会做饭.\n- Muchas veces termina en **了** (el del cambio).\n- **越来越 ya es un grado**: nada de 很, 非常 ni 太 delante del adjetivo.\n- «Cada vez menos»: 越来越 + **不 / 少**: 越来越少.\n\n**变** («volverse») también cuenta cambios: 气温慢慢**变**低了. Con un nombre se usa **变成**: 雨**变成**了雪.\n\n> ❌ **Error típico**: 天气越来越很冷 → 天气越来越冷.",
+      "skeleton": {
+        "focus": ["adverb"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "天气", "py": "tiānqì" },
+              "adverb": { "zh": "越来越", "py": "yuèláiyuè" },
+              "verb1": { "zh": "冷", "py": "lěng" },
+              "particle": { "zh": "了", "py": "le" }
+            },
+            "end": "。",
+            "es": "Cada vez hace más frío.",
+            "esOrder": [
+              { "text": "Cada vez", "slot": "adverb" },
+              { "text": "hace más frío", "slot": "verb1" }
+            ]
+          },
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "adverb": { "zh": "越来越", "py": "yuèláiyuè" },
+              "verb1": { "zh": "喜欢", "py": "xǐhuan" },
+              "object": { "zh": "上海", "py": "Shànghǎi" },
+              "particle": { "zh": "了", "py": "le" }
+            },
+            "end": "。",
+            "es": "Shanghái me gusta cada vez más."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "学汉语的人越来越多。", "py": "Xué Hànyǔ de rén yuèláiyuè duō.", "es": "Cada vez hay más gente que estudia chino." },
+        { "zh": "他越来越会做饭了。", "py": "Tā yuèláiyuè huì zuòfàn le.", "es": "Cada vez cocina mejor." },
+        { "zh": "十一月，上海的气温慢慢变低了。", "py": "Shíyī yuè, Shànghǎi de qìwēn mànmàn biàn dī le.", "es": "En noviembre, la temperatura de Shanghái baja poco a poco." }
+      ]
+    },
+    {
+      "id": "yinwei-suoyi",
+      "title": "因为…，所以…: causa y consecuencia",
+      "unlockedBy": "a2-u10-l1",
+      "markdown": "### Los dos paréntesis\n\nEn español decimos «como llueve, no voy» o «no voy porque llueve», pero nunca «como llueve, por eso no voy». En chino sí: **因为** (porque) abre la causa y **所以** (por eso) abre la consecuencia, **los dos**.\n\n- **La causa va primero** casi siempre. Se puede usar solo uno: 因为下雨，我不去 · 下雨了，所以我不去.\n- **所以 va delante del sujeto**: 所以**我们**不去 (✗ 我们所以不去). El sujeto de la causa puede ir delante o detrás de 因为.\n- **因为 + nombre** = «por…»: **因为中国电影**，我开始学汉语.\n- Para preguntar la causa, **为什么**…？ y se responde solo con **因为…** (sin 所以).\n- Para «estudio chino porque…» en una sola frase: 我学汉语**是因为**…\n\n**En el esqueleto**: una fila por cláusula; 因为 y 所以 van en *Tiempo inicial*.\n\n> ❌ **Error típico**: 所以我不去，因为下雨 → 我不去，因为下雨. Si 因为 va detrás, 所以 sobra.\n\n> ❌ **Error típico**: 我所以没去 → **所以**我没去.",
+      "skeleton": {
+        "focus": ["time0"],
+        "sentences": [
+          {
+            "slots": {
+              "time0": { "zh": "因为", "py": "yīnwèi" },
+              "subject": { "zh": "十月一号", "py": "shí yuè yī hào" },
+              "verb1": { "zh": "是", "py": "shì" },
+              "object": { "zh": "国庆节", "py": "Guóqìngjié" }
+            },
+            "end": "，",
+            "es": "Como el 1 de octubre es el Día Nacional… (1.ª parte)"
+          },
+          {
+            "slots": {
+              "time0": { "zh": "所以", "py": "suǒyǐ" },
+              "subject": { "zh": "全国", "py": "quánguó" },
+              "adverb": { "zh": "都", "py": "dōu" },
+              "verb1": { "zh": "放假", "py": "fàngjià" }
+            },
+            "end": "。",
+            "es": "…por eso hay fiesta en todo el país. (2.ª parte)"
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "因为下雨，所以我们不去了。", "py": "Yīnwèi xià yǔ, suǒyǐ wǒmen bú qù le.", "es": "Como llueve, ya no vamos." },
+        { "zh": "你为什么学汉语？——因为我喜欢中国电影。", "py": "Nǐ wèishénme xué Hànyǔ? — Yīnwèi wǒ xǐhuan Zhōngguó diànyǐng.", "es": "¿Por qué estudias chino? —Porque me gusta el cine chino." },
+        { "zh": "太贵了，所以我没买。", "py": "Tài guì le, suǒyǐ wǒ méi mǎi.", "es": "Era demasiado caro, así que no lo compré." },
+        { "zh": "那我们一起庆祝吧！", "py": "Nà wǒmen yìqǐ qìngzhù ba!", "es": "¡Pues lo celebramos juntos!", "note": "那 al principio = «entonces, pues»." }
+      ],
+      "sourceNotes": ["zh-grammar-yinwei-suoyi"]
+    },
+    {
+      "id": "suiran-danshi",
+      "title": "虽然…，但是…: aunque…, pero…",
+      "unlockedBy": "a2-u10-l2",
+      "markdown": "### La misma lógica de pareja\n\n**虽然** avisa de que viene una concesión («vale, admito que…») y **但是** trae el contraste. En español sería redundante; en chino es lo correcto.\n\n- **虽然** puede ir delante del sujeto (*Tiempo inicial*) o detrás (*Adverbios*), sobre todo con un solo sujeto: 学汉语**虽然**很难，但是很有意思.\n- **但是** (y **可是**, **不过**, **但**) va **delante del sujeto** de la segunda parte.\n- Si solo pones uno, que sea **但是**: 虽然 sin 但是 queda cojo.\n- **不过** es más suave («eso sí»), **可是** más oral, **但** más breve y escrito.\n\n> 💡 **Truco**: la frase que impresiona en el oral: 虽然汉语很难，但是我很喜欢.\n\n> ❌ **Error típico**: 虽然汉语很难，我很喜欢 → …，**但是**我很喜欢.\n\n> ❌ **Error típico**: 虽然…，所以… Nunca mezcles parejas: una pareja por frase.\n\n> ❌ **Error típico**: 虽然汉语很难，但是我也喜欢 (calco de «pero también»). No hace falta 也.",
+      "skeleton": {
+        "focus": ["time0", "adverb"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "学汉语", "py": "xué Hànyǔ" },
+              "adverb": { "zh": "虽然很", "py": "suīrán hěn" },
+              "verb1": { "zh": "难", "py": "nán" }
+            },
+            "end": "，",
+            "es": "Aunque estudiar chino es difícil… (1.ª parte)"
+          },
+          {
+            "slots": {
+              "time0": { "zh": "但是", "py": "dànshì" },
+              "adverb": { "zh": "很", "py": "hěn" },
+              "verb1": { "zh": "有意思", "py": "yǒu yìsi" }
+            },
+            "end": "。",
+            "es": "…es muy interesante. (2.ª parte)"
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "虽然火车票很难买，但是大家都回家过年。", "py": "Suīrán huǒchēpiào hěn nán mǎi, dànshì dàjiā dōu huí jiā guònián.", "es": "Aunque los billetes de tren son difíciles de conseguir, todo el mundo vuelve a casa por Año Nuevo." },
+        { "zh": "虽然我是西班牙人，可是我也想过春节。", "py": "Suīrán wǒ shì Xībānyá rén, kěshì wǒ yě xiǎng guò Chūnjié.", "es": "Aunque soy español, también quiero celebrar la Fiesta de la Primavera." },
+        { "zh": "这个红包不大，不过我很高兴。", "py": "Zhège hóngbāo bú dà, búguò wǒ hěn gāoxìng.", "es": "Este sobre rojo no es grande, pero estoy muy contento." }
+      ],
+      "sourceNotes": ["zh-grammar-suiran-danshi"]
+    },
+    {
+      "id": "ruguo-jiu",
+      "title": "如果…，就… y …的话: la condición",
+      "unlockedBy": "a2-u11-l1",
+      "markdown": "### La condición, siempre delante\n\nEn español puedes decir «voy si…»; en chino, **primero la condición**:\n\n> **如果** + condición，sujeto + **就** + verbo\n\n- **如果** abre la condición; **…的话** la cierra. Puedes usar uno, el otro o los dos: 如果你有时间(的话).\n- **就** va **detrás del sujeto** de la segunda parte, nunca delante (✗ 就我去).\n- La negación va en su cláusula: 如果明天**不**下雨 · 我们就**不**去了.\n\n**En el esqueleto**: una fila por cláusula; 如果 en el *Tiempo inicial* de la primera y 就 en los *Adverbios* de la segunda. Un bloque corto con 的话 cabe entero en el *Tiempo inicial*: [工资高的话，] [我] [就] [去].",
+      "skeleton": {
+        "focus": ["time0", "adverb"],
+        "sentences": [
+          {
+            "slots": {
+              "time0": { "zh": "如果", "py": "rúguǒ" },
+              "subject": { "zh": "你", "py": "nǐ" },
+              "time": { "zh": "明天", "py": "míngtiān" },
+              "verb1": { "zh": "有", "py": "yǒu" },
+              "object": { "zh": "时间", "py": "shíjiān" }
+            },
+            "end": "，",
+            "es": "Si mañana tienes tiempo… (1.ª parte)"
+          },
+          {
+            "slots": {
+              "subject": { "zh": "你", "py": "nǐ" },
+              "adverb": { "zh": "就", "py": "jiù" },
+              "verb1": { "zh": "来", "py": "lái" },
+              "verb2": { "zh": "面试", "py": "miànshì" },
+              "particle": { "zh": "吧", "py": "ba" }
+            },
+            "end": "。",
+            "es": "…ven a la entrevista. (2.ª parte)"
+          },
+          {
+            "slots": {
+              "time0": { "zh": "工资高的话，", "py": "gōngzī gāo dehuà," },
+              "subject": { "zh": "我", "py": "wǒ" },
+              "adverb": { "zh": "就", "py": "jiù" },
+              "verb1": { "zh": "去", "py": "qù" }
+            },
+            "end": "。",
+            "es": "Voy si el sueldo es alto.",
+            "esOrder": [
+              { "text": "Voy", "slot": "verb1" },
+              { "text": "si el sueldo es alto", "slot": "time0" }
+            ]
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "如果经理看了你的简历，他就会给你打电话。", "py": "Rúguǒ jīnglǐ kàn le nǐ de jiǎnlì, tā jiù huì gěi nǐ dǎ diànhuà.", "es": "Si el director lee tu currículum, te llamará." },
+        { "zh": "如果明天不下雨，我们就去公园。", "py": "Rúguǒ míngtiān bú xià yǔ, wǒmen jiù qù gōngyuán.", "es": "Si mañana no llueve, vamos al parque." },
+        { "zh": "你想在我们单位实习的话，就要写一份简历。", "py": "Nǐ xiǎng zài wǒmen dānwèi shíxí dehuà, jiù yào xiě yí fèn jiǎnlì.", "es": "Si quieres hacer prácticas en nuestra empresa, tienes que escribir un currículum." }
+      ]
+    },
+    {
+      "id": "haishi-huozhe",
+      "title": "还是, 或者 y 还是…吧: tres «o» (y un «mejor»)",
+      "unlockedBy": "a2-u11-l5",
+      "markdown": "### En español todo es «o»\n\n| | Para… | Ejemplo |\n|---|---|---|\n| A **还是** B？ | **preguntar** entre dos opciones | 您想喝茶**还是**咖啡？ |\n| A **或者** B | **afirmar**: una u otra, da igual | 茶**或者**咖啡都可以. |\n| **或者**…，**或者**… | enumerar alternativas | 周末我或者去公园，或者在家看书. |\n| **还是**…**吧** | **aconsejar**: «mejor…» (tras pensarlo) | 您**还是**坐飞机**吧**. |\n\n- Regla rápida: ¿lleva interrogación? → **还是**. ¿Es una afirmación? → **或者**.\n- En **还是…吧**, 还是 ocupa los *Adverbios* (detrás del sujeto) y 吧 la *Partícula*. Con 别: **还是别…吧** («mejor no…»).\n- Pregunta con 还是 → **sin 吗**.\n\n> ❌ **Error típico**: 我喝茶还是咖啡 (afirmación) → 我喝茶**或者**咖啡.\n\n> ❌ **Error típico**: 你喝茶或者咖啡？ → 你喝茶**还是**咖啡？",
+      "skeleton": {
+        "focus": ["adverb", "verb1"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "茶或者咖啡", "py": "chá huòzhě kāfēi" },
+              "adverb": { "zh": "都", "py": "dōu" },
+              "verb1": { "zh": "可以", "py": "kěyǐ" }
+            },
+            "end": "。",
+            "es": "Té o café, cualquiera de los dos."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "您", "py": "nín" },
+              "adverb": { "zh": "还是", "py": "háishi" },
+              "verb1": { "zh": "坐高铁", "py": "zuò gāotiě" },
+              "verb2": { "zh": "去", "py": "qù" },
+              "particle": { "zh": "吧", "py": "ba" }
+            },
+            "end": "。",
+            "es": "Mejor vaya en tren de alta velocidad.",
+            "esOrder": [
+              { "text": "Mejor", "slot": "adverb" },
+              { "text": "vaya", "slot": "verb2" },
+              { "text": "en tren de alta velocidad", "slot": "verb1" }
+            ]
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "您想坐飞机还是坐高铁？", "py": "Nín xiǎng zuò fēijī háishi zuò gāotiě?", "es": "¿Prefiere ir en avión o en tren de alta velocidad?" },
+        { "zh": "顾客可以坐飞机或者坐高铁去。", "py": "Gùkè kěyǐ zuò fēijī huòzhě zuò gāotiě qù.", "es": "Los clientes pueden ir en avión o en tren." },
+        { "zh": "周末我或者去公园，或者在家看书。", "py": "Zhōumò wǒ huòzhě qù gōngyuán, huòzhě zài jiā kàn shū.", "es": "Los fines de semana, o voy al parque o leo en casa." },
+        { "zh": "太晚了，我们还是别去了吧。", "py": "Tài wǎn le, wǒmen háishi bié qù le ba.", "es": "Es muy tarde: mejor no vamos." }
+      ],
+      "sourceNotes": ["zh-grammar-haishi"]
+    },
+    {
+      "id": "chule-yiwai",
+      "title": "除了…以外: además de… / excepto…",
+      "unlockedBy": "a2-u11-l6",
+      "markdown": "### El adverbio de la segunda parte decide\n\nEl bloque **除了 X 以外** va entero en el *Tiempo inicial*, y el adverbio que viene detrás cambia el sentido:\n\n| Adverbio | Sentido | Ejemplo |\n|---|---|---|\n| **还 / 也** | **además de** X (X incluido) | 除了汉语以外，雨果**还**会说英语. |\n| **都** | **excepto** X (X fuera) | 除了老李以外，全体同事**都**来了. |\n\n- 以外 se puede omitir: 除了汉语，…\n- **别的** + nombre: «otro(s) cualquiera(s)»: 别的城市. **其他** + nombre: «los demás, el resto»: 其他同事都回家了.\n\n> 💡 **Truco**: si en español dices «además de», busca 还 o 也; si dices «menos» o «excepto», busca 都.",
+      "skeleton": {
+        "focus": ["time0", "adverb"],
+        "sentences": [
+          {
+            "slots": {
+              "time0": { "zh": "除了汉语以外，", "py": "chúle Hànyǔ yǐwài," },
+              "subject": { "zh": "雨果", "py": "Yǔguǒ" },
+              "adverb": { "zh": "还", "py": "hái" },
+              "aux": { "zh": "会", "py": "huì" },
+              "verb1": { "zh": "说", "py": "shuō" },
+              "object": { "zh": "英语", "py": "Yīngyǔ" }
+            },
+            "end": "。",
+            "es": "Además de chino, Hugo también habla inglés.",
+            "esOrder": [
+              { "text": "Además de chino,", "slot": "time0" },
+              { "text": "Hugo", "slot": "subject" },
+              { "text": "también", "slot": "adverb" },
+              { "text": "habla", "slot": "verb1" },
+              { "text": "inglés", "slot": "object" }
+            ]
+          },
+          {
+            "slots": {
+              "time0": { "zh": "除了老李以外，", "py": "chúle lǎo Lǐ yǐwài," },
+              "subject": { "zh": "全体同事", "py": "quántǐ tóngshì" },
+              "adverb": { "zh": "都", "py": "dōu" },
+              "verb1": { "zh": "来了", "py": "lái le" }
+            },
+            "end": "。",
+            "es": "Han venido todos los compañeros menos Lao Li."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "除了上班以外，小王晚上也写小说。", "py": "Chúle shàngbān yǐwài, Xiǎo Wáng wǎnshang yě xiě xiǎoshuō.", "es": "Además de trabajar, Xiao Wang también escribe novelas por la noche." },
+        { "zh": "其他同事都回家了。", "py": "Qítā tóngshì dōu huí jiā le.", "es": "Los demás compañeros ya se han ido a casa." },
+        { "zh": "除了星期天，我每天都上班。", "py": "Chúle xīngqītiān, wǒ měi tiān dōu shàngbān.", "es": "Trabajo todos los días menos el domingo." }
+      ]
+    },
+    {
+      "id": "yi-jiu",
+      "title": "一…就…: en cuanto…, enseguida…",
+      "unlockedBy": "a2-u12-l2",
+      "markdown": "### Dos adverbios, uno en cada parte\n\n**一** y **就** son adverbios: van detrás del sujeto y delante del verbo, cada uno en su cláusula.\n\n- **Mismo sujeto**: 我**一**下课**就**去吃饭 (casi siempre sin coma ni segundo sujeto).\n- **Dos sujetos**: 老师**一**说，我们**就**明白了.\n- **就 nunca va delante del sujeto**: ✗ 一下课，就我去.\n- Sirve para costumbres (我一累就想睡觉) y para algo que pasó (他一到家就睡了).\n\n> ⚠️ **Ojo**: el 一 de 一…就 cambia de tono como siempre: **yí** delante de 4.º tono (一下课 yí xiàkè), **yì** delante de los demás (一说 yì shuō).",
+      "skeleton": {
+        "focus": ["adverb"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "他", "py": "tā" },
+              "adverb": { "zh": "一", "py": "yí" },
+              "verb1": { "zh": "下课", "py": "xiàkè" }
+            },
+            "end": "，",
+            "es": "En cuanto terminó la clase… (1.ª parte)"
+          },
+          {
+            "slots": {
+              "adverb": { "zh": "就", "py": "jiù" },
+              "verb1": { "zh": "去", "py": "qù" },
+              "verb2": { "zh": "打", "py": "dǎ" },
+              "object": { "zh": "篮球", "py": "lánqiú" },
+              "particle": { "zh": "了", "py": "le" }
+            },
+            "end": "。",
+            "es": "…se fue a jugar al baloncesto. (2.ª parte)"
+          },
+          {
+            "slots": {
+              "subject": { "zh": "老师", "py": "lǎoshī" },
+              "adverb": { "zh": "一", "py": "yì" },
+              "verb1": { "zh": "说", "py": "shuō" }
+            },
+            "end": "，",
+            "es": "En cuanto la profesora lo dijo… (1.ª parte)"
+          },
+          {
+            "slots": {
+              "subject": { "zh": "我们", "py": "wǒmen" },
+              "adverb": { "zh": "就", "py": "jiù" },
+              "verb1": { "zh": "明白", "py": "míngbai" },
+              "particle": { "zh": "了", "py": "le" }
+            },
+            "end": "。",
+            "es": "…lo entendimos. (2.ª parte)"
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "我一毕业就回国。", "py": "Wǒ yí bìyè jiù huí guó.", "es": "En cuanto me gradúe, vuelvo a mi país." },
+        { "zh": "我一累就想睡觉。", "py": "Wǒ yí lèi jiù xiǎng shuìjiào.", "es": "En cuanto me canso, me entra sueño." },
+        { "zh": "他一到家就睡了。", "py": "Tā yí dào jiā jiù shuì le.", "es": "En cuanto llegó a casa, se durmió." }
+      ]
+    },
+    {
+      "id": "budan-erqie",
+      "title": "不但…，而且…: no solo…, sino también…",
+      "unlockedBy": "a2-u12-l3",
+      "markdown": "### Sumar, y lo segundo pesa más\n\n- **Un solo sujeto**: va delante y **不但 detrás de él** (*Adverbios*): 雨果**不但**会说汉语，**而且**会写汉字.\n- **Dos sujetos distintos**: **不但** va **delante** del primer sujeto (*Tiempo inicial*) y la segunda parte suele llevar 也: **不但**雨果喜欢上海，**而且**他的父母**也**喜欢.\n- **而且** abre siempre la segunda parte (*Tiempo inicial*) y se combina con **还** o **也**: 而且**还**…\n\n> 💡 **Truco**: para dar razones en una opinión: 学汉语**不但**有意思，**而且**对工作有用.\n\n> ⚠️ **Ojo**: 不但 se pronuncia **búdàn** (但 es 4.º tono).",
+      "skeleton": {
+        "focus": ["time0", "adverb"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "雨果", "py": "Yǔguǒ" },
+              "adverb": { "zh": "不但", "py": "búdàn" },
+              "aux": { "zh": "会", "py": "huì" },
+              "verb1": { "zh": "说", "py": "shuō" },
+              "object": { "zh": "汉语", "py": "Hànyǔ" }
+            },
+            "end": "，",
+            "es": "Hugo no solo sabe hablar chino… (1.ª parte)"
+          },
+          {
+            "slots": {
+              "time0": { "zh": "而且", "py": "érqiě" },
+              "adverb": { "zh": "还", "py": "hái" },
+              "aux": { "zh": "会", "py": "huì" },
+              "verb1": { "zh": "写", "py": "xiě" },
+              "object": { "zh": "汉字", "py": "Hànzì" }
+            },
+            "end": "。",
+            "es": "…sino que también sabe escribir caracteres. (2.ª parte)"
+          },
+          {
+            "slots": {
+              "time0": { "zh": "不但", "py": "búdàn" },
+              "subject": { "zh": "雨果", "py": "Yǔguǒ" },
+              "verb1": { "zh": "喜欢", "py": "xǐhuan" },
+              "object": { "zh": "上海", "py": "Shànghǎi" }
+            },
+            "end": "，",
+            "es": "No solo a Hugo le gusta Shanghái… (1.ª parte)"
+          },
+          {
+            "slots": {
+              "time0": { "zh": "而且", "py": "érqiě" },
+              "subject": { "zh": "他的父母", "py": "tā de fùmǔ" },
+              "adverb": { "zh": "也", "py": "yě" },
+              "verb1": { "zh": "喜欢", "py": "xǐhuan" }
+            },
+            "end": "。",
+            "es": "…también a sus padres. (2.ª parte)"
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "这个城市不但很大，而且很干净。", "py": "Zhège chéngshì búdàn hěn dà, érqiě hěn gānjìng.", "es": "Esta ciudad no solo es muy grande, sino también muy limpia." },
+        { "zh": "学汉语不但改变了我的生活，而且还改变了我的想法。", "py": "Xué Hànyǔ búdàn gǎibiàn le wǒ de shēnghuó, érqiě hái gǎibiàn le wǒ de xiǎngfǎ.", "es": "Estudiar chino no solo me ha cambiado la vida, sino también la forma de pensar." },
+        { "zh": "他不但是我的同事，而且是我的好朋友。", "py": "Tā búdàn shì wǒ de tóngshì, érqiě shì wǒ de hǎo péngyou.", "es": "No solo es mi compañero de trabajo, sino también un buen amigo." }
+      ]
+    },
+    {
+      "id": "yi-jiu-costumbre",
+      "title": "一…就 para costumbres y reacciones",
+      "unlockedBy": "b1-u05-l1",
+      "markdown": "### «En cuanto…, enseguida…»\n\nEn A2 viste 一…就 de pasada. Su terreno natural son las **costumbres** y las **reacciones automáticas**:\n\n- **Costumbre**: 我**一**到家**就**洗澡 = cada vez que llego a casa, me ducho.\n- **Una vez, en el pasado**: 他**一**看见我**就**笑了 (con 了 al final).\n- **Dos sujetos**: 老师**一**说，我们**就**明白了. El segundo sujeto va **delante de 就**.\n\n一 y 就 son **adverbios**: los dos van detrás de su sujeto y delante del verbo.\n\n**En el esqueleto**: una fila por cláusula; 一 y 就 en *Adverbios*.\n\n> ⚠️ **Ojo**: la negación va **detrás de 就**: 天一下雨，我**就不**想出去了.\n\n> 💡 **Truco**: con 通常 (normalmente), 往往 (suele pasar que) y 总 (siempre) suena todavía más a costumbre: 我**总是**一起床就喝咖啡.",
+      "skeleton": {
+        "focus": [
+          "adverb"
+        ],
+        "sentences": [
+          {
+            "slots": {
+              "subject": {
+                "zh": "我",
+                "py": "wǒ"
+              },
+              "adverb": {
+                "zh": "一",
+                "py": "yí"
+              },
+              "verb1": {
+                "zh": "到家",
+                "py": "dào jiā"
+              }
+            },
+            "end": "，",
+            "es": "En cuanto llego a casa… (1.ª parte)"
+          },
+          {
+            "slots": {
+              "adverb": {
+                "zh": "就",
+                "py": "jiù"
+              },
+              "verb1": {
+                "zh": "洗澡",
+                "py": "xǐzǎo"
+              }
+            },
+            "end": "。",
+            "es": "…me ducho. (2.ª parte)"
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "老师",
+                "py": "lǎoshī"
+              },
+              "adverb": {
+                "zh": "一",
+                "py": "yì"
+              },
+              "verb1": {
+                "zh": "说",
+                "py": "shuō"
+              }
+            },
+            "end": "，",
+            "es": "En cuanto la profesora lo explica… (1.ª parte)"
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "我们",
+                "py": "wǒmen"
+              },
+              "adverb": {
+                "zh": "就",
+                "py": "jiù"
+              },
+              "verb1": {
+                "zh": "明白了",
+                "py": "míngbai le"
+              }
+            },
+            "end": "。",
+            "es": "…lo entendemos. (2.ª parte, otro sujeto)"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "zh": "雨果一有空儿就去健身房。",
+          "py": "Yǔguǒ yì yǒu kòngr jiù qù jiànshēnfáng.",
+          "es": "En cuanto Hugo tiene un rato, se va al gimnasio."
+        },
+        {
+          "zh": "他一看见我就笑了。",
+          "py": "Tā yí kànjiàn wǒ jiù xiào le.",
+          "es": "En cuanto me vio, se rio."
+        },
+        {
+          "zh": "天一下雨，我就不想出去了。",
+          "py": "Tiān yí xià yǔ, wǒ jiù bù xiǎng chūqu le.",
+          "es": "En cuanto llueve, ya no me apetece salir."
+        },
+        {
+          "zh": "你一到家就做什么？",
+          "py": "Nǐ yí dào jiā jiù zuò shénme?",
+          "es": "¿Qué es lo primero que haces al llegar a casa?"
+        }
+      ]
+    },
+    {
+      "id": "vle-jiu",
+      "title": "V了…就…: nada más hacer una cosa, la otra",
+      "unlockedBy": "b1-u05-l2",
+      "markdown": "### El 了 de «terminado»\n\n**V了 + O + 就 + V2**: la segunda acción empieza **en cuanto acaba** la primera. Aquí el 了 marca que la primera acción está **terminada**, no que sea pasado:\n\n- Rutina: 我下**了**课**就**去健身房.\n- Futuro: 明天我吃**了**早饭**就**去.\n- Pasado: 他吃**了**药**就**好多了.\n\nCon verbos separables, el 了 se mete **en medio**: 下**了**课, 吃**了**饭.\n\n**Frente a 一…就**: 一…就 subraya la **rapidez**; V了…就, que una cosa **termina** antes de la otra. Muchas veces valen los dos.\n\n**En el esqueleto**: una fila por cláusula; en la primera, V了 en *Verbo 1*; en la segunda, 就 en *Adverbios*.",
+      "skeleton": {
+        "focus": [
+          "verb1",
+          "adverb"
+        ],
+        "sentences": [
+          {
+            "slots": {
+              "subject": {
+                "zh": "我",
+                "py": "wǒ"
+              },
+              "verb1": {
+                "zh": "下了",
+                "py": "xià le"
+              },
+              "object": {
+                "zh": "课",
+                "py": "kè"
+              }
+            },
+            "end": "，",
+            "es": "Nada más salir de clase… (1.ª parte)"
+          },
+          {
+            "slots": {
+              "adverb": {
+                "zh": "就",
+                "py": "jiù"
+              },
+              "verb1": {
+                "zh": "去健身房",
+                "py": "qù jiànshēnfáng"
+              }
+            },
+            "end": "。",
+            "es": "…me voy al gimnasio. (2.ª parte)"
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "我们",
+                "py": "wǒmen"
+              },
+              "time": {
+                "zh": "明天",
+                "py": "míngtiān"
+              },
+              "verb1": {
+                "zh": "吃了",
+                "py": "chī le"
+              },
+              "object": {
+                "zh": "早饭",
+                "py": "zǎofàn"
+              }
+            },
+            "end": "，",
+            "es": "Mañana, nada más desayunar… (1.ª parte)"
+          },
+          {
+            "slots": {
+              "adverb": {
+                "zh": "就",
+                "py": "jiù"
+              },
+              "verb1": {
+                "zh": "去公园",
+                "py": "qù gōngyuán"
+              },
+              "verb2": {
+                "zh": "跑步",
+                "py": "pǎobù"
+              }
+            },
+            "end": "。",
+            "es": "…nos vamos a correr al parque. (2.ª parte)"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "zh": "他吃了药就好多了。",
+          "py": "Tā chī le yào jiù hǎo duō le.",
+          "es": "Se tomó la medicina y enseguida mejoró mucho."
+        },
+        {
+          "zh": "我晚上喝了咖啡就睡不着。",
+          "py": "Wǒ wǎnshang hē le kāfēi jiù shuì bu zháo.",
+          "es": "Si me tomo un café por la noche, luego no puedo dormir."
+        },
+        {
+          "zh": "你下了课就去哪儿？",
+          "py": "Nǐ xià le kè jiù qù nǎr?",
+          "es": "Al salir de clase, ¿adónde vas?"
+        }
+      ]
+    },
+    {
+      "id": "zhiyao-jiu",
+      "title": "只要…就: basta con que…",
+      "unlockedBy": "b1-u05-l3",
+      "markdown": "### Una condición suficiente\n\n**只要 A，就 B** = «basta con que A, para que B»: no hace falta nada más.\n\n- **只要** va al principio (delante del sujeto) **o** detrás del sujeto: 只要你每天听… / 你只要每天听…\n- **就** va siempre **detrás del sujeto** de la segunda parte y **delante del auxiliar**: 就**能**, 就**会**.\n- Si el sujeto es el mismo, en la segunda parte se calla: 你只要每天听，就会进步.\n\n**En el esqueleto**: una fila por cláusula; 只要 en *Tiempo inicial* (o en *Adverbios* si va detrás del sujeto), 就 en *Adverbios*.\n\n> ⚠️ **Ojo**: ✗ 只要…才. La pareja de 只要 es **就**.",
+      "skeleton": {
+        "focus": [
+          "time0",
+          "adverb"
+        ],
+        "sentences": [
+          {
+            "slots": {
+              "time0": {
+                "zh": "只要",
+                "py": "zhǐyào"
+              },
+              "verb1": {
+                "zh": "有",
+                "py": "yǒu"
+              },
+              "object": {
+                "zh": "网",
+                "py": "wǎng"
+              }
+            },
+            "end": "，",
+            "es": "Basta con que haya internet… (1.ª parte)"
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "我们",
+                "py": "wǒmen"
+              },
+              "adverb": {
+                "zh": "就",
+                "py": "jiù"
+              },
+              "aux": {
+                "zh": "能",
+                "py": "néng"
+              },
+              "verb1": {
+                "zh": "看",
+                "py": "kàn"
+              },
+              "object": {
+                "zh": "足球直播",
+                "py": "zúqiú zhíbō"
+              }
+            },
+            "end": "。",
+            "es": "…para que podamos ver el fútbol en directo. (2.ª parte)"
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "你",
+                "py": "nǐ"
+              },
+              "adverb": {
+                "zh": "只要每天",
+                "py": "zhǐyào měi tiān"
+              },
+              "verb1": {
+                "zh": "听",
+                "py": "tīng"
+              }
+            },
+            "end": "，",
+            "es": "Con tal de que escuches cada día… (1.ª parte, 只要 tras el sujeto)"
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "听力",
+                "py": "tīnglì"
+              },
+              "adverb": {
+                "zh": "就",
+                "py": "jiù"
+              },
+              "aux": {
+                "zh": "会",
+                "py": "huì"
+              },
+              "verb1": {
+                "zh": "进步",
+                "py": "jìnbù"
+              }
+            },
+            "end": "。",
+            "es": "…tu comprensión oral mejorará. (2.ª parte)"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "zh": "只要你按这儿，手机就会播放这个电台。",
+          "py": "Zhǐyào nǐ àn zhèr, shǒujī jiù huì bōfàng zhège diàntái.",
+          "es": "Basta con que pulses aquí y el móvil pone esta emisora."
+        },
+        {
+          "zh": "雨果只要有空儿，就看中国连续剧。",
+          "py": "Yǔguǒ zhǐyào yǒu kòngr, jiù kàn Zhōngguó liánxùjù.",
+          "es": "Con tal de tener un rato, Hugo se pone series chinas."
+        },
+        {
+          "zh": "只要你不看新闻，就不知道比赛的结果。",
+          "py": "Zhǐyào nǐ bú kàn xīnwén, jiù bù zhīdào bǐsài de jiéguǒ.",
+          "es": "Con tal de que no mires las noticias, no sabrás el resultado del partido."
+        }
+      ]
+    },
+    {
+      "id": "zhiyou-cai",
+      "title": "只有…才: solo si… (frente a 只要…就)",
+      "unlockedBy": "b1-u05-l4",
+      "markdown": "### La única condición\n\n**只有 A，才 B** = «solo si A, B»: sin esa condición, el resultado no llega.\n\n| | Idea | Ejemplo |\n|---|---|---|\n| **只要…就** | basta con esto | 只要每天听，听力**就**会进步 |\n| **只有…才** | sin esto, no | 只有多说，口语**才**能进步 |\n\n- Las parejas son fijas: **只要 → 就**, **只有 → 才**. No se cruzan.\n- **才** va detrás del sujeto y delante del auxiliar: 才**能**, 才**会**.\n- Negativa en el resultado: 只有定期复习，**才不会**忘.\n\n**En el esqueleto**: una fila por cláusula; 只有 en *Tiempo inicial* (o en *Adverbios* tras el sujeto), 才 en *Adverbios*.\n\n> 💡 **Truco**: 只要 abre la puerta («con esto basta»); 只有 la cierra («sin esto, nada»).",
+      "skeleton": {
+        "focus": [
+          "time0",
+          "adverb"
+        ],
+        "sentences": [
+          {
+            "slots": {
+              "time0": {
+                "zh": "只有",
+                "py": "zhǐyǒu"
+              },
+              "verb1": {
+                "zh": "多说",
+                "py": "duō shuō"
+              }
+            },
+            "end": "，",
+            "es": "Solo hablando mucho… (1.ª parte)"
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "口语",
+                "py": "kǒuyǔ"
+              },
+              "adverb": {
+                "zh": "才",
+                "py": "cái"
+              },
+              "aux": {
+                "zh": "能",
+                "py": "néng"
+              },
+              "verb1": {
+                "zh": "进步",
+                "py": "jìnbù"
+              }
+            },
+            "end": "。",
+            "es": "…mejora la expresión oral. (2.ª parte)"
+          },
+          {
+            "slots": {
+              "time0": {
+                "zh": "只有",
+                "py": "zhǐyǒu"
+              },
+              "adverb": {
+                "zh": "定期",
+                "py": "dìngqī"
+              },
+              "verb1": {
+                "zh": "复习",
+                "py": "fùxí"
+              }
+            },
+            "end": "，",
+            "es": "Solo repasando con regularidad… (1.ª parte)"
+          },
+          {
+            "slots": {
+              "adverb": {
+                "zh": "才不",
+                "py": "cái bú"
+              },
+              "aux": {
+                "zh": "会",
+                "py": "huì"
+              },
+              "verb1": {
+                "zh": "忘",
+                "py": "wàng"
+              }
+            },
+            "end": "。",
+            "es": "…no se te olvida. (2.ª parte)"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "zh": "只有你主动跟中国人聊天，才能适应这儿的生活。",
+          "py": "Zhǐyǒu nǐ zhǔdòng gēn Zhōngguórén liáotiān, cái néng shìyìng zhèr de shēnghuó.",
+          "es": "Solo si tomas la iniciativa de charlar con chinos podrás adaptarte a la vida de aquí."
+        },
+        {
+          "zh": "只要每天听，听力就会进步。",
+          "py": "Zhǐyào měi tiān tīng, tīnglì jiù huì jìnbù.",
+          "es": "Basta con escuchar cada día para mejorar la comprensión."
+        },
+        {
+          "zh": "只有坚持，才能克服这些困难。",
+          "py": "Zhǐyǒu jiānchí, cái néng kèfú zhèxiē kùnnan.",
+          "es": "Solo con constancia se superan estas dificultades."
+        }
+      ]
+    },
+    {
+      "id": "chufei-yaoshi-bulun",
+      "title": "除非, 要是 y 不论…都: excepciones y condiciones",
+      "unlockedBy": "b1-u05-l5",
+      "markdown": "### Tres maneras más de poner condiciones\n\n**1. 除非** marca la **única excepción**:\n\n- 除非 A，**不然** B = «a menos que A, B»: 除非你提前说，**不然**就进不来.\n- 除非 A，**才** B = «solo si A, B» (como 只有…才): 除非你提前说，阿姨**才**会等你.\n\n**2. 要是…就…** = 如果…就…, más coloquial: 要是你不舒服，就给我打电话.\n\n**3. 不论…都…** = «sea como sea, igual»: detrás de 不论 va una **pregunta** (是谁, 多晚, 什么时候) o una **alternativa** (去不去); en la segunda parte, **都**.\n\n**En el esqueleto**: una fila por cláusula; 除非, 不然, 要是, 不论 en *Tiempo inicial*; 才 / 就 / 都 en *Adverbios*.\n\n> ⚠️ **Ojo**: 除非 no es «si no». ✗ 除非你不来 para «si no vienes» → 如果 / 要是你不来.",
+      "skeleton": {
+        "focus": [
+          "time0",
+          "adverb"
+        ],
+        "sentences": [
+          {
+            "slots": {
+              "time0": {
+                "zh": "除非",
+                "py": "chúfēi"
+              },
+              "subject": {
+                "zh": "你",
+                "py": "nǐ"
+              },
+              "adverb": {
+                "zh": "提前",
+                "py": "tíqián"
+              },
+              "verb1": {
+                "zh": "说",
+                "py": "shuō"
+              }
+            },
+            "end": "，",
+            "es": "A menos que avises antes… (1.ª parte)"
+          },
+          {
+            "slots": {
+              "time0": {
+                "zh": "不然",
+                "py": "bùrán"
+              },
+              "subject": {
+                "zh": "你",
+                "py": "nǐ"
+              },
+              "adverb": {
+                "zh": "就",
+                "py": "jiù"
+              },
+              "verb1": {
+                "zh": "进",
+                "py": "jìn"
+              },
+              "complement": {
+                "zh": "不来",
+                "py": "bu lái"
+              },
+              "particle": {
+                "zh": "了",
+                "py": "le"
+              }
+            },
+            "end": "。",
+            "es": "…no podrás entrar. (2.ª parte)"
+          },
+          {
+            "slots": {
+              "time0": {
+                "zh": "不论",
+                "py": "búlùn"
+              },
+              "verb1": {
+                "zh": "是",
+                "py": "shì"
+              },
+              "object": {
+                "zh": "谁",
+                "py": "shéi"
+              }
+            },
+            "end": "，",
+            "es": "Sea quien sea… (1.ª parte)"
+          },
+          {
+            "slots": {
+              "adverb": {
+                "zh": "都",
+                "py": "dōu"
+              },
+              "aux": {
+                "zh": "要",
+                "py": "yào"
+              },
+              "verb1": {
+                "zh": "按照",
+                "py": "ànzhào"
+              },
+              "object": {
+                "zh": "学校的规定",
+                "py": "xuéxiào de guīdìng"
+              }
+            },
+            "end": "。",
+            "es": "…tiene que seguir las normas de la universidad. (2.ª parte)"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "zh": "除非天气特别不好，我才不去健身房。",
+          "py": "Chúfēi tiānqì tèbié bù hǎo, wǒ cái bú qù jiànshēnfáng.",
+          "es": "Solo dejo de ir al gimnasio si hace un tiempo malísimo."
+        },
+        {
+          "zh": "要是你不舒服，就给阿姨打电话。",
+          "py": "Yàoshi nǐ bù shūfu, jiù gěi āyí dǎ diànhuà.",
+          "es": "Si no te encuentras bien, llama a la conserje."
+        },
+        {
+          "zh": "不论多晚，他都给妈妈打电话。",
+          "py": "Búlùn duō wǎn, tā dōu gěi māma dǎ diànhuà.",
+          "es": "Sea la hora que sea, siempre llama a su madre."
+        },
+        {
+          "zh": "要是我十二点才回来，阿姨还会开门吗？",
+          "py": "Yàoshi wǒ shí'èr diǎn cái huílai, āyí hái huì kāi mén ma?",
+          "es": "Si vuelvo a las doce, ¿la conserje todavía me abrirá?"
+        }
+      ]
+    },
+    {
+      "id": "yue-yue",
+      "title": "越 A，越 B: cuanto más…, más…",
+      "unlockedBy": "b1-u07-l1",
+      "markdown": "### Dos cambios que crecen juntos\n\n**越来越** (A2) es un solo cambio con el tiempo: 人越来越多. **越 A，越 B** relaciona **dos** cambios: «cuanto más A, más B».\n\nCada **越** va en *Adverbios* de su cláusula: **detrás del sujeto** y delante del verbo o adjetivo.\n\n- **Dos sujetos**: cada uno delante de su 越, con coma: 城市越大，人越多.\n- **Un solo sujeto**: se dice una vez y de un tirón: 我越学越喜欢. En el esqueleto lo dibujamos igualmente en dos filas.\n- 越 ya es un grado: **sin 很, 非常, 太** detrás (✗ 越很多).\n- «Cuanto más…, menos…»: 越 + **不**: 他越喝咖啡，越不想睡觉.\n\n> 💡 **Truco**: en español decimos «cuanto **más** grande»; en chino no hay «más» aparte: el propio 越 lo dice.",
+      "skeleton": {
+        "focus": [
+          "adverb"
+        ],
+        "sentences": [
+          {
+            "slots": {
+              "subject": {
+                "zh": "城市",
+                "py": "chéngshì"
+              },
+              "adverb": {
+                "zh": "越",
+                "py": "yuè"
+              },
+              "verb1": {
+                "zh": "大",
+                "py": "dà"
+              }
+            },
+            "end": "，",
+            "es": "Cuanto más grande es la ciudad… (1.ª parte)"
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "人",
+                "py": "rén"
+              },
+              "adverb": {
+                "zh": "越",
+                "py": "yuè"
+              },
+              "verb1": {
+                "zh": "多",
+                "py": "duō"
+              }
+            },
+            "end": "。",
+            "es": "…más gente hay. (2.ª parte)"
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "我",
+                "py": "wǒ"
+              },
+              "adverb": {
+                "zh": "越",
+                "py": "yuè"
+              },
+              "verb1": {
+                "zh": "学",
+                "py": "xué"
+              }
+            },
+            "end": "，",
+            "es": "Cuanto más estudio… (1.ª parte)"
+          },
+          {
+            "slots": {
+              "adverb": {
+                "zh": "越",
+                "py": "yuè"
+              },
+              "verb1": {
+                "zh": "喜欢",
+                "py": "xǐhuan"
+              },
+              "object": {
+                "zh": "汉语",
+                "py": "Hànyǔ"
+              }
+            },
+            "end": "。",
+            "es": "…más me gusta el chino. (2.ª parte)"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "zh": "经济越发达，房子越贵。",
+          "py": "Jīngjì yuè fādá, fángzi yuè guì.",
+          "es": "Cuanto más desarrollada está la economía, más caras son las casas."
+        },
+        {
+          "zh": "雨越下越大。",
+          "py": "Yǔ yuè xià yuè dà.",
+          "es": "Cada vez llueve más fuerte."
+        },
+        {
+          "zh": "他越喝咖啡，越不想睡觉。",
+          "py": "Tā yuè hē kāfēi, yuè bù xiǎng shuìjiào.",
+          "es": "Cuanto más café bebe, menos ganas tiene de dormir."
+        },
+        {
+          "zh": "你为什么越学越喜欢汉语？",
+          "py": "Nǐ wèi shénme yuè xué yuè xǐhuan Hànyǔ?",
+          "es": "¿Por qué cuanto más estudias, más te gusta el chino?"
+        }
+      ]
+    },
+    {
+      "id": "yihuir",
+      "title": "不一会儿…就… y 一会儿…，一会儿…",
+      "unlockedBy": "b1-u07-l6",
+      "markdown": "### Dos usos nuevos de 一会儿\n\n**1. 不一会儿，…就…** = «al poco rato, en nada»: algo **pasado** que ocurrió muy pronto. Va delante del sujeto, con coma (*Tiempo inicial*), y 就 en *Adverbios*: **不一会儿，**雨**就**停了.\n\n> ⚠️ **Ojo**: para el futuro no sirve: 我**一会儿**就来 (✗ 我不一会儿就来).\n\n**2. 一会儿 A，一会儿 B** = «tan pronto A como B»: cambios que van y vienen. Cada 一会儿 va en *Adverbios* de su parte; el sujeto se dice una vez.\n\n> 天气**一会儿**冷，**一会儿**热。\n\nNo lo confundas con **越来越** (un cambio en una sola dirección): 天气越来越冷.",
+      "skeleton": {
+        "focus": [
+          "time0",
+          "adverb"
+        ],
+        "sentences": [
+          {
+            "slots": {
+              "time0": {
+                "zh": "不一会儿，",
+                "py": "bù yíhuìr,"
+              },
+              "subject": {
+                "zh": "雨",
+                "py": "yǔ"
+              },
+              "adverb": {
+                "zh": "就",
+                "py": "jiù"
+              },
+              "verb1": {
+                "zh": "停",
+                "py": "tíng"
+              },
+              "particle": {
+                "zh": "了",
+                "py": "le"
+              }
+            },
+            "end": "。",
+            "es": "Al poco rato dejó de llover."
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "天气",
+                "py": "tiānqì"
+              },
+              "adverb": {
+                "zh": "一会儿",
+                "py": "yíhuìr"
+              },
+              "verb1": {
+                "zh": "冷",
+                "py": "lěng"
+              }
+            },
+            "end": "，",
+            "es": "El tiempo tan pronto hace frío… (1.ª parte)"
+          },
+          {
+            "slots": {
+              "adverb": {
+                "zh": "一会儿",
+                "py": "yíhuìr"
+              },
+              "verb1": {
+                "zh": "热",
+                "py": "rè"
+              }
+            },
+            "end": "。",
+            "es": "…como calor. (2.ª parte)"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "zh": "不一会儿，妈妈就做好了四个菜。",
+          "py": "Bù yíhuìr, māma jiù zuòhǎo le sì ge cài.",
+          "es": "En nada, mi madre preparó cuatro platos."
+        },
+        {
+          "zh": "孩子一会儿哭，一会儿笑。",
+          "py": "Háizi yíhuìr kū, yíhuìr xiào.",
+          "es": "El niño tan pronto llora como ríe."
+        },
+        {
+          "zh": "你怎么一会儿说去，一会儿说不去？",
+          "py": "Nǐ zěnme yíhuìr shuō qù, yíhuìr shuō bú qù?",
+          "es": "¿Cómo es que tan pronto dices que vas como que no?"
+        }
+      ]
+    },
+    {
+      "id": "budan-bujin-bingqie",
+      "title": "不但 / 不仅 / 不光…而且 / 并且: sumar argumentos",
+      "unlockedBy": "b1-u08-l2",
+      "markdown": "### La familia de «no solo…, sino también…»\n\n| Primera parte | Segunda parte |\n|---|---|\n| **不但 / 不仅 / 不光** | **而且 / 并且** (+ 也 / 还) |\n\n不仅 suena algo más formal; 不光, más coloquial. La **segunda** parte es la que más pesa.\n\n**Dónde va el primer conector**:\n\n- **Mismo sujeto** → **detrás** del sujeto: 她**不光**会说汉语，**并且**说得很流利.\n- **Dos sujetos** → **delante** del primero: **不仅**雨果喜欢，**而且**他的同学**也**喜欢.\n\n**En el esqueleto**: una fila por cláusula; el primer conector en *Adverbios* (tras el sujeto) o en *Tiempo inicial* (delante); 而且 / 并且 abren la segunda en *Tiempo inicial*.\n\n> ⚠️ **Ojo**: **并且** une verbos o frases, **nunca nombres** (para nombres, 和). Y **并不** no suma: desmiente («no es tan… como crees»): 这个问题**并不**难.\n\n> 💡 **Truco**: para ordenar una exposición, **首先**…，**其次**…，**另外**…; para dos caras de algo, **一方面**…，**另一方面**….",
+      "skeleton": {
+        "focus": [
+          "time0",
+          "adverb"
+        ],
+        "sentences": [
+          {
+            "slots": {
+              "subject": {
+                "zh": "上海的地铁",
+                "py": "Shànghǎi de dìtiě"
+              },
+              "adverb": {
+                "zh": "不但很",
+                "py": "búdàn hěn"
+              },
+              "verb1": {
+                "zh": "方便",
+                "py": "fāngbiàn"
+              }
+            },
+            "end": "，",
+            "es": "El metro de Shanghái no solo es muy cómodo… (1.ª parte)"
+          },
+          {
+            "slots": {
+              "time0": {
+                "zh": "而且",
+                "py": "érqiě"
+              },
+              "adverb": {
+                "zh": "很",
+                "py": "hěn"
+              },
+              "verb1": {
+                "zh": "便宜",
+                "py": "piányi"
+              }
+            },
+            "end": "。",
+            "es": "…sino también muy barato. (2.ª parte)"
+          },
+          {
+            "slots": {
+              "time0": {
+                "zh": "不仅",
+                "py": "bùjǐn"
+              },
+              "subject": {
+                "zh": "雨果",
+                "py": "Yǔguǒ"
+              },
+              "verb1": {
+                "zh": "喜欢",
+                "py": "xǐhuan"
+              },
+              "object": {
+                "zh": "这个话题",
+                "py": "zhège huàtí"
+              }
+            },
+            "end": "，",
+            "es": "No solo a Hugo le gusta este tema… (1.ª parte)"
+          },
+          {
+            "slots": {
+              "time0": {
+                "zh": "而且",
+                "py": "érqiě"
+              },
+              "subject": {
+                "zh": "他的同学",
+                "py": "tā de tóngxué"
+              },
+              "adverb": {
+                "zh": "也",
+                "py": "yě"
+              },
+              "verb1": {
+                "zh": "喜欢",
+                "py": "xǐhuan"
+              }
+            },
+            "end": "。",
+            "es": "…sino también a sus compañeros. (2.ª parte)"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "zh": "她不光会说汉语，并且说得很流利。",
+          "py": "Tā bùguāng huì shuō Hànyǔ, bìngqiě shuō de hěn liúlì.",
+          "es": "No solo sabe hablar chino, sino que lo habla con mucha soltura."
+        },
+        {
+          "zh": "这个办法不仅不便宜，而且也不方便。",
+          "py": "Zhège bànfǎ bùjǐn bù piányi, érqiě yě bù fāngbiàn.",
+          "es": "Este método no solo no es barato, sino que tampoco es cómodo."
+        },
+        {
+          "zh": "首先，我们要谈这个话题的意义；其次，每个人要说自己的看法。",
+          "py": "Shǒuxiān, wǒmen yào tán zhège huàtí de yìyì; qícì, měi ge rén yào shuō zìjǐ de kànfǎ.",
+          "es": "En primer lugar, hablaremos del sentido de este tema; en segundo, cada uno dará su opinión."
+        },
+        {
+          "zh": "一方面，上海的东西比较贵；另一方面，这里的工作机会很多。",
+          "py": "Yì fāngmiàn, Shànghǎi de dōngxi bǐjiào guì; lìng yì fāngmiàn, zhèlǐ de gōngzuò jīhuì hěn duō.",
+          "es": "Por un lado, en Shanghái las cosas son bastante caras; por otro, aquí hay muchas oportunidades de trabajo."
+        }
+      ]
+    },
+    {
+      "id": "jiran-jiu",
+      "title": "既然…就: ya que…, entonces…",
+      "unlockedBy": "b1-u08-l3",
+      "markdown": "### Partir de lo que ya sabéis\n\n**既然 A，(sujeto) 就 B** = «ya que A, (entonces) B». A es algo que **los dos ya sabéis** (lo acabas de oír, es evidente); B suele ser una **propuesta**, una orden o una conclusión, a menudo con 吧 o 了:\n\n> 既然你不舒服，就别去了。 Ya que no te encuentras bien, no vayas.\n\n- **因为…所以** da una **causa nueva**; **既然** parte de lo que el otro **acaba de decir**.\n- La segunda parte lleva **就**: ✗ 既然…所以.\n\n**En el esqueleto**: 既然 en *Tiempo inicial* de la primera fila; 就 en *Adverbios* de la segunda.",
+      "skeleton": {
+        "focus": [
+          "time0",
+          "adverb"
+        ],
+        "sentences": [
+          {
+            "slots": {
+              "time0": {
+                "zh": "既然",
+                "py": "jìrán"
+              },
+              "subject": {
+                "zh": "大家",
+                "py": "dàjiā"
+              },
+              "adverb": {
+                "zh": "都",
+                "py": "dōu"
+              },
+              "verb1": {
+                "zh": "同意",
+                "py": "tóngyì"
+              }
+            },
+            "end": "，",
+            "es": "Ya que todos estáis de acuerdo… (1.ª parte)"
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "我们",
+                "py": "wǒmen"
+              },
+              "adverb": {
+                "zh": "就这么",
+                "py": "jiù zhème"
+              },
+              "verb1": {
+                "zh": "做",
+                "py": "zuò"
+              },
+              "particle": {
+                "zh": "吧",
+                "py": "ba"
+              }
+            },
+            "end": "。",
+            "es": "…hagámoslo así. (2.ª parte)"
+          },
+          {
+            "slots": {
+              "time0": {
+                "zh": "既然",
+                "py": "jìrán"
+              },
+              "subject": {
+                "zh": "你",
+                "py": "nǐ"
+              },
+              "adverb": {
+                "zh": "不",
+                "py": "bù"
+              },
+              "verb1": {
+                "zh": "舒服",
+                "py": "shūfu"
+              }
+            },
+            "end": "，",
+            "es": "Ya que no te encuentras bien… (1.ª parte)"
+          },
+          {
+            "slots": {
+              "adverb": {
+                "zh": "就别",
+                "py": "jiù bié"
+              },
+              "verb1": {
+                "zh": "去",
+                "py": "qù"
+              },
+              "particle": {
+                "zh": "了",
+                "py": "le"
+              }
+            },
+            "end": "。",
+            "es": "…no vayas. (2.ª parte)"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "zh": "既然你不同意，我们就再谈谈吧。",
+          "py": "Jìrán nǐ bù tóngyì, wǒmen jiù zài tántan ba.",
+          "es": "Ya que no estás de acuerdo, hablémoslo otra vez."
+        },
+        {
+          "zh": "既然你还不确定，就先别告诉对方。",
+          "py": "Jìrán nǐ hái bú quèdìng, jiù xiān bié gàosu duìfāng.",
+          "es": "Ya que todavía no estás seguro, de momento no se lo digas a la otra parte."
+        },
+        {
+          "zh": "既然下雨了，我们就在家看电影吧。",
+          "py": "Jìrán xià yǔ le, wǒmen jiù zài jiā kàn diànyǐng ba.",
+          "es": "Ya que llueve, veamos una película en casa."
+        }
+      ]
+    }
+  ]
+}

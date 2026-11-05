@@ -1,0 +1,836 @@
+{
+  "id": "a2-u01-l1",
+  "title": "¿Cuándo llegaste? 是…的 en el aeropuerto",
+  "zh": "我是去年来的",
+  "goal": "Contar cuándo, desde dónde y cómo llegaste a China con 是…的, y pasar el control de pasaportes.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    {
+      "hanzi": "护照",
+      "pinyin": "hùzhào",
+      "es": "pasaporte"
+    },
+    {
+      "hanzi": "签证",
+      "pinyin": "qiānzhèng",
+      "es": "visado",
+      "note": "Para estudiar en China necesitas el visado X1 o X2."
+    },
+    {
+      "hanzi": "海关",
+      "pinyin": "hǎiguān",
+      "es": "aduana; control de entrada"
+    },
+    {
+      "hanzi": "行李",
+      "pinyin": "xíngli",
+      "es": "equipaje",
+      "note": "No es contable: 很多行李 (mucho equipaje), sin 个."
+    },
+    {
+      "hanzi": "行李箱",
+      "pinyin": "xínglixiāng",
+      "es": "maleta"
+    },
+    {
+      "hanzi": "安检",
+      "pinyin": "ānjiǎn",
+      "es": "control de seguridad"
+    },
+    {
+      "hanzi": "起飞",
+      "pinyin": "qǐfēi",
+      "es": "despegar"
+    },
+    {
+      "hanzi": "出发",
+      "pinyin": "chūfā",
+      "es": "salir, partir (de viaje)"
+    },
+    {
+      "hanzi": "离开",
+      "pinyin": "líkāi",
+      "es": "irse de, dejar (un sitio)",
+      "note": "离开马德里 = irse de Madrid: el sitio va detrás, sin 从."
+    },
+    {
+      "hanzi": "顺利",
+      "pinyin": "shùnlì",
+      "es": "sin problemas, que va bien",
+      "note": "一切顺利 / 很顺利 = todo ha ido bien."
+    },
+    {
+      "hanzi": "出口",
+      "pinyin": "chūkǒu",
+      "es": "salida"
+    },
+    {
+      "hanzi": "入口",
+      "pinyin": "rùkǒu",
+      "es": "entrada"
+    }
+  ],
+  "extraVocab": [
+    "签证",
+    "安检",
+    "行李箱"
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        {
+          "zh": "我是去年九月来中国的。",
+          "py": "Wǒ shì qùnián jiǔyuè lái Zhōngguó de.",
+          "es": "Vine a China en septiembre del año pasado."
+        },
+        {
+          "zh": "我是从马德里出发的，是坐飞机来的。",
+          "py": "Wǒ shì cóng Mǎdélǐ chūfā de, shì zuò fēijī lái de.",
+          "es": "Salí de Madrid y vine en avión."
+        },
+        {
+          "zh": "你是什么时候离开西班牙的？",
+          "py": "Nǐ shì shénme shíhou líkāi Xībānyá de?",
+          "es": "¿Cuándo te fuiste de España?"
+        }
+      ]
+    },
+    {
+      "type": "vocab",
+      "title": "En el aeropuerto",
+      "words": [
+        "护照",
+        "签证",
+        "海关",
+        "行李",
+        "行李箱",
+        "安检",
+        "起飞",
+        "出发",
+        "离开",
+        "顺利",
+        "出口",
+        "入口"
+      ]
+    },
+    {
+      "type": "phonetics-drill",
+      "title": "ch, zh y q: 出发, 签证, 出口",
+      "markdown": "Hoy salen tres consonantes que a un hispanohablante le suenan casi igual a «ch»:\n\n- **ch** (出 *chū*): lengua **doblada hacia atrás** y con aire fuerte. 出发 *chūfā*, 出口 *chūkǒu*.\n- **zh** (证 *zhèng*): la misma posición que *ch*, pero **sin soplo**. 签证 *qiānzhèng*.\n- **q** (签 *qiān*): lengua **plana** detrás de los dientes de abajo, labios estirados, con soplo. Siempre va con *i* o *ü*.\n\nY una de tonos: **起飞 qǐfēi** es 3.º + 1.º: el 3.º se queda **bajo** (no sube) y el 1.º salta arriba.",
+      "items": [
+        {
+          "audio": "出发",
+          "options": [
+            "chūfā",
+            "qūfā",
+            "zhūfā"
+          ],
+          "answer": 0,
+          "explain": "ch con la lengua atrás y aire; fā en primer tono."
+        },
+        {
+          "audio": "签证",
+          "options": [
+            "qiānzhèng",
+            "chiānzhèng",
+            "qiānzèng"
+          ],
+          "answer": 0,
+          "explain": "q plana + zh doblada: dos posiciones distintas en una palabra."
+        },
+        {
+          "audio": "出口",
+          "options": [
+            "chūkǒu",
+            "chūgǒu",
+            "zhūkǒu"
+          ],
+          "answer": 0,
+          "explain": "k lleva aire; g no."
+        },
+        {
+          "audio": "起飞",
+          "options": [
+            "qǐfēi",
+            "qífēi",
+            "qìfēi"
+          ],
+          "answer": 0,
+          "explain": "3.º + 1.º: el tercer tono se queda abajo, sin subir."
+        },
+        {
+          "audio": "行李",
+          "options": [
+            "xíngli",
+            "xínglǐ",
+            "xìngli"
+          ],
+          "answer": 0,
+          "explain": "李 aquí es tono neutro: corto y flojo."
+        }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": [
+        "照",
+        "李"
+      ],
+      "mnemonics": {
+        "照": "日 (sol) + 召 (llamar, da el sonido) + 灬 (fuego): la luz que ilumina. De ahí 照相 (hacer fotos) y 护照 (el documento que te «ilumina», que dice quién eres).",
+        "李": "木 (árbol) + 子 (niño): el ciruelo, árbol de frutos pequeños como niños. Es el apellido de 小李, y en 行李 significa «equipaje»."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "是…的: el detalle de algo que ya pasó",
+      "markdown": "Cuando ya se sabe que algo **ha pasado** (Hugo ya está en China) y lo que interesa es **un detalle** —cuándo, desde dónde, cómo, con quién—, el chino usa **是 … 的**:\n\n- 我**是**去年九月来**的**。 → *Vine en septiembre del año pasado.*\n- 我**是**从马德里来**的**。 → *Vine desde Madrid.*\n- 我**是**坐飞机来**的**。 → *Vine en avión.*\n\n**是 va justo delante del detalle** y **的 cierra la frase**. Es como subrayar con rotulador: «fue *en septiembre* cuando vine».\n\n**Convención del esqueleto**: 是 va en el hueco de los **adverbios** (delante de 在 + lugar, 跟 + persona o 坐 + transporte) y 的 en la **partícula final**. Cuando el detalle es un **tiempo**, 是 tiene que ir delante del tiempo, así que lo verás **dentro del hueco del tiempo** (是去年九月). Si hay objeto, aquí ponemos 的 al final (我是去年来中国的); en la calle oirás también 我是去年来的中国, con 的 delante del objeto: las dos formas son correctas.\n\n- **Negativa**: 不是 … 的 (el 是 ya no se puede quitar): 我**不是**坐飞机来的。\n- **Pregunta**: 你是什么时候来的？ / 你是坐飞机来的**吗**？\n\n**No uses 了 aquí**: 了 cuenta *que* pasó; 是…的 cuenta *cómo / cuándo / dónde* pasó algo que ya sabemos. (Repaso de u08 «Tren, avión y billetes» del curso antiguo).",
+      "focus": [
+        "adverb",
+        "particle"
+      ],
+      "compare": true,
+      "sentences": [
+        {
+          "slots": {
+            "subject": {
+              "zh": "我",
+              "py": "wǒ"
+            },
+            "time": {
+              "zh": "是去年九月",
+              "py": "shì qùnián jiǔyuè"
+            },
+            "verb1": {
+              "zh": "来",
+              "py": "lái"
+            },
+            "object": {
+              "zh": "中国",
+              "py": "Zhōngguó"
+            },
+            "particle": {
+              "zh": "的",
+              "py": "de"
+            }
+          },
+          "end": "。",
+          "es": "Vine a China en septiembre del año pasado.",
+          "esOrder": [
+            {
+              "text": "(Yo) vine",
+              "slot": "verb1"
+            },
+            {
+              "text": "a China",
+              "slot": "object"
+            },
+            {
+              "text": "en septiembre del año pasado",
+              "slot": "time"
+            }
+          ]
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "我",
+              "py": "wǒ"
+            },
+            "adverb": {
+              "zh": "是",
+              "py": "shì"
+            },
+            "verb1": {
+              "zh": "从马德里",
+              "py": "cóng Mǎdélǐ"
+            },
+            "verb2": {
+              "zh": "出发",
+              "py": "chūfā"
+            },
+            "particle": {
+              "zh": "的",
+              "py": "de"
+            }
+          },
+          "end": "。",
+          "es": "Salí desde Madrid."
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "雨果",
+              "py": "Yǔguǒ"
+            },
+            "adverb": {
+              "zh": "是",
+              "py": "shì"
+            },
+            "verb1": {
+              "zh": "坐飞机",
+              "py": "zuò fēijī"
+            },
+            "verb2": {
+              "zh": "来",
+              "py": "lái"
+            },
+            "particle": {
+              "zh": "的",
+              "py": "de"
+            }
+          },
+          "end": "。",
+          "es": "Hugo vino en avión.",
+          "esOrder": [
+            {
+              "text": "Hugo",
+              "slot": "subject"
+            },
+            {
+              "text": "vino",
+              "slot": "verb2"
+            },
+            {
+              "text": "en avión",
+              "slot": "verb1"
+            }
+          ]
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "我们",
+              "py": "wǒmen"
+            },
+            "adverb": {
+              "zh": "是",
+              "py": "shì"
+            },
+            "place": {
+              "zh": "在机场",
+              "py": "zài jīchǎng"
+            },
+            "verb1": {
+              "zh": "认识",
+              "py": "rènshi"
+            },
+            "particle": {
+              "zh": "的",
+              "py": "de"
+            }
+          },
+          "end": "。",
+          "es": "Nos conocimos en el aeropuerto.",
+          "esOrder": [
+            {
+              "text": "Nos conocimos",
+              "slot": "verb1"
+            },
+            {
+              "text": "en el aeropuerto",
+              "slot": "place"
+            }
+          ]
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "安娜",
+              "py": "Ānnà"
+            },
+            "adverb": {
+              "zh": "是",
+              "py": "shì"
+            },
+            "with": {
+              "zh": "跟朋友一起",
+              "py": "gēn péngyou yìqǐ"
+            },
+            "verb1": {
+              "zh": "来",
+              "py": "lái"
+            },
+            "particle": {
+              "zh": "的",
+              "py": "de"
+            }
+          },
+          "end": "。",
+          "es": "Ana vino con una amiga."
+        }
+      ],
+      "negative": [
+        {
+          "slots": {
+            "subject": {
+              "zh": "我",
+              "py": "wǒ"
+            },
+            "adverb": {
+              "zh": "不是",
+              "py": "bú shì"
+            },
+            "verb1": {
+              "zh": "坐火车",
+              "py": "zuò huǒchē"
+            },
+            "verb2": {
+              "zh": "来",
+              "py": "lái"
+            },
+            "particle": {
+              "zh": "的",
+              "py": "de"
+            }
+          },
+          "end": "。",
+          "es": "No vine en tren."
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "他",
+              "py": "tā"
+            },
+            "time": {
+              "zh": "不是昨天",
+              "py": "bú shì zuótiān"
+            },
+            "verb1": {
+              "zh": "离开",
+              "py": "líkāi"
+            },
+            "object": {
+              "zh": "北京",
+              "py": "Běijīng"
+            },
+            "particle": {
+              "zh": "的",
+              "py": "de"
+            }
+          },
+          "end": "。",
+          "es": "No se fue de Pekín ayer."
+        }
+      ],
+      "question": [
+        {
+          "slots": {
+            "subject": {
+              "zh": "你",
+              "py": "nǐ"
+            },
+            "time": {
+              "zh": "是什么时候",
+              "py": "shì shénme shíhou"
+            },
+            "verb1": {
+              "zh": "来",
+              "py": "lái"
+            },
+            "object": {
+              "zh": "中国",
+              "py": "Zhōngguó"
+            },
+            "particle": {
+              "zh": "的",
+              "py": "de"
+            }
+          },
+          "end": "？",
+          "es": "¿Cuándo viniste a China?"
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "你",
+              "py": "nǐ"
+            },
+            "adverb": {
+              "zh": "是",
+              "py": "shì"
+            },
+            "verb1": {
+              "zh": "从哪儿",
+              "py": "cóng nǎr"
+            },
+            "verb2": {
+              "zh": "出发",
+              "py": "chūfā"
+            },
+            "particle": {
+              "zh": "的",
+              "py": "de"
+            }
+          },
+          "end": "？",
+          "es": "¿Desde dónde saliste?"
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "你",
+              "py": "nǐ"
+            },
+            "adverb": {
+              "zh": "是",
+              "py": "shì"
+            },
+            "verb1": {
+              "zh": "坐飞机",
+              "py": "zuò fēijī"
+            },
+            "verb2": {
+              "zh": "来",
+              "py": "lái"
+            },
+            "particle": {
+              "zh": "的吗",
+              "py": "de ma"
+            }
+          },
+          "end": "？",
+          "es": "¿Viniste en avión?"
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "你什么时候来中国了？",
+          "right": "你是什么时候来中国的？",
+          "why": "Si ya se sabe que vino y preguntas el detalle (cuándo), se usa 是…的, no 了."
+        },
+        {
+          "wrong": "我是来的去年。",
+          "right": "我是去年来的。",
+          "why": "El detalle va entre 是 y el verbo, nunca detrás del verbo."
+        },
+        {
+          "wrong": "我没是坐飞机来的。",
+          "right": "我不是坐飞机来的。",
+          "why": "La negativa de 是…的 es siempre 不是, aunque hable del pasado."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "En el control de pasaportes de Pudong",
+      "lines": [
+        {
+          "speaker": "工作人员",
+          "zh": "你好，请给我你的护照。",
+          "py": "Nǐ hǎo, qǐng gěi wǒ nǐde hùzhào.",
+          "es": "Hola, su pasaporte, por favor."
+        },
+        {
+          "speaker": "雨果",
+          "zh": "好的，这是我的护照和签证。",
+          "py": "Hǎode, zhè shì wǒde hùzhào hé qiānzhèng.",
+          "es": "Claro, aquí tiene mi pasaporte y mi visado."
+        },
+        {
+          "speaker": "工作人员",
+          "zh": "你是从哪儿来的？",
+          "py": "Nǐ shì cóng nǎr lái de?",
+          "es": "¿De dónde viene?"
+        },
+        {
+          "speaker": "雨果",
+          "zh": "我是从马德里来的。",
+          "py": "Wǒ shì cóng Mǎdélǐ lái de.",
+          "es": "Vengo de Madrid."
+        },
+        {
+          "speaker": "工作人员",
+          "zh": "你是什么时候出发的？",
+          "py": "Nǐ shì shénme shíhou chūfā de?",
+          "es": "¿Cuándo salió?"
+        },
+        {
+          "speaker": "雨果",
+          "zh": "我是昨天晚上出发的，飞机十点起飞。",
+          "py": "Wǒ shì zuótiān wǎnshang chūfā de, fēijī shí diǎn qǐfēi.",
+          "es": "Salí ayer por la noche; el avión despegó a las diez."
+        },
+        {
+          "speaker": "工作人员",
+          "zh": "你是一个人来的吗？",
+          "py": "Nǐ shì yí ge rén lái de ma?",
+          "es": "¿Ha venido solo?"
+        },
+        {
+          "speaker": "雨果",
+          "zh": "是的，我是一个人来的。我是来上海学习的。",
+          "py": "Shì de, wǒ shì yí ge rén lái de. Wǒ shì lái Shànghǎi xuéxí de.",
+          "es": "Sí, he venido solo. He venido a estudiar a Shanghái."
+        },
+        {
+          "speaker": "工作人员",
+          "zh": "好，欢迎你来中国！出口在那边。",
+          "py": "Hǎo, huānyíng nǐ lái Zhōngguó! Chūkǒu zài nàbian.",
+          "es": "Muy bien, ¡bienvenido a China! La salida está por allí."
+        },
+        {
+          "speaker": "雨果",
+          "zh": "谢谢！",
+          "py": "Xièxie!",
+          "es": "¡Gracias!"
+        }
+      ],
+      "notes": "En el control de entrada (海关 / 边检) te tratarán de 你 o de 您; contesta corto y con 是…的. 是的 es un «sí» educado y algo formal. 我是来上海学习的 usa 是…的 para destacar el **para qué** has venido."
+    },
+    {
+      "type": "exercises",
+      "count": 16,
+      "bank": [
+        "g-shi-de",
+        "u08",
+        "g-question-words"
+      ]
+    },
+    {
+      "type": "sentence-builder",
+      "items": [
+        {
+          "sentence": {
+            "slots": {
+              "subject": {
+                "zh": "我"
+              },
+              "time": {
+                "zh": "是去年九月"
+              },
+              "verb1": {
+                "zh": "来"
+              },
+              "particle": {
+                "zh": "的"
+              }
+            },
+            "end": "。",
+            "es": "Vine en septiembre del año pasado."
+          },
+          "distractors": [
+            "了"
+          ]
+        },
+        {
+          "sentence": {
+            "slots": {
+              "subject": {
+                "zh": "他"
+              },
+              "adverb": {
+                "zh": "是"
+              },
+              "verb1": {
+                "zh": "坐高铁"
+              },
+              "verb2": {
+                "zh": "来"
+              },
+              "particle": {
+                "zh": "的"
+              }
+            },
+            "end": "。",
+            "es": "Vino en tren de alta velocidad."
+          }
+        },
+        {
+          "sentence": {
+            "slots": {
+              "subject": {
+                "zh": "你"
+              },
+              "adverb": {
+                "zh": "是"
+              },
+              "verb1": {
+                "zh": "从哪儿"
+              },
+              "verb2": {
+                "zh": "出发"
+              },
+              "particle": {
+                "zh": "的"
+              }
+            },
+            "end": "？",
+            "es": "¿Desde dónde saliste?"
+          },
+          "distractors": [
+            "吗"
+          ]
+        },
+        {
+          "sentence": {
+            "slots": {
+              "subject": {
+                "zh": "我"
+              },
+              "adverb": {
+                "zh": "不是"
+              },
+              "with": {
+                "zh": "跟朋友一起"
+              },
+              "verb1": {
+                "zh": "来"
+              },
+              "particle": {
+                "zh": "的"
+              }
+            },
+            "end": "。",
+            "es": "No vine con amigos."
+          },
+          "distractors": [
+            "没"
+          ]
+        },
+        {
+          "sentence": {
+            "slots": {
+              "subject": {
+                "zh": "安娜"
+              },
+              "time": {
+                "zh": "是上个月"
+              },
+              "with": {
+                "zh": "跟她妈妈一起"
+              },
+              "verb1": {
+                "zh": "坐飞机"
+              },
+              "verb2": {
+                "zh": "来"
+              },
+              "object": {
+                "zh": "上海"
+              },
+              "particle": {
+                "zh": "的"
+              }
+            },
+            "end": "。",
+            "es": "Ana vino a Shanghái en avión con su madre el mes pasado."
+          }
+        }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        {
+          "zh": "我是去年九月来中国的。",
+          "py": "Wǒ shì qùnián jiǔyuè lái Zhōngguó de.",
+          "es": "Vine a China en septiembre del año pasado."
+        },
+        {
+          "zh": "我是从马德里出发的。",
+          "py": "Wǒ shì cóng Mǎdélǐ chūfā de.",
+          "es": "Salí de Madrid."
+        },
+        {
+          "zh": "我是坐飞机来的。",
+          "py": "Wǒ shì zuò fēijī lái de.",
+          "es": "Vine en avión."
+        },
+        {
+          "zh": "出口在那边。",
+          "py": "Chūkǒu zài nàbian.",
+          "es": "La salida está por allí."
+        }
+      ],
+      "respond": [
+        {
+          "q": {
+            "zh": "你是什么时候来中国的？",
+            "py": "Nǐ shì shénme shíhou lái Zhōngguó de?",
+            "es": "¿Cuándo viniste a China?"
+          },
+          "model": {
+            "zh": "我是去年九月来的。",
+            "py": "Wǒ shì qùnián jiǔyuè lái de.",
+            "es": "Vine en septiembre del año pasado."
+          }
+        },
+        {
+          "q": {
+            "zh": "你是怎么来的？",
+            "py": "Nǐ shì zěnme lái de?",
+            "es": "¿Cómo viniste?"
+          },
+          "model": {
+            "zh": "我是坐飞机来的。",
+            "py": "Wǒ shì zuò fēijī lái de.",
+            "es": "Vine en avión."
+          }
+        },
+        {
+          "q": {
+            "zh": "你是一个人来的吗？",
+            "py": "Nǐ shì yí ge rén lái de ma?",
+            "es": "¿Viniste solo?"
+          },
+          "model": {
+            "zh": "不是，我是跟安娜一起来的。",
+            "py": "Bù shì, wǒ shì gēn Ānnà yìqǐ lái de.",
+            "es": "No, vine con Ana."
+          }
+        }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "El viaje de Hugo",
+      "text": "雨果是西班牙人，他是去年九月来中国的。他是从马德里出发的，是一个人来的。那天早上，他的妈妈和爸爸送他去机场。安检的时候，人很多，他等了很长时间。飞机是上午十一点起飞的，是坐了十三个小时到上海的。在海关，工作人员看了他的护照和签证，问他：“你是来做什么的？”雨果说：“我是来学习的。”他拿了行李箱，走到出口。安娜在出口等他。他们是在马德里认识的，安娜是上个月来的。雨果说：“我的路上很顺利！”",
+      "es": "Hugo es español: vino a China en septiembre del año pasado. Salió de Madrid y vino solo. Aquella mañana, su madre y su padre lo llevaron al aeropuerto. En el control de seguridad había mucha gente y esperó mucho rato. El avión despegó a las once de la mañana y llegó a Shanghái tras trece horas de vuelo. En la aduana, el empleado miró su pasaporte y su visado y le preguntó: «¿A qué viene?». Hugo dijo: «Vengo a estudiar». Cogió la maleta y fue hacia la salida. Ana lo esperaba en la salida. Se conocieron en Madrid; Ana llegó el mes pasado. Hugo dijo: «¡El viaje ha ido muy bien!».",
+      "questions": [
+        {
+          "q": "¿Cuándo vino Hugo a China?",
+          "options": [
+            "去年九月",
+            "上个月",
+            "昨天"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "¿Con quién vino?",
+          "options": [
+            "一个人",
+            "跟安娜一起",
+            "跟妈妈一起"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "¿Dónde se conocieron Hugo y Ana?",
+          "options": [
+            "在马德里",
+            "在上海",
+            "在机场"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "¿Dónde esperaba Ana?",
+          "options": [
+            "在出口",
+            "在入口",
+            "在海关"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "type": "notes-growth"
+    }
+  ]
+}

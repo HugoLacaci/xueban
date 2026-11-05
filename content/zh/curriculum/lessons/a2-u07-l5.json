@@ -1,0 +1,135 @@
+{
+  "id": "a2-u07-l5",
+  "title": "Repaso: noticias, series y mis aficiones",
+  "zh": "你的爱好是什么？",
+  "goal": "Hablar de tus aficiones y de lo que ves y lees (noticias, series, partidos) usando todo lo de la unidad: 得, 比 + V得, 一边…一边…, 又…又…, 的 / 地 / 得 y los verbos separables.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "新闻", "pinyin": "xīnwén", "es": "noticias", "note": "看新闻 = ver / leer las noticias. 一个新闻 = una noticia." },
+    { "hanzi": "报纸", "pinyin": "bàozhǐ", "es": "periódico", "note": "Clasificador 份 o 张: 一份报纸." },
+    { "hanzi": "日报", "pinyin": "rìbào", "es": "diario (periódico de la mañana)", "note": "Aparece en los nombres: 人民日报, 上海日报." },
+    { "hanzi": "晚报", "pinyin": "wǎnbào", "es": "periódico de la tarde", "note": "Muy leído por la gente mayor: 新民晚报 es el de Shanghái." },
+    { "hanzi": "节目", "pinyin": "jiémù", "es": "programa (de tele, de radio); número (de un espectáculo)", "note": "体育节目 = programa de deportes." },
+    { "hanzi": "电视剧", "pinyin": "diànshìjù", "es": "serie de televisión" },
+    { "hanzi": "影片", "pinyin": "yǐngpiàn", "es": "película (más formal que 电影)", "note": "Se ve en carteles y críticas: 中国影片, 新影片." },
+    { "hanzi": "场", "pinyin": "chǎng", "es": "(clasificador de partidos, conciertos, películas)", "note": "一场比赛, 一场演唱会, 一场电影." }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "我一边吃早饭一边看新闻。", "py": "Wǒ yìbiān chī zǎofàn yìbiān kàn xīnwén.", "es": "Veo las noticias mientras desayuno." },
+        { "zh": "昨天我们看了一场足球比赛。", "py": "Zuótiān wǒmen kàn le yì chǎng zúqiú bǐsài.", "es": "Ayer vimos un partido de fútbol." },
+        { "zh": "这个电视剧又长又有意思。", "py": "Zhège diànshìjù yòu cháng yòu yǒu yìsi.", "es": "Esta serie es larga, pero muy interesante." }
+      ]
+    },
+    { "type": "vocab", "title": "Lo que vemos y leemos", "words": ["新闻", "报纸", "日报", "晚报", "节目", "电视剧", "影片", "场"] },
+    {
+      "type": "phonetics-drill",
+      "title": "zh, j y r: 报纸, 节目, 日报, 电视剧",
+      "markdown": "Tres sonidos que se confunden mucho en esta lección:\n\n- **zh**: lengua doblada atrás, **sin** aire: 报纸 *bàozhǐ*.\n- **j**: lengua **plana** tras los dientes de abajo, siempre con *i* o *ü*: 节目 *jiémù*, 电视剧 *diànshìjù*.\n- **r**: lengua doblada como para *sh*, pero **con voz** (algo entre la «y» de «yo» rioplatense y la «r» inglesa): 日报 *rìbào*.\n\n**Entonación**: las preguntas con interrogativo (怎么样, 什么) **no suben al final** como en español; la pregunta ya está en la palabra. Los tonos de cada sílaba mandan.",
+      "items": [
+        { "audio": "报纸", "options": ["bàozhǐ", "bàozǐ", "bàojǐ"], "answer": 0, "explain": "zh: lengua atrás, sin aire." },
+        { "audio": "节目", "options": ["jiémù", "qiémù", "jiěmù"], "answer": 0, "explain": "j sin aire; 节 en segundo tono." },
+        { "audio": "日报", "options": ["rìbào", "lìbào", "yìbào"], "answer": 0, "explain": "r con la lengua doblada y vibración." },
+        { "audio": "电视剧", "options": ["diànshìjù", "diànsìjù", "diànshìzhù"], "answer": 0, "explain": "sh en 视 y j (con ü escrita u) en 剧." },
+        { "audio": "你汉语说得怎么样？", "prompt": "¿Sube la voz al final?", "options": ["No: la pregunta está en 怎么样; cada sílaba conserva su tono", "Sí, siempre sube como en español"], "answer": 0 }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["闻", "报"],
+      "mnemonics": {
+        "闻": "门 (puerta) + 耳 (oreja): la oreja pegada a la puerta para enterarse de lo que pasa → 新闻, las noticias.",
+        "报": "扌 (mano) a la izquierda: algo que se entrega en mano para avisar → 报纸, el papel que te trae las noticias."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "Repaso de la unidad: todos los «cómo»",
+      "markdown": "Lo que has aprendido en esta unidad, de un vistazo:\n\n| Estructura | Ejemplo | Huecos |\n|---|---|---|\n| V + 得 + grado | 他看新闻看得很认真 | *Verbo 1* + *Verbo 2* (V得) + *Complemento* |\n| 比 + V得 | 大卫网球比我打得好多了 | 比我 en *Adverbios* |\n| Separables | 跑半个小时步 | verbo en *Verbo*, el resto en *Objeto* |\n| 一边…一边… | 一边吃早饭一边看报纸 | *Verbo 1* + *Verbo 2* |\n| 又…又… | 又长又有意思 | *Verbo 1* + *Verbo 2* |\n| 的 / 地 | 唱歌的节目, 高高兴兴地 | dentro de *Sujeto/Objeto*; *Adverbios* |\n\nY el clasificador nuevo: **场** para lo que «ocurre» en un lugar y dura un rato: 一**场**比赛, 一**场**演唱会, 一**场**电影.",
+      "focus": ["verb1", "verb2", "complement"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "我爸爸", "py": "wǒ bàba" }, "time": { "zh": "每天早上", "py": "měi tiān zǎoshang" }, "adverb": { "zh": "都", "py": "dōu" }, "verb1": { "zh": "一边吃早饭", "py": "yìbiān chī zǎofàn" }, "verb2": { "zh": "一边看报纸", "py": "yìbiān kàn bàozhǐ" } }, "end": "。", "es": "Mi padre lee el periódico todas las mañanas mientras desayuna.", "esOrder": [{ "text": "Mi padre", "slot": "subject" }, { "text": "lee el periódico", "slot": "verb2" }, { "text": "todas las mañanas", "slot": "time" }, { "text": "mientras desayuna", "slot": "verb1" }] },
+        { "slots": { "subject": { "zh": "这个电视剧", "py": "zhège diànshìjù" }, "verb1": { "zh": "又好看", "py": "yòu hǎokàn" }, "verb2": { "zh": "又有意思", "py": "yòu yǒu yìsi" } }, "end": "。", "es": "Esta serie es bonita y además interesante." },
+        { "slots": { "subject": { "zh": "他", "py": "tā" }, "verb1": { "zh": "看新闻", "py": "kàn xīnwén" }, "verb2": { "zh": "看得", "py": "kàn de" }, "complement": { "zh": "很认真", "py": "hěn rènzhēn" } }, "end": "。", "es": "Ve las noticias con mucha atención." },
+        { "slots": { "time0": { "zh": "昨天", "py": "zuótiān" }, "subject": { "zh": "我们", "py": "wǒmen" }, "verb1": { "zh": "看了", "py": "kàn le" }, "object": { "zh": "一场足球比赛", "py": "yì chǎng zúqiú bǐsài" } }, "end": "。", "es": "Ayer vimos un partido de fútbol." },
+        { "slots": { "subject": { "zh": "大卫网球", "py": "Dàwèi wǎngqiú" }, "adverb": { "zh": "比我", "py": "bǐ wǒ" }, "verb1": { "zh": "打得", "py": "dǎ de" }, "complement": { "zh": "好多了", "py": "hǎo duō le" } }, "end": "。", "es": "David juega al tenis mucho mejor que yo." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "不常", "py": "bù cháng" }, "verb1": { "zh": "看", "py": "kàn" }, "object": { "zh": "电视剧", "py": "diànshìjù" } }, "end": "。", "es": "No veo series muy a menudo." },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "verb1": { "zh": "唱得", "py": "chàng de" }, "complement": { "zh": "没有她好", "py": "méiyǒu tā hǎo" } }, "end": "。", "es": "No canto tan bien como ella." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "time": { "zh": "晚上", "py": "wǎnshang" }, "adverb": { "zh": "常常", "py": "chángcháng" }, "verb1": { "zh": "看", "py": "kàn" }, "object": { "zh": "什么节目", "py": "shénme jiémù" } }, "end": "？", "es": "¿Qué programas sueles ver por la noche?" },
+        { "slots": { "subject": { "zh": "这个影片", "py": "zhège yǐngpiàn" }, "verb1": { "zh": "拍得", "py": "pāi de" }, "complement": { "zh": "好不好", "py": "hǎo bu hǎo" } }, "end": "？", "es": "¿Está bien hecha esta película?" }
+      ],
+      "mistakes": [
+        { "wrong": "他跑步很快。", "right": "他跑步跑得很快。 / 他跑得很快。", "why": "Para decir cómo hace algo alguien, hace falta V + 得." },
+        { "wrong": "我一边看报纸喝茶。", "right": "我一边看报纸一边喝茶。", "why": "Cada verbo lleva su 一边." },
+        { "wrong": "我们看了一个比赛。", "right": "我们看了一场比赛。", "why": "Los partidos, conciertos y sesiones de cine se cuentan con 场." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "La noticia del periódico de la tarde",
+      "lines": [
+        { "speaker": "小李", "zh": "雨果，你看今天的晚报了吗？", "py": "Yǔguǒ, nǐ kàn jīntiān de wǎnbào le ma?", "es": "Hugo, ¿has visto el periódico de esta tarde?" },
+        { "speaker": "雨果", "zh": "没看。我一般在手机上看新闻，不看报纸。", "py": "Méi kàn. Wǒ yìbān zài shǒujī shang kàn xīnwén, bú kàn bàozhǐ.", "es": "No. Yo suelo leer las noticias en el móvil, no leo periódicos." },
+        { "speaker": "小李", "zh": "我爷爷每天都一边喝茶一边看日报和晚报。今天晚报上有一个新闻：星期六体育场有一场足球比赛！", "py": "Wǒ yéye měi tiān dōu yìbiān hē chá yìbiān kàn rìbào hé wǎnbào. Jīntiān wǎnbào shang yǒu yí ge xīnwén: xīngqīliù tǐyùchǎng yǒu yì chǎng zúqiú bǐsài!", "es": "Mi abuelo lee todos los días el diario y el de la tarde mientras se toma el té. Hoy el de la tarde trae una noticia: ¡el sábado hay partido de fútbol en el estadio!" },
+        { "speaker": "雨果", "zh": "太好了！我是球迷。我们一起去吧！", "py": "Tài hǎo le! Wǒ shì qiúmí. Wǒmen yìqǐ qù ba!", "es": "¡Genial! Soy muy futbolero. ¡Vamos juntos!" },
+        { "speaker": "小李", "zh": "好。比赛是晚上七点。你晚上常常做什么？", "py": "Hǎo. Bǐsài shì wǎnshang qī diǎn. Nǐ wǎnshang chángcháng zuò shénme?", "es": "Vale. El partido es a las siete de la tarde. ¿Qué sueles hacer por las noches?" },
+        { "speaker": "雨果", "zh": "我常常看电视剧，有时候看一些中国影片。中国的电视剧又长又有意思。", "py": "Wǒ chángcháng kàn diànshìjù, yǒu shíhou kàn yìxiē Zhōngguó yǐngpiàn. Zhōngguó de diànshìjù yòu cháng yòu yǒu yìsi.", "es": "Suelo ver series, y a veces películas chinas. Las series chinas son larguísimas, pero muy interesantes." },
+        { "speaker": "小李", "zh": "你汉语说得这么好，是看电视剧学的吧？", "py": "Nǐ Hànyǔ shuō de zhème hǎo, shì kàn diànshìjù xué de ba?", "es": "Hablas tan bien chino… ¿lo has aprendido viendo series, no?" },
+        { "speaker": "雨果", "zh": "是啊！我一边看一边学生词。", "py": "Shì a! Wǒ yìbiān kàn yìbiān xué shēngcí.", "es": "¡Pues sí! Voy aprendiendo palabras nuevas mientras las veo." },
+        { "speaker": "小李", "zh": "你最喜欢什么节目？", "py": "Nǐ zuì xǐhuan shénme jiémù?", "es": "¿Cuál es tu programa favorito?" },
+        { "speaker": "雨果", "zh": "我最喜欢唱歌的节目。有的人唱得比明星还好！", "py": "Wǒ zuì xǐhuan chànggē de jiémù. Yǒude rén chàng de bǐ míngxīng hái hǎo!", "es": "Los programas de cantantes. ¡Hay gente que canta mejor que los famosos!" },
+        { "speaker": "小李", "zh": "那星期六我们先看比赛，晚上再一起看节目。", "py": "Nà xīngqīliù wǒmen xiān kàn bǐsài, wǎnshang zài yìqǐ kàn jiémù.", "es": "Pues el sábado primero vemos el partido y luego, por la noche, vemos juntos el programa." }
+      ],
+      "notes": "Los «periódicos de la tarde» (晚报) siguen teniendo lectores fieles entre los mayores; los jóvenes leen las noticias en 微信 y 抖音. Los programas de talentos musicales (唱歌的节目) son de lo más visto en la tele china."
+    },
+    { "type": "exercises", "count": 20, "bank": ["g-complements", "g-de", "g-reduplication", "u12"] },
+    {
+      "type": "sentence-builder",
+      "title": "Construye la frase completa",
+      "items": [
+        { "sentence": { "slots": { "time0": { "zh": "每天早上" }, "subject": { "zh": "我爷爷" }, "adverb": { "zh": "都" }, "place": { "zh": "在家里" }, "verb1": { "zh": "一边喝茶" }, "verb2": { "zh": "一边看报纸" } }, "end": "。", "es": "Todas las mañanas mi abuelo lee el periódico en casa mientras se toma el té." }, "distractors": ["一起"] },
+        { "sentence": { "slots": { "time0": { "zh": "上个星期六" }, "subject": { "zh": "我们" }, "with": { "zh": "跟大卫一起" }, "place": { "zh": "在体育场" }, "verb1": { "zh": "看了" }, "object": { "zh": "一场足球比赛" } }, "end": "。", "es": "El sábado pasado vimos un partido de fútbol con David en el estadio." }, "distractors": ["一个"] },
+        { "sentence": { "slots": { "subject": { "zh": "安娜汉语" }, "adverb": { "zh": "比我" }, "verb1": { "zh": "说得" }, "complement": { "zh": "流利多了" } }, "end": "。", "es": "Ana habla chino con mucha más soltura que yo." }, "distractors": ["很"] },
+        { "sentence": { "slots": { "subject": { "zh": "那个唱歌的女孩儿" }, "verb1": { "zh": "跳舞" }, "verb2": { "zh": "跳得" }, "complement": { "zh": "非常漂亮" } }, "end": "。", "es": "La chica que canta baila precioso." }, "distractors": ["地"] },
+        { "sentence": { "slots": { "time0": { "zh": "这个周末" }, "subject": { "zh": "我" }, "aux": { "zh": "想" }, "with": { "zh": "跟小李一起" }, "verb1": { "zh": "去" }, "verb2": { "zh": "游" }, "object": { "zh": "一个小时泳" } }, "end": "。", "es": "Este fin de semana quiero ir a nadar una hora con Xiao Li." }, "distractors": ["游泳"] },
+        { "sentence": { "slots": { "subject": { "zh": "大家" }, "adverb": { "zh": "都高高兴兴地" }, "verb1": { "zh": "看完了" }, "object": { "zh": "那场演唱会" } }, "end": "。", "es": "Todos vieron el concierto entero, encantados." }, "distractors": ["的"] },
+        { "sentence": { "slots": { "subject": { "zh": "大卫" }, "time": { "zh": "每天" }, "aux": { "zh": "要" }, "verb1": { "zh": "去健身房" }, "verb2": { "zh": "跑" }, "object": { "zh": "半个小时步" } }, "end": "。", "es": "David tiene que ir cada día al gimnasio a correr media hora." } }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "我一边吃早饭一边看新闻。", "py": "Wǒ yìbiān chī zǎofàn yìbiān kàn xīnwén.", "es": "Veo las noticias mientras desayuno." },
+        { "zh": "他汉语说得比我流利多了。", "py": "Tā Hànyǔ shuō de bǐ wǒ liúlì duō le.", "es": "Habla chino con mucha más soltura que yo." },
+        { "zh": "昨天我们看了一场足球比赛。", "py": "Zuótiān wǒmen kàn le yì chǎng zúqiú bǐsài.", "es": "Ayer vimos un partido de fútbol." },
+        { "zh": "这个电视剧又长又有意思。", "py": "Zhège diànshìjù yòu cháng yòu yǒu yìsi.", "es": "Esta serie es larga, pero muy interesante." }
+      ],
+      "respond": [
+        { "q": { "zh": "你的爱好是什么？", "py": "Nǐ de àihào shì shénme?", "es": "¿Cuáles son tus aficiones?" }, "model": { "zh": "我的爱好是跑步、游泳什么的。我游得还可以。", "py": "Wǒ de àihào shì pǎobù, yóuyǒng shénmede. Wǒ yóu de hái kěyǐ.", "es": "Me gusta correr, nadar y cosas así. Nado bastante bien." } },
+        { "q": { "zh": "你一般怎么看新闻？", "py": "Nǐ yìbān zěnme kàn xīnwén?", "es": "¿Cómo sueles seguir las noticias?" }, "model": { "zh": "我一般一边坐地铁一边在手机上看新闻。", "py": "Wǒ yìbān yìbiān zuò dìtiě yìbiān zài shǒujī shang kàn xīnwén.", "es": "Normalmente las leo en el móvil mientras voy en metro." } },
+        { "q": { "zh": "你最喜欢什么电视节目？", "py": "Nǐ zuì xǐhuan shénme diànshì jiémù?", "es": "¿Cuál es tu programa de televisión favorito?" }, "model": { "zh": "我最喜欢体育节目，特别是足球比赛。", "py": "Wǒ zuì xǐhuan tǐyù jiémù, tèbié shì zúqiú bǐsài.", "es": "Los programas de deportes, sobre todo los partidos de fútbol." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Mis aficiones (redacción de Hugo)",
+      "text": "我来上海半年了。我的爱好很多：跑步、游泳、看电影什么的。我每天早上都一边跑步一边听音乐。我跑得没有大卫快，我游泳游得比他好。周末我常常跟朋友一起去体育场看足球比赛，我是一个大球迷！晚上我喜欢看中国电视剧和影片，它们又有意思又能帮我学汉语。小李的爷爷每天都看日报和晚报，我一般在手机上看新闻。王老师说我汉语说得很不错。",
+      "es": "Llevo medio año en Shanghái. Tengo muchas aficiones: correr, nadar, ver películas y cosas así. Todas las mañanas corro escuchando música. No corro tan rápido como David, pero nado mejor que él. Los fines de semana voy mucho al estadio con mis amigos a ver partidos de fútbol: ¡soy muy futbolero! Por las noches me gusta ver series y películas chinas: son interesantes y además me ayudan a aprender chino. El abuelo de Xiao Li lee todos los días el diario y el periódico de la tarde; yo suelo leer las noticias en el móvil. La profesora Wang dice que hablo chino bastante bien.",
+      "questions": [
+        { "q": "¿A quién gana Hugo nadando?", "options": ["大卫", "小李", "安娜"], "answer": 0 },
+        { "q": "¿Cómo sigue Hugo las noticias?", "options": ["在手机上", "看报纸", "看电视"], "answer": 0 },
+        { "q": "¿Qué le ayuda a aprender chino?", "options": ["电视剧和影片", "报纸", "足球比赛"], "answer": 0 },
+        { "q": "¿Cuánto tiempo lleva Hugo en Shanghái?", "options": ["半年", "一年", "两个月"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

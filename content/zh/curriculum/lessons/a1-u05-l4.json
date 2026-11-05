@@ -1,0 +1,130 @@
+{
+  "id": "a1-u05-l4",
+  "title": "Repaso y lectura: el calendario de Hugo",
+  "zh": "下个月",
+  "goal": "Hablar de la semana y el mes que vienen o que pasaron (上周, 下个月, 上次, 下次) y leer un calendario entero en chino.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "次", "pinyin": "cì", "es": "vez", "note": "Clasificador de veces: 一次, 两次. 第一次 = la primera vez." },
+    { "hanzi": "几次", "pinyin": "jǐ cì", "es": "¿cuántas veces?" },
+    { "hanzi": "上次", "pinyin": "shàng cì", "es": "la última vez, la vez anterior", "note": "上 = lo de antes; 下 = lo siguiente." },
+    { "hanzi": "下次", "pinyin": "xià cì", "es": "la próxima vez" },
+    { "hanzi": "上周", "pinyin": "shàngzhōu", "es": "la semana pasada", "note": "También 上个星期." },
+    { "hanzi": "下周", "pinyin": "xiàzhōu", "es": "la semana que viene", "note": "También 下个星期. 下周三 = el miércoles que viene." },
+    { "hanzi": "上个月", "pinyin": "shàng ge yuè", "es": "el mes pasado" },
+    { "hanzi": "下个月", "pinyin": "xià ge yuè", "es": "el mes que viene" }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "我下个月去西安。", "py": "Wǒ xià ge yuè qù Xī'ān.", "es": "El mes que viene voy a Xi'an." },
+        { "zh": "这是第二次，上次是去年。", "py": "Zhè shì dì-èr cì, shàng cì shì qùnián.", "es": "Es la segunda vez; la anterior fue el año pasado." },
+        { "zh": "下次我们一起去！", "py": "Xià cì wǒmen yìqǐ qù!", "es": "¡La próxima vez vamos juntos!" }
+      ]
+    },
+    { "type": "vocab", "title": "Antes y después: 上 y 下", "words": ["次", "几次", "上次", "下次", "上周", "下周", "上个月", "下个月"] },
+    {
+      "type": "phonetics-drill",
+      "title": "次 cì, 四 sì y 字 zì",
+      "markdown": "Tres sílabas con la lengua **detrás de los dientes de abajo** y la «i» que no es «i» (un zumbido):\n\n- **四 sì**: una «s» española alargada.\n- **字 zì**: una «ds» suave, **sin aire**.\n- **次 cì**: una «ts» con un **soplo de aire** fuerte (aspirada). Pon la mano delante: con 次 la notas; con 字, casi nada.\n\nLos tres son 4.º tono. No los confundas con *chi / zhi / shi*, que doblan la lengua hacia atrás.",
+      "items": [
+        { "audio": "次", "options": ["zì", "cì", "sì"], "answer": 1, "explain": "c = ts con aire." },
+        { "audio": "字", "options": ["zì", "cì", "zhì"], "answer": 0, "explain": "z = ds sin aire, lengua delante." },
+        { "audio": "四次", "options": ["sì cì", "shí cì", "sì zì"], "answer": 0, "explain": "四 (s) + 次 (c): cuatro veces." },
+        { "audio": "上次", "options": ["shàng zì", "shàng cì", "sàng cì"], "answer": 1, "explain": "上 con sh (lengua atrás); 次 con c (lengua delante y aire)." },
+        { "audio": "下个月", "prompt": "¿Qué significa?", "options": ["el mes pasado", "este mes", "el mes que viene"], "answer": 2, "explain": "下 = lo siguiente." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["次"],
+      "mnemonics": {
+        "次": "冫 (dos gotas) + 欠 (alguien con la boca abierta, bostezando): el que va detrás en la fila espera bostezando → «el siguiente», «otra vez»."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "Repaso: todo el tiempo, delante del verbo",
+      "markdown": "Esta unidad ha estrenado el hueco del **tiempo** (S + T + V). Todo lo que dice *cuándo* entra ahí:\n\n| Antes | Ahora | Después |\n|---|---|---|\n| 昨天 · 前天 | 今天 | 明天 · 后天 |\n| 上周 / 上个星期 | 这个星期 | 下周 / 下个星期 |\n| 上个月 | 这个月 | 下个月 |\n| 去年 · 前年 | 今年 | 明年 |\n| 上次 | — | 下次 |\n\n- **上** = lo anterior, **下** = lo siguiente (como si el calendario se leyera de arriba abajo).\n- Con 星期 y 月 se pone **个**: 上个月, 下个星期. Con 周, no: 上周.\n- Varias palabras de tiempo juntas, **de grande a pequeño**: 下周三, 二〇二七年二月六号星期六.\n- El tiempo va **antes** de 不 y de los demás adverbios: 我下个月不去.",
+      "focus": ["time"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "time": { "zh": "下周", "py": "xiàzhōu" }, "verb1": { "zh": "去西安", "py": "qù Xī'ān" } }, "end": "。", "es": "Voy a Xi'an la semana que viene.", "esOrder": [{ "text": "(Yo)", "slot": "subject" }, { "text": "voy a Xi'an", "slot": "verb1" }, { "text": "la semana que viene", "slot": "time" }] },
+        { "slots": { "subject": { "zh": "安娜", "py": "Ānnà" }, "time": { "zh": "下个月", "py": "xià ge yuè" }, "verb1": { "zh": "去北京", "py": "qù Běijīng" } }, "end": "。", "es": "Anna va a Pekín el mes que viene." },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "time": { "zh": "下次", "py": "xià cì" }, "verb1": { "zh": "说", "py": "shuō" }, "object": { "zh": "汉语", "py": "Hànyǔ" } }, "end": "。", "es": "La próxima vez hablo en chino." },
+        { "slots": { "subject": { "zh": "我们", "py": "wǒmen" }, "time": { "zh": "下周三", "py": "xiàzhōusān" }, "verb1": { "zh": "放假", "py": "fàngjià" } }, "end": "。", "es": "El miércoles que viene tenemos fiesta." },
+        { "slots": { "subject": { "zh": "上次", "py": "shàng cì" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "去年十月", "py": "qùnián shíyuè" } }, "end": "。", "es": "La última vez fue en octubre del año pasado." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "time": { "zh": "下个月", "py": "xià ge yuè" }, "adverb": { "zh": "不", "py": "bú" }, "verb1": { "zh": "去北京", "py": "qù Běijīng" } }, "end": "。", "es": "El mes que viene no voy a Pekín." },
+        { "slots": { "subject": { "zh": "雨果", "py": "Yǔguǒ" }, "time": { "zh": "这个周末", "py": "zhège zhōumò" }, "adverb": { "zh": "不", "py": "bú" }, "verb1": { "zh": "去朋友家", "py": "qù péngyou jiā" } }, "end": "。", "es": "Hugo no va a casa de su amigo este fin de semana." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "time": { "zh": "下周几", "py": "xiàzhōu jǐ" }, "verb1": { "zh": "去西安", "py": "qù Xī'ān" } }, "end": "？", "es": "¿Qué día de la semana que viene vas a Xi'an?" },
+        { "slots": { "subject": { "zh": "你们", "py": "nǐmen" }, "time": { "zh": "下个月几号", "py": "xià ge yuè jǐ hào" }, "verb1": { "zh": "放假", "py": "fàngjià" } }, "end": "？", "es": "¿Qué día del mes que viene empezáis las vacaciones?" }
+      ],
+      "mistakes": [
+        { "wrong": "我去西安下周。", "right": "我下周去西安。", "why": "El tiempo va delante del verbo." },
+        { "wrong": "星期六下个", "right": "下个星期六", "why": "上 / 下 van delante: 下个星期六, 下周六." },
+        { "wrong": "上个周", "right": "上周 / 上个星期", "why": "周 no lleva 个; 星期 y 月, sí." },
+        { "wrong": "我不下个月去。", "right": "我下个月不去。", "why": "El tiempo va antes que 不." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Otra vez a Xi'an",
+      "lines": [
+        { "speaker": "小李", "zh": "雨果，你下周去西安吗？", "py": "Yǔguǒ, nǐ xiàzhōu qù Xī'ān ma?", "es": "Hugo, ¿vas a Xi'an la semana que viene?" },
+        { "speaker": "雨果", "zh": "不去。我下个月去，十二月十二号。", "py": "Bú qù. Wǒ xià ge yuè qù, shí'èryuè shí'èr hào.", "es": "No. Voy el mes que viene, el 12 de diciembre." },
+        { "speaker": "小李", "zh": "十二月十二号是星期几？", "py": "Shí'èryuè shí'èr hào shì xīngqī jǐ?", "es": "¿Qué día de la semana es el 12 de diciembre?" },
+        { "speaker": "雨果", "zh": "是星期六。", "py": "Shì xīngqīliù.", "es": "Sábado." },
+        { "speaker": "小李", "zh": "这是你第一次去西安吗？", "py": "Zhè shì nǐ dì-yī cì qù Xī'ān ma?", "es": "¿Es la primera vez que vas a Xi'an?" },
+        { "speaker": "雨果", "zh": "不是，这是第二次。上次是去年。", "py": "Bú shì, zhè shì dì-èr cì. Shàng cì shì qùnián.", "es": "No, es la segunda. La anterior fue el año pasado." },
+        { "speaker": "小李", "zh": "下次我也去！", "py": "Xià cì wǒ yě qù!", "es": "¡La próxima vez voy yo también!" },
+        { "speaker": "雨果", "zh": "好，下次我们一起去！", "py": "Hǎo, xià cì wǒmen yìqǐ qù!", "es": "¡Vale, la próxima vamos juntos!" }
+      ],
+      "notes": "第一次 (la primera vez) junta dos cosas de la unidad 4 y de esta: 第 + número + 次. En las frases de Xiao Li y Hugo, 下次 va delante del sujeto: es otra posición del tiempo que verás en la unidad 6."
+    },
+    { "type": "exercises", "count": 16, "bank": ["g-dates-time", "g-word-order", "u04"] },
+    {
+      "type": "sentence-builder",
+      "title": "Construye la frase completa",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "二〇二七年的春节" }, "verb1": { "zh": "是" }, "object": { "zh": "二月六号星期六" } }, "end": "。", "es": "El Año Nuevo chino de 2027 es el sábado 6 de febrero." }, "distractors": ["星期六二月六号"] },
+        { "sentence": { "slots": { "subject": { "zh": "我和安娜" }, "time": { "zh": "下周六" }, "adverb": { "zh": "都" }, "verb1": { "zh": "去朋友家" } }, "end": "。", "es": "Anna y yo vamos los dos a casa de un amigo el sábado que viene." }, "distractors": ["下个周"] },
+        { "sentence": { "slots": { "subject": { "zh": "我的中国朋友" }, "time": { "zh": "十二月十二号星期六" }, "adverb": { "zh": "也" }, "verb1": { "zh": "去西安" } }, "end": "。", "es": "Mi amigo chino también va a Xi'an el sábado 12 de diciembre." } },
+        { "sentence": { "slots": { "subject": { "zh": "我们中文班的同学" }, "time": { "zh": "下个月二十五号" }, "adverb": { "zh": "不" }, "verb1": { "zh": "放假" } }, "end": "。", "es": "Los compañeros de nuestra clase de chino no tienen fiesta el 25 del mes que viene." }, "distractors": ["没"] },
+        { "sentence": { "slots": { "subject": { "zh": "小李的妹妹" }, "time": { "zh": "明年九月" }, "verb1": { "zh": "去北京" } }, "end": "。", "es": "La hermana pequeña de Xiao Li va a Pekín en septiembre del año que viene." }, "distractors": ["九月明年"] },
+        { "sentence": { "slots": { "subject": { "zh": "你的西班牙同学" }, "time": { "zh": "下次" }, "adverb": { "zh": "也" }, "verb1": { "zh": "说" }, "object": { "zh": "汉语" }, "particle": { "zh": "吗" } }, "end": "？", "es": "¿Tus compañeros españoles también hablarán en chino la próxima vez?" }, "distractors": ["几"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "上周，这个星期，下周。", "py": "Shàngzhōu, zhège xīngqī, xiàzhōu.", "es": "La semana pasada, esta semana, la que viene." },
+        { "zh": "我下个月去西安。", "py": "Wǒ xià ge yuè qù Xī'ān.", "es": "El mes que viene voy a Xi'an." },
+        { "zh": "这是第二次。", "py": "Zhè shì dì-èr cì.", "es": "Es la segunda vez." },
+        { "zh": "今天是二〇二六年十一月四号，星期三。", "py": "Jīntiān shì èr líng èr liù nián shíyīyuè sì hào, xīngqīsān.", "es": "Hoy es miércoles, 4 de noviembre de 2026." }
+      ],
+      "respond": [
+        { "q": { "zh": "你下个月去哪儿？", "py": "Nǐ xià ge yuè qù nǎr?", "es": "¿Adónde vas el mes que viene?" }, "model": { "zh": "我下个月去北京。", "py": "Wǒ xià ge yuè qù Běijīng.", "es": "El mes que viene voy a Pekín." } },
+        { "q": { "zh": "今天几月几号星期几？", "py": "Jīntiān jǐ yuè jǐ hào xīngqī jǐ?", "es": "¿Qué fecha es hoy y qué día de la semana?" }, "model": { "zh": "今天十一月四号，星期三。", "py": "Jīntiān shíyīyuè sì hào, xīngqīsān.", "es": "Hoy es miércoles, 4 de noviembre." } },
+        { "q": { "zh": "这是你第一次去中国吗？", "py": "Zhè shì nǐ dì-yī cì qù Zhōngguó ma?", "es": "¿Es la primera vez que vas a China?" }, "model": { "zh": "对，这是第一次。", "py": "Duì, zhè shì dì-yī cì.", "es": "Sí, es la primera vez." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "El diciembre de Hugo",
+      "text": "今天是二〇二六年十一月四号，星期三。雨果的十二月：十二月十二号星期六，他去西安，这是第二次。十二月二十五号星期五，他看西班牙朋友。一月一号星期五是新年，大家都放假。明年二月六号是春节，雨果和小李一起去北京。",
+      "es": "Hoy es miércoles, 4 de noviembre de 2026. El diciembre de Hugo: el sábado 12 de diciembre va a Xi'an (es la segunda vez). El viernes 25 de diciembre ve a sus amigos españoles. El viernes 1 de enero es Año Nuevo y todo el mundo tiene fiesta. El 6 de febrero del año que viene es el Año Nuevo chino: Hugo y Xiao Li van juntos a Pekín.",
+      "questions": [
+        { "q": "¿Qué día de la semana va Hugo a Xi'an?", "options": ["Viernes", "Sábado", "Miércoles"], "answer": 1 },
+        { "q": "¿Cuántas veces ha ido Hugo a Xi'an con este viaje?", "options": ["Una", "Tres", "Dos"], "answer": 2 },
+        { "q": "¿Qué hacen Hugo y Xiao Li en el Año Nuevo chino?", "options": ["Van a Pekín", "Van a Xi'an", "Ven a amigos españoles"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

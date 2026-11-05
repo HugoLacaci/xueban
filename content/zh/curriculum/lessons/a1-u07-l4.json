@@ -1,0 +1,841 @@
+{
+  "id": "a1-u07-l4",
+  "title": "Un día entero: lectura y repaso",
+  "zh": "我的一天",
+  "goal": "Contar un día completo de la mañana a la noche con 先…然后…最后 y montar frases largas con dos verbos.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    {
+      "hanzi": "起来",
+      "pinyin": "qǐlai",
+      "es": "levantarse (incorporarse)",
+      "note": "你起来了吗？ = ¿ya estás levantado? 来 en tono neutro."
+    },
+    {
+      "hanzi": "休息",
+      "pinyin": "xiūxi",
+      "es": "descansar",
+      "note": "息 en tono neutro."
+    },
+    {
+      "hanzi": "午睡",
+      "pinyin": "wǔshuì",
+      "es": "echarse la siesta; siesta",
+      "note": "Muy habitual en China después de comer."
+    },
+    {
+      "hanzi": "上学",
+      "pinyin": "shàngxué",
+      "es": "ir al colegio",
+      "note": "Para niños y adolescentes; un universitario dice 上课."
+    },
+    {
+      "hanzi": "放学",
+      "pinyin": "fàngxué",
+      "es": "salir del colegio"
+    },
+    {
+      "hanzi": "常",
+      "pinyin": "cháng",
+      "es": "a menudo",
+      "note": "= 常常, más breve y algo más escrito."
+    },
+    {
+      "hanzi": "有时",
+      "pinyin": "yǒushí",
+      "es": "a veces",
+      "note": "= 有时候, más breve."
+    },
+    {
+      "hanzi": "最后",
+      "pinyin": "zuìhòu",
+      "es": "por último, al final",
+      "note": "Cierra la serie 先… 然后… 最后…"
+    }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        {
+          "zh": "我先起床，然后去学校上课。",
+          "py": "Wǒ xiān qǐchuáng, ránhòu qù xuéxiào shàngkè.",
+          "es": "Primero me levanto y luego voy a clase."
+        },
+        {
+          "zh": "中午我常休息。",
+          "py": "Zhōngwǔ wǒ cháng xiūxi.",
+          "es": "Al mediodía suelo descansar."
+        },
+        {
+          "zh": "最后我十一点睡觉。",
+          "py": "Zuìhòu wǒ shíyī diǎn shuìjiào.",
+          "es": "Por último, me acuesto a las once."
+        }
+      ]
+    },
+    {
+      "type": "vocab",
+      "title": "Para cerrar el día",
+      "words": [
+        "起来",
+        "休息",
+        "午睡",
+        "上学",
+        "放学",
+        "常",
+        "有时",
+        "最后"
+      ]
+    },
+    {
+      "type": "phonetics-drill",
+      "title": "El tono neutro: 休息, 起来, 时候",
+      "markdown": "Muchas palabras de dos sílabas tienen la segunda **átona** (tono neutro): se dice **corta y floja**, sin tono propio. En pinyin va sin tilde: **xiūxi**, **qǐlai**, **huílai**, **shíhou**, **wǎnshang**.\n\nSu altura depende del tono anterior: tras 1.º, 2.º o 4.º queda **más baja** (休息 xiūxi, 时候 shíhou); tras 3.º queda **algo más alta** (起来 qǐlai, 晚上 wǎnshang).\n\nUn hispanohablante tiende a acentuar la última sílaba: *xiuXÍ*. Hazlo al revés: carga la primera y deja caer la segunda.",
+      "items": [
+        {
+          "audio": "休息",
+          "options": [
+            "xiūxi",
+            "xiūxī",
+            "xiùxí"
+          ],
+          "answer": 0,
+          "explain": "息 sin tono propio."
+        },
+        {
+          "audio": "起来",
+          "options": [
+            "qǐlai",
+            "qílài",
+            "qǐlǎi"
+          ],
+          "answer": 0,
+          "explain": "Tras 3.er tono, el neutro queda algo más alto."
+        },
+        {
+          "audio": "时候",
+          "options": [
+            "shíhou",
+            "shíhòu",
+            "shìhou"
+          ],
+          "answer": 0,
+          "explain": "候 átono."
+        },
+        {
+          "audio": "晚上",
+          "options": [
+            "wǎnshang",
+            "wǎnshàng",
+            "wānshang"
+          ],
+          "answer": 0,
+          "explain": "上 pierde su 4.º tono."
+        },
+        {
+          "audio": "回来",
+          "options": [
+            "huílai",
+            "huìlai",
+            "huīlái"
+          ],
+          "answer": 0,
+          "explain": "huí en 2.º + lai átono."
+        }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": [
+        "休",
+        "息"
+      ],
+      "mnemonics": {
+        "休": "亻 (persona) + 木 (árbol): una persona apoyada en un árbol, descansando.",
+        "息": "自 (nariz, en su forma antigua) + 心 (corazón): respirar tranquilo, con calma; tomar aliento."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "El día completo: 先…然后…最后…",
+      "markdown": "Para contar un día entero encadena frases cortas con **先** (primero), **然后** (luego) y **最后** (por último). 先 va delante del verbo; 然后 y 最后 abren su frase, en el hueco del tiempo inicial.\n\nRepaso de la unidad:\n\n- **Hora y 每天 antes del verbo**: 我每天七点起床.\n- **Dos verbos**: lugar pegado al primero (去学校, 去食堂, 回家, 来我家) y la acción en el segundo (上课, 吃饭).\n- **Frecuencia** en el hueco de los adverbios: 常 / 常常, 不常; 有时 / 有时候 suele ir al principio.\n- **Verbos separables**: 午睡 ya es «dormir la siesta»; no le añadas 觉.",
+      "focus": [
+        "time0",
+        "verb1",
+        "verb2"
+      ],
+      "compare": true,
+      "sentences": [
+        {
+          "slots": {
+            "subject": {
+              "zh": "我",
+              "py": "wǒ"
+            },
+            "time": {
+              "zh": "每天早上七点",
+              "py": "měi tiān zǎoshang qī diǎn"
+            },
+            "verb1": {
+              "zh": "起床",
+              "py": "qǐchuáng"
+            }
+          },
+          "end": "。",
+          "es": "Me levanto todas las mañanas a las siete."
+        },
+        {
+          "slots": {
+            "time0": {
+              "zh": "然后",
+              "py": "ránhòu"
+            },
+            "subject": {
+              "zh": "我",
+              "py": "wǒ"
+            },
+            "verb1": {
+              "zh": "去学校",
+              "py": "qù xuéxiào"
+            },
+            "verb2": {
+              "zh": "上课",
+              "py": "shàngkè"
+            }
+          },
+          "end": "。",
+          "es": "Luego voy a la universidad a clase.",
+          "esOrder": [
+            {
+              "text": "Luego",
+              "slot": "time0"
+            },
+            {
+              "text": "(yo)",
+              "slot": "subject"
+            },
+            {
+              "text": "voy a la universidad",
+              "slot": "verb1"
+            },
+            {
+              "text": "a clase",
+              "slot": "verb2"
+            }
+          ]
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "我们",
+              "py": "wǒmen"
+            },
+            "time": {
+              "zh": "中午",
+              "py": "zhōngwǔ"
+            },
+            "verb1": {
+              "zh": "去食堂",
+              "py": "qù shítáng"
+            },
+            "verb2": {
+              "zh": "吃",
+              "py": "chī"
+            },
+            "object": {
+              "zh": "午饭",
+              "py": "wǔfàn"
+            }
+          },
+          "end": "。",
+          "es": "Al mediodía vamos al comedor a comer."
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "小李",
+              "py": "Xiǎo Lǐ"
+            },
+            "time": {
+              "zh": "中午",
+              "py": "zhōngwǔ"
+            },
+            "adverb": {
+              "zh": "常",
+              "py": "cháng"
+            },
+            "verb1": {
+              "zh": "午睡",
+              "py": "wǔshuì"
+            }
+          },
+          "end": "。",
+          "es": "Xiao Li suele echarse la siesta al mediodía."
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "我妹妹",
+              "py": "wǒ mèimei"
+            },
+            "time": {
+              "zh": "每天七点半",
+              "py": "měi tiān qī diǎn bàn"
+            },
+            "verb1": {
+              "zh": "上学",
+              "py": "shàngxué"
+            }
+          },
+          "end": "。",
+          "es": "Mi hermana pequeña va al colegio todos los días a las siete y media."
+        },
+        {
+          "slots": {
+            "time0": {
+              "zh": "最后",
+              "py": "zuìhòu"
+            },
+            "subject": {
+              "zh": "我",
+              "py": "wǒ"
+            },
+            "time": {
+              "zh": "十一点",
+              "py": "shíyī diǎn"
+            },
+            "verb1": {
+              "zh": "睡觉",
+              "py": "shuìjiào"
+            }
+          },
+          "end": "。",
+          "es": "Por último, me acuesto a las once.",
+          "esOrder": [
+            {
+              "text": "Por último",
+              "slot": "time0"
+            },
+            {
+              "text": "(yo)",
+              "slot": "subject"
+            },
+            {
+              "text": "me acuesto",
+              "slot": "verb1"
+            },
+            {
+              "text": "a las once",
+              "slot": "time"
+            }
+          ]
+        }
+      ],
+      "negative": [
+        {
+          "slots": {
+            "subject": {
+              "zh": "雨果",
+              "py": "Yǔguǒ"
+            },
+            "time": {
+              "zh": "中午",
+              "py": "zhōngwǔ"
+            },
+            "adverb": {
+              "zh": "不",
+              "py": "bù"
+            },
+            "verb1": {
+              "zh": "午睡",
+              "py": "wǔshuì"
+            }
+          },
+          "end": "。",
+          "es": "Hugo no se echa la siesta."
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "我",
+              "py": "wǒ"
+            },
+            "time": {
+              "zh": "周末",
+              "py": "zhōumò"
+            },
+            "adverb": {
+              "zh": "不",
+              "py": "bú"
+            },
+            "verb1": {
+              "zh": "上课",
+              "py": "shàngkè"
+            }
+          },
+          "end": "。",
+          "es": "Los fines de semana no tengo clase."
+        }
+      ],
+      "question": [
+        {
+          "slots": {
+            "subject": {
+              "zh": "你",
+              "py": "nǐ"
+            },
+            "time": {
+              "zh": "中午",
+              "py": "zhōngwǔ"
+            },
+            "verb1": {
+              "zh": "休息",
+              "py": "xiūxi"
+            },
+            "particle": {
+              "zh": "吗",
+              "py": "ma"
+            }
+          },
+          "end": "？",
+          "es": "¿Descansas al mediodía?"
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "你妹妹",
+              "py": "nǐ mèimei"
+            },
+            "time": {
+              "zh": "几点",
+              "py": "jǐ diǎn"
+            },
+            "verb1": {
+              "zh": "放学",
+              "py": "fàngxué"
+            }
+          },
+          "end": "？",
+          "es": "¿A qué hora sale tu hermana del colegio?"
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "最后我睡觉十一点。",
+          "right": "最后我十一点睡觉。",
+          "why": "Aunque la frase empiece por 最后, la hora sigue delante del verbo."
+        },
+        {
+          "wrong": "我中午午睡觉。",
+          "right": "我中午午睡。",
+          "why": "午睡 ya significa «dormir la siesta»: no se le añade 觉."
+        },
+        {
+          "wrong": "我吃午饭去食堂。",
+          "right": "我去食堂吃午饭。",
+          "why": "Primero el desplazamiento (去食堂), luego la acción (吃午饭)."
+        },
+        {
+          "wrong": "我是上学。",
+          "right": "我上课。",
+          "why": "Con verbos no se usa 是; y un universitario no «va al colegio» (上学), sino a clase (上课)."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "En clase: «Cuéntanos tu día»",
+      "lines": [
+        {
+          "speaker": "王老师",
+          "zh": "雨果，你每天早上几点起床？",
+          "py": "Yǔguǒ, nǐ měi tiān zǎoshang jǐ diǎn qǐchuáng?",
+          "es": "Hugo, ¿a qué hora te levantas cada mañana?"
+        },
+        {
+          "speaker": "雨果",
+          "zh": "老师，我七点起床，八点去学校上课。",
+          "py": "Lǎoshī, wǒ qī diǎn qǐchuáng, bā diǎn qù xuéxiào shàngkè.",
+          "es": "Profesora, me levanto a las siete y a las ocho voy a clase."
+        },
+        {
+          "speaker": "王老师",
+          "zh": "中午你休息吗？",
+          "py": "Zhōngwǔ nǐ xiūxi ma?",
+          "es": "¿Descansas al mediodía?"
+        },
+        {
+          "speaker": "雨果",
+          "zh": "有时休息。中国学生常午睡，我不午睡。",
+          "py": "Yǒushí xiūxi. Zhōngguó xuésheng cháng wǔshuì, wǒ bù wǔshuì.",
+          "es": "A veces. Los estudiantes chinos suelen echarse la siesta; yo no."
+        },
+        {
+          "speaker": "王老师",
+          "zh": "下午你做什么？",
+          "py": "Xiàwǔ nǐ zuò shénme?",
+          "es": "¿Qué haces por la tarde?"
+        },
+        {
+          "speaker": "雨果",
+          "zh": "下午我先学习汉语，然后五点半去食堂吃晚饭。",
+          "py": "Xiàwǔ wǒ xiān xuéxí Hànyǔ, ránhòu wǔ diǎn bàn qù shítáng chī wǎnfàn.",
+          "es": "Por la tarde primero estudio chino y luego, a las cinco y media, voy al comedor a cenar."
+        },
+        {
+          "speaker": "王老师",
+          "zh": "晚上呢？",
+          "py": "Wǎnshang ne?",
+          "es": "¿Y por la noche?"
+        },
+        {
+          "speaker": "雨果",
+          "zh": "晚上我和朋友说汉语，最后十一点睡觉。",
+          "py": "Wǎnshang wǒ hé péngyou shuō Hànyǔ, zuìhòu shíyī diǎn shuìjiào.",
+          "es": "Por la noche hablo chino con mis amigos y, por último, me acuesto a las once."
+        },
+        {
+          "speaker": "王老师",
+          "zh": "好学生！",
+          "py": "Hǎo xuésheng!",
+          "es": "¡Buen estudiante!"
+        }
+      ],
+      "notes": "En China se cena pronto: los comedores universitarios sirven la cena entre las cinco y las siete. La siesta (午睡) después de comer es casi una institución, también en oficinas y colegios."
+    },
+    {
+      "type": "exercises",
+      "count": 16,
+      "bank": [
+        "g-word-order",
+        "g-lai-qu",
+        "g-mei",
+        "u13"
+      ]
+    },
+    {
+      "type": "sentence-builder",
+      "title": "Construye la frase completa",
+      "items": [
+        {
+          "sentence": {
+            "slots": {
+              "subject": {
+                "zh": "我和小李",
+                "py": "wǒ hé Xiǎo Lǐ"
+              },
+              "time": {
+                "zh": "每天中午十二点",
+                "py": "měi tiān zhōngwǔ shí'èr diǎn"
+              },
+              "adverb": {
+                "zh": "都",
+                "py": "dōu"
+              },
+              "verb1": {
+                "zh": "去食堂",
+                "py": "qù shítáng"
+              },
+              "verb2": {
+                "zh": "吃",
+                "py": "chī"
+              },
+              "object": {
+                "zh": "午饭",
+                "py": "wǔfàn"
+              }
+            },
+            "end": "。",
+            "es": "Xiao Li y yo vamos todos los días a las doce al comedor a comer."
+          },
+          "distractors": [
+            "在"
+          ]
+        },
+        {
+          "sentence": {
+            "slots": {
+              "subject": {
+                "zh": "王老师",
+                "py": "Wáng lǎoshī"
+              },
+              "time": {
+                "zh": "每天早上八点",
+                "py": "měi tiān zǎoshang bā diǎn"
+              },
+              "verb1": {
+                "zh": "坐车",
+                "py": "zuò chē"
+              },
+              "verb2": {
+                "zh": "去",
+                "py": "qù"
+              },
+              "object": {
+                "zh": "学校",
+                "py": "xuéxiào"
+              }
+            },
+            "end": "。",
+            "es": "La profesora Wang va a la universidad en coche todas las mañanas a las ocho."
+          },
+          "distractors": [
+            "到"
+          ]
+        },
+        {
+          "sentence": {
+            "slots": {
+              "time0": {
+                "zh": "然后",
+                "py": "ránhòu"
+              },
+              "subject": {
+                "zh": "我们",
+                "py": "wǒmen"
+              },
+              "time": {
+                "zh": "下午两点",
+                "py": "xiàwǔ liǎng diǎn"
+              },
+              "adverb": {
+                "zh": "都",
+                "py": "dōu"
+              },
+              "verb1": {
+                "zh": "去学校",
+                "py": "qù xuéxiào"
+              },
+              "verb2": {
+                "zh": "学习",
+                "py": "xuéxí"
+              },
+              "object": {
+                "zh": "汉语",
+                "py": "Hànyǔ"
+              }
+            },
+            "end": "。",
+            "es": "Luego, a las dos de la tarde, vamos todos a la universidad a estudiar chino."
+          },
+          "distractors": [
+            "先"
+          ]
+        },
+        {
+          "sentence": {
+            "slots": {
+              "time0": {
+                "zh": "有时候",
+                "py": "yǒu shíhou"
+              },
+              "subject": {
+                "zh": "我朋友",
+                "py": "wǒ péngyou"
+              },
+              "time": {
+                "zh": "晚上",
+                "py": "wǎnshang"
+              },
+              "adverb": {
+                "zh": "不",
+                "py": "bù"
+              },
+              "verb1": {
+                "zh": "回家",
+                "py": "huí jiā"
+              },
+              "verb2": {
+                "zh": "吃",
+                "py": "chī"
+              },
+              "object": {
+                "zh": "晚饭",
+                "py": "wǎnfàn"
+              }
+            },
+            "end": "。",
+            "es": "A veces mi amigo no vuelve a casa a cenar."
+          },
+          "distractors": [
+            "没"
+          ]
+        },
+        {
+          "sentence": {
+            "slots": {
+              "subject": {
+                "zh": "大卫",
+                "py": "Dàwèi"
+              },
+              "time": {
+                "zh": "星期六上午",
+                "py": "xīngqīliù shàngwǔ"
+              },
+              "adverb": {
+                "zh": "常常",
+                "py": "chángcháng"
+              },
+              "verb1": {
+                "zh": "来我家",
+                "py": "lái wǒ jiā"
+              },
+              "verb2": {
+                "zh": "学习",
+                "py": "xuéxí"
+              },
+              "object": {
+                "zh": "汉语",
+                "py": "Hànyǔ"
+              }
+            },
+            "end": "。",
+            "es": "David viene a menudo los sábados por la mañana a mi casa a estudiar chino."
+          },
+          "distractors": [
+            "去"
+          ]
+        },
+        {
+          "sentence": {
+            "slots": {
+              "time0": {
+                "zh": "最后",
+                "py": "zuìhòu"
+              },
+              "subject": {
+                "zh": "我妹妹",
+                "py": "wǒ mèimei"
+              },
+              "time": {
+                "zh": "每天晚上九点半",
+                "py": "měi tiān wǎnshang jiǔ diǎn bàn"
+              },
+              "verb1": {
+                "zh": "睡觉",
+                "py": "shuìjiào"
+              }
+            },
+            "end": "。",
+            "es": "Por último, mi hermana se acuesta todas las noches a las nueve y media."
+          },
+          "distractors": [
+            "觉"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        {
+          "zh": "我每天早上七点起床。",
+          "py": "Wǒ měi tiān zǎoshang qī diǎn qǐchuáng.",
+          "es": "Me levanto todas las mañanas a las siete."
+        },
+        {
+          "zh": "然后我去学校上课。",
+          "py": "Ránhòu wǒ qù xuéxiào shàngkè.",
+          "es": "Luego voy a la universidad a clase."
+        },
+        {
+          "zh": "中午我们去食堂吃午饭。",
+          "py": "Zhōngwǔ wǒmen qù shítáng chī wǔfàn.",
+          "es": "Al mediodía vamos al comedor a comer."
+        },
+        {
+          "zh": "最后我十一点睡觉。",
+          "py": "Zuìhòu wǒ shíyī diǎn shuìjiào.",
+          "es": "Por último, me acuesto a las once."
+        }
+      ],
+      "respond": [
+        {
+          "q": {
+            "zh": "你中午休息吗？",
+            "py": "Nǐ zhōngwǔ xiūxi ma?",
+            "es": "¿Descansas al mediodía?"
+          },
+          "model": {
+            "zh": "有时休息，有时去学校学习。",
+            "py": "Yǒushí xiūxi, yǒushí qù xuéxiào xuéxí.",
+            "es": "A veces descanso y a veces voy a la universidad a estudiar."
+          }
+        },
+        {
+          "q": {
+            "zh": "你每天几点睡觉？",
+            "py": "Nǐ měi tiān jǐ diǎn shuìjiào?",
+            "es": "¿A qué hora te acuestas cada día?"
+          },
+          "model": {
+            "zh": "我每天十一点睡觉。",
+            "py": "Wǒ měi tiān shíyī diǎn shuìjiào.",
+            "es": "Me acuesto todos los días a las once."
+          }
+        },
+        {
+          "q": {
+            "zh": "你几点去学校？",
+            "py": "Nǐ jǐ diǎn qù xuéxiào?",
+            "es": "¿A qué hora vas a la universidad?"
+          },
+          "model": {
+            "zh": "我八点坐车去学校。",
+            "py": "Wǒ bā diǎn zuò chē qù xuéxiào.",
+            "es": "Voy a la universidad en coche a las ocho."
+          }
+        }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Mi día",
+      "text": "我叫雨果。我每天早上七点起床，先洗澡，然后吃早饭。八点我坐车去学校上课，十二点下课。中午我和小李去食堂吃午饭。中国学生常午睡，我不午睡，我去学习汉语。晚上六点我回家，有时做饭，有时去食堂吃。最后，我十一点睡觉。",
+      "es": "Me llamo Hugo. Me levanto todas las mañanas a las siete; primero me ducho y luego desayuno. A las ocho voy a la universidad en coche a clase, y salgo a las doce. Al mediodía voy con Xiao Li al comedor a comer. Los estudiantes chinos suelen echarse la siesta; yo no, voy a estudiar chino. A las seis de la tarde vuelvo a casa; unas veces cocino y otras voy a cenar al comedor. Por último, me acuesto a las once.",
+      "questions": [
+        {
+          "q": "¿Qué hace Hugo justo después de levantarse?",
+          "options": [
+            "Se ducha",
+            "Desayuna",
+            "Va a clase"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "¿Cómo va a la universidad?",
+          "options": [
+            "En coche",
+            "Andando",
+            "No lo dice"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "¿Qué hace Hugo al mediodía en vez de la siesta?",
+          "options": [
+            "Estudia chino",
+            "Cocina",
+            "Duerme"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "¿A qué hora se acuesta?",
+          "options": [
+            "A las once",
+            "A las doce",
+            "A las seis"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "type": "notes-growth"
+    }
+  ]
+}

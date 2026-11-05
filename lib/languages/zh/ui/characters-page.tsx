@@ -39,7 +39,13 @@ export function CharactersPage() {
   const [sheetChars, setSheetChars] = useState<string[]>([]);
 
   useEffect(() => {
-    void Promise.all([loadCharInfo(), loadHsk()]).then(() => setReady(true));
+    // ?q=马 (enlaces desde los artículos de origen) abre directamente la ficha del carácter
+    const q = new URLSearchParams(window.location.search).get("q");
+    const first = q ? Array.from(q).find((c) => /[㐀-鿿]/.test(c)) : undefined;
+    void Promise.all([loadCharInfo(), loadHsk()]).then(() => {
+      setReady(true);
+      if (first) setOpen(first);
+    });
     if (dictStatus === "idle") void load();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);

@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "@/lib/languages/link";
 import { ArrowLeft } from "lucide-react";
-import { unitById } from "@/lib/course";
+import { ensureUnit, unitById } from "@/lib/course";
 import { checkpointExercises } from "@/lib/exercises/build";
 import type { Exercise } from "@/lib/exercises/types";
 import { useDictionary } from "@/lib/dictionary/service";
@@ -30,13 +30,22 @@ export function Checkpoint({ unitId }: { unitId: string }) {
 
   useEffect(() => {
     if (dictStatus === "idle") void load();
-    void getActivePack().characters.load().catch(() => undefined);
+    void getActivePack()
+      .characters.load()
+      .catch(() => undefined);
   }, [dictStatus, load]);
 
   useEffect(() => {
     if (!started || !unit || dictStatus === "loading" || dictStatus === "idle") return;
-    // eslint-disable-next-line react-hooks/set-state-in-effect
-    setExercises(checkpointExercises(unit, unit.checkpoint?.exercises ?? 15, nowMs() % 100000));
+    let alive = true;
+    // temario v2: los pasos de las lecciones se cargan bajo demanda
+    void ensureUnit(unit.id).then(() => {
+      if (alive)
+        setExercises(checkpointExercises(unit, unit.checkpoint?.exercises ?? 15, nowMs() % 100000));
+    });
+    return () => {
+      alive = false;
+    };
   }, [started, unit, dictStatus]);
 
   if (!unit) {
@@ -58,13 +67,24 @@ export function Checkpoint({ unitId }: { unitId: string }) {
       <div className="mx-auto max-w-2xl">
         <CloudBorder className="card-paper p-2">
           <div className="flex flex-col items-center pt-6">
-            <Seal text={pct >= 0.8 ? ui().passSeal : ui().retrySeal} size={76} tone={pct >= 0.8 ? "cinnabar" : "ink"} stamped rotate={-5} title={pct >= 0.8 ? "Checkpoint superado" : "Vuelve a intentarlo"} />
+            <Seal
+              text={pct >= 0.8 ? ui().passSeal : ui().retrySeal}
+              size={76}
+              tone={pct >= 0.8 ? "cinnabar" : "ink"}
+              stamped
+              rotate={-5}
+              title={pct >= 0.8 ? "Checkpoint superado" : "Vuelve a intentarlo"}
+            />
           </div>
           <SummaryCard
             summary={summary}
             title={`Checkpoint · ${unit.title}`}
             onContinue={async () => {
-              await db.syncState.put({ key: `checkpoint:${unit.id}`, value: { score: pct, at: Date.now() }, updatedAt: Date.now() });
+              await db.syncState.put({
+                key: `checkpoint:${unit.id}`,
+                value: { score: pct, at: Date.now() },
+                updatedAt: Date.now(),
+              });
               router.push("/aprender");
             }}
           />
@@ -77,18 +97,23 @@ export function Checkpoint({ unitId }: { unitId: string }) {
     const words = unit.lessons.reduce((a, l) => a + l.vocab.length, 0);
     return (
       <div className="mx-auto max-w-xl">
-        <PageHeader title={`Checkpoint · ${unit.title}`} zh={ui().checkpoint} subtitle="Ejercicios mezclados con todo el vocabulario y las frases de la unidad. Sin saltar. Te dirá qué repasar." />
+        <PageHeader
+          title={`Checkpoint · ${unit.title}`}
+          zh={ui().checkpoint}
+          subtitle="Ejercicios mezclados con todo el vocabulario y las frases de la unidad. Sin saltar. Te dirá qué repasar."
+        />
         <CloudBorder className="card-paper">
           <div className="flex flex-col items-center px-6 py-8 text-center">
             <Paifang size={84} tone="gold" />
-            <p className="font-serif-es mt-3 text-xl font-semibold text-ink">
+            <p className="font-serif-es text-ink mt-3 text-xl font-semibold">
               Cruza el {ui().gate} de la unidad
-              <span lang={targetLang()} className="zh-kai ml-2 text-lg font-normal text-cinnabar">
+              <span lang={targetLang()} className="zh-kai text-cinnabar ml-2 text-lg font-normal">
                 {unit.zh}
               </span>
             </p>
-            <p className="mt-2 text-sm text-ink-faint">
-              <span className="tabular">{unit.checkpoint?.exercises ?? 15}</span> ejercicios · <span className="tabular">{words}</span> palabras de la unidad
+            <p className="text-ink-faint mt-2 text-sm">
+              <span className="tabular">{unit.checkpoint?.exercises ?? 15}</span> ejercicios ·{" "}
+              <span className="tabular">{words}</span> palabras de la unidad
             </p>
             <Button className="mt-5" size="lg" onClick={() => setStarted(true)}>
               Empezar
@@ -106,5 +131,13 @@ export function Checkpoint({ unitId }: { unitId: string }) {
       </div>
     );
   }
-  return <ExerciseRunner exercises={exercises} context={`checkpoint:${unit.id}`} onFinish={setSummary} allowSkip={false} title={unit.title} />;
+  return (
+    <ExerciseRunner
+      exercises={exercises}
+      context={`checkpoint:${unit.id}`}
+      onFinish={setSummary}
+      allowSkip={false}
+      title={unit.title}
+    />
+  );
 }

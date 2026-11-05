@@ -1,0 +1,133 @@
+{
+  "id": "a1-u15-l4",
+  "title": "Rumbo al aeropuerto: repaso del transporte",
+  "zh": "我们在最后一站下车",
+  "goal": "Contar un trayecto completo: cómo vas, dónde subes y bajas, cuánto tardas y qué haces por el camino.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "上车", "pinyin": "shàngchē", "es": "subir (a un vehículo)" },
+    { "hanzi": "下车", "pinyin": "xiàchē", "es": "bajar (de un vehículo)", "note": "在…站下车 = bajarse en la parada…" },
+    { "hanzi": "路上", "pinyin": "lùshang", "es": "por el camino, de camino" },
+    { "hanzi": "车上", "pinyin": "chēshang", "es": "en el coche, en el tren, en el autobús" },
+    { "hanzi": "汽车", "pinyin": "qìchē", "es": "coche, automóvil" },
+    { "hanzi": "共享单车", "pinyin": "gòngxiǎng dānchē", "es": "bici compartida", "note": "Se desbloquea escaneando el código QR con el móvil." },
+    { "hanzi": "地铁卡", "pinyin": "dìtiěkǎ", "es": "tarjeta de metro" },
+    { "hanzi": "地图", "pinyin": "dìtú", "es": "mapa, plano" },
+    { "hanzi": "来到", "pinyin": "láidào", "es": "llegar a (un lugar)", "note": "Más escrito que 到: 来到上海 «llegar a Shanghái»." }
+  ],
+  "extraVocab": ["共享单车", "地铁卡"],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "我们坐二号线去机场，在最后一站下车。", "py": "Wǒmen zuò èr hàoxiàn qù jīchǎng, zài zuìhòu yí zhàn xiàchē.", "es": "Vamos al aeropuerto en la línea 2 y nos bajamos en la última parada." },
+        { "zh": "我骑共享单车去地铁站，要五分钟。", "py": "Wǒ qí gòngxiǎng dānchē qù dìtiězhàn, yào wǔ fēnzhōng.", "es": "Voy en bici compartida a la estación de metro: son cinco minutos." },
+        { "zh": "我们在车上休息一会儿吧。", "py": "Wǒmen zài chēshang xiūxi yíhuìr ba.", "es": "Descansemos un rato en el tren." }
+      ]
+    },
+    { "type": "vocab", "title": "Subir, bajar y por el camino", "words": ["上车", "下车", "路上", "车上", "汽车", "共享单车", "地铁卡", "地图", "来到"] },
+    {
+      "type": "phonetics-drill",
+      "title": "El tercer tono en la frase",
+      "markdown": "El tercer tono completo (baja y sube) casi solo se oye **al final** o **aislado**. En la frase cambia:\n\n- **3.º + 3.º → 2.º + 3.º**: 很远 *hěn yuǎn* suena «hén yuǎn»; 我走 suena «wó zǒu». Se sigue escribiendo con la marca del tercero.\n- **3.º + otro tono → medio tercero**: solo baja, sin subir: 打车 *dǎchē*, 买票 *mǎi piào*, 走路 *zǒulù*.\n\nSi haces el tercer tono entero en medio de la frase, suena lento y raro.",
+      "items": [
+        { "audio": "很远", "prompt": "¿Cómo suena 很 aquí?", "options": ["Sube, como un 2.º tono", "Baja y sube entero", "Cae, como un 4.º tono"], "answer": 0, "explain": "3.º + 3.º: el primero pasa a 2.º." },
+        { "audio": "打车", "prompt": "¿Cómo suena 打 delante de un 1.er tono?", "options": ["Medio tercero: solo baja", "Sube", "Alto y plano"], "answer": 0, "explain": "Delante de 1.º, 2.º o 4.º, el tercero solo baja." },
+        { "audio": "地图", "options": ["dìtú", "dìtǔ", "tìdú"], "answer": 0, "explain": "图 es segundo tono: sube." },
+        { "audio": "买票", "options": ["mǎi piào", "mài piào", "mǎi biào"], "answer": 0, "explain": "买 (3.º, comprar) no es 卖 (4.º, vender); p con soplo." },
+        { "audio": "我也走", "prompt": "¿Cuál es la sílaba que conserva el tercer tono completo?", "options": ["走 (la última)", "我 (la primera)", "也 (la del medio)"], "answer": 0, "explain": "En una cadena de terceros, solo el último hace el tercero entero." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["路", "图"],
+      "mnemonics": {
+        "路": "足 (pie) + 各 (cada uno): por donde pasan los pies de cada uno, el camino. En 马路, 路口, 路上 y en las líneas de autobús (三零四路).",
+        "图": "囗 (un marco) + 冬: un plano dibujado dentro de un marco. Mapa, dibujo: 地图 (mapa de la tierra), 图书馆 (casa de libros e imágenes)."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "La frase completa del trayecto",
+      "markdown": "Juntamos todo lo de la unidad en un solo esqueleto:\n\n**[cuándo] + quién + [con quién] + [dónde] + medio (verbo 1) + destino (verbo 2) + [duración]**\n\n- **在 + lugar** delante del verbo (U14): 我**在**交大站**下车** (en español, «me bajo **en** la estación de Jiaotong», el lugar va detrás).\n- **上车 / 下车**: subir y bajar de cualquier vehículo, también del metro.\n- **路上 / 车上**: «por el camino», «en el tren»; con 在 delante, van al hueco del lugar.\n- **La duración**, siempre detrás del verbo: 休息**一会儿**, 睡**一个小时**.\n- **¿Cuánto se tarda?** → 要 + duración.",
+      "focus": ["complement", "place"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "place": { "zh": "在交大站", "py": "zài Jiāodà zhàn" }, "verb1": { "zh": "下车", "py": "xiàchē" } }, "end": "。", "es": "Me bajo en la estación de Jiaotong.", "esOrder": [{ "text": "Me bajo", "slot": "verb1" }, { "text": "en la estación de Jiaotong", "slot": "place" }] },
+        { "slots": { "subject": { "zh": "雨果", "py": "Yǔguǒ" }, "time": { "zh": "每天", "py": "měitiān" }, "verb1": { "zh": "骑共享单车", "py": "qí gòngxiǎng dānchē" }, "verb2": { "zh": "去", "py": "qù" }, "object": { "zh": "地铁站", "py": "dìtiězhàn" } }, "end": "。", "es": "Hugo va cada día en bici compartida a la estación de metro." },
+        { "slots": { "subject": { "zh": "我们", "py": "wǒmen" }, "place": { "zh": "在车上", "py": "zài chēshang" }, "verb1": { "zh": "睡", "py": "shuì" }, "complement": { "zh": "一个小时", "py": "yí ge xiǎoshí" }, "particle": { "zh": "吧", "py": "ba" } }, "end": "。", "es": "Durmamos una hora en el tren." },
+        { "slots": { "time0": { "zh": "明天早上", "py": "míngtiān zǎoshang" }, "subject": { "zh": "我", "py": "wǒ" }, "with": { "zh": "跟大卫一起", "py": "gēn Dàwèi yìqǐ" }, "verb1": { "zh": "坐出租车", "py": "zuò chūzūchē" }, "verb2": { "zh": "去", "py": "qù" }, "object": { "zh": "机场", "py": "jīchǎng" } }, "end": "。", "es": "Mañana por la mañana voy al aeropuerto en taxi con David." },
+        { "slots": { "subject": { "zh": "我们", "py": "wǒmen" }, "place": { "zh": "在路口", "py": "zài lùkǒu" }, "verb1": { "zh": "上车", "py": "shàngchē" } }, "end": "。", "es": "Subimos en el cruce." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "大卫", "py": "Dàwèi" }, "adverb": { "zh": "不", "py": "bú" }, "aux": { "zh": "会", "py": "huì" }, "verb1": { "zh": "开汽车", "py": "kāi qìchē" } }, "end": "。", "es": "David no sabe conducir." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "我们", "py": "wǒmen" }, "place": { "zh": "在哪儿", "py": "zài nǎr" }, "verb1": { "zh": "下车", "py": "xiàchē" } }, "end": "？", "es": "¿Dónde nos bajamos?" },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "adverb": { "zh": "怎么", "py": "zěnme" }, "verb1": { "zh": "去", "py": "qù" }, "object": { "zh": "机场", "py": "jīchǎng" } }, "end": "？", "es": "¿Cómo vas al aeropuerto?" }
+      ],
+      "mistakes": [
+        { "wrong": "我下车在交大站。", "right": "我在交大站下车。", "why": "在 + lugar va delante del verbo." },
+        { "wrong": "我们一个小时在车上睡。", "right": "我们在车上睡一个小时。", "why": "El lugar delante del verbo; la duración, detrás." },
+        { "wrong": "坐地铁去机场五十分钟。", "right": "坐地铁去机场要五十分钟。", "why": "Para «se tarda» hace falta el verbo 要 delante de la duración." },
+        { "wrong": "我去机场坐出租车。", "right": "我坐出租车去机场。", "why": "El medio, antes del destino (repaso de la lección 1)." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Con el plano del metro",
+      "lines": [
+        { "speaker": "安娜", "zh": "雨果，你看地图。我们在这儿，交大站。", "py": "Yǔguǒ, nǐ kàn dìtú. Wǒmen zài zhèr, Jiāodà zhàn.", "es": "Hugo, mira el plano. Estamos aquí, en la estación de Jiaotong." },
+        { "speaker": "雨果", "zh": "机场在哪儿？", "py": "Jīchǎng zài nǎr?", "es": "¿Dónde está el aeropuerto?" },
+        { "speaker": "安娜", "zh": "在这儿，很远。我们坐二号线去机场。", "py": "Zài zhèr, hěn yuǎn. Wǒmen zuò èr hàoxiàn qù jīchǎng.", "es": "Aquí, muy lejos. Vamos al aeropuerto en la línea 2." },
+        { "speaker": "雨果", "zh": "要多长时间？", "py": "Yào duō cháng shíjiān?", "es": "¿Cuánto se tarda?" },
+        { "speaker": "安娜", "zh": "要一个半小时。我们在车上睡一会儿吧。", "py": "Yào yí ge bàn xiǎoshí. Wǒmen zài chēshang shuì yíhuìr ba.", "es": "Una hora y media. Podemos dormir un rato en el tren." },
+        { "speaker": "雨果", "zh": "好。你有地铁卡吗？", "py": "Hǎo. Nǐ yǒu dìtiěkǎ ma?", "es": "Vale. ¿Tienes tarjeta de metro?" },
+        { "speaker": "安娜", "zh": "没有，我扫码进站。", "py": "Méiyǒu, wǒ sǎomǎ jìn zhàn.", "es": "No, entro escaneando el código." },
+        { "speaker": "雨果", "zh": "好，我们上车吧！在哪儿下车？", "py": "Hǎo, wǒmen shàngchē ba! Zài nǎr xiàchē?", "es": "Bueno, ¡subamos! ¿Dónde nos bajamos?" },
+        { "speaker": "安娜", "zh": "我们在最后一站下车。路上别睡太多！", "py": "Wǒmen zài zuìhòu yí zhàn xiàchē. Lùshang bié shuì tài duō!", "es": "En la última parada. ¡No duermas demasiado por el camino!" }
+      ],
+      "notes": "En el metro de Shanghái puedes entrar con tarjeta (地铁卡) o escaneando un código QR en la app (扫码进站). La línea 2 llega hasta el aeropuerto de Pudong, al final de la línea. 别 «no (hagas)» lo verás con calma en la U19; aquí basta con entenderlo."
+    },
+    { "type": "exercises", "count": 16, "bank": ["g-lai-qu", "g-word-order", "g-zai", "u08"] },
+    {
+      "type": "sentence-builder",
+      "title": "Construye la frase completa",
+      "items": [
+        { "sentence": { "slots": { "time0": { "zh": "明天早上" }, "subject": { "zh": "我" }, "with": { "zh": "跟大卫一起" }, "verb1": { "zh": "坐出租车" }, "verb2": { "zh": "去" }, "object": { "zh": "机场" } }, "end": "。", "es": "Mañana por la mañana voy al aeropuerto en taxi con David." }, "distractors": ["开"] },
+        { "sentence": { "slots": { "subject": { "zh": "我们" }, "place": { "zh": "在交大站" }, "verb1": { "zh": "下车" }, "particle": { "zh": "吧" } }, "end": "。", "es": "Bajémonos en la estación de Jiaotong." }, "distractors": ["上车"] },
+        { "sentence": { "slots": { "subject": { "zh": "雨果" }, "time": { "zh": "每天" }, "verb1": { "zh": "骑共享单车" }, "verb2": { "zh": "去" }, "object": { "zh": "地铁站" } }, "end": "。", "es": "Hugo va cada día en bici compartida a la estación de metro." }, "distractors": ["坐"] },
+        { "sentence": { "slots": { "subject": { "zh": "小李" }, "time": { "zh": "每天" }, "verb1": { "zh": "坐地铁" }, "verb2": { "zh": "坐" }, "complement": { "zh": "四十分钟" } }, "end": "。", "es": "Xiao Li va cuarenta minutos en metro cada día." }, "distractors": ["点"] },
+        { "sentence": { "slots": { "time0": { "zh": "今天晚上" }, "subject": { "zh": "我们" }, "adverb": { "zh": "都" }, "aux": { "zh": "想" }, "verb1": { "zh": "走路" }, "verb2": { "zh": "回宿舍" } }, "end": "。", "es": "Esta noche todos queremos volver andando a la residencia." }, "distractors": ["去"] },
+        { "sentence": { "slots": { "subject": { "zh": "我们" }, "place": { "zh": "在车上" }, "verb1": { "zh": "休息" }, "complement": { "zh": "一会儿" }, "particle": { "zh": "吧" } }, "end": "。", "es": "Descansemos un rato en el tren." }, "distractors": ["吗"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "我们坐二号线去机场。", "py": "Wǒmen zuò èr hàoxiàn qù jīchǎng.", "es": "Vamos al aeropuerto en la línea 2." },
+        { "zh": "要一个半小时。", "py": "Yào yí ge bàn xiǎoshí.", "es": "Se tarda una hora y media." },
+        { "zh": "我们在最后一站下车。", "py": "Wǒmen zài zuìhòu yí zhàn xiàchē.", "es": "Nos bajamos en la última parada." },
+        { "zh": "我骑共享单车去地铁站。", "py": "Wǒ qí gòngxiǎng dānchē qù dìtiězhàn.", "es": "Voy en bici compartida a la estación de metro." }
+      ],
+      "respond": [
+        { "q": { "zh": "你怎么去机场？", "py": "Nǐ zěnme qù jīchǎng?", "es": "¿Cómo vas al aeropuerto?" }, "model": { "zh": "我坐地铁去机场。", "py": "Wǒ zuò dìtiě qù jīchǎng.", "es": "Voy en metro." } },
+        { "q": { "zh": "从你家到地铁站要多长时间？", "py": "Cóng nǐ jiā dào dìtiězhàn yào duō cháng shíjiān?", "es": "¿Cuánto se tarda de tu casa a la estación de metro?" }, "model": { "zh": "走路要十分钟。", "py": "Zǒulù yào shí fēnzhōng.", "es": "Andando, diez minutos." } },
+        { "q": { "zh": "你在哪儿下车？", "py": "Nǐ zài nǎr xiàchē?", "es": "¿Dónde te bajas?" }, "model": { "zh": "我在交大站下车。", "py": "Wǒ zài Jiāodà zhàn xiàchē.", "es": "Me bajo en la estación de Jiaotong." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Un día de Hugo en movimiento",
+      "text": "早上七点半，雨果从宿舍出来。他骑共享单车去地铁站，要五分钟。他扫码进站，坐二号线。在车上，他看汉语书。他在交大站下车，走路去上课。下午，他跟小李一起坐公交车去饭馆吃饭。晚上，他们走路回宿舍。",
+      "es": "A las siete y media de la mañana, Hugo sale de la residencia. Va en bici compartida a la estación de metro: cinco minutos. Entra escaneando el código y coge la línea 2. En el tren lee un libro de chino. Se baja en la estación de Jiaotong y va andando a clase. Por la tarde va en autobús con Xiao Li a comer a un restaurante. Por la noche vuelven andando a la residencia.",
+      "questions": [
+        { "q": "¿Cómo va Hugo a la estación de metro?", "options": ["En bici compartida", "Andando", "En autobús"], "answer": 0 },
+        { "q": "¿Qué hace en el tren?", "options": ["Lee un libro de chino", "Duerme", "Habla con Xiao Li"], "answer": 0 },
+        { "q": "¿Cómo vuelven por la noche?", "options": ["Andando", "En metro", "En taxi"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

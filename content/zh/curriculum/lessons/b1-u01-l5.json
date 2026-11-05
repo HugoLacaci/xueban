@@ -1,0 +1,136 @@
+{
+  "id": "b1-u01-l5",
+  "title": "No lo vendas: cuándo hace falta 把, 没把 / 别把 y 能把",
+  "zh": "别把它卖了",
+  "goal": "Saber cuándo es obligatorio 把 y colocar bien la negación (没把, 别把, 不把) y los auxiliares (能把, 要把, 应该把) al organizar una mudanza.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "旧", "pinyin": "jiù", "es": "viejo, usado (cosas)", "note": "旧 es para cosas; para personas, 老." },
+    { "hanzi": "空", "pinyin": "kōng", "es": "vacío", "note": "空箱子 = caja vacía. Con otro tono, 空儿 kòngr = rato libre." },
+    { "hanzi": "保存", "pinyin": "bǎocún", "es": "guardar, conservar (archivos, comida, documentos)" },
+    { "hanzi": "保留", "pinyin": "bǎoliú", "es": "conservar, quedarse con, mantener" },
+    { "hanzi": "存", "pinyin": "cún", "es": "guardar, depositar, almacenar", "note": "存钱 = ahorrar / ingresar dinero; 存在网上 = guardar en la nube." },
+    { "hanzi": "文件", "pinyin": "wénjiàn", "es": "documento; archivo (del ordenador)" },
+    { "hanzi": "决定", "pinyin": "juédìng", "es": "decidir; decisión", "note": "我决定 + frase: 我决定把旧沙发卖了." },
+    { "hanzi": "需要", "pinyin": "xūyào", "es": "necesitar; necesidad" },
+    { "hanzi": "安排", "pinyin": "ānpái", "es": "organizar, planificar; plan", "note": "都安排好了 = ya está todo organizado." },
+    { "hanzi": "订", "pinyin": "dìng", "es": "reservar, encargar", "note": "订搬家公司, 订票, 订外卖." },
+    { "hanzi": "转", "pinyin": "zhuǎn", "es": "transferir (dinero); pasar, girar", "note": "把钱转给他 = hacerle una transferencia." },
+    { "hanzi": "齐", "pinyin": "qí", "es": "completo, que no falta nada / nadie", "note": "人到齐了 = ya estamos todos; 东西搬齐了 = ya está todo trasladado." }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "你应该把文件保存好。", "py": "Nǐ yīnggāi bǎ wénjiàn bǎocún hǎo.", "es": "Deberías guardar bien los archivos." },
+        { "zh": "别把书架卖了，我需要一个书架！", "py": "Bié bǎ shūjià mài le, wǒ xūyào yí ge shūjià!", "es": "No vendas la estantería, ¡necesito una!" },
+        { "zh": "我们不能把冰箱搬到楼上。", "py": "Wǒmen bù néng bǎ bīngxiāng bāndào lóu shang.", "es": "No podemos subir la nevera." }
+      ]
+    },
+    { "type": "vocab", "title": "Organizar la mudanza", "words": ["旧", "空", "保存", "保留", "存", "文件", "决定", "需要", "安排", "订", "转", "齐"] },
+    {
+      "type": "phonetics-drill",
+      "title": "不 y 一 delante de 把, y el énfasis de la prohibición",
+      "markdown": "En una frase con 把, la **negación o el auxiliar** van delante y son la parte **más marcada** de la entonación: **别**把门关上！, 我**没**把钥匙带来.\n\nRepaso de los cambios de tono en estas frases:\n\n- **不 + 把** (tercer tono): 不 se queda en **bù**. **不要**: *bú yào* (delante de cuarto tono). **不能**: *bù néng*.\n- **一定要**: *yídìng yào* (一 delante de cuarto tono → segundo).\n- **转给 zhuǎn gěi**: dos terceros tonos seguidos → el primero suena como segundo.",
+      "items": [
+        { "audio": "不要把文件放在这儿", "prompt": "¿Cómo suena 不?", "options": ["bú (segundo tono)", "bù (cuarto tono)", "bū (primer tono)"], "answer": 0, "explain": "不 delante de 要 (cuarto tono) pasa a segundo." },
+        { "audio": "别把门关上", "prompt": "¿Qué palabra lleva más fuerza?", "options": ["别 (la prohibición)", "把", "上"], "answer": 0 },
+        { "audio": "一定要把文件保存好", "options": ["yídìng yào", "yīdìng yào", "yìdìng yào"], "answer": 0, "explain": "一 + cuarto tono → yí." },
+        { "audio": "不把", "options": ["bù bǎ", "bú bǎ", "bǔ bǎ"], "answer": 0, "explain": "Delante de tercer tono, 不 conserva el cuarto." },
+        { "audio": "旧", "options": ["jiù", "jiǔ", "xiù"], "answer": 0, "explain": "Cuarto tono; j con la lengua plana." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["旧", "存"],
+      "mnemonics": {
+        "旧": "Una raya (丨) junto al sol (日): un día que ya ha quedado atrás. Lo viejo, lo usado.",
+        "存": "Un niño (子) bajo una mano que lo protege: algo que se guarda con cuidado. Guardar, conservar."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "Cuándo hace falta 把 y dónde va la negación",
+      "markdown": "**Cuándo es obligatorio 把**\n\n1. Verbo + **在 / 到 / 给** + lugar o persona: 把书**放在**桌子上, 把钱**转给**他. Sin 把 no se puede.\n2. **Órdenes y encargos** sobre algo concreto: 把门关上, 把文件保存好. Sin 把 sonaría raro o incompleto.\n3. Con verbos de «deshacerse de algo», basta **V + 了**: 把旧沙发**卖了**, 把药**吃了**.\n\n**Dónde va todo lo demás**: la negación y los auxiliares van **delante de 把**, nunca entre el objeto y el verbo:\n\n| | |\n|---|---|\n| pasado negado | 我**没**把钥匙带来. |\n| prohibición | **别** / **不要**把它卖了. |\n| condición, costumbre | 你**不**把作业做完，就不能出去. |\n| auxiliares | 我们**不能 / 要 / 应该 / 得**把… |\n\n(Todo esto va en *Adverbios* y *Auxiliar*, a la izquierda de *Con quién*, donde está 把 + objeto.)",
+      "focus": ["adverb", "aux", "with"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "aux": { "zh": "应该", "py": "yīnggāi" }, "with": { "zh": "把文件", "py": "bǎ wénjiàn" }, "verb1": { "zh": "保存好", "py": "bǎocún hǎo" } }, "end": "。", "es": "Deberías guardar bien los archivos.", "esOrder": [{ "text": "Deberías", "slot": "aux" }, { "text": "guardar bien", "slot": "verb1" }, { "text": "los archivos", "slot": "with" }] },
+        { "slots": { "subject": { "zh": "我们", "py": "wǒmen" }, "aux": { "zh": "要", "py": "yào" }, "with": { "zh": "把这些旧家具", "py": "bǎ zhèxiē jiù jiājù" }, "verb1": { "zh": "卖", "py": "mài" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Vamos a vender estos muebles viejos." },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "adverb": { "zh": "先", "py": "xiān" }, "with": { "zh": "把钱", "py": "bǎ qián" }, "verb1": { "zh": "转给", "py": "zhuǎn gěi" }, "object": { "zh": "搬家公司", "py": "bānjiā gōngsī" }, "particle": { "zh": "吧", "py": "ba" } }, "end": "。", "es": "Primero hazle la transferencia a la empresa de mudanzas." },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "aux": { "zh": "想", "py": "xiǎng" }, "with": { "zh": "把书", "py": "bǎ shū" }, "verb1": { "zh": "存在", "py": "cún zài" }, "object": { "zh": "小李那儿", "py": "Xiǎo Lǐ nàr" } }, "end": "。", "es": "Quiero dejar los libros guardados en casa de Xiao Li." },
+        { "slots": { "subject": { "zh": "小李", "py": "Xiǎo Lǐ" }, "adverb": { "zh": "已经", "py": "yǐjīng" }, "with": { "zh": "把东西", "py": "bǎ dōngxi" }, "verb1": { "zh": "搬齐", "py": "bān qí" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Xiao Li ya lo ha trasladado todo." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "还没", "py": "hái méi" }, "with": { "zh": "把旧宿舍的钥匙", "py": "bǎ jiù sùshè de yàoshi" }, "verb1": { "zh": "还回去", "py": "huán huiqu" } }, "end": "。", "es": "Todavía no he devuelto las llaves de la residencia." },
+        { "slots": { "adverb": { "zh": "别", "py": "bié" }, "with": { "zh": "把这些文件", "py": "bǎ zhèxiē wénjiàn" }, "verb1": { "zh": "放在", "py": "fàng zài" }, "object": { "zh": "空箱子里", "py": "kōng xiāngzi li" } }, "end": "。", "es": "No metas estos documentos en la caja vacía." },
+        { "slots": { "subject": { "zh": "我们", "py": "wǒmen" }, "adverb": { "zh": "不", "py": "bù" }, "aux": { "zh": "能", "py": "néng" }, "with": { "zh": "把冰箱", "py": "bǎ bīngxiāng" }, "verb1": { "zh": "搬到", "py": "bāndào" }, "object": { "zh": "楼上", "py": "lóu shang" } }, "end": "。", "es": "No podemos subir la nevera." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "with": { "zh": "把搬家公司", "py": "bǎ bānjiā gōngsī" }, "verb1": { "zh": "订好", "py": "dìng hǎo" }, "particle": { "zh": "了吗", "py": "le ma" } }, "end": "？", "es": "¿Ya has contratado la empresa de mudanzas?" },
+        { "slots": { "subject": { "zh": "我们", "py": "wǒmen" }, "aux": { "zh": "需要", "py": "xūyào" }, "with": { "zh": "把空调", "py": "bǎ kōngtiáo" }, "verb1": { "zh": "搬走", "py": "bānzǒu" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿Tenemos que llevarnos el aire acondicionado?" }
+      ],
+      "mistakes": [
+        { "wrong": "我把门没关上。", "right": "我没把门关上。", "why": "La negación va delante de 把, no delante del verbo." },
+        { "wrong": "我把钥匙能给你。", "right": "我能把钥匙给你。", "why": "Los auxiliares (能, 要, 应该, 想) también van delante de 把." },
+        { "wrong": "我放书在书架上了。", "right": "我把书放在书架上了。", "why": "Con V + 在 / 到 / 给 el 把 es obligatorio." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Xiao Li también se muda",
+      "lines": [
+        { "speaker": "雨果", "zh": "小李，你下个星期也搬家吗？都安排好了吗？", "py": "Xiǎo Lǐ, nǐ xià ge xīngqī yě bānjiā ma? Dōu ānpái hǎo le ma?", "es": "Xiao Li, ¿tú también te mudas la semana que viene? ¿Lo tienes todo organizado?" },
+        { "speaker": "小李", "zh": "还没呢。我决定先把旧家具卖了，新房子需要的东西再买。", "py": "Hái méi ne. Wǒ juédìng xiān bǎ jiù jiājù mài le, xīn fángzi xūyào de dōngxi zài mǎi.", "es": "Todavía no. He decidido vender primero los muebles viejos y ya compraré lo que necesite para la casa nueva." },
+        { "speaker": "雨果", "zh": "你的书架很结实，别把它卖了，我需要一个书架！", "py": "Nǐ de shūjià hěn jiēshi, bié bǎ tā mài le, wǒ xūyào yí ge shūjià!", "es": "Tu estantería es muy resistente: no la vendas, ¡que yo necesito una!" },
+        { "speaker": "小李", "zh": "好，那我把书架保留下来，送给你吧。", "py": "Hǎo, nà wǒ bǎ shūjià bǎoliú xialai, sònggěi nǐ ba.", "es": "Vale, pues me guardo la estantería y te la regalo." },
+        { "speaker": "雨果", "zh": "太好了，谢谢！搬家公司你订了吗？", "py": "Tài hǎo le, xièxie! Bānjiā gōngsī nǐ dìng le ma?", "es": "¡Genial, gracias! ¿Has contratado ya la empresa de mudanzas?" },
+        { "speaker": "小李", "zh": "订了，星期六上午九点。我已经把钱转给他们了。", "py": "Dìng le, xīngqīliù shàngwǔ jiǔ diǎn. Wǒ yǐjīng bǎ qián zhuǎn gěi tāmen le.", "es": "Sí, el sábado a las nueve de la mañana. Ya les he hecho la transferencia." },
+        { "speaker": "雨果", "zh": "电脑里的文件呢？你得把它们保存好。", "py": "Diànnǎo li de wénjiàn ne? Nǐ děi bǎ tāmen bǎocún hǎo.", "es": "¿Y los archivos del ordenador? Tienes que guardarlos bien." },
+        { "speaker": "小李", "zh": "放心，我都存在网上了。", "py": "Fàngxīn, wǒ dōu cún zài wǎng shang le.", "es": "Tranquilo, los tengo todos guardados en la nube." },
+        { "speaker": "雨果", "zh": "冰箱也搬过去吗？", "py": "Bīngxiāng yě bān guoqu ma?", "es": "¿La nevera también te la llevas?" },
+        { "speaker": "小李", "zh": "不能把冰箱搬过去，新房子的电梯太小了。冰箱已经空了，我想把它留给下一个住在这儿的人。", "py": "Bù néng bǎ bīngxiāng bān guoqu, xīn fángzi de diàntī tài xiǎo le. Bīngxiāng yǐjīng kōng le, wǒ xiǎng bǎ tā liúgěi xià yí ge zhù zài zhèr de rén.", "es": "No puedo llevármela: el ascensor de la casa nueva es demasiado pequeño. Ya está vacía; quiero dejársela al próximo que viva aquí." },
+        { "speaker": "雨果", "zh": "那星期六我来帮你。人到齐了，我们就开始搬。", "py": "Nà xīngqīliù wǒ lái bāng nǐ. Rén dào qí le, wǒmen jiù kāishǐ bān.", "es": "Entonces el sábado vengo a ayudarte. En cuanto estemos todos, empezamos." },
+        { "speaker": "小李", "zh": "好！别忘了把你的工具带来。", "py": "Hǎo! Bié wàng le bǎ nǐ de gōngjù dài lai.", "es": "¡Vale! No te olvides de traer tus herramientas." }
+      ],
+      "notes": "保留下来 = «quedarse con algo para que no se pierda»; 下来 aquí no es una dirección física (lo verás en la unidad 4). En China casi todo se paga con el móvil: 把钱转给他 (o 用微信转给他) es lo normal incluso entre amigos."
+    },
+    { "type": "exercises", "count": 17, "bank": ["g-bu-mei", "g-modal-verbs", "g-word-order"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "你" }, "aux": { "zh": "应该" }, "with": { "zh": "把文件" }, "verb1": { "zh": "保存好" } }, "end": "。", "es": "Deberías guardar bien los archivos." } },
+        { "sentence": { "slots": { "subject": { "zh": "我们" }, "adverb": { "zh": "不" }, "aux": { "zh": "能" }, "with": { "zh": "把冰箱" }, "verb1": { "zh": "搬到" }, "object": { "zh": "楼上" } }, "end": "。", "es": "No podemos subir la nevera." }, "distractors": ["没"] },
+        { "sentence": { "slots": { "subject": { "zh": "你" }, "adverb": { "zh": "先" }, "with": { "zh": "把钱" }, "verb1": { "zh": "转给" }, "object": { "zh": "搬家公司" }, "particle": { "zh": "吧" } }, "end": "。", "es": "Primero hazle la transferencia a la empresa de mudanzas." } },
+        { "sentence": { "slots": { "time0": { "zh": "下个星期六上午" }, "subject": { "zh": "小李" }, "aux": { "zh": "要" }, "with": { "zh": "把所有的旧家具" }, "verb1": { "zh": "卖" }, "particle": { "zh": "了" } }, "end": "。", "es": "El sábado que viene por la mañana Xiao Li va a vender todos los muebles viejos." }, "distractors": ["没"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "你应该把文件保存好。", "py": "Nǐ yīnggāi bǎ wénjiàn bǎocún hǎo.", "es": "Deberías guardar bien los archivos." },
+        { "zh": "别把书架卖了。", "py": "Bié bǎ shūjià mài le.", "es": "No vendas la estantería." },
+        { "zh": "我已经把钱转给他们了。", "py": "Wǒ yǐjīng bǎ qián zhuǎn gěi tāmen le.", "es": "Ya les he hecho la transferencia." },
+        { "zh": "我们不能把冰箱搬到楼上。", "py": "Wǒmen bù néng bǎ bīngxiāng bāndào lóu shang.", "es": "No podemos subir la nevera." }
+      ],
+      "respond": [
+        { "q": { "zh": "你把搬家公司订好了吗？", "py": "Nǐ bǎ bānjiā gōngsī dìng hǎo le ma?", "es": "¿Has contratado ya la empresa de mudanzas?" }, "model": { "zh": "还没，我今天晚上在网上订。", "py": "Hái méi, wǒ jīntiān wǎnshang zài wǎng shang dìng.", "es": "Todavía no; lo reservo esta noche por internet." } },
+        { "q": { "zh": "你的旧家具怎么办？", "py": "Nǐ de jiù jiājù zěnme bàn?", "es": "¿Qué vas a hacer con tus muebles viejos?" }, "model": { "zh": "我决定把它们卖了。", "py": "Wǒ juédìng bǎ tāmen mài le.", "es": "He decidido venderlos." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Un chico muy organizado",
+      "text": "小李下个星期要搬家了。他做事很有计划，一个月以前就开始安排。他先把要带走的东西和不要的东西分开：旧衣服和旧书，他决定把它们送给需要的人；一些还很新的家具，他把它们卖给了同学。他觉得那个书架很结实，就把它保留下来，送给了雨果。搬家公司是他在网上订的，钱也已经转给他们了。电脑里的文件很重要，他把它们都保存在网上了，还存了一份在雨果的电脑里。最后，宿舍里只有一个空冰箱。小李说：“冰箱不能搬，新房子的电梯太小了。我把它留给下一个住在这儿的人吧。”雨果说：“你这么会安排，以后可以开一家搬家公司了！”",
+      "es": "Xiao Li se muda la semana que viene. Es muy planificador: empezó a organizarlo todo hace un mes. Primero separó lo que se lleva de lo que no quiere: la ropa y los libros viejos ha decidido dárselos a quien los necesite; algunos muebles que todavía están casi nuevos se los ha vendido a compañeros. La estantería le pareció muy resistente, así que se la quedó y se la regaló a Hugo. La empresa de mudanzas la reservó por internet, y ya les ha hecho la transferencia. Los archivos del ordenador son importantes: los ha guardado todos en la nube y además ha dejado una copia en el ordenador de Hugo. Al final, en la residencia solo queda una nevera vacía. Xiao Li dice: «La nevera no se puede llevar: el ascensor de la casa nueva es demasiado pequeño. Se la dejo al próximo que viva aquí». Hugo le dice: «Con lo bien que organizas, ¡podrías montar una empresa de mudanzas!».",
+      "questions": [
+        { "q": "¿Qué ha hecho Xiao Li con los muebles casi nuevos?", "options": ["卖给了同学", "送给了雨果", "搬到了新房子"], "answer": 0 },
+        { "q": "¿Dónde ha guardado los archivos?", "options": ["网上和雨果的电脑里", "一个空箱子里", "书架上"], "answer": 0 },
+        { "q": "¿Por qué no se lleva la nevera?", "options": ["新房子的电梯太小了", "冰箱太旧了", "冰箱坏了"], "answer": 0 },
+        { "q": "¿Qué le regala a Hugo?", "options": ["书架", "冰箱", "旧衣服"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

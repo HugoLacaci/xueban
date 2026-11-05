@@ -1,0 +1,129 @@
+{
+  "id": "a1-u15-l2",
+  "title": "Ir, venir, volver; entrar y salir",
+  "zh": "我们出去吃饭吧",
+  "goal": "Decir adónde vas o vuelves andando, y usar 来 / 去 con 出 y 进 según dónde está quien habla.",
+  "minutes": 14,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "走路", "pinyin": "zǒulù", "es": "ir andando, caminar", "note": "走路去 = ir a pie." },
+    { "hanzi": "出", "pinyin": "chū", "es": "salir" },
+    { "hanzi": "出去", "pinyin": "chūqu", "es": "salir (alejándose de quien habla)" },
+    { "hanzi": "出来", "pinyin": "chūlai", "es": "salir (hacia quien habla)" },
+    { "hanzi": "进", "pinyin": "jìn", "es": "entrar", "note": "Ya conoces 请进 «pase»." },
+    { "hanzi": "进来", "pinyin": "jìnlai", "es": "entrar (hacia quien habla)" },
+    { "hanzi": "进去", "pinyin": "jìnqu", "es": "entrar (alejándose de quien habla)" },
+    { "hanzi": "过", "pinyin": "guò", "es": "cruzar, pasar", "note": "过马路 = cruzar la calle." },
+    { "hanzi": "马路", "pinyin": "mǎlù", "es": "calle, carretera" },
+    { "hanzi": "路口", "pinyin": "lùkǒu", "es": "cruce, esquina" }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "我走路去学校。", "py": "Wǒ zǒulù qù xuéxiào.", "es": "Voy a la universidad andando." },
+        { "zh": "我们出去吃饭吧。", "py": "Wǒmen chūqu chīfàn ba.", "es": "Salgamos a comer." },
+        { "zh": "你进来吧！", "py": "Nǐ jìnlai ba!", "es": "¡Pasa!" }
+      ]
+    },
+    { "type": "vocab", "title": "Moverse a pie", "words": ["走路", "出", "出去", "出来", "进", "进来", "进去", "过", "马路", "路口"] },
+    {
+      "type": "phonetics-drill",
+      "title": "ch frente a q: 出 chū, 去 qù",
+      "markdown": "Las dos son aspiradas (con soplo), pero la lengua va a sitios distintos:\n\n- **ch** (出 *chū*): punta de la lengua **doblada hacia atrás**, contra el paladar; la vocal es una «u» redonda.\n- **q** (去 *qù*): lengua **plana**, la punta abajo, detrás de los dientes inferiores; siempre va con i/ü, y la *u* de *qu* es en realidad **ü** (labios redondos diciendo «i»).\n\nY una más: 进 *jìn* (-n, lengua en los dientes) no es 静 *jìng* (-ng, la lengua atrás, como en «tengo»).",
+      "items": [
+        { "audio": "出", "options": ["chū", "qū", "cū"], "answer": 0, "explain": "ch: lengua hacia atrás." },
+        { "audio": "去", "options": ["chù", "qù", "cù"], "answer": 1, "explain": "q + ü (escrita u): lengua plana y labios redondos." },
+        { "audio": "进", "options": ["jìn", "zhèn", "jìng"], "answer": 0, "explain": "j + in: termina en -n, con la lengua en los dientes." },
+        { "audio": "出去", "options": ["chūqu", "qūchu", "chūju"], "answer": 0, "explain": "去 tras el verbo pierde el tono: chūqu." },
+        { "audio": "过", "options": ["guò", "gòu", "kuò"], "answer": 0, "explain": "uo, como en 坐 zuò; g sin soplo." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["出", "进"],
+      "mnemonics": {
+        "出": "En la forma antigua, un pie saliendo de un hoyo. Hoy parecen dos montañas 山, una encima de otra: sales por encima de las montañas.",
+        "进": "辶 (el «camino», andar) + 井 (pozo): avanzar caminando hacia dentro, entrar. 辶 también está en 过 y en 这."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "走路去, 出去 / 出来, 进去 / 进来",
+      "markdown": "**A pie**: 走路 ocupa el hueco del medio, igual que 坐地铁: 我**走路**去学校 («voy andando a la universidad»).\n\n**来 y 去 marcan la dirección respecto a quien habla**:\n- **来** = hacia mí (hacia aquí). **去** = lejos de mí (hacia allí).\n- Con 出 y 进: 出来 / 出去, 进来 / 进去. Si estás dentro de tu habitación y alguien llama: 请**进来**！ Si estás en la calle y llamas a tu amigo, que está en casa: 你**出来**吧！\n- En español «salir» y «entrar» no dicen hacia dónde; en chino casi siempre se añade 来 o 去.\n\n**Volver**: 回 + lugar (U7): 回宿舍, 回家. No lleva 去 delante.\n\n**Desde dónde**: 从 + lugar va delante del verbo (U14): 从宿舍出来. En el esqueleto lo ponemos en el hueco del lugar.\n\n**Pregunta**: 怎么去？ / 怎么走？ («¿cómo se va?», «¿por dónde se va?»).",
+      "focus": ["verb1", "verb2"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "verb1": { "zh": "走路", "py": "zǒulù" }, "verb2": { "zh": "去", "py": "qù" }, "object": { "zh": "学校", "py": "xuéxiào" } }, "end": "。", "es": "Voy a la universidad andando.", "esOrder": [{ "text": "(Yo)", "slot": "subject" }, { "text": "voy", "slot": "verb2" }, { "text": "a la universidad", "slot": "object" }, { "text": "andando", "slot": "verb1" }] },
+        { "slots": { "subject": { "zh": "我们", "py": "wǒmen" }, "verb1": { "zh": "出去", "py": "chūqu" }, "verb2": { "zh": "吃饭", "py": "chīfàn" }, "particle": { "zh": "吧", "py": "ba" } }, "end": "。", "es": "Salgamos a comer." },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "进来", "py": "jìnlai" }, "particle": { "zh": "吧", "py": "ba" } }, "end": "！", "es": "¡Pasa!" },
+        { "slots": { "subject": { "zh": "小李", "py": "Xiǎo Lǐ" }, "place": { "zh": "从宿舍", "py": "cóng sùshè" }, "verb1": { "zh": "出来", "py": "chūlai" } }, "end": "。", "es": "Xiao Li sale de la residencia (hacia aquí).", "esOrder": [{ "text": "Xiao Li", "slot": "subject" }, { "text": "sale", "slot": "verb1" }, { "text": "de la residencia", "slot": "place" }] },
+        { "slots": { "subject": { "zh": "我们", "py": "wǒmen" }, "verb1": { "zh": "过", "py": "guò" }, "object": { "zh": "马路", "py": "mǎlù" } }, "end": "。", "es": "Cruzamos la calle." },
+        { "slots": { "subject": { "zh": "雨果", "py": "Yǔguǒ" }, "time": { "zh": "晚上", "py": "wǎnshang" }, "verb1": { "zh": "走路", "py": "zǒulù" }, "verb2": { "zh": "回宿舍", "py": "huí sùshè" } }, "end": "。", "es": "Por la noche Hugo vuelve andando a la residencia." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "time": { "zh": "今天", "py": "jīntiān" }, "adverb": { "zh": "不", "py": "bù" }, "verb1": { "zh": "出去", "py": "chūqu" } }, "end": "。", "es": "Hoy no salgo." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "我们", "py": "wǒmen" }, "adverb": { "zh": "怎么", "py": "zěnme" }, "verb1": { "zh": "去", "py": "qù" }, "object": { "zh": "饭馆", "py": "fànguǎn" } }, "end": "？", "es": "¿Cómo vamos al restaurante?" },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "time": { "zh": "什么时候", "py": "shénme shíhou" }, "verb1": { "zh": "回宿舍", "py": "huí sùshè" } }, "end": "？", "es": "¿Cuándo vuelves a la residencia?" }
+      ],
+      "mistakes": [
+        { "wrong": "我去走路学校。", "right": "我走路去学校。", "why": "Como con 坐地铁: primero cómo vas (走路), después adónde (去学校)." },
+        { "wrong": "（Llaman a tu puerta）请进去！", "right": "请进来！", "why": "Quien entra viene hacia ti: 来. 进去 sería «entra ahí (lejos de mí)»." },
+        { "wrong": "我去回宿舍。", "right": "我回宿舍。", "why": "回 ya significa «volver a»: no necesita 去 delante." },
+        { "wrong": "我出宿舍从。", "right": "我从宿舍出来。", "why": "从 + lugar va delante del verbo, no detrás como en español («salgo de…»)." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Salimos a comer",
+      "lines": [
+        { "speaker": "安娜", "zh": "雨果，我们出去吃饭吧！", "py": "Yǔguǒ, wǒmen chūqu chīfàn ba!", "es": "Hugo, ¡salgamos a comer!" },
+        { "speaker": "雨果", "zh": "好啊！去哪儿？", "py": "Hǎo a! Qù nǎr?", "es": "¡Vale! ¿Adónde?" },
+        { "speaker": "安娜", "zh": "去那边的饭馆。不远，我们走路去。", "py": "Qù nàbiān de fànguǎn. Bù yuǎn, wǒmen zǒulù qù.", "es": "Al restaurante de allí. No está lejos: vamos andando." },
+        { "speaker": "雨果", "zh": "怎么走？", "py": "Zěnme zǒu?", "es": "¿Por dónde se va?" },
+        { "speaker": "安娜", "zh": "从宿舍门口出去，过马路。饭馆在路口的左边。", "py": "Cóng sùshè ménkǒu chūqu, guò mǎlù. Fànguǎn zài lùkǒu de zuǒbian.", "es": "Se sale por la puerta de la residencia y se cruza la calle. El restaurante está a la izquierda del cruce." },
+        { "speaker": "雨果", "zh": "小李呢？他也去吗？", "py": "Xiǎo Lǐ ne? Tā yě qù ma?", "es": "¿Y Xiao Li? ¿Viene también?" },
+        { "speaker": "安娜", "zh": "他在房间里。小李，你出来吧！我们去吃饭！", "py": "Tā zài fángjiān li. Xiǎo Lǐ, nǐ chūlai ba! Wǒmen qù chīfàn!", "es": "Está en su habitación. ¡Xiao Li, sal! ¡Nos vamos a comer!" },
+        { "speaker": "小李", "zh": "好，我马上出来！", "py": "Hǎo, wǒ mǎshàng chūlai!", "es": "¡Vale, salgo enseguida!" }
+      ],
+      "notes": "Anna está fuera, en el pasillo: por eso le dice a Xiao Li 你出来吧 (sal hacia aquí). Y Xiao Li contesta 我马上出来, también con 来, porque sale hacia donde están ellos. Fíjate en «¿Viene también?»: en chino se dice 他也去吗 si la comida es en otro sitio; el español usa «venir» con más libertad que el chino 来."
+    },
+    { "type": "exercises", "count": 14, "bank": ["g-lai-qu", "g-zai", "u08"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "我" }, "verb1": { "zh": "走路" }, "verb2": { "zh": "去" }, "object": { "zh": "学校" } }, "end": "。", "es": "Voy a la universidad andando." }, "distractors": ["坐"] },
+        { "sentence": { "slots": { "subject": { "zh": "我们" }, "verb1": { "zh": "出去" }, "verb2": { "zh": "吃饭" }, "particle": { "zh": "吧" } }, "end": "。", "es": "Salgamos a comer." }, "distractors": ["进来"] },
+        { "sentence": { "slots": { "subject": { "zh": "小李" }, "place": { "zh": "从宿舍" }, "verb1": { "zh": "出来" } }, "end": "。", "es": "Xiao Li sale de la residencia." }, "distractors": ["去"] },
+        { "sentence": { "slots": { "time0": { "zh": "今天晚上" }, "subject": { "zh": "我" }, "with": { "zh": "跟小李一起" }, "verb1": { "zh": "走路" }, "verb2": { "zh": "回宿舍" } }, "end": "。", "es": "Esta noche vuelvo andando a la residencia con Xiao Li." }, "distractors": ["去"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "我走路去学校。", "py": "Wǒ zǒulù qù xuéxiào.", "es": "Voy a la universidad andando." },
+        { "zh": "你进来吧！", "py": "Nǐ jìnlai ba!", "es": "¡Pasa!" },
+        { "zh": "我们出去吃饭吧。", "py": "Wǒmen chūqu chīfàn ba.", "es": "Salgamos a comer." },
+        { "zh": "从宿舍门口出去，过马路。", "py": "Cóng sùshè ménkǒu chūqu, guò mǎlù.", "es": "Sal por la puerta de la residencia y cruza la calle." }
+      ],
+      "respond": [
+        { "q": { "zh": "你怎么去饭馆？", "py": "Nǐ zěnme qù fànguǎn?", "es": "¿Cómo vas al restaurante?" }, "model": { "zh": "我走路去饭馆。", "py": "Wǒ zǒulù qù fànguǎn.", "es": "Voy andando." } },
+        { "q": { "zh": "你什么时候回宿舍？", "py": "Nǐ shénme shíhou huí sùshè?", "es": "¿Cuándo vuelves a la residencia?" }, "model": { "zh": "我晚上回宿舍。", "py": "Wǒ wǎnshang huí sùshè.", "es": "Vuelvo por la noche." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "De la residencia al metro",
+      "text": "雨果的宿舍不大，在三楼。每天早上八点，他从宿舍出来，走路去地铁站。地铁站不远，在路口的右边。他过马路，进地铁站，坐二号线去学校。晚上他坐地铁回宿舍。",
+      "es": "La habitación de Hugo en la residencia no es grande; está en la tercera planta. Todas las mañanas a las ocho sale de la residencia y va andando a la estación de metro. La estación no está lejos: está a la derecha del cruce. Cruza la calle, entra en la estación y coge la línea 2 hasta la universidad. Por la noche vuelve a la residencia en metro.",
+      "questions": [
+        { "q": "¿En qué planta está su habitación?", "options": ["En la tercera", "En la segunda", "En la octava"], "answer": 0 },
+        { "q": "¿Cómo va a la estación de metro?", "options": ["Andando", "En bici", "En taxi"], "answer": 0 },
+        { "q": "¿Dónde está la estación?", "options": ["A la derecha del cruce", "A la izquierda del cruce", "Muy lejos"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "id": "b1-u07-l2",
+  "title": "Llevo dos años: el 了 doble y 自从…以来",
+  "zh": "我学了两年汉语了",
+  "goal": "Contar cuánto tiempo llevas haciendo algo (y que sigue) con el 了 doble, y marcar el punto de partida con 自从…以来.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "自从", "pinyin": "zìcóng", "es": "desde (un momento del pasado)", "note": "Solo para el pasado: 自从来到上海… Para el futuro, 从…起." },
+    { "hanzi": "以来", "pinyin": "yǐlái", "es": "desde (entonces) hasta ahora", "note": "Cierra el marco: 自从…以来, 去年以来." },
+    { "hanzi": "已", "pinyin": "yǐ", "es": "ya (escrito)", "note": "Forma escrita de 已经." },
+    { "hanzi": "早已", "pinyin": "zǎoyǐ", "es": "hace tiempo que ya…", "note": "他早已退休了 = hace mucho que se jubiló." },
+    { "hanzi": "至今", "pinyin": "zhìjīn", "es": "hasta hoy, hasta ahora" },
+    { "hanzi": "曾经", "pinyin": "céngjīng", "es": "en otro tiempo, alguna vez (en el pasado)", "note": "Suele ir con 过: 我曾经去过西安." },
+    { "hanzi": "从前", "pinyin": "cóngqián", "es": "antes, antiguamente; érase una vez" },
+    { "hanzi": "当初", "pinyin": "dāngchū", "es": "al principio, en aquel momento" },
+    { "hanzi": "目前", "pinyin": "mùqián", "es": "actualmente, de momento" },
+    { "hanzi": "退休", "pinyin": "tuìxiū", "es": "jubilarse" },
+    { "hanzi": "成功", "pinyin": "chénggōng", "es": "éxito; tener éxito" },
+    { "hanzi": "持续", "pinyin": "chíxù", "es": "durar, continuar sin parar" },
+    { "hanzi": "不断", "pinyin": "búduàn", "es": "sin cesar, continuamente", "note": "不 + cuarto tono → bú." }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "我学了两年汉语了。", "py": "Wǒ xué le liǎng nián Hànyǔ le.", "es": "Llevo dos años estudiando chino." },
+        { "zh": "我来上海一年了。", "py": "Wǒ lái Shànghǎi yì nián le.", "es": "Hace un año que vine a Shanghái." },
+        { "zh": "自从来到中国以来，我认识了很多朋友。", "py": "Zìcóng láidào Zhōngguó yǐlái, wǒ rènshi le hěn duō péngyou.", "es": "Desde que llegué a China he conocido a muchos amigos." }
+      ]
+    },
+    { "type": "vocab", "title": "Desde entonces hasta hoy", "words": ["自从", "以来", "已", "早已", "至今", "曾经", "从前", "当初", "目前", "退休", "成功", "持续", "不断"] },
+    {
+      "type": "phonetics-drill",
+      "title": "Dos 了 neutros y 不断",
+      "markdown": "En 我学**了**两年汉语**了** hay **dos 了**, y los dos son **neutros (le)**:\n\n- El **primero** va pegado al verbo, muy corto: *xué le*.\n- El **segundo** cierra la frase; es un poco más largo y la voz cae con él: *…Hànyǔ le.* Si lo dejas caer bien, el oyente entiende «y sigo».\n\nOtras palabras de hoy:\n- **不断 búduàn**: 不 delante de cuarto tono pasa a segundo.\n- **曾经 céngjīng**: *c* es «ts» con aire; no la confundas con *z* (zēng).\n- **已 yǐ** y **以 yǐ** suenan igual: 以来 *yǐlái*, 早已 *zǎoyǐ* (3 + 3 → el primero sube: *záoyǐ* al hablar).",
+      "items": [
+        { "audio": "我学了两年汉语了。", "prompt": "¿Cuántos 了 oyes?", "options": ["Dos", "Uno", "Ninguno"], "answer": 0, "explain": "Uno tras el verbo y otro al final, los dos neutros." },
+        { "audio": "不断", "options": ["búduàn", "bùduàn", "bùduān"], "answer": 0, "explain": "不 + 4.º tono → bú." },
+        { "audio": "曾经", "options": ["céngjīng", "zēngjīng", "chéngjīng"], "answer": 0, "explain": "c aspirada, no retrofleja." },
+        { "audio": "退休", "options": ["tuìxiū", "tuīxiù", "duìxiū"], "answer": 0, "explain": "t con aire y cuarto + primero." },
+        { "audio": "至今", "options": ["zhìjīn", "zìjīn", "zhìjīng"], "answer": 0, "explain": "zh retrofleja y final -n (jīn), no -ng." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["休", "断"],
+      "mnemonics": {
+        "休": "亻 (persona) + 木 (árbol): una persona apoyada en un árbol, descansando. 休息 es descansar y 退休, «retirarse a descansar».",
+        "断": "米 (hilos o granos atados) + 斤 (un hacha): cortar con el hacha lo que estaba unido. 不断 = sin cortar, sin parar."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "El 了 doble: 学了两年汉语了",
+      "markdown": "En A2 viste que **V + 了 + duración** cuenta cuánto duró algo. Ahora la diferencia que más cuesta:\n\n| | Significa |\n|---|---|\n| 我学了两年汉语。 | Estudié chino dos años (puede que ya no). |\n| 我学了两年汉语**了**。 | **Llevo** dos años estudiando chino (y sigo). |\n\nEl **了 final** dice «hasta ahora, y la cosa sigue». En español lo traducimos con «llevo…» o «hace… que…».\n\n**Convención del esqueleto** (la de A2): *Verbo 1* = V + 了, la duración en *Complemento* y el 了 final en *Partícula*: 我 · 学了 · 两年 · 了. Con objeto, la duración se pega al objeto en *Objeto* (学了 · **两年汉语** · 了), o se repite el verbo (*Verbo 1* = 学汉语, *Verbo 2* = 学了).\n\n- **Con cantidades**, igual: 我看了三本**了** = ya llevo tres (y voy a seguir).\n- **Verbos que no duran** (来, 退休, 毕业, 结婚, 认识): el tiempo cuenta **desde que pasó** y va **sin 了 tras el verbo**: 我来上海一年**了** (hace un año que vine), 我爸爸退休三年**了**.\n- **Negativa** (A2): duración + **没** + V + 了: 我两年**没**回西班牙**了**.\n\n**Marco temporal**: **自从 … 以来** («desde que…») va entero en *Tiempo inicial*, delante del sujeto, con coma: **自从来到上海以来，**我…",
+      "focus": ["verb1", "particle", "time0"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "verb1": { "zh": "学了", "py": "xué le" }, "object": { "zh": "两年汉语", "py": "liǎng nián Hànyǔ" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Llevo dos años estudiando chino.", "esOrder": [{ "text": "Llevo", "slot": "particle" }, { "text": "dos años", "slot": "object" }, { "text": "estudiando", "slot": "verb1" }, { "text": "chino", "slot": "object" }] },
+        { "slots": { "subject": { "zh": "安娜", "py": "Ānnà" }, "verb1": { "zh": "学汉语", "py": "xué Hànyǔ" }, "verb2": { "zh": "学了", "py": "xué le" }, "complement": { "zh": "三年", "py": "sān nián" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Ana lleva tres años estudiando chino." },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "已经", "py": "yǐjīng" }, "verb1": { "zh": "看了", "py": "kàn le" }, "object": { "zh": "三本", "py": "sān běn" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Ya llevo tres (libros) leídos." },
+        { "slots": { "subject": { "zh": "我爸爸", "py": "wǒ bàba" }, "verb1": { "zh": "退休", "py": "tuìxiū" }, "complement": { "zh": "三年", "py": "sān nián" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Mi padre se jubiló hace tres años." },
+        { "slots": { "time0": { "zh": "自从来到上海以来，", "py": "zìcóng láidào Shànghǎi yǐlái," }, "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "已经", "py": "yǐjīng" }, "verb1": { "zh": "认识了", "py": "rènshi le" }, "object": { "zh": "二十多个中国朋友", "py": "èrshí duō ge Zhōngguó péngyou" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Desde que llegué a Shanghái ya he conocido a más de veinte amigos chinos (y sigo)." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "time": { "zh": "两年", "py": "liǎng nián" }, "adverb": { "zh": "没", "py": "méi" }, "verb1": { "zh": "回", "py": "huí" }, "object": { "zh": "西班牙", "py": "Xībānyá" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Llevo dos años sin volver a España." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "学汉语", "py": "xué Hànyǔ" }, "verb2": { "zh": "学了", "py": "xué le" }, "complement": { "zh": "多长时间", "py": "duō cháng shíjiān" }, "particle": { "zh": "了", "py": "le" } }, "end": "？", "es": "¿Cuánto tiempo llevas estudiando chino?" },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "来", "py": "lái" }, "object": { "zh": "中国", "py": "Zhōngguó" }, "complement": { "zh": "几年", "py": "jǐ nián" }, "particle": { "zh": "了", "py": "le" } }, "end": "？", "es": "¿Cuántos años hace que viniste a China?" }
+      ],
+      "mistakes": [
+        { "wrong": "我学了两年汉语。（= sigo estudiando）", "right": "我学了两年汉语了。", "why": "Sin el 了 final, la frase cuenta algo cerrado («estudié dos años»). Para «llevo», hace falta el segundo 了." },
+        { "wrong": "我来了上海一年了。", "right": "我来上海一年了。", "why": "Con verbos que no duran (来, 退休, 结婚), el tiempo cuenta desde que pasó: sin 了 tras el verbo." },
+        { "wrong": "我没回西班牙两年了。", "right": "我两年没回西班牙了。", "why": "En la negativa la duración va delante de 没." },
+        { "wrong": "自从明年以来，我要工作。", "right": "从明年起，我要工作。", "why": "自从…以来 solo mira al pasado; para el futuro, 从…起 (A2)." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "¿Cuánto llevas aquí?",
+      "lines": [
+        { "speaker": "王老师", "zh": "雨果，你来上海多长时间了？", "py": "Yǔguǒ, nǐ lái Shànghǎi duō cháng shíjiān le?", "es": "Hugo, ¿cuánto tiempo hace que llegaste a Shanghái?" },
+        { "speaker": "雨果", "zh": "我来上海一年多了。", "py": "Wǒ lái Shànghǎi yì nián duō le.", "es": "Hace algo más de un año." },
+        { "speaker": "王老师", "zh": "那你学汉语学了多长时间了？", "py": "Nà nǐ xué Hànyǔ xué le duō cháng shíjiān le?", "es": "¿Y cuánto llevas estudiando chino?" },
+        { "speaker": "雨果", "zh": "我学了两年汉语了。在西班牙学了一年，在这儿又学了一年。", "py": "Wǒ xué le liǎng nián Hànyǔ le. Zài Xībānyá xué le yì nián, zài zhèr yòu xué le yì nián.", "es": "Llevo dos años. Estudié uno en España y aquí otro más." },
+        { "speaker": "王老师", "zh": "当初你来的时候，一句汉语也不会说吧？", "py": "Dāngchū nǐ lái de shíhou, yí jù Hànyǔ yě bú huì shuō ba?", "es": "Cuando llegaste, no sabías decir ni una frase en chino, ¿verdad?" },
+        { "speaker": "雨果", "zh": "会说一点儿，可是听不懂。自从来到上海以来，我每天都练习。", "py": "Huì shuō yìdiǎnr, kěshì tīng bu dǒng. Zìcóng láidào Shànghǎi yǐlái, wǒ měi tiān dōu liànxí.", "es": "Sabía decir un poco, pero no entendía nada. Desde que llegué a Shanghái practico todos los días." },
+        { "speaker": "王老师", "zh": "你的进步很大。不断练习，就一定能成功。", "py": "Nǐ de jìnbù hěn dà. Búduàn liànxí, jiù yídìng néng chénggōng.", "es": "Has progresado mucho. Si practicas sin parar, seguro que lo conseguirás." },
+        { "speaker": "雨果", "zh": "谢谢老师！您教汉语教了多少年了？", "py": "Xièxie lǎoshī! Nín jiāo Hànyǔ jiāo le duōshao nián le?", "es": "¡Gracias, profesora! ¿Y usted cuántos años lleva enseñando chino?" },
+        { "speaker": "王老师", "zh": "我已经教了二十年了。我爸爸从前也是老师，他早已退休了。", "py": "Wǒ yǐjīng jiāo le èrshí nián le. Wǒ bàba cóngqián yě shì lǎoshī, tā zǎoyǐ tuìxiū le.", "es": "Ya llevo veinte años. Mi padre también fue profesor; hace mucho que se jubiló." },
+        { "speaker": "雨果", "zh": "他退休多少年了？", "py": "Tā tuìxiū duōshao nián le?", "es": "¿Cuántos años hace que se jubiló?" },
+        { "speaker": "王老师", "zh": "十五年了。可是他至今还每天看书、写字。", "py": "Shíwǔ nián le. Kěshì tā zhìjīn hái měi tiān kàn shū, xiě zì.", "es": "Quince años. Pero hasta hoy sigue leyendo y escribiendo caligrafía todos los días." },
+        { "speaker": "雨果", "zh": "真了不起！目前我只能每天写十个汉字。", "py": "Zhēn liǎobuqǐ! Mùqián wǒ zhǐ néng měi tiān xiě shí ge Hànzì.", "es": "¡Qué admirable! De momento yo solo puedo escribir diez caracteres al día." }
+      ],
+      "notes": "Fíjate en la pareja: 我在西班牙学了一年 (algo cerrado, ya terminó) y 我学了两年汉语了 (sigue). 他退休十五年了 cuenta el tiempo desde que se jubiló. 写字 aquí es «hacer caligrafía», una afición muy común entre los jubilados chinos."
+    },
+    { "type": "exercises", "count": 17, "bank": ["g-le", "g-dates-time", "g-bu-mei"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "我" }, "verb1": { "zh": "学了" }, "object": { "zh": "两年汉语" }, "particle": { "zh": "了" } }, "end": "。", "es": "Llevo dos años estudiando chino." }, "distractors": ["过"] },
+        { "sentence": { "slots": { "subject": { "zh": "我爸爸" }, "verb1": { "zh": "退休" }, "complement": { "zh": "五年" }, "particle": { "zh": "了" } }, "end": "。", "es": "Mi padre se jubiló hace cinco años." }, "distractors": ["退休了"] },
+        { "sentence": { "slots": { "subject": { "zh": "安娜" }, "time": { "zh": "三个月" }, "adverb": { "zh": "没" }, "verb1": { "zh": "回" }, "object": { "zh": "家" }, "particle": { "zh": "了" } }, "end": "。", "es": "Ana lleva tres meses sin volver a casa." }, "distractors": ["不"] },
+        { "sentence": { "slots": { "time0": { "zh": "自从来到中国以来，" }, "subject": { "zh": "雨果" }, "time": { "zh": "每天" }, "adverb": { "zh": "都" }, "with": { "zh": "跟小李一起" }, "verb1": { "zh": "练习" }, "object": { "zh": "口语" } }, "end": "。", "es": "Desde que llegó a China, Hugo practica la expresión oral con Xiao Li todos los días." } },
+        { "sentence": { "slots": { "subject": { "zh": "王老师" }, "place": { "zh": "在这个大学" }, "adverb": { "zh": "已经" }, "verb1": { "zh": "教了" }, "object": { "zh": "二十年汉语" }, "particle": { "zh": "了" } }, "end": "。", "es": "La profesora Wang ya lleva veinte años enseñando chino en esta universidad." } }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "我学了两年汉语了。", "py": "Wǒ xué le liǎng nián Hànyǔ le.", "es": "Llevo dos años estudiando chino." },
+        { "zh": "我来上海一年多了。", "py": "Wǒ lái Shànghǎi yì nián duō le.", "es": "Hace algo más de un año que vine a Shanghái." },
+        { "zh": "我两年没回西班牙了。", "py": "Wǒ liǎng nián méi huí Xībānyá le.", "es": "Llevo dos años sin volver a España." },
+        { "zh": "不断练习，就一定能成功。", "py": "Búduàn liànxí, jiù yídìng néng chénggōng.", "es": "Si practicas sin parar, seguro que lo consigues." }
+      ],
+      "respond": [
+        { "q": { "zh": "你学汉语学了多长时间了？", "py": "Nǐ xué Hànyǔ xué le duō cháng shíjiān le?", "es": "¿Cuánto llevas estudiando chino?" }, "model": { "zh": "我学了两年多了，目前每天学一个小时。", "py": "Wǒ xué le liǎng nián duō le, mùqián měi tiān xué yí ge xiǎoshí.", "es": "Llevo algo más de dos años; de momento estudio una hora al día." } },
+        { "q": { "zh": "你多长时间没回家了？", "py": "Nǐ duō cháng shíjiān méi huí jiā le?", "es": "¿Cuánto tiempo llevas sin volver a casa?" }, "model": { "zh": "我半年没回家了，很想我的家人。", "py": "Wǒ bàn nián méi huí jiā le, hěn xiǎng wǒ de jiārén.", "es": "Llevo medio año sin volver; echo mucho de menos a mi familia." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Un año en Shanghái",
+      "text": "雨果来上海一年多了。当初他刚到的时候，一句汉语也听不懂，买东西的时候只能请小李帮忙。自从来到上海以来，他每天都跟小李练习口语，晚上还写汉字。到现在，他已经学了两年汉语了，也认识了二十多个中国朋友。王老师说他的进步很大，只要不断练习，就一定能成功。王老师在这个大学教汉语已经教了二十年了。她的爸爸从前也是老师，早已退休了。他退休十五年了，可是至今每天还看书、写字。雨果说：“目前我只会写五百个汉字，我想再学两年，学到能看懂中文报纸。”雨果半年没回西班牙了，他很想家，可是他觉得在上海的生活很有意思。",
+      "es": "Hugo lleva algo más de un año en Shanghái. Al principio, cuando acababa de llegar, no entendía ni una frase en chino y para comprar tenía que pedirle ayuda a Xiao Li. Desde que llegó a Shanghái practica conversación con Xiao Li todos los días, y por la noche escribe caracteres. A día de hoy lleva ya dos años estudiando chino y ha conocido a más de veinte amigos chinos. La profesora Wang dice que ha progresado mucho y que, con tal de practicar sin parar, seguro que lo conseguirá. Ella lleva veinte años enseñando chino en esta universidad. Su padre también fue profesor y hace mucho que se jubiló: lleva quince años jubilado, pero aún hoy lee y hace caligrafía todos los días. Hugo dice: «De momento solo sé escribir quinientos caracteres; quiero estudiar dos años más, hasta poder leer el periódico en chino». Hugo lleva medio año sin volver a España; echa de menos su casa, pero su vida en Shanghái le parece muy interesante.",
+      "questions": [
+        { "q": "¿Cuánto tiempo lleva Hugo estudiando chino?", "options": ["两年", "一年", "半年"], "answer": 0 },
+        { "q": "¿Qué significa 他退休十五年了?", "options": ["Hace quince años que se jubiló", "Trabajó quince años", "Se jubilará dentro de quince años"], "answer": 0 },
+        { "q": "¿Cuánto lleva Hugo sin volver a España?", "options": ["半年", "一年", "两年"], "answer": 0 },
+        { "q": "¿Qué hacía Hugo al principio para comprar?", "options": ["请小李帮忙", "用手机", "说汉语"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

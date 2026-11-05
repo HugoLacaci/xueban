@@ -1,0 +1,718 @@
+{
+  "id": "a2-u04-l4",
+  "title": "La comida está lista: el objeto delante (饭做好了)",
+  "zh": "饭做好了",
+  "goal": "Hablar de las comidas del día poniendo la cosa delante: 饭做好了, 汤喝完了, 豆腐没买到.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    {
+      "hanzi": "早餐",
+      "pinyin": "zǎocān",
+      "es": "desayuno",
+      "note": "Más formal que 早饭."
+    },
+    {
+      "hanzi": "午餐",
+      "pinyin": "wǔcān",
+      "es": "comida (del mediodía)"
+    },
+    {
+      "hanzi": "晚餐",
+      "pinyin": "wǎncān",
+      "es": "cena"
+    },
+    {
+      "hanzi": "快餐",
+      "pinyin": "kuàicān",
+      "es": "comida rápida"
+    },
+    {
+      "hanzi": "汤",
+      "pinyin": "tāng",
+      "es": "sopa, caldo"
+    },
+    {
+      "hanzi": "白菜",
+      "pinyin": "báicài",
+      "es": "col china"
+    },
+    {
+      "hanzi": "豆腐",
+      "pinyin": "dòufu",
+      "es": "tofu"
+    },
+    {
+      "hanzi": "猪",
+      "pinyin": "zhū",
+      "es": "cerdo",
+      "note": "猪肉 = carne de cerdo."
+    },
+    {
+      "hanzi": "牛",
+      "pinyin": "niú",
+      "es": "vaca, buey",
+      "note": "牛肉 = ternera."
+    },
+    {
+      "hanzi": "羊",
+      "pinyin": "yáng",
+      "es": "oveja, cordero",
+      "note": "羊肉 = cordero."
+    },
+    {
+      "hanzi": "香",
+      "pinyin": "xiāng",
+      "es": "que huele bien; sabroso"
+    },
+    {
+      "hanzi": "美食",
+      "pinyin": "měishí",
+      "es": "buena comida, gastronomía"
+    }
+  ],
+  "extraVocab": [
+    "豆腐"
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        {
+          "zh": "晚餐做好了，快来吃！",
+          "py": "Wǎncān zuòhǎo le, kuài lái chī!",
+          "es": "La cena está lista, ¡a comer!"
+        },
+        {
+          "zh": "汤都喝完了。",
+          "py": "Tāng dōu hēwán le.",
+          "es": "La sopa se ha acabado toda."
+        },
+        {
+          "zh": "豆腐我没买到。",
+          "py": "Dòufu wǒ méi mǎidào.",
+          "es": "El tofu no lo he conseguido comprar."
+        }
+      ]
+    },
+    {
+      "type": "vocab",
+      "title": "Las comidas del día",
+      "words": [
+        "早餐",
+        "午餐",
+        "晚餐",
+        "快餐",
+        "汤",
+        "白菜",
+        "豆腐",
+        "猪",
+        "牛",
+        "羊",
+        "香",
+        "美食"
+      ]
+    },
+    {
+      "type": "phonetics-drill",
+      "title": "-ang, -an y la ü de 牛: 汤, 香, 餐",
+      "markdown": "Hoy hay muchas vocales nasales:\n\n- **-ang** (con g, sonido que sale por la nariz con la boca abierta): **汤** *tāng*, **香** *xiāng*, **羊** *yáng*.\n- **-an** (sin g, la lengua toca detrás de los dientes): **餐** *cān*, **饭** *fàn*.\n\n**牛 niú** se escribe *iu* pero suena **«ioʊ»**: *niou*. Lo mismo en 九 *jiǔ*.\n\n**豆腐** *dòufu*: 腐 neutro.",
+      "items": [
+        {
+          "audio": "汤",
+          "options": [
+            "tāng",
+            "tān",
+            "dāng"
+          ],
+          "answer": 0,
+          "explain": "-ang con g; t con aire."
+        },
+        {
+          "audio": "餐",
+          "options": [
+            "cān",
+            "cāng",
+            "zān"
+          ],
+          "answer": 0,
+          "explain": "-an sin g; c con aire (ts)."
+        },
+        {
+          "audio": "香",
+          "options": [
+            "xiāng",
+            "xiān",
+            "shāng"
+          ],
+          "answer": 0,
+          "explain": "x + iang."
+        },
+        {
+          "audio": "牛",
+          "options": [
+            "niú",
+            "liú",
+            "niǔ"
+          ],
+          "answer": 0,
+          "explain": "n + iu (= iou), 2.º tono."
+        },
+        {
+          "audio": "豆腐",
+          "options": [
+            "dòufu",
+            "dòufǔ",
+            "tòufu"
+          ],
+          "answer": 0,
+          "explain": "腐 neutro."
+        }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": [
+        "汤",
+        "香"
+      ],
+      "mnemonics": {
+        "汤": "氵 (agua) + 昜 (el sol que sube, da el sonido): agua caliente → sopa, caldo.",
+        "香": "禾 (cereal) + 日 (sol, aquí la boca): el olor del grano al cocerse → que huele bien."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "La cosa delante: 饭 | 做 | 好 | 了",
+      "markdown": "En chino es muy normal empezar la frase por **la cosa de la que hablas** (el *tema*) y no decir quién hace la acción:\n\n- **饭**做好了。 → *La comida está hecha.* (no decimos quién la ha hecho)\n- **汤**喝完了。 → *La sopa se ha acabado.*\n- **豆腐**我没买到。 → *El tofu no lo he conseguido comprar.*\n\nEl objeto pasa al **hueco del sujeto** y casi siempre va con un **complemento de resultado** (做**好**, 吃**完**) y **了**. En español usaríamos «se» o una pasiva («la comida está lista», «se ha acabado la sopa»); en chino **no hace falta ninguna palabra especial** (nada de 被).\n\nCon **都**: 菜**都**吃完了 → *Nos hemos comido todos los platos.*",
+      "focus": [
+        "subject",
+        "complement"
+      ],
+      "compare": true,
+      "sentences": [
+        {
+          "slots": {
+            "subject": {
+              "zh": "饭",
+              "py": "fàn"
+            },
+            "verb1": {
+              "zh": "做",
+              "py": "zuò"
+            },
+            "complement": {
+              "zh": "好",
+              "py": "hǎo"
+            },
+            "particle": {
+              "zh": "了",
+              "py": "le"
+            }
+          },
+          "end": "。",
+          "es": "La comida está lista.",
+          "esOrder": [
+            {
+              "text": "La comida",
+              "slot": "subject"
+            },
+            {
+              "text": "está lista",
+              "slot": "complement"
+            }
+          ]
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "汤",
+              "py": "tāng"
+            },
+            "adverb": {
+              "zh": "都",
+              "py": "dōu"
+            },
+            "verb1": {
+              "zh": "喝",
+              "py": "hē"
+            },
+            "complement": {
+              "zh": "完",
+              "py": "wán"
+            },
+            "particle": {
+              "zh": "了",
+              "py": "le"
+            }
+          },
+          "end": "。",
+          "es": "La sopa se ha acabado toda."
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "晚餐",
+              "py": "wǎncān"
+            },
+            "verb1": {
+              "zh": "准备",
+              "py": "zhǔnbèi"
+            },
+            "complement": {
+              "zh": "好",
+              "py": "hǎo"
+            },
+            "particle": {
+              "zh": "了",
+              "py": "le"
+            }
+          },
+          "end": "。",
+          "es": "La cena está preparada."
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "牛肉",
+              "py": "niúròu"
+            },
+            "verb1": {
+              "zh": "买",
+              "py": "mǎi"
+            },
+            "complement": {
+              "zh": "到",
+              "py": "dào"
+            },
+            "particle": {
+              "zh": "了",
+              "py": "le"
+            }
+          },
+          "end": "。",
+          "es": "La ternera ya está comprada.",
+          "esOrder": [
+            {
+              "text": "La ternera",
+              "slot": "subject"
+            },
+            {
+              "text": "ya está comprada",
+              "slot": "complement"
+            }
+          ]
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "这个菜我",
+              "py": "zhège cài wǒ"
+            },
+            "verb1": {
+              "zh": "吃过",
+              "py": "chīguo"
+            }
+          },
+          "end": "。",
+          "es": "Este plato ya lo he probado."
+        }
+      ],
+      "negative": [
+        {
+          "slots": {
+            "subject": {
+              "zh": "饭",
+              "py": "fàn"
+            },
+            "adverb": {
+              "zh": "还没",
+              "py": "hái méi"
+            },
+            "verb1": {
+              "zh": "做",
+              "py": "zuò"
+            },
+            "complement": {
+              "zh": "好",
+              "py": "hǎo"
+            }
+          },
+          "end": "。",
+          "es": "La comida aún no está lista."
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "豆腐我",
+              "py": "dòufu wǒ"
+            },
+            "adverb": {
+              "zh": "没",
+              "py": "méi"
+            },
+            "verb1": {
+              "zh": "买",
+              "py": "mǎi"
+            },
+            "complement": {
+              "zh": "到",
+              "py": "dào"
+            }
+          },
+          "end": "。",
+          "es": "El tofu no lo he conseguido comprar."
+        }
+      ],
+      "question": [
+        {
+          "slots": {
+            "subject": {
+              "zh": "汤",
+              "py": "tāng"
+            },
+            "verb1": {
+              "zh": "做",
+              "py": "zuò"
+            },
+            "complement": {
+              "zh": "好",
+              "py": "hǎo"
+            },
+            "particle": {
+              "zh": "了吗",
+              "py": "le ma"
+            }
+          },
+          "end": "？",
+          "es": "¿Está lista la sopa?"
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "午餐",
+              "py": "wǔcān"
+            },
+            "verb1": {
+              "zh": "准备",
+              "py": "zhǔnbèi"
+            },
+            "complement": {
+              "zh": "好",
+              "py": "hǎo"
+            },
+            "particle": {
+              "zh": "了没有",
+              "py": "le méiyǒu"
+            }
+          },
+          "end": "？",
+          "es": "¿Está preparada la comida?"
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "饭被做好了。",
+          "right": "饭做好了。",
+          "why": "Con comida y tareas normales no se usa 被: basta con poner la cosa delante."
+        },
+        {
+          "wrong": "做好饭了。 (sin sujeto, para «la comida está lista»)",
+          "right": "饭做好了。",
+          "why": "Si no dices quién, empieza por la cosa: 饭做好了."
+        },
+        {
+          "wrong": "汤喝完。",
+          "right": "汤喝完了。",
+          "why": "Para decir que ya ha pasado, hace falta 了."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Comida en casa de Xiao Li",
+      "lines": [
+        {
+          "speaker": "阿姨",
+          "zh": "雨果，欢迎欢迎！午餐快做好了。",
+          "py": "Yǔguǒ, huānyíng huānyíng! Wǔcān kuài zuòhǎo le.",
+          "es": "¡Bienvenido, Hugo! La comida está casi lista."
+        },
+        {
+          "speaker": "雨果",
+          "zh": "阿姨好！好香啊！今天有什么美食？",
+          "py": "Āyí hǎo! Hǎo xiāng a! Jīntiān yǒu shénme měishí?",
+          "es": "¡Hola! ¡Qué bien huele! ¿Qué delicias hay hoy?"
+        },
+        {
+          "speaker": "阿姨",
+          "zh": "有白菜豆腐汤，还有牛肉和猪肉。",
+          "py": "Yǒu báicài dòufu tāng, hái yǒu niúròu hé zhūròu.",
+          "es": "Hay sopa de col china con tofu, y también ternera y cerdo."
+        },
+        {
+          "speaker": "小李",
+          "zh": "妈，羊肉呢？",
+          "py": "Mā, yángròu ne?",
+          "es": "Mamá, ¿y el cordero?"
+        },
+        {
+          "speaker": "阿姨",
+          "zh": "羊肉没买到，明天再买。",
+          "py": "Yángròu méi mǎidào, míngtiān zài mǎi.",
+          "es": "El cordero no lo he conseguido; mañana lo compro."
+        },
+        {
+          "speaker": "雨果",
+          "zh": "我来帮忙吧。",
+          "py": "Wǒ lái bāngmáng ba.",
+          "es": "Déjeme que la ayude."
+        },
+        {
+          "speaker": "阿姨",
+          "zh": "不用，你坐。……好，饭做好了！",
+          "py": "Búyòng, nǐ zuò. ……hǎo, fàn zuòhǎo le!",
+          "es": "No hace falta, siéntate. … ¡Ya está, la comida está lista!"
+        },
+        {
+          "speaker": "小李",
+          "zh": "雨果，你在西班牙早餐吃什么？",
+          "py": "Yǔguǒ, nǐ zài Xībānyá zǎocān chī shénme?",
+          "es": "Hugo, ¿qué desayunas en España?"
+        },
+        {
+          "speaker": "雨果",
+          "zh": "一般喝咖啡，吃面包。午餐很晚，下午两点。",
+          "py": "Yìbān hē kāfēi, chī miànbāo. Wǔcān hěn wǎn, xiàwǔ liǎng diǎn.",
+          "es": "Normalmente café y pan. La comida es muy tarde, a las dos."
+        },
+        {
+          "speaker": "阿姨",
+          "zh": "两点！我们十二点就吃完了。汤喝完了，我再去拿！",
+          "py": "Liǎng diǎn! Wǒmen shí'èr diǎn jiù chīwán le. Tāng hēwán le, wǒ zài qù ná!",
+          "es": "¡A las dos! Nosotros a las doce ya hemos terminado. ¡Se ha acabado la sopa, voy a por más!"
+        }
+      ],
+      "notes": "A los padres de un amigo se les llama 叔叔 y 阿姨. En China se come pronto: la comida hacia las 11:30–12:00 y la cena a las 18:00–18:30. Los horarios españoles sorprenden mucho."
+    },
+    {
+      "type": "exercises",
+      "count": 16,
+      "bank": [
+        "g-complements",
+        "g-word-order",
+        "u05"
+      ]
+    },
+    {
+      "type": "sentence-builder",
+      "items": [
+        {
+          "sentence": {
+            "slots": {
+              "subject": {
+                "zh": "饭"
+              },
+              "verb1": {
+                "zh": "做"
+              },
+              "complement": {
+                "zh": "好"
+              },
+              "particle": {
+                "zh": "了"
+              }
+            },
+            "end": "。",
+            "es": "La comida está lista."
+          },
+          "distractors": [
+            "被"
+          ]
+        },
+        {
+          "sentence": {
+            "slots": {
+              "subject": {
+                "zh": "汤"
+              },
+              "adverb": {
+                "zh": "都"
+              },
+              "verb1": {
+                "zh": "喝"
+              },
+              "complement": {
+                "zh": "完"
+              },
+              "particle": {
+                "zh": "了"
+              }
+            },
+            "end": "。",
+            "es": "La sopa se ha acabado toda."
+          }
+        },
+        {
+          "sentence": {
+            "slots": {
+              "subject": {
+                "zh": "羊肉"
+              },
+              "adverb": {
+                "zh": "还没"
+              },
+              "verb1": {
+                "zh": "买"
+              },
+              "complement": {
+                "zh": "到"
+              }
+            },
+            "end": "。",
+            "es": "El cordero todavía no está comprado."
+          },
+          "distractors": [
+            "不"
+          ]
+        },
+        {
+          "sentence": {
+            "slots": {
+              "subject": {
+                "zh": "晚餐"
+              },
+              "time": {
+                "zh": "今天晚上六点"
+              },
+              "adverb": {
+                "zh": "就"
+              },
+              "verb1": {
+                "zh": "准备"
+              },
+              "complement": {
+                "zh": "好"
+              },
+              "particle": {
+                "zh": "了"
+              }
+            },
+            "end": "。",
+            "es": "La cena ha quedado lista hoy ya a las seis de la tarde."
+          }
+        }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        {
+          "zh": "饭做好了，快来吃！",
+          "py": "Fàn zuòhǎo le, kuài lái chī!",
+          "es": "La comida está lista, ¡a comer!"
+        },
+        {
+          "zh": "汤都喝完了。",
+          "py": "Tāng dōu hēwán le.",
+          "es": "La sopa se ha acabado."
+        },
+        {
+          "zh": "羊肉没买到。",
+          "py": "Yángròu méi mǎidào.",
+          "es": "El cordero no lo he conseguido comprar."
+        },
+        {
+          "zh": "今天有什么美食？",
+          "py": "Jīntiān yǒu shénme měishí?",
+          "es": "¿Qué delicias hay hoy?"
+        }
+      ],
+      "respond": [
+        {
+          "q": {
+            "zh": "饭做好了吗？",
+            "py": "Fàn zuòhǎo le ma?",
+            "es": "¿Está lista la comida?"
+          },
+          "model": {
+            "zh": "做好了，快来吃吧！",
+            "py": "Zuòhǎo le, kuài lái chī ba!",
+            "es": "Sí, ¡venid a comer!"
+          }
+        },
+        {
+          "q": {
+            "zh": "你早餐一般吃什么？",
+            "py": "Nǐ zǎocān yìbān chī shénme?",
+            "es": "¿Qué desayunas normalmente?"
+          },
+          "model": {
+            "zh": "我一般喝咖啡，吃面包。",
+            "py": "Wǒ yìbān hē kāfēi, chī miànbāo.",
+            "es": "Normalmente café y pan."
+          }
+        },
+        {
+          "q": {
+            "zh": "汤还有吗？",
+            "py": "Tāng hái yǒu ma?",
+            "es": "¿Queda sopa?"
+          },
+          "model": {
+            "zh": "没有了，汤喝完了。",
+            "py": "Méiyǒu le, tāng hēwán le.",
+            "es": "No, se ha acabado."
+          }
+        }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Los horarios de las comidas",
+      "text": "在中国，早餐一般七点吃，午餐十二点，晚餐六点。在西班牙，午餐常常是下午两点，晚餐九点多。雨果第一次去小李家，小李的妈妈做了很多美食：白菜豆腐汤、牛肉、猪肉。羊肉没买到，她说明天再买。十二点，饭做好了，大家一起吃。汤很香，一会儿就喝完了。雨果说：“阿姨，我很少吃到这么好吃的菜！”他平时一般吃快餐。",
+      "es": "En China, normalmente se desayuna a las siete, se come a las doce y se cena a las seis. En España, la comida suele ser a las dos de la tarde y la cena, a las nueve y pico. Hugo fue por primera vez a casa de Xiao Li, y su madre preparó muchas delicias: sopa de col china con tofu, ternera y cerdo. No consiguió cordero; dijo que lo compraría al día siguiente. A las doce, la comida estuvo lista y comieron todos juntos. La sopa olía de maravilla y se acabó en un momento. Hugo dijo: «¡Pocas veces como algo tan bueno!». Normalmente come comida rápida.",
+      "questions": [
+        {
+          "q": "¿A qué hora se cena en China, normalmente?",
+          "options": [
+            "六点",
+            "九点",
+            "两点"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "¿Qué no consiguió comprar la madre de Xiao Li?",
+          "options": [
+            "羊肉",
+            "牛肉",
+            "豆腐"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "¿Qué pasó con la sopa?",
+          "options": [
+            "很快就喝完了",
+            "没做好",
+            "没有人喝"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "¿Qué come Hugo normalmente?",
+          "options": [
+            "快餐",
+            "白菜",
+            "羊肉"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "type": "notes-growth"
+    }
+  ]
+}

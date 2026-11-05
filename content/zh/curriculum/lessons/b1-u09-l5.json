@@ -1,0 +1,136 @@
+{
+  "id": "b1-u09-l5",
+  "title": "¡Buenísimo!: 得很, 极了, 坏了, 不A不B y 个个",
+  "zh": "这里好得很",
+  "goal": "Intensificar un adjetivo por detrás (好得很, 高兴极了, 累坏了), describir el punto justo con 不A不B (不大不小) y decir «todos y cada uno» con 个个都 / 张张都.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "丰富", "pinyin": "fēngfù", "es": "abundante, rico, variado", "note": "东西很丰富 = hay muchísimas cosas; 丰富的经历 = una experiencia rica." },
+    { "hanzi": "复杂", "pinyin": "fùzá", "es": "complicado, complejo" },
+    { "hanzi": "简单", "pinyin": "jiǎndān", "es": "sencillo, simple" },
+    { "hanzi": "特色", "pinyin": "tèsè", "es": "rasgo propio, especialidad; típico", "note": "上海特色 = típico de Shanghái; 特色菜 = plato de la casa." },
+    { "hanzi": "场合", "pinyin": "chǎnghé", "es": "ocasión, situación (social)", "note": "什么场合都可以穿 = se puede llevar en cualquier ocasión." },
+    { "hanzi": "适用", "pinyin": "shìyòng", "es": "práctico, que sirve (para un uso)", "note": "这种杯子很适用 = este tipo de taza es muy práctico." },
+    { "hanzi": "专门", "pinyin": "zhuānmén", "es": "especialmente, expresamente; especializado", "note": "专门卖茶的店 = una tienda que solo vende té." },
+    { "hanzi": "具有", "pinyin": "jùyǒu", "es": "tener, poseer (cualidades; formal)", "note": "具有特色 = tener un carácter propio." },
+    { "hanzi": "完美", "pinyin": "wánměi", "es": "perfecto" },
+    { "hanzi": "美好", "pinyin": "měihǎo", "es": "bonito, feliz (vida, recuerdos, futuro)", "note": "美好的生活 = una vida feliz." },
+    { "hanzi": "深", "pinyin": "shēn", "es": "profundo; oscuro (color)", "note": "深蓝色 = azul oscuro; 印象很深 = una impresión muy honda." },
+    { "hanzi": "深刻", "pinyin": "shēnkè", "es": "profundo (impresión, idea)", "note": "印象很深刻 = me causó una impresión muy honda." },
+    { "hanzi": "强烈", "pinyin": "qiángliè", "es": "intenso, fuerte (luz, sentimiento, deseo)" }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "这个小区的环境好得很。", "py": "Zhège xiǎoqū de huánjìng hǎo de hěn.", "es": "El entorno de esta urbanización es buenísimo." },
+        { "zh": "搬完家以后，大家都累坏了。", "py": "Bān wán jiā yǐhòu, dàjiā dōu lèi huài le.", "es": "Después de la mudanza, todos estábamos reventados." },
+        { "zh": "这家店的东西个个都很有特色。", "py": "Zhè jiā diàn de dōngxi gègè dōu hěn yǒu tèsè.", "es": "Todas y cada una de las cosas de esta tienda tienen mucho carácter." }
+      ]
+    },
+    { "type": "vocab", "title": "Cosas con carácter", "words": ["丰富", "复杂", "简单", "特色", "场合", "适用", "专门", "具有", "完美", "美好", "深", "深刻", "强烈"] },
+    {
+      "type": "phonetics-drill",
+      "title": "极了 con fuerza y el ritmo de 不A不B",
+      "markdown": "Los intensificadores de detrás se dicen con energía: **极 jí** sube con fuerza y **了** cae neutro: *hǎo jí le*. En **好得很** el 得 es neutro y el golpe va en **很**: *hǎo de hěn*. En **累坏了** destaca **坏 huài**.\n\n**不A不B** tiene un ritmo de cuatro golpes, como un eslogan, y cada 不 cambia según lo que le sigue:\n\n- 不**大**不**小** → *bú dà bù xiǎo* (bú delante de 4.º, bù delante de 3.º)\n- 不**冷**不**热** → *bù lěng bú rè*\n- 不**多**不**少** → *bù duō bù shǎo*\n\n**个个** se lee *gègè*, con los dos cuartos tonos (no neutro, a diferencia de 一个).",
+      "items": [
+        { "audio": "不大不小", "options": ["bú dà bù xiǎo", "bù dà bú xiǎo", "bú dà bú xiǎo"], "answer": 0, "explain": "不 + 4.º → bú; 不 + 3.º → bù." },
+        { "audio": "不冷不热", "options": ["bù lěng bú rè", "bú lěng bù rè", "bù lěng bù rè"], "answer": 0, "explain": "热 es cuarto tono: el segundo 不 pasa a bú." },
+        { "audio": "好极了", "prompt": "¿Qué sílaba es neutra?", "options": ["了", "极", "好"], "answer": 0, "explain": "极 jí sube con fuerza; 了 cae neutro." },
+        { "audio": "个个都很好", "options": ["gègè dōu hěn hǎo", "gège dōu hěn hǎo", "gěgè dōu hěn hǎo"], "answer": 0, "explain": "En el clasificador duplicado, los dos 个 mantienen el cuarto tono." },
+        { "audio": "复杂", "options": ["fùzá", "fùzhá", "fùcá"], "answer": 0, "explain": "z sin aire (como «ds»); 杂 es segundo tono." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["深", "简"],
+      "mnemonics": {
+        "深": "氵 (agua) + la parte derecha, que representaba a alguien metiendo la mano en una cueva para sondear: el agua que no ves dónde acaba → «profundo», y también un color «hondo», oscuro.",
+        "简": "⺮ (bambú) + 间 (entre): las tablillas de bambú con espacio entre ellas, donde se escribía con pocas palabras → «sencillo, breve» (简单)."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "Intensificar por detrás y describir el punto justo",
+      "markdown": "Además de 很 / 非常 **delante**, el chino puede intensificar un adjetivo **por detrás**:\n\n| Forma | Matiz | Ejemplos |\n|---|---|---|\n| adj + **得很** | «muy», oral y enfático | 好得很, 方便得很 |\n| adj / V + **极了** | «a más no poder», muy positivo o muy negativo | 高兴极了, 好吃极了, 累极了 |\n| adj / V + **坏了** | «hasta reventar»: estados del cuerpo o del ánimo | 累坏了, 饿坏了, 急坏了, 高兴坏了 |\n\n- **Nunca con 很 delante**: ✗ 很好极了, ✗ 很累坏了.\n- **不A不B** con dos adjetivos contrarios = **el punto justo**: 不大不小, 不冷不热, 不多不少, 不早不晚. Suele ser un elogio.\n- **Clasificador duplicado + 都** = «todos y cada uno»: 这些苹果**个个都**很甜 · 他拍的照片**张张都**很漂亮. Siempre **delante del verbo** y con **都**; se refiere al sujeto o al tema (✗ 我喜欢个个苹果).\n\n**Convención del esqueleto**: el adjetivo en *Verbo 1* y 得很 / 极了 / 坏了 en *Complemento* (这里 · 好 · 得很); 不A不B entero en *Verbo 1*; «个个都 / 张张都» en *Adverbios*.",
+      "focus": ["complement", "adverb"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "这个小区的环境", "py": "zhège xiǎoqū de huánjìng" }, "verb1": { "zh": "好", "py": "hǎo" }, "complement": { "zh": "得很", "py": "de hěn" } }, "end": "。", "es": "El entorno de esta urbanización es buenísimo." },
+        { "slots": { "time0": { "zh": "看到新房间的时候，", "py": "kàn dào xīn fángjiān de shíhou," }, "subject": { "zh": "我", "py": "wǒ" }, "verb1": { "zh": "高兴", "py": "gāoxìng" }, "complement": { "zh": "极了", "py": "jí le" } }, "end": "。", "es": "Me alegré muchísimo al ver la habitación nueva.", "esOrder": [{ "text": "Me alegré", "slot": "verb1" }, { "text": "muchísimo", "slot": "complement" }, { "text": "al ver la habitación nueva", "slot": "time0" }] },
+        { "slots": { "time0": { "zh": "搬完家以后，", "py": "bān wán jiā yǐhòu," }, "subject": { "zh": "大家", "py": "dàjiā" }, "adverb": { "zh": "都", "py": "dōu" }, "verb1": { "zh": "累", "py": "lèi" }, "complement": { "zh": "坏了", "py": "huài le" } }, "end": "。", "es": "Después de la mudanza, todos estábamos reventados." },
+        { "slots": { "subject": { "zh": "这个房间", "py": "zhège fángjiān" }, "verb1": { "zh": "不大不小", "py": "bú dà bù xiǎo" } }, "end": "。", "es": "Esta habitación tiene el tamaño justo (ni grande ni pequeña)." },
+        { "slots": { "subject": { "zh": "这些苹果", "py": "zhèxiē píngguǒ" }, "adverb": { "zh": "个个都很", "py": "gègè dōu hěn" }, "verb1": { "zh": "甜", "py": "tián" } }, "end": "。", "es": "Todas y cada una de estas manzanas son muy dulces." },
+        { "slots": { "subject": { "zh": "他拍的照片", "py": "tā pāi de zhàopiàn" }, "adverb": { "zh": "张张都很", "py": "zhāngzhāng dōu hěn" }, "verb1": { "zh": "漂亮", "py": "piàoliang" } }, "end": "。", "es": "Todas las fotos que hace son preciosas, una por una." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "这些问题", "py": "zhèxiē wèntí" }, "adverb": { "zh": "个个都不", "py": "gègè dōu bù" }, "verb1": { "zh": "简单", "py": "jiǎndān" } }, "end": "。", "es": "Ninguno de estos problemas es sencillo." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "饿", "py": "è" }, "complement": { "zh": "坏了", "py": "huài le" }, "particle": { "zh": "吧", "py": "ba" } }, "end": "？", "es": "Estarás muerto de hambre, ¿no?" },
+        { "slots": { "subject": { "zh": "那家饭馆的菜", "py": "nà jiā fànguǎn de cài" }, "adverb": { "zh": "是不是个个都很", "py": "shì bu shì gègè dōu hěn" }, "verb1": { "zh": "有特色", "py": "yǒu tèsè" } }, "end": "？", "es": "¿Es verdad que todos los platos de ese restaurante tienen mucho carácter?" }
+      ],
+      "mistakes": [
+        { "wrong": "这个菜很好吃极了。", "right": "这个菜好吃极了。", "why": "极了 ya es el grado máximo: no lleva 很 delante." },
+        { "wrong": "这里得很好。", "right": "这里好得很。 / 这里很好。", "why": "得很 va detrás del adjetivo, como un complemento." },
+        { "wrong": "我喜欢个个苹果。", "right": "这些苹果我个个都喜欢。", "why": "El clasificador duplicado va delante del verbo, con 都, nunca en el objeto." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Un regalo para la profesora",
+      "lines": [
+        { "speaker": "安娜", "zh": "下个星期是王老师的生日，我们送她什么礼物好呢？", "py": "Xià ge xīngqī shì Wáng lǎoshī de shēngrì, wǒmen sòng tā shénme lǐwù hǎo ne?", "es": "La semana que viene es el cumpleaños de la profesora Wang. ¿Qué le regalamos?" },
+        { "speaker": "雨果", "zh": "这家店专门卖上海的特色东西，我们进去看看吧。", "py": "Zhè jiā diàn zhuānmén mài Shànghǎi de tèsè dōngxi, wǒmen jìnqu kànkan ba.", "es": "Esta tienda vende solo cosas típicas de Shanghái. Entremos a ver." },
+        { "speaker": "安娜", "zh": "这里的东西真丰富！你看这些杯子，个个都很漂亮。", "py": "Zhèlǐ de dōngxi zhēn fēngfù! Nǐ kàn zhèxiē bēizi, gègè dōu hěn piàoliang.", "es": "¡Qué variedad hay aquí! Mira estas tazas: todas preciosas." },
+        { "speaker": "雨果", "zh": "这个茶杯不大不小，样子很简单，可是很有特色。", "py": "Zhège chábēi bú dà bù xiǎo, yàngzi hěn jiǎndān, kěshì hěn yǒu tèsè.", "es": "Esta taza de té tiene el tamaño justo; es sencilla, pero con mucho carácter." },
+        { "speaker": "安娜", "zh": "好看极了！而且很适用，在家里、在学校都能用。", "py": "Hǎokàn jí le! Érqiě hěn shìyòng, zài jiā li, zài xuéxiào dōu néng yòng.", "es": "¡Es preciosa! Y además muy práctica: sirve en casa y en la universidad." },
+        { "speaker": "雨果", "zh": "那张画呢？画上的老上海具有很强烈的特色。", "py": "Nà zhāng huà ne? Huà shang de lǎo Shànghǎi jùyǒu hěn qiángliè de tèsè.", "es": "¿Y aquel cuadro? El Shanghái antiguo del cuadro tiene un carácter muy marcado." },
+        { "speaker": "安娜", "zh": "那张画给人的印象很深刻，可是价钱贵得很！", "py": "Nà zhāng huà gěi rén de yìnxiàng hěn shēnkè, kěshì jiàqián guì de hěn!", "es": "Ese cuadro impresiona mucho, ¡pero es carísimo!" },
+        { "speaker": "雨果", "zh": "也是。送礼物不用太复杂，简单的东西也很好。", "py": "Yě shì. Sòng lǐwù búyòng tài fùzá, jiǎndān de dōngxi yě hěn hǎo.", "es": "También es verdad. Un regalo no tiene por qué ser complicado: algo sencillo también está bien." },
+        { "speaker": "安娜", "zh": "对。这个深蓝色的茶杯什么场合都可以用。", "py": "Duì. Zhège shēn lánsè de chábēi shénme chǎnghé dōu kěyǐ yòng.", "es": "Sí. Esta taza azul oscuro sirve para cualquier ocasión." },
+        { "speaker": "雨果", "zh": "我们再写几句话：“祝您生日快乐，生活美好！”", "py": "Wǒmen zài xiě jǐ jù huà: “Zhù nín shēngrì kuàilè, shēnghuó měihǎo!”", "es": "Y le escribimos unas palabras: «¡Feliz cumpleaños y que la vida le sonría!»." },
+        { "speaker": "安娜", "zh": "太完美了！王老师一定会高兴坏了。", "py": "Tài wánměi le! Wáng lǎoshī yídìng huì gāoxìng huài le.", "es": "¡Perfecto! La profesora Wang se va a poner contentísima." },
+        { "speaker": "雨果", "zh": "我们走了一下午，我饿坏了，买完去吃饭吧！", "py": "Wǒmen zǒu le yí xiàwǔ, wǒ è huài le, mǎi wán qù chīfàn ba!", "es": "Llevamos toda la tarde andando y estoy muerto de hambre. ¡Cuando paguemos, vamos a comer!" }
+      ],
+      "notes": "En China no se regala a la ligera un reloj (送钟 suena como 送终, «acompañar a un moribundo») ni nada en cuatro unidades (四 suena como 死). Una taza, té o algo típico de tu país son regalos seguros para un profesor. 也是 = «también es verdad»."
+    },
+    { "type": "exercises", "count": 18, "bank": ["g-complements", "g-measure-words", "g-reduplication", "u06"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "这个小区的环境" }, "verb1": { "zh": "好" }, "complement": { "zh": "得很" } }, "end": "。", "es": "El entorno de esta urbanización es buenísimo." }, "distractors": ["很"] },
+        { "sentence": { "slots": { "subject": { "zh": "这些苹果" }, "adverb": { "zh": "个个都很" }, "verb1": { "zh": "甜" } }, "end": "。", "es": "Todas y cada una de estas manzanas son muy dulces." } },
+        { "sentence": { "slots": { "time0": { "zh": "搬完家以后，" }, "subject": { "zh": "大家" }, "adverb": { "zh": "都" }, "verb1": { "zh": "累" }, "complement": { "zh": "坏了" } }, "end": "。", "es": "Después de la mudanza, todos estábamos reventados." }, "distractors": ["很"] },
+        { "sentence": { "slots": { "time0": { "zh": "上个星期" }, "subject": { "zh": "我和安娜" }, "place": { "zh": "在一家专门卖上海特色东西的店里" }, "verb1": { "zh": "给王老师买了" }, "object": { "zh": "一个不大不小的深蓝色茶杯" } }, "end": "。", "es": "La semana pasada, Ana y yo le compramos a la profesora Wang una taza de té azul oscuro de tamaño justo en una tienda de cosas típicas de Shanghái." } }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "这个小区的环境好得很。", "py": "Zhège xiǎoqū de huánjìng hǎo de hěn.", "es": "El entorno de esta urbanización es buenísimo." },
+        { "zh": "这个房间不大不小，正好。", "py": "Zhège fángjiān bú dà bù xiǎo, zhènghǎo.", "es": "Esta habitación tiene el tamaño justo, perfecta." },
+        { "zh": "我们走了一下午，我饿坏了。", "py": "Wǒmen zǒu le yí xiàwǔ, wǒ è huài le.", "es": "Llevamos toda la tarde andando: estoy muerto de hambre." },
+        { "zh": "这些杯子个个都很漂亮。", "py": "Zhèxiē bēizi gègè dōu hěn piàoliang.", "es": "Todas estas tazas son preciosas." }
+      ],
+      "respond": [
+        { "q": { "zh": "上海最近的天气怎么样？", "py": "Shànghǎi zuìjìn de tiānqì zěnmeyàng?", "es": "¿Qué tal el tiempo últimamente en Shanghái?" }, "model": { "zh": "最近不冷不热，舒服极了。", "py": "Zuìjìn bù lěng bú rè, shūfu jí le.", "es": "Últimamente ni frío ni calor: buenísimo." } },
+        { "q": { "zh": "你住的地方怎么样？", "py": "Nǐ zhù de dìfang zěnmeyàng?", "es": "¿Qué tal el sitio donde vives?" }, "model": { "zh": "方便得很，离地铁站不远不近，走路五分钟。", "py": "Fāngbiàn de hěn, lí dìtiězhàn bù yuǎn bú jìn, zǒulù wǔ fēnzhōng.", "es": "Comodísimo: ni lejos ni cerca del metro, a cinco minutos andando." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "El piso nuevo",
+      "text": "上个月我从学校的宿舍搬到了一个新的小区。搬家那天，小李和大卫来帮忙，我们搬了一整天，大家都累坏了，也饿坏了。不过，看到新房间的时候，我高兴极了。这个房间不大不小，一个人住正好。房间里的东西很简单：一张床、一张桌子，还有一个深蓝色的书架。小区的环境好得很，有很多树和花，夏天也不太热。楼下有几家很有特色的小饭馆，菜个个都好吃，价钱也不贵。小区门口还有一家专门卖茶的店，老板是一位亲切的老太太。她说，喝茶跟做人一样，不能太复杂。房租比宿舍贵一点儿，可是这里什么都有，生活方便得很。住在这里，我对上海的印象更深刻了。我觉得，在这个城市的生活一定会很美好。",
+      "es": "El mes pasado me mudé de la residencia de la universidad a una urbanización nueva. El día de la mudanza vinieron a ayudarme Xiao Li y David; estuvimos un día entero subiendo cosas y acabamos reventados y muertos de hambre. Pero cuando vi la habitación nueva me alegré muchísimo. Tiene el tamaño justo, perfecta para una persona. Lo que hay dentro es sencillo: una cama, una mesa y una estantería azul oscuro. El entorno de la urbanización es buenísimo: hay muchos árboles y flores, y ni en verano hace demasiado calor. Abajo hay varios restaurantes pequeños con mucho carácter; todos los platos están buenos y no son caros. En la entrada hay además una tienda que solo vende té, y la dueña es una señora mayor muy cercana. Dice que tomar té es como ser persona: no hay que complicarlo. El alquiler es un poco más caro que la residencia, pero aquí hay de todo y la vida es comodísima. Viviendo aquí, Shanghái me ha causado una impresión todavía más honda. Creo que mi vida en esta ciudad va a ser muy bonita.",
+      "questions": [
+        { "q": "¿Cómo acabaron todos el día de la mudanza?", "options": ["累坏了，也饿坏了", "高兴极了", "不冷不热"], "answer": 0 },
+        { "q": "¿Cómo es la habitación?", "options": ["不大不小", "很大", "太小了"], "answer": 0 },
+        { "q": "¿Qué vende la tienda de la entrada?", "options": ["茶", "书架", "菜"], "answer": 0 },
+        { "q": "Comparado con la residencia, el alquiler es…", "options": ["贵一点儿", "便宜多了", "一样"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

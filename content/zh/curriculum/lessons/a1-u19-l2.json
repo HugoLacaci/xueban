@@ -1,0 +1,130 @@
+{
+  "id": "a1-u19-l2",
+  "title": "No me encuentro bien: 不舒服 y 了",
+  "zh": "我生病了",
+  "goal": "Decir que no te encuentras bien (不舒服), que te has puesto enfermo (生病了) y contar lo que ya has hecho con 了.",
+  "minutes": 14,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "舒服", "pinyin": "shūfu", "es": "cómodo; encontrarse bien", "note": "不舒服 = no encontrarse bien, estar malo." },
+    { "hanzi": "病", "pinyin": "bìng", "es": "enfermedad; ponerse enfermo", "note": "她病了 = se ha puesto enferma." },
+    { "hanzi": "生病", "pinyin": "shēngbìng", "es": "ponerse enfermo, enfermar" },
+    { "hanzi": "发烧", "pinyin": "fāshāo", "es": "tener fiebre", "note": "Nivel 4 del HSK, pero imprescindible en el médico." },
+    { "hanzi": "嗓子", "pinyin": "sǎngzi", "es": "garganta", "note": "嗓子疼 = dolor de garganta." },
+    { "hanzi": "牙", "pinyin": "yá", "es": "diente, muela", "note": "牙疼 = dolor de muelas." },
+    { "hanzi": "身上", "pinyin": "shēnshang", "es": "en el cuerpo; encima (de uno)", "note": "我身上没有钱 = no llevo dinero encima." },
+    { "hanzi": "了", "pinyin": "le", "es": "(partícula: acción terminada o cambio)", "note": "Repaso de la U17 y la U18: hoy los dos juntos." }
+  ],
+  "extraVocab": ["发烧", "嗓子", "牙"],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "我不舒服，嗓子很疼。", "py": "Wǒ bù shūfu, sǎngzi hěn téng.", "es": "No me encuentro bien: me duele mucho la garganta." },
+        { "zh": "我生病了，有点儿发烧。", "py": "Wǒ shēngbìng le, yǒudiǎnr fāshāo.", "es": "Me he puesto enfermo: tengo un poco de fiebre." },
+        { "zh": "我喝了两杯热水。", "py": "Wǒ hē le liǎng bēi rè shuǐ.", "es": "Me he bebido dos vasos de agua caliente." }
+      ]
+    },
+    { "type": "vocab", "title": "Cuando estás malo", "words": ["舒服", "病", "生病", "发烧", "嗓子", "牙", "身上", "了"] },
+    {
+      "type": "phonetics-drill",
+      "title": "sh, s y x: 舒服, 嗓子, 身上",
+      "markdown": "Tres «eses» distintas, y en esta lección salen todas:\n\n- **s**: como la «s» española, lengua detrás de los dientes. 嗓子 *sǎngzi*.\n- **sh**: lengua **doblada hacia atrás**. 舒服 *shūfu*, 身上 *shēnshang*, 生病 *shēngbìng*, 发烧 *fāshāo*.\n- **x**: lengua **plana** detrás de los dientes de abajo, labios estirados. 想 *xiǎng*, 洗 *xǐ*.\n\nY fíjate en el **tono neutro** de 舒服 *shūfu* y 嗓子 *sǎngzi*: la segunda sílaba es corta y floja.",
+      "items": [
+        { "audio": "舒服", "options": ["shūfu", "sūfu", "xūfu"], "answer": 0, "explain": "sh con la lengua atrás, y fu en tono neutro." },
+        { "audio": "嗓子", "options": ["sǎngzi", "shǎngzi", "xiǎngzi"], "answer": 0, "explain": "s española; zi con la «i» vacía." },
+        { "audio": "生病", "options": ["shēngbìng", "sēngbìng", "shēnbìng"], "answer": 0, "explain": "sh + -eng: lengua atrás y boca abierta." },
+        { "audio": "身上", "options": ["shēnshang", "sēnsang", "xīnshang"], "answer": 0, "explain": "Dos sh seguidas." },
+        { "audio": "发烧", "options": ["fāshāo", "fāsāo", "fāxiāo"], "answer": 0, "explain": "烧 shāo: sh + ao, primer tono." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["病", "牙"],
+      "mnemonics": {
+        "病": "疒 (la cama del enfermo) + 丙 (que da el sonido, bǐng → bìng): estar en la cama = enfermedad.",
+        "牙": "Dibujo antiguo de dos muelas que encajan una con otra."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "Lo que ya ha pasado: V + 了 + cantidad, o 了 al final",
+      "markdown": "Ya conoces los dos 了:\n\n1. **Detrás del verbo** (U17): la acción está terminada.\n2. **Al final** (U18): hay un cambio, una situación nueva.\n\nCon la salud se usan mucho los dos:\n\n- 我**生病了**。 / 她**病了**。 → me he puesto enfermo (cambio: antes estaba bien). Nunca *很生病*.\n- 我昨天**发烧了**。 → ayer tuve fiebre.\n\n**Truco para el 了 del verbo**: si el objeto lleva **número o cantidad**, 了 va **detrás del verbo**: 我喝**了**两杯水. Si el objeto va solo, ponlo **al final**: 我喝水**了** (*我喝了水* suena a frase sin terminar).\n\n**不舒服** es un estado: se niega con 不 y no lleva 了 (我不舒服).",
+      "focus": ["verb1", "particle"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "verb1": { "zh": "生病", "py": "shēngbìng" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Me he puesto enfermo." },
+        { "slots": { "subject": { "zh": "他", "py": "tā" }, "time": { "zh": "昨天", "py": "zuótiān" }, "verb1": { "zh": "发烧", "py": "fāshāo" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Ayer tuvo fiebre.", "esOrder": [{ "text": "Ayer", "slot": "time" }, { "text": "tuvo fiebre", "slot": "verb1" }] },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "time": { "zh": "今天早上", "py": "jīntiān zǎoshang" }, "verb1": { "zh": "喝了", "py": "hē le" }, "object": { "zh": "两杯热水", "py": "liǎng bēi rè shuǐ" } }, "end": "。", "es": "Esta mañana me he bebido dos vasos de agua caliente." },
+        { "slots": { "subject": { "zh": "她", "py": "tā" }, "verb1": { "zh": "病", "py": "bìng" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Se ha puesto enferma." },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "verb1": { "zh": "吃", "py": "chī" }, "object": { "zh": "饭", "py": "fàn" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Ya he comido." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "不", "py": "bù" }, "verb1": { "zh": "舒服", "py": "shūfu" } }, "end": "。", "es": "No me encuentro bien." },
+        { "slots": { "subject": { "zh": "我身上", "py": "wǒ shēnshang" }, "adverb": { "zh": "没", "py": "méi" }, "verb1": { "zh": "有", "py": "yǒu" }, "object": { "zh": "钱", "py": "qián" } }, "end": "。", "es": "No llevo dinero encima." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你哪儿", "py": "nǐ nǎr" }, "adverb": { "zh": "不", "py": "bù" }, "verb1": { "zh": "舒服", "py": "shūfu" } }, "end": "？", "es": "¿Qué te pasa? (¿dónde te encuentras mal?)" },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "发烧", "py": "fāshāo" }, "particle": { "zh": "了吗", "py": "le ma" } }, "end": "？", "es": "¿Tienes fiebre?" }
+      ],
+      "mistakes": [
+        { "wrong": "我很生病。", "right": "我生病了。", "why": "生病 es un verbo de cambio («ponerse enfermo»): va con 了, no con 很." },
+        { "wrong": "我喝了水。", "right": "我喝水了。 / 我喝了两杯水。", "why": "Con un objeto sin cantidad, el 了 va al final; detrás del verbo, solo si el objeto lleva número." },
+        { "wrong": "我是不舒服。", "right": "我不舒服。", "why": "舒服 funciona como un adjetivo: sin 是." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "En la habitación de la residencia",
+      "lines": [
+        { "speaker": "小李", "zh": "雨果，你怎么了？你的脸很红。", "py": "Yǔguǒ, nǐ zěnme le? Nǐ de liǎn hěn hóng.", "es": "Hugo, ¿qué te pasa? Tienes la cara muy roja." },
+        { "speaker": "雨果", "zh": "我不舒服，嗓子很疼。", "py": "Wǒ bù shūfu, sǎngzi hěn téng.", "es": "No me encuentro bien: me duele mucho la garganta." },
+        { "speaker": "小李", "zh": "你发烧了吗？", "py": "Nǐ fāshāo le ma?", "es": "¿Tienes fiebre?" },
+        { "speaker": "雨果", "zh": "我不知道。我身上很热，头也疼。", "py": "Wǒ bù zhīdào. Wǒ shēnshang hěn rè, tóu yě téng.", "es": "No lo sé. Tengo el cuerpo muy caliente y también me duele la cabeza." },
+        { "speaker": "小李", "zh": "你生病了。今天你在宿舍休息吧。", "py": "Nǐ shēngbìng le. Jīntiān nǐ zài sùshè xiūxi ba.", "es": "Te has puesto malo. Hoy quédate descansando en la residencia." },
+        { "speaker": "雨果", "zh": "好。我早上喝了两杯热水。", "py": "Hǎo. Wǒ zǎoshang hē le liǎng bēi rè shuǐ.", "es": "Vale. Esta mañana me he bebido dos vasos de agua caliente." },
+        { "speaker": "小李", "zh": "你吃饭了吗？", "py": "Nǐ chīfàn le ma?", "es": "¿Has comido algo?" },
+        { "speaker": "雨果", "zh": "吃了，我吃了一碗面条儿。", "py": "Chī le, wǒ chī le yì wǎn miàntiáor.", "es": "Sí: me he comido un plato de fideos." },
+        { "speaker": "小李", "zh": "好，你睡觉吧。我去便利店买水。", "py": "Hǎo, nǐ shuìjiào ba. Wǒ qù biànlìdiàn mǎi shuǐ.", "es": "Bien, duerme un poco. Voy a la tienda a comprar agua." }
+      ],
+      "notes": "En China, cuando estás resfriado te dirán 多喝热水 («bebe mucha agua caliente»): es casi un chiste nacional, pero lo dicen con cariño. 吃了 basta como respuesta afirmativa a 你吃饭了吗？"
+    },
+    { "type": "exercises", "count": 15, "bank": ["g-le", "u11", "g-bu-mei"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "我" }, "adverb": { "zh": "不" }, "verb1": { "zh": "舒服" } }, "end": "。", "es": "No me encuentro bien." }, "distractors": ["是", "了"] },
+        { "sentence": { "slots": { "subject": { "zh": "安娜" }, "time": { "zh": "昨天" }, "verb1": { "zh": "生病" }, "particle": { "zh": "了" } }, "end": "。", "es": "Ana se puso enferma ayer." }, "distractors": ["很"] },
+        { "sentence": { "slots": { "subject": { "zh": "他" }, "time": { "zh": "今天上午" }, "verb1": { "zh": "喝了" }, "object": { "zh": "三杯热水" } }, "end": "。", "es": "Esta mañana se ha bebido tres vasos de agua caliente." } },
+        { "sentence": { "slots": { "time0": { "zh": "今天晚上" }, "subject": { "zh": "雨果" }, "adverb": { "zh": "不" }, "aux": { "zh": "想" }, "with": { "zh": "跟我们一起" }, "verb1": { "zh": "去食堂" }, "verb2": { "zh": "吃" }, "object": { "zh": "饭" } }, "end": "。", "es": "Esta noche Hugo no quiere ir a cenar con nosotros al comedor." } }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "我不舒服。", "py": "Wǒ bù shūfu.", "es": "No me encuentro bien." },
+        { "zh": "我生病了，有点儿发烧。", "py": "Wǒ shēngbìng le, yǒudiǎnr fāshāo.", "es": "Me he puesto enfermo: tengo un poco de fiebre." },
+        { "zh": "我嗓子很疼。", "py": "Wǒ sǎngzi hěn téng.", "es": "Me duele mucho la garganta." },
+        { "zh": "我喝了两杯热水。", "py": "Wǒ hē le liǎng bēi rè shuǐ.", "es": "Me he bebido dos vasos de agua caliente." }
+      ],
+      "respond": [
+        { "q": { "zh": "你哪儿不舒服？", "py": "Nǐ nǎr bù shūfu?", "es": "¿Qué te pasa?" }, "model": { "zh": "我牙疼。", "py": "Wǒ yá téng.", "es": "Me duelen las muelas." } },
+        { "q": { "zh": "你发烧了吗？", "py": "Nǐ fāshāo le ma?", "es": "¿Tienes fiebre?" }, "model": { "zh": "发烧了，三十八度。", "py": "Fāshāo le, sānshíbā dù.", "es": "Sí, treinta y ocho grados." } },
+        { "q": { "zh": "你吃饭了吗？", "py": "Nǐ chīfàn le ma?", "es": "¿Has comido?" }, "model": { "zh": "吃了，我吃了两个包子。", "py": "Chī le, wǒ chī le liǎng ge bāozi.", "es": "Sí, me he comido dos bollos." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Hugo se ha puesto malo",
+      "text": "今天雨果生病了。他嗓子很疼，头也疼，有点儿发烧。早上他喝了两杯热水，吃了一碗面条儿。他不想去上课，在宿舍休息。小李去便利店买了水和面包。",
+      "es": "Hoy Hugo se ha puesto malo. Le duele mucho la garganta, también la cabeza, y tiene un poco de fiebre. Por la mañana se ha bebido dos vasos de agua caliente y se ha comido un plato de fideos. No quiere ir a clase: se queda descansando en la residencia. Xiao Li ha ido a la tienda y ha comprado agua y pan.",
+      "questions": [
+        { "q": "¿Qué le duele mucho a Hugo?", "options": ["嗓子", "牙", "脚"], "answer": 0 },
+        { "q": "¿Qué ha bebido por la mañana?", "options": ["两杯热水", "一杯茶", "牛奶"], "answer": 0 },
+        { "q": "¿Dónde está Hugo?", "options": ["在宿舍", "在学校", "在便利店"], "answer": 0 },
+        { "q": "¿Qué ha comprado Xiao Li?", "options": ["水和面包", "面条儿", "包子"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

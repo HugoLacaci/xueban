@@ -1,0 +1,731 @@
+{
+  "id": "a2-u04-l2",
+  "title": "¿Ya has terminado? Complementos de resultado",
+  "zh": "我吃完了",
+  "goal": "Decir el resultado de una acción con V + 完 / 好 / 到 / 懂 / 见 / 错 / 对 (吃完, 做好, 买到, 听懂…) y negarlo con 没.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    {
+      "hanzi": "完",
+      "pinyin": "wán",
+      "es": "acabar, terminar (como resultado: 吃完)"
+    },
+    {
+      "hanzi": "懂",
+      "pinyin": "dǒng",
+      "es": "entender (como resultado: 听懂, 看懂)"
+    },
+    {
+      "hanzi": "见到",
+      "pinyin": "jiàndào",
+      "es": "ver, encontrarse con (alguien)"
+    },
+    {
+      "hanzi": "想到",
+      "pinyin": "xiǎngdào",
+      "es": "ocurrírsele a uno, pensar en"
+    },
+    {
+      "hanzi": "做到",
+      "pinyin": "zuòdào",
+      "es": "conseguir hacer, lograr"
+    },
+    {
+      "hanzi": "拿到",
+      "pinyin": "nádào",
+      "es": "conseguir, recibir"
+    },
+    {
+      "hanzi": "找出",
+      "pinyin": "zhǎochū",
+      "es": "encontrar, sacar (buscando)"
+    },
+    {
+      "hanzi": "熟",
+      "pinyin": "shú",
+      "es": "hecho, cocido (comida); maduro",
+      "note": "肉熟了 = la carne ya está hecha."
+    },
+    {
+      "hanzi": "满",
+      "pinyin": "mǎn",
+      "es": "lleno"
+    },
+    {
+      "hanzi": "味道",
+      "pinyin": "wèidao",
+      "es": "sabor; olor"
+    },
+    {
+      "hanzi": "闻",
+      "pinyin": "wén",
+      "es": "oler"
+    },
+    {
+      "hanzi": "方便面",
+      "pinyin": "fāngbiànmiàn",
+      "es": "fideos instantáneos"
+    }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        {
+          "zh": "我吃完了，你呢？",
+          "py": "Wǒ chīwán le, nǐ ne?",
+          "es": "Ya he terminado de comer, ¿y tú?"
+        },
+        {
+          "zh": "饭做好了，快来吃吧！",
+          "py": "Fàn zuòhǎo le, kuài lái chī ba!",
+          "es": "La comida está lista, ¡venid a comer!"
+        },
+        {
+          "zh": "老师说的话你听懂了吗？",
+          "py": "Lǎoshī shuō de huà nǐ tīngdǒng le ma?",
+          "es": "¿Has entendido lo que ha dicho la profesora?"
+        }
+      ]
+    },
+    {
+      "type": "vocab",
+      "title": "Resultados",
+      "words": [
+        "完",
+        "懂",
+        "见到",
+        "想到",
+        "做到",
+        "拿到",
+        "找出",
+        "熟",
+        "满",
+        "味道",
+        "闻",
+        "方便面"
+      ]
+    },
+    {
+      "type": "phonetics-drill",
+      "title": "Tono neutro en los resultados: 吃完了, 听懂了",
+      "markdown": "El complemento de resultado **conserva su tono**, pero se dice **pegado al verbo**, como una sola palabra: **吃完** *chīwán*, **做好** *zuòhǎo*, **听懂** *tīngdǒng*, **看见** *kànjiàn*.\n\n(Con 见 y 到, en el habla rápida el tono se debilita un poco: *kànjian*, *zhǎodao*.)\n\nLo que sí va **neutro** es el **了** que viene detrás: *chīwán le*.\n\n**听懂** son 1.º + 3.º; **做好**, 4.º + 3.º: el 3.º final baja bien y sube un poco.",
+      "items": [
+        {
+          "audio": "吃完了",
+          "options": [
+            "chīwán le",
+            "chīwǎn le",
+            "qīwán le"
+          ],
+          "answer": 0,
+          "explain": "完 = wán, 2.º tono; 了 neutro."
+        },
+        {
+          "audio": "听懂",
+          "options": [
+            "tīngdǒng",
+            "tīngdòng",
+            "tīndǒng"
+          ],
+          "answer": 0,
+          "explain": "懂 en 3.º; 动 dòng es «moverse»."
+        },
+        {
+          "audio": "做好",
+          "options": [
+            "zuòhǎo",
+            "zòuhǎo",
+            "zuòhào"
+          ],
+          "answer": 0,
+          "explain": "好 = bien hecho: hǎo."
+        },
+        {
+          "audio": "熟",
+          "options": [
+            "shú",
+            "shǔ",
+            "sú"
+          ],
+          "answer": 0,
+          "explain": "Hecho, cocido: shú (2.º)."
+        },
+        {
+          "audio": "闻",
+          "options": [
+            "wén",
+            "wèn",
+            "wēn"
+          ],
+          "answer": 0,
+          "explain": "Oler: wén (2.º); 问 wèn es preguntar."
+        }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": [
+        "完",
+        "懂"
+      ],
+      "mnemonics": {
+        "完": "宀 (techo) + 元 (principio): con el techo puesto, la casa está terminada → acabar.",
+        "懂": "忄 (corazón) + 董 (da el sonido): lo que llega al corazón → entender."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "V + resultado: 吃 | 完, 做 | 好, 听 | 懂",
+      "markdown": "En chino, muchos verbos dicen **solo la acción**: 看 = mirar, 听 = escuchar, 找 = buscar. Para decir **el resultado** se añade un segundo elemento:\n\n| Resultado | Significa | Ejemplos |\n|---|---|---|\n| **完** | terminado | 吃完, 做完, 看完 |\n| **好** | bien hecho, listo | 做好, 准备好 |\n| **到** | conseguido, alcanzado | 买到, 找到, 见到 |\n| **懂** | entendido | 听懂, 看懂 |\n| **见** | percibido | 看见, 听见 |\n| **错 / 对** | mal / bien | 写错, 说对 |\n| **会** | aprendido | 学会 |\n\n**Convención del esqueleto**: el resultado va en el **complemento** (吃 | 完). Si hay un objeto **detrás**, el verbo y su resultado van juntos en *verbo 1* (吃完 + 饭), igual que 吃了.\n\n**Negativa con 没** (el resultado no se ha conseguido): 我**没**听懂。 Nunca ~~不听懂~~.\n**Pregunta**: 你听懂了**吗**？ / 你听懂了**没有**？\n\nRepaso del curso antiguo (u09 «¿Lo has entendido?»).",
+      "focus": [
+        "complement"
+      ],
+      "compare": true,
+      "sentences": [
+        {
+          "slots": {
+            "subject": {
+              "zh": "我",
+              "py": "wǒ"
+            },
+            "verb1": {
+              "zh": "吃",
+              "py": "chī"
+            },
+            "complement": {
+              "zh": "完",
+              "py": "wán"
+            },
+            "particle": {
+              "zh": "了",
+              "py": "le"
+            }
+          },
+          "end": "。",
+          "es": "Ya he terminado de comer.",
+          "esOrder": [
+            {
+              "text": "Ya he terminado",
+              "slot": "complement"
+            },
+            {
+              "text": "de comer",
+              "slot": "verb1"
+            }
+          ]
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "饭",
+              "py": "fàn"
+            },
+            "verb1": {
+              "zh": "做",
+              "py": "zuò"
+            },
+            "complement": {
+              "zh": "好",
+              "py": "hǎo"
+            },
+            "particle": {
+              "zh": "了",
+              "py": "le"
+            }
+          },
+          "end": "。",
+          "es": "La comida está lista."
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "我",
+              "py": "wǒ"
+            },
+            "verb1": {
+              "zh": "买到",
+              "py": "mǎidào"
+            },
+            "object": {
+              "zh": "方便面",
+              "py": "fāngbiànmiàn"
+            },
+            "particle": {
+              "zh": "了",
+              "py": "le"
+            }
+          },
+          "end": "。",
+          "es": "He conseguido comprar fideos instantáneos."
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "你",
+              "py": "nǐ"
+            },
+            "verb1": {
+              "zh": "说",
+              "py": "shuō"
+            },
+            "complement": {
+              "zh": "对",
+              "py": "duì"
+            },
+            "particle": {
+              "zh": "了",
+              "py": "le"
+            }
+          },
+          "end": "。",
+          "es": "Has acertado (lo has dicho bien)."
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "这个字你",
+              "py": "zhège zì nǐ"
+            },
+            "verb1": {
+              "zh": "写",
+              "py": "xiě"
+            },
+            "complement": {
+              "zh": "错",
+              "py": "cuò"
+            },
+            "particle": {
+              "zh": "了",
+              "py": "le"
+            }
+          },
+          "end": "。",
+          "es": "Este carácter lo has escrito mal."
+        }
+      ],
+      "negative": [
+        {
+          "slots": {
+            "subject": {
+              "zh": "我",
+              "py": "wǒ"
+            },
+            "adverb": {
+              "zh": "没",
+              "py": "méi"
+            },
+            "verb1": {
+              "zh": "听",
+              "py": "tīng"
+            },
+            "complement": {
+              "zh": "懂",
+              "py": "dǒng"
+            }
+          },
+          "end": "。",
+          "es": "No lo he entendido.",
+          "esOrder": [
+            {
+              "text": "No",
+              "slot": "adverb"
+            },
+            {
+              "text": "lo he entendido",
+              "slot": "complement"
+            }
+          ]
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "肉",
+              "py": "ròu"
+            },
+            "adverb": {
+              "zh": "还没",
+              "py": "hái méi"
+            },
+            "verb1": {
+              "zh": "熟",
+              "py": "shú"
+            }
+          },
+          "end": "。",
+          "es": "La carne todavía no está hecha."
+        }
+      ],
+      "question": [
+        {
+          "slots": {
+            "subject": {
+              "zh": "你",
+              "py": "nǐ"
+            },
+            "verb1": {
+              "zh": "听",
+              "py": "tīng"
+            },
+            "complement": {
+              "zh": "懂",
+              "py": "dǒng"
+            },
+            "particle": {
+              "zh": "了吗",
+              "py": "le ma"
+            }
+          },
+          "end": "？",
+          "es": "¿Lo has entendido?"
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "你",
+              "py": "nǐ"
+            },
+            "verb1": {
+              "zh": "找到",
+              "py": "zhǎodào"
+            },
+            "object": {
+              "zh": "我的手机",
+              "py": "wǒde shǒujī"
+            },
+            "particle": {
+              "zh": "了吗",
+              "py": "le ma"
+            }
+          },
+          "end": "？",
+          "es": "¿Has encontrado mi móvil?"
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "我不听懂。",
+          "right": "我没听懂。 / 我听不懂。",
+          "why": "Un resultado no conseguido se niega con 没 (听不懂, «no soy capaz de entender», llegará en B1)."
+        },
+        {
+          "wrong": "我看了，可是没看。",
+          "right": "我看了，可是没看懂。",
+          "why": "看 solo es «mirar»; si no entendiste, hace falta el resultado: 没看懂."
+        },
+        {
+          "wrong": "我吃饭完了。",
+          "right": "我吃完饭了。",
+          "why": "El resultado va pegado al verbo, delante del objeto."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Cena en el piso de David",
+      "lines": [
+        {
+          "speaker": "大卫",
+          "zh": "饭做好了！快来吃吧！",
+          "py": "Fàn zuòhǎo le! Kuài lái chī ba!",
+          "es": "¡La cena está lista! ¡Venid a comer!"
+        },
+        {
+          "speaker": "雨果",
+          "zh": "我在门口就闻到了，味道太好了！",
+          "py": "Wǒ zài ménkǒu jiù wéndào le, wèidao tài hǎo le!",
+          "es": "Lo he olido desde la puerta, ¡qué olor más bueno!"
+        },
+        {
+          "speaker": "安娜",
+          "zh": "你买到鸡蛋了吗？",
+          "py": "Nǐ mǎidào jīdàn le ma?",
+          "es": "¿Has conseguido comprar huevos?"
+        },
+        {
+          "speaker": "大卫",
+          "zh": "买到了。我还找出了我妈妈的做法。",
+          "py": "Mǎidào le. Wǒ hái zhǎochū le wǒ māma de zuòfǎ.",
+          "es": "Sí. Y además he encontrado la receta de mi madre."
+        },
+        {
+          "speaker": "雨果",
+          "zh": "这个肉熟了吗？",
+          "py": "Zhège ròu shú le ma?",
+          "es": "¿Esta carne está hecha?"
+        },
+        {
+          "speaker": "大卫",
+          "zh": "熟了，你放心吃。",
+          "py": "Shú le, nǐ fàngxīn chī.",
+          "es": "Sí, está hecha, come tranquilo."
+        },
+        {
+          "speaker": "安娜",
+          "zh": "味道太好了！我没想到你会做饭。",
+          "py": "Wèidao tài hǎo le! Wǒ méi xiǎngdào nǐ huì zuò fàn.",
+          "es": "¡Está buenísimo! No me imaginaba que supieras cocinar."
+        },
+        {
+          "speaker": "大卫",
+          "zh": "我平时只吃方便面。今天是第一次！",
+          "py": "Wǒ píngshí zhǐ chī fāngbiànmiàn. Jīntiān shì dì-yī cì!",
+          "es": "Normalmente solo como fideos instantáneos. ¡Hoy es la primera vez!"
+        },
+        {
+          "speaker": "雨果",
+          "zh": "我吃完了，太饱了。",
+          "py": "Wǒ chīwán le, tài bǎo le.",
+          "es": "Yo ya he terminado: estoy lleno."
+        },
+        {
+          "speaker": "大卫",
+          "zh": "碗里还很满呢！再吃一点儿吧。",
+          "py": "Wǎn lǐ hái hěn mǎn ne! Zài chī yìdiǎnr ba.",
+          "es": "¡Todavía tienes el cuenco lleno! Come un poco más."
+        }
+      ],
+      "notes": "En una comida china el anfitrión siempre insiste en que comas más (再吃一点儿); es de buena educación aceptar un poco o decir 我吃饱了 con una sonrisa. 没想到 («no me imaginaba») sirve para expresar sorpresa agradable."
+    },
+    {
+      "type": "exercises",
+      "count": 18,
+      "bank": [
+        "g-complements",
+        "g-bu-mei",
+        "g-le"
+      ]
+    },
+    {
+      "type": "sentence-builder",
+      "items": [
+        {
+          "sentence": {
+            "slots": {
+              "subject": {
+                "zh": "我"
+              },
+              "verb1": {
+                "zh": "吃"
+              },
+              "complement": {
+                "zh": "完"
+              },
+              "particle": {
+                "zh": "了"
+              }
+            },
+            "end": "。",
+            "es": "Ya he terminado de comer."
+          },
+          "distractors": [
+            "不"
+          ]
+        },
+        {
+          "sentence": {
+            "slots": {
+              "subject": {
+                "zh": "饭"
+              },
+              "verb1": {
+                "zh": "做"
+              },
+              "complement": {
+                "zh": "好"
+              },
+              "particle": {
+                "zh": "了"
+              }
+            },
+            "end": "。",
+            "es": "La comida está lista."
+          }
+        },
+        {
+          "sentence": {
+            "slots": {
+              "subject": {
+                "zh": "你"
+              },
+              "verb1": {
+                "zh": "听"
+              },
+              "complement": {
+                "zh": "懂"
+              },
+              "particle": {
+                "zh": "了吗"
+              }
+            },
+            "end": "？",
+            "es": "¿Lo has entendido?"
+          },
+          "distractors": [
+            "不"
+          ]
+        },
+        {
+          "sentence": {
+            "slots": {
+              "subject": {
+                "zh": "我"
+              },
+              "adverb": {
+                "zh": "没"
+              },
+              "verb1": {
+                "zh": "听"
+              },
+              "complement": {
+                "zh": "懂"
+              }
+            },
+            "end": "。",
+            "es": "No lo he entendido."
+          },
+          "distractors": [
+            "不"
+          ]
+        },
+        {
+          "sentence": {
+            "slots": {
+              "subject": {
+                "zh": "大卫"
+              },
+              "time": {
+                "zh": "昨天下午"
+              },
+              "adverb": {
+                "zh": "没"
+              },
+              "place": {
+                "zh": "在超市"
+              },
+              "verb1": {
+                "zh": "买到"
+              },
+              "object": {
+                "zh": "鸡蛋"
+              }
+            },
+            "end": "。",
+            "es": "Ayer por la tarde David no consiguió comprar huevos en el súper."
+          }
+        }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        {
+          "zh": "我吃完了。",
+          "py": "Wǒ chīwán le.",
+          "es": "Ya he terminado de comer."
+        },
+        {
+          "zh": "饭做好了，快来吃吧！",
+          "py": "Fàn zuòhǎo le, kuài lái chī ba!",
+          "es": "La comida está lista, ¡venid a comer!"
+        },
+        {
+          "zh": "我没听懂，请您再说一遍。",
+          "py": "Wǒ méi tīngdǒng, qǐng nín zài shuō yí biàn.",
+          "es": "No lo he entendido; ¿puede repetirlo?"
+        },
+        {
+          "zh": "你找到你的手机了吗？",
+          "py": "Nǐ zhǎodào nǐ de shǒujī le ma?",
+          "es": "¿Has encontrado tu móvil?"
+        }
+      ],
+      "respond": [
+        {
+          "q": {
+            "zh": "你吃完了吗？",
+            "py": "Nǐ chīwán le ma?",
+            "es": "¿Has terminado de comer?"
+          },
+          "model": {
+            "zh": "吃完了，太饱了！",
+            "py": "Chīwán le, tài bǎo le!",
+            "es": "Sí, ¡estoy llenísimo!"
+          }
+        },
+        {
+          "q": {
+            "zh": "老师的话你听懂了吗？",
+            "py": "Lǎoshī de huà nǐ tīngdǒng le ma?",
+            "es": "¿Has entendido lo que ha dicho la profesora?"
+          },
+          "model": {
+            "zh": "没听懂，她说得太快了。",
+            "py": "Méi tīngdǒng, tā shuō de tài kuài le.",
+            "es": "No, habla demasiado rápido."
+          }
+        },
+        {
+          "q": {
+            "zh": "你买到方便面了吗？",
+            "py": "Nǐ mǎidào fāngbiànmiàn le ma?",
+            "es": "¿Has conseguido comprar fideos instantáneos?"
+          },
+          "model": {
+            "zh": "买到了，在便利店买的。",
+            "py": "Mǎidào le, zài biànlìdiàn mǎi de.",
+            "es": "Sí, los he comprado en la tienda de abajo."
+          }
+        }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "La primera cena de David",
+      "text": "大卫平时不做饭，他总是吃方便面。上个周末，他第一次请朋友来家里吃饭。他先在网上找出了妈妈的做法，再去超市买食物，可是鸡蛋没买到，他就去了便利店。晚上七点，饭做好了。雨果在门口就闻到了，他说：“味道真好！”安娜吃了一口，说：“味道太好了！我没想到你会做饭。”大家都吃完了，碗里的菜也吃完了。大卫说：“我做到了！”",
+      "es": "David normalmente no cocina: siempre come fideos instantáneos. El fin de semana pasado invitó por primera vez a unos amigos a cenar a casa. Primero buscó en internet la receta de su madre y luego fue al súper a comprar la comida, pero no consiguió huevos, así que fue a la tienda de conveniencia. A las siete de la tarde la cena estaba lista. Hugo lo olió desde la puerta y dijo: «¡Qué bien huele!». Ana probó un bocado y dijo: «¡Está buenísimo! No me imaginaba que supieras cocinar». Todos terminaron, y la comida de los cuencos también se acabó. David dijo: «¡Lo he conseguido!».",
+      "questions": [
+        {
+          "q": "¿Qué come David normalmente?",
+          "options": [
+            "方便面",
+            "鸡蛋",
+            "饺子"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "¿Qué no consiguió comprar en el súper?",
+          "options": [
+            "鸡蛋",
+            "肉",
+            "面"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "¿A qué hora estuvo lista la cena?",
+          "options": [
+            "七点",
+            "五点",
+            "八点"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "¿Qué significa 我做到了?",
+          "options": [
+            "¡Lo he conseguido!",
+            "He terminado de cocinar.",
+            "He cocinado mal."
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "type": "notes-growth"
+    }
+  ]
+}

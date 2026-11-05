@@ -1,0 +1,145 @@
+{
+  "id": "b1-u05-l5",
+  "title": "A menos que avises: 除非, 要是 y 不论",
+  "zh": "除非你提前说，不然进不来",
+  "goal": "Entender y explicar normas con 除非 («a menos que», «solo si»), 要是 («si», coloquial) y 不论…都 («sea como sea»), hablando de las reglas de la residencia.",
+  "minutes": 16,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "除非", "pinyin": "chúfēi", "es": "a menos que, salvo que; solo si", "note": "除非…，不然… (a menos que…, si no…) o 除非…，才… (solo si…). Fuera del HSK 3." },
+    { "hanzi": "要是", "pinyin": "yàoshi", "es": "si (condición, coloquial)", "note": "= 如果. 要是…就…" },
+    { "hanzi": "不论", "pinyin": "búlùn", "es": "no importa (qué, quién, cuándo…), sea como sea", "note": "不论 + pregunta o alternativa + 都: 不论多晚，都…" },
+    { "hanzi": "规定", "pinyin": "guīdìng", "es": "norma, reglamento; establecer", "note": "学校的规定 = las normas de la universidad." },
+    { "hanzi": "管", "pinyin": "guǎn", "es": "encargarse de, controlar, meterse en", "note": "宿管阿姨 = la conserje de la residencia (宿舍 + 管理). 别管我 = déjame en paz." },
+    { "hanzi": "按照", "pinyin": "ànzhào", "es": "según, de acuerdo con", "note": "按照规定 = según las normas." },
+    { "hanzi": "必要", "pinyin": "bìyào", "es": "necesario; necesidad", "note": "有必要 = hace falta; 没有必要 = no hace falta." },
+    { "hanzi": "不必", "pinyin": "búbì", "es": "no hace falta, no es necesario", "note": "= 不用, algo más formal: 你不必等我." },
+    { "hanzi": "不得不", "pinyin": "bù dé bù", "es": "no tener más remedio que", "note": "Doble negación: «no poder no…». 我不得不走 = no tengo más remedio que irme." },
+    { "hanzi": "尽量", "pinyin": "jǐnliàng", "es": "en lo posible, lo más posible", "note": "我尽量早点儿回来 = intentaré volver lo antes posible." },
+    { "hanzi": "提前", "pinyin": "tíqián", "es": "con antelación; adelantar", "note": "提前告诉我 = avísame antes." },
+    { "hanzi": "等待", "pinyin": "děngdài", "es": "esperar (formal)", "note": "Más escrito que 等: 请耐心等待 en los avisos." },
+    { "hanzi": "直到", "pinyin": "zhídào", "es": "hasta (que)", "note": "直到晚上十点 = hasta las diez de la noche; 直到…才… = no… hasta que…" },
+    { "hanzi": "食品", "pinyin": "shípǐn", "es": "alimentos, comida (envasada)", "note": "Más técnico que 吃的: 食品店, 食品安全." }
+  ],
+  "extraVocab": ["除非"],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "除非你提前说，不然十一点以后就进不来了。", "py": "Chúfēi nǐ tíqián shuō, bùrán shíyī diǎn yǐhòu jiù jìn bu lái le.", "es": "A menos que avises antes, después de las once ya no se puede entrar." },
+        { "zh": "要是我很晚才回来，怎么办？", "py": "Yàoshi wǒ hěn wǎn cái huílai, zěnme bàn?", "es": "¿Y si vuelvo muy tarde, qué hago?" },
+        { "zh": "不论多晚，你都要给我发个微信。", "py": "Búlùn duō wǎn, nǐ dōu yào gěi wǒ fā ge Wēixìn.", "es": "Sea la hora que sea, mándame un wechat." }
+      ]
+    },
+    { "type": "vocab", "title": "Normas de la residencia", "words": ["除非", "要是", "不论", "规定", "管", "按照", "必要", "不必", "不得不", "尽量", "提前", "等待", "直到", "食品"] },
+    {
+      "type": "phonetics-drill",
+      "title": "不 en 不必, 不论, 不得不 y el tono neutro de 要是",
+      "markdown": "Muchas palabras de hoy empiezan por **不**, y la regla de siempre manda:\n\n- delante de **cuarto tono** → **bú**: 不必 *búbì*, 不论 *búlùn*.\n- delante de 1.º, 2.º o 3.º → **bù**: 不然 *bùrán*, 不得不 *bù dé bù* (得 es segundo tono aquí, no *de* neutro).\n\n**要是** se dice *yàoshi*: el 是 pierde el tono, corto y flojo.\n\n**Entonación de las normas**: la parte de **除非…** sube un poco y se para (es la excepción); lo que viene después de **不然** baja con firmeza, como una advertencia: 除非你提前说↗，不然↘就进不来了.",
+      "items": [
+        { "audio": "不必", "options": ["búbì", "bùbì", "bǔbì"], "answer": 0, "explain": "必 es cuarto tono: 不 pasa a segundo." },
+        { "audio": "不论", "options": ["búlùn", "bùlùn", "búlún"], "answer": 0, "explain": "论 lùn es cuarto tono: bú." },
+        { "audio": "不得不", "options": ["bù dé bù", "bú dé bù", "bù de bù"], "answer": 0, "explain": "得 aquí es dé (segundo): el primer 不 se queda en bù." },
+        { "audio": "要是", "options": ["yàoshi", "yàoshì", "yāoshi"], "answer": 0, "explain": "是 en tono neutro dentro de 要是." },
+        { "audio": "除非你提前说，不然进不来。", "prompt": "¿Cómo suena 不然…?", "options": ["Baja con firmeza, como una advertencia", "Sube, como una pregunta", "Igual que la primera parte"], "answer": 0, "explain": "La excepción (除非…) queda en alto; la consecuencia baja." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["管", "规"],
+      "mnemonics": {
+        "管": "⺮ (bambú) + 官 (funcionario, da el sonido): un tubo de bambú y, también, el funcionario que lo controla todo. «Tubo» y «encargarse»: 宿管阿姨 lo controla todo en la residencia.",
+        "规": "夫 (hombre adulto) + 见 (ver): el hombre que mira y mide con el compás. De medir viene «regla»: 规定."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "除非…，不然 / 才…; 要是…就…; 不论…都…",
+      "markdown": "Tres maneras de poner condiciones:\n\n**1. 除非** marca la **única excepción**. Tiene dos formas:\n- 除非 A，**不然** B = «a menos que A, B»: 除非你提前说，**不然**就进不来了 (si no avisas, no entras).\n- 除非 A，**才** B = «solo si A, B» (= 只有…才): 除非你提前说，阿姨**才**会等你.\n\n**2. 要是…就…** = 如果…就…, más coloquial: 要是你不舒服，就给阿姨打电话.\n\n**3. 不论…都…** = «sea como sea, igual»: detrás de 不论 va una **pregunta** (多晚, 是谁, 什么时候) o una **alternativa** (去不去, 白天还是晚上); en la segunda parte, **都**.\n\n**Convención**: una fila por cláusula; 除非, 要是, 不论 (y 不然) en *Tiempo inicial*; 才 / 就 / 都 en *Adverbios*.",
+      "focus": ["time0", "adverb"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "time0": { "zh": "除非", "py": "chúfēi" }, "subject": { "zh": "你", "py": "nǐ" }, "adverb": { "zh": "提前", "py": "tíqián" }, "with": { "zh": "跟阿姨", "py": "gēn āyí" }, "verb1": { "zh": "说", "py": "shuō" } }, "end": "，", "es": "A menos que se lo digas antes a la conserje… (1.ª parte)", "esOrder": [{ "text": "A menos que", "slot": "time0" }, { "text": "se lo digas", "slot": "verb1" }, { "text": "antes", "slot": "adverb" }, { "text": "a la conserje", "slot": "with" }] },
+        { "slots": { "time0": { "zh": "不然", "py": "bùrán" }, "subject": { "zh": "你", "py": "nǐ" }, "time": { "zh": "十一点以后", "py": "shíyī diǎn yǐhòu" }, "adverb": { "zh": "就", "py": "jiù" }, "verb1": { "zh": "进", "py": "jìn" }, "complement": { "zh": "不来", "py": "bu lái" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "…después de las once ya no podrás entrar. (2.ª parte)" },
+        { "slots": { "time0": { "zh": "除非", "py": "chúfēi" }, "subject": { "zh": "你", "py": "nǐ" }, "adverb": { "zh": "提前", "py": "tíqián" }, "verb1": { "zh": "告诉", "py": "gàosu" }, "object": { "zh": "她", "py": "tā" } }, "end": "，", "es": "Solo si se lo dices antes… (1.ª parte)" },
+        { "slots": { "subject": { "zh": "阿姨", "py": "āyí" }, "adverb": { "zh": "才", "py": "cái" }, "aux": { "zh": "会", "py": "huì" }, "verb1": { "zh": "等", "py": "děng" }, "object": { "zh": "你", "py": "nǐ" } }, "end": "。", "es": "…te esperará la conserje. (2.ª parte, 除非…才)" },
+        { "slots": { "time0": { "zh": "要是", "py": "yàoshi" }, "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "不舒服", "py": "bù shūfu" } }, "end": "，", "es": "Si no te encuentras bien… (1.ª parte)" },
+        { "slots": { "adverb": { "zh": "就", "py": "jiù" }, "with": { "zh": "给阿姨", "py": "gěi āyí" }, "verb1": { "zh": "打", "py": "dǎ" }, "object": { "zh": "电话", "py": "diànhuà" } }, "end": "。", "es": "…llama a la conserje. (2.ª parte)" },
+        { "slots": { "time0": { "zh": "不论", "py": "búlùn" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "谁", "py": "shéi" } }, "end": "，", "es": "Sea quien sea… (1.ª parte)" },
+        { "slots": { "adverb": { "zh": "都", "py": "dōu" }, "aux": { "zh": "要", "py": "yào" }, "verb1": { "zh": "按照", "py": "ànzhào" }, "object": { "zh": "学校的规定", "py": "xuéxiào de guīdìng" } }, "end": "。", "es": "…tiene que seguir las normas de la universidad. (2.ª parte)" }
+      ],
+      "negative": [
+        { "slots": { "time0": { "zh": "除非", "py": "chúfēi" }, "subject": { "zh": "天气", "py": "tiānqì" }, "adverb": { "zh": "特别", "py": "tèbié" }, "verb1": { "zh": "不好", "py": "bù hǎo" } }, "end": "，", "es": "Solo si hace un tiempo malísimo… (1.ª parte)" },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "才不", "py": "cái bú" }, "verb1": { "zh": "去健身房", "py": "qù jiànshēnfáng" } }, "end": "。", "es": "…no voy al gimnasio. (2.ª parte)" }
+      ],
+      "question": [
+        { "slots": { "time0": { "zh": "要是", "py": "yàoshi" }, "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "十二点才", "py": "shí'èr diǎn cái" }, "verb1": { "zh": "回来", "py": "huílai" } }, "end": "，", "es": "Si vuelvo a las doce… (1.ª parte)" },
+        { "slots": { "subject": { "zh": "阿姨", "py": "āyí" }, "adverb": { "zh": "还", "py": "hái" }, "aux": { "zh": "会", "py": "huì" }, "verb1": { "zh": "开门", "py": "kāi mén" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "…¿la conserje todavía me abrirá?" }
+      ],
+      "mistakes": [
+        { "wrong": "除非你提前说，就能进去。", "right": "除非你提前说，才能进去。 / 只要你提前说，就能进去。", "why": "除非 marca la única condición: va con 才 (o con 不然 + lo que pasa si no se cumple), no con 就." },
+        { "wrong": "不论你去，我都去。", "right": "不论你去不去，我都去。", "why": "Detrás de 不论 tiene que haber una pregunta o una alternativa: 去不去, 多晚, 是谁…" },
+        { "wrong": "不论多晚，你要回来。", "right": "不论多晚，你都要回来。", "why": "不论 necesita 都 en la segunda parte." },
+        { "wrong": "我不得不去不。", "right": "我不得不去。", "why": "不得不 va entero delante del verbo: «no tengo más remedio que ir»." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "La conserje explica las normas",
+      "lines": [
+        { "speaker": "阿姨", "zh": "雨果，你是新搬来的吧？我给你说说宿舍的规定。", "py": "Yǔguǒ, nǐ shì xīn bānlai de ba? Wǒ gěi nǐ shuōshuo sùshè de guīdìng.", "es": "Hugo, eres el nuevo, ¿verdad? Te cuento las normas de la residencia." },
+        { "speaker": "雨果", "zh": "好的，阿姨，您说吧。", "py": "Hǎo de, āyí, nín shuō ba.", "es": "Vale, dígame." },
+        { "speaker": "阿姨", "zh": "晚上十一点关门。除非你提前跟我说，不然十一点以后就进不来了。", "py": "Wǎnshang shíyī diǎn guān mén. Chúfēi nǐ tíqián gēn wǒ shuō, bùrán shíyī diǎn yǐhòu jiù jìn bu lái le.", "es": "Cerramos a las once de la noche. A menos que me avises antes, después de las once ya no se puede entrar." },
+        { "speaker": "雨果", "zh": "要是我去看足球比赛，很晚才回来，怎么办？", "py": "Yàoshi wǒ qù kàn zúqiú bǐsài, hěn wǎn cái huílai, zěnme bàn?", "es": "¿Y si voy a ver un partido de fútbol y vuelvo muy tarde?" },
+        { "speaker": "阿姨", "zh": "那你得提前告诉我，我在楼下等你。不过我不能整晚等待。", "py": "Nà nǐ děi tíqián gàosu wǒ, wǒ zài lóuxià děng nǐ. Búguò wǒ bù néng zhěng wǎn děngdài.", "es": "Pues me lo dices antes y te espero abajo. Pero no puedo pasarme toda la noche esperando." },
+        { "speaker": "雨果", "zh": "明白。还有别的规定吗？", "py": "Míngbai. Hái yǒu bié de guīdìng ma?", "es": "Entendido. ¿Hay más normas?" },
+        { "speaker": "阿姨", "zh": "房间里只能放一点儿食品，不能做饭。", "py": "Fángjiān lǐ zhǐ néng fàng yìdiǎnr shípǐn, bù néng zuò fàn.", "es": "En la habitación solo se puede tener un poco de comida; no se puede cocinar." },
+        { "speaker": "雨果", "zh": "这个规定有必要吗？", "py": "Zhège guīdìng yǒu bìyào ma?", "es": "¿Hace falta esa norma?" },
+        { "speaker": "阿姨", "zh": "很有必要！按照学校的规定，不论是谁，都不能在房间里做饭。去年有个学生做饭，我们不得不把整个楼的人都叫出来。", "py": "Hěn yǒu bìyào! Ànzhào xuéxiào de guīdìng, búlùn shì shéi, dōu bù néng zài fángjiān lǐ zuò fàn. Qùnián yǒu ge xuésheng zuò fàn, wǒmen bù dé bù bǎ zhěng ge lóu de rén dōu jiào chulai.", "es": "¡Claro que sí! Según las normas de la universidad, sea quien sea, nadie puede cocinar en la habitación. El año pasado un estudiante cocinó y tuvimos que sacar a todo el edificio." },
+        { "speaker": "雨果", "zh": "好的，我尽量按照规定做。", "py": "Hǎo de, wǒ jǐnliàng ànzhào guīdìng zuò.", "es": "Vale, intentaré cumplir las normas." },
+        { "speaker": "阿姨", "zh": "不是“尽量”，是一定！你们这些年轻人，我都得管。", "py": "Bú shì “jǐnliàng”, shì yídìng! Nǐmen zhèxiē niánqīngrén, wǒ dōu děi guǎn.", "es": "¡Nada de «intentar»: tienes que cumplirlas! A todos vosotros, jovencitos, me toca vigilaros." },
+        { "speaker": "雨果", "zh": "知道了。那洗衣服要排队吗？", "py": "Zhīdào le. Nà xǐ yīfu yào páiduì ma?", "es": "Entendido. ¿Y para lavar la ropa hay que hacer cola?" },
+        { "speaker": "阿姨", "zh": "不必排队，用手机就行。洗衣房早上七点开门，直到晚上十点才关门。", "py": "Búbì páiduì, yòng shǒujī jiù xíng. Xǐyīfáng zǎoshang qī diǎn kāi mén, zhídào wǎnshang shí diǎn cái guān mén.", "es": "No hace falta hacer cola: basta con el móvil. La lavandería abre a las siete de la mañana y no cierra hasta las diez de la noche." },
+        { "speaker": "雨果", "zh": "谢谢阿姨！除非有急事，我不会很晚回来的。", "py": "Xièxie āyí! Chúfēi yǒu jíshì, wǒ bú huì hěn wǎn huílai de.", "es": "¡Gracias! Salvo que haya una urgencia, no volveré muy tarde." }
+      ],
+      "notes": "En las residencias chinas, la 宿管阿姨 (conserje de la residencia) es una institución: controla quién entra, cierra la puerta por la noche (门禁) y, a menudo, cuida de los estudiantes como una madre. 你们这些年轻人 («vosotros, los jóvenes») es típico de las personas mayores, entre la queja y el cariño. 直到…才… = «no… hasta…»: 直到十点才关门 = no cierra hasta las diez."
+    },
+    { "type": "exercises", "count": 17, "bank": ["g-word-order", "g-modal-verbs", "g-ye-dou", "g-question-words"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "time0": { "zh": "除非你提前说，" }, "subject": { "zh": "阿姨" }, "adverb": { "zh": "才" }, "aux": { "zh": "会" }, "verb1": { "zh": "等" }, "object": { "zh": "你" } }, "end": "。", "es": "Solo si avisas antes te esperará la conserje." }, "distractors": ["就"] },
+        { "sentence": { "slots": { "time0": { "zh": "要是你不舒服，" }, "adverb": { "zh": "就" }, "with": { "zh": "给阿姨" }, "verb1": { "zh": "打" }, "object": { "zh": "电话" } }, "end": "。", "es": "Si no te encuentras bien, llama a la conserje." } },
+        { "sentence": { "slots": { "time0": { "zh": "不论是谁，" }, "adverb": { "zh": "都不" }, "aux": { "zh": "能" }, "place": { "zh": "在房间里" }, "verb1": { "zh": "做饭" } }, "end": "。", "es": "Sea quien sea, nadie puede cocinar en la habitación." }, "distractors": ["就"] },
+        { "sentence": { "slots": { "subject": { "zh": "我们" }, "adverb": { "zh": "不得不提前" }, "verb1": { "zh": "回宿舍" } }, "end": "。", "es": "No tenemos más remedio que volver antes a la residencia." } },
+        { "sentence": { "slots": { "time0": { "zh": "除非有很必要的事，" }, "subject": { "zh": "我" }, "time": { "zh": "晚上十一点以后" }, "adverb": { "zh": "都不" }, "aux": { "zh": "会" }, "with": { "zh": "跟朋友" }, "verb1": { "zh": "出去" }, "verb2": { "zh": "玩儿" } }, "end": "。", "es": "Salvo que haya algo realmente necesario, después de las once de la noche no salgo con los amigos." } }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "除非你提前说，不然就进不来了。", "py": "Chúfēi nǐ tíqián shuō, bùrán jiù jìn bu lái le.", "es": "A menos que avises antes, ya no podrás entrar." },
+        { "zh": "要是你不舒服，就给我打电话。", "py": "Yàoshi nǐ bù shūfu, jiù gěi wǒ dǎ diànhuà.", "es": "Si no te encuentras bien, llámame." },
+        { "zh": "不论多晚，你都要给我发个微信。", "py": "Búlùn duō wǎn, nǐ dōu yào gěi wǒ fā ge Wēixìn.", "es": "Sea la hora que sea, mándame un wechat." },
+        { "zh": "我尽量早点儿回来。", "py": "Wǒ jǐnliàng zǎo diǎnr huílai.", "es": "Intentaré volver lo antes posible." }
+      ],
+      "respond": [
+        { "q": { "zh": "你们宿舍晚上几点关门？", "py": "Nǐmen sùshè wǎnshang jǐ diǎn guān mén?", "es": "¿A qué hora cierra vuestra residencia por la noche?" }, "model": { "zh": "十一点。除非提前跟阿姨说，不然就进不来了。", "py": "Shíyī diǎn. Chúfēi tíqián gēn āyí shuō, bùrán jiù jìn bu lái le.", "es": "A las once. A menos que avises antes a la conserje, ya no puedes entrar." } },
+        { "q": { "zh": "要是明天下雨，你还去跑步吗？", "py": "Yàoshi míngtiān xià yǔ, nǐ hái qù pǎobù ma?", "es": "Si mañana llueve, ¿vas a ir a correr igualmente?" }, "model": { "zh": "不论下不下雨，我都去。", "py": "Búlùn xià bu xià yǔ, wǒ dōu qù.", "es": "Llueva o no, voy a ir." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Normas de la residencia de estudiantes extranjeros",
+      "text": "留学生宿舍规定：一、宿舍晚上十一点关门。除非有必要的事，不然请在十一点以前回来。要是你不得不晚回来，请提前告诉宿管阿姨。二、按照学校的规定，房间里不能做饭，也不能抽烟。房间里可以放一点儿食品，可是请别放太多。三、洗衣房早上七点开门，直到晚上十点才关门。不必排队，用手机就可以。四、不论白天还是晚上，都请保持安静。晚上十点以后，请尽量不要大声说话。五、要是房间里的东西坏了，请马上告诉我们，不必自己修。雨果看了这些规定，觉得有一点儿多。小李说：“阿姨管得很多，可是她也很关心我们。上次我生病了，她一直在门口等待医生，直到医生来了，她才回去休息。”雨果听了，觉得阿姨真是个好人。",
+      "es": "Normas de la residencia de estudiantes extranjeros: 1. La residencia cierra a las once de la noche. Salvo que tengas algo necesario que hacer, vuelve antes de las once. Si no tienes más remedio que volver tarde, avisa antes a la conserje. 2. Según las normas de la universidad, en las habitaciones no se puede cocinar ni fumar. Se puede tener un poco de comida, pero no demasiada. 3. La lavandería abre a las siete de la mañana y no cierra hasta las diez de la noche. No hace falta hacer cola: basta con el móvil. 4. Sea de día o de noche, guarda silencio. A partir de las diez, procura no hablar alto. 5. Si se rompe algo de la habitación, avísanos enseguida: no hace falta que lo arregles tú. Al leer estas normas, a Hugo le parecieron un poco excesivas. Xiao Li le dijo: «La conserje se mete en todo, pero también se preocupa mucho por nosotros. La última vez que me puse malo estuvo esperando al médico en la puerta y no se fue a descansar hasta que llegó». Al oírlo, Hugo pensó que la conserje es buenísima persona.",
+      "questions": [
+        { "q": "Si tienes que volver tarde, ¿qué debes hacer?", "options": ["提前告诉宿管阿姨", "给老师打电话", "不必告诉谁"], "answer": 0 },
+        { "q": "¿Hasta qué hora está abierta la lavandería?", "options": ["晚上十点", "晚上十一点", "早上七点"], "answer": 0 },
+        { "q": "Si se rompe algo de la habitación…", "options": ["Hay que avisar enseguida", "Hay que arreglarlo uno mismo", "No pasa nada"], "answer": 0 },
+        { "q": "¿Qué hizo la conserje cuando Xiao Li se puso malo?", "options": ["在门口等待医生", "给他做饭", "送他回家"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

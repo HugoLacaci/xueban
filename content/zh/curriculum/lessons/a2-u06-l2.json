@@ -1,0 +1,129 @@
+{
+  "id": "a2-u06-l2",
+  "title": "Más alto que yo: A 比 B + adjetivo",
+  "zh": "他比我高",
+  "goal": "Comparar dos personas o cosas con A 比 B + adjetivo, reforzarlo con 更 y decir cuál es el que más con 最.",
+  "minutes": 14,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "比", "pinyin": "bǐ", "es": "que (en comparaciones); comparar", "note": "A 比 B 高 = A es más alto que B." },
+    { "hanzi": "更", "pinyin": "gèng", "es": "más, todavía más", "note": "Sin 比 (这个更好) o con 比 (他比我更忙)." },
+    { "hanzi": "热情", "pinyin": "rèqíng", "es": "cálido, simpático, acogedor", "note": "La cualidad estrella de un buen anfitrión." },
+    { "hanzi": "心情", "pinyin": "xīnqíng", "es": "estado de ánimo, humor", "note": "心情很好 = estar de buen humor." },
+    { "hanzi": "满意", "pinyin": "mǎnyì", "es": "satisfecho, contento (con algo)", "note": "对……满意 = estar satisfecho con…" },
+    { "hanzi": "意见", "pinyin": "yìjiàn", "es": "opinión; queja", "note": "我的意见是…… = en mi opinión…" },
+    { "hanzi": "大人", "pinyin": "dàrén", "es": "adulto, persona mayor (frente a los niños)" },
+    { "hanzi": "青少年", "pinyin": "qīngshàonián", "es": "jóvenes y adolescentes" }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "安娜比我高。", "py": "Ānnà bǐ wǒ gāo.", "es": "Ana es más alta que yo." },
+        { "zh": "他比我更热情，朋友也比我多。", "py": "Tā bǐ wǒ gèng rèqíng, péngyou yě bǐ wǒ duō.", "es": "Es todavía más simpático que yo, y también tiene más amigos." },
+        { "zh": "上海和马德里，哪个更大？", "py": "Shànghǎi hé Mǎdélǐ, nǎge gèng dà?", "es": "Entre Shanghái y Madrid, ¿cuál es más grande?" }
+      ]
+    },
+    { "type": "vocab", "title": "Para comparar y opinar", "words": ["比", "更", "热情", "心情", "满意", "意见", "大人", "青少年"] },
+    {
+      "type": "phonetics-drill",
+      "title": "比 bǐ en cadena de terceros tonos; 更 gèng frente a 跟 gēn",
+      "markdown": "**比** es tercer tono, y casi siempre va con pronombres de tercer tono: **比我**, **比你**. Dos terceros seguidos: el primero sube como un segundo, *bí wǒ* (se escribe *bǐ wǒ*). En **我比你好** hay tres: dilo en dos golpes, *wǒ / bí nǐ hǎo*, con el último bajando de verdad.\n\n**更 gèng / 跟 gēn**: -ng (la lengua se retira, suena «en la garganta») frente a -n (la punta toca detrás de los dientes). Y el tono: 更 cae, 跟 es alto y plano.\n\n**热情 rèqíng**: la *r* china no vibra; es como una «y» muy tensa con la lengua hacia atrás.",
+      "items": [
+        { "audio": "更", "options": ["gèng", "gēn", "gèn"], "answer": 0, "explain": "-ng y cuarto tono." },
+        { "audio": "比我", "prompt": "¿Cómo se pronuncia 比 aquí?", "options": ["Sube, como un 2.º tono (bí wǒ)", "Entero, bajando y subiendo (bǐ wǒ)", "Cae, como un 4.º tono (bì wǒ)"], "answer": 0, "explain": "3.º + 3.º: el primero se convierte en segundo." },
+        { "audio": "热情", "options": ["rèqíng", "lèqíng", "rèqīng"], "answer": 0, "explain": "r sin vibrar; 情 sube (2.º)." },
+        { "audio": "满意", "options": ["mǎnyì", "mànyì", "mǎnyí"], "answer": 0, "explain": "3.º + 4.º: el 3.º se queda en «medio tercer tono», solo bajo." },
+        { "audio": "心情", "options": ["xīnqíng", "xīnqīng", "xìnqíng"], "answer": 0, "explain": "1.º alto + 2.º que sube." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["比", "更"],
+      "mnemonics": {
+        "比": "Dos personitas (匕 + 匕) de pie una junto a otra: para comparar, se ponen lado a lado.",
+        "更": "Un sol (日) que sigue subiendo por encima de la línea del horizonte: «más todavía»."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "A 比 B + adjetivo",
+      "markdown": "Para decir «A es más … que B», el chino pone **比 + B delante del adjetivo**: 安娜**比我**高 (lit. «Ana comparada conmigo, alta»).\n\n**Convención del esqueleto** (la usamos en toda la unidad): **比 + B** va en el hueco *Adverbios*, porque ocupa el sitio de los adverbios, justo delante del adjetivo (*Verbo 1*). Si añades 更 o 还, van en el mismo hueco: «比他更».\n\n- **Nada de 很, 非常 ni 太** con 比: *安娜比我很高* es un error. Para reforzar, usa **更** o **还** («aún más»): 他比我**更**忙.\n- **最** (el que más) no necesita 比: 这家饭店的菜**最**好吃.\n- **Negar**: 不 se pone delante de 比 (我**不比**他忙 = no estoy más ocupado que él). Pero lo normal para «no tan… como» es 没有…那么, que llega en la lección 4.",
+      "focus": ["adverb"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "安娜", "py": "Ānnà" }, "adverb": { "zh": "比我", "py": "bǐ wǒ" }, "verb1": { "zh": "高", "py": "gāo" } }, "end": "。", "es": "Ana es más alta que yo.", "esOrder": [{ "text": "Ana", "slot": "subject" }, { "text": "es más alta", "slot": "verb1" }, { "text": "que yo", "slot": "adverb" }] },
+        { "slots": { "subject": { "zh": "今天", "py": "jīntiān" }, "adverb": { "zh": "比昨天", "py": "bǐ zuótiān" }, "verb1": { "zh": "冷", "py": "lěng" } }, "end": "。", "es": "Hoy hace más frío que ayer." },
+        { "slots": { "subject": { "zh": "坐地铁", "py": "zuò dìtiě" }, "adverb": { "zh": "比打车", "py": "bǐ dǎchē" }, "verb1": { "zh": "便宜", "py": "piányi" } }, "end": "。", "es": "Ir en metro es más barato que coger un taxi." },
+        { "slots": { "subject": { "zh": "小李", "py": "Xiǎo Lǐ" }, "adverb": { "zh": "比大卫更", "py": "bǐ Dàwèi gèng" }, "verb1": { "zh": "热情", "py": "rèqíng" } }, "end": "。", "es": "Xiao Li es todavía más simpático que David." },
+        { "slots": { "subject": { "zh": "他的意见", "py": "tā de yìjiàn" }, "adverb": { "zh": "比我的", "py": "bǐ wǒ de" }, "verb1": { "zh": "好", "py": "hǎo" } }, "end": "。", "es": "Su opinión es mejor que la mía." },
+        { "slots": { "subject": { "zh": "这家饭店的菜", "py": "zhè jiā fàndiàn de cài" }, "adverb": { "zh": "最", "py": "zuì" }, "verb1": { "zh": "好吃", "py": "hǎochī" } }, "end": "。", "es": "La comida de este restaurante es la más rica." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "不比他", "py": "bù bǐ tā" }, "verb1": { "zh": "忙", "py": "máng" } }, "end": "。", "es": "No estoy más ocupado que él (estamos más o menos igual)." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "adverb": { "zh": "比你哥哥", "py": "bǐ nǐ gēge" }, "verb1": { "zh": "高", "py": "gāo" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿Eres más alto que tu hermano?" },
+        { "slots": { "subject": { "zh": "咖啡和茶，哪个", "py": "kāfēi hé chá, nǎge" }, "adverb": { "zh": "更", "py": "gèng" }, "verb1": { "zh": "好喝", "py": "hǎohē" } }, "end": "？", "es": "Entre el café y el té, ¿qué está más rico?" }
+      ],
+      "mistakes": [
+        { "wrong": "安娜比我很高。", "right": "安娜比我高。 / 安娜比我更高。", "why": "Con 比 no se usa 很, 非常 ni 太; para reforzar, 更 o 还." },
+        { "wrong": "安娜高比我。", "right": "安娜比我高。", "why": "比 + B va delante del adjetivo, al revés que «más alta que yo»." },
+        { "wrong": "我比他不忙。", "right": "我不比他忙。 / 我没有他忙。", "why": "La negación va delante de 比, no del adjetivo." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "La foto de Madrid",
+      "lines": [
+        { "speaker": "小李", "zh": "雨果，照片上的人是谁？", "py": "Yǔguǒ, zhàopiàn shang de rén shì shéi?", "es": "Hugo, ¿quién es el de la foto?" },
+        { "speaker": "雨果", "zh": "是我在马德里最好的朋友。他比我高，也比我帅！", "py": "Shì wǒ zài Mǎdélǐ zuì hǎo de péngyou. Tā bǐ wǒ gāo, yě bǐ wǒ shuài!", "es": "Es mi mejor amigo de Madrid. Es más alto que yo, ¡y más guapo!" },
+        { "speaker": "小李", "zh": "他比你热情吗？", "py": "Tā bǐ nǐ rèqíng ma?", "es": "¿Es más simpático que tú?" },
+        { "speaker": "雨果", "zh": "对，他比我更热情，朋友也比我多。", "py": "Duì, tā bǐ wǒ gèng rèqíng, péngyou yě bǐ wǒ duō.", "es": "Sí, es todavía más simpático que yo, y tiene más amigos." },
+        { "speaker": "小李", "zh": "你觉得上海和马德里，哪个更好？", "py": "Nǐ juéde Shànghǎi hé Mǎdélǐ, nǎge gèng hǎo?", "es": "¿Y tú qué crees? ¿Shanghái o Madrid? ¿Cuál es mejor?" },
+        { "speaker": "雨果", "zh": "我的意见是：马德里的菜比上海的便宜，上海比马德里大！", "py": "Wǒ de yìjiàn shì: Mǎdélǐ de cài bǐ Shànghǎi de piányi, Shànghǎi bǐ Mǎdélǐ dà!", "es": "En mi opinión, en Madrid se come más barato que en Shanghái, ¡pero Shanghái es más grande que Madrid!" },
+        { "speaker": "小李", "zh": "你现在心情怎么样？对上海的生活满意吗？", "py": "Nǐ xiànzài xīnqíng zěnmeyàng? Duì Shànghǎi de shēnghuó mǎnyì ma?", "es": "¿Y cómo estás de ánimo ahora? ¿Estás contento con la vida en Shanghái?" },
+        { "speaker": "雨果", "zh": "很满意！我的心情比上个月好。", "py": "Hěn mǎnyì! Wǒ de xīnqíng bǐ shàng ge yuè hǎo.", "es": "¡Muy contento! Estoy de mejor humor que el mes pasado." },
+        { "speaker": "小李", "zh": "那就好。周末咱们一起去吃饭吧！", "py": "Nà jiù hǎo. Zhōumò zánmen yìqǐ qù chīfàn ba!", "es": "Me alegro. ¡El fin de semana vamos a comer juntos!" },
+        { "speaker": "雨果", "zh": "好啊！我请客！", "py": "Hǎo a! Wǒ qǐngkè!", "es": "¡Vale! ¡Invito yo!" }
+      ],
+      "notes": "最好的朋友 = «mejor amigo». Fíjate en que 比 compara cualquier cosa: personas (他比我高), ciudades (上海比马德里大) o acciones (坐地铁比打车便宜). Si las dos cosas son del mismo tipo, la segunda se abrevia: 马德里的菜比上海的 (菜) 便宜."
+    },
+    { "type": "exercises", "count": 16, "bank": ["u08", "u03", "g-hen-adj"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "安娜" }, "adverb": { "zh": "比我" }, "verb1": { "zh": "高" } }, "end": "。", "es": "Ana es más alta que yo." }, "distractors": ["很"] },
+        { "sentence": { "slots": { "subject": { "zh": "今天" }, "adverb": { "zh": "比昨天更" }, "verb1": { "zh": "冷" } }, "end": "。", "es": "Hoy hace todavía más frío que ayer." }, "distractors": ["很", "是"] },
+        { "sentence": { "slots": { "subject": { "zh": "坐地铁" }, "adverb": { "zh": "比打车" }, "verb1": { "zh": "便宜" } }, "end": "。", "es": "Ir en metro es más barato que coger un taxi." }, "distractors": ["太"] },
+        { "sentence": { "slots": { "time0": { "zh": "这个学期" }, "subject": { "zh": "我们班的同学" }, "adverb": { "zh": "都比上个学期更" }, "verb1": { "zh": "认真" } }, "end": "。", "es": "Este cuatrimestre todos los compañeros de clase son aún más aplicados que el anterior." } }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "安娜比我高。", "py": "Ānnà bǐ wǒ gāo.", "es": "Ana es más alta que yo." },
+        { "zh": "今天比昨天冷。", "py": "Jīntiān bǐ zuótiān lěng.", "es": "Hoy hace más frío que ayer." },
+        { "zh": "他比我更热情。", "py": "Tā bǐ wǒ gèng rèqíng.", "es": "Es todavía más simpático que yo." },
+        { "zh": "这家饭店的菜最好吃。", "py": "Zhè jiā fàndiàn de cài zuì hǎochī.", "es": "La comida de este restaurante es la más rica." }
+      ],
+      "respond": [
+        { "q": { "zh": "你比你哥哥高吗？", "py": "Nǐ bǐ nǐ gēge gāo ma?", "es": "¿Eres más alto que tu hermano?" }, "model": { "zh": "不，我哥哥比我高。", "py": "Bù, wǒ gēge bǐ wǒ gāo.", "es": "No, mi hermano es más alto que yo." } },
+        { "q": { "zh": "上海和马德里，哪个更大？", "py": "Shànghǎi hé Mǎdélǐ, nǎge gèng dà?", "es": "Entre Shanghái y Madrid, ¿cuál es más grande?" }, "model": { "zh": "上海比马德里大。", "py": "Shànghǎi bǐ Mǎdélǐ dà.", "es": "Shanghái es más grande que Madrid." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Tres amigos en el cine",
+      "text": "雨果有两个好朋友：小李和大卫。小李是上海人，大卫是美国人。大卫比小李高，也比小李大。小李呢，比大卫更热情。周末他们一起去看电影。这个电影大人比青少年更喜欢。看了电影，大卫的意见是：电影很好，也比上次的电影长。小李很满意，心情比昨天好。雨果觉得，这个电影最有意思的地方是音乐。",
+      "es": "Hugo tiene dos buenos amigos: Xiao Li y David. Xiao Li es de Shanghái y David, estadounidense. David es más alto que Xiao Li y también mayor, pero Xiao Li es todavía más simpático que David. El fin de semana fueron juntos al cine. A los adultos esta película les gusta más que a los jóvenes. Después de verla, la opinión de David fue que era buena, y también más larga que la de la última vez. Xiao Li quedó muy contento y estaba de mejor humor que el día anterior. A Hugo, lo más interesante de la película le pareció la música.",
+      "questions": [
+        { "q": "¿Quién es más alto?", "options": ["大卫", "小李", "雨果"], "answer": 0 },
+        { "q": "¿Quién es más simpático?", "options": ["小李", "大卫", "Los dos igual"], "answer": 0 },
+        { "q": "¿A quién le gusta más esta película?", "options": ["大人", "青少年", "小朋友"], "answer": 0 },
+        { "q": "¿Qué es lo más interesante para Hugo?", "options": ["音乐", "电影很长", "大卫的意见"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

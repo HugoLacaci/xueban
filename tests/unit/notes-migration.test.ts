@@ -47,7 +47,7 @@ describe("migración de apuntes v4 → v5", () => {
     await seedV4("xueban-mig");
     const db = new XuebanDB("xueban-mig");
     await db.open();
-    expect(db.verno).toBe(5);
+    expect(db.verno).toBeGreaterThanOrEqual(5); // v6 añade livingNoteAdds sin tocar las notas
     const notes = (await db.notes.toArray()).sort((a, b) => a.createdAt - b.createdAt);
     expect(notes).toHaveLength(3);
     const [n1, c1, j1] = notes;

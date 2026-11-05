@@ -1,0 +1,159 @@
+{
+  "id": "a2-u07-l2",
+  "title": "En el polideportivo: verbos separables y 比 + V得",
+  "zh": "他跑得比我快",
+  "goal": "Contar cuánto rato haces deporte con los verbos separables (游了一个小时泳) y comparar cómo lo hacéis dos personas con 比 + V得.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "比赛", "pinyin": "bǐsài", "es": "partido, competición; competir", "note": "一场比赛 = un partido (场 llega en la lección 5)." },
+    { "hanzi": "球场", "pinyin": "qiúchǎng", "es": "campo, pista (de pelota)", "note": "网球场 = pista de tenis; 足球场 = campo de fútbol." },
+    { "hanzi": "体育场", "pinyin": "tǐyùchǎng", "es": "estadio (al aire libre)" },
+    { "hanzi": "体育馆", "pinyin": "tǐyùguǎn", "es": "pabellón, polideportivo (cubierto)" },
+    { "hanzi": "健身房", "pinyin": "jiànshēnfáng", "es": "gimnasio" },
+    { "hanzi": "打卡", "pinyin": "dǎkǎ", "es": "fichar; ir sin falta (y subirlo a las redes)", "note": "En las redes chinas, 打卡 es «marcar que has ido»: 去健身房打卡." },
+    { "hanzi": "队", "pinyin": "duì", "es": "equipo; fila", "note": "我们队 = nuestro equipo." },
+    { "hanzi": "球队", "pinyin": "qiúduì", "es": "equipo (de un deporte de pelota)" },
+    { "hanzi": "队长", "pinyin": "duìzhǎng", "es": "capitán (del equipo)", "note": "长 aquí es zhǎng, «jefe», no cháng «largo»." },
+    { "hanzi": "球迷", "pinyin": "qiúmí", "es": "aficionado (al fútbol, a un equipo)", "note": "迷 = fascinado por algo: 球迷, 歌迷." },
+    { "hanzi": "球鞋", "pinyin": "qiúxié", "es": "zapatillas de deporte" },
+    { "hanzi": "爬", "pinyin": "pá", "es": "trepar, subir (a pie); gatear" },
+    { "hanzi": "爬山", "pinyin": "páshān", "es": "subir al monte, hacer senderismo", "note": "Separable: 爬了两个小时山." }
+  ],
+  "extraVocab": ["健身房", "打卡"],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "我昨天游了一个小时泳。", "py": "Wǒ zuótiān yóu le yí ge xiǎoshí yǒng.", "es": "Ayer nadé una hora." },
+        { "zh": "他比我跑得快多了。", "py": "Tā bǐ wǒ pǎo de kuài duō le.", "es": "Corre mucho más rápido que yo." },
+        { "zh": "你能帮我一个忙吗？", "py": "Nǐ néng bāng wǒ yí ge máng ma?", "es": "¿Me puedes hacer un favor?" }
+      ]
+    },
+    { "type": "vocab", "title": "Equipos, partidos y sitios para hacer deporte", "words": ["比赛", "球场", "体育场", "体育馆", "健身房", "打卡", "队", "球队", "队长", "球迷", "球鞋", "爬", "爬山"] },
+    {
+      "type": "phonetics-drill",
+      "title": "Terceros tonos en cadena: 我比你跑得快",
+      "markdown": "Ya sabes que **3 + 3 → 2 + 3**: 打卡 *dǎkǎ* se dice *dákǎ*. En una frase, los terceros tonos seguidos se agrupan **por palabras o por sentido**, y dentro de cada grupo solo el último conserva el tercer tono:\n\n- 我比你 → *wó bí nǐ*\n- 我比你跑得快 → *wó bí nǐ | pǎo de kuài* (跑 delante de 得 queda en medio tercer tono)\n\nEl pinyin se escribe siempre con los tonos originales; el cambio se hace al hablar. Repásalo también en 队长 *duìzhǎng* (长 = «jefe», no *cháng*).",
+      "items": [
+        { "audio": "打卡", "prompt": "¿Cómo suena 打 aquí?", "options": ["Como segundo tono (dá)", "Como tercer tono completo", "Como cuarto tono"], "answer": 0, "explain": "3 + 3 → 2 + 3." },
+        { "audio": "我比你跑得快", "prompt": "¿Cuántas sílabas de tercer tono hay al principio?", "options": ["Cuatro: wǒ bǐ nǐ pǎo", "Dos", "Ninguna"], "answer": 0, "explain": "Se agrupan: wó bí nǐ | pǎo de kuài." },
+        { "audio": "队长", "options": ["duìzhǎng", "duìcháng", "tuìzhǎng"], "answer": 0, "explain": "长 zhǎng = jefe; 长 cháng = largo." },
+        { "audio": "球迷", "options": ["qiúmí", "qiúmǐ", "jiúmí"], "answer": 0, "explain": "q aspirada; 迷 en segundo tono." },
+        { "audio": "爬山", "options": ["páshān", "bàshān", "pàshān"], "answer": 0, "explain": "p aspirada y segundo tono." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["队", "爬"],
+      "mnemonics": {
+        "队": "阝 (colina, a la izquierda) + 人: personas en fila subiendo una colina → un grupo, un equipo.",
+        "爬": "爪 (garras, manos) + 巴 (da el sonido, bā → pá): avanzar agarrándose con las manos, trepar."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "Verbos separables: 游了一个小时泳",
+      "markdown": "Muchos verbos de afición son en realidad **verbo + objeto** pegados: 游泳 (游 + 泳), 跑步 (跑 + 步), 跳舞 (跳 + 舞), 帮忙 (帮 + 忙), 爬山 (爬 + 山). Se llaman **verbos separables** (离合词).\n\nPor eso **lo que «cuenta» la acción va en medio**, entre el verbo y su objeto:\n\n- duración: 游**了一个小时**泳, 跑**半个小时**步\n- cantidad o persona: 帮**我一个**忙 («hazme un favor»)\n- reduplicación (hacer un poco): solo se dobla el verbo: **游游**泳, **跑跑**步, **跳跳**舞\n\nNunca van detrás del todo: *游泳一个小时* o *帮忙你* son errores muy típicos.\n\n**En el esqueleto**: el verbo (con 了) va en *Verbo 1* y lo que queda (cantidad + 泳/步/舞/忙) en *Objeto*.",
+      "focus": ["verb1", "object"],
+      "sentences": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "time": { "zh": "昨天", "py": "zuótiān" }, "verb1": { "zh": "游了", "py": "yóu le" }, "object": { "zh": "一个小时泳", "py": "yí ge xiǎoshí yǒng" } }, "end": "。", "es": "Ayer nadé una hora." },
+        { "slots": { "subject": { "zh": "大卫", "py": "Dàwèi" }, "time": { "zh": "每天", "py": "měi tiān" }, "adverb": { "zh": "都", "py": "dōu" }, "verb1": { "zh": "跑", "py": "pǎo" }, "object": { "zh": "半个小时步", "py": "bàn ge xiǎoshí bù" } }, "end": "。", "es": "David corre media hora todos los días." },
+        { "slots": { "subject": { "zh": "她们", "py": "tāmen" }, "verb1": { "zh": "跳了", "py": "tiào le" }, "object": { "zh": "两个小时舞", "py": "liǎng ge xiǎoshí wǔ" } }, "end": "。", "es": "Bailaron dos horas." },
+        { "slots": { "time0": { "zh": "周末", "py": "zhōumò" }, "subject": { "zh": "咱们", "py": "zánmen" }, "verb1": { "zh": "去", "py": "qù" }, "verb2": { "zh": "游游泳", "py": "yóuyou yǒng" }, "particle": { "zh": "吧", "py": "ba" } }, "end": "。", "es": "El fin de semana vamos a nadar un rato." },
+        { "slots": { "subject": { "zh": "我们", "py": "wǒmen" }, "verb1": { "zh": "爬了", "py": "pá le" }, "object": { "zh": "三个小时山", "py": "sān ge xiǎoshí shān" } }, "end": "。", "es": "Estuvimos tres horas subiendo al monte." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "time": { "zh": "今天", "py": "jīntiān" }, "adverb": { "zh": "没", "py": "méi" }, "verb1": { "zh": "跑步", "py": "pǎobù" } }, "end": "。", "es": "Hoy no he salido a correr." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "aux": { "zh": "能", "py": "néng" }, "verb1": { "zh": "帮", "py": "bāng" }, "object": { "zh": "我一个忙", "py": "wǒ yí ge máng" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿Me puedes hacer un favor?" },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "time": { "zh": "今天", "py": "jīntiān" }, "verb1": { "zh": "游泳", "py": "yóuyǒng" }, "particle": { "zh": "了吗", "py": "le ma" } }, "end": "？", "es": "¿Has ido a nadar hoy?" }
+      ],
+      "mistakes": [
+        { "wrong": "我游泳了一个小时。", "right": "我游了一个小时泳。 / 我游泳游了一个小时。", "why": "游泳 = 游 (verbo) + 泳 (objeto): la duración va entre los dos, o se repite el verbo." },
+        { "wrong": "我帮忙你。", "right": "我帮你。 / 我帮你一个忙。", "why": "帮忙 ya lleva su objeto (忙): la persona va en medio, o se usa 帮 solo." },
+        { "wrong": "我们跑步跑步吧。", "right": "我们跑跑步吧。", "why": "Con un verbo separable solo se dobla el verbo: 跑跑步, 游游泳, 跳跳舞." }
+      ]
+    },
+    {
+      "type": "skeleton",
+      "title": "Comparar cómo se hace: 他比我跑得快",
+      "markdown": "En la unidad anterior viste A 比 B + adjetivo. Para comparar **cómo hacen algo** dos personas, se junta con V + 得. Hay **dos órdenes, los dos correctos**:\n\n1. 他**跑得比我快**。 (el 比 dentro del complemento)\n2. 他**比我跑得快**。 (el 比 delante del verbo)\n\n- «Mucho más»: **多了** o **得多** al final: 他比我跑得快**多了**. «Un poco más»: **一点儿**.\n- Con 比 **nunca** va 很 ni 非常.\n- **Negativa**: A + **没有** B + V得 + (那么) adj: 我**没有他**跑得**那么**快.\n- Con objeto, igual que antes: el objeto como tema (他网球打得比我好).\n\n**En el esqueleto**: 比我 y 没有他 van en *Adverbios* (igual que en la unidad 6); V得 en *Verbo 1* y el adjetivo, con 多了 / 一点儿, en *Complemento*. En el orden 1, todo «比我快» va en *Complemento*.",
+      "focus": ["adverb", "complement"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "他", "py": "tā" }, "verb1": { "zh": "跑得", "py": "pǎo de" }, "complement": { "zh": "比我快", "py": "bǐ wǒ kuài" } }, "end": "。", "es": "Corre más rápido que yo." },
+        { "slots": { "subject": { "zh": "他", "py": "tā" }, "adverb": { "zh": "比我", "py": "bǐ wǒ" }, "verb1": { "zh": "跑得", "py": "pǎo de" }, "complement": { "zh": "快", "py": "kuài" } }, "end": "。", "es": "Corre más rápido que yo.", "esOrder": [{ "text": "Corre", "slot": "verb1" }, { "text": "más rápido", "slot": "complement" }, { "text": "que yo", "slot": "adverb" }] },
+        { "slots": { "subject": { "zh": "安娜", "py": "Ānnà" }, "adverb": { "zh": "比我", "py": "bǐ wǒ" }, "verb1": { "zh": "游得", "py": "yóu de" }, "complement": { "zh": "快多了", "py": "kuài duō le" } }, "end": "。", "es": "Ana nada mucho más rápido que yo." },
+        { "slots": { "subject": { "zh": "小李网球", "py": "Xiǎo Lǐ wǎngqiú" }, "verb1": { "zh": "打得", "py": "dǎ de" }, "complement": { "zh": "比大卫好一点儿", "py": "bǐ Dàwèi hǎo yìdiǎnr" } }, "end": "。", "es": "Xiao Li juega al tenis un poco mejor que David." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "没有他", "py": "méiyǒu tā" }, "verb1": { "zh": "跑得", "py": "pǎo de" }, "complement": { "zh": "那么快", "py": "nàme kuài" } }, "end": "。", "es": "No corro tan rápido como él." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "他", "py": "tā" }, "adverb": { "zh": "比你", "py": "bǐ nǐ" }, "verb1": { "zh": "打得", "py": "dǎ de" }, "complement": { "zh": "好", "py": "hǎo" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿Juega mejor que tú?" },
+        { "slots": { "subject": { "zh": "你们队谁", "py": "nǐmen duì shéi" }, "verb1": { "zh": "跑得", "py": "pǎo de" }, "complement": { "zh": "最快", "py": "zuì kuài" } }, "end": "？", "es": "¿Quién corre más rápido de vuestro equipo?" }
+      ],
+      "mistakes": [
+        { "wrong": "他跑得比我很快。", "right": "他跑得比我快。 / 他跑得比我快多了。", "why": "Con 比 no se usa 很 ni 非常; para «mucho más», 多了 o 得多 detrás." },
+        { "wrong": "他比我跑快。", "right": "他比我跑得快。", "why": "Falta 得: el adjetivo que cuenta cómo se hace siempre va unido con 得." },
+        { "wrong": "我不比他跑得快。", "right": "我没有他跑得快。", "why": "La negación normal de 比 es 没有…(那么): «no tan rápido como él»." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Partido de voleibol en el pabellón",
+      "lines": [
+        { "speaker": "大卫", "zh": "雨果，今天晚上体育馆有排球比赛，你去吗？", "py": "Yǔguǒ, jīntiān wǎnshang tǐyùguǎn yǒu páiqiú bǐsài, nǐ qù ma?", "es": "Hugo, esta noche hay partido de voleibol en el pabellón, ¿vienes?" },
+        { "speaker": "雨果", "zh": "去！我是球迷。是我们学校的球队吗？", "py": "Qù! Wǒ shì qiúmí. Shì wǒmen xuéxiào de qiúduì ma?", "es": "¡Claro! Soy muy aficionado. ¿Juega el equipo de nuestra universidad?" },
+        { "speaker": "大卫", "zh": "对，我朋友是队长。他排球打得特别好。", "py": "Duì, wǒ péngyou shì duìzhǎng. Tā páiqiú dǎ de tèbié hǎo.", "es": "Sí, un amigo mío es el capitán. Juega al voleibol de maravilla." },
+        { "speaker": "雨果", "zh": "他比你打得好吗？", "py": "Tā bǐ nǐ dǎ de hǎo ma?", "es": "¿Juega mejor que tú?" },
+        { "speaker": "大卫", "zh": "他比我打得好多了。我一个星期只打一次。", "py": "Tā bǐ wǒ dǎ de hǎo duō le. Wǒ yí ge xīngqī zhǐ dǎ yí cì.", "es": "Muchísimo mejor. Yo solo juego una vez por semana." },
+        { "speaker": "雨果", "zh": "看完比赛，我们去健身房吧。", "py": "Kàn wán bǐsài, wǒmen qù jiànshēnfáng ba.", "es": "Después del partido vamos al gimnasio." },
+        { "speaker": "大卫", "zh": "好啊。我每天都去健身房打卡。", "py": "Hǎo a. Wǒ měi tiān dōu qù jiànshēnfáng dǎkǎ.", "es": "Vale. Yo voy al gimnasio todos los días sin falta." },
+        { "speaker": "雨果", "zh": "你真认真！我昨天跑了一个小时步，今天腿很疼。", "py": "Nǐ zhēn rènzhēn! Wǒ zuótiān pǎo le yí ge xiǎoshí bù, jīntiān tuǐ hěn téng.", "es": "¡Qué constante eres! Ayer corrí una hora y hoy me duelen mucho las piernas." },
+        { "speaker": "大卫", "zh": "周末咱们去爬山吧。你要买一双新球鞋。", "py": "Zhōumò zánmen qù páshān ba. Nǐ yào mǎi yì shuāng xīn qiúxié.", "es": "El fin de semana vamos al monte. Tienes que comprarte unas zapatillas nuevas." },
+        { "speaker": "雨果", "zh": "好！上海有山吗？", "py": "Hǎo! Shànghǎi yǒu shān ma?", "es": "¡Vale! ¿Hay montes en Shanghái?" },
+        { "speaker": "大卫", "zh": "有，不太高。咱们可以爬两个小时山。", "py": "Yǒu, bú tài gāo. Zánmen kěyǐ pá liǎng ge xiǎoshí shān.", "es": "Sí, no muy altos. Podemos estar dos horas subiendo." }
+      ],
+      "notes": "打卡 empezó siendo «fichar» en el trabajo; en las redes (微信, 抖音) es «marcar que has estado en un sitio»: 健身房打卡, 网红店打卡. Shanghái es casi llana: el monte más famoso, 佘山 (Shéshān), tiene menos de 100 metros."
+    },
+    { "type": "exercises", "count": 18, "bank": ["g-complements", "u12", "u08"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "他" }, "adverb": { "zh": "比我" }, "verb1": { "zh": "跑得" }, "complement": { "zh": "快" } }, "end": "。", "es": "Corre más rápido que yo." }, "distractors": ["很"] },
+        { "sentence": { "slots": { "subject": { "zh": "我" }, "time": { "zh": "昨天" }, "verb1": { "zh": "游了" }, "object": { "zh": "一个小时泳" } }, "end": "。", "es": "Ayer nadé una hora." }, "distractors": ["游泳"] },
+        { "sentence": { "slots": { "subject": { "zh": "你" }, "aux": { "zh": "能" }, "verb1": { "zh": "帮" }, "object": { "zh": "我一个忙" }, "particle": { "zh": "吗" } }, "end": "？", "es": "¿Me puedes hacer un favor?" }, "distractors": ["帮忙"] },
+        { "sentence": { "slots": { "time0": { "zh": "这个周末" }, "subject": { "zh": "我" }, "aux": { "zh": "想" }, "with": { "zh": "跟大卫一起" }, "verb1": { "zh": "去" }, "verb2": { "zh": "爬" }, "object": { "zh": "两个小时山" } }, "end": "。", "es": "Este fin de semana quiero ir con David a subir al monte un par de horas." } }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "他比我跑得快。", "py": "Tā bǐ wǒ pǎo de kuài.", "es": "Corre más rápido que yo." },
+        { "zh": "我跑得没有他那么快。", "py": "Wǒ pǎo de méiyǒu tā nàme kuài.", "es": "No corro tan rápido como él." },
+        { "zh": "我昨天游了一个小时泳。", "py": "Wǒ zuótiān yóu le yí ge xiǎoshí yǒng.", "es": "Ayer nadé una hora." },
+        { "zh": "你能帮我一个忙吗？", "py": "Nǐ néng bāng wǒ yí ge máng ma?", "es": "¿Me puedes hacer un favor?" }
+      ],
+      "respond": [
+        { "q": { "zh": "你跑得快吗？", "py": "Nǐ pǎo de kuài ma?", "es": "¿Corres rápido?" }, "model": { "zh": "我跑得不太快，大卫比我跑得快多了。", "py": "Wǒ pǎo de bú tài kuài, Dàwèi bǐ wǒ pǎo de kuài duō le.", "es": "No mucho; David corre muchísimo más rápido que yo." } },
+        { "q": { "zh": "你昨天运动了吗？", "py": "Nǐ zuótiān yùndòng le ma?", "es": "¿Hiciste deporte ayer?" }, "model": { "zh": "运动了，我在健身房跑了半个小时步。", "py": "Yùndòng le, wǒ zài jiànshēnfáng pǎo le bàn ge xiǎoshí bù.", "es": "Sí, corrí media hora en el gimnasio." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "El capitán y el aficionado",
+      "text": "我们学校有一个很大的体育场，旁边还有体育馆和很多球场。我的朋友大卫是学校排球队的队长，他排球打得比别人都好。他每天都去健身房打卡，跑一个小时步。我也是球迷，常常去看他们的比赛。我打得没有大卫那么好，我跑得比他快！周末我们要一起去爬山，我买了一双新球鞋。",
+      "es": "Mi universidad tiene un estadio muy grande y, al lado, un pabellón y muchas pistas. Mi amigo David es el capitán del equipo de voleibol de la universidad: juega mejor que nadie. Va al gimnasio todos los días sin falta y corre una hora. Yo también soy muy aficionado y voy mucho a ver sus partidos. No juego tan bien como David, ¡pero corro más rápido que él! El fin de semana vamos a ir juntos al monte; me he comprado unas zapatillas nuevas.",
+      "questions": [
+        { "q": "¿Qué es David en el equipo de voleibol?", "options": ["队长", "球迷", "老师"], "answer": 0 },
+        { "q": "¿Quién corre más rápido?", "options": ["雨果", "大卫", "Los dos igual"], "answer": 0 },
+        { "q": "¿Qué ha comprado Hugo?", "options": ["一双新球鞋", "一个排球", "一张票"], "answer": 0 },
+        { "q": "¿Cuánto corre David en el gimnasio?", "options": ["一个小时", "半个小时", "五公里"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "id": "a1-u12-l5",
+  "title": "Un momento, a ver: 一下, verbos repetidos y repaso",
+  "zh": "你听一下！",
+  "goal": "Suavizar peticiones con verbo + 一下 y verbos repetidos (看看, 试试), y repasar 喜欢, 会, 能, 可以, 想, 要 y 不用 construyendo frases completas.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "一下儿", "pinyin": "yíxiàr", "es": "un momento, un poco (tras el verbo)", "note": "Verbo + 一下(儿): acción breve y amable. En Shanghái se dice casi siempre 一下, sin 儿." },
+    { "hanzi": "试", "pinyin": "shì", "es": "probar, intentar", "note": "试试 / 试一下 = probar a ver qué tal." },
+    { "hanzi": "喜欢", "pinyin": "xǐhuan", "es": "gustar (repaso)" },
+    { "hanzi": "会", "pinyin": "huì", "es": "saber hacer (repaso)" },
+    { "hanzi": "能", "pinyin": "néng", "es": "poder: capacidad, circunstancias (repaso)" },
+    { "hanzi": "可以", "pinyin": "kěyǐ", "es": "poder: permiso (repaso)" },
+    { "hanzi": "想", "pinyin": "xiǎng", "es": "tener ganas de (repaso)" },
+    { "hanzi": "不用", "pinyin": "búyòng", "es": "no hace falta (repaso)" }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "你听一下这个歌。", "py": "Nǐ tīng yíxià zhège gē.", "es": "Escucha un momento esta canción." },
+        { "zh": "我可以看看吗？", "py": "Wǒ kěyǐ kànkan ma?", "es": "¿Puedo echar un vistazo?" },
+        { "zh": "我想休息一下。", "py": "Wǒ xiǎng xiūxi yíxià.", "es": "Quiero descansar un rato." }
+      ]
+    },
+    { "type": "vocab", "title": "Un momento… y repaso de la unidad", "words": ["一下儿", "试", "喜欢", "会", "能", "可以", "想", "不用"] },
+    {
+      "type": "phonetics-drill",
+      "title": "El 一 que cambia (一下 yíxià) y la -r de 一下儿",
+      "markdown": "**一 yī** cambia de tono según lo que venga detrás:\n\n- delante de **4.º tono** → **2.º**: 一下 **yíxià**, 一个 **yí ge**.\n- delante de **1.º, 2.º o 3.º** → **4.º**: 一起 **yìqǐ**, 一杯 **yì bēi**.\n- solo, contando o al final → **1.º**: 一, 第一.\n\n**Erhua (儿化)**: en el norte se añade **-r** al final de muchas palabras. No es una sílaba más: la lengua se curva hacia atrás al acabar la sílaba anterior. 一下儿 **yíxiàr**, 玩儿 **wánr**, 那儿 **nàr**. Ante -n, la -n desaparece: 玩儿 suena «wár».",
+      "items": [
+        { "audio": "一下", "options": ["yīxià", "yíxià", "yìxià"], "answer": 1, "explain": "下 es 4.º tono: 一 pasa a 2.º." },
+        { "audio": "一起", "options": ["yìqǐ", "yíqǐ", "yīqǐ"], "answer": 0, "explain": "起 es 3.º: 一 pasa a 4.º." },
+        { "audio": "一个", "options": ["yí ge", "yì ge", "yī ge"], "answer": 0, "explain": "个 es 4.º en origen (aunque aquí suene neutro): 一 pasa a 2.º." },
+        { "audio": "一下儿", "prompt": "¿Cuántas sílabas oyes?", "options": ["2 (yí-xiàr)", "3 (yí-xià-ér)"], "answer": 0, "explain": "儿 no forma sílaba propia: es una -r pegada a 下." },
+        { "audio": "那儿", "options": ["nàr", "nà'ér", "nǎr"], "answer": 0, "explain": "那儿 nàr (allí), 4.º tono; 哪儿 nǎr (dónde) es 3.º." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["试", "下"],
+      "mnemonics": {
+        "试": "讠 (palabra) + 式 (modelo, forma): poner algo a prueba con palabras frente a un modelo, examinar, probar.",
+        "下": "Una raya (el suelo) y un trazo que cuelga por debajo: lo que está debajo, bajar."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "Verbo + 一下 y verbo repetido (看看)",
+      "markdown": "Para que una petición o una propuesta suene **breve y amable** hay dos recursos, casi equivalentes:\n\n1. **Verbo + 一下**: 看**一下**, 听**一下**, 等**一下**, 休息**一下**. «Un momento, un poquito».\n2. **Verbo repetido**: 看看, 听听, 试试 (la segunda sílaba en tono neutro: kànkan). Con verbos de dos sílabas se repite entero: **休息休息**, 介绍介绍 (ABAB, nunca ~~休休息息~~). También 看一看 (A一A).\n\nLos dos van **detrás del verbo y delante del objeto**: 你听一下**这个歌** — por eso en el esqueleto van dentro del **Verbo 1**.\n\nSe combinan muy bien con lo de la unidad: **我可以看看吗？** (permiso), **你试试吧！** (sugerencia), **我想休息一下** (deseo).\n\n⚠️ No se usan en negativa: «no lo pruebo un poco» no tiene sentido. Se dice 我不想试.",
+      "focus": ["verb1"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "听一下", "py": "tīng yíxià" }, "object": { "zh": "这个歌", "py": "zhège gē" } }, "end": "。", "es": "Escucha un momento esta canción.", "esOrder": [{ "text": "Escucha", "slot": "verb1" }, { "text": "(tú)", "slot": "subject" }, { "text": "un momento", "slot": "verb1" }, { "text": "esta canción", "slot": "object" }] },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "aux": { "zh": "想", "py": "xiǎng" }, "verb1": { "zh": "休息一下", "py": "xiūxi yíxià" } }, "end": "。", "es": "Quiero descansar un rato." },
+        { "slots": { "subject": { "zh": "我们", "py": "wǒmen" }, "verb1": { "zh": "去书店", "py": "qù shūdiàn" }, "verb2": { "zh": "看看", "py": "kànkan" }, "particle": { "zh": "吧", "py": "ba" } }, "end": "。", "es": "Vamos a la librería a echar un vistazo." },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "试试", "py": "shìshi" }, "object": { "zh": "这个游戏", "py": "zhège yóuxì" }, "particle": { "zh": "吧", "py": "ba" } }, "end": "！", "es": "¡Prueba este juego, venga!" },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "verb1": { "zh": "介绍一下", "py": "jièshào yíxià" }, "object": { "zh": "我的朋友", "py": "wǒ de péngyou" } }, "end": "。", "es": "Os presento a mi amigo." },
+        { "slots": { "subject": { "zh": "你们", "py": "nǐmen" }, "verb1": { "zh": "休息休息", "py": "xiūxi xiūxi" }, "particle": { "zh": "吧", "py": "ba" } }, "end": "。", "es": "Descansad un poco." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "不", "py": "bù" }, "aux": { "zh": "想", "py": "xiǎng" }, "verb1": { "zh": "试", "py": "shì" } }, "end": "。", "es": "No me apetece probarlo." },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "adverb": { "zh": "不用", "py": "búyòng" }, "verb1": { "zh": "等", "py": "děng" }, "object": { "zh": "我", "py": "wǒ" } }, "end": "。", "es": "No hace falta que me esperes." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "aux": { "zh": "可以", "py": "kěyǐ" }, "verb1": { "zh": "看看", "py": "kànkan" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿Puedo echar un vistazo?" },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "aux": { "zh": "想", "py": "xiǎng" }, "verb1": { "zh": "试一下", "py": "shì yíxià" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿Quieres probar un momento?" }
+      ],
+      "mistakes": [
+        { "wrong": "你一下等。", "right": "你等一下。", "why": "一下 va detrás del verbo, nunca delante." },
+        { "wrong": "你听这个歌一下。", "right": "你听一下这个歌。", "why": "一下 va pegado al verbo, antes del objeto." },
+        { "wrong": "我们休休息息吧。", "right": "我们休息休息吧。", "why": "Los verbos de dos sílabas se repiten enteros: ABAB." },
+        { "wrong": "我不试试。", "right": "我不想试。", "why": "El verbo repetido no se niega: niega el deseo (不想) o la acción simple." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Una canción y un juego",
+      "lines": [
+        { "speaker": "安娜", "zh": "雨果，你听一下这个歌，很好听！", "py": "Yǔguǒ, nǐ tīng yíxià zhège gē, hěn hǎotīng!", "es": "Hugo, escucha esta canción, ¡es muy bonita!" },
+        { "speaker": "雨果", "zh": "我听听……真好听！你会唱吗？", "py": "Wǒ tīngting… Zhēn hǎotīng! Nǐ huì chàng ma?", "es": "A ver… ¡Qué bonita! ¿Te la sabes?" },
+        { "speaker": "安娜", "zh": "会！我们一起唱吧！", "py": "Huì! Wǒmen yìqǐ chàng ba!", "es": "¡Sí! ¡Cantémosla juntos!" },
+        { "speaker": "雨果", "zh": "我不会唱中国歌，我想先听听。", "py": "Wǒ bú huì chàng Zhōngguó gē, wǒ xiǎng xiān tīngting.", "es": "Yo no sé cantar canciones chinas; prefiero escucharla primero." },
+        { "speaker": "安娜", "zh": "行。你想试试这个游戏吗？小李说很好玩儿。", "py": "Xíng. Nǐ xiǎng shìshi zhège yóuxì ma? Xiǎo Lǐ shuō hěn hǎowánr.", "es": "Vale. ¿Quieres probar este juego? Xiao Li dice que es muy divertido." },
+        { "speaker": "雨果", "zh": "好，我试一下。……这个游戏真难！", "py": "Hǎo, wǒ shì yíxià… Zhège yóuxì zhēn nán!", "es": "Vale, lo pruebo… ¡Qué difícil es este juego!" },
+        { "speaker": "安娜", "zh": "不难，你再试试。", "py": "Bù nán, nǐ zài shìshi.", "es": "No es difícil, prueba otra vez." },
+        { "speaker": "雨果", "zh": "我有点儿累，想休息一下。我们去喝杯茶吧！", "py": "Wǒ yǒudiǎnr lèi, xiǎng xiūxi yíxià. Wǒmen qù hē bēi chá ba!", "es": "Estoy un poco cansado, quiero descansar un rato. ¡Vamos a tomar un té!" },
+        { "speaker": "安娜", "zh": "好，走吧！", "py": "Hǎo, zǒu ba!", "es": "¡Vale, vamos!" }
+      ],
+      "notes": "我听听 / 我试一下 son la forma natural de decir «a ver» cuando alguien te ofrece algo. 喝杯茶 es 喝一杯茶 sin el 一, muy común al hablar."
+    },
+    { "type": "exercises", "count": 16, "bank": ["g-yixia", "g-reduplication", "g-modal-verbs", "u12"] },
+    {
+      "type": "sentence-builder",
+      "title": "Construye la frase completa",
+      "items": [
+        { "sentence": { "slots": { "time0": { "zh": "这个周末" }, "subject": { "zh": "我" }, "aux": { "zh": "想" }, "with": { "zh": "跟安娜一起" }, "verb1": { "zh": "去电影院" }, "verb2": { "zh": "看" }, "object": { "zh": "中国电影" } }, "end": "。", "es": "Este fin de semana quiero ir al cine con Ana a ver una película china." }, "distractors": ["会"] },
+        { "sentence": { "slots": { "time0": { "zh": "明天下午" }, "subject": { "zh": "我们" }, "with": { "zh": "跟大卫一起" }, "verb1": { "zh": "去" }, "verb2": { "zh": "打" }, "object": { "zh": "篮球" }, "particle": { "zh": "吧" } }, "end": "！", "es": "¡Mañana por la tarde vamos a jugar al baloncesto con David!" }, "distractors": ["玩儿"] },
+        { "sentence": { "slots": { "subject": { "zh": "小李" }, "time": { "zh": "今天晚上" }, "adverb": { "zh": "不" }, "aux": { "zh": "能" }, "with": { "zh": "跟我们一起" }, "verb1": { "zh": "去" }, "verb2": { "zh": "唱" }, "object": { "zh": "歌" } }, "end": "。", "es": "Xiao Li no puede ir a cantar con nosotros esta noche." }, "distractors": ["会"] },
+        { "sentence": { "slots": { "subject": { "zh": "你" }, "aux": { "zh": "要不要" }, "with": { "zh": "跟我们一起" }, "verb1": { "zh": "去书店" }, "verb2": { "zh": "看看" } }, "end": "？", "es": "¿Quieres venir con nosotros a la librería a echar un vistazo?" }, "distractors": ["吗"] },
+        { "sentence": { "slots": { "time0": { "zh": "星期六上午" }, "subject": { "zh": "安娜和雨果" }, "adverb": { "zh": "都" }, "aux": { "zh": "想" }, "verb1": { "zh": "去书店" }, "verb2": { "zh": "买" }, "object": { "zh": "中文书" } }, "end": "。", "es": "El sábado por la mañana Ana y Hugo quieren ir a la librería a comprar libros en chino." } },
+        { "sentence": { "slots": { "subject": { "zh": "雨果和大卫" }, "time": { "zh": "星期天晚上" }, "adverb": { "zh": "都" }, "aux": { "zh": "要" }, "with": { "zh": "跟小李一起" }, "verb1": { "zh": "上网" }, "verb2": { "zh": "玩儿" }, "object": { "zh": "游戏" } }, "end": "。", "es": "Hugo y David van a jugar a videojuegos en internet con Xiao Li el domingo por la noche." }, "distractors": ["打球"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "你听一下这个歌。", "py": "Nǐ tīng yíxià zhège gē.", "es": "Escucha un momento esta canción." },
+        { "zh": "我可以看看吗？", "py": "Wǒ kěyǐ kànkan ma?", "es": "¿Puedo echar un vistazo?" },
+        { "zh": "你试试吧！", "py": "Nǐ shìshi ba!", "es": "¡Pruébalo!" },
+        { "zh": "我想休息一下。", "py": "Wǒ xiǎng xiūxi yíxià.", "es": "Quiero descansar un rato." },
+        { "zh": "我们走吧！", "py": "Wǒmen zǒu ba!", "es": "¡Vámonos!" }
+      ],
+      "respond": [
+        { "q": { "zh": "你想试试这个游戏吗？", "py": "Nǐ xiǎng shìshi zhège yóuxì ma?", "es": "¿Quieres probar este juego?" }, "model": { "zh": "好，我试一下。", "py": "Hǎo, wǒ shì yíxià.", "es": "Vale, lo pruebo." } },
+        { "q": { "zh": "你会打篮球吗？", "py": "Nǐ huì dǎ lánqiú ma?", "es": "¿Sabes jugar al baloncesto?" }, "model": { "zh": "不会，可是我想试试。", "py": "Bú huì, kěshì wǒ xiǎng shìshi.", "es": "No, pero quiero probar." } },
+        { "q": { "zh": "今天晚上你能跟我们一起去唱歌吗？", "py": "Jīntiān wǎnshang nǐ néng gēn wǒmen yìqǐ qù chànggē ma?", "es": "¿Puedes venir a cantar con nosotros esta noche?" }, "model": { "zh": "不能，我很忙。明天晚上可以。", "py": "Bù néng, wǒ hěn máng. Míngtiān wǎnshang kěyǐ.", "es": "No puedo, estoy muy liado. Mañana por la noche, sí." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "El fin de semana de Hugo",
+      "text": "雨果的爱好是听音乐和看电影。他会打篮球，可是不会唱中国歌。这个星期六，安娜想去电影院，雨果很忙，不能去。星期天他不用上课，他和小李一起上网看B站的视频。小李说：“你试试这个游戏吧！”雨果说：“好，我试一下。……真好玩儿！”",
+      "es": "Las aficiones de Hugo son escuchar música y ver películas. Sabe jugar al baloncesto, pero no sabe cantar canciones chinas. Este sábado Ana quiere ir al cine, pero Hugo está muy liado y no puede ir. El domingo no tiene clase y ve vídeos de Bilibili con Xiao Li. Xiao Li le dice: «¡Prueba este juego!». Hugo contesta: «Vale, lo pruebo… ¡Qué divertido!».",
+      "questions": [
+        { "q": "¿Qué sabe hacer Hugo?", "options": ["Jugar al baloncesto", "Cantar canciones chinas", "Las dos cosas"], "answer": 0 },
+        { "q": "¿Por qué no va al cine el sábado?", "options": ["Está muy ocupado", "No le dejan", "No le gusta el cine"], "answer": 0 },
+        { "q": "¿Qué significa 他不用上课?", "options": ["No tiene que ir a clase", "No puede ir a clase", "No sabe ir a clase"], "answer": 0 },
+        { "q": "¿Qué le parece el juego a Hugo?", "options": ["Muy divertido", "Muy difícil", "Aburrido"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

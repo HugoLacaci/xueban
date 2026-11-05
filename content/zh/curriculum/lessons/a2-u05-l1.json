@@ -1,0 +1,134 @@
+{
+  "id": "a2-u05-l1",
+  "title": "Me he resfriado: 感冒了 y 应该",
+  "zh": "你应该多休息",
+  "goal": "Decir que te has resfriado y cómo te encuentras, y dar consejos con 应该 / 不应该.",
+  "minutes": 14,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "感冒", "pinyin": "gǎnmào", "es": "resfriado; resfriarse", "note": "Es verbo: 我感冒了 (me he resfriado). No se dice *我有感冒." },
+    { "hanzi": "应该", "pinyin": "yīnggāi", "es": "deber (consejo), debería", "note": "Va detrás del sujeto y delante del verbo: 你应该休息." },
+    { "hanzi": "感觉", "pinyin": "gǎnjué", "es": "sentir; sensación", "note": "我感觉不太好 = no me siento muy bien." },
+    { "hanzi": "难受", "pinyin": "nánshòu", "es": "encontrarse fatal, pasarlo mal", "note": "Más fuerte que 不舒服: malestar físico o emocional." },
+    { "hanzi": "困", "pinyin": "kùn", "es": "tener sueño", "note": "累 = cansado; 困 = con sueño, se te cierran los ojos." },
+    { "hanzi": "最近", "pinyin": "zuìjìn", "es": "últimamente, estos días" },
+    { "hanzi": "大夫", "pinyin": "dàifu", "es": "médico (coloquial)", "note": "Aquí 大 se lee dài. 医生 es más general; 大夫 se oye mucho en el norte." },
+    { "hanzi": "痛", "pinyin": "tòng", "es": "dolor; doler", "note": "Más escrito que 疼: 头痛 = 头疼." },
+    { "hanzi": "全身", "pinyin": "quánshēn", "es": "todo el cuerpo", "note": "全身都疼 = me duele todo el cuerpo." },
+    { "hanzi": "正常", "pinyin": "zhèngcháng", "es": "normal" },
+    { "hanzi": "健康", "pinyin": "jiànkāng", "es": "sano; salud", "note": "健康很重要 = la salud es muy importante." }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "我感冒了，全身都很难受。", "py": "Wǒ gǎnmào le, quánshēn dōu hěn nánshòu.", "es": "Me he resfriado y me encuentro fatal de todo el cuerpo." },
+        { "zh": "你应该多休息，多喝水。", "py": "Nǐ yīnggāi duō xiūxi, duō hē shuǐ.", "es": "Deberías descansar mucho y beber mucha agua." },
+        { "zh": "我最近很困，感觉不太正常。", "py": "Wǒ zuìjìn hěn kùn, gǎnjué bú tài zhèngcháng.", "es": "Últimamente tengo mucho sueño; no me siento normal." }
+      ]
+    },
+    { "type": "vocab", "title": "Cuando te resfrías", "words": ["感冒", "应该", "感觉", "难受", "困", "最近", "大夫", "痛", "全身", "正常", "健康"] },
+    {
+      "type": "phonetics-drill",
+      "title": "dàifu, -n / -ng y el medio tercer tono",
+      "markdown": "**大夫 dàifu**: en esta palabra 大 se lee **dài**, no *dà*, y 夫 va en **tono neutro** (corto y flojo).\n\n**-n / -ng**: 近 *jìn* termina con la lengua en los dientes (como «pan»); 应 *yīng* y 康 *kāng* terminan atrás, con la boca abierta (como «tengo» dicho deprisa). Si cierras la boca en 应该 suena a *yīn-gāi*.\n\n**Medio tercer tono**: un 3.er tono delante de otro tono que no sea 3.º solo **baja**, no sube: 感冒 *gǎnmào*, 感觉 *gǎnjué*, 我最近 *wǒ zuìjìn*. Bájalo y pasa enseguida a la sílaba siguiente.",
+      "items": [
+        { "audio": "大夫", "options": ["dàifu", "dàfū", "dàifū"], "answer": 0, "explain": "大 se lee dài en 大夫, y fu va átono." },
+        { "audio": "应该", "options": ["yīnggāi", "yīngāi", "yínggài"], "answer": 0, "explain": "yīng con -ng (boca abierta) + gāi en primer tono." },
+        { "audio": "最近", "options": ["zuìjìn", "zuìjìng", "zhuìjìn"], "answer": 0, "explain": "近 acaba en -n; z (no zh) en 最." },
+        { "audio": "难受", "options": ["nánshòu", "nǎnshòu", "nánshōu"], "answer": 0, "explain": "nán sube (2.º) y shòu cae (4.º)." },
+        { "audio": "感冒", "prompt": "¿Qué hace 感 (gǎn) aquí?", "options": ["Solo baja (medio tercer tono)", "Baja y vuelve a subir entero", "Sube como un 2.º tono"], "answer": 0, "explain": "Delante de un 4.º tono, el 3.º se queda en la parte baja." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["感", "冒"],
+      "mnemonics": {
+        "感": "咸 (que da el sonido) + 心 (corazón) debajo: lo que llega al corazón es lo que «sientes» (感觉, 感冒).",
+        "冒": "Arriba, una capucha o cubierta; abajo, 目 (ojo): algo que te tapa los ojos y «sale, se te mete». 感冒 = «sentir que algo se te ha metido»."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "Dar consejos: sujeto + 应该 + verbo",
+      "markdown": "**应该** = «deberías», «lo correcto es». Es un verbo auxiliar: va en el hueco **Auxiliar**, después del sujeto (y del tiempo) y **delante del verbo**.\n\n- 你**应该**多休息。 → Deberías descansar mucho. (多 delante del verbo = «mucho, más»: 多休息, 多喝水.)\n- **Negativa**: 不 va delante: 你**不应该**喝酒.\n- **Pregunta**: 我应该……吗？ o con interrogativo: 我应该吃什么药？\n\nRecuerda también que **感冒 es un verbo**: «me he resfriado» = 我感冒**了** (了 de cambio de estado, U18). Y 困, 难受, 健康 funcionan como adjetivos: van con 很 y sin 是.\n\nEn el esqueleto, cuando el lugar lleva 在 va en **Dónde**, entre el auxiliar y el verbo: 你应该**在宿舍**休息.",
+      "focus": ["aux"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "aux": { "zh": "应该", "py": "yīnggāi" }, "verb1": { "zh": "多休息", "py": "duō xiūxi" } }, "end": "。", "es": "Deberías descansar mucho." },
+        { "slots": { "time0": { "zh": "感冒的时候", "py": "gǎnmào de shíhou" }, "subject": { "zh": "你", "py": "nǐ" }, "aux": { "zh": "应该", "py": "yīnggāi" }, "verb1": { "zh": "多喝", "py": "duō hē" }, "object": { "zh": "热水", "py": "rè shuǐ" } }, "end": "。", "es": "Cuando estás resfriado, deberías beber mucha agua caliente." },
+        { "slots": { "subject": { "zh": "雨果", "py": "Yǔguǒ" }, "time": { "zh": "今天", "py": "jīntiān" }, "aux": { "zh": "应该", "py": "yīnggāi" }, "place": { "zh": "在宿舍", "py": "zài sùshè" }, "verb1": { "zh": "休息", "py": "xiūxi" } }, "end": "。", "es": "Hoy Hugo debería descansar en la residencia.", "esOrder": [{ "text": "Hoy", "slot": "time" }, { "text": "Hugo", "slot": "subject" }, { "text": "debería", "slot": "aux" }, { "text": "descansar", "slot": "verb1" }, { "text": "en la residencia", "slot": "place" }] },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "time": { "zh": "最近", "py": "zuìjìn" }, "adverb": { "zh": "很", "py": "hěn" }, "verb1": { "zh": "困", "py": "kùn" } }, "end": "。", "es": "Últimamente tengo mucho sueño." },
+        { "slots": { "subject": { "zh": "他全身", "py": "tā quánshēn" }, "adverb": { "zh": "都", "py": "dōu" }, "verb1": { "zh": "疼", "py": "téng" } }, "end": "。", "es": "Le duele todo el cuerpo." },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "verb1": { "zh": "感冒", "py": "gǎnmào" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Me he resfriado." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "adverb": { "zh": "不", "py": "bù" }, "aux": { "zh": "应该", "py": "yīnggāi" }, "verb1": { "zh": "喝", "py": "hē" }, "object": { "zh": "酒", "py": "jiǔ" } }, "end": "。", "es": "No deberías beber alcohol." },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "time": { "zh": "最近", "py": "zuìjìn" }, "adverb": { "zh": "不太", "py": "bú tài" }, "verb1": { "zh": "舒服", "py": "shūfu" } }, "end": "。", "es": "Estos días no me encuentro muy bien." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "aux": { "zh": "应该", "py": "yīnggāi" }, "verb1": { "zh": "去医院", "py": "qù yīyuàn" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿Debería ir al hospital?" },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "aux": { "zh": "应该", "py": "yīnggāi" }, "verb1": { "zh": "吃", "py": "chī" }, "object": { "zh": "什么药", "py": "shénme yào" } }, "end": "？", "es": "¿Qué medicina debería tomar?" }
+      ],
+      "mistakes": [
+        { "wrong": "我有感冒。", "right": "我感冒了。", "why": "Calco de «tengo un resfriado». En chino 感冒 es un verbo de cambio: va con 了." },
+        { "wrong": "应该你多休息。", "right": "你应该多休息。", "why": "应该 va detrás del sujeto, delante del verbo, igual que 想 o 要." },
+        { "wrong": "你应该休息多。", "right": "你应该多休息。", "why": "«Mucho» con verbos se dice con 多 delante del verbo: 多休息, 多喝水." },
+        { "wrong": "我是很困。", "right": "我很困。", "why": "困 funciona como adjetivo: sin 是, con 很." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Hugo no ha ido a clase",
+      "lines": [
+        { "speaker": "小李", "zh": "雨果，你今天怎么没去上课？", "py": "Yǔguǒ, nǐ jīntiān zěnme méi qù shàngkè?", "es": "Hugo, ¿cómo es que hoy no has ido a clase?" },
+        { "speaker": "雨果", "zh": "我感冒了，全身都很难受。", "py": "Wǒ gǎnmào le, quánshēn dōu hěn nánshòu.", "es": "Me he resfriado y me encuentro fatal de todo el cuerpo." },
+        { "speaker": "小李", "zh": "你发烧了吗？", "py": "Nǐ fāshāo le ma?", "es": "¿Tienes fiebre?" },
+        { "speaker": "雨果", "zh": "有点儿发烧，三十八度。我最近很困，也很累。", "py": "Yǒudiǎnr fāshāo, sānshíbā dù. Wǒ zuìjìn hěn kùn, yě hěn lèi.", "es": "Un poco: treinta y ocho grados. Estos días tengo mucho sueño y estoy muy cansado." },
+        { "speaker": "小李", "zh": "发烧不正常。你应该去医院看大夫。", "py": "Fāshāo bú zhèngcháng. Nǐ yīnggāi qù yīyuàn kàn dàifu.", "es": "La fiebre no es normal. Deberías ir al hospital a que te vea un médico." },
+        { "speaker": "雨果", "zh": "我不想去医院。我在宿舍睡一会儿就好了。", "py": "Wǒ bù xiǎng qù yīyuàn. Wǒ zài sùshè shuì yíhuìr jiù hǎo le.", "es": "No quiero ir al hospital. Duermo un rato en la residencia y ya está." },
+        { "speaker": "小李", "zh": "不行，你应该去。健康很重要！", "py": "Bù xíng, nǐ yīnggāi qù. Jiànkāng hěn zhòngyào!", "es": "Ni hablar, deberías ir. ¡La salud es muy importante!" },
+        { "speaker": "雨果", "zh": "好吧。我应该吃什么药呢？", "py": "Hǎo ba. Wǒ yīnggāi chī shénme yào ne?", "es": "Vale. ¿Y qué medicina debería tomar?" },
+        { "speaker": "小李", "zh": "你先去问大夫。你不应该自己买药吃。", "py": "Nǐ xiān qù wèn dàifu. Nǐ bù yīnggāi zìjǐ mǎi yào chī.", "es": "Primero pregunta al médico. No deberías comprarte medicinas por tu cuenta." },
+        { "speaker": "雨果", "zh": "好，下午我去医院。谢谢你！", "py": "Hǎo, xiàwǔ wǒ qù yīyuàn. Xièxie nǐ!", "es": "Vale, por la tarde voy al hospital. ¡Gracias!" }
+      ],
+      "notes": "大夫 y 医生 significan lo mismo; 大夫 es más coloquial. En China casi todas las universidades tienen su propio hospital o clínica (校医院) para los estudiantes. Y prepárate: ante cualquier resfriado te dirán 多喝热水."
+    },
+    { "type": "exercises", "count": 16, "bank": ["g-modal-verbs", "u11", "g-le"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "你" }, "aux": { "zh": "应该" }, "verb1": { "zh": "多休息" } }, "end": "。", "es": "Deberías descansar mucho." }, "distractors": ["是"] },
+        { "sentence": { "slots": { "subject": { "zh": "我" }, "time": { "zh": "最近" }, "adverb": { "zh": "很" }, "verb1": { "zh": "困" } }, "end": "。", "es": "Últimamente tengo mucho sueño." }, "distractors": ["是", "了"] },
+        { "sentence": { "slots": { "subject": { "zh": "安娜" }, "aux": { "zh": "应该" }, "verb1": { "zh": "去医院" }, "verb2": { "zh": "看" }, "object": { "zh": "大夫" } }, "end": "。", "es": "Ana debería ir al hospital a que la vea un médico." } },
+        { "sentence": { "slots": { "time0": { "zh": "今天晚上" }, "subject": { "zh": "你" }, "adverb": { "zh": "不" }, "aux": { "zh": "应该" }, "with": { "zh": "跟朋友们一起" }, "verb1": { "zh": "去饭馆" }, "verb2": { "zh": "喝" }, "object": { "zh": "酒" } }, "end": "。", "es": "Esta noche no deberías ir con tus amigos al restaurante a beber." }, "distractors": ["很"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "我感冒了。", "py": "Wǒ gǎnmào le.", "es": "Me he resfriado." },
+        { "zh": "我全身都很难受。", "py": "Wǒ quánshēn dōu hěn nánshòu.", "es": "Me encuentro fatal de todo el cuerpo." },
+        { "zh": "你应该多休息。", "py": "Nǐ yīnggāi duō xiūxi.", "es": "Deberías descansar mucho." },
+        { "zh": "你不应该喝酒。", "py": "Nǐ bù yīnggāi hē jiǔ.", "es": "No deberías beber alcohol." }
+      ],
+      "respond": [
+        { "q": { "zh": "你最近感觉怎么样？", "py": "Nǐ zuìjìn gǎnjué zěnmeyàng?", "es": "¿Qué tal te encuentras últimamente?" }, "model": { "zh": "我最近很困，有点儿累。", "py": "Wǒ zuìjìn hěn kùn, yǒudiǎnr lèi.", "es": "Últimamente tengo mucho sueño y estoy algo cansado." } },
+        { "q": { "zh": "我感冒了，我应该做什么？", "py": "Wǒ gǎnmào le, wǒ yīnggāi zuò shénme?", "es": "Me he resfriado, ¿qué debería hacer?" }, "model": { "zh": "你应该多喝水，多休息。", "py": "Nǐ yīnggāi duō hē shuǐ, duō xiūxi.", "es": "Deberías beber mucha agua y descansar mucho." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Hugo no quiere ir al médico",
+      "text": "最近雨果感冒了。他全身都不舒服，头很疼，晚上没睡好，白天很困。他觉得很难受。小李说：“你应该去医院看大夫。”雨果说：“我不想去医院，我想在宿舍休息。”小李说：“你发烧了，这不正常。你应该去看病，健康很重要！”下午，雨果跟小李一起去了学校的医院。大夫说：“你感冒了，你应该多喝水，多休息。”",
+      "es": "Últimamente Hugo está resfriado. No se encuentra bien de ningún sitio: le duele mucho la cabeza, por la noche no ha dormido bien y de día tiene mucho sueño. Lo está pasando mal. Xiao Li le dice: «Deberías ir al hospital a que te vea un médico». Hugo responde: «No quiero ir al hospital, quiero descansar en la residencia». Xiao Li dice: «Tienes fiebre, eso no es normal. Deberías ir al médico: ¡la salud es muy importante!». Por la tarde, Hugo fue con Xiao Li al hospital de la universidad. El médico le dijo: «Estás resfriado; deberías beber mucha agua y descansar mucho».",
+      "questions": [
+        { "q": "¿Qué le pasa a Hugo de día?", "options": ["Tiene mucho sueño", "Tiene hambre", "Le duelen los pies"], "answer": 0 },
+        { "q": "¿Qué quiere hacer Hugo al principio?", "options": ["Descansar en la residencia", "Ir al hospital", "Ir a clase"], "answer": 0 },
+        { "q": "¿Por qué dice Xiao Li que no es normal?", "options": ["Porque Hugo tiene fiebre", "Porque Hugo no come", "Porque Hugo bebe alcohol"], "answer": 0 },
+        { "q": "¿Con quién va Hugo al hospital?", "options": ["Con Xiao Li", "Con Ana", "Solo"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

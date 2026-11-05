@@ -1,0 +1,134 @@
+{
+  "id": "a1-u03-l2",
+  "title": "El 的 posesivo: mi madre, la madre de mi padre",
+  "zh": "我爸爸的妈妈",
+  "goal": "Expresar posesión con 的 (poseedor + 的 + cosa), saber cuándo se omite (我妈妈) y nombrar a los abuelos por las dos líneas.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "的", "pinyin": "de", "es": "(partícula de posesión: «de»)", "note": "Tono neutro. Poseedor + 的 + cosa: 我的老师 = mi profesor." },
+    { "hanzi": "爸", "pinyin": "bà", "es": "papá (coloquial)", "note": "我爸 = mi padre, muy coloquial." },
+    { "hanzi": "哥", "pinyin": "gē", "es": "hermano mayor (coloquial)", "note": "我哥 = mi hermano mayor." },
+    { "hanzi": "爷爷", "pinyin": "yéye", "es": "abuelo (paterno)" },
+    { "hanzi": "奶奶", "pinyin": "nǎinai", "es": "abuela (paterna)" },
+    { "hanzi": "奶", "pinyin": "nǎi", "es": "leche", "note": "Solo, 奶 suele ser «leche» (牛奶). La abuela es 奶奶." },
+    { "hanzi": "外公", "pinyin": "wàigōng", "es": "abuelo (materno)", "note": "En el norte se dice 姥爷 lǎoye." },
+    { "hanzi": "外婆", "pinyin": "wàipó", "es": "abuela (materna)", "note": "En el norte se dice 姥姥 lǎolao. En Shanghái oirás 外婆." }
+  ],
+  "extraVocab": ["外公", "外婆"],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "这是我的老师。", "py": "Zhè shì wǒ de lǎoshī.", "es": "Esta es mi profesora." },
+        { "zh": "她是我爸爸的妈妈，我奶奶。", "py": "Tā shì wǒ bàba de māma, wǒ nǎinai.", "es": "Es la madre de mi padre, mi abuela." },
+        { "zh": "这是谁的妈妈？", "py": "Zhè shì shéi de māma?", "es": "¿De quién es madre esta señora?" }
+      ]
+    },
+    { "type": "vocab", "title": "Los abuelos y el 的", "words": ["的", "爸", "哥", "爷爷", "奶奶", "奶", "外公", "外婆"] },
+    {
+      "type": "phonetics-drill",
+      "title": "El tono neutro en las palabras dobladas",
+      "markdown": "En los nombres de familia doblados, **la segunda sílaba va en tono neutro**: corta, floja y sin tilde.\n\n| Palabra | Se dice |\n|---|---|\n| 爸爸 bàba | cae + neutro **bajo** |\n| 妈妈 māma | alto + neutro medio |\n| 爷爷 yéye | sube + neutro medio |\n| 奶奶 nǎinai | baja + neutro **algo más alto** («rebota») |\n| 哥哥, 姐姐, 弟弟, 妹妹 | igual: segunda sílaba neutra |\n\nY **的 de** es siempre neutro: 我**的** se dice *wǒ de*, rápido. Error típico: decir 爷爷 como *yéyé*, con dos tonos plenos; suena a robot.",
+      "items": [
+        { "audio": "爷爷", "options": ["yéye", "yéyé", "yěye"], "answer": 0, "explain": "yé (2.º) + ye neutro." },
+        { "audio": "奶奶", "options": ["nǎinai", "nàinai", "nǎinǎi"], "answer": 0, "explain": "nǎi (3.º) + nai neutro, que tras el 3.º suena algo más alto." },
+        { "audio": "外婆", "options": ["wàipó", "wàipò", "wàibó"], "answer": 0, "explain": "wài (4.º) + pó (2.º); p con aire." },
+        { "audio": "我的", "options": ["wǒ de", "wǒ dè", "wó dí"], "answer": 0, "explain": "的 siempre neutro." },
+        { "audio": "外公", "options": ["wàigōng", "wàigǒng", "wàikōng"], "answer": 0, "explain": "wài (4.º) + gōng (1.º); g sin aire." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["的", "奶"],
+      "mnemonics": {
+        "的": "白 (blanco, claro) + 勺 (cuchara): en origen, «el centro blanco de la diana». Hoy es el carácter más frecuente del chino: el «de» que une al dueño con lo suyo.",
+        "奶": "女 (mujer) + 乃: lo que da la mujer → la leche. Y la mujer que nos daba leche y mimos: 奶奶, la abuela."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "Poseedor + 的 + cosa, dentro del sujeto o del objeto",
+      "markdown": "En español decimos **la cosa de el dueño**: *la madre de mi padre*. En chino es **al revés**: **dueño + 的 + cosa**: 我爸爸**的**妈妈 (lit. «mi padre 的 madre»).\n\n```\nespañol:  la madre  ←  de mi padre\nchino:    我爸爸  的  →  妈妈\n          (dueño)      (cosa)\n```\n\nTodo el grupo «dueño + 的 + cosa» ocupa **un solo hueco**: el del **sujeto** (我的老师是中国人) o el del **objeto** (这是我的老师).\n\n**Cuándo se omite 的**: con la **familia** y las personas cercanas detrás de un pronombre: **我妈妈**, 你爸爸, 他哥哥, y con grupos: **我们班**, 我家. Con cosas y con nombres que no son pronombres se mantiene: 王老师**的**妈妈, 我**的**手机 (aunque en la calle oirás 我手机).\n\nEn una cadena de dueños, basta con **el último 的**: 我爸爸**的**妈妈 (no ~~我的爸爸的妈妈~~).",
+      "focus": ["subject", "object"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "她", "py": "tā" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "我爸爸的妈妈", "py": "wǒ bàba de māma", "es": "mi padre 的 madre" } }, "end": "。", "es": "Es la madre de mi padre.", "esOrder": [{ "text": "Es", "slot": "verb1" }, { "text": "la madre de mi padre", "slot": "object" }] },
+        { "slots": { "subject": { "zh": "我妈妈的妈妈", "py": "wǒ māma de māma", "es": "mi madre 的 madre" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "我外婆", "py": "wǒ wàipó" } }, "end": "。", "es": "La madre de mi madre es mi abuela (materna).", "esOrder": [{ "text": "La madre de mi madre", "slot": "subject" }, { "text": "es", "slot": "verb1" }, { "text": "mi abuela", "slot": "object" }] },
+        { "slots": { "subject": { "zh": "我的老师", "py": "wǒ de lǎoshī" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "中国人", "py": "Zhōngguó rén" } }, "end": "。", "es": "Mi profesora es china." },
+        { "slots": { "subject": { "zh": "这", "py": "zhè" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "王老师的手机", "py": "Wáng lǎoshī de shǒujī" } }, "end": "。", "es": "Este es el móvil de la profesora Wang." },
+        { "slots": { "subject": { "zh": "我爸爸", "py": "wǒ bàba", "es": "sin 的: es familia" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "老师", "py": "lǎoshī" } }, "end": "。", "es": "Mi padre es profesor." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "他", "py": "tā" }, "adverb": { "zh": "不", "py": "bú" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "我哥哥", "py": "wǒ gēge" } }, "end": "。", "es": "Él no es mi hermano mayor." },
+        { "slots": { "subject": { "zh": "这", "py": "zhè" }, "adverb": { "zh": "不", "py": "bú" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "安娜的手机", "py": "Ānnà de shǒujī" } }, "end": "。", "es": "Este no es el móvil de Anna." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "这", "py": "zhè" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "你奶奶", "py": "nǐ nǎinai" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿Esta es tu abuela?" },
+        { "slots": { "subject": { "zh": "这", "py": "zhè" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "谁的手机", "py": "shéi de shǒujī" } }, "end": "？", "es": "¿De quién es este móvil?", "esOrder": [{ "text": "¿De quién", "slot": "object" }, { "text": "es", "slot": "verb1" }, { "text": "este móvil?", "slot": "subject" }] }
+      ],
+      "mistakes": [
+        { "wrong": "妈妈的我爸爸", "right": "我爸爸的妈妈", "why": "Orden inverso al español: primero el dueño (我爸爸), luego 的, luego la cosa (妈妈)." },
+        { "wrong": "我的爸爸的妈妈", "right": "我爸爸的妈妈", "why": "En una cadena basta con el último 的; con familia detrás de un pronombre (我爸爸), 的 se omite." },
+        { "wrong": "王老师手机", "right": "王老师的手机", "why": "Detrás de un nombre (no de un pronombre) y con cosas, 的 se mantiene." },
+        { "wrong": "这是手机的我。", "right": "这是我的手机。", "why": "«El móvil de mí» → «yo 的 móvil»." }
+      ]
+    },
+    {
+      "type": "explain",
+      "title": "Abuelos «de dentro» y «de fuera»",
+      "markdown": "El chino distingue **la familia del padre** y **la de la madre**:\n\n| | abuelo | abuela |\n|---|---|---|\n| **del padre** | 爷爷 yéye | 奶奶 nǎinai |\n| **de la madre** | 外公 wàigōng (norte: 姥爷) | 外婆 wàipó (norte: 姥姥) |\n\n**外** significa «de fuera»: en la familia tradicional china, la mujer se iba a vivir con la familia del marido, así que sus padres quedaban «fuera». Hoy no tiene nada de despectivo; es solo el nombre.\n\nPara decir de quién es cada uno, el 的: 我爸爸**的**爸爸是我爷爷，我妈妈**的**爸爸是我外公."
+    },
+    {
+      "type": "dialogue",
+      "title": "Las fotos del móvil",
+      "lines": [
+        { "speaker": "小李", "zh": "雨果，这是谁？", "py": "Yǔguǒ, zhè shì shéi?", "es": "Hugo, ¿quién es este?" },
+        { "speaker": "雨果", "zh": "这是我爸爸，那是我妈妈。", "py": "Zhè shì wǒ bàba, nà shì wǒ māma.", "es": "Este es mi padre y esa es mi madre." },
+        { "speaker": "小李", "zh": "这是你爸爸的爸爸吗？", "py": "Zhè shì nǐ bàba de bàba ma?", "es": "¿Este es el padre de tu padre?" },
+        { "speaker": "雨果", "zh": "对，他是我爷爷。这是我奶奶。", "py": "Duì, tā shì wǒ yéye. Zhè shì wǒ nǎinai.", "es": "Sí, es mi abuelo. Y esta es mi abuela." },
+        { "speaker": "小李", "zh": "她呢？她也是你奶奶吗？", "py": "Tā ne? Tā yě shì nǐ nǎinai ma?", "es": "¿Y ella? ¿También es tu abuela?" },
+        { "speaker": "雨果", "zh": "不是，她是我妈妈的妈妈，我外婆。", "py": "Bú shì, tā shì wǒ māma de māma, wǒ wàipó.", "es": "No, es la madre de mi madre, mi abuela materna." },
+        { "speaker": "小李", "zh": "你外公呢？", "py": "Nǐ wàigōng ne?", "es": "¿Y tu abuelo materno?" },
+        { "speaker": "雨果", "zh": "这是我外公。这是我姐，她是老师。", "py": "Zhè shì wǒ wàigōng. Zhè shì wǒ jiě, tā shì lǎoshī.", "es": "Este es mi abuelo materno. Y esta es mi hermana: es profesora." },
+        { "speaker": "小李", "zh": "我哥也是老师！", "py": "Wǒ gē yě shì lǎoshī!", "es": "¡Mi hermano también es profesor!" }
+      ],
+      "notes": "Mira cómo los dos dicen 我爸爸, 我奶奶, 我姐, 我哥 sin 的: con la familia es lo normal. El 的 aparece en la cadena 我妈妈的妈妈."
+    },
+    { "type": "exercises", "count": 15, "bank": ["g-de", "g-shi", "u03"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "这" }, "verb1": { "zh": "是" }, "object": { "zh": "我的老师" } }, "end": "。", "es": "Esta es mi profesora." }, "distractors": ["我们"] },
+        { "sentence": { "slots": { "subject": { "zh": "她" }, "verb1": { "zh": "是" }, "object": { "zh": "我爸爸的妈妈" } }, "end": "。", "es": "Es la madre de mi padre." }, "distractors": ["妈妈的我爸爸"] },
+        { "sentence": { "slots": { "subject": { "zh": "这" }, "verb1": { "zh": "是" }, "object": { "zh": "谁的手机" } }, "end": "？", "es": "¿De quién es este móvil?" }, "distractors": ["吗"] },
+        { "sentence": { "slots": { "subject": { "zh": "我妈妈的妈妈" }, "adverb": { "zh": "也" }, "verb1": { "zh": "是" }, "object": { "zh": "老师" } }, "end": "。", "es": "La madre de mi madre también es profesora." }, "distractors": ["的"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "这是我爸爸，那是我妈妈。", "py": "Zhè shì wǒ bàba, nà shì wǒ māma.", "es": "Este es mi padre y esa es mi madre." },
+        { "zh": "她是我爸爸的妈妈。", "py": "Tā shì wǒ bàba de māma.", "es": "Es la madre de mi padre." },
+        { "zh": "这是谁的手机？", "py": "Zhè shì shéi de shǒujī?", "es": "¿De quién es este móvil?" },
+        { "zh": "这是我的。", "py": "Zhè shì wǒ de.", "es": "Es mío." }
+      ],
+      "respond": [
+        { "q": { "zh": "这是谁的手机？", "py": "Zhè shì shéi de shǒujī?", "es": "¿De quién es este móvil?" }, "model": { "zh": "这是安娜的手机。", "py": "Zhè shì Ānnà de shǒujī.", "es": "Es el móvil de Anna." } },
+        { "q": { "zh": "这是你奶奶吗？", "py": "Zhè shì nǐ nǎinai ma?", "es": "¿Esta es tu abuela (paterna)?" }, "model": { "zh": "不是，她是我妈妈的妈妈，我外婆。", "py": "Bú shì, tā shì wǒ māma de māma, wǒ wàipó.", "es": "No, es la madre de mi madre, mi abuela materna." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Los abuelos de Hugo",
+      "text": "这是我的家人。这是我爸爸，那是我妈妈。我爸爸的爸爸是我爷爷，我爸爸的妈妈是我奶奶。我妈妈的爸爸是我外公，我妈妈的妈妈是我外婆。这是我姐，她是老师。她的学生是西班牙人。",
+      "es": "Esta es mi familia. Este es mi padre y esa es mi madre. El padre de mi padre es mi abuelo (paterno) y la madre de mi padre es mi abuela (paterna). El padre de mi madre es mi abuelo (materno) y la madre de mi madre, mi abuela (materna). Esta es mi hermana: es profesora. Sus alumnos son españoles.",
+      "questions": [
+        { "q": "¿Quién es 外公?", "options": ["El padre de la madre", "El padre del padre", "El hermano del padre"], "answer": 0 },
+        { "q": "¿Quién es 奶奶?", "options": ["La madre del padre", "La madre de la madre", "La hermana mayor"], "answer": 0 },
+        { "q": "En 她的学生, ¿qué significa 的?", "options": ["«de ella» → sus alumnos", "«y»", "«también»"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

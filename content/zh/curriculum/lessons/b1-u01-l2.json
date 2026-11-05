@@ -1,0 +1,136 @@
+{
+  "id": "b1-u01-l2",
+  "title": "Dale las llaves al casero: 把 + objeto + 交给 / 还给 + persona",
+  "zh": "把钥匙交给房东",
+  "goal": "Decir a quién das, devuelves, envías o pagas algo concreto con 把 + objeto + V给 + persona, y manejar el vocabulario del alquiler.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "房东", "pinyin": "fángdōng", "es": "casero, casera (dueño del piso)" },
+    { "hanzi": "房租", "pinyin": "fángzū", "es": "alquiler (lo que se paga)", "note": "交房租 / 付房租 = pagar el alquiler." },
+    { "hanzi": "付", "pinyin": "fù", "es": "pagar", "note": "付钱, 付房租; 把钱付给房东." },
+    { "hanzi": "支付", "pinyin": "zhīfù", "es": "pagar, abonar (más formal)", "note": "Como en 支付宝; 用微信支付." },
+    { "hanzi": "交费", "pinyin": "jiāofèi", "es": "pagar una cuota o un recibo", "note": "在网上交费 = pagar los recibos por internet." },
+    { "hanzi": "费", "pinyin": "fèi", "es": "gasto, tarifa (en compuestos)", "note": "水费 agua, 电费 luz, 网费 internet." },
+    { "hanzi": "费用", "pinyin": "fèiyòng", "es": "gastos, coste" },
+    { "hanzi": "价格", "pinyin": "jiàgé", "es": "precio (más formal)" },
+    { "hanzi": "价钱", "pinyin": "jiàqian", "es": "precio (coloquial)", "note": "价钱怎么样？ = ¿qué tal de precio?" },
+    { "hanzi": "押金", "pinyin": "yājīn", "es": "fianza, depósito", "note": "Fuera del HSK 1–3. 押一付三 = un mes de fianza y tres de alquiler por adelantado." },
+    { "hanzi": "中介", "pinyin": "zhōngjiè", "es": "agencia inmobiliaria; agente", "note": "Fuera del HSK 1–3." },
+    { "hanzi": "合同", "pinyin": "hétong", "es": "contrato", "note": "Fuera del HSK 1–3. 签合同 = firmar el contrato." },
+    { "hanzi": "钥匙", "pinyin": "yàoshi", "es": "llave", "note": "Fuera del HSK 1–3. Se cuenta con 把: 两把钥匙." }
+  ],
+  "extraVocab": ["押金", "中介", "合同", "钥匙"],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "我把钥匙交给房东了。", "py": "Wǒ bǎ yàoshi jiāogěi fángdōng le.", "es": "Le he dado las llaves a la casera." },
+        { "zh": "你把押金还给他吧。", "py": "Nǐ bǎ yājīn huán gěi tā ba.", "es": "Devuélvele la fianza." },
+        { "zh": "你把合同发给中介了吗？", "py": "Nǐ bǎ hétong fāgěi zhōngjiè le ma?", "es": "¿Le has enviado el contrato a la agencia?" }
+      ]
+    },
+    { "type": "vocab", "title": "Alquilar un piso", "words": ["房东", "房租", "付", "支付", "交费", "费", "费用", "价格", "价钱", "押金", "中介", "合同", "钥匙"] },
+    {
+      "type": "phonetics-drill",
+      "title": "给 detrás del verbo y el énfasis en «qué» y «a quién»",
+      "markdown": "En **交给 / 还给 / 发给**, 给 se pega al verbo y se dice **corto**; el peso de la frase cae en **la cosa** (detrás de 把) y en **la persona** (detrás de 给): 把**钥匙**交给**房东**.\n\n- **还 huán** «devolver» no es **还 hái** «todavía»: mismo carácter, otra lectura. 还给你 = *huán gěi nǐ*.\n- **给你 gěi nǐ**: dos terceros tonos seguidos, el primero se dice como segundo (*géi nǐ*), aunque se escribe gěi.\n- **钥匙 yàoshi** y **合同 hétong**: segunda sílaba en tono neutro.\n- **房租 fángzū**: *z* (como «ds»), no *zh*.",
+      "items": [
+        { "audio": "钥匙", "options": ["yàoshi", "yàoshí", "yǎoshi"], "answer": 0, "explain": "Cuarto tono + neutro." },
+        { "audio": "还给你", "options": ["huán gěi nǐ", "hái gěi nǐ", "huàn gěi nǐ"], "answer": 0, "explain": "还 «devolver» se lee huán, segundo tono." },
+        { "audio": "把钥匙交给房东", "prompt": "¿Qué palabras llevan el énfasis?", "options": ["钥匙 y 房东 (qué y a quién)", "把 y 给", "交 y 把"], "answer": 0, "explain": "把 y 给 son palabras de función: cortas y sin acento." },
+        { "audio": "押金", "options": ["yājīn", "yàjīn", "yājìn"], "answer": 0, "explain": "Dos primeros tonos, altos y planos." },
+        { "audio": "房租", "options": ["fángzū", "fángzhū", "fāngzū"], "answer": 0, "explain": "z sin retroflexión; 房 sube (segundo tono)." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["付", "钥"],
+      "mnemonics": {
+        "付": "亻 (persona) + 寸 (una mano): pasarle algo a una persona con la mano. De ahí «pagar».",
+        "钥": "钅 (metal) + 月 (da un sonido parecido): la pieza de metal que abre la puerta."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "Sujeto + 把 + cosa + V给 + persona",
+      "markdown": "Cuando **das, devuelves, envías, prestas o pagas algo concreto a alguien**, el chino prefiere adelantar la cosa con 把 y dejar a la persona detrás de **V给**:\n\n**Sujeto + 把 + cosa + 交给 / 还给 / 发给 / 借给 / 付给 / 送给 + persona**\n\n- 给 va **pegado al verbo** (en el esqueleto, junto en *Verbo 1*); la persona va en *Objeto*.\n- Si el verbo ya es 给, basta con él: 把钥匙**给**我.\n- Sin 把 también existe 我给他钥匙, pero con verbos como 交 / 还 / 付, y con cosas concretas («*las* llaves», «*la* fianza»), lo natural es 把.\n- **Negativa**: 没 / 还没 delante de 把: 他**还没**把押金还给我.",
+      "focus": ["with", "object"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "with": { "zh": "把钥匙", "py": "bǎ yàoshi" }, "verb1": { "zh": "交给", "py": "jiāogěi" }, "object": { "zh": "房东", "py": "fángdōng" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Le he dado las llaves a la casera.", "esOrder": [{ "text": "Le he dado", "slot": "verb1" }, { "text": "las llaves", "slot": "with" }, { "text": "a la casera", "slot": "object" }] },
+        { "slots": { "subject": { "zh": "中介", "py": "zhōngjiè" }, "with": { "zh": "把合同", "py": "bǎ hétong" }, "verb1": { "zh": "发给", "py": "fāgěi" }, "object": { "zh": "我", "py": "wǒ" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "La agencia me ha enviado el contrato." },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "with": { "zh": "把押金", "py": "bǎ yājīn" }, "verb1": { "zh": "还给", "py": "huán gěi" }, "object": { "zh": "他", "py": "tā" }, "particle": { "zh": "吧", "py": "ba" } }, "end": "。", "es": "Devuélvele la fianza." },
+        { "slots": { "subject": { "zh": "雨果", "py": "Yǔguǒ" }, "time": { "zh": "每个月", "py": "měi ge yuè" }, "with": { "zh": "把房租", "py": "bǎ fángzū" }, "verb1": { "zh": "付给", "py": "fùgěi" }, "object": { "zh": "房东", "py": "fángdōng" } }, "end": "。", "es": "Hugo le paga el alquiler a la casera cada mes." },
+        { "slots": { "subject": { "zh": "安娜", "py": "Ānnà" }, "with": { "zh": "把这本书", "py": "bǎ zhè běn shū" }, "verb1": { "zh": "借给", "py": "jiègěi" }, "object": { "zh": "我", "py": "wǒ" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Ana me ha prestado este libro." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "房东", "py": "fángdōng" }, "adverb": { "zh": "还没", "py": "hái méi" }, "with": { "zh": "把押金", "py": "bǎ yājīn" }, "verb1": { "zh": "还给", "py": "huán gěi" }, "object": { "zh": "我", "py": "wǒ" } }, "end": "。", "es": "La casera todavía no me ha devuelto la fianza." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "with": { "zh": "把合同", "py": "bǎ hétong" }, "verb1": { "zh": "发给", "py": "fāgěi" }, "object": { "zh": "中介", "py": "zhōngjiè" }, "particle": { "zh": "了吗", "py": "le ma" } }, "end": "？", "es": "¿Le has enviado el contrato a la agencia?" },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "aux": { "zh": "能", "py": "néng" }, "with": { "zh": "把钥匙", "py": "bǎ yàoshi" }, "verb1": { "zh": "给", "py": "gěi" }, "object": { "zh": "我", "py": "wǒ" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿Me puedes dar las llaves?" }
+      ],
+      "mistakes": [
+        { "wrong": "我把钥匙交房东了。", "right": "我把钥匙交给房东了。", "why": "Para decir a quién se lo das, el verbo lleva 给 detrás: 交给, 还给, 付给." },
+        { "wrong": "我交给房东钥匙了。", "right": "我把钥匙交给房东了。", "why": "Con 交给 / 还给 y una cosa concreta, la cosa se adelanta con 把 y la persona se queda detrás." },
+        { "wrong": "我把钱付了房东。", "right": "我把钱付给房东了。", "why": "La persona que recibe va detrás de 给, y el 了 al final." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Firmar el contrato",
+      "lines": [
+        { "speaker": "中介", "zh": "雨果，这是租房的合同，你先看看。", "py": "Yǔguǒ, zhè shì zū fáng de hétong, nǐ xiān kànkan.", "es": "Hugo, este es el contrato de alquiler: échale un vistazo primero." },
+        { "speaker": "雨果", "zh": "好的。每个月的房租是多少？", "py": "Hǎo de. Měi ge yuè de fángzū shì duōshao?", "es": "Vale. ¿Cuánto es el alquiler al mes?" },
+        { "speaker": "中介", "zh": "四千五。押金是一个月的房租。", "py": "Sìqiān wǔ. Yājīn shì yí ge yuè de fángzū.", "es": "Cuatro mil quinientos. La fianza es un mes de alquiler." },
+        { "speaker": "雨果", "zh": "水费和电费呢？也要付给房东吗？", "py": "Shuǐfèi hé diànfèi ne? Yě yào fùgěi fángdōng ma?", "es": "¿Y el agua y la luz? ¿También se le pagan a la casera?" },
+        { "speaker": "中介", "zh": "不用，这些费用你每个月在网上交费就行，用支付宝支付很方便。", "py": "Bú yòng, zhèxiē fèiyòng nǐ měi ge yuè zài wǎng shang jiāofèi jiù xíng, yòng Zhīfùbǎo zhīfù hěn fāngbiàn.", "es": "No, esos gastos los pagas cada mes por internet; con Alipay es muy cómodo." },
+        { "speaker": "雨果", "zh": "价格比我想的高一点儿，不过房子很好。我签吧。", "py": "Jiàgé bǐ wǒ xiǎng de gāo yìdiǎnr, búguò fángzi hěn hǎo. Wǒ qiān ba.", "es": "El precio es un poco más alto de lo que pensaba, pero el piso está muy bien. Firmo." },
+        { "speaker": "中介", "zh": "好。你签好以后，把合同交给我，我再把它发给房东。", "py": "Hǎo. Nǐ qiān hǎo yǐhòu, bǎ hétong jiāogěi wǒ, wǒ zài bǎ tā fāgěi fángdōng.", "es": "Bien. Cuando lo firmes, dame el contrato y yo se lo mando a la casera." },
+        { "speaker": "雨果", "zh": "押金我现在付吗？", "py": "Yājīn wǒ xiànzài fù ma?", "es": "¿La fianza la pago ahora?" },
+        { "speaker": "中介", "zh": "你把押金和第一个月的房租付给房东就行。她马上就来。", "py": "Nǐ bǎ yājīn hé dì yī ge yuè de fángzū fùgěi fángdōng jiù xíng. Tā mǎshàng jiù lái.", "es": "Basta con que le pagues a la casera la fianza y el primer mes. Viene enseguida." },
+        { "speaker": "房东", "zh": "你好！我是房东。这是钥匙，一共两把。", "py": "Nǐ hǎo! Wǒ shì fángdōng. Zhè shì yàoshi, yígòng liǎng bǎ.", "es": "¡Hola! Soy la casera. Aquí tienes las llaves: dos en total." },
+        { "speaker": "雨果", "zh": "谢谢阿姨。钱我已经用支付宝付给您了。", "py": "Xièxie āyí. Qián wǒ yǐjīng yòng Zhīfùbǎo fùgěi nín le.", "es": "Gracias, señora. El dinero ya se lo he pagado por Alipay." },
+        { "speaker": "房东", "zh": "收到了。以后你搬走的时候，我把押金还给你。", "py": "Shōudào le. Yǐhòu nǐ bānzǒu de shíhou, wǒ bǎ yājīn huán gěi nǐ.", "es": "Recibido. Cuando te vayas, te devuelvo la fianza." },
+        { "speaker": "雨果", "zh": "好的，谢谢！", "py": "Hǎo de, xièxie!", "es": "¡Muy bien, gracias!" }
+      ],
+      "notes": "En China el alquiler suele pagarse por adelantado: 押一付三 (un mes de fianza + tres meses) es muy habitual, aunque hay caseros que aceptan pago mensual. Se suele llamar 阿姨 / 叔叔 al casero o casera. Fíjate en 钱我已经…付给您了: si la cosa ya se ha mencionado, también puede ir al principio como tema."
+    },
+    { "type": "exercises", "count": 16, "bank": ["g-gei", "g-word-order", "g-price-age"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "我" }, "with": { "zh": "把钥匙" }, "verb1": { "zh": "交给" }, "object": { "zh": "房东" }, "particle": { "zh": "了" } }, "end": "。", "es": "Le he dado las llaves a la casera." }, "distractors": ["在"] },
+        { "sentence": { "slots": { "subject": { "zh": "中介" }, "with": { "zh": "把合同" }, "verb1": { "zh": "发给" }, "object": { "zh": "我" }, "particle": { "zh": "了" } }, "end": "。", "es": "La agencia me ha enviado el contrato." } },
+        { "sentence": { "slots": { "subject": { "zh": "他" }, "adverb": { "zh": "还没" }, "with": { "zh": "把押金" }, "verb1": { "zh": "还给" }, "object": { "zh": "我" } }, "end": "。", "es": "Todavía no me ha devuelto la fianza." }, "distractors": ["不"] },
+        { "sentence": { "slots": { "time0": { "zh": "下个月一号" }, "subject": { "zh": "雨果" }, "aux": { "zh": "要" }, "with": { "zh": "把房租和水电费" }, "verb1": { "zh": "付给" }, "object": { "zh": "房东" } }, "end": "。", "es": "El día uno del mes que viene Hugo tiene que pagarle a la casera el alquiler, el agua y la luz." } }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "我把钥匙交给房东了。", "py": "Wǒ bǎ yàoshi jiāogěi fángdōng le.", "es": "Le he dado las llaves a la casera." },
+        { "zh": "你把押金还给他吧。", "py": "Nǐ bǎ yājīn huán gěi tā ba.", "es": "Devuélvele la fianza." },
+        { "zh": "中介把合同发给我了。", "py": "Zhōngjiè bǎ hétong fāgěi wǒ le.", "es": "La agencia me ha enviado el contrato." }
+      ],
+      "respond": [
+        { "q": { "zh": "你每个月把房租付给谁？", "py": "Nǐ měi ge yuè bǎ fángzū fùgěi shéi?", "es": "¿A quién le pagas el alquiler cada mes?" }, "model": { "zh": "我把房租付给房东。", "py": "Wǒ bǎ fángzū fùgěi fángdōng.", "es": "Se lo pago a la casera." } },
+        { "q": { "zh": "你的押金是多少？", "py": "Nǐ de yājīn shì duōshao?", "es": "¿Cuánto es tu fianza?" }, "model": { "zh": "押金是一个月的房租，四千五。", "py": "Yājīn shì yí ge yuè de fángzū, sìqiān wǔ.", "es": "Un mes de alquiler: cuatro mil quinientos." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Alquilar con agencia",
+      "text": "雨果的新房子是在中介那儿找的。中介是一个很热情的年轻人，他先把房子的照片发给雨果，又带雨果去看了房子。雨果觉得房子不错，价钱也还可以：每个月四千五，押金是一个月的房租。签合同那天，雨果先把合同看了两遍，然后在合同上写了自己的名字。中介把合同交给房东，房东把两把钥匙交给雨果。水费、电费这些费用，雨果每个月在网上交费，用支付宝支付，非常方便。雨果把合同放在书架上，又把一把钥匙交给了小李，因为他常常忘带钥匙。房东说：“以后你搬走的时候，我把押金还给你。”雨果想：在中国租房子，有中介帮忙，真不难！",
+      "es": "Hugo encontró su piso nuevo a través de una agencia. El agente era un chico joven muy atento: primero le mandó las fotos del piso y luego le llevó a verlo. A Hugo le pareció bien, y el precio era razonable: cuatro mil quinientos al mes, y la fianza, un mes de alquiler. El día de la firma, Hugo se leyó el contrato dos veces y después escribió su nombre. El agente le dio el contrato a la casera, y la casera le dio a Hugo dos llaves. El agua, la luz y esos gastos, Hugo los paga cada mes por internet con Alipay: comodísimo. Hugo guardó el contrato en la estantería y le dio una de las llaves a Xiao Li, porque a menudo se olvida las suyas. La casera le dijo: «Cuando te vayas, te devuelvo la fianza». Hugo pensó: alquilar en China con la ayuda de una agencia no es nada difícil.",
+      "questions": [
+        { "q": "¿Cuánto es la fianza?", "options": ["一个月的房租", "两个月的房租", "四千块"], "answer": 0 },
+        { "q": "¿Quién le dio las llaves a Hugo?", "options": ["房东", "中介", "小李"], "answer": 0 },
+        { "q": "¿Cómo paga Hugo el agua y la luz?", "options": ["在网上用支付宝", "把钱交给房东", "去银行"], "answer": 0 },
+        { "q": "¿Cuándo le devolverá la casera la fianza?", "options": ["雨果搬走的时候", "下个月", "签合同那天"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

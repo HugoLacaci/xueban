@@ -1,0 +1,148 @@
+{
+  "id": "a1-u01-l5",
+  "title": "¿De dónde eres? Países, nacionalidades e idiomas",
+  "zh": "你是哪国人？",
+  "goal": "Preguntar y decir la nacionalidad (哪国人), qué idiomas hablas (说 + idioma) y repasar toda la unidad.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "国", "pinyin": "guó", "es": "país", "note": "País + 人 = nacionalidad: 中国人, 美国人." },
+    { "hanzi": "哪", "pinyin": "nǎ", "es": "¿qué…?, ¿cuál…? (de varios)", "note": "哪国人 = ¿de qué país? Ya conoces 哪儿 (¿dónde?)." },
+    { "hanzi": "说", "pinyin": "shuō", "es": "hablar, decir", "note": "说 + idioma: 我说汉语." },
+    { "hanzi": "汉语", "pinyin": "Hànyǔ", "es": "chino (la lengua)", "note": "El nombre «de manual», el de las clases y el HSK." },
+    { "hanzi": "中文", "pinyin": "Zhōngwén", "es": "chino (lengua y escritura)", "note": "Más corriente en la calle; también en carteles y webs: 中文 / English." },
+    { "hanzi": "英语", "pinyin": "Yīngyǔ", "es": "inglés (la lengua)" },
+    { "hanzi": "西班牙语", "pinyin": "Xībānyáyǔ", "es": "español (la lengua)", "note": "Muchos lo abrevian: 西语 Xīyǔ." },
+    { "hanzi": "外语", "pinyin": "wàiyǔ", "es": "lengua extranjera" },
+    { "hanzi": "英国", "pinyin": "Yīngguó", "es": "Reino Unido, Inglaterra" },
+    { "hanzi": "法国", "pinyin": "Fǎguó", "es": "Francia", "note": "法语 Fǎyǔ = francés (la lengua)." },
+    { "hanzi": "外国", "pinyin": "wàiguó", "es": "país extranjero; extranjero (adj.)", "note": "外国人 = extranjero, extranjera." },
+    { "hanzi": "国外", "pinyin": "guówài", "es": "el extranjero (lugar)", "note": "Es un lugar: 在国外 = en el extranjero (en la unidad 14)." },
+    { "hanzi": "国家", "pinyin": "guójiā", "es": "país, nación" }
+  ],
+  "extraVocab": ["英国", "法国", "西班牙语"],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "你是哪国人？", "py": "Nǐ shì nǎ guó rén?", "es": "¿De qué país eres?" },
+        { "zh": "我是西班牙人。", "py": "Wǒ shì Xībānyá rén.", "es": "Soy español." },
+        { "zh": "我说西班牙语，也说英语。", "py": "Wǒ shuō Xībānyáyǔ, yě shuō Yīngyǔ.", "es": "Hablo español y también inglés." },
+        { "zh": "你说汉语吗？", "py": "Nǐ shuō Hànyǔ ma?", "es": "¿Hablas chino?" }
+      ]
+    },
+    { "type": "vocab", "title": "Países e idiomas", "words": ["国", "哪", "说", "汉语", "中文", "英语", "西班牙语", "外语", "英国", "法国", "外国", "国外", "国家"] },
+    {
+      "type": "phonetics-drill",
+      "title": "Los tonos de los países y las lenguas",
+      "markdown": "Los nombres de países e idiomas son buenos para practicar **pares de tonos**, porque se repiten mucho:\n\n| Palabra | Tonos | Cómo suena |\n|---|---|---|\n| 中国 Zhōngguó | 1 + 2 | alto y plano, luego sube |\n| 美国 Měiguó | 3 + 2 | baja (medio tercero) y sube |\n| 法国 Fǎguó | 3 + 2 | igual que 美国 |\n| 英国 Yīngguó | 1 + 2 | igual que 中国 |\n| 汉语 Hànyǔ | 4 + 3 | cae y luego baja |\n| 英语 Yīngyǔ | 1 + 3 | alto y luego baja |\n\nEl **medio tercer tono**: delante de 1.º, 2.º o 4.º tono, el tercero solo **baja** y no llega a subir (美国 → *měi* bajo + *guó* subiendo). Y 说 **shuō**: *sh* + *uo* (como «uo» rápido, casi «suo» con la lengua hacia atrás).",
+      "items": [
+        { "audio": "汉语", "options": ["Hànyǔ", "Hányǔ", "Hànyù"], "answer": 0, "explain": "4.º + 3.º: cae con fuerza y luego baja." },
+        { "audio": "英语", "options": ["Yīngyǔ", "Yíngyǔ", "Yīnyǔ"], "answer": 0, "explain": "1.º + 3.º, y yīng con -ng." },
+        { "audio": "美国", "prompt": "¿Qué par de tonos es?", "options": ["3 + 2", "2 + 3", "1 + 2"], "answer": 0, "explain": "měi (medio tercero, solo baja) + guó (sube)." },
+        { "audio": "说", "options": ["shuō", "suō", "shōu"], "answer": 0, "explain": "sh con la lengua hacia atrás + uo." },
+        { "audio": "中文", "options": ["Zhōngwén", "Zhòngwén", "Zhōngwěn"], "answer": 0, "explain": "1.º + 2.º, como 中国." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["国", "语"],
+      "mnemonics": {
+        "国": "囗 (muralla, frontera) + 玉 (jade, el tesoro): un país es el tesoro guardado dentro de sus fronteras.",
+        "语": "讠 (palabras, habla) + 吾 (yo, en chino clásico): las palabras con las que yo hablo, una lengua."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "哪国人 y 说 + idioma",
+      "markdown": "**Nacionalidad = país + 人**: 中国**人**, 西班牙**人**, 美国**人**. En chino no se dice ~~我是西班牙~~ («soy España»): falta 人.\n\nPara preguntarla: **哪国人** («persona de qué país»). Como 什么 y 谁, 哪 se queda **en el hueco de la respuesta**: 你是**哪国人**？ → 我是**西班牙人**。 Sin 吗.\n\n**Idioma**: 说 + lengua. Las lenguas suelen llevar **语** (汉语, 英语, 法语, 西班牙语) o **文** (中文). ~~我说中国~~ («hablo China») es un error típico.\n\nY ahora junta todo lo de la unidad en el esqueleto: sujeto + **也 / 不 / 也不** + verbo + objeto + **吗**.",
+      "focus": ["object"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "西班牙人", "py": "Xībānyá rén" } }, "end": "。", "es": "Soy español.", "esOrder": [{ "text": "Soy", "slot": "verb1" }, { "text": "español", "slot": "object" }] },
+        { "slots": { "subject": { "zh": "大卫", "py": "Dàwèi" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "外国人", "py": "wàiguó rén" } }, "end": "。", "es": "David es extranjero." },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "verb1": { "zh": "说", "py": "shuō" }, "object": { "zh": "西班牙语", "py": "Xībānyáyǔ" } }, "end": "。", "es": "Hablo español." },
+        { "slots": { "subject": { "zh": "安娜", "py": "Ānnà" }, "adverb": { "zh": "也", "py": "yě" }, "verb1": { "zh": "说", "py": "shuō" }, "object": { "zh": "法语", "py": "Fǎyǔ" } }, "end": "。", "es": "Anna también habla francés." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "不", "py": "bù" }, "verb1": { "zh": "说", "py": "shuō" }, "object": { "zh": "法语", "py": "Fǎyǔ" } }, "end": "。", "es": "No hablo francés." },
+        { "slots": { "subject": { "zh": "他", "py": "tā" }, "adverb": { "zh": "不", "py": "bú" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "英国人", "py": "Yīngguó rén" } }, "end": "。", "es": "No es británico." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "哪国人", "py": "nǎ guó rén" } }, "end": "？", "es": "¿De qué país eres?", "esOrder": [{ "text": "¿De qué país", "slot": "object" }, { "text": "eres?", "slot": "verb1" }] },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "说", "py": "shuō" }, "object": { "zh": "汉语", "py": "Hànyǔ" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿Hablas chino?" },
+        { "slots": { "subject": { "zh": "小李", "py": "Xiǎo Lǐ" }, "verb1": { "zh": "说", "py": "shuō" }, "object": { "zh": "什么外语", "py": "shénme wàiyǔ" } }, "end": "？", "es": "¿Qué idiomas extranjeros habla Xiao Li?" }
+      ],
+      "mistakes": [
+        { "wrong": "我是西班牙。", "right": "我是西班牙人。", "why": "La nacionalidad es país + 人; sin 人 dices «soy España»." },
+        { "wrong": "你是哪国人吗？", "right": "你是哪国人？", "why": "哪 ya pregunta: no lleva 吗." },
+        { "wrong": "我说中国。", "right": "我说汉语。 / 我说中文。", "why": "中国 es el país; la lengua es 汉语 o 中文." },
+        { "wrong": "我说西班牙人。", "right": "我说西班牙语。", "why": "西班牙人 es la persona; la lengua lleva 语." }
+      ]
+    },
+    {
+      "type": "explain",
+      "title": "汉语 o 中文, 外国 o 国外",
+      "markdown": "- **汉语** y **中文** significan los dos «chino». 汉语 es la palabra de los manuales y del examen HSK (la lengua de la etnia 汉); **中文** es la más corriente en la vida diaria y también se refiere a la escritura: un menú 中文 / English.\n- **外国** es «país extranjero» y sirve de adjetivo: **外国人** (extranjero), **外国**同学. **国外** es «el extranjero» como lugar («vivo en el extranjero»): lo usarás con 在 en la unidad 14.\n- **国家** es «país» en general: 西班牙是国家，马德里不是国家.\n- Tú en China serás un **外国人** o, más amable, un **外国朋友**. Y si te preguntan 你是哪国人？, la respuesta más corta es **西班牙人**."
+    },
+    {
+      "type": "dialogue",
+      "title": "¿Qué idiomas hablas?",
+      "lines": [
+        { "speaker": "小李", "zh": "雨果，你是哪国人？", "py": "Yǔguǒ, nǐ shì nǎ guó rén?", "es": "Hugo, ¿de qué país eres?" },
+        { "speaker": "雨果", "zh": "我是西班牙人。我说西班牙语，也说英语。", "py": "Wǒ shì Xībānyá rén. Wǒ shuō Xībānyáyǔ, yě shuō Yīngyǔ.", "es": "Soy español. Hablo español y también inglés." },
+        { "speaker": "小李", "zh": "你也说法语吗？", "py": "Nǐ yě shuō Fǎyǔ ma?", "es": "¿También hablas francés?" },
+        { "speaker": "雨果", "zh": "不，我不说法语。安娜说法语。", "py": "Bù, wǒ bù shuō Fǎyǔ. Ānnà shuō Fǎyǔ.", "es": "No, no hablo francés. Anna sí habla francés." },
+        { "speaker": "安娜", "zh": "对，我说西班牙语、英语，也说法语。", "py": "Duì, wǒ shuō Xībānyáyǔ, Yīngyǔ, yě shuō Fǎyǔ.", "es": "Sí, hablo español, inglés y también francés." },
+        { "speaker": "小李", "zh": "大卫呢？他是英国人吗？", "py": "Dàwèi ne? Tā shì Yīngguó rén ma?", "es": "¿Y David? ¿Es británico?" },
+        { "speaker": "雨果", "zh": "不对，他是美国人。他说英语，也说中文。", "py": "Bú duì, tā shì Měiguó rén. Tā shuō Yīngyǔ, yě shuō Zhōngwén.", "es": "No, es estadounidense. Habla inglés y también chino." },
+        { "speaker": "小李", "zh": "你们是外国人，你们也说汉语！", "py": "Nǐmen shì wàiguó rén, nǐmen yě shuō Hànyǔ!", "es": "Sois extranjeros… ¡y también habláis chino!" },
+        { "speaker": "雨果", "zh": "对！汉语是外语，我们是汉语学生。", "py": "Duì! Hànyǔ shì wàiyǔ, wǒmen shì Hànyǔ xuésheng.", "es": "¡Sí! El chino es una lengua extranjera para nosotros: somos estudiantes de chino." }
+      ],
+      "notes": "En chino, la respuesta corta 不 a secas (como en «不，我不说法语») es posible cuando niegas algo que no lleva 是; lo más natural sigue siendo repetir el verbo negado: 不说."
+    },
+    { "type": "exercises", "count": 16, "bank": ["g-question-words", "g-shi", "g-ye-dou", "g-ne", "u01"] },
+    {
+      "type": "sentence-builder",
+      "title": "Construye la frase completa",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "你" }, "verb1": { "zh": "是" }, "object": { "zh": "哪国人" } }, "end": "？", "es": "¿De qué país eres?" }, "distractors": ["吗"] },
+        { "sentence": { "slots": { "subject": { "zh": "安娜" }, "adverb": { "zh": "也" }, "verb1": { "zh": "说" }, "object": { "zh": "西班牙语" }, "particle": { "zh": "吗" } }, "end": "？", "es": "¿Anna también habla español?" }, "distractors": ["西班牙人"] },
+        { "sentence": { "slots": { "subject": { "zh": "张先生" }, "adverb": { "zh": "也不" }, "verb1": { "zh": "是" }, "object": { "zh": "英国人" } }, "end": "。", "es": "El señor Zhang tampoco es británico." }, "distractors": ["吗", "呢"] },
+        { "sentence": { "slots": { "subject": { "zh": "你们" }, "adverb": { "zh": "也" }, "verb1": { "zh": "认识" }, "object": { "zh": "王老师" }, "particle": { "zh": "吗" } }, "end": "？", "es": "¿Vosotros también conocéis a la profesora Wang?" }, "distractors": ["什么"] },
+        { "sentence": { "slots": { "subject": { "zh": "大卫" }, "adverb": { "zh": "不" }, "verb1": { "zh": "说" }, "object": { "zh": "西班牙语" } }, "end": "。", "es": "David no habla español." }, "distractors": ["是"] },
+        { "sentence": { "slots": { "subject": { "zh": "那" }, "verb1": { "zh": "是" }, "object": { "zh": "谁" } }, "end": "？", "es": "¿Quién es ese?" }, "distractors": ["吗", "哪"] },
+        { "sentence": { "slots": { "subject": { "zh": "法国同学" }, "verb1": { "zh": "叫" }, "object": { "zh": "什么名字" } }, "end": "？", "es": "¿Cómo se llama el compañero francés?" }, "distractors": ["吗", "姓"] },
+        { "sentence": { "slots": { "subject": { "zh": "英国同学" }, "adverb": { "zh": "也不" }, "verb1": { "zh": "说" }, "object": { "zh": "汉语" } }, "end": "。", "es": "El compañero británico tampoco habla chino." }, "distractors": ["法语", "吗"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "你是哪国人？", "py": "Nǐ shì nǎ guó rén?", "es": "¿De qué país eres?" },
+        { "zh": "我是西班牙人。", "py": "Wǒ shì Xībānyá rén.", "es": "Soy español." },
+        { "zh": "我说西班牙语，也说英语。", "py": "Wǒ shuō Xībānyáyǔ, yě shuō Yīngyǔ.", "es": "Hablo español y también inglés." },
+        { "zh": "他不是英国人，他是美国人。", "py": "Tā bú shì Yīngguó rén, tā shì Měiguó rén.", "es": "No es británico, es estadounidense." },
+        { "zh": "我叫雨果，认识你很高兴！", "py": "Wǒ jiào Yǔguǒ, rènshi nǐ hěn gāoxìng!", "es": "Me llamo Hugo, ¡encantado de conocerte!" }
+      ],
+      "respond": [
+        { "q": { "zh": "你是哪国人？", "py": "Nǐ shì nǎ guó rén?", "es": "¿De qué país eres?" }, "model": { "zh": "我是西班牙人。", "py": "Wǒ shì Xībānyá rén.", "es": "Soy español." } },
+        { "q": { "zh": "你说什么外语？", "py": "Nǐ shuō shénme wàiyǔ?", "es": "¿Qué idiomas extranjeros hablas?" }, "model": { "zh": "我说英语，也说汉语。", "py": "Wǒ shuō Yīngyǔ, yě shuō Hànyǔ.", "es": "Hablo inglés y también chino." } },
+        { "q": { "zh": "你说法语吗？", "py": "Nǐ shuō Fǎyǔ ma?", "es": "¿Hablas francés?" }, "model": { "zh": "不，我不说法语。", "py": "Bù, wǒ bù shuō Fǎyǔ.", "es": "No, no hablo francés." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Presentación en clase",
+      "text": "大家好！我叫雨果，我是西班牙人，我是学生。我说西班牙语，也说英语。我说汉语吗？对，我也说汉语！这是安娜，她也是西班牙人。那是大卫，他不是英国人，他是美国人。小李是中国人，他说中文，也说英语。认识你们很高兴！",
+      "es": "¡Hola a todos! Me llamo Hugo, soy español y soy estudiante. Hablo español y también inglés. ¿Hablo chino? ¡Sí, también hablo chino! Esta es Anna: ella también es española. Ese es David: no es británico, es estadounidense. Xiao Li es chino: habla chino y también inglés. ¡Encantado de conoceros!",
+      "questions": [
+        { "q": "¿Qué idiomas habla Hugo?", "options": ["Español, inglés y chino", "Solo español", "Español y francés"], "answer": 0 },
+        { "q": "¿De qué país es David?", "options": ["美国", "英国", "中国"], "answer": 0 },
+        { "q": "¿Quién es chino?", "options": ["小李", "安娜", "大卫"], "answer": 0 },
+        { "q": "¿Cómo se pregunta «¿de qué país eres?»", "options": ["你是哪国人？", "你是哪国人吗？", "你说什么？"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

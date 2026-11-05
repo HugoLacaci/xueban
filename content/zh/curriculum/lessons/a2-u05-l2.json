@@ -1,0 +1,134 @@
+{
+  "id": "a2-u05-l2",
+  "title": "En el hospital: llevo dos días con fiebre (了…了)",
+  "zh": "我发烧两天了",
+  "goal": "Contar en el hospital cuánto tiempo llevas con un síntoma (了…了) y cuánto hace que no haces algo (三天没…了).",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "挂号", "pinyin": "guàhào", "es": "pedir número, registrarse (en el hospital)", "note": "En China lo primero en el hospital es 挂号, en la ventanilla o con el móvil." },
+    { "hanzi": "检查", "pinyin": "jiǎnchá", "es": "revisar, hacer una prueba; revisión", "note": "检查一下 = echar un vistazo, hacer una revisión." },
+    { "hanzi": "打针", "pinyin": "dǎzhēn", "es": "poner una inyección; pincharse", "note": "Verbo separable: 打了一针." },
+    { "hanzi": "血", "pinyin": "xuè", "es": "sangre", "note": "En la calle se oye mucho xiě: 查血 chá xiě (análisis de sangre)." },
+    { "hanzi": "西医", "pinyin": "xīyī", "es": "medicina occidental; médico de medicina occidental" },
+    { "hanzi": "中医", "pinyin": "zhōngyī", "es": "medicina china; médico de medicina china" },
+    { "hanzi": "中药", "pinyin": "zhōngyào", "es": "medicina china (hierbas)", "note": "Lo contrario: 西药." },
+    { "hanzi": "医保", "pinyin": "yībǎo", "es": "seguro médico", "note": "Abreviatura de 医疗保险." },
+    { "hanzi": "住院", "pinyin": "zhùyuàn", "es": "estar ingresado, ingresar en el hospital" },
+    { "hanzi": "出院", "pinyin": "chūyuàn", "es": "recibir el alta, salir del hospital" },
+    { "hanzi": "院长", "pinyin": "yuànzhǎng", "es": "director (de hospital, facultad…)", "note": "长 se lee zhǎng: «jefe»." }
+  ],
+  "extraVocab": ["挂号", "打针", "中药", "医保"],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "我发烧两天了。", "py": "Wǒ fāshāo liǎng tiān le.", "es": "Llevo dos días con fiebre." },
+        { "zh": "我三天没好好吃饭了。", "py": "Wǒ sān tiān méi hǎohǎo chīfàn le.", "es": "Hace tres días que no como bien." },
+        { "zh": "我有学校的医保。", "py": "Wǒ yǒu xuéxiào de yībǎo.", "es": "Tengo el seguro médico de la universidad." }
+      ]
+    },
+    { "type": "vocab", "title": "En el hospital", "words": ["挂号", "检查", "打针", "血", "西医", "中医", "中药", "医保", "住院", "出院", "院长"] },
+    {
+      "type": "phonetics-drill",
+      "title": "zh, ch, sh frente a z, j, q, y los dos 了",
+      "markdown": "En el hospital salen muchas retroflejas (lengua **doblada hacia atrás**): 中 *zhōng*, 针 *zhēn*, 住 *zhù*, 出 *chū*, 长 *zhǎng*. Compáralas con **j / q** (lengua plana, labios estirados): 检 *jiǎn*, 查 *chá* ← ¡ojo!, 查 es *ch*, no *q*.\n\n**Los dos 了**: en 我等了一个小时了 hay dos *le* en **tono neutro**, muy cortos. El segundo es el que dice «y sigo»: no te lo comas.",
+      "items": [
+        { "audio": "打针", "options": ["dǎzhēn", "dǎzēn", "dǎjēn"], "answer": 0, "explain": "zh retrofleja + -en." },
+        { "audio": "检查", "options": ["jiǎnchá", "jiǎnqiá", "zhiǎnchá"], "answer": 0, "explain": "jiǎn con j plana; chá con ch retrofleja." },
+        { "audio": "住院", "options": ["zhùyuàn", "zùyuàn", "jùyuàn"], "answer": 0, "explain": "zh + u, y yuàn con ü (escrita u tras y)." },
+        { "audio": "出院", "options": ["chūyuàn", "qūyuàn", "cūyuàn"], "answer": 0, "explain": "ch retrofleja; qu sería «qü»." },
+        { "audio": "我等了一个小时了。", "prompt": "¿Cuántas veces oyes «le»?", "options": ["Una", "Dos", "Tres"], "answer": 1, "explain": "等了 … 小时了: dos 了 → la espera sigue." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["院", "针"],
+      "mnemonics": {
+        "院": "阝 a la izquierda (muro, terreno) + 完: un recinto cerrado con muro → patio, institución: 医院, 学院, 院子.",
+        "针": "钅 (metal) + 十 (que parece una aguja con su ojo): aguja → 打针, poner una inyección."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "了…了 (y sigue) y la duración negativa (三天没…了)",
+      "markdown": "Ya sabes decir cuánto **duró** algo (A2-2): 我等了一个小时 = esperé una hora (y se acabó). Si añades un **了 al final**, la acción **sigue hasta ahora**:\n\n- 我等了一个小时**了**。 → Llevo una hora esperando (y sigo).\n- 他发烧两天**了**。 → Lleva dos días con fiebre.\n- Con objeto, repite el verbo: 我**学**汉语**学了**一年**了** → llevo un año estudiando chino.\n\n**Duración negativa**: «hace tres días que **no**…». Aquí la duración va **delante de 没**, en el hueco del **Tiempo**, y la frase acaba en 了:\n\n- 我**三天没**吃肉**了**。 → Hace tres días que no como carne.\n\nEn español la duración va al final («…en tres días»); en chino, antes del verbo negado. Fíjate en las flechas.\n\n**Convención del esqueleto**: la duración positiva va en **Complemento** (detrás del verbo); la de la negativa, en **Tiempo** (delante de 没).",
+      "focus": ["complement", "time", "particle"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "verb1": { "zh": "等了", "py": "děng le" }, "complement": { "zh": "一个小时", "py": "yí ge xiǎoshí" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Llevo una hora esperando." },
+        { "slots": { "subject": { "zh": "雨果", "py": "Yǔguǒ" }, "verb1": { "zh": "发烧", "py": "fāshāo" }, "complement": { "zh": "两天", "py": "liǎng tiān" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Hugo lleva dos días con fiebre.", "esOrder": [{ "text": "Hugo", "slot": "subject" }, { "text": "lleva dos días", "slot": "complement" }, { "text": "con fiebre", "slot": "verb1" }] },
+        { "slots": { "subject": { "zh": "小李的爷爷", "py": "Xiǎo Lǐ de yéye" }, "verb1": { "zh": "住院", "py": "zhùyuàn" }, "complement": { "zh": "一个星期", "py": "yí ge xīngqī" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "El abuelo de Xiao Li lleva una semana ingresado." },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "verb1": { "zh": "学汉语", "py": "xué Hànyǔ" }, "verb2": { "zh": "学了", "py": "xué le" }, "complement": { "zh": "一年", "py": "yì nián" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Llevo un año estudiando chino." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "time": { "zh": "三天", "py": "sān tiān" }, "adverb": { "zh": "没", "py": "méi" }, "verb1": { "zh": "吃", "py": "chī" }, "object": { "zh": "肉", "py": "ròu" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Hace tres días que no como carne.", "esOrder": [{ "text": "No", "slot": "adverb" }, { "text": "como", "slot": "verb1" }, { "text": "carne", "slot": "object" }, { "text": "desde hace tres días", "slot": "time" }] },
+        { "slots": { "subject": { "zh": "他", "py": "tā" }, "time": { "zh": "两天", "py": "liǎng tiān" }, "adverb": { "zh": "没", "py": "méi" }, "verb1": { "zh": "睡好", "py": "shuì hǎo" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Lleva dos días sin dormir bien." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "发烧", "py": "fāshāo" }, "complement": { "zh": "多长时间", "py": "duō cháng shíjiān" }, "particle": { "zh": "了", "py": "le" } }, "end": "？", "es": "¿Cuánto tiempo llevas con fiebre?" },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "time": { "zh": "几天", "py": "jǐ tiān" }, "adverb": { "zh": "没", "py": "méi" }, "verb1": { "zh": "吃", "py": "chī" }, "object": { "zh": "饭", "py": "fàn" }, "particle": { "zh": "了", "py": "le" } }, "end": "？", "es": "¿Cuántos días llevas sin comer?" }
+      ],
+      "mistakes": [
+        { "wrong": "我没吃肉三天了。", "right": "我三天没吃肉了。", "why": "En la duración negativa, el tiempo va delante de 没, no al final como en español." },
+        { "wrong": "我等了一个小时。（y sigo esperando）", "right": "我等了一个小时了。", "why": "Sin el 了 final se entiende que la espera ya terminó." },
+        { "wrong": "我发烧两个天了。", "right": "我发烧两天了。", "why": "天 (y 年) no llevan clasificador: 两天, 一年; en cambio 一个星期, 一个小时, 一个月." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "En la consulta",
+      "lines": [
+        { "speaker": "大夫", "zh": "请坐。你哪儿不舒服？", "py": "Qǐng zuò. Nǐ nǎr bù shūfu?", "es": "Siéntate. ¿Qué te pasa?" },
+        { "speaker": "雨果", "zh": "大夫，我感冒了，发烧两天了。", "py": "Dàifu, wǒ gǎnmào le, fāshāo liǎng tiān le.", "es": "Doctor, me he resfriado: llevo dos días con fiebre." },
+        { "speaker": "大夫", "zh": "你多长时间没吃饭了？", "py": "Nǐ duō cháng shíjiān méi chīfàn le?", "es": "¿Cuánto tiempo llevas sin comer?" },
+        { "speaker": "雨果", "zh": "我两天没好好吃饭了，只喝了一点儿汤。", "py": "Wǒ liǎng tiān méi hǎohǎo chīfàn le, zhǐ hē le yìdiǎnr tāng.", "es": "Llevo dos días sin comer bien; solo he tomado un poco de sopa." },
+        { "speaker": "大夫", "zh": "我先给你检查一下。三十九度，有点儿高。你去查一下血吧。", "py": "Wǒ xiān gěi nǐ jiǎnchá yíxià. Sānshíjiǔ dù, yǒudiǎnr gāo. Nǐ qù chá yíxià xiě ba.", "es": "Primero te echo un vistazo. Treinta y nueve grados, un poco alta. Ve a hacerte un análisis de sangre." },
+        { "speaker": "雨果", "zh": "要打针吗？我很怕打针。", "py": "Yào dǎzhēn ma? Wǒ hěn pà dǎzhēn.", "es": "¿Hace falta una inyección? Me dan mucho miedo las inyecciones." },
+        { "speaker": "大夫", "zh": "不用打针，吃药就行。你想吃中药还是西药？", "py": "Bú yòng dǎzhēn, chī yào jiù xíng. Nǐ xiǎng chī zhōngyào háishi xīyào?", "es": "No hace falta inyección, con pastillas basta. ¿Prefieres medicina china u occidental?" },
+        { "speaker": "雨果", "zh": "我没吃过中药。我吃西药吧。", "py": "Wǒ méi chī guo zhōngyào. Wǒ chī xīyào ba.", "es": "Nunca he tomado medicina china. Mejor la occidental." },
+        { "speaker": "大夫", "zh": "好。你有医保吗？", "py": "Hǎo. Nǐ yǒu yībǎo ma?", "es": "Bien. ¿Tienes seguro médico?" },
+        { "speaker": "雨果", "zh": "有，我有学校的医保。", "py": "Yǒu, wǒ yǒu xuéxiào de yībǎo.", "es": "Sí, tengo el seguro de la universidad." },
+        { "speaker": "大夫", "zh": "你先吃三天药。还不好，就再来看我。", "py": "Nǐ xiān chī sān tiān yào. Hái bù hǎo, jiù zài lái kàn wǒ.", "es": "Toma las medicinas tres días. Si no mejoras, vuelve a verme." }
+      ],
+      "notes": "En un hospital chino primero se hace 挂号 (pedir número para un servicio y un médico), muchas veces desde el móvil, y se paga antes de cada prueba. Los grandes hospitales tienen consultas de 西医 y de 中医 en el mismo edificio. Como estudiante extranjero, normalmente tienes un 医保 contratado por la universidad: guarda los recibos."
+    },
+    { "type": "exercises", "count": 17, "bank": ["g-le", "g-bu-mei", "u11"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "我" }, "verb1": { "zh": "发烧" }, "complement": { "zh": "两天" }, "particle": { "zh": "了" } }, "end": "。", "es": "Llevo dos días con fiebre." }, "distractors": ["个"] },
+        { "sentence": { "slots": { "subject": { "zh": "安娜" }, "time": { "zh": "一个星期" }, "adverb": { "zh": "没" }, "verb1": { "zh": "喝" }, "object": { "zh": "咖啡" }, "particle": { "zh": "了" } }, "end": "。", "es": "Ana lleva una semana sin tomar café." }, "distractors": ["不"] },
+        { "sentence": { "slots": { "subject": { "zh": "我们" }, "place": { "zh": "在医院" }, "verb1": { "zh": "等了" }, "complement": { "zh": "两个小时" }, "particle": { "zh": "了" } }, "end": "。", "es": "Llevamos dos horas esperando en el hospital." } },
+        { "sentence": { "slots": { "time0": { "zh": "昨天下午" }, "subject": { "zh": "雨果" }, "adverb": { "zh": "先" }, "with": { "zh": "跟小李一起" }, "verb1": { "zh": "去医院" }, "verb2": { "zh": "挂了" }, "object": { "zh": "号" } }, "end": "。", "es": "Ayer por la tarde Hugo fue primero con Xiao Li al hospital a pedir número." } }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "我发烧两天了。", "py": "Wǒ fāshāo liǎng tiān le.", "es": "Llevo dos días con fiebre." },
+        { "zh": "我三天没吃肉了。", "py": "Wǒ sān tiān méi chī ròu le.", "es": "Hace tres días que no como carne." },
+        { "zh": "我们在医院等了一个小时了。", "py": "Wǒmen zài yīyuàn děng le yí ge xiǎoshí le.", "es": "Llevamos una hora esperando en el hospital." },
+        { "zh": "我很怕打针。", "py": "Wǒ hěn pà dǎzhēn.", "es": "Me dan mucho miedo las inyecciones." }
+      ],
+      "respond": [
+        { "q": { "zh": "你发烧多长时间了？", "py": "Nǐ fāshāo duō cháng shíjiān le?", "es": "¿Cuánto tiempo llevas con fiebre?" }, "model": { "zh": "我发烧三天了。", "py": "Wǒ fāshāo sān tiān le.", "es": "Llevo tres días con fiebre." } },
+        { "q": { "zh": "你几天没好好吃饭了？", "py": "Nǐ jǐ tiān méi hǎohǎo chīfàn le?", "es": "¿Cuántos días llevas sin comer bien?" }, "model": { "zh": "我两天没好好吃饭了。", "py": "Wǒ liǎng tiān méi hǎohǎo chīfàn le.", "es": "Llevo dos días sin comer bien." } },
+        { "q": { "zh": "你有医保吗？", "py": "Nǐ yǒu yībǎo ma?", "es": "¿Tienes seguro médico?" }, "model": { "zh": "有，我有学校的医保。", "py": "Yǒu, wǒ yǒu xuéxiào de yībǎo.", "es": "Sí, tengo el de la universidad." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "El abuelo de Xiao Li",
+      "text": "小李的爷爷住院一个星期了。他是这家医院的老病人，院长也认识他。爷爷看西医，也看中医。他每天吃中药，有时候还要打针。他有医保，看病不太贵。小李每天下午都去医院看爷爷。今天爷爷说：“我一个星期没吃肉了，我想吃饺子！”大夫给爷爷检查了身体，查了血。大夫说：“您的身体好多了，明天可以出院了。”小李很高兴。",
+      "es": "El abuelo de Xiao Li lleva una semana ingresado. Es un paciente de toda la vida de este hospital: hasta el director lo conoce. El abuelo va al médico de medicina occidental y también al de medicina china. Toma hierbas chinas todos los días y a veces también le ponen inyecciones. Tiene seguro médico, así que no le sale muy caro. Xiao Li va a verlo todas las tardes. Hoy el abuelo ha dicho: «¡Llevo una semana sin comer carne, quiero comer jiaozi!». El médico le ha hecho una revisión y un análisis de sangre, y le ha dicho: «Está usted mucho mejor; mañana ya puede irse a casa». Xiao Li está muy contento.",
+      "questions": [
+        { "q": "¿Cuánto tiempo lleva ingresado el abuelo?", "options": ["Una semana", "Tres días", "Un mes"], "answer": 0 },
+        { "q": "¿Quién conoce también al abuelo?", "options": ["El director del hospital", "Ana", "El profesor Wang"], "answer": 0 },
+        { "q": "¿Qué quiere comer el abuelo?", "options": ["Jiaozi", "Sopa", "Fruta"], "answer": 0 },
+        { "q": "¿Qué pasará mañana?", "options": ["El abuelo recibe el alta", "Le ponen una inyección", "Le hacen un análisis"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

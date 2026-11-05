@@ -1,0 +1,144 @@
+{
+  "unitId": "b1-u01",
+  "scenarios": [
+    {
+      "id": "b1-u01-rent",
+      "title": "Alquilar un piso",
+      "zh": "租房子",
+      "level": 2,
+      "setting": "Hugo ha visto un piso de dos dormitorios cerca de la universidad y queda con el agente inmobiliario para cerrar el alquiler. Tú (la app) eres el agente de la inmobiliaria.",
+      "role": "agente inmobiliario",
+      "roleZh": "中介",
+      "voice": "m",
+      "goals": ["Preguntar el alquiler y la fianza", "Preguntar quién paga el agua y la luz", "Pedir que arreglen o instalen algo antes de entrar (把…修好 / 安装好)", "Firmar y pedir que te den las llaves (把钥匙交给我)"],
+      "vocab": ["房租", "押金", "水电费", "交费", "合同", "签", "把", "修好", "安装好", "钥匙", "交给"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "你好！这个房子你觉得怎么样？", "py": "Nǐ hǎo! Zhège fángzi nǐ juéde zěnmeyàng?", "es": "¡Hola! ¿Qué te parece el piso?" },
+          "user": [
+            { "zh": "我觉得不错。每个月的房租是多少？", "py": "Wǒ juéde búcuò. Měi ge yuè de fángzū shì duōshao?", "es": "Me parece bien. ¿Cuánto es el alquiler al mes?", "keywords": ["房租", "多少"], "next": "n2", "goal": 0 },
+            { "zh": "很好。押金要多少？", "py": "Hěn hǎo. Yājīn yào duōshao?", "es": "Muy bien. ¿Cuánto es la fianza?", "keywords": ["押金"], "next": "n2", "goal": 0 }
+          ],
+          "hint": "Pregunta por el dinero: el alquiler (房租) o la fianza (押金) + 多少."
+        },
+        "n2": {
+          "npc": { "zh": "房租每个月四千五，押金是一个月的房租。", "py": "Fángzū měi ge yuè sìqiān wǔ, yājīn shì yí ge yuè de fángzū.", "es": "El alquiler son cuatro mil quinientos al mes, y la fianza, un mes de alquiler." },
+          "user": [
+            { "zh": "水电费呢？也要付给房东吗？", "py": "Shuǐdiànfèi ne? Yě yào fùgěi fángdōng ma?", "es": "¿Y el agua y la luz? ¿También se le pagan a la casera?", "keywords": ["水电费", "电费", "付给"], "next": "n3", "goal": 1 },
+            { "zh": "价格有点儿高，能便宜一点儿吗？", "py": "Jiàgé yǒudiǎnr gāo, néng piányi yìdiǎnr ma?", "es": "El precio es un poco alto, ¿puede ser un poco más barato?", "keywords": ["便宜", "价格", "价钱"], "next": "n2b" }
+          ],
+          "hint": "Pregunta por los gastos (水电费) o intenta regatear (能便宜一点儿吗)."
+        },
+        "n2b": {
+          "npc": { "zh": "这个价格已经很便宜了。不过，如果你签一年的合同，我可以跟房东说一下。", "py": "Zhège jiàgé yǐjīng hěn piányi le. Búguò, rúguǒ nǐ qiān yì nián de hétong, wǒ kěyǐ gēn fángdōng shuō yíxià.", "es": "Este precio ya es muy barato. Pero si firmas un contrato de un año, puedo hablarlo con la casera." },
+          "user": [
+            { "zh": "好，我签一年。水电费也要付给房东吗？", "py": "Hǎo, wǒ qiān yì nián. Shuǐdiànfèi yě yào fùgěi fángdōng ma?", "es": "Vale, firmo un año. ¿El agua y la luz también se le pagan a la casera?", "keywords": ["水电费", "一年"], "next": "n3", "goal": 1 }
+          ],
+          "hint": "Acepta el año de contrato y pregunta por el agua y la luz (水电费)."
+        },
+        "n3": {
+          "npc": { "zh": "不用。水电费你每个月在网上交费，用支付宝就可以。", "py": "Bú yòng. Shuǐdiànfèi nǐ měi ge yuè zài wǎng shang jiāofèi, yòng Zhīfùbǎo jiù kěyǐ.", "es": "No. El agua y la luz las pagas cada mes por internet; basta con Alipay." },
+          "user": [
+            { "zh": "好的。卫生间的灯坏了，你们能把它修好吗？", "py": "Hǎo de. Wèishēngjiān de dēng huài le, nǐmen néng bǎ tā xiū hǎo ma?", "es": "Vale. La luz del baño está rota, ¿podéis arreglarla?", "keywords": ["把", "修好"], "next": "n4", "goal": 2 },
+            { "zh": "还有，你们能先把洗衣机安装好吗？", "py": "Háiyǒu, nǐmen néng xiān bǎ xǐyījī ānzhuāng hǎo ma?", "es": "Otra cosa: ¿podéis instalar antes la lavadora?", "keywords": ["把", "安装好"], "next": "n4", "goal": 2 }
+          ],
+          "hint": "Pide un arreglo con 能把 + cosa + 修好 / 安装好 + 吗."
+        },
+        "n4": {
+          "npc": { "zh": "没问题，明天我让物业的人把它处理好。", "py": "Méi wèntí, míngtiān wǒ ràng wùyè de rén bǎ tā chǔlǐ hǎo.", "es": "Sin problema: mañana le digo a mantenimiento que lo solucione." },
+          "user": [
+            { "zh": "谢谢！那我们签合同吧。", "py": "Xièxie! Nà wǒmen qiān hétong ba.", "es": "¡Gracias! Pues firmemos el contrato.", "keywords": ["签", "合同"], "next": "n5", "goal": 3 }
+          ],
+          "hint": "Propón firmar: 我们签合同吧."
+        },
+        "n5": {
+          "npc": { "zh": "好，请在这儿写你的名字。押金和第一个月的房租，你把钱转给房东就行。", "py": "Hǎo, qǐng zài zhèr xiě nǐ de míngzi. Yājīn hé dì yī ge yuè de fángzū, nǐ bǎ qián zhuǎn gěi fángdōng jiù xíng.", "es": "Bien, escribe aquí tu nombre. La fianza y el primer mes, basta con que se los transfieras a la casera." },
+          "user": [
+            { "zh": "我已经把钱转给她了。你可以把钥匙交给我吗？", "py": "Wǒ yǐjīng bǎ qián zhuǎn gěi tā le. Nǐ kěyǐ bǎ yàoshi jiāogěi wǒ ma?", "es": "Ya le he hecho la transferencia. ¿Me puedes dar las llaves?", "keywords": ["钥匙", "交给", "给我"], "next": "n6", "goal": 3 },
+            { "zh": "好，我现在把钱转给她。钥匙呢？", "py": "Hǎo, wǒ xiànzài bǎ qián zhuǎn gěi tā. Yàoshi ne?", "es": "Vale, se lo transfiero ahora. ¿Y las llaves?", "keywords": ["钥匙", "转给"], "next": "n6", "goal": 3 }
+          ],
+          "hint": "Di que has pagado (把钱转给她了) y pide las llaves: 把钥匙交给我."
+        },
+        "n6": {
+          "npc": { "zh": "这是钥匙，一共两把。欢迎你搬进来！", "py": "Zhè shì yàoshi, yígòng liǎng bǎ. Huānyíng nǐ bān jinlai!", "es": "Aquí tienes las llaves: dos en total. ¡Bienvenido a tu nuevo piso!" },
+          "end": true,
+          "feedback": "Has cerrado un alquiler entero en chino: precio, fianza, gastos, un arreglo y la entrega de llaves. Fíjate en cómo 把 aparece en los encargos (把灯修好, 把洗衣机安装好) y al dar algo a alguien (把钱转给房东, 把钥匙交给我)."
+        }
+      }
+    },
+    {
+      "id": "b1-u01-moving-day",
+      "title": "El día de la mudanza",
+      "zh": "搬家那天",
+      "level": 2,
+      "setting": "Hoy Hugo se muda. Ha contratado una empresa de mudanzas y el operario está bajando las cosas del camión. Hugo tiene que decirle dónde va cada cosa. Tú (la app) eres el operario de la empresa de mudanzas.",
+      "role": "operario de mudanzas",
+      "roleZh": "搬家公司的工人",
+      "voice": "m",
+      "goals": ["Decir dónde va el sofá (把沙发放在…)", "Pedir que suban la nevera a la habitación pequeña (把冰箱搬到…)", "Pedir cuidado con lo frágil (别把…打破了)", "Pagar y dar las gracias"],
+      "vocab": ["把", "沙发", "放在", "冰箱", "搬到", "箱子", "别", "打破", "小心", "转给"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "你好！东西都在车上了。这个沙发放在哪儿？", "py": "Nǐ hǎo! Dōngxi dōu zài chē shang le. Zhège shāfā fàng zài nǎr?", "es": "¡Hola! Ya está todo en el camión. ¿Dónde pongo este sofá?" },
+          "user": [
+            { "zh": "请把沙发放在电视对面。", "py": "Qǐng bǎ shāfā fàng zài diànshì duìmiàn.", "es": "Ponga el sofá enfrente de la tele, por favor.", "keywords": ["把沙发", "放在"], "next": "n2", "goal": 0 },
+            { "zh": "你把它放在门旁边吧。", "py": "Nǐ bǎ tā fàng zài mén pángbiān ba.", "es": "Déjelo al lado de la puerta.", "keywords": ["把它", "放在"], "next": "n2", "goal": 0 }
+          ],
+          "hint": "Indica el sitio con 把 + 沙发 / 它 + 放在 + lugar."
+        },
+        "n2": {
+          "npc": { "zh": "好。冰箱很重，放在哪个房间？", "py": "Hǎo. Bīngxiāng hěn zhòng, fàng zài nǎge fángjiān?", "es": "Vale. La nevera pesa mucho: ¿en qué habitación la dejo?" },
+          "user": [
+            { "zh": "请把冰箱搬到那个小房间里。", "py": "Qǐng bǎ bīngxiāng bāndào nàge xiǎo fángjiān li.", "es": "Llévela a la habitación pequeña, por favor.", "keywords": ["把冰箱", "搬到"], "next": "n3", "goal": 1 },
+            { "zh": "冰箱太大了，电梯能上去吗？", "py": "Bīngxiāng tài dà le, diàntī néng shàngqu ma?", "es": "La nevera es muy grande, ¿cabe en el ascensor?", "keywords": ["电梯"], "next": "n2b" }
+          ],
+          "hint": "Di adónde va: 把冰箱搬到 + habitación. O pregunta por el ascensor (电梯)."
+        },
+        "n2b": {
+          "npc": { "zh": "没问题，电梯很大。你想把它搬到哪儿？", "py": "Méi wèntí, diàntī hěn dà. Nǐ xiǎng bǎ tā bāndào nǎr?", "es": "Sin problema, el ascensor es grande. ¿Adónde quieres que la lleve?" },
+          "user": [
+            { "zh": "把它搬到那个小房间里吧。", "py": "Bǎ tā bāndào nàge xiǎo fángjiān li ba.", "es": "Llévela a la habitación pequeña.", "keywords": ["搬到", "把它"], "next": "n3", "goal": 1 }
+          ],
+          "hint": "把它搬到 + lugar."
+        },
+        "n3": {
+          "npc": { "zh": "好的。这几个箱子里是什么？", "py": "Hǎo de. Zhè jǐ ge xiāngzi li shì shénme?", "es": "Muy bien. ¿Qué hay en estas cajas?" },
+          "user": [
+            { "zh": "里面是杯子和盘子，请小心，别把它们打破了。", "py": "Lǐmiàn shì bēizi hé pánzi, qǐng xiǎoxīn, bié bǎ tāmen dǎpò le.", "es": "Vasos y platos: cuidado, no los rompa.", "keywords": ["别把", "打破", "小心"], "next": "n4", "goal": 2 },
+            { "zh": "都是书，很重。你把它们放在书架旁边就行。", "py": "Dōu shì shū, hěn zhòng. Nǐ bǎ tāmen fàng zài shūjià pángbiān jiù xíng.", "es": "Son todo libros, pesan mucho. Déjelas junto a la estantería.", "keywords": ["书", "放在"], "next": "n3b" }
+          ],
+          "hint": "Explica qué hay y pide cuidado: 别把它们打破了."
+        },
+        "n3b": {
+          "npc": { "zh": "好。那个小箱子呢？好像很轻。", "py": "Hǎo. Nàge xiǎo xiāngzi ne? Hǎoxiàng hěn qīng.", "es": "Vale. ¿Y esa caja pequeña? Parece que pesa poco." },
+          "user": [
+            { "zh": "那里面是杯子，请小心，别把它们打破了。", "py": "Nà lǐmiàn shì bēizi, qǐng xiǎoxīn, bié bǎ tāmen dǎpò le.", "es": "Ahí van los vasos: cuidado, no los rompa.", "keywords": ["别把", "打破", "小心"], "next": "n4", "goal": 2 }
+          ],
+          "hint": "Pide cuidado con lo frágil: 别把它们打破了."
+        },
+        "n4": {
+          "npc": { "zh": "放心吧。好了，东西都搬完了。一共八百块。", "py": "Fàngxīn ba. Hǎo le, dōngxi dōu bān wán le. Yígòng bābǎi kuài.", "es": "Tranquilo. Listo, ya está todo. Son ochocientos yuanes en total." },
+          "user": [
+            { "zh": "好，我现在用微信把钱转给你。", "py": "Hǎo, wǒ xiànzài yòng Wēixìn bǎ qián zhuǎn gěi nǐ.", "es": "Vale, ahora le hago la transferencia por WeChat.", "keywords": ["转给", "钱"], "next": "n5", "goal": 3 },
+            { "zh": "可以用支付宝支付吗？", "py": "Kěyǐ yòng Zhīfùbǎo zhīfù ma?", "es": "¿Se puede pagar con Alipay?", "keywords": ["支付宝", "支付"], "next": "n4b" }
+          ],
+          "hint": "Paga: 把钱转给你, o pregunta si se puede con Alipay (支付宝支付)."
+        },
+        "n4b": {
+          "npc": { "zh": "可以，你扫这个就行。", "py": "Kěyǐ, nǐ sǎo zhège jiù xíng.", "es": "Sí, escanea esto y listo." },
+          "user": [
+            { "zh": "好，钱已经付给你了。谢谢你！", "py": "Hǎo, qián yǐjīng fùgěi nǐ le. Xièxie nǐ!", "es": "Vale, ya le he pagado. ¡Muchas gracias!", "keywords": ["付给", "谢谢"], "next": "n5", "goal": 3 }
+          ],
+          "hint": "Confirma el pago (付给你了) y da las gracias."
+        },
+        "n5": {
+          "npc": { "zh": "收到了，谢谢！祝你在新家住得开心！", "py": "Shōudào le, xièxie! Zhù nǐ zài xīn jiā zhù de kāixīn!", "es": "¡Recibido, gracias! ¡Que seas feliz en tu casa nueva!" },
+          "end": true,
+          "feedback": "Has dirigido una mudanza con 把: dónde va cada cosa (把沙发放在…, 把冰箱搬到…), una advertencia (别把它们打破了) y el pago (把钱转给你). Recuerda: 别 / 能 / 请 van delante de 把, y el verbo siempre lleva algo detrás."
+        }
+      }
+    }
+  ]
+}

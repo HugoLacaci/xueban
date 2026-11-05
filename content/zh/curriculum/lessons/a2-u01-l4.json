@@ -1,0 +1,709 @@
+{
+  "id": "a2-u01-l4",
+  "title": "Mi primera vez: 第一次 y 次",
+  "zh": "我第一次看大海",
+  "goal": "Decir que es la primera vez que haces algo (第一次), cuántas veces lo has hecho (去过两次) y hablar de los puntos cardinales de China.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    {
+      "hanzi": "第一次",
+      "pinyin": "dì-yī cì",
+      "es": "la primera vez"
+    },
+    {
+      "hanzi": "东方",
+      "pinyin": "dōngfāng",
+      "es": "el este; Oriente"
+    },
+    {
+      "hanzi": "西方",
+      "pinyin": "xīfāng",
+      "es": "el oeste; Occidente",
+      "note": "西方人 = occidentales."
+    },
+    {
+      "hanzi": "南方",
+      "pinyin": "nánfāng",
+      "es": "el sur (de China)",
+      "note": "南方人 = gente del sur."
+    },
+    {
+      "hanzi": "北方",
+      "pinyin": "běifāng",
+      "es": "el norte (de China)"
+    },
+    {
+      "hanzi": "东北",
+      "pinyin": "Dōngběi",
+      "es": "noreste; el Nordeste de China",
+      "note": "Con mayúscula es la región (Manchuria)."
+    },
+    {
+      "hanzi": "西北",
+      "pinyin": "xīběi",
+      "es": "noroeste"
+    },
+    {
+      "hanzi": "西南",
+      "pinyin": "xīnán",
+      "es": "suroeste"
+    },
+    {
+      "hanzi": "东南",
+      "pinyin": "dōngnán",
+      "es": "sureste"
+    },
+    {
+      "hanzi": "海",
+      "pinyin": "hǎi",
+      "es": "mar"
+    },
+    {
+      "hanzi": "大海",
+      "pinyin": "dàhǎi",
+      "es": "el mar (abierto)"
+    },
+    {
+      "hanzi": "海边",
+      "pinyin": "hǎibiān",
+      "es": "la costa, la orilla del mar"
+    }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        {
+          "zh": "这是我第一次来中国。",
+          "py": "Zhè shì wǒ dì-yī cì lái Zhōngguó.",
+          "es": "Es la primera vez que vengo a China."
+        },
+        {
+          "zh": "我去过两次北京。",
+          "py": "Wǒ qùguo liǎng cì Běijīng.",
+          "es": "He estado dos veces en Pekín."
+        },
+        {
+          "zh": "上海在中国的东边，是南方。",
+          "py": "Shànghǎi zài Zhōngguó de dōngbian, shì nánfāng.",
+          "es": "Shanghái está en el este de China; es el sur."
+        }
+      ]
+    },
+    {
+      "type": "vocab",
+      "title": "Puntos cardinales y el mar",
+      "words": [
+        "第一次",
+        "东方",
+        "西方",
+        "南方",
+        "北方",
+        "东北",
+        "西北",
+        "西南",
+        "东南",
+        "海",
+        "大海",
+        "海边"
+      ]
+    },
+    {
+      "type": "phonetics-drill",
+      "title": "El tono de 一 en 第一次 y 一次",
+      "markdown": "**一** cambia de tono según lo que venga detrás, pero **no cuando es ordinal**:\n\n- **第一次** *dì-yī cì*: es «primero» → 一 **conserva el 1.º tono**.\n- **一次** *yí cì*: es «una (vez)» y va delante de 4.º → **yí**.\n- **一年** *yì nián*: delante de 1.º, 2.º o 3.º → **yì**.\n\nY en los puntos cardinales el orden es al revés que en español: **东北** *dōngběi* = «este-norte» → noreste.",
+      "items": [
+        {
+          "audio": "第一次",
+          "options": [
+            "dì-yī cì",
+            "dì-yí cì",
+            "dì-yì cì"
+          ],
+          "answer": 0,
+          "explain": "Ordinal: 一 no cambia, yī."
+        },
+        {
+          "audio": "一次",
+          "options": [
+            "yí cì",
+            "yī cì",
+            "yì cì"
+          ],
+          "answer": 0,
+          "explain": "Una vez: 一 + 4.º → yí."
+        },
+        {
+          "audio": "一年",
+          "options": [
+            "yì nián",
+            "yí nián",
+            "yī nián"
+          ],
+          "answer": 0,
+          "explain": "一 + 2.º → yì."
+        },
+        {
+          "audio": "东北",
+          "options": [
+            "dōngběi",
+            "dōngbèi",
+            "tōngběi"
+          ],
+          "answer": 0,
+          "explain": "d sin aire; 北 en 3.º."
+        },
+        {
+          "audio": "海边",
+          "options": [
+            "hǎibiān",
+            "hàibiān",
+            "hǎipiān"
+          ],
+          "answer": 0,
+          "explain": "b sin aire; p con aire."
+        }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": [
+        "海",
+        "第"
+      ],
+      "mnemonics": {
+        "海": "氵 (agua) + 每 (cada, da el sonido): el agua que está en todas partes → el mar.",
+        "第": "⺮ (bambú) + 弟 (hermano pequeño, orden): las tiras de bambú se ataban en orden → prefijo de los ordinales (第一, 第二…)."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "第一次 + V y V + 两次: la primera vez y cuántas veces",
+      "markdown": "**第一次** (la primera vez) es un tiempo: va **delante del verbo**, como 今天 o 去年:\n\n- 这是我**第一次**来中国。 → *Es mi primera vez en China.*\n- 我**第一次**吃火锅。 → *Es la primera vez que como hot pot.*\n\n**次** es el **clasificador de los verbos**: cuenta veces. **Número + 次** va **detrás del verbo**, en el hueco del **complemento**:\n\n- 我去过**两次**。 → *He ido dos veces.*\n- 我想再去**一次**。 → *Quiero ir otra vez.*\n\nSi hay un objeto que es un **lugar**, puede ir antes o después: 我去过北京两次 / 我去过两次北京. En el esqueleto ponemos el lugar en el objeto y 两次 en el complemento.\n\nEl orden cambia respecto al español: «**dos veces**» va al final en chino, pero «la primera vez» va delante del verbo.",
+      "focus": [
+        "time",
+        "complement"
+      ],
+      "compare": true,
+      "sentences": [
+        {
+          "slots": {
+            "subject": {
+              "zh": "这",
+              "py": "zhè"
+            },
+            "verb1": {
+              "zh": "是",
+              "py": "shì"
+            },
+            "object": {
+              "zh": "我第一次来中国",
+              "py": "wǒ dì-yī cì lái Zhōngguó"
+            }
+          },
+          "end": "。",
+          "es": "Es la primera vez que vengo a China."
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "我",
+              "py": "wǒ"
+            },
+            "time": {
+              "zh": "第一次",
+              "py": "dì-yī cì"
+            },
+            "verb1": {
+              "zh": "看",
+              "py": "kàn"
+            },
+            "object": {
+              "zh": "大海",
+              "py": "dàhǎi"
+            }
+          },
+          "end": "。",
+          "es": "Es la primera vez que veo el mar.",
+          "esOrder": [
+            {
+              "text": "Es la primera vez",
+              "slot": "time"
+            },
+            {
+              "text": "que veo",
+              "slot": "verb1"
+            },
+            {
+              "text": "el mar",
+              "slot": "object"
+            }
+          ]
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "我",
+              "py": "wǒ"
+            },
+            "verb1": {
+              "zh": "去过",
+              "py": "qùguo"
+            },
+            "object": {
+              "zh": "北京",
+              "py": "Běijīng"
+            },
+            "complement": {
+              "zh": "两次",
+              "py": "liǎng cì"
+            }
+          },
+          "end": "。",
+          "es": "He estado en Pekín dos veces.",
+          "esOrder": [
+            {
+              "text": "He estado",
+              "slot": "verb1"
+            },
+            {
+              "text": "en Pekín",
+              "slot": "object"
+            },
+            {
+              "text": "dos veces",
+              "slot": "complement"
+            }
+          ]
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "安娜",
+              "py": "Ānnà"
+            },
+            "time": {
+              "zh": "上个月",
+              "py": "shàng ge yuè"
+            },
+            "verb1": {
+              "zh": "去了",
+              "py": "qù le"
+            },
+            "object": {
+              "zh": "海边",
+              "py": "hǎibiān"
+            },
+            "complement": {
+              "zh": "一次",
+              "py": "yí cì"
+            }
+          },
+          "end": "。",
+          "es": "Ana fue una vez a la costa el mes pasado."
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "我",
+              "py": "wǒ"
+            },
+            "adverb": {
+              "zh": "还",
+              "py": "hái"
+            },
+            "aux": {
+              "zh": "想",
+              "py": "xiǎng"
+            },
+            "verb1": {
+              "zh": "去",
+              "py": "qù"
+            },
+            "complement": {
+              "zh": "一次",
+              "py": "yí cì"
+            }
+          },
+          "end": "。",
+          "es": "Quiero ir una vez más."
+        }
+      ],
+      "negative": [
+        {
+          "slots": {
+            "subject": {
+              "zh": "我",
+              "py": "wǒ"
+            },
+            "adverb": {
+              "zh": "没",
+              "py": "méi"
+            },
+            "verb1": {
+              "zh": "去过",
+              "py": "qùguo"
+            },
+            "object": {
+              "zh": "东北",
+              "py": "Dōngběi"
+            }
+          },
+          "end": "。",
+          "es": "No he estado nunca en el nordeste."
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "这",
+              "py": "zhè"
+            },
+            "adverb": {
+              "zh": "不",
+              "py": "bù"
+            },
+            "verb1": {
+              "zh": "是",
+              "py": "shì"
+            },
+            "object": {
+              "zh": "他第一次去南方",
+              "py": "tā dì-yī cì qù nánfāng"
+            }
+          },
+          "end": "。",
+          "es": "No es la primera vez que va al sur."
+        }
+      ],
+      "question": [
+        {
+          "slots": {
+            "subject": {
+              "zh": "你",
+              "py": "nǐ"
+            },
+            "verb1": {
+              "zh": "去过",
+              "py": "qùguo"
+            },
+            "object": {
+              "zh": "上海",
+              "py": "Shànghǎi"
+            },
+            "complement": {
+              "zh": "几次",
+              "py": "jǐcì"
+            }
+          },
+          "end": "？",
+          "es": "¿Cuántas veces has estado en Shanghái?"
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "这",
+              "py": "zhè"
+            },
+            "verb1": {
+              "zh": "是",
+              "py": "shì"
+            },
+            "object": {
+              "zh": "你第一次来中国",
+              "py": "nǐ dì-yī cì lái Zhōngguó"
+            },
+            "particle": {
+              "zh": "吗",
+              "py": "ma"
+            }
+          },
+          "end": "？",
+          "es": "¿Es tu primera vez en China?"
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "我两次去过北京。",
+          "right": "我去过北京两次。 / 我去过两次北京。",
+          "why": "Las veces (两次) van detrás del verbo, no delante."
+        },
+        {
+          "wrong": "我一次第来中国。",
+          "right": "我第一次来中国。",
+          "why": "第 va delante del número: 第一次."
+        },
+        {
+          "wrong": "北东",
+          "right": "东北",
+          "why": "En chino se dice primero este u oeste y luego norte o sur: 东北, 西南…"
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Primer fin de semana en la playa",
+      "lines": [
+        {
+          "speaker": "安娜",
+          "zh": "雨果，这是你第一次来中国吗？",
+          "py": "Yǔguǒ, zhè shì nǐ dì-yī cì lái Zhōngguó ma?",
+          "es": "Hugo, ¿es tu primera vez en China?"
+        },
+        {
+          "speaker": "雨果",
+          "zh": "对，第一次。你呢？",
+          "py": "Duì, dì-yī cì. Nǐ ne?",
+          "es": "Sí, la primera. ¿Y tú?"
+        },
+        {
+          "speaker": "安娜",
+          "zh": "我来过两次。第一次是去北方，在北京。",
+          "py": "Wǒ láiguo liǎng cì. Dì-yī cì shì qù běifāng, zài Běijīng.",
+          "es": "Yo he venido dos veces. La primera fui al norte, a Pekín."
+        },
+        {
+          "speaker": "雨果",
+          "zh": "北方冷吗？",
+          "py": "Běifāng lěng ma?",
+          "es": "¿Hace frío en el norte?"
+        },
+        {
+          "speaker": "安娜",
+          "zh": "冬天很冷！东北特别冷。上海是南方，没有那么冷。",
+          "py": "Dōngtiān hěn lěng! Dōngběi tèbié lěng. Shànghǎi shì nánfāng, méiyǒu nàme lěng.",
+          "es": "¡En invierno, mucho! En el nordeste hace un frío especial. Shanghái es el sur: no hace tanto frío."
+        },
+        {
+          "speaker": "雨果",
+          "zh": "上海有海边吗？我想看看大海。",
+          "py": "Shànghǎi yǒu hǎibiān ma? Wǒ xiǎng kànkan dàhǎi.",
+          "es": "¿Shanghái tiene playa? Quiero ver el mar."
+        },
+        {
+          "speaker": "安娜",
+          "zh": "有，在上海的东南边。坐地铁去要两个小时。",
+          "py": "Yǒu, zài Shànghǎi de dōngnán biān. Zuò dìtiě qù yào liǎng ge xiǎoshí.",
+          "es": "Sí, al sureste de Shanghái. En metro se tarda dos horas."
+        },
+        {
+          "speaker": "雨果",
+          "zh": "好，我们周末一起去吧！",
+          "py": "Hǎo, wǒmen zhōumò yìqǐ qù ba!",
+          "es": "¡Vale, vamos juntos el fin de semana!"
+        },
+        {
+          "speaker": "安娜",
+          "zh": "好！你第一次看这儿的大海，要多照相！",
+          "py": "Hǎo! Nǐ dì-yī cì kàn zhèr de dàhǎi, yào duō zhàoxiàng!",
+          "es": "¡Vale! Es la primera vez que ves el mar en China: ¡haz muchas fotos!"
+        }
+      ],
+      "notes": "En China la división 北方 / 南方 (al norte o al sur del río Yangtsé, más o menos) es muy importante: el norte come más trigo (fideos, jiaozi) y el sur más arroz, y en el sur muchas casas no tienen calefacción. Shanghái está justo en el límite, pero se considera 南方."
+    },
+    {
+      "type": "exercises",
+      "count": 16,
+      "bank": [
+        "g-measure-words",
+        "g-word-order",
+        "g-numbers"
+      ]
+    },
+    {
+      "type": "sentence-builder",
+      "items": [
+        {
+          "sentence": {
+            "slots": {
+              "subject": {
+                "zh": "这"
+              },
+              "verb1": {
+                "zh": "是"
+              },
+              "object": {
+                "zh": "我第一次来中国"
+              }
+            },
+            "end": "。",
+            "es": "Es mi primera vez en China."
+          }
+        },
+        {
+          "sentence": {
+            "slots": {
+              "subject": {
+                "zh": "我"
+              },
+              "verb1": {
+                "zh": "去过"
+              },
+              "object": {
+                "zh": "北京"
+              },
+              "complement": {
+                "zh": "两次"
+              }
+            },
+            "end": "。",
+            "es": "He estado dos veces en Pekín."
+          },
+          "distractors": [
+            "第"
+          ]
+        },
+        {
+          "sentence": {
+            "slots": {
+              "subject": {
+                "zh": "你"
+              },
+              "verb1": {
+                "zh": "去过"
+              },
+              "object": {
+                "zh": "海边"
+              },
+              "complement": {
+                "zh": "几次"
+              }
+            },
+            "end": "？",
+            "es": "¿Cuántas veces has ido a la costa?"
+          },
+          "distractors": [
+            "吗"
+          ]
+        },
+        {
+          "sentence": {
+            "slots": {
+              "subject": {
+                "zh": "我们"
+              },
+              "time": {
+                "zh": "明年"
+              },
+              "aux": {
+                "zh": "想"
+              },
+              "with": {
+                "zh": "跟小李一起"
+              },
+              "verb1": {
+                "zh": "去东北"
+              },
+              "verb2": {
+                "zh": "旅游"
+              },
+              "complement": {
+                "zh": "一次"
+              }
+            },
+            "end": "。",
+            "es": "El año que viene queremos ir una vez de turismo al nordeste con Xiao Li."
+          }
+        }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        {
+          "zh": "这是我第一次来中国。",
+          "py": "Zhè shì wǒ dì-yī cì lái Zhōngguó.",
+          "es": "Es mi primera vez en China."
+        },
+        {
+          "zh": "我去过两次北京。",
+          "py": "Wǒ qùguo liǎng cì Běijīng.",
+          "es": "He estado dos veces en Pekín."
+        },
+        {
+          "zh": "上海是南方。",
+          "py": "Shànghǎi shì nánfāng.",
+          "es": "Shanghái es el sur."
+        },
+        {
+          "zh": "我想去海边看大海。",
+          "py": "Wǒ xiǎng qù hǎibiān kàn dàhǎi.",
+          "es": "Quiero ir a la costa a ver el mar."
+        }
+      ],
+      "respond": [
+        {
+          "q": {
+            "zh": "这是你第一次来中国吗？",
+            "py": "Zhè shì nǐ dì-yī cì lái Zhōngguó ma?",
+            "es": "¿Es tu primera vez en China?"
+          },
+          "model": {
+            "zh": "对，这是我第一次来中国。",
+            "py": "Duì, zhè shì wǒ dì-yī cì lái Zhōngguó.",
+            "es": "Sí, es mi primera vez en China."
+          }
+        },
+        {
+          "q": {
+            "zh": "你去过北京几次？",
+            "py": "Nǐ qùguo Běijīng jǐ cì?",
+            "es": "¿Cuántas veces has estado en Pekín?"
+          },
+          "model": {
+            "zh": "我去过一次。",
+            "py": "Wǒ qùguo yí cì.",
+            "es": "He estado una vez."
+          }
+        }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Norte y sur",
+      "text": "中国很大。北京在北方，是中国的首都；上海在东边，人们说上海是南方。北方的冬天很冷，东北特别冷。南方的冬天没有那么冷，可是房间里很冷。西北和西南有很多山，景色很美。这是雨果第一次来中国，他去过两次北京，可是没去过西北和西南。他是西方人，他觉得东方很有意思。上个周末，他第一次去了上海的海边，在那儿看了大海。",
+      "es": "China es muy grande. Pekín está en el norte y es la capital; Shanghái está en el este, y la gente dice que Shanghái es el sur. Los inviernos del norte son muy fríos, y el nordeste es especialmente frío. Los inviernos del sur no son tan fríos, pero dentro de las casas hace mucho frío. En el noroeste y el suroeste hay muchas montañas y los paisajes son preciosos. Es la primera vez que Hugo viene a China: ha estado dos veces en Pekín, pero no ha ido ni al noroeste ni al suroeste. Es occidental y Oriente le parece muy interesante. El fin de semana pasado fue por primera vez a la costa de Shanghái y allí vio el mar.",
+      "questions": [
+        {
+          "q": "¿Qué zona es especialmente fría?",
+          "options": [
+            "东北",
+            "西南",
+            "上海"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "¿Cuántas veces ha estado Hugo en Pekín?",
+          "options": [
+            "两次",
+            "一次",
+            "没去过"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "¿Dónde hay muchas montañas?",
+          "options": [
+            "西北和西南",
+            "东北",
+            "上海"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "¿Qué hizo el fin de semana pasado?",
+          "options": [
+            "第一次去海边",
+            "去北京",
+            "去西北"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "type": "notes-growth"
+    }
+  ]
+}

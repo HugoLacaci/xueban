@@ -92,9 +92,33 @@ export function loadBank(id: string): Promise<Bank | null> {
   return cache.get(id)!;
 }
 
+/** Banco de una unidad; las del temario v2 sin banco propio usan el banco antiguo equivalente (a1-u09 → u05). */
 export async function loadUnitBank(unitId: string): Promise<Bank | null> {
   const id = unitId.startsWith("u0-") ? "u0" : unitId;
-  return loadBank(id);
+  const own = await loadBank(id);
+  if (own) return own;
+  const { UNIT_MAP } = await import("@/lib/course/migration");
+  const legacy = Object.entries(UNIT_MAP).find(([old, n]) => n === unitId && old !== "u0-pron" && old !== "u0-chars")?.[0];
+  return legacy ? loadBank(legacy) : null;
+}
+
+/**
+ * Ejercicios de bancos para una lección: `perBank` ítems de cada banco cuyos caracteres ya se conocen
+ * (`known`), en orden aleatorio estable. Los bancos de unidad del temario nuevo (a1-u05…) caen al banco antiguo
+ * equivalente si todavía no existen (`legacy`: id nuevo → id antiguo).
+ */
+export async function bankExercisesFor(ids: string[], known: Set<string>, count: number, rng: () => number, legacy: Record<string, string> = {}): Promise<Exercise[]> {
+  const banks = (await Promise.all(ids.map(async (id) => (await loadBank(id)) ?? (legacy[id] ? await loadBank(legacy[id]) : null)))).filter((b): b is Bank => Boolean(b));
+  if (!banks.length || count <= 0) return [];
+  const han = /[一-鿿]/g;
+  const fits = (it: BankItem) => Array.from(JSON.stringify([it.zh, it.lines, it.tokens, it.tiles, it.answers, it.text]).match(han) ?? []).every((c) => known.has(c));
+  const per = Math.max(1, Math.ceil(count / banks.length));
+  const out: Exercise[] = [];
+  for (const b of banks) {
+    const items = shuffle(b.items.filter(fits), rng).slice(0, per);
+    for (const it of items) out.push(...bankItemToExercises(it, b, rng).slice(0, 1));
+  }
+  return shuffle(out, rng).slice(0, count);
 }
 
 export async function loadGrammarBank(grammarId: string): Promise<Bank | null> {

@@ -1,0 +1,136 @@
+{
+  "id": "a1-u18-l4",
+  "title": "Montañas, lagos y un tifón: repaso de la unidad",
+  "zh": "台风要来了",
+  "goal": "Describir el paisaje y sus cambios con 了, proponer planes con …，怎么样？ y combinar en frases largas todo lo de la unidad.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "山", "pinyin": "shān", "es": "montaña", "note": "山上 = en la montaña." },
+    { "hanzi": "河", "pinyin": "hé", "es": "río", "note": "河边 = a la orilla del río." },
+    { "hanzi": "湖", "pinyin": "hú", "es": "lago", "note": "湖边 = a la orilla del lago." },
+    { "hanzi": "树", "pinyin": "shù", "es": "árbol", "note": "Clasificador 棵 (lo verás más adelante); de momento, 很多树." },
+    { "hanzi": "草", "pinyin": "cǎo", "es": "hierba, césped" },
+    { "hanzi": "台风", "pinyin": "táifēng", "es": "tifón", "note": "Fuera del HSK 1–3. Entre julio y septiembre llegan a Shanghái: se suspenden clases y metros." },
+    { "hanzi": "出去", "pinyin": "chūqu", "es": "salir (fuera)", "note": "Repaso de la U15." },
+    { "hanzi": "绿", "pinyin": "lǜ", "es": "verde", "note": "Repaso de la U10. 草绿了 = la hierba se ha puesto verde." }
+  ],
+  "extraVocab": ["台风"],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "山上的树都红了。", "py": "Shān shang de shù dōu hóng le.", "es": "Los árboles de la montaña ya se han puesto rojos." },
+        { "zh": "我们去湖边走走，怎么样？", "py": "Wǒmen qù hú biān zǒuzou, zěnmeyàng?", "es": "¿Qué tal si vamos a dar una vuelta por el lago?" },
+        { "zh": "台风要来了，我们不能出去了。", "py": "Táifēng yào lái le, wǒmen bù néng chūqu le.", "es": "Viene un tifón: ya no podemos salir." }
+      ]
+    },
+    { "type": "vocab", "title": "El paisaje", "words": ["山", "河", "湖", "树", "草", "台风", "出去", "绿"] },
+    {
+      "type": "phonetics-drill",
+      "title": "La h china: 湖, 河, 花",
+      "markdown": "La **h** del pinyin **sí suena**, y mucho: es casi una **jota** española suave, raspando un poco al fondo de la boca. 湖 *hú* suena parecido a «ju», 河 *hé* a «je» (con la *e* china, la de la garganta) y 花 *huā* a «jua».\n\nCuidado con 好 *hǎo*: es una jota + «ao», no «ao» a secas.",
+      "items": [
+        { "audio": "湖", "options": ["hú", "wú", "fú"], "answer": 0, "explain": "h = jota suave: «jú»." },
+        { "audio": "河", "options": ["hé", "hú", "gé"], "answer": 0, "explain": "hé, con la e china (en la garganta)." },
+        { "audio": "花", "options": ["huā", "huà", "wā"], "answer": 0, "explain": "huā, primer tono: alto y plano." },
+        { "audio": "红", "options": ["hóng", "hōng", "kóng"], "answer": 0, "explain": "红 hóng sube: segundo tono." },
+        { "audio": "台风", "options": ["táifēng", "dàifēng", "táihēng"], "answer": 0, "explain": "t con aire, y f de verdad (no h) en fēng." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["山", "河"],
+      "mnemonics": {
+        "山": "Dibujo de tres picos: el del centro, el más alto.",
+        "河": "氵 (tres gotas: agua) + 可 (que da el sonido, kě → hé): el agua que corre = río. Igual que 湖, 洗, 汉: todos llevan 氵."
+      }
+    },
+    {
+      "type": "explain",
+      "title": "Proponer un plan: …，怎么样？",
+      "markdown": "Ya conoces 怎么样 para preguntar «¿qué tal?» (天气怎么样？). Detrás de una **propuesta** sirve para pedir opinión: «¿qué te parece?».\n\n- 我们去湖边走走，**怎么样**？ ¿Qué tal si vamos a dar una vuelta por el lago?\n- 星期六去山上，**怎么样**？ ¿Y si vamos a la montaña el sábado?\n\nSe responde con 好啊！, 太好了！ o, si no te apetece, 我不想去 / 我不能去.\n\nRecuerda: 怎么样 nunca lleva 吗."
+    },
+    {
+      "type": "skeleton",
+      "title": "Repaso: el 了 del cambio con todos los huecos",
+      "markdown": "Juntamos lo de la unidad. El 了 del cambio va **siempre en el último hueco** (la partícula), por larga que sea la frase:\n\n- Cambio: 山上的树都红**了**。\n- A punto de pasar: 台风**快**来**了**。\n- «Ya no»: 我们**不**能出去**了**。\n\nY el **tema** puede ser largo: 山上的树, 河边的草, 湖边的花 (lugar + 的 + cosa).",
+      "focus": ["particle"],
+      "sentences": [
+        { "slots": { "subject": { "zh": "山上的树", "py": "shān shang de shù" }, "adverb": { "zh": "都", "py": "dōu" }, "verb1": { "zh": "红", "py": "hóng" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Los árboles de la montaña ya se han puesto rojos." },
+        { "slots": { "subject": { "zh": "河边的草", "py": "hé biān de cǎo" }, "verb1": { "zh": "绿", "py": "lǜ" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "La hierba de la orilla del río se ha puesto verde." },
+        { "slots": { "subject": { "zh": "台风", "py": "táifēng" }, "adverb": { "zh": "快", "py": "kuài" }, "verb1": { "zh": "来", "py": "lái" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "El tifón está a punto de llegar." },
+        { "slots": { "subject": { "zh": "湖边的花", "py": "hú biān de huā" }, "verb1": { "zh": "开", "py": "kāi" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Las flores del lago se han abierto." },
+        { "slots": { "time0": { "zh": "明天", "py": "míngtiān" }, "subject": { "zh": "我们", "py": "wǒmen" }, "adverb": { "zh": "不", "py": "bù" }, "aux": { "zh": "能", "py": "néng" }, "verb1": { "zh": "出去", "py": "chūqu" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Mañana ya no podemos salir." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "风", "py": "fēng" }, "adverb": { "zh": "不", "py": "bú" }, "verb1": { "zh": "大", "py": "dà" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Ya no hace tanto viento." },
+        { "slots": { "subject": { "zh": "我们", "py": "wǒmen" }, "adverb": { "zh": "不", "py": "bú" }, "verb1": { "zh": "去山上", "py": "qù shān shang" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Al final no vamos a la montaña." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "湖边的花", "py": "hú biān de huā" }, "verb1": { "zh": "开", "py": "kāi" }, "particle": { "zh": "了吗", "py": "le ma" } }, "end": "？", "es": "¿Ya se han abierto las flores del lago?" },
+        { "slots": { "subject": { "zh": "明天的天气", "py": "míngtiān de tiānqì" }, "verb1": { "zh": "怎么样", "py": "zěnmeyàng" } }, "end": "？", "es": "¿Qué tiempo hará mañana?" }
+      ],
+      "mistakes": [
+        { "wrong": "山上很多树。", "right": "山上有很多树。", "why": "Para decir que en un lugar hay algo hace falta 有 (U14)." },
+        { "wrong": "台风快来。", "right": "台风快来了。", "why": "快…了: el 了 no se puede quitar." },
+        { "wrong": "我们去湖边，怎么样吗？", "right": "我们去湖边，怎么样？", "why": "怎么样 ya es una pregunta: sin 吗." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Un plan para el fin de semana",
+      "lines": [
+        { "speaker": "安娜", "zh": "雨果，秋天了，树都红了。星期六我们去湖边走走，怎么样？", "py": "Yǔguǒ, qiūtiān le, shù dōu hóng le. Xīngqīliù wǒmen qù hú biān zǒuzou, zěnmeyàng?", "es": "Hugo, ya es otoño y los árboles se han puesto rojos. ¿Qué tal si el sábado vamos a dar una vuelta por el lago?" },
+        { "speaker": "雨果", "zh": "好啊！大卫也去吗？", "py": "Hǎo a! Dàwèi yě qù ma?", "es": "¡Vale! ¿David también viene?" },
+        { "speaker": "安娜", "zh": "他想去山上。湖边有花，山上有很多树。", "py": "Tā xiǎng qù shān shang. Hú biān yǒu huā, shān shang yǒu hěn duō shù.", "es": "Él quiere ir a la montaña. En el lago hay flores y en la montaña hay muchos árboles." },
+        { "speaker": "雨果", "zh": "那我们先去湖边，然后去山上吧。", "py": "Nà wǒmen xiān qù hú biān, ránhòu qù shān shang ba.", "es": "Pues vamos primero al lago y luego a la montaña." },
+        { "speaker": "安娜", "zh": "可以。网上说星期六是晴天，二十度。", "py": "Kěyǐ. Wǎngshang shuō xīngqīliù shì qíngtiān, èrshí dù.", "es": "Vale. En internet dice que el sábado hará sol y veinte grados." },
+        { "speaker": "雨果", "zh": "太好了！星期天呢？", "py": "Tài hǎo le! Xīngqītiān ne?", "es": "¡Genial! ¿Y el domingo?" },
+        { "speaker": "安娜", "zh": "星期天台风要来了，风很大，雨也很大。", "py": "Xīngqītiān táifēng yào lái le, fēng hěn dà, yǔ yě hěn dà.", "es": "El domingo llega un tifón: mucho viento y mucha lluvia." },
+        { "speaker": "雨果", "zh": "台风？那星期天我们不能出去了。", "py": "Táifēng? Nà xīngqītiān wǒmen bù néng chūqu le.", "es": "¿Un tifón? Entonces el domingo ya no podemos salir." },
+        { "speaker": "安娜", "zh": "对，我们在宿舍看电影吧！", "py": "Duì, wǒmen zài sùshè kàn diànyǐng ba!", "es": "Eso es: ¡veamos una película en la residencia!" }
+      ],
+      "notes": "星期天台风要来了: con un día concreto (星期天) se usa 要…了, no 快…了. Cuando llega un tifón fuerte, el móvil recibe un aviso oficial y la universidad suele suspender las clases."
+    },
+    { "type": "exercises", "count": 16, "bank": ["g-le", "u10", "g-word-order", "g-question-words"] },
+    {
+      "type": "sentence-builder",
+      "title": "Construye la frase completa",
+      "items": [
+        { "sentence": { "slots": { "time0": { "zh": "星期六上午" }, "subject": { "zh": "我们" }, "with": { "zh": "跟安娜一起" }, "verb1": { "zh": "去湖边" }, "verb2": { "zh": "看" }, "object": { "zh": "花" }, "particle": { "zh": "吧" } }, "end": "！", "es": "¡El sábado por la mañana vamos con Ana al lago a ver las flores!" }, "distractors": ["了"] },
+        { "sentence": { "slots": { "time0": { "zh": "今天下午" }, "subject": { "zh": "上海的风" }, "adverb": { "zh": "也" }, "verb1": { "zh": "大" }, "particle": { "zh": "了" } }, "end": "。", "es": "Esta tarde también se ha levantado viento en Shanghái." }, "distractors": ["很"] },
+        { "sentence": { "slots": { "subject": { "zh": "我" }, "time": { "zh": "明天" }, "aux": { "zh": "要" }, "verb1": { "zh": "去商场" }, "verb2": { "zh": "买" }, "object": { "zh": "一件大衣" } }, "end": "。", "es": "Mañana voy a ir al centro comercial a comprarme un abrigo." } },
+        { "sentence": { "slots": { "subject": { "zh": "我们" }, "time": { "zh": "现在" }, "adverb": { "zh": "不" }, "aux": { "zh": "能" }, "verb1": { "zh": "去山上" }, "verb2": { "zh": "看" }, "object": { "zh": "树" }, "particle": { "zh": "了" } }, "end": "。", "es": "Ahora ya no podemos ir a la montaña a ver los árboles." } },
+        { "sentence": { "slots": { "time0": { "zh": "今天晚上" }, "subject": { "zh": "北京的天气" }, "adverb": { "zh": "非常" }, "verb1": { "zh": "冷" } }, "end": "。", "es": "Esta noche hace muchísimo frío en Pekín." }, "distractors": ["是"] },
+        { "sentence": { "slots": { "time0": { "zh": "春天" }, "subject": { "zh": "湖边的花" }, "adverb": { "zh": "都" }, "verb1": { "zh": "开" }, "particle": { "zh": "了" } }, "end": "。", "es": "En primavera se abren todas las flores del lago." } }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "山上的树都红了。", "py": "Shān shang de shù dōu hóng le.", "es": "Los árboles de la montaña ya se han puesto rojos." },
+        { "zh": "我们去湖边走走，怎么样？", "py": "Wǒmen qù hú biān zǒuzou, zěnmeyàng?", "es": "¿Qué tal si vamos a dar una vuelta por el lago?" },
+        { "zh": "台风要来了，我们不能出去了。", "py": "Táifēng yào lái le, wǒmen bù néng chūqu le.", "es": "Viene un tifón: ya no podemos salir." },
+        { "zh": "河边的草绿了。", "py": "Hé biān de cǎo lǜ le.", "es": "La hierba de la orilla del río se ha puesto verde." }
+      ],
+      "respond": [
+        { "q": { "zh": "星期六我们去山上，怎么样？", "py": "Xīngqīliù wǒmen qù shān shang, zěnmeyàng?", "es": "¿Qué tal si vamos a la montaña el sábado?" }, "model": { "zh": "好啊！星期六是晴天吗？", "py": "Hǎo a! Xīngqīliù shì qíngtiān ma?", "es": "¡Vale! ¿Hará sol el sábado?" } },
+        { "q": { "zh": "台风要来了，你明天出去吗？", "py": "Táifēng yào lái le, nǐ míngtiān chūqu ma?", "es": "Viene un tifón, ¿mañana sales?" }, "model": { "zh": "不出去了，我在宿舍休息。", "py": "Bù chūqu le, wǒ zài sùshè xiūxi.", "es": "Ya no salgo: me quedo descansando en la residencia." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Un fin de semana de otoño",
+      "text": "十一月了，上海的秋天很漂亮。湖边的草很绿，山上的树红了。星期六天气很好，雨果和安娜去湖边看花。星期天台风来了，风很大，雨也很大。他们不能出去了，在宿舍看电影。",
+      "es": "Ya es noviembre y el otoño de Shanghái es precioso. La hierba del lago está muy verde y los árboles de la montaña se han puesto rojos. El sábado hizo muy buen tiempo y Hugo y Ana fueron al lago a ver las flores. El domingo llegó el tifón, con mucho viento y mucha lluvia. Ya no pudieron salir y vieron una película en la residencia.",
+      "questions": [
+        { "q": "¿De qué color están los árboles de la montaña?", "options": ["红", "绿", "白"], "answer": 0 },
+        { "q": "¿Qué hicieron el sábado?", "options": ["去湖边看花", "去山上", "在宿舍看电影"], "answer": 0 },
+        { "q": "¿Por qué no salieron el domingo?", "options": ["Por el tifón", "Porque nevaba", "Porque hacía calor"], "answer": 0 },
+        { "q": "¿Qué mes es?", "options": ["十一月", "七月", "三月"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

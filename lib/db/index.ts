@@ -19,6 +19,7 @@ import type {
   LegacyDailyStat,
   LegacyDictFavorite,
   LessonProgress,
+  LivingNoteAdd,
   Note,
   Reading,
   ReviewLog,
@@ -57,6 +58,8 @@ export class XuebanDB extends Dexie {
   itemAttempts!: EntityTable<ItemAttempt, "id">;
   /** v5: conversaciones con el tutor */
   chats!: EntityTable<Chat, "id">;
+  /** v6: aportaciones del usuario a los apuntes vivos */
+  livingNoteAdds!: EntityTable<LivingNoteAdd, "id">;
   /** v5: fotos, audios y dibujos de los apuntes */
   assets!: EntityTable<Asset, "id">;
 
@@ -154,6 +157,8 @@ export class XuebanDB extends Dexie {
             Object.assign(row, legacyNoteToV5(row));
           });
       });
+    // v6: aportaciones del usuario a los apuntes vivos (tabla propia; el contenido base va en JSON versionado).
+    this.version(6).stores({ livingNoteAdds: "id, lang, noteId, updatedAt, [lang+noteId]" });
   }
 }
 

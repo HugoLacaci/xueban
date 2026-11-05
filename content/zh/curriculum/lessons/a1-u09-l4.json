@@ -1,0 +1,136 @@
+{
+  "id": "a1-u09-l4",
+  "title": "En el restaurante: ¿té o agua? (还是 y 请)",
+  "zh": "茶还是水？",
+  "goal": "Pedir en un restaurante: preguntar con A 还是 B, pedir con 请给我… y pedir la cuenta.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "还是", "pinyin": "háishi", "es": "o (en preguntas de elección)", "note": "Solo en preguntas: 茶还是水？ No lleva 吗." },
+    { "hanzi": "服务员", "pinyin": "fúwùyuán", "es": "camarero, camarera; dependiente", "note": "Se usa para llamarle: «服务员！». Es normal, no es descortés." },
+    { "hanzi": "菜单", "pinyin": "càidān", "es": "carta, menú", "note": "Cada vez más, la carta es un código QR en la mesa." },
+    { "hanzi": "位", "pinyin": "wèi", "es": "(clasificador cortés de personas)", "note": "几位？ = ¿cuántos son? Más cortés que 几个人." },
+    { "hanzi": "饭馆", "pinyin": "fànguǎn", "es": "restaurante (pequeño o mediano)", "note": "饭店 suele ser más grande o un hotel." },
+    { "hanzi": "点菜", "pinyin": "diǎn cài", "es": "pedir (platos en un restaurante)", "note": "Es el mismo 点 de las horas: aquí significa «señalar, elegir»." },
+    { "hanzi": "买单", "pinyin": "mǎidān", "es": "pedir la cuenta; pagar la cuenta", "note": "服务员，买单！ = ¡La cuenta, por favor! En el norte también 结账 jiézhàng." },
+    { "hanzi": "给", "pinyin": "gěi", "es": "dar", "note": "Adelanto: aquí solo en 请给我… («deme…»). 给 + persona + verbo llega en la unidad 20." }
+  ],
+  "extraVocab": ["买单", "点菜"],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "你要茶还是水？", "py": "Nǐ yào chá háishi shuǐ?", "es": "¿Quieres té o agua?" },
+        { "zh": "请给我菜单。", "py": "Qǐng gěi wǒ càidān.", "es": "Deme la carta, por favor." },
+        { "zh": "服务员，买单！", "py": "Fúwùyuán, mǎidān!", "es": "¡Camarero, la cuenta!" }
+      ]
+    },
+    { "type": "vocab", "title": "En el restaurante", "words": ["还是", "服务员", "菜单", "位", "饭馆", "点菜", "买单", "给"] },
+    {
+      "type": "phonetics-drill",
+      "title": "-n o -ng: 碗 wǎn / 汤 tāng",
+      "markdown": "Las finales nasales se distinguen por **dónde acaba la lengua**:\n\n- **-n** (碗 wǎn, 饭 fàn, 单 dān, 餐 cān): la **punta** de la lengua toca detrás de los dientes de arriba, como la *n* de «pan».\n- **-ng** (汤 tāng, 中 zhōng, 王 wáng, 瓶 píng): la punta se queda **abajo** y cierra la **parte de atrás** de la lengua, como la *n* de «tengo» o «banco». La vocal suena más oscura y larga.\n\nEn español la *n* final casi nunca es -ng, así que cuesta: exagera al principio. Truco: si dices la palabra con la boca abierta y la lengua quieta abajo, es -ng.",
+      "items": [
+        { "audio": "碗", "options": ["wǎn", "wǎng"], "answer": 0, "explain": "碗 wǎn (cuenco) frente a 网 wǎng (red, internet)." },
+        { "audio": "汤", "options": ["tāng", "tān"], "answer": 0, "explain": "汤 tāng es «sopa» (llegará en A2): -ng, lengua atrás." },
+        { "audio": "饭馆", "options": ["fànguǎn", "fàngguǎng", "fàngguǎn"], "answer": 0, "explain": "Las dos sílabas acaban en -n." },
+        { "audio": "中餐", "options": ["zhōngcān", "zhōngcāng", "zhōncān"], "answer": 0, "explain": "zhōng con -ng, cān con -n." },
+        { "audio": "菜单", "options": ["càidān", "càidāng"], "answer": 0, "explain": "单 dān acaba en -n." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["菜", "位"],
+      "mnemonics": {
+        "菜": "艹 (hierba) + 采 (coger con la mano de un árbol): hierbas que se cogen para comer → verdura, plato.",
+        "位": "亻 (persona) + 立 (estar de pie): una persona de pie en su sitio → puesto; clasificador cortés de personas."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "¿A o B? Preguntas con 还是",
+      "markdown": "Para ofrecer **dos opciones** se pone **还是** entre ellas, en el hueco donde iría la respuesta:\n\n- ¿Qué? → en el **objeto**: 你要**茶还是水**？\n- ¿Cuándo? → en el **tiempo**: 我们**中午还是晚上**去？\n- ¿Quién? → en el **sujeto**: **你还是他**是老师？\n\nReglas:\n\n1. Una pregunta con 还是 **ya es pregunta**: **no lleva 吗**.\n2. 还是 es solo para **preguntar**. En frases afirmativas, «o» es 或者 (lo verás en A2).\n3. No lo confundas con **和**: 茶**和**水 = té *y* agua (las dos cosas).\n\nLa respuesta es una de las dos opciones, en el mismo hueco: 我要**茶**.",
+      "focus": ["object", "time"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "要", "py": "yào" }, "object": { "zh": "茶还是水", "py": "chá háishi shuǐ" } }, "end": "？", "es": "¿Quieres té o agua?" },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "aux": { "zh": "想", "py": "xiǎng" }, "verb1": { "zh": "吃", "py": "chī" }, "object": { "zh": "中餐还是西餐", "py": "zhōngcān háishi xīcān" } }, "end": "？", "es": "¿Te apetece comida china u occidental?" },
+        { "slots": { "subject": { "zh": "我们", "py": "wǒmen" }, "time": { "zh": "中午还是晚上", "py": "zhōngwǔ háishi wǎnshang" }, "verb1": { "zh": "去饭馆", "py": "qù fànguǎn" } }, "end": "？", "es": "¿Vamos al restaurante a mediodía o por la noche?", "esOrder": [{ "text": "¿(Nosotros)", "slot": "subject" }, { "text": "vamos al restaurante", "slot": "verb1" }, { "text": "a mediodía o por la noche?", "slot": "time" }] },
+        { "slots": { "subject": { "zh": "他", "py": "tā" }, "verb1": { "zh": "要", "py": "yào" }, "object": { "zh": "一碗还是两碗", "py": "yì wǎn háishi liǎng wǎn" } }, "end": "？", "es": "¿Quiere un bol o dos?" },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "verb1": { "zh": "要", "py": "yào" }, "object": { "zh": "茶", "py": "chá" } }, "end": "。", "es": "(Respuesta) Quiero té." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "不", "py": "bú" }, "verb1": { "zh": "要", "py": "yào" }, "object": { "zh": "水", "py": "shuǐ" } }, "end": "。", "es": "No quiero agua." },
+        { "slots": { "subject": { "zh": "安娜", "py": "Ānnà" }, "adverb": { "zh": "不", "py": "bù" }, "aux": { "zh": "想", "py": "xiǎng" }, "verb1": { "zh": "吃", "py": "chī" }, "object": { "zh": "西餐", "py": "xīcān" } }, "end": "。", "es": "Ana no quiere comida occidental." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "要", "py": "yào" }, "object": { "zh": "茶", "py": "chá" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿Quieres té? (pregunta de sí o no)" },
+        { "slots": { "subject": { "zh": "你们", "py": "nǐmen" }, "aux": { "zh": "想", "py": "xiǎng" }, "verb1": { "zh": "吃", "py": "chī" }, "object": { "zh": "饺子还是包子", "py": "jiǎozi háishi bāozi" } }, "end": "？", "es": "¿Queréis jiaozi o baozi?" }
+      ],
+      "mistakes": [
+        { "wrong": "你要茶还是水吗？", "right": "你要茶还是水？", "why": "还是 ya convierte la frase en pregunta: no se añade 吗." },
+        { "wrong": "你要茶和水？", "right": "你要茶还是水？", "why": "和 = «y» (las dos cosas). Para elegir una, 还是." },
+        { "wrong": "我要茶还是水。", "right": "我要茶。", "why": "Se responde con una de las opciones; 还是 no sirve para «o» en afirmaciones." }
+      ]
+    },
+    {
+      "type": "explain",
+      "title": "Pedir con cortesía: 请 + verbo",
+      "markdown": "**请 + verbo** es la forma educada de pedir que alguien haga algo, como «haga el favor de…» o el «por favor» español. 请 va **al principio**, delante del verbo:\n\n| chino | pinyin | español |\n|---|---|---|\n| 请坐。 | Qǐng zuò. | Siéntese, por favor. |\n| 请进。 | Qǐng jìn. | Pase, por favor. |\n| 请给我菜单。 | Qǐng gěi wǒ càidān. | Deme la carta, por favor. |\n| 请给我一杯茶。 | Qǐng gěi wǒ yì bēi chá. | Póngame un té, por favor. |\n| 请给我们两碗米饭。 | Qǐng gěi wǒmen liǎng wǎn mǐfàn. | Tráiganos dos boles de arroz, por favor. |\n| 请再给我一瓶水。 | Qǐng zài gěi wǒ yì píng shuǐ. | Deme otra botella de agua, por favor. |\n\n- **给** + persona + cosa = «dar algo a alguien»: 给**我**一杯茶 (lit. «da a mí un vaso de té»).\n- Al **llegar**, el camarero pregunta **几位？** (¿cuántos son?) y se responde **两位** / **三位**, o simplemente **一个人**.\n- Para **pedir la cuenta**: 服务员，买单！ (Aquí no se usa 请: se llama al camarero y ya está.)\n- En la calle y en los restaurantes sencillos, 我要… es igual de normal; 请给我… suena algo más cuidado."
+    },
+    {
+      "type": "dialogue",
+      "title": "Cena en un restaurante de jiaozi",
+      "lines": [
+        { "speaker": "服务员", "zh": "你好！几位？", "py": "Nǐ hǎo! Jǐ wèi?", "es": "¡Hola! ¿Cuántos son?" },
+        { "speaker": "雨果", "zh": "两位。", "py": "Liǎng wèi.", "es": "Dos." },
+        { "speaker": "服务员", "zh": "请坐！这是菜单。", "py": "Qǐng zuò! Zhè shì càidān.", "es": "¡Siéntense! Aquí tienen la carta." },
+        { "speaker": "安娜", "zh": "谢谢。雨果，你想吃饺子还是面条儿？", "py": "Xièxie. Yǔguǒ, nǐ xiǎng chī jiǎozi háishi miàntiáor?", "es": "Gracias. Hugo, ¿te apetecen jiaozi o fideos?" },
+        { "speaker": "雨果", "zh": "饺子！你呢？", "py": "Jiǎozi! Nǐ ne?", "es": "¡Jiaozi! ¿Y tú?" },
+        { "speaker": "安娜", "zh": "我要面条儿。服务员，我们点菜！", "py": "Wǒ yào miàntiáor. Fúwùyuán, wǒmen diǎn cài!", "es": "Yo, fideos. ¡Camarera, vamos a pedir!" },
+        { "speaker": "服务员", "zh": "好。你们要什么？", "py": "Hǎo. Nǐmen yào shénme?", "es": "Muy bien. ¿Qué van a tomar?" },
+        { "speaker": "雨果", "zh": "请给我们一盘饺子、一碗面条儿。", "py": "Qǐng gěi wǒmen yì pán jiǎozi, yì wǎn miàntiáor.", "es": "Un plato de jiaozi y un bol de fideos, por favor." },
+        { "speaker": "服务员", "zh": "喝什么？茶还是水？", "py": "Hē shénme? Chá háishi shuǐ?", "es": "¿Y para beber? ¿Té o agua?" },
+        { "speaker": "安娜", "zh": "两杯茶，谢谢。……服务员，买单！", "py": "Liǎng bēi chá, xièxie. … Fúwùyuán, mǎidān!", "es": "Dos tés, gracias. … ¡Camarera, la cuenta!" }
+      ],
+      "notes": "En China no se espera a que el camarero venga: se le llama en voz alta con «服务员！», y es lo normal. Tampoco se deja propina. En muchos restaurantes el té se sirve gratis al sentarse."
+    },
+    { "type": "exercises", "count": 15, "bank": ["g-qing", "g-measure-words", "u05"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "你" }, "verb1": { "zh": "要" }, "object": { "zh": "茶还是水" } }, "end": "？", "es": "¿Quieres té o agua?" }, "distractors": ["吗"] },
+        { "sentence": { "slots": { "adverb": { "zh": "请" }, "verb1": { "zh": "给我" }, "object": { "zh": "一杯茶" } }, "end": "。", "es": "Póngame un té, por favor." }, "distractors": ["一茶"] },
+        { "sentence": { "slots": { "subject": { "zh": "你们" }, "aux": { "zh": "想" }, "verb1": { "zh": "吃" }, "object": { "zh": "中餐还是西餐" } }, "end": "？", "es": "¿Os apetece comida china u occidental?" }, "distractors": ["和"] },
+        { "sentence": { "slots": { "time0": { "zh": "明天中午" }, "subject": { "zh": "我们" }, "adverb": { "zh": "都" }, "aux": { "zh": "想" }, "verb1": { "zh": "去饭馆" }, "verb2": { "zh": "吃" }, "object": { "zh": "一盘很好吃的饺子" } }, "end": "。", "es": "Mañana a mediodía todos queremos ir al restaurante a comer un plato de jiaozi muy ricos." }, "distractors": ["还是"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "你要茶还是水？", "py": "Nǐ yào chá háishi shuǐ?", "es": "¿Quieres té o agua?" },
+        { "zh": "请给我菜单。", "py": "Qǐng gěi wǒ càidān.", "es": "Deme la carta, por favor." },
+        { "zh": "请给我们两碗米饭。", "py": "Qǐng gěi wǒmen liǎng wǎn mǐfàn.", "es": "Tráiganos dos boles de arroz, por favor." },
+        { "zh": "服务员，买单！", "py": "Fúwùyuán, mǎidān!", "es": "¡Camarero, la cuenta!" }
+      ],
+      "respond": [
+        { "q": { "zh": "你好！几位？", "py": "Nǐ hǎo! Jǐ wèi?", "es": "¡Hola! ¿Cuántos son?" }, "model": { "zh": "三位。", "py": "Sān wèi.", "es": "Tres." } },
+        { "q": { "zh": "你想吃饺子还是面条儿？", "py": "Nǐ xiǎng chī jiǎozi háishi miàntiáor?", "es": "¿Te apetecen jiaozi o fideos?" }, "model": { "zh": "我想吃饺子。", "py": "Wǒ xiǎng chī jiǎozi.", "es": "Me apetecen jiaozi." } },
+        { "q": { "zh": "喝什么？茶还是水？", "py": "Hē shénme? Chá háishi shuǐ?", "es": "¿Qué van a beber? ¿Té o agua?" }, "model": { "zh": "请给我一杯茶。", "py": "Qǐng gěi wǒ yì bēi chá.", "es": "Un té, por favor." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "El restaurante de al lado de la universidad",
+      "text": "晚上，雨果和安娜去饭馆吃饭。服务员说：“几位？请坐。”安娜问雨果：“你想吃饺子还是面条儿？”雨果要一盘饺子，安娜要一碗面条儿。他们不要水，要两杯茶。饺子很好吃，茶也很好喝。最后，安娜说：“服务员，买单！”",
+      "es": "Por la noche, Hugo y Ana van a cenar a un restaurante. La camarera dice: «¿Cuántos son? Siéntense». Ana le pregunta a Hugo: «¿Te apetecen jiaozi o fideos?». Hugo pide un plato de jiaozi y Ana un bol de fideos. No quieren agua: piden dos tés. Los jiaozi están muy ricos y el té también está muy bueno. Al final, Ana dice: «¡Camarera, la cuenta!».",
+      "questions": [
+        { "q": "¿Qué pide Ana para comer?", "options": ["一碗面条儿", "一盘饺子", "米饭"], "answer": 0 },
+        { "q": "¿Qué beben?", "options": ["两杯茶", "两瓶水", "牛奶"], "answer": 0 },
+        { "q": "¿Quién pide la cuenta?", "options": ["安娜", "雨果", "服务员"], "answer": 0 },
+        { "q": "¿Qué pregunta el camarero al llegar?", "options": ["几位？", "多少？", "你是谁？"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

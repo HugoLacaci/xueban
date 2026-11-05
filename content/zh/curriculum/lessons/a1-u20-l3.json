@@ -1,0 +1,133 @@
+{
+  "id": "a1-u20-l3",
+  "title": "¿Qué estás haciendo? 在 / 正在…呢",
+  "zh": "他正在打电话呢",
+  "goal": "Decir lo que alguien está haciendo ahora mismo con 在 / 正在 + verbo (+ 呢) y negarlo con 没(在).",
+  "minutes": 14,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "正在", "pinyin": "zhèngzài", "es": "estar (haciendo algo) justo ahora", "note": "正在 + verbo = «estar + gerundio», con más énfasis en «justo ahora» que 在." },
+    { "hanzi": "正", "pinyin": "zhèng", "es": "justo, precisamente (en ese momento)", "note": "正 + 在 + lugar + verbo: 他正在宿舍看书." },
+    { "hanzi": "照片", "pinyin": "zhàopiàn", "es": "foto", "note": "Clasificador 张: 一张照片." },
+    { "hanzi": "用", "pinyin": "yòng", "es": "usar, utilizar", "note": "用电脑 = usar el ordenador; 用 + cosa + verbo lo verás en la lección 5." },
+    { "hanzi": "网", "pinyin": "wǎng", "es": "red; internet", "note": "上网 = conectarse a internet; 网上 = en internet." },
+    { "hanzi": "呢", "pinyin": "ne", "es": "(partícula: acción en curso)", "note": "Repaso de la U1 (你呢？) con un uso nuevo: 我看书呢 = estoy leyendo." },
+    { "hanzi": "上网", "pinyin": "shàngwǎng", "es": "conectarse a internet, navegar", "note": "Repaso de la U12." },
+    { "hanzi": "电脑", "pinyin": "diànnǎo", "es": "ordenador", "note": "Repaso de la U10 (lit. «cerebro eléctrico»)." }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "你在做什么呢？", "py": "Nǐ zài zuò shénme ne?", "es": "¿Qué estás haciendo?" },
+        { "zh": "我正在看视频呢。", "py": "Wǒ zhèngzài kàn shìpín ne.", "es": "Estoy viendo un vídeo." },
+        { "zh": "他没在学习，他在上网。", "py": "Tā méi zài xuéxí, tā zài shàngwǎng.", "es": "No está estudiando: está en internet." }
+      ]
+    },
+    { "type": "vocab", "title": "Lo que está pasando ahora", "words": ["正在", "正", "照片", "用", "网", "呢", "上网", "电脑"] },
+    {
+      "type": "phonetics-drill",
+      "title": "zh y z en una sola palabra: 正在",
+      "markdown": "正在 *zhèngzài* junta los dos sonidos que más se confunden:\n\n- **zh**: lengua **doblada hacia atrás**, sin aire, como una «ch» suave y sonora. 正 *zhèng*, 照 *zhào*.\n- **z**: lengua **detrás de los dientes**, como «ts» en *pizza*. 在 *zài*, 做 *zuò*.\n\nPractica despacio: *zh-èng* (lengua atrás) → *z-ài* (lengua adelante).",
+      "items": [
+        { "audio": "正在", "options": ["zhèngzài", "zèngzhài", "zhèngzhài"], "answer": 0, "explain": "zh atrás + z adelante." },
+        { "audio": "照片", "options": ["zhàopiàn", "zàopiàn", "zhàobiàn"], "answer": 0, "explain": "zh + ao; p con aire." },
+        { "audio": "做", "options": ["zuò", "zhuò", "cuò"], "answer": 0, "explain": "z sin aire; c lleva aire." },
+        { "audio": "上网", "options": ["shàngwǎng", "sàngwǎng", "shàngwàng"], "answer": 0, "explain": "网 wǎng, tercer tono." },
+        { "audio": "用", "options": ["yòng", "yǒng", "wèng"], "answer": 0, "explain": "yong, cuarto tono: cae." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["网", "正"],
+      "mnemonics": {
+        "网": "Dibujo de una red: un marco y las cuerdas cruzadas dentro. La red de pescar se convirtió en la red de internet.",
+        "正": "一 (una meta, una línea) + 止 (pie): el pie que va derecho a la meta = recto, correcto, justo."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "在 / 正在 + verbo (+ 呢): estar haciendo",
+      "markdown": "Para decir que una acción **está en curso**, se pone **在** o **正在** delante del verbo, en el hueco de los **adverbios**, y muchas veces **呢** al final (partícula):\n\n- 我**在**看视频。 Estoy viendo un vídeo.\n- 王老师**正在**打电话**呢**。 La profesora está hablando por teléfono (justo ahora).\n- 我看书**呢**。 Solo con 呢 también vale (más coloquial).\n\nCon un **lugar**, el 在 del lugar ya basta, y 正 queda en el adverbio: 他**正** + **在宿舍** + 用电脑**呢**.\n\n**Negativa**: **没(在)** + verbo: 他**没在**打电话。 Nunca 不在 (eso significa «no está»).\n**Pregunta**: 你在做什么(呢)？ / 他在上课吗？\n\n⚠️ Con 在 / 正在 no se usa 了, y no sirve para estados (累, 高兴, 喜欢)."
+    ,
+      "focus": ["adverb", "particle"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "在", "py": "zài" }, "verb1": { "zh": "看", "py": "kàn" }, "object": { "zh": "视频", "py": "shìpín" } }, "end": "。", "es": "Estoy viendo un vídeo.", "esOrder": [{ "text": "Estoy", "slot": "adverb" }, { "text": "viendo", "slot": "verb1" }, { "text": "un vídeo", "slot": "object" }] },
+        { "slots": { "subject": { "zh": "王老师", "py": "Wáng lǎoshī" }, "adverb": { "zh": "正在", "py": "zhèngzài" }, "verb1": { "zh": "打", "py": "dǎ" }, "object": { "zh": "电话", "py": "diànhuà" }, "particle": { "zh": "呢", "py": "ne" } }, "end": "。", "es": "La profesora Wang está hablando por teléfono." },
+        { "slots": { "subject": { "zh": "小李", "py": "Xiǎo Lǐ" }, "adverb": { "zh": "在", "py": "zài" }, "verb1": { "zh": "上网", "py": "shàngwǎng" }, "particle": { "zh": "呢", "py": "ne" } }, "end": "。", "es": "Xiao Li está conectado a internet." },
+        { "slots": { "subject": { "zh": "他", "py": "tā" }, "adverb": { "zh": "正", "py": "zhèng" }, "place": { "zh": "在宿舍", "py": "zài sùshè" }, "verb1": { "zh": "用", "py": "yòng" }, "object": { "zh": "电脑", "py": "diànnǎo" }, "particle": { "zh": "呢", "py": "ne" } }, "end": "。", "es": "Está usando el ordenador en la residencia." },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "verb1": { "zh": "看", "py": "kàn" }, "object": { "zh": "照片", "py": "zhàopiàn" }, "particle": { "zh": "呢", "py": "ne" } }, "end": "。", "es": "Estoy mirando fotos." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "他", "py": "tā" }, "adverb": { "zh": "没在", "py": "méi zài" }, "verb1": { "zh": "打", "py": "dǎ" }, "object": { "zh": "电话", "py": "diànhuà" } }, "end": "。", "es": "No está hablando por teléfono." },
+        { "slots": { "subject": { "zh": "安娜", "py": "Ānnà" }, "adverb": { "zh": "没在", "py": "méi zài" }, "verb1": { "zh": "睡觉", "py": "shuìjiào" } }, "end": "。", "es": "Ana no está durmiendo." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "adverb": { "zh": "在", "py": "zài" }, "verb1": { "zh": "做", "py": "zuò" }, "object": { "zh": "什么", "py": "shénme" }, "particle": { "zh": "呢", "py": "ne" } }, "end": "？", "es": "¿Qué estás haciendo?" },
+        { "slots": { "subject": { "zh": "他们", "py": "tāmen" }, "adverb": { "zh": "在", "py": "zài" }, "verb1": { "zh": "上课", "py": "shàngkè" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿Están en clase (ahora)?" }
+      ],
+      "mistakes": [
+        { "wrong": "我正在累。", "right": "我很累。", "why": "Los estados y adjetivos no van con 在 / 正在: solo las acciones." },
+        { "wrong": "我在看视频了。", "right": "我在看视频呢。", "why": "La acción en curso se cierra con 呢, no con 了." },
+        { "wrong": "他不在打电话。", "right": "他没在打电话。", "why": "La negación del progresivo es 没(在). 他不在 significa «no está (aquí)»." }
+      ]
+    },
+    {
+      "type": "explain",
+      "title": "Los tres 在",
+      "markdown": "Ya tienes tres 在 distintos; el esqueleto te ayuda a distinguirlos:\n\n| 在 | Hueco | Ejemplo |\n|---|---|---|\n| **Verbo** «estar en» | Verbo 1 | 他**在**宿舍。 |\n| **在 + lugar** delante de otro verbo | Dónde | 他**在宿舍**看书。 |\n| **在 + verbo** «estar haciendo» | Adverbios | 他**在**看书。 |\n\nY se pueden combinar: 他**正在宿舍**看书**呢** (正 adverbio + 在宿舍 lugar)."
+    },
+    {
+      "type": "dialogue",
+      "title": "Una videollamada por WeChat",
+      "lines": [
+        { "speaker": "雨果", "zh": "喂，小李，你在做什么呢？", "py": "Wéi, Xiǎo Lǐ, nǐ zài zuò shénme ne?", "es": "Hola, Xiao Li, ¿qué estás haciendo?" },
+        { "speaker": "小李", "zh": "我在宿舍上网呢。你呢？", "py": "Wǒ zài sùshè shàngwǎng ne. Nǐ ne?", "es": "Estoy en la residencia con internet. ¿Y tú?" },
+        { "speaker": "雨果", "zh": "我在图书馆看书。大卫在吗？", "py": "Wǒ zài túshūguǎn kàn shū. Dàwèi zài ma?", "es": "Estoy leyendo en la biblioteca. ¿Está David?" },
+        { "speaker": "小李", "zh": "在，他正在用电脑看视频呢。", "py": "Zài, tā zhèngzài yòng diànnǎo kàn shìpín ne.", "es": "Sí, está viendo vídeos con el ordenador." },
+        { "speaker": "雨果", "zh": "他没在学习吗？明天有考试！", "py": "Tā méi zài xuéxí ma? Míngtiān yǒu kǎoshì!", "es": "¿No está estudiando? ¡Mañana hay examen!" },
+        { "speaker": "小李", "zh": "他说汉语视频也是学习！", "py": "Tā shuō Hànyǔ shìpín yě shì xuéxí!", "es": "¡Dice que los vídeos en chino también son estudiar!" },
+        { "speaker": "雨果", "zh": "好吧。你们看，我给你们发一张照片。", "py": "Hǎo ba. Nǐmen kàn, wǒ gěi nǐmen fā yì zhāng zhàopiàn.", "es": "Bueno. Mirad, os mando una foto." },
+        { "speaker": "小李", "zh": "收到了。图书馆里人很多，大家都在学习！", "py": "Shōudào le. Túshūguǎn li rén hěn duō, dàjiā dōu zài xuéxí!", "es": "Recibida. ¡La biblioteca está llena y todo el mundo está estudiando!" }
+      ],
+      "notes": "En época de exámenes, las bibliotecas de las universidades chinas se llenan desde primera hora; hay quien deja un libro en la mesa para «reservar» el sitio (占座)."
+    },
+    { "type": "exercises", "count": 15, "bank": ["g-zai", "g-ne", "u14"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "我" }, "adverb": { "zh": "正在" }, "verb1": { "zh": "上网" }, "particle": { "zh": "呢" } }, "end": "。", "es": "Estoy conectado a internet." }, "distractors": ["了"] },
+        { "sentence": { "slots": { "subject": { "zh": "你" }, "adverb": { "zh": "在" }, "verb1": { "zh": "做" }, "object": { "zh": "什么" }, "particle": { "zh": "呢" } }, "end": "？", "es": "¿Qué estás haciendo?" }, "distractors": ["吗"] },
+        { "sentence": { "slots": { "subject": { "zh": "他" }, "adverb": { "zh": "没在" }, "verb1": { "zh": "看" }, "object": { "zh": "电视" } }, "end": "。", "es": "No está viendo la tele." }, "distractors": ["不在"] },
+        { "sentence": { "slots": { "subject": { "zh": "大卫" }, "adverb": { "zh": "正" }, "with": { "zh": "跟小李一起" }, "place": { "zh": "在宿舍" }, "verb1": { "zh": "用电脑" }, "verb2": { "zh": "看" }, "object": { "zh": "中国电影" }, "particle": { "zh": "呢" } }, "end": "。", "es": "David está viendo una película china con Xiao Li en el ordenador de la residencia." } }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "你在做什么呢？", "py": "Nǐ zài zuò shénme ne?", "es": "¿Qué estás haciendo?" },
+        { "zh": "我正在看视频呢。", "py": "Wǒ zhèngzài kàn shìpín ne.", "es": "Estoy viendo un vídeo." },
+        { "zh": "王老师正在打电话呢。", "py": "Wáng lǎoshī zhèngzài dǎ diànhuà ne.", "es": "La profesora Wang está hablando por teléfono." },
+        { "zh": "他没在学习，他在上网。", "py": "Tā méi zài xuéxí, tā zài shàngwǎng.", "es": "No está estudiando: está en internet." }
+      ],
+      "respond": [
+        { "q": { "zh": "你在做什么呢？", "py": "Nǐ zài zuò shénme ne?", "es": "¿Qué estás haciendo?" }, "model": { "zh": "我在学习汉语呢。", "py": "Wǒ zài xuéxí Hànyǔ ne.", "es": "Estoy estudiando chino." } },
+        { "q": { "zh": "小李在睡觉吗？", "py": "Xiǎo Lǐ zài shuìjiào ma?", "es": "¿Xiao Li está durmiendo?" }, "model": { "zh": "没在睡觉，他在看照片。", "py": "Méi zài shuìjiào, tā zài kàn zhàopiàn.", "es": "No, está mirando fotos." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Sábado, ocho de la tarde",
+      "text": "现在是星期六晚上八点。雨果在宿舍做什么呢？他没在学习，他正在用电脑看西班牙的视频呢。小李在上网，大卫在给妈妈打电话。安娜呢？她在食堂吃饭呢。",
+      "es": "Son las ocho de la tarde del sábado. ¿Qué está haciendo Hugo en la residencia? No está estudiando: está viendo vídeos de España en el ordenador. Xiao Li está en internet y David está llamando a su madre. ¿Y Ana? Está cenando en el comedor.",
+      "questions": [
+        { "q": "¿Qué está haciendo Hugo?", "options": ["用电脑看视频", "学习", "打电话"], "answer": 0 },
+        { "q": "¿A quién está llamando David?", "options": ["妈妈", "安娜", "王老师"], "answer": 0 },
+        { "q": "¿Dónde está Ana?", "options": ["在食堂", "在宿舍", "在图书馆"], "answer": 0 },
+        { "q": "¿Cuál es la negación correcta?", "options": ["他没在学习。", "他不在学习。", "他没在学习了。"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

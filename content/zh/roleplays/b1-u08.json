@@ -1,0 +1,148 @@
+{
+  "unitId": "b1-u08",
+  "scenarios": [
+    {
+      "id": "b1-u08-debate",
+      "title": "Debate en clase: ¿residencia o piso?",
+      "zh": "课堂讨论",
+      "level": 3,
+      "setting": "En la clase de chino del máster, la profesora Wang abre un debate: ¿es mejor que los estudiantes extranjeros vivan en la residencia o en un piso fuera? Tú (la app) eres la profesora y le pides su opinión a Hugo.",
+      "role": "profesora Wang",
+      "roleZh": "王老师",
+      "voice": "f",
+      "goals": ["Dar tu opinión con 在我看来 / 对我来说", "Dar dos argumentos con 首先…其次 o 不但…而且", "Reconocer el argumento contrario con tacto (有道理, 不过)", "Cerrar con una conclusión (看来 / 既然…就)"],
+      "vocab": ["在我看来", "对我来说", "首先", "其次", "不但", "而且", "有道理", "不过", "看来", "既然"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "雨果，今天的话题是：留学生住宿舍好，还是住在外面好？在你看来呢？", "py": "Yǔguǒ, jīntiān de huàtí shì: liúxuéshēng zhù sùshè hǎo, háishi zhù zài wàimian hǎo? Zài nǐ kànlái ne?", "es": "Hugo, el tema de hoy es: ¿es mejor que los estudiantes extranjeros vivan en la residencia o fuera? ¿Tú qué opinas?" },
+          "user": [
+            { "zh": "在我看来，住宿舍比较好。", "py": "Zài wǒ kànlái, zhù sùshè bǐjiào hǎo.", "es": "En mi opinión, es mejor vivir en la residencia.", "keywords": ["在我看来", "宿舍"], "next": "n2", "goal": 0 },
+            { "zh": "对我来说，住在外面更好。", "py": "Duì wǒ lái shuō, zhù zài wàimian gèng hǎo.", "es": "Para mí, es mejor vivir fuera.", "keywords": ["对我来说", "外面"], "next": "n2b", "goal": 0 },
+            { "zh": "我个人觉得，两个都有好处。", "py": "Wǒ gèrén juéde, liǎng ge dōu yǒu hǎochu.", "es": "Personalmente, creo que las dos opciones tienen ventajas.", "keywords": ["个人", "好处"], "next": "n2c", "goal": 0 }
+          ],
+          "hint": "Empieza con un marco de opinión: 在我看来，… o 对我来说，… y di qué prefieres (住宿舍 / 住在外面)."
+        },
+        "n2": {
+          "npc": { "zh": "为什么？你能说说你的理由吗？", "py": "Wèishénme? Nǐ néng shuōshuo nǐ de lǐyóu ma?", "es": "¿Por qué? ¿Puedes explicar tus razones?" },
+          "user": [
+            { "zh": "首先，宿舍离教室很近；其次，在宿舍能认识很多朋友。", "py": "Shǒuxiān, sùshè lí jiàoshì hěn jìn; qícì, zài sùshè néng rènshi hěn duō péngyou.", "es": "En primer lugar, la residencia está muy cerca de las aulas; en segundo lugar, allí puedes conocer a mucha gente.", "keywords": ["首先", "其次"], "next": "n3", "goal": 1 },
+            { "zh": "住宿舍不但很方便，而且比较便宜。", "py": "Zhù sùshè búdàn hěn fāngbiàn, érqiě bǐjiào piányi.", "es": "Vivir en la residencia no solo es muy cómodo, sino también bastante barato.", "keywords": ["不但", "而且"], "next": "n3", "goal": 1 }
+          ],
+          "hint": "Da dos razones ordenadas: 首先…，其次… o súmalas con 不但…，而且…."
+        },
+        "n2b": {
+          "npc": { "zh": "为什么？很多人觉得住宿舍更方便。", "py": "Wèishénme? Hěn duō rén juéde zhù sùshè gèng fāngbiàn.", "es": "¿Por qué? Mucha gente cree que la residencia es más cómoda." },
+          "user": [
+            { "zh": "首先，在外面住比较自由；其次，可以自己做饭。", "py": "Shǒuxiān, zài wàimian zhù bǐjiào zìyóu; qícì, kěyǐ zìjǐ zuò fàn.", "es": "En primer lugar, viviendo fuera eres más libre; en segundo lugar, puedes cocinar tú.", "keywords": ["首先", "其次"], "next": "n3b", "goal": 1 },
+            { "zh": "住在外面不但比较安静，而且能多跟中国人交往。", "py": "Zhù zài wàimian búdàn bǐjiào ānjìng, érqiě néng duō gēn Zhōngguórén jiāowǎng.", "es": "Viviendo fuera no solo estás más tranquilo, sino que además puedes tratar más con chinos.", "keywords": ["不但", "而且"], "next": "n3b", "goal": 1 }
+          ],
+          "hint": "Defiende tu postura con dos argumentos: 首先…，其次… o 不但…，而且…."
+        },
+        "n2c": {
+          "npc": { "zh": "有意思。那一方面呢？另一方面呢？", "py": "Yǒu yìsi. Nà yì fāngmiàn ne? Lìng yì fāngmiàn ne?", "es": "Interesante. ¿Y por un lado…? ¿Y por otro…?" },
+          "user": [
+            { "zh": "一方面，宿舍很方便；另一方面，住在外面比较自由。", "py": "Yì fāngmiàn, sùshè hěn fāngbiàn; lìng yì fāngmiàn, zhù zài wàimian bǐjiào zìyóu.", "es": "Por un lado, la residencia es muy cómoda; por otro, fuera eres más libre.", "keywords": ["一方面", "另一方面"], "next": "n3", "goal": 1 }
+          ],
+          "hint": "Presenta las dos caras con 一方面…，另一方面…."
+        },
+        "n3": {
+          "npc": { "zh": "可是小李说，宿舍的房间太小，而且晚上很吵。你怎么看？", "py": "Kěshì Xiǎo Lǐ shuō, sùshè de fángjiān tài xiǎo, érqiě wǎnshang hěn chǎo. Nǐ zěnme kàn?", "es": "Pero Xiao Li dice que las habitaciones de la residencia son demasiado pequeñas y que por la noche hay mucho ruido. ¿Tú qué piensas?" },
+          "user": [
+            { "zh": "小李说得有道理，不过对留学生来说，方便更重要。", "py": "Xiǎo Lǐ shuō de yǒu dàolǐ, búguò duì liúxuéshēng lái shuō, fāngbiàn gèng zhòngyào.", "es": "Xiao Li tiene razón, pero para los estudiantes extranjeros la comodidad es más importante.", "keywords": ["有道理", "不过"], "next": "n4", "goal": 2 },
+            { "zh": "这个问题确实存在，我不否认。但是房间小一点儿也没关系。", "py": "Zhège wèntí quèshí cúnzài, wǒ bù fǒurèn. Dànshì fángjiān xiǎo yìdiǎnr yě méi guānxi.", "es": "Ese problema existe de verdad, no lo niego. Pero no pasa nada si la habitación es un poco pequeña.", "keywords": ["确实", "否认", "但是"], "next": "n4", "goal": 2 }
+          ],
+          "hint": "Reconoce primero al otro (说得有道理 / 确实) y luego matiza con 不过 o 但是."
+        },
+        "n3b": {
+          "npc": { "zh": "可是安娜说，住在外面房租太贵了。你怎么看？", "py": "Kěshì Ānnà shuō, zhù zài wàimian fángzū tài guì le. Nǐ zěnme kàn?", "es": "Pero Ana dice que fuera el alquiler es demasiado caro. ¿Tú qué piensas?" },
+          "user": [
+            { "zh": "安娜说得有道理，不过跟两三个人一起租就不太贵了。", "py": "Ānnà shuō de yǒu dàolǐ, búguò gēn liǎng-sān ge rén yìqǐ zū jiù bú tài guì le.", "es": "Ana tiene razón, pero si lo alquilas con dos o tres personas ya no es tan caro.", "keywords": ["有道理", "不过"], "next": "n4", "goal": 2 },
+            { "zh": "贵什么啊！离学校远一点儿的地方并不贵。", "py": "Guì shénme a! Lí xuéxiào yuǎn yìdiǎnr de dìfang bìng bú guì.", "es": "¿Caro? ¡Qué va! En zonas un poco más lejos de la universidad no es tan caro.", "keywords": ["什么啊", "并不"], "next": "n4b", "goal": 2 }
+          ],
+          "hint": "Reconoce el argumento (说得有道理) y matiza con 不过; o recházalo (X什么啊, 并不…), pero ojo: en clase es un poco brusco."
+        },
+        "n4": {
+          "npc": { "zh": "很好。那最后，你的结论是什么？", "py": "Hěn hǎo. Nà zuìhòu, nǐ de jiélùn shì shénme?", "es": "Muy bien. Para terminar, ¿cuál es tu conclusión?" },
+          "user": [
+            { "zh": "看来，住哪儿要看每个人的情况。", "py": "Kànlái, zhù nǎr yào kàn měi ge rén de qíngkuàng.", "es": "Por lo visto, dónde vivir depende de la situación de cada uno.", "keywords": ["看来"], "next": "n5", "goal": 3 },
+            { "zh": "既然大家的看法都有道理，我们就自己判断吧。", "py": "Jìrán dàjiā de kànfǎ dōu yǒu dàolǐ, wǒmen jiù zìjǐ pànduàn ba.", "es": "Ya que todas las opiniones tienen sentido, que cada uno juzgue por sí mismo.", "keywords": ["既然", "就"], "next": "n5", "goal": 3 }
+          ],
+          "hint": "Cierra con una conclusión: 看来，… o 既然…，就…."
+        },
+        "n4b": {
+          "npc": { "zh": "哈哈，你说得很直接！在课堂上可以说得客气一点儿。那你的结论是什么？", "py": "Hāhā, nǐ shuō de hěn zhíjiē! Zài kètáng shang kěyǐ shuō de kèqi yìdiǎnr. Nà nǐ de jiélùn shì shénme?", "es": "¡Ja, ja, qué directo! En clase puedes decirlo con un poco más de tacto. ¿Y tu conclusión?" },
+          "user": [
+            { "zh": "对不起。在我看来，住在外面虽然贵一点儿，但是值得。", "py": "Duìbuqǐ. Zài wǒ kànlái, zhù zài wàimian suīrán guì yìdiǎnr, dànshì zhíde.", "es": "Perdón. En mi opinión, vivir fuera es algo más caro, pero merece la pena.", "keywords": ["在我看来", "值得"], "next": "n5", "goal": 3 },
+            { "zh": "看来，住哪儿要看每个人的情况。", "py": "Kànlái, zhù nǎr yào kàn měi ge rén de qíngkuàng.", "es": "Por lo visto, dónde vivir depende de la situación de cada uno.", "keywords": ["看来"], "next": "n5", "goal": 3 }
+          ],
+          "hint": "Suaviza (对不起 / 在我看来) y cierra con tu conclusión."
+        },
+        "n5": {
+          "npc": { "zh": "说得很好！你不但说了自己的看法，而且很客观。", "py": "Shuō de hěn hǎo! Nǐ búdàn shuō le zìjǐ de kànfǎ, érqiě hěn kèguān.", "es": "¡Muy bien dicho! No solo has dado tu opinión, sino que además has sido muy objetivo." },
+          "end": true,
+          "feedback": "Has opinado con un marco (在我看来 / 对我来说), has ordenado tus argumentos (首先…其次 / 不但…而且), has reconocido al otro antes de matizar (说得有道理，不过…) y has cerrado con 看来 o 既然…就. Recuerda: los marcos van al principio y con pausa; X什么啊 es solo para amigos."
+        }
+      }
+    },
+    {
+      "id": "b1-u08-group",
+      "title": "No estoy de acuerdo (con tacto)",
+      "zh": "小组的计划",
+      "level": 3,
+      "setting": "Hugo y su compañera china Xiao Wang preparan una exposición de grupo. Xiao Wang propone un plan que a Hugo no le convence. Tú (la app) eres Xiao Wang.",
+      "role": "compañera de grupo",
+      "roleZh": "小王",
+      "voice": "f",
+      "goals": ["Comprobar lo que crees con 是不是 o recordar algo con 不是…吗", "Decir que no estás de acuerdo con cortesía", "Proponer otra cosa (我建议…)", "Llegar a un acuerdo con 既然…就"],
+      "vocab": ["是不是", "不是…吗", "同意", "建议", "既然", "就", "主意", "确定"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "雨果，我想今天晚上就把报告写完，明天上午给王老师看。", "py": "Yǔguǒ, wǒ xiǎng jīntiān wǎnshang jiù bǎ bàogào xiě wán, míngtiān shàngwǔ gěi Wáng lǎoshī kàn.", "es": "Hugo, quiero terminar la exposición esta noche y enseñársela a la profesora Wang mañana por la mañana." },
+          "user": [
+            { "zh": "报告不是下个星期才交吗？", "py": "Bàogào bú shì xià ge xīngqī cái jiāo ma?", "es": "¿Pero la exposición no se entregaba la semana que viene?", "keywords": ["不是", "吗"], "next": "n2", "goal": 0 },
+            { "zh": "你是不是有点儿着急？我们还有时间。", "py": "Nǐ shì bu shì yǒudiǎnr zháojí? Wǒmen hái yǒu shíjiān.", "es": "¿No tendrás un poco de prisa? Todavía tenemos tiempo.", "keywords": ["是不是"], "next": "n2", "goal": 0 }
+          ],
+          "hint": "Recuerda algo con 不是…吗？ o comprueba tu sospecha con 是不是."
+        },
+        "n2": {
+          "npc": { "zh": "是下个星期交，可是早一点儿写完比较好。你不同意吗？", "py": "Shì xià ge xīngqī jiāo, kěshì zǎo yìdiǎnr xiě wán bǐjiào hǎo. Nǐ bù tóngyì ma?", "es": "Sí, se entrega la semana que viene, pero es mejor terminarlo antes. ¿No estás de acuerdo?" },
+          "user": [
+            { "zh": "你说得有道理，不过我们的调查还没做完。", "py": "Nǐ shuō de yǒu dàolǐ, búguò wǒmen de diàochá hái méi zuò wán.", "es": "Tienes razón, pero aún no hemos terminado la encuesta.", "keywords": ["有道理", "不过"], "next": "n3", "goal": 1 },
+            { "zh": "我个人觉得，今天晚上写完不太现实。", "py": "Wǒ gèrén juéde, jīntiān wǎnshang xiě wán bú tài xiànshí.", "es": "Personalmente, creo que terminarlo esta noche no es muy realista.", "keywords": ["个人", "不太"], "next": "n3", "goal": 1 }
+          ],
+          "hint": "Discrepa con tacto: 你说得有道理，不过… o 我个人觉得…不太…."
+        },
+        "n3": {
+          "npc": { "zh": "那你有什么好主意？", "py": "Nà nǐ yǒu shénme hǎo zhǔyi?", "es": "¿Y tú qué propones?" },
+          "user": [
+            { "zh": "我建议我们先做完调查，星期五再写报告。", "py": "Wǒ jiànyì wǒmen xiān zuò wán diàochá, xīngqīwǔ zài xiě bàogào.", "es": "Propongo que primero terminemos la encuesta y el viernes escribamos la exposición.", "keywords": ["建议", "先", "再"], "next": "n4", "goal": 2 },
+            { "zh": "我建议今天晚上先问问班里的同学，明天再写。", "py": "Wǒ jiànyì jīntiān wǎnshang xiān wènwen bān li de tóngxué, míngtiān zài xiě.", "es": "Propongo que esta noche preguntemos primero a los compañeros de clase y que mañana lo escribamos.", "keywords": ["建议"], "next": "n4", "goal": 2 }
+          ],
+          "hint": "Propón otra cosa con 我建议… (y ordénala con 先…再…)."
+        },
+        "n4": {
+          "npc": { "zh": "好吧，这个主意不错。可是你确定星期五有时间吗？", "py": "Hǎo ba, zhège zhǔyi bú cuò. Kěshì nǐ quèdìng xīngqīwǔ yǒu shíjiān ma?", "es": "Vale, no es mala idea. ¿Pero estás seguro de que el viernes tendrás tiempo?" },
+          "user": [
+            { "zh": "确定，星期五我没有课。", "py": "Quèdìng, xīngqīwǔ wǒ méiyǒu kè.", "es": "Seguro, el viernes no tengo clase.", "keywords": ["确定"], "next": "n5", "goal": 3 },
+            { "zh": "当然！既然你同意了，我们就这么做吧。", "py": "Dāngrán! Jìrán nǐ tóngyì le, wǒmen jiù zhème zuò ba.", "es": "¡Claro! Ya que estás de acuerdo, hagámoslo así.", "keywords": ["既然", "就"], "next": "n6", "goal": 3 }
+          ],
+          "hint": "Confirma (确定 / 当然) y cierra el acuerdo con 既然…，就…."
+        },
+        "n5": {
+          "npc": { "zh": "那太好了。既然你星期五有时间，我们就星期五见吧。", "py": "Nà tài hǎo le. Jìrán nǐ xīngqīwǔ yǒu shíjiān, wǒmen jiù xīngqīwǔ jiàn ba.", "es": "Genial. Ya que el viernes tienes tiempo, nos vemos el viernes." },
+          "user": [
+            { "zh": "好，既然这样，今天晚上我就先问问同学。", "py": "Hǎo, jìrán zhèyàng, jīntiān wǎnshang wǒ jiù xiān wènwen tóngxué.", "es": "Vale; siendo así, esta noche pregunto yo primero a los compañeros.", "keywords": ["既然", "就"], "next": "n6", "goal": 3 }
+          ],
+          "hint": "Cierra con 既然这样，… 就…."
+        },
+        "n6": {
+          "npc": { "zh": "没问题！跟你合作真好，你说话很客气。", "py": "Méi wèntí! Gēn nǐ hézuò zhēn hǎo, nǐ shuōhuà hěn kèqi.", "es": "¡Perfecto! Da gusto trabajar contigo: hablas con mucho tacto." },
+          "end": true,
+          "feedback": "Has recordado algo con 不是…吗？ o comprobado tu sospecha con 是不是, has discrepado sin chocar (你说得有道理，不过… / 我个人觉得…), has propuesto otra cosa con 我建议… y has cerrado el acuerdo con 既然…就. En un grupo chino, reconocer primero la idea del otro es casi obligatorio."
+        }
+      }
+    }
+  ]
+}

@@ -6,7 +6,7 @@
 import { db } from "@/lib/db";
 import { getActiveLang } from "@/lib/languages/registry";
 import { seededRandom, shuffle } from "@/lib/utils";
-import { bankItemToExercises, GRAMMAR_BANKS, LISTENING_BANK_TYPES, loadBank, SPEAKING_BANK_TYPES, UNIT_BANKS, type Bank, type BankItem } from "./bank";
+import { bankItemToExercises, GRAMMAR_BANKS, LISTENING_BANK_TYPES, loadBank, loadUnitBank, SPEAKING_BANK_TYPES, UNIT_BANKS, type Bank, type BankItem } from "./bank";
 import type { Exercise, ExerciseType } from "./types";
 import { bankTypeToEngine } from "./bank";
 
@@ -91,10 +91,12 @@ export async function currentLevel(): Promise<number> {
 
 export async function loadBanksFor(opts: BankSessionOptions): Promise<Bank[]> {
   const ids: string[] = [];
-  if (opts.units?.length) ids.push(...opts.units.map((u) => (u.startsWith("u0-") ? "u0" : u)));
+  const units: string[] = [];
+  if (opts.units?.length) units.push(...opts.units.map((u) => (u.startsWith("u0-") ? "u0" : u)));
   if (opts.grammarIds?.length) ids.push(...opts.grammarIds.map((g) => `g-${g}`));
-  if (!ids.length) ids.push(...UNIT_BANKS);
-  const banks = await Promise.all(Array.from(new Set(ids)).map(loadBank));
+  if (!ids.length && !units.length) ids.push(...UNIT_BANKS, "a1-u04", "a1-u08");
+  // unidades del temario v2: banco propio o, si no existe, el antiguo equivalente
+  const banks = await Promise.all([...Array.from(new Set(ids)).map(loadBank), ...Array.from(new Set(units)).map(loadUnitBank)]);
   return banks.filter((b): b is Bank => Boolean(b));
 }
 

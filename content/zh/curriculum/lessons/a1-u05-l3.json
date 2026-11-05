@@ -1,0 +1,130 @@
+{
+  "id": "a1-u05-l3",
+  "title": "Años y fiestas: 今年, 明年, 春节",
+  "zh": "二〇二六年",
+  "goal": "Decir el año cifra a cifra, situar algo este año, el que viene o el pasado, preguntar «¿qué año?» y nombrar las grandes fiestas chinas.",
+  "minutes": 14,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "年", "pinyin": "nián", "es": "año", "note": "Los años se leen cifra a cifra: 二〇二六年." },
+    { "hanzi": "今年", "pinyin": "jīnnián", "es": "este año" },
+    { "hanzi": "明年", "pinyin": "míngnián", "es": "el año que viene" },
+    { "hanzi": "去年", "pinyin": "qùnián", "es": "el año pasado", "note": "去 = «ido»: el año que ya se fue." },
+    { "hanzi": "前年", "pinyin": "qiánnián", "es": "hace dos años" },
+    { "hanzi": "哪年", "pinyin": "nǎ nián", "es": "¿qué año?", "note": "También 哪一年." },
+    { "hanzi": "半年", "pinyin": "bànnián", "es": "medio año, seis meses" },
+    { "hanzi": "新年", "pinyin": "xīnnián", "es": "Año Nuevo", "note": "新年好！ = ¡Feliz Año Nuevo!" },
+    { "hanzi": "放假", "pinyin": "fàngjià", "es": "tener vacaciones, librar", "note": "Verbo: 我们放假 = tenemos vacaciones." },
+    { "hanzi": "春节", "pinyin": "Chūnjié", "es": "Fiesta de la Primavera (Año Nuevo chino)", "note": "Fecha del calendario lunar: cambia cada año (enero o febrero)." },
+    { "hanzi": "国庆节", "pinyin": "Guóqìngjié", "es": "Fiesta Nacional (1 de octubre)", "note": "国 (país) + 庆 (celebrar) + 节 (fiesta)." }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "今年是二〇二六年。", "py": "Jīnnián shì èr líng èr liù nián.", "es": "Este año es 2026." },
+        { "zh": "我明年去北京。", "py": "Wǒ míngnián qù Běijīng.", "es": "El año que viene voy a Pekín." },
+        { "zh": "国庆节是十月一号。", "py": "Guóqìngjié shì shíyuè yī hào.", "es": "La Fiesta Nacional es el 1 de octubre." }
+      ]
+    },
+    { "type": "vocab", "title": "Años y fiestas", "words": ["年", "今年", "明年", "去年", "前年", "哪年", "半年", "新年", "放假", "春节", "国庆节"] },
+    {
+      "type": "phonetics-drill",
+      "title": "Cuatro tonos delante de 年",
+      "markdown": "**年 nián** es 2.º tono (sube). Con las palabras de hoy practicas los cuatro tonos delante de un 2.º:\n\n| Palabra | Par | Cómo suena |\n|---|---|---|\n| 今年 *jīnnián* | 1 + 2 | alto y plano → sube |\n| 明年 *míngnián* | 2 + 2 | sube → sube (dos preguntas seguidas) |\n| 哪年 *nǎ nián* | 3 + 2 | baja y se queda abajo (medio 3.er tono) → sube |\n| 去年 *qùnián* | 4 + 2 | cae → sube, como un columpio |\n\n**Años**: se leen **cifra a cifra**, y el cero se escribe **〇** y se dice *líng*: 二〇二六年 *èr líng èr liù nián*. No se dice ✗两千零二十六年.",
+      "items": [
+        { "audio": "今年", "options": ["jīnnián", "jìnnián", "jīnniān"], "answer": 0, "explain": "1 + 2: 今 alto y plano, 年 sube." },
+        { "audio": "去年", "options": ["qúnián", "qùnián", "qǔnián"], "answer": 1, "explain": "4 + 2: 去 cae, 年 sube." },
+        { "audio": "明年", "options": ["mǐngnián", "míngniǎn", "míngnián"], "answer": 2, "explain": "2 + 2: los dos suben." },
+        { "audio": "哪年", "options": ["nǎ nián", "nà nián", "ná nián"], "answer": 0, "explain": "哪 (3.er, ¿cuál?) ≠ 那 (4.º, ese)." },
+        { "audio": "二〇二六年", "prompt": "¿Qué año es?", "options": ["2026", "2006", "1926"], "answer": 0, "explain": "èr líng èr liù: cifra a cifra." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["年", "春"],
+      "mnemonics": {
+        "年": "En los huesos oraculares era una persona (人) cargando un haz de cereal (禾) a la espalda: la cosecha, que llega una vez al año → año.",
+        "春": "Truco para recordarlo: 三 + 人 + 日, «tres personas al sol». En su origen eran brotes de hierba que asoman al sol: la primavera."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "El año: cifra a cifra y siempre delante",
+      "markdown": "**Años**: cifra a cifra + 年: 二〇二六年 (2026), 二〇〇〇年 (2000), 一九九八年 (1998). En lo escrito, el cero suele ir como **〇**.\n\n**La fecha completa**, de grande a pequeño:\n\n> **二〇二六年** · **十一月** · **四号** · **星期三** (2026 · noviembre · 4 · miércoles)\n\n**今年 / 明年 / 去年 / 前年** funcionan como 今天 / 明天 / 昨天 / 前天, y van en el hueco del **tiempo**, delante del verbo: 我**明年**去北京.\n\n**Preguntar**: 哪年 (¿qué año?): 你哪年去中国？ La respuesta va en el mismo hueco: 我二〇二七年去中国.\n\n**Fiestas**: 新年 (1 de enero), 春节 (Año Nuevo chino, en enero o febrero según la luna), 国庆节 (1 de octubre). En las dos últimas se tienen varios días de vacaciones: **放假**.",
+      "focus": ["time"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "time": { "zh": "明年", "py": "míngnián" }, "verb1": { "zh": "去北京", "py": "qù Běijīng" } }, "end": "。", "es": "Voy a Pekín el año que viene.", "esOrder": [{ "text": "(Yo)", "slot": "subject" }, { "text": "voy a Pekín", "slot": "verb1" }, { "text": "el año que viene", "slot": "time" }] },
+        { "slots": { "subject": { "zh": "今年", "py": "jīnnián" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "二〇二六年", "py": "èr líng èr liù nián" } }, "end": "。", "es": "Este año es 2026." },
+        { "slots": { "subject": { "zh": "我们", "py": "wǒmen" }, "time": { "zh": "十月一号", "py": "shíyuè yī hào" }, "verb1": { "zh": "放假", "py": "fàngjià" } }, "end": "。", "es": "El 1 de octubre tenemos vacaciones." },
+        { "slots": { "subject": { "zh": "安娜", "py": "Ānnà" }, "time": { "zh": "二〇二七年二月", "py": "èr líng èr qī nián èryuè" }, "verb1": { "zh": "去西安", "py": "qù Xī'ān" } }, "end": "。", "es": "Anna va a Xi'an en febrero de 2027." },
+        { "slots": { "subject": { "zh": "明年的春节", "py": "míngnián de Chūnjié" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "二月六号", "py": "èryuè liù hào" } }, "end": "。", "es": "El Año Nuevo chino del año que viene es el 6 de febrero." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "我们", "py": "wǒmen" }, "time": { "zh": "明天", "py": "míngtiān" }, "adverb": { "zh": "不", "py": "bú" }, "verb1": { "zh": "放假", "py": "fàngjià" } }, "end": "。", "es": "Mañana no tenemos vacaciones." },
+        { "slots": { "subject": { "zh": "去年", "py": "qùnián" }, "adverb": { "zh": "不", "py": "bú" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "二〇二四年", "py": "èr líng èr sì nián" } }, "end": "。", "es": "El año pasado no fue 2024." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "time": { "zh": "哪年", "py": "nǎ nián" }, "verb1": { "zh": "去中国", "py": "qù Zhōngguó" } }, "end": "？", "es": "¿En qué año vas a China?" },
+        { "slots": { "subject": { "zh": "春节", "py": "Chūnjié" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "几月几号", "py": "jǐ yuè jǐ hào" } }, "end": "？", "es": "¿Qué día es el Año Nuevo chino?" }
+      ],
+      "mistakes": [
+        { "wrong": "两千零二十六年", "right": "二〇二六年", "why": "Los años se leen cifra a cifra, no como una cantidad." },
+        { "wrong": "十一月四号二〇二六年", "right": "二〇二六年十一月四号", "why": "De grande a pequeño: el año va primero." },
+        { "wrong": "我去北京明年。", "right": "我明年去北京。", "why": "今年 / 明年 / 去年 van delante del verbo, como 明天." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "¿Cuándo tenemos vacaciones?",
+      "lines": [
+        { "speaker": "安娜", "zh": "老师，我们哪天放假？", "py": "Lǎoshī, wǒmen nǎ tiān fàngjià?", "es": "Profesora, ¿qué día empiezan las vacaciones?" },
+        { "speaker": "王老师", "zh": "春节放假。", "py": "Chūnjié fàngjià.", "es": "En el Año Nuevo chino." },
+        { "speaker": "雨果", "zh": "春节是几月几号？", "py": "Chūnjié shì jǐ yuè jǐ hào?", "es": "¿Y qué día es el Año Nuevo chino?" },
+        { "speaker": "王老师", "zh": "明年的春节是二月六号。", "py": "Míngnián de Chūnjié shì èryuè liù hào.", "es": "El del año que viene es el 6 de febrero." },
+        { "speaker": "安娜", "zh": "春节是中国的新年吗？", "py": "Chūnjié shì Zhōngguó de xīnnián ma?", "es": "¿El 春节 es el Año Nuevo de China?" },
+        { "speaker": "王老师", "zh": "对。一月一号也是新年。", "py": "Duì. Yīyuè yī hào yě shì xīnnián.", "es": "Sí. Y el 1 de enero también es Año Nuevo." },
+        { "speaker": "雨果", "zh": "国庆节呢？", "py": "Guóqìngjié ne?", "es": "¿Y la Fiesta Nacional?" },
+        { "speaker": "王老师", "zh": "国庆节是十月一号，我们放七天假。", "py": "Guóqìngjié shì shíyuè yī hào, wǒmen fàng qī tiān jià.", "es": "Es el 1 de octubre: tenemos siete días de vacaciones." },
+        { "speaker": "雨果", "zh": "七天！我去西安。", "py": "Qī tiān! Wǒ qù Xī'ān.", "es": "¡Siete días! Me voy a Xi'an." }
+      ],
+      "notes": "春节 y la «semana dorada» de 国庆节 son las épocas de más viajes del año: trenes y aviones se llenan semanas antes. 放假 se puede separar: 放七天假 = tener siete días de vacaciones."
+    },
+    { "type": "exercises", "count": 15, "bank": ["g-dates-time", "g-word-order", "u04"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "今年" }, "verb1": { "zh": "是" }, "object": { "zh": "二〇二六年" } }, "end": "。", "es": "Este año es 2026." }, "distractors": ["两千零二十六年"] },
+        { "sentence": { "slots": { "subject": { "zh": "我" }, "time": { "zh": "明年" }, "verb1": { "zh": "去北京" } }, "end": "。", "es": "Voy a Pekín el año que viene." } },
+        { "sentence": { "slots": { "subject": { "zh": "我们" }, "time": { "zh": "明天" }, "adverb": { "zh": "不" }, "verb1": { "zh": "放假" } }, "end": "。", "es": "Mañana no tenemos vacaciones." }, "distractors": ["没"] },
+        { "sentence": { "slots": { "subject": { "zh": "安娜和她的西班牙朋友" }, "time": { "zh": "二〇二七年二月" }, "adverb": { "zh": "都" }, "verb1": { "zh": "去西安" } }, "end": "。", "es": "Anna y sus amigos españoles van todos a Xi'an en febrero de 2027." }, "distractors": ["二月二〇二七年"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "今年是二〇二六年。", "py": "Jīnnián shì èr líng èr liù nián.", "es": "Este año es 2026." },
+        { "zh": "去年，今年，明年。", "py": "Qùnián, jīnnián, míngnián.", "es": "El año pasado, este año, el año que viene." },
+        { "zh": "国庆节是十月一号。", "py": "Guóqìngjié shì shíyuè yī hào.", "es": "La Fiesta Nacional es el 1 de octubre." },
+        { "zh": "新年好！", "py": "Xīnnián hǎo!", "es": "¡Feliz Año Nuevo!" }
+      ],
+      "respond": [
+        { "q": { "zh": "今年是哪年？", "py": "Jīnnián shì nǎ nián?", "es": "¿Qué año es este?" }, "model": { "zh": "今年是二〇二六年。", "py": "Jīnnián shì èr líng èr liù nián.", "es": "Este año es 2026." } },
+        { "q": { "zh": "你明年去哪儿？", "py": "Nǐ míngnián qù nǎr?", "es": "¿Adónde vas el año que viene?" }, "model": { "zh": "我明年去西安。", "py": "Wǒ míngnián qù Xī'ān.", "es": "El año que viene voy a Xi'an." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "El calendario chino",
+      "text": "今年是二〇二六年。去年是二〇二五年，前年是二〇二四年。明年是二〇二七年，明年的春节是二月六号。国庆节是十月一号，中国人放七天假。新年是一月一号。雨果明年七月去西班牙看家人。",
+      "es": "Este año es 2026. El año pasado fue 2025 y hace dos años, 2024. El año que viene es 2027, y el Año Nuevo chino será el 6 de febrero. La Fiesta Nacional es el 1 de octubre y los chinos tienen siete días de vacaciones. El Año Nuevo es el 1 de enero. El año que viene, en julio, Hugo va a España a ver a su familia.",
+      "questions": [
+        { "q": "¿Qué año fue 前年?", "options": ["2025", "2024", "2027"], "answer": 1 },
+        { "q": "¿Cuántos días de vacaciones hay en la Fiesta Nacional?", "options": ["Siete", "Uno", "Diez"], "answer": 0 },
+        { "q": "¿Cuándo va Hugo a España?", "options": ["En febrero de 2027", "En octubre de este año", "En julio del año que viene"], "answer": 2 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

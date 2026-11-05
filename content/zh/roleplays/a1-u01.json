@@ -1,0 +1,385 @@
+{
+  "unitId": "a1-u01",
+  "scenarios": [
+    {
+      "id": "a1-u01-make-friend",
+      "title": "Hacer un amigo en el campus",
+      "zh": "认识你很高兴",
+      "level": 1,
+      "setting": "Primer día en 交通大学. Hugo está en la cafetería del campus y un estudiante chino se sienta a su lado. Tú (la app) eres 王明.",
+      "role": "estudiante chino",
+      "roleZh": "王明",
+      "voice": "m",
+      "goals": ["Saludar", "Decir tu nombre", "Decir tu nacionalidad", "Presentar a Anna"],
+      "vocab": ["你好", "您好", "叫", "什么", "名字", "哪", "国", "西班牙", "学生", "同学", "也", "呢", "再见"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "你好！", "py": "Nǐ hǎo!", "es": "¡Hola!" },
+          "user": [
+            { "zh": "你好！", "py": "Nǐ hǎo!", "es": "¡Hola!", "keywords": ["你好"], "next": "n2", "goal": 0 },
+            { "zh": "您好！", "py": "Nín hǎo!", "es": "¡Hola! (formal)", "keywords": ["您好", "您"], "next": "n2", "goal": 0 }
+          ],
+          "hint": "Responde al saludo. 你好 vale entre estudiantes; 您好 es más formal (para profesores o mayores)."
+        },
+        "n2": {
+          "npc": { "zh": "我叫王明。你叫什么名字？", "py": "Wǒ jiào Wáng Míng. Nǐ jiào shénme míngzi?", "es": "Me llamo Wang Ming. ¿Cómo te llamas?" },
+          "user": [
+            { "zh": "我叫雨果。", "py": "Wǒ jiào Yǔguǒ.", "es": "Me llamo Hugo.", "keywords": ["我叫", "雨果"], "next": "n3", "goal": 1 },
+            { "zh": "对不起，你叫什么？", "py": "Duìbuqǐ, nǐ jiào shénme?", "es": "Perdona, ¿cómo te llamas?", "keywords": ["对不起", "什么"], "next": "n2r" }
+          ],
+          "hint": "Di tu nombre con 我叫… Si no has entendido el suyo, pídele que lo repita empezando con 对不起."
+        },
+        "n2r": {
+          "npc": { "zh": "王明。王，明。你呢？你叫什么名字？", "py": "Wáng Míng. Wáng, Míng. Nǐ ne? Nǐ jiào shénme míngzi?", "es": "Wang Ming. Wang, Ming. ¿Y tú? ¿Cómo te llamas?" },
+          "user": [
+            { "zh": "我叫雨果。", "py": "Wǒ jiào Yǔguǒ.", "es": "Me llamo Hugo.", "keywords": ["我叫", "雨果"], "next": "n3", "goal": 1 },
+            { "zh": "王明！你好。", "py": "Wáng Míng! Nǐ hǎo.", "es": "¡Wang Ming! Hola.", "keywords": ["王明", "你好"], "next": "n2r" }
+          ],
+          "hint": "Ahora que sabes su nombre, di el tuyo: 我叫雨果. Si solo repites el suyo, te lo volverá a preguntar."
+        },
+        "n3": {
+          "npc": { "zh": "雨果，认识你很高兴！你是哪国人？", "py": "Yǔguǒ, rènshi nǐ hěn gāoxìng! Nǐ shì nǎ guó rén?", "es": "Hugo, ¡encantado! ¿De qué país eres?" },
+          "user": [
+            { "zh": "我也很高兴。我是西班牙人。", "py": "Wǒ yě hěn gāoxìng. Wǒ shì Xībānyá rén.", "es": "Igualmente. Soy español.", "keywords": ["西班牙人", "西班牙"], "next": "n4", "goal": 2 },
+            { "zh": "我不是中国人。", "py": "Wǒ bú shì Zhōngguó rén.", "es": "No soy chino.", "keywords": ["不是", "中国人"], "next": "n3b" }
+          ],
+          "hint": "哪国人 = ¿de qué país? Responde con 我是 + país + 人. Puedes empezar con 我也很高兴 (igualmente)."
+        },
+        "n3b": {
+          "npc": { "zh": "对，你不是中国人！那你是哪国人？", "py": "Duì, nǐ bú shì Zhōngguó rén! Nà nǐ shì nǎ guó rén?", "es": "¡Claro, no eres chino! Entonces, ¿de qué país eres?" },
+          "user": [
+            { "zh": "我是西班牙人。", "py": "Wǒ shì Xībānyá rén.", "es": "Soy español.", "keywords": ["西班牙人", "西班牙"], "next": "n4", "goal": 2 },
+            { "zh": "你呢？你是中国人吗？", "py": "Nǐ ne? Nǐ shì Zhōngguó rén ma?", "es": "¿Y tú? ¿Eres chino?", "keywords": ["你呢", "中国人吗"], "next": "n3b" }
+          ],
+          "hint": "Primero di de qué país eres: 我是西班牙人. Luego podrás preguntarle a él."
+        },
+        "n4": {
+          "npc": { "zh": "我是中国人。你是学生吗？", "py": "Wǒ shì Zhōngguó rén. Nǐ shì xuésheng ma?", "es": "Yo soy chino. ¿Eres estudiante?" },
+          "user": [
+            { "zh": "是，我是学生。", "py": "Shì, wǒ shì xuésheng.", "es": "Sí, soy estudiante.", "keywords": ["我是学生", "是"], "next": "n5" },
+            { "zh": "对。你呢？你也是学生吗？", "py": "Duì. Nǐ ne? Nǐ yě shì xuésheng ma?", "es": "Sí. ¿Y tú? ¿También eres estudiante?", "keywords": ["你呢", "也是"], "next": "n5" }
+          ],
+          "hint": "Contesta con la respuesta corta 是 (o 对) y la frase entera, o devuélvele la pregunta con 你呢 / 你也是…吗."
+        },
+        "n5": {
+          "npc": { "zh": "我也是学生，我们是同学！那是谁？", "py": "Wǒ yě shì xuésheng, wǒmen shì tóngxué! Nà shì shéi?", "es": "Yo también soy estudiante, ¡somos compañeros! ¿Quién es esa?" },
+          "user": [
+            { "zh": "她叫安娜，她也是西班牙人。", "py": "Tā jiào Ānnà, tā yě shì Xībānyá rén.", "es": "Se llama Anna; ella también es española.", "keywords": ["安娜", "也是西班牙"], "next": "n6", "goal": 3 },
+            { "zh": "那是安娜，她也是学生。", "py": "Nà shì Ānnà, tā yě shì xuésheng.", "es": "Esa es Anna; también es estudiante.", "keywords": ["那是安娜", "也是学生"], "next": "n6", "goal": 3 }
+          ],
+          "hint": "Wang Ming señala a Anna. Preséntala con 那是安娜 / 她叫安娜 y añade algo con 也."
+        },
+        "n6": {
+          "npc": { "zh": "你好，安娜！……好，我们是同学。雨果，再见！", "py": "Nǐ hǎo, Ānnà! … Hǎo, wǒmen shì tóngxué. Yǔguǒ, zàijiàn!", "es": "¡Hola, Anna! … Bueno, somos compañeros. ¡Hugo, adiós!" },
+          "user": [
+            { "zh": "再见，王明！", "py": "Zàijiàn, Wáng Míng!", "es": "¡Adiós, Wang Ming!", "keywords": ["再见", "拜拜"], "next": "end1" },
+            { "zh": "王明，我们是朋友！", "py": "Wáng Míng, wǒmen shì péngyou!", "es": "Wang Ming, ¡somos amigos!", "keywords": ["朋友", "我们是朋友"], "next": "end2" }
+          ],
+          "hint": "Despídete con 再见 o dile que ya sois amigos (我们是朋友)."
+        },
+        "end1": {
+          "npc": { "zh": "再见！", "py": "Zàijiàn!", "es": "¡Adiós!" },
+          "end": true,
+          "feedback": "Has saludado, has dicho tu nombre y tu nacionalidad y has presentado a Anna: ya tienes un amigo chino. Recuerda que 哪国人 pide el país y se responde con país + 人."
+        },
+        "end2": {
+          "npc": { "zh": "对！我们是朋友。再见！", "py": "Duì! Wǒmen shì péngyou. Zàijiàn!", "es": "¡Sí! Somos amigos. ¡Adiós!" },
+          "end": true,
+          "feedback": "Misión cumplida: nombre, nacionalidad y presentación de Anna. Solo te faltó despedirte tú también con 再见; Wang Ming lo ha hecho por los dos."
+        }
+      }
+    },
+    {
+      "id": "a1-u01-greet-teacher",
+      "title": "Saludar a la profesora Li",
+      "zh": "李老师，您好！",
+      "level": 1,
+      "setting": "Pasillo de 交通大学, primer día de clase. Una profesora se acerca a Hugo, que está con 王明. Tú (la app) eres 李老师.",
+      "role": "profesora",
+      "roleZh": "李老师",
+      "voice": "f",
+      "goals": ["Saludar formalmente con 您好", "Decir tu nombre", "Presentar a tu compañero", "Despedirte"],
+      "vocab": ["您好", "老师", "学生", "叫", "名字", "对不起", "没关系", "同学", "朋友", "谁", "再见", "谢谢"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "你好！你是学生吗？", "py": "Nǐ hǎo! Nǐ shì xuésheng ma?", "es": "¡Hola! ¿Eres estudiante?" },
+          "user": [
+            { "zh": "老师，您好！我是学生。", "py": "Lǎoshī, nín hǎo! Wǒ shì xuésheng.", "es": "¡Hola, profesora! Soy estudiante.", "keywords": ["您好", "老师好"], "next": "n2", "goal": 0 },
+            { "zh": "你好！是，我是学生。", "py": "Nǐ hǎo! Shì, wǒ shì xuésheng.", "es": "¡Hola! Sí, soy estudiante.", "keywords": ["你好", "我是学生"], "next": "n2" }
+          ],
+          "hint": "A un profesor se le saluda con 您好 o 老师好, no con 你好. Confirma que eres estudiante."
+        },
+        "n2": {
+          "npc": { "zh": "我是李老师。你叫什么名字？", "py": "Wǒ shì Lǐ lǎoshī. Nǐ jiào shénme míngzi?", "es": "Soy la profesora Li. ¿Cómo te llamas?" },
+          "user": [
+            { "zh": "我叫雨果。", "py": "Wǒ jiào Yǔguǒ.", "es": "Me llamo Hugo.", "keywords": ["我叫", "雨果"], "next": "n3", "goal": 1 },
+            { "zh": "对不起，老师，什么？", "py": "Duìbuqǐ, lǎoshī, shénme?", "es": "Perdone, profesora, ¿qué?", "keywords": ["对不起", "什么"], "next": "n2r" }
+          ],
+          "hint": "Di tu nombre: 我叫雨果. Si no has entendido, 对不起，什么？"
+        },
+        "n2r": {
+          "npc": { "zh": "没关系。你——叫——什么——名字？", "py": "Méi guānxi. Nǐ — jiào — shénme — míngzi?", "es": "No pasa nada. ¿Cómo — te — llamas?" },
+          "user": [
+            { "zh": "我叫雨果。", "py": "Wǒ jiào Yǔguǒ.", "es": "Me llamo Hugo.", "keywords": ["我叫", "雨果"], "next": "n3", "goal": 1 },
+            { "zh": "您好，我是学生。", "py": "Nín hǎo, wǒ shì xuésheng.", "es": "Hola, soy estudiante.", "keywords": ["学生", "您好"], "next": "n2r" }
+          ],
+          "hint": "La profesora pregunta tu nombre más despacio: responde con 我叫 + nombre. Si dices otra cosa, lo volverá a preguntar."
+        },
+        "n3": {
+          "npc": { "zh": "雨果，你是哪国人？", "py": "Yǔguǒ, nǐ shì nǎ guó rén?", "es": "Hugo, ¿de qué país eres?" },
+          "user": [
+            { "zh": "我是西班牙人。", "py": "Wǒ shì Xībānyá rén.", "es": "Soy español.", "keywords": ["西班牙人", "西班牙"], "next": "n4" },
+            { "zh": "老师，您是中国人吗？", "py": "Lǎoshī, nín shì Zhōngguó rén ma?", "es": "Profesora, ¿usted es china?", "keywords": ["您是", "中国人吗"], "next": "n3r" }
+          ],
+          "hint": "Responde 我是西班牙人, o devuelve la pregunta con 您是…吗."
+        },
+        "n3r": {
+          "npc": { "zh": "是，我是中国人。你呢？", "py": "Shì, wǒ shì Zhōngguó rén. Nǐ ne?", "es": "Sí, soy china. ¿Y tú?" },
+          "user": [
+            { "zh": "我是西班牙人。", "py": "Wǒ shì Xībānyá rén.", "es": "Soy español.", "keywords": ["西班牙人", "西班牙"], "next": "n4" },
+            { "zh": "我不是中国人。", "py": "Wǒ bú shì Zhōngguó rén.", "es": "No soy chino.", "keywords": ["不是", "不是中国人"], "next": "n4" }
+          ],
+          "hint": "你呢 = ¿y tú? Di tu nacionalidad."
+        },
+        "n4": {
+          "npc": { "zh": "好。那是谁？", "py": "Hǎo. Nà shì shéi?", "es": "Bien. ¿Quién es ese? (señala a Wang Ming)" },
+          "user": [
+            { "zh": "他叫王明，我们是同学。", "py": "Tā jiào Wáng Míng, wǒmen shì tóngxué.", "es": "Se llama Wang Ming, somos compañeros.", "keywords": ["同学", "王明"], "next": "n5", "goal": 2 },
+            { "zh": "那是王明，我们是朋友。", "py": "Nà shì Wáng Míng, wǒmen shì péngyou.", "es": "Ese es Wang Ming; somos amigos.", "keywords": ["朋友", "那是王明"], "next": "n5", "goal": 2 },
+            { "zh": "那是老师。", "py": "Nà shì lǎoshī.", "es": "Ese es un profesor.", "keywords": ["老师", "是老师"], "next": "n4b" }
+          ],
+          "hint": "那是谁 = ¿quién es ese? Presenta a Wang Ming: 他叫王明 / 那是王明, y añade 我们是同学."
+        },
+        "n4b": {
+          "npc": { "zh": "老师？不对，他不是老师，他是学生！", "py": "Lǎoshī? Bú duì, tā bú shì lǎoshī, tā shì xuésheng!", "es": "¿Profesor? No, él no es profesor, ¡es estudiante!" },
+          "user": [
+            { "zh": "对不起！他叫王明，我们是同学。", "py": "Duìbuqǐ! Tā jiào Wáng Míng, wǒmen shì tóngxué.", "es": "¡Perdón! Se llama Wang Ming, somos compañeros.", "keywords": ["对不起", "同学"], "next": "n5", "goal": 2 },
+            { "zh": "不好意思，他是王明。", "py": "Bù hǎoyìsi, tā shì Wáng Míng.", "es": "Perdone, es Wang Ming.", "keywords": ["不好意思", "王明"], "next": "n5", "goal": 2 }
+          ],
+          "hint": "Discúlpate (对不起 / 不好意思) y presenta a Wang Ming."
+        },
+        "n5": {
+          "npc": { "zh": "好，认识你们很高兴。再见！", "py": "Hǎo, rènshi nǐmen hěn gāoxìng. Zàijiàn!", "es": "Bien, encantada de conoceros. ¡Adiós!" },
+          "user": [
+            { "zh": "老师，再见！", "py": "Lǎoshī, zàijiàn!", "es": "¡Adiós, profesora!", "keywords": ["再见", "拜拜"], "next": "end1", "goal": 3 },
+            { "zh": "谢谢老师！", "py": "Xièxie lǎoshī!", "es": "¡Gracias, profesora!", "keywords": ["谢谢", "谢谢老师"], "next": "end2" }
+          ],
+          "hint": "Despídete de la profesora: 老师，再见！"
+        },
+        "end1": {
+          "npc": { "zh": "再见，雨果！", "py": "Zàijiàn, Yǔguǒ!", "es": "¡Adiós, Hugo!" },
+          "end": true,
+          "feedback": "Perfecto: saludo formal, nombre, presentación de Wang Ming y despedida. Con profesores usa siempre 您好 y pon 老师 detrás del apellido (李老师)."
+        },
+        "end2": {
+          "npc": { "zh": "不客气。再见！", "py": "Bú kèqi. Zàijiàn!", "es": "De nada. ¡Adiós!" },
+          "end": true,
+          "feedback": "Has agradecido con 谢谢 (y ella responde 不客气), pero te faltó despedirte con 再见. La próxima vez: 老师，再见！"
+        }
+      }
+    },
+    {
+      "id": "a1-u01-wrong-person",
+      "title": "¿Eres Wang Ming?",
+      "zh": "你是王明吗？",
+      "level": 1,
+      "setting": "Biblioteca de 交通大学. Una estudiante china busca a Wang Ming, no lo conoce en persona y se acerca a Hugo. Tú (la app) eres esa estudiante, 李红.",
+      "role": "estudiante china",
+      "roleZh": "同学",
+      "voice": "f",
+      "goals": ["Decir que no eres Wang Ming", "Aceptar la disculpa con 没关系", "Decir tu nombre", "Señalar quién es Wang Ming"],
+      "vocab": ["是", "不是", "吗", "对不起", "没关系", "不好意思", "叫", "名字", "呢", "那", "谁", "同学"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "你好！你是王明吗？", "py": "Nǐ hǎo! Nǐ shì Wáng Míng ma?", "es": "¡Hola! ¿Eres Wang Ming?" },
+          "user": [
+            { "zh": "不是，我不是王明。", "py": "Bú shì, wǒ bú shì Wáng Míng.", "es": "No, no soy Wang Ming.", "keywords": ["不是", "不是王明"], "next": "n2", "goal": 0 },
+            { "zh": "是，我是王明。", "py": "Shì, wǒ shì Wáng Míng.", "es": "Sí, soy Wang Ming.", "keywords": ["我是王明"], "next": "n1b" }
+          ],
+          "hint": "Te confunden con Wang Ming. Niega con la respuesta corta 不是 y la frase entera: 不是，我不是王明."
+        },
+        "n1b": {
+          "npc": { "zh": "王明？你不是中国人！你是王明吗？", "py": "Wáng Míng? Nǐ bú shì Zhōngguó rén! Nǐ shì Wáng Míng ma?", "es": "¿Wang Ming? ¡Tú no eres chino! ¿Eres Wang Ming?" },
+          "user": [
+            { "zh": "对不起，我不是王明。", "py": "Duìbuqǐ, wǒ bú shì Wáng Míng.", "es": "Perdona, no soy Wang Ming.", "keywords": ["不是", "对不起"], "next": "n2", "goal": 0 },
+            { "zh": "对，我是西班牙人。", "py": "Duì, wǒ shì Xībānyá rén.", "es": "Cierto, soy español.", "keywords": ["西班牙", "西班牙人"], "next": "n2" }
+          ],
+          "hint": "Ahora en serio: di que no eres Wang Ming (我不是王明)."
+        },
+        "n2": {
+          "npc": { "zh": "不好意思！对不起！", "py": "Bù hǎoyìsi! Duìbuqǐ!", "es": "¡Uy, perdona! ¡Lo siento!" },
+          "user": [
+            { "zh": "没关系。", "py": "Méi guānxi.", "es": "No pasa nada.", "keywords": ["没关系", "没事"], "next": "n3", "goal": 1 },
+            { "zh": "不客气。", "py": "Bú kèqi.", "es": "De nada.", "keywords": ["不客气", "客气"], "next": "n2b" }
+          ],
+          "hint": "Ella se disculpa. A 对不起 y a 不好意思 se responde 没关系 (no pasa nada), no 不客气."
+        },
+        "n2b": {
+          "npc": { "zh": "不客气？不是“谢谢”，是“对不起”！", "py": "Bú kèqi? Bú shì “xièxie”, shì “duìbuqǐ”!", "es": "¿De nada? ¡No he dicho «gracias», he dicho «perdón»!" },
+          "user": [
+            { "zh": "对不起！没关系。", "py": "Duìbuqǐ! Méi guānxi.", "es": "¡Perdón! No pasa nada.", "keywords": ["没关系", "没事"], "next": "n3", "goal": 1 },
+            { "zh": "好。你叫什么名字？", "py": "Hǎo. Nǐ jiào shénme míngzi?", "es": "Vale. ¿Cómo te llamas?", "keywords": ["什么名字", "你叫"], "next": "n3b" }
+          ],
+          "hint": "不客气 responde a 谢谢; a 对不起 se responde 没关系."
+        },
+        "n3": {
+          "npc": { "zh": "你叫什么名字？", "py": "Nǐ jiào shénme míngzi?", "es": "¿Cómo te llamas?" },
+          "user": [
+            { "zh": "我叫雨果。", "py": "Wǒ jiào Yǔguǒ.", "es": "Me llamo Hugo.", "keywords": ["我叫", "雨果"], "next": "n4", "goal": 2 },
+            { "zh": "你呢？你叫什么名字？", "py": "Nǐ ne? Nǐ jiào shénme míngzi?", "es": "¿Y tú? ¿Cómo te llamas?", "keywords": ["你呢", "什么名字"], "next": "n3b" }
+          ],
+          "hint": "Di tu nombre con 我叫… o pregunta primero el suyo."
+        },
+        "n3b": {
+          "npc": { "zh": "我姓李，叫李红。你呢？", "py": "Wǒ xìng Lǐ, jiào Lǐ Hóng. Nǐ ne?", "es": "Me apellido Li, me llamo Li Hong. ¿Y tú?" },
+          "user": [
+            { "zh": "我叫雨果。", "py": "Wǒ jiào Yǔguǒ.", "es": "Me llamo Hugo.", "keywords": ["我叫", "雨果"], "next": "n4", "goal": 2 },
+            { "zh": "李红，你好！", "py": "Lǐ Hóng, nǐ hǎo!", "es": "¡Hola, Li Hong!", "keywords": ["你好", "李红"], "next": "n4" }
+          ],
+          "hint": "你呢 = ¿y tú? Es tu turno de decir tu nombre."
+        },
+        "n4": {
+          "npc": { "zh": "你是哪国人？", "py": "Nǐ shì nǎ guó rén?", "es": "¿De qué país eres?" },
+          "user": [
+            { "zh": "我是西班牙人。", "py": "Wǒ shì Xībānyá rén.", "es": "Soy español.", "keywords": ["西班牙", "西班牙人"], "next": "n5" },
+            { "zh": "我不是中国人，我是学生。", "py": "Wǒ bú shì Zhōngguó rén, wǒ shì xuésheng.", "es": "No soy chino, soy estudiante.", "keywords": ["不是", "学生"], "next": "n5" }
+          ],
+          "hint": "Responde con 我是 + país + 人."
+        },
+        "n5": {
+          "npc": { "zh": "好。王明是谁？", "py": "Hǎo. Wáng Míng shì shéi?", "es": "Vale. ¿Quién es Wang Ming?" },
+          "user": [
+            { "zh": "那是王明，我们是同学。", "py": "Nà shì Wáng Míng, wǒmen shì tóngxué.", "es": "Ese es Wang Ming; somos compañeros.", "keywords": ["那是", "那是王明"], "next": "end1", "goal": 3 },
+            { "zh": "王明是中国人，我们是朋友。", "py": "Wáng Míng shì Zhōngguó rén, wǒmen shì péngyou.", "es": "Wang Ming es chino; somos amigos.", "keywords": ["中国人", "朋友"], "next": "end2" }
+          ],
+          "hint": "Ella no conoce a Wang Ming. Señálalo con 那是… (ese es…)."
+        },
+        "end1": {
+          "npc": { "zh": "谢谢！王明，你好！", "py": "Xièxie! Wáng Míng, nǐ hǎo!", "es": "¡Gracias! ¡Hola, Wang Ming!" },
+          "end": true,
+          "feedback": "Muy bien: has negado con 不是, has aceptado la disculpa con 没关系, has dicho tu nombre y has señalado a Wang Ming con 那是."
+        },
+        "end2": {
+          "npc": { "zh": "好，谢谢。再见！", "py": "Hǎo, xièxie. Zàijiàn!", "es": "Vale, gracias. ¡Adiós!" },
+          "end": true,
+          "feedback": "Has descrito a Wang Ming, pero ella quería saber cuál es: para señalar a alguien usa 那是王明 (ese es Wang Ming)."
+        }
+      }
+    },
+    {
+      "id": "a1-u01-languages",
+      "title": "El vecino de la residencia",
+      "zh": "你说汉语吗？",
+      "level": 1,
+      "setting": "Residencia de estudiantes de 交通大学, la primera noche. Un chico chino llama a la puerta de la habitación de Hugo; 大卫 está dentro con él. Tú (la app) eres 小李, el vecino.",
+      "role": "vecino chino",
+      "roleZh": "小李",
+      "voice": "m",
+      "goals": ["Decir tu nombre", "Decir tu nacionalidad", "Decir qué idiomas hablas", "Presentar a David"],
+      "vocab": ["请进", "请坐", "姓", "叫", "哪国人", "说", "汉语", "英语", "西班牙语", "外语", "也", "美国人", "认识", "高兴"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "你好！请问，你是学生吗？", "py": "Nǐ hǎo! Qǐngwèn, nǐ shì xuésheng ma?", "es": "¡Hola! Perdona, ¿eres estudiante?" },
+          "user": [
+            { "zh": "是，我是学生。请进！", "py": "Shì, wǒ shì xuésheng. Qǐng jìn!", "es": "Sí, soy estudiante. ¡Pasa!", "keywords": ["请进", "我是学生"], "next": "n2" },
+            { "zh": "你好！对，我是学生。", "py": "Nǐ hǎo! Duì, wǒ shì xuésheng.", "es": "¡Hola! Sí, soy estudiante.", "keywords": ["对", "学生"], "next": "n2" }
+          ],
+          "hint": "Contesta con 是 / 对 y la frase completa. Si quieres ser amable, invítalo a pasar: 请进！"
+        },
+        "n2": {
+          "npc": { "zh": "我姓李，叫李明。大家叫我小李。你叫什么名字？", "py": "Wǒ xìng Lǐ, jiào Lǐ Míng. Dàjiā jiào wǒ Xiǎo Lǐ. Nǐ jiào shénme míngzi?", "es": "Me apellido Li y me llamo Li Ming. Todos me llaman Xiao Li. ¿Cómo te llamas?" },
+          "user": [
+            { "zh": "我叫雨果。请坐！", "py": "Wǒ jiào Yǔguǒ. Qǐng zuò!", "es": "Me llamo Hugo. ¡Siéntate!", "keywords": ["我叫", "雨果"], "next": "n3", "goal": 0 },
+            { "zh": "不好意思，你叫什么？", "py": "Bù hǎoyìsi, nǐ jiào shénme?", "es": "Perdona, ¿cómo te llamas?", "keywords": ["不好意思", "什么"], "next": "n2r" }
+          ],
+          "hint": "Di tu nombre con 我叫… Puedes ofrecerle asiento con 请坐."
+        },
+        "n2r": {
+          "npc": { "zh": "小李。李，明。你呢？", "py": "Xiǎo Lǐ. Lǐ, Míng. Nǐ ne?", "es": "Xiao Li. Li, Ming. ¿Y tú?" },
+          "user": [
+            { "zh": "我叫雨果。", "py": "Wǒ jiào Yǔguǒ.", "es": "Me llamo Hugo.", "keywords": ["我叫", "雨果"], "next": "n3", "goal": 0 },
+            { "zh": "小李，你好！", "py": "Xiǎo Lǐ, nǐ hǎo!", "es": "¡Hola, Xiao Li!", "keywords": ["小李", "你好"], "next": "n2r" }
+          ],
+          "hint": "你呢 te devuelve la pregunta: di tu nombre (我叫雨果)."
+        },
+        "n3": {
+          "npc": { "zh": "雨果，认识你很高兴！你是哪国人？", "py": "Yǔguǒ, rènshi nǐ hěn gāoxìng! Nǐ shì nǎ guó rén?", "es": "¡Encantado, Hugo! ¿De qué país eres?" },
+          "user": [
+            { "zh": "我也很高兴。我是西班牙人。", "py": "Wǒ yě hěn gāoxìng. Wǒ shì Xībānyá rén.", "es": "Igualmente. Soy español.", "keywords": ["西班牙人", "西班牙"], "next": "n4", "goal": 1 },
+            { "zh": "我不是美国人。", "py": "Wǒ bú shì Měiguó rén.", "es": "No soy estadounidense.", "keywords": ["不是美国", "美国人"], "next": "n3b" }
+          ],
+          "hint": "Nacionalidad = país + 人: 我是西班牙人."
+        },
+        "n3b": {
+          "npc": { "zh": "你不是美国人？那你是哪国人？", "py": "Nǐ bú shì Měiguó rén? Nà nǐ shì nǎ guó rén?", "es": "¿No eres estadounidense? Entonces, ¿de qué país eres?" },
+          "user": [
+            { "zh": "我是西班牙人。", "py": "Wǒ shì Xībānyá rén.", "es": "Soy español.", "keywords": ["西班牙人", "西班牙"], "next": "n4", "goal": 1 },
+            { "zh": "我是外国人。", "py": "Wǒ shì wàiguó rén.", "es": "Soy extranjero.", "keywords": ["外国人"], "next": "n3b" }
+          ],
+          "hint": "外国人 es demasiado general: di el país, 我是西班牙人."
+        },
+        "n4": {
+          "npc": { "zh": "你说汉语吗？", "py": "Nǐ shuō Hànyǔ ma?", "es": "¿Hablas chino?" },
+          "user": [
+            { "zh": "我说汉语，也说英语。", "py": "Wǒ shuō Hànyǔ, yě shuō Yīngyǔ.", "es": "Hablo chino y también inglés.", "keywords": ["说汉语", "也说"], "next": "n5", "goal": 2 },
+            { "zh": "不好意思，我不说汉语。", "py": "Bù hǎoyìsi, wǒ bù shuō Hànyǔ.", "es": "Perdona, no hablo chino.", "keywords": ["不说汉语", "不说"], "next": "n4b" }
+          ],
+          "hint": "说 + idioma: 我说汉语. Con 也 añades otro: 也说英语."
+        },
+        "n4b": {
+          "npc": { "zh": "你说汉语！我们说汉语。你说什么外语？", "py": "Nǐ shuō Hànyǔ! Wǒmen shuō Hànyǔ. Nǐ shuō shénme wàiyǔ?", "es": "¡Sí que hablas chino! Estamos hablando en chino. ¿Qué idiomas extranjeros hablas?" },
+          "user": [
+            { "zh": "我说英语，也说汉语。", "py": "Wǒ shuō Yīngyǔ, yě shuō Hànyǔ.", "es": "Hablo inglés y también chino.", "keywords": ["说英语", "也说"], "next": "n5", "goal": 2 },
+            { "zh": "我说西班牙语。", "py": "Wǒ shuō Xībānyáyǔ.", "es": "Hablo español.", "keywords": ["西班牙语"], "next": "n4b" }
+          ],
+          "hint": "El español es tu lengua, no una lengua extranjera (外语). Di qué lenguas extranjeras hablas: 我说英语，也说汉语."
+        },
+        "n5": {
+          "npc": { "zh": "我也说英语。那是谁？他也是西班牙人吗？", "py": "Wǒ yě shuō Yīngyǔ. Nà shì shéi? Tā yě shì Xībānyá rén ma?", "es": "Yo también hablo inglés. ¿Y ese quién es? ¿También es español?" },
+          "user": [
+            { "zh": "不是，他是大卫，他是美国人。", "py": "Bú shì, tā shì Dàwèi, tā shì Měiguó rén.", "es": "No, es David; es estadounidense.", "keywords": ["大卫", "美国人"], "next": "n6", "goal": 3 },
+            { "zh": "我介绍一下：这是大卫。", "py": "Wǒ jièshào yíxià: zhè shì Dàwèi.", "es": "Te presento: este es David.", "keywords": ["介绍", "这是大卫"], "next": "n5b", "goal": 3 }
+          ],
+          "hint": "Presenta a David: 这是大卫 / 他是大卫, y di su nacionalidad (美国人)."
+        },
+        "n5b": {
+          "npc": { "zh": "大卫，你好！你也是西班牙人吗？", "py": "Dàwèi, nǐ hǎo! Nǐ yě shì Xībānyá rén ma?", "es": "¡Hola, David! ¿Tú también eres español?" },
+          "user": [
+            { "zh": "不是，他是美国人。他说英语。", "py": "Bú shì, tā shì Měiguó rén. Tā shuō Yīngyǔ.", "es": "No, él es estadounidense. Habla inglés.", "keywords": ["美国人", "不是"], "next": "n6" },
+            { "zh": "对，他也是西班牙人。", "py": "Duì, tā yě shì Xībānyá rén.", "es": "Sí, también es español.", "keywords": ["也是西班牙"], "next": "n5c" }
+          ],
+          "hint": "David es estadounidense: corrige con 不是，他是美国人."
+        },
+        "n5c": {
+          "npc": { "zh": "他是西班牙人？他说英语……他不是美国人吗？", "py": "Tā shì Xībānyá rén? Tā shuō Yīngyǔ… Tā bú shì Měiguó rén ma?", "es": "¿Es español? Habla inglés… ¿no es estadounidense?" },
+          "user": [
+            { "zh": "对不起，对，他是美国人。", "py": "Duìbuqǐ, duì, tā shì Měiguó rén.", "es": "Perdona, sí: es estadounidense.", "keywords": ["美国人", "对不起"], "next": "n6" }
+          ],
+          "hint": "Rectifica: 对，他是美国人."
+        },
+        "n6": {
+          "npc": { "zh": "大卫，你好！认识你们很高兴！", "py": "Dàwèi, nǐ hǎo! Rènshi nǐmen hěn gāoxìng!", "es": "¡Hola, David! ¡Encantado de conoceros!" },
+          "user": [
+            { "zh": "我们也很高兴！小李，再见！", "py": "Wǒmen yě hěn gāoxìng! Xiǎo Lǐ, zàijiàn!", "es": "¡Igualmente! ¡Adiós, Xiao Li!", "keywords": ["也很高兴", "再见"], "next": "end1" },
+            { "zh": "谢谢，小李！", "py": "Xièxie, Xiǎo Lǐ!", "es": "¡Gracias, Xiao Li!", "keywords": ["谢谢"], "next": "end2" }
+          ],
+          "hint": "Responde al 认识你们很高兴 con 我们也很高兴 y despídete."
+        },
+        "end1": {
+          "npc": { "zh": "再见！", "py": "Zàijiàn!", "es": "¡Adiós!" },
+          "end": true,
+          "feedback": "Muy bien: nombre, nacionalidad, idiomas (说 + lengua, 也说…) y presentación de David. Recuerda: 哪国人 se responde con país + 人, y las lenguas llevan 语."
+        },
+        "end2": {
+          "npc": { "zh": "不客气！再见！", "py": "Bú kèqi! Zàijiàn!", "es": "¡De nada! ¡Adiós!" },
+          "end": true,
+          "feedback": "Buena conversación. A 认识你们很高兴 lo más natural es contestar 我们也很高兴, y luego despedirse con 再见."
+        }
+      }
+    }
+  ]
+}

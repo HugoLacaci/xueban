@@ -1,0 +1,137 @@
+{
+  "id": "a2-u10-l4",
+  "title": "Antes y después de la boda: 以前 / 以后 y los verbos separables",
+  "zh": "结婚以后…",
+  "goal": "Situar acciones con …以前 / …以后 y usar bien los verbos separables 结婚, 见面, 放假, 洗澡 (见过面, 放了假, 结婚三年了).",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "以前", "pinyin": "yǐqián", "es": "antes (de); antes, antiguamente", "note": "Va detrás del suceso: 来中国以前 = antes de venir a China. Solo: 以前我住在马德里." },
+    { "hanzi": "以后", "pinyin": "yǐhòu", "es": "después (de); en el futuro", "note": "结婚以后 = después de casarse. Solo: 以后我想当老师 (en el futuro)." },
+    { "hanzi": "结婚", "pinyin": "jiéhūn", "es": "casarse", "note": "Separable y sin objeto: 跟她结婚 (✗ 结婚她); 结了婚, 结婚三年了." },
+    { "hanzi": "今后", "pinyin": "jīnhòu", "es": "de ahora en adelante", "note": "Más formal que 以后." },
+    { "hanzi": "等到", "pinyin": "děngdào", "es": "cuando llegue…, (esperar) hasta que", "note": "等到放假，我就回家 = cuando lleguen las vacaciones, me voy a casa." },
+    { "hanzi": "周年", "pinyin": "zhōunián", "es": "aniversario", "note": "结婚十周年 = décimo aniversario de boda." },
+    { "hanzi": "举行", "pinyin": "jǔxíng", "es": "celebrar (un acto), tener lugar", "note": "Para actos organizados: 举行晚会, 举行活动." },
+    { "hanzi": "晚会", "pinyin": "wǎnhuì", "es": "fiesta o gala de noche", "note": "春节晚会 (春晚) = la gala de Nochevieja de la tele." },
+    { "hanzi": "活动", "pinyin": "huódòng", "es": "actividad, acto" },
+    { "hanzi": "生", "pinyin": "shēng", "es": "dar a luz; nacer", "note": "生孩子 = tener un hijo." },
+    { "hanzi": "全", "pinyin": "quán", "es": "todo, entero", "note": "全班 = toda la clase; 全家 = toda la familia." },
+    { "hanzi": "放假", "pinyin": "fàngjià", "es": "tener vacaciones / fiesta", "note": "Repaso. Separable: 放了假, 放七天假." },
+    { "hanzi": "见面", "pinyin": "jiànmiàn", "es": "verse, quedar", "note": "Repaso. Separable: 见过面, 跟他见面 (✗ 见面他)." }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "结婚以后，他们要住在上海。", "py": "Jiéhūn yǐhòu, tāmen yào zhù zài Shànghǎi.", "es": "Después de casarse vivirán en Shanghái." },
+        { "zh": "来中国以前，我不会说汉语。", "py": "Lái Zhōngguó yǐqián, wǒ bú huì shuō Hànyǔ.", "es": "Antes de venir a China no sabía hablar chino." },
+        { "zh": "我们已经见过面了。", "py": "Wǒmen yǐjīng jiàn guo miàn le.", "es": "Ya nos conocemos (ya nos hemos visto)." }
+      ]
+    },
+    { "type": "vocab", "title": "Antes, después y una boda", "words": ["以前", "以后", "结婚", "今后", "等到", "周年", "举行", "晚会", "活动", "生", "全", "放假", "见面"] },
+    {
+      "type": "phonetics-drill",
+      "title": "La pausa después de …以后 y el medio tercer tono",
+      "markdown": "Igual que …的时候, un bloque **…以前 / …以后** es la primera parte de la frase: se dice **en suspenso**, con una **pausa** detrás: 结婚以后 | 他们住在上海.\n\n- **以前** *yǐqián*, **以后** *yǐhòu*: 以 es tercer tono, pero delante de otro tono se queda en **medio tercer tono**: solo baja, no vuelve a subir.\n- **举行** *jǔxíng*: tras **j** la ü se escribe sin puntos, pero se sigue diciendo **ü** (labios redondos).\n- **结婚** *jiéhūn* (2.º + 1.º) y **周年** *zhōunián* (1.º + 2.º): cuidado con no aplanar el segundo tono.",
+      "items": [
+        { "audio": "举行", "options": ["jǔxíng", "jǐxíng", "zhǔxíng"], "answer": 0, "explain": "j + ü (escrita u): labios redondos." },
+        { "audio": "结婚", "options": ["jiéhūn", "jiēhūn", "jiéhuān"], "answer": 0, "explain": "jié sube; hūn alto y plano." },
+        { "audio": "以后", "options": ["yǐhòu", "yíhòu", "yǐhóu"], "answer": 0, "explain": "以 es medio tercer tono delante del cuarto de 后." },
+        { "audio": "周年", "options": ["zhōunián", "zōunián", "zhóunián"], "answer": 0, "explain": "zh retrofleja; zhōu alto y plano." },
+        { "audio": "放了假以后，我们去旅游。", "prompt": "¿Dónde va la pausa?", "options": ["放了假以后 / 我们去旅游", "放了 / 假以后我们去旅游", "放了假以 / 后我们去旅游"], "answer": 0, "explain": "El bloque «放了假以后» va entero; la pausa, detrás." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["婚", "结"],
+      "mnemonics": {
+        "婚": "女 (mujer) + 昏 (anochecer): en la China antigua las bodas se celebraban al caer la tarde.",
+        "结": "纟 (hilo de seda) + 吉 (buena suerte): atar con un hilo de buena suerte. 结婚 = «atar la unión»."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "…以前 / …以后 + verbos separables",
+      "markdown": "**…以前 / …以后** van **detrás** del suceso y el bloque entero ocupa el *Tiempo inicial*: [结婚以后，] [他们] [住在] [上海]. En español es al revés: «**después de** casarse».\n\n- Solos, sin suceso delante, 以前 = «antes, antiguamente» y 以后 = «en el futuro, más adelante».\n- Para el pasado contado, «después» es **后来** (lección anterior); 以后 sirve para pasado y futuro, pero siempre detrás de un suceso o mirando al futuro.\n\n**Verbos separables** (离合词): 结婚, 见面, 放假, 洗澡 son en realidad **verbo + objeto** (结 + 婚). Por eso:\n- 了 / 过 / 个 van **en medio**: 放**了**假 · 见**过**面 · 洗**个**澡.\n- **No llevan otro objeto**: la persona va con **跟**: **跟**她结婚, **跟**朋友见面.\n- La duración va detrás de todo con 了: 他们结婚**三年了**.",
+      "focus": ["time0"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "time0": { "zh": "结婚以后，", "py": "jiéhūn yǐhòu," }, "subject": { "zh": "他们", "py": "tāmen" }, "aux": { "zh": "要", "py": "yào" }, "verb1": { "zh": "住在", "py": "zhù zài" }, "object": { "zh": "上海", "py": "Shànghǎi" } }, "end": "。", "es": "Vivirán en Shanghái cuando se casen.", "esOrder": [{ "text": "Vivirán", "slot": "verb1" }, { "text": "en Shanghái", "slot": "object" }, { "text": "cuando se casen", "slot": "time0" }] },
+        { "slots": { "time0": { "zh": "每天睡觉以前，", "py": "měi tiān shuìjiào yǐqián," }, "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "都", "py": "dōu" }, "verb1": { "zh": "洗个澡", "py": "xǐ ge zǎo" } }, "end": "。", "es": "Todos los días me ducho antes de dormir." },
+        { "slots": { "time0": { "zh": "放了假以后，", "py": "fàng le jià yǐhòu," }, "subject": { "zh": "我", "py": "wǒ" }, "aux": { "zh": "想", "py": "xiǎng" }, "verb1": { "zh": "去北京", "py": "qù Běijīng" }, "verb2": { "zh": "旅游", "py": "lǚyóu" } }, "end": "。", "es": "Cuando empiecen las vacaciones quiero irme de viaje a Pekín." },
+        { "slots": { "subject": { "zh": "我们", "py": "wǒmen" }, "adverb": { "zh": "已经", "py": "yǐjīng" }, "verb1": { "zh": "见过", "py": "jiàn guo" }, "object": { "zh": "面", "py": "miàn" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Ya nos conocemos (ya nos hemos visto)." },
+        { "slots": { "subject": { "zh": "他们", "py": "tāmen" }, "verb1": { "zh": "结婚", "py": "jiéhūn" }, "complement": { "zh": "三年", "py": "sān nián" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Llevan tres años casados." },
+        { "slots": { "time0": { "zh": "等到放假，", "py": "děngdào fàngjià," }, "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "就", "py": "jiù" }, "verb1": { "zh": "回家", "py": "huí jiā" } }, "end": "。", "es": "En cuanto lleguen las vacaciones, me voy a casa." }
+      ],
+      "negative": [
+        { "slots": { "time0": { "zh": "来中国以前，", "py": "lái Zhōngguó yǐqián," }, "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "不", "py": "bú" }, "aux": { "zh": "会", "py": "huì" }, "verb1": { "zh": "说", "py": "shuō" }, "object": { "zh": "汉语", "py": "Hànyǔ" } }, "end": "。", "es": "Antes de venir a China no sabía hablar chino." },
+        { "slots": { "subject": { "zh": "我们", "py": "wǒmen" }, "adverb": { "zh": "还没", "py": "hái méi" }, "verb1": { "zh": "见过", "py": "jiàn guo" }, "object": { "zh": "面", "py": "miàn" } }, "end": "。", "es": "Todavía no nos hemos visto." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你们", "py": "nǐmen" }, "time": { "zh": "什么时候", "py": "shénme shíhou" }, "verb1": { "zh": "结婚", "py": "jiéhūn" } }, "end": "？", "es": "¿Cuándo os casáis?" },
+        { "slots": { "time0": { "zh": "下课以后，", "py": "xiàkè yǐhòu," }, "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "做", "py": "zuò" }, "object": { "zh": "什么", "py": "shénme" } }, "end": "？", "es": "¿Qué haces después de clase?" }
+      ],
+      "mistakes": [
+        { "wrong": "以后结婚，他们住在上海。", "right": "结婚以后，他们住在上海。", "why": "以前 / 以后 van detrás del suceso: «casarse-después»." },
+        { "wrong": "我们见面过。", "right": "我们见过面。", "why": "见面 es separable: 过 va entre 见 y 面." },
+        { "wrong": "我想结婚她。", "right": "我想跟她结婚。", "why": "结婚 ya tiene su objeto (婚): la persona se introduce con 跟." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "La boda del hermano de Xiao Li",
+      "lines": [
+        { "speaker": "小李", "zh": "雨果，下个月我哥哥结婚，你想来吗？", "py": "Yǔguǒ, xià ge yuè wǒ gēge jiéhūn, nǐ xiǎng lái ma?", "es": "Hugo, el mes que viene se casa mi hermano. ¿Quieres venir?" },
+        { "speaker": "雨果", "zh": "想！我还没看过中国人结婚。", "py": "Xiǎng! Wǒ hái méi kàn guo Zhōngguórén jiéhūn.", "es": "¡Claro! Nunca he visto una boda china." },
+        { "speaker": "小李", "zh": "结婚活动在一个大饭店举行，晚上还有晚会。", "py": "Jiéhūn huódòng zài yí ge dà fàndiàn jǔxíng, wǎnshang hái yǒu wǎnhuì.", "es": "La celebración es en un hotel grande, y por la noche además hay fiesta." },
+        { "speaker": "雨果", "zh": "你哥哥和他女朋友是怎么认识的？", "py": "Nǐ gēge hé tā nǚpéngyou shì zěnme rènshi de?", "es": "¿Cómo se conocieron tu hermano y su novia?" },
+        { "speaker": "小李", "zh": "上大学以前他们就认识，那时候他们十六岁。", "py": "Shàng dàxué yǐqián tāmen jiù rènshi, nà shíhou tāmen shíliù suì.", "es": "Ya se conocían antes de la universidad: tenían dieciséis años." },
+        { "speaker": "雨果", "zh": "那他们认识很多年了！", "py": "Nà tāmen rènshi hěn duō nián le!", "es": "¡Entonces hace muchos años que se conocen!" },
+        { "speaker": "小李", "zh": "对，十年了。结婚以后，他们要住在上海。", "py": "Duì, shí nián le. Jiéhūn yǐhòu, tāmen yào zhù zài Shànghǎi.", "es": "Sí, diez años. Cuando se casen vivirán en Shanghái." },
+        { "speaker": "雨果", "zh": "他们想生孩子吗？", "py": "Tāmen xiǎng shēng háizi ma?", "es": "¿Quieren tener hijos?" },
+        { "speaker": "小李", "zh": "我妈妈说：“你们早点儿生孩子吧！”我哥哥说：“等到工作好了再说。”", "py": "Wǒ māma shuō: “Nǐmen zǎo diǎnr shēng háizi ba!” Wǒ gēge shuō: “Děngdào gōngzuò hǎo le zài shuō.”", "es": "Mi madre les dice: «¡Tened hijos prontito!». Y mi hermano: «Ya lo hablaremos cuando vaya bien el trabajo»." },
+        { "speaker": "雨果", "zh": "西班牙的父母也常常这么说！我去的时候要带什么？", "py": "Xībānyá de fùmǔ yě chángcháng zhème shuō! Wǒ qù de shíhou yào dài shénme?", "es": "¡Los padres españoles también dicen eso! ¿Qué tengo que llevar cuando vaya?" },
+        { "speaker": "小李", "zh": "红包就好。中国人结婚的时候，客人一般送红包。", "py": "Hóngbāo jiù hǎo. Zhōngguórén jiéhūn de shíhou, kèrén yìbān sòng hóngbāo.", "es": "Con un sobre rojo basta. En las bodas chinas los invitados suelen regalar sobres rojos." },
+        { "speaker": "雨果", "zh": "好。今后我要多学学这些！", "py": "Hǎo. Jīnhòu wǒ yào duō xuéxue zhèxiē!", "es": "Vale. ¡De ahora en adelante tengo que aprender más de estas cosas!" }
+      ],
+      "notes": "En las bodas chinas el regalo habitual es un 红包 con dinero; se evitan las cantidades con 4 (四 suena como 死, «morir») y se prefieren las pares o con 8 (八 recuerda a 发, «prosperar»)."
+    },
+    { "type": "exercises", "count": 17, "bank": ["g-dates-time", "g-le", "g-word-order", "g-complements"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "time0": { "zh": "结婚以后，" }, "subject": { "zh": "他们" }, "aux": { "zh": "要" }, "verb1": { "zh": "住在" }, "object": { "zh": "上海" } }, "end": "。", "es": "Vivirán en Shanghái cuando se casen." }, "distractors": ["以前"] },
+        { "sentence": { "slots": { "subject": { "zh": "我们" }, "adverb": { "zh": "已经" }, "verb1": { "zh": "见过" }, "object": { "zh": "面" }, "particle": { "zh": "了" } }, "end": "。", "es": "Ya nos conocemos." }, "distractors": ["见面过"] },
+        { "sentence": { "slots": { "time0": { "zh": "来中国以前，" }, "subject": { "zh": "我" }, "adverb": { "zh": "不" }, "aux": { "zh": "会" }, "verb1": { "zh": "说" }, "object": { "zh": "汉语" } }, "end": "。", "es": "Antes de venir a China no sabía hablar chino." }, "distractors": ["没"] },
+        { "sentence": { "slots": { "time0": { "zh": "放了假以后，" }, "subject": { "zh": "我" }, "aux": { "zh": "想" }, "with": { "zh": "跟小李一起" }, "verb1": { "zh": "去北京" }, "verb2": { "zh": "看" }, "object": { "zh": "他的父母" } }, "end": "。", "es": "Cuando empiecen las vacaciones quiero ir a Pekín con Xiao Li a ver a sus padres." }, "distractors": ["以前"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "结婚以后，他们要住在上海。", "py": "Jiéhūn yǐhòu, tāmen yào zhù zài Shànghǎi.", "es": "Cuando se casen vivirán en Shanghái." },
+        { "zh": "来中国以前，我不会说汉语。", "py": "Lái Zhōngguó yǐqián, wǒ bú huì shuō Hànyǔ.", "es": "Antes de venir a China no sabía hablar chino." },
+        { "zh": "我们已经见过面了。", "py": "Wǒmen yǐjīng jiàn guo miàn le.", "es": "Ya nos conocemos." },
+        { "zh": "等到放假，我就回家。", "py": "Děngdào fàngjià, wǒ jiù huí jiā.", "es": "En cuanto lleguen las vacaciones, me voy a casa." }
+      ],
+      "respond": [
+        { "q": { "zh": "来中国以前，你会说汉语吗？", "py": "Lái Zhōngguó yǐqián, nǐ huì shuō Hànyǔ ma?", "es": "Antes de venir a China, ¿sabías hablar chino?" }, "model": { "zh": "会一点儿。来中国以后，我的汉语越来越好了。", "py": "Huì yìdiǎnr. Lái Zhōngguó yǐhòu, wǒ de Hànyǔ yuèláiyuè hǎo le.", "es": "Un poco. Desde que vine a China, mi chino es cada vez mejor." } },
+        { "q": { "zh": "放了假以后，你想做什么？", "py": "Fàng le jià yǐhòu, nǐ xiǎng zuò shénme?", "es": "Cuando empiecen las vacaciones, ¿qué quieres hacer?" }, "model": { "zh": "我想跟朋友一起去旅游。", "py": "Wǒ xiǎng gēn péngyou yìqǐ qù lǚyóu.", "es": "Quiero irme de viaje con mis amigos." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Diez años casados",
+      "text": "王老师和她爱人是十年以前在北京见的面，那时候两个人都是学生。见面以后，他们常常一起去图书馆学习。后来他们来上海工作，第二年就结婚了。结婚以后，他们生了一个女儿，今年八岁。今年是他们结婚十周年。上个星期五，学生们给王老师举行了一个小活动：一个晚会。全班同学都来了，雨果唱了一首西班牙歌，安娜和大卫跳了舞。王老师非常高兴，她说：“以前我觉得十年很长，现在觉得十年很快。今后我也要常常跟你们一起过节！”晚会以后，雨果想：等到他结婚的时候，也要请全班同学来。",
+      "es": "La profesora Wang y su marido se conocieron en Pekín hace diez años; entonces los dos eran estudiantes. Después de conocerse iban a menudo juntos a estudiar a la biblioteca. Más tarde se vinieron a trabajar a Shanghái y al año siguiente se casaron. Después de la boda tuvieron una hija, que este año cumple ocho. Este año es su décimo aniversario de boda. El viernes pasado los alumnos le organizaron a la profesora un pequeño acto: una fiesta por la noche. Vino toda la clase: Hugo cantó una canción española y Anna y David bailaron. La profesora Wang estaba contentísima y dijo: «Antes pensaba que diez años eran mucho; ahora me parece que pasan volando. ¡De ahora en adelante quiero celebrar las fiestas con vosotros a menudo!». Después de la fiesta, Hugo pensó que, cuando él se case, también invitará a toda la clase.",
+      "questions": [
+        { "q": "¿Dónde se conocieron la profesora Wang y su marido?", "options": ["在北京", "在上海", "在马德里"], "answer": 0 },
+        { "q": "¿Cuántos años llevan casados?", "options": ["十年", "八年", "两年"], "answer": 0 },
+        { "q": "¿Qué hizo Hugo en la fiesta?", "options": ["唱了一首西班牙歌", "跳了舞", "给老师红包"], "answer": 0 },
+        { "q": "¿Qué frase es correcta?", "options": ["他们见过面。", "他们见面过。", "他们见过他们面。"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

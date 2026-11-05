@@ -1,0 +1,970 @@
+{
+  "id": "comparacion",
+  "title": "Comparación",
+  "zh": "比较句",
+  "order": 14,
+  "icon": "Scale",
+  "summary": "最, A 比 B + adjetivo, cuánto más (一点儿, 多了, 两岁), «no tan… como» (没有…那么), «igual que» (跟…一样) y comparar cómo se hace algo (比 + V得). La regla de oro: nada de 很 delante del adjetivo cuando comparas.",
+  "kind": "topic",
+  "reviewed": false,
+  "sections": [
+    {
+      "id": "zui",
+      "title": "最: el que más",
+      "unlockedBy": "a1-u08-l3",
+      "markdown": "### El grado más alto\n\n**最** va en el hueco de los **adverbios**, delante del adjetivo (o de un verbo de gusto): 小李**最**年轻 · 我**最**喜欢猫.\n\n- Es un adverbio de grado más, como 很 o 非常: **solo uno** a la vez (✗ 很最好).\n- Para decir «de todos», se pone el grupo delante: 我们班**谁最**高？\n- **最** no se combina con **比** (lo verás en A2): ✗ 他最比我高.\n\n> 💡 **Truco**: 最好 tiene dos caras: «el mejor» (这个最好) y, delante de un verbo, «más vale que…» (你最好休息, en la U19).",
+      "skeleton": {
+        "focus": [
+          "adverb"
+        ],
+        "sentences": [
+          {
+            "slots": {
+              "subject": {
+                "zh": "小李",
+                "py": "Xiǎo Lǐ"
+              },
+              "adverb": {
+                "zh": "最",
+                "py": "zuì"
+              },
+              "verb1": {
+                "zh": "年轻",
+                "py": "niánqīng"
+              }
+            },
+            "end": "。",
+            "es": "Xiao Li es el más joven.",
+            "esOrder": [
+              {
+                "text": "Xiao Li",
+                "slot": "subject"
+              },
+              {
+                "text": "es el más",
+                "slot": "adverb"
+              },
+              {
+                "text": "joven",
+                "slot": "verb1"
+              }
+            ]
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "我",
+                "py": "wǒ"
+              },
+              "adverb": {
+                "zh": "最",
+                "py": "zuì"
+              },
+              "verb1": {
+                "zh": "喜欢",
+                "py": "xǐhuan"
+              },
+              "object": {
+                "zh": "猫",
+                "py": "māo"
+              }
+            },
+            "end": "。",
+            "es": "Lo que más me gusta son los gatos."
+          }
+        ]
+      },
+      "examples": [
+        {
+          "zh": "我们家，我妹妹最小。",
+          "py": "Wǒmen jiā, wǒ mèimei zuì xiǎo.",
+          "es": "En mi familia, mi hermana pequeña es la menor."
+        },
+        {
+          "zh": "这个最好。",
+          "py": "Zhège zuì hǎo.",
+          "es": "Este es el mejor."
+        },
+        {
+          "zh": "汉语最难。",
+          "py": "Hànyǔ zuì nán.",
+          "es": "El chino es lo más difícil."
+        }
+      ]
+    },
+    {
+      "id": "yiyang-chabuduo",
+      "title": "一样 y 跟…差不多: igual, más o menos igual",
+      "unlockedBy": "a1-u21-l3",
+      "markdown": "### Las primeras comparaciones sin 比\n\n- **一样** (igual) y **差不多** (más o menos igual) funcionan como **adjetivos**: van en el hueco del verbo, sin 是: 我们的手表**一样**.\n- Para decir **con qué** se compara, **跟 + B** delante (hueco *Con quién*): 西班牙的冬天**跟上海差不多**.\n\n> ⚠️ **Ojo**: 一样 se pronuncia **yíyàng** (样 es 4.º tono). 差不多 lleva el 不 átono: chàbuduō.\n\n> 💡 **Truco**: 差不多 también es «casi» con cantidades: 差不多十个人 (unas diez personas). En A2 completarás la estructura con un adjetivo: A 跟 B 一样 + adjetivo.",
+      "skeleton": {
+        "focus": [
+          "with",
+          "verb1"
+        ],
+        "sentences": [
+          {
+            "slots": {
+              "subject": {
+                "zh": "西班牙的冬天",
+                "py": "Xībānyá de dōngtiān"
+              },
+              "with": {
+                "zh": "跟上海",
+                "py": "gēn Shànghǎi"
+              },
+              "verb1": {
+                "zh": "差不多",
+                "py": "chàbuduō"
+              }
+            },
+            "end": "。",
+            "es": "El invierno de España es más o menos como el de Shanghái."
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "我们的手表",
+                "py": "wǒmen de shǒubiǎo"
+              },
+              "verb1": {
+                "zh": "一样",
+                "py": "yíyàng"
+              }
+            },
+            "end": "。",
+            "es": "Nuestros relojes son iguales."
+          }
+        ]
+      },
+      "examples": [
+        {
+          "zh": "我的手机跟你的一样。",
+          "py": "Wǒ de shǒujī gēn nǐ de yíyàng.",
+          "es": "Mi móvil es igual que el tuyo."
+        },
+        {
+          "zh": "这两个字差不多。",
+          "py": "Zhè liǎng ge zì chàbuduō.",
+          "es": "Estos dos caracteres son casi iguales."
+        },
+        {
+          "zh": "我们班差不多有二十个人。",
+          "py": "Wǒmen bān chàbuduō yǒu èrshí ge rén.",
+          "es": "En nuestra clase hay unas veinte personas."
+        }
+      ]
+    },
+    {
+      "id": "bi-basico",
+      "title": "A 比 B + adjetivo: «más… que»",
+      "unlockedBy": "a2-u06-l2",
+      "markdown": "### La balanza\n\nPongo A a la izquierda, B a la derecha y digo en qué gana A: **安娜比我高** (lit. «Ana, comparada conmigo, alta»).\n\n**Convención del esqueleto**: **比 + B** va en *Adverbios* (ocupa el sitio de los adverbios, delante del adjetivo) y el adjetivo, en *Verbo 1*. Si añades 更 o 还, van en el mismo hueco: «比他更».\n\n- **Nada de 很, 非常 ni 太** delante del adjetivo: el 很 ya no pinta nada cuando comparas.\n- Para reforzar: **更** o **还** («aún más»): 他比我**更**忙.\n- **最** (el que más) no lleva 比: 这家饭店的菜**最**好吃.\n- **Negar**: 不 delante de 比 (我**不比**他忙 = no estoy más ocupado que él). Para «no tan… como», 没有…那么 (lección 4).\n\n> ❌ **Error típico**: 他比我很高 → 他比我高.\n\n> ❌ **Error típico**: 他高比我 → 他比我高. El adjetivo, al final y limpio.\n\n> 💡 **Truco**: para el tiempo, **今天比昨天 + adjetivo** es una frase hecha: 今天比昨天冷.",
+      "skeleton": {
+        "focus": [
+          "adverb"
+        ],
+        "sentences": [
+          {
+            "slots": {
+              "subject": {
+                "zh": "安娜",
+                "py": "Ānnà"
+              },
+              "adverb": {
+                "zh": "比我",
+                "py": "bǐ wǒ"
+              },
+              "verb1": {
+                "zh": "高",
+                "py": "gāo"
+              }
+            },
+            "end": "。",
+            "es": "Ana es más alta que yo.",
+            "esOrder": [
+              {
+                "text": "Ana",
+                "slot": "subject"
+              },
+              {
+                "text": "es más alta",
+                "slot": "verb1"
+              },
+              {
+                "text": "que yo",
+                "slot": "adverb"
+              }
+            ]
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "今天",
+                "py": "jīntiān"
+              },
+              "adverb": {
+                "zh": "比昨天",
+                "py": "bǐ zuótiān"
+              },
+              "verb1": {
+                "zh": "冷",
+                "py": "lěng"
+              }
+            },
+            "end": "。",
+            "es": "Hoy hace más frío que ayer."
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "他",
+                "py": "tā"
+              },
+              "adverb": {
+                "zh": "比我更",
+                "py": "bǐ wǒ gèng"
+              },
+              "verb1": {
+                "zh": "忙",
+                "py": "máng"
+              }
+            },
+            "end": "。",
+            "es": "Él está todavía más ocupado que yo."
+          }
+        ]
+      },
+      "examples": [
+        {
+          "zh": "坐地铁比打车快。",
+          "py": "Zuò dìtiě bǐ dǎchē kuài.",
+          "es": "El metro es más rápido que el taxi."
+        },
+        {
+          "zh": "上海比北京大吗？",
+          "py": "Shànghǎi bǐ Běijīng dà ma?",
+          "es": "¿Shanghái es más grande que Pekín?"
+        },
+        {
+          "zh": "我不比他忙。",
+          "py": "Wǒ bù bǐ tā máng.",
+          "es": "No estoy más ocupado que él."
+        },
+        {
+          "zh": "这家饭店的菜最好吃。",
+          "py": "Zhè jiā fàndiàn de cài zuì hǎochī.",
+          "es": "La comida de este restaurante es la más rica."
+        }
+      ],
+      "sourceNotes": [
+        "zh-grammar-bi"
+      ]
+    },
+    {
+      "id": "bi-cuanto",
+      "title": "¿Cuánto más? 比 + adjetivo + 一点儿 / 多了 / 两岁",
+      "unlockedBy": "a2-u06-l3",
+      "markdown": "### La diferencia va detrás del adjetivo\n\n| Diferencia | Ejemplo |\n|---|---|\n| un poco | 贵**一点儿**, 快**一些** |\n| mucho | 冷**多了**, 快**得多** |\n| cantidad exacta | 大**两岁**, 贵**五十块**, 快**十分钟** |\n\nEn el esqueleto, la diferencia va en *Complemento* (比 + B sigue en *Adverbios*).\n\n- La cantidad va **después** del adjetivo, al revés que en español («**dos años** mayor»).\n- **一点儿**, no 有点儿: 有点儿 va delante y se queja.\n- **多了** es más coloquial (y típico de cambios: 好多了 = mucho mejor); **得多** es neutro.\n\n> ❌ **Error típico**: 我哥哥比我两岁大 → 我哥哥比我大**两岁**.\n\n> ❌ **Error típico**: 今天比昨天很冷 → 今天比昨天冷**多了** / 冷**得多**.\n\n> ❌ **Error típico**: 咖啡比奶茶有点儿贵 → 咖啡比奶茶贵**一点儿**.",
+      "skeleton": {
+        "focus": [
+          "complement"
+        ],
+        "sentences": [
+          {
+            "slots": {
+              "subject": {
+                "zh": "我哥哥",
+                "py": "wǒ gēge"
+              },
+              "adverb": {
+                "zh": "比我",
+                "py": "bǐ wǒ"
+              },
+              "verb1": {
+                "zh": "大",
+                "py": "dà"
+              },
+              "complement": {
+                "zh": "两岁",
+                "py": "liǎng suì"
+              }
+            },
+            "end": "。",
+            "es": "Mi hermano es dos años mayor que yo.",
+            "esOrder": [
+              {
+                "text": "Mi hermano",
+                "slot": "subject"
+              },
+              {
+                "text": "es dos años",
+                "slot": "complement"
+              },
+              {
+                "text": "mayor",
+                "slot": "verb1"
+              },
+              {
+                "text": "que yo",
+                "slot": "adverb"
+              }
+            ]
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "今天",
+                "py": "jīntiān"
+              },
+              "adverb": {
+                "zh": "比昨天",
+                "py": "bǐ zuótiān"
+              },
+              "verb1": {
+                "zh": "冷",
+                "py": "lěng"
+              },
+              "complement": {
+                "zh": "多了",
+                "py": "duō le"
+              }
+            },
+            "end": "。",
+            "es": "Hoy hace mucho más frío que ayer."
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "咖啡",
+                "py": "kāfēi"
+              },
+              "adverb": {
+                "zh": "比奶茶",
+                "py": "bǐ nǎichá"
+              },
+              "verb1": {
+                "zh": "贵",
+                "py": "guì"
+              },
+              "complement": {
+                "zh": "一点儿",
+                "py": "yìdiǎnr"
+              }
+            },
+            "end": "。",
+            "es": "El café es un poco más caro que el té con leche."
+          }
+        ]
+      },
+      "examples": [
+        {
+          "zh": "你哥哥比你大几岁？",
+          "py": "Nǐ gēge bǐ nǐ dà jǐ suì?",
+          "es": "¿Cuántos años te saca tu hermano?"
+        },
+        {
+          "zh": "坐高铁比坐飞机慢得多。",
+          "py": "Zuò gāotiě bǐ zuò fēijī màn de duō.",
+          "es": "El tren de alta velocidad es mucho más lento que el avión."
+        },
+        {
+          "zh": "这件衣服比那件贵五十块。",
+          "py": "Zhè jiàn yīfu bǐ nà jiàn guì wǔshí kuài.",
+          "es": "Esta prenda cuesta cincuenta yuanes más que esa."
+        },
+        {
+          "zh": "我今天好多了。",
+          "py": "Wǒ jīntiān hǎo duō le.",
+          "es": "Hoy estoy mucho mejor."
+        }
+      ],
+      "sourceNotes": [
+        "zh-grammar-bi",
+        "zh-contrast-yidianr-youdianr"
+      ]
+    },
+    {
+      "id": "meiyou-name",
+      "title": "没有…那么: «no tan… como» (y 不如, 有…吗)",
+      "unlockedBy": "a2-u06-l4",
+      "markdown": "### La negación natural de 比\n\nPara «A **no es tan** alto **como** B», lo normal es **没有**, no 不比: 我**没有你这么**高.\n\n**Convención del esqueleto**: «没有 + B + 那么/这么» va entero en *Adverbios*; el adjetivo, en *Verbo 1*.\n\n- **这么** si B está cerca (tú, aquí, ahora); **那么** si está lejos (él, allí, antes). Se pueden omitir: 我没有你高.\n- **Pregunta** con **有** («llegar a»): 你**有**你哥哥高吗？ (¿eres tan alto como tu hermano?).\n- **不如**: A 不如 B (+ adj) = «A no llega a B, es peor». Un poco más formal.\n- **不比** existe, pero es otra cosa: 我不比他高 = no soy más alto que él (somos más o menos iguales).\n\n> ❌ **Error típico**: 我没有你很高 → 我没有你(这么)高.\n\n> ❌ **Error típico**: 我比你不高 → 我**没有**你高.\n\n> ❌ **Error típico**: 今天没有昨天冷多了 → 今天没有昨天**那么**冷. Con 没有 no van 多了 ni 一点儿.",
+      "skeleton": {
+        "focus": [
+          "adverb"
+        ],
+        "sentences": [
+          {
+            "slots": {
+              "subject": {
+                "zh": "我的汉语",
+                "py": "wǒ de Hànyǔ"
+              },
+              "adverb": {
+                "zh": "没有你这么",
+                "py": "méiyǒu nǐ zhème"
+              },
+              "verb1": {
+                "zh": "好",
+                "py": "hǎo"
+              }
+            },
+            "end": "。",
+            "es": "Mi chino no es tan bueno como el tuyo."
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "今天",
+                "py": "jīntiān"
+              },
+              "adverb": {
+                "zh": "没有昨天那么",
+                "py": "méiyǒu zuótiān nàme"
+              },
+              "verb1": {
+                "zh": "冷",
+                "py": "lěng"
+              }
+            },
+            "end": "。",
+            "es": "Hoy no hace tanto frío como ayer."
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "你",
+                "py": "nǐ"
+              },
+              "adverb": {
+                "zh": "有你哥哥",
+                "py": "yǒu nǐ gēge"
+              },
+              "verb1": {
+                "zh": "高",
+                "py": "gāo"
+              },
+              "particle": {
+                "zh": "吗",
+                "py": "ma"
+              }
+            },
+            "end": "？",
+            "es": "¿Eres tan alto como tu hermano?"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "zh": "坐公交车没有坐地铁快。",
+          "py": "Zuò gōngjiāochē méiyǒu zuò dìtiě kuài.",
+          "es": "El autobús no es tan rápido como el metro."
+        },
+        {
+          "zh": "王老师有三十岁吗？",
+          "py": "Wáng lǎoshī yǒu sānshí suì ma?",
+          "es": "¿La profesora Wang llega a los treinta?"
+        },
+        {
+          "zh": "我做的菜不如你做的好吃。",
+          "py": "Wǒ zuò de cài bùrú nǐ zuò de hǎochī.",
+          "es": "Lo que cocino yo no está tan rico como lo tuyo."
+        },
+        {
+          "zh": "我不比他高，我们差不多。",
+          "py": "Wǒ bù bǐ tā gāo, wǒmen chàbuduō.",
+          "es": "No soy más alto que él: somos más o menos iguales."
+        }
+      ],
+      "sourceNotes": [
+        "zh-grammar-bi"
+      ]
+    },
+    {
+      "id": "gen-yiyang",
+      "title": "A 跟 B 一样 (+ adjetivo): «igual de… que»",
+      "unlockedBy": "a2-u06-l4",
+      "markdown": "### La igualdad\n\n**A 跟 B 一样** = A es igual que B. Con un adjetivo detrás: **A 跟 B 一样 + adj** = A es igual de … que B.\n\n**Convención del esqueleto**: «跟 + B + 一样» va en *Adverbios* y el adjetivo en *Verbo 1* (跟那个房间一样 | 大). Sin adjetivo, 一样 hace de predicado: «跟你的» en *Adverbios* y 一样 en *Verbo 1*.\n\n- **Negativa**: 不 va **delante de 一样**: 跟你的**不**一样.\n- Ni 很 ni 非常 delante del adjetivo: ✗ 跟你一样很高.\n- **像**: A 像 B = A se parece a B: 他**像**他爸爸.\n- **相同** y **同样** son más formales: 我们的爱好**相同**.\n\n### Resumen de la comparación\n\n| | Estructura |\n|---|---|\n| más | A 比 B + adj (+ 一点儿 / 多了 / cantidad) |\n| igual | A 跟 B 一样 (+ adj) |\n| no tan | A 没有 B (那么) + adj |\n| el que más | 最 + adj |\n\n> ❌ **Error típico**: 我不跟你一样 → 我跟你**不**一样.\n\n> ❌ **Error típico**: 我一样高跟你 → 我跟你一样高.",
+      "skeleton": {
+        "focus": [
+          "adverb"
+        ],
+        "sentences": [
+          {
+            "slots": {
+              "subject": {
+                "zh": "这个房间",
+                "py": "zhège fángjiān"
+              },
+              "adverb": {
+                "zh": "跟那个房间一样",
+                "py": "gēn nàge fángjiān yíyàng"
+              },
+              "verb1": {
+                "zh": "大",
+                "py": "dà"
+              }
+            },
+            "end": "。",
+            "es": "Esta habitación es igual de grande que esa."
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "我的意见",
+                "py": "wǒ de yìjiàn"
+              },
+              "adverb": {
+                "zh": "跟你的不",
+                "py": "gēn nǐ de bù"
+              },
+              "verb1": {
+                "zh": "一样",
+                "py": "yíyàng"
+              }
+            },
+            "end": "。",
+            "es": "Mi opinión es distinta de la tuya."
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "安娜",
+                "py": "Ānnà"
+              },
+              "adverb": {
+                "zh": "跟我一样",
+                "py": "gēn wǒ yíyàng"
+              },
+              "verb1": {
+                "zh": "喜欢",
+                "py": "xǐhuan"
+              },
+              "object": {
+                "zh": "中国菜",
+                "py": "Zhōngguó cài"
+              }
+            },
+            "end": "。",
+            "es": "A Ana le gusta la comida china tanto como a mí."
+          }
+        ]
+      },
+      "examples": [
+        {
+          "zh": "上海的菜跟北京的一样吗？",
+          "py": "Shànghǎi de cài gēn Běijīng de yíyàng ma?",
+          "es": "¿La comida de Shanghái es igual que la de Pekín?"
+        },
+        {
+          "zh": "他很像他爸爸。",
+          "py": "Tā hěn xiàng tā bàba.",
+          "es": "Se parece mucho a su padre."
+        },
+        {
+          "zh": "我跟你一样高。",
+          "py": "Wǒ gēn nǐ yíyàng gāo.",
+          "es": "Soy igual de alto que tú."
+        }
+      ],
+      "sourceNotes": [
+        "zh-grammar-bi"
+      ]
+    },
+    {
+      "id": "bi-bieren",
+      "title": "Más que nadie: 比别人都 y 最",
+      "unlockedBy": "a2-u06-l5",
+      "markdown": "### Dos maneras de decir «el que más»\n\n- **最 + adj**: 他**最**高.\n- **比 + 别人 / 大家 + 都 + adj**: 他**比别人都**高 (más alto que todos los demás). El 都 resume «todos los demás».\n\n**最 no se combina con 比**: ✗ 他最比我高 → 他比我高 / 他最高.\n\n### Resumen de las convenciones de la unidad\n\n| Estructura | Hueco |\n|---|---|\n| 比他 / 比他更 / 没有他那么 / 跟他一样 | *Adverbios* |\n| 一点儿 / 多了 / 得多 / 两岁 | *Complemento* |\n\n> ⚠️ **Ojo**: **别人** (los demás) no lleva 们: ✗ 别人们.",
+      "skeleton": {
+        "focus": [
+          "adverb"
+        ],
+        "sentences": [
+          {
+            "slots": {
+              "subject": {
+                "zh": "他",
+                "py": "tā"
+              },
+              "adverb": {
+                "zh": "比别人都",
+                "py": "bǐ biérén dōu"
+              },
+              "verb1": {
+                "zh": "高",
+                "py": "gāo"
+              }
+            },
+            "end": "。",
+            "es": "Es más alto que todos los demás."
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "你们班谁",
+                "py": "nǐmen bān shéi"
+              },
+              "adverb": {
+                "zh": "最",
+                "py": "zuì"
+              },
+              "verb1": {
+                "zh": "高",
+                "py": "gāo"
+              }
+            },
+            "end": "？",
+            "es": "¿Quién es el más alto de vuestra clase?"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "zh": "安娜最喜欢听笑话儿。",
+          "py": "Ānnà zuì xǐhuan tīng xiàohuar.",
+          "es": "A Ana lo que más le gusta es oír chistes."
+        },
+        {
+          "zh": "小李的汉语比别人都好。",
+          "py": "Xiǎo Lǐ de Hànyǔ bǐ biérén dōu hǎo.",
+          "es": "El chino de Xiao Li es mejor que el de todos los demás."
+        },
+        {
+          "zh": "咱们班大卫最高。",
+          "py": "Zánmen bān Dàwèi zuì gāo.",
+          "es": "En nuestra clase, David es el más alto."
+        }
+      ]
+    },
+    {
+      "id": "bi-de",
+      "title": "Comparar cómo se hace algo: 他比我跑得快",
+      "unlockedBy": "a2-u07-l2",
+      "markdown": "### 比 + V得\n\nPara comparar **cómo hacen algo** dos personas, se junta 比 con el complemento de grado (V + 得). **Dos órdenes, los dos correctos**:\n\n1. 他**跑得比我快**。 (el 比 dentro del complemento)\n2. 他**比我跑得快**。 (el 比 delante del verbo)\n\n- «Mucho más»: **多了** o **得多** al final: 他比我跑得快**多了**. «Un poco más»: **一点儿**.\n- Con 比 **nunca** va 很 ni 非常.\n- **Negativa**: A + **没有** B + V得 + (那么) adj: 我**没有他**跑得**那么**快.\n- Con objeto, como siempre con 得: el objeto delante como tema (他网球打得比我好).\n\n**En el esqueleto**: 比我 y 没有他 van en *Adverbios*; V得 en *Verbo 1*; el adjetivo, con 多了 / 一点儿, en *Complemento*. En el orden 1, todo «比我快» va en *Complemento*.\n\n> ❌ **Error típico**: 他跑得比我很快 → 他跑得比我快(多了).\n\n> ❌ **Error típico**: 他比我跑快 → 他比我跑**得**快.\n\n> ❌ **Error típico**: 我不比他跑得快 (por «no tan rápido») → 我**没有**他跑得快.",
+      "skeleton": {
+        "focus": [
+          "adverb",
+          "complement"
+        ],
+        "sentences": [
+          {
+            "slots": {
+              "subject": {
+                "zh": "他",
+                "py": "tā"
+              },
+              "verb1": {
+                "zh": "跑得",
+                "py": "pǎo de"
+              },
+              "complement": {
+                "zh": "比我快",
+                "py": "bǐ wǒ kuài"
+              }
+            },
+            "end": "。",
+            "es": "Corre más rápido que yo."
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "他",
+                "py": "tā"
+              },
+              "adverb": {
+                "zh": "比我",
+                "py": "bǐ wǒ"
+              },
+              "verb1": {
+                "zh": "跑得",
+                "py": "pǎo de"
+              },
+              "complement": {
+                "zh": "快",
+                "py": "kuài"
+              }
+            },
+            "end": "。",
+            "es": "Corre más rápido que yo.",
+            "esOrder": [
+              {
+                "text": "Corre",
+                "slot": "verb1"
+              },
+              {
+                "text": "más rápido",
+                "slot": "complement"
+              },
+              {
+                "text": "que yo",
+                "slot": "adverb"
+              }
+            ]
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "我",
+                "py": "wǒ"
+              },
+              "adverb": {
+                "zh": "没有他",
+                "py": "méiyǒu tā"
+              },
+              "verb1": {
+                "zh": "跑得",
+                "py": "pǎo de"
+              },
+              "complement": {
+                "zh": "那么快",
+                "py": "nàme kuài"
+              }
+            },
+            "end": "。",
+            "es": "No corro tan rápido como él."
+          }
+        ]
+      },
+      "examples": [
+        {
+          "zh": "安娜比我游得快多了。",
+          "py": "Ānnà bǐ wǒ yóu de kuài duō le.",
+          "es": "Ana nada mucho más rápido que yo."
+        },
+        {
+          "zh": "他网球打得比我好。",
+          "py": "Tā wǎngqiú dǎ de bǐ wǒ hǎo.",
+          "es": "Juega al tenis mejor que yo."
+        },
+        {
+          "zh": "他比你打得好吗？",
+          "py": "Tā bǐ nǐ dǎ de hǎo ma?",
+          "es": "¿Juega mejor que tú?"
+        }
+      ],
+      "sourceNotes": [
+        "zh-grammar-bi",
+        "zh-particle-de-complement"
+      ]
+    },
+    {
+      "id": "bi-cantidad-accion",
+      "title": "Cuánto antes, cuánto más: 比他早到十分钟, 多吃了三个",
+      "unlockedBy": "b1-u09-l4",
+      "markdown": "### Comparar acciones con cantidad\n\n| Qué comparas | Fórmula | Ejemplo |\n|---|---|---|\n| cómo se hace | A 比 B + V得 + adj | 她**比我**说得**好** |\n| (otra forma) | A + V得 + 比 B + adj | 我跑得**比他快** |\n| cuánto antes / más | A 比 B + 早 / 晚 / 多 / 少 + V + cantidad | 我**比他早**到**十分钟** |\n\n- **早 / 晚 / 多 / 少 van delante del verbo**: 早到, 多吃, 少用. En español, «llegar **antes**», «comer **más**».\n- La **cantidad** va detrás, como la duración: 早到**十分钟**, 多吃了**三个饺子**.\n- **Nunca 很 / 非常** con 比: ✗ 她说得比我很好.\n\n**En el esqueleto**: 比 + B (+ 早 / 多) en *Adverbios*, el verbo en *Verbo 1* y la cantidad en *Complemento* u *Objeto*.\n\n> ❌ **Error típico**: 我到比他早十分钟 → 我**比他早到**十分钟.",
+      "skeleton": {
+        "focus": [
+          "adverb",
+          "complement"
+        ],
+        "sentences": [
+          {
+            "slots": {
+              "subject": {
+                "zh": "小李",
+                "py": "Xiǎo Lǐ"
+              },
+              "time": {
+                "zh": "每天",
+                "py": "měi tiān"
+              },
+              "adverb": {
+                "zh": "比我早",
+                "py": "bǐ wǒ zǎo"
+              },
+              "verb1": {
+                "zh": "到",
+                "py": "dào"
+              },
+              "complement": {
+                "zh": "十分钟",
+                "py": "shí fēnzhōng"
+              }
+            },
+            "end": "。",
+            "es": "Xiao Li llega todos los días diez minutos antes que yo.",
+            "esOrder": [
+              {
+                "text": "Xiao Li",
+                "slot": "subject"
+              },
+              {
+                "text": "llega",
+                "slot": "verb1"
+              },
+              {
+                "text": "todos los días",
+                "slot": "time"
+              },
+              {
+                "text": "diez minutos",
+                "slot": "complement"
+              },
+              {
+                "text": "antes que yo",
+                "slot": "adverb"
+              }
+            ]
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "哥哥",
+                "py": "gēge"
+              },
+              "adverb": {
+                "zh": "比弟弟多",
+                "py": "bǐ dìdi duō"
+              },
+              "verb1": {
+                "zh": "吃了",
+                "py": "chī le"
+              },
+              "object": {
+                "zh": "三个饺子",
+                "py": "sān ge jiǎozi"
+              }
+            },
+            "end": "。",
+            "es": "El hermano mayor se ha comido tres empanadillas más que el pequeño."
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "我",
+                "py": "wǒ"
+              },
+              "verb1": {
+                "zh": "跑得",
+                "py": "pǎo de"
+              },
+              "complement": {
+                "zh": "比大卫快",
+                "py": "bǐ Dàwèi kuài"
+              }
+            },
+            "end": "。",
+            "es": "Corro más rápido que David."
+          }
+        ]
+      },
+      "examples": [
+        {
+          "zh": "安娜比我说得流利。",
+          "py": "Ānnà bǐ wǒ shuō de liúlì.",
+          "es": "Ana habla con más soltura que yo."
+        },
+        {
+          "zh": "我今天比平时晚起了半个小时。",
+          "py": "Wǒ jīntiān bǐ píngshí wǎn qǐ le bàn ge xiǎoshí.",
+          "es": "Hoy me he levantado media hora más tarde de lo normal."
+        },
+        {
+          "zh": "你应该少喝一点儿咖啡。",
+          "py": "Nǐ yīnggāi shǎo hē yìdiǎnr kāfēi.",
+          "es": "Deberías beber un poco menos de café."
+        },
+        {
+          "zh": "你比他高多少？",
+          "py": "Nǐ bǐ tā gāo duōshao?",
+          "es": "¿Cuánto más alto eres que él?"
+        }
+      ]
+    },
+    {
+      "id": "bi-matices",
+      "title": "Matices: 更 / 还, 不比 y 和…相比",
+      "unlockedBy": "b1-u09-l4",
+      "markdown": "### Afinar la comparación\n\n- **更 / 还 + adjetivo** = «aún más». **还** añade **sorpresa** (B ya era mucho): 今天比昨天**还**冷！\n- **多了** detrás = «mucho más»: 上海的房租比马德里贵**多了**.\n- **不比** ≠ **没有**:\n  - 我**不比**他高 = no soy más alto que él (más o menos igual, o «no es verdad que lo sea»).\n  - 我**没有**他高 = soy más bajo.\n- **和……相比，** va delante, con coma: 和马德里相比，上海大多了.\n\n**En el esqueleto**: 比 + B (+ 更 / 还) y 不比 + B en *Adverbios*; 和…相比 en *Tiempo inicial*; 多了 en *Complemento*.\n\n> 💡 **Truco**: 不比 sirve mucho para defenderse con suavidad: 我的汉语**不比**他差 = mi chino no es peor que el suyo.",
+      "skeleton": {
+        "focus": [
+          "adverb",
+          "time0"
+        ],
+        "sentences": [
+          {
+            "slots": {
+              "subject": {
+                "zh": "新手机的功能",
+                "py": "xīn shǒujī de gōngnéng"
+              },
+              "adverb": {
+                "zh": "比旧手机还",
+                "py": "bǐ jiù shǒujī hái"
+              },
+              "verb1": {
+                "zh": "多",
+                "py": "duō"
+              }
+            },
+            "end": "。",
+            "es": "El móvil nuevo tiene todavía más funciones que el viejo."
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "我的汉语水平",
+                "py": "wǒ de Hànyǔ shuǐpíng"
+              },
+              "adverb": {
+                "zh": "不比他",
+                "py": "bù bǐ tā"
+              },
+              "verb1": {
+                "zh": "低",
+                "py": "dī"
+              }
+            },
+            "end": "。",
+            "es": "Mi nivel de chino no es más bajo que el suyo."
+          },
+          {
+            "slots": {
+              "time0": {
+                "zh": "和马德里相比，",
+                "py": "hé Mǎdélǐ xiāngbǐ,"
+              },
+              "subject": {
+                "zh": "上海",
+                "py": "Shànghǎi"
+              },
+              "verb1": {
+                "zh": "大",
+                "py": "dà"
+              },
+              "complement": {
+                "zh": "多了",
+                "py": "duō le"
+              }
+            },
+            "end": "。",
+            "es": "Comparado con Madrid, Shanghái es mucho más grande."
+          }
+        ]
+      },
+      "examples": [
+        {
+          "zh": "今天比昨天还冷！",
+          "py": "Jīntiān bǐ zuótiān hái lěng!",
+          "es": "¡Hoy hace todavía más frío que ayer!"
+        },
+        {
+          "zh": "上海的房租比马德里贵多了。",
+          "py": "Shànghǎi de fángzū bǐ Mǎdélǐ guì duō le.",
+          "es": "Los alquileres de Shanghái son mucho más caros que los de Madrid."
+        },
+        {
+          "zh": "和旧手机相比，新手机更加好用。",
+          "py": "Hé jiù shǒujī xiāngbǐ, xīn shǒujī gèngjiā hǎoyòng.",
+          "es": "Comparado con el viejo, el móvil nuevo es todavía más práctico."
+        },
+        {
+          "zh": "我不比他高，我们差不多。",
+          "py": "Wǒ bù bǐ tā gāo, wǒmen chàbuduō.",
+          "es": "No soy más alto que él: somos más o menos iguales."
+        }
+      ]
+    }
+  ]
+}

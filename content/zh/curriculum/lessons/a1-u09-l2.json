@@ -1,0 +1,131 @@
+{
+  "id": "a1-u09-l2",
+  "title": "Un té, por favor: 要 y los clasificadores 杯 碗 瓶 盘",
+  "zh": "我要一杯茶",
+  "goal": "Pedir comida y bebida con 要 + número + clasificador + nombre (一杯茶, 两碗米饭).",
+  "minutes": 14,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "要", "pinyin": "yào", "es": "querer, pedir (+ nombre); ir a, querer (+ verbo)", "note": "要 + nombre = «quiero / ponme»: es lo que se dice al pedir. Más decidido que 想." },
+    { "hanzi": "杯", "pinyin": "bēi", "es": "(clasificador) vaso, taza", "note": "一杯茶 un té, 一杯牛奶 un vaso de leche." },
+    { "hanzi": "碗", "pinyin": "wǎn", "es": "cuenco, bol; (clasificador) un bol de", "note": "一碗米饭, 一碗面条儿." },
+    { "hanzi": "瓶", "pinyin": "píng", "es": "(clasificador) botella", "note": "一瓶水, 一瓶酒." },
+    { "hanzi": "盘", "pinyin": "pán", "es": "(clasificador) plato, fuente", "note": "一盘饺子. Fuera del nivel 1, pero imprescindible en el restaurante." },
+    { "hanzi": "饺子", "pinyin": "jiǎozi", "es": "jiaozi (empanadillas hervidas)", "note": "Se piden por plato (一盘) o por peso; sueltos: 一个饺子." },
+    { "hanzi": "包子", "pinyin": "bāozi", "es": "baozi (bollo relleno al vapor)", "note": "El desayuno típico: 两个包子 y una leche de soja." },
+    { "hanzi": "瓶子", "pinyin": "píngzi", "es": "botella (el objeto)", "note": "瓶子 es el nombre; 瓶 sin 子 es el clasificador: 一瓶水 (no *一瓶子水 en el uso normal)." }
+  ],
+  "extraVocab": ["盘"],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "我要一杯茶。", "py": "Wǒ yào yì bēi chá.", "es": "Quiero un té." },
+        { "zh": "他要两碗米饭。", "py": "Tā yào liǎng wǎn mǐfàn.", "es": "Él quiere dos boles de arroz." },
+        { "zh": "你要几个包子？", "py": "Nǐ yào jǐ ge bāozi?", "es": "¿Cuántos baozi quieres?" }
+      ]
+    },
+    { "type": "vocab", "title": "Pedir: 要 y los recipientes", "words": ["要", "杯", "碗", "瓶", "盘", "饺子", "包子", "瓶子"] },
+    {
+      "type": "phonetics-drill",
+      "title": "Aspiradas: 杯 bēi / 配 pèi, 盘 pán / 白 bái",
+      "markdown": "En español, *b* y *p* se distinguen por la **voz** (vibran o no las cuerdas vocales). En chino **las dos son sordas**: lo que las separa es el **aire**.\n\n- **b** (杯 bēi, 包 bāo, 白 bái): sin soplo, seca, casi como una *p* española suave.\n- **p** (盘 pán, 瓶 píng, 配 pèi): con un **golpe de aire** fuerte. Ponte la mano delante de la boca: con *p* notas el aire, con *b* casi nada.\n\nPrueba del papel: un trozo de papel delante de los labios se mueve con 盘 y no con 白.",
+      "items": [
+        { "audio": "杯", "options": ["bēi", "pēi", "fēi"], "answer": 0, "explain": "b sin aire; primer tono alto y plano." },
+        { "audio": "盘", "options": ["pán", "bán", "páng"], "answer": 0, "explain": "p con soplo fuerte; termina en -n (punta de la lengua)." },
+        { "audio": "白", "options": ["bái", "pái", "bǎi"], "answer": 0, "explain": "b sin aire; segundo tono, sube." },
+        { "audio": "瓶", "options": ["píng", "bíng", "pín"], "answer": 0, "explain": "p aspirada y final -ng." },
+        { "audio": "包子", "options": ["bāozi", "pāozi", "bāocí"], "answer": 0, "explain": "bāo sin aire; zi en tono neutro, corto y flojo." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["杯", "碗"],
+      "mnemonics": {
+        "杯": "木 (madera) + 不 (pista de sonido bù → bēi): los primeros vasos eran de madera.",
+        "碗": "石 (piedra) + 宛 wǎn (pista de sonido): un cuenco duro como la piedra, de cerámica."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "要 + número + clasificador + nombre",
+      "markdown": "Para **pedir** se usa **要**. Puede ir de dos maneras:\n\n1. **要 + nombre**: aquí 要 es el **verbo** principal (hueco Verbo 1): 我**要**一杯茶 = quiero / ponme un té.\n2. **要 + verbo**: aquí 要 es **auxiliar**, como 想: 我**要**喝水 = quiero (voy a) beber agua. Suena más decidido que 想.\n\nCon número, el chino **no puede** pegar el número al nombre: necesita un **clasificador** en medio, como en «un *vaso* de agua» o «una *botella* de vino», pero **siempre**:\n\n| número | clasificador | nombre |\n|---|---|---|\n| 一 yì | 杯 bēi | 茶 |\n| 两 liǎng | 碗 wǎn | 米饭 |\n| 一 yì | 瓶 píng | 水 |\n| 一 yì | 盘 pán | 饺子 |\n| 两 liǎng | 个 ge | 包子 |\n\n- Delante de clasificador, «dos» es **两**, no 二.\n- Todo el bloque *número + clasificador + nombre* va junto en el hueco **Objeto**.\n- **Negativa**: 不要 (**bú** yào) + nombre = «no quiero». Para *no quiero hacer algo*, mejor **不想** + verbo: 不要 + verbo suena a orden («¡no bebas!»).\n- **Pregunta**: 你要**什么**？, 你要**几**杯？ (几 + clasificador), 你要**不要**…？",
+      "focus": ["aux", "object"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "verb1": { "zh": "要", "py": "yào" }, "object": { "zh": "一杯茶", "py": "yì bēi chá" } }, "end": "。", "es": "Quiero un té." },
+        { "slots": { "subject": { "zh": "他", "py": "tā" }, "verb1": { "zh": "要", "py": "yào" }, "object": { "zh": "两碗米饭", "py": "liǎng wǎn mǐfàn" } }, "end": "。", "es": "Él quiere dos boles de arroz." },
+        { "slots": { "subject": { "zh": "我们", "py": "wǒmen" }, "verb1": { "zh": "要", "py": "yào" }, "object": { "zh": "一盘饺子", "py": "yì pán jiǎozi" } }, "end": "。", "es": "Queremos un plato de jiaozi." },
+        { "slots": { "subject": { "zh": "安娜", "py": "Ānnà" }, "aux": { "zh": "要", "py": "yào" }, "verb1": { "zh": "喝", "py": "hē" }, "object": { "zh": "一瓶水", "py": "yì píng shuǐ" } }, "end": "。", "es": "Ana quiere beberse una botella de agua." },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "time": { "zh": "早上", "py": "zǎoshang" }, "aux": { "zh": "要", "py": "yào" }, "verb1": { "zh": "吃", "py": "chī" }, "object": { "zh": "两个包子", "py": "liǎng ge bāozi" } }, "end": "。", "es": "Por la mañana me voy a comer dos baozi.", "esOrder": [{ "text": "(Yo)", "slot": "subject" }, { "text": "me voy a", "slot": "aux" }, { "text": "comer", "slot": "verb1" }, { "text": "dos baozi", "slot": "object" }, { "text": "por la mañana", "slot": "time" }] }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "不", "py": "bú" }, "verb1": { "zh": "要", "py": "yào" }, "object": { "zh": "肉", "py": "ròu" } }, "end": "。", "es": "No quiero carne." },
+        { "slots": { "subject": { "zh": "小李", "py": "Xiǎo Lǐ" }, "adverb": { "zh": "不", "py": "bù" }, "aux": { "zh": "想", "py": "xiǎng" }, "verb1": { "zh": "喝", "py": "hē" }, "object": { "zh": "牛奶", "py": "niúnǎi" } }, "end": "。", "es": "Xiao Li no quiere beber leche." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "要", "py": "yào" }, "object": { "zh": "什么", "py": "shénme" } }, "end": "？", "es": "¿Qué quieres?" },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "要", "py": "yào" }, "object": { "zh": "几杯茶", "py": "jǐ bēi chá" } }, "end": "？", "es": "¿Cuántos tés quieres?" },
+        { "slots": { "subject": { "zh": "你们", "py": "nǐmen" }, "verb1": { "zh": "要不要", "py": "yào bu yào" }, "object": { "zh": "饺子", "py": "jiǎozi" } }, "end": "？", "es": "¿Queréis jiaozi o no?" }
+      ],
+      "mistakes": [
+        { "wrong": "我要一茶。", "right": "我要一杯茶。", "why": "Entre número y nombre siempre va un clasificador." },
+        { "wrong": "他要二碗米饭。", "right": "他要两碗米饭。", "why": "Delante de un clasificador, «dos» es 两." },
+        { "wrong": "我要水一瓶。", "right": "我要一瓶水。", "why": "Número + clasificador van delante del nombre, nunca detrás." },
+        { "wrong": "我不要喝牛奶。", "right": "我不想喝牛奶。", "why": "不要 + verbo suena a prohibición («¡no bebas leche!»). Para «no quiero beber», 不想." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "El puesto de baozi, a las ocho de la mañana",
+      "lines": [
+        { "speaker": "卖包子的", "zh": "你好！你要什么？", "py": "Nǐ hǎo! Nǐ yào shénme?", "es": "¡Hola! ¿Qué te pongo?" },
+        { "speaker": "雨果", "zh": "我要两个包子。", "py": "Wǒ yào liǎng ge bāozi.", "es": "Dos baozi, por favor." },
+        { "speaker": "卖包子的", "zh": "好。你要喝什么？有茶，也有牛奶。", "py": "Hǎo. Nǐ yào hē shénme? Yǒu chá, yě yǒu niúnǎi.", "es": "Vale. ¿Qué quieres beber? Hay té y también leche." },
+        { "speaker": "雨果", "zh": "我要一杯牛奶。安娜，你要什么？", "py": "Wǒ yào yì bēi niúnǎi. Ānnà, nǐ yào shénme?", "es": "Un vaso de leche. Ana, ¿tú qué quieres?" },
+        { "speaker": "安娜", "zh": "我很饿！我要一盘饺子和一碗面条儿。", "py": "Wǒ hěn è! Wǒ yào yì pán jiǎozi hé yì wǎn miàntiáor.", "es": "¡Tengo muchísima hambre! Un plato de jiaozi y un bol de fideos." },
+        { "speaker": "雨果", "zh": "一盘饺子和一碗面条儿？你真饿！", "py": "Yì pán jiǎozi hé yì wǎn miàntiáor? Nǐ zhēn è!", "es": "¿Un plato de jiaozi y un bol de fideos? ¡Qué hambre tienes!" },
+        { "speaker": "安娜", "zh": "对！我也要一瓶水。", "py": "Duì! Wǒ yě yào yì píng shuǐ.", "es": "¡Pues sí! Y también una botella de agua." },
+        { "speaker": "卖包子的", "zh": "好，两个包子、一杯牛奶、一盘饺子、一碗面条儿、一瓶水。", "py": "Hǎo, liǎng ge bāozi, yì bēi niúnǎi, yì pán jiǎozi, yì wǎn miàntiáor, yì píng shuǐ.", "es": "Vale: dos baozi, una leche, un plato de jiaozi, un bol de fideos y una botella de agua." },
+        { "speaker": "雨果", "zh": "对，谢谢！", "py": "Duì, xièxie!", "es": "Eso es, ¡gracias!" }
+      ],
+      "notes": "En los puestos de la calle se pide directamente con 我要… o incluso solo con la cantidad: «两个包子！». No hace falta decir «por favor» en cada frase: el tono amable y un 谢谢 al final bastan. Fíjate en la coma de enumerar 、, propia del chino."
+    },
+    { "type": "exercises", "count": 15, "bank": ["g-measure-words", "g-modal-verbs", "u05"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "我" }, "verb1": { "zh": "要" }, "object": { "zh": "一杯茶" } }, "end": "。", "es": "Quiero un té." }, "distractors": ["一个茶"] },
+        { "sentence": { "slots": { "subject": { "zh": "他" }, "verb1": { "zh": "要" }, "object": { "zh": "两碗米饭" } }, "end": "。", "es": "Él quiere dos boles de arroz." }, "distractors": ["二碗米饭"] },
+        { "sentence": { "slots": { "subject": { "zh": "你" }, "verb1": { "zh": "要" }, "object": { "zh": "几个包子" } }, "end": "？", "es": "¿Cuántos baozi quieres?" }, "distractors": ["吗"] },
+        { "sentence": { "slots": { "time0": { "zh": "明天早上" }, "subject": { "zh": "我和安娜" }, "adverb": { "zh": "都" }, "aux": { "zh": "要" }, "verb1": { "zh": "去" }, "verb2": { "zh": "吃" }, "object": { "zh": "一盘饺子" } }, "end": "。", "es": "Mañana por la mañana Ana y yo vamos a ir a comer un plato de jiaozi." }, "distractors": ["一饺子"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "我要一杯茶。", "py": "Wǒ yào yì bēi chá.", "es": "Quiero un té." },
+        { "zh": "我要两个包子和一杯牛奶。", "py": "Wǒ yào liǎng ge bāozi hé yì bēi niúnǎi.", "es": "Quiero dos baozi y un vaso de leche." },
+        { "zh": "你要几碗米饭？", "py": "Nǐ yào jǐ wǎn mǐfàn?", "es": "¿Cuántos boles de arroz quieres?" },
+        { "zh": "我不要肉，谢谢。", "py": "Wǒ bú yào ròu, xièxie.", "es": "No quiero carne, gracias." }
+      ],
+      "respond": [
+        { "q": { "zh": "你要什么？", "py": "Nǐ yào shénme?", "es": "¿Qué quieres?" }, "model": { "zh": "我要一盘饺子。", "py": "Wǒ yào yì pán jiǎozi.", "es": "Quiero un plato de jiaozi." } },
+        { "q": { "zh": "你要几个包子？", "py": "Nǐ yào jǐ ge bāozi?", "es": "¿Cuántos baozi quieres?" }, "model": { "zh": "我要两个包子。", "py": "Wǒ yào liǎng ge bāozi.", "es": "Quiero dos." } },
+        { "q": { "zh": "你要喝什么？", "py": "Nǐ yào hē shénme?", "es": "¿Qué quieres beber?" }, "model": { "zh": "我要一瓶水。", "py": "Wǒ yào yì píng shuǐ.", "es": "Una botella de agua." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "El desayuno de Ana",
+      "text": "早上，雨果和安娜去吃早饭。雨果要两个包子和一杯牛奶。安娜很饿，她要一盘饺子和一碗面条儿，也要一瓶水。雨果说：“你真饿！”安娜说：“对，我今天很饿！”",
+      "es": "Por la mañana, Hugo y Ana van a desayunar. Hugo pide dos baozi y un vaso de leche. Ana tiene mucha hambre: pide un plato de jiaozi y un bol de fideos, y también una botella de agua. Hugo dice: «¡Qué hambre tienes!». Ana dice: «¡Sí, hoy tengo muchísima hambre!».",
+      "questions": [
+        { "q": "¿Cuántos baozi pide Hugo?", "options": ["两个", "一个", "三个"], "answer": 0 },
+        { "q": "¿Qué bebe Ana?", "options": ["一瓶水", "一杯茶", "一杯牛奶"], "answer": 0 },
+        { "q": "¿Con qué clasificador se piden los fideos?", "options": ["碗", "杯", "瓶"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

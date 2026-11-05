@@ -1,0 +1,131 @@
+{
+  "id": "a1-u20-l4",
+  "title": "Me he quedado sin batería: 手机没电了",
+  "zh": "我的手机没电了",
+  "goal": "Hablar del estado del móvil (sin batería, sin cobertura, apagado) con el 了 del cambio, y pedir o prohibir con 别: 别关机！",
+  "minutes": 14,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "电", "pinyin": "diàn", "es": "electricidad; batería", "note": "没电了 = se ha quedado sin batería." },
+    { "hanzi": "充电", "pinyin": "chōngdiàn", "es": "cargar (la batería)", "note": "Fuera del HSK 1–3. Verbo separable: 充一下儿电." },
+    { "hanzi": "充电宝", "pinyin": "chōngdiànbǎo", "es": "batería externa (powerbank)", "note": "Fuera del HSK. En China se alquilan en tiendas y restaurantes escaneando un código." },
+    { "hanzi": "开机", "pinyin": "kāijī", "es": "encender (el móvil, el ordenador)" },
+    { "hanzi": "关机", "pinyin": "guānjī", "es": "apagar (el móvil, el ordenador)", "note": "您拨打的电话已关机 = el teléfono al que llama está apagado (mensaje grabado)." },
+    { "hanzi": "关", "pinyin": "guān", "es": "cerrar; apagar", "note": "关门 = cerrar la puerta; 关灯 = apagar la luz." },
+    { "hanzi": "关上", "pinyin": "guānshang", "es": "cerrar (del todo)", "note": "请关上门 = cierra la puerta, por favor." },
+    { "hanzi": "打开", "pinyin": "dǎkāi", "es": "abrir; encender (una app, un aparato)", "note": "打开微信 = abrir WeChat." },
+    { "hanzi": "信号", "pinyin": "xìnhào", "es": "señal, cobertura", "note": "没有信号 = no hay cobertura." }
+  ],
+  "extraVocab": ["充电", "充电宝"],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "对不起，我的手机没电了。", "py": "Duìbuqǐ, wǒ de shǒujī méi diàn le.", "es": "Perdona, me he quedado sin batería." },
+        { "zh": "这儿没有信号。", "py": "Zhèr méiyǒu xìnhào.", "es": "Aquí no hay cobertura." },
+        { "zh": "上课的时候别开机。", "py": "Shàngkè de shíhou bié kāijī.", "es": "No enciendas el móvil durante la clase." }
+      ]
+    },
+    { "type": "vocab", "title": "El móvil", "words": ["电", "充电", "充电宝", "开机", "关机", "关", "关上", "打开", "信号"] },
+    {
+      "type": "phonetics-drill",
+      "title": "g / k y d / t: 关机 y 开机",
+      "markdown": "En chino, lo que distingue **g** de **k** (y **d** de **t**) no es la voz, sino el **aire**:\n\n- **g**, **d**: sin aire, como la «c» de *casa* y la «t» de *tela* dichas suaves. 关 *guān*, 电 *diàn*.\n- **k**, **t**: con un **golpe de aire** fuerte. 开 *kāi*, 他 *tā*.\n\nPon la mano delante de la boca: con 开 notarás el aire; con 关, casi nada. Y lo mismo con **zh** (sin aire) y **ch** (con aire): 充电 *chōngdiàn*.",
+      "items": [
+        { "audio": "关机", "options": ["guānjī", "kuānjī", "guānqī"], "answer": 0, "explain": "g y j, las dos sin aire." },
+        { "audio": "开机", "options": ["kāijī", "gāijī", "kāiqī"], "answer": 0, "explain": "k con aire." },
+        { "audio": "电", "options": ["diàn", "tiàn", "dàn"], "answer": 0, "explain": "d sin aire; ian suena casi «ien»." },
+        { "audio": "充电", "options": ["chōngdiàn", "zhōngdiàn", "chōngtiàn"], "answer": 0, "explain": "ch con aire; d sin aire." },
+        { "audio": "信号", "options": ["xìnhào", "xìnghào", "xìnhǎo"], "answer": 0, "explain": "信 xìn (-n) + 号 hào (4.º)." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["电", "关"],
+      "mnemonics": {
+        "电": "Viene de un rayo que sale de entre las nubes: el cuadro es la nube y la cola que baja, el relámpago. Rayo → electricidad.",
+        "关": "Simplificación de 關: la tranca que atraviesa una puerta (门) para cerrarla. Por eso 关 es cerrar y apagar."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "El móvil cambia de estado: …了",
+      "markdown": "El 了 del cambio (U18) es el que más usarás con el móvil: anuncia que **algo acaba de cambiar**.\n\n- 我的手机**没电了**。 → antes tenía batería; ahora, no.\n- 手机**开机了**。 → ya está encendido.\n- 他的手机**关机了**。 → está apagado (y por eso no contesta).\n\nCompara: 这儿**没有信号** (aquí no hay cobertura: un hecho) / **没有信号了** (se ha ido la cobertura: un cambio).\n\n**打开 / 关上** + objeto: 打开**微信**, 关上**门**. El objeto va detrás.\n\n**别** para prohibir: 别关机！ 上课的时候别开机。",
+      "focus": ["particle"],
+      "sentences": [
+        { "slots": { "subject": { "zh": "我的手机", "py": "wǒ de shǒujī" }, "adverb": { "zh": "没", "py": "méi" }, "verb1": { "zh": "有", "py": "yǒu" }, "object": { "zh": "电", "py": "diàn" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Mi móvil se ha quedado sin batería." },
+        { "slots": { "subject": { "zh": "手机", "py": "shǒujī" }, "verb1": { "zh": "开机", "py": "kāijī" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "El móvil ya está encendido." },
+        { "slots": { "subject": { "zh": "小李的手机", "py": "Xiǎo Lǐ de shǒujī" }, "verb1": { "zh": "关机", "py": "guānjī" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "El móvil de Xiao Li está apagado." },
+        { "slots": { "subject": { "zh": "他", "py": "tā" }, "verb1": { "zh": "打开了", "py": "dǎkāi le" }, "object": { "zh": "电脑", "py": "diànnǎo" } }, "end": "。", "es": "Ha encendido el ordenador." },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "在", "py": "zài" }, "verb1": { "zh": "充电", "py": "chōngdiàn" }, "particle": { "zh": "呢", "py": "ne" } }, "end": "。", "es": "Estoy cargando el móvil." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "这儿", "py": "zhèr" }, "adverb": { "zh": "没", "py": "méi" }, "verb1": { "zh": "有", "py": "yǒu" }, "object": { "zh": "信号", "py": "xìnhào" } }, "end": "。", "es": "Aquí no hay cobertura." },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "没", "py": "méi" }, "verb1": { "zh": "关机", "py": "guānjī" } }, "end": "。", "es": "No he apagado el móvil." },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "adverb": { "zh": "别", "py": "bié" }, "verb1": { "zh": "关机", "py": "guānjī" } }, "end": "！", "es": "¡No apagues el móvil!" }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你的手机", "py": "nǐ de shǒujī" }, "verb1": { "zh": "有", "py": "yǒu" }, "object": { "zh": "电", "py": "diàn" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿Tienes batería en el móvil?" },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "开机", "py": "kāijī" }, "particle": { "zh": "了没有", "py": "le méiyǒu" } }, "end": "？", "es": "¿Has encendido ya el móvil?" }
+      ],
+      "mistakes": [
+        { "wrong": "我的手机是没电。", "right": "我的手机没电了。", "why": "Sin 是; y con 了, porque se acaba de quedar sin batería." },
+        { "wrong": "请关门上。", "right": "请关上门。", "why": "关上 va junto y el objeto detrás." },
+        { "wrong": "你没关机！(como orden)", "right": "你别关机！", "why": "Para prohibir, 别." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "¿Por qué no contestabas?",
+      "lines": [
+        { "speaker": "安娜", "zh": "雨果，我给你打电话，你的手机关机了。", "py": "Yǔguǒ, wǒ gěi nǐ dǎ diànhuà, nǐ de shǒujī guānjī le.", "es": "Hugo, te he llamado y tenías el móvil apagado." },
+        { "speaker": "雨果", "zh": "对不起，我的手机没电了。", "py": "Duìbuqǐ, wǒ de shǒujī méi diàn le.", "es": "Perdona, me he quedado sin batería." },
+        { "speaker": "安娜", "zh": "你没有充电宝吗？", "py": "Nǐ méiyǒu chōngdiànbǎo ma?", "es": "¿No tienes batería externa?" },
+        { "speaker": "雨果", "zh": "有，充电宝也没电了！", "py": "Yǒu, chōngdiànbǎo yě méi diàn le!", "es": "Sí, ¡pero también se ha quedado sin batería!" },
+        { "speaker": "安娜", "zh": "你现在在哪儿？", "py": "Nǐ xiànzài zài nǎr?", "es": "¿Dónde estás ahora?" },
+        { "speaker": "雨果", "zh": "我在图书馆充电呢。这儿的信号不太好。", "py": "Wǒ zài túshūguǎn chōngdiàn ne. Zhèr de xìnhào bú tài hǎo.", "es": "Estoy cargando el móvil en la biblioteca. Aquí la cobertura no es muy buena." },
+        { "speaker": "安娜", "zh": "你打开微信，我给你发了一条信息。", "py": "Nǐ dǎkāi Wēixìn, wǒ gěi nǐ fā le yì tiáo xìnxī.", "es": "Abre WeChat: te he mandado un mensaje." },
+        { "speaker": "雨果", "zh": "好，我开机了……收到了！", "py": "Hǎo, wǒ kāijī le…… shōudào le!", "es": "Vale, ya lo he encendido… ¡Recibido!" },
+        { "speaker": "安娜", "zh": "上课的时候别关机，王老师常常发信息。", "py": "Shàngkè de shíhou bié guānjī, Wáng lǎoshī chángcháng fā xìnxī.", "es": "Durante las clases no apagues el móvil: la profesora Wang manda mensajes a menudo." }
+      ],
+      "notes": "Sin móvil en China no puedes pagar, coger el metro ni enseñar tu código de entrada al campus. Por eso hay powerbanks de alquiler (共享充电宝) en casi todas las tiendas y restaurantes."
+    },
+    { "type": "exercises", "count": 15, "bank": ["g-le", "g-bu-mei", "u14"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "我的手机" }, "adverb": { "zh": "没" }, "verb1": { "zh": "有" }, "object": { "zh": "电" }, "particle": { "zh": "了" } }, "end": "。", "es": "Me he quedado sin batería." }, "distractors": ["是"] },
+        { "sentence": { "slots": { "subject": { "zh": "你" }, "adverb": { "zh": "别" }, "verb1": { "zh": "关机" } }, "end": "！", "es": "¡No apagues el móvil!" }, "distractors": ["没"] },
+        { "sentence": { "slots": { "subject": { "zh": "请你" }, "verb1": { "zh": "关上" }, "object": { "zh": "门" } }, "end": "。", "es": "Cierra la puerta, por favor." } },
+        { "sentence": { "slots": { "time0": { "zh": "上课的时候" }, "subject": { "zh": "我们" }, "adverb": { "zh": "都" }, "aux": { "zh": "要" }, "verb1": { "zh": "关机" } }, "end": "。", "es": "Durante la clase todos tenemos que apagar el móvil." } },
+        { "sentence": { "slots": { "subject": { "zh": "雨果" }, "time": { "zh": "现在" }, "adverb": { "zh": "正" }, "place": { "zh": "在图书馆" }, "verb1": { "zh": "给手机充" }, "object": { "zh": "电" }, "particle": { "zh": "呢" } }, "end": "。", "es": "Hugo está cargando el móvil en la biblioteca ahora mismo." } }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "对不起，我的手机没电了。", "py": "Duìbuqǐ, wǒ de shǒujī méi diàn le.", "es": "Perdona, me he quedado sin batería." },
+        { "zh": "这儿没有信号。", "py": "Zhèr méiyǒu xìnhào.", "es": "Aquí no hay cobertura." },
+        { "zh": "你打开微信。", "py": "Nǐ dǎkāi Wēixìn.", "es": "Abre WeChat." },
+        { "zh": "别关机！", "py": "Bié guānjī!", "es": "¡No apagues el móvil!" }
+      ],
+      "respond": [
+        { "q": { "zh": "你的手机怎么关机了？", "py": "Nǐ de shǒujī zěnme guānjī le?", "es": "¿Cómo es que tenías el móvil apagado?" }, "model": { "zh": "对不起，没电了。", "py": "Duìbuqǐ, méi diàn le.", "es": "Perdona, me quedé sin batería." } },
+        { "q": { "zh": "你有充电宝吗？", "py": "Nǐ yǒu chōngdiànbǎo ma?", "es": "¿Tienes batería externa?" }, "model": { "zh": "有，你用吧。", "py": "Yǒu, nǐ yòng ba.", "es": "Sí, úsala." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Un móvil viejo",
+      "text": "雨果的手机很老，常常没电。今天上午上课的时候，他的手机关机了。王老师给他发了信息，他没收到。下课了，他去图书馆充电。图书馆的信号不太好。他开机了，收到了王老师的信息：“明天八点上课。”",
+      "es": "El móvil de Hugo es muy viejo y se queda sin batería a menudo. Esta mañana, en clase, se le ha apagado. La profesora Wang le ha mandado un mensaje y no le ha llegado. Al acabar la clase ha ido a cargarlo a la biblioteca. Allí la cobertura no es muy buena. Lo ha encendido y le ha llegado el mensaje de la profesora: «Mañana la clase es a las ocho».",
+      "questions": [
+        { "q": "¿Qué le pasa a menudo al móvil de Hugo?", "options": ["没电", "没有信号", "不能开机"], "answer": 0 },
+        { "q": "¿Por qué no recibió el mensaje en clase?", "options": ["El móvil estaba apagado", "No tenía cobertura", "No tenía WeChat"], "answer": 0 },
+        { "q": "¿Dónde cargó el móvil?", "options": ["在图书馆", "在宿舍", "在教室"], "answer": 0 },
+        { "q": "¿Qué decía el mensaje?", "options": ["明天八点上课。", "明天不上课。", "今天八点上课。"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

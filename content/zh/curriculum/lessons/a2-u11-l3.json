@@ -1,0 +1,139 @@
+{
+  "id": "a2-u11-l3",
+  "title": "Tan pronto, tan tarde: 才 y 就",
+  "zh": "他十点才来",
+  "goal": "Decir que algo pasa antes de lo esperado (就…了) o más tarde (才…), y que una cantidad es poca (才 + número), hablando de horarios y horas extra.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "才", "pinyin": "cái", "es": "no… hasta, tan tarde; solo, apenas; acabar de", "note": "十点才来 = no vino hasta las diez. 才五个人 = solo cinco personas. 他才到家 = acaba de llegar a casa." },
+    { "hanzi": "加班", "pinyin": "jiābān", "es": "hacer horas extra", "note": "Verbo separable: 加了两个小时班." },
+    { "hanzi": "能够", "pinyin": "nénggòu", "es": "poder, ser capaz de", "note": "Como 能, algo más formal." },
+    { "hanzi": "只能", "pinyin": "zhǐ néng", "es": "solo poder, no tener más remedio que", "note": "我们只能加班了 = no nos queda otra que hacer horas extra." },
+    { "hanzi": "努力", "pinyin": "nǔlì", "es": "esforzarse; con esfuerzo", "note": "努力学习 = estudiar con empeño. Ojo: n, no l." },
+    { "hanzi": "结果", "pinyin": "jiéguǒ", "es": "resultado; al final, total que…", "note": "考试的结果 = el resultado del examen. Al principio de frase: «al final, resultó que…»." },
+    { "hanzi": "通过", "pinyin": "tōngguò", "es": "aprobar, pasar (un examen, una revisión); a través de", "note": "通过考试 = aprobar el examen." },
+    { "hanzi": "超过", "pinyin": "chāoguò", "es": "superar, pasar de", "note": "超过三个小时 = más de tres horas." },
+    { "hanzi": "以上", "pinyin": "yǐshàng", "es": "o más, por encima de", "note": "Detrás de la cifra: 一百二十分以上 = 120 puntos o más." },
+    { "hanzi": "以下", "pinyin": "yǐxià", "es": "o menos, por debajo de", "note": "Detrás de la cifra: 十度以下." },
+    { "hanzi": "大量", "pinyin": "dàliàng", "es": "gran cantidad (de)", "note": "大量的工作 = muchísimo trabajo." },
+    { "hanzi": "取", "pinyin": "qǔ", "es": "sacar, recoger", "note": "取钱 = sacar dinero; 取票 = recoger la entrada o el billete." },
+    { "hanzi": "得出", "pinyin": "déchū", "es": "sacar, obtener (un resultado, una conclusión)", "note": "得 aquí es dé (conseguir), no el de 说得好." }
+  ],
+  "extraVocab": ["加班"],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "我七点半就到了。", "py": "Wǒ qī diǎn bàn jiù dào le.", "es": "Yo ya había llegado a las siete y media." },
+        { "zh": "小王九点才到。", "py": "Xiǎo Wáng jiǔ diǎn cái dào.", "es": "Xiao Wang no llegó hasta las nueve." },
+        { "zh": "我们公司才十五个人。", "py": "Wǒmen gōngsī cái shíwǔ ge rén.", "es": "Nuestra empresa solo tiene quince personas." }
+      ]
+    },
+    { "type": "vocab", "title": "Horarios, esfuerzo y resultados", "words": ["才", "加班", "能够", "只能", "努力", "结果", "通过", "超过", "以上", "以下", "大量", "取", "得出"] },
+    {
+      "type": "phonetics-drill",
+      "title": "才 cái, n / l y dónde cae el acento",
+      "markdown": "- **才** *cái*: c con aire (como «ts» soplando) y **segundo tono**. No lo confundas con **菜** *cài* (plato) ni con **在** *zài*.\n- **努力** *nǔlì*: primero **n** y después **l**. Muchos chinos del sur las mezclan, pero tú distínguelas.\n- **El acento de la frase** cae en lo que sorprende: en **我十点才到**, la voz se apoya en **十点** y en **才** (¡tan tarde!). En **我七点就到了**, en **七点** y **就** (¡tan pronto!). Las sílabas de después se dicen más flojas.\n- **加班** *jiābān*: dos primeros tonos, altos y planos.",
+      "items": [
+        { "audio": "才", "options": ["cái", "cài", "zái"], "answer": 0, "explain": "c aspirada + segundo tono." },
+        { "audio": "努力", "options": ["nǔlì", "lǔlì", "nǔnì"], "answer": 0, "explain": "n-u, l-i." },
+        { "audio": "加班", "options": ["jiābān", "jiābàn", "qiābān"], "answer": 0, "explain": "Los dos en primer tono; j sin aire." },
+        { "audio": "超过", "options": ["chāoguò", "cāoguò", "chàoguò"], "answer": 0, "explain": "ch (lengua atrás) + primer tono." },
+        { "audio": "我十点才到", "prompt": "¿Qué parte lleva el acento?", "options": ["十点才", "我", "到"], "answer": 0, "explain": "Se destaca la hora y el «tan tarde»." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["才", "努"],
+      "mnemonics": {
+        "才": "Dibujo de un brote que apenas asoma por encima de la tierra (la raya horizontal). Lo que «apenas» ha salido: de ahí «solo, apenas» y «no hasta ahora».",
+        "努": "奴 (siervo, el que trabaja) + 力 (fuerza): trabajar con toda la fuerza. 努力 = esforzarse."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "Sujeto + tiempo + 就…了 / 才… (+ número)",
+      "markdown": "**就** y **才** van en el hueco de los **adverbios**, detrás del tiempo, y dicen lo que piensas de esa hora:\n\n| | Significa | Ejemplo |\n|---|---|---|\n| tiempo + **就** + V + **了** | antes de lo esperado, ¡qué pronto! | 我七点**就**到了. |\n| tiempo + **才** + V | más tarde de lo esperado, ¡qué tarde! | 他十点**才**到. |\n| **才** + número | poco, solo | 我们公司**才**十五个人. |\n| **才** + V | acabar de | 他**才**到家，还没吃饭. |\n\n- **才 no lleva 了** (他十点才到, ✗ 才到了). **就** en pasado sí suele llevarlo.\n- Delante va casi siempre una hora, un día o una cantidad: sin eso, 才 y 就 no tienen con qué compararse.\n- 只能 («solo poder») va en el hueco del auxiliar: 我们只能加班了.",
+      "focus": ["adverb"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "time": { "zh": "七点半", "py": "qī diǎn bàn" }, "adverb": { "zh": "就", "py": "jiù" }, "verb1": { "zh": "到", "py": "dào" }, "object": { "zh": "办公室", "py": "bàngōngshì" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Yo ya estaba en la oficina a las siete y media.", "esOrder": [{ "text": "Yo", "slot": "subject" }, { "text": "ya", "slot": "adverb" }, { "text": "estaba en", "slot": "verb1" }, { "text": "la oficina", "slot": "object" }, { "text": "a las siete y media", "slot": "time" }] },
+        { "slots": { "subject": { "zh": "小王", "py": "Xiǎo Wáng" }, "time": { "zh": "九点", "py": "jiǔ diǎn" }, "adverb": { "zh": "才", "py": "cái" }, "verb1": { "zh": "到", "py": "dào" } }, "end": "。", "es": "Xiao Wang no llegó hasta las nueve." },
+        { "slots": { "subject": { "zh": "我们", "py": "wǒmen" }, "time": { "zh": "昨天晚上十一点", "py": "zuótiān wǎnshang shíyī diǎn" }, "adverb": { "zh": "才", "py": "cái" }, "verb1": { "zh": "下班", "py": "xiàbān" } }, "end": "。", "es": "Anoche no salimos del trabajo hasta las once." },
+        { "slots": { "subject": { "zh": "我们公司", "py": "wǒmen gōngsī" }, "adverb": { "zh": "才", "py": "cái" }, "verb1": { "zh": "有", "py": "yǒu" }, "object": { "zh": "十五个人", "py": "shíwǔ ge rén" } }, "end": "。", "es": "Nuestra empresa solo tiene quince personas." },
+        { "slots": { "subject": { "zh": "我们", "py": "wǒmen" }, "time": { "zh": "今天", "py": "jīntiān" }, "aux": { "zh": "只能", "py": "zhǐ néng" }, "verb1": { "zh": "加班", "py": "jiābān" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Hoy no nos queda más remedio que hacer horas extra." },
+        { "slots": { "subject": { "zh": "我们", "py": "wǒmen" }, "verb1": { "zh": "算了", "py": "suàn le" }, "object": { "zh": "三次", "py": "sān cì" } }, "end": "，", "es": "Hicimos la cuenta tres veces… (1.ª parte)" },
+        { "slots": { "adverb": { "zh": "才", "py": "cái" }, "verb1": { "zh": "得出", "py": "déchū" }, "object": { "zh": "结果", "py": "jiéguǒ" } }, "end": "。", "es": "…y solo entonces sacamos el resultado. (2.ª parte)" }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "time": { "zh": "昨天", "py": "zuótiān" }, "adverb": { "zh": "没", "py": "méi" }, "verb1": { "zh": "加班", "py": "jiābān" } }, "end": "。", "es": "Ayer no hice horas extra." },
+        { "slots": { "subject": { "zh": "他", "py": "tā" }, "time": { "zh": "今天", "py": "jīntiān" }, "adverb": { "zh": "不", "py": "bù" }, "aux": { "zh": "能够", "py": "nénggòu" }, "verb1": { "zh": "完成", "py": "wánchéng" }, "object": { "zh": "这么多工作", "py": "zhème duō gōngzuò" } }, "end": "。", "es": "Hoy no es capaz de terminar tanto trabajo." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "time": { "zh": "几点", "py": "jǐ diǎn" }, "adverb": { "zh": "才", "py": "cái" }, "aux": { "zh": "能", "py": "néng" }, "verb1": { "zh": "下班", "py": "xiàbān" } }, "end": "？", "es": "¿A qué hora puedes salir por fin del trabajo?" },
+        { "slots": { "subject": { "zh": "你们", "py": "nǐmen" }, "adverb": { "zh": "常常", "py": "chángcháng" }, "verb1": { "zh": "加班", "py": "jiābān" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿Hacéis horas extra a menudo?" }
+      ],
+      "mistakes": [
+        { "wrong": "他十点才来了。", "right": "他十点才来。", "why": "才 no se combina con 了: «no vino hasta las diez» es 十点才来." },
+        { "wrong": "我七点就到。", "right": "我七点就到了。", "why": "Si ya ha pasado, 就 suele cerrar con 了: 七点就到了." },
+        { "wrong": "才他十点来。", "right": "他十点才来。", "why": "才 es un adverbio: va detrás del sujeto y del tiempo, delante del verbo." },
+        { "wrong": "一百分上以。", "right": "一百分以上。", "why": "以上 / 以下 van detrás de la cifra, como un bloque." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Un día de horas extra",
+      "lines": [
+        { "speaker": "小王", "zh": "雨果，你今天几点到的？", "py": "Yǔguǒ, nǐ jīntiān jǐ diǎn dào de?", "es": "Hugo, ¿a qué hora has llegado hoy?" },
+        { "speaker": "雨果", "zh": "我七点半就到了，地铁上人不多。", "py": "Wǒ qī diǎn bàn jiù dào le, dìtiě shang rén bù duō.", "es": "A las siete y media ya estaba aquí: en el metro no había mucha gente." },
+        { "speaker": "小王", "zh": "我九点才到，路上车太多了。", "py": "Wǒ jiǔ diǎn cái dào, lù shang chē tài duō le.", "es": "Yo no he llegado hasta las nueve: había muchísimo tráfico." },
+        { "speaker": "雨果", "zh": "今天事情很多，刘经理说我们只能加班了。", "py": "Jīntiān shìqing hěn duō, Liú jīnglǐ shuō wǒmen zhǐ néng jiābān le.", "es": "Hoy hay mucho trabajo; el director Liu dice que no nos queda otra que hacer horas extra." },
+        { "speaker": "小王", "zh": "是啊，老板要求我们今天完成这个报告。", "py": "Shì a, lǎobǎn yāoqiú wǒmen jīntiān wánchéng zhège bàogào.", "es": "Sí, el jefe nos exige terminar hoy este informe." },
+        { "speaker": "雨果", "zh": "报告要写多少字？", "py": "Bàogào yào xiě duōshao zì?", "es": "¿Cuántos caracteres tiene que tener?" },
+        { "speaker": "小王", "zh": "五千字以上。我们昨天才开始写，现在才写了两千字。", "py": "Wǔqiān zì yǐshàng. Wǒmen zuótiān cái kāishǐ xiě, xiànzài cái xiě le liǎngqiān zì.", "es": "Cinco mil o más. Empezamos ayer y de momento solo llevamos dos mil." },
+        { "speaker": "雨果", "zh": "别急，我们努力一点儿，一定能够完成。", "py": "Bié jí, wǒmen nǔlì yìdiǎnr, yídìng nénggòu wánchéng.", "es": "Tranquila: si nos esforzamos un poco, seguro que lo terminamos." },
+        { "speaker": "小王", "zh": "已经十一点了，我们才写完！", "py": "Yǐjīng shíyī diǎn le, wǒmen cái xiěwán!", "es": "¡Son ya las once y acabamos de terminarlo!" },
+        { "speaker": "雨果", "zh": "刘经理看了吗？结果怎么样？", "py": "Liú jīnglǐ kàn le ma? Jiéguǒ zěnmeyàng?", "es": "¿Lo ha visto el director Liu? ¿Qué tal?" },
+        { "speaker": "小王", "zh": "他说报告通过了！明天我们可以晚一点儿来。", "py": "Tā shuō bàogào tōngguò le! Míngtiān wǒmen kěyǐ wǎn yìdiǎnr lái.", "es": "¡Dice que el informe está aprobado! Mañana podemos venir un poco más tarde." }
+      ],
+      "notes": "加班 es parte de la vida laboral china; en muchas empresas se habla del «996» (de 9 a 9, seis días a la semana), aunque hoy está muy criticado. Fíjate en 才 con dos sentidos en la misma frase: 昨天才开始写 (no empezamos hasta ayer) y 才写了两千字 (solo llevamos dos mil)."
+    },
+    { "type": "exercises", "count": 17, "bank": ["u09", "g-dates-time", "g-le", "g-word-order"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "我" }, "time": { "zh": "七点" }, "adverb": { "zh": "就" }, "verb1": { "zh": "到" }, "particle": { "zh": "了" } }, "end": "。", "es": "Yo ya había llegado a las siete." }, "distractors": ["才"] },
+        { "sentence": { "slots": { "subject": { "zh": "小王" }, "time": { "zh": "晚上十点" }, "adverb": { "zh": "才" }, "verb1": { "zh": "下班" } }, "end": "。", "es": "Xiao Wang no sale del trabajo hasta las diez de la noche." }, "distractors": ["了"] },
+        { "sentence": { "slots": { "subject": { "zh": "我们办公室" }, "adverb": { "zh": "才" }, "verb1": { "zh": "有" }, "object": { "zh": "五台电脑" } }, "end": "。", "es": "En nuestra oficina solo hay cinco ordenadores." }, "distractors": ["就"] },
+        { "sentence": { "slots": { "time0": { "zh": "如果今天不能完成的话，" }, "subject": { "zh": "我们" }, "time": { "zh": "晚上" }, "adverb": { "zh": "就" }, "aux": { "zh": "只能" }, "place": { "zh": "在办公室" }, "verb1": { "zh": "加班" }, "particle": { "zh": "了" } }, "end": "。", "es": "Si hoy no lo podemos terminar, por la noche no nos quedará otra que hacer horas extra en la oficina." }, "distractors": ["才"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "我七点半就到了。", "py": "Wǒ qī diǎn bàn jiù dào le.", "es": "Yo ya había llegado a las siete y media." },
+        { "zh": "小王九点才到。", "py": "Xiǎo Wáng jiǔ diǎn cái dào.", "es": "Xiao Wang no llegó hasta las nueve." },
+        { "zh": "我们只能加班了。", "py": "Wǒmen zhǐ néng jiābān le.", "es": "No nos queda otra que hacer horas extra." },
+        { "zh": "一百二十分以上就能通过。", "py": "Yìbǎi èrshí fēn yǐshàng jiù néng tōngguò.", "es": "Con 120 puntos o más se aprueba." }
+      ],
+      "respond": [
+        { "q": { "zh": "你昨天几点睡觉的？", "py": "Nǐ zuótiān jǐ diǎn shuìjiào de?", "es": "¿A qué hora te acostaste ayer?" }, "model": { "zh": "我十二点才睡觉，太累了。", "py": "Wǒ shí'èr diǎn cái shuìjiào, tài lèi le.", "es": "No me acosté hasta las doce: estoy agotado." } },
+        { "q": { "zh": "你们班有多少学生？", "py": "Nǐmen bān yǒu duōshao xuésheng?", "es": "¿Cuántos alumnos hay en tu clase?" }, "model": { "zh": "才十个人，不多。", "py": "Cái shí ge rén, bù duō.", "es": "Solo diez; no somos muchos." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Aprobado en un año",
+      "text": "雨果去年九月才开始学汉语，可是他学习非常努力。每天早上六点他就起床了，先读课文，然后去上课。晚上他常常十二点才睡觉。平时他每天学习超过三个小时，学了大量的生词，也做了大量的练习。上个月他参加了HSK二级考试。一百二十分以上就能通过，一百二十分以下就不能通过。昨天结果出来了：雨果得了一百八十多分，通过了！王老师说：“很多学生学了两年才通过，雨果学了一年就通过了，真不错。”下课以后，雨果去银行取了钱，请小李和安娜吃饭。",
+      "es": "Hugo no empezó a estudiar chino hasta septiembre del año pasado, pero estudia con muchísimo empeño. Todas las mañanas a las seis ya está levantado: primero lee los textos y luego va a clase. Por la noche muchas veces no se acuesta hasta las doce. Normalmente estudia más de tres horas al día; ha aprendido muchísimas palabras y ha hecho muchísimos ejercicios. El mes pasado se presentó al examen HSK 2. Con 120 puntos o más se aprueba; por debajo de 120, no. Ayer salieron los resultados: Hugo sacó más de 180 puntos, ¡aprobó! La profesora Wang dijo: «Muchos alumnos tardan dos años en aprobar; Hugo lo ha conseguido en un año. Muy bien». Después de clase, Hugo fue al banco a sacar dinero e invitó a comer a Xiao Li y a Anna.",
+      "questions": [
+        { "q": "¿Cuándo empezó Hugo a estudiar chino?", "options": ["去年九月", "今年九月", "两年以前"], "answer": 0 },
+        { "q": "¿Cuántos puntos hacen falta para aprobar?", "options": ["一百二十分以上", "一百八十分以上", "一百二十分以下"], "answer": 0 },
+        { "q": "¿Qué hizo Hugo después de clase?", "options": ["去银行取钱，请朋友吃饭", "去加班", "去参加考试"], "answer": 0 },
+        { "q": "¿Qué frase es correcta?", "options": ["他十二点才睡觉。", "他十二点才睡觉了。", "他才十二点睡觉了。"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

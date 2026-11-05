@@ -1,0 +1,144 @@
+{
+  "unitId": "a1-u11",
+  "scenarios": [
+    {
+      "id": "a1-u11-weekend-plan",
+      "title": "Quedar el fin de semana",
+      "zh": "周末一起去吃饭",
+      "level": 1,
+      "setting": "Viernes por la tarde en la residencia. Xiao Li quiere hacer planes para el sábado. Tú (la app) eres 小李.",
+      "role": "compañero de habitación",
+      "roleZh": "小李",
+      "voice": "m",
+      "goals": ["Decir con quién quieres ir", "Elegir qué hacer", "Quedar a una hora", "Decidir quién invita"],
+      "vocab": ["跟", "和", "一起", "一块儿", "见面", "大家", "也", "都", "也都", "咱们", "请客", "聊天", "室友", "好朋友"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "雨果，星期六你想跟谁一起吃饭？", "py": "Yǔguǒ, xīngqīliù nǐ xiǎng gēn shéi yìqǐ chī fàn?", "es": "Hugo, ¿con quién quieres comer el sábado?" },
+          "user": [
+            { "zh": "我想跟你一起吃饭。", "py": "Wǒ xiǎng gēn nǐ yìqǐ chī fàn.", "es": "Quiero comer contigo.", "keywords": ["跟你", "一起"], "next": "n2", "goal": 0 },
+            { "zh": "我想和安娜、大卫一起吃饭。", "py": "Wǒ xiǎng hé Ānnà, Dàwèi yìqǐ chī fàn.", "es": "Quiero comer con Ana y David.", "keywords": ["安娜", "大卫"], "next": "n1b", "goal": 0 }
+          ],
+          "hint": "跟 / 和 + persona + 一起 va delante del verbo: 我想跟你一起吃饭."
+        },
+        "n1b": {
+          "npc": { "zh": "好！我也想去。咱们大家一块儿去，好吗？", "py": "Hǎo! Wǒ yě xiǎng qù. Zánmen dàjiā yíkuàir qù, hǎo ma?", "es": "¡Genial! Yo también quiero ir. ¿Vamos todos juntos?" },
+          "user": [
+            { "zh": "好，咱们大家一起去！", "py": "Hǎo, zánmen dàjiā yìqǐ qù!", "es": "¡Vale, vamos todos juntos!", "keywords": ["一起", "大家"], "next": "n2", "goal": 0 }
+          ],
+          "hint": "咱们 = nosotros, contándote a ti."
+        },
+        "n2": {
+          "npc": { "zh": "我们去饭馆吃饺子还是去食堂？", "py": "Wǒmen qù fànguǎn chī jiǎozi háishi qù shítáng?", "es": "¿Vamos a un restaurante a comer jiaozi o al comedor?" },
+          "user": [
+            { "zh": "去饭馆吃饺子！", "py": "Qù fànguǎn chī jiǎozi!", "es": "¡Al restaurante a comer jiaozi!", "keywords": ["饭馆", "饺子"], "next": "n3", "goal": 1 },
+            { "zh": "去食堂，然后一起喝茶、聊天。", "py": "Qù shítáng, ránhòu yìqǐ hē chá, liáotiān.", "es": "Al comedor, y luego a tomar té y charlar juntos.", "keywords": ["食堂", "聊天"], "next": "n3", "goal": 1 }
+          ],
+          "hint": "Elige una de las opciones del 还是."
+        },
+        "n3": {
+          "npc": { "zh": "好。我们几点见面？", "py": "Hǎo. Wǒmen jǐ diǎn jiànmiàn?", "es": "Vale. ¿A qué hora quedamos?" },
+          "user": [
+            { "zh": "我们十二点见面。", "py": "Wǒmen shí'èr diǎn jiànmiàn.", "es": "Quedamos a las doce.", "keywords": ["见面", "点"], "next": "n4", "goal": 2 },
+            { "zh": "中午见面，好吗？", "py": "Zhōngwǔ jiànmiàn, hǎo ma?", "es": "Quedamos a mediodía, ¿vale?", "keywords": ["中午", "见面"], "next": "n4", "goal": 2 }
+          ],
+          "hint": "Hora + 见面: 十二点见面. 见面 no lleva objeto."
+        },
+        "n4": {
+          "npc": { "zh": "安娜和大卫也都去吗？", "py": "Ānnà hé Dàwèi yě dōu qù ma?", "es": "¿Ana y David también van los dos?" },
+          "user": [
+            { "zh": "对，他们也都去。", "py": "Duì, tāmen yě dōu qù.", "es": "Sí, ellos también van los dos.", "keywords": ["也都"], "next": "n5" },
+            { "zh": "安娜去，大卫不去。", "py": "Ānnà qù, Dàwèi bú qù.", "es": "Ana va; David, no.", "keywords": ["不去"], "next": "n5" }
+          ],
+          "hint": "也 + 都 juntos, siempre en el orden 也都."
+        },
+        "n5": {
+          "npc": { "zh": "星期六谁请客？", "py": "Xīngqīliù shéi qǐngkè?", "es": "¿Quién invita el sábado?" },
+          "user": [
+            { "zh": "我请客！", "py": "Wǒ qǐngkè!", "es": "¡Invito yo!", "keywords": ["我请客"], "next": "end1", "goal": 3 },
+            { "zh": "你请客，下次我请客。", "py": "Nǐ qǐngkè, xià cì wǒ qǐngkè.", "es": "Invitas tú, y la próxima vez invito yo.", "keywords": ["下次", "你请客"], "next": "end2", "goal": 3 }
+          ],
+          "hint": "请客 = invitar (pagar). 下次 = la próxima vez."
+        },
+        "end1": {
+          "npc": { "zh": "谢谢雨果！你对我们太好了！星期六见！", "py": "Xièxie Yǔguǒ! Nǐ duì wǒmen tài hǎo le! Xīngqīliù jiàn!", "es": "¡Gracias, Hugo! ¡Eres demasiado bueno con nosotros! ¡Hasta el sábado!" },
+          "end": true,
+          "feedback": "Has dicho con quién ir (跟…一起), has elegido el plan, has quedado a una hora (见面) y has invitado (我请客). En China invitar es un gesto importante: la próxima vez te invitarán a ti."
+        },
+        "end2": {
+          "npc": { "zh": "好！这次我请客，下次你请客。星期六见！", "py": "Hǎo! Zhè cì wǒ qǐngkè, xià cì nǐ qǐngkè. Xīngqīliù jiàn!", "es": "¡Hecho! Esta vez invito yo y la próxima tú. ¡Hasta el sábado!" },
+          "end": true,
+          "feedback": "Plan cerrado: con quién, qué, a qué hora y quién paga. Turnarse para invitar (这次…下次…) es la costumbre más habitual entre amigos chinos."
+        }
+      }
+    },
+    {
+      "id": "a1-u11-new-friend",
+      "title": "Conocer a un amigo de un amigo",
+      "zh": "交朋友",
+      "level": 1,
+      "setting": "En una cena, Ana te presenta a su amiga china 小王. Habláis de vosotros y de vuestros amigos. Tú (la app) eres 小王.",
+      "role": "amiga de Ana",
+      "roleZh": "小王",
+      "voice": "f",
+      "goals": ["Presentarte y decir con quién has venido", "Decir qué tenéis en común (也 / 都 / 一样)", "Unir dos cosas bien (和 o 还)", "Ofrecer ayuda o quedar otro día"],
+      "vocab": ["交朋友", "网友", "跟", "和", "还", "也", "都", "一样", "见", "帮", "告诉", "自己", "别人"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "你好！我是小王，安娜的老朋友。你跟谁一起来？", "py": "Nǐ hǎo! Wǒ shì Xiǎo Wáng, Ānnà de lǎopéngyou. Nǐ gēn shéi yìqǐ lái?", "es": "¡Hola! Soy Xiao Wang, amiga de siempre de Ana. ¿Con quién has venido?" },
+          "user": [
+            { "zh": "你好！我叫雨果，我跟安娜一起来。", "py": "Nǐ hǎo! Wǒ jiào Yǔguǒ, wǒ gēn Ānnà yìqǐ lái.", "es": "¡Hola! Me llamo Hugo, he venido con Ana.", "keywords": ["跟安娜", "一起"], "next": "n2", "goal": 0 },
+            { "zh": "你好！我自己来。", "py": "Nǐ hǎo! Wǒ zìjǐ lái.", "es": "¡Hola! He venido solo.", "keywords": ["自己"], "next": "n2", "goal": 0 }
+          ],
+          "hint": "跟 + persona + 一起 + 来; o 自己 = solo, por mi cuenta."
+        },
+        "n2": {
+          "npc": { "zh": "你说什么外语？", "py": "Nǐ shuō shénme wàiyǔ?", "es": "¿Qué idiomas hablas?" },
+          "user": [
+            { "zh": "我说英语，还说汉语。", "py": "Wǒ shuō Yīngyǔ, hái shuō Hànyǔ.", "es": "Hablo inglés y, además, chino.", "keywords": ["还说", "英语"], "next": "n3", "goal": 2 },
+            { "zh": "我说英语和汉语。", "py": "Wǒ shuō Yīngyǔ hé Hànyǔ.", "es": "Hablo inglés y chino.", "keywords": ["英语和汉语", "和"], "next": "n3", "goal": 2 }
+          ],
+          "hint": "和 une nombres (英语和汉语); 还 une acciones (说英语，还说汉语)."
+        },
+        "n3": {
+          "npc": { "zh": "我也说英语！我和安娜都是英语老师。", "py": "Wǒ yě shuō Yīngyǔ! Wǒ hé Ānnà dōu shì Yīngyǔ lǎoshī.", "es": "¡Yo también hablo inglés! Ana y yo somos las dos profesoras de inglés." },
+          "user": [
+            { "zh": "我们一样！我也爱英语。", "py": "Wǒmen yíyàng! Wǒ yě ài Yīngyǔ.", "es": "¡Somos iguales! A mí también me encanta el inglés.", "keywords": ["一样", "也"], "next": "n4", "goal": 1 },
+            { "zh": "你们都是老师？我是学生。", "py": "Nǐmen dōu shì lǎoshī? Wǒ shì xuésheng.", "es": "¿Las dos sois profesoras? Yo soy estudiante.", "keywords": ["都是", "学生"], "next": "n4", "goal": 1 }
+          ],
+          "hint": "也 y 都 van delante del verbo. 一样 = igual."
+        },
+        "n4": {
+          "npc": { "zh": "你有很多中国朋友吗？", "py": "Nǐ yǒu hěn duō Zhōngguó péngyou ma?", "es": "¿Tienes muchos amigos chinos?" },
+          "user": [
+            { "zh": "不多。我想交中国朋友。", "py": "Bù duō. Wǒ xiǎng jiāo Zhōngguó péngyou.", "es": "No muchos. Quiero hacer amigos chinos.", "keywords": ["交", "中国朋友"], "next": "n5" },
+            { "zh": "有，我的室友是中国人，我还有一些网友。", "py": "Yǒu, wǒ de shìyǒu shì Zhōngguó rén, wǒ hái yǒu yìxiē wǎngyǒu.", "es": "Sí, mi compañero de habitación es chino y, además, tengo algunos amigos de internet.", "keywords": ["室友", "网友"], "next": "n5" }
+          ],
+          "hint": "交朋友 = hacer amigos. 还有 = y además tengo."
+        },
+        "n5": {
+          "npc": { "zh": "你的汉语很好！你要我帮你学汉语吗？", "py": "Nǐ de Hànyǔ hěn hǎo! Nǐ yào wǒ bāng nǐ xué Hànyǔ ma?", "es": "¡Hablas muy bien chino! ¿Quieres que te ayude a estudiarlo?" },
+          "user": [
+            { "zh": "要！谢谢你。我也帮你说西班牙语。", "py": "Yào! Xièxie nǐ. Wǒ yě bāng nǐ shuō Xībānyáyǔ.", "es": "¡Sí! Gracias. Y yo te ayudo con el español.", "keywords": ["帮你", "谢谢"], "next": "n6", "goal": 3 },
+            { "zh": "谢谢！咱们明天见面，好吗？", "py": "Xièxie! Zánmen míngtiān jiànmiàn, hǎo ma?", "es": "¡Gracias! ¿Quedamos mañana?", "keywords": ["见面", "明天"], "next": "n6", "goal": 3 }
+          ],
+          "hint": "帮 + persona + verbo: 我帮你说西班牙语. O propón quedar: 咱们明天见面."
+        },
+        "n6": {
+          "npc": { "zh": "好！我告诉安娜，咱们三个人一起见面。", "py": "Hǎo! Wǒ gàosu Ānnà, zánmen sān ge rén yìqǐ jiànmiàn.", "es": "¡Vale! Se lo digo a Ana y quedamos los tres." },
+          "user": [
+            { "zh": "太好了！明天见！", "py": "Tài hǎo le! Míngtiān jiàn!", "es": "¡Genial! ¡Hasta mañana!", "keywords": ["明天见", "太好了"], "next": "end1" }
+          ],
+          "hint": "Despídete con 明天见."
+        },
+        "end1": {
+          "npc": { "zh": "明天见，雨果！", "py": "Míngtiān jiàn, Yǔguǒ!", "es": "¡Hasta mañana, Hugo!" },
+          "end": true,
+          "feedback": "Has hecho una amiga nueva: has dicho con quién venías (跟…一起), has unido bien las ideas (和 entre nombres, 还 entre acciones), has encontrado puntos en común (也, 都, 一样) y has quedado otro día."
+        }
+      }
+    }
+  ]
+}

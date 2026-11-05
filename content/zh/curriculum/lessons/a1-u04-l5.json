@@ -1,0 +1,134 @@
+{
+  "id": "a1-u04-l5",
+  "title": "Repaso: los números de verdad",
+  "zh": "数字",
+  "goal": "Usar sin dudar cifras grandes, 零, 两, ordinales y aproximaciones en frases largas sobre personas, ciudades y distancias.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "零", "pinyin": "líng", "es": "cero", "note": "Repaso: un solo 零 por cada hueco de ceros (一万零五)." },
+    { "hanzi": "两", "pinyin": "liǎng", "es": "dos (cantidad)", "note": "Repaso: 两百, 两千, 两万; pero 第二, 二十." },
+    { "hanzi": "百", "pinyin": "bǎi", "es": "cien", "note": "Repaso." },
+    { "hanzi": "千", "pinyin": "qiān", "es": "mil", "note": "Repaso." },
+    { "hanzi": "万", "pinyin": "wàn", "es": "diez mil", "note": "Repaso: se cuenta de 4 en 4." },
+    { "hanzi": "亿", "pinyin": "yì", "es": "cien millones", "note": "Repaso." },
+    { "hanzi": "第", "pinyin": "dì", "es": "(ordinal)", "note": "Repaso: 第几？" },
+    { "hanzi": "多", "pinyin": "duō", "es": "y pico; ¿cómo de…?", "note": "Repaso: 一百多; 多高, 多重." },
+    { "hanzi": "几", "pinyin": "jǐ", "es": "unos cuantos; ¿cuántos?", "note": "Repaso: 几十, 几千." },
+    { "hanzi": "公里", "pinyin": "gōnglǐ", "es": "kilómetro", "note": "Repaso." },
+    { "hanzi": "人口", "pinyin": "rénkǒu", "es": "población", "note": "Repaso." },
+    { "hanzi": "等于", "pinyin": "děngyú", "es": "es igual a", "note": "Repaso." }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "上海的人口是两千四百多万。", "py": "Shànghǎi de rénkǒu shì liǎngqiān sìbǎi duō wàn.", "es": "Shanghái tiene veinticuatro millones y pico de habitantes." },
+        { "zh": "一百零五加九百九十五等于一千一百。", "py": "Yìbǎi líng wǔ jiā jiǔbǎi jiǔshíwǔ děngyú yìqiān yìbǎi.", "es": "105 más 995 son 1100." },
+        { "zh": "我是第二十六个，安娜是第二十七个。", "py": "Wǒ shì dì èrshíliù ge, Ānnà shì dì èrshíqī ge.", "es": "Yo soy el número veintiséis y Anna, la veintisiete." }
+      ]
+    },
+    { "type": "vocab", "title": "Repaso de la unidad", "words": ["零", "两", "百", "千", "万", "亿", "第", "多", "几", "公里", "人口", "等于"] },
+    {
+      "type": "phonetics-drill",
+      "title": "La -ng de 零 y 两",
+      "markdown": "**零 líng** y **两 liǎng** terminan en **-ng**: la parte de atrás de la lengua sube y cierra contra el paladar blando, como en el inglés *sing*. No se pronuncia la «g»: solo se cierra atrás.\n\nCompara con **-n**, que se cierra **delante**, con la punta de la lengua detrás de los dientes: 零 *líng* ≠ 林 *lín*.\n\n- 零 *líng*: 2.º tono, sube.\n- 两 *liǎng*: 3.er tono, baja y se queda abajo (medio tercer tono) cuando va delante de otra sílaba: 两千 *liǎngqiān*.\n\nEn 两百零一 aparecen las dos: *liǎngbǎi líng yī*.",
+      "items": [
+        { "audio": "零", "options": ["lín", "líng", "léng"], "answer": 1, "explain": "-ng: se cierra atrás. -n: se cierra delante." },
+        { "audio": "两", "options": ["liǎn", "lǎng", "liǎng"], "answer": 2, "explain": "l + iang + 3.er tono." },
+        { "audio": "两百零一", "prompt": "¿Qué número es?", "options": ["2001", "201", "210"], "answer": 1, "explain": "两百 (200) + 零 + 一 = 201." },
+        { "audio": "一千零一", "prompt": "¿Qué número es?", "options": ["1001", "1100", "1010"], "answer": 0, "explain": "一千 + 零 + 一 = 1001. 1100 sería 一千一百." },
+        { "audio": "两万零二百", "prompt": "¿Qué número es?", "options": ["2200", "22 000", "20 200"], "answer": 2, "explain": "两万 (20 000) + 零 + 二百 (200)." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["零"],
+      "mnemonics": {
+        "零": "雨 (lluvia) arriba + 令 (líng, que da el sonido): las gotas sueltas que quedan tras la lluvia → «suelto, resto», y de ahí «cero»."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "Repaso: el número dentro de la frase",
+      "markdown": "Todo lo de la unidad en una tabla:\n\n| Regla | Ejemplo |\n|---|---|\n| De 4 en 4: 万 y 亿 | 两千四百八十七万 (24 870 000) |\n| Un solo 零 por hueco | 一百零五 · 一千零一 · 十万零五 |\n| 一十 dentro del número | 一百一十 (110) |\n| 两 delante de 百/千/万 | 两百 · 两千 · 两万 |\n| 二 en el orden y en las decenas | 第二 · 二十 |\n| Abreviatura | 一百五 = 150 · 一万五 = 15 000 |\n| Aproximar | 几十 · 一百多 · 两千多万 |\n| Partes | 一半的学生 · 大部分同学 · 大多数人 |\n\nEl número no cambia el orden de la frase: va en el **objeto** (o, con la edad, la estatura y el peso, directamente detrás del sujeto: 我爷爷九十多岁).",
+      "focus": ["object"],
+      "sentences": [
+        { "slots": { "subject": { "zh": "中国的人口", "py": "Zhōngguó de rénkǒu" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "十四亿", "py": "shísìyì" } }, "end": "。", "es": "China tiene 1400 millones de habitantes." },
+        { "slots": { "subject": { "zh": "两万加三万", "py": "liǎngwàn jiā sānwàn" }, "verb1": { "zh": "等于", "py": "děngyú" }, "object": { "zh": "五万", "py": "wǔwàn" } }, "end": "。", "es": "Veinte mil más treinta mil son cincuenta mil." },
+        { "slots": { "subject": { "zh": "我爷爷", "py": "wǒ yéye" }, "object": { "zh": "九十多岁", "py": "jiǔshí duō suì" } }, "end": "。", "es": "Mi abuelo tiene noventa y tantos años." },
+        { "slots": { "subject": { "zh": "我们", "py": "wǒmen" }, "adverb": { "zh": "都", "py": "dōu" }, "verb1": { "zh": "看", "py": "kàn" }, "object": { "zh": "第二百零一页", "py": "dì èrbǎi líng yī yè" } }, "end": "。", "es": "Todos miramos la página 201." },
+        { "slots": { "subject": { "zh": "上海", "py": "Shànghǎi" }, "verb1": { "zh": "有", "py": "yǒu" }, "object": { "zh": "几十个大学", "py": "jǐshí ge dàxué" } }, "end": "。", "es": "Shanghái tiene unas decenas de universidades." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "一千零一", "py": "yìqiān líng yī" }, "adverb": { "zh": "不", "py": "bú" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "一千一", "py": "yìqiān yī" } }, "end": "。", "es": "Mil uno no es 一千一 (1100)." },
+        { "slots": { "subject": { "zh": "我们班", "py": "wǒmen bān" }, "adverb": { "zh": "没", "py": "méi" }, "verb1": { "zh": "有", "py": "yǒu" }, "object": { "zh": "一百个学生", "py": "yìbǎi ge xuésheng" } }, "end": "。", "es": "Nuestra clase no tiene cien estudiantes." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "一亿", "py": "yíyì" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "多少个一万", "py": "duōshao ge yíwàn" } }, "end": "？", "es": "¿Cuántos «diez miles» son cien millones?" },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "第几个", "py": "dì jǐ ge" } }, "end": "？", "es": "¿Qué número eres (en la lista)?" }
+      ],
+      "mistakes": [
+        { "wrong": "十千", "right": "一万", "why": "10 000 es 一万: el chino cuenta de 4 en 4." },
+        { "wrong": "一百五（= 105）", "right": "一百零五", "why": "Sin 零, 一百五 se entiende como 150." },
+        { "wrong": "第两个", "right": "第二个", "why": "En el orden, siempre 二." },
+        { "wrong": "一多百个学生", "right": "一百多个学生", "why": "多 detrás de la cifra redonda y delante del clasificador." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "La ficha de deporte",
+      "lines": [
+        { "speaker": "王老师", "zh": "雨果，你多高？", "py": "Yǔguǒ, nǐ duō gāo?", "es": "Hugo, ¿cuánto mides?" },
+        { "speaker": "雨果", "zh": "我一米八三。", "py": "Wǒ yì mǐ bā sān.", "es": "Mido 1,83." },
+        { "speaker": "王老师", "zh": "多重？", "py": "Duō zhòng?", "es": "¿Y cuánto pesas?" },
+        { "speaker": "雨果", "zh": "七十五公斤。", "py": "Qīshíwǔ gōngjīn.", "es": "Setenta y cinco kilos." },
+        { "speaker": "王老师", "zh": "好。你是第几个？", "py": "Hǎo. Nǐ shì dì jǐ ge?", "es": "Bien. ¿Qué número eres en la lista?" },
+        { "speaker": "雨果", "zh": "我是第二十六个。", "py": "Wǒ shì dì èrshíliù ge.", "es": "Soy el veintiséis." },
+        { "speaker": "王老师", "zh": "我们有一百多个学生，大部分是中国学生。", "py": "Wǒmen yǒu yìbǎi duō ge xuésheng, dàbùfen shì Zhōngguó xuésheng.", "es": "Tenemos ciento y pico estudiantes; la mayoría son chinos." },
+        { "speaker": "安娜", "zh": "老师，我是第二十七个！", "py": "Lǎoshī, wǒ shì dì èrshíqī ge!", "es": "¡Profesora, yo soy la veintisiete!" }
+      ],
+      "notes": "En China la estatura casi siempre se dice en metros sin la palabra «centímetros»: 一米八三 = 1,83 m. También se oye 一百八十三公分 (183 cm)."
+    },
+    { "type": "exercises", "count": 16, "bank": ["g-numbers", "g-price-age", "g-measure-words", "u02"] },
+    {
+      "type": "sentence-builder",
+      "title": "Construye la frase completa",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "上海的人口" }, "verb1": { "zh": "是" }, "object": { "zh": "两千四百八十七万" } }, "end": "。", "es": "Shanghái tiene 24 870 000 habitantes." }, "distractors": ["二千", "四百八十七万万"] },
+        { "sentence": { "slots": { "subject": { "zh": "一百零五加九百九十五" }, "verb1": { "zh": "等于" }, "object": { "zh": "一千一百" } }, "end": "。", "es": "105 más 995 son 1100." }, "distractors": ["一千零一"] },
+        { "sentence": { "slots": { "subject": { "zh": "我们中文班的大部分同学" }, "adverb": { "zh": "都" }, "verb1": { "zh": "是" }, "object": { "zh": "外国人" } }, "end": "。", "es": "Casi todos los compañeros de nuestra clase de chino son extranjeros." }, "distractors": ["不"] },
+        { "sentence": { "slots": { "subject": { "zh": "大多数西班牙人" }, "adverb": { "zh": "不" }, "verb1": { "zh": "说" }, "object": { "zh": "汉语" } }, "end": "。", "es": "La gran mayoría de los españoles no habla chino." }, "distractors": ["没"] },
+        { "sentence": { "slots": { "subject": { "zh": "我爸爸和我哥哥" }, "adverb": { "zh": "也" }, "object": { "zh": "一米八三" } }, "end": "。", "es": "Mi padre y mi hermano también miden 1,83." }, "distractors": ["是"] },
+        { "sentence": { "slots": { "subject": { "zh": "我们班的一半学生" }, "adverb": { "zh": "都" }, "verb1": { "zh": "看" }, "object": { "zh": "第二百零一页" } }, "end": "。", "es": "La mitad de los alumnos de nuestra clase miran la página 201." }, "distractors": ["第二百一"] },
+        { "sentence": { "slots": { "subject": { "zh": "安娜的中文老师" }, "adverb": { "zh": "也" }, "verb1": { "zh": "有" }, "object": { "zh": "三百多个微信朋友" } }, "end": "。", "es": "La profesora de chino de Anna también tiene trescientos y pico amigos en WeChat." }, "distractors": ["多三百"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "一百零五，一千零一，一万零五。", "py": "Yìbǎi líng wǔ, yìqiān líng yī, yíwàn líng wǔ.", "es": "Ciento cinco, mil uno, diez mil cinco." },
+        { "zh": "两百，两千，两万。", "py": "Liǎngbǎi, liǎngqiān, liǎngwàn.", "es": "Doscientos, dos mil, veinte mil." },
+        { "zh": "我们看第二百零一页。", "py": "Wǒmen kàn dì èrbǎi líng yī yè.", "es": "Miramos la página 201." },
+        { "zh": "我是第二十六个。", "py": "Wǒ shì dì èrshíliù ge.", "es": "Soy el número veintiséis." }
+      ],
+      "respond": [
+        { "q": { "zh": "上海的人口是多少？", "py": "Shànghǎi de rénkǒu shì duōshao?", "es": "¿Cuántos habitantes tiene Shanghái?" }, "model": { "zh": "两千四百多万。", "py": "Liǎngqiān sìbǎi duō wàn.", "es": "Veinticuatro millones y pico." } },
+        { "q": { "zh": "你多高？多重？", "py": "Nǐ duō gāo? Duō zhòng?", "es": "¿Cuánto mides? ¿Cuánto pesas?" }, "model": { "zh": "我一米七八，七十公斤。", "py": "Wǒ yì mǐ qī bā, qīshí gōngjīn.", "es": "Mido 1,78 y peso setenta kilos." } },
+        { "q": { "zh": "两万加三万等于多少？", "py": "Liǎngwàn jiā sānwàn děngyú duōshao?", "es": "¿Cuánto son veinte mil más treinta mil?" }, "model": { "zh": "等于五万。", "py": "Děngyú wǔwàn.", "es": "Cincuenta mil." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Shanghái y Madrid en números",
+      "text": "上海的人口是两千四百多万，马德里的人口是三百多万。马德里—上海：一万多公里。上海有几十个大学，大部分学生是中国人，一部分是外国人。雨果的中文班有三十多个学生，一半是外国人。",
+      "es": "Shanghái tiene más de 24 millones de habitantes y Madrid, más de 3 millones. Entre Madrid y Shanghái hay más de 10 000 km. Shanghái tiene unas decenas de universidades; la mayoría de los estudiantes son chinos y una parte, extranjeros. En la clase de chino de Hugo hay treinta y tantos alumnos, y la mitad son extranjeros.",
+      "questions": [
+        { "q": "¿Cuántos kilómetros hay entre Madrid y Shanghái?", "options": ["Unos mil", "Más de diez mil", "Más de cien mil"], "answer": 1 },
+        { "q": "¿Cuántas universidades tiene Shanghái?", "options": ["Unas decenas", "Unos cientos", "Una o dos"], "answer": 0 },
+        { "q": "¿Cuántos alumnos extranjeros hay en la clase de Hugo?", "options": ["Treinta y tantos", "Ninguno", "La mitad"], "answer": 2 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

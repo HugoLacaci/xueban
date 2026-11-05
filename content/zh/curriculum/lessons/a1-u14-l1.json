@@ -1,0 +1,138 @@
+{
+  "id": "a1-u14-l1",
+  "title": "¿Dónde estás? 在 + lugar y 在 + lugar + verbo",
+  "zh": "我在图书馆学习",
+  "goal": "Decir dónde está alguien o algo (我在宿舍) y dónde se hace algo (我在图书馆学习), con el lugar delante del verbo.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "在", "pinyin": "zài", "es": "estar en (un lugar); en (+ lugar + verbo)", "note": "Verbo: 我在宿舍. Preposición: 我在宿舍学习. No lleva 是." },
+    { "hanzi": "住", "pinyin": "zhù", "es": "vivir, alojarse", "note": "住在 + lugar: 我住在三号楼. Aquí el lugar va detrás." },
+    { "hanzi": "宿舍", "pinyin": "sùshè", "es": "residencia de estudiantes; habitación de la residencia", "note": "Nivel 5 del HSK, pero imprescindible en la universidad." },
+    { "hanzi": "图书馆", "pinyin": "túshūguǎn", "es": "biblioteca", "note": "El plan la coloca en la U17; se adelanta aquí para el ejemplo clave 我在图书馆学习." },
+    { "hanzi": "学习", "pinyin": "xuéxí", "es": "estudiar, aprender", "note": "El plan la coloca en la U17; se adelanta aquí." },
+    { "hanzi": "房间", "pinyin": "fángjiān", "es": "habitación, cuarto" },
+    { "hanzi": "楼", "pinyin": "lóu", "es": "edificio; planta, piso", "note": "三号楼 «el edificio 3»; 三楼 «la tercera planta»." },
+    { "hanzi": "楼上", "pinyin": "lóushàng", "es": "arriba, en el piso de arriba" },
+    { "hanzi": "楼下", "pinyin": "lóuxià", "es": "abajo, en el piso de abajo" },
+    { "hanzi": "洗手间", "pinyin": "xǐshǒujiān", "es": "aseo, servicio (lit. «cuarto para lavarse las manos»)" },
+    { "hanzi": "地方", "pinyin": "dìfang", "es": "lugar, sitio" },
+    { "hanzi": "地点", "pinyin": "dìdiǎn", "es": "lugar (de una cita o un acto)", "note": "Más formal: 时间和地点 «la hora y el lugar»." },
+    { "hanzi": "电梯", "pinyin": "diàntī", "es": "ascensor" }
+  ],
+  "extraVocab": ["宿舍", "电梯"],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "我在宿舍。", "py": "Wǒ zài sùshè.", "es": "Estoy en la residencia." },
+        { "zh": "我在图书馆学习。", "py": "Wǒ zài túshūguǎn xuéxí.", "es": "Estudio en la biblioteca." },
+        { "zh": "请问，洗手间在哪儿？", "py": "Qǐngwèn, xǐshǒujiān zài nǎr?", "es": "Perdone, ¿dónde está el aseo?" }
+      ]
+    },
+    { "type": "vocab", "title": "El campus y la residencia", "words": ["在", "住", "宿舍", "图书馆", "学习", "房间", "楼", "楼上", "楼下", "洗手间", "地方", "地点", "电梯"] },
+    {
+      "type": "phonetics-drill",
+      "title": "j, q, x: 学习 xuéxí, 洗手间 xǐshǒujiān, 前 qián",
+      "markdown": "**j, q, x** se hacen con la **lengua plana**, la punta abajo detrás de los dientes inferiores y los labios estirados, como sonriendo:\n\n- **x**: una *s* muy suave y «mojada», casi como el *sh* inglés pero con sonrisa: 学 **xué**, 习 **xí**, 洗 **xǐ**.\n- **j**: como una *ch* suave sin aire: 间 **jiān**.\n- **q**: la misma *ch* con un golpe de aire: 前 **qián**.\n\nSolo van delante de **i** o **ü**. No las confundas con **sh / zh / ch**, que se hacen con la lengua doblada hacia atrás: 洗 **xǐ** / 是 **shì**.",
+      "items": [
+        { "audio": "学习", "options": ["xuéxí", "shuéshí", "xuéxì"], "answer": 0, "explain": "Dos x con la lengua plana; 习 en 2.º tono." },
+        { "audio": "洗手间", "options": ["xǐshǒujiān", "shǐshǒujiān", "xǐshǒuqiān"], "answer": 0, "explain": "洗 xǐ (plana) frente a 手 shǒu (doblada); 间 jiān sin aire." },
+        { "audio": "前", "options": ["qián", "jián", "chián"], "answer": 0, "explain": "q con golpe de aire." },
+        { "audio": "住", "options": ["zhù", "jù", "zù"], "answer": 0, "explain": "zh con la lengua hacia atrás: zhù (vivir) frente a 句 jù." },
+        { "audio": "宿舍", "options": ["sùshè", "shùsè", "xùshè"], "answer": 0, "explain": "宿 sù (s normal) + 舍 shè (sh)." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["在", "住"],
+      "mnemonics": {
+        "在": "Un brote que asoma (才) sobre la tierra 土: algo que «está» ahí, en su sitio.",
+        "住": "亻 (persona) + 主 (dueño, señor; da el sonido): la persona que es dueña de un sitio, vive allí."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "在 + lugar: dónde estás y dónde haces algo",
+      "markdown": "**在 zài** tiene aquí dos usos:\n\n1. **Verbo «estar en»**: 我**在**宿舍。 (Estoy en la residencia.) Sin 是: ~~我是在宿舍~~.\n2. **在 + lugar + verbo** «hacer algo en un sitio»: 我**在图书馆**学习。 Se estrena un hueco nuevo del esqueleto: **Dónde**, siempre **delante del verbo**.\n\n⚠️ En español el lugar va al final («estudio *en la biblioteca*»); en chino, **antes del verbo**. Es uno de los errores más frecuentes de los hispanohablantes.\n\nOrden completo: sujeto · tiempo · adverbios · auxiliar · con quién · **dónde** · verbo · objeto: 我明天也想跟安娜一起**在图书馆**学习.\n\n- **Negativa**: 不在 (no está): 他**不在**房间. 不 va **delante de 在**: 我**不在**宿舍学习.\n- **Pregunta**: …在**哪儿**？ (regla de oro: 哪儿 en el hueco del lugar).\n- **Excepción**: con **住** el lugar va detrás: 我**住在**三号楼 (vivo en el edificio 3).",
+      "focus": ["place"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "verb1": { "zh": "在", "py": "zài" }, "object": { "zh": "宿舍", "py": "sùshè" } }, "end": "。", "es": "Estoy en la residencia." },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "place": { "zh": "在图书馆", "py": "zài túshūguǎn" }, "verb1": { "zh": "学习", "py": "xuéxí" } }, "end": "。", "es": "Estudio en la biblioteca.", "esOrder": [{ "text": "(Yo)", "slot": "subject" }, { "text": "estudio", "slot": "verb1" }, { "text": "en la biblioteca", "slot": "place" }] },
+        { "slots": { "subject": { "zh": "小李", "py": "Xiǎo Lǐ" }, "place": { "zh": "在宿舍", "py": "zài sùshè" }, "verb1": { "zh": "看", "py": "kàn" }, "object": { "zh": "电视", "py": "diànshì" } }, "end": "。", "es": "Xiao Li ve la tele en la residencia.", "esOrder": [{ "text": "Xiao Li", "slot": "subject" }, { "text": "ve", "slot": "verb1" }, { "text": "la tele", "slot": "object" }, { "text": "en la residencia", "slot": "place" }] },
+        { "slots": { "subject": { "zh": "王老师", "py": "Wáng lǎoshī" }, "place": { "zh": "在楼上", "py": "zài lóushàng" }, "verb1": { "zh": "上课", "py": "shàngkè" } }, "end": "。", "es": "La profesora Wang da clase arriba." },
+        { "slots": { "subject": { "zh": "我们", "py": "wǒmen" }, "time": { "zh": "星期六", "py": "xīngqīliù" }, "with": { "zh": "跟安娜一起", "py": "gēn Ānnà yìqǐ" }, "place": { "zh": "在电影院", "py": "zài diànyǐngyuàn" }, "verb1": { "zh": "看", "py": "kàn" }, "object": { "zh": "电影", "py": "diànyǐng" } }, "end": "。", "es": "El sábado vemos una película en el cine con Ana." },
+        { "slots": { "subject": { "zh": "大卫", "py": "Dàwèi" }, "verb1": { "zh": "住在", "py": "zhù zài" }, "object": { "zh": "三号楼", "py": "sān hào lóu" } }, "end": "。", "es": "David vive en el edificio 3." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "雨果", "py": "Yǔguǒ" }, "adverb": { "zh": "不", "py": "bú" }, "verb1": { "zh": "在", "py": "zài" }, "object": { "zh": "房间", "py": "fángjiān" } }, "end": "。", "es": "Hugo no está en la habitación." },
+        { "slots": { "subject": { "zh": "安娜", "py": "Ānnà" }, "adverb": { "zh": "不", "py": "bú" }, "place": { "zh": "在宿舍", "py": "zài sùshè" }, "verb1": { "zh": "学习", "py": "xuéxí" } }, "end": "。", "es": "Ana no estudia en la residencia." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "在", "py": "zài" }, "object": { "zh": "哪儿", "py": "nǎr" } }, "end": "？", "es": "¿Dónde estás?" },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "place": { "zh": "在哪儿", "py": "zài nǎr" }, "verb1": { "zh": "学习", "py": "xuéxí" }, "object": { "zh": "汉语", "py": "Hànyǔ" } }, "end": "？", "es": "¿Dónde estudias chino?" },
+        { "slots": { "subject": { "zh": "洗手间", "py": "xǐshǒujiān" }, "verb1": { "zh": "在", "py": "zài" }, "object": { "zh": "哪儿", "py": "nǎr" } }, "end": "？", "es": "¿Dónde está el aseo?" }
+      ],
+      "mistakes": [
+        { "wrong": "我学习在图书馆。", "right": "我在图书馆学习。", "why": "El lugar con 在 va delante del verbo, al revés que en español." },
+        { "wrong": "我是在宿舍。", "right": "我在宿舍。", "why": "Para «estar en un lugar» basta 在; no se usa 是." },
+        { "wrong": "我在宿舍不学习。", "right": "我不在宿舍学习。", "why": "不 va delante de todo el bloque 在 + lugar + verbo." },
+        { "wrong": "我在住三号楼。", "right": "我住在三号楼。", "why": "Con 住 el lugar va detrás: 住在 + lugar." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "¿Dónde estás?",
+      "lines": [
+        { "speaker": "雨果", "zh": "安娜，你在哪儿？", "py": "Ānnà, nǐ zài nǎr?", "es": "Ana, ¿dónde estás?" },
+        { "speaker": "安娜", "zh": "我在图书馆。", "py": "Wǒ zài túshūguǎn.", "es": "Estoy en la biblioteca." },
+        { "speaker": "雨果", "zh": "你在图书馆干什么？", "py": "Nǐ zài túshūguǎn gàn shénme?", "es": "¿Qué haces en la biblioteca?" },
+        { "speaker": "安娜", "zh": "我在图书馆学习。你呢？你在宿舍吗？", "py": "Wǒ zài túshūguǎn xuéxí. Nǐ ne? Nǐ zài sùshè ma?", "es": "Estoy estudiando en la biblioteca. ¿Y tú? ¿Estás en la residencia?" },
+        { "speaker": "雨果", "zh": "不在，我在大卫的房间。他住在三号楼。", "py": "Bú zài, wǒ zài Dàwèi de fángjiān. Tā zhù zài sān hào lóu.", "es": "No, estoy en la habitación de David. Vive en el edificio 3." },
+        { "speaker": "安娜", "zh": "我也想去。你们在楼上还是楼下？", "py": "Wǒ yě xiǎng qù. Nǐmen zài lóushàng háishi lóuxià?", "es": "Yo también quiero ir. ¿Estáis arriba o abajo?" },
+        { "speaker": "雨果", "zh": "在楼上，六楼。这儿有电梯。", "py": "Zài lóushàng, liù lóu. Zhèr yǒu diàntī.", "es": "Arriba, en el sexto. Aquí hay ascensor." },
+        { "speaker": "安娜", "zh": "好。我们在大卫的房间学习，怎么样？", "py": "Hǎo. Wǒmen zài Dàwèi de fángjiān xuéxí, zěnmeyàng?", "es": "Vale. ¿Y si estudiamos en la habitación de David?" },
+        { "speaker": "雨果", "zh": "不行！大卫在房间玩儿游戏！", "py": "Bù xíng! Dàwèi zài fángjiān wánr yóuxì!", "es": "¡Ni hablar! ¡David está jugando a videojuegos en la habitación!" }
+      ],
+      "notes": "En China los pisos se cuentan desde la calle: 一楼 es la planta baja, así que 六楼 es nuestro quinto. En las residencias de estudiantes suele haber varios edificios numerados (一号楼, 二号楼…)."
+    },
+    { "type": "exercises", "count": 15, "bank": ["g-zai", "g-word-order", "u07"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "我" }, "place": { "zh": "在图书馆" }, "verb1": { "zh": "学习" } }, "end": "。", "es": "Estudio en la biblioteca." }, "distractors": ["是"] },
+        { "sentence": { "slots": { "subject": { "zh": "洗手间" }, "verb1": { "zh": "在" }, "object": { "zh": "哪儿" } }, "end": "？", "es": "¿Dónde está el aseo?" }, "distractors": ["吗"] },
+        { "sentence": { "slots": { "subject": { "zh": "安娜" }, "adverb": { "zh": "不" }, "place": { "zh": "在宿舍" }, "verb1": { "zh": "看" }, "object": { "zh": "电视" } }, "end": "。", "es": "Ana no ve la tele en la residencia." } },
+        { "sentence": { "slots": { "time0": { "zh": "明天下午" }, "subject": { "zh": "我" }, "adverb": { "zh": "也" }, "aux": { "zh": "想" }, "with": { "zh": "跟安娜一起" }, "place": { "zh": "在图书馆" }, "verb1": { "zh": "学习" }, "object": { "zh": "汉语" } }, "end": "。", "es": "Mañana por la tarde yo también quiero estudiar chino con Ana en la biblioteca." }, "distractors": ["是"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "我在宿舍。", "py": "Wǒ zài sùshè.", "es": "Estoy en la residencia." },
+        { "zh": "我在图书馆学习。", "py": "Wǒ zài túshūguǎn xuéxí.", "es": "Estudio en la biblioteca." },
+        { "zh": "请问，洗手间在哪儿？", "py": "Qǐngwèn, xǐshǒujiān zài nǎr?", "es": "Perdone, ¿dónde está el aseo?" },
+        { "zh": "我住在三号楼。", "py": "Wǒ zhù zài sān hào lóu.", "es": "Vivo en el edificio 3." }
+      ],
+      "respond": [
+        { "q": { "zh": "你在哪儿学习汉语？", "py": "Nǐ zài nǎr xuéxí Hànyǔ?", "es": "¿Dónde estudias chino?" }, "model": { "zh": "我在上海交通大学学习汉语。", "py": "Wǒ zài Shànghǎi Jiāotōng Dàxué xuéxí Hànyǔ.", "es": "Estudio chino en la Universidad Jiaotong de Shanghái." } },
+        { "q": { "zh": "你住在哪儿？", "py": "Nǐ zhù zài nǎr?", "es": "¿Dónde vives?" }, "model": { "zh": "我住在大学的宿舍。", "py": "Wǒ zhù zài dàxué de sùshè.", "es": "Vivo en la residencia de la universidad." } },
+        { "q": { "zh": "洗手间在楼上吗？", "py": "Xǐshǒujiān zài lóushàng ma?", "es": "¿El aseo está arriba?" }, "model": { "zh": "不在楼上，在楼下。", "py": "Bú zài lóushàng, zài lóuxià.", "es": "No está arriba, está abajo." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "La residencia de Hugo",
+      "text": "雨果住在大学的宿舍，三号楼六楼。他的房间不大，可是很干净。楼下有洗手间，也有电梯。雨果常常在图书馆学习，有时候在房间学习。晚上他在大卫的房间玩儿游戏。大卫说：“我的房间是最好的地方！”",
+      "es": "Hugo vive en la residencia de la universidad, edificio 3, sexta planta. Su habitación no es grande, pero está muy limpia. Abajo hay aseos y también ascensor. Hugo suele estudiar en la biblioteca y a veces en su habitación. Por la noche juega a videojuegos en la habitación de David. David dice: «¡Mi habitación es el mejor sitio!».",
+      "questions": [
+        { "q": "¿Dónde vive Hugo?", "options": ["En la residencia, edificio 3", "En casa de David", "En la biblioteca"], "answer": 0 },
+        { "q": "¿Dónde suele estudiar Hugo?", "options": ["En la biblioteca", "En el cine", "En la habitación de David"], "answer": 0 },
+        { "q": "¿Qué hace por la noche?", "options": ["Juega a videojuegos con David", "Estudia en la biblioteca", "Ve la tele"], "answer": 0 },
+        { "q": "¿Cómo se dice «Estudio en la biblioteca»?", "options": ["我在图书馆学习。", "我学习在图书馆。", "我是在图书馆学习。"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

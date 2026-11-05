@@ -1,0 +1,163 @@
+{
+  "unitId": "a1-u14",
+  "scenarios": [
+    {
+      "id": "a1-u14-campus-way",
+      "title": "¿Dónde está la biblioteca?",
+      "zh": "请问，图书馆在哪儿？",
+      "level": 1,
+      "setting": "Primera semana en el campus de 交通大学. Hugo sale del comedor y no encuentra la biblioteca. Para a una estudiante. Tú (la app) eres la estudiante.",
+      "role": "estudiante china",
+      "roleZh": "同学",
+      "voice": "f",
+      "goals": ["Preguntar dónde está la biblioteca", "Preguntar si está lejos (离…远吗)", "Confirmar izquierda o derecha y qué hay al lado", "Dar las gracias"],
+      "vocab": ["请问", "在", "哪儿", "离", "远", "近", "左边", "右边", "旁边", "对面", "前边", "后边", "从", "到"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "你好，你找什么地方？", "py": "Nǐ hǎo, nǐ zhǎo shénme dìfang?", "es": "Hola, ¿qué sitio buscas?" },
+          "user": [
+            { "zh": "请问，图书馆在哪儿？", "py": "Qǐngwèn, túshūguǎn zài nǎr?", "es": "Perdona, ¿dónde está la biblioteca?", "keywords": ["在哪儿", "图书馆在"], "next": "n2", "goal": 0 },
+            { "zh": "请问，这儿是图书馆吗？", "py": "Qǐngwèn, zhèr shì túshūguǎn ma?", "es": "Perdona, ¿esto es la biblioteca?", "keywords": ["这儿是", "图书馆吗"], "next": "n2b", "goal": 0 }
+          ],
+          "hint": "Empieza con 请问 y pregunta el lugar con ……在哪儿？"
+        },
+        "n2": {
+          "npc": { "zh": "图书馆不在这儿。在食堂对面。", "py": "Túshūguǎn bú zài zhèr. Zài shítáng duìmiàn.", "es": "La biblioteca no está aquí. Está enfrente del comedor." },
+          "user": [
+            { "zh": "图书馆离这儿远吗？", "py": "Túshūguǎn lí zhèr yuǎn ma?", "es": "¿La biblioteca está lejos de aquí?", "keywords": ["离这儿", "远吗"], "next": "n3", "goal": 1 },
+            { "zh": "食堂对面？在左边还是右边？", "py": "Shítáng duìmiàn? Zài zuǒbian háishi yòubian?", "es": "¿Enfrente del comedor? ¿A la izquierda o a la derecha?", "keywords": ["左边", "右边"], "next": "n4", "goal": 2 }
+          ],
+          "hint": "Pregunta la distancia (离这儿远吗？) o el lado (左边还是右边？)."
+        },
+        "n2b": {
+          "npc": { "zh": "不是，这儿是食堂。图书馆在食堂对面。", "py": "Bú shì, zhèr shì shítáng. Túshūguǎn zài shítáng duìmiàn.", "es": "No, esto es el comedor. La biblioteca está enfrente del comedor." },
+          "user": [
+            { "zh": "图书馆离这儿远吗？", "py": "Túshūguǎn lí zhèr yuǎn ma?", "es": "¿La biblioteca está lejos de aquí?", "keywords": ["离这儿", "远吗"], "next": "n3", "goal": 1 },
+            { "zh": "对面？我明白了，谢谢！", "py": "Duìmiàn? Wǒ míngbai le, xièxie!", "es": "¿Enfrente? Entendido, ¡gracias!", "keywords": ["明白", "谢谢"], "next": "n6" }
+          ],
+          "hint": "对面 = enfrente. Pregunta si está lejos: 离这儿远吗？"
+        },
+        "n3": {
+          "npc": { "zh": "不远，很近。从这儿到图书馆走五分钟。", "py": "Bù yuǎn, hěn jìn. Cóng zhèr dào túshūguǎn zǒu wǔ fēnzhōng.", "es": "No, está muy cerca. De aquí a la biblioteca son cinco minutos andando." },
+          "user": [
+            { "zh": "在左边还是右边？", "py": "Zài zuǒbian háishi yòubian?", "es": "¿A la izquierda o a la derecha?", "keywords": ["左边", "右边"], "next": "n4", "goal": 2 },
+            { "zh": "图书馆旁边有什么？", "py": "Túshūguǎn pángbiān yǒu shénme?", "es": "¿Qué hay al lado de la biblioteca?", "keywords": ["旁边", "有什么"], "next": "n5", "goal": 2 }
+          ],
+          "hint": "Confirma el lado (左边还是右边) o pregunta qué hay al lado (旁边有什么？)."
+        },
+        "n4": {
+          "npc": { "zh": "在右边。你看，那个大楼是图书馆。", "py": "Zài yòubian. Nǐ kàn, nàge dà lóu shì túshūguǎn.", "es": "A la derecha. Mira, aquel edificio grande es la biblioteca." },
+          "user": [
+            { "zh": "图书馆旁边有便利店吗？", "py": "Túshūguǎn pángbiān yǒu biànlìdiàn ma?", "es": "¿Hay una tienda 24 horas al lado de la biblioteca?", "keywords": ["旁边", "便利店"], "next": "n5", "goal": 2 },
+            { "zh": "我看见了！谢谢你！", "py": "Wǒ kànjiàn le! Xièxie nǐ!", "es": "¡Ya lo veo! ¡Gracias!", "keywords": ["看见", "谢谢"], "next": "n6", "goal": 3 }
+          ],
+          "hint": "Pregunta qué hay cerca (旁边有……吗？) o da las gracias."
+        },
+        "n5": {
+          "npc": { "zh": "图书馆旁边有一个书店，书店里边有很多中文书。图书馆后边是你们的宿舍吧？", "py": "Túshūguǎn pángbiān yǒu yí ge shūdiàn, shūdiàn lǐbian yǒu hěn duō Zhōngwén shū. Túshūguǎn hòubian shì nǐmen de sùshè ba?", "es": "Al lado de la biblioteca hay una librería, y dentro de la librería hay muchos libros en chino. Detrás de la biblioteca está vuestra residencia, ¿no?" },
+          "user": [
+            { "zh": "对，我住在三号楼。谢谢你！", "py": "Duì, wǒ zhù zài sān hào lóu. Xièxie nǐ!", "es": "Sí, vivo en el edificio 3. ¡Gracias!", "keywords": ["住在", "谢谢"], "next": "n6", "goal": 3 },
+            { "zh": "不是，我的宿舍在北门旁边。谢谢！", "py": "Bú shì, wǒ de sùshè zài běimén pángbiān. Xièxie!", "es": "No, mi residencia está al lado de la puerta norte. ¡Gracias!", "keywords": ["北门", "谢谢"], "next": "n6", "goal": 3 }
+          ],
+          "hint": "Responde con 住在 + lugar o ……在 + lugar, y da las gracias."
+        },
+        "n6": {
+          "npc": { "zh": "不客气！你在图书馆好好学习吧！", "py": "Bú kèqi! Nǐ zài túshūguǎn hǎohǎo xuéxí ba!", "es": "¡De nada! ¡Que estudies mucho en la biblioteca!" },
+          "end": true,
+          "feedback": "Has encontrado la biblioteca: ……在哪儿？ para el lugar, 离这儿远吗？ para la distancia y 左边还是右边 para el lado. Recuerda que 对面, 旁边, 后边 van detrás del nombre: 食堂对面."
+        }
+      }
+    },
+    {
+      "id": "a1-u14-new-room",
+      "title": "Tu nueva residencia",
+      "zh": "这是你的房间",
+      "level": 1,
+      "setting": "Hugo acaba de llegar a la residencia. Xiao Li, su vecino, le enseña la habitación y el edificio. Tú (la app) eres 小李.",
+      "role": "vecino de residencia",
+      "roleZh": "小李",
+      "voice": "m",
+      "goals": ["Preguntar qué hay en la habitación (有什么)", "Preguntar dónde están el aseo y el ascensor", "Situar tus cosas con localizadores (上, 里, 下)", "Preguntar dónde hacer algo (在哪儿 + verbo)"],
+      "vocab": ["房间", "有", "在", "是", "里", "上", "下", "旁边", "楼上", "楼下", "洗手间", "电梯", "便利店"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "雨果，这是你的房间。你看看！", "py": "Yǔguǒ, zhè shì nǐ de fángjiān. Nǐ kànkan!", "es": "Hugo, esta es tu habitación. ¡Échale un vistazo!" },
+          "user": [
+            { "zh": "谢谢！房间里有什么？", "py": "Xièxie! Fángjiān li yǒu shénme?", "es": "¡Gracias! ¿Qué hay en la habitación?", "keywords": ["有什么", "房间里"], "next": "n2", "goal": 0 },
+            { "zh": "很好！房间里有没有电脑？", "py": "Hěn hǎo! Fángjiān li yǒu méiyǒu diànnǎo?", "es": "¡Qué bien! ¿Hay ordenador en la habitación?", "keywords": ["有没有"], "next": "n2b", "goal": 0 }
+          ],
+          "hint": "Lugar + 有 + 什么: 房间里有什么？"
+        },
+        "n2": {
+          "npc": { "zh": "有一张床、一张桌子和两个椅子。床下边可以放东西。", "py": "Yǒu yì zhāng chuáng, yì zhāng zhuōzi hé liǎng ge yǐzi. Chuáng xiàbian kěyǐ fàng dōngxi.", "es": "Hay una cama, una mesa y dos sillas. Debajo de la cama puedes guardar cosas." },
+          "user": [
+            { "zh": "洗手间在哪儿？", "py": "Xǐshǒujiān zài nǎr?", "es": "¿Dónde está el aseo?", "keywords": ["洗手间", "在哪儿"], "next": "n3", "goal": 1 },
+            { "zh": "我的书可以放在桌子上吗？", "py": "Wǒ de shū kěyǐ fàng zài zhuōzi shang ma?", "es": "¿Puedo dejar mis libros sobre la mesa?", "keywords": ["桌子上"], "next": "n2c", "goal": 2 }
+          ],
+          "hint": "Pregunta por el aseo (……在哪儿？) o por dónde dejar tus cosas (桌子上)."
+        },
+        "n2b": {
+          "npc": { "zh": "没有电脑。有一张床、一张桌子和两个椅子。", "py": "Méiyǒu diànnǎo. Yǒu yì zhāng chuáng, yì zhāng zhuōzi hé liǎng ge yǐzi.", "es": "No hay ordenador. Hay una cama, una mesa y dos sillas." },
+          "user": [
+            { "zh": "没关系，我有电脑。洗手间在哪儿？", "py": "Méi guānxi, wǒ yǒu diànnǎo. Xǐshǒujiān zài nǎr?", "es": "No pasa nada, tengo ordenador. ¿Dónde está el aseo?", "keywords": ["洗手间", "在哪儿"], "next": "n3", "goal": 1 },
+            { "zh": "我的电脑可以放在桌子上吧？", "py": "Wǒ de diànnǎo kěyǐ fàng zài zhuōzi shang ba?", "es": "Puedo dejar mi ordenador en la mesa, ¿no?", "keywords": ["桌子上"], "next": "n2c", "goal": 2 }
+          ],
+          "hint": "有 se niega con 没有. Sigue preguntando: ……在哪儿？"
+        },
+        "n2c": {
+          "npc": { "zh": "可以。你的书包也可以放在椅子上。", "py": "Kěyǐ. Nǐ de shūbāo yě kěyǐ fàng zài yǐzi shang.", "es": "Sí. Tu mochila también la puedes dejar en la silla." },
+          "user": [
+            { "zh": "好。洗手间在哪儿？", "py": "Hǎo. Xǐshǒujiān zài nǎr?", "es": "Vale. ¿Dónde está el aseo?", "keywords": ["洗手间"], "next": "n3", "goal": 1 }
+          ],
+          "hint": "Ahora pregunta por el aseo."
+        },
+        "n3": {
+          "npc": { "zh": "洗手间在外边，在电梯旁边。", "py": "Xǐshǒujiān zài wàibian, zài diàntī pángbiān.", "es": "El aseo está fuera, al lado del ascensor." },
+          "user": [
+            { "zh": "电梯在左边还是右边？", "py": "Diàntī zài zuǒbian háishi yòubian?", "es": "¿El ascensor está a la izquierda o a la derecha?", "keywords": ["左边", "右边"], "next": "n4", "goal": 1 },
+            { "zh": "楼下有便利店吗？", "py": "Lóuxià yǒu biànlìdiàn ma?", "es": "¿Hay una tienda 24 horas abajo?", "keywords": ["楼下", "便利店"], "next": "n5", "goal": 1 }
+          ],
+          "hint": "Confirma el lado (左边还是右边) o pregunta qué hay abajo (楼下有……吗？)."
+        },
+        "n4": {
+          "npc": { "zh": "在左边。我的房间在你的房间对面。", "py": "Zài zuǒbian. Wǒ de fángjiān zài nǐ de fángjiān duìmiàn.", "es": "A la izquierda. Mi habitación está enfrente de la tuya." },
+          "user": [
+            { "zh": "太好了！楼下有便利店吗？", "py": "Tài hǎo le! Lóuxià yǒu biànlìdiàn ma?", "es": "¡Genial! ¿Hay una tienda 24 horas abajo?", "keywords": ["楼下", "便利店"], "next": "n5", "goal": 1 },
+            { "zh": "太好了！我们在哪儿吃饭？", "py": "Tài hǎo le! Wǒmen zài nǎr chī fàn?", "es": "¡Genial! ¿Dónde comemos?", "keywords": ["在哪儿吃饭"], "next": "n6", "goal": 3 }
+          ],
+          "hint": "Pregunta qué hay abajo o dónde se come: 我们在哪儿吃饭？"
+        },
+        "n5": {
+          "npc": { "zh": "楼下没有。宿舍门口有一个便利店，离这儿很近。", "py": "Lóuxià méiyǒu. Sùshè ménkǒu yǒu yí ge biànlìdiàn, lí zhèr hěn jìn.", "es": "Abajo no. En la entrada de la residencia hay una, muy cerca de aquí." },
+          "user": [
+            { "zh": "我们在哪儿吃饭？在食堂吗？", "py": "Wǒmen zài nǎr chī fàn? Zài shítáng ma?", "es": "¿Dónde comemos? ¿En el comedor?", "keywords": ["在哪儿", "食堂"], "next": "n6", "goal": 3 },
+            { "zh": "我想在宿舍学习，可以吗？", "py": "Wǒ xiǎng zài sùshè xuéxí, kěyǐ ma?", "es": "Quiero estudiar en la residencia, ¿se puede?", "keywords": ["在宿舍学习"], "next": "n6b", "goal": 3 }
+          ],
+          "hint": "在 + lugar va delante del verbo: 我们在哪儿吃饭？ / 我想在宿舍学习."
+        },
+        "n6": {
+          "npc": { "zh": "在食堂。食堂在宿舍后边。晚上我们一起去吧！", "py": "Zài shítáng. Shítáng zài sùshè hòubian. Wǎnshang wǒmen yìqǐ qù ba!", "es": "En el comedor. Está detrás de la residencia. ¡Esta noche vamos juntos!" },
+          "user": [
+            { "zh": "好，晚上我在房间等你。", "py": "Hǎo, wǎnshang wǒ zài fángjiān děng nǐ.", "es": "Vale, por la noche te espero en la habitación.", "keywords": ["在房间等"], "next": "n7", "goal": 3 },
+            { "zh": "好啊！我们几点去？", "py": "Hǎo a! Wǒmen jǐ diǎn qù?", "es": "¡Vale! ¿A qué hora vamos?", "keywords": ["几点"], "next": "n7", "goal": 3 }
+          ],
+          "hint": "Acepta y queda: 我在房间等你 / 几点去？"
+        },
+        "n6b": {
+          "npc": { "zh": "可以，可是晚上楼上的人很多。你可以在图书馆学习，图书馆离这儿不远。", "py": "Kěyǐ, kěshì wǎnshang lóushàng de rén hěn duō. Nǐ kěyǐ zài túshūguǎn xuéxí, túshūguǎn lí zhèr bù yuǎn.", "es": "Sí, pero por la noche arriba hay mucha gente. Puedes estudiar en la biblioteca, que no está lejos de aquí." },
+          "user": [
+            { "zh": "好，明天我在图书馆学习。谢谢你！", "py": "Hǎo, míngtiān wǒ zài túshūguǎn xuéxí. Xièxie nǐ!", "es": "Vale, mañana estudio en la biblioteca. ¡Gracias!", "keywords": ["在图书馆学习"], "next": "n7", "goal": 3 }
+          ],
+          "hint": "在图书馆学习: el lugar delante del verbo."
+        },
+        "n7": {
+          "npc": { "zh": "不客气！有问题你来对面找我。", "py": "Bú kèqi! Yǒu wèntí nǐ lái duìmiàn zhǎo wǒ.", "es": "¡De nada! Si tienes algún problema, ven a buscarme enfrente." },
+          "end": true,
+          "feedback": "Has descrito tu habitación con lugar + 有 (房间里有……), has preguntado dónde está cada cosa (……在哪儿？) y dónde se hace algo con 在 + lugar + verbo (在哪儿吃饭, 在图书馆学习)."
+        }
+      }
+    }
+  ]
+}

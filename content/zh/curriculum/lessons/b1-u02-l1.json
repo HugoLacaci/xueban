@@ -1,0 +1,138 @@
+{
+  "id": "b1-u02-l1",
+  "title": "Me han robado el bolso: 被 + quién + verbo + algo más",
+  "zh": "我的皮包被小偷偷走了",
+  "goal": "Contar algo malo que te ha pasado con la pasiva 被: sujeto (lo afectado) + 被 + quién lo hizo + verbo + resultado.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "被", "pinyin": "bèi", "es": "(marca de pasiva) por, ser + participio", "note": "Sujeto + 被 + quién + verbo + algo más: 我的皮包被小偷偷走了." },
+    { "hanzi": "偷", "pinyin": "tōu", "es": "robar (a escondidas)", "note": "偷走 = robar y llevarse." },
+    { "hanzi": "小偷", "pinyin": "xiǎotōu", "es": "ladrón, carterista" },
+    { "hanzi": "皮包", "pinyin": "píbāo", "es": "bolso, cartera (de piel)" },
+    { "hanzi": "现金", "pinyin": "xiànjīn", "es": "dinero en efectivo", "note": "En China casi todo se paga con el móvil, pero conviene llevar algo de 现金." },
+    { "hanzi": "身份证", "pinyin": "shēnfènzhèng", "es": "documento de identidad, DNI" },
+    { "hanzi": "证件", "pinyin": "zhèngjiàn", "es": "documentación (DNI, pasaporte, carné…)" },
+    { "hanzi": "警察", "pinyin": "jǐngchá", "es": "policía (persona)" },
+    { "hanzi": "报警", "pinyin": "bàojǐng", "es": "avisar a la policía, denunciar", "note": "En China el número de la policía es el 110." },
+    { "hanzi": "抓", "pinyin": "zhuā", "es": "coger, agarrar; detener" },
+    { "hanzi": "抓住", "pinyin": "zhuāzhù", "es": "atrapar, coger (y no soltar)", "note": "住 como resultado: «que quede sujeto»." },
+    { "hanzi": "情况", "pinyin": "qíngkuàng", "es": "situación, lo que ha pasado", "note": "说一下情况 = cuente lo que ha pasado." },
+    { "hanzi": "发生", "pinyin": "fāshēng", "es": "ocurrir, pasar (un hecho)", "note": "在哪儿发生的？ = ¿Dónde ocurrió?" }
+  ],
+  "extraVocab": ["偷", "小偷", "报警"],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "我的皮包被小偷偷走了。", "py": "Wǒ de píbāo bèi xiǎotōu tōuzǒu le.", "es": "Un ladrón me ha robado el bolso (lit. «mi bolso ha sido robado por un ladrón»)." },
+        { "zh": "小偷被警察抓住了。", "py": "Xiǎotōu bèi jǐngchá zhuāzhù le.", "es": "La policía ha atrapado al ladrón." },
+        { "zh": "你的手机被谁拿走了？", "py": "Nǐ de shǒujī bèi shéi názǒu le?", "es": "¿Quién se ha llevado tu móvil?" }
+      ]
+    },
+    { "type": "vocab", "title": "Un mal día en el metro", "words": ["被", "偷", "小偷", "皮包", "现金", "身份证", "证件", "警察", "报警", "抓", "抓住", "情况", "发生"] },
+    {
+      "type": "phonetics-drill",
+      "title": "El ritmo de una frase con 被",
+      "markdown": "En una frase con 被, el peso de la voz **no** está en 被: 被 (*bèi*, cuarto tono) se dice rápido y algo más flojo, pegado a quien hace la acción. El énfasis cae en **lo que pasó**: el verbo y su resultado (偷**走**, 抓**住**). El 了 final es neutro y muy corto.\n\n我的皮包 | 被小偷 | **偷走**了 → tres bloques, con una pausa mínima tras el sujeto.\n\nOtras dos cosas de hoy: **小偷 xiǎotōu** (tercero + primero: baja y luego alto y plano) y **警察 jǐngchá**, con *ch* aspirada, con aire, y la *-ng* de *jǐng* en la nariz.",
+      "items": [
+        { "audio": "小偷", "options": ["xiǎotōu", "xiǎotóu", "xiāotōu"], "answer": 0, "explain": "Tercero (medio tercero, baja) + primero (alto y plano)." },
+        { "audio": "我的皮包被小偷偷走了。", "prompt": "¿Dónde cae el énfasis?", "options": ["En 偷走 (lo que pasó)", "En 被", "En 的"], "answer": 0, "explain": "被 y 的 son palabras de función: se dicen rápido." },
+        { "audio": "警察", "options": ["jǐngchá", "jīngchá", "jǐngzá"], "answer": 0, "explain": "jǐng en tercer tono y ch aspirada en chá." },
+        { "audio": "身份证", "options": ["shēnfènzhèng", "shēnfēnzhèng", "shēnfènzèng"], "answer": 0, "explain": "Tres sílabas: alto, cae, cae; zh retrofleja." },
+        { "audio": "没被偷走", "options": ["méi bèi tōuzǒu", "mèi bèi tōuzǒu", "méi pèi tōuzǒu"], "answer": 0, "explain": "没 en segundo tono; b de 被 sin aire." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["被", "偷"],
+      "mnemonics": {
+        "被": "衤 (ropa) + 皮 (piel, da el sonido): al principio era la manta que te cubre (被子). Lo que te «cae encima» sin que lo elijas: por eso marca la pasiva, casi siempre de algo malo.",
+        "偷": "亻 (persona) + 俞: la persona que se lleva algo sin que nadie la vea. 小偷 es «el pequeño ladrón», el carterista."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "Lo afectado + 被 + quién + verbo + resultado",
+      "markdown": "En español decimos «un ladrón me ha robado el bolso» o «me han robado el bolso». En chino, cuando algo **te ha pasado** (casi siempre algo malo), se empieza por **lo afectado** y se usa **被**:\n\n**我的皮包** + **被小偷** + **偷走** + 了.\n\n- Detrás de 被 va **quién lo hizo** (el agente): 被小偷, 被警察, 被谁.\n- El verbo **no puede ir solo**: necesita algo más detrás, como en las frases con 把: un resultado (偷**走**, 抓**住**, 吃**完**), 了, o 到 / 在 + lugar.\n- **Negativa**: 没 va **delante de 被**: 我的现金**没被**他拿走.\n- **Pregunta**: 被**谁**…？ o 吗 al final.\n\n**Convención del esqueleto** (la misma que para 把 en la unidad anterior): **被 + agente** va en el hueco **Con quién**, como una preposición con su nombre (跟朋友, 给他, 把书). Los adverbios (没, 已经, 也) y los auxiliares van **delante**, en sus huecos. El verbo con su resultado va en *Verbo 1* (偷走); el lugar tras 到 / 在, en *Objeto*; el 了 final, en *Partícula*. Cuando no se dice quién (被偷了), *Con quién* lleva solo 被.",
+      "focus": ["with", "verb1"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "我的皮包", "py": "wǒ de píbāo" }, "with": { "zh": "被小偷", "py": "bèi xiǎotōu" }, "verb1": { "zh": "偷走", "py": "tōuzǒu" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Un ladrón me ha robado el bolso.", "esOrder": [{ "text": "Mi bolso", "slot": "subject" }, { "text": "ha sido robado", "slot": "verb1" }, { "text": "por un ladrón", "slot": "with" }] },
+        { "slots": { "subject": { "zh": "小偷", "py": "xiǎotōu" }, "with": { "zh": "被警察", "py": "bèi jǐngchá" }, "verb1": { "zh": "抓住", "py": "zhuāzhù" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "La policía ha atrapado al ladrón." },
+        { "slots": { "subject": { "zh": "我的自行车", "py": "wǒ de zìxíngchē" }, "with": { "zh": "被朋友", "py": "bèi péngyou" }, "verb1": { "zh": "借走", "py": "jièzǒu" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Un amigo se ha llevado prestada mi bici." },
+        { "slots": { "subject": { "zh": "冰箱里的水果", "py": "bīngxiāng li de shuǐguǒ" }, "with": { "zh": "被大卫", "py": "bèi Dàwèi" }, "verb1": { "zh": "吃完", "py": "chīwán" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "David se ha acabado la fruta de la nevera." },
+        { "slots": { "subject": { "zh": "雨果的身份证", "py": "Yǔguǒ de shēnfènzhèng" }, "adverb": { "zh": "也", "py": "yě" }, "with": { "zh": "被小偷", "py": "bèi xiǎotōu" }, "verb1": { "zh": "拿走", "py": "názǒu" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "El ladrón también se ha llevado el DNI de Hugo." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "我的现金", "py": "wǒ de xiànjīn" }, "adverb": { "zh": "没", "py": "méi" }, "with": { "zh": "被他", "py": "bèi tā" }, "verb1": { "zh": "拿走", "py": "názǒu" } }, "end": "。", "es": "No se ha llevado mi dinero en efectivo." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你的手机", "py": "nǐ de shǒujī" }, "with": { "zh": "被谁", "py": "bèi shéi" }, "verb1": { "zh": "拿走", "py": "názǒu" }, "particle": { "zh": "了", "py": "le" } }, "end": "？", "es": "¿Quién se ha llevado tu móvil?" },
+        { "slots": { "subject": { "zh": "小偷", "py": "xiǎotōu" }, "with": { "zh": "被警察", "py": "bèi jǐngchá" }, "verb1": { "zh": "抓住", "py": "zhuāzhù" }, "particle": { "zh": "了吗", "py": "le ma" } }, "end": "？", "es": "¿Ha atrapado la policía al ladrón?" }
+      ],
+      "mistakes": [
+        { "wrong": "我的皮包被小偷偷。", "right": "我的皮包被小偷偷走了。", "why": "Con 被 el verbo no se queda solo: necesita un resultado, 了 o un lugar detrás." },
+        { "wrong": "小偷被抓住警察了。", "right": "小偷被警察抓住了。", "why": "Quien hace la acción va justo detrás de 被, antes del verbo." },
+        { "wrong": "被小偷偷走了我的皮包。", "right": "我的皮包被小偷偷走了。", "why": "No se calca «fue robado mi bolso»: lo afectado va al principio, como sujeto." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "¿Qué te ha pasado?",
+      "lines": [
+        { "speaker": "安娜", "zh": "雨果，你怎么了？你看起来不太高兴。", "py": "Yǔguǒ, nǐ zěnme le? Nǐ kàn qilai bú tài gāoxìng.", "es": "Hugo, ¿qué te pasa? No pareces muy contento." },
+        { "speaker": "雨果", "zh": "别提了！我的皮包被小偷偷走了。", "py": "Bié tí le! Wǒ de píbāo bèi xiǎotōu tōuzǒu le.", "es": "¡Ni me lo menciones! Un ladrón me ha robado el bolso." },
+        { "speaker": "安娜", "zh": "什么？在哪儿发生的？", "py": "Shénme? Zài nǎr fāshēng de?", "es": "¿Qué? ¿Dónde ha sido?" },
+        { "speaker": "雨果", "zh": "在地铁上。人太多了，我没注意。", "py": "Zài dìtiě shang. Rén tài duō le, wǒ méi zhùyì.", "es": "En el metro. Había muchísima gente y no me di cuenta." },
+        { "speaker": "安娜", "zh": "包里有什么？", "py": "Bāo li yǒu shénme?", "es": "¿Qué llevabas en el bolso?" },
+        { "speaker": "雨果", "zh": "有一些现金，还有我的身份证。", "py": "Yǒu yìxiē xiànjīn, hái yǒu wǒ de shēnfènzhèng.", "es": "Algo de efectivo y también mi documento de identidad." },
+        { "speaker": "安娜", "zh": "你的证件也被偷了？你报警了吗？", "py": "Nǐ de zhèngjiàn yě bèi tōu le? Nǐ bàojǐng le ma?", "es": "¿También te han robado la documentación? ¿Has avisado a la policía?" },
+        { "speaker": "雨果", "zh": "报了。警察问了我很多情况。", "py": "Bào le. Jǐngchá wèn le wǒ hěn duō qíngkuàng.", "es": "Sí. La policía me hizo muchas preguntas sobre lo que pasó." },
+        { "speaker": "安娜", "zh": "手机呢？手机没被他拿走吧？", "py": "Shǒujī ne? Shǒujī méi bèi tā názǒu ba?", "es": "¿Y el móvil? No se lo llevaría, ¿no?" },
+        { "speaker": "雨果", "zh": "还好，手机在我手里，没被他拿走。", "py": "Hái hǎo, shǒujī zài wǒ shǒu li, méi bèi tā názǒu.", "es": "Menos mal: lo tenía en la mano y no se lo llevó." },
+        { "speaker": "安娜", "zh": "警察说能抓住那个小偷吗？", "py": "Jǐngchá shuō néng zhuāzhù nà ge xiǎotōu ma?", "es": "¿Dice la policía que podrá coger al ladrón?" },
+        { "speaker": "雨果", "zh": "他们说，上个星期有一个小偷被他们抓住了，可能这次也能抓住。", "py": "Tāmen shuō, shàng ge xīngqī yǒu yí ge xiǎotōu bèi tāmen zhuāzhù le, kěnéng zhè cì yě néng zhuāzhù.", "es": "Dicen que la semana pasada atraparon a un ladrón y que quizá esta vez también lo cojan." },
+        { "speaker": "安娜", "zh": "希望他们快点儿找到你的皮包！", "py": "Xīwàng tāmen kuài diǎnr zhǎodào nǐ de píbāo!", "es": "¡Ojalá encuentren pronto tu bolso!" }
+      ],
+      "notes": "别提了 («no lo menciones») es la manera típica de empezar a contar algo malo. Fíjate en que el español usa mucho la impersonal «me han robado»; el chino prefiere 被 cuando lo importante es lo afectado (mi bolso, mi DNI) y el hecho es negativo. Para avisar a la policía en China se llama al 110."
+    },
+    { "type": "exercises", "count": 16, "bank": ["g-le", "g-complements", "g-word-order"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "我的皮包" }, "with": { "zh": "被小偷" }, "verb1": { "zh": "偷走" }, "particle": { "zh": "了" } }, "end": "。", "es": "Un ladrón me ha robado el bolso." }, "distractors": ["把"] },
+        { "sentence": { "slots": { "subject": { "zh": "小偷" }, "with": { "zh": "被警察" }, "verb1": { "zh": "抓住" }, "particle": { "zh": "了" } }, "end": "。", "es": "La policía ha atrapado al ladrón." } },
+        { "sentence": { "slots": { "subject": { "zh": "我的现金" }, "adverb": { "zh": "没" }, "with": { "zh": "被他" }, "verb1": { "zh": "拿走" } }, "end": "。", "es": "No se ha llevado mi dinero en efectivo." }, "distractors": ["不"] },
+        { "sentence": { "slots": { "time0": { "zh": "上个星期五" }, "subject": { "zh": "雨果的皮包和身份证" }, "adverb": { "zh": "都" }, "with": { "zh": "被一个小偷" }, "verb1": { "zh": "偷走" }, "particle": { "zh": "了" } }, "end": "。", "es": "El viernes pasado un ladrón le robó a Hugo el bolso y el DNI." }, "distractors": ["是"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "我的皮包被小偷偷走了。", "py": "Wǒ de píbāo bèi xiǎotōu tōuzǒu le.", "es": "Un ladrón me ha robado el bolso." },
+        { "zh": "我的手机没被他拿走。", "py": "Wǒ de shǒujī méi bèi tā názǒu.", "es": "No se ha llevado mi móvil." },
+        { "zh": "小偷被警察抓住了。", "py": "Xiǎotōu bèi jǐngchá zhuāzhù le.", "es": "La policía ha atrapado al ladrón." },
+        { "zh": "这是在哪儿发生的？", "py": "Zhè shì zài nǎr fāshēng de?", "es": "¿Dónde ha ocurrido esto?" }
+      ],
+      "respond": [
+        { "q": { "zh": "你怎么了？", "py": "Nǐ zěnme le?", "es": "¿Qué te pasa?" }, "model": { "zh": "我的皮包被小偷偷走了。", "py": "Wǒ de píbāo bèi xiǎotōu tōuzǒu le.", "es": "Un ladrón me ha robado el bolso." } },
+        { "q": { "zh": "你的身份证也被偷了吗？", "py": "Nǐ de shēnfènzhèng yě bèi tōu le ma?", "es": "¿También te han robado el DNI?" }, "model": { "zh": "没有，我的身份证没被偷走。", "py": "Méiyǒu, wǒ de shēnfènzhèng méi bèi tōuzǒu.", "es": "No, el DNI no me lo han robado." } },
+        { "q": { "zh": "你报警了吗？", "py": "Nǐ bàojǐng le ma?", "es": "¿Has avisado a la policía?" }, "model": { "zh": "报了，警察问了很多情况。", "py": "Bào le, jǐngchá wèn le hěn duō qíngkuàng.", "es": "Sí, la policía me ha hecho muchas preguntas." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "En el metro de Shanghái",
+      "text": "上个星期五下午，雨果坐地铁去市中心买东西。地铁上的人特别多，大家都站得很近。雨果一边听音乐，一边看手机，没注意自己的皮包。到站以后，他发现皮包不见了！里面有五百块现金、一张银行卡和他的身份证。雨果很着急，马上去地铁站的服务台报警。警察来了以后，问了他很多情况：皮包是什么颜色的？在哪一站发生的？里面有什么东西？雨果都回答了。警察告诉他，这个星期已经有三个人的东西被小偷偷走了，他们一定会抓住小偷。两天以后，警察给雨果打电话：“小偷被我们抓住了！你的证件和银行卡都在，可是现金被他花完了。”雨果说：“没关系，能找回身份证就好！”",
+      "es": "El viernes pasado por la tarde Hugo cogió el metro para ir de compras al centro. Iba muchísima gente y todos estaban muy pegados. Hugo escuchaba música mientras miraba el móvil y no se fijó en su bolso. Al llegar a la estación, ¡se dio cuenta de que el bolso había desaparecido! Dentro llevaba quinientos yuanes en efectivo, una tarjeta del banco y su DNI. Hugo, muy nervioso, fue enseguida al mostrador de información de la estación a denunciarlo. Cuando llegó la policía, le preguntaron muchas cosas: ¿de qué color era el bolso?, ¿en qué estación pasó?, ¿qué había dentro? Hugo lo contestó todo. La policía le dijo que esa semana ya les habían robado a tres personas y que seguro que cogerían al ladrón. Dos días después la policía llamó a Hugo: «¡Hemos atrapado al ladrón! Tu documentación y tu tarjeta están, pero el efectivo se lo ha gastado». Hugo dijo: «No pasa nada: ¡con recuperar el DNI me basta!».",
+      "questions": [
+        { "q": "¿Por qué no se dio cuenta Hugo del robo?", "options": ["Escuchaba música y miraba el móvil", "Estaba dormido", "Hablaba con Ana"], "answer": 0 },
+        { "q": "¿Dónde fue a denunciarlo?", "options": ["地铁站的服务台", "大使馆", "学校"], "answer": 0 },
+        { "q": "¿Qué no recuperó Hugo?", "options": ["现金", "身份证", "银行卡"], "answer": 0 },
+        { "q": "¿Qué frase dice la policía?", "options": ["小偷被我们抓住了", "我们被小偷抓住了", "小偷没被抓住"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "id": "b1-u02-l6",
+  "title": "Dos caras del mismo hecho: 把 frente a 被 (y las noticias)",
+  "zh": "小偷把皮包偷走了 · 皮包被小偷偷走了",
+  "goal": "Elegir entre 把 y 被 según de qué hablas (quien actúa o lo afectado), evitar los errores típicos de la pasiva y entender noticias sencillas.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "报", "pinyin": "bào", "es": "periódico; informar", "note": "看报 = leer el periódico; 报名 = inscribirse." },
+    { "hanzi": "报道", "pinyin": "bàodào", "es": "informar (los medios); reportaje, noticia" },
+    { "hanzi": "记者", "pinyin": "jìzhě", "es": "periodista, reportero" },
+    { "hanzi": "媒体", "pinyin": "méitǐ", "es": "medios de comunicación" },
+    { "hanzi": "发表", "pinyin": "fābiǎo", "es": "publicar, hacer público (un texto, una opinión)" },
+    { "hanzi": "公布", "pinyin": "gōngbù", "es": "anunciar, hacer público (datos, resultados)" },
+    { "hanzi": "宣布", "pinyin": "xuānbù", "es": "anunciar oficialmente, declarar" },
+    { "hanzi": "声明", "pinyin": "shēngmíng", "es": "comunicado, declaración; declarar" },
+    { "hanzi": "事件", "pinyin": "shìjiàn", "es": "suceso, incidente" },
+    { "hanzi": "消失", "pinyin": "xiāoshī", "es": "desaparecer", "note": "Intransitivo: 他消失了, nunca *被消失." },
+    { "hanzi": "相关", "pinyin": "xiāngguān", "es": "relacionado, correspondiente", "note": "相关的新闻 = noticias relacionadas." },
+    { "hanzi": "状况", "pinyin": "zhuàngkuàng", "es": "estado, situación (de algo)", "note": "身体状况 = estado de salud; 天气状况." }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "小偷把我的皮包偷走了。", "py": "Xiǎotōu bǎ wǒ de píbāo tōuzǒu le.", "es": "El ladrón me ha robado el bolso (hablando del ladrón)." },
+        { "zh": "我的皮包被小偷偷走了。", "py": "Wǒ de píbāo bèi xiǎotōu tōuzǒu le.", "es": "Me han robado el bolso (hablando del bolso)." },
+        { "zh": "这件事已经被媒体报道了。", "py": "Zhè jiàn shì yǐjīng bèi méitǐ bàodào le.", "es": "Los medios ya han informado de esto." }
+      ]
+    },
+    { "type": "vocab", "title": "Las noticias", "words": ["报", "报道", "记者", "媒体", "发表", "公布", "宣布", "声明", "事件", "消失", "相关", "状况"] },
+    {
+      "type": "phonetics-drill",
+      "title": "把 o 被: escucha la palabra pequeña",
+      "markdown": "把 (*bǎ*) y 被 (*bèi*) son cortos y van sin énfasis, así que hay que **afinar el oído**: 把 es tercer tono (se queda abajo) y 被 cuarto (cae). Lo que cambia es **qué va primero**: quien actúa (con 把) o lo afectado (con 被).\n\n- 小偷**把**皮包偷走了 → *Xiǎotōu bǎ píbāo…*: dos terceros seguidos, 小 sube.\n- 皮包**被**小偷偷走了 → *Píbāo bèi xiǎotōu…*\n\nPalabras de hoy: **宣布 xuānbù** (x + üan, labios redondos), **状况 zhuàngkuàng** (dos cuartos tonos con -ng), **媒体 méitǐ**.",
+      "items": [
+        { "audio": "小偷把我的皮包偷走了。", "prompt": "¿Qué palabra has oído?", "options": ["把", "被"], "answer": 0, "explain": "Empieza por quien actúa: 小偷把…" },
+        { "audio": "我的皮包被小偷偷走了。", "prompt": "¿Qué palabra has oído?", "options": ["被", "把"], "answer": 0, "explain": "Empieza por lo afectado: 我的皮包被…" },
+        { "audio": "宣布", "options": ["xuānbù", "shuānbù", "xuànbù"], "answer": 0, "explain": "x + üan (se escribe uan): labios redondos." },
+        { "audio": "状况", "options": ["zhuàngkuàng", "zhuāngkuàng", "zhàngkuàng"], "answer": 0, "explain": "Dos cuartos tonos." },
+        { "audio": "记者", "options": ["jìzhě", "jìzě", "qìzhě"], "answer": 0, "explain": "zh retrofleja; 者 tercer tono." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["报", "布"],
+      "mnemonics": {
+        "报": "扌 (mano) + 𠬝 (alguien arrodillado): llevar con la mano la noticia a quien manda. Informar: 报道, 报警, 报纸.",
+        "布": "Una mano (𠂇) sobre 巾 (paño): la tela que se extiende. Extender una noticia a todos: 公布, 宣布."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "把 o 被: el mismo hecho, contado desde dos lados",
+      "markdown": "把 y 被 cuentan **lo mismo** con el mismo orden de base (… + verbo + resultado); cambia **de quién hablas**:\n\n| Hablas de… | Estructura | Ejemplo |\n|---|---|---|\n| quien actúa | A + **把** + B + V + algo | 小偷**把**皮包偷走了 |\n| lo afectado | B + **被** + A + V + algo | 皮包**被**小偷偷走了 |\n\nLas dos van en el hueco **Con quién** (convención de las unidades 1 y 2).\n\n**¿Cuándo 被?**\n1. Cuando lo afectado es el tema y el hecho es **malo o inesperado** (robos, cosas rotas, cancelaciones).\n2. En las **noticias** y textos formales, también para hechos neutros: 结果**被公布**了, 他**被选为**…\n3. Si no sabes o no importa quién lo hizo: 被偷了. (Con 把 siempre hace falta quien actúa.)\n\n**¿Cuándo ninguno?** Con verbos sin acción sobre algo: 认识, 喜欢, 知道, 有, 是, ni con verbos intransitivos (消失, 死, 迟到). Y para hechos normales, la frase activa: 我看完了这本书.\n\nEn la prensa, un verbo de dos sílabas puede ir solo tras 被: 这件事被报道了, 名单被公布了.",
+      "focus": ["with"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "小偷", "py": "xiǎotōu" }, "with": { "zh": "把我的皮包", "py": "bǎ wǒ de píbāo" }, "verb1": { "zh": "偷走", "py": "tōuzǒu" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "El ladrón me ha robado el bolso." },
+        { "slots": { "subject": { "zh": "我的皮包", "py": "wǒ de píbāo" }, "with": { "zh": "被小偷", "py": "bèi xiǎotōu" }, "verb1": { "zh": "偷走", "py": "tōuzǒu" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Me han robado el bolso (lo ha hecho un ladrón)." },
+        { "slots": { "subject": { "zh": "记者", "py": "jìzhě" }, "with": { "zh": "把这个事件", "py": "bǎ zhège shìjiàn" }, "verb1": { "zh": "报道出来", "py": "bàodào chulai" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Los periodistas han sacado a la luz este suceso." },
+        { "slots": { "subject": { "zh": "这个事件", "py": "zhège shìjiàn" }, "adverb": { "zh": "已经", "py": "yǐjīng" }, "with": { "zh": "被媒体", "py": "bèi méitǐ" }, "verb1": { "zh": "报道", "py": "bàodào" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Los medios ya han informado de este suceso." },
+        { "slots": { "subject": { "zh": "考试的时间", "py": "kǎoshì de shíjiān" }, "with": { "zh": "被", "py": "bèi" }, "verb1": { "zh": "公布", "py": "gōngbù" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Han publicado la fecha del examen." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "相关的情况", "py": "xiāngguān de qíngkuàng" }, "adverb": { "zh": "还没", "py": "hái méi" }, "with": { "zh": "被", "py": "bèi" }, "verb1": { "zh": "公布", "py": "gōngbù" } }, "end": "。", "es": "Todavía no se han hecho públicos los detalles." },
+        { "slots": { "subject": { "zh": "学校", "py": "xuéxiào" }, "adverb": { "zh": "还没", "py": "hái méi" }, "with": { "zh": "把结果", "py": "bǎ jiéguǒ" }, "verb1": { "zh": "告诉", "py": "gàosu" }, "object": { "zh": "我们", "py": "wǒmen" } }, "end": "。", "es": "La universidad aún no nos ha comunicado el resultado." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "这个消息", "py": "zhège xiāoxi" }, "with": { "zh": "被", "py": "bèi" }, "verb1": { "zh": "公布", "py": "gōngbù" }, "particle": { "zh": "了吗", "py": "le ma" } }, "end": "？", "es": "¿Se ha hecho pública esta noticia?" }
+      ],
+      "mistakes": [
+        { "wrong": "这本书被我看了。", "right": "我看完了这本书。 / 这本书我看完了。", "why": "Para algo normal que haces tú, se usa la frase activa; 被 suena a que al libro le ha pasado algo malo." },
+        { "wrong": "我被他认识。", "right": "他认识我。", "why": "认识, 喜欢, 知道, 有 no son acciones que «le hagan» algo a alguien: ni 被 ni 把." },
+        { "wrong": "那个人被消失了。", "right": "那个人消失了。", "why": "消失 es intransitivo (no tiene objeto): no admite 被." },
+        { "wrong": "我的面包被吃。", "right": "我的面包被吃了。", "why": "Un verbo de una sílaba no se queda solo tras 被: necesita 了 o un resultado." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "¡Han cancelado el concierto!",
+      "lines": [
+        { "speaker": "小李", "zh": "雨果，你看新闻了吗？周末的演唱会被取消了！", "py": "Yǔguǒ, nǐ kàn xīnwén le ma? Zhōumò de yǎnchànghuì bèi qǔxiāo le!", "es": "Hugo, ¿has visto las noticias? ¡Han cancelado el concierto del fin de semana!" },
+        { "speaker": "雨果", "zh": "真的吗？我昨天刚买了票！", "py": "Zhēn de ma? Wǒ zuótiān gāng mǎi le piào!", "es": "¿En serio? ¡Si compré la entrada ayer!" },
+        { "speaker": "小李", "zh": "很多媒体都报道了。他们的公司已经发表了声明。", "py": "Hěn duō méitǐ dōu bàodào le. Tāmen de gōngsī yǐjīng fābiǎo le shēngmíng.", "es": "Lo han contado un montón de medios. Su empresa ya ha publicado un comunicado." },
+        { "speaker": "雨果", "zh": "声明里说了什么？", "py": "Shēngmíng li shuō le shénme?", "es": "¿Y qué dice el comunicado?" },
+        { "speaker": "小李", "zh": "他们说，因为天气的状况不好，只好把演唱会取消了。", "py": "Tāmen shuō, yīnwèi tiānqì de zhuàngkuàng bù hǎo, zhǐhǎo bǎ yǎnchànghuì qǔxiāo le.", "es": "Dicen que, por el mal tiempo, no han tenido más remedio que cancelarlo." },
+        { "speaker": "雨果", "zh": "那票钱呢？会被退回来吗？", "py": "Nà piàoqián ne? Huì bèi tuì huilai ma?", "es": "¿Y el dinero de la entrada? ¿Lo devolverán?" },
+        { "speaker": "小李", "zh": "会。他们宣布，票钱都会退给大家。", "py": "Huì. Tāmen xuānbù, piàoqián dōu huì tuì gěi dàjiā.", "es": "Sí. Han anunciado que devolverán el dinero a todo el mundo." },
+        { "speaker": "雨果", "zh": "那还好。可是我手机里的票也消失了！", "py": "Nà hái hǎo. Kěshì wǒ shǒujī li de piào yě xiāoshī le!", "es": "Menos mal. ¡Pero es que la entrada ha desaparecido del móvil!" },
+        { "speaker": "小李", "zh": "别着急，票已经被退了，钱会回到你的支付宝。", "py": "Bié zháojí, piào yǐjīng bèi tuì le, qián huì huídào nǐ de Zhīfùbǎo.", "es": "Tranquilo, la entrada ya se ha anulado y el dinero volverá a tu Alipay." },
+        { "speaker": "雨果", "zh": "是谁先报道这个消息的？", "py": "Shì shéi xiān bàodào zhège xiāoxi de?", "es": "¿Quién dio primero la noticia?" },
+        { "speaker": "小李", "zh": "一个记者先在网上报道了，后来相关的新闻就都出来了。", "py": "Yí ge jìzhě xiān zài wǎng shang bàodào le, hòulái xiāngguān de xīnwén jiù dōu chūlai le.", "es": "Un periodista lo publicó primero en internet, y luego salieron todas las noticias relacionadas." },
+        { "speaker": "小李", "zh": "你看，新的时间被公布了：下个月十号。", "py": "Nǐ kàn, xīn de shíjiān bèi gōngbù le: xià ge yuè shí hào.", "es": "Mira, han anunciado la nueva fecha: el día diez del mes que viene." },
+        { "speaker": "雨果", "zh": "太好了！这次千万别再被取消了！", "py": "Tài hǎo le! Zhè cì qiānwàn bié zài bèi qǔxiāo le!", "es": "¡Genial! ¡Que esta vez no lo cancelen otra vez, por favor!" }
+      ],
+      "notes": "En las noticias chinas el 被 aparece mucho, también para hechos que no son malos: 新的时间被公布了. En la conversación diaria, en cambio, se usa sobre todo para contratiempos. 票钱 = el dinero de la entrada."
+    },
+    { "type": "exercises", "count": 18, "bank": ["g-word-order", "g-complements", "g-le", "g-bu-mei"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "小偷" }, "with": { "zh": "把我的皮包" }, "verb1": { "zh": "偷走" }, "particle": { "zh": "了" } }, "end": "。", "es": "El ladrón me ha robado el bolso." }, "distractors": ["被"] },
+        { "sentence": { "slots": { "subject": { "zh": "我的皮包" }, "with": { "zh": "被小偷" }, "verb1": { "zh": "偷走" }, "particle": { "zh": "了" } }, "end": "。", "es": "Me han robado el bolso." }, "distractors": ["把"] },
+        { "sentence": { "slots": { "subject": { "zh": "这个事件" }, "adverb": { "zh": "已经" }, "with": { "zh": "被媒体" }, "verb1": { "zh": "报道" }, "particle": { "zh": "了" } }, "end": "。", "es": "Los medios ya han informado de este suceso." } },
+        { "sentence": { "slots": { "time0": { "zh": "因为天气不好，" }, "subject": { "zh": "他们的公司" }, "adverb": { "zh": "只好" }, "with": { "zh": "把周末的演唱会" }, "verb1": { "zh": "取消" }, "particle": { "zh": "了" } }, "end": "。", "es": "Como hacía mal tiempo, su empresa no ha tenido más remedio que cancelar el concierto del fin de semana." } }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "小偷把我的皮包偷走了。", "py": "Xiǎotōu bǎ wǒ de píbāo tōuzǒu le.", "es": "El ladrón me ha robado el bolso." },
+        { "zh": "我的皮包被小偷偷走了。", "py": "Wǒ de píbāo bèi xiǎotōu tōuzǒu le.", "es": "Me han robado el bolso." },
+        { "zh": "周末的演唱会被取消了。", "py": "Zhōumò de yǎnchànghuì bèi qǔxiāo le.", "es": "Han cancelado el concierto del fin de semana." },
+        { "zh": "新的时间被公布了。", "py": "Xīn de shíjiān bèi gōngbù le.", "es": "Han anunciado la nueva fecha." }
+      ],
+      "respond": [
+        { "q": { "zh": "小偷把你的什么偷走了？", "py": "Xiǎotōu bǎ nǐ de shénme tōuzǒu le?", "es": "¿Qué te ha robado el ladrón?" }, "model": { "zh": "我的皮包被他偷走了。", "py": "Wǒ de píbāo bèi tā tōuzǒu le.", "es": "Me ha robado el bolso." } },
+        { "q": { "zh": "演唱会的票钱会被退回来吗？", "py": "Yǎnchànghuì de piàoqián huì bèi tuì huilai ma?", "es": "¿Devolverán el dinero de las entradas del concierto?" }, "model": { "zh": "会，公司已经宣布了。", "py": "Huì, gōngsī yǐjīng xuānbù le.", "es": "Sí, la empresa ya lo ha anunciado." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Noticia: el ladrón del metro",
+      "text": "本报记者报道：昨天下午五点，上海地铁二号线上发生了一个事件。一位女士的皮包被一个小偷偷走了，里面有手机、现金和证件。这位女士立刻报警。地铁上的几个年轻人看见了，他们一起把小偷抓住了，然后把他送到了下一站的警察那儿。小偷想跑，可是大家没让他跑。警察说，最近一个月，这条线上已经有十几个人的东西被偷了，这个小偷可能跟这些事件都相关。今天上午，地铁公司发表了声明，感谢这几个年轻人，还宣布：以后每个站都会有更多的工作人员。相关的情况，警察还没公布。记者问那位女士现在的状况，她说：“东西都回来了，我很好。谢谢他们！”很多媒体都报道了这件事。",
+      "es": "Información de nuestro periodista: ayer a las cinco de la tarde ocurrió un suceso en la línea 2 del metro de Shanghái. Un ladrón le robó el bolso a una señora; dentro llevaba el móvil, dinero en efectivo y documentación. La señora avisó inmediatamente a la policía. Varios jóvenes que iban en el vagón lo vieron, atraparon juntos al ladrón y lo entregaron a la policía en la siguiente estación. El ladrón intentó escapar, pero no le dejaron. La policía dice que en el último mes ya les han robado a más de diez personas en esta línea y que el ladrón podría estar relacionado con todos esos casos. Esta mañana la empresa del metro ha publicado un comunicado en el que da las gracias a los jóvenes y anuncia que a partir de ahora habrá más personal en todas las estaciones. La policía aún no ha hecho públicos más detalles. Cuando el periodista le preguntó a la señora cómo estaba, dijo: «He recuperado todas mis cosas, estoy bien. ¡Gracias a ellos!». Muchos medios han informado del suceso.",
+      "questions": [
+        { "q": "¿Quién atrapó al ladrón?", "options": ["几个年轻人", "警察", "那位女士"], "answer": 0 },
+        { "q": "¿Qué ha publicado la empresa del metro?", "options": ["一个声明", "一张照片", "一本书"], "answer": 0 },
+        { "q": "¿Qué frase usa 把?", "options": ["他们一起把小偷抓住了", "皮包被一个小偷偷走了", "很多人的东西被偷了"], "answer": 0 },
+        { "q": "¿Cómo está la señora?", "options": ["Bien: ha recuperado sus cosas", "Herida", "Muy enfadada"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

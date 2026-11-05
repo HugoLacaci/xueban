@@ -1,0 +1,147 @@
+{
+  "unitId": "b1-u04",
+  "scenarios": [
+    {
+      "id": "b1-u04-didi",
+      "title": "El conductor de Didi no encuentra la entrada",
+      "zh": "滴滴司机找不到门",
+      "level": 2,
+      "setting": "Hugo ha pedido un 滴滴 para volver a la residencia con dos maletas. El conductor ha llegado a la universidad, pero está en la puerta equivocada y no sabe cómo entrar. Tú (la app) eres el conductor, que llama a Hugo por teléfono.",
+      "role": "conductor de Didi",
+      "roleZh": "滴滴司机",
+      "voice": "m",
+      "goals": ["Decir en qué puerta estás", "Guiar al conductor con 往 / 朝 + dirección y un direccional (开过来, 开进来)", "Pedir ayuda para subir las maletas (把箱子拿上去 / 放进去)", "Dar las gracias y despedirte"],
+      "vocab": ["门口", "开过来", "开进来", "朝前开", "往左转", "导航", "把箱子", "放进去", "眼前"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "喂，你好，我是滴滴司机。我已经到了，可是没看见你。你在哪个门？", "py": "Wéi, nǐ hǎo, wǒ shì Dīdī sījī. Wǒ yǐjīng dào le, kěshì méi kànjiàn nǐ. Nǐ zài nǎge mén?", "es": "¿Sí? Hola, soy el conductor de Didi. Ya he llegado, pero no le veo. ¿En qué puerta está?" },
+          "user": [
+            { "zh": "我在学校东门，宿舍楼前面。", "py": "Wǒ zài xuéxiào dōngmén, sùshè lóu qiánmian.", "es": "Estoy en la puerta este de la universidad, delante de la residencia.", "keywords": ["东门", "门"], "next": "n2", "goal": 0 },
+            { "zh": "我在北门这儿。您在哪儿？", "py": "Wǒ zài běimén zhèr. Nín zài nǎr?", "es": "Estoy aquí, en la puerta norte. ¿Dónde está usted?", "keywords": ["北门", "在哪儿"], "next": "n2b", "goal": 0 }
+          ],
+          "hint": "Di en qué puerta estás: 我在学校东门 / 北门 / 南门 / 西门, y si quieres, delante de qué edificio (……前面)."
+        },
+        "n2": {
+          "npc": { "zh": "东门？导航让我开到南门来了。从南门怎么开过去？", "py": "Dōngmén? Dǎoháng ràng wǒ kāidào nánmén lai le. Cóng nánmén zěnme kāi guoqu?", "es": "¿La puerta este? El navegador me ha traído a la puerta sur. ¿Cómo voy desde aquí?" },
+          "user": [
+            { "zh": "您朝前开，到红绿灯往左转，再一直开五分钟就到了。", "py": "Nín cháo qián kāi, dào hónglǜdēng wǎng zuǒ zhuǎn, zài yìzhí kāi wǔ fēnzhōng jiù dào le.", "es": "Siga recto, en el semáforo gire a la izquierda y siga cinco minutos más: ya estará.", "keywords": ["朝前", "往左", "一直"], "next": "n3", "goal": 1 },
+            { "zh": "您别动，我走过去吧！", "py": "Nín bié dòng, wǒ zǒu guoqu ba!", "es": "No se mueva, ¡voy yo andando!", "keywords": ["走过去"], "next": "n2c" }
+          ],
+          "hint": "Guíale con 朝前开 / 往左转 / 一直开, o dile que vas tú: 我走过去."
+        },
+        "n2b": {
+          "npc": { "zh": "我在南门。北门离这儿远吗？", "py": "Wǒ zài nánmén. Běimén lí zhèr yuǎn ma?", "es": "Yo estoy en la puerta sur. ¿Está lejos la puerta norte?" },
+          "user": [
+            { "zh": "有点儿远。您从学校外面的路开过来吧，大约十分钟。", "py": "Yǒudiǎnr yuǎn. Nín cóng xuéxiào wàimian de lù kāi guolai ba, dàyuē shí fēnzhōng.", "es": "Un poco. Venga por la calle de fuera de la universidad; unos diez minutos.", "keywords": ["开过来", "大约"], "next": "n3", "goal": 1 },
+            { "zh": "不远，您开进学校来，一直朝前开就到了。", "py": "Bù yuǎn, nín kāijìn xuéxiào lai, yìzhí cháo qián kāi jiù dào le.", "es": "No, entre en la universidad y siga todo recto: ya llega.", "keywords": ["开进", "朝前"], "next": "n2d", "goal": 1 }
+          ],
+          "hint": "Explícale cómo llegar: 开过来 (venir con el coche) o 开进学校来 (entrar en el campus) + 朝前开."
+        },
+        "n2c": {
+          "npc": { "zh": "你有两个大箱子，走过来太累了。还是我开过去吧。怎么走？", "py": "Nǐ yǒu liǎng ge dà xiāngzi, zǒu guolai tài lèi le. Háishi wǒ kāi guoqu ba. Zěnme zǒu?", "es": "Lleva dos maletas grandes; venir andando es una paliza. Mejor voy yo con el coche. ¿Por dónde?" },
+          "user": [
+            { "zh": "好的。您朝前开，到红绿灯往左转就到了。", "py": "Hǎo de. Nín cháo qián kāi, dào hónglǜdēng wǎng zuǒ zhuǎn jiù dào le.", "es": "Vale. Siga recto y en el semáforo gire a la izquierda: ya está.", "keywords": ["朝前", "往左"], "next": "n3", "goal": 1 }
+          ],
+          "hint": "Acepta (好的) y guíale con 朝前开 y 往左转."
+        },
+        "n2d": {
+          "npc": { "zh": "学校门口的保安不让车开进去。", "py": "Xuéxiào ménkǒu de bǎo'ān bú ràng chē kāi jinqu.", "es": "El guardia de la entrada no deja entrar coches." },
+          "user": [
+            { "zh": "那您在门口等我，我把箱子拿过去。", "py": "Nà nín zài ménkǒu děng wǒ, wǒ bǎ xiāngzi ná guoqu.", "es": "Entonces espéreme en la entrada, que le llevo las maletas.", "keywords": ["等我", "拿过去"], "next": "n4", "goal": 1 },
+            { "zh": "那您从外面的路开过来吧，东门可以停车。", "py": "Nà nín cóng wàimian de lù kāi guolai ba, dōngmén kěyǐ tíngchē.", "es": "Pues venga por la calle de fuera; en la puerta este se puede parar.", "keywords": ["开过来", "停车"], "next": "n3", "goal": 1 }
+          ],
+          "hint": "Propón otra solución: que te espere y le llevas tú las maletas (把箱子拿过去), o que venga por fuera (开过来)."
+        },
+        "n3": {
+          "npc": { "zh": "好，我看见了！前面站着一个人，旁边有两个箱子，是你吗？", "py": "Hǎo, wǒ kànjiàn le! Qiánmian zhànzhe yí ge rén, pángbiān yǒu liǎng ge xiāngzi, shì nǐ ma?", "es": "¡Vale, ya le veo! Delante hay alguien de pie con dos maletas al lado, ¿es usted?" },
+          "user": [
+            { "zh": "对，是我！您能帮我把箱子放进去吗？", "py": "Duì, shì wǒ! Nín néng bāng wǒ bǎ xiāngzi fàng jinqu ma?", "es": "¡Sí, soy yo! ¿Me ayuda a meter las maletas?", "keywords": ["把箱子", "放进去"], "next": "n4", "goal": 2 },
+            { "zh": "是我！我在您眼前，我朝您走过去。", "py": "Shì wǒ! Wǒ zài nín yǎnqián, wǒ cháo nín zǒu guoqu.", "es": "¡Soy yo! Estoy justo delante de usted, ahora voy hacia allí.", "keywords": ["走过去", "眼前"], "next": "n4" }
+          ],
+          "hint": "Confirma (对，是我) y pide ayuda con las maletas: 您能帮我把箱子放进去吗？"
+        },
+        "n4": {
+          "npc": { "zh": "没问题，我来拿。箱子都放进去了，上车吧！", "py": "Méi wèntí, wǒ lái ná. Xiāngzi dōu fàng jinqu le, shàngchē ba!", "es": "Sin problema, ya las cojo yo. Las maletas ya están dentro: ¡suba!" },
+          "user": [
+            { "zh": "太谢谢您了！麻烦您了。", "py": "Tài xièxie nín le! Máfan nín le.", "es": "¡Muchísimas gracias! Perdone la molestia.", "keywords": ["谢谢", "麻烦"], "next": "n5", "goal": 3 },
+            { "zh": "谢谢！我们走吧。", "py": "Xièxie! Wǒmen zǒu ba.", "es": "¡Gracias! Vámonos.", "keywords": ["谢谢", "走吧"], "next": "n5", "goal": 3 }
+          ],
+          "hint": "Da las gracias: 太谢谢您了 / 麻烦您了."
+        },
+        "n5": {
+          "npc": { "zh": "不客气！下次叫车，在滴滴上写下是哪个门就行了。", "py": "Bú kèqi! Xià cì jiào chē, zài Dīdī shang xiěxià shì nǎge mén jiù xíng le.", "es": "¡De nada! La próxima vez que pida un coche, apunte en la app la puerta y listo." },
+          "end": true,
+          "feedback": "Has dicho dónde estabas, has guiado al conductor con 朝前开 / 往左转 y con direccionales (开过来, 开进学校来, 走过去) y has pedido ayuda con 把箱子放进去. Recuerda: el lugar va en medio (开进学校来) y 来 / 去 dependen de dónde estás tú."
+        }
+      }
+    },
+    {
+      "id": "b1-u04-huancheng",
+      "title": "Preguntar por el transbordo",
+      "zh": "在地铁站问换乘",
+      "level": 2,
+      "setting": "Hugo está en el metro de la Plaza del Pueblo y tiene que cambiar a la línea 2 para ir a la estación de tren, pero no encuentra el pasillo del transbordo. Tú (la app) eres una empleada del metro.",
+      "role": "empleada del metro",
+      "roleZh": "地铁工作人员",
+      "voice": "f",
+      "goals": ["Preguntar dónde se hace el transbordo", "Entender una indicación con un direccional (走上去, 走下楼去)", "Preguntar cuánto se tarda o el precio", "Dar las gracias y despedirte"],
+      "vocab": ["换乘", "二号线", "楼上", "楼下", "走上去", "走下去", "前往", "票价", "大约"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "你好，需要帮忙吗？", "py": "Nǐ hǎo, xūyào bāngmáng ma?", "es": "Hola, ¿necesita ayuda?" },
+          "user": [
+            { "zh": "您好！请问，换乘二号线怎么走？", "py": "Nín hǎo! Qǐngwèn, huànchéng èr hào xiàn zěnme zǒu?", "es": "¡Hola! Perdone, ¿por dónde se hace el transbordo a la línea 2?", "keywords": ["换乘", "二号线"], "next": "n2", "goal": 0 },
+            { "zh": "请问，我想去火车站，要在这儿换乘吗？", "py": "Qǐngwèn, wǒ xiǎng qù huǒchēzhàn, yào zài zhèr huànchéng ma?", "es": "Perdone, quiero ir a la estación de tren, ¿tengo que hacer transbordo aquí?", "keywords": ["火车站", "换乘"], "next": "n1b", "goal": 0 }
+          ],
+          "hint": "Pregunta por el transbordo: 请问，换乘二号线怎么走？"
+        },
+        "n1b": {
+          "npc": { "zh": "对，前往火车站要换乘二号线。", "py": "Duì, qiánwǎng huǒchēzhàn yào huànchéng èr hào xiàn.", "es": "Sí, para ir a la estación de tren hay que cambiar a la línea 2." },
+          "user": [
+            { "zh": "二号线在哪儿？我怎么过去？", "py": "Èr hào xiàn zài nǎr? Wǒ zěnme guòqu?", "es": "¿Dónde está la línea 2? ¿Cómo llego?", "keywords": ["在哪儿", "怎么"], "next": "n2", "goal": 0 }
+          ],
+          "hint": "Pregunta dónde está la línea 2 (在哪儿) y cómo ir (怎么过去)."
+        },
+        "n2": {
+          "npc": { "zh": "二号线在楼下。你先朝前走，看见电梯就走下楼去。", "py": "Èr hào xiàn zài lóu xià. Nǐ xiān cháo qián zǒu, kànjiàn diàntī jiù zǒu xià lóu qu.", "es": "La línea 2 está abajo. Siga recto y, cuando vea la escalera mecánica, baje." },
+          "user": [
+            { "zh": "要走下去，对吗？不是走上去？", "py": "Yào zǒu xiaqu, duì ma? Bú shì zǒu shangqu?", "es": "Hay que bajar, ¿verdad? ¿No subir?", "keywords": ["走下去", "走上去"], "next": "n3", "goal": 1 },
+            { "zh": "好的，我知道了。到火车站要多长时间？", "py": "Hǎo de, wǒ zhīdào le. Dào huǒchēzhàn yào duō cháng shíjiān?", "es": "Vale, entendido. ¿Cuánto se tarda hasta la estación?", "keywords": ["多长时间"], "next": "n4", "goal": 1 }
+          ],
+          "hint": "Confirma la dirección (走下去还是走上去？) o pregunta cuánto se tarda (多长时间)."
+        },
+        "n3": {
+          "npc": { "zh": "对，走下去。一号线在楼上，二号线在楼下。", "py": "Duì, zǒu xiaqu. Yī hào xiàn zài lóu shàng, èr hào xiàn zài lóu xià.", "es": "Eso es, bajar. La línea 1 está arriba y la 2, abajo." },
+          "user": [
+            { "zh": "明白了。到火车站大约要多长时间？", "py": "Míngbai le. Dào huǒchēzhàn dàyuē yào duō cháng shíjiān?", "es": "Entendido. ¿Más o menos cuánto se tarda hasta la estación?", "keywords": ["大约", "多长时间"], "next": "n4" },
+            { "zh": "票价要再买吗？", "py": "Piàojià yào zài mǎi ma?", "es": "¿Tengo que pagar otro billete?", "keywords": ["票价", "买"], "next": "n5" }
+          ],
+          "hint": "Pregunta el tiempo (大约多长时间) o si hay que pagar otra vez (要再买票吗)."
+        },
+        "n4": {
+          "npc": { "zh": "坐五站，大约二十分钟就到达了。", "py": "Zuò wǔ zhàn, dàyuē èrshí fēnzhōng jiù dàodá le.", "es": "Son cinco paradas; en unos veinte minutos llega." },
+          "user": [
+            { "zh": "换乘要再买票吗？", "py": "Huànchéng yào zài mǎi piào ma?", "es": "¿Para el transbordo hay que comprar otro billete?", "keywords": ["买票", "换乘"], "next": "n5", "goal": 2 },
+            { "zh": "好的，谢谢您！", "py": "Hǎo de, xièxie nín!", "es": "¡Vale, gracias!", "keywords": ["谢谢"], "next": "n6", "goal": 3 }
+          ],
+          "hint": "Pregunta si el transbordo se paga (要再买票吗) o despídete (谢谢)."
+        },
+        "n5": {
+          "npc": { "zh": "不用。换乘不出站，不用再买票，票价一样。", "py": "Bú yòng. Huànchéng bù chū zhàn, bú yòng zài mǎi piào, piàojià yíyàng.", "es": "No hace falta. Si no sale de la estación, no paga otra vez: el precio es el mismo." },
+          "user": [
+            { "zh": "太好了，谢谢您！再见！", "py": "Tài hǎo le, xièxie nín! Zàijiàn!", "es": "¡Genial, gracias! ¡Adiós!", "keywords": ["谢谢", "再见"], "next": "n6", "goal": 3 },
+            { "zh": "要坐几站？", "py": "Yào zuò jǐ zhàn?", "es": "¿Cuántas paradas son?", "keywords": ["几站"], "next": "n4", "goal": 2 }
+          ],
+          "hint": "Despídete (谢谢，再见) o pregunta cuántas paradas son (几站)."
+        },
+        "n6": {
+          "npc": { "zh": "不客气！快走下去吧，车马上就来了。", "py": "Bú kèqi! Kuài zǒu xiaqu ba, chē mǎshàng jiù lái le.", "es": "¡De nada! Baje rápido, que el tren está a punto de llegar." },
+          "end": true,
+          "feedback": "Has preguntado por el transbordo (换乘二号线怎么走), has entendido 走下楼去 frente a 走上去 y has preguntado el tiempo y el precio. Recuerda: con lugar, el lugar va en medio (走下楼去), y en el metro verás 换乘 en todos los carteles."
+        }
+      }
+    }
+  ]
+}

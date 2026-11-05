@@ -1,0 +1,136 @@
+{
+  "id": "b1-u02-l3",
+  "title": "Llego tarde: la pasiva coloquial con 叫 y 让",
+  "zh": "路叫一个事故堵住了",
+  "goal": "Contar contratiempos de forma coloquial con 叫 / 让 + quién + verbo, y explicar por qué llegas tarde (堵车, 事故, 赶到).",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "迟到", "pinyin": "chídào", "es": "llegar tarde" },
+    { "hanzi": "堵车", "pinyin": "dǔchē", "es": "atasco; haber atasco", "note": "堵 = taponar: 路堵住了 = la calle está cortada." },
+    { "hanzi": "赶", "pinyin": "gǎn", "es": "darse prisa (para no perder algo)", "note": "赶地铁, 赶飞机 = ir a toda prisa a coger el metro, el avión." },
+    { "hanzi": "赶到", "pinyin": "gǎndào", "es": "llegar a toda prisa (a tiempo)" },
+    { "hanzi": "赶紧", "pinyin": "gǎnjǐn", "es": "enseguida, sin perder tiempo", "note": "Cuenta lo que alguien hizo deprisa: 他赶紧打电话." },
+    { "hanzi": "赶快", "pinyin": "gǎnkuài", "es": "¡rápido!, cuanto antes", "note": "Muy usado en órdenes y consejos: 你赶快走吧！" },
+    { "hanzi": "及时", "pinyin": "jíshí", "es": "a tiempo, en el momento justo" },
+    { "hanzi": "预计", "pinyin": "yùjì", "es": "prever, calcular (que pasará)", "note": "预计晚到二十分钟 = se prevé un retraso de veinte minutos." },
+    { "hanzi": "交警", "pinyin": "jiāojǐng", "es": "policía de tráfico", "note": "Abreviatura de 交通警察." },
+    { "hanzi": "事故", "pinyin": "shìgù", "es": "accidente (de tráfico, laboral)", "note": "出事故 = tener un accidente." },
+    { "hanzi": "取消", "pinyin": "qǔxiāo", "es": "cancelar, anular" },
+    { "hanzi": "理由", "pinyin": "lǐyóu", "es": "motivo, razón; excusa" }
+  ],
+  "extraVocab": ["迟到", "堵车"],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "前面的路叫一个事故堵住了。", "py": "Qiánmiàn de lù jiào yí ge shìgù dǔzhù le.", "es": "Un accidente ha cortado la calle de delante." },
+        { "zh": "我的自行车让人骑走了。", "py": "Wǒ de zìxíngchē ràng rén qízǒu le.", "es": "Alguien se ha llevado mi bici." },
+        { "zh": "对不起，路上堵车，我迟到了。", "py": "Duìbuqǐ, lù shang dǔchē, wǒ chídào le.", "es": "Perdón, había atasco y he llegado tarde." }
+      ]
+    },
+    { "type": "vocab", "title": "Atascos y prisas", "words": ["迟到", "堵车", "赶", "赶到", "赶紧", "赶快", "及时", "预计", "交警", "事故", "取消", "理由"] },
+    {
+      "type": "phonetics-drill",
+      "title": "叫, 让 y 被 en la frase; el ritmo de las prisas",
+      "markdown": "En la pasiva coloquial, 叫 (*jiào*) y 让 (*ràng*) se dicen igual de rápido que 被: no llevan el peso de la frase. 我的书 | 叫小李 | **借走**了.\n\nPalabras de hoy con trampas para hispanohablantes:\n\n- **迟到 chídào**: *ch* retrofleja y aspirada, y la *i* de *chi* es un zumbido, no una «i».\n- **赶紧 gǎnjǐn / 赶快 gǎnkuài**: dos terceros seguidos en 赶紧 → el primero sube: *gánjǐn*.\n- **取消 qǔxiāo**: *q* + *ü* (se escribe *u* detrás de q) con labios redondeados.\n- **堵车 dǔchē**: *d* sin aire y *ch* con aire.",
+      "items": [
+        { "audio": "赶紧", "prompt": "¿Cómo suena 赶 aquí?", "options": ["Sube, como un segundo tono", "Baja y sube entero", "Cae"], "answer": 0, "explain": "Tercero + tercero → el primero se dice en segundo tono." },
+        { "audio": "迟到", "options": ["chídào", "qídào", "zhídào"], "answer": 0, "explain": "ch retrofleja con aire." },
+        { "audio": "取消", "options": ["qǔxiāo", "qūxiāo", "chǔxiāo"], "answer": 0, "explain": "q + ü en tercer tono." },
+        { "audio": "我的书叫小李借走了。", "prompt": "¿Quién se llevó el libro?", "options": ["小李", "Yo", "No se dice"], "answer": 0, "explain": "叫 + agente: 叫小李 = por Xiao Li." },
+        { "audio": "堵车", "options": ["dǔchē", "tǔchē", "dǔzhē"], "answer": 0, "explain": "d sin aire; ch con aire." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["赶", "迟"],
+      "mnemonics": {
+        "赶": "走 (andar, correr) + 干 (da el sonido, gān → gǎn): correr para llegar a algo. 赶飞机, 赶紧, 赶快: todo prisas.",
+        "迟": "辶 (camino) + 尺 (regla): ir midiendo el camino paso a paso, despacio… y llegar tarde: 迟到."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "叫 / 让 + quién + verbo: la pasiva de la calle",
+      "markdown": "En el habla de todos los días, en lugar de 被 se oye mucho **叫** y **让**: 我的书**叫**小李借走了 = 我的书**被**小李借走了.\n\nVan en el mismo hueco que 被 + agente: **Con quién**.\n\n**Diferencias con 被**:\n\n- Con 叫 / 让, **el agente es obligatorio**. Si no sabes quién fue, di **人** («alguien»): 自行车**让人**骑走了. Nunca *自行车叫骑走了.\n- Son más coloquiales: en un periódico o en una carta formal se usa 被.\n- **Cuidado con 让**: también significa «hacer que, dejar» (妈妈**让**我多休息). Solo el contexto dice si es pasiva: 我的面包**让**小李吃了 (pasiva: Xiao Li se lo comió).\n\n**Negativa**: 没 delante: 还好，我**没叫**交警看见.",
+      "focus": ["with"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "前面的路", "py": "qiánmiàn de lù" }, "with": { "zh": "叫一个事故", "py": "jiào yí ge shìgù" }, "verb1": { "zh": "堵住", "py": "dǔzhù" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Un accidente ha cortado la calle de delante.", "esOrder": [{ "text": "Un accidente", "slot": "with" }, { "text": "ha cortado", "slot": "verb1" }, { "text": "la calle de delante", "slot": "subject" }] },
+        { "slots": { "subject": { "zh": "我的自行车", "py": "wǒ de zìxíngchē" }, "with": { "zh": "让人", "py": "ràng rén" }, "verb1": { "zh": "骑走", "py": "qízǒu" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Alguien se ha llevado mi bici." },
+        { "slots": { "subject": { "zh": "那本书", "py": "nà běn shū" }, "with": { "zh": "叫大卫", "py": "jiào Dàwèi" }, "verb1": { "zh": "借走", "py": "jièzǒu" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Ese libro se lo ha llevado David prestado." },
+        { "slots": { "subject": { "zh": "我的面包", "py": "wǒ de miànbāo" }, "with": { "zh": "让小李", "py": "ràng Xiǎo Lǐ" }, "verb1": { "zh": "吃了", "py": "chī le" } }, "end": "。", "es": "Xiao Li se ha comido mi pan." },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "time": { "zh": "今天", "py": "jīntiān" }, "adverb": { "zh": "又", "py": "yòu" }, "with": { "zh": "叫老师", "py": "jiào lǎoshī" }, "verb1": { "zh": "说了", "py": "shuō le" }, "object": { "zh": "几句", "py": "jǐ jù" } }, "end": "。", "es": "Hoy la profesora me ha vuelto a echar la bronca." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "没", "py": "méi" }, "with": { "zh": "叫交警", "py": "jiào jiāojǐng" }, "verb1": { "zh": "看见", "py": "kànjiàn" } }, "end": "。", "es": "El policía de tráfico no me ha visto." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你的书", "py": "nǐ de shū" }, "with": { "zh": "叫谁", "py": "jiào shéi" }, "verb1": { "zh": "借走", "py": "jièzǒu" }, "particle": { "zh": "了", "py": "le" } }, "end": "？", "es": "¿Quién se ha llevado tu libro?" }
+      ],
+      "mistakes": [
+        { "wrong": "我的自行车叫骑走了。", "right": "我的自行车叫人骑走了。 / 我的自行车被骑走了。", "why": "叫 y 让 necesitan agente; si no sabes quién, di 人 o usa 被." },
+        { "wrong": "我的面包让小李吃。", "right": "我的面包让小李吃了。", "why": "Igual que con 被, el verbo necesita algo detrás (了, un resultado…). Sin 了 se entiende «dejo que Xiao Li se coma mi pan»." },
+        { "wrong": "路堵车了，所以我是迟到。", "right": "路上堵车，所以我迟到了。", "why": "迟到 ya es el verbo: no lleva 是, y el cambio se marca con 了." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "¿Otra vez tarde?",
+      "lines": [
+        { "speaker": "王老师", "zh": "雨果，你怎么又迟到了？", "py": "Yǔguǒ, nǐ zěnme yòu chídào le?", "es": "Hugo, ¿cómo es que has vuelto a llegar tarde?" },
+        { "speaker": "雨果", "zh": "对不起，王老师。路上堵车，堵了四十分钟。", "py": "Duìbuqǐ, Wáng lǎoshī. Lù shang dǔchē, dǔ le sìshí fēnzhōng.", "es": "Lo siento, profesora. Había atasco: cuarenta minutos parado." },
+        { "speaker": "王老师", "zh": "堵车不是理由，你应该早一点儿出门。", "py": "Dǔchē bú shì lǐyóu, nǐ yīnggāi zǎo yìdiǎnr chūmén.", "es": "El atasco no es excusa: deberías salir un poco antes." },
+        { "speaker": "雨果", "zh": "我七点就出门了！可是前面的路叫一个事故堵住了。", "py": "Wǒ qī diǎn jiù chūmén le! Kěshì qiánmiàn de lù jiào yí ge shìgù dǔzhù le.", "es": "¡Salí a las siete! Pero un accidente había cortado la calle." },
+        { "speaker": "王老师", "zh": "什么事故？有人受伤吗？", "py": "Shénme shìgù? Yǒu rén shòushāng ma?", "es": "¿Qué accidente? ¿Hay heridos?" },
+        { "speaker": "雨果", "zh": "没有人受伤。两辆车出了事故，交警很快就来了。", "py": "Méiyǒu rén shòushāng. Liǎng liàng chē chū le shìgù, jiāojǐng hěn kuài jiù lái le.", "es": "Nadie herido. Chocaron dos coches y la policía de tráfico llegó enseguida." },
+        { "speaker": "王老师", "zh": "你为什么不骑自行车？", "py": "Nǐ wèishénme bù qí zìxíngchē?", "es": "¿Por qué no vienes en bici?" },
+        { "speaker": "雨果", "zh": "我的自行车上个星期让人骑走了！", "py": "Wǒ de zìxíngchē shàng ge xīngqī ràng rén qízǒu le!", "es": "¡Alguien se llevó mi bici la semana pasada!" },
+        { "speaker": "王老师", "zh": "真倒霉。那你后来是怎么来的？", "py": "Zhēn dǎoméi. Nà nǐ hòulái shì zěnme lái de?", "es": "Qué mala suerte. ¿Y al final cómo has venido?" },
+        { "speaker": "雨果", "zh": "我下了车，赶紧去坐地铁，然后一路跑过来。", "py": "Wǒ xià le chē, gǎnjǐn qù zuò dìtiě, ránhòu yí lù pǎo guolai.", "es": "Me bajé, corrí a coger el metro y luego he venido corriendo todo el camino." },
+        { "speaker": "王老师", "zh": "好吧，你还算及时，考试还没开始。赶快坐下吧！", "py": "Hǎo ba, nǐ hái suàn jíshí, kǎoshì hái méi kāishǐ. Gǎnkuài zuòxia ba!", "es": "Bueno, aún has llegado a tiempo: el examen no ha empezado. ¡Siéntate rápido!" },
+        { "speaker": "安娜", "zh": "雨果，你知道吗？下午的课取消了。", "py": "Yǔguǒ, nǐ zhīdào ma? Xiàwǔ de kè qǔxiāo le.", "es": "Hugo, ¿sabes qué? Han cancelado la clase de la tarde." },
+        { "speaker": "雨果", "zh": "太好了！今天我不用再赶了。", "py": "Tài hǎo le! Jīntiān wǒ bú yòng zài gǎn le.", "es": "¡Genial! Hoy ya no tengo que correr más." }
+      ],
+      "notes": "En China, decir 堵车 es la excusa clásica para llegar tarde, y muchos profesores contestan como 王老师: 堵车不是理由. 还算及时 = «todavía cuenta como a tiempo». 受伤 = herirse (lo verás más en la lección 5)."
+    },
+    { "type": "exercises", "count": 16, "bank": ["g-le", "g-complements", "g-lai-qu"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "我的自行车" }, "with": { "zh": "让人" }, "verb1": { "zh": "骑走" }, "particle": { "zh": "了" } }, "end": "。", "es": "Alguien se ha llevado mi bici." }, "distractors": ["让"] },
+        { "sentence": { "slots": { "subject": { "zh": "那本书" }, "with": { "zh": "叫大卫" }, "verb1": { "zh": "借走" }, "particle": { "zh": "了" } }, "end": "。", "es": "Ese libro se lo ha llevado David prestado." } },
+        { "sentence": { "slots": { "subject": { "zh": "我" }, "adverb": { "zh": "没" }, "with": { "zh": "叫交警" }, "verb1": { "zh": "看见" } }, "end": "。", "es": "El policía de tráfico no me ha visto." }, "distractors": ["不"] },
+        { "sentence": { "slots": { "time0": { "zh": "今天早上" }, "subject": { "zh": "学校前面的路" }, "adverb": { "zh": "又" }, "with": { "zh": "叫一个事故" }, "verb1": { "zh": "堵住" }, "particle": { "zh": "了" } }, "end": "。", "es": "Esta mañana un accidente ha vuelto a cortar la calle de delante de la universidad." } },
+        { "sentence": { "slots": { "time0": { "zh": "因为堵车，" }, "subject": { "zh": "雨果" }, "adverb": { "zh": "赶紧" }, "verb1": { "zh": "下了车" }, "verb2": { "zh": "去坐" }, "object": { "zh": "地铁" } }, "end": "。", "es": "Como había atasco, Hugo se bajó enseguida para coger el metro." } }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "对不起，路上堵车，我迟到了。", "py": "Duìbuqǐ, lù shang dǔchē, wǒ chídào le.", "es": "Perdón, había atasco y he llegado tarde." },
+        { "zh": "前面的路叫一个事故堵住了。", "py": "Qiánmiàn de lù jiào yí ge shìgù dǔzhù le.", "es": "Un accidente ha cortado la calle de delante." },
+        { "zh": "你赶快走吧！", "py": "Nǐ gǎnkuài zǒu ba!", "es": "¡Vete rápido!" },
+        { "zh": "下午的课取消了。", "py": "Xiàwǔ de kè qǔxiāo le.", "es": "Han cancelado la clase de la tarde." }
+      ],
+      "respond": [
+        { "q": { "zh": "你怎么迟到了？", "py": "Nǐ zěnme chídào le?", "es": "¿Por qué has llegado tarde?" }, "model": { "zh": "路上堵车，路叫一个事故堵住了。", "py": "Lù shang dǔchē, lù jiào yí ge shìgù dǔzhù le.", "es": "Había atasco: un accidente había cortado la calle." } },
+        { "q": { "zh": "你的自行车呢？", "py": "Nǐ de zìxíngchē ne?", "es": "¿Y tu bici?" }, "model": { "zh": "我的自行车让人骑走了。", "py": "Wǒ de zìxíngchē ràng rén qízǒu le.", "es": "Alguien se ha llevado mi bici." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Corriendo al aeropuerto",
+      "text": "去年冬天，雨果要坐飞机回西班牙过年。飞机是下午三点的，他预计坐出租车一个小时就能到机场。可是那天路上车特别多，堵车了，前面的路叫一个事故堵住了。交警来了以后，车还是不动。司机说：“你赶快下车，去坐地铁吧！”雨果赶紧下了车，拿着行李跑进了地铁站。他在地铁上一直看手机上的时间，心里特别着急。两点二十分，他最后赶到了机场。可是工作人员告诉他：“对不起，因为天气不好，下午三点的飞机取消了。”雨果又累又生气，可是这是一个很好的理由，没有办法。第二天早上，他坐上了去马德里的飞机。妈妈在机场接他，说：“没关系，你及时回家过年了！”",
+      "es": "El invierno pasado Hugo tenía que volver en avión a España por las fiestas. El vuelo era a las tres de la tarde y calculaba que en taxi llegaría al aeropuerto en una hora. Pero aquel día había un atasco tremendo: un accidente había cortado la calle. Llegó la policía de tráfico, pero los coches seguían sin moverse. El taxista le dijo: «¡Bájate rápido y coge el metro!». Hugo se bajó enseguida y entró corriendo con la maleta en la estación. En el metro no paraba de mirar la hora en el móvil, nerviosísimo. A las dos y veinte por fin llegó al aeropuerto. Pero el personal le dijo: «Lo sentimos, por el mal tiempo han cancelado el vuelo de las tres». Hugo estaba cansado y enfadado, pero era un motivo de peso y no había nada que hacer. A la mañana siguiente cogió el avión a Madrid. Su madre fue a buscarlo al aeropuerto y le dijo: «No pasa nada, ¡has llegado a tiempo para las fiestas!».",
+      "questions": [
+        { "q": "¿Por qué se bajó Hugo del taxi?", "options": ["Porque un accidente había cortado la calle", "Porque se le acabó el dinero", "Porque el taxista se perdió"], "answer": 0 },
+        { "q": "¿A qué hora llegó al aeropuerto?", "options": ["两点二十分", "三点", "一点"], "answer": 0 },
+        { "q": "¿Por qué cancelaron el vuelo?", "options": ["因为天气不好", "因为堵车", "因为事故"], "answer": 0 },
+        { "q": "¿Qué frase usa la pasiva coloquial?", "options": ["前面的路叫一个事故堵住了", "你赶快下车", "飞机取消了"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "id": "a2-u12-l1",
+  "title": "Después del máster: 要, 想 y 打算",
+  "zh": "毕业以后你打算做什么？",
+  "goal": "Hablar de tus planes con 想, 要, 打算 y 计划, y de tus deseos con 希望 y 愿意.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "打算", "pinyin": "dǎsuàn", "es": "pensar (hacer), tener previsto; plan", "note": "Un plan ya pensado: 我打算明年回国." },
+    { "hanzi": "计划", "pinyin": "jìhuà", "es": "plan; planear", "note": "Más formal y detallado que 打算; también es nombre: 我的计划." },
+    { "hanzi": "毕业", "pinyin": "bìyè", "es": "graduarse, terminar los estudios", "note": "No lleva objeto: 我大学毕业了 (✗ 毕业大学)." },
+    { "hanzi": "将来", "pinyin": "jiānglái", "es": "en el futuro; el futuro", "note": "Futuro lejano: 将来我想当老师. Para «mañana» o «el año que viene» se dice la fecha." },
+    { "hanzi": "希望", "pinyin": "xīwàng", "es": "esperar, desear; esperanza", "note": "Detrás va una frase entera: 我希望你来." },
+    { "hanzi": "理想", "pinyin": "lǐxiǎng", "es": "ideal; sueño (de vida)", "note": "我的理想是… = mi sueño es…" },
+    { "hanzi": "愿意", "pinyin": "yuànyì", "es": "estar dispuesto a, querer (de buen grado)" },
+    { "hanzi": "想法", "pinyin": "xiǎngfǎ", "es": "idea, opinión (lo que piensas)" },
+    { "hanzi": "留", "pinyin": "liú", "es": "quedarse; dejar", "note": "留在上海 = quedarse en Shanghái." },
+    { "hanzi": "留下", "pinyin": "liúxià", "es": "quedarse (y no irse); dejar (algo)" },
+    { "hanzi": "实现", "pinyin": "shíxiàn", "es": "hacer realidad, cumplir (un sueño, un plan)" },
+    { "hanzi": "目的", "pinyin": "mùdì", "es": "objetivo, propósito" },
+    { "hanzi": "要", "pinyin": "yào", "es": "ir a, querer (decidido)", "note": "Repaso de la A1 (U9 y U12): aquí, la intención firme." }
+  ],
+  "extraVocab": ["毕业"],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "毕业以后，我打算在上海找工作。", "py": "Bìyè yǐhòu, wǒ dǎsuàn zài Shànghǎi zhǎo gōngzuò.", "es": "Después de graduarme, tengo previsto buscar trabajo en Shanghái." },
+        { "zh": "我不想回国，我愿意留下。", "py": "Wǒ bù xiǎng huí guó, wǒ yuànyì liúxià.", "es": "No quiero volver a mi país: estoy dispuesto a quedarme." },
+        { "zh": "我希望将来能实现我的理想。", "py": "Wǒ xīwàng jiānglái néng shíxiàn wǒ de lǐxiǎng.", "es": "Espero poder hacer realidad mi sueño en el futuro." }
+      ]
+    },
+    { "type": "vocab", "title": "Planes, deseos y sueños", "words": ["打算", "计划", "毕业", "将来", "希望", "理想", "愿意", "想法", "留", "留下", "实现", "目的", "要"] },
+    {
+      "type": "phonetics-drill",
+      "title": "La pausa tras «…以后» y el tercer tono de 理想",
+      "markdown": "Cuando la frase empieza con un bloque de tiempo largo (**毕业以后**, **将来**), se hace una **pequeña pausa** después del bloque y la voz vuelve a arrancar en el sujeto: 毕业以后 / 我打算回国. Es la misma pausa que harías en español tras «después de graduarme,».\n\nOtros puntos de hoy:\n- **理想** *lǐxiǎng*: dos terceros tonos seguidos → el primero se dice como **segundo** (*lí xiǎng*), aunque se escriba *lǐ*.\n- **打算** *dǎsuàn*: 3 + 4. En el habla rápida mucha gente dice la segunda sílaba casi neutra.\n- **不要** *bú yào* y **不想** *bù xiǎng*: 不 cambia a *bú* solo delante de cuarto tono.\n- **愿意** *yuànyì*: dos cuartos tonos; el primero cae menos, el segundo cae del todo.",
+      "items": [
+        { "audio": "毕业以后，我打算回国。", "prompt": "¿Dónde va la pausa natural?", "options": ["毕业以后 / 我打算回国", "毕业 / 以后我打算回国", "毕业以后我 / 打算回国"], "answer": 0, "explain": "La pausa va tras el bloque de tiempo, antes del sujeto." },
+        { "audio": "理想", "prompt": "¿Cómo suena en realidad?", "options": ["lí xiǎng (el primero sube)", "lǐ xiǎng (los dos completos)", "lì xiǎng (el primero cae)"], "answer": 0, "explain": "3 + 3 → 2 + 3." },
+        { "audio": "打算", "options": ["dǎsuàn", "dàsuàn", "dǎsuān"], "answer": 0 },
+        { "audio": "愿意", "options": ["yuànyì", "yuányì", "yuǎnyí"], "answer": 0, "explain": "Dos cuartos tonos." },
+        { "audio": "我不想回国", "options": ["wǒ bù xiǎng huí guó", "wǒ bú xiǎng huí guó"], "answer": 0, "explain": "想 es tercer tono: 不 se queda en bù." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["留", "望"],
+      "mnemonics": {
+        "留": "Abajo, 田 (el campo): lo que se queda en tu campo no se va. 留 = quedarse; 留学 = quedarse a estudiar fuera.",
+        "望": "亡 + 月 (luna) + 王: alguien de pie que mira la luna a lo lejos y espera. De «mirar a lo lejos» viene 希望 «esperar, desear»."
+      }
+    },
+    {
+      "type": "explain",
+      "title": "想, 要, 打算, 计划, 希望, 愿意: seis formas de hablar del futuro",
+      "markdown": "| Palabra | Qué expresa | Ejemplo |\n|---|---|---|\n| **想** | deseo, ganas (puede no cumplirse) | 我**想**去西安。 Me gustaría ir a Xi'an. |\n| **要** | decisión firme o algo ya próximo | 我明年**要**回国。 El año que viene vuelvo (está decidido). |\n| **打算** | plan pensado, «tengo previsto» | 我**打算**在上海找工作。 |\n| **计划** | plan formal, con pasos; también «el plan» | 我**计划**先工作两年。 我的**计划** |\n| **希望** | esperanza; detrás va una frase | 我**希望**你能来。 |\n| **愿意** | estar dispuesto, hacerlo de buen grado | 我很**愿意**帮你。 |\n\n**Negar**: 不想, 不打算, 不愿意 y 没有计划. Para negar 要 de intención se dice **不想**: **不要** suena a «¡no lo hagas!» (prohibición).\n\nRecuerda (a2-u09-l1): las frases de dos partes se dibujan con una fila por cláusula; un bloque de tiempo como **毕业以后** va entero en *Tiempo inicial*."
+    },
+    {
+      "type": "skeleton",
+      "title": "Sujeto + 想 / 要 / 打算 / 计划 + verbo",
+      "markdown": "想, 要, 打算, 计划, 希望 y 愿意 ocupan el hueco del **auxiliar**: detrás del sujeto (y del tiempo), delante del lugar y del verbo.\n\n- El tiempo puede ir delante del sujeto (**毕业以后**，我…) o detrás (我**明年**要…).\n- El lugar va **antes** del verbo: 我打算**在上海**找工作 (✗ 找工作在上海).\n- 很 puede ir delante de 想 y 愿意: 我**很想**去, 我**很愿意**.",
+      "focus": ["aux"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "time0": { "zh": "毕业以后", "py": "bìyè yǐhòu" }, "subject": { "zh": "我", "py": "wǒ" }, "aux": { "zh": "打算", "py": "dǎsuàn" }, "place": { "zh": "在上海", "py": "zài Shànghǎi" }, "verb1": { "zh": "找", "py": "zhǎo" }, "object": { "zh": "工作", "py": "gōngzuò" } }, "end": "。", "es": "Después de graduarme, tengo previsto buscar trabajo en Shanghái.", "esOrder": [{ "text": "Después de graduarme", "slot": "time0" }, { "text": "tengo previsto", "slot": "aux" }, { "text": "buscar", "slot": "verb1" }, { "text": "trabajo", "slot": "object" }, { "text": "en Shanghái", "slot": "place" }] },
+        { "slots": { "subject": { "zh": "安娜", "py": "Ānnà" }, "time": { "zh": "明年", "py": "míngnián" }, "aux": { "zh": "要", "py": "yào" }, "verb1": { "zh": "回国", "py": "huí guó" } }, "end": "。", "es": "Anna vuelve a su país el año que viene." },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "很", "py": "hěn" }, "aux": { "zh": "想", "py": "xiǎng" }, "verb1": { "zh": "去西安", "py": "qù Xī'ān" }, "verb2": { "zh": "旅游", "py": "lǚyóu" } }, "end": "。", "es": "Tengo muchas ganas de ir de viaje a Xi'an." },
+        { "slots": { "subject": { "zh": "小李", "py": "Xiǎo Lǐ" }, "time": { "zh": "明年", "py": "míngnián" }, "aux": { "zh": "计划", "py": "jìhuà" }, "verb1": { "zh": "去西班牙", "py": "qù Xībānyá" }, "verb2": { "zh": "学习", "py": "xuéxí" }, "object": { "zh": "西班牙语", "py": "Xībānyáyǔ" } }, "end": "。", "es": "Xiao Li tiene planeado ir a España el año que viene a estudiar español." },
+        { "slots": { "time0": { "zh": "将来", "py": "jiānglái" }, "subject": { "zh": "我", "py": "wǒ" }, "aux": { "zh": "希望能", "py": "xīwàng néng" }, "verb1": { "zh": "实现", "py": "shíxiàn" }, "object": { "zh": "我的理想", "py": "wǒ de lǐxiǎng" } }, "end": "。", "es": "Espero poder hacer realidad mi sueño en el futuro." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "不", "py": "bù" }, "aux": { "zh": "打算", "py": "dǎsuàn" }, "verb1": { "zh": "留在上海", "py": "liú zài Shànghǎi" } }, "end": "。", "es": "No tengo pensado quedarme en Shanghái." },
+        { "slots": { "subject": { "zh": "他", "py": "tā" }, "adverb": { "zh": "不", "py": "bú" }, "aux": { "zh": "愿意", "py": "yuànyì" }, "verb1": { "zh": "加班", "py": "jiābān" } }, "end": "。", "es": "No está dispuesto a hacer horas extra." }
+      ],
+      "question": [
+        { "slots": { "time0": { "zh": "毕业以后", "py": "bìyè yǐhòu" }, "subject": { "zh": "你", "py": "nǐ" }, "aux": { "zh": "打算", "py": "dǎsuàn" }, "verb1": { "zh": "做", "py": "zuò" }, "object": { "zh": "什么", "py": "shénme" } }, "end": "？", "es": "¿Qué tienes previsto hacer después de graduarte?" },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "aux": { "zh": "愿意", "py": "yuànyì" }, "verb1": { "zh": "留下", "py": "liúxià" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿Estás dispuesto a quedarte?" }
+      ],
+      "mistakes": [
+        { "wrong": "我不要留在上海。", "right": "我不想留在上海。", "why": "不要 suena a negativa rotunda o a prohibición («¡no te quedes!»); para un plan o un deseo se usa 不想 / 不打算." },
+        { "wrong": "毕业以后我打算找工作在上海。", "right": "毕业以后我打算在上海找工作。", "why": "El lugar (在 + sitio) va delante del verbo, no al final como en español." },
+        { "wrong": "我明年毕业大学。", "right": "我明年大学毕业。", "why": "毕业 no lleva objeto: el centro de estudios va delante (大学毕业, 硕士毕业)." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "¿Y después del máster?",
+      "lines": [
+        { "speaker": "王老师", "zh": "雨果，你明年就毕业了吧？毕业以后你打算做什么？", "py": "Yǔguǒ, nǐ míngnián jiù bìyè le ba? Bìyè yǐhòu nǐ dǎsuàn zuò shénme?", "es": "Hugo, te gradúas el año que viene, ¿verdad? ¿Qué tienes pensado hacer después?" },
+        { "speaker": "雨果", "zh": "我还没想好。我想留在上海工作，可是我父母希望我回西班牙。", "py": "Wǒ hái méi xiǎnghǎo. Wǒ xiǎng liú zài Shànghǎi gōngzuò, kěshì wǒ fùmǔ xīwàng wǒ huí Xībānyá.", "es": "Todavía no lo he decidido. Me gustaría quedarme a trabajar en Shanghái, pero mis padres quieren que vuelva a España." },
+        { "speaker": "王老师", "zh": "你自己的想法呢？", "py": "Nǐ zìjǐ de xiǎngfǎ ne?", "es": "¿Y qué piensas tú?" },
+        { "speaker": "雨果", "zh": "我觉得在中国工作机会很多，我很愿意留下。", "py": "Wǒ juéde zài Zhōngguó gōngzuò jīhuì hěn duō, wǒ hěn yuànyì liúxià.", "es": "Creo que trabajando en China hay muchas oportunidades: me quedaría con mucho gusto." },
+        { "speaker": "安娜", "zh": "我跟雨果不一样，我明年要回马德里。", "py": "Wǒ gēn Yǔguǒ bù yíyàng, wǒ míngnián yào huí Mǎdélǐ.", "es": "Yo no soy como Hugo: el año que viene vuelvo a Madrid." },
+        { "speaker": "王老师", "zh": "你回去打算做什么？", "py": "Nǐ huíqu dǎsuàn zuò shénme?", "es": "¿Y qué piensas hacer allí?" },
+        { "speaker": "安娜", "zh": "我计划在马德里当汉语老师，这是我的理想。", "py": "Wǒ jìhuà zài Mǎdélǐ dāng Hànyǔ lǎoshī, zhè shì wǒ de lǐxiǎng.", "es": "Tengo planeado ser profesora de chino en Madrid: es mi sueño." },
+        { "speaker": "王老师", "zh": "很好！你们来中国学习的目的是什么？", "py": "Hěn hǎo! Nǐmen lái Zhōngguó xuéxí de mùdì shì shénme?", "es": "¡Muy bien! ¿Y con qué objetivo vinisteis a estudiar a China?" },
+        { "speaker": "雨果", "zh": "我的目的是学好汉语，将来在中国公司工作。", "py": "Wǒ de mùdì shì xuéhǎo Hànyǔ, jiānglái zài Zhōngguó gōngsī gōngzuò.", "es": "Mi objetivo es aprender bien chino y, en el futuro, trabajar en una empresa china." },
+        { "speaker": "王老师", "zh": "我希望你们都能实现自己的理想。", "py": "Wǒ xīwàng nǐmen dōu néng shíxiàn zìjǐ de lǐxiǎng.", "es": "Espero que los dos podáis cumplir vuestro sueño." }
+      ],
+      "notes": "希望 lleva detrás una frase con su propio sujeto: 我父母希望**我**回西班牙 («mis padres esperan que yo vuelva»). En español aparece el subjuntivo; en chino, nada cambia. 想好 (想 + 好, complemento de resultado de la U4) = «pensarlo hasta decidirlo»."
+    },
+    { "type": "exercises", "count": 16, "bank": ["g-modal-verbs", "g-word-order", "u09"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "time0": { "zh": "毕业以后" }, "subject": { "zh": "我" }, "aux": { "zh": "打算" }, "place": { "zh": "在上海" }, "verb1": { "zh": "找" }, "object": { "zh": "工作" } }, "end": "。", "es": "Después de graduarme, tengo previsto buscar trabajo en Shanghái." }, "distractors": ["了"] },
+        { "sentence": { "slots": { "subject": { "zh": "安娜" }, "time": { "zh": "明年" }, "aux": { "zh": "要" }, "verb1": { "zh": "回国" } }, "end": "。", "es": "Anna vuelve a su país el año que viene." }, "distractors": ["没"] },
+        { "sentence": { "slots": { "subject": { "zh": "我" }, "adverb": { "zh": "不" }, "aux": { "zh": "打算" }, "verb1": { "zh": "留在上海" } }, "end": "。", "es": "No tengo pensado quedarme en Shanghái." }, "distractors": ["没"] },
+        { "sentence": { "slots": { "time0": { "zh": "将来" }, "subject": { "zh": "我" }, "aux": { "zh": "希望能" }, "with": { "zh": "跟中国朋友一起" }, "place": { "zh": "在上海" }, "verb1": { "zh": "开" }, "object": { "zh": "一个咖啡店" } }, "end": "。", "es": "En el futuro espero poder abrir una cafetería en Shanghái con mis amigos chinos." }, "distractors": ["要"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "毕业以后，我打算在上海找工作。", "py": "Bìyè yǐhòu, wǒ dǎsuàn zài Shànghǎi zhǎo gōngzuò.", "es": "Después de graduarme, tengo previsto buscar trabajo en Shanghái." },
+        { "zh": "我明年要回国。", "py": "Wǒ míngnián yào huí guó.", "es": "El año que viene vuelvo a mi país." },
+        { "zh": "我的理想是当汉语老师。", "py": "Wǒ de lǐxiǎng shì dāng Hànyǔ lǎoshī.", "es": "Mi sueño es ser profesor de chino." },
+        { "zh": "我希望你能实现你的理想。", "py": "Wǒ xīwàng nǐ néng shíxiàn nǐ de lǐxiǎng.", "es": "Espero que puedas cumplir tu sueño." }
+      ],
+      "respond": [
+        { "q": { "zh": "毕业以后你打算做什么？", "py": "Bìyè yǐhòu nǐ dǎsuàn zuò shénme?", "es": "¿Qué tienes pensado hacer después de graduarte?" }, "model": { "zh": "我打算先在上海工作两年，然后回西班牙。", "py": "Wǒ dǎsuàn xiān zài Shànghǎi gōngzuò liǎng nián, ránhòu huí Xībānyá.", "es": "Tengo previsto trabajar primero dos años en Shanghái y luego volver a España." } },
+        { "q": { "zh": "你来中国的目的是什么？", "py": "Nǐ lái Zhōngguó de mùdì shì shénme?", "es": "¿Con qué objetivo viniste a China?" }, "model": { "zh": "我的目的是学好汉语。", "py": "Wǒ de mùdì shì xuéhǎo Hànyǔ.", "es": "Mi objetivo es aprender bien chino." } },
+        { "q": { "zh": "你愿意留在中国工作吗？", "py": "Nǐ yuànyì liú zài Zhōngguó gōngzuò ma?", "es": "¿Te quedarías a trabajar en China?" }, "model": { "zh": "很愿意，这儿的机会很多。", "py": "Hěn yuànyì, zhèr de jīhuì hěn duō.", "es": "Con mucho gusto: aquí hay muchas oportunidades." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Mis planes",
+      "text": "我叫雨果，是上海交通大学的研究生，明年六月毕业。很多人问我：“毕业以后你打算做什么？”我想了很长时间。我父母希望我回西班牙工作，因为他们想常常见到我。可是我很喜欢上海，也愿意留下来。我觉得在这儿有很多机会，我的汉语也越来越好了。我来中国的目的是学好汉语，认识中国。我的理想是将来在一家中国公司工作，帮西班牙和中国的公司做生意。所以我计划明年先在上海找工作，每年回国看父母两次。我希望能实现我的理想。",
+      "es": "Me llamo Hugo, soy estudiante de posgrado en la Universidad Jiaotong de Shanghái y me gradúo en junio del año que viene. Mucha gente me pregunta: «¿Qué piensas hacer después de graduarte?». Lo he pensado mucho tiempo. Mis padres quieren que vuelva a trabajar a España, porque quieren verme a menudo. Pero Shanghái me gusta mucho y me quedaría con gusto. Creo que aquí hay muchas oportunidades, y además mi chino es cada vez mejor. Vine a China con el objetivo de aprender bien chino y conocer el país. Mi sueño es trabajar algún día en una empresa china y ayudar a empresas españolas y chinas a hacer negocios. Así que tengo planeado buscar trabajo en Shanghái el año que viene y volver a casa dos veces al año para ver a mis padres. Espero poder cumplir mi sueño.",
+      "questions": [
+        { "q": "¿Cuándo se gradúa Hugo?", "options": ["明年六月", "今年六月", "明年九月"], "answer": 0 },
+        { "q": "¿Qué quieren sus padres?", "options": ["他回西班牙工作", "他留在上海", "他去北京学习"], "answer": 0 },
+        { "q": "¿Cuál es el sueño de Hugo?", "options": ["在中国公司工作", "当汉语老师", "开咖啡店"], "answer": 0 },
+        { "q": "¿Cuántas veces al año piensa volver a casa?", "options": ["两次", "一次", "三次"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

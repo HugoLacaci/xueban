@@ -1,0 +1,147 @@
+{
+  "unitId": "b1-u03",
+  "scenarios": [
+    {
+      "id": "b1-u03-class",
+      "title": "No lo entiendo, ¿puede repetirlo?",
+      "zh": "老师，请再说一遍",
+      "level": 2,
+      "setting": "Clase de audición del máster. Hugo se ha sentado al fondo, no ve bien la pizarra y la grabación le resulta difícil. Tú (la app) eres la profesora Wang.",
+      "role": "profesora",
+      "roleZh": "王老师",
+      "voice": "f",
+      "goals": ["Decir que no ves bien la pizarra (看不清楚)", "Decir que no entiendes la grabación (听不懂)", "Pedir que lo repita (再说一遍 / 再听一遍)", "Preguntar por los deberes y si da tiempo (来得及)"],
+      "vocab": ["看不清楚", "听不懂", "听得懂", "再说一遍", "录音", "难度", "提问", "功课", "来得及"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "各位同学，请看黑板上的题目。后面的同学，你们看得见看不见？", "py": "Gèwèi tóngxué, qǐng kàn hēibǎn shang de tímù. Hòumiàn de tóngxué, nǐmen kàn de jiàn kàn bu jiàn?", "es": "Compañeros, mirad el enunciado de la pizarra. Los de atrás, ¿lo veis?" },
+          "user": [
+            { "zh": "老师，看得见，可是字太小了，我看不清楚。", "py": "Lǎoshī, kàn de jiàn, kěshì zì tài xiǎo le, wǒ kàn bu qīngchu.", "es": "Profesora, lo veo, pero las letras son muy pequeñas y no las distingo bien.", "keywords": ["看不清楚", "太小"], "next": "n2", "goal": 0 },
+            { "zh": "老师，我看不见。我可以坐前面吗？", "py": "Lǎoshī, wǒ kàn bu jiàn. Wǒ kěyǐ zuò qiánmiàn ma?", "es": "Profesora, no lo veo. ¿Puedo sentarme delante?", "keywords": ["看不见", "坐前面"], "next": "n2", "goal": 0 }
+          ],
+          "hint": "Di que no lo ves bien con 看不清楚 (lo ves, pero mal) o 看不见 (no lo ves). Puedes pedir sentarte delante: 我可以坐前面吗？"
+        },
+        "n2": {
+          "npc": { "zh": "好，你坐前面吧。现在我们听一个录音。听完以后，请你说一下录音的内容。", "py": "Hǎo, nǐ zuò qiánmiàn ba. Xiànzài wǒmen tīng yí ge lùyīn. Tīngwán yǐhòu, qǐng nǐ shuō yíxià lùyīn de nèiróng.", "es": "Vale, siéntate delante. Ahora vamos a escuchar una grabación. Cuando acabe, cuéntame de qué trata." },
+          "user": [
+            { "zh": "对不起，老师，这个录音难度太大了，我听不懂。", "py": "Duìbuqǐ, lǎoshī, zhège lùyīn nándù tài dà le, wǒ tīng bu dǒng.", "es": "Lo siento, profesora: esta grabación es demasiado difícil, no la entiendo.", "keywords": ["听不懂", "难度"], "next": "n3", "goal": 1 },
+            { "zh": "老师，我只听懂了一半。", "py": "Lǎoshī, wǒ zhǐ tīngdǒng le yíbàn.", "es": "Profesora, solo he entendido la mitad.", "keywords": ["一半", "听懂"], "next": "n3", "goal": 1 }
+          ],
+          "hint": "Explica que no la entiendes (听不懂) o que solo has entendido una parte (只听懂了一半)."
+        },
+        "n3": {
+          "npc": { "zh": "没关系。哪儿听不懂？", "py": "Méi guānxi. Nǎr tīng bu dǒng?", "es": "No pasa nada. ¿Qué parte no entiendes?" },
+          "user": [
+            { "zh": "后面的内容我听不懂。您能让我们再听一遍吗？", "py": "Hòumiàn de nèiróng wǒ tīng bu dǒng. Nín néng ràng wǒmen zài tīng yí biàn ma?", "es": "No entiendo la última parte. ¿Nos la puede poner otra vez?", "keywords": ["再听一遍", "一遍"], "next": "n4", "goal": 2 },
+            { "zh": "老师，您说得太快了，请再说一遍。", "py": "Lǎoshī, nín shuō de tài kuài le, qǐng zài shuō yí biàn.", "es": "Profesora, habla muy rápido: repítalo, por favor.", "keywords": ["再说一遍", "太快"], "next": "n4", "goal": 2 },
+            { "zh": "老师，我可以提问吗？“交流”是什么意思？", "py": "Lǎoshī, wǒ kěyǐ tíwèn ma? “Jiāoliú” shì shénme yìsi?", "es": "Profesora, ¿puedo preguntar algo? ¿Qué significa «交流»?", "keywords": ["提问", "什么意思"], "next": "n3b" }
+          ],
+          "hint": "Pide que lo repita: 再说一遍 / 再听一遍 (el clasificador 遍 va detrás del verbo). También puedes preguntar una palabra: ……是什么意思？"
+        },
+        "n3b": {
+          "npc": { "zh": "“交流”就是大家互相说自己的想法。还有别的问题吗？", "py": "“Jiāoliú” jiù shì dàjiā hùxiāng shuō zìjǐ de xiǎngfǎ. Hái yǒu bié de wèntí ma?", "es": "«交流» es que cada uno cuente a los demás lo que piensa. ¿Alguna pregunta más?" },
+          "user": [
+            { "zh": "没有了。您能让我们再听一遍录音吗？", "py": "Méiyǒu le. Nín néng ràng wǒmen zài tīng yí biàn lùyīn ma?", "es": "No. ¿Nos puede poner otra vez la grabación?", "keywords": ["再听一遍", "一遍"], "next": "n4", "goal": 2 }
+          ],
+          "hint": "Ahora pide escuchar la grabación otra vez: 再听一遍."
+        },
+        "n4": {
+          "npc": { "zh": "好，我们再听一遍……现在听得懂了吗？", "py": "Hǎo, wǒmen zài tīng yí biàn…… Xiànzài tīng de dǒng le ma?", "es": "Vale, la escuchamos otra vez… ¿Ahora la entiendes?" },
+          "user": [
+            { "zh": "听得懂了！录音说的是上海人的周末。", "py": "Tīng de dǒng le! Lùyīn shuō de shì Shànghǎirén de zhōumò.", "es": "¡Ahora sí! La grabación habla del fin de semana de los shanghaineses.", "keywords": ["听得懂了", "听懂了"], "next": "n5" },
+            { "zh": "差不多都听得懂了，谢谢老师。", "py": "Chàbuduō dōu tīng de dǒng le, xièxie lǎoshī.", "es": "Ya lo entiendo casi todo, gracias, profesora.", "keywords": ["听得懂", "差不多"], "next": "n5" }
+          ],
+          "hint": "Di que ahora sí lo entiendes: 听得懂了 (了 = cambio de situación)."
+        },
+        "n5": {
+          "npc": { "zh": "很好！今天的功课是写一篇三百字的文章，星期五交。", "py": "Hěn hǎo! Jīntiān de gōngkè shì xiě yì piān sānbǎi zì de wénzhāng, xīngqīwǔ jiāo.", "es": "¡Muy bien! Los deberes de hoy son escribir una redacción de trescientos caracteres para el viernes." },
+          "user": [
+            { "zh": "星期五以前我写得完，来得及。", "py": "Xīngqīwǔ yǐqián wǒ xiě de wán, lái de jí.", "es": "Antes del viernes me da tiempo a terminarla.", "keywords": ["写得完", "来得及"], "next": "n6", "goal": 3 },
+            { "zh": "老师，这个星期我功课很多，可能写不完。星期一交来得及吗？", "py": "Lǎoshī, zhège xīngqī wǒ gōngkè hěn duō, kěnéng xiě bu wán. Xīngqīyī jiāo lái de jí ma?", "es": "Profesora, esta semana tengo muchos deberes y puede que no la termine. ¿Vale si la entrego el lunes?", "keywords": ["写不完", "来得及吗"], "next": "n5b", "goal": 3 }
+          ],
+          "hint": "Di si te da tiempo (写得完, 来得及) o pide entregarla otro día (……交来得及吗？)."
+        },
+        "n5b": {
+          "npc": { "zh": "可以，星期一上午交也来得及。", "py": "Kěyǐ, xīngqīyī shàngwǔ jiāo yě lái de jí.", "es": "Vale, si la entregas el lunes por la mañana también vale." },
+          "user": [
+            { "zh": "谢谢老师！", "py": "Xièxie lǎoshī!", "es": "¡Gracias, profesora!", "keywords": ["谢谢"], "next": "n6" }
+          ],
+          "hint": "Dale las gracias."
+        },
+        "n6": {
+          "npc": { "zh": "不客气。下课以后我把录音发给大家，你们回去以后再听几遍。", "py": "Bú kèqi. Xiàkè yǐhòu wǒ bǎ lùyīn fāgěi dàjiā, nǐmen huíqu yǐhòu zài tīng jǐ biàn.", "es": "De nada. Después de clase os mando la grabación: escuchadla unas cuantas veces más en casa." },
+          "end": true,
+          "feedback": "Has dicho que no veías bien (看不清楚 / 看不见), que no entendías (听不懂), has pedido que lo repitiera (再说一遍, 再听一遍) y has hablado del plazo (写得完, 来得及). Recuerda: en el potencial, 不 va en medio (听不懂, nunca 不能听懂) y el clasificador 遍 va detrás del verbo."
+        }
+      }
+    },
+    {
+      "id": "b1-u03-tutor",
+      "title": "Reunión con la tutora",
+      "zh": "跟指导老师见面",
+      "level": 2,
+      "setting": "Hugo tiene una reunión con su tutora (指导老师) para hablar del informe de su encuesta. Tiene problemas: no abre un archivo, va justo de tiempo y no entiende un concepto. Tú (la app) eres la tutora.",
+      "role": "tutora del trabajo",
+      "roleZh": "指导老师",
+      "voice": "f",
+      "goals": ["Explicar un problema técnico (打不开)", "Decir si terminas a tiempo (写得完 / 写不完, 来得及)", "Pedir consejo sobre un concepto (请教, 理解不了)", "Despedirte y quedar en avisar (说一声)"],
+      "vocab": ["指导老师", "报告", "打不开", "邮件", "写不完", "来不及", "请教", "概念", "理解不了", "说一声"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "雨果，你好！你的调查报告写得怎么样了？", "py": "Yǔguǒ, nǐ hǎo! Nǐ de diàochá bàogào xiě de zěnmeyàng le?", "es": "Hola, Hugo. ¿Qué tal va el informe de la encuesta?" },
+          "user": [
+            { "zh": "老师好！写了一半，可是您发给我的文件我打不开。", "py": "Lǎoshī hǎo! Xiě le yíbàn, kěshì nín fāgěi wǒ de wénjiàn wǒ dǎ bu kāi.", "es": "¡Hola! Llevo la mitad, pero el archivo que me mandó no consigo abrirlo.", "keywords": ["打不开", "文件"], "next": "n2", "goal": 0 },
+            { "zh": "老师好！我写得很慢，还有很多内容要补充。", "py": "Lǎoshī hǎo! Wǒ xiě de hěn màn, hái yǒu hěn duō nèiróng yào bǔchōng.", "es": "¡Hola! Voy muy despacio: todavía tengo que añadir mucho contenido.", "keywords": ["写得很慢", "补充"], "next": "n3" }
+          ],
+          "hint": "Cuenta cómo va: si no puedes abrir algo, 打不开; si vas lento, 写得很慢 (grado)."
+        },
+        "n2": {
+          "npc": { "zh": "是吗？那我再给你发送一遍电子邮件。你用手机打得开吗？", "py": "Shì ma? Nà wǒ zài gěi nǐ fāsòng yí biàn diànzǐ yóujiàn. Nǐ yòng shǒujī dǎ de kāi ma?", "es": "¿Ah, sí? Pues te lo vuelvo a mandar por correo. ¿Con el móvil lo puedes abrir?" },
+          "user": [
+            { "zh": "用手机打不开，用电脑打得开。谢谢老师！", "py": "Yòng shǒujī dǎ bu kāi, yòng diànnǎo dǎ de kāi. Xièxie lǎoshī!", "es": "Con el móvil no, con el ordenador sí. ¡Gracias!", "keywords": ["打得开", "打不开"], "next": "n3", "goal": 0 },
+            { "zh": "我试试……现在打得开了！", "py": "Wǒ shìshi…… Xiànzài dǎ de kāi le!", "es": "A ver… ¡Ahora sí se abre!", "keywords": ["打得开了"], "next": "n3", "goal": 0 }
+          ],
+          "hint": "Contesta con 打得开 / 打不开."
+        },
+        "n3": {
+          "npc": { "zh": "报告下个星期五要交。你写得完吗？", "py": "Bàogào xià ge xīngqīwǔ yào jiāo. Nǐ xiě de wán ma?", "es": "El informe hay que entregarlo el viernes que viene. ¿Te da tiempo a terminarlo?" },
+          "user": [
+            { "zh": "写得完，来得及。我每天写两个小时。", "py": "Xiě de wán, lái de jí. Wǒ měi tiān xiě liǎng ge xiǎoshí.", "es": "Sí, me da tiempo. Escribo dos horas al día.", "keywords": ["写得完", "来得及"], "next": "n4", "goal": 1 },
+            { "zh": "我觉得有点儿来不及，一个星期可能写不完。", "py": "Wǒ juéde yǒudiǎnr lái bu jí, yí ge xīngqī kěnéng xiě bu wán.", "es": "Creo que voy algo justo: puede que en una semana no lo termine.", "keywords": ["来不及", "写不完"], "next": "n3b", "goal": 1 }
+          ],
+          "hint": "Di si lo terminas (写得完 / 写不完) y si da tiempo (来得及 / 来不及). El plazo va delante: 一个星期写不完."
+        },
+        "n3b": {
+          "npc": { "zh": "那我们一起制定一个计划吧。先写总结，再修改。下个星期三给我看一下。", "py": "Nà wǒmen yìqǐ zhìdìng yí ge jìhuà ba. Xiān xiě zǒngjié, zài xiūgǎi. Xià ge xīngqīsān gěi wǒ kàn yíxià.", "es": "Entonces hagamos un plan juntos. Primero escribe las conclusiones y luego corriges. Enséñamelo el miércoles que viene." },
+          "user": [
+            { "zh": "好的，星期三以前我写得完总结。", "py": "Hǎo de, xīngqīsān yǐqián wǒ xiě de wán zǒngjié.", "es": "Vale, antes del miércoles me da tiempo a terminar las conclusiones.", "keywords": ["写得完"], "next": "n4" }
+          ],
+          "hint": "Acepta el plan y di que te da tiempo: 写得完."
+        },
+        "n4": {
+          "npc": { "zh": "还有什么问题吗？", "py": "Hái yǒu shénme wèntí ma?", "es": "¿Tienes alguna otra duda?" },
+          "user": [
+            { "zh": "老师，我想请教您一个问题。这个概念我理解不了。", "py": "Lǎoshī, wǒ xiǎng qǐngjiào nín yí ge wèntí. Zhège gàiniàn wǒ lǐjiě bu liǎo.", "es": "Profesora, quería consultarle una cosa. Este concepto no consigo entenderlo.", "keywords": ["请教", "理解不了", "概念"], "next": "n5", "goal": 2 },
+            { "zh": "这本外文书的内容我看不太懂，您能指导我一下吗？", "py": "Zhè běn wàiwén shū de nèiróng wǒ kàn bu tài dǒng, nín néng zhǐdǎo wǒ yíxià ma?", "es": "El contenido de este libro en lengua extranjera no lo entiendo muy bien, ¿me puede orientar?", "keywords": ["看不太懂", "指导"], "next": "n5", "goal": 2 }
+          ],
+          "hint": "Pide consejo con educación: 我想请教您一个问题 y explica qué no entiendes (理解不了, 看不懂)."
+        },
+        "n5": {
+          "npc": { "zh": "这个概念有点儿难。你先读这篇文章，读两遍就理解得了。下个星期有一位专家来，你也可以请教他。", "py": "Zhège gàiniàn yǒudiǎnr nán. Nǐ xiān dú zhè piān wénzhāng, dú liǎng biàn jiù lǐjiě de liǎo. Xià ge xīngqī yǒu yí wèi zhuānjiā lái, nǐ yě kěyǐ qǐngjiào tā.", "es": "Es un concepto algo difícil. Primero lee este artículo: con dos lecturas lo entenderás. La semana que viene viene un experto y también puedes consultarle." },
+          "user": [
+            { "zh": "好的，我回去以后读两遍。专家来的时候，请您跟我说一声。", "py": "Hǎo de, wǒ huíqu yǐhòu dú liǎng biàn. Zhuānjiā lái de shíhou, qǐng nín gēn wǒ shuō yì shēng.", "es": "Vale, cuando vuelva lo leo dos veces. Cuando venga el experto, avíseme, por favor.", "keywords": ["说一声", "两遍"], "next": "n6", "goal": 3 },
+            { "zh": "谢谢老师！我写完以后给您发邮件。", "py": "Xièxie lǎoshī! Wǒ xiěwán yǐhòu gěi nín fā yóujiàn.", "es": "¡Gracias! Cuando lo termine, le mando un correo.", "keywords": ["谢谢", "邮件"], "next": "n6", "goal": 3 }
+          ],
+          "hint": "Despídete: pide que te avise (跟我说一声) o di que le escribirás (给您发邮件)."
+        },
+        "n6": {
+          "npc": { "zh": "好。加油，报告一定写得完！", "py": "Hǎo. Jiāyóu, bàogào yídìng xiě de wán!", "es": "Muy bien. ¡Ánimo, seguro que terminas el informe!" },
+          "end": true,
+          "feedback": "Has explicado un problema (打不开), has hablado del plazo (写得完 / 来不及), has pedido consejo con 请教 y 理解不了, y te has despedido pidiendo que te avisen (说一声). Recuerda: 写得很慢 es grado (cómo escribes); 写不完 es potencial (si puedes terminar)."
+        }
+      }
+    }
+  ]
+}

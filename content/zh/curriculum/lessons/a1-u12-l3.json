@@ -1,0 +1,132 @@
+{
+  "id": "a1-u12-l3",
+  "title": "¿Se puede? 能 y 可以",
+  "zh": "这儿可以上网吗？",
+  "goal": "Distinguir 能 (poder por capacidad o circunstancias) de 可以 (tener permiso) y pedir permiso en el cine, la librería o internet.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "能", "pinyin": "néng", "es": "poder (capacidad, circunstancias)", "note": "¿Es posible? ¿Me da el cuerpo, el tiempo? 今天我不能去 «hoy no puedo ir»." },
+    { "hanzi": "可以", "pinyin": "kěyǐ", "es": "poder (permiso); se puede", "note": "¿Está permitido? 这儿可以上网吗？ «¿Aquí se puede usar internet?». Suena kéyǐ (3.º + 3.º)." },
+    { "hanzi": "行", "pinyin": "xíng", "es": "vale, de acuerdo; se puede", "note": "Respuesta corta: 行！ «¡Vale!». 不行 «no, imposible»." },
+    { "hanzi": "电影院", "pinyin": "diànyǐngyuàn", "es": "cine (la sala)" },
+    { "hanzi": "书店", "pinyin": "shūdiàn", "es": "librería" },
+    { "hanzi": "读书", "pinyin": "dú shū", "es": "leer (libros); estudiar", "note": "Lit. «leer libros». También «estudiar» en general: 他在读书 «está estudiando (en la universidad)»." },
+    { "hanzi": "上网", "pinyin": "shàngwǎng", "es": "conectarse a internet, navegar" },
+    { "hanzi": "网上", "pinyin": "wǎngshang", "es": "en internet, en línea", "note": "网上的电影 «las películas de internet»." },
+    { "hanzi": "看见", "pinyin": "kànjiàn", "es": "ver (llegar a ver)", "note": "看 = mirar; 看见 = ver con éxito. 你能看见吗？ «¿Lo ves?»." },
+    { "hanzi": "听见", "pinyin": "tīngjiàn", "es": "oír (llegar a oír)", "note": "听 = escuchar; 听见 = oír con éxito." }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "这儿可以上网吗？", "py": "Zhèr kěyǐ shàngwǎng ma?", "es": "¿Aquí se puede usar internet?" },
+        { "zh": "今天晚上我不能去。", "py": "Jīntiān wǎnshang wǒ bù néng qù.", "es": "Esta noche no puedo ir." },
+        { "zh": "你能听见吗？", "py": "Nǐ néng tīngjiàn ma?", "es": "¿Lo oyes?" }
+      ]
+    },
+    { "type": "vocab", "title": "Poder, permiso y lugares de ocio", "words": ["能", "可以", "行", "电影院", "书店", "读书", "上网", "网上", "看见", "听见"] },
+    {
+      "type": "phonetics-drill",
+      "title": "Dos terceros tonos seguidos: 可以 kéyǐ",
+      "markdown": "Cuando van **dos terceros tonos** seguidos, el **primero se convierte en segundo** (sube):\n\n- 可以 kěyǐ → se dice **kéyǐ**\n- 你好 nǐ hǎo → **ní hǎo**\n- 我想 wǒ xiǎng → **wó xiǎng**\n- 雨果 Yǔguǒ → **Yúguǒ**\n\nEn el pinyin se sigue escribiendo el tercer tono: el cambio solo se oye. Si intentas hacer dos «valles» seguidos, la frase suena a tropiezo.",
+      "items": [
+        { "audio": "可以", "prompt": "¿Cómo suena la primera sílaba?", "options": ["3.º (baja)", "2.º (sube)", "4.º (cae)"], "answer": 1, "explain": "3.º + 3.º → 2.º + 3.º: kéyǐ." },
+        { "audio": "我想", "prompt": "¿Cómo suena 我?", "options": ["wǒ (3.º)", "wó (2.º)", "wò (4.º)"], "answer": 1, "explain": "想 xiǎng es 3.º, así que 我 sube." },
+        { "audio": "我能", "prompt": "¿Cómo suena 我?", "options": ["wǒ (3.º, sin cambio)", "wó (2.º)"], "answer": 0, "explain": "能 néng es 2.º tono: no hay sandhi; 我 se queda en 3.º (en la práctica, bajo)." },
+        { "audio": "小李", "prompt": "¿Qué oyes?", "options": ["Xiáo Lǐ", "Xiǎo Lǐ con dos valles", "Xiào Lǐ"], "answer": 0, "explain": "小 y 李 son 3.º: el primero sube." },
+        { "audio": "很好", "prompt": "¿Cómo suena 很?", "options": ["hén (2.º)", "hěn (3.º)", "hèn (4.º)"], "answer": 0, "explain": "很好: 3.º + 3.º → hén hǎo." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["能", "网"],
+      "mnemonics": {
+        "能": "Dibujo antiguo de un oso: 厶 la cabeza, 月 el cuerpo y 匕匕 las patas. El oso es fuerte, «puede» con todo.",
+        "网": "冂 (un marco) con dos 㐅 (cruces) dentro: una red de pescar. Hoy, la red de internet."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "能 (poder) frente a 可以 (permiso)",
+      "markdown": "El «poder» español tiene en chino dos auxiliares principales. Los dos van en el hueco **Auxiliar**, delante del verbo:\n\n| | Pregunta que responde | Ejemplo |\n|---|---|---|\n| **能 néng** | ¿Es **posible**? ¿Tengo **capacidad**, tiempo, fuerzas? | 今天我**不能**去 (tengo cosas) · 他**能**吃三碗米饭 |\n| **可以 kěyǐ** | ¿Está **permitido**? ¿Me dejas? | 这儿**可以**上网吗？ · 我**可以**坐这儿吗？ |\n| **会 huì** | ¿Lo he **aprendido**? | 我**会**说汉语 |\n\n- Para pedir permiso se usan los dos: **可以…吗？** es lo más normal; **能…吗？** también se oye.\n- **Negativa**: 不能 = «no puedo» (no es posible) y también «no se puede»; **不可以** = «no está permitido» (más tajante, de cartel o de padres).\n- Respuesta corta: 可以。/ 行。/ 不行。 También A不A: 能不能, 可(以)不可以.",
+      "focus": ["aux"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "time": { "zh": "明天", "py": "míngtiān" }, "aux": { "zh": "能", "py": "néng" }, "verb1": { "zh": "去", "py": "qù" }, "verb2": { "zh": "看", "py": "kàn" }, "object": { "zh": "电影", "py": "diànyǐng" } }, "end": "。", "es": "Mañana puedo ir a ver una película.", "esOrder": [{ "text": "Mañana", "slot": "time" }, { "text": "(yo)", "slot": "subject" }, { "text": "puedo", "slot": "aux" }, { "text": "ir", "slot": "verb1" }, { "text": "a ver", "slot": "verb2" }, { "text": "una película", "slot": "object" }] },
+        { "slots": { "subject": { "zh": "大卫", "py": "Dàwèi" }, "aux": { "zh": "能", "py": "néng" }, "verb1": { "zh": "吃", "py": "chī" }, "object": { "zh": "三碗米饭", "py": "sān wǎn mǐfàn" } }, "end": "。", "es": "David es capaz de comerse tres boles de arroz." },
+        { "slots": { "subject": { "zh": "这儿", "py": "zhèr" }, "aux": { "zh": "可以", "py": "kěyǐ" }, "verb1": { "zh": "上网", "py": "shàngwǎng" } }, "end": "。", "es": "Aquí se puede usar internet." },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "aux": { "zh": "可以", "py": "kěyǐ" }, "verb1": { "zh": "看", "py": "kàn" }, "object": { "zh": "我的书", "py": "wǒ de shū" } }, "end": "。", "es": "Puedes leer mi libro (te dejo).", "esOrder": [{ "text": "(Tú)", "slot": "subject" }, { "text": "puedes", "slot": "aux" }, { "text": "leer", "slot": "verb1" }, { "text": "mi libro", "slot": "object" }] },
+        { "slots": { "subject": { "zh": "我们", "py": "wǒmen" }, "aux": { "zh": "可以", "py": "kěyǐ" }, "verb1": { "zh": "去书店", "py": "qù shūdiàn" }, "verb2": { "zh": "读", "py": "dú" }, "object": { "zh": "书", "py": "shū" } }, "end": "。", "es": "Podemos ir a la librería a leer." }
+      ],
+      "negative": [
+        { "slots": { "time0": { "zh": "今天晚上", "py": "jīntiān wǎnshang" }, "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "不", "py": "bù" }, "aux": { "zh": "能", "py": "néng" }, "verb1": { "zh": "去", "py": "qù" }, "object": { "zh": "电影院", "py": "diànyǐngyuàn" } }, "end": "。", "es": "Esta noche no puedo ir al cine." },
+        { "slots": { "time0": { "zh": "看电影的时候", "py": "kàn diànyǐng de shíhou" }, "adverb": { "zh": "不", "py": "bù" }, "aux": { "zh": "可以", "py": "kěyǐ" }, "verb1": { "zh": "打", "py": "dǎ" }, "object": { "zh": "电话", "py": "diànhuà" } }, "end": "。", "es": "Durante la película no se puede llamar por teléfono." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "aux": { "zh": "可以", "py": "kěyǐ" }, "verb1": { "zh": "坐", "py": "zuò" }, "object": { "zh": "这儿", "py": "zhèr" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿Puedo sentarme aquí?" },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "time": { "zh": "明天", "py": "míngtiān" }, "aux": { "zh": "能不能", "py": "néng bu néng" }, "verb1": { "zh": "来", "py": "lái" } }, "end": "？", "es": "¿Puedes venir mañana?" },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "aux": { "zh": "能", "py": "néng" }, "verb1": { "zh": "听见", "py": "tīngjiàn" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿Lo oyes?" }
+      ],
+      "mistakes": [
+        { "wrong": "今天我不会去，我很忙。", "right": "今天我不能去，我很忙。", "why": "No poder por circunstancias (estar ocupado) es 不能; 会 es habilidad aprendida." },
+        { "wrong": "我能说汉语。（= sé chino）", "right": "我会说汉语。", "why": "Un idioma se aprende: 会. 能说 indica que puedes hablar en ese momento (p. ej. tras estar afónico)." },
+        { "wrong": "可以我坐这儿吗？", "right": "我可以坐这儿吗？", "why": "El sujeto va delante del auxiliar; 吗 al final." },
+        { "wrong": "我不可以去，我很忙。", "right": "我不能去，我很忙。", "why": "不可以 es «no me dejan / está prohibido»; si es por falta de tiempo, 不能." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Una noche en el cine",
+      "lines": [
+        { "speaker": "安娜", "zh": "雨果，今天晚上你能去电影院吗？", "py": "Yǔguǒ, jīntiān wǎnshang nǐ néng qù diànyǐngyuàn ma?", "es": "Hugo, ¿puedes ir al cine esta noche?" },
+        { "speaker": "雨果", "zh": "今天晚上不能，我很忙。明天晚上可以。", "py": "Jīntiān wǎnshang bù néng, wǒ hěn máng. Míngtiān wǎnshang kěyǐ.", "es": "Esta noche no puedo, estoy muy liado. Mañana por la noche sí." },
+        { "speaker": "安娜", "zh": "行，明天晚上七点。", "py": "Xíng, míngtiān wǎnshang qī diǎn.", "es": "Vale, mañana a las siete de la tarde." },
+        { "speaker": "雨果", "zh": "请问，看电影的时候可以吃东西吗？", "py": "Qǐngwèn, kàn diànyǐng de shíhou kěyǐ chī dōngxi ma?", "es": "Perdone, ¿se puede comer durante la película?" },
+        { "speaker": "服务员", "zh": "可以。可是不可以打电话。", "py": "Kěyǐ. Kěshì bù kěyǐ dǎ diànhuà.", "es": "Sí. Pero no se puede llamar por teléfono." },
+        { "speaker": "雨果", "zh": "我可以坐这儿吗？", "py": "Wǒ kěyǐ zuò zhèr ma?", "es": "¿Puedo sentarme aquí?" },
+        { "speaker": "服务员", "zh": "不行，这是别人的。那两个是你们的。", "py": "Bù xíng, zhè shì biérén de. Nà liǎng ge shì nǐmen de.", "es": "No, ese es de otra persona. Esos dos son los vuestros." },
+        { "speaker": "雨果", "zh": "安娜，你能看见吗？能听见吗？", "py": "Ānnà, nǐ néng kànjiàn ma? Néng tīngjiàn ma?", "es": "Ana, ¿ves bien? ¿Oyes bien?" },
+        { "speaker": "安娜", "zh": "能看见，也能听见。这个电影真好看！", "py": "Néng kànjiàn, yě néng tīngjiàn. Zhège diànyǐng zhēn hǎokàn!", "es": "Veo y oigo bien. ¡Esta película está genial!" }
+      ],
+      "notes": "En los cines chinos la entrada se compra casi siempre por el móvil y el asiento va numerado. 行 (xíng) es el «vale» de todos los días; 不行 es un «no» claro. 可是 = pero (coloquial)."
+    },
+    { "type": "exercises", "count": 15, "bank": ["g-modal-verbs", "u12"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "这儿" }, "aux": { "zh": "可以" }, "verb1": { "zh": "上网" }, "particle": { "zh": "吗" } }, "end": "？", "es": "¿Aquí se puede usar internet?" } },
+        { "sentence": { "slots": { "time0": { "zh": "今天晚上" }, "subject": { "zh": "我" }, "adverb": { "zh": "不" }, "aux": { "zh": "能" }, "verb1": { "zh": "去" } }, "end": "。", "es": "Esta noche no puedo ir." }, "distractors": ["会"] },
+        { "sentence": { "slots": { "subject": { "zh": "我" }, "aux": { "zh": "可以" }, "verb1": { "zh": "看" }, "object": { "zh": "你的书" }, "particle": { "zh": "吗" } }, "end": "？", "es": "¿Puedo leer tu libro?" } },
+        { "sentence": { "slots": { "time0": { "zh": "明天下午" }, "subject": { "zh": "我们" }, "adverb": { "zh": "都" }, "aux": { "zh": "能" }, "with": { "zh": "跟王老师一起" }, "verb1": { "zh": "去书店" }, "verb2": { "zh": "买" }, "object": { "zh": "中文书" } }, "end": "。", "es": "Mañana por la tarde todos podemos ir con la profesora Wang a la librería a comprar libros en chino." }, "distractors": ["可以会"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "这儿可以上网吗？", "py": "Zhèr kěyǐ shàngwǎng ma?", "es": "¿Aquí se puede usar internet?" },
+        { "zh": "我可以坐这儿吗？", "py": "Wǒ kěyǐ zuò zhèr ma?", "es": "¿Puedo sentarme aquí?" },
+        { "zh": "今天我不能去，明天可以。", "py": "Jīntiān wǒ bù néng qù, míngtiān kěyǐ.", "es": "Hoy no puedo ir; mañana sí." },
+        { "zh": "你能听见吗？", "py": "Nǐ néng tīngjiàn ma?", "es": "¿Lo oyes?" }
+      ],
+      "respond": [
+        { "q": { "zh": "明天晚上你能来吗？", "py": "Míngtiān wǎnshang nǐ néng lái ma?", "es": "¿Puedes venir mañana por la noche?" }, "model": { "zh": "不能，明天晚上我很忙。", "py": "Bù néng, míngtiān wǎnshang wǒ hěn máng.", "es": "No puedo, mañana por la noche estoy muy liado." } },
+        { "q": { "zh": "我可以看你的书吗？", "py": "Wǒ kěyǐ kàn nǐ de shū ma?", "es": "¿Puedo leer tu libro?" }, "model": { "zh": "行，你看。", "py": "Xíng, nǐ kàn.", "es": "Vale, léelo." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "La librería de la universidad",
+      "text": "学校的书店很好。这个书店可以上网，也可以读书。你可以买书，也可以坐下看书。可是这儿不可以吃东西，也不能打电话。雨果每个星期都去书店。今天他很忙，不能去。",
+      "es": "La librería de la universidad está muy bien. En esta librería se puede usar internet y también leer. Puedes comprar libros y también sentarte a leer. Pero aquí no se puede comer ni hablar por teléfono. Hugo va a la librería todas las semanas. Hoy está muy liado y no puede ir.",
+      "questions": [
+        { "q": "¿Qué se puede hacer en la librería?", "options": ["Usar internet y leer", "Comer", "Llamar por teléfono"], "answer": 0 },
+        { "q": "¿Qué NO está permitido?", "options": ["Comer", "Sentarse", "Comprar libros"], "answer": 0 },
+        { "q": "¿Por qué Hugo no va hoy?", "options": ["Está muy ocupado", "No le dejan", "No sabe dónde está"], "answer": 0 },
+        { "q": "En «今天他很忙，不能去», ¿por qué 不能 y no 不可以?", "options": ["Porque es por circunstancias, no por permiso", "Porque es una habilidad", "Porque es pasado"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

@@ -1,0 +1,665 @@
+{
+  "id": "a1-u08-l2",
+  "title": "¿Qué tal es? 吗, A不A y 怎么样",
+  "zh": "你忙不忙？",
+  "goal": "Preguntar cómo es algo o alguien con 吗, A不A y 怎么样, y contestar con suavidad con 不太.",
+  "minutes": 14,
+  "reviewed": false,
+  "vocab": [
+    {
+      "hanzi": "怎么样",
+      "pinyin": "zěnmeyàng",
+      "es": "¿qué tal?, ¿cómo es?",
+      "note": "Ocupa el lugar del adjetivo: 上海怎么样？"
+    },
+    {
+      "hanzi": "漂亮",
+      "pinyin": "piàoliang",
+      "es": "guapo, bonito",
+      "note": "亮 en tono neutro."
+    },
+    {
+      "hanzi": "可爱",
+      "pinyin": "kě'ài",
+      "es": "mono, adorable",
+      "note": "Apóstrofo ante a: kě'ài."
+    },
+    {
+      "hanzi": "年轻",
+      "pinyin": "niánqīng",
+      "es": "joven"
+    },
+    {
+      "hanzi": "干净",
+      "pinyin": "gānjìng",
+      "es": "limpio"
+    },
+    {
+      "hanzi": "坏",
+      "pinyin": "huài",
+      "es": "malo; estropeado"
+    },
+    {
+      "hanzi": "认真",
+      "pinyin": "rènzhēn",
+      "es": "serio, aplicado, concienzudo"
+    },
+    {
+      "hanzi": "不太",
+      "pinyin": "bú tài",
+      "es": "no muy",
+      "note": "La forma educada de decir algo negativo: 不太好."
+    },
+    {
+      "hanzi": "不大",
+      "pinyin": "bú dà",
+      "es": "no grande; no muy (coloquial)",
+      "note": "我的房子不大. Coloquial: 不大好 = no muy bien."
+    }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        {
+          "zh": "你忙不忙？",
+          "py": "Nǐ máng bu máng?",
+          "es": "¿Estás ocupado?"
+        },
+        {
+          "zh": "上海怎么样？",
+          "py": "Shànghǎi zěnmeyàng?",
+          "es": "¿Qué tal Shanghái?"
+        },
+        {
+          "zh": "我的房子不太干净。",
+          "py": "Wǒ de fángzi bú tài gānjìng.",
+          "es": "Mi casa no está muy limpia."
+        }
+      ]
+    },
+    {
+      "type": "vocab",
+      "title": "Para describir",
+      "words": [
+        "怎么样",
+        "漂亮",
+        "可爱",
+        "年轻",
+        "干净",
+        "坏",
+        "认真",
+        "不太",
+        "不大"
+      ]
+    },
+    {
+      "type": "phonetics-drill",
+      "title": "3.º + 3.º: 很好, 很小, 很老",
+      "markdown": "Con los adjetivos vas a decir **很** (3.er tono) cientos de veces. Cuando el adjetivo también es de **3.er tono**, el primero cambia a **2.º**: 很好 se dice **hén hǎo**, igual que 你好 (**ní hǎo**).\n\n- 很好 hén hǎo · 很小 hén xiǎo · 很老 hén lǎo · 很短 hén duǎn · 很少 hén shǎo.\n- Con otros tonos, 很 queda en **medio tercer tono** (bajo, sin subir): 很忙 hěn máng, 很漂亮 hěn piàoliang, 很累 hěn lèi.\n\nEn pinyin se sigue escribiendo hěn: el cambio se hace al hablar.",
+      "items": [
+        {
+          "audio": "很好",
+          "prompt": "¿Qué tonos oyes?",
+          "options": [
+            "2.º + 3.º (hén hǎo)",
+            "3.º + 3.º completos",
+            "4.º + 3.º"
+          ],
+          "answer": 0,
+          "explain": "Dos terceros seguidos: el primero pasa a 2.º."
+        },
+        {
+          "audio": "很小",
+          "options": [
+            "hén xiǎo",
+            "hěn xiāo",
+            "hèn xiǎo"
+          ],
+          "answer": 0,
+          "explain": "Igual que 很好."
+        },
+        {
+          "audio": "很老",
+          "options": [
+            "hén lǎo",
+            "hěn láo",
+            "hēn lǎo"
+          ],
+          "answer": 0,
+          "explain": "3 + 3 → 2 + 3."
+        },
+        {
+          "audio": "很漂亮",
+          "prompt": "¿Cambia el tono de 很?",
+          "options": [
+            "No: queda en medio 3.º (bajo)",
+            "Sí: pasa a 2.º"
+          ],
+          "answer": 0,
+          "explain": "漂 es 4.º tono: no hay sandhi."
+        },
+        {
+          "audio": "很短",
+          "options": [
+            "hén duǎn",
+            "hěn duàn",
+            "hèn duǎn"
+          ],
+          "answer": 0,
+          "explain": "短 es 3.º: 很 pasa a 2.º."
+        }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": [
+        "年",
+        "坏"
+      ],
+      "mnemonics": {
+        "年": "En su origen, una persona que carga a la espalda el cereal maduro: una cosecha, un año.",
+        "坏": "土 (tierra) + 不 (no): la tierra que ya «no» sirve está estropeada."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "Preguntar con adjetivos: 吗, A不A y 怎么样",
+      "markdown": "Tres maneras de preguntar cómo es algo:\n\n1. **Adjetivo + 吗** (sin 很): 你**累吗**？\n2. **A不A**: repite el adjetivo con 不 en medio: 你**忙不忙**？ (no lleva 吗 ni 很). Con adjetivos de dos sílabas se puede acortar: **漂不漂亮** = 漂亮不漂亮. El 不 del medio va en tono neutro: máng bu máng.\n3. **怎么样** (¿qué tal?): ocupa el lugar del adjetivo y deja que el otro elija: 你的学校**怎么样**？ — 很好！\n\nPara contestar con educación algo negativo, el chino prefiere suavizar: **不太** + adj (no muy): 不太干净, 不太好. 不大 también existe en la lengua hablada (不大好), pero recuerda que 大 es además «grande»: 房子不大 = la casa no es grande.",
+      "focus": [
+        "verb1",
+        "particle"
+      ],
+      "compare": true,
+      "sentences": [
+        {
+          "slots": {
+            "subject": {
+              "zh": "上海",
+              "py": "Shànghǎi"
+            },
+            "adverb": {
+              "zh": "很",
+              "py": "hěn"
+            },
+            "verb1": {
+              "zh": "漂亮",
+              "py": "piàoliang"
+            }
+          },
+          "end": "。",
+          "es": "Shanghái es muy bonita."
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "小李的猫",
+              "py": "Xiǎo Lǐ de māo"
+            },
+            "adverb": {
+              "zh": "很",
+              "py": "hěn"
+            },
+            "verb1": {
+              "zh": "可爱",
+              "py": "kě'ài"
+            }
+          },
+          "end": "。",
+          "es": "El gato de Xiao Li es muy mono."
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "我们的老师",
+              "py": "wǒmen de lǎoshī"
+            },
+            "adverb": {
+              "zh": "很",
+              "py": "hěn"
+            },
+            "verb1": {
+              "zh": "年轻",
+              "py": "niánqīng"
+            }
+          },
+          "end": "。",
+          "es": "Nuestra profesora es joven."
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "安娜",
+              "py": "Ānnà"
+            },
+            "adverb": {
+              "zh": "很",
+              "py": "hěn"
+            },
+            "verb1": {
+              "zh": "认真",
+              "py": "rènzhēn"
+            }
+          },
+          "end": "。",
+          "es": "Ana es muy aplicada."
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "小李的房子",
+              "py": "Xiǎo Lǐ de fángzi"
+            },
+            "adverb": {
+              "zh": "很",
+              "py": "hěn"
+            },
+            "verb1": {
+              "zh": "干净",
+              "py": "gānjìng"
+            }
+          },
+          "end": "。",
+          "es": "La casa de Xiao Li está muy limpia."
+        }
+      ],
+      "negative": [
+        {
+          "slots": {
+            "subject": {
+              "zh": "我的房子",
+              "py": "wǒ de fángzi"
+            },
+            "adverb": {
+              "zh": "不太",
+              "py": "bú tài"
+            },
+            "verb1": {
+              "zh": "干净",
+              "py": "gānjìng"
+            }
+          },
+          "end": "。",
+          "es": "Mi casa no está muy limpia."
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "他",
+              "py": "tā"
+            },
+            "adverb": {
+              "zh": "不",
+              "py": "bú"
+            },
+            "verb1": {
+              "zh": "坏",
+              "py": "huài"
+            }
+          },
+          "end": "。",
+          "es": "No es mala persona."
+        }
+      ],
+      "question": [
+        {
+          "slots": {
+            "subject": {
+              "zh": "你",
+              "py": "nǐ"
+            },
+            "verb1": {
+              "zh": "忙不忙",
+              "py": "máng bu máng"
+            }
+          },
+          "end": "？",
+          "es": "¿Estás ocupado?",
+          "esOrder": [
+            {
+              "text": "¿Estás ocupado",
+              "slot": "verb1"
+            },
+            {
+              "text": "(tú)",
+              "slot": "subject"
+            }
+          ]
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "你的学校",
+              "py": "nǐ de xuéxiào"
+            },
+            "verb1": {
+              "zh": "怎么样",
+              "py": "zěnmeyàng"
+            }
+          },
+          "end": "？",
+          "es": "¿Qué tal tu universidad?",
+          "esOrder": [
+            {
+              "text": "¿Qué tal",
+              "slot": "verb1"
+            },
+            {
+              "text": "tu universidad",
+              "slot": "subject"
+            }
+          ]
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "小李",
+              "py": "Xiǎo Lǐ"
+            },
+            "verb1": {
+              "zh": "认真",
+              "py": "rènzhēn"
+            },
+            "particle": {
+              "zh": "吗",
+              "py": "ma"
+            }
+          },
+          "end": "？",
+          "es": "¿Xiao Li es aplicado?"
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "西安",
+              "py": "Xī'ān"
+            },
+            "verb1": {
+              "zh": "漂不漂亮",
+              "py": "piào bu piàoliang"
+            }
+          },
+          "end": "？",
+          "es": "¿Es bonita Xi'an?"
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "你忙不忙吗？",
+          "right": "你忙不忙？",
+          "why": "A不A ya es una pregunta: no lleva 吗."
+        },
+        {
+          "wrong": "你很忙不忙？",
+          "right": "你忙不忙？",
+          "why": "A不A no admite 很 ni otros adverbios de grado."
+        },
+        {
+          "wrong": "你的学校是怎么样？",
+          "right": "你的学校怎么样？",
+          "why": "怎么样 ocupa el lugar del adjetivo: tampoco lleva 是."
+        },
+        {
+          "wrong": "他很不漂亮。",
+          "right": "他不太漂亮。",
+          "why": "很不 + adj suena muy duro; para criticar con tacto, 不太."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "¿Qué tal la casa nueva?",
+      "lines": [
+        {
+          "speaker": "小李",
+          "zh": "安娜，你的新房子怎么样？",
+          "py": "Ānnà, nǐ de xīn fángzi zěnmeyàng?",
+          "es": "Ana, ¿qué tal tu casa nueva?"
+        },
+        {
+          "speaker": "安娜",
+          "zh": "很好！很新，也很干净。",
+          "py": "Hěn hǎo! Hěn xīn, yě hěn gānjìng.",
+          "es": "¡Muy bien! Es nueva y está limpia."
+        },
+        {
+          "speaker": "小李",
+          "zh": "大不大？",
+          "py": "Dà bu dà?",
+          "es": "¿Es grande?"
+        },
+        {
+          "speaker": "安娜",
+          "zh": "不太大。你的猫怎么样？",
+          "py": "Bú tài dà. Nǐ de māo zěnmeyàng?",
+          "es": "No mucho. ¿Y qué tal tu gato?"
+        },
+        {
+          "speaker": "小李",
+          "zh": "我的猫很可爱，也很坏！",
+          "py": "Wǒ de māo hěn kě'ài, yě hěn huài!",
+          "es": "Mi gato es muy mono… ¡y muy malo!"
+        },
+        {
+          "speaker": "安娜",
+          "zh": "坏？",
+          "py": "Huài?",
+          "es": "¿Malo?"
+        },
+        {
+          "speaker": "小李",
+          "zh": "对，它晚上常常不睡觉，很忙！",
+          "py": "Duì, tā wǎnshang chángcháng bú shuìjiào, hěn máng!",
+          "es": "Sí, por la noche muchas veces no duerme: ¡está muy ocupado!"
+        },
+        {
+          "speaker": "安娜",
+          "zh": "它年轻吗？",
+          "py": "Tā niánqīng ma?",
+          "es": "¿Es joven?"
+        },
+        {
+          "speaker": "小李",
+          "zh": "很年轻，一岁。",
+          "py": "Hěn niánqīng, yí suì.",
+          "es": "Muy joven: tiene un año."
+        }
+      ],
+      "notes": "Para un animal se usa 它 (tā), que suena igual que 他 y 她. Fíjate en que 大不大？ basta como pregunta completa: el sujeto se sobreentiende."
+    },
+    {
+      "type": "exercises",
+      "count": 14,
+      "bank": [
+        "g-hen-adj",
+        "g-tai-le",
+        "u10"
+      ]
+    },
+    {
+      "type": "sentence-builder",
+      "items": [
+        {
+          "sentence": {
+            "slots": {
+              "subject": {
+                "zh": "你",
+                "py": "nǐ"
+              },
+              "verb1": {
+                "zh": "忙不忙",
+                "py": "máng bu máng"
+              }
+            },
+            "end": "？",
+            "es": "¿Estás ocupado?"
+          },
+          "distractors": [
+            "吗"
+          ]
+        },
+        {
+          "sentence": {
+            "slots": {
+              "subject": {
+                "zh": "你的学校",
+                "py": "nǐ de xuéxiào"
+              },
+              "verb1": {
+                "zh": "怎么样",
+                "py": "zěnmeyàng"
+              }
+            },
+            "end": "？",
+            "es": "¿Qué tal tu universidad?"
+          },
+          "distractors": [
+            "是"
+          ]
+        },
+        {
+          "sentence": {
+            "slots": {
+              "subject": {
+                "zh": "安娜的房子",
+                "py": "Ānnà de fángzi"
+              },
+              "adverb": {
+                "zh": "不太",
+                "py": "bú tài"
+              },
+              "verb1": {
+                "zh": "干净",
+                "py": "gānjìng"
+              }
+            },
+            "end": "。",
+            "es": "La casa de Ana no está muy limpia."
+          },
+          "distractors": [
+            "很"
+          ]
+        },
+        {
+          "sentence": {
+            "slots": {
+              "subject": {
+                "zh": "我们学校的新老师",
+                "py": "wǒmen xuéxiào de xīn lǎoshī"
+              },
+              "adverb": {
+                "zh": "也很",
+                "py": "yě hěn"
+              },
+              "verb1": {
+                "zh": "认真",
+                "py": "rènzhēn"
+              }
+            },
+            "end": "。",
+            "es": "La profesora nueva de nuestra universidad también es muy seria."
+          },
+          "distractors": [
+            "是"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        {
+          "zh": "你忙不忙？",
+          "py": "Nǐ máng bu máng?",
+          "es": "¿Estás ocupado?"
+        },
+        {
+          "zh": "你的学校怎么样？",
+          "py": "Nǐ de xuéxiào zěnmeyàng?",
+          "es": "¿Qué tal tu universidad?"
+        },
+        {
+          "zh": "不太大，很干净。",
+          "py": "Bú tài dà, hěn gānjìng.",
+          "es": "No muy grande, pero limpia."
+        }
+      ],
+      "respond": [
+        {
+          "q": {
+            "zh": "上海怎么样？",
+            "py": "Shànghǎi zěnmeyàng?",
+            "es": "¿Qué tal Shanghái?"
+          },
+          "model": {
+            "zh": "上海很漂亮，也很大。",
+            "py": "Shànghǎi hěn piàoliang, yě hěn dà.",
+            "es": "Shanghái es muy bonita y muy grande."
+          }
+        },
+        {
+          "q": {
+            "zh": "你的老师年轻吗？",
+            "py": "Nǐ de lǎoshī niánqīng ma?",
+            "es": "¿Es joven tu profesora?"
+          },
+          "model": {
+            "zh": "很年轻。",
+            "py": "Hěn niánqīng.",
+            "es": "Sí, muy joven."
+          }
+        },
+        {
+          "q": {
+            "zh": "你的房子干净不干净？",
+            "py": "Nǐ de fángzi gānjìng bu gānjìng?",
+            "es": "¿Está limpia tu casa?"
+          },
+          "model": {
+            "zh": "不太干净。",
+            "py": "Bú tài gānjìng.",
+            "es": "No mucho."
+          }
+        }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "El nuevo amigo de David",
+      "text": "大卫有一个中国朋友，叫小李。小李很年轻，二十岁。他很认真，每天都学习英语。他的房子不大，很干净。他家的猫很可爱，也很坏！",
+      "es": "David tiene un amigo chino que se llama Xiao Li. Xiao Li es joven: tiene veinte años. Es muy aplicado: estudia inglés todos los días. Su casa no es grande, pero está muy limpia. El gato de su casa es muy mono… ¡y muy malo!",
+      "questions": [
+        {
+          "q": "¿Cuántos años tiene Xiao Li?",
+          "options": [
+            "二十岁",
+            "十二岁",
+            "二十五岁"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "¿Cómo es su casa?",
+          "options": [
+            "No es grande y está limpia",
+            "Grande y sucia",
+            "Nueva y grande"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "¿Qué estudia cada día?",
+          "options": [
+            "英语",
+            "汉语",
+            "西班牙语"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "type": "notes-growth"
+    }
+  ]
+}

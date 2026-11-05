@@ -1,0 +1,731 @@
+{
+  "id": "a2-u03-l1",
+  "title": "Todos los días, cada vez: 每天, 每次 y 经常",
+  "zh": "我每天都洗澡",
+  "goal": "Describir tu rutina en la residencia con 每天 / 每次 (+ 都) y 经常 / 常常, y negarla con 不常.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    {
+      "hanzi": "生活",
+      "pinyin": "shēnghuó",
+      "es": "vida (diaria); vivir"
+    },
+    {
+      "hanzi": "平时",
+      "pinyin": "píngshí",
+      "es": "normalmente, en días normales"
+    },
+    {
+      "hanzi": "平常",
+      "pinyin": "píngcháng",
+      "es": "normal, corriente; normalmente"
+    },
+    {
+      "hanzi": "经常",
+      "pinyin": "jīngcháng",
+      "es": "a menudo, con frecuencia",
+      "note": "Igual que 常常; 经常 suena un poco más formal."
+    },
+    {
+      "hanzi": "习惯",
+      "pinyin": "xíguàn",
+      "es": "costumbre; acostumbrarse",
+      "note": "我习惯了 = ya me he acostumbrado."
+    },
+    {
+      "hanzi": "洗衣机",
+      "pinyin": "xǐyījī",
+      "es": "lavadora"
+    },
+    {
+      "hanzi": "衣架",
+      "pinyin": "yījià",
+      "es": "percha"
+    },
+    {
+      "hanzi": "卫生间",
+      "pinyin": "wèishēngjiān",
+      "es": "baño, aseo"
+    },
+    {
+      "hanzi": "热水",
+      "pinyin": "rè shuǐ",
+      "es": "agua caliente"
+    },
+    {
+      "hanzi": "排",
+      "pinyin": "pái",
+      "es": "poner en fila; fila"
+    },
+    {
+      "hanzi": "排队",
+      "pinyin": "páiduì",
+      "es": "hacer cola"
+    }
+  ],
+  "extraVocab": [
+    "热水"
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        {
+          "zh": "我每天都洗澡。",
+          "py": "Wǒ měitiān dōu xǐzǎo.",
+          "es": "Me ducho todos los días."
+        },
+        {
+          "zh": "我每次洗衣服都要排队。",
+          "py": "Wǒ měi cì xǐ yīfu dōu yào páiduì.",
+          "es": "Cada vez que lavo la ropa tengo que hacer cola."
+        },
+        {
+          "zh": "我平时不常在宿舍吃饭。",
+          "py": "Wǒ píngshí bù cháng zài sùshè chīfàn.",
+          "es": "Normalmente no como a menudo en la residencia."
+        }
+      ]
+    },
+    {
+      "type": "vocab",
+      "title": "La vida en la residencia",
+      "words": [
+        "生活",
+        "平时",
+        "平常",
+        "经常",
+        "习惯",
+        "洗衣机",
+        "衣架",
+        "卫生间",
+        "热水",
+        "排",
+        "排队"
+      ]
+    },
+    {
+      "type": "phonetics-drill",
+      "title": "x y sh: 洗, 习惯, 生活",
+      "markdown": "Hoy salen muchas **x** y muchas **sh**, que el español confunde:\n\n- **x**: lengua **plana**, labios estirados en sonrisa → 洗 *xǐ*, 习惯 *xíguàn*, 洗衣机 *xǐyījī*.\n- **sh**: lengua **doblada hacia atrás**, labios algo redondos → 生活 *shēnghuó*, 水 *shuǐ*, 时 *shí*.\n\nTruco: si después viene **i** o **ü**, es casi seguro **x** (*xi*, *xu*); *shi* tiene una «i» distinta, un zumbido.",
+      "items": [
+        {
+          "audio": "洗",
+          "options": [
+            "xǐ",
+            "shǐ",
+            "sǐ"
+          ],
+          "answer": 0,
+          "explain": "x plana, con sonrisa."
+        },
+        {
+          "audio": "生活",
+          "options": [
+            "shēnghuó",
+            "xīnghuó",
+            "sēnghuó"
+          ],
+          "answer": 0,
+          "explain": "sh doblada; 活 huó en 2.º."
+        },
+        {
+          "audio": "习惯",
+          "options": [
+            "xíguàn",
+            "shíguàn",
+            "xíkuàn"
+          ],
+          "answer": 0,
+          "explain": "x + i; 惯 con g sin aire."
+        },
+        {
+          "audio": "平时",
+          "options": [
+            "píngshí",
+            "píngxí",
+            "bíngshí"
+          ],
+          "answer": 0,
+          "explain": "p con aire; 时 shí con sh."
+        },
+        {
+          "audio": "卫生间",
+          "options": [
+            "wèishēngjiān",
+            "wèisēngjiān",
+            "wèishēngqiān"
+          ],
+          "answer": 0,
+          "explain": "sh en 生, j en 间."
+        }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": [
+        "活",
+        "洗"
+      ],
+      "mnemonics": {
+        "活": "氵 (agua) + 舌 (lengua): agua y saliva, señal de que alguien está vivo → vivir; 生活, la vida.",
+        "洗": "氵 (agua) + 先: echar agua primero → lavar."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "Cada día, cada vez: 每天 / 每次 + 都, y 经常 / 常常",
+      "markdown": "**每天** (cada día) y **每次** (cada vez) son tiempos: van **delante del verbo**, y casi siempre piden **都** en el hueco de los adverbios:\n\n- 我**每天都**洗澡。 → *Me ducho todos los días.*\n- 我**每次**洗衣服**都**要排队。 → *Cada vez que lavo la ropa tengo que hacer cola.* (每次 + lo que haces, luego 都)\n\n**经常 / 常常** (a menudo) son adverbios: van **detrás del sujeto y delante del verbo**:\n\n- 我**经常**用洗衣机。\n\n**Negativa**: **不常** / **不经常** (no a menudo). ¡No es lo mismo **经常不** (a menudo no…)!: 他经常不吃早饭 = muchas veces no desayuna.\n\n**平时** (normalmente) es un tiempo: va con el tiempo, antes de los adverbios.",
+      "focus": [
+        "time",
+        "adverb"
+      ],
+      "compare": true,
+      "sentences": [
+        {
+          "slots": {
+            "subject": {
+              "zh": "我",
+              "py": "wǒ"
+            },
+            "time": {
+              "zh": "每天",
+              "py": "měitiān"
+            },
+            "adverb": {
+              "zh": "都",
+              "py": "dōu"
+            },
+            "verb1": {
+              "zh": "洗澡",
+              "py": "xǐzǎo"
+            }
+          },
+          "end": "。",
+          "es": "Me ducho todos los días.",
+          "esOrder": [
+            {
+              "text": "Me ducho",
+              "slot": "verb1"
+            },
+            {
+              "text": "todos los días",
+              "slot": "time"
+            }
+          ]
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "我",
+              "py": "wǒ"
+            },
+            "time": {
+              "zh": "每次洗衣服",
+              "py": "měi cì xǐ yīfu"
+            },
+            "adverb": {
+              "zh": "都",
+              "py": "dōu"
+            },
+            "aux": {
+              "zh": "要",
+              "py": "yào"
+            },
+            "verb1": {
+              "zh": "排队",
+              "py": "páiduì"
+            }
+          },
+          "end": "。",
+          "es": "Cada vez que lavo la ropa tengo que hacer cola."
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "我们",
+              "py": "wǒmen"
+            },
+            "adverb": {
+              "zh": "经常",
+              "py": "jīngcháng"
+            },
+            "verb1": {
+              "zh": "用",
+              "py": "yòng"
+            },
+            "object": {
+              "zh": "洗衣机",
+              "py": "xǐyījī"
+            }
+          },
+          "end": "。",
+          "es": "Usamos la lavadora a menudo.",
+          "esOrder": [
+            {
+              "text": "Usamos",
+              "slot": "verb1"
+            },
+            {
+              "text": "la lavadora",
+              "slot": "object"
+            },
+            {
+              "text": "a menudo",
+              "slot": "adverb"
+            }
+          ]
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "小李",
+              "py": "Xiǎo Lǐ"
+            },
+            "time": {
+              "zh": "平时",
+              "py": "píngshí"
+            },
+            "adverb": {
+              "zh": "常常",
+              "py": "chángcháng"
+            },
+            "place": {
+              "zh": "在图书馆",
+              "py": "zài túshūguǎn"
+            },
+            "verb1": {
+              "zh": "学习",
+              "py": "xuéxí"
+            }
+          },
+          "end": "。",
+          "es": "Normalmente Xiao Li estudia a menudo en la biblioteca."
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "我",
+              "py": "wǒ"
+            },
+            "verb1": {
+              "zh": "习惯了",
+              "py": "xíguàn le"
+            },
+            "object": {
+              "zh": "这儿的生活",
+              "py": "zhèr de shēnghuó"
+            }
+          },
+          "end": "。",
+          "es": "Ya me he acostumbrado a la vida de aquí."
+        }
+      ],
+      "negative": [
+        {
+          "slots": {
+            "subject": {
+              "zh": "我",
+              "py": "wǒ"
+            },
+            "time": {
+              "zh": "平时",
+              "py": "píngshí"
+            },
+            "adverb": {
+              "zh": "不常",
+              "py": "bù cháng"
+            },
+            "place": {
+              "zh": "在宿舍",
+              "py": "zài sùshè"
+            },
+            "verb1": {
+              "zh": "吃饭",
+              "py": "chīfàn"
+            }
+          },
+          "end": "。",
+          "es": "Normalmente no como a menudo en la residencia."
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "卫生间",
+              "py": "wèishēngjiān"
+            },
+            "time": {
+              "zh": "晚上",
+              "py": "wǎnshang"
+            },
+            "adverb": {
+              "zh": "经常",
+              "py": "jīngcháng"
+            },
+            "verb1": {
+              "zh": "没有",
+              "py": "méiyǒu"
+            },
+            "object": {
+              "zh": "热水",
+              "py": "rè shuǐ"
+            }
+          },
+          "end": "。",
+          "es": "Por la noche muchas veces no hay agua caliente en el baño."
+        }
+      ],
+      "question": [
+        {
+          "slots": {
+            "subject": {
+              "zh": "你",
+              "py": "nǐ"
+            },
+            "adverb": {
+              "zh": "经常",
+              "py": "jīngcháng"
+            },
+            "verb1": {
+              "zh": "洗衣服",
+              "py": "xǐ yīfu"
+            },
+            "particle": {
+              "zh": "吗",
+              "py": "ma"
+            }
+          },
+          "end": "？",
+          "es": "¿Lavas la ropa a menudo?"
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "你",
+              "py": "nǐ"
+            },
+            "time": {
+              "zh": "每天",
+              "py": "měitiān"
+            },
+            "adverb": {
+              "zh": "都",
+              "py": "dōu"
+            },
+            "verb1": {
+              "zh": "洗澡",
+              "py": "xǐzǎo"
+            },
+            "particle": {
+              "zh": "吗",
+              "py": "ma"
+            }
+          },
+          "end": "？",
+          "es": "¿Te duchas todos los días?"
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "我洗澡经常。",
+          "right": "我经常洗澡。",
+          "why": "Los adverbios de frecuencia van delante del verbo, no al final como en español («me ducho a menudo»)."
+        },
+        {
+          "wrong": "每天我洗澡都。",
+          "right": "我每天都洗澡。",
+          "why": "都 va delante del verbo, nunca al final."
+        },
+        {
+          "wrong": "我不每天洗澡。",
+          "right": "我不是每天都洗澡。",
+          "why": "Para «no todos los días» se dice 不是每天都…"
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Primer día con el compañero de habitación",
+      "lines": [
+        {
+          "speaker": "小李",
+          "zh": "雨果，你平时几点起床？",
+          "py": "Yǔguǒ, nǐ píngshí jǐ diǎn qǐchuáng?",
+          "es": "Hugo, ¿a qué hora te levantas normalmente?"
+        },
+        {
+          "speaker": "雨果",
+          "zh": "我每天七点起床，然后洗澡。你呢？",
+          "py": "Wǒ měitiān qī diǎn qǐchuáng, ránhòu xǐzǎo. Nǐ ne?",
+          "es": "Me levanto todos los días a las siete y luego me ducho. ¿Y tú?"
+        },
+        {
+          "speaker": "小李",
+          "zh": "我习惯晚上洗澡。早上卫生间经常要排队。",
+          "py": "Wǒ xíguàn wǎnshang xǐzǎo. Zǎoshang wèishēngjiān jīngcháng yào páiduì.",
+          "es": "Yo tengo la costumbre de ducharme por la noche. Por la mañana muchas veces hay cola en el baño."
+        },
+        {
+          "speaker": "雨果",
+          "zh": "有热水吗？",
+          "py": "Yǒu rè shuǐ ma?",
+          "es": "¿Hay agua caliente?"
+        },
+        {
+          "speaker": "小李",
+          "zh": "有，可是晚上十一点以后经常没有。",
+          "py": "Yǒu, kěshì wǎnshang shíyī diǎn yǐhòu jīngcháng méiyǒu.",
+          "es": "Sí, pero después de las once de la noche muchas veces no hay."
+        },
+        {
+          "speaker": "雨果",
+          "zh": "好，我知道了。洗衣机在哪儿？",
+          "py": "Hǎo, wǒ zhīdào le. Xǐyījī zài nǎr?",
+          "es": "Vale, entendido. ¿Dónde está la lavadora?"
+        },
+        {
+          "speaker": "小李",
+          "zh": "在一楼。每次洗衣服都要排队，周末人特别多。",
+          "py": "Zài yī lóu. Měi cì xǐ yīfu dōu yào páiduì, zhōumò rén tèbié duō.",
+          "es": "En la planta baja. Cada vez que lavas la ropa hay que hacer cola; los fines de semana hay muchísima gente."
+        },
+        {
+          "speaker": "雨果",
+          "zh": "我带了衣架，你要用吗？",
+          "py": "Wǒ dài le yījià, nǐ yào yòng ma?",
+          "es": "He traído perchas, ¿quieres usar alguna?"
+        },
+        {
+          "speaker": "小李",
+          "zh": "好啊，谢谢！你很快就会习惯这儿的生活。",
+          "py": "Hǎo a, xièxie! Nǐ hěn kuài jiù huì xíguàn zhèr de shēnghuó.",
+          "es": "¡Vale, gracias! Te acostumbrarás muy pronto a la vida de aquí."
+        }
+      ],
+      "notes": "En muchas residencias chinas el agua caliente tiene horario y la lavadora es común (a veces se paga escaneando un código QR). En la planta baja suele estar la 宿舍阿姨, la conserje: es buena idea llevarse bien con ella."
+    },
+    {
+      "type": "exercises",
+      "count": 16,
+      "bank": [
+        "g-mei",
+        "g-ye-dou",
+        "u13"
+      ]
+    },
+    {
+      "type": "sentence-builder",
+      "items": [
+        {
+          "sentence": {
+            "slots": {
+              "subject": {
+                "zh": "我"
+              },
+              "time": {
+                "zh": "每天"
+              },
+              "adverb": {
+                "zh": "都"
+              },
+              "verb1": {
+                "zh": "洗澡"
+              }
+            },
+            "end": "。",
+            "es": "Me ducho todos los días."
+          },
+          "distractors": [
+            "经常"
+          ]
+        },
+        {
+          "sentence": {
+            "slots": {
+              "subject": {
+                "zh": "我们"
+              },
+              "adverb": {
+                "zh": "经常"
+              },
+              "verb1": {
+                "zh": "用"
+              },
+              "object": {
+                "zh": "洗衣机"
+              }
+            },
+            "end": "。",
+            "es": "Usamos la lavadora a menudo."
+          }
+        },
+        {
+          "sentence": {
+            "slots": {
+              "subject": {
+                "zh": "你"
+              },
+              "time": {
+                "zh": "每次"
+              },
+              "adverb": {
+                "zh": "都"
+              },
+              "aux": {
+                "zh": "要"
+              },
+              "verb1": {
+                "zh": "排队"
+              },
+              "particle": {
+                "zh": "吗"
+              }
+            },
+            "end": "？",
+            "es": "¿Tienes que hacer cola cada vez?"
+          }
+        },
+        {
+          "sentence": {
+            "slots": {
+              "subject": {
+                "zh": "小李"
+              },
+              "time": {
+                "zh": "平时"
+              },
+              "adverb": {
+                "zh": "不常"
+              },
+              "with": {
+                "zh": "跟我们一起"
+              },
+              "place": {
+                "zh": "在食堂"
+              },
+              "verb1": {
+                "zh": "吃"
+              },
+              "object": {
+                "zh": "晚饭"
+              }
+            },
+            "end": "。",
+            "es": "Normalmente Xiao Li no cena a menudo con nosotros en el comedor."
+          }
+        }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        {
+          "zh": "我每天都洗澡。",
+          "py": "Wǒ měitiān dōu xǐzǎo.",
+          "es": "Me ducho todos los días."
+        },
+        {
+          "zh": "每次洗衣服都要排队。",
+          "py": "Měi cì xǐ yīfu dōu yào páiduì.",
+          "es": "Cada vez que lavas la ropa hay que hacer cola."
+        },
+        {
+          "zh": "我经常用洗衣机。",
+          "py": "Wǒ jīngcháng yòng xǐyījī.",
+          "es": "Uso la lavadora a menudo."
+        },
+        {
+          "zh": "我习惯了这儿的生活。",
+          "py": "Wǒ xíguàn le zhèr de shēnghuó.",
+          "es": "Ya me he acostumbrado a la vida de aquí."
+        }
+      ],
+      "respond": [
+        {
+          "q": {
+            "zh": "你平时几点起床？",
+            "py": "Nǐ píngshí jǐ diǎn qǐchuáng?",
+            "es": "¿A qué hora te levantas normalmente?"
+          },
+          "model": {
+            "zh": "我平时七点起床。",
+            "py": "Wǒ píngshí qī diǎn qǐchuáng.",
+            "es": "Normalmente me levanto a las siete."
+          }
+        },
+        {
+          "q": {
+            "zh": "你经常在宿舍吃饭吗？",
+            "py": "Nǐ jīngcháng zài sùshè chīfàn ma?",
+            "es": "¿Comes a menudo en la residencia?"
+          },
+          "model": {
+            "zh": "不常，我经常去食堂。",
+            "py": "Bù cháng, wǒ jīngcháng qù shítáng.",
+            "es": "No mucho; voy a menudo al comedor."
+          }
+        },
+        {
+          "q": {
+            "zh": "你习惯这儿的生活了吗？",
+            "py": "Nǐ xíguàn zhèr de shēnghuó le ma?",
+            "es": "¿Te has acostumbrado a la vida de aquí?"
+          },
+          "model": {
+            "zh": "习惯了。",
+            "py": "Xíguàn le.",
+            "es": "Sí, ya me he acostumbrado."
+          }
+        }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Un día normal en la residencia",
+      "text": "雨果住在学校的宿舍，他的室友是小李。他们的房间不大，有两张床、两张桌子，还有一个卫生间。雨果平时七点起床，每天早上都洗澡。小李习惯晚上洗澡：早上卫生间经常要排队。宿舍楼一楼有三台洗衣机，每次洗衣服都要等，周末人特别多。晚上十一点以后经常没有热水。雨果说：“开始的时候我不习惯，现在我很喜欢这儿的生活。”",
+      "es": "Hugo vive en la residencia de la universidad y su compañero de habitación es Xiao Li. La habitación no es grande: tiene dos camas, dos mesas y un baño. Normalmente Hugo se levanta a las siete y se ducha todas las mañanas. Xiao Li tiene la costumbre de ducharse por la noche: por la mañana muchas veces hay cola en el baño. En la planta baja del edificio hay tres lavadoras; cada vez que lavas la ropa hay que esperar, y los fines de semana hay muchísima gente. Después de las once de la noche muchas veces no hay agua caliente. Hugo dice: «Al principio no estaba acostumbrado; ahora me gusta mucho la vida de aquí».",
+      "questions": [
+        {
+          "q": "¿Cuándo se ducha Hugo?",
+          "options": [
+            "每天早上",
+            "晚上",
+            "周末"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "¿Cuántas lavadoras hay?",
+          "options": [
+            "三台",
+            "两台",
+            "一台"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "¿Cuándo no hay agua caliente muchas veces?",
+          "options": [
+            "晚上十一点以后",
+            "早上",
+            "周末"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "¿Qué piensa Hugo ahora de la vida en la residencia?",
+          "options": [
+            "很喜欢",
+            "不习惯",
+            "太累了"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "type": "notes-growth"
+    }
+  ]
+}

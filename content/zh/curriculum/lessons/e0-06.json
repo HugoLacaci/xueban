@@ -1,0 +1,77 @@
+{
+  "id": "e0-06",
+  "title": "Finales compuestas y nasales",
+  "zh": "复韵母和鼻韵母",
+  "goal": "Pronunciar todas las finales compuestas y distinguir las nasales en -n de las nasales en -ng.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "爱", "pinyin": "ài", "es": "querer, amar", "note": "Final ai, como «hay»." },
+    { "hanzi": "好", "pinyin": "hǎo", "es": "bueno; bien", "note": "Ya lo conoces (lección 1). Fíjate ahora en la final ao." },
+    { "hanzi": "看", "pinyin": "kàn", "es": "mirar; ver; leer", "note": "Final -an: la lengua acaba delante." },
+    { "hanzi": "朋友", "pinyin": "péngyou", "es": "amigo, amiga", "note": "péng (-eng) + you en tono neutro." },
+    { "hanzi": "中国", "pinyin": "Zhōngguó", "es": "China", "note": "zh + ong; g + uo." },
+    { "hanzi": "北京", "pinyin": "Běijīng", "es": "Pekín", "note": "běi (ei) + jīng (-ing)." },
+    { "hanzi": "忙", "pinyin": "máng", "es": "ocupado, liado", "note": "Final -ang: la lengua acaba atrás." },
+    { "hanzi": "我", "pinyin": "wǒ", "es": "yo", "note": "Final uo, sin inicial: se escribe wo." }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "你好，朋友！", "py": "Nǐ hǎo, péngyou!", "es": "¡Hola, amigo!" },
+        { "zh": "我爱北京！", "py": "Wǒ ài Běijīng!", "es": "¡Me encanta Pekín!" },
+        { "zh": "我太忙了！", "py": "Wǒ tài máng le!", "es": "¡Estoy liadísimo!" }
+      ]
+    },
+    { "type": "vocab", "title": "Palabras con finales compuestas", "words": ["爱", "好", "看", "朋友", "中国", "北京", "忙", "我"] },
+    {
+      "type": "phonetics-drill",
+      "title": "-n o -ng",
+      "markdown": "Muchas finales chinas acaban en **-n** o en **-ng**, y eso cambia la palabra: 饭 *fàn* «comida» y 放 *fàng* «poner» no son lo mismo.\n\n- **-n**: la punta de la lengua acaba tocando **detrás de los dientes de arriba**, como la «n» de «pan».\n- **-ng**: la punta de la lengua se queda abajo y es la **parte de atrás** la que sube, como la «n» de «tengo» o «banco». La *g* no se pronuncia aparte.\n\nEscucha y elige. Los dos últimos son diptongos, para entrenar también el resto de la lección.",
+      "items": [
+        { "audio": "看", "options": ["kàn", "kàng"], "answer": 0, "explain": "看 kàn: termina con la punta de la lengua delante." },
+        { "audio": "忙", "options": ["mán", "máng"], "answer": 1, "explain": "忙 máng: termina atrás, la a suena más oscura." },
+        { "audio": "饭", "options": ["fàn", "fàng"], "answer": 0, "explain": "饭 fàn «comida» frente a 放 fàng «poner»." },
+        { "audio": "京", "options": ["jīn", "jīng"], "answer": 1, "explain": "京 jīng (北京) frente a 今 jīn «hoy, ahora». Con -ing la i se alarga un poco hacia «ieng»." },
+        { "audio": "朋", "options": ["pén", "péng"], "answer": 1, "explain": "朋 péng: la e se vuelve oscura y la lengua acaba atrás." },
+        { "audio": "三", "options": ["sān", "sāng"], "answer": 0, "explain": "三 sān «tres» frente a 桑 sāng «morera»." },
+        { "audio": "北", "options": ["běi", "bǎi", "bǒu"], "answer": 0, "explain": "北 běi: ei como en «rey». 百 bǎi «cien» lleva ai." },
+        { "audio": "我", "options": ["wǒ", "wǔ", "ǒu"], "answer": 0, "explain": "我 wǒ: uo, una «u» que se abre en «o». 五 wǔ es solo «u»." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["中"],
+      "mnemonics": {
+        "中": "Un rectángulo atravesado por una línea vertical justo por la mitad: una flecha que da en el centro de la diana. Significa «centro, en medio», y 中国 es «el país del centro»."
+      }
+    },
+    {
+      "type": "explain",
+      "title": "Diptongos y triptongos",
+      "markdown": "Una **final compuesta** une dos o tres vocales en una sola sílaba. Muchas se parecen a los diptongos españoles; la diferencia es que en chino la vocal **principal** (la más abierta) se oye más larga y las demás son más breves.\n\n| Final | Ejemplo | Cómo suena |\n|---|---|---|\n| **ai** | 爱 ài | Como «hay». |\n| **ei** | 北 běi | Como «rey». |\n| **ao** | 好 hǎo | Como «au» de «aula», acabando en una «o» suave. |\n| **ou** | 友 yǒu (de 朋友) | Una «o» que se cierra en «u»: «ou», nunca «au». |\n| **ia** | 家 jiā | «ia» de «Asia». |\n| **ie** | 谢 xiè | «ie» de «pie», con una e clara (aquí la e **sí** suena «e»). |\n| **iao** | 小 xiǎo | «iau», todo seguido. |\n| **iou** → se escribe **iu** | 九 jiǔ | Suena «iou»: la o se oye, sobre todo en 3.º y 4.º tono. |\n| **ua** | 花 huā | «ua» de «agua». |\n| **uo** | 我 wǒ, 国 guó | «uo» de «cuota». |\n| **uai** | 快 kuài | «uai» de «Uruguay». |\n| **uei** → se escribe **ui** | 对 duì | Suena «uei»: no digas «ui». |\n| **üe** | 月 yuè, 学 xué | ü + «e» clara. |\n\nOjo con **iu** y **ui**: el pinyin se come una vocal para ahorrar letras, pero al hablar se oye. Las reglas de escritura (iu, ui, un, y/w) las verás con calma en la lección 7."
+    },
+    {
+      "type": "explain",
+      "title": "Finales nasales: -n frente a -ng",
+      "markdown": "El español también tiene dos «enes», solo que no nos damos cuenta: en «**pan**» la lengua acaba delante; en «**tango**» o «**banco**» acaba atrás. El chino usa esa diferencia para distinguir palabras.\n\n| Con -n (lengua delante) | Con -ng (lengua atrás) |\n|---|---|\n| **an** 看 kàn: «a» clara | **ang** 忙 máng: «a» más oscura, del fondo |\n| **en** 们 men: e china breve + n | **eng** 朋 péng: e china + ng |\n| **in** 今 jīn: «in» | **ing** 京 jīng: «i» que se alarga un poco hacia «ieng» |\n| **ian** 见 jiàn: suena «**ien**», no «ian» | **iang** 想 xiǎng: aquí sí, «iang» |\n| **uan** 晚 wǎn: «uan» | **uang** 黄 huáng: «uang» |\n| **un** (= uen) 问 wèn: «uen» | **ueng** 翁 wēng: rara, casi solo esta sílaba |\n| **üan** 远 yuǎn: ü + «en» | **ong** 中 zhōng: suena «**ung**», con la lengua atrás |\n| **ün** 云 yún: ü + n | **iong** 用 yòng: «iung» |\n\n**Trucos**:\n\n1. Para **-ng**, deja la boca un poco abierta al acabar y no toques los dientes con la lengua. Si te cuesta, di «tengo» y para justo antes de la *g*: esa es la posición.\n2. Para **-n**, cierra con la punta de la lengua bien pegada detrás de los dientes de arriba.\n3. La vocal también ayuda: delante de **-ng** las vocales suenan más **oscuras** y de garganta; delante de **-n**, más **claras**.\n\n### Errores típicos de un hispanohablante\n\n1. Pronunciar la **g** de -ng: *máng* no es «mang-g».\n2. Decir **ian** tal cual se escribe: 见 *jiàn* suena «jien».\n3. Decir **ong** como «ong» española: 中 *zhōng* suena más cerca de «chung».\n4. Mezclar -n y -ng al final de palabra porque en español da igual: en chino 饭 *fàn* y 放 *fàng* son dos verbos distintos."
+    },
+    { "type": "exercises", "count": 10, "bank": ["u0"] },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "中国", "py": "Zhōngguó", "es": "China" },
+        { "zh": "北京", "py": "Běijīng", "es": "Pekín" },
+        { "zh": "你好，朋友！", "py": "Nǐ hǎo, péngyou!", "es": "¡Hola, amigo!" },
+        { "zh": "我爱中国！", "py": "Wǒ ài Zhōngguó!", "es": "¡Me encanta China!" },
+        { "zh": "我太忙了！", "py": "Wǒ tài máng le!", "es": "¡Estoy liadísimo!" }
+      ],
+      "respond": [
+        { "q": { "zh": "你忙不忙？", "py": "Nǐ máng bu máng?", "es": "¿Estás liado?" }, "model": { "zh": "我太忙了！", "py": "Wǒ tài máng le!", "es": "¡Muchísimo!" } },
+        { "q": { "zh": "你好，朋友！", "py": "Nǐ hǎo, péngyou!", "es": "¡Hola, amigo!" }, "model": { "zh": "你好！", "py": "Nǐ hǎo!", "es": "¡Hola!" } }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

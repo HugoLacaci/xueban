@@ -1,0 +1,80 @@
+{
+  "id": "e0-01",
+  "title": "¿Cómo funciona el chino?",
+  "zh": "你好",
+  "goal": "Entender qué es una sílaba china (inicial + final + tono) y saludar, dar las gracias y despedirte.",
+  "minutes": 12,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "你好", "pinyin": "nǐ hǎo", "es": "hola", "note": "Literalmente «tú bien». Al hablar, el primer 你 sube un poco (ní hǎo): lo explicamos en la lección de pares de tonos." },
+    { "hanzi": "谢谢", "pinyin": "xièxie", "es": "gracias", "note": "La segunda sílaba va en tono neutro: corta y sin fuerza." },
+    { "hanzi": "再见", "pinyin": "zàijiàn", "es": "adiós", "note": "Literalmente «otra vez ver», como «hasta la vista»." },
+    { "hanzi": "老师", "pinyin": "lǎoshī", "es": "profesor, profesora", "note": "También es la forma de dirigirse al profesor: 老师好 «hola, profe»." },
+    { "hanzi": "你", "pinyin": "nǐ", "es": "tú" },
+    { "hanzi": "好", "pinyin": "hǎo", "es": "bueno; bien" }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "你好！", "py": "Nǐ hǎo!", "es": "¡Hola!" },
+        { "zh": "老师好！", "py": "Lǎoshī hǎo!", "es": "¡Hola, profe! (lit. «profesor, bien»)" },
+        { "zh": "谢谢老师！", "py": "Xièxie lǎoshī!", "es": "¡Gracias, profe!" },
+        { "zh": "再见！", "py": "Zàijiàn!", "es": "¡Adiós!" }
+      ]
+    },
+    { "type": "vocab", "title": "Tus primeras palabras", "words": ["你好", "谢谢", "再见", "老师", "你", "好"] },
+    {
+      "type": "phonetics-drill",
+      "title": "El pinyin no se lee como el español",
+      "markdown": "Antes de entrar en detalle, entrena el oído con las palabras de hoy. En cada audio, elige el pinyin que oyes.\n\nFíjate en tres trampas: la **x** de *xièxie* no es «ks» sino un sonido entre «s» y «sh» con los labios estirados; la **h** de *hǎo* es una «j» española suave, sin rascar la garganta; y la **sh** de *lǎoshī* se hace con la punta de la lengua hacia atrás.",
+      "items": [
+        { "audio": "谢谢", "options": ["xièxie", "sièsie", "shèshe"], "answer": 0, "explain": "x + ie: lengua plana detrás de los dientes de abajo y labios estirados, como si sonrieras." },
+        { "audio": "好", "options": ["hǎo", "kǎo", "gǎo"], "answer": 0, "explain": "h = una «j» española suave. La k lleva un golpe de aire y la g no tiene fricción." },
+        { "audio": "你", "options": ["nǐ", "lǐ", "mǐ"], "answer": 0, "explain": "Misma final (i) y mismo tono; solo cambia la inicial: n." },
+        { "audio": "老师", "options": ["lǎoshī", "lǎosī", "lǎoxī"], "answer": 0, "explain": "shī: lengua hacia atrás. sī tendría la lengua detrás de los dientes; xī, plana y sonriendo." },
+        { "audio": "再见", "options": ["zàijiàn", "càijiàn", "zàixiàn"], "answer": 0, "explain": "z es una «ts» suave, sin aire; c llevaría un soplo fuerte. j es parecida a la «ch» española." },
+        { "audio": "八", "prompt": "Primero solo el tono: ¿la voz se queda arriba y plana, o cae?", "options": ["Se queda alta y plana", "Cae con fuerza"], "answer": 0, "explain": "八 bā: primer tono, alto y sostenido. Los tonos los verás a fondo en las lecciones 10 y 11." },
+        { "audio": "爸", "prompt": "¿Y ahora?", "options": ["Se queda alta y plana", "Cae con fuerza"], "answer": 1, "explain": "爸 bà: cuarto tono, cae como una orden. Misma inicial y misma final que 八: solo cambia el tono, y es otra palabra." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["人"],
+      "mnemonics": {
+        "人": "Dos trazos que se apoyan uno en otro: una persona de perfil caminando, con sus dos piernas. Es uno de los pictogramas más antiguos y aparece dentro de muchos caracteres como 亻 (en 你, por ejemplo)."
+      }
+    },
+    {
+      "type": "explain",
+      "title": "Tres capas: hanzi, pinyin y tonos",
+      "markdown": "El chino escrito y el chino hablado se aprenden por separado, y conviene saberlo desde el primer día:\n\n- **Hanzi (汉字)**: los caracteres. Cada uno es **una sílaba** y casi siempre un significado: 你 «tú», 好 «bien». No indican cómo se pronuncian (o lo indican muy poco), así que hay que aprender su lectura.\n- **Pinyin**: el sistema oficial para escribir la pronunciación con letras latinas. Es una herramienta para aprender y para teclear en el móvil o el ordenador: escribes *nihao* y el teclado te ofrece 你好. En China casi no lo verás en carteles, pero lo usarás a diario en el teclado.\n- **Tonos**: la melodía de cada sílaba. En español la melodía cambia el sentido de la frase («¿vienes?» frente a «vienes»); en chino cambia **la palabra**: *bā* es 八 «ocho» y *bà* es 爸 «papá». En pinyin se marcan con una tilde encima de la vocal: ā á ǎ à (y sin marca, el tono neutro).\n\nLos tonos los trabajaremos a fondo en las lecciones 10 y 11. Hasta entonces, escucha e imita la melodía de cada palabra tal cual, sin preocuparte de la teoría."
+    },
+    {
+      "type": "explain",
+      "title": "La sílaba china: inicial + final + tono",
+      "markdown": "Toda sílaba china tiene la misma estructura, y es mucho más sencilla que la española:\n\n| Sílaba | Inicial | Final | Tono |\n|---|---|---|---|\n| hǎo 好 | h | ao | 3.º |\n| nǐ 你 | n | i | 3.º |\n| shī 师 | sh | i | 1.º |\n| jiàn 见 | j | ian | 4.º |\n\n- **Inicial**: la consonante del principio. Hay 21 (b, p, m, f, d, t…). Puede faltar: 爱 *ài* empieza directamente por la final.\n- **Final**: todo lo demás, vocales y, como mucho, una **-n** o una **-ng** al acabar. Nunca hay otras consonantes al final: no existe nada como «pan-t» o «mes».\n- **Tono**: la melodía que se pone encima de toda la sílaba.\n\nCon 21 iniciales y unas 38 finales salen unas 400 sílabas posibles (algo más de 1.200 contando los tonos). Comparado con el español, son poquísimas: por eso muchos caracteres suenan igual y el tono es tan importante.\n\nEn las próximas cinco lecciones recorrerás todo: primero las finales simples, luego las iniciales en tres grupos y, por último, las finales compuestas."
+    },
+    {
+      "type": "explain",
+      "title": "Por qué el pinyin no se lee como el español",
+      "markdown": "El pinyin usa nuestro alfabeto, pero lo inventaron lingüistas chinos en los años 50 para su idioma, no para el nuestro. Cada letra representa un sonido chino, y muchas veces ese sonido **no es el que la letra tiene en español**. Algunos ejemplos que ya han salido hoy:\n\n- **x** (*xièxie*): no es «ks» como en «taxi», sino algo entre «s» y «sh» con los labios estirados.\n- **h** (*hǎo*): parecida a nuestra «j», pero más suave, sin rascar.\n- **z** (*zàijiàn*): no es la «z» de «zapato»; suena como «ts» (sin soplo de aire).\n- **j** (*jiàn*): no es nuestra «j», sino un sonido muy cercano a la «ch» de «chico».\n- **sh** (*lǎoshī*): como un «sh» de «¡shhh!», con la punta de la lengua hacia atrás.\n- **i** (*shī*): detrás de sh no suena «i», sino como un zumbido de la propia consonante. Lo verás en la lección 5.\n\n**Error típico**: leer el pinyin «a la española» y decir *ksiéksie* o *sai-yián*. La regla de oro durante toda esta etapa: **primero escucha, después lee**. El pinyin te recuerda lo que has oído; no te dice cómo suena si no lo has oído antes."
+    },
+    { "type": "exercises", "count": 10, "bank": ["u0"] },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "你好！", "py": "Nǐ hǎo!", "es": "¡Hola!" },
+        { "zh": "老师好！", "py": "Lǎoshī hǎo!", "es": "¡Hola, profe!" },
+        { "zh": "谢谢！", "py": "Xièxie!", "es": "¡Gracias!" },
+        { "zh": "谢谢老师！", "py": "Xièxie lǎoshī!", "es": "¡Gracias, profe!" },
+        { "zh": "再见！", "py": "Zàijiàn!", "es": "¡Adiós!" }
+      ],
+      "respond": [
+        { "q": { "zh": "你好！", "py": "Nǐ hǎo!", "es": "¡Hola! (te saluda tu profesora)" }, "model": { "zh": "老师好！", "py": "Lǎoshī hǎo!", "es": "¡Hola, profe!" } },
+        { "q": { "zh": "再见！", "py": "Zàijiàn!", "es": "¡Adiós!" }, "model": { "zh": "老师再见！", "py": "Lǎoshī zàijiàn!", "es": "¡Adiós, profe!" } }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

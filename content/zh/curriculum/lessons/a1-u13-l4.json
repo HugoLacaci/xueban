@@ -1,0 +1,143 @@
+{
+  "id": "a1-u13-l4",
+  "title": "¿Por qué? ¿Qué edad? 为什么, 多 + adjetivo y repaso",
+  "zh": "你为什么学汉语？",
+  "goal": "Preguntar por qué (为什么), la edad, la altura o la duración (多大, 多高, 多远, 多长时间), confirmar algo con 吧 / 是不是 y repasar todas las preguntas construyendo frases completas.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "为什么", "pinyin": "wèishénme", "es": "por qué", "note": "Va delante del verbo, como 怎么." },
+    { "hanzi": "觉得", "pinyin": "juéde", "es": "creer, parecer (opinión)", "note": "你觉得……怎么样？ «¿Qué te parece…?»." },
+    { "hanzi": "多大", "pinyin": "duō dà", "es": "¿cuántos años?, ¿qué tamaño?", "note": "Con adultos jóvenes: 你多大？ A niños: 你几岁？ A mayores: 您多大年纪？" },
+    { "hanzi": "多高", "pinyin": "duō gāo", "es": "¿qué altura?, ¿cuánto mide?" },
+    { "hanzi": "多远", "pinyin": "duō yuǎn", "es": "¿a qué distancia?, ¿cómo de lejos?", "note": "远 (lejos) se estudia a fondo en la próxima unidad, con 离." },
+    { "hanzi": "多长时间", "pinyin": "duō cháng shíjiān", "es": "¿cuánto tiempo?", "note": "Igual que 多久." },
+    { "hanzi": "吧", "pinyin": "ba", "es": "(al final: «…, ¿no?», suposición)", "note": "你是西班牙人吧？ «Eres español, ¿no?». Ya lo viste para sugerir (我们走吧)." },
+    { "hanzi": "是不是", "pinyin": "shì bu shì", "es": "¿es o no?, ¿verdad que…?", "note": "Delante del predicado o al final: 你是不是很累？ / 你很累，是不是？" },
+    { "hanzi": "还有", "pinyin": "hái yǒu", "es": "además, y también", "note": "Para añadir algo: 还有，我想吃西班牙菜。" },
+    { "hanzi": "没什么", "pinyin": "méi shénme", "es": "no es nada, no pasa nada" },
+    { "hanzi": "没事儿", "pinyin": "méi shìr", "es": "no pasa nada, tranquilo", "note": "Respuesta típica a 对不起. En el sur también 没事." }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "你为什么学汉语？", "py": "Nǐ wèishénme xué Hànyǔ?", "es": "¿Por qué estudias chino?" },
+        { "zh": "你是西班牙人吧？", "py": "Nǐ shì Xībānyá rén ba?", "es": "Eres español, ¿no?" },
+        { "zh": "你觉得这个电影怎么样？", "py": "Nǐ juéde zhège diànyǐng zěnmeyàng?", "es": "¿Qué te parece esta película?" }
+      ]
+    },
+    { "type": "vocab", "title": "Por qué, cuánto y confirmar", "words": ["为什么", "觉得", "多大", "多高", "多远", "多长时间", "吧", "是不是", "还有", "没什么", "没事儿"] },
+    {
+      "type": "phonetics-drill",
+      "title": "La entonación de las preguntas: 吗, 吧 y el interrogativo",
+      "markdown": "En español la pregunta se nota porque **la voz sube al final**. En chino los tonos no pueden cambiar, así que la pregunta la hacen las **palabras**:\n\n- **…吗？** pregunta neutra: no sé la respuesta. 你是西班牙人**吗**？\n- **…吧？** supongo que sí, confírmamelo. 你是西班牙人**吧**？\n- **interrogativo** (谁, 什么, 为什么…): no hace falta nada más. 你是**哪国**人？\n\nNo subas la voz al final como en español: deforma el tono de la última sílaba. Como mucho, toda la frase puede ir un poco más aguda.",
+      "items": [
+        { "audio": "你是西班牙人吧？", "prompt": "¿Qué piensa quien pregunta?", "options": ["Supone que sí", "No tiene ni idea"], "answer": 0, "explain": "吧 = «…, ¿no?»: busca confirmación." },
+        { "audio": "你是西班牙人吗？", "prompt": "¿Qué piensa quien pregunta?", "options": ["Supone que sí", "No lo sabe"], "answer": 1, "explain": "吗: pregunta neutra de sí o no." },
+        { "audio": "你为什么不去？", "prompt": "¿Hace falta 吗 al final?", "options": ["No: ya hay interrogativo", "Sí"], "answer": 0, "explain": "为什么 ya hace la pregunta." },
+        { "audio": "为什么", "options": ["wèishénme", "wéishénme", "wèisénme"], "answer": 0, "explain": "为 wèi en 4.º tono en «por qué»." },
+        { "audio": "觉得", "options": ["juéde", "jiéde", "juède"], "answer": 0, "explain": "jué = j + üe, 2.º tono; 得 neutro." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["为", "觉"],
+      "mnemonics": {
+        "为": "En los huesos oraculares, una mano que guía a un elefante: hacer algo para alguien; de ahí «para, por» (为什么 «¿para qué, por qué?»).",
+        "觉": "Arriba, rayos de luz sobre un techo (⺍ + 冖); abajo, 见 (ver): ver con claridad, darse cuenta, sentir."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "为什么, 多 + adjetivo y preguntas de confirmación",
+      "markdown": "**多 + adjetivo** pregunta «cuánto de…» y sigue la regla de oro: la respuesta va en el mismo hueco.\n\n| Pregunta | Respuesta |\n|---|---|\n| 你今年**多大**？ | 我今年**二十五岁**。 |\n| 大卫**多高**？ | 大卫**一米八**。 |\n| 这个电影**多长时间**？ | 这个电影**两个小时**。 |\n| 书店**多远**？ (con 离, en la U14) | **不远**。 |\n\n**为什么** va delante del verbo (hueco Adverbios), como 怎么. Es la excepción a la regla: la respuesta es una frase entera (con 因为 «porque», que verás en A2; por ahora basta con la razón).\n\n**Preguntas para confirmar**: …**吧**？ («…, ¿no?») y **是不是** (¿verdad que…?), delante del predicado o al final.\n\n⚠️ Repaso de la unidad: **nunca** 吗 + palabra interrogativa. Sí 啊: 你为什么不去**啊**？",
+      "focus": ["adverb", "object"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "time": { "zh": "今年", "py": "jīnnián" }, "object": { "zh": "多大", "py": "duō dà" } }, "end": "？", "es": "¿Cuántos años tienes (este año)?", "esOrder": [{ "text": "¿Cuántos años", "slot": "object" }, { "text": "tienes (tú)", "slot": "subject" }, { "text": "este año?", "slot": "time" }] },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "time": { "zh": "今年", "py": "jīnnián" }, "object": { "zh": "二十五岁", "py": "èrshíwǔ suì" } }, "end": "。", "es": "Este año tengo veinticinco años." },
+        { "slots": { "subject": { "zh": "大卫", "py": "Dàwèi" }, "object": { "zh": "多高", "py": "duō gāo" } }, "end": "？", "es": "¿Cuánto mide David?" },
+        { "slots": { "subject": { "zh": "大卫", "py": "Dàwèi" }, "object": { "zh": "一米八", "py": "yì mǐ bā" } }, "end": "。", "es": "David mide un metro ochenta." },
+        { "slots": { "subject": { "zh": "这个电影", "py": "zhège diànyǐng" }, "object": { "zh": "多长时间", "py": "duō cháng shíjiān" } }, "end": "？", "es": "¿Cuánto dura esta película?" },
+        { "slots": { "subject": { "zh": "这个电影", "py": "zhège diànyǐng" }, "object": { "zh": "两个小时", "py": "liǎng ge xiǎoshí" } }, "end": "。", "es": "Esta película dura dos horas." },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "觉得", "py": "juéde" }, "object": { "zh": "这个电影怎么样", "py": "zhège diànyǐng zěnmeyàng" } }, "end": "？", "es": "¿Qué te parece esta película?" },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "verb1": { "zh": "觉得", "py": "juéde" }, "object": { "zh": "这个电影很有意思", "py": "zhège diànyǐng hěn yǒu yìsi" } }, "end": "。", "es": "Creo que esta película es muy interesante." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "adverb": { "zh": "为什么不", "py": "wèishénme bù" }, "aux": { "zh": "想", "py": "xiǎng" }, "verb1": { "zh": "去", "py": "qù" } }, "end": "？", "es": "¿Por qué no quieres ir?" },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "不", "py": "bù" }, "verb1": { "zh": "觉得", "py": "juéde" }, "object": { "zh": "汉语很难", "py": "Hànyǔ hěn nán" } }, "end": "。", "es": "No creo que el chino sea muy difícil." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "adverb": { "zh": "为什么", "py": "wèishénme" }, "verb1": { "zh": "学", "py": "xué" }, "object": { "zh": "汉语", "py": "Hànyǔ" } }, "end": "？", "es": "¿Por qué estudias chino?", "esOrder": [{ "text": "¿Por qué", "slot": "adverb" }, { "text": "estudias", "slot": "verb1" }, { "text": "(tú)", "slot": "subject" }, { "text": "chino?", "slot": "object" }] },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "西班牙人", "py": "Xībānyá rén" }, "particle": { "zh": "吧", "py": "ba" } }, "end": "？", "es": "Eres español, ¿no?" },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "adverb": { "zh": "是不是", "py": "shì bu shì" }, "aux": { "zh": "想", "py": "xiǎng" }, "verb1": { "zh": "回", "py": "huí" }, "object": { "zh": "西班牙", "py": "Xībānyá" } }, "end": "？", "es": "¿Verdad que quieres volver a España?" }
+      ],
+      "mistakes": [
+        { "wrong": "你为什么学汉语吗？", "right": "你为什么学汉语？", "why": "Con palabra interrogativa no se pone 吗." },
+        { "wrong": "你多大岁？", "right": "你多大？/ 你几岁？（a un niño）", "why": "多大 ya pregunta la edad: no se añade 岁." },
+        { "wrong": "你觉得怎么样这个电影？", "right": "你觉得这个电影怎么样？", "why": "怎么样 va al final, en el hueco de la opinión, como 很有意思 en la respuesta." },
+        { "wrong": "你是西班牙人吧吗？", "right": "你是西班牙人吧？", "why": "Solo una partícula final: 吧 (supongo que sí) o 吗 (no lo sé)." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Un compañero nuevo con muchas preguntas",
+      "lines": [
+        { "speaker": "小王", "zh": "你好！你是西班牙人吧？", "py": "Nǐ hǎo! Nǐ shì Xībānyá rén ba?", "es": "¡Hola! Eres español, ¿no?" },
+        { "speaker": "雨果", "zh": "对，我是西班牙人。你怎么知道？", "py": "Duì, wǒ shì Xībānyá rén. Nǐ zěnme zhīdào?", "es": "Sí, soy español. ¿Cómo lo sabes?" },
+        { "speaker": "小王", "zh": "小李说的。你为什么学汉语？", "py": "Xiǎo Lǐ shuō de. Nǐ wèishénme xué Hànyǔ?", "es": "Me lo ha dicho Xiao Li. ¿Por qué estudias chino?" },
+        { "speaker": "雨果", "zh": "我觉得汉语很有意思，也很有用。", "py": "Wǒ juéde Hànyǔ hěn yǒu yìsi, yě hěn yǒuyòng.", "es": "Creo que el chino es muy interesante y también muy útil." },
+        { "speaker": "小王", "zh": "你今年多大？", "py": "Nǐ jīnnián duō dà?", "es": "¿Cuántos años tienes?" },
+        { "speaker": "雨果", "zh": "我二十五岁。你呢？", "py": "Wǒ èrshíwǔ suì. Nǐ ne?", "es": "Veinticinco. ¿Y tú?" },
+        { "speaker": "小王", "zh": "我二十二。西班牙很远吧？你是不是很想家？", "py": "Wǒ èrshí'èr. Xībānyá hěn yuǎn ba? Nǐ shì bu shì hěn xiǎng jiā?", "es": "Veintidós. España está muy lejos, ¿no? ¿A que echas mucho de menos tu casa?" },
+        { "speaker": "雨果", "zh": "有点儿想家。还有，我很想吃西班牙菜！", "py": "Yǒudiǎnr xiǎng jiā. Hái yǒu, wǒ hěn xiǎng chī Xībānyá cài!", "es": "Un poco. Y además, ¡tengo muchas ganas de comer comida española!" },
+        { "speaker": "小王", "zh": "对不起，我的问题太多了！", "py": "Duìbuqǐ, wǒ de wèntí tài duō le!", "es": "Perdona, ¡te estoy haciendo demasiadas preguntas!" },
+        { "speaker": "雨果", "zh": "没事儿！我也想问你几个问题。", "py": "Méi shìr! Wǒ yě xiǎng wèn nǐ jǐ ge wèntí.", "es": "¡No pasa nada! Yo también quiero hacerte unas preguntas." }
+      ],
+      "notes": "En China es normal preguntar la edad, el sueldo o si tienes pareja al conocer a alguien: no es mala educación, es interés. 想家 = echar de menos la casa. 小李说的 «lo ha dicho Xiao Li» usa una estructura (是…的) que verás más adelante; apréndela como bloque."
+    },
+    { "type": "exercises", "count": 16, "bank": ["g-question-words", "g-ba", "g-ma", "g-price-age"] },
+    {
+      "type": "sentence-builder",
+      "title": "Construye la frase completa",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "你" }, "time": { "zh": "这个周末" }, "aux": { "zh": "想" }, "with": { "zh": "跟谁一起" }, "verb1": { "zh": "去电影院" }, "verb2": { "zh": "看" }, "object": { "zh": "电影" } }, "end": "？", "es": "¿Con quién quieres ir al cine este fin de semana?" }, "distractors": ["吗"] },
+        { "sentence": { "slots": { "subject": { "zh": "我们" }, "time": { "zh": "星期天下午几点" }, "with": { "zh": "跟大卫一起" }, "verb1": { "zh": "去" }, "verb2": { "zh": "打" }, "object": { "zh": "篮球" } }, "end": "？", "es": "¿A qué hora vamos a jugar al baloncesto con David el domingo por la tarde?" }, "distractors": ["什么时候"] },
+        { "sentence": { "slots": { "subject": { "zh": "你" }, "adverb": { "zh": "为什么不" }, "aux": { "zh": "想" }, "with": { "zh": "跟我们一起" }, "verb1": { "zh": "去" }, "verb2": { "zh": "唱" }, "object": { "zh": "歌" } }, "end": "？", "es": "¿Por qué no quieres ir a cantar con nosotros?" }, "distractors": ["吗"] },
+        { "sentence": { "slots": { "time0": { "zh": "明天上午" }, "subject": { "zh": "安娜和小李" }, "adverb": { "zh": "都" }, "aux": { "zh": "要" }, "verb1": { "zh": "去书店" }, "verb2": { "zh": "买" }, "object": { "zh": "什么书" } }, "end": "？", "es": "¿Qué libros van a ir a comprar Ana y Xiao Li a la librería mañana por la mañana?" }, "distractors": ["哪"] },
+        { "sentence": { "slots": { "subject": { "zh": "你" }, "time": { "zh": "明天晚上" }, "adverb": { "zh": "是不是" }, "aux": { "zh": "要" }, "with": { "zh": "跟王老师一起" }, "verb1": { "zh": "去" }, "verb2": { "zh": "吃" }, "object": { "zh": "饺子" } }, "end": "？", "es": "¿Verdad que mañana por la noche vas a ir a comer jiaozi con la profesora Wang?" }, "distractors": ["吗"] },
+        { "sentence": { "slots": { "time0": { "zh": "星期六晚上" }, "subject": { "zh": "你" }, "aux": { "zh": "想" }, "with": { "zh": "跟谁一起" }, "verb1": { "zh": "上网" }, "verb2": { "zh": "看" }, "object": { "zh": "B站的视频" } }, "end": "？", "es": "¿Con quién quieres ver vídeos de Bilibili el sábado por la noche?" } }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "你为什么学汉语？", "py": "Nǐ wèishénme xué Hànyǔ?", "es": "¿Por qué estudias chino?" },
+        { "zh": "你今年多大？", "py": "Nǐ jīnnián duō dà?", "es": "¿Cuántos años tienes?" },
+        { "zh": "你是西班牙人吧？", "py": "Nǐ shì Xībānyá rén ba?", "es": "Eres español, ¿no?" },
+        { "zh": "你觉得这个电影怎么样？", "py": "Nǐ juéde zhège diànyǐng zěnmeyàng?", "es": "¿Qué te parece esta película?" },
+        { "zh": "没事儿！", "py": "Méi shìr!", "es": "¡No pasa nada!" }
+      ],
+      "respond": [
+        { "q": { "zh": "你为什么学汉语？", "py": "Nǐ wèishénme xué Hànyǔ?", "es": "¿Por qué estudias chino?" }, "model": { "zh": "我觉得汉语很有意思，也很有用。", "py": "Wǒ juéde Hànyǔ hěn yǒu yìsi, yě hěn yǒuyòng.", "es": "Creo que el chino es muy interesante y también útil." } },
+        { "q": { "zh": "你多高？", "py": "Nǐ duō gāo?", "es": "¿Cuánto mides?" }, "model": { "zh": "我一米七五。", "py": "Wǒ yì mǐ qīwǔ.", "es": "Mido un metro setenta y cinco." } },
+        { "q": { "zh": "对不起，我的问题太多了！", "py": "Duìbuqǐ, wǒ de wèntí tài duō le!", "es": "Perdona, ¡te hago demasiadas preguntas!" }, "model": { "zh": "没什么！你问吧。", "py": "Méi shénme! Nǐ wèn ba.", "es": "¡No es nada! Pregunta." } },
+        { "q": { "zh": "你是西班牙人吧？", "py": "Nǐ shì Xībānyá rén ba?", "es": "Eres español, ¿no?" }, "model": { "zh": "对，我是马德里人。", "py": "Duì, wǒ shì Mǎdélǐ rén.", "es": "Sí, soy de Madrid." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "La ficha de Hugo",
+      "text": "名字：雨果。哪国人：西班牙人。哪里人：马德里人。多大：二十五岁。多高：一米七五。爱好：听音乐、看电影、打篮球。为什么学汉语：他觉得汉语很有意思，也很有用。还有，他想认识很多中国朋友。",
+      "es": "Nombre: Hugo. Nacionalidad: española. Ciudad: Madrid. Edad: veinticinco años. Altura: un metro setenta y cinco. Aficiones: escuchar música, ver películas y jugar al baloncesto. Por qué estudia chino: le parece muy interesante y muy útil. Además, quiere conocer a muchos amigos chinos.",
+      "questions": [
+        { "q": "¿Cuánto mide Hugo?", "options": ["1,75 m", "1,80 m", "1,70 m"], "answer": 0 },
+        { "q": "¿Qué pregunta corresponde a «二十五岁»?", "options": ["你多大？", "你多高？", "你是哪里人？"], "answer": 0 },
+        { "q": "¿Qué añade Hugo con 还有?", "options": ["Quiere conocer a muchos amigos chinos", "Le gusta el baloncesto", "Es de Madrid"], "answer": 0 },
+        { "q": "¿Cuál de estas preguntas está MAL?", "options": ["你为什么学汉语吗？", "你为什么学汉语？", "你为什么学汉语啊？"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

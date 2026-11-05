@@ -1,0 +1,136 @@
+{
+  "id": "a1-u10-l5",
+  "title": "El rojo, el mío: el 的 sin nombre y 有的 / 一些",
+  "zh": "我要红的",
+  "goal": "Ahorrarte el nombre con 的 (红的, 我的, 大的), hablar de «algunos» con 有的 / 有些 / 一些 y construir frases largas con toda la unidad.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "有的", "pinyin": "yǒude", "es": "algunos, algunas (de un grupo)", "note": "Va al principio, delante del nombre: 有的衣服很好看，有的不好看." },
+    { "hanzi": "有些", "pinyin": "yǒuxiē", "es": "algunos, algunas", "note": "Casi igual que 有的: 有些学生戴眼镜." },
+    { "hanzi": "一些", "pinyin": "yìxiē", "es": "algunos, unos cuantos; un poco de", "note": "Va detrás del verbo: 我想买一些东西." },
+    { "hanzi": "有一些", "pinyin": "yǒu yìxiē", "es": "hay algunos; tener unos cuantos", "note": "有 + 一些: 我有一些书." },
+    { "hanzi": "手表", "pinyin": "shǒubiǎo", "es": "reloj (de pulsera)", "note": "Ojo: regalar un reloj de pared (钟 zhōng) suena como 送终 «acompañar en la muerte»; mejor no." },
+    { "hanzi": "帽子", "pinyin": "màozi", "es": "gorro, sombrero, gorra" },
+    { "hanzi": "眼镜", "pinyin": "yǎnjìng", "es": "gafas" },
+    { "hanzi": "戴", "pinyin": "dài", "es": "llevar puesto, ponerse (gafas, gorros, relojes, accesorios)", "note": "穿 para ropa y zapatos; 戴 para lo que se «coloca» encima: 戴眼镜, 戴帽子, 戴手表." }
+  ],
+  "extraVocab": ["帽子", "眼镜", "戴"],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "我要红的。", "py": "Wǒ yào hóng de.", "es": "Quiero el rojo." },
+        { "zh": "这本书是我的。", "py": "Zhè běn shū shì wǒ de.", "es": "Este libro es mío." },
+        { "zh": "有些学生戴眼镜。", "py": "Yǒuxiē xuésheng dài yǎnjìng.", "es": "Algunos estudiantes llevan gafas." }
+      ]
+    },
+    { "type": "vocab", "title": "«Algunos» y lo que llevamos puesto", "words": ["有的", "有些", "一些", "有一些", "手表", "帽子", "眼镜", "戴"] },
+    {
+      "type": "phonetics-drill",
+      "title": "El medio tercer tono: 眼镜, 有些",
+      "markdown": "El tercer tono «completo» (baja y sube) casi solo se oye **al final de la frase** o cuando se dice la palabra suelta. Delante de **1.º, 2.º, 4.º o neutro**, se dice solo **la parte baja**: un tono **grave y corto**, sin subir.\n\n- 眼镜 **yǎn**jìng: yǎn bajo + jìng cayendo.\n- 有些 **yǒu**xiē: yǒu bajo + xiē alto.\n- 我的 **wǒ** de, 有的 **yǒu**de: bajo + neutro.\n\nY recuerda la otra regla: delante de **otro tercero**, sube: 手表 → **shóu**biǎo.\n\nMuchos hispanohablantes hacen el tercer tono completo en todas partes y suena «cantarín»: mantenlo **abajo**.",
+      "items": [
+        { "audio": "眼镜", "prompt": "¿Cómo suena 眼 aquí?", "options": ["Bajo y corto, sin subir", "Baja y sube del todo", "Sube (segundo tono)"], "answer": 0, "explain": "Delante de cuarto tono: medio tercer tono." },
+        { "audio": "手表", "options": ["shóubiǎo", "shǒubiǎo con los dos completos", "shòubiǎo"], "answer": 0, "explain": "3+3: el primero sube." },
+        { "audio": "有些", "options": ["yǒuxiē", "yóuxiē", "yòuxiē"], "answer": 0, "explain": "Delante de primer tono: medio tercero, bajo." },
+        { "audio": "帽子", "options": ["màozi", "máozi", "mǎozi"], "answer": 0, "explain": "Cuarto tono + neutro." },
+        { "audio": "我的", "prompt": "¿Cambia 我?", "options": ["Se queda bajo (medio tercero)", "Sube a segundo", "Pasa a cuarto"], "answer": 0, "explain": "Delante de neutro, solo la parte baja." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["帽", "的"],
+      "mnemonics": {
+        "帽": "巾 (tela) + 冒 (cubrir la cabeza; dibujo de un gorro sobre un ojo): la tela que cubre la cabeza.",
+        "的": "白 (blanco, claro) + 勺 (pista de sonido): lo que se ve «claro», el blanco al que se apunta; hoy, la partícula que une y señala."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "红的, 我的, 大的: el 的 sin nombre",
+      "markdown": "Si ya se sabe de qué hablamos, el chino **quita el nombre y deja el 的**, como el español «el rojo», «el mío», «el grande»:\n\n| con nombre | sin nombre | español |\n|---|---|---|\n| 红色的杯子 | **红的** / 红色的 | el rojo |\n| 我的书 | **我的** | el mío |\n| 大的衣服 | **大的** | el grande |\n| 新的手表 | **新的** | el nuevo |\n\nEstos bloques con 的 funcionan como un nombre: pueden ser **objeto** (我要**红的**), **sujeto** (**白色的**很好看) o ir tras 是 (这本书是**我的**).\n\n**Algunos**:\n\n- **有的 / 有些** + nombre van **al principio** de la frase: **有的**衣服很好看，**有的**不好看 (unas sí, otras no).\n- **一些** va **detrás del verbo**, delante del nombre: 我想买**一些**东西. Sin 的: no *一些的书.\n\n**穿 o 戴**: 穿 para ropa y zapatos; **戴** para gafas, gorros, relojes y accesorios.",
+      "focus": ["subject", "object"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "verb1": { "zh": "要", "py": "yào" }, "object": { "zh": "红的", "py": "hóng de" } }, "end": "。", "es": "Quiero el rojo." },
+        { "slots": { "subject": { "zh": "这本书", "py": "zhè běn shū" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "我的", "py": "wǒ de" } }, "end": "。", "es": "Este libro es mío." },
+        { "slots": { "subject": { "zh": "白色的", "py": "báisè de" }, "adverb": { "zh": "很", "py": "hěn" }, "verb1": { "zh": "好看", "py": "hǎokàn" } }, "end": "。", "es": "El blanco es muy bonito." },
+        { "slots": { "subject": { "zh": "有的衣服", "py": "yǒude yīfu" }, "adverb": { "zh": "很", "py": "hěn" }, "verb1": { "zh": "好看", "py": "hǎokàn" } }, "end": "。", "es": "Algunas prendas son muy bonitas." },
+        { "slots": { "subject": { "zh": "有些学生", "py": "yǒuxiē xuésheng" }, "verb1": { "zh": "戴", "py": "dài" }, "object": { "zh": "眼镜", "py": "yǎnjìng" } }, "end": "。", "es": "Algunos estudiantes llevan gafas." },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "time": { "zh": "明天", "py": "míngtiān" }, "aux": { "zh": "想", "py": "xiǎng" }, "verb1": { "zh": "买", "py": "mǎi" }, "object": { "zh": "一些东西", "py": "yìxiē dōngxi" } }, "end": "。", "es": "Mañana quiero comprar algunas cosas.", "esOrder": [{ "text": "Mañana", "slot": "time" }, { "text": "(yo)", "slot": "subject" }, { "text": "quiero", "slot": "aux" }, { "text": "comprar", "slot": "verb1" }, { "text": "algunas cosas", "slot": "object" }] }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "不", "py": "bú" }, "verb1": { "zh": "要", "py": "yào" }, "object": { "zh": "黑的", "py": "hēi de" } }, "end": "。", "es": "No quiero el negro." },
+        { "slots": { "subject": { "zh": "那个帽子", "py": "nàge màozi" }, "adverb": { "zh": "不", "py": "bú" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "我的", "py": "wǒ de" } }, "end": "。", "es": "Ese gorro no es mío." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "要", "py": "yào" }, "object": { "zh": "红的还是白的", "py": "hóng de háishi bái de" } }, "end": "？", "es": "¿Quieres el rojo o el blanco?" },
+        { "slots": { "subject": { "zh": "哪个", "py": "nǎge" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "你的", "py": "nǐ de" } }, "end": "？", "es": "¿Cuál es el tuyo?" },
+        { "slots": { "subject": { "zh": "这儿", "py": "zhèr" }, "verb1": { "zh": "有没有", "py": "yǒu méiyǒu" }, "object": { "zh": "大的", "py": "dà de" } }, "end": "？", "es": "¿Hay alguno grande?" }
+      ],
+      "mistakes": [
+        { "wrong": "这是我书。", "right": "这是我的书。 / 这是我的。", "why": "Con cosas, el posesivo lleva 的; sin nombre, basta 我的." },
+        { "wrong": "我有的朋友戴眼镜。", "right": "有的朋友戴眼镜。", "why": "有的 va al principio de la frase, como «algunos» en sujeto." },
+        { "wrong": "他穿眼镜。", "right": "他戴眼镜。", "why": "Gafas, gorros y relojes van con 戴; 穿 es para ropa y zapatos." },
+        { "wrong": "我想买一些的书。", "right": "我想买一些书。", "why": "一些 se pega al nombre sin 的." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Un gorro y un reloj",
+      "lines": [
+        { "speaker": "卖东西的", "zh": "你好！你想买什么？", "py": "Nǐ hǎo! Nǐ xiǎng mǎi shénme?", "es": "¡Hola! ¿Qué quieres comprar?" },
+        { "speaker": "安娜", "zh": "我想买一个帽子。", "py": "Wǒ xiǎng mǎi yí ge màozi.", "es": "Quiero comprar un gorro." },
+        { "speaker": "卖东西的", "zh": "这些帽子都很好看。你要黑的还是白的？", "py": "Zhèxiē màozi dōu hěn hǎokàn. Nǐ yào hēi de háishi bái de?", "es": "Todos estos gorros son muy bonitos. ¿Quieres el negro o el blanco?" },
+        { "speaker": "安娜", "zh": "白的。有没有红的？", "py": "Bái de. Yǒu méiyǒu hóng de?", "es": "El blanco. ¿Hay alguno rojo?" },
+        { "speaker": "卖东西的", "zh": "红的没有，黄的和蓝的都有。", "py": "Hóng de méiyǒu, huáng de hé lán de dōu yǒu.", "es": "Rojos no hay; amarillos y azules, sí." },
+        { "speaker": "安娜", "zh": "好，我要黄的。雨果，你呢？", "py": "Hǎo, wǒ yào huáng de. Yǔguǒ, nǐ ne?", "es": "Vale, me llevo el amarillo. Hugo, ¿y tú?" },
+        { "speaker": "雨果", "zh": "我想看一些手表。这个黑的很好看。", "py": "Wǒ xiǎng kàn yìxiē shǒubiǎo. Zhège hēi de hěn hǎokàn.", "es": "Yo quiero ver algunos relojes. Este negro es muy bonito." },
+        { "speaker": "卖东西的", "zh": "这个手表很新，有的人很爱戴。", "py": "Zhège shǒubiǎo hěn xīn, yǒude rén hěn ài dài.", "es": "Es un modelo muy nuevo; a algunas personas les encanta llevarlo." },
+        { "speaker": "雨果", "zh": "好，我要黑的。安娜，你戴这个帽子很好看！", "py": "Hǎo, wǒ yào hēi de. Ānnà, nǐ dài zhège màozi hěn hǎokàn!", "es": "Vale, me llevo el negro. Ana, ¡te queda muy bien ese gorro!" }
+      ],
+      "notes": "Fíjate en 红的没有: el chino suele poner primero aquello de lo que habla (los rojos) y luego lo que dice de ello (no hay). Es muy habitual en conversación."
+    },
+    { "type": "exercises", "count": 16, "bank": ["g-de", "g-measure-words", "g-demonstratives", "u06"] },
+    {
+      "type": "sentence-builder",
+      "title": "Construye la frase completa",
+      "items": [
+        { "sentence": { "slots": { "time0": { "zh": "明天下午" }, "subject": { "zh": "我和安娜" }, "adverb": { "zh": "都" }, "aux": { "zh": "想" }, "verb1": { "zh": "去" }, "verb2": { "zh": "买" }, "object": { "zh": "一些很好看的衣服" } }, "end": "。", "es": "Mañana por la tarde Ana y yo queremos ir a comprar algo de ropa muy bonita." }, "distractors": ["一些的"] },
+        { "sentence": { "slots": { "subject": { "zh": "有些学生" }, "time": { "zh": "今天" }, "adverb": { "zh": "也" }, "verb1": { "zh": "戴" }, "object": { "zh": "黄色的帽子" } }, "end": "。", "es": "Hoy algunos estudiantes también llevan gorro amarillo." }, "distractors": ["穿"] },
+        { "sentence": { "slots": { "subject": { "zh": "雨果" }, "time": { "zh": "晚上" }, "aux": { "zh": "要" }, "verb1": { "zh": "穿" }, "object": { "zh": "那双很新的黑色的鞋" } }, "end": "。", "es": "Esta noche Hugo se va a poner esos zapatos negros tan nuevos." }, "distractors": ["戴"] },
+        { "sentence": { "slots": { "subject": { "zh": "那些书" }, "adverb": { "zh": "不都" }, "verb1": { "zh": "是" }, "object": { "zh": "王老师的" } }, "end": "。", "es": "No todos esos libros son de la profesora Wang." }, "distractors": ["那些本"] },
+        { "sentence": { "slots": { "subject": { "zh": "你" }, "time": { "zh": "明天" }, "aux": { "zh": "想" }, "verb1": { "zh": "戴" }, "object": { "zh": "红色的手表还是白色的手表" } }, "end": "？", "es": "¿Mañana te quieres poner el reloj rojo o el blanco?" }, "distractors": ["吗"] },
+        { "sentence": { "slots": { "time0": { "zh": "星期六上午" }, "subject": { "zh": "小李" }, "adverb": { "zh": "也很" }, "aux": { "zh": "想" }, "verb1": { "zh": "去" }, "verb2": { "zh": "买" }, "object": { "zh": "一台很新的电脑和两本书" } }, "end": "。", "es": "El sábado por la mañana Xiao Li también tiene muchas ganas de ir a comprar un ordenador muy nuevo y dos libros." }, "distractors": ["两个"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "我要红的。", "py": "Wǒ yào hóng de.", "es": "Quiero el rojo." },
+        { "zh": "这本书是我的。", "py": "Zhè běn shū shì wǒ de.", "es": "Este libro es mío." },
+        { "zh": "有的衣服很好看，有的不好看。", "py": "Yǒude yīfu hěn hǎokàn, yǒude bù hǎokàn.", "es": "Algunas prendas son muy bonitas y otras no." },
+        { "zh": "我想买一些东西。", "py": "Wǒ xiǎng mǎi yìxiē dōngxi.", "es": "Quiero comprar algunas cosas." },
+        { "zh": "他戴眼镜。", "py": "Tā dài yǎnjìng.", "es": "Él lleva gafas." }
+      ],
+      "respond": [
+        { "q": { "zh": "你要黑的还是白的？", "py": "Nǐ yào hēi de háishi bái de?", "es": "¿Quieres el negro o el blanco?" }, "model": { "zh": "我要白的。", "py": "Wǒ yào bái de.", "es": "El blanco." } },
+        { "q": { "zh": "哪个手表是你的？", "py": "Nǎge shǒubiǎo shì nǐ de?", "es": "¿Qué reloj es el tuyo?" }, "model": { "zh": "这个黑的是我的。", "py": "Zhège hēi de shì wǒ de.", "es": "Este negro es el mío." } },
+        { "q": { "zh": "你戴眼镜吗？", "py": "Nǐ dài yǎnjìng ma?", "es": "¿Llevas gafas?" }, "model": { "zh": "不戴，我不戴眼镜。", "py": "Bú dài, wǒ bú dài yǎnjìng.", "es": "No, no llevo gafas." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Los compañeros de clase",
+      "text": "雨果有很多同学。有的同学戴眼镜，有的不戴。有些同学爱穿黑色的衣服，有些爱穿白色的。安娜的帽子是黄的，大卫的帽子是蓝的。雨果的手表是黑的，小李的是白的。你的呢？",
+      "es": "Hugo tiene muchos compañeros de clase. Algunos llevan gafas y otros no. A algunos les encanta vestir de negro y a otros, de blanco. El gorro de Ana es amarillo y el de David, azul. El reloj de Hugo es negro y el de Xiao Li, blanco. ¿Y el tuyo?",
+      "questions": [
+        { "q": "¿De qué color es el gorro de David?", "options": ["蓝的", "黄的", "白的"], "answer": 0 },
+        { "q": "¿Qué significa 小李的是白的?", "options": ["El (reloj) de Xiao Li es blanco", "Xiao Li es blanco", "Xiao Li quiere el blanco"], "answer": 0 },
+        { "q": "¿Llevan gafas todos los compañeros?", "options": ["No: 有的戴，有的不戴", "Sí, todos", "Nadie"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

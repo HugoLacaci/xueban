@@ -1,0 +1,131 @@
+{
+  "id": "a1-u03-l4",
+  "title": "Contar personas: 个 y 口; chicos y chicas",
+  "zh": "一个男孩儿，一个女孩儿",
+  "goal": "Contar personas con el clasificador 个 (y familia con 口) y decir si son chicos, chicas, hombres o mujeres.",
+  "minutes": 14,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "个", "pinyin": "gè", "es": "(clasificador general: personas y muchas cosas)", "note": "Casi siempre neutro: 一个 yí ge, 两个 liǎng ge." },
+    { "hanzi": "男", "pinyin": "nán", "es": "hombre, varón (delante de un nombre)", "note": "男学生, 男老师, 男朋友 (novio). En los baños: 男." },
+    { "hanzi": "女", "pinyin": "nǚ", "es": "mujer (delante de un nombre)", "note": "女学生, 女老师, 女朋友 (novia). En los baños: 女." },
+    { "hanzi": "男人", "pinyin": "nánrén", "es": "hombre" },
+    { "hanzi": "女人", "pinyin": "nǚrén", "es": "mujer" },
+    { "hanzi": "男孩儿", "pinyin": "nánháir", "es": "niño, chico" },
+    { "hanzi": "女孩儿", "pinyin": "nǚháir", "es": "niña, chica" },
+    { "hanzi": "小孩儿", "pinyin": "xiǎoháir", "es": "niño pequeño, crío", "note": "Más coloquial que 孩子. En el sur se dice también 小孩, sin 儿." }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "我有两个孩子：一个男孩儿，一个女孩儿。", "py": "Wǒ yǒu liǎng ge háizi: yí ge nánháir, yí ge nǚháir.", "es": "Tengo dos hijos: un niño y una niña." },
+        { "zh": "我们班有五个男学生，七个女学生。", "py": "Wǒmen bān yǒu wǔ ge nán xuésheng, qī ge nǚ xuésheng.", "es": "En nuestra clase hay cinco chicos y siete chicas." },
+        { "zh": "你有几个孩子？", "py": "Nǐ yǒu jǐ ge háizi?", "es": "¿Cuántos hijos tienes?" }
+      ]
+    },
+    { "type": "vocab", "title": "Personas", "words": ["个", "男", "女", "男人", "女人", "男孩儿", "女孩儿", "小孩儿"] },
+    {
+      "type": "phonetics-drill",
+      "title": "La ü de 女 y la -r de 孩儿",
+      "markdown": "**女 nǚ**: pon los labios como para silbar una «u» y di una **«i»** sin moverlos. Es la *ü* francesa o alemana. Con *n* y *l* se escriben los puntos (nǚ, lǜ) para no confundirla con *nu*, *lu*.\n\n- 女 **nǚ** (mujer) ≠ 努 *nǔ* (esforzarse)\n\n**Erhua**: en el norte (y en la lengua estándar) muchas palabras terminan en **儿**, que no se dice como sílaba aparte, sino como una **-r** que dobla la lengua al final: 孩儿 *háir*, 哪儿 *nǎr*. En Shanghái y el sur se oye menos: dirán 小孩 o 男孩.",
+      "items": [
+        { "audio": "女", "options": ["nǚ", "nǔ", "nǐ"], "answer": 0, "explain": "ü: labios de «u», lengua de «i»." },
+        { "audio": "女人", "options": ["nǚrén", "nǔrén", "lǚrén"], "answer": 0, "explain": "nǚ (3.º, medio tercero) + rén (2.º)." },
+        { "audio": "男孩儿", "options": ["nánháir", "nánhái ér", "lánháir"], "answer": 0, "explain": "孩儿 forma una sola sílaba: háir." },
+        { "audio": "男", "options": ["nán", "náng", "lán"], "answer": 0, "explain": "n inicial, 2.º tono y final -n (lengua arriba)." },
+        { "audio": "一个", "options": ["yí ge", "yī gè", "yì ge"], "answer": 0, "explain": "个 es en origen 4.º tono, así que 一 pasa a yí, aunque 个 se diga neutro." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["男", "女"],
+      "mnemonics": {
+        "男": "田 (campo de arroz) + 力 (fuerza, un arado): en la China antigua, el que ponía la fuerza en el campo.",
+        "女": "Dibujo de una mujer arrodillada con los brazos cruzados. Es el radical de 妈, 姐, 妹, 奶, 她, 好 y 姓."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "Número + clasificador + nombre, dentro del objeto",
+      "markdown": "Entre un **número** (o 几, o 两) y el **nombre** siempre va un **clasificador**. Los tres juntos ocupan el hueco del **objeto**:\n\n**número + clasificador + nombre** → 两**个**孩子, 五**个**男学生.\n\n- **个** es el general: personas, amigos, alumnos, preguntas, países…\n- **口** solo para los miembros de **una familia** cuando cuentas cuántos sois: 我家有四**口**人. Para contar hijos, hermanos o amigos, 个: 两**个**孩子.\n\n**男 / 女** van delante del nombre, sin 的: **男**学生, **女**老师. En la negativa no hace falta el número: 我没有孩子.",
+      "focus": ["object"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "张先生", "py": "Zhāng xiānsheng" }, "verb1": { "zh": "有", "py": "yǒu" }, "object": { "zh": "两个孩子", "py": "liǎng ge háizi", "es": "dos + CL + hijos" } }, "end": "。", "es": "El señor Zhang tiene dos hijos.", "esOrder": [{ "text": "El señor Zhang", "slot": "subject" }, { "text": "tiene", "slot": "verb1" }, { "text": "dos hijos", "slot": "object" }] },
+        { "slots": { "subject": { "zh": "我们班", "py": "wǒmen bān" }, "verb1": { "zh": "有", "py": "yǒu" }, "object": { "zh": "七个女学生", "py": "qī ge nǚ xuésheng" } }, "end": "。", "es": "En nuestra clase hay siete chicas." },
+        { "slots": { "subject": { "zh": "我家", "py": "wǒ jiā" }, "verb1": { "zh": "有", "py": "yǒu" }, "object": { "zh": "四口人", "py": "sì kǒu rén" } }, "end": "。", "es": "Somos cuatro en mi familia." },
+        { "slots": { "subject": { "zh": "王老师的孩子", "py": "Wáng lǎoshī de háizi" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "男孩儿", "py": "nánháir" } }, "end": "。", "es": "El hijo de la profesora Wang es un niño." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "没", "py": "méi" }, "verb1": { "zh": "有", "py": "yǒu" }, "object": { "zh": "孩子", "py": "háizi" } }, "end": "。", "es": "No tengo hijos." },
+        { "slots": { "subject": { "zh": "她", "py": "tā" }, "adverb": { "zh": "不", "py": "bú" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "女孩儿", "py": "nǚháir" } }, "end": "。", "es": "No es una niña." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "有", "py": "yǒu" }, "object": { "zh": "几个孩子", "py": "jǐ ge háizi" } }, "end": "？", "es": "¿Cuántos hijos tienes?" },
+        { "slots": { "subject": { "zh": "你们班", "py": "nǐmen bān" }, "verb1": { "zh": "有", "py": "yǒu" }, "object": { "zh": "几个男学生", "py": "jǐ ge nán xuésheng" } }, "end": "？", "es": "¿Cuántos chicos hay en vuestra clase?" }
+      ],
+      "mistakes": [
+        { "wrong": "我有两孩子。", "right": "我有两个孩子。", "why": "Entre el número y el nombre falta el clasificador." },
+        { "wrong": "我有三口朋友。", "right": "我有三个朋友。", "why": "口 solo cuenta miembros de la familia (几口人); para amigos, 个." },
+        { "wrong": "我家有四个口人。", "right": "我家有四口人。", "why": "口 ya es el clasificador: no se ponen dos." },
+        { "wrong": "我们班有五个学生男。", "right": "我们班有五个男学生。", "why": "男 / 女 van delante del nombre, como un adjetivo: 男学生." }
+      ]
+    },
+    {
+      "type": "explain",
+      "title": "孩子, 小孩儿, 男孩儿…",
+      "markdown": "- **孩子** es «niño» y también «hijo» (de cualquier edad): 我有两个孩子 = tengo dos hijos.\n- **小孩儿** es un «crío» pequeño, más coloquial; nunca «hijo» adulto.\n- **男孩儿 / 女孩儿** son «niño / niña», y entre jóvenes también «chico / chica»: 那个女孩儿是我同学.\n- **男人 / 女人** son «hombre / mujer» adultos, en general. Para hablar de alumnos, se dice **男学生 / 女学生** (o 男生 / 女生).\n- **男 / 女** solos los verás en las puertas de los baños y en los formularios (性别: 男 / 女 = sexo: H / M).\n\nY un detalle útil: **个** también cuenta cosas (两个问题, 三个汉字). Cuando no sepas el clasificador de algo, 个 es el comodín que todo el mundo entiende."
+    },
+    {
+      "type": "dialogue",
+      "title": "Los hijos del señor Zhang",
+      "lines": [
+        { "speaker": "雨果", "zh": "张先生，您有孩子吗？", "py": "Zhāng xiānsheng, nín yǒu háizi ma?", "es": "Señor Zhang, ¿tiene hijos?" },
+        { "speaker": "张先生", "zh": "有，我有两个孩子：一个男孩儿，一个女孩儿。", "py": "Yǒu, wǒ yǒu liǎng ge háizi: yí ge nánháir, yí ge nǚháir.", "es": "Sí, tengo dos: un niño y una niña." },
+        { "speaker": "雨果", "zh": "他们几岁？", "py": "Tāmen jǐ suì?", "es": "¿Cuántos años tienen?" },
+        { "speaker": "张先生", "zh": "男孩儿十岁，女孩儿六岁。你呢？你有孩子吗？", "py": "Nánháir shí suì, nǚháir liù suì. Nǐ ne? Nǐ yǒu háizi ma?", "es": "El niño tiene diez y la niña seis. ¿Y tú? ¿Tienes hijos?" },
+        { "speaker": "雨果", "zh": "没有！我是学生，我没有孩子。", "py": "Méiyǒu! Wǒ shì xuésheng, wǒ méiyǒu háizi.", "es": "¡No! Soy estudiante: no tengo hijos." },
+        { "speaker": "张先生", "zh": "你们班有几个女学生？", "py": "Nǐmen bān yǒu jǐ ge nǚ xuésheng?", "es": "¿Cuántas chicas hay en vuestra clase?" },
+        { "speaker": "雨果", "zh": "我们班有十二个学生：五个男学生，七个女学生。", "py": "Wǒmen bān yǒu shí'èr ge xuésheng: wǔ ge nán xuésheng, qī ge nǚ xuésheng.", "es": "En nuestra clase somos doce: cinco chicos y siete chicas." },
+        { "speaker": "张先生", "zh": "你们老师是男老师吗？", "py": "Nǐmen lǎoshī shì nán lǎoshī ma?", "es": "¿Vuestro profesor es un hombre?" },
+        { "speaker": "雨果", "zh": "不是，王老师是女老师。", "py": "Bú shì, Wáng lǎoshī shì nǚ lǎoshī.", "es": "No, la profesora Wang es una mujer." }
+      ],
+      "notes": "Fíjate en que «tener hijos» se dice 有孩子 y la respuesta corta es 有 / 没有. En chino no hay género gramatical: 老师 vale para profesor y profesora; si hace falta precisar, 男老师 / 女老师."
+    },
+    { "type": "exercises", "count": 15, "bank": ["g-measure-words", "g-you", "g-numbers", "u03"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "我" }, "verb1": { "zh": "有" }, "object": { "zh": "两个孩子" } }, "end": "。", "es": "Tengo dos hijos." }, "distractors": ["口", "二"] },
+        { "sentence": { "slots": { "subject": { "zh": "你" }, "verb1": { "zh": "有" }, "object": { "zh": "几个孩子" } }, "end": "？", "es": "¿Cuántos hijos tienes?" }, "distractors": ["吗"] },
+        { "sentence": { "slots": { "subject": { "zh": "我们班" }, "verb1": { "zh": "有" }, "object": { "zh": "五个男学生" } }, "end": "。", "es": "En nuestra clase hay cinco chicos." }, "distractors": ["五口"] },
+        { "sentence": { "slots": { "subject": { "zh": "张先生的女孩儿" }, "adverb": { "zh": "也" }, "verb1": { "zh": "有" }, "object": { "zh": "两个中国朋友" } }, "end": "。", "es": "La niña del señor Zhang también tiene dos amigos chinos." }, "distractors": ["二", "口"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "我有两个孩子。", "py": "Wǒ yǒu liǎng ge háizi.", "es": "Tengo dos hijos." },
+        { "zh": "一个男孩儿，一个女孩儿。", "py": "Yí ge nánháir, yí ge nǚháir.", "es": "Un niño y una niña." },
+        { "zh": "我们班有七个女学生。", "py": "Wǒmen bān yǒu qī ge nǚ xuésheng.", "es": "En nuestra clase hay siete chicas." }
+      ],
+      "respond": [
+        { "q": { "zh": "你有孩子吗？", "py": "Nǐ yǒu háizi ma?", "es": "¿Tienes hijos?" }, "model": { "zh": "没有，我没有孩子。", "py": "Méiyǒu, wǒ méiyǒu háizi.", "es": "No, no tengo hijos." } },
+        { "q": { "zh": "你们班有几个男学生？", "py": "Nǐmen bān yǒu jǐ ge nán xuésheng?", "es": "¿Cuántos chicos hay en vuestra clase?" }, "model": { "zh": "我们班有五个男学生。", "py": "Wǒmen bān yǒu wǔ ge nán xuésheng.", "es": "En nuestra clase hay cinco chicos." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "El grupo de WeChat de la clase",
+      "text": "我们班有十二个学生：五个男学生，七个女学生。我们有一个女老师，王老师。王老师有一个孩子，他是男孩儿，八岁。张先生有两个孩子，一个男孩儿，一个女孩儿。两个小孩儿有微信吗？没有！",
+      "es": "En nuestra clase hay doce alumnos: cinco chicos y siete chicas. Tenemos una profesora, la profesora Wang. La profesora Wang tiene un hijo: es un niño de ocho años. El señor Zhang tiene dos hijos, un niño y una niña. ¿Los dos críos tienen WeChat? ¡No!",
+      "questions": [
+        { "q": "¿Cuántas chicas hay en la clase?", "options": ["7", "5", "12"], "answer": 0 },
+        { "q": "¿Cuántos años tiene el hijo de la profesora Wang?", "options": ["8", "10", "6"], "answer": 0 },
+        { "q": "¿Qué clasificador se usa para contar hijos?", "options": ["个", "口", "岁"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

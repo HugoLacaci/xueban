@@ -1,0 +1,139 @@
+{
+  "id": "b1-u08-l4",
+  "title": "Según los datos: 根据, 一般来说, 是…的 y 大概 / 差不多 / 几乎",
+  "zh": "根据调查",
+  "goal": "Apoyar una opinión en datos con 根据 y 一般来说, reforzarla con 是…的 y matizar cantidades con 大概, 差不多 y 几乎.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "根据", "pinyin": "gēnjù", "es": "según, basándose en; base", "note": "根据 + fuente (datos, normas, una encuesta), no + persona: 根据调查. Fuera del HSK 3 (nivel 4)." },
+    { "hanzi": "几乎", "pinyin": "jīhū", "es": "casi", "note": "Muy frecuente con 都 y 没有: 几乎都用, 几乎没有人. Fuera del HSK 3 (nivel 4)." },
+    { "hanzi": "大概", "pinyin": "dàgài", "es": "probablemente; más o menos, aproximadamente", "note": "他大概不来了 · 大概要半个小时." },
+    { "hanzi": "据说", "pinyin": "jùshuō", "es": "dicen que, según dicen", "note": "Al principio de la frase: 据说，… (no dices quién)." },
+    { "hanzi": "事实", "pinyin": "shìshí", "es": "hecho, realidad" },
+    { "hanzi": "事实上", "pinyin": "shìshí shang", "es": "de hecho, en realidad" },
+    { "hanzi": "实际上", "pinyin": "shíjì shang", "es": "en realidad, en la práctica", "note": "Corrige una apariencia: 看上去很难，实际上… (= 事实上)." },
+    { "hanzi": "基本上", "pinyin": "jīběn shang", "es": "básicamente, en general" },
+    { "hanzi": "显然", "pinyin": "xiǎnrán", "es": "evidentemente, está claro que" },
+    { "hanzi": "表明", "pinyin": "biǎomíng", "es": "mostrar, indicar (datos, hechos)", "note": "调查表明… = la encuesta muestra que…" },
+    { "hanzi": "可靠", "pinyin": "kěkào", "es": "fiable", "note": "这个消息不太可靠 = esta noticia no es muy fiable." },
+    { "hanzi": "判断", "pinyin": "pànduàn", "es": "juzgar, determinar; juicio" },
+    { "hanzi": "必然", "pinyin": "bìrán", "es": "inevitable, necesariamente" }
+  ],
+  "extraVocab": ["根据", "几乎"],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "根据这个调查，年轻人几乎都用手机付钱。", "py": "Gēnjù zhège diàochá, niánqīngrén jīhū dōu yòng shǒujī fù qián.", "es": "Según esta encuesta, casi todos los jóvenes pagan con el móvil." },
+        { "zh": "一般来说，外卖半个小时就到了。", "py": "Yìbān lái shuō, wàimài bàn ge xiǎoshí jiù dào le.", "es": "Por lo general, la comida a domicilio llega en media hora." },
+        { "zh": "这个问题其实是很容易的。", "py": "Zhège wèntí qíshí shì hěn róngyì de.", "es": "En realidad, este problema es facilísimo." }
+      ]
+    },
+    { "type": "vocab", "title": "Datos, hechos y matices", "words": ["根据", "几乎", "大概", "据说", "事实", "事实上", "实际上", "基本上", "显然", "表明", "可靠", "判断", "必然"] },
+    {
+      "type": "phonetics-drill",
+      "title": "一 en 一般来说, 不 neutro en 差不多 y el énfasis de 是…的",
+      "markdown": "- **一般来说 yìbān lái shuō**: 一 delante de primer tono pasa a **cuarto** (yì).\n- **差不多 chàbuduō**: 不 en medio de la palabra es **neutro**; la palabra suena casi como *chà-bu-duō*, con 多 alto al final.\n- **几乎 jīhū**: dos primeros tonos, **altos y planos**; no lo confundas con 几 *jǐ* («cuántos»): aquí es *jī*.\n- **据说 jùshuō**: tras *j*, la *u* es en realidad **ü** (labios redondos).\n- **Énfasis de 是…的**: en 这个问题是很容易的, el **是** se pronuncia más fuerte: es lo que convierte la frase en una opinión convencida («es que es fácil, de verdad»).",
+      "items": [
+        { "audio": "一般来说", "options": ["yìbān lái shuō", "yībān lái shuō", "yíbān lái shuō"], "answer": 0, "explain": "一 + primer tono → yì." },
+        { "audio": "差不多", "options": ["chàbuduō", "chàbùduō", "chābuduō"], "answer": 0, "explain": "不 neutro en medio de la palabra." },
+        { "audio": "几乎", "options": ["jīhū", "jǐhū", "jīhú"], "answer": 0, "explain": "几 de «casi» es jī, primer tono." },
+        { "audio": "据说", "options": ["jùshuō", "jìshuō", "zhùshuō"], "answer": 0, "explain": "ju = jü: labios redondos." },
+        { "audio": "这个问题其实是很容易的。", "prompt": "¿Qué palabra lleva el énfasis?", "options": ["是", "这个", "的"], "answer": 0, "explain": "El 是 de opinión se acentúa: «es que es fácil»." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["根", "据"],
+      "mnemonics": {
+        "根": "木 (árbol) + 艮 (gèn, da el sonido): lo que sostiene el árbol bajo tierra, la raíz. 根本 = «de raíz, en absoluto».",
+        "据": "扌 (mano) + 居 (residir, estar asentado): apoyar la mano en algo firme. 根据 = raíz + apoyo: «basarse en»; 据说 = «basándome en lo que se dice»."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "Opinar con datos: 根据, 一般来说, 是…的, 大概 / 差不多 / 几乎",
+      "markdown": "**Marcos de fuente** (hueco *Tiempo inicial*, con coma, como en la lección 1):\n\n| Marco | Significa |\n|---|---|\n| **根据** + datos / normas / encuesta | según… |\n| **一般来说** | por lo general |\n| **据说** | dicen que… |\n| **事实上 / 实际上** | en realidad (corrige lo que parece) |\n| **显然** / **基本上** | evidentemente / básicamente |\n\n- **根据** va con una **fuente**, no con una persona: *根据我* ✗ → **在我看来** / **我觉得**.\n\n**是…的 de opinión**: 是 + adjetivo + **的** al final **refuerza** lo que piensas (tono convencido, explicativo): 这个问题**是**很容易**的**. En el esqueleto: 是 (+ grado) en *Adverbios* y 的 en *Partícula*. No es el 是…的 de A2 (cuándo, dónde, cómo pasó algo).\n\n**Matizar** (todos en *Adverbios*):\n- **大概**: probablemente / aproximadamente (大概要半个小时).\n- **差不多**: más o menos, casi (差不多有二十个人; también adjetivo: 差不多了 «ya casi está»).\n- **几乎**: casi (al límite), sobre todo con **都** o **没**: 几乎**都**用手机, 几乎**没**来.",
+      "focus": ["time0", "adverb"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "time0": { "zh": "根据这个调查，", "py": "gēnjù zhège diàochá," }, "subject": { "zh": "中国的年轻人", "py": "Zhōngguó de niánqīngrén" }, "adverb": { "zh": "几乎都", "py": "jīhū dōu" }, "verb1": { "zh": "用", "py": "yòng" }, "object": { "zh": "手机付钱", "py": "shǒujī fù qián" } }, "end": "。", "es": "Según esta encuesta, casi todos los jóvenes chinos pagan con el móvil.", "esOrder": [{ "text": "Según esta encuesta,", "slot": "time0" }, { "text": "casi todos", "slot": "adverb" }, { "text": "los jóvenes chinos", "slot": "subject" }, { "text": "pagan", "slot": "verb1" }, { "text": "con el móvil", "slot": "object" }] },
+        { "slots": { "time0": { "zh": "一般来说，", "py": "yìbān lái shuō," }, "subject": { "zh": "中国人", "py": "Zhōngguórén" }, "time": { "zh": "中午十二点", "py": "zhōngwǔ shí'èr diǎn" }, "adverb": { "zh": "就", "py": "jiù" }, "verb1": { "zh": "吃饭", "py": "chīfàn" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Por lo general, los chinos comen ya a las doce del mediodía." },
+        { "slots": { "subject": { "zh": "这个问题", "py": "zhège wèntí" }, "adverb": { "zh": "其实是很", "py": "qíshí shì hěn" }, "verb1": { "zh": "容易", "py": "róngyì" }, "particle": { "zh": "的", "py": "de" } }, "end": "。", "es": "En realidad, este problema es facilísimo." },
+        { "slots": { "time0": { "zh": "据说，", "py": "jùshuō," }, "subject": { "zh": "这家饭馆的菜", "py": "zhè jiā fànguǎn de cài" }, "adverb": { "zh": "非常", "py": "fēicháng" }, "verb1": { "zh": "好吃", "py": "hǎochī" } }, "end": "。", "es": "Dicen que la comida de este restaurante está buenísima." },
+        { "slots": { "subject": { "zh": "我们班", "py": "wǒmen bān" }, "adverb": { "zh": "差不多", "py": "chàbuduō" }, "verb1": { "zh": "有", "py": "yǒu" }, "object": { "zh": "二十个学生", "py": "èrshí ge xuésheng" } }, "end": "。", "es": "En nuestra clase hay unos veinte estudiantes." },
+        { "slots": { "subject": { "zh": "这些数字", "py": "zhèxiē shùzì" }, "adverb": { "zh": "显然", "py": "xiǎnrán" }, "verb1": { "zh": "表明", "py": "biǎomíng" }, "object": { "zh": "学汉语的人越来越多了", "py": "xué Hànyǔ de rén yuèláiyuè duō le" } }, "end": "。", "es": "Estas cifras muestran claramente que cada vez hay más gente que estudia chino." },
+        { "slots": { "subject": { "zh": "外卖", "py": "wàimài" }, "adverb": { "zh": "大概", "py": "dàgài" }, "verb1": { "zh": "要", "py": "yào" }, "object": { "zh": "半个小时", "py": "bàn ge xiǎoshí" } }, "end": "。", "es": "La comida a domicilio tarda más o menos media hora." }
+      ],
+      "negative": [
+        { "slots": { "time0": { "zh": "事实上，", "py": "shìshí shang," }, "subject": { "zh": "这个消息", "py": "zhège xiāoxi" }, "adverb": { "zh": "并不", "py": "bìng bù" }, "verb1": { "zh": "可靠", "py": "kěkào" } }, "end": "。", "es": "En realidad, esta noticia no es nada fiable." },
+        { "slots": { "subject": { "zh": "他", "py": "tā" }, "time": { "zh": "这个学期", "py": "zhège xuéqī" }, "adverb": { "zh": "几乎没", "py": "jīhū méi" }, "verb1": { "zh": "来", "py": "lái" }, "verb2": { "zh": "上课", "py": "shàngkè" } }, "end": "。", "es": "Este cuatrimestre casi no ha venido a clase." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "这个消息", "py": "zhège xiāoxi" }, "adverb": { "zh": "是不是", "py": "shì bu shì" }, "verb1": { "zh": "可靠", "py": "kěkào" } }, "end": "？", "es": "¿Es fiable esta noticia?" },
+        { "slots": { "subject": { "zh": "从这儿到机场", "py": "cóng zhèr dào jīchǎng" }, "adverb": { "zh": "大概", "py": "dàgài" }, "verb1": { "zh": "要", "py": "yào" }, "object": { "zh": "多长时间", "py": "duō cháng shíjiān" } }, "end": "？", "es": "¿Cuánto se tarda más o menos de aquí al aeropuerto?" }
+      ],
+      "mistakes": [
+        { "wrong": "根据我，这个消息不可靠。", "right": "在我看来，这个消息不可靠。 / 我觉得这个消息不可靠。", "why": "根据 va con una fuente (datos, normas, encuesta), no con una persona." },
+        { "wrong": "这个问题是很容易。", "right": "这个问题是很容易的。", "why": "El 是 de opinión pide 的 al final; sin 的, quita el 是: 这个问题很容易." },
+        { "wrong": "年轻人几乎用手机付钱。", "right": "年轻人几乎都用手机付钱。", "why": "Con «casi todos», 几乎 va con 都 delante del verbo." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Un trabajo del máster con datos",
+      "lines": [
+        { "speaker": "安娜", "zh": "雨果，我们的论文写到哪儿了？", "py": "Yǔguǒ, wǒmen de lùnwén xiě dào nǎr le?", "es": "Hugo, ¿por dónde vamos con el trabajo?" },
+        { "speaker": "雨果", "zh": "基本上写完了，还差一个调查。", "py": "Jīběn shang xiě wán le, hái chà yí ge diàochá.", "es": "Básicamente está terminado; solo falta una encuesta." },
+        { "speaker": "安娜", "zh": "我在网上看到一个：根据这个调查，中国的年轻人几乎都点外卖。", "py": "Wǒ zài wǎngshàng kàndào yí ge: gēnjù zhège diàochá, Zhōngguó de niánqīngrén jīhū dōu diǎn wàimài.", "es": "He visto una en internet: según esa encuesta, casi todos los jóvenes chinos piden comida a domicilio." },
+        { "speaker": "雨果", "zh": "这个调查可靠吗？是谁做的？", "py": "Zhège diàochá kěkào ma? Shì shéi zuò de?", "es": "¿Es fiable esa encuesta? ¿Quién la ha hecho?" },
+        { "speaker": "安娜", "zh": "我不太确定。据说是一家外卖公司做的。", "py": "Wǒ bú tài quèdìng. Jùshuō shì yì jiā wàimài gōngsī zuò de.", "es": "No estoy muy segura. Dicen que la hizo una empresa de comida a domicilio." },
+        { "speaker": "雨果", "zh": "那就显然不太客观了。我们要自己判断。", "py": "Nà jiù xiǎnrán bú tài kèguān le. Wǒmen yào zìjǐ pànduàn.", "es": "Entonces está claro que no es muy objetiva. Tenemos que juzgarlo nosotros." },
+        { "speaker": "安娜", "zh": "事实上，我们班的同学差不多每天都点外卖。", "py": "Shìshí shang, wǒmen bān de tóngxué chàbuduō měi tiān dōu diǎn wàimài.", "es": "De hecho, en nuestra clase los compañeros piden comida casi todos los días." },
+        { "speaker": "雨果", "zh": "对，这是事实。我们可以自己问问大家。", "py": "Duì, zhè shì shìshí. Wǒmen kěyǐ zìjǐ wènwen dàjiā.", "es": "Sí, eso es un hecho. Podemos preguntar nosotros a todo el mundo." },
+        { "speaker": "安娜", "zh": "好主意。一般来说，问二十个人大概要一个小时。", "py": "Hǎo zhǔyi. Yìbān lái shuō, wèn èrshí ge rén dàgài yào yí ge xiǎoshí.", "es": "Buena idea. Normalmente, preguntar a veinte personas lleva más o menos una hora." },
+        { "speaker": "雨果", "zh": "实际上，用微信问会快得多。", "py": "Shíjì shang, yòng Wēixìn wèn huì kuài de duō.", "es": "En realidad, preguntando por WeChat será mucho más rápido." },
+        { "speaker": "安娜", "zh": "我觉得，在城市里点外卖的人越来越多是必然的。", "py": "Wǒ juéde, zài chéngshì li diǎn wàimài de rén yuèláiyuè duō shì bìrán de.", "es": "Creo que es inevitable que en las grandes ciudades cada vez haya más gente que pide comida a domicilio." },
+        { "speaker": "雨果", "zh": "我同意。如果我们的数字也表明这一点，论文就更有说服力了。", "py": "Wǒ tóngyì. Rúguǒ wǒmen de shùzì yě biǎomíng zhè yì diǎn, lùnwén jiù gèng yǒu shuōfúlì le.", "es": "De acuerdo. Si nuestras cifras también lo muestran, el trabajo será más convincente." }
+      ],
+      "notes": "点外卖 = pedir comida a domicilio (lit. «marcar comida de fuera»). 是谁做的？ es el 是…的 de A2 (quién lo hizo); 是必然的 es el de opinión (es inevitable, lo afirmo). 说服力 (shuōfúlì) = poder de convicción."
+    },
+    { "type": "exercises", "count": 17, "bank": ["g-shi-de", "g-word-order", "g-numbers"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "time0": { "zh": "根据这个调查，" }, "subject": { "zh": "年轻人" }, "adverb": { "zh": "几乎都" }, "verb1": { "zh": "点" }, "object": { "zh": "外卖" } }, "end": "。", "es": "Según esta encuesta, casi todos los jóvenes piden comida a domicilio." }, "distractors": ["根据我，"] },
+        { "sentence": { "slots": { "subject": { "zh": "这个问题" }, "adverb": { "zh": "其实是很" }, "verb1": { "zh": "容易" }, "particle": { "zh": "的" } }, "end": "。", "es": "En realidad, este problema es facilísimo." } },
+        { "sentence": { "slots": { "time0": { "zh": "事实上，" }, "subject": { "zh": "这个消息" }, "adverb": { "zh": "并不" }, "verb1": { "zh": "可靠" } }, "end": "。", "es": "En realidad, esta noticia no es nada fiable." }, "distractors": ["是"] },
+        { "sentence": { "slots": { "time0": { "zh": "一般来说，" }, "subject": { "zh": "我们班的同学" }, "time": { "zh": "晚上" }, "adverb": { "zh": "差不多都" }, "place": { "zh": "在宿舍" }, "verb1": { "zh": "用手机" }, "verb2": { "zh": "点" }, "object": { "zh": "外卖" } }, "end": "。", "es": "Por lo general, casi todos los compañeros de clase piden comida a domicilio por la noche con el móvil en la residencia." } }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "根据这个调查，年轻人几乎都用手机付钱。", "py": "Gēnjù zhège diàochá, niánqīngrén jīhū dōu yòng shǒujī fù qián.", "es": "Según esta encuesta, casi todos los jóvenes pagan con el móvil." },
+        { "zh": "据说这个消息不太可靠。", "py": "Jùshuō zhège xiāoxi bú tài kěkào.", "es": "Dicen que esta noticia no es muy fiable." },
+        { "zh": "一般来说，外卖大概要半个小时。", "py": "Yìbān lái shuō, wàimài dàgài yào bàn ge xiǎoshí.", "es": "Por lo general, la comida a domicilio tarda más o menos media hora." },
+        { "zh": "这个问题其实是很容易的。", "py": "Zhège wèntí qíshí shì hěn róngyì de.", "es": "En realidad, este problema es facilísimo." }
+      ],
+      "respond": [
+        { "q": { "zh": "你们班有多少个学生？", "py": "Nǐmen bān yǒu duōshao ge xuésheng?", "es": "¿Cuántos estudiantes hay en tu clase?" }, "model": { "zh": "我们班差不多有二十个学生。", "py": "Wǒmen bān chàbuduō yǒu èrshí ge xuésheng.", "es": "En mi clase hay unos veinte estudiantes." } },
+        { "q": { "zh": "一般来说，你几点吃午饭？", "py": "Yìbān lái shuō, nǐ jǐ diǎn chī wǔfàn?", "es": "Por lo general, ¿a qué hora comes?" }, "model": { "zh": "一般来说，我十二点就吃午饭了。", "py": "Yìbān lái shuō, wǒ shí'èr diǎn jiù chī wǔfàn le.", "es": "Por lo general, como ya a las doce." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "¿Fiable o no?",
+      "text": "雨果和安娜在写一篇论文，题目是“大城市的年轻人和外卖”。安娜在网上找到一个调查。根据这个调查，中国大城市的年轻人几乎都点外卖，差不多一半的人每天都点。可是，据说这个调查是一家外卖公司做的，所以雨果觉得它不太可靠。他说：“我们不能只看别人的数字，要自己判断。”事实上，他们班的同学基本上每天都点外卖，这是大家都看得到的事实。所以他们决定自己做一个小调查。一般来说，问二十个人大概要一个小时，实际上，他们用微信只用了二十分钟。他们的数字也表明，点外卖的人越来越多。安娜说，在大城市，这是必然的。雨果说：“这个结论是很清楚的。”",
+      "es": "Hugo y Ana están escribiendo un trabajo titulado «Los jóvenes de las grandes ciudades y la comida a domicilio». Ana encontró una encuesta en internet. Según esa encuesta, casi todos los jóvenes de las grandes ciudades chinas piden comida a domicilio, y más o menos la mitad lo hace a diario. Pero, según dicen, la encuesta la hizo una empresa de comida a domicilio, así que a Hugo no le parece muy fiable. Dijo: «No podemos fiarnos solo de las cifras de otros: tenemos que juzgarlo nosotros». De hecho, los compañeros de su clase piden comida casi todos los días: es un hecho que todos pueden ver. Así que decidieron hacer ellos mismos una pequeña encuesta. Por lo general, preguntar a veinte personas lleva más o menos una hora; en realidad, por WeChat solo tardaron veinte minutos. Sus cifras también muestran que cada vez más gente pide comida a domicilio. Ana dice que en una gran ciudad es inevitable. Hugo dijo: «Esta conclusión está clarísima».",
+      "questions": [
+        { "q": "¿Por qué a Hugo no le parece fiable la encuesta de internet?", "options": ["是一家外卖公司做的", "人太少了", "是老师做的"], "answer": 0 },
+        { "q": "¿Cuánto tardaron en hacer su encuesta por WeChat?", "options": ["二十分钟", "一个小时", "一天"], "answer": 0 },
+        { "q": "¿Qué muestran sus cifras?", "options": ["点外卖的人越来越多", "点外卖的人越来越少", "年轻人不喜欢外卖"], "answer": 0 },
+        { "q": "¿Qué significa 几乎都 en el texto?", "options": ["Casi todos", "Solo algunos", "Ninguno"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

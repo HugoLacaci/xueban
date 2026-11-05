@@ -1,0 +1,137 @@
+{
+  "id": "a1-u02-l1",
+  "title": "Del 0 al 99: los números se construyen",
+  "zh": "零到九十九",
+  "goal": "Contar del 0 al 10 y formar cualquier número hasta el 99 como piezas de Lego.",
+  "minutes": 13,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "零", "pinyin": "líng", "es": "cero" },
+    { "hanzi": "一", "pinyin": "yī", "es": "uno", "note": "Al contar y en los números se dice siempre yī; los cambios de tono (yí, yì) solo pasan delante de otra palabra." },
+    { "hanzi": "二", "pinyin": "èr", "es": "dos" },
+    { "hanzi": "三", "pinyin": "sān", "es": "tres" },
+    { "hanzi": "四", "pinyin": "sì", "es": "cuatro" },
+    { "hanzi": "五", "pinyin": "wǔ", "es": "cinco" },
+    { "hanzi": "六", "pinyin": "liù", "es": "seis" },
+    { "hanzi": "七", "pinyin": "qī", "es": "siete" },
+    { "hanzi": "八", "pinyin": "bā", "es": "ocho" },
+    { "hanzi": "九", "pinyin": "jiǔ", "es": "nueve" },
+    { "hanzi": "十", "pinyin": "shí", "es": "diez" },
+    { "hanzi": "数", "pinyin": "shǔ", "es": "contar", "note": "Como verbo es shǔ (3.er tono); en 数字 «número» es shù." },
+    { "hanzi": "数字", "pinyin": "shùzì", "es": "número, cifra" },
+    { "hanzi": "读", "pinyin": "dú", "es": "leer (en voz alta)" }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "一、二、三、四、五……", "py": "Yī, èr, sān, sì, wǔ…", "es": "Uno, dos, tres, cuatro, cinco…" },
+        { "zh": "这是二十五。", "py": "Zhè shì èrshíwǔ.", "es": "Esto es (un) veinticinco." },
+        { "zh": "十四不是四十。", "py": "Shísì bú shì sìshí.", "es": "Catorce no es cuarenta." }
+      ]
+    },
+    { "type": "vocab", "title": "Del cero al diez", "words": ["零", "一", "二", "三", "四", "五", "六", "七", "八", "九", "十", "数", "数字", "读"] },
+    {
+      "type": "phonetics-drill",
+      "title": "四 sì o 十 shí",
+      "markdown": "La pareja más traicionera de los números:\n\n- **四 sì** (4): *s* con la punta de la lengua **detrás de los dientes de abajo**, sonrisa; la *i* es un zumbido de *s*. **Cuarto tono**: cae.\n- **十 shí** (10): *sh* con la lengua **doblada hacia atrás**; la *i* es un zumbido de *sh*. **Segundo tono**: sube.\n\nAsí que la diferencia está en **dos sitios a la vez**: la lengua y el tono. **四十四 sìshísì** (44) es el trabalenguas clásico: cae, sube, cae.\n\nAl **contar**, 一 se dice siempre **yī** (primer tono), aunque vaya delante de otro número: 十一 *shíyī*, 一十 no existe.",
+      "items": [
+        { "audio": "四", "options": ["sì", "shí", "xī"], "answer": 0, "explain": "s delante + 4.º tono." },
+        { "audio": "十", "options": ["shí", "sì", "sí"], "answer": 0, "explain": "sh hacia atrás + 2.º tono." },
+        { "audio": "四十", "options": ["sìshí (40)", "shísì (14)", "sìsì"], "answer": 0, "explain": "Primero el 4 (cae), luego el 10 (sube): 4 × 10." },
+        { "audio": "十四", "options": ["shísì (14)", "sìshí (40)", "shíshí"], "answer": 0, "explain": "10 + 4: el 10 va primero." },
+        { "audio": "四十四", "options": ["sìshísì", "shísìshí", "sìsìshí"], "answer": 0, "explain": "4 × 10 + 4 = 44." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["三", "零"],
+      "mnemonics": {
+        "三": "Tres palitos, como un, dos, tres en los dedos. Ojo: el trazo de en medio es el más corto y el de abajo, el más largo.",
+        "零": "雨 (lluvia) + 令: las últimas gotas sueltas que quedan tras la lluvia, casi nada → cero."
+      }
+    },
+    {
+      "type": "explain",
+      "title": "Los números son piezas de Lego",
+      "markdown": "Con los números del 0 al 10 ya puedes formar **todos** hasta el 99, sin palabras nuevas:\n\n| Regla | Ejemplo |\n|---|---|\n| **10 + unidad** | 十一 (11), 十五 (15), 十九 (19) |\n| **decena × 10** | 二十 (20), 三十 (30), 九十 (90) |\n| **decena × 10 + unidad** | 二十一 (21), 三十五 (35), 九十九 (99) |\n\nNo hay «once», «doce» ni «veinte» especiales: 11 es «diez-uno» y 20 es «dos-diez». Solo cuidado con el orden: **十二** (10 + 2 = 12) ≠ **二十** (2 × 10 = 20).\n\n**零** (cero) se usa para el 0 y, más adelante, en medio de números grandes (unidad 4) y en los teléfonos (lección 5).\n\n**Contar con una mano**: en China del 6 al 10 se cuenta con gestos de una sola mano (el 6 es el pulgar y el meñique, como un teléfono; el 8, el pulgar y el índice en forma de L; el 10, el puño o los dos índices cruzados). Si en el mercado alguien te enseña una «L», no te está retando: te dice **8**."
+    },
+    {
+      "type": "skeleton",
+      "title": "El número como objeto: 这是 + número",
+      "markdown": "Un número es un **nombre** más: cabe en el hueco del **objeto**. Con 这是 / 那是 y lo que ya sabes (不, 吗, 也) puedes hablar de cualquier cifra.\n\n- 这是**二十五**。\n- Negativa: 这**不**是十四。\n- Pregunta: 这是四十**吗**？\n\nPara pedir que alguien lea un número: 你读！ / 请读 (lo verás en la próxima lección).",
+      "focus": ["object"],
+      "sentences": [
+        { "slots": { "subject": { "zh": "这", "py": "zhè" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "二十五", "py": "èrshíwǔ" } }, "end": "。", "es": "Esto es un veinticinco." },
+        { "slots": { "subject": { "zh": "那", "py": "nà" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "十二", "py": "shí'èr" } }, "end": "。", "es": "Eso es un doce." },
+        { "slots": { "subject": { "zh": "这", "py": "zhè" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "九十九", "py": "jiǔshíjiǔ" } }, "end": "。", "es": "Esto es un noventa y nueve." },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "verb1": { "zh": "读", "py": "dú" }, "object": { "zh": "数字", "py": "shùzì" } }, "end": "。", "es": "Leo los números (en voz alta)." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "这", "py": "zhè" }, "adverb": { "zh": "不", "py": "bú" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "十四", "py": "shísì" } }, "end": "。", "es": "Esto no es un catorce." },
+        { "slots": { "subject": { "zh": "那", "py": "nà" }, "adverb": { "zh": "也不", "py": "yě bú" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "四十", "py": "sìshí" } }, "end": "。", "es": "Eso tampoco es un cuarenta." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "这", "py": "zhè" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "四十", "py": "sìshí" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿Esto es un cuarenta?" },
+        { "slots": { "subject": { "zh": "这", "py": "zhè" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "什么数字", "py": "shénme shùzì" } }, "end": "？", "es": "¿Qué número es este?" }
+      ],
+      "mistakes": [
+        { "wrong": "二十 (para decir 12)", "right": "十二", "why": "10 + 2 = 十二; 二十 es 2 × 10 = 20. Lo que va delante del 十 multiplica; lo que va detrás, suma." },
+        { "wrong": "一十一", "right": "十一", "why": "Del 10 al 19 no se dice el 一 delante: 十, 十一, 十二…" },
+        { "wrong": "九十零", "right": "九十", "why": "Las decenas exactas no llevan 零 al final." },
+        { "wrong": "这是十四吗？——十四。", "right": "这是十四吗？——是。", "why": "A una pregunta con 吗 se responde con 是 / 不是 (o repitiendo la frase completa)." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Las tarjetas de números",
+      "lines": [
+        { "speaker": "王老师", "zh": "雨果，这是什么数字？", "py": "Yǔguǒ, zhè shì shénme shùzì?", "es": "Hugo, ¿qué número es este?" },
+        { "speaker": "雨果", "zh": "这是十四。", "py": "Zhè shì shísì.", "es": "Es el catorce." },
+        { "speaker": "王老师", "zh": "不对，不是十四，是四十。你读！", "py": "Bú duì, bú shì shísì, shì sìshí. Nǐ dú!", "es": "No, no es catorce: es cuarenta. ¡Léelo!" },
+        { "speaker": "雨果", "zh": "四十。对不起！", "py": "Sìshí. Duìbuqǐ!", "es": "Cuarenta. ¡Perdón!" },
+        { "speaker": "王老师", "zh": "没关系。安娜，这是什么数字？", "py": "Méi guānxi. Ānnà, zhè shì shénme shùzì?", "es": "No pasa nada. Anna, ¿qué número es este?" },
+        { "speaker": "安娜", "zh": "这是九十九。", "py": "Zhè shì jiǔshíjiǔ.", "es": "Es el noventa y nueve." },
+        { "speaker": "王老师", "zh": "对！大卫，你数。", "py": "Duì! Dàwèi, nǐ shǔ.", "es": "¡Correcto! David, cuenta tú." },
+        { "speaker": "大卫", "zh": "一、二、三、四、五、六、七、八、九、十！", "py": "Yī, èr, sān, sì, wǔ, liù, qī, bā, jiǔ, shí!", "es": "¡Uno, dos, tres, cuatro, cinco, seis, siete, ocho, nueve, diez!" },
+        { "speaker": "王老师", "zh": "很好！", "py": "Hěn hǎo!", "es": "¡Muy bien!" }
+      ],
+      "notes": "Al contar en voz alta, los números se separan con 、(la coma de enumerar china). 很好 es el «muy bien» que oirás mil veces en clase."
+    },
+    { "type": "exercises", "count": 14, "bank": ["g-numbers", "u02"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "这" }, "verb1": { "zh": "是" }, "object": { "zh": "二十五" } }, "end": "。", "es": "Esto es un veinticinco." }, "distractors": ["五十二"] },
+        { "sentence": { "slots": { "subject": { "zh": "那" }, "adverb": { "zh": "不" }, "verb1": { "zh": "是" }, "object": { "zh": "十四" } }, "end": "。", "es": "Eso no es un catorce." }, "distractors": ["四十"] },
+        { "sentence": { "slots": { "subject": { "zh": "这" }, "verb1": { "zh": "是" }, "object": { "zh": "什么数字" } }, "end": "？", "es": "¿Qué número es este?" }, "distractors": ["吗"] },
+        { "sentence": { "slots": { "subject": { "zh": "安娜" }, "adverb": { "zh": "也" }, "verb1": { "zh": "读" }, "object": { "zh": "九十九" }, "particle": { "zh": "吗" } }, "end": "？", "es": "¿Anna también lee el noventa y nueve?" }, "distractors": ["呢"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "一、二、三、四、五、六、七、八、九、十。", "py": "Yī, èr, sān, sì, wǔ, liù, qī, bā, jiǔ, shí.", "es": "Del uno al diez." },
+        { "zh": "十一、十二、二十、二十二。", "py": "Shíyī, shí'èr, èrshí, èrshí'èr.", "es": "Once, doce, veinte, veintidós." },
+        { "zh": "四十四不是十四。", "py": "Sìshísì bú shì shísì.", "es": "Cuarenta y cuatro no es catorce." },
+        { "zh": "这是九十九。", "py": "Zhè shì jiǔshíjiǔ.", "es": "Esto es un noventa y nueve." }
+      ],
+      "respond": [
+        { "q": { "zh": "这是二十吗？", "py": "Zhè shì èrshí ma?", "es": "¿Esto es un veinte? (te enseñan un 12)" }, "model": { "zh": "不是，这是十二。", "py": "Bú shì, zhè shì shí'èr.", "es": "No, es un doce." } },
+        { "q": { "zh": "这是什么数字？", "py": "Zhè shì shénme shùzì?", "es": "¿Qué número es este? (te enseñan un 37)" }, "model": { "zh": "这是三十七。", "py": "Zhè shì sānshíqī.", "es": "Es el treinta y siete." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Hugo lee números",
+      "text": "雨果是学生。他读数字：十二、二十、三十四、四十三。十二不是二十，四十三也不是三十四。安娜读：九十九、六十八、七十七、八十一。王老师说：很好！",
+      "es": "Hugo es estudiante. Lee números: doce, veinte, treinta y cuatro, cuarenta y tres. El doce no es el veinte, y el cuarenta y tres tampoco es el treinta y cuatro. Anna lee: noventa y nueve, sesenta y ocho, setenta y siete, ochenta y uno. La profesora Wang dice: «¡Muy bien!».",
+      "questions": [
+        { "q": "¿Cómo se escribe 43?", "options": ["四十三", "三十四", "四三十"], "answer": 0 },
+        { "q": "¿Qué número lee Anna primero?", "options": ["99", "68", "81"], "answer": 0 },
+        { "q": "¿Cuál es el 68?", "options": ["六十八", "八十六", "六八"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

@@ -1,0 +1,182 @@
+{
+  "unitId": "a1-u06",
+  "scenarios": [
+    {
+      "id": "a1-u06-weekend-plans",
+      "title": "Quedar para el fin de semana",
+      "zh": "星期六你有时间吗？",
+      "level": 1,
+      "setting": "Salida de clase en la universidad, jueves por la tarde. Anna quiere quedar con Hugo para ir a comprar fruta el fin de semana. Tú (la app) eres 安娜.",
+      "role": "amiga",
+      "roleZh": "安娜",
+      "voice": "f",
+      "goals": ["Decir si tienes tiempo el sábado", "Proponer una hora", "Decir qué hora es ahora", "Confirmar el día y la hora"],
+      "vocab": ["星期六", "星期天", "有时间", "什么时候", "几点", "点", "半", "分", "差", "上午", "下午", "晚上", "现在", "上课", "马上"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "雨果，星期六你有时间吗？", "py": "Yǔguǒ, xīngqīliù nǐ yǒu shíjiān ma?", "es": "Hugo, ¿tienes tiempo el sábado?" },
+          "user": [
+            { "zh": "有，星期六我有时间。", "py": "Yǒu, xīngqīliù wǒ yǒu shíjiān.", "es": "Sí, el sábado tengo tiempo.", "keywords": ["有时间", "我有时间"], "next": "n2", "goal": 0 },
+            { "zh": "星期六我上课，星期天呢？", "py": "Xīngqīliù wǒ shàngkè, xīngqītiān ne?", "es": "El sábado tengo clase, ¿y el domingo?", "keywords": ["上课", "星期天"], "next": "n2b", "goal": 0 },
+            { "zh": "今天星期几？", "py": "Jīntiān xīngqī jǐ?", "es": "¿Qué día es hoy?", "keywords": ["星期几"], "next": "n1b" }
+          ],
+          "hint": "有时间 = tener tiempo. Puedes proponer otro día con 呢."
+        },
+        "n1b": {
+          "npc": { "zh": "今天星期四。星期六你有时间吗？", "py": "Jīntiān xīngqīsì. Xīngqīliù nǐ yǒu shíjiān ma?", "es": "Hoy es jueves. ¿Tienes tiempo el sábado?" },
+          "user": [
+            { "zh": "有时间。", "py": "Yǒu shíjiān.", "es": "Sí, tengo tiempo.", "keywords": ["有时间", "有"], "next": "n2", "goal": 0 },
+            { "zh": "星期六我上课，星期天呢？", "py": "Xīngqīliù wǒ shàngkè, xīngqītiān ne?", "es": "El sábado tengo clase, ¿y el domingo?", "keywords": ["上课", "星期天"], "next": "n2b", "goal": 0 }
+          ],
+          "hint": "Responde si tienes tiempo el sábado o propón el domingo."
+        },
+        "n2": {
+          "npc": { "zh": "好！星期六我们去买水果，好吗？几点？", "py": "Hǎo! Xīngqīliù wǒmen qù mǎi shuǐguǒ, hǎo ma? Jǐ diǎn?", "es": "¡Bien! ¿El sábado vamos a comprar fruta? ¿A qué hora?" },
+          "user": [
+            { "zh": "上午十点，好吗？", "py": "Shàngwǔ shí diǎn, hǎo ma?", "es": "A las diez de la mañana, ¿vale?", "keywords": ["十点", "上午"], "next": "n3", "goal": 1 },
+            { "zh": "下午两点半。", "py": "Xiàwǔ liǎng diǎn bàn.", "es": "A las dos y media de la tarde.", "keywords": ["两点半", "下午"], "next": "n3", "goal": 1 },
+            { "zh": "你什么时候有时间？", "py": "Nǐ shénme shíhou yǒu shíjiān?", "es": "¿Cuándo tienes tiempo tú?", "keywords": ["什么时候"], "next": "n2c" }
+          ],
+          "hint": "Propón una hora: parte del día + número + 点 (+ 半). O pregunta con 什么时候."
+        },
+        "n2c": {
+          "npc": { "zh": "我上午没有时间，下午和晚上都有时间。", "py": "Wǒ shàngwǔ méiyǒu shíjiān, xiàwǔ hé wǎnshang dōu yǒu shíjiān.", "es": "Por la mañana no tengo tiempo; por la tarde y por la noche, sí." },
+          "user": [
+            { "zh": "那下午三点。", "py": "Nà xiàwǔ sān diǎn.", "es": "Entonces, a las tres de la tarde.", "keywords": ["三点", "下午"], "next": "n3", "goal": 1 },
+            { "zh": "晚上六点半。", "py": "Wǎnshang liù diǎn bàn.", "es": "A las seis y media de la tarde.", "keywords": ["六点半", "晚上"], "next": "n3", "goal": 1 }
+          ],
+          "hint": "Elige una hora de tarde o de noche: 下午三点, 晚上六点半."
+        },
+        "n2b": {
+          "npc": { "zh": "星期天我也有时间。星期天几点？", "py": "Xīngqītiān wǒ yě yǒu shíjiān. Xīngqītiān jǐ diǎn?", "es": "El domingo también tengo tiempo. ¿A qué hora el domingo?" },
+          "user": [
+            { "zh": "上午十点。", "py": "Shàngwǔ shí diǎn.", "es": "A las diez de la mañana.", "keywords": ["十点", "上午"], "next": "n3", "goal": 1 },
+            { "zh": "下午两点半。", "py": "Xiàwǔ liǎng diǎn bàn.", "es": "A las dos y media de la tarde.", "keywords": ["两点半", "下午"], "next": "n3", "goal": 1 }
+          ],
+          "hint": "Las dos es 两点 (no 二点). 半 = y media."
+        },
+        "n3": {
+          "npc": { "zh": "好。现在几点？我四点半上课。", "py": "Hǎo. Xiànzài jǐ diǎn? Wǒ sì diǎn bàn shàngkè.", "es": "Vale. ¿Qué hora es? Tengo clase a las cuatro y media." },
+          "user": [
+            { "zh": "现在四点十分。", "py": "Xiànzài sì diǎn shí fēn.", "es": "Son las cuatro y diez.", "keywords": ["四点十分", "十分"], "next": "n4", "goal": 2 },
+            { "zh": "现在差五分四点。", "py": "Xiànzài chà wǔ fēn sì diǎn.", "es": "Son las cuatro menos cinco.", "keywords": ["差五分"], "next": "n4", "goal": 2 }
+          ],
+          "hint": "现在 + hora + 点 + minutos (分 / 半), o 差 + minutos + hora."
+        },
+        "n4": {
+          "npc": { "zh": "我马上去上课。再见！", "py": "Wǒ mǎshàng qù shàngkè. Zàijiàn!", "es": "Me voy enseguida a clase. ¡Adiós!" },
+          "user": [
+            { "zh": "好，星期六见！", "py": "Hǎo, xīngqīliù jiàn!", "es": "¡Vale, hasta el sábado!", "keywords": ["星期六见", "星期天见"], "next": "end1", "goal": 3 },
+            { "zh": "星期六上午十点，对吗？", "py": "Xīngqīliù shàngwǔ shí diǎn, duì ma?", "es": "El sábado a las diez de la mañana, ¿no?", "keywords": ["上午十点", "对吗"], "next": "n4b" }
+          ],
+          "hint": "Confirma el día (y la hora) al despedirte: 星期六见！"
+        },
+        "n4b": {
+          "npc": { "zh": "对！星期六见！", "py": "Duì! Xīngqīliù jiàn!", "es": "¡Eso! ¡Hasta el sábado!" },
+          "user": [
+            { "zh": "星期六见！", "py": "Xīngqīliù jiàn!", "es": "¡Hasta el sábado!", "keywords": ["星期六见", "见"], "next": "end1", "goal": 3 }
+          ],
+          "hint": "Despídete: 星期六见！"
+        },
+        "end1": {
+          "npc": { "zh": "再见！", "py": "Zàijiàn!", "es": "¡Adiós!" },
+          "end": true,
+          "feedback": "Has quedado con Anna: día, hora y la hora actual. Recuerda el orden: primero el día, luego la parte del día y después la hora (星期六上午十点), y todo delante del verbo o al principio de la frase."
+        }
+      }
+    },
+    {
+      "id": "a1-u06-class-schedule",
+      "title": "El horario de clase",
+      "zh": "明天几点上课？",
+      "level": 1,
+      "setting": "Despacho de la profesora Wang en la universidad, miércoles. Hugo pregunta por el horario de la semana. Tú (la app) eres 王老师.",
+      "role": "profesora",
+      "roleZh": "王老师",
+      "voice": "f",
+      "goals": ["Preguntar a qué hora empieza la clase", "Preguntar qué día es mañana", "Preguntar cuánto dura la clase", "Decir qué haces el domingo"],
+      "vocab": ["明天", "星期几", "上课", "几点", "上午", "一刻", "小时", "分钟", "星期天", "现在"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "雨果，明天上课，你知道吗？", "py": "Yǔguǒ, míngtiān shàngkè, nǐ zhīdào ma?", "es": "Hugo, mañana hay clase, ¿lo sabes?" },
+          "user": [
+            { "zh": "知道。明天几点上课？", "py": "Zhīdào. Míngtiān jǐ diǎn shàngkè?", "es": "Sí. ¿A qué hora es la clase mañana?", "keywords": ["几点上课", "几点"], "next": "n2", "goal": 0 },
+            { "zh": "不知道！明天星期几？", "py": "Bù zhīdào! Míngtiān xīngqī jǐ?", "es": "¡No! ¿Qué día es mañana?", "keywords": ["星期几", "不知道"], "next": "n2b", "goal": 1 }
+          ],
+          "hint": "Pregunta la hora con 几点上课 o el día de la semana con 星期几."
+        },
+        "n2b": {
+          "npc": { "zh": "明天星期四。星期四上午上课。", "py": "Míngtiān xīngqīsì. Xīngqīsì shàngwǔ shàngkè.", "es": "Mañana es jueves. Los jueves hay clase por la mañana." },
+          "user": [
+            { "zh": "几点上课？", "py": "Jǐ diǎn shàngkè?", "es": "¿A qué hora?", "keywords": ["几点上课", "几点"], "next": "n2", "goal": 0 },
+            { "zh": "星期四！我星期四有时间。", "py": "Xīngqīsì! Wǒ xīngqīsì yǒu shíjiān.", "es": "¡Jueves! El jueves tengo tiempo.", "keywords": ["有时间", "星期四"], "next": "n2" }
+          ],
+          "hint": "Ahora pregunta la hora: 几点上课？"
+        },
+        "n2": {
+          "npc": { "zh": "上午九点一刻上课。", "py": "Shàngwǔ jiǔ diǎn yí kè shàngkè.", "es": "La clase es a las nueve y cuarto de la mañana." },
+          "user": [
+            { "zh": "九点一刻，好。上几个小时？", "py": "Jiǔ diǎn yí kè, hǎo. Shàng jǐ ge xiǎoshí?", "es": "A las nueve y cuarto, vale. ¿Cuántas horas dura?", "keywords": ["几个小时", "小时"], "next": "n3", "goal": 2 },
+            { "zh": "九点一刻？太早了！", "py": "Jiǔ diǎn yí kè? Tài zǎo le!", "es": "¿A las nueve y cuarto? ¡Qué pronto!", "keywords": ["太早", "早"], "next": "n2c" }
+          ],
+          "hint": "La duración se pregunta con 几个小时 (小时 = horas que dura; 点 = hora del reloj)."
+        },
+        "n2c": {
+          "npc": { "zh": "不早！明天你八点半去。", "py": "Bù zǎo! Míngtiān nǐ bā diǎn bàn qù.", "es": "¡No es pronto! Mañana sales a las ocho y media." },
+          "user": [
+            { "zh": "好，八点半。上几个小时？", "py": "Hǎo, bā diǎn bàn. Shàng jǐ ge xiǎoshí?", "es": "Vale, a las ocho y media. ¿Cuántas horas dura?", "keywords": ["几个小时", "小时"], "next": "n3", "goal": 2 },
+            { "zh": "好的，老师。", "py": "Hǎo de, lǎoshī.", "es": "Vale, profesora.", "keywords": ["好的", "老师"], "next": "n3" }
+          ],
+          "hint": "Acepta y pregunta cuánto dura la clase: 几个小时."
+        },
+        "n3": {
+          "npc": { "zh": "两个小时，一百二十分钟。星期天也上课。", "py": "Liǎng ge xiǎoshí, yìbǎi èrshí fēnzhōng. Xīngqītiān yě shàngkè.", "es": "Dos horas: ciento veinte minutos. El domingo también hay clase." },
+          "user": [
+            { "zh": "星期天也上课吗？", "py": "Xīngqītiān yě shàngkè ma?", "es": "¿El domingo también?", "keywords": ["星期天", "星期日"], "next": "n4" },
+            { "zh": "星期六呢？", "py": "Xīngqīliù ne?", "es": "¿Y el sábado?", "keywords": ["星期六"], "next": "n4b" }
+          ],
+          "hint": "Pregunta por el domingo (星期天) o por el sábado con 呢."
+        },
+        "n4b": {
+          "npc": { "zh": "星期六不上课。星期一、星期三、星期四和星期天上课。", "py": "Xīngqīliù bú shàngkè. Xīngqīyī, xīngqīsān, xīngqīsì hé xīngqītiān shàngkè.", "es": "El sábado no hay clase. Hay los lunes, miércoles, jueves y domingos." },
+          "user": [
+            { "zh": "星期天几点上课？", "py": "Xīngqītiān jǐ diǎn shàngkè?", "es": "¿A qué hora es el domingo?", "keywords": ["星期天", "几点"], "next": "n4" },
+            { "zh": "好，我知道了。", "py": "Hǎo, wǒ zhīdào le.", "es": "Vale, entendido.", "keywords": ["知道", "知道了"], "next": "n5" }
+          ],
+          "hint": "Pregunta la hora del domingo o di que lo has entendido."
+        },
+        "n4": {
+          "npc": { "zh": "星期天上午十点上课，一个小时。", "py": "Xīngqītiān shàngwǔ shí diǎn shàngkè, yí ge xiǎoshí.", "es": "El domingo, clase a las diez de la mañana, una hora." },
+          "user": [
+            { "zh": "星期天我不上课，我去朋友家。", "py": "Xīngqītiān wǒ bú shàngkè, wǒ qù péngyou jiā.", "es": "El domingo no voy a clase: voy a casa de un amigo.", "keywords": ["朋友家", "不上课"], "next": "n4c", "goal": 3 },
+            { "zh": "好，星期天我去。", "py": "Hǎo, xīngqītiān wǒ qù.", "es": "Vale, el domingo voy.", "keywords": ["我去", "去上课"], "next": "n5", "goal": 3 }
+          ],
+          "hint": "Di si vas (我去) o qué haces en vez de ir."
+        },
+        "n4c": {
+          "npc": { "zh": "去朋友家？几点去？", "py": "Qù péngyou jiā? Jǐ diǎn qù?", "es": "¿A casa de un amigo? ¿A qué hora vas?" },
+          "user": [
+            { "zh": "上午九点半去。", "py": "Shàngwǔ jiǔ diǎn bàn qù.", "es": "A las nueve y media de la mañana.", "keywords": ["九点半", "上午"], "next": "n5" },
+            { "zh": "对不起，老师。星期天我去上课！", "py": "Duìbuqǐ, lǎoshī. Xīngqītiān wǒ qù shàngkè!", "es": "Perdone, profesora. ¡El domingo voy a clase!", "keywords": ["去上课"], "next": "n5" }
+          ],
+          "hint": "Di la hora con la parte del día delante: 上午九点半."
+        },
+        "n5": {
+          "npc": { "zh": "好。现在几点？", "py": "Hǎo. Xiànzài jǐ diǎn?", "es": "Bien. ¿Qué hora es?" },
+          "user": [
+            { "zh": "现在十二点半。", "py": "Xiànzài shí'èr diǎn bàn.", "es": "Son las doce y media.", "keywords": ["十二点", "点半"], "next": "end1" },
+            { "zh": "对不起，我不知道。", "py": "Duìbuqǐ, wǒ bù zhīdào.", "es": "Perdone, no lo sé.", "keywords": ["不知道", "对不起"], "next": "end1" }
+          ],
+          "hint": "现在 + hora + 点 (+ 半)."
+        },
+        "end1": {
+          "npc": { "zh": "十二点半？我一会儿上课。再见！", "py": "Shí'èr diǎn bàn? Wǒ yíhuìr shàngkè. Zàijiàn!", "es": "¿Las doce y media? Tengo clase dentro de un rato. ¡Adiós!" },
+          "end": true,
+          "feedback": "Ya conoces tu horario: 几点上课 (hora de inicio), 几个小时 (duración) y 星期几 (día). No confundas 点 / 分 (hora del reloj) con 小时 / 分钟 (lo que dura)."
+        }
+      }
+    }
+  ]
+}

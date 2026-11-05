@@ -1,0 +1,132 @@
+{
+  "id": "a1-u02-l2",
+  "title": "¿Cuántos? 几 y 多少",
+  "zh": "几个？多少？",
+  "goal": "Preguntar cantidades con 几 (pocos, con clasificador) y 多少 (cualquier cantidad) y pedir que te repitan.",
+  "minutes": 14,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "几", "pinyin": "jǐ", "es": "¿cuántos? (pocos, menos de 10)", "note": "Necesita clasificador delante del nombre: 几个朋友." },
+    { "hanzi": "多少", "pinyin": "duōshao", "es": "¿cuántos?, ¿cuánto?", "note": "Para cualquier cantidad; el clasificador es opcional: 多少学生." },
+    { "hanzi": "号", "pinyin": "hào", "es": "número (de una lista, de un asiento, de una habitación)", "note": "我是九号 = soy el número nueve. Para las fechas lo verás en la unidad 5." },
+    { "hanzi": "知道", "pinyin": "zhīdào", "es": "saber (un dato)", "note": "我不知道 = no lo sé." },
+    { "hanzi": "错", "pinyin": "cuò", "es": "equivocado, incorrecto; error", "note": "我错了 = me he equivocado." },
+    { "hanzi": "请", "pinyin": "qǐng", "es": "por favor (+ verbo)", "note": "Va delante del verbo: 请读, 请听. Ya lo conoces de 请进 y 请坐." },
+    { "hanzi": "再", "pinyin": "zài", "es": "otra vez, de nuevo (lo que aún no se ha hecho)" },
+    { "hanzi": "遍", "pinyin": "biàn", "es": "vez (de principio a fin)", "note": "再说一遍 = dilo otra vez (entero)." },
+    { "hanzi": "听", "pinyin": "tīng", "es": "escuchar, oír" }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "你有几个中国朋友？", "py": "Nǐ yǒu jǐ ge Zhōngguó péngyou?", "es": "¿Cuántos amigos chinos tienes?" },
+        { "zh": "老师有多少学生？", "py": "Lǎoshī yǒu duōshao xuésheng?", "es": "¿Cuántos alumnos tiene la profesora?" },
+        { "zh": "对不起，请再说一遍。", "py": "Duìbuqǐ, qǐng zài shuō yí biàn.", "es": "Perdone, ¿puede repetirlo?" },
+        { "zh": "我不知道。", "py": "Wǒ bù zhīdào.", "es": "No lo sé." }
+      ]
+    },
+    { "type": "vocab", "title": "Preguntar cantidades y sobrevivir en clase", "words": ["几", "多少", "号", "知道", "错", "请", "再", "遍", "听"] },
+    {
+      "type": "phonetics-drill",
+      "title": "j, q, x: 几, 七, 谢",
+      "markdown": "Tres sonidos que se hacen con la **lengua plana**, la punta tocando detrás de los dientes de abajo y los labios en sonrisa:\n\n- **j** (几 **jǐ**, 九 **jiǔ**): como una «ch» suave y sin aire.\n- **q** (七 **qī**, 请 **qǐng**): la misma posición, pero **con un golpe de aire** (pon la mano delante de la boca: tiene que notarse).\n- **x** (谢 **xiè**): una «s» con la lengua plana, entre «s» y «sh».\n\nAsí que 几 *jǐ* y 七 *qī* solo se distinguen por el **aire** y el **tono**. Y 九 jiǔ se escribe *iu* pero suena *iou*: «yiou».",
+      "items": [
+        { "audio": "几", "options": ["jǐ", "qǐ", "xǐ"], "answer": 0, "explain": "j sin aire + 3.er tono." },
+        { "audio": "七", "options": ["qī", "jī", "chī"], "answer": 0, "explain": "q con golpe de aire + 1.er tono." },
+        { "audio": "九", "options": ["jiǔ", "qiǔ", "jǔ"], "answer": 0, "explain": "j + iu (que suena «iou»)." },
+        { "audio": "请", "options": ["qǐng", "jǐng", "qǐn"], "answer": 0, "explain": "q con aire y final -ng." },
+        { "audio": "几个", "options": ["jǐ ge", "qī ge", "jì gè"], "answer": 0, "explain": "jǐ (3.er tono) + ge neutro." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["几", "听"],
+      "mnemonics": {
+        "几": "Dibujo de una mesita baja de patas cortas: una mesa pequeña, para pocas cosas → «¿cuántos? (pocos)».",
+        "听": "口 (boca) + 斤 (que da el sonido): la boca de quien habla, y tú escuchando. La forma tradicional 聽 lleva 耳 (oreja)."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "几 + clasificador, 多少 + nombre",
+      "markdown": "La palabra interrogativa va **en el hueco de la respuesta**, como 什么 y 谁:\n\n- 你有**几个**中国朋友？ → 我有**三个**中国朋友。\n- 老师有**多少**学生？ → 老师有**九十个**学生。\n\n**几** pregunta por cantidades **pequeñas** (lo esperable es menos de 10) y **siempre** lleva clasificador: 几**个**朋友. **多少** vale para cualquier cantidad, sobre todo grandes, y puede ir sin clasificador: 多少学生.\n\n**个** es el clasificador general: entre el número y el nombre (三**个**朋友). Ya lo conoces de 一个; en la unidad 3 verás más.\n\n(**有** «tener» ya lo conoces de la Etapa 0; su negativa, en la unidad 3.)",
+      "focus": ["object"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "verb1": { "zh": "有", "py": "yǒu" }, "object": { "zh": "三个中国朋友", "py": "sān ge Zhōngguó péngyou" } }, "end": "。", "es": "Tengo tres amigos chinos.", "esOrder": [{ "text": "Tengo", "slot": "verb1" }, { "text": "tres amigos chinos", "slot": "object" }] },
+        { "slots": { "subject": { "zh": "王老师", "py": "Wáng lǎoshī" }, "verb1": { "zh": "有", "py": "yǒu" }, "object": { "zh": "九十个学生", "py": "jiǔshí ge xuésheng" } }, "end": "。", "es": "La profesora Wang tiene noventa alumnos." },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "九号", "py": "jiǔ hào" } }, "end": "。", "es": "Soy el número nueve." },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "verb1": { "zh": "知道", "py": "zhīdào" } }, "end": "。", "es": "Lo sé." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "不", "py": "bù" }, "verb1": { "zh": "知道", "py": "zhīdào" } }, "end": "。", "es": "No lo sé." },
+        { "slots": { "subject": { "zh": "安娜", "py": "Ānnà" }, "adverb": { "zh": "不", "py": "bú" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "七号", "py": "qī hào" } }, "end": "。", "es": "Anna no es la número siete." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "有", "py": "yǒu" }, "object": { "zh": "几个中国朋友", "py": "jǐ ge Zhōngguó péngyou" } }, "end": "？", "es": "¿Cuántos amigos chinos tienes?", "esOrder": [{ "text": "¿Cuántos amigos chinos", "slot": "object" }, { "text": "tienes?", "slot": "verb1" }] },
+        { "slots": { "subject": { "zh": "王老师", "py": "Wáng lǎoshī" }, "verb1": { "zh": "有", "py": "yǒu" }, "object": { "zh": "多少学生", "py": "duōshao xuésheng" } }, "end": "？", "es": "¿Cuántos alumnos tiene la profesora Wang?" },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "几号", "py": "jǐ hào" } }, "end": "？", "es": "¿Qué número eres?" }
+      ],
+      "mistakes": [
+        { "wrong": "你有几朋友？", "right": "你有几个朋友？", "why": "几 no puede ir solo delante del nombre: necesita clasificador (个)." },
+        { "wrong": "你有几个朋友吗？", "right": "你有几个朋友？", "why": "几 ya pregunta: sin 吗." },
+        { "wrong": "王老师有几个学生？ (si son 90)", "right": "王老师有多少学生？", "why": "几 hace esperar una cifra pequeña; para cantidades grandes o desconocidas, 多少." },
+        { "wrong": "请说再一遍。", "right": "请再说一遍。", "why": "再 es un adverbio: va delante del verbo (再说), y 一遍 detrás." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Pasar lista",
+      "lines": [
+        { "speaker": "王老师", "zh": "同学们好！请听。我们有多少学生？", "py": "Tóngxuémen hǎo! Qǐng tīng. Wǒmen yǒu duōshao xuésheng?", "es": "¡Hola, chicos! Escuchad. ¿Cuántos alumnos somos?" },
+        { "speaker": "雨果", "zh": "老师，我不知道。", "py": "Lǎoshī, wǒ bù zhīdào.", "es": "Profesora, no lo sé." },
+        { "speaker": "王老师", "zh": "雨果，你是几号？", "py": "Yǔguǒ, nǐ shì jǐ hào?", "es": "Hugo, ¿qué número eres?" },
+        { "speaker": "雨果", "zh": "我是九号。", "py": "Wǒ shì jiǔ hào.", "es": "Soy el nueve." },
+        { "speaker": "王老师", "zh": "安娜，你是几号？", "py": "Ānnà, nǐ shì jǐ hào?", "es": "Anna, ¿qué número eres?" },
+        { "speaker": "安娜", "zh": "对不起，老师，请再说一遍。", "py": "Duìbuqǐ, lǎoshī, qǐng zài shuō yí biàn.", "es": "Perdone, profesora, ¿puede repetir?" },
+        { "speaker": "王老师", "zh": "你——是——几——号？", "py": "Nǐ — shì — jǐ — hào?", "es": "¿Qué — número — eres?" },
+        { "speaker": "安娜", "zh": "我是十六号。", "py": "Wǒ shì shíliù hào.", "es": "Soy el dieciséis." },
+        { "speaker": "王老师", "zh": "大卫是二十号。我们有二十个学生！", "py": "Dàwèi shì èrshí hào. Wǒmen yǒu èrshí ge xuésheng!", "es": "David es el veinte. ¡Somos veinte alumnos!" },
+        { "speaker": "大卫", "zh": "老师，错了！我是二十一号。", "py": "Lǎoshī, cuò le! Wǒ shì èrshíyī hào.", "es": "¡Profesora, se ha equivocado! Soy el veintiuno." }
+      ],
+      "notes": "请再说一遍 es la frase de supervivencia más útil del curso: úsala sin vergüenza. 同学们 es como el profesor se dirige a la clase («chicos», «alumnos»)."
+    },
+    { "type": "exercises", "count": 15, "bank": ["g-question-words", "g-numbers", "u02"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "你" }, "verb1": { "zh": "有" }, "object": { "zh": "几个中国朋友" } }, "end": "？", "es": "¿Cuántos amigos chinos tienes?" }, "distractors": ["吗"] },
+        { "sentence": { "slots": { "subject": { "zh": "王老师" }, "verb1": { "zh": "有" }, "object": { "zh": "多少学生" } }, "end": "？", "es": "¿Cuántos alumnos tiene la profesora Wang?" }, "distractors": ["几"] },
+        { "sentence": { "slots": { "subject": { "zh": "我" }, "adverb": { "zh": "也不" }, "verb1": { "zh": "知道" } }, "end": "。", "es": "Yo tampoco lo sé." }, "distractors": ["吗"] },
+        { "sentence": { "slots": { "subject": { "zh": "大卫" }, "adverb": { "zh": "也" }, "verb1": { "zh": "有" }, "object": { "zh": "三个中国朋友" } }, "end": "。", "es": "David también tiene tres amigos chinos." }, "distractors": ["几"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "你有几个中国朋友？", "py": "Nǐ yǒu jǐ ge Zhōngguó péngyou?", "es": "¿Cuántos amigos chinos tienes?" },
+        { "zh": "我有三个中国朋友。", "py": "Wǒ yǒu sān ge Zhōngguó péngyou.", "es": "Tengo tres amigos chinos." },
+        { "zh": "请再说一遍。", "py": "Qǐng zài shuō yí biàn.", "es": "Repítalo, por favor." },
+        { "zh": "我不知道。", "py": "Wǒ bù zhīdào.", "es": "No lo sé." }
+      ],
+      "respond": [
+        { "q": { "zh": "你是几号？", "py": "Nǐ shì jǐ hào?", "es": "¿Qué número eres?" }, "model": { "zh": "我是九号。", "py": "Wǒ shì jiǔ hào.", "es": "Soy el nueve." } },
+        { "q": { "zh": "你有几个中国朋友？", "py": "Nǐ yǒu jǐ ge Zhōngguó péngyou?", "es": "¿Cuántos amigos chinos tienes?" }, "model": { "zh": "我有四个中国朋友。", "py": "Wǒ yǒu sì ge Zhōngguó péngyou.", "es": "Tengo cuatro amigos chinos." } },
+        { "q": { "zh": "王老师有多少学生？", "py": "Wáng lǎoshī yǒu duōshao xuésheng?", "es": "¿Cuántos alumnos tiene la profesora Wang?" }, "model": { "zh": "我不知道。", "py": "Wǒ bù zhīdào.", "es": "No lo sé." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "¿Cuántos amigos chinos?",
+      "text": "雨果是九号学生。王老师有多少学生？雨果不知道。安娜知道：老师有二十一个学生。雨果有几个中国朋友？他有三个。安娜有几个？她有五个。大卫呢？大卫有十个中国朋友！",
+      "es": "Hugo es el alumno número nueve. ¿Cuántos alumnos tiene la profesora Wang? Hugo no lo sabe. Anna sí: la profesora tiene veintiún alumnos. ¿Cuántos amigos chinos tiene Hugo? Tiene tres. ¿Y Anna? Tiene cinco. ¿Y David? ¡David tiene diez amigos chinos!",
+      "questions": [
+        { "q": "¿Cuántos alumnos tiene la profesora?", "options": ["21", "9", "10"], "answer": 0 },
+        { "q": "¿Quién tiene más amigos chinos?", "options": ["大卫", "安娜", "雨果"], "answer": 0 },
+        { "q": "¿Por qué se pregunta 多少学生 y no 几个学生?", "options": ["Porque son muchos", "Porque 几 es de mala educación", "Porque 学生 no tiene clasificador"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

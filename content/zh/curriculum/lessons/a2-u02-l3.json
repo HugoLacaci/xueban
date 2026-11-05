@@ -1,0 +1,704 @@
+{
+  "id": "a2-u02-l3",
+  "title": "Estuve una hora repasando: V + O + V + 了 + duración",
+  "zh": "我复习生词复习了一个小时",
+  "goal": "Contar cuánto rato has dedicado a una tarea con objeto repitiendo el verbo: 我写作文写了两个小时。",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    {
+      "hanzi": "复习",
+      "pinyin": "fùxí",
+      "es": "repasar"
+    },
+    {
+      "hanzi": "练习",
+      "pinyin": "liànxí",
+      "es": "practicar; ejercicio"
+    },
+    {
+      "hanzi": "练",
+      "pinyin": "liàn",
+      "es": "practicar, entrenar"
+    },
+    {
+      "hanzi": "作文",
+      "pinyin": "zuòwén",
+      "es": "redacción"
+    },
+    {
+      "hanzi": "词",
+      "pinyin": "cí",
+      "es": "palabra"
+    },
+    {
+      "hanzi": "词语",
+      "pinyin": "cíyǔ",
+      "es": "palabras, expresiones (vocabulario)"
+    },
+    {
+      "hanzi": "生词",
+      "pinyin": "shēngcí",
+      "es": "palabra nueva (del vocabulario)"
+    },
+    {
+      "hanzi": "词典",
+      "pinyin": "cídiǎn",
+      "es": "diccionario (de palabras)"
+    },
+    {
+      "hanzi": "字典",
+      "pinyin": "zìdiǎn",
+      "es": "diccionario (de caracteres)"
+    },
+    {
+      "hanzi": "查",
+      "pinyin": "chá",
+      "es": "buscar, consultar",
+      "note": "查词典 = buscar en el diccionario."
+    },
+    {
+      "hanzi": "读音",
+      "pinyin": "dúyīn",
+      "es": "pronunciación (de una palabra)"
+    },
+    {
+      "hanzi": "音节",
+      "pinyin": "yīnjié",
+      "es": "sílaba"
+    },
+    {
+      "hanzi": "篇",
+      "pinyin": "piān",
+      "es": "(clasificador de textos: artículos, redacciones)",
+      "note": "一篇作文 = una redacción."
+    }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        {
+          "zh": "我复习生词复习了一个小时。",
+          "py": "Wǒ fùxí shēngcí fùxí le yí ge xiǎoshí.",
+          "es": "Estuve una hora repasando las palabras nuevas."
+        },
+        {
+          "zh": "我写作文写了两个小时。",
+          "py": "Wǒ xiě zuòwén xiě le liǎng ge xiǎoshí.",
+          "es": "Estuve dos horas escribiendo la redacción."
+        },
+        {
+          "zh": "这个词的读音我查了词典。",
+          "py": "Zhège cí de dúyīn wǒ chá le cídiǎn.",
+          "es": "He buscado la pronunciación de esta palabra en el diccionario."
+        }
+      ]
+    },
+    {
+      "type": "vocab",
+      "title": "Para estudiar",
+      "words": [
+        "复习",
+        "练习",
+        "练",
+        "作文",
+        "词",
+        "词语",
+        "生词",
+        "词典",
+        "字典",
+        "查",
+        "读音",
+        "音节",
+        "篇"
+      ]
+    },
+    {
+      "type": "phonetics-drill",
+      "title": "c, z, s: 词, 字, 生词",
+      "markdown": "**c** es la que más cuesta: suena como **«ts» con aire**, como en «tse-tse». **词** *cí*, **作** *zuò* (z = «ds» sin aire), **生词** *shēngcí*.\n\n- **z**: «ds» suave, sin aire → 字 *zì*, 作 *zuò*.\n- **c**: «ts» con soplo → 词 *cí*.\n- **s**: «s» española → 四 *sì*.\n\nLa **i** de *zi, ci, si* no es una «i»: es la prolongación del zumbido de la consonante.",
+      "items": [
+        {
+          "audio": "词",
+          "options": [
+            "cí",
+            "zí",
+            "sí"
+          ],
+          "answer": 0,
+          "explain": "c = ts con aire."
+        },
+        {
+          "audio": "字典",
+          "options": [
+            "zìdiǎn",
+            "cìdiǎn",
+            "jìdiǎn"
+          ],
+          "answer": 0,
+          "explain": "z sin aire."
+        },
+        {
+          "audio": "生词",
+          "options": [
+            "shēngcí",
+            "sēngcí",
+            "shēngzí"
+          ],
+          "answer": 0,
+          "explain": "sh + c: retrofleja y luego plana con aire."
+        },
+        {
+          "audio": "作文",
+          "options": [
+            "zuòwén",
+            "cuòwén",
+            "zuòwéng"
+          ],
+          "answer": 0,
+          "explain": "z sin aire; 文 termina en n."
+        },
+        {
+          "audio": "音节",
+          "options": [
+            "yīnjié",
+            "yīngjié",
+            "yīnqié"
+          ],
+          "answer": 0,
+          "explain": "音 termina en n (no ng); j sin aire."
+        }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": [
+        "词",
+        "查"
+      ],
+      "mnemonics": {
+        "词": "讠 (palabra) + 司 (encargarse): lo que se encarga de decir algo → palabra.",
+        "查": "木 (árbol) + 旦 (amanecer): revisar la madera a la luz del día → examinar, buscar."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "Repetir el verbo: V + O + V + 了 + duración",
+      "markdown": "Cuando el verbo lleva **objeto** y quieres decir **cuánto tiempo**, hay un problema: la duración tiene que ir detrás del verbo… pero el objeto también. La solución más clara: **repetir el verbo**.\n\n> 我**复习**生词**复习了**一个小时。 → *Estuve una hora repasando el vocabulario.*\n\n1. Verbo + objeto: 复习生词 (hueco *verbo 1*, con su objeto corto).\n2. Verbo otra vez + 了: 复习了 (hueco *verbo 2*).\n3. Duración: 一个小时 (hueco *complemento*).\n\nLa otra forma de la lección 1 también vale: 我复习了一个小时生词. Con objetos largos o concretos, mejor repetir el verbo.\n\n**Negativa**: 我写作文**没写多长时间** (no estuve mucho rato).\n**Pregunta**: 你写作文写了**多长时间**？",
+      "focus": [
+        "verb1",
+        "verb2",
+        "complement"
+      ],
+      "compare": true,
+      "sentences": [
+        {
+          "slots": {
+            "subject": {
+              "zh": "我",
+              "py": "wǒ"
+            },
+            "verb1": {
+              "zh": "复习生词",
+              "py": "fùxí shēngcí"
+            },
+            "verb2": {
+              "zh": "复习了",
+              "py": "fùxí le"
+            },
+            "complement": {
+              "zh": "一个小时",
+              "py": "yí ge xiǎoshí"
+            }
+          },
+          "end": "。",
+          "es": "Estuve una hora repasando las palabras nuevas.",
+          "esOrder": [
+            {
+              "text": "Estuve",
+              "slot": "verb2"
+            },
+            {
+              "text": "una hora",
+              "slot": "complement"
+            },
+            {
+              "text": "repasando las palabras nuevas",
+              "slot": "verb1"
+            }
+          ]
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "安娜",
+              "py": "Ānnà"
+            },
+            "verb1": {
+              "zh": "写作文",
+              "py": "xiě zuòwén"
+            },
+            "verb2": {
+              "zh": "写了",
+              "py": "xiě le"
+            },
+            "complement": {
+              "zh": "两个小时",
+              "py": "liǎng ge xiǎoshí"
+            }
+          },
+          "end": "。",
+          "es": "Ana estuvo dos horas escribiendo la redacción."
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "我们",
+              "py": "wǒmen"
+            },
+            "time": {
+              "zh": "昨天",
+              "py": "zuótiān"
+            },
+            "verb1": {
+              "zh": "练汉字",
+              "py": "liàn Hànzì"
+            },
+            "verb2": {
+              "zh": "练了",
+              "py": "liàn le"
+            },
+            "complement": {
+              "zh": "一下午",
+              "py": "yí xiàwǔ"
+            }
+          },
+          "end": "。",
+          "es": "Ayer estuvimos toda la tarde practicando caracteres."
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "大卫",
+              "py": "Dàwèi"
+            },
+            "verb1": {
+              "zh": "查词典",
+              "py": "chá cídiǎn"
+            },
+            "verb2": {
+              "zh": "查了",
+              "py": "chá le"
+            },
+            "complement": {
+              "zh": "半天",
+              "py": "bàntiān"
+            }
+          },
+          "end": "。",
+          "es": "David se pasó un buen rato buscando en el diccionario."
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "我",
+              "py": "wǒ"
+            },
+            "verb1": {
+              "zh": "复习了",
+              "py": "fùxí le"
+            },
+            "object": {
+              "zh": "一个小时生词",
+              "py": "yí ge xiǎoshí shēngcí"
+            }
+          },
+          "end": "。",
+          "es": "Repasé el vocabulario una hora (la otra forma)."
+        }
+      ],
+      "negative": [
+        {
+          "slots": {
+            "subject": {
+              "zh": "我",
+              "py": "wǒ"
+            },
+            "verb1": {
+              "zh": "写作文",
+              "py": "xiě zuòwén"
+            },
+            "verb2": {
+              "zh": "没写",
+              "py": "méixiě"
+            },
+            "complement": {
+              "zh": "多长时间",
+              "py": "duō cháng shíjiān"
+            }
+          },
+          "end": "。",
+          "es": "No estuve mucho rato con la redacción."
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "他",
+              "py": "tā"
+            },
+            "time": {
+              "zh": "今天",
+              "py": "jīntiān"
+            },
+            "adverb": {
+              "zh": "没",
+              "py": "méi"
+            },
+            "verb1": {
+              "zh": "练习",
+              "py": "liànxí"
+            },
+            "object": {
+              "zh": "读音",
+              "py": "dúyīn"
+            }
+          },
+          "end": "。",
+          "es": "Hoy no ha practicado la pronunciación."
+        }
+      ],
+      "question": [
+        {
+          "slots": {
+            "subject": {
+              "zh": "你",
+              "py": "nǐ"
+            },
+            "verb1": {
+              "zh": "写作文",
+              "py": "xiě zuòwén"
+            },
+            "verb2": {
+              "zh": "写了",
+              "py": "xiě le"
+            },
+            "complement": {
+              "zh": "多长时间",
+              "py": "duō cháng shíjiān"
+            }
+          },
+          "end": "？",
+          "es": "¿Cuánto tiempo estuviste escribiendo la redacción?"
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "你",
+              "py": "nǐ"
+            },
+            "verb1": {
+              "zh": "复习",
+              "py": "fùxí"
+            },
+            "object": {
+              "zh": "生词",
+              "py": "shēngcí"
+            },
+            "particle": {
+              "zh": "了吗",
+              "py": "le ma"
+            }
+          },
+          "end": "？",
+          "es": "¿Has repasado las palabras nuevas?"
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "我复习生词一个小时。",
+          "right": "我复习生词复习了一个小时。",
+          "why": "Si el objeto va detrás del verbo, hay que repetir el verbo antes de la duración."
+        },
+        {
+          "wrong": "我写了作文两个小时。",
+          "right": "我写作文写了两个小时。 / 我写了两个小时作文。",
+          "why": "La duración no puede ir detrás del objeto."
+        },
+        {
+          "wrong": "一个作文",
+          "right": "一篇作文",
+          "why": "Los textos (redacciones, artículos) se cuentan con 篇."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Estudiando en la biblioteca",
+      "lines": [
+        {
+          "speaker": "安娜",
+          "zh": "雨果，你在做什么？",
+          "py": "Yǔguǒ, nǐ zài zuò shénme?",
+          "es": "Hugo, ¿qué haces?"
+        },
+        {
+          "speaker": "雨果",
+          "zh": "我在复习生词。我复习生词复习了一个小时，太累了！",
+          "py": "Wǒ zài fùxí shēngcí. Wǒ fùxí shēngcí fùxí le yí ge xiǎoshí, tài lèi le!",
+          "es": "Estoy repasando palabras nuevas. He estado una hora: ¡estoy agotado!"
+        },
+        {
+          "speaker": "安娜",
+          "zh": "我也是。我写作文写了两个小时，只写了一半。",
+          "py": "Wǒ yě shì. Wǒ xiě zuòwén xiě le liǎng ge xiǎoshí, zhǐ xiě le yíbàn.",
+          "es": "Yo igual. He estado dos horas con la redacción y solo he escrito la mitad."
+        },
+        {
+          "speaker": "雨果",
+          "zh": "王老师要我们写一篇多少字的作文？",
+          "py": "Wáng lǎoshī yào wǒmen xiě yì piān duōshao zì de zuòwén?",
+          "es": "¿De cuántos caracteres quiere la profesora Wang la redacción?"
+        },
+        {
+          "speaker": "安娜",
+          "zh": "五百字。很多词我不会写，要查字典。",
+          "py": "Wǔbǎi zì. Hěn duō cí wǒ bù huì xiě, yào chá zìdiǎn.",
+          "es": "De quinientos. Muchas palabras no sé escribirlas y tengo que buscarlas en el diccionario."
+        },
+        {
+          "speaker": "雨果",
+          "zh": "用手机查词典吧，很快。",
+          "py": "Yòng shǒujī chá cídiǎn ba, hěn kuài.",
+          "es": "Busca en el diccionario del móvil, es muy rápido."
+        },
+        {
+          "speaker": "安娜",
+          "zh": "好！这个词的读音是什么？",
+          "py": "Hǎo! Zhège cí de dúyīn shì shénme?",
+          "es": "¡Buena idea! ¿Cómo se pronuncia esta palabra?"
+        },
+        {
+          "speaker": "雨果",
+          "zh": "两个音节：“练习”。",
+          "py": "Liǎng ge yīnjié: “Liànxí”.",
+          "es": "Dos sílabas: «liàn-xí»."
+        },
+        {
+          "speaker": "安娜",
+          "zh": "谢谢！我们练习一会儿口语吧？",
+          "py": "Xièxie! Wǒmen liànxí yíhuìr kǒuyǔ ba?",
+          "es": "¡Gracias! ¿Practicamos un rato la conversación?"
+        }
+      ],
+      "notes": "En China casi todo el mundo usa diccionarios en el móvil (por ejemplo, la app Pleco para extranjeros). 字典 es el diccionario de caracteres sueltos y 词典, el de palabras; en la calle se usan casi como sinónimos."
+    },
+    {
+      "type": "exercises",
+      "count": 16,
+      "bank": [
+        "g-le",
+        "g-measure-words",
+        "g-word-order"
+      ]
+    },
+    {
+      "type": "sentence-builder",
+      "items": [
+        {
+          "sentence": {
+            "slots": {
+              "subject": {
+                "zh": "我"
+              },
+              "verb1": {
+                "zh": "复习生词"
+              },
+              "verb2": {
+                "zh": "复习了"
+              },
+              "complement": {
+                "zh": "一个小时"
+              }
+            },
+            "end": "。",
+            "es": "Estuve una hora repasando las palabras nuevas."
+          }
+        },
+        {
+          "sentence": {
+            "slots": {
+              "subject": {
+                "zh": "安娜"
+              },
+              "verb1": {
+                "zh": "写作文"
+              },
+              "verb2": {
+                "zh": "写了"
+              },
+              "complement": {
+                "zh": "两个小时"
+              }
+            },
+            "end": "。",
+            "es": "Ana estuvo dos horas escribiendo la redacción."
+          },
+          "distractors": [
+            "的"
+          ]
+        },
+        {
+          "sentence": {
+            "slots": {
+              "subject": {
+                "zh": "你"
+              },
+              "verb1": {
+                "zh": "查词典"
+              },
+              "verb2": {
+                "zh": "查了"
+              },
+              "complement": {
+                "zh": "多长时间"
+              }
+            },
+            "end": "？",
+            "es": "¿Cuánto rato estuviste buscando en el diccionario?"
+          },
+          "distractors": [
+            "吗"
+          ]
+        },
+        {
+          "sentence": {
+            "slots": {
+              "subject": {
+                "zh": "我们"
+              },
+              "time": {
+                "zh": "昨天晚上"
+              },
+              "with": {
+                "zh": "跟小李一起"
+              },
+              "place": {
+                "zh": "在宿舍"
+              },
+              "verb1": {
+                "zh": "练汉字"
+              },
+              "verb2": {
+                "zh": "练了"
+              },
+              "complement": {
+                "zh": "两个小时"
+              }
+            },
+            "end": "。",
+            "es": "Anoche estuvimos dos horas practicando caracteres con Xiao Li en la residencia."
+          }
+        }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        {
+          "zh": "我复习生词复习了一个小时。",
+          "py": "Wǒ fùxí shēngcí fùxí le yí ge xiǎoshí.",
+          "es": "Estuve una hora repasando el vocabulario."
+        },
+        {
+          "zh": "我写作文写了两个小时。",
+          "py": "Wǒ xiě zuòwén xiě le liǎng ge xiǎoshí.",
+          "es": "Estuve dos horas escribiendo la redacción."
+        },
+        {
+          "zh": "我要查词典。",
+          "py": "Wǒ yào chá cídiǎn.",
+          "es": "Tengo que buscarlo en el diccionario."
+        },
+        {
+          "zh": "这个词有两个音节。",
+          "py": "Zhège cí yǒu liǎng ge yīnjié.",
+          "es": "Esta palabra tiene dos sílabas."
+        }
+      ],
+      "respond": [
+        {
+          "q": {
+            "zh": "你昨天复习生词复习了多长时间？",
+            "py": "Nǐ zuótiān fùxí shēngcí fùxí le duō cháng shíjiān?",
+            "es": "¿Cuánto tiempo estuviste ayer repasando vocabulario?"
+          },
+          "model": {
+            "zh": "我复习了一个小时。",
+            "py": "Wǒ fùxí le yí ge xiǎoshí.",
+            "es": "Una hora."
+          }
+        },
+        {
+          "q": {
+            "zh": "你写作文写了多长时间？",
+            "py": "Nǐ xiě zuòwén xiě le duō cháng shíjiān?",
+            "es": "¿Cuánto tardaste en escribir la redacción?"
+          },
+          "model": {
+            "zh": "我写了两个小时。",
+            "py": "Wǒ xiě le liǎng ge xiǎoshí.",
+            "es": "Estuve dos horas."
+          }
+        }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Los deberes del fin de semana",
+      "text": "周末王老师给我们很多作业：复习二十个生词，做练习，写一篇作文。星期六上午，雨果在宿舍复习生词复习了一个小时。有的词他不知道读音，就用手机查词典。下午他写作文写了三个小时，写了六百字。小李看了他的作文，说：“你写得很好，可是这个字写错了。”星期天，雨果和安娜练习说汉语，练了一下午。他们觉得写汉字比说汉语难。",
+      "es": "El fin de semana la profesora Wang nos ha puesto muchos deberes: repasar veinte palabras nuevas, hacer ejercicios y escribir una redacción. El sábado por la mañana Hugo estuvo una hora repasando el vocabulario en la residencia. De algunas palabras no sabía la pronunciación, así que las buscó en el diccionario del móvil. Por la tarde estuvo tres horas escribiendo la redacción: escribió seiscientos caracteres. Xiao Li leyó su redacción y le dijo: «Escribes muy bien, pero este carácter está mal». El domingo, Hugo y Ana practicaron chino hablado toda la tarde. Les parece que escribir caracteres es más difícil que hablar.",
+      "questions": [
+        {
+          "q": "¿Cuánto tiempo repasó Hugo el vocabulario?",
+          "options": [
+            "一个小时",
+            "三个小时",
+            "一下午"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "¿Cuántos caracteres tiene su redacción?",
+          "options": [
+            "六百字",
+            "五百字",
+            "二十个"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "¿Qué hizo cuando no sabía la pronunciación?",
+          "options": [
+            "查词典",
+            "问老师",
+            "问安娜"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "¿Qué les parece más difícil a Hugo y Ana?",
+          "options": [
+            "写汉字",
+            "说汉语",
+            "复习生词"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "type": "notes-growth"
+    }
+  ]
+}

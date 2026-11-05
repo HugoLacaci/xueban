@@ -1,0 +1,157 @@
+{
+  "unitId": "a1-u21",
+  "scenarios": [
+    {
+      "id": "a1-u21-first-day",
+      "title": "El primer día completo en Shanghái",
+      "zh": "欢迎你来上海！",
+      "level": 1,
+      "setting": "Hugo acaba de llegar a la residencia de la universidad Jiaotong con su maleta. Xiao Li, su compañero chino, le recibe y le ayuda a organizar el primer día: habitación, móvil, comida y transporte. Tú (la app) eres 小李.",
+      "role": "Xiao Li",
+      "roleZh": "小李",
+      "voice": "m",
+      "goals": ["Presentarte y decir de dónde eres", "Resolver el móvil: WeChat, batería y número", "Decidir dónde y qué comer", "Planear mañana con una frase completa (cuándo, con quién, cómo, adónde, para qué)"],
+      "vocab": ["欢迎", "宿舍", "微信", "二维码", "食堂", "坐地铁", "明天", "一起"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "你好！你是雨果吗？欢迎你来上海！", "py": "Nǐ hǎo! Nǐ shì Yǔguǒ ma? Huānyíng nǐ lái Shànghǎi!", "es": "¡Hola! ¿Eres Hugo? ¡Bienvenido a Shanghái!" },
+          "user": [
+            { "zh": "对，我是雨果，是西班牙人。认识你很高兴！", "py": "Duì, wǒ shì Yǔguǒ, shì Xībānyá rén. Rènshi nǐ hěn gāoxìng!", "es": "Sí, soy Hugo, soy español. ¡Encantado de conocerte!", "keywords": ["雨果", "西班牙人"], "next": "n2", "goal": 0 },
+            { "zh": "你好！我叫雨果，我是研究生。你叫什么名字？", "py": "Nǐ hǎo! Wǒ jiào Yǔguǒ, wǒ shì yánjiūshēng. Nǐ jiào shénme míngzi?", "es": "¡Hola! Me llamo Hugo, soy estudiante de máster. ¿Cómo te llamas?", "keywords": ["叫", "研究生"], "next": "n2", "goal": 0 }
+          ],
+          "hint": "我是… / 我叫… + nacionalidad: 我是西班牙人."
+        },
+        "n2": {
+          "npc": { "zh": "我叫小李，我也住在这个宿舍。你的房间在三楼。累不累？", "py": "Wǒ jiào Xiǎo Lǐ, wǒ yě zhù zài zhège sùshè. Nǐ de fángjiān zài sān lóu. Lèi bu lèi?", "es": "Me llamo Xiao Li y también vivo en esta residencia. Tu habitación está en el tercer piso. ¿Estás cansado?" },
+          "user": [
+            { "zh": "有一点儿累。我昨天晚上在飞机上没睡觉。", "py": "Yǒu yìdiǎnr lèi. Wǒ zuótiān wǎnshang zài fēijī shang méi shuìjiào.", "es": "Un poco. Anoche no dormí en el avión.", "keywords": ["有一点儿累", "没睡觉"], "next": "n3", "goal": 0 },
+            { "zh": "不累，挺好的！上海今天天气很好。", "py": "Bú lèi, tǐng hǎo de! Shànghǎi jīntiān tiānqì hěn hǎo.", "es": "No, ¡estoy muy bien! Hoy hace muy buen tiempo en Shanghái.", "keywords": ["挺好的", "天气"], "next": "n3", "goal": 0 }
+          ],
+          "hint": "有一点儿累 / 挺好的. Lo que no pasó: 没 + verbo (sin 了)."
+        },
+        "n3": {
+          "npc": { "zh": "我们加一下儿微信吧！你扫我的二维码。", "py": "Wǒmen jiā yíxiàr Wēixìn ba! Nǐ sǎo wǒ de èrwéimǎ.", "es": "¡Agreguémonos en WeChat! Escanea mi código QR." },
+          "user": [
+            { "zh": "对不起，我的手机没电了。", "py": "Duìbuqǐ, wǒ de shǒujī méi diàn le.", "es": "Perdona, me he quedado sin batería.", "keywords": ["没电了"], "next": "n4", "goal": 1 },
+            { "zh": "好，我扫一下儿……好了！", "py": "Hǎo, wǒ sǎo yíxiàr…… hǎo le!", "es": "Vale, lo escaneo… ¡Listo!", "keywords": ["扫一下儿"], "next": "n5", "goal": 1 }
+          ],
+          "hint": "El 了 del cambio: 没电了. O escanea: 扫一下儿."
+        },
+        "n4": {
+          "npc": { "zh": "没关系，我有充电宝，你用吧。你的手机号码是多少？", "py": "Méi guānxi, wǒ yǒu chōngdiànbǎo, nǐ yòng ba. Nǐ de shǒujī hàomǎ shì duōshao?", "es": "No pasa nada, tengo batería externa: úsala. ¿Cuál es tu número de móvil?" },
+          "user": [
+            { "zh": "谢谢！我没有中国的手机号码，明天去买手机卡。", "py": "Xièxie! Wǒ méiyǒu Zhōngguó de shǒujī hàomǎ, míngtiān qù mǎi shǒujīkǎ.", "es": "¡Gracias! No tengo número chino: mañana voy a comprar una tarjeta SIM.", "keywords": ["没有", "手机卡"], "next": "n5", "goal": 1 },
+            { "zh": "谢谢你！我的号码是幺三九，二六八七，五四幺零。", "py": "Xièxie nǐ! Wǒ de hàomǎ shì yāo sān jiǔ, èr liù bā qī, wǔ sì yāo líng.", "es": "¡Gracias! Mi número es el 139 2687 5410.", "keywords": ["幺三九"], "next": "n5", "goal": 1 }
+          ],
+          "hint": "Número por grupos y con 幺; o explica que no tienes (没有)."
+        },
+        "n5": {
+          "npc": { "zh": "快十二点了，你饿了吗？我们去食堂吃饭，还是叫外卖？", "py": "Kuài shí'èr diǎn le, nǐ è le ma? Wǒmen qù shítáng chīfàn, háishi jiào wàimài?", "es": "Ya casi son las doce. ¿Tienes hambre? ¿Vamos a comer al comedor o pedimos comida a domicilio?" },
+          "user": [
+            { "zh": "饿了！我们去食堂吧，我想吃饺子。", "py": "È le! Wǒmen qù shítáng ba, wǒ xiǎng chī jiǎozi.", "es": "¡Sí! Vamos al comedor: me apetecen unos jiaozi.", "keywords": ["饿了", "食堂"], "next": "n6", "goal": 2 },
+            { "zh": "我有一点儿累，我们叫外卖吧。", "py": "Wǒ yǒu yìdiǎnr lèi, wǒmen jiào wàimài ba.", "es": "Estoy un poco cansado: pidamos comida a domicilio.", "keywords": ["外卖"], "next": "n6", "goal": 2 }
+          ],
+          "hint": "饿了 (cambio) + 还是: elige una de las dos opciones."
+        },
+        "n6": {
+          "npc": { "zh": "好！明天上午你做什么？", "py": "Hǎo! Míngtiān shàngwǔ nǐ zuò shénme?", "es": "¡Vale! ¿Qué haces mañana por la mañana?" },
+          "user": [
+            { "zh": "明天上午我想跟你一起坐地铁去学校看看。", "py": "Míngtiān shàngwǔ wǒ xiǎng gēn nǐ yìqǐ zuò dìtiě qù xuéxiào kànkan.", "es": "Mañana por la mañana quiero ir contigo en metro a ver la universidad.", "keywords": ["跟你一起", "坐地铁"], "next": "n7", "goal": 3 },
+            { "zh": "明天上午我要去银行，下午去商场买东西。", "py": "Míngtiān shàngwǔ wǒ yào qù yínháng, xiàwǔ qù shāngchǎng mǎi dōngxi.", "es": "Mañana por la mañana tengo que ir al banco y por la tarde al centro comercial a comprar cosas.", "keywords": ["银行", "商场"], "next": "n7", "goal": 3 }
+          ],
+          "hint": "Frase completa: tiempo + 我 + 想/要 + 跟…一起 + 坐… + 去… + verbo."
+        },
+        "n7": {
+          "npc": { "zh": "好，明天八点我在宿舍门口等你。别忘了你的手机！", "py": "Hǎo, míngtiān bā diǎn wǒ zài sùshè ménkǒu děng nǐ. Bié wàng le nǐ de shǒujī!", "es": "Vale, mañana a las ocho te espero en la puerta de la residencia. ¡No te olvides el móvil!" },
+          "user": [
+            { "zh": "好，我记得！谢谢你，小李。", "py": "Hǎo, wǒ jìde! Xièxie nǐ, Xiǎo Lǐ.", "es": "¡Vale, me acordaré! Gracias, Xiao Li.", "keywords": ["记得", "谢谢"], "next": "n8" },
+            { "zh": "不会忘！晚上我给你发微信。", "py": "Bú huì wàng! Wǎnshang wǒ gěi nǐ fā Wēixìn.", "es": "¡No se me olvidará! Esta noche te mando un WeChat.", "keywords": ["给你发微信"], "next": "n8" }
+          ],
+          "hint": "Contesta a 别忘了…: 我记得 / 不会忘."
+        },
+        "n8": {
+          "npc": { "zh": "不客气！你好好休息，明天见！", "py": "Bú kèqi! Nǐ hǎohǎo xiūxi, míngtiān jiàn!", "es": "¡De nada! Descansa bien. ¡Hasta mañana!" },
+          "end": true,
+          "feedback": "Has usado casi todo el A1 en un solo día: presentarte, 有一点儿 / 挺好的, 没 + verbo, el 了 del cambio (没电了, 饿了, 快十二点了), 还是, el número con 幺, 给 + persona + 发微信 y una frase completa con todos los huecos para mañana."
+        }
+      }
+    },
+    {
+      "id": "a1-u21-call-home",
+      "title": "Por la noche, videollamada a casa",
+      "zh": "妈妈，我今天挺好的！",
+      "level": 1,
+      "setting": "Son las diez de la noche en Shanghái (las tres de la tarde en España). Hugo hace una videollamada a su madre para contarle su primer día. Tú (la app) eres la madre de Hugo, que ha aprendido un poco de chino para practicar con él.",
+      "role": "madre de Hugo",
+      "roleZh": "妈妈",
+      "voice": "f",
+      "goals": ["Contar lo que has hecho hoy con 了 y lo que no con 没", "Hablar del tiempo y de cómo te encuentras", "Hablar de la gente nueva", "Contar el plan de mañana con una frase completa"],
+      "vocab": ["了", "没", "天气", "身体", "挺", "朋友", "明天", "坐地铁"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "喂，雨果！你在做什么呢？", "py": "Wéi, Yǔguǒ! Nǐ zài zuò shénme ne?", "es": "¡Hola, Hugo! ¿Qué estás haciendo?" },
+          "user": [
+            { "zh": "妈妈！我在宿舍休息呢。今天我挺好的！", "py": "Māma! Wǒ zài sùshè xiūxi ne. Jīntiān wǒ tǐng hǎo de!", "es": "¡Mamá! Estoy descansando en la residencia. ¡Hoy estoy muy bien!", "keywords": ["在宿舍", "挺好的"], "next": "n2", "goal": 1 },
+            { "zh": "我正在给你打电话呢！", "py": "Wǒ zhèngzài gěi nǐ dǎ diànhuà ne!", "es": "¡Pues llamarte a ti!", "keywords": ["正在", "给你打电话"], "next": "n2" }
+          ],
+          "hint": "(正)在 + verbo + 呢."
+        },
+        "n2": {
+          "npc": { "zh": "你今天做什么了？", "py": "Nǐ jīntiān zuò shénme le?", "es": "¿Qué has hecho hoy?" },
+          "user": [
+            { "zh": "我中午跟小李一起去食堂吃了饺子，下午去超市买了东西。", "py": "Wǒ zhōngwǔ gēn Xiǎo Lǐ yìqǐ qù shítáng chī le jiǎozi, xiàwǔ qù chāoshì mǎi le dōngxi.", "es": "A mediodía he ido con Xiao Li al comedor a comer jiaozi y por la tarde he ido al súper a comprar cosas.", "keywords": ["吃了", "买了"], "next": "n3", "goal": 0 },
+            { "zh": "我加了很多同学的微信。我没去学校。", "py": "Wǒ jiā le hěn duō tóngxué de Wēixìn. Wǒ méi qù xuéxiào.", "es": "He agregado a muchos compañeros en WeChat. No he ido a la universidad.", "keywords": ["加了", "没去"], "next": "n3", "goal": 0 }
+          ],
+          "hint": "Lo que hiciste: verbo + 了. Lo que no: 没 + verbo, sin 了."
+        },
+        "n3": {
+          "npc": { "zh": "上海天气怎么样？冷吗？", "py": "Shànghǎi tiānqì zěnmeyàng? Lěng ma?", "es": "¿Qué tiempo hace en Shanghái? ¿Hace frío?" },
+          "user": [
+            { "zh": "今天不冷，二十度，挺凉快的。", "py": "Jīntiān bù lěng, èrshí dù, tǐng liángkuai de.", "es": "Hoy no hace frío: veinte grados, se está fresquito.", "keywords": ["二十度", "凉快"], "next": "n4", "goal": 1 },
+            { "zh": "下午下雨了，现在不下雨了。", "py": "Xiàwǔ xià yǔ le, xiànzài bú xià yǔ le.", "es": "Por la tarde se ha puesto a llover; ahora ya no llueve.", "keywords": ["下雨了", "不下雨了"], "next": "n4", "goal": 1 }
+          ],
+          "hint": "Grados + adjetivo, o el 了 del cambio (下雨了 / 不下雨了)."
+        },
+        "n4": {
+          "npc": { "zh": "你身体怎么样？累不累？", "py": "Nǐ shēntǐ zěnmeyàng? Lèi bu lèi?", "es": "¿Qué tal estás? ¿Estás cansado?" },
+          "user": [
+            { "zh": "有一点儿累，头有点儿疼。我现在就睡觉。", "py": "Yǒu yìdiǎnr lèi, tóu yǒudiǎnr téng. Wǒ xiànzài jiù shuìjiào.", "es": "Un poco cansado, y me duele un poco la cabeza. Me voy a dormir ahora mismo.", "keywords": ["累", "头疼"], "next": "n5", "goal": 1 },
+            { "zh": "不累，我身体很好！", "py": "Bú lèi, wǒ shēntǐ hěn hǎo!", "es": "No, ¡estoy muy bien!", "keywords": ["身体很好"], "next": "n5", "goal": 1 }
+          ],
+          "hint": "Persona + parte del cuerpo + 疼; 有一点儿 + algo negativo."
+        },
+        "n5": {
+          "npc": { "zh": "你认识新朋友了吗？", "py": "Nǐ rènshi xīn péngyou le ma?", "es": "¿Has conocido a gente nueva?" },
+          "user": [
+            { "zh": "认识了！小李是中国人，他挺好的。大卫是美国人。", "py": "Rènshi le! Xiǎo Lǐ shì Zhōngguó rén, tā tǐng hǎo de. Dàwèi shì Měiguó rén.", "es": "¡Sí! Xiao Li es chino y es muy majo. David es estadounidense.", "keywords": ["认识了", "挺好的"], "next": "n6", "goal": 2 },
+            { "zh": "我们宿舍有不少外国人，有的是美国人，有的是英国人。", "py": "Wǒmen sùshè yǒu bù shǎo wàiguó rén, yǒude shì Měiguó rén, yǒude shì Yīngguó rén.", "es": "En la residencia hay bastantes extranjeros: unos son estadounidenses y otros, ingleses.", "keywords": ["不少", "有的"], "next": "n6", "goal": 2 }
+          ],
+          "hint": "认识了 + presenta a alguien; 不少 / 有的…有的…"
+        },
+        "n6": {
+          "npc": { "zh": "太好了！明天你做什么？", "py": "Tài hǎo le! Míngtiān nǐ zuò shénme?", "es": "¡Estupendo! ¿Qué haces mañana?" },
+          "user": [
+            { "zh": "明天上午我跟小李一起坐地铁去学校看看。", "py": "Míngtiān shàngwǔ wǒ gēn Xiǎo Lǐ yìqǐ zuò dìtiě qù xuéxiào kànkan.", "es": "Mañana por la mañana voy con Xiao Li en metro a ver la universidad.", "keywords": ["跟小李一起", "坐地铁"], "next": "n7", "goal": 3 },
+            { "zh": "明天下午我要在宿舍给王老师发微信，问一下儿上课的时间。", "py": "Míngtiān xiàwǔ wǒ yào zài sùshè gěi Wáng lǎoshī fā Wēixìn, wèn yíxiàr shàngkè de shíjiān.", "es": "Mañana por la tarde tengo que escribirle a la profesora Wang por WeChat desde la residencia para preguntarle el horario de clase.", "keywords": ["给王老师发微信"], "next": "n7", "goal": 3 }
+          ],
+          "hint": "Frase completa: tiempo + 我 + (想/要) + 跟…一起 / 在… + verbo(s) + objeto."
+        },
+        "n7": {
+          "npc": { "zh": "好。快十一点了，你快去睡觉吧！", "py": "Hǎo. Kuài shíyī diǎn le, nǐ kuài qù shuìjiào ba!", "es": "Bien. Ya casi son las once: ¡vete a dormir!" },
+          "user": [
+            { "zh": "好，妈妈，晚安！", "py": "Hǎo, māma, wǎn'ān!", "es": "¡Vale, mamá, buenas noches!", "keywords": ["晚安"], "next": "n8" },
+            { "zh": "好的。别忘了给我发照片！", "py": "Hǎo de. Bié wàng le gěi wǒ fā zhàopiàn!", "es": "Vale. ¡No te olvides de mandarme fotos!", "keywords": ["别忘了"], "next": "n8" }
+          ],
+          "hint": "Despídete: 晚安. O un último aviso con 别忘了."
+        },
+        "n8": {
+          "npc": { "zh": "晚安，雨果！", "py": "Wǎn'ān, Yǔguǒ!", "es": "¡Buenas noches, Hugo!" },
+          "end": true,
+          "feedback": "Has contado tu día con 了 (吃了, 买了) y 没 (没去), has hablado del tiempo y de la salud, has presentado a gente nueva con 挺 y 不少, y has dicho tu plan de mañana con una frase larga en el orden del esqueleto. ¡Esto es el A1 completo!"
+        }
+      }
+    }
+  ]
+}

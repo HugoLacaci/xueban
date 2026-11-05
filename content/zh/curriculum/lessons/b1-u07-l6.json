@@ -1,0 +1,139 @@
+{
+  "id": "b1-u07-l6",
+  "title": "En un momento: 不一会儿 y 一会儿…一会儿…",
+  "zh": "天气一会儿冷，一会儿热",
+  "goal": "Contar que algo pasa al poco rato (不一会儿…就…) y que algo cambia una y otra vez (一会儿…，一会儿…), hablando de generaciones y familias.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "父亲", "pinyin": "fùqin", "es": "padre (más formal que 爸爸)" },
+    { "hanzi": "母亲", "pinyin": "mǔqin", "es": "madre (más formal que 妈妈)" },
+    { "hanzi": "子女", "pinyin": "zǐnǚ", "es": "hijos (e hijas)", "note": "Palabra formal: 父母和子女." },
+    { "hanzi": "代", "pinyin": "dài", "es": "generación; en lugar de", "note": "三代人 = tres generaciones; 年轻一代 = la generación joven." },
+    { "hanzi": "离婚", "pinyin": "líhūn", "es": "divorciarse", "note": "Verbo separable: 离了婚." },
+    { "hanzi": "成长", "pinyin": "chéngzhǎng", "es": "crecer, madurar (una persona)" },
+    { "hanzi": "成熟", "pinyin": "chéngshú", "es": "maduro; madurar" },
+    { "hanzi": "转变", "pinyin": "zhuǎnbiàn", "es": "cambiar, dar un giro; cambio (de actitud, de idea)" },
+    { "hanzi": "变为", "pinyin": "biànwéi", "es": "convertirse en (escrito)", "note": "≈ 变成, más formal." },
+    { "hanzi": "仍", "pinyin": "réng", "es": "todavía, aún (escrito)" },
+    { "hanzi": "仍然", "pinyin": "réngrán", "es": "todavía, seguir (igual)", "note": "≈ 还, más formal: 他仍然住在老家." },
+    { "hanzi": "产生", "pinyin": "chǎnshēng", "es": "producirse, surgir (un problema, una idea, un sentimiento)" }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "不一会儿，雨就停了。", "py": "Bù yíhuìr, yǔ jiù tíng le.", "es": "Al poco rato dejó de llover." },
+        { "zh": "上海的天气一会儿冷，一会儿热。", "py": "Shànghǎi de tiānqì yíhuìr lěng, yíhuìr rè.", "es": "En Shanghái el tiempo tan pronto hace frío como calor." },
+        { "zh": "孩子一会儿哭，一会儿笑。", "py": "Háizi yíhuìr kū, yíhuìr xiào.", "es": "El niño ahora llora, ahora ríe." }
+      ]
+    },
+    { "type": "vocab", "title": "Padres, hijos y generaciones", "words": ["父亲", "母亲", "子女", "代", "离婚", "成长", "成熟", "转变", "变为", "仍", "仍然", "产生"] },
+    {
+      "type": "phonetics-drill",
+      "title": "一会儿, 不一会儿 y el vaivén de 一会儿…一会儿…",
+      "markdown": "**一会儿 yíhuìr**: 一 delante de cuarto tono pasa a **yí**, y 会儿 se funde en una sílaba con la lengua doblada (*huìr*).\n\n**不一会儿 bù yíhuìr**: 不 se queda en **bù** porque lo que sigue (*yí*) ya no es cuarto tono.\n\n**一会儿…，一会儿…** se dice como un **vaivén**: la primera parte termina **alta** (en suspenso) y la segunda **cae**: 一会儿冷↗，一会儿热↘. Los dos 一会儿 van rápidos; el peso está en lo que cambia (冷 / 热).\n\nPalabras de hoy: **仍然 réngrán** (dos *r* seguidas, la lengua doblada sin vibrar), **离婚 líhūn**, **子女 zǐnǚ** (3 + 3 → *zí nǚ*).",
+      "items": [
+        { "audio": "一会儿", "options": ["yíhuìr", "yìhuìr", "yīhuìr"], "answer": 0, "explain": "一 + 4.º tono → yí." },
+        { "audio": "不一会儿", "options": ["bù yíhuìr", "bú yíhuìr", "bù yìhuìr"], "answer": 0, "explain": "不 solo cambia delante de cuarto tono; aquí sigue yí." },
+        { "audio": "天气一会儿冷，一会儿热。", "prompt": "¿Cómo acaba la primera parte?", "options": ["Alta, en suspenso", "Cayendo del todo", "Con pregunta"], "answer": 0 },
+        { "audio": "仍然", "options": ["réngrán", "léngrán", "rēngrǎn"], "answer": 0, "explain": "La r china no vibra: lengua doblada, como una «y» rozada." },
+        { "audio": "子女", "options": ["zǐnǚ", "zìnǚ", "zǐnǔ"], "answer": 0, "explain": "nǚ con ü (labios redondos)." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["代", "熟"],
+      "mnemonics": {
+        "代": "亻 (persona) + 弋 (una estaca): una persona que ocupa el puesto de otra → sustituir; y las personas que se van sustituyendo en el tiempo → generación.",
+        "熟": "孰 (da el sonido) + 灬 (fuego): lo que ha pasado por el fuego está hecho, cocido → maduro (成熟), conocido (熟人)."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "不一会儿，…就… / 一会儿…，一会儿…",
+      "markdown": "Ya conoces **一会儿** «un rato»: 等**一会儿** (espera un momento), 我**一会儿**就来 (vengo dentro de un rato). Hoy, dos usos nuevos:\n\n**1. 不一会儿 + 就** = «al poco rato, en nada»: cuenta algo **pasado** que ocurrió muy pronto.\n> **不一会儿，**雨**就**停了。\n\nVa **delante del sujeto** con coma (*Tiempo inicial*), y **就** en *Adverbios*. Para el **futuro** no se usa: 我**一会儿**就来 (✗ 我不一会儿就来).\n\n**2. 一会儿 A，一会儿 B** = «tan pronto A como B, ahora A, ahora B»: cambios que van y vienen.\n> 天气**一会儿**冷，**一会儿**热。\n\nCada 一会儿 va en *Adverbios* de su parte; como en todas las frases de dos partes, **una fila por parte**. El sujeto se dice una vez, delante del primer 一会儿.\n\nRecuerda la diferencia con **越来越** (un cambio en una sola dirección): 天气越来越冷 frente a 天气一会儿冷，一会儿热.",
+      "focus": ["time0", "adverb"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "time0": { "zh": "不一会儿，", "py": "bù yíhuìr," }, "subject": { "zh": "雨", "py": "yǔ" }, "adverb": { "zh": "就", "py": "jiù" }, "verb1": { "zh": "停", "py": "tíng" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Al poco rato dejó de llover.", "esOrder": [{ "text": "Al poco rato", "slot": "time0" }, { "text": "dejó de llover", "slot": "verb1" }] },
+        { "slots": { "time0": { "zh": "不一会儿，", "py": "bù yíhuìr," }, "subject": { "zh": "妈妈", "py": "māma" }, "adverb": { "zh": "就", "py": "jiù" }, "verb1": { "zh": "做好了", "py": "zuòhǎo le" }, "object": { "zh": "四个菜", "py": "sì ge cài" } }, "end": "。", "es": "En nada, mi madre preparó cuatro platos." },
+        { "slots": { "subject": { "zh": "天气", "py": "tiānqì" }, "adverb": { "zh": "一会儿", "py": "yíhuìr" }, "verb1": { "zh": "冷", "py": "lěng" } }, "end": "，", "es": "El tiempo tan pronto hace frío… (1.ª parte)" },
+        { "slots": { "adverb": { "zh": "一会儿", "py": "yíhuìr" }, "verb1": { "zh": "热", "py": "rè" } }, "end": "。", "es": "…como calor. (2.ª parte)" },
+        { "slots": { "subject": { "zh": "孩子", "py": "háizi" }, "adverb": { "zh": "一会儿", "py": "yíhuìr" }, "verb1": { "zh": "哭", "py": "kū" } }, "end": "，", "es": "El niño ahora llora… (1.ª parte)" },
+        { "slots": { "adverb": { "zh": "一会儿", "py": "yíhuìr" }, "verb1": { "zh": "笑", "py": "xiào" } }, "end": "。", "es": "…ahora ríe. (2.ª parte)" },
+        { "slots": { "subject": { "zh": "小李", "py": "Xiǎo Lǐ" }, "adverb": { "zh": "一会儿", "py": "yíhuìr" }, "verb1": { "zh": "进来", "py": "jìnlai" } }, "end": "，", "es": "Xiao Li tan pronto entra… (1.ª parte)" },
+        { "slots": { "adverb": { "zh": "一会儿", "py": "yíhuìr" }, "verb1": { "zh": "出去", "py": "chūqu" }, "complement": { "zh": "忙得很", "py": "máng de hěn" } }, "end": "。", "es": "…como sale: está muy liado. (2.ª parte)" }
+      ],
+      "negative": [
+        { "slots": { "time0": { "zh": "不一会儿，", "py": "bù yíhuìr," }, "subject": { "zh": "孩子", "py": "háizi" }, "adverb": { "zh": "就不", "py": "jiù bù" }, "verb1": { "zh": "哭", "py": "kū" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Al poco rato el niño dejó de llorar." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "adverb": { "zh": "怎么一会儿", "py": "zěnme yíhuìr" }, "verb1": { "zh": "说", "py": "shuō" }, "object": { "zh": "去", "py": "qù" } }, "end": "，", "es": "¿Cómo es que tan pronto dices que vas… (1.ª parte)" },
+        { "slots": { "adverb": { "zh": "一会儿", "py": "yíhuìr" }, "verb1": { "zh": "说", "py": "shuō" }, "object": { "zh": "不去", "py": "bú qù" } }, "end": "？", "es": "…como que no vas? (2.ª parte)" }
+      ],
+      "mistakes": [
+        { "wrong": "我不一会儿就来。", "right": "我一会儿就来。", "why": "不一会儿 solo cuenta algo ya pasado. Para «dentro de un rato», 一会儿 (sin 不)." },
+        { "wrong": "不一会儿，雨停了就。", "right": "不一会儿，雨就停了。", "why": "就 es un adverbio: detrás del sujeto, delante del verbo." },
+        { "wrong": "一会儿天气冷，一会儿天气热。", "right": "天气一会儿冷，一会儿热。", "why": "Con el mismo sujeto, se dice una vez y delante: 一会儿 va detrás." },
+        { "wrong": "天气一会儿越来越冷，一会儿热。", "right": "天气一会儿冷，一会儿热。", "why": "一会儿…一会儿 es ir y venir; no se mezcla con 越来越 (un cambio en una sola dirección)." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Tres generaciones",
+      "lines": [
+        { "speaker": "雨果", "zh": "上海的天气真奇怪，一会儿下雨，一会儿出太阳。", "py": "Shànghǎi de tiānqì zhēn qíguài, yíhuìr xià yǔ, yíhuìr chū tàiyáng.", "es": "Qué tiempo tan raro el de Shanghái: tan pronto llueve como sale el sol." },
+        { "speaker": "小李", "zh": "别着急，不一会儿就会停。我们先在这儿坐一会儿吧。", "py": "Bié zháojí, bù yíhuìr jiù huì tíng. Wǒmen xiān zài zhèr zuò yíhuìr ba.", "es": "Tranquilo, enseguida para. Sentémonos aquí un rato." },
+        { "speaker": "雨果", "zh": "你们家几代人住在一起？", "py": "Nǐmen jiā jǐ dài rén zhù zài yìqǐ?", "es": "¿Cuántas generaciones vivís juntas en tu casa?" },
+        { "speaker": "小李", "zh": "从前是三代人，现在爷爷奶奶仍然住在农村，我父母住在城里。", "py": "Cóngqián shì sān dài rén, xiànzài yéye nǎinai réngrán zhù zài nóngcūn, wǒ fùmǔ zhù zài chéng li.", "es": "Antes éramos tres generaciones; ahora mis abuelos siguen viviendo en el campo y mis padres en la ciudad." },
+        { "speaker": "雨果", "zh": "你父亲跟你的想法一样吗？", "py": "Nǐ fùqin gēn nǐ de xiǎngfǎ yíyàng ma?", "es": "¿Tu padre piensa como tú?" },
+        { "speaker": "小李", "zh": "不太一样。我们常常会产生不同的看法。他一会儿说我太年轻，一会儿又说我应该成熟一点儿。", "py": "Bú tài yíyàng. Wǒmen chángcháng huì chǎnshēng bùtóng de kànfǎ. Tā yíhuìr shuō wǒ tài niánqīng, yíhuìr yòu shuō wǒ yīnggāi chéngshú yìdiǎnr.", "es": "No mucho. A menudo tenemos opiniones distintas. Tan pronto dice que soy demasiado joven como que debería ser más maduro." },
+        { "speaker": "雨果", "zh": "哈哈，我父亲也一样！", "py": "Hāhā, wǒ fùqin yě yíyàng!", "es": "¡Jaja, mi padre igual!" },
+        { "speaker": "小李", "zh": "不过我母亲很理解我。她说子女成长的时候，父母也要转变自己的看法。", "py": "Búguò wǒ mǔqin hěn lǐjiě wǒ. Tā shuō zǐnǚ chéngzhǎng de shíhou, fùmǔ yě yào zhuǎnbiàn zìjǐ de kànfǎ.", "es": "Pero mi madre me entiende mucho. Dice que, mientras los hijos crecen, los padres también tienen que cambiar su forma de ver las cosas." },
+        { "speaker": "雨果", "zh": "在西班牙，很多父母离婚以后，孩子一会儿住在爸爸家，一会儿住在妈妈家。", "py": "Zài Xībānyá, hěn duō fùmǔ líhūn yǐhòu, háizi yíhuìr zhù zài bàba jiā, yíhuìr zhù zài māma jiā.", "es": "En España, cuando muchos padres se divorcian, los hijos pasan una temporada en casa del padre y otra en casa de la madre." },
+        { "speaker": "小李", "zh": "中国现在离婚的人也越来越多了。", "py": "Zhōngguó xiànzài líhūn de rén yě yuèláiyuè duō le.", "es": "En China ahora también hay cada vez más gente que se divorcia." },
+        { "speaker": "雨果", "zh": "你看，不一会儿，雨就停了！", "py": "Nǐ kàn, bù yíhuìr, yǔ jiù tíng le!", "es": "Mira, ¡en nada ha dejado de llover!" },
+        { "speaker": "小李", "zh": "我没说错吧？走，我们去吃饭！", "py": "Wǒ méi shuōcuò ba? Zǒu, wǒmen qù chī fàn!", "es": "¿Ves como tenía razón? ¡Venga, vamos a comer!" }
+      ],
+      "notes": "Fíjate en los dos 一会儿 de la línea 2: 不一会儿就会停 (enseguida para) y 坐一会儿 (sentarse un rato). 父亲 / 母亲 son más formales que 爸爸 / 妈妈: se usan al hablar de ellos con alguien de fuera, en textos y en formularios. 一会儿住在爸爸家，一会儿住在妈妈家 expresa una alternancia de temporadas, no de minutos: 一会儿 puede ser cualquier lapso."
+    },
+    { "type": "exercises", "count": 16, "bank": ["g-dates-time", "g-word-order", "a1-u08"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "time0": { "zh": "不一会儿，" }, "subject": { "zh": "雨" }, "adverb": { "zh": "就" }, "verb1": { "zh": "停" }, "particle": { "zh": "了" } }, "end": "。", "es": "Al poco rato dejó de llover." }, "distractors": ["一会儿"] },
+        { "sentence": { "slots": { "subject": { "zh": "上海的天气" }, "adverb": { "zh": "一会儿" }, "verb1": { "zh": "冷" } }, "end": "，", "es": "En Shanghái el tiempo tan pronto hace frío… (1.ª parte)" }, "distractors": ["越"] },
+        { "sentence": { "slots": { "adverb": { "zh": "一会儿" }, "verb1": { "zh": "热" } }, "end": "。", "es": "…como calor. (2.ª parte)" } },
+        { "sentence": { "slots": { "time0": { "zh": "不一会儿，" }, "subject": { "zh": "小李的母亲" }, "adverb": { "zh": "就" }, "place": { "zh": "在家里" }, "verb1": { "zh": "做好了" }, "object": { "zh": "一大桌菜" } }, "end": "。", "es": "En nada, la madre de Xiao Li preparó en casa una mesa llena de platos." } },
+        { "sentence": { "slots": { "subject": { "zh": "爷爷奶奶" }, "adverb": { "zh": "仍然" }, "verb1": { "zh": "住在" }, "object": { "zh": "农村的老房子里" } }, "end": "。", "es": "Los abuelos siguen viviendo en la casa vieja del campo." } }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "不一会儿，雨就停了。", "py": "Bù yíhuìr, yǔ jiù tíng le.", "es": "Al poco rato dejó de llover." },
+        { "zh": "上海的天气一会儿冷，一会儿热。", "py": "Shànghǎi de tiānqì yíhuìr lěng, yíhuìr rè.", "es": "En Shanghái el tiempo tan pronto hace frío como calor." },
+        { "zh": "爷爷奶奶仍然住在农村。", "py": "Yéye nǎinai réngrán zhù zài nóngcūn.", "es": "Los abuelos siguen viviendo en el campo." },
+        { "zh": "我一会儿就来。", "py": "Wǒ yíhuìr jiù lái.", "es": "Vengo dentro de un rato." }
+      ],
+      "respond": [
+        { "q": { "zh": "你们家几代人住在一起？", "py": "Nǐmen jiā jǐ dài rén zhù zài yìqǐ?", "es": "¿Cuántas generaciones vivís juntas en tu casa?" }, "model": { "zh": "两代人。我爷爷奶奶住在别的城市。", "py": "Liǎng dài rén. Wǒ yéye nǎinai zhù zài bié de chéngshì.", "es": "Dos. Mis abuelos viven en otra ciudad." } },
+        { "q": { "zh": "你家乡的天气怎么样？", "py": "Nǐ jiāxiāng de tiānqì zěnmeyàng?", "es": "¿Qué tiempo hace en tu ciudad natal?" }, "model": { "zh": "春天的时候一会儿冷，一会儿热，夏天特别热。", "py": "Chūntiān de shíhou yíhuìr lěng, yíhuìr rè, xiàtiān tèbié rè.", "es": "En primavera tan pronto hace frío como calor; en verano, muchísimo calor." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Padres e hijos",
+      "text": "从前，中国很多家庭都是三代人住在一起，爷爷奶奶、父母和子女都在一个家里。现在，很多年轻人去大城市工作，老人仍然住在农村，一家人一年只见一两次。小李说，他跟父亲常常会产生不同的看法。父亲一会儿说他太年轻，一会儿说他应该成熟一点儿。可是他的母亲很理解他。她觉得，子女成长的时候，父母也要成长，也要转变自己的看法。社会变化得很快，以前很少有人离婚，现在离婚的人越来越多了。有人说，“家”的样子也在变：从“大家”变为“小家”。不过，不管家怎么变，过年的时候，大家仍然要回家。那天晚上，一家人坐在一起吃饭，不一会儿，桌子上的饺子就吃完了。",
+      "es": "Antes, en China muchas familias vivían tres generaciones juntas: abuelos, padres e hijos bajo el mismo techo. Ahora muchos jóvenes se van a trabajar a las grandes ciudades, los mayores siguen viviendo en el campo y la familia solo se ve una o dos veces al año. Xiao Li dice que a menudo él y su padre tienen opiniones distintas. Su padre tan pronto dice que es demasiado joven como que debería ser más maduro. Pero su madre lo entiende muy bien. Ella cree que, mientras los hijos crecen, los padres también tienen que madurar y cambiar su forma de ver las cosas. La sociedad cambia muy deprisa: antes casi nadie se divorciaba y ahora cada vez hay más divorcios. Hay quien dice que la forma de la familia también está cambiando: de «familia grande» a «familia pequeña». Pero cambie como cambie la familia, en Año Nuevo todo el mundo sigue volviendo a casa. Esa noche la familia cena junta y, en nada, se acaban los jiaozi de la mesa.",
+      "questions": [
+        { "q": "¿Dónde siguen viviendo muchos mayores?", "options": ["农村", "大城市", "外国"], "answer": 0 },
+        { "q": "¿Qué opina la madre de Xiao Li?", "options": ["Que los padres también tienen que cambiar su forma de ver las cosas", "Que Xiao Li es demasiado joven", "Que hay que vivir tres generaciones juntas"], "answer": 0 },
+        { "q": "¿Qué significa 从“大家”变为“小家”?", "options": ["De familia grande a familia pequeña", "De la ciudad al campo", "De los abuelos a los nietos"], "answer": 0 },
+        { "q": "¿Qué pasa con los jiaozi en Año Nuevo?", "options": ["不一会儿就吃完了", "一会儿热，一会儿冷", "没有人吃"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

@@ -1,0 +1,699 @@
+{
+  "id": "a1-u08-l1",
+  "title": "Estoy cansado: el adjetivo es el predicado",
+  "zh": "我很累",
+  "goal": "Describir personas y cosas con 很 + adjetivo, sin 是, y negarlo con 不.",
+  "minutes": 14,
+  "reviewed": false,
+  "vocab": [
+    {
+      "hanzi": "很",
+      "pinyin": "hěn",
+      "es": "muy",
+      "note": "Con un adjetivo es casi obligatorio y apenas significa «muy»: 我很累 = estoy cansado."
+    },
+    {
+      "hanzi": "累",
+      "pinyin": "lèi",
+      "es": "cansado"
+    },
+    {
+      "hanzi": "小",
+      "pinyin": "xiǎo",
+      "es": "pequeño"
+    },
+    {
+      "hanzi": "少",
+      "pinyin": "shǎo",
+      "es": "poco, pocos",
+      "note": "人很少 = hay poca gente. Ya lo viste en 多少."
+    },
+    {
+      "hanzi": "新",
+      "pinyin": "xīn",
+      "es": "nuevo"
+    },
+    {
+      "hanzi": "老",
+      "pinyin": "lǎo",
+      "es": "viejo, mayor, antiguo",
+      "note": "También 老朋友 (viejo amigo) y en 老师."
+    },
+    {
+      "hanzi": "快",
+      "pinyin": "kuài",
+      "es": "rápido"
+    },
+    {
+      "hanzi": "慢",
+      "pinyin": "màn",
+      "es": "lento"
+    },
+    {
+      "hanzi": "难",
+      "pinyin": "nán",
+      "es": "difícil"
+    },
+    {
+      "hanzi": "长",
+      "pinyin": "cháng",
+      "es": "largo",
+      "note": "Otro carácter con dos lecturas: zhǎng = crecer."
+    },
+    {
+      "hanzi": "短",
+      "pinyin": "duǎn",
+      "es": "corto"
+    }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        {
+          "zh": "我很累。",
+          "py": "Wǒ hěn lèi.",
+          "es": "Estoy cansado."
+        },
+        {
+          "zh": "汉语不难。",
+          "py": "Hànyǔ bù nán.",
+          "es": "El chino no es difícil."
+        },
+        {
+          "zh": "你累吗？",
+          "py": "Nǐ lèi ma?",
+          "es": "¿Estás cansado?"
+        }
+      ]
+    },
+    {
+      "type": "vocab",
+      "title": "Adjetivos básicos",
+      "words": [
+        "很",
+        "累",
+        "小",
+        "少",
+        "新",
+        "老",
+        "快",
+        "慢",
+        "难",
+        "长",
+        "短"
+      ]
+    },
+    {
+      "type": "phonetics-drill",
+      "title": "Entonación de pregunta frente a tono",
+      "markdown": "En español una pregunta **sube al final**: *¿Estás cansado?* ↗. En chino **no puedes subir la última sílaba a tu gusto**, porque cambiarías su tono (y la palabra).\n\n- En **你累吗？** el adjetivo **累 lèi** sigue en **4.º tono** (cae), aunque sea pregunta.\n- Lo que marca la pregunta es **吗**: corto, flojo, en tono neutro.\n- Si quieres sonar más interrogativo, sube **un poco toda la frase**, no la última sílaba.\n\nMalo: *nǐ lèi MÁ?* ↗ · Bueno: nǐ lèi ma? (累 cae, 吗 ligero).",
+      "items": [
+        {
+          "audio": "你累吗？",
+          "prompt": "¿Qué tono tiene 累 en esta pregunta?",
+          "options": [
+            "4.º (cae), como siempre",
+            "2.º (sube, porque es pregunta)",
+            "1.º (alto y plano)"
+          ],
+          "answer": 0,
+          "explain": "El tono de cada sílaba no cambia en una pregunta."
+        },
+        {
+          "audio": "你忙吗？",
+          "prompt": "¿Qué tono tiene 忙?",
+          "options": [
+            "1.º",
+            "2.º",
+            "3.º",
+            "4.º"
+          ],
+          "answer": 1,
+          "explain": "忙 máng es 2.º tono, en afirmativa y en pregunta."
+        },
+        {
+          "audio": "汉语难吗？",
+          "prompt": "¿Qué sílaba marca la pregunta?",
+          "options": [
+            "吗, átono y corto",
+            "难, que sube más",
+            "汉, que sube"
+          ],
+          "answer": 0,
+          "explain": "La pregunta la lleva 吗."
+        },
+        {
+          "audio": "慢",
+          "options": [
+            "màn",
+            "mán",
+            "mǎn"
+          ],
+          "answer": 0,
+          "explain": "4.º tono: cae."
+        },
+        {
+          "audio": "长",
+          "options": [
+            "cháng",
+            "zhǎng",
+            "chán"
+          ],
+          "answer": 0,
+          "explain": "«Largo» = cháng (2.º, con -ng)."
+        }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": [
+        "小",
+        "少"
+      ],
+      "mnemonics": {
+        "小": "Un trazo central con dos puntitos a los lados: algo que se parte en trozos pequeños.",
+        "少": "小 (pequeño) + 丿 (un corte más): lo pequeño, recortado otra vez, queda en poco."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "Sujeto + 很 + adjetivo (sin 是)",
+      "markdown": "En chino el adjetivo **ya funciona como verbo**: 累 no es solo «cansado», es «**estar** cansado». Por eso **no lleva 是**: ~~我是累~~ → **我很累**.\n\n- **很** es casi obligatorio en una afirmación normal. Sin él, 我累 suena incompleto o a contraste («yo sí estoy cansado, otros no»). Dicho sin énfasis, 很 apenas significa «muy»; si quieres decir «muy» de verdad, **acentúalo** (HĚN lèi) o usa otro grado (lección 3).\n- **Negativa**: 不 + adjetivo, **sin 很**: 我**不**累.\n- **Pregunta**: adjetivo + 吗, **sin 很**: 你累吗？\n\nEn el esqueleto, 很 va en el hueco **Adverbios** y el adjetivo en **Verbo**.",
+      "focus": [
+        "adverb",
+        "verb1"
+      ],
+      "compare": true,
+      "sentences": [
+        {
+          "slots": {
+            "subject": {
+              "zh": "我",
+              "py": "wǒ"
+            },
+            "adverb": {
+              "zh": "很",
+              "py": "hěn"
+            },
+            "verb1": {
+              "zh": "累",
+              "py": "lèi"
+            }
+          },
+          "end": "。",
+          "es": "Estoy cansado.",
+          "esOrder": [
+            {
+              "text": "(Yo)",
+              "slot": "subject"
+            },
+            {
+              "text": "estoy"
+            },
+            {
+              "text": "cansado",
+              "slot": "verb1"
+            }
+          ]
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "汉语",
+              "py": "Hànyǔ"
+            },
+            "adverb": {
+              "zh": "很",
+              "py": "hěn"
+            },
+            "verb1": {
+              "zh": "难",
+              "py": "nán"
+            }
+          },
+          "end": "。",
+          "es": "El chino es difícil.",
+          "esOrder": [
+            {
+              "text": "El chino",
+              "slot": "subject"
+            },
+            {
+              "text": "es"
+            },
+            {
+              "text": "difícil",
+              "slot": "verb1"
+            }
+          ]
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "我的房子",
+              "py": "wǒ de fángzi"
+            },
+            "adverb": {
+              "zh": "很",
+              "py": "hěn"
+            },
+            "verb1": {
+              "zh": "小",
+              "py": "xiǎo"
+            }
+          },
+          "end": "。",
+          "es": "Mi casa es pequeña."
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "王老师",
+              "py": "Wáng lǎoshī"
+            },
+            "adverb": {
+              "zh": "很",
+              "py": "hěn"
+            },
+            "verb1": {
+              "zh": "忙",
+              "py": "máng"
+            }
+          },
+          "end": "。",
+          "es": "La profesora Wang está ocupada."
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "这个学校",
+              "py": "zhège xuéxiào"
+            },
+            "adverb": {
+              "zh": "很",
+              "py": "hěn"
+            },
+            "verb1": {
+              "zh": "新",
+              "py": "xīn"
+            }
+          },
+          "end": "。",
+          "es": "Esta universidad es nueva."
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "小李",
+              "py": "Xiǎo Lǐ"
+            },
+            "time": {
+              "zh": "今天",
+              "py": "jīntiān"
+            },
+            "adverb": {
+              "zh": "很",
+              "py": "hěn"
+            },
+            "verb1": {
+              "zh": "累",
+              "py": "lèi"
+            }
+          },
+          "end": "。",
+          "es": "Xiao Li está cansado hoy."
+        }
+      ],
+      "negative": [
+        {
+          "slots": {
+            "subject": {
+              "zh": "我",
+              "py": "wǒ"
+            },
+            "adverb": {
+              "zh": "不",
+              "py": "bú"
+            },
+            "verb1": {
+              "zh": "累",
+              "py": "lèi"
+            }
+          },
+          "end": "。",
+          "es": "No estoy cansado."
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "汉语",
+              "py": "Hànyǔ"
+            },
+            "adverb": {
+              "zh": "不",
+              "py": "bù"
+            },
+            "verb1": {
+              "zh": "难",
+              "py": "nán"
+            }
+          },
+          "end": "。",
+          "es": "El chino no es difícil."
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "我们的老师",
+              "py": "wǒmen de lǎoshī"
+            },
+            "adverb": {
+              "zh": "不",
+              "py": "bù"
+            },
+            "verb1": {
+              "zh": "老",
+              "py": "lǎo"
+            }
+          },
+          "end": "。",
+          "es": "Nuestro profesor no es mayor."
+        }
+      ],
+      "question": [
+        {
+          "slots": {
+            "subject": {
+              "zh": "你",
+              "py": "nǐ"
+            },
+            "verb1": {
+              "zh": "累",
+              "py": "lèi"
+            },
+            "particle": {
+              "zh": "吗",
+              "py": "ma"
+            }
+          },
+          "end": "？",
+          "es": "¿Estás cansado?"
+        },
+        {
+          "slots": {
+            "subject": {
+              "zh": "汉语",
+              "py": "Hànyǔ"
+            },
+            "verb1": {
+              "zh": "难",
+              "py": "nán"
+            },
+            "particle": {
+              "zh": "吗",
+              "py": "ma"
+            }
+          },
+          "end": "？",
+          "es": "¿Es difícil el chino?"
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "我是很累。",
+          "right": "我很累。",
+          "why": "El adjetivo ya hace de verbo: no lleva 是 (ni para «ser» ni para «estar»)."
+        },
+        {
+          "wrong": "汉语是难。",
+          "right": "汉语很难。",
+          "why": "Sin 是, y con 很 para que la frase quede completa."
+        },
+        {
+          "wrong": "我很不累。",
+          "right": "我不累。",
+          "why": "Para negar basta 不; 很不 es muy enfático («nada de nada»)."
+        },
+        {
+          "wrong": "你很累吗？",
+          "right": "你累吗？",
+          "why": "En la pregunta con 吗 se quita 很 (si no, preguntas «¿estás MUY cansado?»)."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Después de cuatro horas de clase",
+      "lines": [
+        {
+          "speaker": "安娜",
+          "zh": "雨果，你累吗？",
+          "py": "Yǔguǒ, nǐ lèi ma?",
+          "es": "Hugo, ¿estás cansado?"
+        },
+        {
+          "speaker": "雨果",
+          "zh": "我很累。今天我六点起床。",
+          "py": "Wǒ hěn lèi. Jīntiān wǒ liù diǎn qǐchuáng.",
+          "es": "Sí, mucho. Hoy me he levantado a las seis."
+        },
+        {
+          "speaker": "安娜",
+          "zh": "六点？很早！",
+          "py": "Liù diǎn? Hěn zǎo!",
+          "es": "¿A las seis? ¡Qué pronto!"
+        },
+        {
+          "speaker": "雨果",
+          "zh": "对。汉语很难。你不累吗？",
+          "py": "Duì. Hànyǔ hěn nán. Nǐ bú lèi ma?",
+          "es": "Sí. El chino es difícil. ¿Tú no estás cansada?"
+        },
+        {
+          "speaker": "安娜",
+          "zh": "我不累。我的汉语课很短，一个小时。",
+          "py": "Wǒ bú lèi. Wǒ de Hànyǔ kè hěn duǎn, yí ge xiǎoshí.",
+          "es": "No. Mi clase de chino es corta: una hora."
+        },
+        {
+          "speaker": "雨果",
+          "zh": "我的课很长，四个小时！",
+          "py": "Wǒ de kè hěn cháng, sì ge xiǎoshí!",
+          "es": "¡Mi clase es larga: cuatro horas!"
+        },
+        {
+          "speaker": "安娜",
+          "zh": "你的学校大吗？",
+          "py": "Nǐ de xuéxiào dà ma?",
+          "es": "¿Es grande tu universidad?"
+        },
+        {
+          "speaker": "雨果",
+          "zh": "不大，很小，人也很少。",
+          "py": "Bú dà, hěn xiǎo, rén yě hěn shǎo.",
+          "es": "No, es pequeña, y hay poca gente."
+        }
+      ],
+      "notes": "很早！ con exclamación equivale a «¡qué pronto!». Fíjate en que 人很少 dice «hay poca gente» con un adjetivo, sin verbo «haber»."
+    },
+    {
+      "type": "exercises",
+      "count": 14,
+      "bank": [
+        "g-hen-adj",
+        "u10"
+      ]
+    },
+    {
+      "type": "sentence-builder",
+      "items": [
+        {
+          "sentence": {
+            "slots": {
+              "subject": {
+                "zh": "我",
+                "py": "wǒ"
+              },
+              "adverb": {
+                "zh": "很",
+                "py": "hěn"
+              },
+              "verb1": {
+                "zh": "累",
+                "py": "lèi"
+              }
+            },
+            "end": "。",
+            "es": "Estoy cansado."
+          },
+          "distractors": [
+            "是"
+          ]
+        },
+        {
+          "sentence": {
+            "slots": {
+              "subject": {
+                "zh": "汉语",
+                "py": "Hànyǔ"
+              },
+              "adverb": {
+                "zh": "不",
+                "py": "bù"
+              },
+              "verb1": {
+                "zh": "难",
+                "py": "nán"
+              }
+            },
+            "end": "。",
+            "es": "El chino no es difícil."
+          },
+          "distractors": [
+            "很"
+          ]
+        },
+        {
+          "sentence": {
+            "slots": {
+              "subject": {
+                "zh": "你的房子",
+                "py": "nǐ de fángzi"
+              },
+              "verb1": {
+                "zh": "小",
+                "py": "xiǎo"
+              },
+              "particle": {
+                "zh": "吗",
+                "py": "ma"
+              }
+            },
+            "end": "？",
+            "es": "¿Es pequeña tu casa?"
+          },
+          "distractors": [
+            "很"
+          ]
+        },
+        {
+          "sentence": {
+            "slots": {
+              "subject": {
+                "zh": "我们的汉语老师",
+                "py": "wǒmen de Hànyǔ lǎoshī"
+              },
+              "time": {
+                "zh": "今天",
+                "py": "jīntiān"
+              },
+              "adverb": {
+                "zh": "很",
+                "py": "hěn"
+              },
+              "verb1": {
+                "zh": "忙",
+                "py": "máng"
+              }
+            },
+            "end": "。",
+            "es": "Nuestra profesora de chino está muy ocupada hoy."
+          },
+          "distractors": [
+            "是"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        {
+          "zh": "我很累。",
+          "py": "Wǒ hěn lèi.",
+          "es": "Estoy cansado."
+        },
+        {
+          "zh": "汉语不难。",
+          "py": "Hànyǔ bù nán.",
+          "es": "El chino no es difícil."
+        },
+        {
+          "zh": "你忙吗？",
+          "py": "Nǐ máng ma?",
+          "es": "¿Estás ocupado?"
+        },
+        {
+          "zh": "我的课很长。",
+          "py": "Wǒ de kè hěn cháng.",
+          "es": "Mi clase es larga."
+        }
+      ],
+      "respond": [
+        {
+          "q": {
+            "zh": "你累吗？",
+            "py": "Nǐ lèi ma?",
+            "es": "¿Estás cansado?"
+          },
+          "model": {
+            "zh": "我不累。",
+            "py": "Wǒ bú lèi.",
+            "es": "No estoy cansado."
+          }
+        },
+        {
+          "q": {
+            "zh": "汉语难吗？",
+            "py": "Hànyǔ nán ma?",
+            "es": "¿Es difícil el chino?"
+          },
+          "model": {
+            "zh": "汉语很难。",
+            "py": "Hànyǔ hěn nán.",
+            "es": "El chino es difícil."
+          }
+        }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "La universidad de Hugo",
+      "text": "雨果的学校很大，学生很多。他的汉语课很长，四个小时。汉语很难，他每天都很累。他的房子很小，也很老。他的床很新。",
+      "es": "La universidad de Hugo es grande y tiene muchos estudiantes. Su clase de chino es larga: cuatro horas. El chino es difícil y está cansado todos los días. Su casa es pequeña y vieja. Su cama es nueva.",
+      "questions": [
+        {
+          "q": "¿Cómo es la universidad?",
+          "options": [
+            "Grande",
+            "Pequeña",
+            "Vieja"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "¿Cuánto dura la clase de chino?",
+          "options": [
+            "Cuatro horas",
+            "Una hora",
+            "Dos horas"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "¿Cómo es su casa?",
+          "options": [
+            "Pequeña y vieja",
+            "Grande y nueva",
+            "Pequeña y nueva"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "type": "notes-growth"
+    }
+  ]
+}

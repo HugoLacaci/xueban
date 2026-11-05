@@ -1,0 +1,132 @@
+{
+  "id": "a1-u16-l1",
+  "title": "¿Cuánto cuesta? 块, 毛 y 分",
+  "zh": "这个多少钱？",
+  "goal": "Preguntar el precio con 多少钱 y entender precios en 块 / 毛 (元 / 角 en lo escrito), también «por unidad» (三块一个).",
+  "minutes": 14,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "钱", "pinyin": "qián", "es": "dinero", "note": "多少钱 = ¿cuánto cuesta?" },
+    { "hanzi": "块", "pinyin": "kuài", "es": "yuan (hablado)", "note": "Lit. «trozo». 一块 = un yuan." },
+    { "hanzi": "毛", "pinyin": "máo", "es": "diez céntimos de yuan (hablado)", "note": "10 毛 = 1 块." },
+    { "hanzi": "分", "pinyin": "fēn", "es": "céntimo de yuan", "note": "Ya lo conoces de la hora (八点十分). Casi no se usa al pagar." },
+    { "hanzi": "元", "pinyin": "yuán", "es": "yuan (escrito)", "note": "En etiquetas y tiques: 24元, ¥24." },
+    { "hanzi": "角", "pinyin": "jiǎo", "es": "diez céntimos (escrito)", "note": "= 毛 en lo hablado." },
+    { "hanzi": "人民币", "pinyin": "rénmínbì", "es": "renminbi, la moneda china", "note": "Lit. «moneda del pueblo»." },
+    { "hanzi": "商店", "pinyin": "shāngdiàn", "es": "tienda" },
+    { "hanzi": "超市", "pinyin": "chāoshì", "es": "supermercado" },
+    { "hanzi": "斤", "pinyin": "jīn", "es": "jin, medio kilo", "note": "Fruta, verdura y huevos se venden por 斤 (500 g)." },
+    { "hanzi": "份", "pinyin": "fèn", "es": "ración, porción (clasificador)", "note": "一份饺子 = una ración de jiaozi." }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "这个多少钱？", "py": "Zhège duōshao qián?", "es": "¿Cuánto cuesta esto?" },
+        { "zh": "包子三块一个。", "py": "Bāozi sān kuài yí ge.", "es": "Los baozi, a tres yuanes cada uno." },
+        { "zh": "鸡蛋多少钱一斤？", "py": "Jīdàn duōshao qián yì jīn?", "es": "¿A cuánto está el medio kilo de huevos?" }
+      ]
+    },
+    { "type": "vocab", "title": "El dinero chino", "words": ["钱", "块", "毛", "分", "元", "角", "人民币", "商店", "超市", "斤", "份"] },
+    {
+      "type": "phonetics-drill",
+      "title": "kuài, máo y la final «uai»",
+      "markdown": "**块 kuài**: la final **uai** encadena u-a-i en una sola sílaba, como «guay» dicho con k. Y la **k** lleva soplo: no es la «c» de «casa», que en español casi no sopla.\n\n**毛 máo**: la **ao** es «a» que se cierra hacia «o» (como en «Mao»), con segundo tono, que sube.\n\n**钱 qián**: q con soplo + **ian**, que suena casi «ien»: *qián* ≈ «chien».",
+      "items": [
+        { "audio": "块", "options": ["kuài", "guài", "kuì"], "answer": 0, "explain": "k con soplo + uai." },
+        { "audio": "毛", "options": ["máo", "mǎo", "móu"], "answer": 0, "explain": "Segundo tono, sube." },
+        { "audio": "钱", "options": ["qián", "jián", "qiáng"], "answer": 0, "explain": "q con soplo; termina en -n, no en -ng." },
+        { "audio": "人民币", "options": ["rénmínbì", "lénmínbì", "rénmíngbì"], "answer": 0, "explain": "r (no l), y 民 termina en -n." },
+        { "audio": "两块", "options": ["liǎng kuài", "liàng kuài", "liǎng guài"], "answer": 0, "explain": "Dos yuanes: 两 (no 二) + 块." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["钱", "块"],
+      "mnemonics": {
+        "钱": "钅 (metal) + 戋 (pista del sonido): el dinero de antes eran monedas de metal. 钅 también está en 铁 (hierro) de 地铁.",
+        "块": "土 (tierra) + 夬: un trozo, un pedazo (一块地 «un trozo de tierra»). Las monedas de plata eran «trozos», y de ahí 一块钱."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "Precios: número + 块 (+ 毛)",
+      "markdown": "**La escalera del dinero**: 1 块 = 10 毛 = 100 分. En lo **escrito** (etiquetas, tiques) verás 元 y 角; al **hablar**, 块 y 毛.\n\n**Cómo se lee un precio**:\n- ¥24 → 二十四**块** (钱 al final es opcional: 二十四块钱).\n- ¥12.50 → 十二块五 (毛): la última unidad se puede callar.\n- ¥0.50 → 五毛. ¥2 → **两**块 (no 二块). ¥0.20 → 两毛.\n- Precios grandes, como en la U4: ¥250 → 两百五十块; ¥3800 → 三千八百块.\n\n**Sin 是**: el precio va directamente detrás de la cosa, como un adjetivo: 这本书**二十四块**。 (En la negativa sí aparece: 不是二十四块.)\n\n**Por unidad**: precio + unidad → 包子**三块一个** («a tres yuanes cada uno»); 鸡蛋**六块五一斤**. Para preguntar: 多少钱一个？ / 多少钱一斤？",
+      "focus": ["object"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "这本书", "py": "zhè běn shū" }, "object": { "zh": "二十四块", "py": "èrshísì kuài" } }, "end": "。", "es": "Este libro cuesta veinticuatro yuanes.", "esOrder": [{ "text": "Este libro", "slot": "subject" }, { "text": "cuesta" }, { "text": "veinticuatro yuanes", "slot": "object" }] },
+        { "slots": { "subject": { "zh": "包子", "py": "bāozi" }, "object": { "zh": "三块一个", "py": "sān kuài yí ge" } }, "end": "。", "es": "Los baozi, a tres yuanes cada uno.", "esOrder": [{ "text": "Los baozi", "slot": "subject" }, { "text": "a tres yuanes cada uno", "slot": "object" }] },
+        { "slots": { "subject": { "zh": "一杯茶", "py": "yì bēi chá" }, "object": { "zh": "十二块五", "py": "shí'èr kuài wǔ" } }, "end": "。", "es": "Un té cuesta doce yuanes cincuenta." },
+        { "slots": { "subject": { "zh": "这件衣服", "py": "zhè jiàn yīfu" }, "object": { "zh": "两百五十块", "py": "liǎngbǎi wǔshí kuài" } }, "end": "。", "es": "Esta prenda cuesta doscientos cincuenta yuanes." },
+        { "slots": { "subject": { "zh": "这个电脑", "py": "zhège diànnǎo" }, "object": { "zh": "三千八百块钱", "py": "sānqiān bābǎi kuài qián" } }, "end": "。", "es": "Este ordenador cuesta tres mil ochocientos yuanes." },
+        { "slots": { "subject": { "zh": "鸡蛋", "py": "jīdàn" }, "object": { "zh": "六块五一斤", "py": "liù kuài wǔ yì jīn" } }, "end": "。", "es": "Los huevos, a seis cincuenta el medio kilo." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "这本书", "py": "zhè běn shū" }, "adverb": { "zh": "不", "py": "bú" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "二十四块", "py": "èrshísì kuài" } }, "end": "。", "es": "Este libro no cuesta veinticuatro yuanes." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "这个", "py": "zhège" }, "object": { "zh": "多少钱", "py": "duōshao qián" } }, "end": "？", "es": "¿Cuánto cuesta esto?" },
+        { "slots": { "subject": { "zh": "饺子", "py": "jiǎozi" }, "object": { "zh": "多少钱一份", "py": "duōshao qián yí fèn" } }, "end": "？", "es": "¿Cuánto cuesta una ración de jiaozi?" }
+      ],
+      "mistakes": [
+        { "wrong": "这本书是二十四块。", "right": "这本书二十四块。", "why": "En la afirmativa el precio va sin 是, directamente detrás de la cosa." },
+        { "wrong": "二块", "right": "两块", "why": "Delante de 块 y 毛, el 2 es 两: 两块, 两毛 (pero 十二块, 二十块)." },
+        { "wrong": "一个三块包子", "right": "包子三块一个", "why": "Precio por unidad: cosa + precio + unidad." },
+        { "wrong": "这个几钱？", "right": "这个多少钱？", "why": "Para el dinero se usa 多少, no 几." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "En el súper de al lado",
+      "lines": [
+        { "speaker": "雨果", "zh": "你好，请问，包子多少钱一个？", "py": "Nǐ hǎo, qǐngwèn, bāozi duōshao qián yí ge?", "es": "Hola, perdone, ¿a cuánto están los baozi?" },
+        { "speaker": "服务员", "zh": "三块一个。", "py": "Sān kuài yí ge.", "es": "A tres yuanes cada uno." },
+        { "speaker": "雨果", "zh": "我要两个。鸡蛋呢？鸡蛋多少钱一斤？", "py": "Wǒ yào liǎng ge. Jīdàn ne? Jīdàn duōshao qián yì jīn?", "es": "Quiero dos. ¿Y los huevos? ¿A cuánto está el medio kilo?" },
+        { "speaker": "服务员", "zh": "鸡蛋六块五一斤。", "py": "Jīdàn liù kuài wǔ yì jīn.", "es": "Los huevos, a seis cincuenta el medio kilo." },
+        { "speaker": "雨果", "zh": "我要一斤。牛奶呢？", "py": "Wǒ yào yì jīn. Niúnǎi ne?", "es": "Quiero medio kilo. ¿Y la leche?" },
+        { "speaker": "服务员", "zh": "这瓶牛奶八块。", "py": "Zhè píng niúnǎi bā kuài.", "es": "Esta botella de leche cuesta ocho yuanes." },
+        { "speaker": "雨果", "zh": "好，也要一瓶。", "py": "Hǎo, yě yào yì píng.", "es": "Vale, también quiero una." },
+        { "speaker": "服务员", "zh": "包子六块，鸡蛋六块五，牛奶八块：二十块五。", "py": "Bāozi liù kuài, jīdàn liù kuài wǔ, niúnǎi bā kuài: èrshí kuài wǔ.", "es": "Baozi, seis; huevos, seis cincuenta; leche, ocho: veinte cincuenta." },
+        { "speaker": "雨果", "zh": "给你二十一块。", "py": "Gěi nǐ èrshíyī kuài.", "es": "Aquí tiene veintiún yuanes." },
+        { "speaker": "服务员", "zh": "找你五毛。谢谢！", "py": "Zhǎo nǐ wǔ máo. Xièxie!", "es": "Le devuelvo cincuenta céntimos. ¡Gracias!" }
+      ],
+      "notes": "找 es «buscar», pero al pagar significa «dar el cambio»: 找你五毛 «te devuelvo cinco mao». 给你 «aquí tienes» (lit. «te doy») lo verás a fondo en la lección 3. Hoy casi todo se paga con el móvil, pero los precios se dicen igual."
+    },
+    { "type": "exercises", "count": 15, "bank": ["g-price-age", "g-numbers", "g-measure-words", "u06"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "包子" }, "object": { "zh": "三块一个" } }, "end": "。", "es": "Los baozi, a tres yuanes cada uno." }, "distractors": ["是"] },
+        { "sentence": { "slots": { "subject": { "zh": "这本书" }, "object": { "zh": "二十四块" } }, "end": "。", "es": "Este libro cuesta veinticuatro yuanes." }, "distractors": ["二块"] },
+        { "sentence": { "slots": { "subject": { "zh": "这个" }, "object": { "zh": "多少钱" } }, "end": "？", "es": "¿Cuánto cuesta esto?" }, "distractors": ["几", "吗"] },
+        { "sentence": { "slots": { "time0": { "zh": "明天上午" }, "subject": { "zh": "我" }, "aux": { "zh": "想" }, "with": { "zh": "跟安娜一起" }, "verb1": { "zh": "去超市" }, "verb2": { "zh": "买" }, "object": { "zh": "牛奶" } }, "end": "。", "es": "Mañana por la mañana quiero ir al súper con Anna a comprar leche." }, "distractors": ["卖"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "这个多少钱？", "py": "Zhège duōshao qián?", "es": "¿Cuánto cuesta esto?" },
+        { "zh": "包子三块一个。", "py": "Bāozi sān kuài yí ge.", "es": "Los baozi, a tres yuanes cada uno." },
+        { "zh": "鸡蛋多少钱一斤？", "py": "Jīdàn duōshao qián yì jīn?", "es": "¿A cuánto está el medio kilo de huevos?" },
+        { "zh": "一杯茶十二块五。", "py": "Yì bēi chá shí'èr kuài wǔ.", "es": "Un té, doce cincuenta." }
+      ],
+      "respond": [
+        { "q": { "zh": "包子多少钱一个？（¥3）", "py": "Bāozi duōshao qián yí ge?", "es": "¿A cuánto están los baozi? (¥3)" }, "model": { "zh": "包子三块一个。", "py": "Bāozi sān kuài yí ge.", "es": "A tres yuanes cada uno." } },
+        { "q": { "zh": "这本书多少钱？（¥24）", "py": "Zhè běn shū duōshao qián?", "es": "¿Cuánto cuesta este libro? (¥24)" }, "model": { "zh": "这本书二十四块。", "py": "Zhè běn shū èrshísì kuài.", "es": "Cuesta veinticuatro yuanes." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "La lista de precios",
+      "text": "宿舍旁边有一个小超市。包子三块一个，鸡蛋六块五一斤，牛奶八块一瓶，饺子十五块一份。雨果每天早上去超市买两个包子和一瓶牛奶，十四块钱。",
+      "es": "Al lado de la residencia hay un supermercado pequeño. Los baozi están a tres yuanes cada uno; los huevos, a seis cincuenta el medio kilo; la leche, a ocho la botella, y los jiaozi, a quince la ración. Todas las mañanas Hugo va al súper a comprar dos baozi y una botella de leche: catorce yuanes.",
+      "questions": [
+        { "q": "¿Cuánto cuesta una ración de jiaozi?", "options": ["15 yuanes", "3 yuanes", "8 yuanes"], "answer": 0 },
+        { "q": "¿Qué compra Hugo cada mañana?", "options": ["Dos baozi y una leche", "Huevos y leche", "Una ración de jiaozi"], "answer": 0 },
+        { "q": "¿Cuánto gasta?", "options": ["14 yuanes", "6 yuanes", "20,50 yuanes"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

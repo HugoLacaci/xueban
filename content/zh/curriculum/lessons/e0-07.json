@@ -1,0 +1,74 @@
+{
+  "id": "e0-07",
+  "title": "Reglas de escritura del pinyin",
+  "zh": "拼音拼写规则",
+  "goal": "Escribir pinyin correctamente: y/w, la ü sin puntos, las abreviaturas iu/ui/un, dónde va la tilde, el apóstrofo y las mayúsculas.",
+  "minutes": 13,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "六", "pinyin": "liù", "es": "seis", "note": "Se pronuncia «liou», pero se escribe abreviado: l + iou → liù." },
+    { "hanzi": "对", "pinyin": "duì", "es": "sí, correcto", "note": "d + uei → duì (se oye una «e» breve: «duei»)." },
+    { "hanzi": "水", "pinyin": "shuǐ", "es": "agua", "note": "sh + uei → shuǐ. En ui la tilde va sobre la segunda vocal." },
+    { "hanzi": "女儿", "pinyin": "nǚ'ér", "es": "hija", "note": "Tras n y l la ü conserva los puntos (nǚ ≠ nǔ). El apóstrofo separa nǚ y ér." },
+    { "hanzi": "西安", "pinyin": "Xī'ān", "es": "Xi'an (ciudad)", "note": "Sin apóstrofo se leería xiān, una sola sílaba. Nombre propio: mayúscula." },
+    { "hanzi": "有", "pinyin": "yǒu", "es": "tener; haber", "note": "La final iou sin inicial se escribe you." }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "他有水。", "py": "Tā yǒu shuǐ.", "es": "Él tiene agua." },
+        { "zh": "他去西安。", "py": "Tā qù Xī'ān.", "es": "Él va a Xi'an." },
+        { "zh": "对，是六。", "py": "Duì, shì liù.", "es": "Sí, es (el) seis." }
+      ]
+    },
+    { "type": "vocab", "title": "Seis palabras que esconden una regla", "words": ["六", "对", "水", "女儿", "西安", "有"] },
+    {
+      "type": "phonetics-drill",
+      "title": "Oigo una cosa, escribo otra",
+      "markdown": "Ya sabes pronunciar casi todas las sílabas. Hoy toca **escribirlas**: el pinyin tiene convenciones que no cambian el sonido, pero sí la forma escrita.\n\nEscucha cada palabra y elige la **forma bien escrita**. Las opciones incorrectas «suenan» parecido, pero no son pinyin válido: **liù** (nunca *lioù*), **duì** (nunca *duèi*), **yǒu** (nunca *iǒu*).",
+      "items": [
+        { "audio": "六", "options": ["liù", "lioù", "lìu"], "answer": 0, "explain": "l + iou se abrevia en iu, y la tilde va sobre la segunda vocal: liù." },
+        { "audio": "对", "options": ["duèi", "dùi", "duì"], "answer": 2, "explain": "d + uei se abrevia en ui; la tilde, otra vez sobre la segunda: duì." },
+        { "audio": "有", "options": ["iǒu", "yǒu", "yoǔ"], "answer": 1, "explain": "Sin inicial, i se escribe y: iou → you. La tilde va en la o (a > o > e)." },
+        { "audio": "去", "options": ["qù", "qǜ", "qiù"], "answer": 0, "explain": "Tras j, q, x, y la ü pierde los puntos: se escribe qù, pero suena con ü." },
+        { "audio": "鱼", "options": ["ǘ", "yǘ", "yú"], "answer": 2, "explain": "La ü sin inicial se escribe yu, y tras y ya no lleva puntos." },
+        { "audio": "西安", "options": ["Xiān", "Xī'ān", "Xīān"], "answer": 1, "explain": "Dos sílabas (xī + ān): el apóstrofo evita leer xiān. Es un nombre propio, con mayúscula." },
+        { "audio": "水", "options": ["shuǐ", "shǔi", "shuěi"], "answer": 0, "explain": "sh + uei → shui, y en ui la tilde va sobre la i (el punto de la i desaparece bajo la tilde)." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["水"],
+      "mnemonics": {
+        "水": "Pictograma de una corriente: el trazo central con gancho es el cauce y los cuatro trazos de los lados, las salpicaduras. A la izquierda de otro carácter se comprime en 氵 «tres gotas» (海 de 上海: mar)."
+      }
+    },
+    {
+      "type": "explain",
+      "title": "Las siete reglas de escritura",
+      "markdown": "### 1. y y w: cuando no hay inicial\nUna sílaba no puede empezar por **i**, **u** o **ü** sueltas: se escriben con **y** o **w**.\n\n| Sin inicial | Se escribe |\n|---|---|\n| i, in, ing | **yi**, **yin**, **ying** (se añade y) |\n| ia, ie, iao, iou, ian, iang, iong | **ya**, **ye**, **yao**, **you**, **yan**, **yang**, **yong** (i → y) |\n| u | **wu** (se añade w) |\n| ua, uo, uai, uei, uan, uen, uang, ueng | **wa**, **wo**, **wai**, **wei**, **wan**, **wen**, **wang**, **weng** (u → w) |\n| ü, üe, üan, ün | **yu**, **yue**, **yuan**, **yun** (se añade y y se quitan los puntos) |\n\nLa y y la w **no suenan como consonantes españolas**: yi es solo «i», wu es solo «u». (Por eso 五 es wǔ y 一 es yī.)\n\n### 2. La ü pierde los puntos tras j, q, x, y\nj, q, x nunca van con u, así que no hay confusión: **ju, qu, xu, yu, jue, quan, xun** llevan **ü** aunque no se vea (去 qù, 鱼 yú). Tras **n** y **l** los puntos se quedan, porque ahí sí existen las dos: **nǚ** (女) ≠ **nǔ**, **lǜ** ≠ **lù**. En el teclado, la ü se escribe con **v**: nv3 → nǚ.\n\n### 3. Tres abreviaturas tras consonante\n- **iou → iu**: l + iou = **liù** (六)\n- **uei → ui**: d + uei = **duì** (对), sh + uei = **shuǐ** (水)\n- **uen → un**: ch + uen = **chūn**\n\nLa vocal que desaparece **se sigue oyendo un poco**: liù suena «liou». Sin consonante delante no se abrevia: **you, wei, wen**.\n\n### 4. Dónde va la tilde\nLa marca de tono va sobre una vocal, por este orden de preferencia: **a > o > e**. Si la sílaba tiene a, va en la a (hǎo, xiān); si no, en la o (yǒu, guó); si no, en la e (xiè, Běi).\nSi no hay a, o ni e, va sobre la **única vocal** (nǐ, qù, nǚ) o, en **iu** y **ui**, sobre la **segunda**: liù, duì, shuǐ. Sobre la i, la tilde **sustituye al punto**: ī í ǐ ì.\n\n### 5. El apóstrofo\nCuando dentro de una palabra una sílaba que empieza por **a, o, e** va detrás de otra, se pone apóstrofo para que no se lea mal: **Xī'ān** (西安, dos sílabas) frente a **xiān** (una), **nǚ'ér** (女儿), **shí'èr** (十二).\n\n### 6. Mayúsculas\nComo en español: al empezar la frase y en los nombres propios: **Zhōngguó**, **Běijīng**, **Xī'ān**. En los nombres de persona, apellido y nombre van separados y los dos con mayúscula: **Wáng Míng**.\n\n### 7. Palabras juntas\nLos caracteres no dejan espacios, pero el pinyin **se escribe por palabras**, no por sílabas: **lǎoshī** (no *lǎo shī*), **xuésheng**, **péngyou**, **Zhōngguó**. Entre palabras sí hay espacio: *Tā qù Běijīng.*"
+    },
+    { "type": "module", "id": "pinyin-rules", "title": "Reglas del pinyin" },
+    {
+      "type": "explain",
+      "title": "Comprueba lo que has aprendido",
+      "markdown": "Intenta escribir el pinyin de estas sílabas sin mirar (pronunciación entre corchetes) y luego comprueba:\n\n1. [l + iou, 4.º tono] → **liù**\n2. [sh + uei, 3.º tono] → **shuǐ**\n3. [ü sola, 2.º tono] → **yú**\n4. [q + ü, 4.º tono] → **qù**\n5. [i + ou sin inicial, 3.º tono] → **yǒu**\n6. [xī + ān] → **Xī'ān**\n\n**Truco**: si dudas dónde va la tilde, busca primero la a; si no hay, la o; si no, la e. Solo si no hay ninguna de las tres miras si es *iu* o *ui*."
+    },
+    { "type": "exercises", "count": 10, "bank": ["u0"] },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "他有水。", "py": "Tā yǒu shuǐ.", "es": "Él tiene agua." },
+        { "zh": "他去西安。", "py": "Tā qù Xī'ān.", "es": "Él va a Xi'an." },
+        { "zh": "对，是六。", "py": "Duì, shì liù.", "es": "Sí, es (el) seis." },
+        { "zh": "谢谢老师！", "py": "Xièxie lǎoshī!", "es": "¡Gracias, profesora!" }
+      ],
+      "respond": [
+        { "q": { "zh": "他有水？", "py": "Tā yǒu shuǐ?", "es": "¿Él tiene agua?" }, "model": { "zh": "对，他有水。", "py": "Duì, tā yǒu shuǐ.", "es": "Sí, tiene agua." } },
+        { "q": { "zh": "他去西安？", "py": "Tā qù Xī'ān?", "es": "¿Él va a Xi'an?" }, "model": { "zh": "不去，他去北京。", "py": "Bú qù, tā qù Běijīng.", "es": "No, va a Pekín." } }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

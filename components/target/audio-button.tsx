@@ -86,7 +86,7 @@ export function useSpaceToPlay(text: string | undefined, enabled = true) {
   }, [text, enabled, tts]);
 }
 
-export function playText(text: string, rate?: number) {
+export function playText(text: string, rate?: number, voice?: "f" | "m" | "child") {
   const tts = useSettings.getState().settings.tts;
-  return speak(text, { rate: rate ?? tts.rate, voiceURI: tts.voiceURI, preferGenerated: tts.preferGenerated });
+  return speak(text, { rate: rate ?? tts.rate, voiceURI: tts.voiceURI, preferGenerated: tts.preferGenerated, voice });
 }

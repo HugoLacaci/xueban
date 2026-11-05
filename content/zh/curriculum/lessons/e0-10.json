@@ -1,0 +1,76 @@
+{
+  "id": "e0-10",
+  "title": "Los cuatro tonos y el neutro",
+  "zh": "声调",
+  "goal": "Reconocer y producir los cuatro tonos y el tono neutro, y escribirlos con tildes o con números.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "妈", "pinyin": "mā", "es": "mamá", "note": "1.er tono: alto y plano (55)." },
+    { "hanzi": "麻", "pinyin": "má", "es": "cáñamo; entumecido", "note": "2.º tono: sube (35). 麻辣 «picante que adormece» es el sabor de Sichuan." },
+    { "hanzi": "马", "pinyin": "mǎ", "es": "caballo", "note": "3.er tono: baja y sube (214); en la frase, casi siempre solo baja (21)." },
+    { "hanzi": "骂", "pinyin": "mà", "es": "regañar, insultar", "note": "4.º tono: cae de golpe (51)." },
+    { "hanzi": "吗", "pinyin": "ma", "es": "(partícula de pregunta sí/no)", "note": "Tono neutro: corto y ligero, sin marca." },
+    { "hanzi": "买", "pinyin": "mǎi", "es": "comprar", "note": "3.er tono." },
+    { "hanzi": "卖", "pinyin": "mài", "es": "vender", "note": "4.º tono. Mismo sonido que 买, otro tono: el contrario." }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "妈妈骂马。", "py": "Māma mà mǎ.", "es": "Mamá regaña al caballo." },
+        { "zh": "他买马吗？", "py": "Tā mǎi mǎ ma?", "es": "¿Compra él un caballo?" },
+        { "zh": "他不买，他卖。", "py": "Tā bù mǎi, tā mài.", "es": "No compra: vende." }
+      ]
+    },
+    { "type": "vocab", "title": "ma, ma, ma, ma, ma (y mai, mai)", "words": ["妈", "麻", "马", "骂", "吗", "买", "卖"] },
+    {
+      "type": "phonetics-drill",
+      "title": "¿Qué tono es?",
+      "markdown": "Una misma sílaba, **ma**, con cuatro melodías distintas, da cuatro palabras distintas. Escucha y elige el tono. Mientras escuchas, **dibuja el tono con la mano** en el aire: arriba y recto (1), hacia arriba (2), abajo y arriba (3), abajo de golpe (4).",
+      "items": [
+        { "audio": "妈", "options": ["1.º (alto y plano)", "2.º (sube)", "3.º (baja y sube)", "4.º (cae)"], "answer": 0 },
+        { "audio": "麻", "options": ["1.º (alto y plano)", "2.º (sube)", "3.º (baja y sube)", "4.º (cae)"], "answer": 1 },
+        { "audio": "马", "options": ["1.º (alto y plano)", "2.º (sube)", "3.º (baja y sube)", "4.º (cae)"], "answer": 2 },
+        { "audio": "骂", "options": ["1.º (alto y plano)", "2.º (sube)", "3.º (baja y sube)", "4.º (cae)"], "answer": 3 },
+        { "audio": "买", "options": ["mǎi (comprar)", "mài (vender)"], "answer": 0, "explain": "Baja hasta el fondo de la voz: 3.er tono." },
+        { "audio": "卖", "options": ["mǎi (comprar)", "mài (vender)"], "answer": 1, "explain": "Cae con fuerza desde arriba: 4.º tono." },
+        { "audio": "妈妈", "prompt": "¿Cómo suena la segunda sílaba?", "options": ["1.er tono, igual que la primera", "Neutro: corta y más baja"], "answer": 1, "explain": "En 妈妈 māma la segunda sílaba es neutra: se escribe sin tilde." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["马"],
+      "mnemonics": {
+        "马": "Pictograma de un caballo de perfil, con la crin al viento: el trazo de arriba es la cabeza, el gancho largo son las patas y el lomo, y el trazo de abajo, la cola. Como componente da el sonido ma: 妈 (女 + 马), 吗 (口 + 马), 骂 (dos bocas sobre 马)."
+      }
+    },
+    {
+      "type": "explain",
+      "title": "Cinco alturas de voz: el esquema de Chao",
+      "markdown": "El lingüista Chao Yuen-ren dividió la altura de la voz de cada persona en **cinco niveles**: 1 es lo más grave que dices cómodamente y 5, lo más agudo. Cada tono se describe con los niveles por los que pasa:\n\n| Tono | Chao | Cómo suena | Truco para un hispanohablante |\n|---|---|---|---|\n| 1.º | **55** | Alto y plano, sostenido | Como cantar una nota larga o el «¡aaa!» del médico. |\n| 2.º | **35** | Sube de medio a alto | Como un «¿eh?» o un «¿sí?» de sorpresa. |\n| 3.º | **214** | Baja hasta el fondo y vuelve a subir | Aislado o al final. Baja la barbilla al decirlo. |\n| 3.º en la frase | **21** | Solo baja y se queda grave | El «medio tercer tono»: lo que oirás casi siempre. |\n| 4.º | **51** | Cae de arriba abajo, rápido | Como un «¡no!» tajante o un «¡ya!». |\n| neutro | — | Corto, ligero, sin melodía propia | Su altura depende de la sílaba anterior. |\n\n**El tercer tono completo (214) es raro.** Delante de otra sílaba se queda en **21**: baja y no sube. Si exageras la subida en todas partes, sonarás forzado. Piensa en el tercer tono como un **tono grave**.\n\nLos **tonos españoles** existen, pero en la frase: «¿Vienes?» sube, «¡Ven!» cae. En chino, cada sílaba lleva su propia melodía, y si la cambias, cambias la palabra."
+    },
+    { "type": "module", "id": "chao-diagram", "title": "Esquema de los tonos" },
+    { "type": "tones" },
+    {
+      "type": "explain",
+      "title": "Mano, color, tilde y número",
+      "markdown": "### Gesto con la mano\nDibuja cada tono en el aire mientras hablas: **—** (1), **/** (2), **V** con la parte de la derecha corta (3), **\\** (4). La mano «arrastra» la voz y la memoria motora ayuda mucho al principio.\n\n### Color por tono\nEn Xuébàn cada tono tiene un color: **1.º rojo**, **2.º verde**, **3.º azul**, **4.º morado** y **neutro gris**. Puedes cambiarlos o desactivarlos en Ajustes. Fíjate en el color cuando aprendas una palabra: es otra forma de recordar el tono.\n\n### Tildes\nLa marca imita el dibujo del tono: **ā** (plano), **á** (sube), **ǎ** (baja y sube), **à** (cae). El neutro **no lleva marca**: 吗 ma, 妈妈 māma. (Dónde se pone la tilde lo viste en la lección de reglas del pinyin: a > o > e.)\n\n### Números\nSi no tienes un teclado con tildes, el tono se escribe con un **número al final de la sílaba**: ma1 = mā, ma2 = má, ma3 = mǎ, ma4 = mà, y **ma5** o **ma** para el neutro. Así funcionan muchos diccionarios y los ejercicios de escribir pinyin de la app: escribe **mai3** y verás **mǎi**.\n\n### El tono neutro\nNo tiene melodía propia: es corto y suave, y su altura depende del tono anterior. Aparece en partículas (吗 ma), en la segunda sílaba de palabras dobladas (妈妈 māma, 谢谢 xièxie) y en algunas palabras de uso diario (学生 xuésheng, 朋友 péngyou).\n\n### Trabalenguas del día\n**妈妈买马，马不好，妈妈骂马。** *Māma mǎi mǎ, mǎ bù hǎo, māma mà mǎ.* «Mamá compra un caballo, el caballo no es bueno, mamá regaña al caballo». Dilo despacio, con la mano, y luego cada vez más rápido."
+    },
+    { "type": "exercises", "count": 10, "bank": ["u0"] },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "妈妈骂马。", "py": "Māma mà mǎ.", "es": "Mamá regaña al caballo." },
+        { "zh": "他买马。", "py": "Tā mǎi mǎ.", "es": "Él compra un caballo." },
+        { "zh": "他卖马。", "py": "Tā mài mǎ.", "es": "Él vende un caballo." },
+        { "zh": "妈妈买马，马不好，妈妈骂马。", "py": "Māma mǎi mǎ, mǎ bù hǎo, māma mà mǎ.", "es": "Mamá compra un caballo, el caballo no es bueno, mamá regaña al caballo." }
+      ],
+      "respond": [
+        { "q": { "zh": "他买马吗？", "py": "Tā mǎi mǎ ma?", "es": "¿Compra él un caballo?" }, "model": { "zh": "他不买，他卖马。", "py": "Tā bù mǎi, tā mài mǎ.", "es": "No compra: vende un caballo." } },
+        { "q": { "zh": "妈妈骂他吗？", "py": "Māma mà tā ma?", "es": "¿Le regaña mamá?" }, "model": { "zh": "妈妈不骂他。", "py": "Māma bú mà tā.", "es": "Mamá no le regaña." } }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

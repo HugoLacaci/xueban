@@ -1,0 +1,157 @@
+{
+  "unitId": "a2-u05",
+  "scenarios": [
+    {
+      "id": "a2-u05-hospital",
+      "title": "En la consulta del hospital",
+      "zh": "在医院看病",
+      "level": 2,
+      "setting": "Hugo lleva unos días encontrándose mal. Ya ha hecho 挂号 en el hospital de la universidad y entra en la consulta. Tú (la app) eres la médica.",
+      "role": "médica",
+      "roleZh": "大夫",
+      "voice": "f",
+      "goals": ["Decir qué te pasa y desde cuándo (了…了)", "Decir cuánto hace que no comes o duermes bien (三天没…了)", "Preguntar qué debes hacer (应该 / 必须)", "Entender las instrucciones de la medicina"],
+      "vocab": ["感冒", "发烧", "难受", "全身", "应该", "必须", "检查", "打针", "医保", "该…了"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "请坐。你哪儿不舒服？", "py": "Qǐng zuò. Nǐ nǎr bù shūfu?", "es": "Siéntate. ¿Qué te pasa?" },
+          "user": [
+            { "zh": "大夫，我感冒了，发烧两天了。", "py": "Dàifu, wǒ gǎnmào le, fāshāo liǎng tiān le.", "es": "Doctora, me he resfriado: llevo dos días con fiebre.", "keywords": ["发烧", "两天了"], "next": "n2", "goal": 0 },
+            { "zh": "我全身都很难受，头也疼。", "py": "Wǒ quánshēn dōu hěn nánshòu, tóu yě téng.", "es": "Me encuentro fatal de todo el cuerpo y me duele la cabeza.", "keywords": ["全身", "难受"], "next": "n3", "goal": 0 }
+          ],
+          "hint": "Di el síntoma y cuánto tiempo llevas: 我发烧两天了, 我头疼三天了."
+        },
+        "n2": {
+          "npc": { "zh": "两天了？你吃饭怎么样？睡觉怎么样？", "py": "Liǎng tiān le? Nǐ chīfàn zěnmeyàng? Shuìjiào zěnmeyàng?", "es": "¿Dos días? ¿Y qué tal comes? ¿Y duermes?" },
+          "user": [
+            { "zh": "我两天没好好吃饭了。", "py": "Wǒ liǎng tiān méi hǎohǎo chīfàn le.", "es": "Llevo dos días sin comer bien.", "keywords": ["没", "吃饭了"], "next": "n4", "goal": 1 },
+            { "zh": "我三天没睡好了，白天很困。", "py": "Wǒ sān tiān méi shuì hǎo le, báitiān hěn kùn.", "es": "Llevo tres días sin dormir bien y de día tengo mucho sueño.", "keywords": ["没睡好", "困"], "next": "n4", "goal": 1 }
+          ],
+          "hint": "Duración negativa: tiempo + 没 + verbo + 了 → 我两天没好好吃饭了."
+        },
+        "n3": {
+          "npc": { "zh": "疼了多长时间了？你发烧吗？", "py": "Téng le duō cháng shíjiān le? Nǐ fāshāo ma?", "es": "¿Cuánto tiempo llevas con dolor? ¿Tienes fiebre?" },
+          "user": [
+            { "zh": "疼了三天了，有点儿发烧。我两天没吃饭了。", "py": "Téng le sān tiān le, yǒudiǎnr fāshāo. Wǒ liǎng tiān méi chīfàn le.", "es": "Tres días, y tengo un poco de fiebre. Llevo dos días sin comer.", "keywords": ["三天了", "没吃饭"], "next": "n4", "goal": 1 },
+            { "zh": "我不知道。我最近很累，三天没睡好了。", "py": "Wǒ bù zhīdào. Wǒ zuìjìn hěn lèi, sān tiān méi shuì hǎo le.", "es": "No lo sé. Estos días estoy muy cansado; llevo tres días sin dormir bien.", "keywords": ["没睡好", "累"], "next": "n4", "goal": 1 }
+          ],
+          "hint": "V + 了 + duración + 了 (疼了三天了) y la duración negativa (两天没吃饭了)."
+        },
+        "n4": {
+          "npc": { "zh": "我给你检查一下。三十八度五，你感冒了，可能还有点儿累。", "py": "Wǒ gěi nǐ jiǎnchá yíxià. Sānshíbā dù wǔ, nǐ gǎnmào le, kěnéng hái yǒudiǎnr lèi.", "es": "Te voy a examinar. Treinta y ocho y medio: estás resfriado y puede que también algo agotado." },
+          "user": [
+            { "zh": "我应该做什么？要打针吗？", "py": "Wǒ yīnggāi zuò shénme? Yào dǎzhēn ma?", "es": "¿Qué debería hacer? ¿Hace falta una inyección?", "keywords": ["应该", "打针"], "next": "n5", "goal": 2 },
+            { "zh": "我必须住院吗？", "py": "Wǒ bìxū zhùyuàn ma?", "es": "¿Tengo que quedarme ingresado?", "keywords": ["必须", "住院"], "next": "n6", "goal": 2 }
+          ],
+          "hint": "Pregunta qué hacer: 我应该……？ / 我必须……吗？"
+        },
+        "n5": {
+          "npc": { "zh": "不用打针。你应该多喝水，多休息。我给你开一点儿药。", "py": "Bú yòng dǎzhēn. Nǐ yīnggāi duō hē shuǐ, duō xiūxi. Wǒ gěi nǐ kāi yìdiǎnr yào.", "es": "No hace falta inyección. Deberías beber mucha agua y descansar. Te receto algo." },
+          "user": [
+            { "zh": "这个药一天吃几次？", "py": "Zhège yào yì tiān chī jǐ cì?", "es": "¿Cuántas veces al día se toma?", "keywords": ["几次"], "next": "n7", "goal": 3 },
+            { "zh": "好的。我能用学校的医保吗？", "py": "Hǎo de. Wǒ néng yòng xuéxiào de yībǎo ma?", "es": "Vale. ¿Puedo usar el seguro de la universidad?", "keywords": ["医保"], "next": "n8" }
+          ],
+          "hint": "Pregunta cómo se toma (一天吃几次) o por el seguro (医保)."
+        },
+        "n6": {
+          "npc": { "zh": "不用住院，你放心。你应该在宿舍休息两天，多喝热水。", "py": "Bú yòng zhùyuàn, nǐ fàngxīn. Nǐ yīnggāi zài sùshè xiūxi liǎng tiān, duō hē rè shuǐ.", "es": "No hace falta ingresar, tranquilo. Deberías descansar dos días en la residencia y beber mucha agua caliente." },
+          "user": [
+            { "zh": "太好了。我要吃药吗？一天吃几次？", "py": "Tài hǎo le. Wǒ yào chī yào ma? Yì tiān chī jǐ cì?", "es": "Menos mal. ¿Tengo que tomar algo? ¿Cuántas veces al día?", "keywords": ["吃药", "几次"], "next": "n7", "goal": 3 },
+            { "zh": "我明天能去上课吗？", "py": "Wǒ míngtiān néng qù shàngkè ma?", "es": "¿Puedo ir mañana a clase?", "keywords": ["上课"], "next": "n9" }
+          ],
+          "hint": "不用 = no hace falta. Pregunta por la medicina o por las clases."
+        },
+        "n7": {
+          "npc": { "zh": "一天三次，一次两片，必须饭后吃。吃药的时候不能喝酒。", "py": "Yì tiān sān cì, yí cì liǎng piàn, bìxū fàn hòu chī. Chī yào de shíhou bù néng hē jiǔ.", "es": "Tres veces al día, dos pastillas cada vez, siempre después de comer. Mientras la tomes, nada de alcohol." },
+          "user": [
+            { "zh": "一天三次，一次两片，饭后吃。我知道了。", "py": "Yì tiān sān cì, yí cì liǎng piàn, fàn hòu chī. Wǒ zhīdào le.", "es": "Tres veces al día, dos pastillas, después de comer. Entendido.", "keywords": ["三次", "两片"], "next": "n10", "goal": 3 },
+            { "zh": "好的，我不喝酒。我能用医保吗？", "py": "Hǎo de, wǒ bù hē jiǔ. Wǒ néng yòng yībǎo ma?", "es": "Vale, no beberé. ¿Puedo usar el seguro?", "keywords": ["医保"], "next": "n8", "goal": 3 }
+          ],
+          "hint": "Repite la pauta para confirmarla: 一天三次，一次两片."
+        },
+        "n8": {
+          "npc": { "zh": "可以。你先去前边扫码，然后去药店拿药。", "py": "Kěyǐ. Nǐ xiān qù qiánbian sǎomǎ, ránhòu qù yàodiàn ná yào.", "es": "Sí. Primero ve ahí delante a pagar con el móvil y luego recoge la medicina en la farmacia." },
+          "user": [
+            { "zh": "好的，谢谢大夫。", "py": "Hǎo de, xièxie dàifu.", "es": "Vale, gracias, doctora.", "keywords": ["谢谢"], "next": "n10" },
+            { "zh": "这个药一天吃几次？", "py": "Zhège yào yì tiān chī jǐ cì?", "es": "¿Cuántas veces al día se toma esta medicina?", "keywords": ["几次"], "next": "n7", "goal": 3 }
+          ],
+          "hint": "Da las gracias o pregunta cómo se toma la medicina."
+        },
+        "n9": {
+          "npc": { "zh": "明天不行，你该好好休息了。后天不发烧了，就可以去上课。", "py": "Míngtiān bù xíng, nǐ gāi hǎohǎo xiūxi le. Hòutiān bù fāshāo le, jiù kěyǐ qù shàngkè.", "es": "Mañana no: ya te toca descansar en serio. Si pasado mañana ya no tienes fiebre, puedes ir a clase." },
+          "user": [
+            { "zh": "好，我知道了。我要吃药吗？", "py": "Hǎo, wǒ zhīdào le. Wǒ yào chī yào ma?", "es": "Vale, entendido. ¿Tengo que tomar algo?", "keywords": ["吃药"], "next": "n7", "goal": 3 },
+            { "zh": "好的，谢谢大夫，再见。", "py": "Hǎo de, xièxie dàifu, zàijiàn.", "es": "De acuerdo, gracias, doctora. Adiós.", "keywords": ["谢谢", "再见"], "next": "n10" }
+          ],
+          "hint": "该……了 = ya toca… Acepta y pregunta por la medicina, o despídete."
+        },
+        "n10": {
+          "npc": { "zh": "不客气。别急，你很快就会好的。", "py": "Bú kèqi. Bié jí, nǐ hěn kuài jiù huì hǎo de.", "es": "De nada. Tranquilo, enseguida te pondrás bien." },
+          "end": true,
+          "feedback": "Has contado tus síntomas con su duración (发烧两天了, 两天没吃饭了) y has preguntado qué hacer con 应该 / 必须. Si te ha faltado algo, prueba otra rama: pregunta por el 医保 o por las clases."
+        }
+      }
+    },
+    {
+      "id": "a2-u05-friend",
+      "title": "Un amigo agobiado",
+      "zh": "朋友压力很大",
+      "level": 2,
+      "setting": "Es domingo por la noche en la residencia. Hugo ve a Xiao Li con mala cara: tiene exámenes, duerme poco y no se encuentra bien. Tú (la app) eres Xiao Li; Hugo le da consejos.",
+      "role": "Xiao Li, compañero de residencia",
+      "roleZh": "小李",
+      "voice": "m",
+      "goals": ["Preguntar qué le pasa", "Decir lo que te parece (好像 / 可能)", "Dar consejos con 应该 / 不应该", "Tranquilizarle (别急, 放心)"],
+      "vocab": ["好像", "可能", "压力", "紧张", "应该", "该…了", "别急", "放心", "一定"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "我好累啊。", "py": "Wǒ hǎo lèi a.", "es": "¡Qué cansado estoy!" },
+          "user": [
+            { "zh": "小李，你怎么了？你好像不舒服。", "py": "Xiǎo Lǐ, nǐ zěnme le? Nǐ hǎoxiàng bù shūfu.", "es": "Xiao Li, ¿qué te pasa? Parece que no te encuentras bien.", "keywords": ["怎么了", "好像"], "next": "n2", "goal": 0 },
+            { "zh": "你可能太累了。你最近睡觉怎么样？", "py": "Nǐ kěnéng tài lèi le. Nǐ zuìjìn shuìjiào zěnmeyàng?", "es": "Puede que estés demasiado cansado. ¿Qué tal duermes estos días?", "keywords": ["可能", "睡"], "next": "n3", "goal": 1 }
+          ],
+          "hint": "Pregunta (你怎么了) o di lo que te parece: 你好像…… / 你可能……"
+        },
+        "n2": {
+          "npc": { "zh": "我头疼，也很困。下个星期有三个考试，我压力很大。", "py": "Wǒ tóu téng, yě hěn kùn. Xià ge xīngqī yǒu sān ge kǎoshì, wǒ yālì hěn dà.", "es": "Me duele la cabeza y tengo mucho sueño. La semana que viene tengo tres exámenes: estoy muy agobiado." },
+          "user": [
+            { "zh": "你可能太紧张了。你应该早一点儿睡觉。", "py": "Nǐ kěnéng tài jǐnzhāng le. Nǐ yīnggāi zǎo yìdiǎnr shuìjiào.", "es": "A lo mejor estás demasiado nervioso. Deberías acostarte un poco antes.", "keywords": ["应该", "睡觉"], "next": "n4", "goal": 2 },
+            { "zh": "三个考试？你一定很紧张。", "py": "Sān ge kǎoshì? Nǐ yídìng hěn jǐnzhāng.", "es": "¿Tres exámenes? Seguro que estás muy nervioso.", "keywords": ["一定", "紧张"], "next": "n3", "goal": 1 }
+          ],
+          "hint": "Supón (你一定很紧张 / 你可能太累了) o aconseja (你应该……)."
+        },
+        "n3": {
+          "npc": { "zh": "对，我三天没睡好了。每天晚上都学习到两点。", "py": "Duì, wǒ sān tiān méi shuì hǎo le. Měi tiān wǎnshang dōu xuéxí dào liǎng diǎn.", "es": "Sí, llevo tres días sin dormir bien. Todas las noches estudio hasta las dos." },
+          "user": [
+            { "zh": "你不应该学习到两点。健康最重要！", "py": "Nǐ bù yīnggāi xuéxí dào liǎng diǎn. Jiànkāng zuì zhòngyào!", "es": "No deberías estudiar hasta las dos. ¡La salud es lo primero!", "keywords": ["不应该", "健康"], "next": "n4", "goal": 2 },
+            { "zh": "你应该多休息，也应该注意营养。", "py": "Nǐ yīnggāi duō xiūxi, yě yīnggāi zhùyì yíngyǎng.", "es": "Deberías descansar más y cuidar también lo que comes.", "keywords": ["应该", "休息"], "next": "n4", "goal": 2 }
+          ],
+          "hint": "Aconseja con 应该 / 不应该 + verbo."
+        },
+        "n4": {
+          "npc": { "zh": "我知道，可是我很害怕考试。", "py": "Wǒ zhīdào, kěshì wǒ hěn hàipà kǎoshì.", "es": "Ya lo sé, pero los exámenes me dan mucho miedo." },
+          "user": [
+            { "zh": "别急，你放心吧。你很认真，一定能考好。", "py": "Bié jí, nǐ fàngxīn ba. Nǐ hěn rènzhēn, yídìng néng kǎo hǎo.", "es": "Tranquilo, no te preocupes. Eres muy aplicado: seguro que te salen bien.", "keywords": ["别急", "放心", "一定"], "next": "n5", "goal": 3 },
+            { "zh": "不用害怕。我们明天一起去图书馆复习吧。", "py": "Bú yòng hàipà. Wǒmen míngtiān yìqǐ qù túshūguǎn fùxí ba.", "es": "No hace falta tener miedo. Mañana vamos juntos a la biblioteca a repasar.", "keywords": ["不用", "一起"], "next": "n5", "goal": 3 }
+          ],
+          "hint": "Tranquilízale: 别急, 放心吧, 不用害怕, 你一定能……"
+        },
+        "n5": {
+          "npc": { "zh": "谢谢你，雨果。我现在好多了。", "py": "Xièxie nǐ, Yǔguǒ. Wǒ xiànzài hǎo duō le.", "es": "Gracias, Hugo. Ya me siento mucho mejor." },
+          "user": [
+            { "zh": "十一点了，你该睡觉了！", "py": "Shíyī diǎn le, nǐ gāi shuìjiào le!", "es": "Son las once: ¡ya te toca irte a dormir!", "keywords": ["该", "睡觉了"], "next": "n6", "goal": 2 },
+            { "zh": "不客气。明天见！", "py": "Bú kèqi. Míngtiān jiàn!", "es": "De nada. ¡Hasta mañana!", "keywords": ["不客气"], "next": "n6" }
+          ],
+          "hint": "Remata con 该……了 (ya toca…) o despídete."
+        },
+        "n6": {
+          "npc": { "zh": "好，我现在就睡。晚安！", "py": "Hǎo, wǒ xiànzài jiù shuì. Wǎn'ān!", "es": "Vale, me acuesto ya. ¡Buenas noches!" },
+          "end": true,
+          "feedback": "Has supuesto lo que le pasaba (好像, 可能, 一定), le has dado consejos con 应该 y le has tranquilizado con 别急 y 放心. Prueba también a decirle que ya toca dormir: 你该睡觉了."
+        }
+      }
+    }
+  ]
+}

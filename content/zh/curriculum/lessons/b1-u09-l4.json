@@ -1,0 +1,137 @@
+{
+  "id": "b1-u09-l4",
+  "title": "Ella lo habla mejor que yo: comparaciones avanzadas",
+  "zh": "她比我说得好",
+  "goal": "Comparar cómo se hacen las cosas (她比我说得好, 我跑得比他快), cuánto antes o cuánto más (比他早到十分钟, 多吃了三个) y matizar con 更 / 还 / 不比 / 和…相比.",
+  "minutes": 16,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "相比", "pinyin": "xiāngbǐ", "es": "comparar(se)", "note": "和……相比 = comparado con…: 和马德里相比，上海大多了." },
+    { "hanzi": "更加", "pinyin": "gèngjiā", "es": "aún más, todavía más", "note": "Más formal que 更; sobre todo con palabras de dos sílabas: 更加强大." },
+    { "hanzi": "较", "pinyin": "jiào", "es": "relativamente, bastante (escrito)", "note": "Forma escrita de 比较: 较好, 较多." },
+    { "hanzi": "区别", "pinyin": "qūbié", "es": "diferencia; distinguir", "note": "有什么区别？ = ¿qué diferencia hay?" },
+    { "hanzi": "相似", "pinyin": "xiāngsì", "es": "parecido, similar", "note": "这两个手机很相似 = estos dos móviles se parecen mucho." },
+    { "hanzi": "类似", "pinyin": "lèisì", "es": "similar, del mismo tipo", "note": "类似的问题 = un problema parecido." },
+    { "hanzi": "程度", "pinyin": "chéngdù", "es": "grado, nivel", "note": "在某种程度上 = hasta cierto punto." },
+    { "hanzi": "优势", "pinyin": "yōushì", "es": "ventaja, punto fuerte (frente a otro)" },
+    { "hanzi": "功能", "pinyin": "gōngnéng", "es": "función, prestaciones", "note": "这个手机的功能很多 = este móvil tiene muchas funciones." },
+    { "hanzi": "超级", "pinyin": "chāojí", "es": "súper", "note": "Coloquial: 超级好吃, 超级便宜." },
+    { "hanzi": "强", "pinyin": "qiáng", "es": "fuerte, potente; mejor", "note": "他的汉语比我强 = su chino es mejor que el mío." },
+    { "hanzi": "力", "pinyin": "lì", "es": "fuerza", "note": "Sobre todo en palabras: 努力, 力气, 用力 (con fuerza)." },
+    { "hanzi": "力量", "pinyin": "lìliang", "es": "fuerza, poder", "note": "朋友的力量 = la fuerza de los amigos." }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "安娜比我说得流利。", "py": "Ānnà bǐ wǒ shuō de liúlì.", "es": "Ana habla con más soltura que yo." },
+        { "zh": "小李每天比我早到十分钟。", "py": "Xiǎo Lǐ měi tiān bǐ wǒ zǎo dào shí fēnzhōng.", "es": "Xiao Li llega todos los días diez minutos antes que yo." },
+        { "zh": "这两种手机有什么区别？", "py": "Zhè liǎng zhǒng shǒujī yǒu shénme qūbié?", "es": "¿Qué diferencia hay entre estos dos móviles?" }
+      ]
+    },
+    { "type": "vocab", "title": "Comparar y diferenciar", "words": ["相比", "更加", "较", "区别", "相似", "类似", "程度", "优势", "功能", "超级", "强", "力", "力量"] },
+    {
+      "type": "phonetics-drill",
+      "title": "El énfasis en las comparaciones",
+      "markdown": "En una comparación, el chino **acentúa lo que cambia**: la persona comparada o la diferencia. 她比**我**说得好 (más que *yo*, no que otro) · 我比他早到**十分钟** (diez minutos, no cinco). 比 y 得 se dicen **ligeros**.\n\n- **比 bǐ** es tercer tono: delante de otro tercero (比我) pasa a **bí wǒ**.\n- **更 gèng** y **还 hái** delante del adjetivo se marcan un poco: 今天比昨天**还**冷！\n- **区别 qūbié**: q + ü (escrito u), primero + segundo.\n- **力量 lìliang**: 量 en tono neutro.",
+      "items": [
+        { "audio": "比我", "options": ["bí wǒ", "bǐ wǒ", "bì wǒ"], "answer": 0, "explain": "Dos terceros tonos seguidos: el primero pasa a segundo." },
+        { "audio": "她比我说得好", "prompt": "¿Qué sílabas van ligeras?", "options": ["比 y 得", "我 y 好", "她 y 说"], "answer": 0, "explain": "La preposición 比 y la partícula 得 no llevan el peso." },
+        { "audio": "区别", "options": ["qūbié", "qūbiè", "jūbié"], "answer": 0, "explain": "q aspirada + ü; primero + segundo." },
+        { "audio": "力量", "options": ["lìliang", "lìliàng", "lílián"], "answer": 0, "explain": "量 neutro en esta palabra." },
+        { "audio": "超级", "options": ["chāojí", "cháojí", "chāojǐ"], "answer": 0, "explain": "Primero (alto) + segundo (sube)." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["强", "较"],
+      "mnemonics": {
+        "强": "弓 (arco) a la izquierda: tensar un arco hace falta fuerza → «fuerte». El resto (口 + 虫) era un insecto de caparazón duro.",
+        "较": "车 (carro) + 交 (cruzarse, da el sonido): dos carros que se cruzan y se miden el uno al otro → «comparar» (比较, 较)."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "Comparar acciones, cantidades y matices",
+      "markdown": "Con 比 ya sabes comparar adjetivos (他比我高, 贵多了, 大两岁). Hoy, el resto. **Convención del esqueleto** (la de A2): 比 + B en *Adverbios*, el verbo o adjetivo en *Verbo 1*, la diferencia en *Complemento*.\n\n| Qué comparas | Fórmula | Ejemplo |\n|---|---|---|\n| cómo se hace algo | A 比 B + V得 + adj | 她**比我**说得**好** |\n| (otra forma) | A + V得 + 比 B + adj | 我跑得**比他快** |\n| «aún más» | A 比 B + 更 / 还 + adj | 新手机**比旧的还**好 |\n| cuánto antes, cuánto más | A 比 B + 早 / 晚 / 多 / 少 + V + cantidad | 我**比他早**到**十分钟**; 哥哥**比弟弟多**吃了**三个饺子** |\n| «no más que» | A 不比 B + adj | 我的汉语**不比**他差 |\n| «mucho más» | A 比 B + adj + 多了 | 上海的房租比马德里贵**多了** |\n\n- **Nunca 很 / 非常** en una comparación con 比: ✗ 她说得比我很好.\n- **早 / 晚 / 多 / 少 van delante del verbo**: 早到, 多吃, 少用 (en español, «llegar antes», «comer más»).\n- **更 / 还**: 还 añade sorpresa (B ya era mucho): 今天比昨天**还**冷！\n- **不比 ≠ 没有**: 我**不比**他高 = no soy más alto que él (más o menos igual, o «no es verdad que lo sea»); 我**没有**他高 = soy más bajo.\n- **和……相比，** va delante, en *Tiempo inicial*: 和马德里相比，上海大多了.",
+      "focus": ["adverb", "complement"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "安娜", "py": "Ānnà" }, "adverb": { "zh": "比我", "py": "bǐ wǒ" }, "verb1": { "zh": "说得", "py": "shuō de" }, "complement": { "zh": "流利", "py": "liúlì" } }, "end": "。", "es": "Ana habla con más soltura que yo.", "esOrder": [{ "text": "Ana", "slot": "subject" }, { "text": "habla", "slot": "verb1" }, { "text": "con más soltura", "slot": "complement" }, { "text": "que yo", "slot": "adverb" }] },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "verb1": { "zh": "跑得", "py": "pǎo de" }, "complement": { "zh": "比大卫快", "py": "bǐ Dàwèi kuài" } }, "end": "。", "es": "Corro más rápido que David." },
+        { "slots": { "subject": { "zh": "新手机的功能", "py": "xīn shǒujī de gōngnéng" }, "adverb": { "zh": "比旧手机还", "py": "bǐ jiù shǒujī hái" }, "verb1": { "zh": "多", "py": "duō" } }, "end": "。", "es": "El móvil nuevo tiene todavía más funciones que el viejo." },
+        { "slots": { "subject": { "zh": "小李", "py": "Xiǎo Lǐ" }, "time": { "zh": "每天", "py": "měi tiān" }, "adverb": { "zh": "比我早", "py": "bǐ wǒ zǎo" }, "verb1": { "zh": "到", "py": "dào" }, "complement": { "zh": "十分钟", "py": "shí fēnzhōng" } }, "end": "。", "es": "Xiao Li llega todos los días diez minutos antes que yo." },
+        { "slots": { "subject": { "zh": "哥哥", "py": "gēge" }, "adverb": { "zh": "比弟弟多", "py": "bǐ dìdi duō" }, "verb1": { "zh": "吃了", "py": "chī le" }, "object": { "zh": "三个饺子", "py": "sān ge jiǎozi" } }, "end": "。", "es": "El hermano mayor se ha comido tres empanadillas más que el pequeño." },
+        { "slots": { "subject": { "zh": "上海的房租", "py": "Shànghǎi de fángzū" }, "adverb": { "zh": "比马德里", "py": "bǐ Mǎdélǐ" }, "verb1": { "zh": "贵", "py": "guì" }, "complement": { "zh": "多了", "py": "duō le" } }, "end": "。", "es": "Los alquileres de Shanghái son mucho más caros que los de Madrid." },
+        { "slots": { "time0": { "zh": "和旧手机相比，", "py": "hé jiù shǒujī xiāngbǐ," }, "subject": { "zh": "新手机的功能", "py": "xīn shǒujī de gōngnéng" }, "adverb": { "zh": "更加", "py": "gèngjiā" }, "verb1": { "zh": "强大", "py": "qiángdà" } }, "end": "。", "es": "Comparado con el viejo, el móvil nuevo es todavía más potente." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "我的汉语水平", "py": "wǒ de Hànyǔ shuǐpíng" }, "adverb": { "zh": "不比他", "py": "bù bǐ tā" }, "verb1": { "zh": "低", "py": "dī" } }, "end": "。", "es": "Mi nivel de chino no es más bajo que el suyo." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "这两种手机", "py": "zhè liǎng zhǒng shǒujī" }, "verb1": { "zh": "有", "py": "yǒu" }, "object": { "zh": "什么区别", "py": "shénme qūbié" } }, "end": "？", "es": "¿Qué diferencia hay entre estos dos móviles?" },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "adverb": { "zh": "比他", "py": "bǐ tā" }, "verb1": { "zh": "高", "py": "gāo" }, "complement": { "zh": "多少", "py": "duōshao" } }, "end": "？", "es": "¿Cuánto más alto eres que él?" }
+      ],
+      "mistakes": [
+        { "wrong": "她说得比我很好。", "right": "她说得比我好。", "why": "En una comparación con 比 no se pone 很 ni 非常; para «mucho mejor», 好多了 / 好得多." },
+        { "wrong": "我比他到早十分钟。", "right": "我比他早到十分钟。", "why": "早 / 晚 / 多 / 少 van delante del verbo, y la cantidad detrás." },
+        { "wrong": "我不比他高。(queriendo decir «soy más bajo»)", "right": "我没有他高。", "why": "不比 solo niega que seas más alto; «soy más bajo que él» es 我没有他高." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "¿Cuál me compro?",
+      "lines": [
+        { "speaker": "大卫", "zh": "雨果，你的手机用了三年了，该换一个新的了吧？", "py": "Yǔguǒ, nǐ de shǒujī yòng le sān nián le, gāi huàn yí ge xīn de le ba?", "es": "Hugo, llevas tres años con ese móvil; ya toca cambiarlo, ¿no?" },
+        { "speaker": "雨果", "zh": "是啊。你帮我看看，这两种有什么区别？", "py": "Shì a. Nǐ bāng wǒ kànkan, zhè liǎng zhǒng yǒu shénme qūbié?", "es": "Sí. Ayúdame a ver: ¿qué diferencia hay entre estos dos?" },
+        { "speaker": "大卫", "zh": "它们看起来很相似，其实区别不小。这个拍照比那个拍得清楚多了。", "py": "Tāmen kàn qilai hěn xiāngsì, qíshí qūbié bù xiǎo. Zhège pāizhào bǐ nàge pāi de qīngchu duō le.", "es": "Parecen muy similares, pero la diferencia no es pequeña. Este hace fotos mucho más nítidas que aquel." },
+        { "speaker": "雨果", "zh": "那个呢？", "py": "Nàge ne?", "es": "¿Y aquel?" },
+        { "speaker": "大卫", "zh": "那个比这个便宜五百块。功能类似，不过没有这个强。", "py": "Nàge bǐ zhège piányi wǔbǎi kuài. Gōngnéng lèisì, búguò méiyǒu zhège qiáng.", "es": "Aquel es quinientos yuanes más barato. Las funciones son parecidas, pero no es tan potente como este." },
+        { "speaker": "雨果", "zh": "和那个相比，这个还有什么优势？", "py": "Hé nàge xiāngbǐ, zhège hái yǒu shénme yōushì?", "es": "Comparado con aquel, ¿qué otras ventajas tiene este?" },
+        { "speaker": "大卫", "zh": "它打开什么都比那个快，打游戏也超级快。", "py": "Tā dǎkāi shénme dōu bǐ nàge kuài, dǎ yóuxì yě chāojí kuài.", "es": "Abre cualquier cosa más rápido que aquel, y con los juegos va súper rápido." },
+        { "speaker": "雨果", "zh": "我不常打游戏。我每天比你少用两个小时手机呢！", "py": "Wǒ bù cháng dǎ yóuxì. Wǒ měi tiān bǐ nǐ shǎo yòng liǎng ge xiǎoshí shǒujī ne!", "es": "Yo apenas juego. ¡Uso el móvil dos horas menos que tú al día!" },
+        { "speaker": "大卫", "zh": "哈哈，那你买那个便宜的吧。", "py": "Hāha, nà nǐ mǎi nàge piányi de ba.", "es": "Jaja, pues cómprate el barato." },
+        { "speaker": "雨果", "zh": "可是我拍照比你拍得多，常常给家里人发照片。", "py": "Kěshì wǒ pāizhào bǐ nǐ pāi de duō, chángcháng gěi jiā li rén fā zhàopiàn.", "es": "Pero yo hago muchas más fotos que tú: siempre les mando fotos a los de casa." },
+        { "speaker": "大卫", "zh": "那这个更适合你。贵一点儿，可是比那个好得多。", "py": "Nà zhège gèng shìhé nǐ. Guì yìdiǎnr, kěshì bǐ nàge hǎo de duō.", "es": "Entonces este te va mejor. Es un poco más caro, pero mucho mejor que aquel." },
+        { "speaker": "雨果", "zh": "好，就买这个！", "py": "Hǎo, jiù mǎi zhège!", "es": "¡Vale, me quedo con este!" }
+      ],
+      "notes": "该……了 = «ya toca…»: 该换新的了. 便宜五百块 y 少用两个小时: la cantidad siempre va detrás. En las tiendas de móviles chinas es habitual comparar 拍照 (la cámara) antes que nada."
+    },
+    { "type": "exercises", "count": 18, "bank": ["u08", "g-complements", "g-numbers", "g-price-age"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "安娜" }, "adverb": { "zh": "比我" }, "verb1": { "zh": "说得" }, "complement": { "zh": "流利" } }, "end": "。", "es": "Ana habla con más soltura que yo." }, "distractors": ["很"] },
+        { "sentence": { "slots": { "subject": { "zh": "小李" }, "adverb": { "zh": "比我早" }, "verb1": { "zh": "到" }, "complement": { "zh": "十分钟" } }, "end": "。", "es": "Xiao Li llega diez minutos antes que yo." }, "distractors": ["到早"] },
+        { "sentence": { "slots": { "subject": { "zh": "哥哥" }, "adverb": { "zh": "比弟弟多" }, "verb1": { "zh": "吃了" }, "object": { "zh": "三个饺子" } }, "end": "。", "es": "El hermano mayor se ha comido tres empanadillas más que el pequeño." } },
+        { "sentence": { "slots": { "time0": { "zh": "和那个便宜的相比，" }, "subject": { "zh": "这个新手机" }, "verb1": { "zh": "拍照" }, "verb2": { "zh": "拍得" }, "complement": { "zh": "清楚多了" } }, "end": "。", "es": "Comparado con el barato, este móvil nuevo hace fotos mucho más nítidas." } }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "安娜比我说得流利。", "py": "Ānnà bǐ wǒ shuō de liúlì.", "es": "Ana habla con más soltura que yo." },
+        { "zh": "我跑得比大卫快。", "py": "Wǒ pǎo de bǐ Dàwèi kuài.", "es": "Corro más rápido que David." },
+        { "zh": "小李每天比我早到十分钟。", "py": "Xiǎo Lǐ měi tiān bǐ wǒ zǎo dào shí fēnzhōng.", "es": "Xiao Li llega todos los días diez minutos antes que yo." },
+        { "zh": "上海的房租比马德里贵多了。", "py": "Shànghǎi de fángzū bǐ Mǎdélǐ guì duō le.", "es": "Los alquileres de Shanghái son mucho más caros que los de Madrid." }
+      ],
+      "respond": [
+        { "q": { "zh": "你和你的好朋友，谁跑得快？", "py": "Nǐ hé nǐ de hǎo péngyou, shéi pǎo de kuài?", "es": "Entre tu mejor amigo y tú, ¿quién corre más rápido?" }, "model": { "zh": "他比我跑得快，可是我游泳游得比他快。", "py": "Tā bǐ wǒ pǎo de kuài, kěshì wǒ yóuyǒng yóu de bǐ tā kuài.", "es": "Él corre más rápido que yo, pero yo nado más rápido que él." } },
+        { "q": { "zh": "和马德里相比，上海怎么样？", "py": "Hé Mǎdélǐ xiāngbǐ, Shànghǎi zěnmeyàng?", "es": "Comparado con Madrid, ¿qué tal Shanghái?" }, "model": { "zh": "上海比马德里大多了，房租也贵多了。", "py": "Shànghǎi bǐ Mǎdélǐ dà duō le, fángzū yě guì duō le.", "es": "Shanghái es mucho más grande que Madrid, y los alquileres, mucho más caros." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "David y yo",
+      "text": "大卫是我在上海最好的朋友。我们两个人有很多相似的地方：都喜欢运动，都热爱中国文化，也都住在学校的宿舍。可是我们也有很多区别。大卫比我高一点儿，力气比我大得多，打网球的时候，他比我打得有力量。我跑步跑得没有他快，可是我游泳游得比他快。大卫比我早来中国半年，所以很多人觉得他的汉语比我好。其实，王老师说，我的汉语不比他差：他说得比我流利，我汉字写得比他好。每天早上，大卫比我早起半个小时，比我多学三十个生词；我晚上比他晚睡一个小时，多听一些中文歌。在某种程度上，我们两个人各有各的优势。和一个人学习相比，跟好朋友一起学习，力量更大，也有意思得多。",
+      "es": "David es mi mejor amigo en Shanghái. Nos parecemos en muchas cosas: a los dos nos gusta el deporte, nos apasiona la cultura china y vivimos en la residencia de la universidad. Pero también tenemos muchas diferencias. David es un poco más alto que yo y tiene mucha más fuerza: cuando jugamos al tenis, golpea con más potencia. Yo no corro tan rápido como él, pero nado más rápido. David llegó a China medio año antes que yo, y por eso mucha gente cree que su chino es mejor. En realidad, la profesora Wang dice que mi chino no es peor que el suyo: él habla con más soltura, y yo escribo mejor los caracteres. Cada mañana, David se levanta media hora antes que yo y estudia treinta palabras nuevas más; yo me acuesto una hora más tarde que él y escucho más canciones en chino. Hasta cierto punto, cada uno tiene sus ventajas. Comparado con estudiar solo, estudiar con un buen amigo da más fuerza, y es mucho más divertido.",
+      "questions": [
+        { "q": "¿Quién nada más rápido?", "options": ["雨果", "大卫", "Igual"], "answer": 0 },
+        { "q": "¿Cuánto antes llegó David a China?", "options": ["半年", "一年", "半个小时"], "answer": 0 },
+        { "q": "¿Qué hace mejor Hugo según la profesora Wang?", "options": ["汉字写得比大卫好", "说得比大卫流利", "打网球打得好"], "answer": 0 },
+        { "q": "¿Cuántas palabras más estudia David cada mañana?", "options": ["三十个", "十个", "一百个"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

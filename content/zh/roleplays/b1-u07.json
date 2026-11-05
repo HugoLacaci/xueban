@@ -1,0 +1,132 @@
+{
+  "unitId": "b1-u07",
+  "scenarios": [
+    {
+      "id": "b1-u07-village",
+      "title": "El pueblo ha cambiado",
+      "zh": "村子的变化",
+      "level": 3,
+      "setting": "Hugo pasa unos días en el pueblo de Xiao Li. Por la tarde se sienta en la puerta con el abuelo, que lleva toda la vida allí. Tú (la app) eres el abuelo.",
+      "role": "abuelo de Xiao Li",
+      "roleZh": "小李的爷爷",
+      "voice": "m",
+      "goals": ["Preguntar cuánto tiempo lleva viviendo o trabajando en el pueblo", "Preguntar qué ha cambiado", "Contar cómo has cambiado tú desde que estás en China", "Despedirte dando las gracias"],
+      "vocab": ["多少年了", "种地", "从前", "越来越", "用上", "富起来", "越……越……", "坚持下去"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "雨果，来，坐着聊一会儿吧。在我们村子住得习惯吗？", "py": "Yǔguǒ, lái, zuò zhe liáo yíhuìr ba. Zài wǒmen cūnzi zhù de xíguàn ma?", "es": "Hugo, ven, siéntate y charlamos un rato. ¿Te estás acostumbrando a vivir en nuestro pueblo?" },
+          "user": [
+            { "zh": "很习惯，谢谢爷爷！您在这儿住了多少年了？", "py": "Hěn xíguàn, xièxie yéye! Nín zài zhèr zhù le duōshao nián le?", "es": "Mucho, ¡gracias, abuelo! ¿Cuántos años lleva viviendo aquí?", "keywords": ["多少年", "住了"], "next": "n2", "goal": 0 },
+            { "zh": "很习惯。爷爷，您种地种了多长时间了？", "py": "Hěn xíguàn. Yéye, nín zhòng dì zhòng le duō cháng shíjiān le?", "es": "Sí. Abuelo, ¿cuánto tiempo lleva cultivando la tierra?", "keywords": ["种地", "多长时间"], "next": "n2", "goal": 0 },
+            { "zh": "习惯了。这里跟从前一样吗？", "py": "Xíguàn le. Zhèlǐ gēn cóngqián yíyàng ma?", "es": "Sí. ¿Esto sigue igual que antes?", "keywords": ["从前", "一样"], "next": "n3", "goal": 1 }
+          ],
+          "hint": "Pregunta cuánto tiempo lleva con el 了 doble: 您住了多少年了？ / 您种地种了多长时间了？"
+        },
+        "n2": {
+          "npc": { "zh": "我在这儿住了八十年了，种地也种了五十多年了。", "py": "Wǒ zài zhèr zhù le bāshí nián le, zhòng dì yě zhòng le wǔshí duō nián le.", "es": "Llevo ochenta años viviendo aquí, y más de cincuenta cultivando la tierra." },
+          "user": [
+            { "zh": "这么多年！村子有什么变化？", "py": "Zhème duō nián! Cūnzi yǒu shénme biànhuà?", "es": "¡Cuántos años! ¿Qué ha cambiado en el pueblo?", "keywords": ["变化"], "next": "n3", "goal": 1 },
+            { "zh": "真了不起！从前的生活怎么样？", "py": "Zhēn liǎobuqǐ! Cóngqián de shēnghuó zěnmeyàng?", "es": "¡Qué admirable! ¿Cómo era la vida antes?", "keywords": ["从前", "怎么样"], "next": "n3", "goal": 1 }
+          ],
+          "hint": "Pregunta qué ha cambiado (有什么变化) o cómo era antes (从前……怎么样)."
+        },
+        "n3": {
+          "npc": { "zh": "变化太大了！从前大家的生活都很不容易，现在老百姓慢慢富起来了。种地用上了机器，我们也用上了手机。", "py": "Biànhuà tài dà le! Cóngqián dàjiā de shēnghuó dōu hěn bù róngyì, xiànzài lǎobǎixìng mànmàn fù qǐlai le. Zhòng dì yòngshang le jīqì, wǒmen yě yòngshang le shǒujī.", "es": "¡Muchísimo! Antes la vida era muy dura para todos; ahora la gente se ha ido enriqueciendo. Para cultivar ya usamos máquinas, y también hemos empezado a usar el móvil." },
+          "user": [
+            { "zh": "您也用上手机了？真了不起！年轻人多吗？", "py": "Nín yě yòngshang shǒujī le? Zhēn liǎobuqǐ! Niánqīngrén duō ma?", "es": "¿Usted también usa ya el móvil? ¡Qué bien! ¿Hay muchos jóvenes?", "keywords": ["年轻人"], "next": "n4" },
+            { "zh": "生活越来越好了，真好。", "py": "Shēnghuó yuèláiyuè hǎo le, zhēn hǎo.", "es": "La vida es cada vez mejor: qué bien.", "keywords": ["越来越"], "next": "n4" }
+          ],
+          "hint": "Reacciona con 越来越 o pregunta por los jóvenes (年轻人)."
+        },
+        "n4": {
+          "npc": { "zh": "可是城市越发达，去城市的年轻人越多。村子里留下来的都是老人。你呢？来中国以后有什么变化？", "py": "Kěshì chéngshì yuè fādá, qù chéngshì de niánqīngrén yuè duō. Cūnzi li liú xialai de dōu shì lǎorén. Nǐ ne? Lái Zhōngguó yǐhòu yǒu shénme biànhuà?", "es": "Pero cuanto más se desarrollan las ciudades, más jóvenes se van. En el pueblo nos quedamos los mayores. ¿Y tú? ¿Cómo has cambiado desde que viniste a China?" },
+          "user": [
+            { "zh": "我越学汉语越喜欢中国。我会坚持学下去。", "py": "Wǒ yuè xué Hànyǔ yuè xǐhuan Zhōngguó. Wǒ huì jiānchí xué xiaqu.", "es": "Cuanto más chino estudio, más me gusta China. Voy a seguir estudiando.", "keywords": ["越", "下去"], "next": "n5", "goal": 2 },
+            { "zh": "我来中国一年多了，越住越习惯，现在也爱上了中国菜。", "py": "Wǒ lái Zhōngguó yì nián duō le, yuè zhù yuè xíguàn, xiànzài yě àishang le Zhōngguó cài.", "es": "Llevo algo más de un año en China; cuanto más tiempo paso, más me acostumbro, y ya me he enamorado de la comida china.", "keywords": ["一年多了", "越住越", "爱上"], "next": "n5", "goal": 2 }
+          ],
+          "hint": "Cuenta tu cambio con 越……越…… y alguna pieza más: ……多了, 爱上, 坚持下去."
+        },
+        "n5": {
+          "npc": { "zh": "好！你说汉语说得越来越好了。天黑了，我们进去吃饭吧。", "py": "Hǎo! Nǐ shuō Hànyǔ shuō de yuèláiyuè hǎo le. Tiān hēi le, wǒmen jìnqu chī fàn ba.", "es": "¡Muy bien! Hablas chino cada vez mejor. Ya es de noche: vamos dentro a cenar." },
+          "user": [
+            { "zh": "谢谢爷爷，跟您聊天我学到了很多！", "py": "Xièxie yéye, gēn nín liáotiān wǒ xuédào le hěn duō!", "es": "Gracias, abuelo: ¡he aprendido mucho charlando con usted!", "keywords": ["谢谢"], "next": "n6", "goal": 3 },
+            { "zh": "好的。我们聊着聊着，天就黑了！", "py": "Hǎo de. Wǒmen liáo zhe liáo zhe, tiān jiù hēi le!", "es": "Vale. ¡Charlando, charlando, se nos ha hecho de noche!", "keywords": ["聊着聊着"], "next": "n6", "goal": 3 }
+          ],
+          "hint": "Despídete: da las gracias o comenta que se ha hecho de noche con 聊着聊着……就……"
+        },
+        "n6": {
+          "npc": { "zh": "哈哈，对！走吧，奶奶做好饭了。", "py": "Hāhā, duì! Zǒu ba, nǎinai zuòhǎo fàn le.", "es": "¡Jaja, sí! Vamos, la abuela ya tiene la cena lista." },
+          "end": true,
+          "feedback": "Has preguntado por la duración con el 了 doble (住了八十年了), has hablado de cambios con 越来越 y 越……越…… y has contado tu propio cambio. Recuerda: con verbos que no duran, el tiempo va sin 了 tras el verbo (我来中国一年了)."
+        }
+      }
+    },
+    {
+      "id": "b1-u07-radio",
+      "title": "Entrevista en la radio de la universidad",
+      "zh": "学校广播站的采访",
+      "level": 3,
+      "setting": "La radio de la universidad hace un programa sobre estudiantes extranjeros y entrevista a Hugo sobre su vida en Shanghái. Tú (la app) eres la estudiante que presenta el programa.",
+      "role": "presentadora de la radio universitaria",
+      "roleZh": "广播站的同学",
+      "voice": "f",
+      "goals": ["Decir cuánto tiempo llevas en China y estudiando chino", "Contar qué te costó al principio y cómo ha cambiado", "Decir si vas a seguir (下去) y por qué", "Despedirte"],
+      "vocab": ["一年多了", "学了……了", "当初", "越来越", "一步一步", "坚持下去", "自从……以来"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "大家好，今天我们请到了西班牙同学雨果。雨果，你来上海多长时间了？", "py": "Dàjiā hǎo, jīntiān wǒmen qǐngdào le Xībānyá tóngxué Yǔguǒ. Yǔguǒ, nǐ lái Shànghǎi duō cháng shíjiān le?", "es": "Hola a todos: hoy tenemos con nosotros a nuestro compañero español Hugo. Hugo, ¿cuánto tiempo hace que llegaste a Shanghái?" },
+          "user": [
+            { "zh": "大家好！我来上海一年多了。", "py": "Dàjiā hǎo! Wǒ lái Shànghǎi yì nián duō le.", "es": "¡Hola a todos! Hace algo más de un año que llegué a Shanghái.", "keywords": ["一年", "了"], "next": "n2", "goal": 0 },
+            { "zh": "大家好！我来上海一年多了，学汉语学了两年了。", "py": "Dàjiā hǎo! Wǒ lái Shànghǎi yì nián duō le, xué Hànyǔ xué le liǎng nián le.", "es": "¡Hola a todos! Llevo algo más de un año en Shanghái y dos años estudiando chino.", "keywords": ["学了", "两年了"], "next": "n3", "goal": 0 }
+          ],
+          "hint": "Con 来, el tiempo va directamente detrás: 我来上海……了. Puedes añadir cuánto llevas estudiando: 学汉语学了……了."
+        },
+        "n2": {
+          "npc": { "zh": "那你学汉语学了多长时间了？", "py": "Nà nǐ xué Hànyǔ xué le duō cháng shíjiān le?", "es": "¿Y cuánto llevas estudiando chino?" },
+          "user": [
+            { "zh": "我学了两年汉语了。", "py": "Wǒ xué le liǎng nián Hànyǔ le.", "es": "Llevo dos años estudiando chino.", "keywords": ["学了", "了"], "next": "n3", "goal": 0 }
+          ],
+          "hint": "Usa el 了 doble: 我学了……汉语了."
+        },
+        "n3": {
+          "npc": { "zh": "你说得真好！当初刚来的时候，什么最难？", "py": "Nǐ shuō de zhēn hǎo! Dāngchū gāng lái de shíhou, shénme zuì nán?", "es": "¡Lo hablas muy bien! Al principio, cuando acababas de llegar, ¿qué era lo más difícil?" },
+          "user": [
+            { "zh": "当初我一句也听不懂，汉字也特别难。", "py": "Dāngchū wǒ yí jù yě tīng bu dǒng, Hànzì yě tèbié nán.", "es": "Al principio no entendía ni una frase, y los caracteres también eran dificilísimos.", "keywords": ["当初", "听不懂"], "next": "n4", "goal": 1 },
+            { "zh": "天气！上海的天气一会儿冷，一会儿热，我不习惯。", "py": "Tiānqì! Shànghǎi de tiānqì yíhuìr lěng, yíhuìr rè, wǒ bù xíguàn.", "es": "¡El tiempo! En Shanghái tan pronto hace frío como calor, y no me acostumbraba.", "keywords": ["一会儿"], "next": "n4", "goal": 1 }
+          ],
+          "hint": "Habla del principio con 当初…… y di qué te costaba."
+        },
+        "n4": {
+          "npc": { "zh": "现在呢？有什么变化？", "py": "Xiànzài ne? Yǒu shénme biànhuà?", "es": "¿Y ahora? ¿Qué ha cambiado?" },
+          "user": [
+            { "zh": "自从来到上海以来，我每天练习，一步一步地进步了，现在越来越容易了。", "py": "Zìcóng láidào Shànghǎi yǐlái, wǒ měi tiān liànxí, yí bù yí bù de jìnbù le, xiànzài yuèláiyuè róngyì le.", "es": "Desde que llegué a Shanghái practico todos los días y he ido mejorando paso a paso; ahora me resulta cada vez más fácil.", "keywords": ["自从", "一步一步", "越来越"], "next": "n5", "goal": 1 },
+            { "zh": "我越住越习惯，现在已经爱上上海了。", "py": "Wǒ yuè zhù yuè xíguàn, xiànzài yǐjīng àishang Shànghǎi le.", "es": "Cuanto más tiempo paso aquí, más me acostumbro; ahora ya me he enamorado de Shanghái.", "keywords": ["越", "爱上"], "next": "n5", "goal": 1 }
+          ],
+          "hint": "Cuenta el cambio con 自从……以来, 一步一步地, 越来越 o 越……越……"
+        },
+        "n5": {
+          "npc": { "zh": "以后你还会学下去吗？", "py": "Yǐhòu nǐ hái huì xué xiaqu ma?", "es": "¿Vas a seguir estudiando en el futuro?" },
+          "user": [
+            { "zh": "会！学汉语虽然不容易，可是我一定会坚持下去。", "py": "Huì! Xué Hànyǔ suīrán bù róngyì, kěshì wǒ yídìng huì jiānchí xiaqu.", "es": "¡Sí! Aunque estudiar chino no es fácil, voy a seguir adelante seguro.", "keywords": ["坚持下去"], "next": "n6", "goal": 2 },
+            { "zh": "会。我想在中国工作，所以要学下去。", "py": "Huì. Wǒ xiǎng zài Zhōngguó gōngzuò, suǒyǐ yào xué xiaqu.", "es": "Sí. Quiero trabajar en China, así que tengo que seguir estudiando.", "keywords": ["学下去"], "next": "n6", "goal": 2 }
+          ],
+          "hint": "Usa 下去 (seguir hacia el futuro): 学下去, 坚持下去."
+        },
+        "n6": {
+          "npc": { "zh": "加油！谢谢你，雨果！", "py": "Jiāyóu! Xièxie nǐ, Yǔguǒ!", "es": "¡Ánimo! ¡Gracias, Hugo!" },
+          "user": [
+            { "zh": "谢谢大家，再见！", "py": "Xièxie dàjiā, zàijiàn!", "es": "¡Gracias a todos, adiós!", "keywords": ["谢谢", "再见"], "next": "n7", "goal": 3 }
+          ],
+          "hint": "Despídete de los oyentes: 谢谢大家."
+        },
+        "n7": {
+          "npc": { "zh": "今天的节目就到这儿，我们下个星期见！", "py": "Jīntiān de jiémù jiù dào zhèr, wǒmen xià ge xīngqī jiàn!", "es": "Hasta aquí el programa de hoy: ¡nos vemos la semana que viene!" },
+          "end": true,
+          "feedback": "Has contado tu experiencia con el 了 doble (学了两年汉语了), has comparado el principio (当初) con ahora y has usado 下去 para hablar de seguir. Recuerda: 下去 mira al futuro y 下来, del pasado hasta hoy."
+        }
+      }
+    }
+  ]
+}

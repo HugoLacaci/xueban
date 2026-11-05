@@ -1,0 +1,134 @@
+{
+  "id": "a2-u05-l3",
+  "title": "¿Será grave? 可能, 一定, 也许 y 好像",
+  "zh": "他可能受伤了",
+  "goal": "Decir lo seguro que estás de algo (一定 > 可能 / 也许 > 好像) al hablar de una lesión o de un problema de salud.",
+  "minutes": 14,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "可能", "pinyin": "kěnéng", "es": "puede que, quizá; posible", "note": "他可能感冒了 = puede que se haya resfriado." },
+    { "hanzi": "一定", "pinyin": "yídìng", "es": "seguro, sin falta", "note": "Dos usos: certeza (他一定很累 = seguro que está cansado) y obligación (你一定要来 = tienes que venir sin falta)." },
+    { "hanzi": "不一定", "pinyin": "bù yídìng", "es": "no necesariamente, no siempre" },
+    { "hanzi": "也许", "pinyin": "yěxǔ", "es": "tal vez, a lo mejor", "note": "Como 可能, pero algo más suave." },
+    { "hanzi": "好像", "pinyin": "hǎoxiàng", "es": "parece que, como si", "note": "Lo dices por lo que ves u oyes: 他好像不舒服." },
+    { "hanzi": "受伤", "pinyin": "shòushāng", "es": "hacerse daño, lesionarse" },
+    { "hanzi": "伤", "pinyin": "shāng", "es": "herida, lesión" },
+    { "hanzi": "轻", "pinyin": "qīng", "es": "ligero, leve", "note": "Lo contrario de 重 (zhòng): 轻伤 = herida leve." },
+    { "hanzi": "手指", "pinyin": "shǒuzhǐ", "es": "dedo (de la mano)" },
+    { "hanzi": "毛病", "pinyin": "máobìng", "es": "problema, avería; achaque", "note": "Sirve para personas (眼睛有毛病) y para cosas (电脑有毛病)." },
+    { "hanzi": "可怕", "pinyin": "kěpà", "es": "terrible, que da miedo" },
+    { "hanzi": "危险", "pinyin": "wēixiǎn", "es": "peligroso; peligro" }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "大卫的手指好像受伤了。", "py": "Dàwèi de shǒuzhǐ hǎoxiàng shòushāng le.", "es": "Parece que David se ha hecho daño en el dedo." },
+        { "zh": "他可能明天不会来上课了。", "py": "Tā kěnéng míngtiān bú huì lái shàngkè le.", "es": "Puede que mañana no venga a clase." },
+        { "zh": "你一定要去医院检查一下。", "py": "Nǐ yídìng yào qù yīyuàn jiǎnchá yíxià.", "es": "Tienes que ir sin falta al hospital a que te lo miren." }
+      ]
+    },
+    { "type": "vocab", "title": "¿Será grave?", "words": ["可能", "一定", "不一定", "也许", "好像", "受伤", "伤", "轻", "手指", "毛病", "可怕", "危险"] },
+    {
+      "type": "phonetics-drill",
+      "title": "El 一 de 一定 y los terceros tonos seguidos",
+      "markdown": "**一定**: 一 va delante de un 4.º tono, así que cambia a **2.º**: *yídìng*. Y en **不一定** hay dos cambios a la vez: 不 delante de 一 (que ya es 2.º) se queda en **bù**: *bù yídìng*.\n\n**3.º + 3.º**: el primero pasa a 2.º. 也许 se dice *yéxǔ*, 手指 *shóuzhǐ* Pero se **escribe** con su tono original: 也许 *yěxǔ*, 手指 *shǒuzhǐ*.\n\n**好像 hǎoxiàng**: 好 en medio tercer tono (solo baja) y 像 cae con fuerza.",
+      "items": [
+        { "audio": "一定", "options": ["yídìng", "yīdìng", "yìdìng"], "answer": 0, "explain": "一 + 4.º tono → yí." },
+        { "audio": "不一定", "options": ["bù yídìng", "bú yídìng", "bù yīdìng"], "answer": 0, "explain": "不 solo cambia a bú delante de un 4.º; aquí le sigue yí." },
+        { "audio": "也许", "prompt": "¿Cómo suena el primer carácter?", "options": ["Sube (como 2.º tono)", "Baja y sube entero", "Cae (4.º)"], "answer": 0, "explain": "3.º + 3.º: el primero se pronuncia como 2.º." },
+        { "audio": "手指", "options": ["shǒuzhǐ", "shǒuzǐ", "sǒuzhǐ"], "answer": 0, "explain": "Dos retroflejas: sh y zh." },
+        { "audio": "危险", "options": ["wēixiǎn", "wéixiǎn", "wēixiàn"], "answer": 0, "explain": "wēi en 1.º (alto y plano) + xiǎn en 3.º." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["伤", "怕"],
+      "mnemonics": {
+        "伤": "亻 (persona) + 力 con un tejadillo encima: a la persona le ha caído algo con fuerza → herida, lesión (受伤 = «recibir una herida»).",
+        "怕": "忄 (corazón, de lado) + 白 (blanco): el corazón se queda en blanco → tener miedo (怕, 可怕, 害怕)."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "¿Cómo de seguro estás? 一定 · 可能 / 也许 · 好像",
+      "markdown": "Estos cuatro van en el hueco de los **Adverbios**, detrás del sujeto y delante del verbo (o del auxiliar):\n\n| | |\n|---|---|\n| **一定** | seguro (casi 100 %) |\n| **可能 / 也许** | puede que, a lo mejor (50 %) |\n| **好像** | parece que (lo dices por lo que ves) |\n\n- 他**一定**很累。 / 他**可能**感冒了。 / 他**好像**不舒服。\n- **一定要** + V = «tener que… sin falta»: 你**一定要**去医院。\n- **可能会** + V = «es posible que pase»: 明天**可能会**下雨。\n\n**Negativa**: 不 va **detrás** de estos adverbios: 他**可能不**来 / 他可能**不会**来. Y **不一定** = «no necesariamente»: 感冒**不一定**要吃药.\n\n**Convención del esqueleto**: 可能 es un verbo modal en las gramáticas, pero aquí lo ponemos en **Adverbios** junto a 一定, 也许 y 好像; así el **Auxiliar** queda libre para 会 / 要 / 能 (可能 | 会 | 来).",
+      "focus": ["adverb"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "他", "py": "tā" }, "adverb": { "zh": "可能", "py": "kěnéng" }, "verb1": { "zh": "感冒", "py": "gǎnmào" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Puede que se haya resfriado." },
+        { "slots": { "subject": { "zh": "大卫的手指", "py": "Dàwèi de shǒuzhǐ" }, "adverb": { "zh": "好像", "py": "hǎoxiàng" }, "verb1": { "zh": "受伤", "py": "shòushāng" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Parece que David se ha hecho daño en el dedo." },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "time": { "zh": "明天", "py": "míngtiān" }, "adverb": { "zh": "一定", "py": "yídìng" }, "aux": { "zh": "要", "py": "yào" }, "verb1": { "zh": "去医院", "py": "qù yīyuàn" }, "verb2": { "zh": "检查一下", "py": "jiǎnchá yíxià" } }, "end": "。", "es": "Mañana tienes que ir sin falta al hospital a que te miren.", "esOrder": [{ "text": "Mañana", "slot": "time" }, { "text": "tienes que", "slot": "aux" }, { "text": "ir al hospital", "slot": "verb1" }, { "text": "sin falta", "slot": "adverb" }, { "text": "a que te miren", "slot": "verb2" }] },
+        { "slots": { "subject": { "zh": "他的伤", "py": "tā de shāng" }, "adverb": { "zh": "很", "py": "hěn" }, "verb1": { "zh": "轻", "py": "qīng" } }, "end": "。", "es": "Su herida es muy leve." },
+        { "slots": { "subject": { "zh": "雨果", "py": "Yǔguǒ" }, "adverb": { "zh": "一定", "py": "yídìng" }, "verb1": { "zh": "很累", "py": "hěn lèi" } }, "end": "。", "es": "Seguro que Hugo está muy cansado." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "他", "py": "tā" }, "time": { "zh": "今天", "py": "jīntiān" }, "adverb": { "zh": "可能不", "py": "kěnéng bú" }, "aux": { "zh": "会", "py": "huì" }, "verb1": { "zh": "来", "py": "lái" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Puede que hoy ya no venga." },
+        { "slots": { "subject": { "zh": "感冒", "py": "gǎnmào" }, "adverb": { "zh": "不一定", "py": "bù yídìng" }, "aux": { "zh": "要", "py": "yào" }, "verb1": { "zh": "吃药", "py": "chī yào" } }, "end": "。", "es": "Un resfriado no siempre necesita medicinas." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "一定", "py": "yídìng" }, "aux": { "zh": "要", "py": "yào" }, "verb1": { "zh": "住院", "py": "zhùyuàn" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿Tengo que quedarme ingresado sí o sí?" },
+        { "slots": { "subject": { "zh": "这个伤", "py": "zhège shāng" }, "verb1": { "zh": "危险", "py": "wēixiǎn" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "¿Es peligrosa esta herida?" }
+      ],
+      "mistakes": [
+        { "wrong": "他可能会不来。", "right": "他可能不会来。", "why": "不 niega al auxiliar: va delante de 会, no delante del verbo." },
+        { "wrong": "我是好像感冒了。", "right": "我好像感冒了。", "why": "好像 ya es «parece que»: no necesita 是." },
+        { "wrong": "他一定感冒。", "right": "他一定感冒了。", "why": "Para suponer algo que ya ha pasado hace falta el 了 de cambio." },
+        { "wrong": "这个病是很可怕。", "right": "这个病很可怕。", "why": "可怕 es un adjetivo predicado: sin 是." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "El dedo de David",
+      "lines": [
+        { "speaker": "雨果", "zh": "大卫，你的手指怎么了？", "py": "Dàwèi, nǐ de shǒuzhǐ zěnme le?", "es": "David, ¿qué te ha pasado en el dedo?" },
+        { "speaker": "大卫", "zh": "我打篮球的时候受伤了。", "py": "Wǒ dǎ lánqiú de shíhou shòushāng le.", "es": "Me hice daño jugando al baloncesto." },
+        { "speaker": "雨果", "zh": "好像很疼。你的伤重不重？", "py": "Hǎoxiàng hěn téng. Nǐ de shāng zhòng bu zhòng?", "es": "Parece que duele mucho. ¿Es grave?" },
+        { "speaker": "大卫", "zh": "不太重，是轻伤。也许明天就好了。", "py": "Bú tài zhòng, shì qīng shāng. Yěxǔ míngtiān jiù hǎo le.", "es": "No mucho, es una lesión leve. A lo mejor mañana ya está bien." },
+        { "speaker": "雨果", "zh": "不一定。手指受伤也可能很危险。", "py": "Bù yídìng. Shǒuzhǐ shòushāng yě kěnéng hěn wēixiǎn.", "es": "No necesariamente. Una lesión en el dedo también puede ser peligrosa." },
+        { "speaker": "大卫", "zh": "我不想去医院，医院的人太多了！", "py": "Wǒ bù xiǎng qù yīyuàn, yīyuàn de rén tài duō le!", "es": "No quiero ir al hospital, ¡hay demasiada gente!" },
+        { "speaker": "雨果", "zh": "人多也要去。你一定要去检查一下！", "py": "Rén duō yě yào qù. Nǐ yídìng yào qù jiǎnchá yíxià!", "es": "Aunque haya gente, tienes que ir. ¡Tienen que mirártelo sin falta!" },
+        { "speaker": "大卫", "zh": "好吧，我听你的。", "py": "Hǎo ba, wǒ tīng nǐ de.", "es": "Vale, te haré caso." },
+        { "speaker": "雨果", "zh": "我跟你一起去。我也有个小毛病，我的眼睛最近不太舒服。", "py": "Wǒ gēn nǐ yìqǐ qù. Wǒ yě yǒu ge xiǎo máobìng, wǒ de yǎnjing zuìjìn bú tài shūfu.", "es": "Voy contigo. Yo también tengo un pequeño problema: estos días me molestan los ojos." },
+        { "speaker": "大卫", "zh": "那我们一起去看大夫吧！", "py": "Nà wǒmen yìqǐ qù kàn dàifu ba!", "es": "¡Pues vamos juntos al médico!" }
+      ],
+      "notes": "我听你的 (lit. «escucho lo tuyo») = «te hago caso, lo que tú digas». 重不重 es la pregunta A不A con un adjetivo (U8)."
+    },
+    { "type": "exercises", "count": 16, "bank": ["g-modal-verbs", "g-bu-mei", "u11"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "他" }, "adverb": { "zh": "好像" }, "verb1": { "zh": "受伤" }, "particle": { "zh": "了" } }, "end": "。", "es": "Parece que se ha hecho daño." }, "distractors": ["是"] },
+        { "sentence": { "slots": { "subject": { "zh": "安娜" }, "time": { "zh": "明天" }, "adverb": { "zh": "可能不" }, "aux": { "zh": "会" }, "verb1": { "zh": "来" } }, "end": "。", "es": "Puede que Ana no venga mañana." } },
+        { "sentence": { "slots": { "subject": { "zh": "感冒" }, "adverb": { "zh": "不一定" }, "aux": { "zh": "要" }, "verb1": { "zh": "打针" } }, "end": "。", "es": "Un resfriado no siempre necesita una inyección." } },
+        { "sentence": { "slots": { "time0": { "zh": "这个星期六" }, "subject": { "zh": "你" }, "adverb": { "zh": "一定" }, "aux": { "zh": "要" }, "with": { "zh": "跟大卫一起" }, "verb1": { "zh": "去医院" }, "verb2": { "zh": "检查" }, "object": { "zh": "眼睛" } }, "end": "。", "es": "Este sábado tienes que ir sin falta con David al hospital a que te miren los ojos." } }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "他好像不舒服。", "py": "Tā hǎoxiàng bù shūfu.", "es": "Parece que no se encuentra bien." },
+        { "zh": "他可能感冒了。", "py": "Tā kěnéng gǎnmào le.", "es": "Puede que se haya resfriado." },
+        { "zh": "这是轻伤，不太危险。", "py": "Zhè shì qīng shāng, bú tài wēixiǎn.", "es": "Es una lesión leve, no muy peligrosa." },
+        { "zh": "你一定要去医院。", "py": "Nǐ yídìng yào qù yīyuàn.", "es": "Tienes que ir al hospital sin falta." }
+      ],
+      "respond": [
+        { "q": { "zh": "大卫今天怎么没来？", "py": "Dàwèi jīntiān zěnme méi lái?", "es": "¿Cómo es que David no ha venido hoy?" }, "model": { "zh": "他可能生病了。", "py": "Tā kěnéng shēngbìng le.", "es": "Puede que esté enfermo." } },
+        { "q": { "zh": "感冒一定要吃药吗？", "py": "Gǎnmào yídìng yào chī yào ma?", "es": "¿Un resfriado necesita medicinas sí o sí?" }, "model": { "zh": "不一定，多休息也可以。", "py": "Bù yídìng, duō xiūxi yě kěyǐ.", "es": "No necesariamente; descansar mucho también vale." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Una lesión en el partido",
+      "text": "上个星期六，大卫跟朋友们一起打篮球。打球的时候，他的手指受伤了。开始他觉得是轻伤，没去医院。过了两天，他的手指还很疼。雨果说：“你的手指好像有毛病，可能很危险，你一定要去医院。”大卫有点儿怕，他觉得医院很可怕。他们一起去了医院。大夫检查了一下，说：“不是大问题，也许一个星期就好了。这几天你不能打球。”",
+      "es": "El sábado pasado David jugó al baloncesto con sus amigos. Durante el partido se hizo daño en el dedo. Al principio pensó que era una lesión leve y no fue al hospital. Pasaron dos días y el dedo todavía le dolía mucho. Hugo le dijo: «Parece que tienes algo en el dedo; puede ser peligroso, tienes que ir al hospital sin falta». David tenía un poco de miedo: los hospitales le parecen horribles. Fueron juntos al hospital. El médico se lo miró y dijo: «No es nada grave; a lo mejor en una semana ya está bien. Estos días no puedes jugar al baloncesto».",
+      "questions": [
+        { "q": "¿Cómo se hizo daño David?", "options": ["Jugando al baloncesto", "En el metro", "Cocinando"], "answer": 0 },
+        { "q": "¿Qué pensó David al principio?", "options": ["Que era una lesión leve", "Que era muy peligroso", "Que tenía fiebre"], "answer": 0 },
+        { "q": "¿Qué le da miedo a David?", "options": ["Los hospitales", "El baloncesto", "Hugo"], "answer": 0 },
+        { "q": "¿Qué no puede hacer David estos días?", "options": ["Jugar al baloncesto", "Ir a clase", "Comer"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

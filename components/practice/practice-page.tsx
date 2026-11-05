@@ -14,7 +14,7 @@ import { grammarById } from "@/lib/course";
 import { usePack } from "@/lib/languages/provider";
 import { practiceExercises, SKILL_TYPES, type PracticeOptions } from "@/lib/exercises/build";
 import { bankSession, BANK_TYPE_GROUPS, currentLevel, UNIT_BANKS } from "@/lib/exercises/session";
-import { loadBank } from "@/lib/exercises/bank";
+import { loadUnitBank } from "@/lib/exercises/bank";
 import { EXERCISE_LABELS, EXERCISE_TYPES, BANK_EXERCISE_TYPES, type Exercise, type ExerciseType } from "@/lib/exercises/types";
 import { useDictionary } from "@/lib/dictionary/service";
 import { speechRecognitionAvailable } from "@/lib/tts";
@@ -102,7 +102,7 @@ export function PracticePage() {
 
   useEffect(() => {
     if (!hasBanks || !unitId) return;
-    void loadBank(unitId.startsWith("u0-") ? "u0" : unitId).then((b) => setBankInfo(b ? { unit: unitId, items: b.items.length } : null));
+    void loadUnitBank(unitId).then((b) => setBankInfo(b ? { unit: unitId, items: b.items.length } : null));
   }, [unitId, hasBanks]);
 
   const start = async () => {

@@ -1,0 +1,130 @@
+{
+  "id": "a1-u10-l3",
+  "title": "Mis cosas: 有, 这些 / 那些 y 台 双 条",
+  "zh": "这些鞋很好看",
+  "goal": "Decir qué tienes (有 / 没有 / 有没有) y hablar de varias cosas con 这些, 那些, 哪些.",
+  "minutes": 14,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "台", "pinyin": "tái", "es": "(clasificador de aparatos y máquinas)", "note": "一台电脑, 一台电视." },
+    { "hanzi": "电脑", "pinyin": "diànnǎo", "es": "ordenador", "note": "Lit. «cerebro eléctrico». 笔记本电脑 = portátil." },
+    { "hanzi": "双", "pinyin": "shuāng", "es": "(clasificador) par", "note": "一双鞋, 一双筷子." },
+    { "hanzi": "鞋", "pinyin": "xié", "es": "zapato, zapatos", "note": "En casa, en China, se suele dejar el calzado en la entrada." },
+    { "hanzi": "条", "pinyin": "tiáo", "es": "(clasificador de cosas largas y flexibles)", "note": "一条狗, 一条鱼, 一条裤子 (pantalón), 一条路." },
+    { "hanzi": "这些", "pinyin": "zhèxiē", "es": "estos, estas", "note": "Sin clasificador: 这些书 (no *这些本书)." },
+    { "hanzi": "那些", "pinyin": "nàxiē", "es": "esos, esas; aquellos, aquellas" },
+    { "hanzi": "哪些", "pinyin": "nǎxiē", "es": "¿cuáles?" },
+    { "hanzi": "穿", "pinyin": "chuān", "es": "ponerse, llevar (ropa, zapatos)", "note": "Para ropa y calzado. Gafas, gorros y relojes van con 戴 (lección 5)." }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "我有一台电脑。", "py": "Wǒ yǒu yì tái diànnǎo.", "es": "Tengo un ordenador." },
+        { "zh": "你有没有电脑？", "py": "Nǐ yǒu méiyǒu diànnǎo?", "es": "¿Tienes ordenador o no?" },
+        { "zh": "这些鞋很好看。", "py": "Zhèxiē xié hěn hǎokàn.", "es": "Estos zapatos son muy bonitos." }
+      ]
+    },
+    { "type": "vocab", "title": "Aparatos, pares y plurales", "words": ["台", "电脑", "双", "鞋", "条", "这些", "那些", "哪些", "穿"] },
+    {
+      "type": "phonetics-drill",
+      "title": "zh ch sh frente a z c s: 双, 穿, 色",
+      "markdown": "Dos familias que en español no se distinguen:\n\n- **zh ch sh** (lengua **doblada hacia atrás**, hacia el paladar): 张 **zh**āng, 支 **zh**ī, 穿 **ch**uān, 双 **sh**uāng, 书 **sh**ū.\n- **z c s** (punta de la lengua **detrás de los dientes**, como una *s* española): 字 **z**ì, 色 **s**è, 四 **s**ì.\n\nOjo con **颜色 yánsè**: es *s*, no *sh*. Y recuerda que **c** es como «ts» con aire (菜 cài) y **ch** es una «ch» con la lengua atrás y aire (茶 chá).",
+      "items": [
+        { "audio": "双", "options": ["shuāng", "suāng", "xuāng"], "answer": 0, "explain": "sh con la lengua atrás + uang." },
+        { "audio": "穿", "options": ["chuān", "cuān", "chuāng"], "answer": 0, "explain": "ch aspirada y final -n." },
+        { "audio": "颜色", "options": ["yánsè", "yánshè", "yánzè"], "answer": 0, "explain": "色 es sè: s con la lengua delante." },
+        { "audio": "纸", "options": ["zhǐ", "zǐ", "jǐ"], "answer": 0, "explain": "zh, no z: 纸 zhǐ (papel) frente a 子 zǐ." },
+        { "audio": "书", "options": ["shū", "sū", "xū"], "answer": 0, "explain": "sh + u: libro." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["鞋", "双"],
+      "mnemonics": {
+        "鞋": "革 (cuero curtido) + 圭 (pista de sonido): el calzado se hacía de cuero.",
+        "双": "Dos 又 (mano derecha) juntas: dos manos, un par."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "有 + número + clasificador + nombre; 这些 / 那些",
+      "markdown": "**有** («tener», y también «haber») ya lo conoces de la familia. Ahora con objetos y clasificadores:\n\n- 我**有**一**台**电脑 · 安娜**有**三**双**鞋 · 小李家**有**一**条**狗.\n- Negativa: siempre **没有** (我**没有**电脑). Nunca *不有.\n- Pregunta: …**吗**？ o la forma A不A **有没有**？ (你**有没有**电脑？).\n\n**这些 / 那些 / 哪些** son el plural de 这 / 那 / 哪. **No llevan clasificador** ni número:\n\n- 这**些**书 (estos libros) — no *这些本书.\n- Si quieres el número, vuelve al clasificador: 这**两本**书 (estos dos libros).\n- Las cosas **no llevan 们**: 这些书, no *这些书们.\n\n**穿** + ropa o zapatos = «ponerse, llevar»: 我想**穿**那双鞋.",
+      "focus": ["verb1", "object"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "verb1": { "zh": "有", "py": "yǒu" }, "object": { "zh": "一台电脑", "py": "yì tái diànnǎo" } }, "end": "。", "es": "Tengo un ordenador." },
+        { "slots": { "subject": { "zh": "安娜", "py": "Ānnà" }, "verb1": { "zh": "有", "py": "yǒu" }, "object": { "zh": "三双鞋", "py": "sān shuāng xié" } }, "end": "。", "es": "Ana tiene tres pares de zapatos." },
+        { "slots": { "subject": { "zh": "小李家", "py": "Xiǎo Lǐ jiā" }, "verb1": { "zh": "有", "py": "yǒu" }, "object": { "zh": "一条狗", "py": "yì tiáo gǒu" } }, "end": "。", "es": "En casa de Xiao Li hay un perro." },
+        { "slots": { "subject": { "zh": "这些鞋", "py": "zhèxiē xié" }, "adverb": { "zh": "很", "py": "hěn" }, "verb1": { "zh": "好看", "py": "hǎokàn" } }, "end": "。", "es": "Estos zapatos son muy bonitos." },
+        { "slots": { "subject": { "zh": "那些书", "py": "nàxiē shū" }, "adverb": { "zh": "都很", "py": "dōu hěn" }, "verb1": { "zh": "新", "py": "xīn" } }, "end": "。", "es": "Esos libros son todos muy nuevos." },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "time": { "zh": "今天", "py": "jīntiān" }, "aux": { "zh": "想", "py": "xiǎng" }, "verb1": { "zh": "穿", "py": "chuān" }, "object": { "zh": "那双黑色的鞋", "py": "nà shuāng hēisè de xié" } }, "end": "。", "es": "Hoy quiero ponerme esos zapatos negros.", "esOrder": [{ "text": "Hoy", "slot": "time" }, { "text": "(yo)", "slot": "subject" }, { "text": "quiero", "slot": "aux" }, { "text": "ponerme", "slot": "verb1" }, { "text": "esos zapatos negros", "slot": "object" }] }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "verb1": { "zh": "没有", "py": "méiyǒu" }, "object": { "zh": "电脑", "py": "diànnǎo" } }, "end": "。", "es": "No tengo ordenador." },
+        { "slots": { "subject": { "zh": "雨果", "py": "Yǔguǒ" }, "adverb": { "zh": "不", "py": "bù" }, "aux": { "zh": "想", "py": "xiǎng" }, "verb1": { "zh": "穿", "py": "chuān" }, "object": { "zh": "这双鞋", "py": "zhè shuāng xié" } }, "end": "。", "es": "Hugo no quiere ponerse estos zapatos." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "有没有", "py": "yǒu méiyǒu" }, "object": { "zh": "电脑", "py": "diànnǎo" } }, "end": "？", "es": "¿Tienes ordenador o no?" },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "aux": { "zh": "想", "py": "xiǎng" }, "verb1": { "zh": "穿", "py": "chuān" }, "object": { "zh": "哪双鞋", "py": "nǎ shuāng xié" } }, "end": "？", "es": "¿Qué zapatos te quieres poner?" },
+        { "slots": { "subject": { "zh": "哪些书", "py": "nǎxiē shū" }, "verb1": { "zh": "好看", "py": "hǎokàn" } }, "end": "？", "es": "¿Qué libros son buenos?" }
+      ],
+      "mistakes": [
+        { "wrong": "这些本书很好看。", "right": "这些书很好看。", "why": "这些 no lleva clasificador. Con número: 这两本书." },
+        { "wrong": "我有电脑两台。", "right": "我有两台电脑。", "why": "Número + clasificador van delante del nombre." },
+        { "wrong": "这些书们都很新。", "right": "这些书都很新。", "why": "们 es solo para personas; 这些 ya marca el plural." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "La maleta de Hugo",
+      "lines": [
+        { "speaker": "小李", "zh": "雨果，这些东西都是你的吗？", "py": "Yǔguǒ, zhèxiē dōngxi dōu shì nǐ de ma?", "es": "Hugo, ¿todas estas cosas son tuyas?" },
+        { "speaker": "雨果", "zh": "对，这些是我的东西。", "py": "Duì, zhèxiē shì wǒ de dōngxi.", "es": "Sí, son mis cosas." },
+        { "speaker": "小李", "zh": "你有几双鞋？", "py": "Nǐ yǒu jǐ shuāng xié?", "es": "¿Cuántos pares de zapatos tienes?" },
+        { "speaker": "雨果", "zh": "我有四双鞋。这双白色的鞋很新。", "py": "Wǒ yǒu sì shuāng xié. Zhè shuāng báisè de xié hěn xīn.", "es": "Cuatro pares. Estos blancos son muy nuevos." },
+        { "speaker": "小李", "zh": "你有没有电脑？", "py": "Nǐ yǒu méiyǒu diànnǎo?", "es": "¿Tienes ordenador?" },
+        { "speaker": "雨果", "zh": "有，我有一台电脑。你呢？", "py": "Yǒu, wǒ yǒu yì tái diànnǎo. Nǐ ne?", "es": "Sí, tengo uno. ¿Y tú?" },
+        { "speaker": "小李", "zh": "我没有电脑，我家有一台。", "py": "Wǒ méiyǒu diànnǎo, wǒ jiā yǒu yì tái.", "es": "Yo no tengo; en mi casa hay uno." },
+        { "speaker": "雨果", "zh": "哪些书是你的？", "py": "Nǎxiē shū shì nǐ de?", "es": "¿Qué libros son tuyos?" },
+        { "speaker": "小李", "zh": "那些书是我的。我家也有很多书！", "py": "Nàxiē shū shì wǒ de. Wǒ jiā yě yǒu hěn duō shū!", "es": "Esos de ahí. ¡En mi casa también tengo muchísimos!" }
+      ],
+      "notes": "A una pregunta con 有 se responde con el verbo: 有 (sí) o 没有 (no). 我家有一台 sin 电脑 detrás: cuando el nombre ya está claro, basta con número + clasificador."
+    },
+    { "type": "exercises", "count": 15, "bank": ["g-measure-words", "g-you", "g-demonstratives"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "我" }, "verb1": { "zh": "有" }, "object": { "zh": "一台电脑" } }, "end": "。", "es": "Tengo un ordenador." }, "distractors": ["不"] },
+        { "sentence": { "slots": { "subject": { "zh": "这些鞋" }, "adverb": { "zh": "很" }, "verb1": { "zh": "好看" } }, "end": "。", "es": "Estos zapatos son muy bonitos." }, "distractors": ["双"] },
+        { "sentence": { "slots": { "subject": { "zh": "你" }, "verb1": { "zh": "有没有" }, "object": { "zh": "电脑" } }, "end": "？", "es": "¿Tienes ordenador o no?" }, "distractors": ["吗"] },
+        { "sentence": { "slots": { "time0": { "zh": "明天晚上" }, "subject": { "zh": "安娜" }, "adverb": { "zh": "也很" }, "aux": { "zh": "想" }, "verb1": { "zh": "穿" }, "object": { "zh": "那双很漂亮的红色的鞋" } }, "end": "。", "es": "Mañana por la noche Ana también tiene muchas ganas de ponerse esos zapatos rojos tan bonitos." }, "distractors": ["这些"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "我有一台电脑。", "py": "Wǒ yǒu yì tái diànnǎo.", "es": "Tengo un ordenador." },
+        { "zh": "你有没有电脑？", "py": "Nǐ yǒu méiyǒu diànnǎo?", "es": "¿Tienes ordenador?" },
+        { "zh": "这些鞋很好看。", "py": "Zhèxiē xié hěn hǎokàn.", "es": "Estos zapatos son muy bonitos." },
+        { "zh": "小李家有一条狗。", "py": "Xiǎo Lǐ jiā yǒu yì tiáo gǒu.", "es": "En casa de Xiao Li hay un perro." }
+      ],
+      "respond": [
+        { "q": { "zh": "你有几双鞋？", "py": "Nǐ yǒu jǐ shuāng xié?", "es": "¿Cuántos pares de zapatos tienes?" }, "model": { "zh": "我有五双鞋。", "py": "Wǒ yǒu wǔ shuāng xié.", "es": "Tengo cinco pares." } },
+        { "q": { "zh": "你家有狗吗？", "py": "Nǐ jiā yǒu gǒu ma?", "es": "¿En tu casa hay perro?" }, "model": { "zh": "有，我家有一条狗。", "py": "Yǒu, wǒ jiā yǒu yì tiáo gǒu.", "es": "Sí, en mi casa hay un perro." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Lo que Hugo trajo de España",
+      "text": "雨果的东西不太多。他有一台电脑、四双鞋和很多衣服。这些鞋都是西班牙的。今天很热，他想穿那双白色的鞋。小李家有一条黑色的狗，很可爱。那些书是小李的，不是雨果的。",
+      "es": "Hugo no tiene muchas cosas. Tiene un ordenador, cuatro pares de zapatos y mucha ropa. Todos los zapatos son de España. Hoy hace mucho calor y quiere ponerse los blancos. En casa de Xiao Li hay un perro negro muy mono. Esos libros son de Xiao Li, no de Hugo.",
+      "questions": [
+        { "q": "¿Cuántos ordenadores tiene Hugo?", "options": ["一台", "两台", "没有"], "answer": 0 },
+        { "q": "¿De qué color es el perro de Xiao Li?", "options": ["黑色", "白色", "黄色"], "answer": 0 },
+        { "q": "¿De quién son esos libros?", "options": ["小李", "雨果", "安娜"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

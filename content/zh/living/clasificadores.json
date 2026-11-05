@@ -1,0 +1,460 @@
+{
+  "id": "clasificadores",
+  "title": "Clasificadores",
+  "zh": "量词",
+  "order": 11,
+  "icon": "Boxes",
+  "summary": "Entre un número (o 这, 那, 哪, 几, 每) y un nombre siempre va un clasificador: 一个人, 两杯茶, 这本书. Aquí se reúnen por familias, con sus errores típicos, y también los que cuentan veces (次, 遍, 一下).",
+  "kind": "topic",
+  "reviewed": false,
+  "sections": [
+    {
+      "id": "ge-kou",
+      "title": "La regla: número + clasificador + nombre (个 y 口)",
+      "unlockedBy": "a1-u03-l4",
+      "markdown": "### La pieza que no se puede saltar\n\nEn español ya lo hacemos con algunas cosas: «tres **hojas** de papel», «dos **tazas** de té», «una **barra** de pan». En chino es así con **todo**: entre el número y el nombre va siempre un **clasificador**.\n\n**número + clasificador + nombre** → 两**个**孩子, 五**个**男学生. En el esqueleto, los tres juntos ocupan el hueco del **objeto** (o del sujeto).\n\n- **个 ge** es el comodín: personas, amigos, alumnos, preguntas, países… Si no sabes el clasificador de algo, 个 te salva.\n- **口 kǒu** («boca») solo para los miembros de **una familia** cuando cuentas cuántos sois: 我家有四**口**人. Para contar hijos, hermanos o amigos, 个.\n\n### Dos detalles de pronunciación\n\n- Delante de clasificador, «dos» es **两**, no 二: 两个人 (pero 十二个人).\n- **一** cambia de tono: **yí** delante de 4.º tono (一个 yí ge: 个 es gè en origen) y **yì** delante de los demás (一口 yì kǒu).\n\n> ❌ **Error típico**: 三人 → 三**个**人. Nunca va un número pegado al nombre.\n\n> ❌ **Error típico**: 班里有二十口人 → 班里有二十**个**人. 口 es solo para la familia.\n\n> ⚠️ **Ojo**: algunas palabras no llevan clasificador porque ya lo son: 天, 年, 岁: 三天, 两年, 二十岁 (nunca ~~三个天~~, ~~一个岁~~).",
+      "skeleton": {
+        "focus": ["object"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "张先生", "py": "Zhāng xiānsheng" },
+              "verb1": { "zh": "有", "py": "yǒu" },
+              "object": { "zh": "两个孩子", "py": "liǎng ge háizi" }
+            },
+            "end": "。",
+            "es": "El señor Zhang tiene dos hijos."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "我家", "py": "wǒ jiā" },
+              "verb1": { "zh": "有", "py": "yǒu" },
+              "object": { "zh": "四口人", "py": "sì kǒu rén" }
+            },
+            "end": "。",
+            "es": "Somos cuatro en mi familia (lit. «mi casa tiene cuatro bocas de persona»)."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "我们班", "py": "wǒmen bān" },
+              "verb1": { "zh": "有", "py": "yǒu" },
+              "object": { "zh": "七个女学生", "py": "qī ge nǚ xuésheng" }
+            },
+            "end": "。",
+            "es": "En nuestra clase hay siete chicas."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "你家有几口人？", "py": "Nǐ jiā yǒu jǐ kǒu rén?", "es": "¿Cuántos sois en tu familia?" },
+        { "zh": "我有一个中国朋友。", "py": "Wǒ yǒu yí ge Zhōngguó péngyou.", "es": "Tengo un amigo chino." },
+        { "zh": "我有两个问题。", "py": "Wǒ yǒu liǎng ge wèntí.", "es": "Tengo dos preguntas." },
+        { "zh": "那个女孩儿是我同学。", "py": "Nàge nǚháir shì wǒ tóngxué.", "es": "Esa chica es compañera mía." }
+      ],
+      "sourceNotes": ["zh-grammar-measure-words", "zh-classifiers-table"]
+    },
+    {
+      "id": "recipientes",
+      "title": "Recipientes: 杯, 碗, 瓶, 盘",
+      "unlockedBy": "a1-u09-l2",
+      "markdown": "### Lo que no se cuenta, se mide por el recipiente\n\nEl agua, el té o el arroz no se cuentan «de uno en uno»: se cuentan por **lo que los contiene**, igual que en español «un **vaso** de agua».\n\n| Clasificador | Para | Ejemplo |\n|---|---|---|\n| **杯 bēi** | vasos y tazas: 水, 茶, 咖啡, 牛奶 | 一杯茶 |\n| **碗 wǎn** | cuencos: 米饭, 面条儿, 汤 | 两碗米饭 |\n| **瓶 píng** | botellas: 水, 酒, 可乐 | 一瓶水 |\n| **盘 pán** | platos, fuentes | 一盘饺子 |\n| **个** | lo que se cuenta suelto | 两个包子 |\n\n- La plantilla del restaurante: **要 + número + clasificador + cosa**: 我要一杯茶.\n- Para preguntar cuántos: **几 + clasificador**: 你要几杯？\n- **瓶子** es el objeto «botella»; **瓶** sin 子 es el clasificador: 一瓶水 (no ~~一瓶子水~~).\n\n> ❌ **Error típico**: 两个水 → 两**杯** / 两**瓶**水.\n\n> ❌ **Error típico**: 一个米饭 → 一**碗**米饭: el arroz se cuenta por cuencos.\n\n> ⚠️ **Ojo**: 一 + 杯 / 瓶 / 盘 (1.º y 2.º tono) se dice **yì**; 一 + 碗 (3.er tono) también **yì**: yì bēi, yì píng, yì wǎn.",
+      "skeleton": {
+        "focus": ["object"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "verb1": { "zh": "要", "py": "yào" },
+              "object": { "zh": "一杯茶", "py": "yì bēi chá" }
+            },
+            "end": "。",
+            "es": "Quiero un té.",
+            "esOrder": [
+              { "text": "Quiero", "slot": "verb1" },
+              { "text": "un té", "slot": "object" }
+            ]
+          },
+          {
+            "slots": {
+              "subject": { "zh": "我们", "py": "wǒmen" },
+              "verb1": { "zh": "要", "py": "yào" },
+              "object": { "zh": "一盘饺子", "py": "yì pán jiǎozi" }
+            },
+            "end": "。",
+            "es": "Queremos un plato de jiaozi."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "你", "py": "nǐ" },
+              "verb1": { "zh": "要", "py": "yào" },
+              "object": { "zh": "几碗米饭", "py": "jǐ wǎn mǐfàn" }
+            },
+            "end": "？",
+            "es": "¿Cuántos boles de arroz quieres?"
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "他要两碗面条儿。", "py": "Tā yào liǎng wǎn miàntiáor.", "es": "Él quiere dos boles de fideos." },
+        { "zh": "我想喝一瓶水。", "py": "Wǒ xiǎng hē yì píng shuǐ.", "es": "Me apetece beberme una botella de agua." },
+        { "zh": "早上我吃两个包子，喝一杯牛奶。", "py": "Zǎoshang wǒ chī liǎng ge bāozi, hē yì bēi niúnǎi.", "es": "Por la mañana me como dos baozi y me bebo un vaso de leche." },
+        { "zh": "你要几杯茶？——两杯。", "py": "Nǐ yào jǐ bēi chá? — Liǎng bēi.", "es": "¿Cuántos tés quieres? —Dos.", "note": "En la respuesta, el clasificador se queda aunque se vaya el nombre." }
+      ],
+      "sourceNotes": ["zh-grammar-measure-words", "zh-classifiers-table"]
+    },
+    {
+      "id": "wei-cortes",
+      "title": "位: contar personas con respeto",
+      "unlockedBy": "a1-u09-l4",
+      "markdown": "### El 个 de las personas, con corbata\n\n**位 wèi** cuenta personas con cortesía. Es lo que oirás nada más entrar en un restaurante: **几位？** (¿cuántos son?), más amable que 几个人？\n\n- 这**位**是王老师 = le presento a la profesora Wang.\n- 两**位**老师, 一**位**先生.\n\n> ❌ **Error típico**: usarlo con uno mismo: ~~我是一位学生~~. El respeto es para los demás.\n\n> ❌ **Error típico**: ~~一位人~~. Con 人 va 个: 一个人.\n\n> 💡 **Truco**: 位 no lleva 们 ni se usa con 口: para la familia, 几口人; en el restaurante, 几位.",
+      "examples": [
+        { "zh": "您好，几位？——两位。", "py": "Nín hǎo, jǐ wèi? — Liǎng wèi.", "es": "Buenas, ¿cuántos son? —Dos." },
+        { "zh": "这位是王老师。", "py": "Zhè wèi shì Wáng lǎoshī.", "es": "Esta es la profesora Wang." },
+        { "zh": "那位先生是谁？", "py": "Nà wèi xiānsheng shì shéi?", "es": "¿Quién es ese señor?" }
+      ],
+      "sourceNotes": ["zh-classifiers-table"]
+    },
+    {
+      "id": "demostrativos",
+      "title": "这 / 那 / 哪 + clasificador; 本, 件, 张, 支",
+      "unlockedBy": "a1-u10-l2",
+      "markdown": "### Este, ese, ¿cuál? también piden clasificador\n\n| | clasificador | nombre | |\n|---|---|---|---|\n| 这 | 本 | 书 | este libro |\n| 那 | 件 | 衣服 | esa prenda |\n| 哪 | 支 | 笔 | ¿qué bolígrafo? |\n| 这两 | 张 | 纸 | estas dos hojas |\n\n- El **número** va entre el demostrativo y el clasificador: 那**三**本书.\n- Solo hay **dos distancias**: 这 (cerca) y 那 (ese **y** aquel). 哪 es 那 con una boca (口) que pregunta.\n- Con **儿 / 里** pasan a ser lugares: 这儿 (aquí), 那儿 (allí), 哪儿 (dónde).\n\n### Clasificadores por forma\n\n| | Para | Ejemplos |\n|---|---|---|\n| **本 běn** | cosas encuadernadas | 书, 本子, 词典 |\n| **件 jiàn** | prendas de arriba y asuntos | 衣服, 事 |\n| **张 zhāng** | cosas planas | 纸, 桌子, 床, 照片 |\n| **支 zhī** | cosas finas y alargadas | 笔 |\n\n> 🧠 **Mnemotecnia**: 本 es un árbol (木) con una raya en la raíz: el papel sale del árbol → libros. 张 lleva 弓 (arco) y 长 (largo): algo que se estira plano → papel, mesa, cama.\n\n> 💡 **Truco**: el clasificador se queda cuando el nombre desaparece: 我要**这个** (quiero esto), 你有几本？——**三本**。 Imprescindible en una tienda.\n\n> ❌ **Error típico**: 这书 → 这**本**书. 这人 → 这**个**人.\n\n> ❌ **Error típico**: 那儿书是我的 → 那**本**书是我的. 那儿 es «allí», un lugar.\n\n> ⚠️ **Ojo**: en el habla oirás **zhèi** běn, **nèi** jiàn, **něi** zhī (这一, 那一, 哪一 fundidos). Las dos formas son correctas.",
+      "skeleton": {
+        "focus": ["subject", "object"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "这本书", "py": "zhè běn shū" },
+              "adverb": { "zh": "很", "py": "hěn" },
+              "verb1": { "zh": "好看", "py": "hǎokàn" }
+            },
+            "end": "。",
+            "es": "Este libro es muy bueno."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "verb1": { "zh": "要", "py": "yào" },
+              "object": { "zh": "那件衣服", "py": "nà jiàn yīfu" }
+            },
+            "end": "。",
+            "es": "Quiero esa prenda.",
+            "esOrder": [
+              { "text": "Quiero", "slot": "verb1" },
+              { "text": "esa prenda", "slot": "object" }
+            ]
+          },
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "time": { "zh": "明天", "py": "míngtiān" },
+              "aux": { "zh": "要", "py": "yào" },
+              "verb1": { "zh": "买", "py": "mǎi" },
+              "object": { "zh": "那三本书", "py": "nà sān běn shū" }
+            },
+            "end": "。",
+            "es": "Mañana voy a comprar esos tres libros."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "这支笔很新。", "py": "Zhè zhī bǐ hěn xīn.", "es": "Este bolígrafo es muy nuevo." },
+        { "zh": "雨果要两张纸。", "py": "Yǔguǒ yào liǎng zhāng zhǐ.", "es": "Hugo quiere dos hojas de papel." },
+        { "zh": "你要哪件衣服？——这件。", "py": "Nǐ yào nǎ jiàn yīfu? — Zhè jiàn.", "es": "¿Qué prenda quieres? —Esta." },
+        { "zh": "这是我的书，那是你的。", "py": "Zhè shì wǒ de shū, nà shì nǐ de.", "es": "Este es mi libro; aquel es el tuyo.", "note": "这 / 那 solos, como sujeto de 是, no necesitan clasificador." },
+        { "zh": "那张桌子是王老师的。", "py": "Nà zhāng zhuōzi shì Wáng lǎoshī de.", "es": "Esa mesa es de la profesora Wang." }
+      ],
+      "sourceNotes": ["zh-grammar-demonstratives", "zh-contrast-zhe-na-na", "zh-classifiers-table", "zh-classifiers-map"]
+    },
+    {
+      "id": "tai-shuang-tiao",
+      "title": "台, 双, 条 y el plural 这些 / 那些",
+      "unlockedBy": "a1-u10-l3",
+      "markdown": "### Tres familias más\n\n| | Para | Ejemplos |\n|---|---|---|\n| **台 tái** | aparatos y máquinas | 电脑, 电视 |\n| **双 shuāng** | pares | 鞋, 筷子 |\n| **条 tiáo** | cosas largas y flexibles | 狗, 鱼, 裤子, 路 |\n\n### 这些 / 那些 / 哪些: sin clasificador\n\n**些** ya hace de clasificador (plural indefinido), así que **no lleva otro ni número**:\n\n- 这**些**书 (estos libros), no ~~这些本书~~.\n- Si quieres el número, vuelve al clasificador: 这**两本**书.\n- Las cosas **no llevan 们**: 这些书, no ~~这些书们~~.\n\n> 🧠 **Mnemotecnia**: 条 tiene 木 abajo: una rama larga → pantalones, peces, calles.\n\n> ❌ **Error típico**: 一件裤子 → 一**条**裤子 (los pantalones son «largos»). 件 es para la ropa de arriba.\n\n> ⚠️ **Ojo**: 一双鞋 es un par; un solo zapato es 一只鞋 (只 lo verás en A2).\n\n> 💡 **Truco**: aprende cada palabra nueva **con su clasificador delante**, como una unidad: no «鞋», sino «一双鞋»; como el género en español.",
+      "skeleton": {
+        "focus": ["object"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "verb1": { "zh": "有", "py": "yǒu" },
+              "object": { "zh": "一台电脑", "py": "yì tái diànnǎo" }
+            },
+            "end": "。",
+            "es": "Tengo un ordenador."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "安娜", "py": "Ānnà" },
+              "verb1": { "zh": "有", "py": "yǒu" },
+              "object": { "zh": "三双鞋", "py": "sān shuāng xié" }
+            },
+            "end": "。",
+            "es": "Ana tiene tres pares de zapatos."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "这些鞋", "py": "zhèxiē xié" },
+              "adverb": { "zh": "很", "py": "hěn" },
+              "verb1": { "zh": "好看", "py": "hǎokàn" }
+            },
+            "end": "。",
+            "es": "Estos zapatos son muy bonitos."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "小李家有一条狗。", "py": "Xiǎo Lǐ jiā yǒu yì tiáo gǒu.", "es": "En casa de Xiao Li hay un perro." },
+        { "zh": "那些书都很新。", "py": "Nàxiē shū dōu hěn xīn.", "es": "Esos libros son todos muy nuevos." },
+        { "zh": "你喜欢哪些衣服？", "py": "Nǐ xǐhuan nǎxiē yīfu?", "es": "¿Qué ropa te gusta?" },
+        { "zh": "我今天想穿那双黑色的鞋。", "py": "Wǒ jīntiān xiǎng chuān nà shuāng hēisè de xié.", "es": "Hoy quiero ponerme esos zapatos negros." }
+      ],
+      "sourceNotes": ["zh-classifiers-table", "zh-classifiers-map"]
+    },
+    {
+      "id": "compras",
+      "title": "De compras: 块, 斤, 份, 套, 包",
+      "unlockedBy": "a1-u16-l3",
+      "markdown": "### El dinero también se «clasifica»\n\n| | Para | Ejemplo |\n|---|---|---|\n| **块 kuài** | yuanes (hablado); también trozos | 十五块 |\n| **元 yuán** | yuanes (escrito, etiquetas) | 24元 |\n| **斤 jīn** | medio kilo (500 g), en el mercado | 一斤鸡蛋 |\n| **份 fèn** | raciones, porciones | 一份饺子 |\n| **套 tào** | juegos, conjuntos | 一套书 |\n| **包 bāo** | paquetes, bolsas | 一包纸 |\n\n- **Precio por unidad**: precio + clasificador: **三块一个** (a tres yuanes la unidad), 多少钱**一斤**？ (¿a cuánto el medio kilo?).\n- **块** es el clasificador del dinero: ~~十五个钱~~ → 十五**块**(钱).\n\n> 🏮 **¿Sabías que…?**: en el mercado todo se pesa en **斤**. 一斤 son 500 g; para un kilo di 一公斤 o 两斤.\n\n> ⚠️ **Ojo**: en la boca, **块**; en la etiqueta y el tique, **元**. Y no confundas 包 «paquete» con 包子 (el bollo relleno).",
+      "skeleton": {
+        "focus": ["object"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "你", "py": "nǐ" },
+              "verb1": { "zh": "给我", "py": "gěi wǒ" },
+              "object": { "zh": "一包纸", "py": "yì bāo zhǐ" },
+              "particle": { "zh": "吧", "py": "ba" }
+            },
+            "end": "。",
+            "es": "Dame un paquete de pañuelos."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "verb1": { "zh": "要", "py": "yào" },
+              "object": { "zh": "一份饺子", "py": "yí fèn jiǎozi" }
+            },
+            "end": "。",
+            "es": "Quiero una ración de jiaozi."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "鸡蛋多少钱一斤？", "py": "Jīdàn duōshao qián yì jīn?", "es": "¿A cuánto está el medio kilo de huevos?" },
+        { "zh": "包子三块一个。", "py": "Bāozi sān kuài yí ge.", "es": "Los baozi, a tres yuanes cada uno." },
+        { "zh": "这套书一共一百二十块。", "py": "Zhè tào shū yígòng yìbǎi èrshí kuài.", "es": "Esta colección de libros cuesta ciento veinte yuanes en total." },
+        { "zh": "我要两斤鸡蛋。", "py": "Wǒ yào liǎng jīn jīdàn.", "es": "Quiero un kilo de huevos (lit. «dos medios kilos»)." }
+      ],
+      "sourceNotes": ["zh-classifiers-table"]
+    },
+    {
+      "id": "verbales",
+      "title": "Contar veces: 次, 遍 y 一下",
+      "unlockedBy": "a2-u01-l4",
+      "markdown": "### Los clasificadores de los verbos\n\nLos nombres se cuentan con 个, 本, 杯…; las **acciones** se cuentan con **clasificadores verbales**, y van **detrás del verbo** (hueco del **complemento**):\n\n| | Significa | Ejemplo |\n|---|---|---|\n| **次 cì** | vez (cuántas veces pasa algo) | 我去过**两次** |\n| **遍 biàn** | vez **de principio a fin** (leer, decir, ver entero) | 请再说**一遍** |\n| **一下** | un momento, un poquito (suaviza) | 等**一下** |\n\n- **第一次** (la primera vez) es un **tiempo**: va **delante** del verbo: 我**第一次**来中国. En cambio, **两次** (dos veces) va **detrás**: 我来过**两次**.\n- Con un lugar, el lugar puede ir antes o después de las veces: 我去过北京两次 / 我去过两次北京.\n\n> 💡 **Truco**: 一遍 es «entero»: 我看了一遍 = me lo he leído entero una vez. 一次 solo cuenta la ocasión.\n\n> ❌ **Error típico**: 我两次去过北京 → 我去过北京**两次**. Las veces van detrás.\n\n> ⚠️ **Ojo**: 看一下 (un vistazo) ≠ 看一次 (una vez). 一下 suaviza; 一次 cuenta.",
+      "skeleton": {
+        "focus": ["complement", "time"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "verb1": { "zh": "去过", "py": "qùguo" },
+              "object": { "zh": "北京", "py": "Běijīng" },
+              "complement": { "zh": "两次", "py": "liǎng cì" }
+            },
+            "end": "。",
+            "es": "He estado en Pekín dos veces.",
+            "esOrder": [
+              { "text": "He estado", "slot": "verb1" },
+              { "text": "en Pekín", "slot": "object" },
+              { "text": "dos veces", "slot": "complement" }
+            ]
+          },
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "time": { "zh": "第一次", "py": "dì-yī cì" },
+              "verb1": { "zh": "看", "py": "kàn" },
+              "object": { "zh": "大海", "py": "dàhǎi" }
+            },
+            "end": "。",
+            "es": "Es la primera vez que veo el mar."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "adverb": { "zh": "还", "py": "hái" },
+              "aux": { "zh": "想", "py": "xiǎng" },
+              "verb1": { "zh": "去", "py": "qù" },
+              "complement": { "zh": "一次", "py": "yí cì" }
+            },
+            "end": "。",
+            "es": "Quiero ir una vez más."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "这是我第一次来中国。", "py": "Zhè shì wǒ dì-yī cì lái Zhōngguó.", "es": "Es la primera vez que vengo a China." },
+        { "zh": "老师，请再说一遍。", "py": "Lǎoshī, qǐng zài shuō yí biàn.", "es": "Profesora, ¿puede repetirlo, por favor?" },
+        { "zh": "安娜上个月去了一次海边。", "py": "Ānnà shàng ge yuè qù le yí cì hǎibiān.", "es": "Ana fue una vez a la costa el mes pasado." },
+        { "zh": "你等一下，我看一下。", "py": "Nǐ děng yíxià, wǒ kàn yíxià.", "es": "Espera un momento, que le echo un vistazo." }
+      ],
+      "sourceNotes": ["zh-grammar-yixia", "zh-classifiers-table"]
+    },
+    {
+      "id": "mas-clasificadores",
+      "title": "Más familias en A2: 只, 辆, 座, 场, 片, 层, 段, 封",
+      "unlockedBy": "a2-u11-l5",
+      "markdown": "### El mapa, por familias\n\nAgrupa los clasificadores por **forma** o **familia**, no por orden alfabético: si es plano, 张 o 片; si es largo, 条; si está en un recipiente, el recipiente; y si no encaja en nada, 个.\n\n| | Para | Ejemplos |\n|---|---|---|\n| **只 zhī** | animales (pequeños) y uno de un par | 一只猫, 一只鸡, 一只鞋 |\n| **辆 liàng** | vehículos con ruedas | 一辆车, 两辆自行车 |\n| **座 zuò** | edificios, montañas, puentes, ciudades | 一座楼, 一座山 |\n| **场 chǎng** | partidos, conciertos, películas | 一场比赛, 一场电影 |\n| **片 piàn** | lonchas, rodajas, pastillas | 一片面包, 两片药 |\n| **层 céng** | plantas de un edificio | 三层 |\n| **段 duàn** | tramos, párrafos, temporadas | 一段时间 |\n| **封 fēng** | cartas | 一封信 |\n| **家 jiā** | tiendas, restaurantes, empresas | 一家饭店 |\n\n> ⚠️ **Ojo**: **只** se lee **zhī** como clasificador y **zhǐ** como «solo» (我只要一个). Y no lo confundas con **支** (bolígrafos), que suena igual.\n\n> ❌ **Error típico**: 一个猫, 一个车 → 一**只**猫, 一**辆**车. Se entiende, pero 个 para todo suena a extranjero.\n\n> ⚠️ **Ojo**: **家** como clasificador no es «casa»: 一家饭店 = un restaurante.\n\n> 🧠 **Mnemotecnia**: 桌子 va con 张 (superficie plana) y la silla, 椅子, con 把 (se agarra): 一把椅子. Es al revés de lo que parece.",
+      "skeleton": {
+        "focus": ["object"],
+        "sentences": [
+          {
+            "slots": {
+              "place": { "zh": "停车场里", "py": "tíngchēchǎng li" },
+              "verb1": { "zh": "停着", "py": "tíngzhe" },
+              "object": { "zh": "三辆车", "py": "sān liàng chē" }
+            },
+            "end": "。",
+            "es": "En el aparcamiento hay tres coches aparcados."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "我们", "py": "wǒmen" },
+              "time": { "zh": "昨天", "py": "zuótiān" },
+              "verb1": { "zh": "看了", "py": "kàn le" },
+              "object": { "zh": "一场比赛", "py": "yì chǎng bǐsài" }
+            },
+            "end": "。",
+            "es": "Ayer vimos un partido."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "我们有两只猫。", "py": "Wǒmen yǒu liǎng zhī māo.", "es": "Tenemos dos gatos." },
+        { "zh": "这儿有一家饭店。", "py": "Zhèr yǒu yì jiā fàndiàn.", "es": "Aquí hay un restaurante." },
+        { "zh": "你每天必须吃两片药。", "py": "Nǐ měi tiān bìxū chī liǎng piàn yào.", "es": "Tienes que tomarte dos pastillas al día." },
+        { "zh": "我给经理写了一封信。", "py": "Wǒ gěi jīnglǐ xiě le yì fēng xìn.", "es": "Le he escrito una carta al director." },
+        { "zh": "我在上海住了一段时间。", "py": "Wǒ zài Shànghǎi zhù le yí duàn shíjiān.", "es": "Viví una temporada en Shanghái." }
+      ],
+      "sourceNotes": ["zh-classifiers-map", "zh-classifiers-table"]
+    },
+    {
+      "id": "verbales-b1",
+      "title": "Contar acciones: 遍, 回, 口, 声",
+      "unlockedBy": "b1-u03-l5",
+      "markdown": "### Más clasificadores verbales\n\nYa conoces **次** (三次) y **遍**. B1 añade unos cuantos más, que cuentan acciones:\n\n| | Para… | Ejemplo |\n|---|---|---|\n| **遍** | una vez **de principio a fin** | 再说一遍, 读了三遍 |\n| **回** | una vez (= 次, más coloquial) | 去过两回 |\n| **口** | un bocado, un trago | 喝了一口茶 |\n| **声** | un sonido, un aviso | 叫了一声, 跟我说一声 |\n\nVan **detrás del verbo**, como la duración:\n\n- **sin objeto**: la cantidad en *Complemento* (说 · 一遍).\n- **con un objeto común**: la cantidad va **delante del objeto**, juntos en *Objeto* (喝了 · 一口茶).\n- **con un lugar o una persona**: la cantidad puede ir detrás (去过 · 那个实验室 · 两回).\n\n**«Ni una vez»**: 一 + clasificador + 也没, delante del verbo, en *Adverbios*: 一遍也没听过.\n\n> 💡 **Truco**: **跟我说一声** («avísame») es de las frases más útiles del día a día.",
+      "skeleton": {
+        "focus": [
+          "complement",
+          "object"
+        ],
+        "sentences": [
+          {
+            "slots": {
+              "subject": {
+                "zh": "您",
+                "py": "nín"
+              },
+              "adverb": {
+                "zh": "再",
+                "py": "zài"
+              },
+              "verb1": {
+                "zh": "说",
+                "py": "shuō"
+              },
+              "complement": {
+                "zh": "一遍",
+                "py": "yí biàn"
+              },
+              "particle": {
+                "zh": "吧",
+                "py": "ba"
+              }
+            },
+            "end": "。",
+            "es": "Repítalo otra vez, por favor."
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "他",
+                "py": "tā"
+              },
+              "verb1": {
+                "zh": "喝了",
+                "py": "hē le"
+              },
+              "object": {
+                "zh": "一口茶",
+                "py": "yì kǒu chá"
+              }
+            },
+            "end": "。",
+            "es": "Le dio un sorbo al té."
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "你",
+                "py": "nǐ"
+              },
+              "time": {
+                "zh": "走以前",
+                "py": "zǒu yǐqián"
+              },
+              "with": {
+                "zh": "跟我",
+                "py": "gēn wǒ"
+              },
+              "verb1": {
+                "zh": "说",
+                "py": "shuō"
+              },
+              "complement": {
+                "zh": "一声",
+                "py": "yì shēng"
+              }
+            },
+            "end": "。",
+            "es": "Antes de irte, avísame.",
+            "esOrder": [
+              {
+                "text": "Antes de irte",
+                "slot": "time"
+              },
+              {
+                "text": "avísame",
+                "slot": "verb1"
+              }
+            ]
+          }
+        ]
+      },
+      "examples": [
+        {
+          "zh": "我去过那个实验室两回。",
+          "py": "Wǒ qùguo nàge shíyànshì liǎng huí.",
+          "es": "He ido dos veces a ese laboratorio."
+        },
+        {
+          "zh": "这篇文章我读了三遍。",
+          "py": "Zhè piān wénzhāng wǒ dú le sān biàn.",
+          "es": "Este texto lo he leído tres veces."
+        },
+        {
+          "zh": "这个录音我一遍也没听过。",
+          "py": "Zhège lùyīn wǒ yí biàn yě méi tīngguo.",
+          "es": "Esta grabación no la he escuchado ni una vez."
+        },
+        {
+          "zh": "你吃一口吧，很好吃！",
+          "py": "Nǐ chī yì kǒu ba, hěn hǎochī!",
+          "es": "Prueba un bocado, ¡está muy bueno!"
+        }
+      ]
+    }
+  ]
+}

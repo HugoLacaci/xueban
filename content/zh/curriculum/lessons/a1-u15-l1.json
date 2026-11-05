@@ -1,0 +1,136 @@
+{
+  "id": "a1-u15-l1",
+  "title": "En metro, en autobús, en taxi: 坐 / 骑 / 开",
+  "zh": "我坐地铁去学校",
+  "goal": "Decir en qué medio vas a un sitio con 坐 / 骑 / 开 y entender líneas y paradas (二号线, 三零四路).",
+  "minutes": 14,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "坐", "pinyin": "zuò", "es": "ir en (un medio que te lleva); sentarse", "note": "Con todo lo que te lleva sentado: 地铁, 公交车, 出租车, 火车, 飞机." },
+    { "hanzi": "地铁", "pinyin": "dìtiě", "es": "metro", "note": "Lit. «hierro bajo tierra»." },
+    { "hanzi": "地铁站", "pinyin": "dìtiězhàn", "es": "estación de metro" },
+    { "hanzi": "公交车", "pinyin": "gōngjiāochē", "es": "autobús (urbano)" },
+    { "hanzi": "出租车", "pinyin": "chūzūchē", "es": "taxi", "note": "Lit. «coche de alquiler»." },
+    { "hanzi": "站", "pinyin": "zhàn", "es": "parada, estación", "note": "También cuenta paradas: 坐五站 «cinco paradas»." },
+    { "hanzi": "路", "pinyin": "lù", "es": "línea (de autobús); camino", "note": "三零四路 = la línea 304 (se lee cifra a cifra)." },
+    { "hanzi": "号线", "pinyin": "hàoxiàn", "es": "línea (de metro)", "note": "二号线 = la línea 2. Sin 第." },
+    { "hanzi": "骑", "pinyin": "qí", "es": "montar, ir en (bici, moto, caballo)", "note": "Para lo que vas a horcajadas." },
+    { "hanzi": "自行车", "pinyin": "zìxíngchē", "es": "bicicleta" },
+    { "hanzi": "骑车", "pinyin": "qíchē", "es": "ir en bici" },
+    { "hanzi": "开", "pinyin": "kāi", "es": "conducir; abrir" },
+    { "hanzi": "开车", "pinyin": "kāichē", "es": "conducir (un coche)" }
+  ],
+  "extraVocab": ["号线"],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "我坐地铁去学校。", "py": "Wǒ zuò dìtiě qù xuéxiào.", "es": "Voy a la universidad en metro." },
+        { "zh": "他骑自行车去上班。", "py": "Tā qí zìxíngchē qù shàngbān.", "es": "Él va a trabajar en bici." },
+        { "zh": "你坐几号线？", "py": "Nǐ zuò jǐ hàoxiàn?", "es": "¿Qué línea (de metro) coges?" }
+      ]
+    },
+    { "type": "vocab", "title": "Medios de transporte", "words": ["坐", "地铁", "地铁站", "公交车", "出租车", "站", "路", "号线", "骑", "自行车", "骑车", "开", "开车"] },
+    {
+      "type": "phonetics-drill",
+      "title": "zuò y zǒu: «uo» frente a «ou»",
+      "markdown": "Dos finales que los hispanohablantes cruzan a menudo:\n\n- **uo** (坐 *zuò*, 做 *zuò*): empieza en **u** y se abre hacia **o**, como «uo» en «cuota» dicho rápido.\n- **ou** (走 *zǒu*): empieza en **o** y se cierra hacia **u**, como «ou» en el catalán «bou».\n\nY dos aspiradas de hoy: la **t** de 地铁 *dìtiě* y la **q** de 骑 *qí* llevan un soplo fuerte (la prueba del papel).",
+      "items": [
+        { "audio": "坐", "options": ["zuò", "zǒu", "zhuò"], "answer": 0, "explain": "uo: de u a o. Además, z (no zh): lengua detrás de los dientes." },
+        { "audio": "走", "options": ["zuò", "zǒu", "zǔ"], "answer": 1, "explain": "ou: de o a u, y tercer tono (baja y sube)." },
+        { "audio": "地铁", "options": ["dìtiě", "tìdiě", "dìtié"], "answer": 0, "explain": "d sin soplo, t con soplo; 铁 es tercer tono." },
+        { "audio": "骑车", "options": ["qíchē", "jíchē", "qíshē"], "answer": 0, "explain": "q es la aspirada de j; ch es la aspirada de zh." },
+        { "audio": "出租车", "options": ["chūzūchē", "chūzhūchē", "qūzūchē"], "answer": 0, "explain": "chū (lengua hacia atrás) + zū (lengua delante) + chē." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["坐", "车"],
+      "mnemonics": {
+        "坐": "Dos 人 (personas) sentadas sobre 土 (la tierra): sentarse. En el transporte, te sientas en lo que te lleva: 坐地铁.",
+        "车": "Un carro visto desde arriba: el eje vertical y las ruedas en las rayas horizontales. Está en 汽车, 火车, 自行车, 出租车, 公交车."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "坐 / 骑 / 开 + medio + 去 + lugar",
+      "markdown": "En español el medio de transporte suele ir **al final** («voy a la universidad **en metro**»). En chino va **antes**, en el **verbo 1**, y el destino después, en el **verbo 2**: es la fila de verbos de la U7 (去学校上课), con un verbo delante que dice **cómo** vas.\n\n**Qué verbo usar** (en chino no hay un «en» que valga para todo):\n- **坐**: te sientas y te llevan → 坐地铁, 坐公交车, 坐出租车.\n- **骑**: vas a horcajadas → 骑自行车, 骑车.\n- **开**: conduces tú → 开车.\n\n**Pregunta**: 怎么 + 去 («¿cómo vas?») → 你**怎么**去学校？ La respuesta ocupa el mismo hueco: 我**坐地铁**去学校.\n\n**Ordinales sin 第**: con líneas, autobuses y plantas, el número + palabra ya es ordinal: **二号线** (la línea 2), **三零四路** (el autobús 304; en los carteles verás 304路 y se lee cifra a cifra), **三楼** (la tercera planta).",
+      "focus": ["verb1", "verb2"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "verb1": { "zh": "坐地铁", "py": "zuò dìtiě" }, "verb2": { "zh": "去", "py": "qù" }, "object": { "zh": "学校", "py": "xuéxiào" } }, "end": "。", "es": "Voy a la universidad en metro.", "esOrder": [{ "text": "(Yo)", "slot": "subject" }, { "text": "voy", "slot": "verb2" }, { "text": "a la universidad", "slot": "object" }, { "text": "en metro", "slot": "verb1" }] },
+        { "slots": { "subject": { "zh": "小李", "py": "Xiǎo Lǐ" }, "verb1": { "zh": "骑自行车", "py": "qí zìxíngchē" }, "verb2": { "zh": "去", "py": "qù" }, "object": { "zh": "学校", "py": "xuéxiào" } }, "end": "。", "es": "Xiao Li va a la universidad en bici." },
+        { "slots": { "subject": { "zh": "王老师", "py": "Wáng lǎoshī" }, "time": { "zh": "每天", "py": "měitiān" }, "verb1": { "zh": "开车", "py": "kāichē" }, "verb2": { "zh": "上班", "py": "shàngbān" } }, "end": "。", "es": "La profesora Wang va a trabajar en coche todos los días." },
+        { "slots": { "subject": { "zh": "安娜", "py": "Ānnà" }, "verb1": { "zh": "坐", "py": "zuò" }, "object": { "zh": "三零四路公交车", "py": "sān líng sì lù gōngjiāochē" } }, "end": "。", "es": "Anna coge el autobús 304." },
+        { "slots": { "subject": { "zh": "我们", "py": "wǒmen" }, "verb1": { "zh": "坐", "py": "zuò" }, "object": { "zh": "二号线", "py": "èr hàoxiàn" } }, "end": "。", "es": "Cogemos la línea 2." },
+        { "slots": { "subject": { "zh": "雨果", "py": "Yǔguǒ" }, "time": { "zh": "每天", "py": "měitiān" }, "verb1": { "zh": "坐地铁去学校", "py": "zuò dìtiě qù xuéxiào" }, "verb2": { "zh": "上课", "py": "shàngkè" } }, "end": "。", "es": "Hugo va a clase en metro todos los días." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "雨果", "py": "Yǔguǒ" }, "adverb": { "zh": "不", "py": "bù" }, "verb1": { "zh": "开车", "py": "kāichē" } }, "end": "。", "es": "Hugo no conduce." },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "time": { "zh": "今天", "py": "jīntiān" }, "adverb": { "zh": "不", "py": "bú" }, "verb1": { "zh": "坐出租车", "py": "zuò chūzūchē" } }, "end": "。", "es": "Hoy no voy en taxi." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "adverb": { "zh": "怎么", "py": "zěnme" }, "verb1": { "zh": "去", "py": "qù" }, "object": { "zh": "学校", "py": "xuéxiào" } }, "end": "？", "es": "¿Cómo vas a la universidad?" },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "坐", "py": "zuò" }, "object": { "zh": "几号线", "py": "jǐ hàoxiàn" } }, "end": "？", "es": "¿Qué línea coges?" }
+      ],
+      "mistakes": [
+        { "wrong": "我去学校坐地铁。", "right": "我坐地铁去学校。", "why": "El medio va delante del destino: primero cómo (坐地铁), después adónde (去学校)." },
+        { "wrong": "我坐自行车去学校。", "right": "我骑自行车去学校。", "why": "A la bici te subes a horcajadas: 骑, no 坐." },
+        { "wrong": "我开出租车去学校。", "right": "我坐出租车去学校。", "why": "开 es conducir tú. Si vas de pasajero en un taxi, 坐." },
+        { "wrong": "我坐第二号线。", "right": "我坐二号线。", "why": "Líneas, autobuses y plantas no llevan 第: 二号线, 三零四路, 三楼." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "¿Cómo vas a clase?",
+      "lines": [
+        { "speaker": "小李", "zh": "雨果，你每天怎么去学校？", "py": "Yǔguǒ, nǐ měitiān zěnme qù xuéxiào?", "es": "Hugo, ¿cómo vas a la universidad cada día?" },
+        { "speaker": "雨果", "zh": "我坐地铁去。你呢？", "py": "Wǒ zuò dìtiě qù. Nǐ ne?", "es": "Voy en metro. ¿Y tú?" },
+        { "speaker": "小李", "zh": "我骑自行车。地铁站远吗？", "py": "Wǒ qí zìxíngchē. Dìtiězhàn yuǎn ma?", "es": "Yo, en bici. ¿Está lejos la estación de metro?" },
+        { "speaker": "雨果", "zh": "不远，在宿舍旁边。我坐二号线，坐五站。", "py": "Bù yuǎn, zài sùshè pángbiān. Wǒ zuò èr hàoxiàn, zuò wǔ zhàn.", "es": "No, está al lado de la residencia. Cojo la línea 2, cinco paradas." },
+        { "speaker": "小李", "zh": "王老师呢？她也坐地铁吗？", "py": "Wáng lǎoshī ne? Tā yě zuò dìtiě ma?", "es": "¿Y la profesora Wang? ¿También va en metro?" },
+        { "speaker": "雨果", "zh": "不，王老师开车去学校。", "py": "Bù, Wáng lǎoshī kāichē qù xuéxiào.", "es": "No, la profesora Wang va en coche." },
+        { "speaker": "小李", "zh": "大卫呢？他坐三零四路公交车吗？", "py": "Dàwèi ne? Tā zuò sān líng sì lù gōngjiāochē ma?", "es": "¿Y David? ¿Coge el autobús 304?" },
+        { "speaker": "雨果", "zh": "不坐。大卫每天坐出租车！", "py": "Bú zuò. Dàwèi měitiān zuò chūzūchē!", "es": "No. ¡David va en taxi todos los días!" },
+        { "speaker": "小李", "zh": "真的吗？我不坐出租车，我骑车，很快！", "py": "Zhēn de ma? Wǒ bú zuò chūzūchē, wǒ qíchē, hěn kuài!", "es": "¿En serio? Yo no cojo taxis: voy en bici, ¡y es muy rápido!" }
+      ],
+      "notes": "En Shanghái las líneas de metro se llaman por su número: 一号线, 二号线… Los autobuses llevan 路: en la parada verás «304路», y se lee sān líng sì lù. Fíjate en la respuesta corta 不坐: en chino se responde repitiendo el verbo, no con un simple «no»."
+    },
+    { "type": "exercises", "count": 15, "bank": ["g-lai-qu", "g-word-order", "u08"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "我" }, "verb1": { "zh": "坐地铁" }, "verb2": { "zh": "去" }, "object": { "zh": "学校" } }, "end": "。", "es": "Voy a la universidad en metro." }, "distractors": ["骑"] },
+        { "sentence": { "slots": { "subject": { "zh": "王老师" }, "time": { "zh": "每天" }, "verb1": { "zh": "开车" }, "verb2": { "zh": "上班" } }, "end": "。", "es": "La profesora Wang va a trabajar en coche todos los días." }, "distractors": ["坐"] },
+        { "sentence": { "slots": { "subject": { "zh": "你" }, "adverb": { "zh": "怎么" }, "verb1": { "zh": "去" }, "object": { "zh": "学校" } }, "end": "？", "es": "¿Cómo vas a la universidad?" }, "distractors": ["吗"] },
+        { "sentence": { "slots": { "time0": { "zh": "明天上午" }, "subject": { "zh": "我" }, "with": { "zh": "跟安娜一起" }, "verb1": { "zh": "坐公交车去学校" }, "verb2": { "zh": "上课" } }, "end": "。", "es": "Mañana por la mañana voy a clase en autobús con Anna." }, "distractors": ["骑"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "我坐地铁去学校。", "py": "Wǒ zuò dìtiě qù xuéxiào.", "es": "Voy a la universidad en metro." },
+        { "zh": "他骑自行车去上班。", "py": "Tā qí zìxíngchē qù shàngbān.", "es": "Él va a trabajar en bici." },
+        { "zh": "你坐几号线？", "py": "Nǐ zuò jǐ hàoxiàn?", "es": "¿Qué línea coges?" },
+        { "zh": "我坐二号线，坐五站。", "py": "Wǒ zuò èr hàoxiàn, zuò wǔ zhàn.", "es": "Cojo la línea 2, cinco paradas." }
+      ],
+      "respond": [
+        { "q": { "zh": "你每天怎么去学校？", "py": "Nǐ měitiān zěnme qù xuéxiào?", "es": "¿Cómo vas a la universidad cada día?" }, "model": { "zh": "我每天坐地铁去学校。", "py": "Wǒ měitiān zuò dìtiě qù xuéxiào.", "es": "Voy en metro todos los días." } },
+        { "q": { "zh": "你会开车吗？", "py": "Nǐ huì kāichē ma?", "es": "¿Sabes conducir?" }, "model": { "zh": "我会开车。在上海我不开车，我坐地铁。", "py": "Wǒ huì kāichē. Zài Shànghǎi wǒ bù kāichē, wǒ zuò dìtiě.", "es": "Sé conducir. En Shanghái no conduzco: voy en metro." } },
+        { "q": { "zh": "你坐几号线？", "py": "Nǐ zuò jǐ hàoxiàn?", "es": "¿Qué línea coges?" }, "model": { "zh": "我坐二号线。", "py": "Wǒ zuò èr hàoxiàn.", "es": "Cojo la línea 2." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Cada uno en lo suyo",
+      "text": "我住在宿舍。每天早上我坐地铁去学校。地铁站在宿舍旁边，不远。我坐二号线，坐五站。小李不坐地铁，他骑自行车。王老师开车去学校。大卫呢？他每天坐出租车！",
+      "es": "Vivo en la residencia. Todas las mañanas voy a la universidad en metro. La estación está al lado de la residencia, no está lejos. Cojo la línea 2, cinco paradas. Xiao Li no coge el metro: va en bici. La profesora Wang va a la universidad en coche. ¿Y David? ¡Va en taxi todos los días!",
+      "questions": [
+        { "q": "¿Cómo va a la universidad quien escribe?", "options": ["En metro", "En bici", "En taxi"], "answer": 0 },
+        { "q": "¿Cuántas paradas hace?", "options": ["Cinco", "Dos", "Cuatro"], "answer": 0 },
+        { "q": "¿Quién conduce?", "options": ["王老师", "小李", "大卫"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

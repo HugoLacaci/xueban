@@ -26,8 +26,20 @@ import u11 from "@/content/zh/course/u11-salud.json";
 import u12 from "@/content/zh/course/u12-ocio.json";
 import u13 from "@/content/zh/course/u13-rutina.json";
 import u14 from "@/content/zh/course/u14-telefono.json";
+import { CURRICULUM_UNITS, hydrateLesson } from "@/content/zh/curriculum";
+import { NEW_CATEGORIES } from "@/lib/hanzi/vocab-categories";
 
-export const UNITS: Unit[] = ([u0Pron, u0Chars, u01, u02, u03, u04, u05, u06, u07, u08, u09, u10, u11, u12, u13, u14] as Unit[]).sort((a, b) => a.order - b.order);
+export const LEGACY_UNITS: Unit[] = ([u0Pron, u0Chars, u01, u02, u03, u04, u05, u06, u07, u08, u09, u10, u11, u12, u13, u14] as Unit[]).sort((a, b) => a.order - b.order);
+
+/**
+ * Temario v2 (docs/TEMARIO.md): se activa solo cuando están completas la Etapa 0 y las 21 unidades A1, para no
+ * dejar huecos al alumno. NEXT_PUBLIC_CURRICULUM=v2 lo fuerza (previsualización); =v1 fuerza el antiguo.
+ */
+const V2_REQUIRED = ["e0", ...Array.from({ length: 21 }, (_, i) => `a1-u${String(i + 1).padStart(2, "0")}`)];
+export const CURRICULUM_V2_READY = V2_REQUIRED.every((id) => CURRICULUM_UNITS.some((u) => u.id === id));
+const forced = process.env.NEXT_PUBLIC_CURRICULUM;
+export const CURRICULUM_V2 = forced === "v2" ? CURRICULUM_UNITS.length > 0 : forced === "v1" ? false : CURRICULUM_V2_READY;
+export const UNITS: Unit[] = CURRICULUM_V2 ? CURRICULUM_UNITS : LEGACY_UNITS;
 export const GRAMMAR: GrammarPoint[] = grammarJson as GrammarPoint[];
 export const READINGS: GradedReading[] = readingsJson as GradedReading[];
 export const ARTICLES: Article[] = [...(articlesJson as Article[]), ...(articlesOrigenJson as Article[])];
@@ -63,6 +75,8 @@ export const CATEGORY_META: Record<string, { color: string; icon: string }> = {
   "Tiempo atmosférico": { color: "#03a9f4", icon: "CloudSun" },
   Salud: { color: "#f44336", icon: "HeartPulse" },
   Clase: { color: "#2f8f6f", icon: "NotebookPen" },
+  // temario v2: categorías nuevas (submazos 22…)
+  ...Object.fromEntries(NEW_CATEGORIES.map((c) => [c.name, { color: c.color, icon: c.icon }])),
 };
 
 /** Reglas sencillas de detección de gramática HSK 1–3 (ids de content/zh/grammar.json). */
@@ -107,4 +121,21 @@ export function detectGrammar(text: string, max = 4): string[] {
   return out;
 }
 
-export const { curriculum, grammar } = buildCurriculum({ units: UNITS, grammar: GRAMMAR, levelTitle: "HSK 1", idPrefix: "course-", detect: detectGrammar });
+const built = buildCurriculum({ units: UNITS, grammar: GRAMMAR, levelTitle: CURRICULUM_V2 ? "HSK 1–3" : "HSK 1", idPrefix: "course-", detect: detectGrammar });
+export const grammar = built.grammar;
+/**
+ * Vista previa: mientras el temario v2 no está activo, sus lecciones se pueden abrir por URL
+ * (/zh/aprender/leccion/a1-u01-l1) para revisarlas; no aparecen en el mapa ni cuentan para el recomendado.
+ */
+const preview = CURRICULUM_V2 || !CURRICULUM_UNITS.length ? null : buildCurriculum({ units: CURRICULUM_UNITS, grammar: GRAMMAR, levelTitle: "HSK 1", idPrefix: "course-", detect: detectGrammar }).curriculum;
+const isPreview = (id: string) => Boolean(preview && /^(e0|a1|a2|b1)-/.test(id) && !built.curriculum.lessonById(id));
+export const curriculum: typeof built.curriculum = preview
+  ? {
+      ...built.curriculum,
+      hydrate: hydrateLesson,
+      lessonById: (id) => built.curriculum.lessonById(id) ?? preview.lessonById(id),
+      nextLesson: (id) => (isPreview(id) ? preview.nextLesson(id) : built.curriculum.nextLesson(id)),
+      vocabUpTo: (id) => (isPreview(id) ? preview.vocabUpTo(id) : built.curriculum.vocabUpTo(id)),
+      lessonPool: (l, extra) => (isPreview(l.id) ? preview.lessonPool(l, extra) : built.curriculum.lessonPool(l, extra)),
+    }
+  : { ...built.curriculum, hydrate: hydrateLesson };

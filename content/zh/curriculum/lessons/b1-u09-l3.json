@@ -1,0 +1,137 @@
+{
+  "id": "b1-u09-l3",
+  "title": "Tres «de»: 的, 地 y 得 al completo",
+  "zh": "的、地、得",
+  "goal": "Distinguir y usar bien los tres «de»: 的 delante del nombre (很有爱心的人), 地 delante del verbo (认真地观察) y 得 detrás del verbo (讲得很生动), para hablar del carácter de alguien.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "性格", "pinyin": "xìnggé", "es": "carácter, forma de ser", "note": "他的性格很好 = tiene muy buen carácter." },
+    { "hanzi": "个性", "pinyin": "gèxìng", "es": "personalidad (propia, marcada)", "note": "很有个性 = tener mucha personalidad." },
+    { "hanzi": "优点", "pinyin": "yōudiǎn", "es": "virtud, punto fuerte" },
+    { "hanzi": "缺点", "pinyin": "quēdiǎn", "es": "defecto, punto débil" },
+    { "hanzi": "长处", "pinyin": "chángchù", "es": "punto fuerte, cualidad", "note": "Más oral que 优点." },
+    { "hanzi": "短处", "pinyin": "duǎnchù", "es": "punto flaco", "note": "Contrario de 长处." },
+    { "hanzi": "热爱", "pinyin": "rè'ài", "es": "amar con pasión, adorar (un país, un trabajo…)", "note": "热爱生活, 热爱中国文化." },
+    { "hanzi": "爱心", "pinyin": "àixīn", "es": "bondad, cariño hacia los demás", "note": "很有爱心 = muy buena persona, muy solidario." },
+    { "hanzi": "本领", "pinyin": "běnlǐng", "es": "habilidad, destreza" },
+    { "hanzi": "本事", "pinyin": "běnshi", "es": "capacidad, maña (coloquial)", "note": "他很有本事 = es muy capaz; 有本事你来 = ¡a ver si tú puedes!" },
+    { "hanzi": "才能", "pinyin": "cáinéng", "es": "talento, aptitud" },
+    { "hanzi": "表现", "pinyin": "biǎoxiàn", "es": "comportamiento, rendimiento; mostrar(se)", "note": "表现得很好 = hacerlo muy bien, portarse muy bien." },
+    { "hanzi": "观察", "pinyin": "guānchá", "es": "observar" },
+    { "hanzi": "生动", "pinyin": "shēngdòng", "es": "vivo, ameno (un relato, una clase)", "note": "讲得很生动 = explica de forma muy amena." }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "小李是一个很有爱心的人。", "py": "Xiǎo Lǐ shì yí ge hěn yǒu àixīn de rén.", "es": "Xiao Li es una persona muy buena con los demás." },
+        { "zh": "王老师很认真地观察每个学生。", "py": "Wáng lǎoshī hěn rènzhēn de guānchá měi ge xuésheng.", "es": "La profesora Wang observa con mucha atención a cada alumno." },
+        { "zh": "她讲课讲得非常生动。", "py": "Tā jiǎngkè jiǎng de fēicháng shēngdòng.", "es": "Da las clases de forma muy amena." }
+      ]
+    },
+    { "type": "vocab", "title": "El carácter y las capacidades", "words": ["性格", "个性", "优点", "缺点", "长处", "短处", "热爱", "爱心", "本领", "本事", "才能", "表现", "观察", "生动"] },
+    {
+      "type": "phonetics-drill",
+      "title": "Tres «de» que suenan igual",
+      "markdown": "**的, 地 y 得** se pronuncian **exactamente igual** en estas estructuras: **de**, tono neutro, muy corto. Solo cambian al escribir. No digas *dì* (地 «tierra») ni *dé* (得 «obtener»): en una frase, los tres son *de*.\n\nPor eso, al hablar, lo que importa es el ritmo: el peso va en lo que rodea a *de* (认真 de **观察**, 讲 de **很生动**).\n\nOtras de hoy: **本事** *běnshi* (事 neutro), **缺点** *quēdiǎn* (q + üe, sin puntos en la ü) y **热爱** *rè'ài* (dos cuartos tonos con un pequeño corte: el apóstrofo).",
+      "items": [
+        { "audio": "认真地观察", "prompt": "¿Cómo suena 地 aquí?", "options": ["de, neutro", "dì, cuarto tono", "dí, segundo tono"], "answer": 0, "explain": "El 地 que va delante del verbo es neutro: de." },
+        { "audio": "讲得很生动", "options": ["jiǎng de hěn shēngdòng", "jiǎng dé hěn shēngdòng", "jiǎng děi hěn shēngdòng"], "answer": 0, "explain": "El 得 del complemento es neutro." },
+        { "audio": "本事", "options": ["běnshi", "běnshì", "bēnshi"], "answer": 0, "explain": "En el uso oral, 事 va en tono neutro." },
+        { "audio": "缺点", "options": ["quēdiǎn", "qiēdiǎn", "quèdiǎn"], "answer": 0, "explain": "q + üe (se escribe ue); primer tono." },
+        { "audio": "热爱", "options": ["rè'ài", "rè'āi", "lè'ài"], "answer": 0, "explain": "Dos cuartos tonos; la r china no es vibrante." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["观", "优"],
+      "mnemonics": {
+        "观": "又 (una mano) + 见 (ver): mirar una y otra vez, con atención → «observar» (观察) y también «punto de vista» (观点).",
+        "优": "亻 (persona) + 尤 (lo que sobresale): la persona que destaca → «excelente», y 优点, el punto en el que destacas."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "的 delante del nombre, 地 delante del verbo, 得 detrás del verbo",
+      "markdown": "En A2 viste los tres «de» por separado. Hoy, juntos. Suenan igual; para escribirlos, **mira qué viene detrás**:\n\n| | ¿Qué va detrás? | Qué une | Ejemplo |\n|---|---|---|---|\n| **的** | un **nombre** | atributo + nombre | 很有爱心**的**人, 我的老师 |\n| **地** | un **verbo** | cómo + verbo | 认真**地**观察, 慢慢**地**说 |\n| **得** | (va **detrás** del verbo o adjetivo) | verbo + grado o resultado | 讲**得**很生动, 表现**得**很好 |\n\n- **地** va sobre todo con adjetivos de **dos sílabas**, con **很 + adjetivo** o con adjetivos **duplicados**: 很认真地, 慢慢地, 高高兴兴地. Un adjetivo de una sílaba se pone directamente: 快走, 多吃 (sin 地).\n- **得** mira hacia atrás: dice **cómo salió** la acción (讲得很生动), mientras que **地** dice **cómo se hace** (生动地讲).\n- En los mensajes de móvil mucha gente escribe 的 en lugar de 地; en un examen, no.\n\n**Convención del esqueleto**: «X地» va en *Adverbios*; «V得» en *Verbo 1* y el grado en *Complemento* (como en A2); los atributos con 的, dentro de *Sujeto* u *Objeto* (lección 1).",
+      "focus": ["adverb", "complement"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "王老师", "py": "Wáng lǎoshī" }, "adverb": { "zh": "很认真地", "py": "hěn rènzhēn de" }, "verb1": { "zh": "观察", "py": "guānchá" }, "object": { "zh": "每个学生", "py": "měi ge xuésheng" } }, "end": "。", "es": "La profesora Wang observa con mucha atención a cada alumno.", "esOrder": [{ "text": "La profesora Wang", "slot": "subject" }, { "text": "observa", "slot": "verb1" }, { "text": "con mucha atención", "slot": "adverb" }, { "text": "a cada alumno", "slot": "object" }] },
+        { "slots": { "subject": { "zh": "王老师", "py": "Wáng lǎoshī" }, "verb1": { "zh": "讲得", "py": "jiǎng de" }, "complement": { "zh": "非常生动", "py": "fēicháng shēngdòng" } }, "end": "。", "es": "La profesora Wang explica de forma muy amena." },
+        { "slots": { "subject": { "zh": "小李", "py": "Xiǎo Lǐ" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "一个很有爱心的人", "py": "yí ge hěn yǒu àixīn de rén" } }, "end": "。", "es": "Xiao Li es una persona muy buena con los demás." },
+        { "slots": { "subject": { "zh": "孩子们", "py": "háizimen" }, "adverb": { "zh": "高高兴兴地", "py": "gāogāoxìngxìng de" }, "verb1": { "zh": "回", "py": "huí" }, "object": { "zh": "家", "py": "jiā" }, "complement": { "zh": "去", "py": "qu" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Los niños se han ido a casa tan contentos." },
+        { "slots": { "subject": { "zh": "大卫", "py": "Dàwèi" }, "time": { "zh": "这个学期", "py": "zhège xuéqī" }, "verb1": { "zh": "表现得", "py": "biǎoxiàn de" }, "complement": { "zh": "很好", "py": "hěn hǎo" } }, "end": "。", "es": "David lo está haciendo muy bien este cuatrimestre." },
+        { "slots": { "subject": { "zh": "她", "py": "tā" }, "adverb": { "zh": "非常热情地", "py": "fēicháng rèqíng de" }, "verb1": { "zh": "介绍了", "py": "jièshào le" }, "object": { "zh": "自己的长处和短处", "py": "zìjǐ de chángchù hé duǎnchù" } }, "end": "。", "es": "Habló con mucho entusiasmo de sus puntos fuertes y sus puntos flacos." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "time": { "zh": "昨天", "py": "zuótiān" }, "verb1": { "zh": "说得", "py": "shuō de" }, "complement": { "zh": "不太清楚", "py": "bú tài qīngchu" } }, "end": "。", "es": "Ayer no me expliqué muy bien." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "觉得", "py": "juéde" }, "object": { "zh": "自己的性格怎么样", "py": "zìjǐ de xìnggé zěnmeyàng" } }, "end": "？", "es": "¿Cómo crees que es tu carácter?" },
+        { "slots": { "subject": { "zh": "她", "py": "tā" }, "time": { "zh": "今天", "py": "jīntiān" }, "verb1": { "zh": "表现得", "py": "biǎoxiàn de" }, "complement": { "zh": "怎么样", "py": "zěnmeyàng" } }, "end": "？", "es": "¿Qué tal lo ha hecho hoy?" }
+      ],
+      "mistakes": [
+        { "wrong": "他很认真的学习。", "right": "他很认真地学习。", "why": "Detrás viene un verbo (学习): el «de» del modo es 地." },
+        { "wrong": "她跑地很快。", "right": "她跑得很快。", "why": "El «de» que va detrás del verbo y presenta el grado es 得." },
+        { "wrong": "他是一个很好地朋友。", "right": "他是一个很好的朋友。", "why": "Detrás viene un nombre (朋友): 的." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Ensayo de entrevista",
+      "lines": [
+        { "speaker": "雨果", "zh": "小李，下个星期我有一个面试，你能帮我练习一下吗？", "py": "Xiǎo Lǐ, xià ge xīngqī wǒ yǒu yí ge miànshì, nǐ néng bāng wǒ liànxí yíxià ma?", "es": "Xiao Li, la semana que viene tengo una entrevista. ¿Me ayudas a practicar?" },
+        { "speaker": "小李", "zh": "没问题！我来当经理。请你先介绍一下自己的性格。", "py": "Méi wèntí! Wǒ lái dāng jīnglǐ. Qǐng nǐ xiān jièshào yíxià zìjǐ de xìnggé.", "es": "¡Claro! Yo hago de jefe. Primero, háblame de tu carácter." },
+        { "speaker": "雨果", "zh": "我是一个很热情、很有个性的人。", "py": "Wǒ shì yí ge hěn rèqíng, hěn yǒu gèxìng de rén.", "es": "Soy una persona muy abierta y con mucha personalidad." },
+        { "speaker": "小李", "zh": "你有什么优点和缺点？", "py": "Nǐ yǒu shénme yōudiǎn hé quēdiǎn?", "es": "¿Qué virtudes y qué defectos tienes?" },
+        { "speaker": "雨果", "zh": "我的长处是喜欢观察，能很快地发现问题。短处是有时候说得太快。", "py": "Wǒ de chángchù shì xǐhuan guānchá, néng hěn kuài de fāxiàn wèntí. Duǎnchù shì yǒu shíhou shuō de tài kuài.", "es": "Mi punto fuerte es que me gusta observar y detecto los problemas muy rápido. Mi punto flaco, que a veces hablo demasiado deprisa." },
+        { "speaker": "小李", "zh": "很好，你说得很生动。你有什么特别的本领吗？", "py": "Hěn hǎo, nǐ shuō de hěn shēngdòng. Nǐ yǒu shénme tèbié de běnlǐng ma?", "es": "Muy bien, lo cuentas de forma muy viva. ¿Tienes alguna habilidad especial?" },
+        { "speaker": "雨果", "zh": "我会说西班牙语、英语和汉语，还热爱中国文化。", "py": "Wǒ huì shuō Xībānyáyǔ, Yīngyǔ hé Hànyǔ, hái rè'ài Zhōngguó wénhuà.", "es": "Hablo español, inglés y chino, y además me apasiona la cultura china." },
+        { "speaker": "小李", "zh": "这个本事很有用！不过，说自己的才能的时候，要慢慢地、清楚地说。", "py": "Zhège běnshi hěn yǒuyòng! Búguò, shuō zìjǐ de cáinéng de shíhou, yào mànmàn de, qīngchu de shuō.", "es": "¡Eso es muy útil! Pero cuando hables de tus aptitudes, hazlo despacio y con claridad." },
+        { "speaker": "雨果", "zh": "好的。那我应该怎么回答“你为什么想来我们公司”？", "py": "Hǎo de. Nà wǒ yīnggāi zěnme huídá “nǐ wèi shénme xiǎng lái wǒmen gōngsī”?", "es": "Vale. ¿Y cómo respondo a «por qué quiere trabajar en nuestra empresa»?" },
+        { "speaker": "小李", "zh": "你可以说，你热爱这个工作，也想在中国学到更多东西。", "py": "Nǐ kěyǐ shuō, nǐ rè'ài zhège gōngzuò, yě xiǎng zài Zhōngguó xué dào gèng duō dōngxi.", "es": "Puedes decir que te apasiona este trabajo y que quieres aprender más cosas en China." },
+        { "speaker": "雨果", "zh": "我这样回答，表现得怎么样？", "py": "Wǒ zhèyàng huídá, biǎoxiàn de zěnmeyàng?", "es": "Respondiendo así, ¿qué tal lo hago?" },
+        { "speaker": "小李", "zh": "表现得非常好！经理一定会喜欢你这个有本事的外国人。", "py": "Biǎoxiàn de fēicháng hǎo! Jīnglǐ yídìng huì xǐhuan nǐ zhège yǒu běnshi de wàiguórén.", "es": "¡Lo haces genial! Seguro que al jefe le encanta un extranjero tan capaz como tú." }
+      ],
+      "notes": "En una entrevista en China se valora hablar de los defectos como algo que estás mejorando, y no presumir demasiado: mejor 我的长处是… que 我很有才能. 你这个有本事的外国人 es una aposición (lección 1): «tú, un extranjero capaz»."
+    },
+    { "type": "exercises", "count": 18, "bank": ["g-de", "g-complements", "g-reduplication"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "王老师" }, "adverb": { "zh": "很认真地" }, "verb1": { "zh": "观察" }, "object": { "zh": "每个学生" } }, "end": "。", "es": "La profesora Wang observa con mucha atención a cada alumno." }, "distractors": ["很认真的", "很认真得"] },
+        { "sentence": { "slots": { "subject": { "zh": "她" }, "verb1": { "zh": "讲得" }, "complement": { "zh": "非常生动" } }, "end": "。", "es": "Explica de forma muy amena." }, "distractors": ["讲地"] },
+        { "sentence": { "slots": { "subject": { "zh": "小李" }, "verb1": { "zh": "是" }, "object": { "zh": "一个很有爱心的人" } }, "end": "。", "es": "Xiao Li es una persona muy buena con los demás." }, "distractors": ["地"] },
+        { "sentence": { "slots": { "time0": { "zh": "面试的时候" }, "subject": { "zh": "那个很有个性的西班牙姑娘" }, "adverb": { "zh": "非常清楚地" }, "verb1": { "zh": "介绍了" }, "object": { "zh": "自己的长处和短处" } }, "end": "。", "es": "En la entrevista, aquella chica española con tanta personalidad presentó con mucha claridad sus puntos fuertes y sus puntos flacos." } }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "王老师很认真地观察每个学生。", "py": "Wáng lǎoshī hěn rènzhēn de guānchá měi ge xuésheng.", "es": "La profesora Wang observa con mucha atención a cada alumno." },
+        { "zh": "她讲课讲得非常生动。", "py": "Tā jiǎngkè jiǎng de fēicháng shēngdòng.", "es": "Da las clases de forma muy amena." },
+        { "zh": "我的长处是喜欢观察，短处是说得太快。", "py": "Wǒ de chángchù shì xǐhuan guānchá, duǎnchù shì shuō de tài kuài.", "es": "Mi punto fuerte es que me gusta observar; mi punto flaco, que hablo demasiado deprisa." },
+        { "zh": "小李是一个很有爱心的人。", "py": "Xiǎo Lǐ shì yí ge hěn yǒu àixīn de rén.", "es": "Xiao Li es una persona muy buena con los demás." }
+      ],
+      "respond": [
+        { "q": { "zh": "你有什么优点和缺点？", "py": "Nǐ yǒu shénme yōudiǎn hé quēdiǎn?", "es": "¿Qué virtudes y qué defectos tienes?" }, "model": { "zh": "我的优点是学习很认真，缺点是有时候说得太快。", "py": "Wǒ de yōudiǎn shì xuéxí hěn rènzhēn, quēdiǎn shì yǒu shíhou shuō de tài kuài.", "es": "Mi virtud es que estudio con mucha seriedad; mi defecto, que a veces hablo demasiado deprisa." } },
+        { "q": { "zh": "你的汉语老师讲课讲得怎么样？", "py": "Nǐ de Hànyǔ lǎoshī jiǎngkè jiǎng de zěnmeyàng?", "es": "¿Qué tal da las clases tu profesora de chino?" }, "model": { "zh": "她讲得非常生动，我们都很认真地听。", "py": "Tā jiǎng de fēicháng shēngdòng, wǒmen dōu hěn rènzhēn de tīng.", "es": "Las da de forma muy amena, y todos escuchamos con mucha atención." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Nuestra profesora",
+      "text": "王老师是一位很有爱心的老师，我们班的同学都很喜欢她。她讲课讲得非常生动，常常给我们讲中国的故事，大家都高高兴兴地听。上课的时候，她总是很认真地观察每个学生的表现：谁听懂了，谁没听懂，她看一眼就知道。王老师说，每个人都有自己的长处和短处。大卫的长处是说得很流利，短处是汉字写得不太好；安娜的个性很强，她的优点是学习很积极，缺点是有时候太着急。我的本领是喜欢观察，可是我说话说得太快。王老师从来不批评我们，她只是慢慢地告诉我们怎么做。她说：“学语言不需要很大的才能，需要的是热爱。”我觉得她说得很对。",
+      "es": "La profesora Wang es una profesora muy cariñosa: a todos los compañeros de la clase nos cae muy bien. Da las clases de forma muy amena; a menudo nos cuenta historias de China y todos las escuchamos encantados. En clase, siempre observa con mucha atención cómo responde cada alumno: con una mirada sabe quién lo ha entendido y quién no. Dice que cada persona tiene sus puntos fuertes y sus puntos flacos. El punto fuerte de David es que habla con mucha soltura; el flaco, que no escribe muy bien los caracteres. Ana tiene mucha personalidad: su virtud es que es muy aplicada; su defecto, que a veces se agobia demasiado. Mi habilidad es que me gusta observar, pero hablo demasiado deprisa. La profesora Wang nunca nos critica: simplemente nos explica con calma cómo hacerlo. Dice: «Para aprender una lengua no hace falta mucho talento; lo que hace falta es pasión». Creo que tiene toda la razón.",
+      "questions": [
+        { "q": "¿Cómo da las clases la profesora Wang?", "options": ["讲得非常生动", "讲得太快", "讲得不太清楚"], "answer": 0 },
+        { "q": "¿Cuál es el punto flaco de David?", "options": ["汉字写得不太好", "说得太快", "太着急"], "answer": 0 },
+        { "q": "¿Qué hace la profesora cuando alguien se equivoca?", "options": ["慢慢地告诉他们怎么做", "批评他们", "不说话"], "answer": 0 },
+        { "q": "Según ella, ¿qué hace falta para aprender una lengua?", "options": ["热爱", "很大的才能", "很多钱"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

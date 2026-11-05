@@ -1,0 +1,58 @@
+{
+  "id": "e0-cp",
+  "title": "Checkpoint de la Etapa 0",
+  "zh": "第零阶段测验",
+  "goal": "Comprobar que oyes, lees, dices y escribes la base del chino antes de empezar la Etapa 1.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [],
+  "steps": [
+    {
+      "type": "explain",
+      "title": "Qué vas a demostrar",
+      "markdown": "Has terminado los sonidos, las reglas del pinyin, los tonos y los trazos. Este checkpoint tiene **cuatro partes**:\n\n1. **Dictado y discriminación** (14 ítems): oyes una sílaba o una palabra y eliges su pinyin o su tono. Mezcla los contrastes difíciles: aspiradas, zh/z/j, sh/s/x, ü, -n/-ng, la -i vacía y los cambios de tono.\n2. **Ejercicios mezclados** (20): todo lo de la etapa.\n3. **Lectura en voz alta**: ocho palabras que ya conoces. Grábate y compara con el modelo.\n4. **Escritura**: diez caracteres a mano, en la pestaña Caracteres.\n\n**Para aprobar**: un 80 % de aciertos en las dos primeras partes. Si fallas un tipo de sonido varias veces, vuelve a su lección antes de seguir; no pasa nada por repetir: la Etapa 1 se apoya entera en esta base."
+    },
+    {
+      "type": "phonetics-drill",
+      "title": "Dictado de pinyin y tonos",
+      "markdown": "Escucha cada audio todas las veces que quieras y elige la respuesta. **No mires los caracteres**: aquí solo cuenta el oído.",
+      "items": [
+        { "audio": "他", "options": ["tā", "dā", "tà"], "answer": 0, "explain": "t aspirada (con aire) y 1.er tono." },
+        { "audio": "怕", "options": ["bà", "pà", "pā"], "answer": 1, "explain": "p aspirada y 4.º tono." },
+        { "audio": "七", "options": ["qī", "chī", "jī"], "answer": 0, "explain": "q: lengua plana y aire." },
+        { "audio": "是", "options": ["sì", "shì", "xì"], "answer": 1, "explain": "sh: lengua doblada hacia atrás." },
+        { "audio": "四", "options": ["sì", "shì", "shí"], "answer": 0, "explain": "s con la lengua delante y 4.º tono." },
+        { "audio": "十", "options": ["shì", "sí", "shí"], "answer": 2, "explain": "sh + -i vacía, 2.º tono (sube)." },
+        { "audio": "鱼", "options": ["yú", "wú", "yí"], "answer": 0, "explain": "ü (escrita u tras y): «i» con labios redondos." },
+        { "audio": "女", "options": ["nǔ", "nǚ", "lǚ"], "answer": 1, "explain": "nǚ conserva los puntos: nu también existe." },
+        { "audio": "中", "options": ["zhōng", "zhōn", "zōng"], "answer": 0, "explain": "-ng (lengua atrás) y zh (lengua doblada)." },
+        { "audio": "天", "options": ["tiān", "tiāng", "tīn"], "answer": 0, "explain": "ian suena «ien» y acaba en -n." },
+        { "audio": "热", "options": ["lè", "rè", "rì"], "answer": 1, "explain": "r sin vibrar + e china." },
+        { "audio": "马", "options": ["1.º", "2.º", "3.º", "4.º"], "answer": 2, "explain": "Baja hasta el fondo de la voz." },
+        { "audio": "你好", "prompt": "¿Qué tonos oyes?", "options": ["3.º + 3.º", "2.º + 3.º", "4.º + 3.º"], "answer": 1, "explain": "3 + 3 → 2 + 3: se dice ní hǎo." },
+        { "audio": "不是", "prompt": "¿Cómo suena 不?", "options": ["bù", "bú"], "answer": 1, "explain": "Delante de 4.º tono: bú shì." },
+        { "audio": "一起", "prompt": "¿Cómo suena 一?", "options": ["yī", "yí", "yì"], "answer": 2, "explain": "Delante de 3.er tono: yìqǐ." },
+        { "audio": "谢谢", "prompt": "¿Y la segunda sílaba?", "options": ["4.º tono", "Neutro"], "answer": 1, "explain": "Palabra doblada: xièxie." }
+      ]
+    },
+    { "type": "exercises", "count": 20, "bank": ["u0"] },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "你好", "py": "nǐ hǎo", "es": "hola" },
+        { "zh": "谢谢", "py": "xièxie", "es": "gracias" },
+        { "zh": "不客气", "py": "bú kèqi", "es": "de nada" },
+        { "zh": "再见", "py": "zàijiàn", "es": "adiós" },
+        { "zh": "老师", "py": "lǎoshī", "es": "profesor, profesora" },
+        { "zh": "学生", "py": "xuésheng", "es": "estudiante" },
+        { "zh": "中国", "py": "Zhōngguó", "es": "China" },
+        { "zh": "北京", "py": "Běijīng", "es": "Pekín" }
+      ]
+    },
+    {
+      "type": "explain",
+      "title": "Última prueba: escribe 10 caracteres",
+      "markdown": "Abre la pestaña **Caracteres** y escribe a mano, con el orden de trazos correcto, estos diez caracteres de la Etapa 0:\n\n**人 口 大 中 日 月 水 马 好 不**\n\nEn cada uno, primero hazlo **con la guía** y después **sin guía** (modo prueba). Fíjate en lo que suele fallar:\n\n- 人 y 大: el **撇 antes que el 捺**.\n- 口 y 日: el trazo de abajo, **el último** (se cierra al final).\n- 中: el **trazo vertical largo, al final**.\n- 水 y 马: el **gancho** (钩) y el **quiebro** (折) sin levantar el lápiz.\n- 好: **女 primero**, luego 子.\n\nSi te salen los diez sin ayuda, ¡enhorabuena!: tienes la base para empezar la **Etapa 1** con la primera unidad, Saludos y presentaciones."
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "unitId": "a2-u12",
+  "scenarios": [
+    {
+      "id": "a2-u12-future-plans",
+      "title": "Tutoría: ¿qué harás después del máster?",
+      "zh": "毕业以后你打算做什么？",
+      "level": 2,
+      "setting": "Última tutoría del curso en el despacho de la profesora Wang. Quiere saber qué planes tiene Hugo para después de graduarse. Tú (la app) eres 王老师.",
+      "role": "profesora Wang",
+      "roleZh": "王老师",
+      "voice": "f",
+      "goals": ["Decir qué tienes previsto hacer al graduarte", "Explicar para qué estudias chino", "Dar una ventaja y un inconveniente de tu plan", "Dar las gracias a la profesora"],
+      "vocab": ["毕业", "打算", "计划", "希望", "为了", "好处", "坏处", "感谢"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "雨果，你明年就毕业了。毕业以后你打算做什么？", "py": "Yǔguǒ, nǐ míngnián jiù bìyè le. Bìyè yǐhòu nǐ dǎsuàn zuò shénme?", "es": "Hugo, el año que viene te gradúas. ¿Qué tienes previsto hacer después?" },
+          "user": [
+            { "zh": "我打算留在上海工作。", "py": "Wǒ dǎsuàn liú zài Shànghǎi gōngzuò.", "es": "Tengo previsto quedarme a trabajar en Shanghái.", "keywords": ["打算", "留在上海"], "next": "n2", "goal": 0 },
+            { "zh": "我一毕业就回西班牙。", "py": "Wǒ yí bìyè jiù huí Xībānyá.", "es": "En cuanto me gradúe, vuelvo a España.", "keywords": ["一毕业就", "回西班牙"], "next": "n3", "goal": 0 },
+            { "zh": "我还没想好，可能先找工作。", "py": "Wǒ hái méi xiǎnghǎo, kěnéng xiān zhǎo gōngzuò.", "es": "Todavía no lo he decidido; quizá primero busque trabajo.", "keywords": ["没想好", "找工作"], "next": "n2", "goal": 0 }
+          ],
+          "hint": "Usa 打算 / 计划 + verbo (我打算…) o 一…就 (我一毕业就…)."
+        },
+        "n2": {
+          "npc": { "zh": "在上海工作有什么好处？", "py": "Zài Shànghǎi gōngzuò yǒu shénme hǎochu?", "es": "¿Qué ventajas tiene trabajar en Shanghái?" },
+          "user": [
+            { "zh": "好处很多，比如说机会多，交通也很方便。", "py": "Hǎochu hěn duō, bǐrú shuō jīhuì duō, jiāotōng yě hěn fāngbiàn.", "es": "Muchas: por ejemplo, hay muchas oportunidades y el transporte es muy cómodo.", "keywords": ["好处", "比如说"], "next": "n4", "goal": 2 },
+            { "zh": "上海不但机会多，而且生活很有意思。", "py": "Shànghǎi búdàn jīhuì duō, érqiě shēnghuó hěn yǒu yìsi.", "es": "En Shanghái no solo hay muchas oportunidades: además la vida es muy interesante.", "keywords": ["不但", "而且"], "next": "n4", "goal": 2 }
+          ],
+          "hint": "Da ejemplos con 比如说… o suma razones con 不但…，而且…."
+        },
+        "n3": {
+          "npc": { "zh": "回西班牙以后，你计划做什么工作？", "py": "Huí Xībānyá yǐhòu, nǐ jìhuà zuò shénme gōngzuò?", "es": "Cuando vuelvas a España, ¿en qué tienes planeado trabajar?" },
+          "user": [
+            { "zh": "我希望在一家中国公司工作。", "py": "Wǒ xīwàng zài yì jiā Zhōngguó gōngsī gōngzuò.", "es": "Espero trabajar en una empresa china.", "keywords": ["希望", "中国公司"], "next": "n4", "goal": 0 },
+            { "zh": "我想当汉语老师，这是我的理想。", "py": "Wǒ xiǎng dāng Hànyǔ lǎoshī, zhè shì wǒ de lǐxiǎng.", "es": "Quiero ser profesor de chino: es mi sueño.", "keywords": ["理想", "当"], "next": "n4", "goal": 0 }
+          ],
+          "hint": "希望 + frase (我希望…) o 我的理想是…."
+        },
+        "n4": {
+          "npc": { "zh": "很好。那你学汉语是为了什么？", "py": "Hěn hǎo. Nà nǐ xué Hànyǔ shì wèile shénme?", "es": "Muy bien. ¿Y para qué estudias chino?" },
+          "user": [
+            { "zh": "我学汉语是为了在中国工作。", "py": "Wǒ xué Hànyǔ shì wèile zài Zhōngguó gōngzuò.", "es": "Estudio chino para trabajar en China.", "keywords": ["是为了"], "next": "n5", "goal": 1 },
+            { "zh": "为了认识中国，我每天都学汉语。", "py": "Wèile rènshi Zhōngguó, wǒ měi tiān dōu xué Hànyǔ.", "es": "Para conocer China, estudio chino todos los días.", "keywords": ["为了", "每天"], "next": "n5", "goal": 1 }
+          ],
+          "hint": "为了… va delante (为了…，我…) o al final con 是: 我学汉语是为了…."
+        },
+        "n5": {
+          "npc": { "zh": "你的计划有坏处吗？", "py": "Nǐ de jìhuà yǒu huàichu ma?", "es": "¿Tu plan tiene algún inconveniente?" },
+          "user": [
+            { "zh": "有，离家太远，我一想家就很难过。", "py": "Yǒu, lí jiā tài yuǎn, wǒ yì xiǎng jiā jiù hěn nánguò.", "es": "Sí: estoy demasiado lejos de casa y, en cuanto echo de menos a los míos, lo paso mal.", "keywords": ["离家", "一想家就"], "next": "n6", "goal": 2 },
+            { "zh": "坏处是工作很忙，常常要加班。", "py": "Huàichu shì gōngzuò hěn máng, chángcháng yào jiābān.", "es": "El inconveniente es que el trabajo es muy intenso y a menudo hay que hacer horas extra.", "keywords": ["坏处", "加班"], "next": "n6", "goal": 2 }
+          ],
+          "hint": "Empieza con 坏处是… o con 有，… y explica el problema."
+        },
+        "n6": {
+          "npc": { "zh": "我明白了。我希望你能实现你的理想！", "py": "Wǒ míngbai le. Wǒ xīwàng nǐ néng shíxiàn nǐ de lǐxiǎng!", "es": "Entendido. ¡Espero que puedas cumplir tu sueño!" },
+          "user": [
+            { "zh": "老师，非常感谢您的帮助！", "py": "Lǎoshī, fēicháng gǎnxiè nín de bāngzhù!", "es": "Profesora, ¡muchísimas gracias por su ayuda!", "keywords": ["感谢", "帮助"], "next": "n7", "goal": 3 },
+            { "zh": "谢谢老师，您说的话很有道理。", "py": "Xièxie lǎoshī, nín shuō de huà hěn yǒu dàoli.", "es": "Gracias, profesora: tiene usted mucha razón.", "keywords": ["谢谢", "道理"], "next": "n7", "goal": 3 }
+          ],
+          "hint": "Despídete agradeciendo: 感谢您的帮助 / 谢谢老师."
+        },
+        "n7": {
+          "npc": { "zh": "不客气。如果有问题，就给我发微信吧。加油！", "py": "Bú kèqi. Rúguǒ yǒu wèntí, jiù gěi wǒ fā Wēixìn ba. Jiāyóu!", "es": "De nada. Si tienes alguna duda, mándame un WeChat. ¡Ánimo!" },
+          "end": true,
+          "feedback": "Has contado tu plan (打算 / 计划 / 希望), has explicado tu objetivo con 为了 o 是为了 y has valorado ventajas e inconvenientes (好处 / 坏处, 比如说, 不但…而且). Fíjate en que 一…就 y 就 van siempre detrás del sujeto."
+        }
+      }
+    },
+    {
+      "id": "a2-u12-new-year-resolutions",
+      "title": "Propósitos: a partir de mañana…",
+      "zh": "从明天起……",
+      "level": 2,
+      "setting": "Domingo por la noche en la residencia. Xiao Li ve a Hugo escribiendo una lista y le pregunta por sus propósitos para el nuevo semestre. Tú (la app) eres 小李.",
+      "role": "Xiao Li",
+      "roleZh": "小李",
+      "voice": "m",
+      "goals": ["Decir qué harás a partir de mañana (从…起)", "Explicar para qué lo haces (为了)", "Defender que tu plan es realista", "Proponer hacerlo juntos"],
+      "vocab": ["从…起", "为了", "计划", "信心", "实际", "行动", "一起", "每天"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "雨果，你在写什么？", "py": "Yǔguǒ, nǐ zài xiě shénme?", "es": "Hugo, ¿qué escribes?" },
+          "user": [
+            { "zh": "我的计划。从明天起，我每天早上跑步。", "py": "Wǒ de jìhuà. Cóng míngtiān qǐ, wǒ měi tiān zǎoshang pǎobù.", "es": "Mi plan. A partir de mañana, corro todas las mañanas.", "keywords": ["从明天起", "跑步"], "next": "n2", "goal": 0 },
+            { "zh": "从下个星期起，我每天学二十个生词。", "py": "Cóng xià ge xīngqī qǐ, wǒ měi tiān xué èrshí ge shēngcí.", "es": "A partir de la semana que viene, aprendo veinte palabras nuevas al día.", "keywords": ["从下个星期起", "生词"], "next": "n3", "goal": 0 }
+          ],
+          "hint": "从 + momento + 起 va delante del sujeto: 从明天起，我…."
+        },
+        "n2": {
+          "npc": { "zh": "跑步？为什么？", "py": "Pǎobù? Wèishénme?", "es": "¿Correr? ¿Por qué?" },
+          "user": [
+            { "zh": "为了身体健康。最近我太累了。", "py": "Wèile shēntǐ jiànkāng. Zuìjìn wǒ tài lèi le.", "es": "Por la salud. Últimamente estoy agotado.", "keywords": ["为了", "健康"], "next": "n4", "goal": 1 },
+            { "zh": "我跑步是为了有更多的力气学习。", "py": "Wǒ pǎobù shì wèile yǒu gèng duō de lìqi xuéxí.", "es": "Corro para tener más energía para estudiar.", "keywords": ["是为了"], "next": "n4", "goal": 1 }
+          ],
+          "hint": "Explica el objetivo con 为了… o con 是为了…."
+        },
+        "n3": {
+          "npc": { "zh": "二十个？你为什么要学这么多？", "py": "Èrshí ge? Nǐ wèishénme yào xué zhème duō?", "es": "¿Veinte? ¿Por qué quieres aprender tantas?" },
+          "user": [
+            { "zh": "为了考试取得好成绩。", "py": "Wèile kǎoshì qǔdé hǎo chéngjì.", "es": "Para sacar buena nota en el examen.", "keywords": ["为了", "取得", "成绩"], "next": "n4", "goal": 1 },
+            { "zh": "我学汉语是为了找工作。", "py": "Wǒ xué Hànyǔ shì wèile zhǎo gōngzuò.", "es": "Estudio chino para encontrar trabajo.", "keywords": ["是为了", "找工作"], "next": "n4", "goal": 1 }
+          ],
+          "hint": "为了 + objetivo: 为了考试取得好成绩."
+        },
+        "n4": {
+          "npc": { "zh": "你上次也这么说，可是没有行动。这个计划实际吗？", "py": "Nǐ shàng cì yě zhème shuō, kěshì méiyǒu xíngdòng. Zhège jìhuà shíjì ma?", "es": "La última vez dijiste lo mismo y no hiciste nada. ¿Este plan es realista?" },
+          "user": [
+            { "zh": "这次不一样，我十分有信心！", "py": "Zhè cì bù yíyàng, wǒ shífēn yǒu xìnxīn!", "es": "Esta vez es distinto: ¡estoy segurísimo!", "keywords": ["信心", "不一样"], "next": "n5", "goal": 2 },
+            { "zh": "很实际。我真正懂得了：只说不做没有用。", "py": "Hěn shíjì. Wǒ zhēnzhèng dǒngde le: zhǐ shuō bú zuò méiyǒu yòng.", "es": "Muy realista. Lo he entendido de verdad: hablar sin hacer no sirve de nada.", "keywords": ["实际", "懂得"], "next": "n5", "goal": 2 }
+          ],
+          "hint": "Defiende tu plan: 我有信心 / 我十分有信心, o 很实际."
+        },
+        "n5": {
+          "npc": { "zh": "好吧，我相信你。", "py": "Hǎo ba, wǒ xiāngxìn nǐ.", "es": "Vale, te creo." },
+          "user": [
+            { "zh": "你跟我一起吧！我们互相帮助。", "py": "Nǐ gēn wǒ yìqǐ ba! Wǒmen hùxiāng bāngzhù.", "es": "¡Hazlo conmigo! Nos ayudamos el uno al otro.", "keywords": ["一起", "互相"], "next": "n6", "goal": 3 },
+            { "zh": "如果你有时间，就跟我一起跑步吧。", "py": "Rúguǒ nǐ yǒu shíjiān, jiù gēn wǒ yìqǐ pǎobù ba.", "es": "Si tienes tiempo, ven a correr conmigo.", "keywords": ["如果", "就", "一起"], "next": "n6", "goal": 3 }
+          ],
+          "hint": "Propón hacerlo juntos con 跟我一起…吧 o con 如果…，就…."
+        },
+        "n6": {
+          "npc": { "zh": "行！从明天起，我们六点在楼下见。", "py": "Xíng! Cóng míngtiān qǐ, wǒmen liù diǎn zài lóu xià jiàn.", "es": "¡Hecho! A partir de mañana, quedamos a las seis abajo." },
+          "end": true,
+          "feedback": "Has usado 从…起 para fijar el inicio, 为了 / 是为了 para el objetivo y has defendido tu plan (信心, 实际). Recuerda: 从…起 y 为了… van delante del sujeto, y 就 siempre detrás."
+        }
+      }
+    }
+  ]
+}

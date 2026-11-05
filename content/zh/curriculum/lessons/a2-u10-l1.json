@@ -1,0 +1,138 @@
+{
+  "id": "a2-u10-l1",
+  "title": "Porque es fiesta: 因为…，所以…",
+  "zh": "因为放假，所以…",
+  "goal": "Explicar causas y consecuencias con 因为…，所以… (y con 因为 + nombre) hablando de las fiestas y las vacaciones en China.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "因为", "pinyin": "yīnwèi", "es": "porque; como; por (+ nombre)", "note": "Abre la causa: 因为下雨，… · 因为中国电影，我开始学汉语." },
+    { "hanzi": "所以", "pinyin": "suǒyǐ", "es": "por eso, así que", "note": "Abre la consecuencia y va delante del sujeto: 所以我们不去." },
+    { "hanzi": "节日", "pinyin": "jiérì", "es": "fiesta, festividad" },
+    { "hanzi": "节", "pinyin": "jié", "es": "fiesta (en nombres de fiestas)", "note": "国庆节, 春节, 中秋节… También «过节» = celebrar una fiesta." },
+    { "hanzi": "过年", "pinyin": "guònián", "es": "celebrar el Año Nuevo (chino)", "note": "回家过年 = volver a casa por Año Nuevo." },
+    { "hanzi": "庆祝", "pinyin": "qìngzhù", "es": "celebrar, festejar" },
+    { "hanzi": "国庆", "pinyin": "guóqìng", "es": "fiesta nacional", "note": "国庆节 (1 de octubre) = Día Nacional de China." },
+    { "hanzi": "假", "pinyin": "jià", "es": "vacaciones, día libre", "note": "放假 = tener fiesta; 放七天假 = tener siete días de fiesta. (假 jiǎ = falso: otra lectura.)" },
+    { "hanzi": "假期", "pinyin": "jiàqī", "es": "vacaciones, periodo de fiesta" },
+    { "hanzi": "休假", "pinyin": "xiūjià", "es": "coger vacaciones (del trabajo)" },
+    { "hanzi": "全国", "pinyin": "quánguó", "es": "todo el país" },
+    { "hanzi": "全年", "pinyin": "quánnián", "es": "todo el año" },
+    { "hanzi": "春运", "pinyin": "chūnyùn", "es": "la gran migración del Año Nuevo chino", "note": "Fuera del HSK: el periodo en que cientos de millones de personas viajan para volver a casa." }
+  ],
+  "extraVocab": ["春运"],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "因为十月一号是国庆节，所以全国都放假。", "py": "Yīnwèi shí yuè yī hào shì Guóqìngjié, suǒyǐ quánguó dōu fàngjià.", "es": "Como el 1 de octubre es el Día Nacional, hay fiesta en todo el país." },
+        { "zh": "因为中国电影，我开始学汉语。", "py": "Yīnwèi Zhōngguó diànyǐng, wǒ kāishǐ xué Hànyǔ.", "es": "Empecé a estudiar chino por el cine chino." },
+        { "zh": "那我们一起庆祝吧！", "py": "Nà wǒmen yìqǐ qìngzhù ba!", "es": "¡Pues lo celebramos juntos!" }
+      ]
+    },
+    { "type": "vocab", "title": "Fiestas, vacaciones y la causa", "words": ["因为", "所以", "节日", "节", "过年", "庆祝", "国庆", "假", "假期", "休假", "全国", "全年", "春运"] },
+    {
+      "type": "phonetics-drill",
+      "title": "La entonación de una frase con causa: 因为…， | 所以…",
+      "markdown": "Una frase con **因为…，所以…** tiene **dos curvas**: la primera parte (la causa) termina con la voz **en suspenso**, sin bajar, y se hace una **pausa corta** en la coma; la segunda parte (la consecuencia) termina **bajando**, como una afirmación. Es lo mismo que haces en español con «Como mañana es fiesta… | no tenemos clase».\n\n- **因为** *yīnwèi*: 1.º + 4.º, alto y luego cae.\n- **所以** *suǒyǐ*: son **dos terceros tonos**, así que el primero se dice en **segundo**: suena *suó yǐ*. Se escribe *suǒyǐ*.\n- **假** en 放假, 假期 es **jià** (4.º); con el 3.er tono (*jiǎ*) significa «falso».\n- **过年** *guònián* y **国庆** *guóqìng*: no confundas *guò* (cae) con *guó* (sube).",
+      "items": [
+        { "audio": "所以", "prompt": "¿Cómo suena?", "options": ["suó yǐ (3 + 3 → 2 + 3)", "suǒ yì", "suō yǐ"], "answer": 0, "explain": "Dos terceros tonos seguidos: el primero sube como un segundo." },
+        { "audio": "假期", "options": ["jiàqī", "jiǎqī", "jiàqí"], "answer": 0, "explain": "jià (vacaciones) en 4.º tono; qī en 1.º." },
+        { "audio": "庆祝", "options": ["qìngzhù", "qīngzhù", "qìnzhù"], "answer": 0, "explain": "Dos cuartos tonos, y qìng con -ng." },
+        { "audio": "过年", "options": ["guònián", "guónián", "guǒnián"], "answer": 0, "explain": "过 guò cae; 国 guó sube." },
+        { "audio": "因为放假，所以我回家。", "prompt": "¿Dónde va la pausa?", "options": ["因为放假 / 所以我回家", "因为 / 放假所以我回家", "因为放假所以 / 我回家"], "answer": 0, "explain": "La pausa va en la coma, entre la causa y la consecuencia; 所以 abre la segunda parte." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["因", "节"],
+      "mnemonics": {
+        "因": "囗 (un recinto) + 大 (una persona con los brazos abiertos): alguien tumbado sobre una esterilla, lo que hay «debajo», la base. De «base, fundamento» viene «causa»: 因为.",
+        "节": "艹 (planta) arriba y 卩 abajo; en la forma tradicional 節 lleva 竹 (bambú): los nudos del bambú dividen el tallo en tramos, igual que las fiestas dividen el año."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "因为 + causa，所以 + consecuencia",
+      "markdown": "Recuerda la convención de la Etapa 2: **una fila por cláusula**, y los conectores que van **delante del sujeto** (因为, 所以) en el hueco **Tiempo inicial**.\n\n- **Orden**: en chino la **causa va primero** casi siempre: 因为…，所以… Se puede usar solo uno de los dos (因为下雨，我不去 · 下雨了，所以我不去).\n- **所以 va delante del sujeto**: 所以**我们**不去 (✗ 我们所以不去).\n- **因为 + nombre** (sin verbo): «por…»: **因为中国电影**，我开始学汉语. Todo el bloque cabe en el *Tiempo inicial* de una sola fila.\n- **那** al principio de la respuesta = «entonces, pues»: 那我们一起庆祝吧！\n- Para preguntar la causa: **为什么**…？ → 因为…",
+      "focus": ["time0"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "time0": { "zh": "因为", "py": "yīnwèi" }, "subject": { "zh": "十月一号", "py": "shí yuè yī hào" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "国庆节", "py": "Guóqìngjié" } }, "end": "，", "es": "Como el 1 de octubre es el Día Nacional… (1.ª parte)" },
+        { "slots": { "time0": { "zh": "所以", "py": "suǒyǐ" }, "subject": { "zh": "全国", "py": "quánguó" }, "adverb": { "zh": "都", "py": "dōu" }, "verb1": { "zh": "放假", "py": "fàngjià" } }, "end": "。", "es": "…por eso hay fiesta en todo el país. (2.ª parte)", "esOrder": [{ "text": "por eso", "slot": "time0" }, { "text": "hay fiesta", "slot": "verb1" }, { "text": "en todo", "slot": "adverb" }, { "text": "el país", "slot": "subject" }] },
+        { "slots": { "time0": { "zh": "因为", "py": "yīnwèi" }, "subject": { "zh": "春运的票", "py": "chūnyùn de piào" }, "adverb": { "zh": "很难", "py": "hěn nán" }, "verb1": { "zh": "买", "py": "mǎi" } }, "end": "，", "es": "Como los billetes de la migración del Año Nuevo son muy difíciles de conseguir… (1.ª parte)" },
+        { "slots": { "time0": { "zh": "所以", "py": "suǒyǐ" }, "subject": { "zh": "小李", "py": "Xiǎo Lǐ" }, "adverb": { "zh": "已经", "py": "yǐjīng" }, "verb1": { "zh": "买了", "py": "mǎi le" }, "object": { "zh": "火车票", "py": "huǒchēpiào" } }, "end": "。", "es": "…Xiao Li ya ha comprado el billete de tren. (2.ª parte)" },
+        { "slots": { "time0": { "zh": "因为中国电影，", "py": "yīnwèi Zhōngguó diànyǐng," }, "subject": { "zh": "我", "py": "wǒ" }, "verb1": { "zh": "开始", "py": "kāishǐ" }, "verb2": { "zh": "学", "py": "xué" }, "object": { "zh": "汉语", "py": "Hànyǔ" } }, "end": "。", "es": "Empecé a estudiar chino por el cine chino." },
+        { "slots": { "time0": { "zh": "那", "py": "nà" }, "subject": { "zh": "我们", "py": "wǒmen" }, "adverb": { "zh": "一起", "py": "yìqǐ" }, "verb1": { "zh": "庆祝", "py": "qìngzhù" }, "particle": { "zh": "吧", "py": "ba" } }, "end": "！", "es": "¡Pues lo celebramos juntos!" }
+      ],
+      "negative": [
+        { "slots": { "time0": { "zh": "因为", "py": "yīnwèi" }, "subject": { "zh": "我", "py": "wǒ" }, "verb1": { "zh": "没有", "py": "méiyǒu" }, "object": { "zh": "假期", "py": "jiàqī" } }, "end": "，", "es": "Como no tengo vacaciones… (1.ª parte)" },
+        { "slots": { "time0": { "zh": "所以", "py": "suǒyǐ" }, "subject": { "zh": "我", "py": "wǒ" }, "time": { "zh": "今年", "py": "jīnnián" }, "adverb": { "zh": "不", "py": "bù" }, "verb1": { "zh": "回国", "py": "huí guó" } }, "end": "。", "es": "…este año no vuelvo a mi país. (2.ª parte)" }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "adverb": { "zh": "为什么", "py": "wèi shénme" }, "verb1": { "zh": "学", "py": "xué" }, "object": { "zh": "汉语", "py": "Hànyǔ" } }, "end": "？", "es": "¿Por qué estudias chino?" },
+        { "slots": { "subject": { "zh": "国庆节", "py": "Guóqìngjié" }, "verb1": { "zh": "放", "py": "fàng" }, "object": { "zh": "几天假", "py": "jǐ tiān jià" } }, "end": "？", "es": "¿Cuántos días de fiesta hay en el Día Nacional?" }
+      ],
+      "mistakes": [
+        { "wrong": "因为下雨，我们所以不去。", "right": "因为下雨，所以我们不去。", "why": "所以 abre la segunda cláusula: va delante del sujeto, no detrás." },
+        { "wrong": "所以我们放假，因为今天是国庆节。", "right": "因为今天是国庆节，所以我们放假。", "why": "En chino la causa va primero. «Porque…» detrás, como en español, suena muy raro con 所以." },
+        { "wrong": "国庆节放假七天。", "right": "国庆节放七天假。", "why": "放假 es un verbo separable: la duración va en medio, 放 + 七天 + 假." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "¿Por qué tiene fiesta todo el país?",
+      "lines": [
+        { "speaker": "雨果", "zh": "小李，十月一号为什么全国都放假？", "py": "Xiǎo Lǐ, shí yuè yī hào wèi shénme quánguó dōu fàngjià?", "es": "Xiao Li, ¿por qué el 1 de octubre tiene fiesta todo el país?" },
+        { "speaker": "小李", "zh": "因为十月一号是国庆节，所以全国放七天假。", "py": "Yīnwèi shí yuè yī hào shì Guóqìngjié, suǒyǐ quán guó fàng qī tiān jià.", "es": "Porque el 1 de octubre es el Día Nacional, así que en todo el país hay siete días de fiesta." },
+        { "speaker": "雨果", "zh": "七天？太好了！你国庆节回家吗？", "py": "Qī tiān? Tài hǎo le! Nǐ Guóqìngjié huí jiā ma?", "es": "¿Siete días? ¡Genial! ¿Te vas a casa en el Día Nacional?" },
+        { "speaker": "小李", "zh": "不回。因为人太多，火车票很难买，所以我在上海过节。", "py": "Bù huí. Yīnwèi rén tài duō, huǒchēpiào hěn nán mǎi, suǒyǐ wǒ zài Shànghǎi guò jié.", "es": "No. Como hay demasiada gente y los billetes de tren son difíciles de conseguir, paso la fiesta en Shanghái." },
+        { "speaker": "雨果", "zh": "那我们一起去玩儿吧！", "py": "Nà wǒmen yìqǐ qù wánr ba!", "es": "¡Pues salimos juntos por ahí!" },
+        { "speaker": "小李", "zh": "好啊！春节我要回家过年。春运人更多，票更难买。", "py": "Hǎo a! Chūnjié wǒ yào huí jiā guònián. Chūnyùn rén gèng duō, piào gèng nán mǎi.", "es": "¡Vale! En la Fiesta de la Primavera sí voy a casa por Año Nuevo. En el 春运 hay aún más gente y los billetes son aún más difíciles." },
+        { "speaker": "雨果", "zh": "春运是什么？", "py": "Chūnyùn shì shénme?", "es": "¿Qué es el 春运?" },
+        { "speaker": "小李", "zh": "春运就是春节前后，全国很多人坐车回家。", "py": "Chūnyùn jiù shì Chūnjié qiánhòu, quánguó hěn duō rén zuò chē huí jiā.", "es": "Es la época de antes y después de la Fiesta de la Primavera, cuando muchísima gente de todo el país viaja a casa." },
+        { "speaker": "雨果", "zh": "西班牙也有很多节日，我们的假期没有这么长。", "py": "Xībānyá yě yǒu hěn duō jiérì, wǒmen de jiàqī méiyǒu zhème cháng.", "es": "En España también hay muchas fiestas, pero nuestras vacaciones no son tan largas." },
+        { "speaker": "小李", "zh": "你们休假多长时间？", "py": "Nǐmen xiūjià duō cháng shíjiān?", "es": "¿Cuántas vacaciones cogéis?" },
+        { "speaker": "雨果", "zh": "一般全年有三十天，很多人八月休假。", "py": "Yìbān quánnián yǒu sānshí tiān, hěn duō rén bā yuè xiūjià.", "es": "Normalmente treinta días al año, y mucha gente las coge en agosto." },
+        { "speaker": "小李", "zh": "三十天？我也想去西班牙工作！", "py": "Sānshí tiān? Wǒ yě xiǎng qù Xībānyá gōngzuò!", "es": "¿Treinta días? ¡Yo también quiero ir a trabajar a España!" }
+      ],
+      "notes": "国庆节 (1 de octubre) da una semana de fiesta, la «Semana Dorada»: trenes llenos y lugares turísticos abarrotados. Para compensar, en China se trabaja algún sábado o domingo cercano (调休): mira bien el calendario de la universidad."
+    },
+    { "type": "exercises", "count": 16, "bank": ["g-dates-time", "g-word-order", "g-question-words"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "time0": { "zh": "所以" }, "subject": { "zh": "全国" }, "adverb": { "zh": "都" }, "verb1": { "zh": "放假" } }, "end": "。", "es": "…por eso hay fiesta en todo el país." }, "distractors": ["因为"] },
+        { "sentence": { "slots": { "time0": { "zh": "因为中国电影，" }, "subject": { "zh": "我" }, "verb1": { "zh": "开始" }, "verb2": { "zh": "学" }, "object": { "zh": "汉语" } }, "end": "。", "es": "Empecé a estudiar chino por el cine chino." }, "distractors": ["所以"] },
+        { "sentence": { "slots": { "time0": { "zh": "所以" }, "subject": { "zh": "我们" }, "time": { "zh": "今年" }, "adverb": { "zh": "不" }, "verb1": { "zh": "回家" }, "verb2": { "zh": "过年" } }, "end": "。", "es": "…así que este año no volvemos a casa por Año Nuevo." }, "distractors": ["因为", "没"] },
+        { "sentence": { "slots": { "time0": { "zh": "所以国庆节" }, "subject": { "zh": "我" }, "aux": { "zh": "想" }, "with": { "zh": "跟小李一起" }, "verb1": { "zh": "去北京" }, "verb2": { "zh": "玩儿" } }, "end": "。", "es": "…así que en el Día Nacional quiero irme a Pekín con Xiao Li." }, "distractors": ["因为"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "因为十月一号是国庆节，所以全国都放假。", "py": "Yīnwèi shí yuè yī hào shì Guóqìngjié, suǒyǐ quánguó dōu fàngjià.", "es": "Como el 1 de octubre es el Día Nacional, hay fiesta en todo el país." },
+        { "zh": "因为人太多，所以我在上海过节。", "py": "Yīnwèi rén tài duō, suǒyǐ wǒ zài Shànghǎi guò jié.", "es": "Como hay demasiada gente, paso la fiesta en Shanghái." },
+        { "zh": "春节我要回家过年。", "py": "Chūnjié wǒ yào huí jiā guònián.", "es": "En la Fiesta de la Primavera voy a casa por Año Nuevo." },
+        { "zh": "那我们一起庆祝吧！", "py": "Nà wǒmen yìqǐ qìngzhù ba!", "es": "¡Pues lo celebramos juntos!" }
+      ],
+      "respond": [
+        { "q": { "zh": "你为什么来中国？", "py": "Nǐ wèi shénme lái Zhōngguó?", "es": "¿Por qué has venido a China?" }, "model": { "zh": "因为我想学汉语，所以我来中国读硕士。", "py": "Yīnwèi wǒ xiǎng xué Hànyǔ, suǒyǐ wǒ lái Zhōngguó dú shuòshì.", "es": "Porque quiero aprender chino: por eso he venido a China a hacer el máster." } },
+        { "q": { "zh": "国庆节你去旅游吗？", "py": "Guóqìngjié nǐ qù lǚyóu ma?", "es": "¿Te vas de viaje en el Día Nacional?" }, "model": { "zh": "不去。因为人太多，所以我在上海休息。", "py": "Bú qù. Yīnwèi rén tài duō, suǒyǐ wǒ zài Shànghǎi xiūxi.", "es": "No. Como hay demasiada gente, me quedo descansando en Shanghái." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Siete días de fiesta",
+      "text": "十月一号是中国的国庆节，全国放七天假。因为假期很长，所以很多人去别的城市旅游，也有很多人回老家看爸爸妈妈。这几天，火车站和机场的人非常多，票也很难买。小李说，春节是中国最大的节日，人们都要回家过年。因为全国有很多很多人要坐车回家，所以春运的票比国庆节的票更难买。雨果觉得中国和西班牙很不一样：西班牙全年有很多节日，放假的时间都不长，人们一般八月休假。今年国庆节雨果不去旅游，因为他想在上海庆祝。晚上他和小李、安娜一起去看上海的夜景。上海的晚上非常漂亮，人很多，大家都很高兴。",
+      "es": "El 1 de octubre es el Día Nacional de China y en todo el país hay siete días de fiesta. Como las vacaciones son largas, mucha gente se va de viaje a otras ciudades y mucha otra vuelve a su pueblo a ver a sus padres. Estos días las estaciones de tren y los aeropuertos están llenísimos y los billetes son difíciles de conseguir. Xiao Li dice que la Fiesta de la Primavera es la fiesta más importante de China: todo el mundo vuelve a casa por Año Nuevo. Como muchísima gente de todo el país tiene que viajar a casa, los billetes del 春运 son todavía más difíciles de conseguir que los del Día Nacional. A Hugo le parece que China y España son muy distintas: en España hay muchas fiestas a lo largo del año, pero ninguna da muchos días libres, y la gente suele coger las vacaciones en agosto. Este año Hugo no se va de viaje en el Día Nacional, porque quiere celebrarlo en Shanghái. Por la noche va con Xiao Li y Anna a ver Shanghái iluminada. De noche la ciudad está preciosa, hay mucha gente y todos están contentos.",
+      "questions": [
+        { "q": "¿Cuántos días de fiesta hay en el Día Nacional?", "options": ["七天", "三十天", "一天"], "answer": 0 },
+        { "q": "¿Por qué son tan difíciles de conseguir los billetes del 春运?", "options": ["很多很多人要坐车回家", "火车票很贵", "春节不放假"], "answer": 0 },
+        { "q": "¿Por qué no se va de viaje Hugo?", "options": ["他想在上海庆祝", "他没有假期", "他要回西班牙"], "answer": 0 },
+        { "q": "¿Qué frase es correcta?", "options": ["因为下雨，所以我们不去。", "因为下雨，我们所以不去。", "所以下雨，因为我们不去。"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

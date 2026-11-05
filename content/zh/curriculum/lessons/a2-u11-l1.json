@@ -1,0 +1,139 @@
+{
+  "id": "a2-u11-l1",
+  "title": "Si me cogen…: 如果…就 y …的话",
+  "zh": "如果你有时间，就来面试吧",
+  "goal": "Poner condiciones con 如果…，就… y …的话 en una entrevista para unas prácticas.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "如果", "pinyin": "rúguǒ", "es": "si (condición)", "note": "Abre la primera cláusula; en la segunda suele ir 就 detrás del sujeto." },
+    { "hanzi": "的话", "pinyin": "dehuà", "es": "(si) … (marca de condición al final)", "note": "Cierra la condición: 有时间的话 = si tienes tiempo. Puede ir con 如果 o solo." },
+    { "hanzi": "面试", "pinyin": "miànshì", "es": "entrevista (de trabajo); entrevistar", "note": "面 (cara) + 试 (probar): una prueba cara a cara." },
+    { "hanzi": "简历", "pinyin": "jiǎnlì", "es": "currículum (CV)" },
+    { "hanzi": "实习", "pinyin": "shíxí", "es": "hacer prácticas; prácticas", "note": "在一家公司实习 = hacer prácticas en una empresa." },
+    { "hanzi": "实习生", "pinyin": "shíxíshēng", "es": "becario, estudiante en prácticas" },
+    { "hanzi": "打工", "pinyin": "dǎgōng", "es": "trabajar (a tiempo parcial, por horas)", "note": "Lo que hacen los estudiantes: 在酒店打工. Para un trabajo fijo se dice 工作." },
+    { "hanzi": "工资", "pinyin": "gōngzī", "es": "sueldo, salario", "note": "Lo que te paga la empresa cada mes." },
+    { "hanzi": "收入", "pinyin": "shōurù", "es": "ingresos", "note": "Todo lo que ganas (sueldo + otras cosas). 收入高 / 收入不多." },
+    { "hanzi": "要求", "pinyin": "yāoqiú", "es": "requisito, exigencia; pedir, exigir", "note": "要 aquí es primer tono: yāo." },
+    { "hanzi": "姓名", "pinyin": "xìngmíng", "es": "nombre y apellido (en formularios)" },
+    { "hanzi": "经理", "pinyin": "jīnglǐ", "es": "director, gerente, jefe (de departamento)", "note": "Como tratamiento va detrás del apellido: 刘经理." },
+    { "hanzi": "单位", "pinyin": "dānwèi", "es": "centro de trabajo, empresa u organismo", "note": "Muy usado en China: 你在哪个单位工作？" }
+  ],
+  "extraVocab": ["面试", "简历", "实习生"],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "如果你有时间，就来面试吧。", "py": "Rúguǒ nǐ yǒu shíjiān, jiù lái miànshì ba.", "es": "Si tienes tiempo, ven a la entrevista." },
+        { "zh": "工资高的话，我就去。", "py": "Gōngzī gāo dehuà, wǒ jiù qù.", "es": "Si el sueldo es alto, voy." },
+        { "zh": "你们单位要实习生吗？", "py": "Nǐmen dānwèi yào shíxíshēng ma?", "es": "¿Vuestra empresa busca becarios?" }
+      ]
+    },
+    { "type": "vocab", "title": "Entrevistas, prácticas y sueldos", "words": ["如果", "的话", "面试", "简历", "实习", "实习生", "打工", "工资", "收入", "要求", "姓名", "经理", "单位"] },
+    {
+      "type": "phonetics-drill",
+      "title": "La entonación del «si…»: la voz se queda en el aire",
+      "markdown": "Una frase con 如果 tiene **dos tramos de entonación**. En la coma, la voz **no cae**: se queda suspendida, como en español cuando dices «Si tienes tiempo…» y el otro espera el final. La caída llega al terminar la segunda parte.\n\n- Pausa **solo en la coma**: 如果你有时间 / 就来面试吧.\n- **的话** *dehuà*: el 的 es **neutro** y casi se pega a lo anterior: 有时间的话 *yǒu shíjiān dehuà*.\n- **如果** *rúguǒ*: la *r* china no vibra; es como la «y» de «yo» dicha con la lengua doblada hacia atrás.\n- **你有** *nǐ yǒu*: dos terceros tonos seguidos → el primero sube: *ní yǒu*.\n- **工资** *gōngzī*: *z* (como «ds» sin voz), no *zh*.",
+      "items": [
+        { "audio": "如果", "options": ["rúguǒ", "rùguǒ", "lúguǒ"], "answer": 0, "explain": "rú (2.º tono) + guǒ (3.º)." },
+        { "audio": "有时间的话", "options": ["yǒu shíjiān dehuà", "yǒu shíjiān dí huà", "yǒu shíjiān de huā"], "answer": 0, "explain": "的 neutro y 话 en cuarto tono." },
+        { "audio": "工资", "options": ["gōngzī", "gōngzhī", "gōngcī"], "answer": 0, "explain": "z sin aspiración y con la lengua delante; zh se dobla hacia atrás; c lleva aire." },
+        { "audio": "实习生", "options": ["shíxíshēng", "shíxīshēng", "sìxíshēng"], "answer": 0, "explain": "shí · xí · shēng: 2 · 2 · 1." },
+        { "audio": "如果你有时间，就来面试吧", "prompt": "¿Dónde va la pausa?", "options": ["如果你有时间 / 就来面试吧", "如果 / 你有时间就来面试吧", "如果你有 / 时间就来面试吧"], "answer": 0, "explain": "Solo se para en la coma, entre la condición y lo que pasa." },
+        { "audio": "你有", "prompt": "¿Cómo suena 你?", "options": ["Sube (ní yǒu)", "Baja (nǐ yǒu)", "Cae fuerte (nì yǒu)"], "answer": 0, "explain": "3 + 3 → el primero pasa a segundo tono." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["如", "简"],
+      "mnemonics": {
+        "如": "女 (mujer) + 口 (boca): seguir lo que dice la boca de otro, «ser como, igual que». De «si fuera así» viene 如果 «si».",
+        "简": "⺮ (bambú) + 间 (espacio, intervalo): las tablillas de bambú en las que se escribía antiguamente, con poco sitio. Por eso 简 es «breve, sencillo», y 简历 es tu vida «en breve»."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "如果 + condición，sujeto + 就 + verbo",
+      "markdown": "Recuerda la convención de la Etapa 2: **una fila por cláusula**; 如果 va en el *Tiempo inicial* de la primera y **就** en los *Adverbios* de la segunda.\n\n- **La condición va siempre delante** (en español puedes decir «voy si…», en chino no).\n- **如果** abre la condición; **…的话** la cierra. Puedes usar uno, el otro o los dos: 如果你有时间(的话). Un bloque corto con 的话 cabe entero en el *Tiempo inicial* de una sola fila: [工资高的话，] [我] [就] [去].\n- **就** va detrás del sujeto de la segunda parte, nunca delante (✗ 就我去).\n- La negación va en su cláusula: 如果明天**不**下雨 · 我们就**不**去了.",
+      "focus": ["time0", "adverb"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "time0": { "zh": "如果", "py": "rúguǒ" }, "subject": { "zh": "你", "py": "nǐ" }, "time": { "zh": "明天", "py": "míngtiān" }, "verb1": { "zh": "有", "py": "yǒu" }, "object": { "zh": "时间", "py": "shíjiān" } }, "end": "，", "es": "Si mañana tienes tiempo… (1.ª parte)" },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "adverb": { "zh": "就", "py": "jiù" }, "verb1": { "zh": "来", "py": "lái" }, "verb2": { "zh": "面试", "py": "miànshì" }, "particle": { "zh": "吧", "py": "ba" } }, "end": "。", "es": "…ven a la entrevista. (2.ª parte)" },
+        { "slots": { "time0": { "zh": "工资高的话，", "py": "gōngzī gāo dehuà," }, "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "就", "py": "jiù" }, "verb1": { "zh": "去", "py": "qù" } }, "end": "。", "es": "Voy si el sueldo es alto.", "esOrder": [{ "text": "Voy", "slot": "verb1" }, { "text": "si el sueldo es alto", "slot": "time0" }] },
+        { "slots": { "time0": { "zh": "如果", "py": "rúguǒ" }, "subject": { "zh": "经理", "py": "jīnglǐ" }, "verb1": { "zh": "看了", "py": "kàn le" }, "object": { "zh": "你的简历", "py": "nǐ de jiǎnlì" } }, "end": "，", "es": "Si el director lee tu currículum… (1.ª parte)" },
+        { "slots": { "subject": { "zh": "他", "py": "tā" }, "adverb": { "zh": "就", "py": "jiù" }, "aux": { "zh": "会", "py": "huì" }, "verb1": { "zh": "给你打电话", "py": "gěi nǐ dǎ diànhuà" } }, "end": "。", "es": "…te llamará. (2.ª parte)" },
+        { "slots": { "time0": { "zh": "你想在我们单位实习的话，", "py": "nǐ xiǎng zài wǒmen dānwèi shíxí dehuà," }, "subject": { "zh": "你", "py": "nǐ" }, "adverb": { "zh": "就", "py": "jiù" }, "aux": { "zh": "要", "py": "yào" }, "verb1": { "zh": "写", "py": "xiě" }, "object": { "zh": "一份简历", "py": "yí fèn jiǎnlì" } }, "end": "。", "es": "Si quieres hacer prácticas en nuestra empresa, tienes que escribir un currículum." }
+      ],
+      "negative": [
+        { "slots": { "time0": { "zh": "工资太低的话，", "py": "gōngzī tài dī dehuà," }, "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "就不", "py": "jiù bú" }, "verb1": { "zh": "去", "py": "qù" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Si el sueldo es demasiado bajo, no voy." },
+        { "slots": { "time0": { "zh": "如果", "py": "rúguǒ" }, "subject": { "zh": "你", "py": "nǐ" }, "adverb": { "zh": "没", "py": "méi" }, "verb1": { "zh": "有", "py": "yǒu" }, "object": { "zh": "简历", "py": "jiǎnlì" } }, "end": "，", "es": "Si no tienes currículum… (1.ª parte)" },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "adverb": { "zh": "就不", "py": "jiù bù" }, "aux": { "zh": "能", "py": "néng" }, "verb1": { "zh": "来", "py": "lái" }, "verb2": { "zh": "面试", "py": "miànshì" } }, "end": "。", "es": "…no puedes venir a la entrevista. (2.ª parte)" }
+      ],
+      "question": [
+        { "slots": { "time0": { "zh": "有面试的话，", "py": "yǒu miànshì dehuà," }, "subject": { "zh": "你", "py": "nǐ" }, "time": { "zh": "明天", "py": "míngtiān" }, "aux": { "zh": "能", "py": "néng" }, "verb1": { "zh": "来", "py": "lái" }, "particle": { "zh": "吗", "py": "ma" } }, "end": "？", "es": "Si hay entrevista, ¿puedes venir mañana?" },
+        { "slots": { "subject": { "zh": "你们单位", "py": "nǐmen dānwèi" }, "verb1": { "zh": "有", "py": "yǒu" }, "object": { "zh": "什么要求", "py": "shénme yāoqiú" } }, "end": "？", "es": "¿Qué requisitos pide vuestra empresa?" }
+      ],
+      "mistakes": [
+        { "wrong": "如果明天下雨，就我们不去。", "right": "如果明天下雨，我们就不去。", "why": "就 es un adverbio: va detrás del sujeto de la segunda parte, nunca delante." },
+        { "wrong": "我就去，如果工资高。", "right": "如果工资高，我就去。", "why": "En chino la condición va siempre primero; el orden español «voy si…» no funciona." },
+        { "wrong": "你有时间如果，就来吧。", "right": "你有时间的话，就来吧。", "why": "如果 va al principio de la condición (o detrás del sujeto: 你如果有时间); lo que va al final es 的话." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "La entrevista en la agencia de viajes",
+      "lines": [
+        { "speaker": "刘经理", "zh": "你好，请坐。请说一下你的姓名和专业。", "py": "Nǐ hǎo, qǐng zuò. Qǐng shuō yíxià nǐ de xìngmíng hé zhuānyè.", "es": "Hola, siéntate. Dime tu nombre completo y qué estudias." },
+        { "speaker": "雨果", "zh": "您好，我叫雨果，在上海交通大学读硕士。", "py": "Nín hǎo, wǒ jiào Yǔguǒ, zài Shànghǎi Jiāotōng Dàxué dú shuòshì.", "es": "Buenos días, me llamo Hugo y estudio un máster en la Universidad Jiaotong de Shanghái." },
+        { "speaker": "刘经理", "zh": "你的简历我看了。你以前打过工吗？", "py": "Nǐ de jiǎnlì wǒ kàn le. Nǐ yǐqián dǎguo gōng ma?", "es": "He leído tu currículum. ¿Has trabajado antes?" },
+        { "speaker": "雨果", "zh": "打过。在马德里的时候，我在一家酒店打工。", "py": "Dǎguo. Zài Mǎdélǐ de shíhou, wǒ zài yì jiā jiǔdiàn dǎgōng.", "es": "Sí. Cuando vivía en Madrid, trabajaba por horas en un hotel." },
+        { "speaker": "刘经理", "zh": "很好。我们单位要一个会说西班牙语的实习生。", "py": "Hěn hǎo. Wǒmen dānwèi yào yí ge huì shuō Xībānyáyǔ de shíxíshēng.", "es": "Muy bien. Buscamos un becario que hable español." },
+        { "speaker": "雨果", "zh": "请问，实习生的工资怎么样？", "py": "Qǐngwèn, shíxíshēng de gōngzī zěnmeyàng?", "es": "Perdone, ¿cómo es el sueldo de los becarios?" },
+        { "speaker": "刘经理", "zh": "每个月三千块。如果你做得好，就能多拿一点儿。", "py": "Měi ge yuè sānqiān kuài. Rúguǒ nǐ zuò de hǎo, jiù néng duō ná yìdiǎnr.", "es": "Tres mil yuanes al mes. Si lo haces bien, puedes cobrar algo más." },
+        { "speaker": "雨果", "zh": "你们有什么要求？", "py": "Nǐmen yǒu shénme yāoqiú?", "es": "¿Qué requisitos tenéis?" },
+        { "speaker": "刘经理", "zh": "每个星期来三天。有课的话，你可以跟我说。", "py": "Měi ge xīngqī lái sān tiān. Yǒu kè dehuà, nǐ kěyǐ gēn wǒ shuō.", "es": "Venir tres días a la semana. Si tienes clase, me lo puedes decir." },
+        { "speaker": "雨果", "zh": "没问题。如果您觉得我可以，我下个星期就能来。", "py": "Méi wèntí. Rúguǒ nín juéde wǒ kěyǐ, wǒ xià ge xīngqī jiù néng lái.", "es": "Sin problema. Si le parece que valgo, puedo empezar la semana que viene." },
+        { "speaker": "刘经理", "zh": "好，明天我给你打电话。", "py": "Hǎo, míngtiān wǒ gěi nǐ dǎ diànhuà.", "es": "Bien, mañana te llamo." }
+      ],
+      "notes": "Fíjate en el registro: Hugo trata al director de 您 y empieza la pregunta delicada (el sueldo) con 请问. 刘经理 = «director Liu»: el cargo va detrás del apellido, como 王老师. 单位 es la palabra de siempre en China para «tu trabajo, tu empresa»."
+    },
+    { "type": "exercises", "count": 16, "bank": ["u09", "g-modal-verbs", "g-word-order"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "time0": { "zh": "如果明天下雨，" }, "subject": { "zh": "我们" }, "adverb": { "zh": "就不" }, "verb1": { "zh": "去" } }, "end": "。", "es": "Si mañana llueve, no vamos." }, "distractors": ["所以"] },
+        { "sentence": { "slots": { "time0": { "zh": "有时间的话，" }, "subject": { "zh": "你" }, "adverb": { "zh": "就" }, "verb1": { "zh": "来" }, "verb2": { "zh": "面试" }, "particle": { "zh": "吧" } }, "end": "。", "es": "Si tienes tiempo, ven a la entrevista." }, "distractors": ["吗"] },
+        { "sentence": { "slots": { "time0": { "zh": "如果工资高的话，" }, "subject": { "zh": "我" }, "adverb": { "zh": "就" }, "aux": { "zh": "想" }, "place": { "zh": "在你们单位" }, "verb1": { "zh": "实习" } }, "end": "。", "es": "Si el sueldo es alto, quiero hacer prácticas en vuestra empresa." }, "distractors": ["所以"] },
+        { "sentence": { "slots": { "time0": { "zh": "如果你们单位要实习生的话，" }, "subject": { "zh": "我" }, "time": { "zh": "下个月" }, "adverb": { "zh": "就" }, "aux": { "zh": "能" }, "with": { "zh": "跟我同学一起" }, "verb1": { "zh": "来" }, "verb2": { "zh": "面试" } }, "end": "。", "es": "Si vuestra empresa busca becarios, el mes que viene puedo venir a la entrevista con un compañero de clase." }, "distractors": ["但是"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "如果你有时间，就来面试吧。", "py": "Rúguǒ nǐ yǒu shíjiān, jiù lái miànshì ba.", "es": "Si tienes tiempo, ven a la entrevista." },
+        { "zh": "工资高的话，我就去。", "py": "Gōngzī gāo dehuà, wǒ jiù qù.", "es": "Si el sueldo es alto, voy." },
+        { "zh": "你们单位要实习生吗？", "py": "Nǐmen dānwèi yào shíxíshēng ma?", "es": "¿Vuestra empresa busca becarios?" },
+        { "zh": "如果明天下雨，我们就不去了。", "py": "Rúguǒ míngtiān xià yǔ, wǒmen jiù bú qù le.", "es": "Si mañana llueve, ya no vamos." }
+      ],
+      "respond": [
+        { "q": { "zh": "如果明天没有课，你想做什么？", "py": "Rúguǒ míngtiān méiyǒu kè, nǐ xiǎng zuò shénme?", "es": "Si mañana no tienes clase, ¿qué quieres hacer?" }, "model": { "zh": "如果明天没有课，我就去打工。", "py": "Rúguǒ míngtiān méiyǒu kè, wǒ jiù qù dǎgōng.", "es": "Si mañana no tengo clase, voy a trabajar." } },
+        { "q": { "zh": "你在中国打过工吗？", "py": "Nǐ zài Zhōngguó dǎguo gōng ma?", "es": "¿Has trabajado alguna vez en China?" }, "model": { "zh": "没打过。有机会的话，我想在一家公司实习。", "py": "Méi dǎguo. Yǒu jīhuì dehuà, wǒ xiǎng zài yì jiā gōngsī shíxí.", "es": "No. Si tengo la oportunidad, quiero hacer prácticas en una empresa." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Unas prácticas en una agencia de viajes",
+      "text": "雨果在上海读硕士，他想找一个实习的工作。上个星期，他给一家旅游公司发了简历。这家公司的经理姓刘，刘经理看了他的简历，请他来面试。面试的时候，刘经理问了他的姓名、专业和以前的工作。雨果说，在马德里的时候，他在一家酒店打过工。刘经理说：“我们单位要一个会说西班牙语的实习生。如果你每个星期能来三天，就可以来我们这儿实习。”实习生的工资不高，一个月三千块，可是雨果觉得没关系。他说：“我现在的收入不多，可是能学到很多东西的话，钱少一点儿也可以。”",
+      "es": "Hugo estudia un máster en Shanghái y quiere encontrar unas prácticas. La semana pasada envió su currículum a una agencia de viajes. El director de la empresa se apellida Liu; leyó el currículum y le invitó a una entrevista. En la entrevista, el director Liu le preguntó su nombre completo, qué estudiaba y en qué había trabajado. Hugo le contó que en Madrid había trabajado por horas en un hotel. El director Liu dijo: «Buscamos un becario que hable español. Si puedes venir tres días a la semana, puedes hacer las prácticas con nosotros». El sueldo de becario no es alto, tres mil yuanes al mes, pero a Hugo no le importa. Dice: «Ahora no gano mucho, pero si aprendo muchas cosas, no me importa cobrar un poco menos».",
+      "questions": [
+        { "q": "¿A dónde envió Hugo su currículum?", "options": ["一家旅游公司", "一家酒店", "一个学校"], "answer": 0 },
+        { "q": "¿Cuántos días a la semana tiene que ir?", "options": ["三天", "五天", "一天"], "answer": 0 },
+        { "q": "¿Cuánto cobra un becario al mes?", "options": ["三千块", "三万块", "三百块"], "answer": 0 },
+        { "q": "¿Qué frase es correcta?", "options": ["如果你能来，就可以实习。", "如果你能来，可以就实习。", "你能来如果，就可以实习。"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

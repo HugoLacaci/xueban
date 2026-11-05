@@ -1,0 +1,78 @@
+{
+  "id": "e0-12",
+  "title": "Escribir caracteres: trazos, orden y radicales",
+  "zh": "写汉字",
+  "goal": "Escribir caracteres sencillos con los trazos y el orden correctos, y reconocer los 30 radicales más útiles.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "人", "pinyin": "rén", "es": "persona", "note": "2 trazos: 撇 y 捺. Primero el de la izquierda." },
+    { "hanzi": "口", "pinyin": "kǒu", "es": "boca", "note": "3 trazos. También sirve para contar a los miembros de una familia." },
+    { "hanzi": "大", "pinyin": "dà", "es": "grande", "note": "3 trazos: 横, 撇, 捺. Una persona con los brazos abiertos." },
+    { "hanzi": "中", "pinyin": "zhōng", "es": "medio, centro", "note": "4 trazos: el trazo vertical largo, al final." },
+    { "hanzi": "日", "pinyin": "rì", "es": "sol; día", "note": "4 trazos: se cierra por abajo al final." },
+    { "hanzi": "月", "pinyin": "yuè", "es": "luna; mes", "note": "4 trazos: 撇, 横折钩, 横, 横." }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "一个人。", "py": "Yí ge rén.", "es": "Una persona." },
+        { "zh": "他是中国人。", "py": "Tā shì Zhōngguó rén.", "es": "Es chino." },
+        { "zh": "他是大学生。", "py": "Tā shì dàxuéshēng.", "es": "Es universitario." }
+      ]
+    },
+    { "type": "vocab", "title": "Seis caracteres para escribir", "words": ["人", "口", "大", "中", "日", "月"] },
+    {
+      "type": "phonetics-drill",
+      "title": "Los cuatro tonos en seis caracteres",
+      "markdown": "Antes de escribirlos, asegúrate de que los **dices** bien. Hoy tienes los cuatro tonos repartidos: **中** (1.º), **人** (2.º), **口** (3.º), **大 日 月** (4.º). Y dos sonidos difíciles: la **r** de 人 y 日 (que no vibra) y la **üe** de 月.",
+      "items": [
+        { "audio": "中", "options": ["1.º (alto y plano)", "2.º (sube)", "3.º (baja y sube)", "4.º (cae)"], "answer": 0 },
+        { "audio": "人", "options": ["1.º (alto y plano)", "2.º (sube)", "3.º (baja y sube)", "4.º (cae)"], "answer": 1 },
+        { "audio": "口", "options": ["1.º (alto y plano)", "2.º (sube)", "3.º (baja y sube)", "4.º (cae)"], "answer": 2 },
+        { "audio": "大", "options": ["1.º (alto y plano)", "2.º (sube)", "3.º (baja y sube)", "4.º (cae)"], "answer": 3 },
+        { "audio": "日", "options": ["rì", "lì", "yì"], "answer": 0, "explain": "r sin vibrar + -i vacía: un zumbido, no una «i»." },
+        { "audio": "月", "options": ["yè", "yuè", "wè"], "answer": 1, "explain": "yuè = ü + e abierta." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["口"],
+      "mnemonics": {
+        "口": "Una boca abierta hecha cuadrado, en 3 trazos: el lado izquierdo (竖), el de arriba y la derecha de un solo trazo (横折) y, al final, el de abajo (横), que «cierra la boca». Es la regla de los recintos: primero se abre, luego se cierra."
+      }
+    },
+    {
+      "type": "explain",
+      "title": "Ocho trazos básicos",
+      "markdown": "Todos los caracteres se construyen con un puñado de trazos. Estos son los ocho básicos (el nombre chino te servirá para leer las fichas de trazos):\n\n| Trazo | Nombre | Cómo se hace | Ejemplo |\n|---|---|---|---|\n| 一 | **横** héng | Horizontal, de izquierda a derecha | 一, 大 |\n| 丨 | **竖** shù | Vertical, de arriba abajo | 十, 中 |\n| 丿 | **撇** piě | Diagonal hacia abajo a la izquierda, afinando | 人 (1.º), 月 (1.º) |\n| ㇏ | **捺** nà | Diagonal hacia abajo a la derecha, engordando al final | 人 (2.º), 大 (3.º) |\n| 丶 | **点** diǎn | Punto corto, en diagonal | 六 (1.º) |\n| ㇀ | **提** tí | Subida corta, de abajo a la izquierda hacia arriba a la derecha | 氵 (su 3.er trazo) |\n| ㇕ | **折** zhé | Quiebro: un trazo que cambia de dirección sin levantar el lápiz | 口 (2.º), 日 (2.º) |\n| ㇚ | **钩** gōu | Gancho al final de otro trazo | 水 (1.º), 小 |\n\nLos trazos compuestos combinan estos: 横折钩 (el 2.º de 月) es horizontal + quiebro + gancho.\n\n### Reglas del orden de trazos\n1. **Arriba antes que abajo**: 三 (el de arriba primero).\n2. **Izquierda antes que derecha**: 你 (亻 antes que 尔).\n3. **Horizontal antes que vertical** cuando se cruzan: 十 (横, luego 竖).\n4. **撇 antes que 捺**: 人, 大.\n5. **De fuera a dentro**: 月 (primero el marco, luego los trazos de dentro).\n6. **Dentro antes de cerrar**: 日, 国 (se abre, se llena y se cierra «la puerta»).\n7. **Centro antes que los lados** si es simétrico: 小, 水.\n8. **El trazo vertical que atraviesa todo, al final**: 中.\n\nTodo carácter cabe en un **cuadrado imaginario** (田字格): ocupa el mismo espacio aunque tenga 1 trazo o 20."
+    },
+    { "type": "strokes" },
+    {
+      "type": "explain",
+      "title": "Radicales: el significado escondido",
+      "markdown": "Más del 80 % de los caracteres llevan un **radical** (部首), un componente que da una pista del **significado**. Muchos cambian de forma según su posición: 人 → **亻** a la izquierda (你, 他), 水 → **氵** (海), 心 → **忄**, 手 → **扌**, 言 → **讠** (谢), 辵 → **辶** (这, 进), 食 → **饣** (饭), 金 → **钅** (钱), 糸 → **纟**, 艸 → **艹** (花), 犬 → **犭**, 足 → **⻊**, 衣 → **衤**.\n\nCon estos 30 radicales reconocerás de qué va una buena parte de los caracteres del HSK 1–3. Ojo con **月**: como radical, a la izquierda (朋, 服, 脸) suele venir de **肉** (carne, cuerpo), no de la luna.\n\nPulsa cada radical para ver sus variantes y los caracteres que lo llevan."
+    },
+    { "type": "radicals", "radicals": ["人", "女", "子", "口", "心", "手", "目", "日", "月", "水", "火", "木", "土", "山", "田", "言", "辵", "食", "金", "糸", "门", "宀", "囗", "艸", "衣", "贝", "犬", "足", "力", "马"] },
+    {
+      "type": "explain",
+      "title": "Los seis tipos de caracteres (六书)",
+      "markdown": "Desde la dinastía Han, los caracteres se clasifican en **六书** liùshū, «las seis escrituras». Las cuatro que necesitas:\n\n1. **象形** xiàngxíng, **pictogramas**: dibujos simplificados. 人 (persona), 口 (boca), 日 (sol), 月 (luna), 水 (agua), 马 (caballo).\n2. **指事** zhǐshì, **indicativos**: un signo abstracto. 一 二 三, 上 (arriba) y 下 (abajo), 本 (raíz: una marca en la base de 木, árbol).\n3. **会意** huìyì, **agregados lógicos**: dos ideas juntas forman una tercera. 好 = 女 + 子 (madre e hijo: bueno), 明 = 日 + 月 (sol y luna: brillante), 休 = 亻 + 木 (persona apoyada en un árbol: descansar).\n4. **形声** xíngshēng, **pictofonéticos**: un radical da el significado y otro componente el sonido. 妈 = 女 (mujer) + 马 (suena ma), 吗 = 口 + 马. Son la **gran mayoría** de los caracteres.\n\nLas otras dos (转注 y 假借, préstamos y derivaciones) explican caracteres que cambiaron de uso: 我, por ejemplo, era el dibujo de un arma.\n\n**Para ver cómo ha cambiado cada carácter**, abre la pestaña **Caracteres** y, en la ficha de cualquier carácter, la sección **Origen y evolución**: verás sus formas en hueso oracular, bronce, sello y escritura moderna. Prueba con 人, 日, 月 y 马."
+    },
+    { "type": "exercises", "count": 10, "bank": ["u0"] },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "一个人。", "py": "Yí ge rén.", "es": "Una persona." },
+        { "zh": "他是中国人。", "py": "Tā shì Zhōngguó rén.", "es": "Es chino." },
+        { "zh": "他是大学生。", "py": "Tā shì dàxuéshēng.", "es": "Es universitario." }
+      ],
+      "respond": [
+        { "q": { "zh": "他是中国人？", "py": "Tā shì Zhōngguó rén?", "es": "¿Es chino?" }, "model": { "zh": "不是，他是西班牙人。", "py": "Bú shì, tā shì Xībānyá rén.", "es": "No, es español." } },
+        { "q": { "zh": "他是大学生？", "py": "Tā shì dàxuéshēng?", "es": "¿Es universitario?" }, "model": { "zh": "对，他是大学生。", "py": "Duì, tā shì dàxuéshēng.", "es": "Sí, es universitario." } }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

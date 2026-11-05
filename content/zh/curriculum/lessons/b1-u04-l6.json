@@ -1,0 +1,140 @@
+{
+  "id": "b1-u04-l6",
+  "title": "Excursión al pueblo del agua (repaso de la unidad)",
+  "zh": "我们走过桥去吧",
+  "goal": "Repasar todos los direccionales de la unidad (走上桥去, 拿出地图来, 想起来, 前面开过来一条船) contando una excursión, y construir frases largas completas.",
+  "minutes": 16,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "桥", "pinyin": "qiáo", "es": "puente", "note": "一座桥 = un puente; 过桥 = cruzar el puente." },
+    { "hanzi": "村", "pinyin": "cūn", "es": "pueblo, aldea", "note": "村子 = el pueblo; 村里 = en el pueblo." },
+    { "hanzi": "建", "pinyin": "jiàn", "es": "construir, edificar" },
+    { "hanzi": "建成", "pinyin": "jiànchéng", "es": "terminar de construir, inaugurar", "note": "这座桥是明朝建成的 = este puente se terminó en la dinastía Ming." },
+    { "hanzi": "环", "pinyin": "huán", "es": "anillo; rodear", "note": "环湖 = alrededor del lago; 环城 = de circunvalación." },
+    { "hanzi": "公共", "pinyin": "gōnggòng", "es": "público", "note": "Ya conoces 公共汽车." },
+    { "hanzi": "场所", "pinyin": "chǎngsuǒ", "es": "lugar, recinto", "note": "公共场所 = lugar público (en carteles)." },
+    { "hanzi": "内", "pinyin": "nèi", "es": "dentro de, en (formal)", "note": "村内 = dentro del pueblo; 一个小时内 = en menos de una hora." },
+    { "hanzi": "当中", "pinyin": "dāngzhōng", "es": "entre, de entre; en medio", "note": "这些桥当中 = de todos estos puentes." },
+    { "hanzi": "广大", "pinyin": "guǎngdà", "es": "amplio; (todos) los muchos…", "note": "Muy formal: 欢迎广大游客 = bienvenidos, queridos visitantes." },
+    { "hanzi": "展开", "pinyin": "zhǎnkāi", "es": "desplegar, abrir (algo plegado); desarrollar", "note": "把地图展开 = desplegar el mapa." },
+    { "hanzi": "面对", "pinyin": "miànduì", "es": "estar frente a, dar a; afrontar", "note": "房子面对着河 = la casa da al río." }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "我们走过桥去吧，那边有很多小吃。", "py": "Wǒmen zǒuguò qiáo qu ba, nàbian yǒu hěn duō xiǎochī.", "es": "Crucemos el puente, que al otro lado hay mucha comida callejera." },
+        { "zh": "前面开过来一条船。", "py": "Qiánmian kāi guolai yì tiáo chuán.", "es": "Por delante viene una barca." },
+        { "zh": "我把地图展开，一下子就想起路线来了。", "py": "Wǒ bǎ dìtú zhǎnkāi, yíxiàzi jiù xiǎngqǐ lùxiàn lai le.", "es": "Desplegué el mapa y enseguida me acordé de la ruta." }
+      ]
+    },
+    { "type": "vocab", "title": "Un pueblo con puentes", "words": ["桥", "村", "建", "建成", "环", "公共", "场所", "内", "当中", "广大", "展开", "面对"] },
+    {
+      "type": "phonetics-drill",
+      "title": "Frases largas: dónde respirar y qué marcar",
+      "markdown": "En una frase larga con direccional, el chino se agrupa en **bloques de sentido** y se respira entre ellos:\n\n**我们 | 走过桥去吧，| 那边 | 有很多小吃。**\n\n- El **lugar** o la **cosa** de en medio (桥, 地图) lleva el peso; 来 / 去 / 起来 van **neutros**.\n- **吧** final baja y suaviza la propuesta.\n- Para **contrastar** se marca la palabra contrastada: 不是**这座**桥，是**那座**！\n\nY sonidos del día: **q** de 桥 *qiáo* (aire, lengua plana) frente a **j** de 建 *jiàn* (sin aire); **c** de 村 *cūn* («ts» con aire).",
+      "items": [
+        { "audio": "桥", "options": ["qiáo", "jiáo", "qiǎo"], "answer": 0, "explain": "q con soplo de aire y segundo tono." },
+        { "audio": "村", "options": ["cūn", "zūn", "chūn"], "answer": 0, "explain": "c = «ts» con aire; z no lleva aire; ch es retrofleja." },
+        { "audio": "我们走过桥去吧。", "prompt": "¿Qué palabra lleva el peso?", "options": ["桥", "去", "吧"], "answer": 0, "explain": "El lugar del medio se marca; 去 y 吧 son neutros." },
+        { "audio": "不是这座桥，是那座！", "prompt": "¿Qué se marca para contrastar?", "options": ["这 y 那", "桥", "是"], "answer": 0 },
+        { "audio": "一下子", "options": ["yíxiàzi", "yīxiàzi", "yìxiàzi"], "answer": 0, "explain": "一 + cuarto tono → yí; 子 neutro." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["桥", "村"],
+      "mnemonics": {
+        "桥": "木 (madera) + 乔 (alto, arqueado): una estructura de madera alta y arqueada sobre el agua → puente.",
+        "村": "木 (árbol) + 寸 (palmo, medida pequeña): unos cuantos árboles y casas a poca distancia → aldea, pueblo."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "Repaso: todos los direccionales compuestos",
+      "markdown": "Lo que has aprendido en la unidad, en una tabla:\n\n| Caso | Ejemplo | Esqueleto |\n|---|---|---|\n| Sin lugar ni objeto | 他跑上来了 | todo en *Verbo 1* |\n| Con lugar (siempre en medio) | 走过**桥**去 | *Verbo 1* 走过 · *Objeto* 桥 · *Complemento* 去 |\n| Con cosa en medio | 拿出**地图**来 | *Verbo 1* 拿出 · *Objeto* 地图 · *Complemento* 来 |\n| Con cosa al final | 买回来了**很多小吃** | *Verbo 1* 买回来了 · *Objeto* |\n| Con 把 | **把地图**展开 / **把行李**拿上去 | 把 + cosa en *Con quién* |\n| Figurados | 想起来, 想出办法, 写下电话 | *Verbo 1* (+ *Objeto*) |\n| Aparición / desaparición | **前面**开过来**一条船** | *Dónde* · *Verbo 1* · *Objeto* |\n\nDos preguntas para elegir bien: **¿hacia dónde respecto a quien habla?** (来 / 去) y **¿lo que va detrás es un lugar (en medio) o una cosa (en medio o al final)?**",
+      "focus": ["verb1", "object", "complement"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "我们", "py": "wǒmen" }, "verb1": { "zh": "走过", "py": "zǒuguò" }, "object": { "zh": "桥", "py": "qiáo" }, "complement": { "zh": "去", "py": "qu" }, "particle": { "zh": "吧", "py": "ba" } }, "end": "。", "es": "Crucemos el puente.", "esOrder": [{ "text": "Crucemos", "slot": "verb1" }, { "text": "el puente", "slot": "object" }, { "text": "(hacia allí)", "slot": "complement" }] },
+        { "slots": { "subject": { "zh": "安娜", "py": "Ānnà" }, "verb1": { "zh": "拿出", "py": "náchū" }, "object": { "zh": "手机", "py": "shǒujī" }, "complement": { "zh": "来", "py": "lai" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Ana ha sacado el móvil." },
+        { "slots": { "subject": { "zh": "小李", "py": "Xiǎo Lǐ" }, "with": { "zh": "把地图", "py": "bǎ dìtú" }, "verb1": { "zh": "展开", "py": "zhǎnkāi" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Xiao Li ha desplegado el mapa." },
+        { "slots": { "place": { "zh": "前面", "py": "qiánmian" }, "verb1": { "zh": "开过来", "py": "kāi guolai" }, "object": { "zh": "一条船", "py": "yì tiáo chuán" } }, "end": "。", "es": "Por delante viene una barca." },
+        { "slots": { "subject": { "zh": "大卫", "py": "Dàwèi" }, "verb1": { "zh": "想出了", "py": "xiǎngchū le" }, "object": { "zh": "一个好办法", "py": "yí ge hǎo bànfǎ" } }, "end": "。", "es": "A David se le ha ocurrido una buena idea." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "我们", "py": "wǒmen" }, "adverb": { "zh": "还没", "py": "hái méi" }, "verb1": { "zh": "走进", "py": "zǒujìn" }, "object": { "zh": "村子", "py": "cūnzi" }, "complement": { "zh": "去", "py": "qu" } }, "end": "。", "es": "Todavía no hemos entrado en el pueblo." },
+        { "slots": { "subject": { "zh": "你们", "py": "nǐmen" }, "adverb": { "zh": "别", "py": "bié" }, "verb1": { "zh": "跑下", "py": "pǎo xià" }, "object": { "zh": "桥", "py": "qiáo" }, "complement": { "zh": "去", "py": "qu" } }, "end": "！", "es": "¡No bajéis corriendo del puente!" }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "verb1": { "zh": "想起来", "py": "xiǎng qilai" }, "object": { "zh": "那座桥的名字", "py": "nà zuò qiáo de míngzi" }, "particle": { "zh": "了吗", "py": "le ma" } }, "end": "？", "es": "¿Te has acordado ya del nombre de ese puente?" },
+        { "slots": { "place": { "zh": "河上", "py": "hé shang" }, "verb1": { "zh": "开过来了", "py": "kāi guolai le" }, "object": { "zh": "几条船", "py": "jǐ tiáo chuán" } }, "end": "？", "es": "¿Cuántas barcas han venido por el río?" }
+      ],
+      "mistakes": [
+        { "wrong": "我们走过去桥吧。", "right": "我们走过桥去吧。", "why": "El lugar va siempre entre la dirección y 来 / 去." },
+        { "wrong": "一条船前面开过来。", "right": "前面开过来一条船。", "why": "Lo que aparece, si es nuevo, va detrás del verbo." },
+        { "wrong": "我把地图展。", "right": "我把地图展开。", "why": "Con 把 el verbo necesita algo detrás: 展开, 拿出来, 放在桌子上…" }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Un sábado en el pueblo del agua",
+      "lines": [
+        { "speaker": "小李", "zh": "到了！这个村子离上海不远，一个小时内就能到。", "py": "Dào le! Zhège cūnzi lí Shànghǎi bù yuǎn, yí ge xiǎoshí nèi jiù néng dào.", "es": "¡Ya estamos! Este pueblo no está lejos de Shanghái: en menos de una hora llegas." },
+        { "speaker": "安娜", "zh": "你们看，门口写着：“欢迎广大游客”！", "py": "Nǐmen kàn, ménkǒu xiězhe: “Huānyíng guǎngdà yóukè”!", "es": "Mirad, en la entrada pone: «¡Bienvenidos, queridos visitantes!»." },
+        { "speaker": "雨果", "zh": "村内有很多桥。我们先走过那座桥去吧。", "py": "Cūn nèi yǒu hěn duō qiáo. Wǒmen xiān zǒuguò nà zuò qiáo qu ba.", "es": "Dentro del pueblo hay muchos puentes. Crucemos primero aquel." },
+        { "speaker": "大卫", "zh": "等一下，我把地图展开……这些桥当中，哪座最老？", "py": "Děng yíxià, wǒ bǎ dìtú zhǎnkāi……Zhèxiē qiáo dāngzhōng, nǎ zuò zuì lǎo?", "es": "Un momento, que despliego el mapa… De todos estos puentes, ¿cuál es el más antiguo?" },
+        { "speaker": "小李", "zh": "我想起来了！是那座大桥，是明朝建成的。", "py": "Wǒ xiǎng qilai le! Shì nà zuò dà qiáo, shì Míngcháo jiànchéng de.", "es": "¡Ya me acuerdo! Es aquel puente grande, de la dinastía Ming." },
+        { "speaker": "安娜", "zh": "你们看，前面开过来一条船！", "py": "Nǐmen kàn, qiánmian kāi guolai yì tiáo chuán!", "es": "¡Mirad, por delante viene una barca!" },
+        { "speaker": "雨果", "zh": "我们坐船环村一圈吧！", "py": "Wǒmen zuò chuán huán cūn yì quān ba!", "es": "¡Demos una vuelta al pueblo en barca!" },
+        { "speaker": "大卫", "zh": "好主意！我先把包拿下来，放在船上。", "py": "Hǎo zhǔyi! Wǒ xiān bǎ bāo ná xialai, fàng zài chuán shang.", "es": "¡Buena idea! Me quito primero la mochila y la dejo en la barca." },
+        { "speaker": "小李", "zh": "这些老房子都面对着河，真漂亮。", "py": "Zhèxiē lǎo fángzi dōu miànduìzhe hé, zhēn piàoliang.", "es": "Todas estas casas viejas dan al río: qué bonitas." },
+        { "speaker": "安娜", "zh": "别大声说话，你看那边写着：“公共场所，请安静”。", "py": "Bié dàshēng shuōhuà, nǐ kàn nàbian xiězhe: “Gōnggòng chǎngsuǒ, qǐng ānjìng”.", "es": "No habléis alto: mirad lo que pone allí: «Lugar público, guarden silencio»." },
+        { "speaker": "雨果", "zh": "下了船，我们走进村子去，买点儿小吃带回宿舍去。", "py": "Xià le chuán, wǒmen zǒujìn cūnzi qu, mǎi diǎnr xiǎochī dàihuí sùshè qu.", "es": "Al bajar de la barca, entramos en el pueblo y compramos algo de comer para llevarnos a la residencia." },
+        { "speaker": "大卫", "zh": "我已经想出来要买什么了：包子！", "py": "Wǒ yǐjīng xiǎng chulai yào mǎi shénme le: bāozi!", "es": "Yo ya sé lo que voy a comprar: ¡baozi!" }
+      ],
+      "notes": "Cerca de Shanghái hay varios **水乡** («pueblos del agua»), con canales, barcas y puentes de piedra de las dinastías Ming y Qing (明朝, 清朝). **广大** y **场所** son palabras de cartel: casi no se oyen en la conversación. Con el objeto delante con 把, el verbo nunca va solo: 把包**拿下来**, 把地图**展开**."
+    },
+    { "type": "exercises", "count": 20, "bank": ["g-lai-qu", "g-complements", "g-le", "g-word-order", "g-zai"] },
+    {
+      "type": "sentence-builder",
+      "title": "Construye la frase completa",
+      "items": [
+        { "sentence": { "slots": { "time0": { "zh": "上个星期六上午" }, "subject": { "zh": "我们" }, "with": { "zh": "跟小李一起" }, "verb1": { "zh": "走过" }, "object": { "zh": "那座明朝建成的老桥" }, "complement": { "zh": "去" }, "particle": { "zh": "了" } }, "end": "。", "es": "El sábado pasado por la mañana cruzamos con Xiao Li aquel puente antiguo de la dinastía Ming." }, "distractors": ["过去"] },
+        { "sentence": { "slots": { "subject": { "zh": "大卫" }, "time": { "zh": "刚才" }, "adverb": { "zh": "已经" }, "with": { "zh": "把我们的包" }, "verb1": { "zh": "拿上" }, "object": { "zh": "船" }, "complement": { "zh": "去" }, "particle": { "zh": "了" } }, "end": "。", "es": "David ya ha subido nuestras mochilas a la barca hace un momento." }, "distractors": ["被"] },
+        { "sentence": { "slots": { "place": { "zh": "村子前面的小河上" }, "verb1": { "zh": "慢慢地开过来了" }, "object": { "zh": "一条坐满了游客的船" } }, "end": "。", "es": "Por el riachuelo de delante del pueblo ha venido despacio una barca llena de turistas." }, "distractors": ["在"] },
+        { "sentence": { "slots": { "time0": { "zh": "回宿舍以后" }, "subject": { "zh": "雨果" }, "adverb": { "zh": "马上" }, "verb1": { "zh": "拿出" }, "object": { "zh": "在村子里买的小吃" }, "complement": { "zh": "来" } }, "end": "。", "es": "Al volver a la residencia, Hugo sacó enseguida la comida que había comprado en el pueblo." } },
+        { "sentence": { "slots": { "time0": { "zh": "那天晚上" }, "subject": { "zh": "安娜" }, "adverb": { "zh": "才" }, "verb1": { "zh": "想起" }, "object": { "zh": "那个村子的名字" }, "complement": { "zh": "来" }, "particle": { "zh": "了" } }, "end": "。", "es": "Aquella noche Ana no se acordó hasta tarde del nombre del pueblo." }, "distractors": ["记得"] },
+        { "sentence": { "slots": { "time0": { "zh": "明天下午" }, "subject": { "zh": "我们" }, "aux": { "zh": "要" }, "with": { "zh": "跟王老师一起" }, "verb1": { "zh": "坐地铁" }, "verb2": { "zh": "去" }, "object": { "zh": "那个有很多老桥的村子" } }, "end": "。", "es": "Mañana por la tarde vamos a ir en metro con la profesora Wang a ese pueblo de los puentes antiguos." } }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "我们先走过那座桥去吧。", "py": "Wǒmen xiān zǒuguò nà zuò qiáo qu ba.", "es": "Crucemos primero aquel puente." },
+        { "zh": "前面开过来一条船！", "py": "Qiánmian kāi guolai yì tiáo chuán!", "es": "¡Por delante viene una barca!" },
+        { "zh": "这些老房子都面对着河。", "py": "Zhèxiē lǎo fángzi dōu miànduìzhe hé.", "es": "Todas estas casas viejas dan al río." },
+        { "zh": "我想起来了！是明朝建成的。", "py": "Wǒ xiǎng qilai le! Shì Míngcháo jiànchéng de.", "es": "¡Ya me acuerdo! Se terminó en la dinastía Ming." },
+        { "zh": "我们买点儿小吃带回宿舍去。", "py": "Wǒmen mǎi diǎnr xiǎochī dàihuí sùshè qu.", "es": "Compremos algo de comer para llevárnoslo a la residencia." }
+      ],
+      "respond": [
+        { "q": { "zh": "那座桥是什么时候建成的？", "py": "Nà zuò qiáo shì shénme shíhou jiànchéng de?", "es": "¿Cuándo se construyó ese puente?" }, "model": { "zh": "是明朝建成的，很老了。", "py": "Shì Míngcháo jiànchéng de, hěn lǎo le.", "es": "En la dinastía Ming; es muy antiguo." } },
+        { "q": { "zh": "你看，前面开过来什么了？", "py": "Nǐ kàn, qiánmian kāi guolai shénme le?", "es": "Mira, ¿qué viene por delante?" }, "model": { "zh": "前面开过来一条船，我们坐船吧！", "py": "Qiánmian kāi guolai yì tiáo chuán, wǒmen zuò chuán ba!", "es": "Viene una barca, ¡subamos!" } },
+        { "q": { "zh": "你从村子里带回来什么了？", "py": "Nǐ cóng cūnzi li dài huilai shénme le?", "es": "¿Qué te has traído del pueblo?" }, "model": { "zh": "我带回来了很多小吃，还有一张老桥的照片。", "py": "Wǒ dài huilai le hěn duō xiǎochī, hái yǒu yì zhāng lǎo qiáo de zhàopiàn.", "es": "Me he traído un montón de comida y una foto del puente antiguo." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "El pueblo de los puentes",
+      "text": "星期六，雨果、安娜和大卫跟小李一起去了上海西边的一个老村子。从学校坐车去，一个小时内就到了。村子门口写着：“欢迎广大游客！”村内有很多桥，这些桥当中，最老的一座是明朝建成的。大卫把地图展开，想看看路线，小李说：“不用看，我想起来了，先走过这座桥去。”他们走上桥去，看见河两边的老房子都面对着河，非常漂亮。这时，前面开过来一条船。他们坐上船去，环村走了一圈。船上很安静，因为船上写着：“公共场所，请安静。”下了船，他们走进村子去，买了很多小吃。安娜说：“我们把这些小吃带回宿舍去吧！”晚上回到宿舍，大卫拿出手机来，给王老师看他拍的照片。王老师说：“下次我也要跟你们一起去！”",
+      "es": "El sábado Hugo, Ana y David fueron con Xiao Li a un pueblo antiguo al oeste de Shanghái. En coche desde la universidad, se llega en menos de una hora. En la entrada pone: «¡Bienvenidos, queridos visitantes!». Dentro del pueblo hay muchos puentes; de todos ellos, el más antiguo se terminó en la dinastía Ming. David desplegó el mapa para mirar la ruta, pero Xiao Li le dijo: «No hace falta, ya me acuerdo: primero cruzamos este puente». Subieron al puente y vieron que las casas viejas de las dos orillas daban todas al río: preciosas. En ese momento llegó una barca. Se subieron y dieron una vuelta al pueblo. En la barca había mucho silencio, porque en la barca ponía: «Lugar público, guarden silencio». Al bajar entraron en el pueblo y compraron un montón de comida. Ana dijo: «¡Llevémonos todo esto a la residencia!». Por la noche, en la residencia, David sacó el móvil para enseñarle a la profesora Wang las fotos que había hecho. Ella dijo: «¡La próxima vez voy yo también con vosotros!».",
+      "questions": [
+        { "q": "¿Cuánto se tarda desde la universidad?", "options": ["一个小时内", "两个小时", "半天"], "answer": 0 },
+        { "q": "¿Cuándo se terminó el puente más antiguo?", "options": ["明朝", "去年", "No lo dice"], "answer": 0 },
+        { "q": "¿Por qué había silencio en la barca?", "options": ["Por el cartel de lugar público", "Porque estaban cansados", "Porque llovía"], "answer": 0 },
+        { "q": "¿Qué sacó David en la residencia?", "options": ["手机", "地图", "小吃"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

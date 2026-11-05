@@ -1,0 +1,141 @@
+{
+  "id": "b1-u05-l1",
+  "title": "En cuanto llego a casa…: 一…就 para hábitos",
+  "zh": "我一到家就洗澡",
+  "goal": "Contar tus costumbres y reacciones automáticas con 一…就 («en cuanto…, enseguida…») y hablar de horarios y comidas del día.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "日常", "pinyin": "rìcháng", "es": "cotidiano, diario", "note": "日常生活 = la vida diaria; 日常习惯 = costumbres de cada día." },
+    { "hanzi": "通常", "pinyin": "tōngcháng", "es": "normalmente, por lo general", "note": "Va delante del verbo (o al principio): 我通常七点起床." },
+    { "hanzi": "往往", "pinyin": "wǎngwǎng", "es": "a menudo, suele pasar que", "note": "Para algo que suele ocurrir según la experiencia: 周末的地铁往往人很多. No sirve para planes: ✗ 我明天往往…" },
+    { "hanzi": "总", "pinyin": "zǒng", "es": "siempre (coloquial)", "note": "= 总是. 他总迟到 = siempre llega tarde." },
+    { "hanzi": "整天", "pinyin": "zhěngtiān", "es": "todo el día", "note": "整天在图书馆 = todo el día en la biblioteca." },
+    { "hanzi": "凉水", "pinyin": "liángshuǐ", "es": "agua fría (del tiempo, no caliente)", "note": "En China se bebe mucho 热水; pedir 凉水 sorprende a veces." },
+    { "hanzi": "顿", "pinyin": "dùn", "es": "(clasificador de comidas)", "note": "一天吃三顿饭 = hacer tres comidas al día." },
+    { "hanzi": "钟", "pinyin": "zhōng", "es": "reloj; (en la hora) en punto", "note": "七点钟 = las siete en punto." },
+    { "hanzi": "时", "pinyin": "shí", "es": "hora, momento (escrito)", "note": "Lo has visto en 时间 y 小时; solo, es más formal: 按时 (a su hora), 随时 (en cualquier momento)." },
+    { "hanzi": "久", "pinyin": "jiǔ", "es": "mucho tiempo", "note": "很久没… = hace mucho que no… ; 好久不见 = cuánto tiempo." },
+    { "hanzi": "空儿", "pinyin": "kòngr", "es": "rato libre, tiempo libre", "note": "有空儿 = tener un rato. Ojo: 空 aquí es cuarto tono (kòng)." },
+    { "hanzi": "理发", "pinyin": "lǐfà", "es": "cortarse el pelo", "note": "Verbo separable: 理了一次发. 理发店 = peluquería." },
+    { "hanzi": "随", "pinyin": "suí", "es": "seguir; como quieras", "note": "随时 = en cualquier momento; 随便 = como quieras." }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "我一到家就洗澡。", "py": "Wǒ yí dào jiā jiù xǐzǎo.", "es": "En cuanto llego a casa, me ducho." },
+        { "zh": "我一有空儿就去健身房。", "py": "Wǒ yì yǒu kòngr jiù qù jiànshēnfáng.", "es": "En cuanto tengo un rato libre, me voy al gimnasio." },
+        { "zh": "你一天吃几顿饭？", "py": "Nǐ yì tiān chī jǐ dùn fàn?", "es": "¿Cuántas comidas haces al día?" }
+      ]
+    },
+    { "type": "vocab", "title": "Hábitos y horarios", "words": ["日常", "通常", "往往", "总", "整天", "凉水", "顿", "钟", "时", "久", "空儿", "理发", "随"] },
+    {
+      "type": "phonetics-drill",
+      "title": "El 一 de 一…就 y la pausa tras la primera parte",
+      "markdown": "En 一…就, **一** cambia de tono según la sílaba que lo sigue (la regla de siempre, ahora dentro de una estructura):\n\n- delante de **cuarto tono** → **yí**: 一到家 *yí dào jiā*, 一下课 *yí xià kè*.\n- delante de **1.º, 2.º o 3.º** → **yì**: 一有空儿 *yì yǒu kòngr*, 一回家 *yì huí jiā*, 一起床 *yì qǐchuáng*.\n\n**Ritmo**: la primera parte (我一到家) se dice de un tirón, con una subida ligera al final, como un «en cuanto llego…» que se queda abierto; **就** arranca la segunda parte casi pegado y suena corto. Con un solo sujeto no se hace pausa larga: 我一到家就洗澡 sale en un solo soplo.\n\nY **往往** (3.º + 3.º): el primero se convierte en segundo tono, *wángwǎng*, aunque se escribe *wǎngwǎng*.",
+      "items": [
+        { "audio": "一到家就洗澡", "options": ["yí dào jiā", "yì dào jiā", "yī dào jiā"], "answer": 0, "explain": "到 es cuarto tono: 一 pasa a segundo (yí)." },
+        { "audio": "一有空儿", "options": ["yì yǒu kòngr", "yí yǒu kòngr", "yī yǒu kōngr"], "answer": 0, "explain": "有 es tercer tono: 一 se dice en cuarto (yì). 空儿 = kòngr." },
+        { "audio": "往往", "prompt": "¿Cómo suena el primer 往?", "options": ["Sube (2.º tono, por sandhi)", "Baja y sube (3.º completo)", "Cae (4.º tono)"], "answer": 0, "explain": "Dos terceros seguidos: el primero se dice como segundo." },
+        { "audio": "凉水", "options": ["liángshuǐ", "liǎngshuǐ", "liàngshuǐ"], "answer": 0, "explain": "凉 liáng (2.º, sube); no confundas con 两 liǎng." },
+        { "audio": "我一下课就去食堂。", "prompt": "¿Dónde sube un poco la voz antes de seguir?", "options": ["En 课, al final de la primera parte", "En 我, al principio", "En 堂, al final de la frase"], "answer": 0, "explain": "La primera parte queda «abierta» con una subida ligera; la frase termina bajando." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["顿", "常"],
+      "mnemonics": {
+        "顿": "屯 (da el sonido, tún → dùn) + 页 (cabeza): inclinar la cabeza hasta el suelo y pararse. De «parar» viene «una tanda»: 一顿饭, una comida entera de una sentada.",
+        "常": "尚 (arriba) + 巾 (tela): una tela larga que no se acaba, algo que dura siempre. De ahí 常常, 通常, 日常: lo de siempre."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "Sujeto + 一 + V1，(sujeto) + 就 + V2",
+      "markdown": "En a2-u12 viste **一…就** de pasada. Ahora lo usamos para lo que mejor hace: contar **costumbres y reacciones automáticas**.\n\n- **Costumbre**: 我一到家就洗澡 = cada vez que llego, me ducho enseguida.\n- **Algo que pasó una vez**: 他一看见我就笑了 = en cuanto me vio, se rio (con 了 al final).\n- **Dos sujetos**: 老师一说，我们就明白了. El segundo sujeto va **delante de 就**.\n\n一 y 就 son **adverbios**: los dos van detrás del sujeto y delante del verbo. **Convención** (la de la Etapa 2): una fila por cláusula; 一 y 就 en el hueco *Adverbios*. En «Construye la frase», la primera parte va entera en *Tiempo inicial*.\n\nCon adverbios nuevos de frecuencia: **通常** (normalmente), **往往** (suele pasar que…, por experiencia) y **总** (siempre).",
+      "focus": ["adverb"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "一", "py": "yí" }, "verb1": { "zh": "到家", "py": "dào jiā" } }, "end": "，", "es": "En cuanto llego a casa… (1.ª parte)", "esOrder": [{ "text": "En cuanto", "slot": "adverb" }, { "text": "llego a casa", "slot": "verb1" }, { "text": "(yo)", "slot": "subject" }] },
+        { "slots": { "adverb": { "zh": "就", "py": "jiù" }, "verb1": { "zh": "洗澡", "py": "xǐzǎo" } }, "end": "。", "es": "…me ducho. (2.ª parte)" },
+        { "slots": { "subject": { "zh": "老师", "py": "lǎoshī" }, "adverb": { "zh": "一", "py": "yì" }, "verb1": { "zh": "说", "py": "shuō" } }, "end": "，", "es": "En cuanto la profesora lo explica… (1.ª parte)" },
+        { "slots": { "subject": { "zh": "我们", "py": "wǒmen" }, "adverb": { "zh": "就", "py": "jiù" }, "verb1": { "zh": "明白了", "py": "míngbai le" } }, "end": "。", "es": "…lo entendemos. (2.ª parte, con otro sujeto)" },
+        { "slots": { "subject": { "zh": "雨果", "py": "Yǔguǒ" }, "adverb": { "zh": "一", "py": "yì" }, "verb1": { "zh": "有", "py": "yǒu" }, "object": { "zh": "空儿", "py": "kòngr" } }, "end": "，", "es": "En cuanto Hugo tiene un rato… (1.ª parte)" },
+        { "slots": { "adverb": { "zh": "就", "py": "jiù" }, "verb1": { "zh": "去健身房", "py": "qù jiànshēnfáng" } }, "end": "。", "es": "…se va al gimnasio. (2.ª parte)" }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "天", "py": "tiān" }, "adverb": { "zh": "一", "py": "yí" }, "verb1": { "zh": "下雨", "py": "xià yǔ" } }, "end": "，", "es": "En cuanto llueve… (1.ª parte)" },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "就不", "py": "jiù bù" }, "aux": { "zh": "想", "py": "xiǎng" }, "verb1": { "zh": "出去", "py": "chūqu" } }, "end": "。", "es": "…ya no me apetece salir. (2.ª parte: 不 detrás de 就)" }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "adverb": { "zh": "一", "py": "yí" }, "verb1": { "zh": "到家", "py": "dào jiā" } }, "end": "，", "es": "En cuanto llegas a casa… (1.ª parte)" },
+        { "slots": { "adverb": { "zh": "就", "py": "jiù" }, "verb1": { "zh": "做", "py": "zuò" }, "object": { "zh": "什么", "py": "shénme" } }, "end": "？", "es": "…¿qué es lo primero que haces?" }
+      ],
+      "mistakes": [
+        { "wrong": "我就一到家洗澡。", "right": "我一到家就洗澡。", "why": "一 va con la primera acción y 就 con la segunda; no se juntan delante del primer verbo." },
+        { "wrong": "一我起床就喝水。", "right": "我一起床就喝水。", "why": "一 es un adverbio: detrás del sujeto, delante del verbo." },
+        { "wrong": "我一天吃三个饭。", "right": "我一天吃三顿饭。", "why": "Las comidas se cuentan con 顿, no con 个." },
+        { "wrong": "我明天往往去健身房。", "right": "我明天去健身房。 / 我周末往往去健身房。", "why": "往往 resume lo que suele pasar según la experiencia; no sirve para un plan concreto." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Agua fría y peluquería",
+      "lines": [
+        { "speaker": "小李", "zh": "雨果，你每天早上通常几点钟起床？", "py": "Yǔguǒ, nǐ měi tiān zǎoshang tōngcháng jǐ diǎn zhōng qǐchuáng?", "es": "Hugo, ¿a qué hora te levantas normalmente por la mañana?" },
+        { "speaker": "雨果", "zh": "七点。我一起床就喝一杯凉水，然后去跑步。", "py": "Qī diǎn. Wǒ yì qǐchuáng jiù hē yì bēi liángshuǐ, ránhòu qù pǎobù.", "es": "A las siete. Nada más levantarme me bebo un vaso de agua fría y luego salgo a correr." },
+        { "speaker": "小李", "zh": "凉水？中国人往往喝热水，很少喝凉水。", "py": "Liángshuǐ? Zhōngguórén wǎngwǎng hē rèshuǐ, hěn shǎo hē liángshuǐ.", "es": "¿Agua fría? Los chinos solemos beber agua caliente; muy poca gente la bebe fría." },
+        { "speaker": "雨果", "zh": "我知道。在西班牙，我们总喝凉水，这是我的日常习惯。", "py": "Wǒ zhīdào. Zài Xībānyá, wǒmen zǒng hē liángshuǐ, zhè shì wǒ de rìcháng xíguàn.", "es": "Ya lo sé. En España siempre bebemos agua fría: es mi costumbre de cada día." },
+        { "speaker": "小李", "zh": "那你一天吃几顿饭？", "py": "Nà nǐ yì tiān chī jǐ dùn fàn?", "es": "¿Y cuántas comidas haces al día?" },
+        { "speaker": "雨果", "zh": "三顿。可是我一忙就忘了吃午饭。", "py": "Sān dùn. Kěshì wǒ yì máng jiù wàng le chī wǔfàn.", "es": "Tres. Pero en cuanto tengo lío, me olvido de comer." },
+        { "speaker": "小李", "zh": "这样不好。你不能整天学习，不吃饭。", "py": "Zhèyàng bù hǎo. Nǐ bù néng zhěngtiān xuéxí, bù chī fàn.", "es": "Eso no está bien. No puedes pasarte el día estudiando sin comer." },
+        { "speaker": "小李", "zh": "你今天下午有空儿吗？", "py": "Nǐ jīntiān xiàwǔ yǒu kòngr ma?", "es": "¿Tienes un rato esta tarde?" },
+        { "speaker": "雨果", "zh": "有。怎么了？", "py": "Yǒu. Zěnme le?", "es": "Sí. ¿Por qué?" },
+        { "speaker": "小李", "zh": "你的头发太长了。学校旁边有一家理发店，我们一起去理发吧。", "py": "Nǐ de tóufa tài cháng le. Xuéxiào pángbiān yǒu yì jiā lǐfàdiàn, wǒmen yìqǐ qù lǐfà ba.", "es": "Tienes el pelo demasiado largo. Al lado de la universidad hay una peluquería: vamos juntos a cortarnos el pelo." },
+        { "speaker": "雨果", "zh": "好啊！我很久没理发了。要等多长时间？", "py": "Hǎo a! Wǒ hěn jiǔ méi lǐfà le. Yào děng duō cháng shíjiān?", "es": "¡Vale! Hace mucho que no me corto el pelo. ¿Hay que esperar mucho?" },
+        { "speaker": "小李", "zh": "不用等，随时都可以去。老板一看见学生就便宜一点儿。", "py": "Bú yòng děng, suíshí dōu kěyǐ qù. Lǎobǎn yí kànjiàn xuésheng jiù piányi yìdiǎnr.", "es": "No hace falta esperar: puedes ir cuando quieras. Y en cuanto el dueño ve que eres estudiante, te lo deja un poco más barato." },
+        { "speaker": "雨果", "zh": "太好了！那我们一下课就去。", "py": "Tài hǎo le! Nà wǒmen yí xià kè jiù qù.", "es": "¡Genial! Entonces vamos en cuanto salgamos de clase." }
+      ],
+      "notes": "En China es costumbre beber agua caliente (热水) incluso en verano, y en los restaurantes te la sirven sin pedirla; si quieres agua fría, pide 凉水 o 冰水. 理发店 son baratas y muchas no piden cita: 随时都可以去. 很久没理发了 = «hace mucho que no me corto el pelo» (duración negativa de a2-u05)."
+    },
+    { "type": "exercises", "count": 16, "bank": ["g-word-order", "g-dates-time", "g-le"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "time0": { "zh": "我一起床，" }, "adverb": { "zh": "就" }, "verb1": { "zh": "喝" }, "object": { "zh": "一杯凉水" } }, "end": "。", "es": "Nada más levantarme me bebo un vaso de agua fría." }, "distractors": ["才"] },
+        { "sentence": { "slots": { "subject": { "zh": "中国人" }, "adverb": { "zh": "往往" }, "verb1": { "zh": "喝" }, "object": { "zh": "热水" } }, "end": "。", "es": "Los chinos suelen beber agua caliente." }, "distractors": ["明天"] },
+        { "sentence": { "slots": { "subject": { "zh": "我" }, "adverb": { "zh": "很久没" }, "verb1": { "zh": "理发" }, "particle": { "zh": "了" } }, "end": "。", "es": "Hace mucho que no me corto el pelo." }, "distractors": ["不"] },
+        { "sentence": { "slots": { "time0": { "zh": "他一忙，" }, "adverb": { "zh": "就" }, "verb1": { "zh": "忘了" }, "object": { "zh": "吃午饭" } }, "end": "。", "es": "En cuanto tiene lío, se olvida de comer." } },
+        { "sentence": { "slots": { "time0": { "zh": "今天下午我们一下课，" }, "adverb": { "zh": "就" }, "with": { "zh": "跟小李一起" }, "verb1": { "zh": "去学校旁边的理发店" }, "verb2": { "zh": "理发" } }, "end": "。", "es": "Esta tarde, en cuanto salgamos de clase, vamos con Xiao Li a cortarnos el pelo a la peluquería de al lado de la universidad." } }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "我一到家就洗澡。", "py": "Wǒ yí dào jiā jiù xǐzǎo.", "es": "En cuanto llego a casa, me ducho." },
+        { "zh": "我一有空儿就去健身房。", "py": "Wǒ yì yǒu kòngr jiù qù jiànshēnfáng.", "es": "En cuanto tengo un rato, me voy al gimnasio." },
+        { "zh": "我很久没理发了。", "py": "Wǒ hěn jiǔ méi lǐfà le.", "es": "Hace mucho que no me corto el pelo." },
+        { "zh": "中国人往往喝热水。", "py": "Zhōngguórén wǎngwǎng hē rèshuǐ.", "es": "Los chinos suelen beber agua caliente." }
+      ],
+      "respond": [
+        { "q": { "zh": "你通常几点钟起床？", "py": "Nǐ tōngcháng jǐ diǎn zhōng qǐchuáng?", "es": "¿A qué hora te levantas normalmente?" }, "model": { "zh": "我通常七点钟起床，一起床就喝一杯水。", "py": "Wǒ tōngcháng qī diǎn zhōng qǐchuáng, yì qǐchuáng jiù hē yì bēi shuǐ.", "es": "Normalmente me levanto a las siete y nada más levantarme me bebo un vaso de agua." } },
+        { "q": { "zh": "你一有空儿就做什么？", "py": "Nǐ yì yǒu kòngr jiù zuò shénme?", "es": "¿Qué haces en cuanto tienes un rato libre?" }, "model": { "zh": "我一有空儿就去跑步。", "py": "Wǒ yì yǒu kòngr jiù qù pǎobù.", "es": "En cuanto tengo un rato, salgo a correr." } },
+        { "q": { "zh": "你一天吃几顿饭？", "py": "Nǐ yì tiān chī jǐ dùn fàn?", "es": "¿Cuántas comidas haces al día?" }, "model": { "zh": "我一天吃三顿饭，可是午饭往往吃得很晚。", "py": "Wǒ yì tiān chī sān dùn fàn, kěshì wǔfàn wǎngwǎng chī de hěn wǎn.", "es": "Hago tres comidas, pero suelo comer muy tarde." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Un día normal de Hugo",
+      "text": "雨果的日常生活是这样的：他通常七点钟起床，一起床就喝一杯凉水，然后去跑步。跑完步，他就去食堂吃早饭。中国同学往往喝热水，他们一看见雨果喝凉水就说：“你不冷吗？”雨果一天吃三顿饭，可是他一忙就忘了吃午饭。上午他总在教室上课，下午往往去图书馆学习。小李说他不能整天学习，应该多休息。雨果一有空儿就给家里打电话，跟妈妈说说上海的生活。最近他的头发太长了，他很久没理发了。学校旁边有一家理发店，学生随时都可以去，不用等。老板很友好，一看见学生就便宜一点儿。今天下午雨果一下课就跟小李一起去理发。他觉得在上海生活越来越方便了。",
+      "es": "La vida diaria de Hugo es así: normalmente se levanta a las siete, nada más levantarse se bebe un vaso de agua fría y luego sale a correr. Después de correr va al comedor a desayunar. Los compañeros chinos suelen beber agua caliente, y en cuanto ven a Hugo bebiendo agua fría le dicen: «¿No tienes frío?». Hugo hace tres comidas al día, pero en cuanto tiene lío se olvida de comer. Por la mañana siempre está en clase y por la tarde suele ir a estudiar a la biblioteca. Xiao Li le dice que no puede pasarse el día estudiando, que tiene que descansar más. En cuanto Hugo tiene un rato, llama a casa y le cuenta a su madre cómo es la vida en Shanghái. Últimamente tiene el pelo demasiado largo: hace mucho que no se lo corta. Al lado de la universidad hay una peluquería: los estudiantes pueden ir cuando quieran, sin esperar. El dueño es muy amable y, en cuanto ve que eres estudiante, te lo deja un poco más barato. Esta tarde, en cuanto salga de clase, Hugo irá con Xiao Li a cortarse el pelo. Le parece que vivir en Shanghái es cada vez más cómodo.",
+      "questions": [
+        { "q": "¿Qué hace Hugo nada más levantarse?", "options": ["喝一杯凉水", "吃早饭", "给妈妈打电话"], "answer": 0 },
+        { "q": "¿Qué le pasa cuando tiene mucho lío?", "options": ["忘了吃午饭", "不想跑步", "去理发"], "answer": 0 },
+        { "q": "¿Dónde suele estar Hugo por la tarde?", "options": ["图书馆", "教室", "理发店"], "answer": 0 },
+        { "q": "¿Hace falta esperar en la peluquería?", "options": ["No, se puede ir cuando quieras", "Sí, mucho", "Hay que pedir cita"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

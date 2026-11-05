@@ -41,6 +41,8 @@ export function activeSpec(): { spec: AnkiModelSpec; lang: Lang; categoryNames: 
   const pack = getActivePack();
   const names: string[] = [];
   for (const w of pack.seed.words) if (!names.includes(w.category)) names.push(w.category);
+  // categorías añadidas por el temario (se numeran detrás de las de la semilla; «Clase» va a Mis palabras)
+  for (const c of Object.keys(pack.categories)) if (c !== "Clase" && !names.includes(c)) names.push(c);
   return { spec: pack.anki, lang: pack.id, categoryNames: names };
 }
 

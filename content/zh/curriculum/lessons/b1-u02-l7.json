@@ -1,0 +1,145 @@
+{
+  "id": "b1-u02-l7",
+  "title": "¿De quién es la culpa? Repaso de la unidad: 被, 叫 / 让 y 把",
+  "zh": "你的电脑叫我弄坏了",
+  "goal": "Repasar la pasiva (被, 被 sin agente, 叫 / 让, 没被) y contrastarla con 把 para contar un contratiempo, decir de quién es la responsabilidad y cómo evitarlo.",
+  "minutes": 16,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "后果", "pinyin": "hòuguǒ", "es": "consecuencia (casi siempre mala)" },
+    { "hanzi": "造成", "pinyin": "zàochéng", "es": "causar, provocar (algo malo)", "note": "造成麻烦 = causar problemas." },
+    { "hanzi": "责任", "pinyin": "zérèn", "es": "responsabilidad, culpa", "note": "这是我的责任 = es culpa mía, me hago responsable." },
+    { "hanzi": "错误", "pinyin": "cuòwù", "es": "error, equivocación" },
+    { "hanzi": "风险", "pinyin": "fēngxiǎn", "es": "riesgo" },
+    { "hanzi": "危害", "pinyin": "wēihài", "es": "daño, perjuicio; dañar" },
+    { "hanzi": "防", "pinyin": "fáng", "es": "protegerse de, prevenir", "note": "防小偷 = protegerse de los ladrones." },
+    { "hanzi": "防止", "pinyin": "fángzhǐ", "es": "evitar, impedir (que pase algo malo)" },
+    { "hanzi": "预防", "pinyin": "yùfáng", "es": "prevenir (con antelación)" },
+    { "hanzi": "保", "pinyin": "bǎo", "es": "garantizar; proteger, conservar", "note": "Coloquial: 我保你没事 = te garantizo que no te pasa nada. En compuestos: 保险, 保护." },
+    { "hanzi": "失去", "pinyin": "shīqù", "es": "perder (algo valioso: un amigo, la oportunidad…)", "note": "Más abstracto que 丢: 失去机会, 失去朋友." },
+    { "hanzi": "考验", "pinyin": "kǎoyàn", "es": "prueba (dura); poner a prueba" },
+    { "hanzi": "吵架", "pinyin": "chǎojià", "es": "discutir, pelearse (de palabra)" }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "对不起，你的电脑叫我弄坏了，这是我的责任。", "py": "Duìbuqǐ, nǐ de diànnǎo jiào wǒ nònghuài le, zhè shì wǒ de zérèn.", "es": "Perdona, te he estropeado el ordenador: es culpa mía." },
+        { "zh": "为了防止东西被偷，我们要把门关好。", "py": "Wèile fángzhǐ dōngxi bèi tōu, wǒmen yào bǎ mén guānhǎo.", "es": "Para evitar que nos roben, hay que cerrar bien la puerta." },
+        { "zh": "你们别吵架了，吵架也没用。", "py": "Nǐmen bié chǎojià le, chǎojià yě méi yòng.", "es": "Dejad de discutir: discutir no sirve de nada." }
+      ]
+    },
+    { "type": "vocab", "title": "Culpas y prevención", "words": ["后果", "造成", "责任", "错误", "风险", "危害", "防", "防止", "预防", "保", "失去", "考验", "吵架"] },
+    {
+      "type": "phonetics-drill",
+      "title": "Frases largas: la pausa de la coma y 不 / 一",
+      "markdown": "En B1 las frases se alargan. Dos claves para que suenen naturales:\n\n1. **Pausa en la coma, subida antes de ella**: en 为了防止东西被偷，| 我们要把门关好, la primera parte termina un poco **alta** (anuncia que falta algo) y la segunda **cae** al final.\n2. **Bloques con 被 / 把**: se dicen de un tirón: 被小偷偷走了, 把门关好.\n\nY los cambios de **不** y **一** que salen en frases de culpa: 不是故意的 → *bú shì gùyì de*; 不小心 → *bù xiǎoxīn* (sin cambio); 一定 → *yídìng*; 一起 → *yìqǐ*.\n\nPalabras de hoy: **吵架 chǎojià** (ch aspirada), **责任 zérèn** (z sin aire + r), **风险 fēngxiǎn**.",
+      "items": [
+        { "audio": "我不是故意的。", "options": ["Wǒ bú shì gùyì de.", "Wǒ bù shì gùyì de.", "Wǒ bú shì gùyí de."], "answer": 0, "explain": "不 delante de cuarto tono → bú." },
+        { "audio": "不小心", "options": ["bù xiǎoxīn", "bú xiǎoxīn", "bù xiāoxīn"], "answer": 0, "explain": "Delante de tercer tono, 不 se queda en bù." },
+        { "audio": "为了防止东西被偷，我们要把门关好。", "prompt": "¿Dónde está la pausa natural?", "options": ["Después de 被偷", "Después de 为了", "Después de 我们要"], "answer": 0, "explain": "En la coma: primero el fin (为了…), luego la acción." },
+        { "audio": "吵架", "options": ["chǎojià", "cǎojià", "chǎoxià"], "answer": 0, "explain": "ch retrofleja y aspirada; j sin aire." },
+        { "audio": "责任", "options": ["zérèn", "zhérèn", "zérén"], "answer": 0, "explain": "z sin aire, con la lengua detrás de los dientes; 任 cuarto tono." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["防", "责"],
+      "mnemonics": {
+        "防": "阝 (a la izquierda: colina, muro de tierra) + 方 (da el sonido): levantar un muro de tierra contra el agua o el enemigo. Protegerse: 防小偷, 预防, 防止.",
+        "责": "Arriba, una planta espinosa (龶); abajo, 贝 (concha, dinero): la deuda que pincha hasta que la pagas. Lo que debes: 责任."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "Repaso: todo lo de la unidad en el mismo hueco",
+      "markdown": "Toda la unidad cabe en el hueco **Con quién** (la misma convención que el 把 de la unidad 1):\n\n| Hueco *Con quién* | Cuándo | Ejemplo |\n|---|---|---|\n| 被 + agente | lo afectado es el tema | 皮包**被小偷**偷走了 |\n| 被 (solo) | no se sabe / no importa quién | 门**被**破坏了 |\n| 叫 / 让 + agente | coloquial; agente obligatorio | 电脑**叫大卫**弄坏了 |\n| 把 + objeto | hablas de quien actúa | 大卫**把电脑**弄坏了 |\n\nRecuerda las cuatro reglas:\n\n1. **El verbo nunca va solo**: 了, resultado (坏, 走, 住), 到 / 在 + lugar o 得 + estado.\n2. **Adverbios y auxiliares delante**: 没被, 已经被, 不会被, 别被.\n3. **Sin 被** los verbos de estado o intransitivos: 丢了, 死了, 消失了, 受伤了, 感冒了.\n4. **造成** suele ir con consecuencias malas: 造成麻烦, 造成危害.",
+      "focus": ["with"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "小李的电脑", "py": "Xiǎo Lǐ de diànnǎo" }, "with": { "zh": "叫大卫", "py": "jiào Dàwèi" }, "verb1": { "zh": "弄坏", "py": "nònghuài" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "David le ha estropeado el ordenador a Xiao Li.", "esOrder": [{ "text": "David", "slot": "with" }, { "text": "le ha estropeado", "slot": "verb1" }, { "text": "el ordenador a Xiao Li", "slot": "subject" }] },
+        { "slots": { "subject": { "zh": "大卫", "py": "Dàwèi" }, "with": { "zh": "把小李的电脑", "py": "bǎ Xiǎo Lǐ de diànnǎo" }, "verb1": { "zh": "弄坏", "py": "nònghuài" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "David ha estropeado el ordenador de Xiao Li." },
+        { "slots": { "subject": { "zh": "我们宿舍的门", "py": "wǒmen sùshè de mén" }, "with": { "zh": "被人", "py": "bèi rén" }, "verb1": { "zh": "破坏", "py": "pòhuài" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Alguien ha forzado la puerta de nuestra residencia." },
+        { "slots": { "subject": { "zh": "这个错误", "py": "zhège cuòwù" }, "verb1": { "zh": "造成了", "py": "zàochéng le" }, "object": { "zh": "很大的麻烦", "py": "hěn dà de máfan" } }, "end": "。", "es": "Este error ha causado muchos problemas." },
+        { "slots": { "subject": { "zh": "那个小偷", "py": "nà ge xiǎotōu" }, "adverb": { "zh": "已经", "py": "yǐjīng" }, "with": { "zh": "被大家", "py": "bèi dàjiā" }, "verb1": { "zh": "送到", "py": "sòngdào" }, "object": { "zh": "警察那儿", "py": "jǐngchá nàr" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Ya han entregado al ladrón a la policía." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "小李的作业", "py": "Xiǎo Lǐ de zuòyè" }, "adverb": { "zh": "没", "py": "méi" }, "with": { "zh": "被", "py": "bèi" }, "verb1": { "zh": "弄丢", "py": "nòngdiū" } }, "end": "。", "es": "Los deberes de Xiao Li no se han perdido." },
+        { "slots": { "subject": { "zh": "你们", "py": "nǐmen" }, "adverb": { "zh": "别", "py": "bié" }, "verb1": { "zh": "吵架", "py": "chǎojià" }, "particle": { "zh": "了", "py": "le" } }, "end": "！", "es": "¡Dejad de discutir!" }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "小李的电脑", "py": "Xiǎo Lǐ de diànnǎo" }, "with": { "zh": "被谁", "py": "bèi shéi" }, "verb1": { "zh": "弄坏", "py": "nònghuài" }, "particle": { "zh": "了", "py": "le" } }, "end": "？", "es": "¿Quién le ha estropeado el ordenador a Xiao Li?" },
+        { "slots": { "subject": { "zh": "这个责任", "py": "zhège zérèn" }, "verb1": { "zh": "是", "py": "shì" }, "object": { "zh": "谁的", "py": "shéi de" } }, "end": "？", "es": "¿De quién es la responsabilidad?" }
+      ],
+      "mistakes": [
+        { "wrong": "电脑叫弄坏了。", "right": "电脑叫大卫弄坏了。 / 电脑被弄坏了。", "why": "叫 / 让 necesitan agente; sin agente, 被." },
+        { "wrong": "我的作业被没弄丢。", "right": "我的作业没被弄丢。", "why": "没 va delante de 被." },
+        { "wrong": "大卫把电脑弄。", "right": "大卫把电脑弄坏了。", "why": "Con 把 y con 被 el verbo necesita un resultado o 了 detrás." },
+        { "wrong": "我被丢了钥匙。", "right": "我的钥匙丢了。 / 我把钥匙弄丢了。", "why": "丢 no lleva 被; si quieres decir que fuiste tú, usa 把 + 弄丢." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Una pelea en la residencia",
+      "lines": [
+        { "speaker": "大卫", "zh": "小李，对不起，你的电脑叫我弄坏了。", "py": "Xiǎo Lǐ, duìbuqǐ, nǐ de diànnǎo jiào wǒ nònghuài le.", "es": "Xiao Li, lo siento, te he estropeado el ordenador." },
+        { "speaker": "小李", "zh": "什么？我明天要用它交作业！", "py": "Shénme? Wǒ míngtiān yào yòng tā jiāo zuòyè!", "es": "¿Qué? ¡Mañana tengo que entregar los deberes con él!" },
+        { "speaker": "大卫", "zh": "我不是故意的。我不小心把咖啡放在了电脑旁边，杯子倒了。", "py": "Wǒ bú shì gùyì de. Wǒ bù xiǎoxīn bǎ kāfēi fàng zài le diànnǎo pángbiān, bēizi dǎo le.", "es": "No lo he hecho a propósito. Sin querer dejé el café al lado del ordenador y se volcó el vaso." },
+        { "speaker": "小李", "zh": "你知道这样做的后果吗？我的作业都在里面！", "py": "Nǐ zhīdào zhèyàng zuò de hòuguǒ ma? Wǒ de zuòyè dōu zài lǐmiàn!", "es": "¿Sabes las consecuencias? ¡Tengo todos los deberes ahí dentro!" },
+        { "speaker": "大卫", "zh": "你为什么不把作业保存在别的地方？", "py": "Nǐ wèishénme bù bǎ zuòyè bǎocún zài bié de dìfang?", "es": "¿Y por qué no guardas los deberes en otro sitio?" },
+        { "speaker": "小李", "zh": "现在是我的错误吗？", "py": "Xiànzài shì wǒ de cuòwù ma?", "es": "¿Ahora resulta que el error es mío?" },
+        { "speaker": "雨果", "zh": "你们别吵架了，吵架也没用。我们想想怎么解决吧。", "py": "Nǐmen bié chǎojià le, chǎojià yě méi yòng. Wǒmen xiǎngxiang zěnme jiějué ba.", "es": "Dejad de discutir, que no sirve de nada. Pensemos cómo solucionarlo." },
+        { "speaker": "大卫", "zh": "你说得对。这是我的责任，我亲自把电脑送去修，钱我来付。", "py": "Nǐ shuō de duì. Zhè shì wǒ de zérèn, wǒ qīnzì bǎ diànnǎo sòng qu xiū, qián wǒ lái fù.", "es": "Tienes razón. Es culpa mía: llevo yo mismo el ordenador a arreglar y lo pago yo." },
+        { "speaker": "雨果", "zh": "学校旁边有一个修电脑的地方，很快。", "py": "Xuéxiào pángbiān yǒu yí ge xiū diànnǎo de dìfang, hěn kuài.", "es": "Al lado de la universidad hay un sitio donde arreglan ordenadores, y son rápidos." },
+        { "speaker": "大卫", "zh": "那儿的人说：“我保你明天就能用，作业也没被弄丢。”", "py": "Nàr de rén shuō: “Wǒ bǎo nǐ míngtiān jiù néng yòng, zuòyè yě méi bèi nòngdiū.”", "es": "El de la tienda me ha dicho: «Te garantizo que mañana ya lo puedes usar y que los deberes no se han perdido»." },
+        { "speaker": "小李", "zh": "那太好了。对不起，我刚才太着急了。", "py": "Nà tài hǎo le. Duìbuqǐ, wǒ gāngcái tài zháojí le.", "es": "Pues genial. Perdona, me he puesto demasiado nervioso." },
+        { "speaker": "大卫", "zh": "没关系。我也不想因为一台电脑失去一个好朋友。", "py": "Méi guānxi. Wǒ yě bù xiǎng yīnwèi yì tái diànnǎo shīqù yí ge hǎo péngyou.", "es": "No pasa nada. Yo tampoco quiero perder a un buen amigo por un ordenador." },
+        { "speaker": "雨果", "zh": "为了防止这样的事，以后咖啡千万别放在电脑旁边！", "py": "Wèile fángzhǐ zhèyàng de shì, yǐhòu kāfēi qiānwàn bié fàng zài diànnǎo pángbiān!", "es": "Para que no vuelva a pasar, ¡nunca más el café al lado del ordenador!" },
+        { "speaker": "小李", "zh": "这次真是对我们的一个考验！", "py": "Zhè cì zhēn shì duì wǒmen de yí ge kǎoyàn!", "es": "¡Esta vez sí que ha sido una prueba para nuestra amistad!" }
+      ],
+      "notes": "Fíjate en cómo cambia la frase según quién habla: David, que se disculpa, dice 你的电脑叫我弄坏了 (empieza por lo afectado, el ordenador de Xiao Li); contándolo desde fuera, Hugo diría 大卫把小李的电脑弄坏了. 这是我的责任 es la forma clara de asumir la culpa. 故意 = a propósito; 不是故意的 = sin querer."
+    },
+    { "type": "exercises", "count": 20, "bank": ["g-le", "g-complements", "g-word-order", "g-bu-mei", "g-lai-qu"] },
+    {
+      "type": "sentence-builder",
+      "title": "Construye la frase completa",
+      "items": [
+        { "sentence": { "slots": { "time0": { "zh": "上个星期五下午" }, "subject": { "zh": "雨果的皮包和身份证" }, "adverb": { "zh": "都" }, "with": { "zh": "被一个小偷" }, "verb1": { "zh": "偷走" }, "particle": { "zh": "了" } }, "end": "。", "es": "El viernes pasado por la tarde un ladrón le robó a Hugo el bolso y el DNI." }, "distractors": ["把"] },
+        { "sentence": { "slots": { "time0": { "zh": "因为路叫一个事故堵住了，" }, "subject": { "zh": "王老师" }, "adverb": { "zh": "只好" }, "with": { "zh": "把考试的时间" }, "verb1": { "zh": "改到" }, "object": { "zh": "下午" } }, "end": "。", "es": "Como un accidente había cortado la calle, la profesora Wang no tuvo más remedio que pasar el examen a la tarde." } },
+        { "sentence": { "slots": { "subject": { "zh": "那个受伤的人" }, "time": { "zh": "昨天下午" }, "adverb": { "zh": "已经" }, "with": { "zh": "被救护车" }, "verb1": { "zh": "送到" }, "object": { "zh": "学校旁边的医院" }, "particle": { "zh": "了" } }, "end": "。", "es": "Ayer por la tarde la ambulancia ya había llevado al herido al hospital de al lado de la universidad." }, "distractors": ["在"] },
+        { "sentence": { "slots": { "subject": { "zh": "小李的电脑和作业" }, "time": { "zh": "昨天晚上" }, "adverb": { "zh": "差点儿" }, "with": { "zh": "叫大卫" }, "verb1": { "zh": "弄坏" }, "particle": { "zh": "了" } }, "end": "。", "es": "Anoche David por poco le estropea a Xiao Li el ordenador y los deberes." } },
+        { "sentence": { "slots": { "time0": { "zh": "如果护照被偷了，" }, "subject": { "zh": "你" }, "adverb": { "zh": "就" }, "aux": { "zh": "要" }, "verb1": { "zh": "亲自去大使馆" }, "verb2": { "zh": "办理" }, "object": { "zh": "相关的手续" } }, "end": "。", "es": "Si te roban el pasaporte, tienes que ir en persona a la embajada a hacer los trámites correspondientes." } },
+        { "sentence": { "slots": { "time0": { "zh": "为了防止东西被偷，" }, "subject": { "zh": "我们" }, "time": { "zh": "每天晚上" }, "adverb": { "zh": "都" }, "with": { "zh": "把自行车" }, "verb1": { "zh": "放在" }, "object": { "zh": "宿舍里面" } }, "end": "。", "es": "Para evitar que nos las roben, todas las noches dejamos las bicis dentro de la residencia." } },
+        { "sentence": { "slots": { "subject": { "zh": "我的签证" }, "adverb": { "zh": "还没" }, "with": { "zh": "被大使馆" }, "verb1": { "zh": "批准" } }, "end": "。", "es": "La embajada todavía no me ha aprobado el visado." }, "distractors": ["了"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "对不起，这是我的责任。", "py": "Duìbuqǐ, zhè shì wǒ de zérèn.", "es": "Lo siento, es culpa mía." },
+        { "zh": "我不是故意的。", "py": "Wǒ bú shì gùyì de.", "es": "No lo he hecho a propósito." },
+        { "zh": "你们别吵架了，吵架也没用。", "py": "Nǐmen bié chǎojià le, chǎojià yě méi yòng.", "es": "Dejad de discutir: no sirve de nada." },
+        { "zh": "为了防止东西被偷，我们要把门关好。", "py": "Wèile fángzhǐ dōngxi bèi tōu, wǒmen yào bǎ mén guānhǎo.", "es": "Para evitar que nos roben, hay que cerrar bien la puerta." },
+        { "zh": "这个错误造成了很大的麻烦。", "py": "Zhège cuòwù zàochéng le hěn dà de máfan.", "es": "Este error ha causado muchos problemas." }
+      ],
+      "respond": [
+        { "q": { "zh": "你的电脑怎么了？", "py": "Nǐ de diànnǎo zěnme le?", "es": "¿Qué le ha pasado a tu ordenador?" }, "model": { "zh": "我的电脑叫大卫弄坏了，可是作业没被弄丢。", "py": "Wǒ de diànnǎo jiào Dàwèi nònghuài le, kěshì zuòyè méi bèi nòngdiū.", "es": "David me lo ha estropeado, pero no se han perdido los deberes." } },
+        { "q": { "zh": "这是谁的责任？", "py": "Zhè shì shéi de zérèn?", "es": "¿De quién es la culpa?" }, "model": { "zh": "这是我的责任，我来解决。", "py": "Zhè shì wǒ de zérèn, wǒ lái jiějué.", "es": "Es culpa mía; yo lo soluciono." } },
+        { "q": { "zh": "怎么防小偷？", "py": "Zěnme fáng xiǎotōu?", "es": "¿Cómo te proteges de los ladrones?" }, "model": { "zh": "在地铁上，我把皮包放在前面。", "py": "Zài dìtiě shang, wǒ bǎ píbāo fàng zài qiánmiàn.", "es": "En el metro llevo el bolso delante." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Consejos de seguridad para estudiantes internacionales",
+      "text": "留学生的安全小知识：在一个新的城市生活，有很多风险。去年，我们学校有二十多个留学生的东西被偷了，还有几个人的证件被弄丢了，给他们造成了很大的麻烦。为了防止这样的事，请大家注意下面几点。第一，在地铁上和公共汽车上要防小偷，最好把皮包放在前面，手机别放在后面。第二，千万别把身份证、护照和银行卡放在一起，如果皮包被偷了，你就会失去所有的证件。第三，离开宿舍的时候，一定要把门关好。第四，不要把密码告诉别人，这样可以预防很多问题。如果东西被偷了，要立刻报警，然后给学校打电话。安全是每个人的责任，一个小错误可能会有很大的后果。来中国学习是一个考验，我们希望大家都能平安、开心！",
+      "es": "Consejos de seguridad para estudiantes internacionales: vivir en una ciudad nueva tiene muchos riesgos. El año pasado, a más de veinte estudiantes internacionales de nuestra universidad les robaron cosas y algunos perdieron la documentación, lo que les causó muchos problemas. Para evitarlo, tened en cuenta lo siguiente. Primero: en el metro y en el autobús, cuidado con los carteristas; lo mejor es llevar el bolso delante y no llevar el móvil en el bolsillo de atrás. Segundo: nunca guardéis juntos el DNI, el pasaporte y la tarjeta del banco; si os roban el bolso, perderéis todos los documentos. Tercero: al salir de la residencia, cerrad siempre bien la puerta. Cuarto: no le deis vuestras contraseñas a nadie; así se previenen muchos problemas. Si os roban algo, avisad inmediatamente a la policía y luego llamad a la universidad. La seguridad es responsabilidad de todos, y un pequeño error puede tener grandes consecuencias. Venir a estudiar a China es una prueba: ¡esperamos que todos estéis sanos, salvos y contentos!",
+      "questions": [
+        { "q": "¿Cuántos estudiantes sufrieron robos el año pasado?", "options": ["二十多个", "两个", "一百个"], "answer": 0 },
+        { "q": "¿Qué no hay que guardar juntos?", "options": ["身份证、护照和银行卡", "手机和钥匙", "书和电脑"], "answer": 0 },
+        { "q": "¿Qué hay que hacer primero si te roban?", "options": ["立刻报警", "给妈妈打电话", "去大使馆"], "answer": 0 },
+        { "q": "Según el texto, ¿de quién es responsabilidad la seguridad?", "options": ["De todos", "Solo de la policía", "Solo de la universidad"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

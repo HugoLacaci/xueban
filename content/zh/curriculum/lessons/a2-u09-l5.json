@@ -1,0 +1,146 @@
+{
+  "id": "a2-u09-l5",
+  "title": "Noche de luna y estrellas: repaso de la unidad",
+  "zh": "月亮已经出来了",
+  "goal": "Combinar 越来越, 已经, 还没, 刚 / 刚才, 马上, 一直, 都…了, 就 y 还是…吧 para contar una noche de invierno.",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "月亮", "pinyin": "yuèliang", "es": "luna", "note": "亮 neutro. El 月 de los meses viene de este dibujo de la luna." },
+    { "hanzi": "星星", "pinyin": "xīngxing", "es": "estrella", "note": "La segunda sílaba es neutra." },
+    { "hanzi": "越来越", "pinyin": "yuèláiyuè", "es": "cada vez más", "note": "Repaso de la lección 1." },
+    { "hanzi": "变", "pinyin": "biàn", "es": "cambiar; volverse", "note": "Repaso de la lección 1." },
+    { "hanzi": "已经", "pinyin": "yǐjīng", "es": "ya", "note": "Repaso de la lección 2." },
+    { "hanzi": "还", "pinyin": "hái", "es": "todavía", "note": "Repaso de la lección 2: 还没…呢." },
+    { "hanzi": "极了", "pinyin": "jí le", "es": "muchísimo", "note": "Repaso de la lección 2." },
+    { "hanzi": "刚", "pinyin": "gāng", "es": "acabar de", "note": "Repaso de la lección 3." },
+    { "hanzi": "刚才", "pinyin": "gāngcái", "es": "hace un momento", "note": "Repaso de la lección 3." },
+    { "hanzi": "马上", "pinyin": "mǎshàng", "es": "enseguida", "note": "Repaso de la lección 3." },
+    { "hanzi": "一直", "pinyin": "yìzhí", "es": "todo el rato, sin parar", "note": "Repaso de la lección 3." },
+    { "hanzi": "就", "pinyin": "jiù", "es": "justo, precisamente", "note": "Repaso de la lección 4." },
+    { "hanzi": "还是", "pinyin": "háishi", "es": "mejor (还是…吧)", "note": "Repaso de la lección 4." }
+  ],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "天上的星星越来越多了。", "py": "Tiān shang de xīngxing yuèláiyuè duō le.", "es": "Cada vez hay más estrellas en el cielo." },
+        { "zh": "都十一点了，我们还是回去吧。", "py": "Dōu shíyī diǎn le, wǒmen háishi huíqu ba.", "es": "Ya son las once: mejor volvemos." },
+        { "zh": "月亮刚出来，我马上拍一张照片。", "py": "Yuèliang gāng chūlai, wǒ mǎshàng pāi yì zhāng zhàopiàn.", "es": "La luna acaba de salir: le hago una foto ahora mismo." }
+      ]
+    },
+    { "type": "vocab", "title": "La luna, las estrellas y el repaso de la unidad", "words": ["月亮", "星星", "越来越", "变", "已经", "还", "极了", "刚", "刚才", "马上", "一直", "就", "还是"] },
+    {
+      "type": "phonetics-drill",
+      "title": "Frases de dos partes: pausa, bajada y tonos neutros",
+      "markdown": "Repaso de la unidad en voz alta:\n\n- **Frases de dos partes** (都十一点了，我们还是回去吧): pausa corta en la coma; la primera parte queda **un poco en alto** (anuncia que sigue algo) y la segunda **baja** al final. El 吧 es corto y suave.\n- **Tonos neutros**: 月亮 *yuèliang*, 星星 *xīngxing*, 还是 *háishi*, 暖和 *nuǎnhuo*.\n- **一 y 不**: 一张 *yì zhāng*, 一个 *yí ge*, 不太冷 *bú tài lěng*, 不一会儿 *bù yíhuìr*.",
+      "items": [
+        { "audio": "星星", "options": ["xīngxing", "xīnxin", "xíngxing"], "answer": 0, "explain": "Final -ing (nasal de atrás) y segunda sílaba neutra." },
+        { "audio": "月亮", "options": ["yuèliang", "yuèliáng", "yuèlàng"], "answer": 0, "explain": "亮 aquí es neutro." },
+        { "audio": "一张照片", "options": ["yì zhāng zhàopiàn", "yí zhāng zhàopiàn", "yī zhāng zhàopiàn"], "answer": 0, "explain": "张 es 1.er tono: 一 pasa a yì." },
+        { "audio": "不太冷", "options": ["bú tài lěng", "bù tài lěng", "bǔ tài lěng"], "answer": 0, "explain": "太 es 4.º tono: 不 pasa a bú." },
+        { "audio": "都十一点了，我们还是回去吧。", "prompt": "¿Cómo se dice bien?", "options": ["Pausa en la coma; la segunda parte baja y 吧 suena corto", "Sin pausa y subiendo al final", "Pausa detrás de 我们"], "answer": 0, "explain": "Dos cláusulas = dos golpes de voz; la propuesta con 吧 no sube como una pregunta." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["星"],
+      "mnemonics": {
+        "星": "日 (sol, astro) + 生 (nacer): los pequeños astros que «nacen» en el cielo cada noche. Antes se escribía con tres 日 arriba: un cielo lleno de estrellas."
+      }
+    },
+    {
+      "type": "explain",
+      "title": "La unidad en una tabla",
+      "markdown": "| Quiero decir… | Estructura | Ejemplo |\n|---|---|---|\n| cada vez más | S + **越来越** + adj / V (+ 了) | 星星**越来越**多了。 |\n| cambiar, volverse | **变** + adj · **变成** + N | 天**变**黑了。 雨**变成**了雪。 |\n| ya | **已经** / **早就** + V + **了** | 月亮**已经**出来了。 |\n| todavía no | **还没** + V (+ 呢) | 月亮**还没**出来**呢**。 |\n| a punto de | **快要 / 就要** + V + **了** | 明天**就要**下雪了。 |\n| ¡ya es…! | **都** + hora + **了** | **都**十一点**了**！ |\n| acabar de / hace un momento | **刚** + V · **刚才** (tiempo) | 我**刚**到。 **刚才**下雨了。 |\n| enseguida / sin parar | **马上** · **一直** | 我**马上**来。 今天**一直**下雨。 |\n| justo, precisamente | **就** + V | 地铁站**就**在前面。 |\n| mejor… | **还是** + V + **吧** | 我们**还是**回去**吧**。 |\n\nSi dudas, recuerda el esqueleto: todas (salvo 刚才, que es un tiempo) van en el hueco de los **adverbios**."
+    },
+    {
+      "type": "skeleton",
+      "title": "Todos los adverbios de la unidad",
+      "markdown": "Una noche, todo el repaso. Fíjate en la **partícula final** de cada frase: 了 con 已经, 越来越 y 都; 呢 (o nada) con 还没; 吧 con 还是; nada con 刚.\n\nLa última pareja es una frase de dos partes: dos filas, la primera con coma.",
+      "focus": ["adverb", "particle"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "月亮", "py": "yuèliang" }, "adverb": { "zh": "已经", "py": "yǐjīng" }, "verb1": { "zh": "出来", "py": "chūlai" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "La luna ya ha salido.", "esOrder": [{ "text": "La luna", "slot": "subject" }, { "text": "ya", "slot": "adverb" }, { "text": "ha salido", "slot": "verb1" }] },
+        { "slots": { "subject": { "zh": "天上的星星", "py": "tiān shang de xīngxing" }, "adverb": { "zh": "越来越", "py": "yuèláiyuè" }, "verb1": { "zh": "多", "py": "duō" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Cada vez hay más estrellas en el cielo." },
+        { "slots": { "subject": { "zh": "我们", "py": "wǒmen" }, "adverb": { "zh": "刚", "py": "gāng" }, "verb1": { "zh": "到", "py": "dào" }, "object": { "zh": "楼上", "py": "lóu shàng" } }, "end": "。", "es": "Acabamos de llegar a la azotea." },
+        { "slots": { "time0": { "zh": "今天晚上", "py": "jīntiān wǎnshang" }, "adverb": { "zh": "一直", "py": "yìzhí" }, "verb1": { "zh": "很冷", "py": "hěn lěng" } }, "end": "。", "es": "Esta noche ha hecho frío todo el rato." },
+        { "slots": { "adverb": { "zh": "都", "py": "dōu" }, "verb1": { "zh": "十一点", "py": "shíyī diǎn" }, "particle": { "zh": "了", "py": "le" } }, "end": "，", "es": "Ya son las once… (1.ª parte)" },
+        { "slots": { "subject": { "zh": "我们", "py": "wǒmen" }, "adverb": { "zh": "还是", "py": "háishi" }, "verb1": { "zh": "回去", "py": "huíqu" }, "particle": { "zh": "吧", "py": "ba" } }, "end": "。", "es": "…mejor volvemos. (2.ª parte)" }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "星星", "py": "xīngxing" }, "adverb": { "zh": "还没", "py": "hái méi" }, "verb1": { "zh": "出来", "py": "chūlai" }, "particle": { "zh": "呢", "py": "ne" } }, "end": "。", "es": "Las estrellas todavía no han salido." },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "time": { "zh": "刚才", "py": "gāngcái" }, "adverb": { "zh": "没", "py": "méi" }, "verb1": { "zh": "看见", "py": "kànjiàn" }, "object": { "zh": "月亮", "py": "yuèliang" } }, "end": "。", "es": "Hace un momento no he visto la luna." }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "月亮", "py": "yuèliang" }, "adverb": { "zh": "已经", "py": "yǐjīng" }, "verb1": { "zh": "出来", "py": "chūlai" }, "particle": { "zh": "了吗", "py": "le ma" } }, "end": "？", "es": "¿Ya ha salido la luna?" },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "adverb": { "zh": "是不是刚", "py": "shì bu shì gāng" }, "verb1": { "zh": "拍了", "py": "pāile" }, "object": { "zh": "一张照片", "py": "yì zhāng zhàopiàn" } }, "end": "？", "es": "¿Acabas de hacer una foto?" }
+      ],
+      "mistakes": [
+        { "wrong": "星星越来越很多。", "right": "星星越来越多。", "why": "越来越 no se combina con 很." },
+        { "wrong": "月亮还没出来了。", "right": "月亮还没出来呢。", "why": "还没 va sin 了; si acaso, con 呢." },
+        { "wrong": "刚我看见月亮了。", "right": "刚才我看见月亮了。", "why": "Delante del sujeto solo puede ir 刚才 (un tiempo), no 刚 (un adverbio)." },
+        { "wrong": "我们回去还是吧。", "right": "我们还是回去吧。", "why": "还是 va delante del verbo; 吧 cierra la frase." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "En la azotea de la residencia",
+      "lines": [
+        { "speaker": "雨果", "zh": "安娜，你看，月亮出来了！", "py": "Ānnà, nǐ kàn, yuèliang chūlai le!", "es": "Anna, mira, ¡ha salido la luna!" },
+        { "speaker": "安娜", "zh": "今天的月亮好大啊！星星也越来越多了。", "py": "Jīntiān de yuèliang hǎo dà a! Xīngxing yě yuèláiyuè duō le.", "es": "¡Qué luna tan grande hoy! Y cada vez hay más estrellas." },
+        { "speaker": "雨果", "zh": "刚才天上还没有星星呢。", "py": "Gāngcái tiān shang hái méiyǒu xīngxing ne.", "es": "Hace un momento todavía no había ni una estrella." },
+        { "speaker": "安娜", "zh": "刚才风很大，现在云都没有了。", "py": "Gāngcái fēng hěn dà, xiànzài yún dōu méiyǒu le.", "es": "Hace un rato soplaba mucho viento, y ahora no queda ni una nube." },
+        { "speaker": "雨果", "zh": "在上海很少看见这么多星星，今天的夜空漂亮极了。", "py": "Zài Shànghǎi hěn shǎo kànjiàn zhème duō xīngxing, jīntiān de yèkōng piàoliang jí le.", "es": "En Shanghái casi nunca se ven tantas estrellas: el cielo de esta noche es precioso." },
+        { "speaker": "安娜", "zh": "天气越来越冷了，现在已经零下一度了。", "py": "Tiānqì yuèláiyuè lěng le, xiànzài yǐjīng língxià yí dù le.", "es": "Cada vez hace más frío: ya estamos a un grado bajo cero." },
+        { "speaker": "雨果", "zh": "都十一点了！我们还是回宿舍吧。", "py": "Dōu shíyī diǎn le! Wǒmen háishi huí sùshè ba.", "es": "¡Ya son las once! Mejor volvemos a la habitación." },
+        { "speaker": "安娜", "zh": "等一会儿，我马上拍一张照片。", "py": "Děng yíhuìr, wǒ mǎshàng pāi yì zhāng zhàopiàn.", "es": "Espera un poco, que hago una foto en un momento." },
+        { "speaker": "雨果", "zh": "好，我等你。你拍好了吗？", "py": "Hǎo, wǒ děng nǐ. Nǐ pāihǎo le ma?", "es": "Vale, te espero. ¿Ya la tienes?" },
+        { "speaker": "安娜", "zh": "拍好了！你看，月亮和星星都很亮。", "py": "Pāihǎo le! Nǐ kàn, yuèliang hé xīngxing dōu hěn liàng.", "es": "¡Ya está! Mira, la luna y las estrellas brillan muchísimo." },
+        { "speaker": "雨果", "zh": "太好看了！我们快走吧，我冷极了。", "py": "Tài hǎokàn le! Wǒmen kuài zǒu ba, wǒ lěng jí le.", "es": "¡Qué bonita! Venga, vámonos, que me muero de frío." }
+      ],
+      "notes": "好大啊 = «¡qué grande!»: 好 + adjetivo en una exclamación (lo viste en A1). 夜空 (cielo nocturno) se entiende por sus partes: 夜 noche + 空 (de 天空). La luna llena tiene mucha importancia en China: la verás en la próxima unidad, con la Fiesta del Medio Otoño."
+    },
+    { "type": "exercises", "count": 20, "bank": ["u10", "g-le", "g-hen-adj", "g-dates-time", "g-bu-mei"] },
+    {
+      "type": "sentence-builder",
+      "title": "Construye la frase completa",
+      "items": [
+        { "sentence": { "slots": { "time0": { "zh": "今天晚上" }, "subject": { "zh": "天上的星星" }, "adverb": { "zh": "越来越" }, "verb1": { "zh": "多" }, "particle": { "zh": "了" } }, "end": "。", "es": "Esta noche cada vez hay más estrellas en el cielo." }, "distractors": ["很"] },
+        { "sentence": { "slots": { "subject": { "zh": "我们" }, "adverb": { "zh": "已经" }, "with": { "zh": "跟小李一起" }, "place": { "zh": "在山上" }, "verb1": { "zh": "走了" }, "complement": { "zh": "三个小时" }, "particle": { "zh": "了" } }, "end": "。", "es": "Ya llevamos tres horas andando por el monte con Xiao Li." }, "distractors": ["还没"] },
+        { "sentence": { "slots": { "subject": { "zh": "我" }, "time": { "zh": "刚才" }, "adverb": { "zh": "一直" }, "with": { "zh": "跟安娜一起" }, "place": { "zh": "在楼上" }, "verb1": { "zh": "看" }, "object": { "zh": "月亮" } }, "end": "。", "es": "Hace un rato he estado todo el tiempo en la azotea mirando la luna con Anna." }, "distractors": ["刚"] },
+        { "sentence": { "slots": { "time0": { "zh": "都十一点了，" }, "subject": { "zh": "你" }, "adverb": { "zh": "怎么还不" }, "verb1": { "zh": "回" }, "object": { "zh": "宿舍" } }, "end": "？", "es": "¡Ya son las once! ¿Cómo es que aún no vuelves a la residencia?" }, "distractors": ["没"] },
+        { "sentence": { "slots": { "subject": { "zh": "我们" }, "time": { "zh": "明天" }, "adverb": { "zh": "还是" }, "with": { "zh": "跟小李一起" }, "verb1": { "zh": "坐地铁" }, "verb2": { "zh": "去" }, "object": { "zh": "公园" }, "particle": { "zh": "吧" } }, "end": "。", "es": "Mañana mejor vamos al parque en metro con Xiao Li." }, "distractors": ["吗"] },
+        { "sentence": { "slots": { "time0": { "zh": "不一会儿，" }, "subject": { "zh": "天上" }, "adverb": { "zh": "就" }, "verb1": { "zh": "出现了" }, "object": { "zh": "一个大大的月亮" } }, "end": "。", "es": "Al poco rato apareció en el cielo una luna enorme." }, "distractors": ["已经"] }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "月亮已经出来了。", "py": "Yuèliang yǐjīng chūlai le.", "es": "La luna ya ha salido." },
+        { "zh": "天上的星星越来越多了。", "py": "Tiān shang de xīngxing yuèláiyuè duō le.", "es": "Cada vez hay más estrellas en el cielo." },
+        { "zh": "都十一点了，我们还是回去吧。", "py": "Dōu shíyī diǎn le, wǒmen háishi huíqu ba.", "es": "Ya son las once: mejor volvemos." },
+        { "zh": "等一会儿，我马上拍一张照片。", "py": "Děng yíhuìr, wǒ mǎshàng pāi yì zhāng zhàopiàn.", "es": "Espera un poco, que hago una foto en un momento." },
+        { "zh": "今天的夜空漂亮极了。", "py": "Jīntiān de yèkōng piàoliang jí le.", "es": "El cielo de esta noche es precioso." }
+      ],
+      "respond": [
+        { "q": { "zh": "月亮出来了吗？", "py": "Yuèliang chūlai le ma?", "es": "¿Ha salido la luna?" }, "model": { "zh": "还没出来呢，我们再等一会儿吧。", "py": "Hái méi chūlai ne, wǒmen zài děng yíhuìr ba.", "es": "Todavía no: esperemos un rato más." } },
+        { "q": { "zh": "最近上海的天气怎么样？", "py": "Zuìjìn Shànghǎi de tiānqì zěnmeyàng?", "es": "¿Qué tal el tiempo en Shanghái últimamente?" }, "model": { "zh": "越来越冷了，昨天已经零下一度了。", "py": "Yuèláiyuè lěng le, zuótiān yǐjīng língxià yí dù le.", "es": "Cada vez más frío: ayer ya estábamos a un grado bajo cero." } },
+        { "q": { "zh": "都十二点了，你怎么还不睡觉？", "py": "Dōu shí'èr diǎn le, nǐ zěnme hái bú shuìjiào?", "es": "¡Ya son las doce! ¿Cómo es que aún no te acuestas?" }, "model": { "zh": "我刚做完作业，马上就睡。", "py": "Wǒ gāng zuòwán zuòyè, mǎshàng jiù shuì.", "es": "Acabo de terminar los deberes: me acuesto enseguida." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Hugo escribe en 朋友圈",
+      "text": "我来上海已经三个月了。刚来的那个月，天气很热，每天都三十多度。现在是十二月，天气越来越冷了，昨天晚上已经零下一度了。我刚买了一件大衣，很暖和。上海的冬天常常下雨，有时候一直下一天。今天晚上天气好极了，天上一点儿云也没有。我和安娜在宿舍楼上看月亮和星星。在上海很少能看见星星，今天我们看见了很多！都十一点了，安娜还不想回去，她说：“等一会儿，我马上拍一张照片。”我觉得上海越来越漂亮了，我也越来越喜欢这儿的生活了。好了，我们还是快回去吧，太冷了！明天早上还要去上课呢。",
+      "es": "Ya llevo tres meses en Shanghái. El primer mes hacía mucho calor: más de treinta grados todos los días. Ahora estamos en diciembre y cada vez hace más frío; anoche ya estuvimos a un grado bajo cero. Acabo de comprarme un abrigo y abriga mucho. En invierno en Shanghái llueve a menudo; a veces no para en todo el día. Pero esta noche hace un tiempo estupendo: no hay ni una nube. Anna y yo estamos en la azotea de la residencia mirando la luna y las estrellas. En Shanghái casi nunca se ven estrellas, ¡y hoy hemos visto un montón! Ya son las once y Anna todavía no quiere volver: «Espera un poco, que hago una foto en un momento». Me parece que Shanghái es cada vez más bonita, y su forma de vida me gusta cada vez más. Bueno, mejor volvemos ya, ¡qué frío! Mañana por la mañana hay que ir a clase.",
+      "questions": [
+        { "q": "¿Cuánto tiempo lleva Hugo en Shanghái?", "options": ["三个月", "一个月", "一年"], "answer": 0 },
+        { "q": "¿Qué temperatura hizo anoche?", "options": ["零下一度", "三十多度", "十八度"], "answer": 0 },
+        { "q": "¿Qué quiere hacer Anna antes de volver?", "options": ["拍一张照片", "买一件大衣", "去上课"], "answer": 0 },
+        { "q": "¿Qué frase resume cómo se siente Hugo?", "options": ["他越来越喜欢上海的生活了。", "他还没习惯上海的冬天，想回西班牙。", "他觉得上海的冬天很热。"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

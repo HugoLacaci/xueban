@@ -1,0 +1,624 @@
+{
+  "id": "de",
+  "title": "El 的",
+  "zh": "的",
+  "order": 6,
+  "icon": "Link",
+  "summary": "El carácter más frecuente del chino: une al dueño o la descripción con el nombre (al revés que el español), se queda solo cuando el nombre se sobreentiende, forma las frases de relativo, cierra el 是…的 y tiene dos «hermanos» que suenan igual: 地 y 得.",
+  "kind": "topic",
+  "reviewed": false,
+  "sections": [
+    {
+      "id": "posesivo",
+      "title": "Dueño + 的 + cosa",
+      "unlockedBy": "a1-u03-l2",
+      "markdown": "### Un «de» al revés\n\nEn español vamos de la cosa al dueño: *la madre **de** mi padre*. En chino, **del dueño a la cosa**:\n\n```\nespañol:  la madre  ←  de mi padre\nchino:    我爸爸  的  →  妈妈\n          (dueño)      (cosa)\n```\n\n- Todo el grupo «dueño + 的 + cosa» ocupa **un solo hueco**: sujeto (我的老师是中国人) u objeto (这是我的老师).\n- **Se omite** con la familia y lo muy cercano detrás de un pronombre: **我妈妈**, 你爸爸, 他哥哥, 我家, 我们班.\n- **Se mantiene** con cosas y con nombres que no son pronombres: 我**的**手机, 王老师**的**妈妈.\n- En una cadena de dueños basta con **el último 的**: 我爸爸**的**妈妈 (✗我的爸爸的妈妈).\n\n> 🧠 **Mnemotecnia**: 的 es un clip con una flecha hacia la derecha: todo lo que está a la izquierda describe lo que está a la derecha.\n\n> ❌ **Error típico**: ✗妈妈的我爸爸 o ✗这是手机的我 → 我爸爸的妈妈 · 这是我的手机.",
+      "sourceNotes": ["zh-grammar-de", "zh-particle-de"],
+      "skeleton": {
+        "focus": ["subject", "object"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "她", "py": "tā", "es": "ella" },
+              "verb1": { "zh": "是", "py": "shì", "es": "es" },
+              "object": { "zh": "我爸爸的妈妈", "py": "wǒ bàba de māma", "es": "la madre de mi padre" }
+            },
+            "end": "。",
+            "es": "Es la madre de mi padre.",
+            "esOrder": [
+              { "text": "Es", "slot": "verb1" },
+              { "text": "la madre de mi padre", "slot": "object" }
+            ]
+          },
+          {
+            "slots": {
+              "subject": { "zh": "我的老师", "py": "wǒ de lǎoshī", "es": "mi profesora" },
+              "verb1": { "zh": "是", "py": "shì" },
+              "object": { "zh": "中国人", "py": "Zhōngguó rén", "es": "china" }
+            },
+            "end": "。",
+            "es": "Mi profesora es china."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "这", "py": "zhè" },
+              "verb1": { "zh": "是", "py": "shì" },
+              "object": { "zh": "你奶奶", "py": "nǐ nǎinai", "es": "tu abuela" },
+              "particle": { "zh": "吗", "py": "ma" }
+            },
+            "end": "？",
+            "es": "¿Esta es tu abuela?"
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "她是我爸爸的妈妈。", "py": "Tā shì wǒ bàba de māma.", "es": "Es la madre de mi padre." },
+        { "zh": "我妈妈的妈妈是我外婆。", "py": "Wǒ māma de māma shì wǒ wàipó.", "es": "La madre de mi madre es mi abuela materna." },
+        { "zh": "这是王老师的手机。", "py": "Zhè shì Wáng lǎoshī de shǒujī.", "es": "Este es el móvil de la profesora Wang." },
+        { "zh": "他不是我哥哥。", "py": "Tā bú shì wǒ gēge.", "es": "No es mi hermano mayor.", "note": "Familia tras pronombre: sin 的." }
+      ]
+    },
+    {
+      "id": "adjetivo-de",
+      "title": "Adjetivo + 的 + nombre",
+      "unlockedBy": "a1-u08-l4",
+      "markdown": "### La descripción también va delante\n\n| Tipo de adjetivo | ¿的? | Ejemplo |\n|---|---|---|\n| una sílaba, sin grado | no | 大房子, 好朋友, 新老师 |\n| con grado (很, 非常, 最…) | **sí** | 很大**的**房子, 最重要**的**事 |\n| dos sílabas | normalmente sí | 漂亮**的**猫, 有名**的**老师 |\n| una acción o frase | sí | 爱笑**的**人 (una persona risueña) |\n\n- Con 很 + adjetivo de dos sílabas, el 的 es obligatorio: 很漂亮**的**衣服.\n- Ojo con el 是: 他**很认真** (adjetivo) / 他**是**很认真**的**学生 (nombre).\n\n> ❌ **Error típico**: ✗很大房子 → 很大**的**房子. Y ✗红的苹果 como norma: con una sílaba sin grado, mejor 红苹果.",
+      "sourceNotes": ["zh-grammar-de", "zh-particle-de"],
+      "skeleton": {
+        "focus": ["object"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "王老师", "py": "Wáng lǎoshī" },
+              "verb1": { "zh": "是", "py": "shì" },
+              "object": { "zh": "一个很有名的老师", "py": "yí ge hěn yǒumíng de lǎoshī", "es": "una profesora muy famosa" }
+            },
+            "end": "。",
+            "es": "La profesora Wang es una profesora muy famosa."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "这", "py": "zhè" },
+              "adverb": { "zh": "不", "py": "bú" },
+              "verb1": { "zh": "是", "py": "shì" },
+              "object": { "zh": "很难的事", "py": "hěn nán de shì", "es": "una cosa difícil" }
+            },
+            "end": "。",
+            "es": "Esto no es una cosa difícil."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "小李是我的好朋友。", "py": "Xiǎo Lǐ shì wǒ de hǎo péngyou.", "es": "Xiao Li es mi buen amigo." },
+        { "zh": "这是很重要的事。", "py": "Zhè shì hěn zhòngyào de shì.", "es": "Esto es una cosa muy importante." },
+        { "zh": "她是一个爱笑的人。", "py": "Tā shì yí ge ài xiào de rén.", "es": "Es una persona risueña." }
+      ]
+    },
+    {
+      "id": "color-de",
+      "title": "Color + 的 + nombre",
+      "unlockedBy": "a1-u10-l1",
+      "markdown": "### «Un vaso rojo» = «un rojo 的 vaso»\n\n| | Ejemplo |\n|---|---|\n| nombre del color + 的 + nombre | 一个**红色的**杯子 |\n| adjetivo pegado (palabras fijas) | 绿茶, 白酒 |\n| adjetivo como predicado | 天**很蓝** |\n\n- **红色, 白色, 蓝色…** son nombres de color: necesitan 的 delante de otro nombre.\n- Para preguntar: **什么颜色**？ o **什么颜色的** + nombre？\n\n> ❌ **Error típico**: ✗我有一个杯子红色的 → 我有一个红色的杯子.",
+      "sourceNotes": ["zh-grammar-de"],
+      "skeleton": {
+        "focus": ["object"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "verb1": { "zh": "有", "py": "yǒu" },
+              "object": { "zh": "一个红色的杯子", "py": "yí ge hóngsè de bēizi", "es": "un vaso rojo" }
+            },
+            "end": "。",
+            "es": "Tengo un vaso rojo.",
+            "esOrder": [
+              { "text": "Tengo", "slot": "verb1" },
+              { "text": "un vaso rojo", "slot": "object" }
+            ]
+          },
+          {
+            "slots": {
+              "subject": { "zh": "你的杯子", "py": "nǐ de bēizi" },
+              "verb1": { "zh": "是", "py": "shì" },
+              "object": { "zh": "什么颜色", "py": "shénme yánsè", "es": "qué color" }
+            },
+            "end": "？",
+            "es": "¿De qué color es tu vaso?"
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "我有一个红色的杯子。", "py": "Wǒ yǒu yí ge hóngsè de bēizi.", "es": "Tengo un vaso rojo." },
+        { "zh": "安娜想要白色的瓶子。", "py": "Ānnà xiǎng yào báisè de píngzi.", "es": "Ana quiere una botella blanca." },
+        { "zh": "你要什么颜色的？", "py": "Nǐ yào shénme yánsè de?", "es": "¿De qué color lo quieres?" }
+      ]
+    },
+    {
+      "id": "de-sin-nombre",
+      "title": "El 的 sin nombre: 红的, 我的, 大的",
+      "unlockedBy": "a1-u10-l5",
+      "markdown": "### Cuando el nombre se sobreentiende, se cae\n\nComo el español «el rojo», «el mío», «el grande», el chino **quita el nombre y deja el 的**:\n\n| Con nombre | Sin nombre | Español |\n|---|---|---|\n| 红色的杯子 | **红的** | el rojo |\n| 我的书 | **我的** | el mío |\n| 大的衣服 | **大的** | el grande |\n| 老师的书 | **老师的** | el del profesor |\n\n- Estos bloques funcionan como un nombre: objeto (我要**红的**), sujeto (**白色的**很好看) o tras 是 (这本书是**我的**).\n- **谁的**？ = ¿de quién?: 这是谁的？ —是我的。\n- **有的** + nombre (unos…, otros…) va al principio de la frase: **有的**衣服很好看，**有的**不好看. En cambio **一些** va sin 的: ✗一些的书.\n\n> 💡 **Truco**: perfecto para responder rápido en una tienda: 我要大的 (quiero el grande).",
+      "sourceNotes": ["zh-particle-de", "zh-grammar-de", "zh-question-shei"],
+      "skeleton": {
+        "focus": ["subject", "object"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "verb1": { "zh": "要", "py": "yào", "es": "quiero" },
+              "object": { "zh": "红的", "py": "hóng de", "es": "el rojo" }
+            },
+            "end": "。",
+            "es": "Quiero el rojo."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "这本书", "py": "zhè běn shū" },
+              "verb1": { "zh": "是", "py": "shì" },
+              "object": { "zh": "我的", "py": "wǒ de", "es": "mío" }
+            },
+            "end": "。",
+            "es": "Este libro es mío."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "白色的", "py": "báisè de", "es": "el blanco" },
+              "adverb": { "zh": "很", "py": "hěn" },
+              "verb1": { "zh": "好看", "py": "hǎokàn", "es": "es bonito" }
+            },
+            "end": "。",
+            "es": "El blanco es muy bonito."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "我要红的。", "py": "Wǒ yào hóng de.", "es": "Quiero el rojo." },
+        { "zh": "这本书是我的。", "py": "Zhè běn shū shì wǒ de.", "es": "Este libro es mío." },
+        { "zh": "你要红的还是白的？", "py": "Nǐ yào hóng de háishi bái de?", "es": "¿Quieres el rojo o el blanco?" },
+        { "zh": "有的衣服很好看，有的不好看。", "py": "Yǒude yīfu hěn hǎokàn, yǒude bù hǎokàn.", "es": "Hay ropa bonita y ropa fea (unas sí, otras no)." }
+      ]
+    },
+    {
+      "id": "shi-de-cuando-como",
+      "title": "是…的: el detalle de algo que ya pasó",
+      "unlockedBy": "a2-u01-l1",
+      "markdown": "### Un foco sobre el detalle\n\nCuando ya se sabe que algo **ha pasado** y lo que interesa es **un detalle** (cuándo, desde dónde, cómo, con quién), se usa **是 … 的**:\n\n- 我**是**去年九月来**的**。 → *Vine en septiembre del año pasado.*\n- 我**是**从马德里来**的**。 → *Vine desde Madrid.*\n- 我**是**坐飞机来**的**。 → *Vine en avión.*\n\n**是 va justo delante del detalle** y **的 cierra**. En la afirmativa 是 puede omitirse; en la negativa, no: **不是…的**.\n\n### 了 o 是…的\n\n| 了 | 是…的 |\n|---|---|\n| da la **noticia**: 我到了。 (ya he llegado) | da el **detalle**: 我是昨天到的。 (llegué *ayer*) |\n\n- 是…的 y 了 no se combinan: ✗我是去年来了的.\n- Preguntas típicas: 你是**什么时候**来的？ 你是**怎么**来的？ 你是**跟谁**来的？\n- **En el esqueleto**: 是 va en los adverbios (o dentro del tiempo, si el detalle es un tiempo) y 的, en la partícula final.\n\n> ❌ **Error típico**: ✗你什么时候来中国了？ → 你是什么时候来中国的？",
+      "sourceNotes": ["zh-grammar-shi-de", "zh-particle-de"],
+      "skeleton": {
+        "focus": ["adverb", "particle"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "time": { "zh": "是去年九月", "py": "shì qùnián jiǔ yuè", "es": "fue en septiembre del año pasado" },
+              "verb1": { "zh": "来", "py": "lái", "es": "cuando vine" },
+              "object": { "zh": "中国", "py": "Zhōngguó", "es": "a China" },
+              "particle": { "zh": "的", "py": "de" }
+            },
+            "end": "。",
+            "es": "Vine a China en septiembre del año pasado."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "雨果", "py": "Yǔguǒ" },
+              "adverb": { "zh": "是", "py": "shì" },
+              "verb1": { "zh": "坐飞机", "py": "zuò fēijī", "es": "en avión" },
+              "verb2": { "zh": "来", "py": "lái", "es": "vino" },
+              "particle": { "zh": "的", "py": "de" }
+            },
+            "end": "。",
+            "es": "Hugo vino en avión."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "你", "py": "nǐ" },
+              "time": { "zh": "是什么时候", "py": "shì shénme shíhou", "es": "cuándo" },
+              "verb1": { "zh": "来", "py": "lái", "es": "viniste" },
+              "object": { "zh": "中国", "py": "Zhōngguó" },
+              "particle": { "zh": "的", "py": "de" }
+            },
+            "end": "？",
+            "es": "¿Cuándo viniste a China?"
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "我是去年九月来中国的。", "py": "Wǒ shì qùnián jiǔ yuè lái Zhōngguó de.", "es": "Vine a China en septiembre del año pasado." },
+        { "zh": "我是从马德里出发的。", "py": "Wǒ shì cóng Mǎdélǐ chūfā de.", "es": "Salí desde Madrid." },
+        { "zh": "你是什么时候来中国的？", "py": "Nǐ shì shénme shíhou lái Zhōngguó de?", "es": "¿Cuándo viniste a China?" },
+        { "zh": "我不是坐火车来的。", "py": "Wǒ bú shì zuò huǒchē lái de.", "es": "No vine en tren." }
+      ]
+    },
+    {
+      "id": "shi-de-quien",
+      "title": "是…的: quién, con quién y para qué",
+      "unlockedBy": "a2-u01-l2",
+      "markdown": "### Más detalles bajo el foco\n\n| Detalle | Ejemplo |\n|---|---|\n| cómo | 我是**坐出租车**去酒店的。 |\n| con quién | 我是**跟安娜一起**来的。 |\n| quién lo hizo | 是**安娜**来接我的。 (fue Ana la que vino a buscarme) |\n| para qué | 她是来**接我**的。 |\n\n- **Respuesta corta**: basta con **是 + detalle + 的**: 是坐地铁来的。 / 是昨天到的。\n- Si el verbo lleva objeto, el 的 puede ir **antes del objeto**: 你是在哪儿学**的**汉语？ = 你是在哪儿学汉语的？ (las dos son correctas).\n\n> ❌ **Error típico**: ✗我是到了 → 我到了 (noticia) / 我是昨天到的 (detalle).",
+      "sourceNotes": ["zh-grammar-shi-de"],
+      "skeleton": {
+        "focus": ["adverb", "particle"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "我", "py": "wǒ" },
+              "adverb": { "zh": "是", "py": "shì" },
+              "with": { "zh": "跟安娜一起", "py": "gēn Ānnà yìqǐ", "es": "con Ana" },
+              "verb1": { "zh": "出门", "py": "chūmén", "es": "salí de casa" },
+              "particle": { "zh": "的", "py": "de" }
+            },
+            "end": "。",
+            "es": "Salí de casa con Ana."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "她", "py": "tā" },
+              "adverb": { "zh": "是", "py": "shì" },
+              "verb1": { "zh": "来机场", "py": "lái jīchǎng", "es": "vino al aeropuerto" },
+              "verb2": { "zh": "接", "py": "jiē", "es": "a recoger" },
+              "object": { "zh": "我", "py": "wǒ", "es": "me" },
+              "particle": { "zh": "的", "py": "de" }
+            },
+            "end": "。",
+            "es": "Vino al aeropuerto a recogerme."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "我是坐出租车去酒店的。", "py": "Wǒ shì zuò chūzūchē qù jiǔdiàn de.", "es": "Fui al hotel en taxi." },
+        { "zh": "是安娜来接我的。", "py": "Shì Ānnà lái jiē wǒ de.", "es": "Fue Ana la que vino a buscarme." },
+        { "zh": "你是跟谁一起来的？—是跟安娜一起来的。", "py": "Nǐ shì gēn shéi yìqǐ lái de? — Shì gēn Ānnà yìqǐ lái de.", "es": "¿Con quién viniste? —Con Ana." }
+      ]
+    },
+    {
+      "id": "relativas",
+      "title": "Frases de relativo: «la chica que canta» = 唱歌的女孩儿",
+      "unlockedBy": "a2-u07-l4",
+      "markdown": "### Todo lo que describe va delante\n\nCon 的 no solo se dice «mi libro»: **cualquier verbo o frase** puede describir a un nombre. En español usamos «que…» **detrás**; en chino, todo va **delante** y 的 lo une:\n\n| Español | Chino |\n|---|---|\n| la chica **que canta** | **唱歌的**女孩儿 |\n| el cuadro **que ha pintado mi abuelo** | **我爷爷画的**画儿 |\n| la escuela **donde estudio chino** | **我学习汉语的**学校 |\n| la foto **que he hecho yo** | **我拍的**图片 |\n\n- No hay «que», «donde» ni «quien»: 的 hace todo ese trabajo.\n- Todo el bloque ocupa **un solo hueco** del esqueleto.\n- Si se sobreentiende el nombre, se cae, como siempre: 唱歌的是我同学 (la que canta es compañera mía).\n\n> ❌ **Error típico**: ✗唱歌女孩儿是谁？ → 那个唱歌**的**女孩儿是谁？",
+      "sourceNotes": ["zh-particle-de", "zh-grammar-de"],
+      "skeleton": {
+        "focus": ["subject", "object"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "那个唱歌的女孩儿", "py": "nàge chànggē de nǚháir", "es": "la chica que canta" },
+              "verb1": { "zh": "是", "py": "shì", "es": "es" },
+              "object": { "zh": "我同学", "py": "wǒ tóngxué", "es": "compañera mía" }
+            },
+            "end": "。",
+            "es": "La chica que canta es compañera mía.",
+            "esOrder": [
+              { "text": "La chica que canta", "slot": "subject" },
+              { "text": "es", "slot": "verb1" },
+              { "text": "compañera mía", "slot": "object" }
+            ]
+          },
+          {
+            "slots": {
+              "subject": { "zh": "这", "py": "zhè" },
+              "verb1": { "zh": "是", "py": "shì" },
+              "object": { "zh": "我学习汉语的学校", "py": "wǒ xuéxí Hànyǔ de xuéxiào", "es": "la escuela donde estudio chino" }
+            },
+            "end": "。",
+            "es": "Esta es la escuela donde estudio chino."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "那个养鸟的人", "py": "nàge yǎng niǎo de rén", "es": "ese señor que tiene pájaros" },
+              "verb1": { "zh": "是", "py": "shì" },
+              "object": { "zh": "谁", "py": "shéi", "es": "quién" }
+            },
+            "end": "？",
+            "es": "¿Quién es ese señor que tiene pájaros?"
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "那个唱歌的女孩儿是我同学。", "py": "Nàge chànggē de nǚháir shì wǒ tóngxué.", "es": "La chica que canta es compañera mía." },
+        { "zh": "这是我爷爷画的画儿。", "py": "Zhè shì wǒ yéye huà de huàr.", "es": "Este es el cuadro que ha pintado mi abuelo." },
+        { "zh": "这不是我拍的图片。", "py": "Zhè bú shì wǒ pāi de túpiàn.", "es": "Esta no es una foto que haya hecho yo." },
+        { "zh": "我喜欢你写的小说。", "py": "Wǒ xǐhuan nǐ xiě de xiǎoshuō.", "es": "Me gusta la novela que has escrito." }
+      ]
+    },
+    {
+      "id": "de-di-de",
+      "title": "Las tres «de»: 的, 地, 得",
+      "unlockedBy": "a2-u07-l4",
+      "markdown": "### Mismo sonido, tres trabajos\n\nLas tres se leen **de**, sin tono. Para elegir, **mira qué viene detrás** (o delante):\n\n| | Posición | Función | Ejemplo |\n|---|---|---|---|\n| **的** | … + 的 + **nombre** | posesión, descripción, relativo | 我**的**书 · 红色**的**车 |\n| **地** | adjetivo + 地 + **verbo** | cómo se hace (español «-mente») | 他认真**地**画画儿 |\n| **得** | **verbo** + 得 + adjetivo | cómo sale, el resultado | 她画**得**很好 |\n\n> 🧠 **Mnemotecnia**: 的 lleva 白 (blanco): describe cosas. 地 lleva 土 (tierra): es el suelo sobre el que se hace la acción (va antes). 得 lleva 彳 (paso): va un paso detrás del verbo.\n\n- 地 + verbo: 慢慢**地**说 (anuncia la manera, antes). 得: 说**得**很慢 (valora el resultado, después).\n- Los adjetivos de una sílaba no llevan 地 si no se doblan: ✗快地跑 → 跑得很快 / 快快地跑.\n- En mensajes informales muchos chinos escriben 的 por las tres; en el examen, no.\n\n> ❌ **Error típico**: ✗你说的很好 → 你说**得**很好. ✗他认真的画画儿 → 他认真**地**画画儿.",
+      "sourceNotes": ["zh-contrast-de-de-de", "zh-particle-de-adverbial", "zh-particle-de-complement"],
+      "skeleton": {
+        "focus": ["adverb", "complement"],
+        "sentences": [
+          {
+            "slots": {
+              "subject": { "zh": "他", "py": "tā" },
+              "adverb": { "zh": "认真地", "py": "rènzhēn de", "es": "con cuidado" },
+              "verb1": { "zh": "画", "py": "huà", "es": "pinta" },
+              "object": { "zh": "画儿", "py": "huàr", "es": "cuadros" }
+            },
+            "end": "。",
+            "es": "Pinta con mucho cuidado."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "她", "py": "tā" },
+              "verb1": { "zh": "画得", "py": "huà de", "es": "pinta" },
+              "complement": { "zh": "很好", "py": "hěn hǎo", "es": "muy bien" }
+            },
+            "end": "。",
+            "es": "Pinta muy bien."
+          },
+          {
+            "slots": {
+              "subject": { "zh": "这", "py": "zhè" },
+              "verb1": { "zh": "是", "py": "shì" },
+              "object": { "zh": "我的画儿", "py": "wǒ de huàr", "es": "mi cuadro" }
+            },
+            "end": "。",
+            "es": "Este es mi cuadro."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "这是我的画儿。", "py": "Zhè shì wǒ de huàr.", "es": "Este es mi cuadro." },
+        { "zh": "他认真地画画儿。", "py": "Tā rènzhēn de huà huàr.", "es": "Pinta con mucho cuidado." },
+        { "zh": "她画画儿画得很好。", "py": "Tā huà huàr huà de hěn hǎo.", "es": "Pinta muy bien." },
+        { "zh": "老师，请慢慢地说。", "py": "Lǎoshī, qǐng mànmàn de shuō.", "es": "Profesora, hable despacio, por favor." }
+      ]
+    },
+    {
+      "id": "de-shihou",
+      "title": "…的时候: «cuando…»",
+      "unlockedBy": "a2-u10-l3",
+      "markdown": "### Una frase entera como expresión de tiempo\n\n**…的时候** convierte una frase en un momento («el momento en que…») y va **delante**, como 明天 o 八点:\n\n| Español | Chino |\n|---|---|\n| Cuando nieva, salimos a jugar. | 下雪**的时候**，我们出去玩儿。 |\n| Por la Fiesta de la Primavera… | 过春节**的时候**，… |\n\n- El «cuando» va **al final** del bloque, al revés que en español.\n- **小时候** ya significa «cuando era pequeño»: ✗当我小时候的时候.\n- Más sobre su posición en el apunte **Fechas y horas**.",
+      "sourceNotes": ["zh-grammar-time-before-verb"],
+      "skeleton": {
+        "focus": ["time0"],
+        "sentences": [
+          {
+            "slots": {
+              "time0": { "zh": "下雪的时候，", "py": "xià xuě de shíhou,", "es": "cuando nieva" },
+              "subject": { "zh": "我们", "py": "wǒmen" },
+              "verb1": { "zh": "出去", "py": "chūqù", "es": "salimos" },
+              "verb2": { "zh": "玩儿", "py": "wánr", "es": "a jugar" }
+            },
+            "end": "。",
+            "es": "Cuando nieva, salimos a jugar.",
+            "esOrder": [
+              { "text": "Cuando nieva,", "slot": "time0" },
+              { "text": "salimos", "slot": "verb1" },
+              { "text": "a jugar", "slot": "verb2" }
+            ]
+          },
+          {
+            "slots": {
+              "time0": { "zh": "过春节的时候，", "py": "guò Chūnjié de shíhou,", "es": "por la Fiesta de la Primavera" },
+              "subject": { "zh": "人们", "py": "rénmen" },
+              "adverb": { "zh": "都", "py": "dōu" },
+              "verb1": { "zh": "回家", "py": "huí jiā", "es": "vuelve a casa" }
+            },
+            "end": "。",
+            "es": "Por la Fiesta de la Primavera todo el mundo vuelve a casa."
+          }
+        ]
+      },
+      "examples": [
+        { "zh": "下雪的时候，我们出去玩儿。", "py": "Xià xuě de shíhou, wǒmen chūqù wánr.", "es": "Cuando nieva, salimos a jugar." },
+        { "zh": "过春节的时候，人们都回家。", "py": "Guò Chūnjié de shíhou, rénmen dōu huí jiā.", "es": "Por la Fiesta de la Primavera todo el mundo vuelve a casa." },
+        { "zh": "我小时候住在马德里。", "py": "Wǒ xiǎoshíhou zhù zài Mǎdélǐ.", "es": "De pequeño vivía en Madrid." }
+      ]
+    },
+    {
+      "id": "dehua",
+      "title": "…的话: «si…»",
+      "unlockedBy": "a2-u11-l1",
+      "markdown": "### Otro 的 que cierra una frase\n\n**…的话** cierra una condición, igual que 如果 la abre. Se puede usar uno, el otro o los dos:\n\n- **如果**你有时间，就来吧。\n- 你有时间**的话**，就来吧。\n- **如果**你有时间**的话**，就来吧。\n\nLa condición va **siempre delante**: ✗我就去，如果工资高 → 工资高的话，我就去.\n\nMás sobre 如果…就 en el apunte **Conectores**.",
+      "examples": [
+        { "zh": "工资高的话，我就去。", "py": "Gōngzī gāo dehuà, wǒ jiù qù.", "es": "Si el sueldo es alto, voy." },
+        { "zh": "你有时间的话，就来吧。", "py": "Nǐ yǒu shíjiān dehuà, jiù lái ba.", "es": "Si tienes tiempo, ven." },
+        { "zh": "明天下雨的话，我们就不去了。", "py": "Míngtiān xià yǔ dehuà, wǒmen jiù bú qù le.", "es": "Si mañana llueve, no vamos." }
+      ]
+    },
+    {
+      "id": "orden-atributos",
+      "title": "Varios atributos delante del nombre: el orden chino",
+      "unlockedBy": "b1-u09-l1",
+      "markdown": "### Todo lo que describe va delante\n\nEn español los adjetivos y las relativas van **detrás** («la chica **alta** **que lleva un vestido rojo**»). En chino **todo** va **delante**, en un orden bastante fijo:\n\n| Orden | Qué es | Ejemplo |\n|---|---|---|\n| 1 | de quién | 我的, 我们学校的 |\n| 2 | demostrativo / número + clasificador | 那个, 那位, 一件 |\n| 3 | frase con 的 | 穿红衣服的, 我昨天买的 |\n| 4 | adjetivo con 的 (largo o con 很) | 很漂亮的 |\n| 5 | adjetivo corto, pegado y sin 的 | 红, 老, 高个子 |\n| 6 | el nombre | 姑娘, 衬衫 |\n\n> **那个** 穿红衣服的 高个子 **姑娘** = esa chica alta vestida de rojo\n\n- Una frase con 的 larga puede ir **antes** del demostrativo: 我昨天买的**那本**书.\n- **No acumules 的**: 我妈妈的朋友 (✗ 我的妈妈的朋友).\n- **Aposición** (dos nombres que son lo mismo, sin 的): **首都北京**, **我们学生**, **她一个人**, **我朋友小李**.\n\n**En el esqueleto**: todos los atributos van **dentro** del hueco del nombre (*Sujeto* u *Objeto*).",
+      "skeleton": {
+        "focus": [
+          "subject",
+          "object"
+        ],
+        "sentences": [
+          {
+            "slots": {
+              "subject": {
+                "zh": "我昨天买的那本中文书",
+                "py": "wǒ zuótiān mǎi de nà běn Zhōngwén shū"
+              },
+              "adverb": {
+                "zh": "很",
+                "py": "hěn"
+              },
+              "verb1": {
+                "zh": "有意思",
+                "py": "yǒu yìsi"
+              }
+            },
+            "end": "。",
+            "es": "El libro en chino que compré ayer es muy interesante.",
+            "esOrder": [
+              {
+                "text": "El libro en chino",
+                "slot": "subject"
+              },
+              {
+                "text": "que compré ayer",
+                "slot": "subject"
+              },
+              {
+                "text": "es muy interesante",
+                "slot": "verb1"
+              }
+            ]
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "我",
+                "py": "wǒ"
+              },
+              "verb1": {
+                "zh": "买了",
+                "py": "mǎi le"
+              },
+              "object": {
+                "zh": "一件很漂亮的红衬衫",
+                "py": "yí jiàn hěn piàoliang de hóng chènshān"
+              }
+            },
+            "end": "。",
+            "es": "Me he comprado una camisa roja muy bonita."
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "首都北京",
+                "py": "shǒudū Běijīng"
+              },
+              "adverb": {
+                "zh": "也",
+                "py": "yě"
+              },
+              "verb1": {
+                "zh": "有",
+                "py": "yǒu"
+              },
+              "object": {
+                "zh": "很多美丽的公园",
+                "py": "hěn duō měilì de gōngyuán"
+              }
+            },
+            "end": "。",
+            "es": "La capital, Pekín, también tiene muchos parques preciosos."
+          }
+        ]
+      },
+      "examples": [
+        {
+          "zh": "那个穿红衣服的高个子姑娘是我的同学。",
+          "py": "Nà ge chuān hóng yīfu de gāo gèzi gūniang shì wǒ de tóngxué.",
+          "es": "Esa chica alta vestida de rojo es mi compañera de clase."
+        },
+        {
+          "zh": "我们学生都喜欢这种安静的地方。",
+          "py": "Wǒmen xuésheng dōu xǐhuan zhè zhǒng ānjìng de dìfang.",
+          "es": "A nosotros, los estudiantes, nos gusta este tipo de sitios tranquilos."
+        },
+        {
+          "zh": "我朋友小李是上海人。",
+          "py": "Wǒ péngyou Xiǎo Lǐ shì Shànghǎirén.",
+          "es": "Mi amigo Xiao Li es de Shanghái."
+        },
+        {
+          "zh": "你说的那个老头儿是哪国人？",
+          "py": "Nǐ shuō de nà ge lǎotóur shì nǎ guó rén?",
+          "es": "¿De dónde es el anciano del que hablas?"
+        }
+      ]
+    },
+    {
+      "id": "de-di-de-completo",
+      "title": "的, 地, 得 al completo: mira qué viene detrás",
+      "unlockedBy": "b1-u09-l3",
+      "markdown": "### Suenan igual, se escriben distinto\n\n| | ¿Qué va detrás? | Ejemplo |\n|---|---|---|\n| **的** | un **nombre** | 很有爱心**的**人 |\n| **地** | un **verbo** | 认真**地**观察 |\n| **得** | (va **detrás** del verbo) | 讲**得**很生动 |\n\n- **地** va sobre todo con adjetivos de **dos sílabas**, con **很 + adjetivo** o con adjetivos **doblados**: 很认真地, 慢慢地, 高高兴兴地. Uno de una sílaba se pega directamente: **快**走, **多**吃 (sin 地).\n- **地** dice **cómo se hace** la acción (生动地讲); **得**, **cómo salió** (讲得很生动).\n- En los mensajes de móvil mucha gente escribe 的 por todo; en un examen, no.\n\n**En el esqueleto**: «X地» en *Adverbios*; V得 en *Verbo 1* y el grado en *Complemento*; los atributos con 的, dentro de *Sujeto* u *Objeto*.\n\n> 💡 **Truco**: 的 y 地 miran **hacia delante** (al nombre o al verbo que viene); 得 mira **hacia atrás**, al verbo que acaba de aparecer.",
+      "skeleton": {
+        "focus": [
+          "adverb",
+          "complement"
+        ],
+        "sentences": [
+          {
+            "slots": {
+              "subject": {
+                "zh": "王老师",
+                "py": "Wáng lǎoshī"
+              },
+              "adverb": {
+                "zh": "很认真地",
+                "py": "hěn rènzhēn de"
+              },
+              "verb1": {
+                "zh": "观察",
+                "py": "guānchá"
+              },
+              "object": {
+                "zh": "每个学生",
+                "py": "měi ge xuésheng"
+              }
+            },
+            "end": "。",
+            "es": "La profesora Wang observa con mucha atención a cada alumno."
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "王老师",
+                "py": "Wáng lǎoshī"
+              },
+              "verb1": {
+                "zh": "讲得",
+                "py": "jiǎng de"
+              },
+              "complement": {
+                "zh": "非常生动",
+                "py": "fēicháng shēngdòng"
+              }
+            },
+            "end": "。",
+            "es": "La profesora Wang explica de forma muy amena."
+          },
+          {
+            "slots": {
+              "subject": {
+                "zh": "小李",
+                "py": "Xiǎo Lǐ"
+              },
+              "verb1": {
+                "zh": "是",
+                "py": "shì"
+              },
+              "object": {
+                "zh": "一个很有爱心的人",
+                "py": "yí ge hěn yǒu àixīn de rén"
+              }
+            },
+            "end": "。",
+            "es": "Xiao Li es una persona muy buena con los demás."
+          }
+        ]
+      },
+      "examples": [
+        {
+          "zh": "孩子们高高兴兴地回家了。",
+          "py": "Háizimen gāogāoxìngxìng de huí jiā le.",
+          "es": "Los niños se han ido a casa tan contentos."
+        },
+        {
+          "zh": "大卫这个学期表现得很好。",
+          "py": "Dàwèi zhège xuéqī biǎoxiàn de hěn hǎo.",
+          "es": "David lo está haciendo muy bien este cuatrimestre."
+        },
+        {
+          "zh": "你慢慢地说，我听得懂。",
+          "py": "Nǐ mànmàn de shuō, wǒ tīng de dǒng.",
+          "es": "Habla despacio, que te entiendo."
+        },
+        {
+          "zh": "她的优点是做事很认真。",
+          "py": "Tā de yōudiǎn shì zuò shì hěn rènzhēn.",
+          "es": "Su punto fuerte es que hace las cosas con mucho cuidado."
+        }
+      ]
+    }
+  ]
+}

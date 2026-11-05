@@ -1,0 +1,139 @@
+{
+  "id": "b1-u01-l3",
+  "title": "Ya lo han arreglado: 把 + objeto + verbo + resultado",
+  "zh": "把空调修好了",
+  "goal": "Contar cómo queda algo después de actuar sobre ello con 把 + objeto + V + resultado (修好, 做完, 打扫干净, 打破).",
+  "minutes": 15,
+  "reviewed": false,
+  "vocab": [
+    { "hanzi": "安装", "pinyin": "ānzhuāng", "es": "instalar, montar", "note": "安装空调, 安装洗衣机; 把…安装好." },
+    { "hanzi": "修", "pinyin": "xiū", "es": "arreglar, reparar", "note": "修好 = dejar arreglado." },
+    { "hanzi": "设备", "pinyin": "shèbèi", "es": "equipamiento, aparatos, instalaciones" },
+    { "hanzi": "自动", "pinyin": "zìdòng", "es": "automático; automáticamente", "note": "自动门 = puerta automática." },
+    { "hanzi": "调", "pinyin": "tiáo", "es": "ajustar, regular", "note": "调温度 = regular la temperatura; 调高 / 调低. Con otra lectura (diào) significa «trasladar»." },
+    { "hanzi": "打破", "pinyin": "dǎpò", "es": "romper (golpeando o dejando caer)", "note": "把杯子打破了 = se me ha roto el vaso (lo he roto yo)." },
+    { "hanzi": "解开", "pinyin": "jiěkāi", "es": "desatar, soltar, desabrochar", "note": "解开带子 = desatar la cinta." },
+    { "hanzi": "处理", "pinyin": "chǔlǐ", "es": "ocuparse de, resolver, gestionar", "note": "处理问题 = resolver un problema." },
+    { "hanzi": "工具", "pinyin": "gōngjù", "es": "herramienta" },
+    { "hanzi": "铁", "pinyin": "tiě", "es": "hierro", "note": "Como en 地铁 (lit. «hierro bajo tierra»)." },
+    { "hanzi": "板", "pinyin": "bǎn", "es": "tabla, placa, plancha", "note": "黑板 pizarra; 铁板 plancha de hierro." },
+    { "hanzi": "完整", "pinyin": "wánzhěng", "es": "completo, entero, intacto" },
+    { "hanzi": "物业", "pinyin": "wùyè", "es": "administración de la finca, servicio de mantenimiento", "note": "Fuera del HSK 1–3. En las urbanizaciones chinas se llama al 物业 para cualquier avería." }
+  ],
+  "extraVocab": ["物业"],
+  "steps": [
+    {
+      "type": "objective",
+      "canSay": [
+        { "zh": "物业把空调修好了。", "py": "Wùyè bǎ kōngtiáo xiū hǎo le.", "es": "Los de mantenimiento han arreglado el aire acondicionado." },
+        { "zh": "我已经把洗衣机安装好了。", "py": "Wǒ yǐjīng bǎ xǐyījī ānzhuāng hǎo le.", "es": "Ya he instalado la lavadora." },
+        { "zh": "你把房间打扫干净吧。", "py": "Nǐ bǎ fángjiān dǎsǎo gānjìng ba.", "es": "Deja la habitación bien limpia." }
+      ]
+    },
+    { "type": "vocab", "title": "Averías y arreglos", "words": ["安装", "修", "设备", "自动", "调", "打破", "解开", "处理", "工具", "铁", "板", "完整", "物业"] },
+    {
+      "type": "phonetics-drill",
+      "title": "Verbo + resultado: dos tonos plenos y 了 neutro",
+      "markdown": "En **修好, 做完, 打破** el resultado **no** pierde el tono: se dicen dos sílabas plenas, y el acento de la frase cae justo ahí, en **cómo ha quedado** la cosa. Lo que va detrás (了) es neutro y corto.\n\n- **修好了 xiū hǎo le**: primero alto y plano, tercero (aquí, medio tercero), y *le* flojo.\n- **打破 dǎpò**: *p* con aire (aspirada), no «b».\n- **处理 chǔlǐ**: dos terceros tonos; el primero se dice como segundo (*chú lǐ*), aunque se escribe chǔ.\n- **安装 ānzhuāng**: *zh* retrofleja, la lengua hacia atrás.",
+      "items": [
+        { "audio": "修好了", "options": ["xiū hǎo le", "xiū hào le", "xiù hǎo le"], "answer": 0, "explain": "好 «bien» en tercer tono; 了 neutro." },
+        { "audio": "打破", "options": ["dǎpò", "dǎbò", "dàpò"], "answer": 0, "explain": "p aspirada y cuarto tono que cae." },
+        { "audio": "把空调修好", "prompt": "¿Dónde cae el acento?", "options": ["En 修好 (el resultado)", "En 把", "En 空"], "answer": 0, "explain": "La información nueva es cómo queda el aire acondicionado." },
+        { "audio": "处理", "options": ["chǔlǐ", "chùlǐ", "cǔlǐ"], "answer": 0, "explain": "Se escribe chǔlǐ y se dice chú lǐ (sandhi del tercer tono)." },
+        { "audio": "安装", "options": ["ānzhuāng", "ānzhuàng", "ānzāng"], "answer": 0, "explain": "Dos primeros tonos; zh retrofleja." }
+      ]
+    },
+    {
+      "type": "char-of-day",
+      "chars": ["修", "破"],
+      "mnemonics": {
+        "修": "亻 (persona) + 攵 (mano que golpea) + 彡 (adornos): alguien que da golpecitos y pule hasta dejar algo bien. Arreglar.",
+        "破": "石 (piedra) + 皮 (piel, pí → pò): la piedra que rompe la superficie. Roto."
+      }
+    },
+    {
+      "type": "skeleton",
+      "title": "Sujeto + 把 + objeto + verbo + resultado",
+      "markdown": "La segunda forma típica de 把: lo que va detrás del verbo es un **complemento de resultado** (los de A2: 好, 完, 干净, 开…). La frase dice **cómo ha quedado** el objeto:\n\n**Sujeto + 把 + objeto + V + resultado (+ 了)**\n\n修**好** (arreglado), 做**完** (terminado), 打扫**干净** (limpio), 打**破** (roto), 解**开** (suelto), 调**高** (más alto).\n\n- Es la manera más natural de hablar de **tareas y encargos**: 你把房间打扫干净吧, 我已经把作业做完了.\n- **Negativa**: 没 / 还没 / 别 delante de 把. Con 别 + 打破 / 忘 se añade a menudo 了: 别把杯子打破了 («no vayas a romper el vaso»).\n- **Esqueleto**: verbo + resultado juntos en *Verbo 1* (como 看完了 en A2); el 了 final en *Partícula*.",
+      "focus": ["with", "verb1"],
+      "compare": true,
+      "sentences": [
+        { "slots": { "subject": { "zh": "物业", "py": "wùyè" }, "with": { "zh": "把空调", "py": "bǎ kōngtiáo" }, "verb1": { "zh": "修好", "py": "xiū hǎo" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Los de mantenimiento han arreglado el aire acondicionado.", "esOrder": [{ "text": "Los de mantenimiento", "slot": "subject" }, { "text": "han arreglado", "slot": "verb1" }, { "text": "el aire acondicionado", "slot": "with" }] },
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "已经", "py": "yǐjīng" }, "with": { "zh": "把洗衣机", "py": "bǎ xǐyījī" }, "verb1": { "zh": "安装好", "py": "ānzhuāng hǎo" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Ya he instalado la lavadora." },
+        { "slots": { "subject": { "zh": "小李", "py": "Xiǎo Lǐ" }, "with": { "zh": "把杯子", "py": "bǎ bēizi" }, "verb1": { "zh": "打破", "py": "dǎpò" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Xiao Li ha roto el vaso." },
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "with": { "zh": "把房间", "py": "bǎ fángjiān" }, "verb1": { "zh": "打扫干净", "py": "dǎsǎo gānjìng" }, "particle": { "zh": "吧", "py": "ba" } }, "end": "。", "es": "Deja la habitación bien limpia." },
+        { "slots": { "subject": { "zh": "雨果", "py": "Yǔguǒ" }, "with": { "zh": "把空调的温度", "py": "bǎ kōngtiáo de wēndù" }, "verb1": { "zh": "调高", "py": "tiáo gāo" }, "particle": { "zh": "了", "py": "le" } }, "end": "。", "es": "Hugo ha subido la temperatura del aire acondicionado." }
+      ],
+      "negative": [
+        { "slots": { "subject": { "zh": "我", "py": "wǒ" }, "adverb": { "zh": "还没", "py": "hái méi" }, "with": { "zh": "把作业", "py": "bǎ zuòyè" }, "verb1": { "zh": "做完", "py": "zuò wán" } }, "end": "。", "es": "Todavía no he terminado los deberes." },
+        { "slots": { "adverb": { "zh": "别", "py": "bié" }, "with": { "zh": "把盘子", "py": "bǎ pánzi" }, "verb1": { "zh": "打破", "py": "dǎpò" }, "particle": { "zh": "了", "py": "le" } }, "end": "！", "es": "¡No vayas a romper los platos!" }
+      ],
+      "question": [
+        { "slots": { "subject": { "zh": "你", "py": "nǐ" }, "with": { "zh": "把这个问题", "py": "bǎ zhège wèntí" }, "verb1": { "zh": "处理好", "py": "chǔlǐ hǎo" }, "particle": { "zh": "了吗", "py": "le ma" } }, "end": "？", "es": "¿Has resuelto este problema?" },
+        { "slots": { "subject": { "zh": "谁", "py": "shéi" }, "with": { "zh": "把箱子上的带子", "py": "bǎ xiāngzi shang de dàizi" }, "verb1": { "zh": "解开", "py": "jiěkāi" }, "particle": { "zh": "了", "py": "le" } }, "end": "？", "es": "¿Quién ha desatado la cinta de la caja?" }
+      ],
+      "mistakes": [
+        { "wrong": "我把作业做。", "right": "我把作业做完了。", "why": "Con 把 el verbo nunca va solo: tiene que decir cómo queda el objeto (做完, 做好)." },
+        { "wrong": "我把空调修了好。", "right": "我把空调修好了。", "why": "El resultado va pegado al verbo; 了 va detrás de los dos." },
+        { "wrong": "我把杯子破了。", "right": "我把杯子打破了。", "why": "破 es el resultado; falta el verbo que lo causa (打)." }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Llamada a mantenimiento",
+      "lines": [
+        { "speaker": "雨果", "zh": "喂，你好，是物业吗？我住在三号楼十二层。", "py": "Wéi, nǐ hǎo, shì wùyè ma? Wǒ zhù zài sān hào lóu shí'èr céng.", "es": "¿Hola? ¿Es mantenimiento? Vivo en el bloque 3, planta 12." },
+        { "speaker": "物业", "zh": "你好，有什么问题？", "py": "Nǐ hǎo, yǒu shénme wèntí?", "es": "Hola, ¿qué problema tiene?" },
+        { "speaker": "雨果", "zh": "我房间的空调坏了，你们能来把它修好吗？", "py": "Wǒ fángjiān de kōngtiáo huài le, nǐmen néng lái bǎ tā xiū hǎo ma?", "es": "Se me ha estropeado el aire de la habitación, ¿pueden venir a arreglarlo?" },
+        { "speaker": "物业", "zh": "可以。空调是自动的吗？", "py": "Kěyǐ. Kōngtiáo shì zìdòng de ma?", "es": "Claro. ¿El aire es automático?" },
+        { "speaker": "雨果", "zh": "是自动的，可是它一直吹冷风，我把温度调高了也没用。", "py": "Shì zìdòng de, kěshì tā yìzhí chuī lěng fēng, wǒ bǎ wēndù tiáo gāo le yě méi yòng.", "es": "Sí, pero no para de echar aire frío; aunque suba la temperatura, no sirve de nada." },
+        { "speaker": "物业", "zh": "好，下午我们带工具过去，把它处理好。", "py": "Hǎo, xiàwǔ wǒmen dài gōngjù guòqu, bǎ tā chǔlǐ hǎo.", "es": "De acuerdo, por la tarde vamos con las herramientas y se lo dejamos solucionado." },
+        { "speaker": "雨果", "zh": "还有，洗衣机也还没安装好。", "py": "Háiyǒu, xǐyījī yě hái méi ānzhuāng hǎo.", "es": "Otra cosa: la lavadora tampoco está instalada todavía." },
+        { "speaker": "物业", "zh": "没问题，我们一起把这些设备安装好。", "py": "Méi wèntí, wǒmen yìqǐ bǎ zhèxiē shèbèi ānzhuāng hǎo.", "es": "Sin problema, se lo instalamos todo de una vez." },
+        { "speaker": "物业", "zh": "空调修好了。洗衣机我也安装好了，你试试。", "py": "Kōngtiáo xiū hǎo le. Xǐyījī wǒ yě ānzhuāng hǎo le, nǐ shìshi.", "es": "El aire ya está arreglado. La lavadora también se la he instalado: pruébela." },
+        { "speaker": "雨果", "zh": "太好了！对了，我昨天不小心把一个盘子打破了。", "py": "Tài hǎo le! Duì le, wǒ zuótiān bù xiǎoxīn bǎ yí ge pánzi dǎpò le.", "es": "¡Estupendo! Por cierto, ayer rompí un plato sin querer." },
+        { "speaker": "物业", "zh": "那是你自己的东西吗？", "py": "Nà shì nǐ zìjǐ de dōngxi ma?", "es": "¿Era suyo?" },
+        { "speaker": "雨果", "zh": "不是，是房东的。我得把这件事告诉她。", "py": "Bú shì, shì fángdōng de. Wǒ děi bǎ zhè jiàn shì gàosu tā.", "es": "No, de la casera. Tengo que contárselo." },
+        { "speaker": "物业", "zh": "对，你跟房东说一下就行了。", "py": "Duì, nǐ gēn fángdōng shuō yíxià jiù xíng le.", "es": "Eso es, basta con que se lo diga a la casera." }
+      ],
+      "notes": "El 物业 es la empresa que gestiona la urbanización (小区): se le llama por averías, paquetes o problemas con los vecinos. Fíjate en 把一个盘子打破了: normalmente el objeto de 把 es concreto, pero con accidentes (打破, 弄坏) se admite «un plato» porque cuenta qué le ha pasado a algo que estaba en casa. 把这件事告诉她 = contarle este asunto."
+    },
+    { "type": "exercises", "count": 17, "bank": ["g-complements", "g-le", "g-word-order"] },
+    {
+      "type": "sentence-builder",
+      "items": [
+        { "sentence": { "slots": { "subject": { "zh": "物业" }, "with": { "zh": "把空调" }, "verb1": { "zh": "修好" }, "particle": { "zh": "了" } }, "end": "。", "es": "Los de mantenimiento han arreglado el aire acondicionado." }, "distractors": ["修"] },
+        { "sentence": { "slots": { "subject": { "zh": "你" }, "with": { "zh": "把房间" }, "verb1": { "zh": "打扫干净" }, "particle": { "zh": "吧" } }, "end": "。", "es": "Deja la habitación bien limpia." } },
+        { "sentence": { "slots": { "subject": { "zh": "我" }, "adverb": { "zh": "还没" }, "with": { "zh": "把作业" }, "verb1": { "zh": "做完" } }, "end": "。", "es": "Todavía no he terminado los deberes." }, "distractors": ["不"] },
+        { "sentence": { "slots": { "time0": { "zh": "今天下午" }, "subject": { "zh": "物业的人" }, "adverb": { "zh": "已经" }, "with": { "zh": "把新洗衣机" }, "verb1": { "zh": "安装好" }, "particle": { "zh": "了" } }, "end": "。", "es": "Esta tarde los de mantenimiento ya han instalado la lavadora nueva." } },
+        { "sentence": { "slots": { "time0": { "zh": "明天" }, "subject": { "zh": "我" }, "adverb": { "zh": "一定" }, "aux": { "zh": "要" }, "with": { "zh": "把这些问题" }, "verb1": { "zh": "处理好" } }, "end": "。", "es": "Mañana tengo que resolver estos problemas sin falta." } }
+      ]
+    },
+    {
+      "type": "listen-speak",
+      "shadowing": [
+        { "zh": "物业把空调修好了。", "py": "Wùyè bǎ kōngtiáo xiū hǎo le.", "es": "Los de mantenimiento han arreglado el aire acondicionado." },
+        { "zh": "我还没把作业做完。", "py": "Wǒ hái méi bǎ zuòyè zuò wán.", "es": "Todavía no he terminado los deberes." },
+        { "zh": "别把盘子打破了！", "py": "Bié bǎ pánzi dǎpò le!", "es": "¡No vayas a romper los platos!" },
+        { "zh": "你把房间打扫干净吧。", "py": "Nǐ bǎ fángjiān dǎsǎo gānjìng ba.", "es": "Deja la habitación bien limpia." }
+      ],
+      "respond": [
+        { "q": { "zh": "你把作业做完了吗？", "py": "Nǐ bǎ zuòyè zuò wán le ma?", "es": "¿Has terminado los deberes?" }, "model": { "zh": "还没，我晚上把它做完。", "py": "Hái méi, wǒ wǎnshang bǎ tā zuò wán.", "es": "Todavía no; los termino esta noche." } },
+        { "q": { "zh": "空调坏了，怎么办？", "py": "Kōngtiáo huài le, zěnme bàn?", "es": "Se ha estropeado el aire, ¿qué hago?" }, "model": { "zh": "给物业打电话，他们会把它修好。", "py": "Gěi wùyè dǎ diànhuà, tāmen huì bǎ tā xiū hǎo.", "es": "Llama a mantenimiento: te lo arreglarán." } }
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Una semana de averías",
+      "text": "雨果住的楼很新，设备也很好：电梯是新的，楼门是自动的，每个房间都有空调。可是住了一个星期，问题就来了。先是空调坏了，一直吹冷风。雨果给物业打电话，物业的人很快就带着工具来了，半个小时就把空调修好了。然后是洗衣机：房东买了一台新的，可是没有人来安装。雨果先把箱子上的带子解开，把洗衣机拿了出来。洗衣机很完整，一点儿问题也没有。他看了看说明书，在洗衣机下面放了一块铁板，一个人就把它安装好了。晚上他不小心把一个杯子打破了。他想：这个星期的事真多！不过，所有的问题都处理好了，下个星期应该会好一点儿。",
+      "es": "El edificio de Hugo es muy nuevo y está muy bien equipado: el ascensor es nuevo, la puerta del portal es automática y todas las habitaciones tienen aire acondicionado. Pero a la semana empezaron los problemas. Primero se estropeó el aire: no paraba de echar frío. Hugo llamó a mantenimiento; vinieron enseguida con las herramientas y en media hora lo dejaron arreglado. Luego, la lavadora: la casera había comprado una nueva, pero nadie venía a instalarla. Hugo desató primero la cinta de la caja y sacó la lavadora. Estaba entera, sin ningún desperfecto. Leyó las instrucciones, puso una plancha de hierro debajo y la instaló él solo. Por la noche rompió un vaso sin querer. Pensó: ¡cuántas cosas esta semana! Pero ya está todo resuelto, y la semana que viene seguro que irá mejor.",
+      "questions": [
+        { "q": "¿Quién arregló el aire acondicionado?", "options": ["物业的人", "雨果", "房东"], "answer": 0 },
+        { "q": "¿Cuánto tardaron en arreglarlo?", "options": ["半个小时", "一个星期", "一天"], "answer": 0 },
+        { "q": "¿Quién instaló la lavadora?", "options": ["雨果自己", "物业的人", "房东"], "answer": 0 },
+        { "q": "¿Qué rompió Hugo por la noche?", "options": ["一个杯子", "一个盘子", "空调"], "answer": 0 }
+      ]
+    },
+    { "type": "notes-growth" }
+  ]
+}

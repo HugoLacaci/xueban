@@ -1,0 +1,169 @@
+{
+  "unitId": "b1-u02",
+  "scenarios": [
+    {
+      "id": "b1-u02-police-report",
+      "title": "Denunciar un robo",
+      "zh": "报警",
+      "level": 2,
+      "setting": "A Hugo le acaban de robar el bolso en el metro de Shanghái. Va al puesto de policía de la estación para denunciarlo. Tú (la app) eres la agente que le atiende.",
+      "role": "agente de policía",
+      "roleZh": "警察",
+      "voice": "f",
+      "goals": ["Explicar qué te han robado usando 被", "Decir dónde y cuándo pasó", "Describir lo que había dentro", "Pedir un justificante (证明) y despedirte"],
+      "vocab": ["被", "偷走", "小偷", "皮包", "现金", "身份证", "证件", "没被", "证明", "表格"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "你好，我是警察。发生了什么事？", "py": "Nǐ hǎo, wǒ shì jǐngchá. Fāshēng le shénme shì?", "es": "Hola, soy agente de policía. ¿Qué ha ocurrido?" },
+          "user": [
+            { "zh": "你好，我的皮包被小偷偷走了。", "py": "Nǐ hǎo, wǒ de píbāo bèi xiǎotōu tōuzǒu le.", "es": "Hola, un ladrón me ha robado el bolso.", "keywords": ["被", "偷"], "next": "n2", "goal": 0 },
+            { "zh": "我要报警，我的皮包被偷了。", "py": "Wǒ yào bàojǐng, wǒ de píbāo bèi tōu le.", "es": "Quiero poner una denuncia: me han robado el bolso.", "keywords": ["报警", "被偷"], "next": "n2", "goal": 0 }
+          ],
+          "hint": "Empieza por lo afectado: 我的皮包 + 被 (小偷) + 偷走了."
+        },
+        "n2": {
+          "npc": { "zh": "你的皮包是在哪儿、什么时候被偷的？", "py": "Nǐ de píbāo shì zài nǎr, shénme shíhou bèi tōu de?", "es": "¿Dónde y cuándo le robaron el bolso?" },
+          "user": [
+            { "zh": "在地铁二号线上，大概下午三点。", "py": "Zài dìtiě èr hào xiàn shang, dàgài xiàwǔ sān diǎn.", "es": "En la línea 2 del metro, sobre las tres de la tarde.", "keywords": ["地铁", "点"], "next": "n3", "goal": 1 },
+            { "zh": "我没注意，可能是在地铁上，人太多了。", "py": "Wǒ méi zhùyì, kěnéng shì zài dìtiě shang, rén tài duō le.", "es": "No me di cuenta; seguramente en el metro, había muchísima gente.", "keywords": ["地铁", "没注意"], "next": "n3", "goal": 1 }
+          ],
+          "hint": "Di el lugar (在地铁上) y la hora aproximada (大概下午三点)."
+        },
+        "n3": {
+          "npc": { "zh": "好。皮包里有什么东西？", "py": "Hǎo. Píbāo li yǒu shénme dōngxi?", "es": "Bien. ¿Qué había dentro del bolso?" },
+          "user": [
+            { "zh": "有五百块现金和我的身份证。", "py": "Yǒu wǔbǎi kuài xiànjīn hé wǒ de shēnfènzhèng.", "es": "Quinientos yuanes en efectivo y mi documento de identidad.", "keywords": ["现金", "身份证"], "next": "n4", "goal": 2 },
+            { "zh": "有一张银行卡和我的学生证。", "py": "Yǒu yì zhāng yínhángkǎ hé wǒ de xuéshengzhèng.", "es": "Una tarjeta del banco y mi carné de estudiante.", "keywords": ["银行卡", "学生证"], "next": "n4", "goal": 2 }
+          ],
+          "hint": "Enumera lo que llevabas: 现金, 身份证, 银行卡, 学生证…"
+        },
+        "n4": {
+          "npc": { "zh": "你的护照呢？也被偷了吗？", "py": "Nǐ de hùzhào ne? Yě bèi tōu le ma?", "es": "¿Y el pasaporte? ¿También se lo han robado?" },
+          "user": [
+            { "zh": "没有，护照没被偷，在宿舍里。", "py": "Méiyǒu, hùzhào méi bèi tōu, zài sùshè li.", "es": "No, el pasaporte no me lo han robado: está en la residencia.", "keywords": ["没被"], "next": "n5" },
+            { "zh": "护照也被偷了！我该怎么办？", "py": "Hùzhào yě bèi tōu le! Wǒ gāi zěnme bàn?", "es": "¡También me han robado el pasaporte! ¿Qué hago?", "keywords": ["也被", "怎么办"], "next": "n4b" }
+          ],
+          "hint": "Para negar la pasiva, 没 va delante de 被: 护照没被偷."
+        },
+        "n4b": {
+          "npc": { "zh": "别着急。你要亲自去你们国家的大使馆办理新的护照。我们先给你写一个证明。", "py": "Bié zháojí. Nǐ yào qīnzì qù nǐmen guójiā de dàshǐguǎn bànlǐ xīn de hùzhào. Wǒmen xiān gěi nǐ xiě yí ge zhèngmíng.", "es": "Tranquilo. Tiene que ir en persona a la embajada de su país a tramitar el pasaporte nuevo. Primero le hacemos un justificante." },
+          "user": [
+            { "zh": "好的，谢谢。我需要这个证明。", "py": "Hǎo de, xièxie. Wǒ xūyào zhège zhèngmíng.", "es": "Vale, gracias. Necesito ese justificante.", "keywords": ["证明"], "next": "n6", "goal": 3 }
+          ],
+          "hint": "Da las gracias y di que necesitas el 证明."
+        },
+        "n5": {
+          "npc": { "zh": "好，请在这张表格上写你的名字和电话。我们抓住小偷以后，会给你打电话。", "py": "Hǎo, qǐng zài zhè zhāng biǎogé shang xiě nǐ de míngzi hé diànhuà. Wǒmen zhuāzhù xiǎotōu yǐhòu, huì gěi nǐ dǎ diànhuà.", "es": "Bien, escriba en este formulario su nombre y su teléfono. Cuando atrapemos al ladrón, le llamaremos." },
+          "user": [
+            { "zh": "能给我一个证明吗？我要办新的学生证。", "py": "Néng gěi wǒ yí ge zhèngmíng ma? Wǒ yào bàn xīn de xuéshengzhèng.", "es": "¿Me puede dar un justificante? Tengo que hacerme un carné de estudiante nuevo.", "keywords": ["证明"], "next": "n6", "goal": 3 },
+            { "zh": "你们能抓住他吗？", "py": "Nǐmen néng zhuāzhù tā ma?", "es": "¿Creen que lo cogerán?", "keywords": ["抓住"], "next": "n5b" }
+          ],
+          "hint": "Pide un justificante (能给我一个证明吗？) o pregunta si lo atraparán (抓住)."
+        },
+        "n5b": {
+          "npc": { "zh": "地铁站里有很多警察，这个星期已经有两个小偷被抓住了。", "py": "Dìtiězhàn li yǒu hěn duō jǐngchá, zhège xīngqī yǐjīng yǒu liǎng ge xiǎotōu bèi zhuāzhù le.", "es": "En las estaciones hay muchos agentes: esta semana ya han atrapado a dos ladrones." },
+          "user": [
+            { "zh": "太好了。能给我一个证明吗？", "py": "Tài hǎo le. Néng gěi wǒ yí ge zhèngmíng ma?", "es": "Estupendo. ¿Me puede dar un justificante?", "keywords": ["证明"], "next": "n6", "goal": 3 }
+          ],
+          "hint": "Ahora pide el justificante (证明)."
+        },
+        "n6": {
+          "npc": { "zh": "可以，这是你的证明。别着急，有消息我们立刻告诉你。", "py": "Kěyǐ, zhè shì nǐ de zhèngmíng. Bié zháojí, yǒu xiāoxi wǒmen lìkè gàosu nǐ.", "es": "Claro, aquí tiene su justificante. No se preocupe: en cuanto sepamos algo, le avisamos." },
+          "user": [
+            { "zh": "谢谢您，再见！", "py": "Xièxie nín, zàijiàn!", "es": "¡Muchas gracias, adiós!", "keywords": ["谢谢", "再见"], "next": "n7", "goal": 3 },
+            { "zh": "麻烦您了，谢谢！", "py": "Máfan nín le, xièxie!", "es": "Siento las molestias, ¡gracias!", "keywords": ["麻烦", "谢谢"], "next": "n7", "goal": 3 }
+          ],
+          "hint": "Despídete: 谢谢您 o 麻烦您了 (perdone las molestias)."
+        },
+        "n7": {
+          "npc": { "zh": "不客气。以后在地铁上要小心！", "py": "Bú kèqi. Yǐhòu zài dìtiě shang yào xiǎoxīn!", "es": "De nada. ¡Y a partir de ahora, cuidado en el metro!" },
+          "end": true,
+          "feedback": "Has puesto una denuncia completa: qué te robaron (我的皮包被小偷偷走了), dónde y cuándo, qué había dentro y has pedido el 证明. Recuerda: lo afectado va primero, 被 + quién, y el verbo con su resultado (偷走了); para negar, 没被."
+        }
+      }
+    },
+    {
+      "id": "b1-u02-landlord",
+      "title": "Llamar al casero",
+      "zh": "给房东打电话",
+      "level": 2,
+      "setting": "Hugo vuelve a su piso nuevo y se encuentra la puerta forzada: le han robado el ordenador. Llama por teléfono al casero. Tú (la app) eres el casero, el señor Zhang.",
+      "role": "casero",
+      "roleZh": "房东",
+      "voice": "m",
+      "goals": ["Explicar lo que ha pasado con 被", "Decir qué se han llevado y qué no (没被)", "Pedir que arreglen la puerta", "Preguntar por el seguro o la responsabilidad"],
+      "vocab": ["被", "破坏", "偷走", "没被", "报警", "修", "保险", "责任", "赶快", "立刻"],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": { "zh": "喂，雨果吗？有什么事？", "py": "Wéi, Yǔguǒ ma? Yǒu shénme shì?", "es": "¿Diga? ¿Hugo? ¿Qué pasa?" },
+          "user": [
+            { "zh": "张先生，您好！我家的门被人破坏了！", "py": "Zhāng xiānsheng, nín hǎo! Wǒ jiā de mén bèi rén pòhuài le!", "es": "¡Hola, señor Zhang! ¡Me han forzado la puerta de casa!", "keywords": ["门", "被", "破坏"], "next": "n2", "goal": 0 },
+            { "zh": "不好了，我家里的东西被偷了！", "py": "Bù hǎo le, wǒ jiā li de dōngxi bèi tōu le!", "es": "¡Ha pasado algo malo: me han robado cosas de casa!", "keywords": ["被偷"], "next": "n2", "goal": 0 }
+          ],
+          "hint": "Cuenta lo que ha pasado con 被: 门被人破坏了 / 东西被偷了."
+        },
+        "n2": {
+          "npc": { "zh": "什么？你没事吧？", "py": "Shénme? Nǐ méi shì ba?", "es": "¿Qué? ¿Estás bien?" },
+          "user": [
+            { "zh": "我没事。我刚回来，我的电脑被偷走了。", "py": "Wǒ méi shì. Wǒ gāng huílai, wǒ de diànnǎo bèi tōuzǒu le.", "es": "Estoy bien. Acabo de volver y me han robado el ordenador.", "keywords": ["电脑", "被"], "next": "n3", "goal": 1 },
+            { "zh": "我没事，可是我的电脑和现金都被拿走了。", "py": "Wǒ méi shì, kěshì wǒ de diànnǎo hé xiànjīn dōu bèi názǒu le.", "es": "Yo estoy bien, pero se han llevado el ordenador y el efectivo.", "keywords": ["都被", "拿走"], "next": "n3", "goal": 1 }
+          ],
+          "hint": "Di qué se han llevado: 我的电脑被偷走了."
+        },
+        "n3": {
+          "npc": { "zh": "你报警了吗？", "py": "Nǐ bàojǐng le ma?", "es": "¿Has llamado a la policía?" },
+          "user": [
+            { "zh": "报了，警察马上就来。", "py": "Bào le, jǐngchá mǎshàng jiù lái.", "es": "Sí, la policía viene enseguida.", "keywords": ["报了", "警察"], "next": "n4" },
+            { "zh": "还没有，我先给您打电话了。", "py": "Hái méiyǒu, wǒ xiān gěi nín dǎ diànhuà le.", "es": "Todavía no, le he llamado a usted primero.", "keywords": ["还没"], "next": "n3b" }
+          ],
+          "hint": "Contesta si has avisado a la policía (报警)."
+        },
+        "n3b": {
+          "npc": { "zh": "你赶快报警吧！我也立刻过来。", "py": "Nǐ gǎnkuài bàojǐng ba! Wǒ yě lìkè guòlai.", "es": "¡Llama a la policía ya! Yo también voy para allá ahora mismo." },
+          "user": [
+            { "zh": "好，我马上打110。", "py": "Hǎo, wǒ mǎshàng dǎ yāo yāo líng.", "es": "Vale, llamo ahora mismo al 110.", "keywords": ["马上", "110"], "next": "n4" }
+          ],
+          "hint": "Di que llamas ya: 我马上打110 (yāo yāo líng)."
+        },
+        "n4": {
+          "npc": { "zh": "别的东西呢？你的护照没被拿走吧？", "py": "Bié de dōngxi ne? Nǐ de hùzhào méi bèi názǒu ba?", "es": "¿Y lo demás? No se habrán llevado tu pasaporte, ¿no?" },
+          "user": [
+            { "zh": "还好，护照没被拿走。", "py": "Hái hǎo, hùzhào méi bèi názǒu.", "es": "Menos mal, el pasaporte no se lo han llevado.", "keywords": ["没被"], "next": "n5", "goal": 1 },
+            { "zh": "护照还在，可是我的自行车也被骑走了。", "py": "Hùzhào hái zài, kěshì wǒ de zìxíngchē yě bèi qízǒu le.", "es": "El pasaporte sigue aquí, pero también se han llevado la bici.", "keywords": ["也被"], "next": "n5", "goal": 1 }
+          ],
+          "hint": "Usa 没被 para lo que no se han llevado."
+        },
+        "n5": {
+          "npc": { "zh": "门坏了，晚上不安全。我明天找人来修。", "py": "Mén huài le, wǎnshang bù ānquán. Wǒ míngtiān zhǎo rén lái xiū.", "es": "Con la puerta rota no es seguro por la noche. Mañana busco a alguien que la arregle." },
+          "user": [
+            { "zh": "能今天修吗？我怕小偷再来。", "py": "Néng jīntiān xiū ma? Wǒ pà xiǎotōu zài lái.", "es": "¿Se puede arreglar hoy? Me da miedo que vuelva el ladrón.", "keywords": ["今天", "修"], "next": "n6", "goal": 2 },
+            { "zh": "麻烦您今天晚上找人来修，好吗？", "py": "Máfan nín jīntiān wǎnshang zhǎo rén lái xiū, hǎo ma?", "es": "¿Le importaría buscar a alguien esta noche para arreglarla?", "keywords": ["麻烦", "修"], "next": "n6", "goal": 2 }
+          ],
+          "hint": "Pide que la arreglen hoy: 能今天修吗？ / 麻烦您……"
+        },
+        "n6": {
+          "npc": { "zh": "好吧，我今天晚上就找人来修门。", "py": "Hǎo ba, wǒ jīntiān wǎnshang jiù zhǎo rén lái xiū mén.", "es": "Bueno, esta misma noche busco a alguien para arreglar la puerta." },
+          "user": [
+            { "zh": "谢谢！房子有保险吗？我的电脑能退钱吗？", "py": "Xièxie! Fángzi yǒu bǎoxiǎn ma? Wǒ de diànnǎo néng tuì qián ma?", "es": "¡Gracias! ¿La casa tiene seguro? ¿Me devolverán el dinero del ordenador?", "keywords": ["保险"], "next": "n7", "goal": 3 },
+            { "zh": "谢谢！电脑被偷了，这是谁的责任？", "py": "Xièxie! Diànnǎo bèi tōu le, zhè shì shéi de zérèn?", "es": "¡Gracias! Y lo del ordenador, ¿de quién es la responsabilidad?", "keywords": ["责任"], "next": "n7", "goal": 3 }
+          ],
+          "hint": "Pregunta por el seguro (保险) o por la responsabilidad (责任)."
+        },
+        "n7": {
+          "npc": { "zh": "房子有保险，可是你的电脑要用你自己的保险。你先把警察的证明留好。", "py": "Fángzi yǒu bǎoxiǎn, kěshì nǐ de diànnǎo yào yòng nǐ zìjǐ de bǎoxiǎn. Nǐ xiān bǎ jǐngchá de zhèngmíng liúhǎo.", "es": "La casa tiene seguro, pero lo del ordenador tiene que ir por tu propio seguro. Guarda bien el justificante de la policía." },
+          "user": [
+            { "zh": "好的，我知道了。谢谢您！", "py": "Hǎo de, wǒ zhīdào le. Xièxie nín!", "es": "Vale, entendido. ¡Gracias!", "keywords": ["知道", "谢谢"], "next": "n8" }
+          ],
+          "hint": "Despídete dando las gracias."
+        },
+        "n8": {
+          "npc": { "zh": "不客气。晚上把门关好，有事给我打电话。", "py": "Bú kèqi. Wǎnshang bǎ mén guānhǎo, yǒu shì gěi wǒ dǎ diànhuà.", "es": "De nada. Por la noche cierra bien la puerta y, si pasa algo, llámame." },
+          "end": true,
+          "feedback": "Has contado el robo con 被 (门被人破坏了, 电脑被偷走了), has dicho lo que no se llevaron con 没被, has pedido que arreglen la puerta y has preguntado por el seguro. Fíjate en que el casero contesta con 把 (把门关好, 把证明留好): las dos caras del mismo hueco."
+        }
+      }
+    }
+  ]
+}

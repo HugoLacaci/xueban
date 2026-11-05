@@ -1,0 +1,254 @@
+{
+  "id": "tonos",
+  "title": "Tonos",
+  "zh": "声调",
+  "order": 18,
+  "icon": "Music",
+  "summary": "Los cuatro tonos y el neutro, cómo se encadenan en las palabras y los cambios de tono (3 + 3, 一, 不, erhua) que hay que hacer al hablar.",
+  "kind": "topic",
+  "reviewed": false,
+  "sections": [
+    {
+      "id": "cuatro-tonos",
+      "title": "Los cuatro tonos",
+      "unlockedBy": "e0-10",
+      "markdown": "### Misma sílaba, otra palabra\n\nEn español la melodía cambia la **frase** («¿vienes?» / «¡ven!»). En chino cambia la **palabra**: cada sílaba lleva su propia melodía.\n\n| Tono | Marca | Melodía | Ejemplo | Truco |\n|---|---|---|---|---|\n| 1.º | ā | Alto y plano (55) | 妈 mā «mamá» | El «aaa» del médico |\n| 2.º | á | Sube (35) | 麻 má «cáñamo» | Un «¿eh?» de sorpresa |\n| 3.º | ǎ | Baja al fondo (21; aislado, 214) | 马 mǎ «caballo» | Baja la barbilla |\n| 4.º | à | Cae de golpe (51) | 骂 mà «regañar» | Un «¡no!» tajante |\n| neutro | — | Corto y ligero | 吗 ma | Sin melodía propia |\n\nEl esquema completo, con los cinco niveles de Chao, está en el apunte de referencia **Esquema de los tonos (Chao)**.\n\n### Piensa el 3.º como tono **grave**\n\nEl 3.º completo (214, baja y sube) solo se oye aislado o al final con énfasis. Dentro de la frase casi siempre se queda en **21**: baja y no sube. Si exageras la subida en todas partes, sonarás forzado.\n\n### Cuatro ayudas\n\n- **Mano**: dibuja el tono en el aire: → (1), ↗ (2), ↘↗ con la subida corta (3), ↘ (4).\n- **Color**: en Xuébàn, 1.º rojo, 2.º verde, 3.º azul, 4.º morado y neutro gris (se cambia en Ajustes).\n- **Tilde**: la marca imita el dibujo: ā á ǎ à. El neutro no lleva.\n- **Número**: sin teclado con tildes, *ma1 ma2 ma3 ma4*, y *ma5* o *ma* para el neutro: escribe *mai3* y verás *mǎi*.",
+      "examples": [
+        {
+          "zh": "妈、麻、马、骂、吗",
+          "py": "mā, má, mǎ, mà, ma",
+          "es": "mamá, cáñamo, caballo, regañar, ¿…?",
+          "note": "Cinco palabras, una sola sílaba."
+        },
+        {
+          "zh": "妈妈骂马。",
+          "py": "Māma mà mǎ.",
+          "es": "Mamá regaña al caballo."
+        },
+        {
+          "zh": "他不买，他卖。",
+          "py": "Tā bù mǎi, tā mài.",
+          "es": "No compra: vende.",
+          "note": "买 mǎi (3.º) frente a 卖 mài (4.º)."
+        },
+        {
+          "zh": "妈妈买马，马不好，妈妈骂马。",
+          "py": "Māma mǎi mǎ, mǎ bù hǎo, māma mà mǎ.",
+          "es": "Mamá compra un caballo, el caballo no es bueno, mamá regaña al caballo.",
+          "note": "Trabalenguas: despacio, con la mano, y luego cada vez más rápido."
+        }
+      ]
+    },
+    {
+      "id": "tono-neutro",
+      "title": "El tono neutro",
+      "unlockedBy": "e0-10",
+      "markdown": "### Corto, suave y sin melodía propia\n\nEl neutro no tiene dibujo: su altura **depende del tono anterior**. Es breve y sin fuerza, como una sílaba átona del español.\n\n### Dónde aparece\n\n- **Partículas**: 吗 ma, 了 le.\n- **Segunda sílaba de palabras dobladas**: 妈妈 māma, 爸爸 bàba, 谢谢 xièxie.\n- **Algunas palabras de uso diario**: 学生 xuésheng, 朋友 péngyou.\n\nEn pinyin **no lleva marca**. Con números, *ma5* o simplemente *ma*.\n\n> ⚠️ **Ojo**: el neutro no es «más bajo», es **más corto y más débil**. Tras un 3.º tono incluso queda más alto que la sílaba anterior.",
+      "examples": [
+        {
+          "zh": "妈妈",
+          "py": "māma",
+          "es": "mamá",
+          "note": "1.º + neutro."
+        },
+        {
+          "zh": "谢谢",
+          "py": "xièxie",
+          "es": "gracias",
+          "note": "4.º + neutro: el segundo 谢 casi se apaga."
+        },
+        {
+          "zh": "他是学生。",
+          "py": "Tā shì xuésheng.",
+          "es": "Es estudiante.",
+          "note": "生 en neutro."
+        },
+        {
+          "zh": "你好，朋友！",
+          "py": "Nǐ hǎo, péngyou!",
+          "es": "¡Hola, amigo!",
+          "note": "友 en neutro."
+        }
+      ]
+    },
+    {
+      "id": "tonos-en-preguntas",
+      "title": "Tonos en las preguntas: no subas la voz",
+      "unlockedBy": "e0-10",
+      "markdown": "### La pregunta la hace una palabra, no la música\n\n**吗** es el signo de interrogación hablado: cuando lo dices, ya has preguntado. No hace falta subir nada, y si subes, **deformas los tonos**: un 4.º se convierte en 2.º y la palabra cambia.\n\n> 💡 **Truco**: piensa en 吗 como un «¿eh?» susurrado y bajito, nunca como un «¿EH?» que sube.\n\n> ❌ **Error típico**: 你好吗？ dicho «ni-hao-MA↗». Lo correcto: 你好 igual que el saludo y un *ma* corto detrás, casi sin voz.\n\n> ❌ **Error típico**: con interrogativos (谁 shéi, y más adelante 什么, 哪儿) subir todavía más, porque en español «¿quién?» va con énfasis. Cada palabra conserva su tono.\n\n> ⚠️ **Ojo**: en las preguntas sin partícula, de sorpresa (你去？ «¿que vas?»), la frase entera sube un poco, pero cada tono mantiene su forma. Es coloquial: de momento, usa 吗.\n\n### El ejercicio del profe\n\nDi cada pregunta primero como **afirmación** y luego pégale 吗 **sin cambiar la voz**: 他是老师。→ 他是老师吗？ Diez preguntas al día así y en una semana desaparece la entonación española.",
+      "examples": [
+        {
+          "zh": "你是老师吗？",
+          "py": "Nǐ shì lǎoshī ma?",
+          "es": "¿Eres profesor?",
+          "note": "师 sigue alto y plano; 吗 corto y bajo."
+        },
+        {
+          "zh": "他买马吗？",
+          "py": "Tā mǎi mǎ ma?",
+          "es": "¿Compra un caballo?",
+          "note": "Los dos 3.º se quedan graves aunque sea pregunta."
+        },
+        {
+          "zh": "你去吗？",
+          "py": "Nǐ qù ma?",
+          "es": "¿Vas?",
+          "note": "Si subes al final, 去 (4.º) se deforma hacia un 2.º."
+        },
+        {
+          "zh": "他是谁？",
+          "py": "Tā shì shéi?",
+          "es": "¿Quién es?",
+          "note": "谁 es 2.º: sube por su tono, no por ser pregunta."
+        }
+      ],
+      "sourceNotes": [
+        "zh-pron-tones-question",
+        "zh-errors-hispanohablantes"
+      ]
+    },
+    {
+      "id": "pares-de-tonos",
+      "title": "Los 20 pares de tonos",
+      "unlockedBy": "e0-11",
+      "markdown": "### Lo que de verdad se practica: pares\n\nCasi todas las palabras chinas tienen **dos sílabas**, así que hay que dominar las combinaciones: 4 × 4 = 16, más 4 acabadas en neutro = **20 pares**.\n\n| 1.ª ＼ 2.ª | + 1.º | + 2.º | + 3.º | + 4.º | + neutro |\n|---|---|---|---|---|---|\n| **1.º** | 西安 Xī'ān | 中国 Zhōngguó | 喝水 hē shuǐ | 他是 tā shì | 妈妈 māma |\n| **2.º** | 十七 shíqī | 国王 guówáng | 十五 shíwǔ | 十四 shísì | 学生 xuésheng |\n| **3.º** | 北京 Běijīng | 女儿 nǚ'ér | 你好 nǐ hǎo | 买卖 mǎimài | 买了 mǎi le |\n| **4.º** | 大家 dàjiā | 大学 dàxué | 热水 rè shuǐ | 再见 zàijiàn | 爸爸 bàba |\n\n(Filas: tono de la 1.ª sílaba; columnas: el de la 2.ª.)\n\n### Los que más cuestan\n\n- **2 + 3** (十五): la subida del 2.º no debe arrastrar al 3.º hacia arriba.\n- **3 + 2** (女儿): el 3.º solo baja; luego sube el 2.º.\n- **4 + 4** (再见): caen los dos, pero el segundo empieza un poco más bajo.\n\n> 💡 **Truco**: practica los pares con la mano y siempre con palabras reales, no con *ma ma*.",
+      "examples": [
+        {
+          "zh": "中国",
+          "py": "Zhōngguó",
+          "es": "China",
+          "note": "1 + 2"
+        },
+        {
+          "zh": "北京",
+          "py": "Běijīng",
+          "es": "Pekín",
+          "note": "3 + 1: el 3.º solo baja."
+        },
+        {
+          "zh": "女儿",
+          "py": "nǚ'ér",
+          "es": "hija",
+          "note": "3 + 2"
+        },
+        {
+          "zh": "再见",
+          "py": "zàijiàn",
+          "es": "adiós",
+          "note": "4 + 4: el segundo cae desde más abajo."
+        },
+        {
+          "zh": "学生",
+          "py": "xuésheng",
+          "es": "estudiante",
+          "note": "2 + neutro"
+        }
+      ]
+    },
+    {
+      "id": "tercer-tono-y-sandhi",
+      "title": "El tercer tono: medio tercero y 3 + 3",
+      "unlockedBy": "e0-11",
+      "markdown": "### El medio tercer tono\n\nDelante de un 1.º, 2.º, 4.º o neutro, el 3.º **solo baja** (21) y se queda grave. Es el 3.º que más oirás: 老师 lǎoshī = «grave» + «alto».\n\n### 3.º + 3.º → 2.º + 3.º\n\nDos terceros seguidos son incómodos: el primero se convierte en **2.º**.\n\n| Se escribe | Se dice |\n|---|---|\n| 你好 nǐ hǎo | **ní** hǎo |\n| 买马 mǎi mǎ | **mái** mǎ |\n| 有水 yǒu shuǐ | **yóu** shuǐ |\n\n> ⚠️ **Ojo**: el pinyin **no cambia** (sigue *nǐ hǎo*): el cambio solo se hace al hablar.\n\nCon tres terceros seguidos depende de cómo se agrupan las palabras. De momento, basta una regla: **nunca dos terceros completos seguidos**.",
+      "examples": [
+        {
+          "zh": "你好！",
+          "py": "Nǐ hǎo!",
+          "es": "¡Hola!",
+          "note": "Se dice ní hǎo."
+        },
+        {
+          "zh": "老师好！",
+          "py": "Lǎoshī hǎo!",
+          "es": "¡Hola, profe!",
+          "note": "老: medio tercero (solo baja); 好 al final puede ser completo."
+        },
+        {
+          "zh": "我爱北京！",
+          "py": "Wǒ ài Běijīng!",
+          "es": "¡Me encanta Pekín!",
+          "note": "我 y 北: medios terceros."
+        },
+        {
+          "zh": "他买马。",
+          "py": "Tā mǎi mǎ.",
+          "es": "Compra un caballo.",
+          "note": "买马 se dice mái mǎ."
+        }
+      ]
+    },
+    {
+      "id": "yi-y-bu",
+      "title": "Los cambios de 一 y 不",
+      "unlockedBy": "e0-11",
+      "markdown": "### 一 yī\n\n| Contexto | Tono | Ejemplo |\n|---|---|---|\n| Solo, en números y ordinales | **yī** | 一, 十一 shíyī |\n| Delante de 4.º (o de un neutro que era 4.º) | **yí** | 一个 yí ge |\n| Delante de 1.º, 2.º o 3.º | **yì** | 一天 yì tiān, 一起 yìqǐ |\n\n### 不 bù\n\n| Contexto | Tono | Ejemplo |\n|---|---|---|\n| Normalmente | **bù** | 不好 bù hǎo, 不吃 bù chī |\n| Delante de 4.º | **bú** | 不是 bú shì, 不去 bú qù, 不客气 bú kèqi |\n\n> 💡 **Truco**: los dos hacen lo mismo delante de un 4.º: **suben** (yí, bú). Dos caídas seguidas cansan.\n\nEn Xuébàn **一 y 不 se escriben ya con el cambio** (yí ge, bú shì), como en la mayoría de los libros. El 3 + 3, en cambio, se escribe sin cambio.",
+      "examples": [
+        {
+          "zh": "一个人。",
+          "py": "Yí ge rén.",
+          "es": "Una persona.",
+          "note": "个 era 4.º → yí."
+        },
+        {
+          "zh": "一起",
+          "py": "yìqǐ",
+          "es": "juntos",
+          "note": "Delante de 3.º → yì."
+        },
+        {
+          "zh": "十一",
+          "py": "shíyī",
+          "es": "once",
+          "note": "En números, yī."
+        },
+        {
+          "zh": "他不是老师。",
+          "py": "Tā bú shì lǎoshī.",
+          "es": "No es profesor.",
+          "note": "Delante de 4.º → bú."
+        },
+        {
+          "zh": "谢谢！不客气！",
+          "py": "Xièxie! Bú kèqi!",
+          "es": "¡Gracias! ¡De nada!"
+        },
+        {
+          "zh": "马不好。",
+          "py": "Mǎ bù hǎo.",
+          "es": "El caballo no es bueno.",
+          "note": "Delante de 3.º, bù se queda."
+        }
+      ]
+    },
+    {
+      "id": "neutro-dobladas-y-erhua",
+      "title": "Neutro en palabras dobladas y erhua",
+      "unlockedBy": "e0-11",
+      "markdown": "### Palabras dobladas\n\nCuando una palabra repite la sílaba, la segunda suele ir en **neutro**: 妈妈 māma, 爸爸 bàba, 哥哥 gēge, 谢谢 xièxie.\n\n### Erhua: la r de Pekín\n\nEn el norte, y sobre todo en Pekín, se añade una **r** al final de algunas sílabas:\n\n- 哪儿 **nǎr** «¿dónde?»\n- 这儿 **zhèr** «aquí»\n\nEl 儿 **no es una sílaba más**: la lengua se curva hacia atrás al final de la sílaba anterior, como una «r» inglesa suave.\n\n> 🏮 **¿Sabías que…?** En Shanghái casi no lo oirás: allí se dice 哪里 nǎli. Pero tienes que entenderlo, porque en la tele, en los libros y en el norte está por todas partes.",
+      "examples": [
+        {
+          "zh": "爸爸、妈妈、哥哥",
+          "py": "bàba, māma, gēge",
+          "es": "papá, mamá, hermano mayor",
+          "note": "Segunda sílaba siempre en neutro."
+        },
+        {
+          "zh": "谢谢！",
+          "py": "Xièxie!",
+          "es": "¡Gracias!"
+        },
+        {
+          "zh": "你去哪儿？",
+          "py": "Nǐ qù nǎr?",
+          "es": "¿Adónde vas?",
+          "note": "哪儿 es una sola sílaba: nǎr."
+        },
+        {
+          "zh": "他去哪儿？",
+          "py": "Tā qù nǎr?",
+          "es": "¿Adónde va?"
+        }
+      ]
+    }
+  ]
+}

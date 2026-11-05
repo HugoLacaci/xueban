@@ -1,0 +1,431 @@
+{
+  "unitId": "a2-u04",
+  "scenarios": [
+    {
+      "id": "a2-u04-hotpot",
+      "title": "Pedir en un restaurante de hot pot",
+      "zh": "在火锅店",
+      "level": 2,
+      "setting": "Hugo invita a Ana a cenar hot pot en un restaurante cerca del campus. Es la primera vez que pide él solo. Tú (la app) eres la camarera.",
+      "role": "camarera",
+      "roleZh": "服务员",
+      "voice": "f",
+      "goals": [
+        "Pedir un caldo no demasiado picante",
+        "Pedir dos o tres platos",
+        "Pedir una bebida sin azúcar",
+        "Pedir para llevar las sobras y la cuenta"
+      ],
+      "vocab": [
+        "火锅",
+        "别…太辣",
+        "道",
+        "不要糖",
+        "打包",
+        "买单"
+      ],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": {
+            "zh": "你好！几位？",
+            "py": "Nǐ hǎo! Jǐ wèi?",
+            "es": "¡Hola! ¿Cuántos son?"
+          },
+          "user": [
+            {
+              "zh": "两位。我们想吃火锅。",
+              "py": "Liǎng wèi. Wǒmen xiǎng chī huǒguō.",
+              "es": "Dos. Queremos comer hot pot.",
+              "keywords": [
+                "两位",
+                "火锅"
+              ],
+              "next": "n2"
+            },
+            {
+              "zh": "我们两个人。",
+              "py": "Wǒmen liǎng ge rén.",
+              "es": "Somos dos.",
+              "keywords": [
+                "两个人"
+              ],
+              "next": "n2"
+            }
+          ],
+          "hint": "Di cuántos sois: 两位。"
+        },
+        "n2": {
+          "npc": {
+            "zh": "好，请坐。你们要辣的还是不辣的？",
+            "py": "Hǎo, qǐng zuò. Nǐmen yào là de háishi bù là de?",
+            "es": "Muy bien, siéntense. ¿Lo quieren picante o sin picante?"
+          },
+          "user": [
+            {
+              "zh": "一半辣的，一半不辣的。别太辣！",
+              "py": "Yíbàn là de, yíbàn bú là de. Bié tài là!",
+              "es": "Mitad picante, mitad sin picante. ¡Que no pique demasiado!",
+              "keywords": [
+                "一半",
+                "别"
+              ],
+              "next": "n3",
+              "goal": 0
+            },
+            {
+              "zh": "不辣的，谢谢。",
+              "py": "Bù là de, xièxie.",
+              "es": "Sin picante, gracias.",
+              "keywords": [
+                "不辣"
+              ],
+              "next": "n3",
+              "goal": 0
+            }
+          ],
+          "hint": "Elige el caldo; puedes pedir que no pique mucho con 别太辣."
+        },
+        "n3": {
+          "npc": {
+            "zh": "要什么菜？",
+            "py": "Yào shénme cài?",
+            "es": "¿Qué quieren para cocer?"
+          },
+          "user": [
+            {
+              "zh": "先要牛肉、羊肉和白菜。",
+              "py": "Xiān yào niúròu, yángròu hé báicài.",
+              "es": "De momento, ternera, cordero y col china.",
+              "keywords": [
+                "牛肉",
+                "羊肉",
+                "先"
+              ],
+              "next": "n4",
+              "goal": 1
+            },
+            {
+              "zh": "我们要三道菜：牛肉、豆腐、白菜。",
+              "py": "Wǒmen yào sān dào cài: Niúròu, dòufu, báicài.",
+              "es": "Queremos tres platos: ternera, tofu y col china.",
+              "keywords": [
+                "道"
+              ],
+              "next": "n4",
+              "goal": 1
+            }
+          ],
+          "hint": "Pide dos o tres cosas (先要… / …道菜)."
+        },
+        "n4": {
+          "npc": {
+            "zh": "喝什么？",
+            "py": "Hē shénme?",
+            "es": "¿Para beber?"
+          },
+          "user": [
+            {
+              "zh": "一杯奶茶，不要糖。还有一瓶啤酒。",
+              "py": "Yì bēi nǎichá, búyào táng. Hái yǒu yì píng píjiǔ.",
+              "es": "Un té con leche sin azúcar. Y una cerveza.",
+              "keywords": [
+                "不要糖",
+                "奶茶"
+              ],
+              "next": "n5",
+              "goal": 2
+            },
+            {
+              "zh": "两杯绿茶，不要糖。",
+              "py": "Liǎng bēi lǜchá, búyào táng.",
+              "es": "Dos tés verdes, sin azúcar.",
+              "keywords": [
+                "不要糖"
+              ],
+              "next": "n5",
+              "goal": 2
+            }
+          ],
+          "hint": "Pide la bebida y añade 不要糖."
+        },
+        "n5": {
+          "npc": {
+            "zh": "好的。……你们吃好了吗？",
+            "py": "Hǎo de. ……nǐmen chī hǎo le ma?",
+            "es": "Muy bien. … ¿Han terminado?"
+          },
+          "user": [
+            {
+              "zh": "吃好了！菜没吃完，可以打包吗？",
+              "py": "Chī hǎo le! Cài méi chīwán, kěyǐ dǎbāo ma?",
+              "es": "¡Sí! No nos hemos acabado la verdura, ¿podemos llevárnosla?",
+              "keywords": [
+                "打包",
+                "吃完"
+              ],
+              "next": "n6",
+              "goal": 3
+            },
+            {
+              "zh": "吃饱了。服务员，买单！",
+              "py": "Chī bǎo le. Fúwùyuán, mǎidān!",
+              "es": "Estamos llenos. ¡La cuenta, por favor!",
+              "keywords": [
+                "买单"
+              ],
+              "next": "n5b",
+              "goal": 3
+            }
+          ],
+          "hint": "Pide para llevar (打包) o la cuenta (买单)."
+        },
+        "n5b": {
+          "npc": {
+            "zh": "好。菜还有一些，要打包吗？",
+            "py": "Hǎo. Cài hái yǒu yìxiē, yào dǎbāo ma?",
+            "es": "Muy bien. Queda algo de comida, ¿quieren llevársela?"
+          },
+          "user": [
+            {
+              "zh": "要，谢谢！",
+              "py": "Yào, xièxie!",
+              "es": "Sí, ¡gracias!",
+              "keywords": [
+                "要"
+              ],
+              "next": "n6"
+            }
+          ],
+          "hint": "Acepta: 要，谢谢！"
+        },
+        "n6": {
+          "npc": {
+            "zh": "好的，一共一百二十块。扫码吧。",
+            "py": "Hǎo de, yígòng yìbǎi èrshí kuài. Sǎomǎ ba.",
+            "es": "Muy bien, son ciento veinte yuanes en total. Escaneen el código."
+          },
+          "end": true,
+          "feedback": "Has pedido como un local: caldo con 别太辣, platos con 道, bebida con 不要糖 y para llevar con 打包. Y has usado un resultado (吃完, 吃好)."
+        }
+      }
+    },
+    {
+      "id": "a2-u04-cooking",
+      "title": "Cocinar con Xiao Li",
+      "zh": "跟小李一起做饭",
+      "level": 2,
+      "setting": "Xiao Li le enseña a Hugo a hacer sopa de tomate con huevo en la cocina común de la residencia. Tú (la app) eres Xiao Li, que da las instrucciones.",
+      "role": "compañero que enseña a cocinar",
+      "roleZh": "小李",
+      "voice": "m",
+      "goals": [
+        "Preguntar qué se hace primero",
+        "Seguir los pasos (先…再…)",
+        "Preguntar si ya está hecho",
+        "Decir que has terminado y que está bueno"
+      ],
+      "vocab": [
+        "先",
+        "再",
+        "接着",
+        "做好",
+        "熟",
+        "吃完"
+      ],
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "npc": {
+            "zh": "今天我们做鸡蛋汤。",
+            "py": "Jīntiān wǒmen zuò jīdàn tāng.",
+            "es": "Hoy hacemos sopa de huevo."
+          },
+          "user": [
+            {
+              "zh": "好！我们先做什么？",
+              "py": "Hǎo! Wǒmen xiān zuò shénme?",
+              "es": "¡Vale! ¿Qué hacemos primero?",
+              "keywords": [
+                "先"
+              ],
+              "next": "n2",
+              "goal": 0
+            },
+            {
+              "zh": "做法难吗？",
+              "py": "Zuòfǎ nán ma?",
+              "es": "¿Es difícil?",
+              "keywords": [
+                "做法",
+                "难"
+              ],
+              "next": "n1b"
+            }
+          ],
+          "hint": "Pregunta qué se hace primero: 我们先做什么？"
+        },
+        "n1b": {
+          "npc": {
+            "zh": "不难，很容易。",
+            "py": "Bù nán, hěn róngyì.",
+            "es": "No es difícil, es muy fácil."
+          },
+          "user": [
+            {
+              "zh": "那我们先做什么？",
+              "py": "Nà wǒmen xiān zuò shénme?",
+              "es": "Entonces, ¿qué hacemos primero?",
+              "keywords": [
+                "先"
+              ],
+              "next": "n2",
+              "goal": 0
+            }
+          ],
+          "hint": "Pregunta el primer paso con 先."
+        },
+        "n2": {
+          "npc": {
+            "zh": "先洗手，再拿两个鸡蛋。",
+            "py": "Xiān xǐ shǒu, zài ná liǎng ge jīdàn.",
+            "es": "Primero lávate las manos y luego coge dos huevos."
+          },
+          "user": [
+            {
+              "zh": "好了。接下来呢？",
+              "py": "Hǎo le. Jiē xiàlai ne?",
+              "es": "Hecho. ¿Y ahora?",
+              "keywords": [
+                "接下来"
+              ],
+              "next": "n3",
+              "goal": 1
+            },
+            {
+              "zh": "洗好了，鸡蛋也拿好了。",
+              "py": "Xǐhǎo le, jīdàn yě náhǎo le.",
+              "es": "Ya me las he lavado y tengo los huevos.",
+              "keywords": [
+                "好了"
+              ],
+              "next": "n3",
+              "goal": 1
+            }
+          ],
+          "hint": "Di que ya está (好了 / 洗好了) y pregunta el siguiente paso (接下来呢？)."
+        },
+        "n3": {
+          "npc": {
+            "zh": "先放水，水开了再放鸡蛋。别放盐！",
+            "py": "Xiān fàng shuǐ, shuǐ kāi le zài fàng jīdàn. Bié fàng yán!",
+            "es": "Primero el agua; cuando hierva, echas los huevos. ¡No eches sal!"
+          },
+          "user": [
+            {
+              "zh": "好，先别放盐。什么时候放？",
+              "py": "Hǎo, xiān bié fàng yán. Shénme shíhou fàng?",
+              "es": "Vale, la sal todavía no. ¿Cuándo la echo?",
+              "keywords": [
+                "别",
+                "盐"
+              ],
+              "next": "n4",
+              "goal": 1
+            },
+            {
+              "zh": "鸡蛋放好了。熟了吗？",
+              "py": "Jīdàn fànghǎo le. Shú le ma?",
+              "es": "Ya he echado los huevos. ¿Están hechos?",
+              "keywords": [
+                "熟"
+              ],
+              "next": "n4b",
+              "goal": 2
+            }
+          ],
+          "hint": "Repite la instrucción o pregunta si está hecho (熟了吗？)."
+        },
+        "n4": {
+          "npc": {
+            "zh": "最后再放。现在等两三分钟。",
+            "py": "Zuìhòu zài fàng. Xiànzài děng liǎng-sān fēnzhōng.",
+            "es": "Al final. Ahora espera dos o tres minutos."
+          },
+          "user": [
+            {
+              "zh": "好了吗？汤做好了吗？",
+              "py": "Hǎo le ma? Tāng zuòhǎo le ma?",
+              "es": "¿Ya está? ¿Está hecha la sopa?",
+              "keywords": [
+                "做好"
+              ],
+              "next": "n5",
+              "goal": 2
+            }
+          ],
+          "hint": "Pregunta si ya está hecha: 汤做好了吗？"
+        },
+        "n4b": {
+          "npc": {
+            "zh": "还没熟，再等一会儿。",
+            "py": "Hái méi shú, zài děng yíhuìr.",
+            "es": "Todavía no, espera un poco."
+          },
+          "user": [
+            {
+              "zh": "好。汤什么时候做好？",
+              "py": "Hǎo. Tāng shénme shíhou zuòhǎo?",
+              "es": "Vale. ¿Cuándo estará la sopa?",
+              "keywords": [
+                "做好"
+              ],
+              "next": "n5",
+              "goal": 2
+            }
+          ],
+          "hint": "Pregunta cuándo estará (做好)."
+        },
+        "n5": {
+          "npc": {
+            "zh": "做好了！放一点儿盐，你吃吧。",
+            "py": "Zuòhǎo le! Fàng yìdiǎnr yán, nǐ chī ba.",
+            "es": "¡Ya está! Echa un poco de sal y come."
+          },
+          "user": [
+            {
+              "zh": "太好吃了！我吃完了，还有吗？",
+              "py": "Tài hǎochī le! Wǒ chīwán le, hái yǒu ma?",
+              "es": "¡Está buenísima! Ya me la he acabado, ¿queda más?",
+              "keywords": [
+                "吃完"
+              ],
+              "next": "n6",
+              "goal": 3
+            },
+            {
+              "zh": "很香！我第一次做汤。",
+              "py": "Hěn xiāng! Wǒ dì-yī cì zuò tāng.",
+              "es": "¡Huele de maravilla! Es la primera vez que hago sopa.",
+              "keywords": [
+                "香"
+              ],
+              "next": "n6",
+              "goal": 3
+            }
+          ],
+          "hint": "Di que está bueno y que has terminado (吃完了)."
+        },
+        "n6": {
+          "npc": {
+            "zh": "还有！下次你自己做吧！",
+            "py": "Hái yǒu! Xià cì nǐ zìjǐ zuò ba!",
+            "es": "¡Sí queda! ¡La próxima vez la haces tú solo!"
+          },
+          "end": true,
+          "feedback": "Has seguido una receta con 先…再…, has preguntado por los resultados (做好了吗？熟了吗？) y has dicho que habías terminado (吃完了)."
+        }
+      }
+    }
+  ]
+}
