@@ -36,6 +36,7 @@ jobs:
       - name: Build estático
         env:
           STATIC_EXPORT: "1"
+          NEXT_PUBLIC_STATIC_EXPORT: "1"
           NEXT_PUBLIC_BASE_PATH: /xueban
         run: |
           rm -rf app/api

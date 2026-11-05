@@ -19,6 +19,7 @@ import { cn } from "@/lib/utils";
 const SECTIONS: { kind: SongKind; title: string; zh: string; blurb: string }[] = [
   { kind: "practica", title: "Para practicar", zh: "练习歌曲", blurb: "Lentas, con pronunciación clara y frases que se repiten: ideales para cantar con el pinyin activado." },
   { kind: "popular", title: "Populares", zh: "流行歌曲", blurb: "Lo que suena en China y lo que se canta en el KTV. Más rápidas: usa 0,75× y el bucle de línea." },
+  { kind: "meme", title: "Memes y TikTok", zh: "网络神曲", blurb: "Las canciones chinas que se han hecho meme dentro y fuera de China: si las conoces, tendrás conversación asegurada." },
 ];
 
 async function prepare(song: Song): Promise<number> {

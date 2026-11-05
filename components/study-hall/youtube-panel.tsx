@@ -9,7 +9,7 @@ import { useLiveQuery } from "dexie-react-hooks";
 import { Link2, Play, Trash2 } from "lucide-react";
 import Link, { useLangRouter } from "@/lib/languages/link";
 import { db } from "@/lib/db";
-import { addVideoByUrl, NoTranscriptServerError, parseYouTubeIdClient } from "@/lib/videos";
+import { addVideoByUrl, parseYouTubeIdClient } from "@/lib/videos";
 import { getActiveLang } from "@/lib/languages/registry";
 import { Button } from "@/components/ui/button";
 import { Card, Input, Spinner } from "@/components/ui/primitives";
@@ -38,7 +38,7 @@ export function YouTubePanel() {
       const v = await addVideoByUrl(u, { reuse: true });
       open(v.id);
     } catch (e) {
-      if (e instanceof NoTranscriptServerError || /no tiene subtítulos/.test((e as Error).message)) setManual(u);
+      setManual(u); // cualquier fallo: ofrecer subir los subtítulos a mano
       toast.error("No se pudieron sacar los subtítulos automáticamente", (e as Error).message);
     } finally {
       setBusy(false);
@@ -71,7 +71,7 @@ export function YouTubePanel() {
           </Button>
         </form>
         <p className="text-ink-faint mt-2 text-xs">
-          Usa los subtítulos chinos del vídeo (manuales o automáticos si el vídeo está en chino) y la traducción al español de YouTube. Funciona con la app en local (<code>npm run dev</code>); en la versión publicada, o si el vídeo no tiene subtítulos, puedes{" "}
+          Usa los subtítulos chinos del vídeo (manuales o automáticos si el vídeo está en chino) y la traducción al español de YouTube. Necesita la app abierta en tu ordenador con <code>npm run dev</code> (también funciona desde la web publicada en ese mismo ordenador). Si no la tienes abierta o el vídeo no tiene subtítulos, puedes{" "}
           <button type="button" className="text-indigo underline underline-offset-2" onClick={() => setManual(url.trim() || "")}>
             subir los subtítulos a mano
           </button>

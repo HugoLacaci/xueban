@@ -42,7 +42,7 @@ export async function loadVideo(id: string): Promise<VideoDoc | null> {
 /** Error de «no hay servidor de transcripciones» (p. ej. la versión estática de GitHub Pages). */
 export class NoTranscriptServerError extends Error {
   constructor() {
-    super("Esta versión de la app no tiene servidor de transcripciones (GitHub Pages). Ábrela en local con «npm run dev» o sube el archivo de subtítulos (.srt / .vtt).");
+    super("Para sacar los subtítulos automáticamente, abre la app en este ordenador con «npm run dev» (la web publicada lo usará). Si no, sube el archivo de subtítulos.");
     this.name = "NoTranscriptServerError";
   }
 }
@@ -55,16 +55,37 @@ export async function addVideoByUrl(url: string, opts: { reuse?: boolean } = {})
     const prev = await db.videos.get(known);
     if (prev?.lines.length) return prev;
   }
-  let res: Response;
-  try {
-    res = await fetch(withBase(`/api/youtube/transcript?url=${encodeURIComponent(url)}&lang=${lang}`));
-  } catch {
+  const query = `/api/youtube/transcript?url=${encodeURIComponent(url)}&lang=${lang}`;
+  type Payload = { error?: string; id: string; title: string; channel?: string; thumbnail?: string; lines: VideoLine[] };
+  const tryFetch = async (u: string): Promise<{ ok: boolean; data: Payload } | null> => {
+    try {
+      const r = await fetch(u);
+      if (!(r.headers.get("content-type") ?? "").includes("json")) return null;
+      return { ok: r.ok, data: (await r.json()) as Payload };
+    } catch {
+      return null;
+    }
+  };
+  // Ruta API de esta misma app (npm run dev: yt-dlp). En la web publicada (GitHub Pages) no existe:
+  // se usa el servidor local del usuario si tiene la app abierta con npm run dev en ese ordenador.
+  const isStatic = process.env.NEXT_PUBLIC_STATIC_EXPORT === "1";
+  const sources = isStatic ? [`http://localhost:3000${query}`] : [withBase(query)];
+  let firstError: string | null = null;
+  let data: Payload | null = null;
+  for (const u of sources) {
+    if (!u) continue;
+    const r = await tryFetch(u);
+    if (!r) continue;
+    if (r.ok && !r.data.error) {
+      data = r.data;
+      break;
+    }
+    firstError ??= r.data.error ?? "Error al obtener la transcripción";
+  }
+  if (!data) {
+    if (firstError) throw new Error(firstError);
     throw new NoTranscriptServerError();
   }
-  const isJson = (res.headers.get("content-type") ?? "").includes("json");
-  if (!isJson) throw new NoTranscriptServerError();
-  const data = (await res.json()) as { error?: string; id: string; title: string; channel?: string; thumbnail?: string; lines: VideoLine[] };
-  if (!res.ok || data.error) throw new Error(data.error ?? "Error al obtener la transcripción");
   const video: Video = { id: data.id, lang, title: data.title, channel: data.channel, thumbnail: data.thumbnail, lines: data.lines, source: "user", addedAt: Date.now(), watchedSeconds: 0 };
   await db.videos.put(video);
   return video;
