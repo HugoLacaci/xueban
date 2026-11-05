@@ -90,13 +90,14 @@ export function OriginTab({ onOpen }: { onOpen: (c: string) => void }) {
           {(Object.keys(STAGE_INFO) as Stage[]).map((s) => (
             <li
               key={s}
-              className="border-line bg-paper-raised rounded-[8px] border px-2 py-1.5 text-center"
+              className="border-line bg-paper-raised flex h-[76px] flex-col justify-center overflow-hidden rounded-[8px] border px-2 py-1.5 text-center"
+              title={`${STAGE_INFO[s].zh} · ${STAGE_INFO[s].es} · ${STAGE_INFO[s].when}`}
             >
-              <span lang="zh-CN" className="zh-serif text-ink block text-lg">
+              <span lang="zh-CN" className="zh-serif text-ink block truncate text-lg">
                 {STAGE_INFO[s].zh}
               </span>
-              <span className="text-ink-soft block text-xs">{STAGE_INFO[s].es}</span>
-              <span className="text-ink-faint block text-[10px]">{STAGE_INFO[s].when}</span>
+              <span className="text-ink-soft block truncate text-xs">{STAGE_INFO[s].es}</span>
+              <span className="text-ink-faint block truncate text-[10px]">{STAGE_INFO[s].when}</span>
             </li>
           ))}
         </ol>
@@ -175,18 +176,26 @@ function PictogramCard({ p, onOpen }: { p: Pictogram; onOpen: (c: string) => voi
         onPointerLeave={() => setActive(false)}
         onFocus={() => setActive(true)}
         onBlur={() => setActive(false)}
-        className="card-paper hover:border-ink/40 flex w-full items-start gap-3 p-3 text-left"
+        className="card-paper hover:border-ink/40 flex h-[122px] w-full items-start gap-3 overflow-hidden p-3 text-left"
       >
         <OriginThumb ch={p.c} size={96} active={active} />
-        <span className="min-w-0 flex-1">
-          <span className="flex items-baseline gap-2">
-            <Hanzi text={p.c} size="xl" font="serif" />
-            <Reading text={p.pinyin} />
-            <span className="text-ink-soft text-sm">
+        {/* Tarjeta de tamaño fijo: es el texto el que se adapta (cabecera de una línea + historia recortada). */}
+        <span className="flex h-full min-w-0 flex-1 flex-col overflow-hidden">
+          <span className="flex h-8 min-w-0 shrink-0 items-baseline gap-2 overflow-hidden whitespace-nowrap">
+            <span className="shrink-0">
+              <Hanzi text={p.c} size="xl" font="serif" />
+            </span>
+            <span className="shrink-0">
+              <Reading text={p.pinyin} />
+            </span>
+            <span className="text-ink-soft min-w-0 truncate text-sm" title={p.es}>
               <Mixed>{p.es}</Mixed>
             </span>
           </span>
-          <span className="text-ink-soft mt-1 line-clamp-3 block text-xs">
+          <span
+            className="text-ink-soft mt-1 line-clamp-3 block min-h-0 text-xs leading-[1.35]"
+            title={p.story}
+          >
             <Mixed>{p.story}</Mixed>
           </span>
         </span>

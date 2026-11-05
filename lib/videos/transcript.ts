@@ -119,7 +119,22 @@ async function viaYtDlp(id: string): Promise<TranscriptResult> {
     if (!zhFile) throw new Error("yt-dlp no descargó el archivo de subtítulos");
     const lines = parseVtt(await fs.readFile(path.join(dir, zhFile), "utf8")).map((l) => ({ ...l, zh: toSimp(l.zh) }));
     const esFile = esKey ? files.find((f) => f.includes(`.${esKey}.`) && f.endsWith(".vtt")) : undefined;
-    const translation = esFile ? { lang: esKey!, lines: parseVtt(await fs.readFile(path.join(dir, esFile), "utf8")) } : undefined;
+    let translation: TranscriptResult["translation"] = esFile ? { lang: esKey!, lines: parseVtt(await fs.readFile(path.join(dir, esFile), "utf8")) } : undefined;
+    // Sin pista en español: traducción automática de YouTube de la pista china elegida («es-zh-Hans» = español desde chino).
+    // No es fatal: YouTube a veces responde 429 a las pistas traducidas.
+    if (!translation) {
+      const base = chosen.replace(/-orig$/, "");
+      const tKey = auto.find((k) => k === `es-${base}`) ?? auto.find((k) => k === `es-${chosen}`) ?? auto.find((k) => /^es-zh/.test(k));
+      if (tKey) {
+        try {
+          await execFileP(bin, ["--skip-download", "--no-warnings", "--write-auto-subs", "--sub-langs", tKey, "--sub-format", "vtt", "-o", path.join(dir, "%(id)s.%(ext)s"), url], { maxBuffer: 20 * 1024 * 1024 });
+          const tFile = (await fs.readdir(dir)).find((f) => f.includes(`.${tKey}.`) && f.endsWith(".vtt"));
+          if (tFile) translation = { lang: `${tKey} (auto)`, lines: parseVtt(await fs.readFile(path.join(dir, tFile), "utf8")) };
+        } catch {
+          /* sin traducción */
+        }
+      }
+    }
     return {
       meta: { id, title: info.title, channel: info.channel ?? info.uploader, thumbnail: info.thumbnail, durationSeconds: info.duration },
       lines: mergeShortLines(lines),

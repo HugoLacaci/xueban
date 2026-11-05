@@ -1,7 +1,7 @@
 "use client";
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState, useSyncExternalStore } from "react";
 import Link from "@/lib/languages/link";
-import { ArrowLeft, ChevronLeft, ChevronRight, Eye, EyeOff, List, Moon, Pause, Pickaxe, Play, Repeat, Repeat1, Mic, Sun, Volume2 } from "lucide-react";
+import { ArrowLeft, ChevronLeft, ChevronRight, Eye, EyeOff, Languages, List, Moon, Pause, Pickaxe, Play, Repeat, Repeat1, Mic, Sun, Volume2 } from "lucide-react";
 import { db, logStudy, type VideoLine } from "@/lib/db";
 import { loadVideo, type VideoDoc } from "@/lib/videos";
 import { analyzeLine, comprehensionOfLines } from "@/lib/videos/breakdown";
@@ -21,6 +21,10 @@ import { targetLang } from "@/lib/languages/registry";
 import { ui } from "@/lib/languages/ui-text";
 import { NoteHereButton } from "@/components/notes/note-here-button";
 import { Mixed } from "@/components/target/mixed";
+import { LyricsImport } from "./lyrics-import";
+import { shiftVideoLines } from "@/lib/videos/lyrics";
+import { canTranslateWithTutor, translateMissingLines } from "@/lib/videos/translate-lines";
+import { toast } from "@/components/ui/toast";
 
 declare global {
   interface Window {
@@ -89,12 +93,42 @@ export function VideoPlayerPage({ id }: { id: string }) {
       </div>
     );
   }
-  return <Player video={video} />;
+  return <Player video={video} onChanged={() => void loadVideo(id).then(setVideo)} />;
 }
 
 const pill = (on: boolean) => cn("min-h-8 rounded-[6px] px-2 text-xs tabular-nums transition-colors", on ? "bg-ink text-paper" : "text-ink-soft hover:bg-paper-sunk hover:text-ink");
 
-function Player({ video }: { video: VideoDoc }) {
+function Player({ video, onChanged }: { video: VideoDoc; onChanged: () => void }) {
+  const [editSubs, setEditSubs] = useState(false);
+  const [isUser, setIsUser] = useState(false);
+  const [translating, setTranslating] = useState<string | null>(null);
+  useEffect(() => {
+    void db.videos.get(video.id).then((v) => setIsUser(Boolean(v)));
+  }, [video.id, video.lines]);
+  const missingEs = video.lines.filter((l) => !l.es).length;
+  const shift = async (d: number) => {
+    await shiftVideoLines(video.id, d);
+    onChanged();
+  };
+  const translate = async () => {
+    if (!canTranslateWithTutor()) {
+      toast.info("Configura el tutor para traducir", "Ajustes › Tutor (Ollama en local o el modelo en el navegador). Mientras, pulsa las palabras para ver su significado.");
+      return;
+    }
+    setTranslating("0 %");
+    try {
+      await translateMissingLines(video.id, video.lines, (d, t) => {
+        setTranslating(`${Math.round((d / t) * 100)} %`);
+        onChanged();
+      });
+      toast.success("Traducción lista");
+    } catch (e) {
+      toast.error("No se pudo traducir", (e as Error).message);
+    } finally {
+      setTranslating(null);
+      onChanged();
+    }
+  };
   const settings = useSettings((s) => s.settings);
   const update = useSettings((s) => s.update);
   const known = useKnowledge((s) => s.known);
@@ -118,6 +152,15 @@ function Player({ video }: { video: VideoDoc }) {
   const startedAt = useRef(0);
   const lineRefs = useRef<(HTMLDivElement | null)[]>([]);
   const lines = video.lines;
+  const cyclePinyin = useSettings((s) => s.cyclePinyin);
+  const aid = getActivePack().readingAid;
+  // ?de=study-hall → el enlace de vuelta lleva al Study Hall (se lee en el cliente: exportación estática)
+  const de = useSyncExternalStore(
+    () => () => {},
+    () => new URLSearchParams(window.location.search).get("de"),
+    () => null,
+  );
+  const back = de === "study-hall" ? { href: "/study-hall?tab=youtube", label: "Study Hall" } : de === "canciones" ? { href: "/study-hall?tab=canciones", label: "Canciones" } : { href: "/videos", label: "Vídeos" };
 
   // comprensión
   const comp = useMemo(() => (dictStatus === "ready" ? comprehensionOfLines(lines, known, knownChars) : null), [lines, known, knownChars, dictStatus]);
@@ -226,8 +269,8 @@ function Player({ video }: { video: VideoDoc }) {
   return (
     <div className="space-y-3">
       <div className="flex flex-wrap items-center justify-between gap-2">
-        <Link href="/videos" className="inline-flex min-h-9 items-center gap-1 rounded-md text-sm text-ink-faint hover:text-ink">
-          <ArrowLeft className="size-4" /> Vídeos
+        <Link href={back.href} className="inline-flex min-h-9 items-center gap-1 rounded-md text-sm text-ink-faint hover:text-ink">
+          <ArrowLeft className="size-4" /> {back.label}
         </Link>
         <div className="flex flex-wrap items-center gap-1.5">
           {comp ? <Badge variant={comp.ratio >= 0.9 ? "jade" : comp.ratio >= 0.75 ? "gold" : "default"}>Conoces el {Math.round(comp.ratio * 100)} %</Badge> : null}
@@ -250,11 +293,11 @@ function Player({ video }: { video: VideoDoc }) {
             </div>
           </ScreenFrame>
           {/* subtítulo activo */}
-          <div className={cn("relative mt-3 min-h-24 rounded-[12px] border border-line bg-paper-raised px-4 py-3 text-center shadow-[var(--shadow-paper)]", active && "border-l-[3px] border-l-cinnabar")} aria-live="polite">
+          <div className={cn("relative mt-3 flex h-40 flex-col items-center justify-center overflow-y-auto rounded-[12px] border border-line bg-paper-raised px-4 py-2 text-center shadow-[var(--shadow-paper)] scrollbar-thin", active && "border-l-[3px] border-l-cinnabar")} aria-live="polite" data-part="subtitle">
             {active ? (
               <>
-                <ChineseText text={active.zh} size="xl" as="div" sourceRef={`video:${video.id}:${active.start}`} context={active.zh} />
-                {settings.showTranslation && active.es ? <p className="mt-1 text-sm text-ink-soft"><Mixed>{active.es}</Mixed></p> : null}
+                <ChineseText text={active.zh} size={Array.from(active.zh).length > 22 ? "lg" : "xl"} as="div" sourceRef={`video:${video.id}:${active.start}`} context={active.zh} />
+                {settings.showTranslation ? <p className="mt-1 line-clamp-2 text-sm text-ink-soft">{active.es ? <Mixed>{active.es}</Mixed> : <span className="text-ink-faint">sin traducción para esta línea</span>}</p> : null}
               </>
             ) : (
               <p className="py-4 text-sm text-ink-faint">Pulsa ▶ o una línea de la transcripción.</p>
@@ -303,6 +346,24 @@ function Player({ video }: { video: VideoDoc }) {
                 </button>
               ) : null}
             </div>
+            <Button size="sm" variant={settings.pinyinMode === "hide" ? "ghost" : "soft"} onClick={() => void cyclePinyin()} aria-pressed={settings.pinyinMode !== "hide"} title={`${aid.modes[settings.pinyinMode]} · pulsa para cambiar (P)`}>
+              <span lang={targetLang()} className="zh text-xs">{aid.label}</span> {settings.pinyinMode === "show" ? "sí" : settings.pinyinMode === "unknown" ? "nuevas" : "no"}
+            </Button>
+            {isUser && lines.length ? (
+              <div className="flex items-center gap-0.5 rounded-[8px] border border-line p-0.5" role="group" aria-label="Desfase de los subtítulos" title="Si la letra va por delante o por detrás del vídeo, muévela medio segundo">
+                <button onClick={() => void shift(-0.5)} className={pill(false)} aria-label="Subtítulos 0,5 s antes">
+                  letra −0,5 s
+                </button>
+                <button onClick={() => void shift(0.5)} className={pill(false)} aria-label="Subtítulos 0,5 s después">
+                  +0,5 s
+                </button>
+              </div>
+            ) : null}
+            {isUser && missingEs > 0 && settings.showTranslation ? (
+              <Button size="sm" variant="ghost" onClick={() => void translate()} disabled={translating !== null} title={`${missingEs} líneas sin traducción`}>
+                {translating ? <Spinner className="size-3.5" /> : <Languages />} {translating ? `traduciendo ${translating}` : "traducir líneas"}
+              </Button>
+            ) : null}
             <Button size="sm" variant="ghost" onClick={() => void update({ showTranslation: !settings.showTranslation })} aria-pressed={settings.showTranslation}>
               {settings.showTranslation ? <EyeOff /> : <Eye />} traducción
             </Button>
@@ -310,7 +371,10 @@ function Player({ video }: { video: VideoDoc }) {
         </div>
 
         <Tabs defaultValue="lines" className="min-w-0">
-          <div className="mb-1 flex justify-end">
+          <div className="mb-1 flex items-center justify-end gap-2">
+            <button type="button" onClick={() => setEditSubs((v) => !v)} className="mr-auto text-xs text-ink-faint underline-offset-2 hover:text-ink hover:underline" aria-pressed={editSubs}>
+              {editSubs ? "cancelar" : "cambiar subtítulos"}
+            </button>
             <NoteHereButton text={() => (cur >= 0 ? lines[cur].zh : video.title)} source={{ kind: "video", ref: video.id }} label="apunte de esta línea" />
           </div>
           <TabsList className="w-full">
@@ -322,6 +386,21 @@ function Player({ video }: { video: VideoDoc }) {
             </TabsTrigger>
           </TabsList>
           <TabsContent value="lines">
+            {!lines.length || editSubs ? (
+              <div className="mb-2 rounded-[12px] border border-line bg-paper-raised p-3">
+                <p className="mb-2 text-sm text-ink-soft">
+                  {lines.length ? "Sustituye los subtítulos de este vídeo:" : "Este vídeo no trae subtítulos en chino (es habitual en canciones con la letra dentro de la imagen). Pega o sube la letra sincronizada y aparecerá debajo del vídeo:"}
+                </p>
+                <LyricsImport
+                  url={video.id}
+                  title={video.title}
+                  onDone={() => {
+                    setEditSubs(false);
+                    onChanged();
+                  }}
+                />
+              </div>
+            ) : null}
             <div className="max-h-[60vh] space-y-0.5 overflow-y-auto rounded-[12px] border border-line bg-paper-raised p-1.5 scrollbar-thin lg:max-h-[70vh]">
               {lines.map((l, i) => {
                 const a = analyses[i];
@@ -332,15 +411,29 @@ function Player({ video }: { video: VideoDoc }) {
                     ref={(el) => {
                       lineRefs.current[i] = el;
                     }}
-                    className={cn("group rounded-[8px] border-l-[3px] py-2 pl-2.5 pr-2 transition-colors", isCur ? "border-l-cinnabar bg-ink/6" : "border-l-transparent hover:bg-paper-sunk/70")}
+                    className={cn("group cursor-pointer rounded-[8px] border-l-[3px] py-2 pl-2.5 pr-2 transition-colors", isCur ? "border-l-cinnabar bg-ink/6" : "border-l-transparent hover:bg-paper-sunk/70")}
                     aria-current={isCur ? "true" : undefined}
+                    role="button"
+                    tabIndex={0}
+                    title={`Ir a ${fmt(l.start)}`}
+                    onClick={(e) => {
+                      if ((e.target as HTMLElement).closest("button, a")) return;
+                      seekLine(i);
+                    }}
+                    onKeyDown={(e) => {
+                      if (e.target === e.currentTarget && (e.key === "Enter" || e.key === " ")) {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        seekLine(i);
+                      }
+                    }}
                   >
                     <div className="flex items-start gap-2">
                       <button onClick={() => seekLine(i)} className="mt-1 shrink-0 rounded font-mono text-[10px] tabular-nums text-ink-faint hover:text-ink" title="Ir a esta línea" aria-label={`Ir a ${fmt(l.start)}`}>
                         {fmt(l.start)}
                       </button>
                       <div className="min-w-0 flex-1">
-                        <ChineseText text={l.zh} size="md" as="div" sourceRef={`video:${video.id}:${l.start}`} context={l.zh} />
+                        <ChineseText text={l.zh} size="md" as="div" interactive={false} sourceRef={`video:${video.id}:${l.start}`} context={l.zh} />
                         {settings.showTranslation && l.es ? <p className="text-xs text-ink-soft"><Mixed>{l.es}</Mixed></p> : null}
                         {a ? (
                           <div className="mt-1 flex flex-wrap gap-1">
@@ -404,7 +497,7 @@ function Player({ video }: { video: VideoDoc }) {
       </div>
       <p className="text-xs text-ink-faint">
         <Volume2 className="mr-1 inline size-3.5" aria-hidden="true" />
-        Atajos: Espacio reproducir/pausar · ← → línea anterior/siguiente · R repetir · P pinyin · T traducción. Pulsa cualquier palabra para ver el diccionario y añadirla.
+        Atajos: Espacio reproducir/pausar · ← → línea anterior/siguiente · R repetir · P pinyin · T traducción. Pulsa una palabra del subtítulo para ver su significado y añadirla; pulsa una línea del registro para saltar a ese momento.
       </p>
       {mining ? (
         <QuickAddDialog

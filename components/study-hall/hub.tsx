@@ -2,7 +2,7 @@
 import { useState } from "react";
 import Link from "@/lib/languages/link";
 import { useLiveQuery } from "dexie-react-hooks";
-import { BookOpen, ExternalLink, Headphones, Library, NotebookPen, Timer, Tv, Globe, ListMusic, Smartphone } from "lucide-react";
+import { BookOpen, ExternalLink, Headphones, Library, Music, NotebookPen, Timer, Tv, Globe, ListMusic, Smartphone, MonitorPlay } from "lucide-react";
 import { db } from "@/lib/db";
 import { getArticles, articleCategories, getResources, type Resource } from "@/lib/study-hall";
 import { getActivePack } from "@/lib/languages/registry";
@@ -11,6 +11,8 @@ import { Button } from "@/components/ui/button";
 import { Lattice, MoonGate } from "@/components/ornament";
 import { FilterChip } from "./filter-chip";
 import { Pomodoro } from "./pomodoro";
+import { YouTubePanel } from "./youtube-panel";
+import { SongsPanel } from "./songs-panel";
 import { cn } from "@/lib/utils";
 import { getActiveLang } from "@/lib/languages/registry";
 import { targetLang } from "@/lib/languages/registry";
@@ -109,6 +111,14 @@ export function StudyHallHub({ tab = "articulos" }: { tab?: string }) {
           <TabsTrigger value="recursos">
             <Library className="mr-1 size-4" /> Recursos
           </TabsTrigger>
+          <TabsTrigger value="youtube">
+            <MonitorPlay className="mr-1 size-4" /> Vídeo de YouTube
+          </TabsTrigger>
+          {getActiveLang() === "zh" ? (
+            <TabsTrigger value="canciones">
+              <Music className="mr-1 size-4" /> Canciones
+            </TabsTrigger>
+          ) : null}
           <TabsTrigger value="pomodoro">
             <Timer className="mr-1 size-4" /> Pomodoro
           </TabsTrigger>
@@ -182,6 +192,16 @@ export function StudyHallHub({ tab = "articulos" }: { tab?: string }) {
             ))}
           </ul>
         </TabsContent>
+
+        <TabsContent value="youtube">
+          <YouTubePanel />
+        </TabsContent>
+
+        {getActiveLang() === "zh" ? (
+          <TabsContent value="canciones">
+            <SongsPanel />
+          </TabsContent>
+        ) : null}
 
         <TabsContent value="pomodoro">
           <Pomodoro />
