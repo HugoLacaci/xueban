@@ -219,18 +219,32 @@ async function desdeArchivo(f: { ruta: string; nombre: string; fecha: string; ti
 /* Transcripción                                                       */
 /* ------------------------------------------------------------------ */
 
-function transcribir(c: ClaseRegistro): Promise<void> {
-  const out = path.join(dirs().transcripciones, `${c.id}.json`);
-  const meta = JSON.stringify({ classId: c.id, classDate: c.fecha, title: c.titulo, original: c.origen.nombre, method: c.origen.metodo });
+function whisper(c: ClaseRegistro, out: string, rescate: boolean): Promise<void> {
+  const meta = JSON.stringify({ classId: c.id, classDate: c.fecha, title: c.titulo, original: c.origen.nombre, method: c.origen.metodo, rescate });
+  const py = path.join(REPO_DIR, "scripts", "clases", "py");
   return new Promise<void>((resolve, reject) => {
-    const p = spawn("uv", ["run", "--project", path.join(REPO_DIR, "scripts", "clases", "py"), "python", "-I", path.join(REPO_DIR, "scripts", "clases", "py", "transcribe.py"), c.audio!, out, "--modelo", MODELO, "--meta", meta], {
+    const p = spawn("uv", ["run", "--project", py, "python", "-I", path.join(py, "transcribe.py"), c.audio!, out, "--modelo", MODELO, "--meta", meta, ...(rescate ? ["--rescate"] : [])], {
       stdio: ["ignore", "inherit", "inherit"],
       windowsHide: true,
       env: { ...process.env, HF_HUB_DISABLE_SYMLINKS_WARNING: "1", PYTHONIOENCODING: "utf-8", FFMPEG: ffmpegPaths().ffmpeg },
     });
     p.on("error", reject);
     p.on("close", (code) => (code === 0 ? resolve() : reject(new Error(`la transcripción terminó con código ${code}`))));
-  }).then(() => {
+  });
+}
+
+function transcribir(c: ClaseRegistro): Promise<void> {
+  const out = path.join(dirs().transcripciones, `${c.id}.json`);
+  return whisper(c, out, flag("--rescate"))
+    .then(async () => {
+      // Si casi no ha recogido voz (audio bajo o lejano), se repite en modo rescate.
+      const cov = JSON.parse(readFileSync(out, "utf8")).meta?.speechCoverage ?? 1;
+      if (cov < 0.2 && !flag("--rescate")) {
+        log(`  ⚠ solo ${Math.round(cov * 100)} % de voz reconocida: repito en modo rescate (volumen normalizado)`);
+        await whisper(c, out, true);
+      }
+    })
+    .then(() => {
     // Se añade la transcripción de Teams (anonimizada) como apoyo.
     if (c.transcripcionTeams && existsSync(c.transcripcionTeams)) {
       const t = JSON.parse(readFileSync(out, "utf8"));

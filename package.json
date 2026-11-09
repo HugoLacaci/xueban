@@ -33,7 +33,8 @@
     "clases:finalizar": "tsx scripts/clases/finalizar.ts",
     "clases:publicar": "tsx scripts/clases/publicar.ts",
     "clases:preparar": "uv sync --project scripts/clases/py --python 3.12 && uv run --project scripts/clases/py python -I scripts/clases/py/preparar.py",
-    "clases:recoger": "tsx scripts/clases/recoger.ts"
+    "clases:recoger": "tsx scripts/clases/recoger.ts",
+    "clases:exportar": "tsx scripts/clases/exportar.ts"
   },
   "dependencies": {
     "@azure/msal-node": "^7.2.1",

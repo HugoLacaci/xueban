@@ -77,12 +77,13 @@ def es_o_zh(model, chunk) -> tuple[str, float]:
     return ("zh", p_zh) if p_zh > p_es else ("es", p_es)
 
 
-def load_audio(path: str) -> np.ndarray:
+def load_audio(path: str, normalizar: bool = False) -> np.ndarray:
     """Audio a 16 kHz mono float32 con ffmpeg (más fiable que PyAV en Windows)."""
     import subprocess
 
     ffmpeg = os.environ.get("FFMPEG", "ffmpeg")
-    cmd = [ffmpeg, "-nostdin", "-hide_banner", "-loglevel", "error", "-i", path, "-f", "f32le", "-ac", "1", "-ar", str(SR), "-"]
+    filtro = ["-af", "highpass=f=80,dynaudnorm=f=250:g=15:p=0.9"] if normalizar else []
+    cmd = [ffmpeg, "-nostdin", "-hide_banner", "-loglevel", "error", "-i", path, *filtro, "-f", "f32le", "-ac", "1", "-ar", str(SR), "-"]
     out = subprocess.run(cmd, capture_output=True, check=True).stdout
     return np.frombuffer(out, dtype=np.float32).copy()
 
@@ -118,6 +119,7 @@ def main() -> int:
     ap.add_argument("--modelo", default="large-v3-turbo")
     ap.add_argument("--meta", default="{}")
     ap.add_argument("--max-seg", type=float, default=0, help="solo los primeros N segundos (pruebas)")
+    ap.add_argument("--rescate", action="store_true", help="audio bajo o lejano: normaliza volumen, VAD más permisivo y sin filtro de silencio")
     a = ap.parse_args()
 
     out_path = Path(a.salida)
@@ -129,7 +131,9 @@ def main() -> int:
     t0 = time.time()
     model = WhisperModel(a.modelo, device=device, compute_type=compute)
 
-    audio = load_audio(a.audio)
+    audio = load_audio(a.audio, normalizar=a.rescate)
+    if a.rescate:
+        log("Modo rescate: volumen normalizado, detección de voz más permisiva")
     if a.max_seg:
         audio = audio[: int(a.max_seg * SR)]
     duration = len(audio) / SR
@@ -151,7 +155,7 @@ def main() -> int:
         language="es",  # idioma base de la clase; los trozos en chino se rehacen abajo
         task="transcribe",
         vad_filter=True,
-        vad_parameters={"min_silence_duration_ms": 500},
+        vad_parameters={"min_silence_duration_ms": 500, "threshold": 0.25} if a.rescate else {"min_silence_duration_ms": 500},
         word_timestamps=True,
         condition_on_previous_text=False,  # evita que arrastre el idioma de un segmento al siguiente
         beam_size=5,
@@ -166,7 +170,7 @@ def main() -> int:
     for s in segments:
         a0, a1 = int(s.start * SR), int(s.end * SR)
         chunk = audio[a0:a1]
-        if s.no_speech_prob > 0.6 and s.avg_logprob < -1.0:
+        if not a.rescate and s.no_speech_prob > 0.6 and s.avg_logprob < -1.0:
             continue  # ruido o silencio
         lang, conf_lang = ("zh", 0.5) if HAN.search(s.text) else ("es", 0.5)
         if len(chunk) > SR * 0.5:
