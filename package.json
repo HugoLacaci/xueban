@@ -25,9 +25,19 @@
     "glyphs:normalize": "tsx scripts/normalize-glyphs.ts",
     "curriculum:index": "tsx scripts/curriculum-index.ts",
     "curriculum:coverage": "tsx scripts/curriculum-coverage.ts",
-    "vocab:levels": "tsx scripts/build-vocab-levels.ts"
+    "vocab:levels": "tsx scripts/build-vocab-levels.ts",
+    "clases:conectar": "tsx scripts/clases/conectar.ts",
+    "clases:navegador": "tsx scripts/clases/navegador.ts",
+    "clases:todo": "tsx scripts/clases/todo.ts",
+    "clases:transcribir": "tsx scripts/clases/todo.ts --solo-transcribir",
+    "clases:finalizar": "tsx scripts/clases/finalizar.ts",
+    "clases:publicar": "tsx scripts/clases/publicar.ts",
+    "clases:preparar": "uv sync --project scripts/clases/py --python 3.12 && uv run --project scripts/clases/py python -I scripts/clases/py/preparar.py",
+    "clases:recoger": "tsx scripts/clases/recoger.ts"
   },
   "dependencies": {
+    "@azure/msal-node": "^7.2.1",
+    "@azure/msal-node-extensions": "^5.6.1",
     "@dnd-kit/core": "^6.3.1",
     "@dnd-kit/sortable": "^10.0.0",
     "@dnd-kit/utilities": "^3.2.2",

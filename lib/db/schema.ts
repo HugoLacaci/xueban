@@ -336,7 +336,30 @@ export interface ExerciseItem {
   lastAt?: number;
   createdAt: number;
   updatedAt: number;
+  /* ---- v7: ejercicios corregidos en clase (paquetes de clase, lib/classes/import.ts) ---- */
+  /** De dónde viene la frase. Las anteriores a v7 se migran a "manual". Índice `origin`. */
+  origin?: ExerciseOrigin;
+  /** Apunte de clase del que viene (`class-AAAA-MM-DD`). */
+  classNoteId?: string;
+  /** Lo que respondí en clase (antes de la corrección del profesor). */
+  classAnswer?: string;
+  /** Explicación del profesor (en español). */
+  teacherExplanation?: string;
+  /** Segundo de la grabación en que se corrigió. */
+  classTimestamp?: number;
+  /** Confianza de la transcripción de la corrección. */
+  confidence?: "alta" | "media" | "baja";
+  /** Propuesta de Claude cuando la corrección no se oye bien (nunca es del profesor). */
+  claudeProposal?: string;
+  /** Recorte de audio del profesor (id en la tabla assets, kind "class-clip"). */
+  clipAssetId?: string;
+  /** Corrección de confianza baja revisada por el usuario (false = pendiente de revisar). */
+  confirmed?: boolean;
+  /** Huella del contenido importado (es, answers, hint…) para no pisar lo que edite el usuario al reimportar. */
+  importHash?: string;
 }
+
+export type ExerciseOrigin = "class" | "manual" | "ocr" | "tutor";
 
 export type AnswerMode = "hanzi" | "pinyin" | "handwriting" | "speech";
 
@@ -377,12 +400,17 @@ export interface Chat {
   savedNoteId?: string;
 }
 
-/** Fotos y audios de los apuntes (Blob en IndexedDB). Tabla `assets`. */
+/**
+ * Fotos y audios de los apuntes (Blob en IndexedDB). Tabla `assets`.
+ * v7: kind "class-clip" = recorte de audio del profesor importado con un paquete de clase (id `<noteId>:clip:<archivo>`,
+ * `name` = nombre del archivo). Tipo propio (y no "audio") para poder medir y borrar los recortes sin tocar las fotos
+ * y grabaciones del usuario. Son privados: solo viven en IndexedDB (nunca en public/ ni en el repositorio).
+ */
 export interface Asset {
   id: string;
   lang: Lang;
   noteId?: string;
-  kind: "image" | "audio" | "drawing";
+  kind: "image" | "audio" | "drawing" | "class-clip";
   mime: string;
   blob: Blob;
   name?: string;
@@ -458,4 +486,6 @@ export interface LivingNoteAdd {
   markdown: string;
   createdAt: number;
   updatedAt: number;
+  /** v7: huella del contenido importado de un paquete de clase (para detectar ediciones del usuario). */
+  importHash?: string;
 }

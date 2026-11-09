@@ -5,6 +5,7 @@
  * historial de intentos y errores que entran solos en el 错题本.
  */
 import { useEffect, useMemo, useRef, useState } from "react";
+import dynamic from "next/dynamic";
 import { useSearchParams } from "next/navigation";
 import { useLiveQuery } from "dexie-react-hooks";
 import { ArrowLeft, ArrowRight, Camera, Check, ClipboardPaste, History, Plus, Play, Trash2, X, Lightbulb, Dumbbell } from "lucide-react";
@@ -31,6 +32,9 @@ import { Mixed } from "@/components/target/mixed";
 const EMPTY_SETS: ExerciseSet[] = [];
 const EMPTY_ITEMS: ExerciseItem[] = [];
 
+// «Corregidos en clase» (solo chino): se carga aparte para no meter el alineador en el cuaderno de ja/ko
+const ClassCorrectedView = dynamic(() => import("@/components/classes/class-exercises"), { ssr: false });
+
 export function WorkbookPage() {
   const pack = usePack();
   const sp = useSearchParams();
@@ -50,6 +54,8 @@ export function WorkbookPage() {
   }, [pack.id]) ?? {};
   const setId = sp.get("set");
   const dueMode = sp.get("due") === "1";
+  const classView = pack.id === "zh" && sp.get("vista") === "clase";
+  const classCount = useLiveQuery(() => (pack.id === "zh" ? db.exerciseItems.where("origin").equals("class").count() : 0), [pack.id]) ?? 0;
   const [creating, setCreating] = useState(false);
   const [practice, setPractice] = useState<ExerciseItem[] | null>(null);
   const [practiceTitle, setPracticeTitle] = useState("");
@@ -74,7 +80,40 @@ export function WorkbookPage() {
   }, [dueMode]);
 
   if (practice) return <PracticeSession items={practice} title={practiceTitle} onExit={() => { setPractice(null); if (dueMode) router.replace("/apuntes/cuaderno"); }} />;
-  if (setId) return <SetView id={setId} onPractice={(due) => void startPractice(setId, due)} />;
+  if (setId && !classView) return <SetView id={setId} onPractice={(due) => void startPractice(setId, due)} />;
+
+  const tabs =
+    pack.id === "zh" && (classCount || classView) ? (
+      <nav aria-label="Vistas del cuaderno" className="flex gap-1.5">
+        {[
+          { href: "/apuntes/cuaderno", label: "Mis conjuntos", on: !classView },
+          { href: "/apuntes/cuaderno?vista=clase", label: `Corregidos en clase (${classCount})`, on: classView },
+        ].map((t) => (
+          <Link key={t.href} href={t.href} aria-current={t.on ? "page" : undefined} className={cn("inline-flex items-center rounded-full border px-3 py-1 text-xs font-medium transition-colors", t.on ? "border-ink bg-ink text-paper" : "border-line text-ink-soft hover:border-ink/40")}>
+            <Mixed>{t.label}</Mixed>
+          </Link>
+        ))}
+      </nav>
+    ) : null;
+
+  if (classView)
+    return (
+      <div className="space-y-4">
+        <Link href="/apuntes" className="inline-flex items-center gap-1 text-sm text-ink-faint hover:text-ink">
+          <ArrowLeft className="size-4" /> Apuntes
+        </Link>
+        <PageHeader title="Corregidos en clase" zh={pageNative("workbook")} subtitle="Las frases que corrigió tu profesor en clase: lo que dijiste, su corrección con su voz y el porqué. Practícalas otra vez y vuelven cuando toque (SRS)." />
+        {tabs}
+        <ClassCorrectedView
+          setId={setId}
+          itemId={sp.get("item")}
+          onPractice={(items, title) => {
+            setPracticeTitle(title);
+            setPractice(items);
+          }}
+        />
+      </div>
+    );
 
   const totalDue = Object.values(counts).reduce((a, c) => a + c.due, 0);
   return (
@@ -97,6 +136,7 @@ export function WorkbookPage() {
           </>
         }
       />
+      {tabs}
       {sets.length ? (
         <ul className="grid gap-2 sm:grid-cols-2">
           {sets.map((s) => {

@@ -294,8 +294,8 @@ export function NotesHub() {
           href="/apuntes/clases"
           icon={<NotebookPen />}
           zh="课堂"
-          title="Cuaderno de clase"
-          sub="una página por clase"
+          title={pack.id === "zh" ? "Mis clases" : "Cuaderno de clase"}
+          sub={pack.id === "zh" ? "clases grabadas e importadas" : "una página por clase"}
         />
         <Shortcut
           href="/apuntes/profesor"

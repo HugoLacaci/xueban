@@ -22,3 +22,11 @@ coverage/
 # capturas del rediseño (121 MB): se quedan en local, ver design/REPORT.md
 design/screenshots/
 tsconfig.tsbuildinfo
+
+# Clases grabadas: privadas (voz del profesor y de los compañeros). Viven fuera del repo (C:\CHINA\IDIOMA\clases)
+# y en IndexedDB del navegador; estas reglas evitan versionarlas por accidente si alguien copia la carpeta aquí.
+# (anclado a la raíz: scripts/clases/ y app/[lang]/apuntes/clases/ sí se versionan)
+/clases/
+/paquetes/
+/recortes/
+.navegador/

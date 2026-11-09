@@ -56,7 +56,7 @@ export function parseWorkbookText(text: string): ParsedLine[] {
   return out;
 }
 
-function srsFields() {
+export function srsFields() {
   const c = createEmptyCard(new Date());
   return { due: c.due.getTime(), stability: c.stability, difficulty: c.difficulty, elapsed_days: c.elapsed_days, scheduled_days: c.scheduled_days, learning_steps: c.learning_steps, reps: c.reps, lapses: c.lapses, state: c.state as ExerciseItem["state"] };
 }
@@ -68,13 +68,13 @@ export async function createSet(input: { title: string; date?: string; topic?: s
   return set;
 }
 
-export async function addItems(setId: string, rows: { es: string; answers: string[]; hint?: string; tags?: string[]; grammarIds?: string[]; unitId?: string }[]): Promise<ExerciseItem[]> {
+export async function addItems(setId: string, rows: { es: string; answers: string[]; hint?: string; tags?: string[]; grammarIds?: string[]; unitId?: string; origin?: ExerciseItem["origin"] }[]): Promise<ExerciseItem[]> {
   const lang = getActiveLang();
   const existing = await db.exerciseItems.where("setId").equals(setId).count();
   const now = Date.now();
   const items: ExerciseItem[] = rows
     .filter((r) => r.es.trim())
-    .map((r, i) => ({ id: uuid(), lang, setId, order: existing + i, es: r.es.trim(), answers: r.answers.map((a) => liveTonesText(a.trim())).filter(Boolean), hint: r.hint, tags: r.tags ?? [], grammarIds: r.grammarIds ?? [], unitId: r.unitId, ...srsFields(), attempts: 0, correct: 0, createdAt: now, updatedAt: now }));
+    .map((r, i) => ({ id: uuid(), lang, setId, order: existing + i, es: r.es.trim(), answers: r.answers.map((a) => liveTonesText(a.trim())).filter(Boolean), hint: r.hint, tags: r.tags ?? [], grammarIds: r.grammarIds ?? [], unitId: r.unitId, origin: r.origin ?? "manual", ...srsFields(), attempts: 0, correct: 0, createdAt: now, updatedAt: now }));
   await db.transaction("rw", db.exerciseItems, db.exerciseSets, async () => {
     await db.exerciseItems.bulkPut(items);
     await db.exerciseSets.update(setId, { updatedAt: now });

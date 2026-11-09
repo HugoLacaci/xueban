@@ -25,6 +25,7 @@ import { TagEditor } from "./tag-editor";
 import { cn } from "@/lib/utils";
 import { formatDate } from "@/lib/utils";
 import { Mixed } from "@/components/target/mixed";
+import { ClassNoteView, classPackageOf } from "@/components/classes/class-note-view";
 
 const NoteEditor = dynamic(() => import("./editor/editor"), { ssr: false, loading: () => <div className="flex h-40 items-center justify-center text-ink-faint"><Spinner /></div> });
 
@@ -60,6 +61,11 @@ export function NoteEditorPage({ id }: { id: string }) {
     setSeenId(note.id);
     if (note.builtin) setMode("read");
     else if (note.status === "inbox") setMode("edit");
+    // clase importada de un paquete: se abre en lectura con la ficha plegada (el paquete se pinta arriba)
+    if (classPackageOf(note)) {
+      setMode("read");
+      setShowFields(false);
+    }
   }
 
   const flush = useCallback(async () => {
@@ -152,6 +158,7 @@ export function NoteEditorPage({ id }: { id: string }) {
 
       <div className="grid gap-5 lg:grid-cols-[1fr_18rem]">
         <div className="min-w-0 space-y-5">
+          {pack.id === "zh" && classPackageOf(note) ? <ClassNoteView note={note} /> : null}
           {template && template.fields.length ? (
             <section className="card-paper p-4 sm:p-5" data-tour="fields">
               <button type="button" onClick={() => setShowFields((s) => !s)} className="mb-3 flex w-full items-center justify-between text-left" aria-expanded={showFields}>

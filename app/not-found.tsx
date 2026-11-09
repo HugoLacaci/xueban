@@ -26,10 +26,10 @@ function resolve(pathname: string): { kind: "word" | "reading" | "video" | "note
   let p = pathname;
   if (BASE_PATH && p.startsWith(BASE_PATH)) p = p.slice(BASE_PATH.length);
   p = p.replace(/\/+$/, "");
-  const m = p.match(/^\/(zh|ja|ko)\/(flashcards|lectura|videos)\/([^/]+)$/);
+  const m = p.match(/^\/(zh|ja|ko)\/(flashcards|lectura|videos|apuntes)\/([^/]+)$/);
   if (!m) return null;
   const id = decodeURIComponent(m[3]);
-  return { kind: m[2] === "flashcards" ? "word" : m[2] === "lectura" ? "reading" : "video", id, lang: m[1] as Lang };
+  return { kind: m[2] === "flashcards" ? "word" : m[2] === "lectura" ? "reading" : m[2] === "apuntes" ? "note" : "video", id, lang: m[1] as Lang };
 }
 
 /**

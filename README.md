@@ -165,6 +165,8 @@ npm run dev
 
 Las capturas del rediseño (`design/screenshots/`, 121 MB) tampoco van en el repo; el informe `design/REPORT.md` sí.
 
+**Clases grabadas (solo chino)**: los paquetes de clase (`clases\paquetes\*.json`, esquema en `lib/classes/package-schema.ts`) y sus recortes de audio (`clases\recortes\…\*.opus`) viven fuera del repo y se importan en **Apuntes → Clases → Importar** (arrastrando los archivos). Crean el apunte de la clase (`class-AAAA-MM-DD`), las palabras nuevas, un conjunto «Clase DD/MM» en el cuaderno 练习本 (pestaña «Corregidos en clase»), los errores en el 错题本 y las aportaciones a los apuntes vivos; los recortes se guardan solo en IndexedDB. Reimportar no duplica y no pisa lo que hayas editado (si cambiaron las dos versiones, deja elegir). Con `npm run dev`, la ruta local `app/api/clases` (lee `..\clases` o `XUEBAN_CLASES_DIR`) muestra además «Paquetes encontrados en tu PC»; en Pages no existe (el workflow borra `app/api`). Un test (`tests/unit/clases-privacidad.test.ts`) falla si aparece audio o un paquete de clase en `public/` o en git.
+
 ### Otras formas de publicarla
 
 **Vercel** (si se quiere la ruta API de vídeos, que necesita servidor):

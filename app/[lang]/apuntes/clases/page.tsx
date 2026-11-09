@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
 import { Suspense } from "react";
-import { ClassNotebook } from "@/components/study-hall/class-notebook";
+import { ClassesRoute } from "@/components/classes/classes-page";
 import { Spinner } from "@/components/ui/primitives";
 
-export const metadata: Metadata = { title: "Cuaderno de clase" };
+export const metadata: Metadata = { title: "Mis clases" };
 
 export default function Page() {
   return (
     <Suspense fallback={<Spinner />}>
-      <ClassNotebook />
+      <ClassesRoute />
     </Suspense>
   );
 }

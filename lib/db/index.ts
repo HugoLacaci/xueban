@@ -159,6 +159,19 @@ export class XuebanDB extends Dexie {
       });
     // v6: aportaciones del usuario a los apuntes vivos (tabla propia; el contenido base va en JSON versionado).
     this.version(6).stores({ livingNoteAdds: "id, lang, noteId, updatedAt, [lang+noteId]" });
+    // v7: ejercicios corregidos en clase (paquetes de clase). Índice `origin`; los ítems anteriores pasan a "manual".
+    this.version(7)
+      .stores({
+        exerciseItems: "id, lang, setId, due, state, unitId, origin, *tags, *grammarIds, [lang+due], [lang+setId], [setId+order]",
+      })
+      .upgrade(async (tx) => {
+        await tx
+          .table("exerciseItems")
+          .toCollection()
+          .modify((row: ExerciseItem) => {
+            if (!row.origin) row.origin = "manual";
+          });
+      });
   }
 }
 

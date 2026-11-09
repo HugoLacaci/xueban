@@ -27,7 +27,7 @@ function getBackupDb(): BackupDB {
   return backupDb;
 }
 
-const TARGET_VERSION = 5;
+const TARGET_VERSION = 7;
 
 /**
  * Si existe una BD `xueban` con una versión anterior a la actual, la vuelca entera a `xueban-backups`

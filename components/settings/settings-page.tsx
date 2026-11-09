@@ -17,11 +17,12 @@ import { InkDivider } from "@/components/ornament";
 import { TargetText } from "@/components/target/target-text";
 import { AnkiPanel } from "@/components/settings/anki-panel";
 import { TutorPanel } from "@/components/settings/tutor-panel";
+import { ClassSettingsPanel } from "@/components/classes/class-settings";
 import { cn } from "@/lib/utils";
 import { Mixed } from "@/components/target/mixed";
 
 const SECTION_GLYPHS: Record<Lang, Record<string, string>> = {
-  zh: { perfil: "我", idioma: "语", texto: "文", voz: "声", anki: "卡", llm: "译", datos: "库" },
+  zh: { perfil: "我", idioma: "语", texto: "文", voz: "声", anki: "卡", tutor: "师", clases: "课", llm: "译", datos: "库" },
   ja: { perfil: "私", idioma: "語", texto: "文", voz: "声", anki: "札", llm: "訳", datos: "庫" },
   ko: { perfil: "나", idioma: "말", texto: "글", voz: "음", anki: "카", llm: "번", datos: "저" },
 };
@@ -124,7 +125,7 @@ export function SettingsPage() {
     { id: "texto", label: `Texto y ${pack.readingAid.name.toLowerCase()}` },
     { id: "voz", label: "Voz" },
     { id: "anki", label: "Anki" },
-    ...(lang === "zh" ? [{ id: "tutor", label: "Tutor IA" }] : []),
+    ...(lang === "zh" ? [{ id: "tutor", label: "Tutor IA" }, { id: "clases", label: "Clases" }] : []),
     { id: "llm", label: "Traducción" },
     { id: "datos", label: "Datos" },
   ];
@@ -379,6 +380,11 @@ export function SettingsPage() {
       {lang === "zh" ? (
         <Section id="tutor" glyph="师" title="Tutor IA (opcional, gratis por defecto)" description="Conversación por escenarios, corrector, explicador, generador de ejercicios y planificador. Elige un proveedor gratuito (Ollama local, Gemini, Groq, OpenRouter) o tu propia clave de Claude/OpenAI. Sin tutor, la sección ofrece role-plays escritos a mano y el corrector por reglas.">
           <TutorPanel />
+        </Section>
+      ) : null}
+      {lang === "zh" ? (
+        <Section id="clases" glyph="课" title="Clases grabadas" description="Los paquetes de clase que importas desde Apuntes → Clases: espacio de los recortes de audio del profesor y conexión con la carpeta de clases de tu PC.">
+          <ClassSettingsPanel />
         </Section>
       ) : null}
       <Section id="llm" glyph={G.llm} title="Traducción automática (opcional)" description="Solo para traducir subtítulos de vídeos frase a frase. Proveedor intercambiable; la clave se guarda en este navegador. Sin proveedor, se usan Tatoeba y el diccionario.">

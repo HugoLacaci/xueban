@@ -21,6 +21,7 @@ import { cn } from "@/lib/utils";
 import { targetLang } from "@/lib/languages/registry";
 import { Mixed } from "@/components/target/mixed";
 import { LivingNotesNews } from "@/components/notes/living-news";
+import { TodayClassCard } from "@/components/classes/today-class";
 
 
 export function TodayDashboard() {
@@ -193,6 +194,9 @@ export function TodayDashboard() {
           {ItemOfDay ? <ItemOfDay dayIndex={dayIndex} /> : null}
         </Card>
       </section>
+
+      {/* El día de una clase importada: repásala (solo chino) */}
+      {pack.id === "zh" ? <TodayClassCard /> : null}
 
       {/* Novedades en los apuntes vivos (solo si hay) */}
       <LivingNotesNews />
