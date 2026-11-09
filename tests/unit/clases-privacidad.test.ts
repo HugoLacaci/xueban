@@ -41,7 +41,7 @@ describe("privacidad de las clases grabadas", () => {
     const files = walk(path.join(ROOT, "public"));
     const bad = files.filter((f) => AUDIO.test(f) || (/\.json$/i.test(f) && statSync(f).size < 5_000_000 && looksLikeClassPackage(f)) || /(^|\/)(recortes|paquetes|clases)\//.test(rel(f)));
     expect(bad.map(rel)).toEqual([]);
-  });
+  }, 120_000); // public/ tiene miles de archivos (audio TTS): recorrerlo tarda
 
   it("no hay audio de clases ni paquetes de clase versionados (ni a punto de versionarse)", () => {
     let list: string[];
