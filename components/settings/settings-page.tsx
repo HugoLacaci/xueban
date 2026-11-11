@@ -135,7 +135,7 @@ export function SettingsPage() {
       <PageHeader title="Ajustes" zh={PAGE_NATIVE[lang].settings} subtitle="Todo se guarda en este navegador (IndexedDB). Los ajustes generales valen para todos los idiomas; los de cada idioma, solo para ese." />
 
       <nav aria-label="Secciones de ajustes" className="no-scrollbar -mx-4 mb-2 overflow-x-auto px-4 sm:mx-0 sm:px-0">
-        <ul className="flex gap-1.5">
+        <ul className="flex gap-1.5 sm:flex-wrap">
           {sections.map((s) => (
             <li key={s.id}>
               <a href={`#${s.id}`} className="inline-flex items-center gap-1.5 whitespace-nowrap rounded-full border border-line bg-paper-raised px-3 py-1 text-xs font-medium text-ink-soft transition-colors hover:border-ink/40 hover:text-ink">

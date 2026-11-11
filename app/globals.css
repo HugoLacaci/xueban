@@ -213,8 +213,16 @@ ruby.zh-ruby > rt {
   mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
 }
 .scrollbar-thin { scrollbar-width: thin; scrollbar-color: rgb(var(--line)) transparent; }
-.no-scrollbar::-webkit-scrollbar { display: none; }
-.no-scrollbar { scrollbar-width: none; }
+/* tiras horizontales: sin barra en pantallas táctiles (se arrastran con el dedo); con ratón, barra fina para poder desplazarlas */
+.no-scrollbar { scrollbar-width: thin; scrollbar-color: rgb(var(--line)) transparent; }
+@media (hover: none) and (pointer: coarse) {
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .no-scrollbar { scrollbar-width: none; }
+}
+/* iPhone: Safari amplía la página al enfocar un campo con letra de menos de 16 px */
+@media (pointer: coarse) {
+  :is(input, textarea, select):is(.text-sm, .text-xs) { font-size: 16px; }
+}
 
 /* foco: anillo de tinta con separación */
 :focus-visible { outline: 2px solid rgb(var(--ink)); outline-offset: 2px; border-radius: 4px; }

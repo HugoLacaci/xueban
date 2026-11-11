@@ -52,6 +52,7 @@ export function FlashcardsPage() {
   const categories = useLiveQuery(() => db.categories.where("lang").equals(getActiveLang()).sortBy("order"), []) ?? [];
   const [q, setQ] = useState("");
   const [cat, setCat] = useState("");
+  const [allCats, setAllCats] = useState(false);
   const [state, setState] = useState<StateFilter>("all");
   const [hsk, setHsk] = useState("");
   const [source, setSource] = useState("");
@@ -183,11 +184,17 @@ export function FlashcardsPage() {
       <section>
         <div className="mb-2 flex items-center justify-between">
           <h2 className="font-serif-es text-lg font-semibold tracking-tight text-ink">Categorías</h2>
-          <Button size="sm" variant="ghost" onClick={() => setCatDialog({})}>
-            <Plus /> Nueva categoría
-          </Button>
+          <span className="flex items-center gap-1">
+            <Button size="sm" variant="ghost" className="sm:hidden" onClick={() => setAllCats((v) => !v)} aria-expanded={allCats}>
+              {allCats ? "Ver menos" : `Ver todas (${categories.length})`}
+            </Button>
+            <Button size="sm" variant="ghost" onClick={() => setCatDialog({})}>
+              <Plus /> <span className="max-sm:sr-only">Nueva categoría</span>
+            </Button>
+          </span>
         </div>
-        <div className="-mx-4 flex gap-2 overflow-x-auto px-4 pb-2 no-scrollbar sm:mx-0 sm:px-0">
+        {/* móvil: tira que se arrastra con el dedo (o «Ver todas»); pantallas anchas: todas a la vista, en varias filas */}
+        <div className={cn("flex gap-2 pb-2 sm:flex-wrap", allCats ? "flex-wrap" : "no-scrollbar -mx-4 overflow-x-auto px-4 sm:mx-0 sm:overflow-visible sm:px-0")}>
           <CategoryChip active={cat === ""} onClick={() => setCat("")} label="Todas" count={words.length} color="rgb(var(--ink-faint))" icon="Layers" />
           {categories.map((c) => {
             const cc = catCounts.get(c.name);
