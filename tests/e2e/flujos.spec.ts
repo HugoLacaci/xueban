@@ -78,6 +78,28 @@ test.describe("Xuébàn · flujos principales", () => {
     await expect(page.locator("a", { hasText: "几" }).first()).toBeVisible();
   });
 
+  test("añadir varias palabras a una categoría: las que ya están no se duplican", async ({ page }) => {
+    await ready(page);
+    await page.goto("/zh/flashcards");
+    const chip = page.getByRole("button", { name: /^Números y cantidades/ }).first();
+    const before = Number((await chip.innerText()).match(/\/(\d+)/)?.[1]);
+    await chip.click(); // la categoría filtrada es la que propone el diálogo
+    await page.getByRole("button", { name: /Añadir varias/ }).click();
+    await expect(page.locator("#bi-cat")).toHaveValue("Números y cantidades");
+    await page.getByRole("dialog").locator("textarea").fill("几\n一\n啤酒 | pi2jiu3 | cerveza");
+    await page.getByRole("button", { name: /Previsualizar \(3\)/ }).click();
+    await expect(page.getByText("ya la tienes (en «Preguntas»): se añade también a «Números y cantidades»")).toBeVisible();
+    await expect(page.getByText("ya está en esta categoría: sin cambios")).toBeVisible();
+    await expect(page.getByRole("dialog").getByRole("cell", { name: "nueva", exact: true })).toBeVisible();
+    await page.getByRole("button", { name: "Añadir 2 palabras" }).click();
+    await expect(page.getByText("1 nuevas · 1 añadidas a la categoría · 1 ya estaban")).toBeVisible();
+    // 302 de la semilla + 啤酒; 几 sigue siendo una sola palabra, ahora en dos categorías
+    await expect(page.getByRole("button", { name: /^Todas/ })).toContainText("303");
+    await expect(chip).toContainText(`/${before + 2}`);
+    await page.getByPlaceholder("Buscar en el mazo…").fill("几");
+    await expect(page.locator("a", { hasText: "几" })).toHaveCount(1);
+  });
+
   test("añadir una palabra y verla en flashcards", async ({ page }) => {
     await ready(page);
     await page.goto("/zh/flashcards");

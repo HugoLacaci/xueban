@@ -2,6 +2,7 @@
  * Capa de repositorio: la UI nunca habla con Dexie directamente salvo con useLiveQuery.
  * Multiidioma: cada operación trabaja sobre el idioma activo (o el que se pase).
  */
+import { cleanAlsoIn } from "./word-categories";
 import { db } from "./index";
 import type { Card, CardType, Category, DailyStat, ExerciseAttempt, Lang, LegacyNote, StudySession, Word } from "./schema";
 import { createEmptyCard } from "ts-fsrs";
@@ -139,6 +140,7 @@ export async function upsertWord(input: NewWordInput, cardTypesIn?: CardType[]):
     meaning: input.meaning.trim(),
     meaningEn: input.meaningEn ?? existing?.meaningEn,
     category: input.category || existing?.category || "Clase",
+    alsoIn: cleanAlsoIn(input.category || existing?.category || "Clase", existing?.alsoIn),
     example: input.example ?? existing?.example,
     examplePinyin: input.examplePinyin ?? existing?.examplePinyin,
     exampleTranslation: input.exampleTranslation ?? existing?.exampleTranslation,

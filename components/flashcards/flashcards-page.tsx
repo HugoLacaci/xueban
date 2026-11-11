@@ -159,7 +159,7 @@ export function FlashcardsPage() {
         </div>
         <div className="flex flex-wrap items-center gap-2 sm:ml-auto sm:justify-end">
           <Button size="sm" variant="secondary" onClick={() => setImporting(true)}>
-            <Upload /> Importar lista
+            <Upload /> Añadir varias
           </Button>
           <Button size="sm" variant="secondary" onClick={() => void import("@/lib/anki/apkg").then((m) => m.downloadApkg(filtered)).then(() => toast.success("Paquete .apkg descargado"))}>
             <FileDown /> .apkg
@@ -254,7 +254,7 @@ export function FlashcardsPage() {
       <WordList words={filtered} byWord={byWord} />
 
       <QuickAddDialog open={adding} onOpenChange={setAdding} source="manual" />
-      <BulkImportDialog open={importing} onOpenChange={setImporting} />
+      <BulkImportDialog open={importing} onOpenChange={setImporting} defaultCategory={cat || undefined} />
       {catDialog ? <CategoryDialog open onOpenChange={(o) => !o && setCatDialog(null)} editId={catDialog.edit} /> : null}
     </div>
   );
