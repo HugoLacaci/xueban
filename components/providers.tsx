@@ -68,6 +68,19 @@ export function AppProviders({ children }: { children: React.ReactNode }) {
     return () => window.removeEventListener("keydown", onKey);
   }, [cyclePinyin, update]);
 
+  // Tonos con números (ni3 → nǐ) en cualquier campo de texto de las páginas de chino
+  useEffect(() => {
+    let off: (() => void) | undefined;
+    let alive = true;
+    void import("@/lib/correction/live-tones-global").then((m) => {
+      if (alive) off = m.installGlobalLiveTones();
+    });
+    return () => {
+      alive = false;
+      off?.();
+    };
+  }, []);
+
   // Service worker (PWA)
   useEffect(() => {
     if (process.env.NODE_ENV !== "production" || !("serviceWorker" in navigator)) return;

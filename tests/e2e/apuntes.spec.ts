@@ -81,6 +81,33 @@ test.describe("Xuébàn · apuntes", () => {
     await expect(page.getByText(/se desbloquea en/)).toHaveCount(0);
   });
 
+  test("tonos con números en cualquier campo de texto (ni3 → nǐ), sin tocar el español ni los campos técnicos", async ({ page }) => {
+    await ready(page);
+    // un buscador cualquiera
+    await page.goto("/zh/flashcards");
+    const search = page.getByLabel("Buscar en el mazo");
+    await search.click();
+    await search.pressSequentially("ni3 hao3");
+    await expect(search).toHaveValue("nǐ hǎo");
+    await search.fill("");
+    await search.pressSequentially("clase3 A1 tema 2");
+    await expect(search).toHaveValue("clase3 A1 tema 2");
+    // un área de texto (frases del cuaderno): el valor convertido llega al estado de React
+    await page.goto("/zh/apuntes/cuaderno");
+    await page.getByRole("button", { name: /Nuevo conjunto/ }).first().click();
+    const text = page.locator("#wb-text");
+    await text.click();
+    await text.pressSequentially("Estoy en casa. | wo3 zai4 jia1");
+    await expect(text).toHaveValue("Estoy en casa. | wǒ zài jiā");
+    await expect(page.getByRole("button", { name: /Crear con 1 frases/ })).toBeVisible();
+    // campos técnicos: se quedan como están
+    await page.goto("/zh/ajustes");
+    const model = page.locator("#t-model, #s-model").first();
+    await model.fill("");
+    await model.pressSequentially("ni3");
+    await expect(model).toHaveValue("ni3");
+  });
+
   test("tutor sin IA: los role-plays escritos a mano funcionan", async ({ page }) => {
     await ready(page);
     await page.goto("/zh/tutor");

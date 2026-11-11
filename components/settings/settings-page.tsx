@@ -399,10 +399,10 @@ export function SettingsPage() {
             </Select>
           </Field>
           <Field label="Modelo" htmlFor="s-model">
-            <Input id="s-model" value={settings.llm.model} placeholder={settings.llm.provider === "ollama" ? "qwen2.5:7b" : settings.llm.provider === "anthropic" ? "claude-haiku-5-5" : "gpt-4o-mini"} onChange={(e) => void update({ llm: { ...settings.llm, model: e.target.value } })} />
+            <Input id="s-model" data-live-tones="off" value={settings.llm.model} placeholder={settings.llm.provider === "ollama" ? "qwen2.5:7b" : settings.llm.provider === "anthropic" ? "claude-haiku-5-5" : "gpt-4o-mini"} onChange={(e) => void update({ llm: { ...settings.llm, model: e.target.value } })} />
           </Field>
           <Field label="URL base (Ollama / custom)" htmlFor="s-url">
-            <Input id="s-url" value={settings.llm.baseUrl} placeholder="http://localhost:11434" onChange={(e) => void update({ llm: { ...settings.llm, baseUrl: e.target.value } })} />
+            <Input id="s-url" data-live-tones="off" value={settings.llm.baseUrl} placeholder="http://localhost:11434" onChange={(e) => void update({ llm: { ...settings.llm, baseUrl: e.target.value } })} />
           </Field>
           <Field label="Clave API" htmlFor="s-key">
             <Input id="s-key" type="password" value={settings.llm.apiKey} onChange={(e) => void update({ llm: { ...settings.llm, apiKey: e.target.value } })} autoComplete="off" />

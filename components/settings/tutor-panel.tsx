@@ -90,7 +90,7 @@ export function TutorPanel() {
             <Label htmlFor="t-model" className="mb-1.5 block">
               Modelo
             </Label>
-            <Input id="t-model" value={t.model} placeholder={info?.defaultModel} onChange={(e) => set({ model: e.target.value })} list="t-models" />
+            <Input id="t-model" data-live-tones="off" value={t.model} placeholder={info?.defaultModel} onChange={(e) => set({ model: e.target.value })} list="t-models" />
             {models?.length ? (
               <datalist id="t-models">
                 {models.map((m) => (
@@ -118,7 +118,7 @@ export function TutorPanel() {
             <Label htmlFor="t-url" className="mb-1.5 block">
               URL base
             </Label>
-            <Input id="t-url" value={t.baseUrl} placeholder={info?.baseUrl || "http://localhost:1234/v1"} onChange={(e) => set({ baseUrl: e.target.value })} />
+            <Input id="t-url" data-live-tones="off" value={t.baseUrl} placeholder={info?.baseUrl || "http://localhost:1234/v1"} onChange={(e) => set({ baseUrl: e.target.value })} />
           </div>
         ) : null}
       </div>
