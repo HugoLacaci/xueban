@@ -13,6 +13,8 @@ export interface LivingSection {
   title: string;
   /** lección que la desbloquea (al completarla) */
   unlockedBy: string;
+  /** siempre visible, aunque la lección de `unlockedBy` no esté completada (tablas de consulta) */
+  open?: boolean;
   markdown: string;
   skeleton?: { focus: SlotId[]; sentences: SkeletonSentence[] };
   examples?: Sentence[];
@@ -48,7 +50,7 @@ export interface UserAddition {
 export type ProgressLike = Map<string, { status: string; completedAt?: number }>;
 
 export function isUnlocked(section: LivingSection, progress: ProgressLike): boolean {
-  return progress.get(section.unlockedBy)?.status === "completed";
+  return section.open === true || progress.get(section.unlockedBy)?.status === "completed";
 }
 
 /** Etiqueta corta de la lección que desbloquea («a1-u11-l2» → «U11»; «e0-05» → «0.5»; «a2-u03-l1» → «A2·U3»). */

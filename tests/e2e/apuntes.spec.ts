@@ -73,6 +73,14 @@ test.describe("Xuébàn · apuntes", () => {
     await expect(page.getByLabel("Mi respuesta: Yo como en casa.")).toHaveValue("我吃饭在家");
   });
 
+  test("apuntes vivos: la tabla de interrogativos se ve entera sin haber completado lecciones", async ({ page }) => {
+    await ready(page);
+    await page.goto("/zh/apuntes/vivos?n=tabla-interrogativas");
+    await expect(page.getByRole("heading", { name: "Palabras interrogativas" })).toBeVisible({ timeout: 20000 });
+    await expect(page.getByRole("cell", { name: "你为什么学中文？" })).toBeVisible();
+    await expect(page.getByText(/se desbloquea en/)).toHaveCount(0);
+  });
+
   test("tutor sin IA: los role-plays escritos a mano funcionan", async ({ page }) => {
     await ready(page);
     await page.goto("/zh/tutor");

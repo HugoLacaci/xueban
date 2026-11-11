@@ -21,6 +21,7 @@ import conectores from "./conectores.json";
 import pronombres from "./pronombres.json";
 import esqueleto from "./esqueleto.json";
 import preguntas from "./preguntas.json";
+import tablaInterrogativas from "./tabla-interrogativas.json";
 import negacion from "./negacion.json";
 import adjetivos from "./adjetivos.json";
 import de from "./de.json";
@@ -46,6 +47,7 @@ export const LIVING_NOTES: LivingNote[] = [
   pronombres as LivingNote,
   esqueleto as LivingNote,
   preguntas as LivingNote,
+  tablaInterrogativas as LivingNote,
   negacion as LivingNote,
   adjetivos as LivingNote,
   de as LivingNote,
