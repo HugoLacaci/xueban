@@ -353,6 +353,8 @@ export interface PoolWord {
   pinyin: string;
   meaning: string;
   category?: string;
+  /** categorías adicionales de la palabra */
+  alsoIn?: string[];
   example?: string;
   examplePinyin?: string;
   exampleTranslation?: string;

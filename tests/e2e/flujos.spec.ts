@@ -57,6 +57,27 @@ test.describe("Xuébàn · flujos principales", () => {
     await expect(page.getByText(/1 de \d+ lecciones completadas/)).toBeVisible();
   });
 
+  test("una palabra en dos categorías: 几 también en «Números y cantidades»", async ({ page }) => {
+    await ready(page);
+    await page.goto("/zh/flashcards");
+    const chip = page.getByRole("button", { name: /^Números y cantidades/ });
+    const before = Number((await chip.first().innerText()).match(/\/(\d+)/)?.[1]);
+    await page.goto(`/zh/flashcards/${encodeURIComponent("hsk1-几")}`);
+    await expect(page.getByText("Tarjetas y estado")).toBeVisible({ timeout: 20000 });
+    await page.getByRole("group", { name: "También en…" }).getByRole("button", { name: "Números y cantidades" }).click();
+    await page.getByRole("button", { name: /Guardar cambios/ }).click();
+    await expect(page.getByText("Guardado")).toBeVisible();
+    await page.goto("/zh/flashcards");
+    await expect(chip.first()).toContainText(`/${before + 1}`);
+    await chip.first().click();
+    await page.getByPlaceholder("Buscar en el mazo…").fill("几");
+    await expect(page.locator("a", { hasText: "几" }).first()).toBeVisible();
+    // sigue estando en su categoría principal
+    await chip.first().click();
+    await page.getByRole("button", { name: /^Preguntas/ }).first().click();
+    await expect(page.locator("a", { hasText: "几" }).first()).toBeVisible();
+  });
+
   test("añadir una palabra y verla en flashcards", async ({ page }) => {
     await ready(page);
     await page.goto("/zh/flashcards");

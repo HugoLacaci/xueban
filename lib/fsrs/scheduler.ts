@@ -2,6 +2,7 @@
  * Repaso espaciado con ts-fsrs (FSRS-6). Convierte entre nuestras tarjetas (Dexie) y las de ts-fsrs,
  * programa repasos, registra logs y construye la cola de sesión (pendientes + nuevas del día).
  */
+import { wordCategories } from "@/lib/db/word-categories";
 import { createEmptyCard, fsrs, generatorParameters, Rating, State, type Card as FCard, type Grade, type RecordLogItem } from "ts-fsrs";
 import { getActiveLang } from "@/lib/languages/registry";
 import { db, type Card, type CardType, type ReviewLog, bumpDaily, todayKey } from "@/lib/db";
@@ -149,16 +150,16 @@ export interface QueueOptions {
 export async function buildQueue(opts: QueueOptions, now = Date.now()): Promise<{ due: Card[]; fresh: Card[]; newToday: number }> {
   const all = await db.cards.where("lang").equals(getActiveLang()).toArray();
   const wordFilter = opts.wordIds ? new Set(opts.wordIds) : undefined;
-  let words: Map<string, { category: string }> | undefined;
+  let words: Map<string, string[]> | undefined;
   if (opts.categories?.length) {
     const ws = await db.words.where("lang").equals(getActiveLang()).toArray();
-    words = new Map(ws.map((w) => [w.id, { category: w.category }]));
+    words = new Map(ws.map((w) => [w.id, wordCategories(w)]));
   }
   const ok = (c: Card) => {
     if (c.suspended) return false;
     if (opts.types && !opts.types.includes(c.type)) return false;
     if (wordFilter && !wordFilter.has(c.wordId)) return false;
-    if (opts.categories?.length && words && !opts.categories.includes(words.get(c.wordId)?.category ?? "")) return false;
+    if (opts.categories?.length && words && !(words.get(c.wordId) ?? []).some((x) => opts.categories!.includes(x))) return false;
     if (opts.ankiIsSource && c.ankiState && c.ankiState !== "new") return false;
     return true;
   };

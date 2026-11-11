@@ -1,4 +1,5 @@
 "use client";
+import { cleanAlsoIn } from "@/lib/db/word-categories";
 import { useEffect, useState } from "react";
 import * as Icons from "lucide-react";
 import { db, categoryId } from "@/lib/db";
@@ -30,13 +31,27 @@ export function CategoryDialog({ open, onOpenChange, editId }: { open: boolean; 
     });
   }, [editId]);
 
+  /** Categorías adicionales de las palabras: renombra `from` (o la quita si `to` es null). */
+  const replaceInAlsoIn = (from: string, to: string | null) =>
+    db.words
+      .where("lang")
+      .equals(getActiveLang())
+      .filter((w) => w.alsoIn?.includes(from) ?? false)
+      .modify((w) => {
+        w.alsoIn = cleanAlsoIn(w.category, (w.alsoIn ?? []).flatMap((c) => (c !== from ? [c] : to ? [to] : [])));
+        w.updatedAt = Date.now();
+      });
+
   const save = async () => {
     const n = name.trim();
     if (!n) return toast.error("Pon un nombre a la categoría.");
     if (editId) {
       await db.transaction("rw", db.categories, db.words, async () => {
         await db.categories.update(editId, { name: n, color, icon });
-        if (originalName && originalName !== n) await db.words.where("[lang+category]").equals([getActiveLang(), originalName]).modify({ category: n, updatedAt: Date.now() });
+        if (originalName && originalName !== n) {
+          await db.words.where("[lang+category]").equals([getActiveLang(), originalName]).modify({ category: n, updatedAt: Date.now() });
+          await replaceInAlsoIn(originalName, n);
+        }
       });
       toast.success("Categoría actualizada");
     } else {
@@ -55,6 +70,7 @@ export function CategoryDialog({ open, onOpenChange, editId }: { open: boolean; 
     if (!window.confirm(`¿Eliminar la categoría «${originalName}»? ${count ? `Sus ${count} palabras pasarán a «Clase».` : ""}`)) return;
     await db.transaction("rw", db.categories, db.words, async () => {
       await db.words.where("[lang+category]").equals([getActiveLang(), originalName]).modify({ category: "Clase", updatedAt: Date.now() });
+      await replaceInAlsoIn(originalName, null);
       await db.categories.delete(editId);
     });
     onOpenChange(false);

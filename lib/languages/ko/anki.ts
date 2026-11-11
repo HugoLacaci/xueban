@@ -2,6 +2,7 @@
  * Tipo de nota «한국어 · Vocabulario (Hugo)»: misma lógica que el chino (WebID, reconocimiento,
  * producción y escucha) con los campos Romanizacion, Pronunciacion (pronunciación real) y Hanja.
  */
+import { categoryTags } from "@/lib/db/word-categories";
 import type { AnkiModelSpec } from "@/lib/languages/types";
 import type { Word } from "@/lib/db/schema";
 import { uuid } from "@/lib/db/ids";
@@ -93,7 +94,7 @@ export function koToFields(w: Word): Record<string, string> {
 export function koTags(w: Word): string[] {
   const tags = new Set<string>(w.tags);
   for (const h of w.hsk) if (/^TOPIK/.test(h)) tags.add(h);
-  tags.add(`cat::${w.category.replace(/\s+/g, "_")}`);
+  for (const t of categoryTags(w)) tags.add(t);
   if (w.source === "class") tags.add("clase");
   return Array.from(tags);
 }
@@ -129,6 +130,7 @@ export function koFromFields(fields: Record<string, { value: string }>, tags: st
     updatedAt: now,
     ankiNoteId: noteId,
     ankiMod: mod,
+    alsoIn: existing?.alsoIn,
     extra: { ...existing?.extra, hanja: f("Hanja"), pronunciation: f("Pronunciacion") || undefined, irregular: f("Irregular") || null },
   };
 }

@@ -135,7 +135,7 @@ export interface PracticeOptions {
 }
 
 export function wordToPool(w: Word): PoolWord {
-  return { id: w.id, hanzi: w.hanzi, pinyin: w.pinyin, meaning: w.meaning, category: w.category, example: w.example, examplePinyin: w.examplePinyin, exampleTranslation: w.exampleTranslation, radical: w.radical };
+  return { id: w.id, hanzi: w.hanzi, pinyin: w.pinyin, meaning: w.meaning, category: w.category, alsoIn: w.alsoIn, example: w.example, examplePinyin: w.examplePinyin, exampleTranslation: w.exampleTranslation, radical: w.radical };
 }
 
 /** Práctica libre a partir del mazo del usuario (idioma activo) + frases del curso. */
@@ -153,7 +153,7 @@ export async function practiceExercises(opts: PracticeOptions, seed = Date.now()
   let types = opts.types ?? coreTypes();
 
   if (opts.mode === "topic" && opts.category) {
-    target = allWords.filter((w) => w.category === opts.category);
+    target = allWords.filter((w) => w.category === opts.category || (w.alsoIn?.includes(opts.category!) ?? false));
     const hz = new Set(target.map((w) => w.hanzi));
     sentences = sentences.filter((s) => Array.from(hz).some((h) => s.zh.includes(h)));
   } else if (opts.mode === "grammar" && opts.grammarId) {

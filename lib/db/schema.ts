@@ -19,6 +19,8 @@ export interface Word {
   meaning: string; // español (editable por el usuario)
   meaningEn?: string; // respaldo en inglés
   category: string;
+  /** Categorías adicionales (la principal es `category`, que decide el submazo de Anki). Ver lib/db/word-categories.ts */
+  alsoIn?: string[];
   example?: string;
   examplePinyin?: string;
   exampleTranslation?: string;

@@ -1,4 +1,5 @@
 "use client";
+import { cleanAlsoIn, wordCategories } from "@/lib/db/word-categories";
 import { useState } from "react";
 import Link from "@/lib/languages/link";
 import { useRouter } from "next/navigation";
@@ -73,7 +74,7 @@ export function WordPage({ id }: { id: string }) {
   const zhFont = settings.langs[getActiveLang()]?.font === "kai" ? "zh-kai" : "zh-serif";
 
   const save = async () => {
-    const next: Word = { ...word, ...draft, pinyin: numberedToMarked((draft?.pinyin ?? word.pinyin).trim()), updatedAt: Date.now() };
+    const next: Word = { ...word, ...draft, alsoIn: cleanAlsoIn(draft?.category ?? word.category, draft?.alsoIn ?? word.alsoIn), pinyin: numberedToMarked((draft?.pinyin ?? word.pinyin).trim()), updatedAt: Date.now() };
     await db.words.put(next);
     setDraft(null);
     toast.success("Guardado");
@@ -161,7 +162,11 @@ export function WordPage({ id }: { id: string }) {
                     <span className="font-sans text-[10px] font-semibold tracking-wide">{h.replace("HSK", "HSK ")}</span>
                   </SealTag>
                 ))}
-              <Badge variant="outline">{word.category}</Badge>
+              {wordCategories(word).map((c) => (
+                <Badge key={c} variant="outline">
+                  {c}
+                </Badge>
+              ))}
               <Badge variant="muted">fuente: {word.source}</Badge>
               {word.ankiNoteId ? <Badge variant="muted">Anki #{word.ankiNoteId}</Badge> : null}
               {word.tags.map((t) => (
@@ -202,6 +207,28 @@ export function WordPage({ id }: { id: string }) {
                 </Select>
               </div>
             </div>
+            <fieldset>
+              <legend className="text-sm font-medium text-ink">También en…</legend>
+              <p className="mt-0.5 text-xs text-ink-faint">La palabra aparece y se cuenta también en estas categorías. En Anki sigue en el submazo de la principal y lleva una etiqueta por cada una.</p>
+              <div className="mt-2 flex flex-wrap gap-1.5">
+                {categories
+                  .filter((c) => c.name !== d.category)
+                  .map((c) => {
+                    const on = (d.alsoIn ?? []).includes(c.name);
+                    return (
+                      <button
+                        key={c.id}
+                        type="button"
+                        aria-pressed={on}
+                        onClick={() => setDraft({ ...draft, alsoIn: on ? (d.alsoIn ?? []).filter((x) => x !== c.name) : [...(d.alsoIn ?? []), c.name] })}
+                        className={cn("rounded-full border px-2.5 py-1 text-xs transition-colors", on ? "border-ink bg-ink text-paper" : "border-line bg-paper-raised text-ink-soft hover:border-ink/40")}
+                      >
+                        {c.name}
+                      </button>
+                    );
+                  })}
+              </div>
+            </fieldset>
             <div>
               <Label htmlFor="w-meaning">Significado (español)</Label>
               <Input id="w-meaning" className="mt-1" value={d.meaning} onChange={(e) => setDraft({ ...draft, meaning: e.target.value })} />

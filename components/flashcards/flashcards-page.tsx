@@ -1,4 +1,5 @@
 "use client";
+import { inCategory, wordCategories } from "@/lib/db/word-categories";
 import { useMemo, useRef, useState } from "react";
 import { getActivePack } from "@/lib/languages/registry";
 import Link from "@/lib/languages/link";
@@ -87,7 +88,7 @@ export function FlashcardsPage() {
     const ql = q.trim().toLowerCase();
     return words
       .filter((w) => {
-        if (cat && w.category !== cat) return false;
+        if (cat && !inCategory(w, cat)) return false;
         if (hsk && !(w.hsk.includes(hsk) || (hsk === "Extra" && !w.hsk.filter((h) => h !== "Extra").length))) return false;
         if (source && w.source !== source) return false;
         const cs = byWord.get(w.id) ?? [];
@@ -109,10 +110,13 @@ export function FlashcardsPage() {
   const catCounts = useMemo(() => {
     const m = new Map<string, { total: number; known: number }>();
     for (const w of words) {
-      const cur = m.get(w.category) ?? { total: 0, known: 0 };
-      cur.total++;
-      if (cardState(byWord.get(w.id) ?? []) === "review") cur.known++;
-      m.set(w.category, cur);
+      const known = cardState(byWord.get(w.id) ?? []) === "review";
+      for (const c of wordCategories(w)) {
+        const cur = m.get(c) ?? { total: 0, known: 0 };
+        cur.total++;
+        if (known) cur.known++;
+        m.set(c, cur);
+      }
     }
     return m;
   }, [words, byWord]);

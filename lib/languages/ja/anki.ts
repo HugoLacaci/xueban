@@ -3,6 +3,7 @@
  * reconocimiento, producción y escucha) + tarjeta «Lectura» (kanji → kana) y campos Furigana
  * (formato 漢字[かんじ], compatible con Japanese Support), Acento y TipoPalabra.
  */
+import { categoryTags } from "@/lib/db/word-categories";
 import type { AnkiModelSpec } from "@/lib/languages/types";
 import type { Word } from "@/lib/db/schema";
 import { uuid } from "@/lib/db/ids";
@@ -137,7 +138,7 @@ export function jaToFields(w: Word): Record<string, string> {
 export function jaTags(w: Word): string[] {
   const tags = new Set<string>(w.tags);
   for (const h of w.hsk) if (/^N\d$/.test(h)) tags.add(`JLPT_${h}`);
-  tags.add(`cat::${w.category.replace(/\s+/g, "_")}`);
+  for (const t of categoryTags(w)) tags.add(t);
   if (w.source === "class") tags.add("clase");
   return Array.from(tags);
 }
@@ -173,6 +174,7 @@ export function jaFromFields(fields: Record<string, { value: string }>, tags: st
     updatedAt: now,
     ankiNoteId: noteId,
     ankiMod: mod,
+    alsoIn: existing?.alsoIn,
     extra: { ...existing?.extra, pitch_accent: acc ? Number(acc) : (existing?.extra?.pitch_accent ?? null), word_type: f("TipoPalabra") || existing?.extra?.word_type },
   };
 }

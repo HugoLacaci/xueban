@@ -2,6 +2,7 @@
  * Especificación Anki del chino: el tipo de nota «中文 · Vocabulario (Hugo)» tal cual está en
  * lib/anki/model.ts (sin cambios, para no romper la sincronización) + las funciones de mapeo.
  */
+import { categoryTags } from "@/lib/db/word-categories";
 import type { AnkiModelSpec } from "@/lib/languages/types";
 import type { Word } from "@/lib/db/schema";
 import { CSS, DECK_HSK1, DECK_MINE, DECK_ROOT, FIELDS, MODEL_ID, MODEL_NAME, TEMPLATES, type NoteFields } from "@/lib/anki/model";
@@ -31,7 +32,7 @@ export function tagsFor(w: Word): string[] {
   const tags = new Set<string>(w.tags);
   if (w.level === 1 || w.hsk.length) tags.add("HSK1");
   for (const h of w.hsk) if (h !== "Extra") tags.add(h);
-  tags.add(`cat::${w.category.replace(/\s+/g, "_")}`);
+  for (const t of categoryTags(w)) tags.add(t);
   if (w.source === "class") tags.add("clase");
   return Array.from(tags);
 }
@@ -69,6 +70,7 @@ export function fieldsToWord(fields: Record<string, { value: string }>, tags: st
     updatedAt: now,
     ankiNoteId: noteId,
     ankiMod: mod,
+    alsoIn: existing?.alsoIn,
   };
 }
 
