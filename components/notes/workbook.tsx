@@ -380,6 +380,28 @@ function SetView({ id, onPractice }: { id: string; onPractice: (dueOnly: boolean
 
 const splitAnswers = (s: string) => s.split(/\s*[·;\n]\s*/).map((a) => a.trim()).filter(Boolean);
 
+/** Pinyin de la corrección del profesor (solo de lo escrito en hanzi; el motor se carga bajo demanda). */
+function TeacherPinyin({ text, className }: { text: string; className?: string }) {
+  const [py, setPy] = useState("");
+  useEffect(() => {
+    let alive = true;
+    const parts = splitAnswers(text).filter((a) => /[㐀-鿿]/.test(a));
+    void import("@/lib/correction")
+      .then(({ sentencePinyin }) => {
+        if (alive) setPy(parts.map((a) => sentencePinyin(a)).filter(Boolean).join(" · "));
+      })
+      .catch(() => undefined);
+    return () => {
+      alive = false;
+    };
+  }, [text]);
+  return py ? (
+    <span lang="zh-Latn" className={cn("block text-ink-soft", className)}>
+      {py}
+    </span>
+  ) : null;
+}
+
 /**
  * Responder una frase desde la lista, sin abrir una sesión: escribe tu respuesta (se guarda sola), añade si quieres
  * la corrección del profesor y pulsa «Corregir» cuando quieras. Muestra el panel por capas y si coincide con el profesor.
@@ -455,6 +477,7 @@ function ItemAnswer({ item, setTitle }: { item: ExerciseItem; setTitle?: string 
         <label className="block text-xs">
           <span className="mb-1 block font-medium text-ink-soft">Corrección del profesor (opcional)</span>
           <Input value={teacher} onChange={(e) => onChangeWithTones(e, setTeacher)} onBlur={() => void saveTeacher()} lang={pack.bcp47} className={cn("text-lg", pack.meta.cssClass)} placeholder="la frase que te dio el profesor · otra válida" aria-label={`Corrección del profesor: ${item.es}`} />
+          {pack.id === "zh" ? <TeacherPinyin text={teacher} className="mt-1 text-sm" /> : null}
         </label>
       </div>
       <div className="flex flex-wrap items-center justify-end gap-2">
@@ -479,6 +502,7 @@ function ItemAnswer({ item, setTitle }: { item: ExerciseItem; setTitle?: string 
               {liveTonesText(match.teacher)}
             </span>
           ) : null}
+          {match.kind !== "same" && pack.id === "zh" ? <TeacherPinyin text={match.teacher} className="mt-0.5 text-sm" /> : null}
         </p>
       ) : null}
       {report ? <CorrectionPanel report={report} es={item.es} /> : null}

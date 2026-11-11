@@ -59,6 +59,8 @@ test.describe("Xuébàn · apuntes", () => {
     const mine1 = page.getByLabel("Mi respuesta: Estoy en casa.");
     await mine1.fill("我在家");
     await page.getByLabel("Corrección del profesor: Estoy en casa.").fill("我在家。");
+    // la corrección del profesor se acompaña de su pinyin
+    await expect(page.locator('span[lang="zh-Latn"]').filter({ hasText: /Wǒ\s?zài\s?jiā/i }).first()).toBeVisible({ timeout: 15000 });
     await mine1.press("Enter");
     await expect(page.getByText("Coincide con la corrección del profesor.")).toBeVisible({ timeout: 15000 });
     // segunda frase: orden incorrecto → no coincide y se ve la frase del profesor

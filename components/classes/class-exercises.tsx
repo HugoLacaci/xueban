@@ -134,6 +134,8 @@ function ClassExerciseCard({ item, highlight, onPractice }: { item: ExerciseItem
   const wrong = answerDiffers(item.classAnswer, item.answers);
   const needsReview = item.confidence === "baja" && !item.confirmed;
   const py = useMemo(() => (main ? sentencePinyin(main) : ""), [main]);
+  const minePy = useMemo(() => (item.classAnswer ? sentencePinyin(item.classAnswer) : ""), [item.classAnswer]);
+  const proposalPy = useMemo(() => (item.claudeProposal ? sentencePinyin(item.claudeProposal) : ""), [item.claudeProposal]);
   const grammar = item.grammarIds.map((id) => ({ id, g: pack.grammar.byId(id) }));
   const date = item.classNoteId?.match(/class-(\d{4}-\d{2}-\d{2})/)?.[1];
 
@@ -158,6 +160,7 @@ function ClassExerciseCard({ item, highlight, onPractice }: { item: ExerciseItem
           <span lang={pack.bcp47} className={cn("text-lg", pack.meta.cssClass)}>
             {wrong ? <MyClassAnswer mine={item.classAnswer} teacher={main} /> : <span className="text-celadon-ink">{item.classAnswer} ✓</span>}
           </span>
+          {minePy ? <p className="mt-0.5 text-xs text-ink-soft">{minePy}</p> : null}
         </div>
       ) : null}
 
@@ -210,20 +213,27 @@ function ClassExerciseCard({ item, highlight, onPractice }: { item: ExerciseItem
             <Sparkles className="size-3" /> Propuesta de Claude, no del profesor
           </span>
           <span lang={pack.bcp47} className={cn("text-base text-ink", pack.meta.cssClass)}>{item.claudeProposal}</span>
+          {proposalPy ? <span className="block text-xs text-ink-soft">{proposalPy}</span> : null}
         </p>
       ) : null}
 
       {item.teacherExplanation ? <p className="mt-3 text-sm text-ink"><Mixed>{item.teacherExplanation}</Mixed></p> : null}
 
       {others.length ? (
-        <p className="mt-2 text-sm">
-          <span className="mr-2 text-[11px] font-semibold uppercase tracking-[0.14em] text-ink-faint">También vale</span>
-          {others.map((o) => (
-            <span key={o} lang={pack.bcp47} className={cn("mr-3 inline-flex items-center gap-1", pack.meta.cssClass)}>
-              <AudioButton text={o} size="sm" /> {o}
-            </span>
-          ))}
-        </p>
+        <div className="mt-2 text-sm">
+          <p className="text-[11px] font-semibold uppercase tracking-[0.14em] text-ink-faint">También vale</p>
+          <ul className="mt-1 space-y-1">
+            {others.map((o) => (
+              <li key={o} className="flex items-start gap-1.5">
+                <AudioButton text={o} size="sm" />
+                <span className="min-w-0">
+                  <span lang={pack.bcp47} className={cn("block", pack.meta.cssClass)}>{o}</span>
+                  <span className="block text-xs text-ink-soft">{sentencePinyin(o)}</span>
+                </span>
+              </li>
+            ))}
+          </ul>
+        </div>
       ) : null}
 
       <div className="mt-3 flex flex-wrap items-center gap-2 border-t border-line/70 pt-2.5 text-xs text-ink-faint">
